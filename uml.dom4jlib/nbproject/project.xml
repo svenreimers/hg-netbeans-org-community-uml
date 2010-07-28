@@ -47,18 +47,21 @@ made subject to such option by the copyright holder.
     <configuration>
         <data xmlns="http://www.netbeans.org/ns/nb-module-project/2">
             <code-name-base>org.netbeans.modules.uml.dom4jlib</code-name-base>
+            <suite-component/>
             <module-dependencies/>
             <friend-packages>
                 <friend>org.netbeans.modules.uml</friend>
                 <friend>org.netbeans.modules.uml.codegen</friend>
                 <friend>org.netbeans.modules.uml.designpattern</friend>
-                <friend>org.netbeans.modules.uml.integration</friend>
-                <friend>org.netbeans.modules.uml.kit</friend>
                 <friend>org.netbeans.modules.uml.drawingarea</friend>
+                <friend>org.netbeans.modules.uml.integration</friend>
                 <friend>org.netbeans.modules.uml.palette</friend>
                 <friend>org.netbeans.modules.uml.parser.java</friend>
                 <friend>org.netbeans.modules.uml.project</friend>
                 <friend>org.netbeans.modules.uml.reporting</friend>
+                <friend>org.netbeans.modules.uml.requirements</friend>
+                <friend>org.netbeans.modules.uml.requirements.doorsprovider</friend>
+                <friend>org.netbeans.modules.uml.requirements.xmlrequirements</friend>
                 <package>com.sun.msv.datatype</package>
                 <package>com.sun.msv.datatype.xsd</package>
                 <package>com.sun.msv.datatype.xsd.datetime</package>
@@ -161,27 +164,35 @@ made subject to such option by the copyright holder.
             </friend-packages>
             <class-path-extension>
                 <runtime-relative-path>ext/dom4j/relaxngDatatype.jar</runtime-relative-path>
+                <binary-origin>release/modules/ext/relaxngDatatype.jar</binary-origin>
             </class-path-extension>
             <class-path-extension>
                 <runtime-relative-path>ext/dom4j/saxpath.jar</runtime-relative-path>
+                <binary-origin>release/modules/ext/saxpath.jar</binary-origin>
             </class-path-extension>
             <class-path-extension>
                 <runtime-relative-path>ext/dom4j/Tidy.jar</runtime-relative-path>
+                <binary-origin>release/modules/ext/Tidy.jar</binary-origin>
             </class-path-extension>
             <class-path-extension>
                 <runtime-relative-path>ext/dom4j/msv.jar</runtime-relative-path>
+                <binary-origin>release/modules/ext/msv.jar</binary-origin>
             </class-path-extension>
             <class-path-extension>
                 <runtime-relative-path>ext/dom4j/jaxen.jar</runtime-relative-path>
+                <binary-origin>release/modules/ext/jaxen.jar</binary-origin>
             </class-path-extension>
             <class-path-extension>
                 <runtime-relative-path>ext/dom4j/xsdlib.jar</runtime-relative-path>
+                <binary-origin>release/modules/ext/xsdlib.jar</binary-origin>
             </class-path-extension>
             <class-path-extension>
                 <runtime-relative-path>ext/dom4j/PullParser2.jar</runtime-relative-path>
+                <binary-origin>release/modules/ext/PullParser2.jar</binary-origin>
             </class-path-extension>
             <class-path-extension>
                 <runtime-relative-path>ext/dom4j/org-dom4j.jar</runtime-relative-path>
+                <binary-origin>release/modules/ext/org-dom4j.jar</binary-origin>
             </class-path-extension>
         </data>
     </configuration>

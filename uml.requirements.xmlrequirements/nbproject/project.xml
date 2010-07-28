@@ -42,12 +42,12 @@ However, if you add GPL Version 2 code and therefore, elected the GPL
 Version 2 license, then the option applies only if the new code is
 made subject to such option by the copyright holder.
 -->
-
 <project xmlns="http://www.netbeans.org/ns/project/1">
     <type>org.netbeans.modules.apisupport.project</type>
     <configuration>
         <data xmlns="http://www.netbeans.org/ns/nb-module-project/2">
             <code-name-base>org.netbeans.modules.uml.requirements.xmlrequirements</code-name-base>
+            <suite-component/>
             <module-dependencies>
                 <dependency>
                     <code-name-base>org.netbeans.modules.uml</code-name-base>
@@ -83,10 +83,7 @@ made subject to such option by the copyright holder.
                     </run-dependency>
                 </dependency>
             </module-dependencies>
-            <friend-packages>
-                <friend>org.netbeans.modules.uml.kit</friend>
-                <package>org.netbeans.modules.uml.requirements.xmlprovider</package>
-            </friend-packages>
+            <public-packages/>
         </data>
     </configuration>
 </project>

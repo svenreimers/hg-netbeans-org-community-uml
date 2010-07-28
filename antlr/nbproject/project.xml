@@ -47,10 +47,10 @@ made subject to such option by the copyright holder.
     <configuration>
         <data xmlns="http://www.netbeans.org/ns/nb-module-project/2">
             <code-name-base>org.netbeans.modules.antlr</code-name-base>
+            <suite-component/>
             <module-dependencies/>
             <friend-packages>
                 <friend>org.netbeans.modules.uml</friend>
-                <friend>org.netbeans.modules.uml.kit</friend>
                 <friend>org.netbeans.modules.uml.parser.java</friend>
                 <package>antlr</package>
                 <package>antlr.actions.cpp</package>
@@ -63,7 +63,7 @@ made subject to such option by the copyright holder.
             </friend-packages>
             <class-path-extension>
                 <runtime-relative-path>ext/antlr-2.7.2.jar</runtime-relative-path>
-                <binary-origin>external/antlr-2.7.2.jar</binary-origin>
+                <binary-origin>release/modules/ext/antlr-2.7.2.jar</binary-origin>
             </class-path-extension>
         </data>
     </configuration>

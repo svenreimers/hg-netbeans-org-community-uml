@@ -45,7 +45,7 @@ made subject to such option by the copyright holder.
 -->
 
 <project name="uml" default="netbeans" basedir=".">
-    <import file="../nbbuild/templates/projectized.xml"/>
+    <import file="nbproject/build-impl.xml"/>
 
     <!-- below hardcoded property values should be fixed -->
     <property name="nb.modules.dir" value="modules"/>

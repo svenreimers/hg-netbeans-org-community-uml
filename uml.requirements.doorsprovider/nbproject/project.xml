@@ -53,6 +53,7 @@ made subject to such option by the copyright holder.
                  in this module from another module, you'll
                  get a NoClassDefFoundException at runtime.
             -->
+            <suite-component/>
             <module-dependencies>
                 <dependency>
                     <code-name-base>org.netbeans.modules.uml.dom4jlib</code-name-base>
@@ -113,10 +114,7 @@ made subject to such option by the copyright holder.
                     </run-dependency>
                 </dependency>
             </module-dependencies>
-            <friend-packages>
-                <friend>org.netbeans.modules.uml.kit</friend>
-                <package>org.netbeans.modules.uml.requirements.doorsprovider</package>
-            </friend-packages>
+            <public-packages/>
         </data>
     </configuration>
 </project>

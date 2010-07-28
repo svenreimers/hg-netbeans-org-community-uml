@@ -48,6 +48,7 @@ made subject to such option by the copyright holder.
     <configuration>
         <data xmlns="http://www.netbeans.org/ns/nb-module-project/2">
             <code-name-base>org.netbeans.modules.uml.designpattern</code-name-base>
+            <suite-component/>
             <module-dependencies>
                 <dependency>
                     <code-name-base>org.jdesktop.layout</code-name-base>
@@ -167,7 +168,7 @@ made subject to such option by the copyright holder.
                 </dependency>
             </module-dependencies>
             <friend-packages>
-                <friend>org.netbeans.modules.uml.kit</friend>
+                <friend>org.netbeans.modules.uml.requirements</friend>
                 <package>org.netbeans.modules.uml.designpattern</package>
             </friend-packages>
         </data>

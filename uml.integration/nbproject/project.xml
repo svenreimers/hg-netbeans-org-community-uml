@@ -48,6 +48,7 @@ made subject to such option by the copyright holder.
     <configuration>
         <data xmlns="http://www.netbeans.org/ns/nb-module-project/2">
             <code-name-base>org.netbeans.modules.uml.integration</code-name-base>
+            <suite-component/>
             <module-dependencies>
                 <dependency>
                     <code-name-base>org.jdesktop.layout</code-name-base>
@@ -169,7 +170,7 @@ made subject to such option by the copyright holder.
                         <release-version>1</release-version>
                         <specification-version>1.2</specification-version>
                     </run-dependency>
-                </dependency>                
+                </dependency>
                 <dependency>
                     <code-name-base>org.openide.awt</code-name-base>
                     <build-prerequisite/>
@@ -268,7 +269,6 @@ made subject to such option by the copyright holder.
                 </dependency>
             </module-dependencies>
             <friend-packages>
-                <friend>org.netbeans.modules.uml.kit</friend>
                 <friend>org.netbeans.modules.uml.codegen</friend>
                 <package>org.netbeans.modules.uml.integration</package>
                 <package>org.netbeans.modules.uml.integration.netbeans.actions</package>
