@@ -163,35 +163,35 @@ made subject to such option by the copyright holder.
                 <package>org.xml.sax.helpers</package>
             </friend-packages>
             <class-path-extension>
-                <runtime-relative-path>ext/dom4j/relaxngDatatype.jar</runtime-relative-path>
+                <runtime-relative-path>ext/relaxngDatatype.jar</runtime-relative-path>
                 <binary-origin>release/modules/ext/relaxngDatatype.jar</binary-origin>
             </class-path-extension>
             <class-path-extension>
-                <runtime-relative-path>ext/dom4j/saxpath.jar</runtime-relative-path>
+                <runtime-relative-path>ext/saxpath.jar</runtime-relative-path>
                 <binary-origin>release/modules/ext/saxpath.jar</binary-origin>
             </class-path-extension>
             <class-path-extension>
-                <runtime-relative-path>ext/dom4j/Tidy.jar</runtime-relative-path>
+                <runtime-relative-path>ext/Tidy.jar</runtime-relative-path>
                 <binary-origin>release/modules/ext/Tidy.jar</binary-origin>
             </class-path-extension>
             <class-path-extension>
-                <runtime-relative-path>ext/dom4j/msv.jar</runtime-relative-path>
+                <runtime-relative-path>ext/msv.jar</runtime-relative-path>
                 <binary-origin>release/modules/ext/msv.jar</binary-origin>
             </class-path-extension>
             <class-path-extension>
-                <runtime-relative-path>ext/dom4j/jaxen.jar</runtime-relative-path>
+                <runtime-relative-path>ext/jaxen.jar</runtime-relative-path>
                 <binary-origin>release/modules/ext/jaxen.jar</binary-origin>
             </class-path-extension>
             <class-path-extension>
-                <runtime-relative-path>ext/dom4j/xsdlib.jar</runtime-relative-path>
+                <runtime-relative-path>ext/xsdlib.jar</runtime-relative-path>
                 <binary-origin>release/modules/ext/xsdlib.jar</binary-origin>
             </class-path-extension>
             <class-path-extension>
-                <runtime-relative-path>ext/dom4j/PullParser2.jar</runtime-relative-path>
+                <runtime-relative-path>ext/PullParser2.jar</runtime-relative-path>
                 <binary-origin>release/modules/ext/PullParser2.jar</binary-origin>
             </class-path-extension>
             <class-path-extension>
-                <runtime-relative-path>ext/dom4j/org-dom4j.jar</runtime-relative-path>
+                <runtime-relative-path>ext/org-dom4j.jar</runtime-relative-path>
                 <binary-origin>release/modules/ext/org-dom4j.jar</binary-origin>
             </class-path-extension>
         </data>
