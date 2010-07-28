@@ -43,15 +43,6 @@
  */
 
 
-/*
- * Abstract.java
- *
- * Created on 19 Θώνό 2006 γ., 20:16
- *
- * To change this template, choose Tools | Template Manager
- * and open the template in the editor.
- */
-
 package org.netbeans.test.umllib.vrf;
 
 import java.awt.Point;

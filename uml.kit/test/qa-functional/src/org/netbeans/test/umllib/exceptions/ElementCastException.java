@@ -43,12 +43,6 @@
  */
 
 
-/*
- * ElementCastException.java
- *
- * Created on 31 Март 2005 г., 16:42
- */
-
 package org.netbeans.test.umllib.exceptions;
 
 /**
