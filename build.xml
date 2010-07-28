@@ -4,6 +4,8 @@
 <!-- If you delete this file and reopen the project it will be recreated. -->
 <project name="UML" basedir=".">
     <description>Builds the module suite UML.</description>
+    <mkdir dir=".hg"/> <!-- just in case -->
+    <get src="http://dlc.sun.com.edgesuite.net/netbeans/6.9/final/zip/netbeans-6.9-201006101454-ml-javase.zip" dest=".hg" skipexisting="true" verbose="true"/>
+    <unzip src=".hg/netbeans-6.9-201006101454-ml-javase.zip" dest=".hg"/>
     <import file="nbproject/build-impl.xml"/>
-    <!-- XXX download and use http://dlc.sun.com.edgesuite.net/netbeans/6.9/final/zip/netbeans-6.9-201006101454-ml-javase.zip -->
 </project>
