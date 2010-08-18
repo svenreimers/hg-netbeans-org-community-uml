@@ -80,8 +80,7 @@ import org.openide.util.Utilities;
  *
  * @author Trey Spiva
  */
-public class ZoomManager implements Scene.SceneListener
-{
+public class ZoomManager implements Scene.SceneListener {
 
     /** The default zoom percent value. */
     public static final int DEFAULT_ZOOM_PERCENT = 100;
@@ -102,19 +101,16 @@ public class ZoomManager implements Scene.SceneListener
     private int zoomPercentage = DEFAULT_ZOOM_PERCENT;
     /** List of zoom listeners. */
     private EventListenerList listeners;
-
     private int lastZoomLevel;
-    
     private Cursor zoomCursor;
     private Cursor zoomStopCursor;
-    
+
     /**
      * Creates a new instance of ZoomManager.
      *
      * @param  scene  the scene to be managed.
      */
-    public ZoomManager(final Scene scene)
-    {
+    public ZoomManager(final Scene scene) {
         this.scene = scene;
         scene.addSceneListener(this);
         listeners = new EventListenerList();
@@ -126,8 +122,7 @@ public class ZoomManager implements Scene.SceneListener
      *
      * @param  listener  listener to be added.
      */
-    public void addZoomListener(ZoomListener listener)
-    {
+    public void addZoomListener(ZoomListener listener) {
         listeners.add(ZoomListener.class, listener);
     }
 
@@ -136,8 +131,7 @@ public class ZoomManager implements Scene.SceneListener
      *
      * @param  toolbar  to which the actions are added.
      */
-    public void addToolbarActions(JToolBar toolbar)
-    {
+    public void addToolbarActions(JToolBar toolbar) {
         toolbar.add(new FitDiagramAction(this));
         toolbar.add(new FitWidthAction(this));
         toolbar.add(new ZoomDefaultAction(this));
@@ -157,15 +151,11 @@ public class ZoomManager implements Scene.SceneListener
      * @param  percent  the current percent value.
      * @return  the decreased percent value.
      */
-    public static int calculateZoomInValue(int percent)
-    {
+    public static int calculateZoomInValue(int percent) {
         int newZoomValue;
-        if (percent >= ZOOM_STEP_THRESHOLD)
-        {
+        if (percent >= ZOOM_STEP_THRESHOLD) {
             newZoomValue = ((percent + ZOOM_STEP_LARGE) / ZOOM_STEP_LARGE) * ZOOM_STEP_LARGE;
-        }
-        else
-        {
+        } else {
             newZoomValue = ((percent + ZOOM_STEP_SMALL) / ZOOM_STEP_SMALL) * ZOOM_STEP_SMALL;
         }
         return newZoomValue;
@@ -178,15 +168,11 @@ public class ZoomManager implements Scene.SceneListener
      * @param  percent  the current percent value.
      * @return  the increased percent value.
      */
-    public static int calculateZoomOutValue(int percent)
-    {
+    public static int calculateZoomOutValue(int percent) {
         int newZoomValue;
-        if (percent > ZOOM_STEP_THRESHOLD)
-        {
+        if (percent > ZOOM_STEP_THRESHOLD) {
             newZoomValue = ((percent - 1) / ZOOM_STEP_LARGE) * ZOOM_STEP_LARGE;
-        }
-        else
-        {
+        } else {
             newZoomValue = ((percent - 1) / ZOOM_STEP_SMALL) * ZOOM_STEP_SMALL;
         }
         return newZoomValue;
@@ -197,21 +183,16 @@ public class ZoomManager implements Scene.SceneListener
      *
      * @param  percent  the new percent value.
      */
-    private void fireZoomEvent(int percent)
-    {
-        if(percent != lastZoomLevel)
-        {
+    private void fireZoomEvent(int percent) {
+        if (percent != lastZoomLevel) {
             lastZoomLevel = percent;
             // update variable zoompercent
             zoomPercentage = percent;
             Object[] list = listeners.getListenerList();
             ZoomEvent event = null;
-            for (int ii = list.length - 2; ii >= 0; ii -= 2)
-            {
-                if (list[ii] == ZoomListener.class)
-                {
-                    if (event == null)
-                    {
+            for (int ii = list.length - 2; ii >= 0; ii -= 2) {
+                if (list[ii] == ZoomListener.class) {
+                    if (event == null) {
                         event = new ZoomEvent(this, percent);
                     }
                     ((ZoomListener) list[ii + 1]).zoomChanged(event);
@@ -225,8 +206,7 @@ public class ZoomManager implements Scene.SceneListener
      *
      * @return  Scene managed by this manager.
      */
-    public Scene getScene()
-    {
+    public Scene getScene() {
         return scene;
     }
 
@@ -237,8 +217,7 @@ public class ZoomManager implements Scene.SceneListener
      *
      * @return  current zoom percentage.
      */
-    public int getZoom()
-    {
+    public int getZoom() {
         return zoomPercentage;
     }
 
@@ -248,8 +227,7 @@ public class ZoomManager implements Scene.SceneListener
      *
      * @param  listener  listener to be removed.
      */
-    public void removeZoomListener(ZoomListener listener)
-    {
+    public void removeZoomListener(ZoomListener listener) {
         listeners.remove(ZoomListener.class, listener);
     }
 
@@ -263,13 +241,11 @@ public class ZoomManager implements Scene.SceneListener
      * @param  percent  the percent value (e.g. 50 for half-size,
      *                  200 for double-size).
      */
-    public void setZoom(int percent)
-    {
+    public void setZoom(int percent) {
         JScrollPane pane = (JScrollPane) SwingUtilities.getAncestorOfClass(
                 JScrollPane.class, scene.getView());
         assert pane != null : "Scene view component not in a JScrollPane?!?";
-        if (pane == null)
-        {
+        if (pane == null) {
             return;
         }
         JViewport viewport = pane.getViewport();
@@ -289,15 +265,13 @@ public class ZoomManager implements Scene.SceneListener
      *                  200 for double-size).
      * @param  center   the point at which to zoom in and keep centered.
      */
-    public void setZoom(int percent, Point center)
-    {
-        if (percent < MIN_ZOOM_PERCENT)
-        {
+    public void setZoom(int percent, Point center) {
+        if (percent < MIN_ZOOM_PERCENT) {
             percent = MIN_ZOOM_PERCENT;
-        }
-        else if (percent > MAX_ZOOM_PERCENT)
-        {
-            percent = MAX_ZOOM_PERCENT;
+        } else {
+            if (percent > MAX_ZOOM_PERCENT) {
+                percent = MAX_ZOOM_PERCENT;
+            }
         }
 
         // Find the current center point prior to zooming.
@@ -308,12 +282,10 @@ public class ZoomManager implements Scene.SceneListener
         // locations, such that 0.5 is 50%, 1.0 is 100%, and 2.0 is 200%.
         double factor = ((double) percent) / 100.0d;
         scene.setZoomFactor(factor);
-        if(scene instanceof DesignerScene)
-        {
-            DesignerScene ds=(DesignerScene) scene;
-            if(ds.getTopComponent() instanceof SQDDiagramTopComponent)
-            {
-                SQDDiagramTopComponent tc=(SQDDiagramTopComponent) ds.getTopComponent();
+        if (scene instanceof DesignerScene) {
+            DesignerScene ds = (DesignerScene) scene;
+            if (ds.getTopComponent() instanceof SQDDiagramTopComponent) {
+                SQDDiagramTopComponent tc = (SQDDiagramTopComponent) ds.getTopComponent();
                 tc.getTrackBar().onPostScrollZoom();
             }
         }
@@ -329,20 +301,16 @@ public class ZoomManager implements Scene.SceneListener
         visRect.x = newViewCenter.x - (center.x - visRect.x);
         visRect.y = newViewCenter.y - (center.y - visRect.y);
         Dimension viewSize = view.getSize();
-        if (visRect.x + visRect.width > viewSize.width)
-        {
+        if (visRect.x + visRect.width > viewSize.width) {
             visRect.x = viewSize.width - visRect.width;
         }
-        if (visRect.y + visRect.height > viewSize.height)
-        {
+        if (visRect.y + visRect.height > viewSize.height) {
             visRect.y = viewSize.height - visRect.height;
         }
-        if (visRect.x < 0)
-        {
+        if (visRect.x < 0) {
             visRect.x = 0;
         }
-        if (visRect.y < 0)
-        {
+        if (visRect.y < 0) {
             visRect.y = 0;
         }
         view.scrollRectToVisible(visRect);
@@ -352,34 +320,33 @@ public class ZoomManager implements Scene.SceneListener
         // Notify registered listeners so they may update their state.
         fireZoomEvent(percent);
     }
-    
-    public void zoomToFit()
-    {
+
+    public void zoomToFit() {
         JScrollPane pane = (JScrollPane) SwingUtilities.getAncestorOfClass(
                 JScrollPane.class, scene.getView());
-        if (pane == null)
-        {
+        if (pane == null) {
             // Unlikely, but we cannot assume it exists.
             return;
         }
-        
+
         JViewport viewport = pane.getViewport();
         Rectangle visRect = viewport.getViewRect();
-        if(pane.getVerticalScrollBar()!=null && !pane.getVerticalScrollBar().isVisible())//if scroll isn't visible add some space because it may appear after zoom
+        if (pane.getVerticalScrollBar() != null && !pane.getVerticalScrollBar().isVisible())//if scroll isn't visible add some space because it may appear after zoom
         {
-            visRect.width-=20;
+            visRect.width -= 20;
         }
-        if(pane.getHorizontalScrollBar()!=null && !pane.getHorizontalScrollBar().isVisible())
-        {
-            visRect.height-=20;
+        if (pane.getHorizontalScrollBar() != null && !pane.getHorizontalScrollBar().isVisible()) {
+            visRect.height -= 20;
         }
         Rectangle compRect = null;
         Rectangle clientArea = getSceneContentRect();
-        if(clientArea!=null)compRect=clientArea;
-        else compRect=new Rectangle();
-        
-        if((compRect.width > 0) && (compRect.height > 0))
-        {
+        if (clientArea != null) {
+            compRect = clientArea;
+        } else {
+            compRect = new Rectangle();
+        }
+
+        if ((compRect.width > 0) && (compRect.height > 0)) {
             int zoomX = visRect.width * 100 / compRect.width;
             int zoomY = visRect.height * 100 / compRect.height;
             int zoom = Math.min(zoomX, zoomY);
@@ -388,24 +355,30 @@ public class ZoomManager implements Scene.SceneListener
             scene.getView().scrollRectToVisible(scene.convertSceneToView(compRect));
         }
     }
-    
-    private Rectangle getSceneContentRect()
-    {
-        Insets insets = scene.getBorder().getInsets ();
+
+    private Rectangle getSceneContentRect() {
+        Insets insets = scene.getBorder().getInsets();
         Rectangle clientArea = null;//calculate real bounds of scene content (withou 0-0 point)
         for (Widget child0 : scene.getChildren()) {
-            if (! child0.isVisible ())
+            if (!child0.isVisible()) {
                 continue;
-            for(Widget child:child0.getChildren())//first layer is layers, also may count 0-0 point
+            }
+            for (Widget child : child0.getChildren())//first layer is layers, also may count 0-0 point
             {
-                Point location = child.getLocation ();
-                Rectangle bounds = child.getBounds ();
-                bounds.translate (location.x, location.y);
-                if(clientArea==null)clientArea=new Rectangle(bounds);
-                else clientArea.add (bounds);
+                Point location = child.getLocation();
+                Rectangle bounds = child.getBounds();
+                bounds.translate(location.x, location.y);
+                if (clientArea == null) {
+                    clientArea = new Rectangle(bounds);
+                } else {
+                    clientArea.add(bounds);
+                }
             }
         }
-        if(insets!=null)//shouldn't be null but somehow may be null if border isn't initialized correctly
+        if (clientArea == null) {
+            clientArea = new Rectangle();
+        }
+        if (insets != null)//shouldn't be null but somehow may be null if border isn't initialized correctly
         {
             clientArea.x -= insets.left;
             clientArea.y -= insets.top;
@@ -415,11 +388,10 @@ public class ZoomManager implements Scene.SceneListener
         return clientArea;
     }
 
-/**
+    /**
      * Manages the combobox for setting the zoom level.
      */
-    private static class ZoomComboBox extends JComboBox
-    {
+    private static class ZoomComboBox extends JComboBox {
 
         /** The associated zoom manager. */
         private ZoomManager manager;
@@ -429,8 +401,7 @@ public class ZoomManager implements Scene.SceneListener
          *
          * @param  manager  the zoom manager.
          */
-        public ZoomComboBox(ZoomManager manager)
-        {
+        public ZoomComboBox(ZoomManager manager) {
             super(new Model());
             this.manager = manager;
             // The combo will expand to fill all available space, so
@@ -446,17 +417,15 @@ public class ZoomManager implements Scene.SceneListener
             manager.addZoomListener(l);
         }
 
-/**
+        /**
          * Combobox model, provides default zoom values.
          */
-        private static class Model extends DefaultComboBoxModel
-        {
+        private static class Model extends DefaultComboBoxModel {
 
             /**
              * Creates a new instance of Model.
              */
-            public Model()
-            {               
+            public Model() {
                 addElement(new Value(10));
                 addElement(new Value(25));
                 addElement(new Value(50));
@@ -471,11 +440,10 @@ public class ZoomManager implements Scene.SceneListener
             }
         }
 
-/**
+        /**
          * Class Value represents a combobox element.
          */
-        private static class Value
-        {
+        private static class Value {
 
             /** The value of the combobox element. */
             private int value;
@@ -487,25 +455,21 @@ public class ZoomManager implements Scene.SceneListener
              *
              * @param  value  the zoom value (e.g. 75, 100, 150).
              */
-            public Value(int value)
-            {
+            public Value(int value) {
                 this.value = value;
                 str = value + "%";
             }
 
             @Override
-            public boolean equals(Object o)
-            {
-                if (o instanceof Value)
-                {
+            public boolean equals(Object o) {
+                if (o instanceof Value) {
                     return value == ((Value) o).getValue();
                 }
                 return false;
             }
 
             @Override
-            public int hashCode()
-            {
+            public int hashCode() {
                 return value;
             }
 
@@ -514,23 +478,20 @@ public class ZoomManager implements Scene.SceneListener
              *
              * @return  integer value.
              */
-            public int getValue()
-            {
+            public int getValue() {
                 return value;
             }
 
             @Override
-            public String toString()
-            {
+            public String toString() {
                 return str;
             }
         }
 
-/**
+        /**
          * Listener to the combobox and zoom manager.
          */
-        private class Listener implements ActionListener, ZoomListener
-        {
+        private class Listener implements ActionListener, ZoomListener {
 
             /** The associated zoom manager. */
             private ZoomManager manager;
@@ -540,52 +501,42 @@ public class ZoomManager implements Scene.SceneListener
              *
              * @param  manager  the zoom manager.
              */
-            public Listener(ZoomManager manager)
-            {
+            public Listener(ZoomManager manager) {
                 this.manager = manager;
             }
 
-            public void actionPerformed(ActionEvent event)
-            {
+            public void actionPerformed(ActionEvent event) {
                 Object src = event.getSource();
                 String cmd = event.getActionCommand();
-                if (src == ZoomComboBox.this && cmd.equals(ZoomComboBox.this.getActionCommand()))
-                {
+                if (src == ZoomComboBox.this && cmd.equals(ZoomComboBox.this.getActionCommand())) {
                     // Ignore the "edited" action, since the "changed" action
                     // is sent on both accounts (selection or edit).
                     Object item = ZoomComboBox.this.getSelectedItem();
                     Value value = null;
-                    if (item instanceof String)
-                    {
+                    if (item instanceof String) {
                         String str = (String) item;
-                        if (str.endsWith("%"))
-                        {
+                        if (str.endsWith("%")) {
                             str = str.substring(0, str.length() - 1);
                         }
-                        try
-                        {
+                        try {
                             int i = Integer.parseInt(str);
                             value = new Value(i);
-                        }
-                        catch (NumberFormatException nfe)
-                        {
+                        } catch (NumberFormatException nfe) {
                             // ignore and fall through
                         }
+                    } else {
+                        if (item instanceof Value) {
+                            value = (Value) item;
+                        }
                     }
-                    else if (item instanceof Value)
-                    {
-                        value = (Value) item;
-                    }
-                    if (value == null)
-                    {
+                    if (value == null) {
                         value = new Value(ZoomComboBox.this.manager.getZoom());
                     }
                     manager.setZoom(value.getValue());
                 }
             }
 
-            public void zoomChanged(ZoomEvent event)
-            {
+            public void zoomChanged(ZoomEvent event) {
                 // Set the selected combobox value.
                 ZoomComboBox.this.removeActionListener(this);
                 ZoomComboBox.this.setSelectedItem(new Value(event.getPercent()));
@@ -594,11 +545,10 @@ public class ZoomManager implements Scene.SceneListener
         }
     }
 
-/**
+    /**
      * Event object representing a change in the zoom level of a ZoomManager.
      */
-    public static class ZoomEvent extends EventObject
-    {
+    public static class ZoomEvent extends EventObject {
 
         /** Percent value of the zoom manager at the time of the event. */
         private int percent;
@@ -609,8 +559,7 @@ public class ZoomManager implements Scene.SceneListener
          * @param  src      the source of the event.
          * @param  percent  the new zoom percent value.
          */
-        public ZoomEvent(Object src, int percent)
-        {
+        public ZoomEvent(Object src, int percent) {
             super(src);
             this.percent = percent;
         }
@@ -621,8 +570,7 @@ public class ZoomManager implements Scene.SceneListener
          *
          * @return  percent value.
          */
-        public int getPercent()
-        {
+        public int getPercent() {
             return percent;
         }
     }
@@ -630,8 +578,7 @@ public class ZoomManager implements Scene.SceneListener
     /**
      * The listener interface for receiving zoom events.
      */
-    public static interface ZoomListener extends EventListener
-    {
+    public static interface ZoomListener extends EventListener {
 
         /**
          * The zoom level of the ZoomManager has changed.
@@ -641,13 +588,12 @@ public class ZoomManager implements Scene.SceneListener
         void zoomChanged(ZoomEvent event);
     }
 
-/**
+    /**
      * Implements the fit-diagram feature, such that it sets the zoom to
      * show the Scene contents at the largest percentage while still
      * fitting within the available scroll area.
      */
-    private static class FitDiagramAction extends AbstractAction
-    {
+    private static class FitDiagramAction extends AbstractAction {
 
         /** The associated ZoomManager. */
         private ZoomManager manager;
@@ -657,36 +603,32 @@ public class ZoomManager implements Scene.SceneListener
          *
          * @param  manager  the zoom manager.
          */
-        public FitDiagramAction(ZoomManager manager)
-        {
+        public FitDiagramAction(ZoomManager manager) {
             this.manager = manager;
-            
+
             ImageUtil util = ImageUtil.instance();
             Icon img = util.getIcon("fit-to-window.png");
-            if (img != null)
-            {
+            if (img != null) {
                 putValue(Action.SMALL_ICON, img);
             }
             String desc = NbBundle.getMessage(FitDiagramAction.class, "LBL_FitDiagramAction");
             putValue(Action.NAME, desc); // for accessibility
             putValue(Action.SHORT_DESCRIPTION, desc);
-            
+
             putValue(Action.ACCELERATOR_KEY, KeyStroke.getKeyStroke("ctrl shift F"));
         }
 
-        public void actionPerformed(ActionEvent e)
-        {
+        public void actionPerformed(ActionEvent e) {
             manager.zoomToFit();
         }
     }
 
-/**
+    /**
      * Implements the fit-width feature, such that it sets the zoom to
      * show the Scene contents at the largest percentage while still
      * fitting within the width of the available scroll area.
      */
-    private class FitWidthAction extends AbstractAction
-    {
+    private class FitWidthAction extends AbstractAction {
 
         /** The associated ZoomManager. */
         private ZoomManager manager;
@@ -696,13 +638,11 @@ public class ZoomManager implements Scene.SceneListener
          *
          * @param  manager  the zoom manager.
          */
-        public FitWidthAction(ZoomManager manager)
-        {
+        public FitWidthAction(ZoomManager manager) {
             this.manager = manager;
             ImageUtil util = ImageUtil.instance();
             Icon img = util.getIcon("fit-width.png");
-            if (img != null)
-            {
+            if (img != null) {
                 putValue(Action.SMALL_ICON, img);
             }
             String desc = NbBundle.getMessage(FitWidthAction.class, "LBL_FitWidthAction");
@@ -711,32 +651,31 @@ public class ZoomManager implements Scene.SceneListener
             putValue(Action.ACCELERATOR_KEY, KeyStroke.getKeyStroke("ctrl shift L"));
         }
 
-        public void actionPerformed(ActionEvent e)
-        {
+        public void actionPerformed(ActionEvent e) {
             Scene scene = manager.getScene();
             JScrollPane pane = (JScrollPane) SwingUtilities.getAncestorOfClass(
                     JScrollPane.class, scene.getView());
-            if (pane == null)
-            {
+            if (pane == null) {
                 // Unlikely, but we cannot assume it exists.
                 return;
             }
             JViewport viewport = pane.getViewport();
             Rectangle visRect = viewport.getViewRect();
-            if(pane.getVerticalScrollBar()!=null && !pane.getVerticalScrollBar().isVisible())//if scroll isn't visible add some space because it may appear after zoom
+            if (pane.getVerticalScrollBar() != null && !pane.getVerticalScrollBar().isVisible())//if scroll isn't visible add some space because it may appear after zoom
             {
-                visRect.width-=20;
+                visRect.width -= 20;
             }
-            if(pane.getHorizontalScrollBar()!=null && !pane.getHorizontalScrollBar().isVisible())
-            {
-                visRect.height-=20;
+            if (pane.getHorizontalScrollBar() != null && !pane.getHorizontalScrollBar().isVisible()) {
+                visRect.height -= 20;
             }
             Rectangle compRect = null;
             Rectangle clientArea = getSceneContentRect();
-            if(clientArea!=null)compRect=clientArea;
-            else compRect=new Rectangle();
-            if(compRect.width>0)
-            {
+            if (clientArea != null) {
+                compRect = clientArea;
+            } else {
+                compRect = new Rectangle();
+            }
+            if (compRect.width > 0) {
                 int zoom = visRect.width * 100 / compRect.width;
                 manager.setZoom(zoom);
                 //
@@ -745,12 +684,11 @@ public class ZoomManager implements Scene.SceneListener
         }
     }
 
-/**
+    /**
      * Implements the 100% zoom feature, such that it sets the zoom percent
      * to the fixed value of 100 (the default zoom level).
      */
-    private static class ZoomDefaultAction extends AbstractAction
-    {
+    private static class ZoomDefaultAction extends AbstractAction {
 
         /** The associated ZoomManager. */
         private ZoomManager manager;
@@ -760,13 +698,11 @@ public class ZoomManager implements Scene.SceneListener
          *
          * @param  manager  the zoom manager.
          */
-        public ZoomDefaultAction(ZoomManager manager)
-        {
+        public ZoomDefaultAction(ZoomManager manager) {
             this.manager = manager;
             ImageUtil util = ImageUtil.instance();
             Icon img = util.getIcon("normal-size.png");
-            if (img != null)
-            {
+            if (img != null) {
                 putValue(Action.SMALL_ICON, img);
             }
             String desc = NbBundle.getMessage(ZoomDefaultAction.class, "LBL_ZoomDefaultAction");
@@ -775,18 +711,16 @@ public class ZoomManager implements Scene.SceneListener
             putValue(Action.ACCELERATOR_KEY, KeyStroke.getKeyStroke("ctrl shift D"));
         }
 
-        public void actionPerformed(ActionEvent e)
-        {
+        public void actionPerformed(ActionEvent e) {
             manager.setZoom(ZoomManager.DEFAULT_ZOOM_PERCENT);
         }
     }
 
-/**
+    /**
      * Implements the zoom-in feature, such that it sets the zoom percent
      * to a decreased amount for the scene.
      */
-    private static class ZoomInAction extends AbstractAction implements ZoomListener
-    {
+    private static class ZoomInAction extends AbstractAction implements ZoomListener {
 
         /** The associated ZoomManager. */
         private ZoomManager manager;
@@ -796,37 +730,33 @@ public class ZoomManager implements Scene.SceneListener
          *
          * @param  manager  the zoom manager.
          */
-        public ZoomInAction(ZoomManager manager)
-        {
+        public ZoomInAction(ZoomManager manager) {
             this.manager = manager;
             ImageUtil util = ImageUtil.instance();
             Icon img = util.getIcon("zoom-in.png");
-            if (img != null)
-            {
+            if (img != null) {
                 putValue(Action.SMALL_ICON, img);
             }
             String desc = NbBundle.getMessage(ZoomInAction.class, "LBL_ZoomInAction");
             putValue(Action.NAME, desc); // for accessibility
             putValue(Action.SHORT_DESCRIPTION, desc);
-            
+
             KeyStroke keystroke = KeyStroke.getKeyStroke(KeyEvent.VK_PLUS,
-                                                         KeyEvent.CTRL_MASK);
+                    KeyEvent.CTRL_MASK);
             KeyStroke macStroke = KeyStroke.getKeyStroke(KeyEvent.VK_PLUS,
-                                                         KeyEvent.META_MASK);
-            
-            KeyStroke[] additionalKeystrokes = 
-            {
-                 //KeyStroke.getKeyStroke(KeyEvent.VK_EQUALS, KeyEvent.CTRL_MASK|KeyEvent.SHIFT_MASK),
-                 KeyStroke.getKeyStroke(KeyEvent.VK_EQUALS, KeyEvent.CTRL_MASK),
-                 KeyStroke.getKeyStroke(KeyEvent.VK_ADD, KeyEvent.CTRL_MASK)
+                    KeyEvent.META_MASK);
+
+            KeyStroke[] additionalKeystrokes = {
+                //KeyStroke.getKeyStroke(KeyEvent.VK_EQUALS, KeyEvent.CTRL_MASK|KeyEvent.SHIFT_MASK),
+                KeyStroke.getKeyStroke(KeyEvent.VK_EQUALS, KeyEvent.CTRL_MASK),
+                KeyStroke.getKeyStroke(KeyEvent.VK_ADD, KeyEvent.CTRL_MASK)
             };
-            
-            KeyStroke[] additionalMacKeystrokes = 
-            {
-                 //KeyStroke.getKeyStroke(KeyEvent.VK_EQUALS, KeyEvent.META_MASK|KeyEvent.SHIFT_MASK),
-                 KeyStroke.getKeyStroke(KeyEvent.VK_EQUALS, KeyEvent.META_MASK),
-                 KeyStroke.getKeyStroke(KeyEvent.VK_ADD, KeyEvent.CTRL_MASK)
-            };          
+
+            KeyStroke[] additionalMacKeystrokes = {
+                //KeyStroke.getKeyStroke(KeyEvent.VK_EQUALS, KeyEvent.META_MASK|KeyEvent.SHIFT_MASK),
+                KeyStroke.getKeyStroke(KeyEvent.VK_EQUALS, KeyEvent.META_MASK),
+                KeyStroke.getKeyStroke(KeyEvent.VK_ADD, KeyEvent.CTRL_MASK)
+            };
 
             putValue(Action.ACCELERATOR_KEY, keystroke);
             putValue(DiagramInputkeyMapper.MAC_ACCELERATOR, macStroke);
@@ -834,26 +764,23 @@ public class ZoomManager implements Scene.SceneListener
             putValue(DiagramInputkeyMapper.ADDITIONAL_MAC_ACCELERATORS, additionalMacKeystrokes);
         }
 
-        public void actionPerformed(ActionEvent e)
-        {
+        public void actionPerformed(ActionEvent e) {
             int percent = manager.getZoom();
             percent = ZoomManager.calculateZoomInValue(percent);
             manager.setZoom(percent);
         }
 
-        public void zoomChanged(ZoomEvent event)
-        {
+        public void zoomChanged(ZoomEvent event) {
             boolean enable = event.getPercent() < MAX_ZOOM_PERCENT;
             setEnabled(enable);
         }
     }
 
-/**
+    /**
      * Implements the zoom-out feature, such that it sets the zoom percent
      * to an increased amount for the scene.
      */
-    private static class ZoomOutAction extends AbstractAction implements ZoomListener
-    {
+    private static class ZoomOutAction extends AbstractAction implements ZoomListener {
 
         /** The associated ZoomManager. */
         private ZoomManager manager;
@@ -863,101 +790,85 @@ public class ZoomManager implements Scene.SceneListener
          *
          * @param  manager  the zoom manager.
          */
-        public ZoomOutAction(ZoomManager manager)
-        {
+        public ZoomOutAction(ZoomManager manager) {
             this.manager = manager;
             ImageUtil util = ImageUtil.instance();
             Icon img = util.getIcon("zoom-out.png");
-            if (img != null)
-            {
+            if (img != null) {
                 putValue(Action.SMALL_ICON, img);
             }
             String desc = NbBundle.getMessage(ZoomOutAction.class, "LBL_ZoomOutAction");
             putValue(Action.NAME, desc); // for accessibility
             putValue(Action.SHORT_DESCRIPTION, desc);
-                        
+
             KeyStroke keystroke = KeyStroke.getKeyStroke(KeyEvent.VK_MINUS,
-                                                         KeyEvent.CTRL_MASK);
+                    KeyEvent.CTRL_MASK);
             KeyStroke macStroke = KeyStroke.getKeyStroke(KeyEvent.VK_MINUS,
-                                                         KeyEvent.META_MASK);
-            
-            KeyStroke[] additionalKeystrokes = 
-            {
-                 //KeyStroke.getKeyStroke(KeyEvent.VK_MINUS, KeyEvent.CTRL_MASK|KeyEvent.SHIFT_MASK),
-                 KeyStroke.getKeyStroke(KeyEvent.VK_SUBTRACT, KeyEvent.CTRL_MASK)
+                    KeyEvent.META_MASK);
+
+            KeyStroke[] additionalKeystrokes = {
+                //KeyStroke.getKeyStroke(KeyEvent.VK_MINUS, KeyEvent.CTRL_MASK|KeyEvent.SHIFT_MASK),
+                KeyStroke.getKeyStroke(KeyEvent.VK_SUBTRACT, KeyEvent.CTRL_MASK)
             };
-            
-            KeyStroke[] additionalMacKeystrokes = 
-            {
-                 //KeyStroke.getKeyStroke(KeyEvent.VK_MINUS, KeyEvent.META_MASK|KeyEvent.SHIFT_MASK),
-                 KeyStroke.getKeyStroke(KeyEvent.VK_SUBTRACT, KeyEvent.META_MASK)
+
+            KeyStroke[] additionalMacKeystrokes = {
+                //KeyStroke.getKeyStroke(KeyEvent.VK_MINUS, KeyEvent.META_MASK|KeyEvent.SHIFT_MASK),
+                KeyStroke.getKeyStroke(KeyEvent.VK_SUBTRACT, KeyEvent.META_MASK)
             };
-            
+
             putValue(Action.ACCELERATOR_KEY, keystroke);
             putValue(DiagramInputkeyMapper.MAC_ACCELERATOR, macStroke);
             putValue(DiagramInputkeyMapper.ADDITIONAL_ACCELERATORS, additionalKeystrokes);
             putValue(DiagramInputkeyMapper.ADDITIONAL_MAC_ACCELERATORS, additionalMacKeystrokes);
         }
 
-        public void actionPerformed(ActionEvent e)
-        {
+        public void actionPerformed(ActionEvent e) {
             int percent = manager.getZoom();
             percent = ZoomManager.calculateZoomOutValue(percent);
             manager.setZoom(percent);
         }
 
-        public void zoomChanged(ZoomEvent event)
-        {
+        public void zoomChanged(ZoomEvent event) {
             boolean enable = event.getPercent() > MIN_ZOOM_PERCENT;
             setEnabled(enable);
         }
     }
 
-    public void sceneRepaint()
-    {
+    public void sceneRepaint() {
     }
 
-    public void sceneValidating()
-    {
+    public void sceneValidating() {
     }
 
-    public void sceneValidated()
-    {
-        fireZoomEvent((int)(scene.getZoomFactor() * 100));
-        if (scene.getZoomFactor() * 100 >= MAX_ZOOM_PERCENT || 
-            scene.getZoomFactor() * 100 <= MIN_ZOOM_PERCENT)
-        {
+    public void sceneValidated() {
+        fireZoomEvent((int) (scene.getZoomFactor() * 100));
+        if (scene.getZoomFactor() * 100 >= MAX_ZOOM_PERCENT
+                || scene.getZoomFactor() * 100 <= MIN_ZOOM_PERCENT) {
             // disable marquee zoom 
-            if (scene.getActiveTool().equals(DesignerTools.MARQUEE_ZOOM))
+            if (scene.getActiveTool().equals(DesignerTools.MARQUEE_ZOOM)) {
                 scene.setCursor(getMarqueeZoomStopCursor());
-        }
-        else
-        {
+            }
+        } else {
             // reset marquee zoom cursor
-            if (scene.getActiveTool().equals(DesignerTools.MARQUEE_ZOOM))
-            {
+            if (scene.getActiveTool().equals(DesignerTools.MARQUEE_ZOOM)) {
                 scene.setCursor(getMarqueeZoomCursor());
-            }           
+            }
         }
-            
+
     }
-    
-    private Cursor getMarqueeZoomCursor()
-    {
-        if (zoomCursor == null)
-        {
-            zoomCursor = Utilities.createCustomCursor(scene.getView(), 
-                        ImageUtilities.icon2Image(ImageUtil.instance().getIcon("marquee-zoom.gif")), "MarqueeZoom");
+
+    private Cursor getMarqueeZoomCursor() {
+        if (zoomCursor == null) {
+            zoomCursor = Utilities.createCustomCursor(scene.getView(),
+                    ImageUtilities.icon2Image(ImageUtil.instance().getIcon("marquee-zoom.gif")), "MarqueeZoom");
         }
         return zoomCursor;
     }
-    
-    private Cursor getMarqueeZoomStopCursor()
-    {
-        if (zoomStopCursor == null)
-        {
-            zoomStopCursor = Utilities.createCustomCursor(scene.getView(), 
-                        ImageUtilities.icon2Image(ImageUtil.instance().getIcon("marquee-zoom-stop.gif")), "MarqueeZoomStop");
+
+    private Cursor getMarqueeZoomStopCursor() {
+        if (zoomStopCursor == null) {
+            zoomStopCursor = Utilities.createCustomCursor(scene.getView(),
+                    ImageUtilities.icon2Image(ImageUtil.instance().getIcon("marquee-zoom-stop.gif")), "MarqueeZoomStop");
         }
         return zoomStopCursor;
     }
