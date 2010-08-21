@@ -86,11 +86,11 @@ public class AlignWithMoveStrategyProvider extends AlignWithSupport implements M
     private ArrayList < MovingWidgetDetails > movingWidgets = null;
     private Point original;
     private boolean moveWidgetInitialized;
-    
-    public AlignWithMoveStrategyProvider (AlignWithWidgetCollector collector, 
-                                          LayerWidget interractionLayer, 
+
+    public AlignWithMoveStrategyProvider (AlignWithWidgetCollector collector,
+                                          LayerWidget interractionLayer,
                                           LayerWidget widgetLayer,
-                                          AlignWithMoveDecorator decorator, 
+                                          AlignWithMoveDecorator decorator,
                                           boolean outerBounds) {
         super (collector, interractionLayer, decorator);
         this.outerBounds = outerBounds;
@@ -100,38 +100,38 @@ public class AlignWithMoveStrategyProvider extends AlignWithSupport implements M
     }
 
     public Point locationSuggested (Widget widget, Point originalLocation, Point suggestedLocation) {
-        
+
         if(movingWidgets.size() > 1)
         {
             return suggestedLocation;
         }
-        
+
         Point widgetLocation = widget.getLocation ();
         Rectangle widgetBounds = outerBounds ? widget.getBounds () : widget.getClientArea ();
         Rectangle bounds = widget.convertLocalToScene (widgetBounds);
         bounds.translate (suggestedLocation.x - widgetLocation.x, suggestedLocation.y - widgetLocation.y);
         Insets insets = widget.getBorder ().getInsets ();
-        if (! outerBounds) 
+        if (! outerBounds)
         {
             suggestedLocation.x += insets.left;
             suggestedLocation.y += insets.top;
         }
-        
+
         Widget parent = widget.getParentWidget();
-        
+
         Point point = super.locationSuggested (widget, bounds, suggestedLocation, true, true, true, true);
         if (! outerBounds) {
             point.x -= insets.left;
             point.y -= insets.top;
         }
-        
+
         Point localPt = parent.convertSceneToLocal (point);
         return localPt;
     }
 
     public void movementStarted (Widget widget) {
         show ();
-        
+
         Scene scene = widget.getScene();
         ContextPaletteManager manager = scene.getLookup().lookup(ContextPaletteManager.class);
         if(manager != null)
@@ -143,7 +143,7 @@ public class AlignWithMoveStrategyProvider extends AlignWithSupport implements M
 
     public void movementFinished (Widget widget) {
         hide ();
-        
+
         Scene scene = widget.getScene();
         if(movingWidgets != null)
         {
@@ -166,34 +166,34 @@ public class AlignWithMoveStrategyProvider extends AlignWithSupport implements M
                     container.firePropertyChange(ContainerWidget.CHILDREN_CHANGED, null, null);
 
                 }
-                
+
                 // If a widgets new owner is the same as its original owner
-                // then make sure that the widget has the same index as it 
+                // then make sure that the widget has the same index as it
                 // had before the move began.
                 for(MovingWidgetDetails curDetail : movingWidgets)
                 {
                     curDetail.updateIndexIfRequired();
                 }
             }
-            
+
             movingWidgets.clear();
-            movingWidgets = null;            
+            movingWidgets = null;
         }
-        
+
         ContextPaletteManager manager = scene.getLookup().lookup(ContextPaletteManager.class);
         if(manager != null)
         {
             manager.selectionChanged(null);
         }
-        
+
         original = null;
     }
 
     public Point getOriginalLocation (Widget widget) {
-        
+
         original = widget.getPreferredLocation();
         initializeMovingWidgets(widget.getScene(), widget);
-        
+
         lastPoint = original;
         if (lastPoint != null)
         {
@@ -205,22 +205,22 @@ public class AlignWithMoveStrategyProvider extends AlignWithSupport implements M
     protected Point convertLocationToScene(Widget widget)
     {
         Point retVal = widget.getLocation();
-        
+
         Widget curWidget = widget.getParentWidget();
         while(curWidget != null)
         {
             retVal.x += curWidget.getLocation().x;
             retVal.y += curWidget.getLocation().y;
-            
+
             curWidget = curWidget.getParentWidget();
         }
-        
+
         return retVal;
     }
 
     Point lastPoint = null;
     public void setNewLocation (Widget widget, Point location) {
-        
+
         if(location != null && original != null)
         {
             // Determine if the new location of the widget has actually moved.
@@ -300,7 +300,7 @@ public class AlignWithMoveStrategyProvider extends AlignWithSupport implements M
             }
         }
     }
-    
+
     protected ArrayList<MovingWidgetDetails> getMovingDetails()
     {
         return movingWidgets;
@@ -309,12 +309,12 @@ public class AlignWithMoveStrategyProvider extends AlignWithSupport implements M
     protected List < Widget > getMovingWidgetList()
     {
         ArrayList < Widget > retVal = new ArrayList < Widget >();
-        
+
         for(MovingWidgetDetails details : movingWidgets)
         {
             retVal.add(details.getWidget());
         }
-        
+
         return retVal;
     }
 
@@ -326,7 +326,7 @@ public class AlignWithMoveStrategyProvider extends AlignWithSupport implements M
      * @param dx The distance in the x direction.
      * @param dy The distance in the y direction.
      */
-    public static void adjustControlPoints(List < Widget> widgets, 
+    public static void adjustControlPoints(List < Widget> widgets,
                                            int dx, int dy)
     {
         // Since child nodes are not part of the widgets (since they are moved
@@ -334,51 +334,51 @@ public class AlignWithMoveStrategyProvider extends AlignWithSupport implements M
         // that we get not only the selected set of widgets, but also the
         // edges attached to all child nodes.  This is mostly for containers.
         List < ConnectionWidget > connections = includeAllConnections(widgets);
-        
+
         ArrayList < Object > alreadyProcessed = new ArrayList < Object >();
 
         for(ConnectionWidget connection : connections)
         {
             GraphScene scene = (GraphScene)connection.getScene();
             Object data = scene.findObject(connection);
-            
+
             if(alreadyProcessed.contains(data) == false)
             {
-                if ((connection.getState().isSelected() == true) || 
+                if ((connection.getState().isSelected() == true) ||
                     (widgets.contains(connection) == true))
                 {
                     List<Point> points = connection.getControlPoints();
-                    for (int index = 1; index < points.size() - 1; index++) 
+                    for (int index = 1; index < points.size() - 1; index++)
                     {
                         Point pt = points.get(index);
                         pt.x += dx;
                         pt.y += dy;
                     }
                 }
-                
-                // Each node also needs to be revalidated so that the anchor 
+
+                // Each node also needs to be revalidated so that the anchor
                 // gets a chance to update the end point
                 Anchor sourceAnchor = connection.getSourceAnchor();
                 if(sourceAnchor != null)
                 {
                     sourceAnchor.getRelatedWidget().revalidate();
                 }
-                
+
                 Anchor targetAnchor = connection.getTargetAnchor();
                 if(targetAnchor != null)
                 {
                     targetAnchor.getRelatedWidget().revalidate();
                 }
-                
+
                 alreadyProcessed.add(data);
             }
         }
     }
-    
-    private static List<ConnectionWidget> includeAllConnections(List<Widget> widgets) 
+
+    private static List<ConnectionWidget> includeAllConnections(List<Widget> widgets)
     {
         ArrayList < ConnectionWidget > retVal = new ArrayList <ConnectionWidget>();
-        
+
         for(Widget widget : widgets)
         {
            GraphScene scene = (GraphScene)widget.getScene();
@@ -388,15 +388,15 @@ public class AlignWithMoveStrategyProvider extends AlignWithSupport implements M
                retVal.addAll(connections);
            }
         }
-         
+
         return retVal;
     }
-    
+
     private static List<ConnectionWidget> buildListOfConnections(GraphScene scene,
                                                                  Widget widget)
     {
         ArrayList < ConnectionWidget > retVal = new ArrayList <ConnectionWidget>();
-        
+
         // First get the edges for the passed in widget.  If the data object
         // does not represent a node the method findNodeEdges will throw an
         // assertion.  Therefore check if it is a node first.
@@ -421,11 +421,11 @@ public class AlignWithMoveStrategyProvider extends AlignWithSupport implements M
                 }
             }
         }
-        
+
         // Second get the edges for all of the children.
         for(Widget child : widget.getChildren())
         {
-            
+
             List<ConnectionWidget> childConns = buildListOfConnections(scene, child);
             if((childConns != null) && (childConns.size() > 0))
             {
@@ -440,7 +440,7 @@ public class AlignWithMoveStrategyProvider extends AlignWithSupport implements M
                                     Point pt)
     {
         boolean retVal = false;
-        
+
         if(widget != null)
         {
             for(Widget child : widget.getChildren())
@@ -458,14 +458,14 @@ public class AlignWithMoveStrategyProvider extends AlignWithSupport implements M
                             Point testPoint = new Point(pt.x - childLoc.x,
                                                         pt.y - childLoc.y);
                             retVal = checkIfAccepted(curChild, event, testPoint);
-                            
+
                             if(retVal == true)
                             {
                                 break;
                             }
                         }
                     }
-                    
+
                     if(retVal == false)
                     {
                         retVal = sendEvents(child, event, pt);
@@ -473,7 +473,7 @@ public class AlignWithMoveStrategyProvider extends AlignWithSupport implements M
                 }
             }
         }
-        
+
         return retVal;
     }
 
@@ -497,7 +497,7 @@ public class AlignWithMoveStrategyProvider extends AlignWithSupport implements M
             if (scene instanceof ObjectScene)
             {
                 ObjectScene objScene = (ObjectScene) scene;
-                
+
                 Object data = objScene.findObject(widget);
                 if (data instanceof IPresentationElement)
                 {
@@ -538,7 +538,7 @@ public class AlignWithMoveStrategyProvider extends AlignWithSupport implements M
             movingWidgets = null;
         }
         movingWidgets = new ArrayList < MovingWidgetDetails >();
-                
+
         if (scene instanceof GraphScene)
         {
             GraphScene gscene = (GraphScene) scene;
@@ -563,10 +563,10 @@ public class AlignWithMoveStrategyProvider extends AlignWithSupport implements M
 
                             MovingWidgetDetails details = new MovingWidgetDetails(w, owner, pt);
                             movingWidgets.add(details);
-                            
+
                             for (ConnectionWidget c: Util.getAllContainedEdges(w))
                             {
-                                movingWidgets.add(new MovingWidgetDetails(c, 
+                                movingWidgets.add(new MovingWidgetDetails(c,
                                         c.getParentWidget(), c.getParentWidget().convertLocalToScene(c.getFirstControlPoint())));
                             }
 
@@ -595,24 +595,24 @@ public class AlignWithMoveStrategyProvider extends AlignWithSupport implements M
         }
         moveWidgetInitialized=true;
     }
-    
+
     public boolean isMovementInitialized()
     {
         return moveWidgetInitialized;
     }
 
-    private boolean isOwnerSelected(Object o, 
+    private boolean isOwnerSelected(Object o,
                                     Set<?> selected,
                                     GraphScene gscene)
     {
         boolean retVal = false;
-        
+
         Widget widget = gscene.findWidget(o);
         if(widget != null)
         {
             Widget parent = widget.getParentWidget();
             Object parentObj = gscene.findObject(parent);
-            
+
             if(parentObj != null)
             {
                 if(selected.contains(parentObj) == true)
@@ -625,10 +625,10 @@ public class AlignWithMoveStrategyProvider extends AlignWithSupport implements M
                 }
             }
         }
-        
+
         return retVal;
     }
-    
+
     private boolean processLocationOperator(Widget widget,
                                          WidgetAction.WidgetDropTargetDropEvent event,
                                          Point cursorSceneLocation)
@@ -639,11 +639,11 @@ public class AlignWithMoveStrategyProvider extends AlignWithSupport implements M
     }
 
     private boolean processLocationOperator2(Widget widget,
-                                            WidgetAction.WidgetDropTargetDropEvent event, 
+                                            WidgetAction.WidgetDropTargetDropEvent event,
                                             Point point)
     {
         boolean retVal = false;
-        
+
         if (!widget.isVisible())
         {
             return false;
@@ -683,7 +683,7 @@ public class AlignWithMoveStrategyProvider extends AlignWithSupport implements M
                                Point pt)
     {
         boolean retVal = false;
-        
+
         if(target != null)
         {
             if(sendEvents(target.getActions(), target, event) == false)
@@ -696,16 +696,16 @@ public class AlignWithMoveStrategyProvider extends AlignWithSupport implements M
                 retVal = true;
             }
         }
-        
+
         return retVal;
     }
-    
+
     private boolean sendEvents(WidgetAction.Chain actions,
                                     Widget target,
                                     WidgetAction.WidgetDropTargetDropEvent event)
     {
         boolean retVal = false;
-        
+
         if(actions != null)
         {
             for(WidgetAction action :actions.getActions())
@@ -717,25 +717,25 @@ public class AlignWithMoveStrategyProvider extends AlignWithSupport implements M
                 }
             }
         }
-        
+
         return retVal;
     }
-    
+
     protected class MovingWidgetDetails
     {
         private Widget widget = null;
         private Widget owner = null;
         private Point originalLocation = null;
         private int originalIndex = -1;
-        
-        public MovingWidgetDetails(Widget widget, 
+
+        public MovingWidgetDetails(Widget widget,
                                    Widget owner,
                                    Point  location)
         {
             this.widget = widget;
             this.owner = owner;
             this.originalLocation = location;
-            
+
             if(owner != null)
             {
                 originalIndex = owner.getChildren().indexOf(widget);
@@ -756,19 +756,20 @@ public class AlignWithMoveStrategyProvider extends AlignWithSupport implements M
         {
             return widget;
         }
-        
-        
+
+
         public int getOriginalIndex()
         {
             return originalIndex;
         }
-        
+
         public void updateIndexIfRequired()
         {
-            if(owner.equals(widget.getParentWidget()) == true)
+            if(owner.equals(widget.getParentWidget()))
             {
                 owner.removeChild(widget);
-                owner.addChild(originalIndex, widget);
+                //Adjust the original index.
+                owner.addChild(--originalIndex < 0 ? 0 : originalIndex, widget);
             }
         }
     }
