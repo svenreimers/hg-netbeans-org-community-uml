@@ -67,13 +67,13 @@ public class PersistenceManager {
 
     NodeWriter nodeWriter;
     FileObject fileObject;
-    
+
     private OutputStreamWriter osw = null;
 
     public PersistenceManager() {
         //do we need to do something here?
     }
-    
+
     public PersistenceManager(FileObject fo) {
         this.fileObject = fo;
         nodeWriter = new NodeWriter(getWriter());
@@ -123,30 +123,29 @@ public class PersistenceManager {
 //        float elapsedTimeSec = (System.currentTimeMillis() - start) / 1000F;
 //        System.err.println(" !!!!!!!!!!!!!!!!!!!! Total time to SAVE the diagram : " +elapsedTimeSec);
     }
-    
+
     private boolean hasContainerWidgetAsParent(Widget widget) {
         boolean retVal = false;
         Widget parent;
         Widget child = widget;
         if ((child != null) && !(child instanceof Scene))
         {
-            while (true) 
+            while (true)
             {
-                parent = child.getParentWidget();                
-                if (parent instanceof Scene)                 
-                {
+                if (child == null) {
                     return false;
-                }
-                else if (parent instanceof ContainerWidget)
-                {
+                } else {
+                parent = child.getParentWidget();
+                    if (parent instanceof Scene) {
+                    return false;
+                    } else if (parent instanceof ContainerWidget) {
                     return true;
-                }
-                else
-                {
+                    } else {
                     child = parent;
                 }
-            }           
-        }        
+            }
+            }
+        }
         return retVal;
     }
 
@@ -161,7 +160,7 @@ public class PersistenceManager {
                     if (fileObject.isLocked())
                     {
                         fileObject.lock().releaseLock();
-                    }                    
+                    }
                     osw = new OutputStreamWriter(fileObject.getOutputStream(), "UTF-8");
                     bw = new BufferedWriter(osw);
                 }
@@ -190,8 +189,8 @@ public class PersistenceManager {
         }
     }
 
-    public DesignerScene loadDiagram(String fileName, 
-                                     UMLDiagramTopComponent topComp, 
+    public DesignerScene loadDiagram(String fileName,
+                                     UMLDiagramTopComponent topComp,
                                      boolean groupEdges) {
         DesignerScene scene = null;
         try
