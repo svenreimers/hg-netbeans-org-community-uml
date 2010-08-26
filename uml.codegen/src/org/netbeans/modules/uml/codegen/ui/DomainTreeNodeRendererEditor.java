@@ -76,25 +76,26 @@ public class DomainTreeNodeRendererEditor extends JPanel
         selectLabel = new SelectableLabel();
         selectLabel.setText("");
 
-        org.jdesktop.layout.GroupLayout layout = 
-            new org.jdesktop.layout.GroupLayout(this);
+        javax.swing.GroupLayout layout = 
+            new javax.swing.GroupLayout(this);
         
         this.setLayout(layout);
         layout.setHorizontalGroup(
-            layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(layout.createSequentialGroup()
-                .add(checkBox)
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                .add(selectLabel))
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(checkBox)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(selectLabel))
         );
         layout.setVerticalGroup(
-            layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
-                .add(checkBox)
-                .add(selectLabel))
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addComponent(checkBox)
+                .addComponent(selectLabel))
         );
     }
     
+    @Override
     public Component getTreeCellRendererComponent(
         JTree tree, 
         Object value,
@@ -140,6 +141,7 @@ public class DomainTreeNodeRendererEditor extends JPanel
     }
     
     
+    @Override
     public Dimension getPreferredSize()
     {
         Dimension newDim = new Dimension();
@@ -155,6 +157,7 @@ public class DomainTreeNodeRendererEditor extends JPanel
     }
     
     
+    @Override
     public void setBackground(Color color)
     {
         if (color instanceof ColorUIResource)
