@@ -4,8 +4,169 @@
 <!-- If you delete this file and reopen the project it will be recreated. -->
 <project name="UML" basedir=".">
     <description>Builds the module suite UML.</description>
-    <mkdir dir=".hg"/> <!-- just in case -->
-    <get src="http://dlc.sun.com.edgesuite.net/netbeans/6.9/final/zip/netbeans-6.9-201006101454-ml-javase.zip" dest=".hg" skipexisting="true" verbose="true"/>
-    <unzip src=".hg/netbeans-6.9-201006101454-ml-javase.zip" dest=".hg"/>
+    <property name="zip.name" value="netbeans-6.9.1-201007282301-ml-javase.zip"/>
+    <property name="zip.url" value="http://dlc.sun.com.edgesuite.net/netbeans/6.9.1/final/zip/"/>
+    <!--Delete old copies of platforms-->
+    <delete>
+        <fileset dir=".hg" includes="**/*.zip" excludes="${zip.name}"/>
+    </delete>
+    <get src="${zip.url}${zip.name}" dest=".hg" skipexisting="true" verbose="true"/>
+    <!--Only overwrite if newer-->
+    <unzip src=".hg/${zip.name}" dest=".hg" overwrite="false"/>
+    <condition property="isNetbeans">
+        <not>
+            <isset property="Hudson"/>
+        </not>
+    </condition>
     <import file="nbproject/build-impl.xml"/>
+    <property file="nbproject/project.properties"/>
+
+    <target name="nbms" depends="suite.nbms" unless="isNetbeans">
+        <!--Create/Update keystore-->
+        <delete file="${keystore.location}${keystore.name}"/>
+        <mkdir dir="${keystore.location}"/>
+        <genkey alias="${keystore.alias}" storepass="${keystore.password}"
+        dname="${keystore.dname}"
+        keystore="${keystore.location}${keystore.name}"/>
+        <!--Update keystore info in projects-->
+        <antcall target="update-keystore-info"/>
+        <antcall target="suite.release"/>
+        <!--Merge the javadocs-->
+        <antcall target="merge-javadoc"/>
+    </target>
+
+    <target name="update-keystore-info" depends="init-netbeans, init-hudson" if="isNetbeans">
+        <for list="${modules}" delimiter=":" param="cur" trim="true">
+            <sequential>
+                <mkdir dir="@{cur}/nbproject/"/>
+                <!--Place the information in the properties file-->
+                <propertyfile file="@{cur}/nbproject/project.properties">
+                    <entry  key="keystore" value="../${keystore.location}${keystore.name}"/>
+                    <entry  key="nbm_alias" value="${keystore.alias}"/>
+                </propertyfile>
+                <mkdir dir="@{cur}/nbproject/private/"/>
+                <!--Place the password in the private properties file-->
+                <propertyfile file="@{cur}/nbproject/private/private.properties">
+                    <entry  key="storepass" value="${keystore.password}"/>
+                </propertyfile>
+            </sequential>
+        </for>
+    </target>
+
+    <target name="getAntContribJar">
+        <fileset id="ant-contrib-jar" dir="${suite.dir}/tools">
+            <include name="ant-contrib-*.jar" />
+        </fileset>
+        <pathconvert property="ant-contrib-jar" refid="ant-contrib-jar" pathsep="," />
+        <basename property="ant-contrib-filename" file="${ant-contrib-jar}"/>
+    </target>
+
+    <target name="init-netbeans" if="isNetbeans">
+        <echo>Configuring ant-contrib for Netbeans use...</echo>
+        <property name="ant-contrib-loc" value="${suite.dir}/tools/${ant-contrib-filename}"/>
+        <available file="${ant-contrib-loc}" property="ant-contrib.present"/>
+        <fail unless="ant-contrib.present" message="The ant-contrib jar doesn't exist at: ${ant-contrib-loc}, can't build. Check your settings!" />
+        <!--We are in not Hudson-->
+        <taskdef resource="net/sf/antcontrib/antcontrib.properties">
+            <classpath>
+                <pathelement location="${ant-contrib-loc}"/>
+            </classpath>
+        </taskdef>
+    </target>
+
+    <target name="init-hudson" unless="isNetbeans">
+        <echo>Configuring ant-contrib for Hudson use...</echo>
+        <!--Import Hudson environment variables-->
+        <property environment="env"/>
+        <property name="ant-contrib-loc" value="${env.ANT_HOME}/lib/${ant-contrib-filename}"/>
+        <available file="${ant-contrib-loc}" property="ant-contrib.present"/>
+        <fail unless="ant-contrib.present" message="The ant-contrib jar doesn't exist at: ${ant-contrib-loc}, can't build. Check your settings!" />
+        <!--Define it. For some reason the approach in init-netbeans doesn't work in Hudson.-->
+        <taskdef name="for" classname="net.sf.antcontrib.logic.ForTask">
+            <classpath>
+                <pathelement location="${ant-contrib-loc}"/>
+            </classpath>
+        </taskdef>
+        <taskdef name="propertyregex" classname="net.sf.antcontrib.property.RegexTask">
+            <classpath>
+                <pathelement location="${ant-contrib-loc}"/>
+            </classpath>
+        </taskdef>
+        <taskdef name="if" classname="net.sf.antcontrib.logic.IfTask">
+            <classpath>
+                <pathelement location="${ant-contrib-loc}"/>
+            </classpath>
+        </taskdef>
+    </target>
+
+    <target name="merge-javadoc" depends="init-hudson, init-netbeans" description="Merges javadocs from modules into one">
+        <property name="merged.javadoc.dir" value="build/javadoc"/>
+        <!--Creade merged javadoc folder-->
+        <mkdir dir="${merged.javadoc.dir}"/>
+        <!--Creade index file-->
+        <echo file="${merged.javadoc.dir}/index.html">
+            <![CDATA[
+            <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+            <html>
+            <head>
+                <title>Main Index</title>
+                <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            </head>
+            <body>
+                <h1>Index</h1>
+                <ol>]]>
+        </echo>
+        <for list="${modules}" delimiter=":" param="cur" trim="true">
+            <sequential>
+                <echo>Checking @{cur}</echo>
+                <available file="@{cur}/build/javadoc/" property="@{cur}.javadoc.present"/>
+                <if>
+                    <equals arg1="${@{cur}.javadoc.present}" arg2="true"/>
+                    <then>
+                        <copy todir="${merged.javadoc.dir}/@{cur}">
+                            <fileset dir="@{cur}/build/javadoc/"/>
+                        </copy>
+                    </then>
+                </if>
+            </sequential>
+        </for>
+        <dirset id="dist.contents" dir="build/javadoc" includes="*"/>
+        <property name="prop.dist.contents" refid="dist.contents"/>
+        <for list="${prop.dist.contents}" delimiter=";" param="cur" trim="true">
+            <sequential>
+                <echo file="${merged.javadoc.dir}/index.html" append="true">
+                            <![CDATA[<li><a href="]]>
+                </echo>
+                <!-- Extract from project.xml-->
+                <xmlproperty file="@{cur}/nbproject/project.xml" prefix="@{cur}"/>
+                <!--Replace dots for dashes-->
+                <propertyregex property="@{cur}.pack.name"
+                    input="${@{cur}.project.configuration.data.code-name-base}"
+                    regexp="\."
+                    replace="-"
+                    casesensitive="false" />
+                <!--Show all loaded properties
+                <echoproperties prefix="@{cur}."/>
+                -->
+                <echo file="${merged.javadoc.dir}/index.html" append="true">
+                            @{cur}/${@{cur}.pack.name}/index.html"
+                </echo>
+                <echo file="${merged.javadoc.dir}/index.html" append="true">
+                            <![CDATA[>]]>
+                </echo>
+                <echo file="${merged.javadoc.dir}/index.html" append="true">
+                            @{cur}
+                </echo>
+                <echo file="${merged.javadoc.dir}/index.html" append="true">
+                            <![CDATA[</a></li>]]>
+                </echo>
+            </sequential>
+        </for>
+        <echo file="${merged.javadoc.dir}/index.html" append="true">
+                    <![CDATA[</ol>
+            </body>
+            </html>
+            ]]>
+        </echo>
+    </target>
 </project>
