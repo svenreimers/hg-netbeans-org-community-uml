@@ -145,9 +145,15 @@
                     regexp="\."
                     replace="-"
                     casesensitive="false" />
-                <!--Show all loaded properties
-                <echoproperties prefix="@{cur}."/>
-                -->
+                <!--If the package name has no dots the variable is not defined-->
+                <if>
+                    <not>
+                        <isset property="@{cur}.pack.name"/>
+                    </not>
+                    <then>
+                        <property name="@{cur}.pack.name" value="@{cur}"/>
+                    </then>
+                </if>
                 <echo file="${merged.javadoc.dir}/index.html" append="true">
                             @{cur}/${@{cur}.pack.name}/index.html"
                 </echo>
