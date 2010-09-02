@@ -76,11 +76,9 @@
 
     <target name="init-hudson" depends="getAntContribJar" unless="isNetbeans">
         <echo>Configuring ant-contrib for Hudson use...</echo>
-        <copy todir="${env.ANT_HOME}/lib/">
-            <fileset file="${suite.dir}/tools/${ant-contrib-filename}"/>
-        </copy>
         <!--Import Hudson environment variables-->
         <property environment="env"/>
+        <copy file="${suite.dir}/tools/${ant-contrib-filename}" todir="${env.ANT_HOME}/lib/"/>
         <property name="ant-contrib-loc" value="${env.ANT_HOME}/lib/${ant-contrib-filename}"/>
         <available file="${ant-contrib-loc}" property="ant-contrib.present"/>
         <fail unless="ant-contrib.present" message="The ant-contrib jar doesn't exist at: ${ant-contrib-loc}, can't build. Check your settings!" />
