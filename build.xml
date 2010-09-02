@@ -21,7 +21,7 @@
     <import file="nbproject/build-impl.xml"/>
     <property file="nbproject/project.properties"/>
 
-    <target name="nbms" depends="suite.nbms" unless="isNetbeans">
+    <target name="nbms" unless="isNetbeans">
         <!--Create/Update keystore-->
         <delete file="${keystore.location}${keystore.name}"/>
         <mkdir dir="${keystore.location}"/>
@@ -30,7 +30,7 @@
         keystore="${keystore.location}${keystore.name}"/>
         <!--Update keystore info in projects-->
         <antcall target="update-keystore-info"/>
-        <antcall target="suite.release"/>
+        <antcall target="suite.nbms"/>
         <!--Merge the javadocs-->
         <antcall target="merge-javadoc"/>
     </target>
