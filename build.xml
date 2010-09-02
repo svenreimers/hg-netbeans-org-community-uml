@@ -35,7 +35,7 @@
         <antcall target="merge-javadoc"/>
     </target>
 
-    <target name="update-keystore-info" depends="init-netbeans, init-hudson" if="isNetbeans">
+    <target name="update-keystore-info" depends="init-netbeans, init-hudson" unless="isNetbeans">
         <for list="${modules}" delimiter=":" param="cur" trim="true">
             <sequential>
                 <mkdir dir="@{cur}/nbproject/"/>
