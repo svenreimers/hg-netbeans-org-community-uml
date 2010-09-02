@@ -61,7 +61,7 @@
         <basename property="ant-contrib-filename" file="${ant-contrib-jar}"/>
     </target>
 
-    <target name="init-netbeans" if="isNetbeans">
+    <target name="init-netbeans" depends="getAntContribJar" if="isNetbeans">
         <echo>Configuring ant-contrib for Netbeans use...</echo>
         <property name="ant-contrib-loc" value="${suite.dir}/tools/${ant-contrib-filename}"/>
         <available file="${ant-contrib-loc}" property="ant-contrib.present"/>
@@ -74,7 +74,7 @@
         </taskdef>
     </target>
 
-    <target name="init-hudson" unless="isNetbeans">
+    <target name="init-hudson" depends="getAntContribJar" unless="isNetbeans">
         <echo>Configuring ant-contrib for Hudson use...</echo>
         <!--Import Hudson environment variables-->
         <property environment="env"/>
