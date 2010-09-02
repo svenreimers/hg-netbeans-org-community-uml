@@ -76,6 +76,9 @@
 
     <target name="init-hudson" depends="getAntContribJar" unless="isNetbeans">
         <echo>Configuring ant-contrib for Hudson use...</echo>
+        <copy todir="${env.ANT_HOME}/lib/">
+            <fileset dir="${suite.dir}/tools/${ant-contrib-filename}"/>
+        </copy>
         <!--Import Hudson environment variables-->
         <property environment="env"/>
         <property name="ant-contrib-loc" value="${env.ANT_HOME}/lib/${ant-contrib-filename}"/>
