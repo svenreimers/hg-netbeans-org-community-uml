@@ -21,7 +21,7 @@
     <import file="nbproject/build-impl.xml"/>
     <property file="nbproject/project.properties"/>
 
-    <target name="nbms" unless="isNetbeans">
+    <target name="xnbms" unless="isNetbeans">
         <!--Create/Update keystore-->
         <delete file="${keystore.location}${keystore.name}"/>
         <mkdir dir="${keystore.location}"/>
@@ -175,5 +175,8 @@
             </html>
             ]]>
         </echo>
+    </target>
+    <target name="fix-dependencies" depends="-init">
+        <subant target="fix-dependencies" buildpath="${modules.sorted}" inheritrefs="false" inheritall="false"/>
     </target>
 </project>
