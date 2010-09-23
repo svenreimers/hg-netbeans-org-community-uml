@@ -93,6 +93,7 @@ public class UMLProjectDataObject extends MultiDataObject
         
         CookieSet.Factory factory = new CookieSet.Factory()
         {
+            @Override
             public Node.Cookie createCookie(Class klass)
             {
                 if (klass.isAssignableFrom(EditorCookie.class)
@@ -136,7 +137,7 @@ public class UMLProjectDataObject extends MultiDataObject
         getCookieSet().add(new Save());
     }
     
-    private final void removeSaveCookie(SaveCookie save)
+    private void removeSaveCookie(SaveCookie save)
     {
         getCookieSet().remove(save);
     }
@@ -160,6 +161,7 @@ public class UMLProjectDataObject extends MultiDataObject
         return getName();
     }
     
+    @Override
     protected Node createNodeDelegate()
     {
         DataNode node = null;
@@ -183,6 +185,7 @@ public class UMLProjectDataObject extends MultiDataObject
     }
     
     
+    @Override
     public boolean isMoveAllowed()
     {
         return false;
@@ -191,6 +194,7 @@ public class UMLProjectDataObject extends MultiDataObject
     /* Getter for rename action.
      * @return true if the object can be renamed
      */
+    @Override
     public boolean isRenameAllowed()
     {
         return false;
@@ -216,6 +220,7 @@ public class UMLProjectDataObject extends MultiDataObject
                 super(obj);
             }
             
+            @Override
             protected FileObject getFile()
             {
                 return getDataObject().getPrimaryFile();
@@ -224,11 +229,13 @@ public class UMLProjectDataObject extends MultiDataObject
             /* make uml project data file read only in editor to prevent users
              * from tampering it accidentally
              */
+            @Override
             protected FileLock takeLock() throws IOException
             {
                 throw new IOException("Read Only"); // I18N
             }
             
+            @Override
             public CloneableOpenSupport findCloneableOpenSupport()
             {
                 return (CloneableOpenSupport) getDataObject().getCookie(EditorCookie.class);
@@ -239,6 +246,7 @@ public class UMLProjectDataObject extends MultiDataObject
     
     private class Save implements SaveCookie
     {
+        @Override
         public void save() throws IOException
         {
             //custom logic to save uml project files
@@ -262,6 +270,11 @@ public class UMLProjectDataObject extends MultiDataObject
             }
         }
     }
+
+    @Override
+    public Lookup getLookup() {
+        return getCookieSet().getLookup();
+    }
     
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~ private Loader ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     
@@ -277,6 +290,7 @@ public class UMLProjectDataObject extends MultiDataObject
             super("org.netbeans.modules.uml.project.UMLProjectDataObject"); // NOI18N
         }
         
+        @Override
         protected String actionsContext()
         {
             return "Loaders/text/xml/Actions"; // NOI18N
@@ -285,6 +299,7 @@ public class UMLProjectDataObject extends MultiDataObject
         /** Get the default display name of this loader.
          * @return default display name
          */
+        @Override
         protected String defaultDisplayName()
         {
             return NbBundle.getMessage(UMLProjectDataObject.class, "PROP_UMLProjectDataLoader_Name");
@@ -296,6 +311,7 @@ public class UMLProjectDataObject extends MultiDataObject
          * @return the primary file for the file or null if the file is not
          *   recognized by this loader
          */
+        @Override
         protected FileObject findPrimaryFile(FileObject fo)
         {
             String ext = fo.getExt();
@@ -315,6 +331,7 @@ public class UMLProjectDataObject extends MultiDataObject
          * @return the data object for this file
          * @exception DataObjectExistsException if the primary file already has data object
          */
+        @Override
         protected MultiDataObject createMultiObject(FileObject primaryFile)
         throws DataObjectExistsException
         {
@@ -326,6 +343,7 @@ public class UMLProjectDataObject extends MultiDataObject
          * @param primaryFile primary file recognized by this loader
          * @return primary entry for that file
          */
+        @Override
         protected MultiDataObject.Entry createPrimaryEntry(MultiDataObject obj, FileObject primaryFile)
         {
             return new FileEntry(obj, primaryFile);
@@ -337,6 +355,7 @@ public class UMLProjectDataObject extends MultiDataObject
          * @param secondaryFile secondary file for which we want to create entry
          * @return the entry
          */
+        @Override
         protected MultiDataObject.Entry createSecondaryEntry(MultiDataObject obj, FileObject secondaryFile)
         {
             // uml project defines two project files, *.etd as the primary (data file) and *.ettm as the 
