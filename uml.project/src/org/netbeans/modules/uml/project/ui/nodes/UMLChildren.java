@@ -45,8 +45,6 @@
 
 package org.netbeans.modules.uml.project.ui.nodes;
 
-import java.util.TreeSet;
-
 import org.openide.nodes.Children;
 import org.openide.nodes.Node;
 
@@ -80,31 +78,24 @@ public class UMLChildren extends Children.Array
    }
     
 
+    @Override
    public boolean add(Node[] arr)
    {
-       boolean retVal = super.add(arr);
-//       refresh();
+       refresh();
        
-       return retVal;
+       return super.add(arr);
    }
 
 
    /* (non-Javadoc)
     * @see org.openide.nodes.Children#addNotify()
     */
+    @Override
    protected void addNotify()
    {
       super.addNotify();
       
       sendNodeExpandEvent();
-   }
-
-   /* (non-Javadoc)s
-    * @see org.openide.nodes.Children#removeNotify()
-    */
-   protected void removeNotify()
-   {
-      super.removeNotify();
    }
    
    public boolean areChildrenInitialized()
@@ -180,6 +171,7 @@ public class UMLChildren extends Children.Array
          // is the right place to do it.
 	 MUTEX.readAccess(new Runnable() 
 	 {
+                @Override
 	     public void run() 
 	     {
 		 if (nodes != null) 
@@ -192,6 +184,7 @@ public class UMLChildren extends Children.Array
           
 	 MUTEX.readAccess(new Runnable() 
 	 {
+                @Override
 	     public void run() 
 	     {
 		 model.fireItemExpanding(item, new ChildrenNodeContext());  
@@ -204,8 +197,9 @@ public class UMLChildren extends Children.Array
 
  
    /** 
-    *  update the nodemap hash in the model to avoid "ghost" nodes in the hash
+    *  update the node map hash in the model to avoid "ghost" nodes in the hash
     */
+    @Override
    public boolean remove(Node[] nodes)
    {       
        NetBeansUMLProjectTreeModel model = UMLModelRootNode.getProjectTreeModel(); 
@@ -229,16 +223,40 @@ public class UMLChildren extends Children.Array
       /* (non-Javadoc)
        * @see org.netbeans.modules.uml.netbeans.umlproject.ui.IProjectTreeExpandContext#itemAdded(org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeItem)
        */
+        @Override
       public void itemAdded(ITreeItem item)
       {
          Node[] nodes = {new UMLElementNode(item)};
-         boolean isAdded = add(nodes);
+         add(nodes);
       }
       
+        @Override
       public String toString()
       {
          return mItem.getDisplayedName();
       }
    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final UMLChildren other = (UMLChildren) obj;
+        if (this.mItem != other.mItem && (this.mItem == null || !this.mItem.equals(other.mItem))) {
+            return false;
+        }
+        return true;
+    }
+
+    @Override
+    public int hashCode() {
+        int hash = 3;
+        hash = 97 * hash + (this.mItem != null ? this.mItem.hashCode() : 0);
+        return hash;
+    }
 
 }
