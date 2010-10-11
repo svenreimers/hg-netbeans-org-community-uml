@@ -171,21 +171,21 @@ public abstract class SwitchableWidget extends UMLNodeWidget
     {
         if (getScene() instanceof GraphScene)
         {
-            GraphScene scene = (GraphScene) getScene();
+            GraphScene scene2 = (GraphScene) getScene();
             
-            if(scene.findWidget(node) == null)
+            if(scene2.findWidget(node) == null)
             {
                 // We are in an initalization state.  We have been added to the
                 // scene, but the node has not been added to the graph yet.
                 return;
             }
             
-            Collection < IPresentationElement > edges = scene.findNodeEdges(node, true, true);
+            Collection < IPresentationElement > edges = scene2.findNodeEdges(node, true, true);
             if(edges != null)
             {
                 for(IPresentationElement edge : edges)
                 {
-                    Widget edgeWidget = scene.findWidget(edge);
+                    Widget edgeWidget = scene2.findWidget(edge);
                     if(edgeWidget != null)
                     {
                         Lookup lookup = edgeWidget.getLookup();
@@ -315,35 +315,34 @@ public abstract class SwitchableWidget extends UMLNodeWidget
     public class SwitchableViewManger implements WidgetViewManager
     {
 
+        @Override
         public Action[] getViewActions()
         {
             ViewInformation[] viewNames = getAvaliableViews();
-            
-            // Since I do not want to include the view that is currently showing
-            // the retVal will be one less then the viewNames
-            Action[] retVal = new Action[viewNames.length - 1];
-            
-            int rIndex = 0;
-            for(int index = 0; index < viewNames.length; index ++)
-            {
-                ViewInformation info = viewNames[index];
-                if(viewName.equals(info.getId()) == false)
-                {
-                    retVal[rIndex] = new SwitchViewAction(info);
-                    rIndex++;
+            //Return an empty array if you get invalid values
+            Action[] retVal = new Action[1];
+            if (viewNames.length > 0) {
+                // Since I do not want to include the view that is currently showing
+                // the retVal will be one less then the viewNames
+                retVal = new Action[viewNames.length - 1];
+
+                int rIndex = 0;
+                for (int index = 0; index < viewNames.length; index++) {
+                    ViewInformation info = viewNames[index];
+                    if (viewName.equals(info.getId()) == false) {
+                        retVal[rIndex] = new SwitchViewAction(info);
+                        rIndex++;
+                    }
                 }
-                
             }
-            
             return retVal;
         }
         
+        @Override
         public void switchViewTo(String view)
         {
             switchTo(view);
         }
-        
-        
     }
     
     public class SwitchViewAction extends AbstractAction
@@ -359,6 +358,7 @@ public abstract class SwitchableWidget extends UMLNodeWidget
             putValue(NAME, displayName);
         }
         
+        @Override
         public void actionPerformed(ActionEvent event)
         {
             switchTo(info.getId());
