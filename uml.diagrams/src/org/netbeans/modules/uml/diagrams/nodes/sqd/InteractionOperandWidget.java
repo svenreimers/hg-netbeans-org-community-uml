@@ -53,7 +53,7 @@ import java.awt.Rectangle;
 import java.awt.Stroke;
 import java.awt.geom.AffineTransform;
 import java.util.Collection;
-import java.util.Hashtable;
+import java.util.HashMap;
 import java.util.Iterator;
 import org.netbeans.api.visual.layout.Layout;
 import org.netbeans.api.visual.layout.LayoutFactory;
@@ -114,14 +114,17 @@ public class InteractionOperandWidget extends Widget implements DiagramNodeWrite
         addPresentation(attr);
         setLayout(new Layout(){
         
+            @Override
             public void layout(Widget widget) {
                LayoutFactory.createAbsoluteLayout().layout(widget);
             }
 
+            @Override
             public boolean requiresJustification(Widget widget) {
                 return widget.getFont()!=null;
             }
 
+            @Override
             public void justify(Widget widget) {
                 LayoutFactory.createAbsoluteLayout().justify(widget);
                  Rectangle rec=getClientArea();
@@ -186,10 +189,12 @@ public class InteractionOperandWidget extends Widget implements DiagramNodeWrite
         else super.paintWidget();
     }
 
+    @Override
     public TYPE[] getAllTypes() {
         return new TYPE[]{TYPE.BODY};
     }
 
+    @Override
     public boolean isShown(TYPE type) {
         switch(type)
         {
@@ -205,6 +210,7 @@ public class InteractionOperandWidget extends Widget implements DiagramNodeWrite
         return constraint.getLabel();
     }
     
+    @Override
     public void show(TYPE type) {
         //TBD swicth to usage of label manager
         switch(type)
@@ -218,6 +224,7 @@ public class InteractionOperandWidget extends Widget implements DiagramNodeWrite
         }
     }
 
+    @Override
     public void hide(TYPE type) {
         switch(type)
         {
@@ -258,6 +265,7 @@ public class InteractionOperandWidget extends Widget implements DiagramNodeWrite
         return retVal;
     }
 
+    @Override
     public void save(NodeWriter nodeWriter) {
         setNodeWriterValues(nodeWriter, this);
         nodeWriter.beginGraphNodeWithModelBridge();
@@ -273,6 +281,7 @@ public class InteractionOperandWidget extends Widget implements DiagramNodeWrite
         nodeWriter.endGraphNode();
     }
 
+    @Override
     public void saveChildren(Widget widget, NodeWriter nodeWriter) {
         //we are not interested in its children.. we just want dependencies (movablelabelwidgets)
 //        if (widget == null || nodeWriter == null)
@@ -288,13 +297,15 @@ public class InteractionOperandWidget extends Widget implements DiagramNodeWrite
 //        }
     }
     
+    @Override
     public void addContainedChild(Widget widget) {
         throw new UnsupportedOperationException("Not supported yet.");
     }
 
+    @Override
     public void load(NodeInfo nodeReader) {
         //get all the properties
-        Hashtable<String, String> props = nodeReader.getProperties();        //
+        HashMap<String, String> props = nodeReader.getProperties();        //
         if(nodeReader.getPosition()!=null)
             setPreferredLocation(nodeReader.getPosition());
         if (nodeReader.getSize() != null)
@@ -303,6 +314,7 @@ public class InteractionOperandWidget extends Widget implements DiagramNodeWrite
         }
     }
 
+    @Override
     public void loadDependencies(NodeInfo nodeReader)
     {
         Collection nodeLabels = nodeReader.getLabels();

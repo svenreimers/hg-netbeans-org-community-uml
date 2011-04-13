@@ -41,7 +41,6 @@
  * Version 2 license, then the option applies only if the new code is
  * made subject to such option by the copyright holder.
  */
-
 package org.netbeans.modules.uml.drawingarea;
 
 import java.awt.BorderLayout;
@@ -165,38 +164,29 @@ import org.openide.windows.WindowManager;
 /**
  * Top component which displays something.
  */
-public class UMLDiagramTopComponent extends TopComponent implements MouseListener
-{
+public class UMLDiagramTopComponent extends TopComponent implements MouseListener {
 
     private static UMLDiagramTopComponent instance;
     /** path to the icon used by the component and its open action */
     //    static final String ICON_PATH = "SET/PATH/TO/ICON/HERE";
     private static final String PREFERRED_ID = "UMLDiagramTopComponent";
-    
     private JComponent diagramView;
     private NavigatorHint navigatorCookie = null;
     private DesignerScene scene;
-
     private PaletteController paletteController;
     private transient UMLDiagramDataObject diagramDO;
     private DiagramChangeListener diagramChangeListener = new DiagramChangeListener();
-    
     JPanel decoratorLayer = new JPanel();
     private String preferredID = "";
-
     private InstanceContent lookupContent = new InstanceContent();
     private Lookup lookup = null;
-
     protected IDrawingAreaEventDispatcher drawingAreaDispatcher;
     protected DispatchHelper helper = new DispatchHelper();
     private boolean isNewDiagram = false;
-
     //private ChangeHandler changeListener = new ChangeHandler();
     private DrawingAreaChangeHandler changeListener = null;
     private EngineDrawingAreaSink drawingAreaSink = new EngineDrawingAreaSink();
     private Toolbar editorToolbar = null;
-    
-
     // Global Actions.
     private ZoomManager zoomManager = null;
     private CopyCutActionPerformer copyActionPerformer = new CopyCutActionPerformer(true);
@@ -206,44 +196,41 @@ public class UMLDiagramTopComponent extends TopComponent implements MouseListene
     private ClipboardListener clipboardListener;
     private ExplorerManager explorerManager;
     private SceneAcceptProvider provider;
-
     private static final int RESULT_CANCEL = 0;
     private static final int RESULT_NO = 1;
     private static final int RESULT_YES = 2;
     private boolean activated;
-    
-    private UMLDiagramTopComponent()
-    {
+
+    private UMLDiagramTopComponent() {
         initComponents();
-        
+
         explorerManager = new ExplorerManager();
 
         lookupContent.add(
-            ExplorerUtils.createLookup(explorerManager, setupActionMap(getActionMap()))
-        );
+                ExplorerUtils.createLookup(explorerManager,
+                setupActionMap(getActionMap())));
 
         Clipboard c = CopyPasteSupport.getClipboard();
         if (c instanceof ExClipboard) {
             ExClipboard clip = (ExClipboard) c;
-            if (clipboardListener == null)
+            if (clipboardListener == null) {
                 clipboardListener = new ClipboardChangesListener();
+            }
             clip.addClipboardListener(clipboardListener);
-        }        
-                
+        }
+
         copyActionPerformer.setEnabled(false);
         cutActionPerformer.setEnabled(false);
         pasteActionPerformer.setEnabled(false);
         deleteActionPerformer.setEnabled(false);
-         
-        if (java.awt.EventQueue.isDispatchThread())
-        {
+
+        if (java.awt.EventQueue.isDispatchThread()) {
             setToolTipText(NbBundle.getMessage(UMLDiagramTopComponent.class, "HINT_UMLDiagramTopComponent"));
-        } else
-        {
-            java.awt.EventQueue.invokeLater(new Runnable()
-            {
-                public void run()
-                {
+        } else {
+            java.awt.EventQueue.invokeLater(new Runnable() {
+
+                @Override
+                public void run() {
                     setToolTipText(NbBundle.getMessage(UMLDiagramTopComponent.class, "HINT_UMLDiagramTopComponent"));
                 }
             });
@@ -252,19 +239,18 @@ public class UMLDiagramTopComponent extends TopComponent implements MouseListene
 
     public UMLDiagramTopComponent(String filename) throws DataObjectNotFoundException {
         this();
-        
+
         //Jyothi: We are loading the file
         File file = new File(filename);
 
         PersistenceManager pMgr = new PersistenceManager();
-        scene = pMgr.loadDiagram(filename, this, isEdgesGrouped());
+        scene = pMgr.loadDiagram(filename, (UMLDiagramTopComponent) this, isEdgesGrouped());
         assert scene != null;
 
         FileObject fobj = FileUtil.toFileObject(file);
         diagramDO = (UMLDiagramDataObject) DataObject.find(fobj);
 
-        if (fobj.canWrite() == false)
-        {
+        if (fobj.canWrite() == false) {
             scene.setActiveTool(DesignerTools.READ_ONLY);
         }
 
@@ -272,22 +258,21 @@ public class UMLDiagramTopComponent extends TopComponent implements MouseListene
         // scene and the diagram initialized.
 
         UIDiagram uiDiagram = (UIDiagram) scene.getDiagram();
-        if (uiDiagram != null)
-        {
+        if (uiDiagram != null) {
             uiDiagram.setDataObject(diagramDO);
         }
         initInAWTThread();
 
         editorToolbar = new Toolbar("Diagram Toolbar", false);
         add(editorToolbar, BorderLayout.NORTH);
-        
+
         zoomManager = new ZoomManager(scene);
         zoomManager.addZoomListener(new ZoomManager.ZoomListener() {
-            public void zoomChanged(ZoomEvent event)
-            {
+
+            @Override
+            public void zoomChanged(ZoomEvent event) {
                 ContextPaletteManager manager = scene.getContextPaletteManager();
-                if(manager != null)
-                {
+                if (manager != null) {
                     // Make sure that the palette is correctly placed for the 
                     // zoom level.
                     manager.cancelPalette();
@@ -295,50 +280,47 @@ public class UMLDiagramTopComponent extends TopComponent implements MouseListene
                 }
             }
         });
-        
-        initRootNode();   
-        initLookup();
-        initializeToolBar();
-    }
 
-    public UMLDiagramTopComponent(INamespace owner, String name, int kind)
-    {
-        this();
-        
-        IDiagram diagram = initNewDiagram(owner, name, kind);
-
-       initInAWTThread();
-        
-        editorToolbar = new Toolbar("Diagram Toolbar", false);
-        add(editorToolbar, BorderLayout.NORTH);
-        
-        zoomManager = new ZoomManager(scene);
-        zoomManager.addZoomListener(new ZoomManager.ZoomListener() {
-            public void zoomChanged(ZoomEvent event)
-            {
-                ContextPaletteManager manager = scene.getContextPaletteManager();
-                if(manager != null)
-                {
-                    // Make sure that the palette is correctly placed for the 
-                    // zoom level.
-                    manager.cancelPalette();
-                    manager.selectionChanged(null);
-                }
-            }
-        });
-        
         initRootNode();
         initLookup();
         initializeToolBar();
     }
 
-    protected boolean isEdgesGrouped()
-    {
+    public UMLDiagramTopComponent(INamespace owner, String name, int kind) {
+        this();
+
+        IDiagram diagram = initNewDiagram(owner, name, kind);
+
+        initInAWTThread();
+
+        editorToolbar = new Toolbar("Diagram Toolbar", false);
+        add(editorToolbar, BorderLayout.NORTH);
+
+        zoomManager = new ZoomManager(scene);
+        zoomManager.addZoomListener(new ZoomManager.ZoomListener() {
+
+            @Override
+            public void zoomChanged(ZoomEvent event) {
+                ContextPaletteManager manager = scene.getContextPaletteManager();
+                if (manager != null) {
+                    // Make sure that the palette is correctly placed for the 
+                    // zoom level.
+                    manager.cancelPalette();
+                    manager.selectionChanged(null);
+                }
+            }
+        });
+
+        initRootNode();
+        initLookup();
+        initializeToolBar();
+    }
+
+    private boolean isEdgesGrouped() {
         return true;
     }
-    
-    private void initRootNode()
-    {
+
+    private void initRootNode() {
         DiagramModelElementNode node = new DiagramModelElementNode(getDiagramDO());
         node.setName(getName());
         node.setElement(getDiagram().getDiagram());
@@ -346,127 +328,106 @@ public class UMLDiagramTopComponent extends TopComponent implements MouseListene
         getExplorerManager().setRootContext(node);
     }
 
-    private void init()
-    {
+    private void init() {
         initUI();
         setName();
         setIcon();
     }
-    
-    
-    private void initInAWTThread()
-    {
-        if (java.awt.EventQueue.isDispatchThread())
-        {
+
+    private void initInAWTThread() {
+        if (java.awt.EventQueue.isDispatchThread()) {
             init();
-        } else
-        {
-            java.awt.EventQueue.invokeLater(new Runnable()
-            {
-                public void run()
-                {
+        } else {
+            java.awt.EventQueue.invokeLater(new Runnable() {
+
+                @Override
+                public void run() {
                     init();
                 }
             });
         }
     }
-    
+
     public ExplorerManager getExplorerManager() {
         return explorerManager;
     }
 
-    
-    ActionMap setupActionMap(javax.swing.ActionMap map)
-    {
+    private ActionMap setupActionMap(javax.swing.ActionMap map) {
         map.put(DefaultEditorKit.copyAction, copyActionPerformer);
         map.put(DefaultEditorKit.cutAction, cutActionPerformer);
         map.put(DefaultEditorKit.pasteAction, pasteActionPerformer);
         map.put("delete", deleteActionPerformer); // NOI18N
         return map;
     }
-    
+
     ///////////////////////////////////////////////////////////////////////////
     // TopCompnent Overrides
-    
-     @Override
-    public boolean canClose() 
-     {
-         boolean safeToClose = true;
-        if (getDiagramDO() != null && getDiagramDO().getCookie(SaveCookie.class) == null)
-        {
-            return true;            
+    @Override
+    public boolean canClose() {
+        boolean safeToClose = true;
+        if (getDiagramDO() != null && getDiagramDO().getCookie(SaveCookie.class) == null) {
+            return true;
         }
         //prompt to save before close
-        switch (saveDiagram())
-        {
-        case RESULT_YES:
-            SaveCookie cookie = (SaveCookie) getDiagramDO().getCookie(SaveCookie.class);
-            try
-            {
-                if (cookie != null)
-                    cookie.save();
-            }
-            catch (IOException e)
-            {
-                ErrorManager.getDefault().notify(e);
-            }
-            break;
-            
-        case RESULT_NO:
-            this.setDiagramDirty(false);
-            break;
-            
-        case RESULT_CANCEL:
-            safeToClose = false;
-            break;
+        switch (saveDiagram()) {
+            case RESULT_YES:
+                SaveCookie cookie = (SaveCookie) getDiagramDO().getCookie(SaveCookie.class);
+                try {
+                    if (cookie != null) {
+                        cookie.save();
+                    }
+                } catch (IOException e) {
+                    ErrorManager.getDefault().notify(e);
+                }
+                break;
+
+            case RESULT_NO:
+                this.setDiagramDirty(false);
+                break;
+
+            case RESULT_CANCEL:
+                safeToClose = false;
+                break;
         }
-        
+
         return safeToClose;
     }
-     
-     private int saveDiagram()
-    {   
+
+    private int saveDiagram() {
         String title = NbBundle.getMessage(UMLDiagramTopComponent.class,
                 "LBL_DIALOG_TITLE_SaveDiagram"); // NOI18N
-        
+
         String objType = NbBundle.getMessage(
                 UMLDiagramTopComponent.class,
-                "LBL_DIALOG_MSG_Diagram",  // NOI18N
+                "LBL_DIALOG_MSG_Diagram", // NOI18N
                 getName());
-        
+
         int result = RESULT_CANCEL;
-        
+
         Object response = SaveNotifierYesNo.getDefault().displayNotifier(
                 title, // NOI18N
                 objType, // NOI18N
-                getAssociatedDiagram().getNamespace().toString()+"::"+getName());
-        
-        if (response == SaveNotifierYesNo.SAVE_ALWAYS_OPTION)
-        {
+                getAssociatedDiagram().getNamespace().toString() + "::" + getName());
+
+        if (response == SaveNotifierYesNo.SAVE_ALWAYS_OPTION) {
             result = RESULT_YES;
-        }
-        
-        else if (response == NotifyDescriptor.YES_OPTION)
+        } else if (response == NotifyDescriptor.YES_OPTION) {
             result = RESULT_YES;
-        
-        else if (response == NotifyDescriptor.NO_OPTION)
+        } else if (response == NotifyDescriptor.NO_OPTION) {
             result = RESULT_NO;
-        
-        else // cancel or closed (x button)
+        } else // cancel or closed (x button)
         {
             result = RESULT_CANCEL;
         }
-        
+
         return result;
     }
-    
+
     @Override
-    protected void componentClosed()
-    {
+    protected void componentClosed() {
         // TODO: Do the same thing as preClosed on the ADDrawingAreaControl.
         IProduct pProd = ProductHelper.getProduct();
-        if (pProd != null)
-        {
+        if (pProd != null) {
             // Make sure the diagram is in the workspace
             pProd.removeDiagram(getAssociatedDiagram());
         }
@@ -479,19 +440,16 @@ public class UMLDiagramTopComponent extends TopComponent implements MouseListene
     }
 
     @Override
-    protected void componentOpened()
-    {
+    protected void componentOpened() {
         super.componentOpened();
 
         IProduct pProd = ProductHelper.getProduct();
-        if (pProd != null)
-        {
+        if (pProd != null) {
             // Make sure the diagram is in the workspace
             pProd.addDiagram(getAssociatedDiagram());
         }
 
-        if (isNewDiagram == true)
-        {
+        if (isNewDiagram == true) {
             IEventPayload payload = getDrawingAreaDispatcher().createPayload("FireDrawingAreaPostCreated");
             getDrawingAreaDispatcher().fireDrawingAreaPostCreated(getDiagramDO(), payload);
         }
@@ -501,51 +459,48 @@ public class UMLDiagramTopComponent extends TopComponent implements MouseListene
         keyActionMapper.setComponent(this);
         keyActionMapper.registerKeyMap();
         keyActionMapper.registerToolbarActions(editorToolbar);
-        
-        if(getDiagram()!=null && getDiagram().getView()!=null)getDiagram().getView().requestFocusInWindow();
+
+        if (getDiagram() != null && getDiagram().getView() != null) {
+            getDiagram().getView().requestFocusInWindow();
+        }
     }
 
     @Override
     protected void componentActivated() {
         super.componentActivated();
-        this.activated=true;
-        if (getDiagram() != null && getDiagram().getView() != null)
-        {
+        this.activated = true;
+        if (getDiagram() != null && getDiagram().getView() != null) {
             getDiagram().getView().requestFocusInWindow();
         }
-        
+
         TopComponentGroup group = WindowManager.getDefault().findTopComponentGroup("modeling-diagrams"); // NOI18N
-        if (group != null)
-        {
+        if (group != null) {
             group.open();
             TopComponent tc = WindowManager.getDefault().findTopComponent("documentation");
-            if (!Boolean.TRUE.equals(tc.getClientProperty("isSliding")))
+            if (!Boolean.TRUE.equals(tc.getClientProperty("isSliding"))) {
                 tc.requestVisible();
+            }
         }
     }
 
     @Override
     protected void componentDeactivated() {
         super.componentDeactivated();
-        this.activated=false;
+        this.activated = false;
     }
 
-    public boolean isActivated()
-    {
+    public boolean isActivated() {
         return activated;
     }
-    
+
     @Override
-    public int getPersistenceType()
-    {
+    public int getPersistenceType() {
         return TopComponent.PERSISTENCE_NEVER;
     }
 
     @Override
-    public Lookup getLookup()
-    {
-        if (lookup == null)
-        {
+    public Lookup getLookup() {
+        if (lookup == null) {
             Lookup superLookup = super.getLookup();
 
             Lookup[] content = {superLookup, new AbstractLookup(lookupContent)};
@@ -559,20 +514,17 @@ public class UMLDiagramTopComponent extends TopComponent implements MouseListene
 
     ////////////////////////////////////////////////////////////////////////////
     // API Methods
-    public static String preferredIDForDiagram(IDiagram diagram)
-    {
+    public static String preferredIDForDiagram(IDiagram diagram) {
         String retVal = "";
 
 
-        if (diagram != null)
-        {
+        if (diagram != null) {
             String fileName = diagram.getFilename();
             File file = new File(fileName);
             String name = file.getName();
             int dotIndex = name.lastIndexOf('.');
 
-            if (dotIndex > 0)
-            {
+            if (dotIndex > 0) {
                 name = name.substring(0, dotIndex);
             }
             retVal = name.toUpperCase();
@@ -581,41 +533,32 @@ public class UMLDiagramTopComponent extends TopComponent implements MouseListene
         return retVal;
     }
 
-    public IDiagram getAssociatedDiagram()
-    {
+    public IDiagram getAssociatedDiagram() {
         IDiagram retVal = null;
 
-        if (scene != null)
-        {
+        if (scene != null) {
             retVal = scene.getDiagram();
         }
 
         return retVal;
     }
 
-    public DesignerScene getScene()
-    {
+    public DesignerScene getScene() {
         return scene;
     }
 
     @Override
-    public String preferredID()
-    {
+    public String preferredID() {
         String retVal = preferredID;
 
-        if (retVal.length() <= 0)
-        {
-            if (getAssociatedDiagram() != null)
-            {
+        if (retVal.length() <= 0) {
+            if (getAssociatedDiagram() != null) {
                 IDiagram assocDiagram = getAssociatedDiagram();
 
-                if (assocDiagram != null)
-                {
+                if (assocDiagram != null) {
                     preferredID = preferredIDForDiagram(assocDiagram);
                 }
-            }
-            else
-            {
+            } else {
                 preferredID = super.preferredID();
             }
 
@@ -628,60 +571,50 @@ public class UMLDiagramTopComponent extends TopComponent implements MouseListene
     ///////////////////////////////////////////////////////////////
     // Helper Methods
     //////////////////////////////////////////////////////////////
-    protected void registerListeners()
-    {
-        if(getDiagram().isReadOnly() == false)
-        {
+    protected void registerListeners() {
+        if (getDiagram().isReadOnly() == false) {
             changeListener = new DrawingAreaChangeHandler(this);
             DrawingAreaEventHandler.addChangeListener(changeListener);
             getDiagramDO().addPropertyChangeListener(diagramChangeListener);
             helper.registerDrawingAreaEvents(drawingAreaSink);
         }
     }
-    
-    
-    protected void unregisterListeners()
-    {
+
+    protected void unregisterListeners() {
         DrawingAreaEventHandler.removeChangeListener(changeListener);
         getDiagramDO().removePropertyChangeListener(diagramChangeListener);
         helper.revokeDrawingAreaSink(drawingAreaSink);
     }
-    
-    protected void setIcon()
-    {
+
+    protected void setIcon() {
         CommonResourceManager resource = CommonResourceManager.instance();
 
         String kind = getAssociatedDiagram().getDiagramKindAsString();
         final String details = resource.getIconDetailsForElementType(kind);
-        if (java.awt.EventQueue.isDispatchThread())
-        {
+        if (java.awt.EventQueue.isDispatchThread()) {
             setIcon(ImageUtilities.loadImage(details, true));
-        } else
-        {
-            java.awt.EventQueue.invokeLater(new Runnable()
-            {
-                public void run()
-                {
+        } else {
+            java.awt.EventQueue.invokeLater(new Runnable() {
+
+                @Override
+                public void run() {
                     setIcon(ImageUtilities.loadImage(details, true));
                 }
             });
         }
     }
 
-    protected void setName()
-    {
+    protected void setName() {
         IDiagram diagram = getAssociatedDiagram();
 
         setDisplayName(diagram.getNameWithAlias());
         setName(diagram.getName());
-        
+
         INamespace space = diagram.getNamespace();
-        if (space != null && diagram != null)
-        {
+        if (space != null && diagram != null) {
             setToolTipText(space.getFullyQualifiedName(true) + "::" + diagram.getNameWithAlias()); // NOI18N
         }
-        if(diagramView != null)
-        {
+        if (diagramView != null) {
             diagramView.putClientProperty("print.name", diagram.getNameWithAlias()); // NOI18N
             diagramView.getAccessibleContext().setAccessibleName(diagram.getNameWithAlias());
             diagramView.getAccessibleContext().setAccessibleDescription(getToolTipText());
@@ -692,87 +625,74 @@ public class UMLDiagramTopComponent extends TopComponent implements MouseListene
      *
      * @return
      */
-    private NavigatorHint getNavigatorCookie()
-    {
-        if (navigatorCookie == null)
-        {
+    private NavigatorHint getNavigatorCookie() {
+        if (navigatorCookie == null) {
             navigatorCookie = new NavigatorHint();
         }
         return navigatorCookie;
     }
 
-    private PaletteController getAssociatedPalette()
-    {
+    private PaletteController getAssociatedPalette() {
 
-        if (paletteController == null)
-        {
+        if (paletteController == null) {
             PaletteSupport support = new PaletteSupport();
             paletteController = support.getPalette(getAssociatedDiagram());
         }
 
         paletteController.addPropertyChangeListener(new PropertyChangeListener() {
 
-            public void propertyChange(PropertyChangeEvent event)
-            {
+            @Override
+            public void propertyChange(PropertyChangeEvent event) {
                 String propName = event.getPropertyName();
-                if (PaletteController.PROP_SELECTED_ITEM.equals(propName)) 
-                {
+                if (PaletteController.PROP_SELECTED_ITEM.equals(propName)) {
                     // If a node is deseleted then the new value is an empty
                     // lookup.  If a node is selected then the new value is
                     // a lookup that has a node.
                     Scene scene = getScene();
-                    
+
                     // If the diagram is read-only do not respond to changes 
                     // in the diagram.
-                    if(getDiagram().isReadOnly() == true)
-                    {
+                    if (getDiagram().isReadOnly() == true) {
                         return;
                     }
-                    
+
                     WidgetAction.Chain actions = scene.createActions(DesignerTools.PALETTE);
-                    
-                    for(int index = 0; index < actions.getActions().size(); index++)
-                    {
+
+                    for (int index = 0; index < actions.getActions().size(); index++) {
                         actions.removeAction(index);
-                    }        
-                    
-                    if(event.getNewValue() instanceof Lookup)
-                    {
-                        Lookup lookup = (Lookup)event.getNewValue();
+                    }
+
+                    if (event.getNewValue() instanceof Lookup) {
+                        Lookup lookup = (Lookup) event.getNewValue();
                         Node node = lookup.lookup(Node.class);
-                        if(node != null)
-                        {
+                        if (node != null) {
                             Lookup nodeLookup = node.getLookup();
-                             try {
+                            try {
                                 CopyPasteSupport.getClipboard().setContents(node.clipboardCopy(), new StringSelection("")); // NOI18N
-                             }catch(Exception e)
-                             {}
+                            } catch (Exception e) {
+                            }
                             INamespace space = getAssociatedDiagram().getNamespaceForCreatedElements();
                             actions.addAction(new SceneAcceptAction(space, nodeLookup.lookup(PaletteItem.class)));
 //                            actions.addAction(ActionFactory.createAcceptAction(new SceneAcceptAction(space)));
                             scene.setActiveTool(DesignerTools.PALETTE);
-                        }
-                        else
-                        {
-                            if(DesignerTools.mapToolToButton.get(DesignerTools.SELECT)!=null)
-                            {
+                        } else {
+                            if (DesignerTools.mapToolToButton.get(DesignerTools.SELECT) != null) {
                                 DesignerTools.mapToolToButton.get(DesignerTools.SELECT).doClick();
+                            } else {
+                                scene.setActiveTool(DesignerTools.SELECT);
                             }
-                            else scene.setActiveTool(DesignerTools.SELECT);
                         }
-                    }
-                    else
-                    {
-                            if(DesignerTools.mapToolToButton.get(DesignerTools.SELECT)!=null)
-                            {
-                                DesignerTools.mapToolToButton.get(DesignerTools.SELECT).doClick();
-                            }
-                            else scene.setActiveTool(DesignerTools.SELECT);
+                    } else {
+                        if (DesignerTools.mapToolToButton.get(DesignerTools.SELECT) != null) {
+                            DesignerTools.mapToolToButton.get(DesignerTools.SELECT).doClick();
+                        } else {
+                            scene.setActiveTool(DesignerTools.SELECT);
+                        }
                     }
                 }
             }
         });
-        
+
         return paletteController;
     }
 
@@ -781,23 +701,19 @@ public class UMLDiagramTopComponent extends TopComponent implements MouseListene
      * and sends an event notifying listners that a diagram is created.  The
      * scene will also be initialied as well.
      */
-    protected IDiagram initNewDiagram(INamespace owner, String name, int kind)
-    {
+    private IDiagram initNewDiagram(INamespace owner, String name, int kind) {
         IDiagram retVal = null;
 
-        if (getAssociatedDiagram() == null)
-        {
+        if (getAssociatedDiagram() == null) {
             DiagramTypesManager pMgr = DiagramTypesManager.instance();
             String diaType = pMgr.getUMLType(kind);
-            if (diaType == null)
-            {
+            if (diaType == null) {
                 diaType = "";
             }
 
-            if (diaType.length() > 0)
-            {
+            if (diaType.length() > 0) {
                 UMLDiagramDataObject data = getDiagramDO(name, owner);
-                UIDiagram diagram = (UIDiagram)FactoryRetriever.instance().createType("Diagram", null);
+                UIDiagram diagram = (UIDiagram) FactoryRetriever.instance().createType("Diagram", null);
                 diagram.setDataObject(data);
 
                 // At this point the diagram has not yet been saved, so 
@@ -809,10 +725,10 @@ public class UMLDiagramTopComponent extends TopComponent implements MouseListene
                 diagram.setDiagramKind(kind);
                 diagram.setNotify(true);
                 setDiagramNameSpace(owner, diagram);
-                lookupContent.add(diagram);   
+                lookupContent.add(diagram);
 
                 retVal = diagram;
-                scene = new DesignerScene(diagram,this);
+                scene = new DesignerScene(diagram, this);
                 scene.setEdgesGrouped(isEdgesGrouped());
             }
 
@@ -822,8 +738,7 @@ public class UMLDiagramTopComponent extends TopComponent implements MouseListene
         return retVal;
     }
 
-    private void setDiagramNameSpace(INamespace owner, IDiagram diagram)
-    {
+    private void setDiagramNameSpace(INamespace owner, IDiagram diagram) {
         /*
          * For Activity, Collaboration, Sequence, and State diagrams,
          * their diagrams name space is not IProject but IActivity, IInteration,
@@ -835,58 +750,45 @@ public class UMLDiagramTopComponent extends TopComponent implements MouseListene
 
         String diagramKind = diagram.getDiagramKindAsString();
         INamespace newNameSpace = null;
-        if (owner != null)
-        {
+        if (owner != null) {
             //modifications have sense only if occur in project, package etc
             // if user create activity diagram inside activity, sqd inside interaction we have nothing to do
             FactoryRetriever factory = FactoryRetriever.instance();
-            if (diagramKind.indexOf("Activity") > -1 && !(owner instanceof IActivity))
-            {
+            if (diagramKind.indexOf("Activity") > -1 && !(owner instanceof IActivity)) {
                 //create Activity namespace for Activity diagram
                 newNameSpace = (IActivity) factory.createType("Activity", owner);
-            } 
-            else if ((diagramKind.indexOf("Collaboration") > -1 ||
-                    diagramKind.indexOf("Sequence") > -1) && !(owner instanceof IInteraction))
-            {
+            } else if ((diagramKind.indexOf("Collaboration") > -1
+                    || diagramKind.indexOf("Sequence") > -1) && !(owner instanceof IInteraction)) {
                 // Create Interaction nameSpace for Collaboration/Sequence diagram
                 newNameSpace = (IInteraction) factory.createType("Interaction", owner);
-            } 
-            else if (diagramKind.indexOf("State") > -1 && !(owner instanceof IStateMachine))
-            {
+            } else if (diagramKind.indexOf("State") > -1 && !(owner instanceof IStateMachine)) {
                 // Create StateMachine nameSpace for State diagram
                 newNameSpace = (IStateMachine) factory.createType("StateMachine", owner);
-            } 
-            
-            if (newNameSpace != null) 
-            {
+            }
+
+            if (newNameSpace != null) {
                 newNameSpace.setName(diagram.getName());
                 newNameSpace.setNamespace(owner);
                 owner.addOwnedElement(newNameSpace);
                 diagram.setNamespace(newNameSpace);
-            }
-            else 
-            {
+            } else {
                 diagram.setNamespace(owner);
             }
         }
     }
-    
+
     /*
      * getDrawingAreaDispatcher is a demand load accessor to the drawArea Event Dispatcher.
      */
-    private IDrawingAreaEventDispatcher getDrawingAreaDispatcher()
-    {
-        if (drawingAreaDispatcher == null)
-        {
+    private IDrawingAreaEventDispatcher getDrawingAreaDispatcher() {
+        if (drawingAreaDispatcher == null) {
             drawingAreaDispatcher = helper.getDrawingAreaDispatcher();
         }
         return drawingAreaDispatcher;
     }
 
-    private void initUI()
-    {
-        if (scene != null)
-        {
+    private void initUI() {
+        if (scene != null) {
             JLayeredPane view = new JLayeredPane();
             view.setLayout(new OverlayLayout(view));
 
@@ -895,9 +797,9 @@ public class UMLDiagramTopComponent extends TopComponent implements MouseListene
             } else {
                 diagramView = scene.getView();
             }
-            scene.getView().setMaximumSize(new Dimension(Integer.MAX_VALUE,Integer.MAX_VALUE));
+            scene.getView().setMaximumSize(new Dimension(Integer.MAX_VALUE, Integer.MAX_VALUE));
             diagramView.putClientProperty("print.printable", Boolean.TRUE); // NOI18N
-            
+
             // If the scene component has a mouse wheel listener then the 
             // native JScrollPane scroll wheel behavior will not occur.  So
             // Since we do any special mouse wheel behavior, remove all mouse
@@ -911,13 +813,12 @@ public class UMLDiagramTopComponent extends TopComponent implements MouseListene
             // also implements the horizontal mouse scroll behavior.  In fact
             // the Mac JScrollPanel has also implemented the horizontal scroll
             // behavior.
-            for(MouseWheelListener listener : diagramView.getMouseWheelListeners())
-            {
+            for (MouseWheelListener listener : diagramView.getMouseWheelListeners()) {
                 diagramView.removeMouseWheelListener(listener);
             }
-            
+
             view.add(diagramView, new Integer(1));
-            
+
             InputMap input = new InputMap();
             ActionMap actionMap = new ActionMap();
             Util.buildActionMap(input, actionMap, "Actions/UML/GeneralDiagram");
@@ -925,7 +826,7 @@ public class UMLDiagramTopComponent extends TopComponent implements MouseListene
             decoratorLayer.setOpaque(false);
             decoratorLayer.setLayout(null);
             view.add(decoratorLayer, new Integer(0));
-            
+
             // workaround for 134994
             diagramView.addMouseListener(this);
 
@@ -933,19 +834,18 @@ public class UMLDiagramTopComponent extends TopComponent implements MouseListene
             jScrollPane1.getVerticalScrollBar().setUnitIncrement(20);
             jScrollPane1.getHorizontalScrollBar().setUnitIncrement(20);
             SceneChangeListener scListener = new SceneChangeListener(getDiagramDO(), scene);
-            scene.addObjectSceneListener(scListener, 
-                                         ObjectSceneEventType.OBJECT_ADDED,
-                                         ObjectSceneEventType.OBJECT_REMOVED);
-            scene.addObjectSceneListener(new SceneSelectionListener(), 
-                                         ObjectSceneEventType.OBJECT_SELECTION_CHANGED);
+            scene.addObjectSceneListener(scListener,
+                    ObjectSceneEventType.OBJECT_ADDED,
+                    ObjectSceneEventType.OBJECT_REMOVED);
+            scene.addObjectSceneListener(new SceneSelectionListener(),
+                    ObjectSceneEventType.OBJECT_SELECTION_CHANGED);
         }
 
 //        SwingPaletteManager contextPalette = new SwingPaletteManager(scene, diagramView);
 //        scene.setContextPaletteManager(contextPalette);
     }
 
-    protected void initLookup()
-    {
+    private void initLookup() {
         paletteController = getAssociatedPalette();
         lookupContent.add(paletteController);
         lookupContent.add(scene);
@@ -955,29 +855,21 @@ public class UMLDiagramTopComponent extends TopComponent implements MouseListene
         lookupContent.add(zoomManager);
     }
 
-    private UMLDiagramDataObject getDiagramDO(String name, INamespace space)
-    {
-        if (diagramDO == null)
-        {
+    private UMLDiagramDataObject getDiagramDO(String name, INamespace space) {
+        if (diagramDO == null) {
             String fileName = getFullFileName(name, space);
-            try
-            {
-                if (fileName != null && fileName.trim().length() > 0)
-                {
+            try {
+                if (fileName != null && fileName.trim().length() > 0) {
                     File diagramFile = new File(fileName);
                     FileObject diagramFO = FileUtil.createData(diagramFile);
-                    if (diagramFO != null)
-                    {
+                    if (diagramFO != null) {
                         DataObject dobj = DataObject.find(diagramFO);
-                        if (dobj != null)
-                        {
+                        if (dobj != null) {
                             diagramDO = (UMLDiagramDataObject) dobj;
                         }
                     }
                 }
-            }
-            catch (Exception ex)
-            {
+            } catch (Exception ex) {
                 Exceptions.printStackTrace(ex);
             }
         }
@@ -985,14 +877,12 @@ public class UMLDiagramTopComponent extends TopComponent implements MouseListene
         return diagramDO;
     }
 
-    private UMLDiagramDataObject getDiagramDO()
-    {
+    private UMLDiagramDataObject getDiagramDO() {
 
         return diagramDO;
     }
 
-    protected DesignerScene getDiagram()
-    {
+    protected DesignerScene getDiagram() {
         return scene;
     }
 
@@ -1001,16 +891,14 @@ public class UMLDiagramTopComponent extends TopComponent implements MouseListene
      *
      * @param sName [out,retval] The full path filename of this diagram.
      */
-    private String getFullFileName(String name, INamespace space)
-    {
+    private String getFullFileName(String name, INamespace space) {
         String retFileName = null;
         // If the user enters a filename then use that as the proposed filename.
         // If the filename is not absolute then we use the project directory
         // as the location of the file.  If, for some reason, the filename argument
         // is 0 then we use the name of the diagram as the name of the file and the
         // workspace location for the directory.
-        if (name != null && name.length() > 0)
-        {
+        if (name != null && name.length() > 0) {
             long timeInMillis = System.currentTimeMillis();
 
             // To avoid conflicts between filenames, esp for large groups that are
@@ -1024,33 +912,25 @@ public class UMLDiagramTopComponent extends TopComponent implements MouseListene
         String buffer = retFileName;
         String drive = null;
         int pos = buffer.indexOf(":");
-        if (pos >= 0)
-        {
+        if (pos >= 0) {
             drive = buffer.substring(0, pos);
         }
 
-        if (drive == null && space != null)
-        {
+        if (drive == null && space != null) {
             // Assume we don't have a path and create one from the project directory
             IProject proj = space.getProject();
-            if (proj != null)
-            {
+            if (proj != null) {
                 String fileName = proj.getFileName();
-                if (fileName != null && fileName.length() > 0)
-                {
-                    try
-                    {
+                if (fileName != null && fileName.length() > 0) {
+                    try {
                         fileName = (new File(fileName)).getCanonicalPath();
                         int posSlash = fileName.lastIndexOf(File.separator);
-                        if (posSlash >= 0)
-                        {
+                        if (posSlash >= 0) {
                             fileName = fileName.substring(0, posSlash + 1);
                             fileName += buffer;
                             buffer = fileName;
                         }
-                    }
-                    catch (Exception e)
-                    {
+                    } catch (Exception e) {
                     }
                 }
             }
@@ -1062,8 +942,6 @@ public class UMLDiagramTopComponent extends TopComponent implements MouseListene
         //        }
         return buffer;
     }
-
-    
 
     /** This method is called from within the constructor to
      * initialize the form.
@@ -1085,30 +963,25 @@ public class UMLDiagramTopComponent extends TopComponent implements MouseListene
 
         add(jPanel1, java.awt.BorderLayout.CENTER);
     }// </editor-fold>//GEN-END:initComponents
-
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     // End of variables declaration//GEN-END:variables
-    
-    protected void initializeToolBar()
-    {
+
+    private void initializeToolBar() {
         DiagramEngine engine = scene.getEngine();
-        if(engine != null)
-        {
+        if (engine != null) {
             engine.buildToolBar(editorToolbar, getLookup());
         }
     }
-    
+
     /**
      * Gets default instance. Do not use directly: reserved for *.settings files only,
      * i.e. deserialization routines; otherwise you could get a non-deserialized instance.
      * To obtain the singleton instance, use {@link findInstance}.
      */
-    public static synchronized UMLDiagramTopComponent getDefault()
-    {
-        if (instance == null)
-        {
+    public static synchronized UMLDiagramTopComponent getDefault() {
+        if (instance == null) {
             instance = new UMLDiagramTopComponent();
         }
         return instance;
@@ -1117,53 +990,44 @@ public class UMLDiagramTopComponent extends TopComponent implements MouseListene
     /**
      * Obtain the UMLDiagramTopComponent instance. Never call {@link #getDefault} directly!
      */
-    public static synchronized UMLDiagramTopComponent findInstance()
-    {
+    public static synchronized UMLDiagramTopComponent findInstance() {
         TopComponent win = WindowManager.getDefault().findTopComponent(PREFERRED_ID);
-        if (win == null)
-        {
+        if (win == null) {
             Logger.getLogger(UMLDiagramTopComponent.class.getName()).warning("Cannot find " + PREFERRED_ID + " component. It will not be located properly in the window system.");
             return getDefault();
         }
-        if (win instanceof UMLDiagramTopComponent)
-        {
+        if (win instanceof UMLDiagramTopComponent) {
             return (UMLDiagramTopComponent) win;
         }
         Logger.getLogger(UMLDiagramTopComponent.class.getName()).warning("There seem to be multiple components with the '" + PREFERRED_ID + "' ID. That is a potential source of errors and unexpected behavior.");
         return getDefault();
     }
 
-
     /** replaces this in object stream */
     @Override
-    public Object writeReplace()
-    {
+    public Object writeReplace() {
         return new ResolvableHelper();
     }
 
-    protected List<IPresentationElement> getPresentationElements(IElement element)
-    {
+    protected List<IPresentationElement> getPresentationElements(IElement element) {
         List<IPresentationElement> retVal = new ArrayList<IPresentationElement>();
 
-        if (element != null)
-        {
+        if (element != null) {
             // temp solution to fire events when constraint is changed
-            if (element instanceof IConstraint)
-            {
+            if (element instanceof IConstraint) {
                 ArrayList<IPresentationElement> pes = new ArrayList<IPresentationElement>();
                 ETList<IElement> list = ((IConstraint) element).constrainedElements();
 
-                for (IElement e : list)
-                {
+                for (IElement e : list) {
                     pes.addAll(e.getPresentationElements());
                 }
                 return pes;
             }
             retVal = element.getPresentationElements();
 
-        // what's the reason for that?? in case presentation element of an element is 
-        // deleted, it finds its parent's pe and then delete it, very dangerous. It needs
-        // to be reviewed.
+            // what's the reason for that?? in case presentation element of an element is 
+            // deleted, it finds its parent's pe and then delete it, very dangerous. It needs
+            // to be reviewed.
 //            if((retVal == null) || (retVal.size() == 0))
 //            {
 //                retVal = getPresentationElements(element.getOwner());
@@ -1172,230 +1036,189 @@ public class UMLDiagramTopComponent extends TopComponent implements MouseListene
 
         return retVal;
     }
-    
-    
-    public JPanel getDiagramAreaPanel()
-    {
+
+    public JPanel getDiagramAreaPanel() {
         return jPanel1;
     }
-    
-    protected JScrollPane getScrollPane()
-    {
+
+    protected JScrollPane getScrollPane() {
         return jScrollPane1;
     }
-    
-    
-    private void setDiagramDisplayName(final String name)
-    {
-        SwingUtilities.invokeLater(new Runnable()
-        {
-            public void run()
-            {
+
+    private void setDiagramDisplayName(final String name) {
+        SwingUtilities.invokeLater(new Runnable() {
+
+            @Override
+            public void run() {
                 setDisplayName(name);
             }
         });
     }
-    
-    
-    
-    private void updateActions(final boolean selection)
-    {
-       
-        if (java.awt.EventQueue.isDispatchThread())
-        {
+
+    private void updateActions(final boolean selection) {
+
+        if (java.awt.EventQueue.isDispatchThread()) {
             updateActionsInAwtThread(selection);
-        } else
-        {
-            java.awt.EventQueue.invokeLater(new Runnable()
-            {
-                public void run()
-                {
+        } else {
+            java.awt.EventQueue.invokeLater(new Runnable() {
+
+                @Override
+                public void run() {
                     updateActionsInAwtThread(selection);
                 }
             });
         }
     }
 
-    private void updateActionsInAwtThread(boolean selection)
-    {
-        if (scene == null)
-        {
+    private void updateActionsInAwtThread(boolean selection) {
+        if (scene == null) {
             return;
         }
-        
+
         // Default to read-only mode.  If we are not read-only then the next
         // conditional statement will set it to the selection value.
         cutActionPerformer.setEnabled(false);
         deleteActionPerformer.setEnabled(false);
         pasteActionPerformer.setEnabled(false);
-        
-        if(getDiagram().isReadOnly() == false)
-        {
+
+        if (getDiagram().isReadOnly() == false) {
             cutActionPerformer.setEnabled(selection);
             deleteActionPerformer.setEnabled(selection);
         }
         copyActionPerformer.setEnabled(selection);
-        
+
 
         Widget w = null;
         Set selected = scene.getSelectedObjects();
-        if (selected.size() == 0)
-        {
+        if (selected.isEmpty()) {
             w = scene;
-        } 
-        else if (selected.size() == 1)
-        {
+        } else if (selected.size() == 1) {
             Object[] s = new Object[1];
             selected.toArray(s);
             w = scene.findWidget(s[0]);
         }
-        
-        if (w == null)
-        {
+
+        if (w == null) {
             pasteActionPerformer.setEnabled(false);
         }
         Clipboard clipboard = CopyPasteSupport.getClipboard();
         Transferable trans = clipboard.getContents(this);
-        
-        if(getDiagram().isReadOnly() == false)
-        {
+
+        if (getDiagram().isReadOnly() == false) {
             pasteActionPerformer.setEnabled(getSceneAcceptProvider().isAcceptable(w, new Point(0, 0), trans).equals(ConnectorState.ACCEPT));
-        }     
+        }
     }
-    
-    private SceneAcceptProvider getSceneAcceptProvider()
-    {
-        if (provider == null)
-        {
+
+    private SceneAcceptProvider getSceneAcceptProvider() {
+        if (provider == null) {
             provider = new SceneAcceptProvider(scene.getDiagram().getNamespaceForCreatedElements());
         }
         return provider;
     }
-    
-    private void clearClipBoard()
-    {
+
+    private void clearClipBoard() {
         pasteActionPerformer.setEnabled(false);
         Clipboard clipboard = CopyPasteSupport.getClipboard();
         clipboard.setContents(new ADTransferable(""), new StringSelection(""));
     }
-    
-    public void setDiagramDirty(boolean dirty)
-    {
+
+    public void setDiagramDirty(boolean dirty) {
         if (getDiagramDO() != null) {
             getDiagramDO().setDirty(dirty, scene);
         }
     }
-    
+
     //////////////////////////////////////////////////////////////////
     // Support classes.
-    
-    static final class ResolvableHelper implements Serializable
-    {
+    static final class ResolvableHelper implements Serializable {
+
         private static final long serialVersionUID = 1L;
 
-        public Object readResolve()
-        {
+        public Object readResolve() {
             return UMLDiagramTopComponent.getDefault();
         }
     }
 
+    public class NavigatorHint implements NavigatorLookupHint, Node.Cookie {
 
-
-    public class NavigatorHint implements NavigatorLookupHint, Node.Cookie
-    {
-
-        public String getContentType()
-        {
+        public String getContentType() {
             return "diagram/uml";
         }
     }
 
-    private class DiagramChangeListener implements PropertyChangeListener
-    {
+    private class DiagramChangeListener implements PropertyChangeListener {
         // XXX consider using DataEditorSupport.annotateName
+
         private final static String SPACE_STAR = " *";
-        public void propertyChange(PropertyChangeEvent evt)
-        {
+
+        @Override
+        public void propertyChange(PropertyChangeEvent evt) {
             UMLDiagramDataObject dobj = getDiagramDO();
-            if (!dobj.isValid())
-            {   
+            if (!dobj.isValid()) {
                 return;
             }
-            
-            if (evt.getPropertyName().equals(DataObject.PROP_MODIFIED))
-            {
+
+            if (evt.getPropertyName().equals(DataObject.PROP_MODIFIED)) {
                 IDiagram uiDiagram = getAssociatedDiagram();
                 int diagramKind = uiDiagram.getDiagramKind();
                 String diagramName = uiDiagram.getNameWithAlias();
                 String displName = "";
 
-                UMLDiagramDataNode diagDataNode = 
-                        (UMLDiagramDataNode)dobj.getNodeDelegate();
-                Object newVal = evt.getNewValue(); 
-                if (newVal == Boolean.TRUE)
-                {
+                UMLDiagramDataNode diagDataNode =
+                        (UMLDiagramDataNode) dobj.getNodeDelegate();
+                Object newVal = evt.getNewValue();
+                if (newVal == Boolean.TRUE) {
                     displName = diagramName + SPACE_STAR;
                     dobj.addSaveCookie(scene);
                     updateSaveCookie(ADD);
 
-                } else 
-                {
+                } else {
                     displName = diagramName;
                     updateSaveCookie(REMOVE);
                     dobj.removeSaveCookie();
                 }
-               
+
                 setDiagramDisplayName(displName);
-                diagDataNode.setIconBaseWithExtension(ImageUtil.instance()
-                        .getDiagramTypeImageName(diagramKind));
-                    
+                diagDataNode.setIconBaseWithExtension(ImageUtil.instance().getDiagramTypeImageName(diagramKind));
+
                 diagDataNode.setDisplayName(diagramName);
                 diagDataNode.setValue(diagramKind);
             }
         }
     }
-    
     // the presence of save cookie in activated nodes enables/disables "Save" button
     private static int ADD = 0;
     private static int REMOVE = 1;
-    private void updateSaveCookie(int action)
-    {
+
+    private void updateSaveCookie(int action) {
         // get diagram root node
-        final Node rootNode = explorerManager.getRootContext() ;
+        final Node rootNode = explorerManager.getRootContext();
         // get selected nodes
         Node[] nodes = getActivatedNodes();
-        
+
         List<Node> allNodes = new ArrayList<Node>();
         allNodes.add(rootNode);
-        
-        if ( nodes != null && nodes.length > 0)
-        {
-            for (int i=0; i < nodes.length; i++) 
-            {
+
+        if (nodes != null && nodes.length > 0) {
+            for (int i = 0; i < nodes.length; i++) {
                 // check to prevent duplicate root node
-                if (!nodes[i].equals(rootNode))
-                {
+                if (!nodes[i].equals(rootNode)) {
                     allNodes.add(nodes[i]);
                 }
             }
         }
 
-        for (Node aNode : allNodes)
-        {
-            if (aNode != null && aNode instanceof DiagramModelElementNode)
-            {
-                if (action == ADD)
-                {
-                    ((DiagramModelElementNode)aNode).addSaveCookie();
+        for (Node aNode : allNodes) {
+            if (aNode != null && aNode instanceof DiagramModelElementNode) {
+                if (action == ADD) {
+                    ((DiagramModelElementNode) aNode).addSaveCookie();
+                } else if (action == REMOVE) {
+                    ((DiagramModelElementNode) aNode).removeSaveCookie();
                 }
-                else if (action == REMOVE)
-                {
-                    ((DiagramModelElementNode)aNode).removeSaveCookie();
-                } 
             }
         }
     }
-    
+
     /**
      * Notifies the design patterns that are connected to the role that changed
      *
@@ -1404,21 +1227,15 @@ public class UMLDiagramTopComponent extends TopComponent implements MouseListene
      * @param pDiagram[in] The diagram we're associated with
      * @param pConnectableElement [in] The role that was modified
      */
-    protected void addDesignPatterns(List<IPresentationElement> presentations, IConnectableElement connect)
-    {
-        if ((connect != null) && (presentations != null))
-        {
+    protected void addDesignPatterns(List<IPresentationElement> presentations, IConnectableElement connect) {
+        if ((connect != null) && (presentations != null)) {
             // Find all the roles this guy plays a part in and notify the
             // contexts - these contexts should be the collaborations.
             List<IStructuredClassifier> classifiers = connect.getRoleContexts();
-            if (classifiers != null)
-            {
-                for (IStructuredClassifier curClassifier : classifiers)
-                {
-                    if (curClassifier != null)
-                    {
-                        List<IPresentationElement> p 
-                            = getPresentationElements(curClassifier);
+            if (classifiers != null) {
+                for (IStructuredClassifier curClassifier : classifiers) {
+                    if (curClassifier != null) {
+                        List<IPresentationElement> p = getPresentationElements(curClassifier);
                         presentations.addAll(p);
                     }
                 }
@@ -1426,29 +1243,25 @@ public class UMLDiagramTopComponent extends TopComponent implements MouseListene
         }
     }
 
+    public class SceneSelectionListener extends ObjectSceneListenerAdapter {
 
-    public class SceneSelectionListener extends ObjectSceneListenerAdapter
-    {
         @Override
-         public void selectionChanged(ObjectSceneEvent event, 
-                                     Set<Object> previousSelection, 
-                                     Set<Object> newSelection)
-        {
+        public void selectionChanged(ObjectSceneEvent event,
+                Set<Object> previousSelection,
+                Set<Object> newSelection) {
             getDiagram().getScene().getView().requestFocusInWindow();
-            boolean needEnable=(newSelection != null) && (newSelection.size() > 0);
-            if(needEnable)
-            {
-                if(newSelection.size()==1)
-                {
+            boolean needEnable = (newSelection != null) && (newSelection.size() > 0);
+            if (needEnable) {
+                if (newSelection.size() == 1) {
                     //it may be selected only one special element
-                    Object selectedO=newSelection.iterator().next();
-                    if(selectedO instanceof IPresentationElement)
-                    {
-                        Widget selW=scene.findWidget((IPresentationElement) selectedO);
-                        if(selW instanceof UMLNodeWidget && !((UMLNodeWidget)selW).isCopyCutDeletable())needEnable=false;
+                    Object selectedO = newSelection.iterator().next();
+                    if (selectedO instanceof IPresentationElement) {
+                        Widget selW = scene.findWidget((IPresentationElement) selectedO);
+                        if (selW instanceof UMLNodeWidget && !((UMLNodeWidget) selW).isCopyCutDeletable()) {
+                            needEnable = false;
+                        }
                         ContextPaletteManager manager = scene.getContextPaletteManager();
-                        if(manager != null)
-                        {
+                        if (manager != null) {
                             // Make sure that the palette is correctly placed for the 
                             // zoom level.
                             manager.cancelPalette();
@@ -1457,23 +1270,20 @@ public class UMLDiagramTopComponent extends TopComponent implements MouseListene
                     }
                 }
             }
-            if(needEnable || (newSelection != null && newSelection.size() == 1))
-            {
+            if (needEnable || (newSelection != null && newSelection.size() == 1)) {
                 // enable copy/cut/delete action
                 updateActions(needEnable);
-               
-                List < DiagramModelElementNode > nodeList = new ArrayList < DiagramModelElementNode >();
-                
-                for(Object curSelected : newSelection)
-                {
+
+                List< DiagramModelElementNode> nodeList = new ArrayList< DiagramModelElementNode>();
+
+                for (Object curSelected : newSelection) {
                     DiagramModelElementNode node = null;
-                    if(curSelected instanceof IPresentationElement)
-                    {
+                    if (curSelected instanceof IPresentationElement) {
                         IPresentationElement presenation = (IPresentationElement) curSelected;
                         node = new DiagramModelElementNode(getDiagramDO());
 
                         IElement element = presenation.getFirstSubject();
-                        node.setElement(element); 
+                        node.setElement(element);
                         node.setScene(scene);
                         node.setPresentationElement(presenation);
 
@@ -1481,197 +1291,179 @@ public class UMLDiagramTopComponent extends TopComponent implements MouseListene
                         // name is the element type; Otherwise, the customed name is used.
                         node.setName(presenation.getElementType());
 
-                        if (element instanceof INamedElement)
-                        {
-                            String name = ((INamedElement) element).getName(); 
+                        if (element instanceof INamedElement) {
+                            String name = ((INamedElement) element).getName();
 
-                            if (name != null && !name.trim().equals(""))
-                            {
+                            if (name != null && !name.trim().equals("")) {
                                 node.setName(name);
-                            }
-                            else
-                            {
+                            } else {
                                 // Fixed issue 78484. Display the expanded name as the default
                                 // name for elements that extend IAssociation, namely,
                                 // aggregation and composition.
-                                if (element instanceof IAssociation)
-                                {
+                                if (element instanceof IAssociation) {
                                     String expandedName = element.getExpandedElementType();
-                                    if (expandedName != null && expandedName.trim().length() > 0)
-                                    {
+                                    if (expandedName != null && expandedName.trim().length() > 0) {
                                         node.setName(expandedName.replace('_', ' '));
                                     }
-                                }
-                                else {  // displayed the element type name, e.g. Class, Interface, InvocationNode...
-                                        node.setName(((INamedElement) element).getElementType());
+                                } else {  // displayed the element type name, e.g. Class, Interface, InvocationNode...
+                                    node.setName(((INamedElement) element).getElementType());
                                 }
                             }
-                        }
-                        else if (element instanceof IDiagram)
-                        {
+                        } else if (element instanceof IDiagram) {
                             node.setName(((IDiagram) element).getName());
                         }
-                    }
-                    else if (curSelected instanceof ModelElementBridge)
-                    {
+                    } else if (curSelected instanceof ModelElementBridge) {
                         ModelElementBridge bridge = (ModelElementBridge) curSelected;
                         node = new DiagramModelElementNode(getDiagramDO());
-                        
+
                         node.setElement(bridge.getElement());
                         node.setScene(scene);
                     }
 
-                    if(node != null)
-                    {
+                    if (node != null) {
                         nodeList.add(node);
                     }
                 }
-                
+
                 final DiagramModelElementNode[] nodes = new DiagramModelElementNode[nodeList.size()];
                 nodeList.toArray(nodes);
                 SwingUtilities.invokeLater(new Runnable() {
 
-                    public void run()
-                    {
-                        setActivatedNodes(nodes);                        
+                    @Override
+                    public void run() {
+                        setActivatedNodes(nodes);
                     }
                 });
-                
-            }
-            else
-            {
+
+            } else {
                 // disable copy/cut/delete action
                 updateActions(false);
-                
+
 //                DiagramModelElementNode node = new DiagramModelElementNode(getDiagramDO());
 //                node.setElement(getDiagram().getDiagram());
 //                node.setScene(scene);
-                
-                final Node[] nodes = { explorerManager.getRootContext() };
-                
+
+                final Node[] nodes = {explorerManager.getRootContext()};
+
                 SwingUtilities.invokeLater(new Runnable() {
 
-                    public void run()
-                    {
-                        setActivatedNodes(nodes); 
+                    @Override
+                    public void run() {
+                        setActivatedNodes(nodes);
                     }
                 });
-                
+
             }
-        }                 
+        }
     }
-    
-     private class ClipboardChangesListener implements ClipboardListener {
+
+    private class ClipboardChangesListener implements ClipboardListener {
+
+        @Override
         public void clipboardChanged(ClipboardEvent ev) {
-            if (!ev.isConsumed())
-            {             
-                if (scene != null)
-                {
-                    Set selected=scene.getSelectedObjects();
-                    if(selected.size()==1)
-                    {
+            if (!ev.isConsumed()) {
+                if (scene != null) {
+                    Set selected = scene.getSelectedObjects();
+                    if (selected.size() == 1) {
                         //it may be special e;ement on the scene (usually only one like interaction boundary)
-                        Widget selW=scene.findWidget(selected.iterator().next());
-                        if(selW instanceof UMLNodeWidget)
-                        {
-                            if(!((UMLNodeWidget)selW).isCopyCutDeletable())selected=Collections.emptySet();//it will not be possible to copy or cut special element
+                        Widget selW = scene.findWidget(selected.iterator().next());
+                        if (selW instanceof UMLNodeWidget) {
+                            if (!((UMLNodeWidget) selW).isCopyCutDeletable()) {
+                                selected = Collections.emptySet();//it will not be possible to copy or cut special element
+                            }
                         }
-                    }                    
-                    updateActions(selected.size()>0);
+                    }
+                    updateActions(selected.size() > 0);
                 }
             }
         }
     }
-    
-     
-   
-        // performer for DeleteAction
+
+    // performer for DeleteAction
     private class DeleteActionPerformer extends javax.swing.AbstractAction
-                                        implements Mutex.Action
-    {
+            implements Mutex.Action {
+
         private ArrayList<Node> nodesToDestroy;
 
+        @Override
         public void actionPerformed(ActionEvent ev) {
             Node[] selected = getActivatedNodes();
 
-            if (selected == null || selected.length == 0)
+            if (selected == null || selected.length == 0) {
                 return;
-            
-            nodesToDestroy=new ArrayList<Node> ();
+            }
 
-            for (int i=0; i < selected.length; i++)
-            {
+            nodesToDestroy = new ArrayList<Node>();
+
+            for (int i = 0; i < selected.length; i++) {
                 Node.Cookie cookie = selected[i].getCookie(IPresentationElement.class);
-                if (cookie == null)
+                if (cookie == null) {
                     continue;
+                }
                 cookie = selected[i].getCookie(IDiagram.class);
-                if (cookie != null)
+                if (cookie != null) {
                     continue;
+                }
                 nodesToDestroy.add(selected[i]);
             }
-            if(nodesToDestroy.size()==0)return;
-            if (EventQueue.isDispatchThread())
+            if (nodesToDestroy.isEmpty()) {
+                return;
+            }
+            if (EventQueue.isDispatchThread()) {
                 doDelete();
-            else // reinvoke synchronously in AWT thread
+            } else // reinvoke synchronously in AWT thread
+            {
                 Mutex.EVENT.readAccess(this);
+            }
         }
 
+        @Override
         public Object run() {
             doDelete();
             return null;
         }
 
-        private void doDelete()
-        {
-            if (nodesToDestroy.size() > 0)
-            {
+        private void doDelete() {
+            if (nodesToDestroy.size() > 0) {
                 String title = NbBundle.getMessage(ElementDeletePanel.class,
-                                                   "DELETE_QUESTIONDIALOGTITLE"); // NO18N
+                        "DELETE_QUESTIONDIALOGTITLE"); // NO18N
 
                 boolean displayRemove = false;
                 List<Node> a = nodesToDestroy;
                 // if there is one node in the selection that is imported element we display 
                 // checkbox to allow user to remove it from imported list 
-                for (Node node : a)
-                {
+                for (Node node : a) {
                     IPresentationElement pe = node.getCookie(IPresentationElement.class);
-                    if (pe.getFirstSubject().getProject() != getDiagram().getDiagram().getProject())
-                    {
+                    if (pe.getFirstSubject().getProject() != getDiagram().getDiagram().getProject()) {
                         displayRemove = true;
                         break;
                     }
                 }
                 ElementDeletePanel panel = new ElementDeletePanel(displayRemove);
                 DialogDescriptor dialogDescriptor = new DialogDescriptor(panel,
-                                                                         title,
-                                                                         true,
-                                                                         NotifyDescriptor.YES_NO_OPTION,
-                                                                         NotifyDescriptor.YES_OPTION,
-                                                                         null);
+                        title,
+                        true,
+                        NotifyDescriptor.YES_NO_OPTION,
+                        NotifyDescriptor.YES_OPTION,
+                        null);
                 dialogDescriptor.setMessageType(NotifyDescriptor.QUESTION_MESSAGE);
 
                 Dialog dialog = DialogDisplayer.getDefault().createDialog(dialogDescriptor);
                 dialog.getAccessibleContext().setAccessibleDescription(title);
 
                 dialog.setVisible(true);
-                try
-                {
-                    if (dialogDescriptor.getValue() == DialogDescriptor.YES_OPTION)
-                    {
-                        for (Node node : a)
-                        {
+                try {
+                    if (dialogDescriptor.getValue() == DialogDescriptor.YES_OPTION) {
+                        for (Node node : a) {
                             IPresentationElement pe = node.getCookie(IPresentationElement.class);
                             Widget widget = scene.findWidget(pe);
-                            if (widget instanceof UMLNodeWidget && !((UMLNodeWidget) widget).isCopyCutDeletable())
-                            {
+                            if (widget instanceof UMLNodeWidget && !((UMLNodeWidget) widget).isCopyCutDeletable()) {
                                 continue;
                             }
                             Widget sourceEnd = null;
                             Widget targetEnd = null;
-                            if (widget instanceof UMLWidget)
-                            {
-                                if (widget instanceof ConnectionWidget)
-                                {
+                            if (widget instanceof UMLWidget) {
+                                if (widget instanceof ConnectionWidget) {
                                     ConnectionWidget edge = (ConnectionWidget) widget;
                                     sourceEnd = edge.getSourceAnchor().getRelatedWidget();
                                     targetEnd = edge.getTargetAnchor().getRelatedWidget();
@@ -1682,27 +1474,22 @@ public class UMLDiagramTopComponent extends TopComponent implements MouseListene
                             boolean deleteFromModel = panel.getDeleteFromOriginal();//result.isChecked();
 
                             DiagramEngine engine = scene.getEngine();
-                            if (engine != null)
-                            {
+                            if (engine != null) {
 
                                 RelationshipFactory factory = engine.getRelationshipFactory(pe.getFirstSubjectsType());
-                                if ((factory != null) && (sourceEnd != null) && (targetEnd != null))
-                                {
+                                if ((factory != null) && (sourceEnd != null) && (targetEnd != null)) {
                                     IPresentationElement sourceElement = (IPresentationElement) scene.findObject(sourceEnd);
                                     IPresentationElement targetElement = (IPresentationElement) scene.findObject(targetEnd);
                                     factory.delete(deleteFromModel, pe,
-                                                   sourceElement.getFirstSubject(),
-                                                   targetElement.getFirstSubject());
-                                } else if (deleteFromModel == true)
-                                {
+                                            sourceElement.getFirstSubject(),
+                                            targetElement.getFirstSubject());
+                                } else if (deleteFromModel == true) {
                                     // element will also be deleted from imported list from other projects
                                     IElement data = node.getCookie(IElement.class);
-                                    if (data != null)
-                                    {
+                                    if (data != null) {
                                         data.delete();
                                     }
-                                } else if (panel.getRemoveFromImport())
-                                {
+                                } else if (panel.getRemoveFromImport()) {
                                     IElement e = node.getCookie(IElement.class);
                                     getDiagram().getDiagram().getProject().removeElementImport(e);
                                 }
@@ -1713,109 +1500,97 @@ public class UMLDiagramTopComponent extends TopComponent implements MouseListene
                                 // factory was used to delete the model element.
                                 // Therefore I am going to have to make the check
                                 // again.
-                                if (deleteFromModel == true)
-                                {
+                                if (deleteFromModel == true) {
                                     clearClipBoard();
                                 }
                             }
                         }
                     }
-                } finally
-                {
+                } finally {
                     dialog.dispose();
                     nodesToDestroy = null;
                 }
             }
         }
     }
-    
+
     // performer for CopyAction and CutAction
-    private class CopyCutActionPerformer extends javax.swing.AbstractAction                                     
-    {
+    private class CopyCutActionPerformer extends javax.swing.AbstractAction {
+
         private boolean copy;
 
         public CopyCutActionPerformer(boolean copy) {
             this.copy = copy;
         }
 
-        public void actionPerformed(ActionEvent e) {       
+        @Override
+        public void actionPerformed(ActionEvent e) {
             ADTransferable trans;
             Node[] selected = getActivatedNodes();
-            
-            if(selected.length==1)
-            {
+
+            if (selected.length == 1) {
                 //it may be special e;ement on the scene (usually only one like interaction boundary)
-                Widget selW=scene.findWidget(selected[0]);
-                if(selW instanceof UMLNodeWidget)
-                {
-                    if(!((UMLNodeWidget)selW).isCopyCutDeletable())selected=new Node[0];//it will not be possible to copy or cut special element
+                Widget selW = scene.findWidget(selected[0]);
+                if (selW instanceof UMLNodeWidget) {
+                    if (!((UMLNodeWidget) selW).isCopyCutDeletable()) {
+                        selected = new Node[0];//it will not be possible to copy or cut special element
+                    }
                 }
             }
 
-            if (selected == null || selected.length == 0)
+            if (selected == null || selected.length == 0) {
                 trans = null;
-     
+            }
+
             trans = getTransferable(selected);
 
             if (trans != null) {
                 Clipboard clipboard = CopyPasteSupport.getClipboard();
                 clipboard.setContents(trans, new StringSelection("")); // NOI18N
             }
-            if (!copy)
-            {
+            if (!copy) {
                 trans.setTransferType(ADTransferable.CUT);
             }
-                
+
         }
 
-        private ADTransferable getTransferable(Node[] nodes)
-        {
+        private ADTransferable getTransferable(Node[] nodes) {
             ADTransferable retVal = new ADTransferable("DRAGGEDITEMS"); // NOI18N
             retVal.setDiagramEngine(scene.getEngine());
-            for (Node n : nodes)
-            {
+            for (Node n : nodes) {
                 IPresentationElement e = n.getCookie(IPresentationElement.class);
-                if (e != null)
-                {
+                if (e != null) {
                     retVal.addPresentationElement(e);
                 }
             }
-            
+
             return retVal;
         }
     }
 
-    private class PasteActionPerformer extends javax.swing.AbstractAction     
-    {
-        
-        public void actionPerformed(ActionEvent e)     
-        {         
+    private class PasteActionPerformer extends javax.swing.AbstractAction {
+
+        @Override
+        public void actionPerformed(ActionEvent e) {
             scene.setCursor(CopyPasteSupport.PasteCursor);
             scene.getView().setCursor(CopyPasteSupport.PasteCursor);
         }
     }
-    
 
-     
-    private class EngineDrawingAreaSink extends DrawingAreaEventsAdapter
-    {
+    private class EngineDrawingAreaSink extends DrawingAreaEventsAdapter {
 
         @Override
         public void onDrawingAreaPostPropertyChange(IProxyDiagram pProxyDiagram,
-                                                    int pPropertyKindChanged,
-                                                    IResultCell cell)
-        {
-            if ( pProxyDiagram != null)
-            {
+                int pPropertyKindChanged,
+                IResultCell cell) {
+            if (pProxyDiagram != null) {
                 IDiagram diagram = pProxyDiagram.getDiagram();
                 IDiagram thisDiagram = getAssociatedDiagram();
 
-                if (pPropertyKindChanged == DiagramAreaEnumerations.DAPK_NAME &&
-                        diagram != null && diagram.isSame(thisDiagram))
-                {
+                if (pPropertyKindChanged == DiagramAreaEnumerations.DAPK_NAME
+                        && diagram != null && diagram.isSame(thisDiagram)) {
                     String newName = diagram.getName();
-                    if (newName != null && newName.trim().length() > 0 )
-                    {
+                    if (newName != null && newName.trim().length() > 0) {
                         setName();
                         setDiagramDirty(true);
                     }
@@ -1824,24 +1599,24 @@ public class UMLDiagramTopComponent extends TopComponent implements MouseListene
         }
     }
 
-    public void mouseClicked(MouseEvent e)
-    {      
+    @Override
+    public void mouseClicked(MouseEvent e) {
     }
 
-    public void mousePressed(MouseEvent e)
-    {       
+    @Override
+    public void mousePressed(MouseEvent e) {
     }
 
-    public void mouseReleased(MouseEvent e)
-    {        
+    @Override
+    public void mouseReleased(MouseEvent e) {
     }
 
-    public void mouseEntered(MouseEvent e)
-    {        
+    @Override
+    public void mouseEntered(MouseEvent e) {
     }
 
-    public void mouseExited(MouseEvent e)
-    {
+    @Override
+    public void mouseExited(MouseEvent e) {
         scene.removeBackgroundWidget();
     }
 }

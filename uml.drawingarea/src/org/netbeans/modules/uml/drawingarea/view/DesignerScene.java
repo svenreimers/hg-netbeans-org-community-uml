@@ -57,6 +57,8 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.JComponent;
 import org.netbeans.api.visual.action.ActionFactory;
 import org.netbeans.api.visual.action.WidgetAction;
@@ -157,7 +159,7 @@ public class DesignerScene extends GraphScene<IPresentationElement, IPresentatio
     public DesignerScene(IDiagram diagram,UMLDiagramTopComponent topcomponent)
     {
         setResourceTable(ResourceValue.createChildResourceTable());
-        ResourceValue.initResources(SceneDefaultWidgetID, this);
+        ResourceValue.initResources(SceneDefaultWidgetID, (DesignerScene)this);
         
         this.topcomponent=topcomponent;
         mainLayer = new LayerWidget(this);
@@ -170,7 +172,7 @@ public class DesignerScene extends GraphScene<IPresentationElement, IPresentatio
         
         if(diagram instanceof UIDiagram)
         {
-            ((UIDiagram)diagram).setScene(this);
+            ((UIDiagram)diagram).setScene((DesignerScene)this);
         }
 
         addChild(mainLayer);
@@ -186,8 +188,8 @@ public class DesignerScene extends GraphScene<IPresentationElement, IPresentatio
         this.diagram = diagram;
 
         engine=attachEngine(diagram);
-        engine.setActions(this);
-        engine.setSelectionManager(this);
+        engine.setActions((DesignerScene)this);
+        engine.setSelectionManager((DesignerScene)this);
         engine.setTopComponent(topcomponent);
         edgeRouter = engine.getEdgeRouter(connectionLayer);
         
@@ -244,7 +246,7 @@ public class DesignerScene extends GraphScene<IPresentationElement, IPresentatio
         return lookup;
     }
 
-    protected void initLookup()
+    private void initLookup()
     {
     }
     
@@ -315,6 +317,7 @@ public class DesignerScene extends GraphScene<IPresentationElement, IPresentatio
     // Graph Scene Implementation
     static int number = 0;
 
+    @Override
     protected Widget attachNodeWidget(IPresentationElement node)
     {
         UMLNodeWidget widget = (UMLNodeWidget) engine.createWidget(node);
@@ -334,6 +337,7 @@ public class DesignerScene extends GraphScene<IPresentationElement, IPresentatio
         return widget;
     }
 
+    @Override
     protected Widget attachEdgeWidget(IPresentationElement edge)
     {
         UMLEdgeWidget connection = (UMLEdgeWidget)engine.createConnectionWidget(this, edge);
@@ -352,6 +356,7 @@ public class DesignerScene extends GraphScene<IPresentationElement, IPresentatio
         return connection;
     }
 
+    @Override
     protected void attachEdgeSourceAnchor(IPresentationElement edge, 
                                           IPresentationElement oldSourceNode, 
                                           IPresentationElement sourceNode)
@@ -369,6 +374,7 @@ public class DesignerScene extends GraphScene<IPresentationElement, IPresentatio
             setSelfLinkRouter(widget);
     }
 
+    @Override
     protected void attachEdgeTargetAnchor(IPresentationElement edge, 
                                           IPresentationElement oldTargetNode, 
                                           IPresentationElement targetNode)
@@ -447,7 +453,7 @@ public class DesignerScene extends GraphScene<IPresentationElement, IPresentatio
         return edgeRouter;
     }
 
-    protected void addToLookup(Object item)
+    private void addToLookup(Object item)
     {
         lookupContent.add(item);
     }
@@ -476,12 +482,12 @@ public class DesignerScene extends GraphScene<IPresentationElement, IPresentatio
                 }
                 catch (IOException ex)
                 {
-                    ex.printStackTrace();
+                    Logger.getLogger(DesignerScene.class.getSimpleName()).log(Level.SEVERE, null, ex);
                     continue;
                 }
                 catch (ClassNotFoundException ex)
                 {
-                    ex.printStackTrace();
+                    Logger.getLogger(DesignerScene.class.getSimpleName()).log(Level.SEVERE, null, ex);
                     continue;
                 }
 
@@ -500,6 +506,7 @@ public class DesignerScene extends GraphScene<IPresentationElement, IPresentatio
     }
 
 
+    @Override
     public void save(NodeWriter nodeWriter) {
         nodeWriter.setRootNode(true); //This IS a DIAGRAM/SCENE
         nodeWriter.setZoom(this.getZoomFactor());
@@ -537,6 +544,7 @@ public class DesignerScene extends GraphScene<IPresentationElement, IPresentatio
         nodeWriter.beginWriting();
     }
 
+    @Override
     public void saveChildren(Widget widget, NodeWriter nodeWriter) {
         //not applicable
     }
@@ -726,6 +734,7 @@ public class DesignerScene extends GraphScene<IPresentationElement, IPresentatio
         return selectedElements;
     }
     
+    @Override
     public void userSelectionSuggested (Set<?> suggestedSelectedObjects, boolean invertSelection)
     {
         List < IPresentationElement > lockedSet = getLockedSelected();

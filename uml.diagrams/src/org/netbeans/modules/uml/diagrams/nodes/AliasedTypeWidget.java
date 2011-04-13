@@ -165,13 +165,8 @@ public class AliasedTypeWidget extends UMLNodeWidget implements PropertyChangeLi
         }
     }
     
+    @Override
     public String getWidgetID() {
         return UMLWidgetIDString.ALIASED_TYPEWIDGET.toString();
-    }
-    
-    @Override
-     protected String getResourcePath()
-    {
-        return pe==null? super.getResourcePath() : pe.getFirstSubjectsType() + "." + super.getResourcePath();
     }
 }

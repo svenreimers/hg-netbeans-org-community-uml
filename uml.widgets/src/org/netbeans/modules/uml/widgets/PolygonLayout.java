@@ -64,6 +64,7 @@ public class PolygonLayout implements Layout
     {
     }
 
+    @Override
     public void layout(Widget widget)
     {
         Dimension total = new Dimension();
@@ -85,6 +86,7 @@ public class PolygonLayout implements Layout
         }
     }
 
+    @Override
     public boolean requiresJustification(Widget widget)
     {
         return true;
@@ -104,6 +106,7 @@ public class PolygonLayout implements Layout
     // 6) resolve the childrens bounds based on the collection data.
     // 7) Update the polygons points, based on the adjusted point data.
     //
+    @Override
     public void justify(Widget widget)
     {
         if(widget instanceof PolygonWidget)

@@ -51,7 +51,7 @@ import java.net.URLDecoder;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
-import java.util.Hashtable;
+import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Stack;
@@ -125,8 +125,8 @@ class DiagramLoader
     private final String CONTAINED = "CONTAINED";
     private EdgeInfo.EndDetails mostRecentEnd = null;
     private Point edgePosition = null;
-    private Hashtable<String, String> nodeProperties = new Hashtable();
-    private Hashtable<String, String> diagProperties = new Hashtable();
+    private HashMap<String, String> nodeProperties = new HashMap();
+    private HashMap<String, String> diagProperties = new HashMap();
     private List<EdgeInfo> edgeInfoList = new ArrayList<EdgeInfo>();
     private boolean groupEdges = false;
     private Stack<GraphNodeReader> graphNodeReaderStack = new Stack();
@@ -369,9 +369,9 @@ class DiagramLoader
         }
     }
 
-    private Hashtable<String, String> processProperties()
+    private HashMap<String, String> processProperties()
     {
-       Hashtable<String, String> tempProps = new Hashtable<String, String>();
+       HashMap<String, String> tempProps = new HashMap<String, String>();
         try
         {
             while (reader.hasNext())
@@ -514,6 +514,7 @@ class DiagramLoader
             if ((scene.getDiagram()).getDiagramKind() == IDiagramKind.DK_SEQUENCE_DIAGRAM) {
 
                 new AfterValidationExecutor(new ActionProvider() {
+                    @Override
                     public void perfomeAction() {
                         PersistenceUtil.setDiagramLoading(true);//main thread already consider loading is done, so reset flag here
                         try
@@ -621,7 +622,7 @@ class DiagramLoader
                         }
                     
 //                        addNodeToScene(nodeInfo);
-                        //clear the nodeProperties hashtable
+                        //clear the nodeProperties HashMap
                         nodeProperties.clear();
                         return;
                     }
@@ -831,7 +832,7 @@ class DiagramLoader
         {
             EdgeInfo edgeReader = new EdgeInfo();
             Widget connWidget = null;
-            Hashtable<String, String> props = new Hashtable();
+            HashMap<String, String> props = new HashMap();
 
             edgeReader.setPEID(reader.getAttributeValue(null, "xmi.id"));
             while (reader.hasNext())
@@ -920,7 +921,7 @@ class DiagramLoader
 //            pE.setXMIID(PEID);
         pE.addSubject(elt);
         
-        Hashtable edgeProps = edgeReader.getProperties();
+        HashMap edgeProps = edgeReader.getProperties();
         if (edgeProps != null && edgeProps.size() > 0)
         {
             if (edgeProps.containsKey(UMLEdgeWidget.PROXY_PRESENTATION_ELEMENT)) 
@@ -1067,7 +1068,7 @@ class DiagramLoader
         try
         {           
             NodeInfo nodeInfo = new NodeInfo();
-            Hashtable<String, String> props = new Hashtable();
+            HashMap<String, String> props = new HashMap();
             nodeInfo.setPEID(reader.getAttributeValue(null, "xmi.id"));
             while (reader.hasNext())
             {
@@ -1121,7 +1122,6 @@ class DiagramLoader
                     else if (reader.getName().getLocalPart().equalsIgnoreCase("GraphElement.contained"))
                     {
                         edgeContainedStack.push(CONTAINED);
-                        mostRecentEnd = mostRecentEnd;
                     }
                 }
                 else if (reader.isEndElement() && reader.getName().getLocalPart().equalsIgnoreCase("GraphElement.contained"))
@@ -1385,6 +1385,7 @@ class DiagramLoader
     static final Comparator<EdgeInfo> Y_AXIS_COMPARATOR =
             new Comparator<EdgeInfo>() {
 
+        @Override
                 public int compare(EdgeInfo e1, EdgeInfo e2) {
                     int y1 = ((Point) (e1.getWayPoints().get(0))).y;
                     int y2 = ((Point) (e2.getWayPoints().get(0))).y;

@@ -48,6 +48,7 @@ import java.io.File;
 import java.io.IOException;
 import java.net.URI;
 import java.util.*;
+import java.util.Map.Entry;
 
 import org.netbeans.api.project.Project;
 import org.netbeans.api.project.ProjectManager;
@@ -75,6 +76,9 @@ import org.netbeans.modules.uml.ui.support.ProductHelper;
 import org.netbeans.modules.uml.project.ui.common.JavaSourceRootsUI;
 import org.netbeans.modules.uml.project.ui.customizer.UMLProjectProperties;
 import org.netbeans.modules.uml.project.ui.wizards.NewUMLProjectWizardIterator;
+import org.openide.DialogDisplayer;
+import org.openide.NotifyDescriptor;
+import org.openide.util.NbBundle;
 
 
 /**
@@ -85,6 +89,13 @@ import org.netbeans.modules.uml.project.ui.wizards.NewUMLProjectWizardIterator;
  */
 public class UMLProjectGenerator
 {
+    private static final HashMap<String, String> replacements = new HashMap<String, String>();
+
+    static {
+        replacements.put("::", "-");
+        replacements.put("(", "");
+        replacements.put(")", "");
+    }
 	
 	private UMLProjectGenerator()
 	{}
@@ -220,6 +231,10 @@ public class UMLProjectGenerator
         File[] reSrcs = (File[]) reSrcsList.toArray(new File[reSrcsList.size()]);
         String[] javaSrcRootIds = (String[])reSrcsIdList.toArray(
             new String[reSrcsIdList.size()]);
+        
+        //Handle Maven Projects naming (i.e. X::M)
+        dir = new File(makeNameValid(dir.getAbsolutePath()));
+        displayName = makeNameValid(displayName);
 
         AntProjectHelper retVal = createEmptyProject(dir, displayName,
             UMLProject.PROJECT_MODE_IMPL_STR, javaSrcProject, javaSrcRootIds,
@@ -244,8 +259,25 @@ public class UMLProjectGenerator
 
         return retVal;
     }
-	
-	
+    
+    private static String makeNameValid(String name){
+        String result=name;
+        if(hasInvalidCharacter(result)){
+            for(Entry<String, String> e : replacements.entrySet()){
+                result = result.replaceAll(e.getKey(), e.getValue());
+            }
+        }
+        return result;
+    }
+    
+    private static boolean hasInvalidCharacter(String name){
+        for(Entry<String, String> e : replacements.entrySet()){
+            if(name.contains(e.getKey())){
+                return true;
+            }
+        }
+        return false;
+    }
 	
     /**
      * Create a new empty UML project.
@@ -346,6 +378,19 @@ public class UMLProjectGenerator
         throws IOException
 
     {
+        //Make sure the directory is empty
+        if (dirFO.isValid() && dirFO.getChildren().length > 2) {
+            NotifyDescriptor nd = new NotifyDescriptor.Confirmation(
+                    NbBundle.getMessage(UMLProjectGenerator.class,
+                    "FILE_EXISTS_UMLProjectGenerator"),
+                    NotifyDescriptor.YES_NO_OPTION);
+            if (DialogDisplayer.getDefault().notify(nd) == NotifyDescriptor.NO_OPTION){
+                return null;
+            }
+            if (DialogDisplayer.getDefault().notify(nd) == NotifyDescriptor.YES_OPTION){
+                dirFO.delete();
+            }
+        }
         AntProjectHelper h = ProjectGenerator.createProject(
                 dirFO, UMLProjectType.TYPE);
 

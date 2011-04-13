@@ -178,6 +178,7 @@ public class StateWidget extends UMLNodeWidget
     }
 
 
+    @Override
     public String getWidgetID()
     {
         return UMLWidget.UMLWidgetIDString.STATEWIDGET.toString();
@@ -289,6 +290,7 @@ public class StateWidget extends UMLNodeWidget
         return NbBundle.getMessage(StateWidget.class, key);
     }
 
+    @Override
     public void initializeNode(IPresentationElement pe, boolean show)
     {
         initStateWidget();
@@ -356,6 +358,7 @@ public class StateWidget extends UMLNodeWidget
     }
     
     
+    @Override
     public void duplicate(boolean setBounds, Widget target)
     {
         assert target instanceof StateWidget;

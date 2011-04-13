@@ -160,6 +160,7 @@ public class JoinForkWidget extends UMLLabelNodeWidget implements ResizeToConten
        return new Dimension(this.width, this.height);
     }
     
+    @Override
     public String getWidgetID()
     {
         return UMLWidgetIDString.FORKWIDGET.toString();

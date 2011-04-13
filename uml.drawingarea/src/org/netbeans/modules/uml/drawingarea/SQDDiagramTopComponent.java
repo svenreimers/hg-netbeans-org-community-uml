@@ -79,7 +79,6 @@ public class SQDDiagramTopComponent extends UMLDiagramTopComponent {
         
     }
     
-    @Override 
     protected boolean isEdgesGrouped()
     {
         return false;

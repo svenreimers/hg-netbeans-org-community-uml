@@ -54,7 +54,6 @@ import org.netbeans.api.visual.layout.LayoutFactory;
 import org.netbeans.api.visual.widget.LabelWidget;
 import org.netbeans.api.visual.widget.Scene;
 import org.netbeans.api.visual.widget.Widget;
-import org.netbeans.modules.uml.core.metamodel.core.constructs.IDataType;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.IPresentationElement;
 import org.netbeans.modules.uml.core.metamodel.structure.IArtifact;
 import org.netbeans.modules.uml.drawingarea.palette.context.DefaultContextPaletteModel;
@@ -165,6 +164,7 @@ public class ArtifactWidget extends UMLNodeWidget implements PropertyChangeListe
         }
     }
     
+    @Override
     public String getWidgetID() {
         return UMLWidgetIDString.ARTIFACTWIDGET.toString();
     }

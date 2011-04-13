@@ -125,7 +125,7 @@ public class ActivityPartitionWidget extends CompositeNodeWidget
     {
         //create main view 
         MainViewWidget mainView = new MainViewWidget(scene,
-                                                     getResourcePath(),
+                                                     getWidgetID(),
                                                      bundle.getString("LBL_body"));
         
         mainView.setLayout(
@@ -164,16 +164,19 @@ public class ActivityPartitionWidget extends CompositeNodeWidget
         return mainView;
     }
 
+    @Override
     public String getWidgetID()
     {
         return UMLWidget.UMLWidgetIDString.PARTITIONWIDGET.toString();
     }
 
+    @Override
     public SeparatorWidget.Orientation getOrientation()
     {
         return orientation;
     }
 
+    @Override
     public void setOrientation(SeparatorWidget.Orientation orientation)
     {
         this.orientation = orientation;
@@ -207,6 +210,7 @@ public class ActivityPartitionWidget extends CompositeNodeWidget
     }
 
 
+    @Override
     public void removeCompartment(CompartmentWidget subPartWidget)
     {
         if (subPartWidget != null)
@@ -216,7 +220,7 @@ public class ActivityPartitionWidget extends CompositeNodeWidget
                 compartmentWidgets.remove(subPartWidget);
                 updateDividers();
             }
-            if ( compartmentWidgets.size() == 0)
+            if ( compartmentWidgets.isEmpty())
             {
                 SubPartitionWidget w = new SubPartitionWidget(scene, null, this);
                 addSubPartition(w);
@@ -396,6 +400,7 @@ public class ActivityPartitionWidget extends CompositeNodeWidget
         }
     }
 
+    @Override
     public Collection<CompartmentWidget> getCompartmentWidgets()
     {
         return compartmentWidgets;

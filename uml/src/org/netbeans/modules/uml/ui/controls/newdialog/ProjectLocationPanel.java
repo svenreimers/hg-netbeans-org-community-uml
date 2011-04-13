@@ -45,14 +45,10 @@
 package org.netbeans.modules.uml.ui.controls.newdialog;
 
 import java.io.File;
-import java.io.IOException;
 import javax.swing.JFileChooser;
 import javax.swing.JPanel;
 import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
-import javax.swing.text.Document;
-import org.openide.WizardDescriptor;
-import org.openide.WizardValidationException;
 import org.openide.filesystems.FileUtil;
 import org.openide.util.NbBundle;
 
@@ -69,8 +65,8 @@ public class ProjectLocationPanel extends JPanel
 		projectLocationTextField.setText(NewDialogUtilities.getWorkspaceLocation());
 
         // Register listener on the textFields to make the automatic updates
-        projectNameTextField.getDocument().addDocumentListener(this);
-        projectLocationTextField.getDocument().addDocumentListener(this);
+        projectNameTextField.getDocument().addDocumentListener((ProjectLocationPanel)this);
+        projectLocationTextField.getDocument().addDocumentListener((ProjectLocationPanel)this);
     }
     
     
@@ -157,8 +153,7 @@ public class ProjectLocationPanel extends JPanel
 
     private void browseLocationAction(java.awt.event.ActionEvent evt)//GEN-FIRST:event_browseLocationAction
     {//GEN-HEADEREND:event_browseLocationAction
-       
-		JFileChooser chooser = new JFileChooser();
+      		JFileChooser chooser = new JFileChooser();
 		FileUtil.preventFileChooserSymlinkTraversal(chooser, null);
 
 		chooser.setDialogTitle(
@@ -182,43 +177,24 @@ public class ProjectLocationPanel extends JPanel
 		}
         
     }//GEN-LAST:event_browseLocationAction
-    
-   
-    
-    private static JFileChooser createChooser()
-    {
-        JFileChooser chooser = new JFileChooser();
-        FileUtil.preventFileChooserSymlinkTraversal(chooser, null);
-        chooser.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
-        chooser.setAcceptAllFileFilterUsed(false);
-        
-        chooser.setName(NbBundle.getMessage(
-            ProjectLocationPanel.class,
-            "LBL_SelectProjectLocation"));  // NOI18N
-        
-        return chooser;
-    }
-    
-
+  
+    @Override
     public void changedUpdate(DocumentEvent event)
     {
       
     }
     
+    @Override
     public void insertUpdate( DocumentEvent event )
     {
        changedUpdate(event);
     }
     
+    @Override
     public void removeUpdate(DocumentEvent event)
     {
 		changedUpdate(event);
-    }
-    
-    
-
-
-    
+    } 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton browseButton;
     private javax.swing.ButtonGroup modelTypeButtonGroup;

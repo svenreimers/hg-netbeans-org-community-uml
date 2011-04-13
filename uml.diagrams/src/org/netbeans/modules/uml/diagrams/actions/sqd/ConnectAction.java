@@ -93,7 +93,7 @@ public class ConnectAction extends WidgetAction.LockedAdapter {
     private int type;//type of created message (?if message?), see BaseElement for keys
     private boolean targetExistButNotValid=false;
     private AnchorShape standartShape=AnchorShapeFactory.createArrowAnchorShape(45, 12);
-    private AnchorShape notValidTargetShape=new ArrowWithCrossedCircleAnchorShape(12,20,0);
+    private AnchorShape notValidTargetShape=(AnchorShape) new ArrowWithCrossedCircleAnchorShape(12,20,0);
     /**
      * 
      * @param decorator
@@ -113,6 +113,7 @@ public class ConnectAction extends WidgetAction.LockedAdapter {
         return State.CONSUMED;
     }
 
+    @Override
     protected boolean isLocked () {
         return sourceWidget != null;
     }
@@ -223,6 +224,7 @@ public class ConnectAction extends WidgetAction.LockedAdapter {
                     //need to wait for scene validation, so complex objects can define borders, sizes etc
                     new AfterValidationExecutor(
                             new ActionProvider() {
+                        @Override
                                 public void perfomeAction() {
                                     Point tmp=targetWidget.getPreferredLocation();
                                     tmp.x=finishPnt.x;
@@ -236,8 +238,7 @@ public class ConnectAction extends WidgetAction.LockedAdapter {
                                 }
                             }
                             ,
-                            widget.getScene()
-                            
+                            widget.getScene()                           
                             );
                             widget.getScene().revalidate();
                             widget.getScene().validate();

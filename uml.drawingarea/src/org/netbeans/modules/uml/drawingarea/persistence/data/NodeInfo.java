@@ -46,7 +46,7 @@ package org.netbeans.modules.uml.drawingarea.persistence.data;
 import java.awt.Dimension;
 import java.awt.Point;
 import java.util.ArrayList;
-import java.util.Hashtable;
+import java.util.HashMap;
 import org.netbeans.api.visual.widget.Widget;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.IElement;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.IPresentationElement;
@@ -64,7 +64,7 @@ public class NodeInfo
     private Point position;
     private Dimension size;
     private Widget parentWidget;
-    private Hashtable properties = new Hashtable();
+    private HashMap properties = new HashMap();
     private ArrayList<NodeLabel> nodeLabels=new ArrayList<NodeLabel>();
     private ArrayList<String> deviders=new ArrayList<String>();//used in combined fragment and may be in partitions/states
     private IProject project;
@@ -140,12 +140,12 @@ public class NodeInfo
         this.parentWidget = parentWidget;
     }
 
-    public Hashtable getProperties()
+    public HashMap getProperties()
     {
         return properties;
     }
 
-    public void setProperties(Hashtable properties)
+    public void setProperties(HashMap properties)
     {
         this.properties = properties;
     }
@@ -234,12 +234,12 @@ public class NodeInfo
     @Override
     public String toString()
     {        
-        StringBuffer buff = new StringBuffer();
-        buff.append(", PEID=" + getPEID())
-            .append(", MEID=" + getMEID());            
+        StringBuilder buff = new StringBuilder();
+        buff.append(", PEID=").append(getPEID()).append(", MEID=")
+                .append(getMEID());            
         return buff.toString();
     }
-    //
+    
     //
     public static class NodeLabel
     {

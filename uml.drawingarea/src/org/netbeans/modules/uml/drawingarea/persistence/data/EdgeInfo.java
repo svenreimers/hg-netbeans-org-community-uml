@@ -46,7 +46,7 @@ package org.netbeans.modules.uml.drawingarea.persistence.data;
 import java.awt.Dimension;
 import java.awt.Point;
 import java.util.ArrayList;
-import java.util.Hashtable;
+import java.util.HashMap;
 import java.util.List;
 
 import org.netbeans.modules.uml.core.metamodel.core.foundation.IPresentationElement;
@@ -66,7 +66,7 @@ public class EdgeInfo
     private ArrayList<EdgeLabel> labels = new ArrayList();
     private ArrayList<EndDetails> ends = new ArrayList();
     private boolean hasContainedElements = false;
-    private Hashtable properties = new Hashtable();
+    private HashMap properties = new HashMap();
     private String semanticModelBridgePresentation = "";
 
     public ArrayList<EdgeInfo.EdgeLabel> getLabels()
@@ -156,12 +156,12 @@ public class EdgeInfo
         this.wayPoints = wayPoints;
     }
 
-    public Hashtable getProperties()
+    public HashMap getProperties()
     {
         return properties;
     }
 
-    public void setProperties(Hashtable properties)
+    public void setProperties(HashMap properties)
     {
         this.properties = properties;
     }
@@ -184,7 +184,7 @@ public class EdgeInfo
         private String label;
         private Point position;
         private Dimension size;
-        private Hashtable<String, String> labelProperties = new Hashtable();
+        private HashMap<String, String> labelProperties = new HashMap();
 
         public EdgeLabel()
         {
@@ -220,12 +220,12 @@ public class EdgeInfo
             this.size = size;
         }
 
-        public Hashtable<String, String> getLabelProperties()
+        public HashMap<String, String> getLabelProperties()
         {
             return labelProperties;
         }
 
-        public void setLabelProperties(Hashtable<String, String> labelProperties)
+        public void setLabelProperties(HashMap<String, String> labelProperties)
         {
             this.labelProperties = labelProperties;
         }
@@ -269,18 +269,27 @@ public class EdgeInfo
     @Override
     public String toString()
     {
-        StringBuffer buff = new StringBuffer();
-        buff.append(", PEID=" + getPEID())
-            .append(", MEID=" + getMEID())
+        StringBuilder buff = new StringBuilder();
+        buff.append(", PEID=").append(getPEID()).append(", MEID=")
+            .append(getMEID())
+            .append(", sourcePE=")
 //            .append(", position=" + getPosition())
-            .append(", sourcePE=" + getSourcePE().getDisplayElementID())
-            .append(", targetPE=" + getTargetPE().getDisplayElementID())
+            .append(getSourcePE().getDisplayElementID())
+//            .append(", position=" + getPosition())
+            .append(", targetPE=")
+            .append(getTargetPE().getDisplayElementID())
+            .append(", hasContaintedElements=")
 //            .append(", showName=" + isShowName())
 //            .append(", stereotypeVisible=" + isStereotypeVisible())
-            .append(", hasContaintedElements=" + isHasContainedElements())
-            .append(", lables=" + getLabels())
-            .append(", ends=" + getEnds())
-            .append(", wayPoints=" + getWayPoints());
+            .append(isHasContainedElements())
+//            .append(", showName=" + isShowName())
+//            .append(", stereotypeVisible=" + isStereotypeVisible())
+            .append(", lables=")
+            .append(getLabels())
+            .append(", ends=")
+            .append(getEnds())
+            .append(", wayPoints=")
+            .append(getWayPoints());
             
         return buff.toString();
     }

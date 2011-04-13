@@ -73,6 +73,7 @@ public abstract class UMLLabelNodeWidget extends UMLNodeWidget implements LabelN
         super(scene,defResource);        
     }
     
+    @Override
     public MovableLabelWidget getLabelWidget()
     {
         if (labelWidget == null && getObject()!=null)
@@ -88,12 +89,14 @@ public abstract class UMLLabelNodeWidget extends UMLNodeWidget implements LabelN
     }
     
 
+    @Override
     public void showLabel(boolean show)
     {
         Widget label = getLabelWidget();
         label.setVisible(show);
     }
 
+    @Override
     public void propertyChange(PropertyChangeEvent event)
     {
         IElement element = getObject().getFirstSubject();
@@ -161,6 +164,7 @@ public abstract class UMLLabelNodeWidget extends UMLNodeWidget implements LabelN
        }
     }
     
+    @Override
     public void duplicate(boolean setBounds, Widget target)
     {
         assert target instanceof UMLLabelNodeWidget;

@@ -43,7 +43,6 @@
  */
 package org.netbeans.modules.uml.diagrams.options;
 
-import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Hashtable;
 import java.util.List;
@@ -72,6 +71,7 @@ public class ElementOptionsPanel implements UMLOptionsPanel
         UMLProjectModule.checkInit();
     }
 
+    @Override
     public void applyChanges()
     {
         panel.save();
@@ -96,16 +96,19 @@ public class ElementOptionsPanel implements UMLOptionsPanel
         }
     }
 
+    @Override
     public void update()
     {
         panel.init(PreviewScene.getElements());
     }
 
+    @Override
     public void cancel()
     {
         panel.clear();
     }
 
+    @Override
     public JComponent create()
     {
         if (panel == null)
@@ -115,16 +118,19 @@ public class ElementOptionsPanel implements UMLOptionsPanel
         return panel;
     }
 
+    @Override
     public Hashtable getCurrentValues()
     {
         return new Hashtable();
     }
 
+    @Override
     public Hashtable getUpdatedValues()
     {
         return new Hashtable();
     }
 
+    @Override
     public String getDisplayName()
     {
         return NbBundle.getMessage(ElementOptionsPanel.class, "OptionTabElements");

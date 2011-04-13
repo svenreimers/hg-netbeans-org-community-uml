@@ -52,9 +52,9 @@ import java.io.OutputStreamWriter;
 import java.io.StringReader;
 import java.lang.ref.WeakReference;
 import java.text.MessageFormat;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
-import java.util.Vector;
 
 import java.util.logging.Level;
 import javax.xml.parsers.DocumentBuilder;
@@ -1028,7 +1028,7 @@ public class XMLManip
 	} else if (input.equals("")) {
 	    return "";
 	}
-	StringBuffer output = new StringBuffer("");
+	StringBuilder output = new StringBuilder("");
 	for(int i = 0; i < input.length(); i++ ) {
 	    int ch = (int) input.charAt(i);
 	    if ( (ch >= 0x20) || (ch == 0x9) || (ch == 0xA) || (ch == 0xD)) {
@@ -1213,7 +1213,7 @@ public class XMLManip
       {
          // I am using StringBuffer because it is suppose to be 
          // faster when building strings.
-         StringBuffer uri = new StringBuffer("http://"); //$NON-NLS-1$
+         StringBuilder uri = new StringBuilder("http://"); //$NON-NLS-1$
          uri.append(xmlNamespace);
 
          String prefix = name.substring(0, pos);
@@ -1570,7 +1570,7 @@ public class XMLManip
      *  @return The list of ancestors with required attribute value. 
      */
     public static List selectAncestorNodesByAttribute(Node node, String attrName, String attrValue) {
-	Vector result = new Vector();
+	ArrayList result = new ArrayList();
 	if (node != null 
 	    && attrName != null && (! attrName.equals("")) 
 	    && attrValue != null) 

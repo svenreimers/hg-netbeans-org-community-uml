@@ -215,6 +215,7 @@ public class UseCaseWidget extends UMLNodeWidget
         showDetail(visible);
     }
 
+    @Override
     public String getWidgetID()
     {
         return UMLWidget.UMLWidgetIDString.USECASEWIDGET.toString();
@@ -331,6 +332,7 @@ public class UseCaseWidget extends UMLNodeWidget
     }
     
     
+    @Override
     public void duplicate(boolean setBounds, Widget target)
     {
         assert target instanceof UseCaseWidget;
@@ -382,6 +384,7 @@ public class UseCaseWidget extends UMLNodeWidget
     public class CenterWidgetLayout implements Layout
     {
 
+        @Override
         public void layout(Widget widget)
         {
             List<Widget> children = widget.getChildren();
@@ -402,11 +405,13 @@ public class UseCaseWidget extends UMLNodeWidget
             }
         }
 
+        @Override
         public boolean requiresJustification(Widget widget)
         {
             return true;
         }
 
+        @Override
         public void justify(Widget widget)
         {
             List<Widget> children = widget.getChildren();

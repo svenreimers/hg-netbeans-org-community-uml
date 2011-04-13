@@ -4,8 +4,9 @@
 <!-- If you delete this file and reopen the project it will be recreated. -->
 <project name="UML" basedir=".">
     <description>Builds the module suite UML.</description>
-    <property name="zip.name" value="netbeans-6.9.1-201007282301-ml-javase.zip"/>
-    <property name="zip.url" value="http://dlc.sun.com.edgesuite.net/netbeans/6.9.1/final/zip/"/>
+    <property name="zip.name" value="netbeans-7.0beta2-201102140001-ml-javase.zip"/>
+    <property name="zip.url" value="http://dlc.sun.com.edgesuite.net/netbeans/7.0/beta2/zip/"/>
+    
     <!--Delete old copies of platforms-->
     <delete>
         <fileset dir=".hg" includes="**/*.zip" excludes="${zip.name}"/>
@@ -21,7 +22,7 @@
     <import file="nbproject/build-impl.xml"/>
     <property file="nbproject/project.properties"/>
 
-    <target name="xnbms" unless="isNetbeans">
+    <target name="nbms" unless="isNetbeans">
         <!--Create/Update keystore-->
         <delete file="${keystore.location}${keystore.name}"/>
         <mkdir dir="${keystore.location}"/>
@@ -31,8 +32,6 @@
         <!--Update keystore info in projects-->
         <antcall target="update-keystore-info"/>
         <antcall target="suite.nbms"/>
-        <!--Merge the javadocs-->
-        <antcall target="merge-javadoc"/>
     </target>
 
     <target name="update-keystore-info" depends="init-netbeans, init-hudson" unless="isNetbeans">
