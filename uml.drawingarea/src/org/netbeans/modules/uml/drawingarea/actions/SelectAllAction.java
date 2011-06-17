@@ -61,16 +61,14 @@ public final class SelectAllAction extends NodeAction
 
     private DesignerScene scene;
 
+    @Override
     public Action createContextAwareInstance(Lookup actionContext)
     {
         scene = actionContext.lookup(DesignerScene.class);
-        if (scene == null)
-        {
-            return null;
-        }
         return this;
     }
 
+    @Override
     protected void performAction(Node[] activatedNodes)
     {
         HashSet<Object> selected = new HashSet<Object>();
@@ -90,16 +88,19 @@ public final class SelectAllAction extends NodeAction
         scene.validate();
     }
 
+    @Override
     protected boolean enable(Node[] activatedNodes)
     {
         return true;
     }
 
+    @Override
     public String getName()
     {
         return NbBundle.getBundle(MainMenuAction.class).getString("select_all_main_menu_item");
     }
 
+    @Override
     public HelpCtx getHelpCtx()
     {
         return null;
