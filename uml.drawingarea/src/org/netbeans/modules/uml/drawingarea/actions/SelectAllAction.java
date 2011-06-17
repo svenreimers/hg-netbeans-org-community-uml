@@ -64,10 +64,6 @@ public final class SelectAllAction extends NodeAction
     public Action createContextAwareInstance(Lookup actionContext)
     {
         scene = actionContext.lookup(DesignerScene.class);
-        if (scene == null)
-        {
-            return null;
-        }
         return this;
     }
 
