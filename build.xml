@@ -4,12 +4,8 @@
 <!-- If you delete this file and reopen the project it will be recreated. -->
 <project name="UML" basedir=".">
     <description>Builds the module suite UML.</description>
-    <property name="zip.name" value="netbeans-7.0beta2-201102140001-ml-javase.zip"/>
-    <property name="zip.url" value="http://dlc.sun.com.edgesuite.net/netbeans/7.0/beta2/zip/"/>
-    <!--
     <property name="zip.name" value="netbeans-7.0-201104080000-ml-javase.zip"/>
     <property name="zip.url" value="http://download.netbeans.org/netbeans/7.0/final/zip/"/>
-    -->
     <!--Delete old copies of platforms-->
     <delete>
         <fileset dir=".hg" includes="**/*.zip" excludes="${zip.name}"/>
