@@ -6,7 +6,10 @@
     <description>Builds the module suite UML.</description>
     <property name="zip.name" value="netbeans-7.0beta2-201102140001-ml-javase.zip"/>
     <property name="zip.url" value="http://dlc.sun.com.edgesuite.net/netbeans/7.0/beta2/zip/"/>
-    
+    <!--
+    <property name="zip.name" value="netbeans-7.0-201104080000-ml-javase.zip"/>
+    <property name="zip.url" value="http://download.netbeans.org/netbeans/7.0/final/zip/"/>
+    -->
     <!--Delete old copies of platforms-->
     <delete>
         <fileset dir=".hg" includes="**/*.zip" excludes="${zip.name}"/>
@@ -22,7 +25,12 @@
     <import file="nbproject/build-impl.xml"/>
     <property file="nbproject/project.properties"/>
 
-    <target name="nbms" unless="isNetbeans">
+    <target name="nbms">
+        <antcall target="keystore"/>
+        <antcall target="suite.nbms"/>
+    </target>
+    
+    <target name="keystore" unless="isNetbeans">
         <!--Create/Update keystore-->
         <delete file="${keystore.location}${keystore.name}"/>
         <mkdir dir="${keystore.location}"/>
@@ -31,7 +39,6 @@
         keystore="${keystore.location}${keystore.name}"/>
         <!--Update keystore info in projects-->
         <antcall target="update-keystore-info"/>
-        <antcall target="suite.nbms"/>
     </target>
 
     <target name="update-keystore-info" depends="init-netbeans, init-hudson" unless="isNetbeans">
