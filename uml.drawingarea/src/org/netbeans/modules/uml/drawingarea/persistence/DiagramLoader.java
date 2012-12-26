@@ -172,22 +172,26 @@ class DiagramLoader
         catch (XMLStreamException ex)
         {
             Exceptions.printStackTrace(ex);
-        }
-        catch (FileNotFoundException ex)
-        {
-            Exceptions.printStackTrace(ex);
-        }
-        finally
-        {
             try
             {
                 reader.close();
             }
-            catch (Exception ex)
+            catch (Exception ex2)
             {
                 Exceptions.printStackTrace(ex);
             }
-
+        }
+        catch (FileNotFoundException ex)
+        {
+            Exceptions.printStackTrace(ex);
+            try
+            {
+                reader.close();
+            }
+            catch (Exception ex2)
+            {
+                Exceptions.printStackTrace(ex);
+            }
         }
         return success;
     }
