@@ -457,12 +457,16 @@ public class DiagramPopupMenuProvider implements PopupMenuProvider
 
                             if (clazz != null)
                             {
-                                Action a = null;
-                                if (!JSeparator.class.isAssignableFrom(clazz))
-                                {
-                                    a = SystemAction.get(clazz);
+                                try {
+                                    Action a = null;
+                                    if (!JSeparator.class.isAssignableFrom(clazz))
+                                    {
+                                        a = SystemAction.get(clazz);
+                                    }
+                                    ret.put(p, a);
+                                } catch (Exception ex) {
+                                    //skip, just need to have some working condition instead of fal
                                 }
-                                ret.put(p, a);
                             }
                         }
                     }
