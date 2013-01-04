@@ -97,6 +97,7 @@ import org.netbeans.modules.uml.drawingarea.actions.AfterValidationExecutor;
 import org.netbeans.modules.uml.drawingarea.actions.SQDMessageConnectProvider;
 import org.netbeans.modules.uml.drawingarea.palette.RelationshipFactory;
 import org.netbeans.modules.uml.drawingarea.persistence.PersistenceUtil;
+import org.netbeans.modules.uml.drawingarea.support.ModelElementBridge;
 import org.netbeans.modules.uml.drawingarea.view.DesignerScene;
 import org.netbeans.modules.uml.drawingarea.view.DesignerTools;
 import org.netbeans.modules.uml.drawingarea.view.UMLEdgeWidget;
@@ -224,8 +225,8 @@ public class MessagesConnectProvider implements SQDMessageConnectProvider
         // Verify that this relationship is ok
         RelationProxy relationshipProxy = new RelationProxy();
         IPresentationElement source = (IPresentationElement) scene.findObject(sourceWidget);
-        IPresentationElement target = (IPresentationElement) scene.findObject(targetWidget);
-        
+        Object trg = scene.findObject(targetWidget);
+        IPresentationElement target = trg instanceof IPresentationElement ? (IPresentationElement) trg : null;;
         if(target != null)
         {
             if(scene.findWidget(target) != targetWidget)
