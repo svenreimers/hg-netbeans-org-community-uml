@@ -54,7 +54,6 @@ import junit.framework.TestResult;
 
 /**
  * ported from qa.jse.MuliTestSuit
- * @author sp153251
  */
 public abstract class UMLMultiTestSuite extends NbTestSuite{
     

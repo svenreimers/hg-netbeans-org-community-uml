@@ -83,7 +83,6 @@ import org.netbeans.modules.uml.core.support.Debug;
 
 /**
  *
- * @author  Administrator
  */
 public class PropertyElementCustomizer extends JPanel 
         implements Customizer, EnhancedCustomPropertyEditor

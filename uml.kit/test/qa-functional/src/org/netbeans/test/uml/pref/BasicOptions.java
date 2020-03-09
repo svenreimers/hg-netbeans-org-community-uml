@@ -58,7 +58,6 @@ import org.netbeans.test.umllib.util.OptionsOperator;
 
 /**
  *
- * @author psb
  * @spec UML/
  */
 public class BasicOptions extends UMLTestCase {

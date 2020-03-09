@@ -81,8 +81,6 @@ import org.netbeans.modules.uml.project.ui.wizards.NewUMLProjectWizardIterator;
 
 /**
  *
- * @author Mike Frisino
- * @author Craig Conover, craig.conover@sun.com
  */
 public class ReferencedJavaProjectPanel extends javax.swing.JPanel
     implements PropertyChangeListener, TableModelListener

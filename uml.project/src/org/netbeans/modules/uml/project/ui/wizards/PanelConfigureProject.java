@@ -63,7 +63,6 @@ import java.beans.PropertyChangeListener;
 
 /**
  * Panel just asking for basic info.
- * @author Mike Frisino
  */
 public final class PanelConfigureProject 
     implements WizardDescriptor.Panel, WizardDescriptor.ValidatingPanel, 

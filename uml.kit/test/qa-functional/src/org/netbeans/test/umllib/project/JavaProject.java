@@ -66,7 +66,6 @@ import org.netbeans.test.umllib.util.Utils;
 
 /**
  *
- * @author Alexandr Scherbatiy
  */
 
 public class JavaProject extends Project {

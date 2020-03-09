@@ -74,7 +74,6 @@ import org.netbeans.test.umllib.values.Argument;
 
 /**
  *
- * @author Alexandr Scherbatiy
  */
 
 

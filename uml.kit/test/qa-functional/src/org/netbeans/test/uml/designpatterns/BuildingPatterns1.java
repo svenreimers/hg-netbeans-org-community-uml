@@ -156,8 +156,6 @@ import org.netbeans.test.umllib.util.*;
 
  *
 
- * @author psb
-
  * @spec uml/DesignPatterns
 
  */

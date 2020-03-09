@@ -56,7 +56,6 @@ import org.openide.nodes.Node;
 
 /**
  *
- * @author Mike
  */
 public interface ModelRootNodeCookie extends Node.Cookie
 {

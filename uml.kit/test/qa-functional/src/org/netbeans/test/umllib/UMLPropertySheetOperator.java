@@ -62,7 +62,6 @@ import org.netbeans.jellytools.properties.PropertySheetOperator;
 
 /**
  *
- * @author VijayaBabu Mummaneni
  */
 public class UMLPropertySheetOperator extends PropertySheetOperator {
     

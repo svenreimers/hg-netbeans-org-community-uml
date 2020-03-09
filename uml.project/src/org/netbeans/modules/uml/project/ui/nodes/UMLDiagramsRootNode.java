@@ -78,7 +78,6 @@ import org.openide.util.datatransfer.PasteType;
 
 /**
  * UMLDiagramsRootNode displays the UML diagrams
- * @author Mike Frisino
  */
 // TODO: meteora
 public final class UMLDiagramsRootNode extends UMLModelElementNode

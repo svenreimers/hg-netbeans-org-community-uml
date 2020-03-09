@@ -87,7 +87,6 @@ import org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframe
 import org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ProcessTypeKind;
 /**
  *
- * @author Administrator
  */
 public class REJavaParser implements IREJavaParser
 {

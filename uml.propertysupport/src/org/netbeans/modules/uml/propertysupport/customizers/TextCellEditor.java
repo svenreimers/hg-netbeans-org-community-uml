@@ -57,7 +57,6 @@ import javax.swing.JTextField;
 
 /**
  *
- * @author Administrator
  */
 public class TextCellEditor extends DefaultCellEditor
 {

@@ -59,7 +59,6 @@ import static org.netbeans.test.umllib.util.PopupConstants.* ;
 
 /**
  *
- * @author VijayaBabu Mummaneni
  */
 public class NavigateToSourceAction extends ActionNoBlock {
 

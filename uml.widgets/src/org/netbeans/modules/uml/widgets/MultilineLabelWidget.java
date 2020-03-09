@@ -55,7 +55,6 @@ import org.netbeans.api.visual.widget.Scene;
 
 /**
  *
- * @author treyspiva
  */
 public class MultilineLabelWidget extends LabelWidget
 {

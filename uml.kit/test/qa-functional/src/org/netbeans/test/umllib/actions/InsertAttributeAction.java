@@ -62,7 +62,6 @@ import org.netbeans.test.umllib.util.PopupConstants;
 
 /**
  *
- * @author VijayaBabu Mummaneni
  */
 public class InsertAttributeAction extends DiagramElementAction{
     

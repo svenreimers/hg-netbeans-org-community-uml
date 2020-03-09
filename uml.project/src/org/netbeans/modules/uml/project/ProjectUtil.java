@@ -106,7 +106,6 @@ import org.openide.windows.WindowManager;
 
 /**
  *
- * @author Administrator
  */
 public class ProjectUtil
 {

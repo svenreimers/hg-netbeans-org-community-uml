@@ -59,7 +59,6 @@ import org.netbeans.jemmy.operators.Operator;
 
 /**
  *
- * @author psb
  */
 public class AfterTrimComparator implements Operator.StringComparator
 {

@@ -106,8 +106,6 @@ import java.awt.image.ColorModel;
  *  the interpolation should be performed, default sRGB or linearized RGB.
  *
  *
- * @author Nicholas Talian, Vincent Hardy, Jim Graham, Jerry Evans
- * @author <a href="mailto:vincent.hardy@eng.sun.com">Vincent Hardy</a>
  * @version $Id: LinearGradientPaint.java,v 1.1.2.2 2007/11/19 23:54:02 sherylsu Exp $
  * @see java.awt.Paint
  * @see java.awt.Graphics2D#setPaint

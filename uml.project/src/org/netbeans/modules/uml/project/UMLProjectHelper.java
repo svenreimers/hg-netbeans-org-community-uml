@@ -80,7 +80,6 @@ import org.openide.windows.WindowManager;
 
 /**
  *
- * @author  treys
  */
 public class UMLProjectHelper
 {

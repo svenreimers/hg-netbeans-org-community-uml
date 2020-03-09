@@ -46,7 +46,6 @@ package org.netbeans.modules.uml.propertysupport.customizers;
 
 /**
  *
- * @author treyspiva
  */
 public class PropertyDataFormatter
 {

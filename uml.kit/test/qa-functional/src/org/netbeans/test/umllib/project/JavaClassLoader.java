@@ -62,7 +62,6 @@ import java.util.HashMap;
 
 /**
  *
- * @author Alexandr Scherbatiy
  */
 public class JavaClassLoader extends ClassLoader{
     

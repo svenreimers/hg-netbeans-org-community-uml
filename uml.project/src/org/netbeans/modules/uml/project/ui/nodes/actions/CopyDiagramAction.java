@@ -69,7 +69,6 @@ import org.openide.util.HelpCtx;
 
 /**
  *
- * @author Sheryl
  */
 public class CopyDiagramAction extends NodeAction
 {

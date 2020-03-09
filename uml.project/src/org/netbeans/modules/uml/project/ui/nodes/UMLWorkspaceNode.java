@@ -53,7 +53,6 @@ import org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeWorkspace;
 
 /**
  *
- * @author Trey Spiva
  */
 public class UMLWorkspaceNode extends UMLElementNode implements ITreeWorkspace
 {

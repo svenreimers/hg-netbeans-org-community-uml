@@ -63,7 +63,6 @@ import org.netbeans.test.umllib.exceptions.NotFoundException;
 
 /**
  *
- * @author ak153256
  */
 public class GenericVerifier {
     

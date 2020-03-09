@@ -96,7 +96,6 @@ import org.openide.util.Utilities;
 
 /**
  *
- * @author  thuy
  */
 public class ParameterCustomizerPanel extends javax.swing.JPanel {
     private ResourceBundle bundle = NbBundle.getBundle(ParameterCustomizerPanel.class);

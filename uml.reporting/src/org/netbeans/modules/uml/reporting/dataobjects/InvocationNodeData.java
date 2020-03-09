@@ -58,7 +58,6 @@ import org.openide.util.NbBundle;
 
 /**
  *
- * @author Sheryl
  */
 public class InvocationNodeData extends ElementDataObject
 {

@@ -55,7 +55,6 @@ import org.openide.WizardValidationException;
 
 /**
  *
- * @author  Mike Frisino
  */
 public class PanelOptionsVisual extends SettingsPanel
 {

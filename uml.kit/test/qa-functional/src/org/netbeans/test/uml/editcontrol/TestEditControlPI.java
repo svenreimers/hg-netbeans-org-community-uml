@@ -104,7 +104,6 @@ import org.netbeans.test.umllib.util.PopupConstants;
 
 /**
  *
- * @author psb
  * @spec uml/UML-EditControl.xml
  */
 public class TestEditControlPI extends UMLTestCase {

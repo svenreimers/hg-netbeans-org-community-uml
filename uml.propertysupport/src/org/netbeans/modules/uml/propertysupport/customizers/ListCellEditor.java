@@ -64,7 +64,6 @@ import java.util.Vector;
  * JTable.  I do not quite understand the problem.  I just know that is class
  * fixed the problem.
  *
- * @author Administrator
  */
 public class ListCellEditor extends DefaultCellEditor
 {

@@ -53,7 +53,6 @@ import org.netbeans.api.visual.widget.Widget;
 
 /**
  *
- * @author treyspiva
  */
 public class ListWidget extends Widget
 {

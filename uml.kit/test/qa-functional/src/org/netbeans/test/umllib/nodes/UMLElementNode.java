@@ -55,7 +55,6 @@ import org.netbeans.jemmy.operators.JTreeOperator;
 
 /**
  *
- * @author Alexei Mokeev
  */
 public class UMLElementNode extends Node {
     

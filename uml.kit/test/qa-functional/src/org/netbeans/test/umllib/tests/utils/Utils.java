@@ -47,7 +47,6 @@
  * Utils.java
  *
  * Created on 31 ���� 2005 �., 19:11
- * @author psb
  */
 
 package org.netbeans.test.umllib.tests.utils;
@@ -77,7 +76,6 @@ import org.netbeans.test.umllib.util.OptionsOperator;
 
 /**
  *
- * @author psb
  */
 public class Utils {
      //

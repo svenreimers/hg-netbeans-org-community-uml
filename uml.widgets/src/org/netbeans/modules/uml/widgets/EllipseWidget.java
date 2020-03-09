@@ -55,7 +55,6 @@ import org.netbeans.api.visual.widget.Widget;
  * children of an oval will be contained inside of the oval.  If the widgets
  * bounds is square,then a circle will be drawn.
  *
- * @author treyspiva
  */
 public class EllipseWidget extends Widget
 {

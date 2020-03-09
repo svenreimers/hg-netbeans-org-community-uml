@@ -56,7 +56,6 @@ import org.openide.util.datatransfer.NewType;
 /**
  * Describes a modeling meta data type that can be created.
  *
- * @author  Trey Spiva
  */
 public class ModelElementNewType extends NewType
 {

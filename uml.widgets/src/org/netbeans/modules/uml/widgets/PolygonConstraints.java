@@ -48,7 +48,6 @@ import org.netbeans.modules.uml.widgets.PolygonConstraints.VertexWeight;
 
 /**
  *
- * @author treyspiva
  */
 public class PolygonConstraints
 {

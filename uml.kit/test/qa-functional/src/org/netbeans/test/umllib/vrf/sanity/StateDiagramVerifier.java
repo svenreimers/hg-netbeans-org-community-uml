@@ -54,7 +54,6 @@ import org.netbeans.test.umllib.ElementTypes;
 
 /**
  *
- * @author Alexei Mokeev
  */
 public class StateDiagramVerifier extends AbstractDiagramVerifier{
     //String[] elements =

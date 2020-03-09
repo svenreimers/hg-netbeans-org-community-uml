@@ -51,7 +51,6 @@ import org.openide.nodes.Node;
 
 /**
  *
- * @author Sheryl
  */
 public interface ImportedElementCookie extends Node.Cookie
 {

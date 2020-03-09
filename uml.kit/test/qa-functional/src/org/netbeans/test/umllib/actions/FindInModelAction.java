@@ -48,7 +48,6 @@ package org.netbeans.test.umllib.actions;
 import org.netbeans.jellytools.actions.ActionNoBlock;
 
 /**
- * @author yaa
  */
 
 public class FindInModelAction extends ActionNoBlock{

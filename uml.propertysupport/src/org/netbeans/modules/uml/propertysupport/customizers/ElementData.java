@@ -53,7 +53,6 @@ import java.util.HashMap;
 import org.netbeans.modules.uml.propertysupport.DefinitionPropertyBuilder.ValidValues;
 /**
  *
- * @author thuy
  */
 public class ElementData {
     public static String PARAM_NAME = "Name";  //NO I18N

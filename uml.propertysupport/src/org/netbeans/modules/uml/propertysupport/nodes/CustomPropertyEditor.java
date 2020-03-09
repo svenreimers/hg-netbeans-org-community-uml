@@ -61,7 +61,6 @@ import org.netbeans.modules.uml.propertysupport.customizers.Customizer;
 
 /**
  *
- * @author Administrator
  */
 public class CustomPropertyEditor extends DefinitionPropertyEditor
 {

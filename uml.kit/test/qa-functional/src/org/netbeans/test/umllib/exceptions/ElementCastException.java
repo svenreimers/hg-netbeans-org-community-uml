@@ -47,7 +47,6 @@ package org.netbeans.test.umllib.exceptions;
 
 /**
  * 
- * @author psb
  */
 public class ElementCastException extends UMLCommonException {
     

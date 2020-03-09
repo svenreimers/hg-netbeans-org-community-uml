@@ -63,7 +63,6 @@ import org.netbeans.test.umllib.project.elem.VisibilityType;
 
 /**
  *
- * @author andromeda
  */
 public class AttributeElem implements IAttributeElem {
     

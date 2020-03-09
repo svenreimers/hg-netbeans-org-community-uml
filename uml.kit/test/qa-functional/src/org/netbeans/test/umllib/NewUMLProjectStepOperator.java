@@ -59,7 +59,6 @@ import org.netbeans.jemmy.operators.JTableOperator ;
 
 /**
  * Handles Buzz New
- * @author Alexei Mokeev
  */
 public class NewUMLProjectStepOperator extends NewProjectNameLocationStepOperator{
     private JButtonOperator _btAddJavaProject = null;

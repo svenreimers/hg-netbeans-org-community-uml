@@ -62,7 +62,6 @@ import org.netbeans.test.umllib.util.LabelsAndTitles;
 import org.netbeans.jemmy.Timeout;
 /**
  *
- * @author VijayaBabu Mummaneni
  */
 public class ReverseEngProgressDialogOperator extends NbDialogOperator {
     private JTreeOperator _javaProjects = null;

@@ -72,7 +72,6 @@ import org.netbeans.test.umllib.vrf.DiagramElementVerifier;
 
 /**
  *
- * @author VijayaBabu Mummaneni
  */
 public class CLD_ArtifactElementTests extends ClassDiagramTestCase {
     

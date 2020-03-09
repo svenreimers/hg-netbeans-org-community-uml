@@ -74,7 +74,6 @@ import org.netbeans.test.umllib.vrf.LinkVerifier;
 
 /**
  *
- * @author Administrator
  */
 public class CLD_RealizeLinkTests extends ClassDiagramTestCase {
     

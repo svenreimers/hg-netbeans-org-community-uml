@@ -50,7 +50,6 @@ import org.openide.util.NbPreferences;
 
 /**
  * Storage for some important incrementers and default values
- * @author Mike Frisino
  */
 public class UMLProjectSettings {
 	

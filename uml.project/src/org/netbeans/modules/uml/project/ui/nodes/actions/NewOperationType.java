@@ -61,7 +61,6 @@ import org.openide.util.datatransfer.NewType;
 
 /**
  *
- * @author Craig Conover, craig.conover@sun.com
  */
 public class NewOperationType extends NewType implements INewTypeExt
 {

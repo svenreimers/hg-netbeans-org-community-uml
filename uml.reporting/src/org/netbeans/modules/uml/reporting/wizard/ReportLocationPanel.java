@@ -61,7 +61,6 @@ import org.openide.util.NbBundle;
 
 /**
  *
- * @author  Sheryl
  */
 public class ReportLocationPanel extends WizardPanelBase implements WizardDescriptor.FinishablePanel {
 	

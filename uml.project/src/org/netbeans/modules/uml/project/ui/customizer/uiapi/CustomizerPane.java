@@ -56,7 +56,6 @@ import org.openide.util.NbBundle;
 
 /**
  *
- * @author  phrebejk
  */
 public class CustomizerPane extends javax.swing.JPanel implements HelpCtx.Provider {
 

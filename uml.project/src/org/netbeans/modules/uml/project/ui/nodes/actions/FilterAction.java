@@ -68,7 +68,6 @@ import org.openide.windows.WindowManager;
 
 /**
  *
- * @author  Craig Conover, craig.conover@sun.com
  */
 public class FilterAction extends CookieAction
 {

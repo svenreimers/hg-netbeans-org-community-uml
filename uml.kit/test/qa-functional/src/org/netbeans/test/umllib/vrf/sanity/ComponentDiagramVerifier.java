@@ -57,7 +57,6 @@ import org.netbeans.test.umllib.ElementTypes;
 
 /**
  *
- * @author Alexei Mokeev
  */
 public class ComponentDiagramVerifier extends AbstractDiagramVerifier{
     //String[] elements = 

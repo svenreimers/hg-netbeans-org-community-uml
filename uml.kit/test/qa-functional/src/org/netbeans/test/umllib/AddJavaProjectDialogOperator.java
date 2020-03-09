@@ -60,7 +60,6 @@ import org.netbeans.test.umllib.util.LabelsAndTitles;
 
 /**
  *
- * @author Alexei Mokeev
  */
 public class AddJavaProjectDialogOperator extends NbDialogOperator {
     private JTreeOperator _javaProjects = null;

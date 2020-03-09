@@ -17,7 +17,6 @@ import org.netbeans.jemmy.operators.Operator;
 
 /**
  *
- * @author  Sherry
  */
 public class DNDDriver {
     

@@ -50,7 +50,6 @@ package org.netbeans.modules.uml.project.ui;
 import org.netbeans.api.project.SourceGroup;
 
 /**
- * @author alagud
  *
  */
 public interface IMDRListener

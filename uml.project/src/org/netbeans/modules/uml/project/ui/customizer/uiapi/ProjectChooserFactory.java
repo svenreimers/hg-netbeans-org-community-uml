@@ -54,7 +54,6 @@ import java.io.File;
 
 /**
  * Factory to be implemented bu the ui implementation
- * @author Petr Hrebejk
  */
 public interface ProjectChooserFactory {
 

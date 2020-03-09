@@ -12,7 +12,6 @@ package bankpack;
 
 /**
  *
- * @author Administrator
  */
 public class Saving extends BankAccount{
     

@@ -51,7 +51,6 @@ import org.openide.util.NbPreferences;
 
 /**
  *
- * @author  krichard
  */
 public class ShowMeDialogsListPanel extends javax.swing.JPanel {
     

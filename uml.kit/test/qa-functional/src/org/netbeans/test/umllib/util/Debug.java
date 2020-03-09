@@ -68,7 +68,6 @@ import org.netbeans.junit.NbTestCase;
 
 /**
  *
- * @author Alexandr Scherbatiy
  */
 
 public class Debug {

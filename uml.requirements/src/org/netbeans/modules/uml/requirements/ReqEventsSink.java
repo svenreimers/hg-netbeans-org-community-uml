@@ -73,7 +73,6 @@ import java.awt.datatransfer.Transferable;
 
 /**
  *
- * @author  Trey Spiva
  */
 public class ReqEventsSink implements IProjectTreeEventsSink,
                                       ICoreProductInitEventsSink,

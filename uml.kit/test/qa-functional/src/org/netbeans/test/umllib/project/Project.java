@@ -63,7 +63,6 @@ import org.netbeans.test.umllib.util.Utils;
 
 /**
  *
- * @author Alexandr Scherbatiy
  */
 public abstract class Project {
     

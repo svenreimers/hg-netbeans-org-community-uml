@@ -52,7 +52,6 @@ import org.openide.util.NbBundle;
 
 /**
  *
- * @author Thuy
  */
 public class MultiplictyRangeHandler 
 {

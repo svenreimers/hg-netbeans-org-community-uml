@@ -104,7 +104,6 @@ import org.netbeans.swing.tabcontrol.TabbedContainer;
 
 /**
  * This common diagram operator
- * @author Alexei Mokeev
  */
 public class DiagramOperator extends TopComponentOperator {
     private Component tcoSource = null;

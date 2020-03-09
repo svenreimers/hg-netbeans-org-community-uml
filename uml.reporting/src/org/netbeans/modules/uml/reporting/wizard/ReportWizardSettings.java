@@ -53,7 +53,6 @@ import org.openide.WizardDescriptor;
 
 /**
  *
- * @author Sheryl
  */
 public class ReportWizardSettings {
 	IElement element;

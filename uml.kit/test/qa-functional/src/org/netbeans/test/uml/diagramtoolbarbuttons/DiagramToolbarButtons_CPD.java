@@ -60,7 +60,6 @@ import org.netbeans.test.umllib.testcases.UMLTestCase;
 
 /**
  *
- * @author yaa
  * @spec UML/Diagram_ToolbarButtons.xml
  */
 public class DiagramToolbarButtons_CPD extends UMLTestCase {

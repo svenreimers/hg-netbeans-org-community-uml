@@ -49,7 +49,6 @@
  */
 package org.netbeans.test.umllib;
 /**
- * @author psb
  */
 public enum ExpandedElementTypes {
     /*

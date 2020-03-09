@@ -76,8 +76,6 @@ import org.netbeans.modules.uml.ui.support.applicationmanager.IProxyUserInterfac
 
 /**
  *
- * @author Trey Spiva
- * @author Craig Conover, craig.conover@sun.com
  */
 public class UMLUserInterface 
       implements IProxyUserInterface, INewUMLFileTemplates

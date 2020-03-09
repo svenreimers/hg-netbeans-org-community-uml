@@ -89,7 +89,6 @@ import org.netbeans.test.umllib.project.Project;
 
 /**
  *
- * @author VijayaBabu Mummaneni
  */
 public class CLDModelingBasics extends ClassDiagramTestCase {
     private String PROJECT_NAME = "UMLProject-1" ;

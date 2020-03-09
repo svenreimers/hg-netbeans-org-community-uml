@@ -71,7 +71,6 @@ import org.openide.util.NbBundle;
 
 /**
  *
- * @author  Trey Spiva
  */
 public class DoorsRequirement implements IDoorsRequirement, IComparableTreeData
 {

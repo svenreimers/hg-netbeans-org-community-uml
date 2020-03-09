@@ -55,7 +55,6 @@ import java.awt.EventQueue;
 
 /**
  *
- * @author Trey Spiva
  */
 public class DefinitionPropertyEditor extends PropertyEditorSupport // implements PropertyEditor
 {

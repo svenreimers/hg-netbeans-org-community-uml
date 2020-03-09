@@ -48,7 +48,6 @@ import java.util.MissingResourceException;
 import org.openide.util.NbBundle;
 
 /**
- * @author josephg
  *
  */
 public class Messages

@@ -54,7 +54,6 @@ import org.openide.util.NbBundle;
 
 /**
  *
- * @author  krichard
  */
 public class UMLOptionsPanelForm extends javax.swing.JPanel {
 

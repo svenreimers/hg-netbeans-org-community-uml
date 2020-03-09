@@ -58,7 +58,6 @@ import org.netbeans.test.umllib.ElementTypes;
 
 /**
  * This verifier must be rewritten
- * @author Alexei Mokeev
  */
 public class CollaborationDiagramVerifier extends AbstractDiagramVerifier{
     //String[] elements =

@@ -61,7 +61,6 @@ import org.netbeans.test.umllib.values.Visibility;
 
 /**
  *
- * @author Alexandr Scherbatiy
  */
 
 public class AttributeElement {

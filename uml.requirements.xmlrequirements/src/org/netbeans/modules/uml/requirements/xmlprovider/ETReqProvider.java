@@ -67,7 +67,6 @@ import org.netbeans.modules.uml.ui.support.ProductHelper;
 import org.openide.util.NbBundle;
 
 /**
- * @author josephg
  *
  */
 public class ETReqProvider implements IDesignCenterSupport, IRequirementsProvider

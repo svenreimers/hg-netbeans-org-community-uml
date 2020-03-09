@@ -81,7 +81,6 @@ import java.util.Map;
 
 /**
  * 
- * @author Trey Spiva
  */
 public final class DefinitionPropertyBuilder
 {

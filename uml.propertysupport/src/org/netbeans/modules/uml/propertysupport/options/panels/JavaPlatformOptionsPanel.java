@@ -48,7 +48,6 @@ import org.openide.util.NbPreferences;
 
 /**
  *
- * @author  krichard
  */
 public class JavaPlatformOptionsPanel extends javax.swing.JPanel {
     

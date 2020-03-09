@@ -85,7 +85,6 @@ import org.openide.util.datatransfer.NewType;
 
 /**
  *
- * @author Trey Spiva
  */
 public class UMLModelElementNode extends UMLElementNode
     implements ITreeElement, INamedElementEventsSink, IElementLifeTimeEventsSink

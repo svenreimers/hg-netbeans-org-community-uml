@@ -46,7 +46,6 @@ package org.netbeans.modules.uml.project.ui.nodes.actions;
 
 /**
  *
- * @author Thuy
  */
 public interface INewTypeExt
 {

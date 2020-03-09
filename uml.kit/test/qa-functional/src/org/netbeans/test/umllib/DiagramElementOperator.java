@@ -99,7 +99,6 @@ import org.netbeans.test.umllib.util.JPopupByPointChooser;
 
 /**
  * This is common class for the all diagram elements
- * @author Alexei Mokeev
  */
 public class DiagramElementOperator extends Operator implements Actionable {
 

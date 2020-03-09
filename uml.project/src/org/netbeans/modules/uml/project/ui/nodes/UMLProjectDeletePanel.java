@@ -50,7 +50,6 @@ package org.netbeans.modules.uml.project.ui.nodes;
 
 /**
  *
- * @author sp153251
  */
 public class UMLProjectDeletePanel extends java.awt.Panel {
     private String projectDisplaName;

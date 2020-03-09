@@ -71,7 +71,6 @@ import org.openide.util.lookup.Lookups;
 
 /**
  *
- * @author Petr Hrebejk
  */
 public class CategoryView extends JPanel implements ExplorerManager.Provider, PropertyChangeListener {
                 

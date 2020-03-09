@@ -73,7 +73,6 @@ import org.netbeans.test.umllib.testcases.UMLTestCase;
 
 /**
  *
- * @author Alexandr Scherbatiy
  */
 public class ClassDiagramTestCase extends UMLTestCase{
     

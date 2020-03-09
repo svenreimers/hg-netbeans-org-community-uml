@@ -80,7 +80,6 @@ import org.openide.util.NbBundle;
 
 /**
  *
- * @author  Trey Spiva
  */
 public class DoorsReqProvider implements IDoorsReqProvider, IRequirementsProvider
 {

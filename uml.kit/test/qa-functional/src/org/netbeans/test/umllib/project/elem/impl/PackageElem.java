@@ -58,7 +58,6 @@ import org.netbeans.test.umllib.project.elem.IPackageElem;
 
 /**
  *
- * @author andromeda
  */
 
 public class PackageElem implements IPackageElem {

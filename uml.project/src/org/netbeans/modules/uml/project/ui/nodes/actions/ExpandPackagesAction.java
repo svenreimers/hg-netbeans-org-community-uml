@@ -56,7 +56,6 @@ import org.openide.util.actions.CookieAction;
 
 /**
  *
- * @author  Administrator
  */
 public class ExpandPackagesAction extends CookieAction
 {

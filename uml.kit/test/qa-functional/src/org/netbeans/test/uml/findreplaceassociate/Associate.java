@@ -63,7 +63,6 @@ import org.netbeans.test.umllib.util.LabelsAndTitles;
 
 /**
  *
- * @author yaa
  * @spec uml/FindReplaceAssociate.xml
  */
 public class Associate extends UMLTestCase {

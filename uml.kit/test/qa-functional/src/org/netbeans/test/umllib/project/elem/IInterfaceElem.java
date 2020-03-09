@@ -58,7 +58,6 @@ import java.util.List;
 
 /**
  *
- * @author andromeda
  */
 
 public interface IInterfaceElem extends IJavaElem {

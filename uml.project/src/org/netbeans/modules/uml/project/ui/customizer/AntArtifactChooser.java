@@ -71,7 +71,6 @@ import org.openide.util.NbBundle;
 /**
  * Accessory component used in the ProjectChooser for choosing project
  * artifacts. (Copied and modified from the Netbeans original
- * @author Mike Frisino
  */
 public class AntArtifactChooser extends JPanel implements PropertyChangeListener {
     

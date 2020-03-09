@@ -63,7 +63,6 @@ import org.netbeans.test.umllib.namers.LifelineNamer;
 
 /**
  *
- * @author Alexei Mokeev
  */
 public class LibProperties {
     private static LibProperties properties = null;;

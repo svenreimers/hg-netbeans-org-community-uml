@@ -88,7 +88,6 @@ import org.openide.util.NbBundle;
 
 /**
  *
- * @author Administrator
  */
 public class ImportedProjectChildren extends Children.Keys implements NodeListener
 {

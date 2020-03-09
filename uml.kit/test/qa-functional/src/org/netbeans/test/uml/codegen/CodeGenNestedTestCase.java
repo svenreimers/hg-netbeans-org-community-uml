@@ -65,8 +65,6 @@ import org.netbeans.test.umllib.project.verifier.elem.TextElementVerifier;
 
 /**
  *
- * @author Alexandr Scherbatiy 
- * @email  sunflower@netbeans.org
  */
 
 public class CodeGenNestedTestCase extends CodeGenerationTestCase {

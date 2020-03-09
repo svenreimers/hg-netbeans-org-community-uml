@@ -54,7 +54,6 @@ package org.netbeans.test.umllib.values;
 
 /**
  *
- * @author Alexandr Scherbatiy
  */
 public interface ValueConstant {
 

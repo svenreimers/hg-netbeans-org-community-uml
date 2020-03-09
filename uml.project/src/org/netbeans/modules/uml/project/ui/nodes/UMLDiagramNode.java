@@ -82,7 +82,6 @@ import org.openide.util.NbBundle;
 
 /**
  *
- * @author Trey Spiva
   */ //TODO
 @SuppressWarnings("unchecked")
 public class UMLDiagramNode extends UMLElementNode

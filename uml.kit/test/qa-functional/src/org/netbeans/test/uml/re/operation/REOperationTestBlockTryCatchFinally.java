@@ -64,7 +64,6 @@ import org.netbeans.test.umllib.customelements.LifelineOperator;
 
 /**
  *
- * @author Alexandr Scherbatiy
  */
 
 public class REOperationTestBlockTryCatchFinally extends REOperationTestCase{

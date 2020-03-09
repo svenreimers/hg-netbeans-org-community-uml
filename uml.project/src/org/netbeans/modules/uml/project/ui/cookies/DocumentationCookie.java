@@ -56,7 +56,6 @@ import org.openide.nodes.Node;
  * The documentation cookie is used to access the documentation for a node.
  * The documentation can be a JavaDoc comment, or a model element description.
  *
- * @author Trey Spiva
  */
 public interface DocumentationCookie extends Node.Cookie
 {

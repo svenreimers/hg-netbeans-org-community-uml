@@ -51,7 +51,6 @@ import org.openide.util.NbBundle;
 
 /**
  *
- * @author krichard
  */
 public class GeneralOptionsPanel implements UMLOptionsPanel {
     

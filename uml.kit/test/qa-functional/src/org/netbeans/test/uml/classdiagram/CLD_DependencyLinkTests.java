@@ -73,7 +73,6 @@ import org.netbeans.test.umllib.vrf.LinkVerifier;
 
 /**
  *
- * @author Administrator
  */
 public class CLD_DependencyLinkTests extends ClassDiagramTestCase {
     

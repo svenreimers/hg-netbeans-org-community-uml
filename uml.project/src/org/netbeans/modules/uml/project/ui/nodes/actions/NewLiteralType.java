@@ -65,7 +65,6 @@ import org.openide.util.datatransfer.NewType;
 
 /**
  *
- * @author Sergey Petrov
  */
 public class NewLiteralType extends NewType implements INewTypeExt
 {

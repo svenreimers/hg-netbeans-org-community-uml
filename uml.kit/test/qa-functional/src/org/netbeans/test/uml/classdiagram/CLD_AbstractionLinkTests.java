@@ -74,7 +74,6 @@ import org.netbeans.test.umllib.vrf.LinkVerifier;
 
 /**
  *
- * @author VijayaBabu Mummaneni
  */
 public class CLD_AbstractionLinkTests extends ClassDiagramTestCase {
     

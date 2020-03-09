@@ -52,7 +52,6 @@ package org.netbeans.modules.uml.requirements;
 
 /**
  *
- * @author  Trey Spiva
  */
 public interface IReqEventsSink
 {

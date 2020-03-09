@@ -69,7 +69,6 @@ import org.netbeans.test.umllib.vrf.DiagramElementVerifier;
 
 /**
  *
- * @author yaa
  * @spec UML/DeploymentDiagram.xml
  */
 public class DPD_Node extends UMLTestCase {

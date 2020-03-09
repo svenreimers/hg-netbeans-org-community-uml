@@ -72,7 +72,6 @@ import org.netbeans.test.umllib.project.UMLProject;
 
 /**
  *
- * @author Alexei Mokeev
  */
 public class Utils {
     

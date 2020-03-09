@@ -61,7 +61,6 @@ import org.netbeans.test.umllib.project.elem.IPackageElem;
 
 /**
  *
- * @author sunflower@netbeans.org
  */
 public class PredefinedType extends HashMap<String, IJavaElem> {
 

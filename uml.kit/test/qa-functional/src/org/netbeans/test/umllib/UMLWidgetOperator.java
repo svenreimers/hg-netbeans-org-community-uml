@@ -44,7 +44,6 @@
 
 /**
  *
- * @author Sherry
  */
 package org.netbeans.test.umllib;
 

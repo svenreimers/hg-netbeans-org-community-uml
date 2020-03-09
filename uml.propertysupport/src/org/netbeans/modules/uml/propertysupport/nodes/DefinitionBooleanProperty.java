@@ -52,7 +52,6 @@ import org.netbeans.modules.uml.core.support.umlutils.IPropertyElement;
 
 /**
  *
- * @author Trey Spiva
  */
 public class DefinitionBooleanProperty extends DefinitionPropertySupport
 {

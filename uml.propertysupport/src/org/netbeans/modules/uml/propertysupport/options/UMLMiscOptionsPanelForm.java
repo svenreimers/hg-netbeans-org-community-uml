@@ -49,7 +49,6 @@ import org.netbeans.modules.uml.propertysupport.options.api.UMLOptionsPanel;
 
 /**
  *
- * @author  krichard
  */
 public class UMLMiscOptionsPanelForm extends JPanel {
     

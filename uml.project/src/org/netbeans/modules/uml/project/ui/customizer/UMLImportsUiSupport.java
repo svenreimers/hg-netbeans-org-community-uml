@@ -81,7 +81,6 @@ import java.util.Map;
 
 /**
  *
- * @author Mike Frisino
  */
 public class UMLImportsUiSupport
 {

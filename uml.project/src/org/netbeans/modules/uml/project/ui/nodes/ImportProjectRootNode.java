@@ -69,7 +69,6 @@ import org.openide.util.NbBundle;
 
 /**
  *
- * @author Administrator
  */
 public class ImportProjectRootNode extends AbstractNode implements ImportElementListener
 {

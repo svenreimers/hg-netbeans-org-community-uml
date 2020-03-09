@@ -55,7 +55,6 @@ import org.openide.util.HelpCtx;
 import org.openide.util.Lookup;
 /**
  *
- * @author krichard
  */
 public class UMLPanelController extends OptionsPanelController {
     

@@ -94,7 +94,6 @@ import org.openide.util.NbBundle;
 
 /**
  *
- * @author Administrator
  */
 public class UMLProductProjectManager implements IProductProjectManager {
     private static String previousDirectory = "";

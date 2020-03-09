@@ -65,7 +65,6 @@ import org.openide.util.Lookup;
 
 /** Handles adding, removing, reordering of source roots.
  *
- * @author Mike Frisino
  */
 public class JavaSourceRootsUI
 {

@@ -74,7 +74,6 @@ import org.netbeans.test.umllib.project.verifier.TestVerifier;
 
 /**
  *
- * @author Alexandr Scherbatiy
  */
 
 public class CodeGenerationTestCase extends UMLTestCase{

@@ -52,7 +52,6 @@ import org.openide.util.NbBundle;
 
 /**
  *
- * @author krichard
  */
 public class UMLOptions extends OptionsCategory {
 

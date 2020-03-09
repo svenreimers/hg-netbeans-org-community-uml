@@ -78,7 +78,6 @@ import org.netbeans.test.umllib.util.LibProperties;
 
 /**
  *
- * @author psb
  * @spec UML/ComponentDiagram.xml
  */
 public class ComponentDiagramElementsContextMenu2 extends UMLTestCase {

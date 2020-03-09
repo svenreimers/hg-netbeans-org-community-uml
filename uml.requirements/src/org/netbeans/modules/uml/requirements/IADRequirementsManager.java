@@ -54,7 +54,6 @@ import org.netbeans.modules.uml.core.requirementsframework.IRequirementsManager;
 
 /**
  *
- * @author  Trey Spiva
  */
 public interface IADRequirementsManager extends IRequirementsManager
 {

@@ -50,7 +50,6 @@ import java.beans.PropertyEditor;
 
 /**
  *
- * @author Trey Spiva
  */
 public class DefinitionListProperty extends DefinitionPropertySupport
 {

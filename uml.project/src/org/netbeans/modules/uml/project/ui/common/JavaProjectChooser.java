@@ -74,7 +74,6 @@ import org.netbeans.api.java.project.JavaProjectConstants;
 
 /**
  * Action that allows selection of the Java project to associate with UML project
- * @author Mike Frisino
  */
 public class JavaProjectChooser {
     

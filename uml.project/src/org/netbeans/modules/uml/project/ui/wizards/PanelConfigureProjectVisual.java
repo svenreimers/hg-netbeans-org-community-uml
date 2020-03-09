@@ -58,7 +58,6 @@ import org.openide.util.NbBundle;
 /** First panel in the NewProject wizard. Used for filling in
  * name, and directory of the project.
  *
- * @author Mike Frisino
  */
 public class PanelConfigureProjectVisual extends JPanel
 {

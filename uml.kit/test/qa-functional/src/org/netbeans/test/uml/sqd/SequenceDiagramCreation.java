@@ -68,7 +68,6 @@ import org.netbeans.test.umllib.tests.DiagramCreation;
 
 /**
  *
- * @author psb
  * @spec UML/SQDDiagram.xml
  */
 public class SequenceDiagramCreation extends DiagramCreation {

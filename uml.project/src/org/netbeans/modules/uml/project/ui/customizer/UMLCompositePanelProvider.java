@@ -54,7 +54,6 @@ import org.openide.util.NbBundle;
 
 /**
  *
- * @author Jyothi
  */
 public class UMLCompositePanelProvider  implements ProjectCustomizer.CompositeCategoryProvider {
     

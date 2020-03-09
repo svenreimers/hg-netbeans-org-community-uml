@@ -68,7 +68,6 @@ import org.netbeans.test.umllib.project.elem.impl.JavaElem;
 
 /**
  *
- * @author <A HREF="mailto:sunflower@netbeans.org">Alexandr Scherbatiy</A>
  */
 public class TextElementVerifier extends AElementVerifier{
     

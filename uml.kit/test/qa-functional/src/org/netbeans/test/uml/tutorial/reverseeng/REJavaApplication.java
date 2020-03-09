@@ -85,7 +85,6 @@ import org.netbeans.test.umllib.util.JPopupByPointChooser;
 
 /**
  *
- * @author Alexandr Scherbatiy
  */
 public class REJavaApplication extends UMLTestCase {
 

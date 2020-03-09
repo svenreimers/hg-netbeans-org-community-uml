@@ -56,7 +56,6 @@ import org.netbeans.test.umllib.util.PopupConstants;
 
 /**
  *
- * @author yaa
  * @spec UML/Diagram_ContextMenus.xml
  */
 public class DiagramContextMenus_ACD extends UMLTestCase {

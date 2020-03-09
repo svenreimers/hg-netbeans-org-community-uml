@@ -49,7 +49,6 @@ import org.netbeans.jemmy.JemmyException;
 
 /**
  *
- * @author Sergey Petrov
  */
 public class UMLCommonException extends JemmyException{
     

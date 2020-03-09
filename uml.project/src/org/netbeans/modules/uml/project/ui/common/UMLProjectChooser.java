@@ -78,7 +78,6 @@ import java.util.Iterator;
 
 /**
  * Action that allows selection of the Java project to associate with UML project
- * @author Mike Frisino
  */
 public class UMLProjectChooser {
     

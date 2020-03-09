@@ -61,7 +61,6 @@ import org.openide.util.NbBundle;
 
 /**
  *
- * @author Sheryl
  */
 public class UseCaseData extends ClassData
 {

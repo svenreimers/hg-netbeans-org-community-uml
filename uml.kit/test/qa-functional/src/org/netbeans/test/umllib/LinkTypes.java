@@ -50,7 +50,6 @@ package org.netbeans.test.umllib;
 /**
  * All types of links must be defined here
  * and used as contants in other places
- * @author Alexei Mokeev
  */
 public enum LinkTypes {
     // This means ANY link */

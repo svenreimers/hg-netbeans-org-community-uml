@@ -94,7 +94,6 @@ import org.openide.util.Utilities;
 
 /**
  *
- * @author  khu
  */
 public class ReturnTypeCustomizer extends javax.swing.JPanel 
     implements Customizer, EnhancedCustomPropertyEditor

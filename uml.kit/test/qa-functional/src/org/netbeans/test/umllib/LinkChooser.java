@@ -55,7 +55,6 @@ import org.netbeans.api.visual.widget.Widget;
 
 /**
  *
- * @author Alexei Mokeev
  */
 public interface LinkChooser {
     

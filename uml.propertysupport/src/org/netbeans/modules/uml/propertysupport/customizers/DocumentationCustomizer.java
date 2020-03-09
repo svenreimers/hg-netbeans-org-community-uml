@@ -52,7 +52,6 @@ import org.openide.explorer.propertysheet.editors.EnhancedCustomPropertyEditor;
 
 /**
  *
- * @author Sheryl
  */
 public class DocumentationCustomizer extends DocumentationPane 
         implements Customizer, EnhancedCustomPropertyEditor

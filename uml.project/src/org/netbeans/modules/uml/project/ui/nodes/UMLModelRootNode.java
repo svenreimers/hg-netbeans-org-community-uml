@@ -94,7 +94,6 @@ import org.openide.nodes.Node.Cookie;
 
 /**
  *
- * @author Mike
  */
 public class UMLModelRootNode extends UMLModelElementNode
         implements ModelRootNodeCookie, IProjectTreeFilterDialogEventsSink

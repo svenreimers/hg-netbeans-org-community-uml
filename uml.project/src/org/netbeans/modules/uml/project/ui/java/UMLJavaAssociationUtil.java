@@ -80,7 +80,6 @@ import org.openide.loaders.DataObjectNotFoundException;
 
 /**
  *
- * @author Mike
  */
 public class UMLJavaAssociationUtil {
 	

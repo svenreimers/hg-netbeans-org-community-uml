@@ -73,7 +73,6 @@ import org.netbeans.test.umllib.exceptions.UMLCommonException;
 
 /**
  *
- * @author sp153251
  */
 public class OptionsOperator extends JDialogOperator {
     //

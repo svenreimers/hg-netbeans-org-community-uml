@@ -53,8 +53,6 @@ import java.awt.geom.AffineTransform;
  * enumerated values common to LinearGradientPaint and RadialGradientPaint.
  *
  *
- * @author Nicholas Talian, Vincent Hardy, Jim Graham, Jerry Evans
- * @author <a href="mailto:vincent.hardy@eng.sun.com">Vincent Hardy</a>
  * @version $Id: MultipleGradientPaint.java,v 1.1.2.2 2007/11/19 23:54:03 sherylsu Exp $
  */
 public abstract class MultipleGradientPaint implements Paint

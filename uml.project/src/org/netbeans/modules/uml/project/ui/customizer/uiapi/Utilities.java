@@ -48,7 +48,6 @@ import org.openide.util.Lookup;
 
 /**
  * Way of getting implementations of UI components defined in projects/projectui.
- * @author Petr Hrebejk, Jesse Glick
  */
 public class Utilities {
 

@@ -58,7 +58,6 @@ import org.netbeans.test.umllib.vrf.GenericVerifier;
 
 /**
  *
- * @author yaa
  * @spec uml/UMLRobustness.xml
  */
 public class RobustnessCycle extends UMLTestCase {

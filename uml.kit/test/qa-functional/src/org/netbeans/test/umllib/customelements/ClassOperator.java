@@ -80,7 +80,6 @@ import org.netbeans.test.umllib.exceptions.NotFoundException;
 
 /**
  *
- * @author VijayaBabu Mummaneni
  */
 public class ClassOperator extends DiagramElementOperator{
     

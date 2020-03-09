@@ -61,7 +61,6 @@ import org.netbeans.test.umllib.util.PopupConstants;
 
 
 /**
- * @author yaa
  */
 public class RUtils {
     

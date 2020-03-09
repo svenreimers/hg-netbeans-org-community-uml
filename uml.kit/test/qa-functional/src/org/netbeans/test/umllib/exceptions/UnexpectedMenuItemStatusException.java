@@ -47,7 +47,6 @@ package org.netbeans.test.umllib.exceptions;
 
 /**
  * example: can be thrown on attemp to 
- * @author psb
  */
 public class UnexpectedMenuItemStatusException extends UMLCommonException {
     

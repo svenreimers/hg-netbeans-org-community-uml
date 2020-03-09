@@ -64,7 +64,6 @@ import org.openide.util.Utilities;
 
 /**
  *
- * @author  Mike Frisino
  */
 public class PanelUmlImports extends JPanel
         implements PropertyChangeListener {

@@ -63,7 +63,6 @@ import org.netbeans.spi.project.ui.support.ProjectCustomizer.CategoryComponentPr
 
 /** Implementation of standard customizer dialog.
  *
- * @author Petr Hrebejk
  * copied because we need access to the OK button
  */
 public class UMLCustomizerDialog {

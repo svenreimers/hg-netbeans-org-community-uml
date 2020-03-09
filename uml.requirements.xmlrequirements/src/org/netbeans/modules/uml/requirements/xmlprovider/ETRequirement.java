@@ -55,7 +55,6 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 import org.dom4j.Element;
 
 /**
- * @author josephg
  *
  */
 public class ETRequirement implements IRequirement

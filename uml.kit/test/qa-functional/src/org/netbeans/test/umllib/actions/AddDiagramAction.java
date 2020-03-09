@@ -59,7 +59,6 @@ import static org.netbeans.test.umllib.util.PopupConstants.* ;
 import org.netbeans.jellytools.actions.ActionNoBlock;
 /**
  *
- * @author VijayaBabu Mummaneni
  */
 public class AddDiagramAction extends ActionNoBlock {
 

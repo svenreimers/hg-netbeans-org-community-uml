@@ -67,7 +67,6 @@ import org.netbeans.test.umllib.values.Arg;
 
 /**
  *
- * @author Alexandr Scherbatiy
  */
 public class OperationElement {
     

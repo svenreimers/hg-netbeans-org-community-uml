@@ -59,7 +59,6 @@ import org.openide.util.NbBundle;
 
 /**
  *
- * @author Sheryl
  */
 public class CommentData extends ElementDataObject
 {

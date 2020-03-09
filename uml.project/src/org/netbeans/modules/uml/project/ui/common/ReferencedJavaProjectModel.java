@@ -55,7 +55,6 @@ import org.netbeans.api.project.Project;
 
 /**
  *
- * @author Mike
  */
 public class ReferencedJavaProjectModel
 {

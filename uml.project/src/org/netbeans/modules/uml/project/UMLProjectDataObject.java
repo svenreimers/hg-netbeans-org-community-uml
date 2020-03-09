@@ -71,7 +71,6 @@ import org.openide.windows.CloneableOpenSupport;
 
 /**
  *
- * @author Sheryl
  */
 public class UMLProjectDataObject extends MultiDataObject
 {

@@ -47,7 +47,6 @@ package org.netbeans.test.umllib.exceptions;
 
 /**
  * 
- * @author psb
  */
 public class KnownBugException extends UMLCommonException {
     private int bugId=-1;

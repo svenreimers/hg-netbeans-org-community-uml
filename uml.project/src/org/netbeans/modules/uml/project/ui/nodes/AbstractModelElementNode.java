@@ -99,8 +99,6 @@ import org.openide.util.datatransfer.PasteType;
  * <p>
  * The DnD operations will be supported in this class as well.
  *
- * @author Trey Spiva
- * @author Craig Conover, craig.conover@sun.com
  */
 public abstract class AbstractModelElementNode extends AbstractNode
 {   

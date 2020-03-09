@@ -104,7 +104,6 @@ import org.openide.util.NbBundle;
 
 /**
  *
- * @author  Trey Spiva
  */
 public class ADRequirementsManager extends RequirementsManager
 //implements IDesignCenterSupport, IDesignCenterSupportGUI, IViewActionDelegate, IActionProvider

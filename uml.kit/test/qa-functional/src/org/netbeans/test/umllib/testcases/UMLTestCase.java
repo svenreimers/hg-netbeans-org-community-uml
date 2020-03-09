@@ -79,7 +79,6 @@ import org.netbeans.junit.NbTestCase;
 
 /**
  *
- * @author sp153251
  */
 public class UMLTestCase extends JellyTestCase {
  

@@ -61,7 +61,6 @@ import org.netbeans.test.umllib.project.elem.IPackageElem;
 
 /**
  *
- * @author andromeda
  */
 public enum PrimitiveType implements IJavaElem{
     VOID("void"),

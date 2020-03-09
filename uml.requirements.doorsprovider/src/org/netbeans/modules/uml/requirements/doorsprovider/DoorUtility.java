@@ -55,7 +55,6 @@ import org.netbeans.modules.uml.ui.support.helpers.ETSmartWaitCursor;
 
 /**
  *
- * @author  Trey Spiva
  */
 public class DoorUtility
 {

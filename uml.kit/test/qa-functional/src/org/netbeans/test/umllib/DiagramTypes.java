@@ -54,7 +54,6 @@ package org.netbeans.test.umllib;
 
 /**
  *
- * @author Alexandr Scherbatiy
  */
 public enum DiagramTypes {
     

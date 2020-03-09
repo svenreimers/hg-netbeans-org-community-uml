@@ -56,7 +56,6 @@ import org.netbeans.test.umllib.testcases.UMLTestCase;
 import org.netbeans.test.umllib.util.PopupConstants;
 
 /**
- * @author yaa
  */
 
 public class FRAUtils {

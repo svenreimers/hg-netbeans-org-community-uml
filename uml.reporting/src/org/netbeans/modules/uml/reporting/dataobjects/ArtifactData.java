@@ -50,7 +50,6 @@ import org.netbeans.modules.uml.core.metamodel.structure.IArtifact;
 
 /**
  *
- * @author Sheryl
  */
 public class ArtifactData extends ClassData
 {

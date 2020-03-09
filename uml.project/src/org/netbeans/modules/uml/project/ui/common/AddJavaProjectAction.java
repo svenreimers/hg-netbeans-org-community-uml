@@ -79,7 +79,6 @@ import org.netbeans.modules.uml.core.support.Debug;
 
 /**
  * Action that allows selection of the Java project to associate with UML project
- * @author Mike Frisino
  */
 public class AddJavaProjectAction extends CookieAction
 {

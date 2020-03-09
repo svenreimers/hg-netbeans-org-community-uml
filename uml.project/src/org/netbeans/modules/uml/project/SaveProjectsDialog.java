@@ -84,7 +84,6 @@ import org.openide.windows.WindowManager;
 
 /**
  *
- * @author  Administrator
  */
 public class SaveProjectsDialog extends JCenterDialog
 {

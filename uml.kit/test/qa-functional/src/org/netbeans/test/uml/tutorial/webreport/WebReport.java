@@ -88,7 +88,6 @@ import org.netbeans.test.umllib.util.Utils;
 
 /**
  *
- * @author psb
  */
 public class WebReport extends UMLTestCase {
     

@@ -51,7 +51,6 @@ import org.netbeans.spi.project.ui.support.ProjectCustomizer;
 
 /** Maintains current category in the customizer.
  *
- * @author Petr Hrebejk
  */
 public class CategoryModel {
 

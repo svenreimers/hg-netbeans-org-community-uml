@@ -65,7 +65,6 @@ import org.netbeans.test.umllib.customelements.MessageOperator;
 
 /**
  *
- * @author Alexandr Scherbatiy
  */
 
 public class REOperationTestBlockSynchronized extends REOperationTestCase{

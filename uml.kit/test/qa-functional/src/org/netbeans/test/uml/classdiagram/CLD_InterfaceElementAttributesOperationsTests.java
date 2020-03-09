@@ -82,7 +82,6 @@ import org.netbeans.test.umllib.vrf.DiagramElementVerifier;
 
 /**
  *
- * @author lvv
  */
 public class CLD_InterfaceElementAttributesOperationsTests extends ClassDiagramTestCase {
     

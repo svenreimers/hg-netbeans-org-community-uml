@@ -52,7 +52,6 @@ package org.netbeans.test.umllib.exceptions;
 
 /**
  *
- * @author Alexei Mokeev
  */
 public class NotFoundException extends UMLCommonException{
     

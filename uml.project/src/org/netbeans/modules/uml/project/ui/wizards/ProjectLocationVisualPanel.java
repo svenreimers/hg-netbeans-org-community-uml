@@ -64,7 +64,6 @@ import org.netbeans.modules.uml.project.ui.common.ReferencedJavaProjectPanel;
 
 /**
  *
- * @author  Craig Conover, craig.conover@sun.com
  */
 public class ProjectLocationVisualPanel extends SettingsPanel
     implements DocumentListener

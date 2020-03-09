@@ -87,7 +87,6 @@ import org.netbeans.test.umllib.exceptions.NotFoundException;
 /**
  * This is operator for a link beween diagram elements.
  * Using it you can perform various operations on link.
- * @author Alexei Mokeev, Sherry Zhou
  */
 public class LinkOperator implements Actionable{
     private Widget edge = null;

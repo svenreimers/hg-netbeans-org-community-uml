@@ -62,7 +62,6 @@ import org.openide.filesystems.FileObject;
 
 /**
  *
- * @author Mike Frisino
  */
 public class UMLImportsSupport {
 	

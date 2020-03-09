@@ -58,7 +58,6 @@ import org.netbeans.test.umllib.testcases.UMLTestCase;
 
 /**
  *
- * @author yaa
  * @spec uml/FindReplaceAssociate.xml
  */
 public class Replace extends UMLTestCase {

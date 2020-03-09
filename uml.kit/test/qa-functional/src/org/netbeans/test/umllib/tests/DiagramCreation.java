@@ -73,7 +73,6 @@ import org.netbeans.test.umllib.testcases.UMLTestCase;
 
 /**
  *
- * @author psb
  * @spec UML/ComponentDiagram.xml
  */
 public abstract class DiagramCreation extends UMLTestCase {

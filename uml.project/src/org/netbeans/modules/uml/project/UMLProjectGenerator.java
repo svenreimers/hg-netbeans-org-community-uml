@@ -85,7 +85,6 @@ import org.openide.util.NbBundle;
  * Create a fresh J2SEProject from scratch.
  * Currently does not permit much to be specified - feel free to 
  * add more parameters as needed.
- * @author Mike Frisino
  */
 public class UMLProjectGenerator
 {

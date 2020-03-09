@@ -66,7 +66,6 @@ import org.openide.util.datatransfer.NewType;
 
 /**
  *
- * @author Craig Conover, craig.conover@sun.com
  */
 public class NewElementType extends NewType implements INewTypeExt
 {

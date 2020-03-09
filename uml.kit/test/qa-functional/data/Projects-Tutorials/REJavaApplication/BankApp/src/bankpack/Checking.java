@@ -12,7 +12,6 @@ package bankpack;
 
 /**
  *
- * @author Administrator
  */
 public class Checking extends BankAccount {
     private static final double overdraftPenalty = 25.00;

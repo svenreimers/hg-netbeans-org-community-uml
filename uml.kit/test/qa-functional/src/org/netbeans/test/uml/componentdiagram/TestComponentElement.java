@@ -80,7 +80,6 @@ import org.netbeans.test.umllib.util.LibProperties;
 
 /**
  *
- * @author psb
  * @spec uml/UML-EditControl.xml
  */
 public class TestComponentElement extends UMLTestCase {

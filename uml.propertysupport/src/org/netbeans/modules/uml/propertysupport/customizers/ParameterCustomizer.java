@@ -69,7 +69,6 @@ import org.netbeans.modules.uml.propertysupport.nodes.CustomPropertyEditor;
 import org.openide.explorer.propertysheet.editors.EnhancedCustomPropertyEditor;
 /**
  *
- * @author thuy
  */
 public class ParameterCustomizer extends JPanel 
         implements Customizer, EnhancedCustomPropertyEditor {

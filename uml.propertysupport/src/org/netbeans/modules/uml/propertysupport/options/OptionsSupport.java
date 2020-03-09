@@ -55,7 +55,6 @@ import org.openide.loaders.FolderLookup;
 
 /**
  *
- * @author krichard
  */
 
 public class OptionsSupport {

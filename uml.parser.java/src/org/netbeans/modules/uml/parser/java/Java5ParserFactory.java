@@ -59,7 +59,6 @@ import org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframe
 
 /**
  *
- * @author Administrator
  */
 public class Java5ParserFactory implements IParserFactory{
    

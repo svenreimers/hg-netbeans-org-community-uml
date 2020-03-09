@@ -61,7 +61,6 @@ import org.netbeans.test.umllib.util.PopupConstants;
 
 /**
  *
- * @author VijayaBabu Mummaneni
  */
 public class DeleteAttributeAction extends DiagramElementAction{
     

@@ -61,7 +61,6 @@ import org.netbeans.test.umllib.exceptions.NotFoundException;
 
 /**
  *
- * @author Alexei Mokeev
  */
 public abstract class AbstractDiagramVerifier {
     public static String elementPrefix = null;;

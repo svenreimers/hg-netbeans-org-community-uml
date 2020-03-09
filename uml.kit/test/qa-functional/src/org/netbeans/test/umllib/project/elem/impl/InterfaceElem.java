@@ -64,7 +64,6 @@ import org.netbeans.test.umllib.project.elem.IPackageElem;
 
 /**
  *
- * @author andromeda
  */
 public class InterfaceElem extends JavaElem implements IInterfaceElem {
     

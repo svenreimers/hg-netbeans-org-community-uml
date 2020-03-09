@@ -66,7 +66,6 @@ import org.netbeans.test.umllib.util.OptionsOperator;
 
 /**
  *
- * @author psb
  * @spec UML/.xml
  */
 public class AllItems extends UMLMultiTestSuite {

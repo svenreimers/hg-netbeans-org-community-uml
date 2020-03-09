@@ -63,7 +63,6 @@ import org.netbeans.modules.uml.project.ui.customizer.uiapi.CustomizerPane;
 
 /**
  *
- * @author  Mike Frisino
  */
 public class CustomizerModeling extends javax.swing.JPanel 
     implements HelpCtx.Provider

@@ -60,7 +60,6 @@ import org.netbeans.jemmy.operators.JPopupMenuOperator;
 
 /**
  *
- * @author Alexei Mokeev
  */
 public class ActionablePoint implements Actionable{
     private Point p = null;

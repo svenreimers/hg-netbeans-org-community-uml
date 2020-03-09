@@ -51,7 +51,6 @@ import org.openide.util.NbBundle;
 
 /**
  *
- * @author krichard
  */
 public class ShowMeDialogsList implements UMLOptionsPanel {
     

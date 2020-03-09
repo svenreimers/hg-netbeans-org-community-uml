@@ -51,7 +51,6 @@ import java.lang.reflect.Modifier;
 
 /**
  * ported from qa.jse.MutiTestCase
- * @author sp153251
  */
 public abstract class UMLMultiTestCase extends UMLTestCase{
     

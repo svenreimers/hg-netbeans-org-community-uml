@@ -74,7 +74,6 @@ import org.netbeans.test.umllib.actions.Actionable;
 /**
  * This is basic class for all diagram actions. Derived from 
  * corresponding jelly <CODE>Action</CODE> class
- * @author Alexei Mokeev
  */
 public class DiagramElementAction {
     /** through menu action performing mode */

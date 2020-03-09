@@ -79,7 +79,6 @@ import org.netbeans.test.umllib.util.JPopupByPointChooser;
 
 /**
  *
- * @author psb
  * @spec UML/ComponentDiagram.xml
  */
 public abstract class DiagramLayout extends UMLTestCase {

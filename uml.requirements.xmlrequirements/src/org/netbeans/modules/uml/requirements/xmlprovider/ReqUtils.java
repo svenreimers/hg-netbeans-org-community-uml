@@ -66,7 +66,6 @@ import org.netbeans.modules.uml.ui.support.applicationmanager.IProduct;
 import org.dom4j.IDResolver;
 
 /**
- * @author josephg
  *
  */
 public class ReqUtils

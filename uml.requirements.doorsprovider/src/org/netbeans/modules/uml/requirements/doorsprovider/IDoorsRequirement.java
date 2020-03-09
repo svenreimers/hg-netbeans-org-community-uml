@@ -54,7 +54,6 @@ import org.netbeans.modules.uml.core.requirementsframework.IRequirement;
 
 /**
  *
- * @author  Trey Spiva
  */
 public interface IDoorsRequirement extends IRequirement
 {

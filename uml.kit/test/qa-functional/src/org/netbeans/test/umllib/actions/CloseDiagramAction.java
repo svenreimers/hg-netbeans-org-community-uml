@@ -60,7 +60,6 @@ import org.netbeans.jellytools.actions.ActionNoBlock;
 
 /**
  *
- * @author VijayaBabu Mummaneni
  */
 public class CloseDiagramAction extends ActionNoBlock {
     

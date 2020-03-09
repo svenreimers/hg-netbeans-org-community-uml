@@ -75,7 +75,6 @@ import org.netbeans.test.umllib.project.verifier.elem.ReflectionElementVerifier;
 import org.netbeans.test.umllib.project.verifier.elem.TextElementVerifier;
 /**
  *
- * @author Alexandr Scherbatiy
  */
 
 public class CodeGenElementsTestCase extends CodeGenerationTestCase {

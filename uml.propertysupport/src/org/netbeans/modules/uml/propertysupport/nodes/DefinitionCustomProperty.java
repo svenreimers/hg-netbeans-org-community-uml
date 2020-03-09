@@ -58,7 +58,6 @@ import java.beans.PropertyEditor;
 
 /**
  *
- * @author Administrator
  */
 public class DefinitionCustomProperty extends DefinitionPropertySupport
 {

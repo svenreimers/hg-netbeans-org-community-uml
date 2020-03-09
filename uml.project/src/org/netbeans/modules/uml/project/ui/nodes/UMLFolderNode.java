@@ -65,7 +65,6 @@ import org.openide.util.datatransfer.NewType;
 
 /**
  *
- * @author Trey Spiva
  */
 public class UMLFolderNode extends UMLElementNode implements ITreeFolder
 {

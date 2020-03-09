@@ -56,7 +56,6 @@ import org.netbeans.test.umllib.tests.DiagramLayout;
 
 /**
  *
- * @author psb
  * @spec UML/ActivityDiagram.xml
  */
 public class ActivityDiagramLayout extends DiagramLayout {

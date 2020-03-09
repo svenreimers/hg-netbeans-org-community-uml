@@ -59,7 +59,6 @@ import org.netbeans.jellytools.actions.ActionNoBlock;
 
 /**
  *
- * @author VijayaBabu Mummaneni
  */
 public class SourceControlRefreshStatusAction extends ActionNoBlock {
 

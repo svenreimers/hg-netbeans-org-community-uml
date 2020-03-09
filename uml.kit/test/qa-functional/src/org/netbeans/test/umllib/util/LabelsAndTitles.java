@@ -53,7 +53,6 @@ package org.netbeans.test.umllib.util;
 
 /**
  *
- * @author Alexei Mokeev
  */
 public interface LabelsAndTitles {
     

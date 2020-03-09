@@ -58,7 +58,6 @@ import org.netbeans.jemmy.operators.JTextFieldOperator;
 
 /**
  *
- * @author Alexandr Scherbatiy
  */
 public abstract class ValueOperator {
     

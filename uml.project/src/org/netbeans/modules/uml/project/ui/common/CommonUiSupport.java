@@ -52,7 +52,6 @@ import org.openide.util.NbBundle;
 
 /**
  * Support class for uml common ui (wizard and customizer)
- * @author mike frisino
  */
 public class CommonUiSupport
 {

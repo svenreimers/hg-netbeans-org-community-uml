@@ -58,7 +58,6 @@ import org.netbeans.spi.project.support.ant.AntProjectListener;
 
 /**
  *
- * @author Administrator
  */
 public class UMLProjectMetadataListener implements PropertyChangeListener,AntProjectListener
 {

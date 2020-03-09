@@ -70,7 +70,6 @@ import org.netbeans.test.umllib.values.ValueOperator;
 
 /**
  *
- * @author Alexandr Scherbatiy
  */
 public class AttributeContainerOperator extends ValueOperator {
 

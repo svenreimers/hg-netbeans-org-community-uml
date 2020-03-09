@@ -65,7 +65,6 @@ import org.openide.windows.TopComponent;
 
 /**
  *
- * @author Trey Spiva
  */
 public abstract class DefinitionPropertySupport extends PropertySupport
 {

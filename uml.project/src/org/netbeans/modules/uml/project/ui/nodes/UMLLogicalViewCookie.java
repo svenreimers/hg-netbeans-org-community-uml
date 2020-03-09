@@ -53,7 +53,6 @@ import org.openide.nodes.Node;
 
 /**
  *
- * @author Mike
  */
 public interface UMLLogicalViewCookie extends Node.Cookie {
 	

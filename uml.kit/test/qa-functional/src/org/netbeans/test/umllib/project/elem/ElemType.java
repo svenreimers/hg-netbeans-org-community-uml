@@ -56,7 +56,6 @@ package org.netbeans.test.umllib.project.elem;
 
 /**
  *
- * @author andromeda
  */
 
 

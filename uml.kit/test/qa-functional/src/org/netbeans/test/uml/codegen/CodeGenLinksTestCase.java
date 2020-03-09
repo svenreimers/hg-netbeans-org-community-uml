@@ -76,7 +76,6 @@ import org.netbeans.test.umllib.project.verifier.elem.TextElementVerifier;
 
 /**
  *
- * @author Alexandr Scherbatiy
  */
 
 

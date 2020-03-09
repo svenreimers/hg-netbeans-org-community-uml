@@ -78,7 +78,6 @@ import org.netbeans.test.umllib.util.LibProperties;
 
 /**
  * This is operator for link palette
- * @author Sherry Zhou
  */
 public class LinkPaletteOperator extends ContainerOperator {
 

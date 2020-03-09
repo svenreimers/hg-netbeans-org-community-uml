@@ -67,7 +67,6 @@ import org.netbeans.test.umllib.testcases.UMLTestCase;
 
 /**
  *
- * @author psb
  * @spec UML/ComponentDiagram.xml
  */
 public class PlaceAndNameElements extends UMLTestCase {

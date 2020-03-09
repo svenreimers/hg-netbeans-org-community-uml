@@ -54,7 +54,6 @@ package org.netbeans.test.umllib.exceptions;
 
 /**
  *
- * @author Alexandr Scherbatiy
  */
 public class UnexpectedElementSelectionException extends UMLCommonException {
     

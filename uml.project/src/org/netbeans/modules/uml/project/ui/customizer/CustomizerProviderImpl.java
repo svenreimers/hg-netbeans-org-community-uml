@@ -76,7 +76,6 @@ import org.openide.util.lookup.Lookups;
 
 /** Customization of UML project
  *
- * @author Mike Frisino
  */
 public class CustomizerProviderImpl implements CustomizerProvider
 {

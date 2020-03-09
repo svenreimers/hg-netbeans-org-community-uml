@@ -76,7 +76,6 @@ import org.openide.util.Exceptions;
  
 /**
  *
- * @author Sherry Zhou
  */
 
 

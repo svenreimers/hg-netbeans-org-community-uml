@@ -56,7 +56,6 @@ import org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeWorkspace;
 
 /**
  * 
- * @author Trey Spiva
  */
 public class NBNodeFactory implements ProjectTreeNodeFactory
 {

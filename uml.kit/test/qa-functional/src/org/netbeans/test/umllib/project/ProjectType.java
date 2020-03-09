@@ -56,7 +56,6 @@ import org.netbeans.test.umllib.util.LabelsAndTitles;
 
 /**
  *
- * @author Alexandr Scherbatiy
  */
 
 public enum ProjectType {

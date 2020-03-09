@@ -78,7 +78,6 @@ import org.openide.util.Mutex;
 import org.openide.util.MutexException;
 
 /**
- * @author Mike Frisino
  */
 public class UMLProjectProperties 
 {

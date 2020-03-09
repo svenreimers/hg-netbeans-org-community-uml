@@ -59,7 +59,6 @@ import org.openide.util.NbBundle;
 
 /** Implementation of standard customizer dialog.
  *
- * @author Petr Hrebejk
  */
 public class CustomizerDialog {
     

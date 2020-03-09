@@ -71,7 +71,6 @@ import org.netbeans.test.umllib.project.verifier.elem.TextElementVerifier;
 
 /**
  *
- * @author sunflower
  */
 public class CodeGenGenericLinksTestCase extends CodeGenerationTestCase{
  

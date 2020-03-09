@@ -93,7 +93,6 @@ import org.netbeans.modules.uml.ui.support.diagramsupport.ProxyDiagramManager;
 
 /**
  *
- * @author Trey Spiva
  */
 public class NetBeansUMLProjectTreeModel extends ProjectTreeModelAdapter
 	implements ISCMEventsSink

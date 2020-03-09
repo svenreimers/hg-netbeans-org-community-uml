@@ -57,7 +57,6 @@ import org.netbeans.jemmy.operators.JPopupMenuOperator;
  * This is common interface for visisble 
  * actionable elements. Actionable means that you may select element,
  * invke popup menu. DiagramElements, Links, Compartments are actionable
- * @author Alexei Mokeev
  */
 public interface Actionable {
     public void select();

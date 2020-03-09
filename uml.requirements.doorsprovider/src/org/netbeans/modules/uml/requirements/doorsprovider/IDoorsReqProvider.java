@@ -54,7 +54,6 @@ import org.netbeans.modules.uml.core.coreapplication.IDesignCenterSupport;
 
 /**
  *
- * @author  Trey Spiva
  */
 public interface IDoorsReqProvider extends IDesignCenterSupport
 {

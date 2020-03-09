@@ -58,7 +58,6 @@ import org.netbeans.test.umllib.ElementTypes;
 
 /**
  *
- * @author Alexei Mokeev
  */
 public class UsecaseDiagramVerifier extends AbstractDiagramVerifier{
     //String[] elements =

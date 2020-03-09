@@ -68,7 +68,6 @@ import org.netbeans.test.umllib.exceptions.NotFoundException;
 /**
  * This class handles all toolbars now. 
  * Later them must be splitted for palettes
- * @author Alexei Mokeev
  * @see qa.uml.util.LibProperties
  */
 public class DiagramToolbarOperator {

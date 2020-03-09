@@ -64,7 +64,6 @@ import org.netbeans.jellytools.nodes.Node;
 
 /**
  *
- * @author Alexandr Scherbatiy
  */
 
 

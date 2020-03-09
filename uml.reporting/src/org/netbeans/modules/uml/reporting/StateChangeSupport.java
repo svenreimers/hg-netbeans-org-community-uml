@@ -53,7 +53,6 @@ import org.openide.util.*;
 
 /**
  *
- * @author whd
  */
 public class StateChangeSupport {
 

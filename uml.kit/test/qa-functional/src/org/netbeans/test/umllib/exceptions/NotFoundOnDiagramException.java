@@ -51,7 +51,6 @@ import org.netbeans.test.umllib.ExpandedElementTypes;
 
 /**
  * Thrown when expected element can't be found on diagram
- * @author Sergey Petrov
  */
 public class NotFoundOnDiagramException extends NotFoundException{
     

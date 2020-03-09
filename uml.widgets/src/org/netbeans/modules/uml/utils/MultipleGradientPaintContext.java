@@ -71,8 +71,6 @@ import java.lang.ref.WeakReference;
  * functionality.  Subclasses only have to deal with using the gradient to fill
  * pixels in a raster.
  *
- * @author Nicholas Talian, Vincent Hardy, Jim Graham, Jerry Evans
- * @author <a href="mailto:vincent.hardy@eng.sun.com">Vincent Hardy</a>
  * @version $Id: MultipleGradientPaintContext.java,v 1.1.2.2 2007/11/19 23:54:03 sherylsu Exp $
  */
 abstract class MultipleGradientPaintContext implements PaintContext

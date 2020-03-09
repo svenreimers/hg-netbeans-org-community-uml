@@ -51,7 +51,6 @@ import org.openide.util.Lookup;
 
 /**
  *
- * @author Trey Spiva
  */
 public class PackageImportNode extends UMLModelElementNode
 {

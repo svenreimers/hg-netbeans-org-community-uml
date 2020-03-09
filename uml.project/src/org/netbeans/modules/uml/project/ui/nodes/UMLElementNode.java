@@ -93,7 +93,6 @@ import org.openide.nodes.ChildFactory;
 
 /**
  *
- * @author Trey Spiva
  */
 public class UMLElementNode extends AbstractModelElementNode
         implements ITreeItem, CookieSet.Factory, Comparable {

@@ -47,7 +47,6 @@ package org.netbeans.test.umllib.exceptions;
 
 /**
  *
- * @author Sergey Petrov
  */
 public class NotFoundInPaletteException extends NotFoundException{
     

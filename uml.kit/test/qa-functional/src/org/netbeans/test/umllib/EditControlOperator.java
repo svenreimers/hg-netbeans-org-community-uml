@@ -64,7 +64,6 @@ import org.netbeans.modules.uml.ui.controls.editcontrol.EditControlImpl;
 
 /**
  * class handles current EditControl
- * @author psb
  */
 public class EditControlOperator extends JComponentOperator {
     

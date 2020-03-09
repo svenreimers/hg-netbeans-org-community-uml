@@ -87,7 +87,6 @@ import org.netbeans.test.umllib.util.*;
 
 /**
  *
- * @author psb
  * @spec uml/DesignPatterns
  */
 public class PromoteDesignPattern extends UMLTestCase {

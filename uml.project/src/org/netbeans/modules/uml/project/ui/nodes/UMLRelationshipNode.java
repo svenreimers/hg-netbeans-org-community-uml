@@ -54,7 +54,6 @@ import org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeRelElement;
 
 /**
  *
- * @author Trey Spiva
  */
 public class UMLRelationshipNode extends UMLModelElementNode implements ITreeRelElement
 {

@@ -55,7 +55,6 @@ import org.netbeans.modules.uml.project.ui.NetBeansUMLProjectTreeModel;
 
 /**
  *
- * @author Trey Spiva
  */
 public class UMLChildren extends Children.Array
 {

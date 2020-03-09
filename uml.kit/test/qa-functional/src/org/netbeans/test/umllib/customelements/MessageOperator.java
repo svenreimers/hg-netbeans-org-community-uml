@@ -61,7 +61,6 @@ import org.netbeans.test.umllib.exceptions.NotFoundException;
 
 /**
  *
- * @author sunflower, Sherry Zhou
  */
 
 

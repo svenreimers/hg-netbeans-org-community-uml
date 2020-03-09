@@ -11,7 +11,6 @@ import org.openide.util.NbBundle;
 
 /**
  *
- * @author  Sheryl Su
  */
 public class ImportedElementDeletePanel extends javax.swing.JPanel {
     

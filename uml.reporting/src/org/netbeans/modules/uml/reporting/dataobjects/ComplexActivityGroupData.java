@@ -51,7 +51,6 @@ import org.openide.util.NbBundle;
 
 /**
  *
- * @author Sheryl
  */
 public class ComplexActivityGroupData extends ActivityGroupData
 {

@@ -49,7 +49,6 @@ import org.netbeans.modules.uml.core.metamodel.infrastructure.DerivationClassifi
 
 /**
  *
- * @author Sheryl
  */
 public class DerivationClassifierData extends ClassData
 {

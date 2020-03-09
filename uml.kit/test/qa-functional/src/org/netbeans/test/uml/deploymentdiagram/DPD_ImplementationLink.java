@@ -69,7 +69,6 @@ import org.netbeans.test.umllib.vrf.LinkVerifier;
 
 /**
  *
- * @author yaa
  * @spec UML/DeploymentDiagram.xml
  */
 public class DPD_ImplementationLink extends UMLTestCase {

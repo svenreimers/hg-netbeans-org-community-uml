@@ -50,7 +50,6 @@ import org.netbeans.modules.uml.propertysupport.nodes.CustomPropertyEditor;
 
 /**
  *
- * @author Sheryl
  */
 public interface Customizer
 {
