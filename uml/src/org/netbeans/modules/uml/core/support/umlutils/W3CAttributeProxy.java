@@ -65,7 +65,6 @@ import org.w3c.dom.Node;
 
 /**
  *
- * @author Administrator
  */
 public class W3CAttributeProxy extends W3CNodeProxy  implements Attr, Attribute
 {    

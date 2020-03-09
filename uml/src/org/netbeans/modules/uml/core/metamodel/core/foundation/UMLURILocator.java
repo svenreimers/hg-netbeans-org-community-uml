@@ -52,7 +52,6 @@ import org.netbeans.modules.uml.core.support.umlsupport.PathManip;
 import org.netbeans.modules.uml.core.support.umlsupport.URILocator;
 
 /**
- * @author sumitabhk
  *
  */
 public class UMLURILocator extends URILocator

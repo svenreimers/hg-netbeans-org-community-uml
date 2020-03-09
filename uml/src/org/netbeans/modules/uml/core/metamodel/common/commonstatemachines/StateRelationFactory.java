@@ -53,7 +53,6 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.RelationshipEvent
 import org.netbeans.modules.uml.core.metamodel.core.foundation.TypedFactoryRetriever;
 
 /**
- * @author Aztec
  */
 public class StateRelationFactory implements IStateRelationFactory
 {

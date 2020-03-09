@@ -50,7 +50,6 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.IPresentationElem
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 /**
- * @author KevinM
  * Used to build lists of drawEngines that match the type drawEngineType.
  */
 public class ETDrawEngineTypesMatchVistor implements IETGraphObjectVisitor

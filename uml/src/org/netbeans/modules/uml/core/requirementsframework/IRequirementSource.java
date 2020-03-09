@@ -52,7 +52,6 @@ package org.netbeans.modules.uml.core.requirementsframework;
 
 /**
  *
- * @author  Trey Spiva
  */
 public interface IRequirementSource
 {

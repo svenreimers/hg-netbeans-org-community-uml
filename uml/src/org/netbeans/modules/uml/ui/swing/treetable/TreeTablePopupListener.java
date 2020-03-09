@@ -55,7 +55,6 @@ import java.awt.event.MouseEvent;
 import javax.swing.SwingUtilities;
 
 /**
- * @author sumitabhk
  *
  */
 public class TreeTablePopupListener extends MouseAdapter

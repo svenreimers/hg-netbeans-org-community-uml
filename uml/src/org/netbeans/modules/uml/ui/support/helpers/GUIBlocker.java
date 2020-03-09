@@ -51,7 +51,6 @@ import org.netbeans.modules.uml.core.metamodel.diagrams.IDiagram;
 import org.netbeans.modules.uml.ui.support.helpers.IGUIBlocker.GBK;
 
 /**
- * @author brettb
  *
  */
 public class GUIBlocker implements IGUIBlocker

@@ -61,7 +61,6 @@ import org.netbeans.modules.uml.core.support.umlsupport.Log;
 import org.openide.util.NbPreferences;
 
 /**
- * @author sumitabhk
  *
  */
 public class WSElementImpl implements IWSElement

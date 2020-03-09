@@ -51,7 +51,6 @@ import java.util.Hashtable;
 import org.netbeans.modules.uml.core.support.umlsupport.PreventReEntrance;
 
 /**
- * @author sumitabhk
  *
  */
 public class PreventReEntranceByValue extends PreventReEntrance

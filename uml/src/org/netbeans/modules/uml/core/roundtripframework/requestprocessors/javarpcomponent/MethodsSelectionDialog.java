@@ -70,7 +70,6 @@ import org.netbeans.modules.uml.ui.swing.SelectableLabel;
 import org.netbeans.modules.uml.ui.swing.commondialogs.JCenterDialog;
 
 /**
- * @author Aztec
  *
  * Window - Preferences - Java - Code Generation - Code and Comments
  */

@@ -55,7 +55,6 @@ import org.netbeans.modules.uml.core.metamodel.basic.basicactions.IPin;
 import org.netbeans.modules.uml.core.metamodel.basic.basicactions.Pin;
 
 /**
- * @author Aztec
  */
 public class ParameterUsageNode extends ObjectNode
                                 implements IParameterUsageNode

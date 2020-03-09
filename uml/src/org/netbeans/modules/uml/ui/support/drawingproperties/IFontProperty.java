@@ -53,7 +53,6 @@ package org.netbeans.modules.uml.ui.support.drawingproperties;
 import java.awt.Font;
 
 /**
- * @author sumitabhk
  *
  *
  */

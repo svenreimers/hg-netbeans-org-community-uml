@@ -58,7 +58,6 @@ import org.netbeans.modules.uml.ui.swing.pulldownbutton.JPullDownButton;
 
 /**
  *
- * @author Trey Spiva
  */
 public class BasicPullDownButtonBorder extends AbstractBorder
 {

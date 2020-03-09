@@ -55,7 +55,6 @@ import javax.swing.event.ListSelectionListener;
 import javax.swing.tree.DefaultTreeSelectionModel;
 
 /**
- * @author sumitabhk
  *
  */
 /**

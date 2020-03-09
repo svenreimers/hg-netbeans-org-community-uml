@@ -50,7 +50,6 @@ import javax.swing.Action;
 
 /**
  *
- * @author Trey Spiva
  */
 public interface IPulldownAction extends Action
 {

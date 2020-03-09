@@ -46,7 +46,6 @@
 /*
  *
  * Created on Jul 1, 2003
- * @author Trey Spiva
  */
 package org.netbeans.modules.uml.ui.swing.commondialogs;
 
@@ -84,7 +83,6 @@ import org.openide.awt.Mnemonics;
 
 /**
  * 
- * @author Trey Spiva
  */
 public class SwingQuestionDialogImpl implements IQuestionDialog
 {

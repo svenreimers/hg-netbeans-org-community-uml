@@ -52,7 +52,6 @@ import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure
 
 
 /**
- * @author sumitabhk
  *
  */
 public class AssociationEndRelEventsHelper extends RelationshipEventsHelper

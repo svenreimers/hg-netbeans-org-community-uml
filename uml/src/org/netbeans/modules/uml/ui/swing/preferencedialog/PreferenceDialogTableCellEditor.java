@@ -70,7 +70,6 @@ import org.netbeans.modules.uml.ui.swing.preferencedialog.JPreferenceDialogTable
 import org.netbeans.modules.uml.ui.swing.treetable.JDescribeDotButton;
 
 /**
- * @author sumitabhk
  *
  */
 public class PreferenceDialogTableCellEditor extends AbstractCellEditor 

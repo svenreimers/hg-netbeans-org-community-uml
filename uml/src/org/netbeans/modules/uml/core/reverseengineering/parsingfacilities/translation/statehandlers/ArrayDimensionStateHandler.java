@@ -55,7 +55,6 @@ import org.dom4j.Node;
 import org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ITokenDescriptor;
 
 /**
- * @author Aztec
  */
 public class ArrayDimensionStateHandler extends StateHandler
 {

@@ -60,7 +60,6 @@ import org.openide.filesystems.FileUtil;
 
 
 /**
- * @author sumitabhk
  *
  */
 public class CreationFactory implements ICreationFactory {    

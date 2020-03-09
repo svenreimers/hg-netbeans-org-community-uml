@@ -73,7 +73,6 @@ import java.awt.Image;
 import org.netbeans.modules.uml.core.support.Debug;
 
 /**
- * @author treys
  *
  */
 public class ProjectTreeRender extends DefaultTreeCellRenderer implements TreeCellRenderer

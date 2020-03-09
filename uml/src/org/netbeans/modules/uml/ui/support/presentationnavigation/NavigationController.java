@@ -87,7 +87,6 @@ import org.netbeans.modules.uml.ui.support.applicationmanager.IProduct;
 //import org.netbeans.modules.uml.ui.swing.drawingarea.IDrawingAreaSelectionEventsSink;
 
 /**
- * @author sumitabhk
  *
  * TODO: meteora 
  */

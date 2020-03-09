@@ -59,7 +59,6 @@ import org.netbeans.modules.uml.core.support.umlsupport.XMLManip;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 /**
- * @author Aztec
  */
 public class UseCaseDetail extends NamedElement implements IUseCaseDetail
 {

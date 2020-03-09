@@ -66,7 +66,6 @@ import org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframe
 import org.netbeans.modules.uml.core.reverseengineering.reintegration.REIntegrationUtil;
 
 /**
- * @author Aztec
  *
  * Window - Preferences - Java - Code Generation - Code and Comments
  */

@@ -55,7 +55,6 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 /**
  *
- * @author  Trey Spiva
  */
 public class Requirement implements IRequirement
 {

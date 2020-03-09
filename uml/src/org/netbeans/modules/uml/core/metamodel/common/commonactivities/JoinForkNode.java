@@ -52,7 +52,6 @@ package org.netbeans.modules.uml.core.metamodel.common.commonactivities;
 import org.dom4j.Document;
 import org.dom4j.Node;
 /**
- * @author Aztec
  */
 public class JoinForkNode extends JoinNode implements IJoinForkNode
 {

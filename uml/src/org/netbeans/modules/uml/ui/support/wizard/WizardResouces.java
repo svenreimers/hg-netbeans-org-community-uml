@@ -51,7 +51,6 @@ import java.util.ResourceBundle;
 
 /**
  *
- * @author Trey Spiva
  */
 public class WizardResouces
 {

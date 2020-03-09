@@ -52,7 +52,6 @@ package org.netbeans.modules.uml.core.metamodel.common.commonactions;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 /**
- * @author Aztec
  */
 public interface IConditionalAction extends ICompositeAction
 {

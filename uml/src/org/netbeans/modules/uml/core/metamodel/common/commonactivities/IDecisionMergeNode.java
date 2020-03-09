@@ -50,7 +50,6 @@
 package org.netbeans.modules.uml.core.metamodel.common.commonactivities;
 
 /**
- * @author Aztec
  */
 public interface IDecisionMergeNode extends IDecisionNode, IMergeNode
 {

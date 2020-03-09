@@ -46,7 +46,6 @@
 package org.netbeans.modules.uml.ui.support.messaging;
 
 /**
- * @author brettb
  *
  *
  */

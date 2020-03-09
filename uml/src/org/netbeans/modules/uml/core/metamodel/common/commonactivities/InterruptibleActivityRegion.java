@@ -55,7 +55,6 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.ElementCollector;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 /**
- * @author Aztec
  */
 public class InterruptibleActivityRegion extends ActivityGroup
                                          implements IInterruptibleActivityRegion

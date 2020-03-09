@@ -110,7 +110,6 @@ import javax.swing.tree.TreeModel;
  * JFilterDialog is the swing implementation of the IProjectTreeFilterDialog
  * interface.
  *
- * @author Trey Spiva
  * @see IProjectTreeFilterDialog
  * @see #createRootNode(org.netbeans.modules.uml.ui.controls.projecttree.IFilterItem)
  * @see #createRootNode(java.lang.String)
@@ -613,7 +612,6 @@ public class JFilterDialog extends JCenterDialog implements IFilterDialog {
      * changes.  If the user did not change the value of the IFilterItem then
      * the item will not be updated.
      *
-     * @author Trey Spiva
      * @see IFilterItem
      */
     protected class FilterNode extends DefaultMutableTreeNode implements IFilterNode {

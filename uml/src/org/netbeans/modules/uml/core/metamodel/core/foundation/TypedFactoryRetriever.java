@@ -50,7 +50,6 @@ import org.dom4j.Node;
 import org.netbeans.modules.uml.core.support.umlsupport.XMLManip;
 
 /**
- * @author sumitabhk
  *
  */
 public class TypedFactoryRetriever < T >

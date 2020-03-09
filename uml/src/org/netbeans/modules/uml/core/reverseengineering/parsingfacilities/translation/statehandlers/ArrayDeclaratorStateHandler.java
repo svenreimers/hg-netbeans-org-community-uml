@@ -57,7 +57,6 @@ import org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframe
 import org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityRange;
 
 /**
- * @author Aztec
  */
 public class ArrayDeclaratorStateHandler extends StateHandler
 {

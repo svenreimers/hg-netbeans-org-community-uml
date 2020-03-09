@@ -46,7 +46,6 @@
 /*
  *
  * Created on Jun 10, 2003
- * @author Trey Spiva
  */
 package org.netbeans.modules.uml.ui.swing.projecttree;
 
@@ -62,7 +61,6 @@ import org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeItem;
 
 /**
  * 
- * @author Trey Spiva
  */
 public interface ISwingProjectTreeModel extends TreeModel, IProjectTreeModel
 {

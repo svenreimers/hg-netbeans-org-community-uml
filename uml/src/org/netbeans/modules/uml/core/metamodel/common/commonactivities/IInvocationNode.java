@@ -54,7 +54,6 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 /**
- * @author Aztec
  */
 public interface IInvocationNode extends IActivityNode
 {

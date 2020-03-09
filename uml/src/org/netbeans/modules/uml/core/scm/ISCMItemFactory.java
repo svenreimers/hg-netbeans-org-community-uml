@@ -52,7 +52,6 @@ import org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem;
 /**
  * Provides creation facilities for the various ISCMItem types.
  *
- * @author Trey Spiva
  */
 public interface ISCMItemFactory
 {

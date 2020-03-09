@@ -56,7 +56,6 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 /**
  *
- * @author  Trey Spiva
  */
 public interface IRequirement extends Node.Cookie
 {

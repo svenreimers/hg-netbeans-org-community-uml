@@ -57,7 +57,6 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.ElementCollector;
 import org.netbeans.modules.uml.core.metamodel.basic.basicactions.PrimitiveAction;
 
 /**
- * @author Aztec
  */
 public class ReadSelfAction extends PrimitiveAction implements IReadSelfAction
 {

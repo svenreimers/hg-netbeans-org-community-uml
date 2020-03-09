@@ -50,7 +50,6 @@ import org.netbeans.modules.uml.core.support.umlsupport.ProductRetriever;
 import org.openide.util.NbBundle;
 
 /**
- * @author sumitabhk
  *
  */
 public class PreferenceAccessor implements IPreferenceAccessor{

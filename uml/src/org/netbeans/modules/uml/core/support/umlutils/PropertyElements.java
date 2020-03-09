@@ -53,7 +53,6 @@ import java.util.Vector;
 import org.netbeans.modules.uml.common.generics.ETPairT;
 
 /**
- * @author jingmingm
  *
  */
 public class PropertyElements

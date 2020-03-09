@@ -55,7 +55,6 @@ import javax.swing.text.Document;
 
 /**
  *
- * @author Trey Spiva
  */
 public class JFixedSizeTextArea extends JTextArea
 {

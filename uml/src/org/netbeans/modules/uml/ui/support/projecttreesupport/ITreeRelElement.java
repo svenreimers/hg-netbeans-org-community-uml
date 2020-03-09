@@ -46,13 +46,11 @@
 /*
  *
  * Created on Jun 12, 2003
- * @author Trey Spiva
  */
 package org.netbeans.modules.uml.ui.support.projecttreesupport;
 
 /**
  *
- * @author Trey Spiva
  */
 public interface ITreeRelElement extends ITreeElement
 {

@@ -49,7 +49,6 @@ import org.dom4j.Document;
 import org.dom4j.Node;
 
 /**
- * @author sumitabhk
  *
  */
 public class Abstraction extends Dependency implements IAbstraction{

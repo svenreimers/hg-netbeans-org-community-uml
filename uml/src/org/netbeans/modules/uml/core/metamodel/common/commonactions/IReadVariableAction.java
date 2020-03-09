@@ -52,7 +52,6 @@ package org.netbeans.modules.uml.core.metamodel.common.commonactions;
 import org.netbeans.modules.uml.core.metamodel.basic.basicactions.IOutputPin;
 
 /**
- * @author Aztec
  */
 public interface IReadVariableAction extends IVariableAction
 {

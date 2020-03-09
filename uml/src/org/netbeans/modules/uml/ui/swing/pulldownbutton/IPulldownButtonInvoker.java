@@ -50,7 +50,6 @@ import javax.swing.JComponent;
 
 /**
  *
- * @author Trey Spiva
  */
 public interface IPulldownButtonInvoker
 {

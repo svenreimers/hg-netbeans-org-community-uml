@@ -54,7 +54,6 @@ import org.netbeans.modules.uml.core.preferenceframework.IPreferenceAccessor;
 import org.netbeans.modules.uml.core.preferenceframework.PreferenceAccessor;
 
 /**
- * @author sumitabhk
  *
  */
 public class FileManip {

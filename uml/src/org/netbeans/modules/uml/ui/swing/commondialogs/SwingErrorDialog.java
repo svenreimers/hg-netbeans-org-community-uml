@@ -46,7 +46,6 @@
 /*
  *
  * Created on Jul 1, 2003
- * @author Trey Spiva
  */
 package org.netbeans.modules.uml.ui.swing.commondialogs;
 
@@ -82,7 +81,6 @@ import org.netbeans.modules.uml.ui.support.messaging.IMessenger;
 
 /**
  * 
- * @author Trey Spiva
  */
 public class SwingErrorDialog implements IErrorDialog
 {

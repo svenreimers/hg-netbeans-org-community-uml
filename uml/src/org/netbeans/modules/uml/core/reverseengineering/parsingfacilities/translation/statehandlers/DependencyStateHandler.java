@@ -59,7 +59,6 @@ import org.netbeans.modules.uml.core.reverseengineering.reframework.IDependencyE
 import org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ITokenDescriptor;
 
 /**
- * @author Aztec
  */
 public class DependencyStateHandler extends TopLevelStateHandler
 {

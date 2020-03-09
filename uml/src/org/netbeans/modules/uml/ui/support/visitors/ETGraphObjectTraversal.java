@@ -32,7 +32,6 @@ import java.util.Iterator;
 import java.util.List;
 
 /**
- * @author KevinM
  * Traverses the graphs nodes, edges, nodeLabels and edgeLabels.
  * Please note you should only use this in non destructive operations. 
  */

@@ -69,7 +69,6 @@ import org.netbeans.modules.uml.core.support.umlutils.InvalidArguments;
 
 /**
  *
- * @author sumitabhk
  */
 public class WSProjectImpl extends WSElementImpl implements IWSProject
 {
@@ -923,7 +922,6 @@ public class WSProjectImpl extends WSElementImpl implements IWSProject
     * <br/>
     * This method was formerly called <code>EnsureWorkspaceState</code>.
     *
-    * @author aztec
     */
    protected void markWorkspaceDirty()
    {

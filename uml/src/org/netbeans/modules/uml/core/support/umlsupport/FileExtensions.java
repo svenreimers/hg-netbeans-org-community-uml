@@ -46,7 +46,6 @@ package org.netbeans.modules.uml.core.support.umlsupport;
 
 /**
  *
- * @author Trey Spiva
  */
 public interface FileExtensions
 {

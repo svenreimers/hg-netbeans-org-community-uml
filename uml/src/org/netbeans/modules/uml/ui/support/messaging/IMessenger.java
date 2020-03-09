@@ -49,7 +49,6 @@ package org.netbeans.modules.uml.ui.support.messaging;
 import org.netbeans.modules.uml.core.coreapplication.ICoreMessenger;
 
 /**
- * @author sumitabhk
  *
  *
  */

@@ -87,7 +87,6 @@ import org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeItem;
 
 
 /**
- * @author treys
  *
  */
 //public class JProjectTree extends JTree implements IProjectTreeControl

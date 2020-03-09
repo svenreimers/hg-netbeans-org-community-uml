@@ -57,7 +57,6 @@ import org.openide.util.NbBundle;
 
 /**
  *
- * @author  Sheryl
  */
 public class RequirementProviderPanel extends javax.swing.JPanel
 {

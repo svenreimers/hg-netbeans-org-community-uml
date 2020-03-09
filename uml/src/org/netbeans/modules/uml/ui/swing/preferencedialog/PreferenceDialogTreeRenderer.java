@@ -70,7 +70,6 @@ import org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeItem;
 
 
 /**
- * @author treys
  *
  */
 public class PreferenceDialogTreeRenderer extends DefaultTreeCellRenderer implements TreeCellRenderer

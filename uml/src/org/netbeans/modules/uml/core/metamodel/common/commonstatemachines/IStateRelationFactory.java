@@ -50,7 +50,6 @@
 package org.netbeans.modules.uml.core.metamodel.common.commonstatemachines;
 
 /**
- * @author Aztec
  */
 public interface IStateRelationFactory
 {

@@ -53,7 +53,6 @@ import org.netbeans.modules.uml.core.eventframework.EventManager;
 import org.netbeans.modules.uml.core.eventframework.EventFunctor;
 
 /**
- * @author sumitabhk
  *
  */
 public class WorkspaceEventDispatcher extends EventDispatcher

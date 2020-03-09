@@ -56,7 +56,6 @@ import org.w3c.dom.NodeList;
 
 /**
  *
- * @author Owner
  */
 
 public class IndentingParser {

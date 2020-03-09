@@ -50,7 +50,6 @@ import java.util.Iterator;
 import java.util.List;
 
 /**
- * @author KevinM
  *
  */
 public class ETFilteredArrayList<TypeName, desiredType> extends ETArrayList<TypeName>{

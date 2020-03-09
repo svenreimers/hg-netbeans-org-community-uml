@@ -50,7 +50,6 @@
 package org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpcomponent;
 
 /**
- * @author avaneeshj
  *
  * Window - Preferences - Java - Code Generation - Code and Comments
  */

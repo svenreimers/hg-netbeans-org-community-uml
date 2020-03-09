@@ -65,7 +65,6 @@ import org.netbeans.modules.uml.ui.products.ad.application.action.BaseAction;
 
 /**
  *
- * @author Trey Spiva
  */
 //public class TestBedMenuManager extends ContributionManager implements IMenuManager
 public class TestBedMenuManager implements IMenuManager

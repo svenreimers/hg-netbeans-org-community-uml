@@ -66,7 +66,6 @@ import org.netbeans.modules.uml.core.support.umlutils.IPropertyElement;
 import org.netbeans.modules.uml.ui.swing.propertyeditor.PropertyEditor;
 
 /**
- * @author sumitabhk
  *
  */
 public class JDescribeButton extends JPanel implements ActionListener

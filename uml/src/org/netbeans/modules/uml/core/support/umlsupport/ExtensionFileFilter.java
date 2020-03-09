@@ -50,7 +50,6 @@ import java.io.FilenameFilter;
 
 /**
  *
- * @author Trey Spiva
  */
 public class ExtensionFileFilter implements FilenameFilter, FileFilter
 {

@@ -53,7 +53,6 @@ import org.netbeans.modules.uml.core.eventframework.IEventPayload;
 import org.netbeans.modules.uml.core.support.umlsupport.IResultCell;
 
 /**
- * @author sumitabhk
  */
 public class ActivityEventDispatcher extends EventDispatcher
    implements IActivityEventDispatcher

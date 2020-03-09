@@ -46,7 +46,6 @@
 /*
  *
  * Created on Jun 12, 2003
- * @author Trey Spiva
  */
 package org.netbeans.modules.uml.ui.support.projecttreesupport;
 
@@ -90,7 +89,6 @@ import org.netbeans.modules.uml.ui.support.diagramsupport.ProxyDiagramManager;
 
 /**
  * 
- * @author Trey Spiva
  */
 public class ProjectTreeBuilderImpl implements IProjectTreeBuilder
 {

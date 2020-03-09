@@ -54,7 +54,6 @@ import javax.swing.tree.DefaultMutableTreeNode;
 import javax.swing.tree.TreeNode;
 
 /**
- * @author sumitabhk
  *
  */
 public class JDefaultMutableTreeNode extends DefaultMutableTreeNode

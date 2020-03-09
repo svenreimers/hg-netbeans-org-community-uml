@@ -50,7 +50,6 @@
 package org.netbeans.modules.uml.core.metamodel.common.commonactivities;
 
 /**
- * @author Aztec
  */
 public class ControlNode extends ActivityNode implements IControlNode
 {

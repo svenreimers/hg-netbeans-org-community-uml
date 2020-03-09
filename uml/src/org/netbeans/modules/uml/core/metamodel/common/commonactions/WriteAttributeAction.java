@@ -54,7 +54,6 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.ElementCollector;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.IValueSpecification;
 
 /**
- * @author Aztec
  */
 public class WriteAttributeAction
     extends AttributeAction

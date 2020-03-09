@@ -53,7 +53,6 @@ package org.netbeans.modules.uml.core.requirementsframework;
 /**
  * The ISatisfier associates a model wielment with a requirements.
  *
- * @author  Trey Spiva
  */
 public interface ISatisfier
 {

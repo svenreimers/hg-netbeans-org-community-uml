@@ -70,7 +70,6 @@ import org.netbeans.modules.uml.core.support.umlutils.PropertyElementXML;
 import org.netbeans.modules.uml.ui.support.DispatchHelper;
 
 /**
- * @author sumitabhk
  *
  */
 public class PreferenceManager implements IPreferenceManager2{

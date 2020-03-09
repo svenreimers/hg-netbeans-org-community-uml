@@ -53,7 +53,6 @@ import org.netbeans.modules.uml.core.metamodel.basic.basicactions.IOutputPin;
 
 
 /**
- * @author Aztec
  */
 public interface IReadAttributeAction extends IAttributeAction
 {

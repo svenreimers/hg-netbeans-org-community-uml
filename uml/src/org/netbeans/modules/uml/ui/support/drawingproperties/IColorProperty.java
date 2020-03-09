@@ -51,7 +51,6 @@
 package org.netbeans.modules.uml.ui.support.drawingproperties;
 
 /**
- * @author sumitabhk
  *
  *
  */

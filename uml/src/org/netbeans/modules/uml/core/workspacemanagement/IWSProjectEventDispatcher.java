@@ -50,7 +50,6 @@ import org.netbeans.modules.uml.core.support.umlutils.InvalidArguments;
 
 /**
  *
- * @author Trey Spiva
  */
 public interface IWSProjectEventDispatcher extends IEventDispatchHelper
 {

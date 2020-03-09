@@ -52,7 +52,6 @@ package org.netbeans.modules.uml.core.metamodel.common.commonactivities;
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ISignal;
 
 /**
- * @author Aztec
  */
 public interface ISignalNode extends IObjectNode
 {

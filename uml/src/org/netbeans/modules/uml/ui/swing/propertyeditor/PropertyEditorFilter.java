@@ -70,7 +70,6 @@ import org.netbeans.modules.uml.core.support.umlsupport.XMLManip;
 import org.netbeans.modules.uml.ui.support.ProductHelper;
 
 /**
- * @author sumitabhk
  *
  */
 public class PropertyEditorFilter

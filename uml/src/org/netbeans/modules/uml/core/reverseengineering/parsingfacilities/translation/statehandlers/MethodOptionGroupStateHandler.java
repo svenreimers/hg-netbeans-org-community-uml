@@ -53,7 +53,6 @@ package org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.trans
 import org.dom4j.Node;
 
 /**
- * @author Aztec
  */
 public class MethodOptionGroupStateHandler extends ElseConditionalStateHandler
 {

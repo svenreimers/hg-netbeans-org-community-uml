@@ -51,7 +51,6 @@ import java.io.IOException;
 import java.net.URI;
 
 /**
- * @author sumitabhk
  *
  */
 public class PathManip

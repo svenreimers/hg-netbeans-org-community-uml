@@ -46,7 +46,6 @@
 /*
  *
  * Created on Jun 13, 2003
- * @author Trey Spiva
  */
 package org.netbeans.modules.uml.ui.support.projecttreesupport;
 
@@ -54,7 +53,6 @@ import org.netbeans.modules.uml.core.metamodel.diagrams.IProxyDiagram;
 
 /**
  *
- * @author Trey Spiva
  */
 public interface ITreeDiagram extends ITreeItem
 {

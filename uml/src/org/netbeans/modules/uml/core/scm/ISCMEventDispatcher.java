@@ -55,7 +55,6 @@ import org.netbeans.modules.uml.core.eventframework.IEventPayload;
 
 /**
  *
- * @author  Trey Spiva
  */
 public interface ISCMEventDispatcher extends IEventDispatcher
 {

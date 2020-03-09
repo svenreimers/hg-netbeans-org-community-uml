@@ -48,7 +48,6 @@ package org.netbeans.modules.uml.core.metamodel.core.foundation;
 
 /**
  *
- * @author Trey Spiva
  */
 public class ProjectMissingException extends Exception
 {

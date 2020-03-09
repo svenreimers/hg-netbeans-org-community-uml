@@ -60,7 +60,6 @@ import org.netbeans.modules.uml.ui.swing.plaf.basic.BasicPullDownButtonUI;
 
 /**
  *
- * @author Trey Spiva
  */
 public class JPullDownButton extends AbstractButton
 {

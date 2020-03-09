@@ -56,7 +56,6 @@ import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ISignal;
 
 /**
- * @author aztec
  *
  */
 public class SignalEvent extends Event implements ISignalEvent

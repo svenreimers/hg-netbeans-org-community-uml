@@ -63,7 +63,6 @@ import java.io.File;
  * Each project source root has a identifier.  To convert an absolute path
  * to a relative path a source root identifier in placed in the relative path.
  *
- * @author Trey Spiva
  */
 public interface IAssociatedProjectSourceRoots
 {  

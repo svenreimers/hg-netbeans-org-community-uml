@@ -67,7 +67,6 @@ import org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframe
 import org.netbeans.modules.uml.core.support.umlsupport.XMLManip;
 
 /**
- * @author Aztec
  */
 public class MethodLoopStateHandler extends MethodCompositeStateHandler
 {

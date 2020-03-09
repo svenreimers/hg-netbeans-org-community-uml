@@ -63,7 +63,6 @@ import org.netbeans.modules.uml.ui.controls.projecttree.ProjectTreeDiagramNode;
 import org.netbeans.modules.uml.ui.controls.projecttree.TreeElementNode;
 
 /**
- * @author sumitabhk
  *
  */
 public class ProjectTreeCellEditor implements TreeCellEditor

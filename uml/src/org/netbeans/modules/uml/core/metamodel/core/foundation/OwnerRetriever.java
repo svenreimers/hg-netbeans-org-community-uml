@@ -47,7 +47,6 @@ package org.netbeans.modules.uml.core.metamodel.core.foundation;
 
 
 /**
- * @author sumitabhk
  *
  */
 public class OwnerRetriever <Type> {

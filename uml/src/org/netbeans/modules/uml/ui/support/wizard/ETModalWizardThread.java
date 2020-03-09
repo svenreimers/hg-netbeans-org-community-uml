@@ -59,7 +59,6 @@ import java.awt.Frame;
 
 
 /**
- * @author KevinM
  *
  */
 public abstract class ETModalWizardThread
@@ -92,7 +91,6 @@ public abstract class ETModalWizardThread
 
    /*
     * 
-    * @author KevinM
     *
     * This class watches for componenet to be moved and it repaints the 
     * parent frame windows, when the component is hidden it reenables the frame window so it will except input.

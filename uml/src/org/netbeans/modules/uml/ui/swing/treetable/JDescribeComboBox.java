@@ -63,7 +63,6 @@ import org.netbeans.modules.uml.common.ETSystem;
 import org.netbeans.modules.uml.ui.swing.propertyeditor.PropertyEditor;
 
 /**
- * @author sumitabhk
  *
  */
 public class JDescribeComboBox extends JComboBox

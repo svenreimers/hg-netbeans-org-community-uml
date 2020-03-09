@@ -87,7 +87,6 @@ import org.netbeans.modules.uml.ui.swing.commondialogs.SwingErrorDialog;
 import org.netbeans.modules.uml.ui.swing.commondialogs.SwingQuestionDialogImpl;
 
 /**
- * @author sumitabhk
  *
  */
 public class PreferenceDialogUI extends JCenterDialog

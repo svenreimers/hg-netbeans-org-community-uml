@@ -117,7 +117,6 @@ import java.io.IOException;
 import org.dom4j.Node;
 
 /**
- * @author brettb
  *
  */
 public class DataReporter

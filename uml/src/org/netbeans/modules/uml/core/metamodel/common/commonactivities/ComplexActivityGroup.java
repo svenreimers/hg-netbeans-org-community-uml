@@ -55,7 +55,6 @@ import org.dom4j.Node;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 /**
- * @author Aztec
  */
 public class ComplexActivityGroup extends IterationActivityGroup implements IComplexActivityGroup
 {

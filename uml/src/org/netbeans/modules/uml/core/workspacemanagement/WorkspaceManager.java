@@ -51,7 +51,6 @@ import org.netbeans.modules.uml.core.support.umlsupport.Validator;
 import org.netbeans.modules.uml.core.support.umlsupport.XMLManip;
 import org.netbeans.modules.uml.core.support.umlutils.InvalidArguments;
 /**
- * @author sumitabhk
  *
  */
 public class WorkspaceManager implements IWorkspaceManager

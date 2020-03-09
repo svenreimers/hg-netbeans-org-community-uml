@@ -62,7 +62,6 @@ import org.netbeans.modules.uml.ui.swing.preferencedialog.ISwingPreferenceTableM
 
 
 /**
- * @author sumitabhk
  *
  */
 public class FindTableModel extends AbstractTableModel implements ISwingPreferenceTableModel

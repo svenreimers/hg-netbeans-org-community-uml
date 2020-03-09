@@ -56,7 +56,6 @@ import org.netbeans.modules.uml.core.metamodel.basic.basicactions.IOutputPin;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.ElementCollector;
 
 /**
- * @author Aztec
  */
 public class ReadAttributeAction
     extends AttributeAction

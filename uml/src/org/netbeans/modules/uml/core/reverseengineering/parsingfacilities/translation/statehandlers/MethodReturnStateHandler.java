@@ -62,7 +62,6 @@ import org.netbeans.modules.uml.core.reverseengineering.reframework.ReturnEvent;
 import org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ITokenDescriptor;
 
 /**
- * @author Aztec
  */
 public class MethodReturnStateHandler extends MethodDetailStateHandler
 {

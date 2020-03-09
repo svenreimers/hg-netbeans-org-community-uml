@@ -53,7 +53,6 @@ import java.util.logging.Logger;
 import org.openide.filesystems.FileUtil;
 
 /**
- * @author sumitabhk
  *
  */
 public class Validator {

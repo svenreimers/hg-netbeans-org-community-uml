@@ -62,7 +62,6 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 import org.netbeans.modules.uml.ui.support.DispatchHelper;
 
 /**
- * @author Aztec
  */
 public class ActivityEdge extends RedefinableElement implements IActivityEdge, IExpressionListener
 {

@@ -49,7 +49,6 @@ package org.netbeans.modules.uml.ui.support.visitors;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.IPresentationElement;
 
 /**
- * @author KevinM
  *
  * Search the diagram for the matching XMIID.
  */

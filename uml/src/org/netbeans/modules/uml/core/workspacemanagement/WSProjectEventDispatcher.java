@@ -51,7 +51,6 @@ import org.netbeans.modules.uml.core.support.umlutils.InvalidArguments;
 
 /**
  *
- * @author Trey Spiva
  */
 public class WSProjectEventDispatcher extends EventDispatchHelper
 	implements IWSProjectEventDispatcher

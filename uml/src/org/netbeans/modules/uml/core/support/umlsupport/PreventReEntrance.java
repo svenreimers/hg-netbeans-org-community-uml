@@ -50,7 +50,6 @@ package org.netbeans.modules.uml.core.support.umlsupport;
  * used by sending in the address of a member or static variable of the object
  * or function.
  *
- * @author sumitabhk
  */
 public class PreventReEntrance
 {

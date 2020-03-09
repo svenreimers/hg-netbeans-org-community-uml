@@ -51,7 +51,6 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.IPresentationElem
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 /**
- * @author KevinM
  *
  *	If any graphObject firstSubject model element is the same as the input model element,
  * it's presentation element gets appended to the list.

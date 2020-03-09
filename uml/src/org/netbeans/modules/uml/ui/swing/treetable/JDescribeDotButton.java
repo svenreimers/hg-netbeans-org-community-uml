@@ -67,7 +67,6 @@ import org.netbeans.modules.uml.core.support.umlutils.IPropertyElement;
 import org.netbeans.modules.uml.ui.swing.preferencedialog.PreferenceDialogUI;
 
 /**
- * @author sumitabhk
  *
  */
 public class JDescribeDotButton extends JPanel implements ActionListener

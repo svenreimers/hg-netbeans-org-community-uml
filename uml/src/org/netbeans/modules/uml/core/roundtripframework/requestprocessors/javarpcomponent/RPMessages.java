@@ -56,7 +56,6 @@ import java.util.ResourceBundle;
 import org.netbeans.modules.uml.ui.support.commonresources.CommonResources;
 
 /**
- * @author Aztec
  */
 public class RPMessages extends CommonResources
 {

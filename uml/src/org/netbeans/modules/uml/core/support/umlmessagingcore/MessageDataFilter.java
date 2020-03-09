@@ -66,7 +66,6 @@ import org.netbeans.modules.uml.core.support.umlutils.ETArrayList;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 /**
- * @author aztec
  *
  */
 public class MessageDataFilter implements IMessageDataFilter

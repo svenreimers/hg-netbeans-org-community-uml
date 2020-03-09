@@ -147,7 +147,6 @@ import org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeItem;
 //import org.netbeans.modules.uml.ui.support.viewfactorysupport.ICompartment;
 
 /**
- * @author sumitabhk
  *
  */
 public class PropertyEditor extends JPanel implements IPropertyEditor, ActionListener

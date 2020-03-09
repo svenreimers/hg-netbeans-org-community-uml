@@ -50,7 +50,6 @@ import javax.swing.JOptionPane;
 /**
  * A set of debug utilities.
  *
- * @author Trey Spiva
  */
 public class Debug extends DebugSupport
 {

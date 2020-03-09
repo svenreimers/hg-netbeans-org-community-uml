@@ -45,7 +45,6 @@
 package org.netbeans.modules.uml.core.support.umlsupport;
 
 /**
- * @author sumitabhk
  *
  */
 public interface ICustomValidator

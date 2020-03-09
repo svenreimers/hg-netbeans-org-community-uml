@@ -46,7 +46,6 @@
 /*
  *
  * Created on Jun 25, 2003
- * @author Trey Spiva
  */
 package org.netbeans.modules.uml.ui.swing.projecttree;
 
@@ -81,7 +80,6 @@ import org.netbeans.modules.uml.ui.support.ADTransferable;
  * and Drop Tutorial</a>.
  * 
  * @see ADTransferable
- * @author Trey Spiva
  */
 public class ProjectTreeTransferHandler extends TransferHandler 
   implements FileExtensions

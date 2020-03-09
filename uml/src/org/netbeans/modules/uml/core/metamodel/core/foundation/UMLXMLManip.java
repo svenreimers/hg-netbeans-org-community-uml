@@ -97,7 +97,6 @@ import org.openide.filesystems.FileUtil;
  * <p>Description: </p>
  * <p>Copyright: Copyright (c) 2003</p>
  * <p>Company: </p>
- * @author not attributable
  * @version 1.0
  */
 
@@ -2898,7 +2897,6 @@ public class UMLXMLManip
     * project file. If the DTD file does not exist at that location, it will
     * be created.
     *
-    * @author aztec
     * @param fileName The absolute file name of the project file.
     * @return true if the DTD file exists, else false if the file could
     *         not be created for some reason.

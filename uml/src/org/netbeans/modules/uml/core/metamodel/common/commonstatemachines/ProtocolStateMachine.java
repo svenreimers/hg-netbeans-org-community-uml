@@ -53,7 +53,6 @@ import org.dom4j.Node;
 
 
 /**
- * @author aztec
  *
  */
 public class ProtocolStateMachine extends StateMachine

@@ -66,7 +66,6 @@ import org.netbeans.modules.uml.core.reverseengineering.reframework.TestEvent;
 import org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ITokenDescriptor;
 
 /**
- * @author Aztec
  */
 public class MethodCriticalSectionStateHandler
     extends MethodCompositeStateHandler

@@ -55,7 +55,6 @@ import java.awt.Cursor;
 import java.awt.Frame;
 
 /**
- * @author KevinM
  *
  * Displays the hourglass curor on the main window until stop is called.
  */

@@ -52,7 +52,6 @@ package org.netbeans.modules.uml.core.metamodel.common.commonactions;
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavior;
 
 /**
- * @author Aztec
  */
 public interface IPrimitiveFunction extends IBehavior
 {

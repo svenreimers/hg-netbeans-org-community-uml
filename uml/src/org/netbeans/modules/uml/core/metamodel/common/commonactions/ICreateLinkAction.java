@@ -50,7 +50,6 @@
 package org.netbeans.modules.uml.core.metamodel.common.commonactions;
 
 /**
- * @author Aztec
  */
 public interface ICreateLinkAction extends IWriteLinkAction
 {

@@ -53,7 +53,6 @@ import org.netbeans.modules.uml.core.metamodel.basic.basicactions.IPrimitiveActi
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 /**
- * @author Aztec
  */
 public interface ILinkAction extends IPrimitiveAction
 {

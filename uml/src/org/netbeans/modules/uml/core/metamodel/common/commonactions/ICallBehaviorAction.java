@@ -53,7 +53,6 @@ import org.netbeans.modules.uml.core.metamodel.basic.basicactions.IBehaviorInvoc
 import org.netbeans.modules.uml.core.metamodel.basic.basicactions.IPrimitiveAction;
 
 /**
- * @author Aztec
  */
 public interface ICallBehaviorAction extends IPrimitiveAction, IBehaviorInvocation
 {

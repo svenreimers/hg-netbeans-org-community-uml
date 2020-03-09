@@ -52,7 +52,6 @@ package org.netbeans.modules.uml.core.metamodel.common.commonactivities;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.IValueSpecification;
 
 /**
- * @author Aztec
  */
 public interface IIterationActivityGroup extends IStructuredActivityGroup
 {

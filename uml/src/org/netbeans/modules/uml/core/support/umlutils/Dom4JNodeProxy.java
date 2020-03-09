@@ -72,7 +72,6 @@ import org.w3c.dom.NodeList;
 
 /**
  *
- * @author Trey Spiva
  */
 public class Dom4JNodeProxy implements org.dom4j.Element
 {

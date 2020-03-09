@@ -62,7 +62,6 @@ import org.netbeans.modules.uml.core.support.umlsupport.Log;
 
 import org.dom4j.Node;
 /**
- * @author avaneeshj
  *
  * To change the template for this generated type comment go to
  * Window - Preferences - Java - Code Generation - Code and Comments

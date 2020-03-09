@@ -51,7 +51,6 @@ import javax.swing.JPopupMenu;
 
 /**
  *
- * @author Trey Spiva
  */
 public class PopupMenuInvoker implements IPulldownButtonInvoker
 {

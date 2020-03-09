@@ -55,7 +55,6 @@ import org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframe
 /**
  * The SCM facility that plugs into the facilitiy manager.
  *
- * @author  Trey Spiva
  */
 public interface ISCMFactory extends IFacility
 {

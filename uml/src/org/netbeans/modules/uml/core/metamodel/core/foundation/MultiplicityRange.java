@@ -54,7 +54,6 @@ import org.openide.util.NbBundle;
 import org.openide.util.NbPreferences;
 
 /**
- * @author sumitabhk
  *
  */
 public class MultiplicityRange extends Element implements IMultiplicityRange

@@ -53,7 +53,6 @@ import org.netbeans.modules.uml.core.eventframework.EventFunctor;
 import java.util.ArrayList;
 
 /**
- * @author sumitabhk
  *
  */
 public class PreferenceManagerEventDispatcher extends EventDispatcher implements IPreferenceManagerEventDispatcher

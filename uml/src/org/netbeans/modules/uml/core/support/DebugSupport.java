@@ -64,9 +64,6 @@ import javax.xml.transform.stream.StreamResult;
 
 /**
  *
- * @author	Todd Fast, todd.fast@sun.com
- * @author	Matt Stevens, matthew.stevens@sun.com
- * @author	Mike Frisino, michael.frisino@sun.com
  */
 /*public */class DebugSupport extends Object
 {

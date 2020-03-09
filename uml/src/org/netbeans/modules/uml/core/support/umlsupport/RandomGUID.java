@@ -46,7 +46,6 @@ package org.netbeans.modules.uml.core.support.umlsupport;
 /*
  * RandomGUID
  * @version 1.2.1 11/05/02
- * @author Marc A. Mnich
  *
  * From www.JavaExchange.com, Open Software licensing
  *

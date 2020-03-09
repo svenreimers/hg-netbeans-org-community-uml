@@ -48,7 +48,6 @@ import org.dom4j.Document;
 import org.dom4j.Node;
 
 /**
- * @author sumitabhk
  *
  */
 public class LiteralString extends LiteralSpecification implements ILiteralString

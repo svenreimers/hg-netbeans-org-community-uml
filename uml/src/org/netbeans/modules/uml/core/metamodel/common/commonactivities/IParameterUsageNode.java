@@ -52,7 +52,6 @@ package org.netbeans.modules.uml.core.metamodel.common.commonactivities;
 import org.netbeans.modules.uml.core.metamodel.basic.basicactions.IPin;
 
 /**
- * @author Aztec
  */
 public interface IParameterUsageNode extends IObjectNode, IPin
 {

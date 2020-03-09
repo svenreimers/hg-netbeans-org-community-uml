@@ -54,7 +54,6 @@ import org.netbeans.modules.uml.core.metamodel.basic.basicactions.IPrimitiveActi
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAssociation;
 
 /**
- * @author Aztec
  */
 public interface IClearAssociationAction extends IPrimitiveAction
 {

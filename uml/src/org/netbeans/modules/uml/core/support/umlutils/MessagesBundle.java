@@ -56,7 +56,6 @@ import java.util.ResourceBundle;
 /**
  * Resource bundle wrapper.
  *
- * @author Aztec
  */
 public class MessagesBundle
 {

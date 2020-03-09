@@ -62,7 +62,6 @@ import org.dom4j.Node;
 
 /**
  *
- * @author  Trey Spiva
  */
 public class ProxyElement implements IProxyElement
 {

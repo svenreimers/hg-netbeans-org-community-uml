@@ -94,7 +94,6 @@ import org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeHandled;
 import org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem;
 
 /**
- * @author sumitabhk
  *
  */
 public class PropertyEditorEventsSink

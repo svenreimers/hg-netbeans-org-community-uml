@@ -46,7 +46,6 @@
 package org.netbeans.modules.uml.core.support.umlmessagingcore;
 
 /**
- * @author sumitabhk
  *
  */
 public class ThermCtrl

@@ -55,7 +55,6 @@ import org.netbeans.modules.uml.core.support.umlsupport.XMLManip;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 /**
- * @author sumitabhk
  *
  */
 public class ElementChangeDispatchHelper extends EventDispatchHelper implements IElementChangeDispatchHelper{

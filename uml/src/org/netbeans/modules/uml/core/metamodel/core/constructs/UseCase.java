@@ -57,7 +57,6 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.TypedFactoryRetri
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 /**
- * @author Aztec
  */
 public class UseCase extends BehavioredClassifier implements IUseCase
 {

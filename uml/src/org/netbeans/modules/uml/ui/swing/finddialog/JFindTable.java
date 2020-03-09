@@ -74,7 +74,6 @@ import org.netbeans.modules.uml.ui.swing.preferencedialog.ISwingPreferenceTableM
 
 
 /**
- * @author sumitabhk
  *
  */
 public class JFindTable extends JTable

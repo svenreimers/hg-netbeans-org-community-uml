@@ -54,7 +54,6 @@ import org.netbeans.modules.uml.core.metamodel.basic.basicactions.IPrimitiveActi
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier;
 
 /**
- * @author Aztec
  */
 public interface ICreateObjectAction extends IPrimitiveAction
 {

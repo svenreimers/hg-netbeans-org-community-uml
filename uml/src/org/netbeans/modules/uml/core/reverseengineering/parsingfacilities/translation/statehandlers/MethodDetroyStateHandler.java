@@ -59,7 +59,6 @@ import org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.Symbol
 import org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ITokenDescriptor;
 
 /**
- * @author Aztec
  */
 public class MethodDetroyStateHandler extends MethodDetailStateHandler
 {

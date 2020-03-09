@@ -55,7 +55,6 @@ import java.awt.Frame;
 
 /**
  *
- * @author  Trey Spiva
  */
 public interface IReqProviderDialog
 {

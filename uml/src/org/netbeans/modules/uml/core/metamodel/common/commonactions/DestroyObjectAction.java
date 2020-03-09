@@ -57,7 +57,6 @@ import org.netbeans.modules.uml.core.metamodel.basic.basicactions.PrimitiveActio
 import org.netbeans.modules.uml.core.metamodel.core.foundation.ElementCollector;
 
 /**
- * @author Aztec
  */
 public class DestroyObjectAction
     extends PrimitiveAction

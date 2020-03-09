@@ -53,7 +53,6 @@ package org.netbeans.modules.uml.ui.support.drawingproperties;
 import org.netbeans.modules.uml.common.generics.ETPairT;
 
 /**
- * @author sumitabhk
  *
  *
  */

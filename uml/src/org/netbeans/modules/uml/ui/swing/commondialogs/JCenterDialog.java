@@ -69,7 +69,6 @@ import org.openide.windows.WindowManager;
 
 /**
  *
- * @author Trey Spiva
  */
 public class JCenterDialog extends JDialog
 {

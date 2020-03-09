@@ -53,7 +53,6 @@ package org.netbeans.modules.uml.core.requirementsframework;
 /**
  * A requirements exception that also keeps track of the specific cause of the
  * exception.
- * @author  Trey Spiva
  */
 public class RequirementsException extends Exception
 {

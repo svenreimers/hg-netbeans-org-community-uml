@@ -49,7 +49,6 @@ import org.netbeans.modules.uml.ui.support.SimpleQuestionDialogKind;
 
 /**
  *
- * @author  Thuy
  */
 public class SimplePickListDialog extends javax.swing.JPanel
 {

@@ -65,7 +65,6 @@ import org.openide.windows.TopComponent;
 
 
 /**
- * @author sumitabhk
  *
  */
 public class PropertyEditorCollisionHandler extends NameCollisionHandler implements IPropertyEditorCollisionHandler

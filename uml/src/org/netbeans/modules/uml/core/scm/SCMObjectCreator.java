@@ -53,7 +53,6 @@ package org.netbeans.modules.uml.core.scm;
 import org.openide.cookies.InstanceCookie;
 
 /**
- * @author thumilank
  *
  * TODO To change the template for this generated type comment go to
  * Window - Preferences - Java - Code Style - Code Templates

@@ -59,7 +59,6 @@ import org.netbeans.modules.uml.common.generics.ETPairT;
 import org.netbeans.modules.uml.ui.support.commondialogs.IPromptDialog;
 
 /**
- * @author sumitabhk
  *
  */
 public class SwingPromptDialog extends JCenterDialog implements IPromptDialog

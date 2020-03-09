@@ -52,7 +52,6 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 import org.netbeans.modules.uml.ui.support.DispatchHelper;
 
 /**
- * @author sumitabhk
  *
  */
 public class Constraint extends AutonomousElement implements IConstraint, IExpressionListener{

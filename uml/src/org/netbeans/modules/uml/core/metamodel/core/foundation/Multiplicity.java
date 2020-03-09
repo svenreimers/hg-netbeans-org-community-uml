@@ -55,7 +55,6 @@ import org.netbeans.modules.uml.core.support.umlsupport.XMLManip;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 /**
- * @author sumitabhk
  *
  */
 public class Multiplicity extends Element implements IMultiplicity, ITransitionElement

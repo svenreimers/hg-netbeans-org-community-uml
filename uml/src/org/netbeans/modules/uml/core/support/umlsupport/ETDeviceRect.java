@@ -51,7 +51,6 @@ import java.awt.Rectangle;
 import org.netbeans.modules.uml.core.support.Debug;
 
 /**
- * @author brettb
  *
  */
 public class ETDeviceRect extends Rectangle implements IETRect

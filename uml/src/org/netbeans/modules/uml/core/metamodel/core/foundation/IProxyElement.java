@@ -49,7 +49,6 @@ package org.netbeans.modules.uml.core.metamodel.core.foundation;
  * A proxy used in the place of a model element.  The proxy element allow us
  * to interact with a model element without pinging the model element in memory.
  *
- * @author  Trey Spiva
  */
 public interface IProxyElement
 {

@@ -63,7 +63,6 @@ import org.netbeans.modules.uml.ui.support.ProductHelper;
 /**
  *  Provides basic logging services for Describe IDE integrations.
  *
- * @author Sumitabh Kansal
  */
 public class Log
 {

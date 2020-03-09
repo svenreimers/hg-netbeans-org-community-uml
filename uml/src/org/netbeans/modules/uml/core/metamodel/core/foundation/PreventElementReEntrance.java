@@ -48,7 +48,6 @@ package org.netbeans.modules.uml.core.metamodel.core.foundation;
 import java.util.Hashtable;
 
 /**
- * @author sumitabhk
  */
 public class PreventElementReEntrance {
 

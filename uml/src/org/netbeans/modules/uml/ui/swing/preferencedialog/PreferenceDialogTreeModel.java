@@ -65,7 +65,6 @@ import org.dom4j.Node;
 import org.dom4j.XPath;
 
 /**
- * @author treys
  *
  */
 public class PreferenceDialogTreeModel implements ISwingPreferenceDialogModel

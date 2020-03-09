@@ -63,7 +63,6 @@ import javax.swing.tree.TreeCellRenderer;
 import javax.swing.tree.TreeModel;
 
 /**
- * @author sumitabhk
  *
  */
 /**

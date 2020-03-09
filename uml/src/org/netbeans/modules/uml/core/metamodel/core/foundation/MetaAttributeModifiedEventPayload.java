@@ -48,7 +48,6 @@ package org.netbeans.modules.uml.core.metamodel.core.foundation;
 import org.netbeans.modules.uml.core.eventframework.EventPayload;
 
 /**
- * @author sumitabhk
  *
  */
 public class MetaAttributeModifiedEventPayload extends EventPayload

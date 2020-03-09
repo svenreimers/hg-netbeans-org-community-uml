@@ -70,7 +70,6 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 
 /**
- * @author Aztec
  */
 public class ExpressionStateHandler extends StateHandler
 {

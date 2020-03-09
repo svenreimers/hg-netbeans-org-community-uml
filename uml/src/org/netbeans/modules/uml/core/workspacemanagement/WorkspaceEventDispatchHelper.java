@@ -48,7 +48,6 @@ import org.netbeans.modules.uml.core.eventframework.EventDispatchHelper;
 import org.netbeans.modules.uml.core.eventframework.IEventPayload;
 import org.netbeans.modules.uml.core.support.umlutils.InvalidArguments;
 /**
- * @author sumitabhk
  *
  */
 public class WorkspaceEventDispatchHelper extends EventDispatchHelper

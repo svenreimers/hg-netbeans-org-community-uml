@@ -46,7 +46,6 @@
 /*
  *
  * Created on Jun 11, 2003
- * @author Trey Spiva
  */
 package org.netbeans.modules.uml.ui.support.projecttreesupport;
 
@@ -56,7 +55,6 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.IElement;
 
 /**
  *
- * @author Trey Spiva
  */
 public interface ITreeElement extends ITreeItem
 {

@@ -59,7 +59,6 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.UMLXMLManip;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 /**
- * @author Aztec
  */
 public class LoopAction extends CompositeAction implements ILoopAction
 {

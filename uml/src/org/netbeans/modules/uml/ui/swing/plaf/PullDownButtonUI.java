@@ -50,7 +50,6 @@ import javax.swing.plaf.ButtonUI;
 
 /**
  *
- * @author Trey Spiva
  */
 public class PullDownButtonUI extends ButtonUI
 {

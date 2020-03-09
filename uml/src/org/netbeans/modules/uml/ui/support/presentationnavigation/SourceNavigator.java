@@ -67,7 +67,6 @@ import org.netbeans.modules.uml.core.scm.ISCMItemGroup;
 import org.netbeans.modules.uml.core.scm.ISCMOptions;
 
 /**
- * @author sumitabhk
  *
  *
  */

@@ -61,7 +61,6 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.UMLXMLManip;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 /**
- * @author Aztec
  */
 public class InvocationNode extends ActivityNode implements IInvocationNode
 {

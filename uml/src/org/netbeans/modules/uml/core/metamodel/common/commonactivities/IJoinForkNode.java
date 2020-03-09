@@ -50,7 +50,6 @@
 package org.netbeans.modules.uml.core.metamodel.common.commonactivities;
 
 /**
- * @author Aztec
  */
 public interface IJoinForkNode extends IJoinNode, IForkNode
 {

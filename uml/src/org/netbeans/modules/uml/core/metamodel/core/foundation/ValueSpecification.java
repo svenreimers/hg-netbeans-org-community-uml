@@ -46,7 +46,6 @@
 package org.netbeans.modules.uml.core.metamodel.core.foundation;
 
 /**
- * @author sumitabhk
  *
  */
 public class ValueSpecification extends Element implements IValueSpecification{

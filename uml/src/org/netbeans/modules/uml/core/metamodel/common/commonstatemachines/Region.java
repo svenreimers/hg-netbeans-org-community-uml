@@ -57,7 +57,6 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.Namespace;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 /**
- * @author aztec
  *
  */
 public class Region extends Namespace implements IRegion

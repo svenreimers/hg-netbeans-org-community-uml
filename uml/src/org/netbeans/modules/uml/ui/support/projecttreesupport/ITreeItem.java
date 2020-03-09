@@ -46,7 +46,6 @@
 /*
  *
  * Created on Jun 11, 2003
- * @author Trey Spiva
  */
 package org.netbeans.modules.uml.ui.support.projecttreesupport;
 
@@ -58,7 +57,6 @@ import org.openide.nodes.Node;
 
 /**
  *
- * @author Trey Spiva
  */
 public interface ITreeItem extends Node.Cookie
 {

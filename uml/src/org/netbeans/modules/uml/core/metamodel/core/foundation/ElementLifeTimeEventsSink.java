@@ -49,7 +49,6 @@ import org.netbeans.modules.uml.common.ETSystem;
 import org.netbeans.modules.uml.core.support.umlsupport.IResultCell;
 
 /**
- * @author sumitabhk
  *
  */
 public class ElementLifeTimeEventsSink implements IElementLifeTimeEventsSink{

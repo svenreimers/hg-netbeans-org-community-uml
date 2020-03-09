@@ -74,7 +74,6 @@ import org.openide.loaders.DataObject;
 
 /**
  *
- * @author  Trey Spiva
  */
 public class RequirementsManager /*extends AddInManagerImpl*/ implements IRequirementsManager
 {

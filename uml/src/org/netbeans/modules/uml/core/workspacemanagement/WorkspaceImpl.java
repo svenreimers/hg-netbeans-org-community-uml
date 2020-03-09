@@ -67,7 +67,6 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 import org.netbeans.modules.uml.core.support.umlutils.InvalidArguments;
 
 /**
- * @author sumitabhk
  *
  */
 public class WorkspaceImpl extends WSProjectImpl implements IWorkspace

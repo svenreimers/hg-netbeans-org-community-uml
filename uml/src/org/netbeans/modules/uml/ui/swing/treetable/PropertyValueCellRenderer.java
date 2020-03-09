@@ -71,7 +71,6 @@ import org.netbeans.modules.uml.core.support.umlutils.IPropertyDefinition;
 import org.netbeans.modules.uml.core.support.umlutils.IPropertyElement;
 
 /**
- * @author sumitabhk
  *
  */
 public class PropertyValueCellRenderer extends DefaultTableCellRenderer

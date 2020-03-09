@@ -55,7 +55,6 @@ import org.dom4j.Node;
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.Behavior;
 
 /**
- * @author Aztec
  */
 public class PrimitiveFunction extends Behavior implements IPrimitiveFunction
 {

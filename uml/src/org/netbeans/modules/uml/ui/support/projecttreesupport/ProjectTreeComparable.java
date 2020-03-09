@@ -50,7 +50,6 @@ import java.util.Comparator;
 /**
  * The comparable class used to sort the project tree contents.
  *
- * @author Trey Spiva
  */
 public class ProjectTreeComparable implements Comparator
 {

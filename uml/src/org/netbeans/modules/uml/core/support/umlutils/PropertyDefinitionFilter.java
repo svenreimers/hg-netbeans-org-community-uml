@@ -59,7 +59,6 @@ import org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframe
 import org.netbeans.modules.uml.core.support.umlsupport.XMLManip;
 
 /**
- * @author sumitabhk
  *
  */
 public class PropertyDefinitionFilter implements IPropertyDefinitionFilter

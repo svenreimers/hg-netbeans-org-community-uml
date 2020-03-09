@@ -56,7 +56,6 @@ import antlr.RecognitionException;
 import org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ILanguageParser;
 
 /**
- * @author aztec
  */
 public interface IREJavaParser extends ILanguageParser
 {

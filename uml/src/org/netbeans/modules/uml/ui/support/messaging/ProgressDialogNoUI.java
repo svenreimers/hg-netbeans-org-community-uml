@@ -49,7 +49,6 @@ import org.netbeans.modules.uml.common.generics.ETPairT;
 import org.netbeans.modules.uml.core.support.Debug;
 
 /**
- * @author brettb
  *
  * The progress dialog is used to allow code to call the progress dialog
  * without actually seeing a dialog box UI.

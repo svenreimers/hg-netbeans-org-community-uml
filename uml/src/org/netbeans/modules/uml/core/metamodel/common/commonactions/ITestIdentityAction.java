@@ -54,7 +54,6 @@ import org.netbeans.modules.uml.core.metamodel.basic.basicactions.IOutputPin;
 import org.netbeans.modules.uml.core.metamodel.basic.basicactions.IPrimitiveAction;
 
 /**
- * @author Aztec
  */
 public interface ITestIdentityAction extends IPrimitiveAction
 {

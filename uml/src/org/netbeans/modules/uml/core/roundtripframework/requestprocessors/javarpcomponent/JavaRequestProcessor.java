@@ -885,7 +885,6 @@ public class JavaRequestProcessor implements IJavaRequestProcessor
     
     /*
      *
-     * @author ads
      * Fix for #5083683
      */
     public void onFeaturePreMoved(IClassifier classifier, IFeature feature,

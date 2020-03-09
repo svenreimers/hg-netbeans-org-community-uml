@@ -60,7 +60,6 @@ package org.netbeans.modules.uml.ui.support.helpers;
 import org.netbeans.modules.uml.ui.support.helpers.IGUIBlocker.GBK;
 
 /**
- * @author brettb
  *
  */
 public class UserInputBlocker

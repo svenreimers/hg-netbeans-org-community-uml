@@ -54,7 +54,6 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.ElementCollector;
 
 
 /**
- * @author Aztec
  */
 public class VariableAction extends PrimitiveAction implements IVariableAction
 {

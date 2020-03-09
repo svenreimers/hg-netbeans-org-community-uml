@@ -54,7 +54,6 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.IElement;
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAssociationEnd;
 
 /**
- * @author Aztec
  */
 public interface ILinkEndData extends IElement
 {

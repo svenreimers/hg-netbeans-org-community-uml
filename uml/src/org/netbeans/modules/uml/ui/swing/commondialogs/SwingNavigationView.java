@@ -69,7 +69,6 @@ import org.openide.util.NbBundle;
 
 /**
  *
- * @author  Thuy
  */
 public class SwingNavigationView extends javax.swing.JPanel
 {

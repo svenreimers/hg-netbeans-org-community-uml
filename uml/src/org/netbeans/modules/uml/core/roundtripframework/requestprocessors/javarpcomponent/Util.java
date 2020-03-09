@@ -44,7 +44,6 @@
 /*
  * Util.java
  *
- * @author nn136682
  */
 package org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpcomponent;
 

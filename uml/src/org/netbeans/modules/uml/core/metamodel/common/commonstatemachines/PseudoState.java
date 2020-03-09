@@ -55,7 +55,6 @@ import org.dom4j.Node;
 import org.netbeans.modules.uml.core.metamodel.core.primitivetypes.IPseudostateKind;
 
 /**
- * @author Aztec
  */
 public class PseudoState extends StateVertex implements IPseudoState
 {

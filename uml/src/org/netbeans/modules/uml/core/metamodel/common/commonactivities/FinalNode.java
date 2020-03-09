@@ -51,7 +51,6 @@ package org.netbeans.modules.uml.core.metamodel.common.commonactivities;
 
 
 /**
- * @author Aztec
  */
 public class FinalNode extends ControlNode implements IFinalNode
 {

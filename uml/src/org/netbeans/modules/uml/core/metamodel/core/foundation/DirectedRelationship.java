@@ -48,7 +48,6 @@ package org.netbeans.modules.uml.core.metamodel.core.foundation;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 /**
- * @author sumitabhk
  *
  */
 public class DirectedRelationship extends Relationship implements IDirectedRelationship{

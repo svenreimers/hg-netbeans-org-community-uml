@@ -69,7 +69,6 @@ import org.netbeans.modules.uml.ui.swing.propertyeditor.PropertyEditor;
 
 
 /**
- * @author sumitabhk
  *
  */
 public class PropertyTreeTableModel implements TreeTableModel

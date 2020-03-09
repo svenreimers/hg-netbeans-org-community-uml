@@ -70,7 +70,6 @@ import org.netbeans.modules.uml.ui.swing.commondialogs.SwingQuestionDialogImpl;
 import org.openide.util.NbPreferences;
 
 /**
- * @author Aztec
  */
 public class RequestProcessorUtilities implements IRequestProcessorUtilities
 {

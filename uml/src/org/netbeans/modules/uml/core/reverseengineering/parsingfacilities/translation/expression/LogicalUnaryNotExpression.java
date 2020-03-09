@@ -52,7 +52,6 @@ import org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframe
  * The LogicalUnaryNotExpression is used to represent a logical expression.
  *
  * <code>Example: -1</code>
- * @author Trey Spiva
  */
 public class LogicalUnaryNotExpression extends PreUnaryExpression
 {

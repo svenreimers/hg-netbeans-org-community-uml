@@ -46,7 +46,6 @@
 /*
  *
  * Created on Jul 3, 2003
- * @author Trey Spiva
  */
 package org.netbeans.modules.uml.ui.swing.projecttree;
 
@@ -66,7 +65,6 @@ import javax.swing.tree.TreePath;
  * will take precidence.  PreserveTreeState must be a member of the tree control
  * order to perserve multiple states correctly.
  * 
- * @author Trey Spiva
  */
 public class PreserveTreeState
 {

@@ -56,7 +56,6 @@ package org.netbeans.modules.uml.ui.swing.testbed.addin.menu;
 import javax.swing.JSeparator;
 /**
  *
- * @author Jyothi
  */
 public class Separator extends TestBedMenuManager {
 

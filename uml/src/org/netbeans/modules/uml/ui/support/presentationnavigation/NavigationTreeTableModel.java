@@ -72,7 +72,6 @@ import org.netbeans.modules.uml.ui.swing.treetable.TreeTableModel;
 
 
 /**
- * @author sumitabhk
  *
  */
 public class NavigationTreeTableModel implements TreeTableModel

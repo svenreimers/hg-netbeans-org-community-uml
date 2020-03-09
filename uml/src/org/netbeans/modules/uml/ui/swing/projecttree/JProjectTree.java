@@ -163,7 +163,6 @@ import org.openide.util.Exceptions;
 import org.openide.util.NbBundle;
 
 /**
- * @author treys
  *
  */
 public class JProjectTree extends ApplicationView implements IProjectTreeControl

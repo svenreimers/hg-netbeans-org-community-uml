@@ -48,7 +48,6 @@ package org.netbeans.modules.uml.ui.support.visitors;
 
 
 /**
- * @author KevinM
  *
  */
 public interface IETGraphObjectVisitor

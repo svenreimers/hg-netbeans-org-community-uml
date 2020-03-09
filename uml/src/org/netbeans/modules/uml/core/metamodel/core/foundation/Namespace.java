@@ -62,7 +62,6 @@ import org.netbeans.modules.uml.core.support.umlutils.IElementLocator;
 import org.netbeans.modules.uml.core.support.umlutils.IPropertyElement;
 
 /**
- * @author sumitabhk
  *
  */
 public class Namespace extends NamedElement implements INamespace{

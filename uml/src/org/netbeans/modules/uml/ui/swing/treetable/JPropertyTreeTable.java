@@ -71,7 +71,6 @@ import org.netbeans.modules.uml.ui.swing.propertyeditor.PropertyEditor;
 import org.netbeans.modules.uml.ui.swing.propertyeditor.PropertyEditorResources;
 
 /**
- * @author sumitabhk
  *
  */
 public class JPropertyTreeTable extends JTreeTable implements ActionListener

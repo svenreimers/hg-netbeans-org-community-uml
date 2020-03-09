@@ -64,7 +64,6 @@ import org.netbeans.modules.uml.core.support.umlutils.IPropertyDefinition;
 import org.netbeans.modules.uml.core.support.umlutils.IPropertyElement;
 
 /**
- * @author sumitabhk
  *
  */
 public class PreferenceDialogTableModel extends AbstractTableModel implements ISwingPreferenceTableModel

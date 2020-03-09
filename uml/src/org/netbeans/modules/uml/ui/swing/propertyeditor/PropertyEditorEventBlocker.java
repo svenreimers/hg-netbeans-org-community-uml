@@ -24,7 +24,6 @@ package org.netbeans.modules.uml.ui.swing.propertyeditor;
 //import org.netbeans.modules.uml.ui.swing.drawingarea.IDrawingAreaControl;
 
 /**
- * @author KevinM
  *
  */
 public class PropertyEditorEventBlocker implements IPropertyEditorEventBlocker

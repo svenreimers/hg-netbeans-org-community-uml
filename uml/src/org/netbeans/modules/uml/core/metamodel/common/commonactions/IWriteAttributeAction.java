@@ -52,7 +52,6 @@ package org.netbeans.modules.uml.core.metamodel.common.commonactions;
 import org.netbeans.modules.uml.core.metamodel.basic.basicactions.IInputPin;
 
 /**
- * @author Aztec
  */
 public interface IWriteAttributeAction extends IAttributeAction
 {

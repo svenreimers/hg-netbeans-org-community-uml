@@ -67,7 +67,6 @@ import org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframe
 import org.netbeans.modules.uml.core.support.umlsupport.Log;
 
 /**
- * @author Aztec
  */
 public class MethodExceptionProcessingStateHandler
     extends MethodDetailStateHandler

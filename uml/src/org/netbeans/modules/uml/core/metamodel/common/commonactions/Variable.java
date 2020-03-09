@@ -55,7 +55,6 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.OwnerRetriever;
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.TypedElement;
 
 /**
- * @author Aztec
  */
 public class Variable extends TypedElement implements IVariable
 {

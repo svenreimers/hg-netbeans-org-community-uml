@@ -54,7 +54,6 @@ import org.openide.filesystems.FileUtil;
 
 /**
  *
- * @author Trey Spiva
  */
 public class FileSysManip
 {

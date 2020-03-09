@@ -52,7 +52,6 @@ package org.netbeans.modules.uml.core.reverseengineering.parsers.javaparser;
 import org.dom4j.Node;
 
 /**
- * @author aztec
  */
 public class ParsedClassFeatures
 {

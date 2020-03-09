@@ -95,7 +95,6 @@ import org.netbeans.modules.uml.core.workspacemanagement.IWSProject;
 import org.netbeans.modules.uml.core.workspacemanagement.IWorkspace;
 
 /**
- * @author sumitabhk
  *
  * 
  */

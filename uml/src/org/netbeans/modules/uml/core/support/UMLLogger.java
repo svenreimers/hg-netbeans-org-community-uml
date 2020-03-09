@@ -47,7 +47,6 @@ import java.util.logging.Logger;
 
 /**
  *
- * @author thuy
  */
 public class UMLLogger {
     public static final Logger umlLogger = Logger.getLogger("org.netbeans.modules.uml"); 

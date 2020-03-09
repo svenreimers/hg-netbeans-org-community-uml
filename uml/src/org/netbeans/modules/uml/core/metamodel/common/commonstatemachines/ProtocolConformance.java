@@ -56,7 +56,6 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.ElementCollector;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.OwnerRetriever;
 
 /**
- * @author aztec
  *
  */
 public class ProtocolConformance extends DirectedRelationship

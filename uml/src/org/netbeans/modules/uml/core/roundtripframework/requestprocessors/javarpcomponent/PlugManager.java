@@ -50,7 +50,6 @@
 package org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpcomponent;
 
 /**
- * @author Aztec
  */
 public class PlugManager implements IPlugManager
 {

@@ -63,7 +63,6 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.IPackage;
 
 /**
- * @author Aztec
  */
 public class GroupAction extends CompositeAction implements IGroupAction
 {

@@ -48,7 +48,6 @@ package org.netbeans.modules.uml.core.workspacemanagement;
  * Thrown to indicate that an error occured while accessing a workspace
  * method.
  *
- * @author Trey Spiva
  */
 public class WorkspaceManagementException extends RuntimeException
 {

@@ -56,7 +56,6 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.ElementCollector;
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavior;
 
 /**
- * @author Aztec
  */
 public class ObjectFlow extends ActivityEdge implements IObjectFlow
 {

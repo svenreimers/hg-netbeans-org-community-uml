@@ -76,7 +76,6 @@ import org.netbeans.modules.uml.ui.swing.propertyeditor.PropertyEditor;
 import org.netbeans.modules.uml.core.support.Debug;
 
 /**
- * @author sumitabhk
  *
  */
 public class TreeTableCellEditor extends AbstractCellEditor implements

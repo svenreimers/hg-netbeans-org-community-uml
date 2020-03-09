@@ -52,7 +52,6 @@ package org.netbeans.modules.uml.core.metamodel.common.commonactions;
 import org.netbeans.modules.uml.core.metamodel.basic.basicactions.IAction;
 
 /**
- * @author Aztec
  */
 public interface ICompositeAction extends IAction
 {

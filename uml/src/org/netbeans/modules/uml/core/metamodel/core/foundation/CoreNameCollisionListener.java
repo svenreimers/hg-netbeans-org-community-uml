@@ -52,7 +52,6 @@ import org.netbeans.modules.uml.ui.support.DispatchHelper;
 import org.netbeans.modules.uml.ui.support.applicationmanager.NameCollisionEventSink;
 
 /**
- * @author sumitabhk
  *
  */
 public class CoreNameCollisionListener implements ICoreNameCollisionListener

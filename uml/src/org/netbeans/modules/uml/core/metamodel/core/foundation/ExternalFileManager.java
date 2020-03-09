@@ -74,7 +74,6 @@ import org.netbeans.modules.uml.core.typemanagement.ITypeManager;
 import org.dom4j.Attribute;
 
 /**
- * @author sumitabhk
  *
  */
 public class ExternalFileManager 

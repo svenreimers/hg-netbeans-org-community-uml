@@ -61,7 +61,6 @@ import org.dom4j.dom.DOMNodeHelper;
 /** <p><code>DOMAttributeNodeMap</code> implements a W3C NameNodeMap
   * for the attributes of an element.</p>
   *
-  * @author <a href="mailto:james.strachan@metastuff.com">James Strachan</a>
   * @version $Revision: 1.2.6.1 $
   */
 public class W3CAttributeNodeMap implements org.w3c.dom.NamedNodeMap {

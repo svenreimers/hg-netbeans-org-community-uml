@@ -53,7 +53,6 @@ package org.netbeans.modules.uml.core.scm;
 /**
  * The various features that should be supported by any SCM tool.
  *
- * @author  Trey Spiva
  */
 public interface SCMFeatureKind
 {

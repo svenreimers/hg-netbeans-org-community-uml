@@ -55,7 +55,6 @@ import org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframe
  *
  * <code>Example: -1</code>
  *
- * @author Trey Spiva
  */
 public class PreUnaryExpression extends PostUnaryExpression
 {

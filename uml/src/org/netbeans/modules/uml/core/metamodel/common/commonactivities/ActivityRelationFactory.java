@@ -53,7 +53,6 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.TypedFactoryRetri
 import org.netbeans.modules.uml.core.metamodel.infrastructure.RelationFactory;
 
 /**
- * @author KevinM
  *
  */
 public class ActivityRelationFactory extends RelationFactory implements IActivityRelationFactory {

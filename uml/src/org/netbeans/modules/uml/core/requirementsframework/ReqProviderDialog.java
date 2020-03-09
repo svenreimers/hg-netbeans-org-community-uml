@@ -59,7 +59,6 @@ import org.openide.util.NbBundle;
 
 /**
  *
- * @author  Trey Spiva
  */
 public class ReqProviderDialog implements IReqProviderDialog
 {

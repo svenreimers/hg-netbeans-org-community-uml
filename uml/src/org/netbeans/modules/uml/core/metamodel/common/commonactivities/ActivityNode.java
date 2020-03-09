@@ -57,7 +57,6 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.RedefinableElemen
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 /**
- * @author Aztec
  */
 public class ActivityNode extends RedefinableElement implements IActivityNode
 {

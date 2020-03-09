@@ -54,7 +54,6 @@ import org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframe
  * <p>Description: </p>
  * <p>Copyright: Copyright (c) 2003</p>
  * <p>Company: </p>
- * @author not attributable
  * @version 1.0
  */
 
