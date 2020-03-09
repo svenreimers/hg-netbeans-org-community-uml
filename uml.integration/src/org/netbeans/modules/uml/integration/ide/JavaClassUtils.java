@@ -139,7 +139,6 @@ import org.netbeans.modules.uml.core.scm.ISCMTool;
  *                              well as IAttributes and added findAssociation.
  * 13. 2002-07-04  Mukta        Added method for deleting folder for a package.
  *
- * @author Trey Spiva
  * @version 1.0
  */
 public class JavaClassUtils {

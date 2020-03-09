@@ -47,7 +47,6 @@ import org.netbeans.modules.uml.drawingarea.palette.NodeInitializer;
 
 /**
  *
- * @author sp153251
  */
 public class ActorLifelineInitializer implements NodeInitializer
 {

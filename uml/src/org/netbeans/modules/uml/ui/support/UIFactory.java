@@ -46,7 +46,6 @@
 /*
  *
  * Created on Jun 30, 2003
- * @author Trey Spiva
  */
 package org.netbeans.modules.uml.ui.support;
 
@@ -71,7 +70,6 @@ import org.netbeans.modules.uml.ui.swing.projecttree.JFilterDialog;
  * we must support both SWT and Swing the UIFactory is used to retrieve the
  * correct implementation for the platform that is running.
  * 
- * @author Trey Spiva
  */
 public class UIFactory
 {

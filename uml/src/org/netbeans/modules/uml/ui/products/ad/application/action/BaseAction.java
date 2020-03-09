@@ -61,7 +61,6 @@ import org.netbeans.modules.uml.ui.products.ad.application.IMenuManager;
 
 /**
  * 
- * @author Trey Spiva
  */
 public class BaseAction extends AbstractAction
 {

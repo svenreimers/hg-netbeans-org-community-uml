@@ -70,7 +70,6 @@ import org.netbeans.modules.uml.core.support.umlsupport.Strings;
  * When this occurs a user can update one file and FFJ will not send events
  * about changed elements.  We can not stop this from occuring but we have
  * decided to warn the user of the situation.
- * @author  tspiva
  * @version
  */
 public class FileSystemListener extends RepositoryAdapter

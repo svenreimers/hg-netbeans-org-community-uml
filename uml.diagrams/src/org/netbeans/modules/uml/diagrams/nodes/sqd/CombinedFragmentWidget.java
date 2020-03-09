@@ -100,7 +100,6 @@ import org.netbeans.modules.uml.drawingarea.persistence.api.DiagramNodeReader;
 
 /**
  *
- * @author sp153251
  */
 public class CombinedFragmentWidget extends ContainerNode implements PropertyChangeListener,CombinedFragment {
 

@@ -67,7 +67,6 @@ import org.openide.util.NbBundle;
 
 /**
  *
- * @author jyothi
  */
 public class ExtensionPointWidget extends FeatureWidget implements PropertyChangeListener {
     

@@ -47,7 +47,6 @@
 package org.netbeans.modules.uml.ui.controls.projecttree;
 
 /**
- * @author sumitabhk
  *
  */
 public class ProjectTreeUpdateLocker implements IProjectTreeUpdateLocker

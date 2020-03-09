@@ -83,7 +83,6 @@ import org.netbeans.modules.uml.ui.support.helpers.IGUIBlocker.GBK;
 //import org.netbeans.modules.uml.ui.swing.drawingarea.IDrawingAreaControl;
 
 /**
- * @author sumitabhk
  *
  */
 public class ComponentDiagramCreator implements IComponentDiagramCreator

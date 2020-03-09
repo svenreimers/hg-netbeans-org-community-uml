@@ -47,7 +47,6 @@ import org.netbeans.modules.uml.drawingarea.palette.NodeInitializer;
 
 /**
  *
- * @author Sheryl Su
  */
 public class SimpleStateInitializer implements NodeInitializer
 {

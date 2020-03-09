@@ -46,7 +46,6 @@
 /*
  *
  * Created on Jun 10, 2003
- * @author Trey Spiva
  */
 package org.netbeans.modules.uml.ui.controls.projecttree;
 
@@ -58,7 +57,6 @@ import org.netbeans.modules.uml.core.support.umlsupport.IResultCell;
 
 /**
  *
- * @author Trey Spiva
  */
 public class ProjectTreeEventsAdapter implements IProjectTreeEventsSink
 {

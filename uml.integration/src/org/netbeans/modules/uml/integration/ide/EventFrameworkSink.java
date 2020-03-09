@@ -67,7 +67,6 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
  * ---  ----        ---         ----
  *   1  2002-09-16  Sumitabh    Created.
  *
- * @author  Sumitabh
  * @version 1.2
  */
 public class EventFrameworkSink extends SourceNavigable

@@ -51,7 +51,6 @@ import org.netbeans.modules.uml.drawingarea.view.CustomizableWidget;
 
 /**
  *
- * @author thuy
  */
 public class OvalWidget extends CustomizableWidget
 {

@@ -48,7 +48,6 @@ import org.netbeans.modules.uml.drawingarea.ConnectionWidgetFactory;
 
 /**
  *
- * @author treyspiva
  */
 public class PermissionConnectionFactory implements ConnectionWidgetFactory
 {

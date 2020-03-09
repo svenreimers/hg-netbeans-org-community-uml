@@ -70,7 +70,6 @@ import org.openide.loaders.DataShadow;
 
 /**
  *
- * @author psb
  */
 public class MessageRapidButtonDescription implements ContextPaletteButtonModel
 {

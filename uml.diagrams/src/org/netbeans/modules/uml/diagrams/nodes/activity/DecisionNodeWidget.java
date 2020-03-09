@@ -55,7 +55,6 @@ import org.netbeans.modules.uml.drawingarea.widgets.ResizeToContentMarker;
 
 /**
  *
- * @author thuy
  */
 public class DecisionNodeWidget extends ControlNodeWidget implements ResizeToContentMarker
 {

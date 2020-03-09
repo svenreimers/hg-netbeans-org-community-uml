@@ -56,7 +56,6 @@ import org.openide.util.Lookup;
 
 /**
  *
- * @author Thuy Nguyen
  */
 public class PaletteSupport
 {

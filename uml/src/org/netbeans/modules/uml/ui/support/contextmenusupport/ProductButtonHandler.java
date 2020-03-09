@@ -52,7 +52,6 @@ import java.util.HashMap;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 /**
- * @author KevinM
  *
  */
 public class ProductButtonHandler implements IProductButtonHandler {

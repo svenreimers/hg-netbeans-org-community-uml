@@ -57,7 +57,6 @@ import org.openide.util.Exceptions;
 
 /**
  *
- * @author jyothi
  */
 public class TSDiagramParser implements IDiagramParser
 {

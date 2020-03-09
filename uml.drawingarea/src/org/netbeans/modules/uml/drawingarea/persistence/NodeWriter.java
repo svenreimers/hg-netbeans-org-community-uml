@@ -55,7 +55,6 @@ import org.netbeans.modules.uml.drawingarea.persistence.util.XMIConstants;
 
 /**
  *
- * @author Jyothi
  */
 public class NodeWriter extends Writer {
 

@@ -68,7 +68,6 @@ import org.openide.util.NbBundle;
 
 /**
  *
- * @author treyspiva
  */
 public class AssociationLabelManager extends BasicUMLLabelManager
 {

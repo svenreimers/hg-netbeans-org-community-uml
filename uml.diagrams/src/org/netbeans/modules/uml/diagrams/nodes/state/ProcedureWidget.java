@@ -59,7 +59,6 @@ import org.openide.util.NbBundle;
 
 /**
  *
- * @author Sheryl Su
  */
 public abstract class ProcedureWidget extends FeatureWidget implements PropertyChangeListener{
 

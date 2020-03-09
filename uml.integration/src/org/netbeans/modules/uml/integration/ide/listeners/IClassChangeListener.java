@@ -58,7 +58,6 @@ import org.netbeans.modules.uml.integration.ide.events.ClassInfo;
  * class, instead of directly inheriting from Describe's event sink
  * interfaces.
  *
- * @author  Darshan
  * @version 1.0
  */
 public interface IClassChangeListener {

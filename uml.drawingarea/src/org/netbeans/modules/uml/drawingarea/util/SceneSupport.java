@@ -54,7 +54,6 @@ import org.openide.util.RequestProcessor;
 
 /**
  *
- * @author Jyothi
  */
 public class SceneSupport 
 {

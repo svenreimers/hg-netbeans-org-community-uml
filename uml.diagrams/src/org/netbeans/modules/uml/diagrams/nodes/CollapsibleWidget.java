@@ -62,7 +62,6 @@ import org.netbeans.modules.uml.drawingarea.view.UMLNodeWidget;
 
 /**
  *
- * @author treyspiva
  */
 public class CollapsibleWidget extends Widget implements CollapsibleWidgetManager
 {

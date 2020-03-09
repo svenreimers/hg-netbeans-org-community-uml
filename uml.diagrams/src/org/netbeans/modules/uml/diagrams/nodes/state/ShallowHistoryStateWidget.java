@@ -53,7 +53,6 @@ import org.netbeans.modules.uml.drawingarea.view.UMLWidget.UMLWidgetIDString;
 
 /**
  *
- * @author Sheryl Su
  */
 public class ShallowHistoryStateWidget extends InitialStateWidget
 {

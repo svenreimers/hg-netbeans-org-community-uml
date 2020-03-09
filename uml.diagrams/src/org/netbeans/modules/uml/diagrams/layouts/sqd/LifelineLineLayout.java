@@ -54,7 +54,6 @@ import org.netbeans.api.visual.widget.Widget;
 /**
  * center 0 point of children to center line of parent widget
  * from preferred location only 'y' is used now
- * @author sp153251
  */
 public class LifelineLineLayout implements Layout {
 

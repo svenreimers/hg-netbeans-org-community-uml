@@ -68,7 +68,6 @@ import org.netbeans.modules.uml.core.support.umlsupport.XMLManip;
 
 /**
  * 
- * @author Trey Spiva
  */
 public class UserSettings
 {

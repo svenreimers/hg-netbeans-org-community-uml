@@ -74,7 +74,6 @@ import org.netbeans.modules.uml.ui.support.archivesupport.IProductArchiveElement
 
 /**
  *
- * @author Trey Spiva
  */
 public abstract class TrackItem extends JComponent implements Accessible
 {

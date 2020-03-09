@@ -51,7 +51,6 @@ import java.util.ResourceBundle;
 import org.netbeans.modules.uml.core.support.umlutils.IPropertyDefinition;
 
 /**
- * @author sumitabhk
  *
  */
 public class ConfigStringTranslator implements IConfigStringTranslator {

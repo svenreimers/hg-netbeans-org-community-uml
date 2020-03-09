@@ -62,7 +62,6 @@ import org.netbeans.modules.uml.resources.images.ImageUtil;
 
 /**
  *
- * @author Trey Spiva
  */
 public class DiagramToolDetails
 {

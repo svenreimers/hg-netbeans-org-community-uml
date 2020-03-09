@@ -44,7 +44,6 @@ package org.netbeans.modules.uml.drawingarea.persistence.nb;
 
 /**
  *
- * @author jyothi
  */
 public class NBWriter {
 

@@ -46,7 +46,6 @@
 /*
  *
  * Created on Jul 1, 2003
- * @author Trey Spiva
  */
 package org.netbeans.modules.uml.ui.support;
 
@@ -56,7 +55,6 @@ import org.netbeans.modules.uml.ui.support.commondialogs.MessageResultKindEnum;
  * The users response from a question dialog.  The details specify which button
  * was pressed as well as the value of the checkbox (if any).
  *
- * @author Trey Spiva
  */
 public class QuestionResponse implements MessageResultKindEnum
 {

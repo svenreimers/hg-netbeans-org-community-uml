@@ -54,7 +54,6 @@ import java.util.ArrayList;
 
 /**
  *
- * @author  Trey Spiva
  */
 public abstract class BatchProcessRunnable < T > implements Runnable
 {

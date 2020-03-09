@@ -50,7 +50,6 @@
 package org.netbeans.modules.uml.ui.support.contextmenusupport;
 
 /**
- * @author jingmingm
  *
  */
 public interface IMenuKind

@@ -53,7 +53,6 @@ import org.netbeans.modules.uml.util.DummyCorePreference;
 import org.openide.util.NbPreferences;
 
 /**
- * @author sumitabhk
  *
  *
  */

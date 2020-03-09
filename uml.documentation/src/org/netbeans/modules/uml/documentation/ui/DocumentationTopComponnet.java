@@ -64,7 +64,6 @@ import org.openide.util.WeakListeners;
 /**
  *  TopComponent for the Describe 6.0 documentation (JavaDoc) editor.
  *
- * @author  Darshan
  * @version 1.0
  */
 public class DocumentationTopComponnet extends TopComponent implements PropertyChangeListener

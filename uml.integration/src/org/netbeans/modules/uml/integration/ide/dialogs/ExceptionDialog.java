@@ -57,7 +57,6 @@ import org.netbeans.modules.uml.integration.ide.UMLSupport;
  * display an error message to the user use the helper showExceptionError methods.
  * @see #showExceptionError(String msg, Exception e)
  * @see #showExceptionError(Exception e)
- * @author  Trey Spiva
  * @version 1.0
  */
 public class ExceptionDialog extends JDialog

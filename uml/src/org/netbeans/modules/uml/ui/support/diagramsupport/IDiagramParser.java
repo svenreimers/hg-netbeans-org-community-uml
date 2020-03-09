@@ -46,7 +46,6 @@ import org.netbeans.modules.uml.core.metamodel.diagrams.DiagramDetails;
 
 /**
  *
- * @author Craig Conover, craig.conover@sun.com
  */
 public interface IDiagramParser 
 {

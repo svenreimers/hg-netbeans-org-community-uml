@@ -57,7 +57,6 @@ import org.openide.util.NbBundle;
 
 /**
  *
- * @author jyothi
  */
 public class ShowExtensionPointsAction extends SceneNodeAction
 {

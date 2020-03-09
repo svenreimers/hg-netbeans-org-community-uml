@@ -46,7 +46,6 @@
 /*
  *
  * Created on Jul 1, 2003
- * @author Trey Spiva
  */
 package org.netbeans.modules.uml.ui.support;
 
@@ -55,7 +54,6 @@ package org.netbeans.modules.uml.ui.support;
  * is being added to the progress dialog.
  *
  * @see IProgressDialog
- * @author Trey Spiva
  */
 public interface ProgressDialogMessageKind
 {

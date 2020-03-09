@@ -136,7 +136,6 @@ import org.netbeans.modules.uml.drawingarea.UIDiagram;
 import org.openide.windows.TopComponent;
 
 /**
- * @author sumitabhk
  *
  */
 public class DiagCreatorAddIn implements IDiagCreatorAddIn, IAcceleratorListener//, IDrawingAreaEventsSink

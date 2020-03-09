@@ -48,7 +48,6 @@ import org.netbeans.modules.uml.drawingarea.actions.SQDMessageConnectProvider;
 
 /**
  *
- * @author sp153251
  */
 public interface SQDDiagramEngineExtension {
     /**

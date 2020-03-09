@@ -54,7 +54,6 @@ import java.io.IOException;
 
 /**
  *
- * @author Trey Spiva
  */
 public class ImageTransferable implements Transferable
 {

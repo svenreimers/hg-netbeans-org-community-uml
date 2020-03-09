@@ -72,7 +72,6 @@ import org.netbeans.modules.uml.core.metamodel.structure.IComponent;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 /**
- * @author sumitabhk
  *
  *
  */

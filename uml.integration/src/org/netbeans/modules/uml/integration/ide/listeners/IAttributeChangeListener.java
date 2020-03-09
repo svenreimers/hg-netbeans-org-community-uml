@@ -55,7 +55,6 @@ import org.netbeans.modules.uml.integration.ide.events.MemberInfo;
  * Interface for classes that need to be notified of changes to attributes
  * in the Describe model.
  *
- * @author  Darshan
  * @version 1.0
  */
 public interface IAttributeChangeListener {

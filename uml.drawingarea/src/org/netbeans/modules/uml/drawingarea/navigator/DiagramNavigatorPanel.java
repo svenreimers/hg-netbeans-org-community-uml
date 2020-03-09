@@ -57,7 +57,6 @@ import org.openide.windows.WindowManager;
 
 /**
  *
- * @author Jyothi
  */
 public class DiagramNavigatorPanel implements NavigatorPanel, LookupListener
 {

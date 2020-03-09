@@ -80,7 +80,6 @@ import org.openide.util.lookup.InstanceContent;
 
 /**
  *
- * @author Sheryl Su
  */
 public class MovableLabelWidget extends EditableCompartmentWidget implements Widget.Dependency, DiagramNodeWriter
 {

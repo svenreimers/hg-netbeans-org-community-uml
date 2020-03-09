@@ -95,7 +95,6 @@ import java.lang.reflect.Method;
  * <br>Thanks also to Ron B. Yeh, Eric Shapiro, Ben Engber, Paul Teitlebaum, Andrea Cantatore,
  * Larry Barowski, Trevor Bedzek, Frank Miedrich, and Ron Rabakukk
  *
- * @author Eric Albert (<a href="mailto:ejalbert@cs.stanford.edu">ejalbert@cs.stanford.edu</a>)
  * @version 1.4b1 (Released June 20, 2001)
  */
 public class BrowserLauncher {

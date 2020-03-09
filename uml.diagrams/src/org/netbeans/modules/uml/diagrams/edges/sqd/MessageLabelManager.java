@@ -72,7 +72,6 @@ import org.openide.util.NbBundle;
 
 /**
  *
- * @author psb
  */
 public class MessageLabelManager extends AbstractLabelManager
 {

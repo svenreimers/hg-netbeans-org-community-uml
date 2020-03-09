@@ -83,7 +83,6 @@ import org.openide.util.Lookup;
 
 /**
  *
- * @author treyspiva
  */
 public class AssociationConnector extends AbstractUMLConnectionWidget
 {

@@ -71,7 +71,6 @@ import org.openide.util.NbBundle;
 
 /**
  *
- * @author sp153251
  */
 public class CommentWidget extends UMLNodeWidget implements PropertyChangeListener
 {

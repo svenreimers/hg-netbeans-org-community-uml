@@ -54,7 +54,6 @@ package org.netbeans.modules.uml.integration.ide.dialogs;
  *  Interface for a progress indicator (from Trey Spiva's ProgressIndicator
  * code).
  *
- * @author Darshan
  */
 public interface IProgressIndicator {
     /**

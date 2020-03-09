@@ -49,7 +49,6 @@ package org.netbeans.modules.uml.ui.support.archivesupport;
 import org.dom4j.Node;
 
 /**
- * @author sumitabhk
  *
  *
  */

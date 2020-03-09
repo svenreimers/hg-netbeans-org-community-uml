@@ -59,7 +59,6 @@ import org.netbeans.modules.uml.drawingarea.view.UMLEdgeWidget;
  * an ownership.  For example a pacage and own a class.  The connection does 
  * does not represent a true relationship, but instead a property.  
  * 
- * @author treyspiva
  */
 public class NestedLinkConnector extends AbstractUMLConnectionWidget
 {

@@ -47,7 +47,6 @@ import org.netbeans.modules.uml.drawingarea.border.ResizeBorder;
 
 /**
  *
- * @author jyothi
  */
 public interface UMLWidget {
 

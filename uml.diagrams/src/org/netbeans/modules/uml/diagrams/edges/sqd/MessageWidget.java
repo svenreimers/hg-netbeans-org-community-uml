@@ -65,7 +65,6 @@ import org.netbeans.modules.uml.core.metamodel.dynamics.IMessage;
 
 /**
  * just a root for all messages
- * @author sp153251
  */
 abstract public class MessageWidget extends AbstractUMLConnectionWidget implements PropertyChangeListener {
 

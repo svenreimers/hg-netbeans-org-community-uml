@@ -69,7 +69,6 @@ import org.openide.util.NbBundle;
  * The BasicUMLLabelManager provides the labels that all UML connection 
  * widget should provide.
  * 
- * @author treyspiva
  */
 public class BasicUMLLabelManager extends AbstractLabelManager
 {

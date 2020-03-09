@@ -65,7 +65,6 @@ import org.netbeans.modules.uml.ui.controls.trackbar.TrackBarResource;
 
 /**
  * 
- * @author Trey Spiva
  */
 public class TrackCoupling extends TrackItem implements ActionListener
 {

@@ -51,7 +51,6 @@ import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure
 
 /**
  *
- * @author treyspiva
  */
 public class AssociationClassFactory extends AssociationFactory
 {

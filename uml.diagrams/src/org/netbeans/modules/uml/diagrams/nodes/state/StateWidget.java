@@ -75,7 +75,6 @@ import org.openide.util.NbBundle;
 
 /**
  *
- * @author Sheryl Su
  */
 public class StateWidget extends UMLNodeWidget
 {

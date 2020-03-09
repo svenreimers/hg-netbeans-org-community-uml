@@ -57,7 +57,6 @@ import org.netbeans.api.visual.graph.GraphScene;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.IPresentationElement;
 
 /**
- * @author David Kaspar
  */
 public final class GraphSceneNodeAlignCollector implements AlignWithWidgetCollector
 {

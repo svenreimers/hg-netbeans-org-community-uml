@@ -57,7 +57,6 @@ import org.netbeans.modules.uml.core.support.umlutils.ETArrayList;
 import org.netbeans.modules.uml.common.generics.ETPairT;
 
 /**
- * @author sumitabhk
  *
  *
  */

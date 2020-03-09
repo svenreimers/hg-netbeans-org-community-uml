@@ -46,7 +46,6 @@
 /*
  *
  * Created on Jul 1, 2003
- * @author Trey Spiva
  */
 package org.netbeans.modules.uml.ui.support;
 
@@ -85,7 +84,6 @@ import org.netbeans.modules.uml.ui.swing.commondialogs.DefaultCommonDialogResour
 
 /**
  * 
- * @author Trey Spiva
  */
 public class SwingQuestionDialogImpl implements IQuestionDialog
 {

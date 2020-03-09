@@ -44,7 +44,6 @@ package org.netbeans.modules.uml.drawingarea.widgets;
 
 /**
  * marker interface
- * @author Sheryl Su
  */
 public interface Container {
 

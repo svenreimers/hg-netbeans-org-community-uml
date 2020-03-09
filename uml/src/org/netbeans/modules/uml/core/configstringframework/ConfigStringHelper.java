@@ -46,7 +46,6 @@
 package org.netbeans.modules.uml.core.configstringframework;
 
 /**
- * @author sumitabhk
  *
  */
 public class ConfigStringHelper

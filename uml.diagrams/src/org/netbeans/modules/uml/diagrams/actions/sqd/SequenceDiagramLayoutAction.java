@@ -54,7 +54,6 @@ import org.openide.util.NbBundle;
 
 /**
  *
- * @author sp153251
  */
 public class SequenceDiagramLayoutAction extends AbstractAction
 {

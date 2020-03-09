@@ -56,7 +56,6 @@ import org.netbeans.modules.uml.ui.support.diagramsupport.IProxyDiagramManager;
 import org.netbeans.modules.uml.ui.support.diagramsupport.ProxyDiagramManager;
 
 /**
- * @author sumitabhk
  *
  */
 public class DiagramBackupCleaner implements IDiagramBackupCleaner,

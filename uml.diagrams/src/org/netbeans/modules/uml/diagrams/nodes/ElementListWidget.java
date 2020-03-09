@@ -58,7 +58,6 @@ import org.netbeans.modules.uml.drawingarea.view.UMLWidget;
 
 /**
  *
- * @author treyspiva
  */
 public class ElementListWidget extends ListWidget implements DiagramNodeWriter, UMLWidget
 {

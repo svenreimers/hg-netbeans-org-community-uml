@@ -51,7 +51,6 @@ import org.openide.awt.Actions;
 
 /**
  *
- * @author sp153251
  */
 public class MessageOperationsSubMenuAction extends SubMenuAction {
     public MessageOperationsSubMenuAction(String name)

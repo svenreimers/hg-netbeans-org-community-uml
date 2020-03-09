@@ -46,7 +46,6 @@
 /*
  *
  * Created on Jun 10, 2003
- * @author Trey Spiva
  */
 package org.netbeans.modules.uml.ui.controls.projecttree;
 
@@ -60,7 +59,6 @@ import org.netbeans.modules.uml.ui.support.contextmenusupport.IProductContextMen
 
 /**
  * 
- * @author Trey Spiva
  */
 public interface IProjectTreeEventDispatcher extends IEventDispatcher
 {

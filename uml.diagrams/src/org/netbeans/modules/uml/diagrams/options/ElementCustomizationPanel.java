@@ -53,7 +53,6 @@ import org.openide.util.RequestProcessor;
 
 /**
  *
- * @author  Sheryl Su
  */
 public class ElementCustomizationPanel extends JPanel implements ItemListener
 {

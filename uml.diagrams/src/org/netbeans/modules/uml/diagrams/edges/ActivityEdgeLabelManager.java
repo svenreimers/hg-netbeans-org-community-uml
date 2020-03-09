@@ -63,7 +63,6 @@ import org.openide.util.NbBundle;
 
 /**
  *
- * @author Thuy
  */
 public class ActivityEdgeLabelManager extends BasicUMLLabelManager
 {

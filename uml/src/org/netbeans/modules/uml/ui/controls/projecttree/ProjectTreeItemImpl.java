@@ -46,7 +46,6 @@
 /*
  *
  * Created on Jun 11, 2003
- * @author Trey Spiva
  */
 package org.netbeans.modules.uml.ui.controls.projecttree;
 
@@ -69,7 +68,6 @@ import org.netbeans.modules.uml.core.metamodel.structure.IProject;
 
 /**
  * 
- * @author Trey Spiva
  */
 public class ProjectTreeItemImpl implements IProjectTreeItem, FileExtensions
 {

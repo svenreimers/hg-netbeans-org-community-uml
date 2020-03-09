@@ -51,7 +51,6 @@ import org.netbeans.modules.uml.core.support.umlutils.ElementLocator;
 import org.netbeans.modules.uml.core.support.umlutils.IElementLocator;
 
 /**
- * @author sumitabhk
  *
  */
 public class ElementReloader

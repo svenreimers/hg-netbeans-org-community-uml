@@ -50,7 +50,6 @@
 package org.netbeans.modules.uml.ui.support;
 
 /**
- * @author aztec
  *
  */
 public interface ErrorDialogIconKind

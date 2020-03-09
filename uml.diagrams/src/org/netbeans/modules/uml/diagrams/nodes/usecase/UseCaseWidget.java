@@ -78,7 +78,6 @@ import org.openide.util.NbBundle;
 
 /**
  *
- * @author jyothi
  */
 public class UseCaseWidget extends UMLNodeWidget
 {

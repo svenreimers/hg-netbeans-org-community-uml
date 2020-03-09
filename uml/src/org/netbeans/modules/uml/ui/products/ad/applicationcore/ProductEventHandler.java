@@ -33,7 +33,6 @@ import org.netbeans.modules.uml.core.support.umlutils.IPropertyElement;
 import org.netbeans.modules.uml.core.workspacemanagement.IWorkspace;
 
 /**
- * @author sumitabhk
  *
  */
 public class ProductEventHandler implements IElementDisposalEventsSink,

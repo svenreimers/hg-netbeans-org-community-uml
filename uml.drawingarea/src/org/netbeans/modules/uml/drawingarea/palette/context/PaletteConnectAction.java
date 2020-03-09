@@ -56,7 +56,6 @@ import org.netbeans.modules.uml.drawingarea.actions.ExConnectProvider;
 
 /**
  *
- * @author treyspiva
  */
 public class PaletteConnectAction extends WidgetAction.Adapter
 {

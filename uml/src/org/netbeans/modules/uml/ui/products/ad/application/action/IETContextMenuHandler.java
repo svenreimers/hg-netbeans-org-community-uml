@@ -50,7 +50,6 @@ package org.netbeans.modules.uml.ui.products.ad.application.action;
 import java.awt.event.ActionEvent;
 
 /**
- * @author KevinM
  *
  */
 public interface IETContextMenuHandler {

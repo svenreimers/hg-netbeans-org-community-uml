@@ -50,7 +50,6 @@ import org.netbeans.modules.uml.drawingarea.LabelManager;
 
 /**
  *
- * @author jyothi
  */
 public class ExtendConnector extends AbstractUMLConnectionWidget
 {

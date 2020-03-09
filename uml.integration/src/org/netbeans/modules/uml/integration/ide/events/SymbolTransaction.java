@@ -80,7 +80,6 @@ import org.netbeans.modules.uml.ui.support.ProductHelper;
  *   2  2002-06-19  Darshan     Removed unnecessary conversions between Java
  *                              and UML fully scoped class/package names.
  * @todo Cleanup all commented out code.
- * @author  tspiva
  * @version
  */
 public class SymbolTransaction {

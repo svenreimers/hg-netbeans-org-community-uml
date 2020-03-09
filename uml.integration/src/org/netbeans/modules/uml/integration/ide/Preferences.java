@@ -72,7 +72,6 @@ public class Preferences {
      * Interface for classes that want to be notified of when a preference
      * changes.
      *
-     * @author darshans
      */
     public static interface PreferenceWatcher {
         /**

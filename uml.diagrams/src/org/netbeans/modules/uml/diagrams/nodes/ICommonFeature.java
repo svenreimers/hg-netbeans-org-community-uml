@@ -47,7 +47,6 @@ import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure
 
 /**
  *
- * @author thuy
  */
 public interface ICommonFeature {
    

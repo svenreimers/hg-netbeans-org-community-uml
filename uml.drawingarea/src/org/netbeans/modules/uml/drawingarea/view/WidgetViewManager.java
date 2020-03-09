@@ -45,7 +45,6 @@ import javax.swing.Action;
 
 /**
  *
- * @author treyspiva
  */
 public interface WidgetViewManager
 {

@@ -63,7 +63,6 @@ import org.openide.util.Exceptions;
 
 /**
  *
- * @author sp153251
  */
 class LoadRegionsProvider implements ActionProvider {
 

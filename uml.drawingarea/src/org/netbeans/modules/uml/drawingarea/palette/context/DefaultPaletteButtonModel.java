@@ -61,7 +61,6 @@ import org.openide.loaders.DataShadow;
 
 /**
  *
- * @author treyspiva
  */
 public class DefaultPaletteButtonModel implements ContextPaletteButtonModel
 {

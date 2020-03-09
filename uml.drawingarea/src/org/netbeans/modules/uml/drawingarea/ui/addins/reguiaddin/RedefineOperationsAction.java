@@ -62,7 +62,6 @@ import org.openide.util.NbBundle;
 
 /**
  *
- * @author  Craig Conover
  */
 public class RedefineOperationsAction extends SceneCookieAction
 {

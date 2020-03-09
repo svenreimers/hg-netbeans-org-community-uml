@@ -99,7 +99,6 @@ import org.openide.windows.TopComponent;
 
 /**
  *
- * @author Jyothi
  */
 public class DesignerScene extends GraphScene<IPresentationElement, IPresentationElement> implements DiagramNodeWriter//, DiagramNodeReader 
 {

@@ -50,7 +50,6 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElement;
 
 /**
  *
- * @author jyothi
  */
 public class IncludeFactory extends AbstractRelationshipFactory {
     

@@ -60,7 +60,6 @@ import org.openide.windows.TopComponent;
 
 /**
  * used for all message calls: from synch message, asynch, and create
- * @author sp153251
  */
 public class MessageMoveProvider implements MoveProvider {
 

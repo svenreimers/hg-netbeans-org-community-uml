@@ -47,7 +47,6 @@ import org.netbeans.modules.uml.drawingarea.palette.context.*;
 
 /**
  *
- * @author treyspiva
  */
 public interface ComboButtonListener
 {

@@ -98,7 +98,6 @@ import org.netbeans.modules.uml.integration.ide.UMLSupport;
  *
  * @see EventManager
  * @see MethodInfo
- * @author Trey Spiva
  */
 public class ConstructorInfo extends ElementInfo {
     private ClassInfo  mContainer      = null;

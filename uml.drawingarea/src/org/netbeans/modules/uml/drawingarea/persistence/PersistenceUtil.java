@@ -66,7 +66,6 @@ import org.netbeans.modules.uml.drawingarea.view.UMLNodeWidget;
 
 /**
  *
- * @author Jyothi
  */
 public class PersistenceUtil {
 

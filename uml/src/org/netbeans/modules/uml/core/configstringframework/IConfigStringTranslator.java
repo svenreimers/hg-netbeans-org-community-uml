@@ -48,7 +48,6 @@ package org.netbeans.modules.uml.core.configstringframework;
 import org.netbeans.modules.uml.core.support.umlutils.IPropertyDefinition;
 
 /**
- * @author sumitabhk
  *
  */
 public interface IConfigStringTranslator

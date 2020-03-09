@@ -100,7 +100,6 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
  *                              indexing into reqDetailEnum[].
  *  10  2002-06-18  Darshan     Updated RequestDetailType enum.
  *
- * @author  Darshan
  * @version 1.1
  */
 public class ChangeUtils {

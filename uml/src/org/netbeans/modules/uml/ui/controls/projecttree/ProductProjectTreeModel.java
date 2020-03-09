@@ -88,7 +88,6 @@ import org.netbeans.modules.uml.core.support.umlutils.IDataFormatter;
  *
  * @see IProjectTreeEngine
  * @see ITreeItem
- * @author Trey Spiva
  */
 public abstract class ProductProjectTreeModel implements IProjectTreeModel
 {

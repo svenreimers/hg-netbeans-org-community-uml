@@ -54,7 +54,6 @@ import java.util.Set;
 
 /**
  *
- * @author Trey Spiva
  */
 public class DiagramToolBarDefs
 {

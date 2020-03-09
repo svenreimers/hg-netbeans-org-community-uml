@@ -51,7 +51,6 @@ import org.openide.util.actions.CookieAction;
 
 /**
  *
- * @author jyothi
  */
 public class AddExtensionPointAction extends SceneCookieAction
 {

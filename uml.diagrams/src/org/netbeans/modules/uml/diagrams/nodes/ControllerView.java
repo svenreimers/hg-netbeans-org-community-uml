@@ -64,7 +64,6 @@ import org.openide.util.lookup.InstanceContent;
 
 /**
  *
- * @author treyspiva
  */
 public class ControllerView extends Widget 
         implements ContextViewWidget, PropertyChangeListener

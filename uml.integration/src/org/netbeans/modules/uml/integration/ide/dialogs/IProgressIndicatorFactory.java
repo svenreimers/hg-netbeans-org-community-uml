@@ -52,7 +52,6 @@ package org.netbeans.modules.uml.integration.ide.dialogs;
 
 /**
  *  A factory for progress indicators.
- * @author  Darshan
  * @version 1.0
  */
 public interface IProgressIndicatorFactory {

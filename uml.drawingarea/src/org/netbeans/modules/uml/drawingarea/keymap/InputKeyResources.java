@@ -49,7 +49,6 @@ import javax.swing.JComponent;
 
 /**
  *
- * @author thuy
  */
 public class InputKeyResources extends ListResourceBundle 
 {

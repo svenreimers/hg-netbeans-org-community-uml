@@ -82,7 +82,6 @@ import org.openide.util.lookup.InstanceContent;
 
 /**
  *
- * @author sp153251
  */
 public class InteractionOperandWidget extends Widget implements DiagramNodeWriter, DiagramNodeReader,LabeledWidget,SubWidget {
 

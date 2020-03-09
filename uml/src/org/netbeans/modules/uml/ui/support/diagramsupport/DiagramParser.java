@@ -58,7 +58,6 @@ import org.openide.util.Exceptions;
 
 /**
  *
- * @author jyothi
  */
 public class DiagramParser implements IDiagramParser 
 {

@@ -46,7 +46,6 @@
 /*
  *
  * Created on Jul 1, 2003
- * @author Trey Spiva
  */
 package org.netbeans.modules.uml.ui.support.commondialogs;
 
@@ -58,7 +57,6 @@ package org.netbeans.modules.uml.ui.support.commondialogs;
  * @see IPickListDialog
  * @see IPreferenceQuestionDialog
  *
- * @author Trey Spiva
  */
 public interface MessageDialogKindEnum
 {

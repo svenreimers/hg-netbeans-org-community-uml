@@ -45,7 +45,6 @@
 /*
  *
  * Created on Jun 10, 2003
- * @author Trey Spiva
  */
 package org.netbeans.modules.uml.ui.products.ad.projecttreedefaultengine;
 
@@ -186,7 +185,6 @@ import org.openide.util.NbBundle;
  * added to the tree.
  *
  * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeEngine
- * @author Trey Spiva
  */
 public class ADProjectTreeEngine
    implements IProjectTreeEngine, IProjectTreeBuilderFilter

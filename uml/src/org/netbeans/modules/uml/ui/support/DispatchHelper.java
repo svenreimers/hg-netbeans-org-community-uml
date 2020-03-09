@@ -46,7 +46,6 @@
 /*
  *
  * Created on May 30, 2003
- * @author Trey Spiva
  */
 package org.netbeans.modules.uml.ui.support;
 
@@ -131,7 +130,6 @@ import org.netbeans.modules.uml.ui.support.diagramsupport.IDrawingAreaEventsSink
 /**
  * DispatcherHelper is used to register and revoke to various event dispatchers.
  *
- * @author Trey Spiva
  */
 public class DispatchHelper
 {

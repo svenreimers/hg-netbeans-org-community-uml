@@ -62,7 +62,6 @@ package org.netbeans.modules.uml.ui.support.commonresources;
 import javax.swing.Icon;
 
 /**
- * @author sumitabhk
  *
  * 
  */

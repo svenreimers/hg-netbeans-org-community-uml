@@ -61,7 +61,6 @@ import org.openide.util.Exceptions;
 
 /**
  *
- * @author Jyothi
  */
 public class PersistenceManager {
 

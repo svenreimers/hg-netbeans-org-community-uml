@@ -75,7 +75,6 @@ import org.openide.util.Lookup;
 import org.openide.windows.TopComponent;
 
 /**
- * @author David Kaspar
  */
 public class AlignWithMoveStrategyProvider extends AlignWithSupport implements MoveStrategy, MoveProvider {
 

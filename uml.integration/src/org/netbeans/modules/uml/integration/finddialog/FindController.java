@@ -107,7 +107,6 @@ import org.netbeans.api.project.Project;
 import org.openide.util.Lookup;
 
 /**
- * @author sumitabhk
  *
  *
  */

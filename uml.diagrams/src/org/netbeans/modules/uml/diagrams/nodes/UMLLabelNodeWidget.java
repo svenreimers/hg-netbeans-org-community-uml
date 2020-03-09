@@ -57,7 +57,6 @@ import org.openide.util.NbBundle;
 
 /**
  *
- * @author Sheryl Su
  */
 public abstract class UMLLabelNodeWidget extends UMLNodeWidget implements LabelNode
 {

@@ -53,7 +53,6 @@ import org.netbeans.modules.uml.common.generics.ETPairT;
 import org.netbeans.modules.uml.ui.support.ProductHelper;
 
 /**
- * @author jingmingm
  *
  */
 public class DrawingProperty implements IDrawingProperty, Comparable

@@ -44,7 +44,6 @@ package org.netbeans.modules.uml.drawingarea.keymap;
 
 /**
  *
- * @author thuy
  */
 public interface DiagramKeyMapConstants {
     public static final String CANCEL_ACTION = "CANCEL_ACTION";

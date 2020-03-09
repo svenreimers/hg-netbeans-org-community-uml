@@ -56,7 +56,6 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 //import org.netbeans.modules.uml.ui.products.ad.diagramengines.sequencediagram.IMessageEdgeDrawEngine;
 
 /**
- * @author brettb
  *
  * This class is used to track all the information about the messages during SQD CDFS
  */

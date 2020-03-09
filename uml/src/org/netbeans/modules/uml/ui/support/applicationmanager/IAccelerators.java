@@ -50,7 +50,6 @@
 package org.netbeans.modules.uml.ui.support.applicationmanager;
 
 /**
- * @author jingmingm
  *
  */
 public interface IAccelerators

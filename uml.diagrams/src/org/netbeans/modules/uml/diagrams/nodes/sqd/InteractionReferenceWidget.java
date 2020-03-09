@@ -51,7 +51,6 @@ import org.netbeans.modules.uml.drawingarea.palette.context.DefaultContextPalett
 
 /**
  *
- * @author sp153251
  */
 public class InteractionReferenceWidget extends CombinedFragmentWidget {
 

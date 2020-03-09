@@ -71,7 +71,6 @@ import org.openide.filesystems.FileUtil;
 
 /**
  *
- * @author Trey Spiva
  */
 public class ProxyDiagramImpl implements IProxyDiagram, 
     DiagramAreaEnumerations, IProductArchiveDefinitions

@@ -46,7 +46,6 @@ import java.awt.Rectangle;
 
 /**
  *
- * @author treyspiva
  */
 public interface WidgetShape
 {

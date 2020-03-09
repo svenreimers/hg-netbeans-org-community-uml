@@ -58,7 +58,6 @@ import org.netbeans.modules.uml.drawingarea.persistence.data.NodeInfo;
 
 /**
  *
- * @author jyothi
  */
 public class GraphNodeReaderFactory {
 

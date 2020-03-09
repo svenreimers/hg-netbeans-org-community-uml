@@ -94,7 +94,6 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
  *   7  2002-06-20  Darshan     Added navigation to the operation for sequence
  *                              diagram messages (fix for bug 145).
  *
- * @author Darshan
  */
 abstract public class SourceNavigable implements ISourceNavigable {
     protected SourceNavigator navigator;

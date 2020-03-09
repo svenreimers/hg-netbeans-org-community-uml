@@ -54,7 +54,6 @@ import org.openide.util.HelpCtx;
 
 /**
  *
- * @author Craig Conover, craig.conover@sun.com
  */
 public class ReverseEngineerDescriptor extends DialogDescriptor
     implements PropertyChangeListener

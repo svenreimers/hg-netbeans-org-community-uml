@@ -63,7 +63,6 @@ import org.netbeans.modules.uml.drawingarea.widgets.ContainerWidget;
 
 /**
  *
- * @author sp153251
  */
 public class InteractionBoundaryWidget extends CombinedFragmentWidget {
 

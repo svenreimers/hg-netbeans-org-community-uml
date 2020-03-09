@@ -54,7 +54,6 @@ import org.netbeans.modules.uml.drawingarea.widgets.ContainerWidget;
 
 /**
  *
- * @author sp153251
  */
 public class CombinedFragmentBodyLayout implements Layout {
     private static final Layout baseLayout = LayoutFactory.createAbsoluteLayout();

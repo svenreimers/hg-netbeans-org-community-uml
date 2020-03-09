@@ -65,7 +65,6 @@ import org.openide.util.NbBundle;
 
 /**
  *
- * @author  Sheryl Su
  */
 public class ExportImagePanel extends javax.swing.JPanel implements DocumentListener, ChangeListener, ItemListener {
 

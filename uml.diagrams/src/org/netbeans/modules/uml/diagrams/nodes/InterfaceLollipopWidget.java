@@ -63,7 +63,6 @@ import org.openide.util.lookup.InstanceContent;
 
 /**
  *
- * @author treyspiva
  */
 public class InterfaceLollipopWidget extends Widget 
         implements ContextViewWidget, PropertyChangeListener

@@ -96,7 +96,6 @@ import org.netbeans.modules.uml.drawingarea.widgets.ContainerWidget;
 import org.openide.util.Exceptions;
 import org.openide.util.Lookup;
 /**
- * @author sumitabhk
  *
  */
 public class SequenceDiagramGenerator implements ISequenceDiagramGenerator

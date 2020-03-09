@@ -57,7 +57,6 @@ import org.openide.loaders.DataObject;
 
 /**
  *
- * @author psb
  */
 public class DestroyLifelineRapidButtonDescription implements ContextPaletteButtonModel
 {

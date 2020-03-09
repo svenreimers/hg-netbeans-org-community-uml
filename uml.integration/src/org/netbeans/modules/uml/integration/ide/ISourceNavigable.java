@@ -60,7 +60,6 @@ package org.netbeans.modules.uml.integration.ide;
  * ---  ----        ---         ----
  *   1  2002-05-22  Darshan     Created.
  *
- * @author Darshan
  */
 public interface ISourceNavigable {
     public void setSourceNavigator(SourceNavigator nav);

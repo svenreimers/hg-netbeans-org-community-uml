@@ -81,7 +81,6 @@ import org.openide.util.NbBundle;
 
 /**
  *
- * @author thuy
  */
 public class ActivityGroupWidget extends ContainerNode //UMLNodeWidget
 {

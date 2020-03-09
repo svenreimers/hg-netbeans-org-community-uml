@@ -46,7 +46,6 @@
 /*
  *
  * Created on Jun 10, 2003
- * @author Trey Spiva
  */
 package org.netbeans.modules.uml.ui.controls.projecttree;
 
@@ -67,7 +66,6 @@ import java.util.ArrayList;
 
 /**
  * 
- * @author Trey Spiva
  */
 public class ProjectTreeEventDispatcherImpl extends EventDispatcher
    implements IProjectTreeEventDispatcher

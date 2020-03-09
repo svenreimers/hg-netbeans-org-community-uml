@@ -56,7 +56,6 @@ import org.netbeans.api.visual.widget.Widget;
 /**
  * This is a scroll widget similar to JScrollPane. In comparison with the ScrollWidget class, this class is using JScrollBar
  * for vertical and horizontal scroll bars.
- * @author David Kaspar
  */
 public class SwingScrollWidget extends Widget {
 

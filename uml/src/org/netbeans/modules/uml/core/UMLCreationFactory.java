@@ -152,7 +152,6 @@ import org.netbeans.modules.uml.core.metamodel.structure.IProject;
 import org.netbeans.modules.uml.core.metamodel.structure.ISubsystem;
 
 /**
- * @author sumitabhk
  *
  */
 public class UMLCreationFactory extends CreationFactory implements IUMLCreationFactory

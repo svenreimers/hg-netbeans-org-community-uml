@@ -63,7 +63,6 @@ import org.openide.util.Lookup;
  * The CommentLinkConnectorProvider will set the comments annotated provider
  * instead of creating a relationship.
  * 
- * @author treyspiva
  */
 public class CommentLinkConnectProvider extends SceneConnectProvider
 {

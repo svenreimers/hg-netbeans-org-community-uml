@@ -89,7 +89,6 @@ import org.netbeans.modules.uml.ui.swing.projecttree.JProjectTree;
  *   1  2002-05-03  Sumitabh    Added new methods displayInsertProjectDialog()
  *                              and displayNewProjectDialog() introduced in
  *                              Wolverine build 64.
- * @author  Ashish
  * @version 1.0
  */
 public class ProductProjectManager implements IProductProjectManager {

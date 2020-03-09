@@ -47,7 +47,6 @@ import org.netbeans.modules.uml.drawingarea.persistence.*;
 
 /**
  *
- * @author Jyothi
  */
 public interface DiagramEdgeWriter {
 

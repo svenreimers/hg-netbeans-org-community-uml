@@ -79,7 +79,6 @@ import org.netbeans.modules.uml.ui.support.diagramsupport.IDrawingAreaEventDispa
  * ---  ----        ---         ----
  *   1  2002-05-22  Darshan     Added support for source navigation.
  *
- * @author  Trey Spiva
  * @version 1.0
  */
 public class DefaultSinkManager extends SourceNavigable {

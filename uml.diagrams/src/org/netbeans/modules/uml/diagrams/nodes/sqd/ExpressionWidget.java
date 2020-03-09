@@ -58,7 +58,6 @@ import org.netbeans.modules.uml.drawingarea.view.DesignerTools;
 
 /**
  *
- * @author sp153251
  */
 public class ExpressionWidget extends FeatureWidget implements PropertyChangeListener {
     private IValueSpecification spec;

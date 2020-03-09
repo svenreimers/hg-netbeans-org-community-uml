@@ -54,7 +54,6 @@ import org.openide.util.NbBundle;
 
 /**
  *
- * @author thuy
  */
 public class JoinForkWidget extends UMLLabelNodeWidget implements ResizeToContentMarker
 {

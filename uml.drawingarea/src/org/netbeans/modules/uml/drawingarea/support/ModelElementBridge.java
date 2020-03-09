@@ -51,7 +51,6 @@ import org.netbeans.modules.uml.core.support.umlutils.IElementLocator;
 
 /**
  *
- * @author treyspiva
  */
 public class ModelElementBridge
 {

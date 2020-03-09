@@ -47,7 +47,6 @@ import org.netbeans.modules.uml.drawingarea.view.UMLWidget;
 
 /**
  *
- * @author Sheryl Su
  */
 public class FinalStateWidget extends FinalNodeWidget
 {

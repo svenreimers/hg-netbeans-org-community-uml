@@ -49,7 +49,6 @@ import org.netbeans.modules.uml.ui.products.ad.application.action.IContributionM
 
 /**
  *
- * @author Trey Spiva
  */
 public interface IToolBarManager extends IContributionManager
 {

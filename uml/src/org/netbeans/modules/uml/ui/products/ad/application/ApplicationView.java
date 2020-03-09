@@ -65,7 +65,6 @@ import org.netbeans.modules.uml.ui.swing.testbed.addin.menu.TestBedMenuManager;
 
 /**
  * 
- * @author Trey Spiva
  */
 public abstract class ApplicationView extends JPanel
 {

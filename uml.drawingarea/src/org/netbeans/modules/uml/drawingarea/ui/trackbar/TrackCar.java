@@ -83,7 +83,6 @@ import org.netbeans.modules.uml.ui.support.finddialog.IFindController;
 
 /**
  *
- * @author Trey Spiva
  */
 public class TrackCar extends TrackItem implements ActionListener
 {

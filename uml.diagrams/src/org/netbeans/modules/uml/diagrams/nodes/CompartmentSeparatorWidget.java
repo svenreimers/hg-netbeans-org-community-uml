@@ -52,7 +52,6 @@ import org.netbeans.api.visual.widget.SeparatorWidget;
 
 /**
  *
- * @author Sheryl Su
  */
 public class CompartmentSeparatorWidget extends SeparatorWidget
 {

@@ -67,7 +67,6 @@ import org.netbeans.modules.uml.core.workspacemanagement.IWorkspace;
 
 /**
  * 
- * @author Trey Spiva
  */
 public class PresentationFinder implements IPresentationFinder
 {

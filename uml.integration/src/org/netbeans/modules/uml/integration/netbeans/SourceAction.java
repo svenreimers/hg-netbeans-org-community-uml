@@ -46,7 +46,6 @@ package org.netbeans.modules.uml.integration.netbeans;
 
 /**
  * Company:
- * @author swadebeshp
  * @version 1.0
  */
 

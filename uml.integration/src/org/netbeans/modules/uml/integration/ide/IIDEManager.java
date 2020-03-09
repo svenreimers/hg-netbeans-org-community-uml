@@ -62,7 +62,6 @@ import org.netbeans.modules.uml.core.metamodel.structure.IProject;
  *  Interface that an IDE integration must implement so that Describe can ask
  * the IDE to do various housekeeping tasks.
  *
- * @author  Darshan
  * @version 1.0
  */
 public interface IIDEManager {

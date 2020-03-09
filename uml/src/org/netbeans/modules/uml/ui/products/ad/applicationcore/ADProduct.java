@@ -104,7 +104,6 @@ import org.netbeans.modules.uml.ui.swing.propertyeditor.IPropertyEditor;
 import org.openide.ErrorManager;
 
 /**
- * @author sumitabhk
  *
  */
 public class ADProduct extends CoreProduct implements IADProduct

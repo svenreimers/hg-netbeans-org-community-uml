@@ -47,7 +47,6 @@ import org.netbeans.modules.uml.core.metamodel.common.commonstatemachines.ITrans
 
 /**
  *
- * @author Sheryl Su
  */
 public class TransitionWidget extends ProcedureWidget implements PropertyChangeListener
 {

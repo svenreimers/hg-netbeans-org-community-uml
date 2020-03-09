@@ -71,7 +71,6 @@ import org.openide.util.Lookup;
 
 /**
  *
- * @author Sheryl Su
  */
 public abstract class CompositeNodeWidget extends UMLNodeWidget implements ContainerWithCompartments,CompositeNode
 {

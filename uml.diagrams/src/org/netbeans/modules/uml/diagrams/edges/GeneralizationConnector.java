@@ -50,7 +50,6 @@ import org.netbeans.api.visual.widget.Scene;
 
 /**
  *
- * @author treyspiva
  */
 public class GeneralizationConnector extends AbstractUMLConnectionWidget
 {

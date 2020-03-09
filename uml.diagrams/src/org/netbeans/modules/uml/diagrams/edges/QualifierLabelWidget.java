@@ -63,7 +63,6 @@ import org.netbeans.modules.uml.drawingarea.util.Util;
 
 /**
  *
- * @author treyspiva
  */
 public class QualifierLabelWidget extends Widget 
         implements PropertyChangeListener

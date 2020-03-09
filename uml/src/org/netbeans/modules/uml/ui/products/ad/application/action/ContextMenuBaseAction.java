@@ -49,7 +49,6 @@ package org.netbeans.modules.uml.ui.products.ad.application.action;
 import java.awt.event.ActionEvent;
 
 /**
- * @author sumitabhk
  *
  */
 public class ContextMenuBaseAction extends BaseAction

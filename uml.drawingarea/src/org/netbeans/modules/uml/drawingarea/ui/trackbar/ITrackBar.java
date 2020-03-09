@@ -56,7 +56,6 @@ import org.netbeans.modules.uml.ui.support.archivesupport.IProductArchive;
 
 /**
  *
- * @author Trey Spiva
  */
 public interface ITrackBar
 {

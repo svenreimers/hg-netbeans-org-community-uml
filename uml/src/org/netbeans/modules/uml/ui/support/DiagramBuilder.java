@@ -68,7 +68,6 @@ import org.netbeans.modules.uml.core.support.umlutils.ETArrayList;
  * dialogs build and maintain their various lists.  It also can perform some 
  * various actions.
  * 
- * @author Trey Spiva
  */
 public class DiagramBuilder
 {

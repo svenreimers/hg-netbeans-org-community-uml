@@ -55,7 +55,6 @@ import org.openide.loaders.DataObject;
 
 /**
  *
- * @author Jyothi
  */
 public class SaveDiagram implements SaveCookie {
 

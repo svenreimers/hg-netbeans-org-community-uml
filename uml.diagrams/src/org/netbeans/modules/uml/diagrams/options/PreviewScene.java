@@ -74,7 +74,6 @@ import org.openide.util.NbBundle;
 
 /**
  *
- * @author Sheryl Su
  */
 public class PreviewScene extends GraphScene<IPresentationElement, IPresentationElement> implements Customizable
 {

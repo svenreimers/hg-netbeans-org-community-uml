@@ -51,7 +51,6 @@ package org.netbeans.modules.uml.ui.controls.projecttree;
  * Defines the interfaces for an object that listens to changed in a Project
  * Tree Model.
  *
- * @author Trey Spiva
  */
 public interface IProjectTreeModelListener
 {

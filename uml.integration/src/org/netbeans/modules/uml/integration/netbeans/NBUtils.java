@@ -105,7 +105,6 @@ import org.netbeans.modules.uml.integration.ide.events.MethodParameterInfo;
  * anything vaguely file-ish (involving DataObjects, FileObjects and suchlike)
  * should go into NBFileUtils.
  *
- * @author  Darshan
  * @version 1.0
  */
 public final class NBUtils {

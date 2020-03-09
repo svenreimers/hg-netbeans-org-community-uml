@@ -46,7 +46,6 @@
 /*
  *
  * Created on Jun 18, 2003
- * @author Trey Spiva
  */
 package org.netbeans.modules.uml.ui.controls.projecttree;
 
@@ -59,7 +58,6 @@ import org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeDiagram;
 
 /**
  * 
- * @author Trey Spiva
  */
 public class ProjectTreeDiagramNode extends ProjectTreeNode
    implements ITreeDiagram

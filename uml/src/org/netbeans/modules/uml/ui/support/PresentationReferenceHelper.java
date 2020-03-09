@@ -66,7 +66,6 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.IElement;
 
 /**
- * @author sumitabhk
  *
  */
 public class PresentationReferenceHelper

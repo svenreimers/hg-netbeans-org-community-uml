@@ -62,7 +62,6 @@ import org.openide.util.Lookup;
 
 /**
  *
- * @author treyspiva
  */
 public class SwingPaletteManager implements ContextPaletteManager
 {

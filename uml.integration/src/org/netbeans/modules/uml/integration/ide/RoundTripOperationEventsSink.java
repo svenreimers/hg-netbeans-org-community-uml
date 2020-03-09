@@ -89,7 +89,6 @@ import org.netbeans.modules.uml.core.support.umlsupport.Log;
  *   7  2002-08-06  Mukta       Added code to handle the
  *                              IMultipleParameterTypeChangeRequest
  *
- * @author  Ashish
  * @version 1.0
  */
 public class RoundTripOperationEventsSink

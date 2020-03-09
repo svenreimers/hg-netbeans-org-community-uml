@@ -48,7 +48,6 @@ import org.netbeans.api.visual.widget.ConnectionWidget;
 
 /**
  *
- * @author treyspiva
  */
 public class KeywordLabelManager extends BasicUMLLabelManager
 {

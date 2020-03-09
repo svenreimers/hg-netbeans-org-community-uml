@@ -66,7 +66,6 @@ import org.netbeans.modules.uml.integration.ide.UMLSupport;
 
 /**
  *
- * @author Craig Conover, craig.conover@sun.com
  */
 public final class GenCodeUtil
 {

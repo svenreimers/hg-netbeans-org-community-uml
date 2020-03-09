@@ -894,7 +894,6 @@ public class NBFileUtils
     /**
      *  Signals that a file that was expected to be writable was found read-only.
      *
-     * @author  Darshan
      * @version 1.0
      */
     public static class UnwritableFileException extends RuntimeException

@@ -48,7 +48,6 @@ import org.netbeans.modules.uml.drawingarea.NodeWidgetFactory;
 
 /**
  *
- * @author treyspiva
  */
 public class BoundaryViewNodeFactory implements NodeWidgetFactory
 {

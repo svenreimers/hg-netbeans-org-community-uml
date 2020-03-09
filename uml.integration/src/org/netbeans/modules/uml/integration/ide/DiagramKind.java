@@ -64,7 +64,6 @@ import org.netbeans.modules.uml.core.metamodel.diagrams.IDiagram;
  * ---  ----        ---         ----
  *   1  2002-05-22  Darshan     Created.
  *
- * @author Darshan
  */
 public class DiagramKind {
     public static final int DK_UNKNOWN                  = 0x0000;

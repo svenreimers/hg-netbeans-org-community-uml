@@ -52,7 +52,6 @@ import org.netbeans.modules.uml.drawingarea.persistence.data.EdgeInfo;
 
 /**
  * message connection with perfomance optimization for extra small zooms
- * @author sp153251
  */
 public class AsynchronousMessageConnectionWidget extends MessageWidget{
     //

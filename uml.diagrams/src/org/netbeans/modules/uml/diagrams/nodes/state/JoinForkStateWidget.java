@@ -46,7 +46,6 @@ import org.netbeans.modules.uml.diagrams.nodes.activity.ActivityJoinForkWidget;
 
 /**
  *
- * @author Sheryl Su
  */
 public class JoinForkStateWidget extends ActivityJoinForkWidget
 {

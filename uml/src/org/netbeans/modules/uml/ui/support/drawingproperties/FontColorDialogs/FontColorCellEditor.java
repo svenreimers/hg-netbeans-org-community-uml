@@ -74,7 +74,6 @@ import org.netbeans.modules.uml.ui.support.drawingproperties.IFontProperty;
 
 
 /**
- * @author sumitabhk
  *
  */
 public class FontColorCellEditor extends AbstractCellEditor implements

@@ -57,7 +57,6 @@ import org.netbeans.modules.uml.drawingarea.view.DesignerScene;
 
 /**
  * message connection with perfomance optimization for extra small zooms
- * @author sp153251
  */
 public class ResultMessageConnectionWidget extends MessageWidget {
     //

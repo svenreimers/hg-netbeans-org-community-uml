@@ -49,7 +49,6 @@ import org.netbeans.modules.uml.drawingarea.NodeWidgetFactory;
 
 /**
  *
- * @author Sheryl Su
  */
 public class JoinStateNodeFactory implements NodeWidgetFactory
 {

@@ -72,7 +72,6 @@ import org.openide.util.lookup.InstanceContent;
 
 /**
  *
- * @author sp153251
  */
 public class OperationLabelWidget extends FeatureWidget implements PropertyChangeListener {
     private IOperation oper;

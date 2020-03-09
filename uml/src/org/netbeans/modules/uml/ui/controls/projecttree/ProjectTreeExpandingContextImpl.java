@@ -46,7 +46,6 @@
 /*
  *
  * Created on Jun 12, 2003
- * @author Trey Spiva
  */
 package org.netbeans.modules.uml.ui.controls.projecttree;
 
@@ -54,7 +53,6 @@ import org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeItem;
 
 /**
  *
- * @author Trey Spiva
  */
 public class ProjectTreeExpandingContextImpl
    implements IProjectTreeExpandingContext

@@ -58,7 +58,6 @@ import org.netbeans.modules.uml.drawingarea.view.DesignerScene;
 
 /**
  *
- * @author krichard
  */
 public class ContainerAgnosticLayout<N, E> implements GraphLayoutListener {
 

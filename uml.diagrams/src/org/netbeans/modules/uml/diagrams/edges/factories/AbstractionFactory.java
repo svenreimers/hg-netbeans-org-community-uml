@@ -51,7 +51,6 @@ import org.netbeans.modules.uml.core.metamodel.infrastructure.IRelationFactory;
 
 /**
  *
- * @author treyspiva
  */
 public class AbstractionFactory extends AbstractRelationshipFactory
 {

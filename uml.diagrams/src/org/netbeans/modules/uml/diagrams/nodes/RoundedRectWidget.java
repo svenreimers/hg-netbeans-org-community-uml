@@ -56,7 +56,6 @@ import org.netbeans.api.visual.widget.Scene;
 import org.netbeans.modules.uml.drawingarea.view.CustomizableWidget;
 
 /**
- * @author thuy
  */
 public class RoundedRectWidget extends CustomizableWidget
 {

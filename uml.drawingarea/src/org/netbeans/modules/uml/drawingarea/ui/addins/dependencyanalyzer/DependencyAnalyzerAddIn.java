@@ -78,7 +78,6 @@ import org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeItem;
 import org.netbeans.modules.uml.drawingarea.ui.addins.diagramcreator.DiagCreatorAddIn;
 
 /**
- * @author sumitabhk
  *
  */
 public class DependencyAnalyzerAddIn // implements IAddIn, IAddInButtonSupport,	IViewActionDelegate

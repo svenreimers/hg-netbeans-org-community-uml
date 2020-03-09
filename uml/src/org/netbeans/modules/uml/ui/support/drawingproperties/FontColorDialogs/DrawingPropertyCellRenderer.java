@@ -80,7 +80,6 @@ import org.netbeans.modules.uml.ui.support.drawingproperties.IDrawingProperty;
 import org.netbeans.modules.uml.ui.support.drawingproperties.IFontProperty;
 
 /**
- * @author sumitabhk
  *
  */
 public class DrawingPropertyCellRenderer extends DefaultTableCellRenderer

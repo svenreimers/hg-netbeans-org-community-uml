@@ -62,7 +62,6 @@ import org.netbeans.modules.uml.ui.controls.editcontrol.EditControlImpl;
 
 /**
  *
- * @author sp153251
  */
 public class MultilineEditableCompartmentWidget extends UMLMultilineLabelWidget
 {

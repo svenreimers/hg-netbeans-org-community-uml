@@ -63,7 +63,6 @@ import org.netbeans.modules.uml.drawingarea.view.UMLNodeWidget;
 
 /**
  *
- * @author treyspiva
  */
 public class ArtifactWidget extends UMLNodeWidget implements PropertyChangeListener
 {

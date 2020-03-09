@@ -52,7 +52,6 @@ import org.netbeans.modules.uml.drawingarea.palette.RelationshipFactory;
 
 /**
  *
- * @author treyspiva
  */
 public class CommentLinkFactory implements RelationshipFactory
 {

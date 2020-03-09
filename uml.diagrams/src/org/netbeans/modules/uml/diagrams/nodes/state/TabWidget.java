@@ -55,7 +55,6 @@ import org.netbeans.modules.uml.drawingarea.view.UMLNodeWidget;
 
 /**
  *
- * @author Sheryl Su
  */
 public class TabWidget extends CustomizableWidget
 {

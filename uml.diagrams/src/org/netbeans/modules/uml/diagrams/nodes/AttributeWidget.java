@@ -60,7 +60,6 @@ import org.netbeans.modules.uml.drawingarea.view.UMLNodeWidget;
 
 /**
  *
- * @author treyspiva
  */
 public class AttributeWidget extends FeatureWidget implements PropertyChangeListener {
     private Font lastFont;

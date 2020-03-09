@@ -76,7 +76,6 @@ import org.netbeans.modules.uml.drawingarea.view.ResourceValue;
 
 /**
  *
- * @author treyspiva
  */
 public class DesignPatternWidget extends UMLNodeWidget 
     implements PropertyChangeListener

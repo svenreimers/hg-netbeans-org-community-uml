@@ -58,7 +58,6 @@ import org.netbeans.modules.uml.drawingarea.view.UMLNodeWidget;
 
 /**
  *
- * @author sp153251
  */
 public class LoadInteractionOperandsProvider implements ActionProvider{
     private UMLNodeWidget combinedfragment;

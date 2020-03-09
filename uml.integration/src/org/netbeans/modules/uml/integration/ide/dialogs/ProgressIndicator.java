@@ -59,7 +59,6 @@ import org.netbeans.modules.uml.core.support.umlsupport.Log;
 /**
  * A simple dialog that allow the integration to update the user on the
  * progress of a time consuming process.
- * @author  Trey Spiva
  * @version 1.0
  */
 public class ProgressIndicator extends javax.swing.JDialog

@@ -54,7 +54,6 @@ import java.io.File;
 
 /**
  *
- * @author  Craig Conover, craig.conover@sun.com
  */
 public class ChooseLocationDialog extends javax.swing.JDialog
 {

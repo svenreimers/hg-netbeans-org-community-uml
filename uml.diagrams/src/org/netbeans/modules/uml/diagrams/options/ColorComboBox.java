@@ -57,7 +57,6 @@ import org.openide.util.NbBundle;
 
 /**
  *
- * @author Administrator
  */
 public class ColorComboBox {
     

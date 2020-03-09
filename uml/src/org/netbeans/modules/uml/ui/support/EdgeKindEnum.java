@@ -48,7 +48,6 @@ package org.netbeans.modules.uml.ui.support;
 
 /*
  *
- * @author KevinM
  *
  */
 public interface EdgeKindEnum

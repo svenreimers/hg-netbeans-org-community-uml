@@ -70,7 +70,6 @@ import org.netbeans.modules.uml.drawingarea.view.DesignerTools;
 
 /**
  * The PaletteButton is displayed in the context palette.  
- * @author treyspiva
  */
 public class PaletteButton extends ContextPaletteButton
 {

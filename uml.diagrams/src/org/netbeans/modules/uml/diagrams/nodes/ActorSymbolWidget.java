@@ -53,7 +53,6 @@ import org.openide.util.NbBundle;
 
 /**
  * This widget represents only actor symbol and do not represent Actor element
- * @author sp153251
  */
 public class ActorSymbolWidget extends CustomizableWidget{
     

@@ -54,7 +54,6 @@ import org.netbeans.modules.uml.drawingarea.palette.context.ContextPaletteManage
 import org.openide.windows.TopComponent;
 
 /**
- * @author David Kaspar
  */
 public final class ContainerAlignWithMoveStrategyProvider extends AlignWithSupport implements MoveStrategy, MoveProvider {
 

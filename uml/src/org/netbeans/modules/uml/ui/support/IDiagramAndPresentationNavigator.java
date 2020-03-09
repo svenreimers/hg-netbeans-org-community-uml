@@ -55,7 +55,6 @@ import org.netbeans.modules.uml.ui.support.diagramsupport.IPresentationTarget;
 
 /**
  *
- * @author Trey Spiva
  */
 public interface IDiagramAndPresentationNavigator
 {

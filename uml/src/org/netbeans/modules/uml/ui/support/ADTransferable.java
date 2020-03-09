@@ -45,7 +45,6 @@
 /*
  *
  * Created on Jun 26, 2003
- * @author Trey Spiva
  */
 package org.netbeans.modules.uml.ui.support;
 
@@ -75,7 +74,6 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
  * <a href="http://java.sun.com/docs/books/tutorial/uiswing/misc/dnd.html"> Drag
  * and Drop Tutorial</a>.
  *   
- * @author Trey Spiva
  */
 public class ADTransferable implements Transferable
 {
@@ -465,7 +463,6 @@ public class ADTransferable implements Transferable
    /**
     * The data for the "ADTransfer Data" DataFlavor.
     * 
-    * @author Trey Spiva
     */
    public class ADTransferData 
    {

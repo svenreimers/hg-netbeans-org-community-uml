@@ -64,7 +64,6 @@ import org.netbeans.modules.uml.drawingarea.palette.context.ContextPaletteModel;
 
 /**
  *
- * @author treyspiva
  */
 public class ContextPalette extends JPanel
 {

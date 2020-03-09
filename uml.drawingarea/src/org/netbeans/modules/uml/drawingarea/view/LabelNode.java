@@ -46,7 +46,6 @@ import org.netbeans.api.visual.widget.LabelWidget;
 
 /**
  *
- * @author Sheryl Su
  */
 public interface LabelNode {
 

@@ -54,7 +54,6 @@ import org.netbeans.modules.uml.ui.support.contextmenusupport.IProductContextMen
 import org.netbeans.modules.uml.ui.support.contextmenusupport.IProductContextMenuSelectionHandler;
 
 /**
- * @author sumitabhk
  *
  */
 public class AddInEventSink implements IProjectTreeContextMenuEventsSink,

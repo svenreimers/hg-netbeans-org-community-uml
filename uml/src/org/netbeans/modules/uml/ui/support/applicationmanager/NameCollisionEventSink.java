@@ -59,7 +59,6 @@ import org.netbeans.modules.uml.ui.controls.editcontrol.IEditControl;
 import org.netbeans.modules.uml.ui.controls.editcontrol.IEditControlEventSink;
 
 /**
- * @author sumitabhk
  *
  */
 public class NameCollisionEventSink implements INamedElementEventsSink,

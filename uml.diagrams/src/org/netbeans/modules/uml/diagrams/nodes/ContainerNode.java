@@ -74,7 +74,6 @@ import org.openide.util.Lookup;
 
 /**
  *
- * @author treyspiva
  */
 public abstract class ContainerNode extends UMLNodeWidget implements org.netbeans.modules.uml.drawingarea.widgets.ContainerNode
 {

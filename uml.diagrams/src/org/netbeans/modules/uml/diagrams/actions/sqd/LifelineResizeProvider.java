@@ -53,7 +53,6 @@ import org.netbeans.modules.uml.drawingarea.view.DesignerScene;
 
 /**
  *
- * @author sp153251
  */
 public class LifelineResizeProvider extends WindowStyleResizeProvider {
     

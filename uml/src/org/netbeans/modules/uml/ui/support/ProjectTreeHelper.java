@@ -74,7 +74,6 @@ import org.openide.windows.WindowManager;
 
 /**
  *
- * @author Administrator
  */
 public class ProjectTreeHelper
 {

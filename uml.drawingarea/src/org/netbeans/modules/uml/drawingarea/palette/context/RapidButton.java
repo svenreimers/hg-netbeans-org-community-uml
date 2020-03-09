@@ -55,7 +55,6 @@ import org.netbeans.modules.uml.drawingarea.view.DesignerScene;
 
 /**
  *
- * @author treyspiva
  */
 public class RapidButton extends Widget
 {

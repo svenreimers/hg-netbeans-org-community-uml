@@ -77,7 +77,6 @@ import org.openide.util.Utilities;
 
 /**
  *
- * @author Jyothi
  */
 public class Util 
 {

@@ -48,7 +48,6 @@ package org.netbeans.modules.uml.ui.support;
 
 /**
  *
- * @author Trey Spiva
  */
 public class BusyIndicator
 {

@@ -48,7 +48,6 @@ import javax.swing.JToggleButton;
 
 /**
  *
- * @author treyspiva
  */
 public interface DesignerTools
 {

@@ -89,7 +89,6 @@ import org.netbeans.modules.uml.integration.ide.events.MethodInfo;
  * elements.  When the integration navigate to a source code element the editor
  * window will not gain focus.
  *
- * @author  Trey Spiva
  * @version 1.0
  */
 public class NBSourceNavigator implements SourceNavigator

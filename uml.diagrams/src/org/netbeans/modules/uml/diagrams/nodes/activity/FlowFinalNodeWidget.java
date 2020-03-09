@@ -52,7 +52,6 @@ import org.netbeans.modules.uml.drawingarea.view.ResourceType;
 
 /**
  *
- * @author thuy
  */
 public class FlowFinalNodeWidget extends ControlNodeWidget
 {    

@@ -49,7 +49,6 @@ package org.netbeans.modules.uml.ui.support.contextmenusupport;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 /**
- * @author sumitabhk
  *
  *
  */

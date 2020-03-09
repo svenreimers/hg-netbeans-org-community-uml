@@ -69,7 +69,6 @@ import org.openide.util.NbBundle;
 
 /**
  *
- * @author treyspiva
  */
 public abstract class SwitchableWidget extends UMLNodeWidget
 {

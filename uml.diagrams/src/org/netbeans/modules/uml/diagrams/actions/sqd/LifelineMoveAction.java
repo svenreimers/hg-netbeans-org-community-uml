@@ -55,7 +55,6 @@ import org.netbeans.modules.uml.drawingarea.palette.context.ContextPaletteManage
 
 /**
  *
- * @author sp153251
  */
 public class LifelineMoveAction extends WidgetAction.LockedAdapter {
 

@@ -36,7 +36,6 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 //import org.netbeans.modules.uml.ui.swing.drawingarea.IReconnectEdgeContext;
 
 /**
- * @author KevinM
  *
   */
 public class NestedLinkPresentation

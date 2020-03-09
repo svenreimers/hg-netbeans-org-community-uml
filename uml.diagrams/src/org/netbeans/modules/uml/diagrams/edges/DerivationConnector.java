@@ -52,7 +52,6 @@ import org.netbeans.modules.uml.drawingarea.LabelManager;
 
 /**
  *
- * @author treyspiva
  */
 public class DerivationConnector extends AbstractUMLConnectionWidget
 {

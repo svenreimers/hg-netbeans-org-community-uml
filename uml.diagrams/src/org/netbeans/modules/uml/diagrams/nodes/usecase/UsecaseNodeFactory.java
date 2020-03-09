@@ -47,7 +47,6 @@ import org.netbeans.modules.uml.drawingarea.NodeWidgetFactory;
 
 /**
  *
- * @author treyspiva
  */
 public class UsecaseNodeFactory implements NodeWidgetFactory
 {

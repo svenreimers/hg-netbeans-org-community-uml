@@ -49,7 +49,6 @@ import org.netbeans.modules.uml.core.metamodel.diagrams.IDiagram;
 import org.netbeans.modules.uml.core.metamodel.diagrams.IProxyDiagram;
 
 /**
- * @author sumitabhk
  *
  *
  */

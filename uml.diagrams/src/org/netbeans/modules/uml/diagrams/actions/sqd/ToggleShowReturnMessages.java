@@ -58,7 +58,6 @@ import org.openide.util.NbBundle;
 
 /**
  *
- * @author psb
  */
 public class ToggleShowReturnMessages extends SceneNodeAction
 {

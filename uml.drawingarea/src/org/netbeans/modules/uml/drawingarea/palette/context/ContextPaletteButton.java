@@ -57,7 +57,6 @@ import javax.swing.border.Border;
 
 /**
  *
- * @author treyspiva
  */
 public abstract class ContextPaletteButton extends JPanel
 {

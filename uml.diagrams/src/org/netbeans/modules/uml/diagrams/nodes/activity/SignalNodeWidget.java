@@ -61,7 +61,6 @@ import org.netbeans.modules.uml.drawingarea.view.UMLLabelWidget;
 
 /**
  *
- * @author thuy
  */
 public class SignalNodeWidget extends ActivityNodeWidget
 {

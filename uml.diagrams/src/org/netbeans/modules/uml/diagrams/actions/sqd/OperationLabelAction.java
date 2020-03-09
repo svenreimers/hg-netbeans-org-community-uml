@@ -57,7 +57,6 @@ import org.netbeans.modules.uml.drawingarea.actions.ToggleLabelAction;
 
 /**
  * action adds new operation and show label with operation
- * @author sp153251
  */
 public class OperationLabelAction extends ToggleLabelAction {
     private KIND kind;

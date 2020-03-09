@@ -52,7 +52,6 @@ import org.openide.util.Exceptions;
 
 /**
  *
- * @author jyothi
  */
 class FeatureStateReader implements GraphNodeReader {
 

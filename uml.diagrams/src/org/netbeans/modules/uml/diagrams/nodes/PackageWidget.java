@@ -78,7 +78,6 @@ import org.openide.util.NbBundle;
 
 /**
  *
- * @author Jyothi
  */
 public class PackageWidget extends ContainerNode
         implements PropertyChangeListener

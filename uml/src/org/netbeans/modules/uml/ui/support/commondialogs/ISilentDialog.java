@@ -46,13 +46,11 @@
 /*
  *
  * Created on Jul 1, 2003
- * @author Trey Spiva
  */
 package org.netbeans.modules.uml.ui.support.commondialogs;
 
 /**
  *
- * @author Trey Spiva
  */
 public interface ISilentDialog
 {

@@ -65,7 +65,6 @@ import javax.swing.UIManager;
 
 /**
  *
- * @author  Trey Spiva
  */
 public class SwingErrorDialog  implements IErrorDialog
 {

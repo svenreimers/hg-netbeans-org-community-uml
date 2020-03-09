@@ -62,7 +62,6 @@ import org.openide.windows.TopComponent;
 
 /**
  *
- * @author  Jyothi
  */
 public class DiagramNavigatorContent extends JPanel implements PropertyChangeListener {
     

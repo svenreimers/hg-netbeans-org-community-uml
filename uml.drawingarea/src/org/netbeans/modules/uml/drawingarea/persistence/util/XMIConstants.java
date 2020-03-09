@@ -45,7 +45,6 @@ package org.netbeans.modules.uml.drawingarea.persistence.util;
 
 /**
  *
- * @author Jyothi
  */
 public class XMIConstants {
 

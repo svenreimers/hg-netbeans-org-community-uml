@@ -66,7 +66,6 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
  * <p>Description: </p>
  * <p>Copyright: Copyright (c) 2002</p>
  * <p>Company: </p>
- * @author unascribed
  * @version 1.0
  */
 

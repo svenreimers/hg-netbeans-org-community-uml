@@ -51,7 +51,6 @@ import org.netbeans.modules.uml.diagrams.nodes.sqd.MessagePinWidget;
 
 /**
  *
- * @author sp153251
  */
 public class LifelineBoxLayout implements Layout{
 

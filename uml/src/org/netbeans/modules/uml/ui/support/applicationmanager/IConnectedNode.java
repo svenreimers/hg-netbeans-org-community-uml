@@ -47,7 +47,6 @@
 package org.netbeans.modules.uml.ui.support.applicationmanager;
 
 /**
- * @author josephg
  *
  *
  */

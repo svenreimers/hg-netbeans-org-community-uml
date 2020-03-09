@@ -82,7 +82,6 @@ import org.openide.util.lookup.InstanceContent;
 
 /**
  *
- * @author treyspiva
  */
 public abstract class FeatureWidget extends CustomizableWidget
         implements DiagramNodeWriter, DiagramEdgeWriter, UMLWidget

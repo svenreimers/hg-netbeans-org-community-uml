@@ -52,7 +52,6 @@ package org.netbeans.modules.uml.ui.support.drawingproperties;
 import java.awt.Font;
 
 /**
- * @author jingmingm
  *
  */
 public class FontProperty extends DrawingProperty implements IFontProperty

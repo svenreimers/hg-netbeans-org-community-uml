@@ -49,7 +49,6 @@ import org.netbeans.modules.uml.drawingarea.widgets.ContainerWidget;
 
 /**
  *
- * @author Sheryl Su
  */
 public final class RegionContainerWidget extends ContainerWidget
 {    

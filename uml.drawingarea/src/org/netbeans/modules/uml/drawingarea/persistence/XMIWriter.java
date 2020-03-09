@@ -58,7 +58,6 @@ import org.openide.util.Exceptions;
 
 /**
  *
- * @author jyothi
  */
 public class XMIWriter {
 private static String SPACE1 = " ";

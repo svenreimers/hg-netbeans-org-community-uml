@@ -47,7 +47,6 @@ import org.netbeans.modules.uml.drawingarea.palette.RelationshipFactory;
 
 /**
  *
- * @author treyspiva
  */
 public abstract class AbstractRelationshipFactory implements RelationshipFactory
 {

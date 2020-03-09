@@ -57,7 +57,6 @@ import org.netbeans.modules.uml.drawingarea.widgets.MessagePin;
 
 /**
  *
- * @author sp153251
  */
 public class MessagePinWidget extends Widget implements Comparable<MessagePinWidget>,MessagePin{
 

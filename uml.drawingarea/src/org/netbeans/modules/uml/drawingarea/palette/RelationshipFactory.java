@@ -48,7 +48,6 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.IPresentationElem
 
 /**
  *
- * @author treyspiva
  */
 public interface RelationshipFactory
 {

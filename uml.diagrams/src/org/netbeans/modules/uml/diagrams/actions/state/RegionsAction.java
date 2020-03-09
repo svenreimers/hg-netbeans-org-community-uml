@@ -68,7 +68,6 @@ import org.openide.util.NbBundle;
 
 /**
  *
- * @author Sheryl Su
  */
 public class RegionsAction extends SceneNodeAction implements ContextAwareAction
 {

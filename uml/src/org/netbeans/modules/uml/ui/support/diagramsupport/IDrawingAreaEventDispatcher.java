@@ -45,7 +45,6 @@
 /*
  *
  * Created on Jun 19, 2003
- * @author Trey Spiva
  */
 package org.netbeans.modules.uml.ui.support.diagramsupport;
 
@@ -56,7 +55,6 @@ import org.openide.loaders.DataObject;
 
 /**
  * 
- * @author Trey Spiva
  */
 public interface IDrawingAreaEventDispatcher extends IEventDispatcher
 {

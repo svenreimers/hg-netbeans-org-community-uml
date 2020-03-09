@@ -80,7 +80,6 @@ import org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeModel;
 import org.openide.util.NbPreferences;
 
 /**
- * @author treys
  *
  */
 public class ProductHelper

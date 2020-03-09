@@ -112,7 +112,6 @@ import org.netbeans.modules.uml.core.support.Debug;
  *   8  2002-06-05  Darshan     Modified to allow the handling of
  *                              generalizations between interfaces.
  *
- * @author  Ashish
  * @version 1.0
  */
 public class RoundTripClassEventsSink extends RoundTripSource

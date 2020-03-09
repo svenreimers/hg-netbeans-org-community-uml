@@ -69,7 +69,6 @@ import org.netbeans.modules.uml.core.metamodel.structure.IProject;
  * by IDE integrations. If the integration doesn't subclass this, an instance
  * of this will be used as the IDE manager.
  *
- * @author  Darshan
  * @version 1.0
  */
 public class IDEManagerAdapter implements IIDEManager {

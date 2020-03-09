@@ -55,7 +55,6 @@ import org.openide.util.Exceptions;
 
 /**
  *
- * @author Thuy
  */
 
 public final class UMLPaletteFactory

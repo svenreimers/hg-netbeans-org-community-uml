@@ -63,7 +63,6 @@ import org.openide.util.lookup.InstanceContent;
 
 /**
  *
- * @author treyspiva
  */
 public class TemplateWidget extends LabelWidget implements Customizable
 {

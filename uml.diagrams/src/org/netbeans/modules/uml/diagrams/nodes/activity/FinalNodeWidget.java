@@ -46,7 +46,6 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.IPresentationElem
 
 /**
  *
- * @author thuy
  */
 public class FinalNodeWidget extends ControlNodeWidget
 {

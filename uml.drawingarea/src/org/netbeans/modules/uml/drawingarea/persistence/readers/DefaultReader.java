@@ -59,7 +59,6 @@ import org.openide.util.Exceptions;
 
 /**
  *
- * @author jyothi
  */
 public class DefaultReader implements GraphNodeReader {
 

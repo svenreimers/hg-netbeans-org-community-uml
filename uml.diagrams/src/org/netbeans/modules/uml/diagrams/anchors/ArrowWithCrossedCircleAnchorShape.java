@@ -51,7 +51,6 @@ import org.netbeans.api.visual.anchor.AnchorShape;
 import java.awt.geom.GeneralPath;
 
 /**
- * @author sp153251
  */
 public class ArrowWithCrossedCircleAnchorShape implements AnchorShape
 {

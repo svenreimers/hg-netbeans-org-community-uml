@@ -57,7 +57,6 @@ import org.netbeans.modules.uml.diagrams.anchors.TargetMessageAnchor;
 
 /**
  *
- * @author sp153251
  */
 public class LifelineSynchMessageConnectorDecorator implements ConnectDecorator {
     

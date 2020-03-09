@@ -57,7 +57,6 @@ import org.openide.loaders.DataObject;
 
 /**
  *
- * @author treyspiva
  */
 public class NestedLinkPaletteModel implements ContextPaletteButtonModel
 {

@@ -46,7 +46,6 @@
 /*
  *
  * Created on Jun 11, 2003
- * @author Trey Spiva
  */
 package org.netbeans.modules.uml.ui.controls.projecttree;
 
@@ -65,7 +64,6 @@ import org.netbeans.modules.uml.ui.support.projecttreesupport.ProjectTreeCompara
 
 /**
  * 
- * @author Trey Spiva
  */
 public class ProjectTreeNode extends DefaultMutableTreeNode implements ITreeItem
 {

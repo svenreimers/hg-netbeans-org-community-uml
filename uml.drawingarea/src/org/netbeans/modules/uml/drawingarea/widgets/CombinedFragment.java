@@ -48,7 +48,6 @@ import org.netbeans.modules.uml.core.metamodel.dynamics.IMessage;
 
 /**
  * provide functionality of combned fragment necessary for cdfs/re operation/?loading?
- * @author sp153251
  */
 public interface CombinedFragment {
     /**

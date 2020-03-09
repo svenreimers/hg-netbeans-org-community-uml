@@ -47,7 +47,6 @@
 package org.netbeans.modules.uml.ui.support;
 
 /**
- * @author sumitabhk
  *
  */
 public interface ISCMEnums

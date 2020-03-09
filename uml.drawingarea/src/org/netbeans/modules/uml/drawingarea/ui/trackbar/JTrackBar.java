@@ -90,7 +90,6 @@ import org.netbeans.modules.uml.ui.support.archivesupport.IProductArchiveElement
 
 /**
  * 
- * @author Trey Spiva
  */
 public class JTrackBar extends JPanel implements ITrackBar, FocusListener
 {

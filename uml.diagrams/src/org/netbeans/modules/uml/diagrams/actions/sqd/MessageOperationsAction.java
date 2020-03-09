@@ -79,7 +79,6 @@ import org.openide.util.actions.SystemAction;
 
 /**
  *
- * @author psb
  */
 public class MessageOperationsAction extends SceneNodeAction
 {

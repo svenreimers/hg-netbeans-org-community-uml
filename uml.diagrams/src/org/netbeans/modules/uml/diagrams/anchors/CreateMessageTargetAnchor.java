@@ -51,7 +51,6 @@ import org.netbeans.modules.uml.diagrams.nodes.sqd.MessagePinWidget;
 /**
  * all relations in this anchor with pins but compute border by parent widget (box)
  * tale into account message can be from right or left
- * @author sp153251
  */
 public class CreateMessageTargetAnchor  extends Anchor{
 

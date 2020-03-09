@@ -54,7 +54,6 @@ import org.netbeans.modules.uml.drawingarea.ModelElementChangedKind;
 
 /**
  *
- * @author treyspiva
  */
 public class CommentLinkConnector extends AbstractUMLConnectionWidget
 {

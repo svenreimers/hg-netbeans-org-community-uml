@@ -54,7 +54,6 @@ import org.netbeans.modules.uml.core.metamodel.structure.IProject;
 
 /**
  *
- * @author Jyothi
  */
 public class NodeInfo
 {

@@ -60,7 +60,6 @@ import org.openide.windows.TopComponent;
 
 /**
  *
- * @author thuy
  */
 public class DiagramInputkeyMapper implements DiagramKeyMapConstants{
     private static DiagramInputkeyMapper mapper;

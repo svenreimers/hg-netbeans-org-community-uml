@@ -53,7 +53,6 @@ import javax.swing.ProgressMonitor;
 import org.netbeans.modules.uml.ui.support.applicationmanager.IProgressCtrl;
 
 /**
- * @author sumitabhk
  *
  *
  */

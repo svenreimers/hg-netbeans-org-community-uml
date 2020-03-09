@@ -52,7 +52,6 @@ import org.openide.util.NbBundle;
 /**
  * Represents one color with some text description.
  *
- * @author Administrator
  */
 class ColorValue {
 

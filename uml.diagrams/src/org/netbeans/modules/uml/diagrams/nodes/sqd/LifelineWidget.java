@@ -99,7 +99,6 @@ import org.netbeans.modules.uml.drawingarea.view.UMLWidget;
 
 /**
  *
- * @author sp153251
  */
 public class LifelineWidget extends UMLNodeWidget implements PropertyChangeListener {
 

@@ -83,7 +83,6 @@ import org.openide.util.NbBundle;
 
 /**
  *
- * @author Thuy
  */
 public class ActivityPartitionWidget extends CompositeNodeWidget
 {

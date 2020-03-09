@@ -46,7 +46,6 @@
 /*
  *
  * Created on Jul 1, 2003
- * @author Trey Spiva
  */
 package org.netbeans.modules.uml.ui.products.ad.projecttreedefaultengine;
 
@@ -55,7 +54,6 @@ import java.util.ResourceBundle;
 
 /**
  *
- * @author Trey Spiva
  */
 public class DefaultEngineResource
 {

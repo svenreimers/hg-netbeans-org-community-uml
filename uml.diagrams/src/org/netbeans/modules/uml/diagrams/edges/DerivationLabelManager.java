@@ -62,7 +62,6 @@ import org.openide.util.NbBundle;
 
 /**
  *
- * @author treyspiva
  */
 public class DerivationLabelManager extends BasicUMLLabelManager
 {

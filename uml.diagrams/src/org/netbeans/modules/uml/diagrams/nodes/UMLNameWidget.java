@@ -73,7 +73,6 @@ import org.openide.util.NbBundle;
 
 /**
  *
- * @author treyspiva
  */
 public class UMLNameWidget extends Widget implements PropertyChangeListener,org.netbeans.modules.uml.drawingarea.widgets.NameFontHandler
 {

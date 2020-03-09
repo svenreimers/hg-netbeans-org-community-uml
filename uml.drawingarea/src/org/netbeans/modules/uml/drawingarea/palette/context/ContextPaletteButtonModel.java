@@ -55,7 +55,6 @@ import org.openide.loaders.DataObject;
  * buttons.  It is up to the palette implementation of how to display a 
  * group of actions.
  * 
- * @author treyspiva
  */
 public interface ContextPaletteButtonModel 
 {

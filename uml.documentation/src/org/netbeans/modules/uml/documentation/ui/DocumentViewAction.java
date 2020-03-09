@@ -57,7 +57,6 @@ import org.openide.util.NbBundle;
 /**
  *  Displays the Describe documentation editor.
  *
- * @author  Darshan
  * @version 1.0
  */
 public class DocumentViewAction extends AbstractAction

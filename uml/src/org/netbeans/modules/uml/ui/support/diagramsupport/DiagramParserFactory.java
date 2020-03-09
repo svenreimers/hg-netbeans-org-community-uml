@@ -46,7 +46,6 @@ import org.netbeans.modules.uml.core.support.umlsupport.FileExtensions;
 
 /**
  *
- * @author Craig Conover, craig.conover@sun.com
  */
 public class DiagramParserFactory
 {

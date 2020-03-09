@@ -54,7 +54,6 @@ import org.netbeans.modules.uml.drawingarea.persistence.PersistenceUtil;
 
 /**
  *
- * @author treyspiva
  */
 public class EnumerationLiteralWidget extends FeatureWidget implements PropertyChangeListener
 {

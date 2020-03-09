@@ -46,7 +46,6 @@
 /*
  *
  * Created on Jun 12, 2003
- * @author Trey Spiva
  */
 package org.netbeans.modules.uml.ui.products.ad.projecttreedefaultengine;
 
@@ -69,7 +68,6 @@ import org.netbeans.modules.uml.ui.support.UserSettings;
  * IProjectTreeFilterDialogEventsSink interface to add items to the filter
  * dialog.
  * 
- * @author Trey Spiva
  * @see IProjectTreeFilterDialogEventsSink
  * @see IFilterDialog
  */

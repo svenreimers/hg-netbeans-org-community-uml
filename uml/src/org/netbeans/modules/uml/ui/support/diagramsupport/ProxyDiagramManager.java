@@ -46,7 +46,6 @@
 /*
  *
  * Created on Jun 11, 2003
- * @author Trey Spiva
  */
 package org.netbeans.modules.uml.ui.support.diagramsupport;
 
@@ -95,7 +94,6 @@ import org.openide.util.Exceptions;
 
 /**
  *
- * @author Trey Spiva
  */
 public class ProxyDiagramManager implements IProxyDiagramManager,
         IDiagramCleanupManager,

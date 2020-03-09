@@ -49,7 +49,6 @@
 package org.netbeans.modules.uml.ui.support.drawingproperties;
 
 /**
- * @author jingmingm
  *
  */
 public class ColorProperty extends DrawingProperty implements IColorProperty

@@ -53,7 +53,6 @@ import org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeElement;
 
 /**
  *
- * @author Trey Spiva
  */
 public class ProjectTreeModelEvent extends EventObject
 {

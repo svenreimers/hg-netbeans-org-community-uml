@@ -58,7 +58,6 @@ import org.netbeans.modules.uml.drawingarea.view.UMLEdgeWidget;
 
 /**
  *
- * @author sp153251
  */
 public class ExecutionSpecificationThinWidget extends Widget {
 

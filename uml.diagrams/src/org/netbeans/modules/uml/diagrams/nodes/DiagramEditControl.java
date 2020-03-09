@@ -51,7 +51,6 @@ import org.netbeans.modules.uml.ui.controls.editcontrol.EditControlImpl;
 
 /**
  *
- * @author treyspiva
  */
 public class DiagramEditControl extends EditControlImpl
 {

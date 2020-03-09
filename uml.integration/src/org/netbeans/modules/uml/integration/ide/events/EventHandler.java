@@ -70,7 +70,6 @@ import org.netbeans.modules.uml.ui.support.ProductHelper;
  *                              synch between source-model and model-source
  *                              threads.
  *
- * @author Darshan
  */
 public class EventHandler {
     /**

@@ -54,7 +54,6 @@ import java.util.ArrayList;
  * model element, or it can follow the mouse as long as the mouse is over 
  * the associated model element.
  *   
- * @author treyspiva
  */
 public interface ContextPaletteModel
 {

@@ -57,7 +57,6 @@ import org.netbeans.modules.uml.drawingarea.view.DesignerScene;
 /**
  * provider need to find out if message order was changed and update model
  * (consider: may also check owning by cf/operands instead of container inner logic)
- * @author sp153251
  */
 public class UpdateMessagesInModel implements ActionProvider {
 

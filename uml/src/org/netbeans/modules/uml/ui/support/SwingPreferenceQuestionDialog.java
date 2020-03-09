@@ -62,7 +62,6 @@ import org.netbeans.modules.uml.ui.swing.commondialogs.DefaultCommonDialogResour
 import org.netbeans.modules.uml.ui.swing.commondialogs.SwingQuestionDialogImpl;
 
 /**
- * @author sumitabhk
  *
  *
  */

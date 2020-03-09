@@ -56,7 +56,6 @@ import javax.swing.JTable;
 import javax.swing.table.TableCellEditor;
 
 /**
- * @author sumitabhk
  *
  */
 public class FindTableCellEditor extends AbstractCellEditor implements

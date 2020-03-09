@@ -549,7 +549,6 @@ public class EventManager
    * interface allows a class to listener to round trip notification.  When a
    * round trip event occurs the source file will be update using the
    * Event Processor returned by getIDEProcessor.
-   * @author  Trey Spiva
    * @version 1.0
    *
    * @see EventManager#getIDEProcessor()

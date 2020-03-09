@@ -51,7 +51,6 @@ import org.netbeans.api.visual.widget.Scene;
 
 /**
  *
- * @author treyspiva
  */
 public class DependencyConnector extends AbstractUMLConnectionWidget
 {

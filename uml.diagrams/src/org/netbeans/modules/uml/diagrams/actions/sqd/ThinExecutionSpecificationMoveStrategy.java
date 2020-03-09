@@ -51,7 +51,6 @@ import org.netbeans.modules.uml.diagrams.nodes.sqd.ExecutionSpecificationThinWid
 
 /**
  *
- * @author sp153251
  */
 public class ThinExecutionSpecificationMoveStrategy implements MoveStrategy {
 

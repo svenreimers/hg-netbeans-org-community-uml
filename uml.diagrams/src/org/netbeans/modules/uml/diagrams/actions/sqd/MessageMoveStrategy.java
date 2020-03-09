@@ -52,7 +52,6 @@ import org.netbeans.api.visual.widget.Widget;
 
 /**
  * messages can be moved only vertically, can't be moved above parent bounds but can be moved below
- * @author sp153251
  */
 public class MessageMoveStrategy implements MoveStrategy {
 

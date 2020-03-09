@@ -60,7 +60,6 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 /**
  *
- * @author psb
  */
 public class MessageFactory extends AbstractRelationshipFactory
 {

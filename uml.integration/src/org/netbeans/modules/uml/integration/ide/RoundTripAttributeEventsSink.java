@@ -88,7 +88,6 @@ import org.netbeans.modules.uml.core.support.umlsupport.Log;
  *                              the NullPE when dragging navigable ends.
  *   6  2002-08-06  Mukta       Added code to handle IAttributeTypeChangeRequest
  *
- * @author  Ashish
  * @version 1.0
  */
 public class RoundTripAttributeEventsSink extends RoundTripSource

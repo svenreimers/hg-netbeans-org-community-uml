@@ -58,7 +58,6 @@ import org.openide.util.NbBundle;
 
 /**
  *
- * @author psb
  */
 public class ToggleShowInteractionBounary extends SceneNodeAction
 {

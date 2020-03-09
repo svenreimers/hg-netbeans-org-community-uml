@@ -72,7 +72,6 @@ import org.netbeans.modules.uml.ui.support.drawingproperties.IFontProperty;
 import org.netbeans.modules.uml.ui.swing.commondialogs.SwingQuestionDialogImpl;
 
 /**
- * @author jingmingm
  *
  * To change the template for this generated type comment go to
  * Window&gt;Preferences&gt;Java&gt;Code Generation&gt;Code and Comments

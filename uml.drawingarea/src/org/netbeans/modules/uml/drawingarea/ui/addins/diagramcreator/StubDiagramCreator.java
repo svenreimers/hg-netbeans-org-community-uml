@@ -65,7 +65,6 @@ import org.netbeans.modules.uml.ui.support.diagramsupport.ProxyDiagramManager;
 import org.openide.filesystems.FileUtil;
 
 /**
- * @author sumitabhk
  *
  */
 public class StubDiagramCreator implements IStubDiagramCreator

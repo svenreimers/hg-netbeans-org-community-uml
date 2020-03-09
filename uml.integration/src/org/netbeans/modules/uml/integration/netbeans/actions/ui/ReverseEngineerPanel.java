@@ -82,7 +82,6 @@ import org.openide.util.NbBundle;
 
 /**
  *
- * @author  Craig Conover, craig.conover@sun.com
  */
 public class ReverseEngineerPanel extends javax.swing.JPanel
     implements ActionListener, DocumentListener, 

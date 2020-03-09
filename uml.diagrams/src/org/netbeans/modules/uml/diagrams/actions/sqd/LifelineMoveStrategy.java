@@ -50,7 +50,6 @@ import org.netbeans.api.visual.widget.Widget;
 
 /**
  * all lifelines can be moved only horizontally
- * @author sp153251
  */
 public class LifelineMoveStrategy implements MoveStrategy{
 

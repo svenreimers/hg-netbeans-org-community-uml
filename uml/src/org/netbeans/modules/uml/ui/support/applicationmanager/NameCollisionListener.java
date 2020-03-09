@@ -52,7 +52,6 @@ package org.netbeans.modules.uml.ui.support.applicationmanager;
 
 import org.netbeans.modules.uml.core.metamodel.core.foundation.CoreNameCollisionListener;
 /**
- * @author sumitabhk
  *
  *
  */

@@ -52,7 +52,6 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 import org.netbeans.modules.uml.ui.support.archivesupport.IProductArchive;
 
 /**
- * @author sumitabhk
  *
  */
 public interface IStubDiagramCreator

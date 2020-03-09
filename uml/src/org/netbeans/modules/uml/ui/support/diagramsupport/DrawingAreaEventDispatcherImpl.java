@@ -45,7 +45,6 @@
 
 
 /*
- * @author Trey Spiva
  */
 package org.netbeans.modules.uml.ui.support.diagramsupport;
 
@@ -62,7 +61,6 @@ import org.openide.loaders.DataObject;
 
 /**
  * 
- * @author Trey Spiva
  */
 public class DrawingAreaEventDispatcherImpl extends EventDispatcher implements IDrawingAreaEventDispatcher 
 {

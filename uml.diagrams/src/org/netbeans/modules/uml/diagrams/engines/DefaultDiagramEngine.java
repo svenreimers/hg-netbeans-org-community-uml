@@ -99,7 +99,6 @@ import org.openide.util.Lookup;
 
 /**
  * 
- * @author sp153251
  */
 public class DefaultDiagramEngine extends  DiagramEngine {
 

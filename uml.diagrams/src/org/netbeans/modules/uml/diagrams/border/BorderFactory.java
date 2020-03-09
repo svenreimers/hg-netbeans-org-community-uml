@@ -44,7 +44,6 @@ package org.netbeans.modules.uml.diagrams.border;
 
 /**
  *
- * @author sp153251
  */
 public class BorderFactory {
 

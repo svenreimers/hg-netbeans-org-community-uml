@@ -106,7 +106,6 @@ import org.openide.util.lookup.InstanceContent;
 
 /**
  *
- * @author treyspiva
  */
 public abstract class UMLNodeWidget extends Widget
         implements DiagramNodeWriter, DiagramNodeReader, PropertyChangeListener, UMLWidget {

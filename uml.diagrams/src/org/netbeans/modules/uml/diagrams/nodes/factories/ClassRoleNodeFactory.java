@@ -49,7 +49,6 @@ import org.netbeans.modules.uml.drawingarea.NodeWidgetFactory;
 
 /**
  *
- * @author treyspiva
  */
 public class ClassRoleNodeFactory implements NodeWidgetFactory
 {

@@ -49,7 +49,6 @@ import org.openide.loaders.DataObject;
 
 /**
  *
- * @author treyspiva
  */
 public class DrawingAreaEventsAdapter implements IDrawingAreaEventsSink
 {

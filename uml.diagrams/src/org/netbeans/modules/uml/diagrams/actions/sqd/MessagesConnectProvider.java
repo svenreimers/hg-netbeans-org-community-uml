@@ -111,7 +111,6 @@ import org.netbeans.modules.uml.ui.support.commondialogs.MessageIconKindEnum;
 
 /**
  *
- * @author psb
  */
 public class MessagesConnectProvider implements SQDMessageConnectProvider
 {

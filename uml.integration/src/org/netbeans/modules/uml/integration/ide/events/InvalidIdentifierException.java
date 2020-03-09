@@ -52,7 +52,6 @@ package org.netbeans.modules.uml.integration.ide.events;
 
 /**
  *  Thrown when an invalid identifier is passed to an ElementInfo.
- * @author  Darshan
  * @version 1.0
  */
 public class InvalidIdentifierException extends RuntimeException {

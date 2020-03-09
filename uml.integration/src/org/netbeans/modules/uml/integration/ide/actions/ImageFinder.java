@@ -57,7 +57,6 @@ import javax.swing.*;
  * based on the current locale. This should be the single point of change,
  * should new locale-specific images be used for the integration actions.
  *
- * @author  Darshan
  * @version 1.0
  */
 public class ImageFinder {

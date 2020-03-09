@@ -61,7 +61,6 @@ import org.openide.util.NbBundle;
 
 /**
  *
- * @author Sheryl Su
  */
 public final class StateTransitionLabelManager extends BasicUMLLabelManager
 {

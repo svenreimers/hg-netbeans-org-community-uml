@@ -46,13 +46,11 @@
 /*
  *
  * Created on Jun 26, 2003
- * @author Trey Spiva
  */
 package org.netbeans.modules.uml.ui.controls.projecttree;
 
 /**
  *
- * @author Trey Spiva
  */
 public class ProjectTreeDragVerifyImpl implements IProjectTreeDragVerify
 {

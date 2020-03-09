@@ -25,7 +25,6 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.IElement;
 //import org.netbeans.modules.uml.ui.support.applicationmanager.IEdgePresentation;
 
 /**
- * @author KevinM
  *
  */
 public interface INestedLinkPresentation //TODO extends IEdgePresentation 

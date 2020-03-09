@@ -51,7 +51,6 @@ import java.awt.Menu;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 /**
- * @author KevinM
  *
  */
 public interface IProductButtonHandler {

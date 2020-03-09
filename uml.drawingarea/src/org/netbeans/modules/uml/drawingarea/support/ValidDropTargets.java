@@ -54,7 +54,6 @@ import org.dom4j.Node;
 import java.util.List;
 
 /**
- * @author KevinM
  *
  * This class hides the complexity of looking up valid ElementType Diagram Drop Targets.
  */

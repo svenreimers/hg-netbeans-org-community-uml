@@ -23,7 +23,6 @@ package org.netbeans.modules.uml.ui.support.diagramsupport;
 
 
 /**
- * @author KevinM
  *
  * Converts between Displaynames and ILayoutKind, and other conversion methods for communication with the layout server.
  */

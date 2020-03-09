@@ -95,7 +95,6 @@ import org.openide.filesystems.FileObject;
 import org.openide.filesystems.FileUtil;
 
 /**
- * @author sumitabhk
  *
  */
 public class Application implements IApplication,

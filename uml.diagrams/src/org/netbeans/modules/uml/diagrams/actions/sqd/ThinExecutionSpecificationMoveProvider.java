@@ -58,7 +58,6 @@ import org.openide.windows.TopComponent;
 
 /**
  *
- * @author sp153251
  */
 public class ThinExecutionSpecificationMoveProvider implements MoveProvider {
 

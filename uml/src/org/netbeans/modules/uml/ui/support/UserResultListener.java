@@ -46,7 +46,6 @@
 /*
  *
  * Created on Jul 2, 2003
- * @author Trey Spiva
  */
 package org.netbeans.modules.uml.ui.support;
 
@@ -59,7 +58,6 @@ import org.netbeans.modules.uml.ui.support.commondialogs.MessageResultKindEnum;
 
 /**
  *
- * @author Trey Spiva
  */
 public class UserResultListener implements ActionListener, MessageResultKindEnum
 {

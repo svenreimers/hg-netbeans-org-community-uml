@@ -54,7 +54,6 @@ import org.openide.loaders.DataObject;
 
 /**
  *
- * @author thuy
  */
 public class RotateForkButtonModel implements ContextPaletteButtonModel
 {

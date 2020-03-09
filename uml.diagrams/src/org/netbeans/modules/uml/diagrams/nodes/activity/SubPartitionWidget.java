@@ -55,7 +55,6 @@ import org.netbeans.modules.uml.drawingarea.widgets.ContainerWidget;
 
 /**
  *
- * @author Thuy
  */
 public class SubPartitionWidget extends CompartmentWidget
 {

@@ -50,7 +50,6 @@
 package org.netbeans.modules.uml.ui.support.drawingproperties;
 
 /**
- * @author jingmingm
  *
  */
 public class ETFontType

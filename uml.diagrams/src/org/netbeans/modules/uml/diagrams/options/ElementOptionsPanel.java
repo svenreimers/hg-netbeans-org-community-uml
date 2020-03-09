@@ -59,7 +59,6 @@ import org.openide.windows.WindowManager;
 
 /**
  *
- * @author Sheryl Su
  */
 public class ElementOptionsPanel implements UMLOptionsPanel
 {

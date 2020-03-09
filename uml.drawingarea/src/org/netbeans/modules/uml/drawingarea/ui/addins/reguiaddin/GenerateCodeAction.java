@@ -63,7 +63,6 @@ import org.openide.util.actions.CookieAction;
 
 /**
  *
- * @author  Trey Spiva
  */
 public class GenerateCodeAction extends CookieAction
 {

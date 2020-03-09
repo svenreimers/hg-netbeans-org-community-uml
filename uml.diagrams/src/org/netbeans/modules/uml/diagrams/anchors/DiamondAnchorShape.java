@@ -50,7 +50,6 @@ import org.netbeans.api.visual.anchor.AnchorShape;
 import java.awt.geom.GeneralPath;
 
 /**
- * @author Trey Spiva
  */
 public class DiamondAnchorShape implements AnchorShape
 {

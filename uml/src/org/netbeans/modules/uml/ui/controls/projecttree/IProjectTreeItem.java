@@ -59,7 +59,6 @@ import org.openide.nodes.Node;
  * Represents a node in the tree.  It has a model element, data element, description and a
  * path that specifies the location of the item in the tree.
  * 
- * @author Trey Spiva
  */
 public interface IProjectTreeItem extends Node.Cookie
 {

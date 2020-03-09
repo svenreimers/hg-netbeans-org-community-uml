@@ -46,7 +46,6 @@
 /*
  *
  * Created on Jun 2, 2003
- * @author Trey Spiva
  */
 package org.netbeans.modules.uml.ui.controls.projecttree;
 
@@ -58,7 +57,6 @@ import org.netbeans.modules.uml.ui.products.ad.projecttreedefaultengine.Filtered
  * items to the tree but the engines are to primary source of the
  * project tree items.
  *
- * @author Trey Spiva
  */
 public interface IProjectTreeEngine
 {

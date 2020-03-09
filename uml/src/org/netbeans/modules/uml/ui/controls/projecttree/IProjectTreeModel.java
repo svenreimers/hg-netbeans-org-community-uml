@@ -46,7 +46,6 @@
 /*
  *
  * Created on Jun 2, 2003
- * @author Trey Spiva
  */
 package org.netbeans.modules.uml.ui.controls.projecttree;
 
@@ -59,7 +58,6 @@ import org.netbeans.modules.uml.core.workspacemanagement.IWorkspace;
 
 /**
  * 
- * @author Trey Spiva
  */
 public interface IProjectTreeModel
 {

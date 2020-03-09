@@ -52,7 +52,6 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.IRelationship;
 
 /**
  *
- * @author treyspiva
  */
 public class PermissionFactory extends AbstractRelationshipFactory
 {

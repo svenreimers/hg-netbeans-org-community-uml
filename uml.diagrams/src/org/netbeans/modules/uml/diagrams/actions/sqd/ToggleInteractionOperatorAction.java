@@ -49,7 +49,6 @@ import org.netbeans.modules.uml.core.metamodel.dynamics.ICombinedFragment;
 
 /**
  *
- * @author sp153251
  */
 public class ToggleInteractionOperatorAction extends AbstractAction {
 

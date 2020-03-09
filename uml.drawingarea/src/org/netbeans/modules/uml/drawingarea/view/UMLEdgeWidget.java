@@ -75,7 +75,6 @@ import org.openide.util.Lookup;
 
 /**
  *
- * @author Jyothi
  */
 public abstract class UMLEdgeWidget extends ConnectionWidget implements DiagramEdgeWriter, DiagramEdgeReader, UMLWidget
 {

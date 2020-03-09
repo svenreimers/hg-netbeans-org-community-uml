@@ -68,7 +68,6 @@ import org.openide.util.NbBundle;
 
 /**
  *
- * @author sp153251
  */
 public class LifelineLineWidget extends CustomizableWidget implements DiagramNodeWriter {
 

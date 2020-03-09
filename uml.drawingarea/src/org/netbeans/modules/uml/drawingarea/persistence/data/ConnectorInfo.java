@@ -47,7 +47,6 @@ import java.awt.Point;
 
 /**
  *
- * @author jyothi
  */
 public class ConnectorInfo
 {

@@ -48,7 +48,6 @@ import org.netbeans.modules.uml.drawingarea.NodeWidgetFactory;
 
 /**
  *
- * @author Sheryl Su
  */
 public class CompositeStateNodeFactory implements NodeWidgetFactory
 {

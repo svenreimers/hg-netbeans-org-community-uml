@@ -48,7 +48,6 @@ import org.netbeans.modules.uml.drawingarea.view.UMLEdgeWidget;
  * interface for main functionality of MessagePinWidget used in messages on sqd,
  * allow to get main information about messages in drawing area module
  * TODO, is this package correct place?
- * @author sp153251
  */
 public interface MessagePin {
     public static enum PINKIND{SYNCHRONOUS_CALL_OUT,SYNCHRONOUS_CALL_IN,SYNCHRONOUS_RETURN_OUT,SYNCHRONOUS_RETURN_IN,ASYNCHRONOUS_CALL_OUT,ASYNCHRONOUS_CALL_IN,NONE,CREATE_CALL_OUT,CREATE_CALL_IN};

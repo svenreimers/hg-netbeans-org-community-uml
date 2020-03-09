@@ -46,7 +46,6 @@
 /*
  *
  * Created on Jul 1, 2003
- * @author Trey Spiva
  */
 package org.netbeans.modules.uml.ui.support;
 
@@ -54,7 +53,6 @@ package org.netbeans.modules.uml.ui.support;
  * NewDialogTabKind specifies a tab that is contains on the NewDialog.
  *
  * @see INewDialog
- * @author Trey Spiva
  */
 public interface NewDialogTabKind
 {

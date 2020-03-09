@@ -82,7 +82,6 @@ import org.netbeans.modules.uml.core.support.umlsupport.Log;
  *   6  2002-06-26  Darshan     Incorporated Sumitabh'schanges to handle
  *                              association moves.
  *
- * @author  Ashish
  * @version 1.2
  */
 public class RoundTripRelationEventsSink extends RoundTripClassEventsSink

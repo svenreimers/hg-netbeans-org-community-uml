@@ -47,7 +47,6 @@ import org.netbeans.modules.uml.drawingarea.palette.NodeInitializer;
 
 /**
  *
- * @author treyspiva
  */
 public class ClassRoleInitializer implements NodeInitializer
 {

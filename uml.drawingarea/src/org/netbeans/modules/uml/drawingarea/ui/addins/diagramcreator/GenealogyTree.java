@@ -68,7 +68,6 @@ import org.netbeans.modules.uml.ui.support.applicationmanager.MoveToFlags;
 //import org.netbeans.modules.uml.ui.swing.drawingarea.IDrawingAreaControl;
 
 /**
- * @author sumitabhk
  *
  */
 public class GenealogyTree //TODO implements IGenealogyTree

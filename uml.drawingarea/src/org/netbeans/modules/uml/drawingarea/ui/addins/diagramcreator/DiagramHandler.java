@@ -64,7 +64,6 @@ import org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeModel;
 import org.openide.util.Exceptions;
 
 /**
- * @author sumitabhk
  *
  */
 public class DiagramHandler implements IDiagramCallback
@@ -95,7 +94,6 @@ public class DiagramHandler implements IDiagramCallback
 
    /*
     * 
-    * @author Kevinm
     *
     * Run Fit in window later so we can get the graph window up,
     */

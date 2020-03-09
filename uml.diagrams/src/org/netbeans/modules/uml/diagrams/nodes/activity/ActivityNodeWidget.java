@@ -59,7 +59,6 @@ import org.openide.util.NbBundle;
 
 /**
  *
- * @author thuy
  */
 public abstract class ActivityNodeWidget extends UMLNodeWidget
 {

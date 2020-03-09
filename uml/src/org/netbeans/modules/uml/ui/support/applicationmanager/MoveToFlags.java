@@ -48,7 +48,6 @@ package org.netbeans.modules.uml.ui.support.applicationmanager;
 
 /**
  *
- * @author Trey Spiva
  */
 public interface MoveToFlags
 {
