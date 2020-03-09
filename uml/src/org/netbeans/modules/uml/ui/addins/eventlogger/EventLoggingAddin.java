@@ -65,7 +65,6 @@ import org.netbeans.modules.uml.ui.support.ProductHelper;
 import org.netbeans.modules.uml.ui.support.applicationmanager.IProductDiagramManager;
 
 /**
- * @author sumitabhk
  *
  */
 //public class EventLoggingAddin implements IAddIn, IAddInButtonSupport

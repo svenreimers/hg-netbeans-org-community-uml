@@ -55,7 +55,6 @@ import java.util.ResourceBundle;
 import org.netbeans.modules.uml.core.support.umlutils.IPropertyDefinition;
 
 /**
- * @author Aztec
  */
 public class NewTestTranslator implements ICustomTranslator
 {

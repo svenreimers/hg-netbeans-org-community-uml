@@ -59,7 +59,6 @@ import org.openide.loaders.DataObjectNotFoundException;
 
 /**
  *
- * @author sp153251
  */
 public class SQDDiagramTopComponent extends UMLDiagramTopComponent {
 

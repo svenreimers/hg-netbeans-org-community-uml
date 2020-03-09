@@ -52,7 +52,6 @@ import java.util.TreeMap;
 
 /**
  *
- * @author Thuy
  */
 public class PositionMapper
 {

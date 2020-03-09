@@ -45,7 +45,6 @@
 /*
  *
  * Created on Jun 10, 2003
- * @author Trey Spiva
  */
 package org.netbeans.modules.uml.designpattern;
 
@@ -97,7 +96,6 @@ import org.netbeans.modules.uml.ui.controls.projecttree.ProjectTreeModelAdapter;
  * implements the Swing TreeModel interface.
  *
  * @see ProjectTreeSwingModel
- * @author Trey Spiva
  */
 public class DesignCenterSwingModel extends ProjectTreeModelAdapter 
         implements ISwingProjectTreeModel

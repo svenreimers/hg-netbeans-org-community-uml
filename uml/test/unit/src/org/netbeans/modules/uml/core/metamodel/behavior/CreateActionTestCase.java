@@ -53,7 +53,6 @@ import org.netbeans.modules.uml.core.AbstractUMLTestCase;
 import org.netbeans.modules.uml.core.metamodel.core.constructs.IClass;
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier;
 /**
- * @author aztec
  *
  */
 public class CreateActionTestCase extends AbstractUMLTestCase 

@@ -113,7 +113,6 @@ import org.openide.util.Utilities;
 
 /**
  *
- * @author sp153251
  */
 abstract public class DiagramEngine {
     //

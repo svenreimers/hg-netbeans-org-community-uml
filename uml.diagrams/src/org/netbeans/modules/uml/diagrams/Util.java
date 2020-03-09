@@ -58,7 +58,6 @@ import org.netbeans.modules.uml.diagrams.nodes.sqd.LifelineWidget;
 
 /**
  *
- * @author sp153251
  */
 public class Util {
 

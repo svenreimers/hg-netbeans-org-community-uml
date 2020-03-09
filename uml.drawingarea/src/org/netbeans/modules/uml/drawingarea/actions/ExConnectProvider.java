@@ -52,7 +52,6 @@ import org.netbeans.api.visual.widget.Widget;
  * The extended connect provider adds the ability to create a node widget
  * and create a connector between the source node and the new node.
  * 
- * @author treyspiva
  */
 public interface ExConnectProvider extends ConnectProvider
 {

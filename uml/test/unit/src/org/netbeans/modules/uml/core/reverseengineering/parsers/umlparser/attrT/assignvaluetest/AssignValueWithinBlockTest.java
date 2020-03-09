@@ -50,7 +50,6 @@ import junit.textui.TestRunner;
 import org.netbeans.modules.uml.core.reverseengineering.parsers.umlparser.AbstractUmlParserTestCase;
 
 /**
- * @author aztec
  */
 public class AssignValueWithinBlockTest extends AbstractUmlParserTestCase {
 	public static void main(String[] args) {

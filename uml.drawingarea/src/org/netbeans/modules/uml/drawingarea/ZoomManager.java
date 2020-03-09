@@ -78,7 +78,6 @@ import org.openide.util.Utilities;
 /**
  * Manages the zoom level for a particular Scene instance.
  *
- * @author Trey Spiva
  */
 public class ZoomManager implements Scene.SceneListener {
 

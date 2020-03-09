@@ -72,7 +72,6 @@ import org.netbeans.modules.uml.ui.support.ProductHelper;
 /**
  * Test case that needs an active namespace (workspace, project) to work in.
  * 
- * @author darshans
  */
 abstract public class AbstractUMLTestCase extends TestCase
 {

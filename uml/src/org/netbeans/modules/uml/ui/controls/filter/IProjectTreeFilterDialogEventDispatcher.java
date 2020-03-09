@@ -52,7 +52,6 @@ import org.netbeans.modules.uml.core.eventframework.IEventPayload;
 /**
  * The dispatcher used to fire project tree filter events.
  *
- * @author Trey Spiva
  */
 public interface IProjectTreeFilterDialogEventDispatcher
    extends IEventDispatcher

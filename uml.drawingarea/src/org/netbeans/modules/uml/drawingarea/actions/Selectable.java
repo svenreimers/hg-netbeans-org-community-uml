@@ -45,7 +45,6 @@ import org.netbeans.api.visual.widget.Widget;
 
 /**
  *
- * @author treyspiva
  */
 public interface Selectable
 {

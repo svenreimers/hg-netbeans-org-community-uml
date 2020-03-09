@@ -51,7 +51,6 @@ import org.netbeans.modules.uml.core.reverseengineering.reintegration.umlparsing
 import org.netbeans.modules.uml.core.reverseengineering.reintegration.umlparsingintegratorTC.AbstractUMLParsingIntegrationTestCase;
 
 /**
- * @author aztec
  */
 public class AssignValueWithinBlockTest extends AbstractUMLParsingIntegrationTestCase {
 	public static void main(String[] args) {

@@ -51,7 +51,6 @@ import org.netbeans.modules.uml.drawingarea.LabelManager;
 
 /**
  *
- * @author treyspiva
  */
 public class ToggleLabelAction extends AbstractAction
 {

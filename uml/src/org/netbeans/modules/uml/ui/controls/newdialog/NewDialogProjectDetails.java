@@ -50,7 +50,6 @@ import org.netbeans.modules.uml.core.metamodel.structure.IProject;
 import org.netbeans.modules.uml.ui.support.NewProjectKind;
 
 /**
- * @author sumitabhk
  *
  */
 public class NewDialogProjectDetails implements INewDialogProjectDetails

@@ -65,7 +65,6 @@ import org.netbeans.modules.uml.ui.support.wizard.IWizardPage;
 import org.netbeans.modules.uml.ui.support.wizard.WizardSheet;
 
 /**
- * @author sumitabhk
  *
  */
 public class JDefaultNewDialog extends WizardSheet implements ActionListener

@@ -53,7 +53,6 @@ import org.netbeans.performance.uml.menus.*;
 /**
  * Measure UI-RESPONSIVENES and WINDOW_OPENING.
  *
- * @author mmirilovic@netbeans.org, mrkam@netbeans.org
  */
 public class MeasureUMLMenusTest  {
 

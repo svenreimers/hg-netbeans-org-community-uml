@@ -56,7 +56,6 @@ import org.netbeans.api.visual.action.ActionFactory;
 /**
  * Rezing a widget based on insets of the widget border.
  *
- * @author David Kaspar
  */
 public final class ResizeAction extends WidgetAction.LockedAdapter {
 

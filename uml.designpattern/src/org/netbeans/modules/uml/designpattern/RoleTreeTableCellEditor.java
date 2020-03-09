@@ -65,7 +65,6 @@ import org.netbeans.modules.uml.ui.swing.treetable.JDescribeButton;
 import org.netbeans.modules.uml.ui.swing.treetable.TreeTableModel;
 
 /**
- * @author sumitabhk
  *
  */
 public class RoleTreeTableCellEditor extends AbstractCellEditor implements

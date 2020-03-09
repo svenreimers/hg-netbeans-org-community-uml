@@ -55,7 +55,6 @@ import java.util.Iterator;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.FactoryRetriever;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 /**
- * @author aztec
  *
  */
 public class HandlerActionTestCase extends AbstractUMLTestCase

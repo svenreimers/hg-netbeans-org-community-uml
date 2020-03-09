@@ -69,7 +69,6 @@ import org.netbeans.modules.uml.ui.support.ProductHelper;
 import org.openide.util.NbPreferences;
 
 /**
- * @author aztec
  *
  */
 public class JavaClassChangeHandlerTestCase extends AbstractUMLTestCase

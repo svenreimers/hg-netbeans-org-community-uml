@@ -64,7 +64,6 @@ import org.openide.util.actions.SystemAction;
 
 /**
  *
- * @author treyspiva
  */
 public class ShowViewAction extends SceneNodeAction
 {

@@ -56,7 +56,6 @@ import junit.framework.TestSuite;
 import junit.textui.TestRunner;
 
 /**
- * @author Aztec
  */
 public class AllModelAnalysisTests
 {

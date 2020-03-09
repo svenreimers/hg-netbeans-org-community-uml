@@ -49,7 +49,6 @@ import org.netbeans.api.visual.widget.Widget;
 
 /**
  * need this api in drawing area for loading, may be used for cdfs etc also
- * @author sp153251
  */
 public interface SQDMessageConnectProvider extends ExConnectWithLocationProvider {
     /**

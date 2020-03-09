@@ -89,7 +89,6 @@ import org.openide.util.actions.CookieAction;
 
 /**
  *
- * @author Craig Conover, craig.conover@sun.com
  */
 public class GenerateCodeAction extends CookieAction
 {

@@ -54,7 +54,6 @@ import org.netbeans.modules.uml.drawingarea.util.Util;
 
 /**
  *
- * @author thuy
  */
 public class RotateForkAction extends WidgetAction.LockedAdapter 
 {

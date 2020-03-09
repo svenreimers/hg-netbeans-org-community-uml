@@ -57,7 +57,6 @@ import org.dom4j.Document;
 import org.netbeans.modules.uml.core.support.umlsupport.XMLManip;
 import org.netbeans.modules.uml.core.workspacemanagement.WorkspaceManagementException;
 /**
- * @author aztec
  *
  */
 public class QueryManagerTestCase extends AbstractUMLTestCase

@@ -47,7 +47,6 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.IElement;
 
 /**
  *
- * @author treyspiva
  */
 public interface DrawingAreaChangeListener
 {

@@ -55,7 +55,6 @@ import org.netbeans.performance.uml.actions.*;
 /**
  * Measure UI-RESPONSIVENES and WINDOW_OPENING.
  *
- * @author  mrkam@netbeans.org
  */
 public class MeasureUMLActionsOpenUMLProjectTest  {
 

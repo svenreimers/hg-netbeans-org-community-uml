@@ -83,7 +83,6 @@ import org.openide.util.Lookup;
 import org.openide.windows.TopComponent;
 /**
  *
- * @author thuy
  */
 public class DiagramInputkeyAction extends javax.swing.AbstractAction 
 {

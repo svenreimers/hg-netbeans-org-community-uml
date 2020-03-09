@@ -83,7 +83,6 @@ import org.openide.DialogDisplayer;
 
 /**
  *
- * @author Craig Conover, craig.conover@sun.com
  *
  */
 public class DomainTemplatesManagerPanel extends javax.swing.JPanel

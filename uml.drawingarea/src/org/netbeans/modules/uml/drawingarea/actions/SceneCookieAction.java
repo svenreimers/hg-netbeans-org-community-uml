@@ -48,7 +48,6 @@ import org.openide.util.actions.CookieAction;
 
 /**
  *
- * @author treyspiva
  */
 public abstract class SceneCookieAction extends CookieAction
 {

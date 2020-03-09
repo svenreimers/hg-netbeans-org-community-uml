@@ -54,7 +54,6 @@ import org.netbeans.modules.project.ui.test.ProjectSupport;
  * Test suite that actually does not perform any test but sets up user directory
  * for UI responsiveness tests
  *
- * @author  mmirilovic@netbeans.org, mrkam@netbeans.org
  */
 public class UMLSetup extends JellyTestCase {
     

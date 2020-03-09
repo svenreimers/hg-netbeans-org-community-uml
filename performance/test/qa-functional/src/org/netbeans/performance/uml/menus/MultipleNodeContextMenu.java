@@ -61,7 +61,6 @@ import org.netbeans.performance.uml.UMLUtilities;
 /**
  * Measure UI-RESPONSIVENES and WINDOW_OPENING.
  *
- * @author rashid@netbeans.org
  *
  */
 public class MultipleNodeContextMenu extends PerformanceTestCase {

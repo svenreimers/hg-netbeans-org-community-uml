@@ -181,7 +181,6 @@ import org.netbeans.modules.uml.core.scm.ISCMOptions;
 //import org.netbeans.modules.uml.ui.swing.drawingarea.IReconnectEdgeContext;
 
 /**
- * @author sumitabhk
  *
  */
 public class AddinEventsSink implements 

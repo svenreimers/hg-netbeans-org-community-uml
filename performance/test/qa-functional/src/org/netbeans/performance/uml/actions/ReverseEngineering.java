@@ -63,7 +63,6 @@ import org.netbeans.modules.project.ui.test.ProjectSupport;
 /**
  * Test Reverse Engineering 
  *
- * @author  rashid@netbeans.org
  */
 public class ReverseEngineering extends PerformanceTestCase {
 

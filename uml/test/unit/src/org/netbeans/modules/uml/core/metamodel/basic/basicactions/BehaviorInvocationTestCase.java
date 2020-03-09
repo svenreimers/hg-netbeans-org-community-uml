@@ -56,7 +56,6 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.FactoryRetriever;
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavior;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 /**
- * @author aztec
  *
  */
 public class BehaviorInvocationTestCase extends AbstractUMLTestCase

@@ -54,7 +54,6 @@ import org.openide.util.NbBundle;
 
 /**
  *
- * @author  IBM USER
  */
 public class TemplatesTableRowPanel extends javax.swing.JPanel 
     implements ActionListener

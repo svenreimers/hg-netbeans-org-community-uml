@@ -57,7 +57,6 @@ import org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframe
 import org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ITokenProcessor;
 
 /**
- * @author Aztec
  */
 public class ParserTestListener implements IStateListener, ITokenProcessor
 {

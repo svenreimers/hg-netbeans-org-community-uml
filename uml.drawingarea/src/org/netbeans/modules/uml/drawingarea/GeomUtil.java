@@ -48,7 +48,6 @@ import java.awt.geom.Rectangle2D;
 import java.util.logging.Logger;
 
 /**
- * @author David Kaspar
  */
 public final class GeomUtil {
 

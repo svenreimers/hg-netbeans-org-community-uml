@@ -88,8 +88,6 @@ import org.openide.util.NbBundle;
 
 
 /**
- * @author sumitabhk
- * @author Craig Conover, craig.conover@sun.com
  *
  */
 public class NewElementUI extends WizardInteriorPage 

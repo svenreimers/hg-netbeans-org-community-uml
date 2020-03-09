@@ -59,7 +59,6 @@ import org.netbeans.modules.uml.drawingarea.view.DesignerScene;
  * may be it can be adjusted with provider, need to reverify later
  * free provider return null for suggested location for starting/finishing points but it means lock never released
  * it may be a bug in visual library also and need to be fixed here
- * @author David Kaspar
  */
 public final class MoveControlPointAction extends WidgetAction.LockedAdapter {
 

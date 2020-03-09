@@ -54,7 +54,6 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.FactoryRetriever;
 import org.netbeans.modules.uml.core.AbstractUMLTestCase;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 /**
- * @author aztec
  *
  */
 public class StateVertexTestCase extends AbstractUMLTestCase

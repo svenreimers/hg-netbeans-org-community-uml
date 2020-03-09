@@ -53,7 +53,6 @@ import org.netbeans.api.visual.widget.Widget;
 
 /**
  * Implements the selection logic
- * @author Jyothi
  */
 public class SceneSelectAction extends WidgetAction.Adapter
 {

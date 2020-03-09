@@ -55,7 +55,6 @@ import org.netbeans.modules.uml.core.AbstractUMLTestCase;
 
 
 /**
- * @author aztec
  *
  */
 public class ProfileApplicationTestCase extends AbstractUMLTestCase

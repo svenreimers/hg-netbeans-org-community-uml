@@ -65,7 +65,6 @@ import org.netbeans.modules.uml.ui.swing.projecttree.JProjectTree;
 import org.netbeans.modules.uml.core.coreapplication.IDesignCenterSupport;
 
 /**
- * @author sumitabhk
  *
  */
 public class ADDesignCenterEngine extends ADProjectTreeEngine implements IADDesignCenterEngine

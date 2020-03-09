@@ -92,8 +92,6 @@ import org.openide.DialogDisplayer;
 import org.openide.NotifyDescriptor;
 
 /**
- * @author sumitabhk
- * @author cbeckham
  *
  */
 public class NewDiagramUI extends WizardInteriorPage implements 

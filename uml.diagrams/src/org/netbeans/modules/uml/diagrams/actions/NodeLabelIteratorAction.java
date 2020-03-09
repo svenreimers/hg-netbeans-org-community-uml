@@ -57,7 +57,6 @@ import org.openide.util.Lookup;
 
 /**
  *
- * @author jyothi
  */
 public class NodeLabelIteratorAction extends IterateSelectAction {
 

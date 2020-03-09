@@ -52,7 +52,6 @@ import org.netbeans.modules.uml.ui.support.ProductHelper;
 import org.netbeans.modules.uml.ui.swing.commondialogs.JCenterDialog;
 
 /**
- * @author sumitabhk
  *
  */
 public class EventFilterDialog extends JCenterDialog

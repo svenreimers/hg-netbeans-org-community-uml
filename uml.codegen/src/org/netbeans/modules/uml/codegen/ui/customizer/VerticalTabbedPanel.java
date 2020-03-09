@@ -64,7 +64,6 @@ import javax.swing.border.EmptyBorder;
 
 
 /**
- * @author Jan Jancura
  */
 public class VerticalTabbedPanel extends TabbedPanel 
 {

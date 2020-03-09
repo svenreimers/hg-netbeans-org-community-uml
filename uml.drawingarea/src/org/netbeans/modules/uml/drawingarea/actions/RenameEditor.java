@@ -51,7 +51,6 @@ import org.netbeans.modules.uml.drawingarea.view.UMLLabelWidget;
 
 /**
  *
- * @author Jyothi
  */
 public class RenameEditor implements TextFieldInplaceEditor {
     

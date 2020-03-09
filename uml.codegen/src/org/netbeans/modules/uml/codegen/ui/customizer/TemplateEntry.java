@@ -61,7 +61,6 @@ import org.openide.util.NbBundle;
 
 /**
  *
- * @author  treyspiva
  */
 public class TemplateEntry extends javax.swing.JPanel
 {

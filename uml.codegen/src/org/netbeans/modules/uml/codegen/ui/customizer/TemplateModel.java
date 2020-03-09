@@ -60,7 +60,6 @@ import org.netbeans.modules.uml.project.ui.customizer.UMLProjectProperties;
 
 /**
  *
- * @author treyspiva
  */
 
 public class TemplateModel extends TabbedPanelModel

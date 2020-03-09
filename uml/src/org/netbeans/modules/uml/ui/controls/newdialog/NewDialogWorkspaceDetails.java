@@ -47,7 +47,6 @@
 package org.netbeans.modules.uml.ui.controls.newdialog;
 
 /**
- * @author sumitabhk
  *
  */
 public class NewDialogWorkspaceDetails implements INewDialogWorkspaceDetails

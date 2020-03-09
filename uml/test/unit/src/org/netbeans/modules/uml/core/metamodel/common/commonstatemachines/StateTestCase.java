@@ -59,7 +59,6 @@ import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure
 import org.netbeans.modules.uml.core.AbstractUMLTestCase;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 /**
- * @author aztec
  *
  */
 public class StateTestCase extends AbstractUMLTestCase

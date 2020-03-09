@@ -66,7 +66,6 @@ import org.openide.util.actions.SystemAction;
  * If no label manager is present, no menu will be returned via the popup
  * presenter.
  * 
- * @author treyspiva
  */
 public class AddLabelsAction extends SceneNodeAction
 {

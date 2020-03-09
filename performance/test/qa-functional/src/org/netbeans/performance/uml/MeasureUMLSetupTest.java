@@ -55,7 +55,6 @@ import org.netbeans.junit.NbTestSuite;
  * Test suite that actually does not perform any test but sets up user directory
  * for UI responsiveness tests
  *
- * @author mrkam@netbeans.org
  */
 public class MeasureUMLSetupTest extends NbTestSuite {
 

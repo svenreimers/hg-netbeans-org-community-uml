@@ -86,7 +86,6 @@ import org.netbeans.modules.uml.drawingarea.view.UMLWidget;
  * It is up to the subclasses to specify how to create and initialize the
  * labels.
  *
- * @author treyspiva
  */
 public abstract class AbstractLabelManager implements LabelManager
 {

@@ -90,7 +90,6 @@ import org.netbeans.modules.uml.project.ui.customizer.UMLProjectProperties;
 
 /**
  *
- * @author  Craig Conover, craig.conover@sun.com
  */
 public class GenerateCodePanel extends javax.swing.JPanel
     implements ActionListener, PropertyChangeListener, DocumentListener

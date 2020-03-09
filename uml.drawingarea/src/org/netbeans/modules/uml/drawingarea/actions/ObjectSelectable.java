@@ -47,7 +47,6 @@ import org.netbeans.api.visual.widget.Widget;
 
 /**
  *
- * @author treyspiva
  */
 public class ObjectSelectable implements Selectable
 {

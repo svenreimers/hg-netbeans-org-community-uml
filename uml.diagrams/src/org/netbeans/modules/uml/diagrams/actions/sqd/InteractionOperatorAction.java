@@ -70,7 +70,6 @@ import org.openide.util.actions.SystemAction;
 
 /**
  *
- * @author psb
  */
 public class InteractionOperatorAction extends SceneNodeAction
 {

@@ -52,7 +52,6 @@ import org.netbeans.modules.uml.ui.swing.projecttree.JFilterDialog;
 
 /**
  *
- * @author Trey Spiva
  */
 public interface IFilterNode
 {

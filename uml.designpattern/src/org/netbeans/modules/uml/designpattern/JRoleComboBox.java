@@ -64,7 +64,6 @@ import javax.swing.plaf.basic.ComboPopup;
 
 
 /**
- * @author sumitabhk
  *
  */
 public class JRoleComboBox extends JComboBox

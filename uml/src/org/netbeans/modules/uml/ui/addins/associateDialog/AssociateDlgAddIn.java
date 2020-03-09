@@ -74,7 +74,6 @@ import org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeItem;
 import org.openide.util.NbBundle;
 
 /**
- * @author jingmingm
  *
  */
 public class AssociateDlgAddIn implements IETContextMenuHandler

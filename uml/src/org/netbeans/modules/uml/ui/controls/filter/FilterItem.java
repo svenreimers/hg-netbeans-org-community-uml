@@ -55,7 +55,6 @@ import org.netbeans.modules.uml.ui.support.commonresources.CommonResourceManager
 /**
  * A FilterItem contians the data that represents an item that can be filtered.
  *
- * @author Trey Spiva
  */
 public class FilterItem implements IFilterItem
 {

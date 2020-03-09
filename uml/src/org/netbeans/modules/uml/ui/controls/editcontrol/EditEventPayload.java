@@ -49,7 +49,6 @@ package org.netbeans.modules.uml.ui.controls.editcontrol;
 import org.netbeans.modules.uml.core.eventframework.EventPayload;
 
 /**
- * @author sumitabhk
  *
  */
 public class EditEventPayload extends EventPayload implements IEditEventPayload

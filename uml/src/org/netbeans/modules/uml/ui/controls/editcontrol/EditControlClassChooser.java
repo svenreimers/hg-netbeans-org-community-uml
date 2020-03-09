@@ -72,7 +72,6 @@ import org.netbeans.modules.uml.ui.swing.commondialogs.JCenterDialog;
 import java.awt.event.ActionEvent;
 
 /**
- * @author jingmingm
  *
  */
 public class EditControlClassChooser extends JCenterDialog

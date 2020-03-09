@@ -52,7 +52,6 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
 /**
- * @author sumitabhk
  *
  */
 public class RoleTreeTablePopupListener extends MouseAdapter

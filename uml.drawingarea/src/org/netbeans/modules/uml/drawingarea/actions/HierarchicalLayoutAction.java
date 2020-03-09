@@ -69,7 +69,6 @@ import org.openide.util.NbPreferences;
 
 /**
  *
- * @author Kris Richards
  */
 public class HierarchicalLayoutAction extends AbstractAction implements GraphLayoutListener {
 

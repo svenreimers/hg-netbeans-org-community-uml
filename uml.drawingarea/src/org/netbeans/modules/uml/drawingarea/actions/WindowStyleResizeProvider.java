@@ -64,7 +64,6 @@ import org.openide.windows.TopComponent;
 
 /**
  *
- * @author sp153251
  */
 public class WindowStyleResizeProvider extends ResizeStrategyProvider {
     

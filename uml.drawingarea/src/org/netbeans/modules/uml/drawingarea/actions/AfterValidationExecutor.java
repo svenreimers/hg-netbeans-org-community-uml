@@ -60,7 +60,6 @@ import org.openide.windows.TopComponent;
 /**
  * It calls perfome method on action provider, ususally used to move children widgets after scene is validated
  * Adds itself to listen scene and removes itself too after action processed
- * @author sp153251
  */
 public class AfterValidationExecutor  implements Scene.SceneListener{
 

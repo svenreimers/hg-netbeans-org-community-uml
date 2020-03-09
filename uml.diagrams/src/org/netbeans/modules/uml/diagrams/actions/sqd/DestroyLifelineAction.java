@@ -63,7 +63,6 @@ import org.netbeans.modules.uml.drawingarea.util.Util;
 
 /**
  *
- * @author sp153251
  */
 public class DestroyLifelineAction extends WidgetAction.LockedAdapter {
 

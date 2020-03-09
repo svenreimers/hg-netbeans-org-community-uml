@@ -79,7 +79,6 @@ import org.openide.windows.TopComponent;
 
 /**
  *
- * @author treyspiva
  * 
  */
 public class SceneAcceptAction extends WidgetAction.Adapter 

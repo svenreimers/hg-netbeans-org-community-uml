@@ -47,7 +47,6 @@ import javax.swing.Icon;
 
 /**
  *
- * @author Craig Conover, craig.conover@sun.com
  */
 public class DomainTreeNode
 {

@@ -76,7 +76,6 @@ import org.netbeans.modules.project.ui.test.ProjectSupport;
  * Open 10 java files and shut down ide.
  * Created user directory will be used to measure startup time and memory consumption of IDE with opened files.
  *
- * @author mrkam@netbeans.org
  */
 public class PrepareIDEForUMLComplexMeasurementsTest extends JellyTestCase {
     

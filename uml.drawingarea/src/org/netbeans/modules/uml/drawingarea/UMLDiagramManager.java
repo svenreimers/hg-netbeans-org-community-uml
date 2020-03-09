@@ -101,7 +101,6 @@ import org.openide.util.Utilities;
 /**
  * The diagram manager is used to manage the opening and closing of diagrams in
  * the platform that contains the environment.
- *  * @author Trey Spiva
  */
 @org.openide.util.lookup.ServiceProvider(service=org.netbeans.modules.uml.ui.support.applicationmanager.IProductDiagramManager.class)
 public class UMLDiagramManager 

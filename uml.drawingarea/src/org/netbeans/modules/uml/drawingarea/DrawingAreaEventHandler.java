@@ -113,7 +113,6 @@ import org.netbeans.modules.uml.ui.support.DispatchHelper;
 import org.netbeans.modules.uml.ui.support.diagramsupport.DrawingAreaEventsAdapter;
 
 /**
- * @author sumitabhk
  *
  */
 public class DrawingAreaEventHandler

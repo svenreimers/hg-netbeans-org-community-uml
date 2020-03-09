@@ -54,7 +54,6 @@ import org.openide.util.NbBundle;
 
 /**
  *
- * @author Kris Richards
  */
 public class OrthogonalLayoutAction extends AbstractAction
 {

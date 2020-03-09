@@ -52,7 +52,6 @@ import org.openide.filesystems.FileUtil;
 
 /**
  *
- * @author Craig Conover, craig.conover@sun.com
  */
 public class DomainTemplate 
 {

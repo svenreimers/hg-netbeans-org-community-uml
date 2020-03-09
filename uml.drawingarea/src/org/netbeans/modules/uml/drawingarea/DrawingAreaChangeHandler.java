@@ -61,7 +61,6 @@ import org.netbeans.modules.uml.drawingarea.view.UMLNodeWidget;
 
 /**
  *
- * @author thuy
  */
 public class DrawingAreaChangeHandler implements DrawingAreaChangeListener
 {

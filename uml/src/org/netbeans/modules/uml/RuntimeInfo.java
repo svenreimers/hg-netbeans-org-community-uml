@@ -45,7 +45,6 @@
 package org.netbeans.modules.uml;
 
 /**
- * @author brettb
  *
  */
 public class RuntimeInfo

@@ -48,7 +48,6 @@ package org.netbeans.modules.uml.core.generativeframework;
 import junit.framework.TestCase;
 
 /**
- * @author aztec
  */
 public class IfTestTestCase extends TestCase {
 	private IfTest ifTest = null;

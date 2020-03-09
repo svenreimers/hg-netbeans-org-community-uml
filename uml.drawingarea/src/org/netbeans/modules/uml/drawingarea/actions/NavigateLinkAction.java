@@ -63,7 +63,6 @@ import org.netbeans.modules.uml.drawingarea.view.DesignerScene;
 
 /**
  *
- * @author Sheryl Su
  */
 public class NavigateLinkAction extends WidgetAction.Adapter
 {

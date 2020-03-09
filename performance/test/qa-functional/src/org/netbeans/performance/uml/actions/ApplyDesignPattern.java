@@ -63,7 +63,6 @@ import org.netbeans.modules.project.ui.test.ProjectSupport;
 /**
  * Measure UI-RESPONSIVENES and WINDOW_OPENING.
  *
- * @author rashid@netbeans.org
  *
  */
 public class ApplyDesignPattern extends PerformanceTestCase {

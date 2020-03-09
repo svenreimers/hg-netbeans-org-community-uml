@@ -56,7 +56,6 @@ import org.openide.util.NbBundle;
 
 /**
  *
- * @author Craig Conover, craig.conover@sun.com
  */
 public class SaveNotifier 
 {

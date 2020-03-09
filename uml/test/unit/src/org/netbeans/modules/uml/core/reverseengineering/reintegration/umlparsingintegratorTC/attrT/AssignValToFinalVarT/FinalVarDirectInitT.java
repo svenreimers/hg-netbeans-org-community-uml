@@ -52,7 +52,6 @@ import org.netbeans.modules.uml.core.reverseengineering.reintegration.umlparsing
 
 
 /**
- * @author aztec
  */
 public class FinalVarDirectInitT extends
 AbstractUMLParsingIntegrationTestCase {

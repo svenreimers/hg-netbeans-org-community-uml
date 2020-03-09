@@ -50,7 +50,6 @@ import org.netbeans.modules.uml.core.reverseengineering.parsers.umlparser.Abstra
 import junit.textui.TestRunner;
 
 /**
- * @author aztec
  */
 public class StaticImportTest extends AbstractUmlParserTestCase {
 	public static void main(String[] args) {

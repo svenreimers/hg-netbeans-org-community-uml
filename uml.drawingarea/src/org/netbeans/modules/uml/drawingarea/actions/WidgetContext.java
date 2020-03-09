@@ -45,7 +45,6 @@ package org.netbeans.modules.uml.drawingarea.actions;
 
 /**
  *
- * @author treyspiva
  */
 public interface WidgetContext 
 {

@@ -76,7 +76,6 @@ import org.openide.NotifyDescriptor;
 import org.openide.util.NbBundle;
 
 /**
- * @author sumitabhk
  *
  */
 public class NewPackageUI extends WizardInteriorPage implements INewDialogUI

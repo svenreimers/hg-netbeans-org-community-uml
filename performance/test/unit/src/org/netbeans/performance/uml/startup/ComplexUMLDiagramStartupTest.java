@@ -58,7 +58,6 @@ import org.netbeans.modules.performance.utilities.MeasureStartupTimeTestCase;
  * it's a attempt to have still the same testing conditions with
  * loaded and cached files.
  *
- * @author mrkam@netbeans.org
  */
 public class ComplexUMLDiagramStartupTest extends MeasureStartupTimeTestCase {
     

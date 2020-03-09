@@ -54,7 +54,6 @@ import org.netbeans.modules.uml.core.metamodel.diagrams.IDiagramKind;
 import org.netbeans.modules.uml.ui.support.NewPackageKind;
 
 /**
- * @author sumitabhk
  *
  */
 public class NewDialogPackageDetails implements INewDialogPackageDetails

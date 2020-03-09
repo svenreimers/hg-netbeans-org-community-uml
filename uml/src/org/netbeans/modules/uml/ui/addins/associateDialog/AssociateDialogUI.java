@@ -42,7 +42,6 @@ import org.openide.util.NbPreferences;
 
 /**
  *
- * @author  jyothi
  */
 public class AssociateDialogUI extends javax.swing.JDialog implements IAssociateDlgGUI {
 

@@ -48,7 +48,6 @@ package org.netbeans.modules.uml.common;
 import org.netbeans.modules.uml.core.support.Debug;
 
 /**
- * @author KevinM
  *
  * To change the template for this generated type comment go to
  * Window>Preferences>Java>Code Generation>Code and Comments

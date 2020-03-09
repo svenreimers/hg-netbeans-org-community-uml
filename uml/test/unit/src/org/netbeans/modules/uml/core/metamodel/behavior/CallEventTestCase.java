@@ -53,7 +53,7 @@ import org.netbeans.modules.uml.core.AbstractUMLTestCase;
 import org.netbeans.modules.uml.core.metamodel.core.constructs.IClass;
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation;
 
-/** @author aztec
+/**
  *
  */
 public class CallEventTestCase extends AbstractUMLTestCase

@@ -63,7 +63,6 @@ import org.openide.windows.TopComponent;
 
 /**
  *
- * @author Sheryl Su
  */
 public class WidgetAcceptAction extends WidgetAction.Adapter
 {

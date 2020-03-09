@@ -57,7 +57,6 @@ import org.netbeans.modules.uml.ui.support.ProductHelper;
 import org.netbeans.modules.uml.ui.support.applicationmanager.IProductProjectManager;
 
 /**
- * @author sumitabhk
  *
  */
 public class NewDialogContext implements INewDialogContext

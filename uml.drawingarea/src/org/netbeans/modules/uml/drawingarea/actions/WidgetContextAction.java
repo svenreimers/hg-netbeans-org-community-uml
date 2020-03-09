@@ -64,7 +64,6 @@ import org.openide.util.actions.Presenter;
 
 /**
  *
- * @author treyspiva
  */
 public abstract class WidgetContextAction extends CallableSystemAction implements ContextAwareAction
 {

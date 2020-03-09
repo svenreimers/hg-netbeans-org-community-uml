@@ -55,7 +55,6 @@ package org.netbeans.modules.uml.drawingarea.actions;
 
 /**
  * usually passed to some object to perfome custom actions
- * @author sp153251
  */
 public interface ActionProvider {
    void perfomeAction();

@@ -50,7 +50,6 @@ import javax.swing.Icon;
 import javax.swing.JPanel;
 
 /**
- * @author sumitabhk
  *
  */
 public interface INewDialogUI

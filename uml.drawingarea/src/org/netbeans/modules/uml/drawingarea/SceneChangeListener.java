@@ -51,7 +51,6 @@ import org.netbeans.modules.uml.drawingarea.persistence.PersistenceUtil;
 
 /**
  *
- * @author Jyothi
  */
 public class SceneChangeListener extends ObjectSceneListenerAdapter {
     UMLDiagramDataObject dobj;

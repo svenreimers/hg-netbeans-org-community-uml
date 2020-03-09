@@ -65,7 +65,6 @@ import org.openide.util.actions.CookieAction;
 
 /**
  *
- * @author  Craig Conover
  */
 public class AssociateAction extends CookieAction
 {

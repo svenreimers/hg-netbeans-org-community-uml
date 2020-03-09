@@ -61,7 +61,6 @@ import org.netbeans.modules.uml.ui.support.wizard.WizardInteriorPage;
 
 
 /**
- * @author sumitabhk
  *
  */
 public class NewDialogWizardPage extends WizardInteriorPage

@@ -84,7 +84,6 @@ import org.netbeans.modules.uml.ui.support.diagramsupport.ProxyDiagramManager;
 import org.openide.util.NbBundle;
 
 /**
- * @author sumitabhk
  *
  */
 public class NewDialogUtilities

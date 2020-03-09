@@ -58,7 +58,6 @@ import org.netbeans.modules.uml.ui.support.commonresources.CommonResourceManager
 import org.netbeans.modules.uml.ui.swing.preferencedialog.ISwingPreferenceTableModel;
 
 /**
- * @author sumitabhk
  *
  */
 public class AssociateTableModel extends AbstractTableModel implements ISwingPreferenceTableModel

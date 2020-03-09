@@ -56,7 +56,6 @@ import org.netbeans.modules.uml.core.AbstractUMLTestCase;
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IGeneralization;
 
 /**
- * @author schandra
  *
  * Window - Preferences - Java - Code Generation - Code and Comments
  */

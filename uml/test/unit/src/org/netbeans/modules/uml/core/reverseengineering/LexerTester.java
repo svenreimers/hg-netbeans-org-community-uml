@@ -70,7 +70,6 @@ import antlr.TokenStream;
 import antlr.TokenStreamException;
 
 /**
- * @author Aztec
  */
 public class LexerTester<Lexer extends TokenStream>
 {

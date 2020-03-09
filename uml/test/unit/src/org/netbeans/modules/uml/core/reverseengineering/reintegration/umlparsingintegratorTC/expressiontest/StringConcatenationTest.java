@@ -51,7 +51,6 @@ import org.netbeans.modules.uml.core.reverseengineering.reintegration.umlparsing
 
 
 /**
- * @author aztec
  */
 public class StringConcatenationTest extends AbstractUMLParsingIntegrationTestCase {
     public static void main(String[] args) {

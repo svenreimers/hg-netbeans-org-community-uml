@@ -56,7 +56,6 @@ import org.openide.util.Utilities;
 
 /**
  *
- * @author treyspiva
  */
 public class MoveNodeKeyAction extends WidgetAction.LockedAdapter
 {

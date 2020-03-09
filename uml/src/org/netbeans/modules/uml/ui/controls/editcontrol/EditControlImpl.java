@@ -114,7 +114,6 @@ import org.netbeans.modules.uml.ui.support.drawingproperties.DrawingPropertyReso
 import org.netbeans.modules.uml.ui.swing.projecttree.ProjectTreeCellEditor;
 
 /**
- * @author sumitabhk
  * TODO: meteora
  */
 public class EditControlImpl extends JPanel implements IEditControl, InputMethodListener

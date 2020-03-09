@@ -57,7 +57,6 @@ import org.openide.util.Exceptions;
 
 /**
  *
- * @author Craig Conover, craig.conover@sun.com
  */
 public class ImageUtil
 {

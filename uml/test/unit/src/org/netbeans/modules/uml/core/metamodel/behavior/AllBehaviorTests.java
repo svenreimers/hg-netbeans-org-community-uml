@@ -55,7 +55,6 @@ import junit.framework.TestSuite;
 import junit.textui.TestRunner;
 
 /**
- * @author aztec
  *
  */
 public class AllBehaviorTests

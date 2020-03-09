@@ -50,7 +50,6 @@ import org.netbeans.api.visual.widget.Widget;
 
 /**
  *
- * @author Jyothi
  */
 
 public class UMLHoverProvider implements TwoStateHoverProvider {

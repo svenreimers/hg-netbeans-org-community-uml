@@ -56,7 +56,6 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.IElement;
 import org.netbeans.modules.uml.ui.support.NewElementKind;
 
 /**
- * @author sumitabhk
  *
  */
 public class NewDialogElementDetails implements INewDialogElementDetails

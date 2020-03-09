@@ -50,7 +50,6 @@ import javax.swing.Icon;
 
 /**
  *
- * @author Trey Spiva
  */
 public interface IFilterItem
 {

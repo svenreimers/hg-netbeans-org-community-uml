@@ -55,7 +55,6 @@ import org.netbeans.modules.uml.ui.support.NewDialogTabKind;
 import org.netbeans.modules.uml.ui.support.wizard.IWizardSheet;
 
 /**
- * @author sumitabhk
  *
  */
 public class NewDialog implements INewDialog

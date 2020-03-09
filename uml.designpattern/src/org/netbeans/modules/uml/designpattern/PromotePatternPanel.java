@@ -66,7 +66,6 @@ import org.openide.util.NbBundle;
 
 /**
  *
- * @author  Sheryl
  */
 public class PromotePatternPanel extends javax.swing.JPanel {
 	

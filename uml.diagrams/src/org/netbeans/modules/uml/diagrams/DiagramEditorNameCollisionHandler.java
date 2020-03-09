@@ -52,7 +52,6 @@ import org.openide.util.NbBundle;
 
 /**
  *
- * @author Sheryl Su
  */
 public class DiagramEditorNameCollisionHandler extends NameCollisionHandler
 {

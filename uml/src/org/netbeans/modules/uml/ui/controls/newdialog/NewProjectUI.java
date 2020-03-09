@@ -81,7 +81,6 @@ import org.netbeans.modules.uml.ui.support.wizard.IWizardSheet;
 import org.netbeans.modules.uml.ui.support.wizard.WizardInteriorPage;
 
 /**
- * @author sumitabhk
  *
  */
 public class NewProjectUI extends WizardInteriorPage implements INewDialogUI

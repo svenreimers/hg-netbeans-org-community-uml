@@ -51,7 +51,6 @@ import org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeModel;
 /**
  * Specifies the interface that all fitler dialog must implement.
  *
- * @author Trey Spiva
  */
 public interface IFilterDialog
 {

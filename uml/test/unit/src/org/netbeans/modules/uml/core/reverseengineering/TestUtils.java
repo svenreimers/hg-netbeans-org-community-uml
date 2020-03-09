@@ -57,7 +57,6 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 /**
- * @author Aztec
  */
 public class TestUtils
 {

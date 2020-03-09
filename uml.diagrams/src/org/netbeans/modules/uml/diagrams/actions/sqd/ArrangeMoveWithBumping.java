@@ -63,7 +63,6 @@ import org.netbeans.modules.uml.drawingarea.widgets.MessagePin;
  * perfome bumping down and up for messages
  * imporatnt: all lifelineLine children/subchildren etc should be ordered in graphical order
  * all execution expecifications should have zero location and differes by border only and of cause index
- * @author sp153251
  */
 public class ArrangeMoveWithBumping extends ArrangeMessagesProvider {
 

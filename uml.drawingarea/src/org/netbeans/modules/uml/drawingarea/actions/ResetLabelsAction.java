@@ -52,7 +52,6 @@ import org.openide.util.NbBundle;
 
 /**
  *
- * @author treyspiva
  */
 public class ResetLabelsAction extends AbstractAction
 {

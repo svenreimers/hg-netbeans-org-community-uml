@@ -64,7 +64,6 @@ import org.openide.util.NbBundle;
 
 /**
  *
- * @author jyothi
  */
 public class ResizeToDimensionAction extends SceneNodeAction
 {

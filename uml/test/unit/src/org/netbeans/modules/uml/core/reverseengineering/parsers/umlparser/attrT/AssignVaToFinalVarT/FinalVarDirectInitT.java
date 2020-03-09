@@ -51,7 +51,6 @@ import org.netbeans.modules.uml.core.reverseengineering.parsers.umlparser.Abstra
 
 
 /**
- * @author aztec
  */
 public class FinalVarDirectInitT extends
         AbstractUmlParserTestCase {

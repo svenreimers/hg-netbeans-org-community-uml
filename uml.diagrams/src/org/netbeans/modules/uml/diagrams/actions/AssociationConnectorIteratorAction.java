@@ -57,7 +57,6 @@ import org.netbeans.modules.uml.drawingarea.view.DesignerScene;
 
 /**
  *
- * @author jyothi
  */
 public class AssociationConnectorIteratorAction extends WidgetAction.Adapter 
 {

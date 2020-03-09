@@ -29,7 +29,6 @@ import org.openide.util.actions.CookieAction;
 
 /**
  *
- * @author Sheryl Su
  */
 public class SyncElementWithDataAction extends CookieAction
 {

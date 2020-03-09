@@ -52,7 +52,6 @@ import org.netbeans.api.visual.widget.Widget;
 
 /**
  * is used for vertical movements within some border
- * @author sp153251
  */
 public class VerticalWithLimitMoveProvider implements MoveStrategy,MoveProvider{
 

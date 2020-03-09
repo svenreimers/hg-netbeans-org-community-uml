@@ -309,7 +309,6 @@ public class UMLParsingIntegratorTestCase extends AbstractUMLTestCase
                 "\r\n" + 
                 "/**\r\n" + 
                 " *\r\n" + 
-                " * @author  tspiva\r\n" + 
                 " * @version\r\n" + 
                 " */\r\n" + 
                 "public class GDDynamicMenuInvokerAction\r\n" + 
@@ -536,7 +535,6 @@ public class UMLParsingIntegratorTestCase extends AbstractUMLTestCase
                 "\r\n" + 
                 "/**\r\n" + 
                 " *\r\n" + 
-                " * @author  tspiva\r\n" + 
                 " * @version\r\n" + 
                 " */\r\n" + 
                 "public class GDMenuInvokerAction extends AbstractAction\r\n" + 

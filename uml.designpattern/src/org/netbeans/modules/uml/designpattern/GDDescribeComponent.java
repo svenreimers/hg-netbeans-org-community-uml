@@ -56,7 +56,6 @@ import org.openide.util.HelpCtx;
 /**
  *  TopComponent for the Describe 6.0 properties editor.
  *
- * @author  Darshan
  * @version 1.0
  */
 public class GDDescribeComponent extends TopComponent {

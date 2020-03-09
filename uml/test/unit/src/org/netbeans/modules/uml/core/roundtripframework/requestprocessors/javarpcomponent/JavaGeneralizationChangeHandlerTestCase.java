@@ -71,7 +71,6 @@ import org.netbeans.modules.uml.core.support.umlsupport.IResultCell;
 import org.netbeans.modules.uml.core.support.umlutils.ETArrayList;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 /**
- * @author schandra
  *
  */
 public class JavaGeneralizationChangeHandlerTestCase

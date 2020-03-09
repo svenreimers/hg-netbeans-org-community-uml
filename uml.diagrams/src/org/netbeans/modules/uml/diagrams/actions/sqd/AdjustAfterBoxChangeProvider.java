@@ -51,7 +51,6 @@ import org.netbeans.modules.uml.drawingarea.actions.ActionProvider;
 
 /**
  *
- * @author sp153251
  */
 public class AdjustAfterBoxChangeProvider implements ActionProvider {
 

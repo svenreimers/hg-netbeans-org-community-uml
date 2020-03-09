@@ -61,7 +61,6 @@ import javax.swing.table.DefaultTableCellRenderer;
 import javax.swing.table.TableCellRenderer;
 
 /**
- * @author sumitabhk
  *
  */
 public class RoleCellRenderer extends DefaultTableCellRenderer implements TableCellRenderer

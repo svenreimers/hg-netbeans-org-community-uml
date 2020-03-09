@@ -56,7 +56,6 @@ import org.openide.util.actions.CookieAction;
 
 /**
  *
- * @author thuy
  */
 public final class ToggleShowLabelAction extends SceneCookieAction
 {

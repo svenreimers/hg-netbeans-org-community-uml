@@ -56,7 +56,6 @@ import org.netbeans.api.visual.widget.Scene;
  * that declares the ConnectionWidgetFactory that is used to create a 
  * connection widget.
  * 
- * @author treyspiva
  */
 public interface ConnectionWidgetFactory
 {

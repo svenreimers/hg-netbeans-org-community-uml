@@ -66,7 +66,6 @@ import org.openide.util.Lookup;
  * RectangularUniqueAnchor will make sure that two connection widgets will
  * not be connected to the same location on the widgets edge.
  * 
- * @author Trey Spiva
  */
 // TODO - scene component location is not 100% attach to the bounding rectangle when the line goes far to the bottom-left-bottom direction
 public final class ShapeUniqueAnchor extends Anchor

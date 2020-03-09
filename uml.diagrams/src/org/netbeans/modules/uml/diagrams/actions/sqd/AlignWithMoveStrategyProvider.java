@@ -51,7 +51,6 @@ import org.netbeans.modules.uml.diagrams.nodes.sqd.LifelineWidget;
 import java.util.ArrayList;
 /**
  * the same as commin provider but disable movement above y zero level
- * @author sp153251
  */
 public class AlignWithMoveStrategyProvider extends org.netbeans.modules.uml.drawingarea.view.AlignWithMoveStrategyProvider {
     

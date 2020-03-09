@@ -56,7 +56,6 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.IElement;
 import org.netbeans.modules.uml.core.metamodel.diagrams.IDiagramKind;
 
 /**
- * @author sumitabhk
  *
  */
 public class NewDialogDiagramDetails implements INewDialogDiagramDetails

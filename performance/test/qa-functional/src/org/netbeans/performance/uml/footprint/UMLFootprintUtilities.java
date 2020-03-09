@@ -59,7 +59,6 @@ import org.netbeans.performance.uml.UMLUtilities;
 /**
  * Utilities for Memory footprint tests
  *
- * @author  anebuzelsky@netbeans.org, mmirilovic@netbeans.org
  */
 public class UMLFootprintUtilities extends UMLUtilities {
     

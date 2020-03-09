@@ -102,7 +102,6 @@ import org.openide.util.Exceptions;
 
 /**
  *
- * @author Jyothi
  */
 public class UIDiagram extends Diagram { 
     

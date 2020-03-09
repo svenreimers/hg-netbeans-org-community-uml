@@ -60,7 +60,6 @@ import org.openide.util.Utilities;
 
 /**
  *
- * @author Sheryl Su
  */
 public class PanAction extends WidgetAction.LockedAdapter {
 

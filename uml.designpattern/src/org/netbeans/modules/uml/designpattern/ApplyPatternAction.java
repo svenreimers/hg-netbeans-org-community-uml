@@ -64,7 +64,6 @@ import org.openide.util.actions.CookieAction;
 
 /**
  *
- * @author Administrator
  */
 public class ApplyPatternAction extends CookieAction
 {

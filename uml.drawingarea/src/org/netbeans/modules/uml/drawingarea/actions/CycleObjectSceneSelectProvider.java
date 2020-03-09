@@ -52,7 +52,6 @@ import org.netbeans.modules.uml.drawingarea.util.Util;
 
 /**
  *
- * @author treyspiva
  */
 public class CycleObjectSceneSelectProvider implements CycleFocusProvider
 {

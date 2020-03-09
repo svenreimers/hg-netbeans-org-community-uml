@@ -56,7 +56,6 @@ import org.netbeans.modules.uml.drawingarea.ZoomManager;
 
 /**
  *
- * @author Sheryl Su
  * this class is copied from graph library with slight modification in mouse pressed logic to detect
  * max zoom factor
  */

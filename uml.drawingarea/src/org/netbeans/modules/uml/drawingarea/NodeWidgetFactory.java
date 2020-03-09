@@ -55,7 +55,6 @@ import org.netbeans.api.visual.widget.Widget;
  * can be used instead.  The file inside of the folder should be an instance
  * that declares the NodeWidgetFactory that is used to create a node widget.
  * 
- * @author treyspiva
  */
 public interface NodeWidgetFactory
 {

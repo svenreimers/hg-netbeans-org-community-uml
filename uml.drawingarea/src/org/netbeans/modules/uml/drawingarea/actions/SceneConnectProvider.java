@@ -88,7 +88,6 @@ import org.openide.util.Lookup;
 
 /**
  *
- * @author Jyothi
  */
 public class SceneConnectProvider implements ExConnectProvider
 {

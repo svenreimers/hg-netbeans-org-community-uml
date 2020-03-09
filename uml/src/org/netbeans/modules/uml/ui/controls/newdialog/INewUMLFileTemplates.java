@@ -48,7 +48,6 @@ import org.openide.WizardDescriptor;
 
 /**
  *
- * @author Thuy
  */
 
 public interface INewUMLFileTemplates

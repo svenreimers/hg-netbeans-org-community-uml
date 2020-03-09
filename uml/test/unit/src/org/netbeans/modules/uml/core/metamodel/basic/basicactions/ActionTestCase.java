@@ -56,7 +56,6 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.FactoryRetriever;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.IValueSpecification;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 /**
- * @author aztec
  *
  */
 public class ActionTestCase extends AbstractUMLTestCase

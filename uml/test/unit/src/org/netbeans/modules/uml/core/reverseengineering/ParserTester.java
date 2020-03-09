@@ -63,7 +63,6 @@ import org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.REClas
 import org.netbeans.modules.uml.core.reverseengineering.reframework.IREOperation;
 
 /**
- * @author Aztec
  */
 public class ParserTester
 {

@@ -66,7 +66,6 @@ import org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem;
 //import org.netbeans.modules.uml.ui.swing.drawingarea.IDrawingAreaSelectionEventsSink;
 
 /**
- * @author sumitabhk
  *
  */
 public class DocumentControlEventHandler implements 

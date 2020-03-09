@@ -54,7 +54,6 @@ import javax.swing.JTextField;
 
 
 /**
- * @author sumitabhk
  *
  */
 public class JRoleTextField extends JTextField

@@ -52,7 +52,6 @@ import org.netbeans.modules.uml.core.metamodel.structure.IProject;
 import org.netbeans.modules.uml.ui.support.finddialog.IFindResults;
 
 /**
- * @author jingmingm
  *
  */
 public interface IAssociateDlgGUI

@@ -62,7 +62,6 @@ import org.netbeans.modules.uml.util.StringTokenizer2;
 
 /**
  *
- * @author Craig Conover, craig.conover@sun.com
  */
 public class DomainTemplatesRetriever 
 {

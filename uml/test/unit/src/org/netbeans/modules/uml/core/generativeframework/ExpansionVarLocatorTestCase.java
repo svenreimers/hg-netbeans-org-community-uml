@@ -57,7 +57,6 @@ import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IInterface;
 
 /**
- * @author aztec
  */
 public class ExpansionVarLocatorTestCase extends AbstractUMLTestCase {
 	private ExpansionVarLocator var = null;

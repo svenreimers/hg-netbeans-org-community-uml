@@ -56,7 +56,6 @@ import org.netbeans.modules.uml.core.support.umlsupport.ResultCell;
 /**
  * The implementation of the IProjectTreeFilterDialogEventDispatcher interface.
  *
- * @author Trey Spiva
  * @see IProjectTreeFilterDialogEventDispatcher
  */
 public class ProjectTreeFilterDialogEventDispatcher extends EventDispatcher

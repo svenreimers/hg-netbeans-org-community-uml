@@ -10,7 +10,6 @@ import org.netbeans.api.visual.widget.ConnectionWidget;
 
 /**
  *
- * @author treyspiva
  */
 public class ConnectionAnchor extends Anchor
 {

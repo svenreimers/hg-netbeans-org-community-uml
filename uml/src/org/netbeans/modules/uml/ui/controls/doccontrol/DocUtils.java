@@ -24,7 +24,6 @@ package org.netbeans.modules.uml.ui.controls.doccontrol;
 import org.netbeans.modules.uml.core.support.umlsupport.StringUtilities;
 
 /**
- * @author sumitabhk
  *
  */
 public class DocUtils

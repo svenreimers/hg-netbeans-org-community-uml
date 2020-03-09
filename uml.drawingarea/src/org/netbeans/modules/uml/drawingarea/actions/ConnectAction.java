@@ -63,7 +63,6 @@ import org.netbeans.modules.uml.drawingarea.view.DesignerScene;
 /**
  * Override at least isTargetWidget and createConnection methods. isSourceWidget is always called before isTargetWidget.
  *
- * @author David Kaspar
  */
 public class ConnectAction extends WidgetAction.LockedAdapter {
 

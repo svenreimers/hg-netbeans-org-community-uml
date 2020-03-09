@@ -53,7 +53,6 @@ import org.netbeans.modules.uml.drawingarea.actions.ActionProvider;
 
 /**
  * common for all shifts, etc
- * @author sp153251
  */
 abstract public class ArrangeMessagesProvider implements ActionProvider {
     

@@ -50,7 +50,6 @@ import junit.textui.TestRunner;
 import org.netbeans.modules.uml.core.reverseengineering.reintegration.umlparsingintegratorTC.AbstractUMLParsingIntegrationTestCase;
 
 /**
- * @author aztec
  */
 public class ConstrMethodCallUsingThisKeywT extends
 		AbstractUMLParsingIntegrationTestCase {

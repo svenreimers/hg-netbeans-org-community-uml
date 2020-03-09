@@ -53,7 +53,6 @@ import org.openide.windows.WindowManager;
 
 /**
  *
- * @author Jyothi
  */
 public class CreateProvider  implements SelectProvider {
     

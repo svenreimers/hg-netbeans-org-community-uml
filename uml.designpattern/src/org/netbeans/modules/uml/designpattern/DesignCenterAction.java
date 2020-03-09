@@ -57,7 +57,6 @@ import org.openide.util.actions.CallbackSystemAction;
 /**
  * The DesignCenterAction will add a new design center control the the explorer
  * mode for the current workspace.
- * @author  Trey Spiva
  * @version 1.0
  */
 public class DesignCenterAction extends CallbackSystemAction

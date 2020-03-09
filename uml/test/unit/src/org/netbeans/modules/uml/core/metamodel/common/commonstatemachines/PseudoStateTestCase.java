@@ -52,7 +52,6 @@ package org.netbeans.modules.uml.core.metamodel.common.commonstatemachines;
 import org.netbeans.modules.uml.core.metamodel.core.primitivetypes.IPseudostateKind;
 import org.netbeans.modules.uml.core.AbstractUMLTestCase;
 /**
- * @author aztec
  *
  */
 public class PseudoStateTestCase extends AbstractUMLTestCase

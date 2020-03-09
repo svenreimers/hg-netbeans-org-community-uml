@@ -59,7 +59,6 @@ import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IParameter;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 /**
- * @author schandra
  *
  */
 public class JavaImplementationChangeHandlerTestCase extends

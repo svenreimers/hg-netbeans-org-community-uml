@@ -55,7 +55,6 @@ import org.netbeans.modules.uml.core.AbstractUMLTestCase;
 import org.netbeans.modules.uml.core.metamodel.structure.IProject;
 import org.netbeans.modules.uml.core.workspacemanagement.IWorkspace;
 /**
- * @author aztec
  *
  */
 public class ApplicationTestCase extends AbstractUMLTestCase

@@ -84,7 +84,6 @@ import org.netbeans.modules.uml.core.support.umlsupport.IResultCell;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 /**
- * @author Aztec
  */
 public class UMLTestListener
     implements IUMLParserEventsSink, IUMLParserOperationEventSink

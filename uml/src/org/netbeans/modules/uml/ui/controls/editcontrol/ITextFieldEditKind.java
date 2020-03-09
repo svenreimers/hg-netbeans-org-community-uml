@@ -47,7 +47,6 @@
 package org.netbeans.modules.uml.ui.controls.editcontrol;
 
 /**
- * @author sumitabhk
  *
  */
 public interface ITextFieldEditKind

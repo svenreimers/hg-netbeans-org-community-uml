@@ -50,7 +50,6 @@ import org.netbeans.modules.uml.core.workspacemanagement.IWorkspace;
 import org.netbeans.modules.uml.ui.support.NewDialogTabKind;
 
 /**
- * @author sumitabhk
  *
  */
 public class NewDialogValidateProcessor implements INewDialogValidateProcessor

@@ -52,7 +52,6 @@ import org.netbeans.modules.uml.core.support.umlutils.InvalidArguments;
 import junit.framework.TestCase;
 /**
  *
- * @author Trey Spiva
  */
 public class WorkspaceDispatcherTestCase extends TestCase
 {

@@ -53,7 +53,6 @@ import org.netbeans.api.visual.widget.Widget;
 /**
  * The extended connect provider adds the ability to create connection between specified points of widgets
  * 
- * @author psb
  */
 public interface ExConnectWithLocationProvider extends ExConnectProvider
 {

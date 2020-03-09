@@ -56,7 +56,6 @@ import org.netbeans.modules.uml.drawingarea.view.DesignerTools;
 
 /**
  *
- * @author Sheryl Su
  */
 public class MarqueeZoomSelectProvider implements RectangularSelectProvider
 {

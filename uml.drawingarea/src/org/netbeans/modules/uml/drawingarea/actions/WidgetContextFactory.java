@@ -47,7 +47,6 @@ import java.awt.Point;
 
 /**
  *
- * @author treyspiva
  */
 public interface WidgetContextFactory 
 {

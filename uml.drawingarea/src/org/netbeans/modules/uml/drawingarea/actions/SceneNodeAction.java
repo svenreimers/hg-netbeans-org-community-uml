@@ -47,7 +47,6 @@ import org.openide.util.actions.NodeAction;
 
 /**
  *
- * @author treyspiva
  */
 public abstract class SceneNodeAction extends NodeAction
 {

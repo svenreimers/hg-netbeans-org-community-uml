@@ -52,7 +52,6 @@ import org.netbeans.modules.uml.core.support.umlsupport.IResultCell;
  * The sink is used to initialize the project tree and notified when the user
  * accecpts the filter settings.
  *
- * @author Trey Spiva
  */
 public interface IProjectTreeFilterDialogEventsSink
 {

@@ -57,7 +57,6 @@ import javax.swing.Icon;
 
 /**
  *
- * @author Administrator
  */
 public class BaseActionWrapper extends BaseAction
 {

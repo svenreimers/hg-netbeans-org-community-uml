@@ -55,7 +55,6 @@ import org.netbeans.modules.uml.core.coreapplication.IDesignCenterSupport;
 
 
 /**
- * @author sumitabhk
  *
  */
 public class ADDesignCenterManager extends DesignCenterManager implements IADDesignCenterManager

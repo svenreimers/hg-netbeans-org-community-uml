@@ -54,7 +54,6 @@ import javax.swing.border.Border;
 
 /**
  *
- * @author Jan Jancura
  */
 public class DashedBorder implements Border {
 

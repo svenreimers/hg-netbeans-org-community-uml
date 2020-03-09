@@ -61,7 +61,6 @@ import org.openide.windows.CloneableOpenSupport;
 
 /**
  *
- * @author Jyothi
  */
 public class UMLDiagramEditorSupport extends DataEditorSupport 
         implements OpenCookie, EditorCookie.Observable, CloseCookie, PrintCookie {

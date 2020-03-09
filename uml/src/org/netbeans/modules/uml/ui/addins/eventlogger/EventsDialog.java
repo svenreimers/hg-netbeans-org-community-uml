@@ -62,7 +62,6 @@ import javax.swing.table.DefaultTableModel;
 import org.netbeans.modules.uml.ui.swing.commondialogs.JCenterDialog;
 
 /**
- * @author sumitabhk
  *
  */
 public class EventsDialog extends JCenterDialog implements ActionListener

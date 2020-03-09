@@ -55,7 +55,6 @@ import org.netbeans.modules.uml.resources.images.ImageUtil;
 
 /**
  *
- * @author treyspiva
  */
 public class BirdToggleViewAction extends AbstractAction
 {

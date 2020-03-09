@@ -58,7 +58,6 @@ import org.netbeans.modules.uml.ui.swing.SelectableLabel;
 
 /**
  *
- * @author Craig Conover, craig.conover@sun.com
  */
 public class DomainTreeNodeRendererEditor extends JPanel
     implements TreeCellRenderer

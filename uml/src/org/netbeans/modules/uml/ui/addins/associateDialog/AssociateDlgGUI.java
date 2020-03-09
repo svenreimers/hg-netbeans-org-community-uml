@@ -37,8 +37,6 @@
 //import org.openide.util.NbPreferences;
 //
 ///**
-// * @author jingmingm
-// * @author Craig Conover
 // *
 // */
 //public class AssociateDlgGUI extends JCenterDialog implements IAssociateDlgGUI

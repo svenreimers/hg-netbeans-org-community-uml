@@ -46,7 +46,6 @@
 package org.netbeans.modules.uml.common;
 
 /**
- * @author KevinM
  *
  * Null System printer.
  */

@@ -61,7 +61,6 @@ import org.netbeans.modules.performance.utilities.MemoryFootprintTestCase;
 /**
  * Measure UML Project Workflow Memory footprint
  *
- * @author  mmirilovic@netbeans.org
  */
 public class UMLWorkflow extends MemoryFootprintTestCase {
     

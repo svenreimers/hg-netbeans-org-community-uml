@@ -53,7 +53,6 @@ import org.netbeans.modules.uml.ui.support.commonresources.CommonResources;
 
 /**
  *
- * @author Trey Spiva
  */
 public class NewDialogResources extends CommonResources
 {

@@ -53,7 +53,6 @@ package org.netbeans.modules.uml.core.metamodel.common.commonstatemachines;
 import junit.framework.Test;
 import junit.framework.TestSuite;
 /**
- * @author aztec
  *
  */
 public class AllCommonStateMachineTests

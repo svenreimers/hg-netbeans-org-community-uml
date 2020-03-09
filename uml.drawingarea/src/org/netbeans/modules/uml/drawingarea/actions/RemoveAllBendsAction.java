@@ -55,7 +55,6 @@ import org.openide.util.actions.NodeAction;
 
 /**
  *
- * @author Sheryl Su
  */
 public class RemoveAllBendsAction extends NodeAction
 {

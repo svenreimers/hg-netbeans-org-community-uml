@@ -49,7 +49,6 @@ import org.netbeans.api.visual.widget.Widget;
 
 /**
  *
- * @author sp153251
  */
 abstract public class ResizeStrategyProvider implements ResizeStrategy,ResizeProvider {
 

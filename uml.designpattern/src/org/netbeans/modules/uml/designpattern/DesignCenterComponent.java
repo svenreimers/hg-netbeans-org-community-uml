@@ -91,7 +91,6 @@ import org.netbeans.modules.uml.ui.swing.testbed.addin.menu.Separator;
  * The DesignCenterComponent is a component that can be embedded into NetBeans
  * (FFJ) window system.  DesignCenterComponent will display a Describe system
  * tree control inside NetBeans (FFJ).
- * @author  Trey Spiva
  * @version 1.0
  */
 public class DesignCenterComponent extends TopComponent {

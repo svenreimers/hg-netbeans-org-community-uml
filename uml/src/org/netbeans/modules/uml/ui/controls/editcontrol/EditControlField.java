@@ -61,7 +61,6 @@ import org.netbeans.modules.uml.core.support.umlutils.IPropertyElementManager;
 import org.netbeans.modules.uml.ui.support.ProductHelper;
 
 /**
- * @author sumitabhk
  *
  */
 public class EditControlField implements IEditControlField

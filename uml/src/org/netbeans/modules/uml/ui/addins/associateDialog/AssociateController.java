@@ -92,7 +92,6 @@ import org.netbeans.modules.uml.ui.support.diagramsupport.PresentationFinder;
 import org.netbeans.modules.uml.ui.support.diagramsupport.ProxyDiagramManager;
 
 /**
- * @author sumitabhk
  *
  *
  */

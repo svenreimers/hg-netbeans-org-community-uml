@@ -52,7 +52,6 @@ import org.netbeans.modules.uml.core.eventframework.EventManager;
 import org.netbeans.modules.uml.core.support.umlsupport.IResultCell;
 
 /**
- * @author sumitabhk
  *
  */
 public class EditControlEventDispatcher extends EventDispatcher implements IEditControlEventDispatcher

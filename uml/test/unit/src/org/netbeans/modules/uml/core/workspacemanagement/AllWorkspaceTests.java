@@ -51,7 +51,6 @@ import junit.textui.TestRunner;
 
 /**
  *
- * @author Trey Spiva
  */
 public class AllWorkspaceTests
 {

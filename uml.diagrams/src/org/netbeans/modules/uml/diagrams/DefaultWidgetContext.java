@@ -47,7 +47,6 @@ import org.netbeans.modules.uml.drawingarea.actions.WidgetContext;
 
 /**
  *
- * @author treyspiva
  */
 public class DefaultWidgetContext implements WidgetContext
 {

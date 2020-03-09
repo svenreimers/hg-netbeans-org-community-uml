@@ -60,7 +60,6 @@ import org.openide.util.actions.NodeAction;
 
 /**
  *
- * @author Sheryl Su
  */
 public class FindSourceTargetAction extends NodeAction
 {

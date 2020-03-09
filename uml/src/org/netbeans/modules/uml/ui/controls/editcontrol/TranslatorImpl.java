@@ -92,7 +92,6 @@ import org.netbeans.modules.uml.ui.support.applicationmanager.IProduct;
 import org.netbeans.modules.uml.ui.support.applicationmanager.IProductProjectManager;
 
 /**
- * @author sumitabhk
  *
  */
 public class TranslatorImpl implements ITranslator

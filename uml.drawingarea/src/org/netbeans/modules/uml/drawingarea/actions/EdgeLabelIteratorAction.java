@@ -54,7 +54,6 @@ import org.netbeans.modules.uml.drawingarea.view.UMLEdgeWidget;
 
 /**
  *
- * @author jyothi
  */
 public class EdgeLabelIteratorAction extends WidgetAction.Adapter {
 

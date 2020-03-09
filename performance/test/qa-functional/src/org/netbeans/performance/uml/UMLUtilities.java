@@ -52,7 +52,6 @@ import org.netbeans.modules.performance.utilities.CommonUtilities;
 /**
  * Utilities for Performance tests, workarrounds, often used methods, ...
  *
- * @author  mmirilovic@netbeans.org
  */
 public class UMLUtilities extends CommonUtilities {
 

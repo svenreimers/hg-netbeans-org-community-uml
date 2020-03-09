@@ -61,7 +61,6 @@ import org.netbeans.modules.project.ui.test.ProjectSupport;
 /**
  * Test Open UML Project
  *
- * @author  rashid@netbeans.org
  */
 public class OpenUMLProject extends PerformanceTestCase {
 

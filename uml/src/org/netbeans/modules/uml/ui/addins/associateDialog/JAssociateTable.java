@@ -69,7 +69,6 @@ import org.netbeans.modules.uml.ui.swing.preferencedialog.ISwingPreferenceTableM
 
 
 /**
- * @author sumitabhk
  *
  */
 public class JAssociateTable extends JTable

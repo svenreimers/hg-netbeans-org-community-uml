@@ -74,7 +74,6 @@ import javax.swing.border.LineBorder;
 
 
 /**
- * @author Jan Jancura
  */
 public class TabbedPanel extends JPanel
 {

@@ -58,7 +58,6 @@ import org.netbeans.api.visual.border.Border;
 
 /**
  *
- * @author sp153251
  */
 public class ResizeBorder implements Border {
     private static final BasicStroke STROKE = new BasicStroke (1.0f, BasicStroke.JOIN_BEVEL, BasicStroke.CAP_BUTT, 5.0f, new float[] { 6.0f, 3.0f }, 0.0f);

@@ -80,7 +80,6 @@ import java.util.List;
 import org.openide.util.Exceptions;
 
 /**
- * @author sumitabhk
  *
  */
 public class NewDialogResultProcessor implements INewDialogResultProcessor

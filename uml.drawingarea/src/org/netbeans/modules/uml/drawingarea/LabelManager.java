@@ -52,7 +52,6 @@ import org.netbeans.api.visual.widget.Widget;
 /**
  * The LabelManager is used to manage a set of labels that can be displayed.
  * 
- * @author treyspiva
  */
 public interface LabelManager extends PropertyChangeListener
 {

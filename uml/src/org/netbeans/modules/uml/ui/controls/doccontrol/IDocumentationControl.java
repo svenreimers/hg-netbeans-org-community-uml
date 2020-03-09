@@ -22,7 +22,6 @@
 package org.netbeans.modules.uml.ui.controls.doccontrol;
 
 /**
- * @author sumitabhk
  *
  */
 public interface IDocumentationControl

@@ -46,7 +46,6 @@ package org.netbeans.modules.uml.util;
 
 /**
  *
- * @author Craig Conover, craig.conover@sun.com
  */
 public interface ITaskSupervisor
 {

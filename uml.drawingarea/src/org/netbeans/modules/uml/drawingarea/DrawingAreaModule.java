@@ -60,7 +60,6 @@ import org.openide.modules.ModuleInstall;
 
 /**
  *
- * @author Administrator
  */
 public class DrawingAreaModule extends ModuleInstall
 {

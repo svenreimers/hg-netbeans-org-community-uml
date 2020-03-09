@@ -53,7 +53,6 @@ import org.netbeans.performance.uml.footprint.UMLWorkflow;
 /**
  * Measure UI-RESPONSIVENES and WINDOW_OPENING.
  *
- * @author  mrkam@netbeans.org
  */
 public class MeasureUMLMemoryFootprintTest  {
 

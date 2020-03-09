@@ -58,8 +58,6 @@ import org.openide.util.NbBundle;
 
 /**
  *
- * @author Jyothi
- * @author Craig Conover, craig.conover@sun.com
  */
 public class ProjectTemplatesCustomizer 
     implements ProjectCustomizer.CompositeCategoryProvider
