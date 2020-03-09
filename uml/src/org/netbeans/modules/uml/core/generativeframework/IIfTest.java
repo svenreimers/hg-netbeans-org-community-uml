@@ -50,7 +50,6 @@
 package org.netbeans.modules.uml.core.generativeframework;
 
 /**
- * @author aztec
  */
 public interface IIfTest
 {

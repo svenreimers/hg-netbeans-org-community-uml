@@ -52,7 +52,6 @@ package org.netbeans.modules.uml.core.generativeframework;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 /**
- * @author aztec
  */
 public class ExpansionFormatter
 {

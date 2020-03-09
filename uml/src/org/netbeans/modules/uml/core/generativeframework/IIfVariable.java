@@ -54,7 +54,6 @@ import org.dom4j.Node;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 /**
- * @author aztec
  */
 public interface IIfVariable extends ICompoundVariable
 {

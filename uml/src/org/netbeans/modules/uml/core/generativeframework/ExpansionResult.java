@@ -46,7 +46,6 @@
 package org.netbeans.modules.uml.core.generativeframework;
 
 /**
- * @author sumitabhk
  *
  */
 public class ExpansionResult implements IExpansionResult{

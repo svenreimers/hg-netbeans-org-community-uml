@@ -66,7 +66,6 @@ import org.netbeans.modules.uml.core.support.umlutils.ETArrayList;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 /**
- * @author sumitabhk
  */
 public class ExpansionVariable implements IExpansionVariable {
     public static final int EOK_NONE    = 0;

@@ -53,7 +53,6 @@ import org.dom4j.Document;
 import org.dom4j.Node;
 
 /**
- * @author Aztec
  */
 public class ClearAttributeAction
     extends AttributeAction

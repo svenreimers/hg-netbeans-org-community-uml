@@ -55,7 +55,6 @@ import org.netbeans.modules.uml.core.support.umlsupport.INamedCollection;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 /**
- * @author aztec
  */
 public class ImportVariable extends CompoundVariable implements IImportVariable
 {

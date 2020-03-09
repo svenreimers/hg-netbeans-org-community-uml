@@ -49,7 +49,6 @@
 package org.netbeans.modules.uml.core.coreapplication;
 
 /**
- * @author sumitabhk
  *
  */
 public class DesignCenterSupport implements IDesignCenterSupport{

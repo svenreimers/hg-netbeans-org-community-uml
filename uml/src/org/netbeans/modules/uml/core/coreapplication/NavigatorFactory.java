@@ -48,7 +48,6 @@ package org.netbeans.modules.uml.core.coreapplication;
 import org.netbeans.modules.uml.ui.support.presentationnavigation.SourceNavigator;
 
 /**
- * @author sumitabhk
  *
  */
 public class NavigatorFactory implements INavigatorFactory

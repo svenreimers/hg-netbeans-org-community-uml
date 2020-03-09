@@ -56,7 +56,6 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.IElement;
 import org.netbeans.modules.uml.core.support.umlsupport.ProductRetriever;
 
 /**
- * @author sumitabhk
  */
 public class TemplateManager implements ITemplateManager{
 

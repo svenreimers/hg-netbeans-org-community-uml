@@ -54,7 +54,6 @@ import org.dom4j.Node;
 import org.netbeans.modules.uml.core.metamodel.basic.basicactions.Action;
 
 /**
- * @author aztec
  *
  */
 public class TerminateAction extends Action implements ITerminateAction

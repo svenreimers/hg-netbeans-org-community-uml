@@ -55,7 +55,6 @@ import org.netbeans.modules.uml.core.support.umlsupport.StringUtilities;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 /**
- * @author aztec
  */
 public class Formatter
 {

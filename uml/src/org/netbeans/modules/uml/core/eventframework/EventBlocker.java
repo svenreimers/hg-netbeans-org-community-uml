@@ -49,7 +49,6 @@ import org.netbeans.modules.uml.core.coreapplication.ICoreProduct;
 import org.netbeans.modules.uml.core.support.umlsupport.ProductRetriever;
 
 /**
- * @author sumitabhk
  *
  */
 public class EventBlocker {

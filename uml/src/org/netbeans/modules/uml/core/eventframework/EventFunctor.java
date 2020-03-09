@@ -54,7 +54,6 @@ import java.util.Vector;
 import org.netbeans.modules.uml.core.support.umlsupport.Log;
 
 /**
- * @author sumitabhk
  *
  */
 public class EventFunctor

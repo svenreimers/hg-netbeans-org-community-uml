@@ -46,7 +46,6 @@
 package org.netbeans.modules.uml.core.eventframework;
 
 /**
- * @author sumitabhk
  *
  */
 public class EventDispatchNameKeeper {

@@ -55,7 +55,6 @@ import org.dom4j.Node;
 import org.netbeans.modules.uml.core.metamodel.basic.basicactions.IInputPin;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.ElementCollector;
 /**
- * @author Aztec
  */
 public class AddVariableValueAction
     extends WriteVariableAction

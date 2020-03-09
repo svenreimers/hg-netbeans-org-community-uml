@@ -56,7 +56,6 @@ import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation;
 
 /**
- * @author aztec
  *
  */
 public class CallEvent extends Event implements ICallEvent

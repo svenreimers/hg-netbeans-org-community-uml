@@ -56,7 +56,6 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.ElementCollector;
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation;
 
 /**
- * @author aztec
  *
  */
 public class CallAction extends Action implements ICallAction

@@ -52,7 +52,6 @@ import org.dom4j.Node;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.IElement;
 
 /**
- * @author sumitabhk
  */
 public class ExpansionVarLocator {
     private static final int PS_OPTIONAL   = 0;

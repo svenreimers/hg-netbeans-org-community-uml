@@ -56,7 +56,6 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.ElementCollector;
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IReception;
 
 /**
- * @author aztec
  *
  */
 public class SendAction extends Action implements ISendAction

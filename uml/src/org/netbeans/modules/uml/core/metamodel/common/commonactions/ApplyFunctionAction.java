@@ -55,7 +55,6 @@ import org.dom4j.Node;
 import org.netbeans.modules.uml.core.metamodel.basic.basicactions.PrimitiveAction;
 
 /**
- * @author Aztec
  */
 public class ApplyFunctionAction extends PrimitiveAction
                                     implements IApplyFunctionAction

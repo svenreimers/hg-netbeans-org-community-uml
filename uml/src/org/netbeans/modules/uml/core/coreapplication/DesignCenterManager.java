@@ -61,7 +61,6 @@ import org.openide.filesystems.FileUtil;
 import org.openide.loaders.DataObject;
 
 /**
- * @author sumitabhk
  *
  */
 public class DesignCenterManager /*extends AddInManagerImpl*/ implements IDesignCenterManager

@@ -61,7 +61,6 @@ import org.netbeans.modules.uml.core.support.umlutils.ETArrayList;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 /**
- * @author sumitabhk
  */
 public class VariableFactory implements IVariableFactory{
 	/* (non-Javadoc)

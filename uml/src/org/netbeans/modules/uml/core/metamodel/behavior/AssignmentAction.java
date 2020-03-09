@@ -56,7 +56,6 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.ElementCollector;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.IExpression;
 
 /**
- * @author aztec
  *
  */
 public class AssignmentAction extends Action implements IAssignmentAction

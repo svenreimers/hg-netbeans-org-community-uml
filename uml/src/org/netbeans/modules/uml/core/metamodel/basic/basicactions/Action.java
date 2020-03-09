@@ -54,7 +54,6 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.IValueSpecificati
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 /**
- * @author gautams
  */
 public class Action extends Element implements IAction 
 {

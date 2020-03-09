@@ -46,7 +46,6 @@
 package org.netbeans.modules.uml.core.coreapplication;
 
 /**
- * @author sumitabhk
  *
  */
 public class ProductDescriptor implements IProductDescriptor

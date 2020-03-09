@@ -91,7 +91,6 @@ import org.netbeans.modules.uml.core.workspacemanagement.WorkspaceManagementExce
 import org.netbeans.modules.uml.core.workspacemanagement.WorkspaceManager;
 
 /**
- * @author sumitabhk
  *
  */
 public class CoreProduct implements ICoreProduct

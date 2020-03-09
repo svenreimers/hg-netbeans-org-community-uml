@@ -59,7 +59,6 @@ import org.netbeans.modules.uml.core.support.umlsupport.ProductRetriever;
  * either fire, or do not fire, dependent on the flag used to instantiate
  * the object.
  *
- * @author  Trey Spiva
  * @see IEventDispatcher
  * @see IEventDispatchController
  */

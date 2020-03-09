@@ -56,7 +56,6 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.IExpression;
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.Event;
 
 /**
- * @author aztec
  *
  */
 public class ChangeEvent extends Event implements IChangeEvent

@@ -51,7 +51,6 @@ package org.netbeans.modules.uml.core.generativeframework;
 
 
 /**
- * @author Aztec
  */
 public interface IIterationVariable extends ICompoundVariable
 {

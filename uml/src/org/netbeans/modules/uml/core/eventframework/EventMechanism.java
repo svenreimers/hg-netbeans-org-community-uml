@@ -56,7 +56,6 @@ import org.netbeans.modules.uml.core.support.umlsupport.ProductRetriever;
 import org.netbeans.modules.uml.core.support.umlsupport.XMLManip;
 
 /**
- * @author sumitabhk
  *
  */
 public class EventMechanism {

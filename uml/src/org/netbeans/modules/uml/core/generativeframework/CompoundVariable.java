@@ -50,7 +50,6 @@
 package org.netbeans.modules.uml.core.generativeframework;
 
 /**
- * @author aztec
  */
 public class CompoundVariable extends ExpansionVariable
         implements ICompoundVariable
