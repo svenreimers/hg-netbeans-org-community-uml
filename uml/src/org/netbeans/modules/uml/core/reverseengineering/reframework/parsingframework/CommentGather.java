@@ -59,7 +59,6 @@ import antlr.collections.AST;
 import antlr.*;
 
 /**
- * @author Aztec
  */
 public class CommentGather implements ICommentGather
 {

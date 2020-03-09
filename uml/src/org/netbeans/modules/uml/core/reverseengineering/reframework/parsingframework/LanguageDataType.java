@@ -46,7 +46,6 @@
 package org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework;
 
 /**
- * @author sumitabhk
  *
  */
 public class LanguageDataType implements ILanguageDataType

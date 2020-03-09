@@ -68,7 +68,6 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 import org.netbeans.modules.uml.ui.support.commondialogs.MessageIconKindEnum;
 
 /**
- * @author aztec
  *
  */
 public class JavaClassChangeHandler extends JavaChangeHandler

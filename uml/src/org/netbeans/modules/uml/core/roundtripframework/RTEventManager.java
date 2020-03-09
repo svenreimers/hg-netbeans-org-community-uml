@@ -105,7 +105,6 @@ import org.netbeans.modules.uml.core.workspacemanagement.IWorkspace;
 import org.netbeans.modules.uml.ui.support.commondialogs.IPreferenceQuestionDialog;
 
 /**
- * @author Aztec
  */
 public class RTEventManager implements IRTEventManager
 {

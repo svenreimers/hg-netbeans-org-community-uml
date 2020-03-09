@@ -50,7 +50,6 @@
 package org.netbeans.modules.uml.core.roundtripframework;
 
 /**
- * @author Aztec
  */
 public interface IImpactedPreRequest extends IPreRequest
 {

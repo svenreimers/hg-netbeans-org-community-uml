@@ -54,7 +54,6 @@ import antlr.CommonHiddenStreamToken;
 import antlr.collections.AST;
 
 /**
- * @author Aztec
  */
 public class NewLineCommentGather extends CommentGather implements INewLineCommentGather
 {

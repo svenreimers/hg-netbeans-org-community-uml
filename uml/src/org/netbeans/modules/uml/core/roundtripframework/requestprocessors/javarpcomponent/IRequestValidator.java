@@ -48,7 +48,6 @@ import org.netbeans.modules.uml.core.roundtripframework.IChangeRequest;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 /**
- * @author Aztec
  */
 public interface IRequestValidator
 {

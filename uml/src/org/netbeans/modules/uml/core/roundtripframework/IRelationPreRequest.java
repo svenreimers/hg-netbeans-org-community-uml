@@ -52,7 +52,6 @@ package org.netbeans.modules.uml.core.roundtripframework;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.IRelationProxy;
 
 /**
- * @author Aztec
  */
 public interface IRelationPreRequest extends IPreRequest
 {

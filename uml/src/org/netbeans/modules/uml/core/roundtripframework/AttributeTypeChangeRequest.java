@@ -53,7 +53,6 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.IElement;
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttribute;
 
 /**
- * @author Aztec
  */
 public class AttributeTypeChangeRequest
     extends TypeChangeRequest

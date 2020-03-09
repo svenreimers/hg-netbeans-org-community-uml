@@ -52,7 +52,6 @@ package org.netbeans.modules.uml.core.reverseengineering.reframework.parsingfram
 import java.util.HashMap;
 
 /**
- * @author Aztec
  */
 public class TokenDescriptor implements ITokenDescriptor
 {

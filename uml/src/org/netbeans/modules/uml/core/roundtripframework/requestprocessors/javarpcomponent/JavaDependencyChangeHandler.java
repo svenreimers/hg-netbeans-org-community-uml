@@ -52,7 +52,6 @@ import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure
 import org.netbeans.modules.uml.core.roundtripframework.IChangeRequest;
 
 /**
- * @author aztec
  *
  */
 public class JavaDependencyChangeHandler extends JavaChangeHandler

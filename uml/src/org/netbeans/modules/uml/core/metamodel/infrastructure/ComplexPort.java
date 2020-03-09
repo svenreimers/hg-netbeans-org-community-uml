@@ -75,7 +75,6 @@ import org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframe
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 /**
- * @author Aztec
  */
 public class ComplexPort extends StructuralFeature implements IComplexPort
 {

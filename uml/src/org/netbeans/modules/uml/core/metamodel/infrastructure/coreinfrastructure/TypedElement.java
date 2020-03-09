@@ -66,7 +66,6 @@ import org.netbeans.modules.uml.core.support.umlsupport.XMLManip;
 import org.netbeans.modules.uml.core.support.umlsupport.Log;
 
 /**
- * @author aztec
  *
  */
 public class TypedElement extends Element implements ITypedElement

@@ -50,7 +50,6 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElement;
 
 /**
  * Details about a location on the graph map of an edge.
- * @author aztec
  */
 public class EdgeMapLocation implements IGraphicMapLocation
 {

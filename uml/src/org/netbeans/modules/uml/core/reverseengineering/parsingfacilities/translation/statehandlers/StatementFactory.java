@@ -54,7 +54,6 @@ import org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.IOpPar
 import org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.SymbolTable;
 
 /**
- * @author Aztec
  */
 public class StatementFactory
 {

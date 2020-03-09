@@ -58,7 +58,6 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 /**
  *
- * @author Administrator
  */
 public abstract class EnumLiteralChangeFacility extends RequestFacility
                                                 implements IEnumLiteralChangeFacility

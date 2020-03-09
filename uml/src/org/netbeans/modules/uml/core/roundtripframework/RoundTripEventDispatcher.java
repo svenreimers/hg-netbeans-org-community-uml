@@ -57,7 +57,6 @@ import org.netbeans.modules.uml.core.eventframework.IValidationSink;
 import org.netbeans.modules.uml.core.support.umlsupport.IResultCell;
 
 /**
- * @author Aztec
  */
 public class RoundTripEventDispatcher
     extends EventDispatcher

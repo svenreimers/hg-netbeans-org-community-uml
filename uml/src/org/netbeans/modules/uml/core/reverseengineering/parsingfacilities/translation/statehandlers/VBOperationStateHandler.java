@@ -57,7 +57,6 @@ import org.netbeans.modules.uml.core.support.umlsupport.StringUtilities;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 /**
- * @author Aztec
  */
 public class VBOperationStateHandler extends OperationStateHandler
 {

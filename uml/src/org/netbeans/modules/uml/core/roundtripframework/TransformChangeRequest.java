@@ -52,7 +52,6 @@ package org.netbeans.modules.uml.core.roundtripframework;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.IElement;
 
 /**
- * @author Aztec
  */
 public class TransformChangeRequest
     extends ChangeRequest

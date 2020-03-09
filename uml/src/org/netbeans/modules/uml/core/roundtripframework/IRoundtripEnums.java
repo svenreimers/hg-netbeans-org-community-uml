@@ -46,7 +46,6 @@
 package org.netbeans.modules.uml.core.roundtripframework;
 
 /**
- * @author sumitabhk
  *
  */
 public interface IRoundtripEnums

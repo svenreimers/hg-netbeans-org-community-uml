@@ -61,7 +61,6 @@ import org.netbeans.modules.uml.core.metamodel.structure.IProject;
 import org.netbeans.modules.uml.core.support.umlsupport.IResultCell;
 
 /**
- * @author Aztec
  */
 public class RTDispatchHelper
 {

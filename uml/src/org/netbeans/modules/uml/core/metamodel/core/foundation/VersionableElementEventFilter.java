@@ -50,7 +50,6 @@ import java.util.Vector;
 import org.netbeans.modules.uml.core.eventframework.EventFilter;
 
 /**
- * @author sumitabhk
  *
  */
 public class VersionableElementEventFilter extends EventFilter implements IVersionableElementEventFilter{

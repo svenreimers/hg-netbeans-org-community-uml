@@ -68,7 +68,6 @@ import org.netbeans.modules.uml.core.support.umlsupport.ProductRetriever;
 import org.netbeans.modules.uml.core.support.umlsupport.XMLManip;
 
 /**
- * @author Aztec
  */
 public class StateHandler
 {

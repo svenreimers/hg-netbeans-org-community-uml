@@ -56,7 +56,6 @@ package org.netbeans.modules.uml.core.reverseengineering.reframework.parsingfram
 
 /**
  *
- * @author Administrator
  */
 public interface IParserFactory
 {

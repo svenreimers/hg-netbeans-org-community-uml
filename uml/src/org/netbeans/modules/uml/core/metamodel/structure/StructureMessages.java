@@ -55,7 +55,6 @@ import java.util.ResourceBundle;
 
 /**
  * Resource bundle front-end for Structure messages.
- * @author aztec
  */
 public class StructureMessages
 {

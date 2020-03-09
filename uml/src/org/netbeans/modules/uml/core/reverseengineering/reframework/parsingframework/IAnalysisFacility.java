@@ -50,7 +50,6 @@
 package org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework;
 
 /**
- * @author Aztec
  */
 public interface IAnalysisFacility extends IFacility
 {

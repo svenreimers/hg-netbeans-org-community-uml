@@ -54,7 +54,6 @@ import org.netbeans.modules.uml.core.metamodel.dynamics.ILifeline;
 import org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.IUMLParserOperationEventSink;
 
 /**
- * @author Aztec
  */
 public interface IOperationRE extends IUMLParserOperationEventSink
 {

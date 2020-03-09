@@ -56,7 +56,6 @@ import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure
 import org.netbeans.modules.uml.core.roundtripframework.RTMode;
 import org.netbeans.modules.uml.core.support.umlsupport.UMLSupportResource;
 /**
- * @author Aztec
  */
 public class JavaMethodChangeFacility
     extends MethodChangeFacility

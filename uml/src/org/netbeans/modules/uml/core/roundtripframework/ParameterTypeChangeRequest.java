@@ -52,7 +52,6 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.IElement;
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IParameter;
 
 /**
- * @author aztec
  *
  */
 public class ParameterTypeChangeRequest extends TypeChangeRequest

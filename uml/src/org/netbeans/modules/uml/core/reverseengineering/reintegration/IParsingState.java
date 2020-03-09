@@ -50,7 +50,6 @@
 package org.netbeans.modules.uml.core.reverseengineering.reintegration;
 
 /**
- * @author Aztec
  */
 public interface IParsingState
 {

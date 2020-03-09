@@ -55,7 +55,6 @@ import org.dom4j.Node;
 import org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.Identifier;
 
 /**
- * @author Aztec
  */
 public class NestedPackageStateHandler extends PackageStateHandler
 {

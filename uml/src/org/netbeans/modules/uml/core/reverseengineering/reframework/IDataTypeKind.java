@@ -46,7 +46,6 @@
 package org.netbeans.modules.uml.core.reverseengineering.reframework;
 
 /**
- * @author sumitabhk
  *
  */
 public interface IDataTypeKind

@@ -48,7 +48,6 @@ package org.netbeans.modules.uml.core.reverseengineering.reframework.parsingfram
 import org.netbeans.modules.uml.core.reverseengineering.reframework.IREOperation;
 
 /**
- * @author sumitabhk
  *
  */
 public class LanguageParser implements ILanguageParser

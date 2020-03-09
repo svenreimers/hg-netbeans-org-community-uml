@@ -55,7 +55,6 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.IRelationProxy;
 import org.netbeans.modules.uml.core.support.umlsupport.IResultCell;
 
 /**
- * @author Aztec
  */
 public class RTRelationDispatchHelper extends RTDispatchHelper
 {

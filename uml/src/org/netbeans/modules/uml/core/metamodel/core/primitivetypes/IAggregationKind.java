@@ -50,7 +50,6 @@
 package org.netbeans.modules.uml.core.metamodel.core.primitivetypes;
 
 /**
- * @author Aztec
  */
 public interface IAggregationKind {
 

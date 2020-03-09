@@ -106,7 +106,6 @@ import org.openide.util.NbBundle;
 
 
 /**
- * @author sumitabhk
  *
  */
 public class Classifier extends Namespace implements IClassifier, 

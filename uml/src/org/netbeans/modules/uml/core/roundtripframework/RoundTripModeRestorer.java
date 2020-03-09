@@ -52,7 +52,6 @@ package org.netbeans.modules.uml.core.roundtripframework;
 import org.netbeans.modules.uml.core.support.umlsupport.ProductRetriever;
 
 /**
- * @author Aztec
  */
 public class RoundTripModeRestorer
 {

@@ -59,7 +59,6 @@ import org.netbeans.modules.uml.core.support.umlsupport.IStrings;
 import org.netbeans.modules.uml.core.support.umlsupport.Strings;
 
 /**
- * @author Aztec
  */
 public class JRPParameter implements IJRPParameter
 {

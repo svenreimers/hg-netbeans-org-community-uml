@@ -78,19 +78,16 @@ import org.netbeans.modules.uml.core.support.umlutils.ElementLocator;
 import org.netbeans.modules.uml.core.support.umlutils.IElementLocator;
 
 /**
- * @author josephg
  *
  * To change the template for this generated type comment go to
  * Window>Preferences>Java>Code Generation>Code and Comments
  */
 /**
- * @author josephg
  *
  * To change the template for this generated type comment go to
  * Window>Preferences>Java>Code Generation>Code and Comments
  */
 /**
- * @author aztec
  */
 public class Message extends NamedElement implements IMessage
 {

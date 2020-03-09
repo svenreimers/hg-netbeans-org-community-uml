@@ -58,7 +58,6 @@ import org.netbeans.modules.uml.ui.support.commondialogs.IQuestionDialog;
 import org.netbeans.modules.uml.ui.swing.commondialogs.SwingQuestionDialogImpl;
 
 /**
- * @author Aztec
  */
 public class HandlerQuery implements IHandlerQuery
 {

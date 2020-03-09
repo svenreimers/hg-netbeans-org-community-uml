@@ -71,7 +71,6 @@ import org.netbeans.modules.uml.ui.support.commondialogs.MessageIconKindEnum;
 
 /**
  *
- * @author Administrator
  */
 public class JavaEnumerationChangeHandler  extends JavaChangeHandler
 {

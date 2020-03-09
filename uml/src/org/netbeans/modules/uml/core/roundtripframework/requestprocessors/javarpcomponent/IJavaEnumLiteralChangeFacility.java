@@ -57,7 +57,6 @@ import org.netbeans.modules.uml.core.roundtripframework.IEnumLiteralChangeFacili
 
 /**
  *
- * @author Administrator
  */
 public interface IJavaEnumLiteralChangeFacility extends IEnumLiteralChangeFacility
 {

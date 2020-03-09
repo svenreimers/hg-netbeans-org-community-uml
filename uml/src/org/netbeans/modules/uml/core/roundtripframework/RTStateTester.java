@@ -58,7 +58,6 @@ import org.netbeans.modules.uml.core.metamodel.structure.IProject;
 import org.netbeans.modules.uml.core.support.umlsupport.ProductRetriever;
 
 /**
- * @author Aztec
  */
 public class RTStateTester implements IRTStateTester
 {

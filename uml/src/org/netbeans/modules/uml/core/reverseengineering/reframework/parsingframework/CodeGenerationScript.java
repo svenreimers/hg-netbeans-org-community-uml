@@ -57,7 +57,6 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 import org.netbeans.modules.uml.core.support.umlutils.IDataFormatter;
 
 /**
- * @author sumitabhk
  *
  */
 public class CodeGenerationScript implements ICodeGenerationScript

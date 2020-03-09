@@ -53,7 +53,6 @@ import org.netbeans.modules.uml.core.eventframework.IEventPayload;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.IElement;
 
 /**
- * @author Aztec
  */
 public class NameModifyPreRequest
     extends PreRequest

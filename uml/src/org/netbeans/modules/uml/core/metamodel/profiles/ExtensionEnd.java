@@ -54,7 +54,6 @@ import org.dom4j.Node;
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.AssociationEnd;
 
 /**
- * @author aztec
  *
  */
 public class ExtensionEnd extends AssociationEnd implements IExtensionEnd

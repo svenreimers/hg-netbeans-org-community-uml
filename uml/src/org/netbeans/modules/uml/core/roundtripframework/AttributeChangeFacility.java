@@ -71,7 +71,6 @@ import org.netbeans.modules.uml.core.support.umlutils.IElementLocator;
 
 
 /**
- * @author Aztec
  */
 public class AttributeChangeFacility extends RequestFacility
                                         implements IAttributeChangeFacility

@@ -53,7 +53,6 @@ import org.netbeans.modules.uml.core.support.umlutils.ETArrayList;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 /**
- * @author Aztec
  */
 public class CompoundChangeRequest
     extends ChangeRequest

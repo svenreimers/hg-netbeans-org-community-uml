@@ -67,7 +67,6 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.IPackage;
 import org.netbeans.modules.uml.core.support.umlsupport.Log;
 
 /**
- * @author sumitabhk
  */
 public class BehavioralFeature extends Feature 
       implements IBehavioralFeature, INamespace  

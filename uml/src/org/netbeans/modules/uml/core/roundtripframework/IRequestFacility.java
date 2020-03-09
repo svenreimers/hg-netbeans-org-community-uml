@@ -52,7 +52,6 @@ package org.netbeans.modules.uml.core.roundtripframework;
 import org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.IFacility;
 
 /**
- * @author Aztec
  */
 public interface IRequestFacility extends IFacility
 {

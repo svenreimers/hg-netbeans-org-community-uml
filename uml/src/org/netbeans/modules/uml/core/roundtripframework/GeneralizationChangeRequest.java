@@ -54,7 +54,6 @@ import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IGeneralization;
 
 /**
- * @author Aztec
  */
 public class GeneralizationChangeRequest
     extends ChangeRequest

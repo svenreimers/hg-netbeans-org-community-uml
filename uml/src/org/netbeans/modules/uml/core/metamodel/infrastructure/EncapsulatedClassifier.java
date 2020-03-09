@@ -48,7 +48,6 @@ package org.netbeans.modules.uml.core.metamodel.infrastructure;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 /**
- * @author sumitabhk
  *
  */
 public class EncapsulatedClassifier extends StructuredClassifier

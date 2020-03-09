@@ -52,7 +52,6 @@ package org.netbeans.modules.uml.core.roundtripframework;
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttribute;
 
 /**
- * @author Aztec
  */
 public interface IAttributeTypeChangeRequest extends ITypeChangeRequest
 {

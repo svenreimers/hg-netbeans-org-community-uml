@@ -53,7 +53,6 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.IElement;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElement;
 
 /**
- * @author Aztec
  */
 public class DependencyChangeRequest
     extends ChangeRequest

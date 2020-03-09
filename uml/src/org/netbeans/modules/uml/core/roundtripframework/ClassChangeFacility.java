@@ -52,7 +52,6 @@ package org.netbeans.modules.uml.core.roundtripframework;
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier;
 
 /**
- * @author Aztec
  */
 public class ClassChangeFacility
     extends RequestFacility

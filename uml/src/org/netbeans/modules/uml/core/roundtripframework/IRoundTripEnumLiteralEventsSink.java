@@ -60,7 +60,6 @@ import org.netbeans.modules.uml.core.support.umlsupport.IResultCell;
  * IRoundTripEnumLiteralEventsSink provides the event listener interface that is used
  * to listen to round trip enumeration literals events.
  *
- * @author Trey Spiva
  */
 public interface IRoundTripEnumLiteralEventsSink
 {

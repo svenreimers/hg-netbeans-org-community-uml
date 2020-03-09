@@ -53,7 +53,6 @@ import org.dom4j.Node;
 
 
 /**
- * @author Aztec
  */
 public class Facility implements IFacility
 {

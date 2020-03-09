@@ -175,7 +175,6 @@ import org.openide.util.NbBundle;
 import org.openide.util.NbPreferences;
 
 /**
- * @author sumitabhk
  *
  */
 public class UMLParsingIntegrator

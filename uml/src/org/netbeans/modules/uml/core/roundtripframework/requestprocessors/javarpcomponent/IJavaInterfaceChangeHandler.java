@@ -50,7 +50,6 @@ package org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javar
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier;
 
 /**
- * @author avaneeshj
  *
  * To change the template for this generated type comment go to
  * Window - Preferences - Java - Code Generation - Code and Comments

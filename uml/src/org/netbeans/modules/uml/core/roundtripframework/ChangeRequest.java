@@ -54,7 +54,6 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.IElement;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.IRelationProxy;
 
 /**
- * @author Aztec
  */
 public class ChangeRequest implements IChangeRequest
 {

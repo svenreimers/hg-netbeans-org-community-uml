@@ -57,7 +57,6 @@ import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure
 import org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ILanguage;
 
 /**
- * @author Aztec
  */
 public interface IRequestProcessorUtilities
 {

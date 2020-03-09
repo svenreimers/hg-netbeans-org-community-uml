@@ -50,7 +50,6 @@
 package org.netbeans.modules.uml.core.reverseengineering.reframework;
 
 /**
- * @author Aztec
  */
 public class REConditional extends MethodDetailParserData implements IREConditional
 {

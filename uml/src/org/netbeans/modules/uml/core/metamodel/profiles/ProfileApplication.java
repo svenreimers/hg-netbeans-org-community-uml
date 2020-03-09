@@ -55,7 +55,6 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.IPackage;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.PackageImport;
 
 /**
- * @author aztec
  *
  */
 public class ProfileApplication

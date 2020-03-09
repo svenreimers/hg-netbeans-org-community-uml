@@ -53,7 +53,6 @@ import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IDerivation;
 
 /**
- * @author Aztec
  */
 public interface IDerivationClassifier extends IClassifier, IDerivation
 {

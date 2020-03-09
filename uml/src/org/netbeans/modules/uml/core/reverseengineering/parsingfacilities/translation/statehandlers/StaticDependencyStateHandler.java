@@ -48,7 +48,6 @@ import org.netbeans.modules.uml.core.reverseengineering.reframework.IDependencyE
 
 /**
  *
- * @author krichard
  */
 public class StaticDependencyStateHandler extends DependencyStateHandler
 {

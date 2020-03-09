@@ -52,7 +52,6 @@ import org.netbeans.modules.uml.ui.support.diagramsupport.IDiagramTypesManager;
 
 /**
  *
- * @author Trey Spiva
  */
 public class DiagramDetails implements IDiagramKind
 {

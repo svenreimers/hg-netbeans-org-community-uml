@@ -47,7 +47,6 @@ import java.util.List;
 
 /**
  *
- * @author jyothi
  */
 public class DiagramInfo {
 

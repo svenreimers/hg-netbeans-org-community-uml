@@ -91,7 +91,6 @@ import org.netbeans.modules.uml.core.workspacemanagement.IWorkspaceEventDispatch
 import org.netbeans.modules.uml.ui.support.helpers.ETSmartWaitCursor;
 
 /**
- * @author sumitabhk
  *
  */
 public class RoundTripController implements IRoundTripController

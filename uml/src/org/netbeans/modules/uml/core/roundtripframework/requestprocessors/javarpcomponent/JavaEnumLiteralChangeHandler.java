@@ -91,7 +91,6 @@ import org.netbeans.modules.uml.ui.support.ErrorDialogIconKind;
 
 /**
  *
- * @author Administrator
  */
 public class JavaEnumLiteralChangeHandler extends JavaChangeHandler
 {

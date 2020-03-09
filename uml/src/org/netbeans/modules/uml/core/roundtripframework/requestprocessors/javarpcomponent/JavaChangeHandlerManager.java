@@ -61,7 +61,6 @@ import org.netbeans.modules.uml.core.roundtripframework.ITypeChangeRequest;
 import org.netbeans.modules.uml.core.roundtripframework.RTElementKind;
 
 /**
- * @author Aztec
  */
 public class JavaChangeHandlerManager implements IJavaChangeHandlerManager
 {

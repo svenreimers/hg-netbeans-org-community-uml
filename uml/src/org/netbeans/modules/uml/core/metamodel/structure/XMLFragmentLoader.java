@@ -53,7 +53,6 @@ import java.io.IOException;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.UMLXMLManip;
 
 /**
- * @author aztec
  *
  */
 public class XMLFragmentLoader

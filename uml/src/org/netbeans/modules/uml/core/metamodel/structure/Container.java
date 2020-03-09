@@ -49,7 +49,6 @@
 package org.netbeans.modules.uml.core.metamodel.structure;
 
 /**
- * @author aztec
  *
  */
 public class Container extends Node

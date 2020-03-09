@@ -103,7 +103,6 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 import org.netbeans.modules.uml.core.typemanagement.ITypeManager;
 
 /*
- * @author KevinM
  */
 public class RelationFactory extends Object implements IRelationFactory 
 {

@@ -57,7 +57,6 @@ import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IParameter;
 
 /**
- * @author Aztec
  */
 public class ImpactedPreRequest
     extends PreRequest

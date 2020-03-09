@@ -115,7 +115,6 @@ import org.dom4j.Node;
 import org.netbeans.modules.uml.core.support.umlsupport.XMLManip;
 
 /**
- * @author Aztec
  */
 public class OperationRE implements IOperationRE
 {

@@ -61,7 +61,6 @@ import org.netbeans.modules.uml.core.reverseengineering.reframework.IREClass;
 import org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ITokenDescriptor;
 
 /**
- * @author Aztec
  */
 public class VBMethodWithStatement extends MethodCompositeStateHandler
 {

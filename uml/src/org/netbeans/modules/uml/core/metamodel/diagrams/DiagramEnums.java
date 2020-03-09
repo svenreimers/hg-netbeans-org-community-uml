@@ -47,7 +47,6 @@ package org.netbeans.modules.uml.core.metamodel.diagrams;
 
 /**
  *
- * @author Trey Spiva
  */
 public interface DiagramEnums
 {

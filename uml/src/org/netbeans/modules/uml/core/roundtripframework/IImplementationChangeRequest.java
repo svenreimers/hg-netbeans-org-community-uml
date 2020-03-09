@@ -53,7 +53,6 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.IElement;
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier;
 
 /**
- * @author Aztec
  */
 public interface IImplementationChangeRequest extends IChangeRequest
 {

@@ -53,7 +53,6 @@ package org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.trans
 import org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ITokenDescriptor;
 
 /**
- * @author Aztec
  */
 public class VBParameterStateHandler extends ParameterStateHandler
 {

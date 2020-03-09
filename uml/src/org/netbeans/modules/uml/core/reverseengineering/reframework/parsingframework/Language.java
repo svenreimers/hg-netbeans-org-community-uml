@@ -62,7 +62,6 @@ import org.openide.cookies.InstanceCookie;
 import org.openide.filesystems.FileUtil;
 
 /**
- * @author sumitabhk
  *
  */
 public class Language implements ILanguage

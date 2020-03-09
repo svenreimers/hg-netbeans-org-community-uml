@@ -52,7 +52,6 @@ import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure
 import org.netbeans.modules.uml.core.roundtripframework.ClassChangeFacility;
 
 /**
- * @author aztec
  *
  */
 public class JavaClassChangeFacility extends ClassChangeFacility

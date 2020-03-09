@@ -54,7 +54,6 @@ import org.netbeans.modules.uml.core.metamodel.core.constructs.IEnumeration;
 
 /**
  *
- * @author Administrator
  */
 public class EnumerationChangeFacility extends RequestFacility
                                        implements IEnumerationChangeFacility

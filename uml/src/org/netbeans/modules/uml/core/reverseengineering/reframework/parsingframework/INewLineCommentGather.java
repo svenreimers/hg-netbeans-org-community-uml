@@ -52,7 +52,6 @@ package org.netbeans.modules.uml.core.reverseengineering.reframework.parsingfram
 import antlr.collections.AST;
 
 /**
- * @author Aztec
  */
 public interface INewLineCommentGather extends ICommentGather
 {

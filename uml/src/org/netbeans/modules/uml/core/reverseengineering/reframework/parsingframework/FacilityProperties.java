@@ -49,7 +49,6 @@ import java.util.Map;
 import java.util.Set;
 
 /**
- * @author aztec
  */
 public class FacilityProperties extends HashMap<String, IFacilityProperty>
     implements IFacilityProperties

@@ -58,7 +58,6 @@ import org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframe
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 /**
- * @author Aztec
  */
 public interface IModelChangeFacility extends IRequestFacility
 {

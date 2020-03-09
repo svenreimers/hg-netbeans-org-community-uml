@@ -65,7 +65,6 @@ import org.openide.filesystems.FileObject;
 import org.openide.filesystems.FileUtil;
 
 /**
- * @author Aztec
  */
 public class TopLevelStateHandler extends StateHandler
 {

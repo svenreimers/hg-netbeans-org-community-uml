@@ -51,7 +51,6 @@ package org.netbeans.modules.uml.core.metamodel.profiles;
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAssociationEnd;
 
 /**
- * @author aztec
  *
  */
 public interface IExtensionEnd extends IAssociationEnd

@@ -57,7 +57,6 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.UMLXMLManip;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 /**
- * @author sumitabhk
  *
  */
 public class Operation extends BehavioralFeature 

@@ -51,7 +51,6 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 import org.netbeans.modules.uml.core.support.umlutils.ETArrayList;
 
 /**
- * @author sumitabhk
  *
  */
 public class LanguageSyntax implements ILanguageSyntax

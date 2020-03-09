@@ -56,7 +56,6 @@ import org.netbeans.modules.uml.ui.support.commondialogs.IQuestionDialog;
 import org.netbeans.modules.uml.ui.swing.commondialogs.SwingQuestionDialogImpl;
 
 /**
- * @author aztec
  *
  */
 public class ConditionalHandlerQuery extends HandlerQuery implements IConditionalHandlerQuery

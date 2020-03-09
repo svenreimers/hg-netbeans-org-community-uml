@@ -51,7 +51,6 @@ import org.netbeans.modules.uml.core.support.umlsupport.IResultCell;
 
 /**
  *
- * @author Trey Spiva
  */
 public class TypedElementEventsAdapter implements ITypedElementEventsSink
 {

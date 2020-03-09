@@ -46,7 +46,6 @@ package org.netbeans.modules.uml.core.reverseengineering.reframework.parsingfram
 
 /**
  *
- * @author treyspiva
  */
 public class CollectionType
 {

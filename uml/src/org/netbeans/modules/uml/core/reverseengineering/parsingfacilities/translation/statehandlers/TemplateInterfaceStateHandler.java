@@ -48,7 +48,6 @@ import org.dom4j.Node;
 
 /**
  *
- * @author Trey Spiva
  */
 public class TemplateInterfaceStateHandler extends InterfaceStateHandler
 {

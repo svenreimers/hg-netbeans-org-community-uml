@@ -63,7 +63,6 @@ import org.netbeans.modules.uml.core.roundtripframework.RequestDetailKind;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 /**
- * @author aztec
  *
  */
 public class JavaGeneralizationChangeHandler extends JavaChangeHandler

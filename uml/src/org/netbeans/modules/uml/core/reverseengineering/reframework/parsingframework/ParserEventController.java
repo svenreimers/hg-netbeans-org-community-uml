@@ -61,7 +61,6 @@ import antlr.collections.AST;
 import antlr.CommonASTWithLocationsAndHidden;
 
 /**
- * @author Aztec
  */
 public class ParserEventController implements IParserEventController
 {

@@ -54,7 +54,6 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.IRelationProxy;
 import org.netbeans.modules.uml.core.metamodel.structure.IProject;
 
 /**
- * @author Aztec
  */
 public interface IRTStateTester
 {

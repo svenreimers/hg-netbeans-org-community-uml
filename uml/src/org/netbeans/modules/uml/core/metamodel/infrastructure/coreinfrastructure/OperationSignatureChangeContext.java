@@ -51,7 +51,6 @@ package org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructur
 import org.netbeans.modules.uml.core.eventframework.EventContext;
 
 /**
- * @author sumitabhk
  *
  */
 public class OperationSignatureChangeContext extends EventContext implements IOperationSignatureChangeContext

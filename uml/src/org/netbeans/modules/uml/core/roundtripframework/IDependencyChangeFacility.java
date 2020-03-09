@@ -52,7 +52,6 @@ package org.netbeans.modules.uml.core.roundtripframework;
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier;
 
 /**
- * @author Aztec
  */
 public interface IDependencyChangeFacility extends IRequestFacility
 {

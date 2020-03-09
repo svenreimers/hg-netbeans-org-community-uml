@@ -59,7 +59,6 @@ import org.netbeans.modules.uml.core.support.umlsupport.ProductRetriever;
 
 /**
  *
- * @author Administrator
  */
 public class JavaEnumLiteralChangeFacility extends EnumLiteralChangeFacility 
                                            implements IJavaEnumLiteralChangeFacility

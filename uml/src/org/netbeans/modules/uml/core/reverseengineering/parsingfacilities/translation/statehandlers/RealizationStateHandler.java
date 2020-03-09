@@ -57,7 +57,6 @@ import org.netbeans.modules.uml.core.reverseengineering.reframework.IRERealizati
 import org.netbeans.modules.uml.core.reverseengineering.reframework.RERealization;
 
 /**
- * @author Aztec
  */
 public class RealizationStateHandler extends GeneralizationStateHandler
 {

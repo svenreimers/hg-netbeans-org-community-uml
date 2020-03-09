@@ -58,7 +58,6 @@ import org.netbeans.modules.uml.core.reverseengineering.reframework.OperationEve
 import org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ITokenDescriptor;
 
 /**
- * @author Aztec
  */
 public class OperationStateHandler extends AttributeStateHandler
 {

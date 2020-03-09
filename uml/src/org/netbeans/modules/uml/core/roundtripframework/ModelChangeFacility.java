@@ -60,7 +60,6 @@ import org.netbeans.modules.uml.core.support.umlsupport.ProductRetriever;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 /**
- * @author Aztec
  */
 public class ModelChangeFacility
     extends RequestFacility

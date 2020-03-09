@@ -51,7 +51,6 @@ package org.netbeans.modules.uml.core.metamodel.profiles;
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAggregation;
 
 /**
- * @author aztec
  *
  */
 public interface IExtension extends IAggregation

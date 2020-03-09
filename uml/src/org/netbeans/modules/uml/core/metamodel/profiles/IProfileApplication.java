@@ -53,7 +53,6 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.IPackageImport;
 
 
 /**
- * @author aztec
  *
  */
 public interface IProfileApplication extends IPackageImport

@@ -49,7 +49,6 @@
 package org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpcomponent;
 
 /**
- * @author aztec
  *
  */
 public interface IConditionalHandlerQuery extends IHandlerQuery

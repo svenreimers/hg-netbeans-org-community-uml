@@ -56,7 +56,6 @@ import org.netbeans.modules.uml.util.AbstractNBTask;
 
 /**
  *
- * @author Craig Conover, craig.conover@sun.com
  */
 public class ReverseEngineerTask extends AbstractNBTask
 {

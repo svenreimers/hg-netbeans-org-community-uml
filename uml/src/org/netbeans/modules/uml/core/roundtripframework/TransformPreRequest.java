@@ -56,7 +56,6 @@ import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.INavigableEnd;
 
 /**
- * @author Aztec
  */
 public class TransformPreRequest
     extends PreRequest

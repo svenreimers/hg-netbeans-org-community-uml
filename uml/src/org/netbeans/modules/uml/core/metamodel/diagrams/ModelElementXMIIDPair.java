@@ -46,13 +46,11 @@
 /*
  *
  * Created on Jun 19, 2003
- * @author Trey Spiva
  */
 package org.netbeans.modules.uml.core.metamodel.diagrams;
 
 /**
  *
- * @author Trey Spiva
  */
 public class ModelElementXMIIDPair
 {

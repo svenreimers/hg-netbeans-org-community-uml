@@ -59,7 +59,6 @@ import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IInterface;
 
 /**
- * @author Aztec
  */
 public class RelationPreRequest extends PreRequest
 {

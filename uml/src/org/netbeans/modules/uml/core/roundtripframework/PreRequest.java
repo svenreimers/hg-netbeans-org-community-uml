@@ -63,7 +63,6 @@ import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure
 import org.netbeans.modules.uml.core.preferenceframework.PreferenceAccessor;
 
 /**
- * @author Aztec
  */
 public class PreRequest implements IPreRequest
 {

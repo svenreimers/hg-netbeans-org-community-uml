@@ -52,7 +52,6 @@ package org.netbeans.modules.uml.core.roundtripframework;
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation;
 
 /**
- * @author Aztec
  */
 public interface IParameterChangeRequest extends IChangeRequest
 {

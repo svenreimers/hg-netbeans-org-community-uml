@@ -52,7 +52,6 @@ package org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javar
 import org.netbeans.modules.uml.core.roundtripframework.IRequestProcessor;
 
 /**
- * @author Aztec
  */
 public interface IJavaChangeHandlerManager
 {

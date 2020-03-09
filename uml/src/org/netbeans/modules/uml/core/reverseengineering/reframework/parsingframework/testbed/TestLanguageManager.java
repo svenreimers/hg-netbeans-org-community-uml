@@ -58,7 +58,6 @@ import org.netbeans.modules.uml.core.support.umlutils.IPropertyElement;
 import org.netbeans.modules.uml.core.support.umlutils.IPropertyElementManager;
 
 /**
- * @author sumitabhk
  *
  */
 public class TestLanguageManager

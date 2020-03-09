@@ -46,7 +46,6 @@
 package org.netbeans.modules.uml.core.metamodel.diagrams;
 
 /**
- * @author sumitabhk
  *
  */
 public interface IDiagramKind

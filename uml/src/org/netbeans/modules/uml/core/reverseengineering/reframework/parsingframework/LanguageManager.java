@@ -78,7 +78,6 @@ import org.netbeans.modules.uml.core.support.umlsupport.Log;
 import org.openide.modules.InstalledFileLocator;
 
 /**
- * @author sumitabhk
  *
  */
 public class LanguageManager implements ILanguageManager

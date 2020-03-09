@@ -51,7 +51,6 @@ package org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javar
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier;
 
 /**
- * @author aztec
  *
  */
 public interface IJavaImplementationChangeHandler extends IJavaDependencyChangeHandler					

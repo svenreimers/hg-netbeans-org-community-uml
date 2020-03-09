@@ -51,7 +51,6 @@ import org.netbeans.modules.uml.core.eventframework.IEventDispatchController;
 import org.netbeans.modules.uml.core.support.umlsupport.ProductRetriever;
 
 /**
- * @author sumitabhk
  *
  */
 public class OperationSignatureChangeContextManager implements IOperationSignatureChangeContextManager

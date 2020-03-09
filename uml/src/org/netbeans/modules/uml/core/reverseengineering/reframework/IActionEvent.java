@@ -50,7 +50,6 @@
 package org.netbeans.modules.uml.core.reverseengineering.reframework;
 
 /**
- * @author aztec
  */
 public interface IActionEvent extends IParserData
 {

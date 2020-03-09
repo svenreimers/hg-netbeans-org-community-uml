@@ -65,7 +65,6 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 import org.netbeans.modules.uml.core.workspacemanagement.IWSProject;
 
 /**
- * @author Aztec
  */
 public class ProcessorManager implements IProcessorManager
 {

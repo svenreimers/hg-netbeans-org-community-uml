@@ -52,7 +52,6 @@ package org.netbeans.modules.uml.core.metamodel.infrastructure;
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IStructuralFeature;
 
 /**
- * @author Aztec
  */
 public interface IComplexPort extends IStructuralFeature, IPort
 {

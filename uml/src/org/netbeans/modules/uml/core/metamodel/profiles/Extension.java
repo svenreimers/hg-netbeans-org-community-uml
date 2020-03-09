@@ -54,7 +54,6 @@ import org.dom4j.Node;
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.Aggregation;
 
 /**
- * @author aztec
  *
  */
 public class Extension extends Aggregation implements IExtension

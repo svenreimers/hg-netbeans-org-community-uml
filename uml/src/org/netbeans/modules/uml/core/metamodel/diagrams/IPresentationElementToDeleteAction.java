@@ -50,7 +50,6 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.IPresentationElem
 //import org.netbeans.modules.uml.ui.controls.drawingarea.IExecutableAction;
 
 /**
- * @author KevinM
  *
  */
 public interface IPresentationElementToDeleteAction extends IDelayedAction//, IExecutableAction 

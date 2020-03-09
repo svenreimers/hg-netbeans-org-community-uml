@@ -48,7 +48,6 @@ import java.util.ArrayList;
 
 /**
  *
- * @author treyspiva
  */
 public class CollectionInformation
 {

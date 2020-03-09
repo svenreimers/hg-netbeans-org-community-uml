@@ -57,7 +57,6 @@ import org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.Instan
 import org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ITokenDescriptor;
 
 /**
- * @author Aztec
  */
 public class MethodParameterStateHandler extends MethodDetailStateHandler
 {
