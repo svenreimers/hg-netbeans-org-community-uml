@@ -377,36 +377,6 @@ public class UMLProjectProperties
         }
     }
     
-    // TODO - MCF - I kept this method from copied J2SE code, thinking we might
-    // need it or something like it. I have not yet actually used it, and if we
-    // do not use it we can delete it.
-    /**
-     * Tokenize library classpath and try to relativize all the jars.
-     * @param property library property name ala "libs.someLib.classpath"
-     * @param projectDir project dir for relativization
-     * @return relativized library classpath or null if some jar is not collocated
-     */
-    private String relativizeLibraryClasspath(String property, File projectDir)
-    {
-        String value = PropertyUtils.getGlobalProperties().getProperty(property);
-        // bugfix #42852, check if the classpath
-        // property is set, otherwise return null
-        if (value == null)
-        {
-            return null;
-        }
-        
-        String[] paths = PropertyUtils.tokenizePath(value);
-        StringBuffer sb = new StringBuffer();
-        
-        if (sb.length() == 0)
-            return null;
-        
-        else
-            return sb.toString();
-    }
-    
-    
     public static String getAntPropertyName( String property )
     {
         if (property != null &&

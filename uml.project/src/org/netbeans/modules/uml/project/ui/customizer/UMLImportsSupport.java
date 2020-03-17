@@ -66,7 +66,7 @@ import org.openide.filesystems.FileObject;
 public class UMLImportsSupport {
 	
 	// TODO - MCF - test whether the broken reference behavior automatically 
-	// works. Much of this code is copied from similar in J2SE project.
+	// works. 
 	// Hopefully, it will yeild "free" broken reference support.
                 
     private PropertyEvaluator evaluator;

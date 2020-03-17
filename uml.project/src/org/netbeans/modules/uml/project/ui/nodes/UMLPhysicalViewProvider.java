@@ -247,68 +247,6 @@ public class UMLPhysicalViewProvider implements LogicalViewProvider
     //    }
     
     
-    // MCF - this breakable infrastructure is copied from JESE project.
-    // maybe we need something like this, maybe not.
-    // can remove it eventually if we don't need it. I suspect we will need
-    // some "isBroken" facility though
-    //
-    /////// beging isBroken stuff
-    
-    
-    private static final String[] BREAKABLE_PROPERTIES = new String[]
-    {
-        UMLProjectProperties.REFERENCED_JAVA_PROJECT,
-        UMLProjectProperties.REFERENCED_JAVA_PROJECT_ARTIFACTS,
-        UMLProjectProperties.REFERENCED_JAVA_PROJECT_SRC,
-    };
-    
-    public boolean hasBrokenLinks()
-    {
-        boolean retVal = false;
-        
-        retVal =
-                BrokenReferencesSupport.isBroken(mHelper.getAntProjectHelper(),
-                mResolver,
-                getBreakableProperties(),
-                new String[]{});
-        
-        return retVal;
-    }
-    
-    
-    
-    private String[] getBreakableProperties()
-    {
-        /*
-        SourceRoots roots = this.project.getSourceRoots();
-        String[] srcRootProps = roots.getRootProperties();
-        roots = this.project.getTestSourceRoots();
-        String[] testRootProps = roots.getRootProperties();
-        String[] result = new String [BREAKABLE_PROPERTIES.length + srcRootProps.length + testRootProps.length];
-        System.arraycopy(BREAKABLE_PROPERTIES, 0, result, 0, BREAKABLE_PROPERTIES.length);
-        System.arraycopy(srcRootProps, 0, result, BREAKABLE_PROPERTIES.length, srcRootProps.length);
-        System.arraycopy(testRootProps, 0, result, BREAKABLE_PROPERTIES.length + srcRootProps.length, testRootProps.length);
-        return result;
-         */
-        return BREAKABLE_PROPERTIES; // mcf hack
-    }
-    
-    
-    public ModelRootNodeCookie getModelRootNodeCookie()
-    {
-        return ((UMLLogicalViewRootNode)createLogicalView()).getModelRootNodeCookie();
-    }
-    
-    
-    public UMLModelRootNode getModelRootNode()
-    {
-        return ((UMLLogicalViewRootNode)createLogicalView()).getModelRootNode();
-    }
-    
-    private static Image brokenProjectBadge = ImageUtilities.loadImage(
-        ImageUtil.IMAGE_FOLDER + "broken-project-badge.gif"); // NOI18N
-    /////// end isBroken stuff
-    
     // Private innerclasses ----------------------------------------------------
     
     /** Filter node containin additional features for the UML physical

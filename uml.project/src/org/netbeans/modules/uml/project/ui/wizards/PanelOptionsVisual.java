@@ -172,27 +172,6 @@ public class PanelOptionsVisual extends SettingsPanel
 
     boolean valid(WizardDescriptor settings)
     {
-        /* MCF - TODO - this is sample of bulletproofing code from the
-         * j2se project or wherever i copied it from. We may need to do similar
-         * here
-         *
-        if (mainClassTextField.isVisible () && mainClassTextField.isEnabled ()) 
-         {
-            if (!valid) 
-            {
-                settings.putProperty(
-                    NewUMLProjectWizardIterator.PROP_WIZARD_ERROR_MESSAGE, // NOI18N
-                    NbBundle.getMessage(PanelOptionsVisual.class,
-                        "ERROR_IllegalMainClassName")); //NOI18N
-            }
-
-            return this.valid;
-        }
-        
-        else 
-            return true;
-         */
-
         if (javaProjectPanel != null)
             return javaProjectPanel.valid(settings);
         
