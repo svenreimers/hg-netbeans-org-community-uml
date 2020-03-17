@@ -48,7 +48,7 @@ made subject to such option by the copyright holder.
 <api-answers
   question-version="1.25"
   module="UML Modeling Core"
-  author="trey.spiva@sun.com"
+  author=""
 >
 
   &api-questions;

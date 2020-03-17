@@ -65,7 +65,7 @@ import org.netbeans.api.progress.aggregate.ProgressContributor;
 import org.netbeans.modules.uml.core.metamodel.structure.IProject;
 
 /**
- *  author Craig Conover, craig.conover@sun.com
+ *  
  */
 public abstract class AbstractNBTask extends Thread 
     implements Cancellable, ITaskSupervisor
