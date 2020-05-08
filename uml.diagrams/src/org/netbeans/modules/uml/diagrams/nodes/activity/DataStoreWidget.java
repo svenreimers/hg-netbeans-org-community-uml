@@ -56,10 +56,8 @@ import org.netbeans.modules.uml.drawingarea.view.CustomizableWidget;
 import org.netbeans.modules.uml.drawingarea.view.ResourceType;
 import org.netbeans.modules.uml.drawingarea.view.UMLLabelWidget;
 
-/**
- *
- * @author thuy
- */
+
+
 public class DataStoreWidget extends ActivityNodeWidget
 {
 //    public static final int MIN_NODE_WIDTH = 90;

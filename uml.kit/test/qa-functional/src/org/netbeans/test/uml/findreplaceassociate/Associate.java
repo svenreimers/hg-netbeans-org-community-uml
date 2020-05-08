@@ -61,11 +61,8 @@ import org.netbeans.test.umllib.project.Project;
 import org.netbeans.test.umllib.testcases.UMLTestCase;
 import org.netbeans.test.umllib.util.LabelsAndTitles;
 
-/**
- *
- * @author yaa
- * @spec uml/FindReplaceAssociate.xml
- */
+
+
 public class Associate extends UMLTestCase {
     private static String prName1 = "UMLProject1";
     private static String OUT_LOG_FILE = "";

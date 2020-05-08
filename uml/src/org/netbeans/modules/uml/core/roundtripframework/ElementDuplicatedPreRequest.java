@@ -42,20 +42,16 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : ElementDuplicatedPreRequest.java
- * Created on : Nov 12, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.roundtripframework;
 
 import org.netbeans.modules.uml.core.eventframework.IEventPayload;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.IElement;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.IRelationProxy;
 
-/**
- * @author Aztec
- */
+
+
 public class ElementDuplicatedPreRequest
     extends PreRequest
     implements IElementDuplicatedPreRequest
@@ -112,7 +108,8 @@ public class ElementDuplicatedPreRequest
     }
     
  
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IPreRequest#inCreateState(org.netbeans.modules.uml.core.metamodel.core.foundation.IElement)
      */
     public boolean inCreateState(IElement preElement)
@@ -120,7 +117,8 @@ public class ElementDuplicatedPreRequest
         return false;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IPreRequest#populateChangeRequest(org.netbeans.modules.uml.core.roundtripframework.IChangeRequest)
      */
     public void populateChangeRequest(IChangeRequest req)
@@ -137,7 +135,8 @@ public class ElementDuplicatedPreRequest
         }
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IPreRequest#postEvent(org.netbeans.modules.uml.core.metamodel.core.foundation.IRelationProxy)
      */
     public boolean postEvent(IRelationProxy pRel)
@@ -147,7 +146,8 @@ public class ElementDuplicatedPreRequest
     
     
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IPreRequest#setDupeElement(org.netbeans.modules.uml.core.metamodel.core.foundation.IElement)
      */
     public void setDupeElement(IElement val)
@@ -155,7 +155,8 @@ public class ElementDuplicatedPreRequest
         m_DupeElement = val;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IPreRequest#setOrigElement(org.netbeans.modules.uml.core.metamodel.core.foundation.IElement)
      */
     public void setOrigElement(IElement val)

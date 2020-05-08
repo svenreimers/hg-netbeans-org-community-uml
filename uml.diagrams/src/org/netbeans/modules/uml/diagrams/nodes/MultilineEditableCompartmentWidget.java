@@ -60,15 +60,14 @@ import org.netbeans.modules.uml.drawingarea.view.DesignerTools;
 import org.netbeans.modules.uml.drawingarea.view.UMLMultilineLabelWidget;
 import org.netbeans.modules.uml.ui.controls.editcontrol.EditControlImpl;
 
-/**
- *
- * @author sp153251
- */
+
+
 public class MultilineEditableCompartmentWidget extends UMLMultilineLabelWidget
 {
     private InplaceEditorProvider.EditorController edcAction;
 
-    /**
+    
+/**
      * Creates empty label
      * EC will use border of this widget and with model element derived from this widget
      * 
@@ -81,7 +80,8 @@ public class MultilineEditableCompartmentWidget extends UMLMultilineLabelWidget
         this(scene, "", null, (Widget) null, propId, propDisplayName);
     }
 
-    /**
+    
+/**
      * Creates label with text
      * EC will use border of this widget and with model element derived from this widget
      * 
@@ -101,7 +101,8 @@ public class MultilineEditableCompartmentWidget extends UMLMultilineLabelWidget
         this(scene, "", null, modelElement, propId, propDisplayName);
     }
 
-    /**
+    
+/**
      * @param baseGraphWidget border of toFit widget will be considered as 
      *                        bounds for edit control 
      * @param basModelWidget will be used to get presentation element (for 
@@ -130,7 +131,8 @@ public class MultilineEditableCompartmentWidget extends UMLMultilineLabelWidget
         createActions(DesignerTools.SELECT).addAction(action);//TBD need to add lock edit support
     }
 
-    /**
+    
+/**
      * @param baseGraphWidget border of toFit widget will be considered as bounds for edit control 
      * @param basModelWidget will be used to get presentation element (for example name will take class widget and appropriate presentation when attribute will take attribute widget with attribute presentation)
      * @param text  - text to label
@@ -164,7 +166,8 @@ public class MultilineEditableCompartmentWidget extends UMLMultilineLabelWidget
 
         }
 
-        /**
+        
+/**
          * @param toFit border of toFit widget will be considered as bounds for edit control 
          * @param presentationWidget will be used to get presentation element
          */
@@ -174,7 +177,8 @@ public class MultilineEditableCompartmentWidget extends UMLMultilineLabelWidget
             basePresentationWidget = presentationWidget;
         }
 
-        /**
+        
+/**
          * @param toFit border of toFit widget will be considered as bounds for edit control 
          * @param element specification of corresponding model element
          */

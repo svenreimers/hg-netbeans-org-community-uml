@@ -128,7 +128,8 @@ public class WizardRoles extends WizardInteriorPage {
     private void addActionListeners() {
     }
     
-    /**
+    
+/**
      * Called when dialog is initialized
      *
      *
@@ -146,7 +147,8 @@ public class WizardRoles extends WizardInteriorPage {
         
         return true; // return TRUE unless you set the focus to a control
     }
-    /**
+    
+/**
      * Called when the page becomes active
      *
      *
@@ -160,7 +162,8 @@ public class WizardRoles extends WizardInteriorPage {
         super.onSetActive();
     }
     
-    /**
+    
+/**
      * Populate the grid
      *
      * @return HRESULT
@@ -229,7 +232,8 @@ public class WizardRoles extends WizardInteriorPage {
         }
     }
     
-    /**
+    
+/**
      * Called when the user clicks back
      *
      *
@@ -244,7 +248,8 @@ public class WizardRoles extends WizardInteriorPage {
         }
         super.onWizardBack();
     }
-    /**
+    
+/**
      * Called when the user clicks next
      *
      *
@@ -266,7 +271,8 @@ public class WizardRoles extends WizardInteriorPage {
             }
         }
     }
-    /**
+    
+/**
      * Add the passed in design pattern role to the grid for display
      *
      * @param[in] pRole		The object representing the role
@@ -299,7 +305,8 @@ public class WizardRoles extends WizardInteriorPage {
         }
         return result;
     }
-    /**
+    
+/**
      * Builds the maps used by the dialog.  Used for performance reasons
      * to build the list of element names to display in the picklist for
      * a particular role (element type)
@@ -372,7 +379,8 @@ public class WizardRoles extends WizardInteriorPage {
             }
         }
     }
-    /**
+    
+/**
      * Adds another node to the grid representing the passed in role
      *
      * @param[in]	row		The row in which to add the new node to
@@ -411,7 +419,8 @@ public class WizardRoles extends WizardInteriorPage {
         }
         return result;
     }
-    /**
+    
+/**
      * Remove the node in the grid at the passed in row
      *
      * @param[in]	row	The row which to remove
@@ -436,7 +445,8 @@ public class WizardRoles extends WizardInteriorPage {
             }
         }
     }
-    /**
+    
+/**
      * While the user is assigning participants to roles, we figure out a default name
      * for the participant.
      *
@@ -480,7 +490,7 @@ public class WizardRoles extends WizardInteriorPage {
                         sName += i.toString();
                     }
                 }
-                // No matter what, the name is now either only the role name, or it is the
+                
                 // rolename with a number appended to it
                 
                 // This next case will set the name if there are already designated participants
@@ -515,7 +525,8 @@ public class WizardRoles extends WizardInteriorPage {
         }
         pObj.setChosenName(sName);
     }
-    /**
+    
+/**
      * Turn the array of passed in strings into a format that the grid understands
      *
      * @param[in] pStrings		An array of strings
@@ -538,7 +549,8 @@ public class WizardRoles extends WizardInteriorPage {
         }
         return pStr;
     }
-    /**
+    
+/**
      * Get the element from the project that matches the pattern
      *
      *
@@ -574,7 +586,8 @@ public class WizardRoles extends WizardInteriorPage {
         }
         return pElement;
     }
-    /**
+    
+/**
      * Grid event - called before the grid cell enters edit mode
      *
      *
@@ -588,7 +601,8 @@ public class WizardRoles extends WizardInteriorPage {
         // See TreeTableCellEditor.getTableCellEditorComponent for
         // this code
     }
-    /**
+    
+/**
      * Grid event - called when the user clicks on the button that is displayed in the grid cell
      *
      *
@@ -622,13 +636,15 @@ public class WizardRoles extends WizardInteriorPage {
             m_Model.expand(row + childCount, true);
         }
     }
-    /**
+    
+/**
      * Called when a cell is entered in the grid - grid event
      */
     private void onEnterCell() {
         // Not needed in java
     }
-    /**
+    
+/**
      * Called when a key is pressed in the grid - grid event
      *
      * @param[in] KeyAscii   The key that was pressed
@@ -638,7 +654,8 @@ public class WizardRoles extends WizardInteriorPage {
      *
      */
     private void onKeyDownGrid(/*short FAR* KeyAscii, short Shift*/) {
-                /* TODO
+                
+/* TODO
                         long row;
                   _VH(m_Grid->get_Row(&row));
                   // did they press the return key
@@ -717,7 +734,8 @@ public class WizardRoles extends WizardInteriorPage {
                   }
                  */
     }
-    /**
+    
+/**
      * Called when the create menu button is clicked
      *
      * @return
@@ -739,7 +757,8 @@ public class WizardRoles extends WizardInteriorPage {
         
         updateUI() ;
     }
-    /**
+    
+/**
      * Called when the delete menu button is clicked
      *
      * @return
@@ -758,7 +777,8 @@ public class WizardRoles extends WizardInteriorPage {
         
         updateUI() ;
     }
-    /**
+    
+/**
      * Called when the rename menu button is clicked
      *
      * @return
@@ -767,7 +787,8 @@ public class WizardRoles extends WizardInteriorPage {
         m_Tree.editCellAt(row, 2);
     }
     
-    /**
+    
+/**
      * Called before the mouse click is registered with the grid - grid event
      *
      * @param[in] Button
@@ -805,7 +826,8 @@ public class WizardRoles extends WizardInteriorPage {
         return pStrs;
     }
     
-    /**
+    
+/**
      * Returns list of supported key events
      * @param row row number
      * @return ETList of supported key events.
@@ -826,7 +848,8 @@ public class WizardRoles extends WizardInteriorPage {
         return pKeys;
     }
     
-    /**
+    
+/**
      *  Grid event when something in the combo list changes
      *
      *
@@ -868,7 +891,8 @@ public class WizardRoles extends WizardInteriorPage {
         }
         return str;
     }
-    /**
+    
+/**
      * Determines whether or not the role at the passed in role can have multiple
      * participants associated with it
      *
@@ -897,7 +921,8 @@ public class WizardRoles extends WizardInteriorPage {
         }
         return bMult;
     }
-    /**
+    
+/**
      * Determines whether or not the role at the passed in role is a participant of a multiple
      * participant role
      *
@@ -928,7 +953,8 @@ public class WizardRoles extends WizardInteriorPage {
         return bMult;
     }
     
-    /**
+    
+/**
      * Performs page validations -
      *
      *
@@ -956,7 +982,8 @@ public class WizardRoles extends WizardInteriorPage {
         }
         return tempList;
     }
-    /**
+    
+/**
      * Store the participant information from the GUI
      *
      * @return bool
@@ -1016,7 +1043,8 @@ public class WizardRoles extends WizardInteriorPage {
             type += typeID;
             Icon hicon = m_ResourceMgr.getIconForElementType(type);
             if (hicon != null) {
-                                /* TODO
+                                
+/* TODO
                                 CPictureHolder pic;
                                 pic.CreateFromIcon(hicon, FALSE);
                                 LPDISPATCH pPic = pic.GetPictureDispatch();
@@ -1054,7 +1082,8 @@ public class WizardRoles extends WizardInteriorPage {
         }
         return str;
     }
-    /**
+    
+/**
      * Shortcut method to retrieve the data from the grid cell which is in the form of a WizardRoleObject
      *
      * @param[in] row     The row to retrieve the property element from

@@ -43,13 +43,8 @@
  */
 
 
-/*
- * OptionsOperator.java
- *
- * Created on March 13, 2006, 6:05 PM
- *
- * 
- */
+
+
 
 package org.netbeans.test.umllib.util;
 
@@ -71,10 +66,8 @@ import org.netbeans.test.umllib.exceptions.ElementVerificationException;
 import org.netbeans.test.umllib.exceptions.NotFoundException;
 import org.netbeans.test.umllib.exceptions.UMLCommonException;
 
-/**
- *
- * @author sp153251
- */
+
+
 public class OptionsOperator extends JDialogOperator {
     //
     public static final String STANDART_TITLE="Options";
@@ -89,7 +82,8 @@ public class OptionsOperator extends JDialogOperator {
     //
     private boolean advanced;
     private TreeTableOperator _treeTable;
-    /** Creates a new instance of OptionsOperator
+    
+/** Creates a new instance of OptionsOperator
      * Tries to find either advanced or standart options dialog
      */
     public OptionsOperator() {
@@ -98,14 +92,16 @@ public class OptionsOperator extends JDialogOperator {
         waitComponentShowing(true);
         waitComponentVisible(true);
     }
-    /**
+    
+/**
      * @return returns true if current OptionsOperator represent advanced options dialog
      */
     boolean isAdvanced()
     {
         return advanced && isShowing();
     }
-    /**
+    
+/**
      * Close options dialog with applying options (OK in standart and Close in advanced)
      */
     public void close()
@@ -114,7 +110,8 @@ public class OptionsOperator extends JDialogOperator {
         if(advanced)btnName="Close";
         new JButtonOperator(this,btnName).push();
     }
-    /**
+    
+/**
      * Press "Advanced Options" in standart options dialog or do nothing in advanced dialog
      * @return returns OptionsOperator for advanced dialog
      */
@@ -141,7 +138,8 @@ public class OptionsOperator extends JDialogOperator {
         return new OptionsOperator();
     }
     
-   /**
+   
+/**
      * Press "Basic Options" in advanced options dialog or do nothing in standart dialog
      * @return returns OptionsOperator for standart dialog
      */
@@ -154,7 +152,8 @@ public class OptionsOperator extends JDialogOperator {
         return new OptionsOperator();
     }
     
-    /** Getter for table containing property list and
+    
+/** Getter for table containing property list and
      * property definition levels.
      * @return TreeTableOperator instance
      */
@@ -165,7 +164,8 @@ public class OptionsOperator extends JDialogOperator {
         return _treeTable;
     }
     
-    /**
+    
+/**
      * Open Options dialog by main menu
      * @return OptionsOperator representing Options  Dialog
      */
@@ -189,7 +189,8 @@ public class OptionsOperator extends JDialogOperator {
         return new OptionsOperator();
     }
     
-    /**
+    
+/**
      * set values to option in advanced view
      * @param keys - array of key in format {{nodePath,key1,key2..},{..
      * @param values - array of values in format {{null,value1,value2...},..
@@ -220,7 +221,8 @@ public class OptionsOperator extends JDialogOperator {
          
      }
      
-    /**
+    
+/**
      * set values to option in advanced view
      * @param path - nodePath
      * @param key - name of propety
@@ -254,7 +256,8 @@ public class OptionsOperator extends JDialogOperator {
             treeTable().tree().clickOnPath(pth);
      }
      
-    /**
+    
+/**
      * set values to option in advanced view
      * @param path - nodePath
      * @param key - name of propety
@@ -288,7 +291,8 @@ public class OptionsOperator extends JDialogOperator {
 
     public static class ChooseOptionDialog implements ComponentChooser
     {
-        /**
+        
+/**
          * 
          * @param component 
          * @return 
@@ -302,7 +306,8 @@ public class OptionsOperator extends JDialogOperator {
             else return false;
         }
 
-        /**
+        
+/**
          * 
          * @return 
          */

@@ -43,18 +43,14 @@
  */
 
 
-/*
- * File       : VBParameterStateHandler.java
- * Created on : Dec 12, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.statehandlers;
 
 import org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ITokenDescriptor;
 
-/**
- * @author Aztec
- */
+
+
 public class VBParameterStateHandler extends ParameterStateHandler
 {
 

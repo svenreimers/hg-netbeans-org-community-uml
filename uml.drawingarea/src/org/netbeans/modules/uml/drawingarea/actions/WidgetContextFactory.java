@@ -45,10 +45,8 @@ package org.netbeans.modules.uml.drawingarea.actions;
 
 import java.awt.Point;
 
-/**
- *
- * @author treyspiva
- */
+
+
 public interface WidgetContextFactory 
 {
     public WidgetContext findWidgetContext(Point localLocation);

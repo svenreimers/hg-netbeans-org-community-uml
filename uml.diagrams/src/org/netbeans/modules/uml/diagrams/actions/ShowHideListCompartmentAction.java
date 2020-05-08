@@ -60,10 +60,8 @@ import org.openide.util.HelpCtx;
 import org.openide.util.Lookup;
 import org.openide.util.NbBundle;
 
-/**
- *
- * @author jyothi
- */
+
+
 public class ShowHideListCompartmentAction extends SceneNodeAction
 {
 

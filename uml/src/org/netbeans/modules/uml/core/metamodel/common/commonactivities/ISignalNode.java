@@ -42,18 +42,14 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : ISignalNode.java
- * Created on : Sep 17, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.metamodel.common.commonactivities;
 
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ISignal;
 
-/**
- * @author Aztec
- */
+
+
 public interface ISignalNode extends IObjectNode
 {
     public ISignal getSignal();

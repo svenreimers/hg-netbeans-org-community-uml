@@ -54,53 +54,12 @@ import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
-/**
- * BrowserLauncher is a class that provides one static method, openURL, which opens the default
- * web browser for the current user of the system to the given URL.  It may support other
- * protocols depending on the system -- mailto, ftp, etc. -- but that has not been rigorously
- * tested and is not guaranteed to work.
- * <p>
- * Yes, this is platform-specific code, and yes, it may rely on classes on certain platforms
- * that are not part of the standard JDK.  What we're trying to do, though, is to take something
- * that's frequently desirable but inherently platform-specific -- opening a default browser --
- * and allow programmers (you, for example) to do so without worrying about dropping into native
- * code or doing anything else similarly evil.
- * <p>
- * Anyway, this code is completely in Java and will run on all JDK 1.1-compliant systems without
- * modification or a need for additional libraries.  All classes that are required on certain
- * platforms to allow this to run are dynamically loaded at runtime via reflection and, if not
- * found, will not cause this to do anything other than returning an error when opening the
- * browser.
- * <p>
- * There are certain system requirements for this class, as it's running through Runtime.exec(),
- * which is Java's way of making a native system call.  Currently, this requires that a Macintosh
- * have a Finder which supports the GURL event, which is true for Mac OS 8.0 and 8.1 systems that
- * have the Internet Scripting AppleScript dictionary installed in the Scripting Additions folder
- * in the Extensions folder (which is installed by default as far as I know under Mac OS 8.0 and
- * 8.1), and for all Mac OS 8.5 and later systems.  On Windows, it only runs under Win32 systems
- * (Windows 95, 98, and NT 4.0, as well as later versions of all).  On other systems, this drops
- * back from the inherently platform-sensitive concept of a default browser and simply attempts
- * to launch Netscape via a shell command.
- * <p>
- * This code is Copyright 1999-2001 by Eric Albert (ejalbert@cs.stanford.edu) and may be
- * redistributed or modified in any form without restrictions as long as the portion of this
- * comment from this paragraph through the end of the comment is not removed.  The author
- * requests that he be notified of any application, applet, or other binary that makes use of
- * this code, but that's more out of curiosity than anything and is not required.  This software
- * includes no warranty.  The author is not repsonsible for any loss of data or functionality
- * or any adverse or unexpected effects of using this software.
- * <p>
- * Credits:
- * <br>Steven Spencer, JavaWorld magazine (<a href="http://www.javaworld.com/javaworld/javatips/jw-javatip66.html">Java Tip 66</a>)
- * <br>Thanks also to Ron B. Yeh, Eric Shapiro, Ben Engber, Paul Teitlebaum, Andrea Cantatore,
- * Larry Barowski, Trevor Bedzek, Frank Miedrich, and Ron Rabakukk
- *
- * @author Eric Albert (<a href="mailto:ejalbert@cs.stanford.edu">ejalbert@cs.stanford.edu</a>)
- * @version 1.4b1 (Released June 20, 2001)
- */
+
+
 public class BrowserLauncher {
 
-	/**
+	
+/**
 	 * The Java virtual machine that we are running on.  Actually, in most cases we only care
 	 * about the operating system, but some operating systems require us to switch on the VM. */
 	private static int jvm;
@@ -108,7 +67,8 @@ public class BrowserLauncher {
 	/** The browser for the system */
 	private static Object browser;
 
-	/**
+	
+/**
 	 * Caches whether any classes, methods, and fields that are not part of the JDK and need to
 	 * be dynamically loaded at runtime loaded successfully.
 	 * <p>
@@ -195,13 +155,15 @@ public class BrowserLauncher {
 	/** JVM constant for any other platform */
 	private static final int OTHER = -1;
 
-	/**
+	
+/**
 	 * The file type of the Finder on a Macintosh.  Hardcoding "Finder" would keep non-U.S. English
 	 * systems from working properly.
 	 */
 	private static final String FINDER_TYPE = "FNDR";
 
-	/**
+	
+/**
 	 * The creator code of the Finder on a Macintosh, which is needed to send AppleEvents to the
 	 * application.
 	 */
@@ -210,7 +172,8 @@ public class BrowserLauncher {
 	/** The name for the AppleEvent type corresponding to a GetURL event. */
 	private static final String GURL_EVENT = "GURL";
 
-	/**
+	
+/**
 	 * The first parameter that needs to be passed into Runtime.exec() to open the default web
 	 * browser on Windows.
 	 */
@@ -219,14 +182,16 @@ public class BrowserLauncher {
     /** The second parameter for Runtime.exec() on Windows. */
     private static final String SECOND_WINDOWS_PARAMETER = "start";
     
-    /**
+    
+/**
      * The third parameter for Runtime.exec() on Windows.  This is a "title"
      * parameter that the command line expects.  Setting this parameter allows
      * URLs containing spaces to work.
      */
     private static final String THIRD_WINDOWS_PARAMETER = "\"\"";
 	
-	/**
+	
+/**
 	 * The shell parameters for Netscape that opens a given URL in an already-open copy of Netscape
 	 * on many command-line systems.
 	 */
@@ -234,15 +199,14 @@ public class BrowserLauncher {
 	private static final String NETSCAPE_OPEN_PARAMETER_START = "'openURL(";
 	private static final String NETSCAPE_OPEN_PARAMETER_END = ")'";
 
-	/**
+	
+/**
 	 * The message from any exception thrown throughout the initialization process.
 	 */
 	private static String errorMessage;
 
-	/**
-	 * An initialization block that determines the operating system and loads the necessary
-	 * runtime data.
-	 */
+	
+
 	static {
 		loadedWithoutErrors = true;
 		String osName = System.getProperty("os.name");
@@ -286,12 +250,14 @@ public class BrowserLauncher {
 		}
 	}
 
-	/**
+	
+/**
 	 * This class should be never be instantiated; this just ensures so.
 	 */
 	private BrowserLauncher() { }
 	
-	/**
+	
+/**
 	 * Called by a static initializer to load any classes, fields, and methods required at runtime
 	 * to locate the user's web browser.
 	 * @return <code>true</code> if all intialization succeeded
@@ -401,7 +367,8 @@ public class BrowserLauncher {
 		return true;
 	}
 
-	/**
+	
+/**
 	 * Attempts to locate the default web browser on the local system.  Caches results so it
 	 * only locates the browser once for each use of this class per JVM instance.
 	 * @return The browser for the system.  Note that this may not be what you would consider
@@ -511,7 +478,8 @@ public class BrowserLauncher {
 		return browser;
 	}
 
-	/**
+	
+/**
 	 * Attempts to open the default web browser to the given URL.
 	 * @param url The URL to open
 	 * @throws IOException If the web browser could not be located or does not run
@@ -662,7 +630,8 @@ public class BrowserLauncher {
 		}
 	}
 
-	/**
+	
+/**
 	 * Methods required for Mac OS X.  The presence of native methods does not cause
 	 * any problems on other platforms.
 	 */

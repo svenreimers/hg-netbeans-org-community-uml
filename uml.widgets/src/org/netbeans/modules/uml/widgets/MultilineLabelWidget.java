@@ -53,10 +53,8 @@ import java.util.ArrayList;
 import org.netbeans.api.visual.widget.LabelWidget;
 import org.netbeans.api.visual.widget.Scene;
 
-/**
- *
- * @author treyspiva
- */
+
+
 public class MultilineLabelWidget extends LabelWidget
 {
     public MultilineLabelWidget (Scene scene)
@@ -69,7 +67,8 @@ public class MultilineLabelWidget extends LabelWidget
         super(scene, label);
     }
 
-    /**
+    
+/**
      * Calculates a client area for the label.
      * @return the client area
      */
@@ -285,7 +284,8 @@ public class MultilineLabelWidget extends LabelWidget
         return retVal;
     }
 
-    /**
+    
+/**
      *
      * @param label
      * @param start
@@ -312,7 +312,8 @@ public class MultilineLabelWidget extends LabelWidget
         return retVal;
     }
 
-    /**
+    
+/**
      * find end of word using whitespace separation(space, linebreak etc)
      * consist from one whitespace symbol at least.
      * @param label
@@ -340,7 +341,8 @@ public class MultilineLabelWidget extends LabelWidget
         return retVal;
     }
 
-    /**
+    
+/**
      * Rounds Rectangle2D to Rectangle.
      * @param rectangle the rectangle2D
      * @return the rectangle

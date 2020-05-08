@@ -48,7 +48,8 @@ package org.netbeans.modules.uml.core.reverseengineering.reframework;
  */
 public interface IREBinaryOperator extends IREMethodDetailData
 {
-    /**
+    
+/**
      * Returns the string representation of the initialization section.
      */
     public String getStringRepresentation();

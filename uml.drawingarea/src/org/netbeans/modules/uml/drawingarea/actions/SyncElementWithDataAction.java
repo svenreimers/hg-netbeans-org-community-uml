@@ -27,10 +27,8 @@ import org.openide.util.Lookup;
 import org.openide.util.NbBundle;
 import org.openide.util.actions.CookieAction;
 
-/**
- *
- * @author Sheryl Su
- */
+
+
 public class SyncElementWithDataAction extends CookieAction
 {
 

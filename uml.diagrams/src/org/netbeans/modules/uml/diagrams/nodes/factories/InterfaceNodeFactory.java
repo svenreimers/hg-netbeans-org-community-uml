@@ -46,10 +46,8 @@ import org.netbeans.api.visual.widget.Widget;
 import org.netbeans.modules.uml.diagrams.nodes.InterfaceWidget;
 import org.netbeans.modules.uml.drawingarea.NodeWidgetFactory;
 
-/**
- *
- * @author treyspiva
- */
+
+
 public class InterfaceNodeFactory implements NodeWidgetFactory
 {
 

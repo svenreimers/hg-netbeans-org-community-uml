@@ -59,7 +59,8 @@ public class EventDispatchController extends EventDispatcher implements IEventDi
 		super();
 	}
 
-	/**
+	
+/**
 	 *
 	 * Adds a new EventDispatcher to this Controller.
 	 *
@@ -76,7 +77,8 @@ public class EventDispatchController extends EventDispatcher implements IEventDi
       return 0;
    }
 
-	/**
+	
+/**
 	 *
 	 * Adds the EventDispatcher that matches the passed in enumeration.
 	 *
@@ -96,7 +98,8 @@ public class EventDispatchController extends EventDispatcher implements IEventDi
         return 0;
      }
 
-	/**
+	
+/**
 	 * Removes the EventDispatcher with the matching ID from this Controller and returns it
 	 *
 	 * @param id[in] The ID of the dispatcher to remove
@@ -118,7 +121,8 @@ public class EventDispatchController extends EventDispatcher implements IEventDi
         return disp;
      }
 
-	/**
+	
+/**
 	 * Removes the EventDispatcher that matches the passed in enumeration.
 	 *
 	 * @param nKind[in] The dispatcher to match against
@@ -136,7 +140,8 @@ public class EventDispatchController extends EventDispatcher implements IEventDi
         return removeDispatcher(EventDispatchNameKeeper.dispatcherName(eventDispatchType));
      }
 
-	/**
+	
+/**
 	 * Retrieves the EventDispatcher that matches the passed in ID.
 	 *
 	 * @param id[in] The ID to match against
@@ -149,7 +154,8 @@ public class EventDispatchController extends EventDispatcher implements IEventDi
 		return m_Dispatchers.get(id);
    }
 
-	/**
+	
+/**
 	 * Retrieves the EventDispatcher that matches the passed in enumeration.
 	 *
 	 * @param nKind[in] The dispatcher to match against
@@ -167,7 +173,8 @@ public class EventDispatchController extends EventDispatcher implements IEventDi
 		return retrieveDispatcher(EventDispatchNameKeeper.dispatcherName(eventDispatchType));
      }
 
-	/**
+	
+/**
 	 * Returns the name keeper type.
 	 * 
 	 * @param nKind [in] The kind of the dispatcher to get
@@ -253,7 +260,8 @@ public class EventDispatchController extends EventDispatcher implements IEventDi
 	   return nNameKeeperType;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Determines whether or not all the EventDispatchers this controller is 
 	 * controlling are blocked from sending events to their listeners.
@@ -280,7 +288,8 @@ public class EventDispatchController extends EventDispatcher implements IEventDi
 		return pVal;
 	}
 
-	/**
+	
+/**
 	 * Loops through every EventDispatcher on this controller and sets their
 	 * internal PreventAllEvents flags to newVal.
 	 *
@@ -297,7 +306,8 @@ public class EventDispatchController extends EventDispatcher implements IEventDi
 		}
 	}
 	
-	/**
+	
+/**
 	 *
 	 * Makes sure that an EventDispatcher with a matching ID does not exist.
 	 *
@@ -311,7 +321,8 @@ public class EventDispatchController extends EventDispatcher implements IEventDi
 		
 	}
 
-	/**
+	
+/**
 	 * Push the context onto our list and all dispatchers owned by the controller.
 	 *
 	 * @param context[in] The EventContext to push
@@ -323,7 +334,8 @@ public class EventDispatchController extends EventDispatcher implements IEventDi
 		pushEventContext3( context );
 	}
 
-	/**
+	
+/**
 	 * Push the context onto our list and all dispatchers owned by the controller.
 	 *
 	 * @param pContext[in]
@@ -336,7 +348,8 @@ public class EventDispatchController extends EventDispatcher implements IEventDi
 		establishContext( pContext );
 	}
 
-	/**
+	
+/**
 	 * Pops the current EventContext present on each dispatcher this controller manages.
 	 *
 	 * @return HRESULT
@@ -359,7 +372,8 @@ public class EventDispatchController extends EventDispatcher implements IEventDi
 	   }
 	}
 
-	/**
+	
+/**
 	 * Pops the current EventContext present on each dispatcher this controller manages.
 	 *
 	 * @return HRESULT
@@ -384,7 +398,8 @@ public class EventDispatchController extends EventDispatcher implements IEventDi
 	   return pContext;
 	}
 	
-	/**
+	
+/**
 	 * Pops an event context by name from each dispatcher this controller maintains.
 	 *
 	 * @param name[in] The name of the Context to pop
@@ -410,7 +425,8 @@ public class EventDispatchController extends EventDispatcher implements IEventDi
 	   }
 	}
 	
-	/**
+	
+/**
 	 * Pops an event context if it contains a filter with the passed in ID from every
 	 * dispatcher this controller manages.
 	 *
@@ -437,7 +453,8 @@ public class EventDispatchController extends EventDispatcher implements IEventDi
 	   }
 	}
 
-	/**
+	
+/**
 	 * Returns how many listeners are associated with this dispatcher.
 	 *
 	 * @param pVal[out] The number of listeners on this dispatcher
@@ -449,7 +466,8 @@ public class EventDispatchController extends EventDispatcher implements IEventDi
 	   return super.getNumRegisteredSinks();
 	}
 
-	/**
+	
+/**
 	 * Push the context onto all owned dispatchers.
 	 *
 	 * @param pContext[in]

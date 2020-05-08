@@ -65,9 +65,8 @@ import org.netbeans.modules.uml.core.support.umlsupport.XMLManip;
 import org.netbeans.modules.uml.core.support.umlutils.ETArrayList;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
-/**
- * @author sumitabhk
- */
+
+
 public class ExpansionVariable implements IExpansionVariable {
     public static final int EOK_NONE    = 0;
     public static final int EOK_AND     = 1;
@@ -76,7 +75,8 @@ public class ExpansionVariable implements IExpansionVariable {
 	protected IVariableExpander m_Expander = null;
     protected IExpansionVariable m_ExpansionVar = null;
     
-	/**
+	
+/**
 	* The is the XML DOM node that represents this element.
 	*/
     protected Node m_Node = null;
@@ -93,7 +93,8 @@ public class ExpansionVariable implements IExpansionVariable {
 		setValue( "name", value );
 	}
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.generativeframework.IExpansionVariable#setOperator(int)
      */
     public void setOperator(int operator)
@@ -101,7 +102,8 @@ public class ExpansionVariable implements IExpansionVariable {
         setValue("operator", operator == EOK_AND? "and" : "or");
     }
     
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.generativeframework.IExpansionVariable#getOperator()
      */
     public int getOperator()
@@ -142,18 +144,8 @@ public class ExpansionVariable implements IExpansionVariable {
 		setValue( "methodGet", value );
 	}
 
-	/**
-	 *
-	 * Checks the Query property to see if it begins with an '@'. If it does,
-	 * it is assumed that the results of the query produce an IXMLDOMAttribute.
-	 *
-	 * @param pVal[out]  - true if the results of this variables expansion
-	 *                     result in a IXMLDOMAttribute, else false if
-	 *                     it results in elements.
-	 *
-	 * @return HRESULT
-	 *
-	 */
+	
+
 	public boolean getIsAttributeResult() {
 		return isAttributeResult();
 	}
@@ -190,7 +182,8 @@ public class ExpansionVariable implements IExpansionVariable {
 		m_Node = value;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Expands this variable, returning the results.
 	 *
@@ -326,7 +319,8 @@ public class ExpansionVariable implements IExpansionVariable {
         return null;
     }
     
-	/**
+	
+/**
      * Attempts to filter the toFilter value with an appropriate value found
      * in the ValueFilter property.
      * 
@@ -366,7 +360,8 @@ public class ExpansionVariable implements IExpansionVariable {
 		return toFilter;
 	}
 
-	/**
+	
+/**
 	 * @param replaceFilter
 	 * @param m_Results
 	 */
@@ -388,7 +383,8 @@ public class ExpansionVariable implements IExpansionVariable {
         return results;
 	}
 
-    /**
+    
+/**
      *
      * Fires the get property specified in the passed in methodGet parameter
      *
@@ -433,7 +429,8 @@ public class ExpansionVariable implements IExpansionVariable {
         return null;
 	}
 
-	/**
+	
+/**
 	 * @param context
 	 * @param query
 	 */
@@ -464,7 +461,8 @@ public class ExpansionVariable implements IExpansionVariable {
             addToResultNodes(ver.getNode());
     }
     
-	/**
+	
+/**
      * @param nodes
      */
     protected void addToResultNodes(List nodes)
@@ -476,7 +474,8 @@ public class ExpansionVariable implements IExpansionVariable {
         }
     }
     
-    /**
+    
+/**
      * @param element
      */
     protected void addToResultNodes(Node node)
@@ -486,7 +485,8 @@ public class ExpansionVariable implements IExpansionVariable {
             nodes.add(node);
     }
 
-    /**
+    
+/**
 	 *
 	 * Determines whether or not the Query property results in the
 	 * return of an XML attribute whose value is what the expansion
@@ -506,7 +506,8 @@ public class ExpansionVariable implements IExpansionVariable {
 		return isAttResult;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Retrieves the results found in the attribute query this expansion var
 	 * represents
@@ -526,7 +527,8 @@ public class ExpansionVariable implements IExpansionVariable {
 		return retrieveAttributeResult(context, query);
 	}
 
-	/**
+	
+/**
 	 *
 	 * Retrieves the results found in the passed in query this expansion var
 	 * represents
@@ -559,7 +561,8 @@ public class ExpansionVariable implements IExpansionVariable {
 	}
 
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.generativeframework.IExpansionVariable#getResultNodes()
 	 */
 	public ETList<Node> getResultNodes() {
@@ -568,14 +571,16 @@ public class ExpansionVariable implements IExpansionVariable {
 		return m_ResultNodes;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.generativeframework.IExpansionVariable#setResultNodes(org.dom4j.Node[])
 	 */
 	public void setResultNodes(ETList<Node> value) {
         m_ResultNodes = value;
 	}
 
-	/**
+	
+/**
 	 *
 	 * The kind of this variable. See the documentation in ExpansionVar.etc
 	 * in the config directory for details.
@@ -610,7 +615,8 @@ public class ExpansionVariable implements IExpansionVariable {
 		return retInt;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Sets the kin of this variable
 	 *
@@ -663,7 +669,8 @@ public class ExpansionVariable implements IExpansionVariable {
 		setValue( "overrides", value );
 	}
 
-	/**
+	
+/**
 	 *
 	 * Retrieves the value used to determine whether or not this expansion var
 	 * expands to "true" or "false". Used only in conjunction with a var that
@@ -678,7 +685,8 @@ public class ExpansionVariable implements IExpansionVariable {
 		return getValue( "trueValue" );
 	}
 
-	/**
+	
+/**
 	 *
 	 * Sets the value used to determine whether or not this expansion var
 	 * expands to "true" or "false". Used only in conjunction with a var that
@@ -693,7 +701,8 @@ public class ExpansionVariable implements IExpansionVariable {
 		setValue( "trueValue", value );
 	}
 
-	/**
+	
+/**
 	 *
 	 * Useful only when this expansion variable is a Boolean variable, the routine
 	 * checks to see if this variable expanded into a true or false result
@@ -711,7 +720,8 @@ public class ExpansionVariable implements IExpansionVariable {
 		m_IsTrue = value;
 	}
 	
-	/**
+	
+/**
 	 *
 	 * Retrieves a particular value of one of the xml attributes on the
 	 * expansion variable.
@@ -732,7 +742,8 @@ public class ExpansionVariable implements IExpansionVariable {
 		return value;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Sets the value of the passed in xml attribute on this node.
 	 *
@@ -750,7 +761,8 @@ public class ExpansionVariable implements IExpansionVariable {
 		}
 	}
 	
-	/**
+	
+/**
 	 *
 	 * Performs the query behind the IDLookup query.
 	 *
@@ -777,7 +789,8 @@ public class ExpansionVariable implements IExpansionVariable {
 		}
 	}
 	
-	/**
+	
+/**
 	 * @param context
 	 * @param query
 	 */
@@ -810,7 +823,8 @@ public class ExpansionVariable implements IExpansionVariable {
         return false;
     }
 
-	/**
+	
+/**
 	 * @param context
 	 * @param strings
 	 */
@@ -922,7 +936,8 @@ public class ExpansionVariable implements IExpansionVariable {
         return result;
 	}
 	
-	/**
+	
+/**
 	 * @param string
 	 * @param n
 	 * @return
@@ -940,7 +955,8 @@ public class ExpansionVariable implements IExpansionVariable {
         return varResults;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Determines whether or not a query needs to have the nodeValue property performed on the node
 	 * returned. This would be true in the case of the documentation field, as this is a text node
@@ -963,7 +979,8 @@ public class ExpansionVariable implements IExpansionVariable {
 	   return result;
 	}
 	
-	/**
+	
+/**
 	 *
 	 * Retrieves the expansion variable with the passed in name.
 	 *
@@ -995,7 +1012,8 @@ public class ExpansionVariable implements IExpansionVariable {
 		return newVar;
 	}
 	
-	/**
+	
+/**
 	 *
 	 * Translates the passed in value into a VariableKind enum value
 	 *
@@ -1034,7 +1052,8 @@ public class ExpansionVariable implements IExpansionVariable {
 	   return kind;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Translates the VariableKind enum value coming in into
 	 * its text representation
@@ -1071,7 +1090,8 @@ public class ExpansionVariable implements IExpansionVariable {
 	   return val;
 	}
 	
-	/**
+	
+/**
 	 *
 	 * Determines whether or not this var is a boolean var
 	 *
@@ -1091,7 +1111,8 @@ public class ExpansionVariable implements IExpansionVariable {
 	   return isBoolean;
 	}
 	
-	/**
+	
+/**
 	 * Determines whether or not the node passed in is in a deleted
 	 * state
 	 *
@@ -1113,7 +1134,8 @@ public class ExpansionVariable implements IExpansionVariable {
 	   return isDeleted;
 	}
 	
-	/**
+	
+/**
 	 * Determines if it is ok to use the Expansion Var, if available
 	 *
 	 * @return true or false
@@ -1152,7 +1174,8 @@ public class ExpansionVariable implements IExpansionVariable {
 	   return use;
 	}
 	
-	/**
+	
+/**
 	 *
 	 * Determines whether or not the results of this variables expansions
 	 * have resulted in a "true" or "false" result.

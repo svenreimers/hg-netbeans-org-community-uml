@@ -48,12 +48,14 @@ import org.netbeans.modules.uml.core.support.umlsupport.IResultCell;
 
 public interface IRoundTripAttributeEventsSink
 {
-	/**
+	
+/**
 	 * Fired after the RequestProcessor has filtered its changes, but before actual processing of the requests has been done.
 	*/
 	public void onPreAttributeChangeRequest( IChangeRequest newVal, IResultCell cell );
 
-	/**
+	
+/**
 	 * Fired after the RequestProcessor has filtered its changes, allowing all listeners to process the requests.
 	*/
 	public void onAttributeChangeRequest( IChangeRequest newVal, IResultCell cell );

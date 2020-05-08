@@ -65,10 +65,8 @@ import org.netbeans.modules.uml.ui.support.ProductHelper;
 import org.netbeans.modules.uml.ui.support.applicationmanager.IProduct;
 import org.dom4j.IDResolver;
 
-/**
- * @author josephg
- *
- */
+
+
 public class ReqUtils
 {
    private static HashMap<String, Document> m_ReqSourcesMap = new HashMap<String, Document>();

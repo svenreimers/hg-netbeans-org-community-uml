@@ -79,10 +79,8 @@ import org.netbeans.modules.uml.drawingarea.view.UMLWidget.UMLWidgetIDString;
 import org.netbeans.modules.uml.drawingarea.widgets.ContainerWidget;
 import org.openide.util.NbBundle;
 
-/**
- *
- * @author thuy
- */
+
+
 public class ActivityGroupWidget extends ContainerNode //UMLNodeWidget
 {
     private UMLLabelWidget groupKindWidget = null;

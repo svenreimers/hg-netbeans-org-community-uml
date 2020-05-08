@@ -164,7 +164,8 @@ public class DesignPatternCatalog implements IDesignPatternCatalog, IDesignPatte
     /////////////////////////////////////////////////////////
     // IAddIn Methods
     
-    /**
+    
+/**
      * Called when the addin is initialized.
      */
     public long initialize(Object context)
@@ -255,7 +256,8 @@ public class DesignPatternCatalog implements IDesignPatternCatalog, IDesignPatte
         m_View = view;
     }
     
-    /**
+    
+/**
      * Called when the addin is deinitialized.
      */
     public long deInitialize(Object context)
@@ -282,14 +284,16 @@ public class DesignPatternCatalog implements IDesignPatternCatalog, IDesignPatte
         }
         return 0;
     }
-    /**
+    
+/**
      * Called when the addin is unloaded.
      */
     public long unLoad(Object context)
     {
         return 0;
     }
-    /**
+    
+/**
      * The version of the addin.
      *
      * @param pVersion [out,retval] The version of this addin.
@@ -298,21 +302,24 @@ public class DesignPatternCatalog implements IDesignPatternCatalog, IDesignPatte
     {
         return m_Version;
     }
-        /* (non-Javadoc)
+        
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.core.addinframework.IAddIn#getLocation()
          */
     public String getLocation()
     {
         return null;
     }
-        /* (non-Javadoc)
+        
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.core.addinframework.IAddIn#getID()
          */
     public String getID()
     {
         return getProgID();
     }
-    /**
+    
+/**
      * Returns the progid of this addin.
      *
      * @param sProgID [out,retval] The progid of this adding (ie "DiagramCreatorAddIn.DiagCreatorAddIn");
@@ -321,14 +328,16 @@ public class DesignPatternCatalog implements IDesignPatternCatalog, IDesignPatte
     {
         return "org.netbeans.modules.uml.ui.products.ad.addesigncentergui.DesignPatternCatalog";
     }
-        /* (non-Javadoc)
+        
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.core.addinframework.IAddIn#getName()
          */
     public String getName()
     {
         return NbBundle.getMessage(DesignPatternCatalog.class, "DESIGN_CATALOG_NAME");
     }
-    /**
+    
+/**
      * Get the workspace that this addin knows about
      *
      * @param[out]	pWork		The workspace that this addin is responsible for
@@ -339,28 +348,32 @@ public class DesignPatternCatalog implements IDesignPatternCatalog, IDesignPatte
     {
         return m_Workspace;
     }
-    /**
+    
+/**
      * The project tree used
      */
     public IProjectTreeControl getProjectTree()
     {
         return m_DesignCenterTree;
     }
-    /**
+    
+/**
      * The project tree used
      */
     public void setProjectTree(IProjectTreeControl newVal)
     {
         m_DesignCenterTree = newVal;
     }
-    /**
+    
+/**
      * Message from the project tree that a context menu is about to be displayed
      */
     public ETList < String > onProjectTreeContextMenuPrepare(IProductContextMenu pMenu)
     {
         ETList <String> pMenuTitles = new ETArrayList<String>();
         // Not needed for jUML - use plugin files instead
-          /*
+          
+/*
                 if (pMenu != null)
                 {
                         Object pDisp = pMenu.getParentControl();
@@ -411,13 +424,15 @@ public class DesignPatternCatalog implements IDesignPatternCatalog, IDesignPatte
            */
         return pMenuTitles;
     }
-    /**
+    
+/**
      * Message from the project tree that a context menu is about to be displayed
      */
     public void onProjectTreeContextMenuPrepared(IProductContextMenu pMenu )
     {
     }
-    /**
+    
+/**
      * Get the project that this addin knows about
      *
      * @param[in]	sFile			The file representing the project
@@ -446,7 +461,8 @@ public class DesignPatternCatalog implements IDesignPatternCatalog, IDesignPatte
         }
         return pProject;
     }
-    /**
+    
+/**
      * Populate the passed in Dispatch with child nodes if necessary
      *
      * @param[in]	pDispatch		The parent in which to retrieve any children
@@ -578,7 +594,8 @@ public class DesignPatternCatalog implements IDesignPatternCatalog, IDesignPatte
             }
         }
     }
-    /**
+    
+/**
      * Handles the on before edit coming from the project tree.
      */
     public void onBeforeEdit(IProjectTreeControl pParentControl, IProjectTreeItem pItem, IProjectTreeEditVerify pVerify)
@@ -595,7 +612,8 @@ public class DesignPatternCatalog implements IDesignPatternCatalog, IDesignPatte
             }
         }
     }
-    /**
+    
+/**
      * Handles the on begin drag coming from the project tree.
      */
     public void onBeginDrag(IProjectTreeControl pParentControl, IProjectTreeItem[] pItem, IProjectTreeDragVerify pVerify)
@@ -629,7 +647,8 @@ public class DesignPatternCatalog implements IDesignPatternCatalog, IDesignPatte
             }
         }
     }
-    /**
+    
+/**
      * Message from the drawing area that a context menu is about to be displayed.
      *
      * @param pParentDiagram [in] The diagram where the context menu is about to appear.
@@ -638,7 +657,8 @@ public class DesignPatternCatalog implements IDesignPatternCatalog, IDesignPatte
     public void onDrawingAreaContextMenuPrepare(IDiagram pDiagram, IProductContextMenu pContextMenu)
     {
         // Not needed for jUML - use plugin files instead
-                /*
+                
+/*
            if (pDiagram != null && pContextMenu != null)
            {
                         // because the user has right clicked on the drawing area, we will want to try
@@ -655,7 +675,8 @@ public class DesignPatternCatalog implements IDesignPatternCatalog, IDesignPatte
            }
                  */
     }
-    /**
+    
+/**
      * Adds the "Promote..." menu item to the right click menu in the project tree
      *
      * @param pContextMenu[in]			The current context menu
@@ -665,7 +686,8 @@ public class DesignPatternCatalog implements IDesignPatternCatalog, IDesignPatte
     public void addPromoteMenuItem(IProductContextMenu pContextMenu)
     {
         // Not needed for jUML - use plugin files instead
-                /*
+                
+/*
                 if (pContextMenu != null)
                 {
                         // get the selection handler
@@ -690,13 +712,15 @@ public class DesignPatternCatalog implements IDesignPatternCatalog, IDesignPatte
            }
                  */
     }
-    /**
+    
+/**
      * Message from the sink that something has been selected
      */
     public void handleSelection(IProductContextMenu pContextMenu, IProductContextMenuItem pSelectedItem)
     {
         // Not needed for jUML - see onHandleButton
-                /*
+                
+/*
            if (pContextMenu != null && pSelectedItem != null)
            {
                         // get the string of the item that was selected (clicked on)
@@ -718,7 +742,8 @@ public class DesignPatternCatalog implements IDesignPatternCatalog, IDesignPatte
            }
                  */
     }
-    /**
+    
+/**
      * Called when the apply menu button was clicked
      *
      * @param pContextMenu[in]			The current context menu
@@ -729,7 +754,8 @@ public class DesignPatternCatalog implements IDesignPatternCatalog, IDesignPatte
     public void handleApply(IProductContextMenu pContextMenu, IProductContextMenuItem pSelectedItem)
     {
         // Not needed for jUML - see onHandleButton
-                /*
+                
+/*
            if (pContextMenu != null && pSelectedItem != null)
            {
                         // get the pattern that is selected
@@ -747,7 +773,8 @@ public class DesignPatternCatalog implements IDesignPatternCatalog, IDesignPatte
            }
                  */
     }
-    /**
+    
+/**
      * Called when the promote menu button was clicked
      *
      * @param pContextMenu[in]			The current context menu
@@ -758,7 +785,8 @@ public class DesignPatternCatalog implements IDesignPatternCatalog, IDesignPatte
     public void handlePromote(IProductContextMenu pContextMenu, IProductContextMenuItem pSelectedItem)
     {
         // Not needed for jUML - see onHandleButton
-                /*
+                
+/*
            if (pContextMenu != null && pSelectedItem != null)
            {
                         // get the pattern that is selected in the tree
@@ -770,7 +798,8 @@ public class DesignPatternCatalog implements IDesignPatternCatalog, IDesignPatte
            }
                  */
     }
-    /**
+    
+/**
      * Begin the process to apply ("instantiate") the pattern
      *
      * @param pDispatch[in]			The pattern to apply
@@ -824,7 +853,8 @@ public class DesignPatternCatalog implements IDesignPatternCatalog, IDesignPatte
             }
         }
     }
-    /**
+    
+/**
      * Begin the process to promote the pattern to the design center
      *
      * @param pDispatch[in]			The pattern to apply
@@ -883,7 +913,8 @@ public class DesignPatternCatalog implements IDesignPatternCatalog, IDesignPatte
             }
         }
     }
-    /**
+    
+/**
      * Event fired by the drawing area before an item is dropped.
      *
      *
@@ -975,7 +1006,8 @@ public class DesignPatternCatalog implements IDesignPatternCatalog, IDesignPatte
 //            }
 //        }
 //    }
-    /**
+    
+/**
      * In order to properly display and eventually "instantiate" the pattern, we need
      * to know certain pieces of information.  The design pattern details houses
      * this information.
@@ -993,7 +1025,8 @@ public class DesignPatternCatalog implements IDesignPatternCatalog, IDesignPatte
             m_PatternManager.buildPatternDetails(pDispatch, pDetails);
         }
     }
-    /**
+    
+/**
      * Begin the process to apply ("instantiate") the pattern in the passed in details
      *
      *
@@ -1029,7 +1062,8 @@ public class DesignPatternCatalog implements IDesignPatternCatalog, IDesignPatte
             }
         }
     }
-    /**
+    
+/**
      * Get the patterns in the project that this addin knows about (the current project)
      *
      * @param pElements[out]	The patterns
@@ -1080,7 +1114,8 @@ public class DesignPatternCatalog implements IDesignPatternCatalog, IDesignPatte
         }
         return pElements;
     }
-    /**
+    
+/**
      * Open has been called on the passed in tree item.  Respond accordingly
      *
      * @param[in]	pDispatch		The project tree item to open
@@ -1091,7 +1126,8 @@ public class DesignPatternCatalog implements IDesignPatternCatalog, IDesignPatte
     {
         // This addin is not going to do anything when promote is called.
     }
-    /**
+    
+/**
      *
      * Retrieves the collaboration object by the passed in name
      *
@@ -1107,7 +1143,8 @@ public class DesignPatternCatalog implements IDesignPatternCatalog, IDesignPatte
         if (id != null && id.length() > 0)
         {
             // this is not coded in c++ either
-                        /*
+                        
+/*
                         IProject pProject;
                         DesignPatternUtilities DesignPatternUtilities;
                         DesignPatternUtilities.GetCurrentProject(&pProject);
@@ -1120,7 +1157,8 @@ public class DesignPatternCatalog implements IDesignPatternCatalog, IDesignPatte
         }
         return pCollab;
     }
-    /**
+    
+/**
      * Message from the workspace that a project has been removed
      */
     public void onWSProjectOpened(IWSProject wsProject)
@@ -1154,7 +1192,8 @@ public class DesignPatternCatalog implements IDesignPatternCatalog, IDesignPatte
             }
         }
     }
-    /**
+    
+/**
      * Message from the workspace that a project has been removed
      */
     public void onWSProjectRemoved(IWSProject wsProject)
@@ -1220,7 +1259,8 @@ public class DesignPatternCatalog implements IDesignPatternCatalog, IDesignPatte
             }
         }
     }
-    /**
+    
+/**
      * Message from the workspace that a project has been inserted
      */
     public void onWSProjectInserted(IWSProject pProject)
@@ -1265,7 +1305,8 @@ public class DesignPatternCatalog implements IDesignPatternCatalog, IDesignPatte
             }
         }
     }
-    /**
+    
+/**
      * Message from the core product that the product is saving
      */
     public void onCoreProductPreSaved(ICoreProduct pProduct)
@@ -1284,7 +1325,8 @@ public class DesignPatternCatalog implements IDesignPatternCatalog, IDesignPatte
             }
         }
     }
-    /**
+    
+/**
      * Message from the core product that the product is saving
      */
     public void onCoreProductPreQuit(ICoreProduct pProduct)
@@ -1336,13 +1378,15 @@ public class DesignPatternCatalog implements IDesignPatternCatalog, IDesignPatte
             deInitialize(null);
         }
     }
-    /**
+    
+/**
      * Message from the core product that the product is saving
      */
     public void onWorkspaceSaved(IWorkspace space)
     {
     }
-    /**
+    
+/**
      * Message from the workspace that a project has been created
      */
     public void onWSProjectCreated(IWSProject pWSProject)
@@ -1392,7 +1436,8 @@ public class DesignPatternCatalog implements IDesignPatternCatalog, IDesignPatte
             }
         }
     }
-    /**
+    
+/**
      * Message from the workspace that a project has been created
      */
     public void onProjectCreated( IProject project )
@@ -1414,7 +1459,8 @@ public class DesignPatternCatalog implements IDesignPatternCatalog, IDesignPatte
             }
         }
     }
-    /**
+    
+/**
      * Message from the workspace that a project has been opened
      */
     public void onProjectOpened( IProject project )
@@ -1437,7 +1483,8 @@ public class DesignPatternCatalog implements IDesignPatternCatalog, IDesignPatte
         }
     }
     
-    /**
+    
+/**
      * Message from the workspace that a project has been created
      */
     public void onProjectClosed(IProject project )
@@ -1467,7 +1514,8 @@ public class DesignPatternCatalog implements IDesignPatternCatalog, IDesignPatte
         }
     }
     
-    /**
+    
+/**
      * Message from the workspace that a project has been created
      */
     public void onProjectPreClosed(IProject project, IResultCell cell )
@@ -1644,7 +1692,8 @@ public class DesignPatternCatalog implements IDesignPatternCatalog, IDesignPatte
         }
     }
     
-    /**
+    
+/**
      * Message from the workspace that a project has been created
      */
     public void onWSProjectClosed(IWSProject wsProject)
@@ -1700,7 +1749,8 @@ public class DesignPatternCatalog implements IDesignPatternCatalog, IDesignPatte
             }
         }
     }
-    /**
+    
+/**
      * Message from the workspace that a project has been created
      */
     public void onWSProjectSaved(IWSProject wsProject)
@@ -1735,7 +1785,8 @@ public class DesignPatternCatalog implements IDesignPatternCatalog, IDesignPatte
             }
         }
     }
-    /**
+    
+/**
      *
      * Adds the IProject to the IWSProject.
      *
@@ -1793,7 +1844,8 @@ public class DesignPatternCatalog implements IDesignPatternCatalog, IDesignPatte
             }
         }
     }
-    /**
+    
+/**
      * Because we want to reuse many of the menus used by the project tree, this
      * routine is going to tell the project tree engine which menus it wants to
      * reuse based on its mbk_values
@@ -1891,7 +1943,8 @@ public class DesignPatternCatalog implements IDesignPatternCatalog, IDesignPatte
     {
         boolean bEnable = false;
         // Not needed for jUML - see validate
-                /*
+                
+/*
                 // Is it the project tree
                 if (m_FromDiagram == false && m_AssociateContext instanceof IProjectTreeControl)
                 {
@@ -2001,13 +2054,15 @@ public class DesignPatternCatalog implements IDesignPatternCatalog, IDesignPatte
                  */
         return bEnable;
     }
-        /* (non-Javadoc)
+        
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.ui.products.ad.application.action.IPlugginAction#selectionChanged(org.netbeans.modules.uml.ui.products.ad.application.action.PluginAction, org.netbeans.modules.uml.ui.products.ad.application.selection.ISelection)
          */
     //	public void selectionChanged(PluginAction action, ISelection selection) {
     //
     //	}
-        /* (non-Javadoc)
+        
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.ui.products.ad.application.action.IPlugginAction#run()
          */
     public void run(ActionEvent e)
@@ -2097,7 +2152,8 @@ public class DesignPatternCatalog implements IDesignPatternCatalog, IDesignPatte
     //		return valid;
     //	}
     
-    /**
+    
+/**
      * Determines whether or not a menu item should be displayed based on whether
      * or not a collaboration is selected (and is the only thing selected)
      *

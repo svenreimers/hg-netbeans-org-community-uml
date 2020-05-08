@@ -43,6 +43,7 @@
  */
 
 
+
 /*
  * RE_OperationTests.java
  *
@@ -63,10 +64,8 @@ import org.netbeans.test.umllib.customelements.ExpressionOperator;
 import org.netbeans.test.umllib.customelements.LifelineOperator;
 import org.netbeans.test.umllib.customelements.MessageOperator;
 
-/**
- *
- * @author Alexandr Scherbatiy
- */
+
+
 
 public class REOperationTestBlockSynchronized extends REOperationTestCase{
     

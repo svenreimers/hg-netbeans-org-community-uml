@@ -48,22 +48,26 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.IDirectedRelation
 
 public interface IIncrement extends IDirectedRelationship
 {
-	/**
+	
+/**
 	 * property PartialClassifier
 	*/
 	public IClassifier getPartialClassifier();
 
-	/**
+	
+/**
 	 * property PartialClassifier
 	*/
 	public void setPartialClassifier( IClassifier value );
 
-	/**
+	
+/**
 	 * property OtherPartialClassifier
 	*/
 	public IClassifier getOtherPartialClassifier();
 
-	/**
+	
+/**
 	 * property OtherPartialClassifier
 	*/
 	public void setOtherPartialClassifier( IClassifier value );

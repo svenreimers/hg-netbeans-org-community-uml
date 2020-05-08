@@ -56,18 +56,16 @@ import org.netbeans.spi.project.ui.support.ProjectCustomizer.Category;
 import org.openide.util.Lookup;
 import org.openide.util.NbBundle;
 
-/**
- *
- * @author Jyothi
- * @author Craig Conover, craig.conover@sun.com
- */
+
+
 public class ProjectTemplatesCustomizer 
     implements ProjectCustomizer.CompositeCategoryProvider
 {
     private static final String TEMPLATES = "Templates"; // NOI18N
     private String name;
     
-    /** Creates a new instance of TemplatesManagerCustomizer
+    
+/** Creates a new instance of TemplatesManagerCustomizer
      * @param name
      */
     public ProjectTemplatesCustomizer(String name)
@@ -122,7 +120,8 @@ public class ProjectTemplatesCustomizer
         return new JPanel();
     }
     
-    /**
+    
+/**
      *
      * @return
      */

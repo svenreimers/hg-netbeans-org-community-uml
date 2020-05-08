@@ -47,6 +47,7 @@ package org.netbeans.modules.uml.core.reverseengineering.reframework;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.IPackage;
 import org.netbeans.modules.uml.core.AbstractUMLTestCase;
 
+
 /**
  * Test cases for PackageEvent.
  */
@@ -59,7 +60,8 @@ public class PackageEventTestCase extends AbstractUMLTestCase
 
     private PackageEvent pe;
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see junit.framework.TestCase#setUp()
      */
     protected void setUp() throws Exception

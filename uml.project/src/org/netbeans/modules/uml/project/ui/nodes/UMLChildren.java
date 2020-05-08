@@ -53,10 +53,8 @@ import org.netbeans.modules.uml.project.ui.ITreeItemExpandContext;
 import org.netbeans.modules.uml.project.ui.NetBeansUMLProjectTreeModel;
 
 
-/**
- *
- * @author Trey Spiva
- */
+
+
 public class UMLChildren extends Children.Array
 {
    private ITreeItem mItem = null;
@@ -66,7 +64,8 @@ public class UMLChildren extends Children.Array
        super(new UMLChildrenNodesCollection());
    }
    
-   /**
+   
+/**
     * 
     */
    public UMLChildren(ITreeItem item)
@@ -87,7 +86,8 @@ public class UMLChildren extends Children.Array
    }
 
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.openide.nodes.Children#addNotify()
     */
     @Override
@@ -107,7 +107,8 @@ public class UMLChildren extends Children.Array
    // Data Access Methods
    //**************************************************
    
-   /**
+   
+/**
     * Retrieves the project tree item used to describe the model element that 
     * contains the children.
     * 
@@ -118,7 +119,8 @@ public class UMLChildren extends Children.Array
       return mItem;
    }
 
-   /**
+   
+/**
     * Sets  the project tree item used to describe the model element that 
     * contains the children.
     * 
@@ -133,7 +135,8 @@ public class UMLChildren extends Children.Array
    // Helper Methods
    //**************************************************
    
-   /**
+   
+/**
     * Notify listeners that a node is being expanded.  Listeners are able to add
     * nodes to the ProjectTreeItem.
     */
@@ -152,7 +155,8 @@ public class UMLChildren extends Children.Array
    }
    
 
-  /**
+  
+/**
     * Test to see if we can redraw the children list on demand, would
    * help with the filter action impl if it works
     */
@@ -196,7 +200,8 @@ public class UMLChildren extends Children.Array
    }
 
  
-   /** 
+   
+/** 
     *  update the node map hash in the model to avoid "ghost" nodes in the hash
     */
     @Override
@@ -220,7 +225,8 @@ public class UMLChildren extends Children.Array
    public class ChildrenNodeContext implements ITreeItemExpandContext
    {
 
-      /* (non-Javadoc)
+      
+/* (non-Javadoc)
        * @see org.netbeans.modules.uml.netbeans.umlproject.ui.IProjectTreeExpandContext#itemAdded(org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeItem)
        */
         @Override

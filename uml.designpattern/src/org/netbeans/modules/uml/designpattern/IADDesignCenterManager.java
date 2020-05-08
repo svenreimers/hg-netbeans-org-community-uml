@@ -49,17 +49,20 @@ import org.netbeans.modules.uml.core.coreapplication.IDesignCenterManager;
 
 public interface IADDesignCenterManager extends IDesignCenterManager
 {
-	/**
+	
+/**
 	 * method GetRequirementsManager
 	*/
 	public Object getRequirementsManager();
 
-	/**
+	
+/**
 	 * method GetDesignPatternCatalog
 	*/
 	public IDesignPatternCatalog getDesignPatternCatalog();
 
-	/**
+	
+/**
 	 * method GetMacroCatalog
 	*/
 	public Object getMacroCatalog();

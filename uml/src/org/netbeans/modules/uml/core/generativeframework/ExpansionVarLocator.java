@@ -51,9 +51,8 @@ import org.dom4j.Node;
 
 import org.netbeans.modules.uml.core.metamodel.core.foundation.IElement;
 
-/**
- * @author sumitabhk
- */
+
+
 public class ExpansionVarLocator {
     private static final int PS_OPTIONAL   = 0;
     private static final int PS_GATHERING  = 1;
@@ -61,7 +60,8 @@ public class ExpansionVarLocator {
     private static final int PS_ESCAPE     = 3;
     private static final int PS_VAR        = 4;
 
-	/**
+	
+/**
 	 * @param manager
 	 * @param templateFile
 	 * @param templateBuffer
@@ -83,7 +83,8 @@ public class ExpansionVarLocator {
         initialize();
 	}
     
-    /**
+    
+/**
      * @param manager
      * @param templateFile
      * @param templateBuffer
@@ -128,7 +129,8 @@ public class ExpansionVarLocator {
         return m_Manager != null? m_Manager.getFactory() : null;
     }
     
-	/**
+	
+/**
 	 * @return
 	 */
 	public String expandVars() {

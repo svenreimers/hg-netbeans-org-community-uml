@@ -10,10 +10,8 @@
 
 package bankpack;
 
-/**
- *
- * @author Administrator
- */
+
+
 public interface Account {
     public double getBalance();
     public String getAccountNumber();

@@ -58,6 +58,7 @@ import org.netbeans.modules.uml.drawingarea.view.UMLNodeWidget;
 import org.netbeans.modules.uml.drawingarea.widgets.Container;
 import org.netbeans.modules.uml.drawingarea.widgets.ResizeToContentMarker;
 
+
 /**
  *
  * 

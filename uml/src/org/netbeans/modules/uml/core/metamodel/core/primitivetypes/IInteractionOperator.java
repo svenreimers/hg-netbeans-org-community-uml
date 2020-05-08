@@ -42,16 +42,12 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : IInteractionOperator.java
- * Created on : Sep 16, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.metamodel.core.primitivetypes;
 
-/**
- * @author Aztec
- */
+
+
 public interface IInteractionOperator
 {
     // Designates that the CombinedFragment represents a choice of behavior.

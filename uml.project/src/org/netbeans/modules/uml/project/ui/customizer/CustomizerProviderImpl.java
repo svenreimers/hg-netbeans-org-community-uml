@@ -74,10 +74,8 @@ import org.openide.util.Lookup;
 import org.openide.util.lookup.Lookups;
 
 
-/** Customization of UML project
- *
- * @author Mike Frisino
- */
+
+
 public class CustomizerProviderImpl implements CustomizerProvider
 {
     private final Project project;

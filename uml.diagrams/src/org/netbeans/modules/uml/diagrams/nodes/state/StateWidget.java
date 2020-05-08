@@ -73,10 +73,8 @@ import org.netbeans.modules.uml.drawingarea.view.UMLNodeWidget;
 import org.netbeans.modules.uml.drawingarea.view.UMLWidget;
 import org.openide.util.NbBundle;
 
-/**
- *
- * @author Sheryl Su
- */
+
+
 public class StateWidget extends UMLNodeWidget
 {
     private Scene scene;

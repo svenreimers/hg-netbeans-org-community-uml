@@ -42,19 +42,15 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : ActivityParameter.java
- * Created on : Sep 16, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.metamodel.common.commonactivities;
 
 import org.dom4j.Document;
 import org.dom4j.Node;
 
-/**
- * @author Aztec
- */
+
+
 public class ActivityParameter
     extends ObjectNode
     implements IActivityParameter

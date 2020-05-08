@@ -42,18 +42,14 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : IPrimitiveFunction.java
- * Created on : Sep 18, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.metamodel.common.commonactions;
 
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavior;
 
-/**
- * @author Aztec
- */
+
+
 public interface IPrimitiveFunction extends IBehavior
 {
     public String getLanguage();

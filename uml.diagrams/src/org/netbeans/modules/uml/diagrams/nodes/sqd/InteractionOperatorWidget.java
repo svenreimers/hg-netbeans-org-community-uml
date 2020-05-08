@@ -60,10 +60,8 @@ import org.openide.util.NbBundle;
 import org.openide.util.lookup.AbstractLookup;
 import org.openide.util.lookup.InstanceContent;
 
-/**
- * It's not really pentagon because upper and left border isn't drawn
- * @author sp153251
- */
+
+
 public class InteractionOperatorWidget extends Widget {
     UMLLabelWidget operator;
     private InstanceContent lookupContent = new InstanceContent();

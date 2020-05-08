@@ -135,7 +135,7 @@ public class SQDActorPropertiesTests extends UMLTestCase {
                     
                 }
                 //Point p = dia.getPointForLifeline(100);
-                //dia.createGenericElementOnDiagram(LINE_NAME+":"+CLASS_NAME, ElementTypes.ACTOR_LIFELINE, p.x, p.y, LibProperties.getCurrentNamer(ElementTypes.LIFELINE));
+                
                 //line = new LifelineOperator(dia, LINE_NAME, CLASS_NAME);
                 line = dia.putElementOnDiagram(LINE_NAME+":"+CLASS_NAME, ElementTypes.ACTOR_LIFELINE);
                 eventTool.waitNoEvent(1500);
@@ -276,7 +276,8 @@ public class SQDActorPropertiesTests extends UMLTestCase {
             PropertyVerifier custom = new PropertyVerifier(PROPS_NAME){                
                 protected boolean checkElement(){
                     return true;
-                    /*
+                    
+/*
                     boolean switched = false;
                     try{
                         dia.toolbar().selectTool(dia.toolbar().SHOW_FRIENDLY_NAMES_TOOL);

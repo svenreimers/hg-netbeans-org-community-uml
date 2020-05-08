@@ -45,10 +45,8 @@
 
 package org.netbeans.modules.uml.core.eventframework;
 
-/**
- * @author sumitabhk
- *
- */
+
+
 public class EventDispatcherKind {
 
 	public static int EDK_WORKSPACE	= 0;
@@ -70,7 +68,8 @@ public class EventDispatcherKind {
 	public static int EDK_STRUCTURE	= EDK_DYNAMICS + 1;
 	public static int EDK_ACTIVITIES	= EDK_STRUCTURE + 1;
 	
-	/**
+	
+/**
 	 * 
 	 */
 	public EventDispatcherKind() {

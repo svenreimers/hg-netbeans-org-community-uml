@@ -43,11 +43,8 @@
  */
 
 
-/*
- * File       : OperationStateHandler.java
- * Created on : Dec 11, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.statehandlers;
 
 import org.dom4j.Node;
@@ -57,9 +54,8 @@ import org.netbeans.modules.uml.core.reverseengineering.reframework.IOperationEv
 import org.netbeans.modules.uml.core.reverseengineering.reframework.OperationEvent;
 import org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ITokenDescriptor;
 
-/**
- * @author Aztec
- */
+
+
 public class OperationStateHandler extends AttributeStateHandler
 {
     private int m_Kind;
@@ -71,7 +67,8 @@ public class OperationStateHandler extends AttributeStateHandler
     public static final int PROPERTY_GET    = 3;     
     public static final int PROPERTY_SET    = 4;
 
-    /**
+    
+/**
      * @param language
      * @param stateName
      */
@@ -152,7 +149,7 @@ public class OperationStateHandler extends AttributeStateHandler
     
     public void initialize() 
     {
-        //TODO: Aztec
+        
         //TypeElementStateHandler::Initialize()
         super.initialize();
         setNodeAttribute("isAbstract", isForceAbstract());

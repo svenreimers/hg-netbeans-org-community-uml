@@ -56,10 +56,8 @@ import org.openide.DialogDisplayer;
 import org.openide.NotifyDescriptor;
 import org.openide.util.NbBundle;
 
-/**
- *
- * @author Sheryl Su
- */
+
+
 public class ExportImageAction extends AbstractAction
 {
 

@@ -59,10 +59,8 @@ import org.netbeans.modules.uml.core.support.umlsupport.StringUtilities;
 import org.netbeans.modules.uml.core.support.umlsupport.Validator;
 import org.netbeans.modules.uml.core.support.umlsupport.XMLManip;
 
-/**
- * @author sumitabhk
- *
- */
+
+
 public class ConfigManager implements IConfigManager
 {
 
@@ -127,7 +125,8 @@ public class ConfigManager implements IConfigManager
     }
     
     
-    /**
+    
+/**
      *
      * Retrieves the location of the bin directory.
      *
@@ -142,7 +141,8 @@ public class ConfigManager implements IConfigManager
         return m_HomeLocation;
     }
     
-    /**
+    
+/**
      *
      * Retrieves the location of the license directory.
      *
@@ -166,7 +166,8 @@ public class ConfigManager implements IConfigManager
         return loc;
     }
     
-    /**
+    
+/**
      *
      * Retrieves the location of the docs directory.
      *
@@ -188,7 +189,8 @@ public class ConfigManager implements IConfigManager
         return null;
     }
     
-    /**
+    
+/**
      *
      * Retrieves the location of the PresentationTypes.etc file.
      *
@@ -202,7 +204,8 @@ public class ConfigManager implements IConfigManager
         return getLocation( m_PresentationTypes );
     }
     
-    /**
+    
+/**
      *
      * Sets the name of the Presentation types file. The default is
      * "PresentationTypes.etc"
@@ -217,7 +220,8 @@ public class ConfigManager implements IConfigManager
         m_PresentationTypes = value;
     }
     
-    /**
+    
+/**
      *
      * Retrieves the location of the StereotypeIcons.etc file.
      *
@@ -231,7 +235,8 @@ public class ConfigManager implements IConfigManager
         return getLocation( m_StereotypeIconsLocation);
     }
     
-    /**
+    
+/**
      *
      * Sets the name of the StereotypeIcons file. The default is
      * "StereotypeIcons.etc"
@@ -246,7 +251,8 @@ public class ConfigManager implements IConfigManager
         m_StereotypeIconsLocation = value;
     }
     
-    /**
+    
+/**
      *
      * Retrieves the location of the EventFramework.etc file.
      *
@@ -260,7 +266,8 @@ public class ConfigManager implements IConfigManager
         return getLocation( m_EventFramework);
     }
     
-    /**
+    
+/**
      *
      * Sets the new name of the Event framework etc file. The default
      * is "EventFramework.etc"
@@ -275,7 +282,8 @@ public class ConfigManager implements IConfigManager
         m_EventFramework = value;
     }
     
-    /**
+    
+/**
      *
      * Retrieves the location of the UML_2.0EMBT.dtd file.
      *
@@ -289,7 +297,8 @@ public class ConfigManager implements IConfigManager
         return getLocation( m_DTD);
     }
     
-    /**
+    
+/**
      *
      * Sets the name of the dtd file. The default is
      * "UML_2.0EMBT.dtd".
@@ -304,7 +313,8 @@ public class ConfigManager implements IConfigManager
         m_DTD = value;
     }
     
-    /**
+    
+/**
      *
      * Retrieves the id of an element in a hive.
      *
@@ -321,7 +331,8 @@ public class ConfigManager implements IConfigManager
         return getIDs( hive, name, null );
     }
     
-    /**
+    
+/**
      *
      * Retrieves the data associated with a particular entry in a hive.
      *
@@ -358,7 +369,8 @@ public class ConfigManager implements IConfigManager
         return getLocation( m_Preferences);
     }
     
-    /**
+    
+/**
      *
      * Retrieves a full path using the HomeLocation as the root.
      *
@@ -387,7 +399,8 @@ public class ConfigManager implements IConfigManager
         m_Preferences = value;
     }
     
-    /**
+    
+/**
      *
      * Retrieves the full path to the config directory, which holds some of the
      * required xml files for Describe.
@@ -435,15 +448,8 @@ public class ConfigManager implements IConfigManager
         loadHives(doc);
     }
     
-    /**
-     *
-     * Loads the contents of found hives.
-     *
-     * @param doc[in] The document
-     *
-     * @return HRESULT
-     *
-     */
+    
+
     private void loadHives(Document doc)
     {
         List hiveNodes = doc.selectNodes("//Hive"); // NOI18N
@@ -456,15 +462,8 @@ public class ConfigManager implements IConfigManager
         }
     }
     
-    /**
-     *
-     * Loads a particular hive
-     *
-     * @param hiveNode[in] The node containing a hive
-     *
-     * @return HRESULT
-     *
-     */
+    
+
     private void loadHive(Node node)
     {
         try
@@ -498,7 +497,8 @@ public class ConfigManager implements IConfigManager
         }
     }
     
-    /**
+    
+/**
      *
      * Retrieves the data associated with some top level properties
      * in the .etc file.
@@ -525,7 +525,8 @@ public class ConfigManager implements IConfigManager
         m_DTD = getTopLevelProperty( doc, "/EssentialConfig/DTD" ); // NOI18N
     }
     
-    /**
+    
+/**
      *
      * Utility to retrieve the top level properties.
      *

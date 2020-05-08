@@ -42,6 +42,7 @@
  * made subject to such option by the copyright holder.
  */
 
+
 /*
  * IEnumerationChangeFacility.java
  *
@@ -52,10 +53,8 @@ package org.netbeans.modules.uml.core.roundtripframework;
 
 import org.netbeans.modules.uml.core.metamodel.core.constructs.IEnumeration;
 
-/**
- *
- * @author Administrator
- */
+
+
 public interface IEnumerationChangeFacility extends IRequestFacility
 {
     public void changeName(IEnumeration pClassifier, String pName);

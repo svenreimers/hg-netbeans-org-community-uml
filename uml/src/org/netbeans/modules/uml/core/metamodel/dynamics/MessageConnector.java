@@ -63,7 +63,8 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 public class MessageConnector extends Connector implements IMessageConnector
 {
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IMessageConnector#getToLifeline()
      */
     public ILifeline getToLifeline()
@@ -72,7 +73,8 @@ public class MessageConnector extends Connector implements IMessageConnector
             .retrieveSingleElementWithAttrID( this, "toLine", ILifeline.class );
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IMessageConnector#setToLifeline(org.netbeans.modules.uml.core.metamodel.dynamics.ILifeline)
      */
     public void setToLifeline(ILifeline line)
@@ -88,7 +90,8 @@ public class MessageConnector extends Connector implements IMessageConnector
         }
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IMessageConnector#getFromLifeline()
      */
     public ILifeline getFromLifeline()
@@ -97,7 +100,8 @@ public class MessageConnector extends Connector implements IMessageConnector
             .retrieveSingleElementWithAttrID( this, "fromLine", ILifeline.class );
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IMessageConnector#setFromLifeline(org.netbeans.modules.uml.core.metamodel.dynamics.ILifeline)
      */
     public void setFromLifeline(ILifeline line)
@@ -113,7 +117,8 @@ public class MessageConnector extends Connector implements IMessageConnector
         }
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IMessageConnector#getConnectedLifelines()
      */
     public ETList<ILifeline> getConnectedLifelines()
@@ -128,7 +133,8 @@ public class MessageConnector extends Connector implements IMessageConnector
         return lifelines;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IMessageConnector#getMessages()
      */
     public ETList<IMessage> getMessages()
@@ -137,7 +143,8 @@ public class MessageConnector extends Connector implements IMessageConnector
             .retrieveElementCollectionWithAttrIDs( this, "message", IMessage.class );
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IMessageConnector#removeMessage(org.netbeans.modules.uml.core.metamodel.dynamics.IMessage)
      */
     public void removeMessage(IMessage message)
@@ -145,7 +152,8 @@ public class MessageConnector extends Connector implements IMessageConnector
         removeElementByID( message, "message" );
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IMessageConnector#addMessage(org.netbeans.modules.uml.core.metamodel.dynamics.IMessage)
      */
     public void addMessage(IMessage message)
@@ -153,7 +161,8 @@ public class MessageConnector extends Connector implements IMessageConnector
         addElementByID( message, "message" );
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IMessageConnector#addMessage(int, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation)
      */
     public IMessage addMessage(int nDirectionKind, IOperation pOper)
@@ -178,7 +187,8 @@ public class MessageConnector extends Connector implements IMessageConnector
         return message;
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.Connector#establishNodePresence(org.dom4j.Document, org.dom4j.Node)
      */
     public void establishNodePresence(Document doc, Node node)

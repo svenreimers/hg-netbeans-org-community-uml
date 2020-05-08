@@ -56,7 +56,8 @@ public class CompositeClassLocator implements ICompositeClassLocator
 {
     private List<IClassLocator> m_Locators = new ArrayList<IClassLocator>();
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.ICompositeClassLocator#addLocator(org.netbeans.modules.uml.core.reverseengineering.reframework.IClassLocator)
      */
     public void addLocator(IClassLocator newLocator)
@@ -65,7 +66,8 @@ public class CompositeClassLocator implements ICompositeClassLocator
             m_Locators.add(newLocator);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.IClassLocator#locateFileForClass(java.lang.String, java.lang.String)
      */
     public ETPairT<String,String> locateFileForClass(
@@ -86,7 +88,8 @@ public class CompositeClassLocator implements ICompositeClassLocator
         return new ETPairT<String,String>(null, null);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.IClassLocator#locateFile(java.lang.String)
      */
     public String locateFile(String filename)

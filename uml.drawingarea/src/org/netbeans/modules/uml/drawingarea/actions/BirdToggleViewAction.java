@@ -53,10 +53,8 @@ import org.netbeans.api.visual.widget.Scene;
 import org.netbeans.modules.uml.drawingarea.ZoomManager;
 import org.netbeans.modules.uml.resources.images.ImageUtil;
 
-/**
- *
- * @author treyspiva
- */
+
+
 public class BirdToggleViewAction extends AbstractAction
 {
     private BirdViewController controller = null;

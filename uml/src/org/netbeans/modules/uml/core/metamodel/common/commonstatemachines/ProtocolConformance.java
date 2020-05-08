@@ -42,6 +42,7 @@
  * made subject to such option by the copyright holder.
  */
 
+
 /*
  * Created on Sep 19, 2003
  *
@@ -55,10 +56,8 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.DirectedRelations
 import org.netbeans.modules.uml.core.metamodel.core.foundation.ElementCollector;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.OwnerRetriever;
 
-/**
- * @author aztec
- *
- */
+
+
 public class ProtocolConformance extends DirectedRelationship
 								 implements IProtocolConformance
 {
@@ -73,7 +72,8 @@ public class ProtocolConformance extends DirectedRelationship
 		setElement(machine,"generalMachine");
 	}
 	
-	/**
+	
+/**
 	 * property SpecificMachine
 	*/
 	public IStateMachine getSpecificMachine()
@@ -81,7 +81,8 @@ public class ProtocolConformance extends DirectedRelationship
 		return OwnerRetriever.getOwnerByType(this, IStateMachine.class);
 	}
 
-	/**
+	
+/**
 	 * property SpecificMachine
 	*/
 	public void setSpecificMachine( IStateMachine machine )

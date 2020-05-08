@@ -45,10 +45,8 @@
 
 package org.netbeans.modules.uml.core.reverseengineering.reframework;
 
-/**
- * @author sumitabhk
- *
- */
+
+
 public interface ITokenKind
 {
 	public static int KEYWORD = 0;

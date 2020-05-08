@@ -73,11 +73,8 @@ import org.netbeans.test.umllib.testcases.UMLTestCase;
 
 
 
-/**
- *
- * @author psb
- * @spec uml/UML-EditControl.xml
- */
+
+
 public class ActivityDiagramPlaceDeleteLinksByContext extends UMLTestCase {
     
     //some system properties
@@ -176,7 +173,8 @@ public class ActivityDiagramPlaceDeleteLinksByContext extends UMLTestCase {
     
 
 
-  /*public void testDeleteLinkByContext1() {
+  
+/*public void testDeleteLinkByContext1() {
         lastTestCase=getCurrentTestMethodName();
         testLinkPlaceDelete(workPkg1,activityDiagramName1, fromType, toType,element1,elementName1,elementType1,treeNode1,eIO1);
     }*/

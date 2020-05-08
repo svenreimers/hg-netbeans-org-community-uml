@@ -48,6 +48,7 @@ import org.netbeans.modules.uml.core.AbstractUMLTestCase;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.FactoryRetriever;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.TypedFactoryRetriever;
 
+
 /**
  * Test cases for AtomicFragment.
  */
@@ -60,7 +61,8 @@ public class AtomicFragmentTestCase extends AbstractUMLTestCase
 
     private IAtomicFragment atomicFragment;
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see junit.framework.TestCase#setUp()
      */
     protected void setUp() throws Exception
@@ -71,7 +73,8 @@ public class AtomicFragmentTestCase extends AbstractUMLTestCase
         project.addElement(atomicFragment);
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see junit.framework.TestCase#tearDown()
      */
     protected void tearDown() throws Exception

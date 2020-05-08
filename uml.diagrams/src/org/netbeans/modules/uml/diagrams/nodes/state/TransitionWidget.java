@@ -45,10 +45,8 @@ import java.beans.PropertyChangeListener;
 import org.netbeans.api.visual.widget.Scene;
 import org.netbeans.modules.uml.core.metamodel.common.commonstatemachines.ITransition;
 
-/**
- *
- * @author Sheryl Su
- */
+
+
 public class TransitionWidget extends ProcedureWidget implements PropertyChangeListener
 {
 

@@ -76,10 +76,8 @@ import org.openide.util.datatransfer.PasteType;
 
 
 
-/**
- * UMLDiagramsRootNode displays the UML diagrams
- * @author Mike Frisino
- */
+
+
 // TODO: meteora
 public final class UMLDiagramsRootNode extends UMLModelElementNode
     implements IDrawingAreaEventsSink
@@ -95,7 +93,8 @@ public final class UMLDiagramsRootNode extends UMLModelElementNode
     private final String displayName;
     private UMLProjectHelper helper = null;
     
-    /**
+    
+/**
      * Creates new LibrariesNode named displayName displaying classPathProperty classpath
      * and optionaly Java platform.
      * @param displayName the display name of the node
@@ -127,11 +126,12 @@ public final class UMLDiagramsRootNode extends UMLModelElementNode
         DispatchHelper dispatcher = new DispatchHelper();
         dispatcher.registerDrawingAreaEvents(this);
         
-        // this.displayName = "DiagramsRootNode-Trey";
+        
         // setName( ProjectUtils.getInformation( project ).getDisplayName() );
     }
     
-    /**
+    
+/**
      * Adds the model element to the lookup.
      *
      * @param element The Model element that represents the project.
@@ -151,7 +151,8 @@ public final class UMLDiagramsRootNode extends UMLModelElementNode
         return this.getDisplayName();
     }
     
-    	/**
+    	
+/**
 	 * Get the new types that can be created in this node. For example, a node
 	 * representing a class will permit attributes, operations, classes,
 	 * interfaces, and enumerations to be added.
@@ -180,7 +181,8 @@ public final class UMLDiagramsRootNode extends UMLModelElementNode
     }
 
     
-    /**
+    
+/**
      * Retrieves the associated model element.  The model element will be the
      * IProject that represent the project.
      *
@@ -212,7 +214,8 @@ public final class UMLDiagramsRootNode extends UMLModelElementNode
         return false;
     }
     
-    /**
+    
+/**
      * Check if the specified node is the same UMLDiagramsRootNode
      * instance.
      */
@@ -276,7 +279,8 @@ public final class UMLDiagramsRootNode extends UMLModelElementNode
             
         }
         
-        /**
+        
+/**
          * Notify listeners that a node is being expanded.  Listeners are able to add
          * nodes to the ProjectTreeItem.
          */
@@ -315,7 +319,8 @@ public final class UMLDiagramsRootNode extends UMLModelElementNode
         public boolean accept(File f)
         {
             return true; // mcf hack
-            /*
+            
+/*
             if (f.isDirectory())
                 return true;
             try {

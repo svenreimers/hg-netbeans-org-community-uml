@@ -49,32 +49,38 @@ import org.netbeans.modules.uml.core.support.umlsupport.IResultCell;
 
 public interface IStructuralFeatureEventsSink
 {
-	/**
+	
+/**
 	 * Fired whenever the ClientChangeablity flag on a particular feature is about to be modified.
 	*/
 	public void onPreChangeabilityModified( IStructuralFeature feature, /* ChangeableKind */ int proposedValue, IResultCell cell );
 
-	/**
+	
+/**
 	 * Fired whenever the ClientChangeablity flag on a particular feature was just modified.
 	*/
 	public void onChangeabilityModified( IStructuralFeature feature, IResultCell cell );
 
-	/**
+	
+/**
 	 * Fired whenever the volatile flag on a particular feature is about to be modified.
 	*/
 	public void onPreVolatileModified( IStructuralFeature feature, boolean proposedValue, IResultCell cell );
 
-	/**
+	
+/**
 	 * Fired whenever the volatile flag on particular feature was just modified.
 	*/
 	public void onVolatileModified( IStructuralFeature feature, IResultCell cell );
 
-	/**
+	
+/**
 	 * Fired whenever the transient flag on a particular feature is about to be modified.
 	*/
 	public void onPreTransientModified( IStructuralFeature feature, boolean proposedValue, IResultCell cell );
 
-	/**
+	
+/**
 	 * Fired whenever the transient flag on particular feature was just modified.
 	*/
 	public void onTransientModified( IStructuralFeature feature, IResultCell cell );

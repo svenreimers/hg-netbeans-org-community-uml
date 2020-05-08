@@ -41,11 +41,8 @@
  * Version 2 license, then the option applies only if the new code is
  * made subject to such option by the copyright holder.
  */
-/*
- * Util.java
- *
- * @author nn136682
- */
+
+
 package org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpcomponent;
 
 import org.netbeans.modules.uml.core.metamodel.core.constructs.IEnumeration;

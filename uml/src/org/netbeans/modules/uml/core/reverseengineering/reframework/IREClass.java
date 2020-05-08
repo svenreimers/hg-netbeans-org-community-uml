@@ -48,47 +48,56 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 public interface IREClass extends IREClassElement
 {
-	/**
+	
+/**
 	 * Retrieves the name of the package that contains the class.  If the class does not belong to a package the name will be an empty string.
 	*/
 	public String getPackage();
 
-	/**
+	
+/**
 	 * Specifies whether the element may not have a direct instance. True indicates that an instance of the element must be an instance of a child of the element. False indicates that there may an instance of the element that is not an instance of a child.
 	*/
 	public boolean getIsAbstract();
 
-	/**
+	
+/**
 	 * Specifies whether the element can have decedents.  True indicates that it may not have descendents; false indicates that it may have descendents (whether or not it actually has any descendents at the moment).
 	*/
 	public boolean getIsLeaf();
 
-	/**
+	
+/**
 	 * Retrieves a collection of operations for the class element.
 	*/
 	public ETList<IREOperation> getOperations();
 
-	/**
+	
+/**
 	 * Retrieves a collection of attributes for the class element.
 	*/
 	public ETList<IREAttribute> getAttributes();
 
-	/**
+	
+/**
 	 * Retrieves the collection of super classes for the class.
 	*/
 	public IREGeneralization getGeneralizations();
 
-	/**
+	
+/**
 	 * Retrieves the collection of implemented interfaces.
 	*/
 	public IRERealization getRealizations();
 
-	/**
+	
+/**
 	 * Retrieves all inner classes and interfaces.
 	*/
 	public ETList<IREClass> getAllInnerClasses();
 
-	/**
+	
+/**
 	 * Determines if the class is an interface class.
 	*/
 	public boolean getIsInterface();

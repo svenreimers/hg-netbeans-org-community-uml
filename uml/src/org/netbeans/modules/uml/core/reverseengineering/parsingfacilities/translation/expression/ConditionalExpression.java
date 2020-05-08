@@ -43,11 +43,8 @@
  */
 
 
-/*
- * File       : ConditionalExpression.java
- * Created on : Dec 9, 2003
- * Author     : Aztec
- */
+
+
 
 package org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.expression;
 
@@ -88,7 +85,8 @@ public class ConditionalExpression  extends MethodConditionalStateHandler
 		m_pConditionalOperator = null;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.expression.IConditionalExpression#getEndPosition()
 	 */
 	public long getEndPosition()
@@ -101,14 +99,15 @@ public class ConditionalExpression  extends MethodConditionalStateHandler
 		 }
 		 else
 		 {
-//		 	TODO aztec
+
 			retVal = new ExpressionStateHandler().getEndPosition();
 //		 	retVal = ExpressionStateHandler::GetEndPosition();
 		 }
 		 return retVal;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.expression.IConditionalExpression#getStartLine()
 	 */
 	public long getStartLine()
@@ -125,7 +124,8 @@ public class ConditionalExpression  extends MethodConditionalStateHandler
 		 return retVal;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.expression.IConditionalExpression#getStartPosition()
 	 */
 	public long getStartPosition()
@@ -142,7 +142,8 @@ public class ConditionalExpression  extends MethodConditionalStateHandler
 		return retVal;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.expression.IConditionalExpression#initialize()
 	 */
 //	public void initialize()
@@ -150,7 +151,8 @@ public class ConditionalExpression  extends MethodConditionalStateHandler
 //		// No any code in C++
 //	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.expression.IConditionalExpression#processToken(org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ITokenDescriptor, java.lang.String)
 	 */
 	public void processToken(ITokenDescriptor pToken, String language)
@@ -184,7 +186,8 @@ public class ConditionalExpression  extends MethodConditionalStateHandler
 		}
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.expression.IConditionalExpression#writeAsXMI(org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.expression.InstanceRef, org.dom4j.Node, org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.expression.SymbolTable, org.netbeans.modules.uml.core.reverseengineering.reframework.IREClass, org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.IREClassLoader)
 	 */
 	public ETPairT<InstanceInformation,Node>  writeAsXMI(InstanceInformation pInfo, Node pParentNode,	SymbolTable symbolTable,IREClass pThisPtr, IREClassLoader pClassLoader)

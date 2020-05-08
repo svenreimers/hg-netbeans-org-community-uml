@@ -51,21 +51,16 @@ import org.dom4j.Document;
 import org.dom4j.Node;
 
 import org.netbeans.modules.uml.core.support.umlsupport.XMLManip;
-/**
- * <p>Title: </p>
- * <p>Description: </p>
- * <p>Copyright: Copyright (c) 2003</p>
- * <p>Company: </p>
- * @author not attributable
- * @version 1.0
- */
+
+
 
 public class PropertyElementXML extends PropertyElement implements IPropertyElementXML{
   public PropertyElementXML() {
     super();
   }
 
-  /**
+  
+/**
    * Save the element to a specified file as a xml node
    *
    * @return HRESULT
@@ -104,7 +99,8 @@ public class PropertyElementXML extends PropertyElement implements IPropertyElem
     return saved;
   }
 
-  /**
+  
+/**
    * Take the "|" delimited string and build a xpath query from it.
    *
    * @param path[in]		String to turn into a xpath query
@@ -159,7 +155,8 @@ public class PropertyElementXML extends PropertyElement implements IPropertyElem
     return xpath;
   }
 
-  /**
+  
+/**
    * Update this element.
    *
    * @param pNode[in]		The DOM node representing this element
@@ -192,7 +189,8 @@ public class PropertyElementXML extends PropertyElement implements IPropertyElem
 	}
   }
 
-  /**
+  
+/**
    * Create a DOM node from this property definition using the passed-in DOM node as the
    * parent.
    *
@@ -272,7 +270,8 @@ public class PropertyElementXML extends PropertyElement implements IPropertyElem
 	}
   }
 
-  /**
+  
+/**
    * Create a new DOM node in the xml.
    *
    * @param parentNode[in]		The DOM node that is to be the parent of the newly created
@@ -323,7 +322,8 @@ public class PropertyElementXML extends PropertyElement implements IPropertyElem
 	return retNode;
   }
 
-  /**
+  
+/**
    * Search the sub nodes of the passed-in DOM node looking for the node
    * that matches the heading.
    *
@@ -397,7 +397,8 @@ public class PropertyElementXML extends PropertyElement implements IPropertyElem
 	return retNode;
   }
 
-  /**
+  
+/**
    * Removes the xml node representing this impl.
    *
    * @return HRESULT

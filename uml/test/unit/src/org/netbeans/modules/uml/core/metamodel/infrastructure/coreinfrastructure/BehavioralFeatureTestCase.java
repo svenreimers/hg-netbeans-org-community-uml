@@ -62,7 +62,8 @@ public class BehavioralFeatureTestCase extends AbstractUMLTestCase
     private IBehavioralFeature feat;
     private IClass clazz;
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see junit.framework.TestCase#setUp()
      */
     protected void setUp() throws Exception
@@ -75,7 +76,8 @@ public class BehavioralFeatureTestCase extends AbstractUMLTestCase
         feat = oper;
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see junit.framework.TestCase#tearDown()
      */
     protected void tearDown() throws Exception

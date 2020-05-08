@@ -50,10 +50,8 @@ import org.netbeans.modules.uml.core.coreapplication.ICoreProduct;
 import org.netbeans.modules.uml.core.eventframework.IEventDispatchController;
 import org.netbeans.modules.uml.core.support.umlsupport.ProductRetriever;
 
-/**
- * @author sumitabhk
- *
- */
+
+
 public class OperationSignatureChangeContextManager implements IOperationSignatureChangeContextManager
 {
 	private IOperation m_Operation = null;
@@ -67,7 +65,8 @@ public class OperationSignatureChangeContextManager implements IOperationSignatu
 		super();
 	}
 
-	/**
+	
+/**
 	 *
 	 * Gets the operation whose signature change is encapsulated by a context managed by this manager. 
 	 *
@@ -81,7 +80,8 @@ public class OperationSignatureChangeContextManager implements IOperationSignatu
 		return m_Operation;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Constructs a signature change context, setting the operation of the context,
 	 * and pushes that context onto the event dispatch controller. If this manager
@@ -116,7 +116,8 @@ public class OperationSignatureChangeContextManager implements IOperationSignatu
 		}
 	}
 
-	/**
+	
+/**
 	 *
 	 * Pops the context from the event dispatch controller.
 	 * This function can be called to force the context to be popped before the 
@@ -140,7 +141,8 @@ public class OperationSignatureChangeContextManager implements IOperationSignatu
 		m_Operation = null;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Get the dispatch controller on which the context will be pushed and popped.
 	 *
@@ -160,7 +162,8 @@ public class OperationSignatureChangeContextManager implements IOperationSignatu
 		return retObj;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Each context pushed must have a name. We want this name to be unique so that
 	 * the correct context is popped from the controller. The terms push and pop are
@@ -191,7 +194,8 @@ public class OperationSignatureChangeContextManager implements IOperationSignatu
 		return retName;
 	}
 
-	/**
+	
+/**
 	 *
 	 * The destructor ensures that any current context is popped.
 	 *

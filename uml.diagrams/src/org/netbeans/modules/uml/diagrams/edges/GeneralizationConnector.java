@@ -48,10 +48,8 @@ import org.netbeans.api.visual.anchor.AnchorShape;
 import org.netbeans.api.visual.anchor.PointShape;
 import org.netbeans.api.visual.widget.Scene;
 
-/**
- *
- * @author treyspiva
- */
+
+
 public class GeneralizationConnector extends AbstractUMLConnectionWidget
 {
     public GeneralizationConnector(Scene scene)

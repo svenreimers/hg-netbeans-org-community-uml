@@ -45,20 +45,20 @@
 
 package org.netbeans.test.umllib.exceptions;
 
-/**
- * example: can be thrown on attemp to 
- * @author psb
- */
+
+
 public class UnexpectedMenuItemStatusException extends UMLCommonException {
     
-    /**
+    
+/**
      * Creates a new instance of UnexpectedMenuItemStatusException
      * @param message 
      */
     public UnexpectedMenuItemStatusException(String message) {
         super(message);
     }
-    /**
+    
+/**
      * Creates a new instance of UnexpectedMenuItemStatusException
      * @param message 
      * @param st 
@@ -67,7 +67,8 @@ public class UnexpectedMenuItemStatusException extends UMLCommonException {
         super(message);
         status=st;
     }
-    /**
+    
+/**
      * Creates a new instance of UnexpectedMenuItemStatusException
      * @param message 
      * @param mn 
@@ -76,7 +77,8 @@ public class UnexpectedMenuItemStatusException extends UMLCommonException {
         super(message);
         type=mn;
     }
-    /**
+    
+/**
      * Creates a new instance of UnexpectedMenuItemStatusException
      * @param message 
      * @param st 
@@ -87,7 +89,8 @@ public class UnexpectedMenuItemStatusException extends UMLCommonException {
         status=st;
         type=mn;
     }
-    /**
+    
+/**
      * Creates a new instance of UnexpectedMenuItemStatusException
      * @param message 
      * @param st 
@@ -105,7 +108,8 @@ public class UnexpectedMenuItemStatusException extends UMLCommonException {
     private MenuType type=MenuType.UNKNOWN;
     private int id;
     
-    /**
+    
+/**
      * 
      * @return 
      */
@@ -113,7 +117,8 @@ public class UnexpectedMenuItemStatusException extends UMLCommonException {
     {
          return status;
     }
-    /**
+    
+/**
      * 
      * @return 
      */
@@ -121,7 +126,8 @@ public class UnexpectedMenuItemStatusException extends UMLCommonException {
     {
          return type;
     }
-    /**
+    
+/**
      * 
      * @return 
      */
@@ -130,7 +136,8 @@ public class UnexpectedMenuItemStatusException extends UMLCommonException {
          return id;
     }
     
-     /**
+     
+/**
      * Status for popup or menu items
      */
     static public enum Status
@@ -143,7 +150,8 @@ public class UnexpectedMenuItemStatusException extends UMLCommonException {
                 
         private String description="";
         
-        /**
+        
+/**
          * 
          * @param desc 
          */
@@ -157,7 +165,8 @@ public class UnexpectedMenuItemStatusException extends UMLCommonException {
         }
         
     }
-     /**
+     
+/**
      * MenuType
      */
     static public enum MenuType
@@ -169,7 +178,8 @@ public class UnexpectedMenuItemStatusException extends UMLCommonException {
                 
         private String description="";
         
-        /**
+        
+/**
          * 
          * @param desc 
          */
@@ -182,7 +192,8 @@ public class UnexpectedMenuItemStatusException extends UMLCommonException {
             description=name();
         }
         
-        /**
+        
+/**
          * 
          * @param dsc 
          * @return 
@@ -193,7 +204,8 @@ public class UnexpectedMenuItemStatusException extends UMLCommonException {
             ret.description=dsc;
             return ret;
         }
-        /**
+        
+/**
          * 
          * @param dsc 
          * @return 
@@ -204,7 +216,8 @@ public class UnexpectedMenuItemStatusException extends UMLCommonException {
             ret.description=dsc;
             return ret;
         }
-        /**
+        
+/**
          * 
          * @param dsc 
          * @return 

@@ -98,11 +98,8 @@ import org.openide.util.NbBundle;
 import org.openide.util.NbPreferences;
 import org.openide.util.Utilities;
 
-/**
- * The diagram manager is used to manage the opening and closing of diagrams in
- * the platform that contains the environment.
- *  * @author Trey Spiva
- */
+
+
 @org.openide.util.lookup.ServiceProvider(service=org.netbeans.modules.uml.ui.support.applicationmanager.IProductDiagramManager.class)
 public class UMLDiagramManager 
       implements IProductDiagramManager, INewUMLFileTemplates
@@ -110,7 +107,8 @@ public class UMLDiagramManager
     private HashMap <String, UMLDiagramTopComponent> m_OpenDiagrams = new HashMap<String, UMLDiagramTopComponent>();
     private IDiagram m_CurrentDiagram = null;    
     
-    /**
+    
+/**
      * Create a new diagram manager.
      */
     public UMLDiagramManager()
@@ -118,7 +116,8 @@ public class UMLDiagramManager
         super();
     }
     
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.applicationmanager.IProductDiagramManager#openDiagram(java.lang.String, boolean, org.netbeans.modules.uml.ui.support.applicationmanager.IDiagramCallback)
     */
     public IDiagram openDiagram(String sTOMFilename,
@@ -158,7 +157,8 @@ public class UMLDiagramManager
         return retVal;
     }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.applicationmanager.IProductDiagramManager#openDiagram2(org.netbeans.modules.uml.core.metamodel.diagrams.IProxyDiagram, boolean, org.netbeans.modules.uml.ui.support.applicationmanager.IDiagramCallback)
     */
     public IDiagram openDiagram2(IProxyDiagram proxyDiagram,
@@ -169,7 +169,8 @@ public class UMLDiagramManager
         return openDiagram(proxyDiagram.getFilename(), bMaximized, null);
     }
     
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.applicationmanager.IProductDiagramManager#closeDiagram(java.lang.String)
     */
     public long closeDiagram(String sTOMFilename)
@@ -183,7 +184,8 @@ public class UMLDiagramManager
         return 0;
     }
     
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.applicationmanager.IProductDiagramManager#closeDiagram2(org.netbeans.modules.uml.core.metamodel.diagrams.IDiagram)
     */
     public long closeDiagram2(IDiagram diagram)
@@ -192,7 +194,8 @@ public class UMLDiagramManager
         return 0;
     }
     
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.applicationmanager.IProductDiagramManager#closeDiagram3(org.netbeans.modules.uml.core.metamodel.diagrams.IProxyDiagram)
     */
     public long closeDiagram3(IProxyDiagram diagram)
@@ -201,7 +204,8 @@ public class UMLDiagramManager
         return 0;
     }
     
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.applicationmanager.IProductDiagramManager#newDiagramDialog(org.netbeans.modules.uml.core.metamodel.core.foundation.INamespace, int, int, org.netbeans.modules.uml.ui.support.applicationmanager.IDiagramCallback)
     */
     public IDiagram newDiagramDialog(final INamespace pNamespace,
@@ -221,7 +225,8 @@ public class UMLDiagramManager
         return dia;
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.ui.support.applicationmanager.IProductDiagramManager#raiseWindow(org.netbeans.modules.uml.core.metamodel.diagrams.IDiagram)
      */
     public long raiseWindow(IDiagram diagram)
@@ -250,7 +255,8 @@ public class UMLDiagramManager
         return 0;
     }
     
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.applicationmanager.IProductDiagramManager#getCurrentDiagram()
     */
     public IDiagram getCurrentDiagram()
@@ -259,7 +265,8 @@ public class UMLDiagramManager
         return m_CurrentDiagram;
     }
     
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.applicationmanager.IProductDiagramManager#getOpenDiagram(java.lang.String)
     */
     public IDiagram getOpenDiagram(String sTOMFilename)
@@ -278,7 +285,8 @@ public class UMLDiagramManager
         return retrieveDiagram(sTOMFilename);
     }
     
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.applicationmanager.IProductDiagramManager#createDiagram(int, org.netbeans.modules.uml.core.metamodel.core.foundation.INamespace, java.lang.String, org.netbeans.modules.uml.ui.support.applicationmanager.IDiagramCallback)
     */
     public IDiagram createDiagram(int diagramKind,
@@ -301,7 +309,8 @@ public class UMLDiagramManager
         return retDia;
     }
     
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.applicationmanager.IProductDiagramManager#getOpenDiagrams()
     */
     public ETList<IProxyDiagram> getOpenDiagrams()
@@ -323,7 +332,8 @@ public class UMLDiagramManager
         return retVal;
     }
     
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.applicationmanager.IProductDiagramManager#minimizeDiagram(java.lang.String, boolean)
     */
     public long minimizeDiagram(String sTOMFilename, boolean bMinimize)
@@ -332,7 +342,8 @@ public class UMLDiagramManager
         return 0;
     }
     
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.applicationmanager.IProductDiagramManager#minimizeDiagram2(org.netbeans.modules.uml.core.metamodel.diagrams.IDiagram, boolean)
     */
     public long minimizeDiagram2(IDiagram pDiagram, boolean bMinimize)
@@ -341,7 +352,8 @@ public class UMLDiagramManager
         return 0;
     }
     
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.applicationmanager.IProductDiagramManager#minimizeDiagram3(org.netbeans.modules.uml.core.metamodel.diagrams.IProxyDiagram, boolean)
     */
     public long minimizeDiagram3(IProxyDiagram pProxyDiagram, boolean bMinimize)
@@ -693,7 +705,7 @@ public class UMLDiagramManager
         details.setDiagramKind(defaultKind);
         details.setAvailableDiagramKinds(selectableKinds);
         
-        //Jyothi:
+        
         WizardDescriptor.Iterator iterator = new NewUMLDiagWizardIterator();
         
         @SuppressWarnings("unchecked")
@@ -821,7 +833,8 @@ public class UMLDiagramManager
         }
     }
     
-    /**
+    
+/**
      * Searches all of the open diagram editor for the one that maps to the
      * specified diagram.
      *
@@ -835,7 +848,8 @@ public class UMLDiagramManager
         return findTopComponent(diagram);
     }
     
-    /**
+    
+/**
      * Searches all of the open diagram editor for the one that maps to the
      * specified diagram.
      *
@@ -953,7 +967,8 @@ public class UMLDiagramManager
 //      }
 //   }
     
-    /**
+    
+/**
      * A helper class used to find a to open a specific component group.  This
      * class is needed because the WindowsManager.findTopComponentGroup method can only
      * be called from the AWT event thread.  Therefore, when ever it is needed

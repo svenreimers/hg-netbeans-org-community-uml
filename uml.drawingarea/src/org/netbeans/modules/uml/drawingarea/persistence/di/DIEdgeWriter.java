@@ -46,10 +46,8 @@ import java.util.HashMap;
 import org.netbeans.modules.uml.drawingarea.persistence.EdgeWriter;
 import org.netbeans.modules.uml.drawingarea.persistence.util.XMIConstants;
 
-/**
- *
- * @author jyothi
- */
+
+
 public class DIEdgeWriter extends EdgeWriter {
 
     public DIEdgeWriter(BufferedWriter writer) {

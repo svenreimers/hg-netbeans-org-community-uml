@@ -47,6 +47,7 @@ package org.netbeans.modules.uml.core.metamodel.common.commonactivities;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.BaseElement;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.FactoryRetriever;
 import org.netbeans.modules.uml.core.AbstractUMLTestCase;
+
 /**
  * Test cases for ComplexActivityGroup.
  */
@@ -59,7 +60,8 @@ public class ComplexActivityGroupTestCase extends AbstractUMLTestCase
 
     private IComplexActivityGroup group;
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see junit.framework.TestCase#setUp()
      */
     protected void setUp() throws Exception
@@ -70,7 +72,8 @@ public class ComplexActivityGroupTestCase extends AbstractUMLTestCase
         project.addElement(group);
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see junit.framework.TestCase#tearDown()
      */
     protected void tearDown() throws Exception

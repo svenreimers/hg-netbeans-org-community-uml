@@ -148,13 +148,15 @@ public class Project extends Model implements IProject, IElementModifiedEventsSi
     private ETList<IElementImport> m_ElementImports = new ETArrayList<IElementImport>();
     private ETList<IPackageImport> m_PackageImports = new ETArrayList<IPackageImport>();
     private boolean init = false;
-    /** The synchronization lock used only for methods creating listeners
+    
+/** The synchronization lock used only for methods creating listeners
      * objects. It is static and shared among all DataObjects.
      */
     private static final Object listenersMethodLock = new Object();
 
 
-	/**
+	
+/**
 	 * 
 	 */
 	public Project() 
@@ -168,7 +170,8 @@ public class Project extends Model implements IProject, IElementModifiedEventsSi
 		m_ExtManager = null;		
 	}
 	
-	/**
+	
+/**
 	 * Retrieves the document that holds the data of the project.
 	*/
     @Override
@@ -192,7 +195,8 @@ public class Project extends Model implements IProject, IElementModifiedEventsSi
 		establishElementDisposal();
 	}
 	
-   /**
+   
+/**
 	*	 This call will establish the "topLevel" stereotype on this project. Here
 	*	 is the meaning of the "topLevel" stereotype, pulled from the UML1.4 spec:
 	*
@@ -224,7 +228,8 @@ public class Project extends Model implements IProject, IElementModifiedEventsSi
       setDirty(true);
    }
    
-   /**
+   
+/**
 	* Puts in the XML attributes specific to Element into the passed in node.
 	*
 	* @param node[in] the node to inject the XML attributes into.
@@ -240,7 +245,8 @@ public class Project extends Model implements IProject, IElementModifiedEventsSi
 		XMLManip.setAttributeValue(node,"neverSavedBefore","true");
    }
    
-   /**
+   
+/**
     *
     * Saves this project to the specified file.
     *
@@ -295,7 +301,8 @@ public class Project extends Model implements IProject, IElementModifiedEventsSi
         }		
    }
    
-	/**
+	
+/**
 	 * Injects all the necessary XMI nodes into the document.
 	 */
 	public void establishXMIHeaderInfo()
@@ -318,7 +325,7 @@ public class Project extends Model implements IProject, IElementModifiedEventsSi
                 fragment = StringUtilities.replaceSubString(fragment, toReplace,
                     dtdLoc);
                     
-                // AZTEC: TODO: Fix this so that XML fragments that reference
+                
                 // DTDs parse without validation. Currently we have to comment
                 // out DTD references/declarations.
                 m_Doc = XMLManip.loadXML(fragment, false);
@@ -330,7 +337,8 @@ public class Project extends Model implements IProject, IElementModifiedEventsSi
         }
 	}
 	
-	/**
+	
+/**
 	 *
 	 * Returns whether or not this project needs to be saved or not. This will
 	 * return a true value if the Project itself is dirty or whether or not
@@ -341,7 +349,8 @@ public class Project extends Model implements IProject, IElementModifiedEventsSi
 		return (m_IsDirty || m_ChildrenDirty);
 	}
 	
-	/**
+	
+/**
 	 * Sets the dirty flag on the project.  If the dirty flag is true, then
 	 * this project needs to be saved.
 	 *
@@ -358,7 +367,8 @@ public class Project extends Model implements IProject, IElementModifiedEventsSi
             m_IsDirty = isDirty;
         }
 
-	/**
+	
+/**
 	 * Gets the directory where this project will be saved to
 	 */
 	public String getBaseDirectory()
@@ -380,7 +390,8 @@ public class Project extends Model implements IProject, IElementModifiedEventsSi
             return baseDir;
         }
 	
-	/**
+	
+/**
 	 *	Retrieves the file name that this project will be save to if save
 	 *	was called without specifying a path.
 	 */
@@ -395,7 +406,8 @@ public class Project extends Model implements IProject, IElementModifiedEventsSi
 		return curFile;
 	}
 	
-	/**
+	
+/**
 	 *	Sets the file name where this project will be saved to.
 	 *  @param fileName -  the name of the file.
 	 */
@@ -422,7 +434,8 @@ public class Project extends Model implements IProject, IElementModifiedEventsSi
 		}
 	}
 	
-	/**
+	
+/**
 	 *
 	 * Queries the PreferenceManager to determine what packages that should
 	 * be imported into this Project.
@@ -436,7 +449,7 @@ public class Project extends Model implements IProject, IElementModifiedEventsSi
 			establishOldDefaultPackageImports(); 
 		}
 		IPreferenceAccessor pref = PreferenceAccessor.instance();
-                //kris richards - "DefaultMode" pref expunged. Set to "PSK_IMPLEMENTATION".
+                
 		String modeName = "PSK_IMPLEMENTATION";
 //                String modeName = "Implementation";
 		XMLManip.setAttributeValue(m_Node,"mode",modeName);
@@ -453,7 +466,8 @@ public class Project extends Model implements IProject, IElementModifiedEventsSi
 		}
 	}
 	
-	/**
+	
+/**
 	 *
 	 * Pulls in the references to any default packages that the user has configured
 	 * the Project to use.
@@ -526,7 +540,8 @@ public class Project extends Model implements IProject, IElementModifiedEventsSi
 		}		
 	}
 	
-	/**
+	
+/**
 	 *
 	 * Handles all the necessary file handling associated with nodes that
 	 * have already been versioned or need to be versioned.
@@ -549,7 +564,8 @@ public class Project extends Model implements IProject, IElementModifiedEventsSi
                 StructureConstants.IDR_XML_VER_ELEMENT));
 	}
 	
-	/**
+	
+/**
 	* Removes any nodes in the DOM tree that have the "__discard_ " attribute set to "true". 
 	* Currently, the only mechanism that utilizes this attribute is the default package
 	* import mechanism. The default packages, such as native C++ or Java types, are read
@@ -587,7 +603,8 @@ public class Project extends Model implements IProject, IElementModifiedEventsSi
 	}
 	
 	
-	/**
+	
+/**
 	 * This method makes sure that the DTD file used for validation purposes has been created,
 	 * and that the current content of the project is properly marked with the DTD information.
 	 *
@@ -613,7 +630,8 @@ public class Project extends Model implements IProject, IElementModifiedEventsSi
 		}         
 	}
 	
-	/**
+	
+/**
 	 * Responsible for making sure that the current project contents is wrapped
 	 * in an XMI header that has the DTD specification in it.
 	 */
@@ -638,7 +656,8 @@ public class Project extends Model implements IProject, IElementModifiedEventsSi
 		}
 	}
 	
-	/**
+	
+/**
 	 * Makes sure that the required DTD file exists in the location of the 
 	 * project file. If the DTD file does not exist at that location, it will
 	 * be created.
@@ -653,12 +672,8 @@ public class Project extends Model implements IProject, IElementModifiedEventsSi
 		return UMLXMLManip.verifyDTDExistence( fileName );
 	}
 	
-	/**
-	 * Loads the default import elements assigned to every new project. 
-	 * This is generally called right after a Save operation has been done.
-	 * We need to remove any PackageImport element that was used to import
-	 * the default package imports, and then load them again.a
-	 */
+	
+
 	public boolean loadDefaultImports()
 	{
 		boolean flag = false;
@@ -726,7 +741,8 @@ public class Project extends Model implements IProject, IElementModifiedEventsSi
 		return flag;
 	}
 	
-	/**
+	
+/**
 	 *
 	 * Removes a PackageImport object from this Project that matches the
 	 * passed in name of the Package being imported.
@@ -755,7 +771,8 @@ public class Project extends Model implements IProject, IElementModifiedEventsSi
 		}
 	}
 	
-	/**
+	
+/**
 	 *
 	 * Retrieves the location of the DTD file to be used, even if temporary.
 	 *
@@ -782,7 +799,8 @@ public class Project extends Model implements IProject, IElementModifiedEventsSi
 		return dtdLoc;
 	}
 	
-	/**
+	
+/**
 	 *
 	 * Called to prepare all the files associated with this Project
 	 * for a save. Essentially saves everything to temporary files.
@@ -797,7 +815,8 @@ public class Project extends Model implements IProject, IElementModifiedEventsSi
 	 	}
 	 }
 	
-	/**
+	
+/**
 	 *
 	 * Commits this Project and all dependent files
 	 */
@@ -805,7 +824,8 @@ public class Project extends Model implements IProject, IElementModifiedEventsSi
 	{		
 	}
 	
-	/**
+	
+/**
 	 *
 	 * Retrieves a flag that indicates whether or not this Project has been
 	 * modified or not.
@@ -820,7 +840,8 @@ public class Project extends Model implements IProject, IElementModifiedEventsSi
 	
     ETArrayList < IElement > mRemoveList = new ETArrayList < IElement >();
     
-    /**
+    
+/**
      * Add an element that must be removed before project is saved.
      */
     public void addRemoveOnSave(IElement element)
@@ -828,7 +849,8 @@ public class Project extends Model implements IProject, IElementModifiedEventsSi
        mRemoveList.add(element);
     }
     
-	/**
+	
+/**
 	 * Removes all elements that contain the "removeOnSave" xml attribute.
 	 * To date, this will be any element that represents a presentation element.
 	 *
@@ -943,7 +965,8 @@ public class Project extends Model implements IProject, IElementModifiedEventsSi
       }
 	}
 	
-	/**
+	
+/**
 	 *
 	 * Retrieves the name of the mode that this Project is in.
 	 *
@@ -954,7 +977,8 @@ public class Project extends Model implements IProject, IElementModifiedEventsSi
 		return XMLManip.getAttributeValue(m_Node, "mode" );
 	}
 	
-	/**
+	
+/**
 	 *
 	 * Sets the name of the mode that this Project is in.
 	 *
@@ -1014,7 +1038,8 @@ public class Project extends Model implements IProject, IElementModifiedEventsSi
 		}		
 	}
 	
-	/**
+	
+/**
 	 *
 	 * Retrieves the name of the language that is being used by default during
 	 * Implementation mode.
@@ -1026,7 +1051,8 @@ public class Project extends Model implements IProject, IElementModifiedEventsSi
 		return XMLManip.getAttributeValue(m_Node, "defaultLanguage");
 	}
 	
-	/**
+	
+/**
 	 *
 	 * Retrieves of the language that is being used by default during
 	 * Implementation mode.
@@ -1053,7 +1079,8 @@ public class Project extends Model implements IProject, IElementModifiedEventsSi
 	}
 	
 
-	/**
+	
+/**
 	 *
 	 * Sets the language to be used during implementation mode.
 	 *
@@ -1084,7 +1111,8 @@ public class Project extends Model implements IProject, IElementModifiedEventsSi
 		}	
 	}
 	
-	/**
+	
+/**
 	 * Listens for element modify events on elements in this Project.
 	 */
 	public void initialize()
@@ -1116,7 +1144,8 @@ public class Project extends Model implements IProject, IElementModifiedEventsSi
   
         }
 	
-	/**
+	
+/**
 	 *
 	 * Revokes the element change sink from the dispatcher
 	 */
@@ -1148,7 +1177,8 @@ public class Project extends Model implements IProject, IElementModifiedEventsSi
         }
 	}
 	
-	/**
+	
+/**
 	 *
 	 * This Project is listening for any element modified's coming through on elements that it owns.
 	 * If the element is owned by this project, the dirty flag is set to true.
@@ -1161,7 +1191,8 @@ public class Project extends Model implements IProject, IElementModifiedEventsSi
 	}
 	
 	
-	/**
+	
+/**
 	 *
 	 * Checks to see if the passed in element is part of this Project.
 	 * If is is, the dirty flag of this Project is set to true.
@@ -1216,7 +1247,8 @@ public class Project extends Model implements IProject, IElementModifiedEventsSi
 		}
 	}
 	
-	/**
+	
+/**
 	 *
 	 * Sets the dirty flag of this project when the documentation of one of its element's is modified.
 	 *
@@ -1229,7 +1261,8 @@ public class Project extends Model implements IProject, IElementModifiedEventsSi
 	}
 	
 
-	/**
+	
+/**
 	 *
 	 * Retrieves the ElementDisposal object.
 	 *
@@ -1240,7 +1273,8 @@ public class Project extends Model implements IProject, IElementModifiedEventsSi
 		return m_Disposal;
 	}
 	
-	/**
+	
+/**
 	 *
 	 * Sets the ElementDisposal object on this Project
 	 *
@@ -1251,7 +1285,8 @@ public class Project extends Model implements IProject, IElementModifiedEventsSi
 		m_Disposal = disposal;
 	}
 	
-	/**
+	
+/**
 	 *
 	 * Creates and initializes the ElementDisposal object
 	 */
@@ -1263,7 +1298,8 @@ public class Project extends Model implements IProject, IElementModifiedEventsSi
 		}
 	}
 	
-	/**
+	
+/**
 	 *
 	 * Retrieves a string used to identify this Project in the users Source
 	 * Control Management tool
@@ -1275,7 +1311,8 @@ public class Project extends Model implements IProject, IElementModifiedEventsSi
 		return XMLManip.getAttributeValue( m_Node, "scmID" );
 	}
 	
-	/**
+	
+/**
 	 *
 	 * Sets the id that identifies this Project in the user's SCM tool.
 	 *
@@ -1311,7 +1348,8 @@ public class Project extends Model implements IProject, IElementModifiedEventsSi
 		setFileName(newVal);
 	}
 	
-	/**
+	
+/**
 	 * Extracts the passed in element, allowing for version control.
 	 *
 	 * @param element[in] The element to extract
@@ -1348,7 +1386,8 @@ public class Project extends Model implements IProject, IElementModifiedEventsSi
 		}
 	}
 	
-	/**
+	
+/**
 	 *
 	 * Retrieves the TypeManager associated with this Project.
 	 */
@@ -1357,7 +1396,8 @@ public class Project extends Model implements IProject, IElementModifiedEventsSi
 		return m_TypeManager;
 	}
 	
-	/**
+	
+/**
 	 *
 	 * Makes sure that this Project has an associated TypeManager that is
 	 * ready.
@@ -1389,7 +1429,8 @@ public class Project extends Model implements IProject, IElementModifiedEventsSi
 		}
 	}
 	
-	/**
+	
+/**
 	 *
 	 * Sets the name of this Project.
 	 *
@@ -1438,7 +1479,8 @@ public class Project extends Model implements IProject, IElementModifiedEventsSi
 		}			
 	}
 	
-	/**
+	
+/**
 	 *
 	 * Retrieves the corresponding IWSProject. This gives easier 
 	 * access to the save mechanism
@@ -1462,7 +1504,8 @@ public class Project extends Model implements IProject, IElementModifiedEventsSi
 		return wsProj;
 	}
 	
-	/**
+	
+/**
 	 *
 	 * Sends an urgent message to the Message service alerting the user that we
 	 * were unable to save the Project
@@ -1479,7 +1522,8 @@ public class Project extends Model implements IProject, IElementModifiedEventsSi
         mes.sendCriticalMessage(s);
     }
 
-	/**
+	
+/**
 	 *
 	 * Performs the delete of the passed in file. If the file does not exist,
 	 * this method returns a successfull status.
@@ -1510,7 +1554,8 @@ public class Project extends Model implements IProject, IElementModifiedEventsSi
 		return status;
 	}
 	
-	/**
+	
+/**
 	 *
 	 * Commits the temporary file that was created during the PreCommit
 	 * to the original file. 
@@ -1545,7 +1590,8 @@ public class Project extends Model implements IProject, IElementModifiedEventsSi
 //		return isSuccess;
 //	}
 	
-	/**
+	
+/**
 	 *
 	 * Performs the necessary clean up of the Project after a save has just occurred.
 	 *
@@ -1584,7 +1630,8 @@ public class Project extends Model implements IProject, IElementModifiedEventsSi
 		m_ChildrenDirty = false;
 	}								   
 	
-	/**
+	
+/**
 	 *
 	 * Cleans up all the version information associated with this Project 
 	 * node.
@@ -1616,7 +1663,8 @@ public class Project extends Model implements IProject, IElementModifiedEventsSi
 		establishDirtyState(ver);
 	}
 	
-	/**
+	
+/**
 	 * Validate the passed in values according to the Describe business rules.
 	 * See method for the rules.
 	 *	 
@@ -1648,7 +1696,8 @@ public class Project extends Model implements IProject, IElementModifiedEventsSi
 		return isValid;
 	}
 	
-	/**
+	
+/**
 	 *
 	 * Called during Save processing. Save directly to the model files (*.etd and *.ettm)
 	 */
@@ -1682,7 +1731,8 @@ public class Project extends Model implements IProject, IElementModifiedEventsSi
 		}
 	}
 		
-	/**
+	
+/**
 	 *
 	 * Called during the Save() processing
 	 */
@@ -1763,7 +1813,8 @@ public class Project extends Model implements IProject, IElementModifiedEventsSi
 		deInitialize();
 	}
 	
-	/**
+	
+/**
 	 *
 	 * Adds a location that should point at a .etd file that this project will
 	 * now reference. This new etd file will be used for type resolutions
@@ -1839,7 +1890,8 @@ public class Project extends Model implements IProject, IElementModifiedEventsSi
 		}
 	}
 	
-	/**
+	
+/**
 	 *
 	 * Removes the node reference at the location specified
 	 *
@@ -1889,7 +1941,8 @@ public class Project extends Model implements IProject, IElementModifiedEventsSi
 		}
 	}
 		
-	/**
+	
+/**
 	 *
 	 * Retrieves the collection of absolute locations to the libraries
 	 * this Project references
@@ -1928,7 +1981,8 @@ public class Project extends Model implements IProject, IElementModifiedEventsSi
 		return libs;
 	}
 	
-	/**
+	
+/**
 	 *
 	 * Retrieves the node of an existing reference library node
 	 *
@@ -1953,7 +2007,8 @@ public class Project extends Model implements IProject, IElementModifiedEventsSi
 		return node;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Determines whether or not the Project is in "Library" mode, which essentially just 
 	 * turns off Roundtrip temporarily.
@@ -2007,7 +2062,8 @@ public class Project extends Model implements IProject, IElementModifiedEventsSi
 		return retStr;		
 	}
 	
-	/**
+	
+/**
 	 *
 	 * Inserts the project at the passed in location into the namespace the project is
 	 * in.
@@ -2035,7 +2091,8 @@ public class Project extends Model implements IProject, IElementModifiedEventsSi
 		}
 	}
 	
-	/**
+	
+/**
 	 *
 	 * Called by the framework whenever the user clicks the "Save all" button. 
 	 * Project handles this event by unloading external elements that were loaded.
@@ -2067,7 +2124,8 @@ public class Project extends Model implements IProject, IElementModifiedEventsSi
 		}
 	}
 	
-	/**
+	
+/**
 	 *
 	 * Checks to see if an old default import is in the project.
 	 *
@@ -2090,7 +2148,8 @@ public class Project extends Model implements IProject, IElementModifiedEventsSi
 		return required;
 	}
 	
-	/**
+	
+/**
 	 *
 	 * This is here to support 6.03 Describe Developer projects. In Describe
 	 * Enterprise 6.0, we no longer inject these default package imports.
@@ -2154,7 +2213,8 @@ public class Project extends Model implements IProject, IElementModifiedEventsSi
 //		return isSuccess;
 //	}
 	
-	/**
+	
+/**
 	 * Sets / Gets the name of the file this project will be saved to.
 	*/
 	public String getFileName()
@@ -2168,7 +2228,8 @@ public class Project extends Model implements IProject, IElementModifiedEventsSi
 		return curFile;			
 	}
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IElementModifiedEventsSink#onElementPreModified(org.netbeans.modules.uml.core.metamodel.core.foundation.IVersionableElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onElementPreModified(IVersionableElement element, IResultCell cell)
@@ -2176,7 +2237,8 @@ public class Project extends Model implements IProject, IElementModifiedEventsSi
         //nothing to do
     }
 
-	/**
+	
+/**
 	 *
 	 * This Project is listening for any element modified's coming through on elements that it owns.
 	 * If the element is owned by this project, the dirty flag is set to true.
@@ -2192,7 +2254,8 @@ public class Project extends Model implements IProject, IElementModifiedEventsSi
 		establishDirtyState( element );
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IDocumentationModifiedEventsSink#onDocumentationPreModified(org.netbeans.modules.uml.core.metamodel.core.foundation.IElement, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onDocumentationPreModified(IElement element, String doc, IResultCell cell)
@@ -2200,7 +2263,8 @@ public class Project extends Model implements IProject, IElementModifiedEventsSi
     	//nothing to do
     }
 
-	/**
+	
+/**
 	 *
 	 * Sets the dirty flag of this project when the documentation of one of its element's is modified.
 	 *
@@ -2215,7 +2279,8 @@ public class Project extends Model implements IProject, IElementModifiedEventsSi
 		establishDirtyState( element );
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IElementLifeTimeEventsSink#onElementPreCreate(java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onElementPreCreate(String ElementType, IResultCell cell)
@@ -2223,7 +2288,8 @@ public class Project extends Model implements IProject, IElementModifiedEventsSi
         //nothing to do
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IElementLifeTimeEventsSink#onElementCreated(org.netbeans.modules.uml.core.metamodel.core.foundation.IVersionableElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onElementCreated(IVersionableElement element, IResultCell cell)
@@ -2231,7 +2297,8 @@ public class Project extends Model implements IProject, IElementModifiedEventsSi
         //nothing to do
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IElementLifeTimeEventsSink#onElementPreDelete(org.netbeans.modules.uml.core.metamodel.core.foundation.IVersionableElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onElementPreDelete(IVersionableElement element, IResultCell cell)
@@ -2239,7 +2306,8 @@ public class Project extends Model implements IProject, IElementModifiedEventsSi
         //nothing to do
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IElementLifeTimeEventsSink#onElementDeleted(org.netbeans.modules.uml.core.metamodel.core.foundation.IVersionableElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onElementDeleted(IVersionableElement element, IResultCell cell)
@@ -2247,7 +2315,8 @@ public class Project extends Model implements IProject, IElementModifiedEventsSi
 		establishDirtyState( element );
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IElementLifeTimeEventsSink#onElementPreDuplicated(org.netbeans.modules.uml.core.metamodel.core.foundation.IVersionableElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onElementPreDuplicated(IVersionableElement element, IResultCell cell)
@@ -2255,7 +2324,8 @@ public class Project extends Model implements IProject, IElementModifiedEventsSi
         //nothing to do
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IElementLifeTimeEventsSink#onElementDuplicated(org.netbeans.modules.uml.core.metamodel.core.foundation.IVersionableElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onElementDuplicated(IVersionableElement element, IResultCell cell)
@@ -2263,7 +2333,8 @@ public class Project extends Model implements IProject, IElementModifiedEventsSi
         //nothing to do
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.coreapplication.ICoreProductInitEventsSink#onCoreProductPreInit(org.netbeans.modules.uml.core.coreapplication.ICoreProduct, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onCoreProductPreInit(ICoreProduct pVal, IResultCell cell)
@@ -2271,7 +2342,8 @@ public class Project extends Model implements IProject, IElementModifiedEventsSi
         //nothing to do
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.coreapplication.ICoreProductInitEventsSink#onCoreProductInitialized(org.netbeans.modules.uml.core.coreapplication.ICoreProduct, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onCoreProductInitialized(ICoreProduct newVal, IResultCell cell)
@@ -2279,7 +2351,8 @@ public class Project extends Model implements IProject, IElementModifiedEventsSi
         //nothing to do
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.coreapplication.ICoreProductInitEventsSink#onCoreProductPreQuit(org.netbeans.modules.uml.core.coreapplication.ICoreProduct, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onCoreProductPreQuit(ICoreProduct pVal, IResultCell cell)
@@ -2287,7 +2360,8 @@ public class Project extends Model implements IProject, IElementModifiedEventsSi
         //nothing to do
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.coreapplication.ICoreProductInitEventsSink#onCoreProductPreSaved(org.netbeans.modules.uml.core.coreapplication.ICoreProduct, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onCoreProductPreSaved(ICoreProduct pVal, IResultCell cell)
@@ -2295,7 +2369,8 @@ public class Project extends Model implements IProject, IElementModifiedEventsSi
         //nothing to do
     }
 
-	/**
+	
+/**
 	 *
 	 * Called by the framework whenever the user clicks the "Save all" button. 
 	 * Project handles this event by unloading external elements that were loaded.
@@ -2328,7 +2403,8 @@ public class Project extends Model implements IProject, IElementModifiedEventsSi
         }
     }
 
-   /**
+   
+/**
     * Sets the version number on this project, retrieved from calling the Application's
     * get_ApplicationVersion() method.
     * 
@@ -2352,7 +2428,8 @@ public class Project extends Model implements IProject, IElementModifiedEventsSi
       }
    }   
    
-   /**
+   
+/**
      * Sets the source roots that is associated with the project.
      */
     public void setAssociatedProjectSourceRoots(IAssociatedProjectSourceRoots sourceRoots)
@@ -2360,7 +2437,8 @@ public class Project extends Model implements IProject, IElementModifiedEventsSi
       mSourceRoots = sourceRoots;
     }
     
-    /**
+    
+/**
      * Retrieve the source roots associated with the project.
      */
     public IAssociatedProjectSourceRoots getAssociatedProjectSourceRoots()
@@ -2372,7 +2450,8 @@ public class Project extends Model implements IProject, IElementModifiedEventsSi
     // Property change support
     //
 
-    /** Add a property change listener.
+    
+/** Add a property change listener.
      * @param l the listener to add
     */
     public void addPropertyChangeListener (PropertyChangeListener l) {
@@ -2383,7 +2462,8 @@ public class Project extends Model implements IProject, IElementModifiedEventsSi
         changeSupport.addPropertyChangeListener(l);
     }
 
-    /** Remove a property change listener.
+    
+/** Remove a property change listener.
      * @param l the listener to remove
     */
     public void removePropertyChangeListener (PropertyChangeListener l) {
@@ -2391,7 +2471,8 @@ public class Project extends Model implements IProject, IElementModifiedEventsSi
             changeSupport.removePropertyChangeListener(l);
     }
 
-    /** Fires property change notification to all listeners registered via
+    
+/** Fires property change notification to all listeners registered via
     * {@link #addPropertyChangeListener}.
     *
     * @param name of property

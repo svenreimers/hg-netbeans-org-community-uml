@@ -79,7 +79,8 @@ public class Attribute extends StructuralFeature
         m_ParameterableAggregate.setAggregator(this);
     }
     
-    /**
+    
+/**
      * property DerivationRule
      */
     public IExpression getDerivationRule()
@@ -96,7 +97,8 @@ public class Attribute extends StructuralFeature
         addChild("UML:Attribute.derivationRule",query,value);
     }
     
-    /**
+    
+/**
      * Retrieves the default expression used for this Attribute initializer.
      */
     public IExpression getDefault()
@@ -150,7 +152,8 @@ public class Attribute extends StructuralFeature
         return exp;
     }
     
-    /**
+    
+/**
      * Sets the default expression used for this Attribute initializer.
      *
      * @param exp[in]
@@ -181,14 +184,16 @@ public class Attribute extends StructuralFeature
         }
     }
     
-    /**
+    
+/**
      * property IsDerived
      */
     public boolean getIsDerived()
     {
         return getBooleanAttributeValue("isDerived",false);
     }
-    /**
+    
+/**
      * Sets the default expression used for this Attribute initializer.
      */
     public void setIsDerived(boolean newValue)
@@ -218,7 +223,8 @@ public class Attribute extends StructuralFeature
         }
     }
     
-    /**
+    
+/**
      * property AssociationEnd
      */
     public IAssociationEnd getAssociationEnd()
@@ -251,7 +257,8 @@ public class Attribute extends StructuralFeature
         }
         );
     }
-    /**
+    
+/**
      * Retrieves the Body property of the Expression that makes up this
      * Attributes default intializer.
      */
@@ -265,7 +272,8 @@ public class Attribute extends StructuralFeature
         return retVal;
     }
     
-    /**
+    
+/**
      * Sets the body property of the default expression. If the expression
      * has not been established yet, it is created.
      *
@@ -291,7 +299,8 @@ public class Attribute extends StructuralFeature
     }
     
     
-    /**
+    
+/**
      * Retrieves the body and language properties of the default expression.
      *
      */
@@ -308,7 +317,8 @@ public class Attribute extends StructuralFeature
         return new ETPairT<String, String>(lang, body);
     }
     
-    /**
+    
+/**
      * Sets the properties of this Attribute's default expression, making up the
      * initializer. If the Expression hasn't been established, it will be after this
      * call.
@@ -332,7 +342,8 @@ public class Attribute extends StructuralFeature
             }
         }
     }
-    /**
+    
+/**
      * Creates an expression to be used as the default property on this Attribute.
      */
     private IExpression establishDefault()
@@ -342,7 +353,8 @@ public class Attribute extends StructuralFeature
         return ret.createType("Expression");
     }
     
-    /**
+    
+/**
      * Simply adds the passed in Expression to this element.
      *
      * @param exp[in] The Expression to add
@@ -353,7 +365,8 @@ public class Attribute extends StructuralFeature
         super.addChild("UML:Attribute.default", query, exp);
     }
     
-    /**
+    
+/**
      * Determines whether or not this attribute is modified with the VB "WithEvents"
      * construct
      */
@@ -367,7 +380,8 @@ public class Attribute extends StructuralFeature
         super.setBooleanAttributeValue("isWithEvents",newVal);
     }
     
-    /**
+    
+/**
      * Indicates whether or not the attribute instance is created on the heap or not upon the
      * instanciation of the featuring classifier.
      */
@@ -381,7 +395,8 @@ public class Attribute extends StructuralFeature
         super.setBooleanAttributeValue("heapBased",newVal);
     }
     
-    /**
+    
+/**
      * Indicates whether or not this attribute maps to a primary key column in a
      * database
      */
@@ -417,7 +432,8 @@ public class Attribute extends StructuralFeature
         }
     }
     
-    /**
+    
+/**
      * Establishes the appropriate XML elements for this UML type.
      *
      * [in] The document where this element will reside
@@ -492,7 +508,8 @@ public class Attribute extends StructuralFeature
         m_ParameterableAggregate.setTypeConstraint(value);
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IExpressionListener#onPreBodyModified(org.netbeans.modules.uml.core.metamodel.core.foundation.IExpression, java.lang.String)
      */
     public boolean onPreBodyModified(IExpression exp, String proposedValue)
@@ -512,7 +529,8 @@ public class Attribute extends StructuralFeature
         return proceed;
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IExpressionListener#onBodyModified(org.netbeans.modules.uml.core.metamodel.core.foundation.IExpression)
      */
     public void onBodyModified(IExpression exp)
@@ -529,7 +547,8 @@ public class Attribute extends StructuralFeature
         }
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IExpressionListener#onPreLanguageModified(org.netbeans.modules.uml.core.metamodel.core.foundation.IExpression, java.lang.String)
      */
     public boolean onPreLanguageModified(IExpression exp, String proposedValue)
@@ -549,7 +568,8 @@ public class Attribute extends StructuralFeature
         return proceed;
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IExpressionListener#onLanguageModified(org.netbeans.modules.uml.core.metamodel.core.foundation.IExpression)
      */
     public void onLanguageModified(IExpression exp)

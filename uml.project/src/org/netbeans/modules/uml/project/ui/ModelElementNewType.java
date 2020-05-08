@@ -42,27 +42,22 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * ModelElementNewType.java
- *
- * Created on January 19, 2005, 2:29 PM
- */
+
+
 
 package org.netbeans.modules.uml.project.ui;
 
 import java.io.IOException;
 import org.openide.util.datatransfer.NewType;
 
-/**
- * Describes a modeling meta data type that can be created.
- *
- * @author  Trey Spiva
- */
+
+
 public class ModelElementNewType extends NewType
 {
    private String mMetaName = "";
 
-   /**
+   
+/**
     * Creates a new ModelElementNewType.  The NewType instance will be able to
     * create a new Modeling Meta Data instance for the specified type.
     *
@@ -73,7 +68,8 @@ public class ModelElementNewType extends NewType
       mMetaName = name;
    }
    
-   /**
+   
+/**
     * Display name for the creation action. This should be presented as an 
     * item in a menu.
     */
@@ -82,7 +78,8 @@ public class ModelElementNewType extends NewType
       return mMetaName;
    }
    
-   /**
+   
+/**
     * Create the object.  The type that is created is model element meta datatype.
     */
    public void create() throws IOException

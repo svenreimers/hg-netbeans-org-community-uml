@@ -43,11 +43,8 @@
  */
 
 
-/*
- *
- * Created on Jul 3, 2003
- * @author Trey Spiva
- */
+
+
 package org.netbeans.modules.uml.ui.swing.projecttree;
 
 import java.util.ArrayList;
@@ -57,17 +54,8 @@ import javax.swing.JTree;
 import javax.swing.tree.TreeModel;
 import javax.swing.tree.TreePath;
 
-/**
- * This class preserves the state of the tree when a refresh is done.  As much as
- * possible we try to restore the tree back to it's original state.
- *
- * <b>Note:</b> It would be <i>very</i> bad if multiple perservations of the
- * same tree to be distroy the previous preservation.  So the owther preservation
- * will take precidence.  PreserveTreeState must be a member of the tree control
- * order to perserve multiple states correctly.
- * 
- * @author Trey Spiva
- */
+
+
 public class PreserveTreeState
 {
    private JTree      m_ProjectTree   = null;
@@ -95,7 +83,8 @@ public class PreserveTreeState
       }
    }
 
-   /**
+   
+/**
     * @param curNode
     */
    protected void addToExpandedNodes(int curNode)
@@ -117,7 +106,8 @@ public class PreserveTreeState
       decrement();  
    }
    
-   /**
+   
+/**
     * Goes through te m_ExpandedNodes and finds the same item in the new tree.  
     * When found the item is expanded.
     */
@@ -133,7 +123,8 @@ public class PreserveTreeState
       }
    }
 
-   /**
+   
+/**
     * Expands a specific tree item.
     * 
     * @param path The path to the item to expand.
@@ -171,7 +162,8 @@ public class PreserveTreeState
 		}
    }
 
-   /**
+   
+/**
     * @param foundObject
     * @param object
     * @param model
@@ -205,7 +197,8 @@ public class PreserveTreeState
       return retVal;
    }
 
-   /**
+   
+/**
     * Retrieves the tree control that has its state perserved.
     * 
     * @return The tree control.
@@ -215,7 +208,8 @@ public class PreserveTreeState
       return m_ProjectTree;
    }
 
-   /**
+   
+/**
     * Sets the tree control that is to have its state perserved.
     * 
     * @param tree The tree control.
@@ -225,7 +219,8 @@ public class PreserveTreeState
       m_ProjectTree = tree;
    }
 
-   /**
+   
+/**
     * Retreives the number of instances of the tree perserver.  
     * @return
     */
@@ -234,7 +229,8 @@ public class PreserveTreeState
       return m_NumInstances == 1;
    }
 
-   /**
+   
+/**
     * @param i
     */
    public void increment()
@@ -242,7 +238,8 @@ public class PreserveTreeState
       m_NumInstances++;
    }
 
-   /**
+   
+/**
     * @param i
     */
    public void decrement()

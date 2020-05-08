@@ -52,10 +52,8 @@ import org.netbeans.modules.uml.diagrams.actions.RotateAction;
 import org.netbeans.modules.uml.drawingarea.view.DesignerScene;
 import org.openide.loaders.DataObject;
 
-/**
- *
- * @author thuy
- */
+
+
 public class RotateForkButtonModel implements ContextPaletteButtonModel
 {
     private Image image = null;

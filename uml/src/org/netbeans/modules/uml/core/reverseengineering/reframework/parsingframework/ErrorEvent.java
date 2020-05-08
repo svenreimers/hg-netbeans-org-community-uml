@@ -42,16 +42,12 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : ErrorEvent.java
- * Created on : Oct 23, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework;
 
-/**
- * @author Aztec
- */
+
+
 public class ErrorEvent implements IErrorEvent
 {
     String  m_Filename;
@@ -59,7 +55,8 @@ public class ErrorEvent implements IErrorEvent
     int     m_ColumnNumber;
     int     m_LineNumber;
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.IErrorEvent#getColumnNumber()
      */
     public int getColumnNumber()
@@ -67,7 +64,8 @@ public class ErrorEvent implements IErrorEvent
         return m_ColumnNumber;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.IErrorEvent#getErrorMessage()
      */
     public String getErrorMessage()
@@ -75,7 +73,8 @@ public class ErrorEvent implements IErrorEvent
         return m_ErrorMessage;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.IErrorEvent#getFilename()
      */
     public String getFilename()
@@ -83,9 +82,8 @@ public class ErrorEvent implements IErrorEvent
         return m_Filename;
     }
 
-    /* (non-Javadoc)
-     * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.IErrorEvent#getFormattedMessage()
-     */
+    
+
     public String getFormattedMessage()
     {
         StringBuffer errMsg = m_Filename != null? 
@@ -106,7 +104,8 @@ public class ErrorEvent implements IErrorEvent
         return errMsg.toString();
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.IErrorEvent#getLineNumber()
      */
     public int getLineNumber()
@@ -114,7 +113,8 @@ public class ErrorEvent implements IErrorEvent
         return m_LineNumber;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.IErrorEvent#setColumnNumber(int)
      */
     public void setColumnNumber(int colNum)
@@ -122,7 +122,8 @@ public class ErrorEvent implements IErrorEvent
         m_ColumnNumber = colNum;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.IErrorEvent#setErrorMessage(java.lang.String)
      */
     public void setErrorMessage(String message)
@@ -130,7 +131,8 @@ public class ErrorEvent implements IErrorEvent
         m_ErrorMessage = message;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.IErrorEvent#setFilename(java.lang.String)
      */
     public void setFilename(String fileName)
@@ -138,7 +140,8 @@ public class ErrorEvent implements IErrorEvent
         m_Filename = fileName;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.IErrorEvent#setLineNumber(int)
      */
     public void setLineNumber(int lnNum)

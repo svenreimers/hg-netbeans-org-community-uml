@@ -62,17 +62,16 @@ import org.openide.util.WeakListeners;
 import org.openide.util.actions.CallableSystemAction;
 import org.openide.util.actions.Presenter;
 
-/**
- *
- * @author treyspiva
- */
+
+
 public abstract class WidgetContextAction extends CallableSystemAction implements ContextAwareAction
 {
 
     //////////////////////////////////////////////////////////////////
     // ContextAwareAction Implementation
     
-    /** 
+    
+/** 
      * Implements <code>ContextAwareAction</code> interface method.
      *
      * Returns a delegate action that is associated with a specific lookup and
@@ -94,7 +93,8 @@ public abstract class WidgetContextAction extends CallableSystemAction implement
     //////////////////////////////////////////////////////////////////
     // CallableSystemAction Implementation
 
-    /**
+    
+/**
      * In the default implementation, calls {@link #performAction(Node[])}. 
      * 
      * @deprecated Do not call this programmatically. Use 
@@ -114,7 +114,8 @@ public abstract class WidgetContextAction extends CallableSystemAction implement
     
     public abstract boolean enable(Lookup context, Node[] nodes);
     
-    /** A delegate action that is usually associated with a specific lookup and
+    
+/** A delegate action that is usually associated with a specific lookup and
      * extract the nodes it operates on from it. Otherwise it delegates to the
      * regular NodeAction.
      */
@@ -160,7 +161,8 @@ public abstract class WidgetContextAction extends CallableSystemAction implement
             return super.toString() + "[delegate=" + delegate + "]"; // NOI18N
         }
 
-        /** Nodes are taken from the lookup if any.
+        
+/** Nodes are taken from the lookup if any.
          */
         public final synchronized Node[] nodes()
         {
@@ -174,7 +176,8 @@ public abstract class WidgetContextAction extends CallableSystemAction implement
             }
         }
 
-        /** Invoked when an action occurs.
+        
+/** Invoked when an action occurs.
          */
         public void actionPerformed(ActionEvent e)
         {

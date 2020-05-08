@@ -323,7 +323,8 @@ public class JavaRequestProcessor implements IJavaRequestProcessor
         }
     }
     
-    /**
+    
+/**
      *
      * Retrieves the language this processor supports.
      *
@@ -335,7 +336,8 @@ public class JavaRequestProcessor implements IJavaRequestProcessor
         return "Java";
     }
     
-    /**
+    
+/**
      *
      * Retrieves the language this processor supports.
      *
@@ -551,7 +553,8 @@ public class JavaRequestProcessor implements IJavaRequestProcessor
         }
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElementEventsSink#onVisibilityModified(org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onVisibilityModified(INamedElement element, IResultCell cell)
@@ -883,11 +886,8 @@ public class JavaRequestProcessor implements IJavaRequestProcessor
         // C++ method is empty
     }
     
-    /*
-     *
-     * @author ads
-     * Fix for #5083683
-     */
+    
+
     public void onFeaturePreMoved(IClassifier classifier, IFeature feature,
             IResultCell cell)
     {
@@ -1160,14 +1160,14 @@ public class JavaRequestProcessor implements IJavaRequestProcessor
     
     protected boolean checkIfAlreadyImpemented(IInterface pInterface, IClassifier pClassifier)
     {
-        //AZTEC: NOTE: Since this method has not been used for any purpose,
+        
         // its not implemented as of now
         return false;
     }
     
     protected boolean isParentInterface(IInterface pInterface, IInterface pWantedInterface)
     {
-        //AZTEC: NOTE: this method is being called only from checkIfAlreadyImpemented().
+        
         //It is needed only when checkIfAlreadyImpemented() is implemented.
         return false;
     }
@@ -1596,7 +1596,7 @@ public class JavaRequestProcessor implements IJavaRequestProcessor
                     int count = impacted.size();
                     
                     
-                    int value = 50; //kris richards - removed LargeImpact pref. Hard coded to 50.
+                    int value = 50; 
                     
                     if ( count > value ) {
                         IQuestionDialog pDiag = new SwingQuestionDialogImpl();
@@ -1738,7 +1738,8 @@ public class JavaRequestProcessor implements IJavaRequestProcessor
         // C++ method is empty
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttributeEventsSink#onDefaultPreModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttribute, org.netbeans.modules.uml.core.metamodel.core.foundation.IExpression, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onDefaultPreModified( IAttribute attr, IExpression proposedValue, IResultCell cell )
@@ -1746,7 +1747,8 @@ public class JavaRequestProcessor implements IJavaRequestProcessor
         
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttributeEventsSink#onDefaultModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttribute, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onDefaultModified( IAttribute attr, IResultCell cell )
@@ -1754,7 +1756,8 @@ public class JavaRequestProcessor implements IJavaRequestProcessor
         
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttributeEventsSink#onPreDefaultBodyModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttribute, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onPreDefaultBodyModified( IAttribute feature, String bodyValue, IResultCell cell )
@@ -1773,7 +1776,8 @@ public class JavaRequestProcessor implements IJavaRequestProcessor
         }
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttributeEventsSink#onDefaultBodyModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttribute, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onDefaultBodyModified( IAttribute feature, IResultCell cell )
@@ -1781,7 +1785,8 @@ public class JavaRequestProcessor implements IJavaRequestProcessor
         
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttributeEventsSink#onPreDefaultLanguageModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttribute, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onPreDefaultLanguageModified( IAttribute feature, String language, IResultCell cell )
@@ -1789,7 +1794,8 @@ public class JavaRequestProcessor implements IJavaRequestProcessor
         
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttributeEventsSink#onDefaultLanguageModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttribute, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onDefaultLanguageModified( IAttribute feature, IResultCell cell )
@@ -1797,7 +1803,8 @@ public class JavaRequestProcessor implements IJavaRequestProcessor
         
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttributeEventsSink#onPreDerivedModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttribute, boolean, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onPreDerivedModified( IAttribute feature, boolean proposedValue, IResultCell cell )
@@ -1805,7 +1812,8 @@ public class JavaRequestProcessor implements IJavaRequestProcessor
         
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttributeEventsSink#onDerivedModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttribute, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onDerivedModified( IAttribute feature, IResultCell cell )
@@ -1813,7 +1821,8 @@ public class JavaRequestProcessor implements IJavaRequestProcessor
         
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttributeEventsSink#onPrePrimaryKeyModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttribute, boolean, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onPrePrimaryKeyModified( IAttribute feature, boolean proposedValue, IResultCell cell )
@@ -1821,7 +1830,8 @@ public class JavaRequestProcessor implements IJavaRequestProcessor
         
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttributeEventsSink#onPrimaryKeyModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttribute, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onPrimaryKeyModified( IAttribute feature, IResultCell cell )
@@ -1829,20 +1839,23 @@ public class JavaRequestProcessor implements IJavaRequestProcessor
         
     }
     
-    /**
+    
+/**
      * Fired whenever the Multiplicity object on a particular element is about to be modified.
      */
     public void onPreMultiplicityModified( ITypedElement element, IMultiplicity proposedValue, IResultCell cell )
     {
     }
     
-    /**
+    
+/**
      * Fired whenever the Multiplicity object on a particular element was just modified.
      */
     public void onMultiplicityModified( ITypedElement element, IResultCell cell )
     {}
     
-    /**
+    
+/**
      * Fired whenever the type on a particular element is about to be modified.
      */
     public void onPreTypeModified( ITypedElement element, IClassifier proposedValue, IResultCell cell )
@@ -1853,7 +1866,8 @@ public class JavaRequestProcessor implements IJavaRequestProcessor
         }
     }
     
-    /**
+    
+/**
      * Fired whenever the type flag on a particular element was just modified.
      */
     public void onTypeModified( ITypedElement element, IResultCell cell )
@@ -1861,67 +1875,78 @@ public class JavaRequestProcessor implements IJavaRequestProcessor
         //all the needed actions has been taken cared of else where.
     }
     
-    /**
+    
+/**
      * Fired when the lower property on the passed in range is about to be modified.
      */
     public void onPreLowerModified( ITypedElement element, IMultiplicity mult, IMultiplicityRange range, String proposedValue, IResultCell cell )
     {}
     
-    /**
+    
+/**
      * Fired when the lower property on the passed in range was modified.
      */
     public void onLowerModified( ITypedElement element, IMultiplicity mult, IMultiplicityRange range, IResultCell cell )
     {}
     
-    /**
+    
+/**
      * Fired when the upper property on the passed in range is about to be modified.
      */
     public void onPreUpperModified( ITypedElement element, IMultiplicity mult, IMultiplicityRange range, String proposedValue, IResultCell cell )
     {}
     
-    /**
+    
+/**
      * Fired when the upper property on the passed in range was modified.
      */
     public void onUpperModified( ITypedElement element, IMultiplicity mult, IMultiplicityRange range, IResultCell cell )
     {}
     
-    /**
+    
+/**
      * Fired when a new range is about to be added to the passed in multiplicity.
      */
     public void onPreRangeAdded( ITypedElement element, IMultiplicity mult, IMultiplicityRange range, IResultCell cell )
     {}
     
-    /**
+    
+/**
      * Fired when a new range is added to the passed in multiplicity.
      */
     public void onRangeAdded( ITypedElement element, IMultiplicity mult, IMultiplicityRange range, IResultCell cell )
     {}
     
-    /**
+    
+/**
      * Fired when an existing range is about to be removed from the passed in multiplicity.
      */
     public void onPreRangeRemoved( ITypedElement element, IMultiplicity mult, IMultiplicityRange range, IResultCell cell )
     {}
     
-    /**
+    
+/**
      * Fired when an existing range is removed from the passed in multiplicity.
      */
     public void onRangeRemoved( ITypedElement element, IMultiplicity mult, IMultiplicityRange range, IResultCell cell )
     {}
     
-    /**
+    
+/**
      * Fired when the order property is about to be changed on the passed in mulitplicity.
      */
     public void onPreOrderModified( ITypedElement element, IMultiplicity mult, boolean proposedValue, IResultCell cell )
     {}
     
-    /**
+    
+/**
      * Fired when the order property is changed on the passed in mulitplicity.
      */
     public void onOrderModified( ITypedElement element, IMultiplicity mult, IResultCell cell )
     {}
     
-    /**
+    
+/**
      * Fired when the collection type property is changed on the passed in
      * range.
      * @param element The type that owned the multilicity element
@@ -1934,7 +1959,8 @@ public class JavaRequestProcessor implements IJavaRequestProcessor
         
     }
     
-    /**
+    
+/**
      *
      * Determines whether or not the name of the feature about to be added to the
      * passed in classifier is unique. It checks attrs owned by the Classifier and
@@ -2449,7 +2475,8 @@ public class JavaRequestProcessor implements IJavaRequestProcessor
         return retval;
     }
     
-    /**
+    
+/**
      *
      * Is the name a keyword in this language
      *
@@ -2477,7 +2504,8 @@ public class JavaRequestProcessor implements IJavaRequestProcessor
         return retval;
     }
     
-    /**
+    
+/**
      *
      * Is the name a primitive type in this language
      *
@@ -2505,7 +2533,8 @@ public class JavaRequestProcessor implements IJavaRequestProcessor
         return retval;
     }
     
-    /**
+    
+/**
      *
      * Is the name a datatype in this language
      *

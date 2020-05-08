@@ -42,6 +42,7 @@
  * made subject to such option by the copyright holder.
  */
 
+
 /*
  * ListCellEditor.java
  *
@@ -59,13 +60,8 @@ import javax.swing.DefaultCellEditor;
 import javax.swing.JComboBox;
 import java.util.Vector;
 
-/**
- * This class provides a little more stability when ueing a JComboBox in a 
- * JTable.  I do not quite understand the problem.  I just know that is class
- * fixed the problem.
- *
- * @author Administrator
- */
+
+
 public class ListCellEditor extends DefaultCellEditor
 {
    private IPropertyElement mElement = null;

@@ -42,16 +42,15 @@
  * made subject to such option by the copyright holder.
  */
 
+
 /*
  * Created on Feb 4, 2004
  *
  */
 package org.netbeans.modules.uml.ui.support.drawingproperties;
 
-/**
- * @author jingmingm
- *
- */
+
+
 public class ColorProperty extends DrawingProperty implements IColorProperty
 {
 	protected int m_Color = -1;

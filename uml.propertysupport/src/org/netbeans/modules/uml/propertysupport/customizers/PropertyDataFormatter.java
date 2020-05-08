@@ -44,14 +44,12 @@
 
 package org.netbeans.modules.uml.propertysupport.customizers;
 
-/**
- *
- * @author treyspiva
- */
+
+
 public class PropertyDataFormatter
 {
     
-    /** Creates a new instance of PropertyDataFormatter */
+    
     public PropertyDataFormatter()
     {
     }

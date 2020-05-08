@@ -56,10 +56,8 @@ import java.util.ArrayList;
 import org.netbeans.api.visual.action.ResizeProvider;
 import org.netbeans.api.visual.border.Border;
 
-/**
- *
- * @author sp153251
- */
+
+
 public class ResizeBorder implements Border {
     private static final BasicStroke STROKE = new BasicStroke (1.0f, BasicStroke.JOIN_BEVEL, BasicStroke.CAP_BUTT, 5.0f, new float[] { 6.0f, 3.0f }, 0.0f);
 
@@ -69,7 +67,8 @@ public class ResizeBorder implements Border {
     private ArrayList<ResizeProvider.ControlPoint> points;
 
     
-    /*
+    
+/*
      * @param thickness the thickness of the border
      * @param color the border color
      * @param points points which will be filled
@@ -82,7 +81,8 @@ public class ResizeBorder implements Border {
         this.points=new ArrayList<ResizeProvider.ControlPoint>();
         if(points!=null)for(int i=0;i<points.length;i++)this.points.add(points[i]);
     }
-    /*
+    
+/*
      * @param thickness the thickness of the border
      * @param color the border color
      * @param points points which will be filled
@@ -90,14 +90,16 @@ public class ResizeBorder implements Border {
     public ResizeBorder (int thickness, Color color,ResizeProvider.ControlPoint[] points) {
         this(thickness,color,points,false);
     }
-    /*
+    
+/*
      * @param thickness the thickness of the border
      * @param color the border color
      */
     public ResizeBorder (int thickness, Color color) {
         this(thickness,color,new ResizeProvider.ControlPoint[]{ResizeProvider.ControlPoint.TOP_LEFT,ResizeProvider.ControlPoint.TOP_CENTER,ResizeProvider.ControlPoint.TOP_RIGHT,ResizeProvider.ControlPoint.CENTER_LEFT,ResizeProvider.ControlPoint.BOTTOM_LEFT,ResizeProvider.ControlPoint.BOTTOM_CENTER,ResizeProvider.ControlPoint.BOTTOM_RIGHT,ResizeProvider.ControlPoint.CENTER_RIGHT});
     }
-    /*
+    
+/*
      * @param thickness the thickness of the border
      */
     public ResizeBorder (int thickness) {

@@ -81,10 +81,8 @@ import org.openide.nodes.Node;
 import org.openide.util.Exceptions;
 import org.openide.util.Lookup;
 import org.openide.windows.TopComponent;
-/**
- *
- * @author thuy
- */
+
+
 public class DiagramInputkeyAction extends javax.swing.AbstractAction 
 {
     private TopComponent component;

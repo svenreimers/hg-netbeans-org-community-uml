@@ -43,11 +43,8 @@
  */
 
 
-/*
- * File       : MethodCriticalSectionStateHandler.java
- * Created on : Dec 10, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.statehandlers;
 
 import org.dom4j.Node;
@@ -65,9 +62,8 @@ import org.netbeans.modules.uml.core.reverseengineering.reframework.RECriticalSe
 import org.netbeans.modules.uml.core.reverseengineering.reframework.TestEvent;
 import org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ITokenDescriptor;
 
-/**
- * @author Aztec
- */
+
+
 public class MethodCriticalSectionStateHandler
     extends MethodCompositeStateHandler
 {
@@ -179,7 +175,8 @@ public class MethodCriticalSectionStateHandler
         }
     }
     
-    /**
+    
+/**
      * Builds the XMI that will represent the expression.  The 
      * XML DOM Nodes that represent the expression will be added
      * as children to the specified DOM Node.
@@ -198,7 +195,8 @@ public class MethodCriticalSectionStateHandler
         return new ETPairT<InstanceInformation, Node>(pInfo, getDOMNode());
     }
 
-    /**
+    
+/**
      * Sends out the UMLParser structure details events that represent the 
      * method call data.  
      *
@@ -223,7 +221,8 @@ public class MethodCriticalSectionStateHandler
     }
 
     
-    /**
+    
+/**
      * Sends the OnBeginTest event to the OperationDetailListner(s)
      * that are registred with the UMLParser event dispatcher.  The 
      * options will determine if the test section details will be sent.

@@ -43,6 +43,7 @@
  */
 
 
+
 /*
  * Created on Dec 17, 2003
  *
@@ -65,11 +66,8 @@ import org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframe
 
 import org.netbeans.modules.uml.core.reverseengineering.reintegration.REIntegrationUtil;
 
-/**
- * @author Aztec
- *
- * Window - Preferences - Java - Code Generation - Code and Comments
- */
+
+
 public class UMLParser  extends ParseFacility implements IUMLParser
 {
 	
@@ -154,7 +152,8 @@ public class UMLParser  extends ParseFacility implements IUMLParser
 	   }  
 	}
 
-	/**
+	
+/**
 	 * Executes the facility on the specified file.
 	 * 
 	 * @param filename [in] The file to be processed.
@@ -234,7 +233,7 @@ public class UMLParser  extends ParseFacility implements IUMLParser
 					ILanguageParser pParser = retrieveParserForFile(filename);   
 					if(pParser != null)
 					{
-//						TODO: Aztec
+
 //						ILanguageSettingsParser pSettingsParser = pParser;
 //						if((pSettingsParser != null) && (pSettings != null))
 //						{
@@ -330,7 +329,8 @@ public class UMLParser  extends ParseFacility implements IUMLParser
 	   return pParser;
 	}
 
-	/**
+	
+/**
 	 * Retreives the parser and initializes the parser ports.  The ports initialization 
 	 * is defined by the facilities properties.
 	 *
@@ -371,7 +371,8 @@ public class UMLParser  extends ParseFacility implements IUMLParser
 //	   InitializeBootStrap
 //	   ----------------------------------------------------------------------------
 
-	/**
+	
+/**
 	 * Initializes the bootstrap mechanism.  The bootstrap class used to
 	 * initilaize parser is defined by the <I>BootStrap</I> property.
 	 */

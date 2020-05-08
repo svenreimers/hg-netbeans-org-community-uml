@@ -50,6 +50,7 @@ import org.dom4j.Element;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.BaseElement;
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IParameter;
 import org.netbeans.modules.uml.core.support.umlsupport.XMLManip;
+
 /**
  * Test cases for REParameter.
  */
@@ -62,7 +63,8 @@ public class REParameterTestCase extends AbstractRETestCase
 
     private REParameter rep;
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see junit.framework.TestCase#setUp()
      */
     protected void setUp() throws Exception

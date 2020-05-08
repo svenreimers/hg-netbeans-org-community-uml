@@ -74,10 +74,8 @@ import org.netbeans.modules.uml.drawingarea.view.CustomizableWidget;
 import org.netbeans.modules.uml.drawingarea.view.UMLNodeWidget;
 import org.netbeans.modules.uml.drawingarea.view.ResourceValue;
 
-/**
- *
- * @author treyspiva
- */
+
+
 public class DesignPatternWidget extends UMLNodeWidget 
     implements PropertyChangeListener
 {

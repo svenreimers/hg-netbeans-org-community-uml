@@ -50,13 +50,12 @@ import javax.swing.Icon;
 
 import org.netbeans.modules.uml.ui.swing.projecttree.JFilterDialog;
 
-/**
- *
- * @author Trey Spiva
- */
+
+
 public interface IFilterNode
 {
-   /**
+   
+/**
     * Removes newChild from its parent and makes it a child of this node by
     * adding it to the end of this node's child array.
     *
@@ -65,12 +64,14 @@ public interface IFilterNode
     */
    public void add(IFilterNode newChild) throws IllegalArgumentException;
 
-   /**
+   
+/**
     * @return
     */
    public String getDispalyName();
 
-   /**
+   
+/**
    * Specifies if the checkbox for the filter item is on or off.
    *   
    * @return <b>true</b> if the item is checked, <b>false</b> if the item is
@@ -78,14 +79,16 @@ public interface IFilterNode
    */
    public boolean isOn();
 
-   /**
+   
+/**
     * Retrieves the icon that represent the filter item.
     * 
     * @return The icon to display.
     */
    public Icon getIcon();
 
-   /**
+   
+/**
     * Saves the nodes contents to the associated IFilterItem.  The children
     * of the node is also saved.
     * 
@@ -93,7 +96,8 @@ public interface IFilterNode
     */
    public void save(IFilterDialog dialog);
 
-   /**
+   
+/**
     * Sets the state of the filter item.
     *   
     * @param value <b>true</b> if the item is checked, <b>false</b> if the 
@@ -101,7 +105,8 @@ public interface IFilterNode
     */
    public void setState(int state);
 
-   /**
+   
+/**
     * Retrieve the number of children that the node has.
     * 
     * @return The number of children.

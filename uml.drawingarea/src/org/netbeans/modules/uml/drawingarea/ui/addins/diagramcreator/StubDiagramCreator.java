@@ -64,15 +64,14 @@ import org.netbeans.modules.uml.ui.support.diagramsupport.IProxyDiagramManager;
 import org.netbeans.modules.uml.ui.support.diagramsupport.ProxyDiagramManager;
 import org.openide.filesystems.FileUtil;
 
-/**
- * @author sumitabhk
- *
- */
+
+
 public class StubDiagramCreator implements IStubDiagramCreator
 {
         private static final Logger logger = Logger.getLogger("org.netbeans.modules.uml.ui");
 
-	/**
+	
+/**
 	 * 
 	 */
 	public StubDiagramCreator()
@@ -80,7 +79,8 @@ public class StubDiagramCreator implements IStubDiagramCreator
 		super();
 	}
 
-	/**
+	
+/**
 	 * Creates the specified diagram, and adds the input elements to the diagram when the diagram is next opened.
 	 */
 	public IProxyDiagram createDiagram(int diagramKind, INamespace pNamespace, String sDiagramName, ETList<IElement> pElements)
@@ -105,7 +105,8 @@ public class StubDiagramCreator implements IStubDiagramCreator
 		return retObj;
 	}
 
-	/**
+	
+/**
 	 * Creates the specified diagram, and adds the input xmi.ids to the diagram when the diagram is next opened.
 	 */
 	public IProxyDiagram createDiagram(String sDiagramKind, INamespace pNamespace, String sDiagramName, String sProjectXMIID, IStrings pXMIIDsToCDFS, IStrings pXMIIDsForNavigationOnly)
@@ -141,7 +142,8 @@ public class StubDiagramCreator implements IStubDiagramCreator
 		return retObj;
 	}
 
-	/**
+	
+/**
 	 * Creates the stub ETLD (TomSawyer) file
 	 */
 	public void createStubETLDFile(String sDiagramFullFilename)
@@ -156,7 +158,8 @@ public class StubDiagramCreator implements IStubDiagramCreator
                 }
 	}
 
-	/**
+	
+/**
 	 * Creates the stub ETLP (Presentation) file
 	 */
 	public void createStubETLPFile(int diagramKind, INamespace pNamespace, String sDiagramName, String sDiagramFullFilename, ETList<IElement> pElements)
@@ -231,7 +234,8 @@ public class StubDiagramCreator implements IStubDiagramCreator
 //		}
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.addins.diagramcreator.IStubDiagramCreator#createEmptyStubETLPFile(java.lang.String, org.netbeans.modules.uml.core.metamodel.core.foundation.INamespace, java.lang.String, java.lang.String)
 	 */
 	public IProductArchive createEmptyStubETLPFile(String sDiagramKind, INamespace pNamespace, String sDiagramName, String bsDiagramFullFilename)

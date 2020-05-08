@@ -45,20 +45,20 @@
 
 package org.netbeans.test.umllib.exceptions;
 
-/**
- * 
- * @author psb
- */
+
+
 public class KnownBugException extends UMLCommonException {
     private int bugId=-1;
-    /**
+    
+/**
      * Creates a new instance of ElementCastException
      * @param message 
      */
     public KnownBugException(String message) {
         super(message);
     }
-    /**
+    
+/**
      * 
      * @param bugid 
      */
@@ -66,7 +66,8 @@ public class KnownBugException extends UMLCommonException {
         super("Known Bug: "+bugid);
         bugId=bugid;
     }
-    /**
+    
+/**
      * 
      * @param bugid 
      * @param message 
@@ -76,7 +77,8 @@ public class KnownBugException extends UMLCommonException {
         bugId=bugid;
     }
     //
-    /**
+    
+/**
      * 
      * @return 
      */

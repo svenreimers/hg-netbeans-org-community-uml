@@ -46,10 +46,8 @@ package org.netbeans.modules.uml.drawingarea.view;
 import java.awt.datatransfer.DataFlavor;
 import org.netbeans.api.visual.widget.Widget;
 
-/**
- *
- * @author treyspiva
- */
+
+
 public class MoveWidgetTransferable
 {
     public static final DataFlavor FLAVOR = createDataFlavor();

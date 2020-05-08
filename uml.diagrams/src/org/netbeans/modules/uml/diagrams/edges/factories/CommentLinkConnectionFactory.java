@@ -46,10 +46,8 @@ import org.netbeans.api.visual.widget.Scene;
 import org.netbeans.modules.uml.diagrams.edges.CommentLinkConnector;
 import org.netbeans.modules.uml.drawingarea.ConnectionWidgetFactory;
 
-/**
- *
- * @author treyspiva
- */
+
+
 public class CommentLinkConnectionFactory implements ConnectionWidgetFactory
 {
 

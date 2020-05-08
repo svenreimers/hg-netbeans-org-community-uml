@@ -49,16 +49,15 @@ import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;
 
-/**
- * ported from qa.jse.MutiTestCase
- * @author sp153251
- */
+
+
 public abstract class UMLMultiTestCase extends UMLTestCase{
     
     private int _instanceCount = 1;
     private Throwable err = null;
     
-    /**
+    
+/**
      * Creates a new instance of UMLMultiTestCase
      * @param name 
      */
@@ -71,7 +70,8 @@ public abstract class UMLMultiTestCase extends UMLTestCase{
         setName(shortName(this.getClass().getName()));
     }
     
-    /**
+    
+/**
      * 
      * @throws java.lang.Throwable 
      */
@@ -80,7 +80,8 @@ public abstract class UMLMultiTestCase extends UMLTestCase{
         execute();
     }
 
-    /**
+    
+/**
      * 
      * @throws java.lang.Throwable 
      */
@@ -93,7 +94,8 @@ public abstract class UMLMultiTestCase extends UMLTestCase{
         }
     }
 //Safe preparation for testing
-    /**
+    
+/**
      * 
      * @return 
      */
@@ -120,7 +122,8 @@ public abstract class UMLMultiTestCase extends UMLTestCase{
         }
     }
     
-    /**
+    
+/**
      * 
      * @return 
      */
@@ -128,7 +131,8 @@ public abstract class UMLMultiTestCase extends UMLTestCase{
         return err != null;
     }
     
-    /**
+    
+/**
      * 
      * @return 
      */
@@ -155,7 +159,8 @@ public abstract class UMLMultiTestCase extends UMLTestCase{
     public abstract void execute();
     
 //Default implementation of MultiTestCreator interface
-    /**
+    
+/**
      * 
      * @return 
      */
@@ -168,7 +173,8 @@ public abstract class UMLMultiTestCase extends UMLTestCase{
     }
     
 //Utils    
-    /**
+    
+/**
      * 
      * @param longName 
      * @return 

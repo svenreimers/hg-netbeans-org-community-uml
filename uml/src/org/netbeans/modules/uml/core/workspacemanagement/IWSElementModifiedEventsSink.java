@@ -47,12 +47,14 @@ import org.netbeans.modules.uml.core.support.umlsupport.IResultCell;
 
 public interface IWSElementModifiedEventsSink
 {
-	/**
+	
+/**
 	 * Fired whenever a WSElement is about to be modified.
 	*/
 	public long onWSElementPreModify( IWSElement wsProject, IResultCell cell );
 
-	/**
+	
+/**
 	 * Fired right after a WSElement was modified.
 	*/
 	public long onWSElementModified( IWSElement element, IResultCell cell );

@@ -47,12 +47,11 @@ import java.util.ArrayList;
 import org.netbeans.api.visual.widget.ConnectionWidget;
 import org.netbeans.api.visual.widget.Widget;
 
-/**
- * need this api in drawing area for loading, may be used for cdfs etc also
- * @author sp153251
- */
+
+
 public interface SQDMessageConnectProvider extends ExConnectWithLocationProvider {
-    /**
+    
+/**
      * Create synchronous message connection between specified points of source and target widgets
      * synch message may reqire specification of locations for both call and result parts
      * @param sourceWidget

@@ -87,10 +87,8 @@ import org.netbeans.test.umllib.util.Utils;
 
 
 
-/**
- *
- * @author psb
- */
+
+
 public class ActivityDiagram extends UMLTestCase {
     
     //some system properties

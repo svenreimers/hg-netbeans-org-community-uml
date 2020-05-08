@@ -51,7 +51,8 @@ import org.netbeans.modules.uml.core.reverseengineering.reframework.IParserData;
 
 public interface IParserDataLocator
 {
-	/**
+	
+/**
 	 * Locates the IParserData object that corresponds to the specified IElement object
 	*/
 	public IParserData locateParserData( IClassifier pClassifier, IElement element, ISourceFileArtifact artifact );

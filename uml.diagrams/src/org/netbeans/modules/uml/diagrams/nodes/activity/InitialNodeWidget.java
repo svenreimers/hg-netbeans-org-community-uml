@@ -48,10 +48,8 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.IPresentationElem
 import org.netbeans.modules.uml.diagrams.nodes.OvalWidget;
 import org.netbeans.modules.uml.drawingarea.view.ResourceType;
 
-/**
- *
- * @author thuy
- */
+
+
 public class InitialNodeWidget extends ControlNodeWidget
 {
     public static final int RADIUS = 8;

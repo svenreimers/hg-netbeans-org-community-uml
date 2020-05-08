@@ -44,10 +44,8 @@ package org.netbeans.modules.uml.ui.support.diagramsupport;
 
 import org.netbeans.modules.uml.core.support.umlsupport.FileExtensions;
 
-/**
- *
- * @author Craig Conover, craig.conover@sun.com
- */
+
+
 public class DiagramParserFactory
 {
     // TODO: This factory is almost complete. It could be abstracted out

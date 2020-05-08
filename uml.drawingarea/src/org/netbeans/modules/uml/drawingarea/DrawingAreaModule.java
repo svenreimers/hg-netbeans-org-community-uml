@@ -42,6 +42,7 @@
  * made subject to such option by the copyright holder.
  */
 
+
 /*
  * DrawingAreaModule.java
  *
@@ -58,10 +59,8 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 import org.openide.modules.ModuleInstall;
 
-/**
- *
- * @author Administrator
- */
+
+
 public class DrawingAreaModule extends ModuleInstall
 {
    

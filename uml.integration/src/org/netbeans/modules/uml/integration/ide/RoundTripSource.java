@@ -42,12 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File         : RoundTripSource.java
- * Version      : 1.0
- * Description  : Base class for classes that source round trip events.
- * Author       : Darshan
- */
+
+
 package org.netbeans.modules.uml.integration.ide;
 
 import org.netbeans.modules.uml.integration.ide.events.ClassInfo;
@@ -58,6 +54,7 @@ import org.netbeans.modules.uml.integration.ide.events.MethodInfo;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.IElement;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElement;
 
+
 /**
  * Base class for classes that source round trip events.
  */
@@ -66,7 +63,8 @@ abstract public class RoundTripSource {
     private EventFilter filter = 
         EventManager.getEventManager().getEventFilter();
 
-    /**
+    
+/**
      * If <code>true</code>, we switch the default project to the newly changed
      * project before firing model-source events.
      */
@@ -98,7 +96,8 @@ abstract public class RoundTripSource {
         } catch (Exception ignored) { }
     }
     
-    /**
+    
+/**
      * Sets the default Describe project to the project that owns the Describe
      * model element specified by the given ElementInfo, and calls the IDE
      * manager to activate the appropriate IDE project. The IDE manager may
@@ -124,7 +123,8 @@ abstract public class RoundTripSource {
         }
     }
 	
-    /**
+    
+/**
      * Sets whether switching of the default project during roundtrip is 
      * enabled. If enabled, before each model-source event, the default project
      * will be set to the project where changes to the model have occurred.

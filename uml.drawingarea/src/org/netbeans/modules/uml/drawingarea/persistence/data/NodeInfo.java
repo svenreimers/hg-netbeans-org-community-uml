@@ -52,10 +52,8 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.IElement;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.IPresentationElement;
 import org.netbeans.modules.uml.core.metamodel.structure.IProject;
 
-/**
- *
- * @author Jyothi
- */
+
+
 public class NodeInfo
 {
     private String PEID = "";

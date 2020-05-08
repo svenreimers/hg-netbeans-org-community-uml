@@ -52,32 +52,38 @@ import org.netbeans.modules.uml.core.workspacemanagement.IWSProject;
 
 public interface IFindResults
 {
-	/**
+	
+/**
 	 * Array of elements matching the find criteria
 	*/
 	public ETList<IElement> getElements();
 
-	/**
+	
+/**
 	 * Array of elements matching the find criteria
 	*/
 	public void setElements( ETList<IElement> value );
 
-	/**
+	
+/**
 	 * Array of diagrams matching the find criteria
 	*/
 	public ETList<IProxyDiagram> getDiagrams();
 
-	/**
+	
+/**
 	 * Array of diagrams matching the find criteria
 	*/
 	public void setDiagrams( ETList<IProxyDiagram> value );
 
-	/**
+	
+/**
 	 * Array of projects matching the find criteria - future use
 	*/
 	public ETList<IWSProject> getProjects();
 
-	/**
+	
+/**
 	 * Array of projects matching the find criteria - future use
 	*/
 	public void setProjects( ETList<IWSProject> value );

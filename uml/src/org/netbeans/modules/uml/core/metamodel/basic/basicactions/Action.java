@@ -53,13 +53,13 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.IElement;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.IValueSpecification;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
-/**
- * @author gautams
- */
+
+
 public class Action extends Element implements IAction 
 {
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.basic.basicactions.IAction#addInput(org.netbeans.modules.uml.core.metamodel.core.foundation.IValueSpecification)
      */
     public void addInput(IValueSpecification pPin) 
@@ -67,7 +67,8 @@ public class Action extends Element implements IAction
         addElement(pPin);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.basic.basicactions.IAction#addJumpHandler(org.netbeans.modules.uml.core.metamodel.basic.basicactions.IJumpHandler)
      */
     public void addJumpHandler(final IJumpHandler pHandler) 
@@ -83,7 +84,8 @@ public class Action extends Element implements IAction
         );
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.basic.basicactions.IAction#addOutput(org.netbeans.modules.uml.core.metamodel.basic.basicactions.IOutputPin)
      */
     public void addOutput(IOutputPin pPin) 
@@ -91,7 +93,8 @@ public class Action extends Element implements IAction
         addElement(pPin);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.basic.basicactions.IAction#addPredecessor(org.netbeans.modules.uml.core.metamodel.basic.basicactions.IAction)
      */
     public void addPredecessor(final IAction pAction) 
@@ -107,7 +110,8 @@ public class Action extends Element implements IAction
         );
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.basic.basicactions.IAction#addSuccessor(org.netbeans.modules.uml.core.metamodel.basic.basicactions.IAction)
      */
     public void addSuccessor(final IAction pAction) 
@@ -123,7 +127,8 @@ public class Action extends Element implements IAction
         );
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.basic.basicactions.IAction#getInputs()
      */
     public ETList <IValueSpecification> getInputs() 
@@ -132,7 +137,8 @@ public class Action extends Element implements IAction
         return collector.retrieveElementCollection((IElement)this, "UML:Element.ownedElement/*[ not( name(.) = 'UML:OutputPin' )]", IValueSpecification.class);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.basic.basicactions.IAction#getIsReadOnly()
      */
     public boolean getIsReadOnly() 
@@ -140,7 +146,8 @@ public class Action extends Element implements IAction
          return getBooleanAttributeValue("isReadOnly", false);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.basic.basicactions.IAction#getJumpHandlers()
      */
     public ETList <IJumpHandler> getJumpHandlers() 
@@ -149,7 +156,8 @@ public class Action extends Element implements IAction
         return collector.retrieveElementCollectionWithAttrIDs(this,"jumpHandler", IJumpHandler.class);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.basic.basicactions.IAction#getOutputs()
      */
     public ETList <IOutputPin> getOutputs() 
@@ -158,7 +166,8 @@ public class Action extends Element implements IAction
         return collector.retrieveElementCollection((IElement)this, "UML:Element.ownedElement/UML:OutputPin", IOutputPin.class);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.basic.basicactions.IAction#getPredecessors()
      */
     public ETList <IAction> getPredecessors() 
@@ -167,7 +176,8 @@ public class Action extends Element implements IAction
         return collector.retrieveElementCollectionWithAttrIDs(this,"predecessor", IAction.class);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.basic.basicactions.IAction#getSuccessors()
      */
     public ETList <IAction> getSuccessors() 
@@ -176,7 +186,8 @@ public class Action extends Element implements IAction
         return collector.retrieveElementCollectionWithAttrIDs(this,"successor", IAction.class);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.basic.basicactions.IAction#removeInput(org.netbeans.modules.uml.core.metamodel.core.foundation.IValueSpecification)
      */
     public void removeInput(IValueSpecification pPin) 
@@ -184,7 +195,8 @@ public class Action extends Element implements IAction
         removeElement(pPin);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.basic.basicactions.IAction#removeJumpHandler(org.netbeans.modules.uml.core.metamodel.basic.basicactions.IJumpHandler)
      */
     public void removeJumpHandler(final IJumpHandler pHandler) 
@@ -199,7 +211,8 @@ public class Action extends Element implements IAction
         );
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.basic.basicactions.IAction#removeOutput(org.netbeans.modules.uml.core.metamodel.basic.basicactions.IOutputPin)
      */
     public void removeOutput(IOutputPin pPin) 
@@ -207,7 +220,8 @@ public class Action extends Element implements IAction
         removeElement(pPin);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.basic.basicactions.IAction#removePredecessor(org.netbeans.modules.uml.core.metamodel.basic.basicactions.IAction)
      */
     public void removePredecessor(final IAction pAction) 
@@ -222,7 +236,8 @@ public class Action extends Element implements IAction
         );
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.basic.basicactions.IAction#removeSuccessor(org.netbeans.modules.uml.core.metamodel.basic.basicactions.IAction)
      */
     public void removeSuccessor(final IAction pAction) 
@@ -237,7 +252,8 @@ public class Action extends Element implements IAction
         );
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.basic.basicactions.IAction#setIsReadOnly(boolean)
      */
     public void setIsReadOnly(boolean value) 

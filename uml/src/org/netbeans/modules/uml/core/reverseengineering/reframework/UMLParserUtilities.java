@@ -90,7 +90,8 @@ public class UMLParserUtilities
     public static final int ER_ENTIRE_ELEMENT = 0;
     public static final int ER_ELEMENT_HEAD   = 1;
 
-    /** 
+    
+/** 
      * Retrieves an Element's Token Descriptors which contains file position
      * information for the Element.
      * 
@@ -115,7 +116,8 @@ public class UMLParserUtilities
         return null;
     }
     
-    /** 
+    
+/** 
      * returns the line number that the given element @a pElement starts on
      * 
      * @param pElement[in] the element whose starting line number you want
@@ -139,7 +141,8 @@ public class UMLParserUtilities
         return line;
     }
     
-    /** 
+    
+/** 
      * gets the source file name of a given element
      * 
      * @param pElement[in] the element whose source file name you want
@@ -153,7 +156,8 @@ public class UMLParserUtilities
         return art != null? art.getSourceFile() : null;
     }
     
-    /** 
+    
+/** 
      * returns a UML Parser
      * 
      * @param ppParser[out] a UML Parser object
@@ -166,7 +170,7 @@ public class UMLParserUtilities
         if (product != null)
         {
             IFacilityManager fman = product.getFacilityManager();
-            // AZTEC: TODO: Might we need to give the fully-qualified class name
+            
             //              here? It'd be preferable to look that up.
             IFacility fac = fman.retrieveFacility("Parsing.UMLParser");
             if (fac instanceof IUMLParser)
@@ -175,7 +179,8 @@ public class UMLParserUtilities
         return null;
     }
     
-    /** 
+    
+/** 
      * Parses a Source File Artifact and returns the parse information.
      * 
      * @param pSourceFileArtifact[in] the source file artifact to parse
@@ -199,7 +204,8 @@ public class UMLParserUtilities
         return null;
     }
     
-    /** 
+    
+/** 
      * returns the start position of the ParserData object passed in.  If the parser data object
      * has a comment, then the comment is considered the start position.  If no comment is found,
      * the parser data's StartPosition token descriptor's position is considered the start position
@@ -217,7 +223,8 @@ public class UMLParserUtilities
         return desc != null? desc.getPosition() : -1;
     }
     
-    /** 
+    
+/** 
      * Returns an IParserData's EndPosition.
      * 
      * @param pParserData[in] the parser data derived class whose end position you want.
@@ -231,7 +238,8 @@ public class UMLParserUtilities
         return getTokenDescriptorEndPosition(pdata, "EndPosition");
     }
     
-    /** 
+    
+/** 
      * Returns the sum of the file offset and length  of a TokenDescriptor named @a
      * tokenDescriptorName
      * 
@@ -255,7 +263,8 @@ public class UMLParserUtilities
         return -1;
     }
     
-    /** 
+    
+/** 
      * Finds the IOperation that matches the IREOperation @a pREOperation
      * 
      * @param pClassifier[in] the classifier that owns the IOperation
@@ -280,7 +289,8 @@ public class UMLParserUtilities
         return null;
     }
     
-    /** 
+    
+/** 
      * returns the IAttribute that matches the IREAttribute @a pREAttribute
      * 
      * @param pClassifier[in] the classifier that owns the attribute
@@ -315,7 +325,8 @@ public class UMLParserUtilities
         return att;
     }
     
-    /** 
+    
+/** 
      * returns the number of non-return type parameters for @a pOperation
      * 
      * @param pOperation[in] the operation whose parameter count you want
@@ -335,7 +346,8 @@ public class UMLParserUtilities
         return parcount;
     }
     
-    /** 
+    
+/** 
      * Returns the Nth parameter for the given operation.
      * 
      * @param pOperation[in] the operation whose Nth parameter you want.
@@ -359,7 +371,8 @@ public class UMLParserUtilities
         return null;
     }
     
-    /** 
+    
+/** 
      * returns the number of non-return type parameters for @a pREOperation
      * 
      * @param pREOperation[in] the operation whose parameter count you want
@@ -379,7 +392,8 @@ public class UMLParserUtilities
         return parcount;
     }
 
-    /** 
+    
+/** 
      * Returns the Nth parameter for the given operation.
      * 
      * @param pREOperation[in] the operation whose Nth parameter you want.
@@ -415,7 +429,8 @@ public class UMLParserUtilities
         return range;
     }
     
-    /** 
+    
+/** 
      * Returns the token descriptor that points to the "end" of @a
      * pParserData.  What "end" means is determined by @a elementRange and
      * by what kind of object @a pParserData points to.
@@ -485,7 +500,8 @@ public class UMLParserUtilities
         return fileInf;
     }
     
-    /** 
+    
+/** 
      * Parses a source file and stores the results in @a pResults
      * 
      * @param fileName[in] the source file to parse
@@ -510,7 +526,8 @@ public class UMLParserUtilities
         return null;
     }
     
-    /** 
+    
+/** 
      * Returns a collection of ITokenDescriptor objects for a particular Element
      * 
      * @param pElement[in] the element whose token descriptors you want
@@ -534,7 +551,8 @@ public class UMLParserUtilities
         return null;
     }
     
-    /** 
+    
+/** 
      * Returns a collection of ITokenDescriptor objects for a particular Element
      * 
      * @param pElement[in] the element whose token descriptors you want
@@ -570,7 +588,8 @@ public class UMLParserUtilities
         return pdata != null? pdata.getTokenDescriptors() : null;
     }
     
-    /** 
+    
+/** 
      * given an IClassifier, this method returns the IREClass object that matches the IClassifier
      * 
      * @param pClassifier 
@@ -585,7 +604,8 @@ public class UMLParserUtilities
         return getREClassFromClassPath(cp, fi);
     }
     
-    /** 
+    
+/** 
      * Given a Class Name or Class Path (e.g. A::B::C), this operation
      * looks up an IREClass by that name in the IFileInformation
      * collection.
@@ -628,7 +648,8 @@ public class UMLParserUtilities
         return null;
     }
     
-    /** 
+    
+/** 
      * Searches @a pREClass for an REOperation that matches @a pOperation and returns it if found.
      * 
      * @param pREClass[in] the class that is being searched
@@ -655,7 +676,8 @@ public class UMLParserUtilities
         return null;
     }
     
-    /** 
+    
+/** 
      * determines if two operations (an IOperation and an IREOperation) match
      * 
      * @param pOperation[in] the IOperation object
@@ -771,7 +793,8 @@ public class UMLParserUtilities
         
         return retVal;
     }
-   /** 
+   
+/** 
     * Determines if the IParameter @a pParameter matches the IREParameter
     * @a pParameterRE.  The method used for detecting a match depends on
     * the value of @a strictMatch as follows:
@@ -857,7 +880,8 @@ public class UMLParserUtilities
        return isMatching;
     }
     
-    /** 
+    
+/** 
      * Determines if @a pOperation is a setter operation.
      */
     public static boolean isSetter(IOperation operation)
@@ -887,7 +911,8 @@ public class UMLParserUtilities
     }
     
     
-    /** 
+    
+/** 
      * Searches @a pREClass for an REAttribute that matches @a pAttribute and returns it if found.
      * 
      * @param pREClass[in] the class that is being searched
@@ -915,7 +940,8 @@ public class UMLParserUtilities
         return null;
     }
     
-    /** 
+    
+/** 
      * Finds the REClass object (nested or not) refered to by nestedClassPath
      * 
      * @param pSearchOrigin[in] which class the search should start from.
@@ -958,7 +984,8 @@ public class UMLParserUtilities
         return null;
     }
     
-    /**
+    
+/**
      * returns the portion of the classifier's fully qualified name that is made up
      * of classifiers.
      *
@@ -1002,7 +1029,8 @@ public class UMLParserUtilities
         return path.toString();
     }
     
-    /** 
+    
+/** 
      * If @a pElement is a Classifier, this method returns pElement (casted to a pClassifier).
      * Otherwise, the Classifier that owns @a pElement is returned.
      * 
@@ -1036,7 +1064,8 @@ public class UMLParserUtilities
         return null;
     }
     
-    /** 
+    
+/** 
      * Returns the GLOBAL ParserInformationCache object
      * 
      * @param ppParseInformationCache[out] the GLOBAL ParserInformationCache
@@ -1049,7 +1078,8 @@ public class UMLParserUtilities
         return product != null? product.getParseInformationCache() : null;
     }
     
-    /** 
+    
+/** 
      * returns the one and only IADProduct object
      * 
      * @param ppADProduct[out] the IADProduct object
@@ -1061,7 +1091,8 @@ public class UMLParserUtilities
         return (IADProduct) ProductRetriever.retrieveProduct();
     }
     
-    /** 
+    
+/** 
      * Returns an element's source file artifact.  If the element has
      * multiple source files, only the first is returned.
      * 

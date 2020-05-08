@@ -58,11 +58,8 @@ import org.netbeans.test.umllib.NewDiagramWizardOperator;
 import org.netbeans.test.umllib.testcases.UMLTestCase;
 
 
-/**
- *
- * @author yaa
- * @spec UML/Diagram_ToolbarButtons.xml
- */
+
+
 public class DiagramToolbarButtons_ACD extends UMLTestCase {
     private static String prName = "UMLProjectDTlbBtn";
     private static String acdName = "DActivity";
@@ -96,6 +93,7 @@ public class DiagramToolbarButtons_ACD extends UMLTestCase {
             }
     }
     
+
 /**
  * @caseblock Activity Diagram
  * @usecase Check toolbar buttons of activity diagram
@@ -112,6 +110,7 @@ public class DiagramToolbarButtons_ACD extends UMLTestCase {
             }
     }
 
+
 /**
  * @caseblock Activity Diagram
  * @usecase Check toolbar buttons of activity diagram
@@ -123,6 +122,7 @@ public class DiagramToolbarButtons_ACD extends UMLTestCase {
                 fail("Diagram toolbar button '" + btnTooltipName + "' is disabled but should not be");
             }
     }
+
 
 /**
  * @caseblock Activity Diagram
@@ -136,6 +136,7 @@ public class DiagramToolbarButtons_ACD extends UMLTestCase {
             }
     }
 
+
 /**
  * @caseblock Activity Diagram
  * @usecase Check toolbar buttons of activity diagram
@@ -147,6 +148,7 @@ public class DiagramToolbarButtons_ACD extends UMLTestCase {
                 fail("Diagram toolbar button '" + btnTooltipName + "' is disabled but should not be");
             }
     }
+
 
 /**
  * @caseblock Activity Diagram
@@ -160,6 +162,7 @@ public class DiagramToolbarButtons_ACD extends UMLTestCase {
             }
     }
 
+
 /**
  * @caseblock Activity Diagram
  * @usecase Check toolbar buttons of activity diagram
@@ -171,6 +174,7 @@ public class DiagramToolbarButtons_ACD extends UMLTestCase {
                 fail("Diagram toolbar button '" + btnTooltipName + "' is disabled but should not be");
             }
     }
+
 
 /**
  * @caseblock Activity Diagram
@@ -188,6 +192,7 @@ public class DiagramToolbarButtons_ACD extends UMLTestCase {
             }
     }
 
+
 /**
  * @caseblock Activity Diagram
  * @usecase Check toolbar buttons of activity diagram
@@ -200,6 +205,7 @@ public class DiagramToolbarButtons_ACD extends UMLTestCase {
             }
     }
 
+
 /*    
     public void testBtn_ShowFriendlyNames(){
         String btnTooltipName = DiagramToolbarOperator.SHOW_FRIENDLY_NAMES_TOOL;
@@ -209,6 +215,7 @@ public class DiagramToolbarButtons_ACD extends UMLTestCase {
             }
     }
 */
+
 
 /**
  * @caseblock Activity Diagram
@@ -221,6 +228,7 @@ public class DiagramToolbarButtons_ACD extends UMLTestCase {
                 fail("Diagram toolbar button '" + btnTooltipName + "' is disabled but should not be");
             }
     }
+
 
 /**
  * @caseblock Activity Diagram
@@ -253,6 +261,7 @@ public class DiagramToolbarButtons_ACD extends UMLTestCase {
         }
      }
     
+
 /**
  * @caseblock Activity Diagram
  * @usecase Check toolbar buttons of activity diagram
@@ -264,6 +273,7 @@ public class DiagramToolbarButtons_ACD extends UMLTestCase {
                 fail("Diagram toolbar button '" + btnTooltipName + "' is disabled but should not be");
             }
     }
+
 
 /**
  * @caseblock Activity Diagram
@@ -277,6 +287,7 @@ public class DiagramToolbarButtons_ACD extends UMLTestCase {
             }
     }
 
+
 /**
  * @caseblock Activity Diagram
  * @usecase Check toolbar buttons of activity diagram
@@ -288,6 +299,7 @@ public class DiagramToolbarButtons_ACD extends UMLTestCase {
                 fail("Diagram toolbar button '" + btnTooltipName + "' is disabled but should not be");
             }
     }
+
 
 /**
  * @caseblock Activity Diagram
@@ -301,6 +313,7 @@ public class DiagramToolbarButtons_ACD extends UMLTestCase {
             }
     }
 
+
 /**
  * @caseblock Activity Diagram
  * @usecase Check toolbar buttons of activity diagram
@@ -312,6 +325,7 @@ public class DiagramToolbarButtons_ACD extends UMLTestCase {
                 fail("Diagram toolbar button '" + btnTooltipName + "' is disabled but should not be");
             }
     }
+
 
 /**
  * @caseblock Activity Diagram
@@ -325,6 +339,7 @@ public class DiagramToolbarButtons_ACD extends UMLTestCase {
             }
     }
 
+
 /**
  * @caseblock Activity Diagram
  * @usecase Check toolbar buttons of activity diagram
@@ -336,6 +351,7 @@ public class DiagramToolbarButtons_ACD extends UMLTestCase {
                 fail("Diagram toolbar button '" + btnTooltipName + "' is disabled but should not be");
             }
     }
+
 
 /**
  * @caseblock Activity Diagram
@@ -349,6 +365,7 @@ public class DiagramToolbarButtons_ACD extends UMLTestCase {
             }
     }
 
+
 /**
  * @caseblock Activity Diagram
  * @usecase Check toolbar buttons of activity diagram
@@ -360,6 +377,7 @@ public class DiagramToolbarButtons_ACD extends UMLTestCase {
                 fail("Diagram toolbar button '" + btnTooltipName + "' is disabled but should not be");
             }
     }
+
 
 /**
  * @caseblock Activity Diagram
@@ -378,6 +396,7 @@ public class DiagramToolbarButtons_ACD extends UMLTestCase {
         }
     }
 
+
 /**
  * @caseblock Activity Diagram
  * @usecase Check toolbar buttons of activity diagram
@@ -389,6 +408,7 @@ public class DiagramToolbarButtons_ACD extends UMLTestCase {
                 fail("Diagram toolbar button '" + btnTooltipName + "' is disabled but should not be");
             }
     }
+
 
 /**
  * @caseblock Activity Diagram
@@ -403,6 +423,7 @@ public class DiagramToolbarButtons_ACD extends UMLTestCase {
         }
     }
     
+
 /**
  * @caseblock Activity Diagram
  * @usecase Check toolbar buttons of activity diagram

@@ -42,23 +42,20 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : UMLUtilities.java
- * Created on : Oct 7, 2003
- * Author     : aztec
- */
+
+
 package org.netbeans.modules.uml.core.support.umlsupport;
 
 import org.netbeans.modules.uml.core.metamodel.core.foundation.IElement;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.INamespace;
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier;
 
-/**
- * @author aztec
- */
+
+
 public class UMLUtilities
 {
-    /**
+    
+/**
      * Returns the classifier that owns @a pElement.  Walks up the tree of
      * owners if @a pElement's immediate owner is not an IClassifier.  
      * Note: If @a pElement is already an IClassifier, this method will search

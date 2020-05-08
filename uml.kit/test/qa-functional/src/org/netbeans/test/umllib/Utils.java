@@ -43,6 +43,7 @@
  */
 
 
+
 /**
  * Utils.java
  *
@@ -70,10 +71,8 @@ import org.netbeans.jemmy.operators.JPopupMenuOperator;
 import org.netbeans.test.umllib.project.ProjectType;
 import org.netbeans.test.umllib.project.UMLProject;
 
-/**
- *
- * @author Alexei Mokeev
- */
+
+
 public class Utils {
     
     /** Creates a new instance of Utils */
@@ -102,7 +101,8 @@ public class Utils {
     }
     
     
-    /**
+    
+/**
      * 
      * @deprecated use createProject from qa.uml.project.UMLProject class directly
      * @param projectName 
@@ -113,7 +113,8 @@ public class Utils {
         UMLProject.createProject(projectName,ProjectType.UML_JAVA_REVERSE_ENGINEERING,projectPath,javaProject);
     }
     
-    /**
+    
+/**
      * 
      * @deprecated use createProject from qa.uml.project.UMLProject class directly
      * @param pName 
@@ -123,7 +124,8 @@ public class Utils {
         UMLProject.createProject(pName,ProjectType.UML_JAVA_PLATFORM_MODEL,path);
     }
     
-    /**
+    
+/**
      * 
      * @deprecated use createProject from qa.uml.project.UMLProject class directly
      * @param pName 
@@ -134,7 +136,8 @@ public class Utils {
     }
     
     
-    /**
+    
+/**
      * 
      * @deprecated use createProject from qa.uml.project.UMLProject class directly
      * @param projectName 
@@ -147,7 +150,8 @@ public class Utils {
     }
     
     
-    /**
+    
+/**
      *
      * @deprecated it's common action and should be moved to qa.uml.util.Utils
      */
@@ -169,7 +173,8 @@ public class Utils {
         }).start();
     }
     
-    /**
+    
+/**
      * creates diagram in top level package of project, create package if there is no package with name
      * 
      * @param project 
@@ -181,7 +186,8 @@ public class Utils {
     public static RetAll createDiagram(String project,String workPkg, String diagram,String diagramType){
         return createOrOpenDiagram(project,workPkg,diagram,diagramType,true);
     }
-    /**
+    
+/**
      * creates diagram in top level package of project, create package if there is no package with name
      * 
      * @param project 
@@ -244,7 +250,8 @@ public class Utils {
         try{Thread.sleep(500);}catch(Exception ex){}
         return new RetAll(pto, lastDiagramNode,ret);
     }
-    /**
+    
+/**
      * creates diagram in top level package of project, create package if there is no package with name
      * 
      * @param project 
@@ -256,7 +263,8 @@ public class Utils {
     public static RetAll createOrOpenDiagram(String project,String workPkg, String diagram,String diagramType){
         return createOrOpenDiagram(project,workPkg,diagram,diagramType,false);
     }
-    /**
+    
+/**
      * creates create top level package if there is no package with name
      * 
      * @param project 
@@ -300,21 +308,25 @@ public class Utils {
         new EventTool().waitNoEvent(500);
         return lastDiagramNode;
     }
-    /**
+    
+/**
      * helper class to return several values from createDiagram
      */
     public static class RetAll
     {
         public ProjectsTabOperator pto;
-        /**
+        
+/**
          * diagram's node in project tree
          */
         public Node lastDiagramNode;
-        /**
+        
+/**
          * diagram operator
          */
         public DiagramOperator dOp;
-        /**
+        
+/**
          * 
          * @param pto 
          * @param lastDiagramNode 
@@ -381,7 +393,8 @@ public class Utils {
         }
     }
 
-    /**
+    
+/**
      * Send output with line return to jemmy log
      * @param out
      */
@@ -389,7 +402,8 @@ public class Utils {
         org.netbeans.jemmy.JemmyProperties.getCurrentOutput().printLine(out);
     }
 
-    /**
+    
+/**
      * Send output to jemmy log
      * @param out
      */
@@ -397,7 +411,8 @@ public class Utils {
         org.netbeans.jemmy.JemmyProperties.getCurrentOutput().print(out);
     }
 
-    /**
+    
+/**
      * Wait for specified time.
      * @param millisec Amount of milliseconds.
      */

@@ -52,42 +52,50 @@ public interface IPart extends IStructuralFeature,
 							   IConnectableElement,
 							   IParameterableElement
 {
-	/**
+	
+/**
 	 * property PartKind
 	*/
 	public int getPartKind();
 
-	/**
+	
+/**
 	 * property PartKind
 	*/
 	public void setPartKind( /* PartKind */ int value );
 
-	/**
+	
+/**
 	 * property IsWhole
 	*/
 	public boolean getIsWhole();
 
-	/**
+	
+/**
 	 * property IsWhole
 	*/
 	public void setIsWhole( boolean value );
 
-	/**
+	
+/**
 	 * property InitialCardinality
 	*/
 	public int getInitialCardinality();
 
-	/**
+	
+/**
 	 * property InitialCardinality
 	*/
 	public void setInitialCardinality( int value );
 
-	/**
+	
+/**
 	 * The IStructuralFeature that this Part represents. This will be empty when the Part represents the entire Classifier.
 	*/
 	public IStructuralFeature getDefiningFeature();
 
-	/**
+	
+/**
 	 * The IStructuralFeature that this Part represents. This will be empty when the Part represents the entire Classifier.
 	*/
 	public void setDefiningFeature( IStructuralFeature value );

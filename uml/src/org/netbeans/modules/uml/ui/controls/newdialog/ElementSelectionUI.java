@@ -83,10 +83,8 @@ import org.netbeans.modules.uml.ui.support.commonresources.CommonResourceManager
 import org.netbeans.modules.uml.ui.support.wizard.IWizardSheet;
 import org.netbeans.modules.uml.ui.support.wizard.WizardInteriorPage;
 
-/**
- * @author sumitabhk
- *
- */
+
+
 public class ElementSelectionUI extends WizardInteriorPage implements INewDialogUI
 {
 	private static final String PG_CAPTION = NewDialogResources.getString("NewDiagramUI.NEWWIZARD_CAPTION");
@@ -100,7 +98,8 @@ public class ElementSelectionUI extends WizardInteriorPage implements INewDialog
 	private JSplitPane jSplitPane = null;
 	private Document m_doc = null;
 	
-	/**
+	
+/**
 	 * 
 	 */
 //	public ElementSelectionUI()
@@ -226,7 +225,8 @@ public class ElementSelectionUI extends WizardInteriorPage implements INewDialog
 		super.onWizardNext();
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.newdialog.INewDialogUI#nextButtonClicked()
 	 */
 	public JPanel nextButtonClicked()
@@ -237,7 +237,8 @@ public class ElementSelectionUI extends WizardInteriorPage implements INewDialog
 		return retPanel;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.newdialog.INewDialogUI#finishButtonClicked()
 	 */
 	public INewDialogTabDetails finishButtonClicked()
@@ -360,7 +361,8 @@ public class ElementSelectionUI extends WizardInteriorPage implements INewDialog
 	private class ElementTreeSelectionListener implements TreeSelectionListener
 	{
 
-		/* (non-Javadoc)
+		
+/* (non-Javadoc)
 		 * @see javax.swing.event.TreeSelectionListener#valueChanged(javax.swing.event.TreeSelectionEvent)
 		 */
 		public void valueChanged(TreeSelectionEvent arg0)
@@ -391,7 +393,8 @@ public class ElementSelectionUI extends WizardInteriorPage implements INewDialog
 			}
 		}
 
-		/**
+		
+/**
 		 * @param string
 		 */
 		private void populateRightHandSide(String str)
@@ -404,7 +407,8 @@ public class ElementSelectionUI extends WizardInteriorPage implements INewDialog
 			}
 		}
 
-		/**
+		
+/**
 		 * @param str
 		 * @return
 		 */
@@ -470,7 +474,8 @@ public class ElementSelectionUI extends WizardInteriorPage implements INewDialog
 	public class NewDialogTreeModel extends DefaultTreeModel 
 	{
 
-		/**
+		
+/**
 		 * 
 		 */
 		public NewDialogTreeModel(TreeNode node)
@@ -481,7 +486,8 @@ public class ElementSelectionUI extends WizardInteriorPage implements INewDialog
 			//collapse the root node
 		}
 
-		/**
+		
+/**
 		 * 
 		 */
 		private void buildChildren()
@@ -571,7 +577,8 @@ public class ElementSelectionUI extends WizardInteriorPage implements INewDialog
 	 }
 
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.newdialog.INewDialogUI#getHelpText()
 	 */
 	public String getHelpText()
@@ -579,7 +586,8 @@ public class ElementSelectionUI extends WizardInteriorPage implements INewDialog
 		return NewDialogResources.getString("IDS_ITEMTOCREATE");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.newdialog.INewDialogUI#getHelpIcon()
 	 */
 	public Icon getHelpIcon()

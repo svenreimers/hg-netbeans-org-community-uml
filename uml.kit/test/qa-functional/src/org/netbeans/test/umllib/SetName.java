@@ -43,6 +43,7 @@
  */
 
 
+
 /*
  * SetName.java
  *
@@ -52,13 +53,12 @@ package org.netbeans.test.umllib;
 
 import org.netbeans.jemmy.operators.ComponentOperator;
 
-/**
- * This is common interface for all namers.
- * @author Alexei Mokeev
- */
+
+
 public interface SetName {
     
-    /**
+    
+/**
      * 
      * @param component 
      * @param x 

@@ -42,13 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File         : EventHandler.java
- * Version      : 1.0
- * Description  : Queues runnable objects and calls their run() methods in
- *                sequence.
- * Author       : Darshan
- */
+
+
 package org.netbeans.modules.uml.integration.ide.events;
 
 import org.netbeans.modules.uml.core.support.umlsupport.Log;
@@ -59,21 +54,11 @@ import java.util.Vector;
 import org.netbeans.modules.uml.core.roundtripframework.RTMode;
 import org.netbeans.modules.uml.ui.support.ProductHelper;
 
-/**
- *  Queues runnable objects and calls their run() methods in sequence from a
- * separate worker thread.
- *
- * Revision History
- * No.  Date        Who         What
- * ---  ----        ---         ----
- *   1  2002-05-28  Darshan     Synchronized on EventHandler instance to allow
- *                              synch between source-model and model-source
- *                              threads.
- *
- * @author Darshan
- */
+
+
 public class EventHandler {
-    /**
+    
+/**
      *  The number of runnable objects that must be queued before we show a
      * progress indicator to the user.
      */
@@ -81,36 +66,41 @@ public class EventHandler {
 
     private static final short PRESET_MAXIMUM     = 200;
 
-    /**
+    
+/**
      *  Queue of runnable objects to be executed in sequence.
      */
     private Vector          runnableQueue = new Vector();
 
-    /**
+    
+/**
      *  The worker thread that runs the runnable objects in sequence.
      */
     private WorkerThread    worker    = new WorkerThread();
 
-    /**
+    
+/**
      *  The thread that displays and manages the progress indicator.
      */
     private ProgressThread  progress  = null;
 
-    /**
+    
+/**
      *  An object that knows how to execute a queued runnable object. Note that
      * the queued runnable objects need not be java.lang.Runnable objects if you
      * provide your own executor.
      */
     private ITaskExecutor   executor  = defaultExecutor;
 
-    /**
+    
+/**
      *  The default executor; executes Runnable objects' run() methods.
      */
     public static final ITaskExecutor defaultExecutor = new ITaskExecutor() 
     {
         public void executeTask(Object task) 
         {
-            // conover - only execute events if RT is enabled
+            
             if (ProductHelper.getCoreProduct()
                 .getRoundTripController().getMode() == RTMode.RTM_LIVE)
             {
@@ -119,18 +109,21 @@ public class EventHandler {
         }
     };
 
-    /**
+    
+/**
      * A factory that knows how to create progress indicators. If left null,
      * progress indicators won't be shown.
      */
     private IProgressIndicatorFactory progressFactory = null;
 
-    /**
+    
+/**
      *  <code>true</code> if the worker thread is processing a job on the queue.
      */
     private boolean working = false;
 
-    /**
+    
+/**
      *  Creates an EventHandler, but does not start the worker thread.
      *
      * @param queueName The thread name of the worker.
@@ -140,7 +133,8 @@ public class EventHandler {
             worker.setName(queueName);
     }
 
-    /**
+    
+/**
      *  Sets the executor used to run the objects in the queue.
      *
      * @param executor An <code>EventHandler.ITaskExecutor</code> replacement
@@ -152,7 +146,8 @@ public class EventHandler {
         this.executor = executor;
     }
 
-    /**
+    
+/**
      *  Retrieves the executor currently in use.
      * @return The <code>EventHandler.ITaskExecutor</code> that's in use; if
      *         null, this queue is a do-nothing queue.
@@ -161,7 +156,8 @@ public class EventHandler {
         return executor;
     }
 
-    /**
+    
+/**
      *  Retrieves the progress indicator currently in use.
      * @return An <code>IProgressIndicatorFactory</code>.
      */
@@ -169,7 +165,8 @@ public class EventHandler {
         return progressFactory;
     }
 
-    /**
+    
+/**
      *  Sets the progress indicator factory to be used.
      * @param factory An <code>IProgressIndicatorFactory</code>; can be null to
      *                suppress progress monitoring.
@@ -183,7 +180,8 @@ public class EventHandler {
         }
     }
 
-    /**
+    
+/**
      *  Starts the worker thread to begin processing events from the queue.
      * Existing queued events will be processed.
      */
@@ -191,7 +189,8 @@ public class EventHandler {
         worker.start();
     }
 
-    /**
+    
+/**
      *  Stops the worker thread as soon as the currently running Runnable
      * is finished. Pending queued events will be discarded and any open
      * progress indicator will be closed.
@@ -201,7 +200,8 @@ public class EventHandler {
         clear();
     }
 
-    /**
+    
+/**
      *  Empties the queue of pending events. Any event that is currently being
      * processed will not be affected.
      */
@@ -213,7 +213,8 @@ public class EventHandler {
         }
     }
 
-    /**
+    
+/**
      *  Adds a job to the queue, usually a Runnable job (if the default
      * executor is in use).
      *
@@ -223,7 +224,8 @@ public class EventHandler {
         queueRunnable(r, -1);
     }
 
-    /**
+    
+/**
      *  Adds a job to the queue at the specified position. The job is usually a
      * Runnable job (if the default executor is in use).
      *
@@ -255,14 +257,16 @@ public class EventHandler {
         progress.startProgress(size);
     }
 
-    /**
+    
+/**
      *  Returns the first job in the queue; blocks if the queue is empty.
      * @throws InterruptedException If the thread is interrupted
      */
     private Object getNextRunnable() throws InterruptedException {
         synchronized (runnableQueue) {
             while (runnableQueue.size() == 0) {
-                /*if(enableWSSaves && !wasWSSavedLast) {
+                
+/*if(enableWSSaves && !wasWSSavedLast) {
                     wasWSSavedLast = !wasWSSavedLast;
                     queueWSSave();
                } else {
@@ -277,7 +281,8 @@ public class EventHandler {
         }
     }
 
-    /**
+    
+/**
      *  Determines if the queue contains items for processing or is currently
      * processing an item.
      *
@@ -289,22 +294,26 @@ public class EventHandler {
         }
     }
 
-    /**
+    
+/**
      *  An interface for classes that know how to execute an arbitrary task.
      */
     public static interface ITaskExecutor {
-        /**
+        
+/**
          *  Runs the given task. It is assumed that the task executor knows
          * (or can find out) what kind of task the given object is.
          */
         public void executeTask(Object taskObj) throws Exception;
     }
 
-    /**
+    
+/**
      *  Runs queued Runnables.
      */
     private class WorkerThread extends Thread {
-        /**
+        
+/**
          *  True if this thread has been interrupted.
          */
         private boolean interrupted = false;
@@ -336,7 +345,8 @@ public class EventHandler {
             }
         }
 
-        /**
+        
+/**
          *  Interrupts the worker thread - the interrupt will be immediate
          * if the worker was waiting on an empty queue, otherwise the
          * currently running Runnable will be allowed to finish first.
@@ -377,7 +387,8 @@ public class EventHandler {
             return indicator;
         }
 
-        /**
+        
+/**
          *  Starts a new progress indicator, if no indicator is already open.
          * If an indicator is already open, returns silently.
          */

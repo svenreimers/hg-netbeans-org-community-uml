@@ -43,6 +43,7 @@
  */
 
 
+
 /*
  * Created on Jul 15, 2003
  *
@@ -55,10 +56,8 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.INamespace;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.IElement;
 import org.netbeans.modules.uml.core.metamodel.diagrams.IDiagramKind;
 
-/**
- * @author sumitabhk
- *
- */
+
+
 public class NewDialogDiagramDetails implements INewDialogDiagramDetails
 {
 	private String m_Name;
@@ -67,7 +66,8 @@ public class NewDialogDiagramDetails implements INewDialogDiagramDetails
 	private int /*DiagramKind*/ m_DiagramKind;
 	private int m_lAvailableDiagramKinds;
 
-	/**
+	
+/**
 	 * 
 	 */
 	public NewDialogDiagramDetails()
@@ -77,7 +77,8 @@ public class NewDialogDiagramDetails implements INewDialogDiagramDetails
 		m_lAvailableDiagramKinds = IDiagramKind.DK_ALL;
 	}
 
-	/**
+	
+/**
 	 * Name of the diagram.
 	 *
 	 * @param pVal[out]
@@ -89,7 +90,8 @@ public class NewDialogDiagramDetails implements INewDialogDiagramDetails
 		return m_Name;
 	}
 
-	/**
+	
+/**
 	 * Name of the diagram.
 	 *
 	 * @param newVal[in]
@@ -101,7 +103,8 @@ public class NewDialogDiagramDetails implements INewDialogDiagramDetails
 		m_Name = value;
 	}
 
-	/**
+	
+/**
 	 * The selected namespace.
 	 *
 	 * @param pVal[out]
@@ -113,7 +116,8 @@ public class NewDialogDiagramDetails implements INewDialogDiagramDetails
 		return m_Namespace;
 	}
 
-	/**
+	
+/**
 	 * The selected namespace.
 	 *
 	 * @param pVal[in]
@@ -125,7 +129,8 @@ public class NewDialogDiagramDetails implements INewDialogDiagramDetails
 		m_Namespace = value;
 	}
 
-	/**
+	
+/**
 	 * Adds an additional namespace to our list of possible namespaces.
 	 *
 	 * @param pNamespace[in]
@@ -149,7 +154,8 @@ public class NewDialogDiagramDetails implements INewDialogDiagramDetails
 		return 0;
 	}
 
-	/**
+	
+/**
 	 * The selected diagram kind.
 	 *
 	 * @param pVal[out]
@@ -161,7 +167,8 @@ public class NewDialogDiagramDetails implements INewDialogDiagramDetails
 		return m_DiagramKind;
 	}
 
-	/**
+	
+/**
 	 * The selected diagram kind.
 	 *
 	 * @param pVal[in]
@@ -173,7 +180,8 @@ public class NewDialogDiagramDetails implements INewDialogDiagramDetails
 		m_DiagramKind = value;
 	}
 
-	/**
+	
+/**
 	 * The diagram kinds that are available for selection in the dialog.
 	 *
 	 * @param pVal[out]
@@ -185,7 +193,8 @@ public class NewDialogDiagramDetails implements INewDialogDiagramDetails
 		return m_lAvailableDiagramKinds;
 	}
 
-	/**
+	
+/**
 	 * The diagram kinds that are available for selection in the dialog.
 	 *
 	 * @param pVal[in]

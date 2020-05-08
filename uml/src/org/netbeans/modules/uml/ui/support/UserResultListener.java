@@ -43,11 +43,8 @@
  */
 
 
-/*
- *
- * Created on Jul 2, 2003
- * @author Trey Spiva
- */
+
+
 package org.netbeans.modules.uml.ui.support;
 
 import java.awt.event.ActionEvent;
@@ -57,10 +54,8 @@ import javax.swing.JDialog;
 import org.netbeans.modules.uml.ui.support.commondialogs.CommonDialogResources;
 import org.netbeans.modules.uml.ui.support.commondialogs.MessageResultKindEnum;
 
-/**
- *
- * @author Trey Spiva
- */
+
+
 public class UserResultListener implements ActionListener, MessageResultKindEnum
 {
    QuestionResponse m_UserResponse = null;
@@ -72,7 +67,8 @@ public class UserResultListener implements ActionListener, MessageResultKindEnum
       setParentDialog(parent);
    }
    
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see java.awt.event.ActionListener#actionPerformed(java.awt.event.ActionEvent)
     */
    public void actionPerformed(ActionEvent e)
@@ -128,7 +124,8 @@ public class UserResultListener implements ActionListener, MessageResultKindEnum
       }
    }
 
-   /**
+   
+/**
     * @return
     */
    public QuestionResponse getUserResponse()
@@ -136,7 +133,8 @@ public class UserResultListener implements ActionListener, MessageResultKindEnum
       return m_UserResponse;
    }
 
-   /**
+   
+/**
     * @param response
     */
    public void setUserResponse(QuestionResponse response)
@@ -144,7 +142,8 @@ public class UserResultListener implements ActionListener, MessageResultKindEnum
       m_UserResponse = response;
    }
 
-   /**
+   
+/**
     * @return
     */
    public JDialog getParentDialog()
@@ -152,7 +151,8 @@ public class UserResultListener implements ActionListener, MessageResultKindEnum
       return m_ParentDialog;
    }
 
-   /**
+   
+/**
     * @param dialog
     */
    public void setParentDialog(JDialog dialog)

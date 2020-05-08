@@ -61,11 +61,8 @@ import org.openide.util.Utilities;
 import org.openide.util.actions.Presenter;
 import org.openide.util.actions.SystemAction;
 
-/**
- * 
- * 
- * @author trey spiva
- */
+
+
 public class SubMenuAction extends AbstractAction 
         implements Presenter.Popup, ContextAwareAction
 {

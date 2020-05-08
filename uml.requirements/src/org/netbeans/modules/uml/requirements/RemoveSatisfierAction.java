@@ -42,6 +42,7 @@
  * made subject to such option by the copyright holder.
  */
 
+
 /*
  * RemoveSatisfier.java
  *
@@ -81,10 +82,8 @@ import java.awt.event.ActionEvent;
 import javax.swing.AbstractAction;
 import org.openide.util.NbBundle;
 
-/**
- *
- * @author Administrator
- */
+
+
 public class RemoveSatisfierAction extends AbstractAction
 {
     private IProjectTreeItem mTreeItem = null;
@@ -172,7 +171,8 @@ public class RemoveSatisfierAction extends AbstractAction
          }
     }
 
-    /**
+    
+/**
     * Removes the Satisfer element from the Requirements Provider and also from
     * the Proxy file.
     *

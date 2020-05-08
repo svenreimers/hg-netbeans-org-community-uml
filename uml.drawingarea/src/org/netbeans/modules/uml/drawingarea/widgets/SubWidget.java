@@ -42,10 +42,8 @@
 
 package org.netbeans.modules.uml.drawingarea.widgets;
 
-/**
- * interface to be realized by child widgets to be separated from other widgets in saving
- * @author sp153251
- */
+
+
 public interface SubWidget {
 
 }

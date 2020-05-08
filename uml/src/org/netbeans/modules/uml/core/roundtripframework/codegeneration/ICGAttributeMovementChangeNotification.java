@@ -48,22 +48,26 @@ import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure
 
 public interface ICGAttributeMovementChangeNotification extends ICGDoubleClassChangeNotification
 {
-	/**
+	
+/**
 	 * Gets / Sets DeleteSourceAttribute
 	*/
 	public boolean getDeleteSourceAttribute();
 
-	/**
+	
+/**
 	 * Gets / Sets DeleteSourceAttribute
 	*/
 	public void setDeleteSourceAttribute( boolean value );
 
-	/**
+	
+/**
 	 * Gets / Sets Attribute
 	*/
 	public IAttribute getAttribute();
 
-	/**
+	
+/**
 	 * Gets / Sets Attribute
 	*/
 	public void setAttribute( IAttribute value );

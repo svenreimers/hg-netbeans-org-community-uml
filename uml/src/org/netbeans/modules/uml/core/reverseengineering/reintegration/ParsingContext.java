@@ -42,11 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * Created on Jan 23, 2004
- *
- * Window - Preferences - Java - Code Generation - Code and Comments
- */
+
+
 package org.netbeans.modules.uml.core.reverseengineering.reintegration;
 
 import org.dom4j.Node;
@@ -55,11 +52,8 @@ import org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframe
 import org.netbeans.modules.uml.core.support.umlutils.ETArrayList;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
-/**
- * @author Aztec
- *
- * Window - Preferences - Java - Code Generation - Code and Comments
- */
+
+
 public class ParsingContext 
 {
 	private Node m_Package = null;
@@ -93,7 +87,8 @@ public class ParsingContext
 		return m_Package;
 	}
 
-	/**
+	
+/**
 	 * Retrieves the language of the file that is being processed.
 	 *
 	 * @param pLanguage [out] The language of the current context
@@ -103,7 +98,8 @@ public class ParsingContext
 		return m_Language;
 	}
 
-	/**
+	
+/**
 	 * Sets the language of the file that is being processed.
 	 *
 	 * @param pLanguage [in] The language of the current context

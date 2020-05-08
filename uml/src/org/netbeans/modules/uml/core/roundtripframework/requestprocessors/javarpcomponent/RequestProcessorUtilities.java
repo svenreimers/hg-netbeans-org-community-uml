@@ -42,11 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : RequestProcessorUtilities.java
- * Created on : Oct 28, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpcomponent;
 
 import org.netbeans.modules.uml.core.coreapplication.ICoreMessenger;
@@ -69,15 +66,15 @@ import org.netbeans.modules.uml.ui.support.commondialogs.MessageResultKindEnum;
 import org.netbeans.modules.uml.ui.swing.commondialogs.SwingQuestionDialogImpl;
 import org.openide.util.NbPreferences;
 
-/**
- * @author Aztec
- */
+
+
 public class RequestProcessorUtilities implements IRequestProcessorUtilities
 {
     private ICoreMessenger m_Messenger = null;
     private IPreferenceManager2 m_Manager = null;
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpccomponent.IRequestProcessorUtilities#displayErrorDialog(java.lang.String, int)
      */
     public void displayErrorDialog(String message, String title, int iconKind)
@@ -91,17 +88,19 @@ public class RequestProcessorUtilities implements IRequestProcessorUtilities
 
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpccomponent.IRequestProcessorUtilities#getBooleanPreferenceValue(java.lang.String)
      */
     public boolean getBooleanPreferenceValue(String prefName, boolean defValue)
     {
-        //kris richards - changing to NbPreferences. This was setup to return false
+        
         //if something went wrong. Mimicing that behavior.
         return NbPreferences.forModule(RequestProcessorUtilities.class).getBoolean (prefName, defValue) ;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpccomponent.IRequestProcessorUtilities#getClassOfAttribute(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttribute)
      */
     public IClassifier getClassOfAttribute(IAttribute pAttr)
@@ -111,7 +110,8 @@ public class RequestProcessorUtilities implements IRequestProcessorUtilities
         return pAttr.getFeaturingClassifier();
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpccomponent.IRequestProcessorUtilities#getLanguage()
      */
     public String getLanguage()
@@ -119,7 +119,8 @@ public class RequestProcessorUtilities implements IRequestProcessorUtilities
         return "Java";
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpccomponent.IRequestProcessorUtilities#getLanguage(java.lang.String)
      */
     public ILanguage getLanguage(String lang)
@@ -128,7 +129,8 @@ public class RequestProcessorUtilities implements IRequestProcessorUtilities
         return langMan.getLanguage(lang);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpccomponent.IRequestProcessorUtilities#getLanguageForFile(java.lang.String)
      */
     public ILanguage getLanguageForFile(String fileName)
@@ -137,7 +139,8 @@ public class RequestProcessorUtilities implements IRequestProcessorUtilities
         return langMan.getLanguageForFile(fileName);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpccomponent.IRequestProcessorUtilities#getMessenger()
      */
     public ICoreMessenger getMessenger()
@@ -153,7 +156,8 @@ public class RequestProcessorUtilities implements IRequestProcessorUtilities
         return m_Messenger;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpccomponent.IRequestProcessorUtilities#getPreferenceKey()
      */
     public String getPreferenceKey()
@@ -161,7 +165,8 @@ public class RequestProcessorUtilities implements IRequestProcessorUtilities
         return "Default";
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpccomponent.IRequestProcessorUtilities#getPreferenceManager(org.netbeans.modules.uml.core.metamodel.core.foundation.IPreferenceManager)
      */
     public IPreferenceManager2 getPreferenceManager()
@@ -177,7 +182,8 @@ public class RequestProcessorUtilities implements IRequestProcessorUtilities
         return m_Manager;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpccomponent.IRequestProcessorUtilities#getPreferencePath()
      */
     public String getPreferencePath()
@@ -185,7 +191,8 @@ public class RequestProcessorUtilities implements IRequestProcessorUtilities
         return "RoundTrip|Java";
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpccomponent.IRequestProcessorUtilities#getPreferenceValue(java.lang.String)
      */
     public String getPreferenceValue(String prefName, String def)
@@ -193,7 +200,8 @@ public class RequestProcessorUtilities implements IRequestProcessorUtilities
         return NbPreferences.forModule (RequestProcessorUtilities.class).get (prefName, def) ;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpccomponent.IRequestProcessorUtilities#getRelationType(org.netbeans.modules.uml.core.metamodel.core.foundation.IRelationProxy)
      */
     public String getRelationType(IRelationProxy pRelation)
@@ -215,7 +223,8 @@ public class RequestProcessorUtilities implements IRequestProcessorUtilities
         return relationType;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpccomponent.IRequestProcessorUtilities#isSilent()
      */
     public boolean isSilent()
@@ -228,7 +237,8 @@ public class RequestProcessorUtilities implements IRequestProcessorUtilities
         return false;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpccomponent.IRequestProcessorUtilities#sendCriticalMessage(java.lang.String)
      */
     public void sendCriticalMessage(String message, String title)
@@ -241,7 +251,8 @@ public class RequestProcessorUtilities implements IRequestProcessorUtilities
                             MessageIconKindEnum.EDIK_ICONEXCLAMATION);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpccomponent.IRequestProcessorUtilities#sendDebugMessage(java.lang.String)
      */
     public void sendDebugMessage(String message, String title)
@@ -254,7 +265,8 @@ public class RequestProcessorUtilities implements IRequestProcessorUtilities
                             MessageIconKindEnum.EDIK_ICONHAND);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpccomponent.IRequestProcessorUtilities#sendErrorMessage(java.lang.String)
      */
     public void sendErrorMessage(String message, String title)
@@ -268,7 +280,8 @@ public class RequestProcessorUtilities implements IRequestProcessorUtilities
         
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpccomponent.IRequestProcessorUtilities#sendInfoMessage(java.lang.String)
      */
     public void sendInfoMessage(String message, String title)
@@ -281,7 +294,8 @@ public class RequestProcessorUtilities implements IRequestProcessorUtilities
                             MessageIconKindEnum.EDIK_ICONINFORMATION);        
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpccomponent.IRequestProcessorUtilities#sendWarningMessage(java.lang.String)
      */
     public void sendWarningMessage(String message, String title)

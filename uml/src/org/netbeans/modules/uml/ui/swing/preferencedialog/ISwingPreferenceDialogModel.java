@@ -48,10 +48,8 @@ package org.netbeans.modules.uml.ui.swing.preferencedialog;
 
 import javax.swing.tree.TreeModel;
 
-/**
- * @author sumitabhk
- *
- */
+
+
 public interface ISwingPreferenceDialogModel extends TreeModel
 {
 

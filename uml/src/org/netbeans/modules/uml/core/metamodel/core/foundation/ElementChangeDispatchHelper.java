@@ -54,15 +54,14 @@ import org.netbeans.modules.uml.core.eventframework.IEventPayload;
 import org.netbeans.modules.uml.core.support.umlsupport.XMLManip;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
-/**
- * @author sumitabhk
- *
- */
+
+
 public class ElementChangeDispatchHelper extends EventDispatchHelper implements IElementChangeDispatchHelper{
 
 	private ETList<INamedElement> m_colliding = null;
 
-	/**
+	
+/**
 	 * 
 	 */
 	public ElementChangeDispatchHelper() {
@@ -90,7 +89,8 @@ public class ElementChangeDispatchHelper extends EventDispatchHelper implements 
 		return 0;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Retrieves the element modify dispatcher
 	 *
@@ -111,7 +111,8 @@ public class ElementChangeDispatchHelper extends EventDispatchHelper implements 
 		return disp;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Fires the OnMetaAttributePreModified event.
 	 *
@@ -145,7 +146,8 @@ public class ElementChangeDispatchHelper extends EventDispatchHelper implements 
 		return proceed;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Dispatches the OnMetaAttributeModified event
 	 *
@@ -163,7 +165,8 @@ public class ElementChangeDispatchHelper extends EventDispatchHelper implements 
 		return 0;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Fired when the Documentation tagged value on an element is about to be modified
 	 *
@@ -185,7 +188,8 @@ public class ElementChangeDispatchHelper extends EventDispatchHelper implements 
 		return proceed;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Fired after the documentation tagged value of the passed in element has been set.
 	 *
@@ -204,7 +208,8 @@ public class ElementChangeDispatchHelper extends EventDispatchHelper implements 
 		return 0;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Called whenever an element is about to be added to a namespace.
 	 *
@@ -226,7 +231,8 @@ public class ElementChangeDispatchHelper extends EventDispatchHelper implements 
 		return proceed;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Called right after an element has been added to the given namespace
 	 *
@@ -246,7 +252,8 @@ public class ElementChangeDispatchHelper extends EventDispatchHelper implements 
 		return 0;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Fired right before the name of a named element is about to change.
 	 *
@@ -268,7 +275,8 @@ public class ElementChangeDispatchHelper extends EventDispatchHelper implements 
 		return proceed;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Called right after the name of the passed in element has changed.
 	 *
@@ -287,7 +295,8 @@ public class ElementChangeDispatchHelper extends EventDispatchHelper implements 
 		return 0;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Fired right before the visibility flag of an element is about to change.
 	 *
@@ -309,7 +318,8 @@ public class ElementChangeDispatchHelper extends EventDispatchHelper implements 
 		return proceed;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Called right after the visibility flag of the passed in element was changed.
 	 *
@@ -328,7 +338,8 @@ public class ElementChangeDispatchHelper extends EventDispatchHelper implements 
 		return 0;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Fired right before the alias name of a named element is about to change.
 	 *
@@ -350,7 +361,8 @@ public class ElementChangeDispatchHelper extends EventDispatchHelper implements 
 		return proceed;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Called right after the alias name of the passed in element has changed.
 	 *
@@ -400,7 +412,8 @@ public class ElementChangeDispatchHelper extends EventDispatchHelper implements 
 		return 0;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Retrieves the event dispatcher used to signal element modification events
 	 *
@@ -420,7 +433,8 @@ public class ElementChangeDispatchHelper extends EventDispatchHelper implements 
 		}
 	}
 
-	/**
+	
+/**
 	 *
 	 * Populates the 
 	 *

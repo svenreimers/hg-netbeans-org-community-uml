@@ -23,10 +23,8 @@ package org.netbeans.modules.uml.ui.swing.propertyeditor;
 
 //import org.netbeans.modules.uml.ui.swing.drawingarea.IDrawingAreaControl;
 
-/**
- * @author KevinM
- *
- */
+
+
 public class PropertyEditorEventBlocker implements IPropertyEditorEventBlocker
 {
    protected PropertyEditorBlocker m_blocker = null;
@@ -38,7 +36,8 @@ public class PropertyEditorEventBlocker implements IPropertyEditorEventBlocker
 //
 //   }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.swing.propertyeditor.IPropertyEditorEventBlocker#disableEvents()
     */
    public boolean disableEvents()
@@ -47,7 +46,8 @@ public class PropertyEditorEventBlocker implements IPropertyEditorEventBlocker
       return true;
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.swing.propertyeditor.IPropertyEditorEventBlocker#enableEvents()
     */
    public boolean enableEvents()

@@ -65,10 +65,8 @@ import org.netbeans.modules.uml.drawingarea.view.DesignerTools;
 import org.netbeans.modules.uml.drawingarea.view.UMLWidget;
 import org.openide.util.NbBundle;
 
-/**
- *
- * @author jyothi
- */
+
+
 public class ExtensionPointWidget extends FeatureWidget implements PropertyChangeListener {
     
     IElement element;

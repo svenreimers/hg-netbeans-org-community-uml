@@ -43,6 +43,7 @@
  */
 
 
+
 /*
  * Created on Dec 10, 2003
  *
@@ -78,7 +79,8 @@ public class IdentifierExpression extends ExpressionStateHandler
    boolean m_IsThisReference;
    boolean m_IsClassReflection;
    
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.expression.IIdentifierExpression#clear()
      */
    public void clear()
@@ -94,7 +96,8 @@ public class IdentifierExpression extends ExpressionStateHandler
       m_IsClassReflection = false;
    }
    
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.statehandlers.IStateHandler#createSubStateHandler(java.lang.String, java.lang.String)
      */
    public StateHandler createSubStateHandler(String stateName, String language)
@@ -111,7 +114,8 @@ public class IdentifierExpression extends ExpressionStateHandler
       return retVal;
    }
    
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.statehandlers.IExpressionStateHandler#getStartLine()
      */
    public long getStartLine()
@@ -119,7 +123,8 @@ public class IdentifierExpression extends ExpressionStateHandler
       return m_Identifier.getStartLine();
    }
    
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.statehandlers.IExpressionStateHandler#getStartPosition()
      */
    public long getStartPosition()
@@ -131,7 +136,8 @@ public class IdentifierExpression extends ExpressionStateHandler
    {
       return m_Identifier.getEndPosition();
    }
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.statehandlers.IExpressionStateHandler#writeAsXMI(org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.InstanceInformation, org.dom4j.Node, org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.SymbolTable, org.netbeans.modules.uml.core.reverseengineering.reframework.IREClass, org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.IREClassLoader)
      */
    public ETPairT<InstanceInformation,Node> writeAsXMI(InstanceInformation pInfo,
@@ -316,7 +322,8 @@ public class IdentifierExpression extends ExpressionStateHandler
    }
    
    
-   /**
+   
+/**
     * Converts the expression data into a string representation.
     *
     * @return The string representation.

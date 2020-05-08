@@ -49,14 +49,8 @@ import org.netbeans.modules.uml.core.metamodel.profiles.IStereotype;
 
 //import org.netbeans.modules.uml.core.metamodel.core.foundation.IElement;
 //import org.netbeans.modules.uml.core.metamodel.profiles.IStereotype;
-/**
- * <p>Title: </p>
- * <p>Description: </p>
- * <p>Copyright: Copyright (c) 2003</p>
- * <p>Company: </p>
- * @author not attributable
- * @version 1.0
- */
+
+
 
 public class CustomNameResolver implements ICustomNameResolver{
 
@@ -64,7 +58,8 @@ public class CustomNameResolver implements ICustomNameResolver{
 
   }
 
-  /**
+  
+/**
    * Validate the passed in values according to the Describe business rules.
    * See method for the rules.
    *

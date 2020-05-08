@@ -52,10 +52,8 @@ import org.netbeans.modules.uml.core.support.umlsupport.IResultCell;
 import org.netbeans.modules.uml.core.eventframework.EventManager;
 import org.netbeans.modules.uml.core.eventframework.EventFunctor;
 
-/**
- * @author sumitabhk
- *
- */
+
+
 public class WorkspaceEventDispatcher extends EventDispatcher
    implements IWorkspaceEventDispatcher
 {
@@ -81,7 +79,8 @@ public class WorkspaceEventDispatcher extends EventDispatcher
 		m_WSElementModEventManager = new EventManager< IWSElementModifiedEventsSink >();
    }
 
-	/**
+	
+/**
 	 *
 	 * Registers the passed in event sink with this dispatcher.
 	 *
@@ -96,7 +95,8 @@ public class WorkspaceEventDispatcher extends EventDispatcher
 		m_WSEventManager.addListener(sink, null);
    }
    
-	/**
+	
+/**
 	 * Removes a listener from the current list.
 	 *
 	 * @param sink[in] The listener to be removed.
@@ -107,7 +107,8 @@ public class WorkspaceEventDispatcher extends EventDispatcher
 		m_WSEventManager.removeListener(sink); 
 	}
 
-   /**
+   
+/**
 	 *
 	 * Registers the passed in event sink with this dispatcher.
 	 *
@@ -122,7 +123,8 @@ public class WorkspaceEventDispatcher extends EventDispatcher
 		m_WSProjectEventManager.addListener(handler, null);      
    }
 
-	/**
+	
+/**
 	 * Removes a listener from the current list.
 	 *
 	 * @param sink[in] The listener to be removed.
@@ -133,7 +135,8 @@ public class WorkspaceEventDispatcher extends EventDispatcher
 		m_WSProjectEventManager.removeListener(sink); 
 	}
 	
-   /**
+   
+/**
 	 *
 	 * Registers the passed in event sink with this dispatcher.
 	 *
@@ -148,7 +151,8 @@ public class WorkspaceEventDispatcher extends EventDispatcher
 		m_WSProjElementEventManager.addListener( sink, null );
    }
 
-	/**
+	
+/**
 	 * Removes a listener from the current list.
 	 *
 	 * @param sink[in] The listener to be removed.
@@ -159,7 +163,8 @@ public class WorkspaceEventDispatcher extends EventDispatcher
 		m_WSProjElementEventManager.removeListener(sink);
 	}
 	
-	/**
+	
+/**
 	 *
 	 * Registers the passed in event sink with this dispatcher.
 	 *
@@ -174,7 +179,8 @@ public class WorkspaceEventDispatcher extends EventDispatcher
 		m_WSElementModEventManager.addListener( sink, null );
    }	
 
-	/**
+	
+/**
 	 * Removes a listener from the current list.
 	 *
 	 * @param sink[in] The listener to be removed.
@@ -185,7 +191,8 @@ public class WorkspaceEventDispatcher extends EventDispatcher
 		m_WSElementModEventManager.removeListener(sink);
 	}
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.workspacemanagement.IWorkspaceEventDispatcher#fireWorkspacePreCreate(org.netbeans.modules.uml.core.workspacemanagement.IWorkspacePreCreateEventPayload, boolean)
     */
    public boolean fireWorkspacePreCreate(IWorkspacePreCreateEventPayload payLoad)
@@ -212,7 +219,8 @@ public class WorkspaceEventDispatcher extends EventDispatcher
       
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.workspacemanagement.IWorkspaceEventDispatcher#fireWorkspaceCreated(org.netbeans.modules.uml.core.workspacemanagement.IWorkspace, org.netbeans.modules.uml.core.eventframework.IEventPayload)
     */
    public void fireWorkspaceCreated(IWorkspace space, IEventPayload payLoad)
@@ -232,7 +240,8 @@ public class WorkspaceEventDispatcher extends EventDispatcher
       
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.workspacemanagement.IWorkspaceEventDispatcher#fireWorkspacePreOpen(java.lang.String, org.netbeans.modules.uml.core.eventframework.IEventPayload)
     */
    public boolean fireWorkspacePreOpen(String fileName, IEventPayload payLoad)
@@ -259,7 +268,8 @@ public class WorkspaceEventDispatcher extends EventDispatcher
       return proceed;
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.workspacemanagement.IWorkspaceEventDispatcher#fireWorkspaceOpened(org.netbeans.modules.uml.core.workspacemanagement.IWorkspace, org.netbeans.modules.uml.core.eventframework.IEventPayload)
     */
    public void fireWorkspaceOpened(IWorkspace space, IEventPayload payLoad)
@@ -278,7 +288,8 @@ public class WorkspaceEventDispatcher extends EventDispatcher
       }      
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.workspacemanagement.IWorkspaceEventDispatcher#fireWorkspacePreSave(java.lang.String, org.netbeans.modules.uml.core.eventframework.IEventPayload)
     */
    public boolean fireWorkspacePreSave(String location, IEventPayload payLoad)
@@ -305,7 +316,8 @@ public class WorkspaceEventDispatcher extends EventDispatcher
       return proceed;
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.workspacemanagement.IWorkspaceEventDispatcher#fireWorkspaceSaved(org.netbeans.modules.uml.core.workspacemanagement.IWorkspace, org.netbeans.modules.uml.core.eventframework.IEventPayload)
     */
    public void fireWorkspaceSaved(IWorkspace space, IEventPayload payLoad)
@@ -325,7 +337,8 @@ public class WorkspaceEventDispatcher extends EventDispatcher
       
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.workspacemanagement.IWorkspaceEventDispatcher#fireWorkspacePreClose(org.netbeans.modules.uml.core.workspacemanagement.IWorkspace, org.netbeans.modules.uml.core.eventframework.IEventPayload, boolean)
     */
    public boolean fireWorkspacePreClose(IWorkspace space, IEventPayload payLoad)
@@ -354,7 +367,8 @@ public class WorkspaceEventDispatcher extends EventDispatcher
       return proceed;      
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.workspacemanagement.IWorkspaceEventDispatcher#fireWorkspaceClosed(org.netbeans.modules.uml.core.workspacemanagement.IWorkspace, org.netbeans.modules.uml.core.eventframework.IEventPayload)
     */
    public void fireWorkspaceClosed(IWorkspace space, IEventPayload payLoad)
@@ -374,7 +388,8 @@ public class WorkspaceEventDispatcher extends EventDispatcher
       }
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.workspacemanagement.IWorkspaceEventDispatcher#fireWSProjectPreCreate(org.netbeans.modules.uml.core.workspacemanagement.IWorkspace, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell, org.netbeans.modules.uml.core.eventframework.IEventPayload)
     */
    public IResultCell fireWSProjectPreCreate(IWorkspace space, String projectName, IEventPayload payLoad)
@@ -410,7 +425,8 @@ public class WorkspaceEventDispatcher extends EventDispatcher
       return retVal;
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.workspacemanagement.IWorkspaceEventDispatcher#fireWSProjectCreated(org.netbeans.modules.uml.core.workspacemanagement.IWSProject, org.netbeans.modules.uml.core.eventframework.IEventPayload)
     */
    public void fireWSProjectCreated(IWSProject project, IEventPayload payLoad)
@@ -429,7 +445,8 @@ public class WorkspaceEventDispatcher extends EventDispatcher
       }      
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.workspacemanagement.IWorkspaceEventDispatcher#fireWSProjectPreOpen(org.netbeans.modules.uml.core.workspacemanagement.IWorkspace, java.lang.String, org.netbeans.modules.uml.core.eventframework.IEventPayload)
     */
    public boolean fireWSProjectPreOpen(IWorkspace project, 
@@ -464,7 +481,8 @@ public class WorkspaceEventDispatcher extends EventDispatcher
       return proceed;
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.workspacemanagement.IWorkspaceEventDispatcher#fireWSProjectOpened(org.netbeans.modules.uml.core.workspacemanagement.IWSProject, org.netbeans.modules.uml.core.eventframework.IEventPayload)
     */
    public void fireWSProjectOpened(IWSProject project, IEventPayload payLoad)
@@ -483,7 +501,8 @@ public class WorkspaceEventDispatcher extends EventDispatcher
       }
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.workspacemanagement.IWorkspaceEventDispatcher#fireWSProjectPreRemove(org.netbeans.modules.uml.core.workspacemanagement.IWSProject, org.netbeans.modules.uml.core.eventframework.IEventPayload)
     */
    public boolean fireWSProjectPreRemove(IWSProject project, IEventPayload payLoad)
@@ -510,7 +529,8 @@ public class WorkspaceEventDispatcher extends EventDispatcher
       return proceed;
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.workspacemanagement.IWorkspaceEventDispatcher#fireWSProjectRemoved(org.netbeans.modules.uml.core.workspacemanagement.IWSProject, org.netbeans.modules.uml.core.eventframework.IEventPayload)
     */
    public void fireWSProjectRemoved(IWSProject project, IEventPayload payLoad)
@@ -530,7 +550,8 @@ public class WorkspaceEventDispatcher extends EventDispatcher
       
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.workspacemanagement.IWorkspaceEventDispatcher#fireWSProjectPreInsert(org.netbeans.modules.uml.core.workspacemanagement.IWorkspace, java.lang.String, org.netbeans.modules.uml.core.eventframework.IEventPayload)
     */
    public boolean fireWSProjectPreInsert(IWorkspace space, String projectName, IEventPayload payLoad)
@@ -563,7 +584,8 @@ public class WorkspaceEventDispatcher extends EventDispatcher
       return proceed;
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.workspacemanagement.IWorkspaceEventDispatcher#fireWSProjectInserted(org.netbeans.modules.uml.core.workspacemanagement.IWSProject, org.netbeans.modules.uml.core.eventframework.IEventPayload)
     */
    public void fireWSProjectInserted(IWSProject project, IEventPayload payLoad)
@@ -582,7 +604,8 @@ public class WorkspaceEventDispatcher extends EventDispatcher
       }
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.workspacemanagement.IWorkspaceEventDispatcher#fireWSProjectPreRename(org.netbeans.modules.uml.core.workspacemanagement.IWSProject, java.lang.String, org.netbeans.modules.uml.core.eventframework.IEventPayload)
     */
    public boolean fireWSProjectPreRename(IWSProject project, String newName, IEventPayload payLoad)
@@ -615,7 +638,8 @@ public class WorkspaceEventDispatcher extends EventDispatcher
       return proceed;
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.workspacemanagement.IWorkspaceEventDispatcher#fireWSProjectRenamed(org.netbeans.modules.uml.core.workspacemanagement.IWSProject, java.lang.String, org.netbeans.modules.uml.core.eventframework.IEventPayload)
     */
    public void fireWSProjectRenamed(IWSProject project, String oldName, IEventPayload payLoad)
@@ -639,7 +663,8 @@ public class WorkspaceEventDispatcher extends EventDispatcher
       }
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.workspacemanagement.IWorkspaceEventDispatcher#fireWSProjectPreClose(org.netbeans.modules.uml.core.workspacemanagement.IWSProject, org.netbeans.modules.uml.core.eventframework.IEventPayload)
     */
    public boolean fireWSProjectPreClose(IWSProject project, IEventPayload payLoad)
@@ -666,7 +691,8 @@ public class WorkspaceEventDispatcher extends EventDispatcher
       return proceed;
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.workspacemanagement.IWorkspaceEventDispatcher#fireWSProjectClosed(org.netbeans.modules.uml.core.workspacemanagement.IWSProject, org.netbeans.modules.uml.core.eventframework.IEventPayload)
     */
    public void fireWSProjectClosed(IWSProject project, IEventPayload payLoad)
@@ -685,7 +711,8 @@ public class WorkspaceEventDispatcher extends EventDispatcher
       }
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.workspacemanagement.IWorkspaceEventDispatcher#fireWSProjectPreSave(org.netbeans.modules.uml.core.workspacemanagement.IWSProject, org.netbeans.modules.uml.core.eventframework.IEventPayload)
     */
    public boolean fireWSProjectPreSave(IWSProject project, IEventPayload payLoad)
@@ -712,7 +739,8 @@ public class WorkspaceEventDispatcher extends EventDispatcher
       return proceed;
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.workspacemanagement.IWorkspaceEventDispatcher#fireWSProjectSaved(org.netbeans.modules.uml.core.workspacemanagement.IWSProject, org.netbeans.modules.uml.core.eventframework.IEventPayload)
     */
    public void fireWSProjectSaved(IWSProject project, IEventPayload payLoad)
@@ -731,7 +759,8 @@ public class WorkspaceEventDispatcher extends EventDispatcher
       }
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.workspacemanagement.IWorkspaceEventDispatcher#fireWSElementPreCreate(org.netbeans.modules.uml.core.workspacemanagement.IWSProject, java.lang.String, java.lang.String, java.lang.String, org.netbeans.modules.uml.core.eventframework.IEventPayload)
     */
    public boolean fireWSElementPreCreate(IWSProject wsProject,
@@ -771,7 +800,8 @@ public class WorkspaceEventDispatcher extends EventDispatcher
       return proceed;
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.workspacemanagement.IWorkspaceEventDispatcher#fireWSElementCreated(org.netbeans.modules.uml.core.workspacemanagement.IWSElement, org.netbeans.modules.uml.core.eventframework.IEventPayload)
     */
    public void fireWSElementCreated(IWSElement element, IEventPayload payLoad)
@@ -790,7 +820,8 @@ public class WorkspaceEventDispatcher extends EventDispatcher
       }
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.workspacemanagement.IWorkspaceEventDispatcher#fireWSElementPreSave(org.netbeans.modules.uml.core.workspacemanagement.IWSElement, org.netbeans.modules.uml.core.eventframework.IEventPayload)
     */
    public boolean fireWSElementPreSave(IWSElement wsProject, IEventPayload payLoad)
@@ -817,7 +848,8 @@ public class WorkspaceEventDispatcher extends EventDispatcher
    return proceed;
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.workspacemanagement.IWorkspaceEventDispatcher#fireWSElementSaved(org.netbeans.modules.uml.core.workspacemanagement.IWSElement, org.netbeans.modules.uml.core.eventframework.IEventPayload)
     */
    public void fireWSElementSaved(IWSElement element, IEventPayload payLoad)
@@ -836,7 +868,8 @@ public class WorkspaceEventDispatcher extends EventDispatcher
       }
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.workspacemanagement.IWorkspaceEventDispatcher#fireWSElementPreRemove(org.netbeans.modules.uml.core.workspacemanagement.IWSElement, org.netbeans.modules.uml.core.eventframework.IEventPayload)
     */
    public boolean fireWSElementPreRemove(IWSElement wsProject, IEventPayload payLoad)
@@ -863,7 +896,8 @@ public class WorkspaceEventDispatcher extends EventDispatcher
       return proceed;
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.workspacemanagement.IWorkspaceEventDispatcher#fireWSElementRemoved(org.netbeans.modules.uml.core.workspacemanagement.IWSElement, org.netbeans.modules.uml.core.eventframework.IEventPayload)
     */
    public void fireWSElementRemoved(IWSElement element, IEventPayload payLoad)
@@ -882,7 +916,8 @@ public class WorkspaceEventDispatcher extends EventDispatcher
       }  
    }
    	
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.workspacemanagement.IWorkspaceEventDispatcher#fireWSElementPreNameChanged(org.netbeans.modules.uml.core.workspacemanagement.IWSElement, java.lang.String, org.netbeans.modules.uml.core.eventframework.IEventPayload)
     */
    public boolean fireWSElementPreNameChanged(IWSElement element, 
@@ -916,7 +951,8 @@ public class WorkspaceEventDispatcher extends EventDispatcher
       return proceed;
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.workspacemanagement.IWorkspaceEventDispatcher#fireWSElementNameChanged(org.netbeans.modules.uml.core.workspacemanagement.IWSElement, org.netbeans.modules.uml.core.eventframework.IEventPayload)
     */
    public void fireWSElementNameChanged(IWSElement element, IEventPayload payLoad)
@@ -935,7 +971,8 @@ public class WorkspaceEventDispatcher extends EventDispatcher
       }
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.workspacemanagement.IWorkspaceEventDispatcher#fireWSElementPreOwnerChange(org.netbeans.modules.uml.core.workspacemanagement.IWSElement, org.netbeans.modules.uml.core.workspacemanagement.IWSProject, org.netbeans.modules.uml.core.eventframework.IEventPayload)
     */
    public boolean fireWSElementPreOwnerChange(IWSElement element, 
@@ -969,7 +1006,8 @@ public class WorkspaceEventDispatcher extends EventDispatcher
       return proceed;	
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.workspacemanagement.IWorkspaceEventDispatcher#fireWSElementOwnerChanged(org.netbeans.modules.uml.core.workspacemanagement.IWSElement, org.netbeans.modules.uml.core.eventframework.IEventPayload)
     */
    public void fireWSElementOwnerChanged(IWSElement element, IEventPayload payLoad)
@@ -988,7 +1026,8 @@ public class WorkspaceEventDispatcher extends EventDispatcher
       }
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.workspacemanagement.IWorkspaceEventDispatcher#fireWSElementPreLocationChanged(org.netbeans.modules.uml.core.workspacemanagement.IWSElement, java.lang.String, org.netbeans.modules.uml.core.eventframework.IEventPayload)
     */
    public boolean fireWSElementPreLocationChanged(IWSElement element, 
@@ -1022,7 +1061,8 @@ public class WorkspaceEventDispatcher extends EventDispatcher
       return proceed;
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.workspacemanagement.IWorkspaceEventDispatcher#fireWSElementLocationChanged(org.netbeans.modules.uml.core.workspacemanagement.IWSElement, org.netbeans.modules.uml.core.eventframework.IEventPayload)
     */
    public void fireWSElementLocationChanged(IWSElement element, IEventPayload payLoad)
@@ -1041,7 +1081,8 @@ public class WorkspaceEventDispatcher extends EventDispatcher
       }
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.workspacemanagement.IWorkspaceEventDispatcher#fireWSElementPreDataChanged(org.netbeans.modules.uml.core.workspacemanagement.IWSElement, java.lang.String, org.netbeans.modules.uml.core.eventframework.IEventPayload)
     */
    public boolean fireWSElementPreDataChanged(IWSElement element, 
@@ -1075,7 +1116,8 @@ public class WorkspaceEventDispatcher extends EventDispatcher
       return proceed;
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.workspacemanagement.IWorkspaceEventDispatcher#fireWSElementDataChanged(org.netbeans.modules.uml.core.workspacemanagement.IWSElement, org.netbeans.modules.uml.core.eventframework.IEventPayload)
     */
    public void fireWSElementDataChanged(IWSElement element, IEventPayload payLoad)
@@ -1094,7 +1136,8 @@ public class WorkspaceEventDispatcher extends EventDispatcher
       }                            
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.workspacemanagement.IWorkspaceEventDispatcher#fireWSElementPreDocChanged(org.netbeans.modules.uml.core.workspacemanagement.IWSElement, java.lang.String, org.netbeans.modules.uml.core.eventframework.IEventPayload)
     */
    public boolean fireWSElementPreDocChanged(IWSElement element, 
@@ -1128,7 +1171,8 @@ public class WorkspaceEventDispatcher extends EventDispatcher
       return proceed;
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.workspacemanagement.IWorkspaceEventDispatcher#fireWSElementDocChanged(org.netbeans.modules.uml.core.workspacemanagement.IWSElement, org.netbeans.modules.uml.core.eventframework.IEventPayload)
     */
    public void fireWSElementDocChanged(IWSElement element, IEventPayload payLoad)
@@ -1147,7 +1191,8 @@ public class WorkspaceEventDispatcher extends EventDispatcher
       }
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.workspacemanagement.IWorkspaceEventDispatcher#fireWSElementPreModify(org.netbeans.modules.uml.core.workspacemanagement.IWSElement, org.netbeans.modules.uml.core.eventframework.IEventPayload)
     */
    public boolean fireWSElementPreModify(IWSElement wsProject, IEventPayload payLoad)
@@ -1174,7 +1219,8 @@ public class WorkspaceEventDispatcher extends EventDispatcher
       return proceed;
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.workspacemanagement.IWorkspaceEventDispatcher#fireWSElementModified(org.netbeans.modules.uml.core.workspacemanagement.IWSElement, org.netbeans.modules.uml.core.eventframework.IEventPayload)
     */
    public void fireWSElementModified(IWSElement element, IEventPayload payLoad)
@@ -1193,7 +1239,8 @@ public class WorkspaceEventDispatcher extends EventDispatcher
       }
    }
    
-   /**
+   
+/**
 	*
 	* Dispatches the OnWSElementPreAliasChanged event.
 	*
@@ -1236,7 +1283,8 @@ public class WorkspaceEventDispatcher extends EventDispatcher
    		return proceed;
    }
    
-   /**
+   
+/**
 	*
 	* Dispatches the OnWSElementAliasChanged event.
 	*

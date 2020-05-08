@@ -55,7 +55,8 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 /**
  */
 public class REParameter extends ParserData implements IREParameter {
-    /**
+    
+/**
      * Specifies an expression whose evaluation yields a value to be used
      * when no argument is supplied for the Parameter.
      * @param pVal [out] The default value.
@@ -74,7 +75,8 @@ public class REParameter extends ParserData implements IREParameter {
         return null;
     }
     
-    /**
+    
+/**
      * Specifies what kind of a Parameter is required.  A parameter can be
      * an in parameter,  out parameter, or in/out parameter."
      * @param pVal [out] The parameter kind.
@@ -106,7 +108,8 @@ public class REParameter extends ParserData implements IREParameter {
         return mul;
     }
     
-    /**
+    
+/**
      * Designates a type to which an argument value must conform.
      * @param pVal [out] The parameter type.
      */
@@ -116,7 +119,8 @@ public class REParameter extends ParserData implements IREParameter {
         return retVal.replace(".", "::");
     }
     
-    /**
+    
+/**
      * Retrieve the name of the parameter.
      * @param pVal [out] The name of the parameter.
      */
@@ -124,7 +128,8 @@ public class REParameter extends ParserData implements IREParameter {
         return XMLManip.getAttributeValue(getEventData(), "name");
     }
     
-    /**
+    
+/**
      * Specifies if the parameter is a primitive or an object instance.
      *
      * @param *pVal [out] True if primitive, False otherwise.

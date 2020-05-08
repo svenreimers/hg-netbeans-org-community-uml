@@ -43,11 +43,8 @@
  */
 
 
-/*
- * File       : SubExpressionProxy.java
- * Created on : Dec 10, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.expression;
 
 import org.dom4j.Node;
@@ -61,9 +58,8 @@ import org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.transl
 import org.netbeans.modules.uml.core.reverseengineering.reframework.IREClass;
 import org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ITokenDescriptor;
 
-/**
- * @author Aztec
- */
+
+
 public class SubExpressionProxy implements IExpressionProxy
 {
 	private ExpressionStateHandler mSubExpression = null;
@@ -73,7 +69,8 @@ public class SubExpressionProxy implements IExpressionProxy
 		mSubExpression = expression;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.expression.IExpressionProxy#clear()
      */
     public void clear()
@@ -82,7 +79,8 @@ public class SubExpressionProxy implements IExpressionProxy
 			mSubExpression= null;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.expression.IExpressionProxy#getEndPosition()
      */
     public long getEndPosition()
@@ -104,7 +102,8 @@ public class SubExpressionProxy implements IExpressionProxy
     }
 
    
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.expression.IExpressionProxy#getStartLine()
      */
     public long getStartLine()
@@ -124,7 +123,8 @@ public class SubExpressionProxy implements IExpressionProxy
 		return retVal;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.expression.IExpressionProxy#getStartPosition()
      */
     public long getStartPosition()
@@ -156,7 +156,8 @@ public class SubExpressionProxy implements IExpressionProxy
 	}
 
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.expression.IExpressionProxy#sendOperationEvents(org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.InstanceInformation, org.netbeans.modules.uml.core.reverseengineering.reframework.IREClass, org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.SymbolTable, org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.IREClassLoader, org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.IUMLParserEventDispatcher, org.dom4j.Node)
      */
     public InstanceInformation sendOperationEvents(InstanceInformation pInstance,
@@ -174,7 +175,8 @@ public class SubExpressionProxy implements IExpressionProxy
 		return retVal;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.expression.IExpressionProxy#writeAsXMI(org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.InstanceInformation, org.dom4j.Node, org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.SymbolTable, org.netbeans.modules.uml.core.reverseengineering.reframework.IREClass, org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.IREClassLoader)
      */
     public ETPairT<InstanceInformation, Node> writeAsXMI(InstanceInformation pInfo,

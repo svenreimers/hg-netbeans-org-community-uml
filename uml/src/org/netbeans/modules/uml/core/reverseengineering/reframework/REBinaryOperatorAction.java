@@ -52,7 +52,8 @@ public class REBinaryOperatorAction extends MethodDetailParserData
         implements IREBinaryOperatorAction
 {
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.IREBinaryOperatorAction#getStringRepresentation()
      */
     public String getStringRepresentation()

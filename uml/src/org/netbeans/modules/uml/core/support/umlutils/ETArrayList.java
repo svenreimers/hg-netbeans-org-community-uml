@@ -77,7 +77,8 @@ public class ETArrayList<TypeName> extends ArrayList<TypeName> implements ETList
 		return get(i);
 	}
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.support.umlutils.ETListEx#addIfNotInList(null)
     */
    public void addIfNotInList(TypeName element)
@@ -88,7 +89,8 @@ public class ETArrayList<TypeName> extends ArrayList<TypeName> implements ETList
       }
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.support.umlutils.ETListEx#isInList(null)
     */
    public boolean isInList(TypeName element)
@@ -97,7 +99,8 @@ public class ETArrayList<TypeName> extends ArrayList<TypeName> implements ETList
       return contains( element );
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.support.umlutils.ETListEx#removeItem(null)
     */
    public void removeItem(TypeName element)
@@ -105,7 +108,8 @@ public class ETArrayList<TypeName> extends ArrayList<TypeName> implements ETList
       remove( element );
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.support.umlutils.ETListEx#removeThese()
     */
    public void removeThese( ETList<TypeName> elements )
@@ -113,7 +117,8 @@ public class ETArrayList<TypeName> extends ArrayList<TypeName> implements ETList
       removeAll( elements );
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.support.umlutils.ETListEx#addThese()
     */
    public void addThese( ETList<TypeName> elements )
@@ -121,7 +126,8 @@ public class ETArrayList<TypeName> extends ArrayList<TypeName> implements ETList
       addAll( elements );
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.support.umlutils.ETListEx#removeDuplicates()
     */
    public void removeDuplicates()

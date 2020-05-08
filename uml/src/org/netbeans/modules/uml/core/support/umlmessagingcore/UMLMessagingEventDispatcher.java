@@ -58,7 +58,8 @@ public class UMLMessagingEventDispatcher extends EventDispatcher
 {
 	private EventManager< IMessengerEventsSink > m_MessengerSink = null;
 	
-	/**
+	
+/**
 	 * 
 	 */
 	public UMLMessagingEventDispatcher() 
@@ -67,7 +68,8 @@ public class UMLMessagingEventDispatcher extends EventDispatcher
 		m_MessengerSink = new EventManager< IMessengerEventsSink >();
 	}
 
-	/**
+	
+/**
 	 * Registers a sink that will receive all notifications concerning Messaging.
 	 *
 	 * @param handler[in]
@@ -77,7 +79,8 @@ public class UMLMessagingEventDispatcher extends EventDispatcher
 		m_MessengerSink.addListener(handler,null);
    }
 
-   /**
+   
+/**
 	* Removes a sink listening for messaging events.
 	*
 	* @param cookie[in]
@@ -89,7 +92,8 @@ public class UMLMessagingEventDispatcher extends EventDispatcher
 		m_MessengerSink.removeListener(handler);      
    }
 
-   /**
+   
+/**
 	* Calling this method will result in the firing of any listeners
 	* interested in this event
 	*
@@ -112,7 +116,8 @@ public class UMLMessagingEventDispatcher extends EventDispatcher
 		}      
    }
 
-   /**
+   
+/**
 	* IEventDispatcher override.  Returns the number of registered sinks
 	*/
    public int getNumRegisteredSinks()

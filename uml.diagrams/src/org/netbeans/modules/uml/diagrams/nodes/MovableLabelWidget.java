@@ -78,10 +78,8 @@ import org.openide.util.Lookup;
 import org.openide.util.lookup.AbstractLookup;
 import org.openide.util.lookup.InstanceContent;
 
-/**
- *
- * @author Sheryl Su
- */
+
+
 public class MovableLabelWidget extends EditableCompartmentWidget implements Widget.Dependency, DiagramNodeWriter
 {
 
@@ -108,7 +106,8 @@ public class MovableLabelWidget extends EditableCompartmentWidget implements Wid
         this(scene, nodeWidget, element, widgetID, displayName, null, null);
     }
 
-    /**
+    
+/**
      * 
      * @param scene
      * @param parent

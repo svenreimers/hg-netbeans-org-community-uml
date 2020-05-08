@@ -84,7 +84,8 @@ public class AssociateUtilities {
         super();
     }
     
-    /**
+    
+/**
      * Basic setup of the grid
      * @param grid[in]		The grid to hide/show the columns for
      */
@@ -92,7 +93,8 @@ public class AssociateUtilities {
         // Don't think we need to do this anymore because it will
         // be handled by the FindTableModel
     }
-    /**
+    
+/**
      * Determines from preferences what columns to hide/show for find results
      * @param tableData[in]		The grid to hide/show the columns for
      */
@@ -112,7 +114,8 @@ public class AssociateUtilities {
     }
     
     
-    /**
+    
+/**
      * Load the combo boxes with the last few selections
      *
      * @param[in] str       The string to search for in the ini file which determines which string to
@@ -145,7 +148,8 @@ public class AssociateUtilities {
         }
     }
     
-    /**
+    
+/**
      * Save the strings entered in the combo boxes for future use
      *
      * @param[in] str       The string to save to in the ini file
@@ -203,7 +207,8 @@ public class AssociateUtilities {
         }
     }
     
-    /**
+    
+/**
      *	Is the passed in string part of the passed in list
      *
      *
@@ -225,13 +230,15 @@ public class AssociateUtilities {
         return inList;
     }
     
-    /**
+    
+/**
      * Get all of the projects found in the current workspace and populate the list box with their names
      *
      * @return
      *
      */
-        /*public static void populateProjectList(JList box)
+        
+/*public static void populateProjectList(JList box)
         {
                 if (box != null)
                 {
@@ -271,7 +278,8 @@ public class AssociateUtilities {
                 }
         }*/
     
-     /* During consolidation of associate-with, this method required uml/project to be added as a dependency in project.xml, and this was
+     
+/* During consolidation of associate-with, this method required uml/project to be added as a dependency in project.xml, and this was
       resulting in the circular dependency. */
     //   public static void populateProjectList(JList box)
     //    {
@@ -296,7 +304,8 @@ public class AssociateUtilities {
     //	   }
     //    }
     
-    /**
+    
+/**
      * Called when the grid is clicked on.  This will take the user to the selected element in its diagram,
      * or display a dialog with all of its occurrences.
      *
@@ -349,19 +358,14 @@ public class AssociateUtilities {
         }
         return results;
     }
-    /**
-     * Loads the grid with the elements found from the search
-     *
-     * @param[in] results   The results object that houses the information that meets the find criteria
-     *
-     * @return HRESULT
-     *
-     */
+    
+
     public static void loadResults(JTable grid, IAssociateResults pResults) {
         // not needed, handled in FindTableModel
     }
     
-    /**
+    
+/**
      * Figure out what project to select in list.  We will select the current project.  If there
      * is not a current project, we will select the first one in the list
      *
@@ -418,7 +422,8 @@ public class AssociateUtilities {
         }
     }
     
-    /**
+    
+/**
      * Set the icon in the grid
      *
      *

@@ -77,10 +77,8 @@ import org.netbeans.modules.uml.core.support.Debug;
 // this would create module dependency so I am avoiding for now
 //import org.netbeans.modules.j2ee.deployment.devmodules.api.J2eeModuleContainer;
 
-/**
- * Action that allows selection of the Java project to associate with UML project
- * @author Mike Frisino
- */
+
+
 public class AddJavaProjectAction extends CookieAction
 {
 	
@@ -109,7 +107,8 @@ public class AddJavaProjectAction extends CookieAction
     
     public void performAction(Node[] activeNodes) 
 	{
-		    /* NB60TBD
+		    
+/* NB60TBD
         try 
 		{
             UMLProjectProperties epp = 

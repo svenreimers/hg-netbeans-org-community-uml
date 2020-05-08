@@ -59,10 +59,8 @@ import org.netbeans.modules.uml.reporting.ReportTask;
 import org.netbeans.modules.uml.ui.support.commonresources.CommonResourceManager;
 import org.openide.util.NbBundle;
 
-/**
- *
- * @author Sheryl
- */
+
+
 public class StateMachineData extends ClassData
 {
     private IStateMachine element;

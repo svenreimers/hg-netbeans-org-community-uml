@@ -42,12 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File         : JavaClassUtils.java
- * Version      : 1.3
- * Description  : Utility methods for UML-Java conversion
- * Author       : Trey Spiva
- */
+
+
 package org.netbeans.modules.uml.integration.ide;
 
 import java.util.Locale;
@@ -103,45 +99,8 @@ import org.netbeans.modules.uml.core.scm.ISCMIntegrator;
 import org.netbeans.modules.uml.core.scm.ISCMTool;
 
 
-/**
- * A collection of utility methods to use when dealing with the Java naming
- * convention and the UML naming convention.
- *
- * Revision History
- * No.  Date        Who         What
- * ---  ----        ---         ----
- *   1  2002-04-23  Darshan     Added getFullyQualifiedName() to return the
- *                              fully qualified name of an INamedElement.
- *   2  2002-04-24  Darshan     Reindented methods, added method to get base
- *                              directory given an IProject.
- *   3  2002-04-30  Darshan     Added methods to map Java modifiers to Describe
- *                              codes and back.
- *   4  2002-05-10  Darshan     Changed getBaseDirectory() to call
- *                              GDProSupport's getBaseDirectory().
- *   5  2002-05-24  Darshan     Added startsWith() method to do a
- *                              case-insensitive prefix match.
- *   6  2002-05-24  Darshan     Added diagnostic method to display immediate
- *                              children of a project.
- *   7  2002-05-30  Darshan     Added convenience method to extract filename
- *                              (minus extension) from the path.
- *   8  2002-06-03  Darshan     Added methods to get and set tagged values for
- *                              an IElement.
- *   9  2002-06-14  Darshan     Optimized findAttribute() method.
- *  10  2002-06-19  Darshan     Modified behaviour of convertJavaToUML() to
- *                              suit Wolverine better.
- *  11  2002-06-20  Darshan     Fixed determineCommonRelations() to return any
- *                              association (including compositions and
- *                              aggregations), not just the vanilla association.
- *  12  2002-06-21  Darshan     Added check for primitive types before searching
- *                              for the type in the model, shifted isPrimitive
- *                              function here (from IDEProcessor), fixed
- *                              findAttribute to search for INavigableEnds as
- *                              well as IAttributes and added findAssociation.
- * 13. 2002-07-04  Mukta        Added method for deleting folder for a package.
- *
- * @author Trey Spiva
- * @version 1.0
- */
+
+
 public class JavaClassUtils {
     public static final int DESC_PUBLIC     = 0;
     public static final int DESC_PROTECTED  = 1;
@@ -150,13 +109,15 @@ public class JavaClassUtils {
 
     public static final String REF_CLASS    = "ReferenceClass";
 
-    /**
+    
+/**
      * The default contructor for JavaClassUtils.
      */
     public JavaClassUtils() {
     }
 
-    /**
+    
+/**
      *  Returns the Describe 6.0 modifier for a Java access modifier int.
      * @param  mod A Java modifier integer
      * @return A modifier as Describe expects it to be.
@@ -171,7 +132,8 @@ public class JavaClassUtils {
         return DESC_PACKAGE;
     }
 
-    /**
+    
+/**
      *  Returns the Java modifier for a Describe 6.0 access modifier int.
      * @param  mod A Describe 6.0 modifier integer
      * @return A modifier as Java expects it to be.
@@ -189,7 +151,8 @@ public class JavaClassUtils {
         }
     }
 
-    /**
+    
+/**
      *  Returns the fully-qualified name for the given named element.
      * @param element The element for which the qualified name needs to be
      *                determined.
@@ -265,7 +228,8 @@ public class JavaClassUtils {
         return type;
     }
 
-    /**
+    
+/**
      * Returns the IPackage reference if it already exists in project
      * @param name
      * @param proj
@@ -290,7 +254,8 @@ public class JavaClassUtils {
         return null;
     }
 
-    /**
+    
+/**
      * Converts a fully qualified Java classname to Describe's internal
      * naming format. Note that inner class names should be delimited by '$'
      * instead of '.' for this to work correctly.
@@ -313,7 +278,8 @@ public class JavaClassUtils {
         return retVal;
     }
 
-    /**
+    
+/**
      * Builds a UML notated name from a Java package and class name. Note that
      * inner class names should be delimited by '$' instead of '.' for this
      * to work correctly.
@@ -326,7 +292,8 @@ public class JavaClassUtils {
         return convertJavaToUML(fullScopeName);
     }
 
-    /**
+    
+/**
      * Converts a UML fully qualified name into a Java fully qualified name.
      * @param umlNam A UML formated string.
      */
@@ -344,7 +311,8 @@ public class JavaClassUtils {
         return retVal;
     }
 
-    /**
+    
+/**
      *  Given a package name and a class name, joins them to form a full class
      * name. Caveat: inner class names will be separated by '$' instead of '.'
      *  Ex: formFullClassName("com.si", "Outer") returns "com.si.Outer"
@@ -357,7 +325,8 @@ public class JavaClassUtils {
         return (pack == null || pack.equals(""))? rep : (pack + "." + rep);
     }
 
-    /**
+    
+/**
      *  gets the name of an inner class as Outer.Inner given a fully qualified
      * class name (with the inner class specified as Outer$Inner).
      *   For a class com.foo.Outer$Inner, returns "Outer.Inner"
@@ -368,7 +337,8 @@ public class JavaClassUtils {
         return getShortClassName(fullClassName).replace('$', '.');
     }
 
-    /**
+    
+/**
      *  removes the package prefix from a fully qualified class name. Inner
      * classes should be written as Outer$Inner.
      *  For a class com.foo.Outer$Inner, returns "Outer$Inner"
@@ -387,7 +357,8 @@ public class JavaClassUtils {
         return clsName;
     }
 
-    /**
+    
+/**
      *  gets the name of the inner class from a fully qualified class name.
      *   For a class com.foo.Outer$Inner, returns "Inner"
      *   For a class com.foo.Unique, returns "Unique"
@@ -402,7 +373,8 @@ public class JavaClassUtils {
         return clsName;
     }
 
-    /**
+    
+/**
      *  Gets the name of the outermost class from a fully qualified name.
      *  For a class com.foo.Outer$Inner1$Inner2, returns "com.foo.Outer"
      *  For a class com.foo.Unique, returns "com.foo.Unique"
@@ -416,7 +388,8 @@ public class JavaClassUtils {
                                fullClassName.substring(0, dolPos);
     }
 
-    /**
+    
+/**
      *  returns the package name, given a fully qualified class name. It should
      * be noted that inner classes should not be represented as Outer.Inner, but
      * as Outer$Inner for this to work.
@@ -431,7 +404,8 @@ public class JavaClassUtils {
         return pkg;
     }
 
-    /**
+    
+/**
      * Replaces the "." with "::" in package name string
      * @param name
      * @return
@@ -449,7 +423,8 @@ public class JavaClassUtils {
         return retVal;
     }
 
-    /**
+    
+/**
      * Replaces the "." with "::" in package name string
      * @param name
      * @return
@@ -504,7 +479,8 @@ public class JavaClassUtils {
     }
 
 
-    /**
+    
+/**
      * Finds the symbols with the 'file' tagged value set to the specified file
      * name and deletes them
      * @param fileName
@@ -551,11 +527,13 @@ public class JavaClassUtils {
         }
     }
 
-    /**
+    
+/**
      * Finds the package and deletes it.
      * @param fileName
      */
-    /*public static void findAndDeletePackage(String packageName) {
+    
+/*public static void findAndDeletePackage(String packageName) {
         IProject owner = GDProSupport.getCurrentProject();
         INamedElements elems = owner.getOwnedElements();
         if(elems != null) {
@@ -572,7 +550,8 @@ public class JavaClassUtils {
             }
         }
     }*/
-    /**
+    
+/**
      * Deletes a package given its fully qualified name.
      * @param packageName - fully qualified name : "a.b.c"
      */
@@ -652,7 +631,8 @@ public class JavaClassUtils {
         return findElement(null, qualifiedName, type);
     }
 
-    /**
+    
+/**
      * Finds the INamedElement given its qualified name
      * @param qualifiedName
      * @return
@@ -661,7 +641,8 @@ public class JavaClassUtils {
         return findElement(qualifiedName, null);
     }
 
-    /**
+    
+/**
      * Finds the IClass element for the qualified name
      * @param qualifiedName
      * @return
@@ -684,7 +665,8 @@ public class JavaClassUtils {
         return null;
     }
 
-    /**
+    
+/**
      *  Given a class name as com.foo.Outer$Inner$Innermost, returns a String[]
      *  = { "Outer", "Inner", "Innermost" }.
      */
@@ -706,7 +688,8 @@ public class JavaClassUtils {
         return rets;
     }
 
-    /**
+    
+/**
      *  Returns true if the given string has the supplied prefix, ignoring
      * case.
      *
@@ -721,7 +704,8 @@ public class JavaClassUtils {
         return full.toLowerCase().startsWith(prefix.toLowerCase());
     }
 
-    /**
+    
+/**
      *  Returns the name of the specificed file from its absolute path,
      * stripping off extension and directory structure.
      *
@@ -752,7 +736,8 @@ public class JavaClassUtils {
         return findOperation(c, minf.getName(), minf.getParameters());
     }
 
-    /**
+    
+/**
      * Searchs a CLD_Class for a operation that matches the specified parameters
      *
      * @param sym The symbol to search
@@ -790,7 +775,8 @@ public class JavaClassUtils {
         return retVal;
     }
 
-    /**
+    
+/**
      * Checks the operation is the desired operation.  The name of the operation
      * and it's parameters are check to verify the operation.
      * @param op A Describe "Operations" attribute.
@@ -824,7 +810,8 @@ public class JavaClassUtils {
         return retVal;
     }
 
-    /**
+    
+/**
      * Test if a GDPro operation has the required parameters.
      *
      * @param opParams  The parameters in GDPro to test.
@@ -889,7 +876,8 @@ public class JavaClassUtils {
         return findAttribute(c, minf.getName());
     }
 
-    /**
+    
+/**
      *  Search the attributes of the given classifier for one named 'name'. If
      * no attributes are found, this method will look for an association with a
      * navigable end of the same name.
@@ -952,7 +940,8 @@ public class JavaClassUtils {
         return determineCommonRelations(els);
     }
 
-    /**
+    
+/**
      * Returns the IAssociation element if the association exists between
      * the two classes
      * @param elems
@@ -978,7 +967,8 @@ public class JavaClassUtils {
         return null;
     }
 
-    /**
+    
+/**
      *  Tags a classifier (even an interface) as a reference class. Reference
      * classes receive special treatment in that the model-source roundtrip
      * ignores events on reference classes and that reference classes may be
@@ -991,7 +981,8 @@ public class JavaClassUtils {
         setTaggedValue(cl, REF_CLASS, (isRef? "true" : null));
     }
 
-    /**
+    
+/**
      *  Returns true if the given classifier should be considered a reference
      * class.
      *
@@ -1003,7 +994,8 @@ public class JavaClassUtils {
                       "true".equals(getTaggedValue(cl, REF_CLASS));
     }
 
-    /**
+    
+/**
      * Returns true if this classifier is not a participant in any
      * relationship. Orphan reference classes should be deleted when detected.
      *
@@ -1088,7 +1080,8 @@ public class JavaClassUtils {
         return retVal;
     }
 
-  /**
+  
+/**
    * When a java file is read-only we just tell the user that the file is read-only so
    * no modification can be done. But if the file is read-only because it is versioned
    * it needs to be checked out to make the modification. When there are changes in the
@@ -1154,7 +1147,8 @@ public class JavaClassUtils {
         return false;
     }
 
-    /**
+    
+/**
      *  When a file is renamed, the model element does not change its name, the
      * versioned element name remains same. But this is not the case with the
      * java source file.  So we need to checkin the new source file. Later on
@@ -1244,7 +1238,8 @@ public class JavaClassUtils {
         }
     }
 
-    /**
+    
+/**
      * Given a fully-qualified Java element name, returns the parent of that
      * element. The element name may be delimited by '.' (package names) and '$'
      * (inner class names).

@@ -49,6 +49,7 @@ import org.netbeans.modules.uml.core.metamodel.common.commonstatemachines.IProto
 import org.netbeans.modules.uml.core.AbstractUMLTestCase;
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IInterface;
 
+
 /**
  * Test cases for Port.
  */
@@ -61,7 +62,8 @@ public class PortTestCase extends AbstractUMLTestCase
 
     private IPort port;
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see junit.framework.TestCase#setUp()
      */
     protected void setUp() throws Exception
@@ -71,7 +73,8 @@ public class PortTestCase extends AbstractUMLTestCase
         project.addElement(port);
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see junit.framework.TestCase#tearDown()
      */
     protected void tearDown() throws Exception

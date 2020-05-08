@@ -42,18 +42,14 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : INamespaceChangeRequest.java
- * Created on : Nov 24, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.roundtripframework;
 
 import org.netbeans.modules.uml.core.metamodel.core.foundation.INamespace;
 
-/**
- * @author Aztec
- */
+
+
 public interface INamespaceChangeRequest extends IChangeRequest
 {
     public String getOldNamespaceName();

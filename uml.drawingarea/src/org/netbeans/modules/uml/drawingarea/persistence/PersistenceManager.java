@@ -59,10 +59,8 @@ import org.netbeans.modules.uml.drawingarea.widgets.SubWidget;
 import org.openide.filesystems.FileObject;
 import org.openide.util.Exceptions;
 
-/**
- *
- * @author Jyothi
- */
+
+
 public class PersistenceManager {
 
     NodeWriter nodeWriter;

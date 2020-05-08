@@ -42,6 +42,7 @@
  * made subject to such option by the copyright holder.
  */
 
+
 /*
  * Created on Jun 12, 2003
  *
@@ -63,10 +64,8 @@ import javax.swing.plaf.basic.ComboPopup;
 
 
 
-/**
- * @author sumitabhk
- *
- */
+
+
 public class JRoleComboBox extends JComboBox
 {
 	private WizardRoleObject m_RoleObject = null;

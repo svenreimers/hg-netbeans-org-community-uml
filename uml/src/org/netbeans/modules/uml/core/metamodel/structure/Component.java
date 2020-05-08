@@ -329,7 +329,8 @@ public class Component extends Class implements IComponent
         return retVal;
     }
     
-    /**
+    
+/**
      * Establishes the appropriate XML elements for this UML type.
      *
      * [in] The document where this element will reside
@@ -340,7 +341,8 @@ public class Component extends Class implements IComponent
         buildNodePresence("UML:Component", doc, parent);
     }
     
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.metamodel.structure.IComponent#isInternalClassifier(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier)
     */
     public boolean getIsInternalClassifier(IClassifier classifier)

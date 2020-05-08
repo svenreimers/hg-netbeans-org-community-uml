@@ -45,10 +45,8 @@
 
 package org.netbeans.modules.uml.ui.products.ad.application;
 
-/**
- *
- * @author Trey Spiva
- */
+
+
 public interface IContainer
 {
 

@@ -48,77 +48,92 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity;
 
 public interface IStructuralFeature extends IFeature,ITypedElement
 {
-	/**
+	
+/**
 	 * property ClientChangeability
 	*/
 	public int getClientChangeability();
 
-	/**
+	
+/**
 	 * property ClientChangeability
 	*/
 	public void setClientChangeability( /* ChangeableKind */ int value );
 
-	/**
+	
+/**
 	 * Sets the type of this feature via a string type. That string will be resolved into the proper Classifier.
 	*/
 	public void setType2( String value );
 
-	/**
+	
+/**
 	 * property Type
 	*/
 	public IClassifier getType();
 
-	/**
+	
+/**
 	 * property Type
 	*/
 	public void setType( IClassifier value );
 
-	/**
+	
+/**
 	 * property Ordering
 	*/
 	public int getOrdering();
 
-	/**
+	
+/**
 	 * property Ordering
 	*/
 	public void setOrdering( /* OrderingKind */ int value );
 
-	/**
+	
+/**
 	 * property Multiplicity
 	*/
 	public IMultiplicity getMultiplicity();
 
-	/**
+	
+/**
 	 * property Multiplicity
 	*/
 	public void setMultiplicity( IMultiplicity value );
 
-	/**
+	
+/**
 	 * The name of the Classifier who specifies this Parameter's type.
 	*/
 	public String getTypeName();
 
-	/**
+	
+/**
 	 * The name of the Classifier who specifies this Parameter's type.
 	*/
 	public void setTypeName( String value );
 
-	/**
+	
+/**
 	 * The volatility state of this feature. Most applicable to the C/C++ languages.
 	*/
 	public boolean getIsVolatile();
 
-	/**
+	
+/**
 	 * The volatility state of this feature. Most applicable to the C/C++ languages.
 	*/
 	public void setIsVolatile( boolean value );
 
-	/**
+	
+/**
 	 * Determines whether or not this feature persists or not.
 	*/
 	public boolean getIsTransient();
 
-	/**
+	
+/**
 	 * Determines whether or not this feature persists or not.
 	*/
 	public void setIsTransient( boolean value );

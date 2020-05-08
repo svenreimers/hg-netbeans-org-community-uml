@@ -42,18 +42,14 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : IRoundTripModeRestorer.java
- * Created on : Nov 20, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.roundtripframework;
 
 import org.netbeans.modules.uml.core.support.umlsupport.ProductRetriever;
 
-/**
- * @author Aztec
- */
+
+
 public class RoundTripModeRestorer
 {
     private int m_originalMode;
@@ -68,7 +64,8 @@ public class RoundTripModeRestorer
         return ProductRetriever.retrieveProduct().getRoundTripController();
     }
     
-    /** 
+    
+/** 
      * Creates a RoundTripModeRestorer object
      * 
      */
@@ -78,7 +75,8 @@ public class RoundTripModeRestorer
     }
 
 
-    /** 
+    
+/** 
      * Creates a RoundTripModeRestorer object and immediately enters @a enterThisMode
      * 
      * @param enterThisMode[in] the mode you would like to enter

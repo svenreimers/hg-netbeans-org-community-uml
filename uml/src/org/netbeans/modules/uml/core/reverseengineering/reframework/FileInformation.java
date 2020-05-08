@@ -61,7 +61,8 @@ public class FileInformation implements IFileInformation
     private List<IPackageEvent>         m_Packages = 
                                                 new ArrayList<IPackageEvent>();
     
-    /** 
+    
+/** 
      * returns a list of Dependencies that were found
      * 
      * @param pVal[out] the list of found dependencies
@@ -75,7 +76,8 @@ public class FileInformation implements IFileInformation
         return m_Dependencies;
     }
 
-    /** 
+    
+/** 
      * returns a list of errors encountered
      * 
      * @param pVal[out] the list of encountered errors
@@ -89,7 +91,8 @@ public class FileInformation implements IFileInformation
         return m_Errors;
     }
 
-    /**
+    
+/**
      * Retrieves the information about a specific error.
      * 
      * @param index [in] The error to retrieve.
@@ -102,7 +105,8 @@ public class FileInformation implements IFileInformation
         return m_Errors.get(index);
     }
 
-    /**
+    
+/**
      * Retrieves the number of errors that occur in the file that was parsed.
      * 
      * @param pVal [out] The number of errors.
@@ -112,7 +116,8 @@ public class FileInformation implements IFileInformation
         return m_Errors != null? m_Errors.size() : 0;
     }
 
-    /**
+    
+/**
      * Adds an error event to the file information.
      * 
      * @param newVal [in] A new error.
@@ -124,7 +129,8 @@ public class FileInformation implements IFileInformation
         m_Errors.add(e);
     }
 
-    /**
+    
+/**
      * Retrieves the information about one of the top level classes in the soruce file.
      * 
      * @param index [in] The class to retrieve.
@@ -135,7 +141,8 @@ public class FileInformation implements IFileInformation
         return m_Classes.get(index);
     }
 
-    /**
+    
+/**
      * Adds a new class to the source file information.
      * 
      * @param newVal [in] A new class.
@@ -145,7 +152,8 @@ public class FileInformation implements IFileInformation
         m_Classes.add(newVal);
     }
 
-    /**
+    
+/**
      * Retrieves the number of top level classes found in a source file.
      * 
      * @param pVal [out] The number of top level classes.
@@ -155,7 +163,8 @@ public class FileInformation implements IFileInformation
         return m_Classes.size();
     }
 
-    /**
+    
+/**
      * Retrieves the information about one of the dependencies in the soruce file.
      * 
      * @param index [in] The dependency to retrieve.
@@ -169,7 +178,8 @@ public class FileInformation implements IFileInformation
         return m_Dependencies.get(index);
     }
 
-    /**
+    
+/**
      * Adds a new dependency to the source file information.
      * 
      * @param newVal [in] A new dependency.
@@ -181,7 +191,8 @@ public class FileInformation implements IFileInformation
         m_Dependencies.add(newVal);
     }
 
-    /**
+    
+/**
      * Retrieves the number of dependencies found in a source file.
      * 
      * @param pVal [out] The number of dependencies.
@@ -191,7 +202,8 @@ public class FileInformation implements IFileInformation
         return m_Dependencies != null? m_Dependencies.size() : 0;
     }
 
-    /** 
+    
+/** 
      * returns the number of packages found.
      * 
      * @param pVal[out] number of packages found
@@ -203,7 +215,8 @@ public class FileInformation implements IFileInformation
         return m_Packages.size();
     }
 
-    /** 
+    
+/** 
      * adds a package to this object's collection of packages
      * 
      * @param newVal[in] the package to add
@@ -215,7 +228,8 @@ public class FileInformation implements IFileInformation
         m_Packages.add(newVal);
     }
 
-    /** 
+    
+/** 
      * returns the @a index'th (zero based index) package event.
      * 
      * @param index[in] zero based index of the package event you want

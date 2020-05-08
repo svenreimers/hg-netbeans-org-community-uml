@@ -47,13 +47,12 @@ package org.netbeans.modules.uml.propertysupport.nodes;
 import org.netbeans.modules.uml.core.support.umlutils.IPropertyDefinition;
 import org.netbeans.modules.uml.core.support.umlutils.IPropertyElement;
 
-/**
- *
- * @author Trey Spiva
- */
+
+
 public class DefinitionTextProperty extends DefinitionPropertySupport
 {
-   /**
+   
+/**
     * @param def
     * @param element
     * @param writable
@@ -65,7 +64,8 @@ public class DefinitionTextProperty extends DefinitionPropertySupport
    }
    
 
-   /**
+   
+/**
     * @param def
     * @param element
     * @param writable

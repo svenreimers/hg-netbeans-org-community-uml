@@ -42,6 +42,7 @@
  * made subject to such option by the copyright holder.
  */
 
+
 /*
  * Created on Sep 16, 2003
  *
@@ -53,14 +54,13 @@ import org.dom4j.Node;
 
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.Aggregation;
 
-/**
- * @author aztec
- *
- */
+
+
 public class Extension extends Aggregation implements IExtension
 {
 
-	/**
+	
+/**
 	 * Establishes the appropriate XML elements for this UML type.
 	 *
 	 * [in] The document where this element will reside

@@ -49,10 +49,8 @@ import org.netbeans.modules.uml.core.support.umlsupport.ProductRetriever;
 import org.netbeans.modules.uml.core.support.umlutils.ElementLocator;
 import org.netbeans.modules.uml.core.support.umlutils.IElementLocator;
 
-/**
- *
- * @author treyspiva
- */
+
+
 public class ModelElementBridge
 {
     private IElement element = null;
@@ -91,7 +89,8 @@ public class ModelElementBridge
         this.projectID = element.getTopLevelId();
     }
     
-    /**
+    
+/**
     * Retrieves the project assoicated with the proxy.  The project associated
     * with the proxy is specified by the Top Level id.
     *

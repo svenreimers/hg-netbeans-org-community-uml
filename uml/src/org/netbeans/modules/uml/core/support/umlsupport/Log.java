@@ -42,12 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File         : Log.java
- * Version      : 2.0
- * Description  : Provides basic logging services for Describe IDE integrations.
- * Author       : Sumitabh Kansal
- */
+
+
 package org.netbeans.modules.uml.core.support.umlsupport;
 
 import java.io.File;
@@ -60,16 +56,14 @@ import org.netbeans.modules.uml.core.coreapplication.IPreferenceManager2;
 import org.netbeans.modules.uml.ui.products.ad.applicationcore.IADProduct;
 import org.netbeans.modules.uml.ui.support.ProductHelper;
 
-/**
- *  Provides basic logging services for Describe IDE integrations.
- *
- * @author Sumitabh Kansal
- */
+
+
 public class Log
 {
-    //kris richards - all LoggingInformation prefs have been expunged and set to empty or false.
+    
     // Therefore, most methods do nothing effectual (no writing).
-    /**
+    
+/**
     *  An autoflushing writer to the logfile.
     */
     private static PrintWriter output        = null;
@@ -104,7 +98,8 @@ public class Log
     public static int mdrChangeEventLogFlag            = 0;
     
     
-   /**
+   
+/**
     *  Forces Log to reinitialize when the next Log request is made.
     */
    public static void reset()
@@ -114,7 +109,8 @@ public class Log
       mdrChangeEventLogFlag = MDR_EVENT_FLAG_RESET;
    }
    
-   /**
+   
+/**
     *  Initializes Log.
     */
    public static void init()
@@ -129,7 +125,8 @@ public class Log
       return initialized;
    }
    
-   /**
+   
+/**
     *  Writes a string to the logfile, with an ending newline.
     */
    public static void write(String s)
@@ -137,7 +134,8 @@ public class Log
        write(s, true);
    }
    
-   /**
+   
+/**
     *  Writes a string to the logfile, with an ending newline.
     */
    public static void write(String s, boolean newline)
@@ -162,7 +160,8 @@ public class Log
        }
    }
    
-   /**
+   
+/**
     *  Writes a string to the logfile, prefixed by the current date and a
     * [Debug] tag, and terminated by a newline. Suitable for debugging log
     * messages.
@@ -174,7 +173,8 @@ public class Log
          init();
    }
    
-   /**
+   
+/**
     * Writes a string to the logfile, boxed by banner lines. Use sparingly...
     * @param s The String to write.
     * @deprecated This method is extremely noisy in the logfile and should not
@@ -184,7 +184,8 @@ public class Log
    {
    }
    
-   /**
+   
+/**
     * Dumps a stack trace of the current thread to the logfile.
     * @param s The String (or null) that will be used to describe the stack
     *          trace.
@@ -196,7 +197,8 @@ public class Log
       Log.stackTrace(new Throwable(s).fillInStackTrace());
    }
    
-   /**
+   
+/**
     *  Writes a string to the logfile, prefixed by the current date and an
     * [Entry] tag, and terminated by a newline. Suitable for function entry
     * logs.
@@ -210,7 +212,8 @@ public class Log
       
    }
    
-   /**
+   
+/**
     *  Writes a string to the logfile, prefixed by the current date and an
     * [Exit] tag, and terminated by a newline. Suitable for function exit
     * logs.
@@ -222,7 +225,8 @@ public class Log
 
    }
    
-   /**
+   
+/**
     *  Writes a string to the logfile, prefixed by the current date and an
     * [Error] tag, and terminated by a newline. Suitable for error
     * notifications.
@@ -236,7 +240,8 @@ public class Log
 
    }
    
-   /**
+   
+/**
     * Writes a stack trace to the logfile.
     * @param t The Throwable object that holds the stack trace.
     */
@@ -247,7 +252,8 @@ public class Log
 
    }
    
-   /**
+   
+/**
     * Writes a stack trace to the log file, with the error message
     * given. Suitable for logging conditions that should never occur.
     *
@@ -258,7 +264,8 @@ public class Log
       dumpStack(mess);
    }
    
-   /**
+   
+/**
     *  Writes a string to the logfile, prefixed by a [DescribeLog] tag.
     *
     * @param s The String to write.
@@ -276,7 +283,8 @@ public class Log
    }
    
    
-   /**
+   
+/**
     *  Writes a string to the logfile, prefixed by the current date and an
     * [Error] tag, and terminated by a newline. Suitable for error
     * notifications.
@@ -290,7 +298,7 @@ public class Log
       
       if (isMDREventEnabled(mdrEventID))
       {
-         // actual miliseconds are more useful than formatted 
+         
          // date/time for event logging (the precision is desired)
          write(System.currentTimeMillis() + " [MDR Event] " + s, newline);
 //         write(new Date(System.currentTimeMillis()) 
@@ -300,7 +308,8 @@ public class Log
    
    
    
-   /**
+   
+/**
     *  Sets Log properties by asking Describe's preference manager. Aborts
     * if Describe is not connected.
     */

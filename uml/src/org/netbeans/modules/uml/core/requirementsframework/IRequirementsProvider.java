@@ -42,6 +42,7 @@
  * made subject to such option by the copyright holder.
  */
 
+
 /*
  * IRequirementsProvider.java
  *
@@ -54,10 +55,8 @@ package org.netbeans.modules.uml.core.requirementsframework;
 import org.netbeans.modules.uml.core.metamodel.structure.IRequirementArtifact;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
-/**
- *
- * @author  Trey Spiva
- */
+
+
 public interface IRequirementsProvider
 {
    /**

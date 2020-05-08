@@ -52,15 +52,14 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Set;
 
-/**
- *
- * @author Trey Spiva
- */
+
+
 public class DiagramToolBarDefs
 {
    HashMap m_ToolbarDetails = new HashMap();
 
-   /**
+   
+/**
     * @param details
     */
    public void addToolBarDetails(String name, DiagramToolDetails details)

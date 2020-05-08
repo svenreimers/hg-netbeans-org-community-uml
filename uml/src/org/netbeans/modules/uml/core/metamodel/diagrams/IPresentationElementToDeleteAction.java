@@ -49,29 +49,31 @@ package org.netbeans.modules.uml.core.metamodel.diagrams;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.IPresentationElement;
 //import org.netbeans.modules.uml.ui.controls.drawingarea.IExecutableAction;
 
-/**
- * @author KevinM
- *
- */
+
+
 public interface IPresentationElementToDeleteAction extends IDelayedAction//, IExecutableAction 
 {
 
-	/*
+	
+/*
 	 * Returns the element to delete.
 	 */
 	IPresentationElement getPresentationElement();
 
-	/*
+	
+/*
 	 * Sets the element to delete.
 	 */
 	public void setPresentationElement(IPresentationElement pPE);
 
-	/*
+	
+/*
 	 * Returns the element to delete.
 	 */
 //	public TSGraphObject getGraphObject();
 
-	/*
+	
+/*
 	 * sets the element to delete.
 	 */
 //	public void setGraphObject(TSGraphObject graphObject);

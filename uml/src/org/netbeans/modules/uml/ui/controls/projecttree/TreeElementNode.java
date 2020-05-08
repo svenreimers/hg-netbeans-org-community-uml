@@ -43,11 +43,8 @@
  */
 
 
-/*
- *
- * Created on Jun 13, 2003
- * @author Trey Spiva
- */
+
+
 package org.netbeans.modules.uml.ui.controls.projecttree;
 
 import org.dom4j.Node;
@@ -57,10 +54,8 @@ import org.netbeans.modules.uml.core.configstringframework.IConfigStringTranslat
 import org.netbeans.modules.uml.core.metamodel.core.foundation.IElement;
 import org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeElement;
 
-/**
- *
- * @author Trey Spiva
- */
+
+
 public class TreeElementNode extends ProjectTreeNode
    implements ITreeElement
 {
@@ -72,7 +67,8 @@ public class TreeElementNode extends ProjectTreeNode
       super();
    }
 
-   /**
+   
+/**
     * @param item
     * @throws NullPointerException
     */
@@ -95,7 +91,8 @@ public class TreeElementNode extends ProjectTreeNode
       }
    }
    
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeElement#getElement()
     */
    public IElement getElement()
@@ -109,7 +106,8 @@ public class TreeElementNode extends ProjectTreeNode
       return retVal;
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeElement#getXMIID()
     */
    public String getXMIID()
@@ -123,7 +121,8 @@ public class TreeElementNode extends ProjectTreeNode
       return retVal;
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeElement#getElementType()
     */
    public String getElementType()
@@ -137,7 +136,8 @@ public class TreeElementNode extends ProjectTreeNode
      return retVal;
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeElement#getExpandedElementType()
     */
    public String getExpandedElementType()
@@ -145,7 +145,8 @@ public class TreeElementNode extends ProjectTreeNode
       return m_ExpandedElementType;
    }
    
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see java.lang.Object#equals(java.lang.Object)
     */
    public boolean equals(Object obj)
@@ -174,7 +175,7 @@ public class TreeElementNode extends ProjectTreeNode
          
       } 
       else
-      {  // Generic equals method.  This can be used to test
+      {  
          // to ITreeItem(s).
          retVal =  super.equals(obj);
       }

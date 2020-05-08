@@ -42,6 +42,7 @@
  * made subject to such option by the copyright holder.
  */
 
+
 /*
  * ImportElementListener.java
  *
@@ -60,10 +61,8 @@ import org.netbeans.modules.uml.project.UMLProject;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.IElement;
 import org.netbeans.modules.uml.core.metamodel.structure.IProject;
 
-/**
- *
- * @author Trey Spiva
- */
+
+
 public interface ImportElementListener
 {
     public void elementImported(IProject project, IElement element, IElementImport importElement);

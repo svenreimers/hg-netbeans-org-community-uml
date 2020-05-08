@@ -26,22 +26,26 @@ import org.netbeans.modules.uml.ui.support.applicationmanager.IProduct;
 
 public interface IADProduct extends IProduct
 {
-	/**
+	
+/**
 	 * Gets / Sets ParseInformationCache
 	*/
 	public IParseInformationCache getParseInformationCache();
 
-	/**
+	
+/**
 	 * Gets / Sets ParseInformationCache
 	*/
 	public void setParseInformationCache( IParseInformationCache value );
 
-	/**
+	
+/**
 	 * Gets / Sets CodeGeneration
 	*/
 	public ICodeGeneration getCodeGeneration();
 
-	/**
+	
+/**
 	 * Gets / Sets CodeGeneration
 	*/
 	public void setCodeGeneration( ICodeGeneration value );

@@ -48,6 +48,7 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.FactoryRetriever;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.IConstraint;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity;
 import org.netbeans.modules.uml.core.AbstractUMLTestCase;
+
 /**
  * Test cases for InvocationNode.
  */
@@ -60,7 +61,8 @@ public class InvocationNodeTestCase extends AbstractUMLTestCase
 
     private IInvocationNode node;
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see junit.framework.TestCase#setUp()
      */
     protected void setUp() throws Exception
@@ -71,7 +73,8 @@ public class InvocationNodeTestCase extends AbstractUMLTestCase
         project.addElement(node);
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see junit.framework.TestCase#tearDown()
      */
     protected void tearDown() throws Exception

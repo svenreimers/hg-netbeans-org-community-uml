@@ -42,20 +42,16 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : IterationVariable.java
- * Created on : Oct 30, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.generativeframework;
 
 import org.dom4j.Node;
 
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
-/**
- * @author Aztec
- */
+
+
 public class IterationVariable
     extends CompoundVariable
     implements IIterationVariable
@@ -68,7 +64,8 @@ public class IterationVariable
     private String m_Delimiter = null;
     private String m_Literal = null;
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.generativeframework.IIterationVariable#getDelimiter()
      */
     public String getDelimiter()
@@ -76,7 +73,8 @@ public class IterationVariable
         return m_Delimiter;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.generativeframework.IIterationVariable#getListVariable()
      */
     public IExpansionVariable getListVariable()
@@ -84,7 +82,8 @@ public class IterationVariable
         return m_ListVar;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.generativeframework.IIterationVariable#getListVarName()
      */
     public String getListVarName()
@@ -92,7 +91,8 @@ public class IterationVariable
         return m_ListOption;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.generativeframework.IIterationVariable#getLiteral()
      */
     public String getLiteral()
@@ -100,7 +100,8 @@ public class IterationVariable
         return m_Literal;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.generativeframework.IIterationVariable#getVar()
      */
     public IExpansionVariable getVar()
@@ -108,7 +109,8 @@ public class IterationVariable
         return m_Var;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.generativeframework.IIterationVariable#getVarName()
      */
     public String getVarName()
@@ -116,7 +118,8 @@ public class IterationVariable
         return m_VarOption;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.generativeframework.IIterationVariable#setDelimiter(java.lang.String)
      */
     public void setDelimiter(String delim)
@@ -124,7 +127,8 @@ public class IterationVariable
         m_Delimiter = delim;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.generativeframework.IIterationVariable#setListVariable(org.netbeans.modules.uml.core.generativeframework.IExpansionVariable)
      */
     public void setListVariable(IExpansionVariable expVar)
@@ -132,7 +136,8 @@ public class IterationVariable
         m_ListVar = expVar;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.generativeframework.IIterationVariable#setListVarName(java.lang.String)
      */
     public void setListVarName(String listVarName)
@@ -140,7 +145,8 @@ public class IterationVariable
         m_ListOption = listVarName;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.generativeframework.IIterationVariable#setLiteral(java.lang.String)
      */
     public void setLiteral(String literal)
@@ -148,7 +154,8 @@ public class IterationVariable
         m_Literal = literal;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.generativeframework.IIterationVariable#setVar(org.netbeans.modules.uml.core.generativeframework.IExpansionVariable)
      */
     public void setVar(IExpansionVariable expVar)
@@ -156,7 +163,8 @@ public class IterationVariable
         m_Var = expVar;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.generativeframework.IIterationVariable#setVarName(java.lang.String)
      */
     public void setVarName(String varName)

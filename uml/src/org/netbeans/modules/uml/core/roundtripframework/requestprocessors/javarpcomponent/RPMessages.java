@@ -42,11 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : RPMessages.java
- * Created on : Nov 19, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpcomponent;
 
 import java.text.MessageFormat;
@@ -55,12 +52,12 @@ import java.util.ResourceBundle;
 
 import org.netbeans.modules.uml.ui.support.commonresources.CommonResources;
 
-/**
- * @author Aztec
- */
+
+
 public class RPMessages extends CommonResources
 {
-    /**
+    
+/**
      * Returns a resource string, given its key.
      *
      * @param resourceKey The key of the resource to retrieve.
@@ -79,17 +76,8 @@ public class RPMessages extends CommonResources
         }
     }
     
-    /**
-     * Obtains a resource string, given its key, and applies a MessageFormat to
-     * it.
-     * 
-     * @param resourceKey The key of the resource to retrieve.
-     * @param parameters  The parameters to be inserted into the formatted 
-     *                    string. If <code>null</code>, the function behaves
-     *                    exactly as <code>getString(String)</code>.
-     * @return The formatted resource string, if found, or a modified key if the
-     *         resource is unavailable.
-     */
+    
+
     public static String getString(String resourceKey, Object[] parameters)
     {
         String s = getString(resourceKey);

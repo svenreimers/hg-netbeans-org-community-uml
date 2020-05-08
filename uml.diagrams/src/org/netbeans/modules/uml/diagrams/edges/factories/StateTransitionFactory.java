@@ -46,10 +46,8 @@ import org.netbeans.modules.uml.core.metamodel.common.commonstatemachines.ITrans
 import org.netbeans.modules.uml.core.metamodel.common.commonstatemachines.StateRelationFactory;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.IElement;
 
-/**
- *
- * @author Sheryl Su
- */
+
+
 public final class StateTransitionFactory extends AbstractRelationshipFactory
 {
 

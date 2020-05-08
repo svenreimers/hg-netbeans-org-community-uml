@@ -42,6 +42,7 @@
  * made subject to such option by the copyright holder.
  */
 
+
 /*
  * Created on Sep 19, 2003
  *
@@ -52,10 +53,8 @@ import org.dom4j.Document;
 import org.dom4j.Node;
 
 
-/**
- * @author aztec
- *
- */
+
+
 public class ProtocolStateMachine extends StateMachine
 								  implements IProtocolStateMachine						 	
 {

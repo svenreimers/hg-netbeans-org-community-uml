@@ -47,10 +47,8 @@ package org.netbeans.modules.uml.reporting.dataobjects;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.IElement;
 import org.netbeans.modules.uml.core.metamodel.infrastructure.DerivationClassifier;
 
-/**
- *
- * @author Sheryl
- */
+
+
 public class DerivationClassifierData extends ClassData
 {
     

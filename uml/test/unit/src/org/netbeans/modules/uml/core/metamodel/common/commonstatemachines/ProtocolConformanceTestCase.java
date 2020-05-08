@@ -44,6 +44,7 @@
 
 
 
+
 /*
  * Created on Sep 25, 2003
  *
@@ -51,10 +52,8 @@
 package org.netbeans.modules.uml.core.metamodel.common.commonstatemachines;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.FactoryRetriever;
 import org.netbeans.modules.uml.core.AbstractUMLTestCase;
-/**
- * @author aztec
- *
- */
+
+
 public class ProtocolConformanceTestCase extends AbstractUMLTestCase
 {
 	private IProtocolConformance protConf = null;

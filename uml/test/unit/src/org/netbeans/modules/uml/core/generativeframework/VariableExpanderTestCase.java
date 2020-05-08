@@ -55,9 +55,8 @@ import org.netbeans.modules.uml.core.ModuleUnitTestSuiteBuilder;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.Element;
 import org.netbeans.modules.uml.core.support.umlsupport.XMLManip;
 
-/**
- * @author aztec
- */
+
+
 public class VariableExpanderTestCase extends AbstractUMLTestCase {
 	private VariableExpander var = null;
 

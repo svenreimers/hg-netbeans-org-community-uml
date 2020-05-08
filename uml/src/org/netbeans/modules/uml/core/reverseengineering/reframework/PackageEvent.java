@@ -50,7 +50,8 @@ import org.netbeans.modules.uml.core.support.umlsupport.XMLManip;
  */
 public class PackageEvent extends ParserData implements IPackageEvent
 {
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.IPackageEvent#getPackageName()
      */
     public String getPackageName()

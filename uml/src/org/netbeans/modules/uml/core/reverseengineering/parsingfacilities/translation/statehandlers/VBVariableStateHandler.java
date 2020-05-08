@@ -43,11 +43,8 @@
  */
 
 
-/*
- * File       : VBVariableStateHandler.java
- * Created on : Dec 12, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.statehandlers;
 
 import org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.Identifier;
@@ -55,9 +52,8 @@ import org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.Instan
 import org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ITokenDescriptor;
 import org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.TokenDescriptor;
 
-/**
- * @author Aztec
- */
+
+
 public class VBVariableStateHandler extends MethodVariableStateHandler
 {
 
@@ -66,7 +62,8 @@ public class VBVariableStateHandler extends MethodVariableStateHandler
         super(language, treatAsExpression);
     }
     
-    /**
+    
+/**
      * Adds a new instance informaton to the symbol table.  If the 
      * instance information is not complete it will not be added to
      * the symbol table.  If the instance has already been added to

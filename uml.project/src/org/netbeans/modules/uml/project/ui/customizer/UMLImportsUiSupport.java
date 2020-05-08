@@ -79,10 +79,8 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
- *
- * @author Mike Frisino
- */
+
+
 public class UMLImportsUiSupport
 {
     
@@ -407,7 +405,8 @@ public class UMLImportsUiSupport
         }
     }
     
-    /**
+    
+/**
      * Check if the project that will be referenced already has a dependency on 
      * the project that will be referencing the referenced project.
      */

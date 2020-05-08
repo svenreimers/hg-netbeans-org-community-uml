@@ -42,32 +42,20 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * ISource.java
- *
- * Created on March 29, 2005, 11:24 AM
- */
+
+
 
 package org.netbeans.modules.uml.core.support;
 
 import java.io.File;
 
 
-/**
- * NetBeans projects are able to have multiple source roots.  The
- * IAssociatedProjectSourceRoots aides in converting a file path that is
- * relative to one of the NetBean project source roots to an absolute
- * file path.  IAssociatedProjectSourceRoots can also convert an absolute
- * file path into a path relative to one of the source roots.
- *
- * Each project source root has a identifier.  To convert an absolute path
- * to a relative path a source root identifier in placed in the relative path.
- *
- * @author Trey Spiva
- */
+
+
 public interface IAssociatedProjectSourceRoots
 {  
-   /**
+   
+/**
     * Retrieves the source root identifier that matches the specified
     * file name.
     *
@@ -77,7 +65,8 @@ public interface IAssociatedProjectSourceRoots
     */
    public String getSourceRootId(String file);
    
-   /**
+   
+/**
     * Creates a path that is relative to one of the projects source roots.  If 
     * the file name is not descendent of one of the source roots an empty string
     * will be returned.
@@ -88,7 +77,8 @@ public interface IAssociatedProjectSourceRoots
     */
    public String createRelativePath(String file);
    
-   /**
+   
+/**
     * Creates an absolute file path name.  The file name is only converted if the 
     * file name start with a source root identifier.  If the source file name does not
     * start with a source root identifier then an empty string
@@ -100,7 +90,8 @@ public interface IAssociatedProjectSourceRoots
     */
    public String createAbsolutePath(String file);
    
-   /**
+   
+/**
     * Retrieves the source roots that are need to locate all source files that
     * are needed to compile the project.
     */

@@ -53,10 +53,8 @@ import org.openide.nodes.Node;
 import org.openide.util.Exceptions;
 
 
-/**
- *
- * @author Thuy
- */
+
+
 
 public final class UMLPaletteFactory
 {

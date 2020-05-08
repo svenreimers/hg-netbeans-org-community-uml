@@ -48,67 +48,80 @@ import org.netbeans.modules.uml.core.metamodel.structure.ISourceFileArtifact;
 
 public interface ISourceCodeManipulation
 {
-	/**
+	
+/**
 	 * Get/Set the Source Code
 	*/
 	public String getSourceCode();
 
-	/**
+	
+/**
 	 * Get/Set the Source Code
 	*/
 	public void setSourceCode( String value );
 
-	/**
+	
+/**
 	 * Deletes a range of characters from start to one before stop
 	*/
 	public long deleteRange( int start, int stop );
 
-	/**
+	
+/**
 	 * Modifies a range of characters from start to one before stop
 	*/
 	public long modifyRange( int start, int stop, String newText );
 
-	/**
+	
+/**
 	 * Inserts text
 	*/
 	public long insertText( int insertBefore, String insertedText );
 
-	/**
+	
+/**
 	 * Commits all changes
 	*/
 	public long commitChanges();
 
-	/**
+	
+/**
 	 * Determines if the specified range has already been modified.  The range must exactly matches the range of a previously made modification for this operation to return True.
 	*/
 	public boolean isModificationRange( int start, int stop );
 
-	/**
+	
+/**
 	 * If the specified range exactly matches the range of a previously made modification, the text of that modification is returned
 	*/
 	public String getModificationText( int start, int stop );
 
-	/**
+	
+/**
 	 * Set the cookie that represents a relationship between this object and its owning FileSystemManipulation object
 	*/
 	public void setCookie( int value );
 
-	/**
+	
+/**
 	 * Set the FileSystemManipulation object that owns this SourceCodeManipulation object
 	*/
 	public void setFileSystemManipulation( IFileSystemManipulation value );
 
-	/**
+	
+/**
 	 * Returns a substring of the source code where the range of the substring is specified using offsets into the original, unchanged source code.  However, the returned substring will have applied to it any modifications made to that substring
 	*/
 	public String getSourceCode( int rangeStart, int rangeEnd );
 
-	/**
+	
+/**
 	 * Gets / Sets SourceFileArtifact
 	*/
 	public ISourceFileArtifact getSourceFileArtifact();
 
-	/**
+	
+/**
 	 * Gets / Sets SourceFileArtifact
 	*/
 	public void setSourceFileArtifact( ISourceFileArtifact value );

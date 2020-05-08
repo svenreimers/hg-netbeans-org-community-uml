@@ -44,10 +44,8 @@
 
 package org.netbeans.modules.uml;
 
-/**
- * @author brettb
- *
- */
+
+
 public class RuntimeInfo
 {
 	public static final boolean DEBUG = true;

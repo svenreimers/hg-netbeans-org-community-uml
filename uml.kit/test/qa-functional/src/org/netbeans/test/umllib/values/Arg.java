@@ -43,22 +43,14 @@
  */
 
 
-/*
- * Arg.java
- *
- * Created on January 31, 2006, 12:20 PM
- *
- * To change this template, choose Tools | Template Manager
- * and open the template in the editor.
- */
+
+
 
 package org.netbeans.test.umllib.values;
 
 
-/**
- *
- * @author Alexandr Scherbatiy
- */
+
+
 public class Arg implements Argument{
     
     private Type type;

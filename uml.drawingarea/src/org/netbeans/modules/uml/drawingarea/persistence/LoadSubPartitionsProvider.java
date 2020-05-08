@@ -60,10 +60,8 @@ import org.netbeans.modules.uml.drawingarea.view.UMLNodeWidget;
 import org.netbeans.modules.uml.drawingarea.widgets.ContainerWithCompartments;
 import org.openide.util.Exceptions;
 
-/**
- *
- * @author sp153251
- */
+
+
 public class LoadSubPartitionsProvider implements ActionProvider{
     private UMLNodeWidget partition;
     private Orientation orientation;

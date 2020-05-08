@@ -56,14 +56,8 @@ import org.openide.filesystems.FileUtil;
 import org.openide.util.Exceptions;
 
 
-/**
- *
- * @author Craig Conover, craig.conover@sun.com
- * 
- * Responsible for reading and writing of the
- * XML data containing the UML code generation template preferences.
- * 
- */
+
+
 public class TemplateFamiliesHandler 
 {
     private static TemplateFamiliesHandler self = null;

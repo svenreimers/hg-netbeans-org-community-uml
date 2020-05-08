@@ -53,27 +53,32 @@ public interface IREParameter extends IParserData {
     public static final int PDK_OUT = 2;
     public static final int PDK_RESULT = 3;
     
-    /**
+    
+/**
      * Specifies an expression whose evaluation yields a value to be used when no argument is supplied for the Parameter.
      */
     public String getDefaultValue();
     
-    /**
+    
+/**
      * Specifies what kind of a Parameter is required.  A parameter can be an in parameter,  out parameter, or in/out parameter.
      */
     public int getKind();
     
-    /**
+    
+/**
      * Designates a type to which an argument value must conform.
      */
     public String getType();
     
-    /**
+    
+/**
      * Retrieve the name of the parameter.
      */
     public String getName();
     
-    /**
+    
+/**
      * Specifies if the parameter is a primitive attribute or an object instance.
      */
     public boolean getIsPrimitive();

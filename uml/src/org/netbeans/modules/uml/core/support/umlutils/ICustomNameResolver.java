@@ -47,17 +47,20 @@ package org.netbeans.modules.uml.core.support.umlutils;
 
 public interface ICustomNameResolver
 {
-	/**
+	
+/**
 	 * Called to validate the IDispatch or the fieldValue
 	*/
 	public boolean validate( Object pDisp, String fieldName, String fieldValue);
 
-	/**
+	
+/**
 	 * Called when the Validate method returns that the information is valid
 	*/
 	public void whenValid( Object pDisp );
 
-	/**
+	
+/**
 	 * Called when the Validate method returns that the information was invalid
 	*/
 	public void whenInvalid( Object pDisp );

@@ -42,6 +42,7 @@
  * made subject to such option by the copyright holder.
  */
 
+
 /*
  * JavaEnumLiteralChangeHandler.java
  *
@@ -89,10 +90,8 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 import org.netbeans.modules.uml.core.support.umlutils.NameManager;
 import org.netbeans.modules.uml.ui.support.ErrorDialogIconKind;
 
-/**
- *
- * @author Administrator
- */
+
+
 public class JavaEnumLiteralChangeHandler extends JavaChangeHandler
 {
    

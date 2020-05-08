@@ -44,6 +44,7 @@
 
 
 
+
 /*
  * Created on Sep 17, 2003
  *
@@ -54,10 +55,8 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.FactoryRetriever;
 import org.netbeans.modules.uml.core.AbstractUMLTestCase;
 
 
-/**
- * @author aztec
- *
- */
+
+
 public class ProfileApplicationTestCase extends AbstractUMLTestCase
 {
     

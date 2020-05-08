@@ -47,10 +47,8 @@ package org.netbeans.modules.uml.core.metamodel.core.foundation;
 import org.dom4j.Document;
 import org.dom4j.Node;
 
-/**
- * @author sumitabhk
- *
- */
+
+
 public class Permission extends Dependency implements IPermission{
 
 	/**
@@ -60,7 +58,8 @@ public class Permission extends Dependency implements IPermission{
 		super();
 	}
 
-	/**
+	
+/**
 	 * Establishes the appropriate XML elements for this UML type.
 	 *
 	 * [in] The document where this element will reside

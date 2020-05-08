@@ -60,10 +60,8 @@ import org.netbeans.modules.uml.core.metamodel.diagrams.IDiagram;
 import org.netbeans.modules.uml.drawingarea.view.DesignerScene;
 import org.openide.util.Lookup;
 
-/**
- *
- * @author treyspiva
- */
+
+
 public class SwingPaletteManager implements ContextPaletteManager
 {
     private static final Color FILLCOLOR = Color.WHITE;
@@ -104,7 +102,8 @@ public class SwingPaletteManager implements ContextPaletteManager
     ///////////////////////////////////////////////////////////////
     // ContextPaletteManager implementation
     
-    /**
+    
+/**
      * Changes the palette to represent the select widget.  If more than one 
      * widget is selected, or no widgets are selected then the palette is 
      * removed.
@@ -117,7 +116,8 @@ public class SwingPaletteManager implements ContextPaletteManager
         selectionChanged(scenePoint, false);
     }
     
-    /**
+    
+/**
      * Changes the palette to represent the select widget.  If more than one 
      * widget is selected, or no widgets are selected then the palette is 
      * removed.
@@ -221,7 +221,8 @@ public class SwingPaletteManager implements ContextPaletteManager
         return retVal;
     }
     
-    /**
+    
+/**
      * Request that the context palette recieve input focus.
      */
     public void requestFocus()
@@ -290,7 +291,8 @@ public class SwingPaletteManager implements ContextPaletteManager
         }
     }
     
-    /**
+    
+/**
      * The preferred side is the right side of the widget.  If there is
      * not enough space, the palette should be on the left side.
      * 
@@ -344,7 +346,8 @@ public class SwingPaletteManager implements ContextPaletteManager
         
         return new Point(xPos, yPos);
     }
-    /**
+    
+/**
      * The preferred side is the right side of the widget.  If there is
      * not enough space, do nothing becausae jump have no sense
      * 
@@ -379,7 +382,8 @@ public class SwingPaletteManager implements ContextPaletteManager
         //JComponent view = getScene().getView();
         
         //int expandedWidth = palette.getExpandedWidth();
-        /*if(view.getWidth() < xPos + expandedWidth)
+        
+/*if(view.getWidth() < xPos + expandedWidth)
         {
             xPos = viewLocaton.x - SPACE_FROM_WIDGET - collapsedDim.width;
             palette.setDirection(PaletteDirection.LEFT);

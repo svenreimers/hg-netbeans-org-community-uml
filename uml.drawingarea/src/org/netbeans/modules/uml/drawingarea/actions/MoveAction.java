@@ -52,9 +52,8 @@ import java.awt.*;
 import java.awt.event.MouseEvent;
 import org.netbeans.modules.uml.drawingarea.widgets.CompositeNode;
 
-/**
- * @author David Kaspar
- */
+
+
 public final class MoveAction extends WidgetAction.LockedAdapter {
 
     private MoveStrategy strategy;

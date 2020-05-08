@@ -71,11 +71,8 @@ import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure
 import org.netbeans.modules.uml.core.metamodel.structure.IComponent;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
-/**
- * @author sumitabhk
- *
- *
- */
+
+
 public class CommonResourceManager implements ICommonResourceManager
 {
    private static final String BUNDLE_NAME ="org.netbeans.modules.uml.ui.support.commonresources.Bundle_noi18n";
@@ -442,7 +439,8 @@ public class CommonResourceManager implements ICommonResourceManager
       
    }
    
-   /**
+   
+/**
     * Returns an HICON (as a long) for the name.  sKeyname may be an element type ie Class.    The caller manages
     * the HICON destruction.
     *
@@ -488,7 +486,8 @@ public class CommonResourceManager implements ICommonResourceManager
       return null;
    }
    
-   /**
+   
+/**
     * Returns an HICON (as a long) for the IDispatch.  The pDisp can be an IElement or an IDiagram.
     * The caller manages the HICON destruction.
     *
@@ -507,7 +506,8 @@ public class CommonResourceManager implements ICommonResourceManager
       return icon;
    }
    
-   /**
+   
+/**
     * Returns an HICON (as a long) for the diagram kind (of type DiagramKind).   The
     * caller manages the HICON destruction.
     *
@@ -526,7 +526,8 @@ public class CommonResourceManager implements ICommonResourceManager
       return icon;
    }
    
-   /**
+   
+/**
     * Returns the information about a specific icon.  Use to load the icon yourself - for
     * instance if you need to put into an image list.
     *
@@ -555,7 +556,8 @@ public class CommonResourceManager implements ICommonResourceManager
       return iconLocation;
    }
    
-    /**
+    
+/**
     * Returns the information about a specific icon for the IDispatch.  The pDisp can be an
     * IElement, IDiagram or IProxyDiagram..  Use to load the icon yourself - for instance if you
     * need to put into an image list.
@@ -577,7 +579,8 @@ public class CommonResourceManager implements ICommonResourceManager
         return iconLib;
     }
    
-   /**
+   
+/**
     * Returns the information about a specific icon for the diagram kind (of type DiagramKind).  Use
     * to load the icon yourself - for instance if you need to put into an image list.
     *
@@ -597,7 +600,8 @@ public class CommonResourceManager implements ICommonResourceManager
       return iconLib;
    }
    
-   /**
+   
+/**
     * Returns the search string for this disp
     *
     * @param pDisp [in] The dispatch that is an element or diagram.  The element name or diagram type is

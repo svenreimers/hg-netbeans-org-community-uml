@@ -47,22 +47,26 @@ package org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructur
 import org.netbeans.modules.uml.core.support.umlsupport.IResultCell;
 public interface IAssociationEndEventsSink
 {
-	/**
+	
+/**
 	 * Fired right before a qualifying attribute is added to this end.
 	*/
 	public void onPreQualifierAttributeAdded( IAssociationEnd pEnd, IAttribute pAttr, IResultCell cell );
 
-	/**
+	
+/**
 	 * Fired after a qualifying attribute was added to this end.
 	*/
 	public void onQualifierAttributeAdded( IAssociationEnd pEnd, IAttribute pAttr, IResultCell cell );
 
-	/**
+	
+/**
 	 * Fired right before a qualifying attribute is removed from this end.
 	*/
 	public void onPreQualifierAttributeRemoved( IAssociationEnd pEnd, IAttribute pAttr, IResultCell cell );
 
-	/**
+	
+/**
 	 * Fired after a qualifying attribute was removed from this end.
 	*/
 	public void onQualifierAttributeRemoved( IAssociationEnd pEnd, IAttribute pAttr, IResultCell cell );

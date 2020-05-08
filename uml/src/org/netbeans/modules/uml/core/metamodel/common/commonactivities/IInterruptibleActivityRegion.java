@@ -49,17 +49,20 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 public interface IInterruptibleActivityRegion extends IActivityGroup
 {
-	/**
+	
+/**
 	 * method AddInterruptingEdge
 	*/
 	public void addInterruptingEdge( IActivityEdge pEdge );
 
-	/**
+	
+/**
 	 * method RemoveInterruptingEdge
 	*/
 	public void removeInterruptingEdge( IActivityEdge pEdge );
 
-	/**
+	
+/**
 	 * property InterruptingEdges
 	*/
 	public ETList<IActivityEdge> getInterruptingEdges();

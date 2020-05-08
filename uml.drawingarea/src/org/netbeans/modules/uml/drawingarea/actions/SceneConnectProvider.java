@@ -41,6 +41,7 @@
  * Version 2 license, then the option applies only if the new code is
  * made subject to such option by the copyright holder.
  */ 
+
 /*
  * SceneConnectProvider.java
  *
@@ -86,10 +87,8 @@ import org.netbeans.modules.uml.ui.support.ProductHelper;
 import org.openide.util.Lookup;
 
 
-/**
- *
- * @author Jyothi
- */
+
+
 public class SceneConnectProvider implements ExConnectProvider
 {
     private static int eventID = 0;
@@ -100,7 +99,8 @@ public class SceneConnectProvider implements ExConnectProvider
     private String stereotype = null;
     private NodeInitializer defaultnodeinitializer;
 
-    /**
+    
+/**
      * Creates a new instance of SceneConnectProvider.  The provider will create
      * an edge of type edgeType.  If the user drops the edge on the diagram as
      * opposed to a node, the targetType will be used to create a new node.
@@ -286,7 +286,8 @@ public class SceneConnectProvider implements ExConnectProvider
         return retVal;
     }
 
-    /**
+    
+/**
      * Create a new node widget to be used as the target widget for the connector.
      * This provider expects the scene to be a graph scene.
      *

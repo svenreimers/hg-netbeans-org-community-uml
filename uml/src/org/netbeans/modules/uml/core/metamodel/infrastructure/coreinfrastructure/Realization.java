@@ -57,7 +57,8 @@ public class Realization extends Abstraction implements IRealization
 	{
 		super();
 	}
-	/**
+	
+/**
 	 * Establishes the appropriate XML elements for this UML type.
 	 *
 	 * [in] The document where this element will reside

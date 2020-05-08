@@ -53,10 +53,8 @@ import javax.swing.text.html.HTML;
 import javax.swing.text.html.HTMLEditorKit;
 import javax.swing.text.html.HTMLEditorKit.HTMLFactory;
 
-/**
- *
- * @author Sheryl
- */
+
+
 public class DocumentationEditorKit extends HTMLEditorKit
 {
     

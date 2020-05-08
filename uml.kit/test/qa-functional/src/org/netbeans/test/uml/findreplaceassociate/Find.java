@@ -55,11 +55,8 @@ import org.netbeans.test.umllib.project.Project;
 import org.netbeans.test.umllib.testcases.UMLTestCase;
 
 
-/**
- *
- * @author yaa
- * @spec uml/FindReplaceAssociate.xml
- */
+
+
 public class Find extends UMLTestCase {
     private static String prName1 = "UMLProject1";
     

@@ -42,16 +42,12 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : IHandlerQuery.java
- * Created on : Oct 29, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpcomponent;
 
-/**
- * @author Aztec
- */
+
+
 public interface IHandlerQuery
 {
     public String getKey();

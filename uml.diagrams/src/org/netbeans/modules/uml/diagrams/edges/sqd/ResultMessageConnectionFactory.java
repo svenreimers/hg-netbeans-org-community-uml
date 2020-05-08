@@ -45,10 +45,8 @@ import org.netbeans.api.visual.widget.ConnectionWidget;
 import org.netbeans.api.visual.widget.Scene;
 import org.netbeans.modules.uml.drawingarea.ConnectionWidgetFactory;
 
-/**
- *
- * @author treyspiva
- */
+
+
 public class ResultMessageConnectionFactory implements ConnectionWidgetFactory
 {
 

@@ -46,12 +46,14 @@ package org.netbeans.modules.uml.core.reverseengineering.reframework.parsingfram
 
 public interface IStatePayload
 {
-	/**
+	
+/**
 	 * The additional state information.
 	*/
 	public Object getPayload();
 
-	/**
+	
+/**
 	 * The additional state information.
 	*/
 	public void setPayload( Object value );

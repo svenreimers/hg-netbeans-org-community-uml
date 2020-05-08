@@ -52,7 +52,8 @@ public class REUnaryOperator extends MethodDetailParserData
         implements IREUnaryOperator
 {
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.IREUnaryOperator#getStringRepresentation()
      */
     public String getStringRepresentation()

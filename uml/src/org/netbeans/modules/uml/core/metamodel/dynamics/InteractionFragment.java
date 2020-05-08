@@ -56,7 +56,8 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 public class InteractionFragment extends NamedElement
         implements IInteractionFragment
 {
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IInteractionFragment#addGateConnector(org.netbeans.modules.uml.core.metamodel.dynamics.IInterGateConnector)
      */
     public void addGateConnector(final IInterGateConnector connector)
@@ -74,7 +75,8 @@ public class InteractionFragment extends NamedElement
                 } );
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IInteractionFragment#removeGateConnector(org.netbeans.modules.uml.core.metamodel.dynamics.IInterGateConnector)
      */
     public void removeGateConnector(final IInterGateConnector connector)
@@ -91,7 +93,8 @@ public class InteractionFragment extends NamedElement
                 } );
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IInteractionFragment#getGateConnectors()
      */
     public ETList<IInterGateConnector> getGateConnectors()
@@ -101,7 +104,8 @@ public class InteractionFragment extends NamedElement
                 m_Node, "UML:InteractionFragment.gateConnector/*", IInterGateConnector.class );
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IInteractionFragment#addCoveredLifeline(org.netbeans.modules.uml.core.metamodel.dynamics.ILifeline)
      */
     public void addCoveredLifeline(final ILifeline line)
@@ -117,7 +121,8 @@ public class InteractionFragment extends NamedElement
                 } );
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IInteractionFragment#removeCoveredLifeline(org.netbeans.modules.uml.core.metamodel.dynamics.ILifeline)
      */
     public void removeCoveredLifeline(final ILifeline line)
@@ -133,7 +138,8 @@ public class InteractionFragment extends NamedElement
                 } );
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IInteractionFragment#getCoveredLifelines()
      */
     public ETList<ILifeline> getCoveredLifelines()
@@ -143,7 +149,8 @@ public class InteractionFragment extends NamedElement
                 this, "covered", ILifeline.class );
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IInteractionFragment#getEnclosingOperand()
      */
     public IInteractionOperand getEnclosingOperand()

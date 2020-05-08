@@ -53,9 +53,8 @@ import org.netbeans.modules.uml.drawingarea.UMLDiagramTopComponent;
 import org.netbeans.modules.uml.drawingarea.palette.context.ContextPaletteManager;
 import org.openide.windows.TopComponent;
 
-/**
- * @author David Kaspar
- */
+
+
 public final class ContainerAlignWithMoveStrategyProvider extends AlignWithSupport implements MoveStrategy, MoveProvider {
 
     private boolean outerBounds;

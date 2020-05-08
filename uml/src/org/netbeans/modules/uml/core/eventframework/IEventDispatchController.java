@@ -47,32 +47,38 @@ package org.netbeans.modules.uml.core.eventframework;
 
 public interface IEventDispatchController extends IEventDispatcher
 {
-	/**
+	
+/**
 	 * Adds another EventDispatcher to this controller.
 	*/
 	public long addDispatcher( String id, IEventDispatcher dispatcher );
 
-	/**
+	
+/**
 	 * Adds another EventDispatcher to this controller.
 	*/
 	public long addDispatcher( /* EventDispatcherKind */ int nKind, IEventDispatcher dispatcher );
 
-	/**
+	
+/**
 	 * Removes a dispatcher that matches the passed in id.
 	*/
 	public IEventDispatcher removeDispatcher( String id );
 
-	/**
+	
+/**
 	 * Removes a dispatcher that matches the passed in id.
 	*/
 	public IEventDispatcher removeDispatcher( /* EventDispatcherKind */ int nKind );
 
-	/**
+	
+/**
 	 * Retrieves the dispatcher that matches the passed in id.
 	*/
 	public IEventDispatcher retrieveDispatcher( String id );
 
-	/**
+	
+/**
 	 * Retrieves the dispatcher that matches the passed in id.
 	*/
 	public IEventDispatcher retrieveDispatcher( /* EventDispatcherKind */ int nKind );

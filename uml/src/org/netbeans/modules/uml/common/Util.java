@@ -65,6 +65,7 @@ import org.netbeans.modules.uml.core.support.umlutils.IElementLocator;
 import org.netbeans.modules.uml.ui.support.ProductHelper;
 import org.openide.util.NbBundle;
 
+
 /**
  * Contains commonly used functions.
  *
@@ -92,7 +93,8 @@ public class Util
         cLineSeparator = (String) java.security.AccessController.doPrivileged(new sun.security.action.GetPropertyAction("line.separator"));
     }
     
-    /**
+    
+/**
      * Replaces occurences of the given pattern in the source string with the replacement value.
      * The resulting string is returned.
      *
@@ -125,7 +127,8 @@ public class Util
         return buffer.toString();
     }
     
-    /**
+    
+/**
      * Converts the given object to a String.
      *
      * @return "" if null is given
@@ -137,7 +140,8 @@ public class Util
         return value.toString();
     }
     
-    /** Convert a given string to the equivalent HTML string
+    
+/** Convert a given string to the equivalent HTML string
      * @param s The string to be converted.
      * @return The converted string */
     public final static String convertToHTML(String s)
@@ -178,14 +182,16 @@ public class Util
         
     } // END convertToHTML
     
-    /** Converts the given object to an int.
+    
+/** Converts the given object to an int.
        @return 0 if null is given */
     public final static int toInt(Object value)
     {
         return toInt(value, 0);
     }
     
-    /** Converts the given object to an int.
+    
+/** Converts the given object to an int.
        @return def if null is given */
     public final static int toInt(Object value, int def)
     {
@@ -199,7 +205,8 @@ public class Util
         return Integer.parseInt(tmp);
     }
     
-    /** Converts the given object to an long.
+    
+/** Converts the given object to an long.
      * @return 0 if null is given */
     public final static long toLong(Object value)
     {
@@ -210,7 +217,8 @@ public class Util
         return Long.parseLong(value.toString());
     }
     
-    /** Converts the given object to an float.
+    
+/** Converts the given object to an float.
      * @return 0 if null is given */
     public final static float toFloat(Object value)
     {
@@ -221,7 +229,8 @@ public class Util
         return Float.parseFloat(value.toString());
     }
     
-    /** Converts the given object to an double.
+    
+/** Converts the given object to an double.
      * @return 0 if null is given */
     public final static double toDouble(Object value)
     {
@@ -232,7 +241,8 @@ public class Util
         return Double.parseDouble(value.toString());
     }
     
-    /** Converts the given object to a Number.
+    
+/** Converts the given object to a Number.
      * return 0 if null is given */
     public final static Number toNumber(Object value)
     {
@@ -256,7 +266,8 @@ public class Util
             return new Double(tmp);
     }
     
-    /** Converts the given object to a Number.  This will return an Integer if the
+    
+/** Converts the given object to a Number.  This will return an Integer if the
      * float has no decimal value, Float otherwise. */
     public final static Number toNumber(float value)
     {
@@ -268,7 +279,8 @@ public class Util
         return new Float(value);
     }
     
-    /** Converts the given object to a Number.  This will return a Long if the
+    
+/** Converts the given object to a Number.  This will return a Long if the
      * double has no decimal value, Double otherwise. */
     public final static Number toNumber(double value)
     {
@@ -280,14 +292,16 @@ public class Util
         return new Double(value);
     }
     
-    /** Converts the given object to a boolean.
+    
+/** Converts the given object to a boolean.
        @return false if null is given */
     public final static boolean toBoolean(Object value)
     {
         return toBoolean(value, false);
     }
     
-    /** Converts the given object to a boolean.
+    
+/** Converts the given object to a boolean.
        @return def if null is given */
     public final static boolean toBoolean(Object value, boolean def)
     {
@@ -312,7 +326,8 @@ public class Util
         return true;
     }
     
-    /** Converts the given object to a boolean object.
+    
+/** Converts the given object to a boolean object.
      * @return false if null is given */
     public final static Boolean toBooleanObj(Object value)
     {
@@ -335,7 +350,8 @@ public class Util
         return Boolean.TRUE;
     }
     
-    /**
+    
+/**
      * Converts the given object to a locale.
      *
      * @return false if null is given
@@ -379,7 +395,8 @@ public class Util
         return result;
     }
     
-    /**
+    
+/**
      * Given the class, this method returns the static field value corresponding
      * to the given field name.
      */
@@ -392,12 +409,13 @@ public class Util
         }
         catch (Throwable exc)
         {
-            /* assume it is a numeric value */
+            
             return toInt(fieldName);
         }
     }
     
-    /** Checks to see if the string starts with the
+    
+/** Checks to see if the string starts with the
      * the given string (ignoring case and whitespace)
      * @param source source string
      * @param pattern pattern to search for
@@ -463,7 +481,8 @@ public class Util
             return j;
     }
     
-    /**
+    
+/**
      * Converts separators '/' and '.' to File.separator.
      * Note: for '.' it converts all but the last '.'
      */
@@ -486,7 +505,8 @@ public class Util
         return prefix + extension;
     }
     
-    /**
+    
+/**
      * Converts separators '\' to '/'.
      */
     public static final String convertFilenameToUnix(String filename)
@@ -494,7 +514,8 @@ public class Util
         return convertDirnameToUnix(filename);
     }
     
-    /**
+    
+/**
      * Converts separators '\' to '/'.
      */
     public static final String convertDirnameToUnix(String dirname)
@@ -514,7 +535,8 @@ public class Util
         return dirname;
     }
     
-    /**
+    
+/**
      * Searches the given path for the given filename.
      *
      * @param filename name of file to search for
@@ -552,7 +574,7 @@ public class Util
         return null;
     }
     
-    /** Reads the contents of the reader and puts it into a string. */
+    
     public final static String toString(Reader reader) throws IOException
     {
         if (reader == null)
@@ -569,13 +591,14 @@ public class Util
         return buffer.toString();
     }
     
-    /** Reads the file with the given name and returns the contents as a String. */
+    
     public final static String readFile(String filename) throws IOException
     {
         return toString(new FileReader(filename));
     }
     
-   /*
+   
+/*
     * Convert a string to the javascript equivalent.
     */
     public final static String toJavaScriptString(String str)
@@ -594,7 +617,8 @@ public class Util
         return newString;
     }
     
-    /**
+    
+/**
      * Tests if a string is empty or null
      */
     public final static boolean isEmpty(String str)
@@ -602,7 +626,8 @@ public class Util
         return (str == null || str.length() == 0 || str.trim().equals("")) ? true : false;
     }
     
-    /**
+    
+/**
      * Adds two numbers together.
      */
     public final static Number add(Number x, Number y)
@@ -762,8 +787,8 @@ public class Util
         }
     }
     
-    /** Pads the given string to the given length. Whitespace is added to the
-     * end of the string. */
+    
+
     public final static String pad(Object value, int length)
     {
         StringBuffer result = new StringBuffer();
@@ -781,8 +806,8 @@ public class Util
         return result.toString();
     }
     
-    /** Pads the given string to the given length. Whitespace is added to the
-     * end of the string. */
+    
+
     public final static String pad(Object value, int length, boolean trim)
     {
         String result = "null";
@@ -800,8 +825,8 @@ public class Util
         return result;
     }
     
-    /** Pads the given string to the given length.  Whitespace is added to the
-     * front of the string. */
+    
+
     public final static String lpad(Object value, int length)
     {
         String result = "null";
@@ -824,8 +849,8 @@ public class Util
         return sec;
     }
     
-    /** Reads in the contents of the url stream and returns the result
-     * as a string. */
+    
+
     public static String getURLContentAsString(URL url) throws IOException
     {
         if (url == null)
@@ -906,7 +931,8 @@ public class Util
         return x + low;
     }
     
-    /** Creates over 35 million unique passwords.
+    
+/** Creates over 35 million unique passwords.
      * Each password is easy to remember consisting of 4 words */
     public static String createRandomPassword()
     {
@@ -1027,7 +1053,8 @@ public class Util
         gcThread.start();
     }
     
-    /**
+    
+/**
      * Strips spaces in a type name, or any string.
      */
     public static String stripSpacesInString(String s)
@@ -1045,7 +1072,8 @@ public class Util
     }
     
     
-    /**
+    
+/**
      * Checks to see if the namespace already has a child of the same name and type.
      * @param space The target namespace being searched.
      * @param name The name of the element being searched for.
@@ -1059,7 +1087,7 @@ public class Util
         if (space==null)
             return false;
         
-        //kris richards - "DefaultElementName" pref expunged. Set to "Unnamed".
+        
         String defaultName = NbBundle.getMessage (Util.class, "UNNAMED");
                 
         
@@ -1095,7 +1123,8 @@ public class Util
         return false;
     }
     
-    /**
+    
+/**
      * Checks to see if the namespace already has a <em>similar</em> child.
      * @param space The target namespace being searched.
      * @param name The name of the element being searched for.
@@ -1170,7 +1199,8 @@ public class Util
         return collidingElements;
     }
     
-    /**
+    
+/**
      * Determines if the passed in type is a known Collection data type.
      * @param type the data type to be tested
      * @return true if java.util.Collection is assignable
@@ -1199,7 +1229,8 @@ public class Util
         return false;
     }
     
-    /**
+    
+/**
      * 
      * @param diagramName diagram name to check for validity
      * @return true if valid diagram name; false otherwise
@@ -1233,7 +1264,8 @@ public class Util
         //        return true;
     }
     
-    /**
+    
+/**
      * 
      * @param name Name to check for identifier validity
      * @return true if invalid identifier; false otherwise
@@ -1295,7 +1327,8 @@ public class Util
     
     
     
-   /**
+   
+/**
     *
     * Is the name a keyword in this language
     *
@@ -1325,7 +1358,8 @@ public class Util
     }
     
     
-    /**
+    
+/**
      *
      * Retrieves the language this processor supports.
      *

@@ -47,6 +47,7 @@ package org.netbeans.modules.uml.core.metamodel.common.commonactivities;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.FactoryRetriever;
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavior;
 import org.netbeans.modules.uml.core.AbstractUMLTestCase;
+
 /**
  * Test cases for DecisionNode.
  */
@@ -59,7 +60,8 @@ public class DecisionNodeTestCase extends AbstractUMLTestCase
 
     private IDecisionNode node;
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see junit.framework.TestCase#setUp()
      */
     protected void setUp() throws Exception
@@ -70,7 +72,8 @@ public class DecisionNodeTestCase extends AbstractUMLTestCase
         project.addElement(node);
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see junit.framework.TestCase#tearDown()
      */
     protected void tearDown() throws Exception

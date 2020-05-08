@@ -53,10 +53,8 @@ import java.util.List;
 import org.netbeans.api.visual.anchor.Anchor;
 import org.netbeans.modules.uml.drawingarea.persistence.util.XMIConstants;
 
-/**
- *
- * @author Jyothi
- */
+
+
 public class NodeWriter extends Writer {
 
     protected String diagramName;
@@ -301,14 +299,16 @@ public class NodeWriter extends Writer {
         return connectorAttrs;
     }
 
-    /**
+    
+/**
      * @return the documentation
      */
     public String getDocumentation() {
         return documentation;
     }
 
-    /**
+    
+/**
      * @param documentation the documentation to set
      */
     public void setDocumentation(String documentation) {

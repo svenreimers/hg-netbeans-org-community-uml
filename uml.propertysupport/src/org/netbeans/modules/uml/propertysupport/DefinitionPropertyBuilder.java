@@ -79,10 +79,8 @@ import org.netbeans.modules.uml.core.support.umlutils.IPropertyElement;
 import org.netbeans.modules.uml.core.support.umlutils.IPropertyElementManager;
 import java.util.Map;
 
-/**
- * 
- * @author Trey Spiva
- */
+
+
 public final class DefinitionPropertyBuilder
 {
    private IPropertyDefinitionFactory mDefFactory = null;
@@ -106,7 +104,8 @@ public final class DefinitionPropertyBuilder
    public final static int CONTROL_SHEET = 12;  
    
    
-   /**
+   
+/**
     * 
     */
    private DefinitionPropertyBuilder()
@@ -118,7 +117,8 @@ public final class DefinitionPropertyBuilder
       return mBuilderInstance;
    }
             
-   /**
+   
+/**
     * Builds the property set for a specified model elements.
     *
     * @param elementType
@@ -162,7 +162,8 @@ public final class DefinitionPropertyBuilder
       
       return retVal;
    }
-   /**
+   
+/**
     * Builds the property set for a specified property elements.  Bascially
     * builds the bridge between the UML property element constructs and the
     * NetBeans PropertySet constructs.
@@ -510,7 +511,8 @@ public final class DefinitionPropertyBuilder
 	// Helper Methods
 	////////////////////////////////////////////////////////////////////////////
 	
-   /**
+   
+/**
 	 * Gets the property element manager for the node.
 	 */
 	protected IPropertyElementManager getPropertyElementManager()
@@ -523,7 +525,8 @@ public final class DefinitionPropertyBuilder
 		return mPropEleMgr;
 	}
    
-	/**
+	
+/**
 	 * Gets the property definition factory for the node.  The property
 	 * definitions factory uses a configration file to generate property
 	 * defintions.  The propety defintion is basically an abstract description
@@ -544,7 +547,8 @@ public final class DefinitionPropertyBuilder
 		return mDefFactory;
 	}
    
-   /**
+   
+/**
 	 * Retrieve the file that defines the property definitions for the
 	 * project tree builder.
 	 *
@@ -751,7 +755,8 @@ public final class DefinitionPropertyBuilder
       return retVal;
    }
    
-   /**
+   
+/**
     * Determines whether or not this property element should be editable.  There are some cases
     * that we know going in that it is not editable (ie. versioned file name).  There are other
     * cases that we want it to not be editable if it is a certain value.  In these cases, we

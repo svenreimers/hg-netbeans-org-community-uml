@@ -42,6 +42,7 @@
  * made subject to such option by the copyright holder.
  */
 
+
 /*
  * Created on Oct 17, 2003
  *
@@ -55,10 +56,8 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.ElementCollector;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.IExpression;
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.Event;
 
-/**
- * @author aztec
- *
- */
+
+
 public class ChangeEvent extends Event implements IChangeEvent
 {
 
@@ -66,7 +65,8 @@ public class ChangeEvent extends Event implements IChangeEvent
 	{
 	}
 	
-	/**
+	
+/**
 	 * Gets the boolean-values expression that results in the occurrence
  	 * of the change event when its value becomes true.
 	 *
@@ -78,7 +78,8 @@ public class ChangeEvent extends Event implements IChangeEvent
 				.retrieveSingleElement(m_Node,"UML:ChangeEvent.changeExpression/*", IExpression.class);
 	}
 	
-	/**
+	
+/**
  	 * Sets the boolean-values expression that results in the occurrence
  	 * of the change event when its value becomes true.
 	 * @param exp[in]
@@ -89,7 +90,8 @@ public class ChangeEvent extends Event implements IChangeEvent
 				 "UML:ChangeEvent.changeExpression",changeExpression);
 	}
 	
-	/**
+	
+/**
 	 * Establishes the appropriate XML elements for this UML type.
 	 *
 	 * [in] The document where this element will reside

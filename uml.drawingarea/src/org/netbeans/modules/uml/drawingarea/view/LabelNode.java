@@ -44,10 +44,8 @@ package org.netbeans.modules.uml.drawingarea.view;
 
 import org.netbeans.api.visual.widget.LabelWidget;
 
-/**
- *
- * @author Sheryl Su
- */
+
+
 public interface LabelNode {
 
     public void showLabel(boolean show);

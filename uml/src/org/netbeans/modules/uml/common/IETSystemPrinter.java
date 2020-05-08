@@ -46,15 +46,12 @@
 
 package org.netbeans.modules.uml.common;
 
-/**
- * @author KevinM
- *
- * To change the template for this generated type comment go to
- * Window>Preferences>Java>Code Generation>Code and Comments
- */
+
+
 public interface IETSystemPrinter
 {
-	/**
+	
+/**
 	 * Flush the stream.  This is done by writing any buffered output bytes to
 	 * the underlying output stream and then flushing that stream.
 	 *
@@ -62,7 +59,8 @@ public interface IETSystemPrinter
 	 */
 	public void flush();
 
-	/**
+	
+/**
 	 * Close the stream.  This is done by flushing the stream and then closing
 	 * the underlying output stream.
 	 *
@@ -70,7 +68,8 @@ public interface IETSystemPrinter
 	 */
 	public void close();
 	
-	/**
+	
+/**
 	 * Flush the stream and check its error state.  The internal error state
 	 * is set to <code>true</code> when the underlying output stream throws an
 	 * <code>IOException</code> other than <code>InterruptedIOException</code>,
@@ -91,12 +90,14 @@ public interface IETSystemPrinter
 	public boolean checkError();
 
 
-	/*
+	
+/*
 	 * Exception-catching, synchronized output operations,
 	 * which also implement the write() methods of OutputStream
 	 */
 
-	/**
+	
+/**
 	 * Write the specified byte to this stream.  If the byte is a newline and
 	 * automatic flushing is enabled then the <code>flush</code> method will be
 	 * invoked.
@@ -112,7 +113,8 @@ public interface IETSystemPrinter
 	 */
 	public void write(int b);
 
-	/**
+	
+/**
 	 * Write <code>len</code> bytes from the specified byte array starting at
 	 * offset <code>off</code> to this stream.  If automatic flushing is
 	 * enabled then the <code>flush</code> method will be invoked.
@@ -130,7 +132,8 @@ public interface IETSystemPrinter
 
 	/* Methods that do not terminate lines */
 
-	/**
+	
+/**
 	 * Print a boolean value.  The string produced by <code>{@link
 	 * java.lang.String#valueOf(boolean)}</code> is translated into bytes
 	 * according to the platform's default character encoding, and these bytes
@@ -141,7 +144,8 @@ public interface IETSystemPrinter
 	 */
 	public void print(boolean b);
 	
-	/**
+	
+/**
 	 * Print a character.  The character is translated into one or more bytes
 	 * according to the platform's default character encoding, and these bytes
 	 * are written in exactly the manner of the
@@ -151,7 +155,8 @@ public interface IETSystemPrinter
 	 */
 	public void print(char c);
 
-	/**
+	
+/**
 	 * Print an integer.  The string produced by <code>{@link
 	 * java.lang.String#valueOf(int)}</code> is translated into bytes
 	 * according to the platform's default character encoding, and these bytes
@@ -162,7 +167,8 @@ public interface IETSystemPrinter
 	 * @see        java.lang.Integer#toString(int)
 	 */
 	public void print(int i);
-	/**
+	
+/**
 	 * Print a long integer.  The string produced by <code>{@link
 	 * java.lang.String#valueOf(long)}</code> is translated into bytes
 	 * according to the platform's default character encoding, and these bytes
@@ -174,7 +180,8 @@ public interface IETSystemPrinter
 	 */
 	public void print(long l);
 
-	/**
+	
+/**
 	 * Print a floating-point number.  The string produced by <code>{@link
 	 * java.lang.String#valueOf(float)}</code> is translated into bytes
 	 * according to the platform's default character encoding, and these bytes
@@ -185,7 +192,8 @@ public interface IETSystemPrinter
 	 * @see        java.lang.Float#toString(float)
 	 */
 	public void print(float f);
-	/**
+	
+/**
 	 * Print a double-precision floating-point number.  The string produced by
 	 * <code>{@link java.lang.String#valueOf(double)}</code> is translated into
 	 * bytes according to the platform's default character encoding, and these
@@ -196,7 +204,8 @@ public interface IETSystemPrinter
 	 * @see        java.lang.Double#toString(double)
 	 */
 	public void print(double d);
-	/**
+	
+/**
 	 * Print an array of characters.  The characters are converted into bytes
 	 * according to the platform's default character encoding, and these bytes
 	 * are written in exactly the manner of the
@@ -208,7 +217,8 @@ public interface IETSystemPrinter
 	 */
 	public void print(char s[]);
 
-	/**
+	
+/**
 	 * Print a string.  If the argument is <code>null</code> then the string
 	 * <code>"null"</code> is printed.  Otherwise, the string's characters are
 	 * converted into bytes according to the platform's default character
@@ -219,7 +229,8 @@ public interface IETSystemPrinter
 	 */
 	public void print(String s);
 
-	/**
+	
+/**
 	 * Print an object.  The string produced by the <code>{@link
 	 * java.lang.String#valueOf(Object)}</code> method is translated into bytes
 	 * according to the platform's default character encoding, and these bytes
@@ -233,14 +244,16 @@ public interface IETSystemPrinter
 
 	/* Methods that do terminate lines */
 
-	/**
+	
+/**
 	 * Terminate the current line by writing the line separator string.  The
 	 * line separator string is defined by the system property
 	 * <code>line.separator</code>, and is not necessarily a single newline
 	 * character (<code>'\n'</code>).
 	 */
 	public void println();
-	/**
+	
+/**
 	 * Print a boolean and then terminate the line.  This method behaves as
 	 * though it invokes <code>{@link #print(boolean)}</code> and then
 	 * <code>{@link #println()}</code>.
@@ -249,7 +262,8 @@ public interface IETSystemPrinter
 	 */
 	public void println(boolean x);
 
-	/**
+	
+/**
 	 * Print a character and then terminate the line.  This method behaves as
 	 * though it invokes <code>{@link #print(char)}</code> and then
 	 * <code>{@link #println()}</code>.
@@ -258,7 +272,8 @@ public interface IETSystemPrinter
 	 */
 	public void println(char x);
 	
-	/**
+	
+/**
 	 * Print an integer and then terminate the line.  This method behaves as
 	 * though it invokes <code>{@link #print(int)}</code> and then
 	 * <code>{@link #println()}</code>.
@@ -267,7 +282,8 @@ public interface IETSystemPrinter
 	 */
 	public void println(int x);
 
-	/**
+	
+/**
 	 * Print a long and then terminate the line.  This method behaves as
 	 * though it invokes <code>{@link #print(long)}</code> and then
 	 * <code>{@link #println()}</code>.
@@ -276,7 +292,8 @@ public interface IETSystemPrinter
 	 */
 	public void println(long x);
 
-	/**
+	
+/**
 	 * Print a float and then terminate the line.  This method behaves as
 	 * though it invokes <code>{@link #print(float)}</code> and then
 	 * <code>{@link #println()}</code>.
@@ -285,7 +302,8 @@ public interface IETSystemPrinter
 	 */
 	public void println(float x);
 
-	/**
+	
+/**
 	 * Print a double and then terminate the line.  This method behaves as
 	 * though it invokes <code>{@link #print(double)}</code> and then
 	 * <code>{@link #println()}</code>.
@@ -294,7 +312,8 @@ public interface IETSystemPrinter
 	 */
 	public void println(double x);
 
-	/**
+	
+/**
 	 * Print an array of characters and then terminate the line.  This method
 	 * behaves as though it invokes <code>{@link #print(char[])}</code> and
 	 * then <code>{@link #println()}</code>.
@@ -303,7 +322,8 @@ public interface IETSystemPrinter
 	 */
 	public void println(char x[]);
 
-	/**
+	
+/**
 	 * Print a String and then terminate the line.  This method behaves as
 	 * though it invokes <code>{@link #print(String)}</code> and then
 	 * <code>{@link #println()}</code>.
@@ -312,7 +332,8 @@ public interface IETSystemPrinter
 	 */
 	public void println(String x);
 
-	/**
+	
+/**
 	 * Print an Object and then terminate the line.  This method behaves as
 	 * though it invokes <code>{@link #print(Object)}</code> and then
 	 * <code>{@link #println()}</code>.

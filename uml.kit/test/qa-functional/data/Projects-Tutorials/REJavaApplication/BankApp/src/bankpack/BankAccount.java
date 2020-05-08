@@ -10,10 +10,8 @@
 
 package bankpack;
 
-/**
- *
- * @author Administrator
- */
+
+
 abstract class BankAccount implements Account {
     private double balance;
     

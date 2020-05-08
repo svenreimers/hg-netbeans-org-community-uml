@@ -43,6 +43,7 @@
  */
 
 
+
 /*
  * CLD_ArtifactElementTests.java
  *
@@ -70,10 +71,8 @@ import org.netbeans.test.umllib.NewDiagramWizardOperator;
 import org.netbeans.test.umllib.exceptions.NotFoundException;
 import org.netbeans.test.umllib.vrf.DiagramElementVerifier;
 
-/**
- *
- * @author VijayaBabu Mummaneni
- */
+
+
 public class CLD_ArtifactElementTests extends ClassDiagramTestCase {
     
     private static String prName = "UMLProjectForArtifact";

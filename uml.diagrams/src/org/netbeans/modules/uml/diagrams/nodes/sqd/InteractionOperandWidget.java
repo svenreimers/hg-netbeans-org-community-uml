@@ -80,10 +80,8 @@ import org.openide.util.Lookup;
 import org.openide.util.lookup.AbstractLookup;
 import org.openide.util.lookup.InstanceContent;
 
-/**
- *
- * @author sp153251
- */
+
+
 public class InteractionOperandWidget extends Widget implements DiagramNodeWriter, DiagramNodeReader,LabeledWidget,SubWidget {
 
     private final int HITAREAWIDTH=5;//really width is 2*HITAREAWIDTH, HITAREAWIDTH itself is one side hit border
@@ -158,7 +156,8 @@ public class InteractionOperandWidget extends Widget implements DiagramNodeWrite
     }
 
     
-    /**
+    
+/**
      * Paints the line widget.
      */
     @Override

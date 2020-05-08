@@ -44,10 +44,8 @@
 
 package org.netbeans.modules.uml.util;
 
-/**
- *
- * @author Craig Conover, craig.conover@sun.com
- */
+
+
 public interface ITaskFinishListener
 {
     public void taskFinished();

@@ -43,6 +43,7 @@
  */
 
 
+
 /*
  * Created on Feb 4, 2004
  *
@@ -52,10 +53,8 @@ package org.netbeans.modules.uml.ui.support.drawingproperties;
 import org.netbeans.modules.uml.common.generics.ETPairT;
 import org.netbeans.modules.uml.ui.support.ProductHelper;
 
-/**
- * @author jingmingm
- *
- */
+
+
 public class DrawingProperty implements IDrawingProperty, Comparable
 {
 	protected IDrawingPropertyProvider m_DrawingPropertyProvider = null;
@@ -92,7 +91,8 @@ public class DrawingProperty implements IDrawingProperty, Comparable
 		m_ResourceName = newVal;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.support.drawingproperties.IDrawingProperty#getResourceType()
 	 */
 	public String getResourceType()

@@ -43,17 +43,12 @@
  */
 
 
-/*
- *
- * Created on Jun 26, 2003
- * @author Trey Spiva
- */
+
+
 package org.netbeans.modules.uml.ui.controls.projecttree;
 
-/**
- *
- * @author Trey Spiva
- */
+
+
 public class ProjectTreeDragVerifyImpl implements IProjectTreeDragVerify
 {
    private IProjectTreeItem m_TargetNode = null;
@@ -61,7 +56,8 @@ public class ProjectTreeDragVerifyImpl implements IProjectTreeDragVerify
    private boolean          m_IsHandled  = false;
    private long             m_DropEffect = 0;
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeDragVerify#getTargetNode()
     */
    public IProjectTreeItem getTargetNode()
@@ -69,7 +65,8 @@ public class ProjectTreeDragVerifyImpl implements IProjectTreeDragVerify
       return m_TargetNode;
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeDragVerify#setTargetNode(org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem)
     */
    public void setTargetNode(IProjectTreeItem value)
@@ -77,7 +74,8 @@ public class ProjectTreeDragVerifyImpl implements IProjectTreeDragVerify
       m_TargetNode = value;
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeDragVerify#getCancel()
     */
    public boolean isCancel()
@@ -85,7 +83,8 @@ public class ProjectTreeDragVerifyImpl implements IProjectTreeDragVerify
       return m_IsCanceled;
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeDragVerify#setCancel(boolean)
     */
    public void setCancel(boolean value)
@@ -93,7 +92,8 @@ public class ProjectTreeDragVerifyImpl implements IProjectTreeDragVerify
       m_IsCanceled = value;
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeDragVerify#getHandled()
     */
    public boolean getHandled()
@@ -101,7 +101,8 @@ public class ProjectTreeDragVerifyImpl implements IProjectTreeDragVerify
       return m_IsHandled;
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeDragVerify#setHandled(boolean)
     */
    public void setHandled(boolean value)
@@ -109,7 +110,8 @@ public class ProjectTreeDragVerifyImpl implements IProjectTreeDragVerify
       m_IsHandled = value;
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeDragVerify#getDropEffect()
     */
    public long getDropEffect()
@@ -117,7 +119,8 @@ public class ProjectTreeDragVerifyImpl implements IProjectTreeDragVerify
       return m_DropEffect;
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeDragVerify#setDropEffect(long)
     */
    public void setDropEffect(long value)

@@ -43,6 +43,7 @@
  */
 
 
+
 /*
  * TSSide.java
  *
@@ -51,10 +52,8 @@
 
 package org.netbeans.modules.uml.ui.support;
 
-/**
- *
- * @author  jm142314
- */
+
+
 // This class is a place holder for TS5.5 TSSide constants only
 
 public interface TSSide {

@@ -63,9 +63,8 @@ import org.netbeans.test.umllib.Utils;
 import org.netbeans.test.umllib.util.PopupConstants;
 
 
-/**
- * @author yaa
- */
+
+
 public class DTBUtils {
     
     public DTBUtils() {

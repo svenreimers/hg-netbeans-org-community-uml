@@ -49,47 +49,56 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 public interface ICoreProductManager
 {
-	/**
+	
+/**
 	 * Get/Set the product for the process that this ICoreProductManager is located.
 	*/
 	public ICoreProduct getCoreProduct();
 
-	/**
+	
+/**
 	 * Get/Set the product for the process that this ICoreProductManager is located.
 	*/
 	public void setCoreProduct( ICoreProduct value );
 
-	/**
+	
+/**
 	 * Get/Set the product.  The nPID is the process ID where the application is located.
 	*/
 	public ICoreProduct getCoreProduct( int nPID );
 
-	/**
+	
+/**
 	 * Get/Set the product.  The nPID is the process ID where the application is located.
 	*/
 	public void setCoreProduct( int nPID, ICoreProduct value );
 
-	/**
+	
+/**
 	 * The collection of CoreProducts this manager manages.
 	*/
 	public ETList<IProductDescriptor> getProducts();
 
-	/**
+	
+/**
 	 * Returns the product manager that is on the ROT.
 	*/
 	public ICoreProductManager getProductManagerOnROT();
 
-	/**
+	
+/**
 	 * Removes this item from the ROT.
 	*/
 	public void removeFromROT();
 
-	/**
+	
+/**
 	 * Sets the product for which you want to attach (ie Describe).
 	*/
 	public void setProductAlias( String value );
 
-	/**
+	
+/**
 	 * Sets the product for which you want to attach (ie Describe).
 	*/
 	public String getProductAlias();

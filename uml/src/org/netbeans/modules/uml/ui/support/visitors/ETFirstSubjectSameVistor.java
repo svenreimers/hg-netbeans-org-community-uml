@@ -50,12 +50,8 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.IElement;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.IPresentationElement;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
-/**
- * @author KevinM
- *
- *	If any graphObject firstSubject model element is the same as the input model element,
- * it's presentation element gets appended to the list.
- */
+
+
 public class ETFirstSubjectSameVistor implements IETGraphObjectVisitor
 {
 
@@ -68,7 +64,8 @@ public class ETFirstSubjectSameVistor implements IETGraphObjectVisitor
       presentationElements = pPES;
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.visitors.IETGraphObjectVisitor#visit(org.netbeans.modules.uml.ui.support.viewfactorysupport.IETGraphObject)
     */
    // TODO: meteora

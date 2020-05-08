@@ -67,10 +67,8 @@ import org.netbeans.modules.uml.util.DummyCorePreference;
 import org.openide.util.NbBundle;
 import org.openide.util.NbPreferences;
 
-/**
- *
- * @author Kris Richards
- */
+
+
 public class HierarchicalLayoutAction extends AbstractAction implements GraphLayoutListener {
 
     private DesignerScene scene;

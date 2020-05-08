@@ -53,10 +53,8 @@ import org.netbeans.modules.uml.diagrams.nodes.RoundedRectWidget;
 import org.netbeans.modules.uml.drawingarea.view.ResourceType;
 import org.netbeans.modules.uml.drawingarea.view.UMLLabelWidget;
 
-/**
- *
- * @author thuy
- */
+
+
 public class InvocationWidget extends ActivityNodeWidget
 {
     private static final int MIN_NODE_WIDTH = 80;

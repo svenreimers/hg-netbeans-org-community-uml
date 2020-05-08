@@ -42,18 +42,14 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : ICommentGather.java
- * Created on : Oct 23, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework;
 
 import antlr.collections.AST;
 
-/**
- * @author Aztec
- */
+
+
 public interface ICommentGather
 {
     public ITokenDescriptor gather(AST pAST, ITokenDescriptor pDesc);

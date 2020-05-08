@@ -79,10 +79,8 @@ import org.netbeans.test.umllib.util.LibProperties;
 
 
 
-/**
- *
- * @author psb
- */
+
+
 public class ComDPlaceAllLinks extends UMLMultiTestSuite {
     
     private static String[] Test_Cases={"PlaceLinks"};

@@ -110,7 +110,8 @@ public class TypeManager implements ITypeManager, IElementLifeTimeEventsSink,
     INamedElementEventsSink, INamespaceModifiedEventsSink, 
     IExternalElementEventsSink
 {
-	/**
+	
+/**
 	 *
 	 * Retrieves the Project this TypeManager is associated with.
 	 *
@@ -121,7 +122,8 @@ public class TypeManager implements ITypeManager, IElementLifeTimeEventsSink,
         return m_Project;
     }
 
-	/**
+	
+/**
 	 *
 	 * Associates this TypeManager to the passed in Project.
 	 *
@@ -167,7 +169,8 @@ public class TypeManager implements ITypeManager, IElementLifeTimeEventsSink,
         }
     }
     
-	/**
+	
+/**
 	 *
 	 * Creates the .ettm file and populate it with information
 	 * retrieved from the passed in Project
@@ -218,7 +221,8 @@ public class TypeManager implements ITypeManager, IElementLifeTimeEventsSink,
         return null;
     }
     
-	/**
+	
+/**
 	 *
 	 * Gathers the necessary type information to initially populate
 	 * the passed in document.
@@ -246,16 +250,8 @@ public class TypeManager implements ITypeManager, IElementLifeTimeEventsSink,
         }
     }
     
-	/**
-	 *
-	 * Loads all elements that contain an external reference ( @href ) to
-	 * another file, most likely a .etx
-	 *
-	 * @param nodeToSearch[in]   The node to expand.
-	 *
-	 * @return HRESULT
-	 *
-	 */
+	
+
 	private void loadAllExternalElements(Node node)
 	{
 		if (node != null)
@@ -303,7 +299,8 @@ public class TypeManager implements ITypeManager, IElementLifeTimeEventsSink,
 		}
 	}
 
-	/**
+	
+/**
 	 *
 	 * Resolves the passed in node, loading it either from disk for from another in-memory node from another
 	 * project, depending on whether or not that node is imported or not
@@ -404,7 +401,8 @@ public class TypeManager implements ITypeManager, IElementLifeTimeEventsSink,
 		return finalNode;
 	}
 
-	/**
+	
+/**
 	 * @see GetImportInfo()
 	 */
 	private ImportInfo getImportInfo(String id)
@@ -420,7 +418,8 @@ public class TypeManager implements ITypeManager, IElementLifeTimeEventsSink,
 	   return retInfo;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Retrieves the import information of the passed in elementNode. If the element
 	 * is not an element that has been imported into the Project this TypeManager is
@@ -447,7 +446,8 @@ public class TypeManager implements ITypeManager, IElementLifeTimeEventsSink,
 		return retObj;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Retrieves the node in the .ettm file that corresponds to the Location node associated
 	 * with the XMI id of the element passed in.
@@ -466,7 +466,8 @@ public class TypeManager implements ITypeManager, IElementLifeTimeEventsSink,
 		return retNode;
 	}
 
-	/** 
+	
+/** 
 	 * @see GetLocationNodeFromXMIID()
 	 */
 	private Node getLocationNodeFromXMIID(String id )
@@ -483,7 +484,8 @@ public class TypeManager implements ITypeManager, IElementLifeTimeEventsSink,
 		return retNode;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Adds the collection of types to the type file
 	 *
@@ -516,7 +518,8 @@ public class TypeManager implements ITypeManager, IElementLifeTimeEventsSink,
 		}
 	}
 
-	/**
+	
+/**
 	 *
 	 * Adds the passed in element to the type file
 	 *
@@ -567,7 +570,8 @@ public class TypeManager implements ITypeManager, IElementLifeTimeEventsSink,
 		}
 	}
 
-	/**
+	
+/**
 	 *
 	 * Changes all references to element's xmiid to a URI to 
 	 * the extracted form of element.
@@ -583,7 +587,8 @@ public class TypeManager implements ITypeManager, IElementLifeTimeEventsSink,
 		//all is commented out in C++ code.
 	}
 
-	/**
+	
+/**
 	 * Retrieves the referenced library with the passed in name.
 	*/
 	public IProject getReferencedLibraryProjectByLocation( String refLibLoc )
@@ -591,7 +596,8 @@ public class TypeManager implements ITypeManager, IElementLifeTimeEventsSink,
 		return getRefLibProject(null, refLibLoc);
 	}
 
-	/**
+	
+/**
 	 *
 	 * Retrieves all the projects references by the Project this TypeManager is associated with
 	 *
@@ -634,7 +640,8 @@ public class TypeManager implements ITypeManager, IElementLifeTimeEventsSink,
 		return retProjs;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Retrieves the project referenced at the passed in location
 	 *
@@ -696,16 +703,8 @@ public class TypeManager implements ITypeManager, IElementLifeTimeEventsSink,
 		return retProj;
 	}
 
-	/**
-	 *
-	 * Retrieves the IDs of any element found in the .QueryCache ( which the 
-	 * PickListManager oversees ) and then loads those elements into memory
-	 *
-	 * @param name[in]   The name to resolve
-	 *
-	 * @return HRESULT
-	 *
-	 */
+	
+
 	private void ensureLoadedViaPickListManagement(String name )
 	{
 		if (m_rawPickManager != null)
@@ -723,7 +722,8 @@ public class TypeManager implements ITypeManager, IElementLifeTimeEventsSink,
 		}
 	}
 
-	/**
+	
+/**
 	 *
 	 * Retrieves elements that match a particular name. This is mostly used for type resolution.
 	 *
@@ -747,7 +747,8 @@ public class TypeManager implements ITypeManager, IElementLifeTimeEventsSink,
 		return retElems;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Given the collection of xmi ids, attempts to locate those elements
 	 *
@@ -778,7 +779,8 @@ public class TypeManager implements ITypeManager, IElementLifeTimeEventsSink,
 		return nels;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Retrieves a Named Type most used for type resolution. If there are more than one,
 	 * the first is retrieved.
@@ -804,7 +806,8 @@ public class TypeManager implements ITypeManager, IElementLifeTimeEventsSink,
 		return retEle;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Retrieves a type from a referenced library that matches the passed in name of matches one of the types passed in
 	 *
@@ -861,7 +864,8 @@ public class TypeManager implements ITypeManager, IElementLifeTimeEventsSink,
 		return retEle;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Retrieves the application off the Product
 	 *
@@ -881,7 +885,8 @@ public class TypeManager implements ITypeManager, IElementLifeTimeEventsSink,
 		return retApp;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Retrieves elements that match a particular name. This is mostly used for type resolution.
 	 * The search is restricted to just the Project this TypeManager is associated with.
@@ -906,7 +911,8 @@ public class TypeManager implements ITypeManager, IElementLifeTimeEventsSink,
 		return retElems;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Populates the ImportInfo object with data found in the locationNode parameter
 	 *
@@ -928,33 +934,15 @@ public class TypeManager implements ITypeManager, IElementLifeTimeEventsSink,
 		return retObj;
 	}
 
-	/**
-	 *
-	 * Loads a node from a different project.
-	 *
-	 * @param xmiID[in]        The id of the element to load
-	 * @param info[in]         The import info used to load the node
-	 * @param finalNode[out]   The found node, else 0
-	 *
-	 * @return HRESULT
-	 *
-	 */
+	
+
 	private Node loadNodeFromExternalProject(String xmiID, ImportInfo info )
 	{
 	   return loadNodeFromExternalProject( xmiID, info.m_ProjectID );
 	}
 
-	/**
-	 *
-	 * Loads a node from a different project.
-	 *
-	 * @param xmiID[in]        The id of the element to load
-	 * @param projID[in]       The id of the external Project to pull the element from
-	 * @param finalNode[out]   The found node, else 0
-	 *
-	 * @return HRESULT
-	 *
-	 */
+	
+
 	private Node loadNodeFromExternalProject(String xmiID, String projID )
 	{
 		Node retNode = null;
@@ -976,7 +964,8 @@ public class TypeManager implements ITypeManager, IElementLifeTimeEventsSink,
 		return retNode;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Makes sure that the parents of pNode are properly placed in memory.
 	 *
@@ -1078,7 +1067,8 @@ public class TypeManager implements ITypeManager, IElementLifeTimeEventsSink,
 		return retNode;
 	}
 	
-	/**
+	
+/**
 	 *
 	 * Retrieves the parent node of child, making sure the parent is loaded if necessary.
 	 *
@@ -1156,17 +1146,8 @@ public class TypeManager implements ITypeManager, IElementLifeTimeEventsSink,
 		return retNode;
 	}
 
-	/**
-	 *
-	 * Loads the node described by extNode into the document
-	 * encapsulated by the associated IProject.
-	 *
-	 * @param extNode[in] The ExternalNode element describing the
-	 *                    element to load.
-	 *
-	 * @return HRESULT
-	 *
-	 */
+	
+
 	private void loadExternalElement( Node extNode )
 	{
 		// First find out if the ExternalElement node passed in has a parent node. If the 
@@ -1210,7 +1191,8 @@ public class TypeManager implements ITypeManager, IElementLifeTimeEventsSink,
 		return retNode;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Adds the appropriate data from the passed in node to a new element on 
 	 * the type element DOM tree.
@@ -1277,7 +1259,8 @@ public class TypeManager implements ITypeManager, IElementLifeTimeEventsSink,
 		}
 	}
 
-	/**
+	
+/**
 	 *
 	 * Given the location, retrieves the ID to use when referencing the location in
 	 * the future.
@@ -1328,7 +1311,8 @@ public class TypeManager implements ITypeManager, IElementLifeTimeEventsSink,
 		return retStr;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Creates a new entry into the locations area of the type file
 	 *
@@ -1382,7 +1366,8 @@ public class TypeManager implements ITypeManager, IElementLifeTimeEventsSink,
 		return retStr;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Determines whether or not the location being passed in is a path to an imported project.
 	 *
@@ -1459,7 +1444,8 @@ public class TypeManager implements ITypeManager, IElementLifeTimeEventsSink,
 		}
 	}
 
-	/**
+	
+/**
 	 *
 	 * Returns a relative path from the internal Project to the absolute
 	 * path passed in.
@@ -1483,7 +1469,8 @@ public class TypeManager implements ITypeManager, IElementLifeTimeEventsSink,
 		return retStr;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Retrieves the "VersionedElement" node in the file pointed to by location
 	 *
@@ -1505,7 +1492,8 @@ public class TypeManager implements ITypeManager, IElementLifeTimeEventsSink,
 		return retNode;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Returns then increments the next ID for locations in this type file
 	 *
@@ -1520,7 +1508,7 @@ public class TypeManager implements ITypeManager, IElementLifeTimeEventsSink,
 		String nextId = XMLManip.getAttributeValue(locationsNode, "nextID");
 		if (nextId != null && nextId.length() > 0)
 		{
-			// ID xml attributes must start with an alphanumeric character
+			
 			retStr = "T.";
 			retStr += nextId;
 			int nextIdNum = Integer.parseInt(nextId);
@@ -1549,7 +1537,8 @@ public class TypeManager implements ITypeManager, IElementLifeTimeEventsSink,
         }
     }
     
-	/**
+	
+/**
 	 *
 	 * Registers for the various events this TypeManager is interested in.a
 	 *
@@ -1580,7 +1569,8 @@ public class TypeManager implements ITypeManager, IElementLifeTimeEventsSink,
 		}
     }
     
-	/**
+	
+/**
 	 *
 	 * Saves all the unresolved types to a ".unresolved" file in the project directory
 	 *
@@ -1668,7 +1658,8 @@ public class TypeManager implements ITypeManager, IElementLifeTimeEventsSink,
         }
     }
 
-	/**
+	
+/**
 	 *
 	 * Adds the passed in ID to our collection of elements that could
 	 * not be resolved. We do this so that we don't waste a lot of time
@@ -1684,7 +1675,8 @@ public class TypeManager implements ITypeManager, IElementLifeTimeEventsSink,
 		//all code commented out in C++
 	}
 
-	/**
+	
+/**
 	 *
 	 * Retrieves the file name for the ".unresolved" file
 	 *
@@ -1702,7 +1694,8 @@ public class TypeManager implements ITypeManager, IElementLifeTimeEventsSink,
 		return fileName;
 	}
     
-    /**
+    
+/**
      * Verifies that the .ettm file that should be associated with the passed-in
      * project exists.
      * 
@@ -1716,7 +1709,8 @@ public class TypeManager implements ITypeManager, IElementLifeTimeEventsSink,
         return retrieveTypeFile(project).exists();
     }
     
-    /**
+    
+/**
      * Retrieves the .ettm file, given a project.
      * 
      * @param project The project for which we want a .ettm file.
@@ -1728,7 +1722,8 @@ public class TypeManager implements ITypeManager, IElementLifeTimeEventsSink,
             StringUtilities.ensureExtension(project.getFileName(), ".ettm"));
     }
 
-    /**
+    
+/**
      * 
      */
     public void clearDeletedIDs()
@@ -1736,7 +1731,8 @@ public class TypeManager implements ITypeManager, IElementLifeTimeEventsSink,
         m_DeletedCache.clear();
     }
     
-    /**
+    
+/**
      * Revokes this TypeManager from the various sinks it's listening to.
      */
     private void revokeEventSinks()
@@ -1759,7 +1755,8 @@ public class TypeManager implements ITypeManager, IElementLifeTimeEventsSink,
         }
     }
 
-	/**
+	
+/**
 	 *
 	 * Retrieves an element that matches name
 	 *
@@ -1784,7 +1781,8 @@ public class TypeManager implements ITypeManager, IElementLifeTimeEventsSink,
         return retEle;
     }
 
-	/**
+	
+/**
 	 *
 	 * Retrieves the elements that have a name that matches name.
 	 *
@@ -1812,7 +1810,8 @@ public class TypeManager implements ITypeManager, IElementLifeTimeEventsSink,
         return retObj;
     }
 
-	/**
+	
+/**
 	 *
 	 * Makes sure that all the nodes passed in are loaded into the Project's
 	 * DOM tree
@@ -1840,7 +1839,8 @@ public class TypeManager implements ITypeManager, IElementLifeTimeEventsSink,
 		}
 	}
 
-	/**
+	
+/**
 	 *
 	 * Retrieves all the elements in this type document that match
 	 * the passed in name.
@@ -1873,7 +1873,8 @@ public class TypeManager implements ITypeManager, IElementLifeTimeEventsSink,
 		return retObj;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Retrieves an element given the passed in ID
 	 *
@@ -1899,7 +1900,8 @@ public class TypeManager implements ITypeManager, IElementLifeTimeEventsSink,
         return retEle;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.typemanagement.ITypeManager#getRawElementByID(java.lang.String)
      */
     public Node getRawElementByID(String elementID)
@@ -2006,7 +2008,8 @@ public class TypeManager implements ITypeManager, IElementLifeTimeEventsSink,
     	return retNode;
     }
     
-	/**
+	
+/**
 	 *
 	 * Makes sure that the element that exists in the type file
 	 * is loaded into the Project DOM.
@@ -2113,7 +2116,8 @@ public class TypeManager implements ITypeManager, IElementLifeTimeEventsSink,
 		return retNode;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Searches for the passed in XMI.ID in all the external files
 	 * associated with this Project
@@ -2146,7 +2150,8 @@ public class TypeManager implements ITypeManager, IElementLifeTimeEventsSink,
 		return foundInFile;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Determines whether or not the passed in xmi id is in the file located
 	 * at fileLoc
@@ -2167,7 +2172,8 @@ public class TypeManager implements ITypeManager, IElementLifeTimeEventsSink,
 		return isPresent;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Determines whether or not a particular id has been determined
 	 * irresolvable.
@@ -2193,7 +2199,8 @@ public class TypeManager implements ITypeManager, IElementLifeTimeEventsSink,
 		return irresolvable;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Determines whether or not the passed in xmi.id is the id of an external
 	 * Project. If it is, the node of that IProject is returned.
@@ -2227,7 +2234,8 @@ public class TypeManager implements ITypeManager, IElementLifeTimeEventsSink,
 		return retNode;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Finds the element with the passed in ID from any of the imported projects. Once found,
 	 * that type will be added to this project's type file for easier retrieval when asked
@@ -2268,7 +2276,8 @@ public class TypeManager implements ITypeManager, IElementLifeTimeEventsSink,
 		return retNode;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Attempts to find the element that has the passed in XMI id in the Project that
 	 * are being imported indirectly into the Project this TYpeManager is associated with
@@ -2304,7 +2313,8 @@ public class TypeManager implements ITypeManager, IElementLifeTimeEventsSink,
 		return retNode;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Retrieves all the Projects that are being imported into the 
 	 * Project associated with this TypeManager indirectly.
@@ -2361,16 +2371,8 @@ public class TypeManager implements ITypeManager, IElementLifeTimeEventsSink,
 		return retObj;
 	}
 
-	/**
-	 *
-	 * Loads the first element in the passed in document with an "href" xml attribute.
-	 *
-	 * @param doc[in]          The document to search
-	 * @param foundNode[out]   The found element
-	 *
-	 * @return HRESULT
-	 *
-	 */
+	
+
 	private Node loadFirstHRefElement(Document doc)
 	{
 		Node retNode = null;
@@ -2385,7 +2387,8 @@ public class TypeManager implements ITypeManager, IElementLifeTimeEventsSink,
 		return retNode;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Takes the two parts of a URI, making sure that they are absolute paths when necessary.
 	 *
@@ -2407,7 +2410,8 @@ public class TypeManager implements ITypeManager, IElementLifeTimeEventsSink,
 		return uri;
 	}
 
-	/**
+	
+/**
 	 *
 	 * If the document location part of a URI is prefixed with a URI declaration, e.g.,
 	 * "uri|", then this routine will string that off.
@@ -2422,7 +2426,8 @@ public class TypeManager implements ITypeManager, IElementLifeTimeEventsSink,
 		return URILocator.stripURIDeclaration(docLoc);
 	}
 
-	/**
+	
+/**
 	 *
 	 * Finds all the elements by a given name in the IProject this TypeManager
 	 * is associated with.
@@ -2458,7 +2463,8 @@ public class TypeManager implements ITypeManager, IElementLifeTimeEventsSink,
         return URILocator.retrieveRawID(id);
     }
     
-    /**
+    
+/**
      * Retrieves the XML document associated with the IProject this TypeManager
      * is associated with.
      * 
@@ -2480,7 +2486,8 @@ public class TypeManager implements ITypeManager, IElementLifeTimeEventsSink,
         return m_DeletedCache.contains(id);
     }
 
-	/**
+	
+/**
 	 *
 	 * Determines is the element passed in is actually a part of the IProject
 	 * this TypeManager is associated with. If it isn't, then all events 
@@ -2512,7 +2519,8 @@ public class TypeManager implements ITypeManager, IElementLifeTimeEventsSink,
 		return isWatched;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Determines whether or not any processing should be performed on the passed
 	 * in element.
@@ -2538,7 +2546,8 @@ public class TypeManager implements ITypeManager, IElementLifeTimeEventsSink,
 		return process;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Saves the contents of this TypeManager to the specified file.
 	 *
@@ -2552,7 +2561,8 @@ public class TypeManager implements ITypeManager, IElementLifeTimeEventsSink,
         }
     }
 
-	/**
+	
+/**
 	 *
 	 * Adds the passed in element to the type file, as long as element
 	 * is part of the Project that this TypeManager is a part of.
@@ -2570,7 +2580,8 @@ public class TypeManager implements ITypeManager, IElementLifeTimeEventsSink,
     	}
     }
 
-	/**
+	
+/**
 	 *
 	 * Adds a type that is assumed is external to this TypeManager's type list of
 	 * versioned or imported types.
@@ -2597,7 +2608,8 @@ public class TypeManager implements ITypeManager, IElementLifeTimeEventsSink,
         }
     }
     
-	/**
+	
+/**
 	 *
 	 * Adds the passed in element to this TypeManager's list of types either
 	 * versioned or imported.
@@ -2628,7 +2640,8 @@ public class TypeManager implements ITypeManager, IElementLifeTimeEventsSink,
 		}
 	}
 
-	/**
+	
+/**
 	 *
 	 * This methods makes sure that any elements that are likely to be referenced by
 	 * external elements are also added to the type file along with the parent element
@@ -2667,7 +2680,8 @@ public class TypeManager implements ITypeManager, IElementLifeTimeEventsSink,
 		}
 	}
 
-	/**
+	
+/**
 	 *
 	 * Removes the passed in element from the type file.
 	 *
@@ -2688,7 +2702,8 @@ public class TypeManager implements ITypeManager, IElementLifeTimeEventsSink,
     	}
     }
 
-	/**
+	
+/**
 	 *
 	 * Removes the node that matches the xmi.id of the passed in 
 	 * node.
@@ -2719,7 +2734,8 @@ public class TypeManager implements ITypeManager, IElementLifeTimeEventsSink,
 		}
 	}
 
-	/**
+	
+/**
 	 *
 	 * Removes all nodes that refer to the passed in parentID. This is recursive.
 	 *
@@ -2748,7 +2764,8 @@ public class TypeManager implements ITypeManager, IElementLifeTimeEventsSink,
 		}
 	}
 
-	/**
+	
+/**
 	 *
 	 * Removes the location node from this type file
 	 *
@@ -2774,7 +2791,8 @@ public class TypeManager implements ITypeManager, IElementLifeTimeEventsSink,
 		}
 	}
 
-	/**
+	
+/**
 	 *
 	 * Determines whether or not a element with the xmi.id of element is already
 	 * present in the .ettm file.
@@ -2800,7 +2818,8 @@ public class TypeManager implements ITypeManager, IElementLifeTimeEventsSink,
 		return retNode;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Retrieves all the absolute file names that the IProject that the TypeManager is a part of
 	 * is built up on.
@@ -2849,7 +2868,8 @@ public class TypeManager implements ITypeManager, IElementLifeTimeEventsSink,
         return retObj;
     }
 
-	/**
+	
+/**
 	 *
 	 * Given a location to an external file, the method will attempt to locate
 	 * an element in the file that had been unloaded from the main project, and reinject
@@ -2866,7 +2886,8 @@ public class TypeManager implements ITypeManager, IElementLifeTimeEventsSink,
     	loadExternalFileAndReturnNode(fileLocation);
     }
 
-	/**
+	
+/**
 	 *
 	 * Given a location to an external file, the method will attempt to locate
 	 * an a VersionedElement xml element, which should then hold the specific element
@@ -2951,7 +2972,8 @@ public class TypeManager implements ITypeManager, IElementLifeTimeEventsSink,
 		return retNode;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Determines whether or not the verNode node passed in contains
 	 * elements that are part of the Project this TypeManager is 
@@ -2970,7 +2992,8 @@ public class TypeManager implements ITypeManager, IElementLifeTimeEventsSink,
 		return false;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Determines whether or not the location passed in points at a Project that is being imported
 	 *
@@ -3007,7 +3030,8 @@ public class TypeManager implements ITypeManager, IElementLifeTimeEventsSink,
 		loadAllExternalElements();
 	}
 
-	/**
+	
+/**
 	 *
 	 * Retrieves the owner of childElement that is versioned. There are many times where an element ( such as a
 	 * UML:Parameter ) are not versioned themselves, but are encapsulated by an owner ( and it may not be an immediate
@@ -3093,7 +3117,8 @@ public class TypeManager implements ITypeManager, IElementLifeTimeEventsSink,
         return retEle;
     }
 
-	/**
+	
+/**
 	 *
 	 * Removes the passed in element not only from this type file, but cleans
 	 * all references to the type, erasing any uri information in regards to an
@@ -3129,7 +3154,8 @@ public class TypeManager implements ITypeManager, IElementLifeTimeEventsSink,
     	}
     }
 
-	/**
+	
+/**
 	 *
 	 * Retrieves every element in the associated Project that are version controlled.
 	 *
@@ -3153,7 +3179,8 @@ public class TypeManager implements ITypeManager, IElementLifeTimeEventsSink,
         return retObj;
     }
 
-	/**
+	
+/**
 	 *
 	 * Ensures that the element passed in is situated in memory such that its immediate parent is loaded
 	 * and available, and that element is properly pointing at that parent.
@@ -3184,7 +3211,8 @@ public class TypeManager implements ITypeManager, IElementLifeTimeEventsSink,
         return retVal;
     }
 
-	/**
+	
+/**
 	 *
 	 * Ensures that the node passed in is situated in memory such that its immediate parent is loaded
 	 * and available, and that element is properly pointing at that parent.
@@ -3242,7 +3270,8 @@ public class TypeManager implements ITypeManager, IElementLifeTimeEventsSink,
 		return retNode;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Retrieves the IPickListManager associated with this TypeManager
 	 *
@@ -3256,7 +3285,8 @@ public class TypeManager implements ITypeManager, IElementLifeTimeEventsSink,
         return m_rawPickManager;
     }
 
-	/**
+	
+/**
 	 *
 	 * Sets an IPickListManager on this TypeManager
 	 *
@@ -3275,7 +3305,8 @@ public class TypeManager implements ITypeManager, IElementLifeTimeEventsSink,
 		}
     }
 
-	/**
+	
+/**
 	 *
 	 * Retrieves the first element found in this TypeManager's Project that matches the 
 	 * passed in name. If more than one element by that name is found, the first one
@@ -3301,7 +3332,8 @@ public class TypeManager implements ITypeManager, IElementLifeTimeEventsSink,
         return retEle;
     }
 
-	/**
+	
+/**
 	 *
 	 * Attempts to find the types that have a name that matches the passed in name in one
 	 * of the libraries the Project this TypeManager is associated with is referencing
@@ -3357,7 +3389,8 @@ public class TypeManager implements ITypeManager, IElementLifeTimeEventsSink,
         return retObj;
     }
 
-	/**
+	
+/**
 	 *
 	 * Adds an XMI ID to the cache of deleted IDs. This is used to prevent excessive 
 	 * resolution logic on IDs that will never be found
@@ -3375,49 +3408,56 @@ public class TypeManager implements ITypeManager, IElementLifeTimeEventsSink,
 		}
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IElementLifeTimeEventsSink#onElementPreCreate(java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onElementPreCreate(String ElementType, IResultCell cell)
     {
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IElementLifeTimeEventsSink#onElementCreated(org.netbeans.modules.uml.core.metamodel.core.foundation.IVersionableElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onElementCreated(IVersionableElement element, IResultCell cell)
     {
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IElementLifeTimeEventsSink#onElementPreDelete(org.netbeans.modules.uml.core.metamodel.core.foundation.IVersionableElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onElementPreDelete(IVersionableElement element, IResultCell cell)
     {
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IElementLifeTimeEventsSink#onElementDeleted(org.netbeans.modules.uml.core.metamodel.core.foundation.IVersionableElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onElementDeleted(IVersionableElement element, IResultCell cell)
     {
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IElementLifeTimeEventsSink#onElementPreDuplicated(org.netbeans.modules.uml.core.metamodel.core.foundation.IVersionableElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onElementPreDuplicated(IVersionableElement element, IResultCell cell)
     {
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IElementLifeTimeEventsSink#onElementDuplicated(org.netbeans.modules.uml.core.metamodel.core.foundation.IVersionableElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onElementDuplicated(IVersionableElement element, IResultCell cell)
     {
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElementEventsSink#onPreNameModified(org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElement, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onPreNameModified(INamedElement element, String proposedName, IResultCell cell)
@@ -3425,7 +3465,8 @@ public class TypeManager implements ITypeManager, IElementLifeTimeEventsSink,
         //do nothing
     }
 
-	/**
+	
+/**
 	 *
 	 * Called whenever an element's name is changing.
 	 *
@@ -3458,7 +3499,8 @@ public class TypeManager implements ITypeManager, IElementLifeTimeEventsSink,
         }
     }
 
-	/**
+	
+/**
 	 *
 	 * Given a VersionableElement, retrieves the Type node from this TypeManager based
 	 * on the ID of the passed in VersionableElement
@@ -3496,7 +3538,8 @@ public class TypeManager implements ITypeManager, IElementLifeTimeEventsSink,
 		return retNode;
 	}
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElementEventsSink#onPreVisibilityModified(org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElement, int, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onPreVisibilityModified(INamedElement element, int proposedValue, IResultCell cell)
@@ -3504,7 +3547,8 @@ public class TypeManager implements ITypeManager, IElementLifeTimeEventsSink,
         //nothing to do
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElementEventsSink#onVisibilityModified(org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onVisibilityModified(INamedElement element, IResultCell cell)
@@ -3512,7 +3556,8 @@ public class TypeManager implements ITypeManager, IElementLifeTimeEventsSink,
         //nothing to do
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElementEventsSink#onPreAliasNameModified(org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElement, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onPreAliasNameModified(INamedElement element, String proposedName, IResultCell cell)
@@ -3520,7 +3565,8 @@ public class TypeManager implements ITypeManager, IElementLifeTimeEventsSink,
         //nothing to do
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElementEventsSink#onAliasNameModified(org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onAliasNameModified(INamedElement element, IResultCell cell)
@@ -3528,7 +3574,8 @@ public class TypeManager implements ITypeManager, IElementLifeTimeEventsSink,
         //nothing to do
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElementEventsSink#onPreNameCollision(org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElement, java.lang.String)
      */
     public void onPreNameCollision(INamedElement element, String proposedName, 
@@ -3537,7 +3584,8 @@ public class TypeManager implements ITypeManager, IElementLifeTimeEventsSink,
         //nothing to do
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElementEventsSink#onNameCollision(org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElement)
      */
     public void onNameCollision(INamedElement element, 
@@ -3546,7 +3594,8 @@ public class TypeManager implements ITypeManager, IElementLifeTimeEventsSink,
         //nothing to do
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.INamespaceModifiedEventsSink#onPreElementAddedToNamespace(org.netbeans.modules.uml.core.metamodel.core.foundation.INamespace, org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onPreElementAddedToNamespace(INamespace space, INamedElement elementToAdd, IResultCell cell)
@@ -3554,7 +3603,8 @@ public class TypeManager implements ITypeManager, IElementLifeTimeEventsSink,
     	//nothing to do
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.INamespaceModifiedEventsSink#(org.netbeans.modules.uml.core.metamodel.core.foundation.INamespace, org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onElementAddedToNamespace(INamespace space, INamedElement elementAdded, IResultCell cell)
@@ -3580,7 +3630,8 @@ public class TypeManager implements ITypeManager, IElementLifeTimeEventsSink,
     	}
     }
     
-	/**
+	
+/**
 	 *
 	 * Sets the location value for the Location element that is referred to by the passed
 	 * in Type element
@@ -3601,7 +3652,8 @@ public class TypeManager implements ITypeManager, IElementLifeTimeEventsSink,
     	}
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IExternalElementEventsSink#onExternalElementPreLoaded(java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onExternalElementPreLoaded(String uri, IResultCell cell)
@@ -3609,7 +3661,8 @@ public class TypeManager implements ITypeManager, IElementLifeTimeEventsSink,
     	//nothing to do
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IExternalElementEventsSink#onExternalElementLoaded(org.netbeans.modules.uml.core.metamodel.core.foundation.IVersionableElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onExternalElementLoaded(IVersionableElement element, IResultCell cell)
@@ -3643,7 +3696,8 @@ public class TypeManager implements ITypeManager, IElementLifeTimeEventsSink,
 		}
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IExternalElementEventsSink#onPreInitialExtraction(java.lang.String, org.netbeans.modules.uml.core.metamodel.core.foundation.IVersionableElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onPreInitialExtraction(String fileName, IVersionableElement element, IResultCell cell)
@@ -3651,7 +3705,8 @@ public class TypeManager implements ITypeManager, IElementLifeTimeEventsSink,
     	//nothing to do
     }
 
-	/**
+	
+/**
 	 *
 	 * Makes an entry in the Type file
 	 *
@@ -3675,7 +3730,8 @@ public class TypeManager implements ITypeManager, IElementLifeTimeEventsSink,
         revokeEventSinks();
     }
  
-	/**
+	
+/**
 	 *
 	 * Retrieves the Project that has the passed in ID from the Application
 	 *
@@ -3700,7 +3756,8 @@ public class TypeManager implements ITypeManager, IElementLifeTimeEventsSink,
 		return retProj;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Retrieves the absolute path of the relative path passed in. It is assumed
 	 * that the relative path is to the Project directory.
@@ -3727,7 +3784,8 @@ public class TypeManager implements ITypeManager, IElementLifeTimeEventsSink,
 		return retStr;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Looks up an entry in the Type file, returning the HREF of the entry.
 	 *
@@ -3763,7 +3821,8 @@ public class TypeManager implements ITypeManager, IElementLifeTimeEventsSink,
 		return retStr;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Given the passed in node that represents a Type element, return the Location element
 	 * given the locID on the TYpe element.
@@ -3798,12 +3857,14 @@ public class TypeManager implements ITypeManager, IElementLifeTimeEventsSink,
     private String                          m_ProjectFileName;
     private State m_State = null;
     
-    /**
+    
+/**
      * XMI IDs of deleted elements.
      */
     private HashSet<String> m_DeletedCache = new HashSet<String>();
 
-    /**
+    
+/**
      * XMI IDs that could not be resolved?
      */
     private HashSet<String> m_UnresolvedIDs = new HashSet<String>();

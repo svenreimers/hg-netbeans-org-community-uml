@@ -52,7 +52,8 @@ import org.dom4j.Node;
 public class PartDecomposition extends InteractionOccurrence
         implements IPartDecomposition
 {
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.InteractionOccurrence#establishNodePresence(org.dom4j.Document, org.dom4j.Node)
      */
     public void establishNodePresence(Document doc, Node node)

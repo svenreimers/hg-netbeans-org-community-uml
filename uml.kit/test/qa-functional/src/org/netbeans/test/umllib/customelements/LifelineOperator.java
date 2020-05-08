@@ -69,7 +69,8 @@ public class LifelineOperator extends DiagramElementOperator{
     }
     
     
-    /**
+    
+/**
      * Construct DiagramElementOperator by custom finder and index
      * @param diagramOperator Diagram to look for element
      * @param elementFinder custom finder
@@ -92,7 +93,8 @@ public class LifelineOperator extends DiagramElementOperator{
         private String lineName = null;
         private String classifierName = null;
         
-        /**
+        
+/**
          *
          * @param lineName
          * @param classifierName
@@ -102,17 +104,20 @@ public class LifelineOperator extends DiagramElementOperator{
             this.classifierName = classifierName;
         }
         
-        /**
+        
+/**
          *
          * @param vn
          * @param elementType
          */
-        /*
+        
+/*
         public ElementByVNChooser(String vn, String elementType){
             this(vn, elementType, new Operator.DefaultStringComparator(true,true));
         }
          */
-        /**
+        
+/**
          *
          * @param graphObject
          * @return
@@ -144,7 +149,8 @@ public class LifelineOperator extends DiagramElementOperator{
             return true;
         }
         
-        /**
+        
+/**
          *
          * @return
          */

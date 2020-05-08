@@ -43,6 +43,7 @@
  */
 
 
+
 /*
  * Created on Jun 18, 2003
  *
@@ -73,10 +74,8 @@ import org.netbeans.modules.uml.ui.support.finddialog.FindUtilities;
 import org.netbeans.modules.uml.ui.swing.preferencedialog.ISwingPreferenceTableModel;
 
 
-/**
- * @author sumitabhk
- *
- */
+
+
 public class JFindTable extends JTable
 {
 	private FindDialogUI m_UI = null;
@@ -143,7 +142,8 @@ public class JFindTable extends JTable
 	
 	private class FindTableCellRenderer extends DefaultTableCellRenderer implements TableCellRenderer
 	{
-		/* (non-Javadoc)
+		
+/* (non-Javadoc)
 		 * @see javax.swing.table.TableCellRenderer#getTableCellRendererComponent(javax.swing.JTable, java.lang.Object, boolean, boolean, int, int)
 		 */
 		public Component getTableCellRendererComponent(JTable table, 
@@ -195,7 +195,8 @@ public class JFindTable extends JTable
 	}
 	public class FindPopupListener extends MouseAdapter
 	{
-		/**
+		
+/**
 		 * 
 		 */
 		public FindPopupListener()

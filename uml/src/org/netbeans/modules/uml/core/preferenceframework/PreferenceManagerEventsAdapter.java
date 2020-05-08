@@ -47,10 +47,8 @@ package org.netbeans.modules.uml.core.preferenceframework;
 import org.netbeans.modules.uml.core.support.umlsupport.IResultCell;
 import org.netbeans.modules.uml.core.support.umlutils.IPropertyElement;
 
-/**
- *
- * @author Trey Spiva
- */
+
+
 public class PreferenceManagerEventsAdapter implements IPreferenceManagerEventsSink
 {
 

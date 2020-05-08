@@ -49,7 +49,8 @@ import org.netbeans.modules.uml.core.metamodel.dynamics.IInteraction;
 
 public interface ISequenceDiagramGenerator
 {
-	/**
+	
+/**
 	 * Generate the sequence diagram.  If pDiagram is null then the user is asked to create a diagram.
 	*/
 	public boolean generate( IInteraction pInteraction, IDiagram pExistingDiagram );

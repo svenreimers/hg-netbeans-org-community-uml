@@ -63,7 +63,8 @@ public class Interaction extends Behavior implements IInteraction
 {
     private IInteractionOperand m_InteractionOperand = new InteractionOperand();
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IInteraction#getGates()
      */
     public ETList<IGate> getGates()
@@ -74,7 +75,8 @@ public class Interaction extends Behavior implements IInteraction
                 "UML:Element.ownedElement/UML:Gate", IGate.class); 
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IInteraction#addGate(org.netbeans.modules.uml.core.metamodel.dynamics.IGate)
      */
     public void addGate(IGate gate)
@@ -82,7 +84,8 @@ public class Interaction extends Behavior implements IInteraction
         addOwnedElement(gate);
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IInteraction#removeGate(org.netbeans.modules.uml.core.metamodel.dynamics.IGate)
      */
     public void removeGate(IGate gate)
@@ -90,7 +93,8 @@ public class Interaction extends Behavior implements IInteraction
         removeOwnedElement(gate);
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IInteraction#getConnectors()
      */
     public ETList<IConnector> getConnectors()
@@ -101,7 +105,8 @@ public class Interaction extends Behavior implements IInteraction
                 "UML:Element.ownedElement/*[ not( name(.) = 'UML:Gate' )]", IConnector.class );
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IInteraction#addConnector(org.netbeans.modules.uml.core.metamodel.infrastructure.IConnector)
      */
     public void addConnector(IConnector connector)
@@ -109,7 +114,8 @@ public class Interaction extends Behavior implements IInteraction
         addElement(connector);
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IInteraction#removeConnector(org.netbeans.modules.uml.core.metamodel.infrastructure.IConnector)
      */
     public void removeConnector(IConnector connector)
@@ -117,7 +123,8 @@ public class Interaction extends Behavior implements IInteraction
         removeElement(connector);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IInteraction#removeMessage(org.netbeans.modules.uml.core.metamodel.dynamics.IMessage)
      */
     public void removeMessage(final IMessage message)
@@ -135,7 +142,8 @@ public class Interaction extends Behavior implements IInteraction
                 } );
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IInteraction#addMessage(org.netbeans.modules.uml.core.metamodel.dynamics.IMessage)
      */
     public void addMessage(final IMessage message)
@@ -159,7 +167,8 @@ public class Interaction extends Behavior implements IInteraction
             .retrieveElementCollection( m_Node, "UML:Interaction.message/*", IMessage.class );
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IInteraction#addLifeline(org.netbeans.modules.uml.core.metamodel.dynamics.ILifeline)
      */
     public void addLifeline(ILifeline line)
@@ -167,7 +176,8 @@ public class Interaction extends Behavior implements IInteraction
         addElement(line);
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IInteraction#removeLifeline(org.netbeans.modules.uml.core.metamodel.dynamics.ILifeline)
      */
     public void removeLifeline(ILifeline line)
@@ -175,7 +185,8 @@ public class Interaction extends Behavior implements IInteraction
         removeElement(line);
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IInteraction#getLifelines()
      */
     public ETList<ILifeline> getLifelines()
@@ -186,7 +197,8 @@ public class Interaction extends Behavior implements IInteraction
                 "UML:Element.ownedElement/UML:Lifeline", ILifeline.class );
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IInteraction#addEventOccurrence(org.netbeans.modules.uml.core.metamodel.dynamics.IEventOccurrence)
      */
     public void addEventOccurrence(IEventOccurrence pOcc)
@@ -194,7 +206,8 @@ public class Interaction extends Behavior implements IInteraction
         addOwnedElement(pOcc);
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IInteraction#removeEventOccurrence(org.netbeans.modules.uml.core.metamodel.dynamics.IEventOccurrence)
      */
     public void removeEventOccurrence(IEventOccurrence pOcc)
@@ -202,7 +215,8 @@ public class Interaction extends Behavior implements IInteraction
         removeOwnedElement(pOcc);
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IInteraction#getEventOccurrences()
      */
     public ETList<IEventOccurrence> getEventOccurrences()
@@ -213,7 +227,8 @@ public class Interaction extends Behavior implements IInteraction
                 "UML:Element.ownedElement/UML:EventOccurrence", IEventOccurrence.class );
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IInteraction#createMessage(org.netbeans.modules.uml.core.metamodel.core.foundation.IElement, org.netbeans.modules.uml.core.metamodel.dynamics.IInteractionFragment, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation, int)
      */
     public IMessage createMessage(IElement toElement,
@@ -224,7 +239,8 @@ public class Interaction extends Behavior implements IInteraction
         return message;
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IInteraction#insertMessage(org.netbeans.modules.uml.core.metamodel.dynamics.IMessage, org.netbeans.modules.uml.core.metamodel.core.foundation.IElement, org.netbeans.modules.uml.core.metamodel.dynamics.IInteractionFragment, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation, int)
      */
     public IMessage insertMessage(IMessage fromBeforeMessage,
@@ -240,7 +256,8 @@ public class Interaction extends Behavior implements IInteraction
         return message;
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IInteraction#insertMessageBefore(org.netbeans.modules.uml.core.metamodel.dynamics.IMessage, org.netbeans.modules.uml.core.metamodel.dynamics.IMessage)
      */
     public void insertMessageBefore(final IMessage message, 
@@ -262,7 +279,8 @@ public class Interaction extends Behavior implements IInteraction
                 } );
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IInteraction#handleMessageAdded(org.netbeans.modules.uml.core.metamodel.dynamics.IMessage, org.netbeans.modules.uml.core.metamodel.dynamics.IMessage)
      */
     public void handleMessageAdded(IMessage message, IMessage messageBefore)
@@ -270,7 +288,8 @@ public class Interaction extends Behavior implements IInteraction
         // C++ code doesn't seem to do anything.
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IInteraction#handleMessageDeleted(org.netbeans.modules.uml.core.metamodel.dynamics.IMessage)
      */
     public void handleMessageDeleted(IMessage message)
@@ -278,7 +297,8 @@ public class Interaction extends Behavior implements IInteraction
         // C++ code does nothing
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IInteraction#getGeneralOrderings()
      */
     public ETList<IGeneralOrdering> getGeneralOrderings()
@@ -289,7 +309,8 @@ public class Interaction extends Behavior implements IInteraction
                 "UML:Element.ownedElement/UML:GeneralOrdering", IGeneralOrdering.class );
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IInteraction#resetAutoNumbers(org.netbeans.modules.uml.core.metamodel.dynamics.IMessage)
      */
     public void resetAutoNumbers(IMessage pMessage)
@@ -316,7 +337,8 @@ public class Interaction extends Behavior implements IInteraction
         buildNodePresence("UML:Interaction", doc, parent);
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IVersionableElement#setNode(org.dom4j.Node)
      */
     public void setNode(Node n)

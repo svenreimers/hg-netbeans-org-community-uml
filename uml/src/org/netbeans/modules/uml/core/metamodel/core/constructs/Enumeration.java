@@ -67,7 +67,8 @@ import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure
 public class Enumeration extends DataType implements IEnumeration
 {
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.constructs.IEnumeration#addLiteral(org.netbeans.modules.uml.core.metamodel.core.constructs.IEnumerationLiteral)
      */
     public void addLiteral(final IEnumerationLiteral literal)
@@ -138,7 +139,8 @@ public class Enumeration extends DataType implements IEnumeration
 	}
     
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.constructs.IEnumeration#getLiterals()
      */
     public ETList <IEnumerationLiteral> getLiterals()
@@ -148,7 +150,8 @@ public class Enumeration extends DataType implements IEnumeration
 
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.constructs.IEnumeration#removeLiteral(org.netbeans.modules.uml.core.metamodel.core.constructs.IEnumerationLiteral)
      */
     public void removeLiteral(final IEnumerationLiteral literal)

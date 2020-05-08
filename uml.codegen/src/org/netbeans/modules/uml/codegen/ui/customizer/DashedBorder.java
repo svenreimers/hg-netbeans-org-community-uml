@@ -52,10 +52,8 @@ import java.awt.Insets;
 import javax.swing.border.Border;
 
 
-/**
- *
- * @author Jan Jancura
- */
+
+
 public class DashedBorder implements Border {
 
     private Insets insets = new Insets (1, 1, 1, 1);

@@ -59,10 +59,8 @@ import javax.swing.JMenuItem;
 //import org.netbeans.modules.uml.core.addinframework.plugins.IExtension;
 import org.netbeans.modules.uml.ui.products.ad.application.IMenuManager;
 
-/**
- * 
- * @author Trey Spiva
- */
+
+
 public class BaseAction extends AbstractAction
 {
    private boolean m_IsChecked   = false;
@@ -73,7 +71,8 @@ public class BaseAction extends AbstractAction
    private String  m_Label		 = "";
    private IMenuManager m_MenuManager = null;
 
-   /**
+   
+/**
     * Action style constant (value <code>0</code>) indicating action style 
     * is not specified yet. By default, the action will assume a push button
     * style. If <code>setChecked</code> is called, then the style will change
@@ -82,25 +81,29 @@ public class BaseAction extends AbstractAction
     */
    public static final int AS_UNSPECIFIED = 0x00;
 
-   /**
+   
+/**
     * Action style constant (value <code>1</code>) indicating action is 
     * a simple push button.
     */
    public static final int AS_PUSH_BUTTON = 0x01;
 
-   /**
+   
+/**
     * Action style constant (value <code>2</code>) indicating action is 
     * a check box (or a toggle button).
     */
    public static final int AS_CHECK_BOX = 0x02;
 
-   /**
+   
+/**
     * Action style constant (value <code>4</code>) indicating action is 
     * a drop down menu.
     */
    public static final int AS_DROP_DOWN_MENU = 0x04;
 
-   /**
+   
+/**
     * Action style constant (value <code>8</code>) indicating action is 
     * a radio button.
     * 
@@ -110,28 +113,33 @@ public class BaseAction extends AbstractAction
 
    public static final int AS_CUSTOM_COMPONENT = 0x16;
 
-   /**
+   
+/**
     * Property name of an action's text (value <code>"text"</code>).
     */
    public static final String TEXT = "text"; //$NON-NLS-1$
 
-   /**
+   
+/**
     * Property name of an action's enabled state
     * (value <code>"enabled"</code>).
     */
    public static final String ENABLED = "enabled"; //$NON-NLS-1$
 
-   /**
+   
+/**
     * Property name of an action's image (value <code>"image"</code>).
     */
    public static final String IMAGE = "image"; //$NON-NLS-1$
 
-   /**
+   
+/**
     * Property name of an action's tooltip text (value <code>"toolTipText"</code>).
     */
    public static final String TOOL_TIP_TEXT = "toolTipText"; //$NON-NLS-1$
 
-   /**
+   
+/**
     * Property name of an action's description (value <code>"description"</code>).
     * Typically the description is shown as a (longer) help text in the status line.
     */
@@ -139,14 +147,16 @@ public class BaseAction extends AbstractAction
 
    public static final String MB_ADDITIONS = "additions";
 
-   /**
+   
+/**
     * Property name of an action's checked status (value
     * <code>"checked"</code>). Applicable when the style is
     * <code>AS_CHECK_BOX</code> or <code>AS_RADIO_BUTTON</code>.
     */
    public static final String CHECKED = "checked"; //$NON-NLS-1$
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see java.awt.event.ActionListener#actionPerformed(java.awt.event.ActionEvent)
     */
    public void actionPerformed(ActionEvent e)
@@ -154,7 +164,8 @@ public class BaseAction extends AbstractAction
 
    }
 
-   /**
+   
+/**
        * @return
        */
    public String getText()
@@ -162,7 +173,8 @@ public class BaseAction extends AbstractAction
       return (String)getValue(Action.NAME);
    }
 
-   /**
+   
+/**
     * @param label
     */
    public void setText(String label)
@@ -184,7 +196,8 @@ public class BaseAction extends AbstractAction
       putValue(Action.NAME, name.toString());
    }
 
-   /**
+   
+/**
     * @param id
     */
    public void setId(String id)
@@ -192,7 +205,8 @@ public class BaseAction extends AbstractAction
       m_Id = id;
    }
 
-   /**
+   
+/**
     * 
     */
    public String getId()
@@ -205,14 +219,16 @@ public class BaseAction extends AbstractAction
 	 m_Label = label;
   }
 
-  /**
+  
+/**
    * 
    */
   public String getLabel()
   {
 	 return m_Label;
   }
-   /**
+   
+/**
     * @return
     */
    public String getToolTipText()
@@ -220,7 +236,8 @@ public class BaseAction extends AbstractAction
       return (String)getValue(Action.SHORT_DESCRIPTION);
    }
 
-   /**
+   
+/**
     * @param tooltip
     */
    public void setToolTipText(String tooltip)
@@ -228,7 +245,8 @@ public class BaseAction extends AbstractAction
       putValue(Action.SHORT_DESCRIPTION, tooltip);
    }
 
-   /**
+   
+/**
     * @param description
     */
    public void setDescription(String description)
@@ -236,7 +254,8 @@ public class BaseAction extends AbstractAction
       putValue(Action.LONG_DESCRIPTION, description);
    }
 
-   /**
+   
+/**
     * @param b
     */
    public void setChecked(boolean b)
@@ -245,7 +264,8 @@ public class BaseAction extends AbstractAction
 
    }
 
-   /**
+   
+/**
     * @return
     */
    public boolean isChecked()
@@ -253,7 +273,8 @@ public class BaseAction extends AbstractAction
       return m_IsChecked;
    }
 
-   /**
+   
+/**
     * @param i
     */
    public void setAccelerator(int i)
@@ -262,7 +283,8 @@ public class BaseAction extends AbstractAction
 
    }
 
-   /**
+   
+/**
     * 
     */
    public int getAccelerator()
@@ -272,7 +294,8 @@ public class BaseAction extends AbstractAction
 
    }
 
-   /**
+   
+/**
     * @param text
     * @return
     */
@@ -282,7 +305,8 @@ public class BaseAction extends AbstractAction
       return null;
    }
 
-   /**
+   
+/**
     * @param acceleratorText
     * @return
     */
@@ -292,7 +316,8 @@ public class BaseAction extends AbstractAction
       return 0;
    }
 
-   /**
+   
+/**
     * Sets the actions icon.  The extension is used to retrieve the specified
     * icon from the filesystem.
     * 
@@ -308,7 +333,8 @@ public class BaseAction extends AbstractAction
 //      }
 //   }
 
-   /**
+   
+/**
     * Sets the actions icon.
     * 
     * @param extension The extension that defined the action.
@@ -322,11 +348,8 @@ public class BaseAction extends AbstractAction
       }
    }      
       
-   /**
-    * Gets the actions small icon.
-    * 
-    * @param hoverIcon
-    */
+   
+
    public Icon getSmallImage()
    {
       Icon retVal = null;
@@ -340,7 +363,8 @@ public class BaseAction extends AbstractAction
       return retVal;
    }
 
-   /**
+   
+/**
     * Sets the icon to use when the mouse has hovered over a toolbar button.  
     * The extension is used to retrieve the specified icon from the filesystem.
     * 
@@ -352,7 +376,8 @@ public class BaseAction extends AbstractAction
 //      setHoverImage(retrieveIcon(extension, icon));
 //   }
 
-   /**
+   
+/**
     * Sets the icon to use when the mouse has hovered over a toolbar button.
     * 
     * @param extension The extension that defined the action.
@@ -364,7 +389,8 @@ public class BaseAction extends AbstractAction
    
    }
 
-   /**
+   
+/**
     * Gets the icon to use when the mouse has hovered over a toolbar button.
     * 
     * @return The hover icon or <code>null</code> if a hover icon has not been
@@ -375,7 +401,8 @@ public class BaseAction extends AbstractAction
       return m_HoverIcon;
    }
 
-   /**
+   
+/**
     * Sets the icon to display when the action has been disabled.
     * 
     * @param extension The extension that defined the action.
@@ -386,7 +413,8 @@ public class BaseAction extends AbstractAction
 //      setDisabledImage(retrieveIcon(extension, disabledIcon));
 //   }
 
-   /**
+   
+/**
     * Sets the icon to display when the action has been disabled.
     * The extension is used to retrieve the specified icon from the filesystem.
     * 
@@ -398,7 +426,8 @@ public class BaseAction extends AbstractAction
       m_DisableIcon = icon;
    }
    
-   /**
+   
+/**
     * Gets the icon to use when the action has been disabled.
     * 
     * @return The disable icon or <code>null</code> if a hover icon has not been
@@ -409,7 +438,8 @@ public class BaseAction extends AbstractAction
       return m_HoverIcon;
    }
 
-   /**
+   
+/**
     * @return
     */
    public int getStyle()
@@ -431,7 +461,8 @@ public class BaseAction extends AbstractAction
    // Helper Methods
    //**************************************************
 
-   /**
+   
+/**
     * Uses the extension to retrieve the specified icon from the plugins.
     * 
     * @param extension The extension that represents the location of the icon.
@@ -460,7 +491,8 @@ public class BaseAction extends AbstractAction
 //      return retVal;
 //   }
    
-   /**
+   
+/**
     * This method is for BaseACtions which want to return custom components like combobox etc.
     */
    public JComponent getActionComponent()

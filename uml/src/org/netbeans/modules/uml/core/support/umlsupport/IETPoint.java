@@ -48,42 +48,50 @@ import java.awt.Point;
 
 public interface IETPoint
 {
-	/**
+	
+/**
 	 * The X location of the point
 	*/
 	public int getX();
 
-	/**
+	
+/**
 	 * The X location of the point
 	*/
 	public void setX( int value );
 
-	/**
+	
+/**
 	 * The Y location of the point
 	*/
 	public int getY();
 
-	/**
+	
+/**
 	 * The Y location of the point
 	*/
 	public void setY( int value );
 
-	/**
+	
+/**
 	 * The points
 	*/
 	public long getPoints( int pX, int pY );
 
-	/**
+	
+/**
 	 * The points
 	*/
 	public long setPoints( int nX, int nY );
 	
-	/*
+	
+/*
 	 * Adds the values by dx, dy to the current point values.
 	 */
 	public IETPoint offset(int dx, int dy);
 
-	/*
+	
+/*
 	 * Returns this object converted to an java.awt.Point
 	 */	
 	public Point asPoint();

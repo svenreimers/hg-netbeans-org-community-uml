@@ -49,6 +49,7 @@ import org.netbeans.modules.uml.parser.java.AbstractParserTestCase;
 
 import junit.textui.TestRunner;
 
+
 /**
  * 
  */

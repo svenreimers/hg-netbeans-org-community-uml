@@ -56,10 +56,8 @@ import org.netbeans.modules.uml.drawingarea.persistence.NodeWriter;
 import org.netbeans.modules.uml.drawingarea.persistence.PersistenceUtil;
 import org.netbeans.modules.uml.drawingarea.view.UMLWidget;
 
-/**
- *
- * @author treyspiva
- */
+
+
 public class ElementListWidget extends ListWidget implements DiagramNodeWriter, UMLWidget
 {
 
@@ -69,7 +67,8 @@ public class ElementListWidget extends ListWidget implements DiagramNodeWriter, 
         setForeground((Color)null);
     }
     
-    /**
+    
+/**
      * Removes the widgets that represent the specified model element.
      * 
      * @param element the model element to remove.
@@ -97,7 +96,8 @@ public class ElementListWidget extends ListWidget implements DiagramNodeWriter, 
         }
     }
     
-    /**
+    
+/**
      * Retreives the number of element widgets that are contained by the list 
      * widget.
      * 

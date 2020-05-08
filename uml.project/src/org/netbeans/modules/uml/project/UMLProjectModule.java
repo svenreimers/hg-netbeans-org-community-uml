@@ -42,11 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * UMLProjectModule.java
- *
- * Created on March 30, 2005, 3:10 PM
- */
+
+
 
 package org.netbeans.modules.uml.project;
 
@@ -73,10 +70,8 @@ import org.netbeans.modules.uml.ui.support.applicationmanager.IProductDiagramMan
 import org.openide.windows.TopComponent;
 import org.openide.windows.WindowManager;
 
-/**
- *
- * @author Trey Spiva
- */
+
+
 public class UMLProjectModule extends ModuleInstall
 {
     private static ADProjectTreeEngine mEngine = null;
@@ -154,7 +149,8 @@ public class UMLProjectModule extends ModuleInstall
 	}
     }
     
-    /**
+    
+/**
      * Makes sure that all of the UML projects are saved.
      */
     public boolean closing()

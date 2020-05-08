@@ -56,10 +56,8 @@ import org.netbeans.modules.uml.drawingarea.persistence.data.NodeInfo.NodeLabel;
 import org.netbeans.modules.uml.drawingarea.view.DesignerScene;
 import org.netbeans.modules.uml.drawingarea.view.UMLNodeWidget;
 
-/**
- *
- * @author sp153251
- */
+
+
 public class LoadInteractionOperandsProvider implements ActionProvider{
     private UMLNodeWidget combinedfragment;
     private ArrayList<String> offsets;

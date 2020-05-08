@@ -48,12 +48,14 @@ import org.netbeans.modules.uml.core.support.umlsupport.IResultCell;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 public interface IElementDisposalEventsSink
 {
-	/**
+	
+/**
 	 * Fired whenever an element is about to be created.
 	*/
 	public void onPreDisposeElements( ETList<IVersionableElement> pElements, IResultCell cell );
 
-	/**
+	
+/**
 	 * Fired whenever after an element is created.
 	*/
 	public void onDisposedElements( ETList<IVersionableElement> pElements, IResultCell cell );

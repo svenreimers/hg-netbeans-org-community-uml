@@ -43,17 +43,12 @@
  */
 
 
-/*
- *
- * Created on Jun 19, 2003
- * @author Trey Spiva
- */
+
+
 package org.netbeans.modules.uml.ui.support.diagramsupport;
 
-/**
- *
- * @author Trey Spiva
- */
+
+
 public interface DiagramAreaEnumerations
 {
    /** Delayed initialization of a diagram - sequence diagram uses this. */

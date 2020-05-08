@@ -53,18 +53,18 @@ import org.netbeans.modules.uml.core.metamodel.structure.IProject;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 import org.netbeans.modules.uml.ui.support.diagramsupport.IPresentationTarget;
 
-/**
- *
- * @author Trey Spiva
- */
+
+
 public interface IDiagramAndPresentationNavigator
 {
-   /**
+   
+/**
     * Navigate to a specific presentation target.  If more then one then a dialog is displayed.
     */
    public boolean navigateToPresentationTarget( int pParent, IElement pParentModelElement, ETList<IPresentationTarget> pPossibleTargets );
 
-   /**
+   
+/**
     * Navigate to a specific presentation target.  If more then one then a dialog is displayed.
     *
     * @param doShow if there is a preference governing whether to show the dialog by default or not to, 
@@ -74,17 +74,20 @@ public interface IDiagramAndPresentationNavigator
     */
    public boolean navigateToPresentationTarget( IElement pParentModelElement, ETList<IPresentationTarget> pPossibleTargets, boolean doShow);
 
-   /**
+   
+/**
     * Bring up the navigation dialog which allows user to go to either diagrams or presentation elements
     */
    public boolean handleNavigation( int pParent, IElement pElement, boolean isShift );
 
-   /**
+   
+/**
     * Bring up the project diagram dialog which shows all the closed diagrams in the project.
     */
    public void showScopedDiagrams( Frame pParent, IProject pCurrentProject );
 
-   /**
+   
+/**
     * This actually does the navigation.
     */
    public void doNavigate( IPresentationTarget pTarget );

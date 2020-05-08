@@ -49,10 +49,8 @@ import javax.swing.JList;
 import javax.swing.UIManager;
 import org.netbeans.modules.uml.drawingarea.view.Customizable;
 
-/**
- *
- * @author Sheryl Su
- */
+
+
 public class WidgetComboboxRenderer extends DefaultListCellRenderer
 {
 

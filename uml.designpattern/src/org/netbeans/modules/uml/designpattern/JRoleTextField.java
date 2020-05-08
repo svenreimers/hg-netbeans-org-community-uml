@@ -42,6 +42,7 @@
  * made subject to such option by the copyright holder.
  */
 
+
 /*
  * Created on Jun 12, 2003
  *
@@ -53,10 +54,8 @@ import java.awt.event.FocusListener;
 import javax.swing.JTextField;
 
 
-/**
- * @author sumitabhk
- *
- */
+
+
 public class JRoleTextField extends JTextField
 {
 	private WizardRoleObject m_RoleObject = null;

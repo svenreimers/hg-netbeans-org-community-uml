@@ -42,11 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : RoundTripUtils.java
- * Created on : Nov 20, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.roundtripframework;
 
 import org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity;
@@ -56,9 +53,8 @@ import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IParameter;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
-/**
- * @author Aztec
- */
+
+
 public class RoundTripUtils
 {
     public static void setOperationReturnTypeMultiplicity(IOperation pOperation, 

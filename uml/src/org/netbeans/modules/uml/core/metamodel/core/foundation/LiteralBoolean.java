@@ -48,10 +48,8 @@ package org.netbeans.modules.uml.core.metamodel.core.foundation;
 import org.dom4j.Document;
 import org.dom4j.Node;
 
-/**
- * @author sumitabhk
- *
- */
+
+
 public class LiteralBoolean extends LiteralSpecification implements ILiteralBoolean
 {
 
@@ -63,7 +61,8 @@ public class LiteralBoolean extends LiteralSpecification implements ILiteralBool
 		super();
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.ILiteralBoolean#setValue(boolean)
 	 */
 	public void setValue(boolean value)
@@ -71,7 +70,8 @@ public class LiteralBoolean extends LiteralSpecification implements ILiteralBool
 		setBooleanAttributeValue("value", value);
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.ILiteralBoolean#getValue()
 	 */
 	public boolean getValue()
@@ -79,7 +79,8 @@ public class LiteralBoolean extends LiteralSpecification implements ILiteralBool
 		return getBooleanAttributeValue("value", true);
 	}
 
-	/**
+	
+/**
 	 * Establishes the appropriate XML elements for this UML type.
 	 *
 	 * [in] The document where this element will reside

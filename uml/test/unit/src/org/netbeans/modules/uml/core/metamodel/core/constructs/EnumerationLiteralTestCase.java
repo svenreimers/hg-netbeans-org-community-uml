@@ -45,6 +45,7 @@
 
 package org.netbeans.modules.uml.core.metamodel.core.constructs;
 import org.netbeans.modules.uml.core.AbstractUMLTestCase;
+
 /**
  * Test cases for EnumerationLiteral.
  */
@@ -57,7 +58,8 @@ public class EnumerationLiteralTestCase extends AbstractUMLTestCase
 
     private IEnumerationLiteral enumerationLiteral;
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see junit.framework.TestCase#setUp()
      */
     protected void setUp() throws Exception
@@ -67,7 +69,8 @@ public class EnumerationLiteralTestCase extends AbstractUMLTestCase
         project.addElement(enumerationLiteral);
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see junit.framework.TestCase#tearDown()
      */
     protected void tearDown() throws Exception

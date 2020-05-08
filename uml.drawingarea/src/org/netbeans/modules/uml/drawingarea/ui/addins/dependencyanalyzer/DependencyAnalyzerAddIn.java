@@ -77,10 +77,8 @@ import org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeFolder;
 import org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeItem;
 import org.netbeans.modules.uml.drawingarea.ui.addins.diagramcreator.DiagCreatorAddIn;
 
-/**
- * @author sumitabhk
- *
- */
+
+
 public class DependencyAnalyzerAddIn // implements IAddIn, IAddInButtonSupport,	IViewActionDelegate
 {
 	private static final String BUNDLE_NAME = "org.netbeans.modules.uml.drawingarea.ui.addins.dependencyanalyzer.Bundle"; //$NON-NLS-1$
@@ -97,7 +95,8 @@ public class DependencyAnalyzerAddIn // implements IAddIn, IAddInButtonSupport,	
 	public static String CLASS_DEPENDENCY_BTN_SOURCE = 
 			"MBK_CLASSIFIER_DEPENDENCY"; // NOI18N
 
-	/**
+	
+/**
 	 * 
 	 */
 	public DependencyAnalyzerAddIn()
@@ -105,7 +104,8 @@ public class DependencyAnalyzerAddIn // implements IAddIn, IAddInButtonSupport,	
 		super();
 	}
 
-	/**
+	
+/**
 	 * Called when the addin is initialized.
 	 */
 	public long initialize(Object context)
@@ -123,7 +123,8 @@ public class DependencyAnalyzerAddIn // implements IAddIn, IAddInButtonSupport,	
 		return 0;
 	}
 
-	/**
+	
+/**
 	 * Called when the addin is deinitialized.
 	 */
 	public long deInitialize(Object context)
@@ -138,7 +139,8 @@ public class DependencyAnalyzerAddIn // implements IAddIn, IAddInButtonSupport,	
 		return 0;
 	}
 
-	/**
+	
+/**
 	 * Called when the addin is unloaded.
 	 */
 	public long unLoad(Object context)
@@ -146,7 +148,8 @@ public class DependencyAnalyzerAddIn // implements IAddIn, IAddInButtonSupport,	
 		return 0;
 	}
 
-	/**
+	
+/**
 	 * The version of the addin.
 	 */
 	public String getVersion()
@@ -154,7 +157,8 @@ public class DependencyAnalyzerAddIn // implements IAddIn, IAddInButtonSupport,	
 		return m_Version;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.addinframework.IAddIn#getName()
 	 */
 	public String getName()
@@ -163,7 +167,8 @@ public class DependencyAnalyzerAddIn // implements IAddIn, IAddInButtonSupport,	
 		return null;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.addinframework.IAddIn#getID()
 	 */
 	public String getID()
@@ -172,7 +177,8 @@ public class DependencyAnalyzerAddIn // implements IAddIn, IAddInButtonSupport,	
 		return null;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.addinframework.IAddIn#getLocation()
 	 */
 	public String getLocation()
@@ -182,7 +188,8 @@ public class DependencyAnalyzerAddIn // implements IAddIn, IAddInButtonSupport,	
 	}
 
 
-	/**
+	
+/**
 	 * Returns the clsid of this addin.
 	 */
 	public String getProgID()
@@ -190,7 +197,8 @@ public class DependencyAnalyzerAddIn // implements IAddIn, IAddInButtonSupport,	
 		return "org.netbeans.modules.uml.ui.addins.dependencyanalyzer.DependencyAnalyzerAddIn"; // NOI18N
 	}
 
-	/**
+	
+/**
 	 * If an external interface handles the display of the popup menu,
 	 * then this is called to handle the selection event
 	 */
@@ -263,7 +271,8 @@ public class DependencyAnalyzerAddIn // implements IAddIn, IAddInButtonSupport,	
 		}
 	}
 
-	/**
+	
+/**
 	 * Fired when the context menu is about to be displayed.
 	 */
 	public void onProjectTreeContextMenuPrepare( 
@@ -287,7 +296,8 @@ public class DependencyAnalyzerAddIn // implements IAddIn, IAddInButtonSupport,	
 //		}
 	}
 
-	/**
+	
+/**
 	 * Fired when the context menu is about to be displayed.
 	 */
 	public void onDrawingAreaContextMenuPrepare( 
@@ -305,7 +315,8 @@ public class DependencyAnalyzerAddIn // implements IAddIn, IAddInButtonSupport,	
 //		}
 	}
 	
-	/**
+	
+/**
 	 * Adds a class to m_cpClassElements, 
 	 *
 	 * @see m_cpClassElements
@@ -329,7 +340,8 @@ public class DependencyAnalyzerAddIn // implements IAddIn, IAddInButtonSupport,	
 		return retVal;
 	}
 	
-	/**
+	
+/**
 	 * Retrieves the elements associated with the context menu's graph object
 	 *
 	 * @param pContextMenu[in] The context menu assoicated with some graph object
@@ -366,10 +378,10 @@ public class DependencyAnalyzerAddIn // implements IAddIn, IAddInButtonSupport,	
 //  				IProductContextMenuItem selItem = new ProductContextMenuItem();
 //  				selItem.setSensitive(true);
 //  				
-//  				String strTemp = loadString("IDS_CLASSIFIER_DEPENDENCY"); // NOI18N
+
 //  				selItem.setMenuString(strTemp);
 //  				
-//  				strTemp = loadString("IDS_CLASSIFIER_DEPENDENCY_DSCR"); // NOI18N
+
 //  				selItem.setDescription(strTemp);
 //  				
 //  				selItem.setButtonSource(CLASS_DEPENDENCY_BTN_SOURCE);
@@ -381,7 +393,8 @@ public class DependencyAnalyzerAddIn // implements IAddIn, IAddInButtonSupport,	
 		
   	}
 	
-	/**
+	
+/**
 	 * Gather all of the generalizations that the specified classifer plays the sub class role.
 	 * If the class has already been discovered it will not be added to the classifier map again.
 	 *
@@ -419,7 +432,8 @@ public class DependencyAnalyzerAddIn // implements IAddIn, IAddInButtonSupport,	
 		return elementMap;
 	}
 
-	/**
+	
+/**
 	 * Gather all of the implementations that the specified classifer plays the contract role.
 	 * If the class has already been discovered it will not be added to the classifier map again.
 	 *
@@ -458,7 +472,8 @@ public class DependencyAnalyzerAddIn // implements IAddIn, IAddInButtonSupport,	
 		return elementMap;
 	}
 	
-	/**
+	
+/**
 	 * Gather all of the navigable associations that the specified classifer is not the naviagable end.
 	 * If the class has already been discovered it will not be added to the classifier map again.
 	 *
@@ -501,7 +516,8 @@ public class DependencyAnalyzerAddIn // implements IAddIn, IAddInButtonSupport,	
 		return elementMap;
 	}
 	
-	/**
+	
+/**
 	 * Gather all of the classifiers that are specified as paramters.  If the class 
 	 * has already been discovered it will not be added to the classifier map again.
 	 *
@@ -576,7 +592,8 @@ public class DependencyAnalyzerAddIn // implements IAddIn, IAddInButtonSupport,	
 		}
 	}
 	
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.addinframework.ui.action.IViewActionDelegate#init(org.netbeans.modules.uml.core.addinframework.ui.application.ApplicationView)
 	 */
 	public void init(ApplicationView view)
@@ -584,7 +601,8 @@ public class DependencyAnalyzerAddIn // implements IAddIn, IAddInButtonSupport,	
 		m_View = view;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.addinframework.ui.action.IPlugginAction#run()
 	 */
 	public void run(ActionEvent e)
@@ -723,7 +741,8 @@ public class DependencyAnalyzerAddIn // implements IAddIn, IAddInButtonSupport,	
 	}
 
 
-	/**
+	
+/**
 	 * Determines whether or not a folder node is selected in the tree
 	 *
 	 * @param pControl[in]			The tree control

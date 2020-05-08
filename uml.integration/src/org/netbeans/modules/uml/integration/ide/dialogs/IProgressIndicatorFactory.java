@@ -42,21 +42,15 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File         : IProgressIndicatorFactory.java
- * Version      : 1.00
- * Description  : A factory for progress indicators.
- * Author       : Darshan
- */
+
+
 package org.netbeans.modules.uml.integration.ide.dialogs;
 
-/**
- *  A factory for progress indicators.
- * @author  Darshan
- * @version 1.0
- */
+
+
 public interface IProgressIndicatorFactory {
-    /**
+    
+/**
      *  Creates and returns a new <code>IProgressIndicator</code>.
      * @return An <code>IProgressIndicator</code>. Note that <code>null</code>
      *         is an acceptable return value, if the progress indicator must be

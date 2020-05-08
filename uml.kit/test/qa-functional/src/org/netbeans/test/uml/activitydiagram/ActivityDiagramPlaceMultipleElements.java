@@ -64,11 +64,8 @@ import org.netbeans.test.umllib.NewDiagramWizardOperator;
 import org.netbeans.test.umllib.testcases.UMLTestCase;
 
 
-/**
- *
- * @author psb
- * @spec UML/ComponentDiagram.xml
- */
+
+
 public class ActivityDiagramPlaceMultipleElements extends UMLTestCase {
     
     
@@ -476,7 +473,8 @@ public class ActivityDiagramPlaceMultipleElements extends UMLTestCase {
             java.awt.Point a2=drAr.getFreePoint();
             drAr.clickMouse(a2.x,a2.y,1);
             dEl.waitSelection(false);
-        /*if(elementType.equals(ElementTypes.HORIZONTAL_FORK))
+        
+/*if(elementType.equals(ElementTypes.HORIZONTAL_FORK))
         {
            Rectangle rc= dEl.getBoundingRect();
            Point pnt=new Point((int)(rc.getCenterX()),rc.y+rc.height);

@@ -48,10 +48,8 @@ package org.netbeans.modules.uml.core.eventframework;
 import org.netbeans.modules.uml.core.coreapplication.ICoreProduct;
 import org.netbeans.modules.uml.core.support.umlsupport.ProductRetriever;
 
-/**
- * @author sumitabhk
- *
- */
+
+
 public class EventDispatchRetriever {
 
 	private static EventDispatchRetriever m_Instance = null;
@@ -70,7 +68,8 @@ public class EventDispatchRetriever {
 		super();
 	}
 
-	/**
+	
+/**
 	 * Simple constructor that can handle the setting of the internal
 	 * product used for dispatch retrieval.
 	 *
@@ -85,7 +84,8 @@ public class EventDispatchRetriever {
 	   setController( prod );
 	}
 
-	/**
+	
+/**
 	 *
 	 * Establishes the dispatch controller on this object
 	 *
@@ -99,7 +99,8 @@ public class EventDispatchRetriever {
 	   m_Controller = controller;
 	}
 
-	/**
+	
+/**
 	 * Retrieves the dispatcher indicated by dispName
 	 *
 	 * @param dispName[in] The name of the dispatcher to retrieve
@@ -128,7 +129,8 @@ public class EventDispatchRetriever {
 		return (T)retObj;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Sets a product on this retriever. The retriever will now use
 	 * that product when retrieving dispatchers.
@@ -149,7 +151,8 @@ public class EventDispatchRetriever {
 	   }
 	}
 
-	/**
+	
+/**
 	 *
 	 * Retrieves controller that this retriever is pulling dispatchers from. 
 	 *

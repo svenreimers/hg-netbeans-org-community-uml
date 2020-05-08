@@ -61,31 +61,8 @@ import org.netbeans.modules.uml.core.roundtripframework.IAttributeChangeFacility
 import org.netbeans.modules.uml.core.roundtripframework.IMethodChangeFacility;
 import org.netbeans.modules.uml.core.support.umlsupport.Log;
 
-/**
- * The EventManages manages the communication between an IDE integration and
- * Describe.  The event mangaer is a singleton.  Therefore, all communication
- * to and from Describe can only occur in one direction at a time.  If the
- * EventManager is handling a RoundTrip event any attemp to communciate with
- * Describe will be ignored.
- * <br>
- * In order to initiate communication with Describe a GDSymbolTransaction
- * must first be created.  Once a transaction has been initated communciation
- * may begin.  When Methods and Members are being changed GDMemberTransaction
- * and GDMethodTransactions must be created.
- *
- * Revision History
- * No.  Date        Who         What
- * ---  ----        ---         ----
- *   1  2002-05-27  Darshan     Removed call to set attribute native.
- *   2  2002-06-12  Darshan     Uncommented call to setIsAbstract().
- *
- * @see GDSymbolTransaction
- * @see GDMethodTransaction
- * @see GDMemberTransaction
- * @see #beginClassTransaction(ClassInfo info, IGDSystem system)
- * @see #beginMethodTransaction(GDSymbolTransaction trans, ConstructorInfo method)
- * @see #beginMemberTransaction(GDSymbolTransaction trans, MemberInfo member)
- */
+
+
 public class EventManager
 {
 
@@ -102,7 +79,8 @@ public class EventManager
   private static IAttributeChangeFacility attributeFacility = null;
   private static IMethodChangeFacility    methodFacility    = null;
 
-  /**
+  
+/**
    * Constructor a EventManager object.  Upon creation the round trip connection
    * is establish with Describe.
    */
@@ -142,22 +120,26 @@ public class EventManager
       return methodFacility;
   }
 
-  /**
+  
+/**
    * Retrieves the Event Process that is used to communicate to integated enviornment.
    * @return The event process to be used.
    */
-   /*
+   
+/*
   protected  GDEventProcessor getIDEProcessor(  )
   {
     return mIntegration;
   }
   */
 
-  /**
+  
+/**
    * Sets the Event Process that is used to communicate to integated enviornment.
    * @param ideProcessor The event process to be used.
    */
-   /*
+   
+/*
   public void setIDEProcessor( GDEventProcessor ideProcessor )
   {
     mIntegration = null;
@@ -165,7 +147,8 @@ public class EventManager
   }
   */
 
-  /**
+  
+/**
    * Retrieves the Event Process that is used to communicate to Describe.
    * New event processor can be created to communicate with different processes
    * or different Describe methodologies.
@@ -177,7 +160,8 @@ public class EventManager
     return mToGDPro;
   }
 
-  /**
+  
+/**
    * The singleton implementation used to retrieve an instance of the EventManager.
    * @return A event manager instance.
    */
@@ -194,7 +178,8 @@ public class EventManager
     return filter;
   }
 
-  /**
+  
+/**
    * Initializes the event processor to be used to communicate with Descibe.
    */
   public  void connectGDPro()
@@ -203,7 +188,8 @@ public class EventManager
     mToGDPro = new IDEProcessor();
   }
 
-  /**
+  
+/**
    * Disconnects the communication from the integrated environment to Describe.
    * After calling this routine communication to Describe will be broken.
    */
@@ -215,7 +201,8 @@ public class EventManager
 
   // Operations to allow the IDE to send events to GDPro.
 
-  /**
+  
+/**
    * Issue a command to Describe to delete a class symbol.
    * @param state The transaction to act upon.
    */
@@ -231,7 +218,8 @@ public class EventManager
     }
   }
 
-  /**
+  
+/**
    * Issue a command to Describe to delete a method from a class symbol.
    * @param state The transaction to act upon.
    */
@@ -245,7 +233,8 @@ public class EventManager
     }
   }
 
-  /**
+  
+/**
    * Issue a command to Describe add an interface implementation to a class symbol.
    * @param state The transaction to act upon.
    * @param pName The name of the package that contains the interface.
@@ -263,7 +252,8 @@ public class EventManager
     }
   }
 
-  /**
+  
+/**
    * Issue a command to Describe remvoe an interface implementation from a class symbol.
    * @param state The transaction to act upon.
    * @param pName The name of the package that contains the interface.
@@ -283,7 +273,8 @@ public class EventManager
     }
   }
 
-  /**
+  
+/**
    * Issue a command to Describe add a collection of exceptions to a class symbol.
    * @param state The transaction to act upon.
    * @param value The exceptions to add.
@@ -307,7 +298,8 @@ public class EventManager
     }
   }
 
-  /**
+  
+/**
    * Issue a command to Describe update the package that contains the class symbol.
    * @param state The transaction to act upon.
    * @param value The name of the pacakge.
@@ -322,7 +314,8 @@ public class EventManager
     }
   }
 
-  /**
+  
+/**
    * Issue a command to Describe update the modifiers of a class symbols.
    * @param state The transaction to act upon.
    * @param value The java modifiers that have been changed.
@@ -348,7 +341,8 @@ public class EventManager
     }
   }
 
-  /**
+  
+/**
    * Issue a command to Describe update the modifiers of a class's method.
    * @param state The transaction to act upon.
    * @param value The java modifiers that have been changed.
@@ -392,7 +386,8 @@ public class EventManager
      }
    }
 
-  /**
+  
+/**
    * Issue a command to Describe update return type of a method.
    * @param state The transaction to act upon.
    * @param value The return type.
@@ -409,7 +404,8 @@ public class EventManager
     }
   }
 
-  /**
+  
+/**
    * Issue a command to Describe update type of a data membere.
    * @param state The transaction to act upon.
    * @param value The type.
@@ -427,7 +423,8 @@ public class EventManager
     }
   }
 
-  /**
+  
+/**
    * Issue a command to Describe update the modifiers of a class's data member.
    * @param state The transaction to act upon.
    * @param value The java modifiers that have been changed.
@@ -454,7 +451,8 @@ public class EventManager
     }
   }
 
-  /**
+  
+/**
    * Issue a command to Describe make a class symbol an interface.
    * @param state The transaction to act upon.
    * @param isInterface if true then the class is an inteface otherwise it is a class.
@@ -490,7 +488,8 @@ public class EventManager
     }
   }
 
-  /**
+  
+/**
    * Issue a command to Describe make a class symbol an interface.
    * @param state The transaction to act upon.
    * @param isInterface if true then the class is an inteface otherwise it is a class.
@@ -526,7 +525,8 @@ public class EventManager
     }
   }
 
-  /**
+  
+/**
    * When GDPro issues round trip events and we update the IDE we do not want to
    * execute event back to GDPro.  To pervent this from occuring I will set
    * a flag to prevent events from firing.  This is like the batch trigger flag
@@ -544,17 +544,8 @@ public class EventManager
     return mPreventEvents;
   }
 
-  /**
-   * A class that implements the _IGDAddInRoundTripEvents.  The _IGDAddInRoundTripEvents
-   * interface allows a class to listener to round trip notification.  When a
-   * round trip event occurs the source file will be update using the
-   * Event Processor returned by getIDEProcessor.
-   * @author  Trey Spiva
-   * @version 1.0
-   *
-   * @see EventManager#getIDEProcessor()
-   * @see GDEventProcessor
-   */
+  
+
   public class GDProRTEvents /* extends _IGDAddInRoundTripEventsAdapter */
   {
     /** Creates new GDProRTEvents   */

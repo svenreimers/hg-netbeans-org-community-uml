@@ -44,10 +44,8 @@
 
 package org.netbeans.modules.uml.core.roundtripframework;
 
-/**
- * @author sumitabhk
- *
- */
+
+
 public interface RTMode {
     // completely off, no events processing
     public static final int RTM_SHUT_DOWN = 3;

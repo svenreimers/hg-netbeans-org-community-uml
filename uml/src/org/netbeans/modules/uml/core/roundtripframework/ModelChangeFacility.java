@@ -42,11 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : ModelChangeFacility.java
- * Created on : Nov 20, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.roundtripframework;
 
 import org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity;
@@ -59,16 +56,16 @@ import org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframe
 import org.netbeans.modules.uml.core.support.umlsupport.ProductRetriever;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
-/**
- * @author Aztec
- */
+
+
 public class ModelChangeFacility
     extends RequestFacility
     implements IModelChangeFacility
 {
     IFacilityManager m_pFacilityManager;
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IModelChangeFacility#addAttribute(java.lang.String, java.lang.String, java.lang.String, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, boolean, boolean)
      */
     public IAttribute addAttribute(
@@ -100,7 +97,8 @@ public class ModelChangeFacility
         return null;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IModelChangeFacility#addOperation(java.lang.String, java.lang.String, java.lang.String)
      */
     public IOperation addOperation(
@@ -134,7 +132,8 @@ public class ModelChangeFacility
         return null;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IModelChangeFacility#addOperationToClassifier(java.lang.String, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier)
      */
     public void addOperationToClassifier(
@@ -161,7 +160,8 @@ public class ModelChangeFacility
         }
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IModelChangeFacility#attributeAdded(java.lang.String, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttribute)
      */
     public void attributeAdded(String language, IAttribute pAttr)
@@ -185,7 +185,8 @@ public class ModelChangeFacility
         }
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IModelChangeFacility#attributeDeleted(java.lang.String, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttribute, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier)
      */
     public void attributeDeleted(
@@ -213,7 +214,8 @@ public class ModelChangeFacility
 
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IModelChangeFacility#attributeNameChanged(java.lang.String, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttribute)
      */
     public void attributeNameChanged(String language, IAttribute pAttr)
@@ -237,7 +239,8 @@ public class ModelChangeFacility
         }
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IModelChangeFacility#attributeTypeChanged(java.lang.String, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttribute)
      */
     public void attributeTypeChanged(String language, IAttribute pAttr)
@@ -261,7 +264,8 @@ public class ModelChangeFacility
         }
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IModelChangeFacility#changeAttributeFinal(java.lang.String, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttribute, boolean, boolean)
      */
     public void changeAttributeFinal(
@@ -290,7 +294,8 @@ public class ModelChangeFacility
 
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IModelChangeFacility#changeAttributeMultiplicity(java.lang.String, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttribute, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity, boolean, boolean)
      */
     public void changeAttributeMultiplicity(
@@ -322,7 +327,8 @@ public class ModelChangeFacility
         }
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IModelChangeFacility#changeAttributeName(java.lang.String, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttribute, java.lang.String, boolean, boolean)
      */
     public void changeAttributeName(
@@ -355,7 +361,8 @@ public class ModelChangeFacility
 
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IModelChangeFacility#changeAttributeStatic(java.lang.String, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttribute, boolean, boolean)
      */
     public void changeAttributeStatic(
@@ -384,7 +391,8 @@ public class ModelChangeFacility
 
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IModelChangeFacility#changeAttributeType(java.lang.String, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttribute, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, java.lang.String, java.lang.String)
      */
     public IAttribute changeAttributeType(
@@ -422,7 +430,8 @@ public class ModelChangeFacility
         return null;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IModelChangeFacility#changeAttributeTypeName(java.lang.String, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttribute, java.lang.String, boolean, boolean)
      */
     public void changeAttributeTypeName(
@@ -456,7 +465,8 @@ public class ModelChangeFacility
         }
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IModelChangeFacility#changeAttributeVisibility(java.lang.String, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttribute, int, boolean, boolean)
      */
     public void changeAttributeVisibility(
@@ -489,7 +499,8 @@ public class ModelChangeFacility
         }
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IModelChangeFacility#changeClassifierName(java.lang.String, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, java.lang.String)
      */
     public void changeClassifierName(
@@ -519,7 +530,8 @@ public class ModelChangeFacility
 
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IModelChangeFacility#changeInitializer(java.lang.String, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttribute, java.lang.String, boolean)
      */
     public void changeInitializer(
@@ -548,7 +560,8 @@ public class ModelChangeFacility
         }
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IModelChangeFacility#changeOperationName(java.lang.String, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation, java.lang.String)
      */
     public void changeOperationName(
@@ -577,7 +590,8 @@ public class ModelChangeFacility
 
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IModelChangeFacility#changeOperationReturnTypeMultiplicity(java.lang.String, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity, boolean, boolean)
      */
     public void changeOperationReturnTypeMultiplicity(
@@ -611,7 +625,8 @@ public class ModelChangeFacility
 
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IModelChangeFacility#changeOperationType(java.lang.String, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation, java.lang.String)
      */
     public void changeOperationType(
@@ -640,7 +655,8 @@ public class ModelChangeFacility
 
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IModelChangeFacility#changeParameterMultiplicity(java.lang.String, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IParameter, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity, boolean, boolean)
      */
     public void changeParameterMultiplicity(
@@ -673,7 +689,8 @@ public class ModelChangeFacility
         }
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IModelChangeFacility#classifierNameChanged(java.lang.String, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier)
      */
     public void classifierNameChanged(String language, IClassifier pClass)
@@ -696,7 +713,8 @@ public class ModelChangeFacility
         }
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IModelChangeFacility#createAttribute(java.lang.String, java.lang.String, java.lang.String, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier)
      */
     public IAttribute createAttribute(
@@ -729,7 +747,8 @@ public class ModelChangeFacility
         return null;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IModelChangeFacility#deleteAttribute(java.lang.String, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttribute, boolean, boolean)
      */
     public void deleteAttribute(
@@ -758,7 +777,8 @@ public class ModelChangeFacility
         }
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IModelChangeFacility#deleteOperation(java.lang.String, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation)
      */
     public void deleteOperation(String language, IOperation pOp)
@@ -781,7 +801,8 @@ public class ModelChangeFacility
         }
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IModelChangeFacility#dependencyAdded(java.lang.String, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier)
      */
     public void dependencyAdded(
@@ -809,7 +830,8 @@ public class ModelChangeFacility
         }
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IModelChangeFacility#dependencyDeleted(java.lang.String, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier)
      */
     public void dependencyDeleted(
@@ -838,7 +860,8 @@ public class ModelChangeFacility
 
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IModelChangeFacility#findAttributeAndChangeName(java.lang.String, java.lang.String, java.lang.String, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier)
      */
     public void findAttributeAndChangeName(
@@ -870,7 +893,8 @@ public class ModelChangeFacility
         }
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IModelChangeFacility#findAttributeAndChangeType(java.lang.String, java.lang.String, java.lang.String, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier)
      */
     public IAttribute findAttributeAndChangeType(
@@ -902,7 +926,8 @@ public class ModelChangeFacility
         return null;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IModelChangeFacility#findAttributeAndDelete(java.lang.String, java.lang.String, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier)
      */
     public void findAttributeAndDelete(
@@ -931,7 +956,8 @@ public class ModelChangeFacility
         }
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IModelChangeFacility#generalizationAdded(java.lang.String, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier)
      */
     public void generalizationAdded(
@@ -961,7 +987,8 @@ public class ModelChangeFacility
 
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IModelChangeFacility#generalizationDeleted(java.lang.String, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier)
      */
     public void generalizationDeleted(
@@ -991,7 +1018,8 @@ public class ModelChangeFacility
 
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IModelChangeFacility#getFacilityManager(org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.IFacilityManager)
      */
     public IFacilityManager getFacilityManager()
@@ -999,7 +1027,8 @@ public class ModelChangeFacility
         return ProductRetriever.retrieveProduct().getFacilityManager();
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IModelChangeFacility#implementationAdded(java.lang.String, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier)
      */
     public void implementationAdded(
@@ -1028,7 +1057,8 @@ public class ModelChangeFacility
         }
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IModelChangeFacility#implementationDeleted(java.lang.String, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier)
      */
     public void implementationDeleted(
@@ -1052,7 +1082,8 @@ public class ModelChangeFacility
         }
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IModelChangeFacility#operationAdded(java.lang.String, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation)
      */
     public void operationAdded(String language, IOperation pOp)
@@ -1076,7 +1107,8 @@ public class ModelChangeFacility
         }
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IModelChangeFacility#operationDeleted(java.lang.String, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier)
      */
     public void operationDeleted(
@@ -1103,7 +1135,8 @@ public class ModelChangeFacility
         }
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IModelChangeFacility#operationNameChanged(java.lang.String, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation)
      */
     public void operationNameChanged(String language, IOperation pOp)
@@ -1127,7 +1160,8 @@ public class ModelChangeFacility
         }
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IModelChangeFacility#operationTypeChanged(java.lang.String, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation)
      */
     public void operationTypeChanged(String language, IOperation pOp)

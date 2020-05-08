@@ -43,6 +43,7 @@
  */
 
 
+
 /*
  * CodeGenElementsTestCase.java
  *
@@ -73,10 +74,8 @@ import org.netbeans.test.umllib.project.elem.ModifierType;
 import org.netbeans.test.umllib.project.elem.impl.InterfaceElem;
 import org.netbeans.test.umllib.project.verifier.elem.ReflectionElementVerifier;
 import org.netbeans.test.umllib.project.verifier.elem.TextElementVerifier;
-/**
- *
- * @author Alexandr Scherbatiy
- */
+
+
 
 public class CodeGenElementsTestCase extends CodeGenerationTestCase {
     

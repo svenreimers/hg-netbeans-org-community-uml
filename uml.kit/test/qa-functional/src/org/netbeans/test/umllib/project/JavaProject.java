@@ -43,12 +43,8 @@
  */
 
 
-/*
- * JavaProject.java
- *
- * Created on January 25, 2006, 1:38 PM
- *
- */
+
+
 
 package org.netbeans.test.umllib.project;
 import org.netbeans.jellytools.NewProjectWizardOperator;
@@ -64,10 +60,8 @@ import org.netbeans.jemmy.operators.JTextFieldOperator;
 import org.netbeans.test.umllib.util.LabelsAndTitles;
 import org.netbeans.test.umllib.util.Utils;
 
-/**
- *
- * @author Alexandr Scherbatiy
- */
+
+
 
 public class JavaProject extends Project {
     
@@ -86,7 +80,8 @@ public class JavaProject extends Project {
     
     JavaClassLoader classLoader;
     
-    /**
+    
+/**
      *
      * @param name
      * @param type
@@ -95,7 +90,8 @@ public class JavaProject extends Project {
 	this(name, ProjectType.JAVA_APPLICATION);
     }
     
-    /**
+    
+/**
      *
      * @param name
      * @param type
@@ -105,7 +101,8 @@ public class JavaProject extends Project {
     }
     
     
-    /**
+    
+/**
      *
      * @param name
      * @param type
@@ -115,7 +112,8 @@ public class JavaProject extends Project {
 	this(name, type, location, null);
     }
     
-    /**
+    
+/**
      *
      * @param name
      * @param type
@@ -131,7 +129,8 @@ public class JavaProject extends Project {
     
     
     
-    /**
+    
+/**
      *
      * @return
      */
@@ -139,7 +138,8 @@ public class JavaProject extends Project {
 	return mainClass;
     }
     
-    /**
+    
+/**
      *
      * @return
      */
@@ -148,7 +148,8 @@ public class JavaProject extends Project {
     }
     
     
-    /**
+    
+/**
      *
      * @param name
      * @param type
@@ -158,7 +159,8 @@ public class JavaProject extends Project {
 	return createProject(name, type, Utils.WORK_DIR);
     }
     
-    /**
+    
+/**
      *
      * @param name
      * @param type
@@ -174,7 +176,8 @@ public class JavaProject extends Project {
 	return createProject(name, type, Utils.WORK_DIR, setAsMain, createMainClass, null);
     }
     
-    /**
+    
+/**
      *
      * @param name
      * @param type
@@ -186,7 +189,8 @@ public class JavaProject extends Project {
 	return createProject(name, type, location, setAsMain, true, null);
     }
     
-    /**
+    
+/**
      *
      * @param name
      * @param type
@@ -201,7 +205,8 @@ public class JavaProject extends Project {
 	return createProject(name, type, location, setAsMain, createMainClass, null);
     }
     
-    /**
+    
+/**
      *
      * @param name
      * @param type

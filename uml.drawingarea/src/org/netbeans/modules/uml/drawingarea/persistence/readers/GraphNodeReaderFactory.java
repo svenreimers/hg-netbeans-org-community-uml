@@ -56,10 +56,8 @@ import org.netbeans.modules.uml.core.support.umlutils.IElementLocator;
 import org.netbeans.modules.uml.drawingarea.persistence.api.GraphNodeReader;
 import org.netbeans.modules.uml.drawingarea.persistence.data.NodeInfo;
 
-/**
- *
- * @author jyothi
- */
+
+
 public class GraphNodeReaderFactory {
 
     public static GraphNodeReader getReader(NodeInfo nodeInfo)

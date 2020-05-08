@@ -87,7 +87,8 @@ public class FindDialogOperator extends JDialogOperator{
         this(LabelsAndTitles.FIND_IN_MODEL_DIALOG_TITLE, null);
     }
 
-    /**
+    
+/**
      * 
      * @param log 
      */
@@ -95,7 +96,8 @@ public class FindDialogOperator extends JDialogOperator{
         this(LabelsAndTitles.FIND_IN_MODEL_DIALOG_TITLE, log);
     }
     
-    /**
+    
+/**
      * 
      * @param title 
      * @param log 
@@ -105,7 +107,8 @@ public class FindDialogOperator extends JDialogOperator{
         setLog(log);
     }
     
-    /**
+    
+/**
      * 
      * @return 
      */
@@ -114,7 +117,8 @@ public class FindDialogOperator extends JDialogOperator{
         return new FindDialogOperator();
     }
 
-    /**
+    
+/**
      * 
      * @param log 
      * @return 
@@ -133,7 +137,8 @@ public class FindDialogOperator extends JDialogOperator{
         }).start();
     }
     
-    /**
+    
+/**
      * 
      * @param projectName 
      * @param searchString 
@@ -156,7 +161,8 @@ public class FindDialogOperator extends JDialogOperator{
         new EventTool().waitNoEvent(1500);
     }
 
-    /**
+    
+/**
      * 
      * @param projectName 
      * @param searchString 
@@ -178,7 +184,8 @@ public class FindDialogOperator extends JDialogOperator{
         new EventTool().waitNoEvent(1500);
     }
 
-    /**
+    
+/**
      * 
      * @param projectName 
      * @param searchString 
@@ -198,7 +205,8 @@ public class FindDialogOperator extends JDialogOperator{
         cbox.pushKey(KeyEvent.VK_ENTER);
     }
     
-    /**
+    
+/**
      * 
      * @param projectName 
      */
@@ -224,7 +232,8 @@ public class FindDialogOperator extends JDialogOperator{
         }
     }
     
-    /**
+    
+/**
      * 
      * @param flag 
      */
@@ -235,7 +244,8 @@ public class FindDialogOperator extends JDialogOperator{
         }
     }
 
-    /**
+    
+/**
      * 
      * @param flag 
      */
@@ -246,7 +256,8 @@ public class FindDialogOperator extends JDialogOperator{
         }
     }
 
-    /**
+    
+/**
      * 
      * @param flag 
      */
@@ -259,7 +270,8 @@ public class FindDialogOperator extends JDialogOperator{
         }
     }
     
-    /**
+    
+/**
      * 
      * @param flag 
      */
@@ -278,7 +290,8 @@ public class FindDialogOperator extends JDialogOperator{
         new JButtonOperator(this, BTN_CLOSE).clickMouse(1);
     }
  
-    /**
+    
+/**
      * 
      * @return 
      */
@@ -286,7 +299,8 @@ public class FindDialogOperator extends JDialogOperator{
         return new JTableOperator(this, 0);
     }
 
-    /**
+    
+/**
      * 
      * @return 
      */
@@ -314,7 +328,8 @@ public class FindDialogOperator extends JDialogOperator{
     
 //------------------------------------------------------------------------------    
     
-    /**
+    
+/**
      * 
      * @param targetCriteria 
      * @param itemsForSearch 
@@ -391,7 +406,8 @@ public class FindDialogOperator extends JDialogOperator{
         return result;
     }
     
-    /**
+    
+/**
      * 
      * @param target 
      * @param targetCriteria 
@@ -427,7 +443,8 @@ public class FindDialogOperator extends JDialogOperator{
     }
     
 
-    /**
+    
+/**
      * 
      * @param target 
      * @param targetCriteria 
@@ -440,7 +457,8 @@ public class FindDialogOperator extends JDialogOperator{
         return compareResults(ourResults);
     }
     
-    /**
+    
+/**
      * 
      * @param targetCriteria 
      * @param itemsForSearch 
@@ -454,7 +472,8 @@ public class FindDialogOperator extends JDialogOperator{
         return compareResults(ourResults);
     }
     
-    /**
+    
+/**
      * 
      * @param ourResults 
      * @return 
@@ -520,7 +539,8 @@ public class FindDialogOperator extends JDialogOperator{
         return true;
     }
 
-    /**
+    
+/**
      * 
      * @param log 
      */
@@ -528,7 +548,8 @@ public class FindDialogOperator extends JDialogOperator{
         prn = log;
     }
     
-    /**
+    
+/**
      * 
      * @param message 
      */

@@ -61,10 +61,8 @@ import org.openide.filesystems.FileUtil;
 
 
 
-/**
- * @author alagud
- *
- */
+
+
 public class MDREventProcessor
 {
     Vector<IMDRListener> listener = new Vector<IMDRListener>();

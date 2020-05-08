@@ -50,6 +50,7 @@ import org.openide.filesystems.FileObject;
 import org.netbeans.api.java.source.ElementHandle;
 
 
+
 /**
  *  struct containing refs to ElementHandle and FileObject 
  */

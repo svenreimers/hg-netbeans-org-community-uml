@@ -47,10 +47,8 @@ import org.netbeans.modules.uml.core.metamodel.diagrams.IProxyDiagram;
 import org.netbeans.modules.uml.core.support.umlsupport.IResultCell;
 import org.openide.loaders.DataObject;
 
-/**
- *
- * @author treyspiva
- */
+
+
 public class DrawingAreaEventsAdapter implements IDrawingAreaEventsSink
 {
 

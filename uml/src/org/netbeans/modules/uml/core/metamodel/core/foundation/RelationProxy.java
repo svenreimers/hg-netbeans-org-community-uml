@@ -52,10 +52,8 @@ import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IGeneralization;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
-/**
- * @author sumitabhk
- *
- */
+
+
 public class RelationProxy implements IRelationProxy{
 
 	private IElement m_From = null;
@@ -65,14 +63,16 @@ public class RelationProxy implements IRelationProxy{
 	private boolean m_RelationValidated = false;
         private boolean reconnected = false;
 
-	/**
+	
+/**
 	 * 
 	 */
 	public RelationProxy() {
 		super();
 	}
 
-	/**
+	
+/**
 	 * Gets the from element in this proxy.
 	 *
 	 * @param pVal
@@ -83,7 +83,8 @@ public class RelationProxy implements IRelationProxy{
 		return m_From;
 	}
 
-	/**
+	
+/**
 	 * Sets the from element in this proxy.
 	 *
 	 * @param newVal
@@ -94,7 +95,8 @@ public class RelationProxy implements IRelationProxy{
 		m_From = value;
 	}
 
-	/**
+	
+/**
 	 * Gets the to element in this proxy.
 	 *
 	 * @param pVal
@@ -105,7 +107,8 @@ public class RelationProxy implements IRelationProxy{
 		return m_To;
 	}
 
-	/**
+	
+/**
 	 * Sets the to element in this proxy.
 	 *
 	 * @param newVal
@@ -116,7 +119,8 @@ public class RelationProxy implements IRelationProxy{
 		m_To = value;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Gets the element that performs the connection between the two
 	 * elements.
@@ -130,7 +134,8 @@ public class RelationProxy implements IRelationProxy{
 		return m_Connection;
 	}
 
-	/**
+	
+/**
 	 * If the connection is 0 then this is the type of connection that should be verified.
 	 *
 	 * @param pVal
@@ -141,7 +146,8 @@ public class RelationProxy implements IRelationProxy{
 		return m_ConnectionElementType;
 	}
 
-	/**
+	
+/**
 	 * If the connection is 0 then this is the type of connection that should be verified.
 	 *
 	 * @param newVal
@@ -152,7 +158,8 @@ public class RelationProxy implements IRelationProxy{
 		m_ConnectionElementType = value;
 	}
 
-	/**
+	
+/**
 	 * If used for validation this returns true if the relation has been validated.
 	 *
 	 * @param pVal
@@ -163,7 +170,8 @@ public class RelationProxy implements IRelationProxy{
 		return m_RelationValidated;
 	}
 
-	/**
+	
+/**
 	 * If used for validation this returns true if the relation has been validated.
 	 *
 	 * @param newVal
@@ -174,7 +182,8 @@ public class RelationProxy implements IRelationProxy{
 		m_RelationValidated = value;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Sets the element that performs the connection between the two
 	 * elements.
@@ -188,7 +197,8 @@ public class RelationProxy implements IRelationProxy{
 		m_Connection = value;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Determines whether or not the passed-in elements
 	 * match the corresponding elements in this proxy.
@@ -210,7 +220,8 @@ public class RelationProxy implements IRelationProxy{
 		return isMatching;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Retrieves the element on the from side of the internal connection object.
 	 *
@@ -223,7 +234,8 @@ public class RelationProxy implements IRelationProxy{
 		return getRelationEnd(true);
 	}
 
-	/**
+	
+/**
 	 *
 	 * Retrieves the element on the to side of the internal connection object.
 	 *
@@ -236,7 +248,8 @@ public class RelationProxy implements IRelationProxy{
 		return getRelationEnd(false);
 	}
 
-	/**
+	
+/**
 	 *
 	 * Retrieves an end from the internal Connection type. Which end is retrieved is
 	 * dictated by isFrom.
@@ -286,7 +299,8 @@ public class RelationProxy implements IRelationProxy{
 		return retEle;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Retrieves the appropriate end of the passed in Generalization
 	 *
@@ -311,7 +325,8 @@ public class RelationProxy implements IRelationProxy{
 		return end;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Retrieves the appropriate end of the passed in Aggregation
 	 *
@@ -342,7 +357,8 @@ public class RelationProxy implements IRelationProxy{
 		return retEle;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Retrieves the appropriate end of the passed in Association
 	 *
@@ -383,7 +399,8 @@ public class RelationProxy implements IRelationProxy{
 		return retEle;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Retrieves the appropriate end of the passed in Dependency
 	 *
@@ -410,7 +427,8 @@ public class RelationProxy implements IRelationProxy{
 	}
 	
 
-	/**
+	
+/**
 	 *
 	 * Retrieves the element that physically owns the connection element. In every
 	 * case EXCEPT for a Generalization, this will always by the Namespace of the

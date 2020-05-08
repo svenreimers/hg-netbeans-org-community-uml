@@ -42,13 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File         : IDEManagerAdapter.java
- * Version      : 1.0
- * Description  : Stub implementation of the IDE manager interface, suitable
- *                for subclassing by IDE integrations.
- * Author       : Darshan
- */
+
+
 package org.netbeans.modules.uml.integration.ide;
 
 import java.awt.Frame;
@@ -64,14 +59,8 @@ import org.netbeans.modules.uml.integration.ide.dialogs.ProgressIndicator;
 import org.netbeans.modules.uml.core.metamodel.diagrams.IDiagram;
 import org.netbeans.modules.uml.core.metamodel.structure.IProject;
 
-/**
- *  Stub implementation of the IDE manager interface, suitable for subclassing
- * by IDE integrations. If the integration doesn't subclass this, an instance
- * of this will be used as the IDE manager.
- *
- * @author  Darshan
- * @version 1.0
- */
+
+
 public class IDEManagerAdapter implements IIDEManager {
     public boolean isPropertyEditorVisible() {
         return true;
@@ -113,7 +102,8 @@ public class IDEManagerAdapter implements IIDEManager {
         return null;
     }
 
-    /**
+    
+/**
      *  Returns the top window Frame of the IDE. AWT-based IDEs should override
      * this method to return the main IDE window; other IDEs can return
      * <code>null</code> and override getProgressIndicator() instead.
@@ -125,7 +115,8 @@ public class IDEManagerAdapter implements IIDEManager {
         return null;
     }
 
-    /**
+    
+/**
      *  Returns an <code>IProgressIndicator</code> instance
      *  (<code>JDialog</code> implementation), modal to the <code>Frame</code>
      *  returned by <code>getTopFrame()</code> if non-null, or a free-floating
@@ -146,7 +137,8 @@ public class IDEManagerAdapter implements IIDEManager {
         return pi;
     }
 
-    /**
+    
+/**
      *  Returns the diagram kind of the given diagram.
      * @param diagram An IDiagram, which may be null.
      * @return The diagram kind, one of the constants in DiagramKind.
@@ -173,13 +165,15 @@ public class IDEManagerAdapter implements IIDEManager {
     public void openProject(IProject describeProject, String project) {
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      */
     public void closeProject(IProject proj) {
         UMLSupport.getUMLSupport().closeProject(proj);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      */
     public boolean activateIDEProject(IProject describeProject) {
         return true;
@@ -196,7 +190,8 @@ public class IDEManagerAdapter implements IIDEManager {
     public void handleRemoveDescribeProject(IProject proj) {
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      */
     public void deleteFile(File file) {
         // IDEs will certainly want to override this default behavior.

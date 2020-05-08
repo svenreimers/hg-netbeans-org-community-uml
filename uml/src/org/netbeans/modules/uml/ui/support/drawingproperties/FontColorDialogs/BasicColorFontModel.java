@@ -42,6 +42,7 @@
  * made subject to such option by the copyright holder.
  */
 
+
 /*
  * Created on Apr 15, 2004
  *
@@ -55,16 +56,13 @@ import javax.swing.tree.TreePath;
 
 import org.netbeans.modules.uml.ui.swing.treetable.TreeTableModel;
 
-/**
- * @author jingmingm
- *
- * To change the template for this generated type comment go to
- * Window&gt;Preferences&gt;Java&gt;Code Generation&gt;Code and Comments
- */
+
+
 public class BasicColorFontModel implements TreeTableModel
 {
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.swing.treetable.TreeTableModel#getColumnCount()
     */
    public int getColumnCount()
@@ -73,7 +71,8 @@ public class BasicColorFontModel implements TreeTableModel
       return 0;
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.swing.treetable.TreeTableModel#getColumnName(int)
     */
    public String getColumnName(int column)
@@ -82,7 +81,8 @@ public class BasicColorFontModel implements TreeTableModel
       return null;
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.swing.treetable.TreeTableModel#getColumnClass(int)
     */
    public Class getColumnClass(int column)
@@ -91,7 +91,8 @@ public class BasicColorFontModel implements TreeTableModel
       return null;
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.swing.treetable.TreeTableModel#getValueAt(java.lang.Object, int)
     */
    public Object getValueAt(Object node, int column)
@@ -100,7 +101,8 @@ public class BasicColorFontModel implements TreeTableModel
       return null;
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.swing.treetable.TreeTableModel#isCellEditable(java.lang.Object, int)
     */
    public boolean isCellEditable(Object node, int column)
@@ -109,7 +111,8 @@ public class BasicColorFontModel implements TreeTableModel
       return false;
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.swing.treetable.TreeTableModel#setValueAt(java.lang.Object, java.lang.Object, int)
     */
    public void setValueAt(Object aValue, Object node, int column)
@@ -118,7 +121,8 @@ public class BasicColorFontModel implements TreeTableModel
 
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see javax.swing.tree.TreeModel#getRoot()
     */
    public Object getRoot()
@@ -127,7 +131,8 @@ public class BasicColorFontModel implements TreeTableModel
       return null;
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see javax.swing.tree.TreeModel#getChildCount(java.lang.Object)
     */
    public int getChildCount(Object parent)
@@ -136,7 +141,8 @@ public class BasicColorFontModel implements TreeTableModel
       return 0;
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see javax.swing.tree.TreeModel#isLeaf(java.lang.Object)
     */
    public boolean isLeaf(Object node)
@@ -145,7 +151,8 @@ public class BasicColorFontModel implements TreeTableModel
       return false;
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see javax.swing.tree.TreeModel#addTreeModelListener(javax.swing.event.TreeModelListener)
     */
    public void addTreeModelListener(TreeModelListener l)
@@ -154,7 +161,8 @@ public class BasicColorFontModel implements TreeTableModel
 
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see javax.swing.tree.TreeModel#removeTreeModelListener(javax.swing.event.TreeModelListener)
     */
    public void removeTreeModelListener(TreeModelListener l)
@@ -163,7 +171,8 @@ public class BasicColorFontModel implements TreeTableModel
 
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see javax.swing.tree.TreeModel#getChild(java.lang.Object, int)
     */
    public Object getChild(Object parent, int index)
@@ -172,7 +181,8 @@ public class BasicColorFontModel implements TreeTableModel
       return null;
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see javax.swing.tree.TreeModel#getIndexOfChild(java.lang.Object, java.lang.Object)
     */
    public int getIndexOfChild(Object parent, Object child)
@@ -181,7 +191,8 @@ public class BasicColorFontModel implements TreeTableModel
       return 0;
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see javax.swing.tree.TreeModel#valueForPathChanged(javax.swing.tree.TreePath, java.lang.Object)
     */
    public void valueForPathChanged(TreePath path, Object newValue)

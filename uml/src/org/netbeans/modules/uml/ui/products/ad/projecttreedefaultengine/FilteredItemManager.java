@@ -43,11 +43,8 @@
  */
 
 
-/*
- *
- * Created on Jun 12, 2003
- * @author Trey Spiva
- */
+
+
 package org.netbeans.modules.uml.ui.products.ad.projecttreedefaultengine;
 
 import java.util.HashMap;
@@ -64,15 +61,8 @@ import org.netbeans.modules.uml.ui.controls.filter.ProjectTreeFilterDialogEvents
 import org.netbeans.modules.uml.ui.support.UserSettings;
 
 
-/**
- * Manages the project tree filter items.  Uses the
- * IProjectTreeFilterDialogEventsSink interface to add items to the filter
- * dialog.
- * 
- * @author Trey Spiva
- * @see IProjectTreeFilterDialogEventsSink
- * @see IFilterDialog
- */
+
+
 public class FilteredItemManager extends ProjectTreeFilterDialogEventsAdapter
 {
    private TreeMap     m_FilterItems     = new TreeMap();
@@ -80,7 +70,8 @@ public class FilteredItemManager extends ProjectTreeFilterDialogEventsAdapter
    private IFilterItem m_AllModelItems   = new FilterItem(DefaultEngineResource.getString("IDS_MODEL_ELEMENTS"));
    private IFilterItem m_AllDiagramItems = new FilterItem(DefaultEngineResource.getString("IDS_DIAGRAMS"));
    
-   /**
+   
+/**
     * Initializes the filter items using a hash map.
     * 
     * @param displayedItems The display items.  The key is the element type and
@@ -153,7 +144,8 @@ public class FilteredItemManager extends ProjectTreeFilterDialogEventsAdapter
       m_AllDiagramItems.setState(IFilterItem.FILTER_STATE_ON);
    }
    
-   /**
+   
+/**
     * Checks if all model elements are to be filtered out.
     * 
     * @return <code>true</code> if all model elements are to be filtered out.
@@ -165,7 +157,8 @@ public class FilteredItemManager extends ProjectTreeFilterDialogEventsAdapter
 		return m_AllModelItems.getState() == IFilterItem.FILTER_STATE_OFF ? true : false;
 	}
 	
-   /**
+   
+/**
     * Checks if a item is to be displayed.
     * 
     * @param elementType The name of the item in the filter manager.
@@ -186,7 +179,8 @@ public class FilteredItemManager extends ProjectTreeFilterDialogEventsAdapter
 		return retVal;
 	}
    
-   /**
+   
+/**
     * Set the display state of the specified item.
     * 
     * @param elementType The name of the item in the filter manager.
@@ -202,7 +196,8 @@ public class FilteredItemManager extends ProjectTreeFilterDialogEventsAdapter
       }
 	}
 
-   /**
+   
+/**
     * Check the filter items and hte diagram items to find the specified 
     * filter item.
     * 
@@ -221,7 +216,8 @@ public class FilteredItemManager extends ProjectTreeFilterDialogEventsAdapter
       return retVal;
    }
    
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.filter.IProjectTreeFilterDialogEventsSink#OnProjectTreeFilterDialogInit(org.netbeans.modules.uml.ui.controls.filter.IFilterDialog, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
     */
    public void onProjectTreeFilterDialogInit(IFilterDialog dialog, IResultCell cell)
@@ -243,7 +239,8 @@ public class FilteredItemManager extends ProjectTreeFilterDialogEventsAdapter
          dialog.addFilterItem(diagramElementsNode, curItem);
       }
    }
-	/**
+	
+/**
 	 * Get the current settings from the registry.  In jUML, we are not using registry settings, so instead
 	 * we are using the UserSettings files.  These entries will be stored in the .Settings file so that they
 	 * are application wide.  The entries that will be written to the file will be those that are to be
@@ -300,7 +297,8 @@ public class FilteredItemManager extends ProjectTreeFilterDialogEventsAdapter
 			}
    	}
    }
-	/**
+	
+/**
 	 * Saves the current settings to the registry.  In jUML, we are not using registry settings, so instead
 	 * we are using the UserSettings files.  These entries will be stored in the .Settings file so that they
 	 * are application wide.  The entries that will be written to the file will be those that are to be

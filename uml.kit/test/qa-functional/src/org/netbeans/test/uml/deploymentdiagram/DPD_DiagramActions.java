@@ -75,11 +75,8 @@ import org.netbeans.test.umllib.vrf.GenericVerifier;
 
 
 
-/**
- *
- * @author psb
- * @spec UML/ComponentDiagram.xml
- */
+
+
 public class DPD_DiagramActions extends UMLTestCase {
     
     private DiagramOperator diagram = null;

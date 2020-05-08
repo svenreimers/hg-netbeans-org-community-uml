@@ -44,12 +44,8 @@
 
 package org.netbeans.modules.uml.core.support.umlsupport;
 
-/**
- * @author brettb
- *
- * To change the template for this generated type comment go to
- * Window>Preferences>Java>Code Generation>Code and Comments
- */
+
+
 public interface IComparableTreeData
 {
    /** Is this IComparableTreeData the same as the argument? */

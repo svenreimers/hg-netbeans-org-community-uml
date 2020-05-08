@@ -43,48 +43,48 @@
  */
 
 
-/*
- *
- * Created on Jun 12, 2003
- * @author Trey Spiva
- */
+
+
 package org.netbeans.modules.uml.ui.support.projecttreesupport;
 
 import org.netbeans.modules.uml.core.metamodel.core.foundation.IElement;
 
-/**
- *
- * @author Trey Spiva
- */
+
+
 public interface ITreeFolder extends ITreeItem
 {
 
-   /**
+   
+/**
     * @param value The ID of the element
     */
    public void setID(String value);
 
-   /**
+   
+/**
     *
     * @return value The ID of the element
     */
    public String getID();
 
-   /**
+   
+/**
     * @param value
     */
    public void setName(String value);
 
    public String getName();
 
-   /**
+   
+/**
     * Sets display Name of the property definition.
     * 
     * @param value the display name.
     */
    public void setDisplayName(String value);
 
-   /**
+   
+/**
     * Sets display Name of the property definition.
     * 
     * @param value the display name.
@@ -92,47 +92,54 @@ public interface ITreeFolder extends ITreeItem
     */
    public void setDisplayName(String value, boolean initializing);
 
-   /**
+   
+/**
     * Retrieves display Name of the property definition.
     * 
     * @return the display name.
     */
    public String getDisplayName();
    
-   /**
+   
+/**
     * Set the method to use to populate the children.
     * 
     * @param name The name of the method to be invoked.
     */
    public void setGetMethod(String name);
 
-   /**
+   
+/**
     * Retrieve the method to use to populate the children.
     * 
     * @return The name of the method to be invoked. 
     */
    public String getGetMethod();
    
-   /**
+   
+/**
     * Sets the element this folder represents.
     * 
     * @param pEle The model element.
     */
    public void setElement(IElement pEle);
 
-   /**
+   
+/**
     * Retrieves the element this folder represents.
     * 
     * @return  The model element.
     */
    public IElement getElement();
    
-   /**
+   
+/**
     * @param defPath
     */
    public void setPath(ITreeItem[] defPath);
    
-   /**
+   
+/**
     * Is the get method the one used to get imported packages or elements?
     * 
     * @return <b>true</b> if the get method is an import, <b>false</b>
@@ -140,7 +147,8 @@ public interface ITreeFolder extends ITreeItem
     */
    public boolean isGetMethodAnImport();
    
-   /**
+   
+/**
     * Is the get method the one used to get imported elements?
     * 
     * @return <b>true</b> if the get method is an import, <b>false</b>
@@ -148,7 +156,8 @@ public interface ITreeFolder extends ITreeItem
     */
    public boolean isGetMethodAnImportElement();
    
-   /**
+   
+/**
     * Is the get method the one used to get imported packages?
     * 
     * @return <b>true</b> if the get method is an import, <b>false</b>
@@ -156,7 +165,8 @@ public interface ITreeFolder extends ITreeItem
     */
    public boolean isGetMethodAnImportPackage();
    
-   /**
+   
+/**
 	* The type of the tree element.
 	* 
 	* @return The type.

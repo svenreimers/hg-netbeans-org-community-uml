@@ -59,10 +59,8 @@ import org.netbeans.modules.uml.drawingarea.persistence.NodeWriter;
 import org.netbeans.modules.uml.drawingarea.persistence.PersistenceUtil;
 import org.netbeans.modules.uml.drawingarea.view.UMLNodeWidget;
 
-/**
- *
- * @author treyspiva
- */
+
+
 public class OperationWidget extends FeatureWidget implements PropertyChangeListener {
 
     private Font lastFont;
@@ -75,7 +73,8 @@ public class OperationWidget extends FeatureWidget implements PropertyChangeList
 
     ///////////////////////////////////////////////////////////////
     // PropertyChangeListener Implementation
-    /**
+    
+/**
      * The property change listener is used by the diagram to notify widgets of
      * model element property change events.
      */

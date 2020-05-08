@@ -45,11 +45,8 @@
 
 package org.netbeans.modules.uml.ui.support.messaging;
 
-/**
- * @author brettb
- *
- *
- */
+
+
 public interface IETProgressDialog
 {
    public void setLimits(int iLower, int iUpper);

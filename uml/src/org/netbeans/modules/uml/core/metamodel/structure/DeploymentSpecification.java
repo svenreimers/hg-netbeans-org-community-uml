@@ -57,7 +57,8 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 public class DeploymentSpecification extends NamedElement 
 									 implements IDeploymentSpecification
 {
-	/**
+	
+/**
 	 * 
 	 */	
 	public DeploymentSpecification() 
@@ -220,7 +221,8 @@ public class DeploymentSpecification extends NamedElement
 										 );
 	}
 	
-	/**
+	
+/**
 	 * Establishes the appropriate XML elements for this UML type.
 	 *
 	 * [in] The document where this element will reside

@@ -46,7 +46,8 @@ package org.netbeans.modules.uml.core.roundtripframework.codegeneration;
 
 public interface ICodeGenerationChangeNotificationFilter
 {
-	/**
+	
+/**
 	 * Determines if the Change Notification should be forwarded on to the Code Generation Module
 	*/
 	public boolean shouldFilterNotification( ICGChangeNotification pCGChangeNotification );

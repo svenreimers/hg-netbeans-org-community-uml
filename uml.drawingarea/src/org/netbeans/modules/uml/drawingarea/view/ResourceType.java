@@ -42,10 +42,8 @@
 
 package org.netbeans.modules.uml.drawingarea.view;
 
-/**
- *
- * @author Sheryl Su
- */
+
+
 public enum ResourceType {
     
     FOREGROUND, BACKGROUND, FONT, LINECOLOR, LINE_THICKNESS;

@@ -45,10 +45,8 @@
 
 package org.netbeans.modules.uml.core.metamodel.diagrams;
 
-/**
- * @author sumitabhk
- *
- */
+
+
 public interface IDiagramKind
 {
 	public static int DK_UNKNOWN	= 0;

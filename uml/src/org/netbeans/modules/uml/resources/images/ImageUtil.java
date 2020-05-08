@@ -55,10 +55,8 @@ import org.openide.modules.InstalledFileLocator;
 
 import org.openide.util.Exceptions;
 
-/**
- *
- * @author Craig Conover, craig.conover@sun.com
- */
+
+
 public class ImageUtil
 {
     public final static String EXT_PNG = ".png"; // NOI18N

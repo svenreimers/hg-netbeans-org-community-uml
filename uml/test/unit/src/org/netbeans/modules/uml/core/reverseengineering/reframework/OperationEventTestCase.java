@@ -47,6 +47,7 @@ package org.netbeans.modules.uml.core.reverseengineering.reframework;
 import org.netbeans.modules.uml.core.AbstractUMLTestCase;
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation;
 
+
 /**
  * Test cases for OperationEvent.
  */
@@ -59,7 +60,8 @@ public class OperationEventTestCase extends AbstractUMLTestCase
 
     private OperationEvent oe;
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see junit.framework.TestCase#setUp()
      */
     protected void setUp() throws Exception

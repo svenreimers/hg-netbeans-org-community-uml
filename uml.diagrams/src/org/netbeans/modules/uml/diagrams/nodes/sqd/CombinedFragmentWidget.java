@@ -98,10 +98,8 @@ import org.netbeans.modules.uml.drawingarea.actions.AfterValidationExecutor;
 import org.netbeans.modules.uml.drawingarea.persistence.PersistenceUtil;
 import org.netbeans.modules.uml.drawingarea.persistence.api.DiagramNodeReader;
 
-/**
- *
- * @author sp153251
- */
+
+
 public class CombinedFragmentWidget extends ContainerNode implements PropertyChangeListener,CombinedFragment {
 
     private InteractionOperatorWidget operator;
@@ -362,7 +360,8 @@ public class CombinedFragmentWidget extends ContainerNode implements PropertyCha
         paletteModel.initialize("UML/context-palette/CombinedFragment");
         return paletteModel;
     }
-    /**
+    
+/**
      * additioon of operand to the widget
      * 
      * 
@@ -395,7 +394,8 @@ public class CombinedFragmentWidget extends ContainerNode implements PropertyCha
             Point prefPosition = new Point(0, 0);//first operands located at top level
             int vertical_shift = 0;
             if (opWPrev != null) {
-                /*ETList<IMessage> messages=opWPrev.getOperand().getCoveredMessages();
+                
+/*ETList<IMessage> messages=opWPrev.getOperand().getCoveredMessages();
                 if(messages!=null && messages.size()>0)
                 {
                     //TBD, better addition logic, but for now the same as in oprevios release
@@ -903,7 +903,8 @@ public class CombinedFragmentWidget extends ContainerNode implements PropertyCha
         //need to do it after all sizes determination if set of containers are positioned, so call outside
     }
 
-    /**
+    
+/**
      * show all main labe;s if appropriate 
      * TBD: switch to usage of label manager if will be appropriate
      */

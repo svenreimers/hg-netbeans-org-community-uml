@@ -46,12 +46,14 @@ package org.netbeans.modules.uml.core.roundtripframework;
 import org.netbeans.modules.uml.core.support.umlsupport.IResultCell;
 public interface IRoundTripRelationEventsSink
 {
-	/**
+	
+/**
 	 * Fired after the RequestProcessor has filtered its changes, but before actual processing of the requests has been done.
 	*/
 	public void onPreRelationChangeRequest( IChangeRequest newVal, IResultCell cell );
 
-	/**
+	
+/**
 	 * Fired after the RequestProcessor has filtered its changes, allowing all listeners to process the requests.
 	*/
 	public void onRelationChangeRequest( IChangeRequest newVal, IResultCell cell );

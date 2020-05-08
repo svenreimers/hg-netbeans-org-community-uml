@@ -44,6 +44,7 @@
 
 
 
+
 /*
  * Created on Sep 25, 2003
  *
@@ -52,10 +53,8 @@ package org.netbeans.modules.uml.core.metamodel.profiles;
 
 import junit.framework.Test;
 import junit.framework.TestSuite;
-/**
- * @author aztec
- *
- */
+
+
 public class AllProfilesTests
 {
 	public AllProfilesTests()

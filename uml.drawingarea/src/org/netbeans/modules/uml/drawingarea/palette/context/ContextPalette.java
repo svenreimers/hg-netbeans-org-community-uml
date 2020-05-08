@@ -62,10 +62,8 @@ import org.netbeans.modules.uml.drawingarea.palette.context.ContextPaletteButton
 import org.netbeans.modules.uml.drawingarea.palette.context.ContextPaletteModel;
 
 
-/**
- *
- * @author treyspiva
- */
+
+
 public class ContextPalette extends JPanel
 {
     
@@ -111,7 +109,7 @@ public class ContextPalette extends JPanel
         
         setOpaque(false);
         // The green background is for debuging.  Usally the container is not 
-        // opaque, so it does not really matter.
+        
         container.setBackground(Color.GREEN);
         container.setOpaque(false);
         

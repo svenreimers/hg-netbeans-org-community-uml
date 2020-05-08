@@ -49,10 +49,8 @@ import javax.swing.AbstractAction;
 import javax.swing.Action;
 import org.netbeans.modules.uml.drawingarea.LabelManager;
 
-/**
- *
- * @author treyspiva
- */
+
+
 public class ToggleLabelAction extends AbstractAction
 {
     private LabelManager manager = null;

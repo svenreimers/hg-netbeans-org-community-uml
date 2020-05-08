@@ -49,9 +49,8 @@ import org.netbeans.modules.uml.core.AbstractUMLTestCase;
 import org.netbeans.modules.uml.core.metamodel.basic.basicactions.IOutputPin;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.FactoryRetriever;
 
-/**
- * Test cases for ReadSelfAction.
- */
+
+
 public class ReadSelfActionTestCase extends AbstractUMLTestCase
 {
     public static void main(String[] args)
@@ -61,7 +60,8 @@ public class ReadSelfActionTestCase extends AbstractUMLTestCase
 
     private IReadSelfAction act;
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see junit.framework.TestCase#setUp()
      */
     protected void setUp() throws Exception
@@ -72,7 +72,8 @@ public class ReadSelfActionTestCase extends AbstractUMLTestCase
         project.addElement(act);
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see junit.framework.TestCase#tearDown()
      */
     protected void tearDown() throws Exception

@@ -64,10 +64,8 @@ import org.netbeans.modules.uml.ui.support.DispatchHelper;
 import org.netbeans.modules.uml.ui.support.ProductHelper;
 import org.netbeans.modules.uml.ui.support.applicationmanager.IProductDiagramManager;
 
-/**
- * @author sumitabhk
- *
- */
+
+
 //public class EventLoggingAddin implements IAddIn, IAddInButtonSupport
 public class EventLoggingAddin
 {
@@ -79,7 +77,8 @@ public class EventLoggingAddin
 	private EventsDialog m_EventsDialog = null;
 	private static int s_MainFrameButtonId = 1;
 
-	/**
+	
+/**
 	 * 
 	 */
 	public EventLoggingAddin()
@@ -87,7 +86,8 @@ public class EventLoggingAddin
 		super();
 	}
 
-	/**
+	
+/**
 	 * Called when the addin is initialized.
 	 */
 	public long initialize(Object context)
@@ -128,7 +128,8 @@ public class EventLoggingAddin
 		return 0;
 	}
 
-	/**
+	
+/**
 	 * 
 	 */
 	public void registerToDesignPatternDispatcher()
@@ -137,7 +138,8 @@ public class EventLoggingAddin
 		
 	}
 
-	/**
+	
+/**
 	 * registers to the structure dispatcher
 	 */
 	public void registerToStructureDispatcher()
@@ -150,7 +152,8 @@ public class EventLoggingAddin
 		}
 	}
 
-	/**
+	
+/**
 	 * registers to activities dispatcher
 	 */
 	public void registerToActivitiesDispatcher()
@@ -161,7 +164,8 @@ public class EventLoggingAddin
 		}
 	}
 
-	/**
+	
+/**
 	 * registers to the dynamics dispatcher
 	 */
 	public void registerToDynamicsDispatcher()
@@ -172,7 +176,8 @@ public class EventLoggingAddin
 		}
 	}
 
-	/**
+	
+/**
 	 * registers to the SCM dispatcher
 	 */
 	public void registerToSCMDispatcher()
@@ -183,7 +188,8 @@ public class EventLoggingAddin
 		}
 	}
 
-	/**
+	
+/**
 	 * registers to preference manager dispatcher
 	 */
 	public void registerToPreferenceManagerDispatcher()
@@ -194,7 +200,8 @@ public class EventLoggingAddin
 		}
 	}
 
-	/**
+	
+/**
 	 * registers to roundtrip dispatcher
 	 */
 	public void registerToRoundTripDispatcher()
@@ -233,7 +240,8 @@ public class EventLoggingAddin
 		}
 	}
 
-	/**
+	
+/**
 	 * register for core product dispatcher
 	 */
 	public void registerToCoreProductDispatcher()
@@ -244,7 +252,8 @@ public class EventLoggingAddin
 		}
 	}
 
-	/**
+	
+/**
 	 * registers to classifier dispatcher
 	 */
 	public void registerToClassifierDispatcher()
@@ -265,7 +274,8 @@ public class EventLoggingAddin
 		}
 	}
 
-	/**
+	
+/**
 	 * Registers to the lifetime dispatcher
 	 */
 	public void registerToLifeTimeDispatcher()
@@ -277,7 +287,8 @@ public class EventLoggingAddin
 		}
 	}
 
-	/**
+	
+/**
 	 * Registers to the relations dispatcher
 	 */
 	public void registerToRelationDispatcher()
@@ -289,7 +300,8 @@ public class EventLoggingAddin
 		}
 	}
 
-	/**
+	
+/**
 	 * Registers to the project tree filter dialog dispatcher
 	 */
 	public void registerToProjectTreeFilterDialogDispatcher()
@@ -300,7 +312,8 @@ public class EventLoggingAddin
 		}
 	}
 
-	/**
+	
+/**
 	 * Registers to the Edit control dispatcher
 	 */
 	public void registerToEditCtrlDispatcher()
@@ -311,7 +324,8 @@ public class EventLoggingAddin
 		}
 	}
 
-	/**
+	
+/**
 	 * Registers to the Modified dispatcher
 	 */
 	public void registerToModifiedDispatcher()
@@ -330,7 +344,8 @@ public class EventLoggingAddin
 		}
 	}
 
-	/**
+	
+/**
 	 * Registers to the AddIn dispatcher
 	 */
 	public void registerToAddInDispatcher()
@@ -341,7 +356,8 @@ public class EventLoggingAddin
 		}
 	}
 
-	/**
+	
+/**
 	 * Registers to the Project Tree dispatcher
 	 */
 	public void registerToProjectTreeDispatcher()
@@ -353,7 +369,8 @@ public class EventLoggingAddin
 		}
 	}
 
-	/**
+	
+/**
 	 * 
 	 */
 	public void registerToVBADispatcher()
@@ -362,7 +379,8 @@ public class EventLoggingAddin
 		
 	}
 
-	/**
+	
+/**
 	 * Registers to the events dispatcher
 	 */
 	public void registerToMessengerDispatcher()
@@ -373,7 +391,8 @@ public class EventLoggingAddin
 		}
 	}
 
-	/**
+	
+/**
 	 * Registers to the drawing area dispatcher
 	 */
 	public void registerToDrawingAreaDispatcher()
@@ -393,7 +412,8 @@ public class EventLoggingAddin
 		}
 	}
 
-	/**
+	
+/**
 	 * Registers to the events dispatcher
 	 */
 	public void registerToWorkspaceDispatcher()
@@ -406,7 +426,8 @@ public class EventLoggingAddin
 		}
 	}
 
-	/**
+	
+/**
 	 * Called when the addin is deinitialized.
 	 */
 	public long deInitialize(Object context)
@@ -452,7 +473,8 @@ public class EventLoggingAddin
 		return 0;
 	}
 
-	/**
+	
+/**
 	 * unregister from SCM dispatcher
 	 */
 	public void unregisterToSCMDispatcher()
@@ -463,7 +485,8 @@ public class EventLoggingAddin
 		}
 	}
 
-	/**
+	
+/**
 	 * 
 	 */
 	public void unregisterToDesignPatternDispatcher()
@@ -472,7 +495,8 @@ public class EventLoggingAddin
 		
 	}
 
-	/**
+	
+/**
 	 * unregisters to structure dispatcher
 	 */
 	public void unregisterToStructureDispatcher()
@@ -493,7 +517,8 @@ public class EventLoggingAddin
 		}
 	}
 
-	/**
+	
+/**
 	 * unregisters from the activities dispatcher
 	 */
 	public void unregisterToActivitiesDispatcher()
@@ -504,7 +529,8 @@ public class EventLoggingAddin
 		}
 	}
 
-	/**
+	
+/**
 	 * unregisters from dynamics dispatcher
 	 */
 	public void unregisterToDynamicsDispatcher()
@@ -515,7 +541,8 @@ public class EventLoggingAddin
 		}
 	}
 
-	/**
+	
+/**
 	 * unregisters from preference manager dispatcher
 	 */
 	public void unregisterToPreferenceManagerDispatcher()
@@ -534,7 +561,8 @@ public class EventLoggingAddin
 		}
 	}
 
-	/**
+	
+/**
 	 * unregisters from round trip dispatchers
 	 */
 	public void unregisterToRoundTripDispatcher()
@@ -550,7 +578,8 @@ public class EventLoggingAddin
 		}
 	}
 
-	/**
+	
+/**
 	 * unregisters from core product dispatcher
 	 */
 	public void unregisterToCoreProductDispatcher()
@@ -569,7 +598,8 @@ public class EventLoggingAddin
 		}
 	}
 
-	/**
+	
+/**
 	 * unregisters classifier dispatcher
 	 */
 	public void unregisterToClassifierDispatcher()
@@ -590,7 +620,8 @@ public class EventLoggingAddin
 		}
 	}
 
-	/**
+	
+/**
 	 * Unregisters for life time dispatcher
 	 */
 	public void unregisterToLifeTimeDispatcher()
@@ -602,7 +633,8 @@ public class EventLoggingAddin
 		}
 	}
 
-	/**
+	
+/**
 	 * UnRegisters from the relation dispatcher
 	 */
 	public void unregisterToRelationDispatcher()
@@ -614,7 +646,8 @@ public class EventLoggingAddin
 		}
 	}
 
-	/**
+	
+/**
 	 * UnRegisters from the Modified dispatcher
 	 */
 	public void unregisterToProjectTreeFilterDialogDispatcher()
@@ -625,7 +658,8 @@ public class EventLoggingAddin
 		}
 	}
 
-	/**
+	
+/**
 	 * UnRegisters from the Modified dispatcher
 	 */
 	public void unregisterToEditCtrlDispatcher()
@@ -636,7 +670,8 @@ public class EventLoggingAddin
 		}
 	}
 
-	/**
+	
+/**
 	 * UnRegisters from the Modified dispatcher
 	 */
 	public void unregisterToModifiedDispatcher()
@@ -655,7 +690,8 @@ public class EventLoggingAddin
 		}
 	}
 
-	/**
+	
+/**
 	 * UnRegisters from the AddIn dispatcher
 	 */
 	public void unregisterToAddInDispatcher()
@@ -666,7 +702,8 @@ public class EventLoggingAddin
 		}
 	}
 
-	/**
+	
+/**
 	 * UnRegisters from the Project Tree dispatcher
 	 */
 	public void unregisterToProjectTreeDispatcher()
@@ -678,7 +715,8 @@ public class EventLoggingAddin
 		}
 	}
 
-	/**
+	
+/**
 	 * 
 	 */
 	public void unregisterToVBADispatcher()
@@ -687,7 +725,8 @@ public class EventLoggingAddin
 		
 	}
 
-	/**
+	
+/**
 	 * UnRegisters from the events dispatcher
 	 */
 	public void unregisterToMessengerDispatcher()
@@ -698,7 +737,8 @@ public class EventLoggingAddin
 		}
 	}
 
-	/**
+	
+/**
 	 * UnRegisters from the drawing area dispatcher
 	 */
 	public void unregisterToDrawingAreaDispatcher()
@@ -715,7 +755,8 @@ public class EventLoggingAddin
 //		helper.revokeDrawingAreaCompartmentSink(m_EventsSink);
 	}
 
-	/**
+	
+/**
 	 * UnRegisters from the events dispatcher
 	 */
 	public void unregisterToWorkspaceDispatcher()
@@ -736,7 +777,8 @@ public class EventLoggingAddin
 		}
 	}
 
-	/**
+	
+/**
 	 * Called when the addin is unloaded.
 	 */
 	public long unLoad(Object context)
@@ -744,7 +786,8 @@ public class EventLoggingAddin
 		return 0;
 	}
 
-	/**
+	
+/**
 	 * The version of the addin.
 	 */
 	public String getVersion()
@@ -752,7 +795,8 @@ public class EventLoggingAddin
 		return m_version;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.addinframework.IAddIn#getName()
 	 */
 	public String getName()
@@ -761,7 +805,8 @@ public class EventLoggingAddin
 		return null;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.addinframework.IAddIn#getID()
 	 */
 	public String getID()
@@ -770,7 +815,8 @@ public class EventLoggingAddin
 		return null;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.addinframework.IAddIn#getLocation()
 	 */
 	public String getLocation()
@@ -779,7 +825,8 @@ public class EventLoggingAddin
 		return null;
 	}
 
-	/**
+	
+/**
 	 * Retrieves all the buttons for this add-in.
 	 */
 //	public ETList<IAddInButton> getButtons()
@@ -796,7 +843,8 @@ public class EventLoggingAddin
 //		return retObj;
 //	}
 
-	/**
+	
+/**
 	 * Called when one of the buttons added to the gui has been selected by the user.
 	 */
 //	public long execute(IAddInButton pButton, Frame nParentHWND)
@@ -817,7 +865,8 @@ public class EventLoggingAddin
 		return m_EventsDialog;
 	}
 
-	/**
+	
+/**
 	 * Handles the onupdate coming from the gui.  The addin can set the sensitivity or checked status
 	 * of the button.
 	 */
@@ -842,7 +891,8 @@ public class EventLoggingAddin
 //		return 0;
 //	}
 
-	/**
+	
+/**
 	 * Returns the clsid of this addin.
 	 */
 	public String getProgID()

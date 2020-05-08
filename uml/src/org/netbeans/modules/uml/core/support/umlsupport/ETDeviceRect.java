@@ -50,10 +50,8 @@ import java.awt.Rectangle;
 
 import org.netbeans.modules.uml.core.support.Debug;
 
-/**
- * @author brettb
- *
- */
+
+
 public class ETDeviceRect extends Rectangle implements IETRect
 {
 
@@ -75,7 +73,8 @@ public class ETDeviceRect extends Rectangle implements IETRect
       super( topLeft, dimension );
    }
 
-   /*
+   
+/*
     * This constructor does not assume the direction of the y axis.
     * Instead it sets the vertical values (y & height) from the given inputs
     */
@@ -106,7 +105,8 @@ public class ETDeviceRect extends Rectangle implements IETRect
       height = rect.getIntHeight();
    }
    
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.support.umlsupport.IETRect#getLeft()
     */
    public int getLeft()
@@ -114,7 +114,8 @@ public class ETDeviceRect extends Rectangle implements IETRect
       return x;
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.support.umlsupport.IETRect#setLeft(int)
     */
    public void setLeft(int value)
@@ -122,7 +123,8 @@ public class ETDeviceRect extends Rectangle implements IETRect
       x = value;
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.support.umlsupport.IETRect#getTop()
     */
    public int getTop()
@@ -130,7 +132,8 @@ public class ETDeviceRect extends Rectangle implements IETRect
       return y;
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.support.umlsupport.IETRect#setTop(int)
     */
    public void setTop(int value)
@@ -138,7 +141,8 @@ public class ETDeviceRect extends Rectangle implements IETRect
       y = value;
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.support.umlsupport.IETRect#getRight()
     */
    public int getRight()
@@ -146,7 +150,8 @@ public class ETDeviceRect extends Rectangle implements IETRect
       return x + width;
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.support.umlsupport.IETRect#setRight(int)
     */
    public void setRight(int value)
@@ -155,7 +160,8 @@ public class ETDeviceRect extends Rectangle implements IETRect
       //Debug.assertTrue( width >= 0 );
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.support.umlsupport.IETRect#getBottom()
     */
    public int getBottom()
@@ -164,7 +170,8 @@ public class ETDeviceRect extends Rectangle implements IETRect
       return y + height;
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.support.umlsupport.IETRect#setBottom(int)
     */
    public void setBottom(int value)
@@ -174,7 +181,8 @@ public class ETDeviceRect extends Rectangle implements IETRect
       //Debug.assertTrue( height >= 0 );
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.support.umlsupport.IETRect#setSides(int, int, int, int)
     */
    public void setSides(int nLeft, int nTop, int nRight, int nBottom)
@@ -185,7 +193,8 @@ public class ETDeviceRect extends Rectangle implements IETRect
       setBottom( nBottom );
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.support.umlsupport.IETRect#setCorners(org.netbeans.modules.uml.core.support.umlsupport.IETPoint, org.netbeans.modules.uml.core.support.umlsupport.IETPoint)
     */
    public void setCorners(IETPoint topLeft, IETPoint bottomRight)
@@ -193,7 +202,8 @@ public class ETDeviceRect extends Rectangle implements IETRect
       setSides( topLeft.getX(), topLeft.getY(), bottomRight.getX(), bottomRight.getY() );
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.support.umlsupport.IETRect#isContained(org.netbeans.modules.uml.core.support.umlsupport.IETRect)
     */
    public boolean isContained(IETRect pOtherRect)
@@ -201,7 +211,8 @@ public class ETDeviceRect extends Rectangle implements IETRect
       return contains( pOtherRect );
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.support.umlsupport.IETRect#normalizeRect()
     */
    public void normalizeRect()
@@ -209,7 +220,8 @@ public class ETDeviceRect extends Rectangle implements IETRect
       normalizeRect(true);
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.support.umlsupport.IETRect#normalizeRect(boolean)
     */
    public void normalizeRect(boolean bInvertY)
@@ -236,7 +248,8 @@ public class ETDeviceRect extends Rectangle implements IETRect
       }
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.support.umlsupport.IETRect#unionWith(org.netbeans.modules.uml.core.support.umlsupport.IETRect)
     */
    public void unionWith(IETRect pOtherRect)
@@ -245,7 +258,8 @@ public class ETDeviceRect extends Rectangle implements IETRect
       ((Rectangle)this).union((Rectangle)rect);
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.support.umlsupport.IETRect#intersectWith(org.netbeans.modules.uml.core.support.umlsupport.IETRect)
     */
    public boolean intersectWith(IETRect pOtherRect)
@@ -254,7 +268,8 @@ public class ETDeviceRect extends Rectangle implements IETRect
       return !isEmpty();
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.support.umlsupport.IETRect#doesIntersect(org.netbeans.modules.uml.core.support.umlsupport.IETRect)
     */
    public boolean doesIntersect(IETRect pOtherRect)
@@ -263,7 +278,8 @@ public class ETDeviceRect extends Rectangle implements IETRect
       return ((Rectangle)this).intersects((Rectangle)rect);
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.support.umlsupport.IETRect#contains(org.netbeans.modules.uml.core.support.umlsupport.IETPoint)
     */
    public boolean contains(IETPoint p)
@@ -271,7 +287,8 @@ public class ETDeviceRect extends Rectangle implements IETRect
       return ((Rectangle)this).contains( p.asPoint( ));
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.support.umlsupport.IETRect#contains(org.netbeans.modules.uml.core.support.umlsupport.IETRect)
     */
    public boolean contains(IETRect rectOther)
@@ -280,7 +297,8 @@ public class ETDeviceRect extends Rectangle implements IETRect
       return ((Rectangle)this).contains((Rectangle)rect);
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.support.umlsupport.IETRect#getIntHeight()
     */
    public int getIntHeight()
@@ -288,7 +306,8 @@ public class ETDeviceRect extends Rectangle implements IETRect
       return height;
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.support.umlsupport.IETRect#getIntWidth()
     */
    public int getIntWidth()
@@ -296,7 +315,8 @@ public class ETDeviceRect extends Rectangle implements IETRect
       return width;
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.support.umlsupport.IETRect#getIntX()
     */
    public int getIntX()
@@ -304,7 +324,8 @@ public class ETDeviceRect extends Rectangle implements IETRect
       return x;
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.support.umlsupport.IETRect#getIntY()
     */
    public int getIntY()
@@ -312,7 +333,8 @@ public class ETDeviceRect extends Rectangle implements IETRect
       return y;
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.support.umlsupport.IETRect#inflate(int)
     */
    public void inflate(int size)
@@ -320,7 +342,8 @@ public class ETDeviceRect extends Rectangle implements IETRect
       inflate( size, size );
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.support.umlsupport.IETRect#inflate(int, int)
     */
    public void inflate(int xSize, int ySize)
@@ -331,7 +354,8 @@ public class ETDeviceRect extends Rectangle implements IETRect
       height += (2 * ySize);
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.support.umlsupport.IETRect#getRectangle()
     */
    public Rectangle getRectangle()
@@ -339,7 +363,8 @@ public class ETDeviceRect extends Rectangle implements IETRect
       return this;
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.support.umlsupport.IETRect#getTopLeft()
     */
    public Point getTopLeft()
@@ -347,7 +372,8 @@ public class ETDeviceRect extends Rectangle implements IETRect
       return new Point( getLeft(), getTop() );
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.support.umlsupport.IETRect#getBottomRight()
     */
    public Point getBottomRight()
@@ -355,7 +381,8 @@ public class ETDeviceRect extends Rectangle implements IETRect
       return new Point( getRight(), getBottom() );
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.support.umlsupport.IETRect#getTopRight()
     */
    public Point getTopRight()
@@ -363,7 +390,8 @@ public class ETDeviceRect extends Rectangle implements IETRect
       return new Point( getRight(), getTop() );
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.support.umlsupport.IETRect#getBottomLeft()
     */
    public Point getBottomLeft()
@@ -371,7 +399,8 @@ public class ETDeviceRect extends Rectangle implements IETRect
       return new Point( getLeft(), getBottom() );
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.support.umlsupport.IETRect#getCenterPoint()
     */
    public Point getCenterPoint()
@@ -379,7 +408,8 @@ public class ETDeviceRect extends Rectangle implements IETRect
       return new Point( getLeft() + width/2, getTop() + height/2 );
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.support.umlsupport.IETRect#deflateRect(int, int, int, int)
     */
    public void deflateRect(int left, int top, int right, int bottom)
@@ -390,7 +420,8 @@ public class ETDeviceRect extends Rectangle implements IETRect
       height -= (top + bottom);
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.support.umlsupport.IETRect#deflateRect(int, int)
     */
    public void deflateRect(int dx, int dy)
@@ -398,7 +429,8 @@ public class ETDeviceRect extends Rectangle implements IETRect
       deflateRect( dx, dy, dx, dy );
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.support.umlsupport.IETRect#isZero()
     */
    public boolean isZero()
@@ -406,7 +438,8 @@ public class ETDeviceRect extends Rectangle implements IETRect
       return ((0 == x) && (0 == y) && (0 == width) && (0 == height));
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.support.umlsupport.IETRect#offsetRect(int, int)
     */
    public void offsetRect(int dx, int dy)
@@ -415,7 +448,8 @@ public class ETDeviceRect extends Rectangle implements IETRect
       y += dy;
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.support.umlsupport.IETRect#offsetRect(IETPoint)
     */
    public void offsetRect( Point point )
@@ -423,7 +457,8 @@ public class ETDeviceRect extends Rectangle implements IETRect
       offsetRect( point.x, point.y );
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.support.umlsupport.IETRect#setRectEmpty()
     */
    public void setRectEmpty()

@@ -42,11 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * UMLCoreModule.java
- *
- * Created on March 14, 2005, 7:21 AM
- */
+
+
 
 package org.netbeans.modules.uml;
 

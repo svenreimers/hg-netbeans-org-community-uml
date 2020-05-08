@@ -708,7 +708,8 @@ public class ReportTask extends Thread implements Cancellable
             ITreeDiagram diagram = (ITreeDiagram)treeDiagrams[i];
             pname = diagram.getDiagram().getName();
             link = diagramFileMap.get(diagram.getDiagram().getXMIID());
-            /*
+            
+/*
                 <A HREF="diagram1.html" title="class diagram in javax.swing" target="elementFrame">Class Diagram</A>
                 <BR>
              */
@@ -756,7 +757,8 @@ public class ReportTask extends Thread implements Cancellable
                 continue;
             
             IElement element = ((ITreeItem)items[i]).getData().getModelElement();
-            /*
+            
+/*
             <A HREF="javax/swing/AbstractAction.html" title="class in javax.swing" target="classFrame">AbstractAction</A>
             <BR>
              */
@@ -808,7 +810,8 @@ public class ReportTask extends Thread implements Cancellable
                 if (items[i].getData().getModelElement() instanceof IProject)
                     pname = "&lt;" + NbBundle.getMessage(ReportTask.class,"default_package") + ">"; // NOI18N
                 link = link.substring(0, link.indexOf(HTML_EXT)) + FRAME + HTML_EXT;
-                /* sample html section
+                
+/* sample html section
                 <FONT CLASS="FrameItemFont"><A HREF="java/applet/package-frame.html" target="packageFrame">java.applet</A></FONT>
                 <BR>
                  */
@@ -841,7 +844,8 @@ public class ReportTask extends Thread implements Cancellable
         
         buff = new StringBuilder();
         
-        /*
+        
+/*
             <TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
             <TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
             <TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">

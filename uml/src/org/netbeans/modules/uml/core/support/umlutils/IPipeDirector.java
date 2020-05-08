@@ -46,22 +46,26 @@ package org.netbeans.modules.uml.core.support.umlutils;
 
 public interface IPipeDirector
 {
-	/**
+	
+/**
 	 * Launches an external application and captures output that goes to stdout.
 	*/
 	public long gatherOutput( String arguments );
 
-	/**
+	
+/**
 	 * The directory where the command will be executed.
 	*/
 	public String getDirectory();
 
-	/**
+	
+/**
 	 * The directory where the command will be executed.
 	*/
 	public void setDirectory( String value );
 
-	/**
+	
+/**
 	 * Launches an external application and captures output that goes to stdout as well as the exit code of the application.
 	*/
 	public int gatherOutput2( String arguments, boolean gotExitCode );

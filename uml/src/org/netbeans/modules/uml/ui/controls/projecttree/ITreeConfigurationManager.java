@@ -49,22 +49,26 @@ import org.netbeans.modules.uml.ui.support.contextmenusupport.IProductContextMen
 
 public interface ITreeConfigurationManager
 {
-	/**
+	
+/**
 	 * Tells the configuration manager that it should control the argument tree
 	*/
 	public long attach( IProjectTreeControl pParentControl );
 
-	/**
+	
+/**
 	 * Tells the diagram engine that it should release all references and prepare to be deleted
 	*/
 	public long detach();
 
-	/**
+	
+/**
 	 * Tells the configuration manager to refresh the tree.  Set bForceDeep to TRUE to force a complete delete and restore - otherwise stuff like requirements and vba macros will be preserved.
 	*/
 	public long refresh( boolean bForceDeep );
 
-	/**
+	
+/**
 	 * This is the guy that should sort the project tree context menus
 	*/
 	public IProductContextMenuSorter getContextMenuSorter();

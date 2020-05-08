@@ -56,7 +56,8 @@ import org.openide.util.HelpCtx;
 public class AddElementWizardPanel1 
       implements WizardDescriptor.FinishablePanel, INewUMLFileTemplates {
     
-    /**
+    
+/**
      * The visual component that displays this panel. If you need to access the
      * component from this class, just use getComponent().
      */

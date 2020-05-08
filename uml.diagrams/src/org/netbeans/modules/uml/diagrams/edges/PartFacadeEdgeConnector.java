@@ -53,6 +53,7 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.IPresentationElem
 import org.netbeans.modules.uml.drawingarea.persistence.EdgeWriter;
 import org.netbeans.modules.uml.drawingarea.view.UMLEdgeWidget;
 
+
 /**
  *
  * 

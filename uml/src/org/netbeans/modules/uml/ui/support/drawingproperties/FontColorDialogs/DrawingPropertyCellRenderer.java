@@ -43,6 +43,7 @@
  */
 
 
+
 /*
  * Created on Jun 10, 2003
  *
@@ -79,14 +80,13 @@ import org.netbeans.modules.uml.ui.support.drawingproperties.IColorProperty;
 import org.netbeans.modules.uml.ui.support.drawingproperties.IDrawingProperty;
 import org.netbeans.modules.uml.ui.support.drawingproperties.IFontProperty;
 
-/**
- * @author sumitabhk
- *
- */
+
+
 public class DrawingPropertyCellRenderer extends DefaultTableCellRenderer
 {
 
-	/**
+	
+/**
 	 * 
 	 */
 	public DrawingPropertyCellRenderer()

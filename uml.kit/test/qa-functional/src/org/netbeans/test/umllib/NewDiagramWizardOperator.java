@@ -61,7 +61,8 @@ import org.netbeans.test.umllib.exceptions.NotFoundException;
 public class NewDiagramWizardOperator extends JDialogOperator{
     public final static String TITLE = "Create New Diagram";
     public final static String FINISH_BTN = "Finish";
-    /**
+    
+/**
      * @deprecated ok button was replaced with finish button
      */
     public final static String OK_BTN = FINISH_BTN;
@@ -86,7 +87,8 @@ public class NewDiagramWizardOperator extends JDialogOperator{
     }
     
     
-    /**
+    
+/**
      *
      * @param diagramName
      */
@@ -123,7 +125,8 @@ public class NewDiagramWizardOperator extends JDialogOperator{
         txtName.waitText(diagramName);
     }
     
-    /**
+    
+/**
      * @deprecated ok button was replaced with finish button
      */
     public void clickOK(){
@@ -141,7 +144,8 @@ public class NewDiagramWizardOperator extends JDialogOperator{
     }
     
     
-    /**
+    
+/**
      *
      * @param diagramType
      * @return
@@ -152,7 +156,8 @@ public class NewDiagramWizardOperator extends JDialogOperator{
     }
     
     
-    /**
+    
+/**
      *
      * @param diagramType
      */
@@ -171,7 +176,8 @@ public class NewDiagramWizardOperator extends JDialogOperator{
         typeLst.waitItemSelection(index,true);
     }
     
-    /**
+    
+/**
      *
      * @param path
      */

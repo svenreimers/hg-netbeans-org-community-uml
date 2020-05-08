@@ -48,22 +48,26 @@ import org.netbeans.modules.uml.core.support.umlsupport.IResultCell;
 
 public interface IImportEventsSink
 {
-	/**
+	
+/**
 	 * Fired whenever the a package is about to be imported into another.
 	*/
 	public void onPrePackageImport( IPackage importingPackage, IPackage importedPackage, INamespace owner, IResultCell cell );
 
-	/**
+	
+/**
 	 * Fired whenever a package has been imported into another package.
 	*/
 	public void onPackageImported( IPackageImport packImport, IResultCell cell );
 
-	/**
+	
+/**
 	 * Fired whenever an element is about to be imported into a package.
 	*/
 	public void onPreElementImport( IPackage ImportingPackage, IElement importedElement, INamespace owener, IResultCell cell );
 
-	/**
+	
+/**
 	 * Fired whenever an element was just imported into a package.
 	*/
 	public void onElementImported( IElementImport elImport, IResultCell cell );

@@ -63,10 +63,8 @@ import org.netbeans.modules.uml.ui.swing.pulldownbutton.JPullDownButton;
 import org.netbeans.modules.uml.ui.swing.pulldownbutton.PopupMenuInvoker;
 import org.netbeans.modules.uml.ui.swing.testbed.addin.menu.TestBedMenuManager;
 
-/**
- * 
- * @author Trey Spiva
- */
+
+
 public abstract class ApplicationView extends JPanel
 {
     private String m_Title = "";
@@ -75,7 +73,7 @@ public abstract class ApplicationView extends JPanel
     private String m_Id = "";
     private JToolBar m_ToolBarManager = null;
     
-    // IZ# 78924 - conover: needed to be a panel to left align the toolbar
+    
     //                      wasn't working as a Box for some reason
     // private Box m_ToolComponent = Box.createHorizontalBox();
     private JPanel m_ToolComponent;
@@ -104,7 +102,7 @@ public abstract class ApplicationView extends JPanel
 
     protected void initializeUIBars(JPanel view)
     {
-        // IZ# 78924 - conover: layout the toolbar panel to left align the icons
+        
 
         m_ToolComponent = new JPanel();
         BoxLayout boxlayout = new BoxLayout(m_ToolComponent, BoxLayout.X_AXIS);
@@ -167,7 +165,8 @@ public abstract class ApplicationView extends JPanel
 //      m_ContextMenu = new PopupMenuExtender(id, m_ContextMenuManager, prov, this);      
    }
    
-   /**
+   
+/**
     * This method should be over ridden by any subclass which wants to contribute items to the menu
     * 
     */
@@ -175,7 +174,8 @@ public abstract class ApplicationView extends JPanel
    {
    }
    
-   /**
+   
+/**
     * This method should be overridden by any subclass that wants to remove any items from the context menu.
     * @param manager
     */
@@ -187,7 +187,8 @@ public abstract class ApplicationView extends JPanel
    // Data Access Methods
    //**************************************************
    
-   /**
+   
+/**
     * @return
     */
    public String getTitle()
@@ -195,7 +196,8 @@ public abstract class ApplicationView extends JPanel
       return m_Title;
    }
 
-   /**
+   
+/**
     * @param string
     */
    public void setTitle(String string)
@@ -203,7 +205,8 @@ public abstract class ApplicationView extends JPanel
       m_Title = string;
    }
 
-   /**
+   
+/**
     * @return
     */
    public Icon getIcon()
@@ -211,7 +214,8 @@ public abstract class ApplicationView extends JPanel
       return m_Icon;
    }
 
-   /**
+   
+/**
     * @param icon
     */
    public void setIcon(Icon icon)
@@ -219,7 +223,8 @@ public abstract class ApplicationView extends JPanel
       m_Icon = icon;
    }
 
-   /**
+   
+/**
     * @return
     */
    public String getToolTip()
@@ -227,14 +232,16 @@ public abstract class ApplicationView extends JPanel
       return m_ToolTip;
    }
 
-   /**
+   
+/**
     * @param string
     */
    public void setToolTip(String string)
    {
       m_ToolTip = string;
    }
-   /**
+   
+/**
     * @return
     */
    public String getId()
@@ -242,7 +249,8 @@ public abstract class ApplicationView extends JPanel
       return m_Id;
    }
 
-   /**
+   
+/**
     * @param string
     */
    public void setId(String string)
@@ -259,7 +267,8 @@ public abstract class ApplicationView extends JPanel
          m_View = view;
       }
       
-      /* (non-Javadoc)
+      
+/* (non-Javadoc)
        * @see java.awt.event.MouseListener#mousePressed(java.awt.event.MouseEvent)
        */
       public void mouseReleased(MouseEvent e)
@@ -315,7 +324,8 @@ public abstract class ApplicationView extends JPanel
       }
 
       
-      /* (non-Javadoc)
+      
+/* (non-Javadoc)
        * @see java.awt.event.MouseListener#mousePressed(java.awt.event.MouseEvent)
        */
       public void mousePressed(MouseEvent e)

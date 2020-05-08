@@ -82,7 +82,8 @@ public class FindUtilities
 		super();
 	}
 
-	/**
+	
+/**
 	 * Basic setup of the grid
 	 * @param grid[in]		The grid to hide/show the columns for
 	 */	
@@ -92,7 +93,8 @@ public class FindUtilities
 		// be handled by the FindTableModel
 	}
         
-	/**
+	
+/**
 	 * Determines from preferences what columns to hide/show for find results
 	 * @param tableData[in]		The grid to hide/show the columns for
 	 */
@@ -109,7 +111,8 @@ public class FindUtilities
             return strs;
         }
 	
-	/**
+	
+/**
 	 * Load the combo boxes with the last few selections
 	 *
 	 * @param[in] str       The string to search for in the ini file which determines which string to
@@ -148,7 +151,8 @@ public class FindUtilities
 		}
 	}
 	
-	/**
+	
+/**
 	 * Save the strings entered in the combo boxes for future use
 	 *
 	 * @param[in] str       The string to save to in the ini file
@@ -220,7 +224,8 @@ public class FindUtilities
 		}
 	}
 	
-	/**
+	
+/**
 	 *	Is the passed in string part of the passed in list
 	 * 
 	 *
@@ -245,7 +250,8 @@ public class FindUtilities
 		return inList;
 	}
 	
-	/**
+	
+/**
 	 * Get all of the projects found in the current workspace and populate the list box with their names
 	 *
 	 * @return 
@@ -291,7 +297,8 @@ public class FindUtilities
 		}
 	}
 	
-	/**
+	
+/**
 	 * Called when the grid is clicked on.  This will take the user to the selected element in its diagram, 
 	 * or display a dialog with all of its occurrences.
 	 *
@@ -358,20 +365,15 @@ public class FindUtilities
 		}
 		return results;
 	}
-	/**
-	 * Loads the grid with the elements found from the search
-	 *
-	 * @param[in] results   The results object that houses the information that meets the find criteria
-	 *
-	 * @return HRESULT
-	 *
-	 */
+	
+
 	public static void loadResults(JTable grid, IFindResults pResults)
 	{
 		// not needed, handled in FindTableModel
 	}
 	
-	/**
+	
+/**
 	 * Figure out what project to select in list.  We will select the current project.  If there
 	 * is not a current project, we will select the first one in the list
 	 *
@@ -408,7 +410,8 @@ public class FindUtilities
 		}
 	}
 	
-	/**
+	
+/**
 	 * Set the icon in the grid
 	 * 
 	 *

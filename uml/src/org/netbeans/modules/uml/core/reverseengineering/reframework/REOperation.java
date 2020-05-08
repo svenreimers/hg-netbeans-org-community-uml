@@ -63,7 +63,8 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
  */
 public class REOperation extends REClassFeature implements IREOperation
 {
-    /**
+    
+/**
      * Retrieves the operations parameters
      * @param pVal The parameters.
      */
@@ -84,7 +85,8 @@ public class REOperation extends REClassFeature implements IREOperation
         return coll;
     }
 
-    /**
+    
+/**
      * Specifies if the operation return type is a primitive or an object type.
      *
      * @param *pVal [out] True if primitive, False otherwise.
@@ -95,7 +97,8 @@ public class REOperation extends REClassFeature implements IREOperation
         return par != null && par.getIsPrimitive();
     }
 
-    /**
+    
+/**
      * Specifies if the operation is a constructor of the owner class.
      *
      * @param pVal [out] True if the operationis a constructor.
@@ -106,7 +109,8 @@ public class REOperation extends REClassFeature implements IREOperation
                     getEventData(), "isConstructor");
     }
     
-    /**
+    
+/**
      * Specifies whether the operation must be defined by a descendent. 
      * True indicates that the operation must be defined by a descendent. 
      * False indicates that a descendent is not required to define the operation.
@@ -118,7 +122,8 @@ public class REOperation extends REClassFeature implements IREOperation
                     getEventData(), "isAbstract");
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.IREOperation#clone(java.lang.Object, java.lang.Object)
      */
     public IOperation clone(IClassifier c)
@@ -162,7 +167,8 @@ public class REOperation extends REClassFeature implements IREOperation
         return p;
     }
 
-    /** 
+    
+/** 
      * Return a list of the exceptions that this operation raises
      * 
      * @param pExceptions[out] list of exceptions that this operation raises 
@@ -186,7 +192,8 @@ public class REOperation extends REClassFeature implements IREOperation
         return ret;
     }
 
-    /** 
+    
+/** 
      * Determines if this operation is strictfp (java only)
      */
     public boolean getIsStrictFP()
@@ -194,7 +201,8 @@ public class REOperation extends REClassFeature implements IREOperation
         return XMLManip.getAttributeBooleanValue(getEventData(), "isStrictFP");
     }
 
-    /** 
+    
+/** 
      * Determines if this operation is native
      */
     public boolean getIsNative()
@@ -202,7 +210,8 @@ public class REOperation extends REClassFeature implements IREOperation
         return XMLManip.getAttributeBooleanValue(getEventData(), "isNative");
     }
 
-    /** 
+    
+/** 
      * Determines the concurrency of this operation
      */
     public int getConcurrency()
@@ -216,7 +225,8 @@ public class REOperation extends REClassFeature implements IREOperation
             return BaseElement.CCK_SEQUENTIAL;
     }
 
-    /**
+    
+/**
      * Retrieves the type of the class feature.  Example the type of a 
      * attribute or the return type of a operation.
      * @param pVal The features type.

@@ -44,6 +44,7 @@
 
 
 
+
 /*
  * Created on Sep 25, 2003
  *
@@ -54,10 +55,8 @@ import org.netbeans.modules.uml.core.AbstractUMLTestCase;
 import java.util.Iterator;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.FactoryRetriever;
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ISignal;
-import org.netbeans.modules.uml.core.support.umlutils.ETList;/**
- * @author aztec
- *
- */
+import org.netbeans.modules.uml.core.support.umlutils.ETList;
+
 public class JumpHandlerTestCase extends AbstractUMLTestCase
 {
 	private IJumpHandler jumpHandler = null;

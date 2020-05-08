@@ -49,10 +49,8 @@ package org.netbeans.modules.uml.ui.controls.newdialog;
 import javax.swing.Icon;
 import javax.swing.JPanel;
 
-/**
- * @author sumitabhk
- *
- */
+
+
 public interface INewDialogUI
 {
 	public JPanel nextButtonClicked();

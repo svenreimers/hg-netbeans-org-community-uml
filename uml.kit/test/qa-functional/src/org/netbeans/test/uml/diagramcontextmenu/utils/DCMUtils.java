@@ -58,9 +58,8 @@ import org.netbeans.jemmy.operators.*;
 import org.netbeans.test.umllib.*;
 import org.netbeans.test.umllib.util.PopupConstants;
 
-/**
- * @author yaa
- */
+
+
 public class DCMUtils {
     
     public DCMUtils() {

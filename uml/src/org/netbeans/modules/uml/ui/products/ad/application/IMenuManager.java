@@ -56,7 +56,8 @@ import org.netbeans.modules.uml.ui.swing.testbed.addin.menu.Separator;
 public interface IMenuManager extends IContributionManager
 {
 
-   /**
+   
+/**
    * Adds a menu listener to this menu.
    * Has no effect if an identical listener is already registered.
    *
@@ -64,7 +65,8 @@ public interface IMenuManager extends IContributionManager
    */
    //public void addMenuListener(IMenuListener listener);
     
-       /**
+       
+/**
     * Finds the contribution item with the given id.
     *
     * @param id the contribution item id
@@ -72,13 +74,15 @@ public interface IMenuManager extends IContributionManager
     *   no item with the given id can be found
     */
    public Object find(String id);
-   /**
+   
+/**
     * Returns all contribution items known to this manager.
     *
     * @return a list of contribution items
     */
    public Object[] getItems();
-   /**
+   
+/**
     * Finds the manager for the menu at the given path. A path
     * consists of contribution item ids separated by the separator 
     * character.  The path separator character is <code>'/'</code>.
@@ -93,7 +97,8 @@ public interface IMenuManager extends IContributionManager
     *   not have an associated menu manager
     */
    public IMenuManager findMenuUsingPath(String path);
-   /**
+   
+/**
     * Finds the contribution item at the given path. A path
     * consists of contribution item ids separated by the separator 
     * character. The path separator character is <code>'/'</code>.
@@ -104,35 +109,40 @@ public interface IMenuManager extends IContributionManager
     */
 //   public IContributionItem findUsingPath(String path);
    public Object findUsingPath(String path);
-   /**
+   
+/**
     * Returns whether all items should be removed when the menu is first shown,
     * but before notifying menu listeners.  The default is <code>false</code>.
     *
     * @return <code>true</code> if all items should be removed when shown, <code>false</code> if not 
     */
    public boolean getRemoveAllWhenShown();
-   /**
+   
+/**
     * Returns whether this menu should be enabled or not.
     *
     * @return <code>true</code> if enabled, and
     *   <code>false</code> if disabled
     */
    public boolean isEnabled();
-   /**
+   
+/**
     * Removes the given menu listener from this menu.
     * Has no effect if an identical listener is not registered.
     *
     * @param listener the menu listener
     */
    //public void removeMenuListener(IMenuListener listener);
-   /**
+   
+/**
     * Sets whether all items should be removed when the menu is first shown,
     * but before notifying menu listeners.
     *
     * @param removeAll <code>true</code> if all items should be removed when shown, <code>false</code> if not 
     */
    public void setRemoveAllWhenShown(boolean removeAll);
-   /**
+   
+/**
     * Incrementally builds the menu from the contribution items, and
     * does so recursively for all submenus.
     *
@@ -141,7 +151,8 @@ public interface IMenuManager extends IContributionManager
     */
    public void updateAll(boolean force);
    
-   /**
+   
+/**
     * @param label
     * @param id
     * @return
@@ -154,7 +165,8 @@ public interface IMenuManager extends IContributionManager
 	public void setContextObject(Object obj);
 	public Object getContextObject();
         
-        /**
+        
+/**
     * Removes and returns the contribution item with the given id from this manager.  
     * Returns <code>null</code> if this manager has no contribution items
     * with the given id.
@@ -163,7 +175,8 @@ public interface IMenuManager extends IContributionManager
     * @return the item that was found and removed, or <code>null</code> if none
     */
    public Object remove(String id);
-   /**
+   
+/**
     * Removes the given contribution item from the contribution items
     * known to this manager.
     *

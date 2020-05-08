@@ -43,11 +43,8 @@
  */
 
 
-/*
- * DevelopingApplications.java
- *
- * Created on January 27, 2006, 12:20 PM
- */
+
+
 
 package org.netbeans.test.uml.tutorial.developapp;
 
@@ -72,10 +69,8 @@ import org.netbeans.test.umllib.values.operatons.OperationElement;
 import org.netbeans.jellytools.nodes.Node;
 import org.netbeans.test.umllib.values.Argument;
 
-/**
- *
- * @author Alexandr Scherbatiy
- */
+
+
 
 
 public class DevelopingApplication extends UMLTestCase {

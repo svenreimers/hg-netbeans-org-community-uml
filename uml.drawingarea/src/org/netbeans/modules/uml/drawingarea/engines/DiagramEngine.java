@@ -111,10 +111,8 @@ import org.openide.util.Lookup;
 import org.openide.util.NbBundle;
 import org.openide.util.Utilities;
 
-/**
- *
- * @author sp153251
- */
+
+
 abstract public class DiagramEngine {
     //
     public static final BasicStroke ALIGN_STROKE = new BasicStroke (1.0f, 
@@ -155,7 +153,8 @@ abstract public class DiagramEngine {
     {
         return tc;
     }
-    /**
+    
+/**
      * Add set of actions to scene 
      */
     public void setActions(DesignerScene scene)
@@ -200,27 +199,33 @@ abstract public class DiagramEngine {
         readOnly.addAction(ActionFactory.createPopupMenuAction(menuProvider));
         readOnly.addAction(ActionFactory.createCycleFocusAction(new CycleObjectSceneSelectProvider()));
     }
-    /**
+    
+/**
      * Add set of coomon actions to edges except scene, maty be specific to edge type 
      */
     abstract public void setActions(ConnectionWidget widget,IPresentationElement node);
-    /**
+    
+/**
      * Add set of coomon actions to all widgets except scene and edges, maty be specific to widget type 
      */
     abstract public void setActions(Widget widget,IPresentationElement node);
-    /**
+    
+/**
      * Add listener of selections to show context  palette
      */
     abstract public void setSelectionManager(DesignerScene scene);
-    /**
+    
+/**
      * 
      */
     abstract public Layout getDefaultLayout();
-    /**
+    
+/**
      * Create widget linket to presentation element
      */
     abstract public Widget createWidget(IPresentationElement node);
-    /**
+    
+/**
      * Adds widget with corresponding presentation element to the scene at suggested point (may place in corrected point)
      **/
     abstract public Widget addWidget(IPresentationElement presentation,Point point);
@@ -228,22 +233,26 @@ abstract public class DiagramEngine {
      * Show if it's possible to drop presentation element, if element requires transformation??? tbd deside
      */
     abstract public boolean isDropPossible(IPresentationElement node);
-    /**
+    
+/**
      * Show if it's possible to drop model element, cover both cases drop as is and with appropriate transform
      */
     abstract public boolean isDropPossible(INamedElement node);
-    /**
+    
+/**
      * process model element and return new element if element should be changed for example from class to lifeline
      */
     abstract public INamedElement processDrop(INamedElement elementToDrop);
     
-    /**
+    
+/**
      * Retreives the relationship discovery component used to build relationships
      * between nodes.
      */
     abstract public RelationshipDiscovery getRelationshipDiscovery();
         
-    /**
+    
+/**
      * Called after objects have been dropped onto the diagram perform
      * relationship discovery.
      *
@@ -282,7 +291,8 @@ abstract public class DiagramEngine {
         }
     } 
     
-    /**
+    
+/**
      * Retrieves the edge router to use when creating new edges.
      * 
      * @param layers The layers that can contain connection widgets.
@@ -365,7 +375,7 @@ abstract public class DiagramEngine {
         JButton syncButton = new JButton (new SyncDiagramAction(getScene()));
         JButton exportImageButton = new JButton (new ExportImageAction(getScene()));
         JButton hierarchicalLayoutButton = new JButton (new HierarchicalLayoutAction(getScene()));
-        //Kris - out until layout is better
+        
         //JButton orthogonalLayoutButton = new JButton (new OrthogonalLayoutAction(getScene()));
         
         bar.add(selectToolButton);
@@ -396,13 +406,15 @@ abstract public class DiagramEngine {
         //bar.add(orthogonalLayoutButton) ;
     }
     
-    /**
+    
+/**
      * Create a connection widget for a specific presentation element.  The
      * resulting connection widget will have the preferred edge router set as well.
      */
     abstract public ConnectionWidget createConnectionWidget(DesignerScene scene, IPresentationElement node);
     
-    /**
+    
+/**
      * 
      * @param key
      * @return
@@ -412,7 +424,8 @@ abstract public class DiagramEngine {
         return diagramSettings.get(key);
     }
     
-    /**
+    
+/**
      * 
      * @param key
      * @param value
@@ -573,7 +586,8 @@ abstract public class DiagramEngine {
         return name.replaceAll(" ", "");
     }
     
-    /**
+    
+/**
      * Retrieves the RelationshipFactory for a model element the.  The 
      * relationship factory is used to control a relationships lifecycle.
      * 

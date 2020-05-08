@@ -49,9 +49,8 @@ import org.netbeans.modules.uml.core.roundtripframework.IChangeRequest;
 import org.netbeans.modules.uml.core.support.umlutils.ETArrayList;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
-/**
- * @author Aztec
- */
+
+
 public class RequestValidator implements IRequestValidator
 {
     IChangeRequest m_Request;
@@ -74,7 +73,8 @@ public class RequestValidator implements IRequestValidator
         m_Valid = true;
     }    
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpccomponent.IRequestValidator#addRequest(org.netbeans.modules.uml.core.roundtripframework.IChangeRequest)
      */
     public void addRequest(IChangeRequest request)
@@ -85,7 +85,8 @@ public class RequestValidator implements IRequestValidator
         }
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpccomponent.IRequestValidator#appendRequests()
      */
     public ETList<IChangeRequest> appendRequests(ETList <IChangeRequest> requests)
@@ -106,7 +107,8 @@ public class RequestValidator implements IRequestValidator
         return requests;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpccomponent.IRequestValidator#getRequest()
      */
     public IChangeRequest getRequest()
@@ -114,7 +116,8 @@ public class RequestValidator implements IRequestValidator
         return m_Request;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpccomponent.IRequestValidator#getValid()
      */
     public boolean getValid()
@@ -122,7 +125,8 @@ public class RequestValidator implements IRequestValidator
         return m_Valid;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpccomponent.IRequestValidator#setValid(boolean)
      */
     public void setValid(boolean valid)

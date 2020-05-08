@@ -23,10 +23,8 @@ package org.netbeans.modules.uml.ui.controls.doccontrol;
 
 import org.netbeans.modules.uml.core.support.umlsupport.StringUtilities;
 
-/**
- * @author sumitabhk
- *
- */
+
+
 public class DocUtils
 {
 
@@ -38,7 +36,8 @@ public class DocUtils
 		super();
 	}
 
-	/**
+	
+/**
 	 *
 	 * ConvertToTags converts '\n' in string to <BR> and "\n\n" to temporary <P>,
 	 *	and strips carriage returns.

@@ -42,6 +42,7 @@
  * made subject to such option by the copyright holder.
  */
 
+
 /*
  * Created on Nov 5, 2003
  *
@@ -52,10 +53,8 @@ import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier;
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.INavigableEnd;
 
-/**
- * @author aztec
- *
- */
+
+
 public interface IJavaAttributeChangeHandler extends IJavaChangeHandler
 {
 	public void handleRequest(IRequestValidator request);

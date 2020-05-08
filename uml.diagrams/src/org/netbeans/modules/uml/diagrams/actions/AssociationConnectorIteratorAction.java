@@ -55,10 +55,8 @@ import org.netbeans.modules.uml.drawingarea.LabelManager;
 import org.netbeans.modules.uml.drawingarea.actions.Selectable;
 import org.netbeans.modules.uml.drawingarea.view.DesignerScene;
 
-/**
- *
- * @author jyothi
- */
+
+
 public class AssociationConnectorIteratorAction extends WidgetAction.Adapter 
 {
     DesignerScene scene;

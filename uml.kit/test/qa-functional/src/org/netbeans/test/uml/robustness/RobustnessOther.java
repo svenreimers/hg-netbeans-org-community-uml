@@ -69,11 +69,8 @@ import org.netbeans.test.umllib.testcases.UMLTestCase;
 import org.netbeans.test.umllib.util.LabelsAndTitles;
 import org.netbeans.test.umllib.vrf.GenericVerifier;
 
-/**
- *
- * @author yaa
- * @spec uml/UMLRobustness.xml
- */
+
+
 public class RobustnessOther extends UMLTestCase {
     private static String prName = "UMLProject4";
     private static String cldName1 = "DClass1";

@@ -60,7 +60,8 @@ public class TestArtifactEventsListener extends ArtifactEventsSinkAdapter
         ArtifactTestCase.callingModified = true;
     }
     
-    /**
+    
+/**
      * Fired whenever the passed in Artifact's contents are about to become dirty.
      */
     public void onPreDirty( IArtifact pArtifact, IResultCell cell )
@@ -68,7 +69,8 @@ public class TestArtifactEventsListener extends ArtifactEventsSinkAdapter
         SourceFileArtifactTestCase.firePreDirtyCalled = true;
     }
     
-    /**
+    
+/**
      * Fired whenever the passed in Artifact's contents are dirty.
      */
     public void onDirty( IArtifact pArtifact, IResultCell cell )

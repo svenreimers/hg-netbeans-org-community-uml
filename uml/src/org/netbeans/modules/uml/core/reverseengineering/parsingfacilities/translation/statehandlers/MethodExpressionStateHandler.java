@@ -43,11 +43,8 @@
  */
 
 
-/*
- * File       : MethodExpressionStateHandler.java
- * Created on : Dec 12, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.statehandlers;
 
 import org.dom4j.Node;
@@ -62,9 +59,8 @@ import org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.transl
 import org.netbeans.modules.uml.core.reverseengineering.reframework.IREClass;
 import org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ITokenDescriptor;
 
-/**
- * @author Aztec
- */
+
+
 public class MethodExpressionStateHandler extends MethodDetailStateHandler
 {
     private Expression m_Expression = new Expression();

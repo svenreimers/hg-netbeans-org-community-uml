@@ -49,10 +49,8 @@ import org.netbeans.modules.uml.core.metamodel.common.commonactivities.IObjectNo
 import org.netbeans.modules.uml.core.metamodel.core.foundation.IElement;
 import org.openide.util.NbBundle;
 
-/**
- *
- * @author Sheryl
- */
+
+
 public class ObjectNodeData extends ActivityNodeData
 {
     private IObjectNode element;

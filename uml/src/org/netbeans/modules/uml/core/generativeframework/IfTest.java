@@ -42,21 +42,18 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : IfTest.java
- * Created on : Oct 30, 2003
- * Author     : aztec
- */
+
+
 package org.netbeans.modules.uml.core.generativeframework;
 
-/**
- * @author aztec
- */
+
+
 public class IfTest implements IIfTest
 {
     private String m_Test, m_Action;
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.generativeframework.IIfTest#getTest()
      */
     public String getTest()
@@ -64,7 +61,8 @@ public class IfTest implements IIfTest
         return m_Test;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.generativeframework.IIfTest#setTest(java.lang.String)
      */
     public void setTest(String testName)
@@ -72,7 +70,8 @@ public class IfTest implements IIfTest
         m_Test = testName;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.generativeframework.IIfTest#getResultAction()
      */
     public String getResultAction()
@@ -80,7 +79,8 @@ public class IfTest implements IIfTest
         return m_Action;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.generativeframework.IIfTest#setResultAction(java.lang.String)
      */
     public void setResultAction(String varOrTemplateName)

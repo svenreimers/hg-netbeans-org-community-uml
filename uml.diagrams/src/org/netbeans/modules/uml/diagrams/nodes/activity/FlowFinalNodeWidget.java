@@ -50,10 +50,8 @@ import org.netbeans.modules.uml.diagrams.nodes.OvalWidget;
 import org.netbeans.modules.uml.drawingarea.view.ResourceType;
 
 
-/**
- *
- * @author thuy
- */
+
+
 public class FlowFinalNodeWidget extends ControlNodeWidget
 {    
     public FlowFinalNodeWidget(Scene scene, String path)

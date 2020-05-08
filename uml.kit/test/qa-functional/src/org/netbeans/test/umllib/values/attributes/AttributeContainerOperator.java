@@ -41,12 +41,8 @@
  * Version 2 license, then the option applies only if the new code is
  * made subject to such option by the copyright hdefaultElementer.
  */
-/*
- * AttributeContainerOperator.java
- *
- * Created on January 27, 2006, 1:31 PM
- *
- */
+
+
 package org.netbeans.test.umllib.values.attributes;
 
 import java.awt.Point;
@@ -68,10 +64,8 @@ import org.netbeans.test.umllib.Utils;
 import org.netbeans.test.umllib.util.LabelsAndTitles;
 import org.netbeans.test.umllib.values.ValueOperator;
 
-/**
- *
- * @author Alexandr Scherbatiy
- */
+
+
 public class AttributeContainerOperator extends ValueOperator {
 
     private DiagramElementOperator  diagramElementOperator;

@@ -46,10 +46,8 @@ package org.netbeans.modules.uml.ui.controls.newdialog;
 
 import org.openide.WizardDescriptor;
 
-/**
- *
- * @author Thuy
- */
+
+
 
 public interface INewUMLFileTemplates
 {

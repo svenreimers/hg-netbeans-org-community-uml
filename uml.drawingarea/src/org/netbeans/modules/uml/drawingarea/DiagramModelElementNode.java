@@ -56,10 +56,8 @@ import org.openide.nodes.Children;
 import org.openide.util.lookup.AbstractLookup;
 import org.openide.util.lookup.InstanceContent;
 
-/**
- *
- * @author treyspiva
- */
+
+
 public class DiagramModelElementNode extends UMLModelElementNode
 {
 

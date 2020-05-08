@@ -43,7 +43,8 @@
  */
 
 
- /*
+ 
+/*
  * LinkOperator.java
  *
  * Created on February 15, 2005, 6:42 PM
@@ -84,11 +85,8 @@ import org.netbeans.modules.uml.drawingarea.view.UMLLabelWidget;
 import org.netbeans.test.umllib.actions.Actionable;
 import org.netbeans.test.umllib.exceptions.NotFoundException;
 
-/**
- * This is operator for a link beween diagram elements.
- * Using it you can perform various operations on link.
- * @author Alexei Mokeev, Sherry Zhou
- */
+
+
 public class LinkOperator implements Actionable{
     private Widget edge = null;
     private Widget to = null;
@@ -110,7 +108,8 @@ public class LinkOperator implements Actionable{
         Timeouts.initDefault("LinkOperator.WaitLinkTime", WAIT_LINK_TIMEOUT);
     }
     
-    /**
+    
+/**
      * 
      * @param diagram 
      * @param edge 
@@ -124,7 +123,8 @@ public class LinkOperator implements Actionable{
     }
     
    
-    /**
+    
+/**
      * Creates a new instance of LinkOperator
      * @param source 
      * @param destination 
@@ -137,7 +137,8 @@ public class LinkOperator implements Actionable{
         
     }
     
-    /**
+    
+/**
      * 
      * @param source 
      * @param destination 
@@ -148,7 +149,8 @@ public class LinkOperator implements Actionable{
         this(source, destination, linkType, 0);
     }
     
-    /**
+    
+/**
      * 
      * @param source 
      * @param destination 
@@ -159,7 +161,8 @@ public class LinkOperator implements Actionable{
     }
     
     
-    /**
+    
+/**
      * 
      * @return 
      */
@@ -169,7 +172,8 @@ public class LinkOperator implements Actionable{
     
    
     //Methods from Actionable interface
-    /**
+    
+/**
      * 
      * @return 
      */
@@ -193,14 +197,15 @@ public class LinkOperator implements Actionable{
     
     
     
-    /**
+    
+/**
      * gets point that belongs to a link and centers on it.
      * The updated device point is returned
      * @param point 
      * @return 
      */
     public Point makeVisible(Point point){
-        //TODO: wait for trey's center api
+        
 // 6.0       ADGraphWindow area = diagramOperator.getDrawingArea().getArea();
 //        IDrawingAreaControl daControl = area.getDrawingArea();
 //        
@@ -223,13 +228,14 @@ public class LinkOperator implements Actionable{
     }
     
     
-    /**
+    
+/**
      *
      * @param selectIt
      * @param deselectOthers
      */
     public void center(boolean selectIt, boolean deselectOthers) {
-        // TODO: Wait for Trey's api
+        
 //6.0        ADGraphWindow area = diagramOperator.getDrawingArea().getArea();
 //6.0        area.getDrawingArea().centerPresentationElement(edge.getPresentationElement(), selectIt, deselectOthers);
     }
@@ -286,7 +292,8 @@ public class LinkOperator implements Actionable{
         new Timeout("",50).sleep();
     }
     
-    /**
+    
+/**
      * 
      * @return 
      */
@@ -294,7 +301,8 @@ public class LinkOperator implements Actionable{
         return edge;
     }
     
-     /*
+     
+/*
      *  Find edge's source widget
      */
     public static Widget getToNode(Widget edge) {
@@ -304,7 +312,8 @@ public class LinkOperator implements Actionable{
         return scene.findWidget(sourcePre);
     }
     
-    /*
+    
+/*
      *  Find edge's target nodet
      */
     public static Widget getFromNode(Widget edge) {
@@ -316,7 +325,8 @@ public class LinkOperator implements Actionable{
     
        
     
-    /**
+    
+/**
      * 
      * @return current edge's target node
      */
@@ -324,7 +334,8 @@ public class LinkOperator implements Actionable{
         return to;
     }
     
-    /**
+    
+/**
      * 
      * @return current edge's source node
      */
@@ -332,7 +343,8 @@ public class LinkOperator implements Actionable{
         return from;
     }
     
-    /**
+    
+/**
      * 
      * @return 
      */
@@ -343,7 +355,8 @@ public class LinkOperator implements Actionable{
            return false;
     }
     
-    /**
+    
+/**
      * 
      * @return 
      */
@@ -352,7 +365,8 @@ public class LinkOperator implements Actionable{
          
     }
     
-    /**
+    
+/**
      * 
      * @return 
      */
@@ -361,7 +375,8 @@ public class LinkOperator implements Actionable{
          return edgeOpr.getElementType();
         }
     
-    /**
+    
+/**
      * 
      * @return 
      */
@@ -378,7 +393,8 @@ public class LinkOperator implements Actionable{
     }
     
         
-    /**
+    
+/**
      *
      *@return 
      */
@@ -396,7 +412,8 @@ public class LinkOperator implements Actionable{
     }
     
     
-    /**
+    
+/**
      * 
      * @param text 
      * @param index 
@@ -416,7 +433,8 @@ public class LinkOperator implements Actionable{
        }
        return null;
    }
-    /**
+    
+/**
      * 
      * @param text 
      * @param index 
@@ -425,7 +443,8 @@ public class LinkOperator implements Actionable{
     public DiagramLabelOperator getLabel(String text,int index){
         return getLabel(text,index,false,false);
     }
-    /**
+    
+/**
      * 
      * @param text 
      * @return 
@@ -434,19 +453,21 @@ public class LinkOperator implements Actionable{
         return getLabel(text,0);
     }
     
-    /**
+    
+/**
      * 
      * @return 
      */
     private Point getPointForClick() {
         return getPointForClick(true);
     }
-    /**
+    
+/**
      * find point and avoid click on labels
      * @return 
      */
     private Point getPointForClick(boolean findEmptyPoint) {
-         //TODO: Wait for Trey on getSourceClippingPoint and getTargetClippingPoint()
+         
         //6.0
 //        TSConstPoint fromPoint =((ETEdge)edge).getSourceClippingPoint();
 //        TSConstPoint toPoint =((ETEdge)edge).getTargetClippingPoint();
@@ -480,7 +501,8 @@ public class LinkOperator implements Actionable{
         return null;
     }
     
-    /**
+    
+/**
      * 
      * @return Point close to link center of close to last section center
      */
@@ -488,7 +510,8 @@ public class LinkOperator implements Actionable{
     {
         return getPointForClick();
     }
-    /**
+    
+/**
      * 
      * @return Point close to link center of close to last section center
      */
@@ -497,7 +520,8 @@ public class LinkOperator implements Actionable{
         return getPointForClick(false);
     }
     
-    /**
+    
+/**
      *
      * @return Point close to Target clipping point (with about 5points shift from the edge)
      */
@@ -505,14 +529,15 @@ public class LinkOperator implements Actionable{
     {
        return getNearTargetPoint(5);
     }
-    /**
+    
+/**
      * @param edgeShift - shift in local point from edge
      * @return Point close to Target clipping point (with about edgeShift points shift from the edge)
      */
     public Point getNearTargetPoint(int edgeShift)
     {
      
-         //TODO: Wait for Trey on getSourceClippingPoint and getTargetClippingPoint()
+         
         //TSConstPoint fromPoint =((ETEdge)edge).getSourceClippingPoint();
 //        TSConstPoint toPoint =((ETEdge)edge).getTargetClippingPoint();
 //        List bendPoints = ((ETEdge)edge).bendPoints();
@@ -532,7 +557,8 @@ public class LinkOperator implements Actionable{
 //6.0       return tmp; 
          return new Point(10,10);
     }
-    /**
+    
+/**
      *
      * @return Point close to Source clipping point (with about 5points shift from the edge)
      */
@@ -540,13 +566,14 @@ public class LinkOperator implements Actionable{
     {
         return getNearSourcePoint(5);
     }
-     /**
+     
+/**
      * @param edgeShift - shift in local point from edge
      * @return Point close to Target clipping point (with about edgeShift points shift from the edge)
      */
    public Point getNearSourcePoint(int edgeShift)
     {
-       //TODO: Wait for Trey on getSourceClippingPoint and getTargetClippingPoint()
+       
 //        TSConstPoint fromPoint =((ETEdge)edge).getSourceClippingPoint();
 //        TSConstPoint toPoint =((ETEdge)edge).getTargetClippingPoint();
 //        List bendPoints = ((ETEdge)edge).bendPoints();
@@ -567,7 +594,8 @@ public class LinkOperator implements Actionable{
        return null;
     }
     
-    /**
+    
+/**
      * 
      * @param obj 
      * @return 
@@ -581,7 +609,8 @@ public class LinkOperator implements Actionable{
             return false;
         }
     }
-    /**
+    
+/**
      * 
      * @param source 
      * @param destination 
@@ -593,7 +622,8 @@ public class LinkOperator implements Actionable{
     }
     
     
-    /**
+    
+/**
      * 
      * @return 
      * @param linkType 
@@ -619,7 +649,8 @@ public class LinkOperator implements Actionable{
         return waitForLink(source, destination, new LinkByTypeChooser(linkType), 0, w);
     }
     
-    /**
+    
+/**
      * 
      * @param source 
      * @param destination 
@@ -631,7 +662,8 @@ public class LinkOperator implements Actionable{
         return waitForLink(source, destination, new LinkByTypeChooser(linkType), 0);
     }
     
-    /**
+    
+/**
      * 
      * @param source 
      * @param destination 
@@ -643,7 +675,8 @@ public class LinkOperator implements Actionable{
     public static LinkOperator waitForLink(final DiagramElementOperator source, final DiagramElementOperator destination, LinkTypes linkType, int index)  throws NotFoundException {
         return waitForLink(source, destination, new LinkByTypeChooser(linkType), index);
     }
-    /**
+    
+/**
      * 
      * @param source 
      * @param destination 
@@ -655,7 +688,8 @@ public class LinkOperator implements Actionable{
         return waitForLink(source, destination, linkChooser, 0);
     }
     
-    /**
+    
+/**
      * 
      * @param source 
      * @param destination 
@@ -686,7 +720,8 @@ public class LinkOperator implements Actionable{
     }
     
     
-    /**
+    
+/**
      * 
      * @return 
      */
@@ -694,7 +729,8 @@ public class LinkOperator implements Actionable{
         return edgeOpr.isSelected();
     }
         
-    /**
+    
+/**
      * 
      * @return 
      */
@@ -702,7 +738,8 @@ public class LinkOperator implements Actionable{
     {
         return edgeOpr.getName();
     
-        /*String ret=null;
+        
+/*String ret=null;
         ETList<IETLabel> lbls= edge.getLabels();
         for(int i=0;lbls!=null && i<lbls.size();i++)
         {
@@ -723,7 +760,8 @@ public class LinkOperator implements Actionable{
 //        boolean isName=kind==TSLabelKind.TSLK_ACTIVITYEDGE_NAME;
 //        isName=isName || kind==TSLabelKind.TSLK_ASSOCIATION_NAME;
 //6.0        isName=isName || kind==TSLabelKind.TSLK_NAME;
-        /*isName=isName || kind==TSLabelKind.;
+        
+/*isName=isName || kind==TSLabelKind.;
         isName=isName || kind==TSLabelKind.;
         isName=isName || kind==TSLabelKind.;
         isName=isName || kind==TSLabelKind.;
@@ -737,7 +775,8 @@ public class LinkOperator implements Actionable{
 
     }
     
-    /**
+    
+/**
      * 
      * @return 
      * @param w 
@@ -764,7 +803,8 @@ public class LinkOperator implements Actionable{
     
     
     
-    /**
+    
+/**
      * find link with certain order (i.e. from source to destination)
      * @param source 
      * @param destination 
@@ -828,7 +868,8 @@ public class LinkOperator implements Actionable{
         private Widget to = null;
         private String linkType = null;
         
-        /**
+        
+/**
          * 
          * @param from 
          * @param to 
@@ -837,7 +878,8 @@ public class LinkOperator implements Actionable{
             this(from,to,LinkTypes.ANY);
         }
         
-        /**
+        
+/**
          * 
          * @param from 
          * @param to 
@@ -850,7 +892,8 @@ public class LinkOperator implements Actionable{
         }
         
         
-        /**
+        
+/**
          * 
          * @param edge 
          * @return 
@@ -881,7 +924,8 @@ public class LinkOperator implements Actionable{
             }
       
         
-        /**
+        
+/**
          * 
          * @return 
          */
@@ -905,7 +949,8 @@ public class LinkOperator implements Actionable{
         private String linkType = null;
         
         
-        /**
+        
+/**
          * 
          * @param linkType 
          */
@@ -914,7 +959,8 @@ public class LinkOperator implements Actionable{
         }
         
         
-        /**
+        
+/**
          * 
          * @param edge 
          * @return 
@@ -943,7 +989,8 @@ public class LinkOperator implements Actionable{
         }
         
         
-        /**
+        
+/**
          * 
          * @return 
          */
@@ -956,7 +1003,8 @@ public class LinkOperator implements Actionable{
     
     
     public static class LinkComparator<C extends LinkOperator> implements Comparator<C>{
-        /**
+        
+/**
          * 
          * @param o1 
          * @param o2 

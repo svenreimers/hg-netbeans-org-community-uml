@@ -46,22 +46,26 @@ package org.netbeans.modules.uml.core.reverseengineering.reframework;
 
 public interface IREAttribute extends IREClassFeature, IREHasMultiplicity
 {
-	/**
+	
+/**
 	 * Specifies an expression that is used to specify the initial value of the attribute.
 	*/
 	public String getInitialValue();
 
-	/**
+	
+/**
 	 * Specifies if the attribute is a primitive attribute or an object instance.
 	*/
 	public boolean getIsPrimitive();
 
-	/**
+	
+/**
 	 * The volatility state of this feature. Most applicable to the C/C++ languages.
 	*/
 	public boolean getIsVolatile();
 
-	/**
+	
+/**
 	 * Determines whether or not this feature persists or not.
 	*/
 	public boolean getIsTransient();

@@ -43,6 +43,7 @@
  */
 
 
+
 /*
  * ModifierType.java
  *
@@ -54,10 +55,8 @@
 
 package org.netbeans.test.umllib.project.elem;
 
-/**
- *
- * @author sunflower
- */
+
+
 public enum ModifierType {
     
     STATIC("static"),

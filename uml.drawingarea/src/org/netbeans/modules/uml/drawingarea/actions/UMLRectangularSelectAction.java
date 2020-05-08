@@ -54,12 +54,8 @@ import org.netbeans.api.visual.widget.LayerWidget;
 import org.netbeans.api.visual.widget.Widget;
 import org.netbeans.modules.uml.drawingarea.ZoomManager;
 
-/**
- *
- * @author Sheryl Su
- * this class is copied from graph library with slight modification in mouse pressed logic to detect
- * max zoom factor
- */
+
+
 public class UMLRectangularSelectAction extends WidgetAction.LockedAdapter {
 
     private RectangularSelectDecorator decorator;

@@ -52,10 +52,8 @@ import java.awt.datatransfer.Transferable;
 import java.awt.datatransfer.UnsupportedFlavorException;
 import java.io.IOException;
 
-/**
- *
- * @author Trey Spiva
- */
+
+
 public class ImageTransferable implements Transferable
 {
    private Image mImage = null;
@@ -69,7 +67,8 @@ public class ImageTransferable implements Transferable
       setImage(image);
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see java.awt.datatransfer.Transferable#getTransferDataFlavors()
     */
    public DataFlavor[] getTransferDataFlavors()
@@ -94,7 +93,8 @@ public class ImageTransferable implements Transferable
       return getImage();
    }
 
-   /**
+   
+/**
     * @return
     */
    public Image getImage()
@@ -102,7 +102,8 @@ public class ImageTransferable implements Transferable
       return mImage;
    }
 
-   /**
+   
+/**
     * @param image
     */
    public void setImage(Image image)

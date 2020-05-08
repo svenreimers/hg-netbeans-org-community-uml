@@ -49,10 +49,8 @@ import javax.swing.KeyStroke;
 import org.netbeans.api.visual.action.InplaceEditorProvider.EditorController;
 import org.netbeans.modules.uml.ui.controls.editcontrol.EditControlImpl;
 
-/**
- *
- * @author treyspiva
- */
+
+
 public class DiagramEditControl extends EditControlImpl
 {
 

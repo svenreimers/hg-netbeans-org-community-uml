@@ -47,12 +47,14 @@ package org.netbeans.modules.uml.core.metamodel.core.foundation;
 
 public interface ILiteralString extends ILiteralSpecification
 {
-	/**
+	
+/**
 	 * The specified value.
 	*/
 	public void setValue( String value );
 
-	/**
+	
+/**
 	 * The specified value.
 	*/
 	public String getValue();

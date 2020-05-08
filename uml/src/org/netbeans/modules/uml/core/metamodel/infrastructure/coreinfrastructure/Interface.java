@@ -66,7 +66,8 @@ public class Interface extends Classifier implements IInterface
         super();
     }
 
-	/**
+	
+/**
 	 * method AddReception
 	*/
 	public void addReception( IReception rec )
@@ -74,7 +75,8 @@ public class Interface extends Classifier implements IInterface
 		addFeature(rec);
 	}
 
-	/**
+	
+/**
 	 * method RemoveReception
 	*/
 	public void removeReception( IReception rec )
@@ -82,7 +84,8 @@ public class Interface extends Classifier implements IInterface
 		removeFeature(rec);
 	}
 
-	/**
+	
+/**
 	 * property Receptions
 	*/
 	public ETList<IReception> getReceptions()
@@ -92,7 +95,8 @@ public class Interface extends Classifier implements IInterface
              "UML:Element.ownedElement/UML:Reception", IReception.class);
 	}
 
-	/**
+	
+/**
 	 * property ProtocolStateMachine
 	*/
 	public INamespace getProtocolStateMachine()
@@ -105,7 +109,8 @@ public class Interface extends Classifier implements IInterface
 		return retSpace;			
 	}
 
-	/**
+	
+/**
 	 * property ProtocolStateMachine
 	*/
 	public void setProtocolStateMachine( INamespace spcObj )
@@ -114,7 +119,8 @@ public class Interface extends Classifier implements IInterface
 						"UML:Interface.protocolStateMachine/UML:StateMachine",spcObj);
 	}
 	
-	/**
+	
+/**
 	 * Establishes the appropriate XML elements for this UML type.
 	 *
 	 * [in] The document where this element will reside
@@ -133,7 +139,8 @@ public class Interface extends Classifier implements IInterface
 		XMLManip.setAttributeValue(node,"isAbstract","true");
 	}
 	
-	/**	 
+	
+/**	 
 	 * This routine is overloaded so that we may ensure that the
 	 * correct stereotype is set on the interface after it has
 	 * been created and added to a project.
@@ -146,14 +153,15 @@ public class Interface extends Classifier implements IInterface
 		super.ensureStereotype("interface");
 	}
 	
-	/**	 
+	
+/**	 
 	 * This routine is overloaded here so that certain stereotypes
 	 * are removed before a transform is done.
 	 */
     @Override
 	public void preTransformNode(String typeName)
 	{
-            super.deleteStereotype("interface"); //Jyothi: Fix for Bug#6301700
+            super.deleteStereotype("interface"); 
 	}
 	
 	public ETList<String> getCollidingNamesForElement(INamedElement ele)

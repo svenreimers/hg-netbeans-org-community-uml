@@ -52,10 +52,8 @@ import org.netbeans.api.visual.widget.ConnectionWidget;
 import org.netbeans.api.visual.widget.Scene;
 import org.netbeans.api.visual.widget.Widget;
 
-/**
- *
- * @author treyspiva
- */
+
+
 public class ContextPaletteConnectDecorator implements ConnectDecorator
 {
 

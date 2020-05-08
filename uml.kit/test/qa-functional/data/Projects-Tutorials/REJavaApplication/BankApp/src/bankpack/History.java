@@ -10,10 +10,8 @@
 
 package bankpack;
 
-/**
- *
- * @author Administrator
- */
+
+
 public class History {
     
     private static int transaction;

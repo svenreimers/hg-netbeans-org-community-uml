@@ -43,11 +43,8 @@
  */
 
 
-/*
- * File       : MethodSwitchStateHandler.java
- * Created on : Dec 11, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.statehandlers;
 
 import org.dom4j.Node;
@@ -58,9 +55,8 @@ import org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.transl
 import org.netbeans.modules.uml.core.reverseengineering.reframework.IREClass;
 import org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ITokenDescriptor;
 
-/**
- * @author Aztec
- */
+
+
 public class MethodSwitchStateHandler extends MethodConditionalStateHandler
 {
     private boolean                 m_IsSwitch;

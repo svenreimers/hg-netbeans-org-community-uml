@@ -50,7 +50,8 @@ public class PostProcessingEvent implements IPostProcessingEvent
 {
     private String m_TestString;
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.IPostProcessingEvent#getStringRepresentation()
      */
     public String getStringRepresentation()
@@ -58,7 +59,8 @@ public class PostProcessingEvent implements IPostProcessingEvent
         return m_TestString;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.IPostProcessingEvent#setStringRepresentation(java.lang.String)
      */
     public void setStringRepresentation(String newVal)

@@ -42,11 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : RelationPreRequest.java
- * Created on : Nov 10, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.roundtripframework;
 
 import org.netbeans.modules.uml.core.eventframework.IEventPayload;
@@ -58,9 +55,8 @@ import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IImplementation;
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IInterface;
 
-/**
- * @author Aztec
- */
+
+
 public class RelationPreRequest extends PreRequest
 {
     private IRelationProxy  m_Relation = null;

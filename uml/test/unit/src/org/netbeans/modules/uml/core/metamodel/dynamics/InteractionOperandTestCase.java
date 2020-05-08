@@ -45,6 +45,7 @@
 
 package org.netbeans.modules.uml.core.metamodel.dynamics;
 import org.netbeans.modules.uml.core.AbstractUMLTestCase;
+
 /**
  * Test cases for InteractionOperand.
  */
@@ -57,7 +58,8 @@ public class InteractionOperandTestCase extends AbstractUMLTestCase
 
     private IInteractionOperand op;
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see junit.framework.TestCase#setUp()
      */
     protected void setUp() throws Exception

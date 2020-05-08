@@ -47,16 +47,15 @@ package org.netbeans.modules.uml.core.requirementsframework;
 //import org.netbeans.modules.uml.core.addinframework.IAddInDialog;
 import java.awt.Frame;
 
+
 /*
  * IReqProviderDialog.java
  *
  * Created on June 24, 2004, 1:45 PM
  */
 
-/**
- *
- * @author  Trey Spiva
- */
+
+
 public interface IReqProviderDialog
 {
    public boolean display(Frame parentHwnd, IRequirementsManager manager);

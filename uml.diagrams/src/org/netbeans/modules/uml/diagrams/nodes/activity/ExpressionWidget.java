@@ -50,10 +50,8 @@ import org.netbeans.api.visual.widget.Scene;
 import org.netbeans.modules.uml.drawingarea.ModelElementChangedKind;
 import org.netbeans.modules.uml.drawingarea.view.DesignerTools;
 
-/**
- *
- * @author thuy
- */
+
+
 public class ExpressionWidget extends FeatureWidget implements PropertyChangeListener{
 
     public ExpressionWidget(Scene scene) {
@@ -65,7 +63,8 @@ public class ExpressionWidget extends FeatureWidget implements PropertyChangeLis
         createActions(DesignerTools.SELECT).addAction(new FeatureMoveAction());
     }
     
-    /**
+    
+/**
      * The property change listener is used by the diagram to notify widgets of
      * model element property change events.
      */

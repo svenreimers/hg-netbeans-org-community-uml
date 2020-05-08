@@ -56,10 +56,8 @@ import org.netbeans.modules.uml.diagrams.nodes.MovableLabelWidget;
 import org.netbeans.modules.uml.drawingarea.persistence.NodeWriter;
 import org.netbeans.modules.uml.drawingarea.view.DesignerTools;
 
-/**
- *
- * @author sp153251
- */
+
+
 public class ExpressionWidget extends FeatureWidget implements PropertyChangeListener {
     private IValueSpecification spec;
     private MovableLabelWidget label;

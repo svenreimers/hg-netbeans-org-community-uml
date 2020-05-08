@@ -42,11 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : RTRelationDispatchHelper.java
- * Created on : Nov 10, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.roundtripframework;
 
 import org.netbeans.modules.uml.core.eventframework.EventDispatchNameKeeper;
@@ -54,9 +51,8 @@ import org.netbeans.modules.uml.core.eventframework.IEventDispatchController;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.IRelationProxy;
 import org.netbeans.modules.uml.core.support.umlsupport.IResultCell;
 
-/**
- * @author Aztec
- */
+
+
 public class RTRelationDispatchHelper extends RTDispatchHelper
 {
     public RTRelationDispatchHelper()

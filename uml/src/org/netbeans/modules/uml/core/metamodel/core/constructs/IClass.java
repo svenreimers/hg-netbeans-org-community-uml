@@ -50,47 +50,56 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 public interface IClass extends IEncapsulatedClassifier
 {
-	/**
+	
+/**
 	 * method AddReception
 	*/
 	public void addReception( IReception rec );
 
-	/**
+	
+/**
 	 * method RemoveReception
 	*/
 	public void removeReception( IReception rec );
 
-	/**
+	
+/**
 	 * property Receptions
 	*/
 	public ETList<IReception> getReceptions();
 
-	/**
+	
+/**
 	 * Determines whether an object specified by this class is active or not. An active object is an object that, as a direct concsequence of its creation, commences to execute its behavior specification, and does not cease until either the complete specification is
 	*/
 	public boolean getIsActive();
 
-	/**
+	
+/**
 	 * Determines whether an object specified by this class is active or not. An active object is an object that, as a direct concsequence of its creation, commences to execute its behavior specification, and does not cease until either the complete specification is
 	*/
 	public void setIsActive( boolean value );
 
-	/**
+	
+/**
 	 * Determines whether an object specified by this class is represented in code by a structure.
 	*/
 	public boolean getIsStruct();
 
-	/**
+	
+/**
 	 * Determines whether an object specified by this class is represented in code by a structure.
 	*/
 	public void setIsStruct( boolean value );
 
-	/**
+	
+/**
 	 * Determines whether an object specified by this class is represented in code by a union.
 	*/
 	public boolean getIsUnion();
 
-	/**
+	
+/**
 	 * Determines whether an object specified by this class is represented in code by a union.
 	*/
 	public void setIsUnion( boolean value );

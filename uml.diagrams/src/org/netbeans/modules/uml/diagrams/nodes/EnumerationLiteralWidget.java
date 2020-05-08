@@ -52,10 +52,8 @@ import org.netbeans.modules.uml.drawingarea.ModelElementChangedKind;
 import org.netbeans.modules.uml.drawingarea.persistence.NodeWriter;
 import org.netbeans.modules.uml.drawingarea.persistence.PersistenceUtil;
 
-/**
- *
- * @author treyspiva
- */
+
+
 public class EnumerationLiteralWidget extends FeatureWidget implements PropertyChangeListener
 {
 
@@ -69,7 +67,8 @@ public class EnumerationLiteralWidget extends FeatureWidget implements PropertyC
 
     ///////////////////////////////////////////////////////////////
     // PropertyChangeListener Implementation
-    /**
+    
+/**
      * The property change listener is used by the diagram to notify widgets of
      * model element property change events.
      */

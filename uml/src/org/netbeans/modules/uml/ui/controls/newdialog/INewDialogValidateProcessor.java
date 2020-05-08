@@ -47,7 +47,8 @@ package org.netbeans.modules.uml.ui.controls.newdialog;
 
 public interface INewDialogValidateProcessor
 {
-	/**
+	
+/**
 	 * Makes sure the tabs are valid for this diagram
 	*/
 	public long validateTabs( INewDialog pParentDialog );

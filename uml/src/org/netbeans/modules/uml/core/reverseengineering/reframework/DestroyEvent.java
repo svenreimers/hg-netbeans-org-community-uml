@@ -53,7 +53,8 @@ import org.netbeans.modules.uml.core.support.umlsupport.XMLManip;
 public class DestroyEvent extends MethodDetailParserData
         implements IDestroyEvent
 {
-    /**
+    
+/**
      * Is the type of the instance a primitive or an object.
      *
      * @param *pVal [out] True if the type is a primitive data type.
@@ -64,7 +65,8 @@ public class DestroyEvent extends MethodDetailParserData
                     .booleanValue();
     }
 
-    /**
+    
+/**
      * The type of the instance that is being destroyed.
      *
      * @param *pVal [out] The type of the instance.
@@ -74,7 +76,8 @@ public class DestroyEvent extends MethodDetailParserData
         return XMLManip.getAttributeValue(getEventData(), "classifier");
     }
 
-    /**
+    
+/**
      * The name of the instnace that is being destroyed.
      *
      * @param *pVal [out] The name of the instance.

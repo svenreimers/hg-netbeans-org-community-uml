@@ -42,18 +42,14 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : IParameterChangeRequest.java
- * Created on : Nov 20, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.roundtripframework;
 
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation;
 
-/**
- * @author Aztec
- */
+
+
 public interface IParameterChangeRequest extends IChangeRequest
 {
     public IOperation getBeforeOperation();

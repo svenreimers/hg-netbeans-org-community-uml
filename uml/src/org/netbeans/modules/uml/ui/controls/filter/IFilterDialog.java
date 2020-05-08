@@ -48,19 +48,18 @@ package org.netbeans.modules.uml.ui.controls.filter;
 
 import org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeModel;
 
-/**
- * Specifies the interface that all fitler dialog must implement.
- *
- * @author Trey Spiva
- */
+
+
 public interface IFilterDialog
 {
-   /**
+   
+/**
     * Display the filter dialog to the user.
     */
    public void show();
 
-   /**
+   
+/**
     * Create a new root level node.  When the value of a root level node changes
     * all of it's childrens values are changed to match the roots new value.
     * The root level node is commonly used to specify a category.  
@@ -70,7 +69,8 @@ public interface IFilterDialog
     */
    public IFilterNode createRootNode(String name);
    
-   /**
+   
+/**
     * Create a new root level node.  When the value of a root level node changes
     * all of it's childrens values are changed to match the roots new value.  
     * The root level node is commonly used to specify a category.  
@@ -80,7 +80,8 @@ public interface IFilterDialog
     */
    public IFilterNode createRootNode(IFilterItem item);
    
-   /**
+   
+/**
     * Adds a new filter item to the specified FilterNode.  The FilterNode that
     * is created to represent the IFilterItem is returned.  When the value of 
     * a root level node changesall of it's childrens values are changed to 

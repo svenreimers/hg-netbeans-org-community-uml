@@ -46,10 +46,8 @@ import org.netbeans.api.visual.widget.Scene;
 import org.netbeans.modules.uml.diagrams.edges.DependencyConnector;
 import org.netbeans.modules.uml.drawingarea.ConnectionWidgetFactory;
 
-/**
- *
- * @author treyspiva
- */
+
+
 public class DependencyConnectionFactory implements ConnectionWidgetFactory
 {
 

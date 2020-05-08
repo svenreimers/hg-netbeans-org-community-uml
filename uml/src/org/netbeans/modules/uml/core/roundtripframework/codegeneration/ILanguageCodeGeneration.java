@@ -48,22 +48,26 @@ import org.netbeans.modules.uml.core.roundtripframework.IRoundTripController;
 
 public interface ILanguageCodeGeneration
 {
-	/**
+	
+/**
 	 * Get/Set the RoundTripController that this LanguageCodeGeneration object receives ChangeRequests from
 	*/
 	public IRoundTripController getRoundTripController();
 
-	/**
+	
+/**
 	 * Get/Set the RoundTripController that this LanguageCodeGeneration object receives ChangeRequests from
 	*/
 	public void setRoundTripController( IRoundTripController value );
 
-	/**
+	
+/**
 	 * Get/Set the FileSystemManipulation object
 	*/
 	public IFileSystemManipulation getFileSystemManipulation();
 
-	/**
+	
+/**
 	 * Get/Set the FileSystemManipulation object
 	*/
 	public void setFileSystemManipulation( IFileSystemManipulation value );

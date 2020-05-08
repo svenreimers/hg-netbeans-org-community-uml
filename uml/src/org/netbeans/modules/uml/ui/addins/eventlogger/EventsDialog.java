@@ -61,10 +61,8 @@ import javax.swing.table.DefaultTableModel;
 
 import org.netbeans.modules.uml.ui.swing.commondialogs.JCenterDialog;
 
-/**
- * @author sumitabhk
- *
- */
+
+
 public class EventsDialog extends JCenterDialog implements ActionListener
 {
 	private JTable m_Table = new JTable();
@@ -89,7 +87,8 @@ public class EventsDialog extends JCenterDialog implements ActionListener
 	//the popup that we will show
 	private JPopupMenu m_Menu = null;
 	
-	/**
+	
+/**
 	 * 
 	 */
 	public EventsDialog()
@@ -109,7 +108,8 @@ public class EventsDialog extends JCenterDialog implements ActionListener
 		this.setSize(400, 300);
 	}
 
-	/**
+	
+/**
 	 * Adds an entry to the list
 	 */
 	public void addEntry(String newEntry)
@@ -162,7 +162,8 @@ public class EventsDialog extends JCenterDialog implements ActionListener
 		return m_Menu;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see java.awt.event.ActionListener#actionPerformed(java.awt.event.ActionEvent)
 	 */
 	public void actionPerformed(ActionEvent e)

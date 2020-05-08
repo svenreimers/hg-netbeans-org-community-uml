@@ -48,10 +48,8 @@ package org.netbeans.modules.uml.core.eventframework;
 import org.netbeans.modules.uml.core.coreapplication.ICoreProduct;
 import org.netbeans.modules.uml.core.support.umlsupport.ProductRetriever;
 
-/**
- * @author sumitabhk
- *
- */
+
+
 public class EventBlocker {
 
 	private IEventDispatcher m_Dispatch = null;
@@ -65,7 +63,8 @@ public class EventBlocker {
 		super();
 	}
 
-	/**
+	
+/**
 	 * EventBlocker constructor. Calls the put_PreventAllEvents( true )
 	 * on the passed in IEventDispatcher.
 	 */ 
@@ -85,7 +84,8 @@ public class EventBlocker {
 	   return retVal;
 	}
 
-	/**
+	
+/**
 	 * Prevents all event from going out on any and every dispatcher that the
 	 * passed in controller manages. If the passed in controller is 0, then
 	 * the CoreProduct is retrieved, and the EventDispatchController on that

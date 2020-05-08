@@ -48,10 +48,8 @@ package org.netbeans.modules.uml.reporting.dataobjects;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.IElement;
 import org.netbeans.modules.uml.core.metamodel.structure.INode;
 
-/**
- *
- * @author Sheryl
- */
+
+
 public class NodeData extends ClassData
 {
     private INode element;

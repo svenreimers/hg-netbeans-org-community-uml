@@ -42,11 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : ActivityGroup.java
- * Created on : Sep 16, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.metamodel.common.commonactivities;
 
 import org.dom4j.Node;
@@ -63,9 +60,8 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.RedefinableElemen
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.CollectionTranslator;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
-/**
- * @author Aztec
- */
+
+
 public class ActivityGroup extends Namespace implements IActivityGroup
 {
 	private IActivityNode m_ActivityNodeAggregate = new ActivityNode();
@@ -79,7 +75,8 @@ public class ActivityGroup extends Namespace implements IActivityGroup
 	}
 
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivityGroup#addEdgeContent(org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivityEdge)
      */
     public void addEdgeContent(final IActivityEdge pEdge)
@@ -96,7 +93,8 @@ public class ActivityGroup extends Namespace implements IActivityGroup
 
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivityGroup#addNodeContent(org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivityNode)
      */
     public void addNodeContent(final IActivityNode pNode)
@@ -112,7 +110,8 @@ public class ActivityGroup extends Namespace implements IActivityGroup
         ); 
     }
     
-    /**
+    
+/**
      *
      * This is an override from INamespace. If element is Actually an ActivityNode,
      * AddNodeContent will be called, as that element should be owned by the Activity.
@@ -136,7 +135,8 @@ public class ActivityGroup extends Namespace implements IActivityGroup
         return retVal;
     }   
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivityGroup#addSubGroup(org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivityGroup)
      */
     public void addSubGroup(IActivityGroup pGroup)
@@ -144,7 +144,8 @@ public class ActivityGroup extends Namespace implements IActivityGroup
         addOwnedElement(pGroup);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivityGroup#getActivity()
      */
     public IActivity getActivity()
@@ -152,7 +153,8 @@ public class ActivityGroup extends Namespace implements IActivityGroup
 		return OwnerRetriever.getOwnerByType(this, IActivity.class);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivityGroup#getEdgeContents()
      */
     public ETList<IActivityEdge> getEdgeContents()
@@ -161,7 +163,8 @@ public class ActivityGroup extends Namespace implements IActivityGroup
             retrieveElementCollectionWithAttrIDs(this, "edgeContents", IActivityEdge.class);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivityGroup#getNodeContents()
      */
     public ETList<IActivityNode> getNodeContents()
@@ -186,7 +189,8 @@ public class ActivityGroup extends Namespace implements IActivityGroup
         return ownedEls;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivityGroup#getSubGroups()
      */
     public ETList<IActivityGroup> getSubGroups()
@@ -195,7 +199,8 @@ public class ActivityGroup extends Namespace implements IActivityGroup
             .retrieveElementCollection( (IElement)this,"UML:Element.ownedElement/*", IActivityGroup.class);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivityGroup#removeEdgeContent(org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivityEdge)
      */
     public void removeEdgeContent(final IActivityEdge pEdge)
@@ -212,7 +217,8 @@ public class ActivityGroup extends Namespace implements IActivityGroup
         );
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivityGroup#removeNodeContent(org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivityNode)
      */
     public void removeNodeContent(final IActivityNode pNode)
@@ -238,7 +244,8 @@ public class ActivityGroup extends Namespace implements IActivityGroup
              super.removeOwnedElement( element );    
     }  
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivityGroup#removeSubGroup(org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivityGroup)
      */
     public void removeSubGroup(IActivityGroup pGroup)
@@ -246,7 +253,8 @@ public class ActivityGroup extends Namespace implements IActivityGroup
         removeOwnedElement(pGroup);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivityGroup#setActivity(org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivity)
      */
     public void setActivity(IActivity value)
@@ -260,7 +268,8 @@ public class ActivityGroup extends Namespace implements IActivityGroup
 		m_ActivityNodeAggregate.addOutgoingEdge(pEdge);
 	}
 	
-	/**
+	
+/**
 	 * method RemoveOutgoingEdge
 	*/
 	public void removeOutgoingEdge( IActivityEdge pEdge )
@@ -268,7 +277,8 @@ public class ActivityGroup extends Namespace implements IActivityGroup
 		m_ActivityNodeAggregate.removeOutgoingEdge(pEdge);
 	}
 
-	/**
+	
+/**
 	 * property OutgoingEdges
 	*/
 	public ETList<IActivityEdge> getOutgoingEdges()
@@ -276,7 +286,8 @@ public class ActivityGroup extends Namespace implements IActivityGroup
 		return m_ActivityNodeAggregate.getOutgoingEdges();
 	}
 
-	/**
+	
+/**
 	 * method AddIncomingEdge
 	*/
 	public void addIncomingEdge( IActivityEdge pEdge )
@@ -284,7 +295,8 @@ public class ActivityGroup extends Namespace implements IActivityGroup
 		m_ActivityNodeAggregate.addIncomingEdge(pEdge);
 	}
 
-	/**
+	
+/**
 	 * method RemoveIncomingEdge
 	*/
 	public void removeIncomingEdge( IActivityEdge pEdge )
@@ -292,7 +304,8 @@ public class ActivityGroup extends Namespace implements IActivityGroup
 		m_ActivityNodeAggregate.removeIncomingEdge(pEdge);
 	}
 
-	/**
+	
+/**
 	 * property IncomingEdges
 	*/
 	public ETList<IActivityEdge> getIncomingEdges()
@@ -300,7 +313,8 @@ public class ActivityGroup extends Namespace implements IActivityGroup
 		return m_ActivityNodeAggregate.getIncomingEdges();
 	}
 
-	/**
+	
+/**
 	 * method AddGroup
 	*/
 	public void addGroup( IActivityGroup pGroup )
@@ -308,7 +322,8 @@ public class ActivityGroup extends Namespace implements IActivityGroup
 		m_ActivityNodeAggregate.addGroup(pGroup);
 	}
 
-	/**
+	
+/**
 	 * method RemoveGroup
 	*/
 	public void removeGroup( IActivityGroup pGroup )
@@ -316,7 +331,8 @@ public class ActivityGroup extends Namespace implements IActivityGroup
 		m_ActivityNodeAggregate.removeGroup(pGroup);
 	}
 
-	/**
+	
+/**
 	 * property Groups
 	*/
 	public ETList<IActivityGroup> getGroups()
@@ -324,7 +340,8 @@ public class ActivityGroup extends Namespace implements IActivityGroup
 		return m_ActivityNodeAggregate.getGroups();
 	}
 	
-	/**
+	
+/**
 	 * @param element
 	 * @return
 	 */
@@ -337,7 +354,8 @@ public class ActivityGroup extends Namespace implements IActivityGroup
 		 return m_RedefineAggregate.addRedefinedElement(element);
 	}
 
-	/**
+	
+/**
 	 * @param element
 	 * @return
 	 */
@@ -350,7 +368,8 @@ public class ActivityGroup extends Namespace implements IActivityGroup
 		 return m_RedefineAggregate.addRedefiningElement(element); 
 	}
 
-	/**
+	
+/**
 	 * @return
 	 */
 	public boolean getIsFinal()
@@ -362,7 +381,8 @@ public class ActivityGroup extends Namespace implements IActivityGroup
 	   return m_RedefineAggregate.getIsFinal();
 	}
 
-	/**
+	
+/**
 	 * @return
 	 */
 	public boolean getIsRedefined()
@@ -374,7 +394,8 @@ public class ActivityGroup extends Namespace implements IActivityGroup
 	   return m_RedefineAggregate.getIsRedefined();
 	}
 
-	/**
+	
+/**
 	 * @return
 	 */
 	public boolean getIsRedefining()
@@ -386,7 +407,8 @@ public class ActivityGroup extends Namespace implements IActivityGroup
 	   return m_RedefineAggregate.getIsRedefining();
 	}
 
-	/**
+	
+/**
 	 * @return
 	 */
 	public long getRedefinedElementCount()
@@ -394,7 +416,8 @@ public class ActivityGroup extends Namespace implements IActivityGroup
 	   return m_RedefineAggregate.getRedefinedElementCount();
 	}
 
-	/**
+	
+/**
 	 * @return
 	 */
 	public ETList<IRedefinableElement> getRedefinedElements()
@@ -406,7 +429,8 @@ public class ActivityGroup extends Namespace implements IActivityGroup
 		 return m_RedefineAggregate.getRedefinedElements();
 	}
 
-	/**
+	
+/**
 	 * @return
 	 */
 	public long getRedefiningElementCount()
@@ -418,7 +442,8 @@ public class ActivityGroup extends Namespace implements IActivityGroup
 		 return m_RedefineAggregate.getRedefiningElementCount();
 	}
 
-	/**
+	
+/**
 	 * @return
 	 */
   
@@ -433,7 +458,8 @@ public class ActivityGroup extends Namespace implements IActivityGroup
 
    
 
-	/**
+	
+/**
 	 * @param element
 	 * @return
 	 */
@@ -446,7 +472,8 @@ public class ActivityGroup extends Namespace implements IActivityGroup
 		 return m_RedefineAggregate.removeRedefinedElement(element);
 	}
 
-	/**
+	
+/**
 	 * @param element
 	 * @return
 	 */
@@ -459,7 +486,8 @@ public class ActivityGroup extends Namespace implements IActivityGroup
 		 return m_RedefineAggregate.removeRedefiningElement(element);
 	}
 
-	/**
+	
+/**
 	 * @param value
 	 */
 	public void setIsFinal(boolean value)

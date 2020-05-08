@@ -47,10 +47,8 @@ import org.netbeans.modules.uml.diagrams.nodes.AssociationClassWidget;
 import org.netbeans.modules.uml.diagrams.nodes.UMLClassWidget;
 import org.netbeans.modules.uml.drawingarea.NodeWidgetFactory;
 
-/**
- *
- * @author treyspiva
- */
+
+
 public class AssociationClassNodeFactory implements NodeWidgetFactory
 {
 

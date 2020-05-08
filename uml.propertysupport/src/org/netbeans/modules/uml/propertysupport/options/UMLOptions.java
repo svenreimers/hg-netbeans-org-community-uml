@@ -50,13 +50,12 @@ import org.netbeans.spi.options.OptionsCategory;
 import org.netbeans.spi.options.OptionsPanelController;
 import org.openide.util.NbBundle;
 
-/**
- *
- * @author krichard
- */
+
+
 public class UMLOptions extends OptionsCategory {
 
-    /**
+    
+/**
      * Creates a new instance of UMLOptionsPanel
      */
     public UMLOptions() {

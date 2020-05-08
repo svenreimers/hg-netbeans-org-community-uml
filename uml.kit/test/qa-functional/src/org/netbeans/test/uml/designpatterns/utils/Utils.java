@@ -43,12 +43,8 @@
  */
 
 
-/*
- * Utils.java
- *
- * Created on 31 ���� 2005 �., 19:11
- * @author psb
- */
+
+
 
 package org.netbeans.test.uml.designpatterns.utils;
 
@@ -96,10 +92,8 @@ import org.netbeans.test.umllib.EditControlOperator;
 //import org.netbeans.test.umllib.util.LabelsAndTitles;
 import org.netbeans.test.umllib.util.OptionsOperator;
 
-/**
- *
- * @author psb
- */
+
+
 public class Utils {
 
     //
@@ -131,7 +125,8 @@ public class Utils {
         DriverManager.setKeyDriver(new KeyRobotDriver(new Timeout("autoDelay", 50)));
     }
 
-    /**
+    
+/**
      * It works with existing edit control with
      * "anyVisibility anyType anyName = anyValue"  and "anyVisibility anyType anyName"
      * initial attribute with selected name (after Insert or double click).
@@ -315,7 +310,8 @@ public class Utils {
         return ret;
     }
 
-    /**
+    
+/**
      * It works with existing edit control with
      * "anyVisibility anyType anyName = anyValue"  and "anyVisibility anyType anyName"
      * initial attribute with selected name (after Insert or double click).
@@ -331,7 +327,8 @@ public class Utils {
         return attributeNaturalWayNaming(visibility, type, name, defValue, false);
     }
 
-    /**
+    
+/**
      * It works with existing edit control with
      * "anyVisibility anyType anyName = anyValue"  and "anyVisibility anyType anyName"
      * initial attribute with selected name (after Insert or double click).
@@ -347,7 +344,8 @@ public class Utils {
     }
 
     //==============================================================================================
-    /**
+    
+/**
      * It works with existing edit control with
      * "anyVisibility anyRetType anyName( parType parName, ... )"  and "anyVisibility anyRetType anyName(  )"
      * initial attribute with selected name (after Insert or double click).
@@ -626,7 +624,8 @@ public class Utils {
         return ret;
     }
 
-    /**
+    
+/**
      * It works with existing edit control with
      * "anyVisibility anyRetType anyName( parType parName)"  and "anyVisibility anyRetType anyName(  )"
      * initial attribute with selected name (after Insert or double click).
@@ -645,7 +644,8 @@ public class Utils {
         return operationNaturalWayNaming(visibility, retType, name, aparTypes, aparNames, pressEnter);
     }
 
-    /**
+    
+/**
      * It works with existing edit control with
      * "anyVisibility anyRetType anyName( parType parName, ... )"  and "anyVisibility anyRetType anyName(  )"
      * initial attribute with selected name (after Insert or double click).
@@ -661,7 +661,8 @@ public class Utils {
         return operationNaturalWayNaming(visibility, retType, name, parTypes, parNames, false);
     }
 
-    /**
+    
+/**
      * It works with existing edit control with
      * "anyVisibility anyRetType anyName( parType parName)"  and "anyVisibility anyRetType anyName(  )"
      * initial attribute with selected name (after Insert or double click).
@@ -677,7 +678,8 @@ public class Utils {
         return operationNaturalWayNaming(visibility, retType, name, parTypes, parNames, false);
     }
 
-    /**
+    
+/**
      * It works with existing edit control with
      * "anyVisibility anyRetType anyName( parType parName, ... )"  and "anyVisibility anyRetType anyName(  )"
      * initial attribute with selected name (after Insert or double click).
@@ -708,7 +710,8 @@ public class Utils {
         return operationNaturalWayNaming(visibility, retType, name, parTypes, parNames, pressEnter);
     }
 
-    /**
+    
+/**
      * It works with existing edit control with
      * "anyVisibility anyRetType anyName( parType parName, ... )"  and "anyVisibility anyRetType anyName(  )"
      * initial attribute with selected name (after Insert or double click).
@@ -723,7 +726,8 @@ public class Utils {
         return operationNaturalWayNaming(visibility, retType, name, parameters, false);
     }
 
-    /**
+    
+/**
      * It works with existing edit control with
      * "anyVisibility anyRetType anyName( parType parName, ... )"  and "anyVisibility anyRetType anyName(  )"
      * initial attribute with selected name (after Insert or double click).

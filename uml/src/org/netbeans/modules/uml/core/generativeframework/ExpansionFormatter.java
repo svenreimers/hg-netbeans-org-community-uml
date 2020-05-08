@@ -42,18 +42,14 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : ExpansionFormatter.java
- * Created on : Oct 28, 2003
- * Author     : aztec
- */
+
+
 package org.netbeans.modules.uml.core.generativeframework;
 
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
-/**
- * @author aztec
- */
+
+
 public class ExpansionFormatter
 {
     public static String format(IVariableExpander expander, String initialText)

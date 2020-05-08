@@ -59,10 +59,8 @@ import org.netbeans.modules.uml.drawingarea.actions.ToggleLabelAction;
 import org.netbeans.modules.uml.drawingarea.support.ModelElementBridge;
 import org.openide.util.NbBundle;
 
-/**
- *
- * @author Sheryl Su
- */
+
+
 public final class StateTransitionLabelManager extends BasicUMLLabelManager
 {
 

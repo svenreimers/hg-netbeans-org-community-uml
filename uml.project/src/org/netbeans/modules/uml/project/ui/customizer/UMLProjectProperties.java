@@ -77,9 +77,8 @@ import org.openide.filesystems.FileUtil;
 import org.openide.util.Mutex;
 import org.openide.util.MutexException;
 
-/**
- * @author Mike Frisino
- */
+
+
 public class UMLProjectProperties 
 {
     // Special properties of the project, stored in project.xml by project.save
@@ -164,7 +163,8 @@ public class UMLProjectProperties
         init(); // Load known properties
     }
     
-    /** Initializes the visual models
+    
+/** Initializes the visual models
      */
     public void init()
     {
@@ -297,7 +297,8 @@ public class UMLProjectProperties
             updateHelper.getAntProjectHelper(),referencedJavaProjectModel.getProject());
     }
 
-    /** Finds out what are new and removed project dependencies and
+    
+/** Finds out what are new and removed project dependencies and
      * applyes the info to the project
      */
     private void resolveProjectDependencies()
@@ -381,7 +382,8 @@ public class UMLProjectProperties
     // TODO - MCF - I kept this method from copied J2SE code, thinking we might
     // need it or something like it. I have not yet actually used it, and if we
     // do not use it we can delete it.
-    /**
+    
+/**
      * Tokenize library classpath and try to relativize all the jars.
      * @param property library property name ala "libs.someLib.classpath"
      * @param projectDir project dir for relativization

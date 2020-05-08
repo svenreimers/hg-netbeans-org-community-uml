@@ -69,7 +69,8 @@ public class Generalization extends DirectedRelationship implements IGeneralizat
 		super();
 	}
 
-	/**
+	
+/**
 	 * property Specific
 	 */
 	public IClassifier getSpecific() {
@@ -77,7 +78,8 @@ public class Generalization extends DirectedRelationship implements IGeneralizat
 		return collector.retrieveSingleElementWithAttrID(this, "specific", IClassifier.class);
 	}
 
-	/**
+	
+/**
 	 * property Specific
 	*/
 	public void setSpecific(IClassifier specific) {
@@ -106,7 +108,8 @@ public class Generalization extends DirectedRelationship implements IGeneralizat
 		}
 	}
 
-	/**
+	
+/**
 	 * property General
 	*/
 	public IClassifier getGeneral() {
@@ -114,7 +117,8 @@ public class Generalization extends DirectedRelationship implements IGeneralizat
 		return collector.retrieveSingleElementWithAttrID(this, "general", IClassifier.class);
 	}
 
-	/**
+	
+/**
 	 * property General
 	*/
 	public void setGeneral(IClassifier general) {
@@ -143,7 +147,8 @@ public class Generalization extends DirectedRelationship implements IGeneralizat
 		}
 	}
 
-	/**
+	
+/**
 	 * Establishes the appropriate XML elements for this UML type.
 	 *
 	 * [in] The document where this element will reside
@@ -153,7 +158,8 @@ public class Generalization extends DirectedRelationship implements IGeneralizat
 		buildNodePresence("UML:Generalization", doc, parent);
 	}
 
-	/**	
+	
+/**	
 	 * Handles the firing of the delete event. First makes sure that all elements
 	 * in this relationship are set to a dirty state.
 	 *	 
@@ -358,21 +364,24 @@ public class Generalization extends DirectedRelationship implements IGeneralizat
 		return sXMIID;		
 	}
 	
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IGeneralization#getGeneralXMIID()
 	 */
 	public String getGeneralXMIID() {
 		return getInternalXMIID("general");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IGeneralization#getSpecificXMIID()
 	 */
 	public String getSpecificXMIID() {
 		return getInternalXMIID("specific");
 	}
         
-    /**
+    
+/**
      * The default behavior to this method is to return true if the names of the
      * two elements being compared are same. Subclasses should override to 
      * implement class specific <em>isSimilar</em> behavior.

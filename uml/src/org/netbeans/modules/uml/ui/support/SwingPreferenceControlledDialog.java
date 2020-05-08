@@ -52,11 +52,8 @@ import org.netbeans.modules.uml.ui.support.messaging.IMessenger;
 import org.netbeans.modules.uml.util.DummyCorePreference;
 import org.openide.util.NbPreferences;
 
-/**
- * @author sumitabhk
- *
- *
- */
+
+
 public class SwingPreferenceControlledDialog implements IPreferenceControlledDialog
 {
 	private boolean m_AutoUpdatePreference = true;
@@ -64,7 +61,8 @@ public class SwingPreferenceControlledDialog implements IPreferenceControlledDia
 	private String  m_PrefKey = "";
 	private String  m_PrefPath = "";
 	private String  m_PrefName = "";
-	/**
+	
+/**
 	 * 
 	 */
 	public SwingPreferenceControlledDialog()
@@ -78,7 +76,8 @@ public class SwingPreferenceControlledDialog implements IPreferenceControlledDia
 		}
 	}
 
-	/**
+	
+/**
 	 *
 	 * Sets whether the preference file should be updated when the PreferenceValue 
 	 * is set.
@@ -93,7 +92,8 @@ public class SwingPreferenceControlledDialog implements IPreferenceControlledDia
 		m_AutoUpdatePreference = value;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Gets whether the preference file should be updated when the Preference Value
 	 * is set.
@@ -108,7 +108,8 @@ public class SwingPreferenceControlledDialog implements IPreferenceControlledDia
 		return m_AutoUpdatePreference;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Set the preference key.  If no key is specified, Default is assumed.
 	 *
@@ -122,7 +123,8 @@ public class SwingPreferenceControlledDialog implements IPreferenceControlledDia
 		m_PrefKey = value;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Gets the preference key.  If no key is specified, Default is assumed.
 	 *
@@ -136,7 +138,8 @@ public class SwingPreferenceControlledDialog implements IPreferenceControlledDia
 		return m_PrefKey;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Set the preference path.  The path is the part between the key
 	 * and the name.
@@ -151,7 +154,8 @@ public class SwingPreferenceControlledDialog implements IPreferenceControlledDia
 		m_PrefPath = value;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Get the preference path.  The path is the part between the key
 	 * and the name.
@@ -166,7 +170,8 @@ public class SwingPreferenceControlledDialog implements IPreferenceControlledDia
 		return m_PrefPath;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Set the preference name.
 	 *
@@ -180,7 +185,8 @@ public class SwingPreferenceControlledDialog implements IPreferenceControlledDia
 		m_PrefName = value;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Get the preference name.
 	 *
@@ -194,7 +200,8 @@ public class SwingPreferenceControlledDialog implements IPreferenceControlledDia
 		return m_PrefName;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Set the preference vlaue from the preference manager.  If
 	 * AutoUpdatePreference is False, setting this property
@@ -214,7 +221,8 @@ public class SwingPreferenceControlledDialog implements IPreferenceControlledDia
 		}
 	}
 
-	/**
+	
+/**
 	 *
 	 * Get the preference vlaue from the preference manager.  If
 	 * AutoUpdatePreference is False, setting this property
@@ -227,11 +235,12 @@ public class SwingPreferenceControlledDialog implements IPreferenceControlledDia
 	 */
 	public String getPreferenceValue() {
 
-            //kris richards - set to use NbPreferences
+            
             return NbPreferences.forModule(DummyCorePreference.class).get(m_PrefName,"") ;
         }
 
-	/**
+	
+/**
 	 *
 	 * Set the preference vlaue from the preference manager.  If
 	 * AutoUpdatePreference is False, setting this property
@@ -254,7 +263,8 @@ public class SwingPreferenceControlledDialog implements IPreferenceControlledDia
 		return 0;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.support.commondialogs.ISilentDialog#isRunSilent()
 	 */
 	public boolean isRunSilent()
@@ -267,7 +277,8 @@ public class SwingPreferenceControlledDialog implements IPreferenceControlledDia
 		return bSilent;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.support.commondialogs.ISilentDialog#setIsRunSilent(boolean)
 	 */
 	public void setIsRunSilent(boolean value)

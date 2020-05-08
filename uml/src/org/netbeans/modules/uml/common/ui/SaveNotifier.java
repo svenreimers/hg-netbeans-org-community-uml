@@ -54,10 +54,8 @@ import org.openide.DialogDisplayer;
 import org.openide.awt.Mnemonics;
 import org.openide.util.NbBundle;
 
-/**
- *
- * @author Craig Conover, craig.conover@sun.com
- */
+
+
 public class SaveNotifier 
 {
     private static  SaveNotifier instance = null;
@@ -71,7 +69,8 @@ public class SaveNotifier
         return instance;
     }
     
-    /**
+    
+/**
      * Creates a new instance of SaveNotifier
      */
     private SaveNotifier() 

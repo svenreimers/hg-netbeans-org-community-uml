@@ -47,10 +47,8 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.IElement;
 import org.netbeans.modules.uml.core.metamodel.core.primitivetypes.IPseudostateKind;
 import org.netbeans.modules.uml.drawingarea.palette.NodeInitializer;
 
-/**
- *
- * @author Sheryl Su
- */
+
+
 public class JunctionStateInitializer implements NodeInitializer
 {
 

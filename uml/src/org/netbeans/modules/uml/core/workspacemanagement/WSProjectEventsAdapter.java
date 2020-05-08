@@ -46,92 +46,104 @@ package org.netbeans.modules.uml.core.workspacemanagement;
 
 import org.netbeans.modules.uml.core.support.umlsupport.IResultCell;
 
-/**
- *
- * @author Trey Spiva
- */
+
+
 public class WSProjectEventsAdapter implements IWSProjectEventsSink
 {
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     */
    public void onWSProjectPreCreate(IWorkspace space, String projectName, IResultCell cell)
    {  
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     */
    public void onWSProjectCreated(IWSProject project, IResultCell cell)
    {  
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     */
    public void onWSProjectPreOpen(IWorkspace space, String projName, IResultCell cell)
    {  
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     */
    public void onWSProjectOpened(IWSProject project, IResultCell cell)
    {  
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     */
    public void onWSProjectPreRemove(IWSProject project, IResultCell cell)
    {  
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     */
    public void onWSProjectRemoved(IWSProject project, IResultCell cell)
    {  
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     */
    public void onWSProjectPreInsert(IWorkspace space, String projectName, IResultCell cell)
    {  
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     */
    public void onWSProjectInserted(IWSProject project, IResultCell cell)
    {  
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     */
    public void onWSProjectPreRename(IWSProject project, String newName, IResultCell cell)
    {  
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     */
    public void onWSProjectRenamed(IWSProject project, String oldName, IResultCell cell)
    {  
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     */
    public void onWSProjectPreClose(IWSProject project, IResultCell cell)
    {  
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     */
    public void onWSProjectClosed(IWSProject project, IResultCell cell)
    {  
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     */
    public void onWSProjectPreSave(IWSProject project, IResultCell cell)
    {  
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     */
    public void onWSProjectSaved(IWSProject project, IResultCell cell)
    {  

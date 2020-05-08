@@ -42,13 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File         : ChangeUtils.java
- * Version      : 1.1
- * Description  : Utility methods and constants for Describe model-source
- *                roundtrip.
- * Author       : Darshan
- */
+
+
 package org.netbeans.modules.uml.integration.ide;
 
 import java.lang.reflect.Modifier;
@@ -73,36 +68,8 @@ import org.netbeans.modules.uml.core.roundtripframework.IParameterChangeRequest;
 import org.netbeans.modules.uml.core.support.umlsupport.Log;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
-/**
- * Utility methods and constants for Describe model-source roundtrip.
- *
- * Revision History
- * No.  Date        Who         What
- * ---  ----        ---         ----
- *   1  2002-04-23  Darshan     Created
- *   2  2002-04-25  Darshan     Changed method parameter display to include
- *                              parameter #0.
- *   3  2002-05-03  Sumitabh    Tweaked to display request type, element type,
- *                              method parameters and return type correctly.
- *   4  2002-05-03  Darshan     Made changes to match the new Wolverine
- *                              event model.
- *   5  2002-05-06  Darshan     Added constants and string arrays to identify
- *                              roundtrip change types. Updated the display
- *                              for class and interface roundtrip events.
- *   6  2002-05-22  Darshan     Changed attribute type display from
- *                              getType().getName() to getTypeName().
- *   7  2002-05-29  Darshan     Added constant for implementation relationships.
- *   8  2002-05-30  Darshan     Fixed bug in printing interfaces implemented
- *                              by a class.
- *   9  2002-06-05  Darshan     Commented out code to display the request type,
- *                              since the request types change frequently,
- *                              causing ArrayIndexOutOfBoundsExceptions when
- *                              indexing into reqDetailEnum[].
- *  10  2002-06-18  Darshan     Updated RequestDetailType enum.
- *
- * @author  Darshan
- * @version 1.1
- */
+
+
 public class ChangeUtils {
     // Constants that indicate the nature of a model-source change.
     public static final short CT_MODIFY = 0;
@@ -275,7 +242,8 @@ public class ChangeUtils {
         say("Change type", Integer.toString(req.getState())
                             + " (" + changeTypes[req.getState()] + ")");
         int reqType = req.getRequestDetailType();
-        say("Request detail type", Integer.toString(reqType)/* + " ("
+        say("Request detail type", Integer.toString(reqType)
+/* + " ("
                                     + reqDetailEnum[reqType] + ")"*/);
         if (reqType == RDT_RELATION_DELETED || reqType == RDT_RELATION_MODIFIED
                 || reqType == RDT_RELATION_VALIDATE) {

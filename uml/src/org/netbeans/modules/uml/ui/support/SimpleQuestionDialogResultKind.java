@@ -46,11 +46,8 @@
 
 package org.netbeans.modules.uml.ui.support;
 
-/**
- * @author sumitabhk
- *
- *
- */
+
+
 public interface SimpleQuestionDialogResultKind
 {
 	public static int SQDRK_RESULT_ABORT	= 0;

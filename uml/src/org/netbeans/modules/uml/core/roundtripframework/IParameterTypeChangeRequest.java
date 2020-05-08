@@ -42,6 +42,7 @@
  * made subject to such option by the copyright holder.
  */
 
+
 /*
  * Created on Nov 10, 2003
  *
@@ -50,10 +51,8 @@ package org.netbeans.modules.uml.core.roundtripframework;
 
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IParameter;
 
-/**
- * @author aztec
- *
- */
+
+
 public interface IParameterTypeChangeRequest extends ITypeChangeRequest
 {
 	public IParameter getImpactedParameter();

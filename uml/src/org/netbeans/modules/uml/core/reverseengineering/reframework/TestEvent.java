@@ -56,7 +56,8 @@ import org.netbeans.modules.uml.core.support.umlsupport.XMLManip;
 public class TestEvent extends MethodDetailParserData implements ITestEvent
 {
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.ITestEvent#getStringRepresentation()
      */
     public String getStringRepresentation()
@@ -101,7 +102,8 @@ public class TestEvent extends MethodDetailParserData implements ITestEvent
         return ret;
     }
 
-    /**
+    
+/**
      * @param n
      * @return
      */
@@ -115,7 +117,8 @@ public class TestEvent extends MethodDetailParserData implements ITestEvent
         return val;
     }
 
-    /**
+    
+/**
      * @param n
      * @param string
      * @return

@@ -49,6 +49,7 @@ import org.netbeans.modules.uml.core.metamodel.common.commonactions.IClause;
 import org.netbeans.modules.uml.core.metamodel.common.commonactions.IConditionalAction;
 import org.netbeans.modules.uml.core.AbstractUMLTestCase;
 
+
 /**
  * Test cases for TestEvent.
  */
@@ -61,7 +62,8 @@ public class TestEventTestCase extends AbstractUMLTestCase
 
     private TestEvent te;
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see junit.framework.TestCase#setUp()
      */
     protected void setUp() throws Exception

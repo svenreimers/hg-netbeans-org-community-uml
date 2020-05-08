@@ -48,6 +48,7 @@ package org.netbeans.modules.uml.core.reverseengineering.reframework;
 import org.netbeans.modules.uml.core.AbstractUMLTestCase;
 import org.dom4j.DocumentFactory;
 
+
 /**
  * Test cases for ActionEvent.
  */
@@ -60,7 +61,8 @@ public class ActionEventTestCase extends AbstractUMLTestCase
 
     private IActionEvent ae;
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see junit.framework.TestCase#setUp()
      */
     protected void setUp() throws Exception
@@ -71,7 +73,8 @@ public class ActionEventTestCase extends AbstractUMLTestCase
                 DocumentFactory.getInstance().createElement("UML:CallAction"));
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see junit.framework.TestCase#tearDown()
      */
     protected void tearDown() throws Exception

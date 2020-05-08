@@ -53,10 +53,8 @@ import org.openide.filesystems.FileObject;
 import org.openide.filesystems.FileUtil;
 import org.openide.loaders.DataObject;
 
-/**
- *
- * @author Jyothi
- */
+
+
 public class SaveDiagram implements SaveCookie {
 
     private DesignerScene scene;

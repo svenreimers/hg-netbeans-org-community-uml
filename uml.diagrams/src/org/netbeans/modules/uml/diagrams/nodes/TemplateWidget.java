@@ -61,10 +61,8 @@ import org.openide.util.Lookup;
 import org.openide.util.lookup.AbstractLookup;
 import org.openide.util.lookup.InstanceContent;
 
-/**
- *
- * @author treyspiva
- */
+
+
 public class TemplateWidget extends LabelWidget implements Customizable
 {
 
@@ -100,7 +98,8 @@ public class TemplateWidget extends LabelWidget implements Customizable
 
     ///////////////////////////////////////////////////////////////
     // PropertyChangeListener Implementation
-    /**
+    
+/**
      * The property change listener is used by the diagram to notify widgets of
      * model element property change events.
      */

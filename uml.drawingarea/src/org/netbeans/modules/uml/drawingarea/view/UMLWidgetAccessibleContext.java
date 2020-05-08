@@ -64,6 +64,7 @@ import java.awt.*;
 import java.awt.event.FocusListener;
 import java.util.Locale;
 
+
 /**
  * 
  */
@@ -344,7 +345,8 @@ public class UMLWidgetAccessibleContext extends AccessibleContext
             }
             return new Point(xmin, ymin);    
         }
-        /*
+        
+/*
         Widget parent = widget.getParentWidget();
         if (p!= null && parent != null) 
         {

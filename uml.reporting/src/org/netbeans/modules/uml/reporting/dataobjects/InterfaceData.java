@@ -47,10 +47,8 @@ package org.netbeans.modules.uml.reporting.dataobjects;
 
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.Interface;
 
-/**
- *
- * @author Sheryl
- */
+
+
 public class InterfaceData extends ClassData
 {
     

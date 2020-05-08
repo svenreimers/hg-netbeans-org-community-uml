@@ -43,6 +43,7 @@
  */
 
 
+
 /*
  * ComponentDiagramVerifier.java
  *
@@ -55,10 +56,8 @@ import java.io.PrintStream;
 import org.netbeans.test.umllib.DiagramElementOperator;
 import org.netbeans.test.umllib.ElementTypes;
 
-/**
- *
- * @author Alexei Mokeev
- */
+
+
 public class ComponentDiagramVerifier extends AbstractDiagramVerifier{
     //String[] elements = 
     /** Creates a new instance of ComponentDiagramVerifier */

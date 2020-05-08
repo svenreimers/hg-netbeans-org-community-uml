@@ -62,7 +62,8 @@ public class RoleBinding extends Dependency implements IRoleBinding
 		super();
 	}
 	
-	/**
+	
+/**
 	 * property Collaboration
 	*/
 	public ICollaborationOccurrence getCollaboration()
@@ -71,7 +72,8 @@ public class RoleBinding extends Dependency implements IRoleBinding
 		return collector.retrieveSingleElementWithAttrID(this,"collaboration", ICollaborationOccurrence.class);		
 	}
 
-	/**
+	
+/**
 	 * property Collaboration
 	*/
 	public void setCollaboration( ICollaborationOccurrence collab )
@@ -98,7 +100,8 @@ public class RoleBinding extends Dependency implements IRoleBinding
 						);		
 	}
 
-	/**
+	
+/**
 	 * property Feature
 	*/
 	public IStructuralFeature getFeature()
@@ -107,7 +110,8 @@ public class RoleBinding extends Dependency implements IRoleBinding
 		return collector.retrieveSingleElementWithAttrID(this,"feature", IStructuralFeature.class);			
 	}
 
-	/**
+	
+/**
 	 * property Feature
 	*/
 	public void setFeature( IStructuralFeature feature )
@@ -115,7 +119,8 @@ public class RoleBinding extends Dependency implements IRoleBinding
 		super.addElementByID(feature,"feature");
 	}
 
-	/**
+	
+/**
 	 * property Role
 	*/
 	public IStructuralFeature getRole()
@@ -124,14 +129,16 @@ public class RoleBinding extends Dependency implements IRoleBinding
 		return collector.retrieveSingleElementWithAttrID(this,"role", IStructuralFeature.class);		
 	}
 
-	/**
+	
+/**
 	 * property Role
 	*/
 	public void setRole( IStructuralFeature feature )
 	{
 		super.addElementByID(feature,"role");
 	}
-	/**
+	
+/**
 	 * Establishes the appropriate XML elements for this UML type.
 	 *
 	 * [in] The document where this element will reside

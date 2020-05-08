@@ -61,10 +61,8 @@ import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure
 import org.netbeans.modules.uml.diagrams.nodes.AttributeWidget;
 import org.netbeans.modules.uml.drawingarea.util.Util;
 
-/**
- *
- * @author treyspiva
- */
+
+
 public class QualifierLabelWidget extends Widget 
         implements PropertyChangeListener
 {

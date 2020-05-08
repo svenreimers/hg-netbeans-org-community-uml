@@ -62,10 +62,8 @@ import org.netbeans.modules.uml.core.support.umlsupport.XMLManip;
 import org.netbeans.modules.uml.core.support.umlutils.ETArrayList;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
-/**
- * 
- * @author Trey Spiva
- */
+
+
 public class ProductArchiveImpl implements IProductArchive
 {
 	private static final String BUNDLE_CLASS = "org.netbeans.modules.uml.ui.support.archivesupport.Bundle_noi18n";
@@ -119,7 +117,8 @@ public class ProductArchiveImpl implements IProductArchive
 		}
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.support.archivesupport.IProductArchive#save(java.lang.String)
 	 */
 	public boolean save(String sFilename)
@@ -137,14 +136,8 @@ public class ProductArchiveImpl implements IProductArchive
 		return retVal;
 	}
 
-	/**
-	 * Temporarily loads the xml file sFilename and populates our list of archive elements.
-	 *
-	 * @param sFilename The name of the xml file to open
-	 * @return true if the file was opened ok
-	 * 
-	 * @see org.netbeans.modules.uml.ui.support.archivesupport.IProductArchive#load(java.lang.String)
-	 */
+	
+
 	public boolean load(String sFilename)
 	{
 		m_Document = XMLManip.getDOMDocument(sFilename);
@@ -157,7 +150,8 @@ public class ProductArchiveImpl implements IProductArchive
 		return m_Loaded;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.support.archivesupport.IProductArchive#isLoaded()
 	 */
 	public boolean isLoaded()
@@ -165,7 +159,8 @@ public class ProductArchiveImpl implements IProductArchive
 		return getArchiveFilename() != null && getArchiveFilename().length() > 0;
 	}
 
-	/**
+	
+/**
 	 * Creates an element of id sID in the archive's list.
 	 *
 	 * @param sID The id of the element to be created
@@ -176,7 +171,8 @@ public class ProductArchiveImpl implements IProductArchive
 		return createElement(sID, false);
 	}
 
-	/**
+	
+/**
 	 * Creates an element of id sID in the archive's list.
 	 *
 	 * @param sID The id of the element to be created
@@ -226,7 +222,8 @@ public class ProductArchiveImpl implements IProductArchive
 		return retEle;
 	}
 
-	/**
+	
+/**
 	 * Returns the archive element that has this id.  Note that since archive elements can contain other
 	 * archive elements the user should be aware that this is not a deep search.  Only the elements
 	 * directly off the archive will be searched.
@@ -249,7 +246,8 @@ public class ProductArchiveImpl implements IProductArchive
 		return null;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Locates and then creates an IProductArchiveElement.
 	 *
@@ -279,7 +277,8 @@ public class ProductArchiveImpl implements IProductArchive
 		return null;
 	}
 
-	/**
+	
+/**
 	 * Locates and then creates an IProductArchiveElement.
 	 *
 	 * @param node The node to begin the search from
@@ -301,7 +300,8 @@ public class ProductArchiveImpl implements IProductArchive
 		return null;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.support.archivesupport.IProductArchive#getElementsFromModelElement(java.lang.String)
 	 */
 	public ETList<IProductArchiveElement> getElementsFromModelElement(String sElementID)
@@ -341,7 +341,8 @@ public class ProductArchiveImpl implements IProductArchive
 		return retObj;
 	}
 
-	/**
+	
+/**
 	 * Returns the list of toplevel archive elements.  Note that archive elements could contain other
 	 * archive elements.
 	 *
@@ -373,7 +374,8 @@ public class ProductArchiveImpl implements IProductArchive
 		return retObj;
 	}
 
-	/**
+	
+/**
 	 * Inserts an item into an index table.
 	 *
 	 * @param sTableName [in] The name of the table
@@ -429,7 +431,8 @@ public class ProductArchiveImpl implements IProductArchive
 		return new ETPairT<IProductArchiveElement, Integer>(retElement, new Integer(pKey));
 	}
 
-	/**
+	
+/**
 	 * Inserts sTableEntry into the table sTableName and creates an attribute named 
 	 * sIndexAttributeName on pElementToAddIndexTo with the key value.
 	 *
@@ -458,7 +461,8 @@ public class ProductArchiveImpl implements IProductArchive
 		return pCreatedAttr;
 	}
 
-	/**
+	
+/**
 	 * Removes an item by index from the table.
 	 * @param sTableName [in] The name of the table
 	 * @param sTableEntry [in] The value of the table entry
@@ -475,7 +479,8 @@ public class ProductArchiveImpl implements IProductArchive
 		return true;
 	}
 
-	/**
+	
+/**
 	 * Gets a string from the table based on the index.
 	 *
 	 * @param sTableName [in] The name of the table
@@ -553,7 +558,8 @@ public class ProductArchiveImpl implements IProductArchive
 		return retVal;
 	}
 
-	/**
+	
+/**
 	 * Gets an item from an index table.
 	 *
 	 * @param sTableName [in] The name of the table
@@ -580,7 +586,8 @@ public class ProductArchiveImpl implements IProductArchive
 		return retEle;
 	}
 
-	/**
+	
+/**
 	 * Find sAttributeName in pArchiveElement, then look into the table sTableName and 
 	 * return the pFoundElement.
 	 * 
@@ -666,7 +673,8 @@ public class ProductArchiveImpl implements IProductArchive
 		return new ETPairT<IProductArchiveElement, String>(retEle, retStr);
 	}
 
-	/**
+	
+/**
 	 * Retrieve the name of the archive file.
 	 * 
 	 * @return The name of the file. 
@@ -676,7 +684,8 @@ public class ProductArchiveImpl implements IProductArchive
 		return m_ArchiveFilename;
 	}
 
-	/**
+	
+/**
 	 * Sets the name of the archive file.
 	 * 
 	 * @param value The name of the file. 
@@ -686,7 +695,8 @@ public class ProductArchiveImpl implements IProductArchive
 		m_ArchiveFilename = value;
 	}
 
-	/**
+	
+/**
 	 * Based on the table name and index this routine returns all the table entries that aren't deleted.
 	 */
 	public ETList<IProductArchiveElement> getAllTableEntries(String tableName)

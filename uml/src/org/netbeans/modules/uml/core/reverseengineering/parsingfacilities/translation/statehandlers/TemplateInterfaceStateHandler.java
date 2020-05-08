@@ -46,10 +46,8 @@ package org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.trans
 
 import org.dom4j.Node;
 
-/**
- *
- * @author Trey Spiva
- */
+
+
 public class TemplateInterfaceStateHandler extends InterfaceStateHandler
 {
     
@@ -92,7 +90,8 @@ public class TemplateInterfaceStateHandler extends InterfaceStateHandler
     
     
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.statehandlers.StateHandler#stateComplete(java.lang.String)
      */
     public void stateComplete(String stateName)

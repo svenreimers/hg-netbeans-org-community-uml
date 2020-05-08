@@ -43,6 +43,7 @@
  */
 
 
+
 /*
  * DefaultVisibility.java
  *
@@ -53,10 +54,8 @@
 package org.netbeans.test.umllib.values;
 
 
-/**
- *
- * @author Alexandr Scherbatiy
- */
+
+
 public enum DefaultVisibility implements Visibility{
     
     PACKAGE(ValueConstant.VISIBILITY_PACKAGE),

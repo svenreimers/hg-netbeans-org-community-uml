@@ -43,6 +43,7 @@
  */
 
 
+
 /*
  * DiagramElementOperator.java
  *
@@ -97,10 +98,8 @@ import org.netbeans.test.umllib.exceptions.NotFoundException;
 import org.netbeans.test.umllib.exceptions.UMLCommonException;
 import org.netbeans.test.umllib.util.JPopupByPointChooser;
 
-/**
- * This is common class for the all diagram elements
- * @author Alexei Mokeev
- */
+
+
 public class DiagramElementOperator extends Operator implements Actionable {
 
     private DiagramOperator diagramOperator = null;
@@ -109,13 +108,15 @@ public class DiagramElementOperator extends Operator implements Actionable {
      
 
 
-    /**
+    
+/**
      * Default delay for Diagram Element Waiter. Real value can be changed
      * as for the all other operators(For example via JemmyProperties)
      */ 
     public static final long WAIT_GRAPHOBJECT_TIMEOUT = 60000;
 
-    /**
+    
+/**
      * Construct DiagramElementOperator by visible name
      * @param diagramOperator Diagram to look for element
      * @param elementVN Element visible name. Visible name is the name as you see it on a diagram
@@ -125,7 +126,8 @@ public class DiagramElementOperator extends Operator implements Actionable {
         this(diagramOperator, new ElementByVNChooser(elementVN, ElementTypes.ANY), 0);
     }
 
-    /**
+    
+/**
      * Construct DiagramElementOperator by visible name, type and index
      * @param diagramOperator Diagram to look for element
      * @param elementVN Element visible name. Visible name is the name as you see it on a diagram
@@ -140,7 +142,8 @@ public class DiagramElementOperator extends Operator implements Actionable {
          
     }
 
-    /**
+    
+/**
      * Construct DiagramElementOperator by visible name, type and index
      * @param diagramOperator Diagram to look for element
      * @param elementVN Element visible name. Visible name is the name as you see it on a diagram
@@ -154,7 +157,8 @@ public class DiagramElementOperator extends Operator implements Actionable {
       
     }
 
-    /**
+    
+/**
      *
      * @param diagramOperator
      * @param elementVN
@@ -166,7 +170,8 @@ public class DiagramElementOperator extends Operator implements Actionable {
         
     }
 
-    /**
+    
+/**
      * Construct DiagramElementOperator by visible name and index
      * @param diagramOperator Diagram to look for element
      * @param elementVN Element visible name. Visible name is the name as you see it on a diagram
@@ -178,7 +183,8 @@ public class DiagramElementOperator extends Operator implements Actionable {
          
     }
 
-    /**
+    
+/**
      * Construct DiagramElementOperator by custom finder and index
      * @param diagramOperator Diagram to look for element
      * @param elementFinder custom finder
@@ -189,7 +195,8 @@ public class DiagramElementOperator extends Operator implements Actionable {
         this(diagramOperator, waitForGraphObject(diagramOperator, elementFinder, index));
     }
 
-    /**
+    
+/**
      *
      * @param diagramOperator
      * @param elementFinder
@@ -201,7 +208,8 @@ public class DiagramElementOperator extends Operator implements Actionable {
         this(diagramOperator, waitForGraphObject(diagramOperator, elementFinder, index, lookForAllElements));
     }
 
-    /**
+    
+/**
      * Construct DiagramElementOperator by given graphObject
      * @param diagramOperator Diagram to look for element
      * @param graphObject given graph object
@@ -215,7 +223,8 @@ public class DiagramElementOperator extends Operator implements Actionable {
 
 
 
-    /**
+    
+/**
      * Search for suitable graph object
      * @return Graph object if found
      * @param lookForAllElements
@@ -260,7 +269,8 @@ public class DiagramElementOperator extends Operator implements Actionable {
     }
 
 
-    /**
+    
+/**
      *
      * @param diagramOperator
      * @param elementFinder
@@ -273,7 +283,8 @@ public class DiagramElementOperator extends Operator implements Actionable {
      }
     
   
-    /**
+    
+/**
      * Wait for suitable graph object
      * @return Element's GraphObject if found
      * @param lookForAllElements
@@ -312,7 +323,8 @@ public class DiagramElementOperator extends Operator implements Actionable {
      }
       
      
-    /**
+    
+/**
      *
      * @param diagramOperator
      * @param elementFinder
@@ -324,7 +336,8 @@ public class DiagramElementOperator extends Operator implements Actionable {
     }
  
 
-    /**
+    
+/**
      * Wait for suitable graph object disaapearnce
      * @param diagramOperator Diagram to look for element
      * @param elementFinder custom finder
@@ -363,7 +376,8 @@ public class DiagramElementOperator extends Operator implements Actionable {
         }        
     }
 
-    /**
+    
+/**
      * Wait for selection state, timeout 5 seconds
      * @param selected
      */
@@ -371,7 +385,8 @@ public class DiagramElementOperator extends Operator implements Actionable {
         waitSelection(selected, 5000);
     }
 
-    /**
+    
+/**
      * Wait for selection state
      * @param selected
      * @param timeout
@@ -391,7 +406,8 @@ public class DiagramElementOperator extends Operator implements Actionable {
         throw new UMLCommonException("Failed to wait for '" + selected + "' selection state//debug: "   );
     }
 
-    /**
+    
+/**
      *
      * @return
      */
@@ -406,7 +422,8 @@ public class DiagramElementOperator extends Operator implements Actionable {
     }
 
 
-    /**
+    
+/**
      *
      * @return
      */
@@ -421,7 +438,8 @@ public class DiagramElementOperator extends Operator implements Actionable {
     }
 
 
-    /**
+    
+/**
      *
      * @return
      */
@@ -435,7 +453,8 @@ public class DiagramElementOperator extends Operator implements Actionable {
     }
 
 
-    /**
+    
+/**
      * Return element type
      * @return Type of element
      */
@@ -447,7 +466,8 @@ public class DiagramElementOperator extends Operator implements Actionable {
        //  return getPresentationElement().getElementType();   
     }
 
-    /**
+    
+/**
      * The method has to resize the element by x in width and y in height
      * CAUTION! May not work when scrolling is involved
      * @param x
@@ -465,7 +485,8 @@ public class DiagramElementOperator extends Operator implements Actionable {
     }
 
 
-    /**
+    
+/**
      * We must implement this method to extend Operator, but since
      * we are not working with Component this method always return null;
      * @return null
@@ -476,7 +497,8 @@ public class DiagramElementOperator extends Operator implements Actionable {
 
 
 
-    /**
+    
+/**
      * Returns Widget for this diagram element
      * @return Widget for this diagram element
      */
@@ -484,7 +506,8 @@ public class DiagramElementOperator extends Operator implements Actionable {
         return elementGraphObject;
     }
 
-    /**
+    
+/**
      * Return Presentation for this diagram element
      * @return Presentation for this diagram element
      */
@@ -495,7 +518,8 @@ public class DiagramElementOperator extends Operator implements Actionable {
             return (PresentationElement) scene.findObject(elementGraphObject);
      }
      
-    /**
+    
+/**
      * Wrapper for elementGraphObject.getEngine().getBoundingRect().getRectangle();
      * @return Rectangle
      */
@@ -503,7 +527,8 @@ public class DiagramElementOperator extends Operator implements Actionable {
          return elementGraphObject.getBounds();    
     }
 
-    /**
+    
+/**
      * Return Diagram, where this element is placed
      * @return Diagram, where this element is placed
      */
@@ -512,7 +537,8 @@ public class DiagramElementOperator extends Operator implements Actionable {
     }
 
 
-    /**
+    
+/**
      * Returns name of element
      * @return name of element
      */
@@ -534,7 +560,8 @@ public class DiagramElementOperator extends Operator implements Actionable {
     }
 
 
-    /**
+    
+/**
      * Returns type or null if we have several subjects. Should be overriden in subclasses
      * @return type or null if we have several subjects. Should be overriden in subclasses
      */
@@ -546,7 +573,8 @@ public class DiagramElementOperator extends Operator implements Actionable {
         
     }
 
-    /**
+    
+/**
      * Returns expanded type or null if we have several subjects. Should be overriden in subclasses
      * @return expanded type or null if we have several subjects. Should be overriden in subclasses
      */
@@ -558,7 +586,8 @@ public class DiagramElementOperator extends Operator implements Actionable {
          
     }
 
-    /**
+    
+/**
      * Returns all links from and to the diagram element
      * @return all links from and to the diagram element
      */
@@ -581,7 +610,8 @@ public class DiagramElementOperator extends Operator implements Actionable {
         return links;
     }
 
-    /**
+    
+/**
      * Returns all incoming links
      * @return All incoming links
      */
@@ -607,7 +637,8 @@ public class DiagramElementOperator extends Operator implements Actionable {
         return links;
     }
 
-    /**
+    
+/**
      * Returns all outcoming links
      * @return All outcoming links
      */
@@ -639,7 +670,8 @@ public class DiagramElementOperator extends Operator implements Actionable {
     }
 
 
-    /**
+    
+/**
      * Returns center point of this diagram element
      * @return Center point of this diagram element
      */
@@ -651,7 +683,8 @@ public class DiagramElementOperator extends Operator implements Actionable {
         //return elementGraphObject.getEngine().getBoundingRect().getCenterPoint();
     }
 
-    /**
+    
+/**
      *
      * @return bounding rect for element
      */
@@ -663,7 +696,8 @@ public class DiagramElementOperator extends Operator implements Actionable {
               
     }
 
-    /**
+    
+/**
      *
      * @param clickCount
      * @param mouseButton
@@ -674,7 +708,8 @@ public class DiagramElementOperator extends Operator implements Actionable {
     }
 
 
-    /**
+    
+/**
      *
      * @param clickCount
      * @param mouseButton
@@ -688,7 +723,8 @@ public class DiagramElementOperator extends Operator implements Actionable {
     }
 
 
-    /**
+    
+/**
      *
      * @param p
      * @param clickCount
@@ -723,13 +759,14 @@ public class DiagramElementOperator extends Operator implements Actionable {
     }
 
 
-    /**
+    
+/**
      *
      * @param selectIt
      * @param deselectOthers
      */
     public void center(boolean selectIt, boolean deselectOthers) {
-        //TODO: Wait for trey's center api
+        
 //6.0        try {
 //            Thread.sleep(100);
 //        } catch (Exception ex) {
@@ -746,14 +783,15 @@ public class DiagramElementOperator extends Operator implements Actionable {
 //6.0        }
     }
 
-    /**
+    
+/**
      * gets point inside a component and, if component is not visible centers window in this component.
      * The updated device point is returned
      * @param point
      * @return
      */
     public Point makeVisible(Point point) {
-        //TODO: wait for Trey's cener API
+        
 // 6.0       ADGraphWindow area = diagramOperator.getDrawingArea().getArea();
 //        IDrawingAreaControl daControl = area.getDrawingArea();
 //
@@ -772,7 +810,8 @@ public class DiagramElementOperator extends Operator implements Actionable {
     }
 
  
-    /**
+    
+/**
      *
      * @return
      */
@@ -792,7 +831,8 @@ public class DiagramElementOperator extends Operator implements Actionable {
         return al;
     }
 
-    /**
+    
+/**
      * Call popup from up-left corner of element
      * @return popup
      */
@@ -827,7 +867,8 @@ public class DiagramElementOperator extends Operator implements Actionable {
 
 
     //Methods from Actionable interface
-    /**
+    
+/**
      * Call popup from central of element
      * @return
      */
@@ -906,7 +947,8 @@ public class DiagramElementOperator extends Operator implements Actionable {
 //        }
     }
 
-    /**
+    
+/**
      *
      * @param avoidcollitionsandretry
      */
@@ -951,7 +993,8 @@ public class DiagramElementOperator extends Operator implements Actionable {
         }
     }
 
-    /**
+    
+/**
      *
      * @return
      */
@@ -982,7 +1025,8 @@ public class DiagramElementOperator extends Operator implements Actionable {
         }
     }
 
-    /**
+    
+/**
      * Change element size with usage of mouse robot driver
      * @param width
      * @param height
@@ -1004,7 +1048,8 @@ public class DiagramElementOperator extends Operator implements Actionable {
         new Timeout("", 500).sleep();
     }
 
-    /**
+    
+/**
      *
      * @param width
      * @param height
@@ -1013,7 +1058,8 @@ public class DiagramElementOperator extends Operator implements Actionable {
         setSize((int) width, (int) height);
     }
 
-    /**
+    
+/**
      * Change element position with usage of mouse robot driver
      * @param x
      * @param y
@@ -1032,7 +1078,8 @@ public class DiagramElementOperator extends Operator implements Actionable {
         new Timeout("", 500).sleep();
     }
 
-    /**
+    
+/**
      *
      * @param x
      * @param y
@@ -1041,7 +1088,8 @@ public class DiagramElementOperator extends Operator implements Actionable {
         moveTo((int) x, (int) y);
     }
 
-    /**
+    
+/**
      * Change element position with usage of mouse robot driver
      * @param dx
      * @param dy
@@ -1060,7 +1108,8 @@ public class DiagramElementOperator extends Operator implements Actionable {
         new Timeout("", 500).sleep();
     }
 
-    /**
+    
+/**
      *
      * @param dx
      * @param dy
@@ -1069,7 +1118,8 @@ public class DiagramElementOperator extends Operator implements Actionable {
         shift((int) dx, (int) dy);
     }
 
-    /**
+    
+/**
      *
      * @param el
      * @return
@@ -1093,7 +1143,8 @@ public class DiagramElementOperator extends Operator implements Actionable {
 
     public static class DiagramElementComparator<C extends Widget> implements Comparator<C> {
 
-        /**
+        
+/**
          *
          * @param o1
          * @param o2
@@ -1128,7 +1179,8 @@ public class DiagramElementOperator extends Operator implements Actionable {
         private ExpandedElementTypes elemExTypeEnu = null;
         private StringComparator comparator = null;
 
-        /**
+        
+/**
          *
          * @param vn
          * @param elementType
@@ -1141,7 +1193,8 @@ public class DiagramElementOperator extends Operator implements Actionable {
             this.comparator = comparator;
         }
 
-        /**
+        
+/**
          *
          * @param vn
          * @param elementType
@@ -1150,7 +1203,8 @@ public class DiagramElementOperator extends Operator implements Actionable {
             this(vn, elementType, new Operator.DefaultStringComparator(true, true));
         }
 
-        /**
+        
+/**
          *
          * @param vn
          * @param elementType
@@ -1163,7 +1217,8 @@ public class DiagramElementOperator extends Operator implements Actionable {
             this.comparator = comparator;
         }
 
-        /**
+        
+/**
          *
          * @param vn
          * @param elementType
@@ -1172,7 +1227,8 @@ public class DiagramElementOperator extends Operator implements Actionable {
             this(vn, elementType, new Operator.DefaultStringComparator(true, true));
         }
 
-        /**
+        
+/**
          *
          * @param widget
          * @return
@@ -1222,7 +1278,8 @@ public class DiagramElementOperator extends Operator implements Actionable {
             return false;
         }
 
-        /**
+        
+/**
          *
          * @return
          */
@@ -1238,7 +1295,8 @@ public class DiagramElementOperator extends Operator implements Actionable {
 
         private String elementType = null;
 
-        /**
+        
+/**
          *
          * @param elementType
          */
@@ -1247,7 +1305,8 @@ public class DiagramElementOperator extends Operator implements Actionable {
         }
 
 
-        /**
+        
+/**
          *
          * @param graphObject
          * @return
@@ -1272,7 +1331,8 @@ public class DiagramElementOperator extends Operator implements Actionable {
                
         }
 
-        /**
+        
+/**
          *
          * @return
          */
@@ -1286,7 +1346,8 @@ public class DiagramElementOperator extends Operator implements Actionable {
         public DefaultNamer() {
         }
 
-        /**
+        
+/**
          *
          * @param drawingArea
          * @param x
@@ -1338,7 +1399,8 @@ public class DiagramElementOperator extends Operator implements Actionable {
         public LabelsNamer() {
         }
 
-        /**
+        
+/**
          *
          * @param co
          * @param x
@@ -1373,7 +1435,8 @@ public class DiagramElementOperator extends Operator implements Actionable {
         public PropertyNamer() {
         }
 
-        /**
+        
+/**
          *
          * @param co
          * @param x

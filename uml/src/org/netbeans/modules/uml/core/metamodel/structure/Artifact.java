@@ -71,7 +71,8 @@ import org.netbeans.modules.uml.core.workspacemanagement.IWorkspace;
 public class Artifact extends Classifier implements IArtifact 
 {
 
-	/**
+	
+/**
 	 * 
 	 */
 	public Artifact() 
@@ -164,7 +165,8 @@ public class Artifact extends Classifier implements IArtifact
 		addElementByID(comp,"implementedElement");
 	}
 	
-	/**
+	
+/**
 	 * Establishes the appropriate XML elements for this UML type.
 	 *
 	 * [in] The document where this element will reside
@@ -175,7 +177,8 @@ public class Artifact extends Classifier implements IArtifact
 		buildNodePresence("UML:Artifact",doc,parent);
 	}
 	
-	/**
+	
+/**
 	 * The absolute path to the associated file.
 	 */	 
 	public String getFileName()
@@ -190,7 +193,8 @@ public class Artifact extends Classifier implements IArtifact
 		return absolutePath;
 	}
 	
-	/**
+	
+/**
 	 * The absolute path to the associated file.
 	 */
 	public void setFileName( String newVal )
@@ -212,7 +216,8 @@ public class Artifact extends Classifier implements IArtifact
 		}			
 	}
 	
-	/**
+	
+/**
 	 * The source file artifact's base directory.
 	 */
 	protected String getBaseDir()
@@ -240,7 +245,8 @@ public class Artifact extends Classifier implements IArtifact
 		return baseDir;
 	}
 	
-	/**
+	
+/**
 	 *
 	 * Retrieves the absolute path of relative.
 	 *
@@ -285,7 +291,8 @@ public class Artifact extends Classifier implements IArtifact
 		return absolutePath;		
 	}
 	
-	/**
+	
+/**
 	 * 
 	 * Retrieves the relative path between newFile and curFile.
 	 *
@@ -321,7 +328,8 @@ public class Artifact extends Classifier implements IArtifact
 		return retVal;
 	}
 	
-	/** 
+	
+/** 
 	 * This operation calculates the artifact's base directory based on:
 	 * - the owning classifier's fully qualified name
 	 * - the path to the file

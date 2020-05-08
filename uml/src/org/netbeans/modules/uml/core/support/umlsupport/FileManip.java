@@ -53,10 +53,8 @@ import java.io.IOException;
 import org.netbeans.modules.uml.core.preferenceframework.IPreferenceAccessor;
 import org.netbeans.modules.uml.core.preferenceframework.PreferenceAccessor;
 
-/**
- * @author sumitabhk
- *
- */
+
+
 public class FileManip {
 
 	/**
@@ -66,7 +64,8 @@ public class FileManip {
 		super();
 	}
 
-	/**
+	
+/**
 	 *
 	 * Resolves any sub strings in the passed in string that begin with '%' and
 	 * end with '%'. The string between the asterixes must be found in the preference
@@ -102,7 +101,8 @@ public class FileManip {
 		return finalPath;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Determines whether or not the file pointed to contains the passed-in
 	 * string anywhere in the file.

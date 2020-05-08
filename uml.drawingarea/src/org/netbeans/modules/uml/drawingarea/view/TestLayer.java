@@ -48,10 +48,8 @@ import org.netbeans.api.visual.widget.LayerWidget;
 import org.netbeans.api.visual.widget.Scene;
 import org.netbeans.api.visual.widget.Widget;
 
-/**
- *
- * @author treyspiva
- */
+
+
 public class TestLayer extends Widget
 {
     public TestLayer(Scene scene)
@@ -59,7 +57,8 @@ public class TestLayer extends Widget
         super(scene);
     }
     
-    /**
+    
+/**
      * Returns whether a specified local location is part of the layer widget.
      * @param localLocation the local location
      * @return always false
@@ -68,7 +67,8 @@ public class TestLayer extends Widget
         return false;
     }
 
-    /**
+    
+/**
      * Returns whether the layer widget requires to repainted after revalidation.
      * @return always false
      */

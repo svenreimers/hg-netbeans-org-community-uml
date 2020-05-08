@@ -67,11 +67,8 @@ import org.netbeans.test.umllib.exceptions.NotFoundException;
 import org.netbeans.test.umllib.testcases.UMLTestCase;
 import org.netbeans.test.umllib.vrf.LinkVerifier;
 
-/**
- *
- * @author yaa
- * @spec UML/DeploymentDiagram.xml
- */
+
+
 public class DPD_RealizeLink extends UMLTestCase {
     
     private static String prName = "UMLProject1DPD1";
@@ -96,6 +93,7 @@ public class DPD_RealizeLink extends UMLTestCase {
 
 //------------------------------------------------------------------------------    
     
+
 /**
  * @caseblock Realize link
  * @usecase Delete a Realize link from a diagram by popup menu
@@ -107,6 +105,7 @@ public class DPD_RealizeLink extends UMLTestCase {
         }
     }
     
+
 /**
  * @caseblock Realize link
  * @usecase Delete a Realize link from a diagram by shortcut
@@ -118,6 +117,7 @@ public class DPD_RealizeLink extends UMLTestCase {
         }
     }
     
+
 /**
  * @caseblock Realize link
  * @usecase Select all on a diagram by popup menu of a Realize link
@@ -128,6 +128,7 @@ public class DPD_RealizeLink extends UMLTestCase {
             fail("Test failed. Details in log file.");
         }
     }
+
 
 /**
  * @caseblock Realize link
@@ -140,6 +141,7 @@ public class DPD_RealizeLink extends UMLTestCase {
         }
     }
 
+
 /**
  * @caseblock Realize link
  * @usecase Find source element of a Realize link
@@ -150,6 +152,7 @@ public class DPD_RealizeLink extends UMLTestCase {
             fail("Test failed. Details in log file.");
         }
     }
+
 
 /**
  * @caseblock Realize link
@@ -162,6 +165,7 @@ public class DPD_RealizeLink extends UMLTestCase {
         }
     }
     
+
 /**
  * @caseblock Realize link
  * @usecase Redirect source element of a Realize link
@@ -172,6 +176,7 @@ public class DPD_RealizeLink extends UMLTestCase {
             fail("Test failed. Details in log file.");
         }
     }
+
 
 /**
  * @caseblock Realize link
@@ -184,6 +189,7 @@ public class DPD_RealizeLink extends UMLTestCase {
         }
     }
 
+
 /**
  * @caseblock Realize link
  * @usecase Redirect source element of a Realize link
@@ -194,6 +200,7 @@ public class DPD_RealizeLink extends UMLTestCase {
             fail("Test failed. Details in log file.");
         }
     }
+
 
 /**
  * @caseblock Realize link
@@ -206,6 +213,7 @@ public class DPD_RealizeLink extends UMLTestCase {
         }
     }
 
+
 /**
  * @caseblock Realize link
  * @usecase Redirect source element of a Realize link
@@ -216,6 +224,7 @@ public class DPD_RealizeLink extends UMLTestCase {
             fail("Test failed. Details in log file.");
         }
     }
+
 
 /**
  * @caseblock Realize link
@@ -228,6 +237,7 @@ public class DPD_RealizeLink extends UMLTestCase {
         }
     }
 
+
 /**
  * @caseblock Realize link
  * @usecase Redirect source element of a Realize link
@@ -238,6 +248,7 @@ public class DPD_RealizeLink extends UMLTestCase {
             fail("Test failed. Details in log file.");
         }
     }
+
 
 /**
  * @caseblock Realize link
@@ -250,6 +261,7 @@ public class DPD_RealizeLink extends UMLTestCase {
         }
     }
 
+
 /**
  * @caseblock Realize link
  * @usecase Redirect source element of a Realize link
@@ -261,6 +273,7 @@ public class DPD_RealizeLink extends UMLTestCase {
         }
     }
     
+
 /**
  * @caseblock Realize link
  * @usecase Redirect target element of a Realize link
@@ -271,6 +284,7 @@ public class DPD_RealizeLink extends UMLTestCase {
             fail(79858, "Test failed. Details in log file.");
         }
     }
+
 
 /**
  * @caseblock Realize link
@@ -283,6 +297,7 @@ public class DPD_RealizeLink extends UMLTestCase {
         }
     }
 
+
 /**
  * @caseblock Realize link
  * @usecase Redirect target element of a Realize link
@@ -293,6 +308,7 @@ public class DPD_RealizeLink extends UMLTestCase {
             fail("Test failed. Details in log file.");
         }
     }
+
 
 /**
  * @caseblock Realize link
@@ -305,6 +321,7 @@ public class DPD_RealizeLink extends UMLTestCase {
         }
     }
     
+
 /**
  * @caseblock Realize link
  * @usecase Redirect target element of a Realize link
@@ -315,6 +332,7 @@ public class DPD_RealizeLink extends UMLTestCase {
             fail("Test failed. Details in log file.");
         }
     }
+
 
 /**
  * @caseblock Realize link
@@ -327,6 +345,7 @@ public class DPD_RealizeLink extends UMLTestCase {
         }
     }
 
+
 /**
  * @caseblock Realize link
  * @usecase Redirect target element of a Realize link
@@ -338,6 +357,7 @@ public class DPD_RealizeLink extends UMLTestCase {
         }
     }
 
+
 /**
  * @caseblock Realize link
  * @usecase Redirect target element of a Realize link
@@ -348,6 +368,7 @@ public class DPD_RealizeLink extends UMLTestCase {
             fail("Test failed. Details in log file.");
         }
     }
+
 
 /**
  * @caseblock Realize link

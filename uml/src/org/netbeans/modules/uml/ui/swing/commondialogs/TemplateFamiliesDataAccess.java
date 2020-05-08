@@ -63,10 +63,8 @@ import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 import org.xml.sax.SAXParseException;
 
-/**
- *
- * @author Craig Conover, craig.conover@sun.com
- */
+
+
 public class TemplateFamiliesDataAccess
 {
     private Document data;

@@ -51,73 +51,78 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 public interface IVariableExpander
 {
-	/**
+	
+/**
 	 * The location of a configuration file that contains Expansion variable definitions
 	*/
 	public String getConfigFile();
 
-	/**
+	
+/**
 	 * The location of a configuration file that contains Expansion variable definitions
 	*/
 	public void setConfigFile( String value );
 
-	/**
+	
+/**
 	 * Retrieves the XML representation of an Expansion Variable
 	*/
 	public Node retrieveVarNode( String Name );
 
-	/**
+	
+/**
 	 * A reference to the TemplateManager conduction expansions.
 	*/
 	public ITemplateManager getManager();
 
-	/**
+	
+/**
 	 * A reference to the TemplateManager conduction expansions.
 	*/
 	public void setManager( ITemplateManager value );
 
-    /**
-     * Expands the text of the passed in expansion variable, making sure 
-     * formatting with the previous text formatted is continued.
-     *
-     * @param prevText  The text found before the expansion variable
-     * @param var       The variable to expand
-     * @param context   The context to expand against
-     * @return Formatted results, else "" if none found
-     */
+    
+
 	public String expand(String prevText, IExpansionVariable var, Node context);
 
-	/**
+	
+/**
 	 * Should be called whenever processing option expansion variables.
 	*/
 	public void beginGathering();
 
-	/**
+	
+/**
 	 * Should match every call to BeginGathering.
 	*/
 	public boolean endGathering();
 
-	/**
+	
+/**
 	 * Adds a result to this expander.
 	*/
 	public void addResult( IExpansionResult pResult );
 
-	/**
+	
+/**
 	 * Removes a result to this expander.
 	*/
 	public void removeResult( IExpansionResult pResult );
 
-	/**
+	
+/**
 	 * Appends the passed in results to the internal collection of results.
 	*/
 	public void appendResults( ETList<IExpansionResult> pResult );
 
-	/**
+	
+/**
 	 * Retrieves the results of this expander
 	*/
 	public ETList<IExpansionResult> getExpansionResults();
 
-	/**
+	
+/**
 	 * Retrieves the results of this expander
 	*/
 	public void setExpansionResults( ETList<IExpansionResult> value );

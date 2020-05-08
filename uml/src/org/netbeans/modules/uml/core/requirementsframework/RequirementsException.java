@@ -42,6 +42,7 @@
  * made subject to such option by the copyright holder.
  */
 
+
 /*
  * RequirementsException.java
  *
@@ -50,11 +51,8 @@
 
 package org.netbeans.modules.uml.core.requirementsframework;
 
-/**
- * A requirements exception that also keeps track of the specific cause of the
- * exception.
- * @author  Trey Spiva
- */
+
+
 public class RequirementsException extends Exception
 {
    /** An unknown error has occured. */
@@ -82,7 +80,8 @@ public class RequirementsException extends Exception
       this(RP_E_UNKNOWN, msg);
    }
    
-   /**
+   
+/**
     * Creates a new instance of <code>RequirementsException</code> without 
     * detail message.
     * 
@@ -99,7 +98,8 @@ public class RequirementsException extends Exception
    }
    
    
-   /**
+   
+/**
     * Constructs an instance of <code>RequirementsException</code> with the specified detail message.
     * @param msg the detail message.
     * 
@@ -117,7 +117,8 @@ public class RequirementsException extends Exception
       setExceptionCode(error);
    }
    
-   /**
+   
+/**
     * Retrieves the exception error code.  The valid exception error code are:
     *
     * RP_E_NO_SELECTION
@@ -137,7 +138,8 @@ public class RequirementsException extends Exception
       return m_ExceptionCode;
    }
    
-   /**
+   
+/**
     * Retrieves the exception error code.  The valid exception error code are:
     *
     * RP_E_NO_SELECTION

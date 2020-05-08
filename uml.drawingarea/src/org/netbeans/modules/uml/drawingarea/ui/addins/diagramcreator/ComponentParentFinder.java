@@ -60,12 +60,8 @@ import org.netbeans.modules.uml.core.support.umlsupport.StringUtilities;
 import org.netbeans.modules.uml.core.support.umlsupport.XMLManip;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
-/**
- * @author brettb
- *
- * To change the template for this generated type comment go to
- * Window>Preferences>Java>Code Generation>Code and Comments
- */
+
+
 public class ComponentParentFinder
 {
    /// The parent Component, the internal Classifier
@@ -81,7 +77,8 @@ public class ComponentParentFinder
    /// Part ID, Owning Component
    public static class PartMap extends HashMap< String, IComponent > {};
    
-   /**
+   
+/**
     * Attempts to match each classifier passed in with an owning component from the list of components passed in
     * 
     * @param components[in]     The list of components to check against
@@ -122,7 +119,8 @@ public class ComponentParentFinder
       return collection;
    }
    
-   /**
+   
+/**
     * Retrieves all the ids of internal components from each of the components passed in
     * and builds a map of the ids to owning component
     * 
@@ -168,7 +166,8 @@ public class ComponentParentFinder
    }
    
    
-   /**
+   
+/**
     * Retrieves the ID of the whole part for the passed in classifier
     * 
     * @param classifier[in]  Classifier to retrieve from

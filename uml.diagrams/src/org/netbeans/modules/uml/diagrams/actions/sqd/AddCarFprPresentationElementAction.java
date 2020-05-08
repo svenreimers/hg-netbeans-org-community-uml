@@ -50,11 +50,8 @@ import org.netbeans.modules.uml.drawingarea.SQDDiagramTopComponent;
 import org.netbeans.modules.uml.drawingarea.actions.ActionProvider;
 import org.netbeans.modules.uml.drawingarea.ui.trackbar.JTrackBar;
 
-/**
- * add car to tackbar
- * also have refresh for scene action
- * @author sp153251
- */
+
+
 public class AddCarFprPresentationElementAction implements ActionProvider {
     private JTrackBar tb;
     private IPresentationElement pe;

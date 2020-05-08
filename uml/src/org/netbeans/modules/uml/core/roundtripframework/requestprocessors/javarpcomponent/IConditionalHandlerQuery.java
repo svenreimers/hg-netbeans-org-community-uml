@@ -42,16 +42,15 @@
  * made subject to such option by the copyright holder.
  */
 
+
 /*
  * Created on Oct 30, 2003
  *
  */
 package org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpcomponent;
 
-/**
- * @author aztec
- *
- */
+
+
 public interface IConditionalHandlerQuery extends IHandlerQuery
 {		
 }

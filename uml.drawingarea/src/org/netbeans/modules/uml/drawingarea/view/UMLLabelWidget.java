@@ -54,10 +54,8 @@ import org.netbeans.modules.uml.drawingarea.persistence.data.EdgeInfo;
 import org.netbeans.modules.uml.drawingarea.persistence.EdgeWriter;
 import org.netbeans.modules.uml.drawingarea.persistence.PersistenceUtil;
 
-/**
- *
- * @author jyothi
- */
+
+
 public class UMLLabelWidget extends LabelWidget implements DiagramEdgeWriter, DiagramEdgeReader, UMLWidget, Customizable {
 
     private String id = getClass().getName();

@@ -55,10 +55,8 @@ import javax.swing.JPanel;
 import javax.swing.KeyStroke;
 import javax.swing.border.Border;
 
-/**
- *
- * @author treyspiva
- */
+
+
 public abstract class ContextPaletteButton extends JPanel
 {
     protected static final KeyStroke UP_KEYSTROKE = 

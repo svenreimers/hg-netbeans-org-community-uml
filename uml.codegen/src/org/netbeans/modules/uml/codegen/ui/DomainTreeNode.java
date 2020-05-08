@@ -45,10 +45,8 @@ package org.netbeans.modules.uml.codegen.ui;
 
 import javax.swing.Icon;
 
-/**
- *
- * @author Craig Conover, craig.conover@sun.com
- */
+
+
 public class DomainTreeNode
 {
     public final static int NODE_ROOT = 0;

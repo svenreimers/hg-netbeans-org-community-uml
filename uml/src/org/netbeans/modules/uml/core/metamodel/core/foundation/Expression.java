@@ -50,10 +50,8 @@ import org.dom4j.Node;
 
 import org.netbeans.modules.uml.core.support.umlsupport.XMLManip;
 
-/**
- * @author sumitabhk
- *
- */
+
+
 public class Expression extends ValueSpecification implements IExpression{
 
 	/**
@@ -63,7 +61,8 @@ public class Expression extends ValueSpecification implements IExpression{
 		super();
 	}
 
-	/**
+	
+/**
 	 * Gets the text of the expression in the given language.
 	 *
 	 * @param body[out]
@@ -75,7 +74,8 @@ public class Expression extends ValueSpecification implements IExpression{
 		return val;
 	}
 
-	/**
+	
+/**
 	 * Sets the text of the expression in the given language.
 	 * 
 	 * @param newVal[in] 
@@ -117,7 +117,8 @@ public class Expression extends ValueSpecification implements IExpression{
 		return getAttributeValue("language");
 	}
 
-	/**
+	
+/**
 	 *
 	 * Sets the language property of this expression.
 	 *
@@ -150,7 +151,8 @@ public class Expression extends ValueSpecification implements IExpression{
 		}
 	}
 
-	/**
+	
+/**
 	 *
 	 * Retrieves the grandparent node of this parameter node and queries
 	 * to see if that object supports the IExpressionListener interface.
@@ -185,7 +187,8 @@ public class Expression extends ValueSpecification implements IExpression{
 		return list;
 	}
 
-	/**
+	
+/**
 	 * Establishes the appropriate XML elements for this UML type.
 	 *
 	 * [in] The document where this element will reside

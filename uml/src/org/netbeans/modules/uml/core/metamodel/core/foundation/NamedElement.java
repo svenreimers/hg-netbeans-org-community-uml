@@ -67,14 +67,8 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 import org.netbeans.modules.uml.core.typemanagement.IPickListManager;
 import org.netbeans.modules.uml.core.typemanagement.ITypeManager;
 import org.openide.util.NbPreferences;
-/**
- * <p>Title: </p>
- * <p>Description: </p>
- * <p>Copyright: Copyright (c) 2003</p>
- * <p>Company: </p>
- * @author not attributable
- * @version 1.0
- */
+
+
 
 public class NamedElement extends Element implements INamedElement{ 
 	private Node n = null;
@@ -127,7 +121,8 @@ public class NamedElement extends Element implements INamedElement{
 				}
 			}
 		}
-		/*
+		
+/*
 			int count = 0;
 			ETList<INamedElement> elems = null;
 			
@@ -174,7 +169,8 @@ public class NamedElement extends Element implements INamedElement{
 		*/
 	}
 
-	/**
+	
+/**
 	 *
 	 * Sets the name value of this element
 	 *
@@ -196,7 +192,8 @@ public class NamedElement extends Element implements INamedElement{
       }
 	}
 
-   /**
+   
+/**
     * Sets the name value of this element
     *
     * @param newName      The new value for the name attribute
@@ -218,7 +215,8 @@ public class NamedElement extends Element implements INamedElement{
       }
    }
    
-	/**
+	
+/**
 	 *
 	 * Fires the PreNameChange event, returning the dispatch helper, the COM representation
 	 * of this element, and whether or not the post event should be fired.
@@ -244,7 +242,8 @@ public class NamedElement extends Element implements INamedElement{
 		return fire;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Dispatches the PreNameCollision event IF a name collision is found
 	 *
@@ -271,7 +270,8 @@ public class NamedElement extends Element implements INamedElement{
 		return proceed;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Retrieves all elements in the namespace that curElement is in that have a name that matches newName.
 	 * This is also smart about only retrieving colliding elements of the same type as curElement.
@@ -390,7 +390,8 @@ public class NamedElement extends Element implements INamedElement{
 //		return retVal;
 //	}
 
-	/**
+	
+/**
 	 *
 	 * Dispatches the NameCollision event if there are colliding elements on the helper
 	 * object passed in.
@@ -409,7 +410,8 @@ public class NamedElement extends Element implements INamedElement{
 		}
 	}
 
-	/**
+	
+/**
 	 *
 	 * This method is designed to be overridden in sub classes that care when a name collision is about to
 	 * occur / has occurred.
@@ -425,7 +427,8 @@ public class NamedElement extends Element implements INamedElement{
 		return true;
 	}
 
-   /**
+   
+/**
     *
     * This method is designed to be overridden in sub classes that care when a name collision is about to
     * occur / has occurred.
@@ -440,7 +443,8 @@ public class NamedElement extends Element implements INamedElement{
       
    }
    
-	/**
+	
+/**
 	 *
 	 * Simply determines if the value passed in matches the current name of this element.
 	 *
@@ -484,7 +488,8 @@ public class NamedElement extends Element implements INamedElement{
 		return new ETTripleT<Boolean, String, Boolean>(Boolean.valueOf(differ), name, Boolean.valueOf(fireEvent));
 	}
 
-	/**
+	
+/**
 	 *
 	 * Retrieves the default name for use for model elements that are just
 	 * being created.
@@ -499,7 +504,8 @@ public class NamedElement extends Element implements INamedElement{
 		return name;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Retrieves the visibility of the NamedElement within the owning Namespace.
 	 *
@@ -512,7 +518,8 @@ public class NamedElement extends Element implements INamedElement{
 		return getVisibilityKindValue( "visibility" );
 	}
 
-	/**
+	
+/**
 	 *
 	 * Sets the visibility of the NamedElement within the owning Namespace.
 	 *
@@ -538,7 +545,8 @@ public class NamedElement extends Element implements INamedElement{
 		}
 	}
 
-	/**
+	
+/**
 	 *
 	 * Retrieves the immediate Namespace that owns this element.
 	 *
@@ -558,7 +566,8 @@ public class NamedElement extends Element implements INamedElement{
 		return space;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Puts this element into the owned elements list of the passed in Namespace.
 	 *
@@ -574,14 +583,16 @@ public class NamedElement extends Element implements INamedElement{
             space.addOwnedElement(this);
 	}
 
-        /**
+        
+/**
          * if there some associated elements that should be 
          * moved as well. 
          */ 
 	public void moveAssociatedElements(INamespace space) {
         }
 
-	/**
+	
+/**
 	 *
 	 * Adds this element to the supplier end of a Dependency relationship.
 	 *
@@ -605,7 +616,8 @@ public class NamedElement extends Element implements INamedElement{
 								);
 	}
 
-	/**
+	
+/**
 	 *
 	 * Removes this element from the supplier end of the passed in Dependency.
 	 *
@@ -626,7 +638,8 @@ public class NamedElement extends Element implements INamedElement{
 		});
 	}
 
-	/**
+	
+/**
 	 *
 	 * Retrieves all the Dependency relationships that this element is a supplier for.
 	 *
@@ -641,7 +654,8 @@ public class NamedElement extends Element implements INamedElement{
 	   return retrieveElementCollectionWithAttrIDs(dummy, "supplierDependency", IDependency.class);
 	}
 
-	/**
+	
+/**
 	 *
 	 * Retrieves all the Dependency relationships that this element is a supplier for.
 	 *
@@ -671,7 +685,8 @@ public class NamedElement extends Element implements INamedElement{
 		return foundVec;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Adds this element to the client end of a Dependency relationship.
 	 *
@@ -695,7 +710,8 @@ public class NamedElement extends Element implements INamedElement{
 						);
 	}
 
-	/**
+	
+/**
 	 *
 	 * Removes this element from the client end of the passed in Dependency.
 	 *
@@ -719,7 +735,8 @@ public class NamedElement extends Element implements INamedElement{
 //		removeByID(dep, "clientDependency", dummy, null);
 	}
 
-	/**
+	
+/**
 	 *
 	 * Retrieves all the Dependency relationships that this element is a client for.
 	 *
@@ -734,7 +751,8 @@ public class NamedElement extends Element implements INamedElement{
             "clientDependency", IDependency.class);
 	}
 
-	/**
+	
+/**
 	 *
 	 * Retrieves all the Dependency relationships that this element is a Client for.
 	 *
@@ -763,7 +781,8 @@ public class NamedElement extends Element implements INamedElement{
 		return foundVec;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Retrieves the fully qualifed name for this element.
 	 * This is done by concatenating the names of all enclosing namespaces.
@@ -778,7 +797,8 @@ public class NamedElement extends Element implements INamedElement{
 		return getFullyQualifiedName( useProjectInQualifiedName() );
 	}
 
-	/**
+	
+/**
 	 *
 	 * Determines whether or not to use this element's Project name when 
 	 * determining this element's fully qualified name.
@@ -788,11 +808,12 @@ public class NamedElement extends Element implements INamedElement{
 	 *
 	 */
         private boolean useProjectInQualifiedName() {
-            //kris richards - "ProjectNamespace" pref has been removed; set to false.
+            
             return false;
         }
 
-	/**
+	
+/**
 	 *
 	 * Retrieves the fully qualifed name for this element.
 	 * This is done by concatenating the names of all enclosing namespaces.
@@ -832,7 +853,8 @@ public class NamedElement extends Element implements INamedElement{
 		return scopedName;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Retrieves the alias value for this element. This value can then be used
 	 * as another name for this element.  This will not be used for namespace
@@ -865,7 +887,8 @@ public class NamedElement extends Element implements INamedElement{
 		return alias;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Sets the alias value for this element. This value can then be used as 
 	 * another name for this element. This will not be used for namespace
@@ -922,7 +945,8 @@ public class NamedElement extends Element implements INamedElement{
 		}
 	}
 
-	/**
+	
+/**
 	 *
 	 * Determines whether or not this element has an alias value.
 	 *
@@ -950,7 +974,8 @@ public class NamedElement extends Element implements INamedElement{
 		return UMLXMLManip.queryCount( m_Node, "clientDependency" , true );
 	}
 
-	/** 
+	
+/** 
 	 * Returns the Fully Qualified Name without the Project name
 	 * 
 	 * @param name[out] fully qualified name (without the project name)
@@ -959,7 +984,8 @@ public class NamedElement extends Element implements INamedElement{
 		return getFullyQualifiedName(false);
 	}
 
-	/**
+	
+/**
 	 *
 	 * Sets the default name of this element.
 	 *
@@ -992,7 +1018,8 @@ public class NamedElement extends Element implements INamedElement{
 		}
 	}
 	
-	/**
+	
+/**
 	 *
 	 * Attempts to find a single NamedElement in this elements's namespace or above namespaces. If
 	 * more than one element is found with the same name, only the first one is used.
@@ -1007,7 +1034,8 @@ public class NamedElement extends Element implements INamedElement{
 		return UMLXMLManip.resolveSingleTypeFromString(	(INamedElement) getAggregator(), typeName);
 	}
 	
-	/**
+	
+/**
 	 * Attempts to find all types in this classifier's namespace or above namespaces.a
 	 *
 	 * @param typeName[in] The name of the type to find
@@ -1037,7 +1065,8 @@ public class NamedElement extends Element implements INamedElement{
 		return (name != null) ? name.equals(feature.getName()) : (feature.getName() == null) ;
 	}
 	
-	/**
+	
+/**
 	 *
 	 * Retrieves the name or alias of this element.
 	 *
@@ -1060,7 +1089,8 @@ public class NamedElement extends Element implements INamedElement{
 		return retVal;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Sets the name or alias of this element.
 	 *
@@ -1081,15 +1111,17 @@ public class NamedElement extends Element implements INamedElement{
 		}
 	}
 
-        /**
+        
+/**
          * @return
          */
         protected boolean showAliasedNames() {
-            //kris richards - changing to NbPrefs
+            
             return NbPreferences.forModule(NamedElement.class).getBoolean("UML_Show_Aliases", false) ;
         }
     
-    /**
+    
+/**
      * The default behavior to this method is to return true if the names of the
      * two elements being compared are same. Subclasses should override to 
      * implement class specific <em>isSimilar</em> behavior.

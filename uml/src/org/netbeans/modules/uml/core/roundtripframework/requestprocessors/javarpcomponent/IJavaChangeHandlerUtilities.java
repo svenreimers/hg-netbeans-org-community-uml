@@ -68,9 +68,6 @@ import org.netbeans.modules.uml.core.roundtripframework.IChangeRequest;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 import java.util.List;
 
-/**
- * @author Aztec
- */
 public interface IJavaChangeHandlerUtilities extends IRequestProcessorUtilities
 {
 	public RequestDetails getRequestDetails(IChangeRequest pRequest);

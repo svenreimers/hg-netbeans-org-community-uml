@@ -50,10 +50,8 @@ import org.netbeans.modules.uml.core.metamodel.infrastructure.RelationFactory;
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.AssociationKindEnum;
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier;
 
-/**
- *
- * @author treyspiva
- */
+
+
 public class NavigableAssociationFactory extends AssociationFactory
 {
 

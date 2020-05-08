@@ -24,14 +24,13 @@ package org.netbeans.modules.uml.ui.products.ad.applicationcore;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.IElement;
 //import org.netbeans.modules.uml.ui.support.applicationmanager.IEdgePresentation;
 
-/**
- * @author KevinM
- *
- */
+
+
 public interface INestedLinkPresentation //TODO extends IEdgePresentation 
 {
 
-	/*
+	
+/*
 	 * Determines if this end is the owning namespace in this link (the side with the +)
 	 */
   public boolean isParentNamespace(final IElement pEndElement);

@@ -43,16 +43,15 @@
  */
 
 
+
 /*
  * Created on Feb 3, 2004
  *
  */
 package org.netbeans.modules.uml.ui.support.drawingproperties;
 
-/**
- * @author jingmingm
- *
- */
+
+
 public class ETFontType
 {
 	protected String m_Name = "";

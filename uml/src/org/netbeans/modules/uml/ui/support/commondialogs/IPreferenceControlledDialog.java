@@ -47,57 +47,68 @@ package org.netbeans.modules.uml.ui.support.commondialogs;
 
 public interface IPreferenceControlledDialog extends ISilentDialog
 {
-	/**
+	
+/**
 	 * Set/Get whether the preference file should be updated when the PreferenceValue is set.
 	*/
 	public void setAutoUpdatePreference( boolean value );
 
-	/**
+	
+/**
 	 * Set/Get whether the preference file should be updated when the PreferenceValue is set.
 	*/
 	public boolean getAutoUpdatePreference();
 
-	/**
+	
+/**
 	 * Set/Get the preference key. If no key is specified, Default is assumed.
 	*/
 	public void setPrefKey( String value );
 
-	/**
+	
+/**
 	 * Set/Get the preference key. If no key is specified, Default is assumed.
 	*/
 	public String getPrefKey();
 
-	/**
+	
+/**
 	 * Set/Get the preference path. The path is the part between the key and the name.
 	*/
 	public void setPrefPath( String value );
 
-	/**
+	
+/**
 	 * Set/Get the preference path. The path is the part between the key and the name.
 	*/
 	public String getPrefPath();
 
-	/**
+	
+/**
 	 * Set/Get the preference name.
 	*/
 	public void setPrefName( String value );
 
-	/**
+	
+/**
 	 * Set/Get the preference name.
 	*/
 	public String getPrefName();
 
-	/**
+	
+/**
 	 * Set/Get the preference value from the preference manager. If AutoUpdatePreference is False, setting this property does nothing.
 	*/
 	public void setPreferenceValue( String value );
 
-	/**
+	
+/**
 	 * Set/Get the preference value from the preference manager. If AutoUpdatePreference is False, setting this property does nothing.
 	*/
 	public String getPreferenceValue();
 
-	/**
+	
+/**
 	 * Set the preference values from the preference manager. If AutoUpdatePreference is False, setting this property does nothing.
 	*/
 	public long preferenceInformation( String sPreferenceKey, String sPreferencePath, String sPreferenceName, boolean bAutoUpdatePreference );

@@ -42,11 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : IREJavaParser.java
- * Created on : Nov 4, 2003
- * Author     : aztec
- */
+
+
 package org.netbeans.modules.uml.core.reverseengineering.parsers.javaparser;
 
 import org.dom4j.Node;
@@ -55,9 +52,8 @@ import antlr.RecognitionException;
 
 import org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ILanguageParser;
 
-/**
- * @author aztec
- */
+
+
 public interface IREJavaParser extends ILanguageParser
 {
     public void notifyPackageEvent(Node eventData);

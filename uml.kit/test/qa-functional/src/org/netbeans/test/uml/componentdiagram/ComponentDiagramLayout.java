@@ -54,11 +54,8 @@ import org.netbeans.test.umllib.NewDiagramWizardOperator;
 import org.netbeans.test.umllib.exceptions.UMLCommonException;
 import org.netbeans.test.umllib.tests.DiagramLayout;
 
-/**
- *
- * @author psb
- * @spec UML/ComponentDiagram.xml
- */
+
+
 public class ComponentDiagramLayout extends DiagramLayout {
 
 

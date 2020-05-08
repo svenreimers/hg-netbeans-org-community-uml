@@ -54,11 +54,8 @@ import org.netbeans.test.uml.diagramcontextmenu.utils.DCMUtils;
 import org.netbeans.test.umllib.testcases.UMLTestCase;
 import org.netbeans.test.umllib.util.PopupConstants;
 
-/**
- *
- * @author yaa
- * @spec UML/Diagram_ContextMenus.xml
- */
+
+
 public class DiagramContextMenus_UCD extends UMLTestCase {
     private static String prName = "UMLProjectDCntMn";
     private static String ucdName = "DUsecase";
@@ -82,6 +79,7 @@ public class DiagramContextMenus_UCD extends UMLTestCase {
         return suite;
     }
     
+
 /**
  * @caseblock Use Case Diagram
  * @usecase Check context menu of use case diagram
@@ -96,6 +94,7 @@ public class DiagramContextMenus_UCD extends UMLTestCase {
             fail("Diagram popum menu item '" + itemName + "' is enabled but should not be");
         }
     }
+
 
 /**
  * @caseblock Use Case Diagram
@@ -112,6 +111,7 @@ public class DiagramContextMenus_UCD extends UMLTestCase {
         }
     }
 
+
 /**
  * @caseblock Use Case Diagram
  * @usecase Check context menu of use case diagram
@@ -126,6 +126,7 @@ public class DiagramContextMenus_UCD extends UMLTestCase {
             fail("Diagram popum menu item '" + itemName + "' is enabled but should not be");
         }
     }
+
 
 /**
  * @caseblock Use Case Diagram
@@ -142,6 +143,7 @@ public class DiagramContextMenus_UCD extends UMLTestCase {
         }
     }
     
+
 /**
  * @caseblock Use Case Diagram
  * @usecase Check context menu of use case diagram
@@ -157,6 +159,7 @@ public class DiagramContextMenus_UCD extends UMLTestCase {
         }
     }
     
+
 /**
  * @caseblock Use Case Diagram
  * @usecase Check context menu of use case diagram
@@ -172,6 +175,7 @@ public class DiagramContextMenus_UCD extends UMLTestCase {
         }
     }
     
+
 /**
  * @caseblock Use Case Diagram
  * @usecase Check context menu of use case diagram
@@ -186,6 +190,7 @@ public class DiagramContextMenus_UCD extends UMLTestCase {
             fail("Diagram popum menu item '" + itemName + "' is disabled but should not be");
         }
     }
+
 /**
  * @caseblock Use Case Diagram
  * @usecase Check context menu of use case diagram
@@ -200,6 +205,7 @@ public class DiagramContextMenus_UCD extends UMLTestCase {
             fail("Diagram popum menu item '" + itemName + "' is enabled but should not be");
         }
     }
+
 
 /**
  * @caseblock Use Case Diagram
@@ -216,6 +222,7 @@ public class DiagramContextMenus_UCD extends UMLTestCase {
         }
     }
 
+
 /**
  * @caseblock Use Case Diagram
  * @usecase Check context menu of use case diagram
@@ -230,6 +237,7 @@ public class DiagramContextMenus_UCD extends UMLTestCase {
             fail("Diagram popum menu item '" + itemName + "' is disabled but should not be");
         }
     }
+
 
 /**
  * @caseblock Use Case Diagram
@@ -246,6 +254,7 @@ public class DiagramContextMenus_UCD extends UMLTestCase {
         }
     }
 
+
 /**
  * @caseblock Use Case Diagram
  * @usecase Check context menu of use case diagram
@@ -260,6 +269,7 @@ public class DiagramContextMenus_UCD extends UMLTestCase {
             fail("Diagram popum menu item '" + itemName + "' is disabled but should not be");
         }
     }
+
 
 /**
  * @caseblock Use Case Diagram
@@ -281,6 +291,7 @@ public class DiagramContextMenus_UCD extends UMLTestCase {
         }
     }
     
+
 /**
  * @caseblock Use Case Diagram
  * @usecase Check context menu of use case diagram
@@ -301,6 +312,7 @@ public class DiagramContextMenus_UCD extends UMLTestCase {
         }
     }
     
+
 /**
  * @caseblock Use Case Diagram
  * @usecase Check context menu of use case diagram
@@ -316,6 +328,7 @@ public class DiagramContextMenus_UCD extends UMLTestCase {
         }
     }
     
+
 /**
  * @caseblock Use Case Diagram
  * @usecase Check context menu of use case diagram
@@ -331,6 +344,7 @@ public class DiagramContextMenus_UCD extends UMLTestCase {
         }
     }
     
+
 /**
  * @caseblock Use Case Diagram
  * @usecase Check context menu of use case diagram
@@ -346,6 +360,7 @@ public class DiagramContextMenus_UCD extends UMLTestCase {
         }
     }
     
+
 /**
  * @caseblock Use Case Diagram
  * @usecase Check context menu of use case diagram
@@ -365,6 +380,7 @@ public class DiagramContextMenus_UCD extends UMLTestCase {
             }
         }
     }
+
 
 /**
  * @caseblock Use Case Diagram
@@ -386,6 +402,7 @@ public class DiagramContextMenus_UCD extends UMLTestCase {
         }
     }
     
+
 /**
  * @caseblock Use Case Diagram
  * @usecase Check context menu of use case diagram
@@ -406,6 +423,7 @@ public class DiagramContextMenus_UCD extends UMLTestCase {
         }
     }
     
+
 /**
  * @caseblock Use Case Diagram
  * @usecase Check context menu of use case diagram

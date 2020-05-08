@@ -42,6 +42,7 @@
  * made subject to such option by the copyright holder.
  */
 
+
 /*
  * Separator.java
  *
@@ -54,10 +55,8 @@
 package org.netbeans.modules.uml.ui.swing.testbed.addin.menu;
 
 import javax.swing.JSeparator;
-/**
- *
- * @author Jyothi
- */
+
+
 public class Separator extends TestBedMenuManager {
 
     /** Creates a new instance of Separator */

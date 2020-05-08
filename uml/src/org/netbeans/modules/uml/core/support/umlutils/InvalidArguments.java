@@ -44,10 +44,8 @@
 
 package org.netbeans.modules.uml.core.support.umlutils;
 
-/**
- *
- * @author Trey Spiva
- */
+
+
 public class InvalidArguments extends RuntimeException
 {
 	public InvalidArguments()

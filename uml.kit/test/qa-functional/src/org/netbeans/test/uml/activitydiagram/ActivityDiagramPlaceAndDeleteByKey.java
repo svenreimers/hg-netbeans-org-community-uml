@@ -67,11 +67,8 @@ import org.netbeans.test.umllib.UMLPaletteOperator;
 import org.netbeans.test.umllib.testcases.UMLTestCase;
 
 
-/**
- *
- * @author psb
- * @spec UML/ComponentDiagram.xml
- */
+
+
 public class ActivityDiagramPlaceAndDeleteByKey extends UMLTestCase {
     
     //some system properties
@@ -335,7 +332,8 @@ public class ActivityDiagramPlaceAndDeleteByKey extends UMLTestCase {
         drAr.clickMouse(a.x,a.y,1);  
         dEl.waitSelection(false);
         //
-        /*if(elementType.equals(ElementTypes.HORIZONTAL_FORK))
+        
+/*if(elementType.equals(ElementTypes.HORIZONTAL_FORK))
         {
            Rectangle rc= dEl.getBoundingRect();
            Point pnt=new Point((int)(rc.getCenterX()),rc.y+rc.height*2/3);

@@ -58,7 +58,8 @@ public class CallOperationAction
     implements ICallOperationAction
 {
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.basic.basicactions.ICallOperationAction#getOperation()
      */
     public IOperation getOperation()
@@ -67,7 +68,8 @@ public class CallOperationAction
         return collector.retrieveSingleElementWithAttrID(this, "operation", IOperation.class);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.basic.basicactions.ICallOperationAction#getResult()
      */
     public ETList <IOutputPin> getResults()
@@ -76,7 +78,8 @@ public class CallOperationAction
 
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.basic.basicactions.ICallOperationAction#removeFromResult(org.netbeans.modules.uml.core.metamodel.basic.basicactions.IOutputPin)
      */
     public void removeFromResult(IOutputPin pPin)
@@ -84,7 +87,8 @@ public class CallOperationAction
         removeOutput(pPin);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.basic.basicactions.ICallOperationAction#setOperation(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation)
      */
     public void setOperation(IOperation operation)

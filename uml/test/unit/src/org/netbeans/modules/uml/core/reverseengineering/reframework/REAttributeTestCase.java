@@ -49,6 +49,7 @@ import org.netbeans.modules.uml.core.AbstractUMLTestCase;
 import org.dom4j.Element;
 import org.netbeans.modules.uml.core.support.umlsupport.XMLManip;
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttribute;
+
 /**
  * Test cases for REAttribute.
  */
@@ -61,7 +62,8 @@ public class REAttributeTestCase extends AbstractUMLTestCase
 
     private REAttribute rea;
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see junit.framework.TestCase#setUp()
      */
     protected void setUp() throws Exception

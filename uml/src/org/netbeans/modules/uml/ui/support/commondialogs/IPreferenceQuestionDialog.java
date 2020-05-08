@@ -50,7 +50,8 @@ import java.awt.Frame;
 
 public interface IPreferenceQuestionDialog extends IPreferenceControlledDialog
 {
-	/**
+	
+/**
 	 * Displays a question dialog.  The result is provided in the out parameter.
 	*/
 	public int displayFromResource( String sPreferenceKey,
@@ -66,7 +67,8 @@ public interface IPreferenceQuestionDialog extends IPreferenceControlledDialog
                                    int nDialogIcon, 
                                    Frame parent);
 
-	/**
+	
+/**
 	 * Displays a question dialog.  The result is provided in the out parameter.
 	*/
 	public int displayFromStrings( String sPreferenceKey, 
@@ -82,12 +84,14 @@ public interface IPreferenceQuestionDialog extends IPreferenceControlledDialog
                                   /* ErrorDialogIconKind */ int nDialogIcon, 
                                   Frame parent );
 
-	/**
+	
+/**
 	 * The default button (ie IDOK).  See the return values for AfxMessageBox
 	*/
 	public void setDefaultButton( int value );
 
-	/**
+	
+/**
 	 * Display the dialog box asks the standard delete question with an also question/preference
 	*/
 	public ETTripleT<Integer, Boolean, Boolean> displayDeleteWithAlso( String sKey, 

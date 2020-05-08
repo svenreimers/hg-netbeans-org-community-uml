@@ -46,10 +46,8 @@ import org.netbeans.api.visual.widget.Scene;
 import org.netbeans.api.visual.widget.Widget;
 import org.netbeans.modules.uml.drawingarea.NodeWidgetFactory;
 
-/**
- *
- * @author treyspiva
- */
+
+
 public class ActivityJoinForkNodeFactory implements NodeWidgetFactory
 {
 

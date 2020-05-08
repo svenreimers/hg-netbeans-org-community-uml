@@ -42,20 +42,16 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : ICreateObjectAction.java
- * Created on : Sep 18, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.metamodel.common.commonactions;
 
 import org.netbeans.modules.uml.core.metamodel.basic.basicactions.IOutputPin;
 import org.netbeans.modules.uml.core.metamodel.basic.basicactions.IPrimitiveAction;
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier;
 
-/**
- * @author Aztec
- */
+
+
 public interface ICreateObjectAction extends IPrimitiveAction
 {
     public IClassifier getClassifier();

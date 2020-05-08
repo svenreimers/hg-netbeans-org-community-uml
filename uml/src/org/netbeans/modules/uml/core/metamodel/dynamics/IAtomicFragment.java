@@ -46,22 +46,26 @@ package org.netbeans.modules.uml.core.metamodel.dynamics;
 
 public interface IAtomicFragment extends IInteractionFragment
 {
-	/**
+	
+/**
 	 * Sets / Gets the implicit gate.
 	*/
 	public IGate getImplicitGate();
 
-	/**
+	
+/**
 	 * Sets / Gets the implicit gate.
 	*/
 	public void setImplicitGate( IGate value );
 
-	/**
+	
+/**
 	 * Sets / Gets the Event (either a send Event or a receive Event) of the AtomicFragment
 	*/
 	public IEventOccurrence getEvent();
 
-	/**
+	
+/**
 	 * Sets / Gets the Event (either a send Event or a receive Event) of the AtomicFragment
  	 */
 	public void setEvent( IEventOccurrence value );

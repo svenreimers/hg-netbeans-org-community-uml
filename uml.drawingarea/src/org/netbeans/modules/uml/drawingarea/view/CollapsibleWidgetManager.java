@@ -44,10 +44,8 @@ package org.netbeans.modules.uml.drawingarea.view;
 
 import org.netbeans.api.visual.widget.Widget;
 
-/**
- *
- * @author jyothi
- */
+
+
 public interface CollapsibleWidgetManager {
 
     public void collapseWidget(String compartmentName);

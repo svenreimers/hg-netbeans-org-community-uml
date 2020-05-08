@@ -63,10 +63,8 @@ import java.util.HashMap;
 import javax.swing.JSeparator;
 import org.netbeans.modules.uml.ui.products.ad.application.action.BaseAction;
 
-/**
- *
- * @author Trey Spiva
- */
+
+
 //public class TestBedMenuManager extends ContributionManager implements IMenuManager
 public class TestBedMenuManager implements IMenuManager
 {
@@ -81,46 +79,54 @@ public class TestBedMenuManager implements IMenuManager
     
 //   private int dynamicItems = 0;
     
-    /**
+    
+/**
      * The mnemonic character of the the menu.
      */
     private char m_Mnemonic = 0;
     
-    /**
+    
+/**
      * The menu id.
      */
     private String m_Id = "";
     
-    /**
+    
+/**
      * The menu item widget; <code>null</code> before
      * creation and after disposal. This field is used
      * when this menu manager is a sub-menu.
      */
     JMenu m_MenuItem = null;
     
-    /**
+    
+/**
      * The text for a sub-menu.
      */
     private String m_MenuText = "";
     
-    /**
+    
+/**
      * Indicates whether <code>removeAll</code> should be
      * called just before the menu is displayed.
      */
     private boolean m_RemoveAllWhenShown = false;
     
-    /**
+    
+/**
      * The parent contribution manager.
      */
     private IMenuManager m_Parent;
     
-    /**
+    
+/**
      * Indicates this item is visible in its manager; <code>true</code>
      * by default.
      */
     private boolean m_Visible = true;
     
-    /**
+    
+/**
      * The overrides for items of this manager
      */
     
@@ -154,7 +160,8 @@ public class TestBedMenuManager implements IMenuManager
     {
     }
     
-    /**
+    
+/**
      * Creates and returns an SWT menu bar control for this menu, for use in the
      * given <code>Shell</code>, and installs all registered contributions. Does not
      * create a new control if one already exists. This implementation simply calls
@@ -198,7 +205,8 @@ public class TestBedMenuManager implements IMenuManager
     // IMenuManager Implementation
     //**************************************************
     
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.addinframework.ui.application.IMenuManager#findMenuUsingPath(java.lang.String)
     */
     public IMenuManager findMenuUsingPath(String path)
@@ -214,7 +222,8 @@ public class TestBedMenuManager implements IMenuManager
         return retVal;
     }
     
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.addinframework.ui.application.IMenuManager#findUsingPath(java.lang.String)
     */
     public Object findUsingPath(String path)
@@ -242,7 +251,8 @@ public class TestBedMenuManager implements IMenuManager
         return null;
     }
     
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.addinframework.ui.application.IMenuManager#getRemoveAllWhenShown()
     */
     public boolean getRemoveAllWhenShown()
@@ -250,7 +260,8 @@ public class TestBedMenuManager implements IMenuManager
         return m_RemoveAllWhenShown;
     }
     
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.addinframework.ui.application.IMenuManager#isEnabled()
     */
     public boolean isEnabled()
@@ -258,7 +269,8 @@ public class TestBedMenuManager implements IMenuManager
         return true;
     }
     
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.addinframework.ui.application.IMenuManager#setRemoveAllWhenShown(boolean)
     */
     public void setRemoveAllWhenShown(boolean removeAll)
@@ -266,7 +278,8 @@ public class TestBedMenuManager implements IMenuManager
         m_RemoveAllWhenShown = removeAll;
     }
     
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.addinframework.ui.application.IMenuManager#updateAll(boolean)
     */
     public void updateAll(boolean force)
@@ -274,7 +287,8 @@ public class TestBedMenuManager implements IMenuManager
         update(force, true);
     }
     
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.addinframework.ui.action.IContributionManager#update(boolean)
     */
     public void update(boolean force)
@@ -282,7 +296,8 @@ public class TestBedMenuManager implements IMenuManager
         update(force, false);
     }
     
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.addinframework.ui.action.IContributionItem#update()
     */
     public void update()
@@ -290,7 +305,8 @@ public class TestBedMenuManager implements IMenuManager
         updateMenuItem();
     }
     
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.addinframework.ui.action.IContributionItem#fill(java.awt.Container)
     */
     public void fill(JMenu parent, int index)
@@ -325,7 +341,8 @@ public class TestBedMenuManager implements IMenuManager
         
     }
     
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.addinframework.ui.action.IContributionItem#fill(org.netbeans.modules.uml.core.addinframework.ui.application.IMenu, int)
     */
     public void fill(JMenuBar parent, int index)
@@ -357,7 +374,8 @@ public class TestBedMenuManager implements IMenuManager
     }
     
     
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.addinframework.ui.action.IContributionItem#getId()
     */
     public String getId()
@@ -419,7 +437,8 @@ public class TestBedMenuManager implements IMenuManager
     }
     
     
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.addinframework.ui.action.IContributionItem#isDynamic()
     */
 //   public boolean isDynamic()
@@ -428,7 +447,8 @@ public class TestBedMenuManager implements IMenuManager
 //   }
     
     
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.addinframework.ui.action.IContributionItem#isSeparator()
     */
     public boolean isSeparator()
@@ -436,7 +456,8 @@ public class TestBedMenuManager implements IMenuManager
         return false;
     }
     
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.addinframework.ui.action.IContributionItem#isVisible()
     */
     public boolean isVisible()
@@ -444,7 +465,8 @@ public class TestBedMenuManager implements IMenuManager
         return m_Visible;
     }
     
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.addinframework.ui.action.IContributionItem#setParent(org.netbeans.modules.uml.core.addinframework.ui.action.IContributionManager)
     */
     public void setParent(IMenuManager parent)
@@ -452,7 +474,8 @@ public class TestBedMenuManager implements IMenuManager
         m_Parent = parent;
     }
     
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.addinframework.ui.action.IContributionItem#setVisible(boolean)
     */
     public void setVisible(boolean visible)
@@ -460,7 +483,8 @@ public class TestBedMenuManager implements IMenuManager
         m_Visible = visible;
     }
     
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.addinframework.ui.application.IMenuManager#createSubMenu(java.lang.String, java.lang.String)
     */
     public IMenuManager createSubMenu(String label, String id)
@@ -500,7 +524,8 @@ public class TestBedMenuManager implements IMenuManager
     // Helper Methods
     //**************************************************
     
-    /**
+    
+/**
      * Incrementally builds the menu from the contribution items.
      * This method leaves out double separators and separators in the first
      * or last position.
@@ -629,14 +654,16 @@ public class TestBedMenuManager implements IMenuManager
         }
     }
     
-    /**
+    
+/**
      * Updates the menu item for this sub menu.
      * The menu item is disabled if this sub menu is empty.
      * Does nothing if this menu is not a submenu.
      */
     protected void updateMenuItem()
     {
-   /*
+   
+/*
     * Commented out until proper solution to enablement of
     * menu item for a sub-menu is found. See bug 30833 for
     * more details.
@@ -656,7 +683,8 @@ public class TestBedMenuManager implements IMenuManager
     */
     }
     
-    /**
+    
+/**
      * Returns whether the menu control is created
      * and not disposed.
      *
@@ -679,7 +707,8 @@ public class TestBedMenuManager implements IMenuManager
         return retVal;
     }
     
-    /**
+    
+/**
      * Initializes the menu control.
      */
     private void initializeMenu()
@@ -725,6 +754,7 @@ public class TestBedMenuManager implements IMenuManager
         m_SubMenus.clear();
     }
     
+
 /* (non-Javadoc)
  * @see org.netbeans.modules.uml.ui.products.ad.application.action.IContributionItem#getLabel()
  */
@@ -733,6 +763,7 @@ public class TestBedMenuManager implements IMenuManager
         return m_Label;
     }
     
+
 /* (non-Javadoc)
  * @see org.netbeans.modules.uml.ui.products.ad.application.action.IContributionItem#setLabel(java.lang.String)
  */
@@ -749,7 +780,8 @@ public class TestBedMenuManager implements IMenuManager
             throw new IllegalArgumentException("can't find ID"); //$NON-NLS-1$
         return remove(ci);
     }
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * Method declared on IContributionManager.
     */
     public Object remove(Object item)

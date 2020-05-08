@@ -62,7 +62,8 @@ public class ParameterableElement extends NamedElement
 		super();
 	}
 	
-	/**
+	
+/**
 	 * property Default
 	*/
 	public IParameterableElement getDefaultElement()
@@ -72,7 +73,8 @@ public class ParameterableElement extends NamedElement
 		return collector.retrieveSingleElementWithAttrID(this,"default", IParameterableElement.class);				
 	}
 
-	/**
+	
+/**
 	 * property Default
 	*/
 	public void setDefaultElement( IParameterableElement element )
@@ -80,7 +82,8 @@ public class ParameterableElement extends NamedElement
 		super.setElement(element,"default");
 	}
 
-	/**
+	
+/**
 	 *  Sets the default element on this parameter via a name indicating its type.
  	 *
  	 * @param newVal[in] The type to use as the DefaultElement
@@ -92,7 +95,8 @@ public class ParameterableElement extends NamedElement
 			setDefaultElement((IParameterableElement)type);
 	}
 
-	/**
+	
+/**
 	 * property Template
 	*/
 	public IClassifier getTemplate()
@@ -100,7 +104,8 @@ public class ParameterableElement extends NamedElement
 		return OwnerRetriever.getOwnerByType(this, IClassifier.class);
 	}
 
-	/**
+	
+/**
 	 * property Template
 	*/
 	public void setTemplate( IClassifier newVal )
@@ -108,7 +113,8 @@ public class ParameterableElement extends NamedElement
 		super.setOwner(newVal);
 	}
 
-	/**
+	
+/**
 	 * Name of the meta type that must be used when instantiating the template.
 	*/
 	public String getTypeConstraint()
@@ -116,7 +122,8 @@ public class ParameterableElement extends NamedElement
 		return super.getAttributeValue("typeConstraint");
 	}
 
-	/**
+	
+/**
 	 * Name of the meta type that must be used when instantiating the template.
 	*/
 	public void setTypeConstraint( String newVal )
@@ -124,7 +131,8 @@ public class ParameterableElement extends NamedElement
 		super.setAttributeValue("typeConstraint",newVal);
 	}
 	
-	/**
+	
+/**
 	 * Establishes the appropriate XML elements for this UML type.
 	 *
 	 * [in] The document where this element will reside

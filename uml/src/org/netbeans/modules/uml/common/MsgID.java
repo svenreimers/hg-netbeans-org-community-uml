@@ -46,6 +46,7 @@ package org.netbeans.modules.uml.common;
 
 import java.util.Locale;
 
+
 /**
  * Encapsulates a message ID and the StringResolver used to
  * resolve the locale dependant message.
@@ -72,7 +73,8 @@ public class MsgID implements Comparable
  /** Gets the string resolver used to resolve the locale dependent message. */
   public StringResolver getRB() { return iRB; }
   
- /*---------------------------------------------------------
+ 
+/*---------------------------------------------------------
   * Convenience methods for getting locale dependant string
   *---------------------------------------------------------*/
   
@@ -82,81 +84,96 @@ public class MsgID implements Comparable
  /** Convenience method. Gets the locale dependent message for the default locale. */
   public final String get() { return iRB.get(iID); }
 
- /** Convenience method. Gets the locale dependent message for the default locale. 
+ 
+/** Convenience method. Gets the locale dependent message for the default locale. 
      The occurences of %x are replace by the given parameters. */
   public final String get(int p1) { return iRB.get(iID, p1); }
   
- /** Convenience method. Gets the locale dependent message for the default locale. 
+ 
+/** Convenience method. Gets the locale dependent message for the default locale. 
      The occurences of %x are replace by the given parameters. */
   public final String get(long p1) { return iRB.get(iID, p1); }
   
- /** Convenience method. Gets the locale dependent message for the default locale. 
+ 
+/** Convenience method. Gets the locale dependent message for the default locale. 
      The occurences of %x are replace by the given parameters. */
   public final String get(boolean p1) { return iRB.get(iID, p1); }
   
- /** Convenience method. Gets the locale dependent message for the default locale. 
+ 
+/** Convenience method. Gets the locale dependent message for the default locale. 
      The occurences of %x are replace by the given parameters. */
   public final String get(float p1) { return iRB.get(iID, p1); }
   
- /** Convenience method. Gets the locale dependent message for the default locale. 
+ 
+/** Convenience method. Gets the locale dependent message for the default locale. 
      The occurences of %x are replace by the given parameters. */
   public final String get(double p1) { return iRB.get(iID, p1); }
   
- /** Convenience method. Gets the locale dependent message for the default locale. 
+ 
+/** Convenience method. Gets the locale dependent message for the default locale. 
      The occurences of %x are replace by the given parameters. */
   public final String get(Object p1) { return iRB.get(iID, p1); }
   
- /** Convenience method. Gets the locale dependent message for the default locale. 
+ 
+/** Convenience method. Gets the locale dependent message for the default locale. 
      The occurences of %x are replace by the given parameters. */
   public final String get(Object p1, Object p2) { return iRB.get(iID, p1, p2); }
 
- /** Convenience method. Gets the locale dependent message for the default locale. 
+ 
+/** Convenience method. Gets the locale dependent message for the default locale. 
      The occurences of %x are replace by the given parameters. */
   public final String get(Object p1, Object p2, Object p3)
   {
     return iRB.get(iID, p1, p2, p3);
   }
 
- /** Convenience method. Gets the locale dependent message for the default locale. 
+ 
+/** Convenience method. Gets the locale dependent message for the default locale. 
      The occurences of %x are replace by the given parameters. */
   public final String get(Object p1, Object p2, Object p3, Object p4)
   {
     return iRB.get(iID, p1, p2, p3, p4);
   }
 
- /** Convenience method. Gets the locale dependent message for the default locale. 
+ 
+/** Convenience method. Gets the locale dependent message for the default locale. 
      The occurences of %x are replace by the given parameters. */
   public final String get(Object[] params) { return iRB.get(iID, params); }
   
  /** Convenience method. Gets the locale dependent message for the given locale. */
   public final String get(Locale locale) { return iRB.get(iID, locale); }
   
- /** Convenience method. Gets the locale dependent message for the given locale. 
+ 
+/** Convenience method. Gets the locale dependent message for the given locale. 
      The occurences of %x are replace by the given parameters. */
   public final String get(Object p1, Locale locale) { return iRB.get(iID, p1, locale); }
   
- /** Convenience method. Gets the locale dependent message for the given locale. 
+ 
+/** Convenience method. Gets the locale dependent message for the given locale. 
      The occurences of %x are replace by the given parameters. */
   public final String get(Object p1, Object p2, Locale locale)
   {
     return iRB.get(iID, p1, p2, locale);
   }
   
- /** Convenience method. Gets the locale dependent message for the given locale. 
+ 
+/** Convenience method. Gets the locale dependent message for the given locale. 
      The occurences of %x are replace by the given parameters. */
   public final String get(Object p1, Object p2, Object p3, Locale locale)
   {
     return iRB.get(iID, p1, p2, p3, locale);
   }
 
- /** Convenience method. Gets the locale dependent message for the given locale. 
+ 
+/** Convenience method. Gets the locale dependent message for the given locale. 
      The occurences of %x are replace by the given parameters. */
   public final String get(Object p1, Object p2, Object p3, Object p4, Locale locale)
   {
     return iRB.get(iID, p1, p2, p3, p4, locale);
   }
   
- /** Convenience method. Gets the locale dependent message for the given locale. 
+ 
+/** Convenience method. Gets the locale dependent message for the given locale. 
      The occurences of %x are replace by the given parameters. */
   public final String get(Object[] params, Locale locale) { return iRB.get(iID, params, locale); }
 

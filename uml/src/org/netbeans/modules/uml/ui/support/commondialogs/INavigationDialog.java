@@ -51,10 +51,8 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.IElement;
 import org.netbeans.modules.uml.core.metamodel.diagrams.IProxyDiagram;
 import org.netbeans.modules.uml.ui.support.diagramsupport.IPresentationTarget;
 
-/**
- *
- * @author Trey Spiva
- */
+
+
 public interface INavigationDialog
 {
 

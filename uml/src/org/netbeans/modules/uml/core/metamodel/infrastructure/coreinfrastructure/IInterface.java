@@ -49,27 +49,32 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 public interface IInterface extends IClassifier
 {
-	/**
+	
+/**
 	 * method AddReception
 	*/
 	public void addReception( IReception rec );
 
-	/**
+	
+/**
 	 * method RemoveReception
 	*/
 	public void removeReception( IReception rec );
 
-	/**
+	
+/**
 	 * property Receptions
 	*/
 	public ETList<IReception> getReceptions();
 
-	/**
+	
+/**
 	 * property ProtocolStateMachine
 	*/
 	public INamespace getProtocolStateMachine();
 
-	/**
+	
+/**
 	 * property ProtocolStateMachine
 	*/
 	public void setProtocolStateMachine( INamespace value );

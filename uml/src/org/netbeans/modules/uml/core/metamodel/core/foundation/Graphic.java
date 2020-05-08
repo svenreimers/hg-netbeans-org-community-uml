@@ -48,10 +48,8 @@ package org.netbeans.modules.uml.core.metamodel.core.foundation;
 import org.dom4j.Document;
 import org.dom4j.Node;
 
-/**
- * @author sumitabhk
- *
- */
+
+
 public class Graphic extends NamedElement implements IGraphic
 {
 
@@ -63,7 +61,8 @@ public class Graphic extends NamedElement implements IGraphic
 		super();
 	}
 
-	/**
+	
+/**
 	 * Establishes the appropriate XML elements for this UML type.
 	 *
 	 * [in] The document where this element will reside

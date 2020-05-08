@@ -43,6 +43,7 @@
  */
 
 
+
 /*
  * Created on Dec 11, 2003
  *
@@ -161,7 +162,8 @@ public class ObjectCreationExpression extends ExpressionStateHandler
         return retVal;
     }
     
-    /**
+    
+/**
      * Notification that the a state has completed.
      *
      * @param stateName [in] The name of the state.
@@ -264,7 +266,8 @@ public class ObjectCreationExpression extends ExpressionStateHandler
     }
     
     
-    /**
+    
+/**
      * Retrieves all the method call argurments.
      *
      * @param pInfo [in] The instance information context.
@@ -324,7 +327,8 @@ public class ObjectCreationExpression extends ExpressionStateHandler
         return retVal;
     }
     
-    /**
+    
+/**
      * Retrieve the method declaration that describes the method the invoked
      * method.
      *
@@ -398,7 +402,7 @@ public class ObjectCreationExpression extends ExpressionStateHandler
         {
             String typeName = mTemplateHandler.toString();
             retVal += typeName;
-            //lvv - 126584 removed extra call to super.toString(), see below 
+            
             //retVal += super.toString();
 
             retVal += arrayDeclInit();

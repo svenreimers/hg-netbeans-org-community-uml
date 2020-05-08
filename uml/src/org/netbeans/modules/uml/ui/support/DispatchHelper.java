@@ -43,11 +43,8 @@
  */
 
 
-/*
- *
- * Created on May 30, 2003
- * @author Trey Spiva
- */
+
+
 package org.netbeans.modules.uml.ui.support;
 
 import java.util.HashMap;
@@ -128,11 +125,8 @@ import org.netbeans.modules.uml.ui.support.diagramsupport.DrawingAreaEventDispat
 import org.netbeans.modules.uml.ui.support.diagramsupport.IDrawingAreaEventDispatcher;
 import org.netbeans.modules.uml.ui.support.diagramsupport.IDrawingAreaEventsSink;
 
-/**
- * DispatcherHelper is used to register and revoke to various event dispatchers.
- *
- * @author Trey Spiva
- */
+
+
 public class DispatchHelper
 {
 
@@ -1719,7 +1713,8 @@ public class DispatchHelper
         return retVal;
     }
 
-    /**
+    
+/**
      * @return
      */
     public IElementLifeTimeEventDispatcher getLifeTimeDispatcher()
@@ -1810,7 +1805,8 @@ public class DispatchHelper
         return retVal;
     }
 
-    /**
+    
+/**
      * @return
      */
     public final IPreferenceManagerEventDispatcher getPreferenceManagerDispatcher()
@@ -1832,7 +1828,8 @@ public class DispatchHelper
         return m_PreferenceEventDispatcher;
     }
 
-    /**
+    
+/**
      * @return
      */
     public ICoreProductEventDispatcher getCoreProductDispatcher()
@@ -1849,7 +1846,8 @@ public class DispatchHelper
         return retVal;
     }
 
-    /**
+    
+/**
      * @return
      */
     public IStructureEventDispatcher getStructureDispatcher()
@@ -1869,7 +1867,8 @@ public class DispatchHelper
         return retVal;
     }
 
-    /**
+    
+/**
      * Gets the project tree dispatcher.
      */
     public IProjectTreeEventDispatcher getProjectTreeDispatcher()
@@ -1891,7 +1890,8 @@ public class DispatchHelper
         return m_ProjectTreeEventDispatcher;
     }
 
-    /**
+    
+/**
      * Gets the project tree dispatcher.
      */
     public IProjectTreeFilterDialogEventDispatcher getProjectTreeFilterDialogDispatcher()
@@ -1913,7 +1913,8 @@ public class DispatchHelper
         return m_ProjectTreeFilterEventDispatcher;
     }
 
-    /**
+    
+/**
      * Gets the drawing area dispatcher.
      */
     // TODO: Must figure out a way to decouple this from the drawing area package.
@@ -1936,7 +1937,8 @@ public class DispatchHelper
         return m_DrawingAreaDispatcher;
     }
 
-    /**
+    
+/**
      * @return
      */
     public IElementChangeEventDispatcher getElementChangeDispatcher()
@@ -1972,7 +1974,8 @@ public class DispatchHelper
         return retVal;
     }
 
-    /**
+    
+/**
      * This method is used to access the Java versions of Dispatch controllers.  Basically
      * all UI dispatchers will be Java versions of the Event Dispatchers.  MetaModel dispatcher
      * will be COM versions of the Dispatcher Controllers.
@@ -1997,7 +2000,8 @@ public class DispatchHelper
         }
     }
 
-    /**
+    
+/**
      * @param string
      * @return
      */
@@ -2029,7 +2033,8 @@ public class DispatchHelper
         return retVal;
     }
 
-    /**
+    
+/**
      * @param string
      */
     protected final IEventDispatcher getDispatcher(String name)
@@ -2070,7 +2075,8 @@ public class DispatchHelper
         return retVal;
     }
 
-    /**
+    
+/**
      * Gets the edit control dispatcher
      */
     public IEditControlEventDispatcher getEditControlDispatcher()

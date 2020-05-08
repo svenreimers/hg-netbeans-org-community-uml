@@ -51,7 +51,8 @@ import org.dom4j.Node;
 public class AttributeEvent extends ParserData implements IAttributeEvent
 {
 
-    /**
+    
+/**
      * Retrieves the attribute.
      * @param pVal The attribute data.
      */
@@ -65,7 +66,8 @@ public class AttributeEvent extends ParserData implements IAttributeEvent
         return null;
     }
 
-    /**
+    
+/**
      * Create a new attribute and adds it to the collection of attributes.  The 
      * IREAttribute implementation created depends on the attribute type.
      */

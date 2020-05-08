@@ -46,10 +46,8 @@ package org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.trans
 
 import org.netbeans.modules.uml.core.reverseengineering.reframework.IDependencyEvent;
 
-/**
- *
- * @author krichard
- */
+
+
 public class StaticDependencyStateHandler extends DependencyStateHandler
 {
    public StaticDependencyStateHandler(String language)

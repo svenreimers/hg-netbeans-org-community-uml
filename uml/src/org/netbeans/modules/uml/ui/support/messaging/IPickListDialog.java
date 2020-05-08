@@ -43,6 +43,7 @@
  */
 
 
+
 /*
  * Created on Jun 9, 2004
  *
@@ -59,12 +60,8 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 import org.netbeans.modules.uml.ui.support.SimpleQuestionDialogKind;
 import org.netbeans.modules.uml.ui.support.SimpleQuestionDialogResultKind;
 
-/**
- * @author jingmingm
- *
- * To change the template for this generated type comment go to
- * Window&gt;Preferences&gt;Java&gt;Code Generation&gt;Code and Comments
- */
+
+
 public interface IPickListDialog
 {
 	public void addPickListItem(String sItem);

@@ -47,6 +47,7 @@ package org.netbeans.modules.uml.core.reverseengineering.parsingfacilities;
 import org.netbeans.modules.uml.core.AbstractUMLTestCase;
 import org.netbeans.modules.uml.core.reverseengineering.reframework.IFileInformation;
 
+
 /**
  * Test cases for ClassLoaderListener.
  */
@@ -59,7 +60,8 @@ public class ClassLoaderListenerTestCase extends AbstractUMLTestCase
 
     private IClassLoaderListener cll;
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see junit.framework.TestCase#setUp()
      */
     protected void setUp() throws Exception

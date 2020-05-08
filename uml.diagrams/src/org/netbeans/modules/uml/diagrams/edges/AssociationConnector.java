@@ -81,10 +81,8 @@ import org.netbeans.modules.uml.drawingarea.persistence.data.EdgeInfo;
 import org.netbeans.modules.uml.drawingarea.view.UMLEdgeWidget;
 import org.openide.util.Lookup;
 
-/**
- *
- * @author treyspiva
- */
+
+
 public class AssociationConnector extends AbstractUMLConnectionWidget
 {
 
@@ -828,7 +826,8 @@ public class AssociationConnector extends AbstractUMLConnectionWidget
         return UMLWidgetIDString.ASSOCIATIONCONNECTORWIDGET.toString();
     }
 
-    /**
+    
+/**
      * The DirectRoutingAnchorResolver is used to determine the cut off distance
      * where the anchor shape should be placed.  The distance is calucated from
      * where the edge enters the related widget to the intersection point where
@@ -882,7 +881,8 @@ public class AssociationConnector extends AbstractUMLConnectionWidget
             return (int) Point.distance(start.x, start.y, intersection.x, intersection.y);
         }
 
-        /**
+        
+/**
          * Find the possible boundaries that the edge can cross.  Basically the
          * edge can not cross the boundary that is connected to the related
          * widget.
@@ -944,7 +944,8 @@ public class AssociationConnector extends AbstractUMLConnectionWidget
             return retVal;
         }
 
-        /**
+        
+/**
          * Calculates the point where the edge will intersect with a line.
          *
          * @param x1 Edge start x

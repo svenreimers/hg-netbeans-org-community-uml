@@ -43,11 +43,8 @@
  */
 
 
-/*
- *
- * Created on Jun 10, 2003
- * @author Trey Spiva
- */
+
+
 package org.netbeans.modules.uml.ui.controls.projecttree;
 
 import org.netbeans.modules.uml.core.eventframework.IEventContext;
@@ -65,10 +62,8 @@ import org.netbeans.modules.uml.core.eventframework.EventFunctor;
 import java.awt.datatransfer.Transferable;
 import java.util.ArrayList;
 
-/**
- * 
- * @author Trey Spiva
- */
+
+
 public class ProjectTreeEventDispatcherImpl extends EventDispatcher
    implements IProjectTreeEventDispatcher
 {
@@ -82,7 +77,8 @@ public class ProjectTreeEventDispatcherImpl extends EventDispatcher
 		m_ProjectTreeEventManager = new EventManager< IProjectTreeEventsSink >();
 	}
 	
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeEventDispatcher#registerProjectTreeContextMenuEvents(org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeContextMenuEventsSink)
     */
    public void registerProjectTreeContextMenuEvents(IProjectTreeContextMenuEventsSink handler)
@@ -90,7 +86,8 @@ public class ProjectTreeEventDispatcherImpl extends EventDispatcher
 		m_ProjectTreeContextMenuEventManager.addListener(handler, null);
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeEventDispatcher#revokeProjectTreeContextMenuSink(int)
     */
    public void revokeProjectTreeContextMenuSink(IProjectTreeContextMenuEventsSink handler)
@@ -98,7 +95,8 @@ public class ProjectTreeEventDispatcherImpl extends EventDispatcher
 		m_ProjectTreeContextMenuEventManager.removeListener(handler);
    }
    
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.eventframework.IEventDispatcher#registerForEventFrameworkEvents(org.netbeans.modules.uml.core.eventframework.IEventFrameworkEventsSink)
 	 */
 	public void registerProjectTreeEvents(IProjectTreeEventsSink handler)
@@ -106,7 +104,8 @@ public class ProjectTreeEventDispatcherImpl extends EventDispatcher
 		m_ProjectTreeEventManager.addListener(handler, null);
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.eventframework.IEventDispatcher#revokeEventFrameworkSink(org.netbeans.modules.uml.core.eventframework.IEventFrameworkEventsSink)
 	 */
 	public void revokeProjectTreeSink(IProjectTreeEventsSink handler)
@@ -114,7 +113,8 @@ public class ProjectTreeEventDispatcherImpl extends EventDispatcher
 		m_ProjectTreeEventManager.removeListener(handler);
 	}
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeEventDispatcher#fireProjectTreeContextMenuPrepare(org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl, org.netbeans.modules.uml.ui.support.contextmenusupport.IProductContextMenu, org.netbeans.modules.uml.core.eventframework.IEventPayload)
     */
    public void fireProjectTreeContextMenuPrepare(IProjectTreeControl pParentControl,
@@ -148,7 +148,8 @@ public class ProjectTreeEventDispatcherImpl extends EventDispatcher
       }
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeEventDispatcher#fireProjectTreeContextMenuPrepared(org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl, org.netbeans.modules.uml.ui.support.contextmenusupport.IProductContextMenu, org.netbeans.modules.uml.core.eventframework.IEventPayload)
     */
    public void fireProjectTreeContextMenuPrepared(IProjectTreeControl pParentControl,
@@ -174,7 +175,8 @@ public class ProjectTreeEventDispatcherImpl extends EventDispatcher
       }                
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeEventDispatcher#fireProjectTreeContextMenuHandleDisplay(org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl, org.netbeans.modules.uml.ui.support.contextmenusupport.IProductContextMenu, org.netbeans.modules.uml.core.eventframework.IEventPayload)
     */
    public void fireProjectTreeContextMenuHandleDisplay(IProjectTreeControl pParentControl,
@@ -200,7 +202,8 @@ public class ProjectTreeEventDispatcherImpl extends EventDispatcher
 
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeEventDispatcher#fireProjectTreeContextMenuSelected(org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl, org.netbeans.modules.uml.ui.support.contextmenusupport.IProductContextMenu, org.netbeans.modules.uml.ui.support.contextmenusupport.IProductContextMenuItem, org.netbeans.modules.uml.core.eventframework.IEventPayload)
     */
    public void fireProjectTreeContextMenuSelected(IProjectTreeControl pParentControl,
@@ -227,7 +230,8 @@ public class ProjectTreeEventDispatcherImpl extends EventDispatcher
       }
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeEventDispatcher#fireItemExpanding(org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl, org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem, org.netbeans.modules.uml.core.eventframework.IEventPayload)
     */
     public void fireItemExpanding(IProjectTreeControl pParentControl, 
@@ -254,7 +258,8 @@ public class ProjectTreeEventDispatcherImpl extends EventDispatcher
         }
     }
    
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeEventDispatcher#fireItemExpanding(org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl, org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem, org.netbeans.modules.uml.core.eventframework.IEventPayload)
     */
    public void fireItemExpandingWithFilter(IProjectTreeControl          pParentControl,
@@ -283,7 +288,8 @@ public class ProjectTreeEventDispatcherImpl extends EventDispatcher
 
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeEventDispatcher#fireBeforeEdit(org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl, org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem, org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeEditVerify, org.netbeans.modules.uml.core.eventframework.IEventPayload)
     */
    public void fireBeforeEdit(IProjectTreeControl pParentControl,
@@ -313,7 +319,8 @@ public class ProjectTreeEventDispatcherImpl extends EventDispatcher
 
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeEventDispatcher#fireAfterEdit(org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl, org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem, org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeEditVerify, org.netbeans.modules.uml.core.eventframework.IEventPayload)
     */
    public void fireAfterEdit(IProjectTreeControl pParentControl,
@@ -343,7 +350,8 @@ public class ProjectTreeEventDispatcherImpl extends EventDispatcher
 
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeEventDispatcher#fireDoubleClick(org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl, org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem, org.netbeans.modules.uml.core.eventframework.IEventPayload)
     */
    public void fireDoubleClick(IProjectTreeControl pParentControl,
@@ -386,7 +394,8 @@ public class ProjectTreeEventDispatcherImpl extends EventDispatcher
       }
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeEventDispatcher#fireSelChanged(org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl, org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem[], org.netbeans.modules.uml.core.eventframework.IEventPayload)
     */
    public void fireSelChanged(IProjectTreeControl pParentControl,
@@ -413,7 +422,8 @@ public class ProjectTreeEventDispatcherImpl extends EventDispatcher
 
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeEventDispatcher#fireRightButtonDown(org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl, org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem, org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeHandled, int, int, org.netbeans.modules.uml.core.eventframework.IEventPayload)
     */
    public void fireRightButtonDown(IProjectTreeControl pParentControl,
@@ -448,7 +458,8 @@ public class ProjectTreeEventDispatcherImpl extends EventDispatcher
       }
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeEventDispatcher#fireBeginDrag(org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl, org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem[], org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeDragVerify, org.netbeans.modules.uml.core.eventframework.IEventPayload)
     */
    public void fireBeginDrag(IProjectTreeControl pParentControl,
@@ -477,7 +488,8 @@ public class ProjectTreeEventDispatcherImpl extends EventDispatcher
       }
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeEventDispatcher#fireMoveDrag(org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl, org.netbeans.modules.uml.ui.controls.projecttree.IDataObject, org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeDragVerify, org.netbeans.modules.uml.core.eventframework.IEventPayload)
     */
    public void fireMoveDrag(IProjectTreeControl pParentControl,
@@ -505,7 +517,8 @@ public class ProjectTreeEventDispatcherImpl extends EventDispatcher
       }
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeEventDispatcher#fireEndDrag(org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl, org.netbeans.modules.uml.ui.controls.projecttree.IDataObject, org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeDragVerify, org.netbeans.modules.uml.core.eventframework.IEventPayload)
     */
    public void fireEndDrag(IProjectTreeControl    pParentControl,

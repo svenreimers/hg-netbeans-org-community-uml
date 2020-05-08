@@ -44,11 +44,8 @@
 
 
 
-/*
- * File       : ClassifierUtilitiesTestCase.java
- * Created on : Oct 21, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.metamodel.modelanalysis;
 
 import org.netbeans.modules.uml.core.metamodel.core.constructs.IClass;
@@ -57,9 +54,8 @@ import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation;
 import org.netbeans.modules.uml.core.AbstractUMLTestCase;
 
-/**
- * @author Aztec
- */
+
+
 public class ClassifierUtilitiesTestCase extends AbstractUMLTestCase
 {
     public static void main(String[] args)
@@ -101,7 +97,8 @@ public class ClassifierUtilitiesTestCase extends AbstractUMLTestCase
         iface.addOperation(op6);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see junit.framework.TestCase#tearDown()
      */
     protected void tearDown() throws Exception

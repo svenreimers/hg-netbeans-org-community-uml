@@ -94,7 +94,8 @@ abstract public class InstanceInformation implements Cloneable
     abstract public boolean isDerivedFrom(String desiredType, 
                                             IREClassLoader pLoader);
     
-    /**
+    
+/**
      * Sets the type name used to instantiate the instance.;
      *
      * @param typeName [in] The type name.
@@ -103,7 +104,8 @@ abstract public class InstanceInformation implements Cloneable
     abstract public void setInstantiatedType(String typeName, 
                                              IREClassLoader pClassLoader);
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see java.lang.Object#clone()
      */
     public Object clone() throws CloneNotSupportedException
@@ -114,7 +116,8 @@ abstract public class InstanceInformation implements Cloneable
         return super.clone();
     }
     
-    /**
+    
+/**
      * Sets the class that owns the instance of the variable.
      *
      * @param pOwner [out] The owner of the instance.
@@ -124,7 +127,8 @@ abstract public class InstanceInformation implements Cloneable
         m_pInstanceOwner = pOwner;
     }
 
-    /**
+    
+/**
      * Set if the instance is instatiated or not.  If the variable
      * is not instantiated then it can be considered referenced.
      *
@@ -135,7 +139,8 @@ abstract public class InstanceInformation implements Cloneable
         m_IsInstantiated = value;
     }
 
-    /**
+    
+/**
      * Sets if the instance is a static variable or
      * an instance variable.
      *
@@ -146,21 +151,23 @@ abstract public class InstanceInformation implements Cloneable
         m_IsStatic = value;
     }
 
-    /**
+    
+/**
      * Sets the name of the instance.
      *
      * @param &value [in] The name.
      */
     public void setInstanceName(String value)
     {
-        //kris - in response to is 78375. When an array expression contains an integer 
+        
         // constant index, this will filter off the []. The needs to be revisited 
         // and determined if this is this action is even appropriate.
         if (value.indexOf("[") != -1) value="" ;
         m_InstanceName = value;
     }
 
-    /**
+    
+/**
      * Determines if the instance has been referenced already.
      *
      * @param value [in] True if referenced.
@@ -170,7 +177,8 @@ abstract public class InstanceInformation implements Cloneable
         m_HasBeenReferenced = value;
     }
 
-    /**
+    
+/**
      * Retrieves the class that owns the instance of the variable.
      *
      * @param pOwner [out] The owner of the instance.
@@ -180,7 +188,8 @@ abstract public class InstanceInformation implements Cloneable
         return m_pInstanceOwner;
     }
 
-    /**
+    
+/**
      * Retrieves the name of the type that was used to instantiate 
      * instance.
      *
@@ -200,7 +209,8 @@ abstract public class InstanceInformation implements Cloneable
         return null;
     }
 
-    /**
+    
+/**
      * Checks if the instance is instatiated or not.  If the variable
      * is not instantiated then it can be considered referenced.
      *
@@ -211,7 +221,8 @@ abstract public class InstanceInformation implements Cloneable
         return m_IsInstantiated;
     }
 
-    /**
+    
+/**
      * Checks if the instance is a static variable or
      * an instance variable.
      *
@@ -222,7 +233,8 @@ abstract public class InstanceInformation implements Cloneable
         return m_IsStatic;
     }
 
-    /**
+    
+/**
      * Retrieves the name of the instance.
      *
      * @param The instance name.
@@ -232,7 +244,8 @@ abstract public class InstanceInformation implements Cloneable
         return m_InstanceName;
     }
 
-    /**
+    
+/**
      * Determines if the instance has been referenced already.
      *
      * @return True if referenced.
@@ -242,7 +255,8 @@ abstract public class InstanceInformation implements Cloneable
         return m_HasBeenReferenced;
     }
 
-    /**
+    
+/**
      * Retrieves the name of the instance type.  The type name 
      * will be the fully scoped name of the type.
      *
@@ -258,7 +272,8 @@ abstract public class InstanceInformation implements Cloneable
         m_TypeName = value;
     }
 
-    /**
+    
+/**
      * Searches the instance owner for a method that matches the specified 
      * signature.  If the instance owner does not have a matching method
      * the super classes of the owner will be searched.
@@ -276,7 +291,8 @@ abstract public class InstanceInformation implements Cloneable
         return null;
     }
 
-    /**
+    
+/**
      * Searches for an attribute declaration.  The attributes owner and its super 
      * classes will be search until the attribute decaration is found.
      *
@@ -296,7 +312,8 @@ abstract public class InstanceInformation implements Cloneable
                                 null);
     }
 
-    /**
+    
+/**
      * Searches for an attribute declaration.  The attributes owner and its super 
      * classes will be search until the attribute decaration is found.  Since, 
      * the instance is a member of a class the ReferencedVariable event will be
@@ -316,7 +333,8 @@ abstract public class InstanceInformation implements Cloneable
                         true, false, null);
     }
 
-    /**
+    
+/**
      * Sends an object creation event to all listeners on an event dispatcher.
      * Before sending the object creation event the XML event data will be created.
      * The event data will be the child of the parent node.
@@ -370,7 +388,8 @@ abstract public class InstanceInformation implements Cloneable
         return data;
     }
 
-    /**
+    
+/**
      * Sends the OnDestroyAction event to all operation detail listeners.
      *
      * @param pDispatcher [in] The dispatcher used to send the event.
@@ -389,7 +408,8 @@ abstract public class InstanceInformation implements Cloneable
         }
     }
     
-    /**
+    
+/**
      * Initializes the IDestroyEvent before it is sent to the operation 
      * detail listeners.  InitializeDestroyEvent is virtual so decendents
      * can perform additional intialization.  This version will initialize
@@ -405,27 +425,15 @@ abstract public class InstanceInformation implements Cloneable
         ensureElementExists(event, "TokenDescriptors", "TokenDescriptors");
     }
     
-    /**
-     * Makes sure that the node with the passed in name is present
-     * under curNode. If it isn't, one is created.  XMLManip has a
-     * method that does the exact same thing.  The only problem is that
-     * XMLMainp wants to create a node with a namespace.  In this
-     * case we do not want the namespace.
-     * 
-     * [Aztec]: As far as I can see, the code in XMLManip is identical, and the
-     *          preceding comment is not valid, at least for the Java port.
-     *
-     * @param curNode [in] The node to append to.
-     * @param name    [in] Name of the node to check for existence for. 
-     * @parma query   [in] The query string to used to check for existence.
-     * @param node    [out] the node representing the element
-     */
+    
+
     protected Node ensureElementExists(Node curNode, String name, String query)
     {
         return XMLManip.ensureNodeExists(curNode, name, query);
     }
 
-    /**
+    
+/**
      * Create the XML data that represents the creation instance information data.
      *
      * @param pParentNode [in] The owner of the XML data.
@@ -468,7 +476,8 @@ abstract public class InstanceInformation implements Cloneable
         return createNode;
     }
 
-    /**
+    
+/**
      * Create the XML data that represents the destroy instance information data.
      *
      * @param pParentNode [in] The owner of the XML data.
@@ -493,7 +502,8 @@ abstract public class InstanceInformation implements Cloneable
         return destroyNode;
     }
 
-    /**
+    
+/**
      * Creates a Input pin that represent the instance information.
      *
      * @param pParent [in] The parent of the input pin node.
@@ -515,7 +525,8 @@ abstract public class InstanceInformation implements Cloneable
         return inputPinNode;
     }
 
-    /**
+    
+/**
      * Creates an Output pin that represent the instance information.
      *
      * @param pParent [in] The parent of the output pin node.
@@ -545,7 +556,8 @@ abstract public class InstanceInformation implements Cloneable
         return outputPinNode;
     }
 
-    /**
+    
+/**
      * Creates a new Token Descriptor tag for the specified XML DOM node.  The 
      * assumption is that the specified not is the node that must contain the 
      * TokenDescriptor node.  If the TokenDescriptor must reside under the 
@@ -571,7 +583,8 @@ abstract public class InstanceInformation implements Cloneable
         }
     }
 
-    /**
+    
+/**
      * Create a new XML node and added to the document.  CreateElement will throw
      * _com_error exceptions will an invalid HRESULT is received.
      * @param pOwner [in] The node that will own the new node.
@@ -599,7 +612,8 @@ abstract public class InstanceInformation implements Cloneable
         return null;
     }
     
-    /**
+    
+/**
      * Initializes the creation event data.
      *
      * @param pEvent [in] The event to initialize.

@@ -50,12 +50,14 @@ import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure
 
 public interface ITimeEvent extends IEvent
 {
-	/**
+	
+/**
 	 * Sets / Gets the corresponding time deadline.
 	*/
 	public IExpression getWhen();
 
-	/**
+	
+/**
 	 * Sets / Gets the corresponding time deadline.
 	*/
 	public void setWhen( IExpression value );

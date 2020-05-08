@@ -42,19 +42,14 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * UMLLogicalViewCookie.java
- *
- * Created on March 25, 2005, 7:38 PM
- */
+
+
 
 package org.netbeans.modules.uml.project.ui.nodes;
 import org.openide.nodes.Node;
 
-/**
- *
- * @author Mike
- */
+
+
 public interface UMLLogicalViewCookie extends Node.Cookie {
 	
 	public ModelRootNodeCookie getModelRootNodeCookie();

@@ -64,6 +64,7 @@ import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure
 import org.netbeans.modules.uml.core.metamodel.core.constructs.IEnumeration;
 import org.netbeans.modules.uml.core.metamodel.core.constructs.IEnumerationLiteral;
 
+
 /** 
  */
 public class ElementMatcher {
@@ -85,7 +86,8 @@ public class ElementMatcher {
     }
 
 	
-    /**
+    
+/**
      *   will return matching node if found, if several found 
      *   only first will be returned, an error will be logged
      */

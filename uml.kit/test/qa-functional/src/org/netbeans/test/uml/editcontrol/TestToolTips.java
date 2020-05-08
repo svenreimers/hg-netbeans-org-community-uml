@@ -103,11 +103,8 @@ import org.netbeans.test.umllib.util.PopupConstants;
 
 
 
-/**
- *
- * @author psb
- * @spec uml/UML-EditControl.xml
- */
+
+
 public class TestToolTips extends UMLTestCase {
     
     private static String prName= "EditControlToolTips";
@@ -302,7 +299,8 @@ public class TestToolTips extends UMLTestCase {
         pto = rt.pto;
         return rt.dOp;
     }    
-    /**
+    
+/**
      * @caseblock Tooltips
      * @usecase Tooltip appears for attribute edition
      */
@@ -355,7 +353,8 @@ public class TestToolTips extends UMLTestCase {
         int dy=Math.abs(attrCmp.getCenterPoint().y-tt.getCenterY());
         assertTrue("Tooltip is located far from attribute compartment in compare to compartment width and height, (center_dx:"+dx+",center_dy:"+dy+ ")",dx>attrCmp.getRectangle().width || dy>attrCmp.getRectangle().height);
    }
-    /**
+    
+/**
      * @caseblock Tooltips
      * @usecase Tooltip visibility highlighted when focus in edit control on visibility (for attribute).
      */
@@ -409,7 +408,8 @@ public class TestToolTips extends UMLTestCase {
         int dy=Math.abs(attrCmp.getCenterPoint().y-tt.getCenterY());
         assertTrue("Tooltip is located far from attribute compartment in compare to compartment width and height, (center_dx:"+dx+",center_dy:"+dy+ ")",dx>attrCmp.getRectangle().width || dy>attrCmp.getRectangle().height);
     }
-    /**
+    
+/**
      * @caseblock Tooltips
      * @usecase Tooltip type highlighted when focus in edit control on type (for attribute).
      */
@@ -464,7 +464,8 @@ public class TestToolTips extends UMLTestCase {
         int dy=Math.abs(attrCmp.getCenterPoint().y-tt.getCenterY());
         assertTrue("Tooltip is located far from attribute compartment in compare to compartment width and height, (center_dx:"+dx+",center_dy:"+dy+ ")",dx>attrCmp.getRectangle().width || dy>attrCmp.getRectangle().height);
     }
-    /**
+    
+/**
      * @caseblock Tooltips
      * @usecase  Tooltip ranges highlighted when focus in edit control on multiplicity (for attribute).
      */
@@ -519,7 +520,8 @@ public class TestToolTips extends UMLTestCase {
         int dy=Math.abs(attrCmp.getCenterPoint().y-tt.getCenterY());
         assertTrue("Tooltip is located far from attribute compartment in compare to compartment width and height, (center_dx:"+dx+",center_dy:"+dy+ ")",dx>attrCmp.getRectangle().width || dy>attrCmp.getRectangle().height);
     }
-    /**
+    
+/**
      * @caseblock Tooltips
      * @usecase Tooltip initial value highlighted when focus in edit control on initial value (for attribute).
      */
@@ -574,7 +576,8 @@ public class TestToolTips extends UMLTestCase {
         assertTrue("Tooltip is located far from attribute compartment in compare to compartment width and height, (center_dx:"+dx+",center_dy:"+dy+ ")",dx>attrCmp.getRectangle().width || dy>attrCmp.getRectangle().height);
     }
  
-    /**
+    
+/**
      * @caseblock Tooltips
      * @usecase Tooltip property name highlighted when focus in edit control on property name (for attribute).
      */
@@ -654,7 +657,8 @@ public class TestToolTips extends UMLTestCase {
         int dy=Math.abs(attrCmp.getCenterPoint().y-tt.getCenterY());
         assertTrue("Tooltip is located far from attribute compartment in compare to compartment width and height, (center_dx:"+dx+",center_dy:"+dy+ ")",dx>attrCmp.getRectangle().width || dy>attrCmp.getRectangle().height);
     }
-    /**
+    
+/**
 
 
 
@@ -735,7 +739,8 @@ public class TestToolTips extends UMLTestCase {
         assertTrue("Tooltip is located far from attribute compartment in compare to compartment width and height, (center_dx:"+dx+",center_dy:"+dy+ ")",dx>attrCmp.getRectangle().width || dy>attrCmp.getRectangle().height);
     }
  
-    /**
+    
+/**
      * @caseblock Tooltips
      * @usecase Tooltip after initial value with existing property (for attribute).
      */
@@ -811,7 +816,8 @@ public class TestToolTips extends UMLTestCase {
         assertTrue("Tooltip is located far from attribute compartment in compare to compartment width and height, (center_dx:"+dx+",center_dy:"+dy+ ")",dx>attrCmp.getRectangle().width || dy>attrCmp.getRectangle().height);
     }
 
-    /**
+    
+/**
      * @caseblock Tooltips
      * @usecase Tooltip appears for operation edition
      */
@@ -865,7 +871,8 @@ public class TestToolTips extends UMLTestCase {
         int dy=Math.abs(operCmp.getCenterPoint().y-tt.getCenterY());
         assertTrue("Tooltip is located far from attribute compartment in compare to compartment width and height, (center_dx:"+dx+",center_dy:"+dy+ ")",dx>operCmp.getRectangle().width || dy>operCmp.getRectangle().height);
    }
-    /**
+    
+/**
      * @caseblock Tooltips
      */
     public void testOperationVisibilityTooltip() {
@@ -920,7 +927,8 @@ public class TestToolTips extends UMLTestCase {
         int dy=Math.abs(operCmp.getCenterPoint().y-tt.getCenterY());
         assertTrue("Tooltip is located far from attribute compartment in compare to compartment width and height, (center_dx:"+dx+",center_dy:"+dy+ ")",dx>operCmp.getRectangle().width || dy>operCmp.getRectangle().height);
    }
-    /**
+    
+/**
      * @caseblock Tooltips
      */
     public void testOperationNameTooltip() {
@@ -976,7 +984,8 @@ public class TestToolTips extends UMLTestCase {
         int dy=Math.abs(operCmp.getCenterPoint().y-tt.getCenterY());
         assertTrue("Tooltip is located far from attribute compartment in compare to compartment width and height, (center_dx:"+dx+",center_dy:"+dy+ ")",dx>operCmp.getRectangle().width || dy>operCmp.getRectangle().height);
    }
-    /**
+    
+/**
      * @caseblock Tooltips
      */
     public void testOperationParameterTypeTooltip() {
@@ -1037,7 +1046,8 @@ public class TestToolTips extends UMLTestCase {
         int dy=Math.abs(operCmp.getCenterPoint().y-tt.getCenterY());
         assertTrue("Tooltip is located far from attribute compartment in compare to compartment width and height, (center_dx:"+dx+",center_dy:"+dy+ ")",dx>operCmp.getRectangle().width || dy>operCmp.getRectangle().height);
    }
-    /**
+    
+/**
      * @caseblock Tooltips
      */
     public void testOperationParameterNameTooltip() {
@@ -1096,7 +1106,8 @@ public class TestToolTips extends UMLTestCase {
         int dy=Math.abs(operCmp.getCenterPoint().y-tt.getCenterY());
         assertTrue("Tooltip is located far from attribute compartment in compare to compartment width and height, (center_dx:"+dx+",center_dy:"+dy+ ")",dx>operCmp.getRectangle().width || dy>operCmp.getRectangle().height);
    }
-    /**
+    
+/**
      * @caseblock Tooltips
      */
     public void testOperationReturnTypeTooltip() {
@@ -1160,7 +1171,8 @@ public class TestToolTips extends UMLTestCase {
         int dy=Math.abs(operCmp.getCenterPoint().y-tt.getCenterY());
         assertTrue("Tooltip is located far from attribute compartment in compare to compartment width and height, (center_dx:"+dx+",center_dy:"+dy+ ")",dx>operCmp.getRectangle().width || dy>operCmp.getRectangle().height);
    }
-    /**
+    
+/**
      * @caseblock Tooltips
      */
     public void testSequenceDiagramTooltip() {

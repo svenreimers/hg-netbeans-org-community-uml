@@ -63,7 +63,8 @@ import org.openide.util.NbBundle;
 public class PreferenceManager implements IPreferenceManager
 {
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IPreferenceManager#getIsAliasingOn()
      */
     public boolean getIsAliasingOn()
@@ -71,7 +72,8 @@ public class PreferenceManager implements IPreferenceManager
         return false;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IPreferenceManager#setIsAliasingOn(boolean)
      */
     public void setIsAliasingOn(boolean newVal)
@@ -80,7 +82,8 @@ public class PreferenceManager implements IPreferenceManager
 
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IPreferenceManager#getDefaultLanguage(java.lang.String)
      */
     public String getDefaultLanguage(String modeName)
@@ -89,7 +92,8 @@ public class PreferenceManager implements IPreferenceManager
         return null;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IPreferenceManager#setDefaultLanguage(java.lang.String, java.lang.String)
      */
     public void setDefaultLanguage(String modeName, String newVal)
@@ -98,7 +102,8 @@ public class PreferenceManager implements IPreferenceManager
 
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IPreferenceManager#getDefaultModeName()
      */
     public String getDefaultModeName()
@@ -107,7 +112,8 @@ public class PreferenceManager implements IPreferenceManager
         return null;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IPreferenceManager#setDefaultModeName(java.lang.String)
      */
     public void setDefaultModeName(String newVal)
@@ -116,7 +122,8 @@ public class PreferenceManager implements IPreferenceManager
 
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IPreferenceManager#getHomeLocation()
      */
     public String getHomeLocation()
@@ -125,7 +132,8 @@ public class PreferenceManager implements IPreferenceManager
         return null;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IPreferenceManager#unknownClassifier(java.lang.String)
      */
     public String unknownClassifier()
@@ -134,7 +142,8 @@ public class PreferenceManager implements IPreferenceManager
         return null;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IPreferenceManager#installDefaultModelLibraries(org.netbeans.modules.uml.core.metamodel.core.foundation.IPackage)
      */
     public void installDefaultModelLibraries(IPackage pack, 
@@ -153,7 +162,8 @@ public class PreferenceManager implements IPreferenceManager
         }
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IPreferenceManager#save(java.lang.String)
      */
     public void save(String fileName)
@@ -164,16 +174,18 @@ public class PreferenceManager implements IPreferenceManager
         }
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IPreferenceManager#getDefaultElementName()
      */
     public String getDefaultElementName()
     {
-        //kris richards - "DefaultelementName" pref expunged. Set to "Unnamed"
+        
         return NbBundle.getMessage (PreferenceManager.class, "UNNAMED") ;
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IPreferenceManager#setDefaultElementName(java.lang.String)
      */
     public void setDefaultElementName(String newVal)
@@ -182,7 +194,8 @@ public class PreferenceManager implements IPreferenceManager
             "defaultName", newVal);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IPreferenceManager#getDefaultProjectName()
      */
     public String getDefaultProjectName()
@@ -193,7 +206,8 @@ public class PreferenceManager implements IPreferenceManager
         return null;
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IPreferenceManager#setDefaultProjectName(java.lang.String)
      */
     public void setDefaultProjectName(String newVal)
@@ -203,7 +217,8 @@ public class PreferenceManager implements IPreferenceManager
             elem.attribute("name").setValue(newVal);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IPreferenceManager#load(java.lang.String)
      */
     public void load(String prefFile)
@@ -214,7 +229,8 @@ public class PreferenceManager implements IPreferenceManager
             m_PrefDoc = XMLManip.getDOMDocument(prefFile);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IPreferenceManager#retrieveDefaultModelLibraryNames()
      */
     public ETList<String> retrieveDefaultModelLibraryNames()
@@ -244,7 +260,8 @@ public class PreferenceManager implements IPreferenceManager
         return null;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IPreferenceManager#getDefaultRoundTripBehavior(java.lang.String, java.lang.String)
      */
     public String getDefaultRoundTripBehavior(
@@ -255,7 +272,8 @@ public class PreferenceManager implements IPreferenceManager
         return null;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IPreferenceManager#setDefaultRoundTripBehavior(java.lang.String, java.lang.String, java.lang.String)
      */
     public void setDefaultRoundTripBehavior(
@@ -267,7 +285,8 @@ public class PreferenceManager implements IPreferenceManager
 
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IPreferenceManager#retrieveDefaultPreferenceLocation()
      */
     public String retrieveDefaultPreferenceLocation()

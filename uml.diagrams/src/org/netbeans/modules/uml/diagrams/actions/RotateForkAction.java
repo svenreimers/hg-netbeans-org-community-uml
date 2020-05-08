@@ -52,10 +52,8 @@ import org.netbeans.api.visual.widget.Widget;
 import org.netbeans.modules.uml.diagrams.nodes.JoinForkWidget;
 import org.netbeans.modules.uml.drawingarea.util.Util;
 
-/**
- *
- * @author thuy
- */
+
+
 public class RotateForkAction extends WidgetAction.LockedAdapter 
 {
     private JoinForkWidget joinFork = null;

@@ -42,6 +42,7 @@
  * made subject to such option by the copyright holder.
  */
 
+
 /*
  * Created on Oct 17, 2003
  *
@@ -55,17 +56,16 @@ import org.netbeans.modules.uml.core.metamodel.basic.basicactions.Action;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.ElementCollector;
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IReception;
 
-/**
- * @author aztec
- *
- */
+
+
 public class SendAction extends Action implements ISendAction
 {
 	public SendAction()
 	{
 	}
 	
-	/**
+	
+/**
 	 * Gets the Reception which will be invoked when the action is performed.
 	 *
 	 * @return IReception
@@ -76,7 +76,8 @@ public class SendAction extends Action implements ISendAction
 						retrieveSingleElementWithAttrID(this,"reception", IReception.class);
 	}
 
-	/**
+	
+/**
 	 * Sets the Reception which will be invoked when the action is performed.
 	 *
 	 * @param reception
@@ -87,7 +88,8 @@ public class SendAction extends Action implements ISendAction
 	}
 	
 	
-	/**
+	
+/**
 	 * Establishes the appropriate XML elements for this UML type.
 	 *
 	 * [in] The document where this element will reside

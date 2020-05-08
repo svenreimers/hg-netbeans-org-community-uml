@@ -44,6 +44,7 @@
 
 
 
+
 /*
  * Created on Sep 24, 2003
  *
@@ -56,10 +57,8 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.FactoryRetriever;
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier;
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
-/**
- * @author aztec
- *
- */
+
+
 public class CallOperationActionTestCase extends AbstractUMLTestCase
 {
 	private ICallOperationAction action = null;

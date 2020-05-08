@@ -43,16 +43,15 @@
  */
 
 
+
 /*
  * Created on Mar 2, 2004
  *
  */
 package org.netbeans.modules.uml.ui.support.contextmenusupport;
 
-/**
- * @author jingmingm
- *
- */
+
+
 public interface IMenuKind
 {
 	public static int MK_BUTTON = 1;

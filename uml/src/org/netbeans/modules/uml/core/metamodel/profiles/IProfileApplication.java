@@ -42,6 +42,7 @@
  * made subject to such option by the copyright holder.
  */
 
+
 /*
  * Created on Sep 16, 2003
  *
@@ -52,18 +53,18 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.IPackageImport;
 
 
 
-/**
- * @author aztec
- *
- */
+
+
 public interface IProfileApplication extends IPackageImport
 {
-	/**
+	
+/**
 	 * Gets the Profile this application is importing.
 	 */
 	public IProfile getImportedProfile();
 	
-	/**
+	
+/**
 	 * Sets the Profile this application is importing.
 	 */
 	public void setImportedProfile(IProfile profile);

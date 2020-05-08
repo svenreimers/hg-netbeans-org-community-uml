@@ -42,6 +42,7 @@
  * made subject to such option by the copyright holder.
  */
 
+
 /*
  * Created on Mar 29, 2005
  *
@@ -78,12 +79,8 @@ import org.netbeans.modules.uml.util.DummyCorePreference;
 import org.openide.util.NbPreferences;
 
 
-/**
- * @author alagud
- *
- * TODO To change the template for this generated type comment go to Window -
- * Preferences - Java - Code Style - Code Templates
- */
+
+
 public class UMLSupport
 {
     
@@ -111,7 +108,8 @@ public class UMLSupport
     public static int SU_IDE_NONE;
     public static final String  PROJ_EXT = ".etd"; // NOI18N
     
-    /**
+    
+/**
      * Singleton insatance of UMLSupport
      */
     public static UMLSupport getUMLSupport()
@@ -122,7 +120,7 @@ public class UMLSupport
         
     }
     
-// IZ 78480: conover
+
 // I made this method static. Not sure why it wasn't before
 // because mProdManager is a static member
     public static ProductProjectManager getProjectManager()
@@ -138,7 +136,8 @@ public class UMLSupport
         return defaultProject;
     }
     
-    /**
+    
+/**
      * Determines whether the given Describe project is in the Implementation
      * mode.
      *
@@ -150,7 +149,8 @@ public class UMLSupport
         return proj != null && IMPLEMENTATION_MODE.equals(proj.getMode());
     }
     
-    /**
+    
+/**
      * Sets whether the given project is the 'default' project. The
      * default project is usually the target for source-model roundtrip.
      *
@@ -210,13 +210,14 @@ public class UMLSupport
     
     public static IProject getCurrentProject()
     {
-        // IZ 78480: conover
+        
         // I added the static getter because the static member was
         // was null everytime.
         return getProjectManager().getCurrentProject();
     }
     
-    /**
+    
+/**
      *  Sets whether roundtrip events will be sent to the registered event
      * sinks for model changes.
      *
@@ -233,7 +234,8 @@ public class UMLSupport
         }
     }
     
-    /**
+    
+/**
      * @return
      */
     public static boolean isRoundTripEnabled()
@@ -250,7 +252,8 @@ public class UMLSupport
         return product;
     }
     
-    /**
+    
+/**
      * Returns the locate specific value for the String message.
      * @param message
      */
@@ -274,7 +277,7 @@ public class UMLSupport
     
     public String getCollectionOverride()
     {
-        //kris richards - made change to nbpreferences
+        
         return NbPreferences.forModule(DummyCorePreference.class).get("UML_COLLECTION_OVERRIDE_DEFAULT", "java.util.ArrayList"); // NOI18N
     }
     
@@ -310,7 +313,8 @@ public class UMLSupport
         return retVal;
     }
     
-    /* NB60TBD
+    
+/* NB60TBD
     public static IProject getProjectForPath(String filename)
     {
         IProject retVal = null;
@@ -358,7 +362,8 @@ public class UMLSupport
         
     }
     */
-    /* NB60TBD
+    
+/* NB60TBD
     public IProject getProjectForClassElement(ClassElement el)
     {
         String retVal = null;
@@ -371,7 +376,8 @@ public class UMLSupport
         return iproj;
     }
     */
-    /* NB60TBD
+    
+/* NB60TBD
     public String getProjectName(ClassElement el)
     {
         String retVal = null;
@@ -394,6 +400,7 @@ public class UMLSupport
         return retVal;
     }
     */    
+
 /* NB60TBD 
     public static String getFileName(JavaClass clazz)
     {
@@ -410,6 +417,7 @@ public class UMLSupport
         return retVal;
     }
 */
+
 /* NB60TBD 
     public static String getFileName(Resource resource)
     {
@@ -439,7 +447,8 @@ public class UMLSupport
         
     }
     
-    /**
+    
+/**
      *  Returns the IIDEManager for the current IDE. Note that this reference
      * should not be cached, since the IDE might change it. Acquire the IDE
      * manager from GDProSupport before each use and do NOT cache it.<br>
@@ -529,7 +538,7 @@ public class UMLSupport
  
     public static boolean getUseGenericsDefault()
     {
-        //kris richards - made change to nbpreferences
+        
         return NbPreferences.forModule(DummyCorePreference.class).getBoolean("UML_USE_GENERICS_DEFAULT", false); // NOI18N
     }
     
@@ -539,20 +548,20 @@ public class UMLSupport
         String retVal = name;
         int genericStart = name.lastIndexOf('<');
         
-        // see if this type has a generic type specified
+        
         if (genericStart < 0)
         {
-            // no '<' found so there is no generic type
+            
             // now is it a Collection type?
             if (Util.isValidCollectionDataType(name))
             {
-                // we have a Collection type with no Generic...
+                
                 //  so return Object as the type
                 return "java.lang.Object"; // NOI18N
             }
         }
         
-        // so we must have a generic type specified
+        
         else
         {
             retVal = name.substring(genericStart + 1, name.indexOf('>'));
@@ -566,14 +575,14 @@ public class UMLSupport
     {
         int genericStart = type.lastIndexOf('<');
         
-        // see if this type has a generic type specified
+        
         if (genericStart < 0)
         {
-            // no '<' found so there is no generic type
+            
             // now is it a Collection type?
             if (Util.isValidCollectionDataType(type))
             {
-                // we have a Collection type with no Generic...
+                
                 //  so return only one set of array brackets
                 return "[]"; // NOI18N
             }

@@ -43,11 +43,8 @@
  */
 
 
-/*
- * File       : ThrowsDeclarationStateHandler.java
- * Created on : Dec 11, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.statehandlers;
 
 import org.dom4j.Element;
@@ -57,9 +54,8 @@ import org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.Identi
 import org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ITokenDescriptor;
 import org.netbeans.modules.uml.core.support.umlsupport.XMLManip;
 
-/**
- * @author Aztec
- */
+
+
 public class ThrowsDeclarationStateHandler extends StateHandler
 {
     private int         m_IndentifierLevel;

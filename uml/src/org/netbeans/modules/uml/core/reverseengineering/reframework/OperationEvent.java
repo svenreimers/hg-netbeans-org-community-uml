@@ -51,7 +51,8 @@ import org.dom4j.Node;
 public class OperationEvent extends ParserData implements IOperationEvent
 {
 
-    /**
+    
+/**
      * Retrieves the operation.
      * @param pVal The operation data.
      */
@@ -62,7 +63,8 @@ public class OperationEvent extends ParserData implements IOperationEvent
         return createOperation(getEventData());
     }
 
-    /**
+    
+/**
      * Create a new operation and adds it to the collection of operations.  The 
      * IREOperation implementation created depends on the operation type.
      * 

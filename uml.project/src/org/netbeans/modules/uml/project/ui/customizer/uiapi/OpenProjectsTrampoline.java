@@ -47,10 +47,8 @@ package org.netbeans.modules.uml.project.ui.customizer.uiapi;
 import java.beans.PropertyChangeListener;
 import org.netbeans.api.project.Project;
 
-/**
- * List of projects open in the GUI.
- * @author Petr Hrebejk
- */
+
+
 public interface OpenProjectsTrampoline {
 
     public Project[] getOpenProjectsAPI();

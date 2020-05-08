@@ -43,11 +43,8 @@
  */
 
 
-/*
- * NewUMLProjectWizardOperator.java
- *
- * Created on March 29, 2005, 12:56 PM
- */
+
+
 
 package org.netbeans.test.umllib;
 
@@ -57,10 +54,8 @@ import org.netbeans.jemmy.operators.JComboBoxOperator;
 import org.netbeans.jemmy.operators.JTextFieldOperator;
 import org.netbeans.jemmy.operators.JTableOperator ;
 
-/**
- * Handles Buzz New
- * @author Alexei Mokeev
- */
+
+
 public class NewUMLProjectStepOperator extends NewProjectNameLocationStepOperator{
     private JButtonOperator _btAddJavaProject = null;
     
@@ -68,21 +63,25 @@ public class NewUMLProjectStepOperator extends NewProjectNameLocationStepOperato
     public NewUMLProjectStepOperator() {
     }
     
-    /** Returns operator of "Add Java Project..." button.
+    
+/** Returns operator of "Add Java Project..." button.
      * @return  JButtonOperator instance of "Add Java Project..." button
      */
-    /*public JButtonOperator btAddJavaProject() {
+    
+/*public JButtonOperator btAddJavaProject() {
         if (_btAddJavaProject == null) {
             _btAddJavaProject = new JButtonOperator(this, LabelsAndTitles.UML_WIZARD_ADD_JAVA_PROJECT_CAPTION);
         }
         return _btAddJavaProject;
     }*/
     
-    /**
+    
+/**
      * Pushes "Add Java Project..." button.
      * @return 
      */
-    /*public void addJavaProject() {
+    
+/*public void addJavaProject() {
         btAddJavaProject().push();
     }
     
@@ -94,7 +93,8 @@ public class NewUMLProjectStepOperator extends NewProjectNameLocationStepOperato
         return new JTextFieldOperator(this, 3);
     }
     
-    /**
+    
+/**
      * 
      * @return 
      */
@@ -102,7 +102,8 @@ public class NewUMLProjectStepOperator extends NewProjectNameLocationStepOperato
         return new JComboBoxOperator(this);
     }
      
-    /**
+    
+/**
      * 
      * @param folderName 
      */

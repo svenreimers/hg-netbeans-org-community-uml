@@ -46,12 +46,14 @@ package org.netbeans.modules.uml.core.reverseengineering.reframework.parsingfram
 
 public interface IStateListener
 {
-	/**
+	
+/**
 	 * The OnBeginState event is fired when the state of the parser has changed.  A new state can begin while still in a state.
 	*/
 	public void onBeginState( String stateName, String language, IStatePayload Payload );
 
-	/**
+	
+/**
 	 * The OnEndState event will be fired when exiting a state.
 	*/
 	public void onEndState( String stateName );

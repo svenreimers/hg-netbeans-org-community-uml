@@ -69,7 +69,8 @@ public class Filter implements IStateFilter, ITokenFilter
             filteredTokens.add(token);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.IStateFilter#processState(java.lang.String, java.lang.String)
      */
     public boolean processState(String stateName, String language)
@@ -77,7 +78,8 @@ public class Filter implements IStateFilter, ITokenFilter
         return !filteredStates.contains(stateName);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ITokenFilter#isTokenValid(java.lang.String, java.lang.String, java.lang.String)
      */
     public boolean isTokenValid(String tokenType, String stateName, String language)

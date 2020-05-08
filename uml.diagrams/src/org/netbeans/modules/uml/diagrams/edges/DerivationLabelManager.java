@@ -60,10 +60,8 @@ import org.netbeans.modules.uml.drawingarea.view.UMLLabelWidget;
 import org.openide.util.NbBundle;
 
 
-/**
- *
- * @author treyspiva
- */
+
+
 public class DerivationLabelManager extends BasicUMLLabelManager
 {
     ResourceBundle bundle = NbBundle.getBundle(DerivationLabelManager.class);

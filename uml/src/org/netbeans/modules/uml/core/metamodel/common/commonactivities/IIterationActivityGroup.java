@@ -42,18 +42,14 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : IIterationActivityGroup.java
- * Created on : Sep 16, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.metamodel.common.commonactivities;
 
 import org.netbeans.modules.uml.core.metamodel.core.foundation.IValueSpecification;
 
-/**
- * @author Aztec
- */
+
+
 public interface IIterationActivityGroup extends IStructuredActivityGroup
 {
     public IValueSpecification getTest();

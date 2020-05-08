@@ -42,24 +42,21 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : IterationActivityGroup.java
- * Created on : Sep 16, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.metamodel.common.commonactivities;
 
 import org.netbeans.modules.uml.core.metamodel.core.foundation.ElementCollector;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.IValueSpecification;
 
-/**
- * @author Aztec
- */
+
+
 public class IterationActivityGroup extends StructuredActivityGroup
                                     implements IIterationActivityGroup
 {
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactivities.IIterationActivityGroup#getKind()
      */
     public int getKind()
@@ -67,7 +64,8 @@ public class IterationActivityGroup extends StructuredActivityGroup
         return getIterationActivityGroupKindValue("kind");
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactivities.IIterationActivityGroup#getTest()
      */
     public IValueSpecification getTest()
@@ -77,7 +75,8 @@ public class IterationActivityGroup extends StructuredActivityGroup
 
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactivities.IIterationActivityGroup#setKind(int)
      */
     public void setKind(int nKind)
@@ -85,7 +84,8 @@ public class IterationActivityGroup extends StructuredActivityGroup
         setIterationActivityGroupKind("kind", nKind);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactivities.IIterationActivityGroup#setTest(org.netbeans.modules.uml.core.metamodel.core.foundation.IValueSpecification)
      */
     public void setTest(IValueSpecification pTest)

@@ -46,7 +46,8 @@ package org.netbeans.modules.uml.core.reverseengineering.reframework.parsingfram
 
 public interface IStateFilter
 {
-	/**
+	
+/**
 	 * ProcessState determines if a state is to be filtered or not.
 	*/
 	public boolean processState( String stateName, String language );

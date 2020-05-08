@@ -51,10 +51,8 @@ import org.netbeans.modules.uml.core.metamodel.structure.IProject;
 import org.netbeans.modules.uml.core.support.umlsupport.PathManip;
 import org.netbeans.modules.uml.core.support.umlsupport.URILocator;
 
-/**
- * @author sumitabhk
- *
- */
+
+
 public class UMLURILocator extends URILocator
 {
 
@@ -68,7 +66,8 @@ public class UMLURILocator extends URILocator
         super();
     }
     
-    /**
+    
+/**
      * UMLURILocator constructor
      *
      * @param[in] contextElement The element that may be queried for its
@@ -93,7 +92,8 @@ public class UMLURILocator extends URILocator
         return uri;
     }
     
-    /**
+    
+/**
      *
      * Retrieves the URI that points at the passed in node. The GetVersionedURI
      * off the UMLXMLManip object will be used first. If that determines that
@@ -167,7 +167,8 @@ public class UMLURILocator extends URILocator
         return uri;
     }
     
-    /**
+    
+/**
      *
      * Retrieves the filename of the Project that m_ContextElement is a part of
      *
@@ -188,7 +189,8 @@ public class UMLURILocator extends URILocator
         return fileName;
     }
     
-    /**
+    
+/**
      *
      * Makes sure that the in coming uri is correct, checking specifically if the node is actually
      * a node being imported from another project
@@ -234,7 +236,8 @@ public class UMLURILocator extends URILocator
         return uri;
     }
     
-    /**
+    
+/**
      *
      * Determines if the passed in node is part of the same project
      * as the internal context node

@@ -73,6 +73,7 @@ import org.netbeans.modules.uml.drawingarea.actions.ExConnectWithLocationProvide
 import org.netbeans.modules.uml.drawingarea.view.DesignerScene;
 import org.netbeans.modules.uml.drawingarea.view.DesignerTools;
 
+
 /**
  * redefined to use starting point
  * TBD consider extend of common action for messages and other links
@@ -94,7 +95,8 @@ public class ConnectAction extends WidgetAction.LockedAdapter {
     private boolean targetExistButNotValid=false;
     private AnchorShape standartShape=AnchorShapeFactory.createArrowAnchorShape(45, 12);
     private AnchorShape notValidTargetShape=(AnchorShape) new ArrowWithCrossedCircleAnchorShape(12,20,0);
-    /**
+    
+/**
      * 
      * @param decorator
      * @param interractionLayer

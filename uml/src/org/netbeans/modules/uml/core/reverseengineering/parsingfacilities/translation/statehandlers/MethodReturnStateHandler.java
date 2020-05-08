@@ -43,11 +43,8 @@
  */
 
 
-/*
- * File       : MethodReturnStateHandler.java
- * Created on : Dec 11, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.statehandlers;
 
 import org.dom4j.Node;
@@ -61,9 +58,8 @@ import org.netbeans.modules.uml.core.reverseengineering.reframework.IReturnEvent
 import org.netbeans.modules.uml.core.reverseengineering.reframework.ReturnEvent;
 import org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ITokenDescriptor;
 
-/**
- * @author Aztec
- */
+
+
 public class MethodReturnStateHandler extends MethodDetailStateHandler
 {
     private Expression m_ReturnExpression = new Expression();
@@ -80,7 +76,7 @@ public class MethodReturnStateHandler extends MethodDetailStateHandler
         StateHandler retVal = this;
         
         if ("Conditional Expression".equals(stateName)) {
-          //kris richards - 
+          
           // It is now assumed that the "Conditional Expression" state
           // will occur as a substate of the MethodVariableStateHandler. Therefore
           // the state is trap in the MethodVariableStateHandler.createSubStateHandler 
@@ -182,7 +178,7 @@ public class MethodReturnStateHandler extends MethodDetailStateHandler
         {
             if(isWriteXMI())
             {
-                //TODO: Aztec: Confirm
+                
                 Node data = 
                         m_ReturnExpression.writeAsXMI(getReferenceInstance(), 
                                             pNode,

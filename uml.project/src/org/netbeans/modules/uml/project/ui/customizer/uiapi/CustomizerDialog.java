@@ -57,13 +57,12 @@ import org.openide.util.HelpCtx;
 import org.openide.util.NbBundle;
 
 
-/** Implementation of standard customizer dialog.
- *
- * @author Petr Hrebejk
- */
+
+
 public class CustomizerDialog {
     
-    /** Factory class only 
+    
+/** Factory class only 
      */
     private CustomizerDialog() {}
     

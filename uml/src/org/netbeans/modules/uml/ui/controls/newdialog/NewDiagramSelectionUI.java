@@ -71,10 +71,8 @@ import org.netbeans.modules.uml.ui.support.commonresources.CommonResourceManager
 import org.netbeans.modules.uml.ui.support.wizard.IWizardSheet;
 
 
-/**
- * @author sumitabhk
- *
- */
+
+
 public class NewDiagramSelectionUI extends NewDialogWizardPage
 {
 	private String origLocation = null;

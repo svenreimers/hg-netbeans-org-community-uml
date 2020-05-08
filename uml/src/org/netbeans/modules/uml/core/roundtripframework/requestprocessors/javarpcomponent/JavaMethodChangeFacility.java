@@ -42,11 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : JavaMethodChangeFacility.java
- * Created on : Jan 19, 2004
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpcomponent;
 
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier;
@@ -55,9 +52,8 @@ import org.netbeans.modules.uml.core.roundtripframework.MethodChangeFacility;
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IParameter;
 import org.netbeans.modules.uml.core.roundtripframework.RTMode;
 import org.netbeans.modules.uml.core.support.umlsupport.UMLSupportResource;
-/**
- * @author Aztec
- */
+
+
 public class JavaMethodChangeFacility
     extends MethodChangeFacility
     implements IJavaMethodChangeFacility

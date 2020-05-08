@@ -57,14 +57,8 @@ import org.netbeans.modules.uml.core.coreapplication.ICoreProduct;
 import org.netbeans.modules.uml.core.support.umlsupport.ProductRetriever;
 import org.netbeans.modules.uml.core.support.umlsupport.XMLManip;
 
-/**
- * <p>Title: </p>
- * <p>Description: </p>
- * <p>Copyright: Copyright (c) 2003</p>
- * <p>Company: </p>
- * @author not attributable
- * @version 1.0
- */
+
+
 
 public class FactoryRetriever
 {
@@ -175,7 +169,8 @@ public class FactoryRetriever
       return retObj;
    }
    
-   /**
+   
+/**
     * Retrieves a model element by it's XMI ID.
     *
     * @param context A model element that can be used to specify the context to 
@@ -199,7 +194,8 @@ public class FactoryRetriever
        return retVal;
    }
 
-   /**
+   
+/**
     *
     * Creates the appropriate COM wrapper object and sets the XML node of that
     * element, without calling PrepareNode on the COM wrapper. This has the effect
@@ -412,7 +408,8 @@ public class FactoryRetriever
    //		return hr;
    //	}
 
-   /**
+   
+/**
     *
     * Puts the ID of the passed in node on the cloned list,
     * thereby preventing the element from being established on
@@ -434,7 +431,8 @@ public class FactoryRetriever
       }
    }
 
-   /**
+   
+/**
     *
     * Determines whether or not the passed in node has been previously cloned
     *
@@ -495,7 +493,8 @@ public class FactoryRetriever
       return cloned;
    }
 
-   /**
+   
+/**
     *
     * Determines whether or not the passed in XMI ID refers to an object that has been previously cloned
     *
@@ -528,7 +527,8 @@ public class FactoryRetriever
       return isCloned;
    }
 
-   /**
+   
+/**
     *
     * Erases the ID of the passed in element from the list of elements that
     * have been cloned
@@ -544,7 +544,8 @@ public class FactoryRetriever
       clearClonedStatus(node);
    }
 
-   /**
+   
+/**
     *
     * Erases the ID of the passed in element from the list of elements that
     * have been cloned
@@ -567,7 +568,8 @@ public class FactoryRetriever
       }
    }
 
-   /**
+   
+/**
     *
     * Creates an empty COM wrapper, then sets the node on it.
     *
@@ -601,7 +603,8 @@ public class FactoryRetriever
       return retObj;
    }
 
-   /**
+   
+/**
     *
     * Retrieves an element off the in memory object list by id.
     *
@@ -622,7 +625,8 @@ public class FactoryRetriever
       return retEle;
    }
 
-   /**
+   
+/**
    *
    * Clones the passed in node, then creates a new wrapper COM object. 
    *
@@ -656,7 +660,8 @@ public class FactoryRetriever
       return retVer;
    }
 
-   /**
+   
+/**
     * @param xmiid
     */
    public void removeObject(String xmiid)
@@ -664,7 +669,8 @@ public class FactoryRetriever
       m_InMemoryObjects.remove(xmiid);
    }
 
-   /**
+   
+/**
    *
    * Adds the passed in object to the in memory list of elemnets.
    *
@@ -687,7 +693,8 @@ public class FactoryRetriever
       }
    }
 
-   /**
+   
+/**
     * Starts the iteration
     *
     * Used to iterator over the in memory objects since our STL doesn't handle
@@ -698,7 +705,8 @@ public class FactoryRetriever
       m_MapIterator = m_InMemoryObjects.values().iterator();
    }
 
-   /**
+   
+/**
     * Iterates to the next element.
     *
     * @return true if we haven't reached the end yet

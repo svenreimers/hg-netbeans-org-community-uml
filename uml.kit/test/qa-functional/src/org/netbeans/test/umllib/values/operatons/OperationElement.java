@@ -43,6 +43,7 @@
  */
 
 
+
 /*
  * OperationElement.java
  *
@@ -65,10 +66,8 @@ import org.netbeans.test.umllib.values.Type;
 import org.netbeans.test.umllib.values.Visibility;
 import org.netbeans.test.umllib.values.Arg;
 
-/**
- *
- * @author Alexandr Scherbatiy
- */
+
+
 public class OperationElement {
     
     /** Creates a new instance of OperationElement */

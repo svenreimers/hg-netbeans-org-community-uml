@@ -61,7 +61,8 @@ public class ParserData implements IParserData
 {
     private Node m_EventData;
 
-    /**
+    
+/**
      * Retrieves the event data in a pure XMI format.  All TokenDescriptors
      * will be removed from the string.
      * @return The XMI data.
@@ -72,7 +73,8 @@ public class ParserData implements IParserData
         return null;
     }
 
-    /**
+    
+/**
      * The event data in its pure format.  All TokenDescriptors will 
      * still exist in the string.
      * @return The data stream.
@@ -83,7 +85,8 @@ public class ParserData implements IParserData
         return node != null? node.asXML() : null;
     }
 
-    /**
+    
+/**
      * Retrieves the event data.  The data should only be set by the sender of the event.
      * @param pVal [OUT] The XML document that contains the event data.
      */
@@ -94,7 +97,8 @@ public class ParserData implements IParserData
                 : m_EventData;
     }
 
-    /**
+    
+/**
      * Sets the event data.  The data should only be set by the sender of the event.
      * @param newValue [IN] The XML document that contains the event data.
      */
@@ -103,7 +107,8 @@ public class ParserData implements IParserData
         m_EventData = value;
     }
 
-    /**
+    
+/**
      * Retrieves the token descriptors for the parser event.
      * @param pVal The token descriptors for the parser data.
      * @return S_OK if successful.
@@ -114,7 +119,8 @@ public class ParserData implements IParserData
         return node != null? getTokenDescriptors(node) : null;
     }
     
-    /**
+    
+/**
      * Retrieves the token descriptors for the parser event.  The token descriptors will 
      * be contained by the specified node.
      * @param node The DOM node to search.
@@ -140,7 +146,8 @@ public class ParserData implements IParserData
         return null;
     }
     
-    /**
+    
+/**
      * Retrieves a node from the XML data.  The XML node contained by the
      * parser data instance will be searched.
      * @param query [in] The query used to find the node.
@@ -152,7 +159,8 @@ public class ParserData implements IParserData
         return data != null? XMLManip.selectSingleNode(data, query) : null;
     }
     
-    /**
+    
+/**
      * Retrieves a token descriptor of a specified type.  
      * @param type The type of the descriptor.
      * @param pVal The descriptor of NULL if a token descriptor or the specified
@@ -164,7 +172,8 @@ public class ParserData implements IParserData
         return data != null? getTokenDescriptor(data, type) : null;
     }
     
-    /**
+    
+/**
      * Retrieves the value of a token descriptor of a specified type.  
      * @param type The type of the descriptor.
      * @return The value of the descriptor if found, else <code>null</code>.
@@ -175,7 +184,8 @@ public class ParserData implements IParserData
         return desc != null? desc.getValue() : null;
     }
     
-    /**
+    
+/**
      * Retrieves a token descriptor of a specified type.  
      * @param pNode The XML node to search.
      * @param type The type of the descriptor.
@@ -201,7 +211,8 @@ public class ParserData implements IParserData
         return null;
     }
 
-    /**
+    
+/**
      * Retrieves the name of the file that contained the source code element.
      * @param pVal The file name.
      */
@@ -210,7 +221,8 @@ public class ParserData implements IParserData
         return getFilename(getEventData());
     }
 
-    /**
+    
+/**
      * Retrieves the name of the file that contained the source code element.
      * The specified XML node is search for a token descriptor with the type 
      * of "Filename".  If the token descriptor is not found then the parent
@@ -231,7 +243,8 @@ public class ParserData implements IParserData
         return getFilename(node.getParent());
     }
     
-    /** 
+    
+/** 
      * Returns the value of the token descriptor whose type is @a type
      * 
      * @param type[in] the type of token descriptor

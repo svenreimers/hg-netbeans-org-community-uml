@@ -50,10 +50,8 @@ import org.netbeans.api.visual.router.Router;
 import org.netbeans.api.visual.widget.ConnectionWidget;
 import org.netbeans.api.visual.widget.Widget;
 
-/**
- *
- * @author treyspiva
- */
+
+
 public class SelfLinkRouter implements Router
 {
     public static final int BEND_SPACE = 10;

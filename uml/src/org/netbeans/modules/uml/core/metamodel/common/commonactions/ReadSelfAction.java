@@ -42,11 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : ReadSelfAction.java
- * Created on : Sep 18, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.metamodel.common.commonactions;
 
 import org.dom4j.Document;
@@ -56,13 +53,13 @@ import org.netbeans.modules.uml.core.metamodel.basic.basicactions.IOutputPin;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.ElementCollector;
 import org.netbeans.modules.uml.core.metamodel.basic.basicactions.PrimitiveAction;
 
-/**
- * @author Aztec
- */
+
+
 public class ReadSelfAction extends PrimitiveAction implements IReadSelfAction
 {
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactions.IReadAttributeAction#getResult()
      */
     public IOutputPin getResult()
@@ -72,7 +69,8 @@ public class ReadSelfAction extends PrimitiveAction implements IReadSelfAction
 
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactions.IReadAttributeAction#setResult(org.netbeans.modules.uml.core.metamodel.basic.basicactions.IOutputPin)
      */
     public void setResult(IOutputPin pPin)

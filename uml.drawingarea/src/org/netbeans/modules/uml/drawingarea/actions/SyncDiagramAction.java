@@ -57,10 +57,8 @@ import org.netbeans.modules.uml.drawingarea.view.UMLWidget;
 import org.netbeans.modules.uml.resources.images.ImageUtil;
 import org.openide.util.NbBundle;
 
-/**
- *
- * @author Sheryl Su
- */
+
+
 public class SyncDiagramAction extends AbstractAction
 {
 

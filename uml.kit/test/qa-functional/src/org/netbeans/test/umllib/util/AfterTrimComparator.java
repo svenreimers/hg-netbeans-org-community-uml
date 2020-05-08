@@ -43,6 +43,7 @@
  */
 
 
+
 /*
  * AfterTrimComparator.java
  *
@@ -57,15 +58,14 @@ package org.netbeans.test.umllib.util;
 
 import org.netbeans.jemmy.operators.Operator;
 
-/**
- *
- * @author psb
- */
+
+
 public class AfterTrimComparator implements Operator.StringComparator
 {
     boolean ce=false;
     boolean ccs=false;
-    /**
+    
+/**
      * 
      * @param cs 
      * @param cce 
@@ -75,7 +75,8 @@ public class AfterTrimComparator implements Operator.StringComparator
         this.ce=cs;
         this.ccs=ccs;
     }
-    /**
+    
+/**
      * 
      * @param caption 
      * @param match 

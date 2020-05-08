@@ -46,10 +46,8 @@ import org.netbeans.api.visual.widget.Widget;
 import org.netbeans.modules.uml.diagrams.nodes.EntityView;
 import org.netbeans.modules.uml.drawingarea.NodeWidgetFactory;
 
-/**
- *
- * @author treyspiva
- */
+
+
 public class EntityViewNodeFactory implements NodeWidgetFactory
 {
 

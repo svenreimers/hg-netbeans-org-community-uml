@@ -58,10 +58,8 @@ import org.netbeans.modules.uml.resources.images.ImageUtil;
 import org.openide.util.ImageUtilities;
 import org.openide.util.Utilities;
 
-/**
- *
- * @author Sheryl Su
- */
+
+
 public class PanAction extends WidgetAction.LockedAdapter {
 
     private Scene scene;

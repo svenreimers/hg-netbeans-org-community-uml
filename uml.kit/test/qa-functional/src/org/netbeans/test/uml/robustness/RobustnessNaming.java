@@ -58,11 +58,8 @@ import org.netbeans.test.umllib.testcases.UMLMultiTestSuite;
 import org.netbeans.test.umllib.util.LibProperties;
 import org.netbeans.test.umllib.vrf.GenericVerifier;
 
-/**
- *
- * @author yaa
- * @spec uml/UMLRobustness.xml
- */
+
+
 public class RobustnessNaming extends UMLMultiTestSuite{
     private static String prName1 = "UMLProject1";
     private static String prName2 = "UMLProject2";
@@ -81,7 +78,8 @@ public class RobustnessNaming extends UMLMultiTestSuite{
     private static BufferedReader myIn = null;
     
     /** Need to be defined because of JUnit */
-    /*
+    
+/*
     public RobustnessNaming(String name) {
         super(name);
     }
@@ -145,7 +143,7 @@ public class RobustnessNaming extends UMLMultiTestSuite{
                 fail(ElementTypes.CLASS + " has been named to reserved word '"+illegalName+"'");
             }catch(Exception e){
 //            }finally {
-//                new GenericVerifier(diagram).safeDeleteAllElements();
+
             }
         }
     }
@@ -194,7 +192,7 @@ public class RobustnessNaming extends UMLMultiTestSuite{
                 fail(ElementTypes.INTERFACE + " has been named as reserved word '"+illegalName+"'");
             }catch(Exception e){
 //            }finally{
-//                new GenericVerifier(diagram).safeDeleteAllElements();
+
             }
             
         }
@@ -244,7 +242,7 @@ public class RobustnessNaming extends UMLMultiTestSuite{
                 fail(ElementTypes.CLASS + " has been named to value with illegal char '" + illegalName + "'");
             }catch(Exception e){
 //            }finally{
-//                new GenericVerifier(diagram).safeDeleteAllElements();
+
             }
             
         }
@@ -296,7 +294,7 @@ public class RobustnessNaming extends UMLMultiTestSuite{
             }catch(Exception e){
                 fail(ElementTypes.INTERFACE + " "+elementName+" probably has been renamed to reserved word '"+illegalName+"'");
 //            } finally {
-//                new GenericVerifier(diagram).safeDeleteAllElements();
+
             }
         }
         
@@ -352,7 +350,7 @@ public class RobustnessNaming extends UMLMultiTestSuite{
             }catch(Exception e){
                 fail(ElementTypes.CLASS + " "+elementName+" has been renamed to keyword '"+illegalName+"'");
 //            } finally {
-//                new GenericVerifier(diagram).safeDeleteAllElements();
+
             }
         }
     }
@@ -407,7 +405,7 @@ public class RobustnessNaming extends UMLMultiTestSuite{
             }catch(Exception e){
                 fail(ElementTypes.INTERFACE  + " "+elementName+ " has been renamed to value with illegal char '"+illegalName+"'");
 //            } finally {
-//                new GenericVerifier(diagram).safeDeleteAllElements();
+
             }
             
         }
@@ -416,7 +414,8 @@ public class RobustnessNaming extends UMLMultiTestSuite{
     }
     
     
-    /**
+    
+/**
      * Abstarct test class. It's purpose is to realize startUp and tearDown,
      * that are common for all other tests, only once
      */
@@ -460,7 +459,8 @@ public class RobustnessNaming extends UMLMultiTestSuite{
                 new GenericVerifier(diagram).safeDeleteAllElements();
             }catch(Exception ex){};
             
-            /*
+            
+/*
             try{
                 JDialogOperator dlgError = new JDialogOperator("Unexpected Exception");
                 JTextAreaOperator textarea = new JTextAreaOperator(dlgError);

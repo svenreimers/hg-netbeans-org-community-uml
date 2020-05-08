@@ -49,10 +49,8 @@ package org.netbeans.modules.uml.ui.support.wizard;
 import java.util.MissingResourceException;
 import java.util.ResourceBundle;
 
-/**
- *
- * @author Trey Spiva
- */
+
+
 public class WizardResouces
 {
 
@@ -68,7 +66,8 @@ public class WizardResouces
 
       // TODO Auto-generated constructor stub
    }
-   /**
+   
+/**
     * @param key
     * @return
     */

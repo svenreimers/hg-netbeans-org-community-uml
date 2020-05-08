@@ -42,20 +42,16 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : ClassTransformChangeRequest.java
- * Created on : Oct 28, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.roundtripframework;
 
-/**
- * @author Aztec
- */
+
+
 public class ClassTransformChangeRequest
     extends TransformChangeRequest
     implements IClassTransformChangeRequest
 {
     // No valid implementation in the C++ code base.
-    // Aztec: TODO: Stubbed
+    
 }

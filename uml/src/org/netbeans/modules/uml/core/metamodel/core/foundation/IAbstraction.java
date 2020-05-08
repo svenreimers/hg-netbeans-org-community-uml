@@ -47,12 +47,14 @@ package org.netbeans.modules.uml.core.metamodel.core.foundation;
 
 public interface IAbstraction extends IDependency
 {
-	/**
+	
+/**
 	 * Sets / Gets the expresion that states the abstraction relationship between the supplier and the client.
 	*/
 	public IExpression getMapping();
 
-	/**
+	
+/**
 	 * Sets / Gets the expresion that states the abstraction relationship between the supplier and the client.
 	*/
 	public void setMapping( IExpression value );

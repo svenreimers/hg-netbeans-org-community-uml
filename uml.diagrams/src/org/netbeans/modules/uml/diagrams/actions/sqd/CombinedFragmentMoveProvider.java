@@ -58,10 +58,8 @@ import org.netbeans.modules.uml.drawingarea.ui.trackbar.JTrackBar;
 import org.netbeans.modules.uml.drawingarea.view.DesignerScene;
 import org.netbeans.modules.uml.drawingarea.widgets.ContainerWidget;
 
-/**
- * use external provider for mopst actions and made adjustments cf specific
- * @author sp153251
- */
+
+
 public class CombinedFragmentMoveProvider  implements MoveProvider {
 
                 private AlignWithMoveStrategyProvider provider;

@@ -47,12 +47,14 @@ package org.netbeans.modules.uml.core.metamodel.basic.basicactions;
 
 public interface IOutputPin extends IPin
 {
-	/**
+	
+/**
 	 * property Action
 	*/
 	public IAction getAction();
 
-	/**
+	
+/**
 	 * property Action
 	*/
 	public void setAction( IAction value );

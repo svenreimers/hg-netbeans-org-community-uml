@@ -47,20 +47,20 @@ package org.netbeans.test.umllib.exceptions;
 
 import org.netbeans.jemmy.JemmyException;
 
-/**
- *
- * @author Sergey Petrov
- */
+
+
 public class UMLCommonException extends JemmyException{
     
-    /**
+    
+/**
      * Creates a new instance of UMLCommonException
      * @param message 
      */
     public UMLCommonException(String message) {
         super(message);        
     }
-    /**
+    
+/**
      * 
      * @param message 
      * @param cause 

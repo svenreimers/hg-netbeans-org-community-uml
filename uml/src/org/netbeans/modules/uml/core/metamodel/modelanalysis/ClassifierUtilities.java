@@ -42,11 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : ClassifierUtilities.java
- * Created on : Oct 20, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.metamodel.modelanalysis;
 
 import java.util.Collection;
@@ -61,12 +58,12 @@ import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure
 import org.netbeans.modules.uml.core.support.umlutils.ETArrayList;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
-/**
- * @author Aztec
- */
+
+
 public class ClassifierUtilities extends ElementUtilities
 {
-    /**
+    
+/**
      *
      * Collect all classes that are direct base classes of the specified classifier.
      * The return list is created if needed, and is not cleared, so the caller can 
@@ -107,7 +104,8 @@ public class ClassifierUtilities extends ElementUtilities
         return pRetVal;
     }
     
-    /**
+    
+/**
      *
      * Collect all interfaces that are directly implemented by the specified classifier.
      * The return list is created if needed, and is not cleared, so the caller can
@@ -148,7 +146,8 @@ public class ClassifierUtilities extends ElementUtilities
         return pRetVal;
     }
     
-    /**
+    
+/**
      *
      * Collect all operations that members of this classifier or any of its
      * generalizations or implemented interfaces. 
@@ -243,7 +242,8 @@ public class ClassifierUtilities extends ElementUtilities
         return pRetVal;
     }
 
-    /**
+    
+/**
      *
      * Collects operations from all base classes of the given class.
      * Only goes one level up.
@@ -270,7 +270,8 @@ public class ClassifierUtilities extends ElementUtilities
         return opList;
     }
     
-    /**
+    
+/**
      *
      * Collects operations from all interfaces implemented by the given class.
      * Only goes one level up.
@@ -297,7 +298,8 @@ public class ClassifierUtilities extends ElementUtilities
         return opList;
     }    
 
-    /**
+    
+/**
      *
      * Collects operations from all of the given classes.
      * The return list is created if needed, and is not cleared, so the caller can

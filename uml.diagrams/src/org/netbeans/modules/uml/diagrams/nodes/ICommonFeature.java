@@ -45,10 +45,8 @@ package org.netbeans.modules.uml.diagrams.nodes;
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttribute;
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation;
 
-/**
- *
- * @author thuy
- */
+
+
 public interface ICommonFeature {
    
     public void setSelectedAttribute(IAttribute attr);

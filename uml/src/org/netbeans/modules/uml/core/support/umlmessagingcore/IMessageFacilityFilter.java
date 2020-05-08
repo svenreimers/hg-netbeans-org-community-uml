@@ -46,22 +46,26 @@ package org.netbeans.modules.uml.core.support.umlmessagingcore;
 
 public interface IMessageFacilityFilter
 {
-	/**
+	
+/**
 	 * The name of the facility that this filter applies to
 	*/
 	public String getName();
 
-	/**
+	
+/**
 	 * The name of the facility that this filter applies to
 	*/
 	public void setName( String value );
 
-	/**
+	
+/**
 	 * Should this message type be displayed?
 	*/
 	public boolean getIsDisplayed( /* MESSAGE_TYPE */ int nMessageType );
 
-	/**
+	
+/**
 	 * Should this message type be displayed?
 	*/
 	public void setIsDisplayed( /* MESSAGE_TYPE */ int nMessageType, boolean value );

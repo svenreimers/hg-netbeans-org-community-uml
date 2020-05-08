@@ -42,11 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : DestroyObjectAction.java
- * Created on : Sep 18, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.metamodel.common.commonactions;
 
 import org.dom4j.Document;
@@ -56,15 +53,15 @@ import org.netbeans.modules.uml.core.metamodel.basic.basicactions.IInputPin;
 import org.netbeans.modules.uml.core.metamodel.basic.basicactions.PrimitiveAction;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.ElementCollector;
 
-/**
- * @author Aztec
- */
+
+
 public class DestroyObjectAction
     extends PrimitiveAction
     implements IDestroyObjectAction
 {
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactions.IDestroyObjectAction#getInput()
      */
     public IInputPin getInput()
@@ -74,7 +71,8 @@ public class DestroyObjectAction
 
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactions.IDestroyObjectAction#setInput(org.netbeans.modules.uml.core.metamodel.basic.basicactions.IInputPin)
      */
     public void setInput(IInputPin pPin)

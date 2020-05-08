@@ -50,10 +50,8 @@ import java.awt.Menu;
 
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
-/**
- * @author KevinM
- *
- */
+
+
 public interface IProductButtonHandler {
 	/// Useful when creating pullrights.  This one grabs an existing pullright if it exists or
 	/// creates a new one if needed.
@@ -62,7 +60,7 @@ public interface IProductButtonHandler {
 										 String sButtonSource);
 
 	/// Useful when creating pullrights.  This one grabs an existing pullright if it exists or
-	/// creates a new one if needed.  This is the same as the above, but doesn't do a loadstring.
+	
 	 public IProductContextMenuItem createOrGetPullright(ETList<IProductContextMenuItem> pParentItems,
 										 String sPullrightLabel,
 										 String sButtonSource);

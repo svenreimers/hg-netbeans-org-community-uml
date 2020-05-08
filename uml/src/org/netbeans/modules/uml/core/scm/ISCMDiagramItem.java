@@ -44,6 +44,7 @@
 
 package org.netbeans.modules.uml.core.scm;
 
+
 /**
  * Provides versioning information for an IProxyDiagram.
  */
@@ -55,23 +56,27 @@ import org.netbeans.modules.uml.core.support.BundleSupport;
 public interface ISCMDiagramItem extends ISCMItem
 {
 
-   /**
+   
+/**
     * Retreives the  IProxyDiagram associated with the SCM item.
     */
    public IProxyDiagram getProxyDiagram();
 
-   /**
+   
+/**
     * Sets the  IProxyDiagram associated with the SCM item.
     */
    public void setProxyDiagram(IProxyDiagram val);
 
-   /**
+   
+/**
     * Retrieves the layout portion of the diagram. FileName is the
     * presentation portion.
     */
    public String getLayoutFile();
 
-   /**
+   
+/**
     * Sets the layout portion of the diagram. FileName is the
     * presentation portion.
     */

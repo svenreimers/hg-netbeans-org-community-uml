@@ -54,7 +54,8 @@ public class PFMessages
     private static final String BUNDLE_CLASS = "org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.Bundle";
     private static final MessagesBundle BUNDLE = new MessagesBundle(BUNDLE_CLASS);
 
-    /**
+    
+/**
      * Returns a resource string, given its key.
      *
      * @param resourceKey The key of the resource to retrieve.
@@ -66,17 +67,8 @@ public class PFMessages
         return BUNDLE.getString(resourceKey);
     }
     
-    /**
-     * Obtains a resource string, given its key, and applies a MessageFormat to
-     * it.
-     * 
-     * @param resourceKey The key of the resource to retrieve.
-     * @param parameters  The parameters to be inserted into the formatted 
-     *                    string. If <code>null</code>, the function behaves
-     *                    exactly as <code>getString(String)</code>.
-     * @return The formatted resource string, if found, or a modified key if the
-     *         resource is unavailable.
-     */
+    
+
     public static String getString(String resourceKey, Object[] parameters)
     {
         return BUNDLE.getString(resourceKey, parameters);

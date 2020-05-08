@@ -48,10 +48,8 @@ package org.netbeans.modules.uml.core.metamodel.core.foundation;
 import org.netbeans.modules.uml.common.ETSystem;
 import org.netbeans.modules.uml.core.support.umlsupport.IResultCell;
 
-/**
- * @author sumitabhk
- *
- */
+
+
 public class ElementLifeTimeEventsSink implements IElementLifeTimeEventsSink{
 
 	/**
@@ -61,42 +59,48 @@ public class ElementLifeTimeEventsSink implements IElementLifeTimeEventsSink{
 		super();
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IElementLifeTimeEventsSink#onElementPreCreate(java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onElementPreCreate(String ElementType, IResultCell cell) {
 		ETSystem.out.println("Got onElementPreCreate");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IElementLifeTimeEventsSink#onElementCreated(org.netbeans.modules.uml.core.metamodel.core.foundation.IVersionableElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onElementCreated(IVersionableElement element, IResultCell cell) {
 		ETSystem.out.println("Got onElementCreated");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IElementLifeTimeEventsSink#onElementPreDelete(org.netbeans.modules.uml.core.metamodel.core.foundation.IVersionableElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onElementPreDelete(IVersionableElement element, IResultCell cell) {
 		ETSystem.out.println("Got onElementPreDelete");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IElementLifeTimeEventsSink#onElementDeleted(org.netbeans.modules.uml.core.metamodel.core.foundation.IVersionableElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onElementDeleted(IVersionableElement element, IResultCell cell) {
 		ETSystem.out.println("Got onElementDeleted");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IElementLifeTimeEventsSink#onElementPreDuplicated(org.netbeans.modules.uml.core.metamodel.core.foundation.IVersionableElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onElementPreDuplicated(IVersionableElement element, IResultCell cell) {
 		ETSystem.out.println("Got onElementPreDuplicated");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IElementLifeTimeEventsSink#onElementDuplicated(org.netbeans.modules.uml.core.metamodel.core.foundation.IVersionableElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onElementDuplicated(IVersionableElement element, IResultCell cell) {

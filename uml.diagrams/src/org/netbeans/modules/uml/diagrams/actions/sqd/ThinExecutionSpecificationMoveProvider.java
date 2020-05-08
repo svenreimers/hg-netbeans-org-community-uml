@@ -56,10 +56,8 @@ import org.netbeans.modules.uml.drawingarea.actions.AfterValidationExecutor;
 import org.netbeans.modules.uml.drawingarea.view.DesignerScene;
 import org.openide.windows.TopComponent;
 
-/**
- *
- * @author sp153251
- */
+
+
 public class ThinExecutionSpecificationMoveProvider implements MoveProvider {
 
     private Point original;

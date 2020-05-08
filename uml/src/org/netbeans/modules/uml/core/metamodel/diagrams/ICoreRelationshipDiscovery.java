@@ -52,42 +52,50 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 public interface ICoreRelationshipDiscovery
 {
-	/**
+	
+/**
 	 * Adds a node or link to the diagram
 	*/
 	public IPresentationElement createPresentationElement( IElement pElement );
 
-	/**
+	
+/**
 	 * Adds a node to the diagram at this location
 	*/
 	public IPresentationElement createNodePresentationElement( IElement pElement, IETPoint pLocation );
 
-	/**
+	
+/**
 	 * Creates a link presentation element.
 	*/
 	public IPresentationElement createLinkPresentationElement( IElement pElement, IPresentationElement pFromPresentationElement, IPresentationElement pToPresentationElement );
 
-	/**
+	
+/**
 	 * Creates a link between the two elements
 	*/
 	public IPresentationElement createLinkPresentationElement( IElement pElement, IElement pFromElement, IElement pToElement );
 
-	/**
+	
+/**
 	 * Discovers common relationships (generalization, association...) among the presentation elements on the diagram.
 	*/
 	public ETList<IPresentationElement> discoverCommonRelations(boolean bAutoRouteEdges);
 
-	/**
+	
+/**
 	 * Discovers common relationships on these objects(Generalizations, associations...)
 	*/
 	public ETList<IPresentationElement> discoverCommonRelations( boolean bAutoRouteEdges, ETList<IElement> pDiscoverOnTheseElements );
 
-	/**
+	
+/**
 	 * Discovers common relationships on these objects(Generalizations, associations...). Relations are discovered among the elements being dropped and then between those elements being dropped and elements on the diagram.
 	*/
 	public ETList<IPresentationElement> discoverCommonRelations( boolean bAutoRouteEdges, ETList<IElement> pNewElementsBeingCreated, ETList<IElement> pElementsAlreadyOnTheDiagrams );
 
-	/**
+	
+/**
 	 * Discovers common relationships (generalization, association...) among the selected elements on the diagram.
 	*/
 	public ETList<IPresentationElement> discoverCommonRelationsAmongSelectedElements();

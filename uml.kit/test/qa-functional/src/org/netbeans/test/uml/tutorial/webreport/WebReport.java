@@ -86,10 +86,8 @@ import org.netbeans.test.umllib.util.Utils;
 
 
 
-/**
- *
- * @author psb
- */
+
+
 public class WebReport extends UMLTestCase {
     
     private static String prFolder="Projects-Tutorials"+File.separator+"Project-ReportingTutorial";
@@ -182,7 +180,8 @@ public class WebReport extends UMLTestCase {
     public void tearDown() {
         Utils.makeScreenShot(lastTestCase,true);
         //start browser search
-        /*java.awt.Robot rbt=null;
+        
+/*java.awt.Robot rbt=null;
         try
         {
             rbt=new Robot();

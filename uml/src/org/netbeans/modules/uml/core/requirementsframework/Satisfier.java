@@ -44,12 +44,8 @@
 
 package org.netbeans.modules.uml.core.requirementsframework;
 
-/**
- * @author brettb
- *
- * To change the template for this generated type comment go to
- * Window>Preferences>Java>Code Generation>Code and Comments
- */
+
+
 public class Satisfier implements ISatisfier
 {
    private String m_strName;

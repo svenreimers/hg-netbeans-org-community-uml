@@ -49,10 +49,8 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.IElement;
 import org.netbeans.modules.uml.core.metamodel.structure.IProject;
 import org.openide.nodes.Node;
 
-/**
- *
- * @author Sheryl
- */
+
+
 public interface ImportedElementCookie extends Node.Cookie
 {
     public IProject getReferencingProject();

@@ -51,22 +51,26 @@ import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure
 
 public interface IDynamicsEventDispatcher extends IEventDispatcher
 {
-	/**
+	
+/**
 	 * Registers an event sink to handle lifeline modified events.
 	*/
 	public void registerForLifelineModifiedEvents( ILifelineModifiedEventsSink handler );
 
-	/**
+	
+/**
 	 * Removes a sink listening for lifeline modified events.
 	*/
 	public void revokeLifelineModifiedSink( ILifelineModifiedEventsSink handler );
 
-	/**
+	
+/**
 	 * Calling this method will result in the firing of any listeners who register for lifeline modified events.
 	*/
 	public boolean firePreChangeRepresentingClassifier( ILifeline pLifeline, ITypedElement pRepresents, IEventPayload payload );
 
-	/**
+	
+/**
 	 * Calling this method will result in the firing of any listeners who register for lifeline modified events.
 	*/
 	public void fireChangeRepresentingClassifier( ILifeline pLifeline, ITypedElement pRepresents, IEventPayload payload );

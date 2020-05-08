@@ -55,10 +55,8 @@ import org.netbeans.modules.uml.drawingarea.view.DesignerScene;
 import org.openide.loaders.DataObject;
 
 
-/**
- *
- * @author psb
- */
+
+
 public class DestroyLifelineRapidButtonDescription implements ContextPaletteButtonModel
 {
     private Image image = null;

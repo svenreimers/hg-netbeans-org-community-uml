@@ -51,6 +51,7 @@ import org.netbeans.modules.uml.core.reverseengineering.reframework.LanguageLibr
 import org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.IErrorEvent;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
+
 /**
  * Test cases for REClassLoader.
  */
@@ -63,7 +64,8 @@ public class REClassLoaderTestCase extends AbstractUMLTestCase
     
     private IREClassLoader recl;
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see junit.framework.TestCase#setUp()
      */
     protected void setUp() throws Exception

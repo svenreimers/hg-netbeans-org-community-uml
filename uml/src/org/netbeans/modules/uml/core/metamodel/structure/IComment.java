@@ -49,32 +49,38 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 public interface IComment extends INamedElement
 {
-	/**
+	
+/**
 	 * method AddAnnotatedElement
 	*/
 	public void addAnnotatedElement( INamedElement element );
 
-	/**
+	
+/**
 	 * method RemoveAnnotatedElement
 	*/
 	public void removeAnnotatedElement( INamedElement element );
 
-	/**
+	
+/**
 	 * property AnnotatedElements
 	*/
 	public ETList<INamedElement> getAnnotatedElements();
 
-	/**
+	
+/**
 	 * Is this element in the AnnotatedElements list?
 	*/
 	public boolean getIsAnnotatedElement( INamedElement element );
 
-	/**
+	
+/**
 	 * The body of the comment.
 	*/
 	public void setBody( String value );
 
-	/**
+	
+/**
 	 * The body of the comment.
 	*/
 	public String getBody();

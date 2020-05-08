@@ -50,42 +50,50 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 public interface IStateVertex extends INamespace
 {
-	/**
+	
+/**
 	 * property Container
 	*/
 	public IRegion getContainer();
 
-	/**
+	
+/**
 	 * property Container
 	*/
 	public void setContainer( IRegion value );
 
-	/**
+	
+/**
 	 * method AddOutgoingTransition
 	*/
 	public void addOutgoingTransition( ITransition pTran );
 
-	/**
+	
+/**
 	 * method RemoveOutgoingTransition
 	*/
 	public void removeOutgoingTransition( ITransition pTran );
 
-	/**
+	
+/**
 	 * property OutgoingTransitions
 	*/
 	public ETList<ITransition> getOutgoingTransitions();
 
-	/**
+	
+/**
 	 * method AddIncomingTransition
 	*/
 	public void addIncomingTransition( ITransition pTran );
 
-	/**
+	
+/**
 	 * method RemoveIncomingTransition
 	*/
 	public void removeIncomingTransition( ITransition pTran );
 
-	/**
+	
+/**
 	 * property IncomingTransitions
 	*/
 	public ETList<ITransition> getIncomingTransitions();

@@ -51,32 +51,38 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 public interface INode extends IStructuredClassifier
 {
-	/**
+	
+/**
 	 * method AddDeployedComponent
 	*/
 	public void addDeployedElement( INamedElement pElement );
 
-	/**
+	
+/**
 	 * method RemoveDeployedComponent
 	*/
 	public void removeDeployedElement( INamedElement pElement );
 
-	/**
+	
+/**
 	 * property DeployedComponents
 	*/
 	public ETList<INamedElement> getDeployedElements();
 
-	/**
+	
+/**
 	 * method AddDeployment
 	*/
 	public void addDeployment( IDeployment dep );
 
-	/**
+	
+/**
 	 * method RemoveDeployment
 	*/
 	public void removeDeployment( IDeployment dep );
 
-	/**
+	
+/**
 	 * property Deployments
 	*/
 	public ETList<IDeployment> getDeployments();

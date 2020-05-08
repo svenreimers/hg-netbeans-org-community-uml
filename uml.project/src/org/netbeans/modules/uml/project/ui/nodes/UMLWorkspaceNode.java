@@ -51,10 +51,8 @@ import org.netbeans.modules.uml.core.workspacemanagement.IWorkspace;
 import org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem;
 import org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeWorkspace;
 
-/**
- *
- * @author Trey Spiva
- */
+
+
 public class UMLWorkspaceNode extends UMLElementNode implements ITreeWorkspace
 {
    private IWorkspace m_Workspace = null;
@@ -67,7 +65,8 @@ public class UMLWorkspaceNode extends UMLElementNode implements ITreeWorkspace
       super();
    }
 
-   /**
+   
+/**
     * 
     */
    public UMLWorkspaceNode(Lookup l)
@@ -75,7 +74,8 @@ public class UMLWorkspaceNode extends UMLElementNode implements ITreeWorkspace
       super(l);
    }
 
-   /**
+   
+/**
     * @param item
     * @throws NullPointerException
     */
@@ -84,7 +84,8 @@ public class UMLWorkspaceNode extends UMLElementNode implements ITreeWorkspace
       super(item);
    }
 
-   /**
+   
+/**
     * @param item
     * @throws NullPointerException
     */

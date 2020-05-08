@@ -47,11 +47,8 @@
 
 package org.netbeans.test.umllib;
 
-/**
- * All types of links must be defined here
- * and used as contants in other places
- * @author Alexei Mokeev
- */
+
+
 public enum LinkTypes {
     // This means ANY link */
     ANY("Any"),
@@ -121,7 +118,8 @@ public enum LinkTypes {
         this.val = val;
     }
     
-    /**
+    
+/**
      * 
      * @return 
      */
@@ -130,7 +128,8 @@ public enum LinkTypes {
     }
     
     //workaround for morphing nested link
-    /**
+    
+/**
      * 
      * @param toType 
      * @return 

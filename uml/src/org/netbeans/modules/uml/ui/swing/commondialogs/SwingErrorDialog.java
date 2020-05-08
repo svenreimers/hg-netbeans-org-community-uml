@@ -43,11 +43,8 @@
  */
 
 
-/*
- *
- * Created on Jul 1, 2003
- * @author Trey Spiva
- */
+
+
 package org.netbeans.modules.uml.ui.swing.commondialogs;
 
 import java.awt.BorderLayout;
@@ -80,10 +77,8 @@ import org.netbeans.modules.uml.ui.support.commondialogs.MessageDialogKindEnum;
 import org.netbeans.modules.uml.ui.support.commondialogs.MessageIconKindEnum;
 import org.netbeans.modules.uml.ui.support.messaging.IMessenger;
 
-/**
- * 
- * @author Trey Spiva
- */
+
+
 public class SwingErrorDialog implements IErrorDialog
 {
    private boolean m_bRunSilent = false;
@@ -119,7 +114,8 @@ public class SwingErrorDialog implements IErrorDialog
 		 m_bRunSilent = pMsg.getDisableMessaging();
 	  }
    }
-   /**
+   
+/**
    * Displays an error dialog based on the arguments.  Note that since CErrorDialog implements
    * the ISilentDialog interface, it may be silent.  In that case, no error dialog is shown 
    * and S_OK is returned.
@@ -158,7 +154,8 @@ public class SwingErrorDialog implements IErrorDialog
          }
       }
    }
-   /**
+   
+/**
    * Displays an error dialog based on the arguments.  Note that since CErrorDialog implements
    * the ISilentDialog interface, it may be silent.  In that case, no error dialog is shown 
    * and S_OK is returned.
@@ -198,7 +195,8 @@ public class SwingErrorDialog implements IErrorDialog
          }
       }
    }
-   /**
+   
+/**
    * Displays an error dialog based on the arguments.  Note that since CErrorDialog implements
    * the ISilentDialog interface, it may be silent.  In that case, no error dialog is shown 
    * and S_OK is returned.  If the IMessageData object has sub messages then a more complex
@@ -230,7 +228,8 @@ public class SwingErrorDialog implements IErrorDialog
             }
             else
             {
-               /* TODO
+               
+/* TODO
                HWND nParent = HWNDRetriever::GetTopMostParent((HWND)parent);
                CMFCComplexErrorDialog dlg(CWnd::FromHandle(nParent));
                
@@ -242,7 +241,8 @@ public class SwingErrorDialog implements IErrorDialog
          }
       }
    }
-   /**
+   
+/**
    * Returns the silent flag for this dialog.  If silent then any Display calls will
    * not display a dialog, but rather immediately return S_OK.
    *
@@ -257,7 +257,8 @@ public class SwingErrorDialog implements IErrorDialog
       }
       return bSilent;
    }
-   /**
+   
+/**
    * Sets the silent flag for this dialog.  If silent then any Display calls will
    * not display a dialog, but rather immediately return S_OK;
    *
@@ -267,7 +268,8 @@ public class SwingErrorDialog implements IErrorDialog
    {
       m_bRunSilent = newVal;
    }
-   /**
+   
+/**
    * @param message
    * @param string
    * @param icon

@@ -56,13 +56,12 @@ import org.netbeans.modules.uml.diagrams.nodes.sqd.LifelineLineWidget;
 import org.netbeans.modules.uml.diagrams.nodes.sqd.LifelineWidget;
 
 
-/**
- *
- * @author sp153251
- */
+
+
 public class Util {
 
-    /**
+    
+/**
      *  Find out if this widhet or any parent is selected
      * 
      */
@@ -112,7 +111,8 @@ public class Util {
         return retObj;
     }
     
-    /**
+    
+/**
      * Test if a model element is the parameter for a model element.
      * 
      * @param node The element that may own a template parameter.

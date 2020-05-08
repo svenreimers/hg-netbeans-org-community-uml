@@ -62,10 +62,8 @@ import org.netbeans.modules.uml.drawingarea.view.DesignerTools;
 import org.netbeans.modules.uml.drawingarea.view.MoveWidgetTransferable;
 import org.netbeans.modules.uml.drawingarea.widgets.ContainerWidget;
 
-/**
- *
- * @author sp153251
- */
+
+
 public class CombinedFragmentContainerWidget extends ContainerWidget {
     public CombinedFragmentContainerWidget(Scene scene)
     {

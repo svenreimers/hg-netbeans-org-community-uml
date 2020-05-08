@@ -42,6 +42,7 @@
  * made subject to such option by the copyright holder.
  */
 
+
 /*
  * Created on Oct 17, 2003
  *
@@ -55,17 +56,16 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.ElementCollector;
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.Event;
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ISignal;
 
-/**
- * @author aztec
- *
- */
+
+
 public class SignalEvent extends Event implements ISignalEvent
 {
 	public SignalEvent()
 	{
 	}
 	
-	/**
+	
+/**
 	 * GGets the specific signal that is associated with this event
 	 *
 	 * @return ISignal
@@ -76,7 +76,8 @@ public class SignalEvent extends Event implements ISignalEvent
 						retrieveSingleElementWithAttrID(this,"signal", ISignal.class);
 	}
 
-	/**
+	
+/**
 	 * Sets the specific signal that is associated with this event
 	 *
 	 * @param signal
@@ -87,7 +88,8 @@ public class SignalEvent extends Event implements ISignalEvent
 	}
 	
 	
-	/**
+	
+/**
 	 * Establishes the appropriate XML elements for this UML type.
 	 *
 	 * [in] The document where this element will reside

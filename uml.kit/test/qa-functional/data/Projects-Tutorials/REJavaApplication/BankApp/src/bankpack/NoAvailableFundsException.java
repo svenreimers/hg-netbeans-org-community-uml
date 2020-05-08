@@ -10,17 +10,16 @@
 
 package bankpack;
 
-/**
- *
- * @author Administrator
- */
+
+
 public class NoAvailableFundsException extends java.lang.Exception {
     
     /** Creates a new instance of NoAvailableFundsException */
     public NoAvailableFundsException() {
     }
 
-     /**
+     
+/**
      * Constructs an instance of <code>NoAvailableFundsException</code> with the specified detail message.
      * @param msg the detail message.
      */

@@ -43,6 +43,7 @@
  */
 
 
+
 /*
  * CodeGenElementsTestCase.java
  *
@@ -69,12 +70,8 @@ import org.netbeans.test.umllib.project.verifier.TestVerifier;
 import org.netbeans.test.umllib.project.verifier.elem.ReflectionElementVerifier;
 import org.netbeans.test.umllib.project.verifier.elem.TextElementVerifier;
 
-/**
- *
- * @author Alexandr Scherbatiy
- * @email  sunflower@netbeans.org
- *
- */
+
+
 
 public class CodeGenOperationTestCase extends CodeGenerationTestCase {
     

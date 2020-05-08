@@ -43,27 +43,23 @@
  */
 
 
-/*
- *
- * Created on Jul 1, 2003
- * @author Trey Spiva
- */
+
+
 package org.netbeans.modules.uml.ui.products.ad.projecttreedefaultengine;
 
 import java.util.MissingResourceException;
 import java.util.ResourceBundle;
 
-/**
- *
- * @author Trey Spiva
- */
+
+
 public class DefaultEngineResource
 {
    private static final String BUNDLE_NAME = "org.netbeans.modules.uml.ui.products.ad.projecttreedefaultengine.Bundle"; //$NON-NLS-1$
 
    private static final ResourceBundle RESOURCE_BUNDLE = ResourceBundle.getBundle(BUNDLE_NAME);
 
-   /**
+   
+/**
     * @param key
     * @return
     */

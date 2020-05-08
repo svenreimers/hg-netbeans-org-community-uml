@@ -43,6 +43,7 @@
  */
 
 
+
 /*
  * ActionablePoint.java
  *
@@ -58,10 +59,8 @@ import org.netbeans.jemmy.Timeout;
 import org.netbeans.jemmy.operators.ComponentOperator;
 import org.netbeans.jemmy.operators.JPopupMenuOperator;
 
-/**
- *
- * @author Alexei Mokeev
- */
+
+
 public class ActionablePoint implements Actionable{
     private Point p = null;
     private ComponentOperator component = null;

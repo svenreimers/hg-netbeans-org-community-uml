@@ -47,10 +47,8 @@ import java.util.ListResourceBundle;
 import java.util.MissingResourceException;
 import javax.swing.JComponent;
 
-/**
- *
- * @author thuy
- */
+
+
 public class InputKeyResources extends ListResourceBundle 
 {
     private static final String WHEN_FOCUSED = String.valueOf(JComponent.WHEN_FOCUSED);
@@ -109,7 +107,8 @@ public class InputKeyResources extends ListResourceBundle
         
     };  // end of content
     
-    /**
+    
+/**
      * This method redefines the standard behavior of the <code>
      * getString</code> method of the ListResourceBundle class.
      * Instead of throwing an exception, it returns null if the given

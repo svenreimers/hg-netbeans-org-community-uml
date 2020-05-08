@@ -43,6 +43,7 @@
  */
 
 
+
 /*
  * Created on Jun 18, 2003
  *
@@ -70,10 +71,8 @@ import org.netbeans.modules.uml.core.support.umlutils.IPropertyElement;
 import org.netbeans.modules.uml.ui.swing.propertyeditor.PropertyEditor;
 import org.netbeans.modules.uml.ui.swing.propertyeditor.PropertyEditorResources;
 
-/**
- * @author sumitabhk
- *
- */
+
+
 public class JPropertyTreeTable extends JTreeTable implements ActionListener
 {
 	private JPopupMenu m_popup = null;
@@ -84,7 +83,8 @@ public class JPropertyTreeTable extends JTreeTable implements ActionListener
 	private int m_CurRow = 0;
 	private IPropertyElement m_CurElement = null;
 
-	/**
+	
+/**
 	 * 
 	 */
 	public JPropertyTreeTable(TreeTableModel treeTableModel, PropertyEditor editor)
@@ -178,7 +178,8 @@ public class JPropertyTreeTable extends JTreeTable implements ActionListener
 		e.consume();
 	}
 	
-	/**
+	
+/**
 	 * 
 	 * Allows a user to start editing the specified row.
 	 */

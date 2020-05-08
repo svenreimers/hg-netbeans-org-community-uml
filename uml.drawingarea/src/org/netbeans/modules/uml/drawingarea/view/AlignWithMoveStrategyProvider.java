@@ -74,9 +74,8 @@ import org.netbeans.modules.uml.drawingarea.widgets.ContainerWithCompartments;
 import org.openide.util.Lookup;
 import org.openide.windows.TopComponent;
 
-/**
- * @author David Kaspar
- */
+
+
 public class AlignWithMoveStrategyProvider extends AlignWithSupport implements MoveStrategy, MoveProvider {
 
     private boolean outerBounds;
@@ -318,7 +317,8 @@ public class AlignWithMoveStrategyProvider extends AlignWithSupport implements M
         return retVal;
     }
 
-    /**
+    
+/**
      * Adjust the control points of all selected connection widgets attached
      * to a node.
      *

@@ -49,10 +49,8 @@ import org.netbeans.modules.uml.core.metamodel.infrastructure.IRelationFactory;
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.AssociationKindEnum;
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier;
 
-/**
- *
- * @author treyspiva
- */
+
+
 public class AssociationClassFactory extends AssociationFactory
 {
 

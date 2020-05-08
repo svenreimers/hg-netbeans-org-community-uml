@@ -46,10 +46,8 @@
 
 package org.netbeans.modules.uml.ui.support.applicationmanager;
 
-/**
- *
- * @author Trey Spiva
- */
+
+
 public interface MoveToFlags
 {
    public final static int MTF_MOVEX = 1;

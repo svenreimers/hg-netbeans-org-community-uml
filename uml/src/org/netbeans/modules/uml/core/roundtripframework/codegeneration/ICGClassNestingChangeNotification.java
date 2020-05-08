@@ -48,32 +48,38 @@ import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure
 
 public interface ICGClassNestingChangeNotification extends ICGDoubleClassChangeNotification
 {
-	/**
+	
+/**
 	 * Gets / Sets OldNestingClass
 	*/
 	public IClassifier getOldNestingClass();
 
-	/**
+	
+/**
 	 * Gets / Sets OldNestingClass
 	*/
 	public void setOldNestingClass( IClassifier value );
 
-	/**
+	
+/**
 	 * Gets / Sets NewNestingClass
 	*/
 	public IClassifier getNewNestingClass();
 
-	/**
+	
+/**
 	 * Gets / Sets NewNestingClass
 	*/
 	public void setNewNestingClass( IClassifier value );
 
-	/**
+	
+/**
 	 * Gets / Sets NestingChangeKind
 	*/
 	public int getNestingChangeKind();
 
-	/**
+	
+/**
 	 * Gets / Sets NestingChangeKind
 	*/
 	public void setNestingChangeKind( /* ClassNestingChangeKind */ int value );

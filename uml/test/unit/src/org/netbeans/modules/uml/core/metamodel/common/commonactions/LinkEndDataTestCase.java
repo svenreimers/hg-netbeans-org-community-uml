@@ -49,6 +49,7 @@ import org.netbeans.modules.uml.core.AbstractUMLTestCase;
 import org.netbeans.modules.uml.core.metamodel.basic.basicactions.IInputPin;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.FactoryRetriever;
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAssociationEnd;
+
 /**
  * Test cases for LinkEndData.
  */
@@ -61,7 +62,8 @@ public class LinkEndDataTestCase extends AbstractUMLTestCase
 
     private ILinkEndData data;
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see junit.framework.TestCase#setUp()
      */
     protected void setUp() throws Exception
@@ -72,7 +74,8 @@ public class LinkEndDataTestCase extends AbstractUMLTestCase
         project.addElement(data);
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see junit.framework.TestCase#tearDown()
      */
     protected void tearDown() throws Exception

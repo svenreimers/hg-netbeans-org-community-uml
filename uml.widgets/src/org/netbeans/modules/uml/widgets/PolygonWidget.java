@@ -50,10 +50,8 @@ import java.awt.geom.Point2D;
 import org.netbeans.api.visual.widget.Scene;
 import org.netbeans.api.visual.widget.Widget;
 
-/**
- *
- * @author treyspiva
- */
+
+
 public class PolygonWidget extends Widget
 {
     private Point2D[] relPoints = null;

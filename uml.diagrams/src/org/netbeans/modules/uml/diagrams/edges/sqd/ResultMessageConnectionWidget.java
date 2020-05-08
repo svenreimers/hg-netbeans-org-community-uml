@@ -55,10 +55,8 @@ import org.netbeans.modules.uml.drawingarea.LabelManager;
 import org.netbeans.modules.uml.drawingarea.persistence.data.EdgeInfo;
 import org.netbeans.modules.uml.drawingarea.view.DesignerScene;
 
-/**
- * message connection with perfomance optimization for extra small zooms
- * @author sp153251
- */
+
+
 public class ResultMessageConnectionWidget extends MessageWidget {
     //
     public ResultMessageConnectionWidget(Scene scene) {
@@ -68,7 +66,8 @@ public class ResultMessageConnectionWidget extends MessageWidget {
         SequenceDiagramEngine engine=(SequenceDiagramEngine) ((DesignerScene) getScene()).getEngine();
         setVisible(engine.getSettingValue(SequenceDiagramEngine.SHOW_RETURN_MESSAGES)==Boolean.TRUE);
     }
-    /**
+    
+/**
      * Paints the connection widget (the path, the anchor shapes, the control points, the end points).
      */
     @Override

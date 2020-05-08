@@ -68,11 +68,8 @@ import org.netbeans.test.umllib.exceptions.NotFoundException;
 import org.netbeans.test.umllib.testcases.UMLTestCase;
 
 
-/**
- *
- * @author psb
- * @spec UML/ComponentDiagram.xml
- */
+
+
 public class ActivityDiagramPlaceNameElementReloadDiagram extends UMLTestCase {
     
     //some system properties

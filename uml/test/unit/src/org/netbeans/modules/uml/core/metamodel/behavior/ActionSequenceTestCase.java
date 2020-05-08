@@ -44,6 +44,7 @@
 
 
 
+
 /*
  * Created on Oct 17, 2003
  *
@@ -55,10 +56,8 @@ import java.util.Iterator;
 
 import org.netbeans.modules.uml.core.metamodel.basic.basicactions.IAction;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
-/**
- * @author aztec
- *
- */
+
+
 public class ActionSequenceTestCase extends AbstractUMLTestCase
 {
 	public ActionSequenceTestCase()

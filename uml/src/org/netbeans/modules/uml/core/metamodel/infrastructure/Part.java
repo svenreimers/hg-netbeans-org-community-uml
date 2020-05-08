@@ -105,7 +105,8 @@ public class Part extends StructuralFeature implements IPart
 		return classifier;
 	}
 	
-	/**
+	
+/**
 	 *
 	 * The feature that this Part represents. Will be empty if the Part represents an 
 	 * entire Classifier ( that is, when IsWhole returns "true", this should be empty ).
@@ -121,7 +122,8 @@ public class Part extends StructuralFeature implements IPart
 		super.setElement(value, "definingFeature");
 	}
 	
-	/**
+	
+/**
 	 * Establishes the appropriate XML elements for this UML type.
 	 *
 	 * [in] The document where this element will reside
@@ -133,7 +135,8 @@ public class Part extends StructuralFeature implements IPart
 	}
 	
 	//IConnectableElement Methods
-	/**
+	
+/**
 	 * method AddEnd
 	*/
 	public void addEnd( IConnectorEnd pConnector )
@@ -141,7 +144,8 @@ public class Part extends StructuralFeature implements IPart
 		m_ConnectElementAggregate.addEnd(pConnector);
 	}
 
-	/**
+	
+/**
 	 * method RemoveEnd
 	*/
 	public void removeEnd( IConnectorEnd pConnector )
@@ -149,7 +153,8 @@ public class Part extends StructuralFeature implements IPart
 		m_ConnectElementAggregate.removeEnd(pConnector);
 	}
 
-	/**
+	
+/**
 	 * property Ends
 	*/
 	public ETList<IConnectorEnd> getEnds()
@@ -157,7 +162,8 @@ public class Part extends StructuralFeature implements IPart
 		return m_ConnectElementAggregate.getEnds();
 	}
 
-	/**
+	
+/**
 	 * method AddRoleContext
 	*/
 	public void addRoleContext( IStructuredClassifier pClassifier )
@@ -165,7 +171,8 @@ public class Part extends StructuralFeature implements IPart
 		m_ConnectElementAggregate.addRoleContext(pClassifier);
 	}
 
-	/**
+	
+/**
 	 * method RemoveRoleContext
 	*/
 	public void removeRoleContext( IStructuredClassifier pClassifier )
@@ -173,7 +180,8 @@ public class Part extends StructuralFeature implements IPart
 		m_ConnectElementAggregate.removeRoleContext(pClassifier);
 	}
 
-	/**
+	
+/**
 	 * property RoleContexts
 	*/
 	public ETList<IStructuredClassifier> getRoleContexts()
@@ -249,7 +257,8 @@ public class Part extends StructuralFeature implements IPart
 		 m_ParameterableAggregate.setTypeConstraint(value);   	
 	}
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IVersionableElement#setNode(org.dom4j.Node)
      */
     public void setNode(Node n)

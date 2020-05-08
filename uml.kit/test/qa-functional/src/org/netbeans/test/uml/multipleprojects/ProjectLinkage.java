@@ -61,11 +61,8 @@ import org.netbeans.test.umllib.Utils;
 import org.netbeans.test.umllib.testcases.UMLTestCase;
 
 
-/**
- *
- * @author yaa
- * @spec uml/FindReplaceAssociate.xml
- */
+
+
 public class ProjectLinkage extends UMLTestCase {
     private static final String workDir = System.getProperty("nbjunit.workdir");
     private static String OUT_LOG_FILE = "";

@@ -111,7 +111,8 @@ public class UMLPalette extends TopComponent
       return m_TopComponent;
    }
    
-   /** Overriden to explicitely set persistence type of UmlPalette
+   
+/** Overriden to explicitely set persistence type of UmlPalette
     * to PERSISTENCE_ALWAYS */
    public int getPersistenceType() {
        return TopComponent.PERSISTENCE_ALWAYS;

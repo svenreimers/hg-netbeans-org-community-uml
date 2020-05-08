@@ -66,10 +66,8 @@ import org.netbeans.modules.uml.drawingarea.persistence.PersistenceUtil;
 import org.netbeans.modules.uml.drawingarea.view.UMLLabelWidget;
 import org.openide.util.NbBundle;
 
-/**
- *
- * @author sp153251
- */
+
+
 public class LifelineBoxWidget extends BackgroundWidget {
     
     private LabelWidget labelWidget;

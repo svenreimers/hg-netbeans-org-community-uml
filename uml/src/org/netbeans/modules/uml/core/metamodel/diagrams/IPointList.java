@@ -49,22 +49,26 @@ import org.netbeans.modules.uml.core.support.umlsupport.IETPoint;
 
 public interface IPointList
 {
-	/**
+	
+/**
 	 * Contains the number of IETPoint*'s in the collection
 	*/
 	public int getCount();
 
-	/**
+	
+/**
 	 * Adds a IETPoint* to the collection
 	*/
 	public long add( IETPoint tag );
 
-	/**
+	
+/**
 	 * Retrieves a specific IETPoint* from the collection
 	*/
 	public IETPoint item( int index );
 
-	/**
+	
+/**
 	 * Remove a specific IETPoint* from the collection
 	*/
 	public long remove( int index );

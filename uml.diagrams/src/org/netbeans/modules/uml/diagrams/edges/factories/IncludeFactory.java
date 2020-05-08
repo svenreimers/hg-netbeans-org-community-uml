@@ -48,10 +48,8 @@ import org.netbeans.modules.uml.core.metamodel.core.constructs.IUseCase;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.IElement;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElement;
 
-/**
- *
- * @author jyothi
- */
+
+
 public class IncludeFactory extends AbstractRelationshipFactory {
     
     public IElement create(IElement source, IElement target)

@@ -55,7 +55,8 @@ import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure
 
 public class ChangeSignal extends Signal implements IChangeSignal
 {
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IChangeSignal#getChangeExpression()
      */
     public IExpression getChangeExpression()
@@ -64,7 +65,8 @@ public class ChangeSignal extends Signal implements IChangeSignal
                 getNode(), "UML:ChangeSignal.changeExpression/*", IExpression.class);
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IChangeSignal#setChangeExpression(org.netbeans.modules.uml.core.metamodel.core.foundation.IExpression)
      */
     public void setChangeExpression(IExpression value)

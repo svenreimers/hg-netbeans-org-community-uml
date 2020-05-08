@@ -54,15 +54,14 @@ import org.openide.nodes.Node;
 import org.openide.util.Lookup;
 
 
-/**
- *
- * @author Thuy Nguyen
- */
+
+
 public class PaletteSupport
 {
     private PaletteController pController = null;
 
-    /**
+    
+/**
      * Creates a new instance of PaletteSupport
      */
     public PaletteSupport()

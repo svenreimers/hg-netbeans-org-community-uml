@@ -116,19 +116,15 @@ import java.io.FileWriter;
 import java.io.IOException;
 import org.dom4j.Node;
 
-/**
- * @author brettb
- *
- */
+
+
 public class DataReporter
 {
    private static final String PRINT_LINE80 = "================================================================================";
    private static final String PRINT_LINE80EL = "--------------------------------------------------------------------------------";
 
-   /* updated 9/16/03 by Deb
-    * This function prints basic information about the project. If you want XMI version information about the
-    * project to be included in your report, use the ProjectReportXMI function instead.
-    */
+   
+
    public static void projectReport(IProject iProj, final String sFolder, final String sFileName)
    {
       try
@@ -158,10 +154,8 @@ public class DataReporter
       }
    }
 
-   /* updated 9/16/03 by Deb
-    * This function prints both basic information about the project and XMI version information. If you don//t
-    * want XMI version information in your report, use the ProjectReport function instead
-    */
+   
+
    public static void projectReportXMI(IProject iProj, final String sFolder, final String sFileName)
    {
       try
@@ -235,9 +229,8 @@ public class DataReporter
       }
    }
 
-   /* updated 9/16/03 by Deb
-    * this routine prints basic information about the project
-    */
+   
+
    protected static void printReportDetails(FileWriter file, IProject iProj)
    {
       if ((iProj != null) && (file != null))
@@ -336,9 +329,8 @@ public class DataReporter
       }
    }
 
-   /* updated 9/16/03 by Deb
-    * this routine prints XMI version information and XMI.metamodel version information for the project.
-    */
+   
+
    protected static void printProjectXMIVersionDetails(FileWriter file, IProject iProj)
    {
       if (iProj != null)

@@ -43,25 +43,22 @@
  */
 
 
-/*
- * File       : MethodOptionGroupStateHandler.java
- * Created on : Dec 12, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.statehandlers;
 
 import org.dom4j.Node;
 
-/**
- * @author Aztec
- */
+
+
 public class MethodOptionGroupStateHandler extends ElseConditionalStateHandler
 {
     private String m_JumpCondition = "";
     private boolean m_FoundTest;
 
 
-    /**
+    
+/**
      * @param language
      */
     public MethodOptionGroupStateHandler(String language, String jumpCondition)

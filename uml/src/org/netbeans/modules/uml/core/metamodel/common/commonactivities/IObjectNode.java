@@ -52,47 +52,56 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 public interface IObjectNode extends IActivityNode, ITypedElement
 {
-	/**
+	
+/**
 	 * property Ordering
 	*/
 	public int getOrdering();
 
-	/**
+	
+/**
 	 * property Ordering
 	*/
 	public void setOrdering( /* ObjectNodeOrderingKind */ int value );
 
-	/**
+	
+/**
 	 * property UpperBound
 	*/
 	public IValueSpecification getUpperBound();
 
-	/**
+	
+/**
 	 * property UpperBound
 	*/
 	public void setUpperBound( IValueSpecification value );
 
-	/**
+	
+/**
 	 * method AddInState
 	*/
 	public void addInState( IState pState );
 
-	/**
+	
+/**
 	 * method RemoveInState
 	*/
 	public void removeInState( IState pState );
 
-	/**
+	
+/**
 	 * property InStates
 	*/
 	public ETList<IState> getInStates();
 
-	/**
+	
+/**
 	 * property Selection
 	*/
 	public IBehavior getSelection();
 
-	/**
+	
+/**
 	 * property Selection
 	*/
 	public void setSelection( IBehavior value );

@@ -44,6 +44,7 @@
 
 
 
+
 /*
  * Created on Apr 2, 2004
  *
@@ -72,12 +73,8 @@ import org.netbeans.modules.uml.core.support.umlsupport.XMLManip;
 import org.netbeans.modules.uml.core.support.umlutils.ETArrayList;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 import org.openide.util.RequestProcessor;
-/**
- * @author avaneeshj
- *
- * To change the template for this generated type comment go to
- * Window - Preferences - Java - Code Generation - Code and Comments
- */
+
+
 public class REOperationTestCase extends AbstractUMLTestCase
 {
         
@@ -751,7 +748,8 @@ public class REOperationTestCase extends AbstractUMLTestCase
     
     private IUMLParsingIntegrator integrator;
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see junit.framework.TestCase#setUp()
      */
     protected void setUp() throws Exception
@@ -760,7 +758,7 @@ public class REOperationTestCase extends AbstractUMLTestCase
 //        integrator = new UMLParsingIntegrator();
         IStrings s = getFilesForTest();
 
-// conover - RE is a n NB task now, so can't call it directly anymore
+
 //        integrator.setFiles(s);
 //        integrator.reverseEngineer(project, false, false, false, false);
 

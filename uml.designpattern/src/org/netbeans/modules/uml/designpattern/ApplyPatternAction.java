@@ -42,6 +42,7 @@
  * made subject to such option by the copyright holder.
  */
 
+
 /*
  * ApplyPatternAction.java
  *
@@ -62,10 +63,8 @@ import org.openide.util.HelpCtx;
 import org.openide.util.NbBundle;
 import org.openide.util.actions.CookieAction;
 
-/**
- *
- * @author Administrator
- */
+
+
 public class ApplyPatternAction extends CookieAction
 {
    
@@ -117,7 +116,8 @@ public class ApplyPatternAction extends CookieAction
        }
     }
     
-    /**
+    
+/**
      * Begin the process to apply ("instantiate") the pattern
      *
      * @param pDispatch[in]			The pattern to apply

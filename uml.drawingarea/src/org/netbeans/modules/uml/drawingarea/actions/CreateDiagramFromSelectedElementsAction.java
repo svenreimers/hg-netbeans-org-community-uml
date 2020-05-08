@@ -158,7 +158,8 @@ public final class CreateDiagramFromSelectedElementsAction extends CookieAction
     ///////////////////////////////////////////////////////////////////////////
     // Helper Methods
     
-    /**
+    
+/**
      * Determines if CDFS is able to create a diagram from the element
      */
     protected boolean canDiagramBeCreatedFromElement(IElement pElement)

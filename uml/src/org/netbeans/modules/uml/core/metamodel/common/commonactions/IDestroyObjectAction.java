@@ -42,19 +42,15 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : IDestroyObjectAction.java
- * Created on : Sep 18, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.metamodel.common.commonactions;
 
 import org.netbeans.modules.uml.core.metamodel.basic.basicactions.IInputPin;
 import org.netbeans.modules.uml.core.metamodel.basic.basicactions.IPrimitiveAction;
 
-/**
- * @author Aztec
- */
+
+
 public interface IDestroyObjectAction extends IPrimitiveAction
 {
     public IInputPin getInput();

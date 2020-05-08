@@ -48,7 +48,8 @@ package org.netbeans.modules.uml.core.reverseengineering.reframework;
  */
 public interface IREMethodDetailData extends IParserData
 {
-    /**
+    
+/**
      * Gets the line number where the method detail occurred in the source file.
      * @return The line number.
      */

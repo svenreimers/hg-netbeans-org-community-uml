@@ -50,10 +50,8 @@ import org.netbeans.modules.uml.core.support.umlsupport.ICustomValidator;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 import org.netbeans.modules.uml.core.support.umlutils.IPropertyElement;
 
-/**
- *
- * @author Sheryl
- */
+
+
 public class LeafPropertyValidator implements ICustomValidator
 {
     

@@ -50,37 +50,44 @@ import org.netbeans.modules.uml.core.eventframework.IEventPayload;
 
 public interface ICoreProductEventDispatcher extends IEventDispatcher
 {
-	/**
+	
+/**
 	 * Registers a sink for the events specified in the ICoreProductInitEventsSink interface
 	*/
 	public void registerForInitEvents( ICoreProductInitEventsSink handler );
 
-	/**
+	
+/**
 	 * Revokes the handler identified with the passed in cookie
 	*/
 	public void revokeInitSink( ICoreProductInitEventsSink handler );
 
-	/**
+	
+/**
 	 * Fired before initialization of the product commences.
 	*/
 	public boolean fireCoreProductPreInit( ICoreProduct prod, IEventPayload payload );
 
-	/**
+	
+/**
 	 * Fired after the CoreProduct has been fully initialized
 	*/
 	public void fireCoreProductInitialized( ICoreProduct prod, IEventPayload payload );
 
-	/**
+	
+/**
 	 * Fired before the product quits.
 	*/
 	public void fireCoreProductPreQuit( ICoreProduct prod, IEventPayload payload );
 
-	/**
+	
+/**
 	 * Fired before the product saves all modified data.
 	*/
 	public boolean fireCoreProductPreSaved( ICoreProduct prod, IEventPayload payload );
 
-	/**
+	
+/**
 	 * Fired after the CoreProduct has successfully saved all modified data.
 	*/
 	public void fireCoreProductSaved( ICoreProduct prod, IEventPayload payload );

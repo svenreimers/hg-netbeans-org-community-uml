@@ -48,10 +48,8 @@ package org.netbeans.modules.uml.reporting.dataobjects;
 import org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivityNode;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.IElement;
 
-/**
- *
- * @author Sheryl
- */
+
+
 public class ActivityNodeData extends ElementDataObject
 {
     private IActivityNode element;

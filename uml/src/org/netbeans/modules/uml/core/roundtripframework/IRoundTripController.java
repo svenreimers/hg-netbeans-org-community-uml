@@ -94,57 +94,68 @@ public interface IRoundTripController extends IDocumentationModifiedEventsSink,
                                                 IWSProjectEventsSink,
                                                 IPackageEventsSink                                                        
 {
-	/**
+	
+/**
 	 * Sets / Gets the mode of this controller.
 	*/
 	public int getMode();
 
-	/**
+	
+/**
 	 * Sets / Gets the mode of this controller.
 	*/
 	public void setMode( /* RTMode */ int mode );
 
-	/**
+	
+/**
 	 * Sets / Gets the dispatch controller resident on the RoundTripController.
 	*/
 	public IEventDispatchController getEventDispatchController();
 
-	/**
+	
+/**
 	 * Sets / Gets the dispatch controller resident on the RoundTripController.
 	*/
 	public void setEventDispatchController( IEventDispatchController controller );
 
-	/**
+	
+/**
 	 * Initializes the controller, setting its initial mode and establishing sink registration.
 	*/
 	public void initialize( ICoreProduct prod, /* RTMode */ int mode );
 
-	/**
+	
+/**
 	 * Retrieves the dispatcher responsible for the round trip events.
 	*/
 	public IRoundTripEventDispatcher getRoundTripDispatcher();
 
-	/**
+	
+/**
 	 * Retrieves the dispatcher responsible for the classifier change events.
 	*/
 	public IClassifierEventDispatcher getClassifierDispatcher();
 
-	/**
+	
+/**
 	 * Retrieves the dispatcher responsible for the element lifetime events.
 	*/
 	public IElementLifeTimeEventDispatcher getElementLifeTimeDispatcher();
 
-	/**
+	
+/**
 	 * Retrieves the dispatcher responsible for the element change events.
 	*/
 	public IElementChangeEventDispatcher getElementChangeDispatcher();
 
-	/**
+	
+/**
 	 * Retrieves the dispatcher responsible for the relation validation events.
 	*/
 	public IRelationValidatorEventDispatcher getRelationValidatorDispatcher();
 
-	/**
+	
+/**
 	 * DeInitializes the controller.
 	*/
 	public void deInitialize();

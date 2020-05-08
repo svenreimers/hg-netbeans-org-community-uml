@@ -43,6 +43,7 @@
  */
 
 
+
 /*
  * ReflectionElementVerifier.java
  *
@@ -69,10 +70,8 @@ import org.netbeans.test.umllib.project.elem.IJavaElem;
 import org.netbeans.test.umllib.project.elem.IOperationElem;
 import org.netbeans.test.umllib.project.elem.VisibilityType;
 
-/**
- *
- * @author <A HREF="mailto:sunflower@netbeans.org">Alexandr Scherbatiy</A>
- */
+
+
 public class ReflectionElementVerifier extends AElementVerifier{
     
     private Class cls;
@@ -165,7 +164,7 @@ public class ReflectionElementVerifier extends AElementVerifier{
                 appendMessage("Visibility: " + attributeElem.getVisibility());
             }
             
-            //System.out.println("type = \"" + field.getGenericType() + "\"");
+            
             
             String type1 = attributeElem.getType().getFullName();
             String type2 = field.getType().getName();

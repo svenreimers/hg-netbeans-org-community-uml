@@ -43,6 +43,7 @@
  */
 
 
+
 /*
  * SwingErrorDialog.java
  *
@@ -63,10 +64,8 @@ import javax.swing.JDialog;
 import javax.swing.JOptionPane;
 import javax.swing.UIManager;
 
-/**
- *
- * @author  Trey Spiva
- */
+
+
 public class SwingErrorDialog  implements IErrorDialog
 {
    private boolean m_RunSilent = false;

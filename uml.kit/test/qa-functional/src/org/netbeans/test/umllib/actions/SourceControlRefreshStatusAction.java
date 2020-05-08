@@ -43,6 +43,7 @@
  */
 
 
+
 /*
  * SourceControlAction.java
  *
@@ -57,10 +58,8 @@ package org.netbeans.test.umllib.actions;
 import static org.netbeans.test.umllib.util.PopupConstants.* ;
 import org.netbeans.jellytools.actions.ActionNoBlock;
 
-/**
- *
- * @author VijayaBabu Mummaneni
- */
+
+
 public class SourceControlRefreshStatusAction extends ActionNoBlock {
 
     private static final String addPopup = SOURCE_CONTROL_REFRESH_STATUS ;                                        

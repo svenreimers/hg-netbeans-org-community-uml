@@ -43,11 +43,8 @@
  */
 
 
-/*
- * File       : MethodParameterStateHandler.java
- * Created on : Dec 11, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.statehandlers;
 
 import org.dom4j.Node;
@@ -56,9 +53,8 @@ import org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.Identi
 import org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.InstanceInformation;
 import org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ITokenDescriptor;
 
-/**
- * @author Aztec
- */
+
+
 public class MethodParameterStateHandler extends MethodDetailStateHandler
 {
     private ITokenDescriptor m_InstanceName;
@@ -125,7 +121,8 @@ public class MethodParameterStateHandler extends MethodDetailStateHandler
         return retVal;
     }
     
-    /**
+    
+/**
      * Initialize the state handler.  This is a one time initialization.
      *
      */

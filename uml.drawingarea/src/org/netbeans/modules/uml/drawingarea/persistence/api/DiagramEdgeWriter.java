@@ -45,10 +45,8 @@ package org.netbeans.modules.uml.drawingarea.persistence.api;
 
 import org.netbeans.modules.uml.drawingarea.persistence.*;
 
-/**
- *
- * @author Jyothi
- */
+
+
 public interface DiagramEdgeWriter {
 
     public void save(EdgeWriter edgeWriter);

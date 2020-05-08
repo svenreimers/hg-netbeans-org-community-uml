@@ -55,10 +55,8 @@ import org.netbeans.modules.uml.drawingarea.persistence.PersistenceUtil;
 import org.netbeans.modules.uml.drawingarea.view.UMLNodeWidget;
 import org.openide.util.Lookup;
 
-/**
- *
- * @author jyothi
- */
+
+
 public class NodeLabelIteratorAction extends IterateSelectAction {
 
     @Override

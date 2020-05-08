@@ -63,10 +63,8 @@ import org.netbeans.test.umllib.project.UMLProject;
 import org.netbeans.test.umllib.testcases.UMLTestCase;
 import org.netbeans.test.umllib.util.Utils;
 
-/**
- *
- * @author Alexandr Scherbatiy
- */
+
+
 
 
 

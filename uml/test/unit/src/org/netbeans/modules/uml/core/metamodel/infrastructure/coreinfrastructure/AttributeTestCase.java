@@ -62,7 +62,8 @@ public class AttributeTestCase extends AbstractUMLTestCase
     private IClass     clazz;
     private IAttribute attr;
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see junit.framework.TestCase#setUp()
      */
     protected void setUp() throws Exception
@@ -74,7 +75,8 @@ public class AttributeTestCase extends AbstractUMLTestCase
         clazz.addAttribute(attr);
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see junit.framework.TestCase#tearDown()
      */
     protected void tearDown() throws Exception

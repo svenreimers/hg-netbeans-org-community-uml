@@ -42,6 +42,7 @@
  * made subject to such option by the copyright holder.
  */
 
+
 /*
  * ProjectUtil.java
  *
@@ -104,10 +105,8 @@ import org.openide.util.Utilities;
 import org.openide.windows.TopComponent;
 import org.openide.windows.WindowManager;
 
-/**
- *
- * @author Administrator
- */
+
+
 public class ProjectUtil
 {
     public static final Comparator PROJECT_BY_DISPLAYNAME = new ProjectByDisplayNameComparator();

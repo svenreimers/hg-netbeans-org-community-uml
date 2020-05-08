@@ -67,11 +67,8 @@ import org.netbeans.test.umllib.exceptions.NotFoundException;
 import org.netbeans.test.umllib.testcases.UMLTestCase;
 import org.netbeans.test.umllib.vrf.LinkVerifier;
 
-/**
- *
- * @author yaa
- * @spec UML/DeploymentDiagram.xml
- */
+
+
 public class DPD_DependencyLink extends UMLTestCase {
     
     private static String prName = "UMLProjectDPD10";
@@ -96,6 +93,7 @@ public class DPD_DependencyLink extends UMLTestCase {
 
 //------------------------------------------------------------------------------    
     
+
 /**
  * @caseblock Dependency link
  * @usecase Delete a Dependency link from a diagram by popup menu
@@ -107,6 +105,7 @@ public class DPD_DependencyLink extends UMLTestCase {
         }
     }
     
+
 /**
  * @caseblock Dependency link
  * @usecase Delete a Dependency link from a diagram by shortcut
@@ -118,6 +117,7 @@ public class DPD_DependencyLink extends UMLTestCase {
         }
     }
     
+
 /**
  * @caseblock Dependency link
  * @usecase Select all on a diagram by popup menu of a Dependency link
@@ -128,6 +128,7 @@ public class DPD_DependencyLink extends UMLTestCase {
             fail("Test failed. Details in log file.");
         }
     }
+
 
 /**
  * @caseblock Dependency link
@@ -140,6 +141,7 @@ public class DPD_DependencyLink extends UMLTestCase {
         }
     }
 
+
 /**
  * @caseblock Dependency link
  * @usecase Find source element of a Dependency link
@@ -150,6 +152,7 @@ public class DPD_DependencyLink extends UMLTestCase {
             fail("Test failed. Details in log file.");
         }
     }
+
 
 /**
  * @caseblock Dependency link
@@ -162,6 +165,7 @@ public class DPD_DependencyLink extends UMLTestCase {
         }
     }
     
+
 /**
  * @caseblock Dependency link
  * @usecase Redirect source element of a Dependency link
@@ -172,6 +176,7 @@ public class DPD_DependencyLink extends UMLTestCase {
             fail("Test failed. Details in log file.");
         }
     }
+
 
 /**
  * @caseblock Dependency link
@@ -184,6 +189,7 @@ public class DPD_DependencyLink extends UMLTestCase {
         }
     }
 
+
 /**
  * @caseblock Dependency link
  * @usecase Redirect source element of a Dependency link
@@ -194,6 +200,7 @@ public class DPD_DependencyLink extends UMLTestCase {
             fail("Test failed. Details in log file.");
         }
     }
+
 
 /**
  * @caseblock Dependency link
@@ -206,6 +213,7 @@ public class DPD_DependencyLink extends UMLTestCase {
         }
     }
 
+
 /**
  * @caseblock Dependency link
  * @usecase Redirect source element of a Dependency link
@@ -216,6 +224,7 @@ public class DPD_DependencyLink extends UMLTestCase {
             fail("Test failed. Details in log file.");
         }
     }
+
 
 /**
  * @caseblock Dependency link
@@ -228,6 +237,7 @@ public class DPD_DependencyLink extends UMLTestCase {
         }
     }
 
+
 /**
  * @caseblock Dependency link
  * @usecase Redirect source element of a Dependency link
@@ -238,6 +248,7 @@ public class DPD_DependencyLink extends UMLTestCase {
             fail("Test failed. Details in log file.");
         }
     }
+
 
 /**
  * @caseblock Dependency link
@@ -250,6 +261,7 @@ public class DPD_DependencyLink extends UMLTestCase {
         }
     }
 
+
 /**
  * @caseblock Dependency link
  * @usecase Redirect source element of a Dependency link
@@ -261,6 +273,7 @@ public class DPD_DependencyLink extends UMLTestCase {
         }
     }
     
+
 /**
  * @caseblock Dependency link
  * @usecase Redirect target element of a Dependency link
@@ -271,6 +284,7 @@ public class DPD_DependencyLink extends UMLTestCase {
             fail("Test failed. Details in log file.");
         }
     }
+
 
 /**
  * @caseblock Dependency link
@@ -283,6 +297,7 @@ public class DPD_DependencyLink extends UMLTestCase {
         }
     }
 
+
 /**
  * @caseblock Dependency link
  * @usecase Redirect target element of a Dependency link
@@ -293,6 +308,7 @@ public class DPD_DependencyLink extends UMLTestCase {
             fail("Test failed. Details in log file.");
         }
     }
+
 
 /**
  * @caseblock Dependency link
@@ -305,6 +321,7 @@ public class DPD_DependencyLink extends UMLTestCase {
         }
     }
     
+
 /**
  * @caseblock Dependency link
  * @usecase Redirect target element of a Dependency link
@@ -315,6 +332,7 @@ public class DPD_DependencyLink extends UMLTestCase {
             fail("Test failed. Details in log file.");
         }
     }
+
 
 /**
  * @caseblock Dependency link
@@ -327,6 +345,7 @@ public class DPD_DependencyLink extends UMLTestCase {
         }
     }
 
+
 /**
  * @caseblock Dependency link
  * @usecase Redirect target element of a Dependency link
@@ -338,6 +357,7 @@ public class DPD_DependencyLink extends UMLTestCase {
         }
     }
 
+
 /**
  * @caseblock Dependency link
  * @usecase Redirect target element of a Dependency link
@@ -348,6 +368,7 @@ public class DPD_DependencyLink extends UMLTestCase {
             fail("Test failed. Details in log file.");
         }
     }
+
 
 /**
  * @caseblock Dependency link

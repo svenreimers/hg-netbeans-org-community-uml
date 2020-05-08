@@ -49,14 +49,13 @@ package org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructur
 import org.netbeans.modules.uml.core.metamodel.core.foundation.IExpression;
 import org.netbeans.modules.uml.core.support.umlsupport.IResultCell;
 
-/**
- *
- * @author Trey Spiva
- */
+
+
 public class AttributeEventsAdapter implements IAttributeEventsSink
 {
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     */
    public void onDefaultPreModified(
       IAttribute attr,
@@ -66,14 +65,16 @@ public class AttributeEventsAdapter implements IAttributeEventsSink
       // TODO Auto-generated method stub
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     */
    public void onDefaultModified(IAttribute attr, IResultCell cell)
    {
       // TODO Auto-generated method stub
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     */
    public void onPreDefaultBodyModified(
       IAttribute feature,
@@ -83,14 +84,16 @@ public class AttributeEventsAdapter implements IAttributeEventsSink
       // TODO Auto-generated method stub
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     */
    public void onDefaultBodyModified(IAttribute feature, IResultCell cell)
    {
       // TODO Auto-generated method stub
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     */
    public void onPreDefaultLanguageModified(
       IAttribute feature,
@@ -100,14 +103,16 @@ public class AttributeEventsAdapter implements IAttributeEventsSink
       // TODO Auto-generated method stub
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     */
    public void onDefaultLanguageModified(IAttribute feature, IResultCell cell)
    {
       // TODO Auto-generated method stub
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     */
    public void onPreDerivedModified(
       IAttribute feature,
@@ -117,14 +122,16 @@ public class AttributeEventsAdapter implements IAttributeEventsSink
       // TODO Auto-generated method stub
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     */
    public void onDerivedModified(IAttribute feature, IResultCell cell)
    {
       // TODO Auto-generated method stub
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     */
    public void onPrePrimaryKeyModified(
       IAttribute feature,
@@ -134,7 +141,8 @@ public class AttributeEventsAdapter implements IAttributeEventsSink
       // TODO Auto-generated method stub
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     */
    public void onPrimaryKeyModified(IAttribute feature, IResultCell cell)
    {

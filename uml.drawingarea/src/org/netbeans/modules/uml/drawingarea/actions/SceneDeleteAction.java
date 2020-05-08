@@ -62,10 +62,8 @@ import org.netbeans.modules.uml.ui.support.commondialogs.MessageIconKindEnum;
 import org.netbeans.modules.uml.ui.support.commondialogs.MessageResultKindEnum;
 import org.openide.util.NbBundle;
 
-/**
- *
- * @author treyspiva
- */
+
+
 public class SceneDeleteAction extends AbstractAction
 {
     private ObjectScene scene = null;

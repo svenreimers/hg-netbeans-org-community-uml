@@ -129,7 +129,8 @@ public class WizardSummary extends WizardEndPage {
 		populate();
 	}
 
-	/**
+	
+/**
 	 * Populate the page - sets up the text in the summary list box
 	 *
 	 * @return

@@ -46,9 +46,8 @@ package org.netbeans.modules.uml.core.reverseengineering.reframework.parsingfram
 
 import java.util.Map;
 
-/**
- * @author aztec
- */
+
+
 public interface IFacilityProperties extends Map<String, IFacilityProperty>
 {
     public void add(IFacilityProperty prop);

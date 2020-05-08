@@ -50,7 +50,8 @@ import junit.framework.TestCase;
 public class ConfigStringHelperTestCase extends TestCase {
 	private ConfigStringHelper configStringHelper = null;
 
-	/**
+	
+/**
 	 * @param args
 	 */
 	public static void main(String[] args) {
@@ -58,7 +59,8 @@ public class ConfigStringHelperTestCase extends TestCase {
 
 	}
 
-	/*
+	
+/*
 	 * (non-Javadoc)
 	 * 
 	 * @see junit.framework.TestCase#setUp()

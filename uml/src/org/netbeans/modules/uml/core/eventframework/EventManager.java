@@ -53,6 +53,7 @@ import java.util.Vector;
 import java.util.WeakHashMap;
 import org.openide.ErrorManager;
 
+
 /**
  * EventManager is a simple base class used to manage
  * the collection of lister interfaces. The type used to instanciate
@@ -68,7 +69,7 @@ public class EventManager<Element>
 
 	public void addListener(Element obj, IValidationSink<Element> sink)
 	{
-            // conover - duplicate listeners were being registered, and this
+            
             // will prevent that from happening
 	    //if (!m_listeners.contains(obj))
             if (! contains(obj))
@@ -247,7 +248,8 @@ public class EventManager<Element>
 			}
 		}
 	}
-	/**
+	
+/**
 	 * @return
 	 */
 	public IValidationSink getValidator()
@@ -255,7 +257,8 @@ public class EventManager<Element>
 		return m_Validator;
 	}
 	
-	/**
+	
+/**
 	 * @param sink
 	 */
 	public void setValidator(IValidationSink sink)

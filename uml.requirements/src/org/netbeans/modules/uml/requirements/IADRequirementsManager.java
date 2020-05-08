@@ -42,6 +42,7 @@
  * made subject to such option by the copyright holder.
  */
 
+
 /*
  * IADRequirementsManager.java
  *
@@ -52,10 +53,8 @@ package org.netbeans.modules.uml.requirements;
 
 import org.netbeans.modules.uml.core.requirementsframework.IRequirementsManager;
 
-/**
- *
- * @author  Trey Spiva
- */
+
+
 public interface IADRequirementsManager extends IRequirementsManager
 {
 

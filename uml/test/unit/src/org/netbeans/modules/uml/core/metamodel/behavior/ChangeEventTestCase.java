@@ -44,6 +44,7 @@
 
 
 
+
 /*
  * Created on Oct 17, 2003
  *
@@ -52,10 +53,8 @@ package org.netbeans.modules.uml.core.metamodel.behavior;
 import org.netbeans.modules.uml.core.AbstractUMLTestCase;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.IExpression;
 
-/**
- * @author aztec
- *
- */
+
+
 public class ChangeEventTestCase extends AbstractUMLTestCase 
 {
 

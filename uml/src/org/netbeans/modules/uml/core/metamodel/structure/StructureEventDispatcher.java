@@ -62,7 +62,8 @@ public class StructureEventDispatcher extends EventDispatcher implements IStruct
 	private EventManager< IArtifactEventsSink > m_ArtifactSink = 
 				    			new EventManager< IArtifactEventsSink >();
 											
-	/**
+	
+/**
 	 * 
 	 */
 	public StructureEventDispatcher() 
@@ -70,7 +71,8 @@ public class StructureEventDispatcher extends EventDispatcher implements IStruct
 		super();
 	}
 
-	/**
+	
+/**
 	 *
 	 * Registers the passed-in event sink with this dispatcher.
 	 *
@@ -81,7 +83,8 @@ public class StructureEventDispatcher extends EventDispatcher implements IStruct
 		m_ProjectSink.addListener(handler,null);      
    }
 
-  /**
+  
+/**
    *
    * Removes a listener from the current list.
    */
@@ -90,7 +93,8 @@ public class StructureEventDispatcher extends EventDispatcher implements IStruct
 		m_ProjectSink.removeListener(handler);      
    }
 
-   /* 
+   
+/* 
     * 
     */
    public void registerForArtifactEvents(IArtifactEventsSink handler)
@@ -98,7 +102,8 @@ public class StructureEventDispatcher extends EventDispatcher implements IStruct
 		m_ArtifactSink.addListener(handler,null);      
    }
 
-   /* 
+   
+/* 
     * @see org.netbeans.modules.uml.core.metamodel.structure.IStructureEventDispatcher#revokeArtifactSink(org.netbeans.modules.uml.core.metamodel.structure.IArtifactEventsSink)
     */
    public void revokeArtifactSink(IArtifactEventsSink handler)
@@ -106,7 +111,8 @@ public class StructureEventDispatcher extends EventDispatcher implements IStruct
 		m_ArtifactSink.removeListener(handler);  
    }
 
-   /**
+   
+/**
 	*
 	* Fired right before the Mode property on the passed in Project is changed.
 	*
@@ -143,7 +149,8 @@ public class StructureEventDispatcher extends EventDispatcher implements IStruct
 		return proceed;
    }
 
-   /**
+   
+/**
 	* Fired whenever the passed in Project's Mode property has changed
 	*
 	* @param pProject[in]  The modified Project
@@ -165,7 +172,8 @@ public class StructureEventDispatcher extends EventDispatcher implements IStruct
 		}	      
    }
 
-   /**
+   
+/**
 	*
 	* Fired right before the DefaultLanguage property on the passed in Project is changed.
 	*
@@ -202,7 +210,8 @@ public class StructureEventDispatcher extends EventDispatcher implements IStruct
       
    }
 
-   /**
+   
+/**
 	*
 	* Fired whenever the default language on the passed in Project has been changed
 	*
@@ -270,7 +279,8 @@ public class StructureEventDispatcher extends EventDispatcher implements IStruct
       
    }
 
-   /* 
+   
+/* 
     * @see org.netbeans.modules.uml.core.metamodel.structure.IStructureEventDispatcher#fireProjectPreOpen(org.netbeans.modules.uml.core.workspacemanagement.IWorkspace, java.lang.String, org.netbeans.modules.uml.core.eventframework.IEventPayload)
     */
    public boolean fireProjectPreOpen(IWorkspace space, String fileName, IEventPayload payload)
@@ -300,7 +310,8 @@ public class StructureEventDispatcher extends EventDispatcher implements IStruct
 		return proceed;
    }
 
-   /* 
+   
+/* 
     * @see org.netbeans.modules.uml.core.metamodel.structure.IStructureEventDispatcher#fireProjectOpened(org.netbeans.modules.uml.core.metamodel.structure.IProject, org.netbeans.modules.uml.core.eventframework.IEventPayload)
     */
    public void fireProjectOpened(IProject pProject, IEventPayload payload)
@@ -320,7 +331,8 @@ public class StructureEventDispatcher extends EventDispatcher implements IStruct
       
    }
 
-   /* 
+   
+/* 
     * @see org.netbeans.modules.uml.core.metamodel.structure.IStructureEventDispatcher#fireProjectPreRename(org.netbeans.modules.uml.core.metamodel.structure.IProject, java.lang.String, org.netbeans.modules.uml.core.eventframework.IEventPayload)
     */
    public boolean fireProjectPreRename(IProject pProject, String newName, IEventPayload payload)
@@ -350,7 +362,8 @@ public class StructureEventDispatcher extends EventDispatcher implements IStruct
 		return proceed;
    }
 
-   /* 
+   
+/* 
     * @see org.netbeans.modules.uml.core.metamodel.structure.IStructureEventDispatcher#fireProjectRenamed(org.netbeans.modules.uml.core.metamodel.structure.IProject, java.lang.String, org.netbeans.modules.uml.core.eventframework.IEventPayload)
     */
    public void fireProjectRenamed(IProject pProject, String oldName, IEventPayload payload)
@@ -374,7 +387,8 @@ public class StructureEventDispatcher extends EventDispatcher implements IStruct
       
    }
 
-   /* 
+   
+/* 
     * @see org.netbeans.modules.uml.core.metamodel.structure.IStructureEventDispatcher#fireProjectPreClose(org.netbeans.modules.uml.core.metamodel.structure.IProject, org.netbeans.modules.uml.core.eventframework.IEventPayload)
     */
    public boolean fireProjectPreClose(IProject pProject, IEventPayload payload)
@@ -400,7 +414,8 @@ public class StructureEventDispatcher extends EventDispatcher implements IStruct
 		return proceed;
    }
 
-   /* 
+   
+/* 
     * @see org.netbeans.modules.uml.core.metamodel.structure.IStructureEventDispatcher#fireProjectClosed(org.netbeans.modules.uml.core.metamodel.structure.IProject, org.netbeans.modules.uml.core.eventframework.IEventPayload)
     */
    public void fireProjectClosed(IProject pProject, IEventPayload payload)
@@ -419,7 +434,8 @@ public class StructureEventDispatcher extends EventDispatcher implements IStruct
 		}	
    }
 
-   /* 
+   
+/* 
     * @see org.netbeans.modules.uml.core.metamodel.structure.IStructureEventDispatcher#fireProjectPreSave(org.netbeans.modules.uml.core.metamodel.structure.IProject, org.netbeans.modules.uml.core.eventframework.IEventPayload)
     */
    public boolean fireProjectPreSave(IProject pProject, IEventPayload payload)
@@ -445,7 +461,8 @@ public class StructureEventDispatcher extends EventDispatcher implements IStruct
 		return proceed;
    }
 
-   /* 
+   
+/* 
     * @see org.netbeans.modules.uml.core.metamodel.structure.IStructureEventDispatcher#fireProjectSaved(org.netbeans.modules.uml.core.metamodel.structure.IProject, org.netbeans.modules.uml.core.eventframework.IEventPayload)
     */
    public void fireProjectSaved(IProject pProject, IEventPayload payload)
@@ -464,7 +481,8 @@ public class StructureEventDispatcher extends EventDispatcher implements IStruct
 		}	      
    }
 
-   /* 
+   
+/* 
     * @see org.netbeans.modules.uml.core.metamodel.structure.IStructureEventDispatcher#fireArtifactFileNamePreModified(org.netbeans.modules.uml.core.metamodel.structure.IArtifact, java.lang.String, org.netbeans.modules.uml.core.eventframework.IEventPayload)
     */
    public boolean fireArtifactFileNamePreModified(IArtifact artifact, String newName, IEventPayload payload)
@@ -491,7 +509,8 @@ public class StructureEventDispatcher extends EventDispatcher implements IStruct
 		return proceed;      
    }
 
-   /* 
+   
+/* 
     * @see org.netbeans.modules.uml.core.metamodel.structure.IStructureEventDispatcher#fireArtifactFileNameModified(org.netbeans.modules.uml.core.metamodel.structure.IArtifact, java.lang.String, org.netbeans.modules.uml.core.eventframework.IEventPayload)
     */
    public void fireArtifactFileNameModified(IArtifact artifact, String oldName, IEventPayload payload)
@@ -511,7 +530,8 @@ public class StructureEventDispatcher extends EventDispatcher implements IStruct
 		}	            
    }
 
-   /* 
+   
+/* 
     * @see org.netbeans.modules.uml.core.metamodel.structure.IStructureEventDispatcher#fireArtifactPreDirty(org.netbeans.modules.uml.core.metamodel.structure.IArtifact, org.netbeans.modules.uml.core.eventframework.IEventPayload)
     */
    public boolean fireArtifactPreDirty(IArtifact artifact, IEventPayload payload)
@@ -537,7 +557,8 @@ public class StructureEventDispatcher extends EventDispatcher implements IStruct
 		return proceed;
    }
 
-   /* 
+   
+/* 
     * @see org.netbeans.modules.uml.core.metamodel.structure.IStructureEventDispatcher#fireArtifactDirty(org.netbeans.modules.uml.core.metamodel.structure.IArtifact, org.netbeans.modules.uml.core.eventframework.IEventPayload)
     */
    public void fireArtifactDirty(IArtifact artifact, IEventPayload payload)
@@ -556,7 +577,8 @@ public class StructureEventDispatcher extends EventDispatcher implements IStruct
 		}	
    }
 
-   /* 
+   
+/* 
     * @see org.netbeans.modules.uml.core.metamodel.structure.IStructureEventDispatcher#fireArtifactPreSave(org.netbeans.modules.uml.core.metamodel.structure.IArtifact, java.lang.String, org.netbeans.modules.uml.core.eventframework.IEventPayload)
     */
    public boolean fireArtifactPreSave(IArtifact artifact, String fileName, IEventPayload payload)
@@ -583,7 +605,8 @@ public class StructureEventDispatcher extends EventDispatcher implements IStruct
 		return proceed;   
    }
 
-   /* 
+   
+/* 
     * @see org.netbeans.modules.uml.core.metamodel.structure.IStructureEventDispatcher#fireArtifactSave(org.netbeans.modules.uml.core.metamodel.structure.IArtifact, java.lang.String, org.netbeans.modules.uml.core.eventframework.IEventPayload)
     */
    public void fireArtifactSave(IArtifact artifact, String fileName, IEventPayload payload)
@@ -603,7 +626,8 @@ public class StructureEventDispatcher extends EventDispatcher implements IStruct
 		}      
    }
 
-   /* 
+   
+/* 
     * @see org.netbeans.modules.uml.core.metamodel.structure.IStructureEventDispatcher#firePreReferencedLibraryAdded(org.netbeans.modules.uml.core.metamodel.structure.IProject, java.lang.String, org.netbeans.modules.uml.core.eventframework.IEventPayload)
     */
    public boolean firePreReferencedLibraryAdded(IProject pProject, String refLibLoc, IEventPayload payload)
@@ -633,7 +657,8 @@ public class StructureEventDispatcher extends EventDispatcher implements IStruct
 		return proceed;
    }
 
-   /* 
+   
+/* 
     * @see org.netbeans.modules.uml.core.metamodel.structure.IStructureEventDispatcher#fireReferencedLibraryAdded(org.netbeans.modules.uml.core.metamodel.structure.IProject, java.lang.String, org.netbeans.modules.uml.core.eventframework.IEventPayload)
     */
    public void fireReferencedLibraryAdded(IProject pProject, String refLibLoc, IEventPayload payload)
@@ -656,7 +681,8 @@ public class StructureEventDispatcher extends EventDispatcher implements IStruct
 		}
    }
 
-   /* 
+   
+/* 
     * 
     */
    public boolean firePreReferencedLibraryRemoved(IProject pProject, String refLibLoc, IEventPayload payload)
@@ -686,7 +712,8 @@ public class StructureEventDispatcher extends EventDispatcher implements IStruct
 		return proceed;
    }
 
-   /* 
+   
+/* 
     *
     */
    public void fireReferencedLibraryRemoved(IProject pProject, String refLibLoc, IEventPayload payload)

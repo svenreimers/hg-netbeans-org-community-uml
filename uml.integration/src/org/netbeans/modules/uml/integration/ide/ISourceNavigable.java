@@ -42,26 +42,12 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File         : ISourceNavigable.java
- * Version      : 1.0
- * Description  : Interface for classes that can generate source navigation
- *                events.
- * Author       : Darshan
- */
+
+
 package org.netbeans.modules.uml.integration.ide;
 
-/**
- *  Interface implemented by classes that can generate source code navigation
- * events.
- *
- * Revision History
- * No.  Date        Who         What
- * ---  ----        ---         ----
- *   1  2002-05-22  Darshan     Created.
- *
- * @author Darshan
- */
+
+
 public interface ISourceNavigable {
     public void setSourceNavigator(SourceNavigator nav);
     public SourceNavigator getSourceNavigator();

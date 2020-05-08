@@ -70,6 +70,7 @@ public class JavaEnumerationChangeHandlerTestCase extends AbstractUMLTestCase
 	}
 
 
+
 /**
  * EnumCreateTestCase
  */
@@ -90,6 +91,7 @@ public class JavaEnumerationChangeHandlerTestCase extends AbstractUMLTestCase
 		ETList <IEnumerationLiteral> literalList = enums.getLiterals();
 		assertEquals(1,literalList.size());
 	}
+
 
 
 /**
@@ -130,6 +132,7 @@ public class JavaEnumerationChangeHandlerTestCase extends AbstractUMLTestCase
 	}
 
 
+
 /**
  * EnumNameChangeTestCase
  */
@@ -161,6 +164,7 @@ public class JavaEnumerationChangeHandlerTestCase extends AbstractUMLTestCase
 	}
 
 
+
 /**
  * TransformClassToEnumerationTestCase
  */
@@ -187,6 +191,7 @@ public class JavaEnumerationChangeHandlerTestCase extends AbstractUMLTestCase
 		assertEquals(1,clsAttr.size());
 		assertEquals("TestAttr",clsAttr.item(0).toString());
 	}
+
 
 
 /**
@@ -218,6 +223,7 @@ public class JavaEnumerationChangeHandlerTestCase extends AbstractUMLTestCase
 	}
 
 	
+
 /**
  * EnumNamespaceChangeTestCase
  */

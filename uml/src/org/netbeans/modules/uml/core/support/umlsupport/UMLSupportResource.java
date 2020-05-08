@@ -47,10 +47,8 @@ package org.netbeans.modules.uml.core.support.umlsupport;
 import java.util.MissingResourceException;
 import java.util.ResourceBundle;
 
-/**
- *
- * @author Trey Spiva
- */
+
+
 public class UMLSupportResource
 {
 
@@ -67,7 +65,8 @@ public class UMLSupportResource
 
    }
 
-   /**
+   
+/**
     * @param key
     * @return
     */

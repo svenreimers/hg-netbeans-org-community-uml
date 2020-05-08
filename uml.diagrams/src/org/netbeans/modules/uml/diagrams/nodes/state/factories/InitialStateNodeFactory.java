@@ -47,10 +47,8 @@ import org.netbeans.api.visual.widget.Widget;
 import org.netbeans.modules.uml.diagrams.nodes.state.InitialStateWidget;
 import org.netbeans.modules.uml.drawingarea.NodeWidgetFactory;
 
-/**
- *
- * @author Sheryl Su
- */
+
+
 public class InitialStateNodeFactory implements NodeWidgetFactory
 {
 

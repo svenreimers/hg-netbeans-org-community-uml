@@ -46,10 +46,8 @@ import org.netbeans.api.visual.widget.Widget;
 import org.netbeans.modules.uml.diagrams.nodes.sqd.CombinedFragmentWidget;
 import org.netbeans.modules.uml.drawingarea.NodeWidgetFactory;
 
-/**
- *
- * @author treyspiva
- */
+
+
 public class CombinedFragmentNodeFactory implements NodeWidgetFactory
 {
 

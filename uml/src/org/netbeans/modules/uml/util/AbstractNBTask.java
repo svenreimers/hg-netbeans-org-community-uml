@@ -64,9 +64,8 @@ import org.netbeans.api.progress.aggregate.ProgressContributor;
 
 import org.netbeans.modules.uml.core.metamodel.structure.IProject;
 
-/**
- *  author Craig Conover, craig.conover@sun.com
- */
+
+
 public abstract class AbstractNBTask extends Thread 
     implements Cancellable, ITaskSupervisor
 {
@@ -157,7 +156,8 @@ public abstract class AbstractNBTask extends Thread
     protected abstract void begin();
     protected abstract void finish();
     
-    /**
+    
+/**
      *  This method logs a "header" message. Override to replace this message
      *  with a custom header message and invoke super to prepend or append
      *  to this message.
@@ -175,7 +175,8 @@ public abstract class AbstractNBTask extends Thread
         log(SUMMARY);
     }
     
-    /**
+    
+/**
      *  This method logs the finish status message (success, fail or cancel)
      *  and the run time stats. Override to replace this message
      *  with a custom header message and invoke super to prepend or append
@@ -213,7 +214,8 @@ public abstract class AbstractNBTask extends Thread
                     AbstractNBTask.class, "MSG_TotalTime", timeMsg)); // NOI18N
     }
 
-    /**
+    
+/**
      * Provides tokenized defaults.
      * Should be overriden by subclass or settings values 
      * passed in by calling class.
@@ -267,7 +269,8 @@ public abstract class AbstractNBTask extends Thread
         return counter;
     }
     
-    /**
+    
+/**
      *  Called by task subclass to check confirm that the task hasn't been
      *  cancelled or failed. If there is a cancellation or failure, finish()
      *  is called.
@@ -279,7 +282,8 @@ public abstract class AbstractNBTask extends Thread
         return proceed(0);
     }
         
-    /**
+    
+/**
      *  Called by task subclass to check confirm that the task hasn't been
      *  cancelled or failed. If there is a cancellation or failure, finish()
      *  is called.
@@ -333,7 +337,8 @@ public abstract class AbstractNBTask extends Thread
         logging = val;
     }
     
-    /**
+    
+/**
      * Outputs a blank line
      */
     public void log()
@@ -365,7 +370,8 @@ public abstract class AbstractNBTask extends Thread
         log(msg, newline);
     }   
     
-    /**
+    
+/**
      * Outputs a message with and appends newline by default
      * 
      * @param msg the message to be output
@@ -375,7 +381,8 @@ public abstract class AbstractNBTask extends Thread
         log(msg, true);
     }
 
-    /**
+    
+/**
      * Outputs a message
      * 
      * @param msg the message to be output
@@ -392,7 +399,8 @@ public abstract class AbstractNBTask extends Thread
         out.flush();
     }
     
-    /**
+    
+/**
      *  Call this method when a failure in your task is detected and it will
      *  set the success flag to false. The next time proceed() is called,
      *  it will invoke finish() return false.

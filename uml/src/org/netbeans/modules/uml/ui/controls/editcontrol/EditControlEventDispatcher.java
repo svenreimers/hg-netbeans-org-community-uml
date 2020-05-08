@@ -51,10 +51,8 @@ import org.netbeans.modules.uml.core.eventframework.EventFunctor;
 import org.netbeans.modules.uml.core.eventframework.EventManager;
 import org.netbeans.modules.uml.core.support.umlsupport.IResultCell;
 
-/**
- * @author sumitabhk
- *
- */
+
+
 public class EditControlEventDispatcher extends EventDispatcher implements IEditControlEventDispatcher
 {
 	EventManager<IEditControlEventSink> m_EventManager = null;
@@ -68,7 +66,8 @@ public class EditControlEventDispatcher extends EventDispatcher implements IEdit
 		m_EventManager = new EventManager<IEditControlEventSink>();
 	}
 
-	/* 
+	
+/* 
 	 * Registers a listener for the edit control events.
 	 */
 	public void registerEditCtrlEvents(IEditControlEventSink handler)
@@ -76,7 +75,8 @@ public class EditControlEventDispatcher extends EventDispatcher implements IEdit
 		m_EventManager.addListener(handler, null);
 	}
 
-	/* 
+	
+/* 
 	 * Removes the listener for edit control events.
 	 */
 	public void revokeEditCtrlSink(IEditControlEventSink handler)
@@ -84,7 +84,8 @@ public class EditControlEventDispatcher extends EventDispatcher implements IEdit
 		m_EventManager.removeListener(handler);
 	}
 
-	/**
+	
+/**
 	 *
 	 * Create a new EditEventPayload for an edit control event
 	 *
@@ -99,7 +100,8 @@ public class EditControlEventDispatcher extends EventDispatcher implements IEdit
 		return payload;
 	}
 
-	/* 
+	
+/* 
 	 * nothing to do right now
 	 */
 	public boolean firePreInvalidData(String ErrorData, IEditEventPayload payload)
@@ -107,7 +109,8 @@ public class EditControlEventDispatcher extends EventDispatcher implements IEdit
 		return true;
 	}
 
-	/* 
+	
+/* 
 	 * nothing to do right now
 	 */
 	public void fireInvalidData(String ErrorData, IEditEventPayload payload)
@@ -115,7 +118,8 @@ public class EditControlEventDispatcher extends EventDispatcher implements IEdit
 		
 	}
 
-	/* 
+	
+/* 
 	 * nothing to do right now
 	 */
 	public boolean firePreOverstrike(boolean bOverstrike, IEditEventPayload payload)
@@ -123,7 +127,8 @@ public class EditControlEventDispatcher extends EventDispatcher implements IEdit
 		return true;
 	}
 
-	/* 
+	
+/* 
 	 * nothing to do right now
 	 */
 	public void fireOverstrike(boolean bOverstrike, IEditEventPayload payload)
@@ -131,7 +136,8 @@ public class EditControlEventDispatcher extends EventDispatcher implements IEdit
 		
 	}
 
-	/* 
+	
+/* 
 	 * Fired before the edit control gets activated.
 	 */
 	public boolean firePreActivate(IEditControl pControl, IEditEventPayload payload)
@@ -154,7 +160,8 @@ public class EditControlEventDispatcher extends EventDispatcher implements IEdit
 		return proceed;
 	}
 
-	/* 
+	
+/* 
 	 * Fired after the edit control gets activated.
 	 */
 	public void fireActivate(IEditControl pControl, IEditEventPayload payload)
@@ -173,7 +180,8 @@ public class EditControlEventDispatcher extends EventDispatcher implements IEdit
 		}
 	}
 
-	/* 
+	
+/* 
 	 * Fired after the edit control gets de-activated.
 	 */
 	public void fireDeactivate(IEditControl pControl, IEditEventPayload payload)
@@ -192,7 +200,8 @@ public class EditControlEventDispatcher extends EventDispatcher implements IEdit
 		}
 	}
 
-	/* 
+	
+/* 
 	 * Fired before the edit control gets committed.
 	 */
 	public boolean firePreCommit(IEditEventPayload payload)
@@ -214,7 +223,8 @@ public class EditControlEventDispatcher extends EventDispatcher implements IEdit
 		return proceed;
 	}
 
-	/* 
+	
+/* 
 	 * Fired after the edit control gets commited.
 	 */
 	public void firePostCommit(IEditEventPayload payload)

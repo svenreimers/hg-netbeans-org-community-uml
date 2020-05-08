@@ -50,10 +50,8 @@ import org.netbeans.modules.uml.drawingarea.persistence.data.NodeInfo;
 import org.netbeans.modules.uml.drawingarea.view.DesignerScene;
 import org.openide.util.Exceptions;
 
-/**
- *
- * @author jyothi
- */
+
+
 class FeatureStateReader implements GraphNodeReader {
 
     DesignerScene scene;

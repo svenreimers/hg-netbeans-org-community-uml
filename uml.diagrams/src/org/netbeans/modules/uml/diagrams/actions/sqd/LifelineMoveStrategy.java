@@ -48,10 +48,8 @@ import java.awt.Point;
 import org.netbeans.api.visual.action.MoveStrategy;
 import org.netbeans.api.visual.widget.Widget;
 
-/**
- * all lifelines can be moved only horizontally
- * @author sp153251
- */
+
+
 public class LifelineMoveStrategy implements MoveStrategy{
 
     public Point locationSuggested(Widget widget, Point originalLocation, Point suggestedLocation) {

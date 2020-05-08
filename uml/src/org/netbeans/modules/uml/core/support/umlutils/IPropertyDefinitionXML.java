@@ -46,22 +46,26 @@ package org.netbeans.modules.uml.core.support.umlutils;
 
 public interface IPropertyDefinitionXML extends IPropertyDefinition
 {
-	/**
+	
+/**
 	 * File of property definition
 	*/
 	public String getFile();
 
-	/**
+	
+/**
 	 * File of property definition
 	*/
 	public void setFile( String value );
 
-	/**
+	
+/**
 	 * Tells a property definition to store itself
 	*/
 	public void save();
 
-	/**
+	
+/**
 	 * Tells a property definition to remove itself
 	*/
 	public void remove();

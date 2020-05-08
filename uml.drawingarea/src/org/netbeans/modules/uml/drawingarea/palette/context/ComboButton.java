@@ -67,10 +67,8 @@ import javax.swing.UIManager;
 import javax.swing.border.Border;
 import org.netbeans.api.visual.widget.Widget;
 
-/**
- *
- * @author treyspiva
- */
+
+
 public class ComboButton extends ContextPaletteButton
 {
     private static final Border RIGHT_POPOUT_BORDER = BorderFactory.createEmptyBorder(1, 4, 1, 1);
@@ -137,7 +135,8 @@ public class ComboButton extends ContextPaletteButton
         return BorderFactory.createEmptyBorder(1, 1, 1, 1);
     }
     
-    /**
+    
+/**
      * Initializes the control to contain all of the buttons need to support the
      * expanded state.  If the expand state is true the hidden actions are 
      * also shown.  If the add parameter is true, the initialized component will 
@@ -496,7 +495,8 @@ public class ComboButton extends ContextPaletteButton
         return retVal;
     }
     
-    /**
+    
+/**
      * LeftMoveButtonAction handles the left arrow keystroke.  When the combo 
      * button is collapsed the button will first be expanded, then the first
      * child will be selected.  

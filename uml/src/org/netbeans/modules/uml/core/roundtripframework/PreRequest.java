@@ -42,11 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : PreRequest.java
- * Created on : Nov 6, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.roundtripframework;
 
 import org.netbeans.modules.uml.core.eventframework.IEventPayload;
@@ -62,9 +59,8 @@ import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElement;
 import org.netbeans.modules.uml.core.preferenceframework.PreferenceAccessor;
 
-/**
- * @author Aztec
- */
+
+
 public class PreRequest implements IPreRequest
 {
     protected IElement              m_PreElement = null;
@@ -102,7 +98,8 @@ public class PreRequest implements IPreRequest
             m_Language = m_Proc.getLanguage();
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IPreRequest#createChangeRequest(org.netbeans.modules.uml.core.metamodel.core.foundation.IElement, int, int)
      */
     public IChangeRequest createChangeRequest(
@@ -143,7 +140,8 @@ public class PreRequest implements IPreRequest
         return newReq;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IPreRequest#getDetail()
      */
     public int getDetail()
@@ -151,7 +149,8 @@ public class PreRequest implements IPreRequest
         return m_Detail;       
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IPreRequest#getDupeElement()
      */
     public IElement getDupeElement()
@@ -160,7 +159,8 @@ public class PreRequest implements IPreRequest
         return null;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IPreRequest#getElementWithArtifact()
      */
     public IElement getElementWithArtifact()
@@ -168,7 +168,8 @@ public class PreRequest implements IPreRequest
         return (m_PreElement != null)?m_ElementWithArtifact : null;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IPreRequest#getFileName()
      */
     public String getFileName()
@@ -176,7 +177,8 @@ public class PreRequest implements IPreRequest
         return m_File;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IPreRequest#getLanguage()
      */
     public String getLanguage()
@@ -184,7 +186,8 @@ public class PreRequest implements IPreRequest
         return m_Language;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IPreRequest#getModifiedNamespace()
      */
     public INamespace getModifiedNamespace()
@@ -193,7 +196,8 @@ public class PreRequest implements IPreRequest
         return null;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IPreRequest#getOrigElement()
      */
     public IElement getOrigElement()
@@ -202,7 +206,8 @@ public class PreRequest implements IPreRequest
         return null;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IPreRequest#getPreOwnerElement()
      */
     public IElement getPreOwnerElement()
@@ -210,7 +215,8 @@ public class PreRequest implements IPreRequest
         return (m_PreElement != null)?m_PreOwnerElement : null;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IPreRequest#getRequestProcessor(org.netbeans.modules.uml.core.roundtripframework.IRequestProcessor)
      */
     public IRequestProcessor getRequestProcessor(IRequestProcessor proc)
@@ -218,7 +224,8 @@ public class PreRequest implements IPreRequest
         return m_Proc;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IPreRequest#inCreateState(org.netbeans.modules.uml.core.metamodel.core.foundation.IElement)
      */
     public boolean inCreateState(IElement preElement)
@@ -296,7 +303,8 @@ public class PreRequest implements IPreRequest
         return inCreate;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IPreRequest#origElement()
      */
     public IElement origElement()
@@ -304,7 +312,8 @@ public class PreRequest implements IPreRequest
         return m_OrigElement;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IPreRequest#payload()
      */
     public IEventPayload payload()
@@ -312,7 +321,8 @@ public class PreRequest implements IPreRequest
         return m_Payload;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IPreRequest#populateChangeRequest(org.netbeans.modules.uml.core.roundtripframework.IChangeRequest)
      */
     public void populateChangeRequest(IChangeRequest req)
@@ -335,7 +345,8 @@ public class PreRequest implements IPreRequest
 
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IPreRequest#postEvent(org.netbeans.modules.uml.core.metamodel.core.foundation.IElement)
      */
     public boolean postEvent(IElement pElement)
@@ -343,7 +354,8 @@ public class PreRequest implements IPreRequest
         return (pElement != null) ? pElement.isSame(m_PreElement) : false;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IPreRequest#postEvent(org.netbeans.modules.uml.core.metamodel.core.foundation.IRelationProxy)
      */
     public boolean postEvent(IRelationProxy pRel)
@@ -352,7 +364,8 @@ public class PreRequest implements IPreRequest
         return false;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IPreRequest#preElement()
      */
     public IElement preElement()
@@ -360,7 +373,8 @@ public class PreRequest implements IPreRequest
         return m_PreElement;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IPreRequest#preProcessRequest(org.netbeans.modules.uml.core.roundtripframework.IChangeRequest)
      */
     public void preProcessRequest(IChangeRequest req)
@@ -382,7 +396,8 @@ public class PreRequest implements IPreRequest
         }
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IPreRequest#relation()
      */
     public IRelationProxy relation()
@@ -391,7 +406,8 @@ public class PreRequest implements IPreRequest
         return null;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IPreRequest#setDupeElement(org.netbeans.modules.uml.core.metamodel.core.foundation.IElement)
      */
     public void setDupeElement(IElement val)
@@ -400,7 +416,8 @@ public class PreRequest implements IPreRequest
 
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IPreRequest#setModifiedNamespace(org.netbeans.modules.uml.core.metamodel.core.foundation.INamespace)
      */
     public void setModifiedNamespace(INamespace newVal)
@@ -409,7 +426,8 @@ public class PreRequest implements IPreRequest
 
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IPreRequest#setOrigElement(org.netbeans.modules.uml.core.metamodel.core.foundation.IElement)
      */
     public void setOrigElement(IElement val)
@@ -418,7 +436,8 @@ public class PreRequest implements IPreRequest
 
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IPreRequest#setPreOwnerElement(org.netbeans.modules.uml.core.metamodel.core.foundation.IElement)
      */
     public void setPreOwnerElement(IElement element)

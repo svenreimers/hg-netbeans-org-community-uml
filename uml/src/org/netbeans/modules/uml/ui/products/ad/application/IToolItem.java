@@ -46,34 +46,37 @@
 
 package org.netbeans.modules.uml.ui.products.ad.application;
 
-/**
- *
- * @author Trey Spiva
- */
+
+
 public interface IToolItem
 {
 
-   /**
+   
+/**
     * @param object
     */
    void setToolTipText(Object object);
 
-   /**
+   
+/**
     * @return
     */
    boolean getEnabled();
 
-   /**
+   
+/**
     * @param shouldBeEnabled
     */
    void setEnabled(boolean shouldBeEnabled);
 
-   /**
+   
+/**
     * @return
     */
    boolean getSelection();
 
-   /**
+   
+/**
     * @param bv
     */
    void setSelection(boolean bv);

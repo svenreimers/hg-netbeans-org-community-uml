@@ -44,6 +44,7 @@
 
 
 
+
 /*
  * Created on Sep 25, 2003
  *
@@ -58,10 +59,8 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.IConstraint;
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IEvent;
 import org.netbeans.modules.uml.core.AbstractUMLTestCase;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
-/**
- * @author aztec
- *
- */
+
+
 public class StateTestCase extends AbstractUMLTestCase
 {
 	private IState state = null;

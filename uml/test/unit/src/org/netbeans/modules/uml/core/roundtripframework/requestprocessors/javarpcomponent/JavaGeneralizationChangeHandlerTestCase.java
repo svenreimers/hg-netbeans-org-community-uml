@@ -44,6 +44,7 @@
 
 
 
+
 /*
  * Created on Nov 24, 2003
  *
@@ -70,10 +71,8 @@ import org.netbeans.modules.uml.core.roundtripframework.IRoundTripOperationEvent
 import org.netbeans.modules.uml.core.support.umlsupport.IResultCell;
 import org.netbeans.modules.uml.core.support.umlutils.ETArrayList;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
-/**
- * @author schandra
- *
- */
+
+
 public class JavaGeneralizationChangeHandlerTestCase
     extends AbstractUMLTestCase
     implements IRoundTripOperationEventsSink
@@ -102,7 +101,8 @@ public class JavaGeneralizationChangeHandlerTestCase
         methEvents.clear();
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.AbstractUMLTestCase#tearDown()
      */
     protected void tearDown() throws Exception
@@ -113,6 +113,7 @@ public class JavaGeneralizationChangeHandlerTestCase
         disp.revokeRoundTripOperationSink(this);
     }
  
+
 /**
  * GeneralizationSpecificEndMovesTestCase
  */
@@ -136,6 +137,7 @@ public class JavaGeneralizationChangeHandlerTestCase
         assertEquals(0, subc.getOperations().get(1).getRedefinedElementCount());
     }
 
+
 /**
  * GeneralizationCreateTestCase
  */
@@ -145,13 +147,14 @@ public class JavaGeneralizationChangeHandlerTestCase
         assertEquals("washington", subc.getOperations().get(1).getName());
     }
     
+
 /**
  * GeneralizationDeleteTestCase
  */
 
 	public void testDelete()
     {
-// TODO: conover - temporary until fixed            
+
 //        assertEquals(1, superc.getOperations().get(1).getRedefiningElementCount());
 //        assertEquals(1, subc.getOperations().get(1).getRedefinedElementCount());
 //        gen.delete();
@@ -159,6 +162,7 @@ public class JavaGeneralizationChangeHandlerTestCase
 //        assertEquals(0, subc.getOperations().get(1).getRedefinedElementCount());
     }
     
+
 /**
  * GeneralizationEndMovesTestCase
  */
@@ -179,6 +183,7 @@ public class JavaGeneralizationChangeHandlerTestCase
         assertEquals(1, newSuper.getOperations().get(1).getRedefiningElementCount());
     }
     
+
 /**
  * GeneralizationAddParameterTestCase
  */
@@ -231,6 +236,7 @@ public class JavaGeneralizationChangeHandlerTestCase
 
 
 
+
 /**
  * GeneralizationDeleteParameterTestCase
  */
@@ -257,7 +263,7 @@ public class JavaGeneralizationChangeHandlerTestCase
         assertEquals(2,childOp.getParameters().size());
         superOp.removeParameter(pm1);
         assertEquals(1,superOp.getParameters().size());
-// TODO: conover - temporary until fixed            
+
 //        assertEquals(1,childOp.getParameters().size());
         
         superOp.removeParameter(pm2);
@@ -265,6 +271,7 @@ public class JavaGeneralizationChangeHandlerTestCase
         assertEquals(0,childOp.getParameters().size());
     }
     
+
 
 /**
  * GeneralizationRenameOperationTestCase
@@ -303,6 +310,7 @@ public class JavaGeneralizationChangeHandlerTestCase
     }
     
     
+
 /**
  * GeneralizationChangeParameterTestCase
  */
@@ -339,7 +347,8 @@ public class JavaGeneralizationChangeHandlerTestCase
     {
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRoundTripOperationEventsSink#onOperationChangeRequest(org.netbeans.modules.uml.core.roundtripframework.IChangeRequest, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onOperationChangeRequest(IChangeRequest req, IResultCell cell)

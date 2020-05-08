@@ -42,19 +42,15 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : RequestFacility.java
- * Created on : Oct 28, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.roundtripframework;
 
 import org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.Facility;
 import org.netbeans.modules.uml.core.support.umlsupport.ProductRetriever;
 
-/**
- * @author Aztec
- */
+
+
 public class RequestFacility extends Facility implements IRequestFacility
 {
      protected void setRoundTripMode(/*RTMode*/int value)

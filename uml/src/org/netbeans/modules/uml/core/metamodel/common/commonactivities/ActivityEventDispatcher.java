@@ -52,16 +52,16 @@ import org.netbeans.modules.uml.core.eventframework.EventManager;
 import org.netbeans.modules.uml.core.eventframework.IEventPayload;
 import org.netbeans.modules.uml.core.support.umlsupport.IResultCell;
 
-/**
- * @author sumitabhk
- */
+
+
 public class ActivityEventDispatcher extends EventDispatcher
    implements IActivityEventDispatcher
 {
     private EventManager<IActivityEdgeEventsSink> manager = 
         new EventManager<IActivityEdgeEventsSink>();
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivityEventDispatcher#registerForActivityEdgeEvents(org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivityEdgeEventsSink)
      */
     public void registerForActivityEdgeEvents(IActivityEdgeEventsSink sink)
@@ -69,7 +69,8 @@ public class ActivityEventDispatcher extends EventDispatcher
         manager.addListener(sink, null);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivityEventDispatcher#revokeActivityEdgeSink(int)
      */
     public void revokeActivityEdgeSink(IActivityEdgeEventsSink sink)
@@ -77,7 +78,8 @@ public class ActivityEventDispatcher extends EventDispatcher
         manager.removeListener(sink);
     }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivityEventDispatcher#firePreWeightModified(org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivityEdge, java.lang.String, org.netbeans.modules.uml.core.eventframework.IEventPayload)
     */
     public boolean firePreWeightModified(
@@ -112,7 +114,8 @@ public class ActivityEventDispatcher extends EventDispatcher
         return proceed; 
     }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivityEventDispatcher#fireWeightModified(org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivityEdge, org.netbeans.modules.uml.core.eventframework.IEventPayload)
     */
    public void fireWeightModified(IActivityEdge pEdge, IEventPayload payload)
@@ -136,7 +139,8 @@ public class ActivityEventDispatcher extends EventDispatcher
        }
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivityEventDispatcher#firePreGuardModified(org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivityEdge, java.lang.String, org.netbeans.modules.uml.core.eventframework.IEventPayload)
     */
    public boolean firePreGuardModified(
@@ -171,7 +175,8 @@ public class ActivityEventDispatcher extends EventDispatcher
        return proceed; 
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivityEventDispatcher#fireGuardModified(org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivityEdge, org.netbeans.modules.uml.core.eventframework.IEventPayload)
     */
    public void fireGuardModified(IActivityEdge pEdge, IEventPayload payload)

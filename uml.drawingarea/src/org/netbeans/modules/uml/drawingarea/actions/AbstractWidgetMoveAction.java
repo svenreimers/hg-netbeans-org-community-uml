@@ -54,10 +54,8 @@ import org.openide.nodes.Node;
 import org.openide.util.HelpCtx;
 import org.openide.windows.TopComponent;
 
-/**
- *
- * @author Sheryl Su
- */
+
+
 public abstract class AbstractWidgetMoveAction extends AbstractAction
 {
     private DesignerScene scene = null;

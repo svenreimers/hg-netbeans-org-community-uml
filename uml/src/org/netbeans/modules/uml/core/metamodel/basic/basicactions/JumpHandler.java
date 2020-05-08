@@ -59,7 +59,8 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 public class JumpHandler extends Element implements IJumpHandler
 {
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.basic.basicactions.IJumpHandler#addProtectedAction(org.netbeans.modules.uml.core.metamodel.basic.basicactions.IAction)
      */
     public void addProtectedAction(final IAction pAction)
@@ -79,7 +80,8 @@ public class JumpHandler extends Element implements IJumpHandler
 
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.basic.basicactions.IJumpHandler#getBody()
      */
     public IHandlerAction getBody()
@@ -88,7 +90,8 @@ public class JumpHandler extends Element implements IJumpHandler
         return col.retrieveSingleElementWithAttrID( this, "body", IHandlerAction.class);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.basic.basicactions.IJumpHandler#getIsDefault()
      */
     public boolean getIsDefault()
@@ -96,7 +99,8 @@ public class JumpHandler extends Element implements IJumpHandler
         return getBooleanAttributeValue("isDefault",false);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.basic.basicactions.IJumpHandler#getJumpType()
      */
     public ISignal getJumpType()
@@ -105,7 +109,8 @@ public class JumpHandler extends Element implements IJumpHandler
         return col.retrieveSingleElementWithAttrID( this, "jumpType", ISignal.class);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.basic.basicactions.IJumpHandler#getProtectedActions()
      */
     public ETList<IAction> getProtectedActions()
@@ -114,7 +119,8 @@ public class JumpHandler extends Element implements IJumpHandler
         return col.retrieveElementCollectionWithAttrIDs(this, "protectedAction", IAction.class);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.basic.basicactions.IJumpHandler#removeProtectedAction(org.netbeans.modules.uml.core.metamodel.basic.basicactions.IAction)
      */
     public void removeProtectedAction(final IAction pAction)
@@ -131,7 +137,8 @@ public class JumpHandler extends Element implements IJumpHandler
         );
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.basic.basicactions.IJumpHandler#setBody(org.netbeans.modules.uml.core.metamodel.basic.basicactions.IHandlerAction)
      */
     public void setBody(final IHandlerAction value)
@@ -155,7 +162,8 @@ public class JumpHandler extends Element implements IJumpHandler
 
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.basic.basicactions.IJumpHandler#setIsDefault(boolean)
      */
     public void setIsDefault(boolean value)
@@ -163,7 +171,8 @@ public class JumpHandler extends Element implements IJumpHandler
         setBooleanAttributeValue("isDefault", value);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.basic.basicactions.IJumpHandler#setJumpType(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ISignal)
      */
     public void setJumpType(ISignal value)

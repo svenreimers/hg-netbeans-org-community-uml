@@ -50,7 +50,8 @@ public class InitializeEvent implements IInitializeEvent
 {
     private String m_TestString;
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.IInitializeEvent#getStringRepresentation()
      */
     public String getStringRepresentation()
@@ -58,7 +59,8 @@ public class InitializeEvent implements IInitializeEvent
         return m_TestString;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.IInitializeEvent#setStringRepresentation(java.lang.String)
      */
     public void setStringRepresentation(String newVal)

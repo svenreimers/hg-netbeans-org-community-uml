@@ -42,6 +42,7 @@
  * made subject to such option by the copyright holder.
  */
 
+
 /*
  * Created on Oct 17, 2003
  *
@@ -53,17 +54,16 @@ import org.dom4j.Node;
 
 import org.netbeans.modules.uml.core.metamodel.basic.basicactions.Action;
 
-/**
- * @author aztec
- *
- */
+
+
 public class TerminateAction extends Action implements ITerminateAction
 {
 	public TerminateAction()
 	{
 	}
 	
-	/**
+	
+/**
 	 * Establishes the appropriate XML elements for this UML type.
 	 *
 	 * [in] The document where this element will reside

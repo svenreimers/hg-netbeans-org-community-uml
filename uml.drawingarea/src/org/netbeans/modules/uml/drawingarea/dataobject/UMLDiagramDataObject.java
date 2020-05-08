@@ -165,7 +165,7 @@ public class UMLDiagramDataObject extends MultiDataObject {
         public void edit()
         {
             //open previously opened diagrams on project loading
-            //kris richards - changed to NbPreference
+            
             if (NbPreferences.forModule(DummyCorePreference.class).getBoolean("UML_Open_Project_Diagrams", true))
                 open() ;
             

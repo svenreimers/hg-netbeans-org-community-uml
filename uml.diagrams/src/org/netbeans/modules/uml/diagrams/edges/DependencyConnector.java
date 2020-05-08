@@ -49,10 +49,8 @@ import org.netbeans.api.visual.anchor.AnchorShapeFactory;
 import org.netbeans.api.visual.anchor.PointShape;
 import org.netbeans.api.visual.widget.Scene;
 
-/**
- *
- * @author treyspiva
- */
+
+
 public class DependencyConnector extends AbstractUMLConnectionWidget
 {
     public DependencyConnector(Scene scene)

@@ -48,14 +48,13 @@ package org.netbeans.modules.uml.reporting.dataobjects;
 import org.netbeans.modules.uml.core.metamodel.common.commonactivities.IDataStoreNode;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.IElement;
 
-/**
- *
- * @author Sheryl
- */
+
+
 public class DataStoreNodeData extends ObjectNodeData
 {
     
-    /**
+    
+/**
      * Creates a new instance of DataStoreNodeData
      */
     public DataStoreNodeData()

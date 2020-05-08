@@ -42,6 +42,7 @@
  * made subject to such option by the copyright holder.
  */
 
+
 /*
  * Created on Nov 13, 2003
  *
@@ -65,10 +66,8 @@ import org.netbeans.modules.uml.core.roundtripframework.RTElementKind;
 import org.netbeans.modules.uml.core.roundtripframework.RequestDetailKind;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
-/**
- * @author aztec
- *
- */
+
+
 public class JavaImplementationChangeHandler extends JavaDependencyChangeHandler
 									implements IJavaImplementationChangeHandler
 {

@@ -48,13 +48,13 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 
-/**
- * @author aztec
- */
+
+
 public class FacilityProperties extends HashMap<String, IFacilityProperty>
     implements IFacilityProperties
 {
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.IFacilityProperties#add(org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.IFacilityProperty)
      */
     public void add(IFacilityProperty prop)

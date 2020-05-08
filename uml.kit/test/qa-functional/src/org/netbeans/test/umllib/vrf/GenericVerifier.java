@@ -61,10 +61,8 @@ import org.netbeans.test.umllib.ElementTypes;
 import org.netbeans.test.umllib.customelements.LifelineOperator;
 import org.netbeans.test.umllib.exceptions.NotFoundException;
 
-/**
- *
- * @author ak153256
- */
+
+
 public class GenericVerifier {
     
     protected EventTool eventTool = new EventTool();

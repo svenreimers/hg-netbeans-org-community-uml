@@ -62,10 +62,8 @@ import org.openide.util.Lookup;
 import org.openide.util.actions.NodeAction;
 import org.openide.util.actions.SystemAction;
 
-/**
- *
- * @author treyspiva
- */
+
+
 public class ShowViewAction extends SceneNodeAction
 {
     private WidgetViewManager lastManager = null;

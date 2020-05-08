@@ -48,10 +48,8 @@ import java.awt.Cursor;
 import org.netbeans.api.visual.action.TwoStateHoverProvider;
 import org.netbeans.api.visual.widget.Widget;
 
-/**
- *
- * @author Jyothi
- */
+
+
 
 public class UMLHoverProvider implements TwoStateHoverProvider {
     

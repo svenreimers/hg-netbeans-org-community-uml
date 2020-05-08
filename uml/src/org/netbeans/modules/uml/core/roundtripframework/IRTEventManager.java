@@ -42,11 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
-  File       : IRTEventManager.java
-  Created on : Nov 5, 2003
-  Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.roundtripframework;
 
 import org.netbeans.modules.uml.core.eventframework.IEventContext;
@@ -76,9 +73,8 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 import org.netbeans.modules.uml.core.workspacemanagement.IWSProject;
 import org.netbeans.modules.uml.core.workspacemanagement.IWorkspace;
 
-/**
- * @author Aztec
- */
+
+
 public interface IRTEventManager
 {
     public void processRequests(IElement element, /*ChangeKind*/ int type, IBehavioralFeature feature);

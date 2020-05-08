@@ -43,6 +43,7 @@
  */
 
 
+
 /*
  * Created on Jun 9, 2003
  *
@@ -54,10 +55,8 @@ import java.awt.event.MouseEvent;
 
 import javax.swing.SwingUtilities;
 
-/**
- * @author sumitabhk
- *
- */
+
+
 public class TreeTablePopupListener extends MouseAdapter
 {
 

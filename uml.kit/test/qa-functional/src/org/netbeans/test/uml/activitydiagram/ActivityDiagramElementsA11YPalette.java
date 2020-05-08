@@ -71,11 +71,8 @@ import org.netbeans.test.umllib.testcases.UMLTestCase;
 
 
 
-/**
- *
- * @author psb
- * @spec uml/UML-EditControl.xml
- */
+
+
 public class ActivityDiagramElementsA11YPalette extends UMLTestCase {
     
     //some system properties
@@ -298,7 +295,8 @@ public class ActivityDiagramElementsA11YPalette extends UMLTestCase {
         testElementPlace(workPkg13,activityDiagramName13,element13,elementName13,elementType13);
     }
     
-   /*public void testCreate14() {
+   
+/*public void testCreate14() {
         testElementPlace(workPkg14,activityDiagramName14,element14,elementName14,elementType14);
     }*/
  

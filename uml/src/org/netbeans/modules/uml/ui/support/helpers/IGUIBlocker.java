@@ -47,10 +47,8 @@ package org.netbeans.modules.uml.ui.support.helpers;
 
 import org.netbeans.modules.uml.core.metamodel.diagrams.IDiagram;
 
-/**
- * @author brettb
- *
- */
+
+
 public interface IGUIBlocker
 {
    public class GBK // GUIBlockerKind

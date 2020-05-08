@@ -54,10 +54,8 @@ import org.openide.util.Lookup;
 import org.openide.util.NbBundle;
 import org.openide.util.actions.CookieAction;
 
-/**
- *
- * @author thuy
- */
+
+
 public final class ToggleShowLabelAction extends SceneCookieAction
 {
     private DesignerScene scene;

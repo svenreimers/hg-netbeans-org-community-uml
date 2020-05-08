@@ -46,72 +46,86 @@ package org.netbeans.modules.uml.core.reverseengineering.reframework.parsingfram
 
 public interface ILanguageDataType
 {
-	/**
+	
+/**
 	 * The name of the data type.
 	*/
 	public String getName();
 
-	/**
+	
+/**
 	 * The name of the data type.
 	*/
 	public void setName( String value );
 
-	/**
+	
+/**
 	 * The data type's kind.  The data kinds will usally be "primitive" or "user-defined".
 	*/
 	public int getKind();
 
-	/**
+	
+/**
 	 * The data type's kind.  The data kinds will usally be "primitive" or "user-defined".
 	*/
 	public void setKind( /* DataTypeKind */ int value );
 
-	/**
+	
+/**
 	 * The scope of the data type.  The value of scope will be "global" when the data type applies to all Describe projects, or a list of projects that applies to the data type.
 	*/
 	public String getScope();
 
-	/**
+	
+/**
 	 * The scope of the data type.  The value of scope will be "global" when the data type applies to all Describe projects, or a list of projects that applies to the data type.
 	*/
 	public void setScope( String value );
 
-	/**
+	
+/**
 	 * Specifies that the Data Type is the default value for attributes.
 	*/
 	public boolean getIsDefaultAttributeType();
 
-	/**
+	
+/**
 	 * Specifies that the Data Type is the default value for attributes.
 	*/
 	public void setIsDefaultAttributeType( boolean value );
 
-	/**
+	
+/**
 	 * Specifies that the Data Type is the default value for operations.
 	*/
 	public boolean getIsOperationDefaultType();
 
-	/**
+	
+/**
 	 * Specifies that the Data Type is the default value for operations.
 	*/
 	public void setIsOperationDefaultType( boolean value );
 
-	/**
+	
+/**
 	 * The default value of data type.
 	*/
 	public String getDefaultValue();
 
-	/**
+	
+/**
 	 * The default value of data type.
 	*/
 	public void setDefaultValue( String value );
 
-	/**
+	
+/**
 	 * The language independent name of the data type.  Only primitives have a UML name.
 	*/
 	public String getUMLName();
 
-	/**
+	
+/**
 	 * The language independent name of the data type.  Only primitives have a UML name.
 	*/
 	public void setUMLName( String value );

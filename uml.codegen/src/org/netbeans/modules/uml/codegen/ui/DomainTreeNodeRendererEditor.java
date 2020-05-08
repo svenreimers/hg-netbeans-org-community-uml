@@ -56,10 +56,8 @@ import javax.swing.tree.DefaultMutableTreeNode;
 import javax.swing.tree.TreeCellRenderer;
 import org.netbeans.modules.uml.ui.swing.SelectableLabel;
 
-/**
- *
- * @author Craig Conover, craig.conover@sun.com
- */
+
+
 public class DomainTreeNodeRendererEditor extends JPanel
     implements TreeCellRenderer
 {

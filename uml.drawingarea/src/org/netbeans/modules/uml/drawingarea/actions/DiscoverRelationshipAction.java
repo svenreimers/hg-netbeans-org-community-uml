@@ -59,10 +59,8 @@ import org.netbeans.modules.uml.drawingarea.view.DesignerScene;
 import org.netbeans.modules.uml.resources.images.ImageUtil;
 import org.openide.util.NbBundle;
 
-/**
- *
- * @author Sheryl Su
- */
+
+
 public class DiscoverRelationshipAction extends AbstractAction
 {
 

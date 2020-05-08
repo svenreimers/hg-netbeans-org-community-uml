@@ -53,10 +53,8 @@ import org.netbeans.modules.uml.diagrams.nodes.CompartmentWidget;
 import org.netbeans.modules.uml.drawingarea.view.UMLWidget;
 import org.netbeans.modules.uml.drawingarea.widgets.ContainerWidget;
 
-/**
- *
- * @author Thuy
- */
+
+
 public class SubPartitionWidget extends CompartmentWidget
 {
     private ContainerWidget containerWidget;

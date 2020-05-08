@@ -42,18 +42,14 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : ICompositeAction.java
- * Created on : Sep 17, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.metamodel.common.commonactions;
 
 import org.netbeans.modules.uml.core.metamodel.basic.basicactions.IAction;
 
-/**
- * @author Aztec
- */
+
+
 public interface ICompositeAction extends IAction
 {
 

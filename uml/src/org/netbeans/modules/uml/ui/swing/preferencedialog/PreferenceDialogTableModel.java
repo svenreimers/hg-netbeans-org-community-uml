@@ -63,15 +63,14 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 import org.netbeans.modules.uml.core.support.umlutils.IPropertyDefinition;
 import org.netbeans.modules.uml.core.support.umlutils.IPropertyElement;
 
-/**
- * @author sumitabhk
- *
- */
+
+
 public class PreferenceDialogTableModel extends AbstractTableModel implements ISwingPreferenceTableModel
 {
 	private PreferenceDialogUI m_PreferenceControl = null;
 	private ETList< ETPairT<IPropertyElement, String> > m_Collection = null;
-	/**
+	
+/**
 	 * 
 	 */
 	public PreferenceDialogTableModel()
@@ -92,7 +91,8 @@ public class PreferenceDialogTableModel extends AbstractTableModel implements IS
 		m_Collection = values;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see javax.swing.table.TableModel#getRowCount()
 	 */
 	public int getRowCount()
@@ -105,7 +105,8 @@ public class PreferenceDialogTableModel extends AbstractTableModel implements IS
 		return retVal;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see javax.swing.table.TableModel#getColumnCount()
 	 */
 	public int getColumnCount()
@@ -113,7 +114,8 @@ public class PreferenceDialogTableModel extends AbstractTableModel implements IS
 		return 2;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see javax.swing.table.TableModel#getColumnName(int)
 	 */
 	public String getColumnName(int arg0)
@@ -121,7 +123,8 @@ public class PreferenceDialogTableModel extends AbstractTableModel implements IS
 		return " ";
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see javax.swing.table.TableModel#getColumnClass(int)
 	 */
 	public Class getColumnClass(int arg0)
@@ -129,7 +132,8 @@ public class PreferenceDialogTableModel extends AbstractTableModel implements IS
 		return String.class;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see javax.swing.table.TableModel#isCellEditable(int, int)
 	 */
 	public boolean isCellEditable(int arg0, int arg1)
@@ -137,7 +141,8 @@ public class PreferenceDialogTableModel extends AbstractTableModel implements IS
 		return true;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see javax.swing.table.TableModel#getValueAt(int, int)
 	 */
 	public Object getValueAt(int row, int col)
@@ -193,21 +198,24 @@ public class PreferenceDialogTableModel extends AbstractTableModel implements IS
 		return retObj;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see javax.swing.table.TableModel#setValueAt(java.lang.Object, int, int)
 	 */
 	public void setValueAt(Object arg0, int arg1, int arg2)
 	{
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see javax.swing.table.TableModel#addTableModelListener(javax.swing.event.TableModelListener)
 	 */
 	public void addTableModelListener(TableModelListener arg0)
 	{
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see javax.swing.table.TableModel#removeTableModelListener(javax.swing.event.TableModelListener)
 	 */
 	public void removeTableModelListener(TableModelListener arg0)

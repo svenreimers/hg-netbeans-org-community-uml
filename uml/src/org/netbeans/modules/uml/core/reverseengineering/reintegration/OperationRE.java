@@ -42,11 +42,7 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : OperationRE.java
- * Created on : Dec 19, 2003
- * Author     : Aztec
- */
+
 package org.netbeans.modules.uml.core.reverseengineering.reintegration;
 
 import java.util.HashMap;
@@ -114,9 +110,7 @@ import org.netbeans.modules.uml.ui.support.ProductHelper;
 import org.dom4j.Node;
 import org.netbeans.modules.uml.core.support.umlsupport.XMLManip;
 
-/**
- * @author Aztec
- */
+
 public class OperationRE implements IOperationRE
 {
    private Stack < Integer > m_parsingStates = new Stack < Integer > ();

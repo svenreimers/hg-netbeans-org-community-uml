@@ -42,6 +42,7 @@
  * made subject to such option by the copyright holder.
  */
 
+
 /*
  * Created on Oct 17, 2003
  *
@@ -57,10 +58,8 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.UMLXMLManip;
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.Behavior;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
-/**
- * @author aztec
- *
- */
+
+
 public class ActionSequence extends Behavior implements IActionSequence
 {
 
@@ -68,7 +67,8 @@ public class ActionSequence extends Behavior implements IActionSequence
 	{
 	}
 	
-	/**
+	
+/**
 	 * Retrieves all tagged values, incuding standard tags.
 	 * 
 	 * @return All tagged values
@@ -79,7 +79,8 @@ public class ActionSequence extends Behavior implements IActionSequence
 			.retrieveElementCollection(m_Node,"UML:ActionSequence.action/*", IAction.class);		
 	}
 	
-	/**
+	
+/**
 	 * Removes an action from this sequence.
 	 *
 	 * @param action[in]
@@ -89,7 +90,8 @@ public class ActionSequence extends Behavior implements IActionSequence
 		UMLXMLManip.removeChild(m_Node,action);
 	}
 	
-	/**
+	
+/**
 	 * Adds an action to this sequence
 	 *
 	 * @param action[in]
@@ -99,7 +101,8 @@ public class ActionSequence extends Behavior implements IActionSequence
 		addChild("UML:ActionSequence.action","UML:ActionSequence.action",action);
 	}
 	
-	/**
+	
+/**
 	 * Establishes the appropriate XML elements for this UML type.
 	 *
 	 * [in] The document where this element will reside

@@ -63,10 +63,8 @@ import javax.swing.SwingUtilities;
 import org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeModel;
 import org.openide.util.Exceptions;
 
-/**
- * @author sumitabhk
- *
- */
+
+
 public class DiagramHandler implements IDiagramCallback
 {
    private static final String BUNDLE_NAME = "org.netbeans.modules.uml.drawingarea.ui.addins.diagramcreator.Bundle"; //NOI18N
@@ -85,7 +83,8 @@ public class DiagramHandler implements IDiagramCallback
    /// When true the GUI functions have been called
    private boolean m_bUsingGUI = false;
    protected ETSmartWaitCursor waitCursor = null;
-   /**
+   
+/**
     * 
     */
    public DiagramHandler()
@@ -93,12 +92,8 @@ public class DiagramHandler implements IDiagramCallback
       super();
    }
 
-   /*
-    * 
-    * @author Kevinm
-    *
-    * Run Fit in window later so we can get the graph window up,
-    */
+   
+
    protected class FitInWindowThread implements Runnable
    {
       IDiagram pDiagram;
@@ -243,7 +238,7 @@ public class DiagramHandler implements IDiagramCallback
          //Fixed issue 96121, 96119, 96118
          //Automatically save diagrams generated from CDFS, Dependency Diagram and RE Operation.
          //Need to call save() in a "invokeLater" thread to make sure the diagram is saved after
-         //all other threads are done modifyfing the diagram."
+         
          if ( pDiagram != null )
          {
              final IDiagram diagram = pDiagram;
@@ -294,7 +289,8 @@ public class DiagramHandler implements IDiagramCallback
       }
    }
 
-   /**
+   
+/**
     * @param b
     */
    public void setUsingGUI(boolean newVal)
@@ -302,7 +298,8 @@ public class DiagramHandler implements IDiagramCallback
       m_bUsingGUI = newVal;
    }
 
-   /**
+   
+/**
     * @param element
     */
    public void setElement(IElement element)
@@ -320,7 +317,8 @@ public class DiagramHandler implements IDiagramCallback
       m_cpElements = elements;
    }
 
-   /**
+   
+/**
     * @param operation
     */
    public void setOperationToRE(IOperation operation)
@@ -328,7 +326,8 @@ public class DiagramHandler implements IDiagramCallback
       m_cpOperationToRE = operation;
    }
 
-   /**
+   
+/**
     * @param control
     */
    public void setProjectTree(IProjectTreeControl control)
@@ -341,7 +340,8 @@ public class DiagramHandler implements IDiagramCallback
       projectTreeModel = treeModel;
    }
 
-   /**
+   
+/**
     * @param in
     */
    public void setDiagCreatorAddIn(DiagCreatorAddIn addin)
@@ -349,7 +349,8 @@ public class DiagramHandler implements IDiagramCallback
       m_rawDiagCreatorAddIn = addin;
    }
 
-   /**
+   
+/**
     * Retrieves a resource string.
     */
    public static String loadString(String key)

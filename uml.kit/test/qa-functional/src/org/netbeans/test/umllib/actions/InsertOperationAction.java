@@ -43,6 +43,7 @@
  */
 
 
+
 /*
  * InsertOperationAction.java
  *
@@ -60,10 +61,8 @@ import java.awt.event.KeyEvent;
 import org.netbeans.jellytools.actions.Action.Shortcut;
 import org.netbeans.test.umllib.util.PopupConstants;
 
-/**
- *
- * @author VijayaBabu Mummaneni
- */
+
+
 public class InsertOperationAction extends DiagramElementAction{
     
     private static final String actionPopup = PopupConstants.INSERT_OPERATION ;

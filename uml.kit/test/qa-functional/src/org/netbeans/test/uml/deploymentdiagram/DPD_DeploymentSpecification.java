@@ -68,11 +68,8 @@ import org.netbeans.test.umllib.testcases.UMLTestCase;
 import org.netbeans.test.umllib.vrf.DiagramElementVerifier;
 
 
-/**
- *
- * @author yaa
- * @spec UML/DeploymentDiagram.xml
- */
+
+
 public class DPD_DeploymentSpecification extends UMLTestCase {
     
     private static String prName = "UMLProjectDPD6";
@@ -95,6 +92,7 @@ public class DPD_DeploymentSpecification extends UMLTestCase {
         return suite;
     }
     
+
 /**
  * @caseblock Deployment specification Symbol
  * @usecase Copy and Paste a Deployment specification symbol on a diagram by popup menu
@@ -106,6 +104,7 @@ public class DPD_DeploymentSpecification extends UMLTestCase {
         }
     }
     
+
 /**
  * @caseblock Deployment specification Symbol
  * @usecase Copy and Paste a Deployment specification symbol on a diagram by shortcuts
@@ -117,6 +116,7 @@ public class DPD_DeploymentSpecification extends UMLTestCase {
         }
     }
     
+
 /**
  * @caseblock Deployment specification Symbol
  * @usecase Cut and Paste a Deployment specification symbol on a diagram by popup menu
@@ -128,6 +128,7 @@ public class DPD_DeploymentSpecification extends UMLTestCase {
         }
     }
     
+
 /**
  * @caseblock Deployment specification Symbol
  * @usecase Cut and Paste a Deployment specification symbol on a diagram by shortcuts
@@ -139,6 +140,7 @@ public class DPD_DeploymentSpecification extends UMLTestCase {
         }
     }
     
+
 /**
  * @caseblock Deployment specification Symbol
  * @usecase Delete a Deployment specification symbol from a diagram by popup menu
@@ -150,6 +152,7 @@ public class DPD_DeploymentSpecification extends UMLTestCase {
         }
     }
     
+
 /**
  * @caseblock Deployment specification Symbol
  * @usecase Delete a Deployment specification symbol from a diagram by shortcut
@@ -160,6 +163,7 @@ public class DPD_DeploymentSpecification extends UMLTestCase {
             fail("Test failed. Details in log file.");
         }
     }
+
 
 /**
  * @caseblock Deployment specification Symbol
@@ -172,6 +176,7 @@ public class DPD_DeploymentSpecification extends UMLTestCase {
         }
     }
     
+
 /**
  * @caseblock Deployment specification Symbol
  * @usecase Select all on a diagram by popup menu of a Deployment specification
@@ -183,6 +188,7 @@ public class DPD_DeploymentSpecification extends UMLTestCase {
         }
     }
     
+
 /**
  * @caseblock Deployment specification Symbol
  * @usecase Select all on a diagram by shortcut
@@ -194,6 +200,7 @@ public class DPD_DeploymentSpecification extends UMLTestCase {
         }
     }
     
+
 /**
  * @caseblock Deployment specification Symbol
  * @usecase Select All Similar Elements of a Deployment specification
@@ -205,6 +212,7 @@ public class DPD_DeploymentSpecification extends UMLTestCase {
         }
     }
     
+
 /**
  * @caseblock Deployment specification Symbol
  * @usecase Invert selection of a Deployment specification
@@ -216,6 +224,7 @@ public class DPD_DeploymentSpecification extends UMLTestCase {
         }
     }
     
+
 /**
  * @caseblock Deployment specification Symbol
  * @usecase Hide Children one level of a Deployment specification
@@ -227,6 +236,7 @@ public class DPD_DeploymentSpecification extends UMLTestCase {
         }
     }
     
+
 /**
  * @caseblock Deployment specification Symbol
  * @usecase Hide Children All levels of a Deployment specification
@@ -238,6 +248,7 @@ public class DPD_DeploymentSpecification extends UMLTestCase {
         }
     }
     
+
 /**
  * @caseblock Deployment specification Symbol
  * @usecase Hide Parents one level of a Deployment specification
@@ -249,6 +260,7 @@ public class DPD_DeploymentSpecification extends UMLTestCase {
         }
     }
     
+
 /**
  * @caseblock Deployment specification Symbol
  * @usecase Hide Parents All levels of a Deployment specification
@@ -260,6 +272,7 @@ public class DPD_DeploymentSpecification extends UMLTestCase {
         }
     }   
     
+
 /**
  * @caseblock Deployment specification Symbol
  * @usecase Show Children one level of a Deployment specification
@@ -271,6 +284,7 @@ public class DPD_DeploymentSpecification extends UMLTestCase {
         }
     }   
     
+
 /**
  * @caseblock Deployment specification Symbol
  * @usecase Show Children All levels of a Deployment specification
@@ -282,6 +296,7 @@ public class DPD_DeploymentSpecification extends UMLTestCase {
         }
     }   
     
+
 /**
  * @caseblock Deployment specification Symbol
  * @usecase Show Parents one level of a Deployment specification
@@ -293,6 +308,7 @@ public class DPD_DeploymentSpecification extends UMLTestCase {
         }
     }   
     
+
 /**
  * @caseblock Deployment specification Symbol
  * @usecase Show Parents All levels of a Deployment specification
@@ -304,6 +320,7 @@ public class DPD_DeploymentSpecification extends UMLTestCase {
         }
     }   
     
+
 /**
  * @caseblock Deployment specification Symbol
  * @usecase Border color of a Deployment specification
@@ -314,6 +331,7 @@ public class DPD_DeploymentSpecification extends UMLTestCase {
             fail("Test failed. Details in log file.");
         }
     }   
+
 
 /**
  * @caseblock Deployment specification Symbol
@@ -326,6 +344,7 @@ public class DPD_DeploymentSpecification extends UMLTestCase {
         }
     }   
     
+
 /**
  * @caseblock Deployment specification Symbol
  * @usecase Text font of a Deployment specification
@@ -336,6 +355,7 @@ public class DPD_DeploymentSpecification extends UMLTestCase {
             fail("Test failed. Details in log file.");
         }
     }   
+
 
 /**
  * @caseblock Deployment specification Symbol

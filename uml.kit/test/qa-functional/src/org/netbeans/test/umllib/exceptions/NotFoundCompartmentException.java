@@ -45,13 +45,12 @@
 
 package org.netbeans.test.umllib.exceptions;
 
-/**
- *
- * @author Sergey Petrov
- */
+
+
 public class NotFoundCompartmentException extends NotFoundException{
     
-    /**
+    
+/**
      * Creates a new instance of NotFoundCompartmentException
      * @param message 
      */

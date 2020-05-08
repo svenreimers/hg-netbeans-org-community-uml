@@ -57,10 +57,8 @@ import org.netbeans.modules.uml.core.metamodel.dynamics.IInteraction;
 import org.netbeans.modules.uml.core.metamodel.dynamics.IMessage;
 import org.openide.loaders.DataObjectNotFoundException;
 
-/**
- *
- * @author sp153251
- */
+
+
 public class SQDDiagramTopComponent extends UMLDiagramTopComponent {
 
     private JTrackBar sqdTrackBar;

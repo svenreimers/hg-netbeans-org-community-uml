@@ -52,10 +52,8 @@ import org.netbeans.api.project.Project;
 import org.netbeans.api.project.ProjectInformation;
 import org.netbeans.api.project.ProjectUtils;
 
-/**
- *
- * @author Sheryl
- */
+
+
 public class ProjectCellRenderer extends JLabel implements ListCellRenderer
 {
 

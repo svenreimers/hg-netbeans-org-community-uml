@@ -214,12 +214,13 @@ public class DesignPatternManager implements IDesignPatternManager {
             m_Manager.setPDFactory(m_Factory);
             m_Manager.setCreateSubs(true);
         }
-        // create a data formatter if necessary
+        
         if (m_Formatter == null) {
             m_Formatter = new DataFormatter();
         }
         // create a definition filter if necessary
-      /* 6.2 feature
+      
+/* 6.2 feature
       if (m_DefinitionFilter == null)
       {
          m_DefinitionFilter = new PropertyDefinitionFilter();
@@ -253,7 +254,8 @@ public class DesignPatternManager implements IDesignPatternManager {
         }
         m_AttrsOpsClonedMap.clear();
     }
-    /**
+    
+/**
      * Retrieve the pattern details for this manager
      *
      *
@@ -264,7 +266,8 @@ public class DesignPatternManager implements IDesignPatternManager {
     public IDesignPatternDetails getDetails() {
         return m_Details;
     }
-    /**
+    
+/**
      * Set the pattern details for this manager
      *
      *
@@ -275,19 +278,22 @@ public class DesignPatternManager implements IDesignPatternManager {
     public void setDetails(IDesignPatternDetails newVal) {
         m_Details = newVal;
     }
-    /**
+    
+/**
      * The project tree used
      */
     public IProjectTreeControl getProjectTree() {
         return m_ProjectTree;
     }
-    /**
+    
+/**
      * The project tree used
      */
     public void setProjectTree(IProjectTreeControl newVal) {
         m_ProjectTree = newVal;
     }
-    /**
+    
+/**
      * The scope of where to get the participants for the pattern from - the tree, the drawing
      * area, or do not determine
      *
@@ -298,7 +304,8 @@ public class DesignPatternManager implements IDesignPatternManager {
     public int getParticipantScope() {
         return m_ParticipantScope;
     }
-    /**
+    
+/**
      * See getParticipantScoope
      *
      *
@@ -307,7 +314,8 @@ public class DesignPatternManager implements IDesignPatternManager {
     public void setParticipantScope(int newVal) {
         m_ParticipantScope = newVal;
     }
-    /**
+    
+/**
      * Whether or not the manager should display the GUI associated with the process
      *
      * @param[out] pVal		The flag for whether or not the gui should be displayed
@@ -317,7 +325,8 @@ public class DesignPatternManager implements IDesignPatternManager {
     public boolean getDisplayGUI() {
         return m_DisplayGUI;
     }
-    /**
+    
+/**
      * See getDisplayGUI
      *
      *
@@ -326,13 +335,15 @@ public class DesignPatternManager implements IDesignPatternManager {
     public void setDisplayGUI(boolean newVal) {
         m_DisplayGUI = newVal;
     }
-    /**
+    
+/**
      * The currently known collaboration
      */
     public ICollaboration getCollaboration() {
         return m_Collaboration;
     }
-    /**
+    
+/**
      * The currently known collaboration
      */
     public void setCollaboration(ICollaboration newVal) {
@@ -341,7 +352,8 @@ public class DesignPatternManager implements IDesignPatternManager {
     public void setDialog(JDialog diag) {
         m_Dialog = diag;
     }
-    /**
+    
+/**
      * Validate the information on the passed in details
      *
      *
@@ -438,7 +450,8 @@ public class DesignPatternManager implements IDesignPatternManager {
         }
         return status;
     }
-    /**
+    
+/**
      * Apply ("instantiate") the pattern
      *
      *
@@ -540,7 +553,7 @@ public class DesignPatternManager implements IDesignPatternManager {
                 
                 // now we want to see if the user has told us to do code generation for the stuff
                 // that was just applied
-// IZ 78766 - conover: decision was to not prompt for code gen anymore 
+
 //                if (hr) {
 //                    performCodeGeneration();
 //                }
@@ -553,7 +566,8 @@ public class DesignPatternManager implements IDesignPatternManager {
             }
         }
     }
-    /**
+    
+/**
      * Create any of the participants in the pattern details that do not exist in the project/namespace
      * specified in the pattern details
      *
@@ -653,7 +667,8 @@ public class DesignPatternManager implements IDesignPatternManager {
         }
         return hr;
     }
-    /**
+    
+/**
      * Create any of the participants in the pattern details that do not exist in the project/namespace
      * specified in the pattern details
      *
@@ -737,7 +752,8 @@ public class DesignPatternManager implements IDesignPatternManager {
         }
         return hr;
     }
-    /**
+    
+/**
      * Add the passed in dispatch to the namespace stored on the passed in details
      *
      *
@@ -767,7 +783,8 @@ public class DesignPatternManager implements IDesignPatternManager {
             }
         }
     }
-    /**
+    
+/**
      * Create a new element of the passed in type
      *
      *
@@ -785,7 +802,8 @@ public class DesignPatternManager implements IDesignPatternManager {
         }
         return pDispatch;
     }
-    /**
+    
+/**
      * Get the element from the project that matches the pattern
      *
      *
@@ -816,7 +834,8 @@ public class DesignPatternManager implements IDesignPatternManager {
         }
         return pElement;
     }
-    /**
+    
+/**
      * Clone the participants in the pattern details.  This will create a property element structure
      * exactly like the element that the participant is playing.
      *
@@ -913,7 +932,8 @@ public class DesignPatternManager implements IDesignPatternManager {
         }
         return hr;
     }
-    /**
+    
+/**
      * Clone the property elements.  This will create a property element structure
      * exactly like the element that the participant is playing.
      *
@@ -1015,7 +1035,8 @@ public class DesignPatternManager implements IDesignPatternManager {
         }
         return hr;
     }
-        /*
+        
+/*
         Special processing for a property element that is the "Type" property of an element.  If it is a type,
         then we need to potentially create that type in the current project.  We were originally using the setType2
         method, but that was setting a non-fully qualified name and it was using the preference, so it was
@@ -1085,7 +1106,8 @@ public class DesignPatternManager implements IDesignPatternManager {
             }
         }
     }
-    /**
+    
+/**
      * Create a new property element
      *
      *
@@ -1107,7 +1129,8 @@ public class DesignPatternManager implements IDesignPatternManager {
         }
         return pNewPropEle;
     }
-    /**
+    
+/**
      * Create a new property element that represents an element that is a member of a collection
      *
      *
@@ -1193,7 +1216,8 @@ public class DesignPatternManager implements IDesignPatternManager {
         }
         return pNewPropEle;
     }
-    /**
+    
+/**
      * Special processing for a newly created property element to blank out its element
      * and set its modified flag for itself and any of its sub elements.  This sets up
      * the element so that it will be properly saved when the time comes.
@@ -1225,7 +1249,8 @@ public class DesignPatternManager implements IDesignPatternManager {
             }
         }
     }
-    /**
+    
+/**
      * Special processing for a property element to set its modified flag for itself
      * and any of its sub elements.  This sets up
      * the element so that it will be properly saved when the time comes.
@@ -1256,7 +1281,8 @@ public class DesignPatternManager implements IDesignPatternManager {
             }
         }
     }
-    /**
+    
+/**
      * Create a new property element that represents a simple element.
      *
      *
@@ -1321,7 +1347,8 @@ public class DesignPatternManager implements IDesignPatternManager {
         }
         return pNewPropEle;
     }
-    /**
+    
+/**
      * Determines if the property element is a member of a collection or not.
      *
      *
@@ -1351,7 +1378,8 @@ public class DesignPatternManager implements IDesignPatternManager {
         }
         return bMember;
     }
-    /**
+    
+/**
      * Helper function to find the corresponding prop element in the array of passed in prop elements.
      *
      *
@@ -1460,23 +1488,11 @@ public class DesignPatternManager implements IDesignPatternManager {
         }
         return pFound;
     }
-    /**
-     * Finds the appropriate ends of an association in the prop element structure.
-     * Had to have this as special processing because there was not a way to generically define
-     * how to retrieve the ends.  The structure is different based on the type of association.
-     * And the structure is built differently than all of the other relationships, because the individual
-     * ends are housed in an Ends routine for an association, but for an aggregation, they are
-     * just like any other relationship.
-     *
-     *
-     * @param pPropEle[in]		The association prop element structure
-     * @param pFound[out]		The prop elemements representing the association ends
-     *
-     * @return HRESULT
-     *
-     */
+    
+
     public IPropertyElement[] findAssocEnds(IPropertyElement pPropEle) {
-                /* This is not used in c++, so did not convert it
+                
+/* This is not used in c++, so did not convert it
                  
                 HR_PARM_CHECK(pPropEle && pFound);
            HRESULT hr = S_OK;
@@ -1550,18 +1566,8 @@ public class DesignPatternManager implements IDesignPatternManager {
                  */
         return null;
     }
-    /**
-     * Relationships posed a problem in the generic prop element structure, because the related prop element
-     * could not be determined by name, or value, or format string.  It is based on the model elements on the
-     * ends of the relationship.
-     *
-     *
-     * @param pPropEle[in]		The prop element to find the matching one
-     * @param pPropEles[in]		The structure of prop elements to search for the matching one
-     * @param pFound[out]		The matching one
-     *
-     * @return HRESULT
-     */
+    
+
     public IPropertyElement findMatchingForRel(IPropertyElement pPropEle, IPropertyElement pPropEles) {
         IPropertyElement pFound = null;
         if (pPropEle != null && pPropEles != null) {
@@ -1582,7 +1588,7 @@ public class DesignPatternManager implements IDesignPatternManager {
                 // special processing for an association
                 pFound = findMatchingForAssociation(pPropEle, pPropEles);
             } else {
-                // all other relationships can be handled generically through their definitions
+                
                 IElement pElement1 = getEnd1OfRelationship(pPropEle);
                 IElement pElement2 = getEnd2OfRelationship(pPropEle);
                 // get each end of the relationship (the pattern roles)
@@ -1626,18 +1632,8 @@ public class DesignPatternManager implements IDesignPatternManager {
         }
         return pFound;
     }
-    /**
-     * Associations posed a problem in the generic prop element structure, because the related prop element
-     * could not be determined by name, or value, or format string.  It is based on the model elements on the
-     * ends of the relationship.
-     *
-     *
-     * @param pPropEle[in]		The prop element to find the matching one
-     * @param pPropEles[in]		The structure of prop elements to search for the matching one
-     * @param pFound[out]		The matching one
-     *
-     * @return HRESULT
-     */
+    
+
     public IPropertyElement findMatchingForAssociation(IPropertyElement pPropEle, IPropertyElement pPropEles) {
         IPropertyElement pFound = null;
         if (pPropEle != null && pPropEles != null) {
@@ -1683,7 +1679,8 @@ public class DesignPatternManager implements IDesignPatternManager {
         }
         return pFound;
     }
-    /**
+    
+/**
      * Performs a save of the passed in property element
      *
      *
@@ -1736,7 +1733,8 @@ public class DesignPatternManager implements IDesignPatternManager {
         }
         return hr;
     }
-    /**
+    
+/**
      * Performs a save of the passed in property element (which is a relationship)
      *
      *
@@ -1795,7 +1793,8 @@ public class DesignPatternManager implements IDesignPatternManager {
             }
         }
     }
-    /**
+    
+/**
      * Performs a save of the passed in property element
      *
      *
@@ -1876,7 +1875,8 @@ public class DesignPatternManager implements IDesignPatternManager {
             }
         }
     }
-        /*
+        
+/*
         Special processing for the property elements that represent "Type".  This is figuring out if an
         element representing the "Type" should be created or not.
          */
@@ -1939,7 +1939,8 @@ public class DesignPatternManager implements IDesignPatternManager {
         }
         return pElement;
     }
-        /*
+        
+/*
         Special processing for the property elements that represent "Type".  This is actually doing the
         set on the IElement.
          */
@@ -1978,7 +1979,8 @@ public class DesignPatternManager implements IDesignPatternManager {
             }
         }
     }
-    /**
+    
+/**
      * Performs a save of the passed in property element
      *
      *
@@ -2096,7 +2098,8 @@ public class DesignPatternManager implements IDesignPatternManager {
             }
         }
     }
-    /**
+    
+/**
      * Special processing required to save a property element that is representing a relationship
      *
      *
@@ -2149,7 +2152,8 @@ public class DesignPatternManager implements IDesignPatternManager {
         }
         return hr;
     }
-        /*
+        
+/*
         Special processing if there are elements connected to pattern participants that are not in the
         pattern.
          */
@@ -2179,7 +2183,8 @@ public class DesignPatternManager implements IDesignPatternManager {
         }
         return pNew;
     }
-        /*
+        
+/*
         Special processing if there are elements connected to pattern participants that are not in the
         pattern.
          */
@@ -2249,7 +2254,8 @@ public class DesignPatternManager implements IDesignPatternManager {
             }
         }
     }
-        /*
+        
+/*
         Special processing if there are elements connected to pattern participants that are not in the
         pattern.
          */
@@ -2289,7 +2295,8 @@ public class DesignPatternManager implements IDesignPatternManager {
             }
         }
     }
-        /*
+        
+/*
          */
     public void createRelationship(IPropertyElement pPropEle, IElement pParticipant1, IElement pParticipant2) {
         if (pPropEle != null && pParticipant1 != null && pParticipant2 != null) {
@@ -2383,7 +2390,8 @@ public class DesignPatternManager implements IDesignPatternManager {
             }
         }
     }
-    /**
+    
+/**
      * Because of how the property element structure is set up, the nodes that represent relationships
      * and their ends do not contain the information that is needed for the pattern processing.  This method
      * determines what the end model element is for a particular piece of a relationship.
@@ -2467,7 +2475,8 @@ public class DesignPatternManager implements IDesignPatternManager {
         return pElement;
     }
     
-    /**
+    
+/**
      * Because a lot of the property elements are specified as "on demand" for performance
      * reasons, when cloning the elements, we need these "on demand" nodes to be fully flushed
      * out so that all information is cloned properly.
@@ -2562,7 +2571,8 @@ public class DesignPatternManager implements IDesignPatternManager {
             }
         }
     }
-    /**
+    
+/**
      * Not used
      *
      *
@@ -2597,7 +2607,8 @@ public class DesignPatternManager implements IDesignPatternManager {
         }
         return pMatchingElement;
     }
-    /**
+    
+/**
      * In order to properly display and eventually "instantiate" the pattern, we need
      * to know certain pieces of information.  The design pattern details houses
      * this information.
@@ -2632,7 +2643,8 @@ public class DesignPatternManager implements IDesignPatternManager {
             }
         }
     }
-    /**
+    
+/**
      * Fill in the project for the pattern details
      *
      * @param pDetails[in]			The pattern details to fill in
@@ -2655,7 +2667,8 @@ public class DesignPatternManager implements IDesignPatternManager {
         }
         return hr;
     }
-    /**
+    
+/**
      * Fill in the project in the pattern details based on what is selected in the project tree
      * that this manager knows about.
      *
@@ -2703,7 +2716,8 @@ public class DesignPatternManager implements IDesignPatternManager {
         }
         return hr;
     }
-    /**
+    
+/**
      * Fill in the project in the pattern details based on what is selected in the drawing area
      * that this manager knows about.
      *
@@ -2752,7 +2766,8 @@ public class DesignPatternManager implements IDesignPatternManager {
         }
         return hr;
     }
-    /**
+    
+/**
      * Fill in the project in the pattern details based on what is selected in the drawing area
      * that this manager knows about.
      *
@@ -2768,7 +2783,8 @@ public class DesignPatternManager implements IDesignPatternManager {
         }
         return hr;
     }
-    /**
+    
+/**
      * Fill in the namespace for the pattern details
      *
      * @param pDetails[in]			The pattern details to fill in
@@ -2824,7 +2840,8 @@ public class DesignPatternManager implements IDesignPatternManager {
         }
         return hr;
     }
-    /**
+    
+/**
      * Fill in the pattern roles for the pattern details
      *
      * @param pDetails[in]			The pattern details to fill in
@@ -2870,7 +2887,8 @@ public class DesignPatternManager implements IDesignPatternManager {
         }
         return hr;
     }
-    /**
+    
+/**
      * Create a DesignPatternRole object to house the information about a particular
      * role in a pattern
      *
@@ -2948,7 +2966,8 @@ public class DesignPatternManager implements IDesignPatternManager {
         }
         return pRole;
     }
-    /**
+    
+/**
      * Fill in the pattern participants in the pattern details
      *
      * @param pDetails[in]			The pattern details to fill in
@@ -2976,7 +2995,8 @@ public class DesignPatternManager implements IDesignPatternManager {
         }
         return hr;
     }
-    /**
+    
+/**
      * Fill in the pattern participants in the pattern details based on what is selected in the
      * project tree that this manager knows about
      *
@@ -3011,7 +3031,8 @@ public class DesignPatternManager implements IDesignPatternManager {
         }
         return hr;
     }
-    /**
+    
+/**
      * Fill in the pattern participants in the pattern details based on what is selected in the
      * drawing area that this manager knows about
      *
@@ -3051,7 +3072,8 @@ public class DesignPatternManager implements IDesignPatternManager {
         }
         return hr;
     }
-    /**
+    
+/**
      * Fill in the pattern participants in the pattern details based on what is selected in the
      * drawing area
      *
@@ -3064,7 +3086,8 @@ public class DesignPatternManager implements IDesignPatternManager {
         if (pDetails != null) {
             // right now we are not being smart about the compartment
             buildParticipantsFromPresentation(pDetails);
-                        /*  This was commented out in 6.1 c++ code as well
+                        
+/*  This was commented out in 6.1 c++ code as well
                         if (m_Compartment)
                         {
                                 IElement > pElement;
@@ -3117,7 +3140,8 @@ public class DesignPatternManager implements IDesignPatternManager {
         }
         return true;
     }
-    /**
+    
+/**
      * We are going to keep a map of participant names based on the role that they
      * will fill.  We are trying to make a match on the first role whose
      * participant matches the type of the element that we have passed in.
@@ -3188,7 +3212,8 @@ public class DesignPatternManager implements IDesignPatternManager {
             }
         }
     }
-    /**
+    
+/**
      * Common method to determine if the drag/drop should be allowed from the design center.
      *
      *
@@ -3272,7 +3297,8 @@ public class DesignPatternManager implements IDesignPatternManager {
 //        }
 //        return pCollab;
 //    }
-    /**
+    
+/**
      * Helper method to determine if the passed in diagram is owned by the passed in project.  This will
      * help in determining whether to draw the collaboration being dropped or apply it.
      *
@@ -3380,7 +3406,8 @@ public class DesignPatternManager implements IDesignPatternManager {
 //        }
 //        return bOwned;
 //    }
-    /**
+    
+/**
      * Determines whether or not the passed in element fulfills all roles of the pattern.  This will
      * determine whether or not to display the gui associated with applying a pattern.
      *
@@ -3419,7 +3446,8 @@ public class DesignPatternManager implements IDesignPatternManager {
         }
         return bFulfill;
     }
-    /**
+    
+/**
      * Determines whether or not the pattern details contains the information necessary to apply the pattern.
      * This will determine whether or not to display the gui associated with applying a pattern.
      *
@@ -3457,7 +3485,8 @@ public class DesignPatternManager implements IDesignPatternManager {
         }
         return bFulfill;
     }
-    /**
+    
+/**
      * Promote the pattern
      *
      *
@@ -3636,7 +3665,8 @@ public class DesignPatternManager implements IDesignPatternManager {
             }
         }
     }
-    /**
+    
+/**
      * Create a diagram for a pattern that has been
      * applied.
      *
@@ -3686,7 +3716,8 @@ public class DesignPatternManager implements IDesignPatternManager {
         }
         return hr;
     }
-    /**
+    
+/**
      * Adds a hidden tagged value to the passed in element for future use of updating patterns
      * and ensuring consistency
      *
@@ -3754,7 +3785,8 @@ public class DesignPatternManager implements IDesignPatternManager {
             }
         }
     }
-    /**
+    
+/**
      * Figures out the elements that are housed within the pattern details and puts them into
      * one array.  They are separated by role id within the details and we sometimes needed them
      * all at once.
@@ -3800,7 +3832,8 @@ public class DesignPatternManager implements IDesignPatternManager {
         }
         return pOutElements;
     }
-    /**
+    
+/**
      * Helper routine to get the ends of the relationship stored on the passed in property element.
      *
      *
@@ -3877,7 +3910,8 @@ public class DesignPatternManager implements IDesignPatternManager {
         }
         return pElement;
     }
-    /**
+    
+/**
      * Helper function to determine if the pattern details contains an instance that
      * matches the passed in role id.
      *
@@ -3924,7 +3958,8 @@ public class DesignPatternManager implements IDesignPatternManager {
         }
         return bSame;
     }
-    /**
+    
+/**
      * Helper function to find the corresponding prop element in the array of passed in prop elements
      * based on the property element's format string
      *
@@ -3948,7 +3983,7 @@ public class DesignPatternManager implements IDesignPatternManager {
                         Node pNode = pElement.getNode();
                         if (pNode != null) {
                             // calling formatNode so that it is language/mode independent
-                            // this will only work if the data formatter has a predefined xsl script
+                            
                             // for the element type
                             // right now we are only using this on attrs/ops and they have an xsl script defined
                             String str = m_Formatter.formatNode(pNode);
@@ -3984,7 +4019,8 @@ public class DesignPatternManager implements IDesignPatternManager {
         }
         return pFound;
     }
-    /**
+    
+/**
      * Retrieves the patterns in the passed in project
      *
      * @param pProject[in]		The project to retrieve the patterns
@@ -4005,18 +4041,8 @@ public class DesignPatternManager implements IDesignPatternManager {
         }
         return pElements;
     }
-    /**
-     * Helper function to find the corresponding prop element in the array of passed in prop elements.
-     * What we are looking for is a participant in an association end, which cannot be obtained in a
-     * generic way, so we are special casing this one.
-     *
-     *
-     * @param pPropEle[in]			The prop element to find a match for
-     * @param pPropEles[in]			The prop elements to search
-     * @param pFound[out]			The matching property element
-     *
-     * @return HRESULT
-     */
+    
+
     public IPropertyElement findMatchingPropertyElementParticipant(IPropertyElement pPropEle, IPropertyElement pPropEleOrig) {
         IPropertyElement pFound = null;
         if (pPropEle != null && pPropEleOrig != null) {
@@ -4054,7 +4080,8 @@ public class DesignPatternManager implements IDesignPatternManager {
         }
         return pFound;
     }
-    /**
+    
+/**
      * Call to the event dispatcher to fire a pre apply event.
      *
      *
@@ -4066,7 +4093,8 @@ public class DesignPatternManager implements IDesignPatternManager {
             m_EventDispatcher.firePreApply(m_Details, payload );
         }
     }
-    /**
+    
+/**
      * Call to the event dispatcher to fire a post apply event.
      *
      *
@@ -4078,7 +4106,8 @@ public class DesignPatternManager implements IDesignPatternManager {
             m_EventDispatcher.firePostApply(m_Details, payload );
         }
     }
-    /**
+    
+/**
      * Since we turned off the events to perform the apply, we now need to refresh the
      * diagrams (presentation elements) that were affected by the apply
      *
@@ -4106,7 +4135,8 @@ public class DesignPatternManager implements IDesignPatternManager {
 //            }
 //        }
 //    }
-    /**
+    
+/**
      * Since we turned off the events to perform the apply, we now need to ask the user
      * if they would like to perform code generation on the elements that were affected
      * by the apply.
@@ -4238,7 +4268,8 @@ public class DesignPatternManager implements IDesignPatternManager {
         }
         return bExists;
     }
-    /**
+    
+/**
      * Determines if the namespace that we are taking the pattern from can be modified.
      * Is it versioned and checked out or not versioned, but not read-only.
      *
@@ -4262,7 +4293,8 @@ public class DesignPatternManager implements IDesignPatternManager {
         }
         return hr;
     }
-    /**
+    
+/**
      * Determines if the namespace that we are putting the pattern into can be modified.
      * Is it versioned and checked out or not versioned, but not read-only.
      *
@@ -4284,7 +4316,8 @@ public class DesignPatternManager implements IDesignPatternManager {
         }
         return hr;
     }
-    /**
+    
+/**
      * Determines if the passed in namespace can be modified.
      * Is it versioned and checked out or not versioned, but not read-only.
      *
@@ -4333,7 +4366,8 @@ public class DesignPatternManager implements IDesignPatternManager {
         }
         return hr;
     }
-    /**
+    
+/**
      * Helper method to display a dialog
      *
      *

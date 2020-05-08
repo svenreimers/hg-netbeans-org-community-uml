@@ -86,10 +86,8 @@ import org.netbeans.modules.uml.drawingarea.view.UMLWidget.UMLWidgetIDString;
 import org.openide.util.Exceptions;
 import org.openide.util.Lookup;
 
-/**
- *
- * @author Jyothi
- */
+
+
 public class ContainerWidget extends Widget
 {
     public final static String CHILDREN_CHANGED = "children-changed";
@@ -401,7 +399,8 @@ public class ContainerWidget extends Widget
         return true;
     }
     
-    /**
+    
+/**
      * Test if a widget is fully with in the bounds of the container widget.
      * 
      * @param widget The widget to test

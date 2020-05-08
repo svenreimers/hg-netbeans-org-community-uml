@@ -42,20 +42,16 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : IInvocationNode.java
- * Created on : Sep 17, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.metamodel.common.commonactivities;
 
 import org.netbeans.modules.uml.core.metamodel.core.foundation.IConstraint;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
-/**
- * @author Aztec
- */
+
+
 public interface IInvocationNode extends IActivityNode
 {
     public ETList<IConstraint> getLocalPostConditions();

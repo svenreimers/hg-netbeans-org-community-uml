@@ -64,10 +64,8 @@ import org.netbeans.modules.uml.ui.support.commonresources.CommonResourceManager
 import org.openide.util.NbBundle;
 
 
-/**
- *
- * @author Sheryl
- */
+
+
 public class ActivityData extends ClassData
 {
     

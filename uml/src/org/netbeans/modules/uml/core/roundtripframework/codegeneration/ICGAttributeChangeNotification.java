@@ -48,22 +48,26 @@ import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure
 
 public interface ICGAttributeChangeNotification extends ICGSingleClassChangeNotification
 {
-	/**
+	
+/**
 	 * Gets / Sets Old Attribute
 	*/
 	public IAttribute getOldAttribute();
 
-	/**
+	
+/**
 	 * Gets / Sets Old Attribute
 	*/
 	public void setOldAttribute( IAttribute value );
 
-	/**
+	
+/**
 	 * Gets / Sets New Attribute
 	*/
 	public IAttribute getNewAttribute();
 
-	/**
+	
+/**
 	 * Gets / Sets New Attribute
 	*/
 	public void setNewAttribute( IAttribute value );

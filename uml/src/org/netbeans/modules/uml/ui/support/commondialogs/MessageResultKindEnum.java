@@ -43,24 +43,12 @@
  */
 
 
-/*
- *
- * Created on Jul 1, 2003
- * @author Trey Spiva
- */
+
+
 package org.netbeans.modules.uml.ui.support.commondialogs;
 
-/**
- * Specifies the valid message dialog result.  These can be used when displaying
- * any of the message dialogs.
- *
- * @see IQuestionDialog
- * @see IPickListDialog
- * @see IPreferenceQuestionDialog
- *
- *
- * @author Trey Spiva
- */
+
+
 public interface MessageResultKindEnum
 {
    public final static int SQDRK_RESULT_ABORT    = 0;

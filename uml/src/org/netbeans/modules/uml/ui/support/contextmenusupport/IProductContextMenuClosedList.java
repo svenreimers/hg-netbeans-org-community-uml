@@ -47,22 +47,26 @@ package org.netbeans.modules.uml.ui.support.contextmenusupport;
 
 public interface IProductContextMenuClosedList
 {
-	/**
+	
+/**
 	 * Contains the number of IProductContextMenuClosed objects in the collection
 	*/
 	public int getCount();
 
-	/**
+	
+/**
 	 * Adds a IProductContextMenuItem to the collection
 	*/
 	public long add( IProductContextMenuClosed tag );
 
-	/**
+	
+/**
 	 * Retrieves a specific IProductContextMenuClosed from the collection
 	*/
 	public IProductContextMenuClosed item( int index );
 
-	/**
+	
+/**
 	 * Remove a specific IProductContextMenuClosed from the collection
 	*/
 	public long remove( int index );

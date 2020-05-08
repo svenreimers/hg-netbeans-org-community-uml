@@ -56,7 +56,8 @@ import org.netbeans.api.queries.FileEncodingQuery;
 public class REIntegrationUtil
 {
 
-    /** 
+    
+/** 
      */
     public static String getEncoding(String fileName)
     {   

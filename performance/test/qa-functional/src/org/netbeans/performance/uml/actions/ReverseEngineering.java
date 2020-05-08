@@ -60,17 +60,15 @@ import org.netbeans.modules.performance.utilities.CommonUtilities;
 import org.netbeans.modules.performance.utilities.PerformanceTestCase;
 import org.netbeans.modules.project.ui.test.ProjectSupport;
 
-/**
- * Test Reverse Engineering 
- *
- * @author  rashid@netbeans.org
- */
+
+
 public class ReverseEngineering extends PerformanceTestCase {
 
     private static String testProjectName = "jEdit";
     private static long suffix;
 
-    /**
+    
+/**
      * Creates a new instance of ReverseEngineering
      * @param testName the name of the test
      */
@@ -80,7 +78,8 @@ public class ReverseEngineering extends PerformanceTestCase {
         WAIT_AFTER_OPEN = 4000;
     }
 
-    /**
+    
+/**
      * Creates a new instance of ReverseEngineering
      * @param testName the name of the test
      * @param performanceDataName measured values will be saved under this name

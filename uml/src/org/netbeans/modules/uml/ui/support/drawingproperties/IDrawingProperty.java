@@ -43,6 +43,7 @@
  */
 
 
+
 /*
  * Created on Jun 11, 2003
  *
@@ -52,11 +53,8 @@ package org.netbeans.modules.uml.ui.support.drawingproperties;
 
 import org.netbeans.modules.uml.common.generics.ETPairT;
 
-/**
- * @author sumitabhk
- *
- *
- */
+
+
 public interface IDrawingProperty
 {
 	public IDrawingPropertyProvider getDrawingPropertyProvider();

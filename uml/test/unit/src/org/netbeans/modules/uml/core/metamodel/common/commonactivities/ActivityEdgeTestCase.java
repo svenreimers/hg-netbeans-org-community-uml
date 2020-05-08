@@ -50,6 +50,7 @@ import java.util.Iterator;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.FactoryRetriever;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.IValueSpecification;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
+
 /**
  * Test cases for ActivityEdge.
  */
@@ -64,7 +65,8 @@ public class ActivityEdgeTestCase extends AbstractUMLTestCase
 
     //private IActivityEdge activityEdge;
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see junit.framework.TestCase#setUp()
      */
     protected void setUp() throws Exception
@@ -76,7 +78,8 @@ public class ActivityEdgeTestCase extends AbstractUMLTestCase
 		project.addElement(edge);
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see junit.framework.TestCase#tearDown()
      */
     protected void tearDown() throws Exception

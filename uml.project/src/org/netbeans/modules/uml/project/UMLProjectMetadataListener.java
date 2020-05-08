@@ -42,6 +42,7 @@
  * made subject to such option by the copyright holder.
  */
 
+
 /*
  * UMLProjectMetadataListener.java
  *
@@ -56,10 +57,8 @@ import java.beans.PropertyChangeListener;
 import org.netbeans.spi.project.support.ant.AntProjectEvent;
 import org.netbeans.spi.project.support.ant.AntProjectListener;
 
-/**
- *
- * @author Administrator
- */
+
+
 public class UMLProjectMetadataListener implements PropertyChangeListener,AntProjectListener
 {
    private UMLProject mAssociatedProject = null;
@@ -70,7 +69,8 @@ public class UMLProjectMetadataListener implements PropertyChangeListener,AntPro
       mAssociatedProject = project;
    }
 
-   /**
+   
+/**
     * React to changes originating from customizer modification to project metadata
     */
     public void propertyChange(PropertyChangeEvent evt)
@@ -81,7 +81,8 @@ public class UMLProjectMetadataListener implements PropertyChangeListener,AntPro
        }
     }
     
-    /**
+    
+/**
      * React to changes originating from customizer modification to project metadata
      */
     public void configurationXmlChanged(AntProjectEvent ev)

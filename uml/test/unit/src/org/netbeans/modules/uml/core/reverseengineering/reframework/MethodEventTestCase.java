@@ -53,6 +53,7 @@ import org.netbeans.modules.uml.core.AbstractUMLTestCase;
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation;
 import org.netbeans.modules.uml.core.support.umlsupport.XMLManip;
 
+
 /**
  * Test cases for MethodEvent.
  */
@@ -66,7 +67,8 @@ public class MethodEventTestCase extends AbstractUMLTestCase
     private MethodEvent me;
     private String      typeID;
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see junit.framework.TestCase#setUp()
      */
     protected void setUp() throws Exception

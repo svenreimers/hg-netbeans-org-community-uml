@@ -47,9 +47,8 @@ import java.awt.*;
 import java.awt.geom.Rectangle2D;
 import java.util.logging.Logger;
 
-/**
- * @author David Kaspar
- */
+
+
 public final class GeomUtil {
 
     public static final Logger LOG = Logger.getLogger ("org.netbeans.api.visual"); // NOI18N 
@@ -59,7 +58,8 @@ public final class GeomUtil {
     private GeomUtil () {
     }
 
-    /**
+    
+/**
      * Rounds Rectangle2D to Rectangle.
      * @param rectangle the rectangle2D
      * @return the rectangle
@@ -72,7 +72,8 @@ public final class GeomUtil {
         return new Rectangle (x1, y1, x2 - x1, y2 - y1);
     }
 
-    /**
+    
+/**
      * Returns a center point of a rectangle.
      * @param rectangle the rectangle
      * @return the center point
@@ -81,7 +82,8 @@ public final class GeomUtil {
         return new Point (rectangle.x + rectangle.width / 2, rectangle.y + rectangle.height / 2);
     }
 
-    /**
+    
+/**
      * Returns a x-axis center of rectangle.
      * @param rectangle the rectangle
      * @return the x-axis center
@@ -90,7 +92,8 @@ public final class GeomUtil {
         return rectangle.x + rectangle.width / 2;
     }
 
-    /**
+    
+/**
      * Returns a y-axis center of rectangle.
      * @param rectangle the rectangle
      * @return the y-axis center
@@ -99,7 +102,8 @@ public final class GeomUtil {
         return rectangle.y + rectangle.height / 2;
     }
 
-    /**
+    
+/**
      * Returns a square distance of two points.
      * @param p1 the first point
      * @param p2 the second point
@@ -111,7 +115,8 @@ public final class GeomUtil {
         return Math.sqrt (w * w + h * h);
     }
 
-    /**
+    
+/**
      * Returns whether two objects are equal
      * @param o1 the first object; cound be null
      * @param o2 the second object; cound be null

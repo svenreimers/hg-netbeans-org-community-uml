@@ -46,22 +46,26 @@ package org.netbeans.modules.uml.core.metamodel.dynamics;
 
 public interface IExecutionOccurrence extends IInteractionFragment
 {
-	/**
+	
+/**
 	 * References the Event that designates the finish of the Action.
 	*/
 	public IEventOccurrence getFinish();
 
-	/**
+	
+/**
 	 * References the Event that designates the finish of the Action.
 	*/
 	public void setFinish( IEventOccurrence value );
 
-	/**
+	
+/**
 	 * References the Event that designates the start of the Action.
 	*/
 	public IEventOccurrence getStart();
 
-	/**
+	
+/**
 	 * References the Event that designates the start of the Action.
 	*/
 	public void setStart( IEventOccurrence value );

@@ -45,10 +45,8 @@
 
 package org.netbeans.modules.uml.core.metamodel.core.foundation;
 
-/**
- * @author sumitabhk
- *
- */
+
+
 public interface IBackPointer <Type>
 {
 	//This method could add or remove a reference, so anyone using this

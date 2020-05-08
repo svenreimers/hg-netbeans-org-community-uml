@@ -43,6 +43,7 @@
  */
 
 
+
 /*
  * Created on Jun 9, 2003
  *
@@ -56,10 +57,8 @@ import javax.swing.AbstractCellEditor;
 import javax.swing.JTable;
 import javax.swing.table.TableCellEditor;
 
-/**
- * @author sumitabhk
- *
- */
+
+
 public class ReplaceTableCellEditor extends AbstractCellEditor implements
 		 TableCellEditor
 {
@@ -79,7 +78,8 @@ public class ReplaceTableCellEditor extends AbstractCellEditor implements
 		m_UI = ui;
 	}
 
-	/**
+	
+/**
 	 * TreeTableCellEditor implementation. Component returned is the
 	 * JTree.
 	 */
@@ -90,7 +90,8 @@ public class ReplaceTableCellEditor extends AbstractCellEditor implements
 	{
 		return null;
 	}
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see javax.swing.CellEditor#getCellEditorValue()
 	 */
 	public Object getCellEditorValue()

@@ -97,7 +97,8 @@ public class Derivation extends Dependency implements IDerivation
         classifier.setDerivation(this);
     }
     
-    /**
+    
+/**
      * Establishes the appropriate XML elements for this UML type.
      *
      * [in] The document where this element will reside

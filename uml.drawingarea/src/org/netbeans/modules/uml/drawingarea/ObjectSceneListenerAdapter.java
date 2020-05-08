@@ -48,10 +48,8 @@ import org.netbeans.api.visual.model.ObjectSceneEvent;
 import org.netbeans.api.visual.model.ObjectSceneListener;
 import org.netbeans.api.visual.model.ObjectState;
 
-/**
- *
- * @author treyspiva
- */
+
+
 public abstract class ObjectSceneListenerAdapter implements ObjectSceneListener
 {
 

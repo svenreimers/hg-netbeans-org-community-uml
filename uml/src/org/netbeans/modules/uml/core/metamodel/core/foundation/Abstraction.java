@@ -48,10 +48,8 @@ package org.netbeans.modules.uml.core.metamodel.core.foundation;
 import org.dom4j.Document;
 import org.dom4j.Node;
 
-/**
- * @author sumitabhk
- *
- */
+
+
 public class Abstraction extends Dependency implements IAbstraction{
 
 	/**
@@ -61,7 +59,8 @@ public class Abstraction extends Dependency implements IAbstraction{
 		super();
 	}
 
-	/**
+	
+/**
 	 *
 	 * Retrieves the expression that states the abstraction relationship
 	 * between the supplier and the client. In some cases, such as Derivation, it is usually
@@ -80,7 +79,8 @@ public class Abstraction extends Dependency implements IAbstraction{
 		return getSpecificElement( "UML:Abstraction.mapping", dummy, IExpression.class);
 	}
 
-	/**
+	
+/**
 	 *
 	 * Sets the mapping expression.
 	 *
@@ -96,7 +96,8 @@ public class Abstraction extends Dependency implements IAbstraction{
 		
 	}
 
-	/**
+	
+/**
 	 * Establishes the appropriate XML elements for this UML type.
 	 *
 	 * [in] The document where this element will reside

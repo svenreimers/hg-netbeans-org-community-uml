@@ -44,6 +44,7 @@
 
 
 
+
 /*
  * Created on Oct 27, 2003
  *
@@ -56,10 +57,8 @@ import java.io.File;
 import org.dom4j.Document;
 import org.netbeans.modules.uml.core.support.umlsupport.XMLManip;
 import org.netbeans.modules.uml.core.workspacemanagement.WorkspaceManagementException;
-/**
- * @author aztec
- *
- */
+
+
 public class QueryManagerTestCase extends AbstractUMLTestCase
 {
     QueryManager queryMan = null;

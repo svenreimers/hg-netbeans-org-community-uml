@@ -45,10 +45,8 @@
 
 package org.netbeans.modules.uml.core.support.umlmessagingcore;
 
-/**
- * @author sumitabhk
- *
- */
+
+
 public class ThermCtrl
 {
 	// The busy ctrl interface

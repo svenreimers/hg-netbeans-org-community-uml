@@ -47,12 +47,14 @@ package org.netbeans.modules.uml.core.metamodel.core.foundation;
 
 public interface IPresentationReference extends IReference
 {
-	/**
+	
+/**
 	 * The PresentationElement that is being referred to.
 	*/
 	public IPresentationElement getPresentationElement();
 
-	/**
+	
+/**
 	 * The PresentationElement that is being referred to.
 	*/
 	public void setPresentationElement( IPresentationElement value );

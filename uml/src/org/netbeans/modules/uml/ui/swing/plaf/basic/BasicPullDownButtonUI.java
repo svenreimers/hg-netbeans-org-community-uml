@@ -77,16 +77,15 @@ import org.netbeans.modules.uml.ui.swing.plaf.PullDownButtonUI;
 import org.netbeans.modules.uml.ui.swing.pulldownbutton.IPulldownButtonInvoker;
 import org.netbeans.modules.uml.ui.swing.pulldownbutton.JPullDownButton;
 
-/**
- * 
- * @author Trey Spiva
- */
+
+
 public class BasicPullDownButtonUI extends PullDownButtonUI
 {
    // Shared UI object
    private final static BasicPullDownButtonUI buttonUI = new BasicPullDownButtonUI();
 
-   /* These rectangles/insets are allocated once for all 
+   
+/* These rectangles/insets are allocated once for all 
     * ButtonUI.paint() calls.  Re-using rectangles rather than 
     * allocating them in each paint call substantially reduced the time
     * it took paint to run.  Obviously, this method can't be re-entered.
@@ -152,7 +151,8 @@ public class BasicPullDownButtonUI extends PullDownButtonUI
          defaultTextShiftOffset = ((Integer)UIManager.get(pp + "textShiftOffset")).intValue();
 
          // next four lines part of optimized component defaults installation
-         /* defaultForeground = UIManager.getColor(pp + "foreground");
+         
+/* defaultForeground = UIManager.getColor(pp + "foreground");
           defaultBackground = UIManager.getColor(pp + "background");
           defaultFont = UIManager.getFont(pp + "font");
           defaultBorder = UIManager.getBorder(pp + "border");*/
@@ -177,7 +177,8 @@ public class BasicPullDownButtonUI extends PullDownButtonUI
 
       // *** begin optimized defaults install ***
 
-      /* Color currentForeground = b.getForeground();
+      
+/* Color currentForeground = b.getForeground();
          Color currentBackground = b.getBackground();
          Font currentFont = b.getFont();
          Border currentBorder = b.getBorder();
@@ -291,7 +292,8 @@ public class BasicPullDownButtonUI extends PullDownButtonUI
    // Popup Control Methods
    //**************************************************
       
-   /**
+   
+/**
     * Tells if the popup is visible or not.
     */
    public boolean isPopupVisible() 
@@ -309,7 +311,8 @@ public class BasicPullDownButtonUI extends PullDownButtonUI
       return retVal;
    }
 
-   /**
+   
+/**
     * Hides the popup.
     */
    public void setPopupVisible( JPullDownButton c, boolean v ) 
@@ -324,7 +327,8 @@ public class BasicPullDownButtonUI extends PullDownButtonUI
       }
    }
    
-   /**
+   
+/**
     * Implementation of ComboPopup.show().
     */
    public void show() 
@@ -340,7 +344,8 @@ public class BasicPullDownButtonUI extends PullDownButtonUI
     }
 
    
-   /**
+   
+/**
     * Implementation of ComboPopup.hide().
     */
    public void hide() 
@@ -465,7 +470,8 @@ public class BasicPullDownButtonUI extends PullDownButtonUI
       return UIManager.getColor(getPropertyPrefix() + "focus");
    }
    
-   /**
+   
+/**
     * A listener to be registered upon the combo box
     * (<em>not</em> its popup menu)
     * to handle mouse events
@@ -488,7 +494,8 @@ public class BasicPullDownButtonUI extends PullDownButtonUI
     */
    protected class InvocationMouseHandler extends MouseAdapter
    {
-      /**
+      
+/**
        * Responds to mouse-pressed events on the combo box.
        *
        * @param e the mouse-press event to be handled
@@ -497,7 +504,8 @@ public class BasicPullDownButtonUI extends PullDownButtonUI
       {
       }
 
-      /**
+      
+/**
        * Responds to the user terminating
        * a click or drag that began on the combo box.
        *
@@ -509,7 +517,8 @@ public class BasicPullDownButtonUI extends PullDownButtonUI
       }
    }
 
-   /**
+   
+/**
     * 
     */
    protected void togglePopup()
@@ -536,7 +545,8 @@ public class BasicPullDownButtonUI extends PullDownButtonUI
    // BannerMsg
    //**************************************************
 
-   /**
+   
+/**
     * Calculate the placement and size of the popup portion of the combo box based
     * on the combo box location and the enclosing screen bounds. If
     * no transformations are required, then the returned rectangle will
@@ -748,7 +758,8 @@ public class BasicPullDownButtonUI extends PullDownButtonUI
 
    }
 
-   /**
+   
+/**
     * As of Java 2 platform v 1.4 this method should not be used or overriden.
     * Use the paintText method which takes the AbstractButton argument.
     */
@@ -776,7 +787,8 @@ public class BasicPullDownButtonUI extends PullDownButtonUI
       }
    }
 
-   /**
+   
+/**
     * Method which renders the text of the current button.
     * <p>
     * @param g Graphics context

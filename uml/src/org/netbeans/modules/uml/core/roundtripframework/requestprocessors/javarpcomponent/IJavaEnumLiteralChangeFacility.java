@@ -42,6 +42,7 @@
  * made subject to such option by the copyright holder.
  */
 
+
 /*
  * IJavaEnumLiteralChangeFacility.java
  *
@@ -55,10 +56,8 @@ import org.netbeans.modules.uml.core.metamodel.core.constructs.IEnumerationLiter
 import org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ILanguage;
 import org.netbeans.modules.uml.core.roundtripframework.IEnumLiteralChangeFacility;
 
-/**
- *
- * @author Administrator
- */
+
+
 public interface IJavaEnumLiteralChangeFacility extends IEnumLiteralChangeFacility
 {
    public void added(IEnumerationLiteral attr);

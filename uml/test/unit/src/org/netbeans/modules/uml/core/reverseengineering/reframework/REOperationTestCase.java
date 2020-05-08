@@ -57,6 +57,7 @@ import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure
 import org.netbeans.modules.uml.core.support.umlsupport.IStrings;
 import org.netbeans.modules.uml.core.support.umlsupport.XMLManip;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
+
 /**
  * Test cases for REOperation.
  */
@@ -70,7 +71,8 @@ public class REOperationTestCase extends AbstractRETestCase
     private REOperation reo;
     private IOperation  op;
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see junit.framework.TestCase#setUp()
      */
     protected void setUp() throws Exception

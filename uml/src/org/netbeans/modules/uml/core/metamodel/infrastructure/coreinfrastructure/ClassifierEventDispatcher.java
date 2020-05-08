@@ -94,7 +94,8 @@ public class ClassifierEventDispatcher extends EventDispatcher
     }
 
 
-    /**
+    
+/**
      * Fired whenever an existing parameter is about to be removed from the behavioral
      * feature's list of parameters.
      *
@@ -132,7 +133,8 @@ public class ClassifierEventDispatcher extends EventDispatcher
         return proceed; 
     }
 
-    /**
+    
+/**
      * Fired whenever an existing parameter was just removed from the behavioral
      * feature's list of parameters.
      *
@@ -155,7 +157,8 @@ public class ClassifierEventDispatcher extends EventDispatcher
         }
     }
 
-    /**
+    
+/**
      * Fired whenever the abstract flag on the behavioral feature is about to be
      * modified.
      *
@@ -193,7 +196,8 @@ public class ClassifierEventDispatcher extends EventDispatcher
         return proceed;      
     }
 
-    /**
+    
+/**
      * Fired whenever the abstract flag on the behavioral feature has been modified.
      *
      * @param feature[in] 
@@ -266,7 +270,8 @@ public class ClassifierEventDispatcher extends EventDispatcher
         }
     }
 
-    /**
+    
+/**
      * Fired whenever the default expression for the parameter
      * is about to change.
      *
@@ -304,7 +309,8 @@ public class ClassifierEventDispatcher extends EventDispatcher
         return proceed; 
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifierEventDispatcher#fireDefaultExpModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IParameter, org.netbeans.modules.uml.core.eventframework.IEventPayload)
      */
     public void fireDefaultExpModified(IParameter feature,
@@ -324,7 +330,8 @@ public class ClassifierEventDispatcher extends EventDispatcher
         }
     }
 
-     /**
+     
+/**
       * Fired whenever the default expression's body property for the
       * parameter is about to change.
       *
@@ -362,7 +369,8 @@ public class ClassifierEventDispatcher extends EventDispatcher
         return proceed;  
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifierEventDispatcher#fireDefaultExpBodyModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IParameter, org.netbeans.modules.uml.core.eventframework.IEventPayload)
      */
     public void fireDefaultExpBodyModified(IParameter feature,
@@ -382,7 +390,8 @@ public class ClassifierEventDispatcher extends EventDispatcher
         }
     }
 
-    /**
+    
+/**
      * Fired whenever the default expression's language property for the
      * parameter is about to change.
      *
@@ -421,7 +430,8 @@ public class ClassifierEventDispatcher extends EventDispatcher
         return proceed;
     }
 
-    /**
+    
+/**
      * Fired whenever the default expression's language property for the
      * parameter has changed.
      *
@@ -446,7 +456,8 @@ public class ClassifierEventDispatcher extends EventDispatcher
         }
     }
 
-    /**
+    
+/**
      * Fired whenever the direction value of the parameter is about to change.
      *
      * @param feature[in] 
@@ -484,7 +495,8 @@ public class ClassifierEventDispatcher extends EventDispatcher
         return proceed; 
     }
 
-    /**
+    
+/**
      * Fired whenever the direction value of the parameter has changed
      *
      * @param feature[in] 
@@ -505,7 +517,8 @@ public class ClassifierEventDispatcher extends EventDispatcher
             m_ParmSink.notifyListeners(directionModified);
         }
     }
-    /**
+    
+/**
      * Fired whenever the Multiplicity object on a particular element is about
      * to be modified.
      *
@@ -544,7 +557,8 @@ public class ClassifierEventDispatcher extends EventDispatcher
         return proceed;  
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifierEventDispatcher#fireMultiplicityModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElement, org.netbeans.modules.uml.core.eventframework.IEventPayload)
      */
     public void fireMultiplicityModified(
@@ -565,7 +579,8 @@ public class ClassifierEventDispatcher extends EventDispatcher
         }
     }
     
-    /**
+    
+/**
      * Fired whenever the type on a particular element is about to be modifed.
      *
      * @param element[in] 
@@ -603,7 +618,8 @@ public class ClassifierEventDispatcher extends EventDispatcher
         return proceed;  
     }
 
-    /**
+    
+/**
      * Fired whenever the type flag on a particular element was just modified.
      *
      * @param element[in] 
@@ -626,7 +642,8 @@ public class ClassifierEventDispatcher extends EventDispatcher
 
     }
 
-     /**
+     
+/**
      * Fired whenever the lower property on the passed-in range is about
      * to be modified.
      *
@@ -670,7 +687,8 @@ public class ClassifierEventDispatcher extends EventDispatcher
         }
         return proceed;
     }
-    /**
+    
+/**
      * Fired whenever the lower property on the passed-in range was modified.
      *
      * @param element[in] 
@@ -704,7 +722,8 @@ public class ClassifierEventDispatcher extends EventDispatcher
         }
     }
     
-    /**
+    
+/**
      * Fired whenever the lower property on the passed-in range was modified.
      *
      * @param element 
@@ -739,7 +758,8 @@ public class ClassifierEventDispatcher extends EventDispatcher
         }
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifierEventDispatcher#firePreUpperModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElement, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityRange, java.lang.String, org.netbeans.modules.uml.core.eventframework.IEventPayload)
      */
     public boolean firePreUpperModified(
@@ -777,7 +797,8 @@ public class ClassifierEventDispatcher extends EventDispatcher
         return proceed;
     }
 
-    /**
+    
+/**
      * Fired when the upper property on the passed-in range was modified.
      *
      * @param element[in] 
@@ -811,7 +832,8 @@ public class ClassifierEventDispatcher extends EventDispatcher
         }
     }
 
-    /**
+    
+/**
      * Fired when a new range is about to be added to the passed-in
      * multiplicity.
      *
@@ -853,7 +875,8 @@ public class ClassifierEventDispatcher extends EventDispatcher
         return proceed;
     }
 
-    /**
+    
+/**
      * Fired when a new range is added to the passed-in multiplicity.
      *
      * @param element[in] 
@@ -888,7 +911,8 @@ public class ClassifierEventDispatcher extends EventDispatcher
         }
     }
 
-    /**
+    
+/**
      * Fired when an existing range is about to be removed from the passed-in
      * multiplicity.
      *
@@ -930,7 +954,8 @@ public class ClassifierEventDispatcher extends EventDispatcher
         return proceed;
     }
 
-    /**
+    
+/**
      * Fired when an existing range is removed from the passed-in multiplicity.
      *
      * @param element[in] 
@@ -965,7 +990,8 @@ public class ClassifierEventDispatcher extends EventDispatcher
         }
     }
 
-    /**
+    
+/**
      * Fired when the order property is about to be changed on the passed-in
      * multiplicity.
      *
@@ -1008,7 +1034,8 @@ public class ClassifierEventDispatcher extends EventDispatcher
         return proceed;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifierEventDispatcher#fireOrderModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElement, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity, org.netbeans.modules.uml.core.eventframework.IEventPayload)
      */
     public void fireOrderModified(
@@ -1068,7 +1095,8 @@ public class ClassifierEventDispatcher extends EventDispatcher
         return proceed;  
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifierEventDispatcher#fireDefaultModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttribute, org.netbeans.modules.uml.core.eventframework.IEventPayload)
      */
     public void fireDefaultModified(IAttribute attr, IEventPayload payload)
@@ -1088,7 +1116,8 @@ public class ClassifierEventDispatcher extends EventDispatcher
         }
     }
 
-    /**
+    
+/**
      * Fired whenever the default expression's body property for the attribute
      * is about to change.
      *
@@ -1127,7 +1156,8 @@ public class ClassifierEventDispatcher extends EventDispatcher
         return proceed;  
     }
 
-    /**
+    
+/**
      * Fired whenever the default expression's body property for the
      * attribue has changed.
      *
@@ -1152,7 +1182,8 @@ public class ClassifierEventDispatcher extends EventDispatcher
         }
     }
 
-    /**
+    
+/**
      * Fired whenever the default expression's language property for the
      * attribute is about to change.
      *
@@ -1191,7 +1222,8 @@ public class ClassifierEventDispatcher extends EventDispatcher
         return proceed;  
     }
 
-    /**
+    
+/**
      * Fired whenever the default expression's language property for the
      * attribute has changed.
      *
@@ -1216,7 +1248,8 @@ public class ClassifierEventDispatcher extends EventDispatcher
         }
     }
 
-    /**
+    
+/**
      * Fired whenever the attributes derived property is about to change.
      *
      * @param attr[in] 
@@ -1254,7 +1287,8 @@ public class ClassifierEventDispatcher extends EventDispatcher
         return proceed;  
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifierEventDispatcher#fireDerivedModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttribute, org.netbeans.modules.uml.core.eventframework.IEventPayload)
      */
     public void fireDerivedModified(IAttribute feature, IEventPayload payload)
@@ -1273,7 +1307,8 @@ public class ClassifierEventDispatcher extends EventDispatcher
         }
     }
 
-    /**
+    
+/**
      * Fired whenever the attributes primary key is about to change.
      *
      * @param attr[in] 
@@ -1311,7 +1346,8 @@ public class ClassifierEventDispatcher extends EventDispatcher
         return proceed;    
     }
 
-    /**
+    
+/**
      * Fired whenever the attributes primary key has changed.
      *
      * @param attr[in] 
@@ -1335,7 +1371,8 @@ public class ClassifierEventDispatcher extends EventDispatcher
         }
     }
 
-    /**
+    
+/**
      * Fired whenever a pre- or post-condition is about to be added to an operation.
      *
      * @param oper[in] 
@@ -1376,7 +1413,8 @@ public class ClassifierEventDispatcher extends EventDispatcher
         return proceed;
     }
 
-    /**
+    
+/**
      * Fired whenever a pre- or post- condition has been added to an operation.
      *
      * @param oper[in] 
@@ -1409,7 +1447,8 @@ public class ClassifierEventDispatcher extends EventDispatcher
         }
     }
 
-    /**
+    
+/**
      * Fired whenever a pre- or post-condition is about to be removed from an
      * operation.
      *
@@ -1451,7 +1490,8 @@ public class ClassifierEventDispatcher extends EventDispatcher
         return proceed;
     }
 
-    /**
+    
+/**
      * Fired whenever a pre- or post-condition is about to be removed from
      * an operation.
      *
@@ -1486,7 +1526,8 @@ public class ClassifierEventDispatcher extends EventDispatcher
         }
     }
 
-    /**
+    
+/**
      * Fired whenever the query flag on an operation is about to be modified.
      *
      * @param oper[in] 
@@ -1524,7 +1565,8 @@ public class ClassifierEventDispatcher extends EventDispatcher
         return proceed;
     }
 
-    /**
+    
+/**
      * Fired whenever the query flag on an operatoin has been modified.
      *
      * @param oper[in] 
@@ -1546,7 +1588,8 @@ public class ClassifierEventDispatcher extends EventDispatcher
         }
     }
 
-    /**
+    
+/**
      * Description
      *
      * @param oper[in] 
@@ -1584,7 +1627,8 @@ public class ClassifierEventDispatcher extends EventDispatcher
         return proceed;   
     }
 
-    /**
+    
+/**
      * Description.
      *
      * @param oper[in] 
@@ -1615,7 +1659,8 @@ public class ClassifierEventDispatcher extends EventDispatcher
         }
     }
 
-    /**
+    
+/**
      * Descriptoin
      *
      * @param oper[in] 
@@ -1654,7 +1699,8 @@ public class ClassifierEventDispatcher extends EventDispatcher
     }
 
 
-    /**
+    
+/**
      * Description
      *
      * @param oper[in] 
@@ -1684,7 +1730,8 @@ public class ClassifierEventDispatcher extends EventDispatcher
         }
     }
 
-    /**
+    
+/**
      *
      * Fired whenever the name of a Classifier is about to change
      *
@@ -1723,7 +1770,8 @@ public class ClassifierEventDispatcher extends EventDispatcher
         return proceed;
     }
 
-    /**
+    
+/**
      *
      * Fired after the Classifier has changed. Most likely due to a name change.
      *
@@ -1812,7 +1860,8 @@ public class ClassifierEventDispatcher extends EventDispatcher
         }
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifierEventDispatcher#firePreQualifierAttributeRemoved(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAssociationEnd, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttribute, org.netbeans.modules.uml.core.eventframework.IEventPayload)
      */
     public boolean firePreQualifierAttributeRemoved(
@@ -1846,7 +1895,8 @@ public class ClassifierEventDispatcher extends EventDispatcher
         return proceed;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifierEventDispatcher#fireQualifierAttributeRemoved(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAssociationEnd, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttribute, org.netbeans.modules.uml.core.eventframework.IEventPayload)
      */
     public void fireQualifierAttributeRemoved(
@@ -1873,7 +1923,8 @@ public class ClassifierEventDispatcher extends EventDispatcher
         }
     }
 
-    /**
+    
+/**
      *
      * Registers the passed-in event sink with this dispatcher.
      *
@@ -1884,7 +1935,8 @@ public class ClassifierEventDispatcher extends EventDispatcher
         m_ClassifierSink.addListener(handler,null);		
     }
 
-    /**
+    
+/**
      * Removes a listener from the current list.
      *
      * @param handler[in] 
@@ -1894,7 +1946,8 @@ public class ClassifierEventDispatcher extends EventDispatcher
         m_ClassifierSink.removeListener(handler);
     }
 
-    /**
+    
+/**
      * Registers the passed-in event sink with this dispatcher.
      *
      * @param sink[in] The actual sink that will recieve notifications
@@ -1904,7 +1957,8 @@ public class ClassifierEventDispatcher extends EventDispatcher
         m_FeatureSink.addListener(handler,null);
     }
 
-    /**
+    
+/**
      * Removes a listener from the current list.
      *
      * @param handler[in] IFeatureEventsSink.
@@ -1914,7 +1968,8 @@ public class ClassifierEventDispatcher extends EventDispatcher
         m_FeatureSink.removeListener(handler);
     }
 
-    /**
+    
+/**
      * Registers the passed-in event sink with this dispatcher.
      *
      * @param sink[in] The actual sink that will receive notifications
@@ -1924,7 +1979,8 @@ public class ClassifierEventDispatcher extends EventDispatcher
         m_StructFeatureSink.addListener(handler,null);
     }
 
-    /**
+    
+/**
      * Removes a listener from the current list.
      *
      * @param handler[in] IStructuralFeatureEventsSink.
@@ -1934,7 +1990,8 @@ public class ClassifierEventDispatcher extends EventDispatcher
         m_StructFeatureSink.removeListener(handler);
     }
 
-    /**
+    
+/**
      * Registers the passed-in event sink with this dispatcher.
      *
      * @param sink[in] The actual sink that will recieve notifications
@@ -1944,7 +2001,8 @@ public class ClassifierEventDispatcher extends EventDispatcher
         m_BehavFeatureSink.addListener(handler,null);
     }
 
-    /**
+    
+/**
      * Removes a listener from the current list.
      *
      * @param handler[in] IBehavioralFeatureEventsSink.
@@ -1954,7 +2012,8 @@ public class ClassifierEventDispatcher extends EventDispatcher
         m_BehavFeatureSink.removeListener(handler);
     }
 
-    /**
+    
+/**
      * Registers the passed-in event sink with this dispatcher.
      *
      * @param sink[in] The actual sink that will receive notifications
@@ -1964,7 +2023,8 @@ public class ClassifierEventDispatcher extends EventDispatcher
         m_ParmSink.addListener(handler,null);
     }
 
-    /**
+    
+/**
      * Removes a listener from the current list.
      *
      * @param handler[in] IParameterEventsSink.
@@ -1974,7 +2034,8 @@ public class ClassifierEventDispatcher extends EventDispatcher
         m_ParmSink.removeListener(handler);
     }
 
-    /**
+    
+/**
      * Registers the passed-in event sink with this dispatcher.
      *
      * @param sink[in] The actual sink that will recieve notifications
@@ -1984,7 +2045,8 @@ public class ClassifierEventDispatcher extends EventDispatcher
         m_TypeSink.addListener(handler,null);
     }
 
-    /**
+    
+/**
      * Removes a listener from the current list.
      *
      * @param handler[in] ITypedElementEventsSink.
@@ -1994,7 +2056,8 @@ public class ClassifierEventDispatcher extends EventDispatcher
         m_TypeSink.removeListener(handler);
     }
 
-    /**
+    
+/**
      * Registers the passed-in event sink with this dispatcher.
      *
      * @param sink[in] The actual sink that will recieve notifications
@@ -2004,7 +2067,8 @@ public class ClassifierEventDispatcher extends EventDispatcher
         m_AttrSink.addListener(handler,null);
     }
 
-    /**
+    
+/**
      * Removes a listener from the current list.
      *
      * @param handler[in] IAttributeEventsSink.
@@ -2014,7 +2078,8 @@ public class ClassifierEventDispatcher extends EventDispatcher
         m_AttrSink.removeListener(handler);
     }
 
-    /**
+    
+/**
      * Registers the passed-in event sink with this dispatcher.
      *
      * @param sink[in] The actual sink that will receive notifications
@@ -2024,7 +2089,8 @@ public class ClassifierEventDispatcher extends EventDispatcher
         m_OperSink.addListener(handler,null);
     }
 
-    /**
+    
+/**
      * Removes a listener from the current list.
      *
      * @param handler[in] IOperationEventsSink.
@@ -2034,7 +2100,8 @@ public class ClassifierEventDispatcher extends EventDispatcher
         m_OperSink.removeListener(handler);
     }
 
-    /**
+    
+/**
      * Registers the passed-in event sink with this dispatcher.
      *
      * @param sink[in] The actual sink that will recieve notifications
@@ -2044,7 +2111,8 @@ public class ClassifierEventDispatcher extends EventDispatcher
         m_TransformSink.addListener(handler,null);
     }
 
-    /**
+    
+/**
      * Removes a listener from the current list.
      */
     public void revokeTransformSink(IClassifierTransformEventsSink handler)
@@ -2052,7 +2120,8 @@ public class ClassifierEventDispatcher extends EventDispatcher
         m_TransformSink.removeListener(handler);
     }
 
-    /**
+    
+/**
      * Registers the passed-in event sink with this dispatcher.
      *
      * @param sink[in] The actual sink that will recieve notifications
@@ -2062,7 +2131,8 @@ public class ClassifierEventDispatcher extends EventDispatcher
         m_AssociationEndTransformSink.addListener(handler,null);
     }
 
-    /**
+    
+/**
      * Removes a listener from the current list.
      * @param handler IAssociationEndTransformEventsSink.
      */
@@ -2071,7 +2141,8 @@ public class ClassifierEventDispatcher extends EventDispatcher
         m_AssociationEndTransformSink.removeListener(handler);
     }
 
-    /**
+    
+/**
      *
      * Registers the passed-in event sink with this dispatcher.
      *
@@ -2082,7 +2153,8 @@ public class ClassifierEventDispatcher extends EventDispatcher
        m_AffectedSink.addListener(handler,null);
     }
 
-    /**
+    
+/**
      *
      * Removes a listener from the current list.
      * @param handler[in] The actual sink that need to be removed
@@ -2092,7 +2164,8 @@ public class ClassifierEventDispatcher extends EventDispatcher
         m_AffectedSink.removeListener(handler);
     }
 
-    /**
+    
+/**
      * Registers the passed-in event sink with this dispatcher.
      *
      * @param sink[in] The actual sink that will receive notifications
@@ -2102,7 +2175,8 @@ public class ClassifierEventDispatcher extends EventDispatcher
         m_AssociationEndEventsSink.addListener(handler,null);
     }
 
-    /**
+    
+/**
      * Removes a listener from the current list.
      * 
      * @param handler IAssociationEndEventsSink.
@@ -2112,7 +2186,8 @@ public class ClassifierEventDispatcher extends EventDispatcher
         m_AssociationEndEventsSink.removeListener(handler);
     }
 
-    /**
+    
+/**
      * Called whenever a feature is about to be added to a classifier.
      *
      * @param classifier[in] 
@@ -2152,7 +2227,8 @@ public class ClassifierEventDispatcher extends EventDispatcher
         return proceed;
     }
 
-    /**
+    
+/**
      * Called whenever a feature was added to a classifier.
      *
      * @param classifier[in] 
@@ -2182,7 +2258,8 @@ public class ClassifierEventDispatcher extends EventDispatcher
         }
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifierEventDispatcher#fireFeaturePreRemoved(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IFeature, org.netbeans.modules.uml.core.eventframework.IEventPayload)
      */
     public boolean fireFeaturePreRemoved(
@@ -2214,7 +2291,8 @@ public class ClassifierEventDispatcher extends EventDispatcher
         return proceed;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifierEventDispatcher#fireFeatureRemoved(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IFeature, org.netbeans.modules.uml.core.eventframework.IEventPayload)
      */
     public void fireFeatureRemoved(
@@ -2240,7 +2318,8 @@ public class ClassifierEventDispatcher extends EventDispatcher
         }
     }
 
-    /**
+    
+/**
      * Called whenever a feature is to be moved to a classifier.
      *
      * @param classifier[in] 
@@ -2279,7 +2358,8 @@ public class ClassifierEventDispatcher extends EventDispatcher
 
     }
 
-    /**
+    
+/**
      * Called whenever a feature is moved to a classifier.
      *
      * @param classifier[in] 
@@ -2309,7 +2389,8 @@ public class ClassifierEventDispatcher extends EventDispatcher
         }
     }
 
-    /**
+    
+/**
      * Description.
      *
      * @param classifier[in] 
@@ -2348,7 +2429,8 @@ public class ClassifierEventDispatcher extends EventDispatcher
         return proceed;
     }
 
-    /**
+    
+/**
      * Description.
      *
      * @param pOldClassifier[in] 
@@ -2385,7 +2467,8 @@ public class ClassifierEventDispatcher extends EventDispatcher
         return true;
     }
 
-    /**
+    
+/**
      * Called whenever the abstract flag on the Classifier is about to be modified.
      *
      * @param feature[in] 
@@ -2423,7 +2506,8 @@ public class ClassifierEventDispatcher extends EventDispatcher
         return proceed;
     }
 
-    /**
+    
+/**
      * Called whenever the abstract flag on the Classifier has been modified..
      *
      * @param feature[in] 
@@ -2447,7 +2531,8 @@ public class ClassifierEventDispatcher extends EventDispatcher
         }
     }
 
-    /**
+    
+/**
      * Called whenever the leaf flag on the Classifier is about to be modified.
      *
      * @param feature[in] 
@@ -2486,7 +2571,8 @@ public class ClassifierEventDispatcher extends EventDispatcher
         return proceed;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifierEventDispatcher#fireLeafModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.eventframework.IEventPayload)
      */
     public void fireLeafModified(IClassifier feature, IEventPayload payload)
@@ -2505,7 +2591,8 @@ public class ClassifierEventDispatcher extends EventDispatcher
         }
     }
 
-    /**
+    
+/**
      * Called whenever the transient flag on the Classifier is about to be modified.
      *
      * @param feature[in] 
@@ -2543,7 +2630,8 @@ public class ClassifierEventDispatcher extends EventDispatcher
         return proceed;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifierEventDispatcher#fireClassifierTransientModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.eventframework.IEventPayload)
      */
     public void fireClassifierTransientModified(
@@ -2619,7 +2707,8 @@ public class ClassifierEventDispatcher extends EventDispatcher
         }
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifierEventDispatcher#firePreTemplateParameterRemoved(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IParameterableElement, org.netbeans.modules.uml.core.eventframework.IEventPayload)
      */
     public boolean firePreTemplateParameterRemoved(
@@ -2653,7 +2742,8 @@ public class ClassifierEventDispatcher extends EventDispatcher
         return proceed;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifierEventDispatcher#fireTemplateParameterRemoved(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IParameterableElement, org.netbeans.modules.uml.core.eventframework.IEventPayload)
      */
     public void fireTemplateParameterRemoved(
@@ -2680,7 +2770,8 @@ public class ClassifierEventDispatcher extends EventDispatcher
         }
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifierEventDispatcher#firePreTransform(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, java.lang.String, org.netbeans.modules.uml.core.eventframework.IEventPayload)
      */
     public boolean firePreTransform(
@@ -2715,7 +2806,8 @@ public class ClassifierEventDispatcher extends EventDispatcher
         return proceed;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifierEventDispatcher#fireTransformed(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.eventframework.IEventPayload)
      */
     public void fireTransformed(IClassifier classifier, IEventPayload payload)
@@ -2735,7 +2827,8 @@ public class ClassifierEventDispatcher extends EventDispatcher
 
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifierEventDispatcher#firePreAssociationEndTransform(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAssociationEnd, java.lang.String, org.netbeans.modules.uml.core.eventframework.IEventPayload)
      */
     public boolean firePreAssociationEndTransform(
@@ -2769,7 +2862,8 @@ public class ClassifierEventDispatcher extends EventDispatcher
         return proceed;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifierEventDispatcher#fireAssociationEndTransformed(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAssociationEnd, org.netbeans.modules.uml.core.eventframework.IEventPayload)
      */
     public void fireAssociationEndTransformed(
@@ -2790,7 +2884,8 @@ public class ClassifierEventDispatcher extends EventDispatcher
         }
     }
 
-    /**
+    
+/**
      * Fired whenever the static flag on a particular feature is about
      * to be modified.
      *
@@ -2829,7 +2924,8 @@ public class ClassifierEventDispatcher extends EventDispatcher
         return proceed;
     }
 
-    /**
+    
+/**
      * Fired whenever the static flag on a particular feature 
      * was just modified.
      *
@@ -2852,7 +2948,8 @@ public class ClassifierEventDispatcher extends EventDispatcher
         }
     }
 
-    /**
+    
+/**
      * Fired whenever the native flag on a particular feature is
      * about to be modified.
      *
@@ -2891,7 +2988,8 @@ public class ClassifierEventDispatcher extends EventDispatcher
         return proceed;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifierEventDispatcher#fireNativeModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IFeature, org.netbeans.modules.uml.core.eventframework.IEventPayload)
      */
     public void fireNativeModified(IFeature feature, IEventPayload payload)
@@ -2910,7 +3008,8 @@ public class ClassifierEventDispatcher extends EventDispatcher
         }
     }
 
-    /**
+    
+/**
      * Fired whenever the ClientChangeability flag on a particular feature
      * is about to be modified.
      *
@@ -2949,7 +3048,8 @@ public class ClassifierEventDispatcher extends EventDispatcher
         return proceed;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifierEventDispatcher#fireChangeabilityModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IStructuralFeature, org.netbeans.modules.uml.core.eventframework.IEventPayload)
      */
     public void fireChangeabilityModified(
@@ -2970,7 +3070,8 @@ public class ClassifierEventDispatcher extends EventDispatcher
         }
     }
 
-    /**
+    
+/**
      * Fired whenever the volatile flag on a particular feature is about
      * to be modified.
      *
@@ -3009,7 +3110,8 @@ public class ClassifierEventDispatcher extends EventDispatcher
         return proceed;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifierEventDispatcher#fireVolatileModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IStructuralFeature, org.netbeans.modules.uml.core.eventframework.IEventPayload)
      */
     public void fireVolatileModified(
@@ -3030,7 +3132,8 @@ public class ClassifierEventDispatcher extends EventDispatcher
         }
     }
 
-    /**
+    
+/**
      * Fired whenever the transient flag on a particular feature is about to be modified.
      *
      * @param feature[in] 
@@ -3068,7 +3171,8 @@ public class ClassifierEventDispatcher extends EventDispatcher
         return proceed;
     }
 
-    /**
+    
+/**
      * Fired whenever the transient flag on a particular feature has been modified.
      *
      * @param feature[in] 
@@ -3092,7 +3196,8 @@ public class ClassifierEventDispatcher extends EventDispatcher
         }
     }
 
-    /**
+    
+/**
      * Fired whenever the concurrency value of a behavior feature is about to
      * be modified
      *
@@ -3131,7 +3236,8 @@ public class ClassifierEventDispatcher extends EventDispatcher
         return proceed;
     }
 
-    /**
+    
+/**
      * Fired whenever the concurrency value of a behavioral feature was modified
      *
      * @param feature[in] 
@@ -3155,7 +3261,8 @@ public class ClassifierEventDispatcher extends EventDispatcher
         }
     }
 
-    /**
+    
+/**
      * Fired whenever a signal is about to be added to the behavioral feature,
      * indicating that the feature can 'catch' the specified signal.
      *
@@ -3194,7 +3301,8 @@ public class ClassifierEventDispatcher extends EventDispatcher
         return proceed;
     }
 
-    /**
+    
+/**
      * Fired whenever a signal is added to the behavioral feature, indicating that the
      * feature can 'catch' the specified signal.
      *
@@ -3219,7 +3327,8 @@ public class ClassifierEventDispatcher extends EventDispatcher
         }
     }
 
-    /**
+    
+/**
      * Fired whenever a signal is about to be removed from the behavioral
      * feature, indicating that the feature can no longer 'catch' the
      * specified signal.
@@ -3259,7 +3368,8 @@ public class ClassifierEventDispatcher extends EventDispatcher
         return proceed;
     }
 
-    /**
+    
+/**
      * Fired whenever a signal was removed from the behavioral feature, indicating
      * that the feature can no longer 'catch' the specified signal.
      *
@@ -3285,7 +3395,8 @@ public class ClassifierEventDispatcher extends EventDispatcher
 
     }
 
-    /**
+    
+/**
      * Fired whenever a new parameter is about to be added to the behavioral
      * feature's list of parameters.
      *
@@ -3324,7 +3435,8 @@ public class ClassifierEventDispatcher extends EventDispatcher
         return proceed; 
     }
 
-    /**
+    
+/**
      * Fired whenever a new parameter was added to the behavioral feature's
      * list of parameters.
      *

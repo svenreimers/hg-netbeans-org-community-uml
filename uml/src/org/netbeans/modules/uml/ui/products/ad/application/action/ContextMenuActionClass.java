@@ -48,11 +48,8 @@ package org.netbeans.modules.uml.ui.products.ad.application.action;
 
 import java.awt.event.ActionEvent;
 
-/**
- * @author KevinM
- * JM
- *
- */
+
+
 public class ContextMenuActionClass extends ContextMenuBaseAction {
 
 	protected IETContextMenuHandler m_menuHandler;

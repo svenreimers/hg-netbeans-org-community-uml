@@ -160,14 +160,14 @@ public class DocumentationControl extends ApplicationView
         JPanel namePanel = new JPanel();
         m_Label = new JLabel("");
         GridBagConstraints constraints = new GridBagConstraints();
-        // IZ# 78924  - conover: it was "BOTH"
+        
         constraints.fill = GridBagConstraints.NONE;
         constraints.weightx = 0.05;
         constraints.weighty = 0.0;
         constraints.gridx = 0;
         constraints.gridy = 0;
         constraints.anchor = GridBagConstraints.WEST;
-        // IZ# 78924  - conover: not needed anymore
+        
         // namePanel.add(m_Label);
         add(namePanel, constraints);
         
@@ -181,7 +181,8 @@ public class DocumentationControl extends ApplicationView
         constraints.gridwidth = 2;
     }
     
-    /**
+    
+/**
      * Retrieves the text pane used to display and edit
      */
     protected JTextPane getTextPane()
@@ -189,7 +190,8 @@ public class DocumentationControl extends ApplicationView
         return m_TextPane;
     }
 
-    /**
+    
+/**
      * Initializes the doc control by creating an event sink and then listening to
      * drawing area and tree select/deselect events.
      */
@@ -237,7 +239,8 @@ public class DocumentationControl extends ApplicationView
         registerTreeAccelerator(DocumentationResources.getString("IDSCTRLSHITLR"));
     }
     
-    /**
+    
+/**
      * Enables the Doc Control's window.
      */
     public void enableDocCtrl()
@@ -245,7 +248,8 @@ public class DocumentationControl extends ApplicationView
         enableDocControl(true);
     }
     
-    /**
+    
+/**
      * Disables the Doc Control's window.
      */
     public void disableDocCtrl()
@@ -255,7 +259,8 @@ public class DocumentationControl extends ApplicationView
         enableDocControl(false);
     }
     
-        /* (non-Javadoc)
+        
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.ui.controls.doccontrol.IDocumentationControl#getEditorCtrl(java.lang.Object)
          */
     public void getEditorCtrl(Object obj)
@@ -264,7 +269,8 @@ public class DocumentationControl extends ApplicationView
         
     }
     
-        /* (non-Javadoc)
+        
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.ui.controls.doccontrol.IDocumentationControl#getEnabled()
          */
     public int getEnabled()
@@ -273,7 +279,8 @@ public class DocumentationControl extends ApplicationView
         return 0;
     }
     
-        /* (non-Javadoc)
+        
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.ui.controls.doccontrol.IDocumentationControl#setEnabled(int)
          */
     public void setEnabled(int value)
@@ -282,7 +289,8 @@ public class DocumentationControl extends ApplicationView
         
     }
     
-    /**
+    
+/**
      *	Save the current IElement's documentation before
      *	switching into Browse mode for example.
      */
@@ -291,7 +299,8 @@ public class DocumentationControl extends ApplicationView
         setElementDescription();
     }
     
-    /**
+    
+/**
      * Registers or revokes event sinks.
      *
      * @param bConnect
@@ -348,7 +357,8 @@ public class DocumentationControl extends ApplicationView
         }
     }
     
-        /* (non-Javadoc)
+        
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.ui.controls.doccontrol.IDocumentationControl#showLastSelectedElement()
          */
     public void showLastSelectedElement()
@@ -357,7 +367,8 @@ public class DocumentationControl extends ApplicationView
         
     }
     
-    /**
+    
+/**
      * Sets focus on the doc ctrl.
      */
     public void setFocus()
@@ -365,7 +376,8 @@ public class DocumentationControl extends ApplicationView
         this.setFocus();
     }
     
-    /**
+    
+/**
      * Initializes the dialog.
      */
     public void onInitDialog()
@@ -380,14 +392,15 @@ public class DocumentationControl extends ApplicationView
         if (m_ProxyDiagram != null && m_ProxyDiagram.equals(dia))
         {
             String name = m_ProxyDiagram.getNameWithAlias();
-            // IZ# 78924  - conover
+            
             //  need to include elements name
             // setDisplayName(name);
             setDocWindowTitle(name);
         }
     }
     
-    /**
+    
+/**
      * @param name
      */
     private void setDisplayName(String name)
@@ -400,7 +413,7 @@ public class DocumentationControl extends ApplicationView
         // String title =
         //     DocumentationResources.getString("IDS_WINDOW_TITLE"); // NOI18N
         
-        // IZ# 78924 - conover
+        
         String title = getBaseName();
         
         if (getParent() != null)
@@ -408,7 +421,7 @@ public class DocumentationControl extends ApplicationView
             if (name != null && name.length() > 0)
                 title = name + " - " + title; // NOI18N
             
-            // IZ# 82694 - conover
+            
             // was getting a IllegalStateException;
             // needs to run in separate AWT thread
             final String finalTitle = title;
@@ -443,7 +456,8 @@ public class DocumentationControl extends ApplicationView
         }
     }
     
-    /**
+    
+/**
      * Handles selection in the drawing area.
      *
      * @param pParentDiagram
@@ -488,7 +502,8 @@ public class DocumentationControl extends ApplicationView
         enableDocControl(!bClearSel);
     }
     
-    /**
+    
+/**
      *	Handles compartment selection in the drawing area.
      *
      * @param pCompartment
@@ -517,7 +532,8 @@ public class DocumentationControl extends ApplicationView
 //        }
 //    }
     
-    /**
+    
+/**
      *
      * Displays a ModelElement or Diagram member if it is
      *	different from what is currently displayed.
@@ -573,7 +589,8 @@ public class DocumentationControl extends ApplicationView
         return retVal;
     }
     
-    /**
+    
+/**
      *	Gets the IElement pointer and sets the document with
      *	the element's description.
      */
@@ -623,7 +640,8 @@ public class DocumentationControl extends ApplicationView
         return m_BodyText;
     }
     
-    /**
+    
+/**
      *
      * Compares two IWSElement pointers
      *
@@ -643,7 +661,8 @@ public class DocumentationControl extends ApplicationView
         return same;
     }
     
-    /**
+    
+/**
      * @return
      */
     private boolean setBaseURL()
@@ -652,7 +671,8 @@ public class DocumentationControl extends ApplicationView
         return false;
     }
     
-    /**
+    
+/**
      *	Handles tree selection change.
      *
      * @param pITheItems
@@ -684,7 +704,8 @@ public class DocumentationControl extends ApplicationView
         }
     }
     
-    /**
+    
+/**
      * Get the model element and set the member variable for it.
      *
      * @param pITheDisp
@@ -801,7 +822,8 @@ public class DocumentationControl extends ApplicationView
         }
     }
     
-    /**
+    
+/**
      * Get the description of a presentation element.
      */
     public String getElementDescription()
@@ -840,7 +862,8 @@ public class DocumentationControl extends ApplicationView
         return m_BodyText;
     }
     
-    /**
+    
+/**
      * Get the name of a presentation element.
      */
     public String getElementName()
@@ -867,7 +890,8 @@ public class DocumentationControl extends ApplicationView
         return m_ElementName;
     }
     
-    /**
+    
+/**
      * EnableDocControl - Enables or disables the doc control.
      *
      * @ Param bEnable TRUE for Enabling or FALSE for Disabling
@@ -898,7 +922,8 @@ public class DocumentationControl extends ApplicationView
         setModelElement();
     }
     
-    /**
+    
+/**
      * Sets the element description.
      */
     public void setElementDescription()
@@ -920,7 +945,8 @@ public class DocumentationControl extends ApplicationView
         }
     }
     
-    /**
+    
+/**
      *
      * Handles OnAliasNameModified event.
      *
@@ -939,7 +965,7 @@ public class DocumentationControl extends ApplicationView
             {
                 String name = pElem.getNameWithAlias();
                 
-                // IZ# 78924  - conover
+                
                 //  need to include elements name
                 // setDisplayName(name);
                 setDocWindowTitle(name);
@@ -947,7 +973,8 @@ public class DocumentationControl extends ApplicationView
         }
     }
     
-    /**
+    
+/**
      *
      * Handles OnAliasNameModified event.
      *
@@ -966,14 +993,15 @@ public class DocumentationControl extends ApplicationView
             {
                 String name = pElem.getNameWithAlias();
                 
-                // conover
+                
                 // setDisplayName(name);
                 setDocWindowTitle(name);
             }
         }
     }
     
-    /**
+    
+/**
      *
      * Handles OnDocumentModifed event.
      *
@@ -1008,7 +1036,8 @@ public class DocumentationControl extends ApplicationView
         }
     }
     
-    /**
+    
+/**
      * Display text in the edit control.
      */
     private void displayTextInEditControl()
@@ -1019,7 +1048,8 @@ public class DocumentationControl extends ApplicationView
         m_BlockDocChangeEvents = false;
     }
     
-    /**
+    
+/**
      *
      * Sets documentation if it has changed.
      *
@@ -1097,7 +1127,8 @@ public class DocumentationControl extends ApplicationView
         m_CurMarkedDirty = false;
     }
     
-    /**
+    
+/**
      *
      *	Sets member with currently viewed ModelElement or Diagram.
      *
@@ -1206,7 +1237,7 @@ public class DocumentationControl extends ApplicationView
         }
         
         // Fix W6814:  Set the description based on the name of the element
-        // IZ# 78924  - conover
+        
         //  need to include elements name
         // setDisplayName(dispName);
         setDocWindowTitle(dispName);
@@ -1223,13 +1254,14 @@ public class DocumentationControl extends ApplicationView
         Icon icon = mgr.getIconForDisp(dispIcon);
         
         //set the icon on the toolbar
-        // IZ# 78924  - conover
+        
         //  removed icon from the toolbar
         // m_Label.setIcon(icon);
         return icon;
     }
     
-    /**
+    
+/**
      *
      * Marks an element 'Dirty'
      *
@@ -1250,7 +1282,8 @@ public class DocumentationControl extends ApplicationView
         }
     }
     
-    /**
+    
+/**
      *
      * Sets the documentation for the current element
      *
@@ -1295,7 +1328,8 @@ public class DocumentationControl extends ApplicationView
         }
     }
     
-    /**
+    
+/**
      *
      * compares strings with tags but ignores case within tags since the DHTML control.
      *	will change tags to upper case.
@@ -1345,7 +1379,8 @@ public class DocumentationControl extends ApplicationView
         return retVal;
     }
     
-    /**
+    
+/**
      * Project has opened
      *
      * @param project [in] The project that just opened.
@@ -1356,7 +1391,8 @@ public class DocumentationControl extends ApplicationView
         enableDocControl(false);
     }
     
-    /**
+    
+/**
      * Project has closed
      *
      * @param project [in] The project that got closed.
@@ -1366,7 +1402,8 @@ public class DocumentationControl extends ApplicationView
         enableDocControl(false);
     }
     
-    /**
+    
+/**
      *
      * Updates the documentation editor when the Workspace
      * documentation changes.
@@ -1385,7 +1422,7 @@ public class DocumentationControl extends ApplicationView
             if (m_WSElement instanceof INamedElement)
             {
                 String name = m_WSElement.getName();
-                // IZ# 78924  - conover
+                
                 //  need to include elements name
                 // setDisplayName(name);
                 setDocWindowTitle(name);
@@ -1393,7 +1430,8 @@ public class DocumentationControl extends ApplicationView
         }
     }
     
-    /**
+    
+/**
      *
      * Updates the documentation editor when the Workspace documentation changes.
      *
@@ -1427,7 +1465,8 @@ public class DocumentationControl extends ApplicationView
         }
     }
     
-    /**
+    
+/**
      * Handles the change of the preference
      *
      * @param name [in] The name of the preference that got changed.
@@ -1452,7 +1491,8 @@ public class DocumentationControl extends ApplicationView
         }
     }
     
-    /**
+    
+/**
      *
      * Handles OnWSProjectPreSave event.
      *
@@ -1466,7 +1506,8 @@ public class DocumentationControl extends ApplicationView
         setElementDescription();
     }
     
-    /**
+    
+/**
      *
      * Handles WSProjectPreClose event.
      *
@@ -1499,7 +1540,8 @@ public class DocumentationControl extends ApplicationView
         enableDocControl(false);
     }
     
-    /**
+    
+/**
      *
      * OnDrawingAreaDocumentModified updates the display if this is the
      *	currently selected element.
@@ -1540,7 +1582,8 @@ public class DocumentationControl extends ApplicationView
         }
     }
     
-    /**
+    
+/**
      *
      * OnDrawingAreaClosed saves the documentation for an element if it is currently
      *	displayed and it's diagram is being closed.
@@ -1557,7 +1600,8 @@ public class DocumentationControl extends ApplicationView
         enableDocControl(false);
     }
     
-    /**
+    
+/**
      *
      * OnDrawingAreaPreSave saves the documentation of the proxy diagram or
      *	the actual opened diagram if it is currently displayed.
@@ -1597,7 +1641,8 @@ public class DocumentationControl extends ApplicationView
         }
     }
     
-    /**
+    
+/**
      * Gives notification that there was an insert into the document.  The
      * range given by the DocumentEvent bounds the freshly inserted region.
      *
@@ -1608,7 +1653,8 @@ public class DocumentationControl extends ApplicationView
         handleDocModified(e);
     }
     
-    /**
+    
+/**
      * Gives notification that a portion of the document has been
      * removed.  The range is given in terms of what the view last
      * saw (that is, before updating sticky positions).
@@ -1620,7 +1666,8 @@ public class DocumentationControl extends ApplicationView
         handleDocModified(e);
     }
     
-    /**
+    
+/**
      * Gives notification that an attribute or set of attributes changed.
      *
      * @param e the document event
@@ -1919,7 +1966,8 @@ public class DocumentationControl extends ApplicationView
     public class CustomAlignmentAction extends StyledTextAction
     {
         
-        /**
+        
+/**
          * Creates a new AlignmentAction.
          *
          * @param nm the action name
@@ -1932,7 +1980,8 @@ public class DocumentationControl extends ApplicationView
             this.alignment = nm;
         }
         
-        /**
+        
+/**
          * Sets the alignment.
          *
          * @param e the action event
@@ -2000,7 +2049,7 @@ public class DocumentationControl extends ApplicationView
         }
     }
     
-// IZ# 78924  - conover: removed Font toolbar items
+
 //	public class FontFamilyAction extends BaseAction
 //	{
 //		DocumentationControl parent = null;
@@ -2225,7 +2274,7 @@ public class DocumentationControl extends ApplicationView
             
             tManager.setAlignmentX(JToolBar.LEFT_ALIGNMENT);
             
-            // IZ# 78924 - conover: removed Font toolbar items
+            
             // FontFamilyAction fontAction = new FontFamilyAction(this);
             // tManager.add(fontAction.getCustomComponent());
             //
@@ -2234,7 +2283,8 @@ public class DocumentationControl extends ApplicationView
         }
     }
     
-        /*
+        
+/*
          * gets the default font for the documentation pane from the preference file
          */
     public Font getDefaultFontFromPreferences()

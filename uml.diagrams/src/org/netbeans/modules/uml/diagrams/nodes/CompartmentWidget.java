@@ -74,10 +74,8 @@ import org.netbeans.modules.uml.drawingarea.view.DesignerTools;
 import org.netbeans.modules.uml.drawingarea.view.UMLNodeWidget;
 import org.netbeans.modules.uml.drawingarea.widgets.ContainerWidget;
 
-/**
- *
- * @author Sheryl Su
- */
+
+
 public abstract class CompartmentWidget extends Widget implements PropertyChangeListener, DiagramNodeWriter, DiagramNodeReader
 {
 

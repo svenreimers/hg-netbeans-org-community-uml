@@ -55,7 +55,8 @@ import org.netbeans.modules.uml.core.support.umlsupport.XMLManip;
 public class REClassElement extends ParserData implements IREClassElement
 {
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.IREClassElement#getName()
      */
     public String getName()
@@ -63,7 +64,8 @@ public class REClassElement extends ParserData implements IREClassElement
         return XMLManip.getAttributeValue(getEventData(), "name");
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.IREClassElement#getVisibility()
      */
     public int getVisibility()
@@ -78,7 +80,8 @@ public class REClassElement extends ParserData implements IREClassElement
         return IVisibilityKind.VK_PACKAGE;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.IREClassElement#getComment()
      */
     public String getComment()
@@ -86,7 +89,8 @@ public class REClassElement extends ParserData implements IREClassElement
         return getTokenDescriptorValue("Comment");
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.IREClassElement#getOwner()
      */
     public IREClass getOwner()
@@ -109,7 +113,8 @@ public class REClassElement extends ParserData implements IREClassElement
         return null;
     }
     
-    /**
+    
+/**
      * Retrieves the XML node that acts as a UML namespace to the specified 
      * XML node.  
      * <P>
@@ -123,7 +128,8 @@ public class REClassElement extends ParserData implements IREClassElement
         return getOwningNamespace(getEventData());
     }
     
-    /**
+    
+/**
      * In XMI all elements that are contained inside of a namespace
      * will be wrapped by a UML:Namespece.ownedElement tag.  
      * 

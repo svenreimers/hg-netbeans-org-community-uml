@@ -44,6 +44,7 @@
 
 
 
+
 /*
  * Created on Oct 17, 2003
  *
@@ -51,10 +52,8 @@
 package org.netbeans.modules.uml.core.metamodel.behavior;
 import org.netbeans.modules.uml.core.AbstractUMLTestCase;
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ISignal;
-/**
- * @author aztec
- *
- */
+
+
 public class SignalEventTestCase extends AbstractUMLTestCase
 {
 	public SignalEventTestCase()

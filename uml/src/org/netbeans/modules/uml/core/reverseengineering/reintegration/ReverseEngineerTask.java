@@ -54,10 +54,8 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.INamespace;
 import org.netbeans.modules.uml.core.support.umlsupport.IStrings;
 import org.netbeans.modules.uml.util.AbstractNBTask;
 
-/**
- *
- * @author Craig Conover, craig.conover@sun.com
- */
+
+
 public class ReverseEngineerTask extends AbstractNBTask
 {
     private IUMLParsingIntegrator parsingIntegrator;
@@ -120,7 +118,7 @@ public class ReverseEngineerTask extends AbstractNBTask
         setLogLevel(SUMMARY);
         setTaskName(getBundleMessage("IDS_RE_TITLE"));
 
-        //kris richards - "REShowOutput" pref expunged
+        
         setDisplayOutput(true);
         
         progressContribs = new ProgressContributor[SUBTASK_TOT];

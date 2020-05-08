@@ -45,36 +45,38 @@
 
 package org.netbeans.modules.uml.core.generativeframework;
 
-/**
- * @author sumitabhk
- *
- */
+
+
 public class ExpansionResult implements IExpansionResult{
     private String              m_PreText;
     private IExpansionVariable  m_Var;
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.generativeframework.IExpansionResult#getPreText()
 	 */
 	public String getPreText() {
 		return m_PreText;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.generativeframework.IExpansionResult#setPreText(java.lang.String)
 	 */
 	public void setPreText(String value) {
         m_PreText = value;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.generativeframework.IExpansionResult#getVariable()
 	 */
 	public IExpansionVariable getVariable() {
 		return m_Var;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.generativeframework.IExpansionResult#setVariable(org.netbeans.modules.uml.core.generativeframework.IExpansionVariable)
 	 */
 	public void setVariable(IExpansionVariable value) {

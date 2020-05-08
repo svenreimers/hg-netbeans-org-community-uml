@@ -48,37 +48,44 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 public interface IDeployment extends IDirectedRelationship
 {
-	/**
+	
+/**
 	 * property Location
 	*/
 	public INode getLocation();
 
-	/**
+	
+/**
 	 * property Location
 	*/
 	public void setLocation( INode value );
 
-	/**
+	
+/**
 	 * property AddDeployedArtifact
 	*/
 	public void addDeployedArtifact( IArtifact pVal );
 
-	/**
+	
+/**
 	 * property RemoveDeployedArtifact
 	*/
 	public void removeDeployedArtifact( IArtifact pVal );
 
-	/**
+	
+/**
 	 * property DeployedArtifacts
 	*/
 	public ETList<IArtifact> getDeployedArtifacts();
 
-	/**
+	
+/**
 	 * property Specification
 	*/
 	public IDeploymentSpecification getSpecification();
 
-	/**
+	
+/**
 	 * property Specification
 	*/
 	public void setSpecification( IDeploymentSpecification value );

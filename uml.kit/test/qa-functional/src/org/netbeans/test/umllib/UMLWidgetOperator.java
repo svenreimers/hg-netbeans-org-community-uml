@@ -42,10 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/**
- *
- * @author Sherry
- */
+
+
 package org.netbeans.test.umllib;
 
 import java.awt.Dimension;

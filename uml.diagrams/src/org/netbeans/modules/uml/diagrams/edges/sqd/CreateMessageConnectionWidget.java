@@ -48,10 +48,8 @@ import org.netbeans.api.visual.anchor.AnchorShapeFactory;
 import org.netbeans.api.visual.widget.Scene;
 import org.netbeans.modules.uml.drawingarea.LabelManager;
 
-/**
- * message connection with perfomance optimization for extra small zooms
- * @author sp153251
- */
+
+
 public class CreateMessageConnectionWidget extends MessageWidget{
     //
 

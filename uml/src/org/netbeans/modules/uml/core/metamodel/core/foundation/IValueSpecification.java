@@ -46,14 +46,8 @@
 package org.netbeans.modules.uml.core.metamodel.core.foundation;
 
 
-/**
- * <p>Title: </p>
- * <p>Description: </p>
- * <p>Copyright: Copyright (c) 2003</p>
- * <p>Company: </p>
- * @author not attributable
- * @version 1.0
- */
+
+
 
 public interface IValueSpecification extends IElement{
 //   If set, implies that the associated value specification represents a set of instances as described by the value specification.

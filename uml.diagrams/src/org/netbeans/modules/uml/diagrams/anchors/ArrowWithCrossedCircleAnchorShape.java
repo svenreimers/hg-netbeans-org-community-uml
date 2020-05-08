@@ -50,9 +50,8 @@ import java.awt.Stroke;
 import org.netbeans.api.visual.anchor.AnchorShape;
 import java.awt.geom.GeneralPath;
 
-/**
- * @author sp153251
- */
+
+
 public class ArrowWithCrossedCircleAnchorShape implements AnchorShape
 {
 
@@ -62,7 +61,8 @@ public class ArrowWithCrossedCircleAnchorShape implements AnchorShape
     private double cutDistance;
     private GeneralPath generalPath;
 
-    /**
+    
+/**
      * Creates a triangular anchor shape.
      * @param arrowSize the size of triangle
      * @param circleSize diameter of circle

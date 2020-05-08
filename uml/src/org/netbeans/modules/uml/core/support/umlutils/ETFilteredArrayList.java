@@ -49,13 +49,12 @@ import java.util.Collection;
 import java.util.Iterator;
 import java.util.List;
 
-/**
- * @author KevinM
- *
- */
+
+
 public class ETFilteredArrayList<TypeName, desiredType> extends ETArrayList<TypeName>{
 
-	/*
+	
+/*
 	 * You need to pass a single instance object of the desired type you want to contain
 	 */
 	public  ETFilteredArrayList(desiredType dummy)

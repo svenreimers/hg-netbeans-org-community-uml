@@ -49,10 +49,8 @@ import org.netbeans.modules.uml.core.coreapplication.IPreferenceManager2;
 import org.netbeans.modules.uml.core.support.umlsupport.ProductRetriever;
 import org.openide.util.NbBundle;
 
-/**
- * @author sumitabhk
- *
- */
+
+
 public class PreferenceAccessor implements IPreferenceAccessor{
 
 	private static PreferenceAccessor m_Instance = null;
@@ -71,7 +69,8 @@ public class PreferenceAccessor implements IPreferenceAccessor{
 		return m_Instance;
 	}
 
-	/**
+	
+/**
 	 * Retrieves the default name to use for a new project from the preference file.
 	 *
 	 * @param name[out]	The default name
@@ -84,7 +83,8 @@ public class PreferenceAccessor implements IPreferenceAccessor{
             throw new UnsupportedOperationException("DefaultProjectName pref no longer valid.");
 	}
 
-	/**
+	
+/**
 	 * Gets the IDType preference from the preference file.  This is the
 	 * type of id to create when generating a unique id.
 	 *
@@ -94,11 +94,12 @@ public class PreferenceAccessor implements IPreferenceAccessor{
 	 *
 	 */
 	public int getIDType() {
-            //kris richards - "IDType" pref expunged. Also, this method is never called.
+            
             throw new UnsupportedOperationException ("IDType pref no longer valid.") ;
 	}
 
-	/**
+	
+/**
 	 * Gets the default element name from the preferences file.  This is the
 	 * name to be used when a new element is created.
 	 * 
@@ -109,12 +110,13 @@ public class PreferenceAccessor implements IPreferenceAccessor{
 	 *
 	 */
 	public String getDefaultElementName() {
-            //kris richards - "DefaultElementName" pref expunged. Set to "Unnamed"
+            
             
             return NbBundle.getMessage(PreferenceAccessor.class, "UNNAMED");
         }
 
-	/**
+	
+/**
 	 * Gets a flag from the preferences file which tells us whether or not to create a classifier
 	 * if Describe cannot resolve it to the model or any of its imported packages.
 	 * 
@@ -125,12 +127,13 @@ public class PreferenceAccessor implements IPreferenceAccessor{
 	 *
 	 */
 	public boolean getUnknownClassifierCreate() {
-            //kris richards - "UnknownClassifierCreate" pref expunged. Set to true.
+            
 		
             return true ;
 	}
 
-	/**
+	
+/**
 	 * When Describe has been told to create a classifier if it cannot 
 	 * be resolved in the model or any imported packages, this is the 
 	 * type of element to create.  This is retrieved from the preferences file.
@@ -141,7 +144,7 @@ public class PreferenceAccessor implements IPreferenceAccessor{
 	 *
 	 */
 	public String getUnknownClassifierType() {
-            //kris richards - "UnknownClassifierType" pref expunged. Set to "DataType"
+            
             //change default to Class: see issue 110338
 //            return "DataType" ; //returning "Class" causes other problems (see issue 111821)
             return unknownClassifierType;
@@ -153,7 +156,8 @@ public class PreferenceAccessor implements IPreferenceAccessor{
             unknownClassifierType = type;
         }
 
-	/**
+	
+/**
 	 * The default mode of a new Describe session found in the preferences file.
 	 *
 	 * @param *val[out]	The mode
@@ -162,12 +166,13 @@ public class PreferenceAccessor implements IPreferenceAccessor{
 	 *
 	 */
 	public String getDefaultMode() {
-            //kris richards - all calls to this have been removed.
+            
 	
             throw new UnsupportedOperationException ("DefaultMode pref no longer valid.");
 	}
 
-	/**
+	
+/**
 	 * The default language for a new Describe session based on the mode in the preferences file.
 	 *
 	 * @param mode[in]	The mode
@@ -184,7 +189,8 @@ public class PreferenceAccessor implements IPreferenceAccessor{
                 return lang ;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Based on a particular language and behavior type, this 
 	 * retrieves the behavior value in the preferences file.
@@ -200,7 +206,8 @@ public class PreferenceAccessor implements IPreferenceAccessor{
             throw new UnsupportedOperationException ("RoundTrip prefs are no long valid.");
 	}
 
-	/**
+	
+/**
 	 * Retrieves the default customization file to be used for the property editor specified 
 	 * in the preferences file.
 	 * 
@@ -214,7 +221,8 @@ public class PreferenceAccessor implements IPreferenceAccessor{
             throw new UnsupportedOperationException ("PropertyEditor|CustomizationFile pref is no long valid.");
 	}
 
-	/**
+	
+/**
 	 * Retrieves the default filter from the preferences file to be used for the property editor.
 	 *
 	 * @param *val[out] The default filter
@@ -226,7 +234,8 @@ public class PreferenceAccessor implements IPreferenceAccessor{
             throw new UnsupportedOperationException ("This pref is no long valid.");
 	}
 
-	/**
+	
+/**
 	 * Retrieves the max number to select from the preference file for the property editor.
 	 *
 	 * @param *val[out]	The max number for selection
@@ -235,11 +244,12 @@ public class PreferenceAccessor implements IPreferenceAccessor{
 	 *
 	 */
 	public int getDefaultEditorSelect() {
-            //kris richards - MaxSelect pref expunged
+            
             throw new UnsupportedOperationException ("MaxSelect pref is no long valid.");
 	}
 
-	/**
+	
+/**
 	 *	Retrieves a value for a particular expansion variable in the preferences file.
 	 *
 	 * @param name[in]	The variable to find
@@ -252,7 +262,8 @@ public class PreferenceAccessor implements IPreferenceAccessor{
 		throw new UnsupportedOperationException ("getExpansionVariable pref is no long valid.");
 	}
 
-	/**
+	
+/**
 	 * Asks the preference manager to read the preference file and get the asked
 	 * for information.
 	 * 
@@ -288,7 +299,8 @@ public class PreferenceAccessor implements IPreferenceAccessor{
 		return value;
 	}
 
-	/**
+	
+/**
 	 * Based on a particular font category (DefaultClassFont, DefaultFont, etc), this retrieves 
 	 * the font name value in the preferences file.
 	 *
@@ -304,7 +316,8 @@ public class PreferenceAccessor implements IPreferenceAccessor{
 		return value;
 	}
 
-	/**
+	
+/**
 	 * Based on a particular font category (DefaultClassFont, DefaultFont, etc), this retrieves 
 	 * the font size value in the preferences file.
 	 *
@@ -328,7 +341,8 @@ public class PreferenceAccessor implements IPreferenceAccessor{
 		return value;
 	}
 
-	/**
+	
+/**
 	 * Based on a particular font category (DefaultClassFont, DefaultFont, etc), this retrieves 
 	 * whether the font is bold or not in the preferences file.
 	 *
@@ -355,7 +369,8 @@ public class PreferenceAccessor implements IPreferenceAccessor{
 		return val;
 	}
 
-	/**
+	
+/**
 	 * Based on a particular font category (DefaultClassFont, DefaultFont, etc), this retrieves 
 	 * whether the font is italic or not in the preferences file.
 	 *
@@ -374,7 +389,8 @@ public class PreferenceAccessor implements IPreferenceAccessor{
 		return val;
 	}
 
-	/**
+	
+/**
 	 * Based on a particular font category (DefaultClassFont, DefaultFont, etc), this retrieves 
 	 * whether the font is strikeout or not in the preferences file.
 	 *
@@ -393,7 +409,8 @@ public class PreferenceAccessor implements IPreferenceAccessor{
 		return val;
 	}
 
-	/**
+	
+/**
 	 * Based on a particular font category (DefaultClassFont, DefaultFont, etc), this retrieves 
 	 * whether the font is underlined or not in the preferences file.
 	 *
@@ -412,7 +429,8 @@ public class PreferenceAccessor implements IPreferenceAccessor{
 		return val;
 	}
 
-	/**
+	
+/**
 	 * Based on a particular font category (DefaultClassFont, DefaultFont, etc), this retrieves 
 	 * the font color value in the preferences file.
 	 *
@@ -428,7 +446,8 @@ public class PreferenceAccessor implements IPreferenceAccessor{
 		return value;
 	}
 
-	/**
+	
+/**
 	 * Asks the preference manager to read the preference file and set the given
 	 * preference.
 	 * 

@@ -48,9 +48,8 @@ package org.netbeans.modules.uml.core.metamodel.core.constructs;
 import org.dom4j.Document;
 import org.dom4j.Node;
 
-/**
- * @author Aztec
- */
+
+
 public class PrimitiveType extends DataType implements IPrimitiveType
 {
     public void establishNodePresence(Document doc, Node node)

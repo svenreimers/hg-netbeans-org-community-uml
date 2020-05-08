@@ -63,9 +63,8 @@ import javax.swing.border.CompoundBorder;
 import javax.swing.border.EmptyBorder;
 
 
-/**
- * @author Jan Jancura
- */
+
+
 public class VerticalTabbedPanel extends TabbedPanel 
 {
     public VerticalTabbedPanel(TabbedPanelModel model, int expansionPolicy) 

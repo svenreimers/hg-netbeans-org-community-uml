@@ -46,22 +46,26 @@ package org.netbeans.modules.uml.core.reverseengineering.reframework;
 import org.dom4j.Node;
 public interface IREGeneralization
 {
-	/**
+	
+/**
 	 * Get / Set the XML DOM node that contains the generalization information.
 	*/
 	public Node getDOMNode();
 
-	/**
+	
+/**
 	 * Get / Set the XML DOM node that contains the generalization information.
 	*/
 	public void setDOMNode( Node value );
 
-	/**
+	
+/**
 	 * Retrieves the number of super classes.
 	*/
 	public int getCount();
 
-	/**
+	
+/**
 	 * Retrieves a super classes from the collection.
 	*/
 	public IRESuperClass item( int index );

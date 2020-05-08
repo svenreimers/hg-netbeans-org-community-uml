@@ -53,10 +53,8 @@ import org.netbeans.modules.uml.core.support.umlsupport.StringUtilities;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 import org.openide.util.NbBundle;
 
-/**
- *
- * @author Sheryl
- */
+
+
 public class AggregationData extends AssociationData
 {
     private IAggregation element;

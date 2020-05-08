@@ -42,6 +42,7 @@
  * made subject to such option by the copyright holder.
  */
 
+
 /*
  * BatchProcessRunnable.java
  *
@@ -52,10 +53,8 @@ package org.netbeans.modules.uml.ui.support;
 
 import java.util.ArrayList;
 
-/**
- *
- * @author  Trey Spiva
- */
+
+
 public abstract class BatchProcessRunnable < T > implements Runnable
 {
    private ArrayList < T > m_UpdateItems = new ArrayList < T >();

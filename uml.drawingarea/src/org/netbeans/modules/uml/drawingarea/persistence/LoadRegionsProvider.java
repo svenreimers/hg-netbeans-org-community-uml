@@ -61,10 +61,8 @@ import org.netbeans.modules.uml.drawingarea.view.UMLNodeWidget;
 import org.netbeans.modules.uml.drawingarea.widgets.ContainerWithCompartments;
 import org.openide.util.Exceptions;
 
-/**
- *
- * @author sp153251
- */
+
+
 class LoadRegionsProvider implements ActionProvider {
 
     private UMLNodeWidget stateWidget;

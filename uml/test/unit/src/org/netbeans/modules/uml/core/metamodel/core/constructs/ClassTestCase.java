@@ -46,6 +46,7 @@
 package org.netbeans.modules.uml.core.metamodel.core.constructs;
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IReception;
 import org.netbeans.modules.uml.core.AbstractUMLTestCase;
+
 /**
  * Test cases for Class.
  */
@@ -58,7 +59,8 @@ public class ClassTestCase extends AbstractUMLTestCase
 
     private IClass clazz;
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see junit.framework.TestCase#setUp()
      */
     protected void setUp() throws Exception
@@ -67,7 +69,8 @@ public class ClassTestCase extends AbstractUMLTestCase
         clazz = createClass("Indiana");
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see junit.framework.TestCase#tearDown()
      */
     protected void tearDown() throws Exception

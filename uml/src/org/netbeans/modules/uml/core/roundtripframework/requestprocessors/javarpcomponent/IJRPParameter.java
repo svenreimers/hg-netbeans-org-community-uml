@@ -42,11 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : IJRPParameter.java
- * Created on : Oct 29, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpcomponent;
 
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier;
@@ -54,9 +51,8 @@ import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IParameter;
 import org.netbeans.modules.uml.core.support.umlsupport.IStrings;
 
-/**
- * @author Aztec
- */
+
+
 public interface IJRPParameter
 {
     public String getName(); 

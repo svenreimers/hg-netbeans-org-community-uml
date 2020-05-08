@@ -42,6 +42,7 @@
  * made subject to such option by the copyright holder.
  */
 
+
 /*
  * MyOptionsPanel.java
  *
@@ -58,13 +59,12 @@ import org.netbeans.spi.options.OptionsCategory;
 import org.netbeans.spi.options.OptionsPanelController;
 import org.openide.util.NbBundle;
 
-/**
- *
- * @author krichard
- */
+
+
 public class UMLOptionsCategory extends OptionsCategory {
 
-    /**
+    
+/**
      * Creates a new instance of UMLOptionsPanel
      */
     public UMLOptionsCategory() {

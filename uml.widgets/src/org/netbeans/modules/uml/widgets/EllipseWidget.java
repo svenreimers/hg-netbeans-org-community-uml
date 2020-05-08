@@ -50,13 +50,8 @@ import java.awt.geom.Ellipse2D;
 import org.netbeans.api.visual.widget.Scene;
 import org.netbeans.api.visual.widget.Widget;
 
-/**
- * The OvalWidget is a general widget that will be rendered as an oval.  The
- * children of an oval will be contained inside of the oval.  If the widgets
- * bounds is square,then a circle will be drawn.
- *
- * @author treyspiva
- */
+
+
 public class EllipseWidget extends Widget
 {
     private Ellipse2D.Float shape = new Ellipse2D.Float();

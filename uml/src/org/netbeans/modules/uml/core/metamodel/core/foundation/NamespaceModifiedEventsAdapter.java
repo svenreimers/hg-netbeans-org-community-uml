@@ -49,15 +49,14 @@ package org.netbeans.modules.uml.core.metamodel.core.foundation;
 import org.netbeans.modules.uml.core.support.umlsupport.IResultCell;
 
 
-/**
- *
- * @author Trey Spiva
- */
+
+
 public class NamespaceModifiedEventsAdapter
    implements INamespaceModifiedEventsSink
 {
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     */
    public void onPreElementAddedToNamespace(
       INamespace space,
@@ -67,7 +66,8 @@ public class NamespaceModifiedEventsAdapter
       // TODO Auto-generated method stub
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     */
    public void onElementAddedToNamespace(
       INamespace space,

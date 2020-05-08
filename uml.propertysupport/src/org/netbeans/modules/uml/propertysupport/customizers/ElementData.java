@@ -51,10 +51,8 @@ import org.netbeans.modules.uml.propertysupport.DefinitionPropertyBuilder;
 import java.util.Vector;
 import java.util.HashMap;
 import org.netbeans.modules.uml.propertysupport.DefinitionPropertyBuilder.ValidValues;
-/**
- *
- * @author thuy
- */
+
+
 public class ElementData {
     public static String PARAM_NAME = "Name";  //NO I18N
     public static String PARAM_TYPE = "Type";  //NO I18N
@@ -73,7 +71,8 @@ public class ElementData {
     private DefinitionPropertyBuilder builder = DefinitionPropertyBuilder.instance();
     private Vector multiRanges;
     
-    /**
+    
+/**
      * Creates a new instance of ElementData
      */
     public ElementData(IPropertyElement element) {

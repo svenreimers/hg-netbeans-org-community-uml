@@ -48,22 +48,26 @@ import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure
 
 public interface ICGOperationMovementChangeNotification extends ICGDoubleClassChangeNotification
 {
-	/**
+	
+/**
 	 * Gets / Sets DeleteSourceOperation
 	*/
 	public boolean getDeleteSourceOperation();
 
-	/**
+	
+/**
 	 * Gets / Sets DeleteSourceOperation
 	*/
 	public void setDeleteSourceOperation( boolean value );
 
-	/**
+	
+/**
 	 * Gets / Sets Operation
 	*/
 	public IOperation getOperation();
 
-	/**
+	
+/**
 	 * Gets / Sets Operation
 	*/
 	public void setOperation( IOperation value );

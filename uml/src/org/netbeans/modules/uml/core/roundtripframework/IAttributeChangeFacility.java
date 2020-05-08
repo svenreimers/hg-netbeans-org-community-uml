@@ -42,11 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : IAttributeChangeFacility.java
- * Created on : Nov 21, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.roundtripframework;
 
 import org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity;
@@ -54,9 +51,8 @@ import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier;
 import org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ILanguage;
 
-/**
- * @author Aztec
- */
+
+
 public interface IAttributeChangeFacility extends IRequestFacility
 {
     public IAttribute changeAttributeType(IAttribute pAttr, 

@@ -55,11 +55,8 @@ import org.netbeans.modules.uml.core.metamodel.dynamics.IMessage;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 //import org.netbeans.modules.uml.ui.products.ad.diagramengines.sequencediagram.IMessageEdgeDrawEngine;
 
-/**
- * @author brettb
- *
- * This class is used to track all the information about the messages during SQD CDFS
- */
+
+
 public class MessageHelper
 {
    private IInteraction m_interaction;      /// Interaction the sequence diagram is being created from
@@ -125,7 +122,8 @@ public class MessageHelper
       return m_mapMessageToResult.get( message );
    }
 
-   /**
+   
+/**
     * Validates the interaction's elements
     * This ensures all the synchronous messages have result messages
     */
@@ -151,7 +149,8 @@ public class MessageHelper
       // TEST dumpMessages();
    }
 
-   /**
+   
+/**
     * Keep track of the draw engine associated with the input message
     */
 //   public void rememberMessageDE( final IMessage message,
@@ -161,7 +160,8 @@ public class MessageHelper
 //      m_mapMessageToDE.put( strXmiID, messageEdgeDE );
 //   }
 
-   /**
+   
+/**
     * Get a message's draw engine from the internal map
     */
 //   public IMessageEdgeDrawEngine getMessageEdgeDE( final IMessage message )
@@ -173,7 +173,8 @@ public class MessageHelper
 //   }
 
 
-   /**
+   
+/**
     * Search through all the messages for results, and place them and their parent into the member map
     */
    protected void prepareMapMessageToResult()
@@ -193,7 +194,8 @@ public class MessageHelper
       }
    }
 
-   /**
+   
+/**
     * Make sure there is a result message for the input message
     */
    protected int ensureCorrespondingResultMessage( final IMessage message,
@@ -276,7 +278,8 @@ public class MessageHelper
       return iIndx;
    }
 
-   /**
+   
+/**
     * Create the for the input synchronous message before the input index
     */
    protected int createResultMessage( IMessage message,
@@ -334,7 +337,8 @@ public class MessageHelper
       return iIndx;
    }
 
-   /**
+   
+/**
     * Returns the xmi.id of the input element
     */
    protected String getXmiID( IElement element )

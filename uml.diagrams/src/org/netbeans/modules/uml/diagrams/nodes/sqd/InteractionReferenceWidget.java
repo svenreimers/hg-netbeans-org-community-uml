@@ -49,10 +49,8 @@ import org.netbeans.api.visual.widget.Scene;
 import org.netbeans.modules.uml.core.metamodel.dynamics.IInteractionOperand;
 import org.netbeans.modules.uml.drawingarea.palette.context.DefaultContextPaletteModel;
 
-/**
- *
- * @author sp153251
- */
+
+
 public class InteractionReferenceWidget extends CombinedFragmentWidget {
 
 
@@ -73,7 +71,8 @@ public class InteractionReferenceWidget extends CombinedFragmentWidget {
         paletteModel.initialize("UML/context-palette/Interaction");
         return paletteModel;
     }
-    /**
+    
+/**
      * additioon of operand to the widget
      * 
      * 

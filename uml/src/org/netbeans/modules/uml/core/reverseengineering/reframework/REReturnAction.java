@@ -50,7 +50,8 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
  */
 public class REReturnAction extends REAction implements IREReturnAction
 {
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.IREReturnAction#getReturnValue()
      */
     public String getReturnValue()

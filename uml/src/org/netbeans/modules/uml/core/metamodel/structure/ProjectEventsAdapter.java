@@ -48,10 +48,8 @@ import org.netbeans.modules.uml.core.support.umlsupport.IResultCell;
 import org.netbeans.modules.uml.core.workspacemanagement.IWorkspace;
 
 
-/**
- *
- * @author Trey Spiva
- */
+
+
 public class ProjectEventsAdapter implements IProjectEventsSink
 {
 

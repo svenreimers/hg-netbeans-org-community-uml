@@ -56,27 +56,31 @@ public interface IDrawingAreaEventsSink
 //	*/
 //	public void onDrawingAreaPreCreated( Object pDiagramControl, IResultCell cell );
 
-	/**
+	
+/**
 	 * Fired when a drawing area is created.
 	*/
 	public void onDrawingAreaPostCreated( DataObject diagramData, 
                                               IResultCell cell );
         
-        /**
+        
+/**
 	 * Fired when a drawing area property has changed.
 	*/
 	public void onDrawingAreaPrePropertyChange( IProxyDiagram pProxyDiagram, 
                                                     /* DrawingAreaPropertyKind */ int nPropertyKindChanged, 
                                                     IResultCell cell );
 
-	/**
+	
+/**
 	 * Fired when a drawing area property has changed.
 	*/
 	public void onDrawingAreaPostPropertyChange( IProxyDiagram pProxyDiagram, 
                                                      /* DrawingAreaPropertyKind */ int nPropertyKindChanged, 
                                                      IResultCell cell );
         
-        /**
+        
+/**
 	 * Fired after a diagram file is removed from disk.
 	*/
 	public void onDrawingAreaFileRemoved( String sFilename, IResultCell cell );

@@ -86,11 +86,8 @@ import org.netbeans.modules.uml.ui.support.applicationmanager.IProduct;
 //import org.netbeans.modules.uml.ui.swing.drawingarea.IDrawingAreaEventsSink;
 //import org.netbeans.modules.uml.ui.swing.drawingarea.IDrawingAreaSelectionEventsSink;
 
-/**
- * @author sumitabhk
- *
- * TODO: meteora 
- */
+
+
 public class NavigationController implements 
 //        IDrawingAreaSelectionEventsSink,
 //											 ICompartmentEventsSink, 
@@ -104,7 +101,8 @@ public class NavigationController implements
 	private boolean m_SinksConnected = false;
 	private INavigator m_Navigator = null;
 
-	/**
+	
+/**
 	 * 
 	 */
 	public NavigationController()
@@ -127,7 +125,8 @@ public class NavigationController implements
 		}
 	}
 
-	/** 
+	
+/** 
 	 * connects event sinks
 	 */
 	private void connectSinks()
@@ -147,7 +146,8 @@ public class NavigationController implements
 		}
 	}
 
-	/** 
+	
+/** 
 	 * disconnects event sinks
 	 */
 	private void disconnectSinks()
@@ -175,7 +175,8 @@ public class NavigationController implements
 		}
 	}
 
-	/** 
+	
+/** 
 	 * Called when one or more elements on a diagram are selected
 	 * 
 	 * @param pParentDiagram[in] the diagram
@@ -204,7 +205,8 @@ public class NavigationController implements
 		}
 	}
 
-	/** 
+	
+/** 
 	 * called when the user navigates to an Element
 	 * 
 	 * @param pElement[in] the element navigated to
@@ -219,7 +221,8 @@ public class NavigationController implements
 		}
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.swing.drawingarea.IDrawingAreaSelectionEventsSink#onUnselect(org.netbeans.modules.uml.core.metamodel.diagrams.IDiagram, org.netbeans.modules.uml.core.metamodel.core.foundation.IPresentationElement[], org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onUnselect(IDiagram pParentDiagram, IPresentationElement[] unselectedItems, IResultCell cell)
@@ -227,7 +230,8 @@ public class NavigationController implements
 		//nothing to do
 	}
 
-	/** 
+	
+/** 
 	 * Called when a compartment is selected.
 	 * 
 	 * @param pItem[in] the selected compartment
@@ -251,7 +255,8 @@ public class NavigationController implements
 //		}
 //	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.swing.drawingarea.ICompartmentEventsSink#onCompartmentCollapsed(org.netbeans.modules.uml.ui.support.viewfactorysupport.ICompartment, boolean, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 //	public void onCompartmentCollapsed(ICompartment pCompartment, boolean bCollapsed, IResultCell cell)
@@ -259,7 +264,8 @@ public class NavigationController implements
 //		//nothing to do
 //	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.coreapplication.ICoreProductInitEventsSink#onCoreProductPreInit(org.netbeans.modules.uml.core.coreapplication.ICoreProduct, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onCoreProductPreInit(ICoreProduct pVal, IResultCell cell)
@@ -267,7 +273,8 @@ public class NavigationController implements
 		//nothing to do
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.coreapplication.ICoreProductInitEventsSink#onCoreProductInitialized(org.netbeans.modules.uml.core.coreapplication.ICoreProduct, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onCoreProductInitialized(ICoreProduct newVal, IResultCell cell)
@@ -275,7 +282,8 @@ public class NavigationController implements
 		//nothing to do
 	}
 
-	/** 
+	
+/** 
 	 * Called when the product is terminating.  This is our last chance to disconnect
 	 * the event sinks.
 	 * 
@@ -289,7 +297,8 @@ public class NavigationController implements
 		disconnectSinks();
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.coreapplication.ICoreProductInitEventsSink#onCoreProductPreSaved(org.netbeans.modules.uml.core.coreapplication.ICoreProduct, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onCoreProductPreSaved(ICoreProduct pVal, IResultCell cell)
@@ -297,7 +306,8 @@ public class NavigationController implements
 		//nothing to do
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.coreapplication.ICoreProductInitEventsSink#onCoreProductSaved(org.netbeans.modules.uml.core.coreapplication.ICoreProduct, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onCoreProductSaved(ICoreProduct newVal, IResultCell cell)
@@ -305,7 +315,8 @@ public class NavigationController implements
 		//nothing to do
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.swing.drawingarea.IDrawingAreaEventsSink#onDrawingAreaPreCreated(org.netbeans.modules.uml.ui.swing.drawingarea.IDrawingAreaControl, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 //	public void onDrawingAreaPreCreated(IDrawingAreaControl pDiagramControl, IResultCell cell)
@@ -313,7 +324,8 @@ public class NavigationController implements
 //		//nothing to do
 //	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.swing.drawingarea.IDrawingAreaEventsSink#onDrawingAreaPostCreated(org.netbeans.modules.uml.ui.swing.drawingarea.IDrawingAreaControl, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 //	public void onDrawingAreaPostCreated(IDrawingAreaControl pDiagramControl, IResultCell cell)
@@ -321,7 +333,8 @@ public class NavigationController implements
 //		//nothing to do
 //	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.swing.drawingarea.IDrawingAreaEventsSink#onDrawingAreaOpened(org.netbeans.modules.uml.core.metamodel.diagrams.IDiagram, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onDrawingAreaOpened(IDiagram pParentDiagram, IResultCell cell)
@@ -329,7 +342,8 @@ public class NavigationController implements
 		//nothing to do
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.swing.drawingarea.IDrawingAreaEventsSink#onDrawingAreaClosed(org.netbeans.modules.uml.core.metamodel.diagrams.IDiagram, boolean, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onDrawingAreaClosed(IDiagram pParentDiagram, boolean bDiagramIsDirty, IResultCell cell)
@@ -337,7 +351,8 @@ public class NavigationController implements
 		//nothing to do
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.swing.drawingarea.IDrawingAreaEventsSink#onDrawingAreaPreSave(org.netbeans.modules.uml.core.metamodel.diagrams.IProxyDiagram, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onDrawingAreaPreSave(IProxyDiagram pParentDiagram, IResultCell cell)
@@ -345,7 +360,8 @@ public class NavigationController implements
 		//nothing to do
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.swing.drawingarea.IDrawingAreaEventsSink#onDrawingAreaPostSave(org.netbeans.modules.uml.core.metamodel.diagrams.IProxyDiagram, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onDrawingAreaPostSave(IProxyDiagram pParentDiagram, IResultCell cell)
@@ -353,7 +369,8 @@ public class NavigationController implements
 		//nothing to do
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.swing.drawingarea.IDrawingAreaEventsSink#onDrawingAreaKeyDown(org.netbeans.modules.uml.core.metamodel.diagrams.IDiagram, int, boolean, boolean, boolean, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onDrawingAreaKeyDown(IDiagram pParentDiagram, int nKeyCode, boolean bControlIsDown, boolean bShiftIsDown, boolean bAltIsDown, IResultCell cell)
@@ -361,7 +378,8 @@ public class NavigationController implements
 		//nothing to do
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.swing.drawingarea.IDrawingAreaEventsSink#onDrawingAreaPrePropertyChange(org.netbeans.modules.uml.core.metamodel.diagrams.IProxyDiagram, int, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onDrawingAreaPrePropertyChange(IProxyDiagram pProxyDiagram, int nPropertyKindChanged, IResultCell cell)
@@ -369,7 +387,8 @@ public class NavigationController implements
 		//nothing to do
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.swing.drawingarea.IDrawingAreaEventsSink#onDrawingAreaPostPropertyChange(org.netbeans.modules.uml.core.metamodel.diagrams.IProxyDiagram, int, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onDrawingAreaPostPropertyChange(IProxyDiagram pProxyDiagram, int nPropertyKindChanged, IResultCell cell)
@@ -377,7 +396,8 @@ public class NavigationController implements
 		//nothing to do
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.swing.drawingarea.IDrawingAreaEventsSink#onDrawingAreaTooltipPreDisplay(org.netbeans.modules.uml.core.metamodel.diagrams.IDiagram, org.netbeans.modules.uml.core.metamodel.core.foundation.IPresentationElement, org.netbeans.modules.uml.ui.support.viewfactorysupport.IToolTipData, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 //	public void onDrawingAreaTooltipPreDisplay(IDiagram pParentDiagram, IPresentationElement pPE, IToolTipData pTooltip, IResultCell cell)
@@ -385,7 +405,8 @@ public class NavigationController implements
 //		//nothing to do
 //	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.swing.drawingarea.IDrawingAreaEventsSink#onDrawingAreaActivated(org.netbeans.modules.uml.core.metamodel.diagrams.IDiagram, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onDrawingAreaActivated(IDiagram pParentDiagram, IResultCell cell)
@@ -393,7 +414,8 @@ public class NavigationController implements
 		//nothing to do
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.swing.drawingarea.IDrawingAreaEventsSink#onDrawingAreaPreDrop(org.netbeans.modules.uml.core.metamodel.diagrams.IDiagram, org.netbeans.modules.uml.ui.swing.drawingarea.IDrawingAreaDropContext, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 //	public void onDrawingAreaPreDrop(IDiagram pParentDiagram, IDrawingAreaDropContext pContext, IResultCell cell)
@@ -401,7 +423,8 @@ public class NavigationController implements
 //		//nothing to do
 //	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.swing.drawingarea.IDrawingAreaEventsSink#onDrawingAreaPostDrop(org.netbeans.modules.uml.core.metamodel.diagrams.IDiagram, org.netbeans.modules.uml.ui.swing.drawingarea.IDrawingAreaDropContext, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 //	public void onDrawingAreaPostDrop(IDiagram pParentDiagram, IDrawingAreaDropContext pContext, IResultCell cell)
@@ -409,7 +432,8 @@ public class NavigationController implements
 //		//nothing to do
 //	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.swing.drawingarea.IDrawingAreaEventsSink#onDrawingAreaPreFileRemoved(java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onDrawingAreaPreFileRemoved(String sFilename, IResultCell cell)
@@ -417,7 +441,8 @@ public class NavigationController implements
 		//nothing to do
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.swing.drawingarea.IDrawingAreaEventsSink#onDrawingAreaFileRemoved(java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onDrawingAreaFileRemoved(String sFilename, IResultCell cell)
@@ -425,7 +450,8 @@ public class NavigationController implements
 		//nothing to do
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IDocumentationModifiedEventsSink#onDocumentationPreModified(org.netbeans.modules.uml.core.metamodel.core.foundation.IElement, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onDocumentationPreModified(IElement element, String doc, IResultCell cell)
@@ -433,7 +459,8 @@ public class NavigationController implements
 		//nothing to do
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IDocumentationModifiedEventsSink#onDocumentationModified(org.netbeans.modules.uml.core.metamodel.core.foundation.IElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onDocumentationModified(IElement element, IResultCell cell)
@@ -441,7 +468,8 @@ public class NavigationController implements
 		//nothing to do
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.structure.IArtifactEventsSink#onPreFileNameModified(org.netbeans.modules.uml.core.metamodel.structure.IArtifact, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onPreFileNameModified(IArtifact pArtifact, String newFileName, IResultCell cell)
@@ -449,7 +477,8 @@ public class NavigationController implements
 		//nothing to do
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.structure.IArtifactEventsSink#onFileNameModified(org.netbeans.modules.uml.core.metamodel.structure.IArtifact, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onFileNameModified(IArtifact pArtifact, String oldFileName, IResultCell cell)
@@ -463,7 +492,8 @@ public class NavigationController implements
 		}
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.structure.IArtifactEventsSink#onPreDirty(org.netbeans.modules.uml.core.metamodel.structure.IArtifact, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onPreDirty(IArtifact pArtifact, IResultCell cell)
@@ -471,7 +501,8 @@ public class NavigationController implements
 		//nothing to do
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.structure.IArtifactEventsSink#onDirty(org.netbeans.modules.uml.core.metamodel.structure.IArtifact, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onDirty(IArtifact pArtifact, IResultCell cell)
@@ -479,7 +510,8 @@ public class NavigationController implements
 		//nothing to do
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.structure.IArtifactEventsSink#onPreSave(org.netbeans.modules.uml.core.metamodel.structure.IArtifact, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onPreSave(IArtifact pArtifact, String fileName, IResultCell cell)
@@ -487,7 +519,8 @@ public class NavigationController implements
 		//nothing to do
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.structure.IArtifactEventsSink#onSave(org.netbeans.modules.uml.core.metamodel.structure.IArtifact, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onSave(IArtifact pArtifact, String fileName, IResultCell cell)
@@ -495,7 +528,8 @@ public class NavigationController implements
 		//nothing to do
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IElementLifeTimeEventsSink#onElementPreCreate(java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onElementPreCreate(String ElementType, IResultCell cell)
@@ -503,7 +537,8 @@ public class NavigationController implements
 		//nothing to do
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IElementLifeTimeEventsSink#onElementCreated(org.netbeans.modules.uml.core.metamodel.core.foundation.IVersionableElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onElementCreated(IVersionableElement element, IResultCell cell)
@@ -511,7 +546,8 @@ public class NavigationController implements
 		//nothing to do
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IElementLifeTimeEventsSink#onElementPreDelete(org.netbeans.modules.uml.core.metamodel.core.foundation.IVersionableElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onElementPreDelete(IVersionableElement element, IResultCell cell)
@@ -519,7 +555,8 @@ public class NavigationController implements
 		//nothing to do
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IElementLifeTimeEventsSink#onElementDeleted(org.netbeans.modules.uml.core.metamodel.core.foundation.IVersionableElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onElementDeleted(IVersionableElement element, IResultCell cell)
@@ -550,7 +587,8 @@ public class NavigationController implements
 		}
 	}
 
-	/**
+	
+/**
 	 * @param classifier
 	 * @return
 	 */
@@ -576,7 +614,8 @@ public class NavigationController implements
 		return pArtifact;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IElementLifeTimeEventsSink#onElementPreDuplicated(org.netbeans.modules.uml.core.metamodel.core.foundation.IVersionableElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onElementPreDuplicated(IVersionableElement element, IResultCell cell)
@@ -584,7 +623,8 @@ public class NavigationController implements
 		//nothing to do
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IElementLifeTimeEventsSink#onElementDuplicated(org.netbeans.modules.uml.core.metamodel.core.foundation.IVersionableElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onElementDuplicated(IVersionableElement element, IResultCell cell)
@@ -592,7 +632,8 @@ public class NavigationController implements
 		//nothing to do
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeEventsSink#onItemExpanding(org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl, org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeExpandingContext, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onItemExpanding(IProjectTreeControl pParentControl, IProjectTreeExpandingContext pContext, IResultCell cell)
@@ -607,7 +648,8 @@ public class NavigationController implements
     }
    
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeEventsSink#onBeforeEdit(org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl, org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem, org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeEditVerify, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onBeforeEdit(IProjectTreeControl pParentControl, IProjectTreeItem pItem, IProjectTreeEditVerify pVerify, IResultCell cell)
@@ -615,7 +657,8 @@ public class NavigationController implements
 		//nothing to do
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeEventsSink#onAfterEdit(org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl, org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem, org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeEditVerify, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onAfterEdit(IProjectTreeControl pParentControl, IProjectTreeItem pItem, IProjectTreeEditVerify pVerify, IResultCell cell)
@@ -623,7 +666,8 @@ public class NavigationController implements
 		//nothing to do
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeEventsSink#onDoubleClick(org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl, org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem, boolean, boolean, boolean, boolean, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onDoubleClick(IProjectTreeControl pParentControl, IProjectTreeItem pItem, boolean isControl, boolean isShift, boolean isAlt, boolean isMeta, IResultCell cell)
@@ -655,7 +699,8 @@ public class NavigationController implements
 		}
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeEventsSink#onSelChanged(org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl, org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem[], org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onSelChanged(IProjectTreeControl pParentControl, IProjectTreeItem[] pItem, IResultCell cell)
@@ -663,7 +708,8 @@ public class NavigationController implements
 		//nothing to do
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeEventsSink#onRightButtonDown(org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl, org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem, org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeHandled, int, int, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onRightButtonDown(IProjectTreeControl pParentControl, IProjectTreeItem pItem, IProjectTreeHandled pHandled, int nScreenLocX, int nScreenLocY, IResultCell cell)
@@ -671,7 +717,8 @@ public class NavigationController implements
 		//nothing to do
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeEventsSink#onBeginDrag(org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl, org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem[], org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeDragVerify, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onBeginDrag(IProjectTreeControl pParentControl, IProjectTreeItem[] pItem, IProjectTreeDragVerify pVerify, IResultCell cell)
@@ -679,7 +726,8 @@ public class NavigationController implements
 		//nothing to do
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeEventsSink#onMoveDrag(org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl, java.awt.datatransfer.Transferable, org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeDragVerify, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onMoveDrag(IProjectTreeControl pParentControl, Transferable pItem, IProjectTreeDragVerify pVerify, IResultCell cell)
@@ -687,7 +735,8 @@ public class NavigationController implements
 		//nothing to do
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeEventsSink#onEndDrag(org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl, java.awt.datatransfer.Transferable, int, org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeDragVerify, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onEndDrag(IProjectTreeControl pParentControl, Transferable pItem, int action, IProjectTreeDragVerify pVerify, IResultCell cell)

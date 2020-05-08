@@ -57,6 +57,7 @@ import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure
 import org.netbeans.modules.uml.core.support.umlsupport.ProductRetriever;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
+
 /**
  * RelationValidator manages the dispatch of relation validation events, while
  * also having the meta layer validate the proposed relationship against UML
@@ -71,7 +72,8 @@ public class RelationValidator {
 		super();
 	}
 
-	/**
+	
+/**
 	 *
 	 * Called to validate the proposed relationship. Calling this
 	 * method will result in the firing of the IRelationValidatorEventsSink
@@ -121,7 +123,8 @@ public class RelationValidator {
 		return valid;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Validates the proposed relation against UML well-formedness rules.
 	 *
@@ -149,7 +152,8 @@ public class RelationValidator {
 		return proceed;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Does basic relation validation, looking for circular generalizations, etc.
 	 *
@@ -232,7 +236,8 @@ public class RelationValidator {
 		return validated;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Determines if any super class of classifier matches elementToMatch
 	 *
@@ -275,7 +280,8 @@ public class RelationValidator {
 		return matches;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Checks to see if a generalization relationship already exists between
 	 * the two classifers.
@@ -317,7 +323,8 @@ public class RelationValidator {
 		return retVal;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Checks to see if an implementation relationship already exists between
 	 * the two classifers.

@@ -43,11 +43,8 @@
  */
 
 
-/*
- * File       : IStateHandler.java
- * Created on : Dec 5, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.statehandlers;
 
 import org.dom4j.Node;
@@ -56,9 +53,8 @@ import org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.IUMLPa
 import org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ILanguage;
 import org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ITokenDescriptor;
 
-/**
- * @author Aztec
- */
+
+
 public interface IStateHandler
 {
     public Node getDOMNode();

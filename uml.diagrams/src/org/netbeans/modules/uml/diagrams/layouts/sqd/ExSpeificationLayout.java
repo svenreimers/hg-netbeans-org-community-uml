@@ -54,12 +54,8 @@ import org.netbeans.api.visual.widget.Widget;
 import org.netbeans.modules.uml.diagrams.nodes.sqd.ExecutionSpecificationThinWidget;
 import org.netbeans.modules.uml.diagrams.nodes.sqd.MessagePinWidget;
 
-/**
- * the only purpose of this layout is proper horizontal position of children specifications based on links(messages) direction
- * direction is derived from first message only to simplify logic and perfomance if there no messages but child execution specification directon is the same as for child
- * TBD ??it also shpould keep distance between child execution specification and nearest pin??
- * @author sp153251
- */
+
+
 public class ExSpeificationLayout  implements Layout {
 
         private static Layout instance;

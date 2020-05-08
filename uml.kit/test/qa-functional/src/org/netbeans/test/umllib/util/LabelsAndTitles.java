@@ -43,18 +43,13 @@
  */
 
 
-/*
- * LabelsAndTitles.java
- *
- * Created on March 29, 2005, 12:58 PM
- */
+
+
 
 package org.netbeans.test.umllib.util;
 
-/**
- *
- * @author Alexei Mokeev
- */
+
+
 public interface LabelsAndTitles {
     
     public static final String JAVA_UML_PROJECT_LABEL = "Java-Platform Model";

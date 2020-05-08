@@ -58,10 +58,8 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 import org.netbeans.modules.uml.reporting.ReportTask;
 import org.openide.util.NbBundle;
 
-/**
- *
- * @author Sheryl
- */
+
+
 public class StateData extends ElementDataObject
 {
     

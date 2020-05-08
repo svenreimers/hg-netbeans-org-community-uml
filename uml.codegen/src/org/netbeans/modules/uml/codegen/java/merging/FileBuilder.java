@@ -70,6 +70,7 @@ import org.openide.filesystems.FileUtil;
 
 import org.netbeans.modules.uml.core.reverseengineering.reintegration.REIntegrationUtil;
 
+
 /**
  *  The class that perform actual merge of source files
  *
@@ -108,7 +109,8 @@ public class FileBuilder
    }
    
 
-   /**
+   
+/**
     *  client calls this method to indicate that text fragment representing
     *  oldElem in the old file should be replaced by text fragment representing
     *  newElem taken from new file
@@ -120,7 +122,8 @@ public class FileBuilder
 	replace(newElem, oldElem, HEADER_AND_BODY);
    } 
    
-    /**
+    
+/**
      *  @param replacementType indicates whether it should be header only  
      *                         or header + body replacement;
      *                         doesn't apply for attributes
@@ -135,7 +138,8 @@ public class FileBuilder
     }
       
    
-   /**
+   
+/**
     *  client calls this method to indicate that text fragment representing
     *  oldElem in old file should be removed from the old file.
     * @param oldElem
@@ -147,7 +151,8 @@ public class FileBuilder
    }
    
 
-   /**
+   
+/**
     *  client calls this method to indicate that text fragment representing
     *  newElem in new file should be added to the old file
     * @param newElem
@@ -157,7 +162,8 @@ public class FileBuilder
        add(newElem, oldParentElem, 0);
    }
 
-   /**
+   
+/**
     *  client calls this method to indicate that text fragment representing
     *  newElem in new file should be added to the old file
     * @param newElem
@@ -194,7 +200,8 @@ public class FileBuilder
       } 
    }
    
-    /**
+    
+/**
      *  client calls this method to indicate that text fragment representing 
      *  newElem in the new file should be inserted after(or before) the text 
      *  fragment represented by oldElem in the old file
@@ -247,7 +254,8 @@ public class FileBuilder
     }
 
 
-   /**
+   
+/**
     *  client calls this method to indicate that it finished
     *  with posting of the requests, and on return from this method
     *  it is expected that the [old]file on disk is modified
@@ -847,7 +855,8 @@ public class FileBuilder
 	    return patchContent;
 	}
 	
-	/**
+	
+/**
 	 *  TBD it should go into temporary file
 	 */
 	void storePatchContent(String patch) {

@@ -57,7 +57,8 @@ public class RERealization implements IRERealization
     private Node m_GeneralizationNode = null;
     private List m_Children           = null;
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.IREGeneralization#getDOMNode()
      */
     public Node getDOMNode()
@@ -65,7 +66,8 @@ public class RERealization implements IRERealization
         return m_GeneralizationNode;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.IREGeneralization#setDOMNode(org.dom4j.Node)
      */
     public void setDOMNode(Node value)
@@ -73,7 +75,8 @@ public class RERealization implements IRERealization
         m_GeneralizationNode = value;
     }
 
-    /**
+    
+/**
      * Retrieves the number of super classes.
      * @param pVal [out] The number of super classes available.
      */
@@ -87,7 +90,8 @@ public class RERealization implements IRERealization
                                  m_GeneralizationNode, "Interface"))).size();
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.IREGeneralization#item(int)
      */
     public IREInterface item(int index)

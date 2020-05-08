@@ -50,32 +50,38 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 public interface IComponentAssembly extends IAutonomousElement
 {
-	/**
+	
+/**
 	 * method AddComponent
 	*/
 	public void addComponent( IComponent pComp );
 
-	/**
+	
+/**
 	 * method RemoveComponent
 	*/
 	public void removeComponent( IComponent pComp );
 
-	/**
+	
+/**
 	 * property Components
 	*/
 	public ETList<IComponent> getComponents();
 
-	/**
+	
+/**
 	 * method AddContent
 	*/
 	public void addContent( IDeploymentSpecification pSpec );
 
-	/**
+	
+/**
 	 * method RemoveContent
 	*/
 	public void removeContent( IDeploymentSpecification pSpec );
 
-	/**
+	
+/**
 	 * property Contents
 	*/
 	public ETList<IDeploymentSpecification> getContents();

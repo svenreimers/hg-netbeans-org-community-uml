@@ -42,16 +42,12 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : IObjectNodeOrderingKind.java
- * Created on : Sep 16, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.metamodel.core.primitivetypes;
 
-/**
- * @author Aztec
- */
+
+
 public interface IObjectNodeOrderingKind
 {
     public static final int OOK_UNORDERED = 0;

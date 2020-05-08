@@ -51,13 +51,12 @@ import java.util.HashMap;
 
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
-/**
- * @author KevinM
- *
- */
+
+
 public class ProductButtonHandler implements IProductButtonHandler {
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.support.contextmenusupport.IProductButtonHandler#addMenuItem(org.netbeans.modules.uml.ui.support.contextmenusupport.IProductContextMenu, int, java.lang.String, java.lang.String, java.lang.String, boolean, org.netbeans.modules.uml.ui.support.contextmenusupport.IProductContextMenuSelectionHandler)
 	 */
 	public void addMenuItem(
@@ -72,7 +71,8 @@ public class ProductButtonHandler implements IProductButtonHandler {
 
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.support.contextmenusupport.IProductButtonHandler#addMenuItem(org.netbeans.modules.uml.ui.support.contextmenusupport.IProductContextMenu, int, java.lang.String, java.lang.String, java.lang.String)
 	 */
 	public void addMenuItem(IProductContextMenu pContextMenu, int nMenuButtonID, String textString, String descriptionString, String sButtonSource) {
@@ -105,7 +105,8 @@ public class ProductButtonHandler implements IProductButtonHandler {
 		// TODO Auto-generated method stub
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.support.contextmenusupport.IProductButtonHandler#addMenuItem(org.netbeans.modules.uml.ui.support.contextmenusupport.IProductContextMenu)
 	 */
 	public void addMenuItem(IProductContextMenu pContextMenu) {
@@ -113,7 +114,8 @@ public class ProductButtonHandler implements IProductButtonHandler {
 
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.support.contextmenusupport.IProductButtonHandler#addMenuItems(java.awt.Menu)
 	 */
 	public void addMenuItems(Menu parentMenu) {
@@ -121,7 +123,8 @@ public class ProductButtonHandler implements IProductButtonHandler {
 
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.support.contextmenusupport.IProductButtonHandler#addSeparatorMenuItem(org.netbeans.modules.uml.ui.support.contextmenusupport.IProductContextMenu)
 	 */
 	public void addSeparatorMenuItem(IProductContextMenu pContextMenu) {
@@ -129,7 +132,8 @@ public class ProductButtonHandler implements IProductButtonHandler {
 
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.support.contextmenusupport.IProductButtonHandler#clearMenuList()
 	 */
 	public void clearMenuList() {
@@ -137,7 +141,8 @@ public class ProductButtonHandler implements IProductButtonHandler {
 
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.support.contextmenusupport.IProductButtonHandler#createOrGetPullright()
 	 */
 	public IProductContextMenuItem createOrGetPullright(ETList < IProductContextMenuItem > pParentItems, long nPullrightLabel, String sButtonSource) {
@@ -146,13 +151,14 @@ public class ProductButtonHandler implements IProductButtonHandler {
 	}
 
 	/// Useful when creating pullrights.  This one grabs an existing pullright if it exists or
-	/// creates a new one if needed.  This is the same as the above, but doesn't do a loadstring.
+	
 	public IProductContextMenuItem createOrGetPullright(ETList < IProductContextMenuItem > pParentItems, String sPullrightLabel, String sButtonSource) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.support.contextmenusupport.IProductButtonHandler#displayAndHandleContextMenu(org.netbeans.modules.uml.ui.support.contextmenusupport.IProductContextMenu)
 	 */
 	public void displayAndHandleContextMenu(IProductContextMenu pContextMenu) {
@@ -160,7 +166,8 @@ public class ProductButtonHandler implements IProductButtonHandler {
 
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.support.contextmenusupport.IProductButtonHandler#getMenuButtonClicked(org.netbeans.modules.uml.ui.support.contextmenusupport.IProductContextMenuItem)
 	 */
 	public int getMenuButtonClicked(IProductContextMenuItem pMenuItem) {
@@ -168,7 +175,8 @@ public class ProductButtonHandler implements IProductButtonHandler {
 		return 0;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.support.contextmenusupport.IProductButtonHandler#handleButton(org.netbeans.modules.uml.ui.support.contextmenusupport.IProductContextMenu, org.netbeans.modules.uml.ui.support.contextmenusupport.IProductContextMenuItem, int)
 	 */
 	public boolean handleButton(IProductContextMenu pContextMenu, IProductContextMenuItem pMenuItem, int menuSelected) {
@@ -176,7 +184,8 @@ public class ProductButtonHandler implements IProductButtonHandler {
 		return false;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.support.contextmenusupport.IProductButtonHandler#handleContextMenuSelection(int, org.netbeans.modules.uml.ui.support.contextmenusupport.IProductContextMenu)
 	 */
 	public boolean handleContextMenuSelection(int menuItemID, IProductContextMenu pContextMenu) {
@@ -184,7 +193,8 @@ public class ProductButtonHandler implements IProductButtonHandler {
 		return false;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.support.contextmenusupport.IProductButtonHandler#handleSelection(org.netbeans.modules.uml.ui.support.contextmenusupport.IProductContextMenu, org.netbeans.modules.uml.ui.support.contextmenusupport.IProductContextMenuItem)
 	 */
 	public boolean handleSelection(IProductContextMenu pContextMenu, IProductContextMenuItem pSelectedItem) {
@@ -192,7 +202,8 @@ public class ProductButtonHandler implements IProductButtonHandler {
 		return false;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.support.contextmenusupport.IProductButtonHandler#isValidButton(org.netbeans.modules.uml.ui.support.contextmenusupport.IProductContextMenuItem)
 	 */
 	public boolean isValidButton(IProductContextMenuItem pItem) {
@@ -200,15 +211,15 @@ public class ProductButtonHandler implements IProductButtonHandler {
 		return false;
 	}
 
-	/* (non-Javadoc)
-	 * @see org.netbeans.modules.uml.ui.support.contextmenusupport.IProductButtonHandler#LoadString(java.lang.String)
-	 */
+	
+
 	public String loadString(String id) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.support.contextmenusupport.IProductButtonHandler#menuClosed()
 	 */
 	public void menuClosed() {
@@ -216,7 +227,8 @@ public class ProductButtonHandler implements IProductButtonHandler {
 
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.support.contextmenusupport.IProductButtonHandler#setSensitivityAndCheck(org.netbeans.modules.uml.ui.support.contextmenusupport.IProductContextMenu, org.netbeans.modules.uml.ui.support.contextmenusupport.IProductContextMenuItem, int)
 	 */
 	public void setSensitivityAndCheck(IProductContextMenu pContextMenu, IProductContextMenuItem pMenuItem, int buttonKind) {

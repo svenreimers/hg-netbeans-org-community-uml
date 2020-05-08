@@ -42,20 +42,16 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : ChangeRequest.java
- * Created on : Oct 28, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.roundtripframework;
 
 import org.netbeans.modules.uml.core.eventframework.IEventPayload;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.IElement;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.IRelationProxy;
 
-/**
- * @author Aztec
- */
+
+
 public class ChangeRequest implements IChangeRequest
 {
     IElement        m_Before = null;
@@ -73,7 +69,8 @@ public class ChangeRequest implements IChangeRequest
         m_ElementType = RTElementKind.RCT_NONE;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IChangeRequest#getAfter()
      */
     public IElement getAfter()
@@ -81,7 +78,8 @@ public class ChangeRequest implements IChangeRequest
         return m_After;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IChangeRequest#getBefore()
      */
     public IElement getBefore()
@@ -89,7 +87,8 @@ public class ChangeRequest implements IChangeRequest
         return m_Before;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IChangeRequest#getElementType()
      */
     public int getElementType()
@@ -97,7 +96,8 @@ public class ChangeRequest implements IChangeRequest
          return m_ElementType;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IChangeRequest#getLanguage()
      */
     public String getLanguage()
@@ -105,7 +105,8 @@ public class ChangeRequest implements IChangeRequest
         return m_Language;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IChangeRequest#getPayload()
      */
     public IEventPayload getPayload()
@@ -113,7 +114,8 @@ public class ChangeRequest implements IChangeRequest
         return m_Payload;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IChangeRequest#getRelation()
      */
     public IRelationProxy getRelation()
@@ -121,7 +123,8 @@ public class ChangeRequest implements IChangeRequest
         return m_Relation;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IChangeRequest#getRequestDetailType()
      */
     public int getRequestDetailType()
@@ -129,7 +132,8 @@ public class ChangeRequest implements IChangeRequest
         return m_Detail;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IChangeRequest#getState()
      */
     public int getState()
@@ -137,7 +141,8 @@ public class ChangeRequest implements IChangeRequest
         return m_ChangeType;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IChangeRequest#setAfter(org.netbeans.modules.uml.core.metamodel.core.foundation.IElement)
      */
     public void setAfter(IElement element)
@@ -146,7 +151,8 @@ public class ChangeRequest implements IChangeRequest
         determineElementType(m_After);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IChangeRequest#setBefore(org.netbeans.modules.uml.core.metamodel.core.foundation.IElement)
      */
     public void setBefore(IElement element)
@@ -154,7 +160,8 @@ public class ChangeRequest implements IChangeRequest
         m_Before = element;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IChangeRequest#setElementType(int)
      */
     public void setElementType(int rtElementKind)
@@ -162,7 +169,8 @@ public class ChangeRequest implements IChangeRequest
         m_ElementType = rtElementKind;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IChangeRequest#setLanguage(java.lang.String)
      */
     public void setLanguage(String language)
@@ -170,7 +178,8 @@ public class ChangeRequest implements IChangeRequest
         m_Language = language;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IChangeRequest#setPayload(org.netbeans.modules.uml.core.eventframework.IEventPayload)
      */
     public void setPayload(IEventPayload payload)
@@ -178,7 +187,8 @@ public class ChangeRequest implements IChangeRequest
         m_Payload = payload;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IChangeRequest#setRelation(org.netbeans.modules.uml.core.metamodel.core.foundation.IRelationProxy)
      */
     public void setRelation(IRelationProxy relation)
@@ -186,7 +196,8 @@ public class ChangeRequest implements IChangeRequest
         m_Relation = relation;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IChangeRequest#setRequestDetailType(int)
      */
     public void setRequestDetailType(int requestDetailKind)
@@ -194,7 +205,8 @@ public class ChangeRequest implements IChangeRequest
         m_Detail = requestDetailKind;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IChangeRequest#setState(int)
      */
     public void setState(int changeKind)
@@ -202,7 +214,8 @@ public class ChangeRequest implements IChangeRequest
         m_ChangeType = changeKind;
     }
     
-    /**
+    
+/**
      *
      * Sets the element type of this request.
      *

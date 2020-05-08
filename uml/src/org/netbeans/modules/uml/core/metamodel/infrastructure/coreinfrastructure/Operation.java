@@ -56,10 +56,8 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElement;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.UMLXMLManip;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
-/**
- * @author sumitabhk
- *
- */
+
+
 public class Operation extends BehavioralFeature 
     implements IOperation, IParameterableElement
 {
@@ -73,7 +71,8 @@ public class Operation extends BehavioralFeature
 	private static final int OPK_DELEGATE =5;
 	private static final int OPK_INDEXER = 6;
 
-	/**
+	
+/**
 	 * 
 	 */
 	public Operation()
@@ -81,7 +80,8 @@ public class Operation extends BehavioralFeature
 		super();		
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation#getIsQuery()
 	 */
 	public boolean getIsQuery()
@@ -89,7 +89,8 @@ public class Operation extends BehavioralFeature
 		return getBooleanAttributeValue("isQuery", false);
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation#setIsQuery(boolean)
 	 */
 	public void setIsQuery(boolean value)
@@ -121,7 +122,8 @@ public class Operation extends BehavioralFeature
 		}		
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation#addPostCondition(org.netbeans.modules.uml.core.metamodel.core.foundation.IConstraint)
 	 */
 	public void addPostCondition(IConstraint cond)
@@ -131,7 +133,8 @@ public class Operation extends BehavioralFeature
 					  cond, false); 
 	}
 
-	/**
+	
+/**
 	 * @param string
 	 * @param string2
 	 * @param cond
@@ -167,7 +170,8 @@ public class Operation extends BehavioralFeature
 		}		
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation#removePostCondition(org.netbeans.modules.uml.core.metamodel.core.foundation.IConstraint)
 	 */
 	public void removePostCondition(IConstraint constraint)
@@ -175,7 +179,8 @@ public class Operation extends BehavioralFeature
 		removeCondition(constraint, false);
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation#getPostConditions()
 	 */
 	public ETList<IConstraint> getPostConditions()
@@ -184,7 +189,8 @@ public class Operation extends BehavioralFeature
 	  return col.retrieveElementCollection(m_Node, "UML:Operation.postcondition/*", IConstraint.class);
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation#addPreCondition(org.netbeans.modules.uml.core.metamodel.core.foundation.IConstraint)
 	 */
 	public void addPreCondition(IConstraint cond)
@@ -194,7 +200,8 @@ public class Operation extends BehavioralFeature
 					  cond, true); 
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation#removePreCondition(org.netbeans.modules.uml.core.metamodel.core.foundation.IConstraint)
 	 */
 	public void removePreCondition(IConstraint constraint)
@@ -202,7 +209,8 @@ public class Operation extends BehavioralFeature
 		removeCondition(constraint, true);
 	}
 
-	/**
+	
+/**
 	 *
 	 * Removes the past in constraint from this operation
 	 *
@@ -239,7 +247,8 @@ public class Operation extends BehavioralFeature
 		}		
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation#getPreConditions()
 	 */
 	public ETList<IConstraint> getPreConditions()
@@ -248,7 +257,8 @@ public class Operation extends BehavioralFeature
 	  return col.retrieveElementCollection(m_Node, "UML:Operation.precondition/*", IConstraint.class);
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation#addRaisedException(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier)
 	 */
 	public void addRaisedException(IClassifier exc)
@@ -280,7 +290,8 @@ public class Operation extends BehavioralFeature
 		}		
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation#removeRaisedException(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier)
 	 */
 	public void removeRaisedException(IClassifier exc)
@@ -312,7 +323,8 @@ public class Operation extends BehavioralFeature
 		}	
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation#getRaisedExceptions()
 	 */
 	public ETList<IClassifier> getRaisedExceptions()
@@ -322,7 +334,8 @@ public class Operation extends BehavioralFeature
 															  this,"raisedException", IClassifier.class);
 	}
 
-	/**
+	
+/**
 	 * Adds a Classifier to this Operation that can be used in an exception.
 	 *
 	 * @param classifierName[in]  The name of the Classifier. If the name cannot
@@ -345,7 +358,8 @@ public class Operation extends BehavioralFeature
 		}
 	}
 
-	/**
+	
+/**
 	 * Determines whether or not this Operation is a constructor.
 	 *
 	 * @param pval [out]
@@ -358,7 +372,8 @@ public class Operation extends BehavioralFeature
 
     
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation#setIsConstructor(boolean)
 	 */
 	public void setIsConstructor(boolean value)
@@ -366,7 +381,8 @@ public class Operation extends BehavioralFeature
 		setBooleanAttributeValue("isConstructor", value);
 	}
 
-	/**
+	
+/**
      * Determines whether or not this Operation is resonsible for cleanup of the
      * featuring classifier.
      */
@@ -376,7 +392,8 @@ public class Operation extends BehavioralFeature
        return getBooleanAttributeValue("isDestructor", false );
     }
     
-    /**
+    
+/**
      * Determines whether or not this Operation is resonsible for cleanup of the
      * featuring classifier.
      *
@@ -390,7 +407,8 @@ public class Operation extends BehavioralFeature
     }
 
 
-	/**
+	
+/**
 	 *
 	 * Determines whether or not this Operation should be considered a property or not.
 	 * This is important when dealing with language specific constructs, such as VB
@@ -406,7 +424,8 @@ public class Operation extends BehavioralFeature
 		return getBooleanAttributeValue("isProperty", false);
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation#setIsProperty(boolean)
 	 */
 	public void setIsProperty(boolean value)
@@ -414,7 +433,8 @@ public class Operation extends BehavioralFeature
 		setPropertyAndFireEvents(OPK_PROPERTY,value);		
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation#getIsFriend()
 	 */
 	public boolean getIsFriend()
@@ -422,7 +442,8 @@ public class Operation extends BehavioralFeature
 		return getBooleanAttributeValue("isFriend", false);
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation#setIsFriend(boolean)
 	 */
 	public void setIsFriend(boolean value)
@@ -430,7 +451,8 @@ public class Operation extends BehavioralFeature
 		setPropertyAndFireEvents(OPK_FRIEND,value);		
 	}
 
-	/**
+	
+/**
 	 * Establishes the appropriate XML elements for this UML type.
 	 *
 	 * [in] The document where this element will reside
@@ -443,7 +465,8 @@ public class Operation extends BehavioralFeature
 	   buildNodePresence( "UML:Operation", doc, parent );
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation#getIsSubroutine()
 	 */
 	public boolean getIsSubroutine()
@@ -451,7 +474,8 @@ public class Operation extends BehavioralFeature
 		return getBooleanAttributeValue("isSub", false);
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation#setIsSubroutine(boolean)
 	 */
 	public void setIsSubroutine(boolean value)
@@ -459,7 +483,8 @@ public class Operation extends BehavioralFeature
 		setPropertyAndFireEvents(OPK_SUBROUTINE,value);		
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation#getIsVirtual()
 	 */
 	public boolean getIsVirtual()
@@ -467,7 +492,8 @@ public class Operation extends BehavioralFeature
 		return getBooleanAttributeValue("isVirtual", false);
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation#setIsVirtual(boolean)
 	 */
 	public void setIsVirtual(boolean value)
@@ -475,7 +501,8 @@ public class Operation extends BehavioralFeature
 		setPropertyAndFireEvents(OPK_VIRTUAL,value);		
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation#getIsOverride()
 	 */
 	public boolean getIsOverride()
@@ -483,7 +510,8 @@ public class Operation extends BehavioralFeature
 		return getBooleanAttributeValue("isOverride", false);
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation#setIsOverride(boolean)
 	 */
 	public void setIsOverride(boolean value)
@@ -491,7 +519,8 @@ public class Operation extends BehavioralFeature
 		setPropertyAndFireEvents(OPK_OVERRIDE,value);		
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation#getIsDelegate()
 	 */
 	public boolean getIsDelegate()
@@ -499,7 +528,8 @@ public class Operation extends BehavioralFeature
 		return getBooleanAttributeValue("isDelegate", false);
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation#setIsDelegate(boolean)
 	 */
 	public void setIsDelegate(boolean value)
@@ -507,7 +537,8 @@ public class Operation extends BehavioralFeature
 		setPropertyAndFireEvents(OPK_DELEGATE,value);		
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation#getIsIndexer()
 	 */
 	public boolean getIsIndexer()
@@ -515,7 +546,8 @@ public class Operation extends BehavioralFeature
 		return getBooleanAttributeValue("isIndexer", false);
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation#setIsIndexer(boolean)
 	 */
 	public void setIsIndexer(boolean value)
@@ -639,7 +671,8 @@ public class Operation extends BehavioralFeature
 	 }   
 
     
-     /**
+     
+/**
       *  Retrieves all the RaisedExceptions owned by this Operation and returns
       *   them as a string for appropriate display.
       *      HRESULT OwnedConstraints([out, retval] IConstraints** pVal );

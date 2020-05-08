@@ -47,6 +47,7 @@ package org.netbeans.modules.uml.core.metamodel.dynamics;
 import org.netbeans.modules.uml.core.AbstractUMLTestCase;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.FactoryRetriever;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.TypedFactoryRetriever;
+
 /**
  * Test cases for Gate.
  */
@@ -59,7 +60,8 @@ public class GateTestCase extends AbstractUMLTestCase
 
     private IGate gate;
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see junit.framework.TestCase#setUp()
      */
     protected void setUp() throws Exception
@@ -70,7 +72,8 @@ public class GateTestCase extends AbstractUMLTestCase
         project.addElement(gate);
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see junit.framework.TestCase#tearDown()
      */
     protected void tearDown() throws Exception

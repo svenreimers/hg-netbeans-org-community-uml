@@ -48,7 +48,8 @@ import org.netbeans.modules.uml.core.metamodel.structure.IProject;
 
 public interface IProjectClassLocator extends IClassLocator
 {
-	/**
+	
+/**
 	 * Adds a project to the ProjectClassLoader.  The project will be used to search for classes.
 	*/
 	public void addProject( IProject pVal );

@@ -46,12 +46,11 @@ import org.netbeans.api.visual.widget.ConnectionWidget;
 import org.netbeans.modules.uml.core.metamodel.dynamics.IMessage;
 import org.netbeans.modules.uml.drawingarea.actions.SQDMessageConnectProvider;
 
-/**
- *
- * @author sp153251
- */
+
+
 public interface SQDDiagramEngineExtension {
-    /**
+    
+/**
      * need ability to move messages if necessary
      * @param msg
      * @param dy
@@ -65,7 +64,8 @@ public interface SQDDiagramEngineExtension {
         
     public void bumpMessage(ConnectionWidget msg,int dy);
 
-    /**
+    
+/**
      * need access for message connect provider from drawing area module
      * use second parameter for result of sycnh message if you have one and want it to be used in provider
      * @param call
@@ -74,14 +74,16 @@ public interface SQDDiagramEngineExtension {
      */
     abstract public SQDMessageConnectProvider getConnectProvider(IMessage call,IMessage result);
     
-    /**
+    
+/**
      * layout action operates with specific widgets on sqd, so located in diagrams
      * but invication should be from drawing area sometimes
      */
     
     public void layout(boolean save);
     
-    /**
+    
+/**
      * set mode not to use trackbar in next action (do not add car)
      * need to be called and reset after each action to avoid possible bad states.
      */

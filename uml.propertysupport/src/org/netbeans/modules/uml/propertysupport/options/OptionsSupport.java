@@ -53,10 +53,8 @@ import org.openide.filesystems.FileUtil;
 import org.openide.loaders.DataFolder;
 import org.openide.loaders.FolderLookup;
 
-/**
- *
- * @author krichard
- */
+
+
 
 public class OptionsSupport {
 

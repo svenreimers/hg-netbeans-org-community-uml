@@ -52,10 +52,8 @@ import org.netbeans.modules.uml.diagrams.nodes.sqd.InteractionOperatorWidget;
 import org.netbeans.modules.uml.diagrams.nodes.sqd.MessagePinWidget;
 import org.netbeans.modules.uml.drawingarea.widgets.ContainerWidget;
 
-/**
- *
- * @author sp153251
- */
+
+
 public class CombinedFragmentBodyLayout implements Layout {
     private static final Layout baseLayout = LayoutFactory.createAbsoluteLayout();
 

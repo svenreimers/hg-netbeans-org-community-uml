@@ -43,11 +43,8 @@
  */
 
 
-/*
- *
- * Created on Jun 10, 2003
- * @author Trey Spiva
- */
+
+
 package org.netbeans.modules.uml.ui.controls.projecttree;
 
 import org.netbeans.modules.uml.ui.products.ad.projecttreedefaultengine.FilteredItemManager;
@@ -58,53 +55,59 @@ import org.netbeans.modules.uml.core.eventframework.IEventPayload;
 import org.netbeans.modules.uml.ui.support.contextmenusupport.IProductContextMenu;
 import org.netbeans.modules.uml.ui.support.contextmenusupport.IProductContextMenuItem;
 
-/**
- * 
- * @author Trey Spiva
- */
+
+
 public interface IProjectTreeEventDispatcher extends IEventDispatcher
 {
-   /**
+   
+/**
     * 
    */
    public void registerProjectTreeContextMenuEvents(IProjectTreeContextMenuEventsSink handler);
 
-   /**
+   
+/**
     * 
     */
    public void revokeProjectTreeContextMenuSink(IProjectTreeContextMenuEventsSink handler);
 
-   /**
+   
+/**
     * 
     */
    public void registerProjectTreeEvents(IProjectTreeEventsSink handler);
 
-   /**
+   
+/**
     * 
     */
    public void revokeProjectTreeSink(IProjectTreeEventsSink handler);
-   /**
+   
+/**
     * 
     */
    public void fireProjectTreeContextMenuPrepare(IProjectTreeControl pParentControl,
                                                  IProductContextMenu contextMenu,
                                                  IEventPayload payload);
 
-   /**
+   
+/**
     * 
     */
    public void fireProjectTreeContextMenuPrepared(IProjectTreeControl pParentControl,
                                                   IProductContextMenu contextMenu,
                                                   IEventPayload payload);
 
-   /**
+   
+/**
     * 
     */
    public void fireProjectTreeContextMenuHandleDisplay(IProjectTreeControl pParentControl,
                                                        IProductContextMenu contextMenu,
                                                        IEventPayload payload);
 
-   /**
+   
+/**
     * 
     */
    public void fireProjectTreeContextMenuSelected(IProjectTreeControl pParentControl,
@@ -112,14 +115,16 @@ public interface IProjectTreeEventDispatcher extends IEventDispatcher
                                                   IProductContextMenuItem selectedItem,
                                                   IEventPayload payload);
 
-   /**
+   
+/**
     * A project node is being expanded
     */
    public void fireItemExpanding(IProjectTreeControl          pParentControl,
 	                              IProjectTreeExpandingContext context,
                                  IEventPayload                payload);
 
-   /**
+   
+/**
     * A project node is being expanded.  The expanded item will be populated
     * with only the items specified by the filter manager.
     */
@@ -127,7 +132,8 @@ public interface IProjectTreeEventDispatcher extends IEventDispatcher
 	                                        IProjectTreeExpandingContext context,
                                            FilteredItemManager          manager,
                                            IEventPayload                payload);
-   /**
+   
+/**
     * A project node is about to be edited
     */
    public void fireBeforeEdit(IProjectTreeControl    pParentControl,
@@ -135,7 +141,8 @@ public interface IProjectTreeEventDispatcher extends IEventDispatcher
                               IProjectTreeEditVerify pVerify,
                               IEventPayload          payload);
 
-   /**
+   
+/**
     * A project node has been edited
     */
    public void fireAfterEdit(IProjectTreeControl pParentControl,
@@ -143,7 +150,8 @@ public interface IProjectTreeEventDispatcher extends IEventDispatcher
                              IProjectTreeEditVerify pVerify,
                              IEventPayload payload);
 
-   /**
+   
+/**
     * A project node has been double clicked on
     */
    public void fireDoubleClick(IProjectTreeControl pParentControl,
@@ -154,14 +162,16 @@ public interface IProjectTreeEventDispatcher extends IEventDispatcher
                                boolean             isMeta,
                                IEventPayload       payload);
 
-   /**
+   
+/**
     * The tree's selection has changed
     */
    public void fireSelChanged(IProjectTreeControl pParentControl,
                               IProjectTreeItem[] pItem,
                               IEventPayload payload);
 
-   /**
+   
+/**
     * A project node has been right clicked on
     */
    public void fireRightButtonDown(IProjectTreeControl pParentControl,
@@ -171,7 +181,8 @@ public interface IProjectTreeEventDispatcher extends IEventDispatcher
                                    int nScreenLocY,
                                    IEventPayload payload);
 
-   /**
+   
+/**
     * A project node in beginning a drag operation
     */
    public void fireBeginDrag(IProjectTreeControl pParentControl,
@@ -179,7 +190,8 @@ public interface IProjectTreeEventDispatcher extends IEventDispatcher
                              IProjectTreeDragVerify pVerify,
                              IEventPayload payload);
 
-   /**
+   
+/**
     * A dataobject is proposed for dropping
     */
    public void fireMoveDrag(IProjectTreeControl pParentControl,
@@ -187,7 +199,8 @@ public interface IProjectTreeEventDispatcher extends IEventDispatcher
                             IProjectTreeDragVerify pVerify,
                             IEventPayload payload);
 
-   /**
+   
+/**
     * A dataobject has been dropped
     */
    public void fireEndDrag(IProjectTreeControl    pParentControl,

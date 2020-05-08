@@ -52,14 +52,16 @@ import org.netbeans.modules.uml.core.support.umlsupport.IResultCell;
 
 public interface IProjectTreeEventsSink
 {
-	/**
+	
+/**
 	 * A project node is being expanded
 	*/
 	public void onItemExpanding( IProjectTreeControl pParentControl,
                                 IProjectTreeExpandingContext pContext,
                                 IResultCell cell );
 
-   /**
+   
+/**
 	 * A project node is being expanded.  The expanded item will be populated
     * with only the items specified by the filter manager.
 	 */
@@ -68,7 +70,8 @@ public interface IProjectTreeEventsSink
                                           FilteredItemManager manager, 
                                           IResultCell cell );
    
-	/**
+	
+/**
 	 * A project node is about to be edited
 	*/
 	public void onBeforeEdit( IProjectTreeControl pParentControl, 
@@ -76,7 +79,8 @@ public interface IProjectTreeEventsSink
 	                          IProjectTreeEditVerify pVerify, 
 	                          IResultCell cell );
 
-	/**
+	
+/**
 	 * A project node has been edited
 	*/
 	public void onAfterEdit( IProjectTreeControl pParentControl,  
@@ -84,7 +88,8 @@ public interface IProjectTreeEventsSink
 	                         IProjectTreeEditVerify pVerify, 
 	                         IResultCell cell );
 
-	/**
+	
+/**
 	 * A project node has been double clicked on
 	*/
 	public void onDoubleClick( IProjectTreeControl pParentControl, 
@@ -95,14 +100,16 @@ public interface IProjectTreeEventsSink
                               boolean             isMeta, 
 	                           IResultCell         cell );
 
-	/**
+	
+/**
 	 * The tree's selection has changed
 	*/
 	public void onSelChanged( IProjectTreeControl pParentControl, 
 	                          IProjectTreeItem[] pItem, 
 	                          IResultCell cell );
 
-	/**
+	
+/**
 	 * A project node has been right clicked on
 	*/
 	public void onRightButtonDown( IProjectTreeControl pParentControl, 
@@ -112,7 +119,8 @@ public interface IProjectTreeEventsSink
 	                               int nScreenLocY, 
 	                               IResultCell cell );
 
-	/**
+	
+/**
 	 * A project node in beginning a drag operation
 	*/
 	public void onBeginDrag( IProjectTreeControl pParentControl, 
@@ -120,7 +128,8 @@ public interface IProjectTreeEventsSink
 	                         IProjectTreeDragVerify pVerify, 
 	                         IResultCell cell );
 
-	/**
+	
+/**
 	 * A dataobject is proposed for dropping
 	*/
 	public void onMoveDrag( IProjectTreeControl pParentControl, 
@@ -128,7 +137,8 @@ public interface IProjectTreeEventsSink
 	                        IProjectTreeDragVerify pVerify, 
 	                        IResultCell cell );
 
-	/**
+	
+/**
 	 * A dataobject has been dropped
 	*/
 	public void onEndDrag( IProjectTreeControl    pParentControl, 

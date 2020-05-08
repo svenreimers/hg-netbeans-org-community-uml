@@ -50,13 +50,15 @@ import org.netbeans.modules.uml.core.support.umlsupport.IResultCell;
 
 public interface ILifelineModifiedEventsSink
 {	
-    /**
+    
+/**
 	 * Fired whenever a lifeline's representing classifer is about to change.
 	 */
     public void onPreChangeRepresentingClassifier(ILifeline pLifeline,
             ITypedElement pRepresents, IResultCell cell);
 
-    /**
+    
+/**
 	 * Fired whenever a lifeline's representing classifer is changed.
 	 */
     public void onChangeRepresentingClassifier(ILifeline pLifeline,

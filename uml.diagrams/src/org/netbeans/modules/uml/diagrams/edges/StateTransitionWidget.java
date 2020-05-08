@@ -48,10 +48,8 @@ import org.netbeans.modules.uml.diagrams.actions.state.StateTransitionLabelManag
 import org.netbeans.modules.uml.drawingarea.LabelManager;
 import org.netbeans.modules.uml.drawingarea.view.UMLWidget;
 
-/**
- *
- * @author Sheryl Su
- */
+
+
 public class StateTransitionWidget extends AbstractUMLConnectionWidget
 {
 

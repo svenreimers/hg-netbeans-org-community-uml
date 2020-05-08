@@ -42,16 +42,12 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : IChangeableKind.java
- * Created on : Sep 16, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.metamodel.core.primitivetypes;
 
-/**
- * @author Aztec
- */
+
+
 public interface IChangeableKind
 {
     // Indicates that there is no restriction on adding new values, changing a value, or removing values to an occurence of a StructuralFeature.

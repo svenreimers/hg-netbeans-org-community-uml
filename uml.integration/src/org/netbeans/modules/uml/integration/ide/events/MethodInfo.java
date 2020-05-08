@@ -64,51 +64,8 @@ import org.netbeans.modules.uml.core.metamodel.structure.IProject;
 import org.netbeans.modules.uml.core.support.umlsupport.Log;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
-/**
- * The MethodInfo communicates with the EventManager to update Describe.
- * MethodInfo is still a high level class.  It knows how to communicate
- * with the EventMangaer to update Describe, but it does not know any of the
- * details of how to update Describe.
- * <br>
- * Because MethodInfo contains both before and after data, MethodInfo
- * is able to search for the metohd and update it to how the source file current
- * represents the method.
- *
- * Revision History
- * No.  Date        Who         What
- * ---  ----        ---         ----
- *   1  2002-04-25  Darshan     Reformatted to 4-space indent and added
- *                              constructor to create MethodInfo from an
- *                              IOperation
- *   2  2002-04-26  Darshan     Fixed dropped modifiers, corrected handling
- *                              of return types and parameters when
- *                              constructing a MethodInfo off an IOperation.
- *   3  2002-04-26  Darshan     Fixed NullPointerException when retrieving
- *                              return type for constructors.
- *   4  2002-04-30  Darshan     Used JavaClassUtils to map Describe's modifiers
- *                              to Java modifiers.
- *   5  2002-05-02  Darshan     Refixed using JavaClassUtils to map modifiers
- *                              - the wrong modifier was still being used.
- *   6  2002-05-03  Darshan     Kludged method parameter type retrieval to
- *                              default to int if no parameter type is found.
- *                              This prevents faulty events from producing
- *                              an unparseable Java file.
- *   7  2002-05-06  Darshan     Changed the MethodInfo(ClassInfo, IOperation)
- *                              constructor to call ElementInfo(INamedElement)
- *                              for model-source work.
- *   8  2002-05-15  Darshan     Added toString() method.
- *   9  2002-05-22  Darshan     Added code to handle method concurrency.
- *  10  2002-06-04  Darshan     Fixed bug with not picking up method parameters
- *                              correctly (issue #19).
- *  11  2002-06-14  Darshan     Fixed bug with code assuming that the parent
- *                              for an IOperation must be an IClass, instead of
- *                              an IClassifier.
- *  12  2002-06-19  Darshan     Added code to prevent interface methods being
- *                              explicitly flagged abstract.
- *
- * @see EventManager
- * @see ConstructorInfo
- */
+
+
 public class MethodInfo extends ConstructorInfo 
 {
     // Describe synchronization (concurrency) constants
@@ -120,18 +77,21 @@ public class MethodInfo extends ConstructorInfo
 
     private int lineNo = 0;
     
-    /**
+    
+/**
      *  The operation which this MethodInfo wraps. Will be null for source-model
      * operations, non-null for model-source operations.
      */
     private IOperation operation;
 
-    /**
+    
+/**
      * If this operation is an accessor or mutator, the attribute in question.
      */
     private MemberInfo attribute;
 
-    /**
+    
+/**
      * This is used to identify the attribute for which this is a getter or setter.
      * If this method is not getter or setter, this varibale will be null.
      */
@@ -139,7 +99,8 @@ public class MethodInfo extends ConstructorInfo
 
     private MethodParameterInfo returnParameter = null;
     
-    /**
+    
+/**
      * This is used to identify if this method is a getter or setter.
      * True indicates a getter
      * False indicates a setter.
@@ -147,7 +108,8 @@ public class MethodInfo extends ConstructorInfo
     private boolean accessor = false;
     private boolean mutator  = false;
 
-    /**
+    
+/**
 	 * @return Returns the lineNo.
 	 */
 	public  int getLineNo()
@@ -155,7 +117,8 @@ public class MethodInfo extends ConstructorInfo
 		return lineNo;
 	}
 	
-	/**
+	
+/**
 	 * @param lineNo The lineNo to set.
 	 */
 	public  void setLineNo(int lineNo)
@@ -163,7 +126,8 @@ public class MethodInfo extends ConstructorInfo
 		this.lineNo = lineNo;
 	}
 	
-	/**
+	
+/**
      *  Initializes a new MethodInfo.
      *  @param container The class that contains the data member.
      *  @param type The transaction type.
@@ -178,7 +142,8 @@ public class MethodInfo extends ConstructorInfo
         setOtherMethodInfo(container, op);
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      */
     @Override
     public IProject getOwningProject() {
@@ -270,7 +235,8 @@ public class MethodInfo extends ConstructorInfo
         }
     }
 
-    /**
+    
+/**
      *  Set the access modifiers for this method. Interface methods will be
      * forced abstract, regardless of the actual modifiers set (unless null).
      *
@@ -337,7 +303,8 @@ public class MethodInfo extends ConstructorInfo
         return params;
     }
 
-    /**
+    
+/**
      *  Returns an array of MethodParameterInfos describing the parameters of
      * the given operation.
      *  If the operation has no parameters, an empty array will be returned.
@@ -398,7 +365,8 @@ public class MethodInfo extends ConstructorInfo
         return null;
     }
 
-    /**
+    
+/**
      * Set the return type of the method.
      * @param value The return type.
      */
@@ -406,7 +374,8 @@ public class MethodInfo extends ConstructorInfo
         mReturn = value;
     }
 
-    /**
+    
+/**
      * Gets the return type of the method.
      * @return The return type.
      */
@@ -428,28 +397,32 @@ public class MethodInfo extends ConstructorInfo
 					  getContainingClass());
     }
 
-    /**
+    
+/**
      * Returns <code>true</code> if this is an accessor.
      */
     public boolean isAccessor() {
         return accessor;
     }
 
-    /**
+    
+/**
      * Returns <code>true</code> if this is a mutator.
      */
     public boolean isMutator() {
         return mutator;
     }
 
-    /**
+    
+/**
      * Gets the member name for which this is an accessor.
      */
     public String getMemberName() {
         return attributeName;
     }
 
-    /**
+    
+/**
      * Updates the method.  A Class Transaction is began and
      * {@link #update(GDSymbolTransaction trans) update}
      * is called.
@@ -460,7 +433,8 @@ public class MethodInfo extends ConstructorInfo
         super.update();
     }
 
-    /**
+    
+/**
      * Updates the method using the specified Symbol transaction.
      * @param trans The transaction that is to be used to update the correct symbol.
      * @return The method transaction that was created to update the data member.
@@ -480,7 +454,8 @@ public class MethodInfo extends ConstructorInfo
         return retVal;
     }
 
-    /**
+    
+/**
      *  Returns whether the parameter list of this method needs to be
      * updated to the Describe model.
      *

@@ -42,11 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : PreRequestFactory.java
- * Created on : Nov 11, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.roundtripframework;
 
 import org.netbeans.modules.uml.core.eventframework.IEventPayload;
@@ -57,12 +54,12 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.IRelationProxy;
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier;
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IParameter;
 
-/**
- * @author Aztec
- */
+
+
 public class PreRequestFactory
 {
-    /**
+    
+/**
      *
      * Creates the appropriate PreRequest type given the pre event
      *
@@ -151,7 +148,8 @@ public class PreRequestFactory
     }
 
 
-    /**
+    
+/**
      *
      * 
      *
@@ -216,7 +214,8 @@ public class PreRequestFactory
     }
 
 
-    /**
+    
+/**
      *
      * 
      *

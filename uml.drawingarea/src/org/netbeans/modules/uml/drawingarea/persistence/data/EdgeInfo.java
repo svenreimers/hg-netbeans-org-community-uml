@@ -51,10 +51,8 @@ import java.util.List;
 
 import org.netbeans.modules.uml.core.metamodel.core.foundation.IPresentationElement;
 
-/**
- *
- * @author jyothi
- */
+
+
 public class EdgeInfo
 {
 

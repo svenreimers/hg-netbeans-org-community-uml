@@ -52,11 +52,8 @@ import javax.swing.ProgressMonitor;
 
 import org.netbeans.modules.uml.ui.support.applicationmanager.IProgressCtrl;
 
-/**
- * @author sumitabhk
- *
- *
- */
+
+
 public class ThermProgress
 {
 	/// The progress ctrl
@@ -76,7 +73,8 @@ public class ThermProgress
       this( ProductHelper.getWindowHandle() );
    }
    
-   /**
+   
+/**
     * 
     */
    public ThermProgress( Component parent )

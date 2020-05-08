@@ -68,10 +68,8 @@ import org.openide.util.Lookup;
 import org.openide.util.lookup.AbstractLookup;
 import org.openide.util.lookup.InstanceContent;
 
-/**
- *
- * @author sp153251
- */
+
+
 public class EditableCompartmentWidget extends UMLLabelWidget {
 
     private InplaceEditorProvider.EditorController edcAction;
@@ -79,7 +77,8 @@ public class EditableCompartmentWidget extends UMLLabelWidget {
     private InstanceContent lookupContent = new InstanceContent();
     private Lookup lookup = new AbstractLookup(lookupContent);
     public static final String ID = "EditableCompartment";
-    /**
+    
+/**
      * Creates empty label
      * EC will use border of this widget and with model element derived from this widget
      * 
@@ -97,7 +96,8 @@ public class EditableCompartmentWidget extends UMLLabelWidget {
         this(scene, "", toFit, (IElement)null, id, null);
     }
     
-    /**
+    
+/**
      * Creates label with text
      * EC will use border of this widget and with model element derived from this widget
      * 
@@ -121,7 +121,8 @@ public class EditableCompartmentWidget extends UMLLabelWidget {
         
     }
     
-    /**
+    
+/**
      * @param baseGraphWidget border of toFit widget will be considered as 
      *                        bounds for edit control 
      * @param basModelWidget will be used to get presentation element (for 
@@ -151,7 +152,8 @@ public class EditableCompartmentWidget extends UMLLabelWidget {
         createActions(DesignerTools.SELECT).addAction(action);//TBD need to add lock edit support
     }
     
-    /**
+    
+/**
      * @param baseGraphWidget border of toFit widget will be considered as bounds for edit control 
      * @param basModelWidget will be used to get presentation element (for example name will take class widget and appropriate presentation when attribute will take attribute widget with attribute presentation)
      * @param text  - text to label
@@ -210,7 +212,8 @@ public class EditableCompartmentWidget extends UMLLabelWidget {
         }
         
         
-        /**
+        
+/**
          * @param toFit border of toFit widget will be considered as bounds for edit control jm=[]
          * @param presentationWidget will be used to get presentation element
          */
@@ -221,7 +224,8 @@ public class EditableCompartmentWidget extends UMLLabelWidget {
             basePresentationWidget=presentationWidget;
         }
         
-        /**
+        
+/**
          * @param toFit border of toFit widget will be considered as bounds for edit control 
          * @param element specification of corresponding model element
          */

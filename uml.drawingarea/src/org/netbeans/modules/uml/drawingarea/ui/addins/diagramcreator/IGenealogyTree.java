@@ -49,10 +49,8 @@ import org.netbeans.modules.uml.core.support.umlsupport.IETRect;
 //import org.netbeans.modules.uml.ui.support.applicationmanager.INodePresentation;
 //import org.netbeans.modules.uml.ui.swing.drawingarea.IDrawingAreaControl;
 
-/**
- * @author sumitabhk
- *
- */
+
+
 public interface IGenealogyTree
 {
 	// Adds a node to our list of nodes that are undetermined what their parentage is

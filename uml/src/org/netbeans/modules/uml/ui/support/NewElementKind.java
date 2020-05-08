@@ -43,17 +43,12 @@
  */
 
 
-/*
- *
- * Created on Jul 1, 2003
- * @author Trey Spiva
- */
+
+
 package org.netbeans.modules.uml.ui.support;
 
-/**
- *
- * @author Trey Spiva
- */
+
+
 public interface NewElementKind
 {
 	public final static int NEK_NONE = 0;

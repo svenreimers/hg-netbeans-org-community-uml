@@ -42,6 +42,7 @@
  * made subject to such option by the copyright holder.
  */
 
+
 /*
  * Created on Mar 5, 2004
  *
@@ -49,11 +50,8 @@
  */
 package org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpcomponent;
 
-/**
- * @author avaneeshj
- *
- * Window - Preferences - Java - Code Generation - Code and Comments
- */
+
+
 
 import java.awt.BorderLayout;
 import java.awt.Dimension;
@@ -359,7 +357,8 @@ public class PreferenceControlledInputDialog extends JCenterDialog
 	}	
 	 	return retVal;
 	}
- /* (non-Javadoc)
+ 
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.ISilentDialog#isRunSilent()
     */
    public boolean isRunSilent()
@@ -400,7 +399,8 @@ public class PreferenceControlledInputDialog extends JCenterDialog
       return retVal;
     }
 
-	/**
+	
+/**
 	 * The default button (ie IDOK).  See the return values for AfxMessageBox.
 	 */
 	public void setDefaultButton(int nButton)
@@ -413,7 +413,8 @@ public class PreferenceControlledInputDialog extends JCenterDialog
 		textBoxText = value;
 	}
 
-	/**
+	
+/**
 	 * Sets / Gets the text in the edit control.
 	*/
 	public String getEditText()
@@ -472,7 +473,8 @@ public class PreferenceControlledInputDialog extends JCenterDialog
 	   m_AutoUpdatePreference = bVal;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Gets whether the preference file should be updated when the Preference Value
 	 * is set.
@@ -488,7 +490,8 @@ public class PreferenceControlledInputDialog extends JCenterDialog
 	   return m_AutoUpdatePreference;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Set the preference key.  If no key is specified, Default is assumed.
 	 *
@@ -503,7 +506,8 @@ public class PreferenceControlledInputDialog extends JCenterDialog
 	   m_PrefKey = sVal;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Gets the preference key.  If no key is specified, Default is assumed.
 	 *
@@ -518,7 +522,8 @@ public class PreferenceControlledInputDialog extends JCenterDialog
 	   return m_PrefName;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Set the preference path.  The path is the part between the key
 	 * and the name.
@@ -534,7 +539,8 @@ public class PreferenceControlledInputDialog extends JCenterDialog
 	   m_PrefPath = sVal;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Get the preference path.  The path is the part between the key
 	 * and the name.
@@ -549,7 +555,8 @@ public class PreferenceControlledInputDialog extends JCenterDialog
 	{
 	   return m_PrefName;
 	}
-	/**
+	
+/**
 	 *
 	 * Set the preference name.
 	 *
@@ -563,7 +570,8 @@ public class PreferenceControlledInputDialog extends JCenterDialog
 	{
 	   m_PrefName = sVal;
 	}
-	/**
+	
+/**
 	 *
 	 * Get the preference name.
 	 *
@@ -578,7 +586,8 @@ public class PreferenceControlledInputDialog extends JCenterDialog
 	   return m_PrefName;
 	}
 	
-	/**
+	
+/**
 	 * Retrieves the questions answer and preference value for Always and Never dialogs.
 	 * When the user selects <I>Always</I> nResult will be set to SQDRK_RESULT_YES and
 	 * the preference will be m_sAffirmative.  When the user selects <I>Never</> nResult
@@ -611,7 +620,8 @@ public class PreferenceControlledInputDialog extends JCenterDialog
 	   	return prefValue;
 	}
 	
-	/**
+	
+/**
 	 * Retrieves the questions answer and preference value for Always and Never dialogs.
 	 * When the user selects <I>Yes</I> and checks the checkbox nResult will be set to 
 	 * SQDRK_RESULT_YES or SQDRK_RESULT_OK and the preference will be m_sAffirmative.  

@@ -80,10 +80,8 @@ import org.openide.util.Lookup;
 import org.openide.util.lookup.AbstractLookup;
 import org.openide.util.lookup.InstanceContent;
 
-/**
- *
- * @author treyspiva
- */
+
+
 public abstract class FeatureWidget extends CustomizableWidget
         implements DiagramNodeWriter, DiagramEdgeWriter, UMLWidget
 {
@@ -193,7 +191,8 @@ public abstract class FeatureWidget extends CustomizableWidget
         }
     }
     
-    /**
+    
+/**
      * 
      * @param attr
      */
@@ -441,7 +440,8 @@ public abstract class FeatureWidget extends CustomizableWidget
         if(label!=null)label.switchToEditMode();
     }
     
-    /**
+    
+/**
      * select feature widget for edition, usually after addiion of new feature widget
      * works for active editor only
      */

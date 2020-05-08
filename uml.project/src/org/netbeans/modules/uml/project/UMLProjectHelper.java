@@ -42,6 +42,7 @@
  * made subject to such option by the copyright holder.
  */
 
+
 /*
  * UMLProjectHelper.java
  *
@@ -78,10 +79,8 @@ import org.openide.windows.TopComponent;
 import org.openide.windows.WindowManager;
 
 
-/**
- *
- * @author  treys
- */
+
+
 public class UMLProjectHelper
 {
     private AntProjectHelper antHelper = null;
@@ -311,7 +310,8 @@ public class UMLProjectHelper
         return retVal;
     }
     
-    /**
+    
+/**
      * @param b
      */
     public void closeProject(boolean save)

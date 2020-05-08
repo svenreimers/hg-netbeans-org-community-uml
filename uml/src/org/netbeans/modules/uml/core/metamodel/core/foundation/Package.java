@@ -63,12 +63,8 @@ import org.netbeans.modules.uml.core.support.umlutils.ETArrayList;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 import org.netbeans.modules.uml.core.typemanagement.ITypeManager;
 
-/**
- * @author sumitabhk
- *
- * To change the template for this generated type comment go to
- * Window>Preferences>Java>Code Generation>Code and Comments
- */
+
+
 public class Package extends Namespace implements IPackage, IAutonomousElement
 {
     IAutonomousElement m_AutonomousAggregate = new AutonomousElement();
@@ -88,7 +84,8 @@ public class Package extends Namespace implements IPackage, IAutonomousElement
         m_AutonomousAggregate.setNode(n);
     }
     
-    /**
+    
+/**
      *
      * Adds the passed-in element import to this Package's collection of
      * ElementImports.
@@ -137,7 +134,8 @@ public class Package extends Namespace implements IPackage, IAutonomousElement
         }
     }
     
-    /**
+    
+/**
      * 
      * Removes the passed-in element from this package import list
      *
@@ -172,7 +170,8 @@ public class Package extends Namespace implements IPackage, IAutonomousElement
         }
     }
     
-    /**
+    
+/**
      *
      * Retrieves the collection of ElementImports this package maintains.
      *
@@ -187,7 +186,8 @@ public class Package extends Namespace implements IPackage, IAutonomousElement
         return retrieveElementCollection(dummy, "UML:Package.elementImport/*", IElementImport.class);
     }
     
-    /**
+    
+/**
      *
      * Adds the passed-in import to this Package.
      *
@@ -236,7 +236,8 @@ public class Package extends Namespace implements IPackage, IAutonomousElement
         }
     }
     
-    /**
+    
+/**
      *
      * Removes the passed-in import from this package's collection of PackageImports.
      *
@@ -259,7 +260,8 @@ public class Package extends Namespace implements IPackage, IAutonomousElement
 //        } 
     }
     
-    /**
+    
+/**
      *
      * Retrieves the collection if PackageImports this Package maintains.
      *
@@ -274,7 +276,8 @@ public class Package extends Namespace implements IPackage, IAutonomousElement
         return retrieveElementCollection(dummy, "UML:Package.packageImport/*", IPackageImport.class);
     }
     
-    /**
+    
+/**
      *
      * Searches all the imported element, both package a element imports, for an element whose name
      * matches typeName.
@@ -301,7 +304,8 @@ public class Package extends Namespace implements IPackage, IAutonomousElement
         return retElems;
     }
     
-    /**
+    
+/**
      *
      * Instructs this package to import another. The proper PackageImport object is constructed,
      * initialized, added to this package, and then returned.
@@ -360,7 +364,8 @@ public class Package extends Namespace implements IPackage, IAutonomousElement
         return retImp;
     }
     
-    /**
+    
+/**
      *
      * Instructs this package to import an element that is contained within an external package.
      * The proper ElementImport object is constructed, initialized, added to this Package,
@@ -429,7 +434,8 @@ public class Package extends Namespace implements IPackage, IAutonomousElement
         return UMLXMLManip.queryCount(m_Node, "UML:Package.packageImport/*", false);
     }
     
-    /**
+    
+/**
      *
      * Retrieves the imported Packages currently imported on this Package
      *
@@ -465,7 +471,8 @@ public class Package extends Namespace implements IPackage, IAutonomousElement
         return retSpaces;
     }
     
-    /**
+    
+/**
      *
      * Retrieves the collection of imported elements
      *
@@ -499,7 +506,8 @@ public class Package extends Namespace implements IPackage, IAutonomousElement
         return retElems;
     }
     
-    /**
+    
+/**
      *
      * Establishes the appropriate XML elements for this UML type.
      *
@@ -515,7 +523,8 @@ public class Package extends Namespace implements IPackage, IAutonomousElement
         buildNodePresence( "UML:Package", doc, parent );
     }
     
-    /**
+    
+/**
      *
      * Searches through all the ElementImport objects for the specified element.
      *
@@ -554,7 +563,8 @@ public class Package extends Namespace implements IPackage, IAutonomousElement
         return retElems;
     }
     
-    /**
+    
+/**
      *
      * Searchs the package imports for a package whose name matches typeName
      *
@@ -584,7 +594,8 @@ public class Package extends Namespace implements IPackage, IAutonomousElement
         return retElems;
     }
     
-    /**
+    
+/**
      *
      * Prepares the importElement. Makes sure the element is unique, and sets the loadedVersion attribute
      * accordingly.
@@ -666,7 +677,8 @@ public class Package extends Namespace implements IPackage, IAutonomousElement
         return retVal;
     }
     
-    /**
+    
+/**
      *
      * Verifies the the passed in XMI id is unique in either the imported element collection
      * on this package or the imported package collection, dependent on the value of
@@ -720,7 +732,8 @@ public class Package extends Namespace implements IPackage, IAutonomousElement
         return dup;
     }
     
-    /**
+    
+/**
      *
      * Duplicates all the ElementImport objects owned by the duplicated
      * Package
@@ -749,7 +762,8 @@ public class Package extends Namespace implements IPackage, IAutonomousElement
         }
     }
     
-    /**
+    
+/**
      *
      * Duplicates all the PackageImport objects owned by the duplicated
      * Package
@@ -789,7 +803,8 @@ public class Package extends Namespace implements IPackage, IAutonomousElement
         super.establishNodeAttributes( node );
     }
     
-    /**
+    
+/**
      *
      * Retrieves the absolute directory where code owned by elements of this package
      * should be generated
@@ -853,7 +868,8 @@ public class Package extends Namespace implements IPackage, IAutonomousElement
         return srcDir;
     }
     
-    /**
+    
+/**
      *
      * Sets the directory where code belonging to elements owned
      * by this package is generated to. This will only be set if this
@@ -908,7 +924,8 @@ public class Package extends Namespace implements IPackage, IAutonomousElement
         }
     }
     
-    /**
+    
+/**
      *
      * Determines whether or not this package is a top level package.
      * A top level package is any package directly owned by the Project
@@ -959,7 +976,8 @@ public class Package extends Namespace implements IPackage, IAutonomousElement
         return topLevel;
     }
     
-    /**
+    
+/**
      *
      * Retrieves the top level package that curPack is owned by.
      *
@@ -994,7 +1012,8 @@ public class Package extends Namespace implements IPackage, IAutonomousElement
         return topLevel;
     }
     
-    /**
+    
+/**
      *
      * Ensures that an appropriate path is constructed given the source directory and the
      * name of this package
@@ -1020,7 +1039,8 @@ public class Package extends Namespace implements IPackage, IAutonomousElement
         return path;
     }
     
-    /**
+    
+/**
      *
      * Checks and makes sure the source dir entry passes a couple of tests, such
      * as stripping off the name of the Package off the end of the entry, converting
@@ -1054,7 +1074,8 @@ public class Package extends Namespace implements IPackage, IAutonomousElement
         return newSourceDir;
     }
     
-    /**
+    
+/**
      * Validate the passed in values according to the Describe business rules.
      * See method for the rules.
      *

@@ -47,62 +47,74 @@ package org.netbeans.modules.uml.core.metamodel.diagrams;
 
 public interface IDiagramValidation
 {
-	/**
+	
+/**
 	 * Reset the validation and response flags.  Done on create automatically.
 	*/
 	public void reset();
 
-	/**
+	
+/**
 	 * Should we validate nodes?
 	*/
 	public boolean getValidateNodes();
 
-	/**
+	
+/**
 	 * Should we validate nodes?
 	*/
 	public void setValidateNodes( boolean value );
 
-	/**
+	
+/**
 	 * Should we validate links?
 	*/
 	public boolean getValidateLinks();
 
-	/**
+	
+/**
 	 * Should we validate links?
 	*/
 	public void setValidateLinks( boolean value );
 
-	/**
+	
+/**
 	 * Add something that needs validation
 	*/
 	public void addValidationKind( /* DiagramValidateKind */ int nKind );
 
-	/**
+	
+/**
 	 * Remove an item from validation
 	*/
 	public void removeValidationKind( /* DiagramValidateKind */ int nKind );
 
-	/**
+	
+/**
 	 * Should we validate this item?
 	*/
 	public boolean getValidationKind( /* DiagramValidateKind */ int nKind );
 
-	/**
+	
+/**
 	 * Create a IGraphObjectValidation based on the kinds in this object
 	*/
 	public IGraphObjectValidation createGraphObjectValidation();
 
-	/**
+	
+/**
 	 * Add an action we should take after validation has finished.
 	*/
 	public void addValidationResponse( /* DiagramValidateResponse */ int nKind );
 
-	/**
+	
+/**
 	 * Remove a response
 	*/
 	public void removeValidationResponse( /* DiagramValidateResponse */ int nKind );
 
-	/**
+	
+/**
 	 * Get a validation response.  What should the diagram do after the validation has completed?
 	*/
 	public boolean getValidationResponse( /* DiagramValidateResponse */ int nKind );

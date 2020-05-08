@@ -91,10 +91,8 @@ import org.netbeans.modules.uml.ui.support.ProductHelper;
 import org.netbeans.modules.uml.ui.support.applicationmanager.IProduct;
 import org.netbeans.modules.uml.ui.support.applicationmanager.IProductProjectManager;
 
-/**
- * @author sumitabhk
- *
- */
+
+
 public class TranslatorImpl implements ITranslator
 {
    // state attributes, used with AxEditCtrl
@@ -105,7 +103,7 @@ public class TranslatorImpl implements ITranslator
    private Vector m_TextFields = null;
    private boolean m_Modified = false;
    
-   /// The formatter object that will eventually replace all these other members
+   
    private IPropertyDefinitionFactory m_DefinitionFactory = null;
    private IPropertyElementManager m_ElementManager = null;
    private IEditControlField m_ParentField = null;
@@ -127,7 +125,8 @@ public class TranslatorImpl implements ITranslator
       super();
    }
    
-   /**
+   
+/**
     * Gets/Sets the model element.
     *
     * @param pElement[out]
@@ -137,7 +136,8 @@ public class TranslatorImpl implements ITranslator
       return m_Element;
    }
    
-   /**
+   
+/**
     * Gets/Sets the model element.
     *
     * @param pElement[in]
@@ -147,7 +147,8 @@ public class TranslatorImpl implements ITranslator
       m_Element = pElement;
    }
    
-   /**
+   
+/**
     * Returns the EditControl reference.
     *
     * @param pControl[out] The edit control associated with this editing session.
@@ -188,7 +189,8 @@ public class TranslatorImpl implements ITranslator
       return retObj;
    }
    
-   /**
+   
+/**
     * Sets the AxEditCtrl, called prior to editing.  The text fields are initialized and the
     * edit control's window set to the current contents of this Translator.
     *
@@ -215,7 +217,8 @@ public class TranslatorImpl implements ITranslator
       }
    }
    
-   /**
+   
+/**
     * Sets the AxEditCtrl only, does not perform any initialization.
     *
     * @param pControl A pointer to the edit control that uses this Translator..
@@ -238,15 +241,8 @@ public class TranslatorImpl implements ITranslator
       }
    }
    
-   /**
-    * Get a formatted string.  The data is from the model and may not reflect any
-    * un-saved changes made via editing.
-    *
-    * C++ Specifications : visibility return-type-expression name ( parameter-list )
-    * UML Specifications : visibility name ( parameter-list ) : return-type-expression { property-string }
-    *
-    * For the sake of the simple format the optional property string will not be returned.
-    */
+   
+
    public String getSimple()
    {
       String retStr = "";
@@ -261,7 +257,8 @@ public class TranslatorImpl implements ITranslator
       return retStr;
    }
    
-   /**
+   
+/**
     * Builds up the display string by concatenating each visible field.
     * You must call InitTextFields() before calling get_Current() to
     * create and fill each text field.  InitTextFields() a protected
@@ -327,7 +324,8 @@ public class TranslatorImpl implements ITranslator
       return retStr;
    }
    
-        /*
+        
+/*
          * Makes the field visible, fills with default data if available.
          *
          * @param pField[in]
@@ -346,7 +344,8 @@ public class TranslatorImpl implements ITranslator
       }
    }
    
-   /**
+   
+/**
     * Returns a TextField collection representing each field in the translated string.
     *
     * @param pFields[out]
@@ -360,7 +359,8 @@ public class TranslatorImpl implements ITranslator
       return m_TextFields;
    }
    
-   /**
+   
+/**
     * Gets the caret position, called by the edit control.
     *
     * @param nPos[in]
@@ -374,7 +374,8 @@ public class TranslatorImpl implements ITranslator
       return 0;
    }
    
-   /**
+   
+/**
     * Sets the caret position, called by the edit control.
     *
     * @param nPos[out]
@@ -384,7 +385,8 @@ public class TranslatorImpl implements ITranslator
       setPosition(pos, pos);
    }
    
-   /**
+   
+/**
     * Returns the starting and ending position of the editable text contained by this Translator.  The
     * position is the offset within the edit control.
     *
@@ -413,7 +415,8 @@ public class TranslatorImpl implements ITranslator
       }
    }
    
-   /**
+   
+/**
     * Returns the starting and ending position of the textfields contained by this Translator.  The
     * position is the offset within the edit control.
     *
@@ -440,7 +443,8 @@ public class TranslatorImpl implements ITranslator
       }
    }
    
-   /**
+   
+/**
     * Sets the position of the fields contained by this translator to the edit control position indicated.
     * Ordinarily a Translator's first field always starts at edit position 0, however in the case
     * of sub-fields they could be different.
@@ -491,7 +495,8 @@ public class TranslatorImpl implements ITranslator
       }
    }
    
-   /**
+   
+/**
     * Sets the edit control's cursor position and selects text.
     */
    public void setPosition(int nStartPos, int nEndPos)
@@ -506,7 +511,8 @@ public class TranslatorImpl implements ITranslator
       updateHints();
    }
    
-        /* (non-Javadoc)
+        
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.ui.controls.editcontrol.ITranslator#handleKeyDown(int)
          */
    public boolean handleKeyDown(int nKey)
@@ -787,7 +793,8 @@ public class TranslatorImpl implements ITranslator
       return handled;
    }
    
-        /* (non-Javadoc)
+        
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.ui.controls.editcontrol.ITranslator#handleKeyUp(int)
          */
    public boolean handleKeyUp(int nKey)
@@ -796,7 +803,8 @@ public class TranslatorImpl implements ITranslator
       return false;
    }
    
-   /**
+   
+/**
     * Process WM_CHAR for translated input.
     *
     * @param nChar[in]
@@ -963,7 +971,8 @@ public class TranslatorImpl implements ITranslator
       }
    }
    
-   /**
+   
+/**
     * Identifies the allowed characters for edit control.
     * @param nChar
     * @return
@@ -972,7 +981,7 @@ public class TranslatorImpl implements ITranslator
    {
       boolean isFiltered = true;
       
-      //right now we allow only alpha numeric, _, : and blank
+      
       if (Character.isLetterOrDigit(nChar))
       {
          isFiltered = false;
@@ -988,7 +997,8 @@ public class TranslatorImpl implements ITranslator
       return isFiltered;
    }
    
-        /* (non-Javadoc)
+        
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.ui.controls.editcontrol.ITranslator#handleLButtonDown(int)
          */
    public boolean handleLButtonDown(int nPosition)
@@ -997,7 +1007,8 @@ public class TranslatorImpl implements ITranslator
       return false;
    }
    
-        /* (non-Javadoc)
+        
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.ui.controls.editcontrol.ITranslator#handleLButtonDblClk(int)
          */
    public boolean handleLButtonDblClk(int nPosition)
@@ -1006,7 +1017,8 @@ public class TranslatorImpl implements ITranslator
       return false;
    }
    
-        /* (non-Javadoc)
+        
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.ui.controls.editcontrol.ITranslator#handleLButtonTripleClk(int)
          */
    public boolean handleLButtonTripleClk(int nPosition)
@@ -1015,7 +1027,8 @@ public class TranslatorImpl implements ITranslator
       return false;
    }
    
-   /**
+   
+/**
     * Called when the control is initially activated.  Selects the first entire field for editing.
     */
    public void onSetFocus()
@@ -1034,7 +1047,8 @@ public class TranslatorImpl implements ITranslator
       }
    }
    
-   /**
+   
+/**
     * Save the model element.
     *
     * DO NOT RECURSE!  This member is called by the edit control only.
@@ -1085,7 +1099,8 @@ public class TranslatorImpl implements ITranslator
       }
    }
    
-   /**
+   
+/**
     * Updates the translator's internal position pointer without affecting the edit control.  To update
     * the position pointer and move the edit control cursor caret use Position();
     *
@@ -1101,7 +1116,8 @@ public class TranslatorImpl implements ITranslator
       }
    }
    
-   /**
+   
+/**
     *
     * Turns field visibility override off. Thus the field's visibility within the edit control is dictated by its
     * visibility settings, e.g. notEmpty, enabled, not deleted, etc.
@@ -1136,7 +1152,8 @@ public class TranslatorImpl implements ITranslator
       }
    }
    
-   /**
+   
+/**
     *
     * Returns the text field at a given character position.
     *
@@ -1159,7 +1176,8 @@ public class TranslatorImpl implements ITranslator
       return pField;
    }
    
-      /* (non-Javadoc)
+      
+/* (non-Javadoc)
        * @see org.netbeans.modules.uml.ui.controls.editcontrol.ITranslator#cutToClipboard()
        */
       public void cutToClipboard()
@@ -1198,7 +1216,8 @@ public class TranslatorImpl implements ITranslator
          }
       }
 
-      /* (non-Javadoc)
+      
+/* (non-Javadoc)
        * @see org.netbeans.modules.uml.ui.controls.editcontrol.ITranslator#pasteFromClipboard()
        */
       public void pasteFromClipboard()
@@ -1243,7 +1262,8 @@ public class TranslatorImpl implements ITranslator
          }
       }
 
-      /* (non-Javadoc)
+      
+/* (non-Javadoc)
        * @see org.netbeans.modules.uml.ui.controls.editcontrol.ITranslator#copyToClipboard()
        */
       public void copyToClipboard()
@@ -1251,7 +1271,8 @@ public class TranslatorImpl implements ITranslator
          // TODO Auto-generated method stub
       }
    
-   /**
+   
+/**
     * Retrieves the text for the edit control's tooltip. The text is retrieved
     * in 3 parts: a left, middle (subject) and right part.  The subject
     * part is highlighted within the tooltip and reflects the tip for the current text field.
@@ -1367,7 +1388,8 @@ public class TranslatorImpl implements ITranslator
       return bstrLeft + bstrSubject + bstrRight;
    }
    
-   /**
+   
+/**
     *
     * Updates the edit tool tip text. Text is retrieved from each text field's TooltipText property
     * and concatenated together.  The currently active field is highlighted.
@@ -1386,7 +1408,8 @@ public class TranslatorImpl implements ITranslator
       }
    }
    
-   /**
+   
+/**
     * Retrieves the property elements that represent the elements data.
     * the property elements structure will be dictated by the specified
     * property elements.
@@ -1443,7 +1466,8 @@ public class TranslatorImpl implements ITranslator
       return retEle;
    }
    
-        /*
+        
+/*
          * Puts text fields in order, sets starting and ending positions.
          *
          */
@@ -1456,7 +1480,7 @@ public class TranslatorImpl implements ITranslator
          IDataFormatter pFormatter = ProductHelper.getDataFormatter();
          if (pFormatter != null)
          {
-            // call data formatter to get the proper property element for our model element
+            
             m_PropertyElement = pFormatter.getPropertyElement(m_Element);
             if (m_PropertyElement != null)
             {
@@ -1485,7 +1509,8 @@ public class TranslatorImpl implements ITranslator
       
    }
    
-        /*
+        
+/*
          * Replaces text in a field, updates the edit control and current position
          * if nStartPos or nEndPos are empty replaces from the beginning/end of the field
          * if sText is empty, deletes the text between nStartPos and nEndPos.
@@ -1611,7 +1636,8 @@ public class TranslatorImpl implements ITranslator
       return retVal;
    }
    
-        /*
+        
+/*
          * Toggles a field on or off, does not refresh the edit control.
          *
          * @param pField[in]
@@ -1637,7 +1663,8 @@ public class TranslatorImpl implements ITranslator
       }
    }
    
-   /**
+   
+/**
     * Updates the edit control with the contents of the fields.
     */
    private void refreshEditControl()
@@ -1650,7 +1677,8 @@ public class TranslatorImpl implements ITranslator
       }
    }
    
-   /**
+   
+/**
     * Selects the entire field in the edit control.
     *
     * @param pField[in]
@@ -1763,7 +1791,8 @@ public class TranslatorImpl implements ITranslator
       }
    }
    
-   /**
+   
+/**
     * Returns the minimum bounding rect around the text given the current font.
     *
     * @param hDC[in]
@@ -1794,7 +1823,8 @@ public class TranslatorImpl implements ITranslator
       return retObj;
    }
    
-   /**
+   
+/**
     * Internal helper for get_TextExtent.
     *
     * @param pField[in]
@@ -1812,7 +1842,8 @@ public class TranslatorImpl implements ITranslator
       return retObj;
    }
    
-        /*
+        
+/*
          * adds the field for this property element
          */
    public void addField(IPropertyElement pData, boolean bNoUpdate)
@@ -1843,7 +1874,7 @@ public class TranslatorImpl implements ITranslator
                   IDataFormatter pFormatter = ProductHelper.getDataFormatter();
                   if (pFormatter != null)
                   {
-                     //pFormatter.processEnumeration(pData);
+                     
                   }
                   
                   // Attach ourselves to this field
@@ -1875,13 +1906,13 @@ public class TranslatorImpl implements ITranslator
             IDataFormatter pFormatter = ProductHelper.getDataFormatter();
             if (pFormatter != null)
             {
-               //pFormatter.processEnumeration(pData);
+               
             }
             
             // add the field to our array
             addField( pField );
             
-            // save the data into the field, this reads the formatting information into the field
+            
             pField.setPropertyElement(pData);
             
             // now, if the field contains sub-fields, set their edit control (I don't think this should be necessary)
@@ -1951,7 +1982,8 @@ public class TranslatorImpl implements ITranslator
       return pField;
    }
    
-   /**
+   
+/**
     * Sets the edit control's tooltip and hint bar
     */
    public void updateHints()
@@ -1977,7 +2009,8 @@ public class TranslatorImpl implements ITranslator
       }
    }
    
-   /**
+   
+/**
     * Sets the edit control's tooltip and hint bar
     */
    public void handleHint()
@@ -2111,7 +2144,8 @@ public class TranslatorImpl implements ITranslator
       return list;
    }
    
-   /**
+   
+/**
     * Copies the changed data back into our property elements
     *
     */
@@ -2150,7 +2184,8 @@ public class TranslatorImpl implements ITranslator
       }
    }
    
-   /**
+   
+/**
     *
     * Saves all the fields in the m_Fields collection
     *
@@ -2188,7 +2223,8 @@ public class TranslatorImpl implements ITranslator
       return (isInert == false);
    }
    
-   /**
+   
+/**
     * Get the value of a text field contained by this translat
     * (cannot be used for separator fields).
     *
@@ -2210,7 +2246,8 @@ public class TranslatorImpl implements ITranslator
       return retText;
    }
    
-   /**
+   
+/**
     *
     * Return the selection range of the edit control.  If no text is selected
     * both return values will indicate the current cursor position.
@@ -2235,7 +2272,8 @@ public class TranslatorImpl implements ITranslator
       }
    }
    
-   /**
+   
+/**
     *
     * Selects a range of text in the edit control.
     *
@@ -2259,7 +2297,8 @@ public class TranslatorImpl implements ITranslator
       }
    }
    
-   /**
+   
+/**
     *
     * Returns the length of the text in the edit control.
     *
@@ -2298,7 +2337,8 @@ public class TranslatorImpl implements ITranslator
       return length;
    }
    
-        /* (non-Javadoc)
+        
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.ui.controls.editcontrol.ITranslator#onMouseMove(int, int)
          */
    public void onMouseMove(int x, int y)
@@ -2306,7 +2346,8 @@ public class TranslatorImpl implements ITranslator
       // TODO Auto-generated method stub
    }
    
-   /**
+   
+/**
     * Updates text in response to the hint list being closed
     */
    public IEditControlField handleHintText(String sText)
@@ -2334,7 +2375,8 @@ public class TranslatorImpl implements ITranslator
       return pField;
    }
    
-   /**
+   
+/**
     * Does one of this translator's text fields have a separator for this character?  If so
     * perform the appropriate action.  The default is to select the field, or insert a new
     * one if entering a comma for repeating fields.
@@ -2457,7 +2499,8 @@ public class TranslatorImpl implements ITranslator
       return new ETPairT<Boolean, Boolean>(Boolean.valueOf(isHandled), Boolean.valueOf(bSelectNextField));
    }
    
-   /**
+   
+/**
     * Helper to test a field for separators
     *
     * @param[in] <Name Description>
@@ -2530,7 +2573,8 @@ public class TranslatorImpl implements ITranslator
       return new ETPairT<Boolean, Boolean>(Boolean.valueOf(isHandled), Boolean.valueOf(bSelectNextField));
    }
    
-   /**
+   
+/**
     * Inserts a new field in response to the delimitor character having been entered.
     *
     * @param[in] nChar The keycode passed during WM_KEYDOWN message processing.
@@ -2572,7 +2616,8 @@ public class TranslatorImpl implements ITranslator
       return isHandled;
    }
    
-   /**
+   
+/**
     * Top level separator handler, this routine gets called once by the edit control for the
     * top level translator;
     *
@@ -2642,7 +2687,8 @@ public class TranslatorImpl implements ITranslator
       return isHandled;
    }
    
-        /* (non-Javadoc)
+        
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.ui.controls.editcontrol.ITranslator#dump(java.lang.String)
          */
    public void dump(String sPad)
@@ -2650,7 +2696,8 @@ public class TranslatorImpl implements ITranslator
       // TODO Auto-generated method stub
    }
    
-   /**
+   
+/**
     * Returns the field following this field, NULL if none.
     *
     * @param pPrevious The field from which to start the search.  If NULL then the first field is returned;
@@ -2679,7 +2726,8 @@ public class TranslatorImpl implements ITranslator
       return retObj;
    }
    
-   /**
+   
+/**
     * Returns the next visible field following this field, NULL if none. The field must be both visible and enabled.
     *
     * @param pPrevious The field from which to begin the search.  If NULL then the first visible field is returned.
@@ -2709,7 +2757,8 @@ public class TranslatorImpl implements ITranslator
       return retField;
    }
    
-   /**
+   
+/**
     * Returns the next visible field preceeding this field, NULL if none.
     *
     * @param pNext[in]
@@ -2730,7 +2779,8 @@ public class TranslatorImpl implements ITranslator
       return retField;
    }
    
-   /**
+   
+/**
     * Returns the field preceeding this field, NULL if none.  If pNext is null returns the last field.
     *
     * @param pNext[in]
@@ -2766,7 +2816,8 @@ public class TranslatorImpl implements ITranslator
       return pField;
    }
    
-   /**
+   
+/**
     * Returns the default field, this is the field that gets initial editing focus.
     *
     * @param pPrevious The field from which to begin the search.  If NULL then the first visible field is returned.
@@ -2792,7 +2843,8 @@ public class TranslatorImpl implements ITranslator
       return retField;
    }
    
-   /**
+   
+/**
     * Moves a field to the new starting position within the string.
     */
    private void moveField( IEditControlField pField, int nPosition )
@@ -2803,7 +2855,8 @@ public class TranslatorImpl implements ITranslator
       }
    }
    
-   /**
+   
+/**
     * Returns the first field in the list, NULL if none.
     */
    private IEditControlField getFirstField()
@@ -2820,7 +2873,8 @@ public class TranslatorImpl implements ITranslator
       return retField;
    }
    
-   /**
+   
+/**
     * Returns the last field in the list, NULL if none
     */
    private IEditControlField getLastField()
@@ -2837,7 +2891,8 @@ public class TranslatorImpl implements ITranslator
       return retField;
    }
    
-   /**
+   
+/**
     * Updates all contained text fields with the property elements provided.  Does not load the
     * property element data into the field (existing field data is preserved).
     *
@@ -2859,7 +2914,8 @@ public class TranslatorImpl implements ITranslator
       }
    }
    
-   /**
+   
+/**
     * Helper function to returns the PropertyElement for a translator that
     * contains a single field (these fields usually contain nested fields)
     *
@@ -2874,7 +2930,8 @@ public class TranslatorImpl implements ITranslator
       return m_ParentField;
    }
    
-   /**
+   
+/**
     * Gets the translator that contains this this translator's owner text field. Valid only for
     * "nested" translators, that is translators that contain subfields.
     *
@@ -2887,7 +2944,8 @@ public class TranslatorImpl implements ITranslator
       m_ParentField = pField;
    }
    
-   /**
+   
+/**
     * Shifts all fields following this one, used after resizing this field.
     *
     * @param pCurrent[in]
@@ -2924,7 +2982,8 @@ public class TranslatorImpl implements ITranslator
       }
    }
    
-   /**
+   
+/**
     * Informs the field that editing has finished and it should apply whatever validation it needs to.
     * @param[in] pField The field to update, if NULL the current field is updated.
     *
@@ -2942,7 +3001,8 @@ public class TranslatorImpl implements ITranslator
       }
    }
    
-   /**
+   
+/**
     * Is this translator deleted? A translator is deleted if all its contained fields are deleted.
     *
     * @param[out] bDeleted TRUE or FALSE
@@ -2965,7 +3025,8 @@ public class TranslatorImpl implements ITranslator
       return isDeleted;
    }
    
-   /**
+   
+/**
     * Set this translator's deleted state. All contained fields are set to the newe deleted state.
     *
     * @param[in] bDeleted TRUE or FALSE
@@ -2982,7 +3043,8 @@ public class TranslatorImpl implements ITranslator
       }
    }
    
-   /**
+   
+/**
     * Set this translator's deleted state. All contained fields are set to the newe deleted state.
     *
     * @param[in] bDeleted TRUE or FALSE
@@ -3098,7 +3160,8 @@ public class TranslatorImpl implements ITranslator
       return found;
    }
    
-   /**
+   
+/**
     * Gets the delimitor that should go before the translator's fields.
     * returns "" if the first field is specified.
     */
@@ -3174,7 +3237,8 @@ public class TranslatorImpl implements ITranslator
       return isDelimitor;
    }
    
-   /**
+   
+/**
     * Has this translator been modified?
     *
     * @param bModified[out]
@@ -3206,7 +3270,8 @@ public class TranslatorImpl implements ITranslator
       return retVal;
    }
    
-   /**
+   
+/**
     * Has this translator been modified?
     *
     * @param[in] bDeleted TRUE or FALSE
@@ -3226,7 +3291,8 @@ public class TranslatorImpl implements ITranslator
       m_Modified = bModified;
    }
    
-   /**
+   
+/**
     * Returns the text field that the caret is in.  If the caret is past the last field the return is NULL.
     * If multiple fields exist at the current location, the return will be (in order of priority)
     *   1. The first enabled field. An enabled field can be edited, but may not be "visible" b/c it may be empty.
@@ -3315,7 +3381,8 @@ public class TranslatorImpl implements ITranslator
       return retField;
    }
    
-   /**
+   
+/**
     * Places the caret at the end of the text field preceeding this one.
     *
     * @param pNext[in]
@@ -3335,7 +3402,8 @@ public class TranslatorImpl implements ITranslator
       return retField;
    }
    
-   /**
+   
+/**
     * Places the caret at the beginnning of this field.
     *
     * @param pField[in]
@@ -3351,7 +3419,8 @@ public class TranslatorImpl implements ITranslator
       }
    }
    
-   /**
+   
+/**
     * Places the caret at the end of this field.
     *
     * @param pField[in]
@@ -3367,7 +3436,8 @@ public class TranslatorImpl implements ITranslator
       }
    }
    
-   /**
+   
+/**
     * Registers acclerators for our delimitors
     *
     * @return HRESULT
@@ -3409,7 +3479,8 @@ public class TranslatorImpl implements ITranslator
       }
    }
    
-   /**
+   
+/**
     * Handles an accelerator detected by the edit control.  Accelerators are registered by calling
     * RegisterAccelerators().
     *
@@ -3439,7 +3510,8 @@ public class TranslatorImpl implements ITranslator
       return isHandled;
    }
    
-        /* (non-Javadoc)
+        
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.ui.controls.editcontrol.ITranslator#getTextStartPos()
          */
    public int getTextStartPos()
@@ -3455,7 +3527,8 @@ public class TranslatorImpl implements ITranslator
       return retStart;
    }
    
-        /* (non-Javadoc)
+        
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.ui.controls.editcontrol.ITranslator#getTextEndPos()
          */
    public int getTextEndPos()
@@ -3501,7 +3574,8 @@ public class TranslatorImpl implements ITranslator
       return retStart;
    }
    
-        /* (non-Javadoc)
+        
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.ui.controls.editcontrol.ITranslator#getFieldStartPos()
          */
    public int getFieldStartPos()
@@ -3515,7 +3589,8 @@ public class TranslatorImpl implements ITranslator
       return retPos;
    }
    
-        /* (non-Javadoc)
+        
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.ui.controls.editcontrol.ITranslator#getFieldEndPos()
          */
    public int getFieldEndPos()
@@ -3535,7 +3610,8 @@ public class TranslatorImpl implements ITranslator
       return retPos;
    }
    
-        /* (non-Javadoc)
+        
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.ui.controls.editcontrol.ITranslator#getTooltipLetText()
          */
    public String getTooltipLeftText()
@@ -3548,7 +3624,8 @@ public class TranslatorImpl implements ITranslator
       return m_TooltipLeftText;
    }
    
-        /* (non-Javadoc)
+        
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.ui.controls.editcontrol.ITranslator#getTooltipSubjectText()
          */
    public String getTooltipSubjectText()
@@ -3561,7 +3638,8 @@ public class TranslatorImpl implements ITranslator
       return m_TooltipSubjectText;
    }
    
-        /* (non-Javadoc)
+        
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.ui.controls.editcontrol.ITranslator#getTooltipRightText()
          */
    public String getTooltipRightText()
@@ -3758,7 +3836,8 @@ public class TranslatorImpl implements ITranslator
       return retVal;
    }
    
-   /**
+   
+/**
     * Moves caret and selects text from either the current position
     * or the currently selected text.  Text is selected if ShiftDown is TRUE.
     */

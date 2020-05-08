@@ -53,7 +53,8 @@ public class SendSignalAction
     implements ISendSignalAction
 {
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.basic.basicactions.ISendSignalAction#getSignal()
      */
     public ISignal getSignal()
@@ -62,7 +63,8 @@ public class SendSignalAction
         return null;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.basic.basicactions.ISendSignalAction#setSignal(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ISignal)
      */
     public void setSignal(ISignal pValSpec)

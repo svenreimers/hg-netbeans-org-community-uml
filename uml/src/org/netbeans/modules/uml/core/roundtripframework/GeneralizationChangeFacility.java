@@ -42,37 +42,35 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : GeneralizationChangeFacility.java
- * Created on : Oct 28, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.roundtripframework;
 
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier;
 
-/**
- * @author Aztec
- */
+
+
 public class GeneralizationChangeFacility
     extends RequestFacility
     implements IGeneralizationChangeFacility
 {
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IGeneralizationChangeFacility#added(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier)
      */
     public void added(IClassifier pGeneral, IClassifier pSpecific)
     {
-        // Aztec: TODO: Stubbed
+        
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IGeneralizationChangeFacility#deleted(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier)
      */
     public void deleted(IClassifier pGeneral, IClassifier pSpecific)
     {
-        // Aztec: TODO: Stubbed
+        
     }
 
 }

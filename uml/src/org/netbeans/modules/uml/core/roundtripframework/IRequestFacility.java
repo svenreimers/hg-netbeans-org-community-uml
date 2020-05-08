@@ -42,18 +42,14 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : IRequestFacility.java
- * Created on : Oct 28, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.roundtripframework;
 
 import org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.IFacility;
 
-/**
- * @author Aztec
- */
+
+
 public interface IRequestFacility extends IFacility
 {
 

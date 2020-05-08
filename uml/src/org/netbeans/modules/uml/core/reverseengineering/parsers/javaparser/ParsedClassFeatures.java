@@ -42,18 +42,14 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : ParsedClassFeatures.java
- * Created on : Nov 4, 2003
- * Author     : aztec
- */
+
+
 package org.netbeans.modules.uml.core.reverseengineering.parsers.javaparser;
 
 import org.dom4j.Node;
 
-/**
- * @author aztec
- */
+
+
 public class ParsedClassFeatures
 {
     private Node m_ClassNode;

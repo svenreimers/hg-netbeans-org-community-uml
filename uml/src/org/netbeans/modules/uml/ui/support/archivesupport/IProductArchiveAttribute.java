@@ -49,47 +49,56 @@ import org.dom4j.Node;
 
 public interface IProductArchiveAttribute
 {
-	/**
+	
+/**
 	 * The name of the attribute.
 	*/
 	public String getName();
 
-	/**
+	
+/**
 	 * The value of the attribute.
 	*/
 	public String getValue();
 
-	/**
+	
+/**
 	 * The value of the attribute.
 	*/
 	public void setValue( String value );
 
-	/**
+	
+/**
 	 * Gets the IXMLDOMNode that matches this node.
 	*/
 	public Node getDOMNode();
 
-	/**
+	
+/**
 	 * Gets the IXMLDOMNode that matches this node.
 	*/
 	public void setDOMNode( Node value );
 
-	/**
+	
+/**
 	 * Gets an attribute value by name.
 	*/
 	public long getLongValue();
 
-	/**
+	
+/**
 	 * Gets an attribute value by name.
 	*/
 	public String getStringValue();
 
-	/**
+	
+/**
 	 * Gets an attribute value by name.
 	*/
 	public boolean getBoolValue();
 
-	/**
+	
+/**
 	 * Gets an attribute value by name.
 	*/
 	public double getDoubleValue();

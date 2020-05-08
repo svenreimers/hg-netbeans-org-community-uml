@@ -46,77 +46,92 @@ package org.netbeans.modules.uml.core.reverseengineering.reframework.parsingfram
 import org.netbeans.modules.uml.core.reverseengineering.reframework.IREOperation;
 public interface ILanguageParser
 {
-	/**
+	
+/**
 	 * Process the given file. The fileName should be an absolute path to the file.
 	*/
 	public void parseFile( String filename );
 
-	/**
+	
+/**
 	 * Process the given file. The fileName should be an absolute path to the file.
 	*/
 	public void parseFile( String filename, String charset);
 
-	/**
+	
+/**
 	 * Parse the contents of the specified operation.  Message events will be sent the registered reverse engineering listeners.
 	*/
 	public void parseOperation( String filename, IREOperation operation );
 
-	/**
+	
+/**
 	 * Parse the contents of the specified operation.  Message events will be sent the registered reverse engineering listeners.
 	*/
 	public void parseOperation( String filename, String charset, IREOperation operation );
 
-	/**
+	
+/**
 	 * Get/Sets the parsers state listener.
 	*/
 	public IStateListener getStateListener();
 
-	/**
+	
+/**
 	 * Get/Sets the parsers state listener.
 	*/
 	public void setStateListener( IStateListener stateListener );
 
-	/**
+	
+/**
 	 * Get/Sets the parsers state filter.
 	*/
 	public IStateFilter getStateFilter();
 
-	/**
+	
+/**
 	 * Get/Sets the parsers state filter.
 	*/
 	public void setStateFilter( IStateFilter filter );
 
-	/**
+	
+/**
 	 * Get/Sets the interface that will process tokens found while parsing a file.
 	*/
 	public ITokenProcessor getTokenProcessor();
 
-	/**
+	
+/**
 	 * Get/Sets the interface that will process tokens found while parsing a file.
 	*/
 	public void setTokenProcessor( ITokenProcessor tokenProcessor );
 
-	/**
+	
+/**
 	 * Get/Sets the interface that will process tokens found while parsing a file.
 	*/
 	public ITokenFilter getTokenFilter();
 
-	/**
+	
+/**
 	 * Get/Sets the interface that will process tokens found while parsing a file.
 	*/
 	public void setTokenFilter( ITokenFilter filter );
 
-	/**
+	
+/**
 	 * Get/Sets the interface that will process errors found while parsing a file.
 	*/
 	public IErrorListener getErrorListener();
 
-	/**
+	
+/**
 	 * Get/Sets the interface that will process errors found while parsing a file.
 	*/
 	public void setErrorListener( IErrorListener errorListener );
 
-	/**
+	
+/**
 	 * Process the given file. The fileName should be an absolute path to the file.
 	*/
 	public void processStreamByType( String stream, /* ProcessTypeKind */ int kind );

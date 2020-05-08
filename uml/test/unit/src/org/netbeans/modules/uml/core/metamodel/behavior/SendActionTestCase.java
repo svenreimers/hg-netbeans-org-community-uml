@@ -44,6 +44,7 @@
 
 
 
+
 /*
  * Created on Oct 17, 2003
  *
@@ -51,10 +52,8 @@
 package org.netbeans.modules.uml.core.metamodel.behavior;
 import org.netbeans.modules.uml.core.AbstractUMLTestCase;
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IReception;
-/**
- * @author aztec
- *
- */
+
+
 public class SendActionTestCase extends AbstractUMLTestCase
 {
 	public SendActionTestCase()

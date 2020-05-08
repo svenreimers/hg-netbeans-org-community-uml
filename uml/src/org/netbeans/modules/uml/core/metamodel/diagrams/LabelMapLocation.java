@@ -56,56 +56,64 @@ public class LabelMapLocation implements ILabelMapLocation, IGraphicMapLocation 
 		m_ElementType = null;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.diagrams.ILabelMapLocation#getLocation()
 	 */
 	public IETRect getLocation() {
 		return m_Location;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.diagrams.ILabelMapLocation#setLocation(org.netbeans.modules.uml.core.support.umlsupport.IETRect)
 	 */
 	public void setLocation(IETRect value) {
 		m_Location = value;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.diagrams.IGraphicMapLocation#getElementXMIID()
 	 */
 	public String getElementXMIID() {
 		return m_ElementXMIID;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.diagrams.IGraphicMapLocation#setElementXMIID(java.lang.String)
 	 */
 	public void setElementXMIID(String value) {
 		m_ElementXMIID = value;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.diagrams.IGraphicMapLocation#getName()
 	 */
 	public String getName() {
 		return m_Name;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.diagrams.IGraphicMapLocation#setName(java.lang.String)
 	 */
 	public void setName(String value) {
 		m_Name = value;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.diagrams.IGraphicMapLocation#getElementType()
 	 */
 	public String getElementType() {
 		return m_ElementType;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.diagrams.IGraphicMapLocation#setElementType(java.lang.String)
 	 */
 	public void setElementType(String value) {

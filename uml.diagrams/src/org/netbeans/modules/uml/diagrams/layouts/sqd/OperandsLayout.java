@@ -49,10 +49,8 @@ import org.netbeans.api.visual.layout.Layout;
 import org.netbeans.api.visual.layout.LayoutFactory;
 import org.netbeans.api.visual.widget.Widget;
 
-/**
- *
- * @author sp153251
- */
+
+
 public class OperandsLayout implements Layout {
     
     private static final Layout baseLayout = LayoutFactory.createAbsoluteLayout();

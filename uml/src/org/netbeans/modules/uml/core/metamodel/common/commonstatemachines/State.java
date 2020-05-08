@@ -42,11 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : State.java
- * Created on : Sep 19, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.metamodel.common.commonstatemachines;
 
 import org.dom4j.Document;
@@ -65,9 +62,8 @@ import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure
 import org.netbeans.modules.uml.core.support.umlutils.ETArrayList;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
-/**
- * @author Aztec
- */
+
+
 public class State extends StateVertex implements IState
 {
     public String getExpandedElementType()
@@ -77,7 +73,8 @@ public class State extends StateVertex implements IState
         else return getElementType();
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonstatemachines.IState#addContent(org.netbeans.modules.uml.core.metamodel.common.commonstatemachines.IRegion)
      */
     public void addContent(IRegion pReg)
@@ -85,7 +82,8 @@ public class State extends StateVertex implements IState
         super.addOwnedElement(pReg);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonstatemachines.IState#addDefferableEvent(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IEvent)
      */
     public void addDefferableEvent(IEvent pEvent)
@@ -93,7 +91,8 @@ public class State extends StateVertex implements IState
         addElementByID(pEvent, "defferableEvent");
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonstatemachines.IState#getContents()
      */
     public ETList<IRegion> getContents()
@@ -103,7 +102,8 @@ public class State extends StateVertex implements IState
 
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonstatemachines.IState#getDeferrableEvents()
      */
     public ETList<IEvent> getDeferrableEvents()
@@ -112,7 +112,8 @@ public class State extends StateVertex implements IState
             .retrieveElementCollectionWithAttrIDs(this, "deferrableEvent", IEvent.class);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonstatemachines.IState#getDoActivity()
      */
     public IProcedure getDoActivity()
@@ -122,7 +123,8 @@ public class State extends StateVertex implements IState
 
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonstatemachines.IState#getEntry()
      */
     public IProcedure getEntry()
@@ -132,7 +134,8 @@ public class State extends StateVertex implements IState
 
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonstatemachines.IState#getExit()
      */
     public IProcedure getExit()
@@ -141,7 +144,8 @@ public class State extends StateVertex implements IState
             .retrieveSingleElement( this, "UML:State.exit/*", IProcedure.class);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonstatemachines.IState#getFirstContent()
      */
     public IRegion getFirstContent()
@@ -153,7 +157,8 @@ public class State extends StateVertex implements IState
         return null;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonstatemachines.IState#getIsComposite()
      */
     public boolean getIsComposite()
@@ -161,7 +166,8 @@ public class State extends StateVertex implements IState
         return getBooleanAttributeValue("isComposite", false);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonstatemachines.IState#getIsOrthogonal()
      */
     public boolean getIsOrthogonal()
@@ -169,7 +175,8 @@ public class State extends StateVertex implements IState
         return getBooleanAttributeValue("isOrthogonal", false);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonstatemachines.IState#getIsSimple()
      */
     public boolean getIsSimple()
@@ -177,7 +184,8 @@ public class State extends StateVertex implements IState
         return getBooleanAttributeValue("isSimple", false);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonstatemachines.IState#getIsSubmachineState()
      */
     public boolean getIsSubmachineState()
@@ -185,7 +193,8 @@ public class State extends StateVertex implements IState
         return getBooleanAttributeValue("isSubmachineState", false);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonstatemachines.IState#getStateInvariant()
      */
     public IConstraint getStateInvariant()
@@ -195,7 +204,8 @@ public class State extends StateVertex implements IState
 
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonstatemachines.IState#getSubmachine()
      */
     public IStateMachine getSubmachine()
@@ -205,7 +215,8 @@ public class State extends StateVertex implements IState
 
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonstatemachines.IState#removeContent(org.netbeans.modules.uml.core.metamodel.common.commonstatemachines.IRegion)
      */
     public void removeContent(IRegion pReg)
@@ -213,7 +224,8 @@ public class State extends StateVertex implements IState
         removeElement(pReg);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonstatemachines.IState#removeDeferrableEvent(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IEvent)
      */
     public void removeDeferrableEvent(IEvent pEvent)
@@ -221,7 +233,8 @@ public class State extends StateVertex implements IState
         removeElementByID(pEvent, "defferableEvent");
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonstatemachines.IState#setDoActivity(org.netbeans.modules.uml.core.metamodel.basic.basicactions.IProcedure)
      */
     public void setDoActivity(IProcedure value)
@@ -232,7 +245,8 @@ public class State extends StateVertex implements IState
 
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonstatemachines.IState#setEntry(org.netbeans.modules.uml.core.metamodel.basic.basicactions.IProcedure)
      */
     public void setEntry(IProcedure value)
@@ -242,7 +256,8 @@ public class State extends StateVertex implements IState
         addChild("UML:State.entry", "UML:State.entry", value);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonstatemachines.IState#setExit(org.netbeans.modules.uml.core.metamodel.basic.basicactions.IProcedure)
      */
     public void setExit(IProcedure value)
@@ -252,7 +267,8 @@ public class State extends StateVertex implements IState
         addChild("UML:State.exit", "UML:State.exit", value);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonstatemachines.IState#setIsComposite(boolean)
      */
     public void setIsComposite(boolean value)
@@ -263,7 +279,8 @@ public class State extends StateVertex implements IState
         setBooleanAttributeValue("isComposite", value);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonstatemachines.IState#setIsOrthogonal(boolean)
      */
     public void setIsOrthogonal(boolean value)
@@ -274,7 +291,8 @@ public class State extends StateVertex implements IState
          setBooleanAttributeValue("isOrthogonal", value);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonstatemachines.IState#setIsSimple(boolean)
      */
     public void setIsSimple(boolean value)
@@ -282,7 +300,8 @@ public class State extends StateVertex implements IState
         setBooleanAttributeValue("isSimple", value);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonstatemachines.IState#setIsSubmachineState(boolean)
      */
     public void setIsSubmachineState(boolean value)
@@ -290,7 +309,8 @@ public class State extends StateVertex implements IState
         setBooleanAttributeValue("isSubmachineState", value);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonstatemachines.IState#setStateInvariant(org.netbeans.modules.uml.core.metamodel.core.foundation.IConstraint)
      */
     public void setStateInvariant(IConstraint value)
@@ -360,7 +380,8 @@ public class State extends StateVertex implements IState
         ensureAtLeastOneContentRegionExists();
     }     
 
-	/**
+	
+/**
 	 * Does this element have an expanded element type or is the expanded element type always the element type?
 	 */
 	public boolean getHasExpandedElementType()
@@ -368,7 +389,8 @@ public class State extends StateVertex implements IState
 		return true;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Retrieves the elements that this StateMachine owns dependent on how many regions
 	 * the StateMachine contains. This allows the tree and property editor to display 
@@ -406,7 +428,8 @@ public class State extends StateVertex implements IState
 		return retObj;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Retrieves the contents of the passed in IRegion and places them in the 
 	 * passed in Namespaces collection

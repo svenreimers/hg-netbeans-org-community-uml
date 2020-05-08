@@ -52,11 +52,8 @@ import org.netbeans.junit.NbTestSuite;
 import org.netbeans.modules.performance.utilities.PerformanceTestCase;
 import org.netbeans.performance.uml.actions.*;
 
-/**
- * Measure UI-RESPONSIVENES and WINDOW_OPENING.
- *
- * @author  mmirilovic@netbeans.org, mrkam@netbeans.org
- */
+
+
 public class MeasureUMLActionsTest  {
 
     public static Test suite() {
@@ -75,6 +72,7 @@ public class MeasureUMLActionsTest  {
                 .addTest(CreateSequenceDiagramFromMultipleNodes.class, "measureTime")
                 .addTest(CreateEmptyDiagram.class, "measureTime")
                 .addTest(GenerateDependencyDiagram.class, "measureTime")
+
 /* Stability issues, will be enabled later...
                 .addTest(GenerateModelReport.class, "measureTime")
                 .addTest(CodeGenerationFromUMLProject.class, "measureTime")

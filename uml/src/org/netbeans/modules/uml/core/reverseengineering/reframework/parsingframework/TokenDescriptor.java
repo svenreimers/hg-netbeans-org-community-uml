@@ -42,18 +42,14 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : TokenDescriptor.java
- * Created on : Oct 23, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework;
 
 import java.util.HashMap;
 
-/**
- * @author Aztec
- */
+
+
 public class TokenDescriptor implements ITokenDescriptor
 {
     private HashMap<String, String> m_Properties = new HashMap<String, String>();
@@ -64,7 +60,8 @@ public class TokenDescriptor implements ITokenDescriptor
     private int m_Column;
     private int m_Line;
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ITokenDescriptor#addProperty(java.lang.String, java.lang.String)
      */
     public void addProperty(String name, String value)
@@ -73,7 +70,8 @@ public class TokenDescriptor implements ITokenDescriptor
             m_Properties.put(name, value);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ITokenDescriptor#getColumn()
      */
     public int getColumn()
@@ -81,7 +79,8 @@ public class TokenDescriptor implements ITokenDescriptor
         return m_Column;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ITokenDescriptor#getLength()
      */
     public int getLength()
@@ -89,7 +88,8 @@ public class TokenDescriptor implements ITokenDescriptor
         return m_Length;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ITokenDescriptor#getLine()
      */
     public int getLine()
@@ -97,7 +97,8 @@ public class TokenDescriptor implements ITokenDescriptor
         return m_Line;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ITokenDescriptor#getPosition()
      */
     public long getPosition()
@@ -105,7 +106,8 @@ public class TokenDescriptor implements ITokenDescriptor
         return m_Position;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ITokenDescriptor#getProperty(java.lang.String)
      */
     public String getProperty(String name)
@@ -115,7 +117,8 @@ public class TokenDescriptor implements ITokenDescriptor
         return m_Properties.get(name);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ITokenDescriptor#getType()
      */
     public String getType()
@@ -123,7 +126,8 @@ public class TokenDescriptor implements ITokenDescriptor
         return m_Type;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ITokenDescriptor#getValue()
      */
     public String getValue()
@@ -131,7 +135,8 @@ public class TokenDescriptor implements ITokenDescriptor
         return m_Value;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ITokenDescriptor#setColumn(int)
      */
     public void setColumn(int value)
@@ -139,7 +144,8 @@ public class TokenDescriptor implements ITokenDescriptor
         m_Column = value;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ITokenDescriptor#setLength(int)
      */
     public void setLength(int value)
@@ -147,7 +153,8 @@ public class TokenDescriptor implements ITokenDescriptor
         m_Length = value;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ITokenDescriptor#setLine(int)
      */
     public void setLine(int value)
@@ -155,7 +162,8 @@ public class TokenDescriptor implements ITokenDescriptor
         m_Line = value;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ITokenDescriptor#setPosition(int)
      */
     public void setPosition(long value)
@@ -163,7 +171,8 @@ public class TokenDescriptor implements ITokenDescriptor
         m_Position = value;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ITokenDescriptor#setType(java.lang.String)
      */
     public void setType(String value)
@@ -171,7 +180,8 @@ public class TokenDescriptor implements ITokenDescriptor
         m_Type = value;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ITokenDescriptor#setValue(java.lang.String)
      */
     public void setValue(String value)

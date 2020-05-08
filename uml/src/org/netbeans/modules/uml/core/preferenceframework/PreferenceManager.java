@@ -69,10 +69,8 @@ import org.netbeans.modules.uml.core.support.umlutils.PropertyElementManager;
 import org.netbeans.modules.uml.core.support.umlutils.PropertyElementXML;
 import org.netbeans.modules.uml.ui.support.DispatchHelper;
 
-/**
- * @author sumitabhk
- *
- */
+
+
 public class PreferenceManager implements IPreferenceManager2{
 
 	private static final int CT_BOOLEAN = 0;
@@ -100,7 +98,8 @@ public class PreferenceManager implements IPreferenceManager2{
 
 	private Vector < IPropertyElement > m_SavedElements = null;
 
-	/**
+	
+/**
 	 * 
 	 */
 	public PreferenceManager() {
@@ -114,7 +113,8 @@ public class PreferenceManager implements IPreferenceManager2{
 		}
 	}
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.coreapplication.IPreferenceManager2#isBatchTestMode()
      */
     public boolean isBatchTestMode()
@@ -127,7 +127,8 @@ public class PreferenceManager implements IPreferenceManager2{
         batchTestMode = btm;
     }
 
-	/**
+	
+/**
 	 * Register the passed-in file as the "default" preference file.
 	 * 
 	 * @param fileName[in]	The absolute path of the file
@@ -141,7 +142,8 @@ public class PreferenceManager implements IPreferenceManager2{
 		return 0;
 	}
 
-	/**
+	
+/**
 	 * Remove the passed in file as the "default" file.
 	 * 
 	 *
@@ -155,7 +157,8 @@ public class PreferenceManager implements IPreferenceManager2{
 		return 0;
 	}
 
-	/**
+	
+/**
 	 * Validates the file for existence, read/write access, and validity against
 	 * a preference DTD.
 	 *
@@ -206,7 +209,8 @@ public class PreferenceManager implements IPreferenceManager2{
 		}
 	}
 
-	/**
+	
+/**
 	 * Use the passed in file and build the preference definitions and preference elements
 	 * to be used by the Describe application.
 	 *
@@ -228,7 +232,8 @@ public class PreferenceManager implements IPreferenceManager2{
 		return 0;
 	}
 
-	/**
+	
+/**
 	 * Builds the preference elements which tells Describe the values of the preferences.
 	 *
 	 * @param fileName[in]	The absolute path of the preference file
@@ -260,7 +265,8 @@ public class PreferenceManager implements IPreferenceManager2{
 		}
 	}
 
-	/**
+	
+/**
 	 * Builds the preference definitions which tells Describe how to display
 	 * the preferences in the dialog.
 	 * 
@@ -287,7 +293,8 @@ public class PreferenceManager implements IPreferenceManager2{
 		return 0;
 	}
 
-	/**
+	
+/**
 	 * Shortcut method to add a boolean preference to both the definitions and the elements.
 	 *
 	 * @param prefObj[in] The object that holds all of the values of a preference, including
@@ -300,7 +307,8 @@ public class PreferenceManager implements IPreferenceManager2{
 		return 0;
 	}
 
-	/**
+	
+/**
 	 * Method that takes the preference object and the control type and creates a definition and
 	 * an element, setting all of the proper values.
 	 * 
@@ -317,7 +325,8 @@ public class PreferenceManager implements IPreferenceManager2{
 		save();
 	}
 
-	/**
+	
+/**
 	 * Called when someone is trying to add a preference.  This method determines
 	 * if a corresponding definition needs to be created as well as any other definitions
 	 * to make its parent structure correct.  It then determines if a element needs to be
@@ -375,7 +384,8 @@ public class PreferenceManager implements IPreferenceManager2{
 		}
 	}
 
-	/**
+	
+/**
  * Create a definition and an element representing the preference object that was built
  * by someone and then told the preference manager to add it.
  *
@@ -412,7 +422,8 @@ public class PreferenceManager implements IPreferenceManager2{
 		pEle.addSubElement(newEle);
 	}
 
-	/**
+	
+/**
 	 * Populate the definition with the information from the preference object.
 	 *
 	 * @param prefObj[in]	An object that contains all of the preference information
@@ -447,7 +458,8 @@ public class PreferenceManager implements IPreferenceManager2{
 		pDef.setFile(file);
 	}
 
-	/**
+	
+/**
 	 * Based on the key and the passed in path, this method builds any definitions and/or
 	 * elements that are not found under the key and in the path.
 	 *
@@ -564,7 +576,8 @@ public class PreferenceManager implements IPreferenceManager2{
 		}
 	}
 
-	/**
+	
+/**
 	 * Get the preference definition that is the root that matches the passed in key.
 	 *
 	 * @param key[in]	Name to search for
@@ -585,7 +598,8 @@ public class PreferenceManager implements IPreferenceManager2{
 		return null;
 	}
 
-	/**
+	
+/**
 	 * Get the preference element that is the root that matches the passed in key.
 	 * 
 	 *
@@ -608,7 +622,8 @@ public class PreferenceManager implements IPreferenceManager2{
 	}
 
 
-	/**
+	
+/**
 	 * Need the string representation of the preference type in order to store it properly in the
 	 * preference files.
 	 * 
@@ -636,7 +651,8 @@ public class PreferenceManager implements IPreferenceManager2{
 		}
 	}
 
-	/**
+	
+/**
 	 * Remove the preference that represents the passed-in property element.  This will
 	 * remove it from the preference manager's array as well as the XML file that it is in.
 	 *
@@ -670,7 +686,8 @@ public class PreferenceManager implements IPreferenceManager2{
 		return 0;
 	}
 
-	/**
+	
+/**
 	 * Remove the preference that represents the passed in property element.  This will
 	 * remove it from the preference manager's array as well as the xml file that it is in.
 	 *
@@ -702,7 +719,8 @@ public class PreferenceManager implements IPreferenceManager2{
 		}
 	}
 
-	/**
+	
+/**
 	 * Validates the passed-in file and if valid adds it to a map of key/files that
 	 * will be used as a lookup table to determine where a particular preference is stored.
 	 *
@@ -732,7 +750,8 @@ public class PreferenceManager implements IPreferenceManager2{
 		return 0;
 	}
 
-	/**
+	
+/**
 	 * @param fileName
 	 * @return
 	 */
@@ -749,7 +768,8 @@ public class PreferenceManager implements IPreferenceManager2{
 		return 0;
 	}
 
-	/**
+	
+/**
 	 * Shortcut method to add a list preference to both the definitions and the elements.
 	 *
 	 * @param prefObj[in]	The object that holds all of the values of a preference, including
@@ -762,7 +782,8 @@ public class PreferenceManager implements IPreferenceManager2{
 		return 0;
 	}
 
-	/**
+	
+/**
 	 * Shortcut method to add a combo preference to both the definitions and the elements.
 	 *
 	 * @param prefObj[in]	The object that holds all of the values of a preference, including
@@ -775,7 +796,8 @@ public class PreferenceManager implements IPreferenceManager2{
 		return 0;
 	}
 
-	/**
+	
+/**
 	 * Shortcut method to add a edit preference to both the definitions and the elements.
 	 *
 	 * @param prefObj[in]	The object that holds all of the values of a preference, including
@@ -788,7 +810,8 @@ public class PreferenceManager implements IPreferenceManager2{
 		return 0;
 	}
 
-	/**
+	
+/**
 	 * Get the value of the passed-in preference name.  This routine searches in the "default"
 	 * preference structure.  For example, "DefaultFilter" will return "PSK_DATA".
 	 *
@@ -803,7 +826,8 @@ public class PreferenceManager implements IPreferenceManager2{
 		return getPreferenceValue("Default", path, prefName);
 	}
     
-    /**
+    
+/**
      * Get the value of the passed-in preference name.  This routine searches in
      * the hive specified as the first segment of the path. 
      *
@@ -825,7 +849,8 @@ public class PreferenceManager implements IPreferenceManager2{
         return null;
     }
 
-	/**
+	
+/**
 	 * Get the value of the passed in preference name.  This routine searches in the "key"
 	 * preference structure. For example, "DefaultFilter" will return "PSK_DATA".
 	 * 
@@ -843,7 +868,8 @@ public class PreferenceManager implements IPreferenceManager2{
 		return elem != null ? elem.getValue() : "";
 	}
 
-	/**
+	
+/**
 	 * The preference manager has been told to save its information.  It will loop through
 	 * its definitions and its elements, saving them if necessary.
 	 *
@@ -856,7 +882,8 @@ public class PreferenceManager implements IPreferenceManager2{
 		return 0;
 	}
 
-	/**
+	
+/**
 	 * Process the property elements that the preference manager knows about, saving any
 	 * if needed.
 	 *
@@ -931,7 +958,8 @@ public class PreferenceManager implements IPreferenceManager2{
 		}
 	}
 
-	/**
+	
+/**
 	 * Call to the event dispatcher to fire a preferences change event.
 	 *
 	 * @param pEles[in]	The property elements that have changed
@@ -967,7 +995,8 @@ public class PreferenceManager implements IPreferenceManager2{
 //		return elems;
 	}
 
-	/**
+	
+/**
 	 * Call to the event dispatcher to fire a preference change event.
 	 *
 	 * @param pEle[in]	The property element that has changed
@@ -984,7 +1013,8 @@ public class PreferenceManager implements IPreferenceManager2{
 		}
 	}
 
-	/**
+	
+/**
 	 * Call to the event dispatcher to fire a preference remove event.
 	 *
 	 * @param pEle[in]	The property element that is being removed
@@ -1001,7 +1031,8 @@ public class PreferenceManager implements IPreferenceManager2{
 		}
 	}
 
-	/**
+	
+/**
 	 * We only keep track of the definition file in the preference manager.  The data
 	 * file is the same name as the definition file but with a different extension.  This
 	 * routine takes the definition file and translates it to the right data file.
@@ -1017,7 +1048,8 @@ public class PreferenceManager implements IPreferenceManager2{
 		return StringUtilities.createFullPath(thepath, thefile, ".etcd");
 	}
 
-	/**
+	
+/**
 	 * Based on the passed-in key, get the file that is registered for it.
 	 * If there is not a file, we will return the "default" file.
 	 *
@@ -1035,7 +1067,8 @@ public class PreferenceManager implements IPreferenceManager2{
 		return outFile;
 	}
 
-	/**
+	
+/**
 	 * Save any of the sub elements of the passed in property element, if they have been
 	 * marked as changed.
 	 * 
@@ -1077,7 +1110,8 @@ public class PreferenceManager implements IPreferenceManager2{
 		return contFlag;
 	}
 
-	/**
+	
+/**
 	 * Process the property definitions that the preference manager knows about, saving any
 	 * if needed.
 	 *
@@ -1103,7 +1137,8 @@ public class PreferenceManager implements IPreferenceManager2{
 		}
 	}
 
-	/**
+	
+/**
 	 * Save any of the sub definitions of the passed in property def, if they have been
 	 * marked as changed.
 	 * 
@@ -1132,7 +1167,8 @@ public class PreferenceManager implements IPreferenceManager2{
 		}
 	}
 
-	/**
+	
+/**
 	 * Set the value of the passed in preference name.  This routine searches in the "default"
 	 * preference structure.
 	 * 
@@ -1149,7 +1185,8 @@ public class PreferenceManager implements IPreferenceManager2{
 		return 0;
 	}
 
-	/**
+	
+/**
 	 * Set the value of the passed in preference name.  This routine searches in the "key"
 	 * preference structure.
 	 * 
@@ -1171,7 +1208,8 @@ public class PreferenceManager implements IPreferenceManager2{
 		return 0;
 	}
 
-	/**
+	
+/**
 	 * Set the value of the passed in preference.
 	 * 
 	 * @param pEle [in] The element to change
@@ -1188,7 +1226,8 @@ public class PreferenceManager implements IPreferenceManager2{
 		return 0;
 	}
 
-	/**
+	
+/**
 	 * Retrieve the actual preference element that is found under the "default" top level element 
 	 * and is at the proper sub level that matches the passed in path and pref name.
 	 *
@@ -1202,7 +1241,8 @@ public class PreferenceManager implements IPreferenceManager2{
 		return getPreferenceElement("Default", path, prefName);
 	}
 
-	/**
+	
+/**
 	 * Find the preference element given its key and its path that matches the prefName.  
 	 * The path is a "|" delimited string which tells us the sub element
 	 * structure in which to search (since the preference could be multiple levels deep)
@@ -1272,7 +1312,8 @@ public class PreferenceManager implements IPreferenceManager2{
 		return retEle;
 	}
 
-	/**
+	
+/**
 	 * Find the appropriately named sub element in the passed-in element.
 	 *
 	 * @param pEle[in]		The preference element to search
@@ -1311,7 +1352,8 @@ public class PreferenceManager implements IPreferenceManager2{
 		return retEle;
 	}
 
-	/**
+	
+/**
 	 * Retrieve the actual preference def that is found under the "default" top level def 
 	 * and is at the proper sub level that matches the passed in path and pref name.
 	 *
@@ -1325,7 +1367,8 @@ public class PreferenceManager implements IPreferenceManager2{
 		return getPreferenceDefinition("Default", path, prefName);
 	}
 
-	/**
+	
+/**
 	 * Find the preference def given its key and its path that matches the prefName.  
 	 * The path is a "|" delimited string which tells us the sub def
 	 * structure in which to search (since the preference could be multiple levels deep)
@@ -1395,7 +1438,8 @@ public class PreferenceManager implements IPreferenceManager2{
 		return retDef;
 	}
 
-	/**
+	
+/**
 	 * Find the appropriately named sub def in the passed in def.
 	 *
 	 * @param pDef[in]			The preference def to search
@@ -1430,7 +1474,8 @@ public class PreferenceManager implements IPreferenceManager2{
 		return retDef;
 	}
 
-	/**
+	
+/**
 	 * Get the translated value of the passed in preference name.  
 	 * This routine searches in the "default" preference structure.  
 	 * This will convert any "specially marked" preferences to their IDS resource string
@@ -1447,7 +1492,8 @@ public class PreferenceManager implements IPreferenceManager2{
 		return getTranslatedPreferenceValue("Default", path, prefName);
 	}
 
-	/**
+	
+/**
 	 * Get the translated value of the passed-in preference name.  This routine searches in the "key"
 	 * preference structure.  For example, "DefaultFilter" will return "Data".
 	 * 
@@ -1465,7 +1511,8 @@ public class PreferenceManager implements IPreferenceManager2{
 		return elem != null ? elem.getTranslatedValue() : "";
 	}
 
-	/**
+	
+/**
 	 * Determines whether the passed in preference has the passed-in value.
 	 *
 	 * @param path[in]		A "|" delimited string telling what preference structure path to search
@@ -1479,7 +1526,8 @@ public class PreferenceManager implements IPreferenceManager2{
 		return matches("Default", path, prefName, prefValue);
 	}
 
-	/**
+	
+/**
 	 * Find the preference def given its key and its path that matches the prefName.  
 	 * The path is a "|" delimited string which tells us the sub def
 	 * structure in which to search (since the preference could be multiple levels deep)
@@ -1497,7 +1545,8 @@ public class PreferenceManager implements IPreferenceManager2{
 		return value != null && value.equals(prefValue);
 	}
 
-	/**
+	
+/**
 	 * The preference manager has been told to restore its information to the state that it was when
 	 * the application was installed.
 	 *
@@ -1511,7 +1560,8 @@ public class PreferenceManager implements IPreferenceManager2{
 		return 0;
 	}
 
-	/**
+	
+/**
 	 * Needed a path to restore the preferences back to their original state (as they were installed)
 	 * or as if it was a brand new install.
 	 *
@@ -1563,7 +1613,8 @@ public class PreferenceManager implements IPreferenceManager2{
 		}
 	}
 
-	/**
+	
+/**
 	 * This method is used to determine what the default font of the grid should be for the
 	 * application.  We have a preference that has this value, but the value needs to be different
 	 * between a English OS and a Japanese OS.
@@ -1573,11 +1624,12 @@ public class PreferenceManager implements IPreferenceManager2{
 	 * @return HRESULT
 	 */
 	public String getDefaultFont() {
-		//Do I need to get the font from somewhere else? Sumitabh
+		
 		return "Arial";
 	}
 
-	/**
+	
+/**
 	 * This method is used to determine what the default font of the doc pane should be for the
 	 * application.  We have a preference that has this value, but the value needs to be different
 	 * between a English OS and a Japanese OS.
@@ -1587,11 +1639,12 @@ public class PreferenceManager implements IPreferenceManager2{
 	 * @return HRESULT
 	 */
 	public String getDefaultDocFont() {
-		//Do I need to get the font from somewhere else? Sumitabh
+		
 		return "Arial";
 	}
 
-	/**
+	
+/**
 	 * The preference manager has been told to restore its information to the state that it was when
 	 * the application was installed.
 	 *
@@ -1605,7 +1658,8 @@ public class PreferenceManager implements IPreferenceManager2{
 		return 0;
 	}
 
-	/**
+	
+/**
 	 * Finds a preference of name sName under pEle.  The found element returned is the 
 	 * first sName found in that hive - at any child level, not just immediate children
 	 *
@@ -1649,7 +1703,8 @@ public class PreferenceManager implements IPreferenceManager2{
 		return retEle;
 	}
 
-	/**
+	
+/**
 	 * @param pEle
 	 * @return
 	 */
@@ -1660,7 +1715,8 @@ public class PreferenceManager implements IPreferenceManager2{
 	}
 
 
-	/**
+	
+/**
 	 *
 	 * Retrieves a preference value give the absolute path to the preference. 
 	 * For example, 'Default|ConfigManagement|Enabled' would retrieve the preference 

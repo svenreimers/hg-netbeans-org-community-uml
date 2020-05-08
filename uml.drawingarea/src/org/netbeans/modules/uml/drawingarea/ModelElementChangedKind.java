@@ -43,10 +43,8 @@
  */
 package org.netbeans.modules.uml.drawingarea;
 
-/**
- *
- * @author treyspiva
- */
+
+
 public enum ModelElementChangedKind 
 {
     PRE_DELETE,

@@ -49,7 +49,8 @@ import org.netbeans.modules.uml.ui.products.ad.projecttreedefaultengine.IADProje
 
 public interface IADDesignCenterEngine extends IADProjectTreeEngine
 {
-	/**
+	
+/**
 	 * Initializes the engine
 	*/
 	public long initialize( IProjectTreeControl pParentControl );

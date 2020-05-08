@@ -52,7 +52,8 @@ public class REMultiplicityRange extends ParserData
         implements IREMultiplicityRange
 {
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.IREMultiplicityRange#getLower()
      */
     public String getLower()
@@ -60,7 +61,8 @@ public class REMultiplicityRange extends ParserData
         return XMLManip.getAttributeValue(getEventData(), "lower");
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.IREMultiplicityRange#setLower(java.lang.String)
      */
     public void setLower(String newVal)
@@ -69,7 +71,8 @@ public class REMultiplicityRange extends ParserData
                     "Can't set multiplicity lower bound");
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.IREMultiplicityRange#getUpper()
      */
     public String getUpper()
@@ -77,7 +80,8 @@ public class REMultiplicityRange extends ParserData
         return XMLManip.getAttributeValue(getEventData(), "upper");
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.IREMultiplicityRange#setUpper(java.lang.String)
      */
     public void setUpper(String newVal)

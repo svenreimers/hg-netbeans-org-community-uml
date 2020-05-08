@@ -57,10 +57,8 @@ import org.netbeans.modules.uml.drawingarea.view.DesignerTools;
 import org.netbeans.modules.uml.drawingarea.view.UMLWidget;
 import org.openide.util.NbBundle;
 
-/**
- *
- * @author Sheryl Su
- */
+
+
 public abstract class ProcedureWidget extends FeatureWidget implements PropertyChangeListener{
 
     public ProcedureWidget(Scene scene)

@@ -47,37 +47,44 @@ package org.netbeans.modules.uml.core.reverseengineering.reframework.parsingfram
 
 public interface IFacility
 {
-	/**
+	
+/**
 	 * The description of the facility.  The description will explain the behavior of the facility.
 	*/
 	public String getDescription();
 
-	/**
+	
+/**
 	 * The description of the facility.  The description will explain the behavior of the facility.
 	*/
 	public void setDescription( String value );
 
-	/**
+	
+/**
 	 * Add a new property to the facility.  Properties are used to change the behavior of the facility.
 	*/
 	public void addProperty( String name, String value );
 
-	/**
+	
+/**
 	 * Add a new property to the facility.  Properties are used to change the behavior of the facility.
 	*/
 	public void addProperty( IFacilityProperty pProperty );
 
-	/**
+	
+/**
 	 * Retrieves all facilities properties.
 	*/
 	public IFacilityProperties getProperties();
 
-	/**
+	
+/**
 	 * Retrieves a value of a property from the facility.
 	*/
 	public String getPropertyValue( String name );
 
-	/**
+	
+/**
 	 * Retrieves a property from the facility.
 	*/
 	public IFacilityProperty getProperty( String name );

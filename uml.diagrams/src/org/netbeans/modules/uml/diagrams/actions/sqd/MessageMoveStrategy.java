@@ -50,17 +50,16 @@ import org.netbeans.api.visual.widget.ConnectionWidget;
 import org.netbeans.api.visual.widget.Widget;
 
 
-/**
- * messages can be moved only vertically, can't be moved above parent bounds but can be moved below
- * @author sp153251
- */
+
+
 public class MessageMoveStrategy implements MoveStrategy {
 
     
     public MessageMoveStrategy() {
     }
 
-    /**
+    
+/**
      * Called after an user suggests a new location and before the suggested location is stored to a specified widget.
      * This allows to manipulate with a suggested location to perform snap-to-grid, locked-axis on any other movement strategy.
      * @param widget the moved widget

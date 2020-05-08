@@ -42,16 +42,12 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : RequestPlug.java
- * Created on : Oct 29, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpcomponent;
 
-/**
- * @author Aztec
- */
+
+
 public class RequestPlug implements IRequestPlug
 {
     private IPlugManager m_PlugManager;
@@ -67,7 +63,8 @@ public class RequestPlug implements IRequestPlug
        plug (manager);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpccomponent.IRequestPlug#plug(org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpccomponent.PlugManager)
      */
     public void plug(IPlugManager pProcessor)
@@ -79,7 +76,8 @@ public class RequestPlug implements IRequestPlug
         }
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpccomponent.IRequestPlug#unPlug()
      */
     public void unPlug()

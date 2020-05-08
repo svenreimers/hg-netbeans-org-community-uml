@@ -53,10 +53,8 @@ import org.openide.loaders.DataFolder;
 import org.openide.loaders.DataObject;
 import org.openide.loaders.DataShadow;
 
-/**
- *
- * @author treyspiva
- */
+
+
 public class DefaultContextPaletteModel implements ContextPaletteModel
 {
     private ArrayList < ContextPaletteButtonModel > descriptions = 

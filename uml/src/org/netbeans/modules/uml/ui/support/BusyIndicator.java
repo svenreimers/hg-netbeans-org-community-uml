@@ -46,10 +46,8 @@
 
 package org.netbeans.modules.uml.ui.support;
 
-/**
- *
- * @author Trey Spiva
- */
+
+
 public class BusyIndicator
 {
    public static void showWhile(Object display, Runnable runnable)

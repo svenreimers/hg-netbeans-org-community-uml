@@ -59,7 +59,8 @@ public interface IPreferenceManager
     public void setDefaultModeName(String newVal);
     public String getHomeLocation();
 
-    /**
+    
+/**
      * Retrieves the setting that indicates what should be done when an unknown 
      * classifier is referred to.
      * 
@@ -71,7 +72,8 @@ public interface IPreferenceManager
     public void installDefaultModelLibraries(IPackage pack, 
             ETList<IElement> libs);
             
-    /**
+    
+/**
      * Saves the internal preference information out to the given file.
      * 
      * @param fileName The name of the file to which the preference information
@@ -79,7 +81,8 @@ public interface IPreferenceManager
      */
     public void save(String fileName);
     
-    /**
+    
+/**
      * Gets the name used when creating new metatypes.
      * 
      * @return The default element name.

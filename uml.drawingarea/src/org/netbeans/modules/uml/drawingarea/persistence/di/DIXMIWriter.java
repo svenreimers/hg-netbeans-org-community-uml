@@ -57,10 +57,8 @@ import java.util.Set;
 import org.netbeans.modules.uml.drawingarea.persistence.util.XMIConstants;
 import org.openide.util.Exceptions;
 
-/**
- *
- * @author Jyothi
- */
+
+
 public class DIXMIWriter {
 
     private static String SPACE1 = " ";
@@ -172,7 +170,8 @@ public class DIXMIWriter {
         }
     }
 
-    /** This will write the first line in the xmi doc
+    
+/** This will write the first line in the xmi doc
      * <XMI xmi.version="1.2" xmlns:UML="org.omg.xmi.namespace.UML" timestamp="2005-06-23 12:57:17">
      */
     public static void writeStartDocument(BufferedWriter bw) {
@@ -202,7 +201,8 @@ public class DIXMIWriter {
         return "org.omg.xmi.namespace.UML";
     }
 
-    /** This will write the last line in the doc
+    
+/** This will write the last line in the doc
      * </XMI>
      */
     public static void writeEndDocument(BufferedWriter bw) {

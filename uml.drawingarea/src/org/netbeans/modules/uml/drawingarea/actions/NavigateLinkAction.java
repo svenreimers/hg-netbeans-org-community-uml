@@ -61,10 +61,8 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.IPresentationElem
 import org.netbeans.modules.uml.drawingarea.util.Util;
 import org.netbeans.modules.uml.drawingarea.view.DesignerScene;
 
-/**
- *
- * @author Sheryl Su
- */
+
+
 public class NavigateLinkAction extends WidgetAction.Adapter
 {
     

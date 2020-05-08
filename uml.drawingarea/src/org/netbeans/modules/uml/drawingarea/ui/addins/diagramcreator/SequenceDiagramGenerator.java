@@ -95,10 +95,8 @@ import org.netbeans.modules.uml.drawingarea.widgets.CombinedFragment;
 import org.netbeans.modules.uml.drawingarea.widgets.ContainerWidget;
 import org.openide.util.Exceptions;
 import org.openide.util.Lookup;
-/**
- * @author sumitabhk
- *
- */
+
+
 public class SequenceDiagramGenerator implements ISequenceDiagramGenerator
 {
     /// map of the lifeline draw engines representing the Lifelines for this interaction
@@ -127,7 +125,8 @@ public class SequenceDiagramGenerator implements ISequenceDiagramGenerator
         super();
     }
     
-        /* (non-Javadoc)
+        
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.ui.addins.diagramcreator.ISequenceDiagramGenerator#generate(org.netbeans.modules.uml.core.metamodel.dynamics.IInteraction, org.netbeans.modules.uml.core.metamodel.diagrams.IDiagram)
          */
     public boolean generate(IInteraction pInteraction, IDiagram pExistingDiagram)
@@ -198,7 +197,8 @@ public class SequenceDiagramGenerator implements ISequenceDiagramGenerator
         return handled;
     }
     
-    /**
+    
+/**
      * Creates the sequence diagram under the given interaction.
      */
     private void createSequenceDiagram()
@@ -256,11 +256,11 @@ public class SequenceDiagramGenerator implements ISequenceDiagramGenerator
                 // Fix W6744:  Show the interaction boundary, preference based
 //                if (m_showInteractionBoundary)
                 {
-//                    m_progress.updateProgressControl(loadString("IDS_SQD_SHOW_BOUNDARY"), ++m_index, m_count);
+
 //                    IDiagramEngine diaEngine = TypeConversions.getDiagramEngine(m_Diagram);
-//                    if (diaEngine != null && diaEngine instanceof IADSequenceDiagEngine)
+
 //                    {
-//                        ((IADSequenceDiagEngine)diaEngine).showInteractionBoundary(true);
+
 //                    }
                 }
                 
@@ -286,7 +286,8 @@ public class SequenceDiagramGenerator implements ISequenceDiagramGenerator
         }
 
     }
-    /**
+    
+/**
      * Generates all the elements on the sequence diagram.
      */
     private void generateSequenceDiagramFromInteraction()
@@ -324,7 +325,8 @@ public class SequenceDiagramGenerator implements ISequenceDiagramGenerator
     }
     
     
-    /**
+    
+/**
      * Creates the lifelines, and performs diagram layout
      */
     private int createLifelines()
@@ -397,7 +399,8 @@ public class SequenceDiagramGenerator implements ISequenceDiagramGenerator
         }
     }
     
-    /**
+    
+/**
      * Converts the presentation element into a lifeline draw engine and saves it into out map
      *
      * @param pLifeline[in] Lifeline to associate to the draw engine
@@ -418,7 +421,8 @@ public class SequenceDiagramGenerator implements ISequenceDiagramGenerator
         return retObj;
     }
     
-    /**
+    
+/**
      * Creates the messages, attaching them to their lifelines.
      *
      * @return the vertical location of the last message
@@ -656,7 +660,8 @@ public class SequenceDiagramGenerator implements ISequenceDiagramGenerator
     }
     
     
-    /**
+    
+/**
      * Create the comments associated with the lifelines
      */
     private void createComments()
@@ -696,7 +701,8 @@ public class SequenceDiagramGenerator implements ISequenceDiagramGenerator
         }
     }
     
-    /**
+    
+/**
      * TBD made combned fragments arrangment here
      * also bump messages to label width (before cf)
      * also move comments to some side of commented element, may be try to stack if one element have several comments
@@ -715,7 +721,8 @@ public class SequenceDiagramGenerator implements ISequenceDiagramGenerator
         }
     }
     
-    /**
+    
+/**
      * Creates the presentation element for a commend associated with a lifeline
      */
     private IPresentationElement createComment(IComment pComment,Point point)
@@ -743,7 +750,8 @@ public class SequenceDiagramGenerator implements ISequenceDiagramGenerator
     }
     
     
-    /**
+    
+/**
      * Finds the EventOccurrence's associated message.
      *
      * @param pEventOccurrence[in] The EventOccurrence that may contain a message
@@ -763,7 +771,8 @@ public class SequenceDiagramGenerator implements ISequenceDiagramGenerator
         return pMessage;
     }
     
-    /**
+    
+/**
      * Creates the combined fragments
      */
     private void createCombinedFragments()
@@ -798,7 +807,8 @@ public class SequenceDiagramGenerator implements ISequenceDiagramGenerator
             }
         }
     }
-    /**
+    
+/**
      * Creates the combined fragments
      */
     private void findCombinedFragments()
@@ -834,7 +844,8 @@ public class SequenceDiagramGenerator implements ISequenceDiagramGenerator
         }
     }
     
-    /**
+    
+/**
      * Creates the combined fragments, handle validation between each cf creation
      * do it in reverse order
      */
@@ -864,7 +875,8 @@ public class SequenceDiagramGenerator implements ISequenceDiagramGenerator
             normalizeLifelines();
         }
     }
-    /**
+    
+/**
      * Creates the combined fragments, handle validation between each cf creation
      * do it in reverse order
      */
@@ -893,7 +905,8 @@ public class SequenceDiagramGenerator implements ISequenceDiagramGenerator
     }
     
     
-    /**
+    
+/**
      * Creates, and sizes the presentation element for the combined fragment.
      *
      * @param pCombinedFragment[in] The combined fragment to create on the diagram
@@ -984,7 +997,8 @@ public class SequenceDiagramGenerator implements ISequenceDiagramGenerator
         }
     }
     
-    /**
+    
+/**
      * @param string
      * @return
      */
@@ -993,7 +1007,8 @@ public class SequenceDiagramGenerator implements ISequenceDiagramGenerator
         return DiagCreatorAddIn.loadString(key);
     }
     
-    /**
+    
+/**
      * Forces all the message on the windows message que to be processed.
      */
     private void pumpMessages()
@@ -1005,7 +1020,8 @@ public class SequenceDiagramGenerator implements ISequenceDiagramGenerator
 //        }
     }
     
-    /**
+    
+/**
      * Creates and posts the input simple action kind
      */
     private void postSimpleAction(int /*SimpleActionKind*/

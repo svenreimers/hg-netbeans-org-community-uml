@@ -90,7 +90,8 @@ public class JavaAttributeChangeFacilityTestCase extends AbstractUMLTestCase
         junit.textui.TestRunner.run(JavaAttributeChangeFacilityTestCase.class);
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see junit.framework.TestCase#setUp()
      */
     protected void setUp() throws Exception
@@ -107,7 +108,8 @@ public class JavaAttributeChangeFacilityTestCase extends AbstractUMLTestCase
             "RoundTrip.JavaAttributeChangeFacility");
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.AbstractUMLTestCase#tearDown()
      */
     protected void tearDown() throws Exception
@@ -119,13 +121,14 @@ public class JavaAttributeChangeFacilityTestCase extends AbstractUMLTestCase
         disp.revokeRoundTripOperationSink(this);
     }
   
+
 /**
  * AttributeCreateTestCase
  */
  
     public void testCreateAttribute()
     {
-// TODO: conover - temporary until fixed            
+
 //        IClass c = createClass("Archangel");
 //        
 //        facility.addAttribute2("peace", "char", c, true, false);
@@ -191,13 +194,14 @@ public class JavaAttributeChangeFacilityTestCase extends AbstractUMLTestCase
     }
 
 
+
 /**
  * CreateNavigableAssociationTestCase
  */
 
     public void testCreateNavigableAssociation()
     {
-// TODO: conover - temporary until fixed            
+
 //        IClass c = createClass("Scapegoat");
 //        createClass("DirtyWork");
 //        
@@ -211,14 +215,16 @@ public class JavaAttributeChangeFacilityTestCase extends AbstractUMLTestCase
 //        //assertEquals(0,project.getOwnedElementsByName("Color").size());
     }
     
-        /* (non-Javadoc)
+        
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.core.roundtripframework.IRoundTripOperationEventsSink#onPreOperationChangeRequest(org.netbeans.modules.uml.core.roundtripframework.IChangeRequest, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
          */
     public void onPreOperationChangeRequest(IChangeRequest newVal, IResultCell cell)
     {
     }
     
-        /* (non-Javadoc)
+        
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.core.roundtripframework.IRoundTripOperationEventsSink#onOperationChangeRequest(org.netbeans.modules.uml.core.roundtripframework.IChangeRequest, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
          */
     public void onOperationChangeRequest(IChangeRequest req, IResultCell cell)
@@ -287,7 +293,8 @@ public class JavaAttributeChangeFacilityTestCase extends AbstractUMLTestCase
         }
     }
     
-    /**
+    
+/**
      * @param before
      * @return
      */

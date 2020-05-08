@@ -50,10 +50,8 @@ import java.util.TreeMap;
 
 
 
-/**
- *
- * @author Thuy
- */
+
+
 public class PositionMapper
 {
    private TreeMap<Long, Long> positionMap = new TreeMap<Long, Long>();
@@ -63,7 +61,8 @@ public class PositionMapper
    {
    }
    
-   /**
+   
+/**
     * Add to the map the start position where the change occurs and the number of bytes being 
     * changed
     * @param position start position in byte where the change occurs.

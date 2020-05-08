@@ -61,10 +61,8 @@ import org.netbeans.modules.uml.resources.images.ImageUtil;
 import org.openide.awt.Toolbar;
 import org.openide.util.NbBundle;
 
-/**
- *
- * @author Sheryl Su
- */
+
+
 public class DiagramSelectToolAction extends AbstractAction
 {
 

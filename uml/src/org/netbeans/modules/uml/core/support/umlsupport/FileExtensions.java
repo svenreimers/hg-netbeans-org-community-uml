@@ -44,10 +44,8 @@
 
 package org.netbeans.modules.uml.core.support.umlsupport;
 
-/**
- *
- * @author Trey Spiva
- */
+
+
 public interface FileExtensions
 {
 	//	Diagram extensions - broke into the TomSawyer file and the presentation data file

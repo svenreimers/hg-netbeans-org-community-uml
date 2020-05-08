@@ -49,22 +49,26 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.IDirectedRelation
 
 public interface IProtocolConformance extends IDirectedRelationship
 {
-	/**
+	
+/**
 	 * property SpecificMachine
 	*/
 	public IStateMachine getSpecificMachine();
 
-	/**
+	
+/**
 	 * property SpecificMachine
 	*/
 	public void setSpecificMachine( IStateMachine value );
 
-	/**
+	
+/**
 	 * property GeneralMachine
 	*/
 	public IProtocolStateMachine getGeneralMachine();
 
-	/**
+	
+/**
 	 * property GeneralMachine
 	*/
 	public void setGeneralMachine( IProtocolStateMachine value );

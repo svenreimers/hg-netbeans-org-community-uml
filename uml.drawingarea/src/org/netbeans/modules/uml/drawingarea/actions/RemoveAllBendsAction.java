@@ -53,10 +53,8 @@ import org.openide.util.Lookup;
 import org.openide.util.NbBundle;
 import org.openide.util.actions.NodeAction;
 
-/**
- *
- * @author Sheryl Su
- */
+
+
 public class RemoveAllBendsAction extends NodeAction
 {
 

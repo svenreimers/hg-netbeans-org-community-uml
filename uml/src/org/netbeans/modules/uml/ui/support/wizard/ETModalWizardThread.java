@@ -58,17 +58,16 @@ import java.awt.Cursor;
 import java.awt.Frame;
 
 
-/**
- * @author KevinM
- *
- */
+
+
 public abstract class ETModalWizardThread
 {
    protected Thread m_pThread = null;
    protected Runnable m_pRunnable = null;
 	protected boolean m_bLockFrameInput = true;
 	
-   /**
+   
+/**
     * @param target
     */
    public ETModalWizardThread(Runnable target)
@@ -77,7 +76,8 @@ public abstract class ETModalWizardThread
       m_pRunnable = target;
    }
 
-	/*
+	
+/*
 	 * Protected constructor this class is abstract, and you need a runnable to use the start method.
 	 */
    protected ETModalWizardThread()
@@ -90,13 +90,8 @@ public abstract class ETModalWizardThread
       return m_pThread;
    }
 
-   /*
-    * 
-    * @author KevinM
-    *
-    * This class watches for componenet to be moved and it repaints the 
-    * parent frame windows, when the component is hidden it reenables the frame window so it will except input.
-    */
+   
+
    public class ProgreessMoveListener implements ComponentListener
    {
 		public ProgreessMoveListener()
@@ -104,7 +99,8 @@ public abstract class ETModalWizardThread
 			super();
 		}
 		
-      /**
+      
+/**
       	 * Invoked when the component's size changes.
       	 */
       public void componentResized(ComponentEvent e)
@@ -113,7 +109,8 @@ public abstract class ETModalWizardThread
 			repaintFrame();
       }
 
-      /**
+      
+/**
       	* Invoked when the component's position changes.
       	*/
       public void componentMoved(ComponentEvent e)
@@ -122,7 +119,8 @@ public abstract class ETModalWizardThread
 			repaintFrame();
       }
 
-      /**
+      
+/**
       	* Invoked when the component has been made visible.
       	*/
       public void componentShown(ComponentEvent e)
@@ -131,7 +129,8 @@ public abstract class ETModalWizardThread
 			repaintFrame();
       }
 
-      /**
+      
+/**
       	* Invoked when the component has been made invisible.
       	*/
       public void componentHidden(ComponentEvent e)
@@ -149,7 +148,8 @@ public abstract class ETModalWizardThread
          	e.getComponent().removeComponentListener(this);
       }
       
-      /*
+      
+/*
        * Redraws the frame window when the component moves or is resized to fix the Tracks.
        */
       protected void repaintFrame()
@@ -166,7 +166,8 @@ public abstract class ETModalWizardThread
       }
    };
 
-	/*
+	
+/*
 	 * Returns the main integration app frmae. 
 	 */
    protected Frame getOwnerFrame()
@@ -175,7 +176,8 @@ public abstract class ETModalWizardThread
       return ui != null ? ui.getWindowHandle() : null;
    }
    
-	/*
+	
+/*
 	 * Start the thread and invoke the Runnable 
 	 */
 	public void start()
@@ -183,7 +185,8 @@ public abstract class ETModalWizardThread
 		start(m_bLockFrameInput);
 	}
 	
-	/*
+	
+/*
 	 * Strat the Runnable and disables the application frame until the thread is complete.
 	 */
    public void start(boolean lockTheFrame)
@@ -225,12 +228,14 @@ public abstract class ETModalWizardThread
 		return java.lang.Thread.NORM_PRIORITY; 		
 	}
 	
-   /*
+   
+/*
     * Return your progress bar component.
     */
    protected abstract Component getComponent();
    
-   /*
+   
+/*
     * Retuns the action interface to invoke from the the start method.
     */
    protected Runnable getRunnable()

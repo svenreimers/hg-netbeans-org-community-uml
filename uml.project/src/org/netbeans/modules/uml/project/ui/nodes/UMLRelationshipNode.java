@@ -52,10 +52,8 @@ import org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem;
 import org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeRelElement;
 
 
-/**
- *
- * @author Trey Spiva
- */
+
+
 public class UMLRelationshipNode extends UMLModelElementNode implements ITreeRelElement
 {
 
@@ -69,7 +67,8 @@ public class UMLRelationshipNode extends UMLModelElementNode implements ITreeRel
    }
 
 
-   /**
+   
+/**
     * 
     */
    public UMLRelationshipNode(Lookup lookup)
@@ -77,7 +76,8 @@ public class UMLRelationshipNode extends UMLModelElementNode implements ITreeRel
       super(lookup);
    }
 
-   /**
+   
+/**
     * @param item
     * @throws NullPointerException
     */
@@ -86,7 +86,8 @@ public class UMLRelationshipNode extends UMLModelElementNode implements ITreeRel
       super(item);
    }
 
-   /**
+   
+/**
     * @param item
     * @throws NullPointerException
     */

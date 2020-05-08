@@ -52,10 +52,8 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.IPresentationElem
 import org.netbeans.modules.uml.drawingarea.view.DesignerScene;
 
 
-/**
- *
- * @author treyspiva
- */
+
+
 public class LockSelectionAction extends WidgetAction.Adapter
 {
     @Override

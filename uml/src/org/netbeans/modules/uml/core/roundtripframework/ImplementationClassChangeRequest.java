@@ -42,19 +42,15 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : ImplementationClassChangeRequest.java
- * Created on : Oct 28, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.roundtripframework;
 
 import org.netbeans.modules.uml.core.metamodel.core.foundation.IElement;
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier;
 
-/**
- * @author Aztec
- */
+
+
 public class ImplementationClassChangeRequest
     extends ImplementationChangeRequest
     implements IImplementationClassChangeRequest
@@ -66,7 +62,8 @@ public class ImplementationClassChangeRequest
     IElement    m_BeforeConnection = null;
     IElement    m_AfterConnection = null;
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IImplementationClassChangeRequest#setAfterConnection(org.netbeans.modules.uml.core.metamodel.core.foundation.IElement)
      */
     public void setAfterConnection(IElement pElement)
@@ -74,7 +71,8 @@ public class ImplementationClassChangeRequest
         m_AfterConnection = pElement;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IImplementationClassChangeRequest#setAfterImplementing(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier)
      */
     public void setAfterImplementing(IClassifier pClassifier)
@@ -82,7 +80,8 @@ public class ImplementationClassChangeRequest
         m_AfterImplementing = pClassifier;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IImplementationClassChangeRequest#setAfterInterface(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier)
      */
     public void setAfterInterface(IClassifier pClassifier)
@@ -90,7 +89,8 @@ public class ImplementationClassChangeRequest
         m_AfterInterface = pClassifier;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IImplementationClassChangeRequest#setBeforeConnection(org.netbeans.modules.uml.core.metamodel.core.foundation.IElement)
      */
     public void setBeforeConnection(IElement pElement)
@@ -98,7 +98,8 @@ public class ImplementationClassChangeRequest
         m_BeforeConnection = pElement;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IImplementationClassChangeRequest#setBeforeImplementing(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier)
      */
     public void setBeforeImplementing(IClassifier pClassifier)
@@ -106,7 +107,8 @@ public class ImplementationClassChangeRequest
         m_BeforeImplementing = pClassifier;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IImplementationClassChangeRequest#setBeforeInterface(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier)
      */
     public void setBeforeInterface(IClassifier pClassifier)
@@ -114,7 +116,8 @@ public class ImplementationClassChangeRequest
         m_BeforeInterface = pClassifier;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IImplementationChangeRequest#getAfterConnection()
      */
     public IElement getAfterConnection()
@@ -122,7 +125,8 @@ public class ImplementationClassChangeRequest
         return m_AfterConnection;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IImplementationChangeRequest#getAfterImplementing()
      */
     public IClassifier getAfterImplementing()
@@ -130,7 +134,8 @@ public class ImplementationClassChangeRequest
         return m_AfterImplementing;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IImplementationChangeRequest#getAfterInterface()
      */
     public IClassifier getAfterInterface()
@@ -138,7 +143,8 @@ public class ImplementationClassChangeRequest
         return m_AfterInterface;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IImplementationChangeRequest#getBeforeConnection()
      */
     public IElement getBeforeConnection()
@@ -146,7 +152,8 @@ public class ImplementationClassChangeRequest
         return m_BeforeConnection;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IImplementationChangeRequest#getBeforeImplementing()
      */
     public IClassifier getBeforeImplementing()
@@ -154,7 +161,8 @@ public class ImplementationClassChangeRequest
         return m_BeforeImplementing;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IImplementationChangeRequest#getBeforeInterface()
      */
     public IClassifier getBeforeInterface()

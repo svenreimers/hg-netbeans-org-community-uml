@@ -49,17 +49,20 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 public interface IEncapsulatedClassifier extends IStructuredClassifier
 {
-	/**
+	
+/**
 	 * method AddPort
 	*/
 	public void addPort( IPort pPort );
 
-	/**
+	
+/**
 	 * method RemovePort
 	*/
 	public void removePort( IPort pPort );
 
-	/**
+	
+/**
 	 * property Ports
 	*/
 	public ETList<IPort> getPorts();

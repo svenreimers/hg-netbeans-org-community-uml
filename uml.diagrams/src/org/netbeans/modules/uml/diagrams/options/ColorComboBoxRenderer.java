@@ -57,11 +57,8 @@ import javax.swing.JList;
 import javax.swing.ListCellRenderer;
 
 
-/**
- * Renderer and editor for color JComboBox.
- *
- * @author Jan Jancura
- */
+
+
 class ColorComboBoxRenderer extends JComponent implements
 ListCellRenderer, ComboBoxEditor {
 

@@ -51,17 +51,16 @@ import java.util.EventObject;
 import org.netbeans.modules.uml.core.metamodel.structure.IProject;
 import org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeElement;
 
-/**
- *
- * @author Trey Spiva
- */
+
+
 public class ProjectTreeModelEvent extends EventObject
 {
    private boolean      m_IsClosed = false;
    private ITreeElement m_TreeElement = null;
    private IProject     m_AffectProject = null;
 
-   /**
+   
+/**
     * Used to create an event when a project has either been closed or opened.
     * @param source
     */
@@ -76,7 +75,8 @@ public class ProjectTreeModelEvent extends EventObject
       setClosed(isClosed);
    }
 
-   /**
+   
+/**
     * Retrieves the project that is affected by the action.
     * 
     * @return The project.
@@ -86,7 +86,8 @@ public class ProjectTreeModelEvent extends EventObject
       return m_AffectProject;
    }
 
-   /**
+   
+/**
     * Sets the project that is affected by the action.
     * 
     * @param project The project.
@@ -96,7 +97,8 @@ public class ProjectTreeModelEvent extends EventObject
       m_AffectProject = project;
    }
    
-   /**
+   
+/**
     * Test if the project is closed.
     * 
     * @return <code>true</code> if the project is closed. 
@@ -106,7 +108,8 @@ public class ProjectTreeModelEvent extends EventObject
       return m_IsClosed;
    }
    
-   /**
+   
+/**
     * Specifies that the project is closed or not.
     * @param b <code>true</code> if the project is closed. 
     */
@@ -115,7 +118,8 @@ public class ProjectTreeModelEvent extends EventObject
       m_IsClosed = b;
    }
 
-   /**
+   
+/**
     * Retrieves the tree node that represents the project.
     * 
     * @return The ITreeElement that represent the project.
@@ -125,7 +129,8 @@ public class ProjectTreeModelEvent extends EventObject
       return m_TreeElement;
    }
 
-   /**
+   
+/**
     * Sets the tree node that represents the project.
     * 
     * @param element The ITreeElement that represent the project.

@@ -52,10 +52,8 @@ import org.netbeans.modules.uml.core.metamodel.core.primitivetypes.IVisibilityKi
 import org.netbeans.modules.uml.core.support.umlsupport.XMLManip;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
-/**
- * @author sumitabhk
- *
- */
+
+
 public class BaseElement extends VersionableElement
 {
 
@@ -165,14 +163,16 @@ public class BaseElement extends VersionableElement
 	public static final int AK_STRUCTURED	= 0;
 	public static final int AK_FLOWCHART	= AK_STRUCTURED + 1;
 
-	/**
+	
+/**
 	 * 
 	 */
 	public BaseElement() {
 		super();
 	}
 	
-	/**
+	
+/**
 	 * 
 	 * Makes sure that the node with the passed in name is present
 	 * under this elements node. If it isn't, one is created.
@@ -248,7 +248,8 @@ public class BaseElement extends VersionableElement
       }
 	}
 	
-	/**
+	
+/**
 	 * Sets the XML attribute that has the passed in name to the passed in value.
 	 *
 	 * @param attrName[in] the name of the XML attribute to set.
@@ -262,7 +263,8 @@ public class BaseElement extends VersionableElement
 		UMLXMLManip.setAttributeValue(this, name, val);
 	}
 	
-	/**
+	
+/**
 	 *
 	 * Translates the passed in string value into an VisibilityKind
 	 * enum value.
@@ -294,7 +296,8 @@ public class BaseElement extends VersionableElement
 		return kind;
 	}
 
-	/**
+	
+/**
 	 * Sets the specified attribute on this element to the passed in enum value
 	 *
 	 * @param attrName[in]	The XML attribute value to set
@@ -320,7 +323,8 @@ public class BaseElement extends VersionableElement
 		setAttributeValue(attrName, value);
 	}
 
-	/**
+	
+/**
 	 *
 	 * Adds newElement to this element, establishing the back pointer
 	 * connection between the two types.
@@ -355,7 +359,8 @@ public class BaseElement extends VersionableElement
         connector.addChildAndConnect((Owner)this, byID, featureName, query, newType, backPointer);
     }
 	
-   /**
+   
+/**
     * 
     * This method should be called when the element to remove is
     * referenced by ID by the current element's XML node.
@@ -392,7 +397,8 @@ public class BaseElement extends VersionableElement
 //       
 //   }
 	
-	/**
+	
+/**
 	 * This is exactly the same as RemoveByID() that takes an ID, except
 	 * that the first parameter is an actual element. The element will be queried
 	 * for its XMI ID, and then the BSTR version of the RemoveByID() will be 
@@ -419,7 +425,8 @@ public class BaseElement extends VersionableElement
          ec.removeByID(this, elementToRemove.getXMIID(), presenceQuery, removeFunc);
      }
      
-	/**
+	
+/**
 	 * Adds the xmi.id of inElement the the IDREFS attribute passed in.
 	 *
 	 * @param inElement[in]	the element whose id we are adding.
@@ -432,7 +439,8 @@ public class BaseElement extends VersionableElement
 		UMLXMLManip.addElementByID(this, elem, attrName);
 	}
 	
-	/**
+	
+/**
 	 * Removes the id of the element passed in from the XML attribute value
 	 * of the attribute passed in.
 	 *
@@ -450,7 +458,8 @@ public class BaseElement extends VersionableElement
 		UMLXMLManip.removeElementByID(this, elem, attrName);
 	}
 
-	/**
+	
+/**
 	 * 
 	 * Removes the id from the XML attribute with the matching name.
 	 *
@@ -466,7 +475,8 @@ public class BaseElement extends VersionableElement
 		UMLXMLManip.removeElementByID(idToRemove, this, attrName);
 	}
 
-	/**
+	
+/**
 	 * 
 	 * Given an element name such as "UML:Model", "Model" will be returned.
 	 * 
@@ -480,7 +490,8 @@ public class BaseElement extends VersionableElement
 		return XMLManip.retrieveSimpleName(node);
 	}
 	
-	/**
+	
+/**
 	 * 
 	 * This method should be called when the element to remove is
 	 * fully contained as a child of the current element's XML node.
@@ -503,7 +514,8 @@ public class BaseElement extends VersionableElement
         return null;
 	}
 	
-	/**
+	
+/**
 	 *
 	 * The method is used to take the XMI id from newElement
 	 * and place that ID value in the XML attribute value
@@ -544,7 +556,8 @@ public class BaseElement extends VersionableElement
                                         addBackPointer, removeBackPointer);
 	}
 
-	/**
+	
+/**
 	 *
 	 * Checks to see if the passed in element is part of the collection
 	 * of elements dictated by the query passed in.
@@ -569,13 +582,14 @@ public class BaseElement extends VersionableElement
 		org.dom4j.Element ele = getElementNode();
 
 		// The types, ContactManager is instantiated with
-		// here, don't matter when calling IsElementPresent
+		
 		flag = ContactManager.isElementPresent(ele, newEle, query, checkById);
 		
 		return flag;
 	}
 	
-	/**
+	
+/**
 	 * Retrieves all the specified nodes / children of this element.
 	 *
 	 * @param dummy[in] not used. Used solely to pass the type that will
@@ -601,7 +615,8 @@ public class BaseElement extends VersionableElement
 		return UMLXMLManip.retrieveElementCollection(node, dummy, query, c);
 	}
 	
-	/**
+	
+/**
 	 * 
 	 * Retrieves the element identified via xmi.id in the XML attribute
 	 * passed in.
@@ -640,7 +655,8 @@ public class BaseElement extends VersionableElement
 //		return UMLXMLManip.retrieveElementCollection(node, (T) null, query);
 //	}
 //   
-	/**
+	
+/**
 	 * Retrieves the specific attribute value or feature from this element.
 	 *
 	 * @param elementName[in] the name of the element or attribute.
@@ -675,7 +691,8 @@ public class BaseElement extends VersionableElement
 		return elem;
 	}
 
-	/**
+	
+/**
 	 * Retrieves the element dictated by the passed in elementName. The passed
 	 * in name is the name of an XML attribute whose value results in an 
 	 * xmi.id value, such as "S.9". This call assumes that the value is 
@@ -702,7 +719,8 @@ public class BaseElement extends VersionableElement
 		return element;
 	}
 	
-	/**
+	
+/**
 	* Retrieves the element id'd by the passed in xmi.id value
 	* 
 	* @param idStr[in] The xmi.id value to search. If the value contains
@@ -739,7 +757,8 @@ public class BaseElement extends VersionableElement
 		return retObj;
 	}
 
-	/**
+	
+/**
 	 * Makes sure the appropriate feature on this XML node exists, then adds
 	 * the element to that feature
 	 *
@@ -758,7 +777,8 @@ public class BaseElement extends VersionableElement
 		ContactManager.addChild(this, featureName, query, value);
 	}
 	
-	/**
+	
+/**
 	 * Determines the ordering kind of the specified XML attribute.
 	 *
 	 * @param attrName[in] the name of the XML attribute to set.
@@ -780,7 +800,8 @@ public class BaseElement extends VersionableElement
 		return retVal;
 	}
 
-	/**
+	
+/**
 	 * Sets that appropriate value based on the value of the passed in
 	 * OrderingKind enum
 	 *
@@ -799,7 +820,8 @@ public class BaseElement extends VersionableElement
 		setAttributeValue(attrName, value);
 	}
 	
-	/**
+	
+/**
 	 * Determines the iteration activity group kind of the specified XML attribute.
 	 *
 	 * @param attrName[in] the name of the XML attribute to set.
@@ -818,7 +840,8 @@ public class BaseElement extends VersionableElement
 		return kind;
 	}
 	
-	/**
+	
+/**
 	 * Sets that appropriate value based on the value of the passed in
 	 *
 	 * @param attrName[in] the name of the XML attribute to set.
@@ -836,7 +859,8 @@ public class BaseElement extends VersionableElement
 		setAttributeValue( attrName, value );
 	}
 
-	/**
+	
+/**
 	 * Determines the ordering kind of the specified XML attribute.
 	 *
 	 * @param attrName[in] the name of the XML attribute to set.
@@ -866,7 +890,8 @@ public class BaseElement extends VersionableElement
 		return kind;
 	}
 
-	/**
+	
+/**
 	 * Sets that appropriate value based on the value of the passed in
 	 * MessageKind enum
 	 *
@@ -893,7 +918,8 @@ public class BaseElement extends VersionableElement
 		setAttributeValue( attrName, value );
 	}
 
-	/**
+	
+/**
 	 * Determines the object flow effect kind of the specified XML attribute.
 	 *
 	 * @param attrName[in] the name of the XML attribute to set.
@@ -920,7 +946,8 @@ public class BaseElement extends VersionableElement
 		return kind;
 	}
 
-	/**
+	
+/**
 	 * Sets that appropriate value based on the value of the passed in
 	 * ObjectFlowEffectKind enum
 	 *
@@ -947,7 +974,8 @@ public class BaseElement extends VersionableElement
 		setAttributeValue( attrName, value );
 	}
 
-	/**
+	
+/**
 	 * Determines the object flow effect kind of the specified XML attribute.
 	 *
 	 * @param attrName[in] the name of the XML attribute to set.
@@ -970,7 +998,8 @@ public class BaseElement extends VersionableElement
 		return kind;
 	}
 
-	/**
+	
+/**
 	 * Sets that appropriate value based on the value of the passed in
 	 * ActivityGroupKind enum
 	 *
@@ -993,7 +1022,8 @@ public class BaseElement extends VersionableElement
 		setAttributeValue( attrName, value );
 	}
 
-	/**
+	
+/**
 	 * Determines the object flow effect kind of the specified XML attribute.
 	 *
 	 * @param attrName[in] the name of the XML attribute to set.
@@ -1023,7 +1053,8 @@ public class BaseElement extends VersionableElement
 		return kind;
 	}
 
-	/**
+	
+/**
 	 * Sets that appropriate value based on the value of the passed in
 	 * ParameterSemanticsKind enum
 	 *
@@ -1050,7 +1081,8 @@ public class BaseElement extends VersionableElement
 		setAttributeValue( attrName, value );
 	}
 
-	/**
+	
+/**
 	 * Translates the passed in string value into an AggregationKind
 	 * enum value.
 	 *
@@ -1074,7 +1106,8 @@ public class BaseElement extends VersionableElement
 		return kind;
 	}
 
-	/**
+	
+/**
 	 * Sets the specified attribute on this element to the passed in enum value
 	 *
 	 * @param attrName[in]	The XML attribute value to set
@@ -1096,7 +1129,8 @@ public class BaseElement extends VersionableElement
 		setAttributeValue( attrName, value );
 	}
 
-	/**
+	
+/**
 	 * Retrieves the value of the specified XML attribute, translating that
 	 *	string value into the appropriate ScopeKind enum value.
 	 *
@@ -1116,7 +1150,8 @@ public class BaseElement extends VersionableElement
 		return kind;
 	}
 
-	/**
+	
+/**
 	 * Sets the value of the passed in attribute to the value of the
 	 * ScopeKind enum value passed in.
 	 *
@@ -1135,7 +1170,8 @@ public class BaseElement extends VersionableElement
 		setAttributeValue( attrName, value );
 	}
 
-	/**
+	
+/**
 	 *
 	 * Retrieves the value of the specified XML attribute, translating that
 	 *	string value into the appropriate ParameterDirectionKind enum value.
@@ -1165,7 +1201,8 @@ public class BaseElement extends VersionableElement
 		return kind;
 	}
 
-	/**
+	
+/**
 	 * Sets the value of the passed in attribute to the value of the
 	 * ParameterDirectionKind enum value passed in.
 	 *
@@ -1192,7 +1229,8 @@ public class BaseElement extends VersionableElement
 		setAttributeValue( attrName, value );
 	}
 
-	/**
+	
+/**
 	 * Retrieves the Changeability value of this element.
 	 *
 	 * @param attrName[in]	Name of the XML attribute that holds the value
@@ -1222,7 +1260,8 @@ public class BaseElement extends VersionableElement
 		return kind;
 	}
 
-	/**
+	
+/**
 	 * Sets the changeability value for this element.
 	 *
 	 * @param attrName[in]	Name of the XML attribute to hold the value
@@ -1248,7 +1287,8 @@ public class BaseElement extends VersionableElement
 		setAttributeValue( attrName, value );
 	}
 
-	/**
+	
+/**
 	 *
 	 * Retrieves the Instatiotion value of this element
 	 *
@@ -1275,7 +1315,8 @@ public class BaseElement extends VersionableElement
 		return kind;
 	}
 
-	/**
+	
+/**
 	 * Sets the Instantiation value for this element.
 	 *
 	 * @param attrName[in]	Name of the XML attribute to hold the value
@@ -1297,7 +1338,8 @@ public class BaseElement extends VersionableElement
 		setAttributeValue( attrName, value );
 	}
 
-	/**
+	
+/**
 	 *
 	 * Retrieves the value of the specified XML attribute, translating that
 	 *	string value into the appropriate PartKind enum value.
@@ -1323,7 +1365,8 @@ public class BaseElement extends VersionableElement
 		return kind;
 	}
 
-	/**
+	
+/**
 	 * Sets the PartKind value for this element.
 	 *
 	 * @param attrName[in]	Name of the XML attribute to hold the value
@@ -1345,7 +1388,8 @@ public class BaseElement extends VersionableElement
 		setAttributeValue( attrName, value );
 	}
 
-	/**
+	
+/**
 	 *
 	 * Retrieves the value of the specified XML attribute, translating that
 	 *	string value into the appropriate ObjectNodeOrderingKind enum value.
@@ -1375,7 +1419,8 @@ public class BaseElement extends VersionableElement
 		return kind;
 	}
 
-	/**
+	
+/**
 	 * Sets the ObjectNodeOrderingKind value for this element.
 	 *
 	 * @param attrName[in]	Name of the XML attribute to hold the value
@@ -1401,7 +1446,8 @@ public class BaseElement extends VersionableElement
 		setAttributeValue( attrName, value );
 	}
 
-	/**
+	
+/**
 	 *
 	 * Retrieves the value of the specified XML attribute, translating that
 	 *	string value into the appropriate InteractionOperator enum value.
@@ -1462,7 +1508,8 @@ public class BaseElement extends VersionableElement
 		return kind;
 	}
 
-	/**
+	
+/**
 	 * Sets the InteractionOperator value for this element.
 	 *
 	 * @param attrName[in]	Name of the XML attribute to hold the value
@@ -1516,7 +1563,8 @@ public class BaseElement extends VersionableElement
 		setAttributeValue( attrName, value );
 	}
 
-	/**
+	
+/**
 	 *
 	 * Retrieves the value of the specified XML attribute, translating that
 	 *	string value into the appropriate StateMachineKind enum value.
@@ -1538,7 +1586,8 @@ public class BaseElement extends VersionableElement
 		return kind;
 	}
 
-	/**
+	
+/**
 	 * Sets the StateMachineKind value for this element.
 	 *
 	 * @param attrName[in]	Name of the XML attribute to hold the value
@@ -1556,7 +1605,8 @@ public class BaseElement extends VersionableElement
 		setAttributeValue( attrName, value );
 	}
 
-	/**
+	
+/**
 	 *
 	 * Retrieves the value of the specified XML attribute, translating that
 	 *	string value into the appropriate PseudostateKind enum value.
@@ -1605,7 +1655,8 @@ public class BaseElement extends VersionableElement
 		return kind;
 	}
 
-	/**
+	
+/**
 	 * Sets the PseudostateKind value for this element.
 	 *
 	 * @param attrName[in]	Name of the XML attribute to hold the value
@@ -1647,7 +1698,8 @@ public class BaseElement extends VersionableElement
 		setAttributeValue( attrName, value );
 	}
 
-	/**
+	
+/**
 	 * Sets the specified attribute on this element.
 	 *
 	 * @param inElement[in]	the element who will be queried for the IVersionableElement
@@ -1663,7 +1715,8 @@ public class BaseElement extends VersionableElement
 		ContactManager.setElement(this, inElement, attrName);
 	}
 
-	/**
+	
+/**
 	 * Makes sure the appropriate feature on this XML node exists, then adds
 	 * the element to that feature
 	 *
@@ -1687,7 +1740,8 @@ public class BaseElement extends VersionableElement
 		ContactManager.insertChildBefore(this, featureName, query, value, reference);
 	}
 	
-	/**
+	
+/**
 	 * Translates the passed in string value into an CallConcurrencyKind
 	 * enum value.
 	 *
@@ -1711,7 +1765,8 @@ public class BaseElement extends VersionableElement
 		return kind;
 	}
 
-	/**
+	
+/**
 	 * Sets the specified attribute on this element to the passed in enum value
 	 *
 	 * @param attrName[in]	The XML attribute value to set
@@ -1733,7 +1788,8 @@ public class BaseElement extends VersionableElement
 		setAttributeValue( attrName, value );
 	}
 
-	/**
+	
+/**
 	 * Translates the passed in string value into an ActivityKind
 	 * enum value.
 	 *
@@ -1753,7 +1809,8 @@ public class BaseElement extends VersionableElement
 		return kind;
 	}
 	
-	/**
+	
+/**
 	 * Sets the specified attribute on this element to the passed in enum value
 	 *
 	 * @param attrName[in]	The XML attribute value to set

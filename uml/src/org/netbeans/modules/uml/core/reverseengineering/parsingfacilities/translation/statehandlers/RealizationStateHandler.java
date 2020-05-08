@@ -43,11 +43,8 @@
  */
 
 
-/*
- * File       : RealizationStateHandler.java
- * Created on : Dec 12, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.statehandlers;
 
 import org.dom4j.Node;
@@ -56,9 +53,8 @@ import org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.IUMLPa
 import org.netbeans.modules.uml.core.reverseengineering.reframework.IRERealization;
 import org.netbeans.modules.uml.core.reverseengineering.reframework.RERealization;
 
-/**
- * @author Aztec
- */
+
+
 public class RealizationStateHandler extends GeneralizationStateHandler
 {
     public String getRelationshipTagName() 

@@ -43,6 +43,7 @@
  */
 
 
+
 /*
  * UMLElementNode.java
  *
@@ -53,10 +54,8 @@ package org.netbeans.test.umllib.nodes;
 import org.netbeans.jellytools.nodes.Node;
 import org.netbeans.jemmy.operators.JTreeOperator;
 
-/**
- *
- * @author Alexei Mokeev
- */
+
+
 public class UMLElementNode extends Node {
     
     /** Creates a new instance of UMLElementNode */

@@ -49,10 +49,8 @@ import org.netbeans.api.visual.action.TextFieldInplaceEditor;
 import org.netbeans.api.visual.widget.Widget;
 import org.netbeans.modules.uml.drawingarea.view.UMLLabelWidget;
 
-/**
- *
- * @author Jyothi
- */
+
+
 public class RenameEditor implements TextFieldInplaceEditor {
     
     /** Creates a new instance of RenameEditor */

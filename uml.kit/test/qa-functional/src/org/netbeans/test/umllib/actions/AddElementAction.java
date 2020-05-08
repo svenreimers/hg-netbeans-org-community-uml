@@ -43,6 +43,7 @@
  */
 
 
+
 /*
  * AddElement.java
  *
@@ -58,10 +59,8 @@ import static org.netbeans.test.umllib.util.PopupConstants.* ;
 
 import org.netbeans.jellytools.actions.ActionNoBlock;
 
-/**
- *
- * @author VijayaBabu Mummaneni
- */
+
+
 public class AddElementAction extends ActionNoBlock {
 
     private static final String addPopup = ADD_ELEMENT ;                                        

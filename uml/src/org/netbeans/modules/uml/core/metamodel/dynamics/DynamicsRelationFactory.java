@@ -97,7 +97,8 @@ public class DynamicsRelationFactory implements IDynamicsRelationFactory
                 oper, messageKind);
     }
     
-    /**
+    
+/**
      * Creates a new message between the 'from' and 'to' lifelines.
      * 
      * @param fromBeforeMessage
@@ -375,7 +376,8 @@ public class DynamicsRelationFactory implements IDynamicsRelationFactory
             event.setLifeline(lifeline);
     }
     
-    /**
+    
+/**
      * Creates all the necessary elements associated with the starting fragment 
      * in a send message event. This includes the EventOccurrence, the 
      * ActionOccurrence, and the CallAction on the ActionOccurrence.
@@ -440,7 +442,8 @@ public class DynamicsRelationFactory implements IDynamicsRelationFactory
         return new ETPairT<IEventOccurrence, IActionOccurrence>(null, null);
     }
 
-    /**
+    
+/**
      * Creates and returns an atomic fragment.
      * @return <code>An IAtomicFragment</code>
      */
@@ -450,7 +453,8 @@ public class DynamicsRelationFactory implements IDynamicsRelationFactory
             .createType("AtomicFragment");
     }
     
-    /**
+    
+/**
      * Creates and places an implicit gate on the given IAtomicFragment.
      * @param fragment An IAtomicFragment
      * @return The <code>IGate</code> created.

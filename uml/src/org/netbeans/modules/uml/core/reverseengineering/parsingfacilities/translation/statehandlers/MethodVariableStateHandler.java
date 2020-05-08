@@ -43,11 +43,8 @@
  */
 
 
-/*
- * File       : MethodVariableStateHandler.java
- * Created on : Dec 11, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.statehandlers;
 
 import org.dom4j.Node;
@@ -62,9 +59,8 @@ import org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.transl
 import org.netbeans.modules.uml.core.reverseengineering.reframework.IREClass;
 import org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ITokenDescriptor;
 
-/**
- * @author Aztec
- */
+
+
 public class MethodVariableStateHandler extends MethodParameterStateHandler
 {
     private Expression      m_Expression = new Expression();
@@ -75,7 +71,8 @@ public class MethodVariableStateHandler extends MethodParameterStateHandler
     private boolean         m_IsCreateObject = false;
 
 
-    /**
+    
+/**
      * @param language
      * @param stateName
      */
@@ -97,7 +94,7 @@ public class MethodVariableStateHandler extends MethodParameterStateHandler
             m_InInitializer = true;
         }
         else if ("Conditional Expression".equals(stateName)) {
-          //kris richards - should never get here.
+          
           // It is now assumed that the "Conditional Expression" state
           // will occur as a substate of the MethodVariableStateHandler. Therefore
           // the state is trap in the MethodVariableStateHandler.createSubStateHandler 

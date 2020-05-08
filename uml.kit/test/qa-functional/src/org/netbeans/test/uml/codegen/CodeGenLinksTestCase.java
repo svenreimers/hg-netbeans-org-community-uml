@@ -43,6 +43,7 @@
  */
 
 
+
 /*
  * CodeGenLinksTestCase.java
  *
@@ -74,10 +75,8 @@ import org.netbeans.test.umllib.project.elem.impl.InterfaceElem;
 import org.netbeans.test.umllib.project.verifier.elem.ReflectionElementVerifier;
 import org.netbeans.test.umllib.project.verifier.elem.TextElementVerifier;
 
-/**
- *
- * @author Alexandr Scherbatiy
- */
+
+
 
 
 public class CodeGenLinksTestCase extends CodeGenerationTestCase {
@@ -324,7 +323,7 @@ public class CodeGenLinksTestCase extends CodeGenerationTestCase {
      
 
     // =================================================================== //
-    // ======================    Generic Link       ====================== //
+    
     // =================================================================== //
     
     public void testGenericLinkGeneration(){

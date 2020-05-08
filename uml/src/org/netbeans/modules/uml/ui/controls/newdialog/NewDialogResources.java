@@ -51,10 +51,8 @@ import java.util.ResourceBundle;
 import java.util.Enumeration;
 import org.netbeans.modules.uml.ui.support.commonresources.CommonResources;
 
-/**
- *
- * @author Trey Spiva
- */
+
+
 public class NewDialogResources extends CommonResources
 {
 
@@ -62,7 +60,8 @@ public class NewDialogResources extends CommonResources
 
    private static final ResourceBundle RESOURCE_BUNDLE = ResourceBundle.getBundle(BUNDLE_NAME);
 
-   /**
+   
+/**
     * 
     */
    private NewDialogResources()
@@ -70,7 +69,8 @@ public class NewDialogResources extends CommonResources
 
       // TODO Auto-generated constructor stub
    }
-   /**
+   
+/**
     * @param key
     * @return
     */

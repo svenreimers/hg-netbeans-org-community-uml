@@ -65,14 +65,13 @@ import org.netbeans.modules.uml.core.support.umlutils.ETArrayList;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.IElement;
 
-/**
- * @author sumitabhk
- *
- */
+
+
 public class PresentationReferenceHelper
 {
 
-	/**
+	
+/**
 	 * 
 	 */
 	public PresentationReferenceHelper()
@@ -80,7 +79,8 @@ public class PresentationReferenceHelper
 		super();
 	}
 
-	/**
+	
+/**
 	 * Creates an IPresentationReference relationship
 	 *
 	 * @param pReferencing [in] The referencing PE
@@ -137,7 +137,8 @@ public class PresentationReferenceHelper
 	}
 
 
-	/**
+	
+/**
 	 * Returns all the IPresentationElements that are referred to by the presentation element pReferencing.
 	 *
 	 * @param pReferencing [in] The referencing PE
@@ -173,7 +174,8 @@ public class PresentationReferenceHelper
 		return retObj;
 	}
 
-	/**
+	
+/**
 	 * Returns true if there are referred elements.  If not then pReferredElements is NULL.
 	 *
 	 * @param pReferencing [in] The referencing PE
@@ -206,7 +208,8 @@ public class PresentationReferenceHelper
 		return retObj;
 	}
 
-	/**
+	
+/**
 	 * Returns all the IPresentationElements that are referred to by the presentation element pReferencing.
 	 *
 	 * @param pReferencing [in] The referencing PE
@@ -248,7 +251,8 @@ public class PresentationReferenceHelper
 		return null;
 	}
 
-	/**
+	
+/**
 	 * Returns all the IPresentationElements that are referring pReferences (ie the parent or owner objects of the relationship)
 	 */
 	public static ETList < IPresentationElement > getAllReferencingElements(IPresentationElement pReferencedElement) {
@@ -278,7 +282,8 @@ public class PresentationReferenceHelper
 		return null;
 	}
 
-	/**
+	
+/**
 	 * Removes all presentation references
 	 *
 	 * @param pReferred [in] The child whose presentation references should be removed

@@ -65,9 +65,8 @@ import org.netbeans.test.umllib.Utils;
 import org.netbeans.test.umllib.util.PopupConstants;
 
 
-/**
- * @author yaa
- */
+
+
 public class MUPUtils {
     
     public MUPUtils() {
@@ -271,6 +270,7 @@ public class MUPUtils {
             JemmyProperties.setCurrentTimeout("JTreeOperator.WaitNextNodeTimeout", timeout);
         }
     }
+
 /*
     public static boolean moveElementToDiagram(String srcProject, String tgtProject, String elName, String diagramName){
         ProjectsTabOperator pto = ProjectsTabOperator.invoke();

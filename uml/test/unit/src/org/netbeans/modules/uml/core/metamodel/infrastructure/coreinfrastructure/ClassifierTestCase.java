@@ -53,6 +53,7 @@ import org.netbeans.modules.uml.core.support.umlsupport.INamedCollection;
 import org.netbeans.modules.uml.core.support.umlutils.ETArrayList;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
+
 /**
  * Test cases for Classifier.
  *
@@ -73,7 +74,8 @@ public class ClassifierTestCase extends AbstractUMLTestCase
         assertNotNull(clazz);
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see junit.framework.TestCase#tearDown()
      */
     protected void tearDown() throws Exception
@@ -83,7 +85,8 @@ public class ClassifierTestCase extends AbstractUMLTestCase
         clazz.delete();
     }
 
-    /**
+    
+/**
      * Test whether this method finds the operation with the matching signature.
      * We are here using gloabalOper, which was already created through 
      * testCreateOperation() method.    
@@ -205,7 +208,8 @@ public class ClassifierTestCase extends AbstractUMLTestCase
         assertNotNull(attr);
     }
     
-    /**
+    
+/**
      * Create a constructor and check whether its not null and its name is equal to
      * the class's name.
      */
@@ -216,7 +220,8 @@ public class ClassifierTestCase extends AbstractUMLTestCase
         assertEquals(clazz.getName(), constructor.getName());
     }
 
-    /**
+    
+/**
      * Create an operation and check whether its not null and its name is equal to the
      * name that was given as input.
      */
@@ -282,7 +287,8 @@ public class ClassifierTestCase extends AbstractUMLTestCase
         assertEquals(1, opss.size());
     }
 
-    /**
+    
+/**
      * Gets an attribute by its name and check whether its not null and its name is equal to the
      * name that was given as input.
      */
@@ -367,7 +373,8 @@ public class ClassifierTestCase extends AbstractUMLTestCase
         assertEquals(1, ends.size());
     }
     
-    /**
+    
+/**
      * First set the isAbstract flag to true and check if the value set is
      * correct.
      */
@@ -385,7 +392,8 @@ public class ClassifierTestCase extends AbstractUMLTestCase
         // Tested by setIsAbstract
     }
 
-    /**
+    
+/**
      * First set the isLeaf flag to true and check if the value set is correct.
      */
     public void testSetIsLeaf()
@@ -402,7 +410,8 @@ public class ClassifierTestCase extends AbstractUMLTestCase
         // Tested by testSetIsLeaf.
     }
 
-    /**
+    
+/**
      * First set the isTransient flag to true and check if the value set is correct.
      */
     public void testSetIsTransient()
@@ -419,7 +428,8 @@ public class ClassifierTestCase extends AbstractUMLTestCase
         // Tested by testSetIsTransient
     }
 
-    /**
+    
+/**
      * Create an association and add it to the class, then get all the
      * association from the class and check whether the newly created
      * association is present or not    
@@ -474,7 +484,8 @@ public class ClassifierTestCase extends AbstractUMLTestCase
         // Tested by testAddAssociationEnd()
     }
     
-    /**
+    
+/**
      * Create an Generalization and add it to the class.
      */
     public void testAddGeneralization()
@@ -501,7 +512,8 @@ public class ClassifierTestCase extends AbstractUMLTestCase
         // Tested by testAddGeneralization()
     }
 
-    /**
+    
+/**
      * Create a feature and add it to the class
      */
     public void testAddFeature()
@@ -549,7 +561,8 @@ public class ClassifierTestCase extends AbstractUMLTestCase
         assertEquals(1, clazz.getFeatures().size());
     }
 
-    /**
+    
+/**
      * Create an Implementation and add it to the class    
      */
     public void testAddImplementation()
@@ -580,7 +593,8 @@ public class ClassifierTestCase extends AbstractUMLTestCase
         // Tested by testAddImplementation and testRemoveImplementation
     }
     
-    /**
+    
+/**
      * Create an Increment and add it to the class    
      */
     public void testAddIncrement()
@@ -595,7 +609,8 @@ public class ClassifierTestCase extends AbstractUMLTestCase
     }
        
     
-    /**
+    
+/**
      * Create an Specialization and add it to the class.
      */
     public void testAddSpecialization()

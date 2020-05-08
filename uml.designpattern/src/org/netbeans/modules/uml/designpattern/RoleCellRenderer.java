@@ -42,6 +42,7 @@
  * made subject to such option by the copyright holder.
  */
 
+
 /*
  * Created on Jun 10, 2003
  *
@@ -60,10 +61,8 @@ import javax.swing.border.LineBorder;
 import javax.swing.table.DefaultTableCellRenderer;
 import javax.swing.table.TableCellRenderer;
 
-/**
- * @author sumitabhk
- *
- */
+
+
 public class RoleCellRenderer extends DefaultTableCellRenderer implements TableCellRenderer
 {
 

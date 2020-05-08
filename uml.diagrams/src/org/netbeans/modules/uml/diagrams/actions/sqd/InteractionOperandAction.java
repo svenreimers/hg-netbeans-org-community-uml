@@ -65,10 +65,8 @@ import org.openide.util.Lookup;
 import org.openide.util.NbBundle;
 import org.openide.util.actions.SystemAction;
 
-/**
- *
- * @author psb
- */
+
+
 public class InteractionOperandAction extends SceneNodeAction
 {
     private WidgetContext context = null;

@@ -55,6 +55,7 @@ import org.netbeans.modules.uml.core.reverseengineering.reframework.CompositeCla
 import org.netbeans.modules.uml.core.reverseengineering.reframework.FileSystemClassLocator;
 import org.netbeans.modules.uml.core.reverseengineering.reframework.ICompositeClassLocator;
 
+
 /**
  * Test cases for CompositeClassLocator.
  */
@@ -67,7 +68,8 @@ public class CompositeClassLocatorTestCase extends TestCase
 
     private ICompositeClassLocator ccl;
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see junit.framework.TestCase#setUp()
      */
     protected void setUp() throws Exception

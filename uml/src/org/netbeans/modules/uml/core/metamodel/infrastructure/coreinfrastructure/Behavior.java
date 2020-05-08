@@ -62,7 +62,8 @@ public class Behavior extends Classifier implements IBehavior
 		return coll.retrieveSingleElementWithAttrID(this,"context", IClassifier.class);
 	}
 
-	/**
+	
+/**
 	 * property Context
 	*/
 	public void setContext( IClassifier newValue )
@@ -89,7 +90,8 @@ public class Behavior extends Classifier implements IBehavior
 						);		
 	}
 
-	/**
+	
+/**
 	 * property Specification
 	*/
 	public IBehavioralFeature getSpecification()
@@ -98,7 +100,8 @@ public class Behavior extends Classifier implements IBehavior
 		return coll.retrieveSingleElementWithAttrID(this,"specification", IBehavioralFeature.class);
 	}
 
-	/**
+	
+/**
 	 * property Specification
 	*/
 	public void setSpecification( IBehavioralFeature feature )
@@ -125,7 +128,8 @@ public class Behavior extends Classifier implements IBehavior
 						);		
 	}
 
-	/**
+	
+/**
 	 * property RepresentedFeature
 	*/
 	public IBehavioralFeature getRepresentedFeature()
@@ -134,7 +138,8 @@ public class Behavior extends Classifier implements IBehavior
 		return coll.retrieveSingleElementWithAttrID(this,"representedFeature", IBehavioralFeature.class);		
 	}
 
-	/**
+	
+/**
 	 * property RepresentedFeature
 	 */
 	public void setRepresentedFeature( IBehavioralFeature newValue )
@@ -153,7 +158,8 @@ public class Behavior extends Classifier implements IBehavior
 											);
 	}
 
-	/**
+	
+/**
 	 * method AddParameter
 	*/
 	public void addParameter( IParameter parm )
@@ -161,7 +167,8 @@ public class Behavior extends Classifier implements IBehavior
 		addChild("UML:Behavior.parameter","UML:Behavior.parameter",parm);
 	}
 
-	/**
+	
+/**
 	 * method RemoveParameter
 	*/
 	public void removeParameter( IParameter parm )
@@ -169,7 +176,8 @@ public class Behavior extends Classifier implements IBehavior
 		UMLXMLManip.removeChild(m_Node,parm);		
 	}
 
-	/**
+	
+/**
 	 * property Parameters
 	*/
 	public ETList<IParameter> getParameters()
@@ -178,7 +186,8 @@ public class Behavior extends Classifier implements IBehavior
 		return coll.retrieveElementCollection(m_Node,"UML:Behavior.parameter/*", IParameter.class);
 	}
 
-	/**
+	
+/**
 	 * Tells whether whether the behavior can be invoked while its still executing from a previous invocation.
 	 */
 	public boolean getIsReentrant()
@@ -186,7 +195,8 @@ public class Behavior extends Classifier implements IBehavior
 		return getBooleanAttributeValue( "isReentrant",false );
 	}
 
-	/**
+	
+/**
 	 * Tells whether whether the behavior can be invoked while its still executing from a previous invocation.
 	*/
 	public void setIsReentrant( boolean value )

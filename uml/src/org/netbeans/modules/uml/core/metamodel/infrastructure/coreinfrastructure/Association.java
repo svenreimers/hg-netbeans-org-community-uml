@@ -71,7 +71,8 @@ public class Association extends Classifier implements IAssociation, IRelationsh
 	//	that use it in this file.
  	public static final String END_QUERY = "UML:Association.end/*" ;
  	
-	/**
+	
+/**
 	 * property IsDerived
 	 */
 	public boolean getIsDerived()
@@ -79,7 +80,8 @@ public class Association extends Classifier implements IAssociation, IRelationsh
 		return getBooleanAttributeValue("isDerived",false);
 	}
 	
-	/**
+	
+/**
 	 * property setIsDerived
 	 */
 	public void setIsDerived(boolean newVal)
@@ -87,7 +89,8 @@ public class Association extends Classifier implements IAssociation, IRelationsh
 		setBooleanAttributeValue("isDerived",newVal);
 	}
 		
-	/**
+	
+/**
 	 *
 	 * Returns the association ends as a list.
 	 */
@@ -97,7 +100,8 @@ public class Association extends Classifier implements IAssociation, IRelationsh
 		return collector.retrieveElementCollection(m_Node, END_QUERY, IAssociationEnd.class);
 	}
 	
-	/**
+	
+/**
 	 * Removes this end from the assocaition
 	*/
 	public void removeEnd( IAssociationEnd end )
@@ -134,7 +138,8 @@ public class Association extends Classifier implements IAssociation, IRelationsh
             }		
 	}
 	
-	/**
+	
+/**
 	 * Adds this end to the association
 	*/
 	public void addEnd( IAssociationEnd end )
@@ -143,7 +148,8 @@ public class Association extends Classifier implements IAssociation, IRelationsh
             addEnd(help,true,end);
 	}
 	
-	/**
+	
+/**
 	 * Returns the number of ends in this association
 	 *
 	 */
@@ -157,7 +163,8 @@ public class Association extends Classifier implements IAssociation, IRelationsh
             }
             return len;
 	}	
-	/**
+	
+/**
 	 * Returns the index of this end in the list.  -1 if not found.
 	 *
 	 * @param pEnd [in]
@@ -185,7 +192,8 @@ public class Association extends Classifier implements IAssociation, IRelationsh
 		return retVal;
 	}
 	
-	/**
+	
+/**
 	 *
 	 * Creates, sets the participant, and returns a new AssociationEnd object.
 	 *
@@ -203,7 +211,8 @@ public class Association extends Classifier implements IAssociation, IRelationsh
 		return assocEnd;
 	}
 	
-	/**
+	
+/**
 	 *
 	 * Creates and sets the participant on a new AssociationEnd that is added
 	 * to this Association.
@@ -216,7 +225,8 @@ public class Association extends Classifier implements IAssociation, IRelationsh
 		IAssociationEnd assocEnd = addEnd2(participant); 
 	}
 	
-	/**
+	
+/**
 	 *
 	 * Creates an AssociationEnd for this association.
 	 */
@@ -232,7 +242,8 @@ public class Association extends Classifier implements IAssociation, IRelationsh
 		return null;
 	}
 	
-	/**
+	
+/**
 	 *
 	 * Transforms this association into an aggregation.
 	 *
@@ -286,7 +297,8 @@ public class Association extends Classifier implements IAssociation, IRelationsh
 		return agg;				
 	}
 	
-	/**
+	
+/**
 	 *
 	 * Determines whether or not this association is reflexive.
 	 */
@@ -313,7 +325,8 @@ public class Association extends Classifier implements IAssociation, IRelationsh
 
 		return retVal;		
 	}
-	/**
+	
+/**
 	 * Establishes the appropriate XML elements for this UML type.
 	 *
 	 * [in] The document where this element will reside
@@ -344,7 +357,8 @@ public class Association extends Classifier implements IAssociation, IRelationsh
             );
 	}
 	
-	/**
+	
+/**
 	 *
 	 * Called by the framework after this Association has been 
 	 * completely deleted.
@@ -360,7 +374,8 @@ public class Association extends Classifier implements IAssociation, IRelationsh
 		markParticipantsDirty();
 	}
 	
-	/**
+	
+/**
 	 *
 	 * Fired by the framework right before this Association is to
 	 * be deleted.
@@ -378,7 +393,8 @@ public class Association extends Classifier implements IAssociation, IRelationsh
 		return retVal;	
 	}
 	
-	/**
+	
+/**
 	 * Goes through all the ends and returns all participants.
 	 */
 	public ETList<IElement> getAllParticipants()
@@ -405,7 +421,8 @@ public class Association extends Classifier implements IAssociation, IRelationsh
 		return retVal;
 	}
 	
-	/**
+	
+/**
 	 *
 	 * Called when this Association has been deleted. Simply makes sure that all the Participant ends of 
 	 * this association are marked as dirty if those elements have been versioned.
@@ -434,7 +451,8 @@ public class Association extends Classifier implements IAssociation, IRelationsh
 		}		
 	}
 	
-	/**
+	
+/**
 	 *
 	 * Removes all elements that should also be deleted or at least modified
 	 * when this element is deleted.
@@ -469,7 +487,8 @@ public class Association extends Classifier implements IAssociation, IRelationsh
 		super.establishNodeAttributes(node);
 	}	
 
-	/**
+	
+/**
 	 * Returns the first end with this guy as a participant
 	 */
 	public IAssociationEnd getFirstEndWithParticipant(IElement pParticipant)
@@ -492,7 +511,8 @@ public class Association extends Classifier implements IAssociation, IRelationsh
 		return retObj;
 	}
 
-	/**
+	
+/**
 	 * Returns the end at this index
 	 */
 	public IAssociationEnd getEndAtIndex(int nIndex)

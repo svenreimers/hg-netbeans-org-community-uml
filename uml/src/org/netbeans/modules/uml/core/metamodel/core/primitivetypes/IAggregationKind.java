@@ -42,16 +42,12 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : IAggregationKind.java
- * Created on : Sep 16, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.metamodel.core.primitivetypes;
 
-/**
- * @author Aztec
- */
+
+
 public interface IAggregationKind {
 
     // The end is not an aggregate.

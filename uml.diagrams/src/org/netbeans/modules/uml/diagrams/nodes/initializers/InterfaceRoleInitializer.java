@@ -46,10 +46,8 @@ import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IParameterableElement;
 import org.netbeans.modules.uml.drawingarea.palette.NodeInitializer;
 
-/**
- *
- * @author treyspiva
- */
+
+
 public class InterfaceRoleInitializer implements NodeInitializer
 {
 

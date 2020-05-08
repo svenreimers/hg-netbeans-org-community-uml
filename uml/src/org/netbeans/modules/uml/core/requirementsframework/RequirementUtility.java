@@ -53,16 +53,13 @@ import org.dom4j.Node;
 import org.netbeans.modules.uml.core.support.umlutils.ETArrayList;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
-/**
- * @author brettb
- *
- * To change the template for this generated type comment go to
- * Window>Preferences>Java>Code Generation>Code and Comments
- */
+
+
 public class RequirementUtility
 {
 
-   /**
+   
+/**
     *
     * Recursively process child XML elements from the requirements file
     * looking for requirements to display in the requirements tree.

@@ -46,10 +46,8 @@
 
 package org.netbeans.modules.uml.ui.swing.propertyeditor;
 
-/**
- * @author sumitabhk
- *
- */
+
+
 public class PropertyEditorBlocker
 {
 	private static int m_Instances = 0;

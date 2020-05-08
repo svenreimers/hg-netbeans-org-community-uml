@@ -49,10 +49,8 @@ import org.netbeans.api.visual.layout.LayoutFactory;
 import org.netbeans.api.visual.widget.Widget;
 import org.netbeans.modules.uml.diagrams.nodes.sqd.MessagePinWidget;
 
-/**
- *
- * @author sp153251
- */
+
+
 public class LifelineBoxLayout implements Layout{
 
     Layout base=LayoutFactory.createVerticalFlowLayout(LayoutFactory.SerialAlignment.JUSTIFY,0);

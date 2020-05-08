@@ -50,55 +50,63 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 public interface IProductArchive
 {
-	/**
+	
+/**
 	 * Saves the archive to an XML file.
 	*/
 	public boolean save( String sFilename );
 
-	/**
-	 * Loads the archive from the file
-	*/
+	
+
 	public boolean load( String sFilename );
 
-   /**
+   
+/**
     * Checking if the archive file has been loaded.
     *
     * @return true if the file has been loaded.
     */
    public boolean isLoaded();
 
-   /**
+   
+/**
     * Creates an element
    */
    public IProductArchiveElement createElement( String sID );
       
-	/**
+	
+/**
 	 * Creates an element
 	*/
 	public IProductArchiveElement createElement( String sID, boolean bTopOfDocument );
 
-	/**
+	
+/**
 	 * Gets an element based on the name
 	*/
 	public IProductArchiveElement getElement( String sID );
 
-	/**
+	
+/**
 	 * Returns all the presentation element types that refer to the IElement with an ID of sElementID
 	*/
 	public ETList<IProductArchiveElement> getElementsFromModelElement( String sElementID );
 
-	/**
+	
+/**
 	 * All the toplevel elements
 	*/
 	public ETList<IProductArchiveElement> getElements();
 
-	/**
+	
+/**
 	 * Inserts an item into an index table and returns back the key and created element.
 	*/
 	public ETPairT<IProductArchiveElement, Integer> insertIntoTable( String sTableName, 
                                                   String sTableEntry);
 
-	/**
+	
+/**
 	 * Inserts sTableEntry into the table sTableName and creates an attribute named sIndexAttributeName on pElementToAddIndexTo with the key value
 	*/
 	public IProductArchiveAttribute insertIntoTable( String sTableName, 
@@ -106,12 +114,14 @@ public interface IProductArchive
                                                     String sIndexAttributeName, 
                                                     IProductArchiveElement pElementToAddIndexTo);
 
-	/**
+	
+/**
 	 * Removes an item by index from the table.
 	*/
 	public boolean removeFromTable( String sTableName, String sTableEntry);
 
-	/**
+	
+/**
 	 * Based on the table name and index this routine returns the found element.
     * 
     * @param sTableName The name of table that contains the entry.
@@ -122,14 +132,16 @@ public interface IProductArchive
 
 	public IProductArchiveElement getTableEntry( String sTableName, String nTableEntry);
 
-	/**
+	
+/**
 	 * Gets an item from an index table, returning the key and the found element.
 	*/
 	public IProductArchiveElement getTableEntry( String sTableName, 
                                                 String sTableEntry, 
                                                 int pKey);
 
-	/**
+	
+/**
 	 * Find sAttributeName in pArchiveElement, then look into the table sTableName and return the pFoundElement
 	*/
 	public ETPairT<IProductArchiveElement,String> getTableEntry( IProductArchiveElement pArchiveElement, 

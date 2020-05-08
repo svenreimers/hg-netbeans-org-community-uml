@@ -43,6 +43,7 @@
  */
 
 
+
 /*
  * Created on Jun 6, 2003
  *
@@ -54,14 +55,13 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.NameCollisionHand
 import org.netbeans.modules.uml.core.support.umlsupport.IResultCell;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
-/**
- * @author sumitabhk
- *
- */
+
+
 public class ProjectTreeCollisionHandler extends NameCollisionHandler implements IProjectTreeCollisionHandler
 {
 	private JProjectTree m_rawProjectTreeControl = null;
-	/**
+	
+/**
 	 * 
 	 */
 	public ProjectTreeCollisionHandler()
@@ -69,7 +69,8 @@ public class ProjectTreeCollisionHandler extends NameCollisionHandler implements
 		super();
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.swing.propertyeditor.IPropertyEditorCollisionHandler#getPropertyEditor()
 	 */
 	public JProjectTree getProjectTree()
@@ -77,7 +78,8 @@ public class ProjectTreeCollisionHandler extends NameCollisionHandler implements
 		return m_rawProjectTreeControl;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.swing.propertyeditor.IPropertyEditorCollisionHandler#setPropertyEditor(org.netbeans.modules.uml.ui.swing.propertyeditor.IPropertyEditor)
 	 */
 	public void setProjectTree(JProjectTree value)
@@ -85,7 +87,8 @@ public class ProjectTreeCollisionHandler extends NameCollisionHandler implements
 		m_rawProjectTreeControl = value;
 	}
 
-	/**
+	
+/**
 	 * Notification that a name collision event is about to happen
 	 */
 	public long onPreNameCollision(INamedElement pElement, String sProposedName, ETList<INamedElement> pCollidingElements, IResultCell pCell)
@@ -115,7 +118,8 @@ public class ProjectTreeCollisionHandler extends NameCollisionHandler implements
 		return 0;
 	}
 	
-	/**
+	
+/**
 	 * Notification that a name collision event occurred
 	 */
 	public long onNameCollision(INamedElement pElement, ETList<INamedElement> pCollidingElements, IResultCell pCell)
@@ -140,7 +144,8 @@ public class ProjectTreeCollisionHandler extends NameCollisionHandler implements
 		}
 		return 0;
 	}
-	/**
+	
+/**
 	 * Notification that the parent listener was disabled
 	 */	
 	public long listenerDisabled()
@@ -150,7 +155,8 @@ public class ProjectTreeCollisionHandler extends NameCollisionHandler implements
 
 	public long onPreAliasNameModified(INamedElement element, String proposedName, IResultCell cell)
 	{
-		/*
+		
+/*
       CComPtr< INamedElement > cpNamedElement( element );
       const UserAliasChoice choice = HandlePreAliasNameModified( &(cpNamedElement.p), proposedName );
 

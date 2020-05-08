@@ -57,10 +57,8 @@ import org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframe
 import org.netbeans.modules.uml.core.support.umlsupport.XMLManip;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
-/**
- *
- * @author treyspiva
- */
+
+
 public class ProxyPresentationElement extends PresentationElement
 {
     private IPresentationElement element = null;

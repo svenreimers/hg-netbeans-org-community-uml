@@ -42,13 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File         : SourceNavigable.java
- * Version      : 1.0
- * Description  : Base class for classes that can generate source navigation
- *                events.
- * Author       : Darshan
- */
+
+
 package org.netbeans.modules.uml.integration.ide;
 
 import javax.swing.SwingUtilities;
@@ -72,30 +67,8 @@ import org.netbeans.modules.uml.core.support.umlsupport.Log;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 //import org.netbeans.modules.uml.ui.support.presentationnavigation.SourceNavigator;
 
-/**
- *  A convenience base class for classes that generate source navigation
- * events.
- *
- * Revision History
- * No.  Date        Who         What
- * ---  ----        ---         ----
- *   1  2002-05-22  Darshan     Created.
- *   2  2002-05-23  Darshan     Moved source navigation calls into invokeLater
- *                              threads, which should hopefully kill the hang
- *                              when navigating.
- *   3  2002-05-27  Darshan     Fixed NPE when orphan element is passed to
- *                              source navigator.
- *   4  2002-06-05  Darshan     Incorporated Sumitabh's code to navigate to
- *                              the source for generalizations, implementations
- *                              and associations.
- *   5  2002-06-17  Darshan     Removed annoying logging statements.
- *   6  2002-06-18  Darshan     Added code to navigate to the classifier for a
- *                              lifeline.
- *   7  2002-06-20  Darshan     Added navigation to the operation for sequence
- *                              diagram messages (fix for bug 145).
- *
- * @author Darshan
- */
+
+
 abstract public class SourceNavigable implements ISourceNavigable {
     protected SourceNavigator navigator;
     private int lineNoOffset = 0;
@@ -174,7 +147,8 @@ abstract public class SourceNavigable implements ISourceNavigable {
         });
     }
 
-    /**
+    
+/**
      *  Fires a source navigation event with the given target element.
      * @param target The element to be navigated to in the source code.
      */

@@ -43,6 +43,7 @@
  */
 
 
+
 /*
  * OperationElement.java
  *
@@ -59,10 +60,8 @@ import org.netbeans.test.umllib.values.ElementType;
 import org.netbeans.test.umllib.values.Type;
 import org.netbeans.test.umllib.values.Visibility;
 
-/**
- *
- * @author Alexandr Scherbatiy
- */
+
+
 
 public class AttributeElement {
     

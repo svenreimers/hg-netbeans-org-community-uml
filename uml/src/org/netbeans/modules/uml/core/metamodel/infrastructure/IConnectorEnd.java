@@ -51,62 +51,74 @@ import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure
 
 public interface IConnectorEnd extends IElement
 {
-	/**
+	
+/**
 	 * property Part
 	*/
 	public IConnectableElement getPart();
 
-	/**
+	
+/**
 	 * property Part
 	*/
 	public void setPart( IConnectableElement value );
 
-	/**
+	
+/**
 	 * property Multiplicity
 	*/
 	public IMultiplicity getMultiplicity();
 
-	/**
+	
+/**
 	 * property Multiplicity
 	*/
 	public void setMultiplicity( IMultiplicity value );
 
-	/**
+	
+/**
 	 * property Port
 	*/
 	public IPort getPort();
 
-	/**
+	
+/**
 	 * property Port
 	*/
 	public void setPort( IPort value );
 
-	/**
+	
+/**
 	 * property InitialCardinality
 	*/
 	public int getInitialCardinality();
 
-	/**
+	
+/**
 	 * property InitialCardinality
 	*/
 	public void setInitialCardinality( int value );
 
-	/**
+	
+/**
 	 * property Connector
 	*/
 	public IConnector getConnector();
 
-	/**
+	
+/**
 	 * property Connector
 	*/
 	public void setConnector( IConnector value );
 
-	/**
+	
+/**
 	 * A derived association referencing the corresponding association end on the association which types the connector owing this connector end.
 	*/
 	public IAssociationEnd getDefiningEnd();
 
-	/**
+	
+/**
 	 * A derived association referencing the corresponding association end on the association which types the connector owing this connector end.
 	*/
 	public void setDefiningEnd( IAssociationEnd value );

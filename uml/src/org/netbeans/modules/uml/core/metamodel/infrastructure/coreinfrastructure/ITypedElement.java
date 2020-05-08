@@ -51,52 +51,62 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.IVersionableEleme
 
 public interface ITypedElement extends IElement, IMultiplicityListener
 {
-	/**
+	
+/**
 	 * Retrieve the type this element references.
 	*/
 	public IClassifier getType();
 
-	/**
+	
+/**
 	 * Retrieve the type this element references.
 	*/
 	public void setType( IClassifier value );
 
-	/**
+	
+/**
 	 * property Multiplicity
 	*/
 	public IMultiplicity getMultiplicity();
 
-	/**
+	
+/**
 	 * property Multiplicity
 	*/
 	public void setMultiplicity( IMultiplicity value );
 
-	/**
+	
+/**
 	 * property Ordering
 	*/
 	public int getOrdering();
 
-	/**
+	
+/**
 	 * property Ordering
 	*/
 	public void setOrdering( int value );
 
-	/**
+	
+/**
 	 * Retrieve the XML ID that is the reference to the type classifier.
 	*/
 	public String getTypeID();
 
-	/**
+	
+/**
 	 * Tells whether the values of the typed element are sets of the type or not.
 	*/
 	public boolean getIsSet();
 
-	/**
+	
+/**
 	 * Tells whether the values of the typed element are sets of the type or not.
 	*/
 	public void setIsSet( boolean value );
 
-        /**
+        
+/**
          * Clones this ITypedElement.
          * @return The cloned object.
          */	

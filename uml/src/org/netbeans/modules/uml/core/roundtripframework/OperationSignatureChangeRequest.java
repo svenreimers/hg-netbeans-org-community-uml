@@ -42,6 +42,7 @@
  * made subject to such option by the copyright holder.
  */
 
+
 /*
  * Created on Nov 11, 2003
  *
@@ -51,10 +52,8 @@ package org.netbeans.modules.uml.core.roundtripframework;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.IElement;
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation;
 
-/**
- * @author aztec
- *
- */
+
+
 public class OperationSignatureChangeRequest extends CompoundChangeRequest
 									implements IOperationSignatureChangeRequest								
 {

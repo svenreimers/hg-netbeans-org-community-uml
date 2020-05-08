@@ -62,10 +62,8 @@ import org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem;
 import org.netbeans.modules.uml.ui.controls.projecttree.ProjectTreeDiagramNode;
 import org.netbeans.modules.uml.ui.controls.projecttree.TreeElementNode;
 
-/**
- * @author sumitabhk
- *
- */
+
+
 public class ProjectTreeCellEditor implements TreeCellEditor
 {
     JTree tree =  null;
@@ -78,7 +76,8 @@ public class ProjectTreeCellEditor implements TreeCellEditor
         this.tree = tree;
     }
     
-        /* (non-Javadoc)
+        
+/* (non-Javadoc)
          * @see javax.swing.tree.TreeCellEditor#getTreeCellEditorComponent(javax.swing.JTree, java.lang.Object, boolean, boolean, boolean, int)
          */
     public Component getTreeCellEditorComponent(JTree tree, Object value, boolean isSelected, boolean expanded, boolean leaf, int row)
@@ -128,7 +127,8 @@ public class ProjectTreeCellEditor implements TreeCellEditor
         return new EditControlImpl(this);
     }
     
-        /* (non-Javadoc)
+        
+/* (non-Javadoc)
          * @see javax.swing.CellEditor#getCellEditorValue()
          */
     public Object getCellEditorValue()
@@ -137,7 +137,8 @@ public class ProjectTreeCellEditor implements TreeCellEditor
         return m_EditControl;
     }
     
-        /* (non-Javadoc)
+        
+/* (non-Javadoc)
          * @see javax.swing.CellEditor#isCellEditable(java.util.EventObject)
          */
     public boolean isCellEditable(EventObject anEvent)
@@ -191,7 +192,8 @@ public class ProjectTreeCellEditor implements TreeCellEditor
 //                return false;
     }
     
-        /* (non-Javadoc)
+        
+/* (non-Javadoc)
          * @see javax.swing.CellEditor#shouldSelectCell(java.util.EventObject)
          */
     public boolean shouldSelectCell(EventObject anEvent)
@@ -200,7 +202,8 @@ public class ProjectTreeCellEditor implements TreeCellEditor
         return false;
     }
     
-        /* (non-Javadoc)
+        
+/* (non-Javadoc)
          * @see javax.swing.CellEditor#stopCellEditing()
          */
     public boolean stopCellEditing()
@@ -219,7 +222,8 @@ public class ProjectTreeCellEditor implements TreeCellEditor
         return true;
     }
     
-        /* (non-Javadoc)
+        
+/* (non-Javadoc)
          * @see javax.swing.CellEditor#cancelCellEditing()
          */
     public void cancelCellEditing()
@@ -232,7 +236,8 @@ public class ProjectTreeCellEditor implements TreeCellEditor
         }
     }
     
-        /* (non-Javadoc)
+        
+/* (non-Javadoc)
          * @see javax.swing.CellEditor#addCellEditorListener(javax.swing.event.CellEditorListener)
          */
     public void addCellEditorListener(CellEditorListener l)
@@ -241,7 +246,8 @@ public class ProjectTreeCellEditor implements TreeCellEditor
         
     }
     
-        /* (non-Javadoc)
+        
+/* (non-Javadoc)
          * @see javax.swing.CellEditor#removeCellEditorListener(javax.swing.event.CellEditorListener)
          */
     public void removeCellEditorListener(CellEditorListener l)

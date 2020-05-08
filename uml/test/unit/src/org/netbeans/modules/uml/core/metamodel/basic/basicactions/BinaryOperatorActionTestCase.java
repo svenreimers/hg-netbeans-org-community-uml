@@ -44,6 +44,7 @@
 
 
 
+
 /*
  * Created on Sep 24, 2003
  *
@@ -51,16 +52,15 @@
 package org.netbeans.modules.uml.core.metamodel.basic.basicactions;
 import org.netbeans.modules.uml.core.AbstractUMLTestCase;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.FactoryRetriever;
-/**
- * @author aztec
- *
- */
+
+
 public class BinaryOperatorActionTestCase extends AbstractUMLTestCase
 {
 	private IBinaryOperatorAction binaryOpAction = null;
 	private IInputPin inputPin = null;
 	
-	/**
+	
+/**
 	 * 
 	 */
 	public BinaryOperatorActionTestCase()

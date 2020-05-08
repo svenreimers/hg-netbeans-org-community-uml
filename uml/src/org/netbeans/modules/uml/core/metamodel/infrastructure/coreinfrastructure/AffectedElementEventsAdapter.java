@@ -50,14 +50,13 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.IVersionableEleme
 import org.netbeans.modules.uml.core.support.umlsupport.IResultCell;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
-/**
- *
- * @author Trey Spiva
- */
+
+
 public class AffectedElementEventsAdapter implements IAffectedElementEventsSink
 {
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     */
    public void onPreImpacted(
       IClassifier classifier,
@@ -67,7 +66,8 @@ public class AffectedElementEventsAdapter implements IAffectedElementEventsSink
       // TODO Auto-generated method stub
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     */
    public void onImpacted(
       IClassifier classifier,

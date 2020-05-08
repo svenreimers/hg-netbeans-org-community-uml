@@ -45,10 +45,8 @@
 
 package org.netbeans.modules.uml.core.eventframework;
 
-/**
- * @author sumitabhk
- *
- */
+
+
 public class EventFilter implements IEventFilter{
 
 	/**
@@ -58,7 +56,8 @@ public class EventFilter implements IEventFilter{
 		super();
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.eventframework.IEventFilter#validateEvent(java.lang.String, java.lang.Object)
 	 */
 	public boolean validateEvent(String triggerName, Object payLoad) {
@@ -66,7 +65,8 @@ public class EventFilter implements IEventFilter{
 		return true;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.eventframework.IEventFilter#getFilterID()
 	 */
 	public String getFilterID() {
@@ -74,7 +74,8 @@ public class EventFilter implements IEventFilter{
 		return null;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.eventframework.IEventFilter#setFilterID(java.lang.String)
 	 */
 	public void setFilterID(String value) {

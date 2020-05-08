@@ -50,15 +50,14 @@ import org.netbeans.modules.uml.core.metamodel.core.constructs.IEnumerationLiter
 import org.netbeans.modules.uml.core.support.umlsupport.IResultCell;
 
 
-/**
- *
- * @author Trey Spiva
- */
+
+
 public class ClassifierFeatureEventsAdapter
    implements IClassifierFeatureEventsSink
 {
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     */
    public void onFeaturePreAdded(
       IClassifier classifier,
@@ -68,7 +67,8 @@ public class ClassifierFeatureEventsAdapter
       // TODO Auto-generated method stub
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     */
    public void onFeatureAdded(
       IClassifier classifier,
@@ -78,7 +78,8 @@ public class ClassifierFeatureEventsAdapter
       // TODO Auto-generated method stub
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     */
    public void onFeaturePreRemoved(
       IClassifier classifier,
@@ -88,7 +89,8 @@ public class ClassifierFeatureEventsAdapter
       // TODO Auto-generated method stub
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     */
    public void onFeatureRemoved(
       IClassifier classifier,
@@ -98,7 +100,8 @@ public class ClassifierFeatureEventsAdapter
       // TODO Auto-generated method stub
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     */
    public void onFeaturePreMoved(
       IClassifier classifier,
@@ -108,7 +111,8 @@ public class ClassifierFeatureEventsAdapter
       // TODO Auto-generated method stub
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     */
    public void onFeatureMoved(
       IClassifier classifier,
@@ -118,7 +122,8 @@ public class ClassifierFeatureEventsAdapter
       // TODO Auto-generated method stub
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     */
    public void onFeaturePreDuplicatedToClassifier(
       IClassifier classifier,
@@ -128,7 +133,8 @@ public class ClassifierFeatureEventsAdapter
       // TODO Auto-generated method stub
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     */
    public void onFeatureDuplicatedToClassifier(
       IClassifier pOldClassifier,
@@ -140,7 +146,8 @@ public class ClassifierFeatureEventsAdapter
       // TODO Auto-generated method stub
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     */
    public void onPreAbstractModified(
       IClassifier feature,
@@ -150,14 +157,16 @@ public class ClassifierFeatureEventsAdapter
       // TODO Auto-generated method stub
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     */
    public void onAbstractModified(IClassifier feature, IResultCell cell)
    {
       // TODO Auto-generated method stub
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     */
    public void onPreLeafModified(
       IClassifier feature,
@@ -167,14 +176,16 @@ public class ClassifierFeatureEventsAdapter
       // TODO Auto-generated method stub
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     */
    public void onLeafModified(IClassifier feature, IResultCell cell)
    {
       // TODO Auto-generated method stub
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     */
    public void onPreTransientModified(
       IClassifier feature,
@@ -184,14 +195,16 @@ public class ClassifierFeatureEventsAdapter
       // TODO Auto-generated method stub
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     */
    public void onTransientModified(IClassifier feature, IResultCell cell)
    {
       // TODO Auto-generated method stub
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     */
    public void onPreTemplateParameterAdded(
       IClassifier pClassifier,
@@ -201,7 +214,8 @@ public class ClassifierFeatureEventsAdapter
       // TODO Auto-generated method stub
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     */
    public void onTemplateParameterAdded(
       IClassifier pClassifier,
@@ -211,7 +225,8 @@ public class ClassifierFeatureEventsAdapter
       // TODO Auto-generated method stub
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     */
    public void onPreTemplateParameterRemoved(
       IClassifier pClassifier,
@@ -221,7 +236,8 @@ public class ClassifierFeatureEventsAdapter
       // TODO Auto-generated method stub
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     */
    public void onTemplateParameterRemoved(
       IClassifier pClassifier,

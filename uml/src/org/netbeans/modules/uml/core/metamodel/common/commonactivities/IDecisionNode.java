@@ -48,12 +48,14 @@ import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure
 
 public interface IDecisionNode extends IControlNode
 {
-	/**
+	
+/**
 	 * property DecisionInput
 	*/
 	public IBehavior getDecisionInput();
 
-	/**
+	
+/**
 	 * property DecisionInput
 	*/
 	public void setDecisionInput( IBehavior value );

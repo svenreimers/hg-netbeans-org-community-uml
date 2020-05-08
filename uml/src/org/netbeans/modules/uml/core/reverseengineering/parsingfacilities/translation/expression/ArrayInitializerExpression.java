@@ -43,11 +43,8 @@
  */
 
 
-/*
- * File       : ArrayInitializerExpression.java
- * Created on : Dec 8, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.expression;
 
 import org.dom4j.Node;
@@ -73,7 +70,8 @@ public class ArrayInitializerExpression extends ExpressionStateHandler
 		m_pEndInitializer = null;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.expression.IArrayInitializerExpression#getEndPosition()
 	 */
 	public long getEndPosition()
@@ -88,7 +86,8 @@ public class ArrayInitializerExpression extends ExpressionStateHandler
 	    return retVal;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.expression.IArrayInitializerExpression#getStartLine()
 	 */
 	public long getStartLine() 
@@ -101,7 +100,8 @@ public class ArrayInitializerExpression extends ExpressionStateHandler
 		return retVal;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.expression.IArrayInitializerExpression#getStartPosition()
 	 */
 	public long getStartPosition()
@@ -114,7 +114,8 @@ public class ArrayInitializerExpression extends ExpressionStateHandler
 		return retVal;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.expression.IArrayInitializerExpression#initialize()
 	 */
 	public void initialize()
@@ -122,7 +123,8 @@ public class ArrayInitializerExpression extends ExpressionStateHandler
 		//Not implemented in C++ code.
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.expression.IArrayInitializerExpression#processToken(org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ITokenDescriptor, java.lang.String)
 	 */
 	public void processToken(ITokenDescriptor pToken, String language)

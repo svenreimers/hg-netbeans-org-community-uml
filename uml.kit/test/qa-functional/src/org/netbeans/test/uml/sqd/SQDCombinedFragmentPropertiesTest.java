@@ -340,7 +340,8 @@ public class SQDCombinedFragmentPropertiesTest extends UMLTestCase {
         String renderer = PropertyVerifier.COMBOBOX_RENDERER;
         boolean editable = false;
             
-            /*
+            
+/*
             PropertyVerifier custom = new PropertyVerifier(PROPS_NAME){                
                 protected boolean checkElement(){
                     try{

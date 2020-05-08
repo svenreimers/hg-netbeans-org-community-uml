@@ -58,10 +58,8 @@ import javax.swing.plaf.ComponentUI;
 import org.netbeans.modules.uml.ui.swing.plaf.PullDownButtonUI;
 import org.netbeans.modules.uml.ui.swing.plaf.basic.BasicPullDownButtonUI;
 
-/**
- *
- * @author Trey Spiva
- */
+
+
 public class JPullDownButton extends AbstractButton
 {
    private static final String uiClassID = "PullDownButtonUI";
@@ -145,7 +143,8 @@ public class JPullDownButton extends AbstractButton
    // UI Methods
    //**************************************************
 
-   /**
+   
+/**
      * Resets the UI property to a value from the current look and feel.
      * <code>JComponent</code> subclasses must override this method
      * like this:
@@ -170,7 +169,8 @@ public class JPullDownButton extends AbstractButton
       setUI(ui);
    }
 
-   /**
+   
+/**
     * Sets the look and feel delegate for this component.
     * <code>JComponent</code> subclasses generally override this method
     * to narrow the argument type. For example, in <code>JSlider</code>:
@@ -206,7 +206,8 @@ public class JPullDownButton extends AbstractButton
       }
    }
 
-   /**
+   
+/**
     * Returns the <code>UIDefaults</code> key used to
     * look up the name of the <code>swing.plaf.ComponentUI</code>
     * class that defines the look and feel

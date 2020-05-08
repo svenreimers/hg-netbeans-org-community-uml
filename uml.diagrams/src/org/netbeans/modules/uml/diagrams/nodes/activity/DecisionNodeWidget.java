@@ -53,10 +53,8 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.IPresentationElem
 import org.netbeans.modules.uml.drawingarea.view.CustomizableWidget;
 import org.netbeans.modules.uml.drawingarea.widgets.ResizeToContentMarker;
 
-/**
- *
- * @author thuy
- */
+
+
 public class DecisionNodeWidget extends ControlNodeWidget implements ResizeToContentMarker
 {
     public static final int MIN_NODE_WIDTH =  20;

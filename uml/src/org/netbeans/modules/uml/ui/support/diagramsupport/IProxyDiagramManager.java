@@ -60,7 +60,8 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 public interface IProxyDiagramManager
 {
 
-        /**
+        
+/**
          * Notifies the diagram to refresh the node graphical object that 
          * is associated with the presentation element.
          * 
@@ -68,7 +69,8 @@ public interface IProxyDiagramManager
          */
         public void refresh(IPresentationElement presentation,boolean resizetocontent);
         
-	/**
+	
+/**
 	 * This verifies that the diagram name is correct (ie no bad filename 
 	 * characters like %*&(...) and returns the corrected one if not.
 	 * 
@@ -77,7 +79,8 @@ public interface IProxyDiagramManager
 	 */
 //	public String getValidDiagramName( String sSuggestedDiagramName );
 
-	/**
+	
+/**
 	 * Verifies that the diagram name is unique within the project base 
 	 * directory.  The name that is return is the valid diagram name.
 	 * 
@@ -88,7 +91,8 @@ public interface IProxyDiagramManager
 	public String verifyUniqueDiagramName( String sProjectBaseDirectory, 
 	                                       String sProposedDiagramName );
 
-	/**
+	
+/**
 	 * Verifies that the diagram name is unique within the project base 
 	 * directory.  The name that is return is the valid diagram name.
 	 * 
@@ -99,7 +103,8 @@ public interface IProxyDiagramManager
 	public String verifyUniqueDiagramName( IElement pElementInProject, 
 	                                       String sProposedDiagramName );
 
-	/**
+	
+/**
 	 * Moves the two diagram files (etl and etlp) files to the DiagramBackup
 	 * folder underneith project.
 	 * 
@@ -107,59 +112,69 @@ public interface IProxyDiagramManager
 	 */
 	public void removeDiagram( String sDiagramFullFilename );
 
-	/**
+	
+/**
 	 * Returns all the diagrams in this directory location.
 	 */
 	public ETList<IProxyDiagram> getDiagramsInDirectory( String sProjectBaseDirectory );
 
-	/**
+	
+/**
 	 * Returns all the diagrams in this directory location.
 	 */
 	public ETList<IProxyDiagram> getDiagramsInDirectory( IElement pElementInProject );
 
-	/**
+	
+/**
 	 * Returns a diagram proxy for this tom filename.  The diagram 
 	 * proxy may represent a closed diagram.
 	 */
 	public IProxyDiagram getDiagram( String sTOMFilename );
 
-	/**
+	
+/**
 	 * Returns a diagram proxy for this xmiid.  The diagram proxy may 
 	 * represent a closed diagram.
 	 */
 	public IProxyDiagram getDiagramForXMIID( String sXMIID );
 
-	/**
+	
+/**
 	 * Returns a diagram proxy for this IDiagram.
 	 */
 	public IProxyDiagram getDiagram( IDiagram pDiagram );
 
-	/**
+	
+/**
 	 * Returns a diagram proxy for this name.  The diagram proxy may 
 	 * represent a closed diagram.
 	 */
 	public ETList<IProxyDiagram> getDiagramsByName( String sName );
 
-	/**
+	
+/**
 	 * Returns a diagram proxy for this name and namespace.  The diagram 
 	 * proxy may represent a closed diagram.
 	 */
 	public ETList<IProxyDiagram> getDiagrams( String sName, INamespace pNamespace );
 
-	/**
+	
+/**
 	 * Returns all the diagram proxies in the workspace.  The diagram 
 	 * proxy may represent a closed diagram.
 	 */
 	public ETList<IProxyDiagram> getDiagramsInWorkspace();
 
-	/**
+	
+/**
 	 * Returns all the diagram proxies in the namespace.  The diagram 
 	 * proxy may represent a closed diagram.
 	 */
 	public ETList<IProxyDiagram> getDiagramsInNamespace( String sToplevelXMIID, 
 	                                               String sXMIID );
 
-   /**
+   
+/**
     * Returns the namespace that ownes the diagram.
     * 
     * @param bDiagramFilename The file that defines the diagram.
@@ -167,97 +182,114 @@ public interface IProxyDiagramManager
     */
    public INamespace getDiagramNamespace(String bDiagramFilename);
    
-	/**
+	
+/**
 	 * Returns all the diagram proxies in the namespace.  The diagram 
 	 * proxy may represent a closed diagram.
 	 */
 	public ETList<IProxyDiagram> getDiagramsInNamespace( INamespace pNamespace );
 
-	/**
+	
+/**
 	 * Returns a diagram proxy for this project.  The diagram proxy 
 	 * may represent a closed diagram.
 	 */
 	public ETList<IProxyDiagram> getDiagramsInProject( IProject pProject );
 
-	/**
+	
+/**
 	 * Returns a diagram proxy for this project.  The diagram proxy may 
 	 * represent a closed diagram.
 	 */
 	public ETList<IProxyDiagram> getDiagramsInProject( String sProjectXMIID );
 
 	public DiagramDetails getDiagramDetails(String bDiagramFilename);
-	/**
+	
+/**
 	 * Returns true if bDiagramFilename represents a valid filename.  
 	 * It looks for both .etp and .etl files.
 	 */
 	public boolean isValidDiagram( String bDiagramFilename );
 
-	/**
+	
+/**
 	 * Get the presentation targets for a closed diagram
 	 */
 	public ETList<IPresentationTarget> getPresentationTargetsFromClosedDiagram( IElement pModelElement, 
 	                                                                     String sDiagramFilename );
 
-	/**
+	
+/**
 	 * Cracks open all closed diagrams and marks the elements as deleted.
 	 */
 	public void markPresentationTargetsAsDeleted( ETList<IVersionableElement> pElements );
 
-	/**
+	
+/**
 	 * Sends a broadcast to all open diagrams.
 	 */
 	public void broadcastToAllOpenDiagrams( IBroadcastAction pAction );
 
-	/**
+	
+/**
 	 * Returns true if any of the open diagrams for this project 
 	 * are dirty.  If sProjectName is empty then all diagrams are looked at
 	 */
 	public boolean areAnyOpenDiagramsDirty( IProject pProject );
 
-	/**
+	
+/**
 	 * This routine will go through the workspace and verify that all the
 	 * diagrams exist and are valid - it will remove invalid ones if 
 	 * bRemoveDeadOnes is true
 	 */
 	public int cleanWorkspaceOfDeadDiagrams( boolean bRemoveDeadOnes );
 
-	/**
+	
+/**
 	 * Cleans the DiagramBackup folder within the project base directory 
 	 * of all files.
 	 */
 	public void cleanDiagramBackupFolder( String sProjectName );
 
-	/**
+	
+/**
 	 * Returns a list of diagrams this element is associated with.
 	 */
 	public ETList<IProxyDiagram> getAssociatedDiagramsForElement( String sElementXMIID );
 
-	/**
+	
+/**
 	 * Returns a list of diagrams this element is associated with.
 	 */
 	public ETList<IProxyDiagram> getAssociatedDiagramsForElement( IElement pElement );
 
-	/**
+	
+/**
 	 * Returns a list of diagrams this diagram is associated with.
 	 */
 	public ETList<IProxyDiagram> getAssociatedDiagramsForDiagram( String sDiagramXMIID );
 
-	/**
+	
+/**
 	 * Returns a list of diagrams this diagram is associated with.
 	 */
 	public ETList<IProxyDiagram> getAssociatedDiagramsForDiagram( IProxyDiagram pProxyDiagram );
 
-	/**
+	
+/**
 	 * Creates a diagram filename for use when creating a new diagram (stub or not).
 	*/
 	public String createDiagramFilename( INamespace pDiagramNamespace, String sDiagramName );
 
-	/**
+	
+/**
 	 * Returns all the diagram proxies in the namespace.  If bDeepSearch is true, all diagrams found through all the namespace's children will also be found.
 	*/
 	public ETList<IProxyDiagram> getDiagramsInNamespace( String sToplevelXMIID, String sXMIID, boolean bDeepSearch );
 
-	/**
+	
+/**
 	 * Returns all the diagram proxies in the namespace.  If bDeepSearch is true, all diagrams found through all the namespace's children will also be found.
 	*/
 	public ETList<IProxyDiagram> getDiagramsInNamespace( INamespace pSpace, boolean bDeepSearch );

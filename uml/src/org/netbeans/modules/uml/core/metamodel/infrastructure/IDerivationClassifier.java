@@ -42,19 +42,15 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : IDerivationClassifier.java
- * Created on : Dec 5, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.metamodel.infrastructure;
 
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier;
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IDerivation;
 
-/**
- * @author Aztec
- */
+
+
 public interface IDerivationClassifier extends IClassifier, IDerivation
 {
 

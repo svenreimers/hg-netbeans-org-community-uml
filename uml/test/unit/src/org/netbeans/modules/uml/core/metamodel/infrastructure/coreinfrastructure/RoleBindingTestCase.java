@@ -48,6 +48,7 @@ package org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructur
 import org.netbeans.modules.uml.core.AbstractUMLTestCase;
 
 
+
 /**
  * Test cases for RoleBinding.
  */
@@ -68,7 +69,8 @@ public class RoleBindingTestCase extends AbstractUMLTestCase
         project.addElement(roleb);
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see junit.framework.TestCase#tearDown()
      */
     protected void tearDown() throws Exception

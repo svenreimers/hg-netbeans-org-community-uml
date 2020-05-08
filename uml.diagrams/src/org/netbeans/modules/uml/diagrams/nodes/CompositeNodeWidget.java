@@ -69,10 +69,8 @@ import org.netbeans.modules.uml.drawingarea.widgets.CompositeNode;
 import org.netbeans.modules.uml.drawingarea.widgets.ContainerWithCompartments;
 import org.openide.util.Lookup;
 
-/**
- *
- * @author Sheryl Su
- */
+
+
 public abstract class CompositeNodeWidget extends UMLNodeWidget implements ContainerWithCompartments,CompositeNode
 {
     private ResizeStrategyProvider resizeProvider = null;

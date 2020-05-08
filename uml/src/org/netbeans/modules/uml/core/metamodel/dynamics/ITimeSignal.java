@@ -48,12 +48,14 @@ import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure
 
 public interface ITimeSignal extends ISignal
 {
-	/**
+	
+/**
 	 * Sets / Gets an expression that determines when the signal should be sent.
 	*/
 	public IExpression getTimeExpression();
 
-	/**
+	
+/**
 	 * Sets / Gets an expression that determines when the signal should be sent.
 	*/
 	public void setTimeExpression( IExpression value );

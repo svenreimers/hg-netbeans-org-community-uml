@@ -81,10 +81,8 @@ import org.netbeans.modules.uml.ui.support.finddialog.FindController;
 import org.netbeans.modules.uml.ui.support.finddialog.IFindController;
 //import org.netbeans.modules.uml.ui.support.viewfactorysupport.TypeConversions;
 
-/**
- *
- * @author Trey Spiva
- */
+
+
 public class TrackCar extends TrackItem implements ActionListener
 {
    public final static String NAVIGATE_TO_CLASSIFIER = "NAVIGATE_TO_CLASSIFIER";
@@ -107,7 +105,8 @@ public class TrackCar extends TrackItem implements ActionListener
    }
    
    
-   /**
+   
+/**
     * Retrieves the xmi id for a presenation element.
     *
     * @param element The model element.
@@ -125,7 +124,8 @@ public class TrackCar extends TrackItem implements ActionListener
       return retVal;
    }
    
-   /**
+   
+/**
     * Retrieves the xmi id the element that the track car represents.
     *
     * @return The xmi id.
@@ -135,7 +135,8 @@ public class TrackCar extends TrackItem implements ActionListener
       return getXMIID(getPresentationElement());
    }
    
-   /**
+   
+/**
     * Retrieves the presenation element that the track car represents.
     */
    public IPresentationElement getPresentationElement()
@@ -143,7 +144,8 @@ public class TrackCar extends TrackItem implements ActionListener
       return m_PresentationElement;
    }
    
-   /**
+   
+/**
     * Sets the presenation element that the track car represents.
     */
    public void setPresentationElement(IPresentationElement element)
@@ -151,7 +153,8 @@ public class TrackCar extends TrackItem implements ActionListener
       m_PresentationElement = element;
    }
    
-   /**
+   
+/**
     * Determines if the object is same track car.  To determine if the track cars
     * are the same the presentation element xmi id is checked.
     * @see java.lang.Object#equals(java.lang.Object)
@@ -228,7 +231,8 @@ public class TrackCar extends TrackItem implements ActionListener
    // Helper Methods
    //**************************************************
    
-   /**
+   
+/**
     * Determine the size of this item.
     *
     * @param rect The rectangle to update with items width.
@@ -246,7 +250,8 @@ public class TrackCar extends TrackItem implements ActionListener
       }
    }
    
-   /**
+   
+/**
     * @return
     */
    protected IETRect determinePresentationElementBoundingRect()
@@ -395,7 +400,8 @@ public class TrackCar extends TrackItem implements ActionListener
       m_IsOverrideMode = value;
    }
    
-   /**
+   
+/**
     * Retrieves the context menu.  The method showContextMenu uses
     * buildContextMenu to determine the menu to be displayed.  If null is returned
     * the a menu will not be displayed.
@@ -432,7 +438,8 @@ public class TrackCar extends TrackItem implements ActionListener
       return retVal;
    }
    
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see java.awt.event.ActionListener#actionPerformed(java.awt.event.ActionEvent)
     */
    public void actionPerformed(ActionEvent e)
@@ -468,7 +475,8 @@ public class TrackCar extends TrackItem implements ActionListener
       private final static int UNINIAILIZED = -1;
       private int xOffset = UNINIAILIZED;
       
-         /* (non-Javadoc)
+         
+/* (non-Javadoc)
           * @see java.awt.event.MouseMotionListener#mouseDragged(java.awt.event.MouseEvent)
           */
       public void mouseDragged(MouseEvent e)
@@ -482,7 +490,8 @@ public class TrackCar extends TrackItem implements ActionListener
          }
       }
       
-      /* (non-Javadoc)
+      
+/* (non-Javadoc)
        * @see java.awt.event.MouseListener#mousePressed(java.awt.event.MouseEvent)
        */
       public void mousePressed(MouseEvent e)
@@ -495,7 +504,8 @@ public class TrackCar extends TrackItem implements ActionListener
          }
       }
       
-      /* (non-Javadoc)
+      
+/* (non-Javadoc)
        * @see java.awt.event.MouseListener#mouseReleased(java.awt.event.MouseEvent)
        */
       public void mouseReleased(MouseEvent e)

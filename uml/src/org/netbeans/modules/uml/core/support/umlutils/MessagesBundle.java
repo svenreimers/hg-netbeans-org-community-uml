@@ -42,22 +42,16 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : MessagesBundle.java
- * Created on : Dec 22, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.support.umlutils;
 
 import java.text.MessageFormat;
 import java.util.MissingResourceException;
 import java.util.ResourceBundle;
 
-/**
- * Resource bundle wrapper.
- *
- * @author Aztec
- */
+
+
 public class MessagesBundle
 {
     public MessagesBundle(String resourcePath)
@@ -65,7 +59,8 @@ public class MessagesBundle
         setBundleClass(resourcePath);
     }
 
-    /**
+    
+/**
      * Returns a resource string, given its key.
      *
      * @param resourceKey The key of the resource to retrieve.
@@ -86,17 +81,8 @@ public class MessagesBundle
         }
     }
     
-    /**
-     * Obtains a resource string, given its key, and applies a MessageFormat to
-     * it.
-     * 
-     * @param resourceKey The key of the resource to retrieve.
-     * @param parameters  The parameters to be inserted into the formatted 
-     *                    string. If <code>null</code>, the function behaves
-     *                    exactly as <code>getString(String)</code>.
-     * @return The formatted resource string, if found, or a modified key if the
-     *         resource is unavailable.
-     */
+    
+
     public String getString(String resourceKey, Object[] parameters)
     {
         String s = getString(resourceKey);

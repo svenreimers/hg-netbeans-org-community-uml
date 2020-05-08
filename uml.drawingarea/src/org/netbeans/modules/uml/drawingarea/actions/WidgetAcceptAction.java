@@ -61,10 +61,8 @@ import org.netbeans.spi.palette.PaletteController;
 import org.openide.util.Lookup;
 import org.openide.windows.TopComponent;
 
-/**
- *
- * @author Sheryl Su
- */
+
+
 public class WidgetAcceptAction extends WidgetAction.Adapter
 {
 

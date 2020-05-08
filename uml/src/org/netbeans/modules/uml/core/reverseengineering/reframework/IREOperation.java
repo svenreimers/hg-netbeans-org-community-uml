@@ -51,47 +51,56 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 public interface IREOperation extends IREClassFeature, IREHasMultiplicity
 {
-	/**
+	
+/**
 	 * Specifies whether the operation must be defined by a descendent. True indicates that the operation must be defined by a descendent. False indicates that a descendent is not required to define the operation.
 	*/
 	public boolean getIsAbstract();
 
-	/**
+	
+/**
 	 * Retrieves the operations parameters
 	*/
 	public ETList<IREParameter> getParameters();
 
-	/**
+	
+/**
 	 * Specifies if the attribute is a primitive attribute or an object instance.
 	*/
 	public boolean getIsPrimitive();
 
-	/**
+	
+/**
 	 * Specifies if the operation is a constructor of the owner class.
 	*/
 	public boolean getIsConstructor();
 
-	/**
+	
+/**
 	 * Creates a data-wise clone of this IREOperation and returns it in pOperation (an IOperation object).  Does not add pOperation to pClassifier (an IClassifier object).
 	*/
 	public IOperation clone( IClassifier pClassifier );
 
-	/**
+	
+/**
 	 * Returns a list of names of Exceptions that this operation may raise.
 	*/
 	public IStrings getRaisedExceptions();
 
-	/**
+	
+/**
 	 * Specific to the Java language.
 	*/
 	public boolean getIsStrictFP();
 
-	/**
+	
+/**
 	 * Specific to the Java language.
 	*/
 	public boolean getIsNative();
 
-	/**
+	
+/**
 	 * property Concurrency
 	*/
 	public int getConcurrency();

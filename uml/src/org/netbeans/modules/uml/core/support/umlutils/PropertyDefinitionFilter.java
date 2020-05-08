@@ -58,16 +58,15 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.IElement;
 import org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ILanguage;
 import org.netbeans.modules.uml.core.support.umlsupport.XMLManip;
 
-/**
- * @author sumitabhk
- *
- */
+
+
 public class PropertyDefinitionFilter implements IPropertyDefinitionFilter
 {
 	private String m_FilterFile = null; 
         private Hashtable<String, Document> m_LoadedDocs = new Hashtable<String, Document>();
 
-	/**
+	
+/**
 	 * 
 	 */
 	public PropertyDefinitionFilter()
@@ -76,7 +75,8 @@ public class PropertyDefinitionFilter implements IPropertyDefinitionFilter
 		m_FilterFile = "";
 	}
 
-	/**
+	
+/**
 	 * Apply language specific filters to the passed in property element structure.
 	 * This may remove some property elements, rename some, change their values, etc.
 	 *
@@ -112,7 +112,8 @@ public class PropertyDefinitionFilter implements IPropertyDefinitionFilter
 		return 0;
 	}
 
-	/**
+	
+/**
 	 * Apply language specific filters to the passed in property element structure.
 	 * This may remove some property elements, rename some, change their values, etc.
 	 * 
@@ -167,7 +168,8 @@ public class PropertyDefinitionFilter implements IPropertyDefinitionFilter
 
 
 
-	/**
+	
+/**
 	 *  caching reference to parsed file locally in the instance hash,
 	 *  so the lifecycle of the reference follow that of the instance
 	 */
@@ -187,7 +189,8 @@ public class PropertyDefinitionFilter implements IPropertyDefinitionFilter
 	}
 
 
-	/**
+	
+/**
 	 * Find the nodes in the passed in xml node that represent property elements that need to
 	 * be changed in the current property element
 	 * 
@@ -260,7 +263,8 @@ public class PropertyDefinitionFilter implements IPropertyDefinitionFilter
 		}
 	}
 
-	/**
+	
+/**
 	 * Find the nodes in the passed in xml node that represent property elements that need to
 	 * be removed from the current property element
 	 * 
@@ -318,7 +322,8 @@ public class PropertyDefinitionFilter implements IPropertyDefinitionFilter
 		}
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.support.umlutils.IPropertyDefinitionFilter#filterPropertyElementBasedOnLanguage(org.netbeans.modules.uml.core.support.umlutils.IPropertyElement, java.lang.String)
 	 */
 	public long filterPropertyElementBasedOnLanguage(IPropertyElement pEle, String sLang)
@@ -327,7 +332,8 @@ public class PropertyDefinitionFilter implements IPropertyDefinitionFilter
 		return 0;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.support.umlutils.IPropertyDefinitionFilter#filterPropertyElementBasedOnModelElement(org.netbeans.modules.uml.core.support.umlutils.IPropertyElement, org.netbeans.modules.uml.core.metamodel.core.foundation.IElement)
 	 */
 	public long filterPropertyElementBasedOnModelElement(IPropertyElement pEle, IElement pElement)
@@ -336,7 +342,8 @@ public class PropertyDefinitionFilter implements IPropertyDefinitionFilter
 		return 0;
 	}
 
-	/**
+	
+/**
 	 * Gets the xml file that defines the property definition filters
 	 *
 	 * @param pVal
@@ -370,7 +377,8 @@ public class PropertyDefinitionFilter implements IPropertyDefinitionFilter
 		return file;
 	}
 
-	/**
+	
+/**
 	 * Sets the xml file that defines the property definition filters
 	 *
 	 * @param newVal
@@ -383,7 +391,8 @@ public class PropertyDefinitionFilter implements IPropertyDefinitionFilter
 		m_FilterFile = value;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.support.umlutils.IPropertyDefinitionFilter#filterPropertyElementBasedOnFilterName(org.netbeans.modules.uml.core.support.umlutils.IPropertyElement, java.lang.String)
 	 */
 	public long filterPropertyElementBasedOnFilterName(IPropertyElement pEle, String sName)
@@ -392,7 +401,8 @@ public class PropertyDefinitionFilter implements IPropertyDefinitionFilter
 		return 0;
 	}
 
-	/**
+	
+/**
 	 * Retrieves a model elements associated language.  If the model element
 	 * is associated to more than one language then the first language is the 
 	 * active language.
@@ -415,7 +425,8 @@ public class PropertyDefinitionFilter implements IPropertyDefinitionFilter
 		return retLang;
 	}
 
-	/**
+	
+/**
 	 * Gets a node from the xml document based on its name (language)
 	 * 
 	 *
@@ -436,7 +447,8 @@ public class PropertyDefinitionFilter implements IPropertyDefinitionFilter
 		return n;
 	}
 
-	/**
+	
+/**
 	 * Get all of the xml nodes that apply to the passed in element
 	 * 
 	 *

@@ -54,10 +54,8 @@ import org.openide.DialogDescriptor;
 import org.openide.util.HelpCtx;
 
 
-/**
- *
- * @author Craig Conover, craig.conover@sun.com
- */
+
+
 public class GenerateCodeDescriptor extends DialogDescriptor
     implements PropertyChangeListener
 {

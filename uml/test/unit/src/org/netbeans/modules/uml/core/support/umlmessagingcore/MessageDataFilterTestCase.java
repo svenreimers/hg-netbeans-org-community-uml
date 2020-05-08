@@ -44,6 +44,7 @@
 
 
 
+
 /*
  * Created on Oct 8, 2003
  *
@@ -55,10 +56,8 @@ import java.io.File;
 
 import org.dom4j.Document;
 import org.netbeans.modules.uml.core.support.umlsupport.XMLManip;
-/**
- * @author aztec
- *
- */
+
+
 public class MessageDataFilterTestCase extends AbstractUMLTestCase
 {
     

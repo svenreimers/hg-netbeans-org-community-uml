@@ -44,10 +44,8 @@ package org.netbeans.modules.uml.drawingarea.view;
 import java.awt.Rectangle;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.IPresentationElement;
 
-/**
- *
- * @author treyspiva
- */
+
+
 public interface ContextViewWidget
 {
     public void showingView(IPresentationElement element); 

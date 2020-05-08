@@ -58,10 +58,8 @@ import javax.swing.JTextField;
 import org.netbeans.modules.uml.common.generics.ETPairT;
 import org.netbeans.modules.uml.ui.support.commondialogs.IPromptDialog;
 
-/**
- * @author sumitabhk
- *
- */
+
+
 public class SwingPromptDialog extends JCenterDialog implements IPromptDialog
 {
 	private boolean m_accept = false;
@@ -70,7 +68,8 @@ public class SwingPromptDialog extends JCenterDialog implements IPromptDialog
 	protected JButton m_cancel = null;
 	protected JButton m_ok = null;
 
-	/**
+	
+/**
 	 * 
 	 */
 	public SwingPromptDialog()
@@ -129,7 +128,8 @@ public class SwingPromptDialog extends JCenterDialog implements IPromptDialog
 		setSize(300, 123);
 	}
 	
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.support.commondialogs.IPromptDialog#displayEdit(java.lang.String, java.lang.String, boolean, java.lang.StringBuffer, int, java.lang.String)
 	 */
 	public ETPairT<Boolean, String> displayEdit(String sMessage, String sInitalValue, String sTitle)
@@ -147,7 +147,8 @@ public class SwingPromptDialog extends JCenterDialog implements IPromptDialog
 		return retVal;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.support.commondialogs.IPromptDialog#displayEdit2(java.lang.String, int, int, int, boolean, int, int, java.lang.String)
 	 */
 	public long displayEdit2(String sMessage, int nInitialValue, int nMinValue, int nMaxValue, boolean bUserHitOK, int pResult, int parent, String sTitle)
@@ -156,7 +157,8 @@ public class SwingPromptDialog extends JCenterDialog implements IPromptDialog
 		return 0;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.support.commondialogs.IPromptDialog#displayPassword(java.lang.String, boolean, java.lang.StringBuffer, int, java.lang.String)
 	 */
 	public long displayPassword(String sMessage, boolean bUserHitOK, StringBuffer pResult, int parent, String sTitle)
@@ -165,7 +167,8 @@ public class SwingPromptDialog extends JCenterDialog implements IPromptDialog
 		return 0;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.support.commondialogs.ISilentDialog#isRunSilent()
 	 */
 	public boolean isRunSilent()
@@ -174,7 +177,8 @@ public class SwingPromptDialog extends JCenterDialog implements IPromptDialog
 		return false;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.support.commondialogs.ISilentDialog#setIsRunSilent(boolean)
 	 */
 	public void setIsRunSilent(boolean value)

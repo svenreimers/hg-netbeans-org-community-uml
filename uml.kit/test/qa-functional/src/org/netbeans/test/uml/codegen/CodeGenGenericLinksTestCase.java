@@ -43,14 +43,8 @@
  */
 
 
-/*
- * CodeGenGenericLinksTestCase.java
- *
- * Created on April 17, 2007, 2:00 PM
- *
- * To change this template, choose Tools | Template Manager
- * and open the template in the editor.
- */
+
+
 
 package org.netbeans.test.uml.codegen;
 
@@ -69,17 +63,15 @@ import org.netbeans.test.umllib.project.elem.impl.PackageElem;
 import org.netbeans.test.umllib.project.verifier.elem.ReflectionElementVerifier;
 import org.netbeans.test.umllib.project.verifier.elem.TextElementVerifier;
 
-/**
- *
- * @author sunflower
- */
+
+
 public class CodeGenGenericLinksTestCase extends CodeGenerationTestCase{
  
         IPackageElem linkPackage = new PackageElem("links");
         IPackageElem pack = new PackageElem("generic", linkPackage);
     
     
-    /** Creates a new instance of CodeGenGenericLinksTestCase */
+    
     public CodeGenGenericLinksTestCase(String name) {
         super(name);
     }

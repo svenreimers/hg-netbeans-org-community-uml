@@ -43,14 +43,8 @@
  */
 
 
-/*
- * Trace.java
- *
- * Created on January 11, 2007, 2:02 PM
- *
- * To change this template, choose Tools | Template Manager
- * and open the template in the editor.
- */
+
+
 
 package org.netbeans.test.umllib.util;
 import java.awt.Component;
@@ -66,10 +60,8 @@ import org.netbeans.jellytools.nodes.Node;
 import org.netbeans.jemmy.operators.JTreeOperator;
 import org.netbeans.junit.NbTestCase;
 
-/**
- *
- * @author Alexandr Scherbatiy
- */
+
+
 
 public class Debug {
     

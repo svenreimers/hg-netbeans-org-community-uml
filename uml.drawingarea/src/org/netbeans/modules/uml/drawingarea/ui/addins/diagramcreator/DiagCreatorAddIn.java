@@ -135,10 +135,8 @@ import org.netbeans.modules.uml.drawingarea.SQDDiagramTopComponent;
 import org.netbeans.modules.uml.drawingarea.UIDiagram;
 import org.openide.windows.TopComponent;
 
-/**
- * @author sumitabhk
- *
- */
+
+
 public class DiagCreatorAddIn implements IDiagCreatorAddIn, IAcceleratorListener//, IDrawingAreaEventsSink
 {
    //enum ChildRetrievalBehavior
@@ -160,7 +158,8 @@ public class DiagCreatorAddIn implements IDiagCreatorAddIn, IAcceleratorListener
    private boolean m_bAcceleratorsRegistered = false;
    private static JComponent m_hook = null;
 
-   /**
+   
+/**
     * 
     */
    public DiagCreatorAddIn()
@@ -168,7 +167,8 @@ public class DiagCreatorAddIn implements IDiagCreatorAddIn, IAcceleratorListener
       super();
    }
 
-   /**
+   
+/**
     * Executes the 'Create Structural Diagram From All Elements' button
     *
     * @param pExistingDiagram [in] If this argument is non-NULL then this diagram is used to create the presentation
@@ -183,7 +183,8 @@ public class DiagCreatorAddIn implements IDiagCreatorAddIn, IAcceleratorListener
       return 0;
    }
 
-   /**
+   
+/**
     * Creates a diagram from the input elements
     */
    public long guiCreateDiagramFromElements(ETList < IElement > pElements,                 
@@ -253,7 +254,8 @@ public class DiagCreatorAddIn implements IDiagCreatorAddIn, IAcceleratorListener
       return 0;
    }
    
-   /**
+   
+/**
     * Creates diagram using the default mechanism
     *
     * @param pDiagram [in] The diagram that should be created
@@ -278,7 +280,8 @@ public class DiagCreatorAddIn implements IDiagCreatorAddIn, IAcceleratorListener
       createPresentationElements(pDiagram, validateElementsForDiagram(pDiagram, pElements));
    }
 
-   /**
+   
+/**
     * If pDiagram is a component diagram then this guy does the CDFS
     *
     * @param pDiagram [in] The diagram that should be created
@@ -301,7 +304,8 @@ public class DiagCreatorAddIn implements IDiagCreatorAddIn, IAcceleratorListener
       return handled;
    }
 
-   /**
+   
+/**
     * Creates the specified diagram, and adds the input elements to the diagram.
     *
     * @param diagramKind[in]  Kind of diagram to create
@@ -342,7 +346,8 @@ public class DiagCreatorAddIn implements IDiagCreatorAddIn, IAcceleratorListener
       return cpDia;
    }
 
-   /**
+   
+/**
     * Creates the specified diagram, and adds the input elements to the diagram when the diagram is next opened.
     */
    public IProxyDiagram createStubDiagramForElements(int diagramKind, INamespace pNamespace, String sDiagramName, ETList < IElement > pElements)
@@ -351,7 +356,8 @@ public class DiagCreatorAddIn implements IDiagCreatorAddIn, IAcceleratorListener
       return stubCreator.createDiagram(diagramKind, pNamespace, sDiagramName, pElements);
    }
 
-   /**
+   
+/**
     * Creates the specified diagram,
     * and adds the input XMIIDs as elements to the diagram when the diagram is next opened.
     */
@@ -361,7 +367,8 @@ public class DiagCreatorAddIn implements IDiagCreatorAddIn, IAcceleratorListener
       return stubCreator.createDiagram(sDiagramKind, pNamespace, sDiagramName, sProjectXMIID, pXMIIDsToCDFS, pXMIIDsForNavigationOnly);
    }
 
-   /**
+   
+/**
     * Adds the input elements to the input diagram.
     * The caller of this diagram has to determine the elements that need to be put on the diagram.
     * The only special case is if the caller knows that all of pParentElement's owned elements
@@ -465,7 +472,8 @@ public class DiagCreatorAddIn implements IDiagCreatorAddIn, IAcceleratorListener
       return 0;
    }
    
-   /**
+   
+/**
     * Called when the addin is initialized.
     */
    public long initialize(Object context)
@@ -484,7 +492,8 @@ public class DiagCreatorAddIn implements IDiagCreatorAddIn, IAcceleratorListener
       return 0;
    }
 
-   /**
+   
+/**
     * Called when the addin is deinitialized.
     */
    public long deInitialize(Object context)
@@ -506,7 +515,8 @@ public class DiagCreatorAddIn implements IDiagCreatorAddIn, IAcceleratorListener
       return 0;
    }
 
-   /**
+   
+/**
     * 
     */
    private void revokeAccelerators()
@@ -515,7 +525,8 @@ public class DiagCreatorAddIn implements IDiagCreatorAddIn, IAcceleratorListener
 
    }
 
-   /**
+   
+/**
     * Called when the addin is unloaded.
     */
    public long unLoad(Object context)
@@ -523,7 +534,8 @@ public class DiagCreatorAddIn implements IDiagCreatorAddIn, IAcceleratorListener
       return 0;
    }
 
-   /**
+   
+/**
     * The version of the addin.
     *
     * @param pVersion [out,retval] The version of this addin.
@@ -533,7 +545,8 @@ public class DiagCreatorAddIn implements IDiagCreatorAddIn, IAcceleratorListener
       return m_Version;
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.addinframework.IAddIn#getName()
     */
    public String getName()
@@ -542,7 +555,8 @@ public class DiagCreatorAddIn implements IDiagCreatorAddIn, IAcceleratorListener
       return null;
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.addinframework.IAddIn#getID()
     */
    public String getID()
@@ -551,7 +565,8 @@ public class DiagCreatorAddIn implements IDiagCreatorAddIn, IAcceleratorListener
       return null;
    }
 
-   /**
+   
+/**
     * Returns the progid of this addin.
     *
     * @param sProgID [out,retval] The progid of this adding (ie "DiagramCreatorAddIn.DiagCreatorAddIn");
@@ -561,7 +576,8 @@ public class DiagCreatorAddIn implements IDiagCreatorAddIn, IAcceleratorListener
       return "org.netbeans.modules.uml.drawingarea.ui.addins.diagramcreator.DiagCreatorAddIn";
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.addinframework.IAddIn#getLocation()
     */
    public String getLocation()
@@ -570,7 +586,8 @@ public class DiagCreatorAddIn implements IDiagCreatorAddIn, IAcceleratorListener
       return null;
    }
 
-   /**
+   
+/**
     * Retrieves the selected elements fromt he project tree
     */
    private ETList < IElement > getSelectedElements(IProjectTreeControl ppProjectTree)
@@ -604,7 +621,8 @@ public class DiagCreatorAddIn implements IDiagCreatorAddIn, IAcceleratorListener
       return retObj;
    }
 
-   /**
+   
+/**
     * Retrieves the owned elements of the input element
     */
    private ETList < INamedElement > getOwnedElements(IElement pElement)
@@ -673,7 +691,8 @@ public class DiagCreatorAddIn implements IDiagCreatorAddIn, IAcceleratorListener
       return retObj;
    }
 
-   /**
+   
+/**
     * Retrieves the owned elements of the input element
     */
    private ETList < IElement > getOwnedElements2(IElement pElement)
@@ -692,7 +711,8 @@ public class DiagCreatorAddIn implements IDiagCreatorAddIn, IAcceleratorListener
       return retObj;
    }
 
-   /**
+   
+/**
     * Retrieves the first element in the list of elements
     */
    private IElement getFirstElement(ETList < IElement > pElements)
@@ -700,7 +720,8 @@ public class DiagCreatorAddIn implements IDiagCreatorAddIn, IAcceleratorListener
       return pElements != null && pElements.size() > 0 ? pElements.get(0) : null;
    }
 
-   /**
+   
+/**
     * Ask the user to create a diagram based on the elements
     */
    private void guiCreateDiagram(DiagramHandler pHandler)
@@ -806,7 +827,8 @@ catch (IOException ex) {
        }
    }
 
-   /**
+   
+/**
     * Create the specified diagram, using the call back interface
     */
    private IDiagram createDiagram(int diagramKind, INamespace pNamespace, String sDiagramName, ETList < IElement > pElements, IElement pParentElement, IProjectTreeControl pProjectTree)
@@ -830,7 +852,8 @@ catch (IOException ex) {
         }
    }
 
-   /**
+   
+/**
     * Add the elements owned by the owner element to the list of elements
     * If the pOwnerElement is an activity, or state, it is removed and all its owned elements are added
     * with out asking the user.
@@ -912,7 +935,8 @@ catch (IOException ex) {
       return pElements;
    }
 
-   /**
+   
+/**
     * Ask the user if the diagram of the specified kind under the input element should be deleted
     */
    private boolean guiRemoveDiagramByKind(INamespace pNamespace, int diaKind)
@@ -966,7 +990,8 @@ catch (IOException ex) {
       return StringUtilities.replaceAllSubstrings(id, "\"%1\"", name);
    }
 
-   /**
+   
+/**
     * Ask the user how to continue based on the input operation
     */
    public IInteraction continueREOperation(IOperation pOperation, IDiagram pDiagram)
@@ -993,7 +1018,8 @@ catch (IOException ex) {
       return pInteraction;
    }
 
-   /**
+   
+/**
     * Make sure the diagram can create these elements
     */
    private ETList < IElement > validateElementsForDiagram(IDiagram pDiagram, ETList < IElement > pNamedElements)
@@ -1084,7 +1110,8 @@ catch (IOException ex) {
 		}
 	}
 	
-   /**
+   
+/**
     * Create the presentation element, and discover the associated presentation relationships
     *
     * @param pDiagram [in] The diagram we're creating
@@ -1167,7 +1194,8 @@ catch (IOException ex) {
    }
 
 
-   /**
+   
+/**
     * Determines if CDFS is able to create a diagram from the element
     */
    private boolean canDiagramBeCreatedFromElement(IElement pElement)
@@ -1201,7 +1229,8 @@ catch (IOException ex) {
       return canCreate;
    }
 
-   /**
+   
+/**
     * Access to the UML parsing integrator member variable
     */
    private IUMLParsingIntegrator getUMLParsingIntegrator()
@@ -1213,7 +1242,8 @@ catch (IOException ex) {
       return m_UMLParsingIntegrator;
    }
 
-   /**
+   
+/**
     * Prepare the diagram for layout, and layout the presentation elements on the diagram
     *
     * @param pDiagram [in] The diagram to perform layout on.
@@ -1234,7 +1264,8 @@ catch (IOException ex) {
       }
    }
 
-   /**
+   
+/**
     * Expands the diagram namespace's node in the project tree
     */
    public void expandProjectTree(IDiagram pDiagram, IProjectTreeControl pProjectTree)
@@ -1250,7 +1281,8 @@ catch (IOException ex) {
       }
    }
 
-   /**
+   
+/**
     * Expands the element's namespace's node in the project tree
     */
    public void expandProjectTree(IElement pElement, IProjectTreeControl pProjectTree)
@@ -1265,7 +1297,8 @@ catch (IOException ex) {
       }
    }
 
-   /**
+   
+/**
     * Expands the namespace's node in the project tree
     */
    private void expandProjectTree(INamespace pNamespace, IProjectTreeControl pProjectTree)
@@ -1282,7 +1315,8 @@ catch (IOException ex) {
       }
    }
    
-    /**
+    
+/**
     * expands Element nodes
     */
    public void expandProjectTree(ETList<IElement> pElements, IProjectTreeModel pProjectTreeModel)
@@ -1307,7 +1341,8 @@ catch (IOException ex) {
       }
    }
 
-   /**
+   
+/**
     * If the selected item is an interaction, a sequence diagram is generated.
     *
     * @return True if the sequence diagram is created.
@@ -1359,7 +1394,8 @@ catch (IOException ex) {
       return handled;
    }
 
-   /**
+   
+/**
     * Reverse Engineer the input operation, and return the interaction created.
     */
    private IInteraction reverseEngineerOperation(IOperation pOperation)
@@ -1381,7 +1417,8 @@ catch (IOException ex) {
       return retObj;
    }
 
-   /**
+   
+/**
     * Retrieve's the operation's interaction
     */
    private IInteraction getOperationsInteraction(IOperation pOperation)
@@ -1413,7 +1450,8 @@ catch (IOException ex) {
       return retObj;
    }
 
-   /**
+   
+/**
     * Creates a new diagram (using CDFS) using the element that is the parent of the input diagram
     */
    private void transformDiagramTo(IDiagram pDiagram, int eKind)
@@ -1449,7 +1487,8 @@ catch (IOException ex) {
       }
    }
 
-   /**
+   
+/**
     * Retrieve the current project
     */
    private IProject getCurrentProject()
@@ -1458,7 +1497,8 @@ catch (IOException ex) {
       return projMgr != null ? projMgr.getCurrentProject() : null;
    }
 
-   /**
+   
+/**
     * Retrieve the current diagram
     */
    private IDiagram getCurrentDiagram()
@@ -1467,7 +1507,8 @@ catch (IOException ex) {
       return diaMgr != null ? diaMgr.getCurrentDiagram() : null;
    }
 
-   /**
+   
+/**
     * Retrieves the current product's accelerator manager
     */
    private IAcceleratorManager getAcceleratorManager()
@@ -1476,7 +1517,8 @@ catch (IOException ex) {
       return prod != null ? prod.getAcceleratorManager() : null;
    }
 
-   /**
+   
+/**
     * Message from the project tree that a context menu is about to be displayed
     */
    public void onProjectTreeContextMenuPrepare(IProjectTreeControl pControl, IProductContextMenu contextMenu)
@@ -1509,7 +1551,8 @@ catch (IOException ex) {
       }
    }
 
-   /**
+   
+/**
     * Message from the sink that something has been selected
     */
    public void handleSelection(IProductContextMenu pContextMenu, IProductContextMenuItem pSelectedItem)
@@ -1526,7 +1569,8 @@ catch (IOException ex) {
       }
    }
 
-   /**
+   
+/**
     * Manages the diagram callback objects
     */
    private DiagramHandler createDiagramCallback(ETList < IElement > pElements, IElement pParentElement, IProjectTreeControl pProjectTree, boolean bUsingGUI)
@@ -1557,7 +1601,8 @@ catch (IOException ex) {
       return handler;
    }
    
-   /**
+   
+/**
     * Removes the diagram callback from the list of our managed objects
     */
    public void removeDiagramCallback(DiagramHandler pCallback)
@@ -1568,7 +1613,8 @@ catch (IOException ex) {
       }
    }
 
-   /**
+   
+/**
     * Populates all the containers on the diagram
     */
    private void populateAllContainers(IDiagram pDiagram)
@@ -1576,7 +1622,8 @@ catch (IOException ex) {
 
    }
 
-   /**
+   
+/**
     * Retrieves a resource string.
     */
    public static String loadString(String key)
@@ -1591,7 +1638,8 @@ catch (IOException ex) {
       }
    }
 
-   /* Initializes the addin.
+   
+/* Initializes the addin.
     * @see org.netbeans.modules.uml.core.addinframework.ui.action.IViewActionDelegate#init(org.netbeans.modules.uml.core.addinframework.ui.application.ApplicationView)
     */
    public void init(ApplicationView view)
@@ -1599,7 +1647,8 @@ catch (IOException ex) {
       m_View = view;
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.addinframework.ui.action.IPlugginAction#run()
     */
    public void run(ActionEvent e)
@@ -1625,7 +1674,8 @@ catch (IOException ex) {
       }
    }
 
-   /**
+   
+/**
     * Determines whether or not a folder node is selected in the tree
     *
     * @param pControl[in]			The tree control
@@ -1661,7 +1711,8 @@ catch (IOException ex) {
       return bSel;
    }
 
-   /* Executes the accelerators for the addin
+   
+/* Executes the accelerators for the addin
     * @see org.netbeans.modules.uml.ui.support.applicationmanager.IAcceleratorListener#onAcceleratorInvoke(java.lang.String)
     */
    public boolean onAcceleratorInvoke(String keyCode)
@@ -1695,7 +1746,8 @@ catch (IOException ex) {
       return bHandled;
    }
 
-   /* Used to register the accelerators needed for the addin.
+   
+/* Used to register the accelerators needed for the addin.
     * @see org.netbeans.modules.uml.ui.swing.drawingarea.IDrawingAreaEventsSink#onDrawingAreaOpened(org.netbeans.modules.uml.core.metamodel.diagrams.IDiagram, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
     */
    public void onDrawingAreaOpened(IDiagram pParentDiagram, IResultCell cell)
@@ -1703,7 +1755,8 @@ catch (IOException ex) {
 
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.swing.drawingarea.IDrawingAreaEventsSink#onDrawingAreaClosed(org.netbeans.modules.uml.core.metamodel.diagrams.IDiagram, boolean, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
     */
    public void onDrawingAreaClosed(IDiagram pParentDiagram, boolean bDiagramIsDirty, IResultCell cell)
@@ -1711,7 +1764,8 @@ catch (IOException ex) {
 
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.swing.drawingarea.IDrawingAreaEventsSink#onDrawingAreaPreSave(org.netbeans.modules.uml.core.metamodel.diagrams.IProxyDiagram, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
     */
    public void onDrawingAreaPreSave(IProxyDiagram pParentDiagram, IResultCell cell)
@@ -1719,7 +1773,8 @@ catch (IOException ex) {
 
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.swing.drawingarea.IDrawingAreaEventsSink#onDrawingAreaPostSave(org.netbeans.modules.uml.core.metamodel.diagrams.IProxyDiagram, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
     */
    public void onDrawingAreaPostSave(IProxyDiagram pParentDiagram, IResultCell cell)
@@ -1727,7 +1782,8 @@ catch (IOException ex) {
 
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.swing.drawingarea.IDrawingAreaEventsSink#onDrawingAreaKeyDown(org.netbeans.modules.uml.core.metamodel.diagrams.IDiagram, int, boolean, boolean, boolean, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
     */
    public void onDrawingAreaKeyDown(IDiagram pParentDiagram, int nKeyCode, boolean bControlIsDown, boolean bShiftIsDown, boolean bAltIsDown, IResultCell cell)
@@ -1735,7 +1791,8 @@ catch (IOException ex) {
 
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.swing.drawingarea.IDrawingAreaEventsSink#onDrawingAreaPrePropertyChange(org.netbeans.modules.uml.core.metamodel.diagrams.IProxyDiagram, int, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
     */
    public void onDrawingAreaPrePropertyChange(IProxyDiagram pProxyDiagram, int nPropertyKindChanged, IResultCell cell)
@@ -1743,14 +1800,16 @@ catch (IOException ex) {
 
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.swing.drawingarea.IDrawingAreaEventsSink#onDrawingAreaPostPropertyChange(org.netbeans.modules.uml.core.metamodel.diagrams.IProxyDiagram, int, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
     */
    public void onDrawingAreaPostPropertyChange(IProxyDiagram pProxyDiagram, int nPropertyKindChanged, IResultCell cell)
    {
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.swing.drawingarea.IDrawingAreaEventsSink#onDrawingAreaActivated(org.netbeans.modules.uml.core.metamodel.diagrams.IDiagram, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
     */
    public void onDrawingAreaActivated(IDiagram pParentDiagram, IResultCell cell)
@@ -1758,7 +1817,8 @@ catch (IOException ex) {
 
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.swing.drawingarea.IDrawingAreaEventsSink#onDrawingAreaPreFileRemoved(java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
     */
    public void onDrawingAreaPreFileRemoved(String sFilename, IResultCell cell)
@@ -1766,7 +1826,8 @@ catch (IOException ex) {
 
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.swing.drawingarea.IDrawingAreaEventsSink#onDrawingAreaFileRemoved(java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
     */
    public void onDrawingAreaFileRemoved(String sFilename, IResultCell cell)

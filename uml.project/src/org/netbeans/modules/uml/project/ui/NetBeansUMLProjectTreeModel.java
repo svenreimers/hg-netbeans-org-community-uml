@@ -91,10 +91,8 @@ import java.util.Enumeration;
 import org.netbeans.modules.uml.ui.support.diagramsupport.DrawingAreaEventsAdapter;
 import org.netbeans.modules.uml.ui.support.diagramsupport.ProxyDiagramManager;
 
-/**
- *
- * @author Trey Spiva
- */
+
+
 public class NetBeansUMLProjectTreeModel extends ProjectTreeModelAdapter
 	implements ISCMEventsSink
 {
@@ -210,7 +208,8 @@ public class NetBeansUMLProjectTreeModel extends ProjectTreeModelAdapter
         }
 		
         
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
 	* @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeModel#addItem(org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem, java.lang.String, java.lang.String, long, org.netbeans.modules.uml.core.metamodel.core.foundation.IElement, java.lang.Object, java.lang.String)
 	*/
 	public IProjectTreeItem addItem(
@@ -231,7 +230,8 @@ public class NetBeansUMLProjectTreeModel extends ProjectTreeModelAdapter
 		return retVal;
 	}
 	
-        /* (non-Javadoc)
+        
+/* (non-Javadoc)
 	* @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeModel#addItem(org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeItem, org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeItem)
 	*/
 	public void addItem(ITreeItem parent, ITreeItem node)
@@ -291,7 +291,8 @@ public class NetBeansUMLProjectTreeModel extends ProjectTreeModelAdapter
     }
     
     
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
 	* @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeModel#addItem(org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeItem, java.lang.String, java.lang.String, long, org.netbeans.modules.uml.core.metamodel.core.foundation.IElement, java.lang.Object, java.lang.String)
 	*/
 	public IProjectTreeItem addItem(
@@ -312,7 +313,8 @@ public class NetBeansUMLProjectTreeModel extends ProjectTreeModelAdapter
 		return retVal;
 	}
 	
-	/**
+	
+/**
 	 * Locate the node that represents the model element.
 	 *
 	 * @param element The model element to locate.
@@ -348,7 +350,8 @@ public class NetBeansUMLProjectTreeModel extends ProjectTreeModelAdapter
 		return retVal;
 	}
 	
-	/**
+	
+/**
 	 * Locates the nodes that represents the model element.
 	 *
 	 * @param element The model element to locate.
@@ -364,7 +367,8 @@ public class NetBeansUMLProjectTreeModel extends ProjectTreeModelAdapter
 		return retVal;
 	}
 	
-	/**
+	
+/**
 	 * Locate the node that represents the model element.
 	 *
 	 * @param filename The name of the file that specifies the diagram.
@@ -419,7 +423,8 @@ public class NetBeansUMLProjectTreeModel extends ProjectTreeModelAdapter
 		return retVal;
 	}
 	
-	/**
+	
+/**
 	 * Removes a node from its parent.  The parent of the nodes is determined
 	 * by calling getParent on the passed in node.
 	 *
@@ -498,7 +503,8 @@ public class NetBeansUMLProjectTreeModel extends ProjectTreeModelAdapter
             return diagramsRootNode;
         }
 	
-	/**
+	
+/**
 	 * Remove all instances of the model element from the model.
 	 */
 	public void removeAll(IElement element)
@@ -542,7 +548,8 @@ public class NetBeansUMLProjectTreeModel extends ProjectTreeModelAdapter
 	// Helper Methods
 	////////////////////////////////////////////////////////////////////////////
 	
-	/**
+	
+/**
 	 * Notify that listener that something tree item has been updated.
 	 */
 	protected void notifyContextOfAdd(IProjectTreeItem retVal)
@@ -554,7 +561,8 @@ public class NetBeansUMLProjectTreeModel extends ProjectTreeModelAdapter
 		}
 	}
 	
-	/**
+	
+/**
 	 * Create and a new tree item.
 	 *
 	 * @parem text The display text
@@ -584,7 +592,8 @@ public class NetBeansUMLProjectTreeModel extends ProjectTreeModelAdapter
 		return retVal;
 	}
 	
-	/**
+	
+/**
 	 * Searches the model for the node that visualizes the model tree item.
 	 *
 	 * @param element
@@ -614,7 +623,8 @@ public class NetBeansUMLProjectTreeModel extends ProjectTreeModelAdapter
 	}
 	
 
-	/**
+	
+/**
 	 * Removes the reference to the node from node map in our model.
 	 *
 	 * @param node The node that needs to be removed.
@@ -669,7 +679,8 @@ public class NetBeansUMLProjectTreeModel extends ProjectTreeModelAdapter
 	}
 	
 
-	/**
+	
+/**
 	 * Removes the reference to the node in our model.
 	 *
 	 * @param node The node that needs to be removed.
@@ -737,7 +748,8 @@ public class NetBeansUMLProjectTreeModel extends ProjectTreeModelAdapter
 		} // else
 	}
 	
-	/**
+	
+/**
 	 * Generates a key for the specified node.  If the node is associated with
 	 * an IElement then the key will be the model elements id.
 	 *
@@ -791,7 +803,8 @@ public class NetBeansUMLProjectTreeModel extends ProjectTreeModelAdapter
                 (node.getName() + '#' + node.getType()) : retVal);
         }
 	
-	/**
+	
+/**
          * Add a new node to the models data structure.
          *
          * @param node The node to manage.
@@ -805,7 +818,8 @@ public class NetBeansUMLProjectTreeModel extends ProjectTreeModelAdapter
             }
         }
 	
-	/**
+	
+/**
 	 * Add a new node to the models data structure.  The node will be
 	 * associated with the specified key.
 	 *
@@ -905,13 +919,15 @@ public class NetBeansUMLProjectTreeModel extends ProjectTreeModelAdapter
 //            }
 //        }
                     
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.scm.ISCMEventsSink#onPreFeatureExecuted(int, org.netbeans.modules.uml.core.scm.ISCMItemGroup, org.netbeans.modules.uml.core.scm.ISCMOptions, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
     */
 	public void onPreFeatureExecuted(
 		int kind, ISCMItemGroup Group, ISCMOptions pOptions, IResultCell cell){}
 	
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.scm.ISCMEventsSink#onFeatureExecuted(int, org.netbeans.modules.uml.core.scm.ISCMItemGroup, org.netbeans.modules.uml.core.scm.ISCMOptions, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onFeatureExecuted(

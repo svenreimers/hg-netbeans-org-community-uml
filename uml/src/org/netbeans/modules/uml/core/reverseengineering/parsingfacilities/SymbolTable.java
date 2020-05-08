@@ -59,7 +59,8 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
  */
 public class SymbolTable
 {
-    /**
+    
+/**
      * Pops the current scope off the stack.  All instances that
      * was created by inside the current scope will be destroyed.
      *
@@ -83,7 +84,8 @@ public class SymbolTable
         }
     }
     
-    /**
+    
+/**
      * Removes all of the instances in a scope.  The instances will
      * be deleted, so any one holding on to an instance will no longer
      * be valid.
@@ -105,7 +107,8 @@ public class SymbolTable
         s.clear();
     }
 
-    /**
+    
+/**
      * Pushes a new scope onto the stack.
      *
      */
@@ -114,7 +117,8 @@ public class SymbolTable
         m_ScopeStack.add(new Scope());
     }
 
-    /**
+    
+/**
      * Retrieves the instance from the symbol table.  If the instance is not found
      * an empty instance is returned.
      *
@@ -141,7 +145,8 @@ public class SymbolTable
         return null;
     }
 
-    /**
+    
+/**
      * Adds a new instance to the symbol table.  If the isGlobal flag is true than
      * the instance is added to the global table.  If isGlobal is false then the 
      * instance will be added to the current scope.  
@@ -182,7 +187,8 @@ public class SymbolTable
         }
     }
     
-    /**
+    
+/**
      * Retrieves the current scope.  If there is not current scope
      * one will be added to the scope.
      *

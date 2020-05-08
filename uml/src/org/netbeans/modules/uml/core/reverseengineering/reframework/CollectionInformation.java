@@ -46,10 +46,8 @@ package org.netbeans.modules.uml.core.reverseengineering.reframework;
 
 import java.util.ArrayList;
 
-/**
- *
- * @author treyspiva
- */
+
+
 public class CollectionInformation
 {
     private String typeName = "";

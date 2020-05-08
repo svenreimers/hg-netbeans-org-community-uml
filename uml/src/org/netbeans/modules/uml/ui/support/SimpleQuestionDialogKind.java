@@ -46,11 +46,8 @@
 
 package org.netbeans.modules.uml.ui.support;
 
-/**
- * @author sumitabhk
- *
- *
- */
+
+
 public interface SimpleQuestionDialogKind
 {
 	public static int SQDK_ABORTRETRYIGNORE	= 0;

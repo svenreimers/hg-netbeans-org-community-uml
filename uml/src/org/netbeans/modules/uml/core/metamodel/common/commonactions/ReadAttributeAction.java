@@ -42,11 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : ReadAttributeAction.java
- * Created on : Sep 18, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.metamodel.common.commonactions;
 
 import org.dom4j.Document;
@@ -55,15 +52,15 @@ import org.dom4j.Node;
 import org.netbeans.modules.uml.core.metamodel.basic.basicactions.IOutputPin;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.ElementCollector;
 
-/**
- * @author Aztec
- */
+
+
 public class ReadAttributeAction
     extends AttributeAction
     implements IReadAttributeAction
 {
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactions.IReadAttributeAction#getResult()
      */
     public IOutputPin getResult()
@@ -73,7 +70,8 @@ public class ReadAttributeAction
 
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactions.IReadAttributeAction#setResult(org.netbeans.modules.uml.core.metamodel.basic.basicactions.IOutputPin)
      */
     public void setResult(IOutputPin pPin)

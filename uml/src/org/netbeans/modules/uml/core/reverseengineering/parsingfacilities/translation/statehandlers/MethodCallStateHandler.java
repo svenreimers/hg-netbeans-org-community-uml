@@ -43,11 +43,8 @@
  */
 
 
-/*
- * File       : MethodCallStateHandler.java
- * Created on : Dec 10, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.statehandlers;
 
 import org.dom4j.Node;
@@ -61,9 +58,8 @@ import org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.transl
 import org.netbeans.modules.uml.core.reverseengineering.reframework.IREClass;
 import org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ITokenDescriptor;
 
-/**
- * @author Aztec
- */
+
+
 public class MethodCallStateHandler
     extends MethodDetailStateHandler
 {
@@ -79,7 +75,8 @@ public class MethodCallStateHandler
         m_Expression.addState(stateName, getLanguage());
     }
     
-    /**
+    
+/**
      * Creates and returns a new state handler for a sub-state.  If the sub-state
      * is not handled then NULL is returned.  The variable state of interest is
      * <code>Initializer</code>
@@ -99,7 +96,8 @@ public class MethodCallStateHandler
         return this;
     }
     
-    /**
+    
+/**
      * Builds the XMI that will represent the expression.  The 
      * XML DOM Nodes that represent the expression will be added
      * as children to the specified DOM Node.
@@ -122,7 +120,8 @@ public class MethodCallStateHandler
                                       pClassLoader);
     }
 
-    /**
+    
+/**
      * Sends out the UMLParser structure details events that represent the 
      * method call data.  
      *
@@ -150,7 +149,8 @@ public class MethodCallStateHandler
                                                pParentNode);
     }
 
-    /**
+    
+/**
      * Converts the expression data into a string representation.
      *
      * @return The string representation.
@@ -160,7 +160,8 @@ public class MethodCallStateHandler
         return m_Expression.toString();
     }
 
-    /**
+    
+/**
      * Retrieve the start position of the expression.  The start position
      * is the file position before the first character of the expression.
      *
@@ -171,7 +172,8 @@ public class MethodCallStateHandler
         return m_Expression.getStartPosition();
     }
 
-    /**
+    
+/**
      * Retrieve the end position of the expression.  The end position
      * is the file position after the last character of the expression.
      *
@@ -182,7 +184,8 @@ public class MethodCallStateHandler
         return m_Expression.getEndPosition();
     }
 
-    /**
+    
+/**
      * Retrieve the start position of the expression.  The start position
      * is the file position before the first character of the expression.
      *
@@ -198,7 +201,8 @@ public class MethodCallStateHandler
         // No valid implementation in the C++ code base.
     }
 
-    /**
+    
+/**
      * Process a new token.  The tokens that are processed are in the
      * context of an object creation.
      *
@@ -209,7 +213,8 @@ public class MethodCallStateHandler
         m_Expression.addToken(pToken, language);
     }
     
-    /**
+    
+/**
      * Notification that the a state has completed.
      *
      * @param stateName [in] The name of the state.

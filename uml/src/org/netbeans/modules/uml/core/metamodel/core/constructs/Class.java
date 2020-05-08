@@ -55,13 +55,12 @@ import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure
 import org.netbeans.modules.uml.core.support.umlutils.ETArrayList;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
-/**
- * @author sumitabhk
- *
- */
+
+
 public class Class extends EncapsulatedClassifier implements IClass
 {
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.constructs.IClass#addReception(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IReception)
 	 */
 	public void addReception(IReception rec) 
@@ -69,14 +68,16 @@ public class Class extends EncapsulatedClassifier implements IClass
 		 super.addFeature(rec);
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.constructs.IClass#removeReception(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IReception)
 	 */
 	public void removeReception(IReception rec) {
 		super.removeFeature(rec);
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.constructs.IClass#getReceptions()
 	 */
 	public ETList <IReception> getReceptions() {
@@ -119,7 +120,8 @@ public class Class extends EncapsulatedClassifier implements IClass
 		return values;
 	}
 
-	/**
+	
+/**
 	 * Establishes the appropriate XML elements for this UML type.
 	 *
 	 * [in] The document where this element will reside

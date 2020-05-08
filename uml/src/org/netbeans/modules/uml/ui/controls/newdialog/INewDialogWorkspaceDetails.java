@@ -47,22 +47,26 @@ package org.netbeans.modules.uml.ui.controls.newdialog;
 
 public interface INewDialogWorkspaceDetails extends INewDialogTabDetails
 {
-	/**
+	
+/**
 	 * The name of the workspace
 	*/
 	public String getName();
 
-	/**
+	
+/**
 	 * The name of the workspace
 	*/
 	public void setName( String value );
 
-	/**
+	
+/**
 	 * The location of the workspace
 	*/
 	public String getLocation();
 
-	/**
+	
+/**
 	 * The location of the workspace
 	*/
 	public void setLocation( String value );

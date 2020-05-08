@@ -47,10 +47,8 @@ import javax.swing.AbstractAction;
 import org.netbeans.modules.uml.core.metamodel.core.primitivetypes.IInteractionOperator;
 import org.netbeans.modules.uml.core.metamodel.dynamics.ICombinedFragment;
 
-/**
- *
- * @author sp153251
- */
+
+
 public class ToggleInteractionOperatorAction extends AbstractAction {
 
     private ICombinedFragment cf;

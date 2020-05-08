@@ -42,6 +42,7 @@
  * made subject to such option by the copyright holder.
  */
 
+
 /*
  * ImportedProjectChildren.java
  *
@@ -86,10 +87,8 @@ import org.openide.nodes.NodeReorderEvent;
 import org.openide.util.Exceptions;
 import org.openide.util.NbBundle;
 
-/**
- *
- * @author Administrator
- */
+
+
 public class ImportedProjectChildren extends Children.Keys implements NodeListener
 {
 
@@ -243,7 +242,8 @@ public class ImportedProjectChildren extends Children.Keys implements NodeListen
         }
     }
 
-    /* retreives the imported projects from the project
+    
+/* retreives the imported projects from the project
      * @see org.openide.nodes.Children#addNotify()
      */
     protected void addNotify()

@@ -48,12 +48,14 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElement;
 
 public interface IEnumerationLiteral extends INamedElement
 {
-	/**
+	
+/**
 	 * property Enumeration
 	*/
 	public IEnumeration getEnumeration();
 
-	/**
+	
+/**
 	 * property Enumeration
 	*/
 	public void setEnumeration( IEnumeration value );

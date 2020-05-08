@@ -74,6 +74,7 @@ import org.netbeans.modules.uml.drawingarea.view.UMLNodeWidget;
 import org.netbeans.test.umllib.actions.Actionable;
 import org.netbeans.test.umllib.util.JPopupByPointChooser;
 
+
 /**
  * This is operator for diagram drawing area.
  * (Drawing area is the area under toolbar where 
@@ -92,7 +93,8 @@ public class DrawingAreaOperator extends ComponentOperator implements Actionable
         DriverManager.setKeyDriver(new KeyRobotDriver(new Timeout("autoDelay",50)));     
     }
     
-    /**
+    
+/**
      * Constructs new DrawingAreaOperator  
      * @param area instance of JPanel.
      */
@@ -103,7 +105,8 @@ public class DrawingAreaOperator extends ComponentOperator implements Actionable
     }
     
        
-    /**
+    
+/**
      * Returns underlying ADGraphWindow
      * @return underlying ADGraphWindow
      */
@@ -112,7 +115,8 @@ public class DrawingAreaOperator extends ComponentOperator implements Actionable
         return (JPanel)getSource();
     } 
     
-    /**
+    
+/**
      * Returns underlying ADGraphWindow ZoomLevel
      * @return double 
      */
@@ -122,7 +126,8 @@ public class DrawingAreaOperator extends ComponentOperator implements Actionable
         return zooManager.getZoom();
     }
     
-    /**
+    
+/**
      * Return free point. You may use such point 
      * to place an element or invoke popup menu
      * @return free point
@@ -133,7 +138,8 @@ public class DrawingAreaOperator extends ComponentOperator implements Actionable
  
     
      
-    /**
+    
+/**
      * Return free point. the nearest element would be not closer than 
      * <CODE>span</CODE> points.
      * You may use such point to place an element or invoke popup menu
@@ -183,7 +189,7 @@ public class DrawingAreaOperator extends ComponentOperator implements Actionable
                         break;
                     }
                 }
-                // TODO: Need api getAllEdgesViaRect() from Trey 
+                
 //              if (pointIsFree){
 //                    //add small links check
 //                     ETList<IPresentationElement> tmp1=daControl.getAllEdgesViaRect(new ETRect(p.getX(),p.getY(),0,0),true);
@@ -204,7 +210,8 @@ public class DrawingAreaOperator extends ComponentOperator implements Actionable
         return centerAtPoint(new Point(width+50,height/2));
     } 
     
-    /**
+    
+/**
      * 
      * @param point 
      * @return 
@@ -245,13 +252,14 @@ public class DrawingAreaOperator extends ComponentOperator implements Actionable
     }
     
     
-    /**
+    
+/**
      * centers at the device point specified and returns the new device coordinates of the point specified
      * @param point device point to center at
      * @return the new device coordinates of the point specified
      */
     public Point centerAtPoint(Point point) {  
-        //TODO:  Wait for Trey  to work on ceternPointInWindow()
+        
         
 //6.0        IDrawingAreaControl daControl = getArea().getDrawingArea();
 //        IETPoint etPoint = daControl.deviceToLogicalPoint(point.x,point.y);
@@ -275,7 +283,8 @@ public class DrawingAreaOperator extends ComponentOperator implements Actionable
     }
     
     
-    /**
+    
+/**
      * Invokes popup menu
      * @return  popup menu operator
      */
@@ -293,7 +302,8 @@ public class DrawingAreaOperator extends ComponentOperator implements Actionable
         return ret;         
     }    
     
-    /**
+    
+/**
      * click in empty space somewhere
      **/
     public void clickMouse() {
@@ -329,7 +339,8 @@ public class DrawingAreaOperator extends ComponentOperator implements Actionable
     }
 
     
-    /**
+    
+/**
      * 
      * @param p 
      * @return 
@@ -340,7 +351,8 @@ public class DrawingAreaOperator extends ComponentOperator implements Actionable
     }
     
     //native - not api functions
-    /**
+    
+/**
      * helps to find lines/points on diagram differs from surrounding area
      * works only for visible area
      * @param startPoint 

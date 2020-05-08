@@ -44,9 +44,8 @@
 
 
 
-/*
- * @author Trey Spiva
- */
+
+
 package org.netbeans.modules.uml.ui.support.diagramsupport;
 
 import java.util.ArrayList;
@@ -60,10 +59,8 @@ import org.openide.loaders.DataObject;
 
 
 
-/**
- * 
- * @author Trey Spiva
- */
+
+
 public class DrawingAreaEventDispatcherImpl extends EventDispatcher implements IDrawingAreaEventDispatcher 
 {
     
@@ -99,7 +96,8 @@ public class DrawingAreaEventDispatcherImpl extends EventDispatcher implements I
 //		m_ChangeNotificationTranslatorEventManager = new EventManager < IChangeNotificationTranslatorSink > ();
     }
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.drawingarea.IDrawingAreaEventDispatcher#registerDrawingAreaEvents(org.netbeans.modules.uml.ui.swing.drawingarea.IDrawingAreaEventsSink)
 	 */
 	public int registerDrawingAreaEvents(IDrawingAreaEventsSink handler) 
@@ -108,7 +106,8 @@ public class DrawingAreaEventDispatcherImpl extends EventDispatcher implements I
 		return 0;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.drawingarea.IDrawingAreaEventDispatcher#revokeDrawingAreaSink(org.netbeans.modules.uml.ui.swing.drawingarea.IDrawingAreaEventsSink)
 	 */
 	public void revokeDrawingAreaSink(IDrawingAreaEventsSink handler) 
@@ -117,7 +116,8 @@ public class DrawingAreaEventDispatcherImpl extends EventDispatcher implements I
 	}
 
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.drawingarea.IDrawingAreaEventDispatcher#fireDrawingAreaPostCreated(org.netbeans.modules.uml.ui.swing.drawingarea.IAxDrawingAreaControl, org.netbeans.modules.uml.core.eventframework.IEventPayload)
 	 */
 	public void fireDrawingAreaPostCreated(DataObject dataobject, 
@@ -137,7 +137,8 @@ public class DrawingAreaEventDispatcherImpl extends EventDispatcher implements I
 		}
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.drawingarea.IDrawingAreaEventDispatcher#fireDrawingAreaPrePropertyChange(org.netbeans.modules.uml.core.metamodel.diagrams.IProxyDiagram, int, org.netbeans.modules.uml.core.eventframework.IEventPayload)
 	 */
 	public boolean fireDrawingAreaPrePropertyChange(IProxyDiagram pProxyDiagram, 
@@ -164,7 +165,8 @@ public class DrawingAreaEventDispatcherImpl extends EventDispatcher implements I
 		return proceed;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.drawingarea.IDrawingAreaEventDispatcher#fireDrawingAreaPostPropertyChange(org.netbeans.modules.uml.core.metamodel.diagrams.IProxyDiagram, int, org.netbeans.modules.uml.core.eventframework.IEventPayload)
 	 */
 	public void fireDrawingAreaPostPropertyChange(IProxyDiagram pProxyDiagram, 
@@ -189,7 +191,8 @@ public class DrawingAreaEventDispatcherImpl extends EventDispatcher implements I
 	}
 
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.drawingarea.IDrawingAreaEventDispatcher#fireDrawingAreaFileRemoved(java.lang.String, org.netbeans.modules.uml.core.eventframework.IEventPayload)
 	 */
 	public void fireDrawingAreaFileRemoved(String sFilename, IEventPayload payload) {

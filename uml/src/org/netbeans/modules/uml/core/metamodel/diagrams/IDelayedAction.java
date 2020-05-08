@@ -45,12 +45,14 @@
 
 package org.netbeans.modules.uml.core.metamodel.diagrams;
 
+
 /*
  *
  */
 public interface IDelayedAction
 {
-	/**
+	
+/**
 	 * Returns a description of this action
 	*/
 	public String getDescription();

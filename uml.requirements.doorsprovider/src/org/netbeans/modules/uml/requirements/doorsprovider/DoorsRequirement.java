@@ -42,7 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
- /*
+ 
+/*
  * DoorsRequirement.java
  *
  * Created on July 2, 2004, 8:51 AM
@@ -69,10 +70,8 @@ import org.dom4j.Element;
 import org.dom4j.Node;
 import org.openide.util.NbBundle;
 
-/**
- *
- * @author  Trey Spiva
- */
+
+
 public class DoorsRequirement implements IDoorsRequirement, IComparableTreeData
 {
    private boolean m_IsCategory = false;
@@ -93,7 +92,8 @@ public class DoorsRequirement implements IDoorsRequirement, IComparableTreeData
    {
    }
    
-   /**
+   
+/**
     *
     * A category has no requirement text, but does contain a group of requirements
     *
@@ -104,7 +104,8 @@ public class DoorsRequirement implements IDoorsRequirement, IComparableTreeData
       return m_IsCategory;
    }
    
-   /**
+   
+/**
     * A category has no requirement text, but does contain a group of requirements
     *
     * @param newVal Value to set the IsCategory property to.
@@ -114,7 +115,8 @@ public class DoorsRequirement implements IDoorsRequirement, IComparableTreeData
       m_IsCategory = newVal;
    }
    
-   /**
+   
+/**
     * Get the text of the requirement.
     *
     * @return The requirement text.
@@ -124,7 +126,8 @@ public class DoorsRequirement implements IDoorsRequirement, IComparableTreeData
       return m_Description;
    }
    
-   /**
+   
+/**
     *
     * Set the text of the requirement.
     *
@@ -339,7 +342,8 @@ public class DoorsRequirement implements IDoorsRequirement, IComparableTreeData
       }
    }
    
-   /**
+   
+/**
     *
     * Add Satisfier sub-tree item{s} to the passed in IProjectTreeItem.
     *
@@ -435,7 +439,8 @@ public class DoorsRequirement implements IDoorsRequirement, IComparableTreeData
       }
    }
    
-   /**
+   
+/**
     * Delete Satisfier from this requirement's ISatisfiers collection and also 
     * from DOORS
     *
@@ -495,7 +500,8 @@ public class DoorsRequirement implements IDoorsRequirement, IComparableTreeData
       }
    }
    
-   /**
+   
+/**
     * Go back to the Requirements Source and get this. Requirement's children
     *
     * @param pRequirementSource Not used by this type of Requirement

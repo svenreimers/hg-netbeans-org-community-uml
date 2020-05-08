@@ -47,62 +47,74 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.IConstraint;
 import org.netbeans.modules.uml.core.support.umlsupport.IResultCell;
 public interface IOperationEventsSink
 {
-	/**
+	
+/**
 	 * Fired whenever a pre or post condition is about to be added to an operation.
 	*/
 	public void onConditionPreAdded( IOperation oper, IConstraint condition, boolean isPreCondition, IResultCell cell );
 
-	/**
+	
+/**
 	 * Fired whenever  a pre or post condition has been added to an operation.
 	*/
 	public void onConditionAdded( IOperation oper, IConstraint condition, boolean isPreCondition, IResultCell cell );
 
-	/**
+	
+/**
 	 * Fired whenever a pre or post condition is about to be removed from an operation.
 	*/
 	public void onConditionPreRemoved( IOperation oper, IConstraint condition, boolean isPreCondition, IResultCell cell );
 
-	/**
+	
+/**
 	 * Fired whenever a pre or post condition is about to be removed from an operation.
 	*/
 	public void onConditionRemoved( IOperation oper, IConstraint condition, boolean isPreCondition, IResultCell cell );
 
-	/**
+	
+/**
 	 * Fired whenever the query flag on an operation is about to be modified.
 	*/
 	public void onPreQueryModified( IOperation oper, boolean proposedValue, IResultCell cell );
 
-	/**
+	
+/**
 	 * Fired whenever the query flag on an operation has been modified.
 	*/
 	public void onQueryModified( IOperation oper, IResultCell cell );
 
-	/**
+	
+/**
 	 * Fired whenever a RaisedException is about to be added to an operation.
 	*/
 	public void onRaisedExceptionPreAdded( IOperation oper, IClassifier pException, IResultCell cell );
 
-	/**
+	
+/**
 	 * Fired whenever a RaisedException has been added to an operation.
 	*/
 	public void onRaisedExceptionAdded( IOperation oper, IClassifier pException, IResultCell cell );
 
-	/**
+	
+/**
 	 * Fired whenever a RaisedException is about to be removed from an operation.
 	*/
 	public void onRaisedExceptionPreRemoved( IOperation oper, IClassifier pException, IResultCell cell );
 
-	/**
+	
+/**
 	 * Fired whenever a RaisedException is about to be removed from an operation.
 	*/
 	public void onRaisedExceptionRemoved( IOperation oper, IClassifier pException, IResultCell cell );
  
-    /**
+    
+/**
      * Fired when a property is about to be changed on the operation.
     */
     public void onPreOperationPropertyModified( IOperation oper, /* OperationPropertyKind */ int nKind, boolean proposedValue, IResultCell cell );
 
-    /**
+    
+/**
      * Fired when a property changes on the operation.
     */
     public void onOperationPropertyModified( IOperation oper, /* OperationPropertyKind */ int nKind, IResultCell cell );

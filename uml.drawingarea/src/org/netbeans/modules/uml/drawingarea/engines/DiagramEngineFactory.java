@@ -44,10 +44,8 @@ package org.netbeans.modules.uml.drawingarea.engines;
 
 import org.netbeans.modules.uml.drawingarea.view.DesignerScene;
 
-/**
- *
- * @author treyspiva
- */
+
+
 public interface DiagramEngineFactory {
 
     public DiagramEngine createEngine(DesignerScene scene);

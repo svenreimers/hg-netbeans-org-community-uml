@@ -42,6 +42,7 @@
  * made subject to such option by the copyright holder.
  */
 
+
 /*
  * Created on Nov 5, 2003
  *
@@ -67,10 +68,8 @@ import org.netbeans.modules.uml.core.roundtripframework.RequestDetailKind;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 import org.netbeans.modules.uml.ui.support.commondialogs.MessageIconKindEnum;
 
-/**
- * @author aztec
- *
- */
+
+
 public class JavaClassChangeHandler extends JavaChangeHandler
 								    implements IJavaClassChangeHandler
 {	
@@ -319,7 +318,8 @@ public class JavaClassChangeHandler extends JavaChangeHandler
 		}
 	}
 	
-	/**
+	
+/**
 	 * Renames the name of the contructor when the name of the class changes.
 	 *
 	 * @param pClass[in] The class that contains the constructor.

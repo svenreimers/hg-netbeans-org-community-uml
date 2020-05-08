@@ -46,11 +46,8 @@
 
 package org.netbeans.modules.uml.ui.support.messaging;
 
-/**
- * @author sumitabhk
- *
- *
- */
+
+
 public class Messenger implements IMessenger
 {
 	private boolean disableMessaging = false;
@@ -63,7 +60,8 @@ public class Messenger implements IMessenger
 		super();
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.coreapplication.ICoreMessenger#getDisableMessaging()
 	 */
 	public boolean getDisableMessaging()
@@ -71,7 +69,8 @@ public class Messenger implements IMessenger
 		return disableMessaging;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.coreapplication.ICoreMessenger#setDisableMessaging(boolean)
 	 */
 	public void setDisableMessaging(boolean value)
@@ -79,7 +78,8 @@ public class Messenger implements IMessenger
 		disableMessaging = value;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.coreapplication.ICoreMessenger#getParentWindow()
 	 */
 	public int getParentWindow()

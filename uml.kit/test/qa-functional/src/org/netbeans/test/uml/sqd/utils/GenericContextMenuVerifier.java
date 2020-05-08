@@ -131,7 +131,8 @@ public class GenericContextMenuVerifier {
     
     
     protected boolean checkItemEnabled(String menuPath, boolean enabled){        
-        /*
+        
+/*
         JPopupMenuOperator menu = element.getPopup();
         JMenuItemOperator item = menu.showMenuItem(menuPath);
         boolean itemEnabled = item.isEnabled();
@@ -197,7 +198,8 @@ public class GenericContextMenuVerifier {
         //    public void run() {
                 if(element!=null && element.getType().equals(ElementTypes.COMBINED_FRAGMENT.toString()))
                 {
-                    /*try{Thread.sleep(100);}catch(Exception ex){}
+                    
+/*try{Thread.sleep(100);}catch(Exception ex){}
                     diagram.getDrawingArea().pushKey(KeyEvent.VK_ESCAPE);
                     diagram.getDrawingArea().clickMouse(5,20,1);
                     element.waitSelection(false);

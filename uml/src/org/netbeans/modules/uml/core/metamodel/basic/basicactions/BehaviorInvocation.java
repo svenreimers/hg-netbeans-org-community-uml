@@ -55,7 +55,8 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 public class BehaviorInvocation extends Element implements IBehaviorInvocation
 {
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.basic.basicactions.IBehaviorInvocation#addArgument(org.netbeans.modules.uml.core.metamodel.basic.basicactions.IPin)
      */
     public void addBehaviorArgument(IPin pArg)
@@ -63,7 +64,8 @@ public class BehaviorInvocation extends Element implements IBehaviorInvocation
         addElementByID(pArg, "argument");
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.basic.basicactions.IBehaviorInvocation#addResult(org.netbeans.modules.uml.core.metamodel.basic.basicactions.IPin)
      */
     public void addResult(IPin pArg)
@@ -71,7 +73,8 @@ public class BehaviorInvocation extends Element implements IBehaviorInvocation
         addElementByID(pArg, "result");
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.basic.basicactions.IBehaviorInvocation#getArguments()
      */
     public ETList <IPin> getBehaviorArguments()
@@ -81,7 +84,8 @@ public class BehaviorInvocation extends Element implements IBehaviorInvocation
 
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.basic.basicactions.IBehaviorInvocation#getBehavior()
      */
     public IBehavior getBehavior()
@@ -90,7 +94,8 @@ public class BehaviorInvocation extends Element implements IBehaviorInvocation
         return col.retrieveSingleElementWithAttrID( this, "behavior", IBehavior.class);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.basic.basicactions.IBehaviorInvocation#getResult()
      */
     public ETList <IPin> getResults()
@@ -100,7 +105,8 @@ public class BehaviorInvocation extends Element implements IBehaviorInvocation
 
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.basic.basicactions.IBehaviorInvocation#removeArgument(org.netbeans.modules.uml.core.metamodel.basic.basicactions.IPin)
      */
     public void removeBehaviorArgument(IPin pArg)
@@ -108,7 +114,8 @@ public class BehaviorInvocation extends Element implements IBehaviorInvocation
         removeElementByID( pArg, "argument");
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.basic.basicactions.IBehaviorInvocation#removeResult(org.netbeans.modules.uml.core.metamodel.basic.basicactions.IPin)
      */
     public void removeResult(IPin pArg)
@@ -116,7 +123,8 @@ public class BehaviorInvocation extends Element implements IBehaviorInvocation
         removeElementByID( pArg, "result");
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.basic.basicactions.IBehaviorInvocation#setBehavior(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavior)
      */
     public void setBehavior(IBehavior newVal)

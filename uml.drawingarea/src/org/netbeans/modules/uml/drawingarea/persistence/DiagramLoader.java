@@ -97,10 +97,8 @@ import org.openide.filesystems.FileObject;
 import org.openide.filesystems.FileUtil;
 import org.openide.util.Exceptions;
 
-/**
- *
- * @author jyothi
- */
+
+
 class DiagramLoader
 {
 

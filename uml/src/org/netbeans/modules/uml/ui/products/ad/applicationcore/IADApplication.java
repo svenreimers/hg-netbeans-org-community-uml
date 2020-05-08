@@ -24,12 +24,14 @@ import org.netbeans.modules.uml.core.IApplication;
 
 public interface IADApplication extends IApplication
 {
-	/**
+	
+/**
 	 * Get/Set the application this object points to
 	*/
 	public IApplication getApplication();
 
-	/**
+	
+/**
 	 * Get/Set the application this object points to
 	*/
 	public void setApplication( IApplication value );

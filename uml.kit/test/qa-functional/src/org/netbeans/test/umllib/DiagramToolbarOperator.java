@@ -43,6 +43,7 @@
  */
 
 
+
 /*
  * UMLDiagramToolbarOperator.java
  *
@@ -65,12 +66,8 @@ import org.netbeans.jemmy.operators.JToggleButtonOperator;
 import org.netbeans.jemmy.util.Dumper;
 import org.netbeans.test.umllib.exceptions.NotFoundException;
 
-/**
- * This class handles all toolbars now. 
- * Later them must be splitted for palettes
- * @author Alexei Mokeev
- * @see qa.uml.util.LibProperties
- */
+
+
 public class DiagramToolbarOperator {
     private Component mSource = null;
      
@@ -100,7 +97,8 @@ public class DiagramToolbarOperator {
     
     private String defaultToolTooltip = SELECT_TOOL;
 
-     /**
+     
+/**
      * Creates a new instance of DiagramToolbarOperator
      * @param diagramOperator 
      */
@@ -108,7 +106,8 @@ public class DiagramToolbarOperator {
         this.mSource = diagramOperator.getSource();
     }
     
-    /**
+    
+/**
      * 
      * @param source 
      */
@@ -116,7 +115,8 @@ public class DiagramToolbarOperator {
         this.mSource = source;
     }
     
-    /**
+    
+/**
      * 
      * @param buttonTooltip 
      * @throws qa.uml.exceptions.NotFoundException 
@@ -126,7 +126,8 @@ public class DiagramToolbarOperator {
         getAnyButtonByTooltip(buttonTooltip).doClick();
         try{Thread.sleep(100);}catch(Exception ex){}
     }
-    /**
+    
+/**
      * 
      * @param buttonTooltip 
      * @throws qa.uml.exceptions.NotFoundException 
@@ -149,14 +150,16 @@ public class DiagramToolbarOperator {
         }
         return new AbstractButtonOperator(button);
     }
-    /**
+    
+/**
      * default tool selection/clicking, usually "select tool"
      */
     public void selectDefault() {
             selectTool(defaultToolTooltip);
     }
     
-    /**
+    
+/**
      * 
      * @param buttonTooltip 
      * @throws qa.uml.exceptions.NotFoundException 
@@ -170,7 +173,8 @@ public class DiagramToolbarOperator {
         return button;
     }
 
-    /**
+    
+/**
      * 
      * @param buttonTooltip 
      * @throws qa.uml.exceptions.NotFoundException 
@@ -187,7 +191,8 @@ public class DiagramToolbarOperator {
     class ToolbarToggleButtonChooser implements ComponentChooser {
         PrintStream p = null;
         
-        /**
+        
+/**
          * 
          * @param str 
          */
@@ -195,7 +200,8 @@ public class DiagramToolbarOperator {
             myStr = str;
         }
         
-        /**
+        
+/**
          * 
          * @param arg0 
          * @return 
@@ -212,7 +218,8 @@ public class DiagramToolbarOperator {
             return false;
         }
         
-        /**
+        
+/**
          * 
          * @return 
          */
@@ -228,7 +235,8 @@ public class DiagramToolbarOperator {
         
          public String tt="";
        
-        /**
+        
+/**
          * 
          * @param str 
          */
@@ -237,7 +245,8 @@ public class DiagramToolbarOperator {
             tt="";
         }
         
-        /**
+        
+/**
          * 
          * @param arg0 
          * @return 
@@ -255,7 +264,8 @@ public class DiagramToolbarOperator {
             return false;
         }
         
-        /**
+        
+/**
          * 
          * @return 
          */

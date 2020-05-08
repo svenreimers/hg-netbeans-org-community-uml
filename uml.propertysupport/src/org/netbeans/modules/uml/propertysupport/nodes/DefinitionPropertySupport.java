@@ -63,10 +63,8 @@ import org.openide.NotifyDescriptor;
 import org.openide.util.NbBundle;
 import org.openide.windows.TopComponent;
 
-/**
- *
- * @author Trey Spiva
- */
+
+
 public abstract class DefinitionPropertySupport extends PropertySupport
 {
     private IPropertyDefinition mDefinition = null;
@@ -109,7 +107,8 @@ public abstract class DefinitionPropertySupport extends PropertySupport
         mAutoCommit = value;
     }
     
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.openide.nodes.Node.Property#getValue()
     */
     public Object getValue() throws IllegalAccessException, InvocationTargetException
@@ -197,7 +196,8 @@ public abstract class DefinitionPropertySupport extends PropertySupport
         return retVal;
     }
     
-    /**
+    
+/**
      * @return
      */
     public IPropertyDefinition getDefinition()
@@ -205,7 +205,8 @@ public abstract class DefinitionPropertySupport extends PropertySupport
         return mDefinition;
     }
     
-    /**
+    
+/**
      * @param definition
      */
     public void setDefinition(IPropertyDefinition definition)
@@ -213,7 +214,8 @@ public abstract class DefinitionPropertySupport extends PropertySupport
         mDefinition = definition;
     }
     
-    /**
+    
+/**
      * @return
      */
     public IPropertyElement getElement()
@@ -221,7 +223,8 @@ public abstract class DefinitionPropertySupport extends PropertySupport
         return mElement;
     }
     
-    /**
+    
+/**
      * @param element
      */
     public void setElement(IPropertyElement element)
@@ -229,7 +232,8 @@ public abstract class DefinitionPropertySupport extends PropertySupport
         mElement = element;
     }
     
-    /**
+    
+/**
      * @return
      */
     public String getTranslatorValue(String value)
@@ -335,7 +339,8 @@ public abstract class DefinitionPropertySupport extends PropertySupport
         return retVal;
     }
     
-    /**
+    
+/**
      * Translates the value displayed to the user back into the value that
      * needs to be stored to the database.
      *

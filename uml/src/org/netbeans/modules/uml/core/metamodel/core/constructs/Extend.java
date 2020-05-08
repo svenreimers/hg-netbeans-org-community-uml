@@ -57,7 +57,8 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 public class Extend extends DirectedRelationship implements IExtend
 {
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.constructs.IExtend#addExtensionLocation(org.netbeans.modules.uml.core.metamodel.core.constructs.IExtensionPoint)
      */
     public void addExtensionLocation(IExtensionPoint extLoc)
@@ -65,7 +66,8 @@ public class Extend extends DirectedRelationship implements IExtend
         addElementByID( extLoc, "extensionLocation");
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.constructs.IExtend#getBase()
      */
     public IUseCase getBase()
@@ -74,7 +76,8 @@ public class Extend extends DirectedRelationship implements IExtend
         return col.retrieveSingleElementWithAttrID( this, "target", IUseCase.class);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.constructs.IExtend#getCondition()
      */
     public IConstraint getCondition()
@@ -83,7 +86,8 @@ public class Extend extends DirectedRelationship implements IExtend
         return col.retrieveSingleElement( this, "UML:Element.ownedElement/*", IConstraint.class);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.constructs.IExtend#getExtension()
      */
     public IUseCase getExtension()
@@ -91,7 +95,8 @@ public class Extend extends DirectedRelationship implements IExtend
 		return OwnerRetriever.getOwnerByType(this, IUseCase.class);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.constructs.IExtend#getExtensionLocations()
      */
     public ETList <IExtensionPoint> getExtensionLocations()
@@ -101,7 +106,8 @@ public class Extend extends DirectedRelationship implements IExtend
 
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.constructs.IExtend#removeExtensionLocation(org.netbeans.modules.uml.core.metamodel.core.constructs.IExtensionPoint)
      */
     public void removeExtensionLocation(IExtensionPoint extLoc)
@@ -109,7 +115,8 @@ public class Extend extends DirectedRelationship implements IExtend
         removeElementByID(extLoc,"extensionLocation");
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.constructs.IExtend#setBase(org.netbeans.modules.uml.core.metamodel.core.constructs.IUseCase)
      */
     public void setBase(IUseCase useCase)
@@ -140,7 +147,8 @@ public class Extend extends DirectedRelationship implements IExtend
         }
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.constructs.IExtend#setCondition(org.netbeans.modules.uml.core.metamodel.core.foundation.IConstraint)
      */
     public void setCondition(IConstraint constraint)
@@ -148,7 +156,8 @@ public class Extend extends DirectedRelationship implements IExtend
         addElement(constraint);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.constructs.IExtend#setCondition2(java.lang.String)
      */
     public void setCondition2(String conditionBody)
@@ -165,7 +174,8 @@ public class Extend extends DirectedRelationship implements IExtend
 
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.constructs.IExtend#setExtension(org.netbeans.modules.uml.core.metamodel.core.constructs.IUseCase)
      */
     public void setExtension(IUseCase useCase)

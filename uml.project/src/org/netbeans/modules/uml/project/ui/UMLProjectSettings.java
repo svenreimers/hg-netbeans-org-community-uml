@@ -48,14 +48,12 @@ import java.io.File;
 import java.util.prefs.Preferences;
 import org.openide.util.NbPreferences;
 
-/**
- * Storage for some important incrementers and default values
- * @author Mike Frisino
- */
+
+
 public class UMLProjectSettings {
 	
 	// TODO - I haven't exactly figured out how this is meant to be used.
-	// Craig might know from Jato system option work.
+	
 	// I encountered it in the J2SE project code while looking at their
 	// wizard. This is providing some of the support for tracking last used
 	// project number and stuff like that. But I'm not sure if it is working

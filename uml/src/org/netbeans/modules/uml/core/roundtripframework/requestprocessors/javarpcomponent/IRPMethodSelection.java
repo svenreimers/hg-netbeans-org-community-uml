@@ -50,14 +50,16 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 public interface IRPMethodSelection
 {
-	/**
+	
+/**
 	 *
 	 * Allows the user to override a parents operations.  The operations that are
 	 * possible to override are gathered from the element.
 	 */
   public void overrideMethods(IClassifier pElement);
 
-	/**
+	
+/**
 	 * 
 	 * Allows the user to override a parents operations.  The operations that 
 	 * are possible to override are specified.

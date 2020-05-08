@@ -50,10 +50,8 @@ import java.util.Hashtable;
 
 import org.netbeans.modules.uml.core.support.umlsupport.PreventReEntrance;
 
-/**
- * @author sumitabhk
- *
- */
+
+
 public class PreventReEntranceByValue extends PreventReEntrance
 {
 	protected String m_CurrentValue = "";
@@ -97,7 +95,8 @@ public class PreventReEntranceByValue extends PreventReEntrance
 		}
 	}
 
-	/**
+	
+/**
 	 *
 	 * Checks to see if the current value is in a blocking state
 	 *
@@ -124,7 +123,8 @@ public class PreventReEntranceByValue extends PreventReEntrance
 		return isBlocked;
 	}
 	
-	/**
+	
+/**
 	 *
 	 * Removes the value off the reentrance map if the stack
 	 * has completely unwound.

@@ -52,10 +52,8 @@ import org.netbeans.modules.uml.drawingarea.view.CustomizableWidget;
 import org.netbeans.modules.uml.drawingarea.widgets.ResizeToContentMarker;
 import org.openide.util.NbBundle;
 
-/**
- *
- * @author thuy
- */
+
+
 public class JoinForkWidget extends UMLLabelNodeWidget implements ResizeToContentMarker
 {
     public  static final int DEFAULT_WIDTH = 90;

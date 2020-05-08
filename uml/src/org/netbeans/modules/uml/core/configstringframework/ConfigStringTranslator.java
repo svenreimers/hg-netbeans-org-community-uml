@@ -50,10 +50,8 @@ import java.util.ResourceBundle;
 
 import org.netbeans.modules.uml.core.support.umlutils.IPropertyDefinition;
 
-/**
- * @author sumitabhk
- *
- */
+
+
 public class ConfigStringTranslator implements IConfigStringTranslator {
     private static HashMap<String, String> m_Map = null;
 
@@ -67,7 +65,8 @@ public class ConfigStringTranslator implements IConfigStringTranslator {
         this.buildStringMap();
     }
     
-    /**
+    
+/**
      * Translate the passed in PSK_String into a value found in our map, or if there is another
      * translator in the property definition, use it.
      *
@@ -131,7 +130,8 @@ public class ConfigStringTranslator implements IConfigStringTranslator {
         return outStr;
     }
     
-        /* (non-Javadoc)
+        
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.core.configstringframework.IConfigStringTranslator#translateIntoPSK(org.netbeans.modules.uml.core.support.umlutils.IPropertyDefinition, java.lang.String)
          */
     public String translateIntoPSK(IPropertyDefinition pDef, String sNonPSK) {
@@ -708,7 +708,8 @@ public class ConfigStringTranslator implements IConfigStringTranslator {
             addToMap("PSK_UNKNOWN_STEREOTYPE_CREATE_HLP", "IDS_STRING531 ");
             
             // Custom Software Configuration Management (SCM) settings
-            /*
+            
+/*
 //            addToMap("PSK_CUSTOM_PROVIDER",                        "IDS_STRING540 ");
 //            addToMap("PSK_CUSTOM_PROVIDER_HLP",                    "IDS_STRING541 ");
             addToMap("PSK_COMMAND_LINE_PROVIDER",                  "IDS_STRING542 ");

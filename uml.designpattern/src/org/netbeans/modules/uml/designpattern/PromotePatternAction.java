@@ -42,6 +42,7 @@
  * made subject to such option by the copyright holder.
  */
 
+
 /*
  * PromotePatternAction.java
  *
@@ -58,10 +59,8 @@ import org.openide.util.HelpCtx;
 import org.openide.util.NbBundle;
 import org.openide.util.actions.CookieAction;
 
-/**
- *
- * @author Administrator
- */
+
+
 public class PromotePatternAction extends CookieAction
 {
 
@@ -109,7 +108,8 @@ public class PromotePatternAction extends CookieAction
        }
     }
     
-    /**
+    
+/**
 	 * Begin the process to promote the pattern to the design center
 	 *
 	 * @param pDispatch[in]			The pattern to apply

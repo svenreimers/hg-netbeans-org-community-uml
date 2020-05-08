@@ -42,11 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : AttributeAction.java
- * Created on : Sep 17, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.metamodel.common.commonactions;
 
 import org.netbeans.modules.uml.core.metamodel.basic.basicactions.IInputPin;
@@ -54,14 +51,14 @@ import org.netbeans.modules.uml.core.metamodel.basic.basicactions.PrimitiveActio
 import org.netbeans.modules.uml.core.metamodel.core.foundation.ElementCollector;
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttribute;
 
-/**
- * @author Aztec
- */
+
+
 public class AttributeAction extends PrimitiveAction 
                                 implements IAttributeAction
 {
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactions.IAttributeAction#getAttribute()
      */
     public IAttribute getAttribute()
@@ -70,7 +67,8 @@ public class AttributeAction extends PrimitiveAction
         .retrieveSingleElementWithAttrID(this, "attribute", IAttribute.class);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactions.IAttributeAction#getObject()
      */
     public IInputPin getObject()
@@ -79,7 +77,8 @@ public class AttributeAction extends PrimitiveAction
             .retrieveSingleElement(this, "UML:AttributeAction.object/*", IInputPin.class);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactions.IAttributeAction#setAttribute(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttribute)
      */
     public void setAttribute(IAttribute attr)
@@ -87,7 +86,8 @@ public class AttributeAction extends PrimitiveAction
         addElementByID(attr, "attribute");
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactions.IAttributeAction#setObject(org.netbeans.modules.uml.core.metamodel.basic.basicactions.IInputPin)
      */
     public void setObject(IInputPin inputPin)

@@ -122,7 +122,8 @@ public class UMLRelationshipDiscovery implements RelationshipDiscovery
         return retVal;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.diagrams.ICoreRelationshipDiscovery#discoverCommonRelations(boolean)
      */
     public List<IPresentationElement> discoverCommonRelations(Collection<IElement> pNewElementsBeingCreated, 
@@ -412,7 +413,8 @@ public class UMLRelationshipDiscovery implements RelationshipDiscovery
         
         return retVal;
     }
-    /* Discover nested links when the user drops onto the diagram
+    
+/* Discover nested links when the user drops onto the diagram
      *
      * @param bAutoRouteEdges [in] Should we autoroute the edges
      * @param pNewElementsBeingCreated [in] The elements being created dropped onto the diagram
@@ -512,7 +514,8 @@ public class UMLRelationshipDiscovery implements RelationshipDiscovery
         return retVal;
     }
 
-    /**
+    
+/**
      * Used to create a nested link between the argument elements
      *
      * @param fromElement [in] The child element that's owned by pNamespace
@@ -617,7 +620,8 @@ public class UMLRelationshipDiscovery implements RelationshipDiscovery
         return retVal;
     }
     
-    /**
+    
+/**
      * Basically check if the link is already displayed on the diagram.  If the
      * link is already displayed on the diagram, then do not show it again.
      * 
@@ -658,7 +662,8 @@ public class UMLRelationshipDiscovery implements RelationshipDiscovery
         return retVal;
     }
     
-    /**
+    
+/**
      * Checks to see if this link is allowed between these two types
      *
      * @param linkType [in] The type of the link
@@ -786,7 +791,8 @@ public class UMLRelationshipDiscovery implements RelationshipDiscovery
         return retVal;
     }
     
-    /**
+    
+/**
      * Discovers Comments
      *
      * @param pDiscoverOnTheseElements [in] The elements that should be used to search for nested link relations.
@@ -984,7 +990,8 @@ public class UMLRelationshipDiscovery implements RelationshipDiscovery
         return retVal;
     }
     
-    /**
+    
+/**
      * Discover associationclass links when the user drops onto the diagram
      *
      * @param pDiscoverOnTheseElements [in] The elements that should be used to search for associationclass relations.
@@ -1046,7 +1053,8 @@ public class UMLRelationshipDiscovery implements RelationshipDiscovery
         return retVal;
     }
 
-    /**
+    
+/**
      * Discover associationclass links when the user drops onto the diagram
      *
      * @param bAutoRouteEdges [in] Should we autoroute the edges
@@ -1081,7 +1089,8 @@ public class UMLRelationshipDiscovery implements RelationshipDiscovery
 
 
 
-    /**
+    
+/**
      * Discovers PartFacade Links on the collaboration diagram
      *
      * @param pDiscoverOnTheseElements [in] The elements that should be used to search for partfacade link relations.
@@ -1189,7 +1198,8 @@ public class UMLRelationshipDiscovery implements RelationshipDiscovery
 
 
 
-    /**
+    
+/**
      * Discover part facade links when the user drops onto the diagram
      *
      * @param pNewElementsBeingCreated [in] The elements being created dropped onto the diagram

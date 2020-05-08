@@ -56,10 +56,8 @@ import org.netbeans.api.visual.widget.Widget;
 import org.netbeans.modules.uml.diagrams.layouts.sqd.ExSpeificationLayout;
 import org.netbeans.modules.uml.drawingarea.view.UMLEdgeWidget;
 
-/**
- *
- * @author sp153251
- */
+
+
 public class ExecutionSpecificationThinWidget extends Widget {
 
     boolean isWhite=false;
@@ -73,7 +71,8 @@ public class ExecutionSpecificationThinWidget extends Widget {
     }
     
 
-    /**
+    
+/**
      * Calculates a client area for the label.
      * @return the client area
      */
@@ -114,7 +113,8 @@ public class ExecutionSpecificationThinWidget extends Widget {
     }
 
     
-    /**
+    
+/**
      * 
      */
     @Override

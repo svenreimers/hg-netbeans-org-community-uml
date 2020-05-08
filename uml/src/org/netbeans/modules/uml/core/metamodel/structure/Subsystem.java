@@ -58,7 +58,8 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 public class Subsystem extends Component implements ISubsystem
 {
 
-	/**
+	
+/**
 	 * 
 	 */
 	public Subsystem() 
@@ -98,7 +99,8 @@ public class Subsystem extends Component implements ISubsystem
 		return collector.retrieveElementCollectionWithAttrIDs(this,"specificationElement", IPackageableElement.class);
 	}
 	
-	/**
+	
+/**
 	 * Establishes the appropriate XML elements for this UML type.
 	 *
 	 * [in] The document where this element will reside

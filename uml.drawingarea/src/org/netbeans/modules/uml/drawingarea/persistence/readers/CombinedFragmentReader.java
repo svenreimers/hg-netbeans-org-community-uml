@@ -58,10 +58,8 @@ import org.netbeans.modules.uml.drawingarea.util.Util;
 import org.netbeans.modules.uml.drawingarea.view.DesignerScene;
 import org.openide.util.Exceptions;
 
-/**
- *
- * @author jyothi
- */
+
+
 public class CombinedFragmentReader implements GraphNodeReader {
     
      DesignerScene scene;

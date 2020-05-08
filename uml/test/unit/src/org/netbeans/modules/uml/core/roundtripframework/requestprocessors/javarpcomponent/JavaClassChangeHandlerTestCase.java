@@ -44,6 +44,7 @@
 
 
 
+
 /*
  * Created on Nov 18, 2003
  *
@@ -68,10 +69,8 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 import org.netbeans.modules.uml.ui.support.ProductHelper;
 import org.openide.util.NbPreferences;
 
-/**
- * @author aztec
- *
- */
+
+
 public class JavaClassChangeHandlerTestCase extends AbstractUMLTestCase
 {
     IClass clazz = null;
@@ -81,6 +80,7 @@ public class JavaClassChangeHandlerTestCase extends AbstractUMLTestCase
         junit.textui.TestRunner.run(JavaClassChangeHandlerTestCase.class);
     }
     
+
 
 /**
  * CreateClassTestCase
@@ -111,6 +111,7 @@ public class JavaClassChangeHandlerTestCase extends AbstractUMLTestCase
         assertEquals("mNeiman", b.getAssociationEnds().get(0).getName());
     }
     
+
 /**
  * DeleteClassTestCase
  */
@@ -134,6 +135,7 @@ public class JavaClassChangeHandlerTestCase extends AbstractUMLTestCase
     }
     
    
+
 /**
  * NameChangeClassTestCase
  */
@@ -150,7 +152,8 @@ public class JavaClassChangeHandlerTestCase extends AbstractUMLTestCase
         // Nothing to test.
     }
 
-   /**
+   
+/**
     * CreateClassDestructorTestCase
     */	
     public void testCreateDestructor()
@@ -167,7 +170,8 @@ public class JavaClassChangeHandlerTestCase extends AbstractUMLTestCase
         prefs.put ("UML_ADD_DTORS", "PSK_NO");
     }
     
-    /* 
+    
+/* 
      * TransformInterfaceToClassTestCase  
 	 * This tests whether an interface is properly transformed into a class.
      */
@@ -200,7 +204,8 @@ public class JavaClassChangeHandlerTestCase extends AbstractUMLTestCase
     }
     
     
-   /** 
+   
+/** 
      * TransformEnumerationToClassTestCase  
 	 * This tests whether an enum is properly transformed into a class.
      */
@@ -232,7 +237,8 @@ public class JavaClassChangeHandlerTestCase extends AbstractUMLTestCase
         //assertEquals(2,opList.size());
     }
     
-    /* 
+    
+/* 
      * ClassNamespaceChangeTestCase
 	 * This method tests for the movement of a class from one package to another package.
      */
@@ -261,7 +267,8 @@ public class JavaClassChangeHandlerTestCase extends AbstractUMLTestCase
     	assertEquals("TestClass",elems.item(0).toString());
     }
     
-    /* 
+    
+/* 
      * ClassModifierSetTestCase
 	 * Tests the modifier change.
      */

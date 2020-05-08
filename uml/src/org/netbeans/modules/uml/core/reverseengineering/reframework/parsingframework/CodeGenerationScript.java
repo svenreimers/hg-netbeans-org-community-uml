@@ -56,10 +56,8 @@ import org.netbeans.modules.uml.core.support.umlutils.DataFormatter;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 import org.netbeans.modules.uml.core.support.umlutils.IDataFormatter;
 
-/**
- * @author sumitabhk
- *
- */
+
+
 public class CodeGenerationScript implements ICodeGenerationScript
 {
     String          m_Name;
@@ -67,7 +65,8 @@ public class CodeGenerationScript implements ICodeGenerationScript
     IDataFormatter  m_pDataFormatter;
     ILanguage       m_rawLanguage;
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ICodeGenerationScript#getName()
 	 */
 	public String getName()
@@ -75,7 +74,8 @@ public class CodeGenerationScript implements ICodeGenerationScript
 		return m_Name;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ICodeGenerationScript#setName(java.lang.String)
 	 */
 	public void setName(String name)
@@ -84,7 +84,8 @@ public class CodeGenerationScript implements ICodeGenerationScript
         m_Name = name;		
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ICodeGenerationScript#getFile()
 	 */
 	public String getFile()
@@ -92,7 +93,8 @@ public class CodeGenerationScript implements ICodeGenerationScript
 		return m_ScriptFile;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ICodeGenerationScript#setFile(java.lang.String)
 	 */
 	public void setFile(String fileName)
@@ -101,7 +103,8 @@ public class CodeGenerationScript implements ICodeGenerationScript
         m_ScriptFile = fileName;		
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ICodeGenerationScript#execute(java.lang.Object)
 	 */
 	public String execute(IElement pElement)
@@ -145,20 +148,21 @@ public class CodeGenerationScript implements ICodeGenerationScript
         {
             // Looking for an XSLT script
 
-            // See if we need to create a Data Formatter.
+            
             if( m_pDataFormatter == null)
             {
                 m_pDataFormatter = new DataFormatter();
                 // ... and initialize it
                 m_pDataFormatter.addScript(m_Name, m_ScriptFile);                          
             }
-            // We've already created a data formatter and initialized it.
+            
             return m_pDataFormatter.formatElement(pElement, m_Name);                       }
         }
 		return null;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ICodeGenerationScript#getLanguage()
 	 */
 	public ILanguage getLanguage()
@@ -166,7 +170,8 @@ public class CodeGenerationScript implements ICodeGenerationScript
 		return m_rawLanguage;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ICodeGenerationScript#setLanguage(org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ILanguage)
 	 */
 	public void setLanguage(ILanguage language)

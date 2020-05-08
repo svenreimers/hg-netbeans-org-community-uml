@@ -53,17 +53,16 @@ import org.netbeans.modules.uml.core.eventframework.EventManager;
 import org.netbeans.modules.uml.core.eventframework.IEventPayload;
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElement;
 import org.netbeans.modules.uml.core.support.umlsupport.IResultCell;
-/**
- * @author sumitabhk
- *
- */
+
+
 public class DynamicsEventDispatcher extends EventDispatcher 
 	implements IDynamicsEventDispatcher
 {
     private EventManager<ILifelineModifiedEventsSink> m_LifelineEvents =
                     new EventManager<ILifelineModifiedEventsSink>();
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.dynamics.IDynamicsEventDispatcher#registerForLifelineModifiedEvents(org.netbeans.modules.uml.core.metamodel.dynamics.ILifelineModifiedEventsSink)
 	 */
     public void registerForLifelineModifiedEvents(
@@ -72,7 +71,8 @@ public class DynamicsEventDispatcher extends EventDispatcher
         m_LifelineEvents.addListener(handler, null);
     }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.metamodel.dynamics.IDynamicsEventDispatcher#revokeLifelineModifiedSink(org.netbeans.modules.uml.core.metamodel.dynamics.ILifelineModifiedEventsSink)
     */
     public void revokeLifelineModifiedSink(ILifelineModifiedEventsSink handler)
@@ -80,7 +80,8 @@ public class DynamicsEventDispatcher extends EventDispatcher
         m_LifelineEvents.removeListener(handler);
     }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.metamodel.dynamics.IDynamicsEventDispatcher#firePreChangeRepresentingClassifier(org.netbeans.modules.uml.core.metamodel.dynamics.ILifeline, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElement, org.netbeans.modules.uml.core.eventframework.IEventPayload)
     */
    public boolean firePreChangeRepresentingClassifier(ILifeline pLifeline, ITypedElement pRepresents, IEventPayload payload)
@@ -110,7 +111,8 @@ public class DynamicsEventDispatcher extends EventDispatcher
        return proceed; 
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.metamodel.dynamics.IDynamicsEventDispatcher#fireChangeRepresentingClassifier(org.netbeans.modules.uml.core.metamodel.dynamics.ILifeline, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElement, org.netbeans.modules.uml.core.eventframework.IEventPayload)
     */
    public void fireChangeRepresentingClassifier(ILifeline pLifeline, ITypedElement pRepresents, IEventPayload payload)

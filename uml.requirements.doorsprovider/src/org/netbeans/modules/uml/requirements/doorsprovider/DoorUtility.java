@@ -42,6 +42,7 @@
  * made subject to such option by the copyright holder.
  */
 
+
 /*
  * DoorUtility.java
  *
@@ -53,10 +54,8 @@ package org.netbeans.modules.uml.requirements.doorsprovider;
 import org.netbeans.modules.uml.core.requirementsframework.RequirementsException;
 import org.netbeans.modules.uml.ui.support.helpers.ETSmartWaitCursor;
 
-/**
- *
- * @author  Trey Spiva
- */
+
+
 public class DoorUtility
 {
    private static boolean m_IsInitialized = false;

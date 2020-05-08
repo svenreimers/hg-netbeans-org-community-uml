@@ -42,6 +42,7 @@
  * made subject to such option by the copyright holder.
  */
 
+
 /*
  * Created on Oct 30, 2003
  *
@@ -55,10 +56,8 @@ import org.netbeans.modules.uml.ui.support.SimpleQuestionDialogResultKind;
 import org.netbeans.modules.uml.ui.support.commondialogs.IQuestionDialog;
 import org.netbeans.modules.uml.ui.swing.commondialogs.SwingQuestionDialogImpl;
 
-/**
- * @author aztec
- *
- */
+
+
 public class ConditionalHandlerQuery extends HandlerQuery implements IConditionalHandlerQuery
 {
 	private String m_CheckText;
@@ -69,7 +68,7 @@ public class ConditionalHandlerQuery extends HandlerQuery implements IConditiona
 	{
 		super(queryKey, textID, titleID, defaultAnswer, iconType, silent, persist);
 		
-		//Aztec: The string should be loaded from a resource bundle 
+		
 		//m_CheckText = checkTextID;
 	}
 	

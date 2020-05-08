@@ -51,7 +51,8 @@ public class ElementVerificationException extends UMLCommonException{
     public final int DEFAULT_ID=-1;
     private int id=DEFAULT_ID;
     
-    /**
+    
+/**
      * 
      * @param message 
      */
@@ -60,7 +61,8 @@ public class ElementVerificationException extends UMLCommonException{
         super(message);
     }
     //
-    /**
+    
+/**
      * 
      * @param message 
      * @param id 
@@ -71,7 +73,8 @@ public class ElementVerificationException extends UMLCommonException{
         this.id=id;
     }
     
-    /**
+    
+/**
      * Creates a new instance of VervicationException
      * @param message 
      * @param cause 
@@ -80,7 +83,8 @@ public class ElementVerificationException extends UMLCommonException{
         super(message, cause);
     }
     
-    /**
+    
+/**
      * 
      * @param cause 
      */
@@ -88,7 +92,8 @@ public class ElementVerificationException extends UMLCommonException{
         super("Unexpected verification failure", cause);
     }
     
-    /**
+    
+/**
      * 
      * @return 
      */

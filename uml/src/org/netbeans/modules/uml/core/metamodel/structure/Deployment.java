@@ -57,7 +57,8 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 public class Deployment extends DirectedRelationship implements IDeployment 
 {
 
-	/**
+	
+/**
 	 * 
 	 */
 	public Deployment() 
@@ -142,7 +143,8 @@ public class Deployment extends DirectedRelationship implements IDeployment
 						);
 	}
 	
-	/**
+	
+/**
 	 * Establishes the appropriate XML elements for this UML type.
 	 *
 	 * [in] The document where this element will reside

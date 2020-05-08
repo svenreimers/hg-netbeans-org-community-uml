@@ -49,10 +49,8 @@ import org.netbeans.api.visual.widget.Scene;
 import org.netbeans.modules.uml.drawingarea.LabelManager;
 import org.netbeans.modules.uml.drawingarea.actions.WidgetContext;
 
-/**
- *
- * @author Thuy
- */
+
+
 public class ActivityEdgeConnector extends AbstractUMLConnectionWidget
 {
     public ActivityEdgeConnector(Scene scene)

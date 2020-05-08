@@ -50,27 +50,32 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 public interface IEventFrameworkEventsSink
 {
-	/**
+	
+/**
 	 * Fired before a new event context is pushed on the dispatcher.
 	*/
 	public void onPreEventContextPushed( IEventContext pContext, IResultCell pCell );
 
-	/**
+	
+/**
 	 * Fired after a new event context is pushed on the dispatcher.
 	*/
 	public void onEventContextPushed( IEventContext pContext, IResultCell pCell );
 
-	/**
+	
+/**
 	 * Fired before an event context is popped off the dispatcher.
 	*/
 	public void onPreEventContextPopped( IEventContext pContext, IResultCell pCell );
 
-	/**
+	
+/**
 	 * Fired after an event context is popped off the dispatcher.
 	*/
 	public void onEventContextPopped( IEventContext pContext, IResultCell pCell );
 
-	/**
+	
+/**
 	 * Fired after it has been discovered that an event dispatch process has been aborted.
 	*/
 	public void onEventDispatchCancelled( ETList<Object> pListeners, Object listenerWhoCancelled, IResultCell pCell );

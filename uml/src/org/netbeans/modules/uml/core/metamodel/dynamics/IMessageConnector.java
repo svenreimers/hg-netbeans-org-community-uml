@@ -52,63 +52,72 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 public interface IMessageConnector extends IConnector
 {
-    /**
+    
+/**
      * Retrieves the destination lifeline this connector is connected to.
      *
      * @return The lifeline
      */
     public ILifeline getToLifeline();
 
-    /**
+    
+/**
      * Sets the destination lifeline this connector is connected to.
      *
      * @param lifeline The lifeline
      */
     public void setToLifeline(ILifeline lifeline);
     
-    /**
+    
+/**
      * Retrieves the lifeline that is the source of this connector.
      * 
      * @return The lifeline
      */
     public ILifeline getFromLifeline();
     
-    /**
+    
+/**
      * Sets the lifeline that is the source of this connector.
      * 
      * @param lifeline The lifeline
      */
     public void setFromLifeline(ILifeline lifeline);
     
-    /**
+    
+/**
      * Retrieves the lifelines on the ends of this connector
      *
      * @return The lifeline collection
      */
     public ETList<ILifeline> getConnectedLifelines();
 
-    /**
+    
+/**
      * Retrieves the messages associated with this connector.
      *
      * @return The collection of messages
      */
     public ETList<IMessage> getMessages();
 
-    /**
+    
+/**
      * Removes the given message from this connector's list of messages.
      *
      * @param message The message to remove.
      */
     public void removeMessage(IMessage message);
     
-    /**
+    
+/**
      * Adds the given message to this connector's list of messages.
      *
      * @param message The message to add.
      */
     public void addMessage(IMessage message);
     
-    /**
+    
+/**
      * Creates a new IMessage, placing it on the IInteraction that owns this 
      * connector, then associates the IOperation with the IMessage
      *

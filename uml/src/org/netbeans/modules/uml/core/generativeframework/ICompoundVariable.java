@@ -42,16 +42,12 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : ICompoundVariable.java
- * Created on : Oct 28, 2003
- * Author     : aztec
- */
+
+
 package org.netbeans.modules.uml.core.generativeframework;
 
-/**
- * @author aztec
- */
+
+
 public interface ICompoundVariable extends IExpansionVariable
 {
 

@@ -42,6 +42,7 @@
  * made subject to such option by the copyright holder.
  */
 
+
 /*
  * IActionProvider.java
  *
@@ -56,15 +57,12 @@ package org.netbeans.modules.uml.designpattern;
 
 import javax.swing.Action;
 
-/**
- * The IActionProvider interface allows Design Center addins to supply
- * actions that should appear on the context menu of the add in.
- *
- * @author Trey Spiva
- */
+
+
 public interface IActionProvider
 {
-    /**
+    
+/**
      * Retrieve the actions to used in the context menu.
      */
     public Action[] getActions();

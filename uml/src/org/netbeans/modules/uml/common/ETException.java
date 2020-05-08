@@ -46,6 +46,7 @@ package org.netbeans.modules.uml.common;
 
 import java.io.*;
 
+
 /**
  * General Exception class for errors thrown in the application.
  */
@@ -74,7 +75,8 @@ public class ETException extends Exception
     iErrorID = ID.getID();
   }
 
- /** Constructor.  Creates an exception with the specified message ID.
+ 
+/** Constructor.  Creates an exception with the specified message ID.
      The occurences of %x are replaced by the given parameters.*/
   public ETException (MsgID ID, Object p1)
   {
@@ -82,7 +84,8 @@ public class ETException extends Exception
     iErrorID = ID.getID();
   }
 
- /** Constructor.  Creates an exception with the specified message ID.
+ 
+/** Constructor.  Creates an exception with the specified message ID.
      The occurences of %x are replaced by the given parameters.*/
   public ETException (MsgID ID, Object p1, Object p2)
   {
@@ -90,7 +93,8 @@ public class ETException extends Exception
     iErrorID = ID.getID();
   }
 
- /** Constructor.  Creates an exception with the specified message ID.
+ 
+/** Constructor.  Creates an exception with the specified message ID.
      The occurences of %x are replaced by the given parameters.*/
   public ETException (MsgID ID, Object p1, Object p2, Object p3)
   {
@@ -98,7 +102,8 @@ public class ETException extends Exception
     iErrorID = ID.getID();
   }
 
- /** Constructor.  Creates an exception with the specified message ID.
+ 
+/** Constructor.  Creates an exception with the specified message ID.
      The occurences of %x are replaced by the given parameters.*/
   public ETException (MsgID ID, Object p1, Object p2, Object p3, Object p4)
   {
@@ -106,7 +111,8 @@ public class ETException extends Exception
     iErrorID = ID.getID();
   }
 
- /** Constructor.  Creates an exception with the specified message ID.
+ 
+/** Constructor.  Creates an exception with the specified message ID.
      The occurences of %x are replaced by the given parameters.*/
   public ETException (MsgID ID, Object[] params)
   {
@@ -114,14 +120,16 @@ public class ETException extends Exception
     iErrorID = ID.getID();
   }
 
- /** This method gets the message ID for the current ETException object.
+ 
+/** This method gets the message ID for the current ETException object.
      @return the ID representing the message that corresponds to the ETException object. */
   public String getErrorID() { return iErrorID; }
 
  /** Overrides the error ID for this exception. */
   protected void setErrorID(String ID) { iErrorID = ID; }
 
- /** Local independent error ID.
+ 
+/** Local independent error ID.
      @serial */
   private String iErrorID;
 
@@ -155,7 +163,8 @@ public class ETException extends Exception
 	  }
   }
 
- /** Local dependent message.
+ 
+/** Local dependent message.
      @serial */
   private String iMessage = "";
   private Throwable iException;

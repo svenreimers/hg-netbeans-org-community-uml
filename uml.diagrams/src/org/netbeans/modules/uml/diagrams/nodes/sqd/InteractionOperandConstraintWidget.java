@@ -51,10 +51,8 @@ import org.netbeans.modules.uml.diagrams.nodes.MovableLabelWidget;
 import org.netbeans.modules.uml.drawingarea.persistence.NodeWriter;
 import org.netbeans.modules.uml.drawingarea.persistence.PersistenceUtil;
 
-/**
- *
- * @author sp153251
- */
+
+
 public class InteractionOperandConstraintWidget extends FeatureWidget implements PropertyChangeListener {
     private IInteractionConstraint constraint;
     private ExpressionWidget expression;

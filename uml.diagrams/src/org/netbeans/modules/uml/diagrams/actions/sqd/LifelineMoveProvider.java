@@ -50,10 +50,8 @@ import org.netbeans.modules.uml.drawingarea.SQDDiagramTopComponent;
 import org.netbeans.modules.uml.drawingarea.ui.trackbar.JTrackBar;
 import org.netbeans.modules.uml.drawingarea.view.DesignerScene;
 
-/**
- * lifeline provider which handle movement by external provider and additionally handle cars on track bar
- * @author sp153251
- */
+
+
 public class LifelineMoveProvider implements MoveProvider {
 
                 private JTrackBar tb;

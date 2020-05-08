@@ -83,11 +83,8 @@ import org.netbeans.test.umllib.testcases.UMLTestCase;
 import org.netbeans.test.umllib.util.*;
 
 
-/**
- *
- * @author psb
- * @spec uml/DesignPatterns
- */
+
+
 public class DesignCenter extends UMLTestCase {
     
     //some system properties
@@ -192,7 +189,8 @@ public class DesignCenter extends UMLTestCase {
 
     }
    
-    /**
+    
+/**
      * @caseblock Design Center
      * @usecase Open Design Center via Menu
      */
@@ -203,7 +201,8 @@ public class DesignCenter extends UMLTestCase {
         new TopComponentOperator(LabelsAndTitles.DESIGN_CENTER_TITLE);
         makeScreen=false;
     }
-    /**
+    
+/**
      * @caseblock Design Center
      * @usecase Open Design Center via Shortcut
      */
@@ -215,7 +214,8 @@ public class DesignCenter extends UMLTestCase {
         makeScreen=false;
     }
 
-    /**
+    
+/**
      * @caseblock Design Center
      * @usecase Close Design Center with Menu
      */
@@ -243,7 +243,8 @@ public class DesignCenter extends UMLTestCase {
         }
         makeScreen=false;
    }
-    /**
+    
+/**
      * @caseblock Design Center
      * @usecase Close Design Center with Shortcut
      */
@@ -271,7 +272,8 @@ public class DesignCenter extends UMLTestCase {
         }
         makeScreen=false;
    }
-    /**
+    
+/**
      * @caseblock Design Center
      * @usecase Close Design Center with cross
      */
@@ -299,7 +301,8 @@ public class DesignCenter extends UMLTestCase {
         }
         makeScreen=false;
    }
-     /**
+     
+/**
      * @caseblock Design Center
      * @usecase Maximize
      */
@@ -319,7 +322,8 @@ public class DesignCenter extends UMLTestCase {
         assertFalse("Design Center wasn't maximized, new size: "+newW+","+newH+"; old: "+oldW+","+oldH, newW<=oldW && newH<=oldH);
         makeScreen=false;
     }
-     /**
+     
+/**
      * @caseblock Design Center
      * @usecase Minimize
      */
@@ -344,7 +348,8 @@ public class DesignCenter extends UMLTestCase {
         assertTrue("Design Center wasn't minimized, new size2: "+newOldW+","+newOldH+"; new size: "+newW+","+newH+"; old: "+oldW+","+oldH, newOldW<newW && newOldH<=newH);
         makeScreen=false;
     }
-     /**
+     
+/**
      * @caseblock Design Center
      * @usecase Base tree structure
      */
@@ -365,7 +370,8 @@ public class DesignCenter extends UMLTestCase {
         tr.findPath("DesignPatternCatalog|GoF Design Patterns");
         makeScreen=false;
    }
-     /**
+     
+/**
      * @caseblock Design Center
      * @usecase Insert Project Into Workspace
      */
@@ -417,7 +423,8 @@ public class DesignCenter extends UMLTestCase {
         tr.findPath("DesignPatternCatalog|ForInsert|pkg|classInsert");
         makeScreen=false;
    }
-    /**
+    
+/**
      * @caseblock Design Center
      * @usecase Remove Project from Design Center
      */
@@ -477,7 +484,8 @@ public class DesignCenter extends UMLTestCase {
         }
         makeScreen=false;
   }
-    /**
+    
+/**
      * @caseblock Design Center
      * @usecase Add Project to Design Center
      */
@@ -513,112 +521,18 @@ public class DesignCenter extends UMLTestCase {
 //        tr.findPath("DesignPatternCatalog|"+"projectForDelete"+"|"+"diagram");
         makeScreen=false;
   }
-    /**
+    
+/**
      * @caseblock Design Center
      * @usecase Rename Project in Design Center with Shortcut
      */ 
     
-    /* F2 does not work in 6.0
-    public void testRenameProjectWShortcut() {
-        lastTestCase=getCurrentTestMethodName();
-        Action open=new Action(desCMP,null);
-        open.performMenu();
-        TopComponentOperator dc=null;
-        dc=new TopComponentOperator(LabelsAndTitles.DESIGN_CENTER_TITLE);
-        //
-        JTreeOperator tr=new JTreeOperator(dc);
-        //
-        assertTrue("There is no Design Center root node or invisible, current root:"+tr.getRoot(),"Design Center".equals(tr.getRoot().toString()) && tr.isRootVisible());
-        tr.findPath("DesignPatternCatalog");
-        new JPopupMenuOperator(tr.callPopupOnPath(tr.findPath("DesignPatternCatalog"))).pushMenuNoBlock("New|Project...");
-        JDialogOperator nw=new JDialogOperator(org.netbeans.test.uml.designpatterns.utils.Utils.createDesignCenterProjectTitle);
-        JLabelOperator pn=new JLabelOperator(nw,org.netbeans.test.uml.designpatterns.utils.Utils.createDesignCenterProjectNameLabel);
-        JLabelOperator lo=new JLabelOperator(nw,org.netbeans.test.uml.designpatterns.utils.Utils.createDesignCenterProjectLocationLabel);
-        JTextFieldOperator pnT=new JTextFieldOperator((JTextField)(pn.getLabelFor()));
-        JTextFieldOperator loT=new JTextFieldOperator((JTextField)(lo.getLabelFor()));
-        pnT.typeText("projectForRenameS");
-         try{Thread.sleep(100);}catch(Exception ex){}
-        loT.clearText();
-        loT.typeText(workdir);
-        new JButtonOperator(nw,"OK").push();
-        nw.waitClosed();
-        new EventTool().waitNoEvent(500);        
-//CAN'T REPRODUCE IN TESTS
-//        nw=new JDialogOperator("Create New Diagram");
-//        new JTextFieldOperator(nw).typeText("diagram");
-//        new JButtonOperator(nw,"OK").push();
-        tr.findPath("DesignPatternCatalog|"+"projectForRenameS");
-//        tr.findPath("DesignPatternCatalog|"+"projectForDelete"+"|"+"diagram");
-        tr.selectPath(tr.findPath("DesignPatternCatalog|"+"projectForRenameS"));
-        //setup separate logs
-        String OUT_LOG_FILE=workdir+"/user/"+this.getClass().getName()+"/"+lastTestCase+"/psb_out.txt";
-        String ERR_LOG_FILE=workdir+"/user/"+this.getClass().getName()+"/"+lastTestCase+"/psb_err.txt";
-        TestOut defTestOut=JemmyProperties.getCurrentOutput();
-        try
-        {
-            PrintStream myOut = new PrintStream(new FileOutputStream(OUT_LOG_FILE), true);
-            PrintStream myErr = new PrintStream(new FileOutputStream(ERR_LOG_FILE), true);
-            JemmyProperties.setCurrentOutput(new TestOut(System.in, myOut, myErr));
-        }
-        catch(Exception ex)
-        {
-            
-        }
-       //
-        tr.pushKey(KeyEvent.VK_F2);
-        //try dialogs
-         long oldwait=JemmyProperties.getCurrentTimeout("ComponentOperator.WaitComponentTimeout");
-        try
-        {
-            JemmyProperties.setCurrentTimeout("ComponentOperator.WaitComponentTimeout",5000);
-            JDialogOperator ex=new JDialogOperator("Unexpected Exception");
-            assertFalse("NPE on attempt to rename project in design center(known but isn't filed yet)",new JLabelOperator(ex).getText().indexOf("java.lang.NullPointerException")>-1);
-            fail("Unexpected exception on attempt to rename project in design center");
-        }
-        catch(Exception ex)
-        {
-        }
-        finally
-        {
-             JemmyProperties.setCurrentTimeout("ComponentOperator.WaitComponentTimeout",oldwait);
-        }
-        //restore default logs
-         JemmyProperties.setCurrentOutput(defTestOut);
-        //try jemmy logs
-        try
-        {
-            BufferedReader myIn = new BufferedReader(new FileReader(ERR_LOG_FILE));
-            String line;
-            do {
-                line = myIn.readLine();
-                if (line!=null && line.indexOf("java.lang.NullPointerException")>-1){
-                    fail(78872, "NPE on attempt to rename project in design center, isPathEditable="+tr.isPathEditable(tr.getSelectionPath()));
-                }
-                else if (line!=null && line.indexOf("Exception")>-1)
-                {
-                    fail("Unexpected exception on attempt to rename project in design center");
-                }
-            } while (line != null);
-        }
-        catch(Exception ex)
-        {
-            
-        }
-        try {
-            //
-            Dumper.dumpAll(workdir+"/user/" + getClass().getName()+"/fulldump_"+new Date().getTime()+".xml");
-        } catch (FileNotFoundException ex) {
-            ex.printStackTrace();
-        }
-        //
-        fail("tests incomplete (there was blocking Defect)");
-        //
-        makeScreen=false;
-  }
-  */
+    
+
     
     
-    /**
+    
+/**
      * @caseblock Design Center
      * @usecase Rename Project in Design Center with Shortcut
      */

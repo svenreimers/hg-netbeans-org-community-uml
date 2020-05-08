@@ -42,6 +42,7 @@
  * made subject to such option by the copyright holder.
  */
 
+
 /*
  * Created on Nov 5, 2003
  *
@@ -50,10 +51,8 @@ package org.netbeans.modules.uml.core.roundtripframework;
 
 import org.netbeans.modules.uml.core.metamodel.core.foundation.IElement;
 
-/**
- * @author aztec
- *
- */
+
+
 public interface IElementDuplicatedChangeRequest extends IChangeRequest
 {
 	public IElement getDuplicatedElement();

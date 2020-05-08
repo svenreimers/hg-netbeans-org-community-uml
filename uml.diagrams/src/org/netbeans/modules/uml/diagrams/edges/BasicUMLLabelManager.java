@@ -65,12 +65,8 @@ import org.netbeans.modules.uml.drawingarea.view.UMLLabelWidget;
 import org.openide.util.NbBundle;
 
 
-/**
- * The BasicUMLLabelManager provides the labels that all UML connection 
- * widget should provide.
- * 
- * @author treyspiva
- */
+
+
 public class BasicUMLLabelManager extends AbstractLabelManager
 {
     private String keywords;
@@ -139,7 +135,8 @@ public class BasicUMLLabelManager extends AbstractLabelManager
     //////////////////////////////////////////////////////////////////
     // ProepertyChangeListener Implementation
     
-    /**
+    
+/**
      * Listen to property changes that occur to the model.  If one of the
      * standard properties are modified, the label is automatically updated.
      * 
@@ -252,7 +249,8 @@ public class BasicUMLLabelManager extends AbstractLabelManager
     //////////////////////////////////////////////////////////////////
     // Helper Methods
 
-    /**
+    
+/**
      * If the name property is set, the name label will be shown.
      * 
      * @param element the associated model element.
@@ -266,7 +264,8 @@ public class BasicUMLLabelManager extends AbstractLabelManager
             showLabel(NAME);
         }
     }
-    /**
+    
+/**
      * If the stereotype property is set, the name label will be shown.
      * 
      * @param element the associated model element.
@@ -281,7 +280,8 @@ public class BasicUMLLabelManager extends AbstractLabelManager
         }
     }
 
-    /**
+    
+/**
      * Updates a label.
      * 
      * @param type the type of label.

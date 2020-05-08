@@ -48,13 +48,15 @@ package org.netbeans.modules.uml.core.coreapplication;
 
 public interface IProductDescriptor
 {
-	/**
+	
+/**
 	 * Retrieves the process ID of the process that is running the core product.
 	*/
 	public int getProcessID();
 	public void setProcessID(int id);
 
-	/**
+	
+/**
 	 * Retrieves the core product.
 	*/
 	public ICoreProduct getCoreProduct();

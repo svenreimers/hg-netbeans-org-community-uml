@@ -50,10 +50,8 @@ import javax.swing.DefaultComboBoxModel;
 import org.openide.util.NbBundle;
 
 
-/**
- * Support class for uml common ui (wizard and customizer)
- * @author mike frisino
- */
+
+
 public class CommonUiSupport
 {
 	
@@ -70,7 +68,8 @@ public class CommonUiSupport
 	{
 	}
 	
-	/**
+	
+/**
 	 * Creates {@link ComboBoxModel} of modeling modes
 	 * @param modelingModeComboBoxModel the platform's model used for listenning
 	 * @param initialValue initial source level value
@@ -126,7 +125,8 @@ public class CommonUiSupport
 		return retVal;
 	}
 	
-	/**
+	
+/**
 	 * Creates {@link ComboBoxModel} of modeling modes
 	 * @param modelingModeComboBoxModel the platform's model used for listenning
 	 * @param initialValue initial source level value

@@ -55,10 +55,8 @@ import org.openide.util.NbBundle;
 import org.openide.windows.TopComponent;
 import org.openide.windows.WindowManager;
 
-/**
- *
- * @author Jyothi
- */
+
+
 public class DiagramNavigatorPanel implements NavigatorPanel, LookupListener
 {
 

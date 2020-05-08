@@ -42,20 +42,17 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : ParseFacility.java
- * Created on : Oct 23, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework;
 
-/**
- * @author Aztec
- */
+
+
 public class ParseFacility extends Facility implements IParseFacility
 {
     String m_LanguageName;
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.IParseFacility#getLanguage()
      */
     public String getLanguage()
@@ -63,7 +60,8 @@ public class ParseFacility extends Facility implements IParseFacility
         return m_LanguageName;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.IParseFacility#processStreamByType(java.lang.String, java.lang.String, int)
      */
     public void processStreamByType(
@@ -75,7 +73,8 @@ public class ParseFacility extends Facility implements IParseFacility
 
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.IParseFacility#processStreamFromFile(java.lang.String, org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ILanguageParserSettings)
      */
     public void processStreamFromFile(
@@ -86,7 +85,8 @@ public class ParseFacility extends Facility implements IParseFacility
 
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.IParseFacility#processStreamFromFile(java.lang.String)
      */
     public void processStreamFromFile(String fileName)
@@ -95,7 +95,8 @@ public class ParseFacility extends Facility implements IParseFacility
 
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.IParseFacility#setLanguage(java.lang.String)
      */
     public void setLanguage(String language)

@@ -67,13 +67,8 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 public class REClassLoader implements IREClassLoader
 {
 
-    /**
-     * Loads a class into memory and returns the class details.  The class that is to be 
-     * retrieved is specified by the fully qualified name of the class.
-     *
-     * @param className [in] The name of the class to load.
-     * @param data [out] The class information.
-     */
+    
+
     public IREClass loadClass(String className)
     {
         if (className == null || className.length() == 0) return null;
@@ -90,14 +85,8 @@ public class REClassLoader implements IREClassLoader
         return c;
     }
 
-    /**
-     * Loads a class into memory and returns the class details.  If the class is not found 
-     * the depend include path is searched.
-     * 
-     * @param className [in] The name of the class to load.
-     * @param thisPtr [in] The class information that contains the dependency data.
-     * @param data [out] The class information.
-     */
+    
+
     public IREClass loadClass(String className, IREClass thisC)
     {
         if (className == null || className.length() == 0) return null;
@@ -118,7 +107,8 @@ public class REClassLoader implements IREClassLoader
         return c;
     }
 
-    /**
+    
+/**
      * Retrieve all the classes that have been loaded by the class loader.
      * 
      * @param classes [out] A collection of all classes.
@@ -137,7 +127,8 @@ public class REClassLoader implements IREClassLoader
         return cs;
     }
 
-    /**
+    
+/**
      * Load all classes in a source file and retrieve the details about a specific class declaration.
      * 
      * @param filename [in] The file to be loaded.
@@ -153,7 +144,8 @@ public class REClassLoader implements IREClassLoader
         return lookupClass(className);
     }
 
-    /**
+    
+/**
      * Load all the classes in a file and return the details about all classes contained in the file.
      * 
      * @param filename [in] The file to be loaded.
@@ -169,7 +161,8 @@ public class REClassLoader implements IREClassLoader
         return retrieveClassesFromFileInfo(fi);
     }
 
-    /**
+    
+/**
      * Load all the classes in the source file.
      * 
      * @param filename [in] The file to load.
@@ -208,7 +201,8 @@ public class REClassLoader implements IREClassLoader
         else
             return null ;
     }
-    /**
+    
+/**
      * Gets the class file locator for the class loader.
      * 
      * @param pVal [out] The class loader.
@@ -218,7 +212,8 @@ public class REClassLoader implements IREClassLoader
         return m_Locator;
     }
 
-    /**
+    
+/**
      * Sets the class file locator for the class loader.
      * 
      * @param pVal [in] The class loader.
@@ -228,7 +223,8 @@ public class REClassLoader implements IREClassLoader
         m_Locator = pVal;
     }
     
-    /**
+    
+/**
      * Retrieves the parser for the file that is to be loaded.
      * 
      * @param filename [in] The name of the file.
@@ -239,7 +235,8 @@ public class REClassLoader implements IREClassLoader
         return new LanguageFacilityFactory().getUMLParser();
     }
     
-    /**
+    
+/**
      * Add the file information and all of its classes to the class loader for quick lookup.
      * 
      * @param filename [in] The file that is being loaded.
@@ -257,7 +254,8 @@ public class REClassLoader implements IREClassLoader
         }
     }
     
-    /**
+    
+/**
      * Add the class information to the class loader for quick look up later.
      * Each class (including inner classes) will be added collecctions.
      * 
@@ -272,7 +270,8 @@ public class REClassLoader implements IREClassLoader
             addClassInformation(fi.getClass(i));
     }
     
-    /**
+    
+/**
      * Adds the class information to the map that manages the class information
      * references.  All inner classes will also be managed as well.
      * 
@@ -299,7 +298,8 @@ public class REClassLoader implements IREClassLoader
         }
     }
     
-    /**
+    
+/**
      * Retrieves all of the classes found in a specific source file.
      * @param pInfo [in] The file information.
      * @param result [out] The class found in the file.
@@ -323,7 +323,8 @@ public class REClassLoader implements IREClassLoader
         return m_FileInfoMap.get(filename);
     }
     
-    /**
+    
+/**
      * Retrieves the file information structure that contains the specified class.
      * 
      * @param data [in] The class information.
@@ -339,7 +340,8 @@ public class REClassLoader implements IREClassLoader
     // Class Lookup Mehtods
     // *********************************************************************
 
-    /**
+    
+/**
      * Checks the map of found classes to see if the specified class 
      * has been located.
      *
@@ -354,7 +356,8 @@ public class REClassLoader implements IREClassLoader
         return m_ClassMap.get(name);
     }
     
-    /**
+    
+/**
      * Checks the map of found classes to see if the specified class 
      * has been located.  The import statments are also searched when
      * try to find the class.
@@ -402,7 +405,8 @@ public class REClassLoader implements IREClassLoader
         return data;
     }
     
-    /**
+    
+/**
      * Checks if the desired class has been found in the same package as the <i>this</i>
      * class.  LookupInPacakge will only check the lookup table.  LookupInPacakge 
      * does not check the file locator.
@@ -425,7 +429,8 @@ public class REClassLoader implements IREClassLoader
         return null;
     }
     
-    /**
+    
+/**
      * Checks if the class exist in the same package as the this class.
      *
      * @param name [in] The name of the class.
@@ -467,7 +472,8 @@ public class REClassLoader implements IREClassLoader
         return data;
     }
     
-    /**
+    
+/**
      * Adds a new library to the classloader.  The library will be used to find out the
      * details about a class the is in a library.
      * 
@@ -479,7 +485,8 @@ public class REClassLoader implements IREClassLoader
         m_Libraries.add(lib);
     }
     
-    /**
+    
+/**
      * Checks if any of the libraries contain a class that mathes the class name.  All of
      * the dependenies will be checked.
      * 
@@ -533,7 +540,8 @@ public class REClassLoader implements IREClassLoader
         return c;
     }
     
-    /**
+    
+/**
      * Search the file locators for the class definition.  The class locators will check all of the
      * dependencids to find the class.
      *
@@ -560,7 +568,8 @@ public class REClassLoader implements IREClassLoader
         return c;
     }
     
-    /**
+    
+/**
      * Checks if any of the file locators are able to find the class.  All of the dependenies are
      * checked.
      * 
@@ -591,7 +600,8 @@ public class REClassLoader implements IREClassLoader
         return c;
     }
 
-    /**
+    
+/**
      * Retrieves the errors that where found when parsing the specified file.
      * 
      * @param filename [in] The name of the file.
@@ -602,7 +612,7 @@ public class REClassLoader implements IREClassLoader
         return fi != null? fi.getErrors() : null;
     }
 
-    // AZTEC: We may want to make this a TreeMap and define a case-insensitive
+    
     //        comparator to handle Windows filenames naturally.
     private static class FileInformationMap 
                 extends HashMap<String, IFileInformation> 

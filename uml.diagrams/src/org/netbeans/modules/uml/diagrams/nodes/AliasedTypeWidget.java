@@ -61,10 +61,8 @@ import org.netbeans.modules.uml.drawingarea.view.ResourceValue;
 import org.netbeans.modules.uml.drawingarea.view.UMLLabelWidget;
 import org.netbeans.modules.uml.drawingarea.view.UMLNodeWidget;
 
-/**
- *
- * @author treyspiva
- */
+
+
 public class AliasedTypeWidget extends UMLNodeWidget implements PropertyChangeListener
 {
     private UMLNameWidget nameWidget = null;

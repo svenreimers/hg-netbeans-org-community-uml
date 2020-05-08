@@ -67,181 +67,8 @@ import antlr.ASTFactory;
 import antlr.ASTPair;
 import antlr.collections.impl.ASTArray;
 
-/** Java 1.5 Recognizer
-/** Java 1.5 Recognizer
- *
- * Run 'java Main [-showtree] directory-full-of-java-files'
- *
- * [The -showtree option pops up a Swing frame that shows
- *  the AST constructed from the parser.]
- *
- * Run 'java Main <directory full of java files>'
- *
- * Contributing authors:
- *		John Mitchell		johnm@non.net
- *		Terence Parr		parrt@magelang.com
- *		John Lilley		jlilley@empathy.com
- *		Scott Stanchfield	thetick@magelang.com
- *		Markus Mohnen		mohnen@informatik.rwth-aachen.de
- *		Peter Williams		pete.williams@sun.com
- *		Allan Jacobs		Allan.Jacobs@eng.sun.com
- *		Steve Messick		messick@redhills.com
- *		John Pybus		john@pybus.org
- *
- * Version 1.00 December 9, 1997 -- initial release
- * Version 1.01 December 10, 1997
- *		fixed bug in octal def (0..7 not 0..8)
- * Version 1.10 August 1998 (parrt)
- *		added tree construction
- *		fixed definition of WS,comments for mac,pc,unix newlines
- *		added unary plus
- * Version 1.11 (Nov 20, 1998)
- *		Added "shutup" option to turn off last ambig warning.
- *		Fixed inner class def to allow named class defs as statements
- *		synchronized requires compound not simple statement
- *		add [] after builtInType DOT class in primaryExpression
- *		"const" is reserved but not valid..removed from modifiers
- * Version 1.12 (Feb 2, 1999)
- *		Changed LITERAL_xxx to xxx in tree grammar.
- *		Updated java.g to use tokens {...} now for 2.6.0 (new feature).
- *
- * Version 1.13 (Apr 23, 1999)
- *		Didn't have (stat)? for else clause in tree parser.
- *		Didn't gen ASTs for interface extends.  Updated tree parser too.
- *		Updated to 2.6.0.
- * Version 1.14 (Jun 20, 1999)
- *		Allowed final/abstract on local classes.
- *		Removed local interfaces from methods
- *		Put instanceof precedence where it belongs...in relationalExpr
- *			It also had expr not type as arg; fixed it.
- *		Missing ! on SEMI in classBlock
- *		fixed: (expr) + "string" was parsed incorrectly (+ as unary plus).
- *		fixed: didn't like Object[].class in parser or tree parser
- * Version 1.15 (Jun 26, 1999)
- *		Screwed up rule with instanceof in it. :(  Fixed.
- *		Tree parser didn't like (expr).something; fixed.
- *		Allowed multiple inheritance in tree grammar. oops.
- * Version 1.16 (August 22, 1999)
- *		Extending an interface built a wacky tree: had extra EXTENDS.
- *		Tree grammar didn't allow multiple superinterfaces.
- *		Tree grammar didn't allow empty var initializer: {}
- * Version 1.17 (October 12, 1999)
- *		ESC lexer rule allowed 399 max not 377 max.
- *		java.tree.g didn't handle the expression of synchronized
- *		statements.
- * Version 1.18 (August 12, 2001)
- *	  	Terence updated to Java 2 Version 1.3 by
- *		observing/combining work of Allan Jacobs and Steve
- *		Messick.  Handles 1.3 src.  Summary:
- *		o  primary didn't include boolean.class kind of thing
- *	  	o  constructor calls parsed explicitly now:
- * 		   see explicitConstructorInvocation
- *		o  add strictfp modifier
- *	  	o  missing objBlock after new expression in tree grammar
- *		o  merged local class definition alternatives, moved after declaration
- *		o  fixed problem with ClassName.super.field
- *	  	o  reordered some alternatives to make things more efficient
- *		o  long and double constants were not differentiated from int/float
- *		o  whitespace rule was inefficient: matched only one char
- *		o  add an examples directory with some nasty 1.3 cases
- *		o  made Main.java use buffered IO and a Reader for Unicode support
- *		o  supports UNICODE?
- *		   Using Unicode charVocabulay makes code file big, but only
- *		   in the bitsets at the end. I need to make ANTLR generate
- *		   unicode bitsets more efficiently.
- * Version 1.19 (April 25, 2002)
- *		Terence added in nice fixes by John Pybus concerning floating
- *		constants and problems with super() calls.  John did a nice
- *		reorg of the primary/postfix expression stuff to read better
- *		and makes f.g.super() parse properly (it was METHOD_CALL not
- *		a SUPER_CTOR_CALL).  Also:
- *
- *		o  "finally" clause was a root...made it a child of "try"
- *		o  Added stuff for asserts too for Java 1.4, but *commented out*
- *		   as it is not backward compatible.
- *
- * Version 1.20 (October 27, 2002)
- *
- *	  Terence ended up reorging John Pybus' stuff to
- *	  remove some nondeterminisms and some syntactic predicates.
- *	  Note that the grammar is stricter now; e.g., this(...) must
- *	be the first statement.
- *
- *	  Trinary ?: operator wasn't working as array name:
- *		  (isBig ? bigDigits : digits)[i];
- *
- *	  Checked parser/tree parser on source for
- *		  Resin-2.0.5, jive-2.1.1, jdk 1.3.1, Lucene, antlr 2.7.2a4,
- *		and the 110k-line jGuru server source.
- *
- * Version 1.21 (October 17, 2003)
- *  Fixed lots of problems including:
- *  Ray Waldin: add typeDefinition to interfaceBlock in java.tree.g
- *  He found a problem/fix with floating point that start with 0
- *  Ray also fixed problem that (int.class) was not recognized.
- *  Thorsten van Ellen noticed that \n are allowed incorrectly in strings.
- *  TJP fixed CHAR_LITERAL analogously.
- *
- * Version 1.21.2 (March, 2003)
- *	  Changes by Matt Quail to support generics (as per JDK1.5/JSR14)
- *	  Notes:
- *	  o We only allow the "extends" keyword and not the "implements"
- *		keyword, since thats what JSR14 seems to imply.
- *	  o Thanks to Monty Zukowski for his help on the antlr-interest
- *		mail list.
- *	  o Thanks to Alan Eliasen for testing the grammar over his
- *		Fink source base
- *
- * Version 1.22 (July, 2004)
- *	  Changes by Michael Studman to support Java 1.5 language extensions
- *	  Notes:
- *	  o Added support for annotations types
- *	  o Finished off Matt Quail's generics enhancements to support bound type arguments
- *	  o Added support for new for statement syntax
- *	  o Added support for static import syntax
- *	  o Added support for enum types
- *	  o Tested against JDK 1.5 source base and source base of jdigraph project
- *	  o Thanks to Matt Quail for doing the hard part by doing most of the generics work
- *
- * Version 1.22.1 (July 28, 2004)
- *	  Bug/omission fixes for Java 1.5 language support
- *	  o Fixed tree structure bug with classOrInterface - thanks to Pieter Vangorpto for
- *		spotting this
- *	  o Fixed bug where incorrect handling of SR and BSR tokens would cause type
- *		parameters to be recognised as type arguments.
- *	  o Enabled type parameters on constructors, annotations on enum constants
- *		and package definitions
- *	  o Fixed problems when parsing if ((char.class.equals(c))) {} - solution by Matt Quail at Cenqua
- *
- * Version 1.22.2 (July 28, 2004)
- *	  Slight refactoring of Java 1.5 language support
- *	  o Refactored for/"foreach" productions so that original literal "for" literal
- *	    is still used but the for sub-clauses vary by token type
- *	  o Fixed bug where type parameter was not included in generic constructor's branch of AST
- *
- * Version 1.22.3 (August 26, 2004)
- *	  Bug fixes as identified by Michael Stahl; clean up of tabs/spaces
- *        and other refactorings
- *	  o Fixed typeParameters omission in identPrimary and newStatement
- *	  o Replaced GT reconcilliation code with simple semantic predicate
- *	  o Adapted enum/assert keyword checking support from Michael Stahl's java15 grammar
- *	  o Refactored typeDefinition production and field productions to reduce duplication
- *
- * Version 1.22.4 (October 21, 2004)
- *    Small bux fixes
- *    o Added typeArguments to explicitConstructorInvocation, e.g. new <String>MyParameterised()
- *    o Added typeArguments to postfixExpression productions for anonymous inner class super
- *      constructor invocation, e.g. new Outer().<String>super()
- *    o Fixed bug in array declarations identified by Geoff Roy
- *
- * Version 1.22.5 (January 03, 2005)
- *    Small change to tree structure
- *    o Flattened classOrInterfaceType tree so IDENT no longer has children. TYPE_ARGUMENTS are now
- *      always siblings of IDENT rather than children. Fully.qualified.names trees now
- *      look a little less clean when TYPE_ARGUMENTS are present though.
- *
- * This grammar is in the PUBLIC DOMAIN
- */
+
+
 public class JavaRecognizer extends antlr.LLkParser       implements JavaTokenTypes
  {
 
@@ -251,7 +78,8 @@ public class JavaRecognizer extends antlr.LLkParser       implements JavaTokenTy
       mController = newVal;
    }
 
-   /** 
+   
+/** 
     * Parser error-reporting function can be overridden in subclass.
     * @param ex The exception that occured.
     */
@@ -269,7 +97,8 @@ public class JavaRecognizer extends antlr.LLkParser       implements JavaTokenTy
       }
       
    
-      /**
+      
+/**
        * CheckForScarf handles token consumption within 
        * operations when doing normal reverse engineering.
        * This operation will have no effect if being called
@@ -328,7 +157,8 @@ public class JavaRecognizer extends antlr.LLkParser       implements JavaTokenTy
    private boolean m_ParseOperations;
 
    // The following was supplied by the ANTLR web site.
-   /**
+   
+/**
      * Counts the number of LT seen in the typeArguments production.
      * It is used in semantic predicates to ensure we have seen
      * enough closing '>' characters; which actually may have been
@@ -1494,7 +1324,7 @@ public JavaRecognizer(ParserSharedInputState state) {
 		if ( inputState.guessing==0 ) {
 			classOrInterfaceType_AST = (AST)currentAST.root;
 			
-			//boolean generic = ((#t == null) && (#t1 == null) ? false : true);
+			
 			boolean generic = ((t_AST == null) ? false : true);
 						if ( addImagNode ) {
 			if(generic == false) {
@@ -4765,6 +4595,7 @@ public JavaRecognizer(ParserSharedInputState state) {
 		returnAST = statement_AST;
 	}
 	
+
 /** Declaration of a variable. This can be a class/instance variable,
  *  or a local variable in a method
  *  It can also include possible initialization.
@@ -7128,6 +6959,7 @@ public JavaRecognizer(ParserSharedInputState state) {
 		returnAST = primaryExpression_AST;
 	}
 	
+
 /** object instantiation.
  *  Trees are built as illustrated by the following input/tree pairs:
  *
@@ -7368,6 +7200,7 @@ public JavaRecognizer(ParserSharedInputState state) {
 		returnAST = newExpression_AST;
 	}
 	
+
 /** Match a, a.b.c refs, a.b.c(...) refs, a.b.c[], a.b.c[].class,
  *  and a.b.c.class refs. Also this(...) and super(...). Match
  *  this or super.

@@ -66,10 +66,8 @@ import org.netbeans.modules.uml.core.metamodel.structure.ProjectEventsAdapter;
 import org.netbeans.modules.uml.core.support.umlsupport.IResultCell;
 import org.netbeans.modules.uml.core.support.umlsupport.XMLManip;
 
-/**
- * 
- * @author Trey Spiva
- */
+
+
 public class UserSettings
 {
 	private String m_SystemSettingsFile = "";
@@ -210,7 +208,8 @@ public class UserSettings
       return retVal;
    }
    
-   /**
+   
+/**
     * @param parentModelElement
     */
    public void clearDefaultTarget(IElement associatedElement)
@@ -311,7 +310,8 @@ public class UserSettings
    // Helper Methods
    //**************************************************
    
-   /**
+   
+/**
     * @param element
     */
    protected Document getSystemSettingsDocument(boolean forceCreate) 
@@ -356,7 +356,8 @@ public class UserSettings
 
    }
    
-   /**
+   
+/**
     * @param element
     */
    protected Document getProjectSettingsDocument(IElement element, 
@@ -437,7 +438,8 @@ public class UserSettings
       return retVal;
    }
    
-   /**
+   
+/**
    * @param element
    */
   protected Element getSystemSettingsElement()
@@ -461,7 +463,8 @@ public class UserSettings
   }
   
   
-   /**
+   
+/**
     * @param element
     */
    protected Element getProjectSettingsElement(IElement element)

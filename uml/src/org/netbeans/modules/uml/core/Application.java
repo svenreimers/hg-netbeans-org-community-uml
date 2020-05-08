@@ -94,15 +94,14 @@ import org.netbeans.modules.uml.core.support.umlsupport.Log;
 import org.openide.filesystems.FileObject;
 import org.openide.filesystems.FileUtil;
 
-/**
- * @author sumitabhk
- *
- */
+
+
 public class Application implements IApplication,
         IWSProjectEventsSink, IExternalElementEventsSink,
         ICoreProductInitEventsSink
 {
-    /**
+    
+/**
      * Creates and initializes an Application.
      */
     public Application()
@@ -118,7 +117,8 @@ public class Application implements IApplication,
         establishQueryManager();
     }
     
-    /**
+    
+/**
      * Establish the connection between this Application and the WorkspaceManager
      * and workspace dispatcher on the CoreProduct.
      */
@@ -169,7 +169,8 @@ public class Application implements IApplication,
             cpeDispatcher.registerForInitEvents(this);
     }
     
-    /**
+    
+/**
      *
      * Creates and initializes the internal QueryManager
      */
@@ -179,7 +180,8 @@ public class Application implements IApplication,
         m_QueryManager.initialize();
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.IApplication#createProject()
      */
     public IProject createProject()
@@ -187,7 +189,8 @@ public class Application implements IApplication,
         return createProject("");
     }
     
-    /**
+    
+/**
      * Opens a project at the file specified.
      *
      * @param fileName[in] The file to open
@@ -273,7 +276,8 @@ public class Application implements IApplication,
         return project;
     }
     
-    /**
+    
+/**
      * Creates a project object, connects it to the XML Document given, and adds
      * it to the list of open projects.
      *
@@ -311,7 +315,8 @@ public class Application implements IApplication,
         return project;
     }
     
-    /**
+    
+/**
      * Makes sure the passed in Project is on our internal collection as well
      * as making sure that the Application is properly advised to the Project
      *
@@ -332,7 +337,8 @@ public class Application implements IApplication,
         }
     }
     
-    /**
+    
+/**
      * Retrieves the current workspace off the Describe product.
      *
      * @return The current <code>IWorkspace</code>, possibly <code>null</code>.
@@ -343,7 +349,8 @@ public class Application implements IApplication,
         return product.getCurrentWorkspace();
     }
     
-    /**
+    
+/**
      * Retrieves the current Describe product.
      *
      * @return The <code>IProduct</code>.
@@ -353,7 +360,8 @@ public class Application implements IApplication,
         return ProductRetriever.retrieveProduct();
     }
     
-    /**
+    
+/**
      * Retrieves the event dispatcher specific to the project.
      * @return A <code>IStructureEventDispatcher</code>, if obtained.
      */
@@ -369,7 +377,8 @@ public class Application implements IApplication,
         return structureEventDispatcher;
     }
     
-    /**
+    
+/**
      * @return
      */
     private String getProjectOpenMessage()
@@ -378,7 +387,8 @@ public class Application implements IApplication,
         return null;
     }
     
-    /**
+    
+/**
      *
      * Closes a top level model used to house all other elements.
      *
@@ -473,7 +483,8 @@ public class Application implements IApplication,
         }
     }
     
-    /**
+    
+/**
      *
      * Closes all the open projects.
      *
@@ -501,7 +512,8 @@ public class Application implements IApplication,
         }
     }
     
-    /**
+    
+/**
      *
      * Retrieves the collection object that holds all the projects that this
      * application has.
@@ -513,7 +525,8 @@ public class Application implements IApplication,
         return getProjects(FileExtensions.MD_EXT_NODOT);
     }
     
-    /**
+    
+/**
      *
      * Retrieves all open Projects that have a particular file extension. The compare of the file
      * extensions is case insensitive
@@ -554,7 +567,8 @@ public class Application implements IApplication,
         return retProjs;
     }
     
-        /* (non-Javadoc)
+        
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.core.IApplication#getProjectByName(java.lang.String)
          */
     public IProject getProjectByName(String projectName)
@@ -572,7 +586,8 @@ public class Application implements IApplication,
         return null;
     }
     
-    /**
+    
+/**
      *
      * Retrieves an open project that matches the passed-in name.
      *
@@ -632,7 +647,8 @@ public class Application implements IApplication,
         return retProj;
     }
     
-        /* (non-Javadoc)
+        
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.core.IApplication#getProjectByFileName(java.lang.String)
          */
     public IProject getProjectByFileName(String fileName)
@@ -657,7 +673,8 @@ public class Application implements IApplication,
         return null;
     }
     
-    /**
+    
+/**
      *
      * Retrieves a Project from the Application by the ID of the project.
      *
@@ -698,7 +715,8 @@ public class Application implements IApplication,
         return retProj;
     }
     
-    /**
+    
+/**
      *
      * Attempts to find a Project by querying the current workspace, looking for an
      * element whose data section matches the id passed in.
@@ -763,7 +781,8 @@ public class Application implements IApplication,
         return retProj;
     }
     
-    /**
+    
+/**
      *
      * Creates a new Workspace file at the location specified.
      *
@@ -793,7 +812,8 @@ public class Application implements IApplication,
         return retSpace;
     }
     
-    /**
+    
+/**
      *
      * Opens a workspace file, returning the Workspace object that represents
      * the data in that file.
@@ -824,7 +844,8 @@ public class Application implements IApplication,
         return retSpace;
     }
     
-    /**
+    
+/**
      *
      * Closes the passed-in Workspace. All open Projects will also be closed.
      *
@@ -853,7 +874,8 @@ public class Application implements IApplication,
         }
     }
     
-    /**
+    
+/**
      *
      * Imports an external IProject into the passed-in Workspace.
      *
@@ -908,7 +930,8 @@ public class Application implements IApplication,
         return retProj;
     }
     
-    /**
+    
+/**
      *
      * Dispatches the WSProjectInserted event
      *
@@ -932,7 +955,8 @@ public class Application implements IApplication,
         }
     }
     
-    /**
+    
+/**
      *
      * Prepares the WSProject event dispatcher
      *
@@ -948,7 +972,8 @@ public class Application implements IApplication,
         return retDisp;
     }
     
-    /**
+    
+/**
      *
      * Dispatches the pre insert event.
      *
@@ -976,7 +1001,8 @@ public class Application implements IApplication,
         return proceed;
     }
     
-    /**
+    
+/**
      *
      * Opens a Project by retrieving it from within the passed-in Workspace.
      *
@@ -1007,7 +1033,8 @@ public class Application implements IApplication,
         return retProj;
     }
     
-    /**
+    
+/**
      *
      * Opens a Project by retrieving it from within the passed-in Workspace.
      *
@@ -1026,7 +1053,8 @@ public class Application implements IApplication,
         return retProj;
     }
     
-    /**
+    
+/**
      *
      * Cleans up this Application
      */
@@ -1055,7 +1083,8 @@ public class Application implements IApplication,
         }
     }
     
-    /**
+    
+/**
      *
      * Revokes the dispatchers the Application is listening to.
      */
@@ -1075,7 +1104,8 @@ public class Application implements IApplication,
             cpeDispatcher.revokeInitSink(this);
     }
     
-    /**
+    
+/**
      *
      * Returns the filename of the executing module
      *
@@ -1087,7 +1117,8 @@ public class Application implements IApplication,
         return null;
     }
     
-    /**
+    
+/**
      *
      * Returns the number of closed projects
      *
@@ -1134,7 +1165,8 @@ public class Application implements IApplication,
         return numProjs;
     }
     
-    /**
+    
+/**
      *
      * Are all the WSProjects owned by this element opened
      *
@@ -1172,7 +1204,8 @@ public class Application implements IApplication,
         return numProjs;
     }
     
-    /**
+    
+/**
      *
      * Retrieves the QueryManager object associated with this Application
      *
@@ -1183,7 +1216,8 @@ public class Application implements IApplication,
         return m_QueryManager;
     }
     
-    /**
+    
+/**
      *
      * Sets a new QueryManager object on this application
      *
@@ -1197,7 +1231,8 @@ public class Application implements IApplication,
     /////////////////////////////////////////////////////////////////////////////
     // Event handler functions from IWSProjectEventsSink.
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.workspacemanagement.IWSProjectEventsSink#onWSProjectPreCreate(org.netbeans.modules.uml.core.workspacemanagement.IWorkspace, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onWSProjectPreCreate(IWorkspace space, String projectName, IResultCell cell)
@@ -1205,7 +1240,8 @@ public class Application implements IApplication,
         //nothing to do
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.workspacemanagement.IWSProjectEventsSink#onWSProjectCreated(org.netbeans.modules.uml.core.workspacemanagement.IWSProject, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onWSProjectCreated(IWSProject wsproject, IResultCell cell)
@@ -1253,7 +1289,8 @@ public class Application implements IApplication,
         return null;
     }
     
-    /**
+    
+/**
      *
      * Retrieves the IProject from the IWSProject
      *
@@ -1281,7 +1318,8 @@ public class Application implements IApplication,
         return retProj;
     }
     
-    /**
+    
+/**
      * Adds the given IProject to the IWSProject.
      * @param wsproj
      * @param proj
@@ -1356,7 +1394,8 @@ public class Application implements IApplication,
         return null;
     }
     
-    /**
+    
+/**
      * Fires the pre-create event to all interested listeners.
      *
      * @param dispatcher The event dispatcher to use.
@@ -1376,7 +1415,8 @@ public class Application implements IApplication,
         return bProceed;
     }
     
-    /**
+    
+/**
      * Returns the project file name, given the IWSProject and the name of the
      * project. The project file will be placed relative to the IWSProject's
      * base directory, and the filename will be the supplied 'projectName' with
@@ -1404,14 +1444,16 @@ public class Application implements IApplication,
         return new File(basedir, projectName).toString();
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.workspacemanagement.IWSProjectEventsSink#onWSProjectPreOpen(org.netbeans.modules.uml.core.workspacemanagement.IWorkspace, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onWSProjectPreOpen(IWorkspace space, String projName, IResultCell cell)
     {
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.workspacemanagement.IWSProjectEventsSink#onWSProjectOpened(org.netbeans.modules.uml.core.workspacemanagement.IWSProject, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onWSProjectOpened(IWSProject wsproject, IResultCell cell)
@@ -1426,7 +1468,8 @@ public class Application implements IApplication,
         }
     }
     
-    /**
+    
+/**
      *
      * Fired right before a WSProject is removed from the Workspace.
      *
@@ -1441,7 +1484,8 @@ public class Application implements IApplication,
         
     }
     
-    /**
+    
+/**
      *
      * FIred after a WSProject is removed from the Workspace.
      *
@@ -1464,7 +1508,8 @@ public class Application implements IApplication,
         }
     }
     
-    /**
+    
+/**
      *
      * Fired right before a WSProject is inserted into a Workspace.
      *
@@ -1480,7 +1525,8 @@ public class Application implements IApplication,
         
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.workspacemanagement.IWSProjectEventsSink#onWSProjectInserted(org.netbeans.modules.uml.core.workspacemanagement.IWSProject, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onWSProjectInserted(IWSProject project, IResultCell cell)
@@ -1488,7 +1534,8 @@ public class Application implements IApplication,
         
     }
     
-    /**
+    
+/**
      *
      * Fired right before a WSProject is renamed.
      *
@@ -1504,7 +1551,8 @@ public class Application implements IApplication,
         
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.workspacemanagement.IWSProjectEventsSink#onWSProjectRenamed(org.netbeans.modules.uml.core.workspacemanagement.IWSProject, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onWSProjectRenamed(IWSProject project, String oldName, IResultCell cell)
@@ -1512,7 +1560,8 @@ public class Application implements IApplication,
         
     }
     
-    /**
+    
+/**
      *
      * Fired right before a WSProject is closed.
      *
@@ -1527,7 +1576,8 @@ public class Application implements IApplication,
         
     }
     
-    /**
+    
+/**
      *
      * Fired as a result of the user or the programmatic closing of an existing WSProject.
      *
@@ -1546,7 +1596,8 @@ public class Application implements IApplication,
         }
     }
     
-    /**
+    
+/**
      *
      * Fired right before a WSProject is saved.
      *
@@ -1561,7 +1612,8 @@ public class Application implements IApplication,
         
     }
     
-    /**
+    
+/**
      *
      * Fired as a result of the user or the programmatic saving of an existing WSProject.
      *
@@ -1581,7 +1633,8 @@ public class Application implements IApplication,
     }
     
     //////////////////////////////////////////////////////////////////////////
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IExternalElementEventsSink#onExternalElementPreLoaded(java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onExternalElementPreLoaded(String uri, IResultCell cell)
@@ -1598,7 +1651,8 @@ public class Application implements IApplication,
         }
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IExternalElementEventsSink#onExternalElementLoaded(org.netbeans.modules.uml.core.metamodel.core.foundation.IVersionableElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onExternalElementLoaded(IVersionableElement element, IResultCell cell)
@@ -1606,7 +1660,8 @@ public class Application implements IApplication,
         //nothing to do
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IExternalElementEventsSink#onPreInitialExtraction(java.lang.String, org.netbeans.modules.uml.core.metamodel.core.foundation.IVersionableElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onPreInitialExtraction(String fileName, IVersionableElement element, IResultCell cell)
@@ -1614,7 +1669,8 @@ public class Application implements IApplication,
         //nothing to do
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IExternalElementEventsSink#onInitialExtraction(org.netbeans.modules.uml.core.metamodel.core.foundation.IVersionableElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onInitialExtraction(IVersionableElement element, IResultCell cell)
@@ -1623,7 +1679,8 @@ public class Application implements IApplication,
     }
     
     /////////////////////////////////////////////////////////////////////
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.coreapplication.ICoreProductInitEventsSink#onCoreProductPreInit(org.netbeans.modules.uml.core.coreapplication.ICoreProduct, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onCoreProductPreInit(ICoreProduct pVal, IResultCell cell)
@@ -1631,7 +1688,8 @@ public class Application implements IApplication,
         //nothing to do
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.coreapplication.ICoreProductInitEventsSink#onCoreProductInitialized(org.netbeans.modules.uml.core.coreapplication.ICoreProduct, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onCoreProductInitialized(ICoreProduct newVal, IResultCell cell)
@@ -1639,7 +1697,8 @@ public class Application implements IApplication,
         //nothing to do
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.coreapplication.ICoreProductInitEventsSink#onCoreProductPreQuit(org.netbeans.modules.uml.core.coreapplication.ICoreProduct, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onCoreProductPreQuit(ICoreProduct pVal, IResultCell cell)
@@ -1647,7 +1706,8 @@ public class Application implements IApplication,
         //nothing to do
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.coreapplication.ICoreProductInitEventsSink#onCoreProductPreSaved(org.netbeans.modules.uml.core.coreapplication.ICoreProduct, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onCoreProductPreSaved(ICoreProduct pVal, IResultCell cell)
@@ -1655,7 +1715,8 @@ public class Application implements IApplication,
         //nothing to do
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.coreapplication.ICoreProductInitEventsSink#onCoreProductSaved(org.netbeans.modules.uml.core.coreapplication.ICoreProduct, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onCoreProductSaved(ICoreProduct newVal, IResultCell cell)

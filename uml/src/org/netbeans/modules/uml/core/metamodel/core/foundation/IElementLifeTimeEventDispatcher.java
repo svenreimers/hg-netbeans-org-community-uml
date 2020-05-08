@@ -52,82 +52,98 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 public interface IElementLifeTimeEventDispatcher extends IEventDispatcher
 {
-	/**
+	
+/**
 	 * Registers an event sink to handle element lifetime events.
 	*/
 	public void registerForLifeTimeEvents( IElementLifeTimeEventsSink Handler );
 
-	/**
+	
+/**
 	 * Revokes the sink handler.
 	*/
 	public void revokeLifeTimeSink( IElementLifeTimeEventsSink Handler );
 
-	/**
+	
+/**
 	 * Registers an event sink to handle element lifetime events.
 	*/
 	public void registerForDisposalEvents( IElementDisposalEventsSink Handler );
 
-	/**
+	
+/**
 	 * Revokes the sink handler.
 	*/
 	public void revokeDisposalSink( IElementDisposalEventsSink Handler  );
 
-	/**
+	
+/**
 	 * Registers an event sink to handle element unknown classifier events.
 	*/
 	public void registerForUnknownClassifierEvents( IUnknownClassifierEventsSink Handler );
 
-	/**
+	
+/**
 	 * Revokes the sink handler.
 	*/
 	public void revokeUnknownClassifierSink( IUnknownClassifierEventsSink Handler );
 
-	/**
+	
+/**
 	 * method FireElementPreCreate
 	*/
 	public boolean fireElementPreCreate( String ElementType, IEventPayload Payload );
 
-	/**
+	
+/**
 	 * method FireElementCreated
 	*/
 	public void fireElementCreated( IVersionableElement element, IEventPayload Payload );
 
-	/**
+	
+/**
 	 * method FireElementPreDelete
 	*/
 	public boolean fireElementPreDelete( IVersionableElement ver, IEventPayload Payload );
 
-	/**
+	
+/**
 	 * method FireElementDeleted
 	*/
 	public void fireElementDeleted( IVersionableElement element, IEventPayload Payload );
 
-	/**
+	
+/**
 	 * method FireElementDeleted
 	*/
 	public boolean firePreDisposeElements( ETList<IVersionableElement> pElements, IEventPayload Payload );
 
-	/**
+	
+/**
 	 * Fired whenever after an element is created.
 	*/
 	public void fireDisposedElements( ETList<IVersionableElement> pElements, IEventPayload Payload );
 
-	/**
+	
+/**
 	 * Fired whenever an element is about to be duplicated.
 	*/
 	public boolean fireElementPreDuplicated( IVersionableElement element, IEventPayload Payload );
 
-	/**
+	
+/**
 	 * Fired after an element has been duplicated.
 	*/
 	public void fireElementDuplicated( IVersionableElement element, IEventPayload Payload );
 
-	/**
+	
+/**
 	 * Fired when a new classifier is about to be created as specified by the unknown classifier preference.
 	*/
 	public boolean firePreUnknownCreate( String typeToCreate, IEventPayload Payload );
 
-	/**
+	
+/**
 	 * Fired when a new classifier has been created as specified by the unknown classifier preference..
 	*/
 	public void fireUnknownCreated( INamedElement newType, IEventPayload Payload );

@@ -55,9 +55,8 @@ import java.awt.geom.RoundRectangle2D;
 import org.netbeans.api.visual.widget.Scene;
 import org.netbeans.modules.uml.drawingarea.view.CustomizableWidget;
 
-/**
- * @author thuy
- */
+
+
 public class RoundedRectWidget extends CustomizableWidget
 {
 
@@ -74,7 +73,8 @@ public class RoundedRectWidget extends CustomizableWidget
     private Paint drawColor = Color.BLACK;
     private Stroke stroke;
 
-    /**
+    
+/**
      * Creates a rounded rectangle widget with default values of arc width, arc height, insets, draw color and stroke
      * @param scene 
      * @param propId the resource property id which is used to lookup for the fill color in the resource table
@@ -88,7 +88,8 @@ public class RoundedRectWidget extends CustomizableWidget
         setForeground(null);
     }
 
-   /**
+   
+/**
      * Creates a rounded rectangle widget with default values of arc width, arc height, insets and draw color
      * @param scene 
      * @param propId the resource property id which is used to lookup for the fill color in the resource table
@@ -102,7 +103,8 @@ public class RoundedRectWidget extends CustomizableWidget
         this.stroke = stroke;
     }
 
-    /**
+    
+/**
      * Creates a rounded rectangle border with specified attributes
      * @param scene 
      * @param propId the resource property id which is used to lookup for the fill color in the resource table

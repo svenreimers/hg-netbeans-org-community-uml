@@ -42,11 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : ElementUtilities.java
- * Created on : Oct 20, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.metamodel.modelanalysis;
 
 import org.netbeans.modules.uml.core.metamodel.core.foundation.IElement;
@@ -56,13 +53,13 @@ import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure
 import org.netbeans.modules.uml.core.support.umlutils.ETArrayList;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
-/**
- * @author Aztec
- */
+
+
 public class ElementUtilities
 {
 
- /**
+ 
+/**
   *
   * Tests whether the given operation is redefined by any operation on the 
   * given list.
@@ -91,7 +88,8 @@ public class ElementUtilities
      }
  
 
-    /**
+    
+/**
      *
      * Checks to see if the candidate operation is already a redefinition of the other.
      * This means not only to check direct redefinitions, but goes all the way
@@ -120,7 +118,8 @@ public class ElementUtilities
     }
 
 
-    /**
+    
+/**
      *
      * Checks to see if the candidate operation is already redefining the other.
      * This means not only to check direct redefinitions, but goes all the way
@@ -178,7 +177,8 @@ public class ElementUtilities
         return retval;
     }
 
-    /**
+    
+/**
      *
      * This is a convenience function that calls the IsSame method on IElement
      * and returns the result as a boolean instead of a VARIANT.
@@ -205,7 +205,8 @@ public class ElementUtilities
        return isSame;
     }
 
-    /**
+    
+/**
      *
      * Check to see if the given operation is a member of the given list
      *
@@ -232,7 +233,8 @@ public class ElementUtilities
         return retval;
     }
     
-    /**
+    
+/**
      *
      * Check to see if the given operation is a member of the given list
      *

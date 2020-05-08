@@ -42,11 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : ParseEventController.java
- * Created on : Oct 27, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework;
 
 import java.util.Stack;
@@ -60,9 +57,8 @@ import antlr.CommonASTWithHiddenTokens;
 import antlr.collections.AST;
 import antlr.CommonASTWithLocationsAndHidden;
 
-/**
- * @author Aztec
- */
+
+
 public class ParserEventController implements IParserEventController
 {
     private IStateListener   m_StateListener;
@@ -114,7 +110,8 @@ public class ParserEventController implements IParserEventController
         setLanguageName(langName);
     }
 
-    /**
+    
+/**
      * Clear the internal information and prepare for the next parser instance.
      */
     public void clear()
@@ -132,7 +129,8 @@ public class ParserEventController implements IParserEventController
        m_CommentGather = null;
     }
     
-    /**
+    
+/**
      * Sends an error event to the registered error listener.
      *
      * @param msg [in]      The error message.
@@ -161,7 +159,8 @@ public class ParserEventController implements IParserEventController
         }
     }
 
-    /**
+    
+/**
      * Get the the interface that will recieve the error information 
      * will parsing the file.
      * 
@@ -172,7 +171,8 @@ public class ParserEventController implements IParserEventController
         return m_ErrorListener;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.IParseEventController#getFilename()
      */
     public String getFilename()
@@ -180,7 +180,8 @@ public class ParserEventController implements IParserEventController
         return m_Filename;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.IParseEventController#getLanguageName()
      */
     public String getLanguageName()
@@ -188,7 +189,8 @@ public class ParserEventController implements IParserEventController
         return m_LanguageName;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.IParseEventController#getStateFilter()
      */
     public IStateFilter getStateFilter()
@@ -196,7 +198,8 @@ public class ParserEventController implements IParserEventController
         return m_StateFilter;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.IParseEventController#getStateListener()
      */
     public IStateListener getStateListener()
@@ -204,7 +207,8 @@ public class ParserEventController implements IParserEventController
         return m_StateListener;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.IParseEventController#getTokenFilter()
      */
     public ITokenFilter getTokenFilter()
@@ -212,7 +216,8 @@ public class ParserEventController implements IParserEventController
         return m_TokenFilter;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.IParseEventController#getTokenProcessor()
      */
     public ITokenProcessor getTokenProcessor()
@@ -220,7 +225,8 @@ public class ParserEventController implements IParserEventController
         return m_TokenProcessor;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.IParseEventController#setErrorListener(org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.IErrorListener)
      */
     public void setErrorListener(IErrorListener errorListener)
@@ -228,7 +234,8 @@ public class ParserEventController implements IParserEventController
         m_ErrorListener = errorListener;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.IParseEventController#setFilename(java.lang.String)
      */
     public void setFilename(String filename)
@@ -236,7 +243,8 @@ public class ParserEventController implements IParserEventController
         m_Filename = filename;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.IParseEventController#setLanguageName(java.lang.String)
      */
     public void setLanguageName(String name)
@@ -244,7 +252,8 @@ public class ParserEventController implements IParserEventController
         m_LanguageName = name;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.IParseEventController#setStateFilter(org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.IStateFilter)
      */
     public void setStateFilter(IStateFilter stateFilter)
@@ -252,7 +261,8 @@ public class ParserEventController implements IParserEventController
         m_StateFilter = stateFilter;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.IParseEventController#setStateListener(org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.IStateListener)
      */
     public void setStateListener(IStateListener stateListener)
@@ -260,7 +270,8 @@ public class ParserEventController implements IParserEventController
         m_StateListener = stateListener;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.IParseEventController#setTokenFilter(org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ITokenFilter)
      */
     public void setTokenFilter(ITokenFilter tokenFilter)
@@ -268,7 +279,8 @@ public class ParserEventController implements IParserEventController
         m_TokenFilter = tokenFilter;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.IParseEventController#setTokenProcessor(org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ITokenProcessor)
      */
     public void setTokenProcessor(ITokenProcessor tokenProcessor)
@@ -276,7 +288,8 @@ public class ParserEventController implements IParserEventController
         m_TokenProcessor = tokenProcessor;
     }
 
-    /**
+    
+/**
      * Performs the processing of entering a new state in the parser.  If the 
      *  new state is <I>Guessing</I> then all discovered tokens will be 
      * queued until a concreate state is discovered.  
@@ -295,7 +308,8 @@ public class ParserEventController implements IParserEventController
         fireGuessingTokens();
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.IParseEventController#stateBegin(java.lang.String)
      */
     public void stateBegin(String stateName)
@@ -303,7 +317,8 @@ public class ParserEventController implements IParserEventController
         enteringState(stateName, true);
     }
 
-    /**
+    
+/**
      * Performs the processing of exiting an existing state in the parser.  
      * <p>
      * As new states are discovered the new state will be pushed onto a 
@@ -346,7 +361,8 @@ public class ParserEventController implements IParserEventController
         }
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.IParseEventController#tokenFound(antlr.collections.AST, java.lang.String)
      */
     public void tokenFound(AST tok, String type)
@@ -441,7 +457,8 @@ public class ParserEventController implements IParserEventController
         }
     }
 
-    /**
+    
+/**
      * Fires the begin state event to all registered listeners.  All token events that
      * was discovered while in a <I>Guessing</I> state will also be fired.  If the
      * state is being blocked by the state filter then the event will not be sent and
@@ -480,7 +497,8 @@ public class ParserEventController implements IParserEventController
         }
     }
 
-    /**
+    
+/**
      * Fires a OnToken event to all registered listeners.
      *
      * @param pDescriptor [in] The discovered token.
@@ -502,7 +520,8 @@ public class ParserEventController implements IParserEventController
        }
     }
 
-    /**
+    
+/**
      * Test if the specified token is filtered by the token filter.
      *
      * @out type [in] The new token.
@@ -522,7 +541,7 @@ public class ParserEventController implements IParserEventController
             }
 
             // If the current state is blocked do not even try to ask the token filter
-            // because it is required to be filtered.  Matter a fact we should never
+            
             // get to this routine if the state is blocked, however I have added this
             // check as as santity check.
             if(!retVal && curState != null)
@@ -533,7 +552,8 @@ public class ParserEventController implements IParserEventController
         return retVal;
     }
 
-    /**
+    
+/**
      * Test if the current state has been filtered.  Since the filter
      * structure is in a tree format if the states parent state is filtered the
      * sub state is also filtered.  Therefore, if the current state is filtered then
@@ -553,7 +573,8 @@ public class ParserEventController implements IParserEventController
         return retVal;
     }
 
-    /**
+    
+/**
      * Test if the specified state is filtered by the state filter.  Since the filter
      * structure is in a tree format if the states parent state is filtered the
      * sub state is also filtered.  Therefore, if the current state is filtered then
@@ -584,7 +605,8 @@ public class ParserEventController implements IParserEventController
 
         return retVal;
     }
-    /**
+    
+/**
      * Creates a ne ITokenDescriptor object.  The ITokenDescritpor will be initialized with the
      * information from the Antlr AST.
      *
@@ -622,7 +644,8 @@ public class ParserEventController implements IParserEventController
         return addFilename(pDesc);
     }
     
-    /**
+    
+/**
      * Fires a OnToken event for every state that was discovered while in a 
      * <I>Guessing</I> state.
      */
@@ -636,7 +659,8 @@ public class ParserEventController implements IParserEventController
         mGuessingTokens.clear();
     }
     
-    /**
+    
+/**
      * Fires the end state event to all registered listeners.
      * 
      * @param stateName [in] The state that is being exited.

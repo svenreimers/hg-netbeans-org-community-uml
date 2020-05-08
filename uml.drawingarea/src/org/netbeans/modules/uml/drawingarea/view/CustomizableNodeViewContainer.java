@@ -48,10 +48,8 @@ import org.netbeans.api.visual.widget.ResourceTable;
 import org.netbeans.api.visual.widget.Scene;
 import org.netbeans.api.visual.widget.Widget;
 
-/**
- *
- * @author sp153251
- */
+
+
 public class CustomizableNodeViewContainer extends CustomizableWidget {
       public CustomizableNodeViewContainer(Scene scene, String id, String name)
       {

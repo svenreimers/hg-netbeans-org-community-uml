@@ -44,20 +44,16 @@
 
 
 
-/*
- * File       : AllConfigStringFrameworkTests.java
- * Created on : Nov 3, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.configstringframework;
 
 
 import junit.framework.Test;
 import junit.framework.TestSuite;
 
-/**
- * @author Aztec
- */
+
+
 
 public class AllConfigStringFrameworkTests
 {

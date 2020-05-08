@@ -111,7 +111,8 @@ public class ActivityElementsCDFSTests extends UMLTestCase {
         }
         
         //checking diagram node was created
-            /*
+            
+/*
             if (!util.nodeExists(DIA_PATH)){
                eventTool.waitNoEvent(5000);
                 fail("testCreateChoice verification failed");
@@ -142,7 +143,8 @@ public class ActivityElementsCDFSTests extends UMLTestCase {
         }
         
         //checking diagram node was created
-            /*
+            
+/*
             if (!util.nodeExists(DIA_PATH)){
                eventTool.waitNoEvent(5000);
                 fail("testCreateActivityDiagramFromClass verification failed");
@@ -172,7 +174,8 @@ public class ActivityElementsCDFSTests extends UMLTestCase {
         }
         
         //checking diagram node was created
-            /*
+            
+/*
             if (!util.nodeExists(DIA_PATH)){
                eventTool.waitNoEvent(5000);
                 fail("testCreateActivityDiagramFromClass verification failed");
@@ -204,7 +207,8 @@ public class ActivityElementsCDFSTests extends UMLTestCase {
         }
         
         //checking diagram node was created
-            /*
+            
+/*
             if (!util.nodeExists(DIA_PATH)){
                eventTool.waitNoEvent(5000);
                 fail("testCreateActivityGroup verification failed");
@@ -235,7 +239,8 @@ public class ActivityElementsCDFSTests extends UMLTestCase {
         }
         
         //checking diagram node was created
-            /*
+            
+/*
             if (!util.nodeExists(DIA_PATH)){
                eventTool.waitNoEvent(5000);
                 fail("testCreateChoice verification failed");
@@ -265,7 +270,8 @@ public class ActivityElementsCDFSTests extends UMLTestCase {
         }
         
         //checking diagram node was created
-            /*
+            
+/*
             if (!util.nodeExists(DIA_PATH)){
                eventTool.waitNoEvent(5000);
                 fail("testCreateChoice verification failed");
@@ -295,7 +301,8 @@ public class ActivityElementsCDFSTests extends UMLTestCase {
         }
         
         //checking diagram node was created
-            /*
+            
+/*
             if (!util.nodeExists(DIA_PATH)){
                eventTool.waitNoEvent(5000);
                 fail("testCreateChoice verification failed");
@@ -325,7 +332,8 @@ public class ActivityElementsCDFSTests extends UMLTestCase {
         }
         
         //checking diagram node was created
-            /*
+            
+/*
             if (!util.nodeExists(DIA_PATH)){
                eventTool.waitNoEvent(5000);
                 fail("testCreateChoice verification failed");
@@ -355,7 +363,8 @@ public class ActivityElementsCDFSTests extends UMLTestCase {
         }
         
         //checking diagram node was created
-            /*
+            
+/*
             if (!util.nodeExists(DIA_PATH)){
                eventTool.waitNoEvent(5000);
                 fail("testCreateChoice verification failed");
@@ -385,7 +394,8 @@ public class ActivityElementsCDFSTests extends UMLTestCase {
         }
         
         //checking diagram node was created
-            /*
+            
+/*
             if (!util.nodeExists(DIA_PATH)){
                eventTool.waitNoEvent(5000);
                 fail("testCreateChoice verification failed");
@@ -415,7 +425,8 @@ public class ActivityElementsCDFSTests extends UMLTestCase {
         }
         
         //checking diagram node was created
-            /*
+            
+/*
             if (!util.nodeExists(DIA_PATH)){
                eventTool.waitNoEvent(5000);
                 fail("testCreateChoice verification failed");
@@ -445,7 +456,8 @@ public class ActivityElementsCDFSTests extends UMLTestCase {
         }
         
         //checking diagram node was created
-            /*
+            
+/*
             if (!util.nodeExists(DIA_PATH)){
                eventTool.waitNoEvent(5000);
                 fail("testCreateChoice verification failed");

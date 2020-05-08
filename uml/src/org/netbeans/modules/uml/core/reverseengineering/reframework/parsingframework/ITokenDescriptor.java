@@ -46,72 +46,86 @@ package org.netbeans.modules.uml.core.reverseengineering.reframework.parsingfram
 
 public interface ITokenDescriptor
 {
-	/**
+	
+/**
 	 * The line number that contains the token descriptor.
 	*/
 	public void setLine( int value );
 
-	/**
+	
+/**
 	 * The line number that contains the token descriptor.
 	*/
 	public int getLine();
 
-	/**
+	
+/**
 	 * The column that contains the token descriptor.
 	*/
 	public void setColumn( int value );
 
-	/**
+	
+/**
 	 * The column that contains the token descriptor.
 	*/
 	public int getColumn();
 
-	/**
+	
+/**
 	 * The stream position that contains the token descriptor.
 	*/
 	public void setPosition( long value );
 
-	/**
+	
+/**
 	 * The stream position that contains the token descriptor.
 	*/
 	public long getPosition();
 
-	/**
+	
+/**
 	 * The type of the token descriptor.
 	*/
 	public void setType( String value );
 
-	/**
+	
+/**
 	 * The type of the token descriptor.
 	*/
 	public String getType();
 
-	/**
+	
+/**
 	 * The value of the token descriptor.
 	*/
 	public void setValue( String value );
 
-	/**
+	
+/**
 	 * The value of the token descriptor.
 	*/
 	public String getValue();
 
-	/**
+	
+/**
 	 * The length of the token.
 	*/
 	public void setLength( int value );
 
-	/**
+	
+/**
 	 * The length of the token.
 	*/
 	public int getLength();
 
-	/**
+	
+/**
 	 * Adds a new property to the token descriptor.  Properties can be used to extend the information about the token.
 	*/
 	public void addProperty( String name, String value );
 
-	/**
+	
+/**
 	 * 
 	*/
 	public String getProperty( String name );

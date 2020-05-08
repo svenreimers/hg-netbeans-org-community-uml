@@ -43,26 +43,18 @@
  */
 
 
-/*
- *
- * Created on Jun 2, 2003
- * @author Trey Spiva
- */
+
+
 package org.netbeans.modules.uml.ui.controls.projecttree;
 
 import org.netbeans.modules.uml.ui.products.ad.projecttreedefaultengine.FilteredItemManager;
 
-/**
- * The project tree engine is used to control the items that are
- * displayed in the project tree.  Other component can also add
- * items to the tree but the engines are to primary source of the
- * project tree items.
- *
- * @author Trey Spiva
- */
+
+
 public interface IProjectTreeEngine
 {
-	/**
+	
+/**
 	 * Initializes the project tree engine.  The model can be
 	 * used to add new project elements to the tree.
 	 * 
@@ -70,7 +62,8 @@ public interface IProjectTreeEngine
 	 */
 	public void initialize(IProjectTreeModel model);
    
-   /**
+   
+/**
     * Test if it is OK to delete a tree item.
     * 
     * @param item The item to test.
@@ -79,7 +72,8 @@ public interface IProjectTreeEngine
     */
    public boolean canDelete(IProjectTreeItem item);
 
-   /**
+   
+/**
 	* Test if it is OK to edit a tree item.
 	* 
 	* @param item The item to test.
@@ -88,7 +82,8 @@ public interface IProjectTreeEngine
 	*/
    public boolean canEdit(IProjectTreeItem item);
    
-	/**
+	
+/**
 	 * called when item on the tree is expanding.
 	 */
    public void onNodeExpanding(IProjectTreeControl          pParentControl,

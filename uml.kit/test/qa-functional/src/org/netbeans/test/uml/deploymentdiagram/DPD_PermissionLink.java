@@ -68,11 +68,8 @@ import org.netbeans.test.umllib.testcases.UMLTestCase;
 import org.netbeans.test.umllib.vrf.LinkVerifier;
 
 
-/**
- *
- * @author yaa
- * @spec UML/DeploymentDiagram.xml
- */
+
+
 public class DPD_PermissionLink extends UMLTestCase {
     
     private static String prName = "UMLProjectDPD13";
@@ -97,6 +94,7 @@ public class DPD_PermissionLink extends UMLTestCase {
 
 //------------------------------------------------------------------------------    
     
+
 /**
  * @caseblock Permission link
  * @usecase Delete a Permission link from a diagram by popup menu
@@ -108,6 +106,7 @@ public class DPD_PermissionLink extends UMLTestCase {
         }
     }
     
+
 /**
  * @caseblock Permission link
  * @usecase Delete a Permission link from a diagram by shortcut
@@ -119,6 +118,7 @@ public class DPD_PermissionLink extends UMLTestCase {
         }
     }
     
+
 /**
  * @caseblock Permission link
  * @usecase Select all on a diagram by popup menu of a Permission link
@@ -129,6 +129,7 @@ public class DPD_PermissionLink extends UMLTestCase {
             fail("Test failed. Details in log file.");
         }
     }
+
 
 /**
  * @caseblock Permission link
@@ -141,6 +142,7 @@ public class DPD_PermissionLink extends UMLTestCase {
         }
     }
 
+
 /**
  * @caseblock Permission link
  * @usecase Find source element of a Permission link
@@ -151,6 +153,7 @@ public class DPD_PermissionLink extends UMLTestCase {
             fail("Test failed. Details in log file.");
         }
     }
+
 
 /**
  * @caseblock Permission link
@@ -163,6 +166,7 @@ public class DPD_PermissionLink extends UMLTestCase {
         }
     }
     
+
 /**
  * @caseblock Permission link
  * @usecase Redirect source element of a Permission link
@@ -173,6 +177,7 @@ public class DPD_PermissionLink extends UMLTestCase {
             fail("Test failed. Details in log file.");
         }
     }
+
 
 /**
  * @caseblock Permission link
@@ -185,6 +190,7 @@ public class DPD_PermissionLink extends UMLTestCase {
         }
     }
 
+
 /**
  * @caseblock Permission link
  * @usecase Redirect source element of a Permission link
@@ -195,6 +201,7 @@ public class DPD_PermissionLink extends UMLTestCase {
             fail("Test failed. Details in log file.");
         }
     }
+
 
 /**
  * @caseblock Permission link
@@ -207,6 +214,7 @@ public class DPD_PermissionLink extends UMLTestCase {
         }
     }
 
+
 /**
  * @caseblock Permission link
  * @usecase Redirect source element of a Permission link
@@ -217,6 +225,7 @@ public class DPD_PermissionLink extends UMLTestCase {
             fail("Test failed. Details in log file.");
         }
     }
+
 
 /**
  * @caseblock Permission link
@@ -229,6 +238,7 @@ public class DPD_PermissionLink extends UMLTestCase {
         }
     }
 
+
 /**
  * @caseblock Permission link
  * @usecase Redirect source element of a Permission link
@@ -239,6 +249,7 @@ public class DPD_PermissionLink extends UMLTestCase {
             fail("Test failed. Details in log file.");
         }
     }
+
 
 /**
  * @caseblock Permission link
@@ -251,6 +262,7 @@ public class DPD_PermissionLink extends UMLTestCase {
         }
     }
 
+
 /**
  * @caseblock Permission link
  * @usecase Redirect source element of a Permission link
@@ -262,6 +274,7 @@ public class DPD_PermissionLink extends UMLTestCase {
         }
     }
     
+
 /**
  * @caseblock Permission link
  * @usecase Redirect target element of a Permission link
@@ -272,6 +285,7 @@ public class DPD_PermissionLink extends UMLTestCase {
             fail("Test failed. Details in log file.");
         }
     }
+
 
 /**
  * @caseblock Permission link
@@ -284,6 +298,7 @@ public class DPD_PermissionLink extends UMLTestCase {
         }
     }
 
+
 /**
  * @caseblock Permission link
  * @usecase Redirect target element of a Permission link
@@ -294,6 +309,7 @@ public class DPD_PermissionLink extends UMLTestCase {
             fail("Test failed. Details in log file.");
         }
     }
+
 
 /**
  * @caseblock Permission link
@@ -306,6 +322,7 @@ public class DPD_PermissionLink extends UMLTestCase {
         }
     }
     
+
 /**
  * @caseblock Permission link
  * @usecase Redirect target element of a Permission link
@@ -316,6 +333,7 @@ public class DPD_PermissionLink extends UMLTestCase {
             fail("Test failed. Details in log file.");
         }
     }
+
 
 /**
  * @caseblock Permission link
@@ -328,6 +346,7 @@ public class DPD_PermissionLink extends UMLTestCase {
         }
     }
 
+
 /**
  * @caseblock Permission link
  * @usecase Redirect target element of a Permission link
@@ -339,6 +358,7 @@ public class DPD_PermissionLink extends UMLTestCase {
         }
     }
 
+
 /**
  * @caseblock Permission link
  * @usecase Redirect target element of a Permission link
@@ -349,6 +369,7 @@ public class DPD_PermissionLink extends UMLTestCase {
             fail("Test failed. Details in log file.");
         }
     }
+
 
 /**
  * @caseblock Permission link

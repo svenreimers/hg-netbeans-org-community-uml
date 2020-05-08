@@ -42,11 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * UMLModelRootNode.java
- *
- * Created on March 1, 2005, 6:26 PM
- */
+
+
 
 package org.netbeans.modules.uml.project.ui.nodes;
 
@@ -92,10 +89,8 @@ import org.openide.filesystems.FileUtil;
 import org.openide.loaders.DataObject;
 import org.openide.nodes.Node.Cookie;
 
-/**
- *
- * @author Mike
- */
+
+
 public class UMLModelRootNode extends UMLModelElementNode
         implements ModelRootNodeCookie, IProjectTreeFilterDialogEventsSink
 {
@@ -107,7 +102,8 @@ public class UMLModelRootNode extends UMLModelElementNode
     private DefaultTreeModel treeModelFilter = null;
     
     
-        /* TODO - remove the 3 second sleep and fix this
+        
+/* TODO - remove the 3 second sleep and fix this
          See HACK in static related to race condition
         private static ADProjectTreeEngine mEngine = new ADProjectTreeEngine();
         private static NetBeansUMLProjectTreeModel mModel = new NetBeansUMLProjectTreeModel();
@@ -118,7 +114,7 @@ public class UMLModelRootNode extends UMLModelElementNode
     //	static
     //	{
     //		// TODO - remove HACK sleeps.
-    //		// These were suggested by Alexi Mokeev re:
+    
     //		// "Project saving and freeze issue"
     //		mEngine = new ADProjectTreeEngine();
     //		try
@@ -212,7 +208,8 @@ public class UMLModelRootNode extends UMLModelElementNode
     }
     
     
-    /**
+    
+/**
      * Get the new types that can be created in this node. For example, a node
      * representing a class will permit attributes, operations, classes,
      * interfaces, and enumerations to be added.
@@ -271,7 +268,8 @@ public class UMLModelRootNode extends UMLModelElementNode
         return retVal;
     }
     
-    /**
+    
+/**
      * Retrieves the associated model element.  The model element will be the
      * IProject that represent the project.
      *
@@ -286,7 +284,8 @@ public class UMLModelRootNode extends UMLModelElementNode
         return mHelper.getProject();
     }
     
-    /**
+    
+/**
      * Adds the model element to the lookup.
      *
      * @param element The Model element that represents the project.
@@ -360,7 +359,8 @@ public class UMLModelRootNode extends UMLModelElementNode
     ///////////////////////////////////////////////////////////////////////////
     // Helper Methods
     
-    /**
+    
+/**
      * Initializes the node with the default cookies.  <b>Note:</b>  Do not
      * call this method if a looup is added.  When a lookup is added then the
      * lookup is used to find the cookies.
@@ -373,14 +373,16 @@ public class UMLModelRootNode extends UMLModelElementNode
     // Implementations for interface IProjectTreeFilterDialogEventsSink
     //////////////////////////////////////////////////////////////////
     
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.filter.IProjectTreeFilterDialogEventsSink#onProjectTreeFilterDialogInit(org.netbeans.modules.uml.ui.controls.filter.IFilterDialog, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
     */
     public void onProjectTreeFilterDialogInit(
             IFilterDialog dialog,IResultCell cell)
     {}
     
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.filter.IProjectTreeFilterDialogEventsSink#onProjectTreeFilterDialogOKActivated(org.netbeans.modules.uml.ui.controls.filter.IFilterDialog, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
     */
     public void onProjectTreeFilterDialogOKActivated(
@@ -498,7 +500,8 @@ public class UMLModelRootNode extends UMLModelElementNode
     }
     
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see java.lang.Object#equals(java.lang.Object)
     */
     public boolean equals(Object obj)

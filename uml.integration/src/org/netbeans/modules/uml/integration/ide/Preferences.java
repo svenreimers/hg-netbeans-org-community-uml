@@ -42,13 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File         : Preferences.java
- * Version      : 1.00
- * Description  : Describe preference manager for preferences affecting
- *                integrations.
- * Author       : Gautam Sabba
- */
+
+
 package org.netbeans.modules.uml.integration.ide;
 
 import java.io.File;
@@ -64,18 +59,16 @@ import org.netbeans.modules.uml.util.DummyCorePreference;
 import org.openide.util.NbBundle;
 import org.openide.util.NbPreferences;
 
+
 /**
  * Describe preference manager for preferences affecting integrations.
  */
 public class Preferences {
-    /**
-     * Interface for classes that want to be notified of when a preference
-     * changes.
-     *
-     * @author darshans
-     */
+    
+
     public static interface PreferenceWatcher {
-        /**
+        
+/**
          * Notification that the preference specified by the given preference
          * key has changed from oldV to newV.
          *
@@ -102,7 +95,8 @@ public class Preferences {
     public static final String RECONNECT_LINKS = "UML_Reconnect to Presentation Boundary" ;
 
 
-    /**
+    
+/**
      * Adds a preference watcher for the given preference. Watchers are notified
      * whenever their associated preference changes (or if their associated
      * preference is <code>null</code>, whenever any <em>watched</em> preference
@@ -160,7 +154,8 @@ public class Preferences {
         }
     }
 
-    /**
+    
+/**
      * Removes a property watcher. Any keys which were exclusively watched by
      * this watcher will also be removed from the watch list.
      *
@@ -193,7 +188,8 @@ public class Preferences {
         }
     }
 
-    /**
+    
+/**
      * Adds the given preference to the list of preferences that are being
      * watched. Changes to watched preferences fire events to their
      * corresponding watchers.
@@ -209,7 +205,8 @@ public class Preferences {
             watches.put(pref, null);
     }
 
-    /**
+    
+/**
      * Removes the given preference from the list of preferences that are being
      * watched.
      *
@@ -222,13 +219,8 @@ public class Preferences {
             watches.remove(pref);
     }
 
-    /**
-     * Reads all Describe preferences relevant to IDE integrations from the
-     * Describe preference manager, if the integration is currently connected
-     * to Describe. If not connected to Describe, this is a silent no-op. If
-     * the default workspace location is unset, will call the integration
-     * using IIDEManager.getDefaultWorkspaceDirectory() to get a default path.
-     */
+    
+
     public static void readPreferences() {
         if (!initPreferenceManager())
             return;
@@ -251,7 +243,8 @@ public class Preferences {
         }
     }
 
-    /**
+    
+/**
      * Clears all cached preference values and forces requerying the Describe
      * preference manager the next time any preference is asked for. This is
      * called automatically by readPreferences().
@@ -260,10 +253,8 @@ public class Preferences {
         preferenceCache.clear();
     }
 
-    /**
-     * Reads all preferences that are being watched, and fires events for those
-     * that have changed.
-     */
+    
+
     synchronized private static void readWatchedPreferences() {
         if (watches == null || watchers == null)
             return ;
@@ -325,7 +316,8 @@ public class Preferences {
         return (Collection) watchers.get(pref);
     }
 
-    /**
+    
+/**
      * Forgets the cached Describe preference manager. This should before
      * disconnecting from Describe (so that the preference manager proxy can be
      * garbage collected), and after a clobber-revive.
@@ -334,7 +326,8 @@ public class Preferences {
         prefMan = null;
     }
 
-    /**
+    
+/**
      * Returns whether links are reconnected to presentations element
      * boundaries.
      *
@@ -344,7 +337,8 @@ public class Preferences {
         return reconnectLinks;
     }
 
-    /**
+    
+/**
      * Returns whether integrations should prompt the user to create a new
      * Describe diagram when connecting a new IDE project to Describe.
      * @return <code>true</code> if the integration should prompt the user to
@@ -356,18 +350,19 @@ public class Preferences {
         // doesn't seem to be working in this case.  Not sure how this variable
         // would ever be updated.  So, changed to get the preference value whenever
         // this method is called
-        //kris richards - "QueryForNewDiagram" pref expunged. Set to true.
+        
         return true;
     }
     
     public static boolean getUseGenericsDefault()
     {
-        //kris richards - changing to use NbPreferences
-        //preferenceCache.remove(USE_GENERICS_DEFAULT);
+        
+        
 	return NbPreferences.forModule(DummyCorePreference.class).getBoolean("UML_USE_GENERICS_DEFAULT",true);
     }
 
-    /**
+    
+/**
      * Sets whether links are reconnected to presentation element boundaries.
      *
      * @param reconnectLinks <code>true</code> to reconnect links.
@@ -377,17 +372,19 @@ public class Preferences {
         setPreference(RECONNECT_LINKS, reconnectLinks? PSK_YES : PSK_NO);
     }
 
-    /**
+    
+/**
      * Returns the default name for unnamed elements in the Describe model.
      *
      * @return A <code>String</code> of the default name for unnamed elements.
      */
     public static String getDefaultElementName() {
-        //kris richards - "DefaultElementName" pref expunged. Set to "Unnamed".
+        
         return NbBundle.getMessage(Preferences.class, "UNNAMED");
     }
 
-    /**
+    
+/**
      * Returns the type to be used when substituting collection types for
      * array-type attributes.
      * @return <code>String</code> The name of the collection class to be used
@@ -481,7 +478,7 @@ public class Preferences {
 
     // Individual preference properties
     private static boolean reconnectLinks;
-//    private static boolean useGenericsForCollections;
+
 
     private static String  collectionOverride;
     private static IPreferenceManager2 prefMan = null;

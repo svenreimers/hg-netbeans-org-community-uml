@@ -49,10 +49,8 @@ package org.netbeans.modules.uml.ui.swing.pulldownbutton;
 import javax.swing.JComponent;
 import javax.swing.JPopupMenu;
 
-/**
- *
- * @author Trey Spiva
- */
+
+
 public class PopupMenuInvoker implements IPulldownButtonInvoker
 {
    private JPopupMenu m_Menu = null;
@@ -62,7 +60,8 @@ public class PopupMenuInvoker implements IPulldownButtonInvoker
       setMenu(menu);
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.addinframework.ui.swing.pulldownbutton.IPulldownButtonInvoker#showPulldown(javax.swing.JComponent)
     */
    public void showPulldown(JComponent owner)
@@ -74,7 +73,8 @@ public class PopupMenuInvoker implements IPulldownButtonInvoker
       }
    }
    
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.addinframework.ui.swing.pulldownbutton.IPulldownButtonInvoker#hidePulldown(javax.swing.JComponent)
     */
    public void hidePulldown(JComponent owner)
@@ -86,7 +86,8 @@ public class PopupMenuInvoker implements IPulldownButtonInvoker
       }
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.addinframework.ui.swing.pulldownbutton.IPulldownButtonInvoker#isPulldownVisible()
     */
    public boolean isPulldownVisible()
@@ -102,7 +103,8 @@ public class PopupMenuInvoker implements IPulldownButtonInvoker
       return retVal;
    }
 
-   /**
+   
+/**
     * @return
     */
    public JPopupMenu getMenu()
@@ -110,7 +112,8 @@ public class PopupMenuInvoker implements IPulldownButtonInvoker
       return m_Menu;
    }
 
-   /**
+   
+/**
     * @param menu
     */
    public void setMenu(JPopupMenu menu)

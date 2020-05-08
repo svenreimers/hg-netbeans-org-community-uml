@@ -41,6 +41,7 @@
  * Version 2 license, then the option applies only if the new code is
  * made subject to such option by the copyright holder.
  */
+
 /*
  * CLD_InterfaceTests.java
  *
@@ -67,10 +68,8 @@ import org.netbeans.test.umllib.NewDiagramWizardOperator;
 import org.netbeans.test.umllib.exceptions.NotFoundException;
 import org.netbeans.test.umllib.vrf.DiagramElementVerifier;
 
-/**
- *
- * @author Administrator
- */
+
+
 public class CLD_InterfaceElementTests extends ClassDiagramTestCase {
 
     private static String prName = "UMLProjectForInterface";
@@ -104,7 +103,8 @@ public class CLD_InterfaceElementTests extends ClassDiagramTestCase {
         suite.addTest(new CLD_InterfaceElementTests("testSelectAllSimilar"));
         suite.addTest(new CLD_InterfaceElementTests("testInvertSelection"));
         // 6.5 Hide/Show not yet implemented
-        /**
+        
+/**
         suite.addTest(new CLD_InterfaceElementTests("testHideChildrenOneLevel"));
         suite.addTest(new CLD_InterfaceElementTests("testHideChildrenAllLevels"));
         suite.addTest(new CLD_InterfaceElementTests("testHideParentsOneLevel"));

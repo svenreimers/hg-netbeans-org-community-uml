@@ -46,9 +46,8 @@ package org.netbeans.modules.uml.core.metamodel.core.constructs;
 
 import org.netbeans.modules.uml.core.metamodel.core.foundation.IDirectedRelationship;
 
-/**
- * @author Aztec
- */
+
+
 public interface IInclude extends IDirectedRelationship
 {
     public IUseCase getAddition();

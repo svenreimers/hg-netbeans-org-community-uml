@@ -55,11 +55,8 @@ import org.netbeans.test.uml.diagramcontextmenu.utils.DCMUtils;
 import org.netbeans.test.umllib.testcases.UMLTestCase;
 import org.netbeans.test.umllib.util.PopupConstants;
 
-/**
- *
- * @author yaa
- * @spec UML/Diagram_ContextMenus.xml
- */
+
+
 public class DiagramContextMenus_SQD extends UMLTestCase {
     private static String prName = "UMLProjectDCntMn";
     private static String sqdName = "DSequense";
@@ -83,6 +80,7 @@ public class DiagramContextMenus_SQD extends UMLTestCase {
         return suite;
     }
     
+
 /**
  * @caseblock Sequense Diagram
  * @usecase Check context menu of sequense diagram
@@ -97,6 +95,7 @@ public class DiagramContextMenus_SQD extends UMLTestCase {
             fail("Diagram popum menu item '" + itemName + "' is enabled but should not be");
         }
     }
+
 
 /**
  * @caseblock Sequense Diagram
@@ -113,6 +112,7 @@ public class DiagramContextMenus_SQD extends UMLTestCase {
         }
     }
 
+
 /**
  * @caseblock Sequense Diagram
  * @usecase Check context menu of sequense diagram
@@ -127,6 +127,7 @@ public class DiagramContextMenus_SQD extends UMLTestCase {
             fail("Diagram popum menu item '" + itemName + "' is enabled but should not be");
         }
     }
+
 
 /**
  * @caseblock Sequense Diagram
@@ -143,6 +144,7 @@ public class DiagramContextMenus_SQD extends UMLTestCase {
         }
     }
     
+
 /**
  * @caseblock Sequense Diagram
  * @usecase Check context menu of sequense diagram
@@ -158,6 +160,7 @@ public class DiagramContextMenus_SQD extends UMLTestCase {
         }
     }
     
+
 /**
  * @caseblock Sequense Diagram
  * @usecase Check context menu of sequense diagram
@@ -173,6 +176,7 @@ public class DiagramContextMenus_SQD extends UMLTestCase {
         }
     }
     
+
 /**
  * @caseblock Sequense Diagram
  * @usecase Check context menu of sequense diagram
@@ -188,6 +192,7 @@ public class DiagramContextMenus_SQD extends UMLTestCase {
         }
     }
 
+
 /**
  * @caseblock Sequense Diagram
  * @usecase Check context menu of sequense diagram
@@ -202,6 +207,7 @@ public class DiagramContextMenus_SQD extends UMLTestCase {
             fail("Diagram popum menu item '" + itemName + "' is enabled but should not be");
         }
     }
+
 /**
  * @caseblock Sequense Diagram
  * @usecase Check context menu of sequense diagram
@@ -216,6 +222,7 @@ public class DiagramContextMenus_SQD extends UMLTestCase {
             fail("Diagram popum menu item '" + itemName + "' is disabled but should not be");
         }
     }
+
 
 /**
  * @caseblock Sequense Diagram
@@ -237,6 +244,7 @@ public class DiagramContextMenus_SQD extends UMLTestCase {
         }
     }
     
+
 /**
  * @caseblock Sequense Diagram
  * @usecase Check context menu of sequense diagram
@@ -252,6 +260,7 @@ public class DiagramContextMenus_SQD extends UMLTestCase {
         }
     }
     
+
 /**
  * @caseblock Sequense Diagram
  * @usecase Check context menu of sequense diagram
@@ -267,6 +276,7 @@ public class DiagramContextMenus_SQD extends UMLTestCase {
         }
     }
     
+
 /**
  * @caseblock Sequense Diagram
  * @usecase Check context menu of sequense diagram
@@ -282,6 +292,7 @@ public class DiagramContextMenus_SQD extends UMLTestCase {
         }
     }
     
+
 /**
  * @caseblock Sequense Diagram
  * @usecase Check context menu of sequense diagram
@@ -301,6 +312,7 @@ public class DiagramContextMenus_SQD extends UMLTestCase {
             }
         }
     }
+
 
 /**
  * @caseblock Sequense Diagram
@@ -322,6 +334,7 @@ public class DiagramContextMenus_SQD extends UMLTestCase {
         }
     }
     
+
 /**
  * @caseblock Sequense Diagram
  * @usecase Check context menu of sequense diagram
@@ -342,6 +355,7 @@ public class DiagramContextMenus_SQD extends UMLTestCase {
         }
     }
     
+
 /**
  * @caseblock Sequense Diagram
  * @usecase Check context menu of sequense diagram
@@ -356,6 +370,7 @@ public class DiagramContextMenus_SQD extends UMLTestCase {
             fail("Diagram popum menu item '" + itemName + "' is disabled but should not be");
         }
     }
+
 
 /**
  * @caseblock Sequense Diagram
@@ -372,6 +387,7 @@ public class DiagramContextMenus_SQD extends UMLTestCase {
         }
     }
 
+
 /**
  * @caseblock Sequense Diagram
  * @usecase Check context menu of sequense diagram
@@ -387,6 +403,7 @@ public class DiagramContextMenus_SQD extends UMLTestCase {
         }
     }
     
+
 /**
  * @caseblock Sequense Diagram
  * @usecase Check context menu of sequense diagram

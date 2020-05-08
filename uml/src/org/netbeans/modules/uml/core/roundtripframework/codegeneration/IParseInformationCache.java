@@ -51,27 +51,32 @@ import org.netbeans.modules.uml.core.reverseengineering.reframework.IParserData;
 
 public interface IParseInformationCache
 {
-	/**
+	
+/**
 	 * Returns Parse Information for the specified ISourceFileArtifact
 	*/
 	public IFileInformation getParseInformation( ISourceFileArtifact pArtifact );
 
-	/**
+	
+/**
 	 * Marks an ISourceFileArtifact's parse information as out of date.
 	*/
 	public long invalidateParseInformation( ISourceFileArtifact pArtifact );
 
-	/**
+	
+/**
 	 * Returns an IParserData object for the given IElement object
 	*/
 	public IParserData getParserData( IElement pArtifactOwner, IElement pElement, String language );
 
-	/**
+	
+/**
 	 * Finds an IParserData object for the given IElement object
 	*/
 	public IParserData findParserData( IElement pArtifactOwner, IElement pElement );
 
-	/**
+	
+/**
 	 * Removes all cache entries
 	*/
 	public long removeAllCacheEntries();

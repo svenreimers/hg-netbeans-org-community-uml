@@ -50,10 +50,8 @@ import org.netbeans.api.visual.widget.Widget;
 import org.netbeans.modules.uml.drawingarea.LabelManager;
 import org.openide.util.NbBundle;
 
-/**
- *
- * @author treyspiva
- */
+
+
 public class ResetLabelsAction extends AbstractAction
 {
     private LabelManager manager = null;

@@ -42,20 +42,17 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : REConditional.java
- * Created on : Dec 10, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.reverseengineering.reframework;
 
-/**
- * @author Aztec
- */
+
+
 public class REConditional extends MethodDetailParserData implements IREConditional
 {
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.IREMethodDetailData#getLine()
      */
     public int getLine()

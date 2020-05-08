@@ -50,7 +50,8 @@ import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure
 
 public interface IDynamicsRelationFactory
 {
-    /**
+    
+/**
      * Changes the message's ends to be constrained by the to/from interaction
      * operands.
      *
@@ -63,7 +64,8 @@ public interface IDynamicsRelationFactory
     public void moveMessageToInteractionOperands(IMessage message,
             IInteractionOperand fromOwner, IInteractionOperand toOwner);
 
-    /**
+    
+/**
      * Creates a new Message between the from lifeline and the passed in to 
      * lifeline.
      *
@@ -87,7 +89,8 @@ public interface IDynamicsRelationFactory
             IElement toElement, IInteractionFragment toOwner, IOperation oper,
             int kind);
 
-    /**
+    
+/**
 	 * Creates a new Message between the from lifeline and the passed in to
 	 * lifeline.
 	 * 
@@ -115,7 +118,8 @@ public interface IDynamicsRelationFactory
             IInteractionFragment fromOwner, IElement toElement,
             IInteractionFragment toOwner, IOperation oper, int kind);
 
-    /**
+    
+/**
 	 * Creates a new Action Occurrence on the Lifeline.
 	 * 
 	 * @param lifeline
@@ -129,7 +133,8 @@ public interface IDynamicsRelationFactory
 
     
 
-    /**
+    
+/**
 	 * Creates a new MessageConnector between the two passed in life lines
 	 * 
 	 * @param from

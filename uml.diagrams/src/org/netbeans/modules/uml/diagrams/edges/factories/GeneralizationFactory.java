@@ -54,10 +54,8 @@ import org.netbeans.modules.uml.core.metamodel.infrastructure.ICollaboration;
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier;
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IGeneralization;
 
-/**
- *
- * @author treyspiva
- */
+
+
 public class GeneralizationFactory extends AbstractRelationshipFactory
 {
 

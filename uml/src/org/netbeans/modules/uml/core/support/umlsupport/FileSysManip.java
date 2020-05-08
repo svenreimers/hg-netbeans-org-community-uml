@@ -52,10 +52,8 @@ import org.netbeans.modules.uml.core.support.UMLLogger;
 import org.openide.filesystems.FileObject;
 import org.openide.filesystems.FileUtil;
 
-/**
- *
- * @author Trey Spiva
- */
+
+
 public class FileSysManip
 {
    public static String getExtension(final String fullFilename)
@@ -71,7 +69,8 @@ public class FileSysManip
       return retVal;
    }
 
-   /**
+   
+/**
 	*
 	* Determines whether or not the file pointed to contains the passed-in
 	* string anywhere in the file.
@@ -89,7 +88,8 @@ public class FileSysManip
    		return isFound;
    }
    
-   /**
+   
+/**
 	*
 	* Resolves any sub strings in the passed in string that begin with '%' and
 	* end with '%'. The string between the asterixes must be found in the preference
@@ -105,7 +105,8 @@ public class FileSysManip
    		return FileManip.resolveVariableExpansion(filePath);
    }
    
-   /**
+   
+/**
 	* Returns the argument filename with the argument extension
 	*
 	* @param fullFilename The full path to the file
@@ -131,7 +132,8 @@ public class FileSysManip
       return retVal;
    }
    
-   /**
+   
+/**
     * Returns just the path for the incoming filename
     */
    public static String getPath(String filename)
@@ -142,7 +144,8 @@ public class FileSysManip
       return f.getParent();
    }
    
-	/**
+	
+/**
 	 * @param fileName
 	 * @param m_CacheDir
 	 * @return
@@ -185,7 +188,8 @@ public class FileSysManip
 //		return retVal;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Checks to see if path is relative to rootPath. If it is, an absolute path
 	 * is built.
@@ -218,7 +222,8 @@ public class FileSysManip
 		return newPath;
 	}
 
-	/**
+	
+/**
 	 * Creates a full path out of a location, filename and extension.  This
 	 * version DOES NOT account for the location being a possible filename.
 	 *
@@ -274,7 +279,8 @@ public class FileSysManip
        }
        return copySuccess;
    }
-   /**
+   
+/**
 	* Adds a backslash to the path
 	*/
    public static String addBackslash(String sPath)
@@ -297,7 +303,8 @@ public class FileSysManip
    		return sNew;
    }
 
-   /**
+   
+/**
     * Returns just the filename (with extension) for the incoming, full path, filename
     */
    public static String getFileNameAndExtension( String fullFilename )

@@ -48,47 +48,56 @@ package org.netbeans.modules.uml.core.metamodel.core.foundation;
 
 public interface ICreationFactory
 {
-	/**
+	
+/**
 	 * Retrieves the singleton CreationFactory object, running on the Running Object Table.
 	*/
 	public ICreationFactory getCreationFactory();
 
-	/**
+	
+/**
 	 * Retrieves the singleton CreationFactory object, running on the Running Object Table.
 	*/
 	public void setCreationFactory( ICreationFactory value );
 
-	/**
+	
+/**
 	 * Removes this CreationFactory off the ROT, if it is on it.
 	*/
 	public long cleanUp();
 
-	/**
+	
+/**
 	 * Retrieves the revocation number that was assigned when registering this interface on the ROT.
 	*/
 	public long getRevokeNumber();
 
-	/**
+	
+/**
 	 * Retrieves the revocation number that was assigned when registering this interface on the ROT.
 	*/
 	public void setRevokeNumber( long value );
 
-	/**
+	
+/**
 	 * Retrieve the type specified by the type name, e.g. Class. The type has been fully prepared and initialized.
 	*/
 	public Object retrieveMetaType( String typeName, Object outer );
 
-	/**
+	
+/**
 	 * Retrieve the type specified by the type name, e.g. Class. The type is a shell. No initialization has been done.
 	*/
 	public Object retrieveEmptyMetaType( String typeName, Object outer );
 
-	/**
+	
+/**
 	 * Retrieve the type specified by the type name, e.g. Class. The type is a shell. No initialization has been done.  The location is the stop under the hive where the type can be found 
 	*/
 	public Object retrieveEmptyMetaType( String subKey, String typeName, Object outer );
 
-	/**
+	
+/**
 	 * Sets the ConfigManager on this factory. Ref counts are NOT bumped.
 	*/
 	public void setConfigManager( IConfigManager value );

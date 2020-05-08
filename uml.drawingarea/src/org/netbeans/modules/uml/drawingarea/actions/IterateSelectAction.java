@@ -58,10 +58,8 @@ import org.netbeans.api.visual.widget.Widget.Dependency;
 import org.netbeans.modules.uml.drawingarea.view.CollapsibleWidgetManager;
 import org.openide.util.Lookup;
 
-/**
- *
- * @author treyspiva
- */
+
+
 public class IterateSelectAction extends WidgetAction.Adapter
 {
 

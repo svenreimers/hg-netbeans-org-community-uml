@@ -43,6 +43,7 @@
  */
 
 
+
 /*
  * Created on May 22, 2003
  *
@@ -69,10 +70,8 @@ import org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeFolder;
 import org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeItem;
 
 
-/**
- * @author treys
- *
- */
+
+
 public class PreferenceDialogTreeRenderer extends DefaultTreeCellRenderer implements TreeCellRenderer
 {	
 	private ImageIcon   m_WarningIcon      = null;
@@ -81,7 +80,8 @@ public class PreferenceDialogTreeRenderer extends DefaultTreeCellRenderer implem
 	{	
 	}
 	
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see javax.swing.tree.TreeCellRenderer#getTreeCellRendererComponent(javax.swing.JTree, java.lang.Object, boolean, boolean, boolean, int, boolean)
     */
    public Component getTreeCellRendererComponent(JTree  tree,
@@ -161,7 +161,8 @@ public class PreferenceDialogTreeRenderer extends DefaultTreeCellRenderer implem
 //   {
 //   }
 
-   /**
+   
+/**
     * @param m_ProjectIcon
     * @param string
     * @return
@@ -175,7 +176,8 @@ public class PreferenceDialogTreeRenderer extends DefaultTreeCellRenderer implem
       return image;
    }
 	
-	/**
+	
+/**
 	 * @param value
 	 */
 	private void formatElementForObject(DefaultMutableTreeNode value)

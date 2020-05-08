@@ -49,10 +49,8 @@ import java.util.HashMap;
 import java.util.List;
 import org.netbeans.modules.uml.drawingarea.persistence.util.XMIConstants;
 
-/**
- *
- * @author Jyothi
- */
+
+
 public class EdgeWriter extends Writer {
 
     protected String name;

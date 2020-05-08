@@ -46,10 +46,8 @@ package org.netbeans.modules.uml.diagrams.edges;
 import org.netbeans.api.visual.widget.Scene;
 import org.netbeans.modules.uml.drawingarea.LabelManager;
 
-/**
- *
- * @author treyspiva
- */
+
+
 public class AbstractionConnector extends DependencyConnector
 {
 

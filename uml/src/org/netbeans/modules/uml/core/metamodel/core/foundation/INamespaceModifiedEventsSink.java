@@ -48,12 +48,14 @@ import org.netbeans.modules.uml.core.support.umlsupport.IResultCell;
 
 public interface INamespaceModifiedEventsSink
 {
-	/**
+	
+/**
 	 * Fired whenever an element is about to be added to a namespace.
 	*/
 	public void onPreElementAddedToNamespace( INamespace space, INamedElement elementToAdd, IResultCell cell );
 
-	/**
+	
+/**
 	 * Fired whenever an element is added to a namespace.
 	*/
 	public void onElementAddedToNamespace( INamespace space, INamedElement elementAdded, IResultCell cell );

@@ -52,10 +52,8 @@ import org.netbeans.api.visual.widget.Scene;
 import org.netbeans.modules.uml.drawingarea.LabelManager;
 import org.netbeans.modules.uml.drawingarea.ModelElementChangedKind;
 
-/**
- *
- * @author treyspiva
- */
+
+
 public class CommentLinkConnector extends AbstractUMLConnectionWidget
 {
     public CommentLinkConnector(Scene scene)

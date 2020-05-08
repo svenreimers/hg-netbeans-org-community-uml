@@ -82,14 +82,13 @@ import org.netbeans.modules.uml.ui.support.helpers.IGUIBlocker.GBK;
 //import org.netbeans.modules.uml.ui.swing.drawingarea.IDiagramEngine;
 //import org.netbeans.modules.uml.ui.swing.drawingarea.IDrawingAreaControl;
 
-/**
- * @author sumitabhk
- *
- */
+
+
 public class ComponentDiagramCreator implements IComponentDiagramCreator
 {
 
-	/**
+	
+/**
 	 * 
 	 */
 	public ComponentDiagramCreator()
@@ -97,7 +96,8 @@ public class ComponentDiagramCreator implements IComponentDiagramCreator
 		super();
 	}
 
-	/**
+	
+/**
 	 * Generate the component diagram.
 	 *
 	 * @param pSelectedElements [in] The elements that should be used to populate this diagram
@@ -160,7 +160,8 @@ public class ComponentDiagramCreator implements IComponentDiagramCreator
 		return handled;
 	}
 
-	/**
+	
+/**
 	 * Creates the component diagram based on the elements in the arguments
 	 *
 	 * @param pExistingDiagram [in] The component diagram to populate
@@ -195,7 +196,7 @@ public class ComponentDiagramCreator implements IComponentDiagramCreator
 //               ThermProgress ensureEnd = new ThermProgress();
 //
 //               // If we have a message string then begin the progress
-//               String message = loadString("IDS_CREATING_PES");
+
 //               ensureEnd.beginProgress(message, 0, count, 0);
 //               for (int i=0; i<count; i++)
 //               {
@@ -265,7 +266,8 @@ public class ComponentDiagramCreator implements IComponentDiagramCreator
 //		}
 	}
 
-	/**
+	
+/**
 	 * Creates a component presentation element
 	 *
 	 * @param pExistingDiagram [in] The diagram to create the component on
@@ -296,7 +298,8 @@ public class ComponentDiagramCreator implements IComponentDiagramCreator
 //		}
 //	}
 
-	/**
+	
+/**
 	 * Creates the interfaces and assembly connectors on the port
 	 *
 	 * @param pADRelationshipDiscovery [in] The relationship discovery object on that diagram
@@ -335,7 +338,8 @@ public class ComponentDiagramCreator implements IComponentDiagramCreator
 //		}
 //	}
 
-	/**
+	
+/**
 	 * Called after the layout is performed, this moves nodes around so they get
 	 * contained in their parents.
 	 *
@@ -359,7 +363,7 @@ public class ComponentDiagramCreator implements IComponentDiagramCreator
 //					if (allPEs != null)
 //					{
 //						// Autorouting is extreemly slow unless it's straight.  So we force the 
-//						// autorouting for this diagram to STRAIGHT no matter what anyone else says.
+
 //						IAutoRoutingAction tempAction = new AutoRoutingAction();
 //						tempAction.forceAutoRoutingStyle(IAutoRoutingActionKind.ARAK_STRAIGHT);
 //
@@ -372,7 +376,7 @@ public class ComponentDiagramCreator implements IComponentDiagramCreator
 //						{
 //							{
 //								int count = allPEs.size();
-//								String message = loadString("IDS_PERFORMING_COMPONENT_LAYOUT");
+
 //								ThermCtrl thermState = new ThermCtrl(message, count);
 //								for (int i=0; i<count; i++)
 //								{
@@ -412,7 +416,7 @@ public class ComponentDiagramCreator implements IComponentDiagramCreator
 //
 //							// This will hide the ports on the components so they don't need to be moved
 //							// as well.
-//							tree.onGraphEvent(IGraphEventKind.GEK_PRE_RESIZE, loadString("IDS_HIDING_PORTS"));
+
 //						}
 //						
 //						//IDS_BUILDING_GENEALOGY
@@ -427,7 +431,7 @@ public class ComponentDiagramCreator implements IComponentDiagramCreator
 //						tree.setStackingOrder();
 //						
 //						// Here's where the ports get reattached to the side of the components
-//						tree.onGraphEvent(IGraphEventKind.GEK_POST_RESIZE, loadString("IDS_SHOWING_PORTS"));
+
 //						
 //						{
 ////							IGUIBlocker blocker = new GUIBlocker();
@@ -463,7 +467,8 @@ public class ComponentDiagramCreator implements IComponentDiagramCreator
 		return 0;
 	}
 
-	/**
+	
+/**
 	 * Takes the geneology information
 	 *
 	 * @param pDiagram [in] The diagram to look for containment on.
@@ -494,7 +499,8 @@ public class ComponentDiagramCreator implements IComponentDiagramCreator
 //		}
 //	}
 
-	/**
+	
+/**
 	 * Moves all the nodes on the diagram so that nothing is contained
 	 *
 	 * @param pAxControl [in] The diagram

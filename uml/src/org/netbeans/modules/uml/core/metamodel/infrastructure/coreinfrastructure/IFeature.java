@@ -48,37 +48,44 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.IRedefinableEleme
 
 public interface IFeature extends IRedefinableElement
 {
-	/**
+	
+/**
 	 * Retrieves the fully qualified name of the element. Project name is never included.  This will be in the form 'A::B::C'.
 	*/
 	public String getQualifiedName2();
 
-	/**
+	
+/**
 	 * Specifies if the Feature is defined for the Classifier (true) or for the Instances of the Classifier (false). The default value is false.
 	*/
 	public boolean getIsStatic();
 
-	/**
+	
+/**
 	 * Specifies if the Feature is defined for the Classifier (true) or for the Instances of the Classifier (false). The default value is false.
 	*/
 	public void setIsStatic( boolean value );
 
-	/**
+	
+/**
 	 * The Classifier declaring the Feature.
 	*/
 	public IClassifier getFeaturingClassifier();
 
-	/**
+	
+/**
 	 * The Classifier declaring the Feature.
 	*/
 	public void setFeaturingClassifier( IClassifier value );
 
-	/**
+	
+/**
 	 * Moves this Feature to the passed in Classifier.
 	*/
 	public void moveToClassifier( IClassifier destination );
 
-	/**
+	
+/**
 	 * Duplicates this Feature, then adds it to the passed in Classifier.
 	*/
 	public IFeature duplicateToClassifier( IClassifier destination );

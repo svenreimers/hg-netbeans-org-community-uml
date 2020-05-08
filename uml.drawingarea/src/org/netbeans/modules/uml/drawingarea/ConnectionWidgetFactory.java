@@ -44,20 +44,8 @@ package org.netbeans.modules.uml.drawingarea;
 import org.netbeans.api.visual.widget.ConnectionWidget;
 import org.netbeans.api.visual.widget.Scene;
 
-/**
- * The connection widget factory is used to create a connection widget that is 
- * need to be added to a scene.  
- * 
- * A connection widget is declared via the layer file system.  The connection
- * widget declaration must be in the folder <i>UML/<Diagram Type>/Connectors/<Edge Type></i>
- * if the connection can only be used for a specific diagram type.  If the edge
- * can be used in multiple diagram types the folder <i>UML/Connectors/<Edge Type></i> 
- * can be used instead.  The file inside of the folder should be an instance
- * that declares the ConnectionWidgetFactory that is used to create a 
- * connection widget.
- * 
- * @author treyspiva
- */
+
+
 public interface ConnectionWidgetFactory
 {
     public ConnectionWidget createConnection(Scene scene);

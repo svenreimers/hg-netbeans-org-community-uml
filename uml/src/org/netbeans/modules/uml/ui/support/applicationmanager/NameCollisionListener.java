@@ -43,6 +43,7 @@
  */
 
 
+
 /*
  * Created on Jun 6, 2003
  *
@@ -51,11 +52,8 @@
 package org.netbeans.modules.uml.ui.support.applicationmanager;
 
 import org.netbeans.modules.uml.core.metamodel.core.foundation.CoreNameCollisionListener;
-/**
- * @author sumitabhk
- *
- *
- */
+
+
 public class NameCollisionListener extends CoreNameCollisionListener implements INameCollisionListener
 {
 

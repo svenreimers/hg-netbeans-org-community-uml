@@ -56,10 +56,8 @@ import org.openide.filesystems.FileObject;
 import org.openide.filesystems.FileUtil;
 import org.openide.util.Exceptions;
 
-/**
- *
- * @author jyothi
- */
+
+
 public class DiagramParser implements IDiagramParser 
 {
 

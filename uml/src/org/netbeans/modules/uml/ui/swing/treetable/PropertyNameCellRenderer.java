@@ -43,6 +43,7 @@
  */
 
 
+
 /*
  * Created on Jun 10, 2003
  *
@@ -54,10 +55,8 @@ import java.awt.Component;
 import javax.swing.JTable;
 import javax.swing.table.DefaultTableCellRenderer;
 
-/**
- * @author sumitabhk
- *
- */
+
+
 public class PropertyNameCellRenderer extends DefaultTableCellRenderer
 {
 

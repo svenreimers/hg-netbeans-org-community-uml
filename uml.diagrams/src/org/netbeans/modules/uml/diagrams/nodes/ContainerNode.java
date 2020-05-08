@@ -72,10 +72,8 @@ import org.netbeans.modules.uml.drawingarea.view.UMLNodeWidget;
 import org.netbeans.modules.uml.drawingarea.widgets.ContainerWidget;
 import org.openide.util.Lookup;
 
-/**
- *
- * @author treyspiva
- */
+
+
 public abstract class ContainerNode extends UMLNodeWidget implements org.netbeans.modules.uml.drawingarea.widgets.ContainerNode
 {
     private ContainerResizeProvider resizeProvider;

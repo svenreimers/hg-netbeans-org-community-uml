@@ -46,17 +46,20 @@ package org.netbeans.modules.uml.core.reverseengineering.reframework;
 
 public interface IREClassFeature extends IREClassElement
 {
-	/**
+	
+/**
 	 * Retrieves the scope of the class element.  The scope of a feature can be an instance or a classifier.
 	*/
 	public int getOwnerScope();
 
-	/**
+	
+/**
 	 * Retrieves the type of the class feature.  Example the type of a attribute or the return type of a operation.
 	*/
 	public String getType();
 
-	/**
+	
+/**
 	 * Retrieves whether the class feature is a constant.
 	*/
 	public boolean getIsConstant();

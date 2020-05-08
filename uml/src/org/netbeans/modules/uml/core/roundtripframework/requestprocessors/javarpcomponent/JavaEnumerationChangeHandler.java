@@ -42,6 +42,7 @@
  * made subject to such option by the copyright holder.
  */
 
+
 /*
  * JavaEnumerationChangeHandler.java
  *
@@ -69,10 +70,8 @@ import org.netbeans.modules.uml.core.roundtripframework.RequestDetailKind;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 import org.netbeans.modules.uml.ui.support.commondialogs.MessageIconKindEnum;
 
-/**
- *
- * @author Administrator
- */
+
+
 public class JavaEnumerationChangeHandler  extends JavaChangeHandler
 {
    
@@ -580,7 +579,8 @@ public class JavaEnumerationChangeHandler  extends JavaChangeHandler
    ////////////////////////////////////////////////////////////////////////////
    // Protected Helper Methods
    
-   /**
+   
+/**
 	 * Renames the name of the contructor when the name of the class changes.
 	 *
 	 * @param pClass[in] The class that contains the constructor.

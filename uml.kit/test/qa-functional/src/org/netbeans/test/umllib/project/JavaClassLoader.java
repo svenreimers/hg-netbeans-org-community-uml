@@ -43,14 +43,8 @@
  */
 
 
-/*
- * JavaClassLoader.java
- *
- * Created on January 18, 2007, 1:07 PM
- *
- * To change this template, choose Tools | Template Manager
- * and open the template in the editor.
- */
+
+
 
 package org.netbeans.test.umllib.project;
 
@@ -60,10 +54,8 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.HashMap;
 
-/**
- *
- * @author Alexandr Scherbatiy
- */
+
+
 public class JavaClassLoader extends ClassLoader{
     
     

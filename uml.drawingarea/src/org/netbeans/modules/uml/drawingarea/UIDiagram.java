@@ -100,10 +100,8 @@ import org.openide.filesystems.FileUtil;
 import org.openide.loaders.MultiDataObject;
 import org.openide.util.Exceptions;
 
-/**
- *
- * @author Jyothi
- */
+
+
 public class UIDiagram extends Diagram { 
     
 //    private WeakReference < UITopComponent > rawTopComponent = null;
@@ -138,7 +136,8 @@ public class UIDiagram extends Diagram {
        data = dobj; 
     }
     
-    /**
+    
+/**
      * similr to setDrawingArea in 6.0
      * sometimes it's required to know engine/scene/top component based on diagram
      * @param engine
@@ -147,7 +146,8 @@ public class UIDiagram extends Diagram {
     {
         this.scene=scene;
     }
-    /**
+    
+/**
      * similr to getDrawingArea in 6.0
      * sometimes it's required to know engine/scene/top component based on diagram
      * @param engine
@@ -157,7 +157,8 @@ public class UIDiagram extends Diagram {
         return scene;
     }
     
-    /**
+    
+/**
      * Saves the diagram
      */
     public void save() throws IOException { 
@@ -169,7 +170,8 @@ public class UIDiagram extends Diagram {
         }
     }
     
-    /**
+    
+/**
      * Is this diagram readonly?
      *
      * @param pVal [out,retval] true if the diagram is readonly
@@ -186,7 +188,8 @@ public class UIDiagram extends Diagram {
         return retVal;
     }
     
-    /**
+    
+/**
      * Is this diagram readonly?
      *
      * @param newVal [in] true to make the diagram readonly
@@ -226,13 +229,15 @@ public class UIDiagram extends Diagram {
         return ret;
     }
     
-    /**
+    
+/**
      * Saves the diagram as a graphic
      */
     public void saveAsGraphic(String sFilename, int nKind) {
     }
     
-    /**
+    
+/**
      * Saves the diagram as a graphic
      */
     public IGraphicExportDetails saveAsGraphic(final String sFilename, int nKind, final double scale) {
@@ -367,7 +372,8 @@ public class UIDiagram extends Diagram {
         }
     }
     
-        /* (non-Javadoc)
+        
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.core.metamodel.diagrams.IDiagram#getNameWithAlias()
          */
     public String getNameWithAlias() {
@@ -389,7 +395,8 @@ public class UIDiagram extends Diagram {
         return retVal;
     }
     
-        /* (non-Javadoc)
+        
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.core.metamodel.diagrams.IDiagram#setNameWithAlias(java.lang.String)
          */
     public void setNameWithAlias(String value) 
@@ -496,12 +503,14 @@ public class UIDiagram extends Diagram {
         return space;
     }
     
-    /**
+    
+/**
      * Selects all the items on the diagram
      */
     public void selectAll(boolean bSelect) {
     }
-    /**
+    
+/**
      * Centers the diagram on this presentation object
      */
     public void centerPresentationElement(IPresentationElement pPresentationElement, 
@@ -533,7 +542,8 @@ public class UIDiagram extends Diagram {
         }
     }
     
-    /**
+    
+/**
      * Centers the diagram on this presentation object
      */
     public void centerPresentationElement(String sXMIID, 
@@ -549,7 +559,8 @@ public class UIDiagram extends Diagram {
         }
     }
     
-    /**
+    
+/**
      * Centers the diagram on this presentation object
      * 
      * @param point The point in scene coordinates.
@@ -574,7 +585,8 @@ public class UIDiagram extends Diagram {
         getScene().getView().scrollRectToVisible(viewRect);
     }
     
-    /**
+    
+/**
      * Centers the diagram on a specified rectangle
      * 
      * @param sceneRect The rectangle in scene coordinates.
@@ -589,7 +601,8 @@ public class UIDiagram extends Diagram {
     public void hasGraphObjects(boolean bHasObjects) {
     }
     
-        /* (non-Javadoc)
+        
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.core.metamodel.diagrams.IDiagram#getDiagramKind()
          */
     public int getDiagramKind() {
@@ -597,7 +610,8 @@ public class UIDiagram extends Diagram {
         return retVal;
     }
     
-        /* (non-Javadoc)
+        
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.core.metamodel.diagrams.IDiagram#setDiagramKind(int)
          */
     public void setDiagramKind(int value) 
@@ -605,7 +619,8 @@ public class UIDiagram extends Diagram {
         diagramType = value;
     }
     
-        /* (non-Javadoc)
+        
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.core.metamodel.diagrams.IDiagram#getDiagramKind2()
          */
     public String getDiagramKindAsString() 
@@ -614,14 +629,16 @@ public class UIDiagram extends Diagram {
         return diaMgr.getDiagramTypeName(getDiagramKind());
     }
     
-        /* (non-Javadoc)
+        
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.core.metamodel.diagrams.IDiagram#getSelected()
          */
     public ETList<IPresentationElement> getSelected() {
         ETList < IPresentationElement > retVal = null;
         return retVal;
     }
-        /* (non-Javadoc)
+        
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.core.metamodel.diagrams.IDiagram#getAllItems()
          */
     public ETList<IPresentationElement> getAllItems() 
@@ -641,7 +658,8 @@ public class UIDiagram extends Diagram {
         return retVal;
     }
     
-        /* (non-Javadoc)
+        
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.core.metamodel.diagrams.IDiagram#getAllItems(org.netbeans.modules.uml.core.metamodel.core.foundation.IElement)
          */
     public ETList<IPresentationElement> getAllItems(IElement pModelElement) 
@@ -660,7 +678,8 @@ public class UIDiagram extends Diagram {
         return retVal;
     }
     
-    /**
+    
+/**
      * Returns a list of all the model elements on the diagram.
     */
     public ETList<IElement> getModelElements()
@@ -681,7 +700,8 @@ public class UIDiagram extends Diagram {
         return retVal;
     }
 
-    /**
+    
+/**
      * Select all the objects on the diagram that are of the indicated type
      * 
      * @param type The type of the model element.
@@ -709,13 +729,15 @@ public class UIDiagram extends Diagram {
         return retVal;
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.diagrams.IDiagram#receiveBroadcast(org.netbeans.modules.uml.core.metamodel.diagrams.IBroadcastAction)
      */
     public void receiveBroadcast(IBroadcastAction pAction) {
     }
     
-    /**
+    
+/**
      * Notifies the diagram to refresh the node graphical object that 
      * is associated with the presentation element.
      * 
@@ -743,7 +765,8 @@ public class UIDiagram extends Diagram {
         
         return retVal;
     }
-        /* (non-Javadoc)
+        
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.core.metamodel.diagrams.IDiagram#getIsDirty()
          */
     @Override
@@ -766,7 +789,8 @@ public class UIDiagram extends Diagram {
         }
     }
     
-        /* (non-Javadoc)
+        
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.core.metamodel.diagrams.IDiagram#isSame(org.netbeans.modules.uml.core.metamodel.diagrams.IDiagram)
          */
     public boolean isSame(IDiagram pDiagram) {
@@ -778,7 +802,8 @@ public class UIDiagram extends Diagram {
         return false;
     }
     
-    /**
+    
+/**
      * Search for, and return if found, the presentation element on this diagram that has the specified xmi.id
      *
      * @param sXMIID [in] The xmi.id of the presentation to search for, and find
@@ -791,7 +816,8 @@ public class UIDiagram extends Diagram {
         return retVal;
     }
     
-    /**
+    
+/**
      * Returns the relationship discovery object
      *
      * @param pDiscoverer [out,retval] Returns the relationship discovery object
@@ -804,31 +830,36 @@ public class UIDiagram extends Diagram {
         return retVal;
     }
     
-        /* (non-Javadoc)
+        
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.core.metamodel.diagrams.IDiagram#addAssociatedDiagram(java.lang.String)
          */
     public void addAssociatedDiagram(String sDiagramXMIID) {
     }
     
-        /* (non-Javadoc)
+        
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.core.metamodel.diagrams.IDiagram#addAssociatedDiagram2(org.netbeans.modules.uml.core.metamodel.diagrams.IProxyDiagram)
          */
     public void addAssociatedDiagram2(IProxyDiagram pDiagram) {
     }
     
-        /* (non-Javadoc)
+        
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.core.metamodel.diagrams.IDiagram#removeAssociatedDiagram(java.lang.String)
          */
     public void removeAssociatedDiagram(String sDiagramXMIID) {
     }
     
-        /* (non-Javadoc)
+        
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.core.metamodel.diagrams.IDiagram#removeAssociatedDiagram2(org.netbeans.modules.uml.core.metamodel.diagrams.IProxyDiagram)
          */
     public void removeAssociatedDiagram2(IProxyDiagram pDiagram) {
     }
     
-        /* (non-Javadoc)
+        
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.core.metamodel.diagrams.IDiagram#isAssociatedDiagram(java.lang.String)
          */
     public boolean isAssociatedDiagram(String sDiagramXMIID) {
@@ -837,7 +868,8 @@ public class UIDiagram extends Diagram {
         return retVal;
     }
     
-        /* (non-Javadoc)
+        
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.core.metamodel.diagrams.IDiagram#isAssociatedDiagram2(org.netbeans.modules.uml.core.metamodel.diagrams.IProxyDiagram)
          */
     public boolean isAssociatedDiagram2(IProxyDiagram pDiagram) {
@@ -846,31 +878,36 @@ public class UIDiagram extends Diagram {
         return retVal;
     }
     
-        /* (non-Javadoc)
+        
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.core.metamodel.diagrams.IDiagram#addAssociatedElement(java.lang.String, java.lang.String)
          */
     public void addAssociatedElement(String sTopLevelElementXMIID, String sModelElementXMIID) {
     }
     
-        /* (non-Javadoc)
+        
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.core.metamodel.diagrams.IDiagram#addAssociatedElement2(org.netbeans.modules.uml.core.metamodel.core.foundation.IElement)
          */
     public void addAssociatedElement2(IElement pElement) {
     }
     
-        /* (non-Javadoc)
+        
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.core.metamodel.diagrams.IDiagram#removeAssociatedElement(java.lang.String, java.lang.String)
          */
     public void removeAssociatedElement(String sTopLevelElementXMIID, String sModelElementXMIID) {
     }
     
-        /* (non-Javadoc)
+        
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.core.metamodel.diagrams.IDiagram#removeAssociatedElement2(org.netbeans.modules.uml.core.metamodel.core.foundation.IElement)
          */
     public void removeAssociatedElement2(IElement pElement) {
     }
     
-        /* (non-Javadoc)
+        
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.core.metamodel.diagrams.IDiagram#isAssociatedElement(java.lang.String)
          */
     public boolean isAssociatedElement(String sModelElementXMIID) {
@@ -878,7 +915,8 @@ public class UIDiagram extends Diagram {
         return retVal;
     }
     
-        /* (non-Javadoc)
+        
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.core.metamodel.diagrams.IDiagram#isAssociatedElement2(org.netbeans.modules.uml.core.metamodel.core.foundation.IElement)
          */
     public boolean isAssociatedElement2(IElement pElement) {
@@ -887,7 +925,8 @@ public class UIDiagram extends Diagram {
         return retVal;
     }
     
-        /* (non-Javadoc)
+        
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.core.metamodel.diagrams.IDiagram#getAssociatedDiagrams()
          */
     public ETList<IProxyDiagram> getAssociatedDiagrams() {
@@ -895,7 +934,8 @@ public class UIDiagram extends Diagram {
         return retVal;
     }
     
-        /* (non-Javadoc)
+        
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.core.metamodel.diagrams.IDiagram#getAssociatedElements()
          */
     public ETList<IElement> getAssociatedElements() {
@@ -1033,7 +1073,8 @@ public class UIDiagram extends Diagram {
 
     }
     
-    /**
+    
+/**
      * Fires the property change event
      */
     private void fireDrawingAreaPropertyChange(String payload, int propKind)

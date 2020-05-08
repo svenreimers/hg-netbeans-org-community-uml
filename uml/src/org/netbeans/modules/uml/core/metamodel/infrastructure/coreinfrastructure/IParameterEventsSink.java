@@ -50,42 +50,50 @@ import org.netbeans.modules.uml.core.support.umlsupport.IResultCell;
 
 public interface IParameterEventsSink
 {
-	/**
+	
+/**
 	 * Fired whenever the default expression for the parameter is about to change.
 	*/
 	public void onPreDefaultExpModified( IParameter feature, IExpression proposedValue, IResultCell cell );
 
-	/**
+	
+/**
 	 * Fired whenever the default expression for the parameter has changed.
 	*/
 	public void onDefaultExpModified( IParameter feature, IResultCell cell );
 
-	/**
+	
+/**
 	 * Fired whenever the default expression's body property for the parameter is about to change.
 	*/
 	public void onPreDefaultExpBodyModified( IParameter feature, String bodyValue, IResultCell cell );
 
-	/**
+	
+/**
 	 * Fired whenever the default expression's body property for the parameter has changed.
 	*/
 	public void onDefaultExpBodyModified( IParameter feature, IResultCell cell );
 
-	/**
+	
+/**
 	 * Fired whenever the default expression's language property for the parameter is about to change.
 	*/
 	public void onPreDefaultExpLanguageModified( IParameter feature, String language, IResultCell cell );
 
-	/**
+	
+/**
 	 * Fired whenever the default expression's language property for the parameter has changed.
 	*/
 	public void onDefaultExpLanguageModified( IParameter feature, IResultCell cell );
 
-	/**
+	
+/**
 	 * Fired whenever the direction value of the parameter is about to change.
 	*/
 	public void onPreDirectionModified( IParameter feature, /* ParameterDirectionKind */ int proposedValue, IResultCell cell );
 
-	/**
+	
+/**
 	 * Fired whenever the direction value of the parameter has changed.
 	*/
 	public void onDirectionModified( IParameter feature, IResultCell cell );

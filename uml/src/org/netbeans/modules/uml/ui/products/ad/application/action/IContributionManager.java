@@ -45,6 +45,7 @@
 
 package org.netbeans.modules.uml.ui.products.ad.application.action;
 
+
 /**
  * A contribution manager organizes contributions to such UI components
  * as menus, toolbars and status lines.
@@ -71,20 +72,23 @@ package org.netbeans.modules.uml.ui.products.ad.application.action;
  */
 public interface IContributionManager
 {
-   /**
+   
+/**
     * Adds an action as a contribution item to this manager.
     * Equivalent to <code>add(new ActionContributionItem(action))</code>.
     *
     * @param action the action
     */
    public void add(BaseAction action);
-   /**
+   
+/**
     * Adds a contribution item to this manager.
     *
     * @param item the contribution item
     */
 //   public void add(IContributionItem item);
-   /**
+   
+/**
     * Adds a contribution item for the given action at the end of the group
     * with the given name.
     * Equivalent to
@@ -96,7 +100,8 @@ public interface IContributionManager
     *   the given name
     */
 //   public void appendToGroup(String groupName, PluginAction action);
-   /**
+   
+/**
     * Adds a contribution item to this manager at the end of the group
     * with the given name.
     *
@@ -106,7 +111,8 @@ public interface IContributionManager
     *   the given name
     */
 //   public void appendToGroup(String groupName, IContributionItem item);
-   /**
+   
+/**
     * Finds the contribution item with the given id.
     *
     * @param id the contribution item id
@@ -114,20 +120,23 @@ public interface IContributionManager
     *   no item with the given id can be found
     */
 //   public IContributionItem find(String id);
-   /**
+   
+/**
     * Returns all contribution items known to this manager.
     *
     * @return a list of contribution items
     */
 //   public IContributionItem[] getItems();
-   /**
+   
+/**
     * Returns the overrides for the items of this manager.
     * 
     * @return the overrides for the items of this manager
     * @since 2.0 
     */
 //   public IContributionManagerOverrides getOverrides();
-   /**
+   
+/**
     * Inserts a contribution item for the given action after the item 
     * with the given id.
     * Equivalent to
@@ -139,7 +148,8 @@ public interface IContributionManager
     *   the given id
     */
 //   public void insertAfter(String id, PluginAction action);
-   /**
+   
+/**
     * Inserts a contribution item after the item with the given id.
     *
     * @param id the contribution item id
@@ -148,7 +158,8 @@ public interface IContributionManager
     *   the given id
     */
 //   public void insertAfter(String ID, IContributionItem item);
-   /**
+   
+/**
     * Inserts a contribution item for the given action before the item 
     * with the given id.
     * Equivalent to
@@ -160,7 +171,8 @@ public interface IContributionManager
     *   the given id
     */
 //   public void insertBefore(String id, PluginAction action);
-   /**
+   
+/**
     * Inserts a contribution item before the item with the given id.
     *
     * @param id the contribution item id
@@ -169,7 +181,8 @@ public interface IContributionManager
     *   the given id
     */
 //   public void insertBefore(String ID, IContributionItem item);
-   /**
+   
+/**
     * Returns whether the list of contributions has recently changed and
     * has yet to be reflected in the corresponding widgets.
     *
@@ -177,18 +190,21 @@ public interface IContributionManager
     *   if it is up-to-date
     */
    public boolean isDirty();
-   /**
+   
+/**
     * Returns whether this manager has any contribution items.
     *
     * @return <code>true</code> if there are no items, and
     *   <code>false</code> otherwise
     */
    public boolean isEmpty();
-   /**
+   
+/**
     * Marks this contribution manager as dirty.
     */
    public void markDirty();
-   /**
+   
+/**
     * Adds a contribution item for the given action at the beginning of the 
     * group with the given name.
     * Equivalent to
@@ -200,7 +216,8 @@ public interface IContributionManager
     *   the given name
     */
 //   public void prependToGroup(String groupName, PluginAction action);
-   /**
+   
+/**
     * Adds a contribution item to this manager at the beginning of the 
     * group with the given name.
     *
@@ -228,11 +245,13 @@ public interface IContributionManager
 //    *   and <code>null</code> if it was not found
 //    */
 //   public IContributionItem remove(IContributionItem item);
-   /**
+   
+/**
     * Removes all contribution items from this manager.
     */
    public void removeAll();
-   /**
+   
+/**
     * Updates this manager's underlying widget(s) with any changes which
     * have been made to it or its items.  Normally changes to a contribution
     * manager merely mark it as dirty, without updating the underlying widgets.

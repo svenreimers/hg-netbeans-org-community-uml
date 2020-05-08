@@ -45,10 +45,8 @@ package org.netbeans.modules.uml.drawingarea.persistence.api;
 
 import org.netbeans.modules.uml.drawingarea.persistence.data.EdgeInfo;
 
-/**
- *
- * @author jyothi
- */
+
+
 public interface DiagramEdgeReader {
 
     public void load(EdgeInfo edgeReader);

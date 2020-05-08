@@ -57,10 +57,8 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 import org.netbeans.modules.uml.ui.support.commonresources.CommonResourceManager;
 import org.netbeans.modules.uml.ui.swing.preferencedialog.ISwingPreferenceTableModel;
 
-/**
- * @author sumitabhk
- *
- */
+
+
 public class AssociateTableModel extends AbstractTableModel implements ISwingPreferenceTableModel
 {
     private AssociateDialogUI m_AssociateControl = null;
@@ -86,7 +84,8 @@ public class AssociateTableModel extends AbstractTableModel implements ISwingPre
         m_collection = values;
         buildColumnMap();
     }
-        /* (non-Javadoc)
+        
+/* (non-Javadoc)
          * @see javax.swing.table.TableModel#getRowCount()
          */
     public int getRowCount()
@@ -99,7 +98,8 @@ public class AssociateTableModel extends AbstractTableModel implements ISwingPre
         return retVal;
     }
     
-        /* (non-Javadoc)
+        
+/* (non-Javadoc)
          * @see javax.swing.table.TableModel#getColumnCount()
          */
     public int getColumnCount()
@@ -113,7 +113,8 @@ public class AssociateTableModel extends AbstractTableModel implements ISwingPre
         return count;
     }
     
-        /* (non-Javadoc)
+        
+/* (non-Javadoc)
          * @see javax.swing.table.TableModel#getColumnName(int)
          */
     public String getColumnName(int arg0)
@@ -128,7 +129,8 @@ public class AssociateTableModel extends AbstractTableModel implements ISwingPre
         return dispColName;
     }
     
-        /* (non-Javadoc)
+        
+/* (non-Javadoc)
          * @see javax.swing.table.TableModel#getColumnClass(int)
          */
     public Class getColumnClass(int arg0)
@@ -138,7 +140,8 @@ public class AssociateTableModel extends AbstractTableModel implements ISwingPre
         return String.class;
     }
     
-        /* (non-Javadoc)
+        
+/* (non-Javadoc)
          * @see javax.swing.table.TableModel#isCellEditable(int, int)
          */
     public boolean isCellEditable(int arg0, int arg1)
@@ -146,7 +149,8 @@ public class AssociateTableModel extends AbstractTableModel implements ISwingPre
         return false;
     }
     
-        /* (non-Javadoc)
+        
+/* (non-Javadoc)
          * @see javax.swing.table.TableModel#getValueAt(int, int)
          */
     public Object getValueAt(int row, int col)
@@ -267,21 +271,24 @@ public class AssociateTableModel extends AbstractTableModel implements ISwingPre
         return retObj;
     }
     
-        /* (non-Javadoc)
+        
+/* (non-Javadoc)
          * @see javax.swing.table.TableModel#setValueAt(java.lang.Object, int, int)
          */
     public void setValueAt(Object arg0, int arg1, int arg2)
     {
     }
     
-        /* (non-Javadoc)
+        
+/* (non-Javadoc)
          * @see javax.swing.table.TableModel#addTableModelListener(javax.swing.event.TableModelListener)
          */
     public void addTableModelListener(TableModelListener arg0)
     {
     }
     
-        /* (non-Javadoc)
+        
+/* (non-Javadoc)
          * @see javax.swing.table.TableModel#removeTableModelListener(javax.swing.event.TableModelListener)
          */
     public void removeTableModelListener(TableModelListener arg0)

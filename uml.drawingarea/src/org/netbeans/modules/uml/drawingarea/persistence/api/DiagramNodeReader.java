@@ -46,10 +46,8 @@ package org.netbeans.modules.uml.drawingarea.persistence.api;
 import org.netbeans.api.visual.widget.Widget;
 import org.netbeans.modules.uml.drawingarea.persistence.data.NodeInfo;
 
-/**
- *
- * @author jyothi
- */
+
+
 public interface DiagramNodeReader {
 
     public void addContainedChild(Widget widget);

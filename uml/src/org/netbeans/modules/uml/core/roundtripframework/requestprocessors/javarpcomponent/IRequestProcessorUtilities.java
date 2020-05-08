@@ -42,11 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : IRequestProcessorUtilities.java
- * Created on : Oct 28, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpcomponent;
 
 import org.netbeans.modules.uml.core.coreapplication.ICoreMessenger;
@@ -56,9 +53,8 @@ import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier;
 import org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ILanguage;
 
-/**
- * @author Aztec
- */
+
+
 public interface IRequestProcessorUtilities
 {
     public String getRelationType(IRelationProxy pRelation);

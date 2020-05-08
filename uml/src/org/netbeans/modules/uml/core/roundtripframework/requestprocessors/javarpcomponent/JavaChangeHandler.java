@@ -69,9 +69,8 @@ import org.netbeans.modules.uml.ui.support.SimpleQuestionDialogResultKind;
 import org.netbeans.modules.uml.ui.support.commondialogs.IQuestionDialog;
 import org.netbeans.modules.uml.ui.swing.commondialogs.SwingQuestionDialogImpl;
 
-/**
- * @author Aztec
- */
+
+
 public class JavaChangeHandler implements IJavaChangeHandler
 {
     private boolean m_Silent;
@@ -117,7 +116,8 @@ public class JavaChangeHandler implements IJavaChangeHandler
     	}
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpccomponent.IJavaChangeHandler#addDependencies(org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpccomponent.IRequestValidator, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier)
      */
     public void addDependencies(IRequestValidator request, IClassifier pClass, 
@@ -212,7 +212,8 @@ public class JavaChangeHandler implements IJavaChangeHandler
 		}
     }
 
-	/**
+	
+/**
 	 *
 	 * Add a new query to the list.
 	 *
@@ -230,7 +231,8 @@ public class JavaChangeHandler implements IJavaChangeHandler
     }
 
 
-	/**
+	
+/**
 	 * Physically deletes the queries
 	 *
 	 * @param onlyNonPersistent[in] If true, only the non-persistent queries are deleted.
@@ -242,7 +244,8 @@ public class JavaChangeHandler implements IJavaChangeHandler
 		m_NonPersistentQueries.clear();
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpccomponent.IJavaChangeHandler#doQuery(java.lang.String, long, java.lang.String, java.lang.String, java.lang.String, java.lang.String)
      */
     public boolean doQuery(
@@ -265,7 +268,8 @@ public class JavaChangeHandler implements IJavaChangeHandler
 
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpccomponent.IJavaChangeHandler#doQuery(java.lang.String, long, java.lang.String, java.lang.String, java.lang.String)
      */
     public boolean doQuery(
@@ -286,7 +290,8 @@ public class JavaChangeHandler implements IJavaChangeHandler
 		return queryResult;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpccomponent.IJavaChangeHandler#doQuery(java.lang.String, long, java.lang.String, java.lang.String)
      */
     public boolean doQuery(String key, String arg1, String arg2)
@@ -303,7 +308,8 @@ public class JavaChangeHandler implements IJavaChangeHandler
 		return queryResult;
     }
 
-	/**
+	
+/**
 	 * Do the specified Query. 
 	 * If the query does not currently exist, it will be built at this time.
 	 *
@@ -326,7 +332,8 @@ public class JavaChangeHandler implements IJavaChangeHandler
 		return queryResult;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpccomponent.IJavaChangeHandler#doQuery(java.lang.String, long)
      */
     public boolean doQuery(String key)
@@ -369,7 +376,8 @@ public class JavaChangeHandler implements IJavaChangeHandler
 								true);
 	}
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpccomponent.IJavaChangeHandler#enterBatch()
      */
     public void enterBatch()
@@ -386,7 +394,8 @@ public class JavaChangeHandler implements IJavaChangeHandler
 		resetAllQueries();
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpccomponent.IJavaChangeHandler#ExitBatch()
      */
     public void exitBatch()
@@ -399,7 +408,8 @@ public class JavaChangeHandler implements IJavaChangeHandler
 		 resetAllQueries ();
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpccomponent.IJavaChangeHandler#findQuery(java.lang.String, long)
      */
     public IHandlerQuery findQuery(String key)
@@ -457,7 +467,8 @@ public class JavaChangeHandler implements IJavaChangeHandler
         return m_Utilities;
     }
 
-    /*
+    
+/*
      * Gets the Langugage Name
      */
     public String getLanguageName()
@@ -475,7 +486,8 @@ public class JavaChangeHandler implements IJavaChangeHandler
 		return retLangName;
     }
 
-	/**
+	
+/**
 	 * Retrieves the plug manager used to control the change handler.
 	 *
 	 * @param manager [out] The plug manager.
@@ -486,7 +498,8 @@ public class JavaChangeHandler implements IJavaChangeHandler
     }
 
 
-	/**
+	
+/**
 	 * Retrieve the request processor that owns the change handler.
 	 *
 	 * @reutrn pProcessor The request processor.
@@ -496,7 +509,8 @@ public class JavaChangeHandler implements IJavaChangeHandler
 		return m_Processor;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpccomponent.IJavaChangeHandler#getSilent()
      */
     public boolean getSilent()
@@ -509,7 +523,8 @@ public class JavaChangeHandler implements IJavaChangeHandler
 		return retval;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpccomponent.IJavaChangeHandler#handleRequest(org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpccomponent.IRequestValidator)
      */
     public void handleRequest(IRequestValidator request)
@@ -517,7 +532,8 @@ public class JavaChangeHandler implements IJavaChangeHandler
         //Its a pure virtual funtion in C++. So the sub class of it should implement it.
     } 
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpccomponent.IJavaChangeHandler#inBatch()
      */
     public boolean inBatch()
@@ -525,7 +541,8 @@ public class JavaChangeHandler implements IJavaChangeHandler
 		return m_Batch;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpccomponent.IJavaChangeHandler#plug(org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpccomponent.IRequestPlug)
      */
     public void plug(IRequestPlug requestPlug)
@@ -533,7 +550,8 @@ public class JavaChangeHandler implements IJavaChangeHandler
 		requestPlug.plug(getPlugManager());
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpccomponent.IJavaChangeHandler#removeDependency(org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpccomponent.IRequestValidator, org.netbeans.modules.uml.core.metamodel.core.foundation.IElement, org.netbeans.modules.uml.core.metamodel.core.foundation.IElement)
      */
     public void removeDependency(
@@ -544,7 +562,8 @@ public class JavaChangeHandler implements IJavaChangeHandler
         //C++ method is empty
     }
 
-	/**
+	
+/**
 	 *
 	 * Does not delete the queries, just reinitialize them.
 	 * This is preferable to ClearAllQueries().
@@ -568,7 +587,8 @@ public class JavaChangeHandler implements IJavaChangeHandler
 		clearAllQueries (true);
     }
 
-	/**
+	
+/**
 	 * Sets the change handler utilities use to perform change handler processing.
 	 *
 	 * @param utils [out] The change handler utilities.
@@ -578,7 +598,8 @@ public class JavaChangeHandler implements IJavaChangeHandler
 		m_Utilities = utils;
     }
 
-	/**
+	
+/**
 	 * Sets the plug manager used to control the change handler.
 	 *
 	 * @param manager [out] The plug manager.
@@ -588,7 +609,8 @@ public class JavaChangeHandler implements IJavaChangeHandler
 		m_PlugManager = manager;
     }
 
-	/**
+	
+/**
 	 * Sets the request processor that owns the change handler.
 	 *
 	 * @param pProcessor The request processor.
@@ -598,7 +620,8 @@ public class JavaChangeHandler implements IJavaChangeHandler
 		m_Processor = pProcessor;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpccomponent.IJavaChangeHandler#setSilent(boolean)
      */
     public void setSilent(boolean silent)
@@ -608,7 +631,7 @@ public class JavaChangeHandler implements IJavaChangeHandler
     
     protected boolean displayYesNoMessage (int textID, int titleID, boolean defaultAnswer)
     {
-    	//Aztec: TODO:
+    	
     	//needs to get the text strings corresponding to the ids from 
     	//a ResourceBundle
     	
@@ -646,15 +669,16 @@ public class JavaChangeHandler implements IJavaChangeHandler
     
 	protected void displayMessage ( String textID, String titleID )
 	{
-		//Aztec: TODO: Error dialog
+		
 	}
 	
 	protected void displayMessage ( int textID, int titleID )
 	{
-		//Aztec: TODO: Error dialog
+		
 	}
 	
-	/**
+	
+/**
 	 *
 	 * Turns RoundTrip on or off depending on the passed in flag
 	 *

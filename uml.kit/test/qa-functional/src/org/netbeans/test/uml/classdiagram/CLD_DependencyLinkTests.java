@@ -43,6 +43,7 @@
  */
 
 
+
 /*
  * CLD_DependencyLinkTests.java
  *
@@ -71,10 +72,8 @@ import org.netbeans.test.umllib.exceptions.NotFoundException;
 import org.netbeans.test.umllib.exceptions.UnexpectedElementSelectionException;
 import org.netbeans.test.umllib.vrf.LinkVerifier;
 
-/**
- *
- * @author Administrator
- */
+
+
 public class CLD_DependencyLinkTests extends ClassDiagramTestCase {
     
     private static String prName = "UMLProjectForDependencyLink";

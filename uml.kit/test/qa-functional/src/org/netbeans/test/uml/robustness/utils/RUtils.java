@@ -60,9 +60,8 @@ import org.netbeans.test.umllib.Utils;
 import org.netbeans.test.umllib.util.PopupConstants;
 
 
-/**
- * @author yaa
- */
+
+
 public class RUtils {
     
     public static final String[] keyWords = new String[]{"abstract","assert","boolean","break","byte","case","catch","char","class","const","continue","default","do","double","else", "enum","extends","final","finally","float","for","goto","if","implements","import","instanceof","int","interface","long","native","new","package","private","protected","public","return","short","static","strictfp","super","switch","synchronized","this","throw","throws","transient","try","void","volatile","while"};
@@ -139,17 +138,4 @@ public class RUtils {
     
     public static boolean checkCycleOneElement(DiagramOperator diagram, ElementTypes elementType, LinkTypes linkType){
         boolean result = false;
-        String elementName = "RT_" + elementType.toString().substring(0, 3);
-        DiagramElementOperator elem = diagram.putElementOnDiagram(elementName, elementType);
-        diagram.createGenericRelationshipOnDiagram(linkType, elem, elem);
-        try {
-            LinkOperator link = new LinkOperator(elem, elem);
-            result = link != null;
-        }catch(TimeoutExpiredException e1){}
-        
-        return result;
-    }
-    
-}
-
-
+        String elementName = "RT_"

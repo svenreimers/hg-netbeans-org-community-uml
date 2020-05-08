@@ -59,10 +59,8 @@ import org.openide.loaders.DataObject;
 import org.openide.loaders.DataShadow;
 
 
-/**
- *
- * @author treyspiva
- */
+
+
 public class DefaultPaletteButtonModel implements ContextPaletteButtonModel
 {
     private Image image = null;

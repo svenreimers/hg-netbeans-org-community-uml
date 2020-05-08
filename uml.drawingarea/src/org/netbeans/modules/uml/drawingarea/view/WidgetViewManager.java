@@ -43,10 +43,8 @@ package org.netbeans.modules.uml.drawingarea.view;
 
 import javax.swing.Action;
 
-/**
- *
- * @author treyspiva
- */
+
+
 public interface WidgetViewManager
 {
 

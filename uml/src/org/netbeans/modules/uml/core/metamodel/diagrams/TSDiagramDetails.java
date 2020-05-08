@@ -42,10 +42,8 @@
 
 package org.netbeans.modules.uml.core.metamodel.diagrams;
 
-/**
- *
- * @author Craig Conover, craig.conover@sun.com
- */
+
+
 public class TSDiagramDetails extends DiagramDetails
 {
     private String diagramFilename2;

@@ -42,16 +42,12 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : IDataStoreNode.java
- * Created on : Sep 17, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.metamodel.common.commonactivities;
 
-/**
- * @author Aztec
- */
+
+
 public interface IDataStoreNode extends ICentralBufferNode
 {
 

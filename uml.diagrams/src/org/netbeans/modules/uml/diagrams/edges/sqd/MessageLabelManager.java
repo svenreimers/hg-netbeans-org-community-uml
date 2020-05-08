@@ -70,10 +70,8 @@ import org.netbeans.modules.uml.drawingarea.view.DesignerScene;
 import org.openide.util.NbBundle;
 
 
-/**
- *
- * @author psb
- */
+
+
 public class MessageLabelManager extends AbstractLabelManager
 {
     public MessageLabelManager(MessageWidget widget)

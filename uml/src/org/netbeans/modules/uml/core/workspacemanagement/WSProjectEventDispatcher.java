@@ -49,10 +49,8 @@ import org.netbeans.modules.uml.core.eventframework.IEventPayload;
 import org.netbeans.modules.uml.core.support.umlsupport.IResultCell;
 import org.netbeans.modules.uml.core.support.umlutils.InvalidArguments;
 
-/**
- *
- * @author Trey Spiva
- */
+
+
 public class WSProjectEventDispatcher extends EventDispatchHelper
 	implements IWSProjectEventDispatcher
 {
@@ -67,7 +65,8 @@ public class WSProjectEventDispatcher extends EventDispatchHelper
 		setEventDispatcher(dispatcher);
 	}
 	
-   /**
+   
+/**
 	 *
 	 * Dispatches the WSProjectPreCreate event.
 	 *
@@ -101,7 +100,8 @@ public class WSProjectEventDispatcher extends EventDispatchHelper
       return retVal;
    }
 
-   /**
+   
+/**
 	 *
 	 * Dispatches the WSProjectCreated event.
 	 *
@@ -127,7 +127,8 @@ public class WSProjectEventDispatcher extends EventDispatchHelper
       
    }
 
-   /**
+   
+/**
 	 *
 	 * Dispatches the WSProjectPreOpen event.
 	 *
@@ -161,7 +162,8 @@ public class WSProjectEventDispatcher extends EventDispatchHelper
       return retVal;
    }
 
-   /**
+   
+/**
 	 *
 	 * Dispatches the WSProjectOpened event.
 	 *
@@ -187,7 +189,8 @@ public class WSProjectEventDispatcher extends EventDispatchHelper
       }      
    }
 
-   /**
+   
+/**
 	 *
 	 * Dispatches the WSProjectPreRemove event.
 	 *
@@ -220,7 +223,8 @@ public class WSProjectEventDispatcher extends EventDispatchHelper
       return retVal;
    }
 
-   /**
+   
+/**
 	 * Dispatches the WSProjectRemoved event.
 	 *
 	 * @param wsProject[in] The WSProject removed from the Workspace.
@@ -245,7 +249,8 @@ public class WSProjectEventDispatcher extends EventDispatchHelper
       
    }
 
-   /**
+   
+/**
 	 *
 	 * Dispatches the WSProjectPreInsert event.
 	 *
@@ -279,7 +284,8 @@ public class WSProjectEventDispatcher extends EventDispatchHelper
       return retVal;
    }
 
-   /**
+   
+/**
 	 * Dispatches the WSProjectInserted event.
 	 *
 	 * @param wsProject[in] The WSProject about to be inserted in the Workspace.
@@ -305,10 +311,12 @@ public class WSProjectEventDispatcher extends EventDispatchHelper
       }
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.workspacemanagement.IWSProjectEventDispatcher#dispatchWSProjectPreRename(org.netbeans.modules.uml.core.workspacemanagement.IWSProject, java.lang.String)
     */
-	/**
+	
+/**
 	 *
 	 * Dispatches the WSProjectPreRename event.
 	 *
@@ -342,7 +350,8 @@ public class WSProjectEventDispatcher extends EventDispatchHelper
       return retVal;
    }
 
-   /**
+   
+/**
 	 *
 	 * Dispatches the WSProjectRenamed event.
 	 *
@@ -370,7 +379,8 @@ public class WSProjectEventDispatcher extends EventDispatchHelper
       }
    }
 
-   /**
+   
+/**
 	 *
 	 * Dispatches the WSProjectPreClose event.
 	 *
@@ -403,7 +413,8 @@ public class WSProjectEventDispatcher extends EventDispatchHelper
       return retVal;
    }
 
-   /**
+   
+/**
 	 *
 	 * Dispatches the WSProjectClosed event.
 	 *
@@ -431,7 +442,8 @@ public class WSProjectEventDispatcher extends EventDispatchHelper
       
    }
 
-   /**
+   
+/**
 	 * Dispatches the WSProjectPreSave event.
 	 *
 	 * @param wsProject[in] The WSProject about to be saved.
@@ -463,7 +475,8 @@ public class WSProjectEventDispatcher extends EventDispatchHelper
    	return retVal; 
    }
 
-   /**
+   
+/**
 	 * Dispatches the WSProjectSaved event.
 	 *
 	 * @param wsProject[in] The WSProject just saved.

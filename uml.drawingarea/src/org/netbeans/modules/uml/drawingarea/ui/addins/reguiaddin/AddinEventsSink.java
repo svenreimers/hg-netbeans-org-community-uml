@@ -60,7 +60,8 @@ public class AddinEventsSink implements ICoreProductInitEventsSink, IProjectEven
 		m_Parent = parent;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.coreapplication.ICoreProductInitEventsSink#onCoreProductPreInit(org.netbeans.modules.uml.core.coreapplication.ICoreProduct, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onCoreProductPreInit(ICoreProduct pVal, IResultCell cell) {
@@ -68,7 +69,8 @@ public class AddinEventsSink implements ICoreProductInitEventsSink, IProjectEven
 		
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.coreapplication.ICoreProductInitEventsSink#onCoreProductInitialized(org.netbeans.modules.uml.core.coreapplication.ICoreProduct, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onCoreProductInitialized(ICoreProduct newVal, IResultCell cell) {
@@ -76,7 +78,8 @@ public class AddinEventsSink implements ICoreProductInitEventsSink, IProjectEven
 		
 	}
 
-	/**
+	
+/**
 	 * Fired when the product quits
 	 */
 	public void onCoreProductPreQuit(ICoreProduct pVal, IResultCell cell) 
@@ -87,7 +90,8 @@ public class AddinEventsSink implements ICoreProductInitEventsSink, IProjectEven
 		}
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.coreapplication.ICoreProductInitEventsSink#onCoreProductPreSaved(org.netbeans.modules.uml.core.coreapplication.ICoreProduct, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onCoreProductPreSaved(ICoreProduct pVal, IResultCell cell) {
@@ -95,7 +99,8 @@ public class AddinEventsSink implements ICoreProductInitEventsSink, IProjectEven
 		
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.coreapplication.ICoreProductInitEventsSink#onCoreProductSaved(org.netbeans.modules.uml.core.coreapplication.ICoreProduct, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onCoreProductSaved(ICoreProduct newVal, IResultCell cell) {
@@ -103,7 +108,8 @@ public class AddinEventsSink implements ICoreProductInitEventsSink, IProjectEven
 		
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.structure.IProjectEventsSink#onPreModeModified(org.netbeans.modules.uml.core.metamodel.structure.IProject, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onPreModeModified(IProject pProject, String newValue, IResultCell cell) {
@@ -111,7 +117,8 @@ public class AddinEventsSink implements ICoreProductInitEventsSink, IProjectEven
 		
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.structure.IProjectEventsSink#onModeModified(org.netbeans.modules.uml.core.metamodel.structure.IProject, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onModeModified(IProject pProject, IResultCell cell) {
@@ -119,7 +126,8 @@ public class AddinEventsSink implements ICoreProductInitEventsSink, IProjectEven
 		
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.structure.IProjectEventsSink#onPreDefaultLanguageModified(org.netbeans.modules.uml.core.metamodel.structure.IProject, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onPreDefaultLanguageModified(IProject pProject, String newValue, IResultCell cell) {
@@ -127,7 +135,8 @@ public class AddinEventsSink implements ICoreProductInitEventsSink, IProjectEven
 		
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.structure.IProjectEventsSink#onDefaultLanguageModified(org.netbeans.modules.uml.core.metamodel.structure.IProject, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onDefaultLanguageModified(IProject pProject, IResultCell cell) {
@@ -135,7 +144,8 @@ public class AddinEventsSink implements ICoreProductInitEventsSink, IProjectEven
 		
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.structure.IProjectEventsSink#onProjectPreCreate(org.netbeans.modules.uml.core.workspacemanagement.IWorkspace, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onProjectPreCreate(IWorkspace space, IResultCell cell) {
@@ -143,7 +153,8 @@ public class AddinEventsSink implements ICoreProductInitEventsSink, IProjectEven
 		
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.structure.IProjectEventsSink#onProjectCreated(org.netbeans.modules.uml.core.metamodel.structure.IProject, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onProjectCreated(IProject Project, IResultCell cell) {
@@ -151,7 +162,8 @@ public class AddinEventsSink implements ICoreProductInitEventsSink, IProjectEven
 		
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.structure.IProjectEventsSink#onProjectPreOpen(org.netbeans.modules.uml.core.workspacemanagement.IWorkspace, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onProjectPreOpen(IWorkspace space, String projName, IResultCell cell) {
@@ -159,7 +171,8 @@ public class AddinEventsSink implements ICoreProductInitEventsSink, IProjectEven
 		
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.structure.IProjectEventsSink#onProjectOpened(org.netbeans.modules.uml.core.metamodel.structure.IProject, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onProjectOpened(IProject Project, IResultCell cell) {
@@ -167,7 +180,8 @@ public class AddinEventsSink implements ICoreProductInitEventsSink, IProjectEven
 		
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.structure.IProjectEventsSink#onProjectPreRename(org.netbeans.modules.uml.core.metamodel.structure.IProject, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onProjectPreRename(IProject Project, String newName, IResultCell cell) {
@@ -175,7 +189,8 @@ public class AddinEventsSink implements ICoreProductInitEventsSink, IProjectEven
 		
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.structure.IProjectEventsSink#onProjectRenamed(org.netbeans.modules.uml.core.metamodel.structure.IProject, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onProjectRenamed(IProject Project, String oldName, IResultCell cell) {
@@ -183,7 +198,8 @@ public class AddinEventsSink implements ICoreProductInitEventsSink, IProjectEven
 		
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.structure.IProjectEventsSink#onProjectPreClose(org.netbeans.modules.uml.core.metamodel.structure.IProject, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onProjectPreClose(IProject Project, IResultCell cell) {
@@ -191,7 +207,8 @@ public class AddinEventsSink implements ICoreProductInitEventsSink, IProjectEven
 		
 	}
 
-	/**
+	
+/**
 	 * Called right after the project closes.  We use it to make sure to release any model elements
 	 * associated with that project (or any project) so the DOM isn't pinned in memory.
 	 */
@@ -203,7 +220,8 @@ public class AddinEventsSink implements ICoreProductInitEventsSink, IProjectEven
 		}
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.structure.IProjectEventsSink#onProjectPreSave(org.netbeans.modules.uml.core.metamodel.structure.IProject, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onProjectPreSave(IProject Project, IResultCell cell) {
@@ -211,7 +229,8 @@ public class AddinEventsSink implements ICoreProductInitEventsSink, IProjectEven
 		
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.structure.IProjectEventsSink#onProjectSaved(org.netbeans.modules.uml.core.metamodel.structure.IProject, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onProjectSaved(IProject Project, IResultCell cell) {
@@ -219,7 +238,8 @@ public class AddinEventsSink implements ICoreProductInitEventsSink, IProjectEven
 		
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.structure.IProjectEventsSink#onPreReferencedLibraryAdded(org.netbeans.modules.uml.core.metamodel.structure.IProject, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onPreReferencedLibraryAdded(IProject Project, String refLibLoc, IResultCell cell) {
@@ -227,7 +247,8 @@ public class AddinEventsSink implements ICoreProductInitEventsSink, IProjectEven
 		
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.structure.IProjectEventsSink#onReferencedLibraryAdded(org.netbeans.modules.uml.core.metamodel.structure.IProject, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onReferencedLibraryAdded(IProject Project, String refLibLoc, IResultCell cell) {
@@ -235,7 +256,8 @@ public class AddinEventsSink implements ICoreProductInitEventsSink, IProjectEven
 		
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.structure.IProjectEventsSink#onPreReferencedLibraryRemoved(org.netbeans.modules.uml.core.metamodel.structure.IProject, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onPreReferencedLibraryRemoved(IProject Project, String refLibLoc, IResultCell cell) {
@@ -243,7 +265,8 @@ public class AddinEventsSink implements ICoreProductInitEventsSink, IProjectEven
 		
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.structure.IProjectEventsSink#onReferencedLibraryRemoved(org.netbeans.modules.uml.core.metamodel.structure.IProject, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onReferencedLibraryRemoved(IProject Project, String refLibLoc, IResultCell cell) {

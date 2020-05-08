@@ -43,11 +43,8 @@
  */
 
 
-/*
- * File       : DependencyStateHandler.java
- * Created on : Dec 10, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.statehandlers;
 
 import org.dom4j.Node;
@@ -58,9 +55,8 @@ import org.netbeans.modules.uml.core.reverseengineering.reframework.DependencyEv
 import org.netbeans.modules.uml.core.reverseengineering.reframework.IDependencyEvent;
 import org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ITokenDescriptor;
 
-/**
- * @author Aztec
- */
+
+
 public class DependencyStateHandler extends TopLevelStateHandler
 {
     Identifier m_DependencyName = new Identifier();
@@ -75,7 +71,8 @@ public class DependencyStateHandler extends TopLevelStateHandler
         m_NestedLevel = 0;
     }
 
-    /**
+    
+/**
      * Create a new state handler to be added to the state mechanism.  If the
      * state is not a state that is being processed then a new state handler is
      * not created.
@@ -98,7 +95,8 @@ public class DependencyStateHandler extends TopLevelStateHandler
         return retVal;
     }
 
-    /**
+    
+/**
      * Initializes the state handler.  The jump action XMI node is
      * initializes.
      */
@@ -107,7 +105,8 @@ public class DependencyStateHandler extends TopLevelStateHandler
         createTopLevelNode("UML:Dependency");
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.statehandlers.IDependencyStateHandler#isClassDependency()
      */
     public boolean isClassDependency()
@@ -115,7 +114,8 @@ public class DependencyStateHandler extends TopLevelStateHandler
         return m_IsClassDependency;
     }
 
-    /**
+    
+/**
      * Process a new token.  The tokens that are processed are in the
      * context of an object creation.
      *
@@ -154,7 +154,8 @@ public class DependencyStateHandler extends TopLevelStateHandler
         }
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.statehandlers.IDependencyStateHandler#setIsClassDependency(boolean)
      */
     public void setIsClassDependency(boolean newVal)
@@ -162,7 +163,8 @@ public class DependencyStateHandler extends TopLevelStateHandler
         m_IsClassDependency = newVal;
     }
 
-    /**
+    
+/**
      * Notification that the a state has completed.
      *
      * @param stateName [in] The name of the state.
@@ -211,7 +213,8 @@ public class DependencyStateHandler extends TopLevelStateHandler
         return pEvent;
     }
 
-    /**
+    
+/**
      * Add the dependency name information to the XMI structure.
      *
      * @param pToken [in] The token that specifies the class name.

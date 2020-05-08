@@ -91,7 +91,8 @@ public class ETPairT<Type, TypeTwo>
 							  o.getParamTwo() == null);
 	}
     
-	/**
+	
+/**
 	 * Returns a <code>String</code> representation of the first 
 	 * parameter of this <code>ETPairT</code>.
 	 * 

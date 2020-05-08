@@ -49,10 +49,8 @@ package org.netbeans.modules.uml.ui.swing.propertyeditor;
 import java.util.MissingResourceException;
 import java.util.ResourceBundle;
 
-/**
- *
- * @author Trey Spiva
- */
+
+
 public class PropertyEditorResources
 {
 
@@ -68,7 +66,8 @@ public class PropertyEditorResources
 
       // TODO Auto-generated constructor stub
    }
-   /**
+   
+/**
     * @param key
     * @return
     */

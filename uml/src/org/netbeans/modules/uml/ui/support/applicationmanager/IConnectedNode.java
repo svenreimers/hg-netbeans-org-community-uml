@@ -46,11 +46,8 @@
 
 package org.netbeans.modules.uml.ui.support.applicationmanager;
 
-/**
- * @author josephg
- *
- *
- */
+
+
 public interface IConnectedNode {
     // TODO: meteora
 //	 The edge connecting to the other node

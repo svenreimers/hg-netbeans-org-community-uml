@@ -43,11 +43,8 @@
  */
 
 
-/*
- *
- * Created on Jun 12, 2003
- * @author Trey Spiva
- */
+
+
 package org.netbeans.modules.uml.ui.support.projecttreesupport;
 
 import org.netbeans.modules.uml.ui.controls.projecttree.ProjectTreeNodeFactory;
@@ -57,32 +54,34 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.IElement;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 import org.netbeans.modules.uml.core.workspacemanagement.IWorkspace;
 
-/**
- *
- * @author Trey Spiva
- */
+
+
 public interface IProjectTreeBuilder
 {
-    /**
+    
+/**
      * Based on the passed in IDispatch, return a list of child elements 
      * that should appear as child nodes
      */ 
    public ITreeItem[] retrieveChildItems(Object pDisp);
    
-   /** 
+   
+/** 
     * Based on the passed in IElement, return a list of child elements
     * that should appear as child nodes"
     */ 
    public ITreeItem[] retrieveChildItemsForElement(Object pDisp, IElement pEle);
    
-   /** 
+   
+/** 
     * Based on the passed in ITreeFolder, return a list of child elements
     * that should appear as child nodes
     */  
    public ITreeItem[] retrieveChildItemsForFolder(ITreeFolder pFolder);
    
    
-   /**
+   
+/**
     * Get the a parents child items that are to be displayed.
     * 
     * @param parent The parent tree item.
@@ -90,7 +89,8 @@ public interface IProjectTreeBuilder
     */ 
    public ITreeItem[] getItems(Object parent);
    
-   /**
+   
+/**
     * Get the names of a parents child folders that are to be displayed.
     * 
     * @param parent The parent tree item.
@@ -98,13 +98,15 @@ public interface IProjectTreeBuilder
     */
    public String[] getFolders(Object parent);
    
-   /**
+   
+/**
     * Based on the passed in IWorkspace, return a list of child elements
     * that should appear as child nodes
     */ 
    public ITreeItem[] retrieveChildItemsForWorkspace(IWorkspace pWork);
    
-   /**
+   
+/**
     * Based on the passed in Object, create a child ITreeItem and 
     * place it under the passed in parent tree item.
     * 
@@ -114,7 +116,8 @@ public interface IProjectTreeBuilder
     */ 
    public ITreeItem createChild(ITreeItem pParent, Object pDisp);
    
-   /**
+   
+/**
     * Based on a sort defined in the xml file, sort the passed in tree items.
     * 
     * @param pParent The parent that owns children are to be sorted.
@@ -123,7 +126,8 @@ public interface IProjectTreeBuilder
     */ 
    public ITreeItem[] sort(Object pParent, ITreeItem[] pIn);
    
-   /**
+   
+/**
     * Based on the passed in Object, return a list of child elements that
     * should appear as child nodes, sorted per our rules
     * 
@@ -132,7 +136,8 @@ public interface IProjectTreeBuilder
     */ 
    public ITreeItem[] retrieveChildItemsSorted(Object pParent);
    
-   /**
+   
+/**
     * Returns the sort priority for the argument string 
     * (ie Actor or ActivityDiagram).
     * 
@@ -141,13 +146,15 @@ public interface IProjectTreeBuilder
     */ 
    public long getSortPriority(String sType);
    
-   /**
+   
+/**
     * Manages what elements are filtered so we don't do extra processing.  
     * The Object is a IProjectTreeBuilderFilter.
     */ 
    public IProjectTreeBuilderFilter getProjectTreeBuilderFilter();
    
-   /**
+   
+/**
     * Manages what elements are filtered so we don't do extra processing.
     * The IDispatch is a IProjectTreeBuilderFilter.
     * 
@@ -155,7 +162,8 @@ public interface IProjectTreeBuilder
     */ 
    public void setProjectTreeBuilderFilter(IProjectTreeBuilderFilter pFilter);
 
-   /**
+   
+/**
     * Retrieves the model elements that are affected by the changed element.
     * 
     * @param changedItem The element that changed.
@@ -167,14 +175,16 @@ public interface IProjectTreeBuilder
                                  ETList < String >    strs, 
                                  ETList < ITreeItem > items);
    
-   /**
+   
+/**
     * Sets the node factory to use when creating project tree items
     * 
     * @param factory The new factory.
     */
    public void setNodeFactory(ProjectTreeNodeFactory factory);
    
-   /**
+   
+/**
     * Method that eliminates certain items from the list of owned elements 
     * of a project.  The "Excludes" section in the ProjectTreeDefinitions.etc 
     * configuration file determines which elements are excluded.

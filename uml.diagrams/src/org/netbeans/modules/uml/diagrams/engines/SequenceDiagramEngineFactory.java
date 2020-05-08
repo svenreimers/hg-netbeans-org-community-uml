@@ -45,10 +45,8 @@ import org.netbeans.modules.uml.drawingarea.engines.DiagramEngine;
 import org.netbeans.modules.uml.drawingarea.engines.DiagramEngineFactory;
 import org.netbeans.modules.uml.drawingarea.view.DesignerScene;
 
-/**
- *
- * @author treyspiva
- */
+
+
 public class SequenceDiagramEngineFactory implements DiagramEngineFactory
 {
 

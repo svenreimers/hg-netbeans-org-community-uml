@@ -72,9 +72,8 @@ import org.openide.DialogDescriptor;
 import org.openide.DialogDisplayer;
 import org.openide.util.NbBundle;
 
-/**
- * @author swadebeshp
-  */
+
+
 public class FontChooser extends JPanel implements ItemListener{
 	protected static JPanel UIPanel = null;
 	protected static JPanel stylePanel = null;

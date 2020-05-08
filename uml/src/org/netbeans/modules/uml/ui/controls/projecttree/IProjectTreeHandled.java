@@ -47,12 +47,14 @@ package org.netbeans.modules.uml.ui.controls.projecttree;
 
 public interface IProjectTreeHandled
 {
-	/**
+	
+/**
 	 * Get/Set the fact that this event has been handled
 	*/
 	public boolean getHandled();
 
-	/**
+	
+/**
 	 * Get/Set the fact that this event has been handled
 	*/
 	public void setHandled( boolean value );

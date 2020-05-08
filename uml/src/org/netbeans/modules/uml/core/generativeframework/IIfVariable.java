@@ -42,20 +42,16 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : IIfVariable.java
- * Created on : Oct 30, 2003
- * Author     : aztec
- */
+
+
 package org.netbeans.modules.uml.core.generativeframework;
 
 import org.dom4j.Node;
 
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
-/**
- * @author aztec
- */
+
+
 public interface IIfVariable extends ICompoundVariable
 {
     public void addTest(IIfTest pTest);
@@ -64,7 +60,8 @@ public interface IIfVariable extends ICompoundVariable
 
     public ETList<IIfTest> getTests();
 
-    /**
+    
+/**
      * Expands at most one of the tests that make up this variable. The tests
      * are executed in the order they are added.
      *

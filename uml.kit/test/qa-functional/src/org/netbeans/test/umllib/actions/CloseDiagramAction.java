@@ -43,6 +43,7 @@
  */
 
 
+
 /*
  * CloseDiagramAction.java
  *
@@ -58,10 +59,8 @@ package org.netbeans.test.umllib.actions;
 import static org.netbeans.test.umllib.util.PopupConstants.* ;
 import org.netbeans.jellytools.actions.ActionNoBlock;
 
-/**
- *
- * @author VijayaBabu Mummaneni
- */
+
+
 public class CloseDiagramAction extends ActionNoBlock {
     
     private static final String addPopup = CLOSE ;                                        

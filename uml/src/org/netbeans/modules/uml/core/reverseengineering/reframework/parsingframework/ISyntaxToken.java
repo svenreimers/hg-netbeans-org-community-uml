@@ -46,42 +46,50 @@ package org.netbeans.modules.uml.core.reverseengineering.reframework.parsingfram
 
 public interface ISyntaxToken
 {
-	/**
+	
+/**
 	 * The name of the syntax element.
 	*/
 	public String getName();
 
-	/**
+	
+/**
 	 * The name of the syntax element.
 	*/
 	public void setName( String value );
 
-	/**
+	
+/**
 	 * Specifies the type of the token.
 	*/
 	public int getKind();
 
-	/**
+	
+/**
 	 * Specifies the type of the token.
 	*/
 	public void setKind( /* TokenKind */ int value );
 
-	/**
+	
+/**
 	 * Defines a category that defines the token type.  The category can be used to further define the token type.
 	*/
 	public String getCategory();
 
-	/**
+	
+/**
 	 * Defines a category that defines the token type.  The category can be used to further define the token type.
 	*/
 	public void setCategory( String value );
 
-	/**
+	
+/**
 	 * Defines the type of the syntax token.
 	*/
 	public String getType();
 
-	/**
+	
+/**
 	 * Defines the type of the syntax token.
 	*/
 	public void setType( String value );

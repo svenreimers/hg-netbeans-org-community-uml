@@ -49,9 +49,8 @@ import junit.textui.TestRunner;
 
 import org.netbeans.modules.uml.core.reverseengineering.reintegration.umlparsingintegratorTC.AbstractUMLParsingIntegrationTestCase;
 
-/**
- * @author aztec
- */
+
+
 public class ConstrWithThrowsClauseT extends AbstractUMLParsingIntegrationTestCase {
 	public static void main(String[] args) {
 		TestRunner.run(ConstrWithThrowsClauseT.class);

@@ -42,18 +42,14 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : IJavaMethodChangeFacility.java
- * Created on : Jan 19, 2004
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpcomponent;
 
 import org.netbeans.modules.uml.core.roundtripframework.IMethodChangeFacility;
 
-/**
- * @author Aztec
- */
+
+
 public interface IJavaMethodChangeFacility extends IMethodChangeFacility
 {
 }

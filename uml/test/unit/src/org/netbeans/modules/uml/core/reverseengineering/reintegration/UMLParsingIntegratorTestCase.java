@@ -74,7 +74,8 @@ public class UMLParsingIntegratorTestCase extends AbstractUMLTestCase
     
     private IUMLParsingIntegrator integrator;
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see junit.framework.TestCase#setUp()
      */
     protected void setUp() throws Exception
@@ -83,7 +84,8 @@ public class UMLParsingIntegratorTestCase extends AbstractUMLTestCase
         integrator = new UMLParsingIntegrator();
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.AbstractUMLTestCase#tearDown()
      */
     protected void tearDown() throws Exception
@@ -102,7 +104,7 @@ public class UMLParsingIntegratorTestCase extends AbstractUMLTestCase
     public void testReverseEngineer()
     {
         IStrings files = getFilesForRE();
-// conover - RE is a NB task now, so can't call it directly anymore
+
 //        integrator.setFiles(s);
 //        integrator.reverseEngineer(project, false, false, false, false);
 
@@ -159,7 +161,7 @@ public class UMLParsingIntegratorTestCase extends AbstractUMLTestCase
     public void testRETypes()
     {
         IStrings s = getFilesForTypeTest();
-// conover - RE is a n NB task now, so can't call it directly anymore
+
 //        integrator.setFiles(s);
 //        integrator.reverseEngineer(project, false, false, false, false);
 
@@ -222,7 +224,8 @@ public class UMLParsingIntegratorTestCase extends AbstractUMLTestCase
 //        // assertEquals(2, other.getOperations().size());
 //    }
         
-    /**
+    
+/**
      * @return
      */
     private IStrings getFilesForRE() {
@@ -635,7 +638,8 @@ public class UMLParsingIntegratorTestCase extends AbstractUMLTestCase
         return s;
     }
     
-    /**
+    
+/**
      * @return
      */
     private IStrings getFilesForTypeTest()

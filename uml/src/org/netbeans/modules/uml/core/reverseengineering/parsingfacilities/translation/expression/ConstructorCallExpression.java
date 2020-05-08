@@ -43,11 +43,8 @@
  */
 
 
-/*
- * File       : ConstructorCallExpression.java
- * Created on : Dec 10, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.expression;
 
 import org.netbeans.modules.uml.core.reverseengineering.reframework.IREClass;

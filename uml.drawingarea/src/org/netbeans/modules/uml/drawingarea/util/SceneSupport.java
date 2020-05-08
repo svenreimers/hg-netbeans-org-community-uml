@@ -52,10 +52,8 @@ import javax.swing.SwingUtilities;
 import org.netbeans.api.visual.widget.Scene;
 import org.openide.util.RequestProcessor;
 
-/**
- *
- * @author Jyothi
- */
+
+
 public class SceneSupport 
 {
     public static void zoomToFit(Scene scene)

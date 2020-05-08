@@ -47,9 +47,8 @@ package org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javar
 import org.netbeans.modules.uml.core.roundtripframework.IChangeRequest;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
-/**
- * @author Aztec
- */
+
+
 public interface IRequestValidator
 {
     public boolean getValid();

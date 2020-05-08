@@ -65,14 +65,13 @@ import org.netbeans.modules.uml.core.support.umlsupport.ProductRetriever;
 import org.netbeans.modules.uml.core.support.umlutils.IPropertyDefinition;
 import org.netbeans.modules.uml.core.support.umlutils.IPropertyElement;
 
-/**
- * @author sumitabhk
- *
- */
+
+
 public class JPreferenceDialogTable extends JTable
 {
 	PreferenceDialogUI m_UI = null;
-	/**
+	
+/**
 	 * 
 	 */
 	public JPreferenceDialogTable()
@@ -110,7 +109,8 @@ public class JPreferenceDialogTable extends JTable
 		{
 			m_UI = ui;
 		}
-		/* (non-Javadoc)
+		
+/* (non-Javadoc)
 		 * @see javax.swing.table.TableCellRenderer#getTableCellRendererComponent(javax.swing.JTable, java.lang.Object, boolean, boolean, int, int)
 		 */
 		public Component getTableCellRendererComponent(JTable table, 
@@ -132,7 +132,7 @@ public class JPreferenceDialogTable extends JTable
 						String val = pDef.getDisplayName();
 						setText(val);
                                                 
-                                                //CBeckham - removed hardcoding of fontsize to handle larger fonts
+                                                
                                                 //setFont(new java.awt.Font("Dialog", 0, 11));
 						setFont(new java.awt.Font("Dialog", 0, getFont().getSize()));
 						setIcon(null);

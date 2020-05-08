@@ -49,10 +49,8 @@ package org.netbeans.modules.uml.ui.controls.trackbar;
 import java.util.MissingResourceException;
 import java.util.ResourceBundle;
 
-/**
- *
- * @author Trey Spiva
- */
+
+
 public class TrackBarResource
 {
 
@@ -67,7 +65,8 @@ public class TrackBarResource
    {
 
    }
-   /**
+   
+/**
     * @param key
     * @return
     */

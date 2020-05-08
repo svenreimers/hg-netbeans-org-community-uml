@@ -43,6 +43,7 @@
  */
 
 
+
 /*
  * UnexpectedElementSelection.java
  *
@@ -52,17 +53,16 @@
 
 package org.netbeans.test.umllib.exceptions;
 
-/**
- *
- * @author Alexandr Scherbatiy
- */
+
+
 public class UnexpectedElementSelectionException extends UMLCommonException {
     
     
     private Status status;
     private Object element;
     
-    /**
+    
+/**
      * Creates a new instance of <code>UnexpectedElementSelection</code> without detail message.
      */
 
@@ -70,7 +70,8 @@ public class UnexpectedElementSelectionException extends UMLCommonException {
         this("");
     }
     
-    /**
+    
+/**
      * Constructs an instance of <code>UnexpectedElementSelection</code> with the specified detail message.
      * @param msg the detail message.
      */
@@ -78,7 +79,8 @@ public class UnexpectedElementSelectionException extends UMLCommonException {
         this(msg, Status.UNKNOWN);
     }
 
-    /**
+    
+/**
      * 
      * @param msg 
      * @param status 
@@ -87,7 +89,8 @@ public class UnexpectedElementSelectionException extends UMLCommonException {
         this(msg, status, null);
     }
 
-    /**
+    
+/**
      * 
      * @param msg 
      * @param element 
@@ -97,7 +100,8 @@ public class UnexpectedElementSelectionException extends UMLCommonException {
     }
 
 
-    /**
+    
+/**
      * 
      * @param msg 
      * @param status 
@@ -110,7 +114,8 @@ public class UnexpectedElementSelectionException extends UMLCommonException {
     }
 
     
-    /**
+    
+/**
      * 
      * @return 
      */
@@ -119,7 +124,8 @@ public class UnexpectedElementSelectionException extends UMLCommonException {
     }
     
     
-    /**
+    
+/**
      * 
      * @return 
      */
@@ -127,7 +133,8 @@ public class UnexpectedElementSelectionException extends UMLCommonException {
         return status;
     }
     
-    /**
+    
+/**
      * 
      * @return 
      */
@@ -143,7 +150,8 @@ public class UnexpectedElementSelectionException extends UMLCommonException {
         NOTSELECTED("Element is not selected.");        
         
         private String description;
-        /**
+        
+/**
          * 
          * @param description 
          */
@@ -151,7 +159,8 @@ public class UnexpectedElementSelectionException extends UMLCommonException {
             this.description = description;
         }
         
-        /**
+        
+/**
          * 
          * @return 
          */

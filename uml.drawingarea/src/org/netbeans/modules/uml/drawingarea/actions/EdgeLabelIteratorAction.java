@@ -52,10 +52,8 @@ import org.netbeans.modules.uml.drawingarea.LabelManager;
 import org.netbeans.modules.uml.drawingarea.view.DesignerScene;
 import org.netbeans.modules.uml.drawingarea.view.UMLEdgeWidget;
 
-/**
- *
- * @author jyothi
- */
+
+
 public class EdgeLabelIteratorAction extends WidgetAction.Adapter {
 
     DesignerScene scene;

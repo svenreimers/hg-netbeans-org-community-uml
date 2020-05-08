@@ -43,11 +43,8 @@
  */
 
 
-/*
- * File       : GeneralizationStateHandler.java
- * Created on : Dec 11, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.statehandlers;
 
 import org.dom4j.Element;
@@ -60,9 +57,8 @@ import org.netbeans.modules.uml.core.reverseengineering.reframework.REGeneraliza
 import org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ITokenDescriptor;
 import org.netbeans.modules.uml.core.support.umlsupport.XMLManip;
 
-/**
- * @author Aztec
- */
+
+
 public class GeneralizationStateHandler extends StateHandler
 {
     private Identifier m_SuperClass = new Identifier();

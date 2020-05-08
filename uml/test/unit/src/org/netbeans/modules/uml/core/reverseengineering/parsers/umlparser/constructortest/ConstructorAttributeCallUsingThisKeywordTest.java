@@ -49,9 +49,8 @@ import junit.textui.TestRunner;
 
 import org.netbeans.modules.uml.core.reverseengineering.parsers.umlparser.AbstractUmlParserTestCase;
 
-/**
- * @author aztec
- */
+
+
 public class ConstructorAttributeCallUsingThisKeywordTest extends
 		AbstractUmlParserTestCase {
 

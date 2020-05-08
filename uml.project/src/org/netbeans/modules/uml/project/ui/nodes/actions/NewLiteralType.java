@@ -42,11 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * NewDiagramType.java
- *
- * Created on March 4, 2005, 4:39 PM
- */
+
+
 
 package org.netbeans.modules.uml.project.ui.nodes.actions;
 
@@ -63,10 +60,8 @@ import org.openide.util.HelpCtx;
 import org.openide.util.NbBundle;
 import org.openide.util.datatransfer.NewType;
 
-/**
- *
- * @author Sergey Petrov
- */
+
+
 public class NewLiteralType extends NewType implements INewTypeExt
 {
 	private Node node;
@@ -126,7 +121,8 @@ public class NewLiteralType extends NewType implements INewTypeExt
 		{
 		}
 	}
-	/**
+	
+/**
 	 *
 	 * Retrieves the default name for use for model elements that are just
 	 * being created.

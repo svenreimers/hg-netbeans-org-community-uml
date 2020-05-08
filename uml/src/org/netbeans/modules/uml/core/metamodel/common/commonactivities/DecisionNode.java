@@ -42,11 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : DecisionNode.java
- * Created on : Sep 17, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.metamodel.common.commonactivities;
 
 import org.dom4j.Document;
@@ -55,13 +52,13 @@ import org.dom4j.Node;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.ElementCollector;
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavior;
 
-/**
- * @author Aztec
- */
+
+
 public class DecisionNode extends ControlNode implements IDecisionNode
 {
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactivities.IDecisionNode#getDecisionInput()
      */
     public IBehavior getDecisionInput()
@@ -70,7 +67,8 @@ public class DecisionNode extends ControlNode implements IDecisionNode
             .retrieveSingleElementWithAttrID(this, "decisionInput", IBehavior.class);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactivities.IDecisionNode#setDecisionInput(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavior)
      */
     public void setDecisionInput(IBehavior value)

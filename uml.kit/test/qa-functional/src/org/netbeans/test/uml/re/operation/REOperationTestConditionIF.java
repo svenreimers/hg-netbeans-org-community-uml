@@ -43,6 +43,7 @@
  */
 
 
+
 /*
  * RE_OperationTests.java
  *
@@ -62,10 +63,8 @@ import org.netbeans.test.umllib.customelements.LifelineOperator;
 import org.netbeans.test.umllib.customelements.MessageOperator;
 import org.netbeans.jellytools.nodes.Node;
 
-/**
- *
- * @author Alexandr Scherbatiy
- */
+
+
 
 
 public class REOperationTestConditionIF extends REOperationTestCase{

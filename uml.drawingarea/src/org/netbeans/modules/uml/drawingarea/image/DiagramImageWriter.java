@@ -63,10 +63,8 @@ import org.netbeans.api.visual.widget.Widget;
 import org.netbeans.modules.uml.drawingarea.view.DesignerScene;
 import org.openide.util.NbBundle;
 
-/**
- *
- * @author Sheryl Su
- */
+
+
 public class DiagramImageWriter
 {
 

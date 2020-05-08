@@ -54,9 +54,8 @@ import java.util.Collection;
 import java.util.Arrays;
 import java.util.Collections;
 
-/**
- * @author David Kaspar
- */
+
+
 public class AlignWithSupport {
 
     private static final int GRAVITY = 10;

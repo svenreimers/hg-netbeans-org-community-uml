@@ -56,12 +56,11 @@ import org.dom4j.Node;
 import org.netbeans.modules.uml.core.support.umlsupport.XMLManip;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
-/**
- * @author sumitabhk
- *
- */
+
+
 public class VariableExpander implements IVariableExpander {
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.generativeframework.IVariableExpander#getConfigFile()
 	 */
 	public String getConfigFile() 
@@ -69,7 +68,8 @@ public class VariableExpander implements IVariableExpander {
         return m_Config;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.generativeframework.IVariableExpander#setConfigFile(java.lang.String)
 	 */
 	public void setConfigFile(String value) 
@@ -83,7 +83,8 @@ public class VariableExpander implements IVariableExpander {
             m_ConfigDoc = XMLManip.getDOMDocument(m_Config);
     }
     
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.generativeframework.IVariableExpander#retrieveVarNode(java.lang.String)
 	 */
 	public Node retrieveVarNode(String name)
@@ -99,21 +100,24 @@ public class VariableExpander implements IVariableExpander {
         return null;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.generativeframework.IVariableExpander#getManager()
 	 */
 	public ITemplateManager getManager() {
         return m_Manager;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.generativeframework.IVariableExpander#setManager(org.netbeans.modules.uml.core.generativeframework.ITemplateManager)
 	 */
 	public void setManager(ITemplateManager value) {
         m_Manager = value;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.generativeframework.IVariableExpander#expand(java.lang.String, org.netbeans.modules.uml.core.generativeframework.IExpansionVariable, org.dom4j.Node)
 	 */
 	public String expand(String prevText, IExpansionVariable var, Node context)
@@ -139,14 +143,16 @@ public class VariableExpander implements IVariableExpander {
         return Formatter.convertNewLines(prevText, varRes);
     }
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.generativeframework.IVariableExpander#beginGathering()
 	 */
 	public void beginGathering() {
         m_VarStack.push( new ArrayList<IExpansionVariable>() );
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.generativeframework.IVariableExpander#endGathering()
 	 */
 	public boolean endGathering() {
@@ -192,28 +198,32 @@ public class VariableExpander implements IVariableExpander {
 		return useResults;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.generativeframework.IVariableExpander#addResult(org.netbeans.modules.uml.core.generativeframework.IExpansionResult)
 	 */
 	public void addResult(IExpansionResult pResult) {
 		// Stubbed in C++ code
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.generativeframework.IVariableExpander#removeResult(org.netbeans.modules.uml.core.generativeframework.IExpansionResult)
 	 */
 	public void removeResult(IExpansionResult pResult) {
         // Stubbed in C++ code
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.generativeframework.IVariableExpander#appendResults(org.netbeans.modules.uml.core.generativeframework.IExpansionResult[])
 	 */
 	public void appendResults(ETList<IExpansionResult> pResult) {
         // Stubbed in C++ code
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.generativeframework.IVariableExpander#getExpansionResults()
 	 */
 	public ETList<IExpansionResult> getExpansionResults() {
@@ -221,7 +231,8 @@ public class VariableExpander implements IVariableExpander {
         return null;
     }
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.generativeframework.IVariableExpander#setExpansionResults(org.netbeans.modules.uml.core.generativeframework.IExpansionResult[])
 	 */
 	public void setExpansionResults(ETList<IExpansionResult> value) {

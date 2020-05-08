@@ -55,12 +55,12 @@ import org.netbeans.modules.uml.common.generics.ETPairT;
 import org.netbeans.modules.uml.core.support.umlutils.ETArrayList;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
-/**
- * @author sumitabhk
- */
+
+
 public class StringUtilities
 {
-    /**
+    
+/**
      * Given a delimited string and the delimiter, this function removes the first
      * delimited token from @a delimitedString and returns it.
      *
@@ -89,7 +89,8 @@ public class StringUtilities
         return new ETPairT<String,String>( tok, text );
     }
     
-    /**
+    
+/**
      * 'Increments' a String that contains only lowercase alphabets. The last
      * letter in the String is 'incremented' to the next letter in alphabetical
      * order.<br/>
@@ -133,15 +134,8 @@ public class StringUtilities
         return buf.toString();
     }
     
-    /**
-     * Parses a base-10 integer from the given String. Trailing non-numeric
-     * characters will be ignored, and NumberFormatExceptions will be caught
-     * and silently suppressed.
-     *
-     * @param text The String containing the number to be parsed.
-     * @return The parsed <code>int</code>, defaulting to 0 if the String is
-     *         unparseable.
-     */
+    
+
     public static int parseInt(String text)
     {
         if (text == null || text.length() == 0) return 0;
@@ -160,7 +154,8 @@ public class StringUtilities
         }
     }
     
-    /**
+    
+/**
      * Returns a String with the leading digits in 'text' stripped.
      * @param text The String to strip of leading digits.
      * @return 'text' without any leading digits.
@@ -173,7 +168,8 @@ public class StringUtilities
         return pos == -1? text : text.substring(pos);
     }
     
-    /**
+    
+/**
      * Returns the index of the first non-digit character in the given String.
      * Non-digit characters are anything other than 0-9, or a leading '-'.
      *
@@ -193,7 +189,8 @@ public class StringUtilities
         return -1;
     }
     
-    /**
+    
+/**
      * Changes the final directory of the path to be that of the argument
      *
      * @param basePath[in] the base path (e.g. C:\Temp\Bar\)
@@ -234,7 +231,8 @@ public class StringUtilities
         return retLoc;
     }
     
-    /**
+    
+/**
      * This method takes toSplice and for every delimiter in it, replaces that delimiter
      * with value, returning the results in result.
      *
@@ -291,7 +289,8 @@ public class StringUtilities
         return retStr.toString();
     }
     
-    /**
+    
+/**
      * Retrieves the parent directory of the given file.
      * @param file An absolute file name.
      * @return The parent directory, or the <code>""</code> if we can't work out
@@ -314,7 +313,8 @@ public class StringUtilities
         return path;
     }
     
-    /**
+    
+/**
      * Returns the name of the file or directory.  Neiter path nor
      * the extention is used.  You can use the File class to perform
      * the same action.  However that requires a File object to be
@@ -339,7 +339,8 @@ public class StringUtilities
         return name;
     }
     
-    /**
+    
+/**
      * @param thepath
      * @param thefile
      * @param string
@@ -368,7 +369,8 @@ public class StringUtilities
         return path;
     }
     
-    /**
+    
+/**
      *
      * Replaces all occurrences of the strToReplace substring in str with the passed in string
      * in replaceWith. For example, "File %1 was saved.  Please copy %1 to a safe place"
@@ -400,7 +402,8 @@ public class StringUtilities
         return buffer.toString();
     }
     
-    /**
+    
+/**
      *
      * Replaces the strToReplace substring in str with the passed in string in replaceWith. For example,
      * "File %1 was saved." Use this method to replace the %1 with another string.
@@ -448,7 +451,8 @@ public class StringUtilities
         return retVal;
     }
     
-    /**
+    
+/**
      * Returns the argument filename with the argument extension
      *
      * @param fullFilename The full path to the file
@@ -473,7 +477,8 @@ public class StringUtilities
     }
     
     
-    /**
+    
+/**
      * Splits the given text into substrings around the given delimiter, and
      * adds each substring to the given Collection.
      *
@@ -496,7 +501,8 @@ public class StringUtilities
         return retStrs;
     }
     
-    /**
+    
+/**
      * Retrieves the extension of the passed in filename.
      *
      * @param fullFileName The file coming in. Can be relative or absolute.
@@ -515,7 +521,8 @@ public class StringUtilities
         return ext;
     }
     
-   /*
+   
+/*
     * Searches through a string for the first character that matches any element of a specified string.
     *
     * @param str The string for which the member function is to search.
@@ -527,7 +534,8 @@ public class StringUtilities
         return findFirstOf( strThis, str, 0 );
     }
     
-   /*
+   
+/*
     * Searches for the first occurrence of any of the chars in str within strThis.
     *
     * @param str The string containing chars to find in strThis.

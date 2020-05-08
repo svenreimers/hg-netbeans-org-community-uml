@@ -48,6 +48,7 @@ package org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructur
 import org.netbeans.modules.uml.core.AbstractUMLTestCase;
 
 
+
 /**
  * Test cases for StructuralFeature.
  */

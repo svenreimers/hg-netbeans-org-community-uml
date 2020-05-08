@@ -49,10 +49,8 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.IElement;
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAssociationEnd;
 import org.openide.util.NbBundle;
 
-/**
- *
- * @author Sheryl
- */
+
+
 public class AssociationEndData extends ElementDataObject
 {
     private IAssociationEnd element;

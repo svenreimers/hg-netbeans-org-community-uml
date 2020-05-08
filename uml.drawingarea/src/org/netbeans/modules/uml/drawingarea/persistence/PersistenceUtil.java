@@ -64,10 +64,8 @@ import org.netbeans.modules.uml.drawingarea.persistence.api.DiagramNodeWriter;
 import org.netbeans.modules.uml.drawingarea.view.UMLEdgeWidget;
 import org.netbeans.modules.uml.drawingarea.view.UMLNodeWidget;
 
-/**
- *
- * @author Jyothi
- */
+
+
 public class PersistenceUtil {
 
     //Hashmap to maintain a list of anchors(aka GraphConnectors) and its XMI-IDs

@@ -54,7 +54,8 @@ import org.netbeans.modules.uml.core.support.umlsupport.XMLManip;
 
 abstract public class StatechartDiagram extends Diagram implements IStatechartDiagram
 {
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.VersionableElement#buildNodePresence(java.lang.String, org.dom4j.Document, org.dom4j.Node)
      */
     public void establishNodePresence(Document doc, Node node)
@@ -62,7 +63,8 @@ abstract public class StatechartDiagram extends Diagram implements IStatechartDi
          buildNodePresence("UML:StatechartDiagram", doc, node);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.PresentationElement#establishNodeAttributes(org.dom4j.Element)
      */
     public void establishNodeAttributes(Element ele)

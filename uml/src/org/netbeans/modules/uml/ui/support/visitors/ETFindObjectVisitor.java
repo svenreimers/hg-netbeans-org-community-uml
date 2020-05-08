@@ -47,11 +47,8 @@
 package org.netbeans.modules.uml.ui.support.visitors;
 
 
-/**
- * @author KevinM
- *
- * Visitor is used for seaching the graph for an object.
- */
+
+
 public class ETFindObjectVisitor implements IETGraphObjectVisitor
 {
     // TODO: meteora

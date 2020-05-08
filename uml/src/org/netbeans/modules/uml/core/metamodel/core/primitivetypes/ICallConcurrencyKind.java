@@ -42,24 +42,20 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : ICallConcurrencyKind.java
- * Created on : Sep 16, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.metamodel.core.primitivetypes;
 
-/**
- * @author Aztec
- */
+
+
 public interface ICallConcurrencyKind
 {
     // Callers must coordinate so that only one call to an Instance (on any sequential Operation) may be outstanding at once. If simultaneous calls occur, then the semantics and integrity of the system cannot be guaranteed.
     public static final int CCK_SEQUENTIAL = 0;
 
-    // Multiple calls from concurrent threads may occur simultaneously to one Instance (on any guarded Operation), but only one is allowed to commence.
+    
     public static final int CCK_GUARDED = 1;
 
-    // Multiple calls from concurrent threads may occur simultaneously to one Instance (on any concurrent Operation). All of them may proceed concurrently with correct semantics." ) ]
+    
     public static final int CCK_CONCURRENT = 2;
 }

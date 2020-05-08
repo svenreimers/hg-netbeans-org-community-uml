@@ -52,10 +52,8 @@ import org.netbeans.modules.uml.drawingarea.view.DesignerScene;
 import org.netbeans.modules.uml.resources.images.ImageUtil;
 import org.openide.util.NbBundle;
 
-/**
- *
- * @author sp153251
- */
+
+
 public class SequenceDiagramLayoutAction extends AbstractAction
 {
     final private int messgeMargin=30;

@@ -54,13 +54,8 @@ import org.netbeans.modules.uml.drawingarea.LabelManager;
 import org.netbeans.modules.uml.drawingarea.persistence.EdgeWriter;
 import org.netbeans.modules.uml.drawingarea.view.UMLEdgeWidget;
 
-/**
- * Creates a nested link connection.  The nested link connection represents 
- * an ownership.  For example a pacage and own a class.  The connection does 
- * does not represent a true relationship, but instead a property.  
- * 
- * @author treyspiva
- */
+
+
 public class NestedLinkConnector extends AbstractUMLConnectionWidget
 {
     
@@ -82,7 +77,8 @@ public class NestedLinkConnector extends AbstractUMLConnectionWidget
         
     }
     
-    /**
+    
+/**
      * Since a nested link does not represent a true relationship it should not
      * have any labels.
      * 

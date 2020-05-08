@@ -46,10 +46,8 @@ package org.netbeans.modules.uml.drawingarea.view;
 import java.util.HashMap;
 import javax.swing.JToggleButton;
 
-/**
- *
- * @author treyspiva
- */
+
+
 public interface DesignerTools
 {
     public static final String SELECT = "SELECT";

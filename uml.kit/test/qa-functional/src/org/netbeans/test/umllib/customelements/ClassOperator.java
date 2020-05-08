@@ -43,6 +43,7 @@
  */
 
 
+
 /*
  * ClassOperator.java
  *
@@ -78,10 +79,8 @@ import org.netbeans.test.umllib.actions.InsertOperationAction;
 import org.netbeans.test.umllib.exceptions.NotFoundException;
 
 
-/**
- *
- * @author VijayaBabu Mummaneni
- */
+
+
 public class ClassOperator extends DiagramElementOperator{
     
     
@@ -136,14 +135,16 @@ public class ClassOperator extends DiagramElementOperator{
         CompartmentOperator mainComp = new CompartmentOperator(this, CompartmentTypes.EXTENSION_POINTS_LIST_COMPARTMENT);
         ArrayList<CompartmentOperator> extPoints = mainComp.getCompartments();
         return null;
-            /*if (extPoints!=null && extPoints.size()>index){
+            
+/*if (extPoints!=null && extPoints.size()>index){
                 return extPoints.get(index);
             }else{
                 throw new NotFoundException("Compartment with index "+index+" not found.");
             } */
     }
     
-    /**
+    
+/**
      * inserts new attribute. Actually invokes insertAttributeByPopup method.
      * classOperatorUtil().attributeNaturalWayNaming is used to name added attribute.
      * Default values can be passed as null.
@@ -158,7 +159,8 @@ public class ClassOperator extends DiagramElementOperator{
         insertAttributeByPopup(visibility, type, name, defValue, pressEnter);
     }
     
-    /**
+    
+/**
      * inserts attribute by popup menu.
      * classOperatorUtil().attributeNaturalWayNaming is used to name added attribute.
      * Default values can be passed as null.
@@ -175,7 +177,8 @@ public class ClassOperator extends DiagramElementOperator{
         new classOperatorUtil().attributeNaturalWayNaming(visibility, type, name, defValue, pressEnter);
     }
     
-    /**
+    
+/**
      * inserts attribute by shortcut
      * classOperatorUtil().attributeNaturalWayNaming is used to name added attribute.
      * Default values can be passed as null.
@@ -192,7 +195,8 @@ public class ClassOperator extends DiagramElementOperator{
         new classOperatorUtil().attributeNaturalWayNaming(visibility, type, name, defValue, pressEnter);
     }
     
-    /**
+    
+/**
      * inserts new operation. Actually invokes insertOperationByPopup method.
      * classOperatorUtil().operationNaturalWayNaming is used to name added operation.
      * Default values can be passed as null.
@@ -207,7 +211,8 @@ public class ClassOperator extends DiagramElementOperator{
         insertOperationByPopup(visibility, retType, name, parameters, pressEnter);
     }
     
-    /**
+    
+/**
      * inserts attribute by popup menu
      * classOperatorUtil().operationNaturalWayNaming is used to name added operation.
      * Default values can be passed as null.
@@ -224,7 +229,8 @@ public class ClassOperator extends DiagramElementOperator{
         new classOperatorUtil().operationNaturalWayNaming(visibility, retType, name, parameters, pressEnter);
     }
     
-    /**
+    
+/**
      * inserts attribute by shortcut
      * classOperatorUtil().operationNaturalWayNaming is used to name added operation.
      * Default values can be passed as null.
@@ -291,7 +297,8 @@ public class ClassOperator extends DiagramElementOperator{
             DriverManager.setKeyDriver(new KeyRobotDriver(new Timeout("autoDelay",50)));
         }
         
-        /**
+        
+/**
          * It works with existing edit control with
          * "anyVisibility anyType anyName = anyValue"  and "anyVisibility anyType anyName"
          * initial attribute with selected name (after Insert or double click).
@@ -336,7 +343,8 @@ public class ClassOperator extends DiagramElementOperator{
             changeText(type, oldType, tf);
             changeText(name, oldName, tf);
             
-            /*
+            
+/*
              
             boolean isName=!oldName.equals(name);
             boolean isType=!oldType.equals(type);
@@ -468,7 +476,8 @@ public class ClassOperator extends DiagramElementOperator{
         }
         
         
-        /**
+        
+/**
          * It works with existing edit control with
          * "anyVisibility anyType anyName = anyValue"  and "anyVisibility anyType anyName"
          * initial attribute with selected name (after Insert or double click).
@@ -484,7 +493,8 @@ public class ClassOperator extends DiagramElementOperator{
             return attributeNaturalWayNaming(visibility, type, name, defValue, false);
         }
         
-        /**
+        
+/**
          * It works with existing edit control with
          * "anyVisibility anyType anyName = anyValue"  and "anyVisibility anyType anyName"
          * initial attribute with selected name (after Insert or double click).
@@ -499,7 +509,8 @@ public class ClassOperator extends DiagramElementOperator{
             return attributeNaturalWayNaming(visibility, type, name, null);
         }
         //==============================================================================================
-        /**
+        
+/**
          * It works with existing edit control with
          * "anyVisibility anyRetType anyName( parType parName, ... )"  and "anyVisibility anyRetType anyName(  )"
          * initial attribute with selected name (after Insert or double click).
@@ -730,7 +741,8 @@ public class ClassOperator extends DiagramElementOperator{
             innerCall=false;
             return ret;
         }
-        /**
+        
+/**
          * It works with existing edit control with
          * "anyVisibility anyRetType anyName( parType parName)"  and "anyVisibility anyRetType anyName(  )"
          * initial attribute with selected name (after Insert or double click).
@@ -748,7 +760,8 @@ public class ClassOperator extends DiagramElementOperator{
             String [] aparNames={parNames};
             return   operationNaturalWayNaming(visibility,retType,name,aparTypes,aparNames,pressEnter);
         }
-        /**
+        
+/**
          * It works with existing edit control with
          * "anyVisibility anyRetType anyName( parType parName, ... )"  and "anyVisibility anyRetType anyName(  )"
          * initial attribute with selected name (after Insert or double click).
@@ -763,7 +776,8 @@ public class ClassOperator extends DiagramElementOperator{
         public String operationNaturalWayNaming(String visibility,String retType,String name,String[] parTypes,String[] parNames) {
             return   operationNaturalWayNaming(visibility,retType,name,parTypes,parNames,false);
         }
-        /**
+        
+/**
          * It works with existing edit control with
          * "anyVisibility anyRetType anyName( parType parName)"  and "anyVisibility anyRetType anyName(  )"
          * initial attribute with selected name (after Insert or double click).
@@ -778,7 +792,8 @@ public class ClassOperator extends DiagramElementOperator{
         public String operationNaturalWayNaming(String visibility,String retType,String name,String parTypes,String parNames) {
             return   operationNaturalWayNaming(visibility,retType,name,parTypes,parNames,false);
         }
-        /**
+        
+/**
          * It works with existing edit control with
          * "anyVisibility anyRetType anyName( parType parName, ... )"  and "anyVisibility anyRetType anyName(  )"
          * initial attribute with selected name (after Insert or double click).
@@ -811,7 +826,8 @@ public class ClassOperator extends DiagramElementOperator{
             //
             return   operationNaturalWayNaming(visibility,retType,name,parTypes,parNames,pressEnter);
         }
-        /**
+        
+/**
          * It works with existing edit control with
          * "anyVisibility anyRetType anyName( parType parName, ... )"  and "anyVisibility anyRetType anyName(  )"
          * initial attribute with selected name (after Insert or double click).
@@ -825,7 +841,8 @@ public class ClassOperator extends DiagramElementOperator{
         public String operationNaturalWayNaming(String visibility,String retType,String name,String parameters) {
             return operationNaturalWayNaming(visibility,retType,name,parameters,false);
         }
-        /**
+        
+/**
          * It works with existing edit control with
          * "anyVisibility anyRetType anyName( parType parName, ... )"  and "anyVisibility anyRetType anyName(  )"
          * initial attribute with selected name (after Insert or double click).

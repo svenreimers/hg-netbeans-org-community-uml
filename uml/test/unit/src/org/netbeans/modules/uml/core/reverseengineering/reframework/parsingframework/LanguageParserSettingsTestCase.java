@@ -47,6 +47,7 @@ package org.netbeans.modules.uml.core.reverseengineering.reframework.parsingfram
 
 import org.netbeans.modules.uml.core.AbstractUMLTestCase;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
+
 /**
  * Test cases for LanguageParserSettings.
  */
@@ -59,7 +60,8 @@ public class LanguageParserSettingsTestCase extends AbstractUMLTestCase
 
     private ILanguageParserSettings lps;
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see junit.framework.TestCase#setUp()
      */
     protected void setUp() throws Exception
@@ -68,7 +70,8 @@ public class LanguageParserSettingsTestCase extends AbstractUMLTestCase
         lps = new LanguageParserSettings();
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see junit.framework.TestCase#tearDown()
      */
     protected void tearDown() throws Exception

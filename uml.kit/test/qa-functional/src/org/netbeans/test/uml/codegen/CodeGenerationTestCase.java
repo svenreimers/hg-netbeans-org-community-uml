@@ -43,6 +43,7 @@
  */
 
 
+
 /*
  * CodeGenerationTestCase.java
  *
@@ -72,10 +73,8 @@ import org.netbeans.test.umllib.project.elem.IPackageElem;
 import org.netbeans.test.umllib.project.elem.impl.PackageElem;
 import org.netbeans.test.umllib.project.verifier.TestVerifier;
 
-/**
- *
- * @author Alexandr Scherbatiy
- */
+
+
 
 public class CodeGenerationTestCase extends UMLTestCase{
     
@@ -198,7 +197,8 @@ public class CodeGenerationTestCase extends UMLTestCase{
         
         String path = "";
         
-        /*
+        
+/*
         StringTokenizer tokenizer = new StringTokenizer(javaElem.getFullName(),".");
          
         path += tokenizer.nextToken();

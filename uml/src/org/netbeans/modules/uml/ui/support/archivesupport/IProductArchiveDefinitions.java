@@ -43,17 +43,12 @@
  */
 
 
-/*
- *
- * Created on Jun 19, 2003
- * @author Trey Spiva
- */
+
+
 package org.netbeans.modules.uml.ui.support.archivesupport;
 
-/**
- *
- * @author Trey Spiva
- */
+
+
 public interface IProductArchiveDefinitions
 {
    // These are the XML names in the prs file for saving diagram information

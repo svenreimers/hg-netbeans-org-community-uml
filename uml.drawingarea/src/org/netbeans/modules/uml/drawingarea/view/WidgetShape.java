@@ -44,10 +44,8 @@ package org.netbeans.modules.uml.drawingarea.view;
 import java.awt.Point;
 import java.awt.Rectangle;
 
-/**
- *
- * @author treyspiva
- */
+
+
 public interface WidgetShape
 {
     public Rectangle getBounds();

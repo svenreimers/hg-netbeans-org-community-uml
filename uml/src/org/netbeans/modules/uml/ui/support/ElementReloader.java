@@ -50,10 +50,8 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.IElement;
 import org.netbeans.modules.uml.core.support.umlutils.ElementLocator;
 import org.netbeans.modules.uml.core.support.umlutils.IElementLocator;
 
-/**
- * @author sumitabhk
- *
- */
+
+
 public class ElementReloader
 {
 
@@ -65,9 +63,8 @@ public class ElementReloader
 		super();
 	}
 	
-	/**
-	 * Reloads an element given only the XMI id.
-	 */
+	
+
 	public IElement getElement(String xmiid)
 	{
 		if (xmiid != null && xmiid.length() > 0)
@@ -78,13 +75,8 @@ public class ElementReloader
 		return null;
 	}
 
-	/**
-	 * Reloads an element given the XMI id and the project (toplevel) XMIID.
-	 *
-	 * @param elementTopLevelXMIID [in] The toplevel id of the model element to reload (ie IProject XMIID)
-	 * @param elementXMIID [in] The XMIID of the element to reload
-	 * @param pElement [out,retval] The reloaded element, or NULL
-	 */
+	
+
 	public IElement getElement(String topLevelID, String xmiid)
 	{
 		// when the top level XMI ID is blank, IElementLocator calls FindElementByID2() internally

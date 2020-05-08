@@ -46,14 +46,12 @@
 
 package org.netbeans.modules.uml.ui.support.projecttreesupport;
 
-/**
- * Defines the inteface used to filter items from the project tree.
- *
- * @author Trey Spiva
- */
+
+
 public interface IProjectTreeBuilderFilter
 {
-   /**
+   
+/**
     * Should this element type be hidden in the tree?
     *
     * @param elementTypeName The element to determine whether or not its filtered.

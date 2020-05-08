@@ -45,10 +45,8 @@ package org.netbeans.modules.uml.diagrams;
 
 import org.netbeans.modules.uml.drawingarea.actions.WidgetContext;
 
-/**
- *
- * @author treyspiva
- */
+
+
 public class DefaultWidgetContext implements WidgetContext
 {
     private String name = "";

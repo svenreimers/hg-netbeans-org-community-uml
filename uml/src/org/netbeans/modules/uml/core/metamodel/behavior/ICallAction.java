@@ -50,12 +50,14 @@ import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure
 
 public interface ICallAction extends IAction
 {
-	/**
+	
+/**
 	 * Sets / Gets the operation which will be invoked when the action is performed.
 	*/
 	public IOperation getOperation();
 
-	/**
+	
+/**
 	 * Sets / Gets the operation which will be invoked when the action is performed.
 	*/
 	public void setOperation( IOperation value );

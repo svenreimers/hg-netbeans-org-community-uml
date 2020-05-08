@@ -46,32 +46,38 @@ package org.netbeans.modules.uml.core.reverseengineering.reframework;
 import org.dom4j.Node;
 public interface IREInterface
 {
-	/**
+	
+/**
 	 * Get / Set the XML DOM node that contains the interface information.
 	*/
 	public Node getDOMNode();
 
-	/**
+	
+/**
 	 * Get / Set the XML DOM node that contains the interface information.
 	*/
 	public void setDOMNode( Node value );
 
-	/**
+	
+/**
 	 * Retrieve the name of the implemented interface.
 	*/
 	public String getName();
 
-	/**
+	
+/**
 	 * Retrieve the line number that contains the declaration.
 	*/
 	public int getLine();
 
-	/**
+	
+/**
 	 * Retrieve the column that that contains the declaration.
 	*/
 	public int getColumn();
 
-	/**
+	
+/**
 	 * Retrieve the stream position that contains the declaration.
 	*/
 	public int getPosition();

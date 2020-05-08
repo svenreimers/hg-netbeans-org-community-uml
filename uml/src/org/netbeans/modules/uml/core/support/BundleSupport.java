@@ -42,6 +42,7 @@
  * made subject to such option by the copyright holder.
  */
 
+
 /*
  * BundleSupport.java
  *
@@ -53,10 +54,8 @@ package org.netbeans.modules.uml.core.support;
 import java.text.MessageFormat;
 import java.util.ResourceBundle;
 
-/**
- *
- * @author  Trey Spiva
- */
+
+
 public class BundleSupport
 {
    private ResourceBundle m_Bundle = null;

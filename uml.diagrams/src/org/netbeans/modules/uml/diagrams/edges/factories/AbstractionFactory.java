@@ -49,10 +49,8 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElement;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.IRelationship;
 import org.netbeans.modules.uml.core.metamodel.infrastructure.IRelationFactory;
 
-/**
- *
- * @author treyspiva
- */
+
+
 public class AbstractionFactory extends AbstractRelationshipFactory
 {
 

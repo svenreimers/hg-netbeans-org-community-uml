@@ -54,10 +54,8 @@ import org.openide.DialogDisplayer;
 import org.openide.awt.Mnemonics;
 import org.openide.util.NbBundle;
 
-/**
- *
- * @author Craig Conover, craig.conover@sun.com
- */
+
+
 public class SaveNotifierYesNo 
 {
     private static  SaveNotifierYesNo instance = null;
@@ -73,7 +71,8 @@ public class SaveNotifierYesNo
         return instance;
     }
     
-    /**
+    
+/**
      * Creates a new instance of SaveNotifierYesNo
      */
     private SaveNotifierYesNo() 

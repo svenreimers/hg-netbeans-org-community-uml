@@ -42,21 +42,16 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * PropertydProjectModel.java
- *
- * Created on March 20, 2005, 3:51 PM
- */
+
+
 
 package org.netbeans.modules.uml.project.ui.common;
 
 import java.io.File;
 import org.netbeans.api.project.Project;
 
-/**
- *
- * @author Mike
- */
+
+
 public class ReferencedJavaProjectModel
 {
 

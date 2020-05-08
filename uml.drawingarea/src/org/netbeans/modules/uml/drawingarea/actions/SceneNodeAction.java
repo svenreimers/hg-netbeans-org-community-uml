@@ -45,10 +45,8 @@ import org.netbeans.modules.uml.drawingarea.view.DesignerScene;
 import org.openide.nodes.Node;
 import org.openide.util.actions.NodeAction;
 
-/**
- *
- * @author treyspiva
- */
+
+
 public abstract class SceneNodeAction extends NodeAction
 {
     

@@ -60,11 +60,11 @@ import org.netbeans.modules.uml.core.support.umlsupport.Validator;
 import org.netbeans.modules.uml.core.support.umlutils.ETArrayList;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
-/**
- * @author sumitabhk
- */
+
+
 public class VariableFactory implements IVariableFactory{
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.generativeframework.IVariableFactory#createVariable(org.dom4j.Node)
 	 */
 	public IExpansionVariable createVariable(Node varNode) {
@@ -163,35 +163,40 @@ public class VariableFactory implements IVariableFactory{
         return map;
     }
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.generativeframework.IVariableFactory#getExecutionContext()
 	 */
 	public IVariableExpander getExecutionContext() {
 		return m_Contexts.size() > 0? m_Contexts.peek() : null;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.generativeframework.IVariableFactory#setExecutionContext(org.netbeans.modules.uml.core.generativeframework.IVariableExpander)
 	 */
 	public void setExecutionContext(IVariableExpander value) {
         m_Contexts.push( value );
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.generativeframework.IVariableFactory#getConfigFile()
 	 */
 	public String getConfigFile() {
 		return m_Config;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.generativeframework.IVariableFactory#setConfigFile(java.lang.String)
 	 */
 	public void setConfigFile(String value) {
         m_Config = value;
 	}
 
-    /**
+    
+/**
      * Makes sure the config file is valid.
      * @throws FileNotFoundException if the file is not found.
      */
@@ -201,7 +206,8 @@ public class VariableFactory implements IVariableFactory{
             throw new FileNotFoundException(m_Config);
     }
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.generativeframework.IVariableFactory#createVariableWithText(java.lang.String)
 	 */
 	public IExpansionVariable createVariableWithText(String varText) {
@@ -242,7 +248,8 @@ public class VariableFactory implements IVariableFactory{
         return newVar;
 	}
 
-    /**
+    
+/**
      * Creates an IterationVar.
      *
      * @param varText the context text that contains other information specific 
@@ -334,7 +341,8 @@ public class VariableFactory implements IVariableFactory{
         return null;
     }
     
-    /**
+    
+/**
      *
      * Creates a new IIfTest that will be added to an IIfVar variable
      *
@@ -369,7 +377,8 @@ public class VariableFactory implements IVariableFactory{
         return getOption("var", vartext);
     }
 
-    /**
+    
+/**
      * Retrieves an option found on an expansion variables "command line".
      *
      * @param optionName[in]      The name of the option to retrieve
@@ -411,7 +420,8 @@ public class VariableFactory implements IVariableFactory{
         return getOption("literal", vartext);
     }
     
-    /**
+    
+/**
      *
      * Retrieves then pops the current context from this factory
      *
@@ -425,7 +435,8 @@ public class VariableFactory implements IVariableFactory{
         return m_Contexts.size() > 0? m_Contexts.pop() : null;
 	}
 
-    /**
+    
+/**
      *
      * Retrieves the variables used to override default variables, or provide variables
      * that are not part of the default expansion variable configuration file.
@@ -440,7 +451,8 @@ public class VariableFactory implements IVariableFactory{
         return new ETArrayList<IExpansionVariable>( m_Overrides.values() );
 	}
 
-    /**
+    
+/**
      *
      * Sets a new batch of overrides on this factory. If 0 is passed, the current
      * collection of override variables is wiped out.
@@ -459,7 +471,8 @@ public class VariableFactory implements IVariableFactory{
         }
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.generativeframework.IVariableFactory#addOverride(org.netbeans.modules.uml.core.generativeframework.IExpansionVariable)
 	 */
 	public void addOverride(IExpansionVariable var)
@@ -467,7 +480,8 @@ public class VariableFactory implements IVariableFactory{
         m_Overrides.put( var.getName(), var );
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.generativeframework.IVariableFactory#removeOverride(org.netbeans.modules.uml.core.generativeframework.IExpansionVariable)
 	 */
 	public void removeOverride(IExpansionVariable var) 

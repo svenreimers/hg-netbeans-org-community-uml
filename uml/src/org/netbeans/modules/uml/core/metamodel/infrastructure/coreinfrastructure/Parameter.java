@@ -78,7 +78,8 @@ public class Parameter extends NamedElement implements
         m_TypedElementAggregate.setAggregator(this);
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IVersionableElement#setNode(org.dom4j.Node)
      */
     public void setNode(Node node)
@@ -87,7 +88,8 @@ public class Parameter extends NamedElement implements
         m_TypedElementAggregate.setNode(node);
     }
     	
-    /**
+    
+/**
      * Sets / Gets the direction flag on the parameter, indicating the semantics
      *  of how that data the parameter represents is entering the behavior.
      */
@@ -96,7 +98,8 @@ public class Parameter extends NamedElement implements
             return super.getParameterDirectionKindValue("direction");
     }
 
-    /**
+    
+/**
      * Sets / Gets the direction flag on the parameter, indicating the semantics 
      * of how that data the parameter represents is entering the behavior.
      */
@@ -129,7 +132,8 @@ public class Parameter extends NamedElement implements
             }		
     }
 
-    /**
+    
+/**
      * Sets / Gets the expression that holds the default initialization for the 
      * parameter.
      */
@@ -140,7 +144,8 @@ public class Parameter extends NamedElement implements
             return collector.retrieveSingleElement(m_Node,"UML:Parameter.default/UML:Expression", IExpression.class);	
     }
 
-    /**
+    
+/**
      * Sets the default expression for this parameter. Results in the firing
      * of the PreDefaultExpModified and DefaultExpModified events.
      *
@@ -175,7 +180,8 @@ public class Parameter extends NamedElement implements
             }
     }
 
-    /**
+    
+/**
      * Sets / Gets the name of the Parameter.
      */
     public String getName()
@@ -183,7 +189,8 @@ public class Parameter extends NamedElement implements
             return super.getName();
     }
 
-    /**
+    
+/**
      * Sets / Gets the name of the Parameter.
      */
     public void setName( String value )
@@ -191,7 +198,8 @@ public class Parameter extends NamedElement implements
             super.setName(value);
     }
 
-    /**
+    
+/**
      * Adds the type to this feature via a more convenient 
      * string, which will resolve the string into the appropriate
      * Classifier.
@@ -236,7 +244,8 @@ public class Parameter extends NamedElement implements
         }
     }
 
-    /**
+    
+/**
      * Retrieves the BehavioralFeature this parameter is a part of.
      */
     public IBehavioralFeature getBehavioralFeature()
@@ -261,7 +270,8 @@ public class Parameter extends NamedElement implements
             return feature;		
     }
 
-    /**
+    
+/**
      * Retrieves the Behavior this parameter is a part of.
  */
     public IBehavior getBehavior()
@@ -275,7 +285,8 @@ public class Parameter extends NamedElement implements
             return feature;
     }
 
-    /**
+    
+/**
      * The name of the Classifier who specifies this Parameter's type.
      */
     public String getTypeName()
@@ -288,7 +299,8 @@ public class Parameter extends NamedElement implements
             return retName;
     }
 
-    /**
+    
+/**
      * The name of the Classifier who specifies this Parameter's type.
      */
     public void setTypeName( String value )
@@ -296,7 +308,8 @@ public class Parameter extends NamedElement implements
             setType2(value);
     }
 
-    /**
+    
+/**
      * The default parameter initializer. Easy access to the body property of the
      *  Expression.
      */
@@ -310,7 +323,8 @@ public class Parameter extends NamedElement implements
             return retVal;	
     }
 
-    /**
+    
+/**
      * The default parameter initializer. Easy access to the body property of the
      *  Expression.
      */
@@ -328,7 +342,8 @@ public class Parameter extends NamedElement implements
             }
     }
 
-    /**
+    
+/**
      * The default parameter initializer. Easy access to the body property of the
      * Expression.
      * NOTE: Sending both languauge and body with comma seperation between them.
@@ -347,7 +362,8 @@ public class Parameter extends NamedElement implements
             return values.toString();
     }
 
-    /**
+    
+/**
      * The default parameter initializer. Easy access to the body property of the 
      * Expression.
      */
@@ -372,7 +388,8 @@ public class Parameter extends NamedElement implements
                     new TypedFactoryRetriever<IExpression>();
             return ret.createType("Expression");		
     }
-    /**
+    
+/**
      * Specifies extra semantics associated with the Parameter.
      */
     public int getParameterKind()
@@ -380,7 +397,8 @@ public class Parameter extends NamedElement implements
             return super.getParameterSemanticsKind("kind");
     }
 
-    /**
+    
+/**
      * Specifies extra semantics associated with the Parameter.
     */
     public void setParameterKind( /* ParameterSemanticsKind */ int value )
@@ -388,7 +406,8 @@ public class Parameter extends NamedElement implements
             super.setParameterSemanticsKind("kind",value);
     }
 
-    /**
+    
+/**
      *
      * Retrieves the object that actually owns this Parameter.
      * This is generally a BehavioralFeature or a Behavior
@@ -435,7 +454,8 @@ public class Parameter extends NamedElement implements
             return ver;
     }
 
-    /**
+    
+/**
     * Fires an event to update the operation that owns this paramter.
     * This method is called when there's any change made to the parameter.
     * @param thisElement[in] The COM object representing this element
@@ -459,7 +479,8 @@ public class Parameter extends NamedElement implements
         }
     }
 
-    /**
+    
+/**
      * Establishes the appropriate XML elements for this UML type.
      *
      * [in] The document where this element will reside
@@ -521,7 +542,8 @@ public class Parameter extends NamedElement implements
             return m_TypedElementAggregate.getTypeID();
     }			
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityListener#onPreLowerModified(org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityRange, java.lang.String)
      */
     public boolean onPreLowerModified(IMultiplicity mult, IMultiplicityRange range, String proposedValue) 
@@ -529,7 +551,8 @@ public class Parameter extends NamedElement implements
             return m_TypedElementAggregate.onPreLowerModified(mult, range, proposedValue);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityListener#onLowerModified(org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityRange)
      */
     public void onLowerModified(IMultiplicity mult, IMultiplicityRange range) 
@@ -537,7 +560,8 @@ public class Parameter extends NamedElement implements
             m_TypedElementAggregate.onLowerModified(mult, range);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityListener#onPreUpperModified(org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityRange, java.lang.String)
      */
     public boolean onPreUpperModified(IMultiplicity mult, IMultiplicityRange range, String proposedValue) 
@@ -545,7 +569,8 @@ public class Parameter extends NamedElement implements
             return m_TypedElementAggregate.onPreUpperModified(mult, range, proposedValue);	
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityListener#onUpperModified(org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityRange)
      */
     public void onUpperModified(IMultiplicity mult, IMultiplicityRange range) 
@@ -553,7 +578,8 @@ public class Parameter extends NamedElement implements
             m_TypedElementAggregate.onUpperModified(mult, range);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityListener#onPreRangeAdded(org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityRange)
      */
     public boolean onPreRangeAdded(IMultiplicity mult, IMultiplicityRange range) 
@@ -561,7 +587,8 @@ public class Parameter extends NamedElement implements
             return m_TypedElementAggregate.onPreRangeAdded(mult, range);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityListener#onRangeAdded(org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityRange)
      */
     public void onRangeAdded(IMultiplicity mult, IMultiplicityRange range) 
@@ -569,7 +596,8 @@ public class Parameter extends NamedElement implements
             m_TypedElementAggregate.onRangeAdded(mult, range);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityListener#onPreRangeRemoved(org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityRange)
      */
     public boolean onPreRangeRemoved(IMultiplicity mult, IMultiplicityRange range) 
@@ -577,7 +605,8 @@ public class Parameter extends NamedElement implements
             return m_TypedElementAggregate.onPreRangeRemoved(mult, range);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityListener#onRangeRemoved(org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityRange)
      */
     public void onRangeRemoved(IMultiplicity mult, IMultiplicityRange range) 
@@ -585,7 +614,8 @@ public class Parameter extends NamedElement implements
             m_TypedElementAggregate.onRangeRemoved(mult, range);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityListener#onPreOrderModified(org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity, boolean)
      */
     public boolean onPreOrderModified(IMultiplicity mult, boolean proposedValue)
@@ -593,7 +623,8 @@ public class Parameter extends NamedElement implements
             return m_TypedElementAggregate.onPreOrderModified(mult, proposedValue);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityListener#onOrderModified(org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity)
      */
     public void onOrderModified(IMultiplicity mult) 

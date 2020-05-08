@@ -44,10 +44,8 @@ package org.netbeans.modules.uml.drawingarea.widgets;
 
 import java.awt.Font;
 
-/**
- *
- * @author sp153251
- */
+
+
 public interface NameFontHandler {
     public void setNameFont(Font font);
 }

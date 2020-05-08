@@ -79,10 +79,8 @@ import java.util.Arrays;
 import java.util.List;
 import org.openide.util.Exceptions;
 
-/**
- * @author sumitabhk
- *
- */
+
+
 public class NewDialogResultProcessor implements INewDialogResultProcessor
 {
 	
@@ -94,7 +92,8 @@ public class NewDialogResultProcessor implements INewDialogResultProcessor
 		super();
 	}
 	
-	/**
+	
+/**
 	 *
 	 * Acts on a result from the new dialog.
 	 *
@@ -147,7 +146,8 @@ public class NewDialogResultProcessor implements INewDialogResultProcessor
 		return obj;
 	}
 	
-	/**
+	
+/**
 	 *
 	 * Creates a new element based on the details in pDetails
 	 *
@@ -309,7 +309,8 @@ public class NewDialogResultProcessor implements INewDialogResultProcessor
 		return retEle;
 	}
 	
-	/**
+	
+/**
 	 *
 	 * Creates a new package based on the details in pDetails
 	 *
@@ -376,7 +377,8 @@ public class NewDialogResultProcessor implements INewDialogResultProcessor
             return retPack;
         }
 	
-	/**
+	
+/**
 	 *
 	 * Creates a new diagram based on the details in pDetails
 	 *
@@ -422,7 +424,8 @@ public class NewDialogResultProcessor implements INewDialogResultProcessor
             return retDia;
         }
 	
-	/**
+	
+/**
 	 *
 	 * Creates a new project based on the details in pDetails
 	 *
@@ -521,7 +524,8 @@ public class NewDialogResultProcessor implements INewDialogResultProcessor
 		return retProj;
 	}
 	
-	/**
+	
+/**
 	 * @param i
 	 * @param string
 	 * @param string2
@@ -533,7 +537,8 @@ public class NewDialogResultProcessor implements INewDialogResultProcessor
 		return 0;
 	}
 	
-	/**
+	
+/**
 	 *
 	 * Adds the Project to the user's SCM tool.
 	 *
@@ -556,7 +561,8 @@ public class NewDialogResultProcessor implements INewDialogResultProcessor
 		}
 	}
 	
-	/**
+	
+/**
 	 * Returns the workspace this result processor should use
 	 *
 	 * @param pWorkspace [out,retval] The workspace
@@ -569,7 +575,8 @@ public class NewDialogResultProcessor implements INewDialogResultProcessor
 		return retSpace;
 	}
 	
-	/**
+	
+/**
 	 *
 	 * Creates a new workspace based on the details in pDetails
 	 *

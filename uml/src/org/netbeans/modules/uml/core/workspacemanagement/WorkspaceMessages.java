@@ -47,10 +47,8 @@ package org.netbeans.modules.uml.core.workspacemanagement;
 import java.util.MissingResourceException;
 import java.util.ResourceBundle;
 
-/**
- *
- * @author Trey Spiva
- */
+
+
 public class WorkspaceMessages
 {
 
@@ -66,7 +64,8 @@ public class WorkspaceMessages
    {
 
    }
-   /**
+   
+/**
     * @param key
     * @return
     */

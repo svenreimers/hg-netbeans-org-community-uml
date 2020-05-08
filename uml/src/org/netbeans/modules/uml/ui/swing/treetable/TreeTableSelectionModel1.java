@@ -43,6 +43,7 @@
  */
 
 
+
 /*
  * Created on Jun 9, 2003
  *
@@ -54,10 +55,9 @@ import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 import javax.swing.tree.DefaultTreeSelectionModel;
 
-/**
- * @author sumitabhk
- *
- */
+
+
+
 /**
  * ListToTreeSelectionModelWrapper extends DefaultTreeSelectionModel
  * to listen for changes in the ListSelectionModel it maintains. Once
@@ -70,7 +70,8 @@ class TreeTableSelectionModel1 extends DefaultTreeSelectionModel
 	/** Set to true when we are updating the ListSelectionModel. */
 	protected boolean         updatingListSelectionModel;
 
-	/**
+	
+/**
 	 * 
 	 */
 	public TreeTableSelectionModel1()
@@ -80,7 +81,8 @@ class TreeTableSelectionModel1 extends DefaultTreeSelectionModel
 								(createListSelectionListener());
 	}
 
-	/**
+	
+/**
 	 * Returns the list selection model. ListToTreeSelectionModelWrapper
 	 * listens for changes to this model and updates the selected paths
 	 * accordingly.
@@ -89,7 +91,8 @@ class TreeTableSelectionModel1 extends DefaultTreeSelectionModel
 		return listSelectionModel; 
 	}
 
-	/**
+	
+/**
 	 * This is overridden to set <code>updatingListSelectionModel</code>
 	 * and message super. This is the only place DefaultTreeSelectionModel
 	 * alters the ListSelectionModel.
@@ -111,14 +114,16 @@ class TreeTableSelectionModel1 extends DefaultTreeSelectionModel
 		// paths are the only thing that needs to be updated.
 	}
 
-	/**
+	
+/**
 	 * Creates and returns an instance of ListSelectionHandler.
 	 */
 	protected ListSelectionListener createListSelectionListener() {
 		return new ListSelectionHandler();
 	}
 
-	/**
+	
+/**
 	 * If <code>updatingListSelectionModel</code> is false, this will
 	 * reset the selected paths from the selected rows in the list
 	 * selection model.
@@ -152,7 +157,8 @@ class TreeTableSelectionModel1 extends DefaultTreeSelectionModel
 		}
 	}
 
-	/**
+	
+/**
 	 * Class responsible for calling updateSelectedPathsFromSelectedRows
 	 * when the selection of the list changse.
 	 */

@@ -43,14 +43,8 @@
  */
 
 
-/*
- * OperationElem.java
- *
- * Created on January 23, 2007, 5:57 PM
- *
- * To change this template, choose Tools | Template Manager
- * and open the template in the editor.
- */
+
+
 
 package org.netbeans.test.umllib.project.elem.impl;
 
@@ -61,10 +55,8 @@ import org.netbeans.test.umllib.project.elem.IJavaElem;
 import org.netbeans.test.umllib.project.elem.ModifierType;
 import org.netbeans.test.umllib.project.elem.VisibilityType;
 
-/**
- *
- * @author andromeda
- */
+
+
 public class AttributeElem implements IAttributeElem {
     
     IJavaElem type;

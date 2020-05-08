@@ -50,10 +50,8 @@ import org.netbeans.modules.uml.core.eventframework.IEventPayload;
 import org.netbeans.modules.uml.core.eventframework.EventManager;
 import org.netbeans.modules.uml.core.support.umlsupport.IResultCell;
 
-/**
- * @author sumitabhk
- *
- */
+
+
 public class RelationValidatorEventDispatcher extends EventDispatcher implements IRelationValidatorEventDispatcher{
 
 	private EventManager<IRelationValidatorEventsSink> m_RelValidatorSink = 
@@ -61,7 +59,8 @@ public class RelationValidatorEventDispatcher extends EventDispatcher implements
 	private EventManager<IRelationEventsSink> m_RelSink = 
         new EventManager<IRelationEventsSink>();
 
-	/**
+	
+/**
 	 * 
 	 */
 	public RelationValidatorEventDispatcher() 
@@ -70,7 +69,8 @@ public class RelationValidatorEventDispatcher extends EventDispatcher implements
 		m_RelSink = new EventManager<IRelationEventsSink>();
 	}
 
-	/**
+	
+/**
 	 *
 	 * Registers the passed-in event sink with this dispatcher.
 	 *
@@ -85,7 +85,8 @@ public class RelationValidatorEventDispatcher extends EventDispatcher implements
 		m_RelValidatorSink.addListener( handler, null );
 	}
 
-	/**
+	
+/**
 	 *
 	 * Registers the passed-in event sink with this dispatcher.
 	 *
@@ -101,7 +102,8 @@ public class RelationValidatorEventDispatcher extends EventDispatcher implements
 		
 	}
 
-	/**
+	
+/**
 	 *
 	 * Removes a listener from the current list.
 	 *
@@ -116,7 +118,8 @@ public class RelationValidatorEventDispatcher extends EventDispatcher implements
 		
 	}
 
-	/**
+	
+/**
 	 *
 	 * Removes a listener from the current list.
 	 *
@@ -131,7 +134,8 @@ public class RelationValidatorEventDispatcher extends EventDispatcher implements
 		
 	}
 
-	/**
+	
+/**
 	 *
 	 * Dispatches the OnPreRelationValidate event.
 	 *
@@ -161,7 +165,8 @@ public class RelationValidatorEventDispatcher extends EventDispatcher implements
 		return proceed;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Dispatches the OnRelationValidated event.
 	 *
@@ -188,7 +193,8 @@ public class RelationValidatorEventDispatcher extends EventDispatcher implements
 		
 	}
 
-	/**
+	
+/**
 	 *
 	 * Dispatches the OnPreRelationModified event.
 	 *
@@ -220,7 +226,8 @@ public class RelationValidatorEventDispatcher extends EventDispatcher implements
 		return proceed;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Dispatches the OnRelationModified event.
 	 *
@@ -247,7 +254,8 @@ public class RelationValidatorEventDispatcher extends EventDispatcher implements
 		
 	}
 
-	/**
+	
+/**
 	 * Fired before a relation meta type is added to.  This includes
 	 * Dependency, Generalization, and Associations.
 	 *
@@ -276,7 +284,8 @@ public class RelationValidatorEventDispatcher extends EventDispatcher implements
 		return proceed;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Dispatches the OnRelationEndAdded event.
 	 *
@@ -302,7 +311,8 @@ public class RelationValidatorEventDispatcher extends EventDispatcher implements
 		
 	}
 
-	/**
+	
+/**
 	 * Fired before a relation meta type is removed.  This includes
 	 * Dependency, Generalization, and Association.
 	 *
@@ -330,7 +340,8 @@ public class RelationValidatorEventDispatcher extends EventDispatcher implements
 		return proceed;
 	}
 
-	/**
+	
+/**
 	 * Fired after a relation meta type has been removed.  This includes
 	 * Dependency, Generalization and Associations.
 	 *
@@ -355,7 +366,8 @@ public class RelationValidatorEventDispatcher extends EventDispatcher implements
 		
 	}
 
-	/**
+	
+/**
 	 * Fired before a relation meta type is created.
 	 *
 	 * @param proxy[in]
@@ -383,7 +395,8 @@ public class RelationValidatorEventDispatcher extends EventDispatcher implements
 		return proceed;
 	}
 
-	/**
+	
+/**
 	 * Fired after a relation meta type has been created.
 	 *
 	 * @param proxy[in]
@@ -408,7 +421,8 @@ public class RelationValidatorEventDispatcher extends EventDispatcher implements
 		
 	}
 
-	/**
+	
+/**
 	 * Fired before a relation meta type is deleted;
 	 *
 	 * @param proxy[in]
@@ -436,7 +450,8 @@ public class RelationValidatorEventDispatcher extends EventDispatcher implements
 		return proceed;
 	}
 
-	/**
+	
+/**
 	 * Fired after a relation meta type has been deleted.
 	 *
 	 * @param proxy[in]
@@ -461,7 +476,8 @@ public class RelationValidatorEventDispatcher extends EventDispatcher implements
 		
 	}
 
-	/**
+	
+/**
 	 * IEventDispatcher override.  Returns the number of registered sinks
 	 */
 	public int getNumRegisteredSinks()

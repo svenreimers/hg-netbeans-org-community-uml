@@ -43,11 +43,8 @@
  */
 
 
-/*
- * File       : TypeElementStateHandler.java
- * Created on : Dec 9, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.statehandlers;
 
 import org.dom4j.Node;
@@ -58,9 +55,8 @@ import org.netbeans.modules.uml.core.reverseengineering.reframework.ClassEvent;
 import org.netbeans.modules.uml.core.reverseengineering.reframework.IClassEvent;
 import org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ITokenDescriptor;
 
-/**
- * @author Aztec
- */
+
+
 public class TypeElementStateHandler extends TopLevelStateHandler
 {
     protected boolean    m_ModifiersState;
@@ -71,7 +67,8 @@ public class TypeElementStateHandler extends TopLevelStateHandler
     private TemplateInstantiationStateHandler mTemplateHandler = null;
     private String       m_DefaultVisibility = "package";
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.statehandlers.ITypeElementStateHandler#getFeatureName()
      */
     public String getFeatureName()
@@ -80,7 +77,8 @@ public class TypeElementStateHandler extends TopLevelStateHandler
         return null;
     }
  
-    /**
+    
+/**
      * Specifies the name of the tag that will own the feature node.
      */
     public String getFeatureOwnerName()
@@ -88,7 +86,8 @@ public class TypeElementStateHandler extends TopLevelStateHandler
        return "UML:Element.ownedElement";
     }
     
-    /**
+    
+/**
      * Initialize the state handler.
      *
      * @param stateName the name of the state that is being processed
@@ -103,7 +102,8 @@ public class TypeElementStateHandler extends TopLevelStateHandler
         m_ElementStateName = stateName;
     }
 
-    /**
+    
+/**
      * Initialize the state handler.
      *
      * @param stateName the name of the state that is being processed
@@ -119,7 +119,8 @@ public class TypeElementStateHandler extends TopLevelStateHandler
         setDefaultVisibility(defaultVis);
     }
 
-    /**
+    
+/**
      * Create a new state handler to be added to the state mechanism.  If the
      * state is not a state that is being processed then a new state handler is
      * not created.  The states of interest is <code>Expression List</code>
@@ -191,7 +192,8 @@ public class TypeElementStateHandler extends TopLevelStateHandler
         return m_TypeIdentifier;
     }
 
-    /**
+    
+/**
      * Add the type name information to the XMI structure.
      *
      * @param pToken [in] The token that specifies the class name.
@@ -216,7 +218,8 @@ public class TypeElementStateHandler extends TopLevelStateHandler
         }
     }
 
-    /**
+    
+/**
      * Generates the visiblity XMI inforamtion
      *
      * @param value [out] The visibility type.
@@ -255,7 +258,8 @@ public class TypeElementStateHandler extends TopLevelStateHandler
         return retVal;
     }
 
-    /**
+    
+/**
      * Generate the XMI data to represent the type information.
      */
     protected void updateType()
@@ -281,7 +285,8 @@ public class TypeElementStateHandler extends TopLevelStateHandler
     }
 
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.statehandlers.ITypeElementStateHandler#getModifierState()
      */
     public boolean getModifierState()
@@ -289,7 +294,8 @@ public class TypeElementStateHandler extends TopLevelStateHandler
         return m_ModifiersState;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.statehandlers.ITypeElementStateHandler#getStateName()
      */
     public String getStateName()
@@ -297,7 +303,8 @@ public class TypeElementStateHandler extends TopLevelStateHandler
         return m_ElementStateName;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.statehandlers.ITypeElementStateHandler#getTypeState()
      */
     public boolean getTypeState()
@@ -305,7 +312,8 @@ public class TypeElementStateHandler extends TopLevelStateHandler
         return m_TypeState;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.statehandlers.ITypeElementStateHandler#setModifierState(boolean)
      */
     public void setModifierState(boolean value)
@@ -314,7 +322,8 @@ public class TypeElementStateHandler extends TopLevelStateHandler
 
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.statehandlers.ITypeElementStateHandler#setTypeState(boolean)
      */
     public void setTypeState(boolean value)
@@ -322,7 +331,8 @@ public class TypeElementStateHandler extends TopLevelStateHandler
        m_TypeState = value;
     }
 
-    /**
+    
+/**
      * Initialize the state handler.  This is a one time initialization.
      */
     public void initialize()
@@ -359,7 +369,8 @@ public class TypeElementStateHandler extends TopLevelStateHandler
         }
     }
 
-    /**
+    
+/**
      * Process a new token.  The tokens that are processed are in the
      * context of an object creation.
      *
@@ -413,7 +424,8 @@ public class TypeElementStateHandler extends TopLevelStateHandler
         }
     }
 
-    /**
+    
+/**
      * Notification that the a state has completed.
      *
      * @param stateName [in] The name of the state.

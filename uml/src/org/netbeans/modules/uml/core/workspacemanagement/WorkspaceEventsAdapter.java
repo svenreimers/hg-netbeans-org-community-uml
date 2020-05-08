@@ -46,10 +46,8 @@ package org.netbeans.modules.uml.core.workspacemanagement;
 
 import org.netbeans.modules.uml.core.support.umlsupport.IResultCell;
 
-/**
- *
- * @author Trey Spiva
- */
+
+
 public class WorkspaceEventsAdapter implements IWorkspaceEventsSink
 {
 

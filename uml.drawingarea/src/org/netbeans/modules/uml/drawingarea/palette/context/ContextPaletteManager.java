@@ -45,13 +45,12 @@ package org.netbeans.modules.uml.drawingarea.palette.context;
 
 import java.awt.Point;
 
-/**
- *
- * @author treyspiva
- */
+
+
 public interface ContextPaletteManager
 {
-    /**
+    
+/**
      * Notifies the context palette manager that the select element has changed.
      * 
      * @param p point related to corresponding selection event in scene.  If 
@@ -60,19 +59,22 @@ public interface ContextPaletteManager
      */
     public void selectionChanged(Point p);
     
-    /**
+    
+/**
      * Cancel the palette action.  The context palette will also be hidden.
      */
     public void cancelPalette();
     
-    /**
+    
+/**
      * Retrieves the model used to represent the context palette information.
      * 
      * @return the context palette model.
      */
     public ContextPaletteModel getModel();
     
-    /**
+    
+/**
      * Request that the context palette recieve input focus.
      */
     public void requestFocus();

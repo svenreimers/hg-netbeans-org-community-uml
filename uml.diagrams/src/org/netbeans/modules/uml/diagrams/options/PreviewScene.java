@@ -72,10 +72,8 @@ import org.openide.loaders.DataFolder;
 import org.openide.loaders.DataObject;
 import org.openide.util.NbBundle;
 
-/**
- *
- * @author Sheryl Su
- */
+
+
 public class PreviewScene extends GraphScene<IPresentationElement, IPresentationElement> implements Customizable
 {
     private ResourceType[] customizableResTypes = Customizable.DEFAULT_RESTYPES;

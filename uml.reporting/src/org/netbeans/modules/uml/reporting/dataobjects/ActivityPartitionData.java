@@ -60,15 +60,14 @@ import org.netbeans.modules.uml.reporting.ReportTask;
 import org.netbeans.modules.uml.ui.support.commonresources.CommonResourceManager;
 import org.openide.util.NbBundle;
 
-/**
- *
- * @author Sheryl
- */
+
+
 public class ActivityPartitionData extends ActivityGroupData
 {
     private IActivityPartition element;
     
-    /**
+    
+/**
      * Creates a new instance of ActivityPartitionData
      */
     public ActivityPartitionData()

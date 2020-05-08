@@ -49,90 +49,107 @@ import java.awt.Rectangle;
 
 public interface IETRect extends Cloneable
 {
-	/**
+	
+/**
 	 * The left side of the rectangle
 	*/
 	public int getLeft();
 
-	/**
+	
+/**
 	 * The left side of the rectangle
 	*/
 	public void setLeft(int value);
 
-	/**
+	
+/**
 	 * The top side of the rectangle
 	*/
 	public int getTop();
 
-	/**
+	
+/**
 	 * The top side of the rectangle
 	*/
 	public void setTop(int value);
 
-	/**
+	
+/**
 	 * The right side of the rectangle
 	*/
 	public int getRight();
 
-	/**
+	
+/**
 	 * The right side of the rectangle
 	*/
 	public void setRight(int value);
 
-	/**
+	
+/**
 	 * The bottom side of the rectangle
 	*/
 	public int getBottom();
 
-	/**
+	
+/**
 	 * The bottom side of the rectangle
 	*/
 	public void setBottom(int value);
 
-	/**
+	
+/**
 	 * The sides of the rectangle
 	*/
 	public void setSides(int nLeft, int nTop, int nRight, int nBottom);
 	
-	/*
+	
+/*
 	 * Set the corners of the retangle
 	 */
 	public void setCorners(IETPoint topLeft, IETPoint bottomRight);
 	
-	/**
+	
+/**
 	 * Is the input rectangle fully contained in this rectangle.
 	*/
 	public boolean isContained(IETRect pOtherRect);
 
-	/**
+	
+/**
 	 * Normalize the rectangle.  +y is always up.
 	*/
 	public void normalizeRect();
 
-	/**
+	
+/**
 	 * Normalize the rectangle.  +y is down unless bInvertY is <code>true</code>.
 	*/
 	public void normalizeRect(boolean bInvertY);
 
-	/**
+	
+/**
 	 * Unions this rectangle with the argument one.
 	*/
 	public void unionWith(IETRect pOtherRect);
 
-	/**
+	
+/**
 	 * Intersects this rectangle with the argument one.  If no intersection then 
     * this rect is set to 0,0,0,0 and bFoundIntersection is FALSE
 	*/
 	public boolean intersectWith(IETRect pOtherRect);
 
-	/**
+	
+/**
 	 * Returns whether or not this rect intersects the argument one.  This rect 
     * is not changed, unlink IntersectWith.  bFoundIntersection is FALSE if no 
     * intersection.
 	*/
 	public boolean doesIntersect(IETRect pOtherRect);
    
-   /** 
+   
+/** 
     * Checks whether or not this Rectangle contains the point at the specified 
     * location (x, y). 
     * 
@@ -142,7 +159,8 @@ public interface IETRect extends Cloneable
     */
 	public boolean contains(Point p);
    
-   /** 
+   
+/** 
     * Checks whether or not this Rectangle contains the point at the specified 
     * location (x, y). 
     * 
@@ -152,7 +170,8 @@ public interface IETRect extends Cloneable
     */
    public boolean contains(IETPoint p);
       
-   /** 
+   
+/** 
     * Checks whether or not this Rectangle entirely contains the specified 
     * rectangle. 
     * 
@@ -162,7 +181,8 @@ public interface IETRect extends Cloneable
     */
    public boolean contains(IETRect rect);
       
-   /** 
+   
+/** 
     * Checks whether or not this Rectangle contains the point at the specified 
     * location (x, y). 
     * 
@@ -173,12 +193,14 @@ public interface IETRect extends Cloneable
     */
    public boolean contains(double x, double y);
 
-	/**
+	
+/**
 	 * Returns the width.
 	*/
 	public double getWidth();
 
-	/**
+	
+/**
 	 * Returns the height.
 	*/
 	public double getHeight();
@@ -191,7 +213,8 @@ public interface IETRect extends Cloneable
 
 	public int getIntY();
 
-	/**
+	
+/**
 	 * Returns the X coordinate of the center of the framing rectangle of the
 	 * rectangle in double precision.
 	 *  
@@ -200,7 +223,8 @@ public interface IETRect extends Cloneable
 	 */
 	public double getCenterX();
 
-	/**
+	
+/**
 	 * Returns the Y coordinate of the center of the framing rectangle of the
 	 * rectangle in double precision.
 	 *  
@@ -209,7 +233,8 @@ public interface IETRect extends Cloneable
 	 */
 	public double getCenterY();
 
-	/**
+	
+/**
 	 * Inflates the rectangle in both the X and Y axis.
 	 * 
 	 * @param size The size to grow the rectangle.
@@ -217,7 +242,8 @@ public interface IETRect extends Cloneable
 	 */
 	public void inflate(int size);
 
-	/**
+	
+/**
 	 * Inflates the rectangle in both the X and Y axis.
 	 * 
 	 * @param xSize The size that grow the left and right sides of the rectangle.

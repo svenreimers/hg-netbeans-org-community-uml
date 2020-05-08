@@ -43,21 +43,15 @@
  */
 
 
-/*
- * ProjectType.java
- *
- * Created on January 25, 2006, 1:46 PM
- *
- */
+
+
 
 package org.netbeans.test.umllib.project;
 
 import org.netbeans.test.umllib.util.LabelsAndTitles;
 
-/**
- *
- * @author Alexandr Scherbatiy
- */
+
+
 
 public enum ProjectType {
 
@@ -71,7 +65,8 @@ public enum ProjectType {
     
     private String typeName;
     
-    /**
+    
+/**
      * 
      * @param typeName 
      */
@@ -79,7 +74,8 @@ public enum ProjectType {
         this.typeName = typeName;
     }
 
-    /**
+    
+/**
      * 
      * @return 
      */

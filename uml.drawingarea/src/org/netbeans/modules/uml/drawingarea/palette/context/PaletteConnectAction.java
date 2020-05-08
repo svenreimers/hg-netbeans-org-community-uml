@@ -54,10 +54,8 @@ import org.netbeans.api.visual.widget.Scene;
 import org.netbeans.api.visual.widget.Widget;
 import org.netbeans.modules.uml.drawingarea.actions.ExConnectProvider;
 
-/**
- *
- * @author treyspiva
- */
+
+
 public class PaletteConnectAction extends WidgetAction.Adapter
 {
 

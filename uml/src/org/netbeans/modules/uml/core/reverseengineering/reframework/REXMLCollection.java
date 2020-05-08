@@ -52,6 +52,7 @@ import org.dom4j.Node;
 import org.netbeans.modules.uml.core.support.umlutils.ETArrayList;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
+
 /**
  * ETXMLCollection is a template used to retrieve the collection of XML tags.
  * @param DataType The collect element type.

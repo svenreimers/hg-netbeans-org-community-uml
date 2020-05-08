@@ -44,10 +44,8 @@ package org.netbeans.modules.uml.diagrams.nodes.activity;
 import org.netbeans.api.visual.widget.Scene;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.IPresentationElement;
 
-/**
- *
- * @author thuy
- */
+
+
 public class FinalNodeWidget extends ControlNodeWidget
 {
 

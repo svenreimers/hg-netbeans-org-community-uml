@@ -54,10 +54,8 @@ import org.netbeans.api.visual.widget.ConnectionWidget;
 import org.netbeans.api.visual.widget.Widget;
 import org.openide.util.Utilities;
 
-/**
- *
- * @author treyspiva
- */
+
+
 public class MoveNodeKeyAction extends WidgetAction.LockedAdapter
 {
 
@@ -168,7 +166,8 @@ public class MoveNodeKeyAction extends WidgetAction.LockedAdapter
         return retVal;
     }
 
-    /**
+    
+/**
      * Checks if an parent widget is also selected.  If the parent widget is
      * also selected the parent will be returned.
      *
@@ -259,7 +258,8 @@ public class MoveNodeKeyAction extends WidgetAction.LockedAdapter
         return location;
     }
 
-    /**
+    
+/**
      * A connection widget can not be moved.  Therefore if the focused widget 
      * is a connection widget get one of the ends and base the movement on the
      * nodes.  A node widget will only returned if one of the nodes are selected.

@@ -42,6 +42,7 @@
  * made subject to such option by the copyright holder.
  */
 
+
 /*
  * SymbolTransaction.java
  *
@@ -69,20 +70,8 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 import org.netbeans.modules.uml.ui.support.ProductHelper;
 
 
-/**
- * SymbolTransaction is used to handle the state of storing GDPro information.
- *
- * Revision History
- * No.  Date        Who         What
- * ---  ----        ---         ----
- *   1  2002-05-21  Darshan     Changed .getUMLCreationFactory() call from
- *                              application to product.
- *   2  2002-06-19  Darshan     Removed unnecessary conversions between Java
- *                              and UML fully scoped class/package names.
- * @todo Cleanup all commented out code.
- * @author  tspiva
- * @version
- */
+
+
 public class SymbolTransaction {
     private IClassifier    mGDSymbol            = null;
 
@@ -90,7 +79,8 @@ public class SymbolTransaction {
     //protected static IProject aProj = null;
 
 
-    /**
+    
+/**
      * Creates and initializes a new symbol transaction.  Describe is
      * required to specify where to search for the symbol data.
      * @param system The system to use.
@@ -99,7 +89,8 @@ public class SymbolTransaction {
         this(null);
     }
 
-    /**
+    
+/**
      * Creates and initializes a new symbol transaction.  The Describe is
      * required to specify where to search for the symbol data.
      * @param info The symbol to find or create it it does not exist.
@@ -121,7 +112,8 @@ public class SymbolTransaction {
         return mGDSymbol;
     }
 
-    /**
+    
+/**
      * Sets the Describe system to use when retrieving the symbols information.
      * Therefore, the symbol will also reside in the Describe system.
      * @param value The Describe system.
@@ -131,7 +123,8 @@ public class SymbolTransaction {
 //    }
 
 
-    /**
+    
+/**
      * Sets the symbol to use for the transaction.  A transaction only start
      * when a symbol has been set.  I commit transaction <B>MUST</B> be called
      * after the transaction is completed.
@@ -143,7 +136,8 @@ public class SymbolTransaction {
         mGDSymbol = sym;
     }
 
-    /**
+    
+/**
      * Sets the symbol to use for the transaction.  Describe will be used to
      * locate the symbol specified in the ClassInfo.  If a Describe symbol is
      * not found then a new symbol is created. A transaction only start when a
@@ -174,7 +168,8 @@ public class SymbolTransaction {
         }
     }
 
-    /**
+    
+/**
      * Retrieves an inner class from is transactions Describe symbol.  If the
      * inner class does not exist then a new class symbol is created and the
      * transaction is returned.
@@ -214,7 +209,8 @@ public class SymbolTransaction {
     // Helper Methods
     // *************************************************************************
 
-    /**
+    
+/**
      * checks if the inner class with the given name already exists for this
      * symbol
      *

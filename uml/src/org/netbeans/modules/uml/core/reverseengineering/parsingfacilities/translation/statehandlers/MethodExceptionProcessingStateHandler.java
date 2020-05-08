@@ -43,11 +43,8 @@
  */
 
 
-/*
- * File       : MethodExceptionProcessingStateHandler.java
- * Created on : Dec 11, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.statehandlers;
 
 import org.dom4j.Node;
@@ -66,9 +63,8 @@ import org.netbeans.modules.uml.core.reverseengineering.reframework.REExceptionP
 import org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ITokenDescriptor;
 import org.netbeans.modules.uml.core.support.umlsupport.Log;
 
-/**
- * @author Aztec
- */
+
+
 public class MethodExceptionProcessingStateHandler
     extends MethodDetailStateHandler
 {
@@ -82,7 +78,8 @@ public class MethodExceptionProcessingStateHandler
     private boolean m_ExceptionParameter;
     private String m_ExceptionInstance = null;
     
-    /**
+    
+/**
      * @param language
      */
     public MethodExceptionProcessingStateHandler(String language)

@@ -50,10 +50,8 @@ import org.openide.filesystems.FileAlreadyLockedException;
 import org.openide.filesystems.FileObject;
 import org.openide.filesystems.FileUtil;
 
-/**
- *
- * @author Craig Conover, craig.conover@sun.com
- */
+
+
 public class DomainTemplate 
 {
     public final static String ELEMENT_NAME_TOKEN = "{name}"; // NO18N

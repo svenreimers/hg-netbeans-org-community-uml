@@ -52,10 +52,8 @@ import org.openide.filesystems.FileObject;
 
 import java.io.File;
 
-/**
- * Factory to be implemented bu the ui implementation
- * @author Petr Hrebejk
- */
+
+
 public interface ProjectChooserFactory {
 
     public static final String WIZARD_KEY_PROJECT = "project"; // NOI18N

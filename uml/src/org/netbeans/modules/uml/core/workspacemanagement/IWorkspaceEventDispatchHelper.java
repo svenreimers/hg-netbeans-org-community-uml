@@ -49,37 +49,43 @@ import org.netbeans.modules.uml.core.support.umlutils.InvalidArguments;
 
 public interface IWorkspaceEventDispatchHelper extends IEventDispatchHelper
 {
-	/**
+	
+/**
 	 * Dispatches the OnWorkspacePreCreate event to all listeners.
 	*/
 	public boolean dispatchWorkspacePreCreate( String fileName, String Name )
 		throws InvalidArguments;
 
-	/**
+	
+/**
 	 * Dispatches the OnWorkspaceCreated event to all listeners.
 	*/
 	public void dispatchWorkspaceCreated( IWorkspace space )
 		throws InvalidArguments;
 
-	/**
+	
+/**
 	 * Dispatches the OnWorkspacePreOpen event to all listeners.
 	*/
 	public boolean dispatchWorkspacePreOpen( String fileName )
 		throws InvalidArguments;
 
-	/**
+	
+/**
 	 * Dispatches the OnWorkspacePreOpen event to all listeners.
 	*/
 	public void dispatchWorkspaceOpened( IWorkspace space )
 		throws InvalidArguments;
 
-	/**
+	
+/**
 	 * Dispatches the OnWorkspacePreClose event to all listeners.
 	*/
 	public boolean dispatchWorkspacePreClose( IWorkspace space )
 		throws InvalidArguments;
 
-	/**
+	
+/**
 	 * Dispatches the OnWorkspaceClosed event to all listeners.
 	*/
 	public void dispatchWorkspaceClosed( IWorkspace space )

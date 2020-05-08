@@ -51,10 +51,8 @@ import org.netbeans.modules.uml.core.metamodel.infrastructure.ICollaboration;
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
-/**
- *
- * @author Sheryl
- */
+
+
 public class CollaborationData extends ClassData
 {
     private ICollaboration element;

@@ -43,6 +43,7 @@
  */
 
 
+
 /*
  * NotFoundException.java
  *
@@ -50,20 +51,20 @@
 
 package org.netbeans.test.umllib.exceptions;
 
-/**
- *
- * @author Alexei Mokeev
- */
+
+
 public class NotFoundException extends UMLCommonException{
     
-    /**
+    
+/**
      * Creates a new instance of NotFoundException
      * @param message 
      */
     public NotFoundException(String message) {
         super(message);        
     }
-    /**
+    
+/**
      * 
      * @param message 
      * @param cause 

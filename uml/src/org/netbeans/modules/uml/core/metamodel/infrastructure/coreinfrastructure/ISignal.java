@@ -48,32 +48,38 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 public interface ISignal extends IClassifier
 {
-	/**
+	
+/**
 	 * method AddContext
 	*/
 	public void addContext( IBehavioralFeature feature );
 
-	/**
+	
+/**
 	 * method RemoveContext
 	*/
 	public void removeContext( IBehavioralFeature feature );
 
-	/**
+	
+/**
 	 * property Contexts
 	*/
 	public ETList<IBehavioralFeature> getContexts();
 
-	/**
+	
+/**
 	 * method AddHandler
 	*/
 	public void addHandler( IBehavioralFeature feature );
 
-	/**
+	
+/**
 	 * method RemoveHandler
 	*/
 	public void removeHandler( IBehavioralFeature feature );
 
-	/**
+	
+/**
 	 * property Handlers
 	*/
 	public ETList<IBehavioralFeature> getHandlers();

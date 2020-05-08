@@ -44,10 +44,8 @@ package org.netbeans.modules.uml.diagrams.nodes.state;
 
 import org.netbeans.api.visual.widget.Scene;
 
-/**
- *
- * @author Sheryl Su
- */
+
+
 public class DeepHistoryStateWidget extends ShallowHistoryStateWidget
 {
     public DeepHistoryStateWidget(Scene scene, String path)

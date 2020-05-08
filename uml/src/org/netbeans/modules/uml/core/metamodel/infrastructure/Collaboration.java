@@ -98,7 +98,8 @@ public class Collaboration extends StructuredClassifier
 					   classifier);
 	}
 	
-	/**
+	
+/**
 	 * Establishes the appropriate XML elements for this UML type.
 	 *
 	 * [in] The document where this element will reside
@@ -109,7 +110,8 @@ public class Collaboration extends StructuredClassifier
 		buildNodePresence("UML:Collaboration",doc,parent);
 	}	
 	
-	/**
+	
+/**
 	 * Retrieves the name of the element typically used for creating icons.  
 	 * It is composed of the element type and any other information needed to 
 	 * make this type unique, such as 'Class' or 'PseudoState_Interface'
@@ -133,7 +135,8 @@ public class Collaboration extends StructuredClassifier
             return retType;
 	}
 
-	/**
+	
+/**
 	 * Does this element have an expanded element type or is the expanded element type always the element type?
 	 */
 	public boolean getHasExpandedElementType()

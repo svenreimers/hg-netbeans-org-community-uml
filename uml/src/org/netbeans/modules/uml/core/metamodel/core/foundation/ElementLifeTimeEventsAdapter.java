@@ -49,28 +49,29 @@ package org.netbeans.modules.uml.core.metamodel.core.foundation;
 import org.netbeans.modules.uml.core.support.umlsupport.IResultCell;
 
 
-/**
- *
- * @author Trey Spiva
- */
+
+
 public class ElementLifeTimeEventsAdapter implements IElementLifeTimeEventsSink
 {
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     */
    public void onElementPreCreate(String ElementType, IResultCell cell)
    {
       // TODO Auto-generated method stub
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     */
    public void onElementCreated(IVersionableElement element, IResultCell cell)
    {
       // TODO Auto-generated method stub
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     */
    public void onElementPreDelete(
       IVersionableElement element,
@@ -79,14 +80,16 @@ public class ElementLifeTimeEventsAdapter implements IElementLifeTimeEventsSink
       // TODO Auto-generated method stub
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     */
    public void onElementDeleted(IVersionableElement element, IResultCell cell)
    {
       // TODO Auto-generated method stub
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     */
    public void onElementPreDuplicated(
       IVersionableElement element,
@@ -95,7 +98,8 @@ public class ElementLifeTimeEventsAdapter implements IElementLifeTimeEventsSink
       // TODO Auto-generated method stub
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     */
    public void onElementDuplicated(
       IVersionableElement element,

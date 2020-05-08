@@ -65,7 +65,8 @@ public class MessageFacilityFilter implements IMessageFacilityFilter
 		setIsDisplayed (MsgCoreConstants.MT_DEBUG, false);
 	}	
 
-	/**
+	
+/**
 	 * Gets the name of this facility.
 	 *
 	 * @return String The name of the facility
@@ -75,7 +76,8 @@ public class MessageFacilityFilter implements IMessageFacilityFilter
 		return m_Name;
 	}
 
-	/**
+	
+/**
 	 * Sets the name of the facility that this filter applies to.
 	 *
 	 * @param newName[in] The name of the facility
@@ -85,7 +87,8 @@ public class MessageFacilityFilter implements IMessageFacilityFilter
 		m_Name = newName;
 	}
 
-	/**
+	
+/**
 	 * Returns whether a particular message type for this facility is displayed.
 	 *
 	 * @param nMessageType[in] message type to query
@@ -102,7 +105,8 @@ public class MessageFacilityFilter implements IMessageFacilityFilter
 		return retVal;
 	}
 
-	/**
+	
+/**
 	 * Given a particular message this routine sets the facility and message type to
 	 * be displayed according to the parameter newVal.
 	 *

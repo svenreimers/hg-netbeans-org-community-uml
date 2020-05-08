@@ -55,6 +55,7 @@ import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure
 import org.netbeans.modules.uml.core.support.umlutils.ETArrayList;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
+
 /**
  * Test cases for RelationFactory.
  */
@@ -68,7 +69,8 @@ public class RelationFactoryTestCase extends AbstractUMLTestCase
     private IClassifier first, second;
     private IInterface  i1, i2;
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see junit.framework.TestCase#setUp()
      */
     protected void setUp() throws Exception
@@ -83,7 +85,8 @@ public class RelationFactoryTestCase extends AbstractUMLTestCase
         i2 = createInterface("I2");
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see junit.framework.TestCase#tearDown()
      */
     protected void tearDown() throws Exception

@@ -42,6 +42,7 @@
  * made subject to such option by the copyright holder.
  */
 
+
 /**
  * Requirement.java
  *
@@ -53,10 +54,8 @@ package org.netbeans.modules.uml.core.requirementsframework;
 import org.netbeans.modules.uml.core.support.umlutils.ETArrayList;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
-/**
- *
- * @author  Trey Spiva
- */
+
+
 public class Requirement implements IRequirement
 {
    // Satisfier of this Requirement.
@@ -87,7 +86,8 @@ public class Requirement implements IRequirement
       // This method is not implemented in C++
    }
    
-   /**
+   
+/**
     * Get the text of the requirement.
     *
     * @return The requirement text.
@@ -97,7 +97,8 @@ public class Requirement implements IRequirement
       return m_cbsDescription;
    }
    
-   /**
+   
+/**
     * Retreives the requirements ID.
     */
    public String getID()
@@ -110,7 +111,8 @@ public class Requirement implements IRequirement
       return m_cbsModName;
    }
    
-   /**
+   
+/**
     * Retrieves the name of the requirement.
     */
    public String getName()
@@ -124,7 +126,8 @@ public class Requirement implements IRequirement
       return "";
    }
    
-   /**
+   
+/**
     * Retrieves the ID of the provider.
     */
    public String getProviderID()
@@ -132,7 +135,8 @@ public class Requirement implements IRequirement
       return m_cbsProviderID;
    }
    
-   /**
+   
+/**
     * Get the ID of the soruce in the provider.  The source is the database
     * that defines the requiremnt.
     */
@@ -141,7 +145,8 @@ public class Requirement implements IRequirement
       return m_cbsSourceID;
    }
    
-   /**
+   
+/**
     * Retrieves the requirements type.
     */
    public String getType()
@@ -149,7 +154,8 @@ public class Requirement implements IRequirement
       return m_cbsType;
    }
    
-   /**
+   
+/**
     * Sets if the requirment is a category.  A category has no requirement text,
     * but does contain a group of requirements
     *
@@ -165,7 +171,8 @@ public class Requirement implements IRequirement
       // This method is not implemented in C++
    }
    
-   /**
+   
+/**
     *
     * Set the text of the requirement.
     *
@@ -175,7 +182,8 @@ public class Requirement implements IRequirement
       m_cbsDescription = newVal;
    }
    
-   /**
+   
+/**
     * Sets the requirements ID.
     */
    public void setID(String newVal)
@@ -183,7 +191,8 @@ public class Requirement implements IRequirement
       m_cbsID = newVal;
    }
    
-   /**
+   
+/**
     * Sets if the requirment is a category.  A category has no requirement text,
     * but does contain a group of requirements
     *
@@ -199,7 +208,8 @@ public class Requirement implements IRequirement
       m_cbsModName = newVal;
    }
    
-   /**
+   
+/**
     * Sets the name of the requriment.
     */
    public void setName(String newVal)
@@ -212,7 +222,8 @@ public class Requirement implements IRequirement
       // This method is not implemented in C++
    }
    
-   /**
+   
+/**
     * Set the name of the provider that defines the requirements.
     */
    public void setProviderID(String newVal)
@@ -220,7 +231,8 @@ public class Requirement implements IRequirement
       m_cbsProviderID = newVal;
    }
    
-   /**
+   
+/**
     * Gets if the requirments for a category.  A category has no requirement text,
     * but does contain a group of requirements
     *
@@ -231,7 +243,8 @@ public class Requirement implements IRequirement
       return m_cpRequirements;
    }
    
-   /**
+   
+/**
     * Sets if the requirments for a category.  A category has no requirement text,
     * but does contain a group of requirements
     *
@@ -242,7 +255,8 @@ public class Requirement implements IRequirement
       m_cpRequirements = newVal;
    }
    
-   /**
+   
+/**
     * Retrieves the satisifiers of the requirement.
     */
    public ETList < ISatisfier > getSatisfiers()
@@ -250,7 +264,8 @@ public class Requirement implements IRequirement
       return m_cpSatisfiers;
    }
    
-   /**
+   
+/**
     * Sets the satisifiers of the requirement.
     */
    public void setSatisfiers(ETList < ISatisfier > newVal)
@@ -258,7 +273,8 @@ public class Requirement implements IRequirement
       m_cpSatisfiers = newVal;
    }
    
-   /**
+   
+/**
     * Set the ID of the soruce in the provider.  The source is the database
     * that defines the requiremnt.
     */
@@ -267,7 +283,8 @@ public class Requirement implements IRequirement
       m_cbsSourceID = newVal;
    }
    
-   /**
+   
+/**
     * Sets the requirments type.
     */
    public void setType(String newVal)

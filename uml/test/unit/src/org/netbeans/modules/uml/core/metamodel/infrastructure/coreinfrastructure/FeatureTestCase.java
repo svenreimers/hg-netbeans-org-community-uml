@@ -48,6 +48,7 @@ package org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructur
 import org.netbeans.modules.uml.core.AbstractUMLTestCase;
 
 
+
 /**
  * Test cases for Feature.
  */
@@ -61,7 +62,8 @@ public class FeatureTestCase extends AbstractUMLTestCase
     private IFeature    feat;
     private IClassifier clazz;
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see junit.framework.TestCase#setUp()
      */
     protected void setUp() throws Exception
@@ -75,7 +77,8 @@ public class FeatureTestCase extends AbstractUMLTestCase
         feat = op;
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see junit.framework.TestCase#tearDown()
      */
     protected void tearDown() throws Exception

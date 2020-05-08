@@ -48,6 +48,7 @@ package org.netbeans.modules.uml.core.roundtripframework;
 import org.netbeans.modules.uml.core.metamodel.core.constructs.IClass;
 import org.netbeans.modules.uml.core.AbstractUMLTestCase;
 
+
 /**
  * Test cases for AttributeChangeFacility.
  */
@@ -61,7 +62,8 @@ public class AttributeChangeFacilityTestCase extends AbstractUMLTestCase
     private IAttributeChangeFacility fac;
     private IClass                   c;
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see junit.framework.TestCase#setUp()
      */
     protected void setUp() throws Exception

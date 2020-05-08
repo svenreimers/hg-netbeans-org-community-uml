@@ -51,6 +51,7 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 import org.netbeans.modules.uml.core.metamodel.core.constructs.IClass;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.IPackage;
 
+
 /**
  * Test cases for REClass.
  */
@@ -64,7 +65,8 @@ public class REClassTestCase extends AbstractRETestCase
     private REClass rec;
     private IClass  c;
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see junit.framework.TestCase#setUp()
      */
     protected void setUp() throws Exception
@@ -160,7 +162,7 @@ public class REClassTestCase extends AbstractRETestCase
         // assertEquals(7, ops.size());
         // assertEquals("a", ops.get(5).getName());
         // assertEquals("b", ops.get(6).getName());
-        // IZ=119824 - conover
+        
         // something must have changed because there is never any operations
         // until the above two are added.
         assertEquals(2, ops.size());

@@ -43,20 +43,15 @@
  */
 
 
-/*
- *
- * Created on Jun 13, 2003
- * @author Trey Spiva
- */
+
+
 package org.netbeans.modules.uml.ui.controls.projecttree;
 
 import org.netbeans.modules.uml.core.workspacemanagement.IWorkspace;
 import org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeWorkspace;
 
-/**
- *
- * @author Trey Spiva
- */
+
+
 public class TreeWorkspaceNode extends ProjectTreeNode
    implements ITreeWorkspace
 {

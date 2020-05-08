@@ -53,7 +53,8 @@ import org.netbeans.modules.uml.core.support.umlsupport.XMLManip;
 public class REExceptionJumpHandlerEvent extends MethodDetailParserData
         implements IREExceptionJumpHandlerEvent
 {
-    /**
+    
+/**
      * Determines if the exception handler is the default exception handler.
      *
      * @param pVal [out] The value
@@ -63,7 +64,8 @@ public class REExceptionJumpHandlerEvent extends MethodDetailParserData
         return XMLManip.getAttributeBooleanValue(getEventData(), "isDefault");
     }
 
-    /**
+    
+/**
      * The string representation of the event data.
      *
      * @param pVal [out] The string representation
@@ -85,7 +87,8 @@ public class REExceptionJumpHandlerEvent extends MethodDetailParserData
         return ret;
     }
 
-    /**
+    
+/**
      * The name of exception type that is being handled.
      *
      * @param pVal [out] The type of the exception.
@@ -96,7 +99,8 @@ public class REExceptionJumpHandlerEvent extends MethodDetailParserData
         return n != null? XMLManip.getAttributeValue(n, "name") : null;
     }
 
-    /**
+    
+/**
      * The name of the exception that was caught.
      *
      * @param pVal [out] The name of the exception.

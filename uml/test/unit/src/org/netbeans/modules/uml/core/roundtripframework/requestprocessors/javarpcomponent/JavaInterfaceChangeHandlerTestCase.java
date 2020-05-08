@@ -70,6 +70,7 @@ public class JavaInterfaceChangeHandlerTestCase extends AbstractUMLTestCase
 	}
 	
 	
+
 /**
  * InterfaceNameChangeTestCase
  * 
@@ -93,6 +94,7 @@ public class JavaInterfaceChangeHandlerTestCase extends AbstractUMLTestCase
 		
 	}
 
+
 /**
  * InterfaceNamespaceChangeTestCase
  * Moving an interface from one package to another
@@ -114,6 +116,7 @@ public class JavaInterfaceChangeHandlerTestCase extends AbstractUMLTestCase
 		elems = newPackg.getOwnedElements();
 		assertEquals("NewInterface",elems.item(0).toString());
 	}
+
 
 
 /**
@@ -144,6 +147,7 @@ public class JavaInterfaceChangeHandlerTestCase extends AbstractUMLTestCase
 		assertEquals("TestOper",opers.item(0).toString());
 	}
 	
+
 
 /**
  * TransformEnumToInterfaceTestCase

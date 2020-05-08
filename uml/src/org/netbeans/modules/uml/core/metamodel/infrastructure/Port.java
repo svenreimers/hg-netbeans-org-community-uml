@@ -61,7 +61,8 @@ public class Port extends Feature implements IPort, IConnectableElement
 {
     IConnectableElement m_ConnectElementAggregate = new ConnectableElement();
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IVersionableElement#setNode(org.dom4j.Node)
      */
     public void setNode(Node n)
@@ -159,7 +160,8 @@ public class Port extends Feature implements IPort, IConnectableElement
         ElementCollector<IInterface> collector = new ElementCollector<IInterface>();
         return collector.retrieveElementCollectionWithAttrIDs(this,"required", IInterface.class);
     }
-    /**
+    
+/**
      * Checks the list of required interfaces to see if pInter is in the list.
      *
      * @param pInter [in] The interface to look for
@@ -207,7 +209,8 @@ public class Port extends Feature implements IPort, IConnectableElement
         return isProvided;
     }
     
-    /**
+    
+/**
      * Establishes the appropriate XML elements for this UML type.
      *
      * [in] The document where this element will reside
@@ -219,7 +222,8 @@ public class Port extends Feature implements IPort, IConnectableElement
     }
     
     
-    /**
+    
+/**
      * method AddRoleContext
      */
     public void addRoleContext( IStructuredClassifier pClassifier )
@@ -227,7 +231,8 @@ public class Port extends Feature implements IPort, IConnectableElement
         m_ConnectElementAggregate.addRoleContext(pClassifier);
     }
     
-    /**
+    
+/**
      * method RemoveRoleContext
      */
     public void removeRoleContext( IStructuredClassifier pClassifier )
@@ -235,7 +240,8 @@ public class Port extends Feature implements IPort, IConnectableElement
         m_ConnectElementAggregate.removeRoleContext(pClassifier);
     }
     
-    /**
+    
+/**
      * property RoleContexts
      */
     public ETList<IStructuredClassifier> getRoleContexts()

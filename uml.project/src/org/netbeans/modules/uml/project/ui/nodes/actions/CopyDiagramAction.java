@@ -67,10 +67,8 @@ import org.openide.util.NbBundle;
 import org.openide.util.actions.NodeAction;
 import org.openide.util.HelpCtx;
 
-/**
- *
- * @author Sheryl
- */
+
+
 public class CopyDiagramAction extends NodeAction
 {
     private IProxyDiagram original;

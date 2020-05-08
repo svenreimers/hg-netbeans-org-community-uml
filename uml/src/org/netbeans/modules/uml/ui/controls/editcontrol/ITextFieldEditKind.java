@@ -46,10 +46,8 @@
 
 package org.netbeans.modules.uml.ui.controls.editcontrol;
 
-/**
- * @author sumitabhk
- *
- */
+
+
 public interface ITextFieldEditKind
 {
 	public static int TFEK_DEFAULT	= 0;

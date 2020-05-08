@@ -48,10 +48,8 @@ import javax.swing.Action;
 import javax.swing.Icon;
 import org.netbeans.spi.project.ui.support.ProjectActionPerformer;
 
-/**
- * Factory to be implemented bu the ui implementation
- * @author Petr Hrebejk
- */
+
+
 public interface ActionsFactory {
 
     // Actions releated directly to project UI

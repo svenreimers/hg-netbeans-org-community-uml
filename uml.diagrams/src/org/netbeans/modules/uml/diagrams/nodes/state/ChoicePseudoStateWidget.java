@@ -44,10 +44,8 @@ package org.netbeans.modules.uml.diagrams.nodes.state;
 import org.netbeans.api.visual.widget.Scene;
 import org.netbeans.modules.uml.diagrams.nodes.activity.DecisionNodeWidget;
 
-/**
- *
- * @author Sheryl Su
- */
+
+
 public class ChoicePseudoStateWidget extends DecisionNodeWidget
 {    
     public ChoicePseudoStateWidget(Scene scene, String path)

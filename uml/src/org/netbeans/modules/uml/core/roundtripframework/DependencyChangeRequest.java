@@ -42,19 +42,15 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : DependencyChangeRequest.java
- * Created on : Nov 20, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.roundtripframework;
 
 import org.netbeans.modules.uml.core.metamodel.core.foundation.IElement;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElement;
 
-/**
- * @author Aztec
- */
+
+
 public class DependencyChangeRequest
     extends ChangeRequest
     implements IDependencyChangeRequest
@@ -63,7 +59,8 @@ public class DependencyChangeRequest
     private String m_IndependentElementName;
 
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IDependencyChangeRequest#getIndependentElement()
      */
     public IElement getIndependentElement()
@@ -71,7 +68,8 @@ public class DependencyChangeRequest
         return m_IndependentElement;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IDependencyChangeRequest#getIndependentElementName()
      */
     public String getIndependentElementName()
@@ -79,7 +77,8 @@ public class DependencyChangeRequest
         return m_IndependentElementName;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IDependencyChangeRequest#setIndependentElement(org.netbeans.modules.uml.core.metamodel.core.foundation.IElement)
      */
     public void setIndependentElement(IElement newVal)
@@ -98,7 +97,8 @@ public class DependencyChangeRequest
         }
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IDependencyChangeRequest#setIndependentElementName(java.lang.String)
      */
     public void setIndependentElementName(String newVal)

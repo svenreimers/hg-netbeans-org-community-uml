@@ -52,7 +52,8 @@ import org.netbeans.modules.uml.core.support.umlsupport.XMLManip;
 public class RECreateAction extends REAction implements IRECreateAction
 {
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.IRECreateAction#getInstanceName()
      */
     public String getInstanceName()
@@ -61,7 +62,8 @@ public class RECreateAction extends REAction implements IRECreateAction
         return desc != null? desc.getValue() : null;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.IRECreateAction#getInstantiation()
      */
     public String getInstantiation()

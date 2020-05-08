@@ -47,10 +47,8 @@ package org.netbeans.modules.uml.requirements.xmlprovider;
 import java.util.MissingResourceException;
 import org.openide.util.NbBundle;
 
-/**
- * @author josephg
- *
- */
+
+
 public class Messages
 {
 
@@ -66,7 +64,8 @@ public class Messages
 
       // TODO Auto-generated constructor stub
    }
-   /**
+   
+/**
     * @param key
     * @return
     */

@@ -88,7 +88,8 @@ public class MethodDetailStateHandler extends ExpressionStateHandler
 
     }
     
-    /**
+    
+/**
      * Initializes the state handler.  This is a one time initialization.
      *
      * @param pOptions [in] The options.
@@ -111,7 +112,8 @@ public class MethodDetailStateHandler extends ExpressionStateHandler
         m_SymbolTable = table;
     }
 
-    /**
+    
+/**
      * Retrieve the parser options.
      *
      * @param *pVal [in] The parser options.
@@ -126,7 +128,8 @@ public class MethodDetailStateHandler extends ExpressionStateHandler
         return m_SymbolTable;
     }
 
-    /**
+    
+/**
      * Retrives the operation that is being processed.
      *
      * @param *pVal [in] The operation that is being processed.
@@ -142,7 +145,8 @@ public class MethodDetailStateHandler extends ExpressionStateHandler
         return pVal;
     }
 
-    /**
+    
+/**
      * Retrieve the class loader from the user settings.
      *
      * @param *pVal [in] The classloader.
@@ -160,7 +164,8 @@ public class MethodDetailStateHandler extends ExpressionStateHandler
         return pVal;
     }
 
-    /**
+    
+/**
      * Retrives the class that contains the operation that is being processed.
      *
      * @param *pVal [in] The class.
@@ -178,7 +183,8 @@ public class MethodDetailStateHandler extends ExpressionStateHandler
         return pVal;
     }
 
-    /**
+    
+/**
      * Specify whether the state handler is generating events
      * or writing to an XMI fragment.
      *
@@ -199,7 +205,8 @@ public class MethodDetailStateHandler extends ExpressionStateHandler
         return "";
     }
 
-    /**
+    
+/**
      * Creates a CPrimitiveInstanceInformation and adds it to the symbol table.
      * If the name or type name is not valid then a CPrimitiveInstanceInformation
      * will not be created.
@@ -227,7 +234,8 @@ public class MethodDetailStateHandler extends ExpressionStateHandler
         return retVal;
     }
     
-    /**
+    
+/**
      * Creates a CPrimitiveInstanceInformation and adds it to the symbol table.
      * If the name or type name is not valid then a CPrimitiveInstanceInformation
      * will not be created.
@@ -261,7 +269,8 @@ public class MethodDetailStateHandler extends ExpressionStateHandler
     }
     
 
-    /**
+    
+/**
      * Retrieves the instance information associated to a instance name.
      *
      * @param name [in] The name of the instance to find.
@@ -295,7 +304,8 @@ public class MethodDetailStateHandler extends ExpressionStateHandler
         return 0;
     }
     
-    /**
+    
+/**
      * Creates the top level node.  The document will be created first then
      * the top level node will created. 
      *
@@ -347,7 +357,8 @@ public class MethodDetailStateHandler extends ExpressionStateHandler
     //  ClassLoader Helper Methods
     //  *********************************************************************
     
-    /**
+    
+/**
      * Uses the class loader to find a class.  The "this" pointer is the 
      * class that is the owner of the operation that is being parsed.
      *
@@ -367,7 +378,8 @@ public class MethodDetailStateHandler extends ExpressionStateHandler
         return null;
     }
 
-    /**
+    
+/**
     * Uses the class loader to find a class.  The context class is used
     * to located the class.  The context is used to determine what 
     * dependencies to search.
@@ -391,7 +403,8 @@ public class MethodDetailStateHandler extends ExpressionStateHandler
         return null;
     }
     
-    /**
+    
+/**
      * Retrieve the language that is being processed by the parser.
      *
      * @return The name of the language.
@@ -411,7 +424,8 @@ public class MethodDetailStateHandler extends ExpressionStateHandler
         m_InstanceReference = value;
     }
     
-    /**
+    
+/**
      * Composite actions will contain the subactions.  So, a sub-statehandler
      * must be set teh IsWriteXMI to true.  The  sub-statehandler DOM node must
      * also be set to the composite states DOM node.
@@ -430,7 +444,8 @@ public class MethodDetailStateHandler extends ExpressionStateHandler
         }
     }
     
-    /**
+    
+/**
      * Reports the expression data.  If the m_IsWriteXMI
      * is falas then a event will be sent, otherwise the 
      * stata will be added to the current XML node.

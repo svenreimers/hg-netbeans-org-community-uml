@@ -43,11 +43,8 @@
  */
 
 
-/*
- * File       : ExpressionStateHandler.java
- * Created on : Dec 10, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.statehandlers;
 
 import org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.InstanceInformation;
@@ -69,15 +66,15 @@ import org.netbeans.modules.uml.core.support.umlutils.ETArrayList;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 
-/**
- * @author Aztec
- */
+
+
 public class ExpressionStateHandler extends StateHandler
 {
     private ETList<IExpressionProxy> m_Expressions
                     = new ETArrayList<IExpressionProxy>();
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.statehandlers.IExpressionStateHandler#addSubExpression(org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.statehandlers.IExpressionStateHandler)
      */
     public void addSubExpression(ExpressionStateHandler exp)
@@ -88,7 +85,8 @@ public class ExpressionStateHandler extends StateHandler
 
     }
 
-    /**
+    
+/**
      * Create a new state handler to be added to the state mechanism.  If the
      * state is not a state that is being processed then a new state handler is
      * not created.
@@ -108,7 +106,8 @@ public class ExpressionStateHandler extends StateHandler
 
     }
 
-    /**
+    
+/**
      * Retrieve the end position of the expression.  The end position
      * is the file position after the last character of the expression.
      *
@@ -138,7 +137,8 @@ public class ExpressionStateHandler extends StateHandler
     }
 
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.statehandlers.IExpressionStateHandler#getStartLine()
      */
     public long getStartLine()
@@ -164,7 +164,8 @@ public class ExpressionStateHandler extends StateHandler
         return retVal;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.statehandlers.IExpressionStateHandler#getStartPosition()
      */
     public long getStartPosition()
@@ -186,7 +187,8 @@ public class ExpressionStateHandler extends StateHandler
         // No valid implementation in the C++ code base.
     }
 
-    /**
+    
+/**
      * Process a new token.  The tokens that are processed are in the
      * context of an object creation.
      *
@@ -197,7 +199,8 @@ public class ExpressionStateHandler extends StateHandler
        addToken(pToken, language);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.statehandlers.IExpressionStateHandler#sendOperationEvents(org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.InstanceInformation, org.netbeans.modules.uml.core.reverseengineering.reframework.IREClass, org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.SymbolTable, org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.IREClassLoader, org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.IUMLParserEventDispatcher, org.dom4j.Node)
      */
     public InstanceInformation sendOperationEvents(
@@ -228,7 +231,8 @@ public class ExpressionStateHandler extends StateHandler
         return retVal;
     }
 
-    /**
+    
+/**
      * Notification that the a state has completed.
      *
      * @param stateName [in] The name of the state.
@@ -239,7 +243,8 @@ public class ExpressionStateHandler extends StateHandler
     }
 
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.statehandlers.IExpressionStateHandler#writeAsXMI(org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.InstanceInformation, org.dom4j.Node, org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.SymbolTable, org.netbeans.modules.uml.core.reverseengineering.reframework.IREClass, org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.IREClassLoader)
      */
     public ETPairT<InstanceInformation, Node> writeAsXMI(
@@ -279,7 +284,8 @@ public class ExpressionStateHandler extends StateHandler
 
     }
 
-    /**
+    
+/**
      * Converts the expression data into a string representation.
      *
      * @return The string representation.
@@ -307,7 +313,8 @@ public class ExpressionStateHandler extends StateHandler
        return retVal;
     }
 
-    /**
+    
+/**
      * Adds a new token to the expression handler.
      *
      * @param exp [in] The token to add.
@@ -319,7 +326,8 @@ public class ExpressionStateHandler extends StateHandler
        m_Expressions.add(proxy);
     }
 
-    /**
+    
+/**
      * Retrieves an expression from the collection of sub expressions.
      *
      * @param index [in] The expression to retrieve.
@@ -337,7 +345,8 @@ public class ExpressionStateHandler extends StateHandler
        return retVal;
     }
 
-    /**
+    
+/**
      * Retrieve the number of subexpressions that are being managed
      * by the expression.
      *

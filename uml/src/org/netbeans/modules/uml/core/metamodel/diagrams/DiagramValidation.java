@@ -61,7 +61,8 @@ public class DiagramValidation implements IDiagramValidation
         validationResponse = new boolean[7];
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.diagrams.IDiagramValidation#addValidationKind(int)
      */
     public void addValidationKind(int nKind)
@@ -72,7 +73,8 @@ public class DiagramValidation implements IDiagramValidation
         }
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.diagrams.IDiagramValidation#addValidationResponse(int)
      */
     public void addValidationResponse(int nResponse)
@@ -83,7 +85,8 @@ public class DiagramValidation implements IDiagramValidation
         }
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.diagrams.IDiagramValidation#createGraphObjectValidation()
      */
     public IGraphObjectValidation createGraphObjectValidation()
@@ -101,7 +104,8 @@ public class DiagramValidation implements IDiagramValidation
        return pLocal;
      }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.diagrams.IDiagramValidation#getValidateLinks()
      */
     public boolean getValidateLinks()
@@ -109,7 +113,8 @@ public class DiagramValidation implements IDiagramValidation
         return validateLinks;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.diagrams.IDiagramValidation#getValidateNodes()
      */
     public boolean getValidateNodes()
@@ -117,7 +122,8 @@ public class DiagramValidation implements IDiagramValidation
         return validateNodes;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.diagrams.IDiagramValidation#getValidationKind(int)
      */
     public boolean getValidationKind(int nKind)
@@ -129,7 +135,8 @@ public class DiagramValidation implements IDiagramValidation
         return true;        
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.diagrams.IDiagramValidation#getValidationResponse(int)
      */
     public boolean getValidationResponse(int nKind)
@@ -141,7 +148,8 @@ public class DiagramValidation implements IDiagramValidation
         return true;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.diagrams.IDiagramValidation#removeValidationKind(int)
      */
     public void removeValidationKind(int nKind)
@@ -160,7 +168,8 @@ public class DiagramValidation implements IDiagramValidation
         }
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.diagrams.IDiagramValidation#removeValidationResponse(int)
      */
     public void removeValidationResponse(int nKind)
@@ -171,7 +180,8 @@ public class DiagramValidation implements IDiagramValidation
         }
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.diagrams.IDiagramValidation#reset()
      */
     public void reset()
@@ -183,7 +193,8 @@ public class DiagramValidation implements IDiagramValidation
 
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.diagrams.IDiagramValidation#setValidateLinks(boolean)
      */
     public void setValidateLinks(boolean value)
@@ -191,7 +202,8 @@ public class DiagramValidation implements IDiagramValidation
         validateLinks = value;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.diagrams.IDiagramValidation#setValidateNodes(boolean)
      */
     public void setValidateNodes(boolean value)

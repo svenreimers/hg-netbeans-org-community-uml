@@ -49,6 +49,7 @@ import org.dom4j.Node;
 
 import org.netbeans.modules.uml.core.support.umlsupport.XMLManip;
 
+
 /**
  * OwnershipManager used to simply control a temporary connection between the context
  * ( owner ) element and the element to be owned. Once an OwnershipManager object goes
@@ -61,7 +62,8 @@ public class OwnershipManager
     private IElement m_Child = null;
     private String m_TempElementName = null;
 
-    /**
+    
+/**
      * @param package1
      * @param packImport
      */

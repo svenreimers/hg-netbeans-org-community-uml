@@ -53,11 +53,8 @@ import org.netbeans.api.visual.widget.ComponentWidget;
 import org.netbeans.api.visual.widget.Scene;
 import org.netbeans.api.visual.widget.Widget;
 
-/**
- * This is a scroll widget similar to JScrollPane. In comparison with the ScrollWidget class, this class is using JScrollBar
- * for vertical and horizontal scroll bars.
- * @author David Kaspar
- */
+
+
 public class SwingScrollWidget extends Widget {
 
     private static final int BAR_VERTICAL_SIZE = 16;
@@ -75,7 +72,8 @@ public class SwingScrollWidget extends Widget {
     private AdjustmentListener verticalListener = new MyAdjustmentListener (true);
     private AdjustmentListener horizontalListener = new MyAdjustmentListener (false);
 
-    /**
+    
+/**
      * Creates a scroll widget.
      * @param scene
      */
@@ -100,7 +98,8 @@ public class SwingScrollWidget extends Widget {
         horizontalWidget = new ComponentWidget (scene, horizontalScroll);
     }
 
-    /**
+    
+/**
      * Creates a scroll widget.
      * @param scene the scene
      * @param view  the scrolled view
@@ -110,7 +109,8 @@ public class SwingScrollWidget extends Widget {
         setView (view);
     }
 
-    /**
+    
+/**
      * Returns an inner widget.
      * @return the inner widget
      */
@@ -118,7 +118,8 @@ public class SwingScrollWidget extends Widget {
         return view;
     }
 
-    /**
+    
+/**
      * Sets an scrolled widget.
      * @param view the scrolled widget
      */
@@ -130,7 +131,8 @@ public class SwingScrollWidget extends Widget {
             viewport.addChild (this.view);
     }
 
-    /**
+    
+/**
      * Calculates a client area as from the scroll widget preferred bounds.
      * @return the calculated client area
      */

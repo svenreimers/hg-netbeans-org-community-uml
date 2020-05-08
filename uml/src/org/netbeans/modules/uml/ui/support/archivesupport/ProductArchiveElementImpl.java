@@ -55,10 +55,8 @@ import org.dom4j.Node;
 
 import org.netbeans.modules.uml.core.support.umlsupport.XMLManip;
 
-/**
- *
- * @author Trey Spiva
- */
+
+
 public class ProductArchiveElementImpl implements IProductArchiveElement
 {
 	private Element m_Element = null;
@@ -72,7 +70,8 @@ public class ProductArchiveElementImpl implements IProductArchiveElement
 		setDOMElement(element);
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.support.archivesupport.IProductArchiveElement#getID()
 	 */
 	public String getID()
@@ -80,7 +79,8 @@ public class ProductArchiveElementImpl implements IProductArchiveElement
 		return getDOMElement() != null ? getDOMElement().getName() : "";
 	}
 
-	/**
+	
+/**
 	 * Creates a sub element named sID of this element
 	 *
 	 * @param sID The id (ie name) of the sub element
@@ -101,7 +101,8 @@ public class ProductArchiveElementImpl implements IProductArchiveElement
 		return null;
 	}
 
-	/**
+	
+/**
 	 * Removes an attribute to this element
 	 *
 	 * @param sID The name of the attribute
@@ -118,7 +119,8 @@ public class ProductArchiveElementImpl implements IProductArchiveElement
 		}
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.support.archivesupport.IProductArchiveElement#addAttribute(java.lang.String, java.lang.Object)
 	 */
 	public IProductArchiveAttribute addAttribute(String sName, Object pVal)
@@ -126,7 +128,8 @@ public class ProductArchiveElementImpl implements IProductArchiveElement
 		return addAttributeString(sName, pVal.toString());
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.support.archivesupport.IProductArchiveElement#addAttributeLong(java.lang.String, int)
 	 */
 	public IProductArchiveAttribute addAttributeLong(String sName, long nVal)
@@ -134,7 +137,8 @@ public class ProductArchiveElementImpl implements IProductArchiveElement
 		return addAttributeString(sName, Long.toString(nVal));
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.support.archivesupport.IProductArchiveElement#addAttributeBool(java.lang.String, boolean)
 	 */
 	public IProductArchiveAttribute addAttributeBool(String sName, boolean bVal)
@@ -142,7 +146,8 @@ public class ProductArchiveElementImpl implements IProductArchiveElement
 		return addAttributeString(sName, Boolean.toString(bVal));
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.support.archivesupport.IProductArchiveElement#addAttributeDouble(java.lang.String, double)
 	 */
 	public IProductArchiveAttribute addAttributeDouble(String sName, double fVal)
@@ -150,7 +155,8 @@ public class ProductArchiveElementImpl implements IProductArchiveElement
 		return addAttributeString(sName, Double.toString(fVal));
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.support.archivesupport.IProductArchiveElement#addAttributeString(java.lang.String, java.lang.String)
 	 */
 	public IProductArchiveAttribute addAttributeString(String sName, String sVal)
@@ -164,7 +170,8 @@ public class ProductArchiveElementImpl implements IProductArchiveElement
 		return null;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.support.archivesupport.IProductArchiveElement#getElements()
 	 */
 	public IProductArchiveElement[] getElements()
@@ -190,7 +197,8 @@ public class ProductArchiveElementImpl implements IProductArchiveElement
 		return childElements;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.support.archivesupport.IProductArchiveElement#getAttributes()
 	 */
 	public IProductArchiveAttribute[] getAttributes()
@@ -199,7 +207,8 @@ public class ProductArchiveElementImpl implements IProductArchiveElement
 		return null;
 	}
 
-	/**
+	
+/**
 	 * Gets an attribute by name
 	 *
 	 * @param sName The name of the attribute
@@ -221,7 +230,8 @@ public class ProductArchiveElementImpl implements IProductArchiveElement
 		return null;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.support.archivesupport.IProductArchiveElement#getElement(java.lang.String)
 	 */
 	public IProductArchiveElement getElement(String sID)
@@ -230,7 +240,8 @@ public class ProductArchiveElementImpl implements IProductArchiveElement
 		return xmlElement != null ? ProductArchiveImpl.getElement(xmlElement, sID) : null;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.support.archivesupport.IProductArchiveElement#getDOMElement()
 	 */
 	public Element getDOMElement()
@@ -243,7 +254,8 @@ public class ProductArchiveElementImpl implements IProductArchiveElement
 		m_Element = e;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.support.archivesupport.IProductArchiveElement#getAttributeLong(java.lang.String)
 	 */
 	public long getAttributeLong(String sName)
@@ -261,7 +273,8 @@ public class ProductArchiveElementImpl implements IProductArchiveElement
 		return 0L;
 	}
 
-	/**
+	
+/**
 	 * Returns the value of the attribute as a string.
 	 * @see org.netbeans.modules.uml.ui.support.archivesupport.IProductArchiveElement#getAttributeString(java.lang.String)
 	 */
@@ -271,7 +284,8 @@ public class ProductArchiveElementImpl implements IProductArchiveElement
 		return xmlElement != null ? XMLManip.getAttributeValue( xmlElement, sName ) : "";
 	}
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.archivesupport.IProductArchiveElement#getAttributeBool(java.lang.String)
     */
    public boolean getAttributeBool(String sName)
@@ -279,7 +293,8 @@ public class ProductArchiveElementImpl implements IProductArchiveElement
       return getAttributeBool( sName, false );
    }
    
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.support.archivesupport.IProductArchiveElement#getAttributeBool(java.lang.String, boolean)
 	 */
 	public boolean getAttributeBool( String sName, boolean defaultValue )
@@ -288,7 +303,8 @@ public class ProductArchiveElementImpl implements IProductArchiveElement
 		return xmlElement != null ? XMLManip.getAttributeBooleanValue( xmlElement, sName, defaultValue ) : defaultValue;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.support.archivesupport.IProductArchiveElement#getAttributeDouble(java.lang.String)
 	 */
 	public double getAttributeDouble(String sName)
@@ -297,7 +313,8 @@ public class ProductArchiveElementImpl implements IProductArchiveElement
 		return xmlElement != null ? XMLManip.getAttributeDoubleValue( xmlElement, sName ) : 0.0d;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.support.archivesupport.IProductArchiveElement#isDeleted()
 	 */
 	public boolean isDeleted()

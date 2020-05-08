@@ -53,127 +53,152 @@ import java.awt.Point;
 
 public interface IProductContextMenu
 {
-	/**
+	
+/**
 	 * Should the context menu be canceled?
 	*/
 	public boolean getCancel();
 
-	/**
+	
+/**
 	 * Should the context menu be canceled?
 	*/
 	public void setCancel( boolean value );
 
-	/**
+	
+/**
 	 * The position of the mouse when this menu was created.
 	*/
 	public Point getLogicalMousePosition();
 
-	/**
+	
+/**
 	 * The position of the mouse when this menu was created.
 	*/
 	public long setLogicalMousePosition( int lLogicalX, int lLogicalY );
 
-	/**
+	
+/**
 	 * The Node, Edge or Label that was right clicked on
 	*/
 	public Object getItemClickedOn();
 
-	/**
+	
+/**
 	 * The Node, Edge or Label that was right clicked on
 	*/
 	public void setItemClickedOn( Object value );
 
-	/**
+	
+/**
 	 * The Node, Edge or Label that was right clicked on, returned as a presentation element.
 	*/
 	public IPresentationElement getPresentationElementClickedOn();
 
-	/**
+	
+/**
 	 * The title of the context menu
 	*/
 	public String getMenuTitle();
 
-	/**
+	
+/**
 	 * The title of the context menu
 	*/
 	public void setMenuTitle( String value );
 
-	/**
+	
+/**
 	 * The menu items making up the context menu
 	*/
 	public ETList<IProductContextMenuItem> getSubMenus();
 
-	/**
+	
+/**
 	 * The menu items making up the context menu
 	*/
 	public void setSubMenus( ETList<IProductContextMenuItem> value );
 
-	/**
+	
+/**
 	 * The parent control that kicked off this event
 	*/
 	public Object getParentControl();
 
-	/**
+	
+/**
 	 * The parent control that kicked off this event
 	*/
 	public void setParentControl( Object value );
 
-	/**
+	
+/**
 	 * The display has been handled by an event listener
 	*/
 	public boolean getDisplayHandled();
 
-	/**
+	
+/**
 	 * The display has been handled by an event listener
 	*/
 	public void setDisplayHandled( boolean value );
 
-	/**
+	
+/**
 	 * The object that should sort the context menu
 	*/
 	public IProductContextMenuSorter getSorter();
 
-	/**
+	
+/**
 	 * The object that should sort the context menu
 	*/
 	public void setSorter( IProductContextMenuSorter value );
 
-	/**
+	
+/**
 	 * Sort the context menu
 	*/
 	public long sort();
 
-	/**
+	
+/**
 	 * The closed list that will be notified when the context menu goes away
 	*/
 	public IProductContextMenuClosedList getClosedList();
 
-	/**
+	
+/**
 	 * The closed list that will be notified when the context menu goes away
 	*/
 	public void setClosedList( IProductContextMenuClosedList value );
 
-	/**
+	
+/**
 	 * Adds a closed list item to the list.
 	*/
 	public long addToClosedList( IProductContextMenuClosed newVal );
 
-	/**
+	
+/**
 	 * Searches through the menus and submenus to find the first menuitem with thisID
 	*/
 	public IProductContextMenuItem getMenuItemByID( int nMenuID );
 
-	/**
+	
+/**
 	 * Searches through the menus and submenus to find the first menuitem with buttonSource
 	*/
 	public IProductContextMenuItem getMenuItemByButtonSource( String sButtonSource );
 
-	/**
+	
+/**
 	 * Searches through the menus and submenus to find the first menuitem with name
 	*/
 	public IProductContextMenuItem getMenuItemByName( String sName );
 
-	/**
+	
+/**
 	 * Searches through the menus and submenus to remove the first menuitem with buttonSource
 	*/
 	public boolean removeMenuItemByButtonSource( String sButtonSource );

@@ -44,6 +44,7 @@
 
 
 
+
 /*
  * Created on Sep 26, 2003
  *
@@ -54,10 +55,8 @@ import java.util.Iterator;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.FactoryRetriever;
 import org.netbeans.modules.uml.core.AbstractUMLTestCase;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
-/**
- * @author aztec
- *
- */
+
+
 public class StateMachineTestCase extends AbstractUMLTestCase
 { 
 	private IStateMachine stateMachine = null;

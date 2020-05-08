@@ -43,16 +43,15 @@
  */
 
 
+
 /*
  * Created on Feb 24, 2004
  *
  */
 package org.netbeans.modules.uml.ui.support.applicationmanager;
 
-/**
- * @author jingmingm
- *
- */
+
+
 public interface IAcceleratorListener
 {
 	public boolean onAcceleratorInvoke(String keyCode);

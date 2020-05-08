@@ -43,6 +43,7 @@
  */
 
 
+
 /*
  * DerivationClassifierElem.java
  *
@@ -64,10 +65,8 @@ import org.netbeans.test.umllib.project.elem.IJavaElem;
 import org.netbeans.test.umllib.project.elem.IOperationElem;
 import org.netbeans.test.umllib.project.elem.IPackageElem;
 
-/**
- *
- * @author <A HREF="mailto:sunflower@netbeans.org">Alexandr Scherbatiy</A>
- */
+
+
 
 public class DerivationClassifierElem implements  IJavaElem, IInterfaceElem, IClassElem  {
     

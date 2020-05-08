@@ -53,7 +53,8 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.IBackPointer;
 public class ExecutionOccurrence extends InteractionFragment
     implements IExecutionOccurrence
 {
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IExecutionOccurrence#getStart()
      */
     public IEventOccurrence getStart()
@@ -62,7 +63,8 @@ public class ExecutionOccurrence extends InteractionFragment
             .retrieveSingleElementWithAttrID( this, "start", IEventOccurrence.class);
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IExecutionOccurrence#setStart(org.netbeans.modules.uml.core.metamodel.dynamics.IEventOccurrence)
      */
     public void setStart(final IEventOccurrence occ)
@@ -78,7 +80,8 @@ public class ExecutionOccurrence extends InteractionFragment
                 } );
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IExecutionOccurrence#getFinish()
      */
     public IEventOccurrence getFinish()
@@ -87,7 +90,8 @@ public class ExecutionOccurrence extends InteractionFragment
             .retrieveSingleElementWithAttrID( this, "finish", IEventOccurrence.class);
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IExecutionOccurrence#setFinish(org.netbeans.modules.uml.core.metamodel.dynamics.IEventOccurrence)
      */
     public void setFinish(final IEventOccurrence occ)

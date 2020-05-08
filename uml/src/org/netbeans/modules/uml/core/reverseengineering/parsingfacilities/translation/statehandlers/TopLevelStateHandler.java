@@ -43,11 +43,8 @@
  */
 
 
-/*
- * File       : TopLevelStateHandler.java
- * Created on : Dec 8, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.statehandlers;
 
 import java.io.BufferedWriter;
@@ -64,9 +61,8 @@ import org.netbeans.modules.uml.core.support.umlsupport.XMLManip;
 import org.openide.filesystems.FileObject;
 import org.openide.filesystems.FileUtil;
 
-/**
- * @author Aztec
- */
+
+
 public class TopLevelStateHandler extends StateHandler
 {
     private static final Logger logger = Logger.getLogger("org.netbeans.modules.uml.core");
@@ -77,7 +73,8 @@ public class TopLevelStateHandler extends StateHandler
         m_Language = language;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.statehandlers.ITopLevelStateHandler#createTopLevelNode(java.lang.String)
      */
     public void createTopLevelNode(String nodeName)
@@ -107,7 +104,8 @@ public class TopLevelStateHandler extends StateHandler
 
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.statehandlers.ITopLevelStateHandler#writeDocument(java.lang.String)
      */
     public void writeDocument(String filename)
@@ -144,7 +142,8 @@ public class TopLevelStateHandler extends StateHandler
         }
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.statehandlers.ITopLevelStateHandler#getLanguage()
      */
     public String getLanguage()

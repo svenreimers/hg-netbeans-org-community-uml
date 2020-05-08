@@ -53,10 +53,8 @@ import java.util.Vector;
 
 import org.netbeans.modules.uml.core.support.umlsupport.Log;
 
-/**
- * @author sumitabhk
- *
- */
+
+
 public class EventFunctor
 {
 
@@ -67,7 +65,8 @@ public class EventFunctor
 	private String m_MethodName = null;
 	private Method m_Method = null;
 	private Object[] m_Parameters = null;
-	/**
+	
+/**
 	 * 
 	 */
 	private EventFunctor() {

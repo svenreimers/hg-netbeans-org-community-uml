@@ -50,57 +50,68 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 public interface IActivityNode extends IRedefinableElement
 {
-	/**
+	
+/**
 	 * property Activity
 	*/
 	public IActivity getActivity();
 
-	/**
+	
+/**
 	 * property Activity
 	*/
 	public void setActivity( IActivity value );
 
-	/**
+	
+/**
 	 * method AddOutgoingEdge
 	*/
 	public void addOutgoingEdge( IActivityEdge pEdge );
 
-	/**
+	
+/**
 	 * method RemoveOutgoingEdge
 	*/
 	public void removeOutgoingEdge( IActivityEdge pEdge );
 
-	/**
+	
+/**
 	 * property OutgoingEdges
 	*/
 	public ETList<IActivityEdge> getOutgoingEdges();
 
-	/**
+	
+/**
 	 * method AddIncomingEdge
 	*/
 	public void addIncomingEdge( IActivityEdge pEdge );
 
-	/**
+	
+/**
 	 * method RemoveIncomingEdge
 	*/
 	public void removeIncomingEdge( IActivityEdge pEdge );
 
-	/**
+	
+/**
 	 * property IncomingEdges
 	*/
 	public ETList<IActivityEdge> getIncomingEdges();
 
-	/**
+	
+/**
 	 * method AddGroup
 	*/
 	public void addGroup( IActivityGroup pGroup );
 
-	/**
+	
+/**
 	 * method RemoveGroup
 	*/
 	public void removeGroup( IActivityGroup pGroup );
 
-	/**
+	
+/**
 	 * property Groups
 	*/
 	public ETList<IActivityGroup> getGroups();

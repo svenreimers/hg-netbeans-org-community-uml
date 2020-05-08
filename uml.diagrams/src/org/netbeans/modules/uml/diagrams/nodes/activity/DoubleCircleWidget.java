@@ -51,10 +51,8 @@ import org.netbeans.api.visual.widget.Scene;
 import org.netbeans.modules.uml.drawingarea.view.CustomizableWidget;
 import org.netbeans.modules.uml.drawingarea.view.UMLNodeWidget;
 
-/**
- *
- * @author Sheryl Su
- */
+
+
 public class DoubleCircleWidget extends CustomizableWidget
 {
     private int inner;

@@ -42,6 +42,7 @@
  * made subject to such option by the copyright holder.
  */
 
+
 /*
  ReqEventsSink.java
  *
@@ -71,10 +72,8 @@ import org.netbeans.modules.uml.ui.support.contextmenusupport.IProductContextMen
 import org.netbeans.modules.uml.ui.support.contextmenusupport.IProductContextMenuSelectionHandler;
 import java.awt.datatransfer.Transferable;
 
-/**
- *
- * @author  Trey Spiva
- */
+
+
 public class ReqEventsSink implements IProjectTreeEventsSink,
                                       ICoreProductInitEventsSink,
                                       IProductContextMenuSelectionHandler,
@@ -98,7 +97,8 @@ public class ReqEventsSink implements IProjectTreeEventsSink,
    ////////////////////////////////////////////////////////////////////////////
    // Event Handlers
    
-   /**
+   
+/**
     *
     * IDrawingAreaEventsSink event, Fired right before items are
     * dropped onto the diagram. This event sink calls the same
@@ -268,7 +268,8 @@ public class ReqEventsSink implements IProjectTreeEventsSink,
    
    /////////////////////////////////////////////////////////////////////////////////////
    // IProjectTreeEventsSink
-   /**
+   
+/**
  Expand Nodes containing a Requirement - Get their SubRequirements.
     */
    public void onItemExpanding( IProjectTreeControl pControl,
@@ -294,21 +295,24 @@ public class ReqEventsSink implements IProjectTreeEventsSink,
          }
       }
    }
-   /**
+   
+/**
  Routes this message to the GoFPatternAddIn
     */
    public void onBeforeEdit( IProjectTreeControl pParentControl,IProjectTreeItem item, IProjectTreeEditVerify verify,IResultCell cell)
    {
       
    }
-   /**
+   
+/**
  Routes this message to the GoFPatternAddIn
     */
    public void onAfterEdit(IProjectTreeControl pParentControl,IProjectTreeItem pItem, IProjectTreeEditVerify pVerify,IResultCell cell)
    {
       
    }
-   /**
+   
+/**
  Routes this message to the GoFPatternAddIn
     */
    public void onDoubleClick(IProjectTreeControl pParentControl, 
@@ -321,7 +325,8 @@ public class ReqEventsSink implements IProjectTreeEventsSink,
    {
       
    }
-   /**
+   
+/**
  Routes this message to the GoFPatternAddIn
     */
    public void onSelChanged(IProjectTreeControl pParentControl, 
@@ -330,7 +335,8 @@ public class ReqEventsSink implements IProjectTreeEventsSink,
    {
       
    }
-   /**
+   
+/**
  Routes this message to the GoFPatternAddIn
     */
    public void onRightButtonDown(IProjectTreeControl pParentControl, 
@@ -342,7 +348,8 @@ public class ReqEventsSink implements IProjectTreeEventsSink,
    {
       
    }
-   /**
+   
+/**
  Routes this message to the GoFPatternAddIn
     */
    public void onBeginDrag( IProjectTreeControl pParentControl, 
@@ -412,7 +419,8 @@ public class ReqEventsSink implements IProjectTreeEventsSink,
       
    }
    
-   /**
+   
+/**
  Routes this message to the GoFPatternAddIn
     */
    public void onMoveDrag(IProjectTreeControl pParentControl, 
@@ -423,7 +431,8 @@ public class ReqEventsSink implements IProjectTreeEventsSink,
       
    }
    
-   /**
+   
+/**
  Routes this message to the GoFPatternAddIn
     */
    public void onEndDrag(IProjectTreeControl    pParentControl, 
@@ -435,7 +444,8 @@ public class ReqEventsSink implements IProjectTreeEventsSink,
       
    }
    
-   /**
+   
+/**
  The tree has been hidden or shown.  Engines should not update the tree if hidden.
     */
    public void onHideTree(IProjectTreeControl pParentControl,boolean bHidden,IResultCell cell)
@@ -445,7 +455,8 @@ public class ReqEventsSink implements IProjectTreeEventsSink,
    
    
    // IProductContextMenuSelectionHandler
-   /**
+   
+/**
  If an external interface handles the display of the popup menu then this is called to handle the selection event
     */
    public void handleSelection(IProductContextMenu pContextMenu,IProductContextMenuItem pSelectedItem )
@@ -476,6 +487,7 @@ public class ReqEventsSink implements IProjectTreeEventsSink,
       
    }
    
+
 /*
  This ICoreProductInitEventsSink event indicates that the  CoreProduct is going away.
  
@@ -508,7 +520,8 @@ public class ReqEventsSink implements IProjectTreeEventsSink,
    {
       
    }
-   /**
+   
+/**
     * Is the argument tree control the design center tree?
     */
    protected boolean isDesignCenterTree(IProjectTreeControl pParentControl)

@@ -47,32 +47,38 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 public interface ILanguageSyntax
 {
-	/**
+	
+/**
 	 * Retrieves the token information that defines a string literal.
 	*/
 	public ISyntaxToken getStringDelimiter();
 
-	/**
+	
+/**
 	 * Retrieve the token information that is used to define a character literal.
 	*/
 	public ISyntaxToken getCharacterDelimiter();
 
-	/**
+	
+/**
 	 * The set of tokens that define the syntax of a language.
 	*/
 	public ETList<ISyntaxToken> getSyntaxTokens();
 
-	/**
+	
+/**
 	 * The set of tokens that define the syntax of a language.
 	*/
 	public void setSyntaxTokens( ETList<ISyntaxToken> value );
 
-	/**
+	
+/**
 	 * Retrieves all the tokens that have the specified token type.
 	*/
 	public ETList<ISyntaxToken> getTokensByKind( /* TokenKind */ int Kind );
 
-	/**
+	
+/**
 	 * Retrieves all the syntax tokens that have the specified token type and category.
 	*/
 	public ETList<ISyntaxToken> getTokensByCategory( /* TokenKind */ int Kind, String Category );

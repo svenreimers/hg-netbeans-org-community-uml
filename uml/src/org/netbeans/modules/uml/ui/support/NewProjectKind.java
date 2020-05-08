@@ -43,18 +43,12 @@
  */
 
 
-/*
- *
- * Created on Jul 1, 2003
- * @author Trey Spiva
- */
+
+
 package org.netbeans.modules.uml.ui.support;
 
-/**
- *
- *
- * @author Trey Spiva
- */
+
+
 public interface NewProjectKind
 {
    public final static int NPK_NONE                     = 0;

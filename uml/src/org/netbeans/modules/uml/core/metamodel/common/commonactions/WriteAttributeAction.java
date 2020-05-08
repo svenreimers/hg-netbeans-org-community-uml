@@ -42,26 +42,23 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : WriteAttributeAction.java
- * Created on : Sep 17, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.metamodel.common.commonactions;
 
 import org.netbeans.modules.uml.core.metamodel.basic.basicactions.IInputPin;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.ElementCollector;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.IValueSpecification;
 
-/**
- * @author Aztec
- */
+
+
 public class WriteAttributeAction
     extends AttributeAction
     implements IWriteAttributeAction
 {
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactions.IWriteAttributeAction#getValue()
      */
     public IInputPin getValue()
@@ -70,7 +67,8 @@ public class WriteAttributeAction
             .retrieveSingleElement( this, "UML:Element.ownedElement/UML:InputPin", IInputPin.class);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactions.IWriteAttributeAction#setValue(org.netbeans.modules.uml.core.metamodel.basic.basicactions.IInputPin)
      */
     public void setValue(IInputPin inputPin)

@@ -79,7 +79,8 @@ import org.openide.filesystems.FileUtil;
  */
 public class OpParserOptions implements IOpParserOptions
 {
-    /**
+    
+/**
      * Initialize the parser options with the given input, creating a class loader
      *
      * @param pElements[in]
@@ -100,7 +101,8 @@ public class OpParserOptions implements IOpParserOptions
         return retVal;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.IOpParserOptions#setProcessTest(boolean)
      */
     public void setProcessTest(boolean pVal)
@@ -108,7 +110,8 @@ public class OpParserOptions implements IOpParserOptions
         m_IsProcessTest = pVal;
     }
 
-    /**
+    
+/**
      * Specifies whether or not to process the details of a combined 
      * fragment test section.  The OnBeginTest and OnEndTest events 
      * will still be sent.
@@ -120,7 +123,8 @@ public class OpParserOptions implements IOpParserOptions
         return m_IsProcessTest;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.IOpParserOptions#setProcessInit(boolean)
      */
     public void setProcessInit(boolean pVal)
@@ -128,7 +132,8 @@ public class OpParserOptions implements IOpParserOptions
         m_IsProcessInit = pVal;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.IOpParserOptions#isProcessInit()
      */
     public boolean isProcessInit()
@@ -136,7 +141,8 @@ public class OpParserOptions implements IOpParserOptions
         return m_IsProcessInit;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.IOpParserOptions#setProcessPost(boolean)
      */
     public void setProcessPost(boolean pVal)
@@ -144,7 +150,8 @@ public class OpParserOptions implements IOpParserOptions
         m_IsProcessPost = pVal;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.IOpParserOptions#isProcessPost()
      */
     public boolean isProcessPost()
@@ -152,7 +159,8 @@ public class OpParserOptions implements IOpParserOptions
         return m_IsProcessPost;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.IOpParserOptions#getClassLoader()
      */
     public IREClassLoader getClassLoader()
@@ -160,7 +168,8 @@ public class OpParserOptions implements IOpParserOptions
         return m_ClassLoader;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.IOpParserOptions#setClassLoader(org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.IREClassLoader)
      */
     public void setClassLoader(IREClassLoader pVal)
@@ -168,7 +177,8 @@ public class OpParserOptions implements IOpParserOptions
         m_ClassLoader = pVal;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.IOpParserOptions#getOperation()
      */
     public IREOperation getOperation()
@@ -176,7 +186,8 @@ public class OpParserOptions implements IOpParserOptions
         return m_Operation;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.IOpParserOptions#setOperation(org.netbeans.modules.uml.core.reverseengineering.reframework.IREOperation)
      */
     public void setOperation(IREOperation pVal)
@@ -184,7 +195,8 @@ public class OpParserOptions implements IOpParserOptions
         m_Operation = pVal;
     }
 
-    /**
+    
+/**
      * Load the class loader with all the source files indicated by the input elements
      */
     protected boolean initializeClassLoader(ETList<IElement> inElements) {
@@ -195,8 +207,8 @@ public class OpParserOptions implements IOpParserOptions
         // Initialize the Project Class Locator
         addProjectLocators(inElements, cpCompositeLocator);
         
-        //kris richards - OPRE_SearchDirectoriesFile pref expunged. Set to "".
-        //kris richards - OPRE_ShowBaseDirDialog pref deleted.
+        
+        
         // therefore no condition necessary
         
         // Prepare the loader
@@ -281,7 +293,8 @@ public class OpParserOptions implements IOpParserOptions
       return retVal;
    }
 
-    /**
+    
+/**
      * Retreive all the source file artifact elements from all the operations
      */
     protected ETList<IElement> getAllSourceFileArtifacts(
@@ -302,7 +315,8 @@ public class OpParserOptions implements IOpParserOptions
         return sfs;
     }
 
-    /**
+    
+/**
      * Adds the a lookup library to the input class loader
      */
     protected void addLookupLibrary(IREClassLoader classLoader, 

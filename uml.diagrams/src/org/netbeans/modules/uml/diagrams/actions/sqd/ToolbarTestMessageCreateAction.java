@@ -57,10 +57,8 @@ import org.netbeans.modules.uml.drawingarea.view.DesignerScene;
 import org.netbeans.modules.uml.drawingarea.view.UMLNodeWidget;
 import org.netbeans.modules.uml.resources.images.ImageUtil;
 
-/**
- * need to be removed after a11y creation
- * @author sp153251
- */
+
+
 public class ToolbarTestMessageCreateAction extends AbstractAction
 {
 

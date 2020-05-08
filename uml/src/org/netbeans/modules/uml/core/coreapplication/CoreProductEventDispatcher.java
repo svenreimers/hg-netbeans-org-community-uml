@@ -62,7 +62,8 @@ public class CoreProductEventDispatcher extends EventDispatcher
 		m_CoreProductSink = new EventManager< ICoreProductInitEventsSink >();
 	}
 	
-	/**
+	
+/**
 	 * Registers a sink for the events specified in the ICoreProductInitEventsSink interface.
 	 *
 	 * @param handler [in] The actual sink that will receive notification	 
@@ -73,7 +74,8 @@ public class CoreProductEventDispatcher extends EventDispatcher
 		m_CoreProductSink.addListener(handler,null);
     }
 
-	/**
+	
+/**
 	 * Revokes the handler identified with the passed-in cookie.
 	 *
 	 * @param  handler [in] 
@@ -83,7 +85,8 @@ public class CoreProductEventDispatcher extends EventDispatcher
 		m_CoreProductSink.removeListener(handler);
     }
 
-	/**
+	
+/**
 	 * Fired before initialization of the product commences.
 	 *
 	 * @param prod [in]
@@ -113,7 +116,8 @@ public class CoreProductEventDispatcher extends EventDispatcher
 		return proceed;   
     }
 
-   /**
+   
+/**
 	* Fired after the Core product has been fully initialized.
 	*
 	* @param prod - ICoreProduct
@@ -135,7 +139,8 @@ public class CoreProductEventDispatcher extends EventDispatcher
 		}  
     }
 
-   /**
+   
+/**
 	* Fired before the product quits..
 	*
 	* @param prod [in]
@@ -200,7 +205,8 @@ public class CoreProductEventDispatcher extends EventDispatcher
 		}  
     }
 
-   /**
+   
+/**
 	* IEventDispatcher override.  Returns the number of registered sinks
 	*/
 	public int getNumRegisteredSinks()

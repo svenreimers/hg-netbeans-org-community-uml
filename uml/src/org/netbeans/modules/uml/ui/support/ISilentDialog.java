@@ -43,20 +43,16 @@
  */
 
 
-/*
- *
- * Created on Jul 1, 2003
- * @author Trey Spiva
- */
+
+
 package org.netbeans.modules.uml.ui.support;
 
-/**
- *
- * @author Trey Spiva
- */
+
+
 public interface ISilentDialog
 {
-   /**
+   
+/**
     * Retrieves whether or not the dialog should actually be displayed.
     *
     * @return <b>true</b> if the dialog should not be displayed.  <b>false</b>
@@ -64,7 +60,8 @@ public interface ISilentDialog
     */
    public boolean isRunSilent();
 
-   /**
+   
+/**
     * Retrieves whether or not the dialog should actually be displayed.
     *
     * @parm value <b>true</b> if the dialog should not be displayed.  <b>false</b> 

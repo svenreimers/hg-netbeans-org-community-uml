@@ -136,7 +136,8 @@ public final class SelectInModelAction extends CookieAction
             {
                 return false;
             }
-            /* NB60TBD546 return UMLJavaAssociationUtil.getAssociatedUMLProject(proj) == null ? false : true;
+            
+/* NB60TBD546 return UMLJavaAssociationUtil.getAssociatedUMLProject(proj) == null ? false : true;
              */
             return false;
         }

@@ -57,10 +57,8 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 import org.openide.util.NbBundle;
 
-/**
- *
- * @author Sheryl
- */
+
+
 public class CommentData extends ElementDataObject
 {
     

@@ -46,22 +46,26 @@ package org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructur
 import org.netbeans.modules.uml.core.support.umlsupport.IResultCell;
 public interface IFeatureEventsSink
 {
-	/**
+	
+/**
 	 * Fired whenever the static flag on a particular feature is about to be modified.
 	*/
 	public void onPreStaticModified( IFeature feature, boolean proposedValue, IResultCell cell );
 
-	/**
+	
+/**
 	 * Fired whenever the static flag on a particular feature was just modified.
 	*/
 	public void onStaticModified( IFeature feature, IResultCell cell );
 
-	/**
+	
+/**
 	 * Fired whenever the native flag on a particular feature is about to be modified.
 	*/
 	public void onPreNativeModified( IFeature feature, boolean proposedValue, IResultCell cell );
 
-	/**
+	
+/**
 	 * Fired whenever the native flag on particular feature was just modified.
 	*/
 	public void onNativeModified( IFeature feature, IResultCell cell );

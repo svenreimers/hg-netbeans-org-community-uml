@@ -57,10 +57,8 @@ import org.openide.DialogDescriptor;
 import org.openide.DialogDisplayer;
 import org.openide.util.NbBundle;
 
-/**
- * 
- * @author Trey Spiva
- */
+
+
 public class SwingNavigationDialog extends JCenterDialog implements INavigationDialog
 {
    private IElement m_Element = null;

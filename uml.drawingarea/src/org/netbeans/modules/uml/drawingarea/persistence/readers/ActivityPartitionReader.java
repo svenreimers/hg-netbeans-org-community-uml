@@ -57,10 +57,8 @@ import org.netbeans.modules.uml.drawingarea.util.Util;
 import org.netbeans.modules.uml.drawingarea.view.DesignerScene;
 import org.openide.util.Exceptions;
 
-/**
- *
- * @author jyothi
- */
+
+
 class ActivityPartitionReader implements GraphNodeReader {
 
     DesignerScene scene;

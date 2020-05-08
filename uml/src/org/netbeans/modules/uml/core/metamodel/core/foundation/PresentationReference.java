@@ -47,6 +47,7 @@ package org.netbeans.modules.uml.core.metamodel.core.foundation;
 import org.dom4j.Document;
 import org.dom4j.Node;
 
+
 /**
  * PresentationReferenceImpl implements the IPresentationReference meta type.
  *
@@ -63,7 +64,8 @@ public class PresentationReference extends Reference implements IPresentationRef
 		super();
 	}
 
-	/**
+	
+/**
 	 *
 	 * Retrieves the presentation element that this reference refers to.
 	 *
@@ -82,7 +84,8 @@ public class PresentationReference extends Reference implements IPresentationRef
 		return retEle;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Sets the passed in presentation element on the referred side of this reference
 	 *
@@ -96,7 +99,8 @@ public class PresentationReference extends Reference implements IPresentationRef
 		setReferredElement(value);
 	}
 
-	/**
+	
+/**
 	 * Establishes the appropriate XML elements for this UML type.
 	 *
 	 * [in] The document where this element will reside

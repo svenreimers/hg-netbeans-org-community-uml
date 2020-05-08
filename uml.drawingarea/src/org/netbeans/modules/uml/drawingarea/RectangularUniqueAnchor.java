@@ -52,16 +52,8 @@ import java.util.Comparator;
 import java.util.HashMap;
 import java.util.Set;
 
-/**
- * The RectangularUniqueAnchor is similiar to the RectangularAnchor.  The
- * problem with the RectanglurAnchor is that all connection widgets go
- * to the center of the node.  So if you have two nodes and two edges between
- * the nodes, the two edges will be placed on top of each other.  The
- * RectangularUniqueAnchor will make sure that two connection widgets will
- * not be connected to the same location on the widgets edge.
- * 
- * @author Trey Spiva
- */
+
+
 // TODO - scene component location is not 100% attach to the bounding rectangle when the line goes far to the bottom-left-bottom direction
 public final class RectangularUniqueAnchor extends Anchor
 {
@@ -76,7 +68,8 @@ public final class RectangularUniqueAnchor extends Anchor
         this.includeBorders = includeBorders;
     }
 
-    /**
+    
+/**
      * Notifies when an entry is registered
      * @param entry the registered entry
      */
@@ -85,7 +78,8 @@ public final class RectangularUniqueAnchor extends Anchor
         requiresRecalculation = true;
     }
 
-    /**
+    
+/**
      * Notifies when an entry is unregistered
      * @param entry the unregistered entry
      */
@@ -95,7 +89,8 @@ public final class RectangularUniqueAnchor extends Anchor
         requiresRecalculation = true;
     }
 
-    /**
+    
+/**
      * Notifies when the anchor is going to be revalidated.
      * @since 2.8
      */
@@ -104,7 +99,8 @@ public final class RectangularUniqueAnchor extends Anchor
         requiresRecalculation = true;
     }
 
-    /**
+    
+/**
      * Computes a result (position and direction) for a specific entry.
      * @param entry the entry
      * @return the calculated result

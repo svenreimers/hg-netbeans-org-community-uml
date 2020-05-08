@@ -46,10 +46,8 @@ package org.netbeans.modules.uml.diagrams.edges;
 import org.netbeans.api.visual.widget.ConnectionWidget;
 
 
-/**
- *
- * @author treyspiva
- */
+
+
 public class KeywordLabelManager extends BasicUMLLabelManager
 {
     public KeywordLabelManager(ConnectionWidget widget, String keyword)
@@ -60,7 +58,8 @@ public class KeywordLabelManager extends BasicUMLLabelManager
     //////////////////////////////////////////////////////////////////
     // LableManager Overrides
     
-    /**
+    
+/**
      * keywords are shown by default, so overriing this method
      */
     @Override

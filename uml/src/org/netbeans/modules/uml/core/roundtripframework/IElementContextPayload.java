@@ -42,19 +42,15 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : IElementContextPayload.java
- * Created on : Nov 10, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.roundtripframework;
 
 import org.netbeans.modules.uml.core.metamodel.core.foundation.IElement;
 import org.netbeans.modules.uml.core.metamodel.structure.IProject;
 
-/**
- * @author Aztec
- */
+
+
 public interface IElementContextPayload extends IRoundTripEventPayload
 {
     public IProject getProject();

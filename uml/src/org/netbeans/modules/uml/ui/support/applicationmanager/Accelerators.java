@@ -42,16 +42,15 @@
  * made subject to such option by the copyright holder.
  */
 
+
 /*
  * Created on Mar 22, 2004
  *
  */
 package org.netbeans.modules.uml.ui.support.applicationmanager;
 
-/**
- * @author jingmingm
- *
- */
+
+
 public class Accelerators {
 
 }

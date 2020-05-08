@@ -223,14 +223,16 @@ public class UMLPhysicalViewProvider implements LogicalViewProvider
         return null;
     }
     
-    /**
+    
+/**
      * Used by UMLProjectCustomizer to mark the project as broken when it warns user
      * about project's broken references and advices him to use BrokenLinksAction to correct it.
      *
      */
     public void testBroken()
     {
-        /*
+        
+/*
         UMLLogicalViewRootNode rootNode = (UMLLogicalViewRootNode) this.createLogicalView();
         rootNode.setBroken(hasBrokenLinks());
          */
@@ -279,7 +281,8 @@ public class UMLPhysicalViewProvider implements LogicalViewProvider
     
     private String[] getBreakableProperties()
     {
-        /*
+        
+/*
         SourceRoots roots = this.project.getSourceRoots();
         String[] srcRootProps = roots.getRootProperties();
         roots = this.project.getTestSourceRoots();
@@ -311,7 +314,8 @@ public class UMLPhysicalViewProvider implements LogicalViewProvider
     
     // Private innerclasses ----------------------------------------------------
     
-    /** Filter node containin additional features for the UML physical
+    
+/** Filter node containin additional features for the UML physical
      */
     private final class UMLLogicalViewRootNode extends AbstractNode
             implements UMLLogicalViewCookie
@@ -544,7 +548,8 @@ public class UMLPhysicalViewProvider implements LogicalViewProvider
         
         
         
-        /**
+        
+/**
          * Get the new types that can be created in this node. For example, a node
          * representing a class will permit attributes, operations, classes,
          * interfaces, and enumerations to be added.
@@ -612,7 +617,8 @@ public class UMLPhysicalViewProvider implements LogicalViewProvider
         }
         
         
-        /** This action is created only when project has broken references.
+        
+/** This action is created only when project has broken references.
          * Once these are resolved the action is disabled.
          */
         private class BrokenLinksAction extends AbstractAction
@@ -635,7 +641,8 @@ public class UMLPhysicalViewProvider implements LogicalViewProvider
                 // That's why I have to listen here also on JPM:
                 
                 // MCF - do we care about platform?
-                /*
+                
+/*
                 weakPCL = WeakListeners.propertyChange( this, JavaPlatformManager.getDefault() );
                 JavaPlatformManager.getDefault().addPropertyChangeListener( weakPCL );
                  */
@@ -653,7 +660,7 @@ public class UMLPhysicalViewProvider implements LogicalViewProvider
                 mHelper.scanSourceGroups();
                 run();
 
-// TODO: conover - this is the place to add code to also fix the Gen Code path if necessary.
+
 //                EditableProperties edProps = mHelper.getAntProjectHelper()
 //                    .getProperties(AntProjectHelper.PROJECT_PROPERTIES_PATH);
 //                
@@ -813,7 +820,8 @@ public class UMLPhysicalViewProvider implements LogicalViewProvider
     
     
 
-    /**
+    
+/**
      * Retrieve the context actions added by other modules.
      *
      * @param actions The action collection to add the actions to.

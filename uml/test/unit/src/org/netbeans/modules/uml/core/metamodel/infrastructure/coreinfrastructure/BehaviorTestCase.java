@@ -59,7 +59,8 @@ public class BehaviorTestCase extends AbstractUMLTestCase
     
     private IBehavior behavior;
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see junit.framework.TestCase#setUp()
      */
     protected void setUp() throws Exception
@@ -71,7 +72,8 @@ public class BehaviorTestCase extends AbstractUMLTestCase
         project.addElement(behavior);
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see junit.framework.TestCase#tearDown()
      */
     protected void tearDown() throws Exception

@@ -56,11 +56,8 @@ import org.netbeans.test.umllib.NewDiagramWizardOperator;
 import org.netbeans.test.umllib.testcases.UMLTestCase;
 import org.netbeans.test.umllib.vrf.GenericVerifier;
 
-/**
- *
- * @author yaa
- * @spec uml/UMLRobustness.xml
- */
+
+
 public class RobustnessCycle extends UMLTestCase {
     private static String prName = "UMLProject3";
     private static String cldName1 = "DClass1";

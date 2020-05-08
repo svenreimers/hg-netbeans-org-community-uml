@@ -45,11 +45,8 @@
 
 package org.netbeans.modules.uml.common;
 
-/**
- * @author KevinM
- *
- * Allows us to override the Default System.out, so we can turn it on and off debug statements from a single location.
- */
+
+
 public final class ETSystem
 {
 	//public final static IETSystemPrinter out = new ETSystemPrinter();	

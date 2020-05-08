@@ -68,10 +68,8 @@ import org.openide.loaders.DataObject;
 import org.openide.loaders.DataShadow;
 
 
-/**
- *
- * @author psb
- */
+
+
 public class MessageRapidButtonDescription implements ContextPaletteButtonModel
 {
     private Image image = null;

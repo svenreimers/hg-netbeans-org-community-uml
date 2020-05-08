@@ -47,10 +47,8 @@ import org.netbeans.modules.uml.core.metamodel.core.constructs.IExtend;
 import org.netbeans.modules.uml.core.metamodel.core.constructs.IUseCase;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.IElement;
 
-/**
- *
- * @author jyothi
- */
+
+
 public class ExtendFactory extends AbstractRelationshipFactory {
 
     public IElement create(IElement source, IElement target)

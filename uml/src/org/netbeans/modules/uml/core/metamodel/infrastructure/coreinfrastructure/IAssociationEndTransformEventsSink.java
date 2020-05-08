@@ -47,12 +47,14 @@ package org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructur
 import org.netbeans.modules.uml.core.support.umlsupport.IResultCell;
 public interface IAssociationEndTransformEventsSink
 {
-	/**
+	
+/**
 	 * Fired whenever an association is about to be transformed.
 	*/
 	public void onPreTransform( IAssociationEnd pEnd, String newForm, IResultCell cell );
 
-	/**
+	
+/**
 	 * Fired right after an association is transformed into a new one.
 	*/
 	public void onTransformed( IAssociationEnd pEnd, IResultCell cell );

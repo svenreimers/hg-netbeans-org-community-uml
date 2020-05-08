@@ -47,42 +47,50 @@ package org.netbeans.modules.uml.core.metamodel.core.foundation;
 import org.netbeans.modules.uml.core.eventframework.IEventPayload;
 public interface IMetaAttributeModifiedEventPayload extends IEventPayload
 {
-	/**
+	
+/**
 	 * Retrieves the actual element being modified.
 	*/
 	public IVersionableElement getElement();
 
-	/**
+	
+/**
 	 * Retrieves the actual element being modified.
 	*/
 	public void setElement( IVersionableElement value );
 
-	/**
+	
+/**
 	 * Retrieves the name of the property on the element being modified.
 	*/
 	public String getPropertyName();
 
-	/**
+	
+/**
 	 * Retrieves the name of the property on the element being modified.
 	*/
 	public void setPropertyName( String value );
 
-	/**
+	
+/**
 	 * Retrieves the original value of the property.
 	*/
 	public String getOriginalValue();
 
-	/**
+	
+/**
 	 * Retrieves the original value of the property.
 	*/
 	public void setOriginalValue( String value );
 
-	/**
+	
+/**
 	 * Retrieves the new value of the property.
 	*/
 	public String getNewValue();
 
-	/**
+	
+/**
 	 * Retrieves the new value of the property.
 	*/
 	public void setNewValue( String value );

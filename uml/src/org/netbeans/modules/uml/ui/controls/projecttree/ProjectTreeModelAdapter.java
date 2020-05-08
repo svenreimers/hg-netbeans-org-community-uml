@@ -55,16 +55,15 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 import org.netbeans.modules.uml.core.workspacemanagement.IWorkspace;
 import org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeItem;
 
-/**
- *
- * @author Trey Spiva
- */
+
+
 public class ProjectTreeModelAdapter implements IProjectTreeModel
 {
    /** The collection of project tree engines that are used by the model. */
       private ArrayList < IProjectTreeModelListener > m_Listeners = new ArrayList < IProjectTreeModelListener >();
   
-   /**
+   
+/**
     * 
     */
    public ProjectTreeModelAdapter()
@@ -73,7 +72,8 @@ public class ProjectTreeModelAdapter implements IProjectTreeModel
       // TODO Auto-generated constructor stub
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeModel#addProjectTreeModelListener(org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeModelListener)
     */
    public void addProjectTreeModelListener(IProjectTreeModelListener listener)
@@ -82,7 +82,8 @@ public class ProjectTreeModelAdapter implements IProjectTreeModel
 
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeModel#removeProjectTreeModelListener(org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeModelListener)
     */
    public void removeProjectTreeModelListener(IProjectTreeModelListener listener)
@@ -96,7 +97,8 @@ public class ProjectTreeModelAdapter implements IProjectTreeModel
       return m_Listeners;
    }
    
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeModel#getChildItem(java.lang.Object, int)
     */
    public ITreeItem getChildItem(Object parent, int index)
@@ -104,7 +106,8 @@ public class ProjectTreeModelAdapter implements IProjectTreeModel
       return null;
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeModel#getChildCount(java.lang.Object)
     */
    public int getChildCount(Object parent)
@@ -112,7 +115,8 @@ public class ProjectTreeModelAdapter implements IProjectTreeModel
       return 0;
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeModel#isLeaf(java.lang.Object)
     */
    public boolean isLeaf(Object node)
@@ -120,7 +124,8 @@ public class ProjectTreeModelAdapter implements IProjectTreeModel
       return false;
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeModel#getWorkspace()
     */
    public IWorkspace getWorkspace()
@@ -128,7 +133,8 @@ public class ProjectTreeModelAdapter implements IProjectTreeModel
       return null;
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeModel#getRootItem()
     */
    public ITreeItem getRootItem()
@@ -136,7 +142,8 @@ public class ProjectTreeModelAdapter implements IProjectTreeModel
       return null;
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeModel#addItem(org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem, java.lang.String, java.lang.String, long, org.netbeans.modules.uml.core.metamodel.core.foundation.IElement, java.lang.Object, java.lang.String)
     */
    public IProjectTreeItem addItem(IProjectTreeItem parent, String name, String text, long sortPriority, IElement element, Object supportTreeItem, String description)
@@ -144,7 +151,8 @@ public class ProjectTreeModelAdapter implements IProjectTreeModel
       return null;
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeModel#addItem(org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeItem, java.lang.String, java.lang.String, long, org.netbeans.modules.uml.core.metamodel.core.foundation.IElement, java.lang.Object, java.lang.String)
     */
    public IProjectTreeItem addItem(ITreeItem parent, String name, String text, long sortPriority, IElement element, Object supportTreeItem, String description)
@@ -152,7 +160,8 @@ public class ProjectTreeModelAdapter implements IProjectTreeModel
       return null;
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeModel#addItem(org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeItem, org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeItem)
     */
    public void addItem(ITreeItem parent, ITreeItem node)
@@ -160,7 +169,8 @@ public class ProjectTreeModelAdapter implements IProjectTreeModel
       
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeModel#removeAll(org.netbeans.modules.uml.core.metamodel.core.foundation.IElement)
     */
    public void removeAll(IElement element)
@@ -168,7 +178,8 @@ public class ProjectTreeModelAdapter implements IProjectTreeModel
       
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeModel#removeNodeFromParent(org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeItem)
     */
    public void removeNodeFromParent(ITreeItem node)
@@ -176,7 +187,8 @@ public class ProjectTreeModelAdapter implements IProjectTreeModel
       
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeModel#projectOpened(org.netbeans.modules.uml.core.metamodel.structure.IProject)
     */
    public ITreeItem projectOpened(IProject pProject)
@@ -184,7 +196,8 @@ public class ProjectTreeModelAdapter implements IProjectTreeModel
       return null;
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeModel#clear()
     */
    public void clear()
@@ -192,7 +205,8 @@ public class ProjectTreeModelAdapter implements IProjectTreeModel
       
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeModel#getIndexOfChild(org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeItem, org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeItem)
     */
    public int getIndexOfChild(ITreeItem parent, ITreeItem child)
@@ -200,7 +214,8 @@ public class ProjectTreeModelAdapter implements IProjectTreeModel
       return 0;
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeModel#sortChildren(org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeItem)
     */
    public void sortChildren(ITreeItem parent)
@@ -208,7 +223,8 @@ public class ProjectTreeModelAdapter implements IProjectTreeModel
       
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeModel#sortChildren(org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeItem, java.util.Comparator)
     */
    public void sortChildren(ITreeItem parent, Comparator compare)
@@ -216,7 +232,8 @@ public class ProjectTreeModelAdapter implements IProjectTreeModel
       
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeModel#findNodes(org.netbeans.modules.uml.core.metamodel.core.foundation.IElement)
     */
    public ETList < ITreeItem > findNodes(IElement element)
@@ -224,7 +241,8 @@ public class ProjectTreeModelAdapter implements IProjectTreeModel
       return null;
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeModel#findDiagramNodes(java.lang.String)
     */
    public ETList < ITreeItem > findDiagramNodes(String filename)
@@ -237,7 +255,8 @@ public class ProjectTreeModelAdapter implements IProjectTreeModel
       return null;
    }
    
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeModel#notifyOfStructureChange()
     */
    public void notifyOfStructureChange()
@@ -249,7 +268,8 @@ public class ProjectTreeModelAdapter implements IProjectTreeModel
    {
    }
    
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeModel#notifyOfRemovedChildren(org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeItem, int[], org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeItem[])
     */
    public void notifyOfRemovedChildren(ITreeItem parent, int[] childIndices, ITreeItem[] children)
@@ -257,7 +277,8 @@ public class ProjectTreeModelAdapter implements IProjectTreeModel
       
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeModel#notifyOfAddedChildren(org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeItem, int[])
     */
    public void notifyOfAddedChildren(ITreeItem parent, int[] childIndices)
@@ -265,7 +286,8 @@ public class ProjectTreeModelAdapter implements IProjectTreeModel
       
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeModel#notifyOfNodesChanged(org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeItem, int[], org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeItem[])
     */
    public void notifyOfNodesChanged(ITreeItem parent, int[] childIndices, ITreeItem[] nodes)
@@ -273,7 +295,8 @@ public class ProjectTreeModelAdapter implements IProjectTreeModel
       
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeModel#canDelete(org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem)
     */
    public boolean canDelete(IProjectTreeItem item)
@@ -281,7 +304,8 @@ public class ProjectTreeModelAdapter implements IProjectTreeModel
       return false;
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeModel#canEdit(org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem)
     */
    public boolean canEdit(IProjectTreeItem item)
@@ -289,7 +313,8 @@ public class ProjectTreeModelAdapter implements IProjectTreeModel
       return false;
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeModel#getNodeFactory()
     */
    public ProjectTreeNodeFactory getNodeFactory()
@@ -298,7 +323,8 @@ public class ProjectTreeModelAdapter implements IProjectTreeModel
       return null;
    }
 
-   /**
+   
+/**
     * Retreives the name of the model.
     */
    public String getModelName()

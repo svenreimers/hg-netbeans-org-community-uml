@@ -84,7 +84,8 @@ public class SourceFileArtifact extends Artifact implements ISourceFileArtifact
 	private ISourceCodeHolder m_pSourceCodeHolder = null;
 	private ISourceCodeManipulation m_pSourceManipulation = null;
 	
-	/**
+	
+/**
 	 * The source file language.
 	 */
 	public ILanguage getLanguage()
@@ -106,7 +107,8 @@ public class SourceFileArtifact extends Artifact implements ISourceFileArtifact
 		return retLang;
 	}
 	
-	/**
+	
+/**
 	 * Establishes the appropriate XML elements for this UML type.
 	 *
 	 * [in] The document where this element will reside
@@ -117,7 +119,8 @@ public class SourceFileArtifact extends Artifact implements ISourceFileArtifact
 		buildNodePresence("UML:SourceFileArtifact",doc,parent);
 	}	
 
-	/** 
+	
+/** 
 	 * Return the absolute path to the source file.
 	 * 
 	 * @return pVal[out] the absolute path to the source file.
@@ -127,7 +130,8 @@ public class SourceFileArtifact extends Artifact implements ISourceFileArtifact
 		return getSourceFile();
 	}
 	
-	/** 
+	
+/** 
 	 * Returns the short name of the source file artifact which is just the file name
 	 * of the artifact minus any directory information.
 	 * 
@@ -146,7 +150,8 @@ public class SourceFileArtifact extends Artifact implements ISourceFileArtifact
 		return fileName;
 	}
 	
-	/** 
+	
+/** 
 	 * Returns the drive (in X: format) of the volume that the source file
 	 * artifact resides on.
 	 * 
@@ -175,7 +180,8 @@ public class SourceFileArtifact extends Artifact implements ISourceFileArtifact
 		return drive;
 	}
 	
-	/** 
+	
+/** 
 	 * Returns the source file artifact's base directory with no trailing directory delimiter.
 	 * 
 	 * @return pVal[out] The base directory for the source file artifact
@@ -192,7 +198,8 @@ public class SourceFileArtifact extends Artifact implements ISourceFileArtifact
 		return null;
 	}
     
-    /** 
+    
+/** 
 	 * Returns the directory that the source file artifact resides in (with no
 	 * trailing directory delimiter (e.g. backslash, yen symbol)).
 	 * 
@@ -207,7 +214,8 @@ public class SourceFileArtifact extends Artifact implements ISourceFileArtifact
 		return file.getParent();		
 	}
 	
-	/** 
+	
+/** 
 	 * registers an ISourceFileArtifactEventsSink to receive source code
 	 * modification events for this Source File Artifact.
 	 * 
@@ -216,7 +224,8 @@ public class SourceFileArtifact extends Artifact implements ISourceFileArtifact
 	 */
 	public void registerForSourceFileArtifactEvents(ISourceFileArtifactEventsSink pEventsSink)
 	{
-		/**
+		
+/**
 		 *  See if the sink is already registered.
 		 */		
 		if (!m_eventSinks.contains(pEventsSink))
@@ -229,7 +238,8 @@ public class SourceFileArtifact extends Artifact implements ISourceFileArtifact
 	{
         m_eventSinks.remove(pEventsSink);
 	}
-	/** 
+	
+/** 
 	 * Notifies all registered event sinks that some text was inserted into the artifact's source code.
 	 * 
 	 * @param fileOffset[in] the location at which the text was inserted
@@ -250,7 +260,8 @@ public class SourceFileArtifact extends Artifact implements ISourceFileArtifact
 	}
 	
 
-	/** 
+	
+/** 
 	 * Notifies all registered event sinks that a range of source code was deleted
 	 * 
 	 * @param rangeStart[in] start of the deleted range
@@ -271,7 +282,8 @@ public class SourceFileArtifact extends Artifact implements ISourceFileArtifact
 		}		
 	}
 
-	/** 
+	
+/** 
 	 * Notifies all registered event sinks that a range of source code has been modified.
 	 * 
 	 * @param rangeStart[in] beginning of the range
@@ -293,7 +305,8 @@ public class SourceFileArtifact extends Artifact implements ISourceFileArtifact
 		}		
 	}
 	
-	/** 
+	
+/** 
 	 * Calculates the CRC of the artifact's source code
 	 * 
 	 * @return calculatedCRC[out] the calculated CRC of the current source code
@@ -312,7 +325,8 @@ public class SourceFileArtifact extends Artifact implements ISourceFileArtifact
 		return crc;
 	}
 	
-	/** 
+	
+/** 
 	 * Returns an ISourceCodeManipulation object that allows read and
 	 * write access to the ISourceFileArtifact's source code.
 	 *
@@ -342,7 +356,8 @@ public class SourceFileArtifact extends Artifact implements ISourceFileArtifact
 		return m_pSourceManipulation;
 	}
 	
-	/** 
+	
+/** 
 	 * Returns this object's Source Code
 	 * 
 	 * @return pVal[out] the source code.
@@ -367,11 +382,8 @@ public class SourceFileArtifact extends Artifact implements ISourceFileArtifact
 		return srcCode;
 	}
 	
-	/** 
-	 * Reads the artifact's source code directly from disk and returns it via @a sourceCode
-	 * 
-	 * @return sourceCode[out] the source code that was read from disk
-	 */
+	
+
 	protected String readSourceCodeFromDisk()
 	{
 		byte[] srcBytes = null;
@@ -410,7 +422,8 @@ public class SourceFileArtifact extends Artifact implements ISourceFileArtifact
 		return srcBytes != null? new String(srcBytes) : null;
 	}
 	
-	/** 
+	
+/** 
 	 * returns the current source code holder object (if there is one)
 	 * 
 	 * @return pVal[out] the current ISourceCodeHolder object (if there is one)
@@ -420,7 +433,8 @@ public class SourceFileArtifact extends Artifact implements ISourceFileArtifact
 		return m_pSourceCodeHolder;
 	}
 	
-	/** 
+	
+/** 
 	 * Sets the current source code holder.  If one already exists, it is overwritten.
 	 * 
 	 * @param newVal[in] the new source code holder (or NULL to remove the current source code holder).
@@ -431,7 +445,8 @@ public class SourceFileArtifact extends Artifact implements ISourceFileArtifact
 	}
 	
 
-	/** 
+	
+/** 
 	 * Notify all ISourceFileArtifactEventsSink objects that the
 	 * Artifact's changes are being committed.
 	 */
@@ -440,7 +455,8 @@ public class SourceFileArtifact extends Artifact implements ISourceFileArtifact
 		//need to be coded.
 	}
 	
-	/** 
+	
+/** 
 	 * commits all changes made to this ISourceFileArtifact's source code.
 	 */
 	public void commitChanges()
@@ -482,7 +498,8 @@ public class SourceFileArtifact extends Artifact implements ISourceFileArtifact
 		}
 	}
 	
-	/**
+	
+/**
 	 * The absolute path to the source file.
 	 * @return String
 	 */
@@ -491,7 +508,8 @@ public class SourceFileArtifact extends Artifact implements ISourceFileArtifact
 		return getFileName();		
 	}
 	
-	/**
+	
+/**
 	 * The absolute path to the source file.
 	 *
 	 * @param newVal[in]
@@ -507,7 +525,8 @@ public class SourceFileArtifact extends Artifact implements ISourceFileArtifact
 		}
 	}
 	
-	/** 
+	
+/** 
 	 * Notifies all registered event sinks that the artifact's source file name was changed.
 	 * 
 	 * @param oldFileName[in] old file name

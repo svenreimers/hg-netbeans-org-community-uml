@@ -73,10 +73,8 @@ import org.netbeans.modules.uml.core.support.umlsupport.XMLManip;
 import org.netbeans.modules.uml.core.typemanagement.ITypeManager;
 import org.dom4j.Attribute;
 
-/**
- * @author sumitabhk
- *
- */
+
+
 public class ExternalFileManager 
 {
 	public static int EF_PRECOMMIT = 0;
@@ -91,7 +89,8 @@ public class ExternalFileManager
 	private String m_FragmentXML = null;
 	private int m_Mode = EF_PRECOMMIT;
 
-	/**
+	
+/**
 	 * 
 	 */
 	public ExternalFileManager() {
@@ -108,7 +107,8 @@ public class ExternalFileManager
 		return m_ProjectXMIID;
 	}
 
-	/**
+	
+/**
 	 *
 	 * This method is called to resolve in references to external files. If there
 	 * is a reference, then the node found in that file will replace the node
@@ -157,7 +157,8 @@ public class ExternalFileManager
 		return modified;
 	}
 
-	/**
+	
+/**
 	 *
 	 * This method is called to resolve any references to external files. If there
 	 * is a reference, then the node found in that file will replace the node
@@ -230,7 +231,8 @@ public class ExternalFileManager
         
         
         
-        /**
+        
+/**
          *
          * Fires the pre event before loading an external element into the current DOM tree.
 	 *
@@ -251,7 +253,8 @@ public class ExternalFileManager
 		return proceed;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Retrieves the document location of the passed in element.
 	 *
@@ -310,7 +313,8 @@ public class ExternalFileManager
 		return actualhref;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Takes the incoming string and checks to see if any variables exist
 	 * in the string that need to be expanded.
@@ -360,14 +364,8 @@ public class ExternalFileManager
 		return result;
 	}
 
-	/**
-	 *
-	 * Reads the PreferenceManagers list of expansion variables.
-	 *
-	 *
-	 * @return HRESULT
-	 *
-	 */
+	
+
 	private static void establishExpansionVars() {
 		if (m_Vars.size() == 0)
 		{
@@ -388,7 +386,8 @@ public class ExternalFileManager
 		}
 	}
 
-	/**
+	
+/**
 	 *
 	 * Performs the low level load of an external element
 	 *
@@ -451,7 +450,8 @@ public class ExternalFileManager
 		return retNode;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Fires the event that signals that an external element has been loaded successfully into the
 	 * current Project
@@ -475,7 +475,8 @@ public class ExternalFileManager
 		}
 	}
 
-	/**
+	
+/**
 	 *
 	 * Finds out where the external file is that node is referring to and then
 	 * deletes it. Removes node from parent after that is done.
@@ -532,7 +533,8 @@ public class ExternalFileManager
 		}
 	}
 
-	/**
+	
+/**
 	 * Tries to delete the file specified by the name
 	 * @param fileName
 	 * @return
@@ -559,7 +561,8 @@ public class ExternalFileManager
 		return relative;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Retrieves the root location.
 	 *
@@ -572,7 +575,8 @@ public class ExternalFileManager
 		return m_rootFileName;
 	}
 	
-	/**
+	
+/**
 	 *
 	 * Sets the location of the file that will be the root where all external documents are relative to.
 	 *
@@ -586,7 +590,8 @@ public class ExternalFileManager
 		m_rootFileName = val;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Establishes the root file name from the element passed in.
 	 *
@@ -612,7 +617,8 @@ public class ExternalFileManager
 		}
 	}
 
-	/**
+	
+/**
 	 *
 	 * We now need to take the updated data found in node and jam it back out into
 	 * the external file from which it orininally came, and then remove all the 
@@ -684,7 +690,8 @@ public class ExternalFileManager
 		}
 	}
 	
-	/**
+	
+/**
 	 *
 	 * Saves the passed in element out to a file it references internally via the
 	 * href xml attribute.
@@ -767,7 +774,8 @@ public class ExternalFileManager
 		}
 	}
 
-	/**
+	
+/**
 	 *
 	 * Retrieves an absolute path name for the passed in absolute path. If this manager
 	 * is in COMMIT mode, the file returned will be the file passed in. If in PRECOMMIT
@@ -799,7 +807,8 @@ public class ExternalFileManager
 		return newFile;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Determines whether or not the passed in node element is imported
 	 * into this DOM or not.
@@ -868,7 +877,8 @@ public class ExternalFileManager
 	   return isImported;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Handles all the necessary file handling associated with nodes that
 	 * have already been versioned or need to be versioned.
@@ -891,7 +901,8 @@ public class ExternalFileManager
 		handleElementsToBeVersioned(element, fileName, fragmentXML);
 	}
 
-	/**
+	
+/**
 	 *
 	 * Finds all child nodes of parentElement that have the "versionMe" XML
 	 * attribute set to true and calls ExtractElementToFile() on them. This results
@@ -950,7 +961,8 @@ public class ExternalFileManager
       return retVal;
    }
    
-	/**
+	
+/**
 	 *
 	 * Handles the manipulation of elements that contain the "loadedVersion"
 	 * attribute. These are elements that were previously extracted ( versioned )
@@ -979,7 +991,8 @@ public class ExternalFileManager
 		}
 	}
 	
-	/**
+	
+/**
 	 *
 	 * Retrieves the loadedElements for the passed in element. This includes any package or element
 	 * imports, plus any immediate owned elements that are external.
@@ -1089,7 +1102,8 @@ public class ExternalFileManager
 		return retList;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Populates the passed in Nodes collection with the contents of the node list passed in.
 	 *
@@ -1112,7 +1126,8 @@ public class ExternalFileManager
 		}
 	}
 
-	/**
+	
+/**
 	 * Creates a unique file name that will house the contents of element. Creates
 	 * the file in the directory of the parent xml file.
 	 *
@@ -1210,7 +1225,8 @@ public class ExternalFileManager
 		return newFile;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Sets the xmi id of the owning project on the VersionedElement element
 	 *
@@ -1228,7 +1244,8 @@ public class ExternalFileManager
 		}
 	}
 
-	/**
+	
+/**
 	 *
 	 * Fires the event indicating that the passed in element has successfully been extracted.
 	 *
@@ -1248,7 +1265,8 @@ public class ExternalFileManager
 		}
 	}
 
-	/**
+	
+/**
 	 *
 	 * Fires the event that indicates that the passed in element is about to be
 	 * extracted to an external file.
@@ -1294,7 +1312,8 @@ public class ExternalFileManager
 		return proceed;
 	}
 
-	/**
+	
+/**
 	 * Retrieves an absolute file name for an element to be extracted from the main document.
 	 *
 	 * @param dir[in] The directory the new file will reside
@@ -1336,7 +1355,8 @@ public class ExternalFileManager
 		return retVal;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Saves the extracted node to the indicated document.
 	 *
@@ -1373,7 +1393,8 @@ public class ExternalFileManager
 		}
 	}
 
-	/**
+	
+/**
 	 *
 	 * Saves the document passed in, converting absolute hrefs to relative hrefs, relative
 	 * to m_RootFileName.
@@ -1392,7 +1413,8 @@ public class ExternalFileManager
 		XMLManip.save(doc, docLoc);
 	}
 
-	/**
+	
+/**
 	 *
 	 * Sets the href attribute and the isVersioned attribute, and removes
 	 * the versionMe attribute.
@@ -1419,7 +1441,8 @@ public class ExternalFileManager
 		element.remove(attr);
 	}
 
-	/**
+	
+/**
 	 *
 	 * Retrieves all nodes that have the "loadedVersion" xml attribute
 	 *
@@ -1434,7 +1457,8 @@ public class ExternalFileManager
 		return searchNode.selectNodes(".//*[@loadedVersion]");
 	}
 
-	/**
+	
+/**
 	 *
 	 * If this manager contains any TempFileSpec objects, those specs will be used to 
 	 * move from the temporary file name to the final. Also, this method will switch the

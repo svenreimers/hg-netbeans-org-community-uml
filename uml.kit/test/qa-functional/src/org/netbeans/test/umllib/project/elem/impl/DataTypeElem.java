@@ -43,6 +43,7 @@
  */
 
 
+
 /*
  * DataTypeElem.java
  *
@@ -56,10 +57,8 @@ package org.netbeans.test.umllib.project.elem.impl;
 
 import org.netbeans.test.umllib.project.elem.ElemType;
 
-/**
- *
- * @author sunflower
- */
+
+
 public class DataTypeElem extends JavaElem{
     
     /** Creates a new instance of DataTypeElem */

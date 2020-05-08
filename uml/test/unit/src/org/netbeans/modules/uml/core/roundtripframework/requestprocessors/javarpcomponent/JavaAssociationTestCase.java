@@ -73,7 +73,8 @@ public class JavaAssociationTestCase extends AbstractUMLTestCase implements
         tc.testMakeNonNavigable();
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see junit.framework.TestCase#setUp()
      */
     protected void setUp() throws Exception
@@ -98,7 +99,8 @@ public class JavaAssociationTestCase extends AbstractUMLTestCase implements
         project.addElement(assoc);
     }
     
-        /* (non-Javadoc)
+        
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.AbstractUMLTestCase#tearDown()
          */
     protected void tearDown() throws Exception
@@ -112,6 +114,7 @@ public class JavaAssociationTestCase extends AbstractUMLTestCase implements
     }
    
 	
+
 /**
  * AssociationMakeNonNavigableTestCase
  */
@@ -142,6 +145,7 @@ public class JavaAssociationTestCase extends AbstractUMLTestCase implements
     }
 
 	
+
 /**
  * AssociationMakeNavigableTestCase
  */
@@ -160,6 +164,7 @@ public class JavaAssociationTestCase extends AbstractUMLTestCase implements
         assertEquals(1, e.getOperationsByName("setY").size());
     }
     
+
 /**
  * AssociationCreateTestCase
  */
@@ -195,6 +200,7 @@ public class JavaAssociationTestCase extends AbstractUMLTestCase implements
             ((INavigableEnd) assocs.get(0).getEnds().get(1)).getName());
     }
 
+
 /**
  * AssociationDeleteTestCase
  */
@@ -217,6 +223,7 @@ public class JavaAssociationTestCase extends AbstractUMLTestCase implements
         assertEquals(0, a.getOperationsByName("getB").size());
     }
    
+
 /**
  * AssociationNavigableEndMovesTestCase
  */
@@ -242,6 +249,7 @@ public class JavaAssociationTestCase extends AbstractUMLTestCase implements
         assertEquals(1, op.getParameters().size());
         assertEquals(1, op.getClientDependencies().size());
     }
+
 /**
  * AssociationNonNavigableEndMovesTestCase
  */    
@@ -285,7 +293,8 @@ public class JavaAssociationTestCase extends AbstractUMLTestCase implements
     private IClass a, b, c;
     private IAssociation assoc;
     private String createdAttributeName;
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRoundTripAttributeEventsSink#onPreAttributeChangeRequest(org.netbeans.modules.uml.core.roundtripframework.IChangeRequest, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onPreAttributeChangeRequest(IChangeRequest newVal, IResultCell cell)
@@ -294,7 +303,8 @@ public class JavaAssociationTestCase extends AbstractUMLTestCase implements
         
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRoundTripAttributeEventsSink#onAttributeChangeRequest(org.netbeans.modules.uml.core.roundtripframework.IChangeRequest, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onAttributeChangeRequest(IChangeRequest req, IResultCell cell)

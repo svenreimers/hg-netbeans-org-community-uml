@@ -46,11 +46,8 @@
 
 package org.netbeans.modules.uml.ui.support;
 
-/*
- *
- * @author KevinM
- *
- */
+
+
 public interface EdgeKindEnum
 {
 	public final static int EK_ALL = 0;

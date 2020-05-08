@@ -51,87 +51,104 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 public interface IPort extends IFeature
 {
-	/**
+	
+/**
 	 * method AddEnd
 	*/
 	public void addEnd( IConnectorEnd end );
 
-	/**
+	
+/**
 	 * method RemoveEnd
 	*/
 	public void removeEnd( IConnectorEnd end );
 
-	/**
+	
+/**
 	 * property Ends
 	*/
 	public ETList<IConnectorEnd> getEnds();
 
-	/**
+	
+/**
 	 * property Protocol
 	*/
 	public IProtocolStateMachine getProtocol();
 
-	/**
+	
+/**
 	 * property Protocol
 	*/
 	public void setProtocol( IProtocolStateMachine value );
 
-	/**
+	
+/**
 	 * 
 	*/
 	public boolean getIsService();
 
-	/**
+	
+/**
 	 * 
 	*/
 	public void setIsService( boolean value );
 
-	/**
+	
+/**
 	 * 
 	*/
 	public boolean getIsSignal();
 
-	/**
+	
+/**
 	 * 
 	*/
 	public void setIsSignal( boolean value );
 
-	/**
+	
+/**
 	 * 
 	*/
 	public void addRequiredInterface( IInterface pInter );
 
-	/**
+	
+/**
 	 * 
 	*/
 	public void removeRequiredInterface( IInterface end );
 
-	/**
+	
+/**
 	 * 
 	*/
 	public ETList<IInterface> getRequiredInterfaces();
 
-	/**
+	
+/**
 	 * Checks the list of required interfaces to see if pInter is in the list
 	*/
 	public boolean getIsRequiredInterface( IInterface pInter );
 
-	/**
+	
+/**
 	 * 
 	*/
 	public void addProvidedInterface( IInterface pInter );
 
-	/**
+	
+/**
 	 * 
 	*/
 	public void removeProvidedInterface( IInterface end );
 
-	/**
+	
+/**
 	 * 
 	*/
 	public ETList<IInterface> getProvidedInterfaces();
 
-	/**
+	
+/**
 	 * Checks the list of provided interfaces to see if pInter is in the list
 	*/
 	public boolean getIsProvidedInterface( IInterface pInter );

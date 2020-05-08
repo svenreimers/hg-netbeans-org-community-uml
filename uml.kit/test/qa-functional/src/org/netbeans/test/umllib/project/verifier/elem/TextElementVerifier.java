@@ -43,6 +43,7 @@
  */
 
 
+
 /*
  * TextElementVerifier.java
  *
@@ -66,10 +67,8 @@ import org.netbeans.test.umllib.project.elem.IOperationElem;
 import org.netbeans.test.umllib.project.elem.ModifierType;
 import org.netbeans.test.umllib.project.elem.impl.JavaElem;
 
-/**
- *
- * @author <A HREF="mailto:sunflower@netbeans.org">Alexandr Scherbatiy</A>
- */
+
+
 public class TextElementVerifier extends AElementVerifier{
     
     private String message = "";

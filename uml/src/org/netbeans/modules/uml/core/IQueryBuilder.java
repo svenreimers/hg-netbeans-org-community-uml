@@ -48,10 +48,8 @@ package org.netbeans.modules.uml.core;
 import org.dom4j.Document;
 import org.dom4j.Node;
 
-/**
- * @author sumitabhk
- *
- */
+
+
 public interface IQueryBuilder
 {
 	//sets Location of the QuerySchemas.etc file, or another file similar.

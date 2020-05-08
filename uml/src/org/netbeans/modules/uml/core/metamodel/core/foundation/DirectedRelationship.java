@@ -47,12 +47,11 @@ package org.netbeans.modules.uml.core.metamodel.core.foundation;
 
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
-/**
- * @author sumitabhk
- *
- */
+
+
 public class DirectedRelationship extends Relationship implements IDirectedRelationship{
-	/**
+	
+/**
 	 * Adds a target element to this relationship.
 	 *
 	 * @param element[in]
@@ -77,7 +76,8 @@ public class DirectedRelationship extends Relationship implements IDirectedRelat
   	}
   }
 
-  /**
+  
+/**
    * Removes a target element from this relationship.
    *
    * @param element[in]
@@ -102,7 +102,8 @@ public class DirectedRelationship extends Relationship implements IDirectedRelat
          retrieveElementCollectionWithAttrIDs(this, "target", IElement.class);
   }
 
-  /**
+  
+/**
    * Adds a source element to this relationship.
    *
    * @param element[in]
@@ -119,7 +120,8 @@ public class DirectedRelationship extends Relationship implements IDirectedRelat
 	}
   }
 
-  /**
+  
+/**
    * Removes a target element from this relationship.
    *
    * @param element[in]
@@ -144,7 +146,8 @@ public class DirectedRelationship extends Relationship implements IDirectedRelat
          retrieveElementCollectionWithAttrIDs(this, "source", IElement.class);
   }
 
-  /**
+  
+/**
    * Description.
    *
    * @param pVal[out]
@@ -156,7 +159,8 @@ public class DirectedRelationship extends Relationship implements IDirectedRelat
   	return UMLXMLManip.queryCount(m_Node, "target", true);
   }
 
-  /**
+  
+/**
    * Description.
    *
    * @param pVal[out]
@@ -168,7 +172,8 @@ public class DirectedRelationship extends Relationship implements IDirectedRelat
 	return UMLXMLManip.queryCount(m_Node, "source", true);
   }
 
-  /**
+  
+/**
    *
    * Called after this element has been fully deleted.
    *
@@ -188,7 +193,8 @@ public class DirectedRelationship extends Relationship implements IDirectedRelat
 	  }
   }
 
-  /**
+  
+/**
    *
    * Called when this relationship is about to be deleted
    *
@@ -210,7 +216,8 @@ public class DirectedRelationship extends Relationship implements IDirectedRelat
 	  return proceed;
   }
 
-  /**
+  
+/**
    *
    * Returns all the elements this relationship relates
    *

@@ -120,7 +120,8 @@ public class SourceFileArtifactTestCase extends AbstractUMLTestCase
         ret.setController(cont);
     }
     
-        /* (non-Javadoc)
+        
+/* (non-Javadoc)
          * @see junit.framework.TestCase#tearDown()
          */
     protected void tearDown() throws Exception

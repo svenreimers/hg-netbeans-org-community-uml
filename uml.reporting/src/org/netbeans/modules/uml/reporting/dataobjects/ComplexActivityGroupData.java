@@ -49,10 +49,8 @@ import org.netbeans.modules.uml.core.metamodel.common.commonactivities.IComplexA
 import org.netbeans.modules.uml.core.metamodel.core.foundation.IElement;
 import org.openide.util.NbBundle;
 
-/**
- *
- * @author Sheryl
- */
+
+
 public class ComplexActivityGroupData extends ActivityGroupData
 {
     private IComplexActivityGroup element;

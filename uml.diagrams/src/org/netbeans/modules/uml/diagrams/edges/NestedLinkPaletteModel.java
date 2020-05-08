@@ -55,10 +55,8 @@ import org.netbeans.modules.uml.drawingarea.view.DesignerScene;
 import org.openide.filesystems.FileObject;
 import org.openide.loaders.DataObject;
 
-/**
- *
- * @author treyspiva
- */
+
+
 public class NestedLinkPaletteModel implements ContextPaletteButtonModel
 {
     private Image image = null;

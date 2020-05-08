@@ -42,11 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : RoundTripEventDispatcher.java
- * Created on : Nov 5, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.roundtripframework;
 
 import org.netbeans.modules.uml.core.eventframework.EventDispatcher;
@@ -56,9 +53,8 @@ import org.netbeans.modules.uml.core.eventframework.IEventPayload;
 import org.netbeans.modules.uml.core.eventframework.IValidationSink;
 import org.netbeans.modules.uml.core.support.umlsupport.IResultCell;
 
-/**
- * @author Aztec
- */
+
+
 public class RoundTripEventDispatcher
     extends EventDispatcher
     implements IRoundTripEventDispatcher
@@ -84,7 +80,8 @@ public class RoundTripEventDispatcher
                 new ValidationMediator();
 
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRoundTripEventDispatcher#fireAttributeChangeRequest(org.netbeans.modules.uml.core.roundtripframework.IChangeRequest, org.netbeans.modules.uml.core.eventframework.IEventPayload)
      */
     public void fireAttributeChangeRequest(
@@ -111,7 +108,8 @@ public class RoundTripEventDispatcher
         }
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRoundTripEventDispatcher#fireEnumLiteralChangeRequest(org.netbeans.modules.uml.core.roundtripframework.IChangeRequest, org.netbeans.modules.uml.core.eventframework.IEventPayload)
      */
     public void fireEnumLiteralChangeRequest(
@@ -138,7 +136,8 @@ public class RoundTripEventDispatcher
         }
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRoundTripEventDispatcher#fireClassChangeRequest(org.netbeans.modules.uml.core.roundtripframework.IChangeRequest, org.netbeans.modules.uml.core.eventframework.IEventPayload)
      */
     public void fireClassChangeRequest(
@@ -167,7 +166,8 @@ public class RoundTripEventDispatcher
 
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRoundTripEventDispatcher#fireEnumerationChangeRequest(org.netbeans.modules.uml.core.roundtripframework.IChangeRequest, org.netbeans.modules.uml.core.eventframework.IEventPayload)
      */
     public void fireEnumerationChangeRequest(
@@ -196,7 +196,8 @@ public class RoundTripEventDispatcher
 
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRoundTripEventDispatcher#fireInitialized(org.netbeans.modules.uml.core.roundtripframework.IRequestProcessor, org.netbeans.modules.uml.core.eventframework.IEventPayload)
      */
     public void fireInitialized(IRequestProcessor proc, IEventPayload payload)
@@ -220,7 +221,8 @@ public class RoundTripEventDispatcher
 
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRoundTripEventDispatcher#fireOperationChangeRequest(org.netbeans.modules.uml.core.roundtripframework.IChangeRequest, org.netbeans.modules.uml.core.eventframework.IEventPayload)
      */
     public void fireOperationChangeRequest(
@@ -247,7 +249,8 @@ public class RoundTripEventDispatcher
         }
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRoundTripEventDispatcher#firePackageChangeRequest(org.netbeans.modules.uml.core.roundtripframework.IChangeRequest, org.netbeans.modules.uml.core.eventframework.IEventPayload)
      */
     public void firePackageChangeRequest(
@@ -275,7 +278,8 @@ public class RoundTripEventDispatcher
 
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRoundTripEventDispatcher#firePreAttributeChangeRequest(org.netbeans.modules.uml.core.roundtripframework.IChangeRequest, org.netbeans.modules.uml.core.eventframework.IEventPayload)
      */
     public boolean firePreAttributeChangeRequest(
@@ -305,7 +309,8 @@ public class RoundTripEventDispatcher
         return false;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRoundTripEventDispatcher#firePreEnumLiteralChangeRequest(org.netbeans.modules.uml.core.roundtripframework.IChangeRequest, org.netbeans.modules.uml.core.eventframework.IEventPayload)
      */
     public boolean firePreEnumLiteralChangeRequest(
@@ -335,7 +340,8 @@ public class RoundTripEventDispatcher
         return false;
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRoundTripEventDispatcher#firePreClassChangeRequest(org.netbeans.modules.uml.core.roundtripframework.IChangeRequest, org.netbeans.modules.uml.core.eventframework.IEventPayload)
      */
     public boolean firePreClassChangeRequest(
@@ -365,7 +371,8 @@ public class RoundTripEventDispatcher
         return false;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRoundTripEventDispatcher#firePreEnumerationChangeRequest(org.netbeans.modules.uml.core.roundtripframework.IChangeRequest, org.netbeans.modules.uml.core.eventframework.IEventPayload)
      */
     public boolean firePreEnumerationChangeRequest(
@@ -395,7 +402,8 @@ public class RoundTripEventDispatcher
         return false;
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRoundTripEventDispatcher#firePreInitialized(java.lang.String, org.netbeans.modules.uml.core.eventframework.IEventPayload)
      */
     public boolean firePreInitialized(String proc, IEventPayload payload)
@@ -420,7 +428,8 @@ public class RoundTripEventDispatcher
         return false;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRoundTripEventDispatcher#firePreOperationChangeRequest(org.netbeans.modules.uml.core.roundtripframework.IChangeRequest, org.netbeans.modules.uml.core.eventframework.IEventPayload)
      */
     public boolean firePreOperationChangeRequest(
@@ -450,7 +459,8 @@ public class RoundTripEventDispatcher
         return false;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRoundTripEventDispatcher#firePrePackageChangeRequest(org.netbeans.modules.uml.core.roundtripframework.IChangeRequest, org.netbeans.modules.uml.core.eventframework.IEventPayload)
      */
     public boolean firePrePackageChangeRequest(
@@ -480,7 +490,8 @@ public class RoundTripEventDispatcher
         return false;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRoundTripEventDispatcher#firePreRelationChangeRequest(org.netbeans.modules.uml.core.roundtripframework.IChangeRequest, org.netbeans.modules.uml.core.eventframework.IEventPayload)
      */
     public boolean firePreRelationChangeRequest(
@@ -508,7 +519,8 @@ public class RoundTripEventDispatcher
         return false;
     }
 
-    /**
+    
+/**
      *
      * Fired when a relation change request needs to be processed.
      *
@@ -538,7 +550,8 @@ public class RoundTripEventDispatcher
         }
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRoundTripEventDispatcher#registerForRequestProcessorInitEvents(org.netbeans.modules.uml.core.roundtripframework.IRequestProcessorInitEventsSink)
      */
     public void registerForRequestProcessorInitEvents(IRequestProcessorInitEventsSink handler)
@@ -546,7 +559,8 @@ public class RoundTripEventDispatcher
         m_InitSink.addListener( handler, null );
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRoundTripEventDispatcher#registerForRoundTripAttributeEvents(org.netbeans.modules.uml.core.roundtripframework.IRoundTripAttributeEventsSink, java.lang.String)
      */
     public void registerForRoundTripAttributeEvents(
@@ -558,7 +572,8 @@ public class RoundTripEventDispatcher
 
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRoundTripEventDispatcher#registerForRoundTripEnumLiteralEvents(org.netbeans.modules.uml.core.roundtripframework.IRoundTripAttributeEventsSink, java.lang.String)
      */
     public void registerForRoundTripEnumLiteralEvents(
@@ -570,7 +585,8 @@ public class RoundTripEventDispatcher
 
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRoundTripEventDispatcher#registerForRoundTripClassEvents(org.netbeans.modules.uml.core.roundtripframework.IRoundTripClassEventsSink, java.lang.String)
      */
     public void registerForRoundTripClassEvents(
@@ -582,7 +598,8 @@ public class RoundTripEventDispatcher
 
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRoundTripEventDispatcher#registerForRoundTripEnumEvents(org.netbeans.modules.uml.core.roundtripframework.IRoundTripClassEventsSink, java.lang.String)
      */
     public void registerForRoundTripEnumEvents(
@@ -594,7 +611,8 @@ public class RoundTripEventDispatcher
 
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRoundTripEventDispatcher#registerForRoundTripOperationEvents(org.netbeans.modules.uml.core.roundtripframework.IRoundTripOperationEventsSink, java.lang.String)
      */
     public void registerForRoundTripOperationEvents(
@@ -605,7 +623,8 @@ public class RoundTripEventDispatcher
                         new RTValidator< IRoundTripOperationEventsSink >( m_Mediator, language ));
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRoundTripEventDispatcher#registerForRoundTripPackageEvents(org.netbeans.modules.uml.core.roundtripframework.IRoundTripPackageEventsSink, java.lang.String)
      */
     public void registerForRoundTripPackageEvents(
@@ -617,7 +636,8 @@ public class RoundTripEventDispatcher
 
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRoundTripEventDispatcher#registerForRoundTripRelationEvents(org.netbeans.modules.uml.core.roundtripframework.IRoundTripRelationEventsSink, java.lang.String)
      */
     public void registerForRoundTripRelationEvents(
@@ -629,7 +649,8 @@ public class RoundTripEventDispatcher
 
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRoundTripEventDispatcher#revokeRequestProcessorInitEvents(org.netbeans.modules.uml.core.roundtripframework.IRequestProcessorInitEventsSink)
      */
     public void revokeRequestProcessorInitEvents(IRequestProcessorInitEventsSink handler)
@@ -638,7 +659,8 @@ public class RoundTripEventDispatcher
 
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRoundTripEventDispatcher#revokeRoundTripAttributeSink(org.netbeans.modules.uml.core.roundtripframework.IRoundTripAttributeEventsSink)
      */
     public void revokeRoundTripAttributeSink(IRoundTripAttributeEventsSink handler)
@@ -647,7 +669,8 @@ public class RoundTripEventDispatcher
 
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRoundTripEventDispatcher#revokeRoundTripEnumLiteralSink(org.netbeans.modules.uml.core.roundtripframework.IRoundTripAttributeEventsSink)
      */
     public void revokeRoundTripEnumLiteralSink( IRoundTripEnumLiteralEventsSink handler )
@@ -655,7 +678,8 @@ public class RoundTripEventDispatcher
         m_EnumLiteralSink.removeListener( handler );
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRoundTripEventDispatcher#revokeRoundTripClassSink(org.netbeans.modules.uml.core.roundtripframework.IRoundTripClassEventsSink)
      */
     public void revokeRoundTripClassSink(IRoundTripClassEventsSink handler)
@@ -664,7 +688,8 @@ public class RoundTripEventDispatcher
 
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRoundTripEventDispatcher#revokeRoundTripEnumSink(org.netbeans.modules.uml.core.roundtripframework.IRoundTripClassEventsSink)
      */
     public void revokeRoundTripEnumSink(IRoundTripEnumEventsSink handler)
@@ -673,7 +698,8 @@ public class RoundTripEventDispatcher
 
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRoundTripEventDispatcher#revokeRoundTripOperationSink(org.netbeans.modules.uml.core.roundtripframework.IRoundTripOperationEventsSink)
      */
     public void revokeRoundTripOperationSink(IRoundTripOperationEventsSink handler)
@@ -682,7 +708,8 @@ public class RoundTripEventDispatcher
 
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRoundTripEventDispatcher#revokeRoundTripPackageSink(org.netbeans.modules.uml.core.roundtripframework.IRoundTripPackageEventsSink)
      */
     public void revokeRoundTripPackageSink(IRoundTripPackageEventsSink handler)
@@ -691,7 +718,8 @@ public class RoundTripEventDispatcher
 
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRoundTripEventDispatcher#revokeRoundTripRelationSink(org.netbeans.modules.uml.core.roundtripframework.IRoundTripRelationEventsSink)
      */
     public void revokeRoundTripRelationSink(IRoundTripRelationEventsSink handler)
@@ -700,7 +728,8 @@ public class RoundTripEventDispatcher
 
     }
 
-    /**
+    
+/**
      * ValidationMediator is used to help the roundtrip event dispatcher
      * determine whether or not a roundtrip event sink should be notified
      * of a particular ChangeRequest.
@@ -708,7 +737,8 @@ public class RoundTripEventDispatcher
 
     private static class ValidationMediator
     {
-       /**
+       
+/**
         *
         * Checks to see if the passed in language name matches the
         * current language dictated by the ChangeRequest currently
@@ -744,7 +774,8 @@ public class RoundTripEventDispatcher
        private String m_CurLanguage;
     }
 
-    /**
+    
+/**
      * RTValidator is placed on all listeners to the roundtrip events,
      * allowing language based filtering when firing round trip events.
      */
@@ -757,7 +788,8 @@ public class RoundTripEventDispatcher
            m_Language = lang;
        }
 
-       /**
+       
+/**
         *
         * This is never called directly except by the appropriate
         * EventManager object. Called before an event is dispatched
@@ -787,7 +819,8 @@ public class RoundTripEventDispatcher
        private ValidationMediator m_Mediator;
        private String             m_Language;
     }  
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.eventframework.IEventDispatcher#getNumRegisteredSinks()
      */
     public int getNumRegisteredSinks()

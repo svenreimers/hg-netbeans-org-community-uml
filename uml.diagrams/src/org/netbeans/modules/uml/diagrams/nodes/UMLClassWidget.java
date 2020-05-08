@@ -717,7 +717,8 @@ public class UMLClassWidget  extends SwitchableWidget implements ICommonFeature
     }
     
 
-    /**
+    
+/**
      * If the preferred size of the paramter widget is smaller than half of the 
      * perferred bounds of the classifier, then the template parameter should 
      * start from the center of the classifeir bounds and extend the 

@@ -56,13 +56,13 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.IElement;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.TypedFactoryRetriever;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
-/**
- * @author Aztec
- */
+
+
 public class UseCase extends BehavioredClassifier implements IUseCase
 {
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.constructs.IUseCase#addExtend(org.netbeans.modules.uml.core.metamodel.core.constructs.IExtend)
      */
     public void addExtend(IExtend extend)
@@ -70,7 +70,8 @@ public class UseCase extends BehavioredClassifier implements IUseCase
         addElement(extend);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.constructs.IUseCase#addExtendedBy(org.netbeans.modules.uml.core.metamodel.core.constructs.IExtend)
      */
     public void addExtendedBy(final IExtend extend)
@@ -89,7 +90,8 @@ public class UseCase extends BehavioredClassifier implements IUseCase
          );
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.constructs.IUseCase#addExtensionPoint(org.netbeans.modules.uml.core.metamodel.core.constructs.IExtensionPoint)
      */
     public void addExtensionPoint(IExtensionPoint extPt)
@@ -97,7 +99,8 @@ public class UseCase extends BehavioredClassifier implements IUseCase
         addFeature(extPt);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.constructs.IUseCase#addInclude(org.netbeans.modules.uml.core.metamodel.core.constructs.IInclude)
      */
     public void addInclude(IInclude include)
@@ -105,7 +108,8 @@ public class UseCase extends BehavioredClassifier implements IUseCase
         addElement(include);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.constructs.IUseCase#addIncludedBy(org.netbeans.modules.uml.core.metamodel.core.constructs.IInclude)
      */
     public void addIncludedBy(final IInclude include)
@@ -125,7 +129,8 @@ public class UseCase extends BehavioredClassifier implements IUseCase
 
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.constructs.IUseCase#addUseCaseDetail(org.netbeans.modules.uml.core.metamodel.core.constructs.IUseCaseDetail)
      */
     public void addUseCaseDetail(IUseCaseDetail useCaseDetail)
@@ -133,7 +138,8 @@ public class UseCase extends BehavioredClassifier implements IUseCase
         addOwnedElement(useCaseDetail);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.constructs.IUseCase#createExtensionPoint()
      */
     public IExtensionPoint createExtensionPoint()
@@ -143,7 +149,8 @@ public class UseCase extends BehavioredClassifier implements IUseCase
         return retriever.createType("ExtensionPoint");
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.constructs.IUseCase#createUseCaseDetail()
      */
     public IUseCaseDetail createUseCaseDetail()
@@ -153,7 +160,8 @@ public class UseCase extends BehavioredClassifier implements IUseCase
         return retriever.createType("UseCaseDetail");
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.constructs.IUseCase#getDetails()
      */
     public ETList <IUseCaseDetail> getDetails()
@@ -162,7 +170,8 @@ public class UseCase extends BehavioredClassifier implements IUseCase
         return col.retrieveElementCollection( (IElement)this,"UML:Element.ownedElement/UML:UseCaseDetail", IUseCaseDetail.class);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.constructs.IUseCase#getExtendedBy()
      */
     public ETList <IExtend> getExtendedBy()
@@ -171,7 +180,8 @@ public class UseCase extends BehavioredClassifier implements IUseCase
         return col.retrieveElementCollectionWithAttrIDs(this,"extendedBy", IExtend.class);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.constructs.IUseCase#getExtends()
      */
     public ETList <IExtend> getExtends()
@@ -180,7 +190,8 @@ public class UseCase extends BehavioredClassifier implements IUseCase
         return col.retrieveElementCollection((IElement)this,"UML:Element.ownedElement/UML:Extend", IExtend.class);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.constructs.IUseCase#getExtensionPoints()
      */
     public ETList <IExtensionPoint> getExtensionPoints()
@@ -189,7 +200,8 @@ public class UseCase extends BehavioredClassifier implements IUseCase
         return col.retrieveElementCollection((IElement)this,"UML:Element.ownedElement/UML:ExtensionPoint", IExtensionPoint.class);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.constructs.IUseCase#getIncludedBy()
      */
     public ETList <IInclude> getIncludedBy()
@@ -199,7 +211,8 @@ public class UseCase extends BehavioredClassifier implements IUseCase
 
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.constructs.IUseCase#getIncludes()
      */
     public ETList <IInclude> getIncludes()
@@ -209,7 +222,8 @@ public class UseCase extends BehavioredClassifier implements IUseCase
 
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.constructs.IUseCase#removeExtend(org.netbeans.modules.uml.core.metamodel.core.constructs.IExtend)
      */
     public void removeExtend(IExtend extend)
@@ -217,7 +231,8 @@ public class UseCase extends BehavioredClassifier implements IUseCase
        removeElement(extend);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.constructs.IUseCase#removeExtendedBy(org.netbeans.modules.uml.core.metamodel.core.constructs.IExtend)
      */
     public void removeExtendedBy(final IExtend extend)
@@ -236,7 +251,8 @@ public class UseCase extends BehavioredClassifier implements IUseCase
 
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.constructs.IUseCase#removeExtensionPoint(org.netbeans.modules.uml.core.metamodel.core.constructs.IExtensionPoint)
      */
     public void removeExtensionPoint(IExtensionPoint extPt)
@@ -244,7 +260,8 @@ public class UseCase extends BehavioredClassifier implements IUseCase
         removeFeature(extPt);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.constructs.IUseCase#removeInclude(org.netbeans.modules.uml.core.metamodel.core.constructs.IInclude)
      */
     public void removeInclude(IInclude include)
@@ -252,7 +269,8 @@ public class UseCase extends BehavioredClassifier implements IUseCase
         removeElement(include);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.constructs.IUseCase#removeIncludedBy(org.netbeans.modules.uml.core.metamodel.core.constructs.IInclude)
      */
     public void removeIncludedBy(final IInclude include)
@@ -271,7 +289,8 @@ public class UseCase extends BehavioredClassifier implements IUseCase
 
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.constructs.IUseCase#removeUseCaseDetail(org.netbeans.modules.uml.core.metamodel.core.constructs.IUseCaseDetail)
      */
     public void removeUseCaseDetail(IUseCaseDetail useCaseDetail)

@@ -51,10 +51,8 @@ import org.netbeans.api.visual.widget.Widget;
 import org.netbeans.modules.uml.drawingarea.palette.context.ContextPaletteManager;
 import org.netbeans.modules.uml.drawingarea.view.DesignerTools;
 
-/**
- *
- * @author Sheryl Su
- */
+
+
 public class DiagramRectangularSelectDecorator implements RectangularSelectDecorator {
 
     private Scene scene;

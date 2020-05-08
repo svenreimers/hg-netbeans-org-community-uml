@@ -56,11 +56,8 @@ import org.netbeans.modules.performance.utilities.CommonUtilities;
 import org.netbeans.performance.uml.UMLUtilities;
 
 
-/**
- * Utilities for Memory footprint tests
- *
- * @author  anebuzelsky@netbeans.org, mmirilovic@netbeans.org
- */
+
+
 public class UMLFootprintUtilities extends UMLUtilities {
     
     static String creatJ2EEeproject(String category, String project, boolean wait) {

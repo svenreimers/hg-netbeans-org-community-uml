@@ -42,18 +42,14 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : IAssociationEndTransformChangeRequest.java
- * Created on : Nov 12, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.roundtripframework;
 
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier;
 
-/**
- * @author Aztec
- */
+
+
 public interface IAssociationEndTransformChangeRequest
     extends ITransformChangeRequest
 {

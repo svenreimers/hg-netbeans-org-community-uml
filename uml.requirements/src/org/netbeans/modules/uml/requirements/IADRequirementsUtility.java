@@ -42,6 +42,7 @@
  * made subject to such option by the copyright holder.
  */
 
+
 /*
  * IADRequirementsUtility.java
  *
@@ -50,10 +51,8 @@
 
 package org.netbeans.modules.uml.requirements;
 
-/**
- *
- * @author  Trey Spiva
- */
+
+
 public interface IADRequirementsUtility
 {
 

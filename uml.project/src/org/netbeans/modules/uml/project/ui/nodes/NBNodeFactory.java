@@ -54,14 +54,13 @@ import org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeItem;
 import org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeRelElement;
 import org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeWorkspace;
 
-/**
- * 
- * @author Trey Spiva
- */
+
+
 public class NBNodeFactory implements ProjectTreeNodeFactory
 {
 
-   /**
+   
+/**
     * 
     */
    public NBNodeFactory()
@@ -69,7 +68,8 @@ public class NBNodeFactory implements ProjectTreeNodeFactory
       super();
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.projecttree.ProjectTreeNodeFactory#createDiagramNode(org.netbeans.modules.uml.core.metamodel.diagrams.IProxyDiagram)
     */
    public ITreeDiagram createDiagramNode(IProxyDiagram proxy)
@@ -77,7 +77,8 @@ public class NBNodeFactory implements ProjectTreeNodeFactory
       return new UMLDiagramNode(proxy);
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.projecttree.ProjectTreeNodeFactory#createFolderNode()
     */
    public ITreeFolder createFolderNode()
@@ -85,7 +86,8 @@ public class NBNodeFactory implements ProjectTreeNodeFactory
       return new UMLFolderNode();
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.projecttree.ProjectTreeNodeFactory#createProjectNode()
     */
    public ITreeItem createProjectNode()
@@ -94,7 +96,8 @@ public class NBNodeFactory implements ProjectTreeNodeFactory
       return new UMLElementNode();
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.projecttree.ProjectTreeNodeFactory#createElementNode()
     */
    public ITreeElement createElementNode()
@@ -102,7 +105,8 @@ public class NBNodeFactory implements ProjectTreeNodeFactory
       return new UMLModelElementNode();
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.projecttree.ProjectTreeNodeFactory#createRelationshipNode()
     */
    public ITreeRelElement createRelationshipNode()
@@ -110,7 +114,8 @@ public class NBNodeFactory implements ProjectTreeNodeFactory
       return new UMLRelationshipNode();
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.projecttree.ProjectTreeNodeFactory#createWorkspaceNode()
     */
    public ITreeWorkspace createWorkspaceNode()

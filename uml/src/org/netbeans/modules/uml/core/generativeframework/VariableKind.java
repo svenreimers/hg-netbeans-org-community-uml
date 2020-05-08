@@ -45,10 +45,8 @@
 
 package org.netbeans.modules.uml.core.generativeframework;
 
-/**
- * @author sumitabhk
- *
- */
+
+
 final public class VariableKind {
 
 	public static int VK_NONE	= 0;

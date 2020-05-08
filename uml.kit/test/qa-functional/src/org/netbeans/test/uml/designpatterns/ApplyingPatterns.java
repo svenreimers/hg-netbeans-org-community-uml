@@ -85,11 +85,8 @@ import org.netbeans.test.umllib.testcases.UMLTestCase;
 import org.netbeans.test.umllib.util.*;
 
 
-/**
- *
- * @author psb
- * @spec uml/DesignPatterns
- */
+
+
 public class ApplyingPatterns extends UMLTestCase {
     
     //some system properties
@@ -284,7 +281,8 @@ public class ApplyingPatterns extends UMLTestCase {
         }
         assertTrue("There should be "+(allRoles.length-2)+" names in parameters compartment, now:"+allRolesInDPStr.split(",").length, allRolesInDPStr.split(",").length==(allRoles.length-2));
     }
-    /**
+    
+/**
      * @caseblock Applying pattern
      * @usecase Apply design pattern to project as whole through project tree
      */

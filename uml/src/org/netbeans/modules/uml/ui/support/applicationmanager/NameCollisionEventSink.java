@@ -58,17 +58,16 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 import org.netbeans.modules.uml.ui.controls.editcontrol.IEditControl;
 import org.netbeans.modules.uml.ui.controls.editcontrol.IEditControlEventSink;
 
-/**
- * @author sumitabhk
- *
- */
+
+
 public class NameCollisionEventSink implements INamedElementEventsSink,
 										ICoreProductInitEventsSink,
 										IEditControlEventSink
 {
 	private CoreNameCollisionListener m_ListenerToAdvise = null;
 
-	/**
+	
+/**
 	 * 
 	 */
 	public NameCollisionEventSink()
@@ -76,31 +75,36 @@ public class NameCollisionEventSink implements INamedElementEventsSink,
 		super();
 	}
 	// INamedElementsEventSink
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElementEventsSink#onPreNameModified(org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElement, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onPreNameModified(INamedElement element, String proposedName, IResultCell cell) {
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElementEventsSink#onNameModified(org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onNameModified(INamedElement element, IResultCell cell) {
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElementEventsSink#onPreVisibilityModified(org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElement, int, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onPreVisibilityModified(INamedElement element, int proposedValue, IResultCell cell) {
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElementEventsSink#onVisibilityModified(org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onVisibilityModified(INamedElement element, IResultCell cell) {
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElementEventsSink#onPreAliasNameModified(org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElement, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onPreAliasNameModified(INamedElement element, String proposedName, IResultCell cell) 
@@ -111,14 +115,16 @@ public class NameCollisionEventSink implements INamedElementEventsSink,
 		}
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElementEventsSink#onAliasNameModified(org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onAliasNameModified(INamedElement element, IResultCell cell) 
 	{
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElementEventsSink#onPreNameCollision(org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElement, java.lang.String, org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElement[], org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onPreNameCollision(INamedElement element, String proposedName, ETList<INamedElement> collidingElements, IResultCell cell) 
@@ -130,7 +136,8 @@ public class NameCollisionEventSink implements INamedElementEventsSink,
 
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElementEventsSink#onNameCollision(org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElement, org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElement[], org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onNameCollision(INamedElement element, ETList<INamedElement> collidingElements, IResultCell cell) 
@@ -142,21 +149,24 @@ public class NameCollisionEventSink implements INamedElementEventsSink,
 	}
 	
 	// ICoreProductInitEventsSink
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.coreapplication.ICoreProductInitEventsSink#onCoreProductPreInit(org.netbeans.modules.uml.core.coreapplication.ICoreProduct, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onCoreProductPreInit(ICoreProduct pVal, IResultCell cell)
 	{
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.coreapplication.ICoreProductInitEventsSink#onCoreProductInitialized(org.netbeans.modules.uml.core.coreapplication.ICoreProduct, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onCoreProductInitialized(ICoreProduct newVal, IResultCell cell)
 	{
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.coreapplication.ICoreProductInitEventsSink#onCoreProductPreQuit(org.netbeans.modules.uml.core.coreapplication.ICoreProduct, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onCoreProductPreQuit(ICoreProduct pProduct, IResultCell cell)
@@ -167,59 +177,68 @@ public class NameCollisionEventSink implements INamedElementEventsSink,
 		}
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.coreapplication.ICoreProductInitEventsSink#onCoreProductPreSaved(org.netbeans.modules.uml.core.coreapplication.ICoreProduct, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onCoreProductPreSaved(ICoreProduct pProduct, IResultCell cell)
 	{
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.coreapplication.ICoreProductInitEventsSink#onCoreProductSaved(org.netbeans.modules.uml.core.coreapplication.ICoreProduct, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onCoreProductSaved(ICoreProduct newVal, IResultCell cell)
 	{
 	}
 	// IEditControlEventSink
-	/**
+	
+/**
 	 * Fired when data not consistent with the selected mask is passed
 	*/
 	public void onPreInvalidData( String ErrorData, IResultCell cell )
 	{
 	}
 
-	/**
+	
+/**
 	 * Fired when data not consistent with the selected mask is passed
 	*/
 	public void onInvalidData( String ErrorData, IResultCell cell )
 	{
 	}
 
-	/**
+	
+/**
 	 * Fired when user toggles Insert/Overstrike mode via the Insert key
 	*/
 	public void onPreOverstrike( boolean bOverstrike, IResultCell cell ){
 	}
 
-	/**
+	
+/**
 	 * Fired when user toggles Insert/Overstrike mode via the Insert key
 	*/
 	public void onOverstrike( boolean bOverstrike, IResultCell cell ){
 	}
 
-	/**
+	
+/**
 	 * The control is about to gain focus
 	*/
 	public void onPreActivate( IEditControl pControl, IResultCell cell ){
 	}
 
-	/**
+	
+/**
 	 * The control has gained focus
 	*/
 	public void onActivate( IEditControl pControl, IResultCell cell ){
 	}
 
-	/**
+	
+/**
 	 * The control has lost focus
 	*/
 	public void onDeactivate( IEditControl pControl, IResultCell cell )
@@ -230,19 +249,22 @@ public class NameCollisionEventSink implements INamedElementEventsSink,
 		}
 	}
 
-	/**
+	
+/**
 	 * Sets an AxEditEvents object as owner of this event sink. Events will be routed to the owner
 	*/
 	public void setEventOwner( /* long */ int pOwner ){
 	}
 
-	/**
+	
+/**
 	 * Model element data is about to be saved.
 	*/
 	public void onPreCommit( IResultCell cell ){
 	}
 
-	/**
+	
+/**
 	 * Model element data has been saved.
 	*/
 	public void onPostCommit( IResultCell cell ){

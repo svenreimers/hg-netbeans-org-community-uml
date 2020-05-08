@@ -42,6 +42,7 @@
  * made subject to such option by the copyright holder.
  */
 
+
 /*
  * IEnumLiteralChangeFacility.java
  *
@@ -54,10 +55,8 @@ import org.netbeans.modules.uml.core.metamodel.core.constructs.IEnumeration;
 import org.netbeans.modules.uml.core.metamodel.core.constructs.IEnumerationLiteral;
 import org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ILanguage;
 
-/**
- *
- * @author Administrator
- */
+
+
 public interface IEnumLiteralChangeFacility extends IRequestFacility
 {
    // These should be part of the IEnumerationChangeFacility

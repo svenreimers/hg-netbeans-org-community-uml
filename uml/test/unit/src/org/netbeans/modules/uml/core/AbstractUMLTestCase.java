@@ -69,11 +69,8 @@ import org.netbeans.modules.uml.core.workspacemanagement.WorkspaceManagementExce
 import org.netbeans.modules.uml.ui.products.ad.applicationcore.ADProduct;
 import org.netbeans.modules.uml.ui.support.ProductHelper;
 
-/**
- * Test case that needs an active namespace (workspace, project) to work in.
- * 
- * @author darshans
- */
+
+
 abstract public class AbstractUMLTestCase extends TestCase
 {
     protected static ICoreProduct product = null;
@@ -97,7 +94,7 @@ abstract public class AbstractUMLTestCase extends TestCase
 //
 //            // we don't want to be prompted to save projects,
 //            // just save them automatically
-//            // IZ=119824 - conover
+
 //            // NbPreferences are not initialized in Unit Test runtime
 //            // NbPreferences.forModule (AbstractUMLTestCase.class)
 //            //      .putBoolean("UML_Prompt_to_Save_Project", false); // NOI18N
@@ -115,7 +112,8 @@ abstract public class AbstractUMLTestCase extends TestCase
 
     private List<IElement> createdTypes = new ArrayList<IElement>();
     
-    /**
+    
+/**
      * A wrapper around the exceedingly clunky TypedFactoryRetriever. Types
      * created here are automatically added to the project and are automatically
      * deleted on tearDown() (so using this in a class field initializer is not
@@ -132,7 +130,8 @@ abstract public class AbstractUMLTestCase extends TestCase
         return t;
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see junit.framework.TestCase#tearDown()
      */
     @Override
@@ -183,7 +182,8 @@ abstract public class AbstractUMLTestCase extends TestCase
         return superI;
     }
     
-    /**
+    
+/**
      * Create/open workspace and project.
      */
     public static void establishNamespaces()
@@ -242,7 +242,8 @@ abstract public class AbstractUMLTestCase extends TestCase
        }
     }
 
-    /**
+    
+/**
      * @param workspace2
      * @param string
      * @return
@@ -291,7 +292,8 @@ abstract public class AbstractUMLTestCase extends TestCase
         return null;
     }
 
-    /**
+    
+/**
      * @param dir
      * @param string
      * @return
@@ -317,7 +319,8 @@ abstract public class AbstractUMLTestCase extends TestCase
         return null;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see junit.framework.TestCase#tearDown()
      */
     @Override

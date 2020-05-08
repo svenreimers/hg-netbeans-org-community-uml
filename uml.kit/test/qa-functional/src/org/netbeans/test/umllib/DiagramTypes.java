@@ -43,19 +43,13 @@
  */
 
 
-/*
- * DiagramTypes.java
- *
- * Created on January 19, 2006, 4:57 PM
- *
- */
+
+
 
 package org.netbeans.test.umllib;
 
-/**
- *
- * @author Alexandr Scherbatiy
- */
+
+
 public enum DiagramTypes {
     
     ACTIVITY("Activity Diagram"),
@@ -73,7 +67,8 @@ public enum DiagramTypes {
         this.type = val;
     }
     
-    /**
+    
+/**
      * 
      * @return 
      */

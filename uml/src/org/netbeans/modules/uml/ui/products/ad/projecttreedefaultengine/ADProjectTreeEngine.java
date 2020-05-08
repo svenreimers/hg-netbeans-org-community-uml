@@ -42,11 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- *
- * Created on Jun 10, 2003
- * @author Trey Spiva
- */
+
+
 package org.netbeans.modules.uml.ui.products.ad.projecttreedefaultengine;
 
 import java.awt.datatransfer.DataFlavor;
@@ -179,15 +176,8 @@ import org.openide.loaders.DataObject;
 import org.openide.util.Exceptions;
 import org.openide.util.NbBundle;
 
-/**
- * The ADProjectTreeEngine is used to add Application Designer
- * items to the project tree.  The configuration file
- * ProjectTreeEngine.etc is used to specify the items that can be
- * added to the tree.
- *
- * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeEngine
- * @author Trey Spiva
- */
+
+
 public class ADProjectTreeEngine
    implements IProjectTreeEngine, IProjectTreeBuilderFilter
 {
@@ -248,7 +238,8 @@ public class ADProjectTreeEngine
    private EngineRelationEventsSink m_RelSink = new EngineRelationEventsSink();
    private EngineTypedElementEventsSink m_TypeElemSink = new EngineTypedElementEventsSink();
    private EngineFilterSink m_FilterSink = new EngineFilterSink();
-   /**
+   
+/**
     * Initializes the context menu system and required requesters
     * the required events sinks.
     * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeEngine#initialize(org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeModel)
@@ -276,7 +267,8 @@ public class ADProjectTreeEngine
         }
    }
    
-   /**
+   
+/**
     * Test if it is OK to delete a tree item.
     * 
     * @param item The item to test.
@@ -300,7 +292,8 @@ public class ADProjectTreeEngine
       return retVal;
    }
 
-   /**
+   
+/**
 	* Test if it is OK to edit a tree item.
 	* 
 	* @param item The item to test.
@@ -325,7 +318,8 @@ public class ADProjectTreeEngine
    }
 
 
-   /**
+   
+/**
     * Cleans up when the core product is about to Quit.
     */
 
@@ -338,7 +332,8 @@ public class ADProjectTreeEngine
 
    }
 
-   /**
+   
+/**
     * Initializes the sinks that are required to populate the tree.
     */
    protected void initializeSinks()
@@ -363,7 +358,8 @@ public class ADProjectTreeEngine
 
    }
 
-   /**
+   
+/**
     * Initializes the sinks that are required to populate the tree.
     */
    protected void deInitializeSinks()
@@ -385,7 +381,8 @@ public class ADProjectTreeEngine
 
    }
 
-   /**
+   
+/**
     * Initalizes engine from the the preferences
     */
    protected void initializeByPreferences()
@@ -393,7 +390,8 @@ public class ADProjectTreeEngine
 
    }
 
-   /**
+   
+/**
     * Initalizes the filter manager with the display information.
     */
    protected void initializeFilteredManager()
@@ -405,7 +403,8 @@ public class ADProjectTreeEngine
    	}
    }
 
-   /**
+   
+/**
     * Cleans up the filter manager.
     */
    protected void deInitializeFilteredManager()
@@ -413,7 +412,8 @@ public class ADProjectTreeEngine
    	m_FilteredItemManager = null;
    }
 
-   /**
+   
+/**
     * Inializes all of the editable and display list information.  The file
     * <i>ProjectTreeEngine.etc</i> is used to initalize the information.
     */
@@ -435,7 +435,8 @@ public class ADProjectTreeEngine
       }
    }
 
-   /**
+   
+/**
     * Clears all the members used to store the editable and display list
     * information.
     */
@@ -502,7 +503,8 @@ public class ADProjectTreeEngine
 
    
    
-   /**
+   
+/**
     * Retrieve an elements project tree nodes.  If the owner is a IRegion it may
     * not be shown in the tree, so if the owner is an IRegion and it is not
     * found in the tree the grandparent will be returned instead.
@@ -559,7 +561,8 @@ public class ADProjectTreeEngine
    //private UpdateItemsRunnable m_UpdateRunnable = new UpdateItemsRunnable();
    private UpdateItemsRunnable m_UpdateRunnable = null;
    
-   /**
+   
+/**
     * Verify that the items are up to date.
     *
     * @param pChangedItem The item that changed.  We need to verify this guy is
@@ -594,7 +597,8 @@ public class ADProjectTreeEngine
 
    public class UpdateItemsRunnable extends BatchProcessRunnable < IElement >
    {
-      /**
+      
+/**
        * Actually perform the update operation.
        *
        * @param obj The item that changed.  We need to verify this guy is
@@ -702,7 +706,8 @@ public class ADProjectTreeEngine
       }
    }
 
-   /**
+   
+/**
     * Go over the list of elements finding them in the tree and verifying
     * they are correctly displaying their children.
     *
@@ -828,7 +833,8 @@ public class ADProjectTreeEngine
         }
     }
     
-   /**
+   
+/**
     * This routine verifies that the project tree item has all the children that the builder
     * says it should have.  If not then we create/delete them as necessary.
     *
@@ -929,7 +935,8 @@ public class ADProjectTreeEngine
       return retVal;
    }
 
-   /**
+   
+/**
     * Given a list of ITreeItems (pDesiredTreeItems) this routine checks the
     * list and determines what is in the list that shouldnt be
     * (<code>shouldntBeInList</code>) and whats in the desired list thats
@@ -999,7 +1006,8 @@ public class ADProjectTreeEngine
       }
    }
 
-   /**
+   
+/**
     * Retrieves the information need to update a tree item after it has been
     * modified.  All tree items in the <code>desiredItems</code> collection are
     * removed from <code>childList</code> collection.  If a item in the
@@ -1066,7 +1074,8 @@ public class ADProjectTreeEngine
       }
    }
 
-   /**
+   
+/**
     * Test if the specified name is in a list of paths.  The paths are a
     * '|' seperated list of names.
     *
@@ -1090,7 +1099,8 @@ public class ADProjectTreeEngine
         return found;
     }
 
-   /**
+   
+/**
     * Pulls out all of the IElements in the collection of ITreeItems.  The
     * elementsToRefresh collection will not contain any duplicates.
     *
@@ -1122,7 +1132,8 @@ public class ADProjectTreeEngine
 
    }
 
-   /**
+   
+/**
     * Pulls out all of the IElements in the collection of ITreeItems.  The
     * elementsToRefresh collection will not contain any duplicates.
     *
@@ -1148,7 +1159,8 @@ public class ADProjectTreeEngine
       }
    }
 
-   /**
+   
+/**
     * Pulls out all of the IElements in the collection of ITreeItems.  The
     * elementsToRefresh collection will not contain any duplicates.
     *
@@ -1173,7 +1185,8 @@ public class ADProjectTreeEngine
 //      }
 //   }
 
-   /**
+   
+/**
     * Retrieves the model elements that need to be updated.  The model elements
     * that need to be updated are the elements that contain ends of the
     * association.
@@ -1204,7 +1217,8 @@ public class ADProjectTreeEngine
       }
    }
 
-   /**
+   
+/**
     * Add a model element feature to a collection of model elements.  The
     * feature is added only if it has a classifier and it has not been previously
     * added to the collection.
@@ -1225,7 +1239,8 @@ public class ADProjectTreeEngine
       }
    }
 
-   /**
+   
+/**
     * Adds a model element to all tree items that own the model element.
     *
     * @param elementAdded The model element to be added.
@@ -1288,7 +1303,8 @@ public class ADProjectTreeEngine
       }
    }
 
-   /**
+   
+/**
     * Removes a model element form the tree.  All instances of the model element
     * will be removed from the tree.
     *
@@ -1306,7 +1322,8 @@ public class ADProjectTreeEngine
    // Getter and Setters
    //**************************************************
 
-   /**
+   
+/**
     * Retreives the project tree mode associated with the
     * engine.
     *
@@ -1317,7 +1334,8 @@ public class ADProjectTreeEngine
       return m_TreeModel;
    }
 
-   /**
+   
+/**
     * Sets the project tree mode associated with the
     * engine.
     *
@@ -1332,7 +1350,8 @@ public class ADProjectTreeEngine
    // Helper Methods
    //**************************************************
 
-   /**
+   
+/**
     * Process the XML DOM document for all displayed items.  Displayed items
     * are specified by a DOM node with the name of <code>DisplayedItems</code>.
     * <br>
@@ -1427,7 +1446,8 @@ public class ADProjectTreeEngine
       }
    }
 
-   /**
+   
+/**
     * Adds condional information to a specified collection.  The data is
     * retrieved from a XML DOM element.
     *
@@ -1450,7 +1470,8 @@ public class ADProjectTreeEngine
       }
    }
 
-   /**
+   
+/**
     * Adds target information to a specified collection.  The data is retrieved
     * from a XML DOM element.
     *
@@ -1474,7 +1495,8 @@ public class ADProjectTreeEngine
       }
    }
 
-   /**
+   
+/**
     * If the test string is <i>Y</i>, <i>y</i>, <i>t</i>, or <i>T</i>
     * then <code>PTEAV_Y</code> is returned.  If the test string is <i>F</i>,
     * <i>f</i>, <i>n</i>, or <i>N</i> then <code>PTEAV_N</code> is returned.  If
@@ -1505,7 +1527,8 @@ public class ADProjectTreeEngine
       return retVal;
    }
 
-   /**
+   
+/**
     * Get the guids that correspond to the names in the validDropTargets
     * An example is...
     * <code><GUIDItem type="IActor" guid="AF9A845E-4889-47CB-BCBD-F63362F8F8F0"/></code>
@@ -1527,7 +1550,8 @@ public class ADProjectTreeEngine
       }
    }
 
-   /**
+   
+/**
     * Retrieves the active workspace.
     *
     * @return The workspace.
@@ -1537,7 +1561,8 @@ public class ADProjectTreeEngine
 		return ProductHelper.getWorkspace();
 	}
 
-	/**
+	
+/**
 	 * Retrieves the filter manager.  The filter manager is used to filter out
     * items from the tree.
     *
@@ -1549,7 +1574,8 @@ public class ADProjectTreeEngine
 
 	}
 
-	/**
+	
+/**
 	 * Given a parent pTreeItem and pModelElement this routine searches through
 	 * the pModelElement's owned elements and adding them to the tree as a
 	 * child of pTreeItem.  If sAddOnlyThisType has non-zero length then only
@@ -1564,7 +1590,8 @@ public class ADProjectTreeEngine
 
 	}
 
-	/**
+	
+/**
 	 * Given a parent pTreeItem and pModelElement this routine searches through
 	 * the pModelElement's owned elements and adding them to the tree as a
 	 * child of pTreeItem.  If sAddOnlyThisType has non-zero length then only
@@ -1611,7 +1638,8 @@ public class ADProjectTreeEngine
       }
 	}
 
-	/**
+	
+/**
     * Add a new tree item to the project tree model.
     *
     * @param parentItem The tree item that will receive the new tree item.
@@ -1654,7 +1682,8 @@ public class ADProjectTreeEngine
       return retVal;
    }
 
-   /**
+   
+/**
     * Inserts the item into the parent at the specified location in the
     * parents child list.
     *
@@ -1695,7 +1724,8 @@ public class ADProjectTreeEngine
       return retVal;
    }
 
-   /**
+   
+/**
     * Adds the diagram to the project tree model.
     *
     * @param parent The parent of the diagram tree item.
@@ -1777,7 +1807,8 @@ public class ADProjectTreeEngine
 		return retVal;
 	}
 
-   /**
+   
+/**
     * Adds the diagram to the project tree model at the specified location.
     *
     * @param parent The parent of the diagram tree item.
@@ -1837,7 +1868,8 @@ public class ADProjectTreeEngine
       return retVal;
    }
 
-   /**
+   
+/**
     * This routine returns the string used for hiding various diagram types.
     * If the diagram is invalid the assumption is made that it's an unsaved
     * diagram that's still open in the workspace - so we ask the product for
@@ -1861,7 +1893,8 @@ public class ADProjectTreeEngine
       return getDiagramIcon(diagramType, isValid, isOpen, true);
    }
 
-   /**
+   
+/**
     * Returns the diagram icon that should be used for this diagram type,
     * open state and validity.
     *
@@ -1906,7 +1939,8 @@ public class ADProjectTreeEngine
       return retVal;
    }
 
-   /**
+   
+/**
     * This routine returns the diagram type string.  If the diagram is invalid
     * the assumption is made that it's an unsaved diagram that's still open in
     * the workspace so we ask the product for the diagram by name.  If found
@@ -1927,7 +1961,8 @@ public class ADProjectTreeEngine
       return getDiagramIcon(diagramType, isValid, isOpen, false);
    }
 
-   /**
+   
+/**
     * Adds a folder to the project tree model.
     *
     * @param parent The new parent of the folder.
@@ -1970,7 +2005,8 @@ public class ADProjectTreeEngine
       return retVal;
    }
 
-   /**
+   
+/**
     * Adds a element tree item to the project tree model.
     *
     * @param parentItem The parent of the new tree element.
@@ -2002,7 +2038,8 @@ public class ADProjectTreeEngine
       return retVal;
    }
 
-   /**
+   
+/**
     * Adds a element tree item to the project tree model.
     *
     * @param parentItem The parent of the new tree element.
@@ -2036,7 +2073,8 @@ public class ADProjectTreeEngine
       return retVal;
    }
 
-   /**
+   
+/**
     * Adds this particular element to the tree.
     *
     * @param pSupportTreeItem The ITreeElement we got from the project tree builder
@@ -2099,7 +2137,8 @@ public class ADProjectTreeEngine
        }
    }
 
-   /**
+   
+/**
     * Interface into the tree builder
     */
    protected ITreeItem[] retrieveChildItems(Object object)
@@ -2131,7 +2170,8 @@ public class ADProjectTreeEngine
 
    }
 
-   /**
+   
+/**
     * Interface into the tree builder
     * @return The tree items to add.
     */
@@ -2162,7 +2202,8 @@ public class ADProjectTreeEngine
       return retVal;
    }
 
-   /**
+   
+/**
     * If packages are hidden this routine finds the package members
     * and adds them to our main list.
     *
@@ -2218,7 +2259,8 @@ public class ADProjectTreeEngine
       items.addAll(foundItems);
    }
 
-   /**
+   
+/**
     * Returns true if this type has been hidden.
     *
     * @param elementTypeName The element to determine whether or not its filtered.
@@ -2242,7 +2284,8 @@ public class ADProjectTreeEngine
 		return !m_FilteredItemManager.isDisplayed(elementTypeName);
 	}
 
-   /**
+   
+/**
     * Adds all the diagrams in the project.
     *
 	 * @param treeItem The project tree item.
@@ -2277,7 +2320,8 @@ public class ADProjectTreeEngine
         }
     }
 
-   /**
+   
+/**
     * Check if the engine is being used to support the project tree.  This should
     * be overridden if ADProjectTreeEngine is extended to support anything other
     * than the project tree.
@@ -2325,7 +2369,8 @@ public class ADProjectTreeEngine
 		}
 	  return retVal;
 	}
-   /**
+   
+/**
     * Called when the tree control begins a drag.  You can cancel the drag by calling put_Cancel with
     * <b>true</b> on the pVerify object.
     *
@@ -2356,7 +2401,8 @@ public class ADProjectTreeEngine
       }
    }
 
-   /**
+   
+/**
     * Called when items have been dropped onto the tree.  OnDrop.
     *
     * @param pParentControl The tree that caused the event
@@ -2400,7 +2446,8 @@ public class ADProjectTreeEngine
       }
    }
 
-   /**
+   
+/**
     * Handles the end drag event.  The data on the transfer data was a string.
     * It is assumed the data is an XML document.
     *
@@ -2421,7 +2468,8 @@ public class ADProjectTreeEngine
 
    }
 
-   /**
+   
+/**
     * Handles the end drag event.  The transfer type ADTransferable.ADTransferData
     *
     * @param transfer The drops transerfable object.
@@ -2696,7 +2744,8 @@ public class ADProjectTreeEngine
       }
    }
 
-   /**
+   
+/**
     * Handles the movement of one element into the namespace or ownership of another,
     * making sure to take cross project occurrences into account
     *
@@ -2791,7 +2840,8 @@ public class ADProjectTreeEngine
       return testImports;
    }
 
-   /**
+   
+/**
     * If importingElement and elementToImport are NOT in the same Project, then the user is asked
     * if they want to actually move elementToImport into the importingElement's project, or create
     * an element import relationship between the projects
@@ -2859,7 +2909,8 @@ public class ADProjectTreeEngine
       return retVal;
    }
 
-   /**
+   
+/**
     * Returns true if the projecttreeengine.etc says that sElement1 is a valid
     * drop target on sElement2.
     *
@@ -2938,7 +2989,8 @@ public class ADProjectTreeEngine
       return retVal;
    }
 
-   /**
+   
+/**
     * @param item
     * @return
     */
@@ -3022,7 +3074,8 @@ public class ADProjectTreeEngine
       return retVal;
    }
    
-   /**
+   
+/**
     * @param attr
     * @return
     */
@@ -3079,7 +3132,7 @@ public class ADProjectTreeEngine
          if (modelElement instanceof INamedElement)
          {
             INamedElement element = (INamedElement)modelElement;
-            //String formatted = element.getNameWithAlias();
+            
             String formatted = getFormattedString(element);
 
             String itemName = item.getDisplayedName();
@@ -3089,7 +3142,7 @@ public class ADProjectTreeEngine
                // If the name is set then the model element is update.
                // Since this is from an issue I do not want to cause the
                // model element to be updated again.
-               //item.setName(formatted);
+               
                retVal = true;
             }
          }
@@ -3097,7 +3150,8 @@ public class ADProjectTreeEngine
       return retVal;
    }
 
-   /**
+   
+/**
     * Removes an element node from the tree.
     *
     * @param element The element that has been removed.
@@ -3118,7 +3172,8 @@ public class ADProjectTreeEngine
       }
    }
 
-   /**
+   
+/**
     * Notifies all change listeners that an element node has changed.
     *
     * @param element The element that has changed.
@@ -3144,7 +3199,8 @@ public class ADProjectTreeEngine
       }
    }
 
-   /**
+   
+/**
     * Notifies all change listeners that a proxy diagram node has changed.
     *
     * @param element The proxy diagram that has changed.
@@ -3189,7 +3245,8 @@ public class ADProjectTreeEngine
          }
       }
    }
-   /**
+   
+/**
     * Add a new diagram to the tree.  The diagram location is used to find
     * the proxy diagram and the namespace that contains the daigram.
     *
@@ -3252,7 +3309,8 @@ public class ADProjectTreeEngine
       }
    }
    
-   /**
+   
+/**
     * Retrieves the factory to use when creating project tree nodes.
     * 
     * @return The node factory.
@@ -3270,7 +3328,8 @@ public class ADProjectTreeEngine
       return retVal;
    }
 
-   /**
+   
+/**
 	* Finds this diagram and sets the icon accordingly.
 	*
 	* @param pParentDiagram
@@ -3316,7 +3375,8 @@ public class ADProjectTreeEngine
    		}
    }
 
-   /**
+   
+/**
 	* Given a key string this looks the string up in the resource manager and returns
 	* the icon that should be used for that type.
 	*
@@ -3350,7 +3410,8 @@ public class ADProjectTreeEngine
         }
     }
 
-   /**
+   
+/**
 	 * Handles the after edit event.
 	 *
 	 * @param pParentControl [in] The tree that caused the event
@@ -3395,7 +3456,7 @@ public class ADProjectTreeEngine
                if(modelElement != null)
                {
                    // This is a special case where all the element types are
-                   // hidden, we put the diagrams, no matter the namespace,
+                   
                    // under the IProject
                    // but only if we are not in the design center
                    if((modelElement instanceof IProject) &&
@@ -3513,7 +3574,8 @@ public class ADProjectTreeEngine
 	  return retVal;
    }
 
-   /**
+   
+/**
 	* Handles expanding a projects nodes.  The project is opened and its contents
 	* are added to the projects nodes.  The contents of a project are build using
 	* the project tree builder and the user filter.
@@ -3554,7 +3616,8 @@ public class ADProjectTreeEngine
 	  return retVal;
    }
 
-   /**
+   
+/**
     * Called when the an element has been modified.
     *
     * @param element The element that was just modified
@@ -3619,7 +3682,8 @@ public class ADProjectTreeEngine
       }
    }
    
-   /**
+   
+/**
     * Called when we receive several events from the ITypedElementEventsSink.  
     * This updates the attribute when a multiplicity range is modified
     */
@@ -3665,7 +3729,8 @@ public class ADProjectTreeEngine
    	return bFlag;
    }
    
-   /**
+   
+/**
     * Determines whether or not the current EventContext is a
     * "PresentationAdded" or "DefaultImports" context.  If the current context 
     * is a NoEffectModification context then the context is returned.
@@ -3693,7 +3758,8 @@ public class ADProjectTreeEngine
 
    protected class ProjectTreeListener extends ProjectTreeEventsAdapter
 	{
-	   /* (non-Javadoc)
+	   
+/* (non-Javadoc)
        * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeEventsSink#onAfterEdit(org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl, org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem, org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeEditVerify, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
        */
       public void onAfterEdit(IProjectTreeControl pParentControl,
@@ -3703,7 +3769,8 @@ public class ADProjectTreeEngine
       {
       }
 
-      /* (non-Javadoc)
+      
+/* (non-Javadoc)
        * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeEventsSink#onBeforeEdit(org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl, org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem, org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeEditVerify, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
        */
       public void onBeforeEdit(IProjectTreeControl pParentControl,
@@ -3713,7 +3780,8 @@ public class ADProjectTreeEngine
       {
       }
 
-      /* (non-Javadoc)
+      
+/* (non-Javadoc)
        * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeEventsSink#onBeginDrag(org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl, org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem[], org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeDragVerify, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
        */
       public void onBeginDrag(IProjectTreeControl pParentControl,
@@ -3727,7 +3795,8 @@ public class ADProjectTreeEngine
          }
       }
 
-      /**
+      
+/**
        * Handles the double click event.  The double click event will be used
        * to navigate to a diagram that contains the model element.
        *
@@ -3745,7 +3814,8 @@ public class ADProjectTreeEngine
 		onNodeDoubleClick(pParentControl, pItem, isControl, isShift, isAlt, isMeta);
        }
 
-      /* (non-Javadoc)
+      
+/* (non-Javadoc)
        * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeEventsSink#onEndDrag(org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl, org.netbeans.modules.uml.ui.controls.projecttree.IDataObject, org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeDragVerify, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
        */
       public void onEndDrag(IProjectTreeControl    pParentControl,
@@ -3760,7 +3830,8 @@ public class ADProjectTreeEngine
          }
       }
 
-      /* (non-Javadoc)
+      
+/* (non-Javadoc)
        * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeEventsSink#onItemExpanding(org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl, org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeExpandingContext, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
        */
       public void onItemExpanding(IProjectTreeControl          pParentControl,
@@ -3782,7 +3853,8 @@ public class ADProjectTreeEngine
          onNodeExpanding(pParentControl, pContext, manager);
       }
       
-      /* (non-Javadoc)
+      
+/* (non-Javadoc)
        * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeEventsSink#onMoveDrag(org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl, org.netbeans.modules.uml.ui.controls.projecttree.IDataObject, org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeDragVerify, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
        */
       public void onMoveDrag(IProjectTreeControl pParentControl,
@@ -3797,7 +3869,8 @@ public class ADProjectTreeEngine
 
    public class EngineElementModifiedSink extends ElementModifiedEventsAdapter
    {
-      /**
+      
+/**
        * Called when the an element has been modified.
        *
        * @param element The element that was just modified
@@ -3889,7 +3962,8 @@ public class ADProjectTreeEngine
 
    public class EngineClassifierTransformSink implements IClassifierTransformEventsSink
    {
-      /**
+      
+/**
        * Fired whenever a classifier is about to be transformed.
       */
       public void onPreTransform( IClassifier classifier,
@@ -3899,7 +3973,8 @@ public class ADProjectTreeEngine
 //         onElementDelete(classifier);
       }
 
-      /**
+      
+/**
        * Fired right after a classifier is transformed into a new one.
       */
       public void onTransformed( final IClassifier classifier,
@@ -4223,7 +4298,8 @@ public class ADProjectTreeEngine
       boolean m_PerformImport  = false;
       boolean m_ImportCanceled = false;
 
-      /**
+      
+/**
        * @return
        */
       public boolean isImportCanceled()
@@ -4231,7 +4307,8 @@ public class ADProjectTreeEngine
          return m_ImportCanceled;
       }
 
-      /**
+      
+/**
        * @return
        */
       public boolean isPerformImport()
@@ -4239,7 +4316,8 @@ public class ADProjectTreeEngine
          return m_PerformImport;
       }
 
-      /**
+      
+/**
        * @param b
        */
       public void setImportCanceled(boolean b)
@@ -4247,7 +4325,8 @@ public class ADProjectTreeEngine
          m_ImportCanceled = b;
       }
 
-      /**
+      
+/**
        * @param b
        */
       public void setPerformImport(boolean b)

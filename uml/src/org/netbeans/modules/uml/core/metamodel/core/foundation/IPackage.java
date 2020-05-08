@@ -48,14 +48,8 @@ package org.netbeans.modules.uml.core.metamodel.core.foundation;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 
-/**
- * <p>Title: </p>
- * <p>Description: </p>
- * <p>Copyright: Copyright (c) 2003</p>
- * <p>Company: </p>
- * @author not attributable
- * @version 1.0
- */
+
+
 
 public interface IPackage extends INamespace{
 
@@ -113,17 +107,20 @@ public interface IPackage extends INamespace{
 //HRESULT ImportedElements([out, retval] IElements* *pVal);
   public ETList<IElement> getImportedElements();
 
-  /**
+  
+/**
    * The location where source file artifacts will be generated into.
   */
   public String getSourceDir();
 
-  /**
+  
+/**
    * The location where source file artifacts will be generated into.
   */
   public void setSourceDir( String value );
 
-  /**
+  
+/**
    * Determines whether or not this is a top level package or not. A top level package is any package whose owning namespace is the Project, or the Project itself.
   */
   public boolean getIsTopLevelPackage(boolean checkLength);

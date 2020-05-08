@@ -48,10 +48,8 @@ import org.netbeans.api.visual.widget.Widget;
 import org.netbeans.modules.uml.diagrams.actions.VerticalWithLimitMoveProvider;
 import org.netbeans.modules.uml.diagrams.nodes.sqd.InteractionOperandWidget;
 
-/**
- * TBD move to our factory with some static fields to avoid creation of a lot of objects
- * @author sp153251
- */
+
+
 public class OperandsMoveProvider extends VerticalWithLimitMoveProvider {
     
     public OperandsMoveProvider()

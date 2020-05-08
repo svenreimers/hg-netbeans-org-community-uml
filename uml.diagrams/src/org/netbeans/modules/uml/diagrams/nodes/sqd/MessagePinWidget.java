@@ -55,10 +55,8 @@ import org.netbeans.modules.uml.drawingarea.view.UMLEdgeWidget;
 import org.netbeans.modules.uml.drawingarea.widgets.MessagePin;
 
 
-/**
- *
- * @author sp153251
- */
+
+
 public class MessagePinWidget extends Widget implements Comparable<MessagePinWidget>,MessagePin{
 
     private static long id_c;
@@ -118,7 +116,8 @@ public class MessagePinWidget extends Widget implements Comparable<MessagePinWid
         throw new IndexOutOfBoundsException("can't find connection with "+index+" psition");
     }
 
-    /**
+    
+/**
      * return margin(i.e. space on execution specification before corresponding pin)
      * @param kind
      * @return
@@ -137,7 +136,8 @@ public class MessagePinWidget extends Widget implements Comparable<MessagePinWid
         return ret;
     }
 
-    /**
+    
+/**
      * return margin(i.e. space on execution specification after corresponding pin)
      * @param kind
      * @return

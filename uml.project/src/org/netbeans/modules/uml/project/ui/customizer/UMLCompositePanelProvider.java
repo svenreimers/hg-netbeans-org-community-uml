@@ -52,10 +52,8 @@ import org.netbeans.spi.project.ui.support.ProjectCustomizer.Category;
 import org.openide.util.Lookup;
 import org.openide.util.NbBundle;
 
-/**
- *
- * @author Jyothi
- */
+
+
 public class UMLCompositePanelProvider  implements ProjectCustomizer.CompositeCategoryProvider {
     
     // Names of categories
@@ -65,7 +63,8 @@ public class UMLCompositePanelProvider  implements ProjectCustomizer.CompositeCa
     private String name;
     
     
-    /** Creates a new instance of UMLCompositePanelProvider 
+    
+/** Creates a new instance of UMLCompositePanelProvider 
      * @param name 
      */
     public UMLCompositePanelProvider(String name) {

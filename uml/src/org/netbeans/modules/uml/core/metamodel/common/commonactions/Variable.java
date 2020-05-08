@@ -42,11 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : Variable.java
- * Created on : Sep 17, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.metamodel.common.commonactions;
 
 import org.dom4j.Document;
@@ -54,13 +51,13 @@ import org.dom4j.Node;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.OwnerRetriever;
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.TypedElement;
 
-/**
- * @author Aztec
- */
+
+
 public class Variable extends TypedElement implements IVariable
 {
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactions.IVariable#getScope()
      */
     public IGroupAction getScope()
@@ -68,7 +65,8 @@ public class Variable extends TypedElement implements IVariable
 		return OwnerRetriever.getOwnerByType(this, IGroupAction.class);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactions.IVariable#setScope(org.netbeans.modules.uml.core.metamodel.common.commonactions.IGroupAction)
      */
     public void setScope(IGroupAction pGrpAction)

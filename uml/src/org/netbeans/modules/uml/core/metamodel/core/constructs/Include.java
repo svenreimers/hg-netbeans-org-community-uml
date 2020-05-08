@@ -56,7 +56,8 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.OwnerRetriever;
 public class Include extends DirectedRelationship implements IInclude
 {
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.constructs.IInclude#getAddition()
      */
     public IUseCase getAddition()
@@ -65,7 +66,8 @@ public class Include extends DirectedRelationship implements IInclude
         return col.retrieveSingleElementWithAttrID(this,"target", IUseCase.class);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.constructs.IInclude#getBase()
      */
     public IUseCase getBase()
@@ -73,7 +75,8 @@ public class Include extends DirectedRelationship implements IInclude
 		return OwnerRetriever.getOwnerByType(this, IUseCase.class);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.constructs.IInclude#setAddition(org.netbeans.modules.uml.core.metamodel.core.constructs.IUseCase)
      */
     public void setAddition(IUseCase addition)
@@ -106,7 +109,8 @@ public class Include extends DirectedRelationship implements IInclude
 
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.constructs.IInclude#setBase(org.netbeans.modules.uml.core.metamodel.core.constructs.IUseCase)
      */
     public void setBase(IUseCase base)

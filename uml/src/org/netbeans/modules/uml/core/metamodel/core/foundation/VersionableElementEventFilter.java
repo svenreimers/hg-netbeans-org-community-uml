@@ -49,10 +49,8 @@ import java.util.Vector;
 
 import org.netbeans.modules.uml.core.eventframework.EventFilter;
 
-/**
- * @author sumitabhk
- *
- */
+
+
 public class VersionableElementEventFilter extends EventFilter implements IVersionableElementEventFilter{
 
 	private IVersionableElement m_Element = null;
@@ -65,7 +63,8 @@ public class VersionableElementEventFilter extends EventFilter implements IVersi
 		super();
 	}
 
-	/**
+	
+/**
 	 *
 	 * Retrieves the element this filter is filtering on.
 	 *
@@ -78,7 +77,8 @@ public class VersionableElementEventFilter extends EventFilter implements IVersi
 		return m_Element;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Sets the element on this filter. Doing so also sets this filter's ID based on the XMI ID
 	 * of the passed in element.
@@ -97,7 +97,8 @@ public class VersionableElementEventFilter extends EventFilter implements IVersi
 		m_Element = value;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Validates the event that is about to be dispatched.
 	 *
@@ -130,7 +131,8 @@ public class VersionableElementEventFilter extends EventFilter implements IVersi
 		return valid;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Performs the event validation. If the element passed in matches our internal element,
 	 * the event is denied.
@@ -158,7 +160,8 @@ public class VersionableElementEventFilter extends EventFilter implements IVersi
 	}
 
 
-	/**
+	
+/**
 	 *
 	 * Retrieves the filter ID
 	 *
@@ -172,7 +175,8 @@ public class VersionableElementEventFilter extends EventFilter implements IVersi
 		return m_ID;
 	}
 	
-	/**
+	
+/**
 	 *
 	 * Sets the ID for this filter. This ID should be unique.
 	 *

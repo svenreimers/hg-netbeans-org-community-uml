@@ -73,10 +73,8 @@ import org.netbeans.modules.uml.drawingarea.persistence.PersistenceUtil;
 import org.netbeans.modules.uml.drawingarea.ui.addins.diagramcreator.SQDDiagramEngineExtension;
 import org.openide.util.Lookup;
 
-/**
- *
- * @author Jyothi
- */
+
+
 public abstract class UMLEdgeWidget extends ConnectionWidget implements DiagramEdgeWriter, DiagramEdgeReader, UMLWidget
 {
 
@@ -307,7 +305,8 @@ public abstract class UMLEdgeWidget extends ConnectionWidget implements DiagramE
     }
     abstract public void initialize(IPresentationElement element);
 
-    /**
+    
+/**
      * Fix for 148994 - workaround for 6755974. Override of ConnectionWidget.paintWidget() 
      * to paint in "scaled out" mode.
      * Paints the connection widget (the path, the anchor shapes, the control points, the end points).
@@ -482,7 +481,8 @@ public abstract class UMLEdgeWidget extends ConnectionWidget implements DiagramE
     }
 
 
-    /**
+    
+/**
      * Returns the rotation of the source anchor shape.
      * @return the source anchor shape rotation
      */
@@ -494,7 +494,8 @@ public abstract class UMLEdgeWidget extends ConnectionWidget implements DiagramE
         return Math.atan2 (point2.y - point1.y, point2.x - point1.x);
     }
 
-    /**
+    
+/**
      * Returns the rotation of the target anchor shape.
      * @return the target anchor shape rotation
      */

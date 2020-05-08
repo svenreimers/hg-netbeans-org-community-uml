@@ -42,16 +42,12 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : IOperationCollectionBehavior.java
- * Created on : Oct 29, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpcomponent;
 
-/**
- * @author Aztec
- */
+
+
 public interface IOperationCollectionBehavior
 {
     public void setAbstractOnly(boolean absOnly);

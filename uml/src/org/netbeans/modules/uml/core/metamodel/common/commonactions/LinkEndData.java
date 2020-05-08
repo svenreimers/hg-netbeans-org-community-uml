@@ -42,11 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : LinkEndData.java
- * Created on : Sep 18, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.metamodel.common.commonactions;
 
 import org.dom4j.Document;
@@ -57,13 +54,13 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.Element;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.ElementCollector;
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAssociationEnd;
 
-/**
- * @author Aztec
- */
+
+
 public class LinkEndData extends Element implements ILinkEndData
 {
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactions.ILinkEndData#getEnd()
      */
     public IAssociationEnd getEnd()
@@ -72,7 +69,8 @@ public class LinkEndData extends Element implements ILinkEndData
             .retrieveSingleElementWithAttrID(this, "end", IAssociationEnd.class);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactions.ILinkEndData#getValue()
      */
     public IInputPin getValue()
@@ -81,7 +79,8 @@ public class LinkEndData extends Element implements ILinkEndData
             .retrieveSingleElementWithAttrID(this, "value", IInputPin.class);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactions.ILinkEndData#setEnd(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAssociationEnd)
      */
     public void setEnd(IAssociationEnd pEnd)
@@ -89,7 +88,8 @@ public class LinkEndData extends Element implements ILinkEndData
         addElementByID(pEnd, "end");
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      */
     public void setValue(IInputPin pPin)
     {

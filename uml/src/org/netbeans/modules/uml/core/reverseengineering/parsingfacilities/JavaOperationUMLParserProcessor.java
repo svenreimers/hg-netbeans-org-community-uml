@@ -68,7 +68,8 @@ public class JavaOperationUMLParserProcessor
             ITokenFilter,
             IOperationParserOptionsHandler
 {
-    /**
+    
+/**
      * ProcessState determines if a state is to be filtered or not.
      * 
      * @param stateName [in] The name of the state.
@@ -79,7 +80,8 @@ public class JavaOperationUMLParserProcessor
         return true;
     }
 
-    /**
+    
+/**
      * The OnBeginState event is fired when the state of the parser has changed.
      * A new state can begin while still in a state."
      * 
@@ -92,7 +94,8 @@ public class JavaOperationUMLParserProcessor
         addStateHandler(stateName, language);
     }
 
-    /**
+    
+/**
      * The OnEndState event will be fired when exiting a state.
      * 
      * @param stateName [in] The name of the state.
@@ -182,7 +185,8 @@ public class JavaOperationUMLParserProcessor
         }
     }
     
-    /**
+    
+/**
      * Removes the current state from the controlled list of states.
      *
      * @param stateName [in] The name of the state.
@@ -211,7 +215,8 @@ public class JavaOperationUMLParserProcessor
         return res.substring(dot + 1);
     }
     
-    /**
+    
+/**
      * Removes all controlled states.  The removed states will be 
      * notified.
      */
@@ -229,7 +234,8 @@ public class JavaOperationUMLParserProcessor
         }
     }
     
-    /**
+    
+/**
      * Process the token that has been discovered by the parser.
      * 
      * pToken [in] The token to be processed.
@@ -258,7 +264,8 @@ public class JavaOperationUMLParserProcessor
             echo(getIndent(indent) + "<token value="+token.getValue() +" handler=NO_STATE_HANDLER/>" );
     }
 
-    /**
+    
+/**
      * The token filter implementation.  Determines if the specified
      * token should be processed by the token listener.
      *
@@ -273,7 +280,8 @@ public class JavaOperationUMLParserProcessor
         return true;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.IOperationParserOptionsHandler#setOptions(org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.IOpParserOptions)
      */
     public void setOptions(IOpParserOptions options)
@@ -281,7 +289,8 @@ public class JavaOperationUMLParserProcessor
         m_ParserOptions = options;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.IOperationParserOptionsHandler#getOptions()
      */
     public IOpParserOptions getOptions()

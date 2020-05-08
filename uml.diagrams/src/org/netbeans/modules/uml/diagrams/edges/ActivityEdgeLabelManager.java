@@ -61,10 +61,8 @@ import org.netbeans.modules.uml.drawingarea.ModelElementChangedKind;
 import org.netbeans.modules.uml.drawingarea.actions.ToggleLabelAction;
 import org.openide.util.NbBundle;
 
-/**
- *
- * @author Thuy
- */
+
+
 public class ActivityEdgeLabelManager extends BasicUMLLabelManager
 {
     ResourceBundle bundle = NbBundle.getBundle(ActivityEdgeLabelManager.class);

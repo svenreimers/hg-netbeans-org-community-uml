@@ -496,7 +496,8 @@ public class DocumentationPane extends JPanel
         return getTextPane().getText().substring(tagStartClose, tagEndOpen);
     }
     
-    /** utility to get the document text contained within the BODY tags
+    
+/** utility to get the document text contained within the BODY tags
      */
     public String getDocumentBody()
     {
@@ -560,7 +561,8 @@ public class DocumentationPane extends JPanel
         }
     }
     
-    /** Class for implementing Redo as an autonomous action
+    
+/** Class for implementing Redo as an autonomous action
      */
     class RedoAction extends AbstractAction
     {
@@ -603,7 +605,8 @@ public class DocumentationPane extends JPanel
     }
     
     
-    /** custom color action to bring up standard color chooser
+    
+/** custom color action to bring up standard color chooser
      */
     class ColorAction extends StyledEditorKit.ForegroundAction
     {

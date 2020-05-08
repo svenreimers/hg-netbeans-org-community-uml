@@ -42,11 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : InterruptibleActivityRegion.java
- * Created on : Sep 17, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.metamodel.common.commonactivities;
 
 import org.dom4j.Document;
@@ -54,14 +51,14 @@ import org.dom4j.Node;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.ElementCollector;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
-/**
- * @author Aztec
- */
+
+
 public class InterruptibleActivityRegion extends ActivityGroup
                                          implements IInterruptibleActivityRegion
 {
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactivities.IInterruptibleActivityRegion#addInterruptingEdge(org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivityEdge)
      */
     public void addInterruptingEdge(IActivityEdge pEdge)
@@ -69,7 +66,8 @@ public class InterruptibleActivityRegion extends ActivityGroup
         addElementByID(pEdge, "interruptingEdge");
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactivities.IInterruptibleActivityRegion#getInterruptingEdges()
      */
     public ETList<IActivityEdge> getInterruptingEdges()
@@ -78,7 +76,8 @@ public class InterruptibleActivityRegion extends ActivityGroup
             .retrieveElementCollectionWithAttrIDs(this, "interruptingEdge", IActivityEdge.class);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactivities.IInterruptibleActivityRegion#removeInterruptingEdge(org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivityEdge)
      */
     public void removeInterruptingEdge(IActivityEdge pEdge)

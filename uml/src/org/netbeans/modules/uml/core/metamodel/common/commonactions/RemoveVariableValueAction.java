@@ -42,19 +42,15 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : RemoveVariableValueAction.java
- * Created on : Sep 18, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.metamodel.common.commonactions;
 
 import org.dom4j.Document;
 import org.dom4j.Node;
 
-/**
- * @author Aztec
- */
+
+
 public class RemoveVariableValueAction
     extends WriteVariableAction
     implements IRemoveVariableValueAction

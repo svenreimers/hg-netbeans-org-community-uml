@@ -61,10 +61,8 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 import org.netbeans.modules.uml.diagrams.nodes.sqd.LifelineWidget;
 import org.netbeans.modules.uml.drawingarea.util.Util;
 
-/**
- *
- * @author sp153251
- */
+
+
 public class DestroyLifelineAction extends WidgetAction.LockedAdapter {
 
     private LifelineWidget lifeline;

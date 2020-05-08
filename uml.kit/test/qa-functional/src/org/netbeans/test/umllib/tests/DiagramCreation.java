@@ -71,11 +71,8 @@ import org.netbeans.test.umllib.NewPackageWizardOperator;
 import org.netbeans.test.umllib.exceptions.UMLCommonException;
 import org.netbeans.test.umllib.testcases.UMLTestCase;
 
-/**
- *
- * @author psb
- * @spec UML/ComponentDiagram.xml
- */
+
+
 public abstract class DiagramCreation extends UMLTestCase {
     
     //some system properties
@@ -113,16 +110,19 @@ public abstract class DiagramCreation extends UMLTestCase {
         childClassName=childClName;
         this.elToPlace=elToPlace;
     }
-    /**
+    
+/**
      * by default all diagrams are checked with COMMENT i.e. most common element
      */
     public DiagramCreation(String name,String type,String prNm,String childClName) {
         this(name,type,prNm,childClName,ElementTypes.COMMENT,"");
     }
-   /* public DiagramCreation(String name) {
+   
+/* public DiagramCreation(String name) {
         super(name);
     }*/
-     /*public static NbTestSuite suite() {
+     
+/*public static NbTestSuite suite() {
         NbTestSuite suite = new NbTestSuite(org.netbeans.test.umllib.tests.DiagramCreation.class);
         return suite;
     }*/
@@ -1084,7 +1084,8 @@ public abstract class DiagramCreation extends UMLTestCase {
         assertTrue("Save all toolbar button disabled",sa.isEnabled());
     }
     //
-    /**
+    
+/**
      * It's good if it will be last for saving checks because preferences are changed by pressing Save Always
      */
     public void testSaveAllAfterCloseAll()

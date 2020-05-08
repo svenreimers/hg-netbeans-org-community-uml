@@ -62,10 +62,8 @@ import org.openide.util.Lookup;
 import org.openide.windows.TopComponent;
 
 
-/**
- *
- * @author sp153251
- */
+
+
 public class WindowStyleResizeProvider extends ResizeStrategyProvider {
     
     private ArrayList<ResizeProvider.ControlPoint> points;
@@ -75,7 +73,8 @@ public class WindowStyleResizeProvider extends ResizeStrategyProvider {
     private int resizingmodifiers;
     
     
-    /*
+    
+/*
      * 
      * all side of are active for resizing
      * @param provider
@@ -95,7 +94,8 @@ public class WindowStyleResizeProvider extends ResizeStrategyProvider {
         });
     }
     
-    /*
+    
+/*
      * 
      * 
      * @param provider
@@ -113,7 +113,8 @@ public class WindowStyleResizeProvider extends ResizeStrategyProvider {
         }
     }
     
-    /**
+    
+/**
      * Called after an user suggests a new boundary and before the suggested boundary is stored to a specified widget.
      * This allows to manipulate with a suggested boundary to perform snap-to-grid, locked-axis on any other resizing strategy.
      * @param widget the resized widget

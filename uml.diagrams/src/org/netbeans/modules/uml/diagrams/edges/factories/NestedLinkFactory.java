@@ -51,10 +51,8 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.IRelationship;
 import org.netbeans.modules.uml.core.metamodel.structure.IModel;
 import org.netbeans.modules.uml.drawingarea.palette.RelationshipFactory;
 
-/**
- *
- * @author treyspiva
- */
+
+
 public class NestedLinkFactory implements RelationshipFactory
 {
 

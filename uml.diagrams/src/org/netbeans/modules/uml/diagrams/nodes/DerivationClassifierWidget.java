@@ -58,10 +58,8 @@ import org.netbeans.modules.uml.drawingarea.palette.context.DefaultContextPalett
 import org.netbeans.modules.uml.drawingarea.view.ResourceValue;
 import org.netbeans.modules.uml.drawingarea.view.UMLNodeWidget;
 
-/**
- *
- * @author treyspiva
- */
+
+
 public class DerivationClassifierWidget extends UMLNodeWidget implements PropertyChangeListener
 {
     private UMLNameWidget nameWidget = null;

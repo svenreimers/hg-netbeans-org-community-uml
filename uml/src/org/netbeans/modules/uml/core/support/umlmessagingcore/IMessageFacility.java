@@ -46,12 +46,14 @@ package org.netbeans.modules.uml.core.support.umlmessagingcore;
 
 public interface IMessageFacility
 {
-	/**
+	
+/**
 	 * The name of this facility
 	*/
 	public String getName();
 
-	/**
+	
+/**
 	 * The name of this facility
 	*/
 	public void setName( String value );

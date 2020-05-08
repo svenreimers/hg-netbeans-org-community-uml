@@ -89,7 +89,8 @@ public class UMLParserRegistrar
             .revokeOperationDetailsSink(m_lRegistrationCookie);
     }
 
-    /**
+    
+/**
     * Retrieve the UML parser member variable
     */
     public static IUMLParser getUMLParser()
@@ -107,7 +108,8 @@ public class UMLParserRegistrar
         return cpUMLParser;
     }
 
-    /**
+    
+/**
     * Must be called to clear the UML Parser COM pointer before the DLL 
     * is unloaded
     */
@@ -116,7 +118,8 @@ public class UMLParserRegistrar
         // CLEAN, causes a crash?   m_pUMLParser = NULL;
     }
 
-    /**
+    
+/**
     * Gets the operation event sink
     */
     public IOperationRE getOperationRE()

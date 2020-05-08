@@ -49,6 +49,7 @@ import org.netbeans.modules.uml.core.AbstractUMLTestCase;
 import org.dom4j.Document;
 import org.dom4j.Element;
 import org.netbeans.modules.uml.core.support.umlsupport.XMLManip;
+
 /**
  * Test cases for MethodDetailParserData.
  */
@@ -61,7 +62,8 @@ public class MethodDetailParserDataTestCase extends AbstractUMLTestCase
 
     private IREMethodDetailData mdpd;
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see junit.framework.TestCase#setUp()
      */
     protected void setUp() throws Exception

@@ -56,10 +56,8 @@ import org.netbeans.api.visual.widget.LayerWidget;
 import org.netbeans.api.visual.widget.Widget;
 import org.netbeans.modules.uml.drawingarea.view.DesignerScene;
 
-/**
- *
- * @author krichard
- */
+
+
 public class ContainerAgnosticLayout<N, E> implements GraphLayoutListener {
 
     private GraphScene gScene = null;

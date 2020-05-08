@@ -49,102 +49,122 @@ import org.dom4j.Element;
 
 public interface IProductArchiveElement
 {
-	/**
+	
+/**
 	 * The name of the element.
 	*/
 	public String getID();
 
-	/**
+	
+/**
 	 * Creates a sub element.
 	*/
 	public IProductArchiveElement createElement( String sID );
 
-	/**
+	
+/**
 	 * Removes an attribute.
 	*/
 	public void removeAttribute( String sID );
 
-	/**
+	
+/**
 	 * Creates an attribute
 	*/
 	public IProductArchiveAttribute addAttribute( String sName, Object pVal );
 
-	/**
+	
+/**
 	 * Creates an attribute
 	*/
 	public IProductArchiveAttribute addAttributeLong( String sName, long nVal );
 
-	/**
+	
+/**
 	 * Creates an attribute
 	*/
 	public IProductArchiveAttribute addAttributeBool( String sName, boolean bVal );
 
-	/**
+	
+/**
 	 * Creates an attribute
 	*/
 	public IProductArchiveAttribute addAttributeDouble( String sName, double fVal );
 
-	/**
+	
+/**
 	 * Creates an attribute
 	*/
 	public IProductArchiveAttribute addAttributeString( String sName, String sVal );
 
-	/**
+	
+/**
 	 * Gets all the sub elements of this element
 	*/
 	public IProductArchiveElement[] getElements();
 
-	/**
+	
+/**
 	 * Gets all the attributes of this element
 	*/
 	public IProductArchiveAttribute[] getAttributes();
 
-	/**
+	
+/**
 	 * Gets an attribute by name.
 	*/
 	public IProductArchiveAttribute getAttribute( String sName );
 
-	/**
+	
+/**
 	 * Gets an element by name.
 	*/
 	public IProductArchiveElement getElement( String sID );
 
-	/**
+	
+/**
 	 * Gets the IXMLDOMElement that matches this node.
 	*/
 	public Element getDOMElement();
 
-	/**
+	
+/**
 	 * Gets the IXMLDOMElement that matches this node.
 	*/
 	public void setDOMElement( Element value );
 
-	/**
+	
+/**
 	 * Gets an attribute value by name. 
 	*/
 	public long getAttributeLong( String sName);
 
-	/**
+	
+/**
 	 * Gets an attribute value by name.
 	*/
 	public String getAttributeString( String sName );
 
-   /**
+   
+/**
     * Gets an attribute value by name.
    */
    public boolean getAttributeBool( String sName );
 
-   /**
+   
+/**
     * Gets an attribute value by name.
    */
    public boolean getAttributeBool( String sName, boolean defaultValue );
 
-	/**
+	
+/**
 	 * Gets an attribute value by name. 
 	*/
 	public double getAttributeDouble( String sName );
    
-   /**
+   
+/**
     * Determines if the element has been deleted from the archive table.
     * 
     * @return true if the element has been deleted.

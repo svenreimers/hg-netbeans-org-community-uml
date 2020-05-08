@@ -53,16 +53,15 @@ import org.netbeans.modules.uml.ui.support.contextmenusupport.IProductContextMen
 import org.netbeans.modules.uml.ui.support.contextmenusupport.IProductContextMenuItem;
 import org.netbeans.modules.uml.ui.support.contextmenusupport.IProductContextMenuSelectionHandler;
 
-/**
- * @author sumitabhk
- *
- */
+
+
 public class AddInEventSink implements IProjectTreeContextMenuEventsSink,
                                        IProductContextMenuSelectionHandler
 {
 	private DependencyAnalyzerAddIn m_Parent = null;
 
-	/**
+	
+/**
 	 * 
 	 */
 	public AddInEventSink()
@@ -70,7 +69,8 @@ public class AddInEventSink implements IProjectTreeContextMenuEventsSink,
 		super();
 	}
 
-	/**
+	
+/**
 	 * Fired when the context menu is about to be displayed.
 	 */
 	public void onProjectTreeContextMenuPrepare(IProjectTreeControl pParentControl, IProductContextMenu contextMenu, IResultCell cell)
@@ -82,7 +82,8 @@ public class AddInEventSink implements IProjectTreeContextMenuEventsSink,
 		
 	}
 
-	/**
+	
+/**
 	 * Fired when the context menu has been populated.
 	 * Use this to override the implementation of the buttons.
 	 */
@@ -91,7 +92,8 @@ public class AddInEventSink implements IProjectTreeContextMenuEventsSink,
 		
 	}
 
-	/**
+	
+/**
 	 * Fired when someone should handle the display.
 	 */
 	public void onProjectTreeContextMenuHandleDisplay(IProjectTreeControl pParentControl, IProductContextMenu contextMenu, IResultCell cell)
@@ -99,7 +101,8 @@ public class AddInEventSink implements IProjectTreeContextMenuEventsSink,
 		
 	}
 
-	/**
+	
+/**
 	 * Fired when a context menu item has been selected.
 	 */
 	public void onProjectTreeContextMenuSelected(IProjectTreeControl pParentControl, IProductContextMenu contextMenu, IProductContextMenuItem selectedItem, IResultCell cell)
@@ -107,7 +110,8 @@ public class AddInEventSink implements IProjectTreeContextMenuEventsSink,
 		
 	}
 
-	/**
+	
+/**
 	 * Fired when the context menu is about to be displayed.
 	 */
 	public void onDrawingAreaContextMenuPrepare(IDiagram pParentDiagram, IProductContextMenu contextMenu, IResultCell cell)
@@ -119,7 +123,8 @@ public class AddInEventSink implements IProjectTreeContextMenuEventsSink,
 		
 	}
 
-	/**
+	
+/**
 	 * Fired when the context menu has been populated.
 	 * Use this to override the implementation of the buttons.
 	 */
@@ -128,7 +133,8 @@ public class AddInEventSink implements IProjectTreeContextMenuEventsSink,
 		
 	}
 
-	/**
+	
+/**
 	 * Fired when someone should handle the display.
 	 */
 	public void onDrawingAreaContextMenuHandleDisplay(IDiagram pParentDiagram, IProductContextMenu contextMenu, IResultCell cell)
@@ -136,7 +142,8 @@ public class AddInEventSink implements IProjectTreeContextMenuEventsSink,
 		
 	}
 
-	/**
+	
+/**
 	 * Fired when a context menu item has been selected.
 	 */
 	public void onDrawingAreaContextMenuSelected(IDiagram pParentDiagram, IProductContextMenu contextMenu, IProductContextMenuItem selectedItem, IResultCell cell)
@@ -144,7 +151,8 @@ public class AddInEventSink implements IProjectTreeContextMenuEventsSink,
 		
 	}
 
-	/**
+	
+/**
 	 * If an external interface handles the display of the popup menu then this is called to handle the selection event
 	 */
 	public void handleSelection(IProductContextMenu pContextMenu, IProductContextMenuItem pSelectedItem)

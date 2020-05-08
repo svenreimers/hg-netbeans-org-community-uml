@@ -50,10 +50,8 @@ import org.netbeans.modules.uml.core.metamodel.infrastructure.IRelationFactory;
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier;
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IDerivation;
 
-/**
- *
- * @author treyspiva
- */
+
+
 public class DerivationFactory extends AbstractRelationshipFactory
 {
 

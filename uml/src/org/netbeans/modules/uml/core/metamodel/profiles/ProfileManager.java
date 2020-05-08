@@ -67,14 +67,13 @@ import org.netbeans.modules.uml.core.support.umlsupport.ProductRetriever;
 import org.netbeans.modules.uml.core.support.umlsupport.StringUtilities;
 import org.netbeans.modules.uml.core.support.umlsupport.XMLManip;
 
-/**
- * @author sumitabhk
- *
- */
+
+
 public class ProfileManager 
 {
 
-	/**
+	
+/**
 	 * 
 	 */
 	public ProfileManager() 
@@ -82,7 +81,8 @@ public class ProfileManager
 		super();	
 	}
 
-	/**
+	
+/**
 	 *
 	 * Creates a new Stereotype with the given name. Dependent on preference settings, that stereotype
 	 * will be placed in a Profile that is then imported by the Project that owns context.
@@ -143,7 +143,8 @@ public class ProfileManager
 		return newStereo;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Retrieves the imported Profile from the Project, else creates one if it is not there.a
 	 *
@@ -202,7 +203,8 @@ public class ProfileManager
 		return retTriple;
 	}
 	
-	/**
+	
+/**
 	 *
 	 * Creates a new Profile that exists in its own file. Where that file is
 	 * placed is preference driven.
@@ -220,7 +222,7 @@ public class ProfileManager
                         IPreferenceManager2 prefMan = prod.getPreferenceManager();
                         if (prefMan != null) {
                             //Need to determine where to create the new Profile
-                            //kris richards - UnknownStereotypeCreate pref deleted. Set to PSK_IN_PROJECT_PROFILE
+                            
                             String prefValue = "PSK_IN_PROJECT_PROFILE";
                             String location = determineProfileLocation( proj, prod, prefValue );
                             if (location != null && location.length() > 0) {
@@ -263,7 +265,8 @@ public class ProfileManager
             return retPair;
         }
 
-	/**
+	
+/**
 	 *
 	 * Determines the location of a new Profile given the preference value passed in.
 	 *
@@ -297,7 +300,8 @@ public class ProfileManager
 		return location;
 	}
 	
-	/**
+	
+/**
 	 *
 	 * Creates a Profile object and places it in the XML document that will be created
 	 * from the fragment passed in.

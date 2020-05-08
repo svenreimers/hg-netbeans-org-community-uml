@@ -10,10 +10,8 @@
 
 package bankpack;
 
-/**
- *
- * @author Administrator
- */
+
+
 public class Platinum extends BankAccount{
     
     private static final double overdraftLimit = 2500.00;

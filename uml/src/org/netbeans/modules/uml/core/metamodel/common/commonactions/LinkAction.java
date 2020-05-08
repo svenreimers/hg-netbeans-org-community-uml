@@ -42,24 +42,21 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : LinkAction.java
- * Created on : Sep 18, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.metamodel.common.commonactions;
 
 import org.netbeans.modules.uml.core.metamodel.basic.basicactions.PrimitiveAction;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.ElementCollector;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
-/**
- * @author Aztec
- */
+
+
 public class LinkAction extends PrimitiveAction implements ILinkAction
 {
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactions.ILinkAction#addEndData(org.netbeans.modules.uml.core.metamodel.common.commonactions.ILinkEndData)
      */
     public void addEndData(ILinkEndData pEndData)
@@ -67,7 +64,8 @@ public class LinkAction extends PrimitiveAction implements ILinkAction
         addElement(pEndData);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactions.ILinkAction#getEndData()
      */
     public ETList <ILinkEndData> getEndData()
@@ -77,7 +75,8 @@ public class LinkAction extends PrimitiveAction implements ILinkAction
 
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactions.ILinkAction#removeEndData(org.netbeans.modules.uml.core.metamodel.common.commonactions.ILinkEndData)
      */
     public void removeEndData(ILinkEndData pEndData)

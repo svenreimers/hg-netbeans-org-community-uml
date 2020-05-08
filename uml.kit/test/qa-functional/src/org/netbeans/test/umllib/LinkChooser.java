@@ -43,6 +43,7 @@
  */
 
 
+
 /*
  * LinkChooser.java
  *
@@ -53,20 +54,20 @@ package org.netbeans.test.umllib;
 import org.netbeans.api.visual.widget.Widget;
 
 
-/**
- *
- * @author Alexei Mokeev
- */
+
+
 public interface LinkChooser {
     
-    /**
+    
+/**
      * 
      * @param link 
      * @return 
      */
     public boolean checkLink(Widget link);
     
-    /**
+    
+/**
      * 
      * @return 
      */

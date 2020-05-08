@@ -49,10 +49,8 @@ import org.netbeans.api.visual.action.MoveStrategy;
 import org.netbeans.api.visual.widget.Widget;
 import org.netbeans.modules.uml.diagrams.nodes.sqd.ExecutionSpecificationThinWidget;
 
-/**
- *
- * @author sp153251
- */
+
+
 public class ThinExecutionSpecificationMoveStrategy implements MoveStrategy {
 
     public ThinExecutionSpecificationMoveStrategy() {

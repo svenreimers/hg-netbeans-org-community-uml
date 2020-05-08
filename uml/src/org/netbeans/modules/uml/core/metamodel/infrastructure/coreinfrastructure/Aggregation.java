@@ -56,7 +56,8 @@ import org.netbeans.modules.uml.core.support.umlsupport.XMLManip;
 
 public class Aggregation extends Association implements IAggregation
 {
-	/**
+	
+/**
 	 * Retrieves the AssociationEnd that is the part in this Aggregation.
 	 */
 	public IAssociationEnd getPartEnd()
@@ -64,7 +65,8 @@ public class Aggregation extends Association implements IAggregation
 		return getEnd(true);
 	}
 	
-	/**
+	
+/**
 	 * Sets the passed-in end as the part side of this Aggregate.
 	 *
 	 * @param end[in] The end to play the part
@@ -74,7 +76,8 @@ public class Aggregation extends Association implements IAggregation
 		setEnd(true,end);
 	}
 	
-	/**
+	
+/**
 	 * The association end connected to the classifier specifying the aggregate.
 	 *
 	 * @param end[in] The end to play the part
@@ -84,7 +87,8 @@ public class Aggregation extends Association implements IAggregation
 		return getEnd(false);
 	}
 	
-	/**
+	
+/**
 	 * The association end connected to the classifier specifying the aggregate.
 	 *
 	 * @param end[in] The end to play the part
@@ -94,7 +98,8 @@ public class Aggregation extends Association implements IAggregation
 		setEnd(false,end);
 	}	
 	
-	/**
+	
+/**
 	 * Indicates the nature of the aggregation.  If false, the classifier at the
 	 * aggregate end represents a shared aggregate, and the instance
 	 * specified by the classifier at the part end may be contained in other aggregates.
@@ -106,7 +111,8 @@ public class Aggregation extends Association implements IAggregation
 		return super.getBooleanAttributeValue("isComposite",false); 	
 	}
 	
-	/**
+	
+/**
 	 * Indicates the nature of the aggregation.  If false, the classifier at the
 	 * aggregate end represents a shared aggregate, and the instance
 	 * specified by the classifier at the part end may be contained in other aggregates.
@@ -116,7 +122,8 @@ public class Aggregation extends Association implements IAggregation
 		super.setBooleanAttributeValue("isComposite",newValue);
 	}
 
-	/**
+	
+/**
 	 * Establishes the appropriate XML elements for this UML type.
 	 *
 	 * [in] The document where this element will reside
@@ -127,7 +134,8 @@ public class Aggregation extends Association implements IAggregation
 		super.buildNodePresence("UML:Aggregation",doc,parent);
 	}
 	
-	/**
+	
+/**
 	 *
 	 * Retrieves a particular end of this aggregation.
 	 *
@@ -157,7 +165,8 @@ public class Aggregation extends Association implements IAggregation
 		return assocEnd;		
 	}
 	
-	/**
+	
+/**
 	 *
 	 * Sets one of the ends of this Aggregation.
 	 *
@@ -181,7 +190,8 @@ public class Aggregation extends Association implements IAggregation
 		XMLManip.setAttributeValue(m_Node,attrName,id);					
 	}
 	
-	/**
+	
+/**
 	 * Makes the part end the aggregate end, and the aggregate end the part end.
 	 */
 	public void reverseEnds()
@@ -192,7 +202,8 @@ public class Aggregation extends Association implements IAggregation
 		UMLXMLManip.setAttributeValue(this,"aggregateEnd",partID);
 	}
 	
-	/**
+	
+/**
 	 * Transforms this Aggregation into an Association.
 	 */
 	public IAssociation transformToAssociation()
@@ -207,7 +218,8 @@ public class Aggregation extends Association implements IAggregation
 		return assoc;
 	}
 	
-	/**
+	
+/**
 	 * Is this end the aggregate end?
 	 *
 	 * @param pQueryEnd [in] The end to query to see if this one is the 
@@ -224,7 +236,8 @@ public class Aggregation extends Association implements IAggregation
 		return isAggregEnd;
 	}
 	
-	/**
+	
+/**
 	 * Sets the classifier that will be set as a participant on a new AssociationEnd that will be created and returned
 	 *
 	 * @param newVal[in] The Classifier
@@ -234,7 +247,8 @@ public class Aggregation extends Association implements IAggregation
 		return setEnd(false,newValue);
 	}
 	
-   /**
+   
+/**
 	*  Sets the classifier that will be set as a participant on a new AssociationEnd that will be created but not returned
 	*
 	* @param newVal[in] The classifier
@@ -244,7 +258,8 @@ public class Aggregation extends Association implements IAggregation
    	    setEnd(false,newVal);
    }
    
-   /**
+   
+/**
 	* Sets the classifier that will be placed as the participant on a new AssociationEnd that will be 
 	* created and returned on the PartEnd of this Aggregation
 	*
@@ -255,7 +270,8 @@ public class Aggregation extends Association implements IAggregation
         return setEnd(true,newVal);
    }
    
-   /**
+   
+/**
 	* Sets the classifier that will be placed as the participant on a new AssociationEnd that will be created 
  	* ( but not returned ) on the PartEnd of this Aggregation
 	*
@@ -266,7 +282,8 @@ public class Aggregation extends Association implements IAggregation
 		setEnd(true,newVal);
    }   
    
-   /**
+   
+/**
 	* Sets the appropriate end on this Aggregation based on parameters passed in.
 	*
 	* @param partEnd[in]      true if the end is to be placed on the part end, else false to be placed

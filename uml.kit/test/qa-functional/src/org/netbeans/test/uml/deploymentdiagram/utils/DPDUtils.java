@@ -53,9 +53,8 @@ import org.netbeans.test.umllib.NewDiagramWizardOperator;
 import org.netbeans.test.umllib.Utils;
 import org.netbeans.test.umllib.util.PopupConstants;
 
-/**
- * @author yaa
- */
+
+
 public class DPDUtils {
     
     public DPDUtils() {

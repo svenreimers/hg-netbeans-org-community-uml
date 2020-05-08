@@ -46,6 +46,7 @@
 package org.netbeans.modules.uml.core.metamodel.common.commonactions;
 import org.netbeans.modules.uml.core.AbstractUMLTestCase;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.FactoryRetriever;
+
 /**
  * Test cases for CallBehaviorAction.
  */
@@ -58,7 +59,8 @@ public class CallBehaviorActionTestCase extends AbstractUMLTestCase
 
     private ICallBehaviorAction act;
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see junit.framework.TestCase#setUp()
      */
     protected void setUp() throws Exception
@@ -69,7 +71,8 @@ public class CallBehaviorActionTestCase extends AbstractUMLTestCase
         project.addElement(act);
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see junit.framework.TestCase#tearDown()
      */
     protected void tearDown() throws Exception

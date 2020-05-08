@@ -45,10 +45,8 @@
 
 package org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework;
 
-/**
- * @author sumitabhk
- *
- */
+
+
 public class SyntaxToken implements ISyntaxToken
 {
 	private String m_Category = null;
@@ -56,7 +54,8 @@ public class SyntaxToken implements ISyntaxToken
 	private String m_Name = null;
 	private String m_Type = null;
 
-	/**
+	
+/**
 	 * Gets the name of the syntax element.
 	 *
 	 * @param pVal [out] The name of the token.
@@ -66,7 +65,8 @@ public class SyntaxToken implements ISyntaxToken
 		return m_Name;
 	}
 
-	/**
+	
+/**
 	 * Sets the name of the syntax element.
 	 *
 	 * @param newVal [in] The name of the token.
@@ -76,7 +76,8 @@ public class SyntaxToken implements ISyntaxToken
 		m_Name = newVal;
 	}
 
-	/**
+	
+/**
 	 * Retrieves the type of the token.
 	 * 
 	 * @param pVal [out] The token type.
@@ -86,7 +87,8 @@ public class SyntaxToken implements ISyntaxToken
 		return m_Kind;
 	}
 
-	/**
+	
+/**
 	 * Sets the type of the token.
 	 * 
 	 * @param newVal [int] The token type.
@@ -96,7 +98,8 @@ public class SyntaxToken implements ISyntaxToken
 		m_Kind = newVal;
 	}
 
-	/**
+	
+/**
 	 * Gets the category that defines the token type.  The category 
 	 * can be used to further define the token type.
 	 *
@@ -107,7 +110,8 @@ public class SyntaxToken implements ISyntaxToken
 		return m_Category;
 	}
 
-	/**
+	
+/**
 	 * Sets the category that defines the token type.  The category 
 	 * can be used to further define the token type.
 	 *
@@ -118,7 +122,8 @@ public class SyntaxToken implements ISyntaxToken
 		m_Category = newVal;
 	}
 
-	/**
+	
+/**
 	 * Gets the type of the syntax token.
 	 *
 	 * @param pVal [out] The token's type.
@@ -128,7 +133,8 @@ public class SyntaxToken implements ISyntaxToken
 		return m_Type;
 	}
 
-	/**
+	
+/**
 	 * Sets the type of the syntax token.
 	 *
 	 * @param newVal [in] The token's type.

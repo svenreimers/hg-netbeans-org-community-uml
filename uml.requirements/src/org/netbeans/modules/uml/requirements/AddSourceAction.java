@@ -42,6 +42,7 @@
  * made subject to such option by the copyright holder.
  */
 
+
 /*
  * AddSourceAction.java
  *
@@ -58,10 +59,8 @@ import java.awt.event.ActionEvent;
 import javax.swing.AbstractAction;
 import org.openide.util.NbBundle;
 
-/**
- *
- * @author  Trey Spiva
- */
+
+
 public class AddSourceAction extends AbstractAction
 {
    /** Creates a new instance of AddSourceAction */

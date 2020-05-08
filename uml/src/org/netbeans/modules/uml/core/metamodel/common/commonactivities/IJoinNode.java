@@ -48,12 +48,14 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.IValueSpecificati
 
 public interface IJoinNode extends IControlNode
 {
-	/**
+	
+/**
 	 * property JoinSpec
 	*/
 	public IValueSpecification getJoinSpec();
 
-	/**
+	
+/**
 	 * property JoinSpec
 	*/
 	public void setJoinSpec( IValueSpecification value );

@@ -54,10 +54,8 @@ import org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeItem;
 import org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeRelElement;
 import org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeWorkspace;
 
-/**
- * 
- * @author Trey Spiva
- */
+
+
 public interface ProjectTreeNodeFactory
 {
 
@@ -65,22 +63,26 @@ public interface ProjectTreeNodeFactory
    
    public ITreeFolder createFolderNode();
 
-   /**
+   
+/**
     * @return
     */
    public ITreeItem createProjectNode();
 
-   /**
+   
+/**
     * @return
     */
    public ITreeElement createElementNode();
 
-   /**
+   
+/**
     * @return
     */
    public ITreeRelElement createRelationshipNode();
 
-   /**
+   
+/**
     * @return
     */
    public ITreeWorkspace createWorkspaceNode();

@@ -53,10 +53,8 @@ import java.util.ArrayList;
 import org.netbeans.api.visual.layout.Layout;
 import org.netbeans.api.visual.widget.Widget;
 
-/**
- *
- * @author treyspiva
- */
+
+
 public class PolygonLayout implements Layout
 {
     

@@ -48,9 +48,8 @@ package org.netbeans.modules.uml.core.metamodel.core.foundation;
 import org.netbeans.modules.uml.common.ETSystem;
 import org.netbeans.modules.uml.core.support.umlsupport.IResultCell;
 
-/**
- * @author sumitabhk
- */
+
+
 public class ElementModifiedEventsSink implements IElementModifiedEventsSink{
 
 	/**
@@ -60,14 +59,16 @@ public class ElementModifiedEventsSink implements IElementModifiedEventsSink{
 		super();
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IElementModifiedEventsSink#onElementPreModified(org.netbeans.modules.uml.core.metamodel.core.foundation.IVersionableElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onElementPreModified(IVersionableElement element, IResultCell cell) {
 		ETSystem.out.println("Got onElementPreModified");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IElementModifiedEventsSink#onElementModified(org.netbeans.modules.uml.core.metamodel.core.foundation.IVersionableElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onElementModified(IVersionableElement element, IResultCell cell) {

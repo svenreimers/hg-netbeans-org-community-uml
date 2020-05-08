@@ -48,10 +48,8 @@ package org.netbeans.modules.uml.ui.swing.plaf;
 
 import javax.swing.plaf.ButtonUI;
 
-/**
- *
- * @author Trey Spiva
- */
+
+
 public class PullDownButtonUI extends ButtonUI
 {
 

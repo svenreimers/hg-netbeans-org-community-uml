@@ -61,7 +61,8 @@ public class Increment extends DirectedRelationship implements IIncrement
 	{
 		super();
 	}
-	/**
+	
+/**
 	 * property PartialClassifier
 	*/
 	public IClassifier getPartialClassifier()
@@ -70,7 +71,8 @@ public class Increment extends DirectedRelationship implements IIncrement
 		return collector.retrieveSingleElementWithAttrID(this,"partialClassifier", IClassifier.class);					
 	}
 
-	/**
+	
+/**
 	 * property PartialClassifier
 	*/
 	public void setPartialClassifier( IClassifier classifier )
@@ -117,7 +119,8 @@ public class Increment extends DirectedRelationship implements IIncrement
         }				
 	}
 
-	/**
+	
+/**
 	 * property OtherPartialClassifier
 	*/
 	public IClassifier getOtherPartialClassifier()
@@ -126,7 +129,8 @@ public class Increment extends DirectedRelationship implements IIncrement
 		return collector.retrieveSingleElementWithAttrID(this,"otherPartialClassifier", IClassifier.class);			
 	}
 
-	/**
+	
+/**
 	 * property OtherPartialClassifier
 	*/
 	public void setOtherPartialClassifier( IClassifier classifier )
@@ -142,7 +146,8 @@ public class Increment extends DirectedRelationship implements IIncrement
 			//throw exception
 		}		
 	}
-	/**
+	
+/**
 	 * Establishes the appropriate XML elements for this UML type.
 	 *
 	 * [in] The document where this element will reside

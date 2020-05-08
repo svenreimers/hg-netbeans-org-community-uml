@@ -47,10 +47,8 @@ import javax.swing.table.DefaultTableModel;
 
 import org.openide.util.NbBundle;
 
-/**
- *
- * @author Craig Conover, craig.conover@sun.com
- */
+
+
 public class TemplateTableModel extends DefaultTableModel
 {
     public static final int NUM_COLS = 4;

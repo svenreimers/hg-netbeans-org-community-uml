@@ -49,13 +49,13 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.ElementCollector;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.IValueSpecification;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
-/**
- * @author Aztec
- */
+
+
 public class PrimitiveAction extends Action implements IPrimitiveAction
 {
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.basic.basicactions.IPrimitiveAction#addArgument(org.netbeans.modules.uml.core.metamodel.core.foundation.IValueSpecification)
      */
     public void addArgument(IValueSpecification valueSpec)
@@ -63,7 +63,8 @@ public class PrimitiveAction extends Action implements IPrimitiveAction
         addInput(valueSpec);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.basic.basicactions.IPrimitiveAction#getArguments()
      */
     public ETList <IValueSpecification> getArguments()
@@ -71,7 +72,8 @@ public class PrimitiveAction extends Action implements IPrimitiveAction
         return getInputs();
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.basic.basicactions.IPrimitiveAction#getTarget()
      */
     public IValueSpecification getTarget()
@@ -80,7 +82,8 @@ public class PrimitiveAction extends Action implements IPrimitiveAction
         return col.retrieveSingleElement(this, "UML:PrimitiveAction.target/*", IValueSpecification.class);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.basic.basicactions.IPrimitiveAction#removeArgument(org.netbeans.modules.uml.core.metamodel.core.foundation.IValueSpecification)
      */
     public void removeArgument(IValueSpecification valueSpec)
@@ -88,7 +91,8 @@ public class PrimitiveAction extends Action implements IPrimitiveAction
         removeInput(valueSpec);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.basic.basicactions.IPrimitiveAction#setTarget(org.netbeans.modules.uml.core.metamodel.core.foundation.IValueSpecification)
      */
     public void setTarget(IValueSpecification valueSpec)

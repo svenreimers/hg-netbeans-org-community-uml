@@ -43,6 +43,7 @@
  */
 
 
+
 /*
  * DefaultType.java
  *
@@ -53,10 +54,8 @@
 package org.netbeans.test.umllib.values;
 
 
-/**
- *
- * @author Alexandr Scherbatiy
- */
+
+
 public enum DefaultType implements Type {
 
     NONE(ValueConstant.TYPE_NONE),               // for Constructors

@@ -63,10 +63,8 @@ import org.netbeans.api.project.Sources;
 import org.openide.util.Lookup;
 
 
-/** Handles adding, removing, reordering of source roots.
- *
- * @author Mike Frisino
- */
+
+
 public class JavaSourceRootsUI
 {
     
@@ -76,7 +74,8 @@ public class JavaSourceRootsUI
     public static final int COL_SOURCE_GROUP_DISPLAY_NAME = 2;
     
     
-    /*
+    
+/*
      * MCF
      * ths version can be called from wizards when we have not yet constructed
      * the uml project and therefore there is no pre-existing project properties

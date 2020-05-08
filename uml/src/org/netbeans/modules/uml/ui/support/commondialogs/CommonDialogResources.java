@@ -48,10 +48,8 @@ package org.netbeans.modules.uml.ui.support.commondialogs;
 import java.util.MissingResourceException;
 import java.util.ResourceBundle;
 
-/**
- *
- * @author Trey Spiva
- */
+
+
 public class CommonDialogResources
 {
 
@@ -67,7 +65,8 @@ public class CommonDialogResources
 
       // TODO Auto-generated constructor stub
    }
-   /**
+   
+/**
     * @param key
     * @return
     */

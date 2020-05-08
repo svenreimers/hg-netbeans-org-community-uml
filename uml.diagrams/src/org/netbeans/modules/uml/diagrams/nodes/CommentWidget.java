@@ -69,10 +69,8 @@ import org.netbeans.modules.uml.drawingarea.view.ResourceValue;
 import org.netbeans.modules.uml.drawingarea.view.UMLNodeWidget;
 import org.openide.util.NbBundle;
 
-/**
- *
- * @author sp153251
- */
+
+
 public class CommentWidget extends UMLNodeWidget implements PropertyChangeListener
 {
     private MultilineLabelWidget bodyLabel = null;

@@ -43,11 +43,8 @@
  */
 
 
-/*
- * File       : PackageStateHandler.java
- * Created on : Dec 12, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.statehandlers;
 
 import org.dom4j.Node;
@@ -59,9 +56,8 @@ import org.netbeans.modules.uml.core.reverseengineering.reframework.PackageEvent
 import org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ITokenDescriptor;
 import org.netbeans.modules.uml.core.support.umlsupport.XMLManip;
 
-/**
- * @author Aztec
- */
+
+
 public class PackageStateHandler extends TopLevelStateHandler
 {
     private Identifier m_PackageName = new Identifier(); 

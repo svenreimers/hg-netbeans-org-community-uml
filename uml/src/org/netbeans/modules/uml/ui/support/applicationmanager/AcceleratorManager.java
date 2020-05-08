@@ -56,18 +56,16 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 import org.netbeans.modules.uml.core.support.umlutils.ETArrayList;
 import org.netbeans.modules.uml.common.generics.ETPairT;
 
-/**
- * @author sumitabhk
- *
- *
- */
+
+
 public class AcceleratorManager implements IAcceleratorManager
 {
 	protected ETList<ETPairT<JComponent, ETList<String> > > m_AcceleratorTable = new ETArrayList<ETPairT<JComponent, ETList<String> > >();
 	protected ETList<ETPairT<JComponent, ETList<String> > > m_NoFocusAcceleratorTable = new ETArrayList<ETPairT<JComponent, ETList<String> > >();
 	protected ETList<ETPairT<IAcceleratorListener, ETList<String> > >m_AcceleratorListenerTable = new ETArrayList<ETPairT<IAcceleratorListener, ETList<String> > >();
 
-	/**
+	
+/**
 	 * 
 	 */
 	public AcceleratorManager()
@@ -168,7 +166,8 @@ public class AcceleratorManager implements IAcceleratorManager
 		return false;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.support.applicationmanager.IAcceleratorManager#setHandled(boolean)
 	 */
 	public void setHandled(boolean newVal) {
@@ -176,7 +175,8 @@ public class AcceleratorManager implements IAcceleratorManager
 		
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.support.applicationmanager.IAcceleratorManager#getHandled()
 	 */
 	public boolean getHandled() {

@@ -60,10 +60,8 @@ import org.netbeans.modules.uml.core.support.umlutils.IPropertyElement;
 import org.netbeans.modules.uml.core.support.umlutils.IPropertyElementManager;
 import org.netbeans.modules.uml.ui.support.ProductHelper;
 
-/**
- * @author sumitabhk
- *
- */
+
+
 public class EditControlField implements IEditControlField
 {
 	// temporary, contains the name of the property definition we wrap
@@ -112,7 +110,8 @@ public class EditControlField implements IEditControlField
 	private int /*TextFieldEditKind*/ m_EditKind = 0;
 
 	
-	/**
+	
+/**
 	 * 
 	 */
 	public EditControlField()
@@ -120,7 +119,8 @@ public class EditControlField implements IEditControlField
 		super();
 	}
 
-	/**
+	
+/**
 	 * Returns the full text contained by this TextField.
 	 *
 	 * @param[out] pVal The text
@@ -141,7 +141,8 @@ public class EditControlField implements IEditControlField
 		return retText;
 	}
 
-	/**
+	
+/**
 	 * Sets the text for this textfield.
 	 *
 	 * @param[in] newVal The new text string
@@ -162,7 +163,8 @@ public class EditControlField implements IEditControlField
 		setFieldPos( m_FieldStartPos );
 	}
 
-	/**
+	
+/**
 	 * Returns the font used for rendering this textfield.
 	 *
 	 * @param[out] pVal A FontDisp object describing the font
@@ -174,7 +176,8 @@ public class EditControlField implements IEditControlField
 		return m_Font;
 	}
 
-	/**
+	
+/**
 	 * Sets the font used for rendering this textfield.
 	 *
 	 * @param[in] newVal A FontDisp object describing the font
@@ -186,7 +189,8 @@ public class EditControlField implements IEditControlField
 		m_Font = newVal;
 	}
 
-	/**
+	
+/**
 	 * Is this field selected?  If so it rendered in the current selected color scheme.
 	 *
 	 * @param[out] bSelected TRUE or FALSE
@@ -198,7 +202,8 @@ public class EditControlField implements IEditControlField
 		return m_Selected;
 	}
 
-	/**
+	
+/**
 	 * Is this field selected?  If so it rendered in the current selected color scheme.
 	 *
 	 * @param[in] bSelected TRUE or FALSE
@@ -210,7 +215,8 @@ public class EditControlField implements IEditControlField
 		m_Selected = newVal;
 	}
 
-	/**
+	
+/**
 	 * Is this field Enabled?  An enabled field is not necessarily visible, depending
 	 * on its visibility rules.  However a disabled field is never visible.
 	 *
@@ -223,7 +229,8 @@ public class EditControlField implements IEditControlField
 		return m_Enabled;
 	}
 
-	/**
+	
+/**
 	 * Is this field Enabled?  An enabled field is not necessarily visible, depending
 	 * on its visibility rules.  However a disabled field is never visible.
 	 *
@@ -241,7 +248,8 @@ public class EditControlField implements IEditControlField
 		}
 	}
 
-	/**
+	
+/**
 	 * The field's text color.
 	 *
 	 * @param[out] pVal The current RGB color value
@@ -253,7 +261,8 @@ public class EditControlField implements IEditControlField
 		return m_TextColor;
 	}
 
-	/**
+	
+/**
 	 * The field's text color.
 	 *
 	 * @param[in] newVal The new RGB color value
@@ -265,7 +274,8 @@ public class EditControlField implements IEditControlField
 		m_TextColor = newVal;
 	}
 
-	/**
+	
+/**
 	 * A helper function to initialize a TextField with one 
 	 * function call. The modified flag is set to false.
 	 *
@@ -283,7 +293,8 @@ public class EditControlField implements IEditControlField
 		m_Modified = false;
 	}
 
-	/**
+	
+/**
 	 * Returns the default text.  Default text is commonly used when no user-defined 
 	 * text has been entered, for example "un-named".  The Default text is 
 	 * not displayed unless SetDefaultText() has been called.
@@ -297,7 +308,8 @@ public class EditControlField implements IEditControlField
 		return m_sDefaultText;
 	}
 
-	/**
+	
+/**
 	 * Sets the default text.  Default text is commonly used when no user-defined 
 	 * text has been entered, for example "un-named".  The Default text 
 	 * is not displayed unless SetDefaultText() has been called.
@@ -315,7 +327,8 @@ public class EditControlField implements IEditControlField
 		}
 	}
 
-	/**
+	
+/**
 	 * Is this field visible?  DOES NOT SEARCH SUB_FIELDS!
 	 *
 	 * @param[out] bVisible TRUE or FALSE
@@ -328,7 +341,8 @@ public class EditControlField implements IEditControlField
 		return isVisible();
 	}
 
-	/**
+	
+/**
 	 * Forces the field to be visible.
 	 *
 	 * @param[in] bVisible TRUE or FALSE
@@ -376,7 +390,8 @@ public class EditControlField implements IEditControlField
 		}
 	}
 
-	/**
+	
+/**
 	 * Is this field both visible and NOT deleted?  
 	 *
 	 * @param[out] bVisible TRUE or FALSE
@@ -388,7 +403,8 @@ public class EditControlField implements IEditControlField
 		return isVisibleNotDeleted();
 	}
 
-	/**
+	
+/**
 	 * Is this field visible and not deleted?  
 	 *
 	 * @return TRUE if the field should be visible
@@ -404,7 +420,8 @@ public class EditControlField implements IEditControlField
 		return bVisible;
 	}
 
-	/**
+	
+/**
 	 * Is this field visible?  Returns TRUE if
 	 *
 	 *  1. Visibility has been expressed set (via put_Visibility(TRUE))
@@ -474,7 +491,8 @@ public class EditControlField implements IEditControlField
 		return bVisible;
 	}
 
-	/**
+	
+/**
 	 * Forces the field to be visible AND sets its default text if the current field text is empty.
 	 *
 	 * @param[in] bVisible TRUE or FALSE
@@ -487,7 +505,8 @@ public class EditControlField implements IEditControlField
 		setVisible(bVisible);
 	}
 
-	/**
+	
+/**
 	 * Returns the relative offsets of the beginning and end of 
 	 * the text represented by this textfield.  The
 	 * offsets are 0-base, relative to the 1st visible 
@@ -546,7 +565,8 @@ public class EditControlField implements IEditControlField
 		return retPos;
 	}
 
-	/**
+	
+/**
 	 * Sets the relative offsets for the beginning and end of the text 
 	 * represented by this textfield.  Call this function when 
 	 * re-ordering fields, or after characters have been added or 
@@ -583,7 +603,8 @@ public class EditControlField implements IEditControlField
 		return 0;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.editcontrol.IEditControlField#getFieldPos(int)
 	 */
 	public int getFieldPos(int nStartPos)
@@ -602,7 +623,8 @@ public class EditControlField implements IEditControlField
 		return m_FieldEndPos;
 	}
 
-	/**
+	
+/**
 	 * Sets the relative offsets for the beginning and end of the text 
 	 * represented by this textfield.  Call this function when 
 	 * re-ordering fields, or after characters have been added or 
@@ -672,7 +694,8 @@ public class EditControlField implements IEditControlField
 		return 0;
 	}
 
-	/**
+	
+/**
 	 * Fills the field's value with the default text.  Some fields 
 	 * may, if empty, upon activation be asked to fill
 	 * themselves with their default value, for example 
@@ -692,7 +715,8 @@ public class EditControlField implements IEditControlField
 		return 0;
 	}
 
-	/**
+	
+/**
 	 * Returns the translator hosted by this text field. A text 
 	 * field normally wraps text, however in some cases it is
 	 * desireable for the text field to contain a translator, 
@@ -707,7 +731,8 @@ public class EditControlField implements IEditControlField
 		return m_Translator;
 	}
 
-	/**
+	
+/**
 	 * Sets the translator hosted by this text field. A text field 
 	 * normally wraps text, however in some cases it is
 	 * desireable for the text field to contain a translator, which 
@@ -722,7 +747,8 @@ public class EditControlField implements IEditControlField
 		m_Translator = pTranslator;
 	}
 
-	/**
+	
+/**
 	 * Returns the translator that contains this text field. All text fields
 	 * are owned by a translator, which provides navigation and other
 	 * services to the edit control by manipulating its fields.
@@ -736,7 +762,8 @@ public class EditControlField implements IEditControlField
 		return m_OwnerTranslator;
 	}
 
-	/**
+	
+/**
 	 * Sets the translator that contains this text field. 
 	 *
 	 * @param[in] pTranslator The Translator that owns this textfield.
@@ -748,7 +775,8 @@ public class EditControlField implements IEditControlField
 		m_OwnerTranslator = pTranslator;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Has this field's text been modified?
 	 *
@@ -771,7 +799,8 @@ public class EditControlField implements IEditControlField
 		return pModified;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Force's this field's modified status.
 	 *
@@ -791,7 +820,8 @@ public class EditControlField implements IEditControlField
 		}
 	}
 
-	/**
+	
+/**
 	 *
 	 * The value of this text field's tooltip.
 	 *
@@ -805,7 +835,8 @@ public class EditControlField implements IEditControlField
 		return m_ToolTip;
 	}
 
-	/**
+	
+/**
 	 *
 	 * The value of this text field's tooltip.
 	 *
@@ -822,7 +853,8 @@ public class EditControlField implements IEditControlField
 		}
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.editcontrol.IEditControlField#getMultiplicity()
 	 */
 	public boolean getMultiplicity()
@@ -835,7 +867,8 @@ public class EditControlField implements IEditControlField
 		return retVal;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.editcontrol.IEditControlField#setMultiplicity(boolean)
 	 */
 	public void setMultiplicity(boolean newVal)
@@ -850,7 +883,8 @@ public class EditControlField implements IEditControlField
 		}
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.editcontrol.IEditControlField#getRequired()
 	 */
 	public boolean getRequired()
@@ -858,7 +892,8 @@ public class EditControlField implements IEditControlField
 		return m_bRequired;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.editcontrol.IEditControlField#setRequired(boolean)
 	 */
 	public void setRequired(boolean newVal)
@@ -866,7 +901,8 @@ public class EditControlField implements IEditControlField
 		m_bRequired = newVal;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.editcontrol.IEditControlField#getDefault()
 	 */
 	public boolean getDefault()
@@ -874,7 +910,8 @@ public class EditControlField implements IEditControlField
 		return m_bDefault;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.editcontrol.IEditControlField#setDefault(boolean)
 	 */
 	public void setDefault(boolean newVal)
@@ -882,7 +919,8 @@ public class EditControlField implements IEditControlField
 		m_bDefault = newVal;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.editcontrol.IEditControlField#getVisibility()
 	 */
 	public String getVisibility()
@@ -890,7 +928,8 @@ public class EditControlField implements IEditControlField
 		return m_Visibility;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.editcontrol.IEditControlField#setVisibility(java.lang.String)
 	 */
 	public void setVisibility(String newVal)
@@ -898,23 +937,22 @@ public class EditControlField implements IEditControlField
 		m_Visibility = newVal;
 	}
 
-	/* (non-Javadoc)
-	 * @see org.netbeans.modules.uml.ui.controls.editcontrol.IEditControlField#getLeadSeparator()
-	 */
+	
+
 	public String getLeadSeparator()
 	{
 		return m_LeadSep;
 	}
 
-	/* (non-Javadoc)
-	 * @see org.netbeans.modules.uml.ui.controls.editcontrol.IEditControlField#setLeadSeparator(java.lang.String)
-	 */
+	
+
 	public void setLeadSeparator(String newVal)
 	{
 		m_LeadSep = newVal;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.editcontrol.IEditControlField#getTrailSeparator()
 	 */
 	public String getTrailSeparator()
@@ -922,7 +960,8 @@ public class EditControlField implements IEditControlField
 		return m_TrailSep;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.editcontrol.IEditControlField#setTrailSeparator(java.lang.String)
 	 */
 	public void setTrailSeparator(String newVal)
@@ -930,7 +969,8 @@ public class EditControlField implements IEditControlField
 		m_TrailSep = newVal;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.editcontrol.IEditControlField#getDelimitor()
 	 */
 	public String getDelimitor()
@@ -938,7 +978,8 @@ public class EditControlField implements IEditControlField
 		return m_Delimitor;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.editcontrol.IEditControlField#setDelimitor(java.lang.String)
 	 */
 	public void setDelimitor(String newVal)
@@ -946,7 +987,8 @@ public class EditControlField implements IEditControlField
 		m_Delimitor = newVal;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.editcontrol.IEditControlField#getPropertyElement()
 	 */
 	public IPropertyElement getPropertyElement()
@@ -954,7 +996,8 @@ public class EditControlField implements IEditControlField
 		return m_PropertyElement;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.editcontrol.IEditControlField#setPropertyElement(org.netbeans.modules.uml.core.support.umlutils.IPropertyElement)
 	 */
 	public void setPropertyElement(IPropertyElement pEle)
@@ -969,7 +1012,7 @@ public class EditControlField implements IEditControlField
 		// read the property element's data
 		if (pEle != null)
 		{
-			// apply formatting to this value
+			
 			IPropertyDefinition pDef = null; 
 			if (m_PropertyDefinition == null)
 			{
@@ -1065,7 +1108,8 @@ public class EditControlField implements IEditControlField
 		}
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.editcontrol.IEditControlField#setPropertyElement2(org.netbeans.modules.uml.core.support.umlutils.IPropertyElement)
 	 */
 	public void setPropertyElement2(IPropertyElement pEle)
@@ -1099,7 +1143,8 @@ public class EditControlField implements IEditControlField
 		}
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.editcontrol.IEditControlField#getPropertyDefinition()
 	 */
 	public IPropertyDefinition getPropertyDefinition()
@@ -1107,7 +1152,8 @@ public class EditControlField implements IEditControlField
 		return m_PropertyDefinition;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.editcontrol.IEditControlField#setPropertyDefinition(org.netbeans.modules.uml.core.support.umlutils.IPropertyDefinition)
 	 */
 	public void setPropertyDefinition(IPropertyDefinition pDef)
@@ -1259,7 +1305,8 @@ public class EditControlField implements IEditControlField
 		}
 	}
 
-	/**
+	
+/**
 	 *
 	 * Saves the textfield's value, if modified.
 	 *
@@ -1457,7 +1504,8 @@ public class EditControlField implements IEditControlField
 		return bCancel;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Returns a list of valid values for a list or combo type edit kind.  The list must be released by the
 	 * caller
@@ -1472,7 +1520,7 @@ public class EditControlField implements IEditControlField
 		Vector list = new Vector();
 		if (m_PropertyElement != null)
 		{
-			// apply formatting to this value 
+			
 			IPropertyDefinition pDef = m_PropertyElement.getPropertyDefinition();
 			if (pDef != null)
 			{
@@ -1496,7 +1544,8 @@ public class EditControlField implements IEditControlField
 		return list;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Determines if the character matches the leading separator, thereby becoming a "shortcut" to this field.
 	 *
@@ -1520,7 +1569,8 @@ public class EditControlField implements IEditControlField
 		return bIsSeparator;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Determines if the character matches the trailing separator, thereby becoming a "shortcut" to this field.
 	 *
@@ -1544,7 +1594,8 @@ public class EditControlField implements IEditControlField
 		return bIsSeparator;
 	}
 
-	/**
+	
+/**
 	 * Is the character a delimitor for repeating fields?
 	 *
 	 * @param nChar [in] The character to check.
@@ -1561,7 +1612,7 @@ public class EditControlField implements IEditControlField
 		if( isVisibleNotDeleted() && m_Multiplicity != 1 )
 		{
 			// could be tricky here, need to know where the caret is
-			// <leadSep><1st Field><delim><2nd Field><delim><3rd Field><trailSep>
+			
 			if (m_Delimitor != null)
 			{
 				int pos = m_Delimitor.indexOf(nChar);
@@ -1575,7 +1626,8 @@ public class EditControlField implements IEditControlField
 		return bIsDelimitor;
 	}
 
-	/**
+	
+/**
 	 * Is this field deleted?
 	 *
 	 * @param[out] bDeleted TRUE or FALSE
@@ -1587,7 +1639,8 @@ public class EditControlField implements IEditControlField
 		return m_Deleted;
 	}
 
-	/**
+	
+/**
 	 * Is this field deleted?
 	 *
 	 * @param[in] bDeleted TRUE or FALSE
@@ -1610,7 +1663,8 @@ public class EditControlField implements IEditControlField
 		}
 	}
 
-	/**
+	
+/**
 	 * Is this field and all sub-fields deleted?
 	 *
 	 * @param[out] bDeleted TRUE or FALSE
@@ -1633,7 +1687,8 @@ public class EditControlField implements IEditControlField
 		return deleted;
 	}
 
-	/**
+	
+/**
 	 * Updates the field according to its visibility and validation rules.
 	 *
 	 * @param[in] <Name Description>
@@ -1657,7 +1712,8 @@ public class EditControlField implements IEditControlField
 		return 0;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Retrieves this textfields edit kind, e.g. default (stringified text), list (a list of values) or combo
 	 *
@@ -1671,7 +1727,8 @@ public class EditControlField implements IEditControlField
 		return m_EditKind;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.editcontrol.IEditControlField#dump(java.lang.String)
 	 */
 	public long dump(String sPad)
@@ -1680,7 +1737,8 @@ public class EditControlField implements IEditControlField
 		return 0;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.editcontrol.IEditControlField#getName()
 	 */
 	public String getName()
@@ -1688,7 +1746,8 @@ public class EditControlField implements IEditControlField
 		return m_Name;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.editcontrol.IEditControlField#checkInertSeparator(int)
 	 */
 	public boolean checkInertSeparator(int nChar, int absolutePosition)

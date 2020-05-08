@@ -50,15 +50,14 @@ import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifierTransformEventsSink;
 import org.netbeans.modules.uml.core.support.umlsupport.IResultCell;
 
-/**
- *
- * @author Trey Spiva
- */
+
+
 public class ClassifierTransformEventsAdapter
    implements IClassifierTransformEventsSink
 {
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     */
    public void onPreTransform(
       IClassifier classifier,
@@ -68,7 +67,8 @@ public class ClassifierTransformEventsAdapter
       // TODO Auto-generated method stub
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     */
    public void onTransformed(IClassifier classifier, IResultCell cell)
    {

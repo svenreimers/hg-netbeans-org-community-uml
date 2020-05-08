@@ -48,22 +48,26 @@ import org.netbeans.modules.uml.core.support.umlsupport.IResultCell;
 
 public interface IStereotypeEventsSink
 {
-	/**
+	
+/**
 	 * Fired whenever a a stereotype is about to be applied to the passed in Element.
 	*/
 	public void onPreStereotypeApplied( Object pStereotype, IElement element, IResultCell cell );
 
-	/**
+	
+/**
 	 * Fired right after a stereotype was applied to the passed in element.
 	*/
 	public void onStereotypeApplied( Object pStereotype, IElement element, IResultCell cell );
 
-	/**
+	
+/**
 	 * Fired before a stereotype is deleted.
 	*/
 	public void onPreStereotypeDeleted( Object pStereotype, IElement element, IResultCell cell );
 
-	/**
+	
+/**
 	 * Fired after a stereotype has been deleted.
 	*/
 	public void onStereotypeDeleted( Object pStereotype, IElement element, IResultCell cell );

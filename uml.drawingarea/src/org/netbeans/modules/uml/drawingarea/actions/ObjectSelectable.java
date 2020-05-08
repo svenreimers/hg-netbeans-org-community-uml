@@ -45,10 +45,8 @@ import java.util.Collections;
 import org.netbeans.api.visual.model.ObjectScene;
 import org.netbeans.api.visual.widget.Widget;
 
-/**
- *
- * @author treyspiva
- */
+
+
 public class ObjectSelectable implements Selectable
 {
 

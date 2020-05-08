@@ -45,11 +45,8 @@
 
 package org.netbeans.modules.uml.ui.support.applicationmanager;
 
-/**
- * @author josephg
- *
- *
- */
+
+
 public class ConnectedNode implements IConnectedNode {
     // TODO: meteora
 //	protected INodePresentation m_NodeAtOtherEnd = null;

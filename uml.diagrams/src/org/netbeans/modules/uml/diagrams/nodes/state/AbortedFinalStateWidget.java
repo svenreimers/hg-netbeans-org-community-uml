@@ -45,10 +45,8 @@ import org.netbeans.api.visual.widget.Scene;
 import org.netbeans.modules.uml.diagrams.nodes.activity.FlowFinalNodeWidget;
 import org.netbeans.modules.uml.drawingarea.view.UMLWidget;
 
-/**
- *
- * @author Sheryl Su
- */
+
+
 public class AbortedFinalStateWidget extends FlowFinalNodeWidget
 {
 

@@ -45,10 +45,8 @@ package org.netbeans.modules.uml.drawingarea.persistence.data;
 
 import java.awt.Point;
 
-/**
- *
- * @author jyothi
- */
+
+
 public class ConnectorInfo
 {
 

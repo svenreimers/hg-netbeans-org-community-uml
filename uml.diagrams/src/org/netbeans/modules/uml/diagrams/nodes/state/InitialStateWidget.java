@@ -45,10 +45,8 @@ package org.netbeans.modules.uml.diagrams.nodes.state;
 import org.netbeans.api.visual.widget.Scene;
 import org.netbeans.modules.uml.diagrams.nodes.activity.InitialNodeWidget;
 
-/**
- *
- * @author Sheryl Su
- */
+
+
 public class InitialStateWidget extends InitialNodeWidget
 {
     public static final int RADIUS = 10;

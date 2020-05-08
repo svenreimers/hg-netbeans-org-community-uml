@@ -42,18 +42,14 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : IImplementationChangeFacility.java
- * Created on : Oct 28, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.roundtripframework;
 
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier;
 
-/**
- * @author Aztec
- */
+
+
 public interface IImplementationChangeFacility extends IRequestFacility
 {
     public void added(IClassifier pSupplier, IClassifier pContract);

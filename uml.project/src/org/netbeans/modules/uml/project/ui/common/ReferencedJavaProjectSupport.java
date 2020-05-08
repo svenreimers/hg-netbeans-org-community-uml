@@ -42,11 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * ReferencedJavaProjectSupport.java
- *
- * Created on March 14, 2005, 6:40 PM
- */
+
+
 
 package org.netbeans.modules.uml.project.ui.common;
 import org.netbeans.modules.uml.project.ui.common.JavaSourceRootsUI.JavaSourceRootsModel;
@@ -65,10 +62,8 @@ import org.netbeans.spi.project.support.ant.PropertyEvaluator;
 import org.netbeans.spi.project.support.ant.ReferenceHelper;
 import org.openide.filesystems.FileObject;
 
-/**
- *
- * @author Mike
- */
+
+
 public class ReferencedJavaProjectSupport
 {
     

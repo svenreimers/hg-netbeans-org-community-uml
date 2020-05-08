@@ -49,10 +49,8 @@ import java.beans.PropertyChangeSupport;
 import org.netbeans.spi.project.ui.support.ProjectCustomizer;
 
 
-/** Maintains current category in the customizer.
- *
- * @author Petr Hrebejk
- */
+
+
 public class CategoryModel {
 
     public static final String PROP_CURRENT_CATEGORY = "propCurrentCategory";

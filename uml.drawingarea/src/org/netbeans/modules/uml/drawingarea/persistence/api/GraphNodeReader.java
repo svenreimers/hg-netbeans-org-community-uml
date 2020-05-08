@@ -45,10 +45,8 @@ package org.netbeans.modules.uml.drawingarea.persistence.api;
 import org.netbeans.api.visual.widget.Scene;
 import org.netbeans.modules.uml.drawingarea.persistence.data.NodeInfo;
 
-/**
- *
- * @author jyothi
- */
+
+
 public interface GraphNodeReader {
 
     public GraphNodeReader initializeReader(Scene scene, NodeInfo nodeInfo);    

@@ -55,32 +55,20 @@ import org.netbeans.modules.uml.core.metamodel.structure.IProject;
 import org.netbeans.modules.uml.core.roundtripframework.IAttributeChangeFacility;
 import org.netbeans.modules.uml.core.support.umlsupport.Log;
 
-/**
- * The MemberTransaction is use to maintain a context when updating data
- * members.  The MemberTransaction will locate the data member in Describes
- * database.  When locating the data member the class symbol specified by
- * the SymbolTransaction will be searched for any attributes that match
- * the requested attribute.
- *
- * Revision History
- * No.  Date        Who         What
- * ---  ----        ---         ----
- *   1  2002-06-19  Darshan     Fixed fullScopeName not using the fully scoped
- *                              name in setAttribute().
- *   2  2002-06-21  Darshan     Added support for IStructuralFeature instead of
- *                              IAttribute and extended createAttribute to
- *                              create a navigable association where required.
- */
+
+
 public class MemberTransaction
 {
-  /**
+  
+/**
    *  The attribute that this context is managing. Note that this will be an
    * instance of INavigableEnd or IAttribute and can be downcast without
    * creating a proxy.
    */
   private IStructuralFeature mAttribute  = null;
 
-  /**
+  
+/**
    * If this attribute is an implmentation attribute the mMemberRel will contain
    * the relationship that contains teh attribute.
    */
@@ -93,7 +81,8 @@ public class MemberTransaction
   private boolean      mIsImplAttr = false;
 
   private IClassifier mSym = null;
-  /**
+  
+/**
    * Creates new MemberTransaction and specify which system to search for
    * the attribute.
    */
@@ -103,7 +92,8 @@ public class MemberTransaction
     setProject(proj);
   }
 
-  /**
+  
+/**
    * Create a new MemberTransaction and specify the symbol to search and
    * data member to find.  If the member will be created if one is needed.
    * @param trans The symbol transaction used when searching for the memeber.
@@ -120,7 +110,8 @@ public class MemberTransaction
     }
   }
 
-  /**
+  
+/**
    * Sets the Describe system to use when retrieving the symbols information.  Therefore,
    * the symbol will also reside in the Describe system.
    * @param value The Describe system.
@@ -130,7 +121,8 @@ public class MemberTransaction
     mProj = proj;
   }
 
-  /**
+  
+/**
    * Retrieves the Describe system to use when retrieving the symbols information.  Therefore,
    * the symbol will also reside in the Describe system.
    * @param value The Describe system.
@@ -140,7 +132,8 @@ public class MemberTransaction
     return mProj;
   }
 
-  /**
+  
+/**
    * Retrieve the Describe representation of the data member.
    * <i>In the future this may be abstracted. </i>
    */
@@ -149,7 +142,8 @@ public class MemberTransaction
     return mAttribute;
   }
 
-  /**
+  
+/**
    * Set the Describe representation of the data member.
    * <i>In the future this may be abstracted. </i>
    */
@@ -158,7 +152,8 @@ public class MemberTransaction
     mAttribute = attr;
   }
 
-  /**
+  
+/**
    * Checks if the data memeber is an implementation attribute.
    * @return true if the an implementation attribute, false otherwise.
    */
@@ -167,7 +162,8 @@ public class MemberTransaction
     return mIsImplAttr;
   }
 
-  /**
+  
+/**
    * Sets if the data memeber is an implementation attribute.
    * @param value true if the an implementation attribute, false otherwise.
    */
@@ -176,7 +172,8 @@ public class MemberTransaction
     mIsImplAttr = value;
   }
 
-  /**
+  
+/**
    * Sets the Describe attribute that defines data member.  A Describe symbol
    * is search for a data member that matches the requested data member name.  If
    * a Describe attribute is not found then one is created for the data member.
@@ -210,7 +207,8 @@ public class MemberTransaction
   public IClassifier getSymbol() {
     return mSym;
   }
-  /**
+  
+/**
    * Create a new Describe attribute to represent the data member.  This is helper
    * routine.
    * @param sym The symbol that will contain the attribute.
@@ -285,7 +283,8 @@ public class MemberTransaction
     return retVal;
   }
 
-  /**
+  
+/**
    * Checks if the type is a Java primitive.
    * @return true if the type is a Java primitive.
    */

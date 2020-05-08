@@ -43,6 +43,7 @@
  */
 
 
+
 /*
  * Created on Jun 12, 2003
  *
@@ -65,10 +66,8 @@ import org.netbeans.modules.uml.core.support.umlutils.IPropertyElement;
 //import org.netbeans.modules.uml.ui.products.ad.addesigncentergui.designpatternaddin.WizardRoles;
 import org.netbeans.modules.uml.ui.swing.propertyeditor.PropertyEditor;
 
-/**
- * @author sumitabhk
- *
- */
+
+
 public class JDescribeButton extends JPanel implements ActionListener
 {
 	private JButton m_Button = null;
@@ -131,7 +130,8 @@ public class JDescribeButton extends JPanel implements ActionListener
 //		//m_RolesClazz = rolesClazz;
 //		m_Row = row;
 //	}
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see java.awt.event.ActionListener#actionPerformed(java.awt.event.ActionEvent)
 	 */
 	public void actionPerformed(ActionEvent e)

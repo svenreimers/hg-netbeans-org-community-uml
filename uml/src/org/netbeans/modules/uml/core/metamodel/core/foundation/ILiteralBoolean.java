@@ -47,12 +47,14 @@ package org.netbeans.modules.uml.core.metamodel.core.foundation;
 
 public interface ILiteralBoolean extends ILiteralSpecification
 {
-	/**
+	
+/**
 	 * The specified value.
 	*/
 	public void setValue( boolean value );
 
-	/**
+	
+/**
 	 * The specified value.
 	*/
 	public boolean getValue();

@@ -62,6 +62,7 @@ public interface IUMLMessagingHelper
 	public void sendWarningMessage(String message);
 	public void sendInfoMessage(String message);
 	public void sendDebugMessage(String message);
+
 /*
 	public void sendCriticalMessage( int resourceHandle, int id);
 	public void sendErrorMessage( int resourceHandle, int id );

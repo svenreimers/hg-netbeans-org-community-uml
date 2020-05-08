@@ -47,52 +47,62 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.IExpression;
 import org.netbeans.modules.uml.core.support.umlsupport.IResultCell;
 public interface IAttributeEventsSink
 {
-	/**
+	
+/**
 	 * Fired whenever the default value of an IAttribute is about to be modified.
 	*/
 	public void onDefaultPreModified( IAttribute attr, IExpression proposedValue, IResultCell cell );
 
-	/**
+	
+/**
 	 * Fired whenever the default value of an IAttribute was modified.
 	*/
 	public void onDefaultModified( IAttribute attr, IResultCell cell );
 
-	/**
+	
+/**
 	 * Fired whenever the default expression's body property for the attribute is about to change.
 	*/
 	public void onPreDefaultBodyModified( IAttribute feature, String bodyValue, IResultCell cell );
 
-	/**
+	
+/**
 	 * Fired whenever the default expression's body property for the attribute has changed.
 	*/
 	public void onDefaultBodyModified( IAttribute feature, IResultCell cell );
 
-	/**
+	
+/**
 	 * Fired whenever the default expression's language property for the attribute is about to change.
 	*/
 	public void onPreDefaultLanguageModified( IAttribute feature, String language, IResultCell cell );
 
-	/**
+	
+/**
 	 * Fired whenever the default expression's language property for the attribute has changed.
 	*/
 	public void onDefaultLanguageModified( IAttribute feature, IResultCell cell );
 
-	/**
+	
+/**
 	 * Fired whenever the attributes derived property is about to change.
 	*/
 	public void onPreDerivedModified( IAttribute feature, boolean proposedValue, IResultCell cell );
 
-	/**
+	
+/**
 	 * Fired whenever the attributes derived property has changed.
 	*/
 	public void onDerivedModified( IAttribute feature, IResultCell cell );
 
-	/**
+	
+/**
 	 * Fired whenever the attributes primary key property is about to change.
 	*/
 	public void onPrePrimaryKeyModified( IAttribute feature, boolean proposedValue, IResultCell cell );
 
-	/**
+	
+/**
 	 * Fired whenever the attributes primary key property has changed.
 	*/
 	public void onPrimaryKeyModified( IAttribute feature, IResultCell cell );

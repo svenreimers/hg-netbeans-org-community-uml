@@ -43,6 +43,7 @@
  */
 
 
+
 /*
  * CodeGenNestedTestCase.java
  * 
@@ -63,11 +64,8 @@ import org.netbeans.test.umllib.project.elem.impl.PackageElem;
 import org.netbeans.test.umllib.project.verifier.elem.ReflectionElementVerifier;
 import org.netbeans.test.umllib.project.verifier.elem.TextElementVerifier;
 
-/**
- *
- * @author Alexandr Scherbatiy 
- * @email  sunflower@netbeans.org
- */
+
+
 
 public class CodeGenNestedTestCase extends CodeGenerationTestCase {
     
@@ -75,7 +73,8 @@ public class CodeGenNestedTestCase extends CodeGenerationTestCase {
     IPackageElem pack = new PackageElem("nested",parentPackage);
 
     
-    /** Creates a new instance of GenCodeLinksTestCase 
+    
+/** Creates a new instance of GenCodeLinksTestCase 
      * @param name 
      */
     public CodeGenNestedTestCase(String name) {

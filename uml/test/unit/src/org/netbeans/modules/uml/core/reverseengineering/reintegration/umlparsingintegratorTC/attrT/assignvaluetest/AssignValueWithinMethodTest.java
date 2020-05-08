@@ -50,9 +50,8 @@ import junit.textui.TestRunner;
 import org.netbeans.modules.uml.core.reverseengineering.reintegration.umlparsingintegratorTC.AbstractUMLParsingIntegrationTestCase;
 import org.netbeans.modules.uml.core.reverseengineering.reintegration.umlparsingintegratorTC.AbstractUMLParsingIntegrationTestCase;
 
-/**
- * @author aztec
- */
+
+
 public class AssignValueWithinMethodTest extends AbstractUMLParsingIntegrationTestCase {
 	public static void main(String[] args) {
 		TestRunner.run(AssignValueWithinMethodTest.class);

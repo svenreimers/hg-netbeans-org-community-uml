@@ -45,6 +45,7 @@
 
 package org.netbeans.modules.uml.core.metamodel.core.foundation;
 
+
 /**
  * TransitionElementImpl implements the ITransitionElement interface.  It
  * handles the temporary state that an element is in during the creation
@@ -61,7 +62,8 @@ public class TransitionElement implements ITransitionElement{
 		super();
 	}
 
-	/**
+	
+/**
 	 * Retrieves the future owner of the object implementing this interface.
 	 *
 	 * @param pVal[out]
@@ -72,7 +74,8 @@ public class TransitionElement implements ITransitionElement{
 		return m_Owner;
 	}
 
-	/**
+	
+/**
 	 * Sets the owner to be used for type resolution
 	 *
 	 * @param newVal[in]	The owner

@@ -48,15 +48,14 @@ import org.netbeans.modules.uml.core.support.umlutils.IPropertyDefinition;
 import org.netbeans.modules.uml.core.support.umlutils.IPropertyElement;
 import java.beans.PropertyEditor;
 
-/**
- *
- * @author Trey Spiva
- */
+
+
 public class DefinitionListProperty extends DefinitionPropertySupport
 {
    private DefinitionPropertyEditor mEditor = null;
 
-   /**
+   
+/**
     * @param def
     * @param element
     * @param writable
@@ -67,7 +66,8 @@ public class DefinitionListProperty extends DefinitionPropertySupport
       this(def, element, true, true);      
    }
    
-   /**
+   
+/**
     * @param def
     * @param element
     * @param writable
@@ -107,7 +107,8 @@ public class DefinitionListProperty extends DefinitionPropertySupport
    // Helper Methods
    //**************************************************
    
-   /**
+   
+/**
     * Translates the value displayed to the user back into the value that
     * needs to be stored to the database.
     * 

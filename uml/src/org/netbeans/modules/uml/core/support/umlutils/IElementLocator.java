@@ -53,14 +53,8 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.INamespace;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.IVersionableElement;
 import org.netbeans.modules.uml.core.metamodel.structure.IProject;
 
-/**
- * <p>Title: </p>
- * <p>Description: </p>
- * <p>Copyright: Copyright (c) 2003</p>
- * <p>Company: </p>
- * @author not attributable
- * @version 1.0
- */
+
+
 
 public interface IElementLocator 
 {
@@ -105,10 +99,10 @@ public interface IElementLocator
 //HRESULT FindElementByID2([in] IVersionableElement* context, [in] BSTR idToFind, [out,retval] IElement** element);
   public IElement findElementByID(IVersionableElement context, String idToFind);
 
-//   Reloads an element given only the XMI id.  Given the fact that this routine has an xmiid context it must loop over all open projects and find the project with the given xmiid. 
+
   public IElement findElementByID(String sTopLevelXMIID, String sElementXMIID);
 
-//   Reloads an element given only the XMI id.  Given the fact that this routine has no context it must loop over all open projects and search each one. 
+
 	public IElement findElementByID(String sElementXMIID);
 
 //   Retrieves all elements with the passed in fully scoped name. The name should be in UML format ( e.g., Package::InnerPackage ).

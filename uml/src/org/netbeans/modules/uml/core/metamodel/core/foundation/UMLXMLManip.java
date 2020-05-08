@@ -92,14 +92,8 @@ import org.netbeans.modules.uml.core.typemanagement.ITypeManager;
 import org.openide.filesystems.FileObject;
 import org.openide.filesystems.FileUtil;
 
-/**
- * <p>Title: </p>
- * <p>Description: </p>
- * <p>Copyright: Copyright (c) 2003</p>
- * <p>Company: </p>
- * @author not attributable
- * @version 1.0
- */
+
+
 
 public class UMLXMLManip
 {
@@ -119,14 +113,15 @@ public class UMLXMLManip
             for (int i = 0; i < size; i++)
             {
                Node node = (Node)list.get(i);
-               //Sumitabh set the named element using this node.
+               
             }
          }
       }
       return elems;
    }
 
-   /**
+   
+/**
     *
     * Attempts to find a type by the passed in name in either the direct members of the
     * passed in namespace object, or in the imported elements contained by that namespace,
@@ -153,7 +148,8 @@ public class UMLXMLManip
       return elems;
    }
 
-   /**
+   
+/**
     *
     * Makes sure that any nodes returning from the query that reference
     * external nodes are resolved. This wraps the DOM selectNodes() call.
@@ -210,7 +206,8 @@ public class UMLXMLManip
       return retVal;
    }
 
-   /**
+   
+/**
     * @param node
     * @param nodeToResolve
     * @return
@@ -315,7 +312,8 @@ public class UMLXMLManip
       return retVal;
    }
 
-   /**
+   
+/**
     *
     * This should be used instead of direct calls to the DOM method
     * selectSingleNode(). This method makes sure that any external references
@@ -343,7 +341,8 @@ public class UMLXMLManip
       return n;
    }
 
-   /**
+   
+/**
    *
    * Retrieves a particular node based on a query that is passed in.
    * One large problem with how this code was before imported elements
@@ -375,7 +374,8 @@ public class UMLXMLManip
       return retNode;
    }
 
-   /**
+   
+/**
     *
     * Retrieves all the specified nodes / children of the passed in node
     * element.
@@ -405,7 +405,7 @@ public class UMLXMLManip
       //            for (int i=0; i<size; i++)
       //            {
       //               Node n = (Node)list.get(i);
-      //               //Sumitabh create an IElement from this node and add to elems.
+      
       //            }
       //         }
       //      } 
@@ -417,7 +417,8 @@ public class UMLXMLManip
       return collector.retrieveElementCollection(pNode, query, c);
    }
 
-   /**
+   
+/**
     *
     * Given an XML document, retrieves the IProject element from it.
     *
@@ -470,7 +471,8 @@ public class UMLXMLManip
       return retEle;
    }
 
-   /**
+   
+/**
     *
     * Retrieves the value of the XML attribute specified, converting the string
     * value into an integer.
@@ -494,7 +496,8 @@ public class UMLXMLManip
       return retStr;
    }
 
-   /**
+   
+/**
     *
     * Checks to see if the user has asked us to automatically create
     * a specified type when we cannot resolve a type of the passed in
@@ -656,7 +659,8 @@ public class UMLXMLManip
       return foundNode;
    }
 
-   /**
+   
+/**
     *
     * Attempts to find a single NamedElement in the context elements's namespace or above namespaces. If
     * more than one element is found with the same name, only the first one is used.
@@ -954,7 +958,8 @@ public class UMLXMLManip
       return valid;
    }
 
-   /**
+   
+/**
     *
     * Sets the xml attribute passed in with the value passed in. Causes on element pre and
     * modified event to fire.
@@ -1003,7 +1008,8 @@ public class UMLXMLManip
       }
    }
 
-   /**
+   
+/**
     *
     * Fires the ElementPreModified event
     *
@@ -1024,18 +1030,8 @@ public class UMLXMLManip
       return proceed;
    }
 
-   /**
-    *
-    * Retrieves all the XML attribute elements that refer in some way to the passed in XMI ID
-    *
-    * @param context[in]   The node that contains the elements to retrieve
-    * @param xmiID[in]     The id of the element to match against
-    * @param elements[out] All XML attribute elements that reference the passed in ID
-    *
-    * @return HRESULT
-    * @note The elements collection returned is filled with IXMLDOMAttribute objects
-    *
-    */
+   
+
    public static List getAllAffectedElements(Node doc, String xmiid)
    {
       List retList = null;
@@ -1057,7 +1053,8 @@ public class UMLXMLManip
       return retList;
    }
 
-   /**
+   
+/**
     *
     * Removes all references to the passed in ID from any element referring to it
     *
@@ -1072,7 +1069,8 @@ public class UMLXMLManip
       replaceReferences(doc, xmiid, "");
    }
 
-   /**
+   
+/**
     *
     * Replaces xmiID with replacementXMIID in any element referring to it
     *
@@ -1102,7 +1100,8 @@ public class UMLXMLManip
       }
    }
 
-   /**
+   
+/**
     *  an index machinery for search in replaceReferences getAllAffectedElements() call
     */
    private static HashMap<DefaultDocument, RRIndex> rrIndexes = new HashMap<DefaultDocument, RRIndex>(); 
@@ -1285,7 +1284,8 @@ public class UMLXMLManip
 
 
 
-   /**
+   
+/**
     *
     * Generates the appropriate id to be used on any XML element.
     *
@@ -1318,7 +1318,8 @@ public class UMLXMLManip
       return id;
    }
 
-   /**
+   
+/**
     *
     * Retrieves the number of xml elements found as a result of the passed in query
     *
@@ -1354,7 +1355,8 @@ public class UMLXMLManip
       return count;
    }
 
-   /**
+   
+/**
     *
     * Adds the xmi.id of inElement the the IDREFS attribute passed in of element
     *
@@ -1405,7 +1407,8 @@ public class UMLXMLManip
       }
    }
 
-   /**
+   
+/**
     *
     * Removes the id of the elementToRemove from the attribute value on element
     * that matches the attribute name passed in. This method does not
@@ -1428,7 +1431,8 @@ public class UMLXMLManip
       }
    }
 
-   /**
+   
+/**
     *
     * Removes the element that has the passed in id from that attribute
     * of the passed in element.
@@ -1465,7 +1469,8 @@ public class UMLXMLManip
       }
    }
 
-   /**
+   
+/**
     *
     * Removes the child from curNode that matches the id of the passed in
     * element.
@@ -1489,7 +1494,8 @@ public class UMLXMLManip
       }
    }
 
-   /**
+   
+/**
     *
     * Removes the node that is a child of curNode that matches the passed
     * in query. If that node is associated with an external file ( versioning ),
@@ -1513,7 +1519,8 @@ public class UMLXMLManip
       }
    }
 
-   /**
+   
+/**
     *
     * Checks to see if node is referencing an external file. If it is, that
     * file is also cleaned up.
@@ -1570,7 +1577,8 @@ public class UMLXMLManip
       }
    }
 
-   /**
+   
+/**
     *
     * Attempts to retrieve a node that matches the xmi.id attribute
     * value passed in. 
@@ -1618,7 +1626,8 @@ public class UMLXMLManip
       return retNode;
    }
 
-   /**
+   
+/**
     *
     * Retrieves the element by going through the owning Project's TypeManager. If the document
     * passed in doesn't house an IProject, false is returned.
@@ -1643,7 +1652,8 @@ public class UMLXMLManip
       return retVal;
    }
 
-   /**
+   
+/**
     *
     * Retrieves the TypeManager if the passed in document actually houses
     * an IProject
@@ -1666,7 +1676,8 @@ public class UMLXMLManip
       return retMan;
    }
 
-   /**
+   
+/**
     *
     * Retrieves the TypeManager associated with the passed in element.
     *
@@ -1691,7 +1702,8 @@ public class UMLXMLManip
       return retMan;
    }
 
-   /**
+   
+/**
     * 
     * Retrieves the element identified via xmi.id in the XML attribute
     * passed in.
@@ -1713,7 +1725,8 @@ public class UMLXMLManip
       return collector.retrieveSingleElementWithAttrID(element, attrName, c);
    }
 
-   /**
+   
+/**
     *
     * Retrieves a collection of elements based on the value of that passed in
     * attribute. It is assumed that the attribute is defined as containing an
@@ -1732,7 +1745,8 @@ public class UMLXMLManip
       return collector.retrieveElementCollectionWithAttrIDs(element, attrName, c);
    }
 
-   /**
+   
+/**
     *
     * Retrieves a single child element of node.
     *
@@ -1751,7 +1765,8 @@ public class UMLXMLManip
       return collector.retrieveSingleElement(node, query, c);
    }
 
-   /**
+   
+/**
     *
     * Finds an XML node based on the xmi.id that is passed in and then
     * creates the appropriate COM object that wraps that node.
@@ -1804,7 +1819,8 @@ public class UMLXMLManip
       }
    }
 
-   /**
+   
+/**
     *
     * This routine returns the URI of the passed in node, if the node has been extracted
     * ( most likely due to version control ) from the Project's DOM. This routine
@@ -1887,7 +1903,8 @@ public class UMLXMLManip
       return new ETPairT < String, Boolean > (versionedURI, new Boolean(isId));
    }
 
-   /**
+   
+/**
     *
     * Creates a relative URI string, based on this element's href attribute value
     * and the file location of this element's project.
@@ -1927,7 +1944,8 @@ public class UMLXMLManip
       return uri;
    }
 
-   /**
+   
+/**
     *
     * Retrieves a relative path from the Project that this element is in
     * and the path passed in.
@@ -1960,7 +1978,8 @@ public class UMLXMLManip
       return finalPath;
    }
 
-   /**
+   
+/**
     *
     * This routine returns the URI of the passed in node, if the node has been extracted
     * ( most likely due to version control ) from the Project's DOM. This routine
@@ -1980,7 +1999,8 @@ public class UMLXMLManip
    //	   return getVersionedURI( node, isID );
    //	}
 
-   /**
+   
+/**
    * Retrieves a node by the "name" XML attribute.  A new datatype will be
    * created if the type is not found.
    *
@@ -2008,7 +2028,8 @@ public class UMLXMLManip
       return findByName(doc, typeName, space, typeResolution, true);
    }
 
-   /**
+   
+/**
     * Retrieves a node by the "name" XML attribute.
     *
     * @param doc[in] The document to search through
@@ -2108,7 +2129,8 @@ public class UMLXMLManip
       return retElems;
    }
 
-   /**
+   
+/**
     *
     * Transforms the passed in element into a type specified in typeName
     *
@@ -2188,7 +2210,8 @@ public class UMLXMLManip
       return retObj;
    }
 
-   /**
+   
+/**
     *
     * Removes the children from curNode to destNode
     *
@@ -2210,7 +2233,8 @@ public class UMLXMLManip
       }
    }
 
-   /**
+   
+/**
     *
     * Removes the attributes from curNode and puts them on destNode.
     *
@@ -2296,7 +2320,8 @@ public class UMLXMLManip
       return n;
    }
 
-   /**
+   
+/**
     * @param element
     * @param name
     * @param val
@@ -2307,7 +2332,8 @@ public class UMLXMLManip
       setAttributeValue(element, name, value);
    }
 
-   /**
+   
+/**
     *
     * Replaces all occurrences of curElement's xmi id with a URI version of
     * the ID the passed in element. If curElement is not versioned,
@@ -2366,7 +2392,8 @@ public class UMLXMLManip
       return versioned;
    }
 
-   /**
+   
+/**
     *
     * Performs the actual modification of nodes refering to xmiID
     *
@@ -2393,18 +2420,8 @@ public class UMLXMLManip
       }
    }
 
-   /**
-    *
-    * For all of the XML Attributes passed in elements, every value that contains xmiID
-    * is replaced with uri
-    *
-    * @param elements[in] The collection of IXMLDOMAttributes
-    * @param xmiID[in] The XMI ID to match against.
-    * @param uri[in] The uri to replace xmiID matches with.
-    *
-    * @return HRESULT
-    *
-    */
+   
+
    private static void resolveNodes2(List elements, String xmiId, String uri)
    {
       int count = elements.size();
@@ -2437,7 +2454,8 @@ public class UMLXMLManip
       }
    }
 
-   /**
+   
+/**
     *
     * Used to figure out whether or not an xml attribute value that contains the xmiID
     * value in it actually needs to be decorated in a uri or not. You don't want to 
@@ -2471,7 +2489,8 @@ public class UMLXMLManip
       return needed;
    }
 
-   /**
+   
+/**
     *
     * Appends the child element to the parent.
     *
@@ -2500,7 +2519,8 @@ public class UMLXMLManip
       }
    }
 
-   /**
+   
+/**
     * Inserts a child node to the left of the specified node or at the end of the list.
     *
     * @param pParent [in] the XML node we are inserting into.
@@ -2535,7 +2555,8 @@ public class UMLXMLManip
       }
    }
 
-   /**
+   
+/**
     *
     * Determines if childToTest is an immediate child node of parent
     *
@@ -2551,7 +2572,8 @@ public class UMLXMLManip
       return isChild(parent, childTestNode, true);
    }
 
-   /**
+   
+/**
     *
     * Determines if childToTest is an immediate child of parent
     *
@@ -2574,7 +2596,8 @@ public class UMLXMLManip
       return isChild;
    }
 
-   /**
+   
+/**
     *
     * Determines whether or not childToTest is a child of parent.
     *
@@ -2597,7 +2620,8 @@ public class UMLXMLManip
       return isChild;
    }
 
-   /**
+   
+/**
     *
     * Determines whether or not childToTest is a child of parent.
     *
@@ -2652,7 +2676,8 @@ public class UMLXMLManip
       return isChild;
    }
 
-   /**
+   
+/**
     *
     * Retrieves the actual XMI ID, even if decorated within a URI.
     *
@@ -2666,7 +2691,8 @@ public class UMLXMLManip
       return URILocator.retrieveRawID(uri);
    }
 
-   /**
+   
+/**
     * Adds the xmi.id of inElement the the IDREFS attribute passed in of element
     *
     * @param element[in] the element to whose XML attribute value we are
@@ -2754,7 +2780,8 @@ public class UMLXMLManip
       }
    }
 
-   /**
+   
+/**
     *
     * Cruises through the entire document, first finding nodes that have the
     * "isVersioned" XML attribute. This denotes a node that references an external
@@ -2803,7 +2830,8 @@ public class UMLXMLManip
       return null;
    }
 
-   /**
+   
+/**
     *
     * Converts the relative HREF value on this not to an absolute
     * path.
@@ -2837,7 +2865,8 @@ public class UMLXMLManip
       }
    }
 
-   /**
+   
+/**
     *
     * Cruises through the entire document, first finding nodes that have the
     * "isVersioned" XML attribute. This denotes a node that references an external
@@ -2893,16 +2922,8 @@ public class UMLXMLManip
       }
    }
 
-   /**
-    * Makes sure that the required DTD file exists in the location of the 
-    * project file. If the DTD file does not exist at that location, it will
-    * be created.
-    *
-    * @author aztec
-    * @param fileName The absolute file name of the project file.
-    * @return true if the DTD file exists, else false if the file could
-    *         not be created for some reason.
-    */
+   
+
    public static boolean verifyDTDExistence(String fileName)
    {
       String curFile = StringUtilities.getPath(fileName);
@@ -2934,7 +2955,8 @@ public class UMLXMLManip
       return exists;
    }
 
-   /**
+   
+/**
     * Copies file from source to target.
     * 
     * @param source The source file name.
@@ -2997,7 +3019,8 @@ public class UMLXMLManip
       return bCopy;
    }
 
-   /**
+   
+/**
     * @param resHandle
     * @param id
     * @return
@@ -3008,7 +3031,8 @@ public class UMLXMLManip
       return null;
    }
 
-   /**
+   
+/**
     * Retrieves the contents of a resource specified by the given Class and 
     * relative resource path. Do <em>not</em> use for large resources.
     * 
@@ -3040,20 +3064,15 @@ public class UMLXMLManip
       return out.toString();
    }
 
-   /**
-    * Retrieves an XML fragment (or anything else, for that matter) from the
-    * foundation resource bundle, given the resource key. Just a fancy wrapper
-    * around <code>FoundationMessages.getString()</code>.
-    * 
-    * @param resourceKey The resource key for the XML fragment to be retrieved.
-    * @return A <code>String</code> containing the XML fragment.
-    */
+   
+
    public static String retrieveXMLFragmentFromResource(String resourceKey)
    {
       return FoundationMessages.getString(resourceKey);
    }
 
-   /**
+   
+/**
     *
     * Removes a string from within another
     *
@@ -3093,7 +3112,8 @@ public class UMLXMLManip
       return finalStr;
    }
 
-   /**
+   
+/**
     * Creates a new type of the given name, dependent on the "Unknown Classifier" preference. If created, the
     * type is added to the passed in namespace
     * 
@@ -3143,7 +3163,7 @@ public class UMLXMLManip
                element.setName(typeName);
                
 //               if (typeName.equals(element.getName())) {
-//				   // <Sheryl> #6320801, we have already set the owner to current
+
 //				   // workspace, why do we need to set to null here? Setting the 
 //				   // owner to null will place the classifer to default package
 ////				   element.setOwner(null);

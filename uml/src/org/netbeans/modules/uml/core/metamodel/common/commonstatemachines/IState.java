@@ -52,127 +52,152 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 public interface IState extends IStateVertex
 {
-	/**
+	
+/**
 	 * property IsComposite
 	*/
 	public boolean getIsComposite();
 
-	/**
+	
+/**
 	 * property IsComposite
 	*/
 	public void setIsComposite( boolean value );
 
-	/**
+	
+/**
 	 * property IsOrthogonal
 	*/
 	public boolean getIsOrthogonal();
 
-	/**
+	
+/**
 	 * property IsOrthogonal
 	*/
 	public void setIsOrthogonal( boolean value );
 
-	/**
+	
+/**
 	 * property IsSimple
 	*/
 	public boolean getIsSimple();
 
-	/**
+	
+/**
 	 * property IsSimple
 	*/
 	public void setIsSimple( boolean value );
 
-	/**
+	
+/**
 	 * property IsSubmachineState
 	*/
 	public boolean getIsSubmachineState();
 
-	/**
+	
+/**
 	 * property IsSubmachineState
 	*/
 	public void setIsSubmachineState( boolean value );
 
-	/**
+	
+/**
 	 * method AddContent
 	*/
 	public void addContent( IRegion pReg );
 
-	/**
+	
+/**
 	 * method RemoveContent
 	*/
 	public void removeContent( IRegion pReg );
 
-	/**
+	
+/**
 	 * property Contents
 	*/
 	public ETList<IRegion> getContents();
 
-	/**
+	
+/**
 	 * Returns the first content
 	*/
 	public IRegion getFirstContent();
 
-	/**
+	
+/**
 	 * property Entry
 	*/
 	public IProcedure getEntry();
 
-	/**
+	
+/**
 	 * property Entry
 	*/
 	public void setEntry( IProcedure value );
 
-	/**
+	
+/**
 	 * property Exit
 	*/
 	public IProcedure getExit();
 
-	/**
+	
+/**
 	 * property Exit
 	*/
 	public void setExit( IProcedure value );
 
-	/**
+	
+/**
 	 * property DoActivity
 	*/
 	public IProcedure getDoActivity();
 
-	/**
+	
+/**
 	 * property DoActivity
 	*/
 	public void setDoActivity( IProcedure value );
 
-	/**
+	
+/**
 	 * method AddDefferableEvent
 	*/
 	public void addDefferableEvent( IEvent pEvent );
 
-	/**
+	
+/**
 	 * method RemoveDeferrableEvent
 	*/
 	public void removeDeferrableEvent( IEvent pEvent );
 
-	/**
+	
+/**
 	 * property DeferrableEvents
 	*/
 	public ETList<IEvent> getDeferrableEvents();
 
-	/**
+	
+/**
 	 * property StateInvariant
 	*/
 	public IConstraint getStateInvariant();
 
-	/**
+	
+/**
 	 * property StateInvariant
 	*/
 	public void setStateInvariant( IConstraint value );
 
-	/**
+	
+/**
 	 * property Submachine
 	*/
 	public IStateMachine getSubmachine();
 
-	/**
+	
+/**
 	 * property Submachine
 	*/
 	public void setSubmachine( IStateMachine value );

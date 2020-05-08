@@ -42,6 +42,7 @@
  * made subject to such option by the copyright holder.
  */
 
+
 /**
  *	This generated bean class TemplateFamilies matches the schema element 'templateFamilies'.
  *
@@ -196,7 +197,8 @@ public class TemplateFamilies extends org.netbeans.modules.schema2beans.BaseBean
         return this.removeValue(FAMILY, value);
     }
     
-    /**
+    
+/**
      * Create a new bean using it's default constructor.
      * This does not add it to any bean graph.
      */
@@ -345,6 +347,7 @@ public class TemplateFamilies extends org.netbeans.modules.schema2beans.BaseBean
 }
 
 // END_NOI18N
+
 
 
 /*

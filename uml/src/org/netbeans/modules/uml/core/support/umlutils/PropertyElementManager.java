@@ -72,14 +72,8 @@ import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure
 import org.netbeans.modules.uml.core.support.umlsupport.ProductRetriever;
 import org.netbeans.modules.uml.core.support.umlsupport.XMLManip;
 
-/**
- * <p>Title: </p>
- * <p>Description: </p>
- * <p>Copyright: Copyright (c) 2003</p>
- * <p>Company: </p>
- * @author not attributable
- * @version 1.0
- */
+
+
 
 public class PropertyElementManager implements IPropertyElementManager
 {
@@ -115,7 +109,8 @@ public class PropertyElementManager implements IPropertyElementManager
       m_ModelElement = value;
    }
 
-   /**
+   
+/**
     * Begin the process to create a property element based on the property definition.
     *
     * @param propDef    The property definition to base the building of the property element on
@@ -149,7 +144,8 @@ public class PropertyElementManager implements IPropertyElementManager
       m_PDFactory = value;
    }
 
-   /**
+   
+/**
     * Determines whether or not sub elements should be created
     */
    public boolean getCreateSubs()
@@ -162,7 +158,8 @@ public class PropertyElementManager implements IPropertyElementManager
       m_CreateSubs = value;
    }
 
-   /**
+   
+/**
     * Call the given "set" method from the property definition on the passed in IDispatch using the information
     * from the property element.
     *
@@ -374,7 +371,8 @@ public class PropertyElementManager implements IPropertyElementManager
       }
    }
 
-   /**
+   
+/**
     * @param pDef
     * @return
     */
@@ -396,7 +394,8 @@ public class PropertyElementManager implements IPropertyElementManager
       return retVal;
    }
 
-   /**
+   
+/**
     * Call the given "create" method from the property definition on the passed-in IDispatch using the information
     * from the property element.
     *
@@ -501,7 +500,8 @@ public class PropertyElementManager implements IPropertyElementManager
       return pDisp;
    }
 
-   /**
+   
+/**
     * Special processing after a create of an IDispatch to set the subelements up to point to that
     * newly created IDispatch
     *
@@ -533,7 +533,8 @@ public class PropertyElementManager implements IPropertyElementManager
        }
    }
 
-   /**
+   
+/**
     * Because a delete of an IElement has occurred, remove the corresponding property element from the
     * element structure
     *
@@ -630,7 +631,8 @@ public class PropertyElementManager implements IPropertyElementManager
       return args;
    }
 
-   /**
+   
+/**
     * Call the given "delete" method on the passed-in delete property element using the other property
     * element as the parameter to the "delete".
     *
@@ -691,7 +693,8 @@ public class PropertyElementManager implements IPropertyElementManager
       {}
    }
 
-   /**
+   
+/**
     * Do the actual create of the property element.
     *
     * @param[in] modEle       The IDispatch(model element) to get the information from
@@ -720,7 +723,7 @@ public class PropertyElementManager implements IPropertyElementManager
                // I am really special casing this because it is 5 days before the release and the
                // only attribute that is not working to our knowledge is IsFinal on a Classifier.
                // This is because Classifier is multiply derived from RedefinableElement, but RedefEle
-               // is not a COM object, it is just an interface.  I tried writing generic code for this
+               
                // and I think I have it, but it is too risky to check in at this time.  So this is my
                // hack.
                // begin special case
@@ -819,7 +822,8 @@ public class PropertyElementManager implements IPropertyElementManager
       return propEle;
    }
 
-   /**
+   
+/**
     * Method to determine how to handle the result of the invoke call
     *
     * @param[in] result       The CComVariant that was returned from the invoke call
@@ -867,7 +871,8 @@ public class PropertyElementManager implements IPropertyElementManager
       }
    }
 
-   /**
+   
+/**
     * Special processing of a IDispatch returned by the invoke call
     *
     * @param pDisp            The IDispatch(model element) to get the information from
@@ -935,7 +940,8 @@ public class PropertyElementManager implements IPropertyElementManager
       }
    }
 
-   /**
+   
+/**
     * Special processing of a IDispatch returned by the invoke call that is a collection
     *
     * @param pDisp            The IDispatch(model element) to get the information from
@@ -1015,7 +1021,8 @@ public class PropertyElementManager implements IPropertyElementManager
       }
    }
 
-   /**
+   
+/**
     * Process any sub elements based on sub property definitions for collections that are represented
     * by strings.  This is a special case that is happening when the get method is called and the
     * result is a collection of IStrings.  We go through the collection processing, but before we
@@ -1061,7 +1068,8 @@ public class PropertyElementManager implements IPropertyElementManager
       }
    }
 
-   /**
+   
+/**
     * Method used to figure out what to do with the passed-in IDispatch.  Based on the property
     * definition and element, may want to do a create, or just set data.
     *
@@ -1118,7 +1126,8 @@ public class PropertyElementManager implements IPropertyElementManager
       return 0;
    }
 
-   /**
+   
+/**
     *	Special processing for property definitions that have been marked as collections but have a "set" method
     * eg. IMultiplicity
     *
@@ -1245,7 +1254,8 @@ public class PropertyElementManager implements IPropertyElementManager
       {}
    }
 
-   /**
+   
+/**
     * Rebuild the information for the passed-in property element.  This first removes all
     * sub elements, then rebuilds them.
     *
@@ -1280,7 +1290,8 @@ public class PropertyElementManager implements IPropertyElementManager
       return 0;
    }
 
-   /**
+   
+/**
     * Rebuild the information for the passed-in property element.  This first removes all
     * sub elements, then rebuilds only one sub element marked as a dummy node.
     *
@@ -1335,7 +1346,8 @@ public class PropertyElementManager implements IPropertyElementManager
       m_ElementFile = value;
    }
 
-   /**
+   
+/**
     * Begin the process to create a property element based on the property definition using an already
     * defined file.
     *
@@ -1391,7 +1403,8 @@ public class PropertyElementManager implements IPropertyElementManager
       return pEles;
    }
 
-   /**
+   
+/**
     * Process any sub elements based on sub property definitions in a predetermined file
     *
     * @param[in] pNode        The XML node to get the information from
@@ -1407,6 +1420,7 @@ public class PropertyElementManager implements IPropertyElementManager
    {
       try
       {
+
 /*      Vector elems = pDef.getSubDefinitions();
       if (elems != null && !elems.isEmpty()) {
         for (int i = 0; i < elems.size(); i++) {
@@ -1460,7 +1474,8 @@ public class PropertyElementManager implements IPropertyElementManager
       {}
    }
 
-   /**
+   
+/**
     * Do the actual create of the property element based on a file
     *
     * @param[in] pDef    The property definition to base the building of the property element on
@@ -1479,7 +1494,8 @@ public class PropertyElementManager implements IPropertyElementManager
       return elem;
    }
 
-   /**
+   
+/**
     * Sets the information on the property element from the dom node in the given file
     *
     *
@@ -1520,7 +1536,8 @@ public class PropertyElementManager implements IPropertyElementManager
       }
    }
 
-   /**
+   
+/**
     * Sometimes the information that is stored on the property element is not what
     * we want to display.  It may need to be interpreted, this is based on the information
     * on the property definition.
@@ -1607,7 +1624,8 @@ public class PropertyElementManager implements IPropertyElementManager
       }
    }
 
-   /**
+   
+/**
     * The property definition states that the information to be displayed by the property element
     * should be a value from an xpath query.  Need to figure out what the value is.
     *
@@ -1650,7 +1668,8 @@ public class PropertyElementManager implements IPropertyElementManager
       } catch (Exception e)
       {}
    }
-   /**
+   
+/**
     * The property definition states that the information to be displayed by the property element
     * should be a format string.  Need to figure out what the format string is.
     *
@@ -1663,7 +1682,7 @@ public class PropertyElementManager implements IPropertyElementManager
    {
       if((m_Formatter == null) && (ProductRetriever.retrieveProduct() != null))
       {
-         //m_Formatter = ProductHelper
+         
          m_Formatter = ProductRetriever.retrieveProduct().getDataFormatter();
       }
 
@@ -1680,7 +1699,8 @@ public class PropertyElementManager implements IPropertyElementManager
       }
    }
 
-   /**
+   
+/**
     * The property definition states that the information to be displayed by the property element
     * may be something other than what is stored on the property editor.  For example, for visibility
     * a value of 0-3 is stored, but what we want to display is public, private, etc.
@@ -1717,7 +1737,8 @@ public class PropertyElementManager implements IPropertyElementManager
          //the number conversion error must have happenned.
          pElem.setValue(val);
          pElem.setOrigValue(val);
-          /*
+          
+/*
          String value = pElem.getTranslatedValue();
          pElem.setValue(value);
          pElem.setOrigValue(value);
@@ -1725,7 +1746,8 @@ public class PropertyElementManager implements IPropertyElementManager
       }
    }
 
-   /**
+   
+/**
     * Call the given "insert" method from the property definition on the passed-in IDispatch using the information
     * from the property element.
     *
@@ -1799,7 +1821,8 @@ public class PropertyElementManager implements IPropertyElementManager
       {}
    }
 
-   /**
+   
+/**
     * Method to navigate up the property element chain to retrieve the first model element in the chain
     *
     * @param[in] pEle       The property element in which to get the model element
@@ -1822,7 +1845,8 @@ public class PropertyElementManager implements IPropertyElementManager
       return obj;
    }
 
-   /**
+   
+/**
     * Method to navigate up the property element chain to retrieve the property element that represents
     * the one that should be inserted into (the one with an insert method)
     *
@@ -1853,7 +1877,8 @@ public class PropertyElementManager implements IPropertyElementManager
       return elem;
    }
 
-   /**
+   
+/**
     * Builds and returns an empty element structure based on the passed-in definition.
     *
     * @param[in] pDef			The property definition to base the building of the property element on
@@ -1871,7 +1896,8 @@ public class PropertyElementManager implements IPropertyElementManager
       return propEle;
    }
 
-   /**
+   
+/**
     * Process any sub elements based on sub property definitions, creating them empty
     *
     * @param[in] parentDef    The property definition to base the building of the property element on
@@ -1899,7 +1925,8 @@ public class PropertyElementManager implements IPropertyElementManager
       }
    }
 
-   /**
+   
+/**
     * Save the passed in property elements to the given file.
     *
     * @param file[in]		The file to save the elements to
@@ -1955,7 +1982,8 @@ public class PropertyElementManager implements IPropertyElementManager
       }
    }
 
-   /**
+   
+/**
     * Get a DOM Document for the passed-in file.
     *
     *
@@ -1998,7 +2026,8 @@ public class PropertyElementManager implements IPropertyElementManager
       return doc;
    }
 
-   /**
+   
+/**
     * Process any sub elements based on sub property definitions
     *
     * @param[in] modEle       The IDispatch(model element) to get the information from
@@ -2167,7 +2196,8 @@ public class PropertyElementManager implements IPropertyElementManager
        }
    }
 
-   /**
+   
+/**
     * The property definition states that the information to be displayed by the property element
     * should be a value from an expansion variable.  Need to figure out what the value is.
     *

@@ -48,6 +48,7 @@ package org.netbeans.modules.uml.core.reverseengineering.reframework;
 import org.netbeans.modules.uml.core.AbstractUMLTestCase;
 import org.dom4j.DocumentFactory;
 
+
 /**
  * Test cases for ClassEvent.
  */
@@ -60,7 +61,8 @@ public class ClassEventTestCase extends AbstractUMLTestCase
 
     private IClassEvent ce;
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see junit.framework.TestCase#setUp()
      */
     protected void setUp() throws Exception

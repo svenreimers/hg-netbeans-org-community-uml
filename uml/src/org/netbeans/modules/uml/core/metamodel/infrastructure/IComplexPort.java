@@ -42,18 +42,14 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : IComplexPort.java
- * Created on : Dec 5, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.metamodel.infrastructure;
 
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IStructuralFeature;
 
-/**
- * @author Aztec
- */
+
+
 public interface IComplexPort extends IStructuralFeature, IPort
 {
 

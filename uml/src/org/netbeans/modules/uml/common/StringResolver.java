@@ -46,6 +46,7 @@ package org.netbeans.modules.uml.common;
 
 import java.util.*;
 
+
 /**
  * Resolves a message id to the locale dependant message.
  */
@@ -64,77 +65,88 @@ public class StringResolver
 		return get(id, StringResolver.getLocale());
 	}
 
-	/** Gets the locale dependent message for the default locale.
+	
+/** Gets the locale dependent message for the default locale.
 		 The occurences of %x are replaced by the given parameters. */
 	public final String get(String id, Object p1)
 	{
 		return get(id, p1, StringResolver.getLocale());
 	}
 
-	/** Gets the locale dependent message for the default locale. 
+	
+/** Gets the locale dependent message for the default locale. 
 		 The occurences of %x are replaced by the given parameters. */
 	public final String get(String id, boolean p1)
 	{
 		return get(id, String.valueOf(p1), StringResolver.getLocale());
 	}
 
-	/** Gets the locale dependent message for the default locale. 
+	
+/** Gets the locale dependent message for the default locale. 
 		 The occurences of %x are replaced by the given parameters. */
 	public final String get(String id, short p1)
 	{
 		return get(id, String.valueOf(p1), StringResolver.getLocale());
 	}
 
-	/** Gets the locale dependent message for the default locale. 
+	
+/** Gets the locale dependent message for the default locale. 
 		 The occurences of %x are replaced by the given parameters. */
 	public final String get(String id, int p1)
 	{
 		return get(id, String.valueOf(p1), StringResolver.getLocale());
 	}
 
-	/** Gets the locale dependent message for the default locale. 
+	
+/** Gets the locale dependent message for the default locale. 
 		 The occurences of %x are replaced by the given parameters. */
 	public final String get(String id, long p1)
 	{
 		return get(id, String.valueOf(p1), StringResolver.getLocale());
 	}
 
-	/** Gets the locale dependent message for the default locale. 
+	
+/** Gets the locale dependent message for the default locale. 
 		 The occurences of %x are replaced by the given parameters. */
 	public final String get(String id, float p1)
 	{
 		return get(id, String.valueOf(p1), StringResolver.getLocale());
 	}
 
-	/** Gets the locale dependent message for the default locale. 
+	
+/** Gets the locale dependent message for the default locale. 
 		 The occurences of %x are replaced by the given parameters. */
 	public final String get(String id, double p1)
 	{
 		return get(id, String.valueOf(p1), StringResolver.getLocale());
 	}
 
-	/** Gets the locale dependent message for the default locale. 
+	
+/** Gets the locale dependent message for the default locale. 
 		 The occurences of %x are replaced by the given parameters. */
 	public final String get(String id, Object p1, Object p2)
 	{
 		return get(id, p1, p2, StringResolver.getLocale());
 	}
 
-	/** Gets the locale dependent message for the default locale. 
+	
+/** Gets the locale dependent message for the default locale. 
 		 The occurences of %x are replaced by the given parameters. */
 	public final String get(String id, Object p1, Object p2, Object p3)
 	{
 		return get(id, p1, p2, p3, StringResolver.getLocale());
 	}
 
-	/** Gets the locale dependent message for the default locale. 
+	
+/** Gets the locale dependent message for the default locale. 
 		 The occurences of %x are replaced by the given parameters. */
 	public final String get(String id, Object p1, Object p2, Object p3, Object p4)
 	{
 		return get(id, p1, p2, p3, p4, StringResolver.getLocale());
 	}
 
-	/** Gets the locale dependent message corresponding to the given id.
+	
+/** Gets the locale dependent message corresponding to the given id.
 		 Replaces occurrences of %x with given parameters. */
 	public final String get(String id, Object[] params)
 	{
@@ -147,21 +159,24 @@ public class StringResolver
 		return get(id, null, locale);
 	}
 
-	/** Gets the locale dependent message for the given locale. 
+	
+/** Gets the locale dependent message for the given locale. 
 		 The occurences of %x are replaced by the given parameters. */
 	public final String get(String id, Object p1, Locale locale)
 	{
 		return get(id, new Object[] { p1 }, locale);
 	}
 
-	/** Gets the locale dependent message for the given locale. 
+	
+/** Gets the locale dependent message for the given locale. 
 		 The occurences of %x are replaced by the given parameters. */
 	public final String get(String id, Object p1, Object p2, Locale locale)
 	{
 		return get(id, new Object[] { p1, p2 }, locale);
 	}
 
-	/** Gets the locale dependent message for the given locale. 
+	
+/** Gets the locale dependent message for the given locale. 
 		 The occurences of %x are replaced by the given parameters. */
 	public final String get(String id, Object p1, Object p2, Object p3, Locale locale)
 	{
@@ -174,7 +189,8 @@ public class StringResolver
 		return get(id, new Object[] { p1, p2, p3, p4 }, locale);
 	}
 
-	/** Gets the locale dependent message corresponding to the given id.
+	
+/** Gets the locale dependent message corresponding to the given id.
 		 Replaces occurrences of %x with given parameters. */
 	public final String get(String id, Object[] params, Locale locale)
 	{

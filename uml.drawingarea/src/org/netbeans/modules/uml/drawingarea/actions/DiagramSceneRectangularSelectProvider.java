@@ -51,10 +51,8 @@ import org.netbeans.api.visual.model.ObjectScene;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.IPresentationElement;
 import org.netbeans.modules.uml.drawingarea.view.DesignerScene;
 
-/**
- *
- * @author Sheryl Su
- */
+
+
 public class DiagramSceneRectangularSelectProvider implements RectangularSelectProvider {
 
     private ObjectScene scene;

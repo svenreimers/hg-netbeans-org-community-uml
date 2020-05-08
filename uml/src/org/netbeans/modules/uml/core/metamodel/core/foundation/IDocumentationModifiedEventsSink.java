@@ -47,12 +47,14 @@ package org.netbeans.modules.uml.core.metamodel.core.foundation;
 import org.netbeans.modules.uml.core.support.umlsupport.IResultCell;
 public interface IDocumentationModifiedEventsSink
 {
-	/**
+	
+/**
 	 * Fired whenever an element's documentation field is about to be modified.
 	*/
 	public void onDocumentationPreModified( IElement element, String doc, IResultCell cell );
 
-	/**
+	
+/**
 	 * Fired whenever an element's documentation field has been modified.
 	*/
 	public void onDocumentationModified( IElement element, IResultCell cell );

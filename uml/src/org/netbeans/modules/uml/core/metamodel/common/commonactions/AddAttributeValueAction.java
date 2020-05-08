@@ -42,11 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : AddAttributeValueAction.java
- * Created on : Sep 17, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.metamodel.common.commonactions;
 
 import org.dom4j.Document;
@@ -55,15 +52,15 @@ import org.dom4j.Node;
 import org.netbeans.modules.uml.core.metamodel.basic.basicactions.IInputPin;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.ElementCollector;
 
-/**
- * @author Aztec
- */
+
+
 public class AddAttributeValueAction
     extends WriteAttributeAction
     implements IAddAttributeValueAction
 {
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactions.IAddAttributeValueAction#getInsertAt()
      */
     public IInputPin getInsertAt()
@@ -73,7 +70,8 @@ public class AddAttributeValueAction
 
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactions.IAddAttributeValueAction#getIsReplaceAll()
      */
     public boolean getIsReplaceAll()
@@ -81,7 +79,8 @@ public class AddAttributeValueAction
         return getBooleanAttributeValue("isReplaceAll", true);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactions.IAddAttributeValueAction#setInsertAt(org.netbeans.modules.uml.core.metamodel.basic.basicactions.IInputPin)
      */
     public void setInsertAt(IInputPin inputPin)
@@ -89,7 +88,8 @@ public class AddAttributeValueAction
         addInput(inputPin);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactions.IAddAttributeValueAction#setIsReplaceAll(boolean)
      */
     public void setIsReplaceAll(boolean isReplaceAll)

@@ -42,6 +42,7 @@
  * made subject to such option by the copyright holder.
  */
 
+
 /*
  * ProjectTreeHelper.java
  *
@@ -72,10 +73,8 @@ import org.openide.util.Utilities;
 import org.openide.windows.TopComponent;
 import org.openide.windows.WindowManager;
 
-/**
- *
- * @author Administrator
- */
+
+
 public class ProjectTreeHelper
 {
    private static TopComponent projectTabComp = WindowManager.getDefault().findTopComponent( "projectTabLogical_tc" );

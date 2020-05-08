@@ -47,10 +47,8 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.IElement;
 import org.netbeans.modules.uml.core.metamodel.structure.IComment;
 import org.netbeans.modules.uml.drawingarea.widgets.ContainerWidget;
 
-/**
- *
- * @author Sheryl Su
- */
+
+
 public final class RegionContainerWidget extends ContainerWidget
 {    
     public RegionContainerWidget(Scene scene)

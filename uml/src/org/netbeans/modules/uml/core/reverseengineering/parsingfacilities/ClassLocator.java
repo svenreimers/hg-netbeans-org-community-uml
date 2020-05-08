@@ -58,7 +58,8 @@ public class ClassLocator extends LocatorEvaluator<IREClass>
         m_DesiredClass = desiredClass;
     }
 
-    /**
+    
+/**
      * Searches a specific class for an attribute declaration.
      *
      * @param pClass [in] The class to search.

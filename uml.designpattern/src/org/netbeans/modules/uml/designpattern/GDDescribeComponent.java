@@ -53,19 +53,16 @@ import org.openide.windows.TopComponent;
 import org.openide.windows.WindowManager;
 import org.openide.util.HelpCtx;
 
-/**
- *  TopComponent for the Describe 6.0 properties editor.
- *
- * @author  Darshan
- * @version 1.0
- */
+
+
 public class GDDescribeComponent extends TopComponent {
     static final long serialVersionUID = 12318371388356385L;
     private static GDDescribeComponent mTopComponent = null;
     private static boolean m_Initialized = false;
     private JTabbedPane m_TabPane = null;
     private static ResourceBundle mBundle = ResourceBundle.getBundle("org.netbeans.modules.uml.designpattern.Bundle");
-    /**
+    
+/**
      *  Creates a properties editor top component; the property editor control
      * is instantiated on addNotify() and destroyed on removeNotify().
      */
@@ -105,7 +102,8 @@ public class GDDescribeComponent extends TopComponent {
        doLayout();
     }
 
-	/**
+	
+/**
 	 * Called when this component is activated. This happens when the parent
 	 * window of this component gets focus (and this component is the preferred
 	 * one in it), or when this component is selected in its window (and its
@@ -188,7 +186,8 @@ public class GDDescribeComponent extends TopComponent {
 
     }
 
-	/**
+	
+/**
 	 * Called when this component is deactivated. This happens when the parent
 	 * window of this component loses focus (and this component is the preferred
 	 * one in the parent), or when this component loses preference in the parent

@@ -42,18 +42,14 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : IVariable.java
- * Created on : Sep 17, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.metamodel.common.commonactions;
 
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElement;
 
-/**
- * @author Aztec
- */
+
+
 public interface IVariable extends ITypedElement
 {
     public void setScope(IGroupAction pGrpAction);

@@ -66,10 +66,8 @@ import org.openide.util.HelpCtx;
 import org.openide.util.Lookup;
 import org.openide.util.NbBundle;
 
-/**
- *
- * @author Sheryl Su
- */
+
+
 public class RegionsAction extends SceneNodeAction implements ContextAwareAction
 {
 

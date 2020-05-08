@@ -49,9 +49,8 @@ import org.netbeans.modules.uml.core.reverseengineering.reintegration.umlparsing
 
 import junit.textui.TestRunner;
 
-/**
- * @author aztec
- */
+
+
 public class StaticImportTest extends AbstractUMLParsingIntegrationTestCase {
 	public static void main(String[] args) {
 		TestRunner.run(StaticImportTest.class);

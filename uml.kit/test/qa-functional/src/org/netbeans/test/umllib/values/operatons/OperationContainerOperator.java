@@ -43,6 +43,7 @@
  */
 
 
+
 /*
  * OperationOperator.java
  *
@@ -72,10 +73,8 @@ import org.netbeans.test.umllib.util.LabelsAndTitles;
 import org.netbeans.test.umllib.util.PopupConstants;
 import org.netbeans.test.umllib.values.Argument;
 import org.netbeans.test.umllib.values.ValueOperator;
-/**
- *
- * @author Alexandr Scherbatiy
- */
+
+
 
 public class OperationContainerOperator extends ValueOperator {
     

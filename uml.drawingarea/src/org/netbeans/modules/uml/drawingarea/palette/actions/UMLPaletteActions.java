@@ -56,10 +56,8 @@ import org.openide.util.NbBundle;
 
 
 
-/**
- *
- * @author Thuy
- */
+
+
 public class UMLPaletteActions extends PaletteActions {
 
     /** Creates a new instance of FormPaletteProvider */

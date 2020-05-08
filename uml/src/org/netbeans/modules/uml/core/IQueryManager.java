@@ -49,29 +49,34 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 public interface IQueryManager
 {
-	/**
+	
+/**
      * Connects the manager to various event sinks. The manager must be
      * initialized.
      */
 	public void initialize();
 
-	/**
+	
+/**
      * Disconnects the manager to various event sinks. The manager must be
      * de-initialized.
 	*/
 	public void deinitialize();
 
-	/**
+	
+/**
 	 * The collection of IQueryUpdater objects.
 	*/
 	public ETList<IQueryUpdater> getUpdaters();
 
-	/**
+	
+/**
 	 * Establishes a .QueryCache file for the passed in IProject.
 	*/
 	public void establishCache( IProject pProject );
 	
-	/**
+	
+/**
 	 * Saves and closed the .QueryCache associated with passed in IProject.
 	*/
 	public void closeCache(IProject pProject);

@@ -109,7 +109,8 @@ public class DesignPatternUtilities
 		super();
 	}
 
-	/**
+	
+/**
 	 * Get the projects in the current workspace and populate the list box with the
 	 * results.
 	 *
@@ -172,7 +173,8 @@ public class DesignPatternUtilities
             }
 	}
         
-	/**
+	
+/**
 	 * Get the projects in the current workspace and populate the list box with the
 	 * results.
 	 *
@@ -247,7 +249,8 @@ public class DesignPatternUtilities
 			}
 		}
 	}
-	/**
+	
+/**
 	 * Event called when an entry in the project list box changes
 	 *
 	 * @return HRESULT
@@ -304,7 +307,8 @@ public class DesignPatternUtilities
 		}
 	   return pProject;
 	}
-	/**
+	
+/**
 	 * Get the packages in the current project and populates the list box with the
 	 * results.
 	 *
@@ -338,7 +342,8 @@ public class DesignPatternUtilities
 			}
 		}
 	}
-	/**
+	
+/**
 	 * Based on the selected namespace in the list box, retrieve the corresponding
 	 * COM Object.  Right now, we are only looking for packages.
 	 *
@@ -392,7 +397,8 @@ public class DesignPatternUtilities
 		}
 	   return pNamespace;
 	}
-	/**
+	
+/**
 	 * Use the ElementLocator to retrieve a list of elements(where we can get their names)
 	 * based on the passed in project and xpath query
 	 *
@@ -443,7 +449,8 @@ public class DesignPatternUtilities
 		}
 	   return pStrings;
 	}
-	/**
+	
+/**
 	 *
 	 * Retrieves the collaboration object by the passed in name
 	 *
@@ -483,7 +490,8 @@ public class DesignPatternUtilities
 	   }
 	   return pCollab;
 	}
-	/**
+	
+/**
 	 * Determines whether or not a menu item should be displayed based on whether
 	 * or not a collaboration is selected (and is the only thing selected)
 	 *
@@ -578,7 +586,8 @@ public class DesignPatternUtilities
 	   }
 	   return bDisplay;
 	}
-	/**
+	
+/**
 	 * Determines whether or not a menu item should be displayed based on whether
 	 * or not classifiers are selected (and are the only thing selected).
 	 *
@@ -728,7 +737,8 @@ public class DesignPatternUtilities
 	   }
 	   return bDisplay;
 	}
-	/**
+	
+/**
 	 * Helper function to get what is selected on the current diagram
 	 *
 	 *
@@ -757,7 +767,8 @@ public class DesignPatternUtilities
 	   }
 	   return pElements;
 	}
-	/**
+	
+/**
 	 * Get the selected collaboration in the tree or diagram associated with the context menu
 	 *
 	 * @param pContextMenu[in]			The current context menu
@@ -830,7 +841,8 @@ public class DesignPatternUtilities
 	   }
 	   return pCollab;
 	}
-	/**
+	
+/**
 	 * Helper method to retrieve the workspace that is housed in the user defined
 	 * pattern addin
 	 *
@@ -874,7 +886,8 @@ public class DesignPatternUtilities
 	   }
 	   return pWorkspace;
 	}
-	/**
+	
+/**
 	 * Adds the "Apply..." menu item to the right click menu in the design center
 	 * tree
 	 *
@@ -912,7 +925,8 @@ public class DesignPatternUtilities
 		  	}
 		}
 	}
-	/**
+	
+/**
 	 * Get the packages in the current project and populates the list box with the
 	 * results.
 	 *
@@ -943,7 +957,8 @@ public class DesignPatternUtilities
 			pPatternCombo.setModel(theModel);
 		}
 	}
-	/**
+	
+/**
 	 * Display an error dialog box
 	 *
 	 *
@@ -963,7 +978,8 @@ public class DesignPatternUtilities
 			}
 		}
 	}
-	/**
+	
+/**
 	 * Format the array of strings into one string for error display
 	 *
 	 *

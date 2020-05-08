@@ -43,6 +43,7 @@
  */
 
 
+
 /*
  * Created on Jun 9, 2004
  *
@@ -64,18 +65,15 @@ import org.netbeans.modules.uml.ui.swing.commondialogs.JCenterDialog;
 import org.openide.DialogDescriptor;
 import org.openide.DialogDisplayer;
 
-/**
- * @author jingmingm
- *
- * To change the template for this generated type comment go to
- * Window&gt;Preferences&gt;Java&gt;Code Generation&gt;Code and Comments
- */
+
+
 public class PickListDialog implements IPickListDialog
 {
 	private boolean m_bRunSilent = false;
 	ETList<String> m_PickListItems = new ETArrayList<String>();
 
-	/**
+	
+/**
 	 * Inherit the run silent dialog off the main messenger
 	 */
 	public PickListDialog()
@@ -87,7 +85,8 @@ public class PickListDialog implements IPickListDialog
 		}
 	}
 	
-	/**
+	
+/**
 	 * Returns the silent flag for this dialog.  If silent then any Display calls will
 	 * not display a dialog, but rather immediately return S_OK;
 	 *
@@ -100,7 +99,8 @@ public class PickListDialog implements IPickListDialog
 		return m_bRunSilent;
 	}
 	
-	/**
+	
+/**
 	 * Sets the silent flag for this dialog.  If silent then any Display calls will
 	 * not display a dialog, but rather immediately return S_OK;
 	 *
@@ -113,7 +113,8 @@ public class PickListDialog implements IPickListDialog
 		m_bRunSilent = newVal;
 	}
 	
-	/**
+	
+/**
 	 * Add a selection to the dialog.
 	 *
 	 * @param sItem[in]
@@ -128,7 +129,8 @@ public class PickListDialog implements IPickListDialog
 		}
    }
 
-	/**
+	
+/**
 	 * Adds all the string items to the pick list dialog
 	 */
    public void addPickListItems(ETList<String> pItems)
@@ -160,7 +162,8 @@ public class PickListDialog implements IPickListDialog
 	}
 
         
-	/**
+	
+/**
 	 * Display the dialog if not silent.  If silent then the default value is given as the return value.
 	 *
 	 * @param sTitle[in]
@@ -203,7 +206,8 @@ public class PickListDialog implements IPickListDialog
 //   }
    
         
-   /**
+   
+/**
      * Display the dialog if not silent.  If silent then the default value is given as the return value.
      *
      * @param sTitle Dialog title

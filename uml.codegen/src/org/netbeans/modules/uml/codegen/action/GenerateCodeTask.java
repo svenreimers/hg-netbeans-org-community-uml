@@ -71,7 +71,7 @@ public class GenerateCodeTask extends AbstractNBTask
     private boolean addMarkers = false;
     private boolean showGCDialog = true;
     
-    //Kris Richards - this is no longer an option. Set to default value.
+    
     public final static String ATTR_PREFIX = "m"; // NOI18N
         
     public GenerateCodeTask(
@@ -100,7 +100,7 @@ public class GenerateCodeTask extends AbstractNBTask
         setLogLevel(TERSE);
         setTaskName(getBundleMessage("LBL_GenerateCodeDialogTitle")); // NOI18N
         
-        //Kris Richards - preference now hidden - always yes.
+        
         
         setDisplayOutput(true);
 
@@ -121,7 +121,8 @@ public class GenerateCodeTask extends AbstractNBTask
     {
     }
     
-    /**
+    
+/**
      * @param elements The collection of elements to generate for
      *
      */

@@ -45,14 +45,13 @@
 
 package org.netbeans.modules.uml.reporting.dataobjects;
 
-/**
- *
- * @author Sheryl
- */
+
+
 public class ParameterUsageNodeData extends ObjectNodeData
 {
     
-    /**
+    
+/**
      * Creates a new instance of ParameterUsageNodeData
      */
     public ParameterUsageNodeData()

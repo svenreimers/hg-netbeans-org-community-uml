@@ -49,10 +49,8 @@ import org.netbeans.api.visual.model.ObjectState;
 import org.netbeans.modules.uml.drawingarea.dataobject.UMLDiagramDataObject;
 import org.netbeans.modules.uml.drawingarea.persistence.PersistenceUtil;
 
-/**
- *
- * @author Jyothi
- */
+
+
 public class SceneChangeListener extends ObjectSceneListenerAdapter {
     UMLDiagramDataObject dobj;
     GraphScene scene;

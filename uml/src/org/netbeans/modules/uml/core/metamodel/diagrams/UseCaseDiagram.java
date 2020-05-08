@@ -53,7 +53,8 @@ import org.netbeans.modules.uml.core.support.umlsupport.XMLManip;
 
 abstract public class UseCaseDiagram extends Diagram implements IUseCaseDiagram
 {
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.VersionableElement#buildNodePresence(java.lang.String, org.dom4j.Document, org.dom4j.Node)
      */
     public void establishNodePresence(Document doc, Node node)
@@ -61,7 +62,8 @@ abstract public class UseCaseDiagram extends Diagram implements IUseCaseDiagram
          buildNodePresence("UML:UseCaseDiagram", doc, node);
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.PresentationElement#establishNodeAttributes(org.dom4j.Element)
      */
     public void establishNodeAttributes(Element ele)

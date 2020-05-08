@@ -42,12 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File         : RoundTripAttributeEventsSink.java
- * Version      : 1.2
- * Description  : Listens for attribute changes in the Describe model
- * Author       : Ashish
- */
+
+
 package org.netbeans.modules.uml.integration.ide;
 
 import java.util.Vector;
@@ -67,30 +63,8 @@ import org.netbeans.modules.uml.core.roundtripframework.IRoundTripAttributeEvent
 import org.netbeans.modules.uml.core.support.umlsupport.IResultCell;
 import org.netbeans.modules.uml.core.support.umlsupport.Log;
 
-/**
- *  Listens for attribute changes in the Describe model.
- *
- * Revision History
- * No.  Date        Who         What
- * ---  ----        ---         ----
- *   1  2002-04-23  Darshan     Added debug log statements.
- *   2  2002-04-25  Darshan     Added support for IDE integrations to add
- *                              secondary listeners to this.
- *   3  2002-04-26  Darshan     Removed diagnostic messages from second
- *                              (post-change) event functions. Also added
- *                              calls to fire attribute change events to the
- *                              secondary (IDE) listener.
- *   4  2002-05-03  Darshan     Removed the 'Unnamed' hack that attempted to
- *                              recognize spurious create attribute events - the
- *                              hack wasn't working anyway.
- *   5  2002-06-22  Darshan     Replaced use of IAttribute with
- *                              IStructuralFeature, included Sumitabh's fix for
- *                              the NullPE when dragging navigable ends.
- *   6  2002-08-06  Mukta       Added code to handle IAttributeTypeChangeRequest
- *
- * @author  Ashish
- * @version 1.0
- */
+
+
 public class RoundTripAttributeEventsSink extends RoundTripSource
                         implements IRoundTripAttributeEventsSink {
 

@@ -58,7 +58,8 @@ public class RequirementArtifact extends Artifact implements IRequirementArtifac
 		super();	
 	}
 
-	/**
+	
+/**
 	 * The absolute path to the associated fil
 	 * @return String
 	 */
@@ -67,7 +68,8 @@ public class RequirementArtifact extends Artifact implements IRequirementArtifac
 		return getAttributeValue("requirementID");
 	}
 
-	/**
+	
+/**
 	 * @return
 	 */
 	public String getRequirementProviderID()
@@ -75,7 +77,8 @@ public class RequirementArtifact extends Artifact implements IRequirementArtifac
 		return getAttributeValue("requirementProviderID");
 	}
 
-	/**
+	
+/**
 	 * @return
 	 */
 	public String getRequirementSourceID() 
@@ -83,7 +86,8 @@ public class RequirementArtifact extends Artifact implements IRequirementArtifac
 		return getAttributeValue("requirementSourceID");
 	}
 
-	/**
+	
+/**
 	 * @param string
 	 */
 	public void setRequirementID(String newVal)
@@ -91,7 +95,8 @@ public class RequirementArtifact extends Artifact implements IRequirementArtifac
 		setAttributeValue("requirementID",newVal);
 	}
 
-	/**
+	
+/**
 	 * @param string
 	 */
 	public void setRequirementProviderID(String newVal) 
@@ -119,7 +124,8 @@ public class RequirementArtifact extends Artifact implements IRequirementArtifac
        return getAttributeValue("requirementProjectName");
     }
     
-	/**
+	
+/**
 	 * @param newVal
 	 */
 	public void setRequirementSourceID(String newVal) 

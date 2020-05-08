@@ -66,11 +66,8 @@ import org.netbeans.modules.uml.core.scm.ISCMEventsSink;
 import org.netbeans.modules.uml.core.scm.ISCMItemGroup;
 import org.netbeans.modules.uml.core.scm.ISCMOptions;
 
-/**
- * @author sumitabhk
- *
- *
- */
+
+
 public class SourceNavigator implements ISourceNavigator, IArtifactEventsSink,
 										IProjectEventsSink, IWSProjectEventsSink,
 										ISCMEventsSink
@@ -97,7 +94,8 @@ public class SourceNavigator implements ISourceNavigator, IArtifactEventsSink,
 		helper.registerForSCMEvents(this);
 	}
 
-	/**
+	
+/**
 	 *
 	 * Adds a tab and opens a source file.
 	 *
@@ -124,7 +122,8 @@ public class SourceNavigator implements ISourceNavigator, IArtifactEventsSink,
 		return 0;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Adds a tab and opens a source file.
 	 *
@@ -147,7 +146,8 @@ public class SourceNavigator implements ISourceNavigator, IArtifactEventsSink,
 		return 0;
 	}
 
-	/**
+	
+/**
 	 * @param elem
 	 * @param linenumberDelta
 	 * @return
@@ -158,7 +158,8 @@ public class SourceNavigator implements ISourceNavigator, IArtifactEventsSink,
 		return null;
 	}
 
-	/**
+	
+/**
 	 * @param elemToNav
 	 * @param linenumberDelta
 	 */
@@ -168,7 +169,8 @@ public class SourceNavigator implements ISourceNavigator, IArtifactEventsSink,
 
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.support.presentationnavigation.ISourceNavigator#closeSource(java.lang.String)
 	 */
 	public long closeSource(String FilePath)
@@ -177,7 +179,8 @@ public class SourceNavigator implements ISourceNavigator, IArtifactEventsSink,
 		return 0;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Closes source files for @a Elem.
 	 *
@@ -212,7 +215,8 @@ public class SourceNavigator implements ISourceNavigator, IArtifactEventsSink,
 		return 0;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Navigates to line in source document.
 	 *
@@ -227,7 +231,8 @@ public class SourceNavigator implements ISourceNavigator, IArtifactEventsSink,
 		return 0;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.support.presentationnavigation.ISourceNavigator#navigateToCol(int)
 	 */
 	public long navigateToCol(int Num)
@@ -236,7 +241,8 @@ public class SourceNavigator implements ISourceNavigator, IArtifactEventsSink,
 		return 0;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.support.presentationnavigation.ISourceNavigator#navigateToPos(int, int)
 	 */
 	public long navigateToPos(int Col, int Line)
@@ -245,7 +251,8 @@ public class SourceNavigator implements ISourceNavigator, IArtifactEventsSink,
 		return 0;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.support.presentationnavigation.ISourceNavigator#selectCol(int)
 	 */
 	public long selectCol(int Num)
@@ -254,7 +261,8 @@ public class SourceNavigator implements ISourceNavigator, IArtifactEventsSink,
 		return 0;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.support.presentationnavigation.ISourceNavigator#selectLine(int)
 	 */
 	public long selectLine(int Num)
@@ -263,7 +271,8 @@ public class SourceNavigator implements ISourceNavigator, IArtifactEventsSink,
 		return 0;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.support.presentationnavigation.ISourceNavigator#selectColRange(int, int, int)
 	 */
 	public long selectColRange(int Col, int Start, int End)
@@ -272,7 +281,8 @@ public class SourceNavigator implements ISourceNavigator, IArtifactEventsSink,
 		return 0;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.support.presentationnavigation.ISourceNavigator#selectLineRange(int, int, int)
 	 */
 	public long selectLineRange(int Col, int Start, int End)
@@ -281,7 +291,8 @@ public class SourceNavigator implements ISourceNavigator, IArtifactEventsSink,
 		return 0;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.support.presentationnavigation.ISourceNavigator#refresh(java.lang.String)
 	 */
 	public long refresh(String FilePath)
@@ -290,7 +301,8 @@ public class SourceNavigator implements ISourceNavigator, IArtifactEventsSink,
 		return 0;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.support.presentationnavigation.ISourceNavigator#closeAllSource()
 	 */
 	public long closeAllSource()
@@ -299,7 +311,8 @@ public class SourceNavigator implements ISourceNavigator, IArtifactEventsSink,
 		return 0;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.support.presentationnavigation.ISourceNavigator#refreshElem(org.netbeans.modules.uml.core.metamodel.core.foundation.IElement)
 	 */
 	public long refreshElem(IElement Elem)
@@ -308,7 +321,8 @@ public class SourceNavigator implements ISourceNavigator, IArtifactEventsSink,
 		return 0;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.support.presentationnavigation.ISourceNavigator#saveElemSource(org.netbeans.modules.uml.core.metamodel.core.foundation.IElement)
 	 */
 	public long saveElemSource(IElement Elem)
@@ -317,7 +331,8 @@ public class SourceNavigator implements ISourceNavigator, IArtifactEventsSink,
 		return 0;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.support.presentationnavigation.ISourceNavigator#saveSource(org.netbeans.modules.uml.core.metamodel.structure.ISourceFileArtifact)
 	 */
 	public long saveSource(ISourceFileArtifact pArtifact)
@@ -326,7 +341,8 @@ public class SourceNavigator implements ISourceNavigator, IArtifactEventsSink,
 		return 0;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.support.presentationnavigation.ISourceNavigator#closeArtifact(org.netbeans.modules.uml.core.metamodel.structure.ISourceFileArtifact)
 	 */
 	public long closeArtifact(ISourceFileArtifact pArtifact)
@@ -335,7 +351,8 @@ public class SourceNavigator implements ISourceNavigator, IArtifactEventsSink,
 		return 0;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.coreapplication.INavigator#navigateToElement(org.netbeans.modules.uml.core.metamodel.core.foundation.IElement)
 	 */
 	public long navigateToElement(IElement pVal)
@@ -344,7 +361,8 @@ public class SourceNavigator implements ISourceNavigator, IArtifactEventsSink,
 		return 0;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.structure.IArtifactEventsSink#onPreFileNameModified(org.netbeans.modules.uml.core.metamodel.structure.IArtifact, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onPreFileNameModified(IArtifact pArtifact, String newFileName, IResultCell cell)
@@ -353,7 +371,8 @@ public class SourceNavigator implements ISourceNavigator, IArtifactEventsSink,
 
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.structure.IArtifactEventsSink#onFileNameModified(org.netbeans.modules.uml.core.metamodel.structure.IArtifact, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onFileNameModified(IArtifact pArtifact, String oldFileName, IResultCell cell)
@@ -362,7 +381,8 @@ public class SourceNavigator implements ISourceNavigator, IArtifactEventsSink,
 
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.structure.IArtifactEventsSink#onPreDirty(org.netbeans.modules.uml.core.metamodel.structure.IArtifact, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onPreDirty(IArtifact pArtifact, IResultCell cell)
@@ -371,7 +391,8 @@ public class SourceNavigator implements ISourceNavigator, IArtifactEventsSink,
 
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.structure.IArtifactEventsSink#onDirty(org.netbeans.modules.uml.core.metamodel.structure.IArtifact, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onDirty(IArtifact pArtifact, IResultCell cell)
@@ -380,7 +401,8 @@ public class SourceNavigator implements ISourceNavigator, IArtifactEventsSink,
 
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.structure.IArtifactEventsSink#onPreSave(org.netbeans.modules.uml.core.metamodel.structure.IArtifact, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onPreSave(IArtifact pArtifact, String fileName, IResultCell cell)
@@ -389,7 +411,8 @@ public class SourceNavigator implements ISourceNavigator, IArtifactEventsSink,
 
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.structure.IArtifactEventsSink#onSave(org.netbeans.modules.uml.core.metamodel.structure.IArtifact, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onSave(IArtifact pArtifact, String fileName, IResultCell cell)
@@ -398,7 +421,8 @@ public class SourceNavigator implements ISourceNavigator, IArtifactEventsSink,
 
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.structure.IProjectEventsSink#onPreModeModified(org.netbeans.modules.uml.core.metamodel.structure.IProject, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onPreModeModified(IProject pProject, String newValue, IResultCell cell)
@@ -407,7 +431,8 @@ public class SourceNavigator implements ISourceNavigator, IArtifactEventsSink,
 
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.structure.IProjectEventsSink#onModeModified(org.netbeans.modules.uml.core.metamodel.structure.IProject, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onModeModified(IProject pProject, IResultCell cell)
@@ -416,7 +441,8 @@ public class SourceNavigator implements ISourceNavigator, IArtifactEventsSink,
 
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.structure.IProjectEventsSink#onPreDefaultLanguageModified(org.netbeans.modules.uml.core.metamodel.structure.IProject, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onPreDefaultLanguageModified(IProject pProject, String newValue, IResultCell cell)
@@ -425,7 +451,8 @@ public class SourceNavigator implements ISourceNavigator, IArtifactEventsSink,
 
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.structure.IProjectEventsSink#onDefaultLanguageModified(org.netbeans.modules.uml.core.metamodel.structure.IProject, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onDefaultLanguageModified(IProject pProject, IResultCell cell)
@@ -434,7 +461,8 @@ public class SourceNavigator implements ISourceNavigator, IArtifactEventsSink,
 
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.structure.IProjectEventsSink#onProjectPreCreate(org.netbeans.modules.uml.core.workspacemanagement.IWorkspace, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onProjectPreCreate(IWorkspace space, IResultCell cell)
@@ -443,7 +471,8 @@ public class SourceNavigator implements ISourceNavigator, IArtifactEventsSink,
 
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.structure.IProjectEventsSink#onProjectCreated(org.netbeans.modules.uml.core.metamodel.structure.IProject, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onProjectCreated(IProject Project, IResultCell cell)
@@ -452,7 +481,8 @@ public class SourceNavigator implements ISourceNavigator, IArtifactEventsSink,
 
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.structure.IProjectEventsSink#onProjectPreOpen(org.netbeans.modules.uml.core.workspacemanagement.IWorkspace, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onProjectPreOpen(IWorkspace space, String projName, IResultCell cell)
@@ -461,7 +491,8 @@ public class SourceNavigator implements ISourceNavigator, IArtifactEventsSink,
 
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.structure.IProjectEventsSink#onProjectOpened(org.netbeans.modules.uml.core.metamodel.structure.IProject, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onProjectOpened(IProject Project, IResultCell cell)
@@ -470,7 +501,8 @@ public class SourceNavigator implements ISourceNavigator, IArtifactEventsSink,
 
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.structure.IProjectEventsSink#onProjectPreRename(org.netbeans.modules.uml.core.metamodel.structure.IProject, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onProjectPreRename(IProject Project, String newName, IResultCell cell)
@@ -479,7 +511,8 @@ public class SourceNavigator implements ISourceNavigator, IArtifactEventsSink,
 
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.structure.IProjectEventsSink#onProjectRenamed(org.netbeans.modules.uml.core.metamodel.structure.IProject, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onProjectRenamed(IProject Project, String oldName, IResultCell cell)
@@ -488,7 +521,8 @@ public class SourceNavigator implements ISourceNavigator, IArtifactEventsSink,
 
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.structure.IProjectEventsSink#onProjectPreClose(org.netbeans.modules.uml.core.metamodel.structure.IProject, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onProjectPreClose(IProject Project, IResultCell cell)
@@ -497,7 +531,8 @@ public class SourceNavigator implements ISourceNavigator, IArtifactEventsSink,
 
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.structure.IProjectEventsSink#onProjectClosed(org.netbeans.modules.uml.core.metamodel.structure.IProject, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onProjectClosed(IProject Project, IResultCell cell)
@@ -506,7 +541,8 @@ public class SourceNavigator implements ISourceNavigator, IArtifactEventsSink,
 
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.structure.IProjectEventsSink#onProjectPreSave(org.netbeans.modules.uml.core.metamodel.structure.IProject, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onProjectPreSave(IProject Project, IResultCell cell)
@@ -515,7 +551,8 @@ public class SourceNavigator implements ISourceNavigator, IArtifactEventsSink,
 
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.structure.IProjectEventsSink#onProjectSaved(org.netbeans.modules.uml.core.metamodel.structure.IProject, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onProjectSaved(IProject Project, IResultCell cell)
@@ -524,7 +561,8 @@ public class SourceNavigator implements ISourceNavigator, IArtifactEventsSink,
 
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.structure.IProjectEventsSink#onPreReferencedLibraryAdded(org.netbeans.modules.uml.core.metamodel.structure.IProject, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onPreReferencedLibraryAdded(IProject Project, String refLibLoc, IResultCell cell)
@@ -533,7 +571,8 @@ public class SourceNavigator implements ISourceNavigator, IArtifactEventsSink,
 
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.structure.IProjectEventsSink#onReferencedLibraryAdded(org.netbeans.modules.uml.core.metamodel.structure.IProject, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onReferencedLibraryAdded(IProject Project, String refLibLoc, IResultCell cell)
@@ -542,7 +581,8 @@ public class SourceNavigator implements ISourceNavigator, IArtifactEventsSink,
 
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.structure.IProjectEventsSink#onPreReferencedLibraryRemoved(org.netbeans.modules.uml.core.metamodel.structure.IProject, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onPreReferencedLibraryRemoved(IProject Project, String refLibLoc, IResultCell cell)
@@ -551,7 +591,8 @@ public class SourceNavigator implements ISourceNavigator, IArtifactEventsSink,
 
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.structure.IProjectEventsSink#onReferencedLibraryRemoved(org.netbeans.modules.uml.core.metamodel.structure.IProject, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onReferencedLibraryRemoved(IProject Project, String refLibLoc, IResultCell cell)
@@ -560,7 +601,8 @@ public class SourceNavigator implements ISourceNavigator, IArtifactEventsSink,
 
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.workspacemanagement.IWSProjectEventsSink#onWSProjectPreCreate(org.netbeans.modules.uml.core.workspacemanagement.IWorkspace, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onWSProjectPreCreate(IWorkspace space, String projectName, IResultCell cell)
@@ -569,7 +611,8 @@ public class SourceNavigator implements ISourceNavigator, IArtifactEventsSink,
 
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.workspacemanagement.IWSProjectEventsSink#onWSProjectCreated(org.netbeans.modules.uml.core.workspacemanagement.IWSProject, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onWSProjectCreated(IWSProject project, IResultCell cell)
@@ -578,7 +621,8 @@ public class SourceNavigator implements ISourceNavigator, IArtifactEventsSink,
 
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.workspacemanagement.IWSProjectEventsSink#onWSProjectPreOpen(org.netbeans.modules.uml.core.workspacemanagement.IWorkspace, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onWSProjectPreOpen(IWorkspace space, String projName, IResultCell cell)
@@ -587,7 +631,8 @@ public class SourceNavigator implements ISourceNavigator, IArtifactEventsSink,
 
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.workspacemanagement.IWSProjectEventsSink#onWSProjectOpened(org.netbeans.modules.uml.core.workspacemanagement.IWSProject, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onWSProjectOpened(IWSProject project, IResultCell cell)
@@ -596,7 +641,8 @@ public class SourceNavigator implements ISourceNavigator, IArtifactEventsSink,
 
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.workspacemanagement.IWSProjectEventsSink#onWSProjectPreRemove(org.netbeans.modules.uml.core.workspacemanagement.IWSProject, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onWSProjectPreRemove(IWSProject project, IResultCell cell)
@@ -605,7 +651,8 @@ public class SourceNavigator implements ISourceNavigator, IArtifactEventsSink,
 
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.workspacemanagement.IWSProjectEventsSink#onWSProjectRemoved(org.netbeans.modules.uml.core.workspacemanagement.IWSProject, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onWSProjectRemoved(IWSProject project, IResultCell cell)
@@ -614,7 +661,8 @@ public class SourceNavigator implements ISourceNavigator, IArtifactEventsSink,
 
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.workspacemanagement.IWSProjectEventsSink#onWSProjectPreInsert(org.netbeans.modules.uml.core.workspacemanagement.IWorkspace, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onWSProjectPreInsert(IWorkspace space, String projectName, IResultCell cell)
@@ -623,7 +671,8 @@ public class SourceNavigator implements ISourceNavigator, IArtifactEventsSink,
 
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.workspacemanagement.IWSProjectEventsSink#onWSProjectInserted(org.netbeans.modules.uml.core.workspacemanagement.IWSProject, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onWSProjectInserted(IWSProject project, IResultCell cell)
@@ -632,7 +681,8 @@ public class SourceNavigator implements ISourceNavigator, IArtifactEventsSink,
 
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.workspacemanagement.IWSProjectEventsSink#onWSProjectPreRename(org.netbeans.modules.uml.core.workspacemanagement.IWSProject, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onWSProjectPreRename(IWSProject project, String newName, IResultCell cell)
@@ -641,7 +691,8 @@ public class SourceNavigator implements ISourceNavigator, IArtifactEventsSink,
 
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.workspacemanagement.IWSProjectEventsSink#onWSProjectRenamed(org.netbeans.modules.uml.core.workspacemanagement.IWSProject, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onWSProjectRenamed(IWSProject project, String oldName, IResultCell cell)
@@ -650,7 +701,8 @@ public class SourceNavigator implements ISourceNavigator, IArtifactEventsSink,
 
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.workspacemanagement.IWSProjectEventsSink#onWSProjectPreClose(org.netbeans.modules.uml.core.workspacemanagement.IWSProject, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onWSProjectPreClose(IWSProject project, IResultCell cell)
@@ -659,7 +711,8 @@ public class SourceNavigator implements ISourceNavigator, IArtifactEventsSink,
 
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.workspacemanagement.IWSProjectEventsSink#onWSProjectClosed(org.netbeans.modules.uml.core.workspacemanagement.IWSProject, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onWSProjectClosed(IWSProject project, IResultCell cell)
@@ -668,7 +721,8 @@ public class SourceNavigator implements ISourceNavigator, IArtifactEventsSink,
 
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.workspacemanagement.IWSProjectEventsSink#onWSProjectPreSave(org.netbeans.modules.uml.core.workspacemanagement.IWSProject, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onWSProjectPreSave(IWSProject project, IResultCell cell)
@@ -677,7 +731,8 @@ public class SourceNavigator implements ISourceNavigator, IArtifactEventsSink,
 
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.workspacemanagement.IWSProjectEventsSink#onWSProjectSaved(org.netbeans.modules.uml.core.workspacemanagement.IWSProject, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onWSProjectSaved(IWSProject project, IResultCell cell)
@@ -686,7 +741,8 @@ public class SourceNavigator implements ISourceNavigator, IArtifactEventsSink,
 
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.support.scmintegration.ISCMEventsSink#onPreFeatureExecuted(int, org.netbeans.modules.uml.ui.support.scmintegration.ISCMItemGroup, org.netbeans.modules.uml.ui.support.scmintegration.ISCMOptions, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onPreFeatureExecuted(int kind, ISCMItemGroup Group, ISCMOptions pOptions, IResultCell cell)
@@ -695,7 +751,8 @@ public class SourceNavigator implements ISourceNavigator, IArtifactEventsSink,
 
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.support.scmintegration.ISCMEventsSink#onFeatureExecuted(int, org.netbeans.modules.uml.ui.support.scmintegration.ISCMItemGroup, org.netbeans.modules.uml.ui.support.scmintegration.ISCMOptions, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onFeatureExecuted(int kind, ISCMItemGroup Group, ISCMOptions pOptions, IResultCell cell)

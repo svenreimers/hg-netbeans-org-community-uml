@@ -65,11 +65,8 @@ import org.netbeans.test.umllib.exceptions.NotFoundException;
 import org.netbeans.test.umllib.testcases.UMLTestCase;
 
 
-/**
- *
- * @author psb
- * @spec uml/UML-EditControl.xml
- */
+
+
 public class ActivityDiagramNameElements extends UMLTestCase {
     
     //some system properties

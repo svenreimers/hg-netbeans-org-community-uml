@@ -42,6 +42,7 @@
  * made subject to such option by the copyright holder.
  */
 
+
 /*
  * Created on Nov 5, 2003
  *
@@ -53,10 +54,8 @@ import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IParameter;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
-/**
- * @author aztec
- *
- */
+
+
 public interface IJavaMethodChangeHandler extends IJavaChangeHandler 
 {
 	public void handleRequest(IRequestValidator request);

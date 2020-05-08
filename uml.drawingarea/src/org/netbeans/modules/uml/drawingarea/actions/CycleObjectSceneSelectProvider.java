@@ -50,10 +50,8 @@ import org.netbeans.api.visual.widget.Widget;
 import org.netbeans.modules.uml.drawingarea.palette.context.ContextPaletteManager;
 import org.netbeans.modules.uml.drawingarea.util.Util;
 
-/**
- *
- * @author treyspiva
- */
+
+
 public class CycleObjectSceneSelectProvider implements CycleFocusProvider
 {
 

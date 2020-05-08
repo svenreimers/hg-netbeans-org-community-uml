@@ -59,7 +59,8 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 public class InteractionOperand extends InteractionFragment
         implements IInteractionOperand
 {
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IVersionableElement#delete()
      */
     public void delete()
@@ -82,7 +83,8 @@ public class InteractionOperand extends InteractionFragment
         super.delete();
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IInteractionOperand#getFragments()
      */
     public ETList<IInteractionFragment> getFragments()
@@ -92,7 +94,8 @@ public class InteractionOperand extends InteractionFragment
                 m_Node, "UML:Element.ownedElement/*", IInteractionFragment.class );
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IInteractionOperand#removeFragment(org.netbeans.modules.uml.core.metamodel.dynamics.IInteractionFragment)
      */
     public void removeFragment(IInteractionFragment frag)
@@ -100,7 +103,8 @@ public class InteractionOperand extends InteractionFragment
         removeElement(frag);
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IInteractionOperand#addFragment(org.netbeans.modules.uml.core.metamodel.dynamics.IInteractionFragment)
      */
     public void addFragment(IInteractionFragment frag)
@@ -108,7 +112,8 @@ public class InteractionOperand extends InteractionFragment
         addElement(frag);
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IInteractionOperand#createGuard()
      */
     public IInteractionConstraint createGuard()
@@ -134,7 +139,8 @@ public class InteractionOperand extends InteractionFragment
         return guard;
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IInteractionOperand#getGuard()
      */
     public IInteractionConstraint getGuard()
@@ -145,7 +151,8 @@ public class InteractionOperand extends InteractionFragment
                 "UML:InteractionOperand.guard/*", IInteractionConstraint.class );
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IInteractionOperand#setGuard(org.netbeans.modules.uml.core.metamodel.dynamics.IInteractionConstraint)
      */
     public void setGuard(IInteractionConstraint value)
@@ -154,7 +161,8 @@ public class InteractionOperand extends InteractionFragment
                 "UML:InteractionOperand.guard", value );
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IInteractionOperand#getCoveredMessages()
      */
     public ETList<IMessage> getCoveredMessages()
@@ -193,7 +201,8 @@ public class InteractionOperand extends InteractionFragment
         return messages;
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.VersionableElement#establishNodePresence(org.dom4j.Document, org.dom4j.Node)
      */
     public void establishNodePresence(Document doc, Node node)

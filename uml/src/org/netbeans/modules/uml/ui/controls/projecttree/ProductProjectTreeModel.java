@@ -43,6 +43,7 @@
  */
 
 
+
 /*
  * Created on May 27, 2003
  *
@@ -79,17 +80,8 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 import org.netbeans.modules.uml.core.support.umlutils.ETArrayList;
 import org.netbeans.modules.uml.core.support.umlutils.IDataFormatter;
 
-/**
- * The bussiness logic that is need to maintain the project tree information.
- * The ProductProjectTreeModel uses implementaiton of
- * <code>IProjectTreeEngine</code> to customize how project tree data is
- * gathered.  The data of a project tree nodes are represented by in ITreeItem
- * implementations.
- *
- * @see IProjectTreeEngine
- * @see ITreeItem
- * @author Trey Spiva
- */
+
+
 public abstract class ProductProjectTreeModel implements IProjectTreeModel
 {
    /** The product to use that specifies the tree structure.*/
@@ -124,7 +116,8 @@ public abstract class ProductProjectTreeModel implements IProjectTreeModel
    }
    
    
-   /**
+   
+/**
     * Retreives the project tree model name.  The model name can be used to 
     * determine the type of project tree that is being displayed.
     */
@@ -133,7 +126,8 @@ public abstract class ProductProjectTreeModel implements IProjectTreeModel
       return "ProjectTree"; //$NON-NLS-1$
    }
    
-   /**
+   
+/**
     * Retrieves the node factory to use when creating nodes for the model.
     *
     * @return The factory to use.
@@ -147,7 +141,8 @@ public abstract class ProductProjectTreeModel implements IProjectTreeModel
 	{
 		return m_TreeEngines.get(0);
 	}   
-   /**
+   
+/**
     * Initialize the model to the project.  This is a good
     * place to initialize all sinks and project tree engines.
     */
@@ -165,7 +160,8 @@ public abstract class ProductProjectTreeModel implements IProjectTreeModel
       }
    }
    
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see javax.swing.tree.TreeModel#getChild(java.lang.Object, int)
     */
    public ITreeItem getChildItem(Object parent, int index)
@@ -184,7 +180,8 @@ public abstract class ProductProjectTreeModel implements IProjectTreeModel
       return retVal;
    }
    
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see javax.swing.tree.TreeModel#getChildCount(java.lang.Object)
     */
    public int getChildCount(Object parent)
@@ -210,7 +207,8 @@ public abstract class ProductProjectTreeModel implements IProjectTreeModel
       return m_TreeRoot;
    }
    
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see javax.swing.tree.TreeModel#isLeaf(java.lang.Object)
     */
    public boolean isLeaf(Object node)
@@ -219,7 +217,8 @@ public abstract class ProductProjectTreeModel implements IProjectTreeModel
       return (children == 0);
    }
    
-   /**
+   
+/**
     * Test if it is OK to delete a tree item.  The registered IProjectTreeEngine
     * instances are first given chance to deny the delete operation.
     *
@@ -244,7 +243,8 @@ public abstract class ProductProjectTreeModel implements IProjectTreeModel
       return retVal;
    }
    
-   /**
+   
+/**
     * Test if it is OK to edit a tree item.  The registered IProjectTreeEngine
     * instances are first given chance to deny the edit operation.
     *
@@ -269,7 +269,8 @@ public abstract class ProductProjectTreeModel implements IProjectTreeModel
       return retVal;
    }
    
-   /**
+   
+/**
     * Clears the content of the model and reload the workspace.  This basically
     * a refresh.
     */
@@ -278,7 +279,8 @@ public abstract class ProductProjectTreeModel implements IProjectTreeModel
       clear(true);
    }
    
-   /**
+   
+/**
     * Clears the content of the model.
     *
     * @param reload <b>true</b> if the workspace is to be reloaded.
@@ -302,7 +304,8 @@ public abstract class ProductProjectTreeModel implements IProjectTreeModel
    // Getter And Setter Methods
    //**************************************************
    
-   /**
+   
+/**
     * Retrieves the product that specifies the tree structure.
     *
     * @return The product.
@@ -312,7 +315,8 @@ public abstract class ProductProjectTreeModel implements IProjectTreeModel
       return m_Product;
    }
    
-   /**
+   
+/**
     * Sets the product that specifies the tree structure.
     *
     * @param product The new product.
@@ -339,7 +343,8 @@ public abstract class ProductProjectTreeModel implements IProjectTreeModel
       return retVal;
    }
    
-   /**
+   
+/**
     * @param workspace
     */
    public void setWorkspace(IWorkspace workspace)
@@ -362,7 +367,8 @@ public abstract class ProductProjectTreeModel implements IProjectTreeModel
       }
    }
    
-   /**
+   
+/**
     * @param workspace
     */
    private void addProjects(IWorkspace workspace)
@@ -406,7 +412,8 @@ public abstract class ProductProjectTreeModel implements IProjectTreeModel
       }
    }
    
-   /**
+   
+/**
     * @param name
     * @param workspace
     * @param app
@@ -442,7 +449,8 @@ public abstract class ProductProjectTreeModel implements IProjectTreeModel
       return projectNode;
    }
    
-   /**
+   
+/**
     * Adds a node to the tree with a description and an alternate element.
     *
     * @param pParent The parent item for the one to create
@@ -478,7 +486,8 @@ public abstract class ProductProjectTreeModel implements IProjectTreeModel
    }
    
    
-   /**
+   
+/**
     * Adds a node to the tree with a description and an alternate element.
     *
     * @param pParent The parent item for the one to create
@@ -602,7 +611,8 @@ public abstract class ProductProjectTreeModel implements IProjectTreeModel
       return retVal;
    }
    
-   /**
+   
+/**
     * Inserts the new node into the parent child list at a specified location.
     * The notifyOfAddedChildren will be sent after the node is added.
     *
@@ -620,7 +630,8 @@ public abstract class ProductProjectTreeModel implements IProjectTreeModel
       notifyOfAddedChildren(parent, childIndices);
    }
    
-   /**
+   
+/**
     * Remove all instances of the model element from the tree.
     *
     * @param element The element to remove.
@@ -638,7 +649,8 @@ public abstract class ProductProjectTreeModel implements IProjectTreeModel
       }
    }
    
-   /**
+   
+/**
     * The IProject will be associated to the node that represents the IWSProject
     * element.
     *
@@ -660,7 +672,8 @@ public abstract class ProductProjectTreeModel implements IProjectTreeModel
       return retVal;
    }
    
-   /**
+   
+/**
     * @return
     */
    public ETArrayList < String > getUnfilteredProjects()
@@ -684,7 +697,8 @@ public abstract class ProductProjectTreeModel implements IProjectTreeModel
       m_TreeEngines.remove(engine);
    }
    
-   /**
+   
+/**
     * Message this to remove node from its parent. This will message
     * nodesWereRemoved to create the appropriate event. This is the
     * preferred way to remove a node as it handles the event creation
@@ -708,7 +722,8 @@ public abstract class ProductProjectTreeModel implements IProjectTreeModel
       notifyOfRemovedChildren(parent, childIndex, removedArray);
    }
    
-   /**
+   
+/**
     * Retrieves the index of a child node.
     *
     * @param parent The parent of the child node.
@@ -735,7 +750,8 @@ public abstract class ProductProjectTreeModel implements IProjectTreeModel
       return retVal;
    }
    
-   /**
+   
+/**
     * Sorts the children of a node.  The children will be sorted occuring to
     * the default sort order.
     *
@@ -746,7 +762,8 @@ public abstract class ProductProjectTreeModel implements IProjectTreeModel
       sortChildren(parent, new ProjectTreeComparable());
    }
    
-   /**
+   
+/**
     * Sorts the children of a node.  The children will be sorted occuring to
     * the Comparable interface.
     *
@@ -770,7 +787,8 @@ public abstract class ProductProjectTreeModel implements IProjectTreeModel
 //      }
    }
    
-   /**
+   
+/**
     * Locate the node that represents the model element.
     *
     * @param element The model element to locate.
@@ -795,7 +813,8 @@ public abstract class ProductProjectTreeModel implements IProjectTreeModel
       });
    }
    
-   /**
+   
+/**
     * Locates the nodes that represents the model element.
     *
     * @param element The model element to locate.
@@ -811,7 +830,8 @@ public abstract class ProductProjectTreeModel implements IProjectTreeModel
       return retVal;
    }
    
-   /**
+   
+/**
     * @param element
     * @param item
     * @param items
@@ -837,7 +857,8 @@ public abstract class ProductProjectTreeModel implements IProjectTreeModel
       }
    }
    
-   /**
+   
+/**
     * Locate the node that represents the model element.
     *
     * @param filename The name of the file that specifies the diagram.
@@ -895,7 +916,8 @@ public abstract class ProductProjectTreeModel implements IProjectTreeModel
    
    
    
-   /**
+   
+/**
     * Adds a listener for the TreeModelEvent posted after the tree changes.
     *
     * @param listener The lisener to add.
@@ -905,7 +927,8 @@ public abstract class ProductProjectTreeModel implements IProjectTreeModel
       m_Listeners.add(listener);
    }
    
-   /**
+   
+/**
     * Removes a listener previously added with <code>addProjectTreeModelListener</code>
     *
     * @param listener The listener to remove.
@@ -915,7 +938,8 @@ public abstract class ProductProjectTreeModel implements IProjectTreeModel
       m_Listeners.remove(listener);
    }
    
-   /**
+   
+/**
     * Fires the projectClosed event to every registered IProjectTreeListener
     *
     * @param node The node that is affected.
@@ -935,7 +959,8 @@ public abstract class ProductProjectTreeModel implements IProjectTreeModel
       }
    }
    
-   /**
+   
+/**
     * Fires the projectOpened event to every registered IProjectTreeListener
     *
     * @param node The node that is affected.
@@ -959,7 +984,8 @@ public abstract class ProductProjectTreeModel implements IProjectTreeModel
    // Helper Methods
    //**************************************************
    
-   /**
+   
+/**
     * Retrieves the node that represents a project.  The project is located by
     * name of the project.
     *
@@ -994,7 +1020,8 @@ public abstract class ProductProjectTreeModel implements IProjectTreeModel
       return foundProject;
    }
    
-   /**
+   
+/**
     * Retrieves the node that represents a project.  The project is located by
     * name of the project.
     *
@@ -1032,7 +1059,8 @@ public abstract class ProductProjectTreeModel implements IProjectTreeModel
       return retVal;
    }
    
-   /**
+   
+/**
     * Initializes and attaches the engines required by the model.
     */
    protected void attachEngines()
@@ -1043,7 +1071,8 @@ public abstract class ProductProjectTreeModel implements IProjectTreeModel
       addEngine(adEngine);
    }
    
-   /**
+   
+/**
     * Attaches all of the required listeners.
     */
    protected void attachSinks()
@@ -1068,7 +1097,8 @@ public abstract class ProductProjectTreeModel implements IProjectTreeModel
    
    protected class CoreProductInitHandler extends CoreProductInitEventsAdapter
    {
-      /* (non-Javadoc)
+      
+/* (non-Javadoc)
        */
       public void onCoreProductPreQuit(ICoreProduct arg0, IResultCell arg1)
       {

@@ -43,6 +43,7 @@
  */
 
 
+
 /*
  * Created on May 22, 2003
  *
@@ -72,10 +73,8 @@ import java.awt.GraphicsEnvironment;
 import java.awt.Image;
 import org.netbeans.modules.uml.core.support.Debug;
 
-/**
- * @author treys
- *
- */
+
+
 public class ProjectTreeRender extends DefaultTreeCellRenderer implements TreeCellRenderer
 {
     private ImageIcon   m_WarningIcon      = null;
@@ -84,7 +83,8 @@ public class ProjectTreeRender extends DefaultTreeCellRenderer implements TreeCe
     {
     }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see javax.swing.tree.TreeCellRenderer#getTreeCellRendererComponent(javax.swing.JTree, java.lang.Object, boolean, boolean, boolean, int, boolean)
     */
     public Component getTreeCellRendererComponent(JTree  tree,
@@ -174,7 +174,8 @@ public class ProjectTreeRender extends DefaultTreeCellRenderer implements TreeCe
     //   {
     //   }
 
-    /**
+    
+/**
      * @param m_ProjectIcon
      * @param string
      * @return
@@ -188,7 +189,8 @@ public class ProjectTreeRender extends DefaultTreeCellRenderer implements TreeCe
         return image;
     }
 
-    /**
+    
+/**
      * @param value
      */
     private void formatElementForObject(Object value)

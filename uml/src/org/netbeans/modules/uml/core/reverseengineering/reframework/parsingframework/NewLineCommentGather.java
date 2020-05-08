@@ -42,20 +42,16 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : NewLineCommentGather.java
- * Created on : Oct 27, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework;
 
 import antlr.CommonASTWithHiddenTokens;
 import antlr.CommonHiddenStreamToken;
 import antlr.collections.AST;
 
-/**
- * @author Aztec
- */
+
+
 public class NewLineCommentGather extends CommentGather implements INewLineCommentGather
 {
     private int m_NewLineType;
@@ -70,7 +66,8 @@ public class NewLineCommentGather extends CommentGather implements INewLineComme
         m_NewLineType = newline;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.INewLineCommentGather#gather(antlr.collections.AST, org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ITokenDescriptor)
      */
     public ITokenDescriptor gather(AST pAST, ITokenDescriptor pDesc)
@@ -98,7 +95,8 @@ public class NewLineCommentGather extends CommentGather implements INewLineComme
         return null;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.INewLineCommentGather#getNewLineType()
      */
     public int getNewLineType()
@@ -137,7 +135,7 @@ public class NewLineCommentGather extends CommentGather implements INewLineComme
 
                 startLine = pHiddenToken.getLine();
                 startColumn = pHiddenToken.getColumn();
-                // TODO: Aztec - Need to modify source if we want this
+                
                 //startPos = pHiddenToken.getPosition();
 
                 String value = pHiddenToken.getText();

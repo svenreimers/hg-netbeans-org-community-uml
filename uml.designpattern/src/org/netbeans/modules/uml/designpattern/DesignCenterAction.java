@@ -54,12 +54,8 @@ import org.openide.util.HelpCtx;
 import org.openide.util.NbBundle;
 import org.openide.util.actions.CallbackSystemAction;
 
-/**
- * The DesignCenterAction will add a new design center control the the explorer
- * mode for the current workspace.
- * @author  Trey Spiva
- * @version 1.0
- */
+
+
 public class DesignCenterAction extends CallbackSystemAction
 {
    private ResourceBundle mBundle = null;
@@ -75,7 +71,8 @@ public class DesignCenterAction extends CallbackSystemAction
       //putValue(Action.SMALL_ICON, "org/netbeans/modules/uml/resources/designcenter.gif");
    }
    
-   /**
+   
+/**
     * Gets the name of the action.
     */
    public String getName()
@@ -84,7 +81,8 @@ public class DesignCenterAction extends CallbackSystemAction
       return (String)getValue(Action.NAME);
    }
    
-   /**
+   
+/**
     * Get a help context for the action
     * @return help for this action
     */
@@ -93,7 +91,8 @@ public class DesignCenterAction extends CallbackSystemAction
       return null;
    }
    
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see java.awt.event.ActionListener#actionPerformed(java.awt.event.ActionEvent)
     */
    public void actionPerformed(ActionEvent e)

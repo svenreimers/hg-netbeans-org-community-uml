@@ -47,9 +47,8 @@ package org.netbeans.modules.uml.core.generativeframework;
 
 import org.netbeans.modules.uml.core.AbstractUMLTestCase;
 
-/**
- * @author aztec
- */
+
+
 public class FormatterTestCase extends AbstractUMLTestCase {
 
 	public static void main(String[] args) {

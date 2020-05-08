@@ -42,11 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : PseudoState.java
- * Created on : Sep 19, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.metamodel.common.commonstatemachines;
 
 import org.dom4j.Document;
@@ -54,9 +51,8 @@ import org.dom4j.Node;
 
 import org.netbeans.modules.uml.core.metamodel.core.primitivetypes.IPseudostateKind;
 
-/**
- * @author Aztec
- */
+
+
 public class PseudoState extends StateVertex implements IPseudoState
 {
     public String getExpandedElementType()
@@ -81,7 +77,8 @@ public class PseudoState extends StateVertex implements IPseudoState
         return type;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonstatemachines.IPseudoState#getKind()
      */
     public int getKind()
@@ -89,7 +86,8 @@ public class PseudoState extends StateVertex implements IPseudoState
         return getPseudostateKind("kind");
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonstatemachines.IPseudoState#setKind(int)
      */
     public void setKind(int value)
@@ -102,7 +100,8 @@ public class PseudoState extends StateVertex implements IPseudoState
         buildNodePresence("UML:PseudoState", doc, node);
     }      
 
-	/**
+	
+/**
 	 * Does this element have an expanded element type or is the expanded element type always the element type?
 	 */
 	public boolean getHasExpandedElementType()

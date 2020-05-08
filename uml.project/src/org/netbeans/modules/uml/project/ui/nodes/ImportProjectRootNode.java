@@ -42,6 +42,7 @@
  * made subject to such option by the copyright holder.
  */
 
+
 /*
  * ImportProjectRootNode.java
  *
@@ -67,10 +68,8 @@ import org.openide.nodes.AbstractNode;
 import org.openide.util.NbBundle;
 
 
-/**
- *
- * @author Administrator
- */
+
+
 public class ImportProjectRootNode extends AbstractNode implements ImportElementListener
 {
 

@@ -46,6 +46,7 @@
 package org.netbeans.modules.uml.core.metamodel.common.commonactions;
 import org.netbeans.modules.uml.core.AbstractUMLTestCase;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.FactoryRetriever;
+
 /**
  * Test cases for LinkAction.
  */
@@ -58,7 +59,8 @@ public class LinkActionTestCase extends AbstractUMLTestCase
 
     private ILinkAction linkAction;
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see junit.framework.TestCase#setUp()
      */
     protected void setUp() throws Exception
@@ -69,7 +71,8 @@ public class LinkActionTestCase extends AbstractUMLTestCase
         project.addElement(linkAction);
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see junit.framework.TestCase#tearDown()
      */
     protected void tearDown() throws Exception

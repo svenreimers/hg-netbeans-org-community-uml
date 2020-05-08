@@ -42,16 +42,12 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : TokenKind.java
- * Created on : Oct 27, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework;
 
-/**
- * @author Aztec
- */
+
+
 public interface TokenKind
 {
     public static final int TK_KEYWORD = 0;

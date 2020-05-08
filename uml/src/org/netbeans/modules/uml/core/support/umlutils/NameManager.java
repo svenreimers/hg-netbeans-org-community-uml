@@ -42,6 +42,7 @@
  * made subject to such option by the copyright holder.
  */
 
+
 /*
  * Created on Nov 12, 2003
  *
@@ -55,14 +56,13 @@ import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier;
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.INavigableEnd;
 
-/**
- * @author aztec
- *
- */
+
+
 public class NameManager
 {
 
-	/**
+	
+/**
 	 *
 	 * Makes sure that the name used for a role name on a NavigableEnd is unique, given
 	 * all the other attributes and navigableends associated with the classifier about
@@ -115,7 +115,8 @@ public class NameManager
 		return success;
 	}
 	
-	/**
+	
+/**
 	 *
 	 * Determines whether or not the passed in name is fully qualified
 	 * in UML syntax ( "A::B::C" ). If it is, the type will be located.

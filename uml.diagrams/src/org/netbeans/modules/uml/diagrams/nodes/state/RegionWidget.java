@@ -51,10 +51,8 @@ import org.netbeans.modules.uml.diagrams.nodes.CompartmentWidget;
 import org.netbeans.modules.uml.drawingarea.view.UMLWidget;
 import org.netbeans.modules.uml.drawingarea.widgets.ContainerWidget;
 
-/**
- *
- * @author Sheryl Su
- */
+
+
 public class RegionWidget extends CompartmentWidget
 {
     private ContainerWidget stateContainerWidget;

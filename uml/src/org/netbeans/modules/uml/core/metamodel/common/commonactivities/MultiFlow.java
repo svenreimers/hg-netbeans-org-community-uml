@@ -42,18 +42,14 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : MultiFlow.java
- * Created on : Sep 17, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.metamodel.common.commonactivities;
 
 import org.dom4j.Document;
 import org.dom4j.Node;
-/**
- * @author Aztec
- */
+
+
 public class MultiFlow extends ObjectFlow implements IMultiFlow
 {
     private IControlFlow controlFlow = null;

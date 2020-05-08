@@ -54,10 +54,8 @@ import java.util.List;
 import org.netbeans.modules.uml.drawingarea.persistence.util.XMIConstants;
 import org.openide.util.Exceptions;
 
-/**
- *
- * @author jyothi
- */
+
+
 public class Writer {
 
     protected BufferedWriter bw;
@@ -74,12 +72,14 @@ public class Writer {
     protected Color foreground;
     protected Color background;
     protected boolean visible;
-    /* Presentation:
+    
+/* Presentation:
      * Actor - Stickman, Rectangle, UserDefined
      * Interface - Rectangle, Circle, Lillipop, UserDefined
      */
     String presentation = "";
-    /* TypeInfo:
+    
+/* TypeInfo:
      * Compartment - AttributeCompartment; Operation Compartment; etc..
      * For Diagrams - ClassDiagram, SequenceDiagram, StateDiagram etc..
      * For Attributes - Name, Visibility, TypeSeparator, InitialValue, Multiplicity, Ordering, InterfaceCircle, InterfaceLine

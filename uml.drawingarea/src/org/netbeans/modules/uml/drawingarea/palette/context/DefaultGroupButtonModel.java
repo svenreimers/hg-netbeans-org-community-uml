@@ -49,10 +49,8 @@ import org.netbeans.api.visual.action.WidgetAction;
 import org.netbeans.modules.uml.drawingarea.view.DesignerScene;
 
 
-/**
- *
- * @author treyspiva
- */
+
+
 public class DefaultGroupButtonModel extends DefaultPaletteButtonModel
 {
     private ArrayList < ContextPaletteButtonModel > buttonList = 

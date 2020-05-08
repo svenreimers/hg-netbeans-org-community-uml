@@ -43,6 +43,7 @@
  */
 
 
+
 /*
  * Created on Jun 27, 2003
  *
@@ -53,10 +54,8 @@ import java.util.Enumeration;
 import javax.swing.tree.DefaultMutableTreeNode;
 import javax.swing.tree.TreeNode;
 
-/**
- * @author sumitabhk
- *
- */
+
+
 public class JDefaultMutableTreeNode extends DefaultMutableTreeNode
 {
 	private String m_Key = null;

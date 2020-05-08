@@ -66,10 +66,8 @@ import org.netbeans.modules.uml.core.support.umlutils.ETArrayList;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 import org.netbeans.modules.uml.core.support.umlutils.InvalidArguments;
 
-/**
- * @author sumitabhk
- *
- */
+
+
 public class WorkspaceImpl extends WSProjectImpl implements IWorkspace
 {
 
@@ -77,7 +75,8 @@ public class WorkspaceImpl extends WSProjectImpl implements IWorkspace
    private ArrayList < IWSProject > m_Projects = new ArrayList < IWSProject >();
 	//private ArrayList m_Projects = new ArrayList();
 
-   /**
+   
+/**
     * 
     */
    public WorkspaceImpl()
@@ -85,7 +84,8 @@ public class WorkspaceImpl extends WSProjectImpl implements IWorkspace
       super();
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.workspacemanagement.IWorkspace#createWSProject(java.lang.String, java.lang.String)
     */
    public IWSProject createWSProject(String baseDirectory, String name) 
@@ -141,7 +141,8 @@ public class WorkspaceImpl extends WSProjectImpl implements IWorkspace
    		return null;
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.workspacemanagement.IWorkspace#getWSProjects()
     */
    public ETList<IWSProject> getWSProjects() throws WorkspaceManagementException
@@ -187,7 +188,8 @@ public class WorkspaceImpl extends WSProjectImpl implements IWorkspace
       return retVal;
    }
 
-   /**
+   
+/**
     * Retrieves the WSProject that matches the name passed in.
 	 *
 	 * @param projName	The name to match against.
@@ -200,7 +202,8 @@ public class WorkspaceImpl extends WSProjectImpl implements IWorkspace
    }
 	
 	
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.workspacemanagement.IWorkspace#getDocument()
     */
    public Document getDocument()
@@ -208,7 +211,8 @@ public class WorkspaceImpl extends WSProjectImpl implements IWorkspace
       return m_Document;
    }
 
-   /**
+   
+/**
     *  Sets the document that this Workspace represents.
     * 
     * @param value The new document.
@@ -224,7 +228,8 @@ public class WorkspaceImpl extends WSProjectImpl implements IWorkspace
       resetState();
    }   
 
-   /**
+   
+/**
 	*
 	* Sets the filename of this workspace.
 	*
@@ -248,7 +253,8 @@ public class WorkspaceImpl extends WSProjectImpl implements IWorkspace
 		}
    }
 
-   /**
+   
+/**
 	*
 	* Retrieves the filename of this Workspace.
 	*
@@ -275,7 +281,8 @@ public class WorkspaceImpl extends WSProjectImpl implements IWorkspace
    		return retVal;
    }
 
-   /**
+   
+/**
     * Opens the WSProject that matches the passed in name.
 	 *
 	 * @param projName The name of the project to open.
@@ -295,7 +302,8 @@ public class WorkspaceImpl extends WSProjectImpl implements IWorkspace
       return retVal;
    }
 
-   /**
+   
+/**
 	*
 	* Opens a WSProject by looking for a WSElement that contains the location of the Project.
 	*
@@ -320,7 +328,8 @@ public class WorkspaceImpl extends WSProjectImpl implements IWorkspace
 		return retProj;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Retrieves a WSProject by location. Maybe open may not be.
 	 *
@@ -365,7 +374,8 @@ public class WorkspaceImpl extends WSProjectImpl implements IWorkspace
 		return retProj;
 	}
 
-   /**
+   
+/**
     *  Closes the WSProject that matches the passed-in name.
 	 *
 	 * @param projName[in]	The name of the project to close.
@@ -386,7 +396,8 @@ public class WorkspaceImpl extends WSProjectImpl implements IWorkspace
       }
    }
 
-   /**
+   
+/**
     * Closes all open projects.
 	 *
 	 * @param saveFirst[in] - true to save the WSProjects first before closing, else
@@ -414,7 +425,8 @@ public class WorkspaceImpl extends WSProjectImpl implements IWorkspace
 		}
    }
 
-   /**
+   
+/**
     * Removes the WSProject with the matching name from this Workspace.
 	 *
 	 * @param projName he name of the WSProject to remove
@@ -461,7 +473,8 @@ public class WorkspaceImpl extends WSProjectImpl implements IWorkspace
    	}		
    }   
 
-   /**
+   
+/**
 	 * Removes the WSProject from this Workspace.
 	 *
 	 * @param wsProject[in]	The WSProject to remove
@@ -477,7 +490,8 @@ public class WorkspaceImpl extends WSProjectImpl implements IWorkspace
 		}
    }
 
-   /**
+   
+/**
     * Makes sure that the absolute path to a particular file is unique across this 
 	 * Workspace.
 	 *
@@ -505,7 +519,8 @@ public class WorkspaceImpl extends WSProjectImpl implements IWorkspace
 		return retVal;
    }
 
-   /**
+   
+/**
     * Removes the WSElement found at the specified location.
 	 *
 	 * @param location[in]	The absolute path to the WSElement
@@ -534,7 +549,8 @@ public class WorkspaceImpl extends WSProjectImpl implements IWorkspace
 		return retVal;
    }
 
-   /**
+   
+/**
     * Attempts to open a WSProject by matching the data string passed in.
 	 *
 	 * @param dataStr   The Data string to match against.
@@ -573,7 +589,8 @@ public class WorkspaceImpl extends WSProjectImpl implements IWorkspace
    // WSElement Overridden Methods
    //**************************************************
 	
-	/**
+	
+/**
 	 * Saves this workspace and all its contents.
 	 * 
 	 * @param location The absolute path to the location
@@ -662,7 +679,8 @@ public class WorkspaceImpl extends WSProjectImpl implements IWorkspace
    // Helper Methods
    //**************************************************
    
-   /**
+   
+/**
     * Sends the WorkspaceSaved event to all registered workspace listeners.
     * 
     * @param space The workspace that is being saved.
@@ -681,7 +699,8 @@ public class WorkspaceImpl extends WSProjectImpl implements IWorkspace
       }      
    }
 
-   /**
+   
+/**
     * @param fileName
     * @return
     */
@@ -699,7 +718,8 @@ public class WorkspaceImpl extends WSProjectImpl implements IWorkspace
       return retVal;
    }
 
-   /**
+   
+/**
 	 *
 	 * Makes sure that the passed in path contains a valid directory
 	 * spec.
@@ -725,7 +745,8 @@ public class WorkspaceImpl extends WSProjectImpl implements IWorkspace
       return retVal;
    }
 
-   /**
+   
+/**
 	 * Retrieves the root element of the workspace.
 	 *
 	 * @return The root element.
@@ -748,7 +769,8 @@ public class WorkspaceImpl extends WSProjectImpl implements IWorkspace
 		return retVal;       
    }
 
-   /**
+   
+/**
     * Makes sure that the XML document this Workspace represents is valid.
 	 *
 	 * @throws WorkspaceManagementException exception if the document has not
@@ -762,7 +784,8 @@ public class WorkspaceImpl extends WSProjectImpl implements IWorkspace
       }
    }
 	
-	/**
+	
+/**
 	 * Takes this Workspace back to a just-after-creation-state.
 	 */
 	private void resetState()
@@ -771,7 +794,8 @@ public class WorkspaceImpl extends WSProjectImpl implements IWorkspace
 		setIsDirty(false);
 	}
 
-	/**
+	
+/**
 	 *
 	 * Dipatches the Project precreate event.
 	 *
@@ -805,7 +829,8 @@ public class WorkspaceImpl extends WSProjectImpl implements IWorkspace
 		return retVal;
 	}
 
-   /**
+   
+/**
     * Dispatches the WSProject created event.
 	 * @param project The WSProject that was just created.
 	 */
@@ -828,7 +853,8 @@ public class WorkspaceImpl extends WSProjectImpl implements IWorkspace
    
 	}
 	
-	/**
+	
+/**
 	 * Creates a WSProjectEventDispatcher object ready to fire events.
 	 * @return The prepared dispatcher.
 	 */
@@ -840,7 +866,8 @@ public class WorkspaceImpl extends WSProjectImpl implements IWorkspace
 		return retVal;
 	}
 	
-	/**
+	
+/**
 	 * @param baseDirectory
 	 * @param name
 	 */
@@ -854,7 +881,8 @@ public class WorkspaceImpl extends WSProjectImpl implements IWorkspace
       
 	}
 	
-	/**
+	
+/**
 	 * Makes sure that no other WSProject exists by the
  	 * passed in name.
  	 * 
@@ -881,7 +909,8 @@ public class WorkspaceImpl extends WSProjectImpl implements IWorkspace
 		
    }
 
-   /**
+   
+/**
 	 * Creates a new project. The project returned may not actually have been created. Rather,
 	 * it was discovered on the internal collection of WSProjects.
 	 *
@@ -900,7 +929,8 @@ public class WorkspaceImpl extends WSProjectImpl implements IWorkspace
 		return createProject(element, name, add, true);
 	}
 	
-	/**
+	
+/**
 	 * Creates a new project. The project returned may not actually have been created. Rather,
 	 * it was discovered on the internal collection of WSProjects.  When the projects name is 
 	 * set the isDirty flag will be set to true.  If the createDirty is set to false then 
@@ -969,7 +999,8 @@ public class WorkspaceImpl extends WSProjectImpl implements IWorkspace
 		return retVal;
 	}
 
-   /**
+   
+/**
     * Adds the passed in WSProject to the internal collection.
 	 *
 	 * @param project[in] The project to add.
@@ -1007,7 +1038,8 @@ public class WorkspaceImpl extends WSProjectImpl implements IWorkspace
       return projectToAdd;
    }
 
-   /**
+   
+/**
     * Locates a WSProject in the passed-in collection by the name of the project.
 	 *
 	 * @param projects[in] The collection to look through.
@@ -1030,7 +1062,8 @@ public class WorkspaceImpl extends WSProjectImpl implements IWorkspace
       return retVal;
    }
    
-	/**
+	
+/**
 	 *
 	 * Retrieves a WSProject owned by this Workspace.
 	 *
@@ -1067,7 +1100,8 @@ public class WorkspaceImpl extends WSProjectImpl implements IWorkspace
 		return retVal;
 	}
 
-	/**
+	
+/**
 	 * Makes sure the passed in IWSProject is open
 	 *
 	 * @param wsProj The WSProject to ensure is open
@@ -1081,7 +1115,8 @@ public class WorkspaceImpl extends WSProjectImpl implements IWorkspace
 		}      
 	}
 	
-	/**
+	
+/**
 	 * Checks if this object is an instance of IWorkspace.
 	 * 
 	 * @return true if the object is a workspace
@@ -1091,7 +1126,8 @@ public class WorkspaceImpl extends WSProjectImpl implements IWorkspace
 		return true;
 	}
 	
-	/**
+	
+/**
 	 *
 	 * Determines whether or not this Workspace needs to be saved or not.
 	 *
@@ -1127,7 +1163,8 @@ public class WorkspaceImpl extends WSProjectImpl implements IWorkspace
 		return dirty;
 	}
 	
-	/**
+	
+/**
 	 * Makes sure that the WSProject that has the same name as
 	 * wsProject is no longer present on the internal collection of
 	 * WSProjects.

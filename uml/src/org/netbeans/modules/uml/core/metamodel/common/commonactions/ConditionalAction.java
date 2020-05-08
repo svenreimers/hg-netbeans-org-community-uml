@@ -42,11 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : ConditionalAction.java
- * Created on : Sep 18, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.metamodel.common.commonactions;
 
 import org.dom4j.Document;
@@ -56,15 +53,15 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.ElementCollector;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.UMLXMLManip;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
-/**
- * @author Aztec
- */
+
+
 public class ConditionalAction
     extends CompositeAction
     implements IConditionalAction
 {
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactions.IConditionalAction#addClause(org.netbeans.modules.uml.core.metamodel.common.commonactions.IClause)
      */
     public void addClause(IClause pClause)
@@ -74,7 +71,8 @@ public class ConditionalAction
                     , pClause);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactions.IConditionalAction#getClauses()
      */
     public ETList<IClause> getClauses()
@@ -83,7 +81,8 @@ public class ConditionalAction
             .retrieveElementCollection(this, "UML:ConditionalAction.clause/*", IClause.class);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactions.IConditionalAction#getIsAssertion()
      */
     public boolean getIsAssertion()
@@ -91,7 +90,8 @@ public class ConditionalAction
         return getBooleanAttributeValue("isAssertion", false);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactions.IConditionalAction#getIsDeterminate()
      */
     public boolean getIsDeterminate()
@@ -99,7 +99,8 @@ public class ConditionalAction
         return getBooleanAttributeValue("isDeterminate", false);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactions.IConditionalAction#removeClause(org.netbeans.modules.uml.core.metamodel.common.commonactions.IClause)
      */
     public void removeClause(IClause pClause)
@@ -107,7 +108,8 @@ public class ConditionalAction
         UMLXMLManip.removeChild(m_Node, pClause);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactions.IConditionalAction#setIsAssertion(boolean)
      */
     public void setIsAssertion(boolean isAssertion)
@@ -115,7 +117,8 @@ public class ConditionalAction
         setBooleanAttributeValue("isAssertion", isAssertion);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactions.IConditionalAction#setIsDeterminate(boolean)
      */
     public void setIsDeterminate(boolean isDeterminate)

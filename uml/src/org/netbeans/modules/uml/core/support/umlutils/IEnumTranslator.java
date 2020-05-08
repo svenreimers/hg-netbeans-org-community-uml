@@ -46,12 +46,14 @@ package org.netbeans.modules.uml.core.support.umlutils;
 
 public interface IEnumTranslator
 {
-	/**
+	
+/**
 	 * Take the passed in long and translate it to the proper value in the list and return the value
 	*/
 	public String translateFromEnum( int enumNum, String enumStrs, String enumValues );
 
-	/**
+	
+/**
 	 * Take the passed in string and translate it to the proper number, for representation of the enum
 	*/
 	public int translateToEnum( String value, String enumStrs, String enumValues );

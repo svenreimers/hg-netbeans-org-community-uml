@@ -48,14 +48,8 @@ package org.netbeans.modules.uml.core.metamodel.core.foundation;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 
-/**
- * <p>Title: </p>
- * <p>Description: </p>
- * <p>Copyright: Copyright (c) 2003</p>
- * <p>Company: </p>
- * @author not attributable
- * @version 1.0
- */
+
+
 
 public interface ITaggedValue extends INamedElement{
 //   Retrieves / Sets the string value that are part of the tagged value.

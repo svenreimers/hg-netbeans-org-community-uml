@@ -42,23 +42,20 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : StateRelationFactory.java
- * Created on : Sep 19, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.metamodel.common.commonstatemachines;
 
 import org.netbeans.modules.uml.core.metamodel.core.foundation.RelationshipEventsHelper;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.TypedFactoryRetriever;
 
-/**
- * @author Aztec
- */
+
+
 public class StateRelationFactory implements IStateRelationFactory
 {
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonstatemachines.IStateRelationFactory#createTransition(org.netbeans.modules.uml.core.metamodel.common.commonstatemachines.IStateVertex, org.netbeans.modules.uml.core.metamodel.common.commonstatemachines.IStateVertex, org.netbeans.modules.uml.core.metamodel.common.commonstatemachines.IRegion)
      */
     public ITransition createTransition(IStateVertex source,

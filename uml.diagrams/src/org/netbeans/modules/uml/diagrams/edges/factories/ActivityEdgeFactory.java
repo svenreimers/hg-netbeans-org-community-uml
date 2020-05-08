@@ -50,11 +50,8 @@ import org.netbeans.modules.uml.core.metamodel.common.commonactivities.IMultiFlo
 import org.netbeans.modules.uml.core.metamodel.core.foundation.IElement;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.IRelationship;
 
-/**
- *
- * @author thuy
- * 
- */
+
+
 public class ActivityEdgeFactory extends AbstractRelationshipFactory
 {
 

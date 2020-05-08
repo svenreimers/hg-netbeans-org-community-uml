@@ -59,12 +59,8 @@ import org.netbeans.modules.uml.diagrams.nodes.sqd.LifelineWidget;
 import org.netbeans.modules.uml.diagrams.nodes.sqd.MessagePinWidget;
 import org.netbeans.modules.uml.drawingarea.widgets.MessagePin;
 
-/**
- * perfome bumping down and up for messages
- * imporatnt: all lifelineLine children/subchildren etc should be ordered in graphical order
- * all execution expecifications should have zero location and differes by border only and of cause index
- * @author sp153251
- */
+
+
 public class ArrangeMoveWithBumping extends ArrangeMessagesProvider {
 
     private MessagePinWidget pin1,pin2;
@@ -73,7 +69,8 @@ public class ArrangeMoveWithBumping extends ArrangeMessagesProvider {
     
     private HashMap<MessagePinWidget,TreeSet<MessagePinWidget>> moveCollections;
 
-    /**
+    
+/**
      * 
      * @param exSpec1
      * @param exSpec2
@@ -110,7 +107,8 @@ public class ArrangeMoveWithBumping extends ArrangeMessagesProvider {
         else if(!(preferredPin.getParentWidget() instanceof ExecutionSpecificationThinWidget) && pin2!=null)preferredPin=pin2;
         return moveUp(preferredPin,shift);
     }
-    /*
+    
+/*
      * returns real number of pixels it can be moved up/and is moved
      * take into account move up means shift<0
      */
@@ -274,7 +272,8 @@ public class ArrangeMoveWithBumping extends ArrangeMessagesProvider {
         return shift;
     }
     
-    /*
+    
+/*
      * returns real number of pixels widget is moved down (not really necessary(because no bottom border) for now but may be later.., now = shift)
      * take into account move down means shift>0
      */
@@ -285,7 +284,8 @@ public class ArrangeMoveWithBumping extends ArrangeMessagesProvider {
         else if(!(preferredPin.getParentWidget() instanceof ExecutionSpecificationThinWidget) && pin2!=null)preferredPin=pin2;
         return moveDown(preferredPin,shift);
     }
-    /*
+    
+/*
      * returns real number of pixels widget is moved down (not really necessary(because no bottom border) for now but may be later.., now = shift)
      * take into account move down means shift>0
      */
@@ -495,7 +495,8 @@ public class ArrangeMoveWithBumping extends ArrangeMessagesProvider {
         return shift;
     }
         
-    /**
+    
+/**
      * return collection of all messages moved after class creation
      * or after class resetting
      * @return
@@ -516,7 +517,8 @@ public class ArrangeMoveWithBumping extends ArrangeMessagesProvider {
         return movedMsgs;
     }
 
-    /**
+    
+/**
      * starting from current widget goes by messages and fin all connected psecifications, lifeline boxes, combined fragments which should be moved together
      * all pins to move as solid, in real somtimes parent widget will be moved, sometimes pins itself and should be checked if it possible to move and how much
      * @param widgets store serarch result here, store widget and pin from which connection is cunted, store in array because several messages may go to the same widget
@@ -580,7 +582,8 @@ public class ArrangeMoveWithBumping extends ArrangeMessagesProvider {
         }
     }
     
-    /**
+    
+/**
      * just moves all pins and therefore all messages/execution specification on specified widget with all children
      * @param root starting widget
      * @param dy correction value

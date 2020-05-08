@@ -42,29 +42,16 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File         : ElementInfo.java
- * Version      : 1.4
- * Description  : Base class for the source info classes.
- * Author       : Trey Spiva
- */
+
+
 package org.netbeans.modules.uml.integration.ide.events;
 
 import org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElement;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.ITaggedValue;
 import org.netbeans.modules.uml.core.metamodel.structure.IProject;
 
-/**
- * ElementInfo is the base class of all Source Element information class.
- * ElementInfo provides the functionality to store the common data needed
- * by all source code elements.
- *
- * Revision History
- * No.  Date        Who         What
- * ---  ----        ---         ----
- *   1  2002-05-06  Darshan     Added constructor to take an INamedElement
- *                              for model-source work.
- */
+
+
 public abstract class ElementInfo implements Cloneable {
     /** Specifes that the element is a to be created. */
     public final static int CREATE = 0;
@@ -83,7 +70,8 @@ public abstract class ElementInfo implements Cloneable {
     
     private boolean isCommentSet = false;
 
-    /**
+    
+/**
      * Contructs a new ElementInfo and specifies the type of change that is to
      * occur.
      * @param type The change that that occured (CREATE, MODIFY, DELETE).
@@ -109,7 +97,8 @@ public abstract class ElementInfo implements Cloneable {
 	element = el;
     }
 
-    /**
+    
+/**
      * Updates Describe of the model change.  Each decendent will have to implement
      * <b>update</b> to send the correct messages to Describe.  The currently active
      * Describe system will be used.  <b>Use the EventManager to send messages to
@@ -118,7 +107,8 @@ public abstract class ElementInfo implements Cloneable {
      */
     abstract public void update();
 
-    /**
+    
+/**
      * Returns the Describe IProject that owns the element described by this
      * ElementInfo. The IProject is only returned if this ElementInfo has an
      * associated Describe IElement.
@@ -129,7 +119,8 @@ public abstract class ElementInfo implements Cloneable {
         return null;
     }
 
-    /**
+    
+/**
      * Sets the name of the model element.  This is the original name of the element.
      * When used with setNewName before and after information is provided.
      * @param value The name of the element.
@@ -139,7 +130,8 @@ public abstract class ElementInfo implements Cloneable {
         mName = value;
     }
 
-    /**
+    
+/**
      * Retrieves the name of the model element.  This is the original name of the element.
      * When used with getNewName before and after information is provided.
      * @return The name of the element.
@@ -149,7 +141,8 @@ public abstract class ElementInfo implements Cloneable {
         return mName;
     }
 
-    /**
+    
+/**
      * Sets the new name of the model element.  This is the name of the element after
      * a name changed has occured. When used with setName before and after
      * information is provided.
@@ -160,7 +153,8 @@ public abstract class ElementInfo implements Cloneable {
         mNewName = value;
     }
 
-    /**
+    
+/**
      * Retrieves the new name of the model element.  This is the name of the element after
      * a name changed has occured. When used with getName before and after
      * information is provided.
@@ -171,7 +165,8 @@ public abstract class ElementInfo implements Cloneable {
         return mNewName;
     }
 
-    /**
+    
+/**
      * Sets the elements modifiers.
      * @param mod - disjunction of constants from
      * <A HREF="http://java.sun.com/products/jdk/1.2/docs/api/java/lang/reflect/Modifier.html"><CODE>Modifier</CODE></A>.
@@ -180,7 +175,8 @@ public abstract class ElementInfo implements Cloneable {
         mModifiers = mod;
     }
 
-    /**
+    
+/**
      * Gets the elements modifiers.
      * @return disjunction of constants from
      *         <A HREF="http://java.sun.com/products/jdk/1.2/docs/api/java/lang/reflect/Modifier.html"><CODE>Modifier</CODE></A>.
@@ -189,7 +185,8 @@ public abstract class ElementInfo implements Cloneable {
         return mModifiers;
     }
 
-    /**
+    
+/**
      * Sets the type of change that has occured.
      * @param value CREATE, MODIFY, or DELETE
      * @sse #CREATE
@@ -200,7 +197,8 @@ public abstract class ElementInfo implements Cloneable {
         mChangeType = value;
     }
 
-    /**
+    
+/**
      * Retrieves the type of change that has occured.
      * @see #CREATE
      * @see #MODIFY
@@ -212,7 +210,8 @@ public abstract class ElementInfo implements Cloneable {
         return mChangeType;
     }
 
-    /**
+    
+/**
      * Retrieve a textual representation of the type of change that occured.
      * <B>Use for Debuging.</B>
      * @return The name of the change.
@@ -235,7 +234,8 @@ public abstract class ElementInfo implements Cloneable {
         return retVal;
     }
 
-    /**
+    
+/**
      * Sets the Comment that appears before the element.
      * @param value The comment.
      */
@@ -255,7 +255,8 @@ public abstract class ElementInfo implements Cloneable {
         isCommentSet = true;
     }
 
-	/**
+	
+/**
 	 * Returns <code>true</code> if a valid comment is set on this object.
 	 * @return <code>true</code> if a valid comment is set.
 	 */
@@ -263,7 +264,8 @@ public abstract class ElementInfo implements Cloneable {
 		return /*mComment != null*/isCommentSet;		
 	}
 
-    /**
+    
+/**
      *  produces marker id 
      */
     public String getMarkerID() {
@@ -280,7 +282,8 @@ public abstract class ElementInfo implements Cloneable {
     }
 
 
-    /**
+    
+/**
      * Retrieves the Comment that appears before the element.
      * @return The comment.
      */
@@ -292,7 +295,8 @@ public abstract class ElementInfo implements Cloneable {
     }
 
 
-    /**
+    
+/**
      *  Determines if the given name is a valid Java identifier.
      *
      * @param name  The name to be tested for identifier-hood :-)
@@ -328,7 +332,8 @@ public abstract class ElementInfo implements Cloneable {
         return null;
     }
 
-    /**
+    
+/**
      *  Returns a code unique to each subclass of ElementInfo.
      *
      * @return A short <code>String</code> unique among the subclasses of
@@ -336,7 +341,8 @@ public abstract class ElementInfo implements Cloneable {
      */
     abstract public String getCode();
 
-    /**
+    
+/**
      *  Transfers the contents of relevant 'newXyz' fields to the corresponding
      * 'xyz' fields, and nulls out the newXyz fields. Only those fields that are
      * needed for the element to be located in the Describe model need to be
@@ -350,7 +356,8 @@ public abstract class ElementInfo implements Cloneable {
         }
     }
 
-    /**
+    
+/**
      *  Determines if the element supplied matches selected non-null fields in
      * this element. The fields examined should concern only this element and
      * qualifying parent elements, not any children. A minimal implementation will

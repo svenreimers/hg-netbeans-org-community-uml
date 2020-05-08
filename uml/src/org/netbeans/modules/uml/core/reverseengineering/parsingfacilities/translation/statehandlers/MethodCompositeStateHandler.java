@@ -43,11 +43,8 @@
  */
 
 
-/*
- * File       : MethodCompositeStateHandler.java
- * Created on : Dec 10, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.statehandlers;
 
 import org.dom4j.Element;
@@ -62,9 +59,8 @@ import org.netbeans.modules.uml.core.reverseengineering.reframework.IREClass;
 import org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ITokenDescriptor;
 import org.netbeans.modules.uml.core.support.umlsupport.XMLManip;
 
-/**
- * @author Aztec
- */
+
+
 public class MethodCompositeStateHandler extends MethodDetailStateHandler
 {
     Expression m_TestConditionExpression = new Expression();
@@ -284,7 +280,8 @@ public class MethodCompositeStateHandler extends MethodDetailStateHandler
         return retVal;
     }
     
-    /**
+    
+/**
      * Responsible to initializing a new scope.
      */
     protected void beginScope()
@@ -292,7 +289,8 @@ public class MethodCompositeStateHandler extends MethodDetailStateHandler
         getSymbolTable().pushScope();
     }
 
-    /**
+    
+/**
      * Responsible to cleaning up before a scope is existed.
      */
     protected void endScope()
@@ -302,7 +300,8 @@ public class MethodCompositeStateHandler extends MethodDetailStateHandler
     }
 
 
-    /**
+    
+/**
      * Adds the <I>Keyword</I> token descriptor.  For method details I am
      * also added the <I>line</I> attribute to the XML DOM Node.
      *

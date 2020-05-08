@@ -59,10 +59,8 @@ import org.netbeans.modules.uml.core.metamodel.structure.INode;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 import org.openide.util.NbBundle;
 
-/**
- *
- * @author Sheryl
- */
+
+
 public class ComponentData extends ClassData
 {
     private IComponent element;

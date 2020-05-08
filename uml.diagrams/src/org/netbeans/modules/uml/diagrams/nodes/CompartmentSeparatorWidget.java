@@ -50,10 +50,8 @@ import org.netbeans.api.visual.border.BorderFactory;
 import org.netbeans.api.visual.widget.Scene;
 import org.netbeans.api.visual.widget.SeparatorWidget;
 
-/**
- *
- * @author Sheryl Su
- */
+
+
 public class CompartmentSeparatorWidget extends SeparatorWidget
 {
     private Stroke stroke;

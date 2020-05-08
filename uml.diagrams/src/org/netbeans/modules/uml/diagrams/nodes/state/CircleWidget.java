@@ -50,15 +50,14 @@ import org.netbeans.api.visual.widget.Scene;
 import org.netbeans.modules.uml.drawingarea.view.CustomizableWidget;
 import org.netbeans.modules.uml.drawingarea.view.UMLNodeWidget;
 
-/**
- *
- * @author Sheryl Su
- */
+
+
 public class CircleWidget extends CustomizableWidget
 {
     private int radius;
 
-    /**
+    
+/**
      *  Constructs a new OvalWidget to represent a circle whose radius is r
      * @param scene
      * @param r the radius of the circle to be drawn.

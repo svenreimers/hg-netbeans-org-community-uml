@@ -47,6 +47,7 @@ package org.netbeans.modules.uml.core.metamodel.dynamics;
 
 import org.netbeans.modules.uml.core.metamodel.core.foundation.IConstraint;
 import org.netbeans.modules.uml.core.AbstractUMLTestCase;
+
 /**
  * Test cases for StateInvariant.
  */
@@ -59,7 +60,8 @@ public class StateInvariantTestCase extends AbstractUMLTestCase
 
     private IStateInvariant si;
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see junit.framework.TestCase#setUp()
      */
     protected void setUp() throws Exception

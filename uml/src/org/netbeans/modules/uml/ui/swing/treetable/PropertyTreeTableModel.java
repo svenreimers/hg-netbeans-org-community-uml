@@ -68,10 +68,8 @@ import org.netbeans.modules.uml.core.support.umlutils.PropertyElement;
 import org.netbeans.modules.uml.ui.swing.propertyeditor.PropertyEditor;
 
 
-/**
- * @author sumitabhk
- *
- */
+
+
 public class PropertyTreeTableModel implements TreeTableModel
 {
 	// Names of the columns.
@@ -95,7 +93,8 @@ public class PropertyTreeTableModel implements TreeTableModel
 	
 	private Object m_EditableComponent = null;
 
-	/**
+	
+/**
 	 * 
 	 */
 	public PropertyTreeTableModel()
@@ -122,7 +121,8 @@ public class PropertyTreeTableModel implements TreeTableModel
 	{
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see TreeTableModel#getColumnCount()
 	 */
 	public int getColumnCount()
@@ -130,7 +130,8 @@ public class PropertyTreeTableModel implements TreeTableModel
 		return cNames.length;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see TreeTableModel#getColumnName(int)
 	 */
 	public String getColumnName(int column)
@@ -138,7 +139,8 @@ public class PropertyTreeTableModel implements TreeTableModel
 		return cNames[column];
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see TreeTableModel#getColumnClass(int)
 	 */
 	public Class getColumnClass(int column)
@@ -152,7 +154,8 @@ public class PropertyTreeTableModel implements TreeTableModel
 		return null;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see TreeTableModel#getValueAt(java.lang.Object, int)
 	 */
 	public Object getValueAt(Object node, int column)
@@ -304,7 +307,8 @@ public class PropertyTreeTableModel implements TreeTableModel
 	}
 
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see TreeTableModel#isCellEditable(java.lang.Object, int)
 	 */
 	public boolean isCellEditable(Object node, int column)
@@ -316,7 +320,8 @@ public class PropertyTreeTableModel implements TreeTableModel
 		return true;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see TreeTableModel#setValueAt(java.lang.Object, java.lang.Object, int)
 	 */
 	public void setValueAt(Object aValue, Object node, int column)
@@ -334,7 +339,8 @@ public class PropertyTreeTableModel implements TreeTableModel
 		//m_editor.processLastCell();
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see javax.swing.tree.TreeModel#getChild(java.lang.Object, int)
 	 */
 	public Object getChild(Object parent, int index)
@@ -394,7 +400,8 @@ public class PropertyTreeTableModel implements TreeTableModel
 		m_Children = newChildren;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see javax.swing.tree.TreeModel#getChildCount(java.lang.Object)
 	 */
 	public int getChildCount(Object parent)
@@ -416,7 +423,8 @@ public class PropertyTreeTableModel implements TreeTableModel
 		return retCount;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see javax.swing.tree.TreeModel#isLeaf(java.lang.Object)
 	 */
 	public boolean isLeaf(Object node)
@@ -457,7 +465,8 @@ public class PropertyTreeTableModel implements TreeTableModel
 		return false;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see javax.swing.tree.TreeModel#valueForPathChanged(javax.swing.tree.TreePath, java.lang.Object)
 	 */
 	public void valueForPathChanged(TreePath path, Object newValue)
@@ -465,7 +474,8 @@ public class PropertyTreeTableModel implements TreeTableModel
 		
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see javax.swing.tree.TreeModel#getIndexOfChild(java.lang.Object, java.lang.Object)
 	 */
 	public int getIndexOfChild(Object parent, Object child)
@@ -478,7 +488,8 @@ public class PropertyTreeTableModel implements TreeTableModel
 		return -1; 
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see javax.swing.tree.TreeModel#addTreeModelListener(javax.swing.event.TreeModelListener)
 	 */
 	public void addTreeModelListener(TreeModelListener l)
@@ -486,7 +497,8 @@ public class PropertyTreeTableModel implements TreeTableModel
 		listenerList.add(TreeModelListener.class, l);
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see javax.swing.tree.TreeModel#removeTreeModelListener(javax.swing.event.TreeModelListener)
 	 */
 	public void removeTreeModelListener(TreeModelListener l)
@@ -495,7 +507,8 @@ public class PropertyTreeTableModel implements TreeTableModel
 		
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see javax.swing.tree.TreeModel#getRoot()
 	 */
 	public Object getRoot()
@@ -503,7 +516,8 @@ public class PropertyTreeTableModel implements TreeTableModel
 		return root;
 	}
 	
-	/*
+	
+/*
 	 * Notify all listeners that have registered interest for
 	 * notification on this event type.  The event instance 
 	 * is lazily created using the parameters passed into 
@@ -529,7 +543,8 @@ public class PropertyTreeTableModel implements TreeTableModel
 		}
 	}
 	
-	/*
+	
+/*
 	 * Notify all listeners that have registered interest for
 	 * notification on this event type.  The event instance 
 	 * is lazily created using the parameters passed into 
@@ -555,7 +570,8 @@ public class PropertyTreeTableModel implements TreeTableModel
 		}
 	}
 
-	/*
+	
+/*
 	 * Notify all listeners that have registered interest for
 	 * notification on this event type.  The event instance 
 	 * is lazily created using the parameters passed into 
@@ -581,7 +597,8 @@ public class PropertyTreeTableModel implements TreeTableModel
 		}
 	}
 
-	/*
+	
+/*
 	 * Notify all listeners that have registered interest for
 	 * notification on this event type.  The event instance 
 	 * is lazily created using the parameters passed into 

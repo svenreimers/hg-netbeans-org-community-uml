@@ -73,9 +73,8 @@ import javax.swing.border.EmptyBorder;
 import javax.swing.border.LineBorder;
 
 
-/**
- * @author Jan Jancura
- */
+
+
 public class TabbedPanel extends JPanel
 {
     public static int EXPAND_ONE = 1;

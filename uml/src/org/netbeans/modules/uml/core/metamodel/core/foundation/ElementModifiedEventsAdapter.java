@@ -49,14 +49,13 @@ package org.netbeans.modules.uml.core.metamodel.core.foundation;
 import org.netbeans.modules.uml.core.support.umlsupport.IResultCell;
 
 
-/**
- *
- * @author Trey Spiva
- */
+
+
 public class ElementModifiedEventsAdapter implements IElementModifiedEventsSink
 {
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     */
    public void onElementPreModified(
       IVersionableElement element,
@@ -65,7 +64,8 @@ public class ElementModifiedEventsAdapter implements IElementModifiedEventsSink
       // TODO Auto-generated method stub
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     */
    public void onElementModified(IVersionableElement element, IResultCell cell)
    {

@@ -50,7 +50,8 @@ import org.dom4j.Node;
  */
 public class ClassEvent extends ParserData implements IClassEvent
 {
-    /**
+    
+/**
      * Retrieves the class information for the event.
      * @param pVal [out] The class information.
      */

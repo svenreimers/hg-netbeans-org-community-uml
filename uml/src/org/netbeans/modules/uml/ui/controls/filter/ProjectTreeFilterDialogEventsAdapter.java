@@ -48,15 +48,14 @@ package org.netbeans.modules.uml.ui.controls.filter;
 
 import org.netbeans.modules.uml.core.support.umlsupport.IResultCell;
 
-/**
- * 
- * @author Trey Spiva
- */
+
+
 public class ProjectTreeFilterDialogEventsAdapter
    implements IProjectTreeFilterDialogEventsSink
 {
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.filter.IProjectTreeFilterDialogEventsSink#onProjectTreeFilterDialogInit(org.netbeans.modules.uml.ui.controls.filter.IFilterDialog, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
     */
    public void onProjectTreeFilterDialogInit(IFilterDialog dialog,
@@ -64,7 +63,8 @@ public class ProjectTreeFilterDialogEventsAdapter
    {
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.filter.IProjectTreeFilterDialogEventsSink#onProjectTreeFilterDialogOKActivated(org.netbeans.modules.uml.ui.controls.filter.IFilterDialog, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
     */
    public void onProjectTreeFilterDialogOKActivated(IFilterDialog dialog,

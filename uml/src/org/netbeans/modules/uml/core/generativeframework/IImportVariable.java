@@ -42,11 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : IImportVariable.java
- * Created on : Oct 30, 2003
- * Author     : aztec
- */
+
+
 package org.netbeans.modules.uml.core.generativeframework;
 
 import org.dom4j.Node;
@@ -54,9 +51,8 @@ import org.dom4j.Node;
 import org.netbeans.modules.uml.core.support.umlsupport.INamedCollection;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
-/**
- * @author aztec
- */
+
+
 public interface IImportVariable extends ICompoundVariable
 {
     public String getTemplate();

@@ -42,6 +42,7 @@
  * made subject to such option by the copyright holder.
  */
 
+
 /*
  * Created on Sep 16, 2003
  *
@@ -52,10 +53,8 @@ import java.io.IOException;
 
 import org.netbeans.modules.uml.core.metamodel.core.foundation.UMLXMLManip;
 
-/**
- * @author aztec
- *
- */
+
+
 public class XMLFragmentLoader
 {
 

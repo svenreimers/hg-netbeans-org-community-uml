@@ -77,10 +77,8 @@ import org.openide.util.Lookup;
 import org.openide.util.NbBundle;
 import org.openide.util.actions.SystemAction;
 
-/**
- *
- * @author psb
- */
+
+
 public class MessageOperationsAction extends SceneNodeAction
 {
     private MessageLabelManager lastManager = null;

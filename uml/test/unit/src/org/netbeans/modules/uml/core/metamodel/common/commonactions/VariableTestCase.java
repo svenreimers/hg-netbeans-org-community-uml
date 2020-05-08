@@ -47,6 +47,7 @@ package org.netbeans.modules.uml.core.metamodel.common.commonactions;
 import org.netbeans.modules.uml.core.AbstractUMLTestCase;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.FactoryRetriever;
 
+
 /**
  * Test cases for Variable.
  */
@@ -59,7 +60,8 @@ public class VariableTestCase extends AbstractUMLTestCase
 
     private IVariable var;
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see junit.framework.TestCase#setUp()
      */
     protected void setUp() throws Exception
@@ -70,7 +72,8 @@ public class VariableTestCase extends AbstractUMLTestCase
         project.addElement(var);
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see junit.framework.TestCase#tearDown()
      */
     protected void tearDown() throws Exception

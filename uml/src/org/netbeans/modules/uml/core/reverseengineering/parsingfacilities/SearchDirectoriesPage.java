@@ -103,7 +103,8 @@ public class SearchDirectoriesPage extends JCenterDialog
       super(parent, true);
    }
 
-   /**
+   
+/**
     * Adds a new directory to the list of base directories.
     *
     * @param newDirectory [in] The new directory.
@@ -121,7 +122,8 @@ public class SearchDirectoriesPage extends JCenterDialog
       }
    }
    
-   /* Adds the direcitories to the list of base directories.
+   
+/* Adds the direcitories to the list of base directories.
    *
    * @param newDirectory [in] The new direcitories.
    */
@@ -138,7 +140,8 @@ public class SearchDirectoriesPage extends JCenterDialog
       }
    }
    
-   /**
+   
+/**
     * Retrieves the list of base directories selected by the user.
     *
     * @param pVal [out] The list of directories.
@@ -195,7 +198,7 @@ public class SearchDirectoriesPage extends JCenterDialog
    
    public boolean doModal()
    {
-      //Cbeckham - modified this code to dynamically adjust panel size for larger fonts 
+      
       boolean cancel = false;
       int fontsize = getFont().getSize();
       int width  = 600;
@@ -225,7 +228,7 @@ public class SearchDirectoriesPage extends JCenterDialog
       JPanel panel = new JPanel();
       java.awt.GridBagConstraints gridBagConstraints;
 
-      //CBeckham - changed Text Label to Text Area to provide multi line for larger fontsizes
+      
       JTextArea textLabel = new javax.swing.JTextArea();
       IStrings cachedNames = getBaseDirectories();
       if (cachedNames != null)

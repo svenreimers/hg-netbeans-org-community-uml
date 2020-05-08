@@ -42,37 +42,35 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : ImplementationChangeFacility.java
- * Created on : Oct 28, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.roundtripframework;
 
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier;
 
-/**
- * @author Aztec
- */
+
+
 public class ImplementationChangeFacility
     extends RequestFacility
     implements IImplementationChangeFacility
 {
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IImplementationChangeFacility#added(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier)
      */
     public void added(IClassifier pSupplier, IClassifier pContract)
     {
-        // Aztec: TODO: Stubbed.
+        
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IImplementationChangeFacility#deleted(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier)
      */
     public void deleted(IClassifier pSupplier, IClassifier pContract)
     {
-        // Aztec: TODO: Stubbed.
+        
     }
 
 }

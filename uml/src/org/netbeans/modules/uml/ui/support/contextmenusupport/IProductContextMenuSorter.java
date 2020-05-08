@@ -49,7 +49,8 @@ import org.netbeans.modules.uml.ui.products.ad.application.IMenuManager;
 
 public interface IProductContextMenuSorter
 {
-	/**
+	
+/**
 	 * Called to sort the context menu items
 	*/
 	public void sort( IMenuManager pContextMenu );

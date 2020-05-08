@@ -42,11 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- *
- * Created on Jun 10, 2003
- * @author Trey Spiva
- */
+
+
 package org.netbeans.modules.uml.designpattern;
 
 import org.netbeans.modules.uml.ui.swing.projecttree.ISwingProjectTreeModel;
@@ -90,15 +87,8 @@ import org.netbeans.modules.uml.core.workspacemanagement.IWorkspace;
 import javax.swing.tree.TreeNode;
 import org.netbeans.modules.uml.ui.controls.projecttree.ProjectTreeModelAdapter;
 
-/**
- * The Swing implementation of the project tree model.  The
- * <code>ProductProjectTreeModel</code> contains the bussiness logic required
- * to maintain the project tree data.  The <code>ProjectTreeSwingModel</code>
- * implements the Swing TreeModel interface.
- *
- * @see ProjectTreeSwingModel
- * @author Trey Spiva
- */
+
+
 public class DesignCenterSwingModel extends ProjectTreeModelAdapter 
         implements ISwingProjectTreeModel
         
@@ -136,7 +126,8 @@ public class DesignCenterSwingModel extends ProjectTreeModelAdapter
     public DesignCenterSwingModel() {
     }
     
-    /**
+    
+/**
      * Retreives the project tree model name.  The model name can be used to
      * determine the type of project tree that is being displayed.
      */
@@ -144,7 +135,8 @@ public class DesignCenterSwingModel extends ProjectTreeModelAdapter
         return "DesignCenter"; //$NON-NLS-1$
     }
     
-    /**
+    
+/**
      * Retrieves the node factory to use when creating nodes for the model.
      *
      * @return The factory to use.
@@ -153,7 +145,8 @@ public class DesignCenterSwingModel extends ProjectTreeModelAdapter
         return m_Factory;
     }
     
-    /**
+    
+/**
      * Retrieves the collection of TreeModelListeners that are reqistered
      * with the model.
      *
@@ -170,7 +163,8 @@ public class DesignCenterSwingModel extends ProjectTreeModelAdapter
     // ISwingProjectTreeModel Implmentation
     //**************************************************
     
-        /* (non-Javadoc)
+        
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.ui.swing.projecttree.ISwingProjectTreeModel#getTreeItem(javax.swing.tree.TreePath)
          */
     public ITreeItem getTreeItem(TreePath path) {
@@ -185,7 +179,8 @@ public class DesignCenterSwingModel extends ProjectTreeModelAdapter
         return retVal;
     }
     
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeModel#clear()
     */
     public void clear() {
@@ -205,14 +200,16 @@ public class DesignCenterSwingModel extends ProjectTreeModelAdapter
     // The TreeModel methods.
     //**************************************************
     
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see javax.swing.tree.TreeModel#getRoot()
     */
     public Object getRoot() {
         return getRootItem();
     }
     
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see javax.swing.tree.TreeModel#getChild(java.lang.Object, int)
     */
     public ITreeItem getChildItem(Object parent, int index) {
@@ -228,7 +225,8 @@ public class DesignCenterSwingModel extends ProjectTreeModelAdapter
         return retVal;
     }
     
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see javax.swing.tree.TreeModel#getChildCount(java.lang.Object)
     */
     public int getChildCount(Object parent) {
@@ -250,7 +248,8 @@ public class DesignCenterSwingModel extends ProjectTreeModelAdapter
         return m_TreeRoot;
     }
     
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see javax.swing.tree.TreeModel#isLeaf(java.lang.Object)
     */
     public boolean isLeaf(Object node) {
@@ -258,7 +257,8 @@ public class DesignCenterSwingModel extends ProjectTreeModelAdapter
         return (children == 0);
     }
     
-    /**
+    
+/**
      * Locates the nodes that represents the model element.
      *
      * @param element The model element to locate.
@@ -273,7 +273,8 @@ public class DesignCenterSwingModel extends ProjectTreeModelAdapter
         return retVal;
     }
     
-    /**
+    
+/**
      * Locate the node that represents the model element.
      *
      * @param element The model element to locate.
@@ -294,7 +295,8 @@ public class DesignCenterSwingModel extends ProjectTreeModelAdapter
         });
     }
     
-    /**
+    
+/**
      * Retrieves the index of a child node.
      *
      * @param parent The parent of the child node.
@@ -317,7 +319,8 @@ public class DesignCenterSwingModel extends ProjectTreeModelAdapter
         return retVal;
     }
     
-    /**
+    
+/**
      * The IProject will be associated to the node that represents the IWSProject
      * element.
      *
@@ -336,7 +339,8 @@ public class DesignCenterSwingModel extends ProjectTreeModelAdapter
         return retVal;
     }
     
-    /**
+    
+/**
      * Adds a listener for the TreeModelEvent posted after the tree changes.
      *
      * @param listener The lisener to add.
@@ -345,7 +349,8 @@ public class DesignCenterSwingModel extends ProjectTreeModelAdapter
         m_Listeners.add(listener);
     }
     
-    /**
+    
+/**
      * Removes a listener previously added with <code>addProjectTreeModelListener</code>
      *
      * @param listener The listener to remove.
@@ -354,7 +359,8 @@ public class DesignCenterSwingModel extends ProjectTreeModelAdapter
         m_Listeners.remove(listener);
     }
     
-    /**
+    
+/**
      * @param element
      * @param item
      * @param items
@@ -376,7 +382,8 @@ public class DesignCenterSwingModel extends ProjectTreeModelAdapter
         }
     }
     
-    /**
+    
+/**
      * Locate the node that represents the model element.
      *
      * @param filename The name of the file that specifies the diagram.
@@ -395,7 +402,8 @@ public class DesignCenterSwingModel extends ProjectTreeModelAdapter
         });
     }
     
-    /**
+    
+/**
      * Sorts the children of a node.  The children will be sorted occuring to
      * the default sort order.
      *
@@ -405,7 +413,8 @@ public class DesignCenterSwingModel extends ProjectTreeModelAdapter
         sortChildren(parent, new ProjectTreeComparable());
     }
     
-    /**
+    
+/**
      * Sorts the children of a node.  The children will be sorted occuring to
      * the Comparable interface.
      *
@@ -424,7 +433,8 @@ public class DesignCenterSwingModel extends ProjectTreeModelAdapter
         }
     }
     
-    /**
+    
+/**
      * Test if it is OK to delete a tree item.  The registered IProjectTreeEngine
      * instances are first given chance to deny the delete operation.
      *
@@ -446,7 +456,8 @@ public class DesignCenterSwingModel extends ProjectTreeModelAdapter
         return retVal;
     }
     
-    /**
+    
+/**
      * Test if it is OK to edit a tree item.  The registered IProjectTreeEngine
      * instances are first given chance to deny the edit operation.
      *
@@ -468,14 +479,16 @@ public class DesignCenterSwingModel extends ProjectTreeModelAdapter
         return retVal;
     }
     
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see javax.swing.tree.TreeModel#getChild(java.lang.Object, int)
     */
     public Object getChild(Object parent, int index) {
         return getChildItem(parent, index);
     }
     
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see javax.swing.tree.TreeModel#valueForPathChanged(javax.swing.tree.TreePath, java.lang.Object)
     */
     public void valueForPathChanged(TreePath path, Object newValue) {
@@ -483,7 +496,8 @@ public class DesignCenterSwingModel extends ProjectTreeModelAdapter
         
     }
     
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see javax.swing.tree.TreeModel#getIndexOfChild(java.lang.Object, java.lang.Object)
     */
     public int getIndexOfChild(Object parent, Object child) {
@@ -498,7 +512,8 @@ public class DesignCenterSwingModel extends ProjectTreeModelAdapter
         return retVal;
     }
     
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see javax.swing.tree.TreeModel#addTreeModelListener(javax.swing.event.TreeModelListener)
     */
     public void addTreeModelListener(TreeModelListener l) {
@@ -506,14 +521,16 @@ public class DesignCenterSwingModel extends ProjectTreeModelAdapter
         
     }
     
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see javax.swing.tree.TreeModel#removeTreeModelListener(javax.swing.event.TreeModelListener)
     */
     public void removeTreeModelListener(TreeModelListener l) {
         m_ModelListeners.remove(l);
     }
     
-    /**
+    
+/**
      * Sends the treeStructureChanged event to all registered TreeModelListeners.
      *
      * @parms items The tree items that has been changed.
@@ -531,7 +548,8 @@ public class DesignCenterSwingModel extends ProjectTreeModelAdapter
         }
     }
     
-    /**
+    
+/**
      * Notifies all listeners that a child was removed from its parent.
      * The mannor that the controls are notified is specific to the platform.
      * <br>
@@ -553,7 +571,8 @@ public class DesignCenterSwingModel extends ProjectTreeModelAdapter
         }
     }
     
-    /**
+    
+/**
      * Notifies all listeners that a child was added to a parent by sending
      * the TreeModelListener event treeNodesInserted.
      *
@@ -562,7 +581,8 @@ public class DesignCenterSwingModel extends ProjectTreeModelAdapter
      * @param children The children nodes that was added.
      */
     public void notifyOfAddedChildren(ITreeItem   parent,
-                                      int[] childIndices/*,
+                                      int[] childIndices
+/*,
                                       ITreeItem[] children*/) {
         if(/*(children != null) && (*/(childIndices != null)) {
             //ITreeItem temp = getChildItem(parent, childIndices[0]);
@@ -576,7 +596,8 @@ public class DesignCenterSwingModel extends ProjectTreeModelAdapter
         }
     }
     
-    /**
+    
+/**
      * Notifies all listeners that the content of some nodes has changed by
      * sending the TreeModelListener event treeNodesChanged.
      *
@@ -610,7 +631,8 @@ public class DesignCenterSwingModel extends ProjectTreeModelAdapter
         }
     }
     
-    /**
+    
+/**
      * Builds the parents of node up to and including the root node,
      * where the original node is the last element in the returned array.
      * The length of the returned array gives the node's depth in the
@@ -622,7 +644,8 @@ public class DesignCenterSwingModel extends ProjectTreeModelAdapter
         return getPathToRoot(node, 0);
     }
     
-    /**
+    
+/**
      * Builds the parents of node up to and including the root node,
      * where the original node is the last element in the returned array.
      * The length of the returned array gives the node's depth in the
@@ -661,7 +684,8 @@ public class DesignCenterSwingModel extends ProjectTreeModelAdapter
         return retNodes;
     }
     
-    /**
+    
+/**
      * Fires the projectOpened event to every registered IProjectTreeListener
      *
      * @param node The node that is affected.
@@ -679,7 +703,8 @@ public class DesignCenterSwingModel extends ProjectTreeModelAdapter
         }
     }
     
-    /**
+    
+/**
      * Fires the projectClosed event to every registered IProjectTreeListener
      *
      * @param node The node that is affected.
@@ -701,7 +726,8 @@ public class DesignCenterSwingModel extends ProjectTreeModelAdapter
     // Event Helper Methods
     //**************************************************
     
-    /**
+    
+/**
      * Notifies all listeners that have registered interest for
      * notification on this event type.  The event instance
      * is lazily created using the parameters passed into
@@ -743,7 +769,8 @@ public class DesignCenterSwingModel extends ProjectTreeModelAdapter
         });
     }
     
-    /**
+    
+/**
      * Notifies all listeners that have registered interest for
      * notification on this event type.  The event instance
      * is lazily created using the parameters passed into
@@ -781,7 +808,8 @@ public class DesignCenterSwingModel extends ProjectTreeModelAdapter
         }
     }
     
-    /**
+    
+/**
      * Notifies all listeners that have registered interest for
      * notification on this event type.  The event instance
      * is lazily created using the parameters passed into
@@ -815,7 +843,8 @@ public class DesignCenterSwingModel extends ProjectTreeModelAdapter
         }
     }
     
-    /**
+    
+/**
      * Notifies all listeners that have registered interest for
      * notification on this event type.  The event instance
      * is lazily created using the parameters passed into
@@ -851,7 +880,8 @@ public class DesignCenterSwingModel extends ProjectTreeModelAdapter
         }
     }
     
-    /**
+    
+/**
      * Notifies all listeners that have registered interest for
      * notification on this event type.  The event instance
      * is lazily created using the parameters passed into
@@ -881,7 +911,8 @@ public class DesignCenterSwingModel extends ProjectTreeModelAdapter
         }
     }
     
-    /**
+    
+/**
      * Initialize the model to the project.  This is a good
      * place to initialize all sinks and project tree engines.
      */
@@ -945,7 +976,8 @@ public class DesignCenterSwingModel extends ProjectTreeModelAdapter
         return item;
     }
     
-    /**
+    
+/**
      * Initializes and attaches the engines required by the model.
      */
     protected void attachEngines() {
@@ -964,7 +996,8 @@ public class DesignCenterSwingModel extends ProjectTreeModelAdapter
     }
     
     
-    /**
+    
+/**
      * Attaches all of the required listeners.
      */
     protected void attachSinks()
@@ -976,7 +1009,8 @@ public class DesignCenterSwingModel extends ProjectTreeModelAdapter
     }
     
     
-    /**
+    
+/**
      * Clears the content of the model.
      *
      * @param reload <b>true</b> if the workspace is to be reloaded.
@@ -1048,7 +1082,8 @@ public class DesignCenterSwingModel extends ProjectTreeModelAdapter
         return retItem;
     }
     
-    /**
+    
+/**
      * Retrieves the product that specifies the tree structure.
      *
      * @return The product.
@@ -1057,7 +1092,8 @@ public class DesignCenterSwingModel extends ProjectTreeModelAdapter
         return m_Product;
     }
     
-    /**
+    
+/**
      * Sets the product that specifies the tree structure.
      *
      * @param product The new product.
@@ -1097,7 +1133,8 @@ public class DesignCenterSwingModel extends ProjectTreeModelAdapter
         return DesignPatternUtilities.getDesignPatternCatalogWorkspace();
     }
     
-    /**
+    
+/**
      * @param workspace
      */
     public void setWorkspace(IWorkspace workspace) {
@@ -1120,7 +1157,8 @@ public class DesignCenterSwingModel extends ProjectTreeModelAdapter
 //	   }
     }
     
-    /**
+    
+/**
      * @return
      */
     public ETArrayList < String > getUnfilteredProjects() {
@@ -1128,7 +1166,8 @@ public class DesignCenterSwingModel extends ProjectTreeModelAdapter
         return null;
     }
     
-    /**
+    
+/**
      * Message this to remove node from its parent. This will message
      * nodesWereRemoved to create the appropriate event. This is the
      * preferred way to remove a node as it handles the event creation
@@ -1148,7 +1187,8 @@ public class DesignCenterSwingModel extends ProjectTreeModelAdapter
         notifyOfRemovedChildren(parent, childIndex, removedArray);
     }
     
-    /**
+    
+/**
      * Retrieves the node that represents a project.  The project is located by
      * name of the project.
      *
@@ -1180,7 +1220,8 @@ public class DesignCenterSwingModel extends ProjectTreeModelAdapter
         return retVal;
     }
     
-    /**
+    
+/**
      * Retrieves the node that represents a project.  The project is located by
      * name of the project.
      *
@@ -1221,7 +1262,8 @@ public class DesignCenterSwingModel extends ProjectTreeModelAdapter
         }
         return dpcItem;
     }
-    /**
+    
+/**
      * @param workspace
      */
     private void addProjects(IWorkspace workspace) {
@@ -1249,7 +1291,8 @@ public class DesignCenterSwingModel extends ProjectTreeModelAdapter
         }
     }
     
-    /**
+    
+/**
      * @param name
      * @param workspace
      * @param app
@@ -1282,7 +1325,8 @@ public class DesignCenterSwingModel extends ProjectTreeModelAdapter
         return projectNode;
     }
     
-    /**
+    
+/**
      * Adds a node to the tree with a description and an alternate element.
      *
      * @param pParent The parent item for the one to create
@@ -1339,7 +1383,8 @@ public class DesignCenterSwingModel extends ProjectTreeModelAdapter
         return retVal;
     }
     
-    /**
+    
+/**
      * Adds a node to the tree with a description and an alternate element.
      *
      * @param pParent The parent item for the one to create
@@ -1438,7 +1483,8 @@ public class DesignCenterSwingModel extends ProjectTreeModelAdapter
         }
     }
     
-    /**
+    
+/**
      * Inserts the new node into the parent child list at a specified location.
      * The notifyOfAddedChildren will be sent after the node is added.
      *
@@ -1455,7 +1501,8 @@ public class DesignCenterSwingModel extends ProjectTreeModelAdapter
         notifyOfAddedChildren(parent, childIndices);
     }
     
-    /**
+    
+/**
      * Remove all instances of the model element from the tree.
      *
      * @param element The element to remove.
@@ -1481,7 +1528,8 @@ public class DesignCenterSwingModel extends ProjectTreeModelAdapter
     }
     
     public class TempTreePath extends TreePath {
-        /**
+        
+/**
          * Tests two TreePaths for equality by checking each element of the
          * paths for equality. Two paths are considered equal if they are of
          * the same length, and contain
@@ -1510,7 +1558,8 @@ public class DesignCenterSwingModel extends ProjectTreeModelAdapter
             return false;
         }
         
-        /**
+        
+/**
          * @param path
          */
         public TempTreePath(Object[] path) {

@@ -43,6 +43,7 @@
  */
 
 
+
 /*
  * Verifier.java
  *
@@ -59,10 +60,8 @@ import org.netbeans.test.umllib.DiagramOperator;
 import org.netbeans.test.umllib.ElementTypes;
 import org.netbeans.test.umllib.exceptions.NotFoundException;
 
-/**
- *
- * @author Alexei Mokeev
- */
+
+
 public abstract class AbstractDiagramVerifier {
     public static String elementPrefix = null;;
     public ElementTypes[] elements = null;

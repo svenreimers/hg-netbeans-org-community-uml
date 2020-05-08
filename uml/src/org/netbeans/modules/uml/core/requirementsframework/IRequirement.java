@@ -48,16 +48,15 @@ import org.openide.nodes.Node;
 
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
+
 /*
  * IRequirement.java
  *
  * Created on June 24, 2004, 1:30 PM
  */
 
-/**
- *
- * @author  Trey Spiva
- */
+
+
 public interface IRequirement extends Node.Cookie
 {
   /** A category contains a group of requirements */

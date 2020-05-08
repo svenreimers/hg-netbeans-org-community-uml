@@ -54,7 +54,8 @@ import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure
 public class AliasedType extends DataType implements IAliasedType
 {
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.constructs.IAliasedType#getActualType()
      */
     public IClassifier getActualType()
@@ -63,7 +64,8 @@ public class AliasedType extends DataType implements IAliasedType
         return col.retrieveSingleElementWithAttrID(this, "actualType", IClassifier.class);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.constructs.IAliasedType#getAliasedName()
      */
     public String getAliasedName()
@@ -71,7 +73,8 @@ public class AliasedType extends DataType implements IAliasedType
         return getAttributeValue("aliasedName");
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.constructs.IAliasedType#getTypeDecoration()
      */
     public String getTypeDecoration()
@@ -79,7 +82,8 @@ public class AliasedType extends DataType implements IAliasedType
         return getAttributeValue("typeDecoration");
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.constructs.IAliasedType#setActualType(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier)
      */
     public void setActualType(IClassifier actualType)
@@ -87,7 +91,8 @@ public class AliasedType extends DataType implements IAliasedType
         setElement(actualType, "actualType");
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.constructs.IAliasedType#setActualType2(java.lang.String)
      */
     public void setActualType2(String actualType)
@@ -101,7 +106,8 @@ public class AliasedType extends DataType implements IAliasedType
         }
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.constructs.IAliasedType#setAliasedName(java.lang.String)
      */
     public void setAliasedName(String name)
@@ -109,7 +115,8 @@ public class AliasedType extends DataType implements IAliasedType
         setAttributeValue("aliasedName", name);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.constructs.IAliasedType#setTypeDecoration(java.lang.String)
      */
     public void setTypeDecoration(String typeDec)

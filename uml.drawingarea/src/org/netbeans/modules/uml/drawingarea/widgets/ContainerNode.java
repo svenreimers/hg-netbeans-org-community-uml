@@ -42,10 +42,8 @@
 
 package org.netbeans.modules.uml.drawingarea.widgets;
 
-/**
- *
- * @author sp153251
- */
+
+
 public interface ContainerNode extends Container{
     public abstract ContainerWidget getContainer();
 }

@@ -42,6 +42,7 @@
  * made subject to such option by the copyright holder.
  */
 
+
 /*
  * ProxyElement.java
  *
@@ -60,10 +61,8 @@ import org.netbeans.modules.uml.core.support.umlutils.IElementLocator;
 import org.dom4j.Document;
 import org.dom4j.Node;
 
-/**
- *
- * @author  Trey Spiva
- */
+
+
 public class ProxyElement implements IProxyElement
 {
    /** The XMIID of the toplevelID for the above model element. */
@@ -77,7 +76,8 @@ public class ProxyElement implements IProxyElement
    {
    }
    
-   /**
+   
+/**
     * Returns the element this instance is assigned to 
     *
     * @return The element to add to our list
@@ -100,7 +100,8 @@ public class ProxyElement implements IProxyElement
       return retVal;
    }
    
-   /**
+   
+/**
     * Returns the ID of the model element associated with the proxy.
     *
     * @return The elements ID.
@@ -110,7 +111,8 @@ public class ProxyElement implements IProxyElement
       return m_ModelElementXMIID;
    }
    
-   /**
+   
+/**
     * Returns the ID of the top level id associated with the proxy.
     *
     * @return The top level ID.
@@ -120,7 +122,8 @@ public class ProxyElement implements IProxyElement
       return m_ModelElementTopLevelXMIID;
    }
    
-   /**
+   
+/**
     * Retrieves the name of the actual element, such as 'Class'. 
     *
     * @return The element type.
@@ -175,7 +178,8 @@ public class ProxyElement implements IProxyElement
       return retVal;
    }
    
-   /**
+   
+/**
     * Determines whether or not this element encapsulates the same data as the 
     * passed in element. 
     *
@@ -200,7 +204,8 @@ public class ProxyElement implements IProxyElement
       return retVal;
    }
    
-   /**
+   
+/**
     * Determines whether or not this element encapsulates the same data as the 
     * passed in element. 
     *
@@ -222,7 +227,8 @@ public class ProxyElement implements IProxyElement
       return retVal;
    }
    
-   /**
+   
+/**
     * Sets the element this instance is assigned to 
     *
     * @param pElement The element to add to our list
@@ -248,7 +254,8 @@ public class ProxyElement implements IProxyElement
       }
    }
    
-   /**
+   
+/**
     * Sets the element this instance is assigned to 
     *
     * @param sTopLevelXMIID The element's toplevel xmiid
@@ -266,7 +273,8 @@ public class ProxyElement implements IProxyElement
       }
    }
    
-   /**
+   
+/**
     * Retrieves the project assoicated with the proxy.  The project associated
     * with the proxy is specified by the Top Level id.
     *

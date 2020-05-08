@@ -48,10 +48,8 @@ import org.netbeans.modules.uml.core.support.umlutils.IPropertyDefinition;
 import org.netbeans.modules.uml.core.support.umlutils.IPropertyElement;
 import org.netbeans.modules.uml.propertysupport.nodes.CustomPropertyEditor;
 
-/**
- *
- * @author Sheryl
- */
+
+
 public interface Customizer
 {
     public void setElement(IPropertyElement element, IPropertyDefinition def);

@@ -51,47 +51,56 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 public interface IJumpHandler extends IElement
 {
-	/**
+	
+/**
 	 * property JumpType
 	*/
 	public ISignal getJumpType();
 
-	/**
+	
+/**
 	 * property JumpType
 	*/
 	public void setJumpType( ISignal value );
 
-	/**
+	
+/**
 	 * method AddProtectedAction
 	*/
 	public void addProtectedAction( IAction pAction );
 
-	/**
+	
+/**
 	 * method RemoveProtectedAction
 	*/
 	public void removeProtectedAction( IAction pAction );
 
-	/**
+	
+/**
 	 * property ProtectedActions
 	*/
 	public ETList <IAction> getProtectedActions();
 
-	/**
+	
+/**
 	 * property Body
 	*/
 	public IHandlerAction getBody();
 
-	/**
+	
+/**
 	 * property Body
 	*/
 	public void setBody( IHandlerAction value );
 
-	/**
+	
+/**
 	 * property IsDefault
 	*/
 	public boolean getIsDefault();
 
-	/**
+	
+/**
 	 * property IsDefault
 	*/
 	public void setIsDefault( boolean value );

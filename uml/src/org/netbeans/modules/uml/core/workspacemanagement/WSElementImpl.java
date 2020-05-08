@@ -60,10 +60,8 @@ import org.netbeans.modules.uml.core.support.umlsupport.XMLManip;
 import org.netbeans.modules.uml.core.support.umlsupport.Log;
 import org.openide.util.NbPreferences;
 
-/**
- * @author sumitabhk
- *
- */
+
+
 public class WSElementImpl implements IWSElement
 {
 
@@ -73,7 +71,8 @@ public class WSElementImpl implements IWSElement
    protected ITwoPhaseCommit m_TwoPhase = null;
    protected boolean m_IsDirty = false;
 
-   /**
+   
+/**
     * 
     */
    public WSElementImpl()
@@ -81,7 +80,8 @@ public class WSElementImpl implements IWSElement
       super();
    }
 
-   /**
+   
+/**
     *
     * Retrieves the name of this element.
     *
@@ -100,7 +100,8 @@ public class WSElementImpl implements IWSElement
       return name;
    }
 
-   /**
+   
+/**
 	* Sets / Gets the name or alias of this element.
 	*/
    public String getNameWithAlias()
@@ -123,7 +124,8 @@ public class WSElementImpl implements IWSElement
 	  return retName;
    }
 
-   /**
+   
+/**
 	*
 	* Retrieves the alias of this element.
 	*
@@ -160,7 +162,8 @@ public class WSElementImpl implements IWSElement
 	  return retVal;
    }
 
-   /**
+   
+/**
 	*
 	* Renames this element.
 	*
@@ -196,7 +199,8 @@ public class WSElementImpl implements IWSElement
    		}
    }
 
-   /**
+   
+/**
 	* Sets / Gets the name or alias of this element.
 	*/
    public void setNameWithAlias(String newVal)
@@ -217,16 +221,18 @@ public class WSElementImpl implements IWSElement
 	  }
    }
 
-   /**
+   
+/**
 	* Returns true if we should show the aliased name
 	*/
    private boolean showAliasedNames()
    {
-       //kris richards - changing to NbPrefs
+       
        return NbPreferences.forModule (WSElementImpl.class).getBoolean ("UML_Show_Aliases", false) ;
    }
 
-   /**
+   
+/**
     *
     * Renames this element.
     *
@@ -262,7 +268,8 @@ public class WSElementImpl implements IWSElement
       }
    }
 
-   /**
+   
+/**
     *
     * Retrieves the WSProject owned by this element.
     *
@@ -276,7 +283,8 @@ public class WSElementImpl implements IWSElement
       return m_Owner;
    }
 
-   /**
+   
+/**
     *
     * Sets the owner on this element.
     *
@@ -307,7 +315,8 @@ public class WSElementImpl implements IWSElement
       }
    }
 
-   /**
+   
+/**
     *
     * Retrieves the DOM element that this WSElement represents.
     *
@@ -321,7 +330,8 @@ public class WSElementImpl implements IWSElement
       return m_Element;
    }
 
-   /**
+   
+/**
     *
     * Sets the DOM element behind the element.
     *
@@ -336,7 +346,8 @@ public class WSElementImpl implements IWSElement
       m_IsDirty = true;
    }
 
-   /**
+   
+/**
     *
     * Retrieves the location of the external file that this element represents.
     *
@@ -375,7 +386,8 @@ public class WSElementImpl implements IWSElement
       return loc;
    }
 
-   /**
+   
+/**
     *
     * Sets the location of the external file that this element represents.
     *
@@ -425,7 +437,8 @@ public class WSElementImpl implements IWSElement
       }
    }
 
-   /**
+   
+/**
     *
     * Retrieves the object that will handle the two phase commit process for this
     * element.
@@ -440,7 +453,8 @@ public class WSElementImpl implements IWSElement
       return m_TwoPhase;
    }
 
-   /**
+   
+/**
     *
     * Sets the object that will handle the two phase commit process for this
     * element.
@@ -455,7 +469,8 @@ public class WSElementImpl implements IWSElement
       m_TwoPhase = value;
    }
 
-   /**
+   
+/**
     *
     * Determines whether or not this element needs to be saved or not.
     *
@@ -491,7 +506,8 @@ public class WSElementImpl implements IWSElement
       return retVal;
    }
 
-   /**
+   
+/**
     *
     * Manually sets the dirty flag on this WSElement.
     *
@@ -506,7 +522,8 @@ public class WSElementImpl implements IWSElement
       m_IsDirty = value;
    }
 
-   /**
+   
+/**
     * Saves the element.
     *
     * @throws WorkspaceManagementException Thrown when an error occurs
@@ -518,7 +535,8 @@ public class WSElementImpl implements IWSElement
       m_IsDirty = false;
    }
    
-	/**
+	
+/**
 	 * Saves the element.
 	 *
 	 * @throws WorkspaceManagementException Thrown when an error occurs
@@ -530,7 +548,8 @@ public class WSElementImpl implements IWSElement
 		save("");
 	}
 
-   /**
+   
+/**
     *
     * Retrieves the data for this element.
     *
@@ -549,7 +568,8 @@ public class WSElementImpl implements IWSElement
       return data;
    }
 
-   /**
+   
+/**
     *
     * sets the data for this ProjectElement.
     *
@@ -585,7 +605,8 @@ public class WSElementImpl implements IWSElement
       }
    }
 
-   /**
+   
+/**
     *
     * Retrieves the documentation text associated with this element.
     *
@@ -604,7 +625,8 @@ public class WSElementImpl implements IWSElement
       return doc;
    }
 
-   /**
+   
+/**
     *
     * Sets the documentation field on this WSElement.
     *
@@ -661,7 +683,8 @@ public class WSElementImpl implements IWSElement
       }
    }
 
-   /**
+   
+/**
     *
     * Retrieves the dispatching object for WSElement events.
     *
@@ -697,7 +720,8 @@ public class WSElementImpl implements IWSElement
       return disp;
    }
 
-   /**
+   
+/**
     *
     * Retrieves the dispatcher and the COM interface that this impl class represents.
     *
@@ -723,7 +747,8 @@ public class WSElementImpl implements IWSElement
       return disp;
    }
 
-   /**
+   
+/**
     *
     * Sets an xml attribute value on the element, firing the WSElementModified events
     *
@@ -756,7 +781,8 @@ public class WSElementImpl implements IWSElement
       }
    }
 
-   /**
+   
+/**
     *
     * Appends a child element to the element passed in, firing the low level WSElementModified
     * events
@@ -786,7 +812,8 @@ public class WSElementImpl implements IWSElement
       }
    }
 
-   /**
+   
+/**
     *
     * Checks to see if fileName is relative to the current Workspace. If it is, an absolute
     * path is built.
@@ -822,7 +849,8 @@ public class WSElementImpl implements IWSElement
       return retPath;
    }
 
-   /**
+   
+/**
     * Retrieves the file location of the outer owner of this element. This
 	 * should be a Workspace element.
 	 *
@@ -850,7 +878,8 @@ public class WSElementImpl implements IWSElement
       return retVal;
    }
    
-	/**
+	
+/**
 	 * Checks if this object is an instance of IWorkspace.
 	 * 
 	 * @return true if the object is a workspace

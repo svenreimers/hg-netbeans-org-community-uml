@@ -43,20 +43,15 @@
  */
 
 
-/*
- *
- * Created on Jul 1, 2003
- * @author Trey Spiva
- */
+
+
 package org.netbeans.modules.uml.ui.support.commondialogs;
 
 
 import org.netbeans.modules.uml.core.support.umlmessagingcore.IMessageData;
 
-/**
- *
- * @author Trey Spiva
- */
+
+
 public interface IErrorDialog extends ISilentDialog
 {
    public static int IDOK = 1;

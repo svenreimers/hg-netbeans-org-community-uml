@@ -81,7 +81,8 @@ public interface IRelationFactory
 	public IDependency createDependency(INamedElement client, INamedElement supplier, INamespace space); 
 	public IDependency createDependency2(INamedElement client, INamedElement supplier, String depType, INamespace space);
 	
-	/*
+	
+/*
 	 TODO: Create IRelationProxies
 	 */
 	public ETList<IRelationProxy> determineCommonRelations(ETList<IElement> elements); 

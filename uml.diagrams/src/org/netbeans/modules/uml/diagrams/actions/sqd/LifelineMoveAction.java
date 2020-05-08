@@ -53,10 +53,8 @@ import org.netbeans.api.visual.widget.Scene;
 import org.netbeans.api.visual.widget.Widget;
 import org.netbeans.modules.uml.drawingarea.palette.context.ContextPaletteManager;
 
-/**
- *
- * @author sp153251
- */
+
+
 public class LifelineMoveAction extends WidgetAction.LockedAdapter {
 
     private MoveStrategy strategy;

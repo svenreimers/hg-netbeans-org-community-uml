@@ -48,72 +48,86 @@ import org.netbeans.modules.uml.core.support.umlsupport.IResultCell;
 
 public interface IBehavioralFeatureEventsSink
 {
-	/**
+	
+/**
 	 * Fired whenever the concurrency value of a behavioral feature is about to be modified.
 	*/
 	public void onConcurrencyPreModified( IBehavioralFeature feature, /* CallConcurrencyKind */ int proposedValue, IResultCell cell );
 
-	/**
+	
+/**
 	 * Fired whenever the concurrency value of a behavioral feature was modified.
 	*/
 	public void onConcurrencyModified( IBehavioralFeature feature, IResultCell cell );
 
-	/**
+	
+/**
 	 * Fired whenever a signal is about to be added to the behavioral feature, indicating that the feature can 'catch' the specified signal.
 	*/
 	public void onPreHandledSignalAdded( IBehavioralFeature feature, ISignal proposedValue, IResultCell cell );
 
-	/**
+	
+/**
 	 * Fired whenever a signal is added to the behavioral feature, indicating that the feature can 'catch' the specified signal.
 	*/
 	public void onHandledSignalAdded( IBehavioralFeature feature, IResultCell cell );
 
-	/**
+	
+/**
 	 * Fired whenever a signal is about to be removed from the behavioral feature, indicating that the feature can no longer 'catch' the specified signal.
 	*/
 	public void onPreHandledSignalRemoved( IBehavioralFeature feature, ISignal proposedValue, IResultCell cell );
 
-	/**
+	
+/**
 	 * Fired whenever a signal was removed from the behavioral feature, indicating that the feature can no longer 'catch' the specified signal.
 	*/
 	public void onHandledSignalRemoved( IBehavioralFeature feature, IResultCell cell );
 
-	/**
+	
+/**
 	 * Fired whenever a new parameter is about to be added to the behavioral feature's list of parameters.
 	*/
 	public void onPreParameterAdded( IBehavioralFeature feature, IParameter parm, IResultCell cell );
 
-	/**
+	
+/**
 	 * Fired whenever a new parameter was added to the behavioral feature's list of parameters.
 	*/
 	public void onParameterAdded( IBehavioralFeature feature, IParameter parm, IResultCell cell );
 
-	/**
+	
+/**
 	 * Fired whenever an existing parameter is about to be removed from the behavioral feature's list of parameters.
 	*/
 	public void onPreParameterRemoved( IBehavioralFeature feature, IParameter parm, IResultCell cell );
 
-	/**
+	
+/**
 	 * Fired whenever an existing parameter was just removed from the behavioral feature's list of parameters.
 	*/
 	public void onParameterRemoved( IBehavioralFeature feature, IParameter parm, IResultCell cell );
 
-	/**
+	
+/**
 	 * Fired whenever the abstract flag on the behavioral feature is about to be modified.
 	*/
 	public void onPreAbstractModified( IBehavioralFeature feature, boolean proposedValue, IResultCell cell );
 
-	/**
+	
+/**
 	 * Fired whenever the abstract flag on the behavioral feature has been modified.
 	*/
 	public void onAbstractModified( IBehavioralFeature feature, IResultCell cell );
 
-	/**
+	
+/**
 	 * Fired whenever the strictfp flag on the behavioral feature is about to be modified.
 	*/
 	public void onPreStrictFPModified( IBehavioralFeature feature, boolean proposedValue, IResultCell cell );
 
-	/**
+	
+/**
 	 * Fired whenever the strictfp flag on the behavioral feature has been modified.
 	*/
 	public void onStrictFPModified( IBehavioralFeature feature, IResultCell cell );

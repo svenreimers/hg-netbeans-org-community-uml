@@ -79,7 +79,8 @@ public class DesignPatternDetails implements IDesignPatternDetails
 		super();
 	}
 
-	/**
+	
+/**
 	 * Gets the stored ICollaboration
 	 *
 	 * @param[out] pVal		The collaboration on this pattern details
@@ -90,7 +91,8 @@ public class DesignPatternDetails implements IDesignPatternDetails
 	{
 		return m_Pattern;
 	}
-	/**
+	
+/**
 	 * Sets the stored ICollaboration
 	 *
 	 * @param[in] newVal		The collaboration on this pattern details
@@ -101,7 +103,8 @@ public class DesignPatternDetails implements IDesignPatternDetails
 	{
 	   m_Pattern = newVal;
 	}
-	/**
+	
+/**
 	 * Gets the stored INamespace
 	 *
 	 * @param[out] pVal		The namespace on this pattern details
@@ -126,7 +129,8 @@ public class DesignPatternDetails implements IDesignPatternDetails
 		}
 		return space;
 	}
-	/**
+	
+/**
 	 * Sets the stored INamespace
 	 *
 	 * @param[out] pVal		The namespace on this pattern details
@@ -137,7 +141,8 @@ public class DesignPatternDetails implements IDesignPatternDetails
 	{
 		m_Namespace = newVal;
 	}
-	/**
+	
+/**
 	 * Whether or not a diagram should be created when a pattern is applied.
 	 * The diagram would contain the information that was created/changed during
 	 * the apply process.
@@ -150,7 +155,8 @@ public class DesignPatternDetails implements IDesignPatternDetails
 	{
 		return m_CreateDiagram;
 	}
-	/**
+	
+/**
 	 * See getCreateDiagram
 	 *
 	 *
@@ -160,7 +166,8 @@ public class DesignPatternDetails implements IDesignPatternDetails
 	{
 	   m_CreateDiagram = newVal;
 	}
-	/**
+	
+/**
 	 * Whether or not to show the actual collaboration on the diagram that is created
 	 * when a pattern is applied
 	 *
@@ -172,7 +179,8 @@ public class DesignPatternDetails implements IDesignPatternDetails
 	{
 		return m_ShowOnDiagram;
 	}
-	/**
+	
+/**
 	 * See getShowOnDiagram
 	 *
 	 * @return HRESULT
@@ -181,7 +189,8 @@ public class DesignPatternDetails implements IDesignPatternDetails
 	{
 		m_ShowOnDiagram = newVal;
 	}
-	/**
+	
+/**
 	 * Gets the roles associated with these details
 	 *
 	 * @param[out] pVal		The roles
@@ -192,7 +201,8 @@ public class DesignPatternDetails implements IDesignPatternDetails
 	{
 		return m_Roles;
 	}
-	/**
+	
+/**
 	 * Sets the stored roles for these details
 	 *
 	 * @param[in]	newVal	The roles
@@ -203,7 +213,8 @@ public class DesignPatternDetails implements IDesignPatternDetails
 	{
 		m_Roles = newVal;
 	}
-	/**
+	
+/**
 	 * Adds the passed in role to these details
 	 *
 	 * @param[in]	pRole		The role to add
@@ -221,7 +232,8 @@ public class DesignPatternDetails implements IDesignPatternDetails
 			m_Roles.add(pRole);
 		}
 	}
-	/**
+	
+/**
 	 * A map is kept for every participant in a pattern and what role that participant
 	 * is supposed to be playing.
 	 *
@@ -267,7 +279,8 @@ public class DesignPatternDetails implements IDesignPatternDetails
 			}
 		}
 	}
-	/**
+	
+/**
 	 * Get the entries from the map that match the passed in roleID.  This will be the
 	 * names of the participants that will playing that role.
 	 *
@@ -297,7 +310,8 @@ public class DesignPatternDetails implements IDesignPatternDetails
 		}
 	   return pTemp;
 	}
-	/**
+	
+/**
 	 * Clears the entries from the participant name map.
 	 *
 	 *
@@ -307,7 +321,8 @@ public class DesignPatternDetails implements IDesignPatternDetails
 	{
 		m_ParticipantNameMap.clear();
 	}
-	/**
+	
+/**
 	 * A map is kept of the items playing in the pattern and the role that they are playing
 	 *
 	 * @param[in]	partID		The id of the element playing in the pattern
@@ -351,7 +366,8 @@ public class DesignPatternDetails implements IDesignPatternDetails
 			}
 		}
 	}
-	/**
+	
+/**
 	 * Get the entries from the map that match the passed in id.  This will be the
 	 * names of the participants that will playing that role.
 	 *
@@ -381,7 +397,8 @@ public class DesignPatternDetails implements IDesignPatternDetails
 		}
 	   return pTemp;
 	}
-	/**
+	
+/**
 	 * A map is kept of the roles in the pattern and the element that is playing it
 	 *
 	 * @param[in]	roleID		The role ID
@@ -425,7 +442,8 @@ public class DesignPatternDetails implements IDesignPatternDetails
 			}
 		}
 	}
-	/**
+	
+/**
 	 * Get the entries from the map that match the passed in role id.  This will be the
 	 * elements that will playing that role.
 	 *
@@ -455,7 +473,8 @@ public class DesignPatternDetails implements IDesignPatternDetails
 		}
 	   return pTemp;
 	}
-	/**
+	
+/**
 	 * Gets the stored IProject from these details
 	 *
 	 * @param[out]	pVal		The stored project
@@ -466,7 +485,8 @@ public class DesignPatternDetails implements IDesignPatternDetails
 	{
 		return m_Project;
 	}
-	/**
+	
+/**
 	 * Sets the project on these details
 	 *
 	 * @param[in] newVal		The project to store
@@ -477,7 +497,8 @@ public class DesignPatternDetails implements IDesignPatternDetails
 	{
 		m_Project = newVal;
 	}
-	/**
+	
+/**
 	 * The name of the diagram to create when a pattern is applied.
 	 * The diagram would contain the information that was created/changed during
 	 * the apply process.
@@ -490,7 +511,8 @@ public class DesignPatternDetails implements IDesignPatternDetails
 	{
 		return m_DiagramName;
 	}
-	/**
+	
+/**
 	 * See getDiagramName
 	 *
 	 *
@@ -500,7 +522,8 @@ public class DesignPatternDetails implements IDesignPatternDetails
 	{
 	   m_DiagramName = newVal;
 	}
-	/**
+	
+/**
 	 * Whether or not a to remove a pattern from its current project when promoting
 	 * it to the design center area.
 	 *
@@ -512,7 +535,8 @@ public class DesignPatternDetails implements IDesignPatternDetails
 	{
 	   return m_RemoveOnPromote;
 	}
-	/**
+	
+/**
 	 * See getRemoveOnPromote
 	 *
 	 *

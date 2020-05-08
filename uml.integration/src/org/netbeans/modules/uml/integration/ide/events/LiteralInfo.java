@@ -42,12 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File         : LiteralInfo.java
- * Version      : 1.0
- * Description  : Information about the changes to an enumeration's literal.
- * Author       : Daniel Prusa
- */
+
+
 package org.netbeans.modules.uml.integration.ide.events;
 
 import java.lang.reflect.Modifier;
@@ -70,7 +66,8 @@ public class LiteralInfo extends ElementInfo
     /** The containing class information. */
     private ClassInfo  mContainer = null;
 
-    /**
+    
+/**
      *  The IEnumerationLiteral from which this LiteralInfo was constructed. If the
      * LiteralInfo was constructed by an IDE integration, this should be null.
      */
@@ -96,7 +93,8 @@ public class LiteralInfo extends ElementInfo
         this(null, lit);
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      */
     public IProject getOwningProject() {
         return literal != null?
@@ -115,7 +113,8 @@ public class LiteralInfo extends ElementInfo
                            : null;
     }
 
-    /**
+    
+/**
      * Set all properties for this LiteralInfo using info from the given
      * IEnumerationLiteral.
      * @param attr An <code>IEnumerationLiteral</code> for the literal.
@@ -131,7 +130,8 @@ public class LiteralInfo extends ElementInfo
         }
     }
 
-    /**
+    
+/**
      * Retrieves the containing clas of the data member.
      * @return The containing class.
      */
@@ -140,7 +140,8 @@ public class LiteralInfo extends ElementInfo
         return mContainer;
     }
 
-    /**
+    
+/**
      * Sets the containing clas of the data member.
      * @param container The containing class.
      */

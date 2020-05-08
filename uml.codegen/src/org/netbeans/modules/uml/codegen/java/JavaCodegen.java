@@ -995,7 +995,7 @@ public class JavaCodegen implements ICodeGenerator
         }       
         catch (IOException ex)
         {
-            // TODO: conover - provide proper handling
+            
             ex.printStackTrace();
             return null;
         }

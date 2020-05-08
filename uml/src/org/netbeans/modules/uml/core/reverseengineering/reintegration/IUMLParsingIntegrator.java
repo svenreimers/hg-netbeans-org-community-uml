@@ -60,50 +60,59 @@ import org.netbeans.modules.uml.util.ITaskWorker;
 
 public interface IUMLParsingIntegrator extends ITaskWorker
 {
-	/**
+	
+/**
 	 * The files to reverse engineer.
 	*/
 	public IStrings getFiles();
 
-	/**
+	
+/**
 	 * The files to reverse engineer.
 	*/
 	public void setFiles( IStrings value );
 
-	/**
+	
+/**
 	 * The ProgressDialog used during the RE process.
 	*/
         
-// TODO: conover - re-enable with intent to retrieve NB Output window ???
+
 //	public IProgressDialog getProgressDialog();
 
-	/**
+	
+/**
 	 * The ProgressDialog used during the RE process.
 	*/
-// TODO: conover - re-enable with intent to initialize NB Output window ???
+
 //	public void setProgressDialog( IProgressDialog value );
 
-	/**
+	
+/**
 	 * Reverse engineer the files set in the Files property.
 	*/
 	public boolean reverseEngineer( INamespace pSpace, boolean useFileChooser, boolean useDiagramCreateWizard, boolean displayProgress, boolean extractClasses );
 
-	/**
+	
+/**
 	 * Verifies that the input operation can be processed by reverse engineering
 	*/
 	public boolean canOperationBeREed( IOperation pOperation );
 
-	/**
+	
+/**
 	 * Reverse engineer the input operations
 	*/
 	public void reverseEngineerOperations( INamespace pSpace, ETList<IElement> pElements );
 
-	/**
+	
+/**
 	 * Reverse engineer the input operation
 	*/
 	public void reverseEngineerOperation( INamespace pSpace, IElement pElement );
 
-	/**
+	
+/**
 	 * Add the input REClass to the associated project
 	*/
 	public void  addClassToProject( IREClass pClass );

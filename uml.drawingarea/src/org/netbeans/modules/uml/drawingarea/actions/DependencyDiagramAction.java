@@ -54,14 +54,13 @@ import org.openide.util.HelpCtx;
 import org.openide.util.NbBundle;
 import org.openide.util.actions.CookieAction;
 
-/**
- *
- * @author  Craig Conover
- */
+
+
 public class DependencyDiagramAction extends CookieAction
 {
 	
-	/**
+	
+/**
 	 * Creates a new instance of DependencyDiagramAction
 	 */
 	public DependencyDiagramAction()

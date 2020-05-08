@@ -76,11 +76,8 @@ import org.netbeans.test.umllib.util.LibProperties;
 
 
 
-/**
- *
- * @author psb
- * @spec UML/ComponentDiagram.xml
- */
+
+
 public class ComponentDiagramElementsContextMenu2 extends UMLTestCase {
 
     //some system properties
@@ -464,7 +461,8 @@ public class ComponentDiagramElementsContextMenu2 extends UMLTestCase {
         //
         LinkOperator testedlink = null;
         try {
-            /* In netbeans6.0 composition and navigable composition link are shown as aggregation in 
+            
+/* In netbeans6.0 composition and navigable composition link are shown as aggregation in 
              * project view as they are special form of aggregation. See Issue 116868
              * Similar to navigable aggregation and navigable association.The default name
              * aggrgation and association are used in project modle.

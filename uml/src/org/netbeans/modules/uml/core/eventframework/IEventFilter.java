@@ -47,17 +47,20 @@ package org.netbeans.modules.uml.core.eventframework;
 
 public interface IEventFilter
 {
-	/**
+	
+/**
 	 * Checks to see if the passed in trigger should be pulled.
 	*/
 	public boolean validateEvent( String triggerName, Object payLoad );
 
-	/**
+	
+/**
 	 * The unique identifer of this filter.
 	*/
 	public String getFilterID();
 
-	/**
+	
+/**
 	 * The unique identifer of this filter.
 	*/
 	public void setFilterID( String value );

@@ -50,12 +50,14 @@ import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure
 
 public interface ISignalEvent extends IEvent
 {
-	/**
+	
+/**
 	 * Sets / Gets the specific signal that is associated with this event.
 	*/
 	public ISignal getSignal();
 
-	/**
+	
+/**
 	 * Sets / Gets the specific signal that is associated with this event.
 	*/
 	public void setSignal( ISignal value );

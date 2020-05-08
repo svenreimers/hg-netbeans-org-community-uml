@@ -42,25 +42,22 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : AttributeTypeChangeRequest.java
- * Created on : Nov 24, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.roundtripframework;
 
 import org.netbeans.modules.uml.core.metamodel.core.foundation.IElement;
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttribute;
 
-/**
- * @author Aztec
- */
+
+
 public class AttributeTypeChangeRequest
     extends TypeChangeRequest
     implements IAttributeTypeChangeRequest
 {
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IAttributeTypeChangeRequest#getImpactedAttribute()
      */
     public IAttribute getImpactedAttribute()

@@ -60,10 +60,8 @@ import org.netbeans.modules.uml.core.metamodel.dynamics.ILifeline;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 import org.openide.util.NbBundle;
 
-/**
- *
- * @author Sheryl
- */
+
+
 public class InteractionData extends ElementDataObject
 {
     private IInteraction element;

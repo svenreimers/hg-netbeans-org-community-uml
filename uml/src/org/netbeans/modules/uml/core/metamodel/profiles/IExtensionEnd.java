@@ -42,6 +42,7 @@
  * made subject to such option by the copyright holder.
  */
 
+
 /*
  * Created on Sep 16, 2003
  *
@@ -50,10 +51,8 @@ package org.netbeans.modules.uml.core.metamodel.profiles;
 
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAssociationEnd;
 
-/**
- * @author aztec
- *
- */
+
+
 public interface IExtensionEnd extends IAssociationEnd
 {
 

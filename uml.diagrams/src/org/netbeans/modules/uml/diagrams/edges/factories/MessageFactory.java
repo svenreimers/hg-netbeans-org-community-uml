@@ -58,16 +58,15 @@ import org.netbeans.modules.uml.core.metamodel.dynamics.IMessage;
 import org.netbeans.modules.uml.core.metamodel.dynamics.IMessageConnector;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
-/**
- *
- * @author psb
- */
+
+
 public class MessageFactory extends AbstractRelationshipFactory
 {
     private DynamicsRelationFactory factory=new DynamicsRelationFactory();
 
 
-    /**
+    
+/**
     * Creates connector between source and target lifelines
     *
      * @param source
@@ -84,7 +83,8 @@ public class MessageFactory extends AbstractRelationshipFactory
         }
         else return null;
     }
-    /**
+    
+/**
     * Create message, insert before messages after y position
     *
      * @param scene
@@ -103,7 +103,8 @@ public class MessageFactory extends AbstractRelationshipFactory
     }
     
     
-    /**
+    
+/**
      * find message after suggested point within interaction
      * 
      * 
@@ -136,7 +137,8 @@ public class MessageFactory extends AbstractRelationshipFactory
         return messageAfter;
    }
     
-    /**
+    
+/**
      * 
      * @param beforeMessage message located next to newly created message
      *
@@ -148,7 +150,8 @@ public class MessageFactory extends AbstractRelationshipFactory
         return message;
     }
 
-    /**
+    
+/**
      * 
      * @param relationship
      * @param source
@@ -160,7 +163,8 @@ public class MessageFactory extends AbstractRelationshipFactory
         msg.changeSendingLifeline(msg.getSendingLifeline(), (ILifeline) source);
     }
 
-    /**
+    
+/**
      * 
      * @param relationship
      * @param target

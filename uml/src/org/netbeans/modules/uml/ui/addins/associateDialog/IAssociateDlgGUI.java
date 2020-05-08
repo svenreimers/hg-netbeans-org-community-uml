@@ -42,6 +42,7 @@
  * made subject to such option by the copyright holder.
  */
 
+
 /*
  * Created on Mar 5, 2004
  *
@@ -51,10 +52,8 @@ package org.netbeans.modules.uml.ui.addins.associateDialog;
 import org.netbeans.modules.uml.core.metamodel.structure.IProject;
 import org.netbeans.modules.uml.ui.support.finddialog.IFindResults;
 
-/**
- * @author jingmingm
- *
- */
+
+
 public interface IAssociateDlgGUI
 {
 	// Display the Associate With Dialog

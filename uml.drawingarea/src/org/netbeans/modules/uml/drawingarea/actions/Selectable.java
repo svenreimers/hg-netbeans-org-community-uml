@@ -43,10 +43,8 @@ package org.netbeans.modules.uml.drawingarea.actions;
 
 import org.netbeans.api.visual.widget.Widget;
 
-/**
- *
- * @author treyspiva
- */
+
+
 public interface Selectable
 {
     public void select(Widget widget);

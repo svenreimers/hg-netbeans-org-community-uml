@@ -42,11 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : StateVertex.java
- * Created on : Sep 19, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.metamodel.common.commonstatemachines;
 
 import org.dom4j.Document;
@@ -60,13 +57,13 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.Namespace;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.OwnerRetriever;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
-/**
- * @author Aztec
- */
+
+
 public class StateVertex extends Namespace implements IStateVertex
 {
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonstatemachines.IStateVertex#addIncomingTransition(org.netbeans.modules.uml.core.metamodel.common.commonstatemachines.ITransition)
      */
     public void addIncomingTransition(final ITransition pTran)
@@ -91,7 +88,8 @@ public class StateVertex extends Namespace implements IStateVertex
 
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonstatemachines.IStateVertex#addOutgoingTransition(org.netbeans.modules.uml.core.metamodel.common.commonstatemachines.ITransition)
      */
     public void addOutgoingTransition(final ITransition pTran)
@@ -115,7 +113,8 @@ public class StateVertex extends Namespace implements IStateVertex
         );
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonstatemachines.IStateVertex#getContainer()
      */
     public IRegion getContainer()
@@ -123,7 +122,8 @@ public class StateVertex extends Namespace implements IStateVertex
 		return OwnerRetriever.getOwnerByType(this, IRegion.class);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonstatemachines.IStateVertex#getIncomingTransitions()
      */
     public ETList<ITransition> getIncomingTransitions()
@@ -132,7 +132,8 @@ public class StateVertex extends Namespace implements IStateVertex
             .retrieveElementCollectionWithAttrIDs(this, "incoming", ITransition.class);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonstatemachines.IStateVertex#getOutgoingTransitions()
      */
     public ETList<ITransition> getOutgoingTransitions()
@@ -141,7 +142,8 @@ public class StateVertex extends Namespace implements IStateVertex
             .retrieveElementCollectionWithAttrIDs(this, "outgoing", ITransition.class);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonstatemachines.IStateVertex#removeIncomingTransition(org.netbeans.modules.uml.core.metamodel.common.commonstatemachines.ITransition)
      */
     public void removeIncomingTransition(final ITransition pTran)
@@ -161,7 +163,8 @@ public class StateVertex extends Namespace implements IStateVertex
             );
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonstatemachines.IStateVertex#removeOutgoingTransition(org.netbeans.modules.uml.core.metamodel.common.commonstatemachines.ITransition)
      */
     public void removeOutgoingTransition(final ITransition pTran)
@@ -181,7 +184,8 @@ public class StateVertex extends Namespace implements IStateVertex
             );
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonstatemachines.IStateVertex#setContainer(org.netbeans.modules.uml.core.metamodel.common.commonstatemachines.IRegion)
      */
     public void setContainer(IRegion value)

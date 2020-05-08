@@ -67,10 +67,8 @@ import org.openide.util.Exceptions;
 import org.openide.util.Lookup;
 import org.openide.util.NbBundle;
 
-/**
- *
- * @author treyspiva
- */
+
+
 public abstract class SwitchableWidget extends UMLNodeWidget
 {
     public static final String DEFAULT = "DEFAULT_VIEW"; // NOI18N
@@ -201,7 +199,8 @@ public abstract class SwitchableWidget extends UMLNodeWidget
 
     }
     
-    /**
+    
+/**
      * Retreives the metatype of the model element.
      * 
      * @return The model elements name.

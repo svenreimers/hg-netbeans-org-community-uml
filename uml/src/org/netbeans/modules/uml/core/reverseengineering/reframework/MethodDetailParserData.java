@@ -54,7 +54,8 @@ public class MethodDetailParserData extends ParserData
         implements IREMethodDetailData
 {
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.IREMethodDetailData#getLine()
      */
     public int getLine()

@@ -81,10 +81,8 @@ import org.netbeans.modules.uml.drawingarea.view.ResourceType;
 import org.netbeans.modules.uml.drawingarea.view.UMLWidget;
 import org.openide.util.NbBundle;
 
-/**
- *
- * @author Thuy
- */
+
+
 public class ActivityPartitionWidget extends CompositeNodeWidget
 {
 

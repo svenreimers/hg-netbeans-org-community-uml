@@ -53,10 +53,8 @@ import org.netbeans.modules.uml.propertysupport.options.panels.GeneralOptionsPan
 import org.netbeans.spi.options.OptionsPanelController;
 import org.openide.util.HelpCtx;
 import org.openide.util.Lookup;
-/**
- *
- * @author krichard
- */
+
+
 public class UMLPanelController extends OptionsPanelController {
     
     
@@ -67,7 +65,8 @@ public class UMLPanelController extends OptionsPanelController {
     private OptionsSupport support = null ;
     private JTabbedPane pane = null ;    
     
-    /**
+    
+/**
      * Creates a new instance of UMLPanelController
      */
     public UMLPanelController() {

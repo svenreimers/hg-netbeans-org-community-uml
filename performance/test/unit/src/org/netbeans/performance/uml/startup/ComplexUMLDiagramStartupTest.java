@@ -48,28 +48,20 @@ package org.netbeans.performance.uml.startup;
 import java.io.IOException;
 import org.netbeans.modules.performance.utilities.MeasureStartupTimeTestCase;
 
-/**
- * Measure startup time by org.netbeans.core.perftool.StartLog.
- * Number of starts with new userdir is defined by property
- * <br> <code> org.netbeans.performance.repeat.with.new.userdir </code>
- * <br> and number of starts with old userdir is defined by property
- * <br> <code> org.netbeans.performance.repeat </code>
- * Run measurement defined number times, but forget first measured value,
- * it's a attempt to have still the same testing conditions with
- * loaded and cached files.
- *
- * @author mrkam@netbeans.org
- */
+
+
 public class ComplexUMLDiagramStartupTest extends MeasureStartupTimeTestCase {
     
-    /** Define testcase
+    
+/** Define testcase
      * @param testName name of the testcase
      */
     public ComplexUMLDiagramStartupTest(String testName) {
         super(testName);
     }
     
-    /** Testing start of IDE with measurement of the startup time.
+    
+/** Testing start of IDE with measurement of the startup time.
      * @throws IOException
      */
     public void testStartIDE() throws java.io.IOException {

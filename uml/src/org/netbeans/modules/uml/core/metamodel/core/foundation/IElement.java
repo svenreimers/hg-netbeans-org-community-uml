@@ -51,21 +51,16 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 import org.openide.nodes.Node;
 
-/**
- * <p>Title: </p>
- * <p>Description: </p>
- * <p>Copyright: Copyright (c) 2003</p>
- * <p>Company: </p>
- * @author not attributable
- * @version 1.0
- */
+
+
 public interface IElement extends IBaseElement, Node.Cookie
 {
 
     /** Retrieves the name of the actual element, such as 'Class'. */
     public String getElementType();
 
-    /**
+    
+/**
     * Retrieves the name of the element typically used for creating icons.
     * It is composed of the element type and any other information needed to
     * make this type unique, such as 'Class' or 'PseudoState_Interface'
@@ -78,7 +73,8 @@ public interface IElement extends IBaseElement, Node.Cookie
 
     public boolean getHasExpandedElementType();
     
-    /**
+    
+/**
      * Retrieves a element type name that can be displayed to the user.
      * @return A user friendly element type name.
      */
@@ -240,7 +236,8 @@ public interface IElement extends IBaseElement, Node.Cookie
     /** Retrieves a collection of SourceFileArtifacts that contain absolute paths to source files associated with this element.  The collection returned will contain IArtifact interfaces. */
     public ETList<IElement> getSourceFiles3(ILanguage language);
 
-    /** 
+    
+/** 
      * get the SourceFileArtifact with the given fileName
      */
     public IElement getSourceFile(String fileName);

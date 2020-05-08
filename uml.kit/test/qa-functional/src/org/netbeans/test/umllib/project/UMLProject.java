@@ -82,7 +82,8 @@ public class UMLProject extends Project {
     String javaProjectName;
     Node projectNode;
     
-    /**
+    
+/**
      *
      * @param name
      * @param type
@@ -91,7 +92,8 @@ public class UMLProject extends Project {
         this(name, type, null);
     }
     
-    /**
+    
+/**
      *
      * @param name
      * @param type
@@ -101,7 +103,8 @@ public class UMLProject extends Project {
         this(name, type, location, null);
     }
     
-    /**
+    
+/**
      *
      * @param name
      * @param type
@@ -117,7 +120,8 @@ public class UMLProject extends Project {
     }
     
     
-    /**
+    
+/**
      *
      * @return
      */
@@ -126,7 +130,8 @@ public class UMLProject extends Project {
     }
     
     
-    /**
+    
+/**
      *
      * @return
      */
@@ -135,7 +140,8 @@ public class UMLProject extends Project {
     }
     
     
-    /**
+    
+/**
      *
      * @param name
      * @param type
@@ -146,7 +152,8 @@ public class UMLProject extends Project {
     }
     
     
-    /**
+    
+/**
      *
      * @param name
      * @param type
@@ -157,7 +164,8 @@ public class UMLProject extends Project {
         return createProject(name, type, javaProject.getLocation() , javaProject.getName());
     }
     
-    /**
+    
+/**
      *
      * @param name
      * @param type
@@ -168,7 +176,8 @@ public class UMLProject extends Project {
         return createProject(name, type, location, null);
     }
     
-    /**
+    
+/**
      *
      * @param name
      * @param type
@@ -340,7 +349,8 @@ public class UMLProject extends Project {
         generateCode(getProjectNode(), javaProject);
     }
     
-   /* public void generateCode(Node node, JavaProject javaProject){
+   
+/* public void generateCode(Node node, JavaProject javaProject){
         generateCode(node, javaProject.getLocation() + "/" + javaProject.getName() + "/src");
     }*/
     

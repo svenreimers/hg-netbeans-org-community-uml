@@ -158,7 +158,8 @@ public class WizardPatternSelection extends WizardInteriorPage {
 		onSelChangePatternList();
 	}
 
-	/**
+	
+/**
 	 * Called when dialog is initialized
 	 *
 	 *
@@ -192,7 +193,8 @@ public class WizardPatternSelection extends WizardInteriorPage {
 
 		return true; // return TRUE unless you set the focus to a control
 	}
-	/**
+	
+/**
 	 * Called when the page becomes active
 	 *
 	 *
@@ -206,7 +208,8 @@ public class WizardPatternSelection extends WizardInteriorPage {
 		populatePattern();
 		super.onSetActive();
 	}
-	/**
+	
+/**
 	 * Called when the user clicks back
 	 *
 	 *
@@ -221,7 +224,8 @@ public class WizardPatternSelection extends WizardInteriorPage {
 		}
 		super.onWizardBack();
 	}
-	/**
+	
+/**
 	 * Called when the user clicks next
 	 *
 	 *
@@ -269,7 +273,8 @@ public class WizardPatternSelection extends WizardInteriorPage {
              DesignPatternUtilities.displayErrorMessage(m_Wizard, msg);
          }
      }
-	/**
+	
+/**
 	 * Fills in the project list box.
 	 *
 	 * @return HRESULT
@@ -280,7 +285,8 @@ public class WizardPatternSelection extends WizardInteriorPage {
 			DesignPatternUtilities.populateProjectListWithDesignCenterProjects(m_ProjectList, false);
 		}
 	}
-	/**
+	
+/**
 	 * Fills in the project list box default.
 	 *
 	 * @return HRESULT
@@ -299,7 +305,8 @@ public class WizardPatternSelection extends WizardInteriorPage {
 		}
 		onSelChangeProjectList();
 	}
-	/**
+	
+/**
 	 * Fills in the pattern list default.
 	 *
 	 * @return HRESULT
@@ -313,7 +320,8 @@ public class WizardPatternSelection extends WizardInteriorPage {
 		}
 	}
 
-	/**
+	
+/**
 	 * Event called when an entry in the project list box changes
 	 *
 	 * @return HRESULT
@@ -334,7 +342,8 @@ public class WizardPatternSelection extends WizardInteriorPage {
 			}
 		}
 	}
-	/**
+	
+/**
 	 * Performs page validations -
 	 *
 	 *

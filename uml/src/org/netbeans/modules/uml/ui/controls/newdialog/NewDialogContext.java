@@ -43,6 +43,7 @@
  */
 
 
+
 /*
  * Created on Jul 15, 2003
  *
@@ -56,17 +57,16 @@ import org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl;
 import org.netbeans.modules.uml.ui.support.ProductHelper;
 import org.netbeans.modules.uml.ui.support.applicationmanager.IProductProjectManager;
 
-/**
- * @author sumitabhk
- *
- */
+
+
 public class NewDialogContext implements INewDialogContext
 {
 	public static IWorkspace s_pWorkspace = null;
 	public static String s_sProjectLocation = null;
 	public static boolean s_bUseAllProjectExtensions = false;
 	public static IProjectTreeControl s_pTreeControl = null;
-	/**
+	
+/**
 	 * 
 	 */
 	public NewDialogContext()
@@ -74,7 +74,8 @@ public class NewDialogContext implements INewDialogContext
 		super();
 	}
 
-	/**
+	
+/**
 	 * Sets / Gets the workspace that should be used for this instance of the new dialog.
 	 *
 	 * @param pVal [out,retval] The workspace that should be used for all new dialog operations.
@@ -94,7 +95,8 @@ public class NewDialogContext implements INewDialogContext
 		return retObj;
 	}
 
-	/**
+	
+/**
 	 * Sets / Gets the workspace that should be used for this instance of the new dialog.
 	 *
 	 * @param pVal [in] The workspace that should be used for all new dialog operations.
@@ -104,7 +106,8 @@ public class NewDialogContext implements INewDialogContext
 		s_pWorkspace = value;
 	}
 
-	/**
+	
+/**
 	 * Sets / Gets the project that should be used for this instance of the new dialog.
 	 *
 	 * @param pVal [out,retval] The project that should be used for all new dialog operations.
@@ -134,7 +137,8 @@ public class NewDialogContext implements INewDialogContext
 		return retObj;
 	}
 
-	/**
+	
+/**
 	 * Sets / Gets the project that should be used for this instance of the new dialog.
 	 *
 	 * @param pVal [in] The project that should be used for all new dialog operations.
@@ -148,7 +152,8 @@ public class NewDialogContext implements INewDialogContext
 		}
 	}
 
-	/**
+	
+/**
 	 * TRUE to use all extensions when getting the number of open projects.
 	 */
 	public boolean getUseAllProjectExtensions()
@@ -156,7 +161,8 @@ public class NewDialogContext implements INewDialogContext
 		return s_bUseAllProjectExtensions;
 	}
 
-	/**
+	
+/**
 	 * TRUE to use all extensions when getting the number of open projects.
 	 */
 	public void setUseAllProjectExtensions(boolean value)
@@ -164,7 +170,8 @@ public class NewDialogContext implements INewDialogContext
 		s_bUseAllProjectExtensions = value;
 	}
 
-	/**
+	
+/**
 	 * Returns the number of open projects.
 	 *
 	 * @param pNumOpen [out,retval] The number of open projects
@@ -175,7 +182,8 @@ public class NewDialogContext implements INewDialogContext
 		return 0;
 	}
 
-	/**
+	
+/**
 	 * Sets / Gets the project tree that should be used for this instance of the new dialog.
 	 *
 	 * @param pVal [out,retval] The workspace that should be used for all new dialog operations.
@@ -195,7 +203,8 @@ public class NewDialogContext implements INewDialogContext
 		return retObj;
 	}
 
-	/**
+	
+/**
 	 * Sets / Gets the project tree that should be used for this instance of the new dialog.
 	 *
 	 * @param pVal [in] The workspace that should be used for all new dialog operations.

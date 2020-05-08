@@ -43,11 +43,8 @@
  */
 
 
-/*
- * File       : MathBinaryExpression.java
- * Created on : Dec 9, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.expression;
 
 import org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ITokenDescriptor;

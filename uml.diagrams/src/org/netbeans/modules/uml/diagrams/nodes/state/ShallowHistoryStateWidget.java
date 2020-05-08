@@ -51,10 +51,8 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.IPresentationElem
 import org.netbeans.modules.uml.drawingarea.view.UMLLabelWidget;
 import org.netbeans.modules.uml.drawingarea.view.UMLWidget.UMLWidgetIDString;
 
-/**
- *
- * @author Sheryl Su
- */
+
+
 public class ShallowHistoryStateWidget extends InitialStateWidget
 {
     public ShallowHistoryStateWidget(Scene scene, String path)

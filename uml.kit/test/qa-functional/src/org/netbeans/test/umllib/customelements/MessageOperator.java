@@ -59,10 +59,8 @@ import org.netbeans.test.umllib.Utils;
 import org.netbeans.test.umllib.exceptions.NotFoundException;
  
 
-/**
- *
- * @author sunflower, Sherry Zhou
- */
+
+
 
 
 public class MessageOperator extends LinkOperator{

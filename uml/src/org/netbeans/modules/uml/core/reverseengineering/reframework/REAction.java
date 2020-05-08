@@ -54,7 +54,8 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
  */
 public class REAction extends ParserData implements IREAction
 {
-    /**
+    
+/**
      * Retrieves the arguments for the action.
      * @param pVal [out] The action arguments or NULL if there are no arguments.
      */
@@ -74,7 +75,8 @@ public class REAction extends ParserData implements IREAction
         return null;
     }
 
-    /**
+    
+/**
      * Retrieves the name of the model element that is receiving the event.
      * The name will be the UML fully scoped name of the receiving model element.
      * @param pVal [out] The receiver of the action.
@@ -87,7 +89,7 @@ public class REAction extends ParserData implements IREAction
             // The Receiver information is stored on the sub tag called 
             // UML:Action.message/UML:Message.  So, I must first get the 
             // message node and then retrieve the receiver.
-            // AZTEC: No evidence that UML:Action.message is still used, going
+            
             //        with ownedElement instead.
 //            String query = "UML:Action.message/UML:Message";
             String query = "UML:Element.ownedElement/UML:Message";
@@ -98,7 +100,8 @@ public class REAction extends ParserData implements IREAction
         return null;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.IREAction#getSender()
      */
     public String getSender()
@@ -109,7 +112,7 @@ public class REAction extends ParserData implements IREAction
             // The Receiver information is stored on the sub tag called 
             // UML:Action.message/UML:Message.  So, I must first get the 
             // message node and then retrieve the receiver.
-            // AZTEC: No evidence that UML:Action.message is still used, going
+            
             //        with ownedElement instead.
             Node messageNode = 
                 XMLManip.selectSingleNode(n, "UML:Element.ownedElement/UML:Message");
@@ -121,7 +124,8 @@ public class REAction extends ParserData implements IREAction
         return null;
     }
 
-    /**
+    
+/**
      * Retrieves the source code comment for the action.
      * @param pVal [out] The comment.
      */
@@ -131,7 +135,8 @@ public class REAction extends ParserData implements IREAction
         return "";
     }
 
-    /**
+    
+/**
      * Retrieves whether the message is a asynchronous message.
      * @param pVal true if asynchronous, false otherwise.
      */
@@ -141,7 +146,8 @@ public class REAction extends ParserData implements IREAction
         return false;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.IREAction#getTarget()
      */
     public String getTarget()
@@ -149,7 +155,8 @@ public class REAction extends ParserData implements IREAction
         return XMLManip.getAttributeValue(getEventData(), "target");
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.IREAction#getRecurrence()
      */
     public String getRecurrence()

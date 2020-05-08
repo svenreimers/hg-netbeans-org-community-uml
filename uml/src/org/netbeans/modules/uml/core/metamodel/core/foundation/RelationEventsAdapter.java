@@ -48,77 +48,85 @@ package org.netbeans.modules.uml.core.metamodel.core.foundation;
 
 import org.netbeans.modules.uml.core.support.umlsupport.IResultCell;
 
-/**
- *
- * @author Trey Spiva
- */
+
+
 public class RelationEventsAdapter implements IRelationEventsSink
 {
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     */
    public void onPreRelationEndModified(IRelationProxy proxy, IResultCell cell)
    {
       // TODO Auto-generated method stub
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     */
    public void onRelationEndModified(IRelationProxy Payload, IResultCell cell)
    {
       // TODO Auto-generated method stub
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     */
    public void onPreRelationEndAdded(IRelationProxy proxy, IResultCell cell)
    {
       // TODO Auto-generated method stub
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     */
    public void onRelationEndAdded(IRelationProxy proxy, IResultCell cell)
    {
       // TODO Auto-generated method stub
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     */
    public void onPreRelationEndRemoved(IRelationProxy proxy, IResultCell cell)
    {
       // TODO Auto-generated method stub
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     */
    public void onRelationEndRemoved(IRelationProxy proxy, IResultCell cell)
    {
       // TODO Auto-generated method stub
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     */
    public void onPreRelationCreated(IRelationProxy proxy, IResultCell cell)
    {
       // TODO Auto-generated method stub
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     */
    public void onRelationCreated(IRelationProxy proxy, IResultCell cell)
    {
       // TODO Auto-generated method stub
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     */
    public void onPreRelationDeleted(IRelationProxy proxy, IResultCell cell)
    {
       // TODO Auto-generated method stub
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     */
    public void onRelationDeleted(IRelationProxy proxy, IResultCell cell)
    {

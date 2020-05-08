@@ -72,11 +72,8 @@ import org.netbeans.test.umllib.exceptions.UMLCommonException;
 import org.netbeans.test.umllib.testcases.UMLTestCase;
 
 
-/**
- *
- * @author psb
- * @spec UML/ComponentDiagram.xml
- */
+
+
 public class ActivityDiagramActions extends UMLTestCase {
     
     //some system properties

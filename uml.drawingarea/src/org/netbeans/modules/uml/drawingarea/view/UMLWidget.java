@@ -45,10 +45,8 @@ import java.awt.Color;
 import org.netbeans.api.visual.action.ResizeProvider;
 import org.netbeans.modules.uml.drawingarea.border.ResizeBorder;
 
-/**
- *
- * @author jyothi
- */
+
+
 public interface UMLWidget {
 
     public static final Color BORDER_HILIGHTED_COLOR = new Color(0xFFA400);

@@ -52,52 +52,62 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 public interface IConnector extends IDirectedRelationship, IStructuralFeature
 {
-	/**
+	
+/**
 	 * method AddBehavior
 	*/
 	public void addBehavior( IBehavior behavior );
 
-	/**
+	
+/**
 	 * method RemoveBehavior
 	*/
 	public void removeBehavior( IBehavior behavior );
 
-	/**
+	
+/**
 	 * property Behaviors
 	*/
 	public ETList<IBehavior> getBehaviors();
 
-	/**
+	
+/**
 	 * method AddEnd
 	*/
 	public void addEnd( IConnectorEnd end );
 
-	/**
+	
+/**
 	 * method RemoveEnd
 	*/
 	public void removeEnd( IConnectorEnd end );
 
-	/**
+	
+/**
 	 * property Ends
 	*/
 	public ETList<IConnectorEnd> getEnds();
 
-	/**
+	
+/**
 	 * property From
 	*/
 	public IConnectorEnd getFrom();
 
-	/**
+	
+/**
 	 * property From
 	*/
 	public void setFrom( IConnectorEnd value );
 
-	/**
+	
+/**
 	 * property To
 	*/
 	public IConnectorEnd getTo();
 
-	/**
+	
+/**
 	 * property To
 	*/
 	public void setTo( IConnectorEnd value );

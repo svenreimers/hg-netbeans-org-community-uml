@@ -60,11 +60,8 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.IPresentationElem
 import org.netbeans.modules.uml.drawingarea.util.Util;
 import org.netbeans.modules.uml.drawingarea.view.DesignerScene;
 
-/**
- * Override at least isTargetWidget and createConnection methods. isSourceWidget is always called before isTargetWidget.
- *
- * @author David Kaspar
- */
+
+
 public class ConnectAction extends WidgetAction.LockedAdapter {
 
     private static final int MIN_DIFFERENCE = 5;

@@ -60,27 +60,4 @@ public class DrawingAreaPasteAction extends DiagramElementAction{
     }
     
     
-    /** performs action through popup menu, custom action is performed for drawing area
-     **/
-    public void performPopup(DrawingAreaOperator area) {
-        performPopup(area, area.getFreePoint());
-    }
     
-    public void performPopup(DrawingAreaOperator area, Point point){
-        area.clickForPopup(point.x, point.y);
-        
-        new Timeout("",AFTER_ACTION_WAIT_TIME).sleep();
-        
-        JPopupMenuOperator menu = new JPopupMenuOperator();
-        menu.pushMenu(actionPopup, "|", getComparator());
-        
-        new Timeout("",AFTER_ACTION_WAIT_TIME).sleep();
-        
-        area.clickMouse(point.x, point.y, 1);
-    }
-    
-    
-    
-    
-    
-}

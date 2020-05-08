@@ -52,10 +52,8 @@ import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier;
 import org.netbeans.modules.uml.drawingarea.palette.RelationshipFactory;
 
-/**
- *
- * @author treyspiva
- */
+
+
 public class AssociationFactory implements RelationshipFactory
 {
     public AssociationFactory()

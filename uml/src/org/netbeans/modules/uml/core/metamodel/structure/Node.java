@@ -58,7 +58,8 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 public class Node extends StructuredClassifier implements INode
 {
 
-	/**
+	
+/**
 	 * 
 	 */
 	public Node() 
@@ -119,7 +120,8 @@ public class Node extends StructuredClassifier implements INode
 	}
 	
 	
-	/**
+	
+/**
 	 * Establishes the appropriate XML elements for this UML type.
 	 *
 	 * [in] The document where this element will reside

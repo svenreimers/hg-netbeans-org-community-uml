@@ -42,6 +42,7 @@
  * made subject to such option by the copyright holder.
  */
 
+
 /*
  * SCMFeatureKind.java
  *
@@ -50,11 +51,8 @@
 
 package org.netbeans.modules.uml.core.scm;
 
-/**
- * The various features that should be supported by any SCM tool.
- *
- * @author  Trey Spiva
- */
+
+
 public interface SCMFeatureKind
 {
    /** Retrieves the latest version of a file or files.*/
@@ -78,7 +76,8 @@ public interface SCMFeatureKind
    /** Show the version history of a particular file.*/
    public final static int FK_SHOW_HISTORY = 8;
 
-   /**
+   
+/**
     * Show the differences between a file in SCM and that same file on the
     * local file system.
     */

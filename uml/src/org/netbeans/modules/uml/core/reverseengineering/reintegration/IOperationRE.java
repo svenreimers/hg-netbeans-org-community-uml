@@ -42,20 +42,16 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : IOperationRE.java
- * Created on : Dec 19, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.reverseengineering.reintegration;
 
 import org.netbeans.modules.uml.core.metamodel.dynamics.IInteraction;
 import org.netbeans.modules.uml.core.metamodel.dynamics.ILifeline;
 import org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.IUMLParserOperationEventSink;
 
-/**
- * @author Aztec
- */
+
+
 public interface IOperationRE extends IUMLParserOperationEventSink
 {
     public static final int OPS_UNKNOWN = 0;

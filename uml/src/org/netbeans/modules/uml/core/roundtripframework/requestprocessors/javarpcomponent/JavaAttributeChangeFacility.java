@@ -68,7 +68,8 @@ public class JavaAttributeChangeFacility extends AttributeChangeFacility
         m_Handler.setChangeHandlerUtilities(m_Utils);
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpcomponent.IJavaAttributeChangeFacility#added(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttribute)
      */
     public void added(IAttribute attr)
@@ -81,7 +82,8 @@ public class JavaAttributeChangeFacility extends AttributeChangeFacility
         m_Handler.added(attr, true, cl);
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpcomponent.IJavaAttributeChangeFacility#deleted(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttribute, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier)
      */
     public void deleted(IAttribute attr, IClassifier classifier)
@@ -91,7 +93,8 @@ public class JavaAttributeChangeFacility extends AttributeChangeFacility
         m_Handler.deleted(attr, classifier);
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpcomponent.IJavaAttributeChangeFacility#nameChanged(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttribute)
      */
     public void nameChanged(IAttribute attr)
@@ -102,7 +105,8 @@ public class JavaAttributeChangeFacility extends AttributeChangeFacility
         m_Handler.nameChange(attr, cl);
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpcomponent.IJavaAttributeChangeFacility#typeChanged(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttribute)
      */
     public void typeChanged(IAttribute attr)
@@ -113,7 +117,8 @@ public class JavaAttributeChangeFacility extends AttributeChangeFacility
         m_Handler.typeChange(attr, c);
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpcomponent.IJavaAttributeChangeFacility#getLanguage()
      */
     public ILanguage getLanguage()
@@ -126,7 +131,8 @@ public class JavaAttributeChangeFacility extends AttributeChangeFacility
         return m_Language;
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.AttributeChangeFacility#preChangeNavigableToAttribute(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.INavigableEnd)
      */
     protected void preChangeNavigableToAttribute(INavigableEnd end,
@@ -137,7 +143,8 @@ public class JavaAttributeChangeFacility extends AttributeChangeFacility
         m_Utils.changeAttributeOfAccessors(end, attr);
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.AttributeChangeFacility#preChangeAttributeToNavigable(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttribute, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.INavigableEnd)
      */
     protected void preChangeAttributeToNavigable(IAttribute attr,
@@ -148,7 +155,7 @@ public class JavaAttributeChangeFacility extends AttributeChangeFacility
         m_Utils.changeAttributeOfAccessors(attr, end);
     }
     
-    // IZ 80035: conover
+    
     // added this method so that MemberInfo in ide-integration could call it
     // similar to typeChanged method
     public void multiplicityChanged(IAttribute attr)

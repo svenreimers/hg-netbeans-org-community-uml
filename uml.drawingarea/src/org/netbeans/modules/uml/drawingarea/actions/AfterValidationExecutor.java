@@ -41,6 +41,7 @@
  * Version 2 license, then the option applies only if the new code is
  * made subject to such option by the copyright holder.
  */
+
 /*
  * LayoutSupport.java
  * 
@@ -57,11 +58,8 @@ import org.netbeans.modules.uml.drawingarea.UMLDiagramTopComponent;
 import org.netbeans.modules.uml.drawingarea.view.DesignerScene;
 import org.openide.windows.TopComponent;
 
-/**
- * It calls perfome method on action provider, ususally used to move children widgets after scene is validated
- * Adds itself to listen scene and removes itself too after action processed
- * @author sp153251
- */
+
+
 public class AfterValidationExecutor  implements Scene.SceneListener{
 
     ActionProvider provider;

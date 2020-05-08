@@ -51,10 +51,8 @@ import org.netbeans.api.visual.widget.LabelWidget;
 import org.netbeans.api.visual.widget.Scene;
 import org.netbeans.api.visual.widget.Widget;
 
-/**
- *
- * @author treyspiva
- */
+
+
 public class ListWidget extends Widget
 {
     private LabelWidget label = null;

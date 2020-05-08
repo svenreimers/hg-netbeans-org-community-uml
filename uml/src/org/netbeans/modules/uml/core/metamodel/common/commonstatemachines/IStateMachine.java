@@ -50,72 +50,86 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 public interface IStateMachine extends IBehavior
 {
-	/**
+	
+/**
 	 * method AddSubmachineState
 	*/
 	public void addSubmachineState( IState pState );
 
-	/**
+	
+/**
 	 * method RemoveSubmachineState
 	*/
 	public void removeSubmachineState( IState pState );
 
-	/**
+	
+/**
 	 * property SubmachinesStates
 	*/
 	public ETList<IState> getSubmachinesStates();
 
-	/**
+	
+/**
 	 * method AddConnectionPoint
 	*/
 	public void addConnectionPoint( IUMLConnectionPoint pPoint );
 
-	/**
+	
+/**
 	 * method RemoveConnectionPoint
 	*/
 	public void removeConnectionPoint( IUMLConnectionPoint pPoint );
 
-	/**
+	
+/**
 	 * property ConnectionPoints
 	*/
 	public ETList<IUMLConnectionPoint> getConnectionPoints();
 
-	/**
+	
+/**
 	 * method AddRegion
 	*/
 	public void addRegion( IRegion pRegion );
 
-	/**
+	
+/**
 	 * method RemoveRegion
 	*/
 	public void removeRegion( IRegion pRegion );
 
-	/**
+	
+/**
 	 * property Regions
 	*/
 	public ETList<IRegion> getRegions();
 
-	/**
+	
+/**
 	 * Returns the first in our set of regions.
 	*/
 	public IRegion getFirstRegion();
 
-	/**
+	
+/**
 	 * method AddConformance
 	*/
 	public void addConformance( IProtocolConformance pProt );
 
-	/**
+	
+/**
 	 * method RemoveConformance
 	*/
 	public void removeConformance( IProtocolConformance pProt );
 
-	/**
+	
+/**
 	 * property Conformances
 	*/
 	public ETList<IProtocolConformance> getConformances();
 
-	/**
+	
+/**
 	 * property ContainedElements
 	*/
 	public ETList<INamedElement> getContainedElements();

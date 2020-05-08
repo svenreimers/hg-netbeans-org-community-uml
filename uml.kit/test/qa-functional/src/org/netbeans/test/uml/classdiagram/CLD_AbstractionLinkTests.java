@@ -43,6 +43,7 @@
  */
 
 
+
 /*
  * CLD_AbstractionLink.java
  *
@@ -72,10 +73,8 @@ import org.netbeans.test.umllib.exceptions.NotFoundException;
 import org.netbeans.test.umllib.exceptions.UnexpectedElementSelectionException;
 import org.netbeans.test.umllib.vrf.LinkVerifier;
 
-/**
- *
- * @author VijayaBabu Mummaneni
- */
+
+
 public class CLD_AbstractionLinkTests extends ClassDiagramTestCase {
     
     private static String prName = "UMLProjectForAbstractionLink";

@@ -57,10 +57,8 @@ import org.netbeans.modules.uml.drawingarea.view.UMLLabelWidget;
 import org.netbeans.modules.uml.drawingarea.view.UMLNodeWidget;
 import org.openide.util.NbBundle;
 
-/**
- *
- * @author thuy
- */
+
+
 public abstract class ActivityNodeWidget extends UMLNodeWidget
 {
     protected LabelWidget stereotypeWidget = null;

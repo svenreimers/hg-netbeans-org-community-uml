@@ -49,10 +49,8 @@ import org.dom4j.Node;
 
 import org.netbeans.modules.uml.core.support.umlsupport.XMLManip;
 
-/**
- * @author sumitabhk
- *
- */
+
+
 public class TypedFactoryRetriever < T >
 {
 
@@ -81,7 +79,8 @@ public class TypedFactoryRetriever < T >
 //      }
 //   }
 
-   /**
+   
+/**
     *
     * Creates a new meta type given the name.
     *
@@ -109,7 +108,8 @@ public class TypedFactoryRetriever < T >
       return null;
    }
 
-   /**
+   
+/**
     *
     * Creates a new type and populates it with the passed in node.
     *
@@ -133,7 +133,8 @@ public class TypedFactoryRetriever < T >
       return null;
    }
 
-   /**
+   
+/**
     * Creates a new type and populates it with the passed in node.
     *
     * @param node[in] The DOM node to populate it with
@@ -145,7 +146,8 @@ public class TypedFactoryRetriever < T >
       return createTypeAndFill(XMLManip.retrieveSimpleName(pNode), pNode);
    }
 
-   /**
+   
+/**
     * @param m_Node
     * @return
     */
@@ -163,7 +165,8 @@ public class TypedFactoryRetriever < T >
       return null;
    }
 
-   /**
+   
+/**
     * @param importElement
     * @return
     */

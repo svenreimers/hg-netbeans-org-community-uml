@@ -58,10 +58,8 @@ import org.netbeans.modules.uml.drawingarea.persistence.data.EdgeInfo;
 import org.netbeans.modules.uml.drawingarea.persistence.EdgeWriter;
 import org.netbeans.modules.uml.drawingarea.persistence.PersistenceUtil;
 
-/**
- *
- * @author jyothi
- */
+
+
 public class UMLMultilineLabelWidget extends MultilineLabelWidget 
         implements DiagramEdgeWriter, DiagramEdgeReader, UMLWidget, Customizable {
   

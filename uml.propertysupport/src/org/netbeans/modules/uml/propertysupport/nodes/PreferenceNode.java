@@ -57,6 +57,7 @@ import java.util.List;
 import java.util.LinkedList;
 import javax.swing.UIManager;
 
+
 /**
  * The node is intended as a presentation layer for UML settings inside Tools|Options dialog.
  * It is plugged into the netbeans settings framework via {@link #factory()} method

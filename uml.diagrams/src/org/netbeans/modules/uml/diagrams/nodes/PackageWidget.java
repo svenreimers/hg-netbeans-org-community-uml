@@ -76,10 +76,8 @@ import org.netbeans.modules.uml.drawingarea.view.CustomizableWidget;
 import org.netbeans.modules.uml.drawingarea.widgets.ContainerWidget;
 import org.openide.util.NbBundle;
 
-/**
- *
- * @author Jyothi
- */
+
+
 public class PackageWidget extends ContainerNode
         implements PropertyChangeListener
 {
@@ -412,7 +410,8 @@ public class PackageWidget extends ContainerNode
         
     }
     
-    /**
+    
+/**
      * The center layout is used to layout out the contents.  I was not able to 
      * use the FlowLayhout and specify the constraint of 100 because it would 
      * not resize correctly when the packag node when from being bigger then 

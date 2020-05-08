@@ -46,11 +46,8 @@ import java.awt.event.ActionEvent;
 import org.netbeans.modules.uml.drawingarea.actions.DiscoverRelationshipAction;
 import org.netbeans.modules.uml.drawingarea.view.DesignerScene;
 
-/**
- * message edges are specific and can't be handled by just attach edge on scene 
- * (because of location, additional objects cretion like execution specification)
- * @author sp153251
- */
+
+
 public class SQDRelationshipDisovery extends DiscoverRelationshipAction{
     
     private DesignerScene scene;

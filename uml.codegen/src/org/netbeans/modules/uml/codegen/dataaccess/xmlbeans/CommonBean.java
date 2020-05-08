@@ -42,6 +42,7 @@
  * made subject to such option by the copyright holder.
  */
 
+
 /**
  * This interface is the intersection of all generated methods.
  *

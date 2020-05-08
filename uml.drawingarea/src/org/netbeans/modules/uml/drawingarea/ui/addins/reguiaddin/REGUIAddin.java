@@ -108,7 +108,8 @@ public class REGUIAddin extends Thread //implements IAddIn, IAddInButtonSupport,
         private String action = null;
         private ETArrayList <IElement> elements = null ;
         
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.addinframework.IAddIn#initialize(java.lang.Object)
 	 */
 	public long initialize(Object context)
@@ -125,7 +126,8 @@ public class REGUIAddin extends Thread //implements IAddIn, IAddInButtonSupport,
 		return 0;
 	}
 	
-	/**
+	
+/**
 	 * Deinitialize the addin - specifically it revokes from the sinks
 	 */
 	public long deInitialize(Object context)
@@ -150,7 +152,8 @@ public class REGUIAddin extends Thread //implements IAddIn, IAddInButtonSupport,
 		return 0;
 	}
 	
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.addinframework.IAddIn#unLoad(java.lang.Object)
 	 */
 	public long unLoad(Object context)
@@ -159,7 +162,8 @@ public class REGUIAddin extends Thread //implements IAddIn, IAddInButtonSupport,
 		return 0;
 	}
 	
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.addinframework.IAddIn#getVersion()
 	 */
 	public String getVersion()
@@ -168,7 +172,8 @@ public class REGUIAddin extends Thread //implements IAddIn, IAddInButtonSupport,
 		return null;
 	}
 	
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.addinframework.IAddIn#getName()
 	 */
 	public String getName1()
@@ -177,7 +182,8 @@ public class REGUIAddin extends Thread //implements IAddIn, IAddInButtonSupport,
 		return null;
 	}
 	
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.addinframework.IAddIn#getID()
 	 */
 	public String getID()
@@ -186,7 +192,8 @@ public class REGUIAddin extends Thread //implements IAddIn, IAddInButtonSupport,
 		return null;
 	}
 	
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.addinframework.IAddIn#getLocation()
 	 */
 	public String getLocation()
@@ -195,7 +202,8 @@ public class REGUIAddin extends Thread //implements IAddIn, IAddInButtonSupport,
 		return null;
 	}
 	
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.addinframework.IAddInButtonSupport#getButtons()
 	 */
 //	public ETList<IAddInButton> getButtons()
@@ -204,7 +212,8 @@ public class REGUIAddin extends Thread //implements IAddIn, IAddInButtonSupport,
 //		return null;
 //	}
 	
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.addinframework.IAddInButtonSupport#execute(org.netbeans.modules.uml.core.addinframework.IAddInButton, int)
 	 */
 //	public long execute(IAddInButton pButton, Frame nParentHWND)
@@ -213,7 +222,8 @@ public class REGUIAddin extends Thread //implements IAddIn, IAddInButtonSupport,
 //		return 0;
 //	}
 	
-	/**
+	
+/**
 	 * Retrieve the current project
 	 */
 	private IProject getCurrentProject()
@@ -227,7 +237,8 @@ public class REGUIAddin extends Thread //implements IAddIn, IAddInButtonSupport,
 		return retProj;
 	}
 	
-	/**
+	
+/**
 	 * Get the addin for creating the diagrams
 	 */
 	private IDiagCreatorAddIn getDiagCreatorAddin()
@@ -252,7 +263,8 @@ public class REGUIAddin extends Thread //implements IAddIn, IAddInButtonSupport,
 		return retAddin;
 	}
 	
-	/**
+	
+/**
 	 * Handles the onupdate coming from the gui.
 	 * The addin can set the sensitivity or checked status of the button.
 	 */
@@ -262,7 +274,8 @@ public class REGUIAddin extends Thread //implements IAddIn, IAddInButtonSupport,
 //		return 0;
 //	}
 	
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.addinframework.IAddInButtonSupport#getProgID()
 	 */
 	public String getProgID()
@@ -270,7 +283,8 @@ public class REGUIAddin extends Thread //implements IAddIn, IAddInButtonSupport,
 		return "org.netbeans.modules.uml.drawingarea.ui.addins.reguiaddin.REGUIAddin"; // NOI18N
 	}
 	
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.products.ad.application.action.IViewActionDelegate#init(org.netbeans.modules.uml.ui.products.ad.application.ApplicationView)
 	 */
 	public void init(ApplicationView view)
@@ -278,7 +292,8 @@ public class REGUIAddin extends Thread //implements IAddIn, IAddInButtonSupport,
 		m_View = view;
 	}
 	
-	/**
+	
+/**
 	 * This method decides whether this button should be shown for the selected item.
 	 */
 	public boolean validate(
@@ -359,13 +374,14 @@ public class REGUIAddin extends Thread //implements IAddIn, IAddInButtonSupport,
 //			if (label.equals(REDEFINE_OPS_BTN_SOURCE))
 //			{
 //				//add redefine operations button
-//				valid = addRedefiningOpsButton(dia, pContextMenu);
+
 //			}
 //		}
 		return valid;
 	}
 	
-	/**
+	
+/**
 	 * Determines whether or not a folder node is selected in the tree
 	 *
 	 * @param pControl[in] The tree control
@@ -401,7 +417,8 @@ public class REGUIAddin extends Thread //implements IAddIn, IAddInButtonSupport,
 		return bSel;
 	}
 	
-	/**
+	
+/**
 	 *
 	 * Called when the context menu for the ProjectTree needs to be built
 	 *
@@ -444,7 +461,8 @@ public class REGUIAddin extends Thread //implements IAddIn, IAddInButtonSupport,
 		return retVal;
 	}
 	
-	/**
+	
+/**
 	 *
 	 * Called when the diagram is about to show its context menu.
 	 *
@@ -484,7 +502,8 @@ public class REGUIAddin extends Thread //implements IAddIn, IAddInButtonSupport,
 		return retVal;
 	}
 	
-	/**
+	
+/**
 	 *
 	 * Filters the passed in collection of Elements based on their element type. Currently,
 	 * we are only looking for Class and Interface elements, so any other element will be
@@ -520,7 +539,8 @@ public class REGUIAddin extends Thread //implements IAddIn, IAddInButtonSupport,
 		return retElems;
 	}
 	
-	/**
+	
+/**
 	 *
 	 * Filters the passed in collection of Classifiers based on their element type. Currently,
 	 * we are only looking for Class and Interface elements, so any other element will be
@@ -562,7 +582,8 @@ public class REGUIAddin extends Thread //implements IAddIn, IAddInButtonSupport,
 		return retElems;
 	}
 	
-	/**
+	
+/**
 	 *
 	 * Called when the context menu for the ProjectTree needs to be built
 	 *
@@ -605,7 +626,8 @@ public class REGUIAddin extends Thread //implements IAddIn, IAddInButtonSupport,
 		return retVal;
 	}
 	
-	/**
+	
+/**
 	 *
 	 * Called when the diagram is about to show its context menu.
 	 *
@@ -646,7 +668,8 @@ public class REGUIAddin extends Thread //implements IAddIn, IAddInButtonSupport,
 		return retVal;
 	}
 	
-	/**
+	
+/**
 	 * This handles the menu item selection.
 	 */
 	public void run(ActionEvent e)
@@ -732,7 +755,7 @@ public class REGUIAddin extends Thread //implements IAddIn, IAddInButtonSupport,
 		}
 	}
         
-	//kris - this method was added in order to set these default values outside
+	
         // the run method. This is in response to issue 95928.
         public void prepareForRun(String action, ETArrayList <IElement> elements) {
                 
@@ -740,12 +763,13 @@ public class REGUIAddin extends Thread //implements IAddIn, IAddInButtonSupport,
             this.elements = elements ;
         }
         
-        //kris - added this since this class now extends Thread
+        
         public void run() {
             run (action, elements);
         }
 	
-        /*
+        
+/*
 	 * cvc - New version of method for Buzz release
 	 */
 	public void run(String action, ETArrayList <IElement> elements)
@@ -800,10 +824,10 @@ public class REGUIAddin extends Thread //implements IAddIn, IAddInButtonSupport,
                                         }
 				}
                                 
-                                //kris - made local copy because it is needed in this inner class
+                                
                                 final ETArrayList <IElement> elementsLocal = elements ;
                                 
-                                //kris - the diaCreator.guiCreateDiagramFromElements call below
+                                
                                 // creates a new top component. This must happen in the event thread.
                                 // So it is bring forced into the event thread.
                                 SwingUtilities.invokeLater(new Runnable() {
@@ -856,7 +880,8 @@ public class REGUIAddin extends Thread //implements IAddIn, IAddInButtonSupport,
 		codeGen.generateCode("Java", m_CodeGenElements);
 	}
 	
-	/*
+	
+/*
 	 * cvc - New version of method for Buzz release
 	 */
 	private void generateCode(ETArrayList <IElement> elements)
@@ -866,7 +891,8 @@ public class REGUIAddin extends Thread //implements IAddIn, IAddInButtonSupport,
 	}
 	
 	
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.products.ad.application.action.IPlugginAction#selectionChanged(org.netbeans.modules.uml.ui.products.ad.application.action.PluginAction, org.netbeans.modules.uml.ui.products.ad.application.selection.ISelection)
 	 */
 //	public void selectionChanged(PluginAction action, ISelection selection)
@@ -874,7 +900,8 @@ public class REGUIAddin extends Thread //implements IAddIn, IAddInButtonSupport,
 //		// TODO Auto-generated method stub
 //	}
 	
-	/**
+	
+/**
 	 * This routine responds to the close of the project
 	 */
 	public void onProjectClosed()
@@ -887,7 +914,8 @@ public class REGUIAddin extends Thread //implements IAddIn, IAddInButtonSupport,
 		m_RedefiningElements = null;
 	}
 	
-	/**
+	
+/**
 	 * Retrieves the elements associated with the context menu's graph object
 	 *
 	 * @param pContextMenu[in] The context menu assoicated with some graph object
@@ -928,7 +956,8 @@ public class REGUIAddin extends Thread //implements IAddIn, IAddInButtonSupport,
 //		return retVal;
 //	}
 	
-	/**
+	
+/**
 	 * Adds an operation to m_cpOperationElements, @see m_cpOperationElements
 	 *
 	 * @param pElement[in] If the element is an operation, it is added to m_cpOperationElements
@@ -949,7 +978,8 @@ public class REGUIAddin extends Thread //implements IAddIn, IAddInButtonSupport,
 		return opAdded;
 	}
 	
-	/**
+	
+/**
 	 * Verifies that the input operation can be processed by reverse engineering
 	 * Currently, this operation just checks to see if any of the IOperation's
 	 * languages supports the "Operation Reverse Engineer" feature.
@@ -961,7 +991,8 @@ public class REGUIAddin extends Thread //implements IAddIn, IAddInButtonSupport,
 		return (canRE != false);
 	}
 	
-	/**
+	
+/**
 	 * Access to the UML parsing integrator member variable
 	 */
 	private IUMLParsingIntegrator getUMLParsingIntegrator()
@@ -973,7 +1004,8 @@ public class REGUIAddin extends Thread //implements IAddIn, IAddInButtonSupport,
 		return m_UMLParsingIntegrator;
 	}
 	
-	/**
+	
+/**
 	 * Finds the last interaction in the owned elements of the input element
 	 */
 	private IInteraction getLastInteraction( IElement pElement )

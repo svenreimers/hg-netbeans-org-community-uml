@@ -42,6 +42,7 @@
  * made subject to such option by the copyright holder.
  */
 
+
 /*
  * IDoorsReqProvider.java
  *
@@ -52,10 +53,8 @@ package org.netbeans.modules.uml.requirements.doorsprovider;
 
 import org.netbeans.modules.uml.core.coreapplication.IDesignCenterSupport;
 
-/**
- *
- * @author  Trey Spiva
- */
+
+
 public interface IDoorsReqProvider extends IDesignCenterSupport
 {
 

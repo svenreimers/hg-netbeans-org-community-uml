@@ -70,7 +70,8 @@ public class Argument extends Element implements IArgument
 		addChild("UML:Argument.value","UML:Argument.value/UML:Expression",expression);
 	}
 	
-	/**
+	
+/**
 	 * Establishes the appropriate XML elements for this UML type.
 	 *
 	 * [in] The document where this element will reside

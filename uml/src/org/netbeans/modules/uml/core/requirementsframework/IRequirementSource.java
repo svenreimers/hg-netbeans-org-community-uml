@@ -42,6 +42,7 @@
  * made subject to such option by the copyright holder.
  */
 
+
 /*
  * IRequirementSource.java
  *
@@ -50,10 +51,8 @@
 
 package org.netbeans.modules.uml.core.requirementsframework;
 
-/**
- *
- * @author  Trey Spiva
- */
+
+
 public interface IRequirementSource
 {
    /** Returns true if this requirement source requires a login */

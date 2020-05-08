@@ -43,6 +43,7 @@
  */
 
 
+
 /*
  * CLDUtils.java
  *
@@ -86,15 +87,14 @@ import org.netbeans.test.umllib.util.OptionsOperator;
 import org.netbeans.test.umllib.util.PopupConstants;
 
 
-/**
- *
- * @author VijayaBabu Mummaneni
- */
+
+
 public class CLDUtils {
 
         public static String CDFS_XTEST_PROJECT_DIR = UMLTestCase.XTEST_PROJECT_DIR + "/Projects-Class";
 
-    /**
+    
+/**
      * Creates a new instance of CLDUtils
      */
     public CLDUtils() {

@@ -42,6 +42,7 @@
  * made subject to such option by the copyright holder.
  */
 
+
 /*
  * Created on Apr 15, 2004
  *
@@ -71,12 +72,8 @@ import org.netbeans.modules.uml.ui.support.drawingproperties.IDrawingPropertyPro
 import org.netbeans.modules.uml.ui.support.drawingproperties.IFontProperty;
 import org.netbeans.modules.uml.ui.swing.commondialogs.SwingQuestionDialogImpl;
 
-/**
- * @author jingmingm
- *
- * To change the template for this generated type comment go to
- * Window&gt;Preferences&gt;Java&gt;Code Generation&gt;Code and Comments
- */
+
+
 public class ApplicationColorsAndFonts extends BasicColorsAndFontsDialog
 {
    public ApplicationColorsAndFonts()
@@ -100,7 +97,8 @@ public class ApplicationColorsAndFonts extends BasicColorsAndFontsDialog
 		//ApplyChangedPropertiesToCurrentDiagram();
 	}
 	
-	/**
+	
+/**
 	 * Initialize the dialogs
 	 */
 	public boolean onInitDialog()
@@ -111,7 +109,8 @@ public class ApplicationColorsAndFonts extends BasicColorsAndFontsDialog
 		return true;
 	}
 	
-	/**
+	
+/**
 	 * Populates the object list box
 	 */
 	public void populateObjectListBox()
@@ -152,7 +151,8 @@ public class ApplicationColorsAndFonts extends BasicColorsAndFontsDialog
 		}
 	}
 	
-	/**
+	
+/**
 	 * Apply button was clicked.
 	 */
 	public void onBnClickedApply()
@@ -258,7 +258,8 @@ public class ApplicationColorsAndFonts extends BasicColorsAndFontsDialog
 //		return 0;
 //	}
 
-	/**
+	
+/**
 	 * We keep track of all changes between ok/apply/cancel
 	 */
 	public void addChangedProperty(IDrawingProperty pProperty)
@@ -282,7 +283,8 @@ public class ApplicationColorsAndFonts extends BasicColorsAndFontsDialog
 		}
 	}
 
-	/**
+	
+/**
 	 * Save changed properties
 	 */
 	public void saveChangedProperties()
@@ -317,7 +319,8 @@ public class ApplicationColorsAndFonts extends BasicColorsAndFontsDialog
 		}
 	}
 		
-	/**
+	
+/**
 	 * Clear changed properties
 	 */
 	public void clearChangedProperties()
@@ -383,7 +386,8 @@ public class ApplicationColorsAndFonts extends BasicColorsAndFontsDialog
 		super.onCbnSelchangeDiagramtype();
 	}
 	
-	/**
+	
+/**
 	 * Saves a color property
 	 */
 	public void saveColorProperty(String sEngineName, String sResource, int nNewColor)
@@ -430,7 +434,8 @@ public class ApplicationColorsAndFonts extends BasicColorsAndFontsDialog
 //			}
 	}
 	
-	/**
+	
+/**
 	 * Saves a font property
 	 */
 	public void saveFontProperty(String sEngineName, String sResource, IFontProperty pFontProperty)

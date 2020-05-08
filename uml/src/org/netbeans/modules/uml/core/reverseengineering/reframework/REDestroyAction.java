@@ -50,7 +50,8 @@ import org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframe
  */
 public class REDestroyAction extends REAction implements IREDestroyAction
 {
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.IREDestroyAction#getInstanceName()
      */
     public String getInstanceName()

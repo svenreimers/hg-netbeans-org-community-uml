@@ -42,11 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : JavaChangeHandlerManager.java
- * Created on : Nov 18, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpcomponent;
 
 import org.netbeans.modules.uml.core.metamodel.core.constructs.IClass;
@@ -60,9 +57,8 @@ import org.netbeans.modules.uml.core.roundtripframework.IRequestProcessor;
 import org.netbeans.modules.uml.core.roundtripframework.ITypeChangeRequest;
 import org.netbeans.modules.uml.core.roundtripframework.RTElementKind;
 
-/**
- * @author Aztec
- */
+
+
 public class JavaChangeHandlerManager implements IJavaChangeHandlerManager
 {
     private JavaChangeHandlerUtilities m_Utilities 
@@ -96,7 +92,8 @@ public class JavaChangeHandlerManager implements IJavaChangeHandlerManager
         m_BatchCount = 0;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpcomponent.IJavaChangeHandlerManager#dandleRequest(org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpcomponent.IRequestValidator)
      */
     public void handleRequest(IRequestValidator request)
@@ -131,7 +128,7 @@ public class JavaChangeHandlerManager implements IJavaChangeHandlerManager
                 int eType = request.getRequest().getElementType();
 
                 // If the change request has a relation on it, then the type
-                // of element does not matter. What matters is the type of
+                
                 // relationship. IRelationProxy is not an IElement, so we 
                 // cannot "fix" ChangeRequest.
 
@@ -253,7 +250,8 @@ public class JavaChangeHandlerManager implements IJavaChangeHandlerManager
         }
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpcomponent.IJavaChangeHandlerManager#endBatch()
      */
     public void endBatch()
@@ -278,7 +276,8 @@ public class JavaChangeHandlerManager implements IJavaChangeHandlerManager
 
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpcomponent.IJavaChangeHandlerManager#getPlugManager()
      */
     public IPlugManager getPlugManager()
@@ -286,7 +285,8 @@ public class JavaChangeHandlerManager implements IJavaChangeHandlerManager
         return m_PlugManager;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpcomponent.IJavaChangeHandlerManager#getProcessor()
      */
     public IRequestProcessor getProcessor()
@@ -294,7 +294,8 @@ public class JavaChangeHandlerManager implements IJavaChangeHandlerManager
         return m_Processor;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpcomponent.IJavaChangeHandlerManager#setChangeHandlerUtilities(org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpcomponent.IJavaChangeHandlerUtilities)
      */
     public void setChangeHandlerUtilities(IJavaChangeHandlerUtilities utils)
@@ -309,7 +310,8 @@ public class JavaChangeHandlerManager implements IJavaChangeHandlerManager
         m_EnumerationChange.setChangeHandlerUtilities ( utils );
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpcomponent.IJavaChangeHandlerManager#setPlugManager(org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpcomponent.IPlugManager)
      */
     public void setPlugManager(IPlugManager manager)
@@ -323,7 +325,8 @@ public class JavaChangeHandlerManager implements IJavaChangeHandlerManager
         m_AttributeChange.setPlugManager ( manager );
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpcomponent.IJavaChangeHandlerManager#setProcessor(org.netbeans.modules.uml.core.roundtripframework.IRequestProcessor)
      */
     public void setProcessor(IRequestProcessor pProcessor)
@@ -338,7 +341,8 @@ public class JavaChangeHandlerManager implements IJavaChangeHandlerManager
 
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpcomponent.IJavaChangeHandlerManager#startBatch()
      */
     public void startBatch()

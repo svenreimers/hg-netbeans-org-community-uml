@@ -47,6 +47,7 @@ package org.netbeans.modules.uml.core.reverseengineering.reframework;
 
 import org.netbeans.modules.uml.core.metamodel.core.primitivetypes.IVisibilityKind;
 
+
 /**
  * Test cases for REClassElement.
  */
@@ -59,7 +60,8 @@ public class REClassElementTestCase extends AbstractRETestCase
 
     private REClassElement rece;
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see junit.framework.TestCase#setUp()
      */
     protected void setUp() throws Exception

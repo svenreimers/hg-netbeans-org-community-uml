@@ -43,19 +43,12 @@
  */
 
 
-/*
- *
- * Created on Jul 1, 2003
- * @author Trey Spiva
- */
+
+
 package org.netbeans.modules.uml.ui.support.commondialogs;
 
-/**
- * The MessageIconKindEnum is used to specify the icon to use when displaying
- * a message dialog to the user.
- *
- * @author Trey Spiva
- */
+
+
 public interface MessageIconKindEnum
 {
    public final static int EDIK_ICONINFORMATION = 0;

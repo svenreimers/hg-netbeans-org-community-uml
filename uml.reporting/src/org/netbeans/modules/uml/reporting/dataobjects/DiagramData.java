@@ -71,10 +71,8 @@ import org.netbeans.modules.uml.reporting.ReportTask;
 import org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeDiagram;
 import org.openide.util.NbBundle;
 
-/**
- *
- * @author Sheryl
- */
+
+
 public class DiagramData extends ElementDataObject
 {
     private IProxyDiagram pProxyDiagram;
@@ -236,7 +234,8 @@ public class DiagramData extends ElementDataObject
     }
     
     
-    /**
+    
+/**
      * Format a string representing the node's points so that the jpg can include
      * a map to go to a hyperlink when flying over the node in the jpg
      *
@@ -280,7 +279,8 @@ public class DiagramData extends ElementDataObject
     }
     
     
-    /**
+    
+/**
      * Format a string representing the label's points so that the jpg can include
      * a map to go to a hyperlink when flying over the label in the jpg
      *
@@ -329,7 +329,8 @@ public class DiagramData extends ElementDataObject
     }
     
     
-    /**
+    
+/**
      * Format a string representing the link's points so that the jpg can include
      * a map to go to a hyperlink when flying over the link in the jpg
      *

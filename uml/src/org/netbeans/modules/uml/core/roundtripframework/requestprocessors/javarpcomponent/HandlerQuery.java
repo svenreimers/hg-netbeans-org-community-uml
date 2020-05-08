@@ -42,11 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : HandlerQuery.java
- * Created on : Oct 29, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpcomponent;
 
 import java.text.MessageFormat;
@@ -57,9 +54,8 @@ import org.netbeans.modules.uml.ui.support.SimpleQuestionDialogResultKind;
 import org.netbeans.modules.uml.ui.support.commondialogs.IQuestionDialog;
 import org.netbeans.modules.uml.ui.swing.commondialogs.SwingQuestionDialogImpl;
 
-/**
- * @author Aztec
- */
+
+
 public class HandlerQuery implements IHandlerQuery
 {
 
@@ -143,7 +139,8 @@ public class HandlerQuery implements IHandlerQuery
 	   m_Persist       = copy.m_Persist;
 	}
 
-	/**
+	
+/**
 	 *
 	 * A query can be displayed with up to 4 arguments that are substituted for
 	 * the substrings "%1", "%2", "%3", "%4" in the text
@@ -160,7 +157,8 @@ public class HandlerQuery implements IHandlerQuery
 		return displayQuery (finalText, m_Title);
     }
 
-	/**
+	
+/**
 	 *
 	 * A query can be displayed with up to 4 arguments that are substituted for
 	 * the substrings "%1", "%2", "%3", "%4" in the text
@@ -176,7 +174,8 @@ public class HandlerQuery implements IHandlerQuery
 		return displayQuery (finalText, m_Title);
     }
 
-	/**
+	
+/**
 	 *
 	 * A query can be displayed with up to 4 arguments that are substituted for
 	 * the substrings "%1", "%2", "%3", "%4" in the text
@@ -191,7 +190,8 @@ public class HandlerQuery implements IHandlerQuery
 		return displayQuery (finalText, m_Title);
     }
 
-	/**
+	
+/**
 	 *
 	 * A query can be displayed with up to 4 arguments that are substituted for
 	 * the substrings "%1", "%2", "%3", "%4" in the text
@@ -204,7 +204,8 @@ public class HandlerQuery implements IHandlerQuery
 		return displayQuery (finalText, m_Title);
     }
 
-	/**
+	
+/**
 	 *
 	 * A query can be displayed with up to 4 arguments that are substituted for
 	 * the substrings "%1", "%2", "%3", "%4" in the text
@@ -216,7 +217,8 @@ public class HandlerQuery implements IHandlerQuery
 		return displayQuery(m_Text, m_Title);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpccomponent.IHandlerQuery#getKey()
      */		
     public String getKey()
@@ -224,7 +226,8 @@ public class HandlerQuery implements IHandlerQuery
 		return m_Key;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpccomponent.IHandlerQuery#getSilent()
      */
     public boolean getSilent()
@@ -232,7 +235,8 @@ public class HandlerQuery implements IHandlerQuery
 		return m_Silent;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpccomponent.IHandlerQuery#persist()
      */
     public boolean getPersist()
@@ -240,7 +244,8 @@ public class HandlerQuery implements IHandlerQuery
 		return m_Persist;
     }
 
-	/**
+	
+/**
 	 *
 	 * Reset allows us to reset an existing query and "reuse" it
 	 * without having to reconstruct it.
@@ -251,7 +256,8 @@ public class HandlerQuery implements IHandlerQuery
 		setSingleQueryAnswer ( getDefaultAnswer() );
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpccomponent.IHandlerQuery#setSilent(boolean)
      */
     public void setSilent(boolean silent)
@@ -259,7 +265,8 @@ public class HandlerQuery implements IHandlerQuery
 		m_Silent = silent;
     }
     
-    /**
+    
+/**
      *
      * @param arg1[in]
      * @param arg2[in]
@@ -292,7 +299,8 @@ public class HandlerQuery implements IHandlerQuery
         return finalText;
     }
     
-    /**
+    
+/**
      *
      * @param arg1[in]
      * @param arg2[in]
@@ -322,7 +330,8 @@ public class HandlerQuery implements IHandlerQuery
         return finalText;
     }
     
-    /**
+    
+/**
      * 
      * @param arg1[in]
      * @param arg2[in]
@@ -349,7 +358,8 @@ public class HandlerQuery implements IHandlerQuery
         return finalText;
     }
     
-    /**
+    
+/**
      *
      * @param arg1[in]
      *
@@ -438,10 +448,10 @@ public class HandlerQuery implements IHandlerQuery
     
     public int displayDialog(String text, String title)
     {
-    	// Aztec: TODO: Dialogs! Re-visit when implemented.
+    	
         int dlgAnswer = SimpleQuestionDialogResultKind.SQDRK_RESULT_YES;
 
-		// Aztec: TODO: Verify if this is the correct dialog to use.
+		
 		IQuestionDialog dlg = new SwingQuestionDialogImpl();        
         
         int dType = SimpleQuestionDialogKind.SQDK_YESNO;

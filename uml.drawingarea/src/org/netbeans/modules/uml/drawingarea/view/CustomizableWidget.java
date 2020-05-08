@@ -47,10 +47,8 @@ import org.netbeans.api.visual.widget.ResourceTable;
 import org.netbeans.api.visual.widget.Scene;
 import org.netbeans.api.visual.widget.Widget;
 
-/**
- *
- * @author Sheryl Su
- */
+
+
 public class CustomizableWidget extends Widget implements Customizable {
 
     private String widgetName;

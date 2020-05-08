@@ -49,12 +49,14 @@ import org.netbeans.modules.uml.core.eventframework.IEventContext;
 
 public interface IOperationSignatureChangeContext extends IEventContext
 {
-	/**
+	
+/**
 	 * Sets / Gets the operation whose signature change is encapsulated by this context.
 	*/
 	public IOperation getOperation();
 
-	/**
+	
+/**
 	 * Sets / Gets the operation whose signature change is encapsulated by this context.
 	*/
 	public void setOperation( IOperation value );

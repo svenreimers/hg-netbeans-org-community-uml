@@ -46,10 +46,8 @@ package org.netbeans.modules.uml.widgets;
 
 import org.netbeans.modules.uml.widgets.PolygonConstraints.VertexWeight;
 
-/**
- *
- * @author treyspiva
- */
+
+
 public class PolygonConstraints
 {
     private int left = -1;

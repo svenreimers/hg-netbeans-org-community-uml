@@ -58,12 +58,8 @@ import org.netbeans.modules.performance.utilities.PerformanceTestCase;
 import org.netbeans.modules.project.ui.test.ProjectSupport;
 import org.netbeans.performance.uml.UMLUtilities;
 
-/**
- * Measure UI-RESPONSIVENES and WINDOW_OPENING.
- *
- * @author rashid@netbeans.org
- *
- */
+
+
 public class MultipleNodeContextMenu extends PerformanceTestCase {
 
     private static String testProjectName = "jEdit-Model";

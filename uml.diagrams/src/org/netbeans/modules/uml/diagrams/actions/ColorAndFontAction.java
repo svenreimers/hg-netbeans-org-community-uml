@@ -66,10 +66,8 @@ import org.openide.util.HelpCtx;
 import org.openide.util.Lookup;
 import org.openide.util.NbBundle;
 
-/**
- *
- * @author Sheryl Su
- */
+
+
 public class ColorAndFontAction extends SceneNodeAction
 {
 
@@ -95,7 +93,8 @@ public class ColorAndFontAction extends SceneNodeAction
         return getPopupPresenter();
     }
 
-    /**
+    
+/**
      * Returns a JMenuItem that presents this action in a Popup Menu.
      * @return the JMenuItem representation for the action
      */

@@ -43,6 +43,7 @@
  */
 
 
+
 /*
  * Created on Jun 12, 2003
  *
@@ -62,14 +63,13 @@ import javax.swing.table.TableCellEditor;
 import org.netbeans.modules.uml.common.ETSystem;
 import org.netbeans.modules.uml.ui.swing.propertyeditor.PropertyEditor;
 
-/**
- * @author sumitabhk
- *
- */
+
+
 public class JDescribeComboBox extends JComboBox
 {
 	PropertyEditor m_Editor = null;
-	/**
+	
+/**
 	 * 
 	 */
 	public JDescribeComboBox()
@@ -193,14 +193,16 @@ public class JDescribeComboBox extends JComboBox
 		public class MyKeyHandler implements KeyListener
 		{
 
-			/* (non-Javadoc)
+			
+/* (non-Javadoc)
 			 * @see java.awt.event.KeyListener#keyTyped(java.awt.event.KeyEvent)
 			 */
 			public void keyTyped(KeyEvent e) 
 			{
 			}
 
-			/* (non-Javadoc)
+			
+/* (non-Javadoc)
 			 * @see java.awt.event.KeyListener#keyPressed(java.awt.event.KeyEvent)
 			 */
 			public void keyPressed(KeyEvent e) 
@@ -219,7 +221,8 @@ public class JDescribeComboBox extends JComboBox
 //				}
 			}
 
-			/* (non-Javadoc)
+			
+/* (non-Javadoc)
 			 * @see java.awt.event.KeyListener#keyReleased(java.awt.event.KeyEvent)
 			 */
 			public void keyReleased(KeyEvent e) 

@@ -42,16 +42,12 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : ChangeKind.java
- * Created on : Oct 28, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.roundtripframework;
 
-/**
- * @author Aztec
- */
+
+
 public interface ChangeKind
 {
     public static final int CT_MODIFY = 0;

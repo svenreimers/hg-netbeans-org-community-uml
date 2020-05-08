@@ -87,10 +87,8 @@ import org.openide.util.NbBundle;
 import org.openide.util.RequestProcessor;
 import org.openide.util.actions.CookieAction;
 
-/**
- *
- * @author Craig Conover, craig.conover@sun.com
- */
+
+
 public class GenerateCodeAction extends CookieAction
 {
     private final static int GC_NODE_PROJECT = 1;
@@ -99,7 +97,8 @@ public class GenerateCodeAction extends CookieAction
 
     private IProject parentProject = null;
     
-    /**
+    
+/**
      * Creates a new instance of GenerateCodeAction
      */
     public GenerateCodeAction()
@@ -666,7 +665,7 @@ public class GenerateCodeAction extends CookieAction
     
     private String getUnnamedElementPreference()
     {
-        //Kris Richards - returning the default value.
+        
         return "Unnamed" ; // NOI18N    
     }
 

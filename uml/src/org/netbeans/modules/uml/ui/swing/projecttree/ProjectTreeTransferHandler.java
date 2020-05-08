@@ -43,11 +43,8 @@
  */
 
 
-/*
- *
- * Created on Jun 25, 2003
- * @author Trey Spiva
- */
+
+
 package org.netbeans.modules.uml.ui.swing.projecttree;
 
 import java.awt.Container;
@@ -70,19 +67,8 @@ import org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem;
 import org.netbeans.modules.uml.ui.controls.projecttree.ProjectTreeDragVerifyImpl;
 import org.netbeans.modules.uml.ui.support.ADTransferable;
 
-/**
- * The TransferHandler used to support project tree drag and drop functionality.
- * The class ADTransferable is used to populate a ADTransferable.ADTransferData
- * Transferable object.  The Transferable object can then be used to retrieve
- * the project tree items that are being dragged.
- * 
- * To research the Java Drag and Drop functionallity check out the 
- * <a href="http://java.sun.com/docs/books/tutorial/uiswing/misc/dnd.html"> Drag
- * and Drop Tutorial</a>.
- * 
- * @see ADTransferable
- * @author Trey Spiva
- */
+
+
 public class ProjectTreeTransferHandler extends TransferHandler 
   implements FileExtensions
 {
@@ -92,7 +78,8 @@ public class ProjectTreeTransferHandler extends TransferHandler
    public ProjectTreeTransferHandler()
    {
    }
-   /** 
+   
+/** 
     * Overridden to check for the presence of a Describe data flavor.
     * @see javax.swing.TransferHandler#canImport(javax.swing.JComponent, java.awt.datatransfer.DataFlavor[])
     */
@@ -121,7 +108,8 @@ public class ProjectTreeTransferHandler extends TransferHandler
       return retVal; 
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see javax.swing.TransferHandler#exportAsDrag(javax.swing.JComponent, java.awt.event.InputEvent, int)
     */
    public void exportAsDrag(JComponent comp, InputEvent e, int action)
@@ -137,7 +125,8 @@ public class ProjectTreeTransferHandler extends TransferHandler
       }
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see javax.swing.TransferHandler#exportDone(javax.swing.JComponent, java.awt.datatransfer.Transferable, int)
     */
    protected void exportDone(JComponent source, Transferable data, int action)
@@ -151,7 +140,8 @@ public class ProjectTreeTransferHandler extends TransferHandler
       super.exportDone(source, data, action);
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see javax.swing.TransferHandler#exportToClipboard(javax.swing.JComponent, java.awt.datatransfer.Clipboard, int)
     */
    public void exportToClipboard(JComponent comp, Clipboard clip, int action)
@@ -160,7 +150,8 @@ public class ProjectTreeTransferHandler extends TransferHandler
       super.exportToClipboard(comp, clip, action);
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see javax.swing.TransferHandler#importData(javax.swing.JComponent, java.awt.datatransfer.Transferable)
     */
    public boolean importData(JComponent comp, Transferable t)
@@ -176,7 +167,8 @@ public class ProjectTreeTransferHandler extends TransferHandler
       return retVal; 
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see javax.swing.TransferHandler#getSourceActions(javax.swing.JComponent)
     */
    public int getSourceActions(JComponent c)
@@ -184,7 +176,8 @@ public class ProjectTreeTransferHandler extends TransferHandler
       return COPY_OR_MOVE;
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see javax.swing.TransferHandler#createTransferable(javax.swing.JComponent)
     */
    protected Transferable createTransferable(JComponent c)
@@ -221,7 +214,8 @@ public class ProjectTreeTransferHandler extends TransferHandler
       return retVal;
    }
    
-   /**
+   
+/**
     * Creates and populates a Transferable object with selected items from the tree
     *
     * @return The transferable object to continue the drag and drop operation.
@@ -289,7 +283,8 @@ public class ProjectTreeTransferHandler extends TransferHandler
          }         
        }
       
-      /**
+      
+/**
        * Retrieve the Transferable object that specifies the data that is 
        * being dragged.
        * 
@@ -300,7 +295,8 @@ public class ProjectTreeTransferHandler extends TransferHandler
          return m_DataObject;
       }
 
-      /**
+      
+/**
        * Retrieve the Transferable object that specifies the data that is 
        * being dragged.
        * 

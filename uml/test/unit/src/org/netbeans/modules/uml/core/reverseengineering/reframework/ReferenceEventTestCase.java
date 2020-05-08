@@ -49,6 +49,7 @@ import org.dom4j.Element;
 
 import org.netbeans.modules.uml.core.metamodel.core.constructs.IClass;
 import org.netbeans.modules.uml.core.support.umlsupport.XMLManip;
+
 /**
  * Test cases for ReferenceEvent.
  */
@@ -61,7 +62,8 @@ public class ReferenceEventTestCase extends AbstractRETestCase
 
     private ReferenceEvent re;
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see junit.framework.TestCase#setUp()
      */
     protected void setUp() throws Exception

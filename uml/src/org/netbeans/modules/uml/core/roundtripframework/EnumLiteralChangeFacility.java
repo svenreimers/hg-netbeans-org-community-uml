@@ -42,6 +42,7 @@
  * made subject to such option by the copyright holder.
  */
 
+
 /*
  * EnumLiteralChangeFacility.java
  *
@@ -56,10 +57,8 @@ import org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframe
 import org.netbeans.modules.uml.core.support.umlsupport.ProductRetriever;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
-/**
- *
- * @author Administrator
- */
+
+
 public abstract class EnumLiteralChangeFacility extends RequestFacility
                                                 implements IEnumLiteralChangeFacility
 {
@@ -228,7 +227,7 @@ public abstract class EnumLiteralChangeFacility extends RequestFacility
     
     protected void setRoundTripMode(/*RTMode*/int value)
     {
-        // IZ 84855 conover - RT is always off and shouldn't be 
+        
         // turned on for any reason
         if (value != RTMode.RTM_LIVE)
             ProductRetriever.retrieveProduct().getRoundTripController().setMode(value);

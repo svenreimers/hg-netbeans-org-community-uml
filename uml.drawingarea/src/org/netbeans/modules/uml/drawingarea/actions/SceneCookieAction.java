@@ -46,10 +46,8 @@ import org.netbeans.modules.uml.drawingarea.view.DesignerScene;
 import org.openide.nodes.Node;
 import org.openide.util.actions.CookieAction;
 
-/**
- *
- * @author treyspiva
- */
+
+
 public abstract class SceneCookieAction extends CookieAction
 {
     @Override

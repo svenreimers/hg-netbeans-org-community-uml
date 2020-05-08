@@ -56,7 +56,8 @@ public class ReferenceEvent extends MethodDetailParserData
 implements IReferenceEvent
 {
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.IReferenceEvent#getParentReference()
      */
    public IReferenceEvent getParentReference()
@@ -71,7 +72,8 @@ implements IReferenceEvent
       return null;
    }
    
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.IReferenceEvent#getFullName()
      */
    public String getFullName()
@@ -96,7 +98,8 @@ implements IReferenceEvent
          return ret;
    }
    
-   /**
+   
+/**
     * @return
     */
    private String getShortTypeName()
@@ -110,7 +113,8 @@ implements IReferenceEvent
       return null;
    }
    
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.IReferenceEvent#getREClass()
      */
    public IREClass getREClass()
@@ -125,7 +129,8 @@ implements IReferenceEvent
       return null;
    }
    
-   /**
+   
+/**
     * Retrieves the name of the classifier that declares the variable.
     *
     * @param pVal [out] The declaring class name.
@@ -139,7 +144,8 @@ implements IReferenceEvent
       return cl;
    }
    
-   /**
+   
+/**
     * Retrieves the variables declared type.
     *
     * @param pVal [out] The variables type.
@@ -149,7 +155,8 @@ implements IReferenceEvent
       return XMLManip.getAttributeValue(getEventData(), "type");
    }
    
-   /**
+   
+/**
     * Retrieves the name of the variable.
     *
     * @param pVal [out] The name of the variable.

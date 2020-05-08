@@ -47,21 +47,16 @@ package org.netbeans.modules.uml.core.support.umlsupport;
 import org.netbeans.modules.uml.core.coreapplication.CoreProductManager;
 import org.netbeans.modules.uml.core.coreapplication.ICoreProduct;
 import org.netbeans.modules.uml.core.coreapplication.ICoreProductManager;
-/**
- * <p>Title: </p>
- * <p>Description: </p>
- * <p>Copyright: Copyright (c) 2003</p>
- * <p>Company: </p>
- * @author not attributable
- * @version 1.0
- */
+
+
 
 public class ProductRetriever {
   public ProductRetriever() {
 
   }
 
-  /**
+  
+/**
    *
    * Retrieves the CoreProduct off the ROT
    *

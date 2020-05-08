@@ -52,6 +52,7 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElement;
 import org.netbeans.modules.uml.core.AbstractUMLTestCase;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
+
 /**
  * Test cases for TypeManager.
  */
@@ -65,7 +66,8 @@ public class TypeManagerTestCase extends AbstractUMLTestCase
     private ITypeManager typeManager;
     private IClass       c;
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see junit.framework.TestCase#setUp()
      */
     protected void setUp() throws Exception

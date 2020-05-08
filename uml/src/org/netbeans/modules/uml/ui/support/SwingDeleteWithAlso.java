@@ -43,6 +43,7 @@
  */
 
 
+
 /*
  * Created on Jun 3, 2004
  *
@@ -69,12 +70,8 @@ import org.netbeans.modules.uml.ui.swing.commondialogs.DefaultCommonDialogResour
 import org.netbeans.modules.uml.ui.swing.commondialogs.JCenterDialog;
 import org.openide.util.NbBundle;
 
-/**
- * @author jingmingm
- *
- * To change the template for this generated type comment go to
- * Window&gt;Preferences&gt;Java&gt;Code Generation&gt;Code and Comments
- */
+
+
 public class SwingDeleteWithAlso extends JCenterDialog implements ItemListener
 {
 	private boolean m_cancled = true;

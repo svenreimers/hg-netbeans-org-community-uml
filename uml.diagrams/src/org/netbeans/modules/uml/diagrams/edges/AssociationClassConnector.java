@@ -63,10 +63,8 @@ import org.netbeans.modules.uml.drawingarea.ModelElementChangedKind;
 import org.netbeans.modules.uml.drawingarea.persistence.data.EdgeInfo;
 import org.netbeans.modules.uml.drawingarea.view.UMLNodeWidget;
 
-/**
- *
- * @author treyspiva
- */
+
+
 public class AssociationClassConnector extends AssociationConnector
 {
     

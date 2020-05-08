@@ -43,16 +43,15 @@
  */
 
 
+
 /*
  * Created on Feb 24, 2004
  *
  */
 package org.netbeans.modules.uml.ui.support.applicationmanager;
 
-/**
- * @author jingmingm
- *
- */
+
+
 public interface IAccelerators
 {
 	// Contains the number of Accelerator keycodes in the collection"

@@ -55,10 +55,8 @@ import org.netbeans.api.visual.widget.Widget;
 import org.netbeans.modules.uml.diagrams.anchors.TargetMessageAnchor;
 
 
-/**
- *
- * @author sp153251
- */
+
+
 public class LifelineSynchMessageConnectorDecorator implements ConnectDecorator {
     
     private ConnectionWidget widget;

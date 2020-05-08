@@ -42,18 +42,14 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : IJavaChangeHandlerManager.java
- * Created on : Nov 18, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpcomponent;
 
 import org.netbeans.modules.uml.core.roundtripframework.IRequestProcessor;
 
-/**
- * @author Aztec
- */
+
+
 public interface IJavaChangeHandlerManager
 {
     public void setProcessor(IRequestProcessor pProcessor);

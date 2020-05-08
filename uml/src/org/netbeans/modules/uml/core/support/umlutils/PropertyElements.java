@@ -42,6 +42,7 @@
  * made subject to such option by the copyright holder.
  */
 
+
 /*
  * Created on Mar 12, 2004
  *
@@ -52,10 +53,8 @@ import java.util.Vector;
 
 import org.netbeans.modules.uml.common.generics.ETPairT;
 
-/**
- * @author jingmingm
- *
- */
+
+
 public class PropertyElements
 {
 	protected ETList<IPropertyElement> m_PropertyElements = new ETArrayList<IPropertyElement>();
@@ -100,7 +99,8 @@ public class PropertyElements
 		return m_PropertyElements;
 	}
 	
-	/**
+	
+/**
 	 * Is this element in the list?
 	 */
 	public boolean isInList (IPropertyElement pElement)
@@ -120,7 +120,8 @@ public class PropertyElements
 		return bIsInList;
 	}
 
-	/**
+	
+/**
 	 * Adds if this item is not already in the list
 	 */
 	public void addIfNotInList(IPropertyElement pElement)
@@ -135,7 +136,8 @@ public class PropertyElements
 		}
 	}
 	
-	/**
+	
+/**
 	 * Returns an IPropertyElement of the path and name, recursive check.  If path is "" then just name is checked.
 	 */
 	public IPropertyElement getElementRecursive(String sPath, 
@@ -174,7 +176,8 @@ public class PropertyElements
 		return pElement;
 	}
 	
-	/**
+	
+/**
 	 * Returns an IPropertyElement of the path and name.  If path is "" then just name is checked.
 	 */
 	public IPropertyElement getElement( String sPath, 
@@ -223,7 +226,8 @@ public class PropertyElements
 		return pElement;
 	}
 
-	/**
+	
+/**
 	 * Returns any property elements that represents colors.
 	 */
 	public ETPairT<ETList<IPropertyElement>, ETList<IPropertyElement> > getColorsAndFonts(boolean bRemoveFromList)
@@ -319,7 +323,8 @@ public class PropertyElements
 		return retVal;
 	}
 	
-	/**
+	
+/**
 	 * Remove this element from the collection
 	 */
 	public void remove2(IPropertyElement pToBeRemoved)
@@ -344,7 +349,8 @@ public class PropertyElements
 		}
 	}
 	
-	/**
+	
+/**
 	 * Remove these elements from the collection
 	 */
 	public void removeThese(PropertyElements pToBeRemoved)

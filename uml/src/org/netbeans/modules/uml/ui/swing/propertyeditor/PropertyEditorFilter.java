@@ -43,6 +43,7 @@
  */
 
 
+
 /*
  * Created on Jun 4, 2003
  *
@@ -69,10 +70,8 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.IConfigManager;
 import org.netbeans.modules.uml.core.support.umlsupport.XMLManip;
 import org.netbeans.modules.uml.ui.support.ProductHelper;
 
-/**
- * @author sumitabhk
- *
- */
+
+
 public class PropertyEditorFilter
 {
 	private String m_DefinitionFile = null;
@@ -81,7 +80,8 @@ public class PropertyEditorFilter
 	private TreeMap<String, String> m_OtherMap = new TreeMap<String, String>();
 	private String m_CurrentSel = "";
 
-	/**
+	
+/**
 	 * 
 	 */
 	public PropertyEditorFilter()
@@ -89,7 +89,8 @@ public class PropertyEditorFilter
 		super();
 	}
 
-	/**
+	
+/**
 	 * 
 	 */
 	public void build()

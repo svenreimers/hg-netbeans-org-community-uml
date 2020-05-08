@@ -50,10 +50,8 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.IRelationship;
 import org.netbeans.modules.uml.core.metamodel.structure.IComment;
 import org.netbeans.modules.uml.drawingarea.palette.RelationshipFactory;
 
-/**
- *
- * @author treyspiva
- */
+
+
 public class CommentLinkFactory implements RelationshipFactory
 {
 

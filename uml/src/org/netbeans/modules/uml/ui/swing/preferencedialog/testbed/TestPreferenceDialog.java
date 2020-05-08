@@ -68,10 +68,8 @@ import org.netbeans.modules.uml.core.support.umlutils.IPropertyDefinition;
 import org.netbeans.modules.uml.core.support.umlutils.IPropertyElement;
 import org.netbeans.modules.uml.ui.swing.preferencedialog.PreferenceDialogUI;
 
-/**
- * @author sumitabhk
- *
- */
+
+
 public class TestPreferenceDialog
 {
 	private String m_ImageDir = null;
@@ -81,7 +79,8 @@ public class TestPreferenceDialog
 	private boolean m_Advanced = false;
 	private static ICoreProduct m_Product = null;
 
-	/**
+	
+/**
 	 * 
 	 */
 	public TestPreferenceDialog()
@@ -137,7 +136,8 @@ public class TestPreferenceDialog
 		
 	}
 
-	/**
+	
+/**
 	 * 
 	 */
 	private void initializeEventsSink()
@@ -157,7 +157,8 @@ public class TestPreferenceDialog
 		}
 	}
 
-	/**
+	
+/**
 	 * Gets the drawing area dispatcher.
 	 */
 	public IPreferenceManagerEventDispatcher getPreferenceManagerDispatcher()
@@ -219,7 +220,8 @@ public class TestPreferenceDialog
 		}
 	}
 
-	/**
+	
+/**
 	 * 
 	 */
 	private void initializeButtons()
@@ -228,21 +230,16 @@ public class TestPreferenceDialog
 		
 	}
 
-	/**
+	
+/**
 	 * 
 	 */
 	private void initializeTree()
 	{
 	}
 	
-	/**
-	 * Load the preferences into the preference tree by asking the preference manager for
-	 * the information.  The preference manager has built its information upon starting the
-	 * application from the preferences files.  This control just takes that information and
-	 * loads it into the appropriate grids.
-	 *
-	 * @return HRESULT
-	 */
+	
+
 	public Vector<DefaultMutableTreeNode> loadTree()
 	{
 		Vector<DefaultMutableTreeNode> children = new Vector<DefaultMutableTreeNode>();
@@ -284,7 +281,8 @@ public class TestPreferenceDialog
 		return children;
 	}
 
-	/**
+	
+/**
 	 * Take the passed-in information and build child nodes in the preference tree.
 	 *
 	 * @param pNode[in]		The parent grid node
@@ -350,7 +348,8 @@ public class TestPreferenceDialog
 		}
 	}
 
-	/**
+	
+/**
 	 * Does the passed-in property element have at least one level of children.
 	 *
 	 * @param pEle[in] The property element in question
@@ -398,7 +397,8 @@ public class TestPreferenceDialog
 		return isParent;
 	}
 
-	/**
+	
+/**
 	 * Does the passed-in property element have at least two levels of children.
 	 *
 	 * @param pEle[in]	The property element in question

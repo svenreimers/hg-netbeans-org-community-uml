@@ -42,6 +42,7 @@
  * made subject to such option by the copyright holder.
  */
 
+
 /*
  * Created on Mar 25, 2005
  *
@@ -52,15 +53,12 @@ package org.netbeans.modules.uml.core.scm;
 
 import org.openide.cookies.InstanceCookie;
 
-/**
- * @author thumilank
- *
- * TODO To change the template for this generated type comment go to
- * Window - Preferences - Java - Code Style - Code Templates
- */
+
+
 public class SCMObjectCreator {
 	
-	 /**
+	 
+/**
 	    * The registry information that is retrieved from layer files to build
 	    * the list of actions supported by this node.
 	    *
@@ -71,7 +69,8 @@ public class SCMObjectCreator {
 	   public static Object getInstanceFromRegistry(String path)
 	   {
 	      Object retVal = null;
-          /*
+          
+/*
 	      try
 	      {
 	         if(system != null)

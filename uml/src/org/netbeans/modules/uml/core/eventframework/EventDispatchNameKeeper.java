@@ -45,10 +45,8 @@
 
 package org.netbeans.modules.uml.core.eventframework;
 
-/**
- * @author sumitabhk
- *
- */
+
+
 public class EventDispatchNameKeeper {
 
 	public static int EDT_WORKSPACE_KIND = 0;

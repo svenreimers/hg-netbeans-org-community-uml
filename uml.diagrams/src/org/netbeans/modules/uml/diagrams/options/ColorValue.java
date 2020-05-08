@@ -49,11 +49,8 @@ import java.util.HashMap;
 import java.util.Map;
 import org.openide.util.NbBundle;
 
-/**
- * Represents one color with some text description.
- *
- * @author Administrator
- */
+
+
 class ColorValue {
 
     public static final ColorValue  CUSTOM_COLOR =

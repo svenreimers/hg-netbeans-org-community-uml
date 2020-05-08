@@ -50,7 +50,7 @@
 //             to be used during large processes like create diagram from selected
 //
 // Revision:: 4
-//   Author:: KevinM                                                         
+
 //     Date:: Feb 17, 2004 3:15:43 PM                                                                      
 //  Modtime:: 4/14/2004 10:52:54 AM 3:15:43 PM                                              
 //
@@ -59,13 +59,12 @@ package org.netbeans.modules.uml.ui.support.helpers;
 
 import org.netbeans.modules.uml.ui.support.helpers.IGUIBlocker.GBK;
 
-/**
- * @author brettb
- *
- */
+
+
 public class UserInputBlocker
 {
-   /**
+   
+/**
     * 
     */
    UserInputBlocker( int nKind )

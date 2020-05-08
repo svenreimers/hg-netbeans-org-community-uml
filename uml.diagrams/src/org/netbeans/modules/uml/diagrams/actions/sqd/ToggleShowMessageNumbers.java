@@ -56,10 +56,8 @@ import org.openide.util.HelpCtx;
 import org.openide.util.Lookup;
 import org.openide.util.NbBundle;
 
-/**
- *
- * @author psb
- */
+
+
 public class ToggleShowMessageNumbers extends SceneNodeAction
 {
     private WidgetContext context = null;

@@ -42,11 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : ParameterChangeRequest.java
- * Created on : Nov 20, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.roundtripframework;
 
 import org.netbeans.modules.uml.core.metamodel.core.foundation.IElement;
@@ -56,16 +53,16 @@ import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IParameter;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
-/**
- * @author Aztec
- */
+
+
 public class ParameterChangeRequest
     extends ChangeRequest
     implements IParameterChangeRequest
 {
     private IOperation m_BeforeOp;
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IParameterChangeRequest#getAfterOperation()
      */
     public IOperation getAfterOperation()
@@ -124,7 +121,8 @@ public class ParameterChangeRequest
         return null;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IParameterChangeRequest#getBeforeOperation()
      */
     public IOperation getBeforeOperation()
@@ -132,7 +130,8 @@ public class ParameterChangeRequest
         return m_BeforeOp;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IParameterChangeRequest#setBeforeOperation(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation)
      */
     public void setBeforeOperation(IOperation newVal)

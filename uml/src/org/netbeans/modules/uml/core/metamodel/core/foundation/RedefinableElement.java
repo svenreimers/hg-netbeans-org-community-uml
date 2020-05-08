@@ -51,6 +51,7 @@ import org.netbeans.modules.uml.core.eventframework.IEventPayload;
 import org.netbeans.modules.uml.core.support.umlutils.ETArrayList;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
+
 /**
  * RedefinableElementImpl is the implementation of the RedefinableElement UML
  * meta type.
@@ -60,14 +61,16 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
  */
 public class RedefinableElement extends NamedElement implements IRedefinableElement{
 
-	/**
+	
+/**
 	 * 
 	 */
 	public RedefinableElement() {
 		super();
 	}
 
-	/**
+	
+/**
 	 *
 	 * Retrieves the IsFinal flag on this element. If true, this redefinable 
 	 * element cannot be further redefined. The default value is false.
@@ -81,7 +84,8 @@ public class RedefinableElement extends NamedElement implements IRedefinableElem
 		return getBooleanAttributeValue("isFinal", false);
 	}
 
-	/**
+	
+/**
 	 *
 	 * Sets the IsFinal flag on this element. If true, this redefinable 
 	 * element cannot be further redefined. The default value is false.
@@ -123,7 +127,8 @@ public class RedefinableElement extends NamedElement implements IRedefinableElem
 		}
 	}
 
-	/**
+	
+/**
 	 *
 	 * Adds the redefinable element that is being redefined by this element. 
 	 *
@@ -169,7 +174,8 @@ public class RedefinableElement extends NamedElement implements IRedefinableElem
 		return 0;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Removes the redefinable element that is being redefined by this element. 
 	 *
@@ -216,7 +222,8 @@ public class RedefinableElement extends NamedElement implements IRedefinableElem
 		return 0;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Retrieves the collection of elements that this element is redefining.
 	 *
@@ -225,6 +232,7 @@ public class RedefinableElement extends NamedElement implements IRedefinableElem
 	 * @return HRESULT
 	 *
 	 */
+
 /*	public IRedefinableElement[] getRedefinedElements() {
       IRedefinableElement dummy = null;
       ArrayList<IRedefinableElement> values = retrieveElementCollection(dummy, "redefinedElement");
@@ -242,7 +250,8 @@ public class RedefinableElement extends NamedElement implements IRedefinableElem
 		IRedefinableElement dummy = null;
 		return retrieveElementCollectionWithAttrIDs(dummy, "redefinedElement", IRedefinableElement.class);		  
 	}
-	/**
+	
+/**
 	 *
 	 * Adds the element that is redefining this element.
 	 *
@@ -289,7 +298,8 @@ public class RedefinableElement extends NamedElement implements IRedefinableElem
 		return 0;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Removes the element that is redefining this element.
 	 *
@@ -335,7 +345,8 @@ public class RedefinableElement extends NamedElement implements IRedefinableElem
 		return 0;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Retrieves the collection of elements that are redefining this element.
 	 *
@@ -370,7 +381,8 @@ public class RedefinableElement extends NamedElement implements IRedefinableElem
 		return UMLXMLManip.queryCount(m_Node, "redefiningElement", true);
 	}
 
-	/**
+	
+/**
 	 *
 	 * Determines whether or not this element is being redefined by another element(s)
 	 *
@@ -389,7 +401,8 @@ public class RedefinableElement extends NamedElement implements IRedefinableElem
 		return redef;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Determines whether or not this element is redefining anothera
 	 *
@@ -420,7 +433,8 @@ public class RedefinableElement extends NamedElement implements IRedefinableElem
 		return retEle;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Performs the part of the duplication process specific to RedefinableElement
 	 *

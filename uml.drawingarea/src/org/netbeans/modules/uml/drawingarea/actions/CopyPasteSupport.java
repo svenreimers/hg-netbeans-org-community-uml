@@ -49,10 +49,8 @@ import java.awt.datatransfer.Clipboard;
 import java.awt.datatransfer.Transferable;
 import org.openide.util.Lookup;
 
-/**
- *
- * @author Sheryl Su
- */
+
+
 public class CopyPasteSupport
 {
 

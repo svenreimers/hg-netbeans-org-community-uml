@@ -58,14 +58,8 @@ import org.netbeans.modules.uml.core.support.umlsupport.XMLManip;
 import org.openide.filesystems.FileObject;
 import org.openide.filesystems.FileUtil;
 import org.openide.util.Exceptions;
-/**
- * <p>Title: </p>
- * <p>Description: </p>
- * <p>Copyright: Copyright (c) 2003</p>
- * <p>Company: </p>
- * @author not attributable
- * @version 1.0
- */
+
+
 
 public class PropertyDefinitionXML extends PropertyDefinition 
         implements IPropertyDefinitionXML{
@@ -87,7 +81,8 @@ public class PropertyDefinitionXML extends PropertyDefinition
     m_File = val;
   }
 
-  /**
+  
+/**
    * Save the definition to a specified file as a xml node.
    *
    * @return HRESULT
@@ -125,7 +120,8 @@ public class PropertyDefinitionXML extends PropertyDefinition
     {}
   }
 
-  /**
+  
+/**
    * Get a DOM Document for the passed in file.
    *
    *
@@ -162,7 +158,8 @@ public class PropertyDefinitionXML extends PropertyDefinition
         return doc;
     }
 
-  /**
+  
+/**
    * Take the "|" delimited string and build a xpath query from it.
    *
    * @param path[in]		String to turn into a xpath query
@@ -194,7 +191,8 @@ public class PropertyDefinitionXML extends PropertyDefinition
     return xpath;
   }
 
-  /**
+  
+/**
    * Update this definition.  Currently not needed.
    *
    * @param pNode[in]		The DOM node representing this xml definition
@@ -211,7 +209,8 @@ public class PropertyDefinitionXML extends PropertyDefinition
 //	setModified(false);
 //  }
 
-  /**
+  
+/**
    * Create a DOM node from this property definition using the passed in DOM node as the
    * parent.
    *
@@ -287,7 +286,8 @@ public class PropertyDefinitionXML extends PropertyDefinition
 	}
   }
 
-  /**
+  
+/**
  * Create a new DOM node in the xml.
  *
  * @param parentNode[in]		The DOM node that is to be the parent of the newly created
@@ -388,6 +388,7 @@ private Node Create2(org.dom4j.Node pNode, String name, IPropertyDefinitionXML p
   }
   return retNode;
 }
+
 
 /**
  * Search the sub nodes of the passed-in DOM node looking for the node

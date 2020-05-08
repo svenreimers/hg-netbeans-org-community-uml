@@ -52,10 +52,8 @@ import org.netbeans.modules.uml.core.workspacemanagement.IWSElement;
 import org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeItem;
 
 
-/**
- *
- * @author Trey Spiva
- */
+
+
 public class WSTreeItemComparator implements Comparator < ITreeItem >
 {
 

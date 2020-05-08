@@ -43,6 +43,7 @@
  */
 
 
+
 /*
  * ClassDiagramVerifier.java
  *
@@ -56,10 +57,8 @@ import java.io.PrintStream;
 import org.netbeans.test.umllib.DiagramElementOperator;
 import org.netbeans.test.umllib.ElementTypes;
 
-/**
- *
- * @author Alexei Mokeev
- */
+
+
 public class ClassDiagramVerifier extends AbstractDiagramVerifier{
     //String[] elements =
     /** Creates a new instance of ClassDiagramVerifier */
@@ -72,7 +71,8 @@ public class ClassDiagramVerifier extends AbstractDiagramVerifier{
         super(diagramName, log);
     }
     
-    /**
+    
+/**
      *
      * @param diagramName
      * @param log

@@ -46,10 +46,8 @@
 
 package org.netbeans.modules.uml.ui.products.ad.diagramlisteners;
 
-/**
- * @author sumitabhk
- *
- */
+
+
 public interface IDiagramBackupCleaner
 {
 	public void revoke();

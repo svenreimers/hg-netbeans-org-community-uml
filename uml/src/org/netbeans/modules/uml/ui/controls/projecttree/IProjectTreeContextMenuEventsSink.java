@@ -52,22 +52,26 @@ import org.netbeans.modules.uml.ui.support.contextmenusupport.IProductContextMen
 
 public interface IProjectTreeContextMenuEventsSink
 {
-	/**
+	
+/**
 	 * Fired when the context menu is about to be displayed.
 	*/
 	public void onProjectTreeContextMenuPrepare( IProjectTreeControl pParentControl, IProductContextMenu contextMenu, IResultCell cell );
 
-	/**
+	
+/**
 	 * Fired when the context menu has been populated.  Use this to override the implementation of the buttons.
 	*/
 	public void onProjectTreeContextMenuPrepared( IProjectTreeControl pParentControl, IProductContextMenu contextMenu, IResultCell cell );
 
-	/**
+	
+/**
 	 * Fired when someone should handle the display.
 	*/
 	public void onProjectTreeContextMenuHandleDisplay( IProjectTreeControl pParentControl, IProductContextMenu contextMenu, IResultCell cell );
 
-	/**
+	
+/**
 	 * Fired when a context menu item has been selected.
 	*/
 	public void onProjectTreeContextMenuSelected( IProjectTreeControl pParentControl, IProductContextMenu contextMenu, IProductContextMenuItem selectedItem, IResultCell cell );

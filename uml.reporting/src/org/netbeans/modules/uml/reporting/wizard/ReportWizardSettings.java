@@ -51,10 +51,8 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.IElement;
 import org.netbeans.modules.uml.project.ProjectUtil;
 import org.openide.WizardDescriptor;
 
-/**
- *
- * @author Sheryl
- */
+
+
 public class ReportWizardSettings {
 	IElement element;
 	WizardDescriptor descriptor;

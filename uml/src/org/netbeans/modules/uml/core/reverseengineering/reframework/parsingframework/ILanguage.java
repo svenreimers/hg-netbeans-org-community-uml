@@ -50,44 +50,43 @@ import org.netbeans.modules.uml.core.generativeframework.IExpansionVariable;
 import org.netbeans.modules.uml.core.support.umlsupport.IStrings;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
-/**
- * <p>Title: </p>
- * <p>Description: </p>
- * <p>Copyright: Copyright (c) 2003</p>
- * <p>Company: </p>
- * @author not attributable
- * @version 1.0
- */
+
+
 
 public interface ILanguage {
 
-  /**
+  
+/**
    * The name of the language that is represented by the ILanguage interface.
    * 
    * @return The name of the language.
    */
   public String getName();
 
-  /**
+  
+/**
    * The name of the language that is represented by the ILanguage interface.
    * @param value The name of the language
    */
   public void setName( String value );
 
-  /**
+  
+/**
    * The data types that are supported by the language.
    * @return the data types
    */
   public ETList<ILanguageDataType> getDataTypes();
 
-  /**
+  
+/**
    * The data types that are supported by the language.
    * 
    * @param value the data types
   */
   public void setDataTypes( ETList<ILanguageDataType> value );
 
-  /**
+  
+/**
    * The syntax that defines the language.  A syntax is made up of a collection 
    * of tokens that together define the syntax.
    * 
@@ -95,7 +94,8 @@ public interface ILanguage {
    */
   public ILanguageSyntax getSyntax();
 
-  /**
+  
+/**
    * The syntax that defines the language.  A syntax is made up of a collection 
    * of tokens that together define the syntax.
    * 
@@ -103,7 +103,8 @@ public interface ILanguage {
    */
   public void setSyntax( ILanguageSyntax value );
 
-  /**
+  
+/**
    * The code generation scripts that will generate source code for the langauge.
    * 
    * @return a collection of code generation scripts.
@@ -111,7 +112,8 @@ public interface ILanguage {
    */
   public ETList<ICodeGenerationScript> getCodeGenerationScripts();
 
-  /**
+  
+/**
    * The code generation scripts that will generate source code for the langauge.
    * 
    * @param value A collection of code generation scripts
@@ -119,135 +121,161 @@ public interface ILanguage {
    */
   public void setCodeGenerationScripts( ETList<ICodeGenerationScript> value );
 
-  /**
+  
+/**
    * Retrieve the ILanguageParser for the specified parser type.
    * @param Type The type of parser <i>examples: default, java5</i>
    * @return A parser can can be used to parse the language files.
    */
   public ILanguageParser getParser( String Type );
 
-  /**
+  
+/**
    * Add a CLSID that implements the ILangaugeParser interface.  The parser 
    * will be used to parser files written in the defined langauge.
   */
   public void addParser( String Type, String clsid );
 
-  /**
+  
+/**
    * Retrieves the CLSID of the parser for the specified parser type.
   */
   public String getParserCLSID( String Type );
 
-  /**
+  
+/**
    * Adds a new context to the the language.  Contexts are used by other components to perform langauge specific operations.  The interface for each context is defined by the component.
   */
   public void addContext( String name, String clsid );
 
-  /**
+  
+/**
    * Retrieves the CLSID for a context.    Contexts are used by other components to perform langauge specific operations.  The interface for each context is defined by the component.
   */
   public String getContextCLSID( String context );
 
-  /**
+  
+/**
    * The type used when creating a new attribute.
   */
   public ILanguageDataType getAttributeDefaultType();
 
-  /**
+  
+/**
    * The type used when creating a new attribute.
   */
   public void setAttributeDefaultType( ILanguageDataType value );
 
-  /**
+  
+/**
    * The return type to use when creating a new operation.
   */
   public ILanguageDataType getOperationDefaultType();
 
-  /**
+  
+/**
    * The return type to use when creating a new operation.
   */
   public void setOperationDefaultType( ILanguageDataType value );
 
-  /**
+  
+/**
    * Is the given string the name of a predefined date type? These data types are defined in the Languages.etc file.
   */
   public boolean isDataType( String sType );
 
-  /**
+  
+/**
    * Is the given string the name of a primitve date type? These data types are defined in the Languages.etc file.
   */
   public boolean isPrimitive( String sType );
 
-  /**
+  
+/**
    * Is the given string a reserved word in this language? These reserved tokens are defined in the Languages.etc file.
   */
   public boolean isKeyword( String sWord );
 
-  /**
+  
+/**
    * Get the data type by its name.
   */
   public ILanguageDataType getDataType( String sName );
 
-  /**
+  
+/**
    * Get the token by its name.
   */
   public ISyntaxToken getSyntaxToken( String sName );
 
-  /**
+  
+/**
    * Adds a new library to the language definition.
   */
   public void addLibrary( String name, String definitionFile );
 
-  /**
+  
+/**
    * Retrieve a library definition from the language definition.  If the language definition is not registered with the language definition then an empty string is returned.
   */
   public String getLibraryDefinition( String name );
 
-  /**
+  
+/**
    * Retrieve all of the libraries that are registered with the langauge definition.
   */
   public IStrings getLibraryNames();
 
-  /**
+  
+/**
    * Specifies the DOM node that specifies how to format a model elments data.
   */
   public void setFormatDefinitions( Node value );
 
-  /**
+  
+/**
    * Specifies the DOM node that specifies how to format a model elments data.
   */
   public Node getFormatDefinition( String elementName );
 
-  /**
+  
+/**
    * The override expansion variables associated with this Language. ExpansionVariables is the collection type.
   */
   public ETList<IExpansionVariable> getExpansionVariables();
 
-  /**
+  
+/**
    * The override expansion variables associated with this Language. ExpansionVariables is the collection type.
   */
   public void setExpansionVariables( ETList<IExpansionVariable> value );
 
-  /**
+  
+/**
    * Gets a Default setting
   */
   public String getDefault( String name );
 
-  /**
+  
+/**
    * Sets a Default setting
   */
   public void setDefault( String name, String Value );
 
-  /**
+  
+/**
    * Returns the default source code file extension
   */
   public String getDefaultSourceFileExtension();
 
-  /**
+  
+/**
    * Specifies a specific feature is supported.
   */
   public boolean isFeatureSupported( String name );
 
-  /**
+  
+/**
    * Turns on or off a supported feature.
   */
   public void setFeatureSupported( String name, boolean newVal );
@@ -258,21 +286,24 @@ public interface ILanguage {
   
   public void setLanguageManager(ILanguageManager pManager);
   
-  /**
+  
+/**
    * Sets the languages collection types.
    * 
    * @param types the list of collection types.
    */
   public void setCollectionTypes(List < CollectionType > types);
   
-  /**
+  
+/**
    * Gets the languages collection types.
    * 
    * @return types the list of collection types.
    */
   public List < CollectionType > getCollectionTypes();
   
-  /**
+  
+/**
    * Checks if a type is a collection type.
    * 
    * @param typeName the type to check.

@@ -49,6 +49,7 @@ import org.netbeans.modules.uml.core.AbstractUMLTestCase;
 import org.netbeans.modules.uml.core.metamodel.basic.basicactions.IInputPin;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.FactoryRetriever;
 
+
 /**
  * Test cases for WriteAttributeAction.
  */
@@ -61,7 +62,8 @@ public class WriteAttributeActionTestCase extends AbstractUMLTestCase
 
     private IWriteAttributeAction act;
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see junit.framework.TestCase#setUp()
      */
     protected void setUp() throws Exception
@@ -72,7 +74,8 @@ public class WriteAttributeActionTestCase extends AbstractUMLTestCase
         project.addElement(act);
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see junit.framework.TestCase#tearDown()
      */
     protected void tearDown() throws Exception

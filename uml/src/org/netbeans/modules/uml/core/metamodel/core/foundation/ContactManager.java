@@ -48,6 +48,7 @@ package org.netbeans.modules.uml.core.metamodel.core.foundation;
 import org.dom4j.Document;
 import org.dom4j.Node;
 
+
 /**
  * ContactManager is used to control the management of back and
  * forward pointers between types. For instance, when a caller is adding
@@ -60,14 +61,16 @@ import org.dom4j.Node;
  */
 public class ContactManager {
 
-	/**
+	
+/**
 	 * 
 	 */
 	public ContactManager() {
 		super();
 	}
 
-	/**
+	
+/**
 	 *
 	 * Checks to see if the passed in element is part of the collection
 	 * of elements dictated by the query passed in.
@@ -116,7 +119,8 @@ public class ContactManager {
 		return flag;
 	}
 
-	/**
+	
+/**
 	 * Makes sure the appropriate feature on this XML node exists, then adds
 	 * the element to that feature
 	 *
@@ -170,7 +174,8 @@ public class ContactManager {
 		}
 	}
 
-	/**
+	
+/**
 	 * Sets the specified attribute on this element.
 	 *
 	 * @param element[in] The XML element who owns the XML attribute
@@ -214,7 +219,8 @@ public class ContactManager {
 		}
 	}
 
-	/**
+	
+/**
 	 * Makes sure the appropriate feature on this XML node exists,
 	* then adds the element to that feature before the reference.
 	 *
@@ -270,7 +276,8 @@ public class ContactManager {
 		}
 	}
 
-	/**
+	
+/**
 	 *
 	 * Determines if childTestNode is a child node of curElement
 	 *
@@ -287,7 +294,8 @@ public class ContactManager {
 		return UMLXMLManip.isDirectChild(curElement, childTestNode);
 	}
 
-	/**
+	
+/**
 	 * 
 	 * Removes the element matching the passed in ID from curElement.
 	 *
@@ -319,7 +327,8 @@ public class ContactManager {
 		}
 	}
 	
-	/**
+	
+/**
 	 * Called to remove elToRemove from curElement. elToRemove
 	 * can be an element completely encapsulated as a child of
 	 * curElement, as simply referenced via ID.
@@ -376,7 +385,8 @@ public class ContactManager {
 		}
 	}
 	
-	/**
+	
+/**
 	 *
 	 * The method is used to take the XMI id from newElement
 	 * and place that ID value in the XML attribute value
@@ -458,7 +468,8 @@ public class ContactManager {
         return (IElement) owner;
 	}
 	
-	/**
+	
+/**
 	 *
 	 * Adds newElement to curElement, establishing the back pointer
 	 * connection between the two types, dictated by the BackPointer
@@ -518,7 +529,8 @@ public class ContactManager {
 	 	}
 	 }
 	 
-	/**
+	
+/**
 	 *
 	 * Adds newElement to curElement, establishing the back pointer
 	 * connection between the two types, dictated by the BackPointer

@@ -43,11 +43,8 @@
  */
 
 
-/*
- * File       : MethodConditionalStateHandler.java
- * Created on : Dec 10, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.statehandlers;
 
 import org.dom4j.Element;
@@ -63,9 +60,8 @@ import org.netbeans.modules.uml.core.reverseengineering.reframework.REConditiona
 import org.netbeans.modules.uml.core.reverseengineering.reframework.TestEvent;
 import org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ITokenDescriptor;
 
-/**
- * @author Aztec
- */
+
+
 public class MethodConditionalStateHandler extends MethodCompositeStateHandler
 {
     private ITokenDescriptor    m_pKeyword;    

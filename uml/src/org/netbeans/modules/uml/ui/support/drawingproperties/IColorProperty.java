@@ -43,6 +43,7 @@
  */
 
 
+
 /*
  * Created on Jun 11, 2003
  *
@@ -50,11 +51,8 @@
  */
 package org.netbeans.modules.uml.ui.support.drawingproperties;
 
-/**
- * @author sumitabhk
- *
- *
- */
+
+
 public interface IColorProperty extends IDrawingProperty
 {
 	public void initialize(IDrawingPropertyProvider provider,

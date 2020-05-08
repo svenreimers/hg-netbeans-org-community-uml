@@ -48,10 +48,8 @@ package org.netbeans.modules.uml.reporting.dataobjects;
 import org.netbeans.modules.uml.core.metamodel.common.commonstatemachines.IPseudoState;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.IElement;
 
-/**
- *
- * @author Sheryl
- */
+
+
 public class PseudoStateData extends ElementDataObject
 {
     private IPseudoState element;

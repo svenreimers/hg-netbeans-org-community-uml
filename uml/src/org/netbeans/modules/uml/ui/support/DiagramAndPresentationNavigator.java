@@ -56,10 +56,8 @@ import org.netbeans.modules.uml.core.metamodel.structure.IProject;
 import org.netbeans.modules.uml.ui.support.commondialogs.INavigationDialog;
 import org.netbeans.modules.uml.ui.support.diagramsupport.IPresentationTarget;
 
-/**
- *
- * @author Trey Spiva
- */
+
+
 public class DiagramAndPresentationNavigator implements IDiagramAndPresentationNavigator
 {   
    private boolean m_ForceDialogDisplay = false;
@@ -172,20 +170,23 @@ public class DiagramAndPresentationNavigator implements IDiagramAndPresentationN
       return retVal;
    }
    
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     */
    public boolean navigateToPresentationTarget(int pParent, IElement pParentModelElement, ETList<IPresentationTarget> pPossibleTargets)
    {
    		return navigateToPresentationTarget(pParentModelElement, pPossibleTargets, false);
    }
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     */
    public boolean handleNavigation(int pParent, IElement pElement, boolean isShift)
    {
       return navigateToPresentationTarget(pElement, null, isShift);
    }
    
-   /**
+   
+/**
 	* Bring up the project diagram dialog which shows all the closed diagrams in the project.
 	*
 	* @param pParent[in]
@@ -198,7 +199,8 @@ public class DiagramAndPresentationNavigator implements IDiagramAndPresentationN
    		m_ForceDialogDisplay = false;
    }
    
-   /**
+   
+/**
 	* Navigates to the argument target.  If the diagram is already up 
 	* the it makes sure to raise the window.
 	*

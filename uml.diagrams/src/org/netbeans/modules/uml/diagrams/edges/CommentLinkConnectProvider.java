@@ -55,16 +55,8 @@ import org.netbeans.modules.uml.drawingarea.LabelManager;
 import org.netbeans.modules.uml.drawingarea.actions.SceneConnectProvider;
 import org.openide.util.Lookup;
 
-/**
- * A comment link does not have an actual relationship model element that 
- * represents the relationship.  Instead the element that is associated with 
- * the comment is add to the comment list of annotated elements.  
- * 
- * The CommentLinkConnectorProvider will set the comments annotated provider
- * instead of creating a relationship.
- * 
- * @author treyspiva
- */
+
+
 public class CommentLinkConnectProvider extends SceneConnectProvider
 {
     

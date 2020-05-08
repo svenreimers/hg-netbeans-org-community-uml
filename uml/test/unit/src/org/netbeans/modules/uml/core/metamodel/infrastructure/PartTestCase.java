@@ -50,6 +50,7 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.BaseElement;
 import org.netbeans.modules.uml.core.AbstractUMLTestCase;
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttribute;
 
+
 /**
  * Test cases for Part.
  */
@@ -62,7 +63,8 @@ public class PartTestCase extends AbstractUMLTestCase
 
     private IPart part;
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see junit.framework.TestCase#setUp()
      */
     protected void setUp() throws Exception
@@ -72,7 +74,8 @@ public class PartTestCase extends AbstractUMLTestCase
         project.addElement(part);
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see junit.framework.TestCase#tearDown()
      */
     protected void tearDown() throws Exception

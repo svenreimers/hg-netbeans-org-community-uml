@@ -49,10 +49,8 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.IPackageImport;
 import org.openide.nodes.Children;
 import org.openide.util.Lookup;
 
-/**
- *
- * @author Trey Spiva
- */
+
+
 public class PackageImportNode extends UMLModelElementNode
 {
     private IPackageImport importedElement = null;

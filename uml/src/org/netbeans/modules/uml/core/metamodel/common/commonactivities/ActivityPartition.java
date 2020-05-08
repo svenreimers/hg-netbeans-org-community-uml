@@ -42,11 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : ActivityPartition.java
- * Created on : Sep 16, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.metamodel.common.commonactivities;
 
 import org.dom4j.Document;
@@ -59,9 +56,8 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.NamedElement;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.OwnerRetriever;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
-/**
- * @author Aztec
- */
+
+
 public class ActivityPartition
     extends ActivityGroup
     implements IActivityPartition
@@ -73,7 +69,8 @@ public class ActivityPartition
         namedElem = new NamedElement();
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IVersionableElement#setNode(org.dom4j.Node)
      */
     public void setNode(Node n)
@@ -82,7 +79,8 @@ public class ActivityPartition
         namedElem.setNode(n);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivityPartition#addSubPartition(org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivityPartition)
      */
     public void addSubPartition(IActivityPartition pPartition)
@@ -97,7 +95,8 @@ public class ActivityPartition
 
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivityPartition#getIsDimension()
      */
     public boolean getIsDimension()
@@ -105,7 +104,8 @@ public class ActivityPartition
         return getBooleanAttributeValue("isDimension", false);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivityPartition#getIsExternal()
      */
     public boolean getIsExternal()
@@ -113,7 +113,8 @@ public class ActivityPartition
         return getBooleanAttributeValue("isExternal", false);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivityPartition#getRepresents()
      */
     public IElement getRepresents()
@@ -123,7 +124,8 @@ public class ActivityPartition
 
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivityPartition#getSubPartitions()
      */
     public ETList<IActivityPartition> getSubPartitions()
@@ -133,7 +135,8 @@ public class ActivityPartition
 
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivityPartition#removeSubPartition(org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivityPartition)
      */
     public void removeSubPartition(IActivityPartition pPartition)
@@ -146,7 +149,8 @@ public class ActivityPartition
         setNamespace(pActivity);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivityPartition#setIsDimension(boolean)
      */
     public void setIsDimension(boolean value)
@@ -154,7 +158,8 @@ public class ActivityPartition
         setBooleanAttributeValue("isDimension", value);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivityPartition#setIsExternal(boolean)
      */
     public void setIsExternal(boolean value)
@@ -162,7 +167,8 @@ public class ActivityPartition
         setBooleanAttributeValue("isExternal", value);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivityPartition#setRepresents(org.netbeans.modules.uml.core.metamodel.core.foundation.IElement)
      */
     public void setRepresents(IElement value)

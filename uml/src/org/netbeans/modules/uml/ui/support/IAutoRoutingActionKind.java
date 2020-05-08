@@ -46,10 +46,8 @@
 
 package org.netbeans.modules.uml.ui.support;
 
-/**
- * @author sumitabhk
- *
- */
+
+
 public interface IAutoRoutingActionKind
 {
 	public static int ARAK_AUTOMATIC = 0;

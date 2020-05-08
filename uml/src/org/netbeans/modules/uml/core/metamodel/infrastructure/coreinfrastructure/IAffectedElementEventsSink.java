@@ -51,12 +51,14 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 public interface IAffectedElementEventsSink
 {
-	/**
+	
+/**
 	 * Fired whenever the passed in Classifier's name is about to change.
 	*/
 	public void onPreImpacted( IClassifier classifier, ETList<IVersionableElement> impacted, IResultCell cell );
 
-	/**
+	
+/**
 	 * Fired whenever the passed in Classifier's name has changed.
 	*/
 	public void onImpacted( IClassifier classifier, ETList<IVersionableElement> impacted, IResultCell cell );

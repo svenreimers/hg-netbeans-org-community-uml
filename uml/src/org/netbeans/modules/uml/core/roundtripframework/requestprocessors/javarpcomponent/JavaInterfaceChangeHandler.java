@@ -42,6 +42,7 @@
  * made subject to such option by the copyright holder.
  */
 
+
 /*
  * Created on Jul 13, 2004
  */
@@ -57,12 +58,8 @@ import org.netbeans.modules.uml.core.roundtripframework.RTElementKind;
 import org.netbeans.modules.uml.core.roundtripframework.RequestDetailKind;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
-/**
- * @author avaneeshj
- *
- * To change the template for this generated type comment go to
- * Window - Preferences - Java - Code Generation - Code and Comments
- */
+
+
 public class JavaInterfaceChangeHandler extends JavaClassChangeHandler 
                                         implements IJavaInterfaceChangeHandler
 {

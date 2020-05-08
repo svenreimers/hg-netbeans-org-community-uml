@@ -65,10 +65,8 @@ import org.netbeans.modules.uml.drawingarea.view.UMLNodeWidget;
 import org.netbeans.modules.uml.drawingarea.view.UMLWidget;
 import org.openide.util.NbBundle;
 
-/**
- *
- * @author jyothi
- */
+
+
 public class ActorWidget extends UMLNodeWidget
 {
 

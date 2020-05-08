@@ -48,10 +48,8 @@ package org.netbeans.modules.uml.ui.swing.preferencedialog;
 
 import javax.swing.table.TableModel;
 
-/**
- * @author sumitabhk
- *
- */
+
+
 public interface ISwingPreferenceTableModel extends TableModel
 {
 

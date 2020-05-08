@@ -42,6 +42,7 @@
  * made subject to such option by the copyright holder.
  */
 
+
 /*
  * EnumLiteralChangeFacility.java
  *
@@ -57,10 +58,8 @@ import org.netbeans.modules.uml.core.roundtripframework.EnumLiteralChangeFacilit
 import org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ILanguage;
 import org.netbeans.modules.uml.core.support.umlsupport.ProductRetriever;
 
-/**
- *
- * @author Administrator
- */
+
+
 public class JavaEnumLiteralChangeFacility extends EnumLiteralChangeFacility 
                                            implements IJavaEnumLiteralChangeFacility
 {

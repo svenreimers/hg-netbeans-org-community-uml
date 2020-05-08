@@ -102,14 +102,16 @@ public class ETRect extends Rectangle implements IETRect {
 		add(bottomRight);
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.support.umlsupport.IETRect#doesIntersect(org.netbeans.modules.uml.core.support.umlsupport.IETRect)
 	 */
 	public boolean doesIntersect(IETRect pOtherRect) {
 		return pOtherRect != null ? intersects(pOtherRect.getRectangle()) : isZero();
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.support.umlsupport.IETRect#getBottom()
 	 */
 	public int getBottom() {
@@ -133,49 +135,56 @@ public class ETRect extends Rectangle implements IETRect {
 		return super.y;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.support.umlsupport.IETRect#getLeft()
 	 */
 	public int getLeft() {
 		return getIntX();
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.support.umlsupport.IETRect#getRight()
 	 */
 	public int getRight() {
 		return getIntX() + getIntWidth();
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.support.umlsupport.IETRect#getTop()
 	 */
 	public int getTop() {
 		return getIntY();
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.support.umlsupport.IETRect#intersectWith(org.netbeans.modules.uml.core.support.umlsupport.IETRect)
 	 */
 	public boolean intersectWith(IETRect pOtherRect) {
 		return doesIntersect(pOtherRect);
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.support.umlsupport.IETRect#isContained(org.netbeans.modules.uml.core.support.umlsupport.IETRect)
 	 */
 	public boolean isContained(IETRect pOtherRect) {
 		return pOtherRect != null ? pOtherRect.contains(this) : false;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.support.umlsupport.IETRect#normalizeRect()
 	 */
 	public void normalizeRect() {
 		normalizeRect(true);
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.support.umlsupport.IETRect#normalizeRect(boolean)
 	 */
 	public void normalizeRect(boolean bInvertY) {
@@ -198,7 +207,8 @@ public class ETRect extends Rectangle implements IETRect {
 		}
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.support.umlsupport.IETRect#setSides(int, int, int, int)
 	 */
 	public void setSides(int nLeft, int nTop, int nRight, int nBottom) {
@@ -208,7 +218,8 @@ public class ETRect extends Rectangle implements IETRect {
 		height = Math.abs(nBottom - nTop);
 	}
 
-	/**
+	
+/**
 	 * Setting the bottom of the rectangle affects the height of the rectangle.
 	 * 
 	 * @see org.netbeans.modules.uml.core.support.umlsupport.IETRect#setBottom(int)
@@ -227,7 +238,8 @@ public class ETRect extends Rectangle implements IETRect {
 		height = max - min;
 	}
 
-	/**
+	
+/**
 	 * Setting the left side affects the x position of the rectangle.
 	 * 
 	 * @see org.netbeans.modules.uml.core.support.umlsupport.IETRect#setLeft(int)
@@ -245,7 +257,8 @@ public class ETRect extends Rectangle implements IETRect {
 		width = max - min;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.support.umlsupport.IETRect#setRight(int)
 	 */
 	public void setRight(int value) {
@@ -253,7 +266,8 @@ public class ETRect extends Rectangle implements IETRect {
 		width = Math.abs(getLeft() - value);
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.support.umlsupport.IETRect#setTop(int)
 	 */
 	public void setTop(int value) {
@@ -261,7 +275,8 @@ public class ETRect extends Rectangle implements IETRect {
 		y = value;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.support.umlsupport.IETRect#unionWith(org.netbeans.modules.uml.core.support.umlsupport.IETRect)
 	 */
 	public void unionWith(IETRect pOtherRect)
@@ -318,7 +333,8 @@ public class ETRect extends Rectangle implements IETRect {
 		return "[x=" + x + ",y=" + y + ",width=" + width + ",height=" + height + "]";
 	}
 
-	/**
+	
+/**
 	 * Inflates the rectangle in both the X and Y axis.
 	 * 
 	 * @param size The size to grow the rectangle.
@@ -328,7 +344,8 @@ public class ETRect extends Rectangle implements IETRect {
 		inflate(size, size);
 	}
 
-	/**
+	
+/**
 	 * Inflates the rectangle in both the X and Y axis.
 	 * 
 	 * @param xSize The size that grow the left and right sides of the rectangle.
@@ -347,7 +364,8 @@ public class ETRect extends Rectangle implements IETRect {
 		height += (ySize * 2);
 	}
 
-	/**
+	
+/**
 	 *
 	 * @return AWT Window class Rectangle repesenting this IETRect.
 	 */
@@ -412,7 +430,8 @@ public class ETRect extends Rectangle implements IETRect {
 		setBottom(bottomRight.getY());
 	}
 
-	/*
+	
+/*
 	 * 
 	 */
 	public void offsetRect(int dx, int dy) {
@@ -423,7 +442,8 @@ public class ETRect extends Rectangle implements IETRect {
 		setCorners(topLeft, bottomRight);
 	}
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.support.umlsupport.IETRect#offsetRect(IETPoint)
     */
    public void offsetRect( Point point )
@@ -431,7 +451,8 @@ public class ETRect extends Rectangle implements IETRect {
       offsetRect( point.x, point.y );
    }
 
-	/*
+	
+/*
 	 *  sets the internal variables so isZero() returns true
 	 */
 	public void setRectEmpty() {

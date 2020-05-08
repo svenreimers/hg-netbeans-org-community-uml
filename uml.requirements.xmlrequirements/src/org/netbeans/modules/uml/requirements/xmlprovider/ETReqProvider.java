@@ -66,10 +66,8 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 import org.netbeans.modules.uml.ui.support.ProductHelper;
 import org.openide.util.NbBundle;
 
-/**
- * @author josephg
- *
- */
+
+
 public class ETReqProvider implements IDesignCenterSupport, IRequirementsProvider
 {
    private String m_progID = "org.netbeans.modules.uml.ui.products.ad.requirementsprovider.etrequirementsprovider";
@@ -85,7 +83,8 @@ public class ETReqProvider implements IDesignCenterSupport, IRequirementsProvide
       m_progID = newVal; 
    }
    
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.addinframework.IAddIn#deInitialize(java.lang.Object)
     */
    public long deInitialize(Object context)
@@ -94,7 +93,8 @@ public class ETReqProvider implements IDesignCenterSupport, IRequirementsProvide
       return 0;
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.addinframework.IAddIn#getID()
     */
    public String getID()
@@ -107,7 +107,8 @@ public class ETReqProvider implements IDesignCenterSupport, IRequirementsProvide
       return Messages.getString("DisplayName");//$NON-NLS-1$
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.addinframework.IAddIn#getLocation()
     */
    public String getLocation()
@@ -142,7 +143,8 @@ public class ETReqProvider implements IDesignCenterSupport, IRequirementsProvide
       return null;
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.addinframework.IAddIn#getName()
     */
    public String getName()
@@ -151,7 +153,8 @@ public class ETReqProvider implements IDesignCenterSupport, IRequirementsProvide
       return null;
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.addinframework.IAddIn#getVersion()
     */
    public String getVersion()
@@ -159,7 +162,8 @@ public class ETReqProvider implements IDesignCenterSupport, IRequirementsProvide
       return m_Version;
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.addinframework.IAddIn#initialize(java.lang.Object)
     */
    public long initialize(Object context)
@@ -168,7 +172,8 @@ public class ETReqProvider implements IDesignCenterSupport, IRequirementsProvide
       return 0;
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.addinframework.IAddIn#unLoad(java.lang.Object)
     */
    public long unLoad(Object context)

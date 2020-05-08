@@ -50,12 +50,14 @@ import org.netbeans.modules.uml.core.roundtripframework.IChangeRequest;
 public interface ICGSingleClassChangeNotification extends ICGChangeNotification
 {
 	public void initialize( IChangeRequest pVal );
-	/**
+	
+/**
 	 * Gets / Sets Classifier
 	*/
 	public IClassifier getClassifier();
 
-	/**
+	
+/**
 	 * Gets / Sets Classifier
 	*/
 	public void setClassifier( IClassifier value );

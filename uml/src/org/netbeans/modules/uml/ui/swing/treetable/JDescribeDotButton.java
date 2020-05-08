@@ -43,6 +43,7 @@
  */
 
 
+
 /*
  * Created on Jun 12, 2003
  *
@@ -66,10 +67,8 @@ import javax.swing.SwingConstants;
 import org.netbeans.modules.uml.core.support.umlutils.IPropertyElement;
 import org.netbeans.modules.uml.ui.swing.preferencedialog.PreferenceDialogUI;
 
-/**
- * @author sumitabhk
- *
- */
+
+
 public class JDescribeDotButton extends JPanel implements ActionListener
 {
 	private JButton m_Button = null;
@@ -113,7 +112,8 @@ public class JDescribeDotButton extends JPanel implements ActionListener
 		}
 		initialize();
 	}
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see java.awt.event.ActionListener#actionPerformed(java.awt.event.ActionEvent)
 	 */
 	public void actionPerformed(ActionEvent e)

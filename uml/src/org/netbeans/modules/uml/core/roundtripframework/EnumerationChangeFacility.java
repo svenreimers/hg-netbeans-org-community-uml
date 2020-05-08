@@ -42,6 +42,7 @@
  * made subject to such option by the copyright holder.
  */
 
+
 /*
  * EnumerationChangeFacility.java
  *
@@ -52,10 +53,8 @@ package org.netbeans.modules.uml.core.roundtripframework;
 
 import org.netbeans.modules.uml.core.metamodel.core.constructs.IEnumeration;
 
-/**
- *
- * @author Administrator
- */
+
+
 public class EnumerationChangeFacility extends RequestFacility
                                        implements IEnumerationChangeFacility
 {

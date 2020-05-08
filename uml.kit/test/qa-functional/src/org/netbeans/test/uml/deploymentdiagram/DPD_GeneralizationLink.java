@@ -67,11 +67,8 @@ import org.netbeans.test.umllib.exceptions.NotFoundException;
 import org.netbeans.test.umllib.testcases.UMLTestCase;
 import org.netbeans.test.umllib.vrf.LinkVerifier;
 
-/**
- *
- * @author yaa
- * @spec UML/DeploymentDiagram.xml
- */
+
+
 public class DPD_GeneralizationLink extends UMLTestCase {
     
     private static String prName = "UMLProjectDPD7";
@@ -96,6 +93,7 @@ public class DPD_GeneralizationLink extends UMLTestCase {
 
 //------------------------------------------------------------------------------    
     
+
 /**
  * @caseblock Generalization link
  * @usecase Delete a Generalization link from a diagram by popup menu
@@ -107,6 +105,7 @@ public class DPD_GeneralizationLink extends UMLTestCase {
         }
     }
     
+
 /**
  * @caseblock Generalization link
  * @usecase Delete a Generalization link from a diagram by shortcut
@@ -117,6 +116,7 @@ public class DPD_GeneralizationLink extends UMLTestCase {
             fail("Test failed. Details in log file.");
         }
     }
+
 
 /**
  * @caseblock Generalization link
@@ -129,6 +129,7 @@ public class DPD_GeneralizationLink extends UMLTestCase {
         }
     }
 
+
 /**
  * @caseblock Generalization link
  * @usecase Invert selection of a Generalization link
@@ -139,6 +140,7 @@ public class DPD_GeneralizationLink extends UMLTestCase {
             fail("Test failed. Details in log file.");
         }
     }
+
 
 /**
  * @caseblock Generalization link
@@ -151,6 +153,7 @@ public class DPD_GeneralizationLink extends UMLTestCase {
         }
     }
 
+
 /**
  * @caseblock Generalization link
  * @usecase Find target element of a Generalization link
@@ -162,6 +165,7 @@ public class DPD_GeneralizationLink extends UMLTestCase {
         }
     }
     
+
 /**
  * @caseblock Generalization link
  * @usecase Redirect source element of a Generalization link
@@ -172,6 +176,7 @@ public class DPD_GeneralizationLink extends UMLTestCase {
             fail("Test failed. Details in log file.");
         }
     }
+
 
 /**
  * @caseblock Generalization link
@@ -184,6 +189,7 @@ public class DPD_GeneralizationLink extends UMLTestCase {
         }
     }
 
+
 /**
  * @caseblock Generalization link
  * @usecase Redirect source element of a Generalization link
@@ -194,6 +200,7 @@ public class DPD_GeneralizationLink extends UMLTestCase {
             fail("Test failed. Details in log file.");
         }
     }
+
 
 /**
  * @caseblock Generalization link
@@ -206,6 +213,7 @@ public class DPD_GeneralizationLink extends UMLTestCase {
         }
     }
 
+
 /**
  * @caseblock Generalization link
  * @usecase Redirect target element of a Generalization link
@@ -216,6 +224,7 @@ public class DPD_GeneralizationLink extends UMLTestCase {
             fail("Test failed. Details in log file.");
         }
     }
+
 
 /**
  * @caseblock Generalization link

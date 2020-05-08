@@ -44,6 +44,7 @@
 
 
 
+
 /*
  * Created on Nov 24, 2003
  *
@@ -58,10 +59,8 @@ import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation;
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IParameter;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
-/**
- * @author schandra
- *
- */
+
+
 public class JavaImplementationChangeHandlerTestCase extends
     AbstractUMLTestCase
 {
@@ -75,12 +74,13 @@ public class JavaImplementationChangeHandlerTestCase extends
     private IImplementation impl;
     
 
+
 /**
  * ImplementationOperationChangeTestCase
  */
     public void testChangeInInterface()
     {
-// TODO: conover - temporary until fixed            
+
 //        IOperation op;
 //        IParameter pm1,pm2;
 //        intf.addOperation(op = intf.createOperation("int", "delhi"));
@@ -137,6 +137,7 @@ public class JavaImplementationChangeHandlerTestCase extends
 //        assertEquals("double",clazzOp.getParameters().get(0).getTypeName());
     }
 
+
 /**
  * ImplementationCreateTestCase
  */
@@ -150,6 +151,7 @@ public class JavaImplementationChangeHandlerTestCase extends
         assertEquals(1, intf.getSupplierDependencies().size());
     }
    
+
 /**
  * ImplementationDeleteTestCase
  */
@@ -164,6 +166,7 @@ public class JavaImplementationChangeHandlerTestCase extends
         assertEquals(0, intf.getSupplierDependencies().size());
     }
     
+
 /**
  * ClassifierEndMoveTestCase
  */
@@ -186,6 +189,7 @@ public class JavaImplementationChangeHandlerTestCase extends
         assertEquals(1, newClient.getOperations().get(1).getRedefinedElementCount());
     }
     
+
 
 /**
  * ContractEndMoveTestCase

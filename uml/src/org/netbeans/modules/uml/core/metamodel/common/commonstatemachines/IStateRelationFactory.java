@@ -42,16 +42,12 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : IStateRelationFactory.java
- * Created on : Sep 19, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.metamodel.common.commonstatemachines;
 
-/**
- * @author Aztec
- */
+
+
 public interface IStateRelationFactory
 {
     public ITransition createTransition(IStateVertex source,

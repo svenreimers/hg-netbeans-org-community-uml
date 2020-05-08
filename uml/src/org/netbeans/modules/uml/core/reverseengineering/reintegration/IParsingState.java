@@ -42,16 +42,12 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : IParsingState.java
- * Created on : Dec 23, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.reverseengineering.reintegration;
 
-/**
- * @author Aztec
- */
+
+
 public interface IParsingState
 {
     public static final int OPS_UNKNOWN = 0;

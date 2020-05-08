@@ -49,57 +49,68 @@ import org.dom4j.Node;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 public interface IVariableFactory
 {
-	/**
+	
+/**
 	 * Creates a variable using the passed in node as the actual representation.
 	*/
 	public IExpansionVariable createVariable( Node var );
 
-	/**
+	
+/**
 	 * The context object passed through all expansions.
 	*/
 	public IVariableExpander getExecutionContext();
 
-	/**
+	
+/**
 	 * The context object passed through all expansions.
 	*/
 	public void setExecutionContext( IVariableExpander value );
 
-	/**
+	
+/**
 	 * The location of a configuration file that contains Expansion variable definitions
 	*/
 	public String getConfigFile();
 
-	/**
+	
+/**
 	 * The location of a configuration file that contains Expansion variable definitions
 	*/
 	public void setConfigFile( String value );
 
-	/**
+	
+/**
 	 * Creates an expansion variable with the text found in a template file.
 	*/
 	public IExpansionVariable createVariableWithText( String varText );
 
-	/**
+	
+/**
 	 * Removes an execution context from the internal stack of contexts.
 	*/
 	public IVariableExpander getPopContext();
 
-	/**
+	
+/**
 	 * The collection of variables used to provide new or override existing expansion variables.
 	*/
 	public ETList<IExpansionVariable> getOverrideVariables();
 
-	/**
+	
+/**
 	 * The collection of variables used to provide new or override existing expansion variables.
 	*/
 	public void setOverrideVariables( ETList<IExpansionVariable> value );
 
-	/**
+	
+/**
 	 * Adds a new or overriding expansion variable.
 	*/
 	public void addOverride( IExpansionVariable var );
 
-	/**
+	
+/**
 	 * Removes an expansion variable from the OverrideVariables collection.
 	*/
 	public void removeOverride( IExpansionVariable var );

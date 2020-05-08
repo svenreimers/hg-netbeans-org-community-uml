@@ -42,23 +42,20 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : Facility.java
- * Created on : Oct 23, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework;
 
 import org.dom4j.Node;
 
 
-/**
- * @author Aztec
- */
+
+
 public class Facility implements IFacility
 {
 
-    /**
+    
+/**
     * The is the XML DOM node that represents this element.
     */
     Node  m_Node;
@@ -67,7 +64,8 @@ public class Facility implements IFacility
 
     IFacilityProperties m_Properties = new FacilityProperties();
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.IFacility#addProperty(org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.IFacilityProperty)
      */
     public void addProperty(IFacilityProperty pProperty)
@@ -78,7 +76,8 @@ public class Facility implements IFacility
         }
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.IFacility#addProperty(java.lang.String, java.lang.String)
      */
     public void addProperty(String name, String value)
@@ -93,7 +92,8 @@ public class Facility implements IFacility
 
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.IFacility#getDescription()
      */
     public String getDescription()
@@ -101,7 +101,8 @@ public class Facility implements IFacility
         return m_Description;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.IFacility#getProperties()
      */
     public IFacilityProperties getProperties()
@@ -109,7 +110,8 @@ public class Facility implements IFacility
         return m_Properties;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.IFacility#getProperty(java.lang.String)
      */
     public IFacilityProperty getProperty(String name)
@@ -117,7 +119,8 @@ public class Facility implements IFacility
         return m_Properties.get(name);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.IFacility#getPropertyValue(java.lang.String)
      */
     public String getPropertyValue(String name)
@@ -127,7 +130,8 @@ public class Facility implements IFacility
         return null;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.IFacility#setDescription(java.lang.String)
      */
     public void setDescription(String value)

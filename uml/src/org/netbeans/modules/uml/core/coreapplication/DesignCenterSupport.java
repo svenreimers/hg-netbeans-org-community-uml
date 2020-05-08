@@ -42,19 +42,19 @@
  * made subject to such option by the copyright holder.
  */
 
+
 /*
  * Created on Mar 4, 2004
  *
  */
 package org.netbeans.modules.uml.core.coreapplication;
 
-/**
- * @author sumitabhk
- *
- */
+
+
 public class DesignCenterSupport implements IDesignCenterSupport{
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.addinframework.IAddIn#initialize(java.lang.Object)
 	 */
 	public long initialize(Object context) {
@@ -62,7 +62,8 @@ public class DesignCenterSupport implements IDesignCenterSupport{
 		return 0;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.addinframework.IAddIn#deInitialize(java.lang.Object)
 	 */
 	public long deInitialize(Object context) {
@@ -70,7 +71,8 @@ public class DesignCenterSupport implements IDesignCenterSupport{
 		return 0;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.addinframework.IAddIn#unLoad(java.lang.Object)
 	 */
 	public long unLoad(Object context) {
@@ -78,7 +80,8 @@ public class DesignCenterSupport implements IDesignCenterSupport{
 		return 0;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.addinframework.IAddIn#getVersion()
 	 */
 	public String getVersion() {
@@ -86,7 +89,8 @@ public class DesignCenterSupport implements IDesignCenterSupport{
 		return null;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.addinframework.IAddIn#getName()
 	 */
 	public String getName() {
@@ -94,7 +98,8 @@ public class DesignCenterSupport implements IDesignCenterSupport{
 		return null;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.addinframework.IAddIn#getID()
 	 */
 	public String getID() {
@@ -102,7 +107,8 @@ public class DesignCenterSupport implements IDesignCenterSupport{
 		return null;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.addinframework.IAddIn#getLocation()
 	 */
 	public String getLocation() {

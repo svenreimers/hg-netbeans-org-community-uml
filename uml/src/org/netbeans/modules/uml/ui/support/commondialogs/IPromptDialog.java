@@ -49,17 +49,20 @@ import org.netbeans.modules.uml.common.generics.ETPairT;
 
 public interface IPromptDialog extends ISilentDialog
 {
-	/**
+	
+/**
 	 * Display question dialog with an edit control for user input
 	*/
 	public ETPairT<Boolean, String> displayEdit( String sMessage, String sInitalValue, String sTitle );
 
-	/**
+	
+/**
 	 * Display question dialog with an integer edit control for user input
 	*/
 	public long displayEdit2( String sMessage, int nInitialValue, int nMinValue, int nMaxValue, boolean bUserHitOK, int pResult, int parent, String sTitle );
 
-	/**
+	
+/**
 	 * Display a password dialog with an password style edit control for user input
 	*/
 	public long displayPassword( String sMessage, boolean bUserHitOK, StringBuffer pResult, int parent, String sTitle );

@@ -43,11 +43,8 @@
  */
 
 
-/*
- * File       : AliasedTypedStateHandler.java
- * Created on : Dec 8, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.statehandlers;
 
 import org.dom4j.Node;
@@ -58,9 +55,8 @@ import org.netbeans.modules.uml.core.reverseengineering.reframework.ClassEvent;
 import org.netbeans.modules.uml.core.reverseengineering.reframework.IClassEvent;
 import org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ITokenDescriptor;
 
-/**
- * @author Aztec
- */
+
+
 public class AliasedTypeStateHandler extends TopLevelStateHandler
 {
     Identifier m_TypeIdentifier = new Identifier();
@@ -70,7 +66,8 @@ public class AliasedTypeStateHandler extends TopLevelStateHandler
         super(language);
     }
 
-    /**
+    
+/**
      * Create a new state handler to be added to the state mechanism.  If the
      * state is not a state that is being processed then a new state handler is
      * not created.  The states of interest is <code>Expression List</code>
@@ -96,7 +93,8 @@ public class AliasedTypeStateHandler extends TopLevelStateHandler
         return retVal;
     }
 
-    /**
+    
+/**
      * Initialize the state handler.  This is a one time initialization.
      */
     public void initialize()
@@ -119,7 +117,8 @@ public class AliasedTypeStateHandler extends TopLevelStateHandler
 
 
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.statehandlers.IAliasedTypedStateHandler#processToken(org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ITokenDescriptor, java.lang.String)
      */
     public void processToken(ITokenDescriptor pToken, String language)
@@ -151,7 +150,8 @@ public class AliasedTypeStateHandler extends TopLevelStateHandler
         }
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.statehandlers.IAliasedTypedStateHandler#stateComplete(java.lang.String)
      */
     public void stateComplete(String stateName)
@@ -167,7 +167,8 @@ public class AliasedTypeStateHandler extends TopLevelStateHandler
         }
     }
 
-    /**
+    
+/**
      * Add the class name information to the XMI structure.
      *
      * @param pToken [in] The token that specifies the class name.
@@ -187,7 +188,8 @@ public class AliasedTypeStateHandler extends TopLevelStateHandler
         createTokenDescriptor("Name", line, col, pos, value, length);
     }
 
-    /**
+    
+/**
      * Add the Type Decoration information to the XMI structure.
      *
      * @param pToken [in] The token that specifies the class name.
@@ -208,7 +210,8 @@ public class AliasedTypeStateHandler extends TopLevelStateHandler
         createTokenDescriptor("Decoration", line, col, pos, value, length);
     }
 
-    /**
+    
+/**
      * Sends the IClassEvent to all listeners.
      */
     protected void sendEvent()

@@ -47,14 +47,12 @@ package org.netbeans.modules.uml.core.support;
 
 import javax.swing.JOptionPane;
 
-/**
- * A set of debug utilities.
- *
- * @author Trey Spiva
- */
+
+
 public class Debug extends DebugSupport
 {
-   /**
+   
+/**
     * Asserts that a condition is true. If the assertion fails the error
     * will be reported in a dialog box.
     *
@@ -66,7 +64,8 @@ public class Debug extends DebugSupport
       return assertTrue(condition, "Not Equal To True Error");
    }
 
-   /**
+   
+/**
     * Asserts that a condition is true. If the assertion fails the error
     * will be reported in a dialog box.
     * 
@@ -91,7 +90,8 @@ public class Debug extends DebugSupport
       return retVal;
    }
 
-   /**
+   
+/**
     * Asserts that a condition is false. If the assertion fails the error
     * will be reported in a dialog box.
     * 
@@ -103,7 +103,8 @@ public class Debug extends DebugSupport
       return assertFalse(condition, "Not Equal To False Error");
    }
 
-   /**
+   
+/**
     * Asserts that a condition is false. If the assertion fails the error
     * will be reported in a dialog box.
     * 
@@ -128,7 +129,8 @@ public class Debug extends DebugSupport
       return retVal;
    }
 
-   /**
+   
+/**
     * Asserts that an object isn't null. If the assertion fails the error
     * will be reported in a dialog box.
     * 
@@ -140,7 +142,8 @@ public class Debug extends DebugSupport
       return assertNotNull(object, "Not Equal To Null Error");
    }
 
-   /**
+   
+/**
     * Asserts that an object isn't null. If the assertion fails the error
     * will be reported in a dialog box.
     * 
@@ -165,7 +168,8 @@ public class Debug extends DebugSupport
       return retVal;
    }
 
-   /**
+   
+/**
     * Asserts that an object is null. If the assertion fails the error
     * will be reported in a dialog box.
     * 
@@ -177,7 +181,8 @@ public class Debug extends DebugSupport
       return assertNull(object, "Equal To Null Error");
    }
 
-   /**
+   
+/**
     * Asserts that an object is null. If the assertion fails the error
     * will be reported in a dialog box.
     * 
@@ -202,7 +207,8 @@ public class Debug extends DebugSupport
       return retVal;
    }
 
-   /** 
+   
+/** 
     * Reports an exception to the user.  The error is sent to stderr as well
     * as reported to a dialog box.
     * 

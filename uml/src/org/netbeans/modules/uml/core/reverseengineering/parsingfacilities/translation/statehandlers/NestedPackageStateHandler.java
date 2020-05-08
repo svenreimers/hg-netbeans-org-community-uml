@@ -43,20 +43,16 @@
  */
 
 
-/*
- * File       : NestedPackageStateHandler.java
- * Created on : Dec 12, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.statehandlers;
 
 import org.dom4j.Node;
 
 import org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.Identifier;
 
-/**
- * @author Aztec
- */
+
+
 public class NestedPackageStateHandler extends PackageStateHandler
 {
     private Identifier m_ParentName = new Identifier();

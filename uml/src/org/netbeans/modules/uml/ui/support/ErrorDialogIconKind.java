@@ -43,16 +43,15 @@
  */
 
 
+
 /*
  * Created on Oct 30, 2003
  *
  */
 package org.netbeans.modules.uml.ui.support;
 
-/**
- * @author aztec
- *
- */
+
+
 public interface ErrorDialogIconKind
 {
 	public static final int EDIK_ICONINFORMATION = 0;

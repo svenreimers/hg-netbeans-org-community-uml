@@ -50,6 +50,7 @@ import org.netbeans.modules.uml.parser.java.jdk5.generics.AutoBoxingTest;
 
 import junit.textui.TestRunner;
 
+
 /**
  * 
  */

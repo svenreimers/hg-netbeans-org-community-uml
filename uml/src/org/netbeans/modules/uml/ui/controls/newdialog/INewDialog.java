@@ -51,37 +51,44 @@ import org.netbeans.modules.uml.ui.support.commondialogs.ISilentDialog;
 
 public interface INewDialog extends ISilentDialog
 {
-	/**
+	
+/**
 	 * Display the dialog.
 	*/
 	public INewDialogTabDetails display( Frame parent );
 
-	/**
+	
+/**
 	 * Display the dialog with a validate processor.
 	*/
 	public INewDialogTabDetails display2( INewDialogValidateProcessor pValidateProcessor, Frame parent );
 
-	/**
+	
+/**
 	 * The default tab for the dialog
 	*/
 	public long putDefaultTab( /* NewDialogTabKind */ int nDefaultTab );
 
-	/**
+	
+/**
 	 * Allows you to specify the tabs in the dialog.  If unset the all tabs are shown, otherwise just those specified through AddTab are shown
 	*/
 	public long addTab( /* NewDialogTabKind */ int nTabKind );
 
-	/**
+	
+/**
 	 * Has this tab been added.
 	*/
 	public boolean isTab( /* NewDialogTabKind */ int nTabKind );
 
-	/**
+	
+/**
 	 * Provides defaults to one of the tabs
 	*/
 	public long specifyDefaults( INewDialogTabDetails pDetails );
 
-	/**
+	
+/**
 	 * Returns the result of the dialog.  NULL if the user hit cancel.
 	*/
 	public INewDialogTabDetails getResult();

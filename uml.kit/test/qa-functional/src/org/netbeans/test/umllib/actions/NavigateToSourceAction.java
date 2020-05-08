@@ -43,6 +43,7 @@
  */
 
 
+
 /*
  * NavigateToSourceAction.java
  *
@@ -57,10 +58,8 @@ package org.netbeans.test.umllib.actions;
 import org.netbeans.jellytools.actions.ActionNoBlock;
 import static org.netbeans.test.umllib.util.PopupConstants.* ;
 
-/**
- *
- * @author VijayaBabu Mummaneni
- */
+
+
 public class NavigateToSourceAction extends ActionNoBlock {
 
     private static final String addPopup = NAVIGATE_TO_SOURCE ;                                        

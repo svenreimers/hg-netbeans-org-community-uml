@@ -42,6 +42,7 @@
  * made subject to such option by the copyright holder.
  */
 
+
 /*
  * ParserFactory.java
  *
@@ -54,10 +55,8 @@
 
 package org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework;
 
-/**
- *
- * @author Administrator
- */
+
+
 public interface IParserFactory
 {
    public ILanguageParser createParser();

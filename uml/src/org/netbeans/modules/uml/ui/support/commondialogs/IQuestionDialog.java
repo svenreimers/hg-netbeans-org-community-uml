@@ -43,21 +43,16 @@
  */
 
 
-/*
- *
- * Created on Jul 1, 2003
- * @author Trey Spiva
- */
+
+
 package org.netbeans.modules.uml.ui.support.commondialogs;
 
 import java.awt.Window;
 
 import org.netbeans.modules.uml.ui.support.QuestionResponse;
 
-/**
- *
- * @author Trey Spiva
- */
+
+
 public interface IQuestionDialog extends ISilentDialog
 {
 	public static int IDOK = 1;
@@ -69,7 +64,8 @@ public interface IQuestionDialog extends ISilentDialog
 	public static int IDNO = 7;
 	public static int IDALWAYS = 8;
 	public static int IDNEVER = 9;
-   /**
+   
+/**
     * Displays a question dialog that also has a checkbox.  The checkbox can be
     * use to prompt the user whether the dialog should be shown again.
     * 
@@ -108,7 +104,8 @@ public interface IQuestionDialog extends ISilentDialog
            Window parent,
            String title);
    
-	/**
+	
+/**
 	 * The default button (ie IDOK).  See the return values for AfxMessageBox
 	*/
 	public void setDefaultButton( int value );

@@ -97,10 +97,8 @@ import org.netbeans.modules.uml.drawingarea.view.Customizable;
 import org.netbeans.modules.uml.drawingarea.view.ResourceValue;
 import org.netbeans.modules.uml.drawingarea.view.UMLWidget;
 
-/**
- *
- * @author sp153251
- */
+
+
 public class LifelineWidget extends UMLNodeWidget implements PropertyChangeListener {
 
     private boolean selected=false;
@@ -243,7 +241,8 @@ public class LifelineWidget extends UMLNodeWidget implements PropertyChangeListe
     }
     
     
-    /**
+    
+/**
      * Called to whether a particular location in local coordination system is controlled (otionally also painted) by the widget.
      * @param localLocation the local location
      * @return true, if the location belong to the widget
@@ -375,7 +374,8 @@ public class LifelineWidget extends UMLNodeWidget implements PropertyChangeListe
     {
         return boxWidget;
     }
-    /**
+    
+/**
      *  
      *
      * @return return true if lifeline is target of create message

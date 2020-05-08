@@ -55,10 +55,8 @@ import org.openide.NotifyDescriptor;
 import org.openide.awt.Mnemonics;
 import org.openide.util.NbBundle;
 
-/**
- *
- * @author Craig Conover, craig.conover@sun.com
- */
+
+
 public class SaveNotifierOkCancel 
 {
     private static  SaveNotifierOkCancel instance = null;
@@ -71,7 +69,8 @@ public class SaveNotifierOkCancel
         return instance;
     }
     
-    /**
+    
+/**
      * Creates a new instance of SaveNotifier
      */
     private SaveNotifierOkCancel() 

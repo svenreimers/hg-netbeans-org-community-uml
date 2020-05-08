@@ -49,10 +49,8 @@ import javax.swing.JComponent;
 import org.netbeans.modules.uml.propertysupport.options.api.UMLOptionsPanel;
 import org.openide.util.NbBundle;
 
-/**
- *
- * @author krichard
- */
+
+
 public class JavaPlatformOptions implements UMLOptionsPanel {
     
     private JavaPlatformOptionsPanel form = null ;

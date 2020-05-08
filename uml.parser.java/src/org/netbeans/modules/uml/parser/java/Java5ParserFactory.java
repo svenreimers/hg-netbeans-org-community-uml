@@ -42,6 +42,7 @@
  * made subject to such option by the copyright holder.
  */
 
+
 /*
  * Java5ParserFactory.java
  *
@@ -57,10 +58,8 @@ package org.netbeans.modules.uml.parser.java;
 import org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.IParserFactory;
 import org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ILanguageParser;
 
-/**
- *
- * @author Administrator
- */
+
+
 public class Java5ParserFactory implements IParserFactory{
    
    /** Creates a new instance of Java5ParserFactory */

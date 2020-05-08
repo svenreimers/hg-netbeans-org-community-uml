@@ -56,9 +56,8 @@ import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier;
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IInterface;
 
-/**
- * @author aztec
- */
+
+
 public class ExpansionVarLocatorTestCase extends AbstractUMLTestCase {
 	private ExpansionVarLocator var = null;
 
@@ -84,13 +83,8 @@ public class ExpansionVarLocatorTestCase extends AbstractUMLTestCase {
 		var = new ExpansionVarLocator(man, conLoc, readFile(conLoc), attr);
 	}
 
-	/**
-	 * Reads the File and forms as String Data.
-	 * 
-	 * @param String
-	 *            FileName to be read
-	 * @return String
-	 */
+	
+
 	public static String readFile(String fileName) {
 		String str = "";
 		try {

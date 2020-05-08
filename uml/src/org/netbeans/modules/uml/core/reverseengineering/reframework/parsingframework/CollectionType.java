@@ -44,10 +44,8 @@
 
 package org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework;
 
-/**
- *
- * @author treyspiva
- */
+
+
 public class CollectionType
 {
     private String name = "";
@@ -60,7 +58,8 @@ public class CollectionType
     {
     }
     
-    /** Creates a new instance of CollectionTypes 
+    
+/** Creates a new instance of CollectionTypes 
      * @param name The name of the type
      * @param packName  The package of the type
      * @param user is the type a user defined type
@@ -76,7 +75,8 @@ public class CollectionType
     }
     
     
-    /**
+    
+/**
      * Set the default type property.  The default collection type is the 
      * default type to use when generating code for an attribute with 0..* 
      * multiplicity
@@ -88,7 +88,8 @@ public class CollectionType
         this.defaultType = defaultType;
     }
     
-    /**
+    
+/**
      * Retrieves if the default type property.  The default collection type is the 
      * default type to use when generating code for an attribute with 0..* 
      * multiplicity
@@ -100,7 +101,8 @@ public class CollectionType
         return defaultType;
     }
     
-    /**
+    
+/**
      * Sets if the collection type is a user defined type or a type defined by 
      * the language.
      * 
@@ -111,7 +113,8 @@ public class CollectionType
         this.userDefined = userDefined;
     }
     
-    /**
+    
+/**
      * Retrieves if the collection type is a user defined type or a type defined by 
      * the language.
      * 
@@ -122,7 +125,8 @@ public class CollectionType
         return userDefined;
     }
     
-    /**
+    
+/**
      * Sets the package that owns the collection type.
      * 
      * @param packageName the owning package name.
@@ -132,7 +136,8 @@ public class CollectionType
         this.packageName = packageName;
     }
     
-    /**
+    
+/**
      * Retrieves the package that owns the collection type.
      * 
      * @return the owning package name.
@@ -142,7 +147,8 @@ public class CollectionType
         return packageName;
     }
     
-    /**
+    
+/**
      * Sets the name of the collection type.
      * 
      * @param name the type name
@@ -152,7 +158,8 @@ public class CollectionType
         this.name = name;
     }
     
-    /**
+    
+/**
      * Retrieves the name of the collection type.
      * 
      * @return the name of the collection type.
@@ -167,7 +174,8 @@ public class CollectionType
         return getPackageName().replace(".", "::") + "::" + getName();
     }
     
-    /**
+    
+/**
      * Test if two types are the same.  If a String is passed in it tries to 
      * determine if the package and name equals the string value.
      * 
@@ -242,7 +250,8 @@ public class CollectionType
         return false;
     }
     
-    /**
+    
+/**
      * Calculates a hashcode
      * 
      * @return the hashcode value.

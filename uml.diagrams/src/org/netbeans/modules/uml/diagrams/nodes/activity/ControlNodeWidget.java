@@ -52,10 +52,8 @@ import org.netbeans.modules.uml.drawingarea.palette.context.DefaultContextPalett
 import org.netbeans.modules.uml.drawingarea.view.UMLLabelWidget;
 import org.openide.util.NbBundle;
 
-/**
- *
- * @author thuy
- */
+
+
 public abstract class ControlNodeWidget extends UMLLabelNodeWidget
 {
     protected static int DEFAULT_OUTER_RADIUS = 10;

@@ -61,11 +61,8 @@ import org.netbeans.modules.uml.ui.support.helpers.IGUIBlocker.GBK;
 import org.netbeans.modules.uml.ui.swing.commondialogs.DefaultCommonDialogResource;
 import org.netbeans.modules.uml.ui.swing.commondialogs.SwingQuestionDialogImpl;
 
-/**
- * @author sumitabhk
- *
- *
- */
+
+
 public class SwingPreferenceQuestionDialog extends SwingPreferenceControlledDialog
     implements IPreferenceQuestionDialog
 {
@@ -117,7 +114,8 @@ public class SwingPreferenceQuestionDialog extends SwingPreferenceControlledDial
     }
     
     
-    /**
+    
+/**
      * Displays a question dialog.  The result is provided in the out parameter.
      *
      * @param hInstance [in] Handle to the instance that contains the resource strings
@@ -175,7 +173,8 @@ public class SwingPreferenceQuestionDialog extends SwingPreferenceControlledDial
     }
     
     
-    /**
+    
+/**
      * Displays a question dialog.  The result is provided in the out parameter.
      *
      * @param sPreferenceKey [in] The main hive for the preferences
@@ -268,7 +267,8 @@ public class SwingPreferenceQuestionDialog extends SwingPreferenceControlledDial
     }
     
     
-    /**
+    
+/**
      * Initializes and displays the dialog.  The dialog will be configured based on the nDialogType
      * parameter.  The users response to the dialog will be returned.
      *
@@ -392,7 +392,8 @@ public class SwingPreferenceQuestionDialog extends SwingPreferenceControlledDial
     }
     
     
-    /**
+    
+/**
      * The default button (ie IDOK).  See the return values for AfxMessageBox
      */
     public void setDefaultButton(int value)
@@ -400,7 +401,8 @@ public class SwingPreferenceQuestionDialog extends SwingPreferenceControlledDial
         m_lDefaultButton = value;
     }
     
-    /**
+    
+/**
      * Display the dialog box asks the standard delete question with an also question/preference
      */
     public ETTripleT<Integer, Boolean, Boolean> displayDeleteWithAlso(
@@ -453,7 +455,8 @@ public class SwingPreferenceQuestionDialog extends SwingPreferenceControlledDial
         
         return result;
     }
-    /**
+    
+/**
      * Initialize the checkbox.  When the dialog type is SQDK_YESNOALWAYS or SQDK_YESNONEVER
      * the check box will be hidden.
      *
@@ -499,7 +502,8 @@ public class SwingPreferenceQuestionDialog extends SwingPreferenceControlledDial
     }
     
     
-    /**
+    
+/**
      * Retrieves the questions answer and preference value for Always and Never dialogs.
      * When the user selects <I>Always</I> nResult will be set to SQDRK_RESULT_YES and
      * the preference will be m_sAffirmative.  When the user selects <I>Never</> nResult
@@ -543,7 +547,8 @@ public class SwingPreferenceQuestionDialog extends SwingPreferenceControlledDial
     }
     
     
-    /**
+    
+/**
      * Retrieves the questions answer and preference value for Always and Never dialogs.
      * When the user selects <I>Yes</I> and checks the checkbox nResult will be set to
      * SQDRK_RESULT_YES or SQDRK_RESULT_OK and the preference will be m_sAffirmative.

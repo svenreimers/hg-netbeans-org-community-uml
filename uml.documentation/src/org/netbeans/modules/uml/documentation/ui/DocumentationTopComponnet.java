@@ -61,23 +61,21 @@ import org.openide.util.HelpCtx;
 import org.openide.util.Utilities;
 import org.openide.util.WeakListeners;
 
-/**
- *  TopComponent for the Describe 6.0 documentation (JavaDoc) editor.
- *
- * @author  Darshan
- * @version 1.0
- */
+
+
 public class DocumentationTopComponnet extends TopComponent implements PropertyChangeListener
 {
     private PropertyChangeListener listener = null;;
-    /**
+    
+/**
      *  Serialization ID used by NetBeans. Note that this is faked, not
      * generated.
      */
     static final long serialVersionUID = 17754071377356384L;
     private static DocumentationTopComponnet mTopComponent = null;
     
-    /**
+    
+/**
      *  The Describe documentation editor ActiveX control wrapper class.
      */
     private static DocumentationPane pane;
@@ -85,7 +83,8 @@ public class DocumentationTopComponnet extends TopComponent implements PropertyC
     private final String default_title =
             NbBundle.getMessage(DocumentationTopComponnet.class, "Pane.Documentation.Title");
     
-    /**
+    
+/**
      *  Creates a documentation editor top component; the document editor
      * control is instantiated on addNotify() and destroyed on removeNotify().
      */
@@ -250,7 +249,8 @@ public class DocumentationTopComponnet extends TopComponent implements PropertyC
     
     
     
-    /**
+    
+/**
      * Listen for activated nodes property change events.
      */
     public void propertyChange(PropertyChangeEvent evt)

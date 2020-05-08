@@ -42,17 +42,13 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : IterationVariable.java
- * Created on : Oct 30, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.generativeframework;
 
 
-/**
- * @author Aztec
- */
+
+
 public interface IIterationVariable extends ICompoundVariable
 {
     public IExpansionVariable getVar();

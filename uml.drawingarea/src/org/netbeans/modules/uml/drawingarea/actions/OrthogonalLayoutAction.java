@@ -52,10 +52,8 @@ import org.netbeans.api.visual.graph.layout.GraphLayoutFactory;
 import org.netbeans.modules.uml.resources.images.ImageUtil;
 import org.openide.util.NbBundle;
 
-/**
- *
- * @author Kris Richards
- */
+
+
 public class OrthogonalLayoutAction extends AbstractAction
 {
 

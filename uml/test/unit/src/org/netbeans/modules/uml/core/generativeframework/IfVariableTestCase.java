@@ -54,6 +54,7 @@ import org.netbeans.modules.uml.core.AbstractUMLTestCase;
 import org.netbeans.modules.uml.core.ModuleUnitTestSuiteBuilder;
 import org.netbeans.modules.uml.core.support.umlsupport.XMLManip;
 
+
 /**
  * Test cases for IfVariable.
  * 
@@ -65,7 +66,8 @@ public class IfVariableTestCase extends AbstractUMLTestCase {
 
 	private IfVariable var;
 
-	/*
+	
+/*
 	 * (non-Javadoc)
 	 * 
 	 * @see junit.framework.TestCase#setUp()

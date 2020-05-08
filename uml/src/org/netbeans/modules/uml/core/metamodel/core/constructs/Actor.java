@@ -80,7 +80,8 @@ public class Actor extends Classifier implements IActor
       return elem;
    }
 
-   /**
+   
+/**
     * @param pConnector
     */
    public void addEnd(IConnectorEnd pConnector)
@@ -88,7 +89,8 @@ public class Actor extends Classifier implements IActor
       getPart().addEnd(pConnector);
    }
 
-   /**
+   
+/**
     * @param pClassifier
     */
    public void addRoleContext(IStructuredClassifier pClassifier)
@@ -96,7 +98,8 @@ public class Actor extends Classifier implements IActor
       getPart().addRoleContext(pClassifier);
    }
 
-   /**
+   
+/**
     * @param destination
     */
    public IFeature duplicateToClassifier(IClassifier destination)
@@ -104,7 +107,8 @@ public class Actor extends Classifier implements IActor
       return getPart().duplicateToClassifier(destination);
    }
 
-   /**
+   
+/**
     * @return
     */
    public int getClientChangeability()
@@ -112,7 +116,8 @@ public class Actor extends Classifier implements IActor
       return getPart().getClientChangeability();
    }
 
-   /**
+   
+/**
     * @return
     */
    public IStructuralFeature getDefiningFeature()
@@ -120,7 +125,8 @@ public class Actor extends Classifier implements IActor
       return getPart().getDefiningFeature();
    }
 
-   /**
+   
+/**
     * 
     */
    public ETList < IConnectorEnd > getEnds()
@@ -128,7 +134,8 @@ public class Actor extends Classifier implements IActor
       return getPart().getEnds();
    }
 
-   /**
+   
+/**
     * @return
     */
    public IClassifier getFeaturingClassifier()
@@ -136,7 +143,8 @@ public class Actor extends Classifier implements IActor
        return part.getFeaturingClassifier();
    }
 
-   /**
+   
+/**
     * @return
     */
    public int getInitialCardinality()
@@ -144,7 +152,8 @@ public class Actor extends Classifier implements IActor
       return getPart().getInitialCardinality();
    }
 
-   /**
+   
+/**
     * @return
     */
    public boolean getIsSet()
@@ -152,7 +161,8 @@ public class Actor extends Classifier implements IActor
       return getPart().getIsSet();
    }
 
-   /**
+   
+/**
     * @return
     */
    public boolean getIsStatic()
@@ -160,7 +170,8 @@ public class Actor extends Classifier implements IActor
       return getPart().getIsStatic();
    }
 
-   /**
+   
+/**
     * @return
     */
    public boolean getIsVolatile()
@@ -168,7 +179,8 @@ public class Actor extends Classifier implements IActor
       return getPart().getIsVolatile();
    }
 
-   /**
+   
+/**
     * @return
     */
    public boolean getIsWhole()
@@ -176,7 +188,8 @@ public class Actor extends Classifier implements IActor
       return getPart().getIsWhole();
    }
 
-   /**
+   
+/**
     * @return
     */
    public IMultiplicity getMultiplicity()
@@ -184,7 +197,8 @@ public class Actor extends Classifier implements IActor
       return getPart().getMultiplicity();
    }
 
-   /**
+   
+/**
     * @return
     */
    public int getOrdering()
@@ -192,7 +206,8 @@ public class Actor extends Classifier implements IActor
       return getPart().getOrdering();
    }
 
-   /**
+   
+/**
     * @return
     */
    public int getPartKind()
@@ -200,7 +215,8 @@ public class Actor extends Classifier implements IActor
       return getPart().getPartKind();
    }
 
-   /**
+   
+/**
     * 
     */
    public ETList < IStructuredClassifier > getRoleContexts()
@@ -208,7 +224,8 @@ public class Actor extends Classifier implements IActor
       return getPart().getRoleContexts();
    }
 
-   /**
+   
+/**
     * @return
     */
    public IClassifier getType()
@@ -216,7 +233,8 @@ public class Actor extends Classifier implements IActor
       return getPart().getType();
    }
 
-   /**
+   
+/**
     * @return
     */
    public String getTypeID()
@@ -224,7 +242,8 @@ public class Actor extends Classifier implements IActor
       return getPart().getTypeID();
    }
 
-   /**
+   
+/**
     * @return
     */
    public String getTypeName()
@@ -232,7 +251,8 @@ public class Actor extends Classifier implements IActor
       return getPart().getTypeName();
    }
 
-   /**
+   
+/**
     * @param destination
     */
    public void moveToClassifier(IClassifier destination)
@@ -240,7 +260,8 @@ public class Actor extends Classifier implements IActor
       getPart().moveToClassifier(destination);
    }
 
-   /**
+   
+/**
     * @param pConnector
     */
    public void removeEnd(IConnectorEnd pConnector)
@@ -248,7 +269,8 @@ public class Actor extends Classifier implements IActor
       getPart().removeEnd(pConnector);
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.metamodel.core.foundation.Element#removeReferencingReference(org.netbeans.modules.uml.core.metamodel.core.foundation.IReference)
     */
    public void removeReferencingReference(IReference ref)
@@ -256,7 +278,8 @@ public class Actor extends Classifier implements IActor
       getPart().removeReferencingReference(ref);
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.metamodel.core.foundation.Element#removeReferredReference(org.netbeans.modules.uml.core.metamodel.core.foundation.IReference)
     */
    public void removeReferredReference(IReference ref)
@@ -264,7 +287,8 @@ public class Actor extends Classifier implements IActor
       getPart().removeReferredReference(ref);
    }
 
-   /**
+   
+/**
     * @param pClassifier
     */
    public void removeRoleContext(IStructuredClassifier pClassifier)
@@ -272,7 +296,8 @@ public class Actor extends Classifier implements IActor
       getPart().removeRoleContext(pClassifier);
    }
 
-   /**
+   
+/**
     * @param value
     */
    public void setClientChangeability(int value)
@@ -280,7 +305,8 @@ public class Actor extends Classifier implements IActor
       getPart().setClientChangeability(value);
    }
 
-   /**
+   
+/**
     * @param value
     */
    public void setDefiningFeature(IStructuralFeature value)
@@ -288,7 +314,8 @@ public class Actor extends Classifier implements IActor
       getPart().setDefiningFeature(value);
    }
 
-   /**
+   
+/**
     * @param value
     */
    public void setFeaturingClassifier(IClassifier value)
@@ -296,7 +323,8 @@ public class Actor extends Classifier implements IActor
       getPart().setFeaturingClassifier(value);
    }
 
-   /**
+   
+/**
     * @param value
     */
    public void setInitialCardinality(int value)
@@ -304,7 +332,8 @@ public class Actor extends Classifier implements IActor
       getPart().setInitialCardinality(value);
    }
 
-   /**
+   
+/**
     * @param value
     */
    public void setIsSet(boolean value)
@@ -312,7 +341,8 @@ public class Actor extends Classifier implements IActor
       getPart().setIsSet(value);
    }
 
-   /**
+   
+/**
     * @param value
     */
    public void setIsStatic(boolean value)
@@ -320,7 +350,8 @@ public class Actor extends Classifier implements IActor
       getPart().setIsStatic(value);
    }
 
-   /**
+   
+/**
     * @param value
     */
    public void setIsVolatile(boolean value)
@@ -328,7 +359,8 @@ public class Actor extends Classifier implements IActor
       getPart().setIsVolatile(value);
    }
 
-   /**
+   
+/**
     * @param value
     */
    public void setIsWhole(boolean value)
@@ -336,7 +368,8 @@ public class Actor extends Classifier implements IActor
       getPart().setIsWhole(value);
    }
 
-   /**
+   
+/**
     * @param value
     */
    public void setMultiplicity(IMultiplicity value)
@@ -344,7 +377,8 @@ public class Actor extends Classifier implements IActor
       getPart().setMultiplicity(value);
    }
 
-   /**
+   
+/**
     * @param value
     */
    public void setOrdering(int value)
@@ -352,7 +386,8 @@ public class Actor extends Classifier implements IActor
       getPart().setOrdering(value);
    }
 
-   /**
+   
+/**
     * @param value
     */
    public void setPartKind(int value)
@@ -360,7 +395,8 @@ public class Actor extends Classifier implements IActor
       getPart().setPartKind(value);
    }
 
-   /**
+   
+/**
     * @param value
     */
    public void setType(IClassifier value)
@@ -368,7 +404,8 @@ public class Actor extends Classifier implements IActor
       getPart().setType(value);
    }
 
-   /**
+   
+/**
     * @param value
     */
    public void setType2(String value)
@@ -376,7 +413,8 @@ public class Actor extends Classifier implements IActor
       getPart().setType2(value);
    }
 
-   /**
+   
+/**
     * @param value
     */
    public void setTypeName(String value)
@@ -396,7 +434,8 @@ public class Actor extends Classifier implements IActor
       return m_part;
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
 	* @see org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityListener#onPreLowerModified(org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityRange, java.lang.String)
 	*/
    public boolean onPreLowerModified(IMultiplicity mult, IMultiplicityRange range, String proposedValue) 
@@ -404,7 +443,8 @@ public class Actor extends Classifier implements IActor
 	   return getPart().onPreLowerModified(mult, range, proposedValue);
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
 	* @see org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityListener#onLowerModified(org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityRange)
 	*/
    public void onLowerModified(IMultiplicity mult, IMultiplicityRange range) 
@@ -412,7 +452,8 @@ public class Actor extends Classifier implements IActor
 	   getPart().onLowerModified(mult, range);
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
 	* @see org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityListener#onPreUpperModified(org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityRange, java.lang.String)
 	*/
    public boolean onPreUpperModified(IMultiplicity mult, IMultiplicityRange range, String proposedValue) 
@@ -420,7 +461,8 @@ public class Actor extends Classifier implements IActor
 	   return getPart().onPreUpperModified(mult, range, proposedValue);	
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
 	* @see org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityListener#onUpperModified(org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityRange)
 	*/
    public void onUpperModified(IMultiplicity mult, IMultiplicityRange range) 
@@ -428,7 +470,8 @@ public class Actor extends Classifier implements IActor
 	   getPart().onUpperModified(mult, range);
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
 	* @see org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityListener#onPreRangeAdded(org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityRange)
 	*/
    public boolean onPreRangeAdded(IMultiplicity mult, IMultiplicityRange range) 
@@ -436,7 +479,8 @@ public class Actor extends Classifier implements IActor
 	   return getPart().onPreRangeAdded(mult, range);
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
 	* @see org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityListener#onRangeAdded(org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityRange)
 	*/
    public void onRangeAdded(IMultiplicity mult, IMultiplicityRange range) 
@@ -444,7 +488,8 @@ public class Actor extends Classifier implements IActor
 	   getPart().onRangeAdded(mult, range);
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
 	* @see org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityListener#onPreRangeRemoved(org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityRange)
 	*/
    public boolean onPreRangeRemoved(IMultiplicity mult, IMultiplicityRange range) 
@@ -452,7 +497,8 @@ public class Actor extends Classifier implements IActor
 	   return getPart().onPreRangeRemoved(mult, range);
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
 	* @see org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityListener#onRangeRemoved(org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityRange)
 	*/
    public void onRangeRemoved(IMultiplicity mult, IMultiplicityRange range) 
@@ -460,7 +506,8 @@ public class Actor extends Classifier implements IActor
 	   getPart().onRangeRemoved(mult, range);
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
 	* @see org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityListener#onPreOrderModified(org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity, boolean)
 	*/
    public boolean onPreOrderModified(IMultiplicity mult, boolean proposedValue)
@@ -468,7 +515,8 @@ public class Actor extends Classifier implements IActor
 	   return getPart().onPreOrderModified(mult, proposedValue);
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
 	* @see org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityListener#onOrderModified(org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity)
 	*/
    public void onOrderModified(IMultiplicity mult) 

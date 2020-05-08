@@ -44,11 +44,8 @@
 
 package org.netbeans.modules.uml.util;
 
-/**
- *
- *
- * @author  Todd Fast, todd.fast@sun.com
- */
+
+
 public class NameUtil
 {
 	/**
@@ -262,7 +259,8 @@ public class NameUtil
 		return javaConstant.toString();
 	}
 	
-    /** Test whether a given string is comprised of only ascii chars.
+    
+/** Test whether a given string is comprised of only ascii chars.
     * @param id string which should be checked
     * @return <code>true</code> if all chars are ascii
      * Also returns true if String is zero length

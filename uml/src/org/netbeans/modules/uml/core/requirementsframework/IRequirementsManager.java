@@ -42,6 +42,7 @@
  * made subject to such option by the copyright holder.
  */
 
+
 /*
  * IRequirementsManager.java
  *
@@ -50,10 +51,8 @@
 
 package org.netbeans.modules.uml.core.requirementsframework;
 
-/**
- *
- * @author  Trey Spiva
- */
+
+
 public interface IRequirementsManager
 {
    /** RequirementSource to the .etd file. */
@@ -72,7 +71,8 @@ public interface IRequirementsManager
    /** Retrieves the requiremets providers */
    public IRequirementsProvider[] getAddIns();
    
-   /**
+   
+/**
 	 * The requirements manager knows about the requirements addins.
 	 * This routine retrieves a particular addin based on the prog id passed in.
 	 * 

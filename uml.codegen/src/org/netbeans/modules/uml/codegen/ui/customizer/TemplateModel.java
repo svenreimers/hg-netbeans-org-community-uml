@@ -58,10 +58,8 @@ import org.netbeans.modules.uml.codegen.dataaccess.xmlbeans.Family;
 import org.netbeans.modules.uml.codegen.dataaccess.xmlbeans.TemplateFamiliesHandler;
 import org.netbeans.modules.uml.project.ui.customizer.UMLProjectProperties;
 
-/**
- *
- * @author treyspiva
- */
+
+
 
 public class TemplateModel extends TabbedPanelModel
 {

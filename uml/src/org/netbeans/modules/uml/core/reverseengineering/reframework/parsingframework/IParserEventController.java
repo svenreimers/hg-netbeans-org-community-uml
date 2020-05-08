@@ -42,18 +42,14 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : IParseEventController.java
- * Created on : Oct 27, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework;
 
 import antlr.collections.AST;
 
-/**
- * @author Aztec
- */
+
+
 public interface IParserEventController
 {
     //  Methods used to set an retrieve the listeners that will recieve the events.

@@ -43,6 +43,7 @@
  */
 
 
+
 /*
  * Created on Jun 11, 2003
  *
@@ -52,11 +53,8 @@ package org.netbeans.modules.uml.ui.support.drawingproperties;
 
 import java.awt.Font;
 
-/**
- * @author sumitabhk
- *
- *
- */
+
+
 public interface IFontProperty extends IDrawingProperty
 {
 	public void initialize( IDrawingPropertyProvider pDrawingPropertyProvider,

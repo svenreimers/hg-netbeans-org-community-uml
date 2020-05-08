@@ -51,10 +51,8 @@ import org.openide.util.Lookup;
 import org.openide.windows.TopComponent;
 import org.openide.windows.WindowManager;
 
-/**
- *
- * @author Jyothi
- */
+
+
 public class CreateProvider  implements SelectProvider {
     
     PaletteController paletteController;

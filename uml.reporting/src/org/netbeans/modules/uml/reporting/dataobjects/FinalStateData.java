@@ -44,10 +44,8 @@
 
 
 package org.netbeans.modules.uml.reporting.dataobjects;
-/**
- *
- * @author Sheryl
- */
+
+
 public class FinalStateData extends StateData
 {
     

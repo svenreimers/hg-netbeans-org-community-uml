@@ -53,7 +53,8 @@ import org.netbeans.modules.uml.core.support.umlsupport.XMLManip;
  */
 public class DependencyEvent extends ParserData implements IDependencyEvent
 {
-    /**
+    
+/**
      * Retrieves the supplier of the dependency.  The supplier will be
      * specified using the UML fully scoped name of the supplier model element.
      * @param pVal [out] The name of the supplier.
@@ -63,7 +64,8 @@ public class DependencyEvent extends ParserData implements IDependencyEvent
         return XMLManip.getAttributeValue(getEventData(), "supplier");
     }
 
-    /**
+    
+/**
      * Retrieves the client of the dependency.  The client will be specified 
      * using the UML fully scoped name of the supplier model element.
      * @param pVal [out] The name of the client.
@@ -73,7 +75,8 @@ public class DependencyEvent extends ParserData implements IDependencyEvent
         return XMLManip.getAttributeValue(getEventData(), "client");
     }
 
-    /**
+    
+/**
      * Determines if the dependency is a package dependency or a class dependency.
      * 
      * @param pVal [out] True if the dependency is a class dependency.
@@ -102,7 +105,8 @@ public class DependencyEvent extends ParserData implements IDependencyEvent
         return false;
     }
     
-    /**
+    
+/**
      * Retrieves the package name that is the reciever of the dependency.  If the dependency is 
      * a class dependency then the package name is the package that contains the class.
      * 
@@ -130,7 +134,8 @@ public class DependencyEvent extends ParserData implements IDependencyEvent
         return ret;
     }
 
-    /**
+    
+/**
      * Retrieves the name of the class that is the reciever of the dependency.  The class name 
      * property is only valid when the dependeny is a class dependency.
      * 
@@ -153,7 +158,8 @@ public class DependencyEvent extends ParserData implements IDependencyEvent
         return ret;
     }
 
-    /**
+    
+/**
      * Test if the specified class name is the same as the supplier of the dependency.  
      * This method is only valid if the dependency is a class dependency.
      * 

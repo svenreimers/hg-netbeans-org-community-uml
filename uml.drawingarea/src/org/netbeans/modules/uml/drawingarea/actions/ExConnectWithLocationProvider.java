@@ -50,14 +50,12 @@ import org.netbeans.api.visual.widget.ConnectionWidget;
 import org.netbeans.api.visual.widget.Scene;
 import org.netbeans.api.visual.widget.Widget;
 
-/**
- * The extended connect provider adds the ability to create connection between specified points of widgets
- * 
- * @author psb
- */
+
+
 public interface ExConnectWithLocationProvider extends ExConnectProvider
 {
-    /**
+    
+/**
      * check if conection is possible between specified points of widgets
      * @param sourceWidget
      * @param targetWidget
@@ -67,7 +65,8 @@ public interface ExConnectWithLocationProvider extends ExConnectProvider
      */
     public ConnectorState isTargetWidget(Widget sourceWidget, Widget targetWidget,Point sourcePoint,Point targetPoint);
     
-    /**
+    
+/**
      * handle if it possible to start link from point on source widget
      * @param sourceWidget
      * @param sourcePoint
@@ -75,14 +74,16 @@ public interface ExConnectWithLocationProvider extends ExConnectProvider
      */
     public boolean isSourceWidget(Widget sourceWidget,Point sourcePoint);
     
-    /**
+    
+/**
      * 
      * @param scene
      * @param sourcePoint
      * @return
      */
     public Widget createTargetWidget(Scene scene,Point sourcePoint);
-    /**
+    
+/**
      * Create connection between specified points of source and target widgets
      * @param sourceWidget
      * @param targetWidget

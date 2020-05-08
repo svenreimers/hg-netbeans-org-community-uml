@@ -44,11 +44,8 @@
 
 package org.netbeans.modules.uml.integration.netbeans;
 
-/**
- * Company:
- * @author swadebeshp
- * @version 1.0
- */
+
+
 
 import org.netbeans.modules.uml.core.metamodel.core.foundation.IElement;
 import org.netbeans.modules.uml.core.metamodel.dynamics.ILifeline;

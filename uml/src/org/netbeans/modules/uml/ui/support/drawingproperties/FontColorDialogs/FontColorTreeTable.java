@@ -69,18 +69,16 @@ import org.netbeans.modules.uml.ui.swing.treetable.JTreeTable;
 import org.netbeans.modules.uml.ui.swing.treetable.PropertyValueCellRenderer;
 import org.netbeans.modules.uml.ui.swing.treetable.TreeTableModel;
 
-/**
- * @author sumitabhk
- *
- * 
- */
+
+
 public class FontColorTreeTable extends JTreeTable
 {
 	private TreePath m_Selected = null;
 	private CommonResourceManager m_Manager = CommonResourceManager.instance();
 	private BasicColorsAndFontsDialog m_Parent = null;
 	
-	/**
+	
+/**
 	 * 
 	 */
 	public FontColorTreeTable(TreeTableModel model)

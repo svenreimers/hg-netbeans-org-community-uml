@@ -140,7 +140,8 @@ public class FormatterHelper
 	return m_cpLanguage;
    }
    
-   /**
+   
+/**
 	* Retrieves a model elements associated language.  If the model element
 	* is associated to more than one language then the first language is the 
 	* active language.
@@ -173,9 +174,8 @@ public class FormatterHelper
 	return m_cpDefaultLanguage;
    }
 
-   /**
-	* Attempt to get the formatted description using XSLT
-	*/
+   
+
    public String getElementsXSLTFile()
    {
 	    String bsType = getElementType();
@@ -204,7 +204,8 @@ public class FormatterHelper
 		return bsKey;
    }
 
-   /** 
+   
+/** 
 	* Transforms (using XSLT)  @a element using @a proc as the XSLProcessor
 	* 
 	* @param element[in] The element to format
@@ -228,12 +229,12 @@ public class FormatterHelper
                        StringWriter sw = new StringWriter();
                        StreamResult result = new StreamResult(sw);
                        
-                       //Jyothi: Deleting an element from a diagram causes DOM errors
+                       
                        //and javax.xml.transform.TransformerException: javax.xml.transform.TransformerException: org.w3c.dom.DOMException: Not supported yet
                        if (node.getDocument() == null) {
                            return format;
                        }
-                       //Jyothi : end
+                       
                        XSLTHelper.pushActiveDocument(node.getDocument());
                        proc.transform(source, result);
                        if (result != null) {
@@ -253,14 +254,15 @@ public class FormatterHelper
            if(marker != null) {
                marker.clear();
            }
-           if (node.getDocument() != null) { //Jyothi: wrote this condition for the same issue as above
+           if (node.getDocument() != null) { 
                XSLTHelper.popActiveDocument();
            }
        }
        return format;
    }
 
-   /**
+   
+/**
 	* Retrieves the node that defines the property definiton for the
 	* specified element.
 	*
@@ -298,7 +300,8 @@ public class FormatterHelper
 		return pVal;
    }
 
-   /**
+   
+/**
 	* Retrieves the node that defines the property definiton for the
 	* specified element.
 	*
@@ -346,7 +349,8 @@ public class FormatterHelper
 		}
 		return m_bsType;
    }
-   /**
+   
+/**
 	* Retrieves the definition name, built by appending the
 	* element type name with the context name
 	* 
@@ -368,7 +372,7 @@ public class FormatterHelper
    /// wether to use the input element, or the project to get the language
    protected boolean useElementLanguage()
    {
-       //kris richards - "DisplayFormatString" pref expunged. Set to "PSK_ELEMENT"
+       
        return true ;
    }
 
@@ -454,14 +458,16 @@ public class FormatterHelper
 		return pLang;
    }
 
-   /**
+   
+/**
     * Simple class that manages the setting and removing of a temporary
     * xml attribute that is used to determine whether or not
     * an element should use the aliasing feature or not
     */
 
    public class AliasMarker {
-       /**
+       
+/**
         *
         * If the Aliasing mode is currently on, this method marks the passed-in node
         * with the "embt__Aliased" xml attribute, setting it's value to "on". This
@@ -487,7 +493,7 @@ public class FormatterHelper
                }
                if( m_Project != null ) {
                    
-                   //kris richards - changing to NbPrefs
+                   
                    boolean bIsAliased = NbPreferences.forModule(FormatterHelper.class).getBoolean("UML_Show_Aliases", false) ;
                    
                    if( bIsAliased ) {
@@ -497,7 +503,8 @@ public class FormatterHelper
            }
        }
        
-       /**
+       
+/**
         *
         * Removes the "embt__Aliased" xml attribute set in the constructor
         * of this object

@@ -15,10 +15,8 @@ import org.netbeans.jemmy.drivers.input.MouseRobotDriver;
 import org.netbeans.jemmy.operators.ComponentOperator;
 import org.netbeans.jemmy.operators.Operator;
 
-/**
- *
- * @author  Sherry
- */
+
+
 public class DNDDriver {
     
     MouseRobotDriver mDriver;
@@ -39,7 +37,8 @@ public class DNDDriver {
         try{Thread.sleep(2000);}catch(Exception ex){}
         mDriver.pressMouse(source, from.x, from.y, button, modifiers);
         beforeDragSleep.sleep();
-        /*
+        
+/*
         mDriver.moveMouse(source, from.x, from.y);
         mDriver.moveMouse(source, from.x + 1, from.y + 1);
          */

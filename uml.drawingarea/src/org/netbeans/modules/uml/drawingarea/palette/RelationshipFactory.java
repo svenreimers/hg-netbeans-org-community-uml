@@ -46,15 +46,14 @@ package org.netbeans.modules.uml.drawingarea.palette;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.IElement;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.IPresentationElement;
 
-/**
- *
- * @author treyspiva
- */
+
+
 public interface RelationshipFactory
 {
     IElement create(IElement source, IElement target);
     
-    /**
+    
+/**
      * Reconnects a new source to the relationship.  Since some relationships 
      * are not true relationships, but instead represent properties on one of 
      * the nodes, the old source and the target are also passed into the method.
@@ -74,7 +73,8 @@ public interface RelationshipFactory
                                 IElement source,
                                 IElement target);
     
-    /**
+    
+/**
      * Reconnects a new target to the relationship.  Since some relationships 
      * are not true relationships, but instead represent properties on one of 
      * the nodes, the old target and the source are also passed into the method.
@@ -94,14 +94,16 @@ public interface RelationshipFactory
                                 IElement target,
                                 IElement source);
     
-    /**
+    
+/**
      * The name of the relationship.
      * 
      * @return the name.
      */
     public String getElementType();
     
-    /**
+    
+/**
      * Deletes a relationship.  If the fromModel parameter is true then the 
      * model element will be deleted as well as the model elements presentation
      * information.  If the fromModel is false, only the presentation 

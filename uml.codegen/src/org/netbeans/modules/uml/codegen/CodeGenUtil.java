@@ -51,10 +51,8 @@ import org.netbeans.modules.uml.codegen.dataaccess.xmlbeans.TemplateFamilies;
 import org.netbeans.modules.uml.codegen.dataaccess.xmlbeans.TemplateFamiliesHandler;
 import org.netbeans.modules.uml.util.StringTokenizer2;
 
-/**
- *
- * @author Craig Conover, craig.conover@sun.com
- */
+
+
 public class CodeGenUtil 
 {
     private CodeGenUtil() {}

@@ -48,10 +48,8 @@ package org.netbeans.modules.uml.ui.swing.pulldownbutton;
 
 import javax.swing.Action;
 
-/**
- *
- * @author Trey Spiva
- */
+
+
 public interface IPulldownAction extends Action
 {
    public IPulldownButtonInvoker getInvoker();

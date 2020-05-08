@@ -48,42 +48,50 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 public interface IMessageDataFilter
 {
-	/**
+	
+/**
 	 * method Initialize
 	*/
 	public void initialize( String fileLocation, IMessageService pMessenger );
 
-	/**
+	
+/**
 	 * Get the filters that are active
 	*/
 	public ETList<IMessageFacilityFilter> getFilters();
 
-	/**
+	
+/**
 	 * Should this message be processed?
 	*/
 	public boolean getIsDisplayed( IMessageData pMessageData );
 
-	/**
+	
+/**
 	 * Should this message be processed?
 	*/
 	public void setIsDisplayed( IMessageData pMessageData, boolean value );
 
-	/**
+	
+/**
 	 * Should this message be processed?
 	*/
 	public boolean getIsDisplayed( /* MESSAGE_TYPE */ int nMessageType, String sFacility );
 
-	/**
+	
+/**
 	 * Should this message be processed?
 	*/
 	public void setIsDisplayed( /* MESSAGE_TYPE */ int nMessageType, String sFacility, boolean value );
 
-	/**
+	
+/**
 	 * Save the filter settings
 	*/
 	public void save();
 
-	/**
+	
+/**
 	 * ReRead the filter settings from disk
 	*/
 	public void reRead();

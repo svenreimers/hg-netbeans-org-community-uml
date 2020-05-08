@@ -42,6 +42,7 @@
  * made subject to such option by the copyright holder.
  */
 
+
 /*
  * ReqProviderDialog.java
  *
@@ -57,10 +58,8 @@ import org.openide.DialogDescriptor;
 import org.openide.DialogDisplayer;
 import org.openide.util.NbBundle;
 
-/**
- *
- * @author  Trey Spiva
- */
+
+
 public class ReqProviderDialog implements IReqProviderDialog
 {
 

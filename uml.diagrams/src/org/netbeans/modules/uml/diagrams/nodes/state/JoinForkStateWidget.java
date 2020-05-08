@@ -44,10 +44,8 @@ package org.netbeans.modules.uml.diagrams.nodes.state;
 import org.netbeans.api.visual.widget.Scene;
 import org.netbeans.modules.uml.diagrams.nodes.activity.ActivityJoinForkWidget;
 
-/**
- *
- * @author Sheryl Su
- */
+
+
 public class JoinForkStateWidget extends ActivityJoinForkWidget
 {
     public JoinForkStateWidget(Scene scene, String path)

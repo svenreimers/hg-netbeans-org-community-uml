@@ -10,10 +10,8 @@
 
 package bankpack;
 
-/**
- *
- * @author Administrator
- */
+
+
 public class Saving extends BankAccount{
     
     /** Creates a new instance of Saving */

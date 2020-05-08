@@ -42,16 +42,12 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : IInterfaceChangeFacility.java
- * Created on : Nov 20, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.roundtripframework;
 
-/**
- * @author Aztec
- */
+
+
 public interface IInterfaceChangeFacility extends IClassChangeFacility
 {
 

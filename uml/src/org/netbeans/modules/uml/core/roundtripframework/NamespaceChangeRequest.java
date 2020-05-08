@@ -42,18 +42,14 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : NamespaceChangeRequest.java
- * Created on : Nov 24, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.roundtripframework;
 
 import org.netbeans.modules.uml.core.metamodel.core.foundation.INamespace;
 
-/**
- * @author Aztec
- */
+
+
 public class NamespaceChangeRequest
     extends ChangeRequest
     implements INamespaceChangeRequest
@@ -67,7 +63,8 @@ public class NamespaceChangeRequest
     private String m_NewSourceDir;
 
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.INamespaceChangeRequest#getModifiedNamespace()
      */
     public INamespace getModifiedNamespace()
@@ -75,7 +72,8 @@ public class NamespaceChangeRequest
         return m_ModifiedNamespace;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.INamespaceChangeRequest#getNewModifiedNamespaceQualifiedName()
      */
     public String getNewModifiedNamespaceQualifiedName()
@@ -83,7 +81,8 @@ public class NamespaceChangeRequest
         return m_NewModifiedNamespaceQualifiedName;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.INamespaceChangeRequest#getNewNamespaceName()
      */
     public String getNewNamespaceName()
@@ -91,7 +90,8 @@ public class NamespaceChangeRequest
         return m_NewNamespaceName;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.INamespaceChangeRequest#getNewSourceDir()
      */
     public String getNewSourceDir()
@@ -99,7 +99,8 @@ public class NamespaceChangeRequest
         return m_NewSourceDir;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.INamespaceChangeRequest#getOldModifiedNamespaceQualifiedName()
      */
     public String getOldModifiedNamespaceQualifiedName()
@@ -107,7 +108,8 @@ public class NamespaceChangeRequest
         return m_OldModifiedNamespaceQualifiedName;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.INamespaceChangeRequest#getOldNamespaceName()
      */
     public String getOldNamespaceName()
@@ -115,7 +117,8 @@ public class NamespaceChangeRequest
         return m_OldNamespaceName;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.INamespaceChangeRequest#getOldSourceDir()
      */
     public String getOldSourceDir()
@@ -123,7 +126,8 @@ public class NamespaceChangeRequest
         return m_OldSourceDir;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.INamespaceChangeRequest#setModifiedNamespace(org.netbeans.modules.uml.core.metamodel.core.foundation.INamespace)
      */
     public void setModifiedNamespace(INamespace newVal)
@@ -131,7 +135,8 @@ public class NamespaceChangeRequest
         m_ModifiedNamespace = newVal;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.INamespaceChangeRequest#setNewModifiedNamespaceQualifiedName(java.lang.String)
      */
     public void setNewModifiedNamespaceQualifiedName(String newVal)
@@ -139,7 +144,8 @@ public class NamespaceChangeRequest
         m_NewModifiedNamespaceQualifiedName = newVal;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.INamespaceChangeRequest#setNewNamespaceName(java.lang.String)
      */
     public void setNewNamespaceName(String newVal)
@@ -147,7 +153,8 @@ public class NamespaceChangeRequest
         m_NewNamespaceName = newVal;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.INamespaceChangeRequest#setNewSourceDir(java.lang.String)
      */
     public void setNewSourceDir(String newVal)
@@ -155,7 +162,8 @@ public class NamespaceChangeRequest
         m_NewSourceDir = newVal;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.INamespaceChangeRequest#setOldModifiedNamespaceQualifiedName(java.lang.String)
      */
     public void setOldModifiedNamespaceQualifiedName(String newVal)
@@ -163,7 +171,8 @@ public class NamespaceChangeRequest
         m_OldModifiedNamespaceQualifiedName = newVal;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.INamespaceChangeRequest#setOldNamespaceName(java.lang.String)
      */
     public void setOldNamespaceName(String newVal)
@@ -171,7 +180,8 @@ public class NamespaceChangeRequest
         m_OldNamespaceName = newVal;        
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.INamespaceChangeRequest#setOldSourceDir(java.lang.String)
      */
     public void setOldSourceDir(String newVal)

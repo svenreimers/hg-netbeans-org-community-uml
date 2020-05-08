@@ -49,37 +49,44 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 public interface IHandlerAction extends IPrimitiveAction
 {
-	/**
+	
+/**
 	 * property Body
 	*/
 	public IAction getBody();
 
-	/**
+	
+/**
 	 * property Body
 	*/
 	public void setBody( IAction value );
 
-	/**
+	
+/**
 	 * property JumpValue
 	*/
 	public IOutputPin getJumpValue();
 
-	/**
+	
+/**
 	 * property JumpValue
 	*/
 	public void setJumpValue( IOutputPin value );
 
-	/**
+	
+/**
 	 * method AddHandler
 	*/
 	public void addHandler( IJumpHandler pHandler );
 
-	/**
+	
+/**
 	 * method RemoveHandler
 	*/
 	public void removeHandler( IJumpHandler pHandler );
 
-	/**
+	
+/**
 	 * property Handlers
 	*/
 	public ETList <IJumpHandler> getHandlers();

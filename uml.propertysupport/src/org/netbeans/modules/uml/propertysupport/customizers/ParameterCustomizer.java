@@ -67,10 +67,8 @@ import org.netbeans.modules.uml.propertysupport.DefinitionPropertyBuilder;
 import org.netbeans.modules.uml.propertysupport.DefinitionPropertyBuilder.ValidValues;
 import org.netbeans.modules.uml.propertysupport.nodes.CustomPropertyEditor;
 import org.openide.explorer.propertysheet.editors.EnhancedCustomPropertyEditor;
-/**
- *
- * @author thuy
- */
+
+
 public class ParameterCustomizer extends JPanel 
         implements Customizer, EnhancedCustomPropertyEditor {
     
@@ -224,7 +222,8 @@ public class ParameterCustomizer extends JPanel
 ////////////////////////////////////////////////////////////////////////////
 // EnhancedCustomPropertyEditor Implementation
     
-    /**
+    
+/**
      * Get the customized property value.  This implementation will
      * return an array of property elements.  Basically when this method
      * gets called the user has pressed the OK button.

@@ -42,11 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : Transition.java
- * Created on : Sep 19, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.metamodel.common.commonstatemachines;
 
 import org.dom4j.Document;
@@ -64,13 +61,13 @@ import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
-/**
- * @author Aztec
- */
+
+
 public class Transition extends NamedElement implements ITransition
 {
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonstatemachines.ITransition#addReferredOperation(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation)
      */
     public void addReferredOperation(IOperation pOper)
@@ -91,7 +88,8 @@ public class Transition extends NamedElement implements ITransition
         
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonstatemachines.ITransition#createPostCondition(java.lang.String)
      */
     public IConstraint createPostCondition(String condition)
@@ -99,7 +97,8 @@ public class Transition extends NamedElement implements ITransition
         return createCondition(condition);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonstatemachines.ITransition#createPreCondition(java.lang.String)
      */
     public IConstraint createPreCondition(String condition)
@@ -107,7 +106,8 @@ public class Transition extends NamedElement implements ITransition
         return createCondition(condition);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonstatemachines.ITransition#getContainer()
      */
     public IRegion getContainer()
@@ -115,7 +115,8 @@ public class Transition extends NamedElement implements ITransition
 		return OwnerRetriever.getOwnerByType(this, IRegion.class);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonstatemachines.ITransition#getEffect()
      */
     public IProcedure getEffect()
@@ -125,7 +126,8 @@ public class Transition extends NamedElement implements ITransition
 
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonstatemachines.ITransition#getGuard()
      */
     public IConstraint getGuard()
@@ -134,7 +136,8 @@ public class Transition extends NamedElement implements ITransition
             .retrieveSingleElement(this, "UML:Element.ownedElement/UML:Constraint", IConstraint.class);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonstatemachines.ITransition#getIsInternal()
      */
     public boolean getIsInternal()
@@ -142,7 +145,8 @@ public class Transition extends NamedElement implements ITransition
         return getBooleanAttributeValue("isInternal", false);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonstatemachines.ITransition#getPostCondition()
      */
     public IConstraint getPostCondition()
@@ -162,7 +166,8 @@ public class Transition extends NamedElement implements ITransition
         return constraint;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonstatemachines.ITransition#getPreCondition()
      */
     public IConstraint getPreCondition()
@@ -182,7 +187,8 @@ public class Transition extends NamedElement implements ITransition
         return constraint;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonstatemachines.ITransition#getReferredOperations()
      */
     public ETList<IOperation> getReferredOperations()
@@ -191,7 +197,8 @@ public class Transition extends NamedElement implements ITransition
             .retrieveElementCollectionWithAttrIDs(this, "referred", IOperation.class);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonstatemachines.ITransition#getSource()
      */
     public IStateVertex getSource()
@@ -201,7 +208,8 @@ public class Transition extends NamedElement implements ITransition
 
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonstatemachines.ITransition#getTarget()
      */
     public IStateVertex getTarget()
@@ -210,7 +218,8 @@ public class Transition extends NamedElement implements ITransition
             .retrieveSingleElementWithAttrID(this, "target", IStateVertex.class);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonstatemachines.ITransition#getTrigger()
      */
     public IEvent getTrigger()
@@ -219,7 +228,8 @@ public class Transition extends NamedElement implements ITransition
             .retrieveSingleElementWithAttrID(this, "trigger", IEvent.class);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonstatemachines.ITransition#removeReferredOperation(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation)
      */
     public void removeReferredOperation(IOperation pOper)
@@ -227,7 +237,8 @@ public class Transition extends NamedElement implements ITransition
         removeElementByID(pOper, "referred");
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonstatemachines.ITransition#setContainer(org.netbeans.modules.uml.core.metamodel.common.commonstatemachines.IRegion)
      */
     public void setContainer(IRegion value)
@@ -235,7 +246,8 @@ public class Transition extends NamedElement implements ITransition
         setOwner(value);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonstatemachines.ITransition#setEffect(org.netbeans.modules.uml.core.metamodel.basic.basicactions.IProcedure)
      */
     public void setEffect(IProcedure value)
@@ -243,7 +255,8 @@ public class Transition extends NamedElement implements ITransition
         addElement(value);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonstatemachines.ITransition#setGuard(org.netbeans.modules.uml.core.metamodel.core.foundation.IConstraint)
      */
     public void setGuard(IConstraint value)
@@ -251,7 +264,8 @@ public class Transition extends NamedElement implements ITransition
         addElement(value);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonstatemachines.ITransition#setIsInternal(boolean)
      */
     public void setIsInternal(boolean value)
@@ -259,7 +273,8 @@ public class Transition extends NamedElement implements ITransition
         setBooleanAttributeValue("isInternal", value);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonstatemachines.ITransition#setPostCondition(org.netbeans.modules.uml.core.metamodel.core.foundation.IConstraint)
      */
     public void setPostCondition(IConstraint value)
@@ -269,7 +284,8 @@ public class Transition extends NamedElement implements ITransition
                     , value);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonstatemachines.ITransition#setPreCondition(org.netbeans.modules.uml.core.metamodel.core.foundation.IConstraint)
      */
     public void setPreCondition(IConstraint value)
@@ -279,7 +295,8 @@ public class Transition extends NamedElement implements ITransition
                     , value);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonstatemachines.ITransition#setSource(org.netbeans.modules.uml.core.metamodel.common.commonstatemachines.IStateVertex)
      */
     public void setSource(IStateVertex value)
@@ -308,7 +325,8 @@ public class Transition extends NamedElement implements ITransition
 
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonstatemachines.ITransition#setTarget(org.netbeans.modules.uml.core.metamodel.common.commonstatemachines.IStateVertex)
      */
     public void setTarget(IStateVertex value)
@@ -337,7 +355,8 @@ public class Transition extends NamedElement implements ITransition
 
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonstatemachines.ITransition#setTrigger(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IEvent)
      */
     public void setTrigger(IEvent value)

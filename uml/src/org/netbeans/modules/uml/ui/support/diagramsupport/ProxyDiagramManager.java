@@ -43,11 +43,8 @@
  */
 
 
-/*
- *
- * Created on Jun 11, 2003
- * @author Trey Spiva
- */
+
+
 package org.netbeans.modules.uml.ui.support.diagramsupport;
 
 import java.io.File;
@@ -93,10 +90,8 @@ import org.openide.filesystems.FileObject;
 import org.openide.filesystems.FileUtil;
 import org.openide.util.Exceptions;
 
-/**
- *
- * @author Trey Spiva
- */
+
+
 public class ProxyDiagramManager implements IProxyDiagramManager,
         IDiagramCleanupManager,
         ICustomValidator
@@ -117,7 +112,8 @@ public class ProxyDiagramManager implements IProxyDiagramManager,
     }
     
     
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.diagramsupport.IProxyDiagramManager#verifyUniqueDiagramName(java.lang.String, java.lang.String)
     */
     public String verifyUniqueDiagramName(String sProjectBaseDirectory, String sProposedDiagramName)
@@ -126,7 +122,8 @@ public class ProxyDiagramManager implements IProxyDiagramManager,
         return null;
     }
     
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     */
     public String verifyUniqueDiagramName(IElement pElementInProject, String sProposedDiagramName)
     {
@@ -134,7 +131,8 @@ public class ProxyDiagramManager implements IProxyDiagramManager,
         return null;
     }
     
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.diagramsupport.IProxyDiagramManager#removeDiagram(java.lang.String)
     */
     public void removeDiagram(String sDiagramFullFilename)
@@ -230,7 +228,8 @@ public class ProxyDiagramManager implements IProxyDiagramManager,
         return retVal;
     }
     
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.diagramsupport.IProxyDiagramManager#getDiagramsInDirectory(java.lang.String)
     */
     public ETList<IProxyDiagram> getDiagramsInDirectory(String sProjectBaseDirectory)
@@ -248,7 +247,8 @@ public class ProxyDiagramManager implements IProxyDiagramManager,
         return retVal;
     }
     
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     */
     public ETList<IProxyDiagram> getDiagramsInDirectory(IElement pElementInProject)
     {
@@ -271,7 +271,8 @@ public class ProxyDiagramManager implements IProxyDiagramManager,
         return retVal;
     }
     
-    /**
+    
+/**
      * Returns a diagram proxy for this diagram filename.  The diagram proxy may represent a closed diagram.
      *
      * @param diagramFilename The full filename for the etld file.
@@ -308,7 +309,8 @@ public class ProxyDiagramManager implements IProxyDiagramManager,
         return retVal;
     }
     
-    /**
+    
+/**
      * Returns a diagram proxy for a diagram with this xmiid.  The diagram proxy may represent a closed diagram.
      *
      * @param sXMIID [in] The XMIID of the diagram
@@ -343,7 +345,8 @@ public class ProxyDiagramManager implements IProxyDiagramManager,
         return pProxyDiagram;
     }
     
-    /**
+    
+/**
      * Returns a diagram proxy for a diagram with this xmiid.  The diagram proxy may represent a closed diagram.
      *
      * @param sXMIID [in] The XMIID of the diagram
@@ -371,7 +374,8 @@ public class ProxyDiagramManager implements IProxyDiagramManager,
         return retVal;
     }
     
-    /**
+    
+/**
      * Returns a diagram proxy for this IDiagram.
      *
      * @param pDiagram [in] The IDiagram we need a proxy for
@@ -389,7 +393,8 @@ public class ProxyDiagramManager implements IProxyDiagramManager,
         return retVal;
     }
     
-    /**
+    
+/**
      * Returns a diagram proxy for this name.  The diagram proxy may represent a closed diagram.
      *
      * @param sName [in] The diagram name we're looking for
@@ -416,7 +421,8 @@ public class ProxyDiagramManager implements IProxyDiagramManager,
         return retVal;
     }
     
-    /**
+    
+/**
      * Returns a diagram proxy for this name and namespace.  The diagram proxy may represent a closed diagram.
      *
      * @param sName [in] The diagram name we're looking for
@@ -455,7 +461,8 @@ public class ProxyDiagramManager implements IProxyDiagramManager,
         return retVal;
     }
     
-    /**
+    
+/**
      * Returns all the diagram proxies.  If namespace null then all the diagrams in the
      * workspace are returned.  The diagram proxy may represent a closed diagram.
      *
@@ -472,7 +479,8 @@ public class ProxyDiagramManager implements IProxyDiagramManager,
         return retVal;
     }
     
-    /**
+    
+/**
      * Returns the diagrams in the namespace or under the namespace
      *
      * @param sToplevelXMIID The toplevel xmiid of the namespace element
@@ -485,7 +493,8 @@ public class ProxyDiagramManager implements IProxyDiagramManager,
         return getDiagramsInNamespace(sToplevelXMIID, sXMIID, false);
     }
     
-    /**
+    
+/**
      * Gets the IProject for pElementInProject, then the base directory and
      * calls VerifyUniqueDiagramName
      *
@@ -518,7 +527,8 @@ public class ProxyDiagramManager implements IProxyDiagramManager,
         return retVal;
     }
     
-    /**
+    
+/**
      * Returns all the diagram proxies under the namespace.  The diagram proxy may represent a closed diagram.
      *
      * @param sXMIID [in] The xmiid of the namespace element
@@ -530,7 +540,8 @@ public class ProxyDiagramManager implements IProxyDiagramManager,
         return getDiagramsInNamespace(sToplevelXMIID, sXMIID, true);
     }
     
-    /**
+    
+/**
      * Returns all the diagram proxies under the target namespace.  The diagram proxy may represent a closed diagram.
      * @param sToplevelXMIID the xmiid of the top level element 
      * @param targetElem [in] the target namespace element
@@ -554,7 +565,8 @@ public class ProxyDiagramManager implements IProxyDiagramManager,
         return retDiagrams;
     }
     
-    /** 
+    
+/** 
      * Recursively finds all the diagrams proxies under the target namespace
      * @param targetElem  The target namespace
      * @param diagramsToSearch  A list of all diagram proxies under the project namespace
@@ -585,7 +597,8 @@ public class ProxyDiagramManager implements IProxyDiagramManager,
         
     }
     
-    /**
+    
+/**
      * Returns the diagrams in the namespace
      *
      * @param diagramsToSearch a list of open in diagrams in project
@@ -618,7 +631,8 @@ public class ProxyDiagramManager implements IProxyDiagramManager,
         return diagramsInNamespace;
     }
     
-    /**
+    
+/**
      * Returns the diagrams in the namespace or under the namespace
      *
      * @param sToplevelXMIID The toplevel xmiid of the namespace element
@@ -701,7 +715,8 @@ public class ProxyDiagramManager implements IProxyDiagramManager,
         return retVal;
     }
     
-    /**
+    
+/**
      * Returns all the diagram proxies for diagrams in this project.  The diagram proxy may represent a closed diagram.
      *
      * @param sProjectName [in] The name of the project to retrieve the diagrams for
@@ -723,7 +738,8 @@ public class ProxyDiagramManager implements IProxyDiagramManager,
         return retVal;
     }
     
-    /**
+    
+/**
      * Returns a list of all the diagrams in the project.
      *
      * @param sProjectXMIID The xmiid of the project
@@ -747,7 +763,8 @@ public class ProxyDiagramManager implements IProxyDiagramManager,
         return retVal;
     }
     
-    /**
+    
+/**
      * Converts a vector of diagrams locations into a IProxyDiagram Array
      *
      * @param rDiagrams [in] A vector of all the diagram locations (.etld files)
@@ -766,7 +783,8 @@ public class ProxyDiagramManager implements IProxyDiagramManager,
         return retVal;
     }
     
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.diagramsupport.IProxyDiagramManager#getDiagramDetails(java.lang.String)
     */
     public DiagramDetails getDiagramDetails(String bDiagramFilename)
@@ -808,7 +826,8 @@ public class ProxyDiagramManager implements IProxyDiagramManager,
         return retVal;
     }
     
-    /**
+    
+/**
      * Verifies we have a valid diagram by making sure a .etld and .etlp file exist.
      *
      * @param path The path to the filename.
@@ -823,7 +842,8 @@ public class ProxyDiagramManager implements IProxyDiagramManager,
         return isValidDiagram(path, filename);
     }
     
-    /**
+    
+/**
      * Verifies we have a valid diagram by making sure a .diagram file exists.
      *
      * @param path The path to the filename.
@@ -850,7 +870,8 @@ public class ProxyDiagramManager implements IProxyDiagramManager,
         return retVal;
     }
 
-    /**
+    
+/**
      * Verifies we have a valid TS diagram by making sure a .etld and .etlp file exists.
      *
      * @param path The path to the filename.
@@ -878,7 +899,8 @@ public class ProxyDiagramManager implements IProxyDiagramManager,
     }
 
     
-    /**
+    
+/**
      * Looks into the .diagram file for presentation elements that represent the queried model element.
      *
      * @param pModelElement [in] The model element to look for in closed diagrams as a presentation element
@@ -924,7 +946,8 @@ public class ProxyDiagramManager implements IProxyDiagramManager,
         return retObj;
     }
     
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     */
     public void markPresentationTargetsAsDeleted(ETList<IVersionableElement> pElements)
     {
@@ -932,7 +955,8 @@ public class ProxyDiagramManager implements IProxyDiagramManager,
         
     }
     
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     */
     public void broadcastToAllOpenDiagrams(IBroadcastAction pAction)
     {
@@ -970,7 +994,8 @@ public class ProxyDiagramManager implements IProxyDiagramManager,
         }
     }
     
-    /**
+    
+/**
      * Notifies the diagram to refresh the node graphical object that 
      * is associated with the presentation element.
      * 
@@ -1015,7 +1040,8 @@ public class ProxyDiagramManager implements IProxyDiagramManager,
         }
     }
     
-    /**
+    
+/**
      * Returns VARIANT_TRUE if any of the open diagrams for this project are dirty.  If sProjectName is
      * empty then all diagrams are looked at.
      *
@@ -1078,7 +1104,8 @@ public class ProxyDiagramManager implements IProxyDiagramManager,
         return anyDirty;
     }
     
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.diagramsupport.IProxyDiagramManager#cleanWorkspaceOfDeadDiagrams(boolean)
     */
     public int cleanWorkspaceOfDeadDiagrams(boolean bRemoveDeadOnes)
@@ -1087,7 +1114,8 @@ public class ProxyDiagramManager implements IProxyDiagramManager,
         return 0;
     }
     
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.diagramsupport.IProxyDiagramManager#cleanDiagramBackupFolder(java.lang.String)
     */
     public void cleanDiagramBackupFolder(String sProjectName)
@@ -1096,7 +1124,8 @@ public class ProxyDiagramManager implements IProxyDiagramManager,
         
     }
     
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.diagramsupport.IProxyDiagramManager#getAssociatedDiagramsForElement(java.lang.String)
     */
     public ETList<IProxyDiagram> getAssociatedDiagramsForElement(String sElementXMIID)
@@ -1122,7 +1151,8 @@ public class ProxyDiagramManager implements IProxyDiagramManager,
         return foundProxyDiagrams;
     }
     
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     */
     public ETList<IProxyDiagram> getAssociatedDiagramsForElement(IElement element)
     {
@@ -1134,7 +1164,8 @@ public class ProxyDiagramManager implements IProxyDiagramManager,
         return retVal;
     }
     
-    /**
+    
+/**
      * Returns a list of diagrams this diagram is associated with.
      *
      * @param sDiagramXMIID [in] The diagram xmiid to find associated diagrams for
@@ -1162,7 +1193,8 @@ public class ProxyDiagramManager implements IProxyDiagramManager,
         return retVal;
     }
     
-    /**
+    
+/**
      * Returns a list of diagrams this diagram is associated with.
      *
      * @param pProxyDiagram [in] The diagram to find associated diagrams for
@@ -1186,7 +1218,8 @@ public class ProxyDiagramManager implements IProxyDiagramManager,
     // Helper Methods
     //**************************************************
     
-    /**
+    
+/**
      * Returns a list of all the diagrams in the project.
      *
      * @param sProjectXMIID The xmiid of the project
@@ -1273,7 +1306,8 @@ public class ProxyDiagramManager implements IProxyDiagramManager,
         return retVal;
     }
     
-    /**
+    
+/**
      * Returns a list of all the diagrams in the directory
      *
      * @param path The base directory for the project.  This is where diagrams live.
@@ -1323,7 +1357,8 @@ public class ProxyDiagramManager implements IProxyDiagramManager,
         }
     }
     
-    /**
+    
+/**
      * Returns a list of all the diagrams in the directory
      *
      * @param path The base directory for the project. This is where diagrams live.
@@ -1379,7 +1414,8 @@ public class ProxyDiagramManager implements IProxyDiagramManager,
         return diagrams;
     }
     
-    /**
+    
+/**
      * Used to move diagrams on this namespace when it gets moved from one project to another
      *
      * @param pVerFromProject [in] The project we're pulling pVerElementBeingMoved out of
@@ -1519,7 +1555,8 @@ public class ProxyDiagramManager implements IProxyDiagramManager,
         }
     }
     
-    /**
+    
+/**
      * Used to cleanup diagrams on this namespace.
      *
      * @param pVerElementBeingDeleted [in] The element being deleted
@@ -1529,7 +1566,8 @@ public class ProxyDiagramManager implements IProxyDiagramManager,
         cleanupDiagrams(pVerElementBeingDeleted, false);
     }
     
-    /**
+    
+/**
      *
      * Deletes all diagrams immediately owned by pElementBeingDeleted as
      * well as diagrams owned by any nested elements as well.
@@ -1544,7 +1582,8 @@ public class ProxyDiagramManager implements IProxyDiagramManager,
         cleanupDiagrams(pElementBeingDeleted, true);
     }
     
-    /**
+    
+/**
      * Called by the cleanup manager to clean diagrams in and under a namespace
      *
      * @param pVerElementBeingDeleted [in] The element being deleted
@@ -1635,7 +1674,8 @@ public class ProxyDiagramManager implements IProxyDiagramManager,
         }
     }
     
-    /**
+    
+/**
      * Validate the passed in values according to the Describe business rules.
      * See method for the rules.
      *
@@ -1664,7 +1704,8 @@ public class ProxyDiagramManager implements IProxyDiagramManager,
         return isValid;
     }
     
-    /**
+    
+/**
      * This verifies that the diagram name is correct and returns the corrected one if not.
      *
      * @param sSuggestedDiagramName [in] The proposed,new diagram name
@@ -1717,7 +1758,8 @@ public class ProxyDiagramManager implements IProxyDiagramManager,
         }
     }
     
-    /**
+    
+/**
      * Creates a diagram filename for use when creating a new diagram (stub or not).
      */
     public String createDiagramFilename( INamespace diagramNamespace, String sDiagramName )
@@ -1793,6 +1835,7 @@ public class ProxyDiagramManager implements IProxyDiagramManager,
         }
         
         return StringUtilities.createFullPath( strPath, proposedFilename , FileExtensions.DIAGRAM_LAYOUT_EXT );
+
 /* TODO
       if ( _tcslen(path_buffer) > MAX_PATH)
       {
@@ -1815,7 +1858,8 @@ public class ProxyDiagramManager implements IProxyDiagramManager,
  */
     }
     
-    /**
+    
+/**
      * Returns all the diagram proxies in the namespace.  If bDeepSearch is true, all diagrams found through all the namespace's children will also be found.
      */
     public ETList<IProxyDiagram> getDiagramsInNamespace( INamespace pSpace, boolean bDeepSearch )

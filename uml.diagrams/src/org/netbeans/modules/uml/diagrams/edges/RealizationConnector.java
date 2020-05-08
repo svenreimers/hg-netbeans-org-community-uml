@@ -50,10 +50,8 @@ import org.netbeans.api.visual.anchor.PointShape;
 import org.netbeans.api.visual.widget.Scene;
 import org.netbeans.modules.uml.drawingarea.LabelManager;
 
-/**
- *
- * @author treyspiva
- */
+
+
 public class RealizationConnector extends AbstractUMLConnectionWidget
 {
 

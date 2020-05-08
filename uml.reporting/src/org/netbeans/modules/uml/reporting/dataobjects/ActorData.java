@@ -47,10 +47,8 @@ package org.netbeans.modules.uml.reporting.dataobjects;
 
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier;
 
-/**
- *
- * @author Sheryl
- */
+
+
 public class ActorData extends ClassData
 {
     

@@ -42,17 +42,13 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : FinalNode.java
- * Created on : Sep 16, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.metamodel.common.commonactivities;
 
 
-/**
- * @author Aztec
- */
+
+
 public class FinalNode extends ControlNode implements IFinalNode
 {
 

@@ -104,10 +104,8 @@ import org.openide.util.NbPreferences;
 import org.openide.util.lookup.AbstractLookup;
 import org.openide.util.lookup.InstanceContent;
 
-/**
- *
- * @author treyspiva
- */
+
+
 public abstract class UMLNodeWidget extends Widget
         implements DiagramNodeWriter, DiagramNodeReader, PropertyChangeListener, UMLWidget {
 
@@ -262,7 +260,8 @@ public abstract class UMLNodeWidget extends Widget
         }
     }
 
-    /**
+    
+/**
      * set resize mode, if null resize mode will be recalculated based on widget properties
      * @param mode
      */
@@ -278,7 +277,8 @@ public abstract class UMLNodeWidget extends Widget
         return decoratorLayer;
     }
 
-    /*
+    
+/*
      * 
      * need to be overrided by widgets with not standard resize points
      * @return all resize points which will be used(active and visible) for resizing of selected widget
@@ -297,7 +297,8 @@ public abstract class UMLNodeWidget extends Widget
                 };
     }
 
-    /**
+    
+/**
      * in fact it duplicates getResizeControlPoints() funtionality and need to be changed later
      * @param resizable
      */
@@ -682,7 +683,8 @@ public abstract class UMLNodeWidget extends Widget
 
     ////////////////////////////////////////////////////////////////////////////
     // PropertyChangedListener
-    /**
+    
+/**
      * Handle property changes from the model element.  If the current view 
      * is a property change listener the event is forward the view.  Otherwise
      * nothing happens.
@@ -968,7 +970,8 @@ public abstract class UMLNodeWidget extends Widget
         return NbPreferences.forModule(DummyCorePreference.class).getBoolean("UML_Gradient_Background", true);
     }
 
-    /**
+    
+/**
      * instead of Widget::getMinimumSize this is dynamic value used in resizing
      * more used for window like resizing, when content is relative to left-top corner
      * @return size below which resize is not allowed
@@ -977,7 +980,8 @@ public abstract class UMLNodeWidget extends Widget
         return new Dimension(10, 10);
     }
 
-    /**
+    
+/**
      * instead of Widget::getMinimumSize this is dinamic value used in resize to content action and most im[portant
      * for elements without any content or for multiline elements without inner limitations
      * @return miminum size to set in resize to content action, by default the same as in resizing minimum size
@@ -986,7 +990,8 @@ public abstract class UMLNodeWidget extends Widget
         return getResizingMinimumSize();
     }
 
-    /**
+    
+/**
      * if node contain some content it may be used for example in resizing
      * in general it may be moved to ContainerNode
      * more used with mask like resizing when content is relative to global coordinates
@@ -996,7 +1001,8 @@ public abstract class UMLNodeWidget extends Widget
         return null;
     }
 
-    /**
+    
+/**
      * some widgets may be added by some action like context menu and should be removed the same way instead of common delete/cut etc actions
      * (like interaction boundary widget)
      * by default most nodes can be deleted from diagram
@@ -1021,7 +1027,8 @@ public abstract class UMLNodeWidget extends Widget
         initialized = isInitialized;
     }
 
-    /**
+    
+/**
      * update nodes after changes in node according to global resizing options
      *  body is executed after scene validation
      */

@@ -42,11 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : UMLConnectionPoint.java
- * Created on : Sep 19, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.metamodel.common.commonstatemachines;
 
 import org.dom4j.Document;
@@ -55,15 +52,15 @@ import org.dom4j.Node;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.ElementCollector;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
-/**
- * @author Aztec
- */
+
+
 public class UMLConnectionPoint
     extends StateVertex
     implements IUMLConnectionPoint
 {
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonstatemachines.IUMLConnectionPoint#addEntry(org.netbeans.modules.uml.core.metamodel.common.commonstatemachines.IPseudoState)
      */
     public void addEntry(IPseudoState pState)
@@ -71,7 +68,8 @@ public class UMLConnectionPoint
         addElementByID(pState, "entry");
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonstatemachines.IUMLConnectionPoint#getDefinition()
      */
     public IUMLConnectionPoint getDefinition()
@@ -81,7 +79,8 @@ public class UMLConnectionPoint
 
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonstatemachines.IUMLConnectionPoint#getEntries()
      */
     public ETList<IPseudoState> getEntries()
@@ -91,7 +90,8 @@ public class UMLConnectionPoint
 
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonstatemachines.IUMLConnectionPoint#removeEntry(org.netbeans.modules.uml.core.metamodel.common.commonstatemachines.IPseudoState)
      */
     public void removeEntry(IPseudoState pState)
@@ -99,7 +99,8 @@ public class UMLConnectionPoint
         removeElementByID(pState, "entry");
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonstatemachines.IUMLConnectionPoint#setDefinition(org.netbeans.modules.uml.core.metamodel.common.commonstatemachines.IUMLConnectionPoint)
      */
     public void setDefinition(IUMLConnectionPoint value)

@@ -64,10 +64,8 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 import org.netbeans.modules.uml.integration.ide.JavaClassUtils;
 import org.netbeans.modules.uml.integration.ide.UMLSupport;
 
-/**
- *
- * @author Craig Conover, craig.conover@sun.com
- */
+
+
 public final class GenCodeUtil
 {
     private GenCodeUtil(){}
@@ -229,7 +227,8 @@ public final class GenCodeUtil
 	}              
 	return fullClassName;
 
-	/*
+	
+/*
         String name = JavaClassUtils.getFullyQualifiedName(clazz);        
         name = JavaClassUtils.getFullInnerClassName(name);
 	if (! fullyQualified) 

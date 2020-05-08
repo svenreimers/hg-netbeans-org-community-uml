@@ -43,12 +43,8 @@
  */
 
 
-/*
- * REJavaApplication.java
- *
- * Created on January 19, 2006, 1:55 PM
- *
- */
+
+
 package org.netbeans.test.uml.tutorial.reverseeng;
 
 import java.awt.Point;
@@ -83,10 +79,8 @@ import org.netbeans.jemmy.operators.JToggleButtonOperator;
 import org.netbeans.test.umllib.project.Project;
 import org.netbeans.test.umllib.util.JPopupByPointChooser;
 
-/**
- *
- * @author Alexandr Scherbatiy
- */
+
+
 public class REJavaApplication extends UMLTestCase {
 
     public static final String PROJECT_NAME_UML = "UMLProjectTutorialRE";
@@ -426,7 +420,8 @@ public class REJavaApplication extends UMLTestCase {
                    "Saving".equals(generalization[0])||"Checking".equals(generalization[0])||"Platinum".equals(generalization[0]));
     }
 
-    /*
+    
+/*
      */
     protected void init() {
         pto = ProjectsTabOperator.invoke();

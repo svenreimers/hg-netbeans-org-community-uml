@@ -49,6 +49,7 @@ import org.netbeans.modules.uml.core.AbstractUMLTestCase;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.FactoryRetriever;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.IValueSpecification;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
+
 /**
  * Test cases for Event.
  */
@@ -61,7 +62,8 @@ public class EventTestCase extends AbstractUMLTestCase
 
     private IEvent event;
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see junit.framework.TestCase#setUp()
      */
     protected void setUp() throws Exception
@@ -84,7 +86,8 @@ public class EventTestCase extends AbstractUMLTestCase
 		}
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see junit.framework.TestCase#tearDown()
      */
     protected void tearDown() throws Exception

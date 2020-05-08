@@ -42,24 +42,21 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : TransformChangeRequest.java
- * Created on : Oct 28, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.roundtripframework;
 
 import org.netbeans.modules.uml.core.metamodel.core.foundation.IElement;
 
-/**
- * @author Aztec
- */
+
+
 public class TransformChangeRequest
     extends ChangeRequest
     implements ITransformChangeRequest
 {
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.ITransformChangeRequest#getNewElementType()
      */
     public int getNewElementType()
@@ -67,7 +64,8 @@ public class TransformChangeRequest
         return getElementType();
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.ITransformChangeRequest#getNewElementTypeName()
      */
     public String getNewElementTypeName()
@@ -78,7 +76,8 @@ public class TransformChangeRequest
         return null;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.ITransformChangeRequest#getOldElementType()
      */
     public int getOldElementType()
@@ -95,7 +94,8 @@ public class TransformChangeRequest
         return elementType;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.ITransformChangeRequest#getOldElementTypeName()
      */
     public String getOldElementTypeName()

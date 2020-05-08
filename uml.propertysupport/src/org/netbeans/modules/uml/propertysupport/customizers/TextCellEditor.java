@@ -42,6 +42,7 @@
  * made subject to such option by the copyright holder.
  */
 
+
 /*
  * TextCellEditor.java
  *
@@ -55,10 +56,8 @@ import java.util.EventObject;
 import javax.swing.DefaultCellEditor;
 import javax.swing.JTextField;
 
-/**
- *
- * @author Administrator
- */
+
+
 public class TextCellEditor extends DefaultCellEditor
 {
    private IPropertyElement mElement = null;

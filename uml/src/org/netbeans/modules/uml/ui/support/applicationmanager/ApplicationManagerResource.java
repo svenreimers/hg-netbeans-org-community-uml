@@ -49,10 +49,8 @@ package org.netbeans.modules.uml.ui.support.applicationmanager;
 import java.util.MissingResourceException;
 import java.util.ResourceBundle;
 
-/**
- *
- * @author Trey Spiva
- */
+
+
 public class ApplicationManagerResource
 {
 
@@ -67,7 +65,8 @@ public class ApplicationManagerResource
    {
 
    }
-   /**
+   
+/**
     * @param key
     * @return
     */

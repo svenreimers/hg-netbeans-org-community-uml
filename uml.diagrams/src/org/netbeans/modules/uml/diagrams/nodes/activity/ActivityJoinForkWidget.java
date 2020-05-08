@@ -53,10 +53,8 @@ import org.netbeans.modules.uml.drawingarea.view.UMLLabelWidget;
 import org.netbeans.modules.uml.drawingarea.view.UMLWidget;
 import org.netbeans.modules.uml.drawingarea.view.WidgetViewManager;
 
-/**
- *
- * @author Thuy
- */
+
+
 public class ActivityJoinForkWidget extends JoinForkWidget implements WidgetViewManager
 {
 

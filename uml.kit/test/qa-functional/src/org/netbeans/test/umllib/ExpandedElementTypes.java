@@ -43,16 +43,17 @@
  */
 
 
+
 /**
  * in progress of converting from element types
  * it seems most expanded types are the same as types exept role types
  */
 package org.netbeans.test.umllib;
-/**
- * @author psb
- */
+
+
 public enum ExpandedElementTypes {
-    /*
+    
+/*
           string passed to constructor is {elementGraphObject}.getPresentationElement().getFirstSubject().getExpandedElementType() string
      */
    COMPONENT("Component"),
@@ -133,7 +134,8 @@ public enum ExpandedElementTypes {
         this.val = val;
     }
     
-    /**
+    
+/**
      * 
      * @return 
      */

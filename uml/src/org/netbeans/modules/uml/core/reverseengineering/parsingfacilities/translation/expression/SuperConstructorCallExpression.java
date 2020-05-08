@@ -43,11 +43,8 @@
  */
 
 
-/*
- * File       : SuperConstructorCallExpression.java
- * Created on : Dec 11, 2003
- * Author     : Aztec
- */
+
+
 
 package org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.expression;
 

@@ -8,10 +8,8 @@ import java.awt.Point;
 import org.netbeans.api.visual.anchor.Anchor;
 import org.netbeans.api.visual.widget.ConnectionWidget;
 
-/**
- *
- * @author treyspiva
- */
+
+
 public class ConnectionAnchor extends Anchor
 {
     private double locationRatio = 0.5;
@@ -27,7 +25,8 @@ public class ConnectionAnchor extends Anchor
         locationRatio = location;
     }
 
-    /**
+    
+/**
      * Returns a scene location of a related widget.
      * @return the scene location; null if no related widget is assigned
      */

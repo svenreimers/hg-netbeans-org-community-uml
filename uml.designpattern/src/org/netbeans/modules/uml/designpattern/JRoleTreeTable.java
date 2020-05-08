@@ -42,6 +42,7 @@
  * made subject to such option by the copyright holder.
  */
 
+
 /*
  * Created on Jun 18, 2003
  *
@@ -69,10 +70,8 @@ import org.netbeans.modules.uml.ui.swing.treetable.JDefaultMutableTreeNode;
 import org.netbeans.modules.uml.ui.swing.treetable.JTreeTable;
 import org.netbeans.modules.uml.ui.swing.treetable.TreeTableModel;
 
-/**
- * @author sumitabhk
- *
- */
+
+
 public class JRoleTreeTable extends JTreeTable
 {
 	private JPopupMenu m_popup = null;

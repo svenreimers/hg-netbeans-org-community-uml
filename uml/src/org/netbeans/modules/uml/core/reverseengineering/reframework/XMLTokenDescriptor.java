@@ -56,7 +56,8 @@ public class XMLTokenDescriptor extends TokenDescriptor
 {
     private Node m_TokenDescriptorsNode;
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.IXMLTokenDescriptor#getTokenDescriptorNode()
      */
     public Node getTokenDescriptorNode()
@@ -64,7 +65,8 @@ public class XMLTokenDescriptor extends TokenDescriptor
         return m_TokenDescriptorsNode;
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.IXMLTokenDescriptor#setTokenDescriptorNode(org.dom4j.Node)
      */
     public void setTokenDescriptorNode(Node newVal)
@@ -72,7 +74,8 @@ public class XMLTokenDescriptor extends TokenDescriptor
         m_TokenDescriptorsNode = newVal;
     }
     
-    /**
+    
+/**
      * Retrieves an int attribute from the XML node that represents the descriptor.
      * @param name [in] The attribute to retrieve.
      * @param pVal [out] The value.
@@ -82,7 +85,8 @@ public class XMLTokenDescriptor extends TokenDescriptor
         return XMLManip.getAttributeIntValue(m_TokenDescriptorsNode, name);
     }
     
-    /**
+    
+/**
      * Sets an int attribute to the XML node that represents the descriptor.
      * @param name [in] The attribute to set.
      * @param pVal [out] The value.
@@ -103,7 +107,8 @@ public class XMLTokenDescriptor extends TokenDescriptor
         XMLManip.setAttributeValue(m_TokenDescriptorsNode, name, value);
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ITokenDescriptor#setLine(int)
      */
     public void setLine(int value)
@@ -111,7 +116,8 @@ public class XMLTokenDescriptor extends TokenDescriptor
         setIntAttribute("line", value);
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ITokenDescriptor#getLine()
      */
     public int getLine()
@@ -119,7 +125,8 @@ public class XMLTokenDescriptor extends TokenDescriptor
         return getIntAttribute("line");
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ITokenDescriptor#setColumn(int)
      */
     public void setColumn(int value)
@@ -127,7 +134,8 @@ public class XMLTokenDescriptor extends TokenDescriptor
         setIntAttribute("column", value);
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ITokenDescriptor#getColumn()
      */
     public int getColumn()
@@ -135,7 +143,8 @@ public class XMLTokenDescriptor extends TokenDescriptor
         return getIntAttribute("column");
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ITokenDescriptor#setPosition(int)
      */
     public void setPosition(int value)
@@ -143,7 +152,8 @@ public class XMLTokenDescriptor extends TokenDescriptor
         setIntAttribute("position", value);
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ITokenDescriptor#getPosition()
      */
     public long getPosition()
@@ -151,7 +161,8 @@ public class XMLTokenDescriptor extends TokenDescriptor
         return getIntAttribute("position");
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ITokenDescriptor#setType(java.lang.String)
      */
     public void setType(String value)
@@ -159,7 +170,8 @@ public class XMLTokenDescriptor extends TokenDescriptor
         setAttribute("type", value);
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ITokenDescriptor#getType()
      */
     public String getType()
@@ -167,7 +179,8 @@ public class XMLTokenDescriptor extends TokenDescriptor
         return getAttribute("type");
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ITokenDescriptor#setValue(java.lang.String)
      */
     public void setValue(String value)
@@ -175,7 +188,8 @@ public class XMLTokenDescriptor extends TokenDescriptor
         setAttribute("value", value);
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ITokenDescriptor#getValue()
      */
     public String getValue()
@@ -183,7 +197,8 @@ public class XMLTokenDescriptor extends TokenDescriptor
         return getAttribute("value");
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ITokenDescriptor#setLength(int)
      */
     public void setLength(int value)
@@ -191,7 +206,8 @@ public class XMLTokenDescriptor extends TokenDescriptor
         setIntAttribute("length", value);
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ITokenDescriptor#getLength()
      */
     public int getLength()

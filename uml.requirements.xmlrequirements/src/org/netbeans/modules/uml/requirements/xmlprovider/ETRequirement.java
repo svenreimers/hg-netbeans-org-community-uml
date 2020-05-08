@@ -54,10 +54,8 @@ import org.netbeans.modules.uml.core.support.umlutils.ETArrayList;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 import org.dom4j.Element;
 
-/**
- * @author josephg
- *
- */
+
+
 public class ETRequirement implements IRequirement
 {
    private ETList<ISatisfier> m_Satisfiers = new ETArrayList<ISatisfier>();
@@ -73,7 +71,8 @@ public class ETRequirement implements IRequirement
    private String m_ProviderID;
    private String m_SourceID;
    
-   /**
+   
+/**
     * @return
     */
    public String getDescription()
@@ -81,7 +80,8 @@ public class ETRequirement implements IRequirement
       return m_Description;
    }
 
-   /**
+   
+/**
     * @return
     */
    public String getID()
@@ -89,7 +89,8 @@ public class ETRequirement implements IRequirement
       return m_Id;
    }
 
-   /**
+   
+/**
     * @return
     */
    public boolean isCategory()
@@ -97,7 +98,8 @@ public class ETRequirement implements IRequirement
       return m_IsCategory;
    }
 
-   /**
+   
+/**
     * @return
     */
    public String getModName()
@@ -105,7 +107,8 @@ public class ETRequirement implements IRequirement
       return m_ModName;
    }
 
-   /**
+   
+/**
     * @return
     */
    public String getName()
@@ -113,7 +116,8 @@ public class ETRequirement implements IRequirement
       return m_Name;
    }
 
-   /**
+   
+/**
     * @return
     */
    public String getProjectName()
@@ -121,7 +125,8 @@ public class ETRequirement implements IRequirement
       return m_ProjectName;
    }
 
-   /**
+   
+/**
     * @return
     */
    public String getProviderID()
@@ -129,7 +134,8 @@ public class ETRequirement implements IRequirement
       return m_ProviderID;
    }
 
-   /**
+   
+/**
     * @return
     */
    public ETList<IRequirement> getRequirements()
@@ -137,7 +143,8 @@ public class ETRequirement implements IRequirement
       return m_Requirements;
    }
 
-   /**
+   
+/**
     * @return
     */
    public ETList<ISatisfier> getSatisfiers()
@@ -145,7 +152,8 @@ public class ETRequirement implements IRequirement
       return m_Satisfiers;
    }
 
-   /**
+   
+/**
     * @return
     */
    public String getSourceID()
@@ -153,7 +161,8 @@ public class ETRequirement implements IRequirement
       return m_SourceID;
    }
 
-   /**
+   
+/**
     * @return
     */
    public String getType()
@@ -161,7 +170,8 @@ public class ETRequirement implements IRequirement
       return m_Type;
    }
 
-   /**
+   
+/**
     * @param string
     */
    public void setDescription(String string)
@@ -169,7 +179,8 @@ public class ETRequirement implements IRequirement
       m_Description = string;
    }
 
-   /**
+   
+/**
     * @param string
     */
    public void setID(String string)
@@ -177,7 +188,8 @@ public class ETRequirement implements IRequirement
       m_Id = string;
    }
 
-   /**
+   
+/**
     * @param b
     */
    public void setIsCategory(boolean b)
@@ -185,7 +197,8 @@ public class ETRequirement implements IRequirement
       m_IsCategory = b;
    }
 
-   /**
+   
+/**
     * @param string
     */
    public void setModName(String string)
@@ -193,7 +206,8 @@ public class ETRequirement implements IRequirement
       m_ModName = string;
    }
 
-   /**
+   
+/**
     * @param string
     */
    public void setName(String string)
@@ -201,7 +215,8 @@ public class ETRequirement implements IRequirement
       m_Name = string;
    }
 
-   /**
+   
+/**
     * @param string
     */
    public void setProjectName(String string)
@@ -209,7 +224,8 @@ public class ETRequirement implements IRequirement
       m_ProjectName = string;
    }
 
-   /**
+   
+/**
     * @param string
     */
    public void setProviderID(String string)
@@ -217,7 +233,8 @@ public class ETRequirement implements IRequirement
       m_ProviderID = string;
    }
 
-   /**
+   
+/**
     * @param requirements
     */
    public void setRequirements(ETList<IRequirement> requirements)
@@ -225,7 +242,8 @@ public class ETRequirement implements IRequirement
       m_Requirements = requirements;
    }
 
-   /**
+   
+/**
     * @param satisfiers
     */
    public void setSatisfiers(ETList<ISatisfier> satisfiers)
@@ -233,7 +251,8 @@ public class ETRequirement implements IRequirement
       m_Satisfiers = satisfiers;
    }
 
-   /**
+   
+/**
     * @param string
     */
    public void setSourceID(String string)
@@ -241,7 +260,8 @@ public class ETRequirement implements IRequirement
       m_SourceID = string;
    }
 
-   /**
+   
+/**
     * @param string
     */
    public void setType(String string)

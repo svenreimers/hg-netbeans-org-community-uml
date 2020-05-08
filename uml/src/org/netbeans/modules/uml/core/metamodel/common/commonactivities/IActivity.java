@@ -49,82 +49,98 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 public interface IActivity extends IBehavior
 {
-	/**
+	
+/**
 	 * property Kind
 	*/
 	public int getKind();
 
-	/**
+	
+/**
 	 * property Kind
 	*/
 	public void setKind( /* ActivityKind */ int value );
 
-	/**
+	
+/**
 	 * property IsSingleCopy
 	*/
 	public boolean getIsSingleCopy();
 
-	/**
+	
+/**
 	 * property IsSingleCopy
 	*/
 	public void setIsSingleCopy( boolean value );
 
-	/**
+	
+/**
 	 * method AddNode
 	*/
 	public void addNode( IActivityNode pNode );
 
-	/**
+	
+/**
 	 * method RemoveNode
 	*/
 	public void removeNode( IActivityNode pNode );
 
-	/**
+	
+/**
 	 * property Nodes
 	*/
 	public ETList<IActivityNode> getNodes();
 
-	/**
+	
+/**
 	 * method AddEdge
 	*/
 	public void addEdge( IActivityEdge pEdge );
 
-	/**
+	
+/**
 	 * method RemoveEdge
 	*/
 	public void removeEdge( IActivityEdge pEdge );
 
-	/**
+	
+/**
 	 * property Edges
 	*/
 	public ETList<IActivityEdge> getEdges();
 
-	/**
+	
+/**
 	 * method AddGroup
 	*/
 	public void addGroup( IActivityGroup pGroup );
 
-	/**
+	
+/**
 	 * method RemoveGroup
 	*/
 	public void removeGroup( IActivityGroup pGroup );
 
-	/**
+	
+/**
 	 * property Groups
 	*/
 	public ETList<IActivityGroup> getGroups();
 
-	/**
+	
+/**
 	 * method AddPartition
 	*/
 	public void addPartition( IActivityPartition pPartition );
 
-	/**
+	
+/**
 	 * method RemovePartition
 	*/
 	public void removePartition( IActivityPartition pPartition );
 
-	/**
+	
+/**
 	 * property Partitions
 	*/
 	public ETList<IActivityPartition> getPartitions();

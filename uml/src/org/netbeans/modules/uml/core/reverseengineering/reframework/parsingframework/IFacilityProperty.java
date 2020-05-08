@@ -46,22 +46,26 @@ package org.netbeans.modules.uml.core.reverseengineering.reframework.parsingfram
 
 public interface IFacilityProperty
 {
-	/**
+	
+/**
 	 * The name of the property.
 	*/
 	public String getName();
 
-	/**
+	
+/**
 	 * The name of the property.
 	*/
 	public void setName( String name );
 
-	/**
+	
+/**
 	 * The value of the property.
 	*/
 	public String getValue();
 
-	/**
+	
+/**
 	 * The value of the property.
 	*/
 	public void setValue( String value );

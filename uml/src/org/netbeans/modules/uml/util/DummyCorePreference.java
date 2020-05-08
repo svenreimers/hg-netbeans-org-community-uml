@@ -44,10 +44,8 @@
 
 package org.netbeans.modules.uml.util;
 
-/**
- *
- * @author krichard
- */
+
+
 public class DummyCorePreference {
 
     //this is only here to point to preferences held for the core module

@@ -55,7 +55,8 @@ import org.netbeans.modules.uml.core.support.umlsupport.ProductRetriever;
  */
 public class ParserErrorListener implements IParserErrorListener
 {
-    /**
+    
+/**
      * The OnError event is fired when the parser encounters an parse error in the
      * source file.  The error event will be forwarded to the UMLParser event
      * dispatcher.
@@ -71,7 +72,8 @@ public class ParserErrorListener implements IParserErrorListener
             disp.fireError("", error, null);
     }
     
-    /**
+    
+/**
      * Retrieves the UML Parser event dispatcher.  The UML Parser event dispatcher 
      * is used to send UML Events.
      * 

@@ -51,10 +51,8 @@ import org.netbeans.modules.uml.core.coreapplication.ICoreProduct;
 import org.netbeans.modules.uml.ui.support.ProductHelper;
 import org.netbeans.modules.uml.ui.swing.commondialogs.JCenterDialog;
 
-/**
- * @author sumitabhk
- *
- */
+
+
 public class EventFilterDialog extends JCenterDialog
 {
 	private EventLoggingAddin m_Addin = null;
@@ -75,7 +73,8 @@ public class EventFilterDialog extends JCenterDialog
 	private boolean m_DrawAreaFilter = false;
 
 
-	/**
+	
+/**
 	 * 
 	 */
 	public EventFilterDialog()
@@ -89,7 +88,8 @@ public class EventFilterDialog extends JCenterDialog
 		m_Addin = addin;
 	}
 
-	/**
+	
+/**
 	 * @return
 	 */
 	public boolean isModifierFilter()
@@ -97,7 +97,8 @@ public class EventFilterDialog extends JCenterDialog
 		return m_ModifierFilter;
 	}
 
-	/**
+	
+/**
 	 * @return
 	 */
 	public boolean isProjectTreeFilterFilter()
@@ -105,7 +106,8 @@ public class EventFilterDialog extends JCenterDialog
 		return m_ProjectTreeFilterFilter;
 	}
 
-	/**
+	
+/**
 	 * @return
 	 */
 	public boolean isReleationshipFilter()
@@ -113,7 +115,8 @@ public class EventFilterDialog extends JCenterDialog
 		return m_ReleationshipFilter;
 	}
 
-	/**
+	
+/**
 	 * @return
 	 */
 	public boolean isRoundTripFilter()
@@ -121,7 +124,8 @@ public class EventFilterDialog extends JCenterDialog
 		return m_RoundTripFilter;
 	}
 
-	/**
+	
+/**
 	 * @return
 	 */
 	public boolean isVBAFilter()
@@ -129,7 +133,8 @@ public class EventFilterDialog extends JCenterDialog
 		return m_VBAFilter;
 	}
 
-	/**
+	
+/**
 	 * @return
 	 */
 	public boolean isWorkspaceFilter()
@@ -137,7 +142,8 @@ public class EventFilterDialog extends JCenterDialog
 		return m_WorkspaceFilter;
 	}
 
-	/**
+	
+/**
 	 * @param b
 	 */
 	public void setModifierFilter(boolean b)
@@ -145,7 +151,8 @@ public class EventFilterDialog extends JCenterDialog
 		m_ModifierFilter = b;
 	}
 
-	/**
+	
+/**
 	 * @param b
 	 */
 	public void setProjectTreeFilterFilter(boolean b)
@@ -153,7 +160,8 @@ public class EventFilterDialog extends JCenterDialog
 		m_ProjectTreeFilterFilter = b;
 	}
 
-	/**
+	
+/**
 	 * @param b
 	 */
 	public void setReleationshipFilter(boolean b)
@@ -161,7 +169,8 @@ public class EventFilterDialog extends JCenterDialog
 		m_ReleationshipFilter = b;
 	}
 
-	/**
+	
+/**
 	 * @param b
 	 */
 	public void setRoundTripFilter(boolean b)
@@ -169,7 +178,8 @@ public class EventFilterDialog extends JCenterDialog
 		m_RoundTripFilter = b;
 	}
 
-	/**
+	
+/**
 	 * @param b
 	 */
 	public void setVBAFilter(boolean b)
@@ -177,7 +187,8 @@ public class EventFilterDialog extends JCenterDialog
 		m_VBAFilter = b;
 	}
 
-	/**
+	
+/**
 	 * @param b
 	 */
 	public void setWorkspaceFilter(boolean b)
@@ -185,7 +196,8 @@ public class EventFilterDialog extends JCenterDialog
 		m_WorkspaceFilter = b;
 	}
 
-	/**
+	
+/**
 	 * @return
 	 */
 	public boolean isAddinFilter()
@@ -193,7 +205,8 @@ public class EventFilterDialog extends JCenterDialog
 		return m_AddinFilter;
 	}
 
-	/**
+	
+/**
 	 * @return
 	 */
 	public boolean isClassifierFilter()
@@ -201,7 +214,8 @@ public class EventFilterDialog extends JCenterDialog
 		return m_ClassifierFilter;
 	}
 
-	/**
+	
+/**
 	 * @return
 	 */
 	public boolean isCoreProductFilter()
@@ -209,7 +223,8 @@ public class EventFilterDialog extends JCenterDialog
 		return m_CoreProductFilter;
 	}
 
-	/**
+	
+/**
 	 * @return
 	 */
 	public boolean isDrawAreaFilter()
@@ -217,7 +232,8 @@ public class EventFilterDialog extends JCenterDialog
 		return m_DrawAreaFilter;
 	}
 
-	/**
+	
+/**
 	 * @return
 	 */
 	public boolean isEditControlFilter()
@@ -225,7 +241,8 @@ public class EventFilterDialog extends JCenterDialog
 		return m_EditControlFilter;
 	}
 
-	/**
+	
+/**
 	 * @return
 	 */
 	public boolean isLifetimeFilter()
@@ -233,7 +250,8 @@ public class EventFilterDialog extends JCenterDialog
 		return m_LifetimeFilter;
 	}
 
-	/**
+	
+/**
 	 * @return
 	 */
 	public boolean isMessengerFilter()
@@ -241,7 +259,8 @@ public class EventFilterDialog extends JCenterDialog
 		return m_MessengerFilter;
 	}
 
-	/**
+	
+/**
 	 * @return
 	 */
 	public boolean isProjectTreeFilter()
@@ -249,7 +268,8 @@ public class EventFilterDialog extends JCenterDialog
 		return m_ProjectTreeFilter;
 	}
 
-	/**
+	
+/**
 	 * @param b
 	 */
 	public void setAddinFilter(boolean b)
@@ -257,7 +277,8 @@ public class EventFilterDialog extends JCenterDialog
 		m_AddinFilter = b;
 	}
 
-	/**
+	
+/**
 	 * @param b
 	 */
 	public void setClassifierFilter(boolean b)
@@ -265,7 +286,8 @@ public class EventFilterDialog extends JCenterDialog
 		m_ClassifierFilter = b;
 	}
 
-	/**
+	
+/**
 	 * @param b
 	 */
 	public void setCoreProductFilter(boolean b)
@@ -273,7 +295,8 @@ public class EventFilterDialog extends JCenterDialog
 		m_CoreProductFilter = b;
 	}
 
-	/**
+	
+/**
 	 * @param b
 	 */
 	public void setDrawAreaFilter(boolean b)
@@ -281,7 +304,8 @@ public class EventFilterDialog extends JCenterDialog
 		m_DrawAreaFilter = b;
 	}
 
-	/**
+	
+/**
 	 * @param b
 	 */
 	public void setEditControlFilter(boolean b)
@@ -289,7 +313,8 @@ public class EventFilterDialog extends JCenterDialog
 		m_EditControlFilter = b;
 	}
 
-	/**
+	
+/**
 	 * @param b
 	 */
 	public void setLifetimeFilter(boolean b)
@@ -297,7 +322,8 @@ public class EventFilterDialog extends JCenterDialog
 		m_LifetimeFilter = b;
 	}
 
-	/**
+	
+/**
 	 * @param b
 	 */
 	public void setMessengerFilter(boolean b)
@@ -305,7 +331,8 @@ public class EventFilterDialog extends JCenterDialog
 		m_MessengerFilter = b;
 	}
 
-	/**
+	
+/**
 	 * @param b
 	 */
 	public void setProjectTreeFilter(boolean b)

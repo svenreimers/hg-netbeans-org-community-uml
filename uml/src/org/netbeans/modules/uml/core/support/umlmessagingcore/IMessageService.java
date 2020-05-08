@@ -48,22 +48,26 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 public interface IMessageService
 {
-	/**
+	
+/**
 	 * Adds a message.  This fires an event to let those listening to this object that a message has been added
 	*/
 	public void addMessage( IMessageData pMessage );
 
-	/**
+	
+/**
 	 * Adds a message.  This fires an event to let those listening to this object that a message has been added
 	*/
 	public void addMessage( /* MESSAGE_TYPE */ int nMessageType, String sFacility, String sMessageString );
 
-	/**
+	
+/**
 	 * Adds a message.  The facility string is loaded from hInstance with the id being nFacilityStringID.  This fires an event to let those listening to this object that a message has been added
 	*/
 	public void addMessage( /* MESSAGE_TYPE */ int nMessageType, int hInstance, int nFacilityStringID, String sMessageString );
 
-	/**
+	
+/**
 	 * Get the facilities that have sent messages
 	*/
 	public ETList<IMessageFacility> getMessageFacilities();

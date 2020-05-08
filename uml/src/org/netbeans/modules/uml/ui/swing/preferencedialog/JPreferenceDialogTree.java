@@ -43,6 +43,7 @@
  */
 
 
+
 /*
  * Created on May 22, 2003
  *
@@ -86,10 +87,8 @@ import org.netbeans.modules.uml.ui.support.DispatchHelper;
 import org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeItem;
 
 
-/**
- * @author treys
- *
- */
+
+
 //public class JProjectTree extends JTree implements IProjectTreeControl
 public class JPreferenceDialogTree extends JTree 
 {
@@ -103,7 +102,8 @@ public class JPreferenceDialogTree extends JTree
 		this(null, null);
 	}
 	
-   /**
+   
+/**
     * @param newModel
     */
    public JPreferenceDialogTree(ISwingPreferenceDialogModel newModel, 
@@ -114,7 +114,7 @@ public class JPreferenceDialogTree extends JTree
       
       //setModel(newModel);
 		
-      //CBeckham - changed to allow for larger fonts
+      
       //setFont(new java.awt.Font("Dialog", 0, 11));
       setFont(new java.awt.Font("Dialog", 0, getFont().getSize()));          
       
@@ -142,7 +142,8 @@ public class JPreferenceDialogTree extends JTree
       //addControls();
    }
    
-   /**
+   
+/**
     * 
     */
    protected void addControls()
@@ -188,7 +189,8 @@ public class JPreferenceDialogTree extends JTree
    		}
    }
    
-   /**
+   
+/**
  	* This updates the corresponding table.
  	*/
 	private void updateTable(IPropertyElement pEle)
@@ -231,7 +233,8 @@ public boolean fireItemExpanding(ITreeItem item)
       return retVal;
 	}
    
-   /**
+   
+/**
     * @param selPath
     */
    public void fireDoubleClick(ITreeItem item)
@@ -247,7 +250,8 @@ public boolean fireItemExpanding(ITreeItem item)
       }
    }   
    
-   /**
+   
+/**
     * @param selPath
     */
    public void fireDoubleClick(TreePath path)
@@ -357,7 +361,8 @@ public boolean fireItemExpanding(ITreeItem item)
    //**************************************************
    
 	
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see javax.swing.JTree#fireTreeWillExpand(javax.swing.tree.TreePath)
 	 */
 //	public void fireTreeWillExpand(TreePath path)
@@ -377,7 +382,8 @@ public boolean fireItemExpanding(ITreeItem item)
 	// IProjectTreeControl methods
 	// **************************************************
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#getRootNodes()
 	 */
 	public IProjectTreeItem[] getRootNodes()
@@ -386,7 +392,8 @@ public boolean fireItemExpanding(ITreeItem item)
 		return null;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#getStandardDescription(int)
 	 */
 	public String getStandardDescription(int nKind)
@@ -395,7 +402,8 @@ public boolean fireItemExpanding(ITreeItem item)
 		return null;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#getUserCalledShowWorkspaceNode()
 	 */
 	public boolean getUserCalledShowWorkspaceNode()
@@ -404,7 +412,8 @@ public boolean fireItemExpanding(ITreeItem item)
 		return false;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#getShowWorkspaceNode()
 	 */
 	public boolean getShowWorkspaceNode()
@@ -413,7 +422,8 @@ public boolean fireItemExpanding(ITreeItem item)
 		return false;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#setShowWorkspaceNode(boolean)
 	 */
 	public void setShowWorkspaceNode(boolean value)
@@ -422,7 +432,8 @@ public boolean fireItemExpanding(ITreeItem item)
       
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#addWorkspace()
 	 */
 	public long addWorkspace()
@@ -431,7 +442,8 @@ public boolean fireItemExpanding(ITreeItem item)
 		return 0;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#getUnfilteredProjects()
 	 */
 	public IStrings getUnfilteredProjects()
@@ -440,7 +452,8 @@ public boolean fireItemExpanding(ITreeItem item)
 		return null;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#setUnfilteredProjects(org.netbeans.modules.uml.core.support.umlsupport.IStrings)
 	 */
 	public void setUnfilteredProjects(IStrings value)
@@ -449,7 +462,8 @@ public boolean fireItemExpanding(ITreeItem item)
       
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#refresh(boolean)
 	 */
 	public void refresh(boolean bPostEvent)
@@ -481,7 +495,8 @@ public boolean fireItemExpanding(ITreeItem item)
       
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#close()
 	 */
 	public void close()
@@ -490,7 +505,8 @@ public boolean fireItemExpanding(ITreeItem item)
       
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#sortChildNodes(org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem)
 	 */
 	public void sortChildNodes(IProjectTreeItem pParent)
@@ -499,7 +515,8 @@ public boolean fireItemExpanding(ITreeItem item)
       
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#sortThisNode(org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem)
 	 */
 	public void sortThisNode(IProjectTreeItem pNode)
@@ -508,7 +525,8 @@ public boolean fireItemExpanding(ITreeItem item)
       
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#setImage(org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem, java.lang.String, int)
 	 */
 	public void setImage(IProjectTreeItem pItem, String sIconLibrary, int nIconID)
@@ -517,7 +535,8 @@ public boolean fireItemExpanding(ITreeItem item)
       
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#setImage2(org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem, int)
 	 */
 	public void setImage2(IProjectTreeItem pItem, int hIcon)
@@ -526,7 +545,8 @@ public boolean fireItemExpanding(ITreeItem item)
       
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#setDescription(org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem, java.lang.String)
 	 */
 	public void setDescription(IProjectTreeItem pItem, String sDesc)
@@ -535,7 +555,8 @@ public boolean fireItemExpanding(ITreeItem item)
       
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#setSecondaryDescription(org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem, java.lang.String)
 	 */
 	public void setSecondaryDescription(IProjectTreeItem pItem, String sDesc)
@@ -544,7 +565,8 @@ public boolean fireItemExpanding(ITreeItem item)
       
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#setDispatch(org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem, java.lang.Object)
 	 */
 	public void setDispatch(IProjectTreeItem pItem, Object pDisp)
@@ -553,7 +575,8 @@ public boolean fireItemExpanding(ITreeItem item)
       
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#setModelElement(org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem, org.netbeans.modules.uml.core.metamodel.core.foundation.IElement)
 	 */
 	public void setModelElement(IProjectTreeItem pItem, IElement pEle)
@@ -562,7 +585,8 @@ public boolean fireItemExpanding(ITreeItem item)
       
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#addItem(org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem, java.lang.String, int, org.netbeans.modules.uml.core.metamodel.core.foundation.IElement, org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem)
 	 */
 	public void addItem( IProjectTreeItem pParent, 
@@ -575,7 +599,8 @@ public boolean fireItemExpanding(ITreeItem item)
       
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#addItem2(org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem, java.lang.String, int, org.netbeans.modules.uml.core.metamodel.core.foundation.IElement, java.lang.String, org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem)
 	 */
 	public void addItem( IProjectTreeItem pParent, 
@@ -589,7 +614,8 @@ public boolean fireItemExpanding(ITreeItem item)
       
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#addItem3(org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem, java.lang.String, int, org.netbeans.modules.uml.core.metamodel.core.foundation.IElement, java.lang.Object, java.lang.String, org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem)
 	 */
 	public void addItem( IProjectTreeItem pParent, 
@@ -604,7 +630,8 @@ public boolean fireItemExpanding(ITreeItem item)
       
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#beginEditFirstSelected()
 	 */
 	public void beginEditFirstSelected()
@@ -613,7 +640,8 @@ public boolean fireItemExpanding(ITreeItem item)
       
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#beginEditThisItem(org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem)
 	 */
 	public void beginEditThisItem(IProjectTreeItem pItem)
@@ -622,7 +650,8 @@ public boolean fireItemExpanding(ITreeItem item)
       
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#getSelected()
 	 */
 	public IProjectTreeItem[] getSelected()
@@ -644,7 +673,8 @@ public boolean fireItemExpanding(ITreeItem item)
       return retVal;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#deselectAll()
 	 */
 	public void deselectAll()
@@ -653,7 +683,8 @@ public boolean fireItemExpanding(ITreeItem item)
       
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#endEditing(boolean)
 	 */
 	public void endEditing(boolean bSaveChanges)
@@ -662,7 +693,8 @@ public boolean fireItemExpanding(ITreeItem item)
       
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#deleteSelectedItems()
 	 */
 	public void deleteSelectedItems()
@@ -671,7 +703,8 @@ public boolean fireItemExpanding(ITreeItem item)
       
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#setText(org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem, java.lang.String)
 	 */
 	public void setText(IProjectTreeItem pItem, String sText)
@@ -680,7 +713,8 @@ public boolean fireItemExpanding(ITreeItem item)
       
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#getParent(org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem)
 	 */
 	public IProjectTreeItem getParent(IProjectTreeItem pItem)
@@ -689,7 +723,8 @@ public boolean fireItemExpanding(ITreeItem item)
 		return null;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#retrieveProjectFromItem(org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem)
 	 */
 	public IProject retrieveProjectFromItem(IProjectTreeItem pProjItem)
@@ -698,7 +733,8 @@ public boolean fireItemExpanding(ITreeItem item)
 		return null;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#getProjects()
 	 */
 	public IProjectTreeItem[] getProjects()
@@ -707,7 +743,8 @@ public boolean fireItemExpanding(ITreeItem item)
 		return null;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#getWorkspaceTreeItem()
 	 */
 	public IProjectTreeItem getWorkspaceTreeItem()
@@ -716,7 +753,8 @@ public boolean fireItemExpanding(ITreeItem item)
 		return null;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#getChildren(org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem)
 	 */
 	public IProjectTreeItem[] getChildren(IProjectTreeItem pItem)
@@ -725,7 +763,8 @@ public boolean fireItemExpanding(ITreeItem item)
 		return null;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#getChildDiagrams(org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem)
 	 */
 	public IProjectTreeItem[] getChildDiagrams(IProjectTreeItem pItem)
@@ -734,7 +773,8 @@ public boolean fireItemExpanding(ITreeItem item)
 		return null;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#findNode(java.lang.String, java.lang.String)
 	 */
 	public IProjectTreeItem[] findNode(String sTopLevelXMIID, String itemXMIID)
@@ -743,7 +783,8 @@ public boolean fireItemExpanding(ITreeItem item)
 		return null;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#findNode2(org.netbeans.modules.uml.core.metamodel.core.foundation.IElement)
 	 */
 	public IProjectTreeItem[] findNode2(IElement pElement)
@@ -752,7 +793,8 @@ public boolean fireItemExpanding(ITreeItem item)
 		return null;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#findNodeWithDescription(org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem, java.lang.String)
 	 */
 	public IProjectTreeItem[] findNodeWithDescription(IProjectTreeItem pParent, String sDescription)
@@ -761,7 +803,8 @@ public boolean fireItemExpanding(ITreeItem item)
 		return null;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#findNodesRepresentingMetaType(org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem, java.lang.String)
 	 */
 	public IProjectTreeItem[] findNodesRepresentingMetaType(IProjectTreeItem pParent, String sMetaType)
@@ -770,7 +813,8 @@ public boolean fireItemExpanding(ITreeItem item)
 		return null;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#findDiagramNode(java.lang.String)
 	 */
 	public IProjectTreeItem[] findDiagramNode(String sTOMFilename)
@@ -779,7 +823,8 @@ public boolean fireItemExpanding(ITreeItem item)
 		return null;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#removeDiagramNode(java.lang.String, boolean)
 	 */
 	public void removeDiagramNode(String sTOMFilename, boolean bPostEvent)
@@ -788,7 +833,8 @@ public boolean fireItemExpanding(ITreeItem item)
       
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#removeFromTree(org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem[])
 	 */
 	public void removeFromTree(IProjectTreeItem[] pRemovedItems)
@@ -797,7 +843,8 @@ public boolean fireItemExpanding(ITreeItem item)
       
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#removeFromTree2(org.netbeans.modules.uml.core.metamodel.core.foundation.IElement)
 	 */
 	public void removeFromTree2(IElement pElementToRemove)
@@ -806,7 +853,8 @@ public boolean fireItemExpanding(ITreeItem item)
       
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#selectProject(org.netbeans.modules.uml.core.metamodel.structure.IProject)
 	 */
 	public void selectProject(IProject pProject)
@@ -815,7 +863,8 @@ public boolean fireItemExpanding(ITreeItem item)
       
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#lockWindowUpdate(boolean)
 	 */
 	public void lockWindowUpdate(boolean bLock)
@@ -824,7 +873,8 @@ public boolean fireItemExpanding(ITreeItem item)
       
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#getDropTargetItem()
 	 */
 	public IProjectTreeItem getDropTargetItem()
@@ -843,7 +893,8 @@ public boolean fireItemExpanding(ITreeItem item)
       return retVal;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#closeProject(org.netbeans.modules.uml.core.metamodel.structure.IProject)
 	 */
 	public void closeProject(IProject pProject)
@@ -852,7 +903,8 @@ public boolean fireItemExpanding(ITreeItem item)
       
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#openProject(org.netbeans.modules.uml.core.metamodel.structure.IProject)
 	 */
 	public void openProject(IProject pProject)
@@ -861,7 +913,8 @@ public boolean fireItemExpanding(ITreeItem item)
       
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#areJustTheseSelected(int)
 	 */
 	public boolean areJustTheseSelected(int items)
@@ -870,7 +923,8 @@ public boolean fireItemExpanding(ITreeItem item)
 		return false;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#atLeastOneOfTheseSelected(int)
 	 */
 	public boolean atLeastOneOfTheseSelected(int items)
@@ -879,7 +933,8 @@ public boolean fireItemExpanding(ITreeItem item)
 		return false;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#getFirstSelectedModelElement(org.netbeans.modules.uml.core.metamodel.core.foundation.IElement, boolean)
 	 */
 	public void getFirstSelectedModelElement(IElement pItem, boolean bIsTopItem)
@@ -888,7 +943,8 @@ public boolean fireItemExpanding(ITreeItem item)
       
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#getFirstSelectedModelElement2(org.netbeans.modules.uml.core.metamodel.core.foundation.IElement, org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem, boolean)
 	 */
 	public void getFirstSelectedModelElement2(IElement pItem, IProjectTreeItem pTreeItem, boolean bIsTopItem)
@@ -897,7 +953,8 @@ public boolean fireItemExpanding(ITreeItem item)
       
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#getFirstSelectedDiagram(java.lang.StringBuffer, boolean)
 	 */
 	public void getFirstSelectedDiagram(StringBuffer sLocation, boolean bIsTopItem)
@@ -906,7 +963,8 @@ public boolean fireItemExpanding(ITreeItem item)
       
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#getFirstSelectedOpenDiagram(java.lang.StringBuffer, boolean)
 	 */
 	public void getFirstSelectedOpenDiagram(StringBuffer sLocation, boolean bIsTopItem)
@@ -915,7 +973,8 @@ public boolean fireItemExpanding(ITreeItem item)
       
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#getFirstSelectedClosedDiagram(java.lang.StringBuffer, boolean)
 	 */
 	public void getFirstSelectedClosedDiagram(StringBuffer sLocation, boolean bIsTopItem)
@@ -924,7 +983,8 @@ public boolean fireItemExpanding(ITreeItem item)
       
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#getFirstSelectedOpenProject(java.lang.StringBuffer, boolean)
 	 */
 	public void getFirstSelectedOpenProject(StringBuffer sProjectName, boolean bIsTopItem)
@@ -933,7 +993,8 @@ public boolean fireItemExpanding(ITreeItem item)
       
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#getFirstSelectedClosedProject(java.lang.StringBuffer, boolean)
 	 */
 	public void getFirstSelectedClosedProject(StringBuffer sLocation, boolean bIsTopItem)
@@ -942,7 +1003,8 @@ public boolean fireItemExpanding(ITreeItem item)
       
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#getWindowHandle()
 	 */
 	public int getWindowHandle()
@@ -951,7 +1013,8 @@ public boolean fireItemExpanding(ITreeItem item)
 		return 0;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#findAndSelectInTree(org.netbeans.modules.uml.core.metamodel.core.foundation.IElement)
 	 */
 	public void findAndSelectInTree(IElement pModelElement)
@@ -960,7 +1023,8 @@ public boolean fireItemExpanding(ITreeItem item)
       
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#getHasBeenExpanded(org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem)
 	 */
 	public boolean getHasBeenExpanded(IProjectTreeItem pItem)
@@ -969,7 +1033,8 @@ public boolean fireItemExpanding(ITreeItem item)
 		return false;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#getIsExpanded(org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem)
 	 */
 	public boolean getIsExpanded(IProjectTreeItem pItem)
@@ -978,7 +1043,8 @@ public boolean fireItemExpanding(ITreeItem item)
 		return false;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#setIsExpanded(org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem, boolean)
 	 */
 	public void setIsExpanded(IProjectTreeItem pItem, boolean value)
@@ -987,7 +1053,8 @@ public boolean fireItemExpanding(ITreeItem item)
       
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#getIsSelected(org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem)
 	 */
 	public boolean getIsSelected(IProjectTreeItem pItem)
@@ -996,7 +1063,8 @@ public boolean fireItemExpanding(ITreeItem item)
 		return false;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#setIsSelected(org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem, boolean)
 	 */
 	public void setIsSelected(IProjectTreeItem pItem, boolean value)
@@ -1005,7 +1073,8 @@ public boolean fireItemExpanding(ITreeItem item)
       
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#rememberTreeState()
 	 */
 	public void rememberTreeState()
@@ -1014,7 +1083,8 @@ public boolean fireItemExpanding(ITreeItem item)
       
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#restoreTreeState()
 	 */
 	public void restoreTreeState()	{
@@ -1022,7 +1092,8 @@ public boolean fireItemExpanding(ITreeItem item)
       
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#openSelectedDiagrams()
 	 */
 	public IProxyDiagram[] openSelectedDiagrams()
@@ -1031,7 +1102,8 @@ public boolean fireItemExpanding(ITreeItem item)
 		return null;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#closeSelectedDiagrams()
 	 */
 	public IProxyDiagram[] closeSelectedDiagrams()
@@ -1040,7 +1112,8 @@ public boolean fireItemExpanding(ITreeItem item)
 		return null;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#saveSelectedDiagrams()
 	 */
 	public IProxyDiagram[] saveSelectedDiagrams()
@@ -1049,7 +1122,8 @@ public boolean fireItemExpanding(ITreeItem item)
 		return null;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#openSelectedProjects()
 	 */
 	public void openSelectedProjects()
@@ -1058,7 +1132,8 @@ public boolean fireItemExpanding(ITreeItem item)
       
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#closeSelectedProjects()
 	 */
 	public void closeSelectedProjects()
@@ -1067,7 +1142,8 @@ public boolean fireItemExpanding(ITreeItem item)
       
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#saveSelectedProjects()
 	 */
 	public void saveSelectedProjects()
@@ -1076,7 +1152,8 @@ public boolean fireItemExpanding(ITreeItem item)
       
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#handleLostProject(org.netbeans.modules.uml.core.workspacemanagement.IWSProject)
 	 */
 	public void handleLostProject(IWSProject wsProject)
@@ -1085,7 +1162,8 @@ public boolean fireItemExpanding(ITreeItem item)
       
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#questionUserAboutNameCollision(org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElement, java.lang.String, org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElement[], org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void questionUserAboutNameCollision(INamedElement pElement, 
@@ -1097,7 +1175,8 @@ public boolean fireItemExpanding(ITreeItem item)
       
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#getNumOpenProjects()
 	 */
 	public int getNumOpenProjects()
@@ -1106,7 +1185,8 @@ public boolean fireItemExpanding(ITreeItem item)
 		return 0;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#postDeleteModelElement(java.lang.String, java.lang.String)
 	 */
 	public void postDeleteModelElement(String sTopLevelXMIID, String sXMIID)
@@ -1115,7 +1195,8 @@ public boolean fireItemExpanding(ITreeItem item)
       
 	}
    
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#isEditing()
     */
    public boolean isEditing()
@@ -1147,7 +1228,8 @@ public boolean fireItemExpanding(ITreeItem item)
    public class ProjectTreeExpandHandler implements TreeWillExpandListener
    {
 
-      /* (non-Javadoc)
+      
+/* (non-Javadoc)
        * @see javax.swing.event.TreeWillExpandListener#treeWillExpand(javax.swing.event.TreeExpansionEvent)
        */
       public void treeWillExpand(TreeExpansionEvent e) 
@@ -1159,7 +1241,8 @@ public boolean fireItemExpanding(ITreeItem item)
          }     
       }
 
-      /* (non-Javadoc)
+      
+/* (non-Javadoc)
        * @see javax.swing.event.TreeWillExpandListener#treeWillCollapse(javax.swing.event.TreeExpansionEvent)
        */
       public void treeWillCollapse(TreeExpansionEvent event) 
@@ -1168,7 +1251,8 @@ public boolean fireItemExpanding(ITreeItem item)
       }
    }
 
-	/**
+	
+/**
 	 * This is called when the tree needs to be reloaded because of
 	 * advanced button clicked.
 	 */

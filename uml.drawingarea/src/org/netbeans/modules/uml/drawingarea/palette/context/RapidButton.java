@@ -53,10 +53,8 @@ import org.netbeans.api.visual.widget.ImageWidget;
 import org.netbeans.api.visual.widget.Widget;
 import org.netbeans.modules.uml.drawingarea.view.DesignerScene;
 
-/**
- *
- * @author treyspiva
- */
+
+
 public class RapidButton extends Widget
 {
     

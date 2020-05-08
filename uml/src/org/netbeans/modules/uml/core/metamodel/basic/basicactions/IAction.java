@@ -71,67 +71,80 @@ public interface IAction extends IElement
 	*/
 	public void removeSuccessor( IAction pAction );
 
-	/**
+	
+/**
 	 * 
 	*/
 	public ETList <IAction> getSuccessors();
 
-	/**
+	
+/**
 	 * 
 	*/
 	public void addPredecessor( IAction pAction );
 
-	/**
+	
+/**
 	 * 
 	*/
 	public void removePredecessor( IAction pAction );
 
-	/**
+	
+/**
 	 * 
 	*/
 	public ETList <IAction> getPredecessors();
 
-	/**
+	
+/**
 	 * 
 	*/
 	public void addOutput( IOutputPin pPin );
 
-	/**
+	
+/**
 	 * 
 	*/
 	public void removeOutput( IOutputPin pPin );
 
-	/**
+	
+/**
 	 * 
 	*/
 	public ETList <IOutputPin> getOutputs();
 
-	/**
+	
+/**
 	 * 
 	*/
 	public void addInput( IValueSpecification pPin );
 
-	/**
+	
+/**
 	 * 
 	*/
 	public void removeInput( IValueSpecification pPin );
 
-	/**
+	
+/**
 	 * 
 	*/
 	public ETList <IValueSpecification> getInputs();
 
-	/**
+	
+/**
 	 * 
 	*/
 	public void addJumpHandler( IJumpHandler pHandler );
 
-	/**
+	
+/**
 	 * 
 	*/
 	public void removeJumpHandler( IJumpHandler pHandler );
 
-	/**
+	
+/**
 	 * 
 	*/
 	public ETList <IJumpHandler> getJumpHandlers();

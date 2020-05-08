@@ -43,20 +43,12 @@
  */
 
 
-/*
- *
- * Created on Jul 1, 2003
- * @author Trey Spiva
- */
+
+
 package org.netbeans.modules.uml.ui.support;
 
-/**
- * The ProgressDialogMessageKind is used to specify the type of progress message
- * is being added to the progress dialog.
- *
- * @see IProgressDialog
- * @author Trey Spiva
- */
+
+
 public interface ProgressDialogMessageKind
 {
    public final static int PDMK_NONE      = 0;

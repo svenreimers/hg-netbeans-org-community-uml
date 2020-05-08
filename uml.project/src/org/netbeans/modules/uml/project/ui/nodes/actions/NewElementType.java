@@ -42,11 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * NewDiagramType.java
- *
- * Created on March 4, 2005, 4:39 PM
- */
+
+
 
 package org.netbeans.modules.uml.project.ui.nodes.actions;
 
@@ -64,10 +61,8 @@ import org.openide.util.HelpCtx;
 import org.openide.util.NbBundle;
 import org.openide.util.datatransfer.NewType;
 
-/**
- *
- * @author Craig Conover, craig.conover@sun.com
- */
+
+
 public class NewElementType extends NewType implements INewTypeExt
 {
 	private Node node;

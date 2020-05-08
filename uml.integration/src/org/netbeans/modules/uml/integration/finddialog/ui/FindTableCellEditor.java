@@ -42,6 +42,7 @@
  * made subject to such option by the copyright holder.
  */
 
+
 /*
  * Created on Jun 9, 2003
  *
@@ -55,10 +56,8 @@ import javax.swing.AbstractCellEditor;
 import javax.swing.JTable;
 import javax.swing.table.TableCellEditor;
 
-/**
- * @author sumitabhk
- *
- */
+
+
 public class FindTableCellEditor extends AbstractCellEditor implements
 		 TableCellEditor
 {
@@ -78,7 +77,8 @@ public class FindTableCellEditor extends AbstractCellEditor implements
 		m_UI = ui;
 	}
 
-	/**
+	
+/**
 	 * TreeTableCellEditor implementation. Component returned is the
 	 * JTree.
 	 */
@@ -90,7 +90,8 @@ public class FindTableCellEditor extends AbstractCellEditor implements
 		Component retObj = null;
 		return retObj;
 	}
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see javax.swing.CellEditor#getCellEditorValue()
 	 */
 	public Object getCellEditorValue()

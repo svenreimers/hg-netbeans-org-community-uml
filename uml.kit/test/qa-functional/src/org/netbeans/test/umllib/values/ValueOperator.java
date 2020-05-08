@@ -43,6 +43,7 @@
  */
 
 
+
 /*
  * ValueOperator.java
  *
@@ -56,10 +57,8 @@ import java.awt.event.KeyEvent;
 import org.netbeans.jemmy.Timeout;
 import org.netbeans.jemmy.operators.JTextFieldOperator;
 
-/**
- *
- * @author Alexandr Scherbatiy
- */
+
+
 public abstract class ValueOperator {
     
     
@@ -114,6 +113,7 @@ public abstract class ValueOperator {
     }
     
     
+
 /*
     protected void changeText(String newString, String oldString, JTextFieldOperator textFieldOperator){
         

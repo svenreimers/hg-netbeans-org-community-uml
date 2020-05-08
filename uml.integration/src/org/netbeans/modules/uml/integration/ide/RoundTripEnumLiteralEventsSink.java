@@ -63,10 +63,8 @@ import org.netbeans.modules.uml.core.support.umlsupport.Log;
 import org.netbeans.modules.uml.integration.ide.events.LiteralInfo;
 import org.netbeans.modules.uml.integration.ide.listeners.IEnumLiteralChangeListener;
 
-/**
- * @author  Daniel Prusa
- * @version 1.0
- */
+
+
 public class RoundTripEnumLiteralEventsSink extends RoundTripSource implements IRoundTripEnumLiteralEventsSink {
 
     public void onPreEnumLiteralChangeRequest(IChangeRequest newVal, IResultCell cell) {

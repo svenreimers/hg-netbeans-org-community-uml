@@ -53,10 +53,8 @@ import java.io.StringReader;
 import javax.swing.JTextArea;
 import javax.swing.text.Document;
 
-/**
- *
- * @author Trey Spiva
- */
+
+
 public class JFixedSizeTextArea extends JTextArea
 {
    public JFixedSizeTextArea()
@@ -86,7 +84,8 @@ public class JFixedSizeTextArea extends JTextArea
       super(doc);
    }
 
-   /**
+   
+/**
     * @param doc
     * @param text
     * @param rows
@@ -97,7 +96,8 @@ public class JFixedSizeTextArea extends JTextArea
       super(doc, text, rows, columns);
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see javax.swing.text.JTextComponent#setText(java.lang.String)
     */
    public void setText(String t)
@@ -109,7 +109,8 @@ public class JFixedSizeTextArea extends JTextArea
       setVisible(true);
    }
 
-   /**
+   
+/**
     * Retreives the maximumn number of characters that are required to display 
     * the texts.
     * 
@@ -140,7 +141,8 @@ public class JFixedSizeTextArea extends JTextArea
       
       return (retVal / 2) + 1;
    }
-	/**
+	
+/**
 	 * Retreives the maximumn number of characters that are required to display 
 	 * the texts.
 	 * 

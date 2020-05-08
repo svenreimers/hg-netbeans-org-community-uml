@@ -46,6 +46,7 @@
 package org.netbeans.modules.uml.core.metamodel.infrastructure;
 import org.netbeans.modules.uml.core.AbstractUMLTestCase;
 
+
 /**
  * Test cases for StructuredClassifier.
  */
@@ -58,7 +59,8 @@ public class StructuredClassifierTestCase extends AbstractUMLTestCase
 
     private IStructuredClassifier sc;
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see junit.framework.TestCase#setUp()
      */
     protected void setUp() throws Exception
@@ -67,7 +69,8 @@ public class StructuredClassifierTestCase extends AbstractUMLTestCase
         sc = createClass("StructuredClassifier");
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see junit.framework.TestCase#tearDown()
      */
     protected void tearDown() throws Exception

@@ -42,11 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : ComplexPort.java
- * Created on : Dec 5, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.metamodel.infrastructure;
 
 import org.dom4j.Element;
@@ -74,13 +71,13 @@ import org.netbeans.modules.uml.core.metamodel.structure.IProject;
 import org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ILanguage;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
-/**
- * @author Aztec
- */
+
+
 public class ComplexPort extends StructuralFeature implements IComplexPort
 {
     IPort m_Port = new Port();
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.NamedElement#addClientDependency(org.netbeans.modules.uml.core.metamodel.core.foundation.IDependency)
      */
     public void addClientDependency(IDependency dep)
@@ -88,7 +85,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         m_Port.addClientDependency(dep);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.Element#addElement(org.netbeans.modules.uml.core.metamodel.core.foundation.IElement)
      */
     public IElement addElement(IElement elem)
@@ -96,7 +94,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         return m_Port.addElement(elem);
     }
 
-    /**
+    
+/**
      * @param end
      */
     public void addEnd(IConnectorEnd end)
@@ -104,7 +103,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         m_Port.addEnd(end);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.Element#addOwnedConstraint(org.netbeans.modules.uml.core.metamodel.core.foundation.IConstraint)
      */
     public void addOwnedConstraint(IConstraint constraint)
@@ -112,7 +112,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         m_Port.addOwnedConstraint(constraint);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.Element#addPresentationElement(org.netbeans.modules.uml.core.metamodel.core.foundation.IPresentationElement)
      */
     public IPresentationElement addPresentationElement(IPresentationElement elem)
@@ -120,7 +121,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         return m_Port.addPresentationElement(elem);
     }
 
-    /**
+    
+/**
      * @param pInter
      */
     public void addProvidedInterface(IInterface pInter)
@@ -128,7 +130,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         m_Port.addProvidedInterface(pInter);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.RedefinableElement#addRedefinedElement(org.netbeans.modules.uml.core.metamodel.core.foundation.IRedefinableElement)
      */
     public long addRedefinedElement(IRedefinableElement element)
@@ -136,7 +139,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         return m_Port.addRedefinedElement(element);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.RedefinableElement#addRedefiningElement(org.netbeans.modules.uml.core.metamodel.core.foundation.IRedefinableElement)
      */
     public long addRedefiningElement(IRedefinableElement element)
@@ -144,7 +148,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         return m_Port.addRedefiningElement(element);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.Element#addReferencingReference(org.netbeans.modules.uml.core.metamodel.core.foundation.IReference)
      */
     public IReference addReferencingReference(IReference ref)
@@ -152,7 +157,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         return m_Port.addReferencingReference(ref);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.Element#addReferredReference(org.netbeans.modules.uml.core.metamodel.core.foundation.IReference)
      */
     public IReference addReferredReference(IReference ref)
@@ -160,7 +166,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         return m_Port.addReferredReference(ref);
     }
 
-    /**
+    
+/**
      * @param pInter
      */
     public void addRequiredInterface(IInterface pInter)
@@ -168,7 +175,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         m_Port.addRequiredInterface(pInter);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.Element#addSourceFile(java.lang.String)
      */
     public void addSourceFile(String fileName)
@@ -176,7 +184,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         m_Port.addSourceFile(fileName);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.Element#addSourceFlow(org.netbeans.modules.uml.core.metamodel.core.foundation.IFlow)
      */
     public void addSourceFlow(IFlow flow)
@@ -184,7 +193,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         m_Port.addSourceFlow(flow);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.NamedElement#addSupplierDependency(org.netbeans.modules.uml.core.metamodel.core.foundation.IDependency)
      */
     public void addSupplierDependency(IDependency dep)
@@ -192,7 +202,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         m_Port.addSupplierDependency(dep);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.Element#addTaggedValue(java.lang.String, java.lang.String)
      */
     public ITaggedValue addTaggedValue(String tagName, String value)
@@ -200,7 +211,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         return m_Port.addTaggedValue(tagName, value);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.Element#addTargetFlow(org.netbeans.modules.uml.core.metamodel.core.foundation.IFlow)
      */
     public void addTargetFlow(IFlow flow)
@@ -208,7 +220,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         m_Port.addTargetFlow(flow);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.Element#applyNewStereotypes(java.lang.String)
      */
     public void applyNewStereotypes(String name)
@@ -216,7 +229,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         m_Port.applyNewStereotypes(name);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.Element#applyStereotype(java.lang.Object)
      */
     public void applyStereotype(Object stereotype)
@@ -224,7 +238,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         m_Port.applyStereotype(stereotype);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.Element#applyStereotype2(java.lang.String)
      */
     public Object applyStereotype2(String name)
@@ -232,7 +247,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         return m_Port.applyStereotype2(name);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.Element#createConstraint(java.lang.String, java.lang.String)
      */
     public IConstraint createConstraint(String name, String expr)
@@ -240,7 +256,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         return m_Port.createConstraint(name, expr);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.VersionableElement#delete()
      */
     public void delete()
@@ -248,7 +265,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         m_Port.delete();
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.Element#deleteFlowRelations()
      */
     public void deleteFlowRelations()
@@ -256,7 +274,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         m_Port.deleteFlowRelations();
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.Element#deleteReferenceRelations()
      */
     public void deleteReferenceRelations()
@@ -264,7 +283,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         m_Port.deleteReferenceRelations();
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.VersionableElement#duplicate()
      */
     public IVersionableElement duplicate()
@@ -272,7 +292,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         return m_Port.duplicate();
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.Feature#duplicateToClassifier(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier)
      */
     public IFeature duplicateToClassifier(IClassifier destination)
@@ -280,7 +301,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         return m_Port.duplicateToClassifier(destination);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see java.lang.Object#equals(java.lang.Object)
      */
     public boolean equals(Object arg0)
@@ -288,7 +310,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         return m_Port.equals(arg0);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.NamedElement#getAlias()
      */
     public String getAlias()
@@ -296,7 +319,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         return m_Port.getAlias();
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.Element#getAllTaggedValues()
      */
     public ETList<ITaggedValue> getAllTaggedValues()
@@ -304,7 +328,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         return m_Port.getAllTaggedValues();
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.Element#getAppliedStereotypes()
      */
     public ETList<Object> getAppliedStereotypes()
@@ -312,7 +337,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         return m_Port.getAppliedStereotypes();
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.Element#getAppliedStereotypesAsString()
      */
     public ETList<String> getAppliedStereotypesAsString()
@@ -320,7 +346,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         return m_Port.getAppliedStereotypesAsString();
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.Element#getAppliedStereotypesAsString(boolean)
      */
     public String getAppliedStereotypesAsString(boolean honorAliasing)
@@ -328,7 +355,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         return m_Port.getAppliedStereotypesAsString(honorAliasing);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.Element#getAssociatedArtifactCount()
      */
     public long getAssociatedArtifactCount()
@@ -336,7 +364,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         return m_Port.getAssociatedArtifactCount();
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.Element#getAssociatedArtifacts()
      */
     public ETList<IElement> getAssociatedArtifacts()
@@ -344,7 +373,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         return m_Port.getAssociatedArtifacts();
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.NamedElement#getClientDependencies()
      */
     public ETList<IDependency> getClientDependencies()
@@ -352,7 +382,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         return m_Port.getClientDependencies();
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.NamedElement#getClientDependenciesByType(java.lang.String)
      */
     public ETList<IDependency> getClientDependenciesByType(String type)
@@ -360,7 +391,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         return m_Port.getClientDependenciesByType(type);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.NamedElement#getClientDependencyCount()
      */
     public long getClientDependencyCount()
@@ -368,7 +400,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         return m_Port.getClientDependencyCount();
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.Element#getDocumentation()
      */
     public String getDocumentation()
@@ -376,7 +409,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         return m_Port.getDocumentation();
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.VersionableElement#getDOM4JNode()
      */
     public Node getDOM4JNode()
@@ -384,7 +418,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         return m_Port.getDOM4JNode();
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.Element#getElementCount()
      */
     public long getElementCount()
@@ -392,7 +427,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         return m_Port.getElementCount();
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.VersionableElement#getElementNode()
      */
     public Element getElementNode()
@@ -400,7 +436,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         return m_Port.getElementNode();
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.Element#getElements()
      */
     public ETList<IElement> getElements()
@@ -408,7 +445,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         return m_Port.getElements();
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.Element#getElementType()
      */
     public String getElementType()
@@ -416,7 +454,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         return m_Port.getElementType();
     }
 
-    /**
+    
+/**
      * 
      */
     public ETList<IConnectorEnd> getEnds()
@@ -424,7 +463,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         return m_Port.getEnds();
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.Element#getExpandedElementType()
      */
     public String getExpandedElementType()
@@ -432,7 +472,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         return m_Port.getExpandedElementType();
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.Feature#getFeaturingClassifier()
      */
     public IClassifier getFeaturingClassifier()
@@ -440,7 +481,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         return m_Port.getFeaturingClassifier();
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.NamedElement#getFullyQualifiedName(boolean)
      */
     public String getFullyQualifiedName(boolean useProjName)
@@ -448,7 +490,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         return m_Port.getFullyQualifiedName(useProjName);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.RedefinableElement#getIsFinal()
      */
     public boolean getIsFinal()
@@ -456,7 +499,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         return m_Port.getIsFinal();
     }
 
-    /**
+    
+/**
      * @param pInter
      * @return
      */
@@ -465,7 +509,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         return m_Port.getIsProvidedInterface(pInter);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.RedefinableElement#getIsRedefined()
      */
     public boolean getIsRedefined()
@@ -473,7 +518,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         return m_Port.getIsRedefined();
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.RedefinableElement#getIsRedefining()
      */
     public boolean getIsRedefining()
@@ -481,7 +527,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         return m_Port.getIsRedefining();
     }
 
-    /**
+    
+/**
      * @param pInter
      * @return
      */
@@ -490,7 +537,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         return m_Port.getIsRequiredInterface(pInter);
     }
 
-    /**
+    
+/**
      * @return
      */
     public boolean getIsService()
@@ -498,7 +546,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         return m_Port.getIsService();
     }
 
-    /**
+    
+/**
      * @return
      */
     public boolean getIsSignal()
@@ -506,7 +555,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         return m_Port.getIsSignal();
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.Feature#getIsStatic()
      */
     public boolean getIsStatic()
@@ -514,7 +564,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         return m_Port.getIsStatic();
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.Element#getLanguages()
      */
     public ETList<ILanguage> getLanguages()
@@ -522,7 +573,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         return m_Port.getLanguages();
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.VersionableElement#getLineNumber()
      */
     public int getLineNumber()
@@ -530,7 +582,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         return m_Port.getLineNumber();
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.NamedElement#getName()
      */
     public String getName()
@@ -538,7 +591,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         return m_Port.getName();
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.NamedElement#getNamespace()
      */
     public INamespace getNamespace()
@@ -546,7 +600,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         return m_Port.getNamespace();
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.NamedElement#getNameWithAlias()
      */
     public String getNameWithAlias()
@@ -554,7 +609,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         return m_Port.getNameWithAlias();
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.VersionableElement#getNode()
      */
     public Node getNode()
@@ -562,7 +618,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         return m_Port.getNode();
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.Element#getNumAppliedStereotypes()
      */
     public int getNumAppliedStereotypes()
@@ -570,7 +627,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         return m_Port.getNumAppliedStereotypes();
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.Element#getOwnedConstraints()
      */
     public ETList<IConstraint> getOwnedConstraints()
@@ -578,7 +636,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         return m_Port.getOwnedConstraints();
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.Element#getOwner()
      */
     public IElement getOwner()
@@ -586,7 +645,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         return m_Port.getOwner();
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.Element#getOwningPackage()
      */
     public IPackage getOwningPackage()
@@ -594,7 +654,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         return m_Port.getOwningPackage();
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.Element#getPresentationElementById(java.lang.String)
      */
     public IPresentationElement getPresentationElementById(String id)
@@ -602,7 +663,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         return m_Port.getPresentationElementById(id);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.Element#getPresentationElementCount()
      */
     public long getPresentationElementCount()
@@ -610,7 +672,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         return m_Port.getPresentationElementCount();
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.Element#getPresentationElements()
      */
     public ETList<IPresentationElement> getPresentationElements()
@@ -618,7 +681,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         return m_Port.getPresentationElements();
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.Element#getProject()
      */
     public IProject getProject()
@@ -626,7 +690,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         return m_Port.getProject();
     }
 
-    /**
+    
+/**
      * @return
      */
     public IProtocolStateMachine getProtocol()
@@ -634,7 +699,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         return m_Port.getProtocol();
     }
 
-    /**
+    
+/**
      * 
      */
     public ETList<IInterface> getProvidedInterfaces()
@@ -642,7 +708,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         return m_Port.getProvidedInterfaces();
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.NamedElement#getQualifiedName()
      */
     public String getQualifiedName()
@@ -650,7 +717,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         return m_Port.getQualifiedName();
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.NamedElement#getQualifiedName2()
      */
     public String getQualifiedName2()
@@ -658,7 +726,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         return m_Port.getQualifiedName2();
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.RedefinableElement#getRedefinedElementCount()
      */
     public long getRedefinedElementCount()
@@ -666,7 +735,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         return m_Port.getRedefinedElementCount();
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.RedefinableElement#getRedefinedElements()
      */
     public ETList<IRedefinableElement> getRedefinedElements()
@@ -674,7 +744,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         return m_Port.getRedefinedElements();
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.RedefinableElement#getRedefiningElementCount()
      */
     public long getRedefiningElementCount()
@@ -682,7 +753,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         return m_Port.getRedefiningElementCount();
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.RedefinableElement#getRedefiningElements()
      */
     public ETList<IRedefinableElement> getRedefiningElements()
@@ -690,7 +762,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         return m_Port.getRedefiningElements();
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.Element#getReferencingReferenceCount()
      */
     public long getReferencingReferenceCount()
@@ -698,7 +771,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         return m_Port.getReferencingReferenceCount();
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.Element#getReferencingReferences()
      */
     public ETList<IReference> getReferencingReferences()
@@ -706,7 +780,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         return m_Port.getReferencingReferences();
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.Element#getReferredReferenceCount()
      */
     public long getReferredReferenceCount()
@@ -714,7 +789,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         return m_Port.getReferredReferenceCount();
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.Element#getReferredReferences()
      */
     public ETList<IReference> getReferredReferences()
@@ -722,7 +798,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         return m_Port.getReferredReferences();
     }
 
-    /**
+    
+/**
      * 
      */
     public ETList<IInterface> getRequiredInterfaces()
@@ -730,7 +807,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         return m_Port.getRequiredInterfaces();
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.Element#getSourceFiles()
      */
     public ETList<IElement> getSourceFiles()
@@ -738,7 +816,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         return m_Port.getSourceFiles();
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.Element#getSourceFiles2(java.lang.String)
      */
     public ETList<IElement> getSourceFiles2(String language)
@@ -746,7 +825,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         return m_Port.getSourceFiles2(language);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.Element#getSourceFiles3(org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ILanguage)
      */
     public ETList<IElement> getSourceFiles3(ILanguage language)
@@ -754,7 +834,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         return m_Port.getSourceFiles3(language);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.Element#getSourceFlowCount()
      */
     public long getSourceFlowCount()
@@ -762,7 +843,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         return m_Port.getSourceFlowCount();
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.Element#getSourceFlows()
      */
     public ETList<IFlow> getSourceFlows()
@@ -770,7 +852,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         return m_Port.getSourceFlows();
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.NamedElement#getSupplierDependencies()
      */
     public ETList<IDependency> getSupplierDependencies()
@@ -778,7 +861,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         return m_Port.getSupplierDependencies();
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.NamedElement#getSupplierDependenciesByType(java.lang.String)
      */
     public ETList<IDependency> getSupplierDependenciesByType(String type)
@@ -786,7 +870,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         return m_Port.getSupplierDependenciesByType(type);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.NamedElement#getSupplierDependencyCount()
      */
     public long getSupplierDependencyCount()
@@ -794,7 +879,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         return m_Port.getSupplierDependencyCount();
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.Element#getTaggedValueByName(java.lang.String)
      */
     public ITaggedValue getTaggedValueByName(String tagName)
@@ -802,7 +888,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         return m_Port.getTaggedValueByName(tagName);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.Element#getTaggedValueCount()
      */
     public long getTaggedValueCount()
@@ -810,7 +897,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         return m_Port.getTaggedValueCount();
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.Element#getTaggedValues()
      */
     public ETList<ITaggedValue> getTaggedValues()
@@ -818,7 +906,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         return m_Port.getTaggedValues();
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.Element#getTaggedValuesByName(java.lang.String)
      */
     public ETList<ITaggedValue> getTaggedValuesByName(String tagName)
@@ -826,7 +915,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         return m_Port.getTaggedValuesByName(tagName);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.Element#getTargetFlowCount()
      */
     public long getTargetFlowCount()
@@ -834,7 +924,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         return m_Port.getTargetFlowCount();
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.Element#getTargetFlows()
      */
     public ETList<IFlow> getTargetFlows()
@@ -842,7 +933,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         return m_Port.getTargetFlows();
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.Element#getTopLevelId()
      */
     public String getTopLevelId()
@@ -850,7 +942,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         return m_Port.getTopLevelId();
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.VersionableElement#getVersionedFileName()
      */
     public String getVersionedFileName()
@@ -858,7 +951,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         return m_Port.getVersionedFileName();
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.VersionableElement#getVersionedURI()
      */
     public String getVersionedURI()
@@ -866,7 +960,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         return m_Port.getVersionedURI();
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.NamedElement#getVisibility()
      */
     public int getVisibility()
@@ -874,7 +969,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         return m_Port.getVisibility();
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.VersionableElement#getXMIID()
      */
     public String getXMIID()
@@ -882,7 +978,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         return m_Port.getXMIID();
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see java.lang.Object#hashCode()
      */
     public int hashCode()
@@ -890,7 +987,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         return m_Port.hashCode();
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.Element#inSameProject(org.netbeans.modules.uml.core.metamodel.core.foundation.IElement)
      */
     public boolean inSameProject(IElement elem)
@@ -898,7 +996,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         return m_Port.inSameProject(elem);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.NamedElement#isAliased()
      */
     public boolean isAliased()
@@ -906,7 +1005,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         return m_Port.isAliased();
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.VersionableElement#isDeleted()
      */
     public boolean isDeleted()
@@ -914,7 +1014,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         return m_Port.isDeleted();
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.VersionableElement#isDirty()
      */
     public boolean isDirty()
@@ -922,7 +1023,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         return m_Port.isDirty();
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.VersionableElement#isMarkForExtraction()
      */
     public boolean isMarkForExtraction()
@@ -930,7 +1032,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         return m_Port.isMarkForExtraction();
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.NamedElement#isNameSame(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavioralFeature)
      */
     public boolean isNameSame(IBehavioralFeature feature)
@@ -938,7 +1041,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         return m_Port.isNameSame(feature);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.Element#isOwnedElement(org.netbeans.modules.uml.core.metamodel.core.foundation.IElement)
      */
     public boolean isOwnedElement(IElement elem)
@@ -946,7 +1050,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         return m_Port.isOwnedElement(elem);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.Element#isOwnedElement(java.lang.String)
      */
     public boolean isOwnedElement(String id)
@@ -954,7 +1059,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         return m_Port.isOwnedElement(id);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.Element#isPresent(org.netbeans.modules.uml.core.metamodel.core.foundation.IPresentationElement)
      */
     public boolean isPresent(IPresentationElement elem)
@@ -962,7 +1068,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         return m_Port.isPresent(elem);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.VersionableElement#isSame(org.netbeans.modules.uml.core.metamodel.core.foundation.IVersionableElement)
      */
     public boolean isSame(IVersionableElement elem)
@@ -970,7 +1077,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         return m_Port.isSame(elem);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.VersionableElement#isVersioned()
      */
     public boolean isVersioned()
@@ -978,7 +1086,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         return m_Port.isVersioned();
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.Feature#moveToClassifier(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier)
      */
     public void moveToClassifier(IClassifier destination)
@@ -986,7 +1095,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         m_Port.moveToClassifier(destination);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.VersionableElement#prepareNode(org.dom4j.Node)
      */
     public void prepareNode(Node node)
@@ -994,7 +1104,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         m_Port.prepareNode(node);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.NamedElement#removeClientDependency(org.netbeans.modules.uml.core.metamodel.core.foundation.IDependency)
      */
     public void removeClientDependency(IDependency dep)
@@ -1002,7 +1113,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         m_Port.removeClientDependency(dep);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.Element#removeElement(org.netbeans.modules.uml.core.metamodel.core.foundation.IElement)
      */
     public IElement removeElement(IElement elem)
@@ -1010,7 +1122,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         return m_Port.removeElement(elem);
     }
 
-    /**
+    
+/**
      * @param end
      */
     public void removeEnd(IConnectorEnd end)
@@ -1018,7 +1131,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         m_Port.removeEnd(end);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.Element#removeOwnedConstraint(org.netbeans.modules.uml.core.metamodel.core.foundation.IConstraint)
      */
     public void removeOwnedConstraint(IConstraint constraint)
@@ -1026,7 +1140,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         m_Port.removeOwnedConstraint(constraint);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.Element#removePresentationElement(org.netbeans.modules.uml.core.metamodel.core.foundation.IPresentationElement)
      */
     public void removePresentationElement(IPresentationElement elem)
@@ -1034,7 +1149,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         m_Port.removePresentationElement(elem);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.Element#removePresentationElements()
      */
     public void removePresentationElements()
@@ -1042,7 +1158,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         m_Port.removePresentationElements();
     }
 
-    /**
+    
+/**
      * @param end
      */
     public void removeProvidedInterface(IInterface end)
@@ -1050,7 +1167,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         m_Port.removeProvidedInterface(end);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.RedefinableElement#removeRedefinedElement(org.netbeans.modules.uml.core.metamodel.core.foundation.IRedefinableElement)
      */
     public long removeRedefinedElement(IRedefinableElement element)
@@ -1058,7 +1176,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         return m_Port.removeRedefinedElement(element);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.RedefinableElement#removeRedefiningElement(org.netbeans.modules.uml.core.metamodel.core.foundation.IRedefinableElement)
      */
     public long removeRedefiningElement(IRedefinableElement element)
@@ -1066,7 +1185,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         return m_Port.removeRedefiningElement(element);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.Element#removeReferencingReference(org.netbeans.modules.uml.core.metamodel.core.foundation.IReference)
      */
     public void removeReferencingReference(IReference ref)
@@ -1074,7 +1194,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         m_Port.removeReferencingReference(ref);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.Element#removeReferredReference(org.netbeans.modules.uml.core.metamodel.core.foundation.IReference)
      */
     public void removeReferredReference(IReference ref)
@@ -1082,7 +1203,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         m_Port.removeReferredReference(ref);
     }
 
-    /**
+    
+/**
      * @param end
      */
     public void removeRequiredInterface(IInterface end)
@@ -1090,7 +1212,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         m_Port.removeRequiredInterface(end);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.Element#removeSourceFile(java.lang.String)
      */
     public void removeSourceFile(String fileName)
@@ -1098,7 +1221,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         m_Port.removeSourceFile(fileName);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.Element#removeSourceFlow(org.netbeans.modules.uml.core.metamodel.core.foundation.IFlow)
      */
     public void removeSourceFlow(IFlow flow)
@@ -1106,7 +1230,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         m_Port.removeSourceFlow(flow);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.Element#removeStereotype(java.lang.Object)
      */
     public void removeStereotype(Object stereotype)
@@ -1114,7 +1239,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         m_Port.removeStereotype(stereotype);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.Element#removeStereotype2(java.lang.String)
      */
     public void removeStereotype2(String name)
@@ -1122,7 +1248,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         m_Port.removeStereotype2(name);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.Element#removeStereotypes()
      */
     public void removeStereotypes()
@@ -1130,7 +1257,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         m_Port.removeStereotypes();
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.NamedElement#removeSupplierDependency(org.netbeans.modules.uml.core.metamodel.core.foundation.IDependency)
      */
     public void removeSupplierDependency(IDependency dep)
@@ -1138,7 +1266,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         m_Port.removeSupplierDependency(dep);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.Element#removeTaggedValue(org.netbeans.modules.uml.core.metamodel.core.foundation.ITaggedValue)
      */
     public void removeTaggedValue(ITaggedValue tag)
@@ -1146,7 +1275,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         m_Port.removeTaggedValue(tag);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.Element#removeTargetFlow(org.netbeans.modules.uml.core.metamodel.core.foundation.IFlow)
      */
     public void removeTargetFlow(IFlow flow)
@@ -1154,7 +1284,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         m_Port.removeTargetFlow(flow);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.VersionableElement#removeVersionInformation()
      */
     public void removeVersionInformation()
@@ -1162,7 +1293,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         m_Port.removeVersionInformation();
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.Element#retrieveAppliedStereotype(java.lang.String)
      */
     public Object retrieveAppliedStereotype(String name)
@@ -1170,7 +1302,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         return m_Port.retrieveAppliedStereotype(name);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.VersionableElement#safeDelete()
      */
     public boolean safeDelete()
@@ -1178,7 +1311,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         return m_Port.safeDelete();
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.VersionableElement#saveIfVersioned()
      */
     public boolean saveIfVersioned()
@@ -1186,7 +1320,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         return m_Port.saveIfVersioned();
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.NamedElement#setAlias(java.lang.String)
      */
     public void setAlias(String str)
@@ -1194,7 +1329,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         m_Port.setAlias(str);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.VersionableElement#setDirty(boolean)
      */
     public void setDirty(boolean b)
@@ -1202,7 +1338,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         m_Port.setDirty(b);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.Element#setDocumentation(java.lang.String)
      */
     public void setDocumentation(String doc)
@@ -1210,7 +1347,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         m_Port.setDocumentation(doc);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.VersionableElement#setDom4JNode(org.dom4j.Node)
      */
     public void setDom4JNode(Node n)
@@ -1218,7 +1356,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         m_Port.setDom4JNode(n);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.Feature#setFeaturingClassifier(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier)
      */
     public void setFeaturingClassifier(IClassifier value)
@@ -1226,7 +1365,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         m_Port.setFeaturingClassifier(value);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.RedefinableElement#setIsFinal(boolean)
      */
     public void setIsFinal(boolean value)
@@ -1234,7 +1374,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         m_Port.setIsFinal(value);
     }
 
-    /**
+    
+/**
      * @param value
      */
     public void setIsService(boolean value)
@@ -1242,7 +1383,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         m_Port.setIsService(value);
     }
 
-    /**
+    
+/**
      * @param value
      */
     public void setIsSignal(boolean value)
@@ -1250,7 +1392,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         m_Port.setIsSignal(value);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.Feature#setIsStatic(boolean)
      */
     public void setIsStatic(boolean value)
@@ -1258,7 +1401,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         m_Port.setIsStatic(value);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.VersionableElement#setLineNumber(int)
      */
     public void setLineNumber(int num)
@@ -1266,7 +1410,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         m_Port.setLineNumber(num);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.VersionableElement#setMarkForExtraction(boolean)
      */
     public void setMarkForExtraction(boolean b)
@@ -1274,7 +1419,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         m_Port.setMarkForExtraction(b);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.NamedElement#setName(java.lang.String)
      */
     public void setName(String str)
@@ -1282,7 +1428,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         m_Port.setName(str);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.NamedElement#setNamespace(org.netbeans.modules.uml.core.metamodel.core.foundation.INamespace)
      */
     public void setNamespace(INamespace space)
@@ -1290,7 +1437,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         m_Port.setNamespace(space);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.NamedElement#setNameWithAlias(java.lang.String)
      */
     public void setNameWithAlias(String newVal)
@@ -1298,7 +1446,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         m_Port.setNameWithAlias(newVal);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.StructuralFeature#setNode(org.dom4j.Node)
      */
     public void setNode(Node n)
@@ -1307,7 +1456,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         m_Port.setNode(n);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.Element#setOwner(org.netbeans.modules.uml.core.metamodel.core.foundation.IElement)
      */
     public void setOwner(IElement elem)
@@ -1315,7 +1465,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         m_Port.setOwner(elem);
     }
 
-    /**
+    
+/**
      * @param value
      */
     public void setProtocol(IProtocolStateMachine value)
@@ -1323,7 +1474,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         m_Port.setProtocol(value);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.VersionableElement#setVersionedFileName(java.lang.String)
      */
     public void setVersionedFileName(String str)
@@ -1331,7 +1483,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         m_Port.setVersionedFileName(str);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.NamedElement#setVisibility(int)
      */
     public void setVisibility(int vis)
@@ -1339,7 +1492,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         m_Port.setVisibility(vis);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.VersionableElement#setXMIID(java.lang.String)
      */
     public void setXMIID(String str)
@@ -1347,7 +1501,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         m_Port.setXMIID(str);
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.Element#topLevelId()
      */
     public String topLevelId()
@@ -1355,7 +1510,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         return m_Port.topLevelId();
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see java.lang.Object#toString()
      */
     public String toString()
@@ -1363,7 +1519,8 @@ public class ComplexPort extends StructuralFeature implements IComplexPort
         return m_Port.toString();
     }
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.VersionableElement#verifyInMemoryStatus()
      */
     public boolean verifyInMemoryStatus()

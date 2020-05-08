@@ -43,11 +43,8 @@
  */
 
 
-/*
- * File       : JumpStateHandler.java
- * Created on : Dec 11, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.statehandlers;
 
 import org.dom4j.Node;
@@ -58,16 +55,16 @@ import org.netbeans.modules.uml.core.reverseengineering.reframework.IJumpEvent;
 import org.netbeans.modules.uml.core.reverseengineering.reframework.JumpEvent;
 import org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ITokenDescriptor;
 
-/**
- * @author Aztec
- */
+
+
 public class JumpStateHandler extends MethodDetailStateHandler
 {
     private String m_JumpDestination;
     private int m_JumpType = IJumpEvent.JE_GOTO;
 
 
-    /**
+    
+/**
      * @param language
      */
     public JumpStateHandler(String language, String stateName)

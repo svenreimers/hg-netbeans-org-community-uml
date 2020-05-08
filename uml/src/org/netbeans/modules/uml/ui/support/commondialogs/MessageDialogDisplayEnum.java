@@ -43,18 +43,12 @@
  */
 
 
-/*
- *
- * Created on Jul 1, 2003
- * @author Trey Spiva
- */
+
+
 package org.netbeans.modules.uml.ui.support.commondialogs;
 
-/**
- * The MessageDialogDisplayEnum is used to specify the mode.
- *
- * @author Trey Spiva
- */
+
+
 public interface MessageDialogDisplayEnum
 {
    public final static int MMK_NONE     = 0;

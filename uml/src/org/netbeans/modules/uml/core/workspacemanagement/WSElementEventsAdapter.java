@@ -47,133 +47,149 @@ package org.netbeans.modules.uml.core.workspacemanagement;
 
 import org.netbeans.modules.uml.core.support.umlsupport.IResultCell;
 
-/**
- *
- * @author Trey Spiva
- */
+
+
 public class WSElementEventsAdapter implements IWSElementEventsSink
 {
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     */
    public void onWSElementPreCreate(IWSProject wsProject, String location, String Name, String data, IResultCell cell)
    {
       // TODO Auto-generated method stub
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     */
    public void onWSElementCreated(IWSElement element, IResultCell cell)
    {
       // TODO Auto-generated method stub
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     */
    public void onWSElementPreSave(IWSElement element, IResultCell cell)
    {
       // TODO Auto-generated method stub
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     */
    public void onWSElementSaved(IWSElement element, IResultCell cell)
    {
       // TODO Auto-generated method stub
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     */
    public void onWSElementPreRemove(IWSElement element, IResultCell cell)
    {
       // TODO Auto-generated method stub
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     */
    public void onWSElementRemoved(IWSElement element, IResultCell cell)
    {
       // TODO Auto-generated method stub
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     */
    public void onWSElementPreNameChanged(IWSElement element, String proposedValue, IResultCell cell)
    {
       // TODO Auto-generated method stub
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     */
    public void onWSElementNameChanged(IWSElement element, IResultCell cell)
    {
       // TODO Auto-generated method stub
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     */
    public void onWSElementPreAliasChanged(IWSElement element, String proposedValue, IResultCell cell)
    {
       // TODO Auto-generated method stub
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     */
    public void onWSElementAliasChanged(IWSElement element, IResultCell cell)
    {
       // TODO Auto-generated method stub
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     */
    public void onWSElementPreOwnerChange(IWSElement element, IWSProject newOwner, IResultCell cell)
    {
       // TODO Auto-generated method stub
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     */
    public void onWSElementOwnerChanged(IWSElement element, IResultCell cell)
    {
       // TODO Auto-generated method stub
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     */
    public void onWSElementPreLocationChanged(IWSElement element, String proposedLocation, IResultCell cell)
    {
       // TODO Auto-generated method stub
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     */
    public void onWSElementLocationChanged(IWSElement element, IResultCell cell)
    {
       // TODO Auto-generated method stub
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     */
    public void onWSElementPreDataChanged(IWSElement element, String newData, IResultCell cell)
    {
       // TODO Auto-generated method stub
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     */
    public void onWSElementDataChanged(IWSElement element, IResultCell cell)
    {
       // TODO Auto-generated method stub
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     */
    public void onWSElementPreDocChanged(IWSElement element, String doc, IResultCell cell)
    {
       // TODO Auto-generated method stub
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     */
    public void onWSElementDocChanged(IWSElement element, IResultCell cell)
    {

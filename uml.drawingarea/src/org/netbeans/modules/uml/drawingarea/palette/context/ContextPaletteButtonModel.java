@@ -49,17 +49,12 @@ import org.netbeans.api.visual.action.WidgetAction;
 import org.netbeans.api.visual.widget.Scene;
 import org.openide.loaders.DataObject;
 
-/**
- * The ContextPaletteButtonModel interface specifies the data used to build
- * the buttons in the context palette.  A palette button can be a group of
- * buttons.  It is up to the palette implementation of how to display a 
- * group of actions.
- * 
- * @author treyspiva
- */
+
+
 public interface ContextPaletteButtonModel 
 {
-    /**
+    
+/**
      * Gives the ContextPaletteButtonModel the chance to initialize the buttons
      * details from a NetBeans DataObject
      * 
@@ -67,7 +62,8 @@ public interface ContextPaletteButtonModel
      */
     public void initialize(DataObject fo);
     
-    /**
+    
+/**
      * Retrieves the actions that should be executed when the users presses 
      * the button.
      * 
@@ -76,60 +72,69 @@ public interface ContextPaletteButtonModel
      */
     public WidgetAction[] createActions(Scene scene);
     
-    /**
+    
+/**
      * Checks if the palette button is a group of associated buttons.
      * @return true if the button is a true, false otherwise.
      */
     public boolean isGroup();
     
-    /**
+    
+/**
      * If the button is a group button, then getChildren will return the 
      * button models that are part of the group.
      * @return
      */
     public ArrayList<ContextPaletteButtonModel> getChildren();
     
-    /**
+    
+/**
      * The image that represents the button.
      * 
      * @return the image associated with the button.
      */
     public Image getImage();
     
-    /**
+    
+/**
      * The buttons name.
      * 
      * @return the name.
      */
     public String getName();
     
-    /**
+    
+/**
      * The buttons tooltip.
      * 
      * @return tooltip.
      */
     public String getTooltip();
     
-    /**
+    
+/**
      * Sets the image for the button.
      * @param image the image
      */
     public void setImage(Image image);
     
-    /**
+    
+/**
      * Sets the buttons tooltip.
      * @param tooltip the tooltip.
      */
     public void setTooltip(String tooltip);
     
-    /**
+    
+/**
      * Sets the ContextPaletteModel that is owns the button model.
      * @param model The owner.
      * @see ContextPaletteModel
      */
     public void setPaletteModel(ContextPaletteModel model);
     
-    /**
+    
+/**
      * Retrieves the ContextPaletteModel that owns the button model.
      * 
      * @return the owner.

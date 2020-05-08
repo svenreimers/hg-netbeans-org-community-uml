@@ -52,9 +52,8 @@ import org.netbeans.jemmy.operators.JPopupMenuOperator;
 import org.netbeans.test.umllib.DiagramElementOperator;
 import org.netbeans.test.umllib.LinkOperator;
 
-/**
- * @author yaa
- */
+
+
 
 public class AssociateAction extends ActionNoBlock{
     

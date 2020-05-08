@@ -50,10 +50,8 @@ import javax.swing.table.TableModel;
 import org.netbeans.modules.uml.common.generics.ETPairT;
 import org.openide.util.NbBundle;
 
-/**
- *
- * @author Thuy
- */
+
+
 public class MultiplictyRangeHandler 
 {
     private ResourceBundle bundle = NbBundle.getBundle(MultiplictyRangeHandler.class);

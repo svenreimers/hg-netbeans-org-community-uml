@@ -48,15 +48,14 @@ package org.netbeans.modules.uml.reporting.dataobjects;
 import org.netbeans.modules.uml.core.metamodel.common.commonactivities.IInitialNode;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.IElement;
 
-/**
- *
- * @author Sheryl
- */
+
+
 public class InitialNodeData extends ActivityNodeData
 {
     
     
-    /**
+    
+/**
      * Creates a new instance of InitialNodeData
      */
     public InitialNodeData()

@@ -42,6 +42,7 @@
  * made subject to such option by the copyright holder.
  */
 
+
 /*
  * Created on Nov 5, 2003
  *
@@ -51,10 +52,8 @@ package org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javar
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier;
 import org.netbeans.modules.uml.core.roundtripframework.IClassChangeFacility;
 
-/**
- * @author aztec
- *
- */
+
+
 public interface IJavaClassChangeFacility extends IClassChangeFacility
 {
 	public void nameChanged(IClassifier classifier);

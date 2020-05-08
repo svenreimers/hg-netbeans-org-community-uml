@@ -50,13 +50,12 @@ import java.io.File;
 import java.io.IOException;
 import java.net.URI;
 
-/**
- * @author sumitabhk
- *
- */
+
+
 public class PathManip
 {
-   /**
+   
+/**
     *
     * Checks to see if path is relative to rootPath. If it is, an absolute path
     * is built.
@@ -157,7 +156,8 @@ public class PathManip
       
       return retVal;
    }
-   /**
+   
+/**
     *
     * Retrieves the relative path between newFile and curFile
     *

@@ -47,10 +47,8 @@ package org.netbeans.modules.uml.core.metamodel.core.foundation;
 
 import org.netbeans.modules.uml.core.eventframework.EventPayload;
 
-/**
- * @author sumitabhk
- *
- */
+
+
 public class MetaAttributeModifiedEventPayload extends EventPayload
 			implements IMetaAttributeModifiedEventPayload{
 
@@ -61,7 +59,8 @@ public class MetaAttributeModifiedEventPayload extends EventPayload
 		super();
 	}
 
-	/**
+	
+/**
 	 * Retrieves the actual element being modified.
 	 *
 	 * @param [out]
@@ -73,7 +72,8 @@ public class MetaAttributeModifiedEventPayload extends EventPayload
 		return null;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IMetaAttributeModifiedEventPayload#setElement(org.netbeans.modules.uml.core.metamodel.core.foundation.IVersionableElement)
 	 */
 	public void setElement(IVersionableElement value) {
@@ -81,7 +81,8 @@ public class MetaAttributeModifiedEventPayload extends EventPayload
 		
 	}
 
-	/**
+	
+/**
 	 * Retrieves the name of the property on the element being modified.
 	 * 
 	 * @param [out] 
@@ -93,7 +94,8 @@ public class MetaAttributeModifiedEventPayload extends EventPayload
 		return null;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IMetaAttributeModifiedEventPayload#setPropertyName(java.lang.String)
 	 */
 	public void setPropertyName(String value) {
@@ -101,7 +103,8 @@ public class MetaAttributeModifiedEventPayload extends EventPayload
 		
 	}
 
-	/**
+	
+/**
 	 * Retrieves the original value of the property.
 	 * 
 	 * @param [out] 
@@ -113,7 +116,8 @@ public class MetaAttributeModifiedEventPayload extends EventPayload
 		return null;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IMetaAttributeModifiedEventPayload#setOriginalValue(java.lang.String)
 	 */
 	public void setOriginalValue(String value) {
@@ -121,7 +125,8 @@ public class MetaAttributeModifiedEventPayload extends EventPayload
 		
 	}
 
-	/**
+	
+/**
 	 * Retrieves the new value of the property.
 	 * 
 	 * @param [out] 
@@ -133,7 +138,8 @@ public class MetaAttributeModifiedEventPayload extends EventPayload
 		return null;
 	}
 
-	/**
+	
+/**
 	 * Retrieves the new value of the property.
 	 * 
 	 * @param [in] 

@@ -55,20 +55,23 @@ import org.netbeans.modules.uml.core.eventframework.IEventDispatchController;
 import org.netbeans.modules.uml.core.eventframework.IEventDispatcher;
 import org.netbeans.modules.uml.core.support.umlsupport.ProductRetriever;
 
+
 /**
  * Used to push various EventContexts onto dispatchers or controllers with various
  * properties.
  */
 public class EventContextManager {
 
-	/**
+	
+/**
 	 * 
 	 */
 	public EventContextManager() {
 		super();
 	}
 
-	/**
+	
+/**
 	 *
 	 * Creates a new EventContext that will be propogated to all 
 	 * EventDispatchers on the Product's EventDispatchController.
@@ -118,7 +121,8 @@ public class EventContextManager {
 		}
 	}
 
-	/**
+	
+/**
 	 *
 	 * Retrieves the controller on the current product.
 	 *
@@ -137,7 +141,8 @@ public class EventContextManager {
 		return cont;
 	}
 
-	/**
+	
+/**
 	 *
 	 * This method will create a new event context, giving it a name that is passed in.
 	 * It will then check the current dirty state of the passed in element, placing the
@@ -184,7 +189,8 @@ public class EventContextManager {
 		return new ETPairT < IEventContext, IEventDispatcher >(retCon, disp);
 	}
 	
-	/**
+	
+/**
 	 *
 	 * Pops any event context who has a filter on it with an
 	 * id that matches the XMI ID of the element passed into this
@@ -210,7 +216,8 @@ public class EventContextManager {
 		}
 	}
 
-	/**
+	
+/**
 	 *
 	 * Determines whether or not the current EventContext is a
 	 * "PresentationAdded" or "DefaultImports" context.
@@ -241,7 +248,8 @@ public class EventContextManager {
 		return retVal;
 	}
 	
-   /**
+   
+/**
 	 * Retreives the context that is a no effect context.
     *
 	 * @return  If <code>null</code> is returned then there are not "no effect

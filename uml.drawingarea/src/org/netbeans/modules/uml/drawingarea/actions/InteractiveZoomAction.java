@@ -52,10 +52,8 @@ import org.netbeans.modules.uml.drawingarea.SQDDiagramTopComponent;
 import org.netbeans.modules.uml.drawingarea.ZoomManager;
 import org.netbeans.modules.uml.drawingarea.view.DesignerScene;
 
-/**
- *
- * @author Sheryl Su
- */
+
+
 public class InteractiveZoomAction extends WidgetAction.Adapter
 {
 

@@ -45,10 +45,8 @@
 
 package org.netbeans.modules.uml.core.metamodel.core.foundation;
 
-/**
- * @author sumitabhk
- *
- */
+
+
 public class AutonomousElement extends NamedElement implements IAutonomousElement{
 
 	/**
@@ -58,7 +56,8 @@ public class AutonomousElement extends NamedElement implements IAutonomousElemen
 		super();
 	}
 
-	/**
+	
+/**
 	 *
 	 * Indicates that an AutonomousElement is expanded based on a PackageExtension.
 	 * Expanded AutonomousElements need not be interchanged through XMI, but can
@@ -76,7 +75,8 @@ public class AutonomousElement extends NamedElement implements IAutonomousElemen
 		return getBooleanAttributeValue("isExpanded", false);
 	}
 
-	/**
+	
+/**
 	 *
 	 * Indicates that an AutonomousElement is expanded based on a PackageExtension.
 	 * Expanded AutonomousElements need not be interchanged through XMI, but can
@@ -94,7 +94,8 @@ public class AutonomousElement extends NamedElement implements IAutonomousElemen
 		setBooleanAttributeValue("isExpanded", newVal);
 	}
 
-	/**
+	
+/**
 	 *
 	 * @see NamedElementImpl::PerformDuplication()
 	 *

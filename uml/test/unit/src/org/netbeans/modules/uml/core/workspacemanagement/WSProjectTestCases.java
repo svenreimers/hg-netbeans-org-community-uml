@@ -52,16 +52,15 @@ import junit.framework.TestCase;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 import org.netbeans.modules.uml.core.support.umlutils.InvalidArguments;
 
-/**
- *
- * @author Trey Spiva
- */
+
+
 public class WSProjectTestCases extends TestCase
 {
     private WorkspaceEventDispatcher m_Dispatcher        = new WorkspaceEventDispatcher();
     private TestWorkspaceListener    m_WorkspaceListener = new TestWorkspaceListener();
     private TestWSProjectListener    m_WSProjectListener = new TestWSProjectListener();
-    /**
+    
+/**
      * Constructor for WSProjectTestCases.
      * @param arg0
      */
@@ -386,7 +385,8 @@ public class WSProjectTestCases extends TestCase
         }
     }
     
-    /**
+    
+/**
      * @param string
      * @param string2
      * @param b
@@ -426,7 +426,8 @@ public class WSProjectTestCases extends TestCase
         return retVal;
     }
     
-        /*
+        
+/*
          * @see TestCase#setUp()
          */
     protected void setUp() throws Exception
@@ -437,7 +438,8 @@ public class WSProjectTestCases extends TestCase
         m_Dispatcher.registerForWSProjectEvents(m_WSProjectListener);
     }
     
-        /*
+        
+/*
          * @see TestCase#tearDown()
          */
     protected void tearDown() throws Exception

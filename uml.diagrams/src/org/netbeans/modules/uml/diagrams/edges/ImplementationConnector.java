@@ -52,10 +52,8 @@ import org.netbeans.api.visual.widget.Scene;
 import org.netbeans.modules.uml.diagrams.nodes.InterfaceWidget;
 import org.netbeans.modules.uml.drawingarea.view.WidgetViewManager;
 
-/**
- *
- * @author treyspiva
- */
+
+
 public class ImplementationConnector extends AbstractUMLConnectionWidget
 {
     public ImplementationConnector(Scene scene)

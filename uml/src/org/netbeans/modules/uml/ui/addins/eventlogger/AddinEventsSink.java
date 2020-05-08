@@ -180,10 +180,8 @@ import org.netbeans.modules.uml.core.scm.ISCMOptions;
 //import org.netbeans.modules.uml.ui.swing.drawingarea.IPresentationElementSyncState;
 //import org.netbeans.modules.uml.ui.swing.drawingarea.IReconnectEdgeContext;
 
-/**
- * @author sumitabhk
- *
- */
+
+
 public class AddinEventsSink implements 
 //        IDrawingAreaEventsSink,
 //										IDrawingAreaSynchEventsSink,
@@ -246,7 +244,8 @@ public class AddinEventsSink implements
 {
 	private EventLoggingAddin m_Parent = null;
 
-	/**
+	
+/**
 	 * 
 	 */
 	public AddinEventsSink()
@@ -399,7 +398,8 @@ public class AddinEventsSink implements
 		return retStr;
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.swing.drawingarea.IDrawingAreaEventsSink#onDrawingAreaPreCreated(org.netbeans.modules.uml.ui.swing.drawingarea.IDrawingAreaControl, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 //	public void onDrawingAreaPreCreated(IDrawingAreaControl pDiagramControl, IResultCell cell)
@@ -415,7 +415,8 @@ public class AddinEventsSink implements
 //		addMessage("OnDrawingAreaPostCreated");
 //	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.swing.drawingarea.IDrawingAreaEventsSink#onDrawingAreaOpened(org.netbeans.modules.uml.core.metamodel.diagrams.IDiagram, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onDrawingAreaOpened(IDiagram pParentDiagram, IResultCell cell)
@@ -423,7 +424,8 @@ public class AddinEventsSink implements
 		addMessage("OnDrawingAreaOpened");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.swing.drawingarea.IDrawingAreaEventsSink#onDrawingAreaClosed(org.netbeans.modules.uml.core.metamodel.diagrams.IDiagram, boolean, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onDrawingAreaClosed(IDiagram pParentDiagram, boolean bDiagramIsDirty, IResultCell cell)
@@ -431,7 +433,8 @@ public class AddinEventsSink implements
 		addMessage("OnDrawingAreaClosed");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.swing.drawingarea.IDrawingAreaEventsSink#onDrawingAreaPreSave(org.netbeans.modules.uml.core.metamodel.diagrams.IProxyDiagram, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onDrawingAreaPreSave(IProxyDiagram pParentDiagram, IResultCell cell)
@@ -439,7 +442,8 @@ public class AddinEventsSink implements
 		addMessage("OnDrawingAreaPreSave");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.swing.drawingarea.IDrawingAreaEventsSink#onDrawingAreaPostSave(org.netbeans.modules.uml.core.metamodel.diagrams.IProxyDiagram, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onDrawingAreaPostSave(IProxyDiagram pParentDiagram, IResultCell cell)
@@ -447,7 +451,8 @@ public class AddinEventsSink implements
 		addMessage("OnDrawingAreaPostSave");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.swing.drawingarea.IDrawingAreaEventsSink#onDrawingAreaKeyDown(org.netbeans.modules.uml.core.metamodel.diagrams.IDiagram, int, boolean, boolean, boolean, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onDrawingAreaKeyDown(IDiagram pParentDiagram, int nKeyCode, boolean bControlIsDown, boolean bShiftIsDown, boolean bAltIsDown, IResultCell cell)
@@ -455,7 +460,8 @@ public class AddinEventsSink implements
 		addMessage("OnDrawingAreaKeyDown");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.swing.drawingarea.IDrawingAreaEventsSink#onDrawingAreaPrePropertyChange(org.netbeans.modules.uml.core.metamodel.diagrams.IProxyDiagram, int, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onDrawingAreaPrePropertyChange(IProxyDiagram pProxyDiagram, int nPropertyKindChanged, IResultCell cell)
@@ -492,7 +498,8 @@ public class AddinEventsSink implements
 		}
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.swing.drawingarea.IDrawingAreaEventsSink#onDrawingAreaPostPropertyChange(org.netbeans.modules.uml.core.metamodel.diagrams.IProxyDiagram, int, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onDrawingAreaPostPropertyChange(IProxyDiagram pProxyDiagram, int nPropertyKindChanged, IResultCell cell)
@@ -500,7 +507,8 @@ public class AddinEventsSink implements
 		addMessage( "OnDrawingAreaPostPropertyChange");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.swing.drawingarea.IDrawingAreaEventsSink#onDrawingAreaTooltipPreDisplay(org.netbeans.modules.uml.core.metamodel.diagrams.IDiagram, org.netbeans.modules.uml.core.metamodel.core.foundation.IPresentationElement, org.netbeans.modules.uml.ui.support.viewfactorysupport.IToolTipData, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 //	public void onDrawingAreaTooltipPreDisplay(IDiagram pParentDiagram, IPresentationElement pPE, IToolTipData pTooltip, IResultCell cell)
@@ -508,7 +516,8 @@ public class AddinEventsSink implements
 //		addMessage( "OnDrawingAreaTooltipPreDisplay");
 //	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.swing.drawingarea.IDrawingAreaEventsSink#onDrawingAreaActivated(org.netbeans.modules.uml.core.metamodel.diagrams.IDiagram, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onDrawingAreaActivated(IDiagram pParentDiagram, IResultCell cell)
@@ -520,7 +529,8 @@ public class AddinEventsSink implements
 		}
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.swing.drawingarea.IDrawingAreaEventsSink#onDrawingAreaPreDrop(org.netbeans.modules.uml.core.metamodel.diagrams.IDiagram, org.netbeans.modules.uml.ui.swing.drawingarea.IDrawingAreaDropContext, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 //	public void onDrawingAreaPreDrop(IDiagram pParentDiagram, IDrawingAreaDropContext pContext, IResultCell cell)
@@ -535,7 +545,8 @@ public class AddinEventsSink implements
 //		addMessage(msg);
 //	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.swing.drawingarea.IDrawingAreaEventsSink#onDrawingAreaPostDrop(org.netbeans.modules.uml.core.metamodel.diagrams.IDiagram, org.netbeans.modules.uml.ui.swing.drawingarea.IDrawingAreaDropContext, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 //	public void onDrawingAreaPostDrop(IDiagram pParentDiagram, IDrawingAreaDropContext pContext, IResultCell cell)
@@ -543,7 +554,8 @@ public class AddinEventsSink implements
 //		addMessage("onDrawingAreaPostDrop"); 
 //	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.swing.drawingarea.IDrawingAreaEventsSink#onDrawingAreaPreFileRemoved(java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onDrawingAreaPreFileRemoved(String sFilename, IResultCell cell)
@@ -551,7 +563,8 @@ public class AddinEventsSink implements
 		addMessage("onDrawingAreaPreFileRemoved"); 
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.swing.drawingarea.IDrawingAreaEventsSink#onDrawingAreaFileRemoved(java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onDrawingAreaFileRemoved(String sFilename, IResultCell cell)
@@ -559,7 +572,8 @@ public class AddinEventsSink implements
 		addMessage("onDrawingAreaFileRemoved");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.swing.drawingarea.IDrawingAreaSynchEventsSink#onDrawingAreaPreRetrieveElementSynchState(org.netbeans.modules.uml.ui.swing.drawingarea.IPresentationElementSyncState, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 //	public void onDrawingAreaPreRetrieveElementSynchState(IPresentationElementSyncState pPresentationElementSyncState, IResultCell cell)
@@ -577,7 +591,8 @@ public class AddinEventsSink implements
 //		
 //	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.swing.drawingarea.IDrawingAreaSynchEventsSink#onDrawingAreaPrePresentationElementPerformSync(org.netbeans.modules.uml.ui.swing.drawingarea.IPresentationElementPerformSyncContext, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 //	public void onDrawingAreaPrePresentationElementPerformSync(IPresentationElementPerformSyncContext pPresentationElementSyncContext, IResultCell cell)
@@ -595,7 +610,8 @@ public class AddinEventsSink implements
 //		
 //	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.swing.drawingarea.IDrawingAreaSynchEventsSink#onDrawingAreaPreDiagramPerformSync(org.netbeans.modules.uml.ui.swing.drawingarea.IDiagramPerformSyncContext, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 //	public void onDrawingAreaPreDiagramPerformSync(IDiagramPerformSyncContext pDiagramSyncContext, IResultCell cell)
@@ -604,7 +620,8 @@ public class AddinEventsSink implements
 //		
 //	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.swing.drawingarea.IDrawingAreaSynchEventsSink#onDrawingAreaPostDiagramPerformSync(org.netbeans.modules.uml.ui.swing.drawingarea.IDiagramPerformSyncContext, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 //	public void onDrawingAreaPostDiagramPerformSync(IDiagramPerformSyncContext pDiagramSyncContext, IResultCell cell)
@@ -613,7 +630,8 @@ public class AddinEventsSink implements
 //		
 //	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.swing.drawingarea.IDrawingAreaContextMenuEventsSink#onDrawingAreaContextMenuPrepare(org.netbeans.modules.uml.core.metamodel.diagrams.IDiagram, org.netbeans.modules.uml.ui.support.contextmenusupport.IProductContextMenu, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onDrawingAreaContextMenuPrepare(IDiagram pParentDiagram, IProductContextMenu contextMenu, IResultCell cell)
@@ -622,7 +640,8 @@ public class AddinEventsSink implements
 		
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.swing.drawingarea.IDrawingAreaContextMenuEventsSink#onDrawingAreaContextMenuPrepared(org.netbeans.modules.uml.core.metamodel.diagrams.IDiagram, org.netbeans.modules.uml.ui.support.contextmenusupport.IProductContextMenu, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onDrawingAreaContextMenuPrepared(IDiagram pParentDiagram, IProductContextMenu contextMenu, IResultCell cell)
@@ -631,7 +650,8 @@ public class AddinEventsSink implements
 		
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.swing.drawingarea.IDrawingAreaContextMenuEventsSink#onDrawingAreaContextMenuHandleDisplay(org.netbeans.modules.uml.core.metamodel.diagrams.IDiagram, org.netbeans.modules.uml.ui.support.contextmenusupport.IProductContextMenu, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onDrawingAreaContextMenuHandleDisplay(IDiagram pParentDiagram, IProductContextMenu contextMenu, IResultCell cell)
@@ -640,7 +660,8 @@ public class AddinEventsSink implements
 		
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.swing.drawingarea.IDrawingAreaContextMenuEventsSink#onDrawingAreaContextMenuSelected(org.netbeans.modules.uml.core.metamodel.diagrams.IDiagram, org.netbeans.modules.uml.ui.support.contextmenusupport.IProductContextMenu, org.netbeans.modules.uml.ui.support.contextmenusupport.IProductContextMenuItem, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onDrawingAreaContextMenuSelected(IDiagram pParentDiagram, IProductContextMenu contextMenu, IProductContextMenuItem selectedItem, IResultCell cell)
@@ -649,7 +670,8 @@ public class AddinEventsSink implements
 		
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.swing.drawingarea.IDrawingAreaSelectionEventsSink#onSelect(org.netbeans.modules.uml.core.metamodel.diagrams.IDiagram)
 	 */
 //	public void onSelect(IDiagram pParentDiagram, ETList<IPresentationElement> selectedItems, ICompartment pCompartment, IResultCell cell )
@@ -685,7 +707,8 @@ public class AddinEventsSink implements
 //		addMessage(message);
 //	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.swing.drawingarea.IDrawingAreaSelectionEventsSink#onUnselect(org.netbeans.modules.uml.core.metamodel.diagrams.IDiagram, org.netbeans.modules.uml.core.metamodel.core.foundation.IPresentationElement[], org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onUnselect(IDiagram pParentDiagram, IPresentationElement[] unselectedItems, IResultCell cell)
@@ -713,7 +736,8 @@ public class AddinEventsSink implements
 		addMessage(message);
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.swing.drawingarea.IDrawingAreaAddNodeEventsSink#onDrawingAreaCreateNode(org.netbeans.modules.uml.core.metamodel.diagrams.IDiagram, org.netbeans.modules.uml.ui.swing.drawingarea.ICreateNodeContext, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 //	public void onDrawingAreaCreateNode(IDiagram pParentDiagram, ICreateNodeContext pContext, IResultCell cell)
@@ -737,7 +761,8 @@ public class AddinEventsSink implements
 //		addMessage("onDrawingAreaStartingEdge");
 //	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.swing.drawingarea.IDrawingAreaAddEdgeEventsSink#onDrawingAreaEdgeShouldCreateBend(org.netbeans.modules.uml.core.metamodel.diagrams.IDiagram, org.netbeans.modules.uml.ui.swing.drawingarea.IEdgeCreateBendContext, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 //	public void onDrawingAreaEdgeShouldCreateBend(IDiagram pParentDiagram, IEdgeCreateBendContext pContext, IResultCell cell)
@@ -809,7 +834,8 @@ public class AddinEventsSink implements
 //		addMessage("onGetNotificationTargets");
 //	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeEventsSink#onItemExpanding(org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl, org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeExpandingContext, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onItemExpanding(IProjectTreeControl pParentControl, IProjectTreeExpandingContext pContext, IResultCell cell)
@@ -824,7 +850,8 @@ public class AddinEventsSink implements
        onItemExpanding(pParentControl, pContext, cell);
     }
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeEventsSink#onBeforeEdit(org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl, org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem, org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeEditVerify, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onBeforeEdit(IProjectTreeControl pParentControl, IProjectTreeItem pItem, IProjectTreeEditVerify pVerify, IResultCell cell)
@@ -832,7 +859,8 @@ public class AddinEventsSink implements
 		addMessage("onBeforeEdit");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeEventsSink#onAfterEdit(org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl, org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem, org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeEditVerify, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onAfterEdit(IProjectTreeControl pParentControl, IProjectTreeItem pItem, IProjectTreeEditVerify pVerify, IResultCell cell)
@@ -840,7 +868,8 @@ public class AddinEventsSink implements
 		addMessage("onAfterEdit");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeEventsSink#onDoubleClick(org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl, org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem, boolean, boolean, boolean, boolean, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onDoubleClick(IProjectTreeControl pParentControl, IProjectTreeItem pItem, boolean isControl, boolean isShift, boolean isAlt, boolean isMeta, IResultCell cell)
@@ -848,7 +877,8 @@ public class AddinEventsSink implements
 		addMessage("onDoubleClick");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeEventsSink#onSelChanged(org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl, org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem[], org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onSelChanged(IProjectTreeControl pParentControl, IProjectTreeItem[] pItem, IResultCell cell)
@@ -856,7 +886,8 @@ public class AddinEventsSink implements
 		addMessage("onSelChanged");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeEventsSink#onRightButtonDown(org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl, org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem, org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeHandled, int, int, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onRightButtonDown(IProjectTreeControl pParentControl, IProjectTreeItem pItem, IProjectTreeHandled pHandled, int nScreenLocX, int nScreenLocY, IResultCell cell)
@@ -864,7 +895,8 @@ public class AddinEventsSink implements
 		addMessage("onRightButtonDown");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeEventsSink#onBeginDrag(org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl, org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem[], org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeDragVerify, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onBeginDrag(IProjectTreeControl pParentControl, IProjectTreeItem[] pItem, IProjectTreeDragVerify pVerify, IResultCell cell)
@@ -872,7 +904,8 @@ public class AddinEventsSink implements
 		addMessage("onBeginDrag");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeEventsSink#onMoveDrag(org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl, java.awt.datatransfer.Transferable, org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeDragVerify, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onMoveDrag(IProjectTreeControl pParentControl, Transferable pItem, IProjectTreeDragVerify pVerify, IResultCell cell)
@@ -880,7 +913,8 @@ public class AddinEventsSink implements
 		addMessage("onModeDrag");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeEventsSink#onEndDrag(org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl, java.awt.datatransfer.Transferable, int, org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeDragVerify, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onEndDrag(IProjectTreeControl pParentControl, Transferable pItem, int action, IProjectTreeDragVerify pVerify, IResultCell cell)
@@ -888,7 +922,8 @@ public class AddinEventsSink implements
 		addMessage("onEndDrag");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeContextMenuEventsSink#onProjectTreeContextMenuPrepare(org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl, org.netbeans.modules.uml.ui.support.contextmenusupport.IProductContextMenu, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onProjectTreeContextMenuPrepare(IProjectTreeControl pParentControl, IProductContextMenu contextMenu, IResultCell cell)
@@ -897,7 +932,8 @@ public class AddinEventsSink implements
 		
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeContextMenuEventsSink#onProjectTreeContextMenuPrepared(org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl, org.netbeans.modules.uml.ui.support.contextmenusupport.IProductContextMenu, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onProjectTreeContextMenuPrepared(IProjectTreeControl pParentControl, IProductContextMenu contextMenu, IResultCell cell)
@@ -906,7 +942,8 @@ public class AddinEventsSink implements
 		
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeContextMenuEventsSink#onProjectTreeContextMenuHandleDisplay(org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl, org.netbeans.modules.uml.ui.support.contextmenusupport.IProductContextMenu, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onProjectTreeContextMenuHandleDisplay(IProjectTreeControl pParentControl, IProductContextMenu contextMenu, IResultCell cell)
@@ -915,7 +952,8 @@ public class AddinEventsSink implements
 		
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeContextMenuEventsSink#onProjectTreeContextMenuSelected(org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl, org.netbeans.modules.uml.ui.support.contextmenusupport.IProductContextMenu, org.netbeans.modules.uml.ui.support.contextmenusupport.IProductContextMenuItem, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onProjectTreeContextMenuSelected(IProjectTreeControl pParentControl, IProductContextMenu contextMenu, IProductContextMenuItem selectedItem, IResultCell cell)
@@ -924,7 +962,8 @@ public class AddinEventsSink implements
 		
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.support.umlmessagingcore.IMessengerEventsSink#onMessageAdded(org.netbeans.modules.uml.core.support.umlmessagingcore.IMessageData, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onMessageAdded(IMessageData pMessage, IResultCell cell)
@@ -932,7 +971,8 @@ public class AddinEventsSink implements
 		addMessage("onMessageAdded");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.workspacemanagement.IWorkspaceEventsSink#onWorkspacePreCreate(org.netbeans.modules.uml.core.workspacemanagement.IWorkspacePreCreateEventPayload, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onWorkspacePreCreate(IWorkspacePreCreateEventPayload pEvent, IResultCell cell)
@@ -940,7 +980,8 @@ public class AddinEventsSink implements
 		addMessage("onWorkspacePreCreate");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.workspacemanagement.IWorkspaceEventsSink#onWorkspaceCreated(org.netbeans.modules.uml.core.workspacemanagement.IWorkspace, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onWorkspaceCreated(IWorkspace space, IResultCell cell)
@@ -948,7 +989,8 @@ public class AddinEventsSink implements
 		addMessage("onWorkspaceCreated");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.workspacemanagement.IWorkspaceEventsSink#onWorkspacePreOpen(java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onWorkspacePreOpen(String fileName, IResultCell cell)
@@ -956,7 +998,8 @@ public class AddinEventsSink implements
 		addMessage("onWorkspacePreOpen");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.workspacemanagement.IWorkspaceEventsSink#onWorkspaceOpened(org.netbeans.modules.uml.core.workspacemanagement.IWorkspace, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onWorkspaceOpened(IWorkspace space, IResultCell cell)
@@ -964,7 +1007,8 @@ public class AddinEventsSink implements
 		addMessage("onWorkspaceOpened");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.workspacemanagement.IWorkspaceEventsSink#onWorkspacePreSave(java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onWorkspacePreSave(String fileName, IResultCell cell)
@@ -972,7 +1016,8 @@ public class AddinEventsSink implements
 		addMessage("onWorkspacePreSave");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.workspacemanagement.IWorkspaceEventsSink#onWorkspaceSaved(org.netbeans.modules.uml.core.workspacemanagement.IWorkspace, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onWorkspaceSaved(IWorkspace space, IResultCell cell)
@@ -980,7 +1025,8 @@ public class AddinEventsSink implements
 		addMessage("onWorkspaceSaved");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.workspacemanagement.IWorkspaceEventsSink#onWorkspacePreClose(org.netbeans.modules.uml.core.workspacemanagement.IWorkspace, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onWorkspacePreClose(IWorkspace space, IResultCell cell)
@@ -988,7 +1034,8 @@ public class AddinEventsSink implements
 		addMessage("onWorkspacePreClose");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.workspacemanagement.IWorkspaceEventsSink#onWorkspaceClosed(org.netbeans.modules.uml.core.workspacemanagement.IWorkspace, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onWorkspaceClosed(IWorkspace space, IResultCell cell)
@@ -996,7 +1043,8 @@ public class AddinEventsSink implements
 		addMessage("onWorkspaceClosed");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.workspacemanagement.IWSProjectEventsSink#onWSProjectPreCreate(org.netbeans.modules.uml.core.workspacemanagement.IWorkspace, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onWSProjectPreCreate(IWorkspace space, String projectName, IResultCell cell)
@@ -1004,7 +1052,8 @@ public class AddinEventsSink implements
 		addMessage("onWSProjectPreCreate");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.workspacemanagement.IWSProjectEventsSink#onWSProjectCreated(org.netbeans.modules.uml.core.workspacemanagement.IWSProject, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onWSProjectCreated(IWSProject project, IResultCell cell)
@@ -1012,7 +1061,8 @@ public class AddinEventsSink implements
 		addMessage("onWSProjectCreated");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.workspacemanagement.IWSProjectEventsSink#onWSProjectPreOpen(org.netbeans.modules.uml.core.workspacemanagement.IWorkspace, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onWSProjectPreOpen(IWorkspace space, String projName, IResultCell cell)
@@ -1020,7 +1070,8 @@ public class AddinEventsSink implements
 		addMessage("onWSProjectPreOpen");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.workspacemanagement.IWSProjectEventsSink#onWSProjectOpened(org.netbeans.modules.uml.core.workspacemanagement.IWSProject, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onWSProjectOpened(IWSProject project, IResultCell cell)
@@ -1028,7 +1079,8 @@ public class AddinEventsSink implements
 		addMessage("onWSProjectOpened");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.workspacemanagement.IWSProjectEventsSink#onWSProjectPreRemove(org.netbeans.modules.uml.core.workspacemanagement.IWSProject, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onWSProjectPreRemove(IWSProject project, IResultCell cell)
@@ -1036,7 +1088,8 @@ public class AddinEventsSink implements
 		addMessage("onWSProjectPreRemove");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.workspacemanagement.IWSProjectEventsSink#onWSProjectRemoved(org.netbeans.modules.uml.core.workspacemanagement.IWSProject, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onWSProjectRemoved(IWSProject project, IResultCell cell)
@@ -1044,7 +1097,8 @@ public class AddinEventsSink implements
 		addMessage("onWSProjectRemoved");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.workspacemanagement.IWSProjectEventsSink#onWSProjectPreInsert(org.netbeans.modules.uml.core.workspacemanagement.IWorkspace, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onWSProjectPreInsert(IWorkspace space, String projectName, IResultCell cell)
@@ -1052,7 +1106,8 @@ public class AddinEventsSink implements
 		addMessage("onWSProjectPreInsert");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.workspacemanagement.IWSProjectEventsSink#onWSProjectInserted(org.netbeans.modules.uml.core.workspacemanagement.IWSProject, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onWSProjectInserted(IWSProject project, IResultCell cell)
@@ -1060,7 +1115,8 @@ public class AddinEventsSink implements
 		addMessage("onWSProjectInserted");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.workspacemanagement.IWSProjectEventsSink#onWSProjectPreRename(org.netbeans.modules.uml.core.workspacemanagement.IWSProject, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onWSProjectPreRename(IWSProject project, String newName, IResultCell cell)
@@ -1068,7 +1124,8 @@ public class AddinEventsSink implements
 		addMessage("onWSProjectPreRename");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.workspacemanagement.IWSProjectEventsSink#onWSProjectRenamed(org.netbeans.modules.uml.core.workspacemanagement.IWSProject, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onWSProjectRenamed(IWSProject project, String oldName, IResultCell cell)
@@ -1076,7 +1133,8 @@ public class AddinEventsSink implements
 		addMessage("onWSProjectRenamed");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.workspacemanagement.IWSProjectEventsSink#onWSProjectPreClose(org.netbeans.modules.uml.core.workspacemanagement.IWSProject, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onWSProjectPreClose(IWSProject project, IResultCell cell)
@@ -1084,7 +1142,8 @@ public class AddinEventsSink implements
 		addMessage("onWSProjectPreClose");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.workspacemanagement.IWSProjectEventsSink#onWSProjectClosed(org.netbeans.modules.uml.core.workspacemanagement.IWSProject, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onWSProjectClosed(IWSProject project, IResultCell cell)
@@ -1092,7 +1151,8 @@ public class AddinEventsSink implements
 		addMessage("onWSProjectClosed");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.workspacemanagement.IWSProjectEventsSink#onWSProjectPreSave(org.netbeans.modules.uml.core.workspacemanagement.IWSProject, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onWSProjectPreSave(IWSProject project, IResultCell cell)
@@ -1100,7 +1160,8 @@ public class AddinEventsSink implements
 		addMessage("onWSProjectPreSave");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.workspacemanagement.IWSProjectEventsSink#onWSProjectSaved(org.netbeans.modules.uml.core.workspacemanagement.IWSProject, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onWSProjectSaved(IWSProject project, IResultCell cell)
@@ -1108,7 +1169,8 @@ public class AddinEventsSink implements
 		addMessage("onWSProjectSaved");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.workspacemanagement.IWSElementEventsSink#onWSElementPreCreate(org.netbeans.modules.uml.core.workspacemanagement.IWSProject, java.lang.String, java.lang.String, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onWSElementPreCreate(IWSProject wsProject, String location, String Name, String data, IResultCell cell)
@@ -1116,7 +1178,8 @@ public class AddinEventsSink implements
 		addMessage("onWSElementPreCreate");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.workspacemanagement.IWSElementEventsSink#onWSElementCreated(org.netbeans.modules.uml.core.workspacemanagement.IWSElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onWSElementCreated(IWSElement element, IResultCell cell)
@@ -1124,7 +1187,8 @@ public class AddinEventsSink implements
 		addMessage("onWSElementCreated");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.workspacemanagement.IWSElementEventsSink#onWSElementPreSave(org.netbeans.modules.uml.core.workspacemanagement.IWSElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onWSElementPreSave(IWSElement element, IResultCell cell)
@@ -1132,7 +1196,8 @@ public class AddinEventsSink implements
 		addMessage("onWSElementPreSave");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.workspacemanagement.IWSElementEventsSink#onWSElementSaved(org.netbeans.modules.uml.core.workspacemanagement.IWSElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onWSElementSaved(IWSElement element, IResultCell cell)
@@ -1140,7 +1205,8 @@ public class AddinEventsSink implements
 		addMessage("onWSElementSaved");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.workspacemanagement.IWSElementEventsSink#onWSElementPreRemove(org.netbeans.modules.uml.core.workspacemanagement.IWSElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onWSElementPreRemove(IWSElement element, IResultCell cell)
@@ -1148,7 +1214,8 @@ public class AddinEventsSink implements
 		addMessage("onWSElementPreRemove");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.workspacemanagement.IWSElementEventsSink#onWSElementRemoved(org.netbeans.modules.uml.core.workspacemanagement.IWSElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onWSElementRemoved(IWSElement element, IResultCell cell)
@@ -1156,7 +1223,8 @@ public class AddinEventsSink implements
 		addMessage("onWSElementRemoved");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.workspacemanagement.IWSElementEventsSink#onWSElementPreNameChanged(org.netbeans.modules.uml.core.workspacemanagement.IWSElement, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onWSElementPreNameChanged(IWSElement element, String proposedValue, IResultCell cell)
@@ -1164,7 +1232,8 @@ public class AddinEventsSink implements
 		addMessage("onWSElementPreNameChanged");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.workspacemanagement.IWSElementEventsSink#onWSElementNameChanged(org.netbeans.modules.uml.core.workspacemanagement.IWSElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onWSElementNameChanged(IWSElement element, IResultCell cell)
@@ -1172,7 +1241,8 @@ public class AddinEventsSink implements
 		addMessage("onWSElementNameChanged");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.workspacemanagement.IWSElementEventsSink#onWSElementPreOwnerChange(org.netbeans.modules.uml.core.workspacemanagement.IWSElement, org.netbeans.modules.uml.core.workspacemanagement.IWSProject, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onWSElementPreOwnerChange(IWSElement element, IWSProject newOwner, IResultCell cell)
@@ -1180,7 +1250,8 @@ public class AddinEventsSink implements
 		addMessage("onWSElementPreOwnerChange");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.workspacemanagement.IWSElementEventsSink#onWSElementOwnerChanged(org.netbeans.modules.uml.core.workspacemanagement.IWSElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onWSElementOwnerChanged(IWSElement element, IResultCell cell)
@@ -1188,7 +1259,8 @@ public class AddinEventsSink implements
 		addMessage("onWSElementOwnerChanged");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.workspacemanagement.IWSElementEventsSink#onWSElementPreLocationChanged(org.netbeans.modules.uml.core.workspacemanagement.IWSElement, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onWSElementPreLocationChanged(IWSElement element, String proposedLocation, IResultCell cell)
@@ -1196,7 +1268,8 @@ public class AddinEventsSink implements
 		addMessage("onWSElementPreLocationChanged");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.workspacemanagement.IWSElementEventsSink#onWSElementLocationChanged(org.netbeans.modules.uml.core.workspacemanagement.IWSElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onWSElementLocationChanged(IWSElement element, IResultCell cell)
@@ -1204,7 +1277,8 @@ public class AddinEventsSink implements
 		addMessage("onWSElementLocationChanged");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.workspacemanagement.IWSElementEventsSink#onWSElementPreDataChanged(org.netbeans.modules.uml.core.workspacemanagement.IWSElement, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onWSElementPreDataChanged(IWSElement element, String newData, IResultCell cell)
@@ -1212,7 +1286,8 @@ public class AddinEventsSink implements
 		addMessage("onWSElementPreDataChanged");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.workspacemanagement.IWSElementEventsSink#onWSElementDataChanged(org.netbeans.modules.uml.core.workspacemanagement.IWSElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onWSElementDataChanged(IWSElement element, IResultCell cell)
@@ -1220,7 +1295,8 @@ public class AddinEventsSink implements
 		addMessage("onWSElementDataChanged");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.workspacemanagement.IWSElementEventsSink#onWSElementPreDocChanged(org.netbeans.modules.uml.core.workspacemanagement.IWSElement, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onWSElementPreDocChanged(IWSElement element, String doc, IResultCell cell)
@@ -1228,7 +1304,8 @@ public class AddinEventsSink implements
 		addMessage("onWSElementPreDocChanged");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.workspacemanagement.IWSElementEventsSink#onWSElementDocChanged(org.netbeans.modules.uml.core.workspacemanagement.IWSElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onWSElementDocChanged(IWSElement element, IResultCell cell)
@@ -1236,7 +1313,8 @@ public class AddinEventsSink implements
 		addMessage("onWSElementDocChanged");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.workspacemanagement.IWSElementEventsSink#onWSElementPreAliasChanged(org.netbeans.modules.uml.core.workspacemanagement.IWSElement, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onWSElementPreAliasChanged(IWSElement element, String proposedValue, IResultCell cell)
@@ -1244,7 +1322,8 @@ public class AddinEventsSink implements
 		addMessage("onWSElementPreAliasChanged");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.workspacemanagement.IWSElementEventsSink#onWSElementAliasChanged(org.netbeans.modules.uml.core.workspacemanagement.IWSElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onWSElementAliasChanged(IWSElement element, IResultCell cell)
@@ -1252,7 +1331,8 @@ public class AddinEventsSink implements
 		addMessage("onWSElementAliasChanged");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.addinframework.IAddInEventsSink#onAddInLoaded(org.netbeans.modules.uml.core.addinframework.IAddIn, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 //	public void onAddInLoaded(IAddIn pAddIn, IResultCell cell)
@@ -1261,7 +1341,8 @@ public class AddinEventsSink implements
 //		
 //	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.addinframework.IAddInEventsSink#onAddInUnLoaded(org.netbeans.modules.uml.core.addinframework.IAddIn, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 //	public void onAddInUnLoaded(IAddIn pAddIn, IResultCell cell)
@@ -1270,7 +1351,8 @@ public class AddinEventsSink implements
 //		
 //	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IElementModifiedEventsSink#onElementPreModified(org.netbeans.modules.uml.core.metamodel.core.foundation.IVersionableElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onElementPreModified(IVersionableElement element, IResultCell cell)
@@ -1278,7 +1360,8 @@ public class AddinEventsSink implements
 		addMessage("onElementPreModified");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IElementModifiedEventsSink#onElementModified(org.netbeans.modules.uml.core.metamodel.core.foundation.IVersionableElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onElementModified(IVersionableElement element, IResultCell cell)
@@ -1286,7 +1369,8 @@ public class AddinEventsSink implements
 		addMessage("onElementModified " + getElementType(element));
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IMetaAttributeModifiedEventsSink#onMetaAttributePreModified(org.netbeans.modules.uml.core.metamodel.core.foundation.IMetaAttributeModifiedEventPayload, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onMetaAttributePreModified(IMetaAttributeModifiedEventPayload Payload, IResultCell cell)
@@ -1295,7 +1379,8 @@ public class AddinEventsSink implements
 		
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IMetaAttributeModifiedEventsSink#onMetaAttributeModified(org.netbeans.modules.uml.core.metamodel.core.foundation.IMetaAttributeModifiedEventPayload, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onMetaAttributeModified(IMetaAttributeModifiedEventPayload Payload, IResultCell cell)
@@ -1304,7 +1389,8 @@ public class AddinEventsSink implements
 		
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IDocumentationModifiedEventsSink#onDocumentationPreModified(org.netbeans.modules.uml.core.metamodel.core.foundation.IElement, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onDocumentationPreModified(IElement element, String doc, IResultCell cell)
@@ -1313,7 +1399,8 @@ public class AddinEventsSink implements
 		
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IDocumentationModifiedEventsSink#onDocumentationModified(org.netbeans.modules.uml.core.metamodel.core.foundation.IElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onDocumentationModified(IElement element, IResultCell cell)
@@ -1322,7 +1409,8 @@ public class AddinEventsSink implements
 		
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.INamespaceModifiedEventsSink#onPreElementAddedToNamespace(org.netbeans.modules.uml.core.metamodel.core.foundation.INamespace, org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onPreElementAddedToNamespace(INamespace space, INamedElement elementToAdd, IResultCell cell)
@@ -1330,7 +1418,8 @@ public class AddinEventsSink implements
 		addMessage("onPreElementAddedToNamespace " + getElementType(elementToAdd));
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.INamespaceModifiedEventsSink#onElementAddedToNamespace(org.netbeans.modules.uml.core.metamodel.core.foundation.INamespace, org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onElementAddedToNamespace(INamespace space, INamedElement elementAdded, IResultCell cell)
@@ -1338,7 +1427,8 @@ public class AddinEventsSink implements
 		addMessage("onElementAddedToNamespace " + getElementType(elementAdded));
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElementEventsSink#onPreNameModified(org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElement, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onPreNameModified(INamedElement element, String proposedName, IResultCell cell)
@@ -1346,7 +1436,8 @@ public class AddinEventsSink implements
 		addMessage("onPreNameModified " + getElementType(element));
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElementEventsSink#onNameModified(org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onNameModified(INamedElement element, IResultCell cell)
@@ -1354,7 +1445,8 @@ public class AddinEventsSink implements
 		addMessage("onNameModified " + getElementType(element));
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElementEventsSink#onPreVisibilityModified(org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElement, int, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onPreVisibilityModified(INamedElement element, int proposedValue, IResultCell cell)
@@ -1362,7 +1454,8 @@ public class AddinEventsSink implements
 		addMessage("onPreVisibilityModified ");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElementEventsSink#onVisibilityModified(org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onVisibilityModified(INamedElement element, IResultCell cell)
@@ -1370,7 +1463,8 @@ public class AddinEventsSink implements
 		addMessage("onVisibilityModified ");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElementEventsSink#onPreAliasNameModified(org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElement, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onPreAliasNameModified(INamedElement element, String proposedName, IResultCell cell)
@@ -1378,7 +1472,8 @@ public class AddinEventsSink implements
 		addMessage("onPreAliasNameModified ");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElementEventsSink#onAliasNameModified(org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onAliasNameModified(INamedElement element, IResultCell cell)
@@ -1386,7 +1481,8 @@ public class AddinEventsSink implements
 		addMessage("onAliasNameModified " + getElementType(element));
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElementEventsSink#onPreNameCollision(org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElement, java.lang.String)
 	 */
 	public void onPreNameCollision(INamedElement element, String proposedName, ETList<INamedElement> collidingElements, IResultCell cell)
@@ -1394,7 +1490,8 @@ public class AddinEventsSink implements
 		addMessage("onPreNameCollision " + getElementType(element));
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElementEventsSink#onNameCollision(org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElement)
 	 */
 	public void onNameCollision(INamedElement element, ETList<INamedElement> collidingElements, IResultCell cell )
@@ -1402,7 +1499,8 @@ public class AddinEventsSink implements
 		addMessage("onNameCollision " + getElementType(element));
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.editcontrol.IEditControlEventSink#onPreInvalidData(java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onPreInvalidData(String ErrorData, IResultCell cell)
@@ -1410,7 +1508,8 @@ public class AddinEventsSink implements
 		addMessage("onPreInvalidData");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.editcontrol.IEditControlEventSink#onInvalidData(java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onInvalidData(String ErrorData, IResultCell cell)
@@ -1418,7 +1517,8 @@ public class AddinEventsSink implements
 		addMessage("onInvalidData");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.editcontrol.IEditControlEventSink#onPreOverstrike(boolean, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onPreOverstrike(boolean bOverstrike, IResultCell cell)
@@ -1426,7 +1526,8 @@ public class AddinEventsSink implements
 		addMessage("onPreOverstrike");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.editcontrol.IEditControlEventSink#onOverstrike(boolean, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onOverstrike(boolean bOverstrike, IResultCell cell)
@@ -1434,7 +1535,8 @@ public class AddinEventsSink implements
 		addMessage("onOverstrike");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.editcontrol.IEditControlEventSink#onPreActivate(org.netbeans.modules.uml.ui.controls.editcontrol.IEditControl, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onPreActivate(IEditControl pControl, IResultCell cell)
@@ -1442,7 +1544,8 @@ public class AddinEventsSink implements
 		addMessage("onPreActivate");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.editcontrol.IEditControlEventSink#onActivate(org.netbeans.modules.uml.ui.controls.editcontrol.IEditControl, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onActivate(IEditControl pControl, IResultCell cell)
@@ -1450,7 +1553,8 @@ public class AddinEventsSink implements
 		addMessage("onActivate");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.editcontrol.IEditControlEventSink#onDeactivate(org.netbeans.modules.uml.ui.controls.editcontrol.IEditControl, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onDeactivate(IEditControl pControl, IResultCell cell)
@@ -1458,7 +1562,8 @@ public class AddinEventsSink implements
 		addMessage("onDeactivate");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.editcontrol.IEditControlEventSink#setEventOwner(int)
 	 */
 	public void setEventOwner(int pOwner)
@@ -1466,7 +1571,8 @@ public class AddinEventsSink implements
 		addMessage("setEventOwner");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.editcontrol.IEditControlEventSink#onPreCommit(org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onPreCommit(IResultCell cell)
@@ -1474,7 +1580,8 @@ public class AddinEventsSink implements
 		addMessage("onPreCommit");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.editcontrol.IEditControlEventSink#onPostCommit(org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onPostCommit(IResultCell cell)
@@ -1482,7 +1589,8 @@ public class AddinEventsSink implements
 		addMessage("onPostCommit");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.filter.IProjectTreeFilterDialogEventsSink#onProjectTreeFilterDialogInit(org.netbeans.modules.uml.ui.controls.filter.IFilterDialog, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onProjectTreeFilterDialogInit(IFilterDialog dialog, IResultCell cell)
@@ -1490,7 +1598,8 @@ public class AddinEventsSink implements
 		addMessage("onProjectTreeFilterDialogInit");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.filter.IProjectTreeFilterDialogEventsSink#onProjectTreeFilterDialogOKActivated(org.netbeans.modules.uml.ui.controls.filter.IFilterDialog, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onProjectTreeFilterDialogOKActivated(IFilterDialog dialog, IResultCell cell)
@@ -1498,7 +1607,8 @@ public class AddinEventsSink implements
 		addMessage("onProjectTreeFilterDialogOKActivated");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IRelationValidatorEventsSink#onPreRelationValidate(org.netbeans.modules.uml.core.metamodel.core.foundation.IRelationProxy, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onPreRelationValidate(IRelationProxy proxy, IResultCell cell)
@@ -1507,7 +1617,8 @@ public class AddinEventsSink implements
 		
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IRelationValidatorEventsSink#onRelationValidated(org.netbeans.modules.uml.core.metamodel.core.foundation.IRelationProxy, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onRelationValidated(IRelationProxy Payload, IResultCell cell)
@@ -1516,7 +1627,8 @@ public class AddinEventsSink implements
 		
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IElementLifeTimeEventsSink#onElementPreCreate(java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onElementPreCreate(String ElementType, IResultCell cell)
@@ -1524,7 +1636,8 @@ public class AddinEventsSink implements
 		addMessage("onElementPreCreate");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IElementLifeTimeEventsSink#onElementCreated(org.netbeans.modules.uml.core.metamodel.core.foundation.IVersionableElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onElementCreated(IVersionableElement element, IResultCell cell)
@@ -1532,7 +1645,8 @@ public class AddinEventsSink implements
 		addMessage("onElementCreated " + getElementType(element));
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IElementLifeTimeEventsSink#onElementPreDelete(org.netbeans.modules.uml.core.metamodel.core.foundation.IVersionableElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onElementPreDelete(IVersionableElement element, IResultCell cell)
@@ -1540,7 +1654,8 @@ public class AddinEventsSink implements
 		addMessage("onElementPreDelete");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IElementLifeTimeEventsSink#onElementDeleted(org.netbeans.modules.uml.core.metamodel.core.foundation.IVersionableElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onElementDeleted(IVersionableElement element, IResultCell cell)
@@ -1548,7 +1663,8 @@ public class AddinEventsSink implements
 		addMessage("onElementDeleted " + getElementType(element));
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IElementLifeTimeEventsSink#onElementPreDuplicated(org.netbeans.modules.uml.core.metamodel.core.foundation.IVersionableElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onElementPreDuplicated(IVersionableElement element, IResultCell cell)
@@ -1556,7 +1672,8 @@ public class AddinEventsSink implements
 		addMessage("onElementPreDuplicated");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IElementLifeTimeEventsSink#onElementDuplicated(org.netbeans.modules.uml.core.metamodel.core.foundation.IVersionableElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onElementDuplicated(IVersionableElement element, IResultCell cell)
@@ -1564,7 +1681,8 @@ public class AddinEventsSink implements
 		addMessage("onElementDuplicated");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifierFeatureEventsSink#onFeaturePreAdded(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IFeature, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onFeaturePreAdded(IClassifier classifier, IFeature feature, IResultCell cell)
@@ -1572,7 +1690,8 @@ public class AddinEventsSink implements
 		addMessage("onFeaturePreAdded");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifierFeatureEventsSink#onFeatureAdded(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IFeature, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onFeatureAdded(IClassifier classifier, IFeature feature, IResultCell cell)
@@ -1580,7 +1699,8 @@ public class AddinEventsSink implements
 		addMessage("onFeatureAdded");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifierFeatureEventsSink#onFeaturePreRemoved(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IFeature, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onFeaturePreRemoved(IClassifier classifier, IFeature feature, IResultCell cell)
@@ -1588,7 +1708,8 @@ public class AddinEventsSink implements
 		addMessage("Classifier onFeaturePreRemoved");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifierFeatureEventsSink#onFeatureRemoved(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IFeature, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onFeatureRemoved(IClassifier classifier, IFeature feature, IResultCell cell)
@@ -1597,7 +1718,8 @@ public class AddinEventsSink implements
 	}
 
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifierFeatureEventsSink#onFeatureAdded(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IFeature, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onEnumerationLiteralAdded(IClassifier classifier, IEnumerationLiteral enumLit, IResultCell cell)
@@ -1605,7 +1727,8 @@ public class AddinEventsSink implements
 		addMessage("onEnumerationLiteralAdded");
 	}
     
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifierFeatureEventsSink#onFeatureAdded(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IFeature, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onEnumerationLiteralPreAdded(IClassifier classifier, IEnumerationLiteral enumLit, IResultCell cell)
@@ -1613,7 +1736,8 @@ public class AddinEventsSink implements
 		addMessage("onEnumerationLiteralPreAdded");
 	}
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifierFeatureEventsSink#onFeaturePreMoved(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IFeature, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onFeaturePreMoved(IClassifier classifier, IFeature feature, IResultCell cell)
@@ -1621,7 +1745,8 @@ public class AddinEventsSink implements
 		addMessage("Classifier onFeaturePreMoved");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifierFeatureEventsSink#onFeatureMoved(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IFeature, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onFeatureMoved(IClassifier classifier, IFeature feature, IResultCell cell)
@@ -1629,7 +1754,8 @@ public class AddinEventsSink implements
 		addMessage("Classifier onFeatureMoved");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifierFeatureEventsSink#onFeaturePreDuplicatedToClassifier(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IFeature, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onFeaturePreDuplicatedToClassifier(IClassifier classifier, IFeature feature, IResultCell cell)
@@ -1637,7 +1763,8 @@ public class AddinEventsSink implements
 		addMessage("Classifier onFeaturePreDuplicatedToClassifier");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifierFeatureEventsSink#onFeatureDuplicatedToClassifier(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IFeature, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IFeature, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onFeatureDuplicatedToClassifier(IClassifier pOldClassifier, IFeature pOldFeature, IClassifier pNewClassifier, IFeature pNewFeature, IResultCell cell)
@@ -1645,7 +1772,8 @@ public class AddinEventsSink implements
 		addMessage("Classifier onFeatureDuplicatedToClassifier");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifierFeatureEventsSink#onPreAbstractModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, boolean, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onPreAbstractModified(IClassifier feature, boolean proposedValue, IResultCell cell)
@@ -1653,7 +1781,8 @@ public class AddinEventsSink implements
 		addMessage("Classifier onPreAbstractModified");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifierFeatureEventsSink#onAbstractModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onAbstractModified(IClassifier feature, IResultCell cell)
@@ -1661,7 +1790,8 @@ public class AddinEventsSink implements
 		addMessage("Classifier onAbstractModified");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifierFeatureEventsSink#onPreLeafModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, boolean, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onPreLeafModified(IClassifier feature, boolean proposedValue, IResultCell cell)
@@ -1669,7 +1799,8 @@ public class AddinEventsSink implements
 		addMessage("Classifier onPreLeafModified");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifierFeatureEventsSink#onLeafModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onLeafModified(IClassifier feature, IResultCell cell)
@@ -1677,7 +1808,8 @@ public class AddinEventsSink implements
 		addMessage("Classifier onLeafModified");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifierFeatureEventsSink#onPreTransientModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, boolean, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onPreTransientModified(IClassifier feature, boolean proposedValue, IResultCell cell)
@@ -1685,7 +1817,8 @@ public class AddinEventsSink implements
 		addMessage("Classifier onPreTransientModified");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifierFeatureEventsSink#onTransientModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onTransientModified(IClassifier feature, IResultCell cell)
@@ -1693,7 +1826,8 @@ public class AddinEventsSink implements
 		addMessage("Classifier onTransientModified");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifierFeatureEventsSink#onPreTemplateParameterAdded(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IParameterableElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onPreTemplateParameterAdded(IClassifier pClassifier, IParameterableElement pParam, IResultCell cell)
@@ -1701,7 +1835,8 @@ public class AddinEventsSink implements
 		addMessage("Classifier onPreTemplateParameterAdded");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifierFeatureEventsSink#onTemplateParameterAdded(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IParameterableElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onTemplateParameterAdded(IClassifier pClassifier, IParameterableElement pParam, IResultCell cell)
@@ -1709,7 +1844,8 @@ public class AddinEventsSink implements
 		addMessage("Classifier onTemplateParameterAdded");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifierFeatureEventsSink#onPreTemplateParameterRemoved(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IParameterableElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onPreTemplateParameterRemoved(IClassifier pClassifier, IParameterableElement pParam, IResultCell cell)
@@ -1717,7 +1853,8 @@ public class AddinEventsSink implements
 		addMessage("Classifier onPreTemplateParameterRemoved");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifierFeatureEventsSink#onTemplateParameterRemoved(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IParameterableElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onTemplateParameterRemoved(IClassifier pClassifier, IParameterableElement pParam, IResultCell cell)
@@ -1725,7 +1862,8 @@ public class AddinEventsSink implements
 		addMessage("Classifier onTemplateParameterRemoved");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifierTransformEventsSink#onPreTransform(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onPreTransform(IClassifier classifier, String newForm, IResultCell cell)
@@ -1733,7 +1871,8 @@ public class AddinEventsSink implements
 		addMessage("onPreTransform");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifierTransformEventsSink#onTransformed(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onTransformed(IClassifier classifier, IResultCell cell)
@@ -1741,7 +1880,8 @@ public class AddinEventsSink implements
 		addMessage("onTransformed");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IFeatureEventsSink#onPreStaticModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IFeature, boolean, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onPreStaticModified(IFeature feature, boolean proposedValue, IResultCell cell)
@@ -1749,7 +1889,8 @@ public class AddinEventsSink implements
 		addMessage("onPreStaticModified");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IFeatureEventsSink#onStaticModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IFeature, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onStaticModified(IFeature feature, IResultCell cell)
@@ -1757,7 +1898,8 @@ public class AddinEventsSink implements
 		addMessage("onStaticModified");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IFeatureEventsSink#onPreNativeModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IFeature, boolean, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onPreNativeModified(IFeature feature, boolean proposedValue, IResultCell cell)
@@ -1765,7 +1907,8 @@ public class AddinEventsSink implements
 		addMessage("onPreNativeModified");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IFeatureEventsSink#onNativeModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IFeature, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onNativeModified(IFeature feature, IResultCell cell)
@@ -1773,7 +1916,8 @@ public class AddinEventsSink implements
 		addMessage("onNativeModified");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IStructuralFeatureEventsSink#onPreChangeabilityModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IStructuralFeature, int, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onPreChangeabilityModified(IStructuralFeature feature, int proposedValue, IResultCell cell)
@@ -1781,7 +1925,8 @@ public class AddinEventsSink implements
 		addMessage("onPreChangeabilityModified");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IStructuralFeatureEventsSink#onChangeabilityModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IStructuralFeature, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onChangeabilityModified(IStructuralFeature feature, IResultCell cell)
@@ -1789,7 +1934,8 @@ public class AddinEventsSink implements
 		addMessage("onChangeabilityModified");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IStructuralFeatureEventsSink#onPreVolatileModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IStructuralFeature, boolean, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onPreVolatileModified(IStructuralFeature feature, boolean proposedValue, IResultCell cell)
@@ -1797,7 +1943,8 @@ public class AddinEventsSink implements
 		addMessage("Structural Feature onPreVolatileModified");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IStructuralFeatureEventsSink#onVolatileModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IStructuralFeature, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onVolatileModified(IStructuralFeature feature, IResultCell cell)
@@ -1805,7 +1952,8 @@ public class AddinEventsSink implements
 		addMessage("Structural Feature onVolatileModified");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IStructuralFeatureEventsSink#onPreTransientModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IStructuralFeature, boolean, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onPreTransientModified(IStructuralFeature feature, boolean proposedValue, IResultCell cell)
@@ -1813,7 +1961,8 @@ public class AddinEventsSink implements
 		addMessage("Structural Feature onPreTransientModified");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IStructuralFeatureEventsSink#onTransientModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IStructuralFeature, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onTransientModified(IStructuralFeature feature, IResultCell cell)
@@ -1821,7 +1970,8 @@ public class AddinEventsSink implements
 		addMessage("Structural Feature onTransientModified");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavioralFeatureEventsSink#onConcurrencyPreModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavioralFeature, int, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onConcurrencyPreModified(IBehavioralFeature feature, int proposedValue, IResultCell cell)
@@ -1829,7 +1979,8 @@ public class AddinEventsSink implements
 		addMessage("onConcurrencyPreModified");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavioralFeatureEventsSink#onConcurrencyModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavioralFeature, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onConcurrencyModified(IBehavioralFeature feature, IResultCell cell)
@@ -1837,7 +1988,8 @@ public class AddinEventsSink implements
 		addMessage("onConcurrencyModified");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavioralFeatureEventsSink#onPreHandledSignalAdded(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavioralFeature, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ISignal, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onPreHandledSignalAdded(IBehavioralFeature feature, ISignal proposedValue, IResultCell cell)
@@ -1845,7 +1997,8 @@ public class AddinEventsSink implements
 		addMessage("onPreHandledSignalAdded");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavioralFeatureEventsSink#onHandledSignalAdded(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavioralFeature, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onHandledSignalAdded(IBehavioralFeature feature, IResultCell cell)
@@ -1853,7 +2006,8 @@ public class AddinEventsSink implements
 		addMessage("onHandledSignalAdded");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavioralFeatureEventsSink#onPreHandledSignalRemoved(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavioralFeature, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ISignal, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onPreHandledSignalRemoved(IBehavioralFeature feature, ISignal proposedValue, IResultCell cell)
@@ -1861,7 +2015,8 @@ public class AddinEventsSink implements
 		addMessage("onPreHandledSignalRemoved");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavioralFeatureEventsSink#onHandledSignalRemoved(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavioralFeature, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onHandledSignalRemoved(IBehavioralFeature feature, IResultCell cell)
@@ -1869,7 +2024,8 @@ public class AddinEventsSink implements
 		addMessage("onHandledSignalRemoved");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavioralFeatureEventsSink#onPreParameterAdded(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavioralFeature, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IParameter, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onPreParameterAdded(IBehavioralFeature feature, IParameter parm, IResultCell cell)
@@ -1877,7 +2033,8 @@ public class AddinEventsSink implements
 		addMessage("onPreParameterAdded");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavioralFeatureEventsSink#onParameterAdded(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavioralFeature, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IParameter, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onParameterAdded(IBehavioralFeature feature, IParameter parm, IResultCell cell)
@@ -1885,7 +2042,8 @@ public class AddinEventsSink implements
 		addMessage("onParameterAdded");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavioralFeatureEventsSink#onPreParameterRemoved(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavioralFeature, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IParameter, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onPreParameterRemoved(IBehavioralFeature feature, IParameter parm, IResultCell cell)
@@ -1893,7 +2051,8 @@ public class AddinEventsSink implements
 		addMessage("onPreParameterRemoved");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavioralFeatureEventsSink#onParameterRemoved(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavioralFeature, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IParameter, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onParameterRemoved(IBehavioralFeature feature, IParameter parm, IResultCell cell)
@@ -1901,7 +2060,8 @@ public class AddinEventsSink implements
 		addMessage("onParameterRemoved");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavioralFeatureEventsSink#onPreAbstractModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavioralFeature, boolean, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onPreAbstractModified(IBehavioralFeature feature, boolean proposedValue, IResultCell cell)
@@ -1909,7 +2069,8 @@ public class AddinEventsSink implements
 		addMessage("Behavior Feature onPreAbstractModified");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavioralFeatureEventsSink#onAbstractModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavioralFeature, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onAbstractModified(IBehavioralFeature feature, IResultCell cell)
@@ -1917,7 +2078,8 @@ public class AddinEventsSink implements
 		addMessage("Behavior Feature onAbstractModified");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavioralFeatureEventsSink#onPreStrictFPModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavioralFeature, boolean, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onPreStrictFPModified(IBehavioralFeature feature, boolean proposedValue, IResultCell cell)
@@ -1925,7 +2087,8 @@ public class AddinEventsSink implements
 		addMessage("Behavior Feature onPreStrictFPModified");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavioralFeatureEventsSink#onStrictFPModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavioralFeature, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onStrictFPModified(IBehavioralFeature feature, IResultCell cell)
@@ -1933,7 +2096,8 @@ public class AddinEventsSink implements
 		addMessage("Behavior Feature onStrictFPModified");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IParameterEventsSink#onPreDefaultExpModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IParameter, org.netbeans.modules.uml.core.metamodel.core.foundation.IExpression, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onPreDefaultExpModified(IParameter feature, IExpression proposedValue, IResultCell cell)
@@ -1941,7 +2105,8 @@ public class AddinEventsSink implements
 		addMessage("onPreDefaultExpModified");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IParameterEventsSink#onDefaultExpModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IParameter, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onDefaultExpModified(IParameter feature, IResultCell cell)
@@ -1949,7 +2114,8 @@ public class AddinEventsSink implements
 		addMessage("onDefaultExpModified");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IParameterEventsSink#onPreDefaultExpBodyModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IParameter, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onPreDefaultExpBodyModified(IParameter feature, String bodyValue, IResultCell cell)
@@ -1957,7 +2123,8 @@ public class AddinEventsSink implements
 		addMessage("onPreDefaultExpBodyModified");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IParameterEventsSink#onDefaultExpBodyModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IParameter, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onDefaultExpBodyModified(IParameter feature, IResultCell cell)
@@ -1965,7 +2132,8 @@ public class AddinEventsSink implements
 		addMessage("onDefaultExpBodyModified");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IParameterEventsSink#onPreDefaultExpLanguageModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IParameter, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onPreDefaultExpLanguageModified(IParameter feature, String language, IResultCell cell)
@@ -1973,7 +2141,8 @@ public class AddinEventsSink implements
 		addMessage("onPreDefaultExpLanguageModified");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IParameterEventsSink#onDefaultExpLanguageModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IParameter, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onDefaultExpLanguageModified(IParameter feature, IResultCell cell)
@@ -1981,7 +2150,8 @@ public class AddinEventsSink implements
 		addMessage("onDefaultExpLanguageModified");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IParameterEventsSink#onPreDirectionModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IParameter, int, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onPreDirectionModified(IParameter feature, int proposedValue, IResultCell cell)
@@ -1989,7 +2159,8 @@ public class AddinEventsSink implements
 		addMessage("onPreDirectionModified");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IParameterEventsSink#onDirectionModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IParameter, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onDirectionModified(IParameter feature, IResultCell cell)
@@ -1997,7 +2168,8 @@ public class AddinEventsSink implements
 		addMessage("onDirectionModified");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElementEventsSink#onPreMultiplicityModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElement, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onPreMultiplicityModified(ITypedElement element, IMultiplicity proposedValue, IResultCell cell)
@@ -2005,7 +2177,8 @@ public class AddinEventsSink implements
 		addMessage("onPreMultiplicityModified");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElementEventsSink#onMultiplicityModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onMultiplicityModified(ITypedElement element, IResultCell cell)
@@ -2013,7 +2186,8 @@ public class AddinEventsSink implements
 		addMessage("onMultiplicityModified");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElementEventsSink#onPreTypeModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElement, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onPreTypeModified(ITypedElement element, IClassifier proposedValue, IResultCell cell)
@@ -2021,7 +2195,8 @@ public class AddinEventsSink implements
 		addMessage("onPreTypeModified");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElementEventsSink#onTypeModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onTypeModified(ITypedElement element, IResultCell cell)
@@ -2029,7 +2204,8 @@ public class AddinEventsSink implements
 		addMessage("onTypeModified");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElementEventsSink#onPreLowerModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElement, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityRange, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onPreLowerModified(ITypedElement element, IMultiplicity mult, IMultiplicityRange range, String proposedValue, IResultCell cell)
@@ -2037,7 +2213,8 @@ public class AddinEventsSink implements
 		addMessage("onPreLowerModified");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElementEventsSink#onLowerModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElement, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityRange, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onLowerModified(ITypedElement element, IMultiplicity mult, IMultiplicityRange range, IResultCell cell)
@@ -2045,7 +2222,8 @@ public class AddinEventsSink implements
 		addMessage("onLowerModified");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElementEventsSink#onPreUpperModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElement, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityRange, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onPreUpperModified(ITypedElement element, IMultiplicity mult, IMultiplicityRange range, String proposedValue, IResultCell cell)
@@ -2053,7 +2231,8 @@ public class AddinEventsSink implements
 		addMessage("onPreUpperModified");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElementEventsSink#onUpperModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElement, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityRange, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onUpperModified(ITypedElement element, IMultiplicity mult, IMultiplicityRange range, IResultCell cell)
@@ -2061,7 +2240,8 @@ public class AddinEventsSink implements
 		addMessage("onUpperModified");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElementEventsSink#onPreRangeAdded(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElement, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityRange, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onPreRangeAdded(ITypedElement element, IMultiplicity mult, IMultiplicityRange range, IResultCell cell)
@@ -2069,7 +2249,8 @@ public class AddinEventsSink implements
 		addMessage("onPreRangeAdded");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElementEventsSink#onRangeAdded(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElement, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityRange, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onRangeAdded(ITypedElement element, IMultiplicity mult, IMultiplicityRange range, IResultCell cell)
@@ -2077,7 +2258,8 @@ public class AddinEventsSink implements
 		addMessage("onRangeAdded");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElementEventsSink#onPreRangeRemoved(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElement, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityRange, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onPreRangeRemoved(ITypedElement element, IMultiplicity mult, IMultiplicityRange range, IResultCell cell)
@@ -2085,7 +2267,8 @@ public class AddinEventsSink implements
 		addMessage("onPreRangeRemoved");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElementEventsSink#onRangeRemoved(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElement, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityRange, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onRangeRemoved(ITypedElement element, IMultiplicity mult, IMultiplicityRange range, IResultCell cell)
@@ -2093,7 +2276,8 @@ public class AddinEventsSink implements
 		addMessage("onRangeRemoved");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElementEventsSink#onPreOrderModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElement, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity, boolean, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onPreOrderModified(ITypedElement element, IMultiplicity mult, boolean proposedValue, IResultCell cell)
@@ -2101,7 +2285,8 @@ public class AddinEventsSink implements
 		addMessage("onPreOrderModified");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElementEventsSink#onOrderModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElement, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onOrderModified(ITypedElement element, IMultiplicity mult, IResultCell cell)
@@ -2109,7 +2294,8 @@ public class AddinEventsSink implements
 		addMessage("onOrderModified");
 	}
         
-        /**
+        
+/**
          * Fired when the collection type property is changed on the passed in
          * range.
          * @param element The type that owned the multilicity element
@@ -2122,7 +2308,8 @@ public class AddinEventsSink implements
             addMessage("onCollectionTypeModified");
         }
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttributeEventsSink#onDefaultPreModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttribute, org.netbeans.modules.uml.core.metamodel.core.foundation.IExpression, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onDefaultPreModified(IAttribute attr, IExpression proposedValue, IResultCell cell)
@@ -2130,7 +2317,8 @@ public class AddinEventsSink implements
 		addMessage("onDefaultPreModified");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttributeEventsSink#onDefaultModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttribute, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onDefaultModified(IAttribute attr, IResultCell cell)
@@ -2138,7 +2326,8 @@ public class AddinEventsSink implements
 		addMessage("onDefaultModified");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttributeEventsSink#onPreDefaultBodyModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttribute, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onPreDefaultBodyModified(IAttribute feature, String bodyValue, IResultCell cell)
@@ -2146,7 +2335,8 @@ public class AddinEventsSink implements
 		addMessage("onPreDefaultBodyModified");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttributeEventsSink#onDefaultBodyModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttribute, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onDefaultBodyModified(IAttribute feature, IResultCell cell)
@@ -2154,7 +2344,8 @@ public class AddinEventsSink implements
 		addMessage("onDefaultBodyModified");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttributeEventsSink#onPreDefaultLanguageModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttribute, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onPreDefaultLanguageModified(IAttribute feature, String language, IResultCell cell)
@@ -2162,7 +2353,8 @@ public class AddinEventsSink implements
 		addMessage("onPreDefaultLanguageModified");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttributeEventsSink#onDefaultLanguageModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttribute, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onDefaultLanguageModified(IAttribute feature, IResultCell cell)
@@ -2170,7 +2362,8 @@ public class AddinEventsSink implements
 		addMessage("onDefaultLanguageModified");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttributeEventsSink#onPreDerivedModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttribute, boolean, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onPreDerivedModified(IAttribute feature, boolean proposedValue, IResultCell cell)
@@ -2178,7 +2371,8 @@ public class AddinEventsSink implements
 		addMessage("onPreDerivedModified");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttributeEventsSink#onDerivedModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttribute, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onDerivedModified(IAttribute feature, IResultCell cell)
@@ -2186,7 +2380,8 @@ public class AddinEventsSink implements
 		addMessage("onDerivedModified");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttributeEventsSink#onPrePrimaryKeyModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttribute, boolean, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onPrePrimaryKeyModified(IAttribute feature, boolean proposedValue, IResultCell cell)
@@ -2194,7 +2389,8 @@ public class AddinEventsSink implements
 		addMessage("onPrePrimaryKeyModified");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttributeEventsSink#onPrimaryKeyModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttribute, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onPrimaryKeyModified(IAttribute feature, IResultCell cell)
@@ -2202,7 +2398,8 @@ public class AddinEventsSink implements
 		addMessage("onPrimaryKeyModified");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperationEventsSink#onConditionPreAdded(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation, org.netbeans.modules.uml.core.metamodel.core.foundation.IConstraint, boolean, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onConditionPreAdded(IOperation oper, IConstraint condition, boolean isPreCondition, IResultCell cell)
@@ -2210,7 +2407,8 @@ public class AddinEventsSink implements
 		addMessage("onConditionPreAdded");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperationEventsSink#onConditionAdded(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation, org.netbeans.modules.uml.core.metamodel.core.foundation.IConstraint, boolean, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onConditionAdded(IOperation oper, IConstraint condition, boolean isPreCondition, IResultCell cell)
@@ -2218,7 +2416,8 @@ public class AddinEventsSink implements
 		addMessage("onConditionAdded");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperationEventsSink#onConditionPreRemoved(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation, org.netbeans.modules.uml.core.metamodel.core.foundation.IConstraint, boolean, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onConditionPreRemoved(IOperation oper, IConstraint condition, boolean isPreCondition, IResultCell cell)
@@ -2226,7 +2425,8 @@ public class AddinEventsSink implements
 		addMessage("onConditionPreRemoved");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperationEventsSink#onConditionRemoved(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation, org.netbeans.modules.uml.core.metamodel.core.foundation.IConstraint, boolean, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onConditionRemoved(IOperation oper, IConstraint condition, boolean isPreCondition, IResultCell cell)
@@ -2234,7 +2434,8 @@ public class AddinEventsSink implements
 		addMessage("onConditionRemoved");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperationEventsSink#onPreQueryModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation, boolean, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onPreQueryModified(IOperation oper, boolean proposedValue, IResultCell cell)
@@ -2242,7 +2443,8 @@ public class AddinEventsSink implements
 		addMessage("onPreQueryModified");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperationEventsSink#onQueryModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onQueryModified(IOperation oper, IResultCell cell)
@@ -2250,7 +2452,8 @@ public class AddinEventsSink implements
 		addMessage("onQueryModified");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperationEventsSink#onRaisedExceptionPreAdded(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onRaisedExceptionPreAdded(IOperation oper, IClassifier pException, IResultCell cell)
@@ -2258,7 +2461,8 @@ public class AddinEventsSink implements
 		addMessage("onRaisedExceptionPreAdded");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperationEventsSink#onRaisedExceptionAdded(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onRaisedExceptionAdded(IOperation oper, IClassifier pException, IResultCell cell)
@@ -2266,7 +2470,8 @@ public class AddinEventsSink implements
 		addMessage("onRaisedExceptionAdded");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperationEventsSink#onRaisedExceptionPreRemoved(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onRaisedExceptionPreRemoved(IOperation oper, IClassifier pException, IResultCell cell)
@@ -2274,7 +2479,8 @@ public class AddinEventsSink implements
 		addMessage("onRaisedExceptionPreRemoved");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperationEventsSink#onRaisedExceptionRemoved(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onRaisedExceptionRemoved(IOperation oper, IClassifier pException, IResultCell cell)
@@ -2282,7 +2488,8 @@ public class AddinEventsSink implements
 		addMessage("onRaisedExceptionRemoved");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperationEventsSink#onPreOperationPropertyModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation, int, boolean, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onPreOperationPropertyModified(IOperation oper, int nKind, boolean proposedValue, IResultCell cell)
@@ -2290,7 +2497,8 @@ public class AddinEventsSink implements
 		addMessage("onPreOperationPropertyModified");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperationEventsSink#onOperationPropertyModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation, int, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onOperationPropertyModified(IOperation oper, int nKind, IResultCell cell)
@@ -2298,7 +2506,8 @@ public class AddinEventsSink implements
 		addMessage("onOperationPropertyModified");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.coreapplication.ICoreProductInitEventsSink#onCoreProductPreInit(org.netbeans.modules.uml.core.coreapplication.ICoreProduct, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onCoreProductPreInit(ICoreProduct pVal, IResultCell cell)
@@ -2306,7 +2515,8 @@ public class AddinEventsSink implements
 		addMessage("onCoreProductPreInit");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.coreapplication.ICoreProductInitEventsSink#onCoreProductInitialized(org.netbeans.modules.uml.core.coreapplication.ICoreProduct, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onCoreProductInitialized(ICoreProduct newVal, IResultCell cell)
@@ -2314,7 +2524,8 @@ public class AddinEventsSink implements
 		addMessage("onCoreProductInitialized");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.coreapplication.ICoreProductInitEventsSink#onCoreProductPreQuit(org.netbeans.modules.uml.core.coreapplication.ICoreProduct, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onCoreProductPreQuit(ICoreProduct pVal, IResultCell cell)
@@ -2322,7 +2533,8 @@ public class AddinEventsSink implements
 		addMessage("onCoreProductPreQuit");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.coreapplication.ICoreProductInitEventsSink#onCoreProductPreSaved(org.netbeans.modules.uml.core.coreapplication.ICoreProduct, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onCoreProductPreSaved(ICoreProduct pVal, IResultCell cell)
@@ -2330,7 +2542,8 @@ public class AddinEventsSink implements
 		addMessage("onCoreProductPreSaved");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.coreapplication.ICoreProductInitEventsSink#onCoreProductSaved(org.netbeans.modules.uml.core.coreapplication.ICoreProduct, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onCoreProductSaved(ICoreProduct newVal, IResultCell cell)
@@ -2338,7 +2551,8 @@ public class AddinEventsSink implements
 		addMessage("onCoreProductSaved");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.roundtripframework.IRequestProcessorInitEventsSink#onPreInitialized(java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onPreInitialized(String proc, IResultCell cell)
@@ -2347,7 +2561,8 @@ public class AddinEventsSink implements
 		
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.roundtripframework.IRequestProcessorInitEventsSink#onInitialized(org.netbeans.modules.uml.core.roundtripframework.IRequestProcessor, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onInitialized(IRequestProcessor proc, IResultCell cell)
@@ -2356,7 +2571,8 @@ public class AddinEventsSink implements
 		
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.roundtripframework.IRoundTripAttributeEventsSink#onPreAttributeChangeRequest(org.netbeans.modules.uml.core.roundtripframework.IChangeRequest, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onPreAttributeChangeRequest(IChangeRequest newVal, IResultCell cell)
@@ -2365,7 +2581,8 @@ public class AddinEventsSink implements
 		
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.roundtripframework.IRoundTripAttributeEventsSink#onAttributeChangeRequest(org.netbeans.modules.uml.core.roundtripframework.IChangeRequest, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onAttributeChangeRequest(IChangeRequest newVal, IResultCell cell)
@@ -2374,7 +2591,8 @@ public class AddinEventsSink implements
 		
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.roundtripframework.IRoundTripClassEventsSink#onPreClassChangeRequest(org.netbeans.modules.uml.core.roundtripframework.IChangeRequest, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onPreClassChangeRequest(IChangeRequest newVal, IResultCell cell)
@@ -2383,7 +2601,8 @@ public class AddinEventsSink implements
 		
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.roundtripframework.IRoundTripClassEventsSink#onClassChangeRequest(org.netbeans.modules.uml.core.roundtripframework.IChangeRequest, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onClassChangeRequest(IChangeRequest newVal, IResultCell cell)
@@ -2392,7 +2611,8 @@ public class AddinEventsSink implements
 		
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.roundtripframework.IRoundTripOperationEventsSink#onPreOperationChangeRequest(org.netbeans.modules.uml.core.roundtripframework.IChangeRequest, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onPreOperationChangeRequest(IChangeRequest newVal, IResultCell cell)
@@ -2401,7 +2621,8 @@ public class AddinEventsSink implements
 		
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.roundtripframework.IRoundTripOperationEventsSink#onOperationChangeRequest(org.netbeans.modules.uml.core.roundtripframework.IChangeRequest, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onOperationChangeRequest(IChangeRequest newVal, IResultCell cell)
@@ -2410,7 +2631,8 @@ public class AddinEventsSink implements
 		
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.roundtripframework.IRoundTripPackageEventsSink#onPrePackageChangeRequest(org.netbeans.modules.uml.core.roundtripframework.IChangeRequest, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onPrePackageChangeRequest(IChangeRequest newVal, IResultCell cell)
@@ -2419,7 +2641,8 @@ public class AddinEventsSink implements
 		
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.roundtripframework.IRoundTripPackageEventsSink#onPackageChangeRequest(org.netbeans.modules.uml.core.roundtripframework.IChangeRequest, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onPackageChangeRequest(IChangeRequest newVal, IResultCell cell)
@@ -2428,7 +2651,8 @@ public class AddinEventsSink implements
 		
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.roundtripframework.IRoundTripRelationEventsSink#onPreRelationChangeRequest(org.netbeans.modules.uml.core.roundtripframework.IChangeRequest, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onPreRelationChangeRequest(IChangeRequest newVal, IResultCell cell)
@@ -2437,7 +2661,8 @@ public class AddinEventsSink implements
 		
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.roundtripframework.IRoundTripRelationEventsSink#onRelationChangeRequest(org.netbeans.modules.uml.core.roundtripframework.IChangeRequest, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onRelationChangeRequest(IChangeRequest newVal, IResultCell cell)
@@ -2446,7 +2671,8 @@ public class AddinEventsSink implements
 		
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IImportEventsSink#onPrePackageImport(org.netbeans.modules.uml.core.metamodel.core.foundation.IPackage, org.netbeans.modules.uml.core.metamodel.core.foundation.IPackage, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onPrePackageImport(IPackage ImportingPackage, IPackage ImportedPackage, INamespace owner, IResultCell cell)
@@ -2455,7 +2681,8 @@ public class AddinEventsSink implements
 		
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IImportEventsSink#onPackageImported(org.netbeans.modules.uml.core.metamodel.core.foundation.IPackageImport, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onPackageImported(IPackageImport packImport, IResultCell cell)
@@ -2464,7 +2691,8 @@ public class AddinEventsSink implements
 		
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IImportEventsSink#onPreElementImport(org.netbeans.modules.uml.core.metamodel.core.foundation.IPackage, org.netbeans.modules.uml.core.metamodel.core.foundation.IAutonomousElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onPreElementImport(IPackage ImportingPackage, IElement ImportedElement, INamespace owner, IResultCell cell)
@@ -2473,7 +2701,8 @@ public class AddinEventsSink implements
 		
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IImportEventsSink#onElementImported(org.netbeans.modules.uml.core.metamodel.core.foundation.IElementImport, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onElementImported(IElementImport elImport, IResultCell cell)
@@ -2482,7 +2711,8 @@ public class AddinEventsSink implements
 		
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IElementDisposalEventsSink#onPreDisposeElements()
 	 */
 	public void onPreDisposeElements( ETList<IVersionableElement> pElements, IResultCell cell )
@@ -2490,7 +2720,8 @@ public class AddinEventsSink implements
 		addMessage("onPreDisposeElements");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IElementDisposalEventsSink#onDisposedElements()
 	 */
 	public void onDisposedElements( ETList<IVersionableElement> pElements, IResultCell cell )
@@ -2498,7 +2729,8 @@ public class AddinEventsSink implements
 		addMessage("onDisposedElements");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IRelationEventsSink#onPreRelationEndModified(org.netbeans.modules.uml.core.metamodel.core.foundation.IRelationProxy, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onPreRelationEndModified(IRelationProxy proxy, IResultCell cell)
@@ -2506,7 +2738,8 @@ public class AddinEventsSink implements
 		addMessage("onPreRelationEndModified");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IRelationEventsSink#onRelationEndModified(org.netbeans.modules.uml.core.metamodel.core.foundation.IRelationProxy, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onRelationEndModified(IRelationProxy Payload, IResultCell cell)
@@ -2514,7 +2747,8 @@ public class AddinEventsSink implements
 		addMessage("onPreRelationEndModified");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IRelationEventsSink#onPreRelationEndAdded(org.netbeans.modules.uml.core.metamodel.core.foundation.IRelationProxy, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onPreRelationEndAdded(IRelationProxy proxy, IResultCell cell)
@@ -2522,7 +2756,8 @@ public class AddinEventsSink implements
 		addMessage("onPreRelationEndAdded");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IRelationEventsSink#onRelationEndAdded(org.netbeans.modules.uml.core.metamodel.core.foundation.IRelationProxy, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onRelationEndAdded(IRelationProxy proxy, IResultCell cell)
@@ -2530,7 +2765,8 @@ public class AddinEventsSink implements
 		addMessage("onRelationEndAdded");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IRelationEventsSink#onPreRelationEndRemoved(org.netbeans.modules.uml.core.metamodel.core.foundation.IRelationProxy, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onPreRelationEndRemoved(IRelationProxy proxy, IResultCell cell)
@@ -2538,7 +2774,8 @@ public class AddinEventsSink implements
 		addMessage("onPreRelationEndRemoved");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IRelationEventsSink#onRelationEndRemoved(org.netbeans.modules.uml.core.metamodel.core.foundation.IRelationProxy, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onRelationEndRemoved(IRelationProxy proxy, IResultCell cell)
@@ -2546,7 +2783,8 @@ public class AddinEventsSink implements
 		addMessage("onRelationEndRemoved");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IRelationEventsSink#onPreRelationCreated(org.netbeans.modules.uml.core.metamodel.core.foundation.IRelationProxy, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onPreRelationCreated(IRelationProxy proxy, IResultCell cell)
@@ -2554,7 +2792,8 @@ public class AddinEventsSink implements
 		addMessage("onPreRelationCreated");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IRelationEventsSink#onRelationCreated(org.netbeans.modules.uml.core.metamodel.core.foundation.IRelationProxy, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onRelationCreated(IRelationProxy proxy, IResultCell cell)
@@ -2562,7 +2801,8 @@ public class AddinEventsSink implements
 		addMessage("onRelationCreated");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IRelationEventsSink#onPreRelationDeleted(org.netbeans.modules.uml.core.metamodel.core.foundation.IRelationProxy, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onPreRelationDeleted(IRelationProxy proxy, IResultCell cell)
@@ -2570,7 +2810,8 @@ public class AddinEventsSink implements
 		addMessage("onPreRelationDeleted");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IRelationEventsSink#onRelationDeleted(org.netbeans.modules.uml.core.metamodel.core.foundation.IRelationProxy, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onRelationDeleted(IRelationProxy proxy, IResultCell cell)
@@ -2578,7 +2819,8 @@ public class AddinEventsSink implements
 		addMessage("onRelationDeleted");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.preferenceframework.IPreferenceManagerEventsSink#onPreferenceChange(java.lang.String, org.netbeans.modules.uml.core.support.umlutils.IPropertyElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onPreferenceChange(String Name, IPropertyElement pElement, IResultCell cell)
@@ -2586,7 +2828,8 @@ public class AddinEventsSink implements
 		addMessage("onPreferenceChange");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.preferenceframework.IPreferenceManagerEventsSink#onPreferenceAdd(java.lang.String, org.netbeans.modules.uml.core.support.umlutils.IPropertyElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onPreferenceAdd(String Name, IPropertyElement pElement, IResultCell cell)
@@ -2594,7 +2837,8 @@ public class AddinEventsSink implements
 		addMessage("onPreferenceAdd");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.preferenceframework.IPreferenceManagerEventsSink#onPreferenceRemove(java.lang.String, org.netbeans.modules.uml.core.support.umlutils.IPropertyElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onPreferenceRemove(String Name, IPropertyElement pElement, IResultCell cell)
@@ -2602,7 +2846,8 @@ public class AddinEventsSink implements
 		addMessage("onPreferenceRemove");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.preferenceframework.IPreferenceManagerEventsSink#onPreferencesChange(org.netbeans.modules.uml.core.support.umlutils.IPropertyElement[], org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onPreferencesChange(IPropertyElement[] pElements, IResultCell cell)
@@ -2610,7 +2855,8 @@ public class AddinEventsSink implements
 		addMessage("onPreferencesChange");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IExternalElementEventsSink#onExternalElementPreLoaded(java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onExternalElementPreLoaded(String uri, IResultCell cell)
@@ -2618,7 +2864,8 @@ public class AddinEventsSink implements
 		addMessage("onExternalElementPreLoaded");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IExternalElementEventsSink#onExternalElementLoaded(org.netbeans.modules.uml.core.metamodel.core.foundation.IVersionableElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onExternalElementLoaded(IVersionableElement element, IResultCell cell)
@@ -2626,7 +2873,8 @@ public class AddinEventsSink implements
 		addMessage("onExternalElementLoaded");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IExternalElementEventsSink#onPreInitialExtraction(java.lang.String, org.netbeans.modules.uml.core.metamodel.core.foundation.IVersionableElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onPreInitialExtraction(String fileName, IVersionableElement element, IResultCell cell)
@@ -2634,7 +2882,8 @@ public class AddinEventsSink implements
 		addMessage("onPreInitialExtraction");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IExternalElementEventsSink#onInitialExtraction(org.netbeans.modules.uml.core.metamodel.core.foundation.IVersionableElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onInitialExtraction(IVersionableElement element, IResultCell cell)
@@ -2642,7 +2891,8 @@ public class AddinEventsSink implements
 		addMessage("onInitialExtraction");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.support.scmintegration.ISCMEventsSink#onPreFeatureExecuted(int, org.netbeans.modules.uml.ui.support.scmintegration.ISCMItemGroup, org.netbeans.modules.uml.ui.support.scmintegration.ISCMOptions, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onPreFeatureExecuted(int kind, ISCMItemGroup Group, ISCMOptions pOptions, IResultCell cell)
@@ -2651,7 +2901,8 @@ public class AddinEventsSink implements
 		
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.support.scmintegration.ISCMEventsSink#onFeatureExecuted(int, org.netbeans.modules.uml.ui.support.scmintegration.ISCMItemGroup, org.netbeans.modules.uml.ui.support.scmintegration.ISCMOptions, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onFeatureExecuted(int kind, ISCMItemGroup Group, ISCMOptions pOptions, IResultCell cell)
@@ -2660,7 +2911,8 @@ public class AddinEventsSink implements
 		
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IStereotypeEventsSink#onPreStereotypeApplied(java.lang.Object, org.netbeans.modules.uml.core.metamodel.core.foundation.IElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onPreStereotypeApplied(Object pStereotype, IElement element, IResultCell cell)
@@ -2669,7 +2921,8 @@ public class AddinEventsSink implements
 		
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IStereotypeEventsSink#onStereotypeApplied(java.lang.Object, org.netbeans.modules.uml.core.metamodel.core.foundation.IElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onStereotypeApplied(Object pStereotype, IElement element, IResultCell cell)
@@ -2678,7 +2931,8 @@ public class AddinEventsSink implements
 		
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IStereotypeEventsSink#onPreStereotypeDeleted(java.lang.Object, org.netbeans.modules.uml.core.metamodel.core.foundation.IElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onPreStereotypeDeleted(Object pStereotype, IElement element, IResultCell cell)
@@ -2687,7 +2941,8 @@ public class AddinEventsSink implements
 		
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IStereotypeEventsSink#onStereotypeDeleted(java.lang.Object, org.netbeans.modules.uml.core.metamodel.core.foundation.IElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onStereotypeDeleted(Object pStereotype, IElement element, IResultCell cell)
@@ -2696,7 +2951,8 @@ public class AddinEventsSink implements
 		
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAffectedElementEventsSink#onPreImpacted(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier)
 	 */
 	public void onPreImpacted(IClassifier classifier, ETList<IVersionableElement> impacted, IResultCell cell )
@@ -2704,7 +2960,8 @@ public class AddinEventsSink implements
 		addMessage("onPreImpacted");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAffectedElementEventsSink#onImpacted(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier)
 	 */
 	public void onImpacted(IClassifier classifier, ETList<IVersionableElement> impacted, IResultCell cell )
@@ -2712,7 +2969,8 @@ public class AddinEventsSink implements
 		addMessage("onImpacted");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IRedefinableElementModifiedEventsSink#onPreFinalModified(org.netbeans.modules.uml.core.metamodel.core.foundation.IRedefinableElement, boolean, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onPreFinalModified(IRedefinableElement element, boolean proposedValue, IResultCell cell)
@@ -2721,7 +2979,8 @@ public class AddinEventsSink implements
 		
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IRedefinableElementModifiedEventsSink#onFinalModified(org.netbeans.modules.uml.core.metamodel.core.foundation.IRedefinableElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onFinalModified(IRedefinableElement element, IResultCell cell)
@@ -2730,7 +2989,8 @@ public class AddinEventsSink implements
 		
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IRedefinableElementModifiedEventsSink#onPreRedefinedElementAdded(org.netbeans.modules.uml.core.metamodel.core.foundation.IRedefinableElement, org.netbeans.modules.uml.core.metamodel.core.foundation.IRedefinableElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onPreRedefinedElementAdded(IRedefinableElement redefiningElement, IRedefinableElement redefinedElement, IResultCell cell)
@@ -2739,7 +2999,8 @@ public class AddinEventsSink implements
 		
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IRedefinableElementModifiedEventsSink#onRedefinedElementAdded(org.netbeans.modules.uml.core.metamodel.core.foundation.IRedefinableElement, org.netbeans.modules.uml.core.metamodel.core.foundation.IRedefinableElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onRedefinedElementAdded(IRedefinableElement redefiningElement, IRedefinableElement redefinedElement, IResultCell cell)
@@ -2748,7 +3009,8 @@ public class AddinEventsSink implements
 		
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IRedefinableElementModifiedEventsSink#onPreRedefinedElementRemoved(org.netbeans.modules.uml.core.metamodel.core.foundation.IRedefinableElement, org.netbeans.modules.uml.core.metamodel.core.foundation.IRedefinableElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onPreRedefinedElementRemoved(IRedefinableElement redefiningElement, IRedefinableElement redefinedElement, IResultCell cell)
@@ -2757,7 +3019,8 @@ public class AddinEventsSink implements
 		
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IRedefinableElementModifiedEventsSink#onRedefinedElementRemoved(org.netbeans.modules.uml.core.metamodel.core.foundation.IRedefinableElement, org.netbeans.modules.uml.core.metamodel.core.foundation.IRedefinableElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onRedefinedElementRemoved(IRedefinableElement redefiningElement, IRedefinableElement redefinedElement, IResultCell cell)
@@ -2766,7 +3029,8 @@ public class AddinEventsSink implements
 		
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IRedefinableElementModifiedEventsSink#onPreRedefiningElementAdded(org.netbeans.modules.uml.core.metamodel.core.foundation.IRedefinableElement, org.netbeans.modules.uml.core.metamodel.core.foundation.IRedefinableElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onPreRedefiningElementAdded(IRedefinableElement redefinedElement, IRedefinableElement redefiningElement, IResultCell cell)
@@ -2775,7 +3039,8 @@ public class AddinEventsSink implements
 		
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IRedefinableElementModifiedEventsSink#onRedefiningElementAdded(org.netbeans.modules.uml.core.metamodel.core.foundation.IRedefinableElement, org.netbeans.modules.uml.core.metamodel.core.foundation.IRedefinableElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onRedefiningElementAdded(IRedefinableElement redefinedElement, IRedefinableElement redefiningElement, IResultCell cell)
@@ -2784,7 +3049,8 @@ public class AddinEventsSink implements
 		
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IRedefinableElementModifiedEventsSink#onPreRedefiningElementRemoved(org.netbeans.modules.uml.core.metamodel.core.foundation.IRedefinableElement, org.netbeans.modules.uml.core.metamodel.core.foundation.IRedefinableElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onPreRedefiningElementRemoved(IRedefinableElement redefinedElement, IRedefinableElement redefiningElement, IResultCell cell)
@@ -2793,7 +3059,8 @@ public class AddinEventsSink implements
 		
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IRedefinableElementModifiedEventsSink#onRedefiningElementRemoved(org.netbeans.modules.uml.core.metamodel.core.foundation.IRedefinableElement, org.netbeans.modules.uml.core.metamodel.core.foundation.IRedefinableElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onRedefiningElementRemoved(IRedefinableElement redefinedElement, IRedefinableElement redefiningElement, IResultCell cell)
@@ -2802,7 +3069,8 @@ public class AddinEventsSink implements
 		
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.dynamics.ILifelineModifiedEventsSink#onPreChangeRepresentingClassifier(org.netbeans.modules.uml.core.metamodel.dynamics.ILifeline, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onPreChangeRepresentingClassifier(ILifeline pLifeline, ITypedElement pRepresents, IResultCell cell)
@@ -2810,7 +3078,8 @@ public class AddinEventsSink implements
 		addMessage("onPreChangeRepresentingClassifier");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.dynamics.ILifelineModifiedEventsSink#onChangeRepresentingClassifier(org.netbeans.modules.uml.core.metamodel.dynamics.ILifeline, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onChangeRepresentingClassifier(ILifeline pLifeline, ITypedElement pRepresents, IResultCell cell)
@@ -2818,7 +3087,8 @@ public class AddinEventsSink implements
 		addMessage("onChangeRepresentingClassifier");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivityEdgeEventsSink#onPreWeightModified(org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivityEdge, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onPreWeightModified(IActivityEdge pEdge, String newValue, IResultCell cell)
@@ -2826,7 +3096,8 @@ public class AddinEventsSink implements
 		addMessage("onPreWeightModified");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivityEdgeEventsSink#onWeightModified(org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivityEdge, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onWeightModified(IActivityEdge pEdge, IResultCell cell)
@@ -2834,7 +3105,8 @@ public class AddinEventsSink implements
 		addMessage("onWeightModified");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivityEdgeEventsSink#onPreGuardModified(org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivityEdge, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onPreGuardModified(IActivityEdge pEdge, String newValue, IResultCell cell)
@@ -2842,7 +3114,8 @@ public class AddinEventsSink implements
 		addMessage("onPreGuardModified");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivityEdgeEventsSink#onGuardModified(org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivityEdge, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onGuardModified(IActivityEdge pEdge, IResultCell cell)
@@ -2850,7 +3123,8 @@ public class AddinEventsSink implements
 		addMessage("onGuardModified");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.structure.IProjectEventsSink#onPreModeModified(org.netbeans.modules.uml.core.metamodel.structure.IProject, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onPreModeModified(IProject pProject, String newValue, IResultCell cell)
@@ -2858,7 +3132,8 @@ public class AddinEventsSink implements
 		addMessage("onPreModeModified");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.structure.IProjectEventsSink#onModeModified(org.netbeans.modules.uml.core.metamodel.structure.IProject, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onModeModified(IProject pProject, IResultCell cell)
@@ -2866,7 +3141,8 @@ public class AddinEventsSink implements
 		addMessage("onModeModified");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.structure.IProjectEventsSink#onPreDefaultLanguageModified(org.netbeans.modules.uml.core.metamodel.structure.IProject, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onPreDefaultLanguageModified(IProject pProject, String newValue, IResultCell cell)
@@ -2874,7 +3150,8 @@ public class AddinEventsSink implements
 		addMessage("onPreDefaultLanguageModified");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.structure.IProjectEventsSink#onDefaultLanguageModified(org.netbeans.modules.uml.core.metamodel.structure.IProject, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onDefaultLanguageModified(IProject pProject, IResultCell cell)
@@ -2882,7 +3159,8 @@ public class AddinEventsSink implements
 		addMessage("onDefaultLanguageModified");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.structure.IProjectEventsSink#onProjectPreCreate(org.netbeans.modules.uml.core.workspacemanagement.IWorkspace, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onProjectPreCreate(IWorkspace space, IResultCell cell)
@@ -2890,7 +3168,8 @@ public class AddinEventsSink implements
 		addMessage("onProjectPreCreate");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.structure.IProjectEventsSink#onProjectCreated(org.netbeans.modules.uml.core.metamodel.structure.IProject, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onProjectCreated(IProject Project, IResultCell cell)
@@ -2898,7 +3177,8 @@ public class AddinEventsSink implements
 		addMessage("onProjectCreated");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.structure.IProjectEventsSink#onProjectPreOpen(org.netbeans.modules.uml.core.workspacemanagement.IWorkspace, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onProjectPreOpen(IWorkspace space, String projName, IResultCell cell)
@@ -2906,7 +3186,8 @@ public class AddinEventsSink implements
 		addMessage("onProjectPreOpen");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.structure.IProjectEventsSink#onProjectOpened(org.netbeans.modules.uml.core.metamodel.structure.IProject, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onProjectOpened(IProject Project, IResultCell cell)
@@ -2914,7 +3195,8 @@ public class AddinEventsSink implements
 		addMessage("onProjectOpened");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.structure.IProjectEventsSink#onProjectPreRename(org.netbeans.modules.uml.core.metamodel.structure.IProject, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onProjectPreRename(IProject Project, String newName, IResultCell cell)
@@ -2922,7 +3204,8 @@ public class AddinEventsSink implements
 		addMessage("onProjectPreRename");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.structure.IProjectEventsSink#onProjectRenamed(org.netbeans.modules.uml.core.metamodel.structure.IProject, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onProjectRenamed(IProject Project, String oldName, IResultCell cell)
@@ -2930,7 +3213,8 @@ public class AddinEventsSink implements
 		addMessage("onProjectRenamed");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.structure.IProjectEventsSink#onProjectPreClose(org.netbeans.modules.uml.core.metamodel.structure.IProject, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onProjectPreClose(IProject Project, IResultCell cell)
@@ -2938,7 +3222,8 @@ public class AddinEventsSink implements
 		addMessage("onProjectPreClose");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.structure.IProjectEventsSink#onProjectClosed(org.netbeans.modules.uml.core.metamodel.structure.IProject, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onProjectClosed(IProject Project, IResultCell cell)
@@ -2946,7 +3231,8 @@ public class AddinEventsSink implements
 		addMessage("onProjectClosed");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.structure.IProjectEventsSink#onProjectPreSave(org.netbeans.modules.uml.core.metamodel.structure.IProject, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onProjectPreSave(IProject Project, IResultCell cell)
@@ -2954,7 +3240,8 @@ public class AddinEventsSink implements
 		addMessage("onProjectPreSave");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.structure.IProjectEventsSink#onProjectSaved(org.netbeans.modules.uml.core.metamodel.structure.IProject, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onProjectSaved(IProject Project, IResultCell cell)
@@ -2962,7 +3249,8 @@ public class AddinEventsSink implements
 		addMessage("onProjectSaved");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.structure.IProjectEventsSink#onPreReferencedLibraryAdded(org.netbeans.modules.uml.core.metamodel.structure.IProject, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onPreReferencedLibraryAdded(IProject Project, String refLibLoc, IResultCell cell)
@@ -2970,7 +3258,8 @@ public class AddinEventsSink implements
 		addMessage("onPreReferencedLibraryAdded");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.structure.IProjectEventsSink#onReferencedLibraryAdded(org.netbeans.modules.uml.core.metamodel.structure.IProject, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onReferencedLibraryAdded(IProject Project, String refLibLoc, IResultCell cell)
@@ -2978,7 +3267,8 @@ public class AddinEventsSink implements
 		addMessage("onReferencedLibraryAdded");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.structure.IProjectEventsSink#onPreReferencedLibraryRemoved(org.netbeans.modules.uml.core.metamodel.structure.IProject, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onPreReferencedLibraryRemoved(IProject Project, String refLibLoc, IResultCell cell)
@@ -2986,7 +3276,8 @@ public class AddinEventsSink implements
 		addMessage("onPreReferencedLibraryRemoved");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.structure.IProjectEventsSink#onReferencedLibraryRemoved(org.netbeans.modules.uml.core.metamodel.structure.IProject, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onReferencedLibraryRemoved(IProject Project, String refLibLoc, IResultCell cell)
@@ -2994,7 +3285,8 @@ public class AddinEventsSink implements
 		addMessage("onReferencedLibraryRemoved");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAssociationEndEventsSink#onPreQualifierAttributeAdded(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAssociationEnd, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttribute, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onPreQualifierAttributeAdded(IAssociationEnd pEnd, IAttribute pAttr, IResultCell cell)
@@ -3002,7 +3294,8 @@ public class AddinEventsSink implements
 		addMessage("onPreQualifierAttributeAdded");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAssociationEndEventsSink#onQualifierAttributeAdded(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAssociationEnd, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttribute, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onQualifierAttributeAdded(IAssociationEnd pEnd, IAttribute pAttr, IResultCell cell)
@@ -3010,7 +3303,8 @@ public class AddinEventsSink implements
 		addMessage("onQualifierAttributeAdded");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAssociationEndEventsSink#onPreQualifierAttributeRemoved(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAssociationEnd, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttribute, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onPreQualifierAttributeRemoved(IAssociationEnd pEnd, IAttribute pAttr, IResultCell cell)
@@ -3018,7 +3312,8 @@ public class AddinEventsSink implements
 		addMessage("onPreQualifierAttributeRemoved");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAssociationEndEventsSink#onQualifierAttributeRemoved(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAssociationEnd, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttribute, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onQualifierAttributeRemoved(IAssociationEnd pEnd, IAttribute pAttr, IResultCell cell)
@@ -3026,7 +3321,8 @@ public class AddinEventsSink implements
 		addMessage("onQualifierAttributeRemoved");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.structure.IArtifactEventsSink#onPreFileNameModified(org.netbeans.modules.uml.core.metamodel.structure.IArtifact, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onPreFileNameModified(IArtifact pArtifact, String newFileName, IResultCell cell)
@@ -3034,7 +3330,8 @@ public class AddinEventsSink implements
 		addMessage("onPreFileNameModified");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.structure.IArtifactEventsSink#onFileNameModified(org.netbeans.modules.uml.core.metamodel.structure.IArtifact, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onFileNameModified(IArtifact pArtifact, String oldFileName, IResultCell cell)
@@ -3042,7 +3339,8 @@ public class AddinEventsSink implements
 		addMessage("onFileNameModified");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.structure.IArtifactEventsSink#onPreDirty(org.netbeans.modules.uml.core.metamodel.structure.IArtifact, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onPreDirty(IArtifact pArtifact, IResultCell cell)
@@ -3050,7 +3348,8 @@ public class AddinEventsSink implements
 		addMessage("onPreDirty");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.structure.IArtifactEventsSink#onDirty(org.netbeans.modules.uml.core.metamodel.structure.IArtifact, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onDirty(IArtifact pArtifact, IResultCell cell)
@@ -3058,7 +3357,8 @@ public class AddinEventsSink implements
 		addMessage("onDirty");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.structure.IArtifactEventsSink#onPreSave(org.netbeans.modules.uml.core.metamodel.structure.IArtifact, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onPreSave(IArtifact pArtifact, String fileName, IResultCell cell)
@@ -3066,7 +3366,8 @@ public class AddinEventsSink implements
 		addMessage("onPreSave");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.structure.IArtifactEventsSink#onSave(org.netbeans.modules.uml.core.metamodel.structure.IArtifact, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onSave(IArtifact pArtifact, String fileName, IResultCell cell)
@@ -3074,7 +3375,8 @@ public class AddinEventsSink implements
 		addMessage("onSave");
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IPackageEventsSink#onPreSourceDirModified(org.netbeans.modules.uml.core.metamodel.core.foundation.IPackage, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onPreSourceDirModified(IPackage element, String proposedSourceDir, IResultCell cell)
@@ -3083,7 +3385,8 @@ public class AddinEventsSink implements
 		
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IPackageEventsSink#onSourceDirModified(org.netbeans.modules.uml.core.metamodel.core.foundation.IPackage, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onSourceDirModified(IPackage element, IResultCell cell)
@@ -3092,7 +3395,8 @@ public class AddinEventsSink implements
 		
 	}
 
-	/**
+	
+/**
 	 * @param addin
 	 */
 	public void setParent(EventLoggingAddin addin)
@@ -3163,7 +3467,8 @@ public class AddinEventsSink implements
 		addMessage(message);
 	}
 	
-	/**
+	
+/**
 	 *
 	 * Gets the translated names of the SCMFeatureKind enum
 	 *

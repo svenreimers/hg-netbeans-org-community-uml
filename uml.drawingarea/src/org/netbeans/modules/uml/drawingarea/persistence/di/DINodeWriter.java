@@ -53,10 +53,8 @@ import org.netbeans.modules.uml.drawingarea.persistence.NodeWriter;
 import org.netbeans.modules.uml.drawingarea.persistence.PersistenceUtil;
 import org.netbeans.modules.uml.drawingarea.persistence.util.XMIConstants;
 
-/**
- *
- * @author jyothi
- */
+
+
 public class DINodeWriter extends NodeWriter {
     
     public DINodeWriter(BufferedWriter writer) {

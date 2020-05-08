@@ -43,16 +43,15 @@
  */
 
 
+
 /*
  * Created on Jul 15, 2003
  *
  */
 package org.netbeans.modules.uml.ui.controls.newdialog;
 
-/**
- * @author sumitabhk
- *
- */
+
+
 public class NewDialogTabKind
 {
 	public static int NDTK_NONE	= 0;

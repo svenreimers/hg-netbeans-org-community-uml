@@ -43,21 +43,16 @@
  */
 
 
-/*
- *
- * Created on Jun 13, 2003
- * @author Trey Spiva
- */
+
+
 package org.netbeans.modules.uml.ui.controls.projecttree;
 
 import org.netbeans.modules.uml.core.metamodel.core.foundation.IElement;
 import org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeFolder;
 import org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeItem;
 
-/**
- *
- * @author Trey Spiva
- */
+
+
 public class ProjectTreeFolderNode extends ProjectTreeNode
    implements ITreeFolder
 {
@@ -70,7 +65,8 @@ public class ProjectTreeFolderNode extends ProjectTreeNode
       this(new ProjectTreeItemImpl());
    }
    
-   /**
+   
+/**
     * @param item
     */
    public ProjectTreeFolderNode(IProjectTreeItem item)
@@ -83,7 +79,8 @@ public class ProjectTreeFolderNode extends ProjectTreeNode
       m_ID = id;
    }
    
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeFolder#getID()
     */
    public String getID()
@@ -91,7 +88,8 @@ public class ProjectTreeFolderNode extends ProjectTreeNode
       return m_ID;
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeFolder#setName(java.lang.String)
     */
    public void setName(String value)
@@ -99,7 +97,8 @@ public class ProjectTreeFolderNode extends ProjectTreeNode
       m_Name = value;
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeItem#getName()
     */
    public String getName()
@@ -107,7 +106,8 @@ public class ProjectTreeFolderNode extends ProjectTreeNode
       return m_Name;
    }
       
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeFolder#setDisplayName(java.lang.String)
     */
    public void setDisplayName(String value)
@@ -124,7 +124,8 @@ public class ProjectTreeFolderNode extends ProjectTreeNode
       setDisplayName(value);
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeFolder#getDisplayName()
     */
    public String getDisplayName()
@@ -139,7 +140,8 @@ public class ProjectTreeFolderNode extends ProjectTreeNode
       return retVal;
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeFolder#setGetMethod(java.lang.String)
     */
    public void setGetMethod(String name)
@@ -147,7 +149,8 @@ public class ProjectTreeFolderNode extends ProjectTreeNode
       m_GetMethodName = name;
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeFolder#getGetMethod()
     */
    public String getGetMethod()
@@ -155,7 +158,8 @@ public class ProjectTreeFolderNode extends ProjectTreeNode
       return m_GetMethodName;
    }
 
-   /**
+   
+/**
     * Sets the element that this tree folder represents.
     *
     * @param newVal The element that this folder represents
@@ -170,7 +174,8 @@ public class ProjectTreeFolderNode extends ProjectTreeNode
       }
    }
 
-   /**
+   
+/**
     * Returns the element that this tree folder represents.
     *
     * @return The element that this folder represents, or NULL
@@ -189,7 +194,8 @@ public class ProjectTreeFolderNode extends ProjectTreeNode
       return retVal;
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeFolder#setPath(java.lang.String)
     */
    public void setPath(ITreeItem[] defPath)
@@ -201,7 +207,8 @@ public class ProjectTreeFolderNode extends ProjectTreeNode
       }
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeFolder#setIsGetMethodAnImport(boolean)
     */
    public void setIsGetMethodAnImport(boolean value)
@@ -210,7 +217,8 @@ public class ProjectTreeFolderNode extends ProjectTreeNode
 
    }
 
-   /**
+   
+/**
     * Is the get method the one used to get imported packages or elements?
     *
     * retVal <b>true</b> if the get method is one used to get package or element
@@ -229,7 +237,8 @@ public class ProjectTreeFolderNode extends ProjectTreeNode
       return retVal;
    }
    
-   /**
+   
+/**
     * Is the get method the one used to get imported elements?
     * 
     * @return <b>true</b> if the get method is an import, <b>false</b>
@@ -246,7 +255,8 @@ public class ProjectTreeFolderNode extends ProjectTreeNode
       return retVal;
    }
 
-   /**
+   
+/**
     * Is the get method the one used to get imported packages?
     * 
     * @return <b>true</b> if the get method is an import, <b>false</b>
@@ -267,7 +277,8 @@ public class ProjectTreeFolderNode extends ProjectTreeNode
    {
    		return getName();
    }
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see java.lang.Object#equals(java.lang.Object)
     */
    public boolean equals(Object obj)

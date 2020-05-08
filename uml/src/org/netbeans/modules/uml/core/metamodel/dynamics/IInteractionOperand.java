@@ -49,37 +49,44 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 public interface IInteractionOperand extends IInteractionFragment
 {
-	/**
+	
+/**
 	 * Adds a fragment to the collection of owned fragments.
 	*/
 	public void addFragment( IInteractionFragment frag );
 
-	/**
+	
+/**
 	 * Removes a fragment from this operand.
 	*/
 	public void removeFragment( IInteractionFragment frag );
 
-	/**
+	
+/**
 	 * Retrieves the collection of fragments this operand owns.
 	*/
 	public ETList<IInteractionFragment> getFragments();
 
-	/**
+	
+/**
 	 * Create and attach the constraint of the operand.
 	*/
 	public IInteractionConstraint createGuard();
 
-	/**
+	
+/**
 	 * Sets / Gets the constraint of the operand.
 	*/
 	public IInteractionConstraint getGuard();
 
-	/**
+	
+/**
 	 * Sets / Gets the constraint of the operand.
 	*/
 	public void setGuard( IInteractionConstraint value );
 
-	/**
+	
+/**
 	 * Helper function to get all the UML:Messages contained within this InteractionOperand
 	*/
 	public ETList<IMessage> getCoveredMessages();

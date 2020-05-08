@@ -42,6 +42,7 @@
  * made subject to such option by the copyright holder.
  */
 
+
 /*
  * Created on Sep 19, 2003
  *
@@ -56,14 +57,13 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.IElement;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.Namespace;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
-/**
- * @author aztec
- *
- */
+
+
 public class Region extends Namespace implements IRegion
 {
 
-	/**
+	
+/**
 	 *  Constructor
 	 */
 	public Region()

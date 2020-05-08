@@ -42,11 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : ApplyFunctionAction.java
- * Created on : Sep 17, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.metamodel.common.commonactions;
 
 import org.dom4j.Document;
@@ -54,9 +51,8 @@ import org.dom4j.Node;
 
 import org.netbeans.modules.uml.core.metamodel.basic.basicactions.PrimitiveAction;
 
-/**
- * @author Aztec
- */
+
+
 public class ApplyFunctionAction extends PrimitiveAction
                                     implements IApplyFunctionAction
 {

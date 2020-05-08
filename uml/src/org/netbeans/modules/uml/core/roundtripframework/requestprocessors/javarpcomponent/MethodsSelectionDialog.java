@@ -42,11 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * Created on Jan 29, 2004
- *
- * Window - Preferences - Java - Code Generation - Code and Comments
- */
+
+
 package org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpcomponent;
 import java.net.URL;
 import java.util.Enumeration;
@@ -69,11 +66,8 @@ import org.netbeans.modules.uml.ui.support.ProductHelper;
 import org.netbeans.modules.uml.ui.swing.SelectableLabel;
 import org.netbeans.modules.uml.ui.swing.commondialogs.JCenterDialog;
 
-/**
- * @author Aztec
- *
- * Window - Preferences - Java - Code Generation - Code and Comments
- */
+
+
 
 public class MethodsSelectionDialog extends JCenterDialog
 {
@@ -921,7 +915,8 @@ class CheckNode extends DefaultMutableTreeNode
         return isSelected;
     }
 
-    /**
+    
+/**
      * @return
      */
     public IOperation getOperation()
@@ -929,7 +924,8 @@ class CheckNode extends DefaultMutableTreeNode
         return operation;
     }
 
-    /**
+    
+/**
      * @param operationListId
      */
     public void setOperation(IOperation operation)
@@ -937,7 +933,8 @@ class CheckNode extends DefaultMutableTreeNode
         this.operation = operation;
     }
 
-    /**
+    
+/**
       * @return
       */
      public IClassifier getClassifier()
@@ -945,7 +942,8 @@ class CheckNode extends DefaultMutableTreeNode
          return clazz;
      }
 
-     /**
+     
+/**
       * @param operationListId
       */
      public void setClassifier(IClassifier clazz)
@@ -984,7 +982,8 @@ class CheckNode extends DefaultMutableTreeNode
         }
     }
 
-    /**
+    
+/**
      * @param children
      * @return
      */

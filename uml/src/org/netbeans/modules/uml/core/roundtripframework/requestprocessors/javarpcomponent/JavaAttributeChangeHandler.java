@@ -179,7 +179,8 @@ public class JavaAttributeChangeHandler extends JavaChangeHandler
         }
     }
     
-    /**
+    
+/**
      *
      * If the attributes class is a class, make it conform.
      *
@@ -218,7 +219,8 @@ public class JavaAttributeChangeHandler extends JavaChangeHandler
         }
     }
     
-    /**
+    
+/**
      *
      * If the attributes class is a class, make it conform.
      *
@@ -468,7 +470,7 @@ public class JavaAttributeChangeHandler extends JavaChangeHandler
             
             valid = true;
             
-            //Jyothi: Test if the getters/setters already exists (Fix for Bug#6327840 )
+            
             boolean getterExists = false;
             getterExists = m_Utilities.doesGetterExist(pAttribute, pClass);
             if (getterExists)
@@ -494,7 +496,8 @@ public class JavaAttributeChangeHandler extends JavaChangeHandler
         }
     }
     
-    /**
+    
+/**
      *
      * If the attribute has mulitplicity, we set the initial value to "new xxx[n]"
      *
@@ -548,7 +551,7 @@ public class JavaAttributeChangeHandler extends JavaChangeHandler
                                     // initialized at this time (in other words, it is
                                     // created dynamically in code).
                                     
-                                    //AZTEC: TODO: do it now
+                                    
                                 }
                                 
                             }
@@ -1017,7 +1020,8 @@ public class JavaAttributeChangeHandler extends JavaChangeHandler
         }
     }
     
-    /**
+    
+/**
      *
      * Make the parameter's multiplicity correspond to the passed in multiplicity.
      * Most likely, the passed in multiplicity is from an attribute, and the
@@ -1441,7 +1445,8 @@ public class JavaAttributeChangeHandler extends JavaChangeHandler
         }
     }
     
-    /**
+    
+/**
      *
      * Moves the passed in dependencies into the incoming Classifier
      *
@@ -1577,8 +1582,8 @@ public class JavaAttributeChangeHandler extends JavaChangeHandler
                                 {
                                     // The dupe was too deep again. Make sure the new op
                                     // is disassociated from the old attr
-                                    //m_Utilities.breakReadAccessorFromAttribute(pNewOp);
-                                    //m_Utilities.breakWriteAccessorFromAttribute(pNewOp);
+                                    
+                                    
                                     removeDependencies(pNewOp);
                                     
                                     // set up the accessor relationship
@@ -1610,8 +1615,8 @@ public class JavaAttributeChangeHandler extends JavaChangeHandler
                                 {
                                     // The dupe was too deep again. Make sure the new op
                                     // is disassociated from the old attr
-                                    //m_Utilities.breakReadAccessorFromAttribute(pNewOp);
-                                    //m_Utilities.breakWriteAccessorFromAttribute(pNewOp);
+                                    
+                                    
                                     removeDependencies(pNewOp);
                                     
                                     // set up the accessor relationship
@@ -1712,7 +1717,8 @@ public class JavaAttributeChangeHandler extends JavaChangeHandler
         super.addDependency(request, pDependentClass, pAttrType);
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpcomponent.JavaChangeHandler#buildQuery(java.lang.String)
      */
     protected IHandlerQuery buildQuery(String key)

@@ -48,22 +48,26 @@ import org.netbeans.modules.uml.core.support.umlsupport.IResultCell;
 
 public interface IExternalElementEventsSink
 {
-	/**
+	
+/**
 	 * Fired whenever an element is about to be loaded from an .etx file.
 	*/
 	public void onExternalElementPreLoaded( String uri, IResultCell cell );
 
-	/**
+	
+/**
 	 * Fired whenever an element was loaded from an etx file.
 	*/
 	public void onExternalElementLoaded( IVersionableElement element, IResultCell cell );
 
-	/**
+	
+/**
 	 * Fired whenever an element is about to be extracted from the current project and placed into an .etx file.
 	*/
 	public void onPreInitialExtraction( String fileName, IVersionableElement element, IResultCell cell );
 
-	/**
+	
+/**
 	 * Fired whenever an element has been extracted to a .etx file.
 	*/
 	public void onInitialExtraction( IVersionableElement element, IResultCell cell );

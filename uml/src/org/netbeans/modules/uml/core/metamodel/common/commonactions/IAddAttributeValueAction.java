@@ -42,18 +42,14 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : IAddAttributeValueAction.java
- * Created on : Sep 17, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.metamodel.common.commonactions;
 
 import org.netbeans.modules.uml.core.metamodel.basic.basicactions.IInputPin;
 
-/**
- * @author Aztec
- */
+
+
 public interface IAddAttributeValueAction extends IWriteAttributeAction
 {
     public IInputPin getInsertAt();

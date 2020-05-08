@@ -46,10 +46,8 @@ import org.netbeans.modules.uml.core.metamodel.common.commonstatemachines.IState
 import org.netbeans.modules.uml.core.metamodel.core.foundation.IElement;
 import org.netbeans.modules.uml.drawingarea.palette.NodeInitializer;
 
-/**
- *
- * @author Sheryl Su
- */
+
+
 public class SubMachineStateInitializer implements NodeInitializer
 {
 

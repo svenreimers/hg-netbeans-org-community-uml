@@ -49,6 +49,7 @@ import org.netbeans.modules.uml.core.AbstractUMLTestCase;
 import org.dom4j.Document;
 import org.dom4j.Element;
 import org.netbeans.modules.uml.core.support.umlsupport.XMLManip;
+
 /**
  * Test cases for JumpEvent.
  */
@@ -61,7 +62,8 @@ public class JumpEventTestCase extends AbstractUMLTestCase
 
     private IJumpEvent je;
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see junit.framework.TestCase#setUp()
      */
     protected void setUp() throws Exception
@@ -77,7 +79,8 @@ public class JumpEventTestCase extends AbstractUMLTestCase
         je.setEventData(el);
     }
     
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see junit.framework.TestCase#tearDown()
      */
     protected void tearDown() throws Exception

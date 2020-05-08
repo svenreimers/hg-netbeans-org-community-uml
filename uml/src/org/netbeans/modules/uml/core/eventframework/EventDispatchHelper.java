@@ -67,7 +67,8 @@ public class EventDispatchHelper implements IEventDispatchHelper
     m_dispatcher = value;
   }
 
-  /**
+  
+/**
    *
    * Creates a payload given the passed in trigger name.
    *
@@ -88,7 +89,8 @@ public class EventDispatchHelper implements IEventDispatchHelper
 		return payload;
 	}
 
-	/**
+	
+/**
 	 *
 	 * Retrieves a particular dispatcher.
 	 *

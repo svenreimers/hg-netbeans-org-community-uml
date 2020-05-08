@@ -43,6 +43,7 @@
  */
 
 
+
 /*
  * CLD_RealizeLinkTests.java
  *
@@ -72,10 +73,8 @@ import org.netbeans.test.umllib.exceptions.UnexpectedElementSelectionException;
 import org.netbeans.test.umllib.vrf.LinkVerifier;
 
 
-/**
- *
- * @author Administrator
- */
+
+
 public class CLD_RealizeLinkTests extends ClassDiagramTestCase {
     
     private static String prName = "UMLProjectForRealizeLink";

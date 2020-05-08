@@ -42,6 +42,7 @@
  * made subject to such option by the copyright holder.
  */
 
+
 /*
  * BaseActionWrapper.java
  *
@@ -55,10 +56,8 @@ import java.awt.event.ActionEvent;
 import javax.swing.Action;
 import javax.swing.Icon;
 
-/**
- *
- * @author Administrator
- */
+
+
 public class BaseActionWrapper extends BaseAction
 {
    Action mWrappedAction = null;

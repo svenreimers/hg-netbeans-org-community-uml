@@ -47,12 +47,8 @@ package org.netbeans.modules.uml.core.requirementsframework;
 import org.netbeans.modules.uml.core.support.umlsupport.IComparableTreeData;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
-/**
- * @author brettb
- *
- * To change the template for this generated type comment go to
- * Window>Preferences>Java>Code Generation>Code and Comments
- */
+
+
 public class RequirementSource implements IRequirementSource, IComparableTreeData
 {
    private boolean m_bRequiresLogin; // does source require login
@@ -65,7 +61,8 @@ public class RequirementSource implements IRequirementSource, IComparableTreeDat
    /// Collection of Requirements for this Requirement Source.
    ETList < IRequirement > m_Requirements = null;
 
-   /**
+   
+/**
     *
     * Get the path/file location of the proxy file for this
     * requirements source.
@@ -80,7 +77,8 @@ public class RequirementSource implements IRequirementSource, IComparableTreeDat
       return m_strProxyFile;
    }
 
-   /**
+   
+/**
     *
     * Set the path/file location of the proxy file for this
     * requirements source.
@@ -95,7 +93,8 @@ public class RequirementSource implements IRequirementSource, IComparableTreeDat
       m_strProxyFile = newVal;
    }
 
-   /**
+   
+/**
     *
     * Get the path/file location of the requirements file for this
     * requirements source.
@@ -110,7 +109,8 @@ public class RequirementSource implements IRequirementSource, IComparableTreeDat
       return m_strLocation;
    }
 
-   /**
+   
+/**
     *
     * Set the path/file location of the requirements file for this
     * requirements source.
@@ -125,7 +125,8 @@ public class RequirementSource implements IRequirementSource, IComparableTreeDat
       m_strLocation = newVal;
    }
 
-   /**
+   
+/**
     *
     * Get the registered name of the Requirements Provider addin
     * that manages this requirements source.
@@ -140,7 +141,8 @@ public class RequirementSource implements IRequirementSource, IComparableTreeDat
       return m_strProvider;
    }
 
-   /**
+   
+/**
     *
     * Set the registered name of the Requirements Provider addin
     * that manages this requirements source.
@@ -155,7 +157,8 @@ public class RequirementSource implements IRequirementSource, IComparableTreeDat
       m_strProvider = newVal;
    }
 
-   /**
+   
+/**
     *
     * Get the name displayed for this requirement source in the
     * Design Center tree.
@@ -170,7 +173,8 @@ public class RequirementSource implements IRequirementSource, IComparableTreeDat
       return m_strDispName;
    }
 
-   /**
+   
+/**
     *
     * Set the name displayed for this requirement source in the
     * Design Center tree.
@@ -185,7 +189,8 @@ public class RequirementSource implements IRequirementSource, IComparableTreeDat
       m_strDispName = newVal;
    }
 
-   /**
+   
+/**
     *
     * Get the XML ID of this Requirement source (the ID used in
     * the RequirementSources.edt file).
@@ -200,7 +205,8 @@ public class RequirementSource implements IRequirementSource, IComparableTreeDat
       return m_strId;
    }
 
-   /**
+   
+/**
     *
     * Set the XML ID for this Requirement source (the ID used in
     * the RequirementSources.edt file).
@@ -215,7 +221,8 @@ public class RequirementSource implements IRequirementSource, IComparableTreeDat
       m_strId = newVal;
    }
 
-   /**
+   
+/**
     *
     * Returns true if this requirement source requires a login.
     *
@@ -229,7 +236,8 @@ public class RequirementSource implements IRequirementSource, IComparableTreeDat
       return m_bRequiresLogin;
    }
 
-   /**
+   
+/**
     *
     * Sets whether this requirement source requires a login.
     *

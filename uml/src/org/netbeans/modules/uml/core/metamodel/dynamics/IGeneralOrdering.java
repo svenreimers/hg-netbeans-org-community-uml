@@ -49,22 +49,26 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElement;
 
 public interface IGeneralOrdering extends INamedElement
 {
-	/**
+	
+/**
 	 * The Event referred comes before the Event referred by After.
 	*/
 	public IEventOccurrence getBefore();
 
-	/**
+	
+/**
 	 * The Event referred comes before the Event referred by After.
 	*/
 	public void setBefore( IEventOccurrence value );
 
-	/**
+	
+/**
 	 * The Event referred comes after the Event referred by Before.
 	*/
 	public IEventOccurrence getAfter();
 
-	/**
+	
+/**
 	 * The Event referred comes after the Event referred by Before.
 	*/
 	public void setAfter( IEventOccurrence value );

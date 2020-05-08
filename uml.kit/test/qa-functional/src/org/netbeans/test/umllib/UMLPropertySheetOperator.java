@@ -43,6 +43,7 @@
  */
 
 
+
 /*
  * UMLPropertySheetOperator.java
  *
@@ -60,13 +61,12 @@ import java.util.Map;
 import org.netbeans.jellytools.properties.Property;
 import org.netbeans.jellytools.properties.PropertySheetOperator;
 
-/**
- *
- * @author VijayaBabu Mummaneni
- */
+
+
 public class UMLPropertySheetOperator extends PropertySheetOperator {
     
-    /**
+    
+/**
      * Creates a new instance of UMLPropertySheetOperator
      * @param propWindowTitle 
      */
@@ -75,7 +75,8 @@ public class UMLPropertySheetOperator extends PropertySheetOperator {
     }
     
     
-    /**
+    
+/**
      * Returns a HashMap that contains all the property names and their 
      *  values. A Node should be selected before calling this method.
      * @return 

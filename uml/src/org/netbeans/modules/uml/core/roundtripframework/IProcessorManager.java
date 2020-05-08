@@ -42,11 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : IProcessorManager.java
- * Created on : Nov 6, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.roundtripframework;
 
 import org.netbeans.modules.uml.common.generics.ETPairT;
@@ -58,9 +55,8 @@ import org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframe
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 import org.netbeans.modules.uml.core.workspacemanagement.IWSProject;
 
-/**
- * @author Aztec
- */
+
+
 public interface IProcessorManager
 {
     public boolean establishProcessors(boolean create, boolean override, 

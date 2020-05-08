@@ -50,32 +50,38 @@ import org.netbeans.modules.uml.core.eventframework.IEventPayload;
 
 public interface IActivityEventDispatcher extends IEventDispatcher
 {
-	/**
+	
+/**
 	 * Registers an event sink to handle ActivityEdge events.
 	*/
 	public void registerForActivityEdgeEvents( IActivityEdgeEventsSink handler );
 
-	/**
+	
+/**
 	 * Removes a sink listening for ActivityEdge events.
 	*/
 	public void revokeActivityEdgeSink( IActivityEdgeEventsSink handler );
 
-	/**
+	
+/**
 	 * Fired whenever the passed in ActivityEdge's weight property is about to change.
 	*/
 	public boolean firePreWeightModified( IActivityEdge pEdge, String newValue, IEventPayload payLoad );
 
-	/**
+	
+/**
 	 * Fired whenever the passed in ActivityEdge's weight has been changed.
 	*/
 	public void fireWeightModified( IActivityEdge pEdge, IEventPayload payLoad );
 
-	/**
+	
+/**
 	 * Fired whenever the passed in ActivityEdge's weight property is about to change.
 	*/
 	public boolean firePreGuardModified( IActivityEdge pEdge, String newValue, IEventPayload payLoad );
 
-	/**
+	
+/**
 	 * Fired whenever the passed in ActivityEdge's weight has been changed.
 	*/
 	public void fireGuardModified( IActivityEdge pEdge, IEventPayload payLoad );
