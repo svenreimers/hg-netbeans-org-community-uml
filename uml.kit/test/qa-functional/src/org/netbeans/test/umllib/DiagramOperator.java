@@ -43,6 +43,8 @@
  */
 
 
+
+
 /*
  * UMLDiagramOperator.java
  *
@@ -102,6 +104,7 @@ import org.netbeans.swing.tabcontrol.TabbedContainer;
 //import org.openide.windows.TopComponent;
 
 
+
 /**
  * This common diagram operator
  */
@@ -120,7 +123,9 @@ public class DiagramOperator extends TopComponentOperator {
         Timeouts.initDefault("DiagramOperator.WaitDiagramOperator", WAIT_DIAGRAM_TIMEOUT);
     }
     
-    /**
+    
+
+/**
      * Creates a new instance of DiagramOperator
      * @param diagramName Diagram name
      */
@@ -142,7 +147,9 @@ public class DiagramOperator extends TopComponentOperator {
     }
     
     
-    /**
+    
+
+/**
      * Return insttance of UMLDiagramTopComponent for this diagram
      * @return instance of IDrawingAreaControl for this diagram
      */
@@ -150,7 +157,9 @@ public class DiagramOperator extends TopComponentOperator {
         return umlTC;
     }
     
-    /**
+    
+
+/**
      * Return insttance of UMLDiagramTopComponent for this diagram
      * @return instance of IDrawingAreaControl for this diagram
      */
@@ -158,7 +167,9 @@ public class DiagramOperator extends TopComponentOperator {
         return designerScene;
     }
     
-    /**
+    
+
+/**
      * Returns DrawingAreaOperator for this diagram
      * @return DrawingAreaOperator for this diagram
      */
@@ -167,7 +178,9 @@ public class DiagramOperator extends TopComponentOperator {
     }
     
     
-    /**
+    
+
+/**
      * Returns diagram name
      * @return diagram name
      */
@@ -176,7 +189,9 @@ public class DiagramOperator extends TopComponentOperator {
     }
     
     
-    /**
+    
+
+/**
      * Return toolbar for this diagram
      * @return Toolbar operator for this diagram
      */
@@ -186,7 +201,9 @@ public class DiagramOperator extends TopComponentOperator {
         }
         return mToolbar;
     }
-    /**
+    
+
+/**
      * Return paletter for this diagram, activate palette
      * @return Paletter operator for this diagram
      */
@@ -199,7 +216,9 @@ public class DiagramOperator extends TopComponentOperator {
         return mPaletter;
     }
     
-    /**
+    
+
+/**
      * Put element on diagram by pressing paletter butoon and clicking on
      * the diagram
      * @param name Name for new element
@@ -211,7 +230,9 @@ public class DiagramOperator extends TopComponentOperator {
         Point p = getDrawingArea().getFreePoint();
         return putElementOnDiagram(name, elementType, p.x, p.y);
     }
-    /**
+    
+
+/**
      * Put element on diagram by pressing paletter butoon and clicking on
      * the diagram
      * @param name Name for new element
@@ -225,7 +246,9 @@ public class DiagramOperator extends TopComponentOperator {
     }
     
     
-    /**
+    
+
+/**
      * create an element on diagram by pressing paletter butoon and clicking on
      * the diagram
      * @param name Name for new element
@@ -238,7 +261,9 @@ public class DiagramOperator extends TopComponentOperator {
     }
     
     
-    /**
+    
+
+/**
      * Put element on diagram by pressing paletter butoon and clicking on
      * the diagram
      * @param name Name for new element
@@ -251,7 +276,9 @@ public class DiagramOperator extends TopComponentOperator {
     public DiagramElementOperator putElementOnDiagram(String name, ElementTypes elementType, int x, int y) throws NotFoundException{
         return putElementOnDiagram(name,elementType,x,y, LibProperties.getCurrentNamer(elementType));
     }
-    /**
+    
+
+/**
      * Put element on diagram by pressing paletter butoon and clicking on
      * the diagram
      * @param name Name for new element
@@ -267,7 +294,9 @@ public class DiagramOperator extends TopComponentOperator {
     
     
     
-    /**
+    
+
+/**
      * Put element on diagram by pressing paletter butoon and clicking on
      * the diagram
      * @param name Name for new element
@@ -279,7 +308,9 @@ public class DiagramOperator extends TopComponentOperator {
     public void createGenericElementOnDiagram(String name, ElementTypes elementType, int x, int y) throws NotFoundException{
         createGenericElementOnDiagram(name, elementType, x, y, LibProperties.getCurrentNamer(elementType));
     }
-    /**
+    
+
+/**
      * Put element on diagram by pressing paletter butoon and clicking on
      * the diagram
      * @param name Name for new element
@@ -290,12 +321,14 @@ public class DiagramOperator extends TopComponentOperator {
      */
     public void createGenericElementOnDiagram(String name, ExpandedElementTypes elementType, int x, int y) throws NotFoundException{
         // workround for bug 127512
-        // createGenericElementOnDiagram(name, elementType, x, y, LibProperties.getCurrentNamer(elementType));
+        
         createGenericElementOnDiagram(name, elementType, x, y, new DiagramElementOperator.DefaultNamer());
     }
     
     
-    /**
+    
+
+/**
      * Put element on diagram by pressing paletter butoon and clicking on
      * the diagram
      * @param name Name for new element
@@ -320,7 +353,9 @@ public class DiagramOperator extends TopComponentOperator {
         } else  return new DiagramElementOperator(this, name, elementType, 0);
     }
     
-    /**
+    
+
+/**
      * Put element on diagram by pressing paletter butoon and clicking on
      * the diagram
      * @param name Name for new element
@@ -344,7 +379,9 @@ public class DiagramOperator extends TopComponentOperator {
     }
     
  
-    /**
+    
+
+/**
      * Put element on diagram by drag elment from palette and drop
      * to canvas
      * @param name Name for new element
@@ -390,7 +427,9 @@ public class DiagramOperator extends TopComponentOperator {
        //  JemmyProperties.setCurrentDispatchingModel(JemmyProperties.QUEUE_MODEL_MASK );
     }
     
-    /**
+    
+
+/**
      * Put element on diagram by pressing paletter butoon and clicking on
      * the diagram
      * @param name Name for new element
@@ -420,7 +459,9 @@ public class DiagramOperator extends TopComponentOperator {
     }
     
     
-    /**
+    
+
+/**
      *
      * @param node
      */
@@ -445,7 +486,9 @@ public class DiagramOperator extends TopComponentOperator {
     
     
     
-    /**
+    
+
+/**
      * Draw link on diagram
      * @param linkElementType Link type
      * @param fromElement Source element
@@ -463,13 +506,8 @@ public class DiagramOperator extends TopComponentOperator {
     }
     
     
-    /**
-     * Create generic relationship on diagram
-     * @param linkElementType Link type
-     * @param fromElement Source element
-     * @param toElement target element
-     * @throws qa.uml.exceptions.NotFoundException when source or target is not found
-     */
+    
+
  
       public void createGenericRelationshipOnDiagram(LinkTypes linkElementType, DiagramElementOperator fromElement, DiagramElementOperator toElement) throws NotFoundException{
           fromElement.select();
@@ -481,13 +519,15 @@ public class DiagramOperator extends TopComponentOperator {
           Utils.log("element click point = "+ elementClickPoint.x + ", "+ elementClickPoint.y);
           JemmyProperties.setCurrentDispatchingModel(JemmyProperties.ROBOT_MODEL_MASK);
           //linkButton.clickMouse();
-          //TODO: Wait for Trey's option to not hide context palette.
+          
           DNDDriver dndDriver = new DNDDriver();
           dndDriver.dnd(linkButton, buttonClickPoint, getDrawingArea(), elementClickPoint,
           InputEvent.BUTTON1_MASK, 0);
       }
     
-    /**
+    
+
+/**
      * Returns all element from this diagram exclude NodePresentation elements
      * @return all elements from this diagram exclude NodePresentation elements
      */
@@ -514,7 +554,9 @@ public class DiagramOperator extends TopComponentOperator {
      }
   
     
-    /**
+    
+
+/**
      * Returns all element from this diagram
      * @return all elements from this diagram
      */
@@ -536,7 +578,9 @@ public class DiagramOperator extends TopComponentOperator {
         
     }
     
-    /**
+    
+
+/**
      * Returns if there any selected objects on diagram
      * @return if there any selected objects on diagram
      */
@@ -551,7 +595,9 @@ public class DiagramOperator extends TopComponentOperator {
             return false;
     }
     
-    /**
+    
+
+/**
      * Returns if there any selected links on diagram
      * @return if there any selected links on diagram
      */
@@ -569,7 +615,9 @@ public class DiagramOperator extends TopComponentOperator {
         return hasSelectedLinks;
     }
     
-    /**
+    
+
+/**
      *
      * @param name
      * @return
@@ -589,7 +637,9 @@ public class DiagramOperator extends TopComponentOperator {
     }
     
     
-    /**
+    
+
+/**
      *
      * @param diagramName
      * @param diagramType
@@ -609,21 +659,27 @@ public class DiagramOperator extends TopComponentOperator {
         
     }
     
-    /**
+    
+
+/**
      * zooms diagram in using 'Zoom In' context menu
      */
     public void zoomIn(){
         this.getDrawingArea().getPopup().pushMenu("Zoom In");
     }
     
-    /**
+    
+
+/**
      * zooms diagram in using 'Zoom Out' context menu
      */
     public void zoomOut(){
         this.getDrawingArea().getPopup().pushMenu("Zoom Out");
     }
     
-    /**
+    
+
+/**
      * Selects diagram zoom percentage using UI.
      * Invokes 'zoom...' diagram context menu and types specified percent text into opened 'zoom' dialog.
      * @param ZoomCustomLevel string value to select in Percent ComboBox
@@ -673,7 +729,9 @@ public class DiagramOperator extends TopComponentOperator {
         throw new UMLCommonException("Diagram/area is still visible after "+timeout+" ms.");
     }
     
-    /** Returns TabbedAdapter component from parents hierarchy.
+    
+
+/** Returns TabbedAdapter component from parents hierarchy.
      */
 //    TabbedAdapter findTabbedAdapter() {
 //        Component parent = getSource().getParent();
@@ -704,7 +762,9 @@ public class DiagramOperator extends TopComponentOperator {
     }
 
 
-    /** call menu on its tab.
+    
+
+/** call menu on its tab.
      */
 //    public JPopupMenuOperator callMenuOnTab() {
 //        if(isOpened()) {
@@ -737,7 +797,9 @@ public class DiagramOperator extends TopComponentOperator {
         }
     }
     
-    /**
+    
+
+/**
      * Wait for diagram
      * @return CompartmentOperator if found
      * @param comp
@@ -763,7 +825,9 @@ public class DiagramOperator extends TopComponentOperator {
         }
     }
     
-    /**
+    
+
+/**
      *
      * @param name
      * @param comp
@@ -777,7 +841,9 @@ public class DiagramOperator extends TopComponentOperator {
     static class  DiagramComponentChooser implements ComponentChooser {
         String nm=null;
         Operator.StringComparator cmp=null;
-        /**
+        
+
+/**
          *
          * @param name
          * @param comp
@@ -787,7 +853,9 @@ public class DiagramOperator extends TopComponentOperator {
             cmp=comp;
         }
         
-        /**
+        
+
+/**
          *
          * @param arg0
          * @return
@@ -799,7 +867,9 @@ public class DiagramOperator extends TopComponentOperator {
             }
             return false;
         }
-        /**
+        
+
+/**
          *
          * @return
          */
@@ -814,12 +884,16 @@ public class DiagramOperator extends TopComponentOperator {
             
         }
         
-        /*
+        
+
+/*
          * (non-Javadoc)
          *
          * @see org.netbeans.jemmy.ComponentChooser#checkComponent(java.awt.Component)
          */
-        /**
+        
+
+/**
          *
          * @param arg0
          * @return
@@ -832,12 +906,16 @@ public class DiagramOperator extends TopComponentOperator {
             return false;
         }
         
-        /*
+        
+
+/*
          * (non-Javadoc)
          *
          * @see org.netbeans.jemmy.ComponentChooser#getDescription()
          */
-        /**
+        
+
+/**
          *
          * @return
          */
@@ -854,12 +932,16 @@ public class DiagramOperator extends TopComponentOperator {
             
         }
         
-        /*
+        
+
+/*
          * (non-Javadoc)
          *
          * @see org.netbeans.jemmy.ComponentChooser#checkComponent(java.awt.Component)
          */
-        /**
+        
+
+/**
          *
          * @param arg0
          * @return
@@ -871,12 +953,16 @@ public class DiagramOperator extends TopComponentOperator {
             return false;
         }
         
-        /*
+        
+
+/*
          * (non-Javadoc)
          *
          * @see org.netbeans.jemmy.ComponentChooser#getDescription()
          */
-        /**
+        
+
+/**
          *
          * @return
          */

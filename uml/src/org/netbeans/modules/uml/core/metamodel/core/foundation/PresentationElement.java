@@ -58,6 +58,8 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 import org.netbeans.modules.uml.core.support.umlutils.ElementLocator;
 import org.dom4j.Node;
 
+
+
 /**
  * PresentationElementImpl is the implementation of the UML 
  * PresentationElement meta type.
@@ -73,7 +75,9 @@ public class PresentationElement extends Element implements IPresentationElement
 {
     private String overrideTypeName = null;
     
-    /**
+    
+
+/**
      * 
      */
     public PresentationElement()
@@ -81,7 +85,9 @@ public class PresentationElement extends Element implements IPresentationElement
         super();
     }
 
-    /**
+    
+
+/**
      * Retrieves the metatype of the the firstSubject.  
      * @return The model elements metatype
      */
@@ -102,7 +108,9 @@ public class PresentationElement extends Element implements IPresentationElement
         return retVal;
     }
                 
-    /**
+    
+
+/**
      *
      * Retrieves all the model elements that this presentation element represents.
      *
@@ -116,7 +124,9 @@ public class PresentationElement extends Element implements IPresentationElement
 
     }
 
-    /**
+    
+
+/**
      *
      * Returns the first element on the subjects collection.
      *
@@ -172,7 +182,9 @@ public class PresentationElement extends Element implements IPresentationElement
         return retVal;
     }
 
-    /**
+    
+
+/**
      * Determines whether or not the passed in element is the first subject of 
      * this PresentationElement.
      */
@@ -199,7 +211,9 @@ public class PresentationElement extends Element implements IPresentationElement
         return retVal;
     }
 
-    /**
+    
+
+/**
      * Adds the passed-in NamedElement to the collection of elements
      * that this PresentationElement is associated with.
      *
@@ -247,7 +261,9 @@ public class PresentationElement extends Element implements IPresentationElement
         return elem;
     }
 
-    /**
+    
+
+/**
      * Removes the NamedElement from this PresentationElement with the matching
      * id.
      *
@@ -291,7 +307,9 @@ public class PresentationElement extends Element implements IPresentationElement
         }
     }
 
-    /**
+    
+
+/**
      * Determines whether or not the passed-in NamedElement is associated with this
      * PresentatinElement.
      *
@@ -336,7 +354,9 @@ public class PresentationElement extends Element implements IPresentationElement
         return isFirstSubject;
     }
 
-    /**
+    
+
+/**
      *
      * Retrieves the unique ID of the actual element used to show this presentation element to the user.
      *
@@ -350,7 +370,9 @@ public class PresentationElement extends Element implements IPresentationElement
         return XMLManip.getAttributeValue(m_Node, "displayID");
     }
 
-    /**
+    
+
+/**
      *
      * Sets the unique id of the actual element used to show this presentation element to the user.
      *
@@ -364,7 +386,9 @@ public class PresentationElement extends Element implements IPresentationElement
         setAttributeValue("displayID", id);
     }
 
-    /**
+    
+
+/**
      * Transforms this presentation element into another, such as an AssocationEdge into an AggregationEdge.
      * This should be overridden by any base class that's interested.
      */
@@ -373,7 +397,9 @@ public class PresentationElement extends Element implements IPresentationElement
         return null;
     }
 
-    /** 
+    
+
+/** 
      * Returns the number of subjects owned by this presentation element.
      * 
      * @param pVal[out] The number of subjects owned by this presentation element
@@ -393,7 +419,9 @@ public class PresentationElement extends Element implements IPresentationElement
         return elems != null ? elems.size() : 0;
     }
 
-    /**
+    
+
+/**
      *
      * Sets the "removeOnSave" attribute, dependent on preferences. If set to 
      * "T", this presentation element is removed from the data file upon save.
@@ -420,7 +448,9 @@ public class PresentationElement extends Element implements IPresentationElement
         buildNodePresence("UML:PresentationElement", doc, node);
     }
 
-    /**
+    
+
+/**
      *
      * Duplicates this element. 
      *
@@ -445,7 +475,9 @@ public class PresentationElement extends Element implements IPresentationElement
         return dup;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IPresentationElement#isFirstSubject(org.netbeans.modules.uml.core.metamodel.core.foundation.IElement)
      */
     public boolean isFirstSubject(IElement pElement)

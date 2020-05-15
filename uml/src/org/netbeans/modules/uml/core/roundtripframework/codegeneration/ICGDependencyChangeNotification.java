@@ -49,22 +49,30 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.IElement;
 public interface ICGDependencyChangeNotification extends ICGSingleClassChangeNotification
 {
 
-	/**
+	
+
+/**
 	 * Gets / Sets IndependentElement
 	*/
 	public IElement getIndependentElement();
 
-	/**
+	
+
+/**
 	 * Gets / Sets IndependentElement
 	*/
 	public void setIndependentElement( IElement value );
 
-	/**
+	
+
+/**
 	 * Gets / Sets IndependentElementName
 	*/
 	public String getIndependentElementName();
 
-	/**
+	
+
+/**
 	 * Gets / Sets IndependentElementName
 	*/
 	public void setIndependentElementName( String value );

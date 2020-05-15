@@ -51,6 +51,7 @@ import org.netbeans.modules.uml.drawingarea.view.CustomizableWidget;
 import org.netbeans.modules.uml.drawingarea.view.ResourceType;
 import org.openide.util.NbBundle;
 
+
 /**
  * This widget represents only actor symbol and do not represent Actor element
  */

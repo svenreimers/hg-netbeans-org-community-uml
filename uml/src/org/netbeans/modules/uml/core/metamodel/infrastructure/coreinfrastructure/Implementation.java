@@ -56,7 +56,9 @@ public class Implementation extends Realization implements IImplementation
     {
         super();
     }
-	/**
+	
+
+/**
 	 * property ImplementingClassifier
 	*/
 	public IClassifier getImplementingClassifier()
@@ -69,7 +71,9 @@ public class Implementation extends Realization implements IImplementation
 		return retClassifier;		
 	}
 
-	/**
+	
+
+/**
 	 * property ImplementingClassifier
 	*/
 	public void setImplementingClassifier( IClassifier classifier )
@@ -77,7 +81,9 @@ public class Implementation extends Realization implements IImplementation
 		super.setClient(classifier);	
 	}
 
-	/**
+	
+
+/**
 	 * property Contract
 	*/
 	public IClassifier getContract()
@@ -90,7 +96,9 @@ public class Implementation extends Realization implements IImplementation
 		return retInterface;	
 	}
 
-	/**
+	
+
+/**
 	 * property Contract
 	*/
 	public void setContract( IClassifier value )
@@ -98,7 +106,9 @@ public class Implementation extends Realization implements IImplementation
 		super.setSupplier(value);
 	}
 
-	/**
+	
+
+/**
 	 * Establishes the appropriate XML elements for this UML type.
 	 *
 	 * [in] The document where this element will reside

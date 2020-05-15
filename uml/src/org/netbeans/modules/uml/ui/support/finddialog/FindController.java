@@ -94,6 +94,7 @@ import org.netbeans.modules.uml.core.typemanagement.ITypeManager;
 import org.netbeans.modules.uml.core.workspacemanagement.IWSProject;
 import org.netbeans.modules.uml.core.workspacemanagement.IWorkspace;
 
+
 /**
  *
  * 
@@ -117,7 +118,9 @@ public class FindController implements IFindController
 	private IProject m_Project = null;
 	private JDialog m_Dialog = null;
 	
-	/**
+	
+
+/**
 	 * 
 	 */
 	public FindController()
@@ -137,7 +140,9 @@ public class FindController implements IFindController
 		ui.setVisible(true);
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.support.finddialog.IFindController#getScope()
 	 */
 	public int getScope()
@@ -145,7 +150,9 @@ public class FindController implements IFindController
 		return m_Scope;
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.support.finddialog.IFindController#setScope(int)
 	 */
 	public void setScope(int value)
@@ -153,7 +160,9 @@ public class FindController implements IFindController
 		m_Scope = value;
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.support.finddialog.IFindController#getSearchString()
 	 */
 	public String getSearchString()
@@ -161,7 +170,9 @@ public class FindController implements IFindController
 		return m_SearchString;
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.support.finddialog.IFindController#setSearchString(java.lang.String)
 	 */
 	public void setSearchString(String value)
@@ -169,7 +180,9 @@ public class FindController implements IFindController
 		m_SearchString = value;		
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.support.finddialog.IFindController#getKind()
 	 */
 	public int getKind()
@@ -177,7 +190,9 @@ public class FindController implements IFindController
 		return m_Kind;
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.support.finddialog.IFindController#setKind(int)
 	 */
 	public void setKind(int value)
@@ -185,7 +200,9 @@ public class FindController implements IFindController
 		m_Kind = value;
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.support.finddialog.IFindController#getCaseSensitive()
 	 */
 	public boolean getCaseSensitive()
@@ -193,7 +210,9 @@ public class FindController implements IFindController
 		return m_CaseSensitive;
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.support.finddialog.IFindController#setCaseSensitive(int)
 	 */
 	public void setCaseSensitive(boolean value)
@@ -201,7 +220,9 @@ public class FindController implements IFindController
 		m_CaseSensitive = value;
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.support.finddialog.IFindController#getReplaceString()
 	 */
 	public String getReplaceString()
@@ -209,7 +230,9 @@ public class FindController implements IFindController
 		return m_ReplaceString;
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.support.finddialog.IFindController#setReplaceString(java.lang.String)
 	 */
 	public void setReplaceString(String value)
@@ -217,7 +240,9 @@ public class FindController implements IFindController
 		m_ReplaceString = value;
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.support.finddialog.IFindController#getIsReplace()
 	 */
 	public boolean getIsReplace()
@@ -225,7 +250,9 @@ public class FindController implements IFindController
 		return m_IsReplace;
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.support.finddialog.IFindController#setIsReplace(int)
 	 */
 	public void setIsReplace(boolean value)
@@ -238,7 +265,9 @@ public class FindController implements IFindController
 		m_Dialog = diag;
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.support.finddialog.IFindController#search(org.netbeans.modules.uml.ui.support.finddialog.IFindResults)
 	 */
 	public void search(IFindResults pResults)
@@ -367,7 +396,9 @@ public class FindController implements IFindController
 		}
 	}
 
-	/**
+	
+
+/**
 	 * Show the replace dialog.
 	 */
 	public void showReplaceDialog()
@@ -411,7 +442,9 @@ public class FindController implements IFindController
 		return result;
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.support.finddialog.IFindController#getResultType()
 	 */
 	public int getResultType()
@@ -419,7 +452,9 @@ public class FindController implements IFindController
 		return m_ResultType;
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.support.finddialog.IFindController#setResultType(int)
 	 */
 	public void setResultType(int value)
@@ -427,7 +462,9 @@ public class FindController implements IFindController
 		m_ResultType = value;
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.support.finddialog.IFindController#addToProjectList(java.lang.String)
 	 */
 	public void addToProjectList(String newVal)
@@ -435,7 +472,9 @@ public class FindController implements IFindController
 		m_Projects.add(newVal);
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.support.finddialog.IFindController#clearProjectList()
 	 */
 	public void clearProjectList()
@@ -443,7 +482,9 @@ public class FindController implements IFindController
 		m_Projects.clear();
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.support.finddialog.IFindController#replace(org.netbeans.modules.uml.ui.support.finddialog.IFindResults)
 	 */
         public void replace(IFindResults pResults) {
@@ -548,7 +589,9 @@ public class FindController implements IFindController
             
         }
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.support.finddialog.IFindController#getSearchAlias()
 	 */
 	public boolean getSearchAlias()
@@ -556,7 +599,9 @@ public class FindController implements IFindController
 		return m_SearchAlias;
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.support.finddialog.IFindController#setSearchAlias(int)
 	 */
 	public void setSearchAlias(boolean value)
@@ -564,7 +609,9 @@ public class FindController implements IFindController
 		m_SearchAlias = value;
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 */
         public void search2(IProject pProject, IFindResults pResults)
         {
@@ -572,7 +619,9 @@ public class FindController implements IFindController
             search(pResults);
         }
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.support.finddialog.IFindController#navigateToDiagram(org.netbeans.modules.uml.core.metamodel.diagrams.IProxyDiagram)
 	 */
 	public boolean navigateToDiagram(IProxyDiagram pDiagram)
@@ -599,7 +648,9 @@ public class FindController implements IFindController
 		return result;
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.support.finddialog.IFindController#getExternalLoad()
 	 */
 	public boolean getExternalLoad()
@@ -607,7 +658,9 @@ public class FindController implements IFindController
 		return m_ExternalLoad;
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.support.finddialog.IFindController#setExternalLoad(int)
 	 */
 	public void setExternalLoad(boolean value)
@@ -615,7 +668,9 @@ public class FindController implements IFindController
 		m_ExternalLoad = value;
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.support.finddialog.IFindController#getCancelled()
 	 */
 	public boolean getCancelled()
@@ -623,7 +678,9 @@ public class FindController implements IFindController
 		return m_Cancelled;
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.support.finddialog.IFindController#setCancelled(int)
 	 */
 	public void setCancelled(boolean value)
@@ -631,7 +688,9 @@ public class FindController implements IFindController
 		m_Cancelled = value;
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.support.finddialog.IFindController#getActiveWindow()
 	 */
 	public long getActiveWindow()
@@ -639,7 +698,9 @@ public class FindController implements IFindController
 		return m_ActiveWindow;
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.support.finddialog.IFindController#setActiveWindow(int)
 	 */
 	public void setActiveWindow(long value)
@@ -647,7 +708,9 @@ public class FindController implements IFindController
 		m_ActiveWindow = value;
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.support.finddialog.IFindController#getWholeWordSearch()
 	 */
 	public boolean getWholeWordSearch()
@@ -655,7 +718,9 @@ public class FindController implements IFindController
 		return m_WholeWordSearch;
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.support.finddialog.IFindController#setWholeWordSearch(int)
 	 */
 	public void setWholeWordSearch(boolean value)
@@ -663,7 +728,9 @@ public class FindController implements IFindController
 		m_WholeWordSearch = value;
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.support.finddialog.IFindController#getDiagramNavigate()
 	 */
 	public boolean getDiagramNavigate()
@@ -671,7 +738,9 @@ public class FindController implements IFindController
 		return m_DiagramNavigate;
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.support.finddialog.IFindController#setDiagramNavigate(int)
 	 */
 	public void setDiagramNavigate(boolean value)

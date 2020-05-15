@@ -45,12 +45,14 @@
 
 package org.netbeans.test.umllib.exceptions;
 
+
 /**
  * 
  */
 public class ElementCastException extends UMLCommonException {
     
-    /**
+    
+/**
      * Creates a new instance of ElementCastException
      * @param message 
      */

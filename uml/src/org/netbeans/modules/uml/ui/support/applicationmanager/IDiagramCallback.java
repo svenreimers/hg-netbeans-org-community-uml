@@ -49,7 +49,9 @@ import org.netbeans.modules.uml.core.metamodel.diagrams.IDiagram;
 
 public interface IDiagramCallback
 {
-	/**
+	
+
+/**
 	 * Once the diagram is ready this method is called.
 	*/
 	public void returnedDiagram( IDiagram pDiagram );

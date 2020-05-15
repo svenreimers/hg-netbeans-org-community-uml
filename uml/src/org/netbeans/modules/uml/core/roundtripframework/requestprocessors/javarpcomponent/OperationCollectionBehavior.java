@@ -42,11 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : OperationCollectionBehavior.java
- * Created on : Oct 29, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpcomponent;
 
 /**
@@ -58,7 +55,9 @@ public class OperationCollectionBehavior
     private boolean m_InterfacesOnly;
     private boolean m_Silent;
     private boolean m_SilentSelectAll = true;
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpccomponent.IOperationCollectionBehavior#getAbstractOnly()
      */
     public boolean getAbstractOnly()
@@ -66,7 +65,9 @@ public class OperationCollectionBehavior
         return m_AbstractOnly;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpccomponent.IOperationCollectionBehavior#getInterfacesOnly()
      */
     public boolean getInterfacesOnly()
@@ -74,7 +75,9 @@ public class OperationCollectionBehavior
         return m_InterfacesOnly;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpccomponent.IOperationCollectionBehavior#getSilent()
      */
     public boolean getSilent()
@@ -82,7 +85,9 @@ public class OperationCollectionBehavior
         return m_Silent;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpccomponent.IOperationCollectionBehavior#getSilentSelectAll()
      */
     public boolean getSilentSelectAll()
@@ -90,7 +95,9 @@ public class OperationCollectionBehavior
         return m_SilentSelectAll;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpccomponent.IOperationCollectionBehavior#setAbstractOnly(boolean)
      */
     public void setAbstractOnly(boolean absOnly)
@@ -98,7 +105,9 @@ public class OperationCollectionBehavior
         m_AbstractOnly = absOnly;        
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpccomponent.IOperationCollectionBehavior#setInterfacesOnly(boolean)
      */
     public void setInterfacesOnly(boolean infOnly)
@@ -106,7 +115,9 @@ public class OperationCollectionBehavior
         m_InterfacesOnly = infOnly;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpccomponent.IOperationCollectionBehavior#setSilent(boolean)
      */
     public void setSilent(boolean silent)
@@ -114,7 +125,9 @@ public class OperationCollectionBehavior
         m_Silent = silent;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpccomponent.IOperationCollectionBehavior#setSilentSelectAll(boolean)
      */
     public void setSilentSelectAll(boolean silentSelectAll)

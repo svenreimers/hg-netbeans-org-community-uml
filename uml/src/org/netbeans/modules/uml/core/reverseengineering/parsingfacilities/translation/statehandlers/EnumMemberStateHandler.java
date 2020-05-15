@@ -43,11 +43,8 @@
  */
 
 
-/*
- * File       : EnumMemberStateHandler.java
- * Created on : Dec 11, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.statehandlers;
 
 import org.dom4j.Node;
@@ -77,7 +74,9 @@ public class EnumMemberStateHandler extends AttributeStateHandler
        return "UML:Enumeration.literal";
     }
     
-    /**
+    
+
+/**
      * Retrieve the type of the enumeration member.
      *
      *
@@ -88,7 +87,9 @@ public class EnumMemberStateHandler extends AttributeStateHandler
         m_Type = type;
     }
 
-    /**
+    
+
+/**
      * Retrieve the type of the enumeration member.
      *
      *
@@ -99,7 +100,9 @@ public class EnumMemberStateHandler extends AttributeStateHandler
         return m_Type;
     }
     
-    /**
+    
+
+/**
      * Initialize the state handler.  This is a one time initialization.
      */
     public void initialize()
@@ -108,7 +111,9 @@ public class EnumMemberStateHandler extends AttributeStateHandler
         setNodeAttribute("type", getMemberType());
     }
     
-    /**
+    
+
+/**
   * Creates and returns a new state handler for a sub-state.  If the sub-state
      * is not handled then null is returned.  The attribute state of interest is
      * <code>Initializer</code>

@@ -57,142 +57,198 @@ public interface IMessage extends INamedElement
     public static final int MDK_FROM_TO = 0;
     public static final int MDK_TO_FROM = 1;
     
-	/**
+	
+
+/**
 	 * Sets / Gets the enclosing Interaction owning the Message.
 	*/
 	public IInteraction getInteraction();
 
-	/**
+	
+
+/**
 	 * Sets / Gets the enclosing Interaction owning the Message.
 	*/
 	public void setInteraction( IInteraction value );
 
-	/**
+	
+
+/**
 	 * Sets / Gets the Connector on which this Message is sent.
 	*/
 	public IConnector getConnector();
 
-	/**
+	
+
+/**
 	 * Sets / Gets the Connector on which this Message is sent.
 	*/
 	public void setConnector( IConnector value );
 
-	/**
+	
+
+/**
 	 * Sets / Gets the Sending Event of the Message.
 	*/
 	public IEventOccurrence getSendEvent();
 
-	/**
+	
+
+/**
 	 * Sets / Gets the Sending Event of the Message.
 	*/
 	public void setSendEvent( IEventOccurrence value );
 
-	/**
+	
+
+/**
 	 * Sets / Gets the ReceiveEvent of the Message.
 	*/
 	public IEventOccurrence getReceiveEvent();
 
-	/**
+	
+
+/**
 	 * Sets / Gets the ReceiveEvent of the Message.
 	*/
 	public void setReceiveEvent( IEventOccurrence value );
 
-	/**
+	
+
+/**
 	 * Sets / Gets the Action that initiates the Message.
 	*/
 	public IExecutionOccurrence getInitiatingAction();
 
-	/**
+	
+
+/**
 	 * Sets / Gets the Action that initiates the Message.
 	*/
 	public void setInitiatingAction( IExecutionOccurrence value );
 
-	/**
+	
+
+/**
 	 * The kind of message this is.
 	*/
 	public int getKind();
 
-	/**
+	
+
+/**
 	 * The kind of message this is.
 	*/
 	public void setKind( /* MessageKind */ int value );
 
-	/**
+	
+
+/**
 	 * The operation this message is calling.
 	*/
 	public IOperation getOperationInvoked();
 
-	/**
+	
+
+/**
 	 * The operation this message is calling.
 	*/
 	public void setOperationInvoked( IOperation value );
 
-	/**
+	
+
+/**
 	 * The target lifeline of this message.
 	*/
 	public ILifeline getReceivingLifeline();
 
-	/**
+	
+
+/**
 	 * The source lifeline of this message.
 	*/
 	public ILifeline getSendingLifeline();
 
-	/**
+	
+
+/**
 	 * If the ReceivingLifeline represents a part of a classifier, that classifier is returned.
 	*/
 	public IClassifier getReceivingClassifier();
 
-	/**
+	
+
+/**
 	 * If the SendingLifeline represents a part of a classifier, that classifier is returned.
 	*/
 	public IClassifier getSendingClassifier();
 
-	/**
+	
+
+/**
 	 * If the ReceivingLifeline represents a part of a classifier, the Operations of that Classifier are returned.
 	*/
 	public ETList<IOperation> getReceivingOperations();
 
-	/**
+	
+
+/**
 	 * Sets / Gets the sending message for a result message.
 	*/
 	public IMessage getSendingMessage();
 
-	/**
+	
+
+/**
 	 * Sets / Gets the sending message for a result message.
 	*/
 	public void setSendingMessage( IMessage value );
 
-	/**
+	
+
+/**
 	 * Retrieves the recurrence expression calculated in getAutoNumber.
 	 */
 	public ETPairT<Integer, String> getRecurrence();
 
-	/**
+	
+
+/**
 	 * Determines the number for this message.
 	*/
 	public String getAutoNumber();
 
-	/**
+	
+
+/**
 	 * Resets the auto-number for this message, so the next AutoNumber call recalculates the auto-number.
 	*/
 	public void resetAutoNumber();
 
-	/**
+	
+
+/**
 	 * Retrieves the interaction operand associated with both ends of the message.
 	*/
 	public IInteractionOperand getInteractionOperand();
 
-	/**
+	
+
+/**
 	 * Retrieves the interaction operand associated with both ends of the message.
 	*/
 	public void setInteractionOperand( IInteractionOperand value );
 	
-	/**
+	
+
+/**
 	 * Change to lifeline on the sending end of this message.
 	 */
 	public void changeSendingLifeline(ILifeline pFromLifeline,ILifeline pToLifeline);
 	
-	/**
+	
+
+/**
 	 *  Change to lifeline on the receiving end of this message.
 	 */
 	public void changeReceivingLifeline(ILifeline pFromLifeline, ILifeline pToLifeline);	

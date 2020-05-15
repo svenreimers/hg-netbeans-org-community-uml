@@ -43,6 +43,8 @@
  */
 
 
+
+
 /*
  * Created on May 12, 2004
  *
@@ -50,6 +52,7 @@
  * Window - Preferences - Java - Code Generation - Code and Comments
  */
 package org.netbeans.modules.uml.ui.support.messaging;
+
 
 /**
  *

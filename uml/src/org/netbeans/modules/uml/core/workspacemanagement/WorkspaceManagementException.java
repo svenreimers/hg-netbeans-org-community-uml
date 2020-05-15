@@ -44,6 +44,7 @@
 
 package org.netbeans.modules.uml.core.workspacemanagement;
 
+
 /**
  * Thrown to indicate that an error occured while accessing a workspace
  * method.
@@ -61,7 +62,9 @@ public class WorkspaceManagementException extends RuntimeException
 		super(msg);
 	}
 	
-	/**
+	
+
+/**
 	 * Constructs a new exception with the specified cause and a detail
 	 * message of <tt>(cause==null ? null : cause.toString())</tt> (which
 	 * typically contains the class and detail message of <tt>cause</tt>).

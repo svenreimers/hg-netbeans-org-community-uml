@@ -43,11 +43,8 @@
  */
 
 
-/*
- * File       : ClassStateHandler.java
- * Created on : Dec 9, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.statehandlers;
 
 import org.dom4j.Node;
@@ -86,7 +83,9 @@ public class ClassStateHandler extends TopLevelStateHandler
         this(language, packageName, false);
     }
     
-    /**
+    
+
+/**
      * The IsForceAbstractMethods is use to determine if all methods
      * should be abstract.  Generally, IsForceAbstractMethods will be
      * false.  Since all interface methods are required to be abstract
@@ -99,7 +98,9 @@ public class ClassStateHandler extends TopLevelStateHandler
         m_ForceAbstractOps = value;
     }
 
-    /**
+    
+
+/**
      * The IsForceAbstractMethods is use to determine if all methods
      * should be abstract.  Generally, IsForceAbstractMethods will be
      * false.  Since all interface methods are required to be abstract
@@ -112,7 +113,9 @@ public class ClassStateHandler extends TopLevelStateHandler
         return m_ForceAbstractOps;
     }
 
-    /**
+    
+
+/**
      * Determines if the class declaration is an inner class or an
      * out class.
      *
@@ -134,7 +137,9 @@ public class ClassStateHandler extends TopLevelStateHandler
         this.m_PackageName = m_PackageName;
     }
     
-    /**
+    
+
+/**
      * Add modifier information to the XMI structure.
      *
      * @param pToken [in] The token that specifies a modifier.
@@ -154,7 +159,9 @@ public class ClassStateHandler extends TopLevelStateHandler
 
     }
 
-    /**
+    
+
+/**
      * Add the class name information to the XMI structure.
      *
      * @param pToken [in] The token that specifies the class name.
@@ -174,7 +181,9 @@ public class ClassStateHandler extends TopLevelStateHandler
         createTokenDescriptor("Name", line, col, pos, nameString, length);
     }
     
-    /**
+    
+
+/**
      * Create a new state handler to be added to the state mechanism.  If the
      * state is not a state that is being processed then a new state handler is 
      * not created.  The states of interest is <code>Expression List</code>
@@ -261,7 +270,9 @@ public class ClassStateHandler extends TopLevelStateHandler
         return retVal;
     }
 
-    /**
+    
+
+/**
      * Initializes the state handler.  The class XMI node is
      * initializes.
      */
@@ -305,7 +316,9 @@ public class ClassStateHandler extends TopLevelStateHandler
         }
     }
 
-    /**
+    
+
+/**
      * Sends the IClassEvent to all listeners.
      */
     protected void sendEvent()
@@ -382,7 +395,9 @@ public class ClassStateHandler extends TopLevelStateHandler
 
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.statehandlers.StateHandler#stateComplete(java.lang.String)
      */
     public void stateComplete(String stateName)

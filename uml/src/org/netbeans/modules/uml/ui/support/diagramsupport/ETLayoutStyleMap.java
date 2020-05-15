@@ -22,13 +22,15 @@
 package org.netbeans.modules.uml.ui.support.diagramsupport;
 
 
+
 /**
  *
  * Converts between Displaynames and ILayoutKind, and other conversion methods for communication with the layout server.
  */
 public class ETLayoutStyleMap
 {
-    /*
+    
+/*
    static public int getLayoutStyle(String diagramKindDisplayName, TSEGraph pGraph)
    {
       int pLayoutStyle = ILayoutKind.LK_NO_LAYOUT;
@@ -89,7 +91,9 @@ public class ETLayoutStyleMap
 //        return ILayoutKind.LK_NO_LAYOUT;
 //    }
 
-    /**
+    
+
+/**
      * Maps the internal Layout constant which is defined at the {@link ILayoutKind} 
      * to the external constant is defined at TS library.
      */
@@ -107,37 +111,7 @@ public class ETLayoutStyleMap
 //        }
 //    }
 //    
-   /*
-    * Converts an ILayoutKind into a string for communication with the layout server.
-    //jyothi
-   static public String getLayoutCommandString(int ilayoutKind, TSEGraph graph)
-   {
-      switch (ilayoutKind)
-      {
-          /* jyothi      
-         case ILayoutKind.LK_NO_LAYOUT :
-            return null;           
-         case ILayoutKind.LK_HIERARCHICAL_LAYOUT :
-            return TSDGraph.HIERARCHICAL;
-         case ILayoutKind.LK_CIRCULAR_LAYOUT :
-            return TSDGraph.CIRCULAR;
-         case ILayoutKind.LK_SYMMETRIC_LAYOUT :
-            return TSDGraph.SYMMETRIC;
-         case ILayoutKind.LK_TREE_LAYOUT :
-            return TSDGraph.TREE;
-         case ILayoutKind.LK_ORTHOGONAL_LAYOUT :
-            return TSDGraph.ORTHOGONAL;
-         case ILayoutKind.LK_SEQUENCEDIAGRAM_LAYOUT :
-            return ADDrawingAreaConstants.SEQUENCE_LAYOUT;
-         case ILayoutKind.LK_UNKNOWN_LAYOUT :
-         case ILayoutKind.LK_GLOBAL_LAYOUT :
-            return graph != null ? graph.getLayoutStyle() : null;
-         case ILayoutKind.LK_INCREMENTAL_LAYOUT :
-            return graph != null ? graph.getLayoutStyle() : null;
-             
-      }
-      return null;
-   }
-    */
+   
+
   
 }

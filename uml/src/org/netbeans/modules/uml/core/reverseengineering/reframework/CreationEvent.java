@@ -55,7 +55,9 @@ public class CreationEvent extends MethodDetailParserData
     implements ICreationEvent
 {
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.ICreationEvent#getREClass()
      */
     public IREClass getREClass()
@@ -70,7 +72,9 @@ public class CreationEvent extends MethodDetailParserData
         return null;
     }
 
-    /**
+    
+
+/**
      * Specifies whether or not the instance is a primitive data type.
      *
      * @param *pVal [out] true if a primitive, false otherwise.
@@ -81,7 +85,9 @@ public class CreationEvent extends MethodDetailParserData
                     .booleanValue();
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.ICreationEvent#getIsStatic()
      */
     public boolean getIsStatic()
@@ -90,7 +96,9 @@ public class CreationEvent extends MethodDetailParserData
         return false;
     }
 
-    /**
+    
+
+/**
      * The instance name of the object.
      *
      * @param pVal [out] The name.
@@ -101,7 +109,9 @@ public class CreationEvent extends MethodDetailParserData
         return XMLManip.getAttributeValue(outputPinNode, "value");
     }
 
-    /**
+    
+
+/**
      * The type name of the instance.  The instance type is the the 
      * type that was declared.  As opposed to the instantiated type 
      * name which is the type that was used to create the object.
@@ -120,7 +130,9 @@ public class CreationEvent extends MethodDetailParserData
         return XMLManip.getAttributeValue(getEventData(), "classifier");
     }
 
-    /**
+    
+
+/**
      * The instantiated type name of the instance.  The instantiated 
      * type is the the type that was to create the instance.  
      * As opposed to the instance type name which is the type

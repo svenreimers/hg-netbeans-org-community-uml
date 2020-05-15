@@ -201,7 +201,9 @@ public class CategoryView extends JPanel implements ExplorerManager.Provider, Pr
 
     // Private Inner classes -----------------------------------------------
 
-    /** Node to be used for configuration
+    
+
+/** Node to be used for configuration
      */
     private static class CategoryNode extends AbstractNode {
 
@@ -230,7 +232,9 @@ public class CategoryView extends JPanel implements ExplorerManager.Provider, Pr
         }
     }
 
-    /** Children used for configuration
+    
+
+/** Children used for configuration
      */
     private static class CategoryChildren extends Children.Keys {
 

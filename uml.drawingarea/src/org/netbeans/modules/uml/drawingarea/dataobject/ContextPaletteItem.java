@@ -49,6 +49,7 @@ import java.beans.*;
 import org.openide.nodes.Node;
 
 
+
 /**
  * PaletteItem holds important information about one component (item)
  * in the palette.

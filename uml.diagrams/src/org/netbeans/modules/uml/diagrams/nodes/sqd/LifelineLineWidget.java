@@ -95,7 +95,9 @@ public class LifelineLineWidget extends CustomizableWidget implements DiagramNod
     {
         return destroy;
     }
-    /**
+    
+
+/**
      * Calculates a client area for the label.
      * @return the client area
      */
@@ -120,7 +122,9 @@ public class LifelineLineWidget extends CustomizableWidget implements DiagramNod
         return ret;
     }
 
-    /**
+    
+
+/**
      * Paints the line widget.
      */
     @Override
@@ -150,7 +154,9 @@ public class LifelineLineWidget extends CustomizableWidget implements DiagramNod
          }
     }
     
-    /**
+    
+
+/**
      * Called to whether a particular location in local coordination system is controlled (otionally also painted) by the widget.
      * @param localLocation the local location
      * @return true, if the location belong to the widget

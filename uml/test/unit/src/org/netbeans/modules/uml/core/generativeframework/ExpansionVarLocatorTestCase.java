@@ -83,13 +83,8 @@ public class ExpansionVarLocatorTestCase extends AbstractUMLTestCase {
 		var = new ExpansionVarLocator(man, conLoc, readFile(conLoc), attr);
 	}
 
-	/**
-	 * Reads the File and forms as String Data.
-	 * 
-	 * @param String
-	 *            FileName to be read
-	 * @return String
-	 */
+	
+
 	public static String readFile(String fileName) {
 		String str = "";
 		try {

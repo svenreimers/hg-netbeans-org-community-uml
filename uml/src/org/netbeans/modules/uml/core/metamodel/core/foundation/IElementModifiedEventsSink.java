@@ -48,12 +48,16 @@ import org.netbeans.modules.uml.core.support.umlsupport.IResultCell;
 
 public interface IElementModifiedEventsSink
 {
-	/**
+	
+
+/**
 	 * Fired whenever an element is about to be modified.
 	*/
 	public void onElementPreModified( IVersionableElement element, IResultCell cell );
 
-	/**
+	
+
+/**
 	 * Fired whenever an element is modified.
 	*/
 	public void onElementModified( IVersionableElement element, IResultCell cell );

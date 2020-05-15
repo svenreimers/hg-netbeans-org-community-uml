@@ -53,7 +53,9 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
  */
 public class MethodEvent extends MethodDetailParserData implements IMethodEvent
 {
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.IMethodEvent#getDeclaringClassName()
      */
     public String getDeclaringClassName()
@@ -79,7 +81,9 @@ public class MethodEvent extends MethodDetailParserData implements IMethodEvent
         return retVal;
     }
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.IMethodEvent#getArguments()
      */
     public ETList<IREArgument> getArguments()
@@ -99,7 +103,9 @@ public class MethodEvent extends MethodDetailParserData implements IMethodEvent
         return args;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.IMethodEvent#getResult()
      */
     public String getResult()
@@ -109,7 +115,9 @@ public class MethodEvent extends MethodDetailParserData implements IMethodEvent
         return n != null? XMLManip.getAttributeValue(n, "type") : null;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.IMethodEvent#getInstanceName()
      */
     public String getInstanceName()
@@ -117,7 +125,9 @@ public class MethodEvent extends MethodDetailParserData implements IMethodEvent
         return XMLManip.getAttributeValue(getEventData(), "instance");
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.IMethodEvent#getMethodName()
      */
     public String getMethodName()
@@ -125,7 +135,9 @@ public class MethodEvent extends MethodDetailParserData implements IMethodEvent
         return XMLManip.getAttributeValue(getEventData(), "name");
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.IMethodEvent#getREClass()
      */
     public IREClass getREClass()
@@ -140,7 +152,9 @@ public class MethodEvent extends MethodDetailParserData implements IMethodEvent
         return null;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.IMethodEvent#getOperation()
      */
     public IREOperation getOperation()

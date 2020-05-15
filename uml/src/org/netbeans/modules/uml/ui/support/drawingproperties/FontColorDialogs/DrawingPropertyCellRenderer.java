@@ -43,6 +43,8 @@
  */
 
 
+
+
 /*
  * Created on Jun 10, 2003
  *
@@ -85,7 +87,8 @@ import org.netbeans.modules.uml.ui.support.drawingproperties.IFontProperty;
 public class DrawingPropertyCellRenderer extends DefaultTableCellRenderer
 {
 
-	/**
+	
+/**
 	 * 
 	 */
 	public DrawingPropertyCellRenderer()

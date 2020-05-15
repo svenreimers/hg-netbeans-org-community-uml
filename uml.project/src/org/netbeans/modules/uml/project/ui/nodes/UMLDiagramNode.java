@@ -171,7 +171,9 @@ public class UMLDiagramNode extends UMLElementNode
         super.destroy();
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeDiagram#getDiagram()
     */
     public IProxyDiagram getDiagram()
@@ -179,7 +181,9 @@ public class UMLDiagramNode extends UMLElementNode
         return mDiagram;
     }
     
-    /**
+    
+
+/**
      * Set the diagram that is wrapped by the node.
      *
      * @param diagram The diagram.
@@ -189,7 +193,9 @@ public class UMLDiagramNode extends UMLElementNode
         mDiagram = diagram;
     }
     
-    /**
+    
+
+/**
      * Sets the diagram type.  The diagram type name is also used to determine
      * the icon that represents the node.  If <i>_CLOSED</i> is appended to the
      * diagram name then the closed diagram icon is used instead.
@@ -211,7 +217,9 @@ public class UMLDiagramNode extends UMLElementNode
         return mPrintCookie;
     }
     
-    /**
+    
+
+/**
      * Retrieves the diagram type.  The diagram type name is also used to
      * determine the icon that represents the node.  If <i>_CLOSED</i> is
      * appended to the diagram name then the closed diagram icon is used instead.
@@ -303,7 +311,9 @@ public class UMLDiagramNode extends UMLElementNode
     // Helper Methods
     //**************************************************
     
-    /**
+    
+
+/**
      * @param string
      */
     protected void setFilename(String value)
@@ -624,7 +634,9 @@ public class UMLDiagramNode extends UMLElementNode
         return retVal;
     }
     
-    /**
+    
+
+/**
      * Builds the proerty set structure.
      */
     protected Node.PropertySet[] buildProperties()
@@ -761,7 +773,7 @@ public class UMLDiagramNode extends UMLElementNode
     }
     
     
-    // Thuy rewrites the mehod
+    
 //    protected boolean save(IDiagram diag, boolean confirm, String dialogMsg)
 //    {
 //        //prompt to save..
@@ -827,7 +839,7 @@ public class UMLDiagramNode extends UMLElementNode
     
     private boolean userConfirmedSave(String name, String dialogMsg)
     {
-        //Kris Richards - this preference is now always "PSK_YES"
+        
 
         
         String title = NbBundle.getMessage(UMLDiagramNode.class,

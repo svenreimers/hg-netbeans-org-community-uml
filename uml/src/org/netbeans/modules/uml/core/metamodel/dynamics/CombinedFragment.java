@@ -57,7 +57,9 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 public class CombinedFragment extends InteractionFragment 
     implements ICombinedFragment
 {
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IVersionableElement#delete()
      */
     public void delete()
@@ -79,7 +81,9 @@ public class CombinedFragment extends InteractionFragment
         super.delete();
     }
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.ICombinedFragment#getGates()
      */
     public ETList<IGate> getGates()
@@ -93,7 +97,9 @@ public class CombinedFragment extends InteractionFragment
         UMLXMLManip.removeChild(getNode(), gate);
     }
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.ICombinedFragment#addGate(org.netbeans.modules.uml.core.metamodel.dynamics.IGate)
      */
     public void addGate(IGate gate)
@@ -102,7 +108,9 @@ public class CombinedFragment extends InteractionFragment
                   "UML:CombinedFragment.expressionGate", gate );
     }
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.ICombinedFragment#getOperands()
      */
     public ETList<IInteractionOperand> getOperands()
@@ -112,7 +120,9 @@ public class CombinedFragment extends InteractionFragment
                 getNode(), "UML:CombinedFragment.operand/*", IInteractionOperand.class);
     }
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.ICombinedFragment#createOperand()
      */
     public IInteractionOperand createOperand()
@@ -125,7 +135,9 @@ public class CombinedFragment extends InteractionFragment
         return op;
     }
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.ICombinedFragment#insertOperand(org.netbeans.modules.uml.core.metamodel.dynamics.IInteractionOperand, org.netbeans.modules.uml.core.metamodel.dynamics.IInteractionOperand)
      */
     public void insertOperand(IInteractionOperand pOperand,
@@ -145,7 +157,9 @@ public class CombinedFragment extends InteractionFragment
         }
     }
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.ICombinedFragment#removeOperand(org.netbeans.modules.uml.core.metamodel.dynamics.IInteractionOperand)
      */
     public void removeOperand(IInteractionOperand op)
@@ -153,7 +167,9 @@ public class CombinedFragment extends InteractionFragment
         UMLXMLManip.removeChild(getNode(), op);
     }
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.ICombinedFragment#addOperand(org.netbeans.modules.uml.core.metamodel.dynamics.IInteractionOperand)
      */
     public void addOperand(IInteractionOperand op)
@@ -163,7 +179,9 @@ public class CombinedFragment extends InteractionFragment
                 "UML:CombinedFragment.operand", op);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.ICombinedFragment#getOperator()
      */
     public int getOperator()
@@ -171,7 +189,9 @@ public class CombinedFragment extends InteractionFragment
         return getInteractionOperator("interactionOperator");
     }
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.ICombinedFragment#setOperator(org.netbeans.modules.uml.core.metamodel.core.primitivetypes.IInteractionOperator)
      */
     public void setOperator(int value)

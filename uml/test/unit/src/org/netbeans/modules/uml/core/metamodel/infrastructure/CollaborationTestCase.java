@@ -47,6 +47,8 @@ package org.netbeans.modules.uml.core.metamodel.infrastructure;
 import org.netbeans.modules.uml.core.AbstractUMLTestCase;
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier;
 
+
+
 /**
  * Test cases for Collaboration.
  */
@@ -59,7 +61,9 @@ public class CollaborationTestCase extends AbstractUMLTestCase
 
     private ICollaboration coll;
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see junit.framework.TestCase#setUp()
      */
     protected void setUp() throws Exception
@@ -70,7 +74,9 @@ public class CollaborationTestCase extends AbstractUMLTestCase
         project.addElement(coll);
     }
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see junit.framework.TestCase#tearDown()
      */
     protected void tearDown() throws Exception

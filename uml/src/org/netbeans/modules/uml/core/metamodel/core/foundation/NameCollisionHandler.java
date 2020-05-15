@@ -53,7 +53,8 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
  */
 public class NameCollisionHandler implements INameCollisionHandler
 {
-	/**
+	
+/**
 	 * 
 	 */
 	public NameCollisionHandler()
@@ -61,7 +62,9 @@ public class NameCollisionHandler implements INameCollisionHandler
 		super();
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.INameCollisionHandler#onPreNameCollision(org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElement, java.lang.String, org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElement[], org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public long onPreNameCollision(INamedElement pElement, String sProposedName, ETList<INamedElement> pCollidingElements, IResultCell pCell)
@@ -70,7 +73,9 @@ public class NameCollisionHandler implements INameCollisionHandler
 		return 0;
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.INameCollisionHandler#onNameCollision(org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElement, org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElement[], org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public long onNameCollision(INamedElement pElement, ETList<INamedElement> pCollidingElements, IResultCell pCell)
@@ -79,7 +84,9 @@ public class NameCollisionHandler implements INameCollisionHandler
 		return 0;
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.INameCollisionHandler#listenerDisabled()
 	 */
 	public long listenerDisabled()
@@ -88,7 +95,9 @@ public class NameCollisionHandler implements INameCollisionHandler
 		return 0;
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.INameCollisionHandler#onPreAliasNameModified(org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElement, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public long onPreAliasNameModified(INamedElement element, String proposedName, IResultCell cell)
@@ -97,7 +106,9 @@ public class NameCollisionHandler implements INameCollisionHandler
 		return 0;
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.INameCollisionHandler#onAliasNameModified(org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public long onAliasNameModified(INamedElement element, IResultCell cell)

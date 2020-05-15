@@ -42,6 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
+
+
 /**
  * This generated bean class Template matches the schema element 'template'.
  * The root bean class is TemplateFamilies
@@ -240,6 +242,8 @@ public class Template extends BaseBean
     }}
 
 // END_NOI18N
+
+
 
 
 /*

@@ -43,6 +43,8 @@
  */
 
 
+
+
 /*
  * Created on Jun 9, 2003
  *
@@ -83,7 +85,9 @@ public class FontColorCellEditor extends AbstractCellEditor implements
 	private IDrawingProperty m_DrawingProperty = null;
 	private JTable m_Table = null;
 
-	/**
+	
+
+/**
 	 * 
 	 */
 	public FontColorCellEditor()
@@ -102,7 +106,9 @@ public class FontColorCellEditor extends AbstractCellEditor implements
 		return tree;
 	}
 
-	/**
+	
+
+/**
 	 * TreeTableCellEditor implementation. Component returned is the
 	 * JTree.
 	 */
@@ -232,7 +238,9 @@ public class FontColorCellEditor extends AbstractCellEditor implements
 		return retObj;
 	}
 
-	/**
+	
+
+/**
 	 * Overridden to return false, and if the event is a mouse event
 	 * it is forwarded to the tree.<p>
 	 * The behavior for this is debatable, and should really be offered
@@ -255,7 +263,9 @@ public class FontColorCellEditor extends AbstractCellEditor implements
 		return true;
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see javax.swing.CellEditor#getCellEditorValue()
 	 */
 	public Object getCellEditorValue()

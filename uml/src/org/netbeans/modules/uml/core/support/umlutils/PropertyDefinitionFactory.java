@@ -63,6 +63,7 @@ import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure
 import org.netbeans.modules.uml.core.support.umlsupport.ProductRetriever;
 import org.netbeans.modules.uml.core.support.umlsupport.XMLManip;
 
+
 /**
  * <p>Title: </p>
  * <p>Description: </p>
@@ -92,7 +93,9 @@ public class PropertyDefinitionFactory implements IPropertyDefinitionFactory{
   public PropertyDefinitionFactory() {
   }
 
-  /**
+  
+
+/**
    * Retrieve or create the proper property definition for the passed-in element type.
    *
    * @param[in] eleStr The element type
@@ -192,7 +195,9 @@ public class PropertyDefinitionFactory implements IPropertyDefinitionFactory{
             }
         }
     }
-  /**
+  
+
+/**
    * Transfer the information from the xml dom node to the property definition.  This handles the special case
    * processing for when the get method returns an IDispatch.  The DispatchInvokes tell us what to do with the
    * IDispatch that was returned.
@@ -242,7 +247,9 @@ public class PropertyDefinitionFactory implements IPropertyDefinitionFactory{
     {}
   }
 
-  /**
+  
+
+/**
    * Retrieve the property definition for the passed in value
    *
    * @param[in] name    The element type of the definition to retrieve
@@ -281,7 +288,9 @@ public class PropertyDefinitionFactory implements IPropertyDefinitionFactory{
 	return pNode;
   }
 
-  /**
+  
+
+/**
    * Add the passed in property definition to the factory map
    *
    * @param[in] name   The element type
@@ -319,7 +328,9 @@ public class PropertyDefinitionFactory implements IPropertyDefinitionFactory{
 	}
   }
 
-  /**
+  
+
+/**
    * Process the sub definitions of the xml node.  These are predefined in the xml file.
    *
    * @param[in] parentNode   The xml node to process
@@ -433,101 +444,12 @@ public class PropertyDefinitionFactory implements IPropertyDefinitionFactory{
   }  	
   
 
-/*  private void processSubDefinitions(Node pNode, IPropertyDefinition pDef)
-  {
-    try {
-      String pattern = "aDefinition";
-      //Sumitabh check if this is XPath
-      List list = XMLManip.selectNodeListNS(pNode, pattern);
-	  //List list = XPathAPI.selectNodeList(pNode, pattern);
-      if (list != null && list.getLength() > 0)
-      {
-        for (int i=0; i<list.getLength(); i++)
-        {
-          Node item = list.item(i);
-          Node refNode = XMLManip.getAttribute(item, "pdref");
-		  //Node refNode = XPathAPI.selectSingleNode(item, "@pdref");
-          if (refNode != null)
-          {
-            // if the sub definition references another definition, we need to build that one
-            String refVal = refNode.getNodeValue();
-            if (refVal.length() > 0)
-            {
-              // if the sub definition is an on demand definition, we actually don't build
-              // it at this time
-              Node onDemNode = XMLManip.getAttribute(item, "onDemand");
-			  //Node onDemNode = XPathAPI.selectSingleNode(item, "@onDemand");
-              if (onDemNode != null)
-              {
-                String onDemand = onDemNode.getNodeValue();
-                if (onDemand.equals("true"))
-                {
-                  // build part of it because it is on demand
-                  buildOnDemandDefinition(item, pDef);
-                }
-                else
-                {
-                  // not on demand, so build it
-                  Node n = findPropertyDefinitionDOMNodeForSubDef(refVal);
-                  if (n != null)
-                    processSubDefinitions(n, pDef);
-                }
-              }
-              else
-              {
-                // not on demand, so build it
-                Node n = findPropertyDefinitionDOMNodeForSubDef(refVal);
-                if (n != null)
-                  processSubDefinitions(n, pDef);
-              }
-            }
-            else
-            {
-              // not referencing anything else, so build straight up
-              buildDefinition(item, pDef);
-            }
-          }
-          else
-          {
-            // Need to special case this - the edit control which is using the definitions and
-            // factory needs the structure to be like this:
-            // <Params
-            //   <Param <-- No on demand, but a pdref
-            //     <Name
-            // The property editor needs it to look like this:
-            // <Params
-            //   <Param <-- On demand, but a pdref
-            // so then when the user clicks on the on demand, the property editor builds the right
-            // stuff and replaces the definition
-            // If it is not on demand, but pdref'ed, the param node is not built because then in
-            // the property editor, we would get
-            // <Class
-            //    <Classifier
-            //		  <NamedElement
-            // which is why the edit control now has a pdref2 not a pdref
-            Node refNode2 = XMLManip.getAttribute(item, "pdref2");
-			//Node refNode2 = XPathAPI.selectSingleNode(item, "@pdref2");
-            if (refNode2 != null)
-            {
-              String refVal2 = refNode2.getNodeValue();
-              Node n = findPropertyDefinitionDOMNodeForSubDef(refVal2);
-              if (n != null)
-                buildDefinition(n, pDef);
-            }
-            else
-            {
-              buildDefinition(item, pDef);
-            }
-          }
-        }
-      }
-    } catch (Exception e)
-    {
 
-    }
-  }*/
 
-  /**
+
+  
+
+/**
    * Transfer the information from the xml dom node to the property definition
    *
    * @param[in] pEle         The xml dom node to obtain the information from
@@ -556,6 +478,8 @@ public class PropertyDefinitionFactory implements IPropertyDefinitionFactory{
 //          Vector defs = pDef.getSubDefinitions();
 //          if (defs != null) {
             IPropertyDefinition def = pDef.getSubDefinition(name);
+
+
 /*            Enumeration enum = defs.elements();
             while (enum.hasMoreElements()) {
               Object obj = enum.nextElement();
@@ -581,7 +505,9 @@ public class PropertyDefinitionFactory implements IPropertyDefinitionFactory{
     {}
   }
 
-  /**
+  
+
+/**
    * Transfer the information from the xml dom node to the property definition for a definition that
    * has been marked as on demand.  This information is different from a node that is built right away.
    *
@@ -598,7 +524,9 @@ public class PropertyDefinitionFactory implements IPropertyDefinitionFactory{
     pDef.addSubDefinition(def);
   }
 
-  /**
+  
+
+/**
    * Catch all routine to build a map of attributes for this xml dom node.  This will catch any
    * attributes that do not have get/set methods for them
    *
@@ -646,7 +574,9 @@ public class PropertyDefinitionFactory implements IPropertyDefinitionFactory{
     }
   }
 
- /**
+ 
+
+/**
  * Transfer the information from the xml dom node to the property definition
  *
  * @param[in] pEle   The xml dom node to obtain the information from
@@ -836,7 +766,9 @@ public class PropertyDefinitionFactory implements IPropertyDefinitionFactory{
    }
  }
 
- /**
+ 
+
+/**
   * Transfer the information from the xml dom node to the property definition.  This is a special
   * case if the property definition is referencing some other definition.  Only certain things need
   * to be stored.
@@ -896,7 +828,9 @@ public class PropertyDefinitionFactory implements IPropertyDefinitionFactory{
    {}
  }
 
- /**
+ 
+
+/**
   * Build the help string for the property definition based on the "get" function
   *
   * @param[in] pDef      The property definition to add the help information to
@@ -917,12 +851,14 @@ public class PropertyDefinitionFactory implements IPropertyDefinitionFactory{
      // just set it to the class name.
      pDef.setHelpDescription(pDisp.getClass().getName());
    }
-   //Sumitabh might have to get it from getElementTypeDocMap?
+   
  }
 
 
 
-  /**
+  
+
+/**
    * Initialize the factory
   */
   public void initialize()
@@ -930,7 +866,9 @@ public class PropertyDefinitionFactory implements IPropertyDefinitionFactory{
 
   }
 
-  /**
+  
+
+/**
    * Get the Method that matches the passed-in method name and parmType list in passed pDisp.
    *
    * @param[in] pDisp  The IDispatch to obtain the function information from
@@ -959,7 +897,9 @@ public class PropertyDefinitionFactory implements IPropertyDefinitionFactory{
   }
 
 
-  /**
+  
+
+/**
    * Retrieve documentation information from an already built map based on Object type
   */
   public void getFromElementTypeDocMap( Object pDisp, String pVal )
@@ -967,7 +907,9 @@ public class PropertyDefinitionFactory implements IPropertyDefinitionFactory{
 
   }
 
-  /**
+  
+
+/**
    * Gets the xml file that defines the property definitions
   */
   public String getDefinitionFile()
@@ -975,7 +917,9 @@ public class PropertyDefinitionFactory implements IPropertyDefinitionFactory{
     return m_definitionFile;
   }
 
-  /**
+  
+
+/**
    * Gets the xml file that defines the property definitions
   */
   public void setDefinitionFile( String value )
@@ -983,7 +927,9 @@ public class PropertyDefinitionFactory implements IPropertyDefinitionFactory{
     m_definitionFile = value;
   }
 
-  /**
+  
+
+/**
    * There were some cases where the property definitions are contained in a file, and we want them
    * all to be built at once.  The property editor builds them as it needs to, the preference manager
    * just builds them all at once.
@@ -1048,7 +994,9 @@ public class PropertyDefinitionFactory implements IPropertyDefinitionFactory{
     return vec;
   }
 
-  /**
+  
+
+/**
    * The property definition can have several values for its "values" field: it can be
    * a hardcoded string ("public|private"), a string ("FormatString"), a xpath query(#//UML:Class/@name),
    * or an xpath query plus file (Languages.etc#//Language/@type).
@@ -1089,7 +1037,7 @@ public class PropertyDefinitionFactory implements IPropertyDefinitionFactory{
             String xpath = strs[1];
             if (fileName.length() > 0)
             {
-              //Sumitabh use IConfigManager to get the document using home etc.
+              
               
 			  String configLoc = ProductRetriever.retrieveProduct().getConfigManager().getDefaultConfigLocation();
 			  //m_ConMan.getDefaultConfigLocation();
@@ -1167,7 +1115,7 @@ public class PropertyDefinitionFactory implements IPropertyDefinitionFactory{
                   
                    if(objInstance != null)
                    { 
-                      //Sumitabh need to figure out the parameters - may be we need third
+                      
                       //parameter in pVal :: separated.
                       Method meth = objInstance.getClass()
                         .getMethod(methName, (Class[])null);
@@ -1236,7 +1184,9 @@ public class PropertyDefinitionFactory implements IPropertyDefinitionFactory{
       return retVal;
    }
    
-  /**
+  
+
+/**
    * Gets the xml document that defines the property definitions
   */
   public Document getXMLDocument()
@@ -1244,7 +1194,9 @@ public class PropertyDefinitionFactory implements IPropertyDefinitionFactory{
     return m_Doc;
   }
 
-  /**
+  
+
+/**
    * Gets the xml document that defines the property definitions
   */
   public void setXMLDocument( Document value )
@@ -1252,7 +1204,9 @@ public class PropertyDefinitionFactory implements IPropertyDefinitionFactory{
     m_Doc = value;
   }
 
-  /**
+  
+
+/**
    * Retrieve or create the proper property definition for the passed-in name.
    *
    * @param[in] eleStr The name of the property definition
@@ -1287,7 +1241,9 @@ public class PropertyDefinitionFactory implements IPropertyDefinitionFactory{
     return def;
   }
 
-  /**
+  
+
+/**
    *	Given a xml node, build the corresponding property definition
    *
    *
@@ -1316,7 +1272,9 @@ public class PropertyDefinitionFactory implements IPropertyDefinitionFactory{
     return def;
   }
 
-  /**
+  
+
+/**
    *	Given a xml node, build the corresponding property definition
    *
    *
@@ -1352,7 +1310,9 @@ public class PropertyDefinitionFactory implements IPropertyDefinitionFactory{
     return def;
   }
 
-  /**
+  
+
+/**
    * Find the xml dom node that defines the passed in value.  The definition file is created based on element
    * type.
    *
@@ -1401,7 +1361,9 @@ public class PropertyDefinitionFactory implements IPropertyDefinitionFactory{
   	}
 	return retNode;
   }
-  /**
+  
+
+/**
    * Build a property definition
    *
    * @param[in] name   The element type

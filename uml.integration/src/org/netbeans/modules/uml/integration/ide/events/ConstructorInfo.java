@@ -42,12 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File         : ConstructorInfo.java
- * Version      : 1.6
- * Description  : Describes a constructor
- * Author       : Trey Spiva
- */
+
+
 package org.netbeans.modules.uml.integration.ide.events;
 
 import org.netbeans.modules.uml.core.metamodel.core.foundation.FactoryRetriever;
@@ -71,34 +67,8 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 import org.netbeans.modules.uml.integration.ide.UMLSupport;
 //import org.netbeans.modules.uml.integration.netbeans.NBEventProcessor;
 
-/**
- * The ConstructorInfo communicates with the EventManager to update Describe.
- * ConstructorInfo is still a high level class.  It knows how to communicate
- * with the EventMangaer to update Describe, but it does not know any of the
- * details of how to update Describe.
- * <br>
- * Because ConstructorInfo contains both before and after data, ConstructorInfo
- * is able to search for the constructor and update it to how the source file
- * current represents the constructor.
- * <br>
- * For Wolverine, the ConstructorInfo may also carry data for model-source
- * roundtrip events. In such cases, only the 'before' data fields are used.
- *
- * Revision History
- * No.  Date        Who         What
- * ---  ----        ---         ----
- *   1  2002-05-03  Darshan     Added methods to manipulate parameters using
- *                              IParameters. These are needed because of the
- *                              changes to Wolverine's method-parameter-change
- *                              event mechanism in build 64.
- *                              Also reformatted to use 4-space tabs and Java
- *                              style brace positioning.
- *   2  2002-05-06  Darshan     Added constructor to take a ClassInfo and an
- *                              IOperation for model-source work.
- *
- * @see EventManager
- * @see MethodInfo
- */
+
+
 public class ConstructorInfo extends ElementInfo {
     private ClassInfo  mContainer      = null;
     private LinkedList mOrigParameters = null;
@@ -107,7 +77,9 @@ public class ConstructorInfo extends ElementInfo {
     private String mSource     = null;
      private JavaMethodChangeFacility facility = new JavaMethodChangeFacility();
 
-    /**
+    
+
+/**
      *  Intiailizes a new ConstructorInfo.
      *  @param container The class that contains the data member.
      *  @param type The transaction type.
@@ -123,7 +95,9 @@ public class ConstructorInfo extends ElementInfo {
         setContainingClass(container);
     }
 
-    /**
+    
+
+/**
      * Retrieves the containing clas of the data member.
      * @return The containing class.
      */
@@ -131,7 +105,9 @@ public class ConstructorInfo extends ElementInfo {
         return mContainer;
     }
 
-    /**
+    
+
+/**
      * Sets the containing clas of the data member.
      * @param container The containing class.
      */
@@ -147,7 +123,9 @@ public class ConstructorInfo extends ElementInfo {
         }
     }
 
-    /**
+    
+
+/**
      * Retrieves all of the constructor's parameters.
      * @return An array of MethodParameterInfo objects.
      */
@@ -165,7 +143,9 @@ public class ConstructorInfo extends ElementInfo {
         return retVal;
     }
 
-    /**
+    
+
+/**
      * Retrieves a specific parameter information.
      * @return A MethodParameterInfo object.
      * @throws IndexOutOfBoundsException
@@ -178,7 +158,9 @@ public class ConstructorInfo extends ElementInfo {
         return (MethodParameterInfo)mOrigParameters.get(index);
     }
 
-    /**
+    
+
+/**
      * Sets the constructors parameters. This is setting the original parameters.
      * @param params All the parameters.
      */
@@ -189,7 +171,9 @@ public class ConstructorInfo extends ElementInfo {
             mOrigParameters = null;
     }
 
-    /**
+    
+
+/**
      * Adds a parameters to a specific location in the parameters list.  This is
      * setting the original parameters.
      * @param index The position that the parameter should fill.
@@ -202,7 +186,9 @@ public class ConstructorInfo extends ElementInfo {
         mOrigParameters.add(index, param);
     }
 
-    /**
+    
+
+/**
      * Removes all the parameter from the parameter list.  This does not mean
      * that the parameters will be removed from Describe, only from the
      * ConstructorInfo.
@@ -213,7 +199,9 @@ public class ConstructorInfo extends ElementInfo {
         mOrigParameters = null;
     }
 
-    /**
+    
+
+/**
      * Remove a specific parameter from the collection of parameters.  This does
      * not mean that the parameter will be removed from Describe, only from
      * the ConstructorInfo.  This is setting the original parameters.
@@ -271,7 +259,9 @@ public class ConstructorInfo extends ElementInfo {
         return retVal;
     }
 
-    /**
+    
+
+/**
      * Sets the constructors parameters. This is setting the new parameters.
      * @param params All the parameters.
      */
@@ -282,7 +272,9 @@ public class ConstructorInfo extends ElementInfo {
         return (MethodParameterInfo)mNewParameters.get(index);
     }
 
-    /**
+    
+
+/**
      * Sets the constructors parameters. This is setting the new parameters.
      * @param params All the parameters.
      */
@@ -293,7 +285,9 @@ public class ConstructorInfo extends ElementInfo {
             mNewParameters = null;
     }
 
-    /**
+    
+
+/**
      * Adds a parameters to a specific location in the parameters list.  This is
      * setting the new parameters.
      * @param index The position that the parameter should fill.
@@ -307,7 +301,9 @@ public class ConstructorInfo extends ElementInfo {
         mNewParameters.add(index, param);
     }
 
-    /**
+    
+
+/**
      * Removes all the parameter from the parameter list.  This does not mean that
      * the parameters will be removed from Describe, only from the ConstructorInfo.
      * This is setting the new parameters.
@@ -316,7 +312,9 @@ public class ConstructorInfo extends ElementInfo {
         mNewParameters = null;
     }
 
-    /**
+    
+
+/**
      * Remove a specific parameter from the collection of parameters.  This does
      * not mean that the parameter will be removed from Describe, only from
      * the ConstructorInfo.  This is setting the new parameters.
@@ -326,7 +324,9 @@ public class ConstructorInfo extends ElementInfo {
         mNewParameters.remove(index);
     }
 
-    /**
+    
+
+/**
      * Retrieves the exceptions that can be thrown by the constructor.
      * @return The list of thrown exceptions.
      */
@@ -342,7 +342,9 @@ public class ConstructorInfo extends ElementInfo {
         return retVal;
     }
 
-    /**
+    
+
+/**
      * Sets the exceptions that can be thrown by the constructor.
      * @param value The list of thrown exceptions.
      */
@@ -351,7 +353,9 @@ public class ConstructorInfo extends ElementInfo {
         mExceptions = new LinkedList(Arrays.asList(value));
     }
 
-    /**
+    
+
+/**
      * Adds a exceptions that can be thrown by the constructor.
      * @param An exception that can be thrown.
      */
@@ -362,7 +366,9 @@ public class ConstructorInfo extends ElementInfo {
         mExceptions.add(value);
     }
 
-    /**
+    
+
+/**
      * Removes a exceptions that can be thrown by the constructor.
      * @param An exception that can be thrown.
      */
@@ -370,7 +376,9 @@ public class ConstructorInfo extends ElementInfo {
         mExceptions.remove(exception);
     }
 
-    /**
+    
+
+/**
      * Updates the constructor.  A Class Transaction is began and {@link #update(GDSymbolTransaction trans) update}
      * is called.
      */
@@ -393,7 +401,9 @@ public class ConstructorInfo extends ElementInfo {
         }
     }
 
-    /**
+    
+
+/**
      *  Returns whether the parameter list of this constructor needs to be
      * updated to the Describe model.
      *
@@ -403,7 +413,9 @@ public class ConstructorInfo extends ElementInfo {
         return getNewParameters() != null;
     }
 
-    /**
+    
+
+/**
      * Updates the constructor using the specified Symbol transaction.
      * @param trans The transaction that is to be used to update the correct symbol.
      * @return The method transaction that was created to update the data member.

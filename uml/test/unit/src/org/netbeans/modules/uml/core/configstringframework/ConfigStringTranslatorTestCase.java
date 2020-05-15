@@ -49,6 +49,8 @@ import junit.framework.TestCase;
 import org.netbeans.modules.uml.core.support.umlutils.IPropertyDefinition;
 import org.netbeans.modules.uml.core.support.umlutils.PropertyDefinition;
 
+
+
 /**
  * Test cases for ConfigStringTranslator.
  */
@@ -61,7 +63,9 @@ public class ConfigStringTranslatorTestCase extends TestCase
 
     private ConfigStringTranslator configStringTranslator = null;
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see junit.framework.TestCase#setUp()
      */
     protected void setUp() throws Exception

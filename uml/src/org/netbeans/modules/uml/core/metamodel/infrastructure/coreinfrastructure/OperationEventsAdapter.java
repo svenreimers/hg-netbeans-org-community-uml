@@ -54,7 +54,8 @@ import org.netbeans.modules.uml.core.support.umlsupport.IResultCell;
 public class OperationEventsAdapter implements IOperationEventsSink
 {
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     */
    public void onConditionPreAdded(
       IOperation oper,
@@ -65,7 +66,9 @@ public class OperationEventsAdapter implements IOperationEventsSink
       // TODO Auto-generated method stub
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     */
    public void onConditionAdded(
       IOperation oper,
@@ -76,7 +79,9 @@ public class OperationEventsAdapter implements IOperationEventsSink
       // TODO Auto-generated method stub
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     */
    public void onConditionPreRemoved(
       IOperation oper,
@@ -87,7 +92,9 @@ public class OperationEventsAdapter implements IOperationEventsSink
       // TODO Auto-generated method stub
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     */
    public void onConditionRemoved(
       IOperation oper,
@@ -98,7 +105,9 @@ public class OperationEventsAdapter implements IOperationEventsSink
       // TODO Auto-generated method stub
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     */
    public void onPreQueryModified(
       IOperation oper,
@@ -108,14 +117,18 @@ public class OperationEventsAdapter implements IOperationEventsSink
       // TODO Auto-generated method stub
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     */
    public void onQueryModified(IOperation oper, IResultCell cell)
    {
       // TODO Auto-generated method stub
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     */
    public void onRaisedExceptionPreAdded(
       IOperation oper,
@@ -125,7 +138,9 @@ public class OperationEventsAdapter implements IOperationEventsSink
       // TODO Auto-generated method stub
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     */
    public void onRaisedExceptionAdded(
       IOperation oper,
@@ -135,7 +150,9 @@ public class OperationEventsAdapter implements IOperationEventsSink
       // TODO Auto-generated method stub
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     */
    public void onRaisedExceptionPreRemoved(
       IOperation oper,
@@ -145,7 +162,9 @@ public class OperationEventsAdapter implements IOperationEventsSink
       // TODO Auto-generated method stub
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     */
    public void onRaisedExceptionRemoved(
       IOperation oper,
@@ -155,7 +174,9 @@ public class OperationEventsAdapter implements IOperationEventsSink
       // TODO Auto-generated method stub
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     */
    public void onPreOperationPropertyModified(
       IOperation oper,
@@ -166,7 +187,9 @@ public class OperationEventsAdapter implements IOperationEventsSink
       // TODO Auto-generated method stub
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     */
    public void onOperationPropertyModified(
       IOperation oper,

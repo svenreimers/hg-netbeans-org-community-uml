@@ -98,7 +98,9 @@ public class QueryManager implements IQueryManager, ICoreProductInitEventsSink,
 	//Hashtable<String, ETList<IQueryUpdater>> m_Updaters = null;
 	private Hashtable m_Updaters = new Hashtable();
 	
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.IQueryManager#initialize()
      */
     public void initialize()
@@ -118,7 +120,9 @@ public class QueryManager implements IQueryManager, ICoreProductInitEventsSink,
             dispatcher.registerForExternalElementEventsSink(this);
     }
 
-    /**
+    
+
+/**
      * Registers the core product sink.  Used so we can get the prequit.
      */
     private void registerForCoreProductEvents()
@@ -132,7 +136,9 @@ public class QueryManager implements IQueryManager, ICoreProductInitEventsSink,
             dispatcher.registerForInitEvents(this);
     }
 
-	/**
+	
+
+/**
 	 *
 	 * Attaches this manager as a listener to the StructureEventDispatcher
 	 *
@@ -155,7 +161,9 @@ public class QueryManager implements IQueryManager, ICoreProductInitEventsSink,
 		}
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Detaches from the WorkspaceEventDispatcher
 	 *
@@ -175,7 +183,9 @@ public class QueryManager implements IQueryManager, ICoreProductInitEventsSink,
 		}
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Revokes the external load sink
 	 *
@@ -195,7 +205,9 @@ public class QueryManager implements IQueryManager, ICoreProductInitEventsSink,
 		}
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Revokes the core product sink.  Used so we can get the prequit
 	 *
@@ -215,7 +227,9 @@ public class QueryManager implements IQueryManager, ICoreProductInitEventsSink,
 		}
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Retrieves the application off the ICoreProduct
 	 *
@@ -235,7 +249,9 @@ public class QueryManager implements IQueryManager, ICoreProductInitEventsSink,
 		return retApp;
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Deinitializes this manager
 	 *
@@ -252,7 +268,9 @@ public class QueryManager implements IQueryManager, ICoreProductInitEventsSink,
     	}
     }
 
-	/**
+	
+
+/**
 	 *
 	 * Retrieves the updaters this manager has collected
 	 *
@@ -283,7 +301,9 @@ public class QueryManager implements IQueryManager, ICoreProductInitEventsSink,
         return retObj;
     }
 
-	/**
+	
+
+/**
 	 *
 	 * Retrieves updaters specified in the cache
 	 *
@@ -313,7 +333,9 @@ public class QueryManager implements IQueryManager, ICoreProductInitEventsSink,
 		}
 	}
 
-	/**
+	
+
+/**
 	 * Deinitializes the updaters found in the collection passed in
 	 * 
 	 * @param updaters[in]  The collection to deinit
@@ -333,11 +355,8 @@ public class QueryManager implements IQueryManager, ICoreProductInitEventsSink,
 		}
 	}
 
-	/**
-	 *
-	 * Makes sure all threads managed by this manager are done running
-	 *
-	 */
+	
+
 	private void saveCRCs(IProject proj)
 	{
 		// Generate new CRCs for each CachedQueries element found in the .QueryCache
@@ -364,7 +383,9 @@ public class QueryManager implements IQueryManager, ICoreProductInitEventsSink,
 		}
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Gives all the IQueryUpdaters associated with the passed in IProject
 	 * to update the cache before the cache is saved
@@ -398,7 +419,9 @@ public class QueryManager implements IQueryManager, ICoreProductInitEventsSink,
 		}
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Sets the CRC on the cached entry that matches the passed in filename if 
 	 * the current crc does not match the new crc
@@ -424,19 +447,8 @@ public class QueryManager implements IQueryManager, ICoreProductInitEventsSink,
 		}
 	}
 
-	/**
-	 *
-	 * Creates and initializes all IQueryUpdaters that are able to be CoCreated given the ProgID
-	 * values found in the passed in XMLDOMAttribute list
-	 *
-	 * @param project[in]         The project to associate the updaters with
-	 * @param cache[in]           The cache the updaters should be updating
-	 * @param updaterAtts[in]     A collection of xml attributes that contain prog ids to CoClasses implementing
-	 *                            the IQueryUpdater interface
-	 *
-	 * @return HRESULT
-	 *
-	 */
+	
+
 	private void createUpdaters(IProject project, Document cache, List updaterAtts )
 	{
 		ETList<IQueryUpdater> updaters = null;
@@ -463,7 +475,9 @@ public class QueryManager implements IQueryManager, ICoreProductInitEventsSink,
                                                             IQueryUpdater updater = null;
                                                             //Object obj = project.getTypeManager().getPickListManager();
 
-                                                            /*if (obj != null && obj.getClass().getName().equals(progId)) {
+                                                            
+
+/*if (obj != null && obj.getClass().getName().equals(progId)) {
                                                                 updater = (IQueryUpdater)obj;
                                                             } else */ {
 								Object obj = Class.forName(progId).newInstance();
@@ -545,7 +559,9 @@ public class QueryManager implements IQueryManager, ICoreProductInitEventsSink,
 		}
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Creates the .QueryCache file in the passed in location.
 	 *
@@ -572,7 +588,9 @@ public class QueryManager implements IQueryManager, ICoreProductInitEventsSink,
 		}
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Checks CRC settings, rebuilding cache results accordingly
 	 *
@@ -623,7 +641,9 @@ public class QueryManager implements IQueryManager, ICoreProductInitEventsSink,
 		saveCache(doc, pProject);
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Saves the .QueryCache file
 	 *
@@ -657,7 +677,9 @@ public class QueryManager implements IQueryManager, ICoreProductInitEventsSink,
             }
         }
 
-	/**
+	
+
+/**
 	 *
 	 * Creates a new QueryCache.
 	 *
@@ -729,7 +751,9 @@ public class QueryManager implements IQueryManager, ICoreProductInitEventsSink,
 		}
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Creates the .QueryCache document
 	 *
@@ -755,7 +779,9 @@ public class QueryManager implements IQueryManager, ICoreProductInitEventsSink,
 		return retDoc;
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Retrieves the location of the QuerySchemas.etc file
 	 *
@@ -779,7 +805,9 @@ public class QueryManager implements IQueryManager, ICoreProductInitEventsSink,
       return retLoc;
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Appends the results of a QueryBuilder process to the QueryCache document
 	 *
@@ -826,7 +854,9 @@ public class QueryManager implements IQueryManager, ICoreProductInitEventsSink,
 		return queryCacheDoc;
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Runs the QueryBuilder against the first child element of the external doc's VersionedElement element
 	 * and appends the results to the passed in queryCacheDoc
@@ -860,7 +890,9 @@ public class QueryManager implements IQueryManager, ICoreProductInitEventsSink,
 		}
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Retrieves the path the the passed in Project's .QueryCache file
 	 *
@@ -882,7 +914,9 @@ public class QueryManager implements IQueryManager, ICoreProductInitEventsSink,
 		return fileName;
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Opens the .QueryCache file associated with the passed in IProject
 	 *
@@ -900,7 +934,9 @@ public class QueryManager implements IQueryManager, ICoreProductInitEventsSink,
 		return retDoc;
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Retrieves all the external files associated with the Project
 	 *
@@ -933,7 +969,9 @@ public class QueryManager implements IQueryManager, ICoreProductInitEventsSink,
 		}
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Determines whether or not the CachedQueries associated witht IProject needs to be rebuilt.
 	 * If they do, the new results are added to the .QueryCache document
@@ -958,7 +996,9 @@ public class QueryManager implements IQueryManager, ICoreProductInitEventsSink,
 		}
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Determines whether or not a CachedQueries element needs to be rebuilt
 	 *
@@ -993,7 +1033,9 @@ public class QueryManager implements IQueryManager, ICoreProductInitEventsSink,
 		return retStr;
 	}
 
-	/**
+	
+
+/**
 	 * @param cache
 	 * @param fileName
 	 * @return
@@ -1025,7 +1067,9 @@ public class QueryManager implements IQueryManager, ICoreProductInitEventsSink,
 		return null;
 	}
 
-	/**
+	
+
+/**
 	 * @param cache
 	 * @param fileName
 	 * @return
@@ -1040,7 +1084,9 @@ public class QueryManager implements IQueryManager, ICoreProductInitEventsSink,
 		return retStr;
 	}
 
-	/**
+	
+
+/**
 	 * @param cache
 	 * @param fileName
 	 * @return
@@ -1069,7 +1115,9 @@ public class QueryManager implements IQueryManager, ICoreProductInitEventsSink,
 		return retEle;
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Creates a new QueryBuilder object
 	 *
@@ -1091,7 +1139,9 @@ public class QueryManager implements IQueryManager, ICoreProductInitEventsSink,
 		return retObj;
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Adds the results of the QueryBuilder running on the Project to the .QueryCache document
 	 *
@@ -1115,7 +1165,9 @@ public class QueryManager implements IQueryManager, ICoreProductInitEventsSink,
 		return retDoc;
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Allows external users to manually update the .QueryCache file of the passed in Project
 	 *
@@ -1141,7 +1193,9 @@ public class QueryManager implements IQueryManager, ICoreProductInitEventsSink,
 		}
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Removes the collection of updaters associated with the passed in Project
 	 *
@@ -1166,7 +1220,9 @@ public class QueryManager implements IQueryManager, ICoreProductInitEventsSink,
 		}
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.coreapplication.ICoreProductInitEventsSink#onCoreProductPreInit(org.netbeans.modules.uml.core.coreapplication.ICoreProduct, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onCoreProductPreInit(ICoreProduct pVal, IResultCell cell)
@@ -1174,7 +1230,9 @@ public class QueryManager implements IQueryManager, ICoreProductInitEventsSink,
         //do nothing
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.coreapplication.ICoreProductInitEventsSink#onCoreProductInitialized(org.netbeans.modules.uml.core.coreapplication.ICoreProduct, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onCoreProductInitialized(ICoreProduct newVal, IResultCell cell)
@@ -1182,7 +1240,9 @@ public class QueryManager implements IQueryManager, ICoreProductInitEventsSink,
         //do nothing
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.coreapplication.ICoreProductInitEventsSink#onCoreProductPreQuit(org.netbeans.modules.uml.core.coreapplication.ICoreProduct, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onCoreProductPreQuit(ICoreProduct pVal, IResultCell cell)
@@ -1190,7 +1250,9 @@ public class QueryManager implements IQueryManager, ICoreProductInitEventsSink,
         deinitialize();
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.coreapplication.ICoreProductInitEventsSink#onCoreProductPreSaved(org.netbeans.modules.uml.core.coreapplication.ICoreProduct, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onCoreProductPreSaved(ICoreProduct pVal, IResultCell cell)
@@ -1198,7 +1260,9 @@ public class QueryManager implements IQueryManager, ICoreProductInitEventsSink,
         //do nothing
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.coreapplication.ICoreProductInitEventsSink#onCoreProductSaved(org.netbeans.modules.uml.core.coreapplication.ICoreProduct, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onCoreProductSaved(ICoreProduct newVal, IResultCell cell)
@@ -1206,7 +1270,9 @@ public class QueryManager implements IQueryManager, ICoreProductInitEventsSink,
         //do nothing
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IExternalElementEventsSink#onExternalElementPreLoaded(java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onExternalElementPreLoaded(String uri, IResultCell cell)
@@ -1214,14 +1280,18 @@ public class QueryManager implements IQueryManager, ICoreProductInitEventsSink,
         //do nothing
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IExternalElementEventsSink#onExternalElementLoaded(org.netbeans.modules.uml.core.metamodel.core.foundation.IVersionableElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onExternalElementLoaded(IVersionableElement element, IResultCell cell)
     {
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IExternalElementEventsSink#onPreInitialExtraction(java.lang.String, org.netbeans.modules.uml.core.metamodel.core.foundation.IVersionableElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onPreInitialExtraction(String fileName, IVersionableElement element, IResultCell cell)
@@ -1229,7 +1299,9 @@ public class QueryManager implements IQueryManager, ICoreProductInitEventsSink,
         //do nothing
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IExternalElementEventsSink#onInitialExtraction(org.netbeans.modules.uml.core.metamodel.core.foundation.IVersionableElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onInitialExtraction(IVersionableElement element, IResultCell cell)
@@ -1237,7 +1309,9 @@ public class QueryManager implements IQueryManager, ICoreProductInitEventsSink,
         //do nothing
     }
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.structure.IProjectEventsSink#onPreModeModified(org.netbeans.modules.uml.core.metamodel.structure.IProject, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onPreModeModified(IProject pProject, String newValue, IResultCell cell)
@@ -1245,7 +1319,9 @@ public class QueryManager implements IQueryManager, ICoreProductInitEventsSink,
 		//do nothing
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.structure.IProjectEventsSink#onModeModified(org.netbeans.modules.uml.core.metamodel.structure.IProject, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onModeModified(IProject pProject, IResultCell cell)
@@ -1253,7 +1329,9 @@ public class QueryManager implements IQueryManager, ICoreProductInitEventsSink,
 		//do nothing
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.structure.IProjectEventsSink#onPreDefaultLanguageModified(org.netbeans.modules.uml.core.metamodel.structure.IProject, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onPreDefaultLanguageModified(IProject pProject, String newValue, IResultCell cell)
@@ -1261,7 +1339,9 @@ public class QueryManager implements IQueryManager, ICoreProductInitEventsSink,
 		//do nothing
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.structure.IProjectEventsSink#onDefaultLanguageModified(org.netbeans.modules.uml.core.metamodel.structure.IProject, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onDefaultLanguageModified(IProject pProject, IResultCell cell)
@@ -1269,7 +1349,9 @@ public class QueryManager implements IQueryManager, ICoreProductInitEventsSink,
 		//do nothing
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.structure.IProjectEventsSink#onProjectPreCreate(org.netbeans.modules.uml.core.workspacemanagement.IWorkspace, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onProjectPreCreate(IWorkspace space, IResultCell cell)
@@ -1277,7 +1359,9 @@ public class QueryManager implements IQueryManager, ICoreProductInitEventsSink,
 		//do nothing
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.structure.IProjectEventsSink#onProjectCreated(org.netbeans.modules.uml.core.metamodel.structure.IProject, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onProjectCreated(IProject project, IResultCell cell)
@@ -1285,7 +1369,9 @@ public class QueryManager implements IQueryManager, ICoreProductInitEventsSink,
 		establishQueryCache(project);
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.structure.IProjectEventsSink#onProjectPreOpen(org.netbeans.modules.uml.core.workspacemanagement.IWorkspace, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onProjectPreOpen(IWorkspace space, String projName, IResultCell cell)
@@ -1293,7 +1379,9 @@ public class QueryManager implements IQueryManager, ICoreProductInitEventsSink,
 		//do nothing
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.structure.IProjectEventsSink#onProjectOpened(org.netbeans.modules.uml.core.metamodel.structure.IProject, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onProjectOpened(IProject project, IResultCell cell)
@@ -1301,7 +1389,9 @@ public class QueryManager implements IQueryManager, ICoreProductInitEventsSink,
 		establishQueryCache(project);
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.structure.IProjectEventsSink#onProjectPreRename(org.netbeans.modules.uml.core.metamodel.structure.IProject, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onProjectPreRename(IProject Project, String newName, IResultCell cell)
@@ -1309,7 +1399,9 @@ public class QueryManager implements IQueryManager, ICoreProductInitEventsSink,
 		//do nothing
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.structure.IProjectEventsSink#onProjectRenamed(org.netbeans.modules.uml.core.metamodel.structure.IProject, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onProjectRenamed(IProject Project, String oldName, IResultCell cell)
@@ -1317,7 +1409,9 @@ public class QueryManager implements IQueryManager, ICoreProductInitEventsSink,
 		//do nothing
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.structure.IProjectEventsSink#onProjectPreClose(org.netbeans.modules.uml.core.metamodel.structure.IProject, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onProjectPreClose(IProject Project, IResultCell cell)
@@ -1325,7 +1419,9 @@ public class QueryManager implements IQueryManager, ICoreProductInitEventsSink,
 		//do nothing
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.structure.IProjectEventsSink#onProjectClosed(org.netbeans.modules.uml.core.metamodel.structure.IProject, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onProjectClosed(IProject project, IResultCell cell)
@@ -1333,7 +1429,9 @@ public class QueryManager implements IQueryManager, ICoreProductInitEventsSink,
 		saveCRCs(project);
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.structure.IProjectEventsSink#onProjectPreSave(org.netbeans.modules.uml.core.metamodel.structure.IProject, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onProjectPreSave(IProject Project, IResultCell cell)
@@ -1341,7 +1439,9 @@ public class QueryManager implements IQueryManager, ICoreProductInitEventsSink,
 		//do nothing
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.structure.IProjectEventsSink#onProjectSaved(org.netbeans.modules.uml.core.metamodel.structure.IProject, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onProjectSaved(IProject Project, IResultCell cell)
@@ -1349,7 +1449,9 @@ public class QueryManager implements IQueryManager, ICoreProductInitEventsSink,
 		//do nothing
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.structure.IProjectEventsSink#onPreReferencedLibraryAdded(org.netbeans.modules.uml.core.metamodel.structure.IProject, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onPreReferencedLibraryAdded(IProject Project, String refLibLoc, IResultCell cell)
@@ -1357,7 +1459,9 @@ public class QueryManager implements IQueryManager, ICoreProductInitEventsSink,
 		//do nothing
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.structure.IProjectEventsSink#onReferencedLibraryAdded(org.netbeans.modules.uml.core.metamodel.structure.IProject, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onReferencedLibraryAdded(IProject Project, String refLibLoc, IResultCell cell)
@@ -1365,7 +1469,9 @@ public class QueryManager implements IQueryManager, ICoreProductInitEventsSink,
 		//do nothing
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.structure.IProjectEventsSink#onPreReferencedLibraryRemoved(org.netbeans.modules.uml.core.metamodel.structure.IProject, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onPreReferencedLibraryRemoved(IProject Project, String refLibLoc, IResultCell cell)
@@ -1373,7 +1479,9 @@ public class QueryManager implements IQueryManager, ICoreProductInitEventsSink,
 		//do nothing
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.structure.IProjectEventsSink#onReferencedLibraryRemoved(org.netbeans.modules.uml.core.metamodel.structure.IProject, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onReferencedLibraryRemoved(IProject Project, String refLibLoc, IResultCell cell)

@@ -49,77 +49,107 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.INamespace;
 
 public interface INewDialogPackageDetails extends INewDialogTabDetails
 {
-	/**
+	
+
+/**
 	 * Name of the diagram
 	*/
 	public String getName();
 
-	/**
+	
+
+/**
 	 * Name of the diagram
 	*/
 	public void setName( String value );
 
-	/**
+	
+
+/**
 	 * The namespace this diagram will occupy
 	*/
 	public INamespace getNamespace();
 
-	/**
+	
+
+/**
 	 * The namespace this diagram will occupy
 	*/
 	public void setNamespace( INamespace value );
 
-	/**
+	
+
+/**
 	 * Add an additional namespace to our list of possible namespaces.
 	*/
 	public long addNamespace( INamespace pNamespace );
 
-	/**
+	
+
+/**
 	 * Should we create a scoped diagram?
 	*/
 	public boolean getCreateScopedDiagram();
 
-	/**
+	
+
+/**
 	 * Should we create a scoped diagram?
 	*/
 	public void setCreateScopedDiagram( boolean value );
 
-	/**
+	
+
+/**
 	 * The name of the scoped diagram
 	*/
 	public String getScopedDiagramName();
 
-	/**
+	
+
+/**
 	 * The name of the scoped diagram
 	*/
 	public void setScopedDiagramName( String value );
 
-	/**
+	
+
+/**
 	 * The kind of the scoped diagram
 	*/
 	public int getScopedDiagramKind();
 
-	/**
+	
+
+/**
 	 * The kind of the scoped diagram
 	*/
 	public void setScopedDiagramKind( /* DiagramKind */ int value );
 
-	/**
+	
+
+/**
 	 * The kind of package to create
 	*/
 	public int getPackageKind();
 
-	/**
+	
+
+/**
 	 * The kind of package to create
 	*/
 	public void setPackageKind( /* NewPackageKind */ int value );
 
-	/**
+	
+
+/**
 	 * Should the dialog show the From Reverse Engineering selection?
 	*/
 	public boolean getAllowFromRESelection();
 
-	/**
+	
+
+/**
 	 * Should the dialog show the From Reverse Engineering selection?
 	*/
 	public void setAllowFromRESelection( boolean value );

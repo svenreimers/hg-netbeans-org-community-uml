@@ -42,11 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : PrimitiveFunction.java
- * Created on : Sep 18, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.metamodel.common.commonactions;
 
 import org.dom4j.Document;
@@ -59,7 +56,8 @@ import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure
 public class PrimitiveFunction extends Behavior implements IPrimitiveFunction
 {
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactions.IPrimitiveFunction#getBody()
      */
     public String getBody()
@@ -67,7 +65,9 @@ public class PrimitiveFunction extends Behavior implements IPrimitiveFunction
         return getAttributeValue("body");
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactions.IPrimitiveFunction#getLanguage()
      */
     public String getLanguage()
@@ -75,7 +75,9 @@ public class PrimitiveFunction extends Behavior implements IPrimitiveFunction
         return getAttributeValue("language");
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactions.IPrimitiveFunction#setBody(java.lang.String)
      */
     public void setBody(String pBody)
@@ -83,7 +85,9 @@ public class PrimitiveFunction extends Behavior implements IPrimitiveFunction
         setAttributeValue("body", pBody);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactions.IPrimitiveFunction#setLanguage(java.lang.String)
      */
     public void setLanguage(String pLanguage)

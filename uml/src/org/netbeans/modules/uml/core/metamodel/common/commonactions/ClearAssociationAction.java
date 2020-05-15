@@ -42,11 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : ClearAssociationAction.java
- * Created on : Sep 18, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.metamodel.common.commonactions;
 
 import org.dom4j.Document;
@@ -64,7 +61,8 @@ public class ClearAssociationAction
     implements IClearAssociationAction
 {
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactions.IClearAssociationAction#getAssociation()
      */
     public IAssociation getAssociation()
@@ -74,7 +72,9 @@ public class ClearAssociationAction
 
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactions.IClearAssociationAction#getObject()
      */
     public IInputPin getObject()
@@ -83,7 +83,9 @@ public class ClearAssociationAction
             .retrieveSingleElement(this, "UML:Element.ownedElement/UML:InputPin", IInputPin.class);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactions.IClearAssociationAction#setAssociation(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAssociation)
      */
     public void setAssociation(IAssociation pAssoc)
@@ -91,7 +93,9 @@ public class ClearAssociationAction
         addElementByID(pAssoc, "association");
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactions.IClearAssociationAction#setObject(org.netbeans.modules.uml.core.metamodel.basic.basicactions.IInputPin)
      */
     public void setObject(IInputPin pInputPin)

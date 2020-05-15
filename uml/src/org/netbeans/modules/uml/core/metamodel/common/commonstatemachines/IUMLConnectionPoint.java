@@ -49,27 +49,37 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 public interface IUMLConnectionPoint extends IStateVertex
 {
-	/**
+	
+
+/**
 	 * property Definition
 	*/
 	public IUMLConnectionPoint getDefinition();
 
-	/**
+	
+
+/**
 	 * property Definition
 	*/
 	public void setDefinition( IUMLConnectionPoint value );
 
-	/**
+	
+
+/**
 	 * method AddEntry
 	*/
 	public void addEntry( IPseudoState pState );
 
-	/**
+	
+
+/**
 	 * method RemoveEntry
 	*/
 	public void removeEntry( IPseudoState pState );
 
-	/**
+	
+
+/**
 	 * property Entries
 	*/
 	public ETList<IPseudoState> getEntries();

@@ -48,42 +48,58 @@ import org.netbeans.modules.uml.core.metamodel.structure.ISourceFileArtifact;
 
 public interface ISourceCodeManipulationMap
 {
-	/**
+	
+
+/**
 	 * Returns a ISourceCodeManipulationMap object for the given ISourceFileArtifact object
 	*/
 	public long getSourceCodeManipulator( ISourceFileArtifact pArtifact, ISourceCodeManipulation ppManipulation );
 
-	/**
+	
+
+/**
 	 * The changes made to every ISourceFileArtifact in the map are committed to disk.
 	*/
 	public long commitAllChanges();
 
-	/**
+	
+
+/**
 	 * The changes made to the given ISourceFileArtifact object are committed to disk.
 	*/
 	public long commitChanges( ISourceFileArtifact pArtifact );
 
-	/**
+	
+
+/**
 	 * Removes an entry from the map.  Any changes made to the ISourceFileArtifact's code are lost.
 	*/
 	public long removeSourceCodeManipulator( ISourceFileArtifact pArtifact );
 
-	/**
+	
+
+/**
 	 * Gets / Sets FileSystemManipulation
 	*/
 	public IFileSystemManipulation getFileSystemManipulation();
 
-	/**
+	
+
+/**
 	 * Gets / Sets FileSystemManipulation
 	*/
 	public void setFileSystemManipulation( IFileSystemManipulation value );
 
-	/**
+	
+
+/**
 	 * Gets / Sets AutoCommit
 	*/
 	public boolean getAutoCommit();
 
-	/**
+	
+
+/**
 	 * Gets / Sets AutoCommit
 	*/
 	public void setAutoCommit( boolean value );

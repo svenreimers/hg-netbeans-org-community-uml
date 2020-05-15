@@ -72,7 +72,9 @@ public class ExecutionSpecificationThinWidget extends Widget {
     }
     
 
-    /**
+    
+
+/**
      * Calculates a client area for the label.
      * @return the client area
      */
@@ -113,7 +115,9 @@ public class ExecutionSpecificationThinWidget extends Widget {
     }
 
     
-    /**
+    
+
+/**
      * 
      */
     @Override

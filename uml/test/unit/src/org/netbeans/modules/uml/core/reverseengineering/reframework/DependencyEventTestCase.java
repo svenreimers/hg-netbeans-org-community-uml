@@ -49,6 +49,8 @@ import org.netbeans.modules.uml.core.AbstractUMLTestCase;
 import org.dom4j.Document;
 import org.dom4j.Element;
 import org.netbeans.modules.uml.core.support.umlsupport.XMLManip;
+
+
 /**
  * Test cases for DependencyEvent.
  */
@@ -61,7 +63,9 @@ public class DependencyEventTestCase extends AbstractUMLTestCase
 
     private IDependencyEvent de;
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see junit.framework.TestCase#setUp()
      */
     protected void setUp() throws Exception

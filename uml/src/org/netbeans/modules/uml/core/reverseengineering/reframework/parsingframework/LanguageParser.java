@@ -53,7 +53,8 @@ import org.netbeans.modules.uml.core.reverseengineering.reframework.IREOperation
 public class LanguageParser implements ILanguageParser
 {
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ILanguageParser#getErrorListener()
      */
     public IErrorListener getErrorListener()
@@ -62,7 +63,9 @@ public class LanguageParser implements ILanguageParser
         return null;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ILanguageParser#getStateFilter()
      */
     public IStateFilter getStateFilter()
@@ -71,7 +74,9 @@ public class LanguageParser implements ILanguageParser
         return null;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ILanguageParser#getStateListener()
      */
     public IStateListener getStateListener()
@@ -80,7 +85,9 @@ public class LanguageParser implements ILanguageParser
         return null;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ILanguageParser#getTokenFilter()
      */
     public ITokenFilter getTokenFilter()
@@ -89,7 +96,9 @@ public class LanguageParser implements ILanguageParser
         return null;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ILanguageParser#getTokenProcessor()
      */
     public ITokenProcessor getTokenProcessor()
@@ -98,7 +107,9 @@ public class LanguageParser implements ILanguageParser
         return null;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ILanguageParser#parseFile(java.lang.String)
      */
     public void parseFile(String filename)
@@ -107,7 +118,9 @@ public class LanguageParser implements ILanguageParser
 
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ILanguageParser#parseFile(java.lang.String, java.lang.String)
      */
     public void parseFile(String filename, String charset)
@@ -116,7 +129,9 @@ public class LanguageParser implements ILanguageParser
 
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ILanguageParser#parseOperation(java.lang.String, org.netbeans.modules.uml.core.reverseengineering.reframework.IREOperation)
      */
     public void parseOperation(String filename, IREOperation operation)
@@ -125,7 +140,9 @@ public class LanguageParser implements ILanguageParser
 
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ILanguageParser#parseOperation(java.lang.String, java.lang.String, org.netbeans.modules.uml.core.reverseengineering.reframework.IREOperation)
      */
     public void parseOperation(String filename, String charset, IREOperation operation)
@@ -134,7 +151,9 @@ public class LanguageParser implements ILanguageParser
 
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ILanguageParser#processStreamByType(java.lang.String, int)
      */
     public void processStreamByType(String stream, int kind)
@@ -143,7 +162,9 @@ public class LanguageParser implements ILanguageParser
 
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ILanguageParser#setErrorListener(org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.IErrorListener)
      */
     public void setErrorListener(IErrorListener errorListener)
@@ -152,7 +173,9 @@ public class LanguageParser implements ILanguageParser
 
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ILanguageParser#setStateFilter(org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.IStateFilter)
      */
     public void setStateFilter(IStateFilter filter)
@@ -161,7 +184,9 @@ public class LanguageParser implements ILanguageParser
 
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ILanguageParser#setStateListener(org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.IStateListener)
      */
     public void setStateListener(IStateListener stateListener)
@@ -170,7 +195,9 @@ public class LanguageParser implements ILanguageParser
 
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ILanguageParser#setTokenFilter(org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ITokenFilter)
      */
     public void setTokenFilter(ITokenFilter filter)
@@ -179,7 +206,9 @@ public class LanguageParser implements ILanguageParser
 
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ILanguageParser#setTokenProcessor(org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ITokenProcessor)
      */
     public void setTokenProcessor(ITokenProcessor tokenProcessor)

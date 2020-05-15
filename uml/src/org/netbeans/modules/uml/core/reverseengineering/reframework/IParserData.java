@@ -50,37 +50,51 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 public interface IParserData
 {
-	/**
+	
+
+/**
 	 * Retrieves the event data in a pure XMI format.  All TokenDescriptors will be removed from the string.
 	*/
 	public String getXMIString();
 
-	/**
+	
+
+/**
 	 * The event data in its pure format.  All TokenDescriptors will still exist in the string.
 	*/
 	public String getRawData();
 
-	/**
+	
+
+/**
 	 * Retrieves/Sets the event data.  The data should only be set by the sender of the event.
 	*/
 	public Node getEventData();
 
-	/**
+	
+
+/**
 	 * Retrieves/Sets the event data.  The data should only be set by the sender of the event.
 	*/
 	public void setEventData( Node value );
 
-	/**
+	
+
+/**
 	 * Retrieves the token descriptors for the parser event.
 	*/
 	public ETList<ITokenDescriptor> getTokenDescriptors();
 
-	/**
+	
+
+/**
 	 * Retrieves a token descriptor with a specific type
 	*/
 	public ITokenDescriptor getTokenDescriptor( String type );
 
-	/**
+	
+
+/**
 	 * The name of the file that was parsed.
 	*/
 	public String getFilename();

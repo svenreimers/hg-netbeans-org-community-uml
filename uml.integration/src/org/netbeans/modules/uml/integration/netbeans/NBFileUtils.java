@@ -82,7 +82,9 @@ import org.netbeans.modules.uml.project.AssociatedSourceProvider;
 public class NBFileUtils
 {
     private static final Logger logger = Logger.getLogger("org.netbeans.modules.uml.integration");
-    /**
+    
+
+/**
      * Retrieves the FileSystem that contains the specified file or null if no
      * available FileSystem contains the file.  <p> The FileSystem is located by
      * finding the first FileSystem in the repository whose root directory is
@@ -98,7 +100,9 @@ public class NBFileUtils
         return getFileSystem(filename, false);
     }
     
-    /**
+    
+
+/**
      * Retrieves the FileSystem that contains the specified file or null if no
      * available FileSystem contains the file.  <p> The FileSystem is located by
      * finding the first FileSystem in the repository whose root directory is
@@ -152,7 +156,9 @@ public class NBFileUtils
         return null;
     }
     
-    /**
+    
+
+/**
      * finds a file object in a FileSystem.  Does not create the missing packages
      * and DataObjects.
      * @param root The FileSystem to search.
@@ -190,7 +196,9 @@ public class NBFileUtils
         return null;
     }
     
-    /**
+    
+
+/**
      * Creates a full package structure.  If the specified path contians a file name
      * (ie anything with an extension) the file will <i>not</i> be created.
      *  <p><b>Example</b>
@@ -252,14 +260,18 @@ public class NBFileUtils
         return filename;
     }
     
-    /**
+    
+
+/**
      * Searchs the NetBeans file systems for the specified file.  If the file
      * is not found then the failure will be displayed in the status bar.
      * @param filename The file to locate.
      * @return The NetBeans SourceElement or null if not found.
      * @deprecated Use findResource() instead.
      */
-    /* NB60TBD
+    
+
+/* NB60TBD
     public SourceElement findSourceFile(String filename)
     {
         Log.entry("Entering function NBFileUtils::findSourceFile");
@@ -321,7 +333,9 @@ public class NBFileUtils
         return FileUtil.toFileObject(f);
     }
     
-    /**
+    
+
+/**
      *  Find a DataFolder by searching NetBeans file systems.  The DataFolder will
      *  be created if one does not exist.
      *  @param fullPath The path to the folder.
@@ -395,7 +409,9 @@ public class NBFileUtils
         return null;
     }
     
-    /**
+    
+
+/**
      * Determines whether this Java VM has permission to write to the given
      * directory.
      *
@@ -413,7 +429,9 @@ public class NBFileUtils
         return (folderObj != null && folderObj.isFolder() && folderObj.canWrite());
     }
     
-    /**
+    
+
+/**
      *  Asserts that the given ClassInfo's filename is that of a writable file.
      * If the ClassInfo itself is null, or has a null filename, or is associated
      * with a non-writable file, this method throws an UnwritableFileException
@@ -451,13 +469,17 @@ public class NBFileUtils
         }
     }
     
-    /**
+    
+
+/**
      * Finds the ClassElement that represents the class symbol.  The method
      * will only operate on CLD_Class symbols.
      * @param sym The symbol used to find a ClassElement.
      * @deprecated Use findJavaClass() instead.
      */
-    /* NB60TBD
+    
+
+/* NB60TBD
     public ClassElement findClass(ClassInfo clazz)
     {
         Log.entry("Entering function NBFileUtils::findClassFromSymbol");
@@ -506,7 +528,9 @@ public class NBFileUtils
     */
 
 
-    /**
+    
+
+/**
      * Finds the Element that represents the class symbol.  The method
      * will only operate on CLD_Class symbols.
      * @param sym The symbol used to find a ClassElement.
@@ -567,14 +591,18 @@ public class NBFileUtils
     }
     
 
-    /**
+    
+
+/**
      * Retrieve the source file that contains the implementation of the Describe
      * class symbol.  The class symbol must be a CLD_Class symbol.
      * @param sym The Describe symbol.
      * @return The source element or null if the file is not found.
      * @deprecated Use findResource() instead.
      */
-    /* NB60TBD
+    
+
+/* NB60TBD
     public SourceElement findSourceFile(ClassInfo clazz)
     {
         Log.entry("Entering function NBFileUtils::findSourceFileFromSymbol");
@@ -763,7 +791,9 @@ public class NBFileUtils
         
     }
     
-    /**
+    
+
+/**
      * Creates a new file folder. If the name of the package is a fully qualified
      * name createPackage will insure that the entire package structure is present.
      * @param fo The parent of the package.
@@ -798,7 +828,9 @@ public class NBFileUtils
         return retVal;
     }
     
-    /**
+    
+
+/**
      * Retrive the source directory associated with the given
      * file
      *
@@ -868,13 +900,17 @@ public class NBFileUtils
         return retVal;
     }
     
-    /**
+    
+
+/**
      * Retrieve the name of the file that contains the class element.  The name
      * of the class is retrieved by concating the packages of the class and and
      * the file system that contains the file.
      * @param clazz The class used to retrieve the file name.
      */
-    /* NB60TBD
+    
+
+/* NB60TBD
     public static String getFilename(ClassElement clazz)
     {
         Log.entry("Entering function NBFileUtils::getFilename");
@@ -891,7 +927,8 @@ public class NBFileUtils
     }
     */
     
-    /**
+    
+/**
      *  Signals that a file that was expected to be writable was found read-only.
      *
      * @version 1.0
@@ -908,7 +945,9 @@ public class NBFileUtils
             super("The file '" + file + "' is unwritable."); // NOI18N
         }
     }
-    /* NB60TBD
+    
+
+/* NB60TBD
     public static String getFilename(JavaClass clazz)
     {
         String retVal = null;
@@ -967,7 +1006,9 @@ public class NBFileUtils
         return resource;
     }
     
-    /* NB60TBD
+    
+
+/* NB60TBD
     public static String getFileNameForResource(Resource resource)
     {
         String retVal = null;

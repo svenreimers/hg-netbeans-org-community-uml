@@ -42,11 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : JRPParameter.java
- * Created on : Oct 29, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpcomponent;
 
 import org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity;
@@ -98,7 +95,9 @@ public class JRPParameter implements IJRPParameter
         setRanges(copy.getRanges());
     }
         
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpccomponent.IJRPParameter#addRange(java.lang.String, java.lang.String)
      */
     public void addRange(String lower, String upper)
@@ -121,7 +120,9 @@ public class JRPParameter implements IJRPParameter
         m_Ranges = ranges;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpccomponent.IJRPParameter#createParameter(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation)
      */
     public IParameter createParameter(IOperation pOp)
@@ -179,7 +180,9 @@ public class JRPParameter implements IJRPParameter
         return pRetVal;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpccomponent.IJRPParameter#getDirection()
      */
     public int getDirection()
@@ -187,7 +190,9 @@ public class JRPParameter implements IJRPParameter
         return m_Direction;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpccomponent.IJRPParameter#getName()
      */
     public String getName()
@@ -195,7 +200,9 @@ public class JRPParameter implements IJRPParameter
         return m_Name;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpccomponent.IJRPParameter#getType()
      */
     public String getType()
@@ -203,7 +210,9 @@ public class JRPParameter implements IJRPParameter
         return m_Type;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpccomponent.IJRPParameter#getTypeClass()
      */
     public IClassifier getTypeClass()
@@ -211,7 +220,9 @@ public class JRPParameter implements IJRPParameter
         return m_TypeClass;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpccomponent.IJRPParameter#setDirection(int)
      */
     public void setDirection(int paramDirKind)
@@ -219,7 +230,9 @@ public class JRPParameter implements IJRPParameter
         m_Direction = paramDirKind;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpccomponent.IJRPParameter#setName(java.lang.String)
      */
     public void setName(String name)
@@ -227,7 +240,9 @@ public class JRPParameter implements IJRPParameter
         m_Name = name;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpccomponent.IJRPParameter#setType(java.lang.String)
      */
     public void setType(String type)
@@ -235,7 +250,9 @@ public class JRPParameter implements IJRPParameter
         m_Type = type;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpccomponent.IJRPParameter#setTypeClass(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier)
      */
     public void setTypeClass(IClassifier pType)

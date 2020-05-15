@@ -43,6 +43,8 @@
  */
 
 
+
+
 /*
  * Created on Jun 12, 2003
  *
@@ -130,7 +132,9 @@ public class JDescribeButton extends JPanel implements ActionListener
 //		//m_RolesClazz = rolesClazz;
 //		m_Row = row;
 //	}
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see java.awt.event.ActionListener#actionPerformed(java.awt.event.ActionEvent)
 	 */
 	public void actionPerformed(ActionEvent e)

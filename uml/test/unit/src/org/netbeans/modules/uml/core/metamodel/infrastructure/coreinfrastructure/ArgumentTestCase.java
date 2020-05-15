@@ -49,6 +49,8 @@ import org.netbeans.modules.uml.core.AbstractUMLTestCase;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.IExpression;
 
 import junit.textui.TestRunner;
+
+
 /**
  * Test cases for argument.
  *
@@ -62,7 +64,9 @@ public class ArgumentTestCase extends AbstractUMLTestCase
 
     private IArgument arg;
         
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see junit.framework.TestCase#setUp()
      */
     protected void setUp() throws Exception

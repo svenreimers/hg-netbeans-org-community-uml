@@ -97,6 +97,7 @@ import org.netbeans.modules.uml.ui.support.diagramsupport.IDiagramTypesManager;
 import org.openide.util.Lookup;
 
 
+
 /**
  * 
  */
@@ -316,7 +317,9 @@ public class DefaultDiagramEngine extends  DiagramEngine {
         readOnly.addAction(new EdgeLabelIteratorAction());
     }
     
-    /**
+    
+
+/**
      * Retrieves the edge router to use when creating new edges.
      * 
      * @param layers The layers that can contain connection widgets.

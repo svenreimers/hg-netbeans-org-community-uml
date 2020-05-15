@@ -62,7 +62,9 @@ public class NewDialogWorkspaceDetails implements INewDialogWorkspaceDetails
 		super();
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.newdialog.INewDialogWorkspaceDetails#getName()
 	 */
 	public String getName()
@@ -70,7 +72,9 @@ public class NewDialogWorkspaceDetails implements INewDialogWorkspaceDetails
 		return m_Name;
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.newdialog.INewDialogWorkspaceDetails#setName(java.lang.String)
 	 */
 	public void setName(String value)
@@ -78,7 +82,9 @@ public class NewDialogWorkspaceDetails implements INewDialogWorkspaceDetails
 		m_Name = value;
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.newdialog.INewDialogWorkspaceDetails#getLocation()
 	 */
 	public String getLocation()
@@ -86,7 +92,9 @@ public class NewDialogWorkspaceDetails implements INewDialogWorkspaceDetails
 		return m_Location;
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.newdialog.INewDialogWorkspaceDetails#setLocation(java.lang.String)
 	 */
 	public void setLocation(String value)

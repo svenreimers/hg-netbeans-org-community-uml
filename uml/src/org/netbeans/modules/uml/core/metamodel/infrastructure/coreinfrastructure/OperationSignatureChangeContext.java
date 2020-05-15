@@ -42,6 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
+
+
 /*
  * Created on Feb 6, 2004
  *
@@ -56,7 +58,8 @@ import org.netbeans.modules.uml.core.eventframework.EventContext;
 public class OperationSignatureChangeContext extends EventContext implements IOperationSignatureChangeContext
 {
 
-	/**
+	
+/**
 	 *
 	 * The operation associated with this context
 	 *
@@ -79,7 +82,9 @@ public class OperationSignatureChangeContext extends EventContext implements IOp
 		return retOper;
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * The operation associated with this context
 	 *

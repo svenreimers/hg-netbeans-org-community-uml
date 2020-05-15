@@ -49,17 +49,23 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 public interface IElementDisposal
 {
-	/**
+	
+
+/**
 	 * Adds an element to the queue of elements that will be disposed upon the next call to DisposeElements().
 	*/
 	public long queueForDisposal( IVersionableElement element );
 
-	/**
+	
+
+/**
 	 * Disposes all elements in the queue.
 	*/
 	public long disposeElements();
 
-	/**
+	
+
+/**
 	 * Retrieves the collection of elemetns that will be disposed of.
 	*/
 	public ETList<IVersionableElement> getToBeDisposed();

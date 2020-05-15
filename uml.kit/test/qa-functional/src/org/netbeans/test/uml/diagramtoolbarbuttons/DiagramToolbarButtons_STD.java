@@ -58,6 +58,7 @@ import org.netbeans.test.umllib.NewDiagramWizardOperator;
 import org.netbeans.test.umllib.testcases.UMLTestCase;
 
 
+
 /**
  *
  * @spec UML/Diagram_ToolbarButtons.xml
@@ -96,6 +97,8 @@ public class DiagramToolbarButtons_STD extends UMLTestCase {
             
     }
     
+
+
 /**
  * @caseblock State Diagram
  * @usecase Check toolbar buttons of state diagram
@@ -112,6 +115,8 @@ public class DiagramToolbarButtons_STD extends UMLTestCase {
             }
     }
 
+
+
 /**
  * @caseblock State Diagram
  * @usecase Check toolbar buttons of state diagram
@@ -123,6 +128,8 @@ public class DiagramToolbarButtons_STD extends UMLTestCase {
                 fail("Diagram toolbar button '" + btnTooltipName + "' is disabled but should not be");
             }
     }
+
+
 
 /**
  * @caseblock State Diagram
@@ -136,6 +143,8 @@ public class DiagramToolbarButtons_STD extends UMLTestCase {
             }
     }
 
+
+
 /**
  * @caseblock State Diagram
  * @usecase Check toolbar buttons of state diagram
@@ -147,6 +156,8 @@ public class DiagramToolbarButtons_STD extends UMLTestCase {
                 fail("Diagram toolbar button '" + btnTooltipName + "' is disabled but should not be");
             }
     }
+
+
 
 /**
  * @caseblock State Diagram
@@ -160,6 +171,8 @@ public class DiagramToolbarButtons_STD extends UMLTestCase {
             }
     }
 
+
+
 /**
  * @caseblock State Diagram
  * @usecase Check toolbar buttons of state diagram
@@ -171,6 +184,8 @@ public class DiagramToolbarButtons_STD extends UMLTestCase {
                 fail("Diagram toolbar button '" + btnTooltipName + "' is disabled but should not be");
             }
     }
+
+
 
 /**
  * @caseblock State Diagram
@@ -188,6 +203,8 @@ public class DiagramToolbarButtons_STD extends UMLTestCase {
             }
     }
 
+
+
 /**
  * @caseblock State Diagram
  * @usecase Check toolbar buttons of state diagram
@@ -200,6 +217,8 @@ public class DiagramToolbarButtons_STD extends UMLTestCase {
             }
     }
 
+
+
 /*    
     public void testBtn_ShowFriendlyNames(){
         String btnTooltipName = DiagramToolbarOperator.SHOW_FRIENDLY_NAMES_TOOL;
@@ -209,6 +228,8 @@ public class DiagramToolbarButtons_STD extends UMLTestCase {
             }
     }
 */
+
+
 
 /**
  * @caseblock State Diagram
@@ -221,6 +242,8 @@ public class DiagramToolbarButtons_STD extends UMLTestCase {
                 fail("Diagram toolbar button '" + btnTooltipName + "' is disabled but should not be");
             }
     }
+
+
 
 /**
  * @caseblock State Diagram
@@ -253,6 +276,8 @@ public class DiagramToolbarButtons_STD extends UMLTestCase {
         }
     }
     
+
+
 /**
  * @caseblock State Diagram
  * @usecase Check toolbar buttons of state diagram
@@ -264,6 +289,8 @@ public class DiagramToolbarButtons_STD extends UMLTestCase {
                 fail("Diagram toolbar button '" + btnTooltipName + "' is disabled but should not be");
             }
     }
+
+
 
 /**
  * @caseblock State Diagram
@@ -277,6 +304,8 @@ public class DiagramToolbarButtons_STD extends UMLTestCase {
             }
     }
 
+
+
 /**
  * @caseblock State Diagram
  * @usecase Check toolbar buttons of state diagram
@@ -288,6 +317,8 @@ public class DiagramToolbarButtons_STD extends UMLTestCase {
                 fail("Diagram toolbar button '" + btnTooltipName + "' is disabled but should not be");
             }
     }
+
+
 
 /**
  * @caseblock State Diagram
@@ -301,6 +332,8 @@ public class DiagramToolbarButtons_STD extends UMLTestCase {
             }
      }
 
+
+
 /**
  * @caseblock State Diagram
  * @usecase Check toolbar buttons of state diagram
@@ -312,6 +345,8 @@ public class DiagramToolbarButtons_STD extends UMLTestCase {
                 fail("Diagram toolbar button '" + btnTooltipName + "' is disabled but should not be");
             }
     }
+
+
 
 /**
  * @caseblock State Diagram
@@ -325,6 +360,8 @@ public class DiagramToolbarButtons_STD extends UMLTestCase {
             }
     }
 
+
+
 /**
  * @caseblock State Diagram
  * @usecase Check toolbar buttons of state diagram
@@ -336,6 +373,8 @@ public class DiagramToolbarButtons_STD extends UMLTestCase {
                 fail("Diagram toolbar button '" + btnTooltipName + "' is disabled but should not be");
             }
     }
+
+
 
 /**
  * @caseblock State Diagram
@@ -349,6 +388,8 @@ public class DiagramToolbarButtons_STD extends UMLTestCase {
             }
     }
 
+
+
 /**
  * @caseblock State Diagram
  * @usecase Check toolbar buttons of state diagram
@@ -360,6 +401,8 @@ public class DiagramToolbarButtons_STD extends UMLTestCase {
                 fail("Diagram toolbar button '" + btnTooltipName + "' is disabled but should not be");
             }
     }
+
+
 
 /**
  * @caseblock State Diagram
@@ -378,6 +421,8 @@ public class DiagramToolbarButtons_STD extends UMLTestCase {
         }
     }
 
+
+
 /**
  * @caseblock State Diagram
  * @usecase Check toolbar buttons of state diagram
@@ -389,6 +434,8 @@ public class DiagramToolbarButtons_STD extends UMLTestCase {
                 fail("Diagram toolbar button '" + btnTooltipName + "' is disabled but should not be");
             }
     }
+
+
 
 /**
  * @caseblock State Diagram
@@ -403,6 +450,8 @@ public class DiagramToolbarButtons_STD extends UMLTestCase {
         }
     }
     
+
+
 /**
  * @caseblock State Diagram
  * @usecase Check toolbar buttons of state diagram

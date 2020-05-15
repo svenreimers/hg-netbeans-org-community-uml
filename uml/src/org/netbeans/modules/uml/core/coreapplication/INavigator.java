@@ -49,7 +49,9 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.IElement;
 
 public interface INavigator
 {
-	/**
+	
+
+/**
 	 * Navigates to an IElement object
 	*/
 	public long navigateToElement( IElement pVal );

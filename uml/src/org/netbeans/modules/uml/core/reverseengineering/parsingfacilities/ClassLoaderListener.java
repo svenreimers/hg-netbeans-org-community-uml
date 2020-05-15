@@ -76,7 +76,9 @@ public class ClassLoaderListener
     ////////////////////////////////////////////////////////////////////////
     // All empty methods are also empty in C++ source.
     
-    /** 
+    
+
+/** 
      * Returns an IFileInformation object.  This object has a list of all
      * dependencies, packages, and classes found in the parsed file.
      * 
@@ -89,7 +91,9 @@ public class ClassLoaderListener
         return m_Information;
     }
     
-    /** 
+    
+
+/** 
      * Returns true if @a pEvent refers to a top level operation
      * (i.e. an operation declared outside of a  class).
      * 
@@ -105,7 +109,9 @@ public class ClassLoaderListener
         return isTopLevelClassElement(operation);
     }
     
-    /** 
+    
+
+/** 
      * Returns true if @a pEvent refers to a top level attribute
      * (i.e. an attribute declared outside of a  class).
      * 
@@ -121,7 +127,9 @@ public class ClassLoaderListener
         return isTopLevelClassElement(attr);
     }
     
-    /** 
+    
+
+/** 
      * Determines if @a pElement is a top-level class element.  Top-level
      * means that the class element does not belong to a class.
      * 
@@ -136,7 +144,9 @@ public class ClassLoaderListener
         return element.getOwner() == null;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.IClassLoaderListener#getTopLevelAttributes()
      */
     synchronized public ETList<IREAttribute> getTopLevelAttributes()
@@ -146,7 +156,9 @@ public class ClassLoaderListener
         return m_TopLevelAttributes;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.IClassLoaderListener#getTopLevelOperations()
      */
     synchronized public ETList<IREOperation> getTopLevelOperations()
@@ -156,7 +168,9 @@ public class ClassLoaderListener
         return m_TopLevelOperations;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.IUMLParserEventsSink#onPackageFound(org.netbeans.modules.uml.core.reverseengineering.reframework.IPackageEvent, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onPackageFound(IPackageEvent data, IResultCell cell)
@@ -166,7 +180,9 @@ public class ClassLoaderListener
         getFileInformation().addPackage(data);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.IUMLParserEventsSink#onDependencyFound(org.netbeans.modules.uml.core.reverseengineering.reframework.IDependencyEvent, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onDependencyFound(IDependencyEvent data, IResultCell cell)
@@ -176,7 +192,9 @@ public class ClassLoaderListener
         getFileInformation().addDependency(data);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.IUMLParserEventsSink#onClassFound(org.netbeans.modules.uml.core.reverseengineering.reframework.IClassEvent, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onClassFound(IClassEvent data, IResultCell cell)
@@ -187,21 +205,27 @@ public class ClassLoaderListener
         getFileInformation().addClass(reclass);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.IUMLParserEventsSink#onBeginParseFile(java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onBeginParseFile(String fileName, IResultCell cell)
     {
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.IUMLParserEventsSink#onEndParseFile(java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onEndParseFile(String fileName, IResultCell cell)
     {
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.IUMLParserEventsSink#onError(org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.IErrorEvent, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onError(IErrorEvent data, IResultCell cell)
@@ -211,7 +235,9 @@ public class ClassLoaderListener
         getFileInformation().addError(data);
     }
 
-    /** 
+    
+
+/** 
      * Called when an Attribute has been found in source code
      * 
      * @param data[in] the attribute event for the found attribute
@@ -227,7 +253,9 @@ public class ClassLoaderListener
         }
     }
 
-    /** 
+    
+
+/** 
      * Called when an Operation has been found in source code
      * 
      * @param data[in] the attribute event for the found attribute 
@@ -243,14 +271,18 @@ public class ClassLoaderListener
         }
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.IUMLParserAtomicEventsSink#onGeneralizationFound(org.netbeans.modules.uml.core.reverseengineering.reframework.IREGeneralization, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onGeneralizationFound(IREGeneralization data, IResultCell cell)
     {
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.IUMLParserAtomicEventsSink#onImplementationFound(org.netbeans.modules.uml.core.reverseengineering.reframework.IRERealization, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onImplementationFound(IRERealization data, IResultCell cell)

@@ -52,7 +52,9 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 public class REAttribute extends REClassFeature implements IREAttribute
 {
 
-    /**
+    
+
+/**
      * Specifies an expression that is used to specify the initial value of the attribute.
      * @param pVal [out] The initial value.
      */
@@ -61,7 +63,9 @@ public class REAttribute extends REClassFeature implements IREAttribute
         return getTokenDescriptorValue("InitialValue");
     }
 
-    /**
+    
+
+/**
      * Specifies if the attribute is a primitive attribute or an object instance.
      *
      * @param *pVal [out] True if primitive, False otherwise.
@@ -100,7 +104,9 @@ public class REAttribute extends REClassFeature implements IREAttribute
         return XMLManip.getAttributeValue(getEventData(), "type");
     }
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.IREAttribute#getIsVolatile()
      */
     public boolean getIsVolatile()
@@ -108,7 +114,9 @@ public class REAttribute extends REClassFeature implements IREAttribute
         return XMLManip.getAttributeBooleanValue(getEventData(), "isVolatile");
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.IREAttribute#getIsTransient()
      */
     public boolean getIsTransient()

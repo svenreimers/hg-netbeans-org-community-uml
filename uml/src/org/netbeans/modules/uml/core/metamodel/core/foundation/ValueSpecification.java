@@ -57,7 +57,9 @@ public class ValueSpecification extends Element implements IValueSpecification{
 		super();
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * If set, implies that the associated value specification represents
 	 * a set of instances as described by the value specification.
@@ -86,7 +88,9 @@ public class ValueSpecification extends Element implements IValueSpecification{
 		addMultiplicity(mult);
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Simply adds the passed in Multiplicity to this element without firing events.
 	 *

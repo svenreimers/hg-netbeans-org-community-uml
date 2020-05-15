@@ -60,7 +60,8 @@ public class CoreNameCollisionListener implements ICoreNameCollisionListener
 	private boolean m_bEnabled = false;
 	private INameCollisionHandler m_Handler = null;
 
-	/**
+	
+/**
 	 * 
 	 */
 	public CoreNameCollisionListener()
@@ -69,7 +70,9 @@ public class CoreNameCollisionListener implements ICoreNameCollisionListener
 		registerToSinks();
 	}
 
-	/**
+	
+
+/**
 	 * Returns the enabled flag for the listener
 	 * 
 	 * @param pVal [out,retval] VARIANT_TRUE if this listener will dispatch to its handler.
@@ -79,7 +82,9 @@ public class CoreNameCollisionListener implements ICoreNameCollisionListener
 		return m_bEnabled;
 	}
 
-	/**
+	
+
+/**
 	 * Sets the enabled flag for the listener.
 	 * 
 	 * @param newVal [in] VARIANT_TRUE if this listener will dispatch to its handler.
@@ -93,7 +98,9 @@ public class CoreNameCollisionListener implements ICoreNameCollisionListener
 		m_bEnabled = value;
 	}
 
-	/**
+	
+
+/**
 	 * The handler that gets notified of collision events.
 	 * 
 	 * @param pVal [out,retval] The current handler installed on this listener.
@@ -103,7 +110,9 @@ public class CoreNameCollisionListener implements ICoreNameCollisionListener
 		return m_Handler;
 	}
 
-	/**
+	
+
+/**
 	 * Sets the handler that gets notified of collision events.
 	 * 
 	 * @param newVal [in] The current handler installed on this listener.
@@ -112,7 +121,9 @@ public class CoreNameCollisionListener implements ICoreNameCollisionListener
 	{
 		m_Handler = value;
 	}
-	/**
+	
+
+/**
 	 * Registers to events
 	 */
 	private void registerToSinks()
@@ -134,7 +145,9 @@ public class CoreNameCollisionListener implements ICoreNameCollisionListener
 				}
 			}
 	}	
-	/**
+	
+
+/**
 	 * Unregisters from events and deletes the sink
 	 */
 	public void deInitialize()
@@ -151,7 +164,9 @@ public class CoreNameCollisionListener implements ICoreNameCollisionListener
       }
 	}
 
-	/**
+	
+
+/**
 	 * Fired whenever the alias name of the passed in element is about to change.
 	 * This is where we ask the user to name the element if it is not yet named.
 	 */
@@ -163,7 +178,9 @@ public class CoreNameCollisionListener implements ICoreNameCollisionListener
 		}
 	}
 	
-	/**
+	
+
+/**
 	 * Event coming from our sink notifying us of this event.
 	 */
 	public void onPreNameCollision(INamedElement element, 
@@ -176,7 +193,9 @@ public class CoreNameCollisionListener implements ICoreNameCollisionListener
 			m_Handler.onPreNameCollision(element, proposedName, collidingElements, cell);
 		}
 	}
-	/**
+	
+
+/**
 	 * Event coming from our sink notifying us of this event.
 	 */
 	public void onNameCollision(INamedElement element, 
@@ -188,14 +207,18 @@ public class CoreNameCollisionListener implements ICoreNameCollisionListener
 				m_Handler.onNameCollision(element, collidingElements, cell);
 			}
 	}
-	/**
+	
+
+/**
 	 * Event coming from our sink notifying us of this event.
 	 */
 	public void onCoreProductPreQuit( )
 	{
 		deInitialize();
 	}
-	/**
+	
+
+/**
 	 * Event coming from our sink notifying us of this event.  When the edit control goes away
 	 * we automatically disable the processing of name collisions.
 	 */

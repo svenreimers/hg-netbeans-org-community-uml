@@ -50,7 +50,9 @@ import org.netbeans.modules.uml.core.support.umlsupport.XMLManip;
  */
 public class REArgument extends ParserData implements IREArgument
 {
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.IREArgument#getName()
      */
     public String getName()
@@ -58,7 +60,9 @@ public class REArgument extends ParserData implements IREArgument
         return XMLManip.getAttributeValue(getEventData(), "name");
     }
 
-    /**
+    
+
+/**
      * The value of the argument, the value may be an expression.
      * @param pVal [out] The value of the argument.
      */
@@ -70,7 +74,9 @@ public class REArgument extends ParserData implements IREArgument
                   : null;
     }
 
-    /**
+    
+
+/**
      * Retrieves the type of the argument.
      * @param pVal [out] The arguments type.
      */

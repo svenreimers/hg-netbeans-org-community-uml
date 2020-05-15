@@ -43,6 +43,8 @@
  */
 
 
+
+
 /*
  * Created on Jul 15, 2003
  *
@@ -135,7 +137,9 @@ public class JDefaultNewDialog extends WizardSheet implements ActionListener
 		initWithDefaults(details);
 	}
 
-	/**
+	
+
+/**
 	 * 
 	 */
 //	public JDefaultNewDialog()
@@ -188,7 +192,9 @@ public class JDefaultNewDialog extends WizardSheet implements ActionListener
 //		});
 //	}
 
-	/**
+	
+
+/**
 	 * @param pValidateProcessor
 	 */
 	public void init(INewDialogValidateProcessor pValidateProcessor)
@@ -246,7 +252,9 @@ public class JDefaultNewDialog extends WizardSheet implements ActionListener
 		this.addPage(page, name);
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see java.awt.event.ActionListener#actionPerformed(java.awt.event.ActionEvent)
 	 */
 	public void actionPerformed(ActionEvent arg0)
@@ -323,7 +331,9 @@ public class JDefaultNewDialog extends WizardSheet implements ActionListener
 		}
 	}
 	
-	/**
+	
+
+/**
 	 * 
 	 */
 	private void setupHelpText()
@@ -341,7 +351,9 @@ public class JDefaultNewDialog extends WizardSheet implements ActionListener
 		}
 	}
 
-	/**
+	
+
+/**
 	 * 
 	 */
 	private void showFirstScreen()
@@ -524,7 +536,9 @@ public class JDefaultNewDialog extends WizardSheet implements ActionListener
 		dispose();
 	}
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.wizard.WizardSheet#canAddNavigationButtons()
     */
    protected boolean canAddNavigationButtons()
@@ -532,7 +546,9 @@ public class JDefaultNewDialog extends WizardSheet implements ActionListener
       return false;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.wizard.WizardSheet#getCommitButtonCaption()
     */
    protected String getCommitButtonCaption()

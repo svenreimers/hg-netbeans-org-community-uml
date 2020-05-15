@@ -124,7 +124,9 @@ public class MessagesConnectProvider implements SQDMessageConnectProvider
     private IMessage resultMessage;
 
 
-    /** 
+    
+
+/** 
      * Creates a new instance of SceneConnectProvider.  The provider will create
      * an edge of type edgeType.  If the user drops the edge on the diagram as
      * opposed to a node, the targetType will be used to create a new node.  
@@ -141,7 +143,9 @@ public class MessagesConnectProvider implements SQDMessageConnectProvider
         resultMessage=null;
     }
 
-    /**
+    
+
+/**
      * constructor used to draw messages for existent model elemnts
      * corrspodning conect method will not create new elements but will use specified in constructor elemnt
      * presentation elements will be created
@@ -206,7 +210,9 @@ public class MessagesConnectProvider implements SQDMessageConnectProvider
         return ret;
     }
 
-    /**
+    
+
+/**
      * check target widget and consider target ppoint (checks if possible to draw message to this point)
      * @param sourceWidget - message from this widget
      * @param targetWidget - message to this widget
@@ -340,7 +346,9 @@ public class MessagesConnectProvider implements SQDMessageConnectProvider
     }
     
     
-    /**
+    
+
+/**
      * Method accept source/target widgets(Lifelines/Combined Fragments) and sraw message of kind specified during creation of connect provider
      * If kind of message synchronous or result both links call and result are created
      * if you need to adjust result message position after creation (point is used for call messages positioning) you have to adjust source and target related widgets positions for result
@@ -523,7 +531,9 @@ public class MessagesConnectProvider implements SQDMessageConnectProvider
         return retVal;
     }
 
-    /**
+    
+
+/**
      * Create a new node widget to be used as the target widget for the connector.
      * This provider expects the scene to be a graph scene.
      * 
@@ -628,7 +638,9 @@ public class MessagesConnectProvider implements SQDMessageConnectProvider
     }
 
     
-    /**
+    
+
+/**
      * TBD, should it be separated for different cases to simplify logic
      * @param source
      * @param target
@@ -1048,7 +1060,9 @@ public class MessagesConnectProvider implements SQDMessageConnectProvider
             }
     }
     
-    /**
+    
+
+/**
      * create message on a diagram, create message always to lifelines
      * @param source
      * @param target
@@ -1070,7 +1084,7 @@ public class MessagesConnectProvider implements SQDMessageConnectProvider
             if(sourceLine!=null)y1=convertSceneToLocal(sourceLine,startingPoint).y;//incoming corrdinates in LifelineWidget coordinates, we adds child to LifelineLineWidget
             else y1=convertSceneToLocal(sourceCF.getMainWidget(),startingPoint).y;
             //set position of target lifeline
-            Point boxCenter=new Point(targetBox.getPreferredBounds().x+targetBox.getPreferredBounds().width/2,targetBox.getPreferredBounds().y+targetBox.getPreferredBounds().height/2);//x doen't matter, in box coordinates
+            Point boxCenter=new Point(targetBox.getPreferredBounds().x+targetBox.getPreferredBounds().width/2,targetBox.getPreferredBounds().y+targetBox.getPreferredBounds().height/2);
             boxCenter=targetBox.convertLocalToScene(boxCenter);//in scene coordinats
             boxCenter=convertSceneToLocal(target,boxCenter);//in lifeline coordinates
             Point targetCurSceneLocation=target.getParentWidget().convertLocalToScene(target.getPreferredLocation());
@@ -1163,7 +1177,9 @@ public class MessagesConnectProvider implements SQDMessageConnectProvider
     }
     
         
-    /**
+    
+
+/**
      * 
      * @param level
      * @param y
@@ -1194,7 +1210,9 @@ public class MessagesConnectProvider implements SQDMessageConnectProvider
         return (ExecutionSpecificationThinWidget) deep;
     }
     
-    /**
+    
+
+/**
      * 
      * 
      * @param exspec
@@ -1340,7 +1358,9 @@ public class MessagesConnectProvider implements SQDMessageConnectProvider
         
     }
     
-    /**
+    
+
+/**
      * Calculation consider widgets orderes, higher indexed widgets have higher y corrdinate
      * @param lineWidget - LifelineLineWidget or ExecutionSpec widget or any widget which may contain pins and ex specifications
      * @param y - ppint before which we are looking other widgets in lineWidget coordinate system
@@ -1365,7 +1385,9 @@ public class MessagesConnectProvider implements SQDMessageConnectProvider
           return index;      
     }
     
-    /**
+    
+
+/**
      * this method handle new message cases, i.e. dependent on new message ex spec sizes and isn't very good to reconnect action
      * TBD need to be updated later
      * @param y position in scene? coordinated
@@ -1457,7 +1479,9 @@ public class MessagesConnectProvider implements SQDMessageConnectProvider
         }
     }
     
-    /**
+    
+
+/**
      * support reconnection of target of synch or asynch messages from to lifelines only
      */
     public void reconnectMessage(GraphScene scene,MessageFactory factory,IPresentationElement messagePE,IPresentationElement targetLifelinePE)
@@ -1555,7 +1579,9 @@ public class MessagesConnectProvider implements SQDMessageConnectProvider
             }
         }
     }
-    /**
+    
+
+/**
      * When a message has been moved from one lifeline to another, process its invoked operation
      *
      * @param edge    The TS edge containing the a message, which may have an invoked operation
@@ -1587,7 +1613,7 @@ public class MessagesConnectProvider implements SQDMessageConnectProvider
                         if( null == operationInvoked )
                         {
                             // Determine if the user wants to copy, move or cancel
-                            //kris richards - PROBLEM - need to remove this pref.
+                            
                             IPreferenceQuestionDialog questionDialog = new SwingPreferenceQuestionDialog();
                             if( questionDialog != null )
                             {
@@ -1660,7 +1686,9 @@ public class MessagesConnectProvider implements SQDMessageConnectProvider
         throw new UnsupportedOperationException("Not supported yet.");
     }
     
-    /**
+    
+
+/**
      * Converts a location in the scene coordination system to the local coordination system.
      * coerting based on preferred widgets locations
      * @param sceneLocation the scene location

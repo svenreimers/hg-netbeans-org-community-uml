@@ -55,7 +55,9 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 public class HandlerAction extends PrimitiveAction implements IHandlerAction
 {
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.basic.basicactions.IHandlerAction#addHandler(org.netbeans.modules.uml.core.metamodel.basic.basicactions.IJumpHandler)
      */
     public void addHandler(IJumpHandler pHandler)
@@ -63,7 +65,9 @@ public class HandlerAction extends PrimitiveAction implements IHandlerAction
         addElementByID( pHandler, "jumpHandler");
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.basic.basicactions.IHandlerAction#getBody()
      */
     public IAction getBody()
@@ -72,7 +76,9 @@ public class HandlerAction extends PrimitiveAction implements IHandlerAction
         return collector.retrieveSingleElement(this, "UML:HandlerAction.body/*", IAction.class);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.basic.basicactions.IHandlerAction#getHandlers()
      */
     public ETList<IJumpHandler> getHandlers()
@@ -81,7 +87,9 @@ public class HandlerAction extends PrimitiveAction implements IHandlerAction
         return collector.retrieveElementCollectionWithAttrIDs(this, "jumpHandler", IJumpHandler.class);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.basic.basicactions.IHandlerAction#getJumpValue()
      */
     public IOutputPin getJumpValue()
@@ -91,7 +99,9 @@ public class HandlerAction extends PrimitiveAction implements IHandlerAction
         return collector.retrieveSingleElement(this, "UML:Element.ownedElement/UML:OutputPin", IOutputPin.class);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.basic.basicactions.IHandlerAction#removeHandler(org.netbeans.modules.uml.core.metamodel.basic.basicactions.IJumpHandler)
      */
     public void removeHandler(IJumpHandler pHandler)
@@ -99,7 +109,9 @@ public class HandlerAction extends PrimitiveAction implements IHandlerAction
         removeElementByID( pHandler, "jumpHandler");
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.basic.basicactions.IHandlerAction#setBody(org.netbeans.modules.uml.core.metamodel.basic.basicactions.IAction)
      */
     public void setBody(IAction value)
@@ -107,7 +119,9 @@ public class HandlerAction extends PrimitiveAction implements IHandlerAction
         addChild("UML:HandlerAction.body", "UML:HandlerAction.body", value);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.basic.basicactions.IHandlerAction#setJumpValue(org.netbeans.modules.uml.core.metamodel.basic.basicactions.IOutputPin)
      */
     public void setJumpValue(IOutputPin value)
@@ -115,7 +129,9 @@ public class HandlerAction extends PrimitiveAction implements IHandlerAction
         addOutput(value);
     }
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.VersionableElement#establishNodePresence(org.dom4j.Document, org.dom4j.Node)
 	 */
 	public void establishNodePresence(Document doc, Node node)

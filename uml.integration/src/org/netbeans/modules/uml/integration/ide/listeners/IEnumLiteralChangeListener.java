@@ -46,6 +46,7 @@ package org.netbeans.modules.uml.integration.ide.listeners;
 
 import org.netbeans.modules.uml.integration.ide.events.LiteralInfo;
 
+
 /**
  * Interface for classes that need to be notified of changes to enumeration's literals
  * in the Describe model.

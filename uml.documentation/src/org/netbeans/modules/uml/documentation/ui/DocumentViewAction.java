@@ -54,6 +54,7 @@ import org.openide.util.HelpCtx;
 import org.openide.util.ImageUtilities;
 import org.openide.util.NbBundle;
 
+
 /**
  *  Displays the Describe documentation editor.
  *
@@ -74,7 +75,9 @@ public class DocumentViewAction extends AbstractAction
        return instance;
    }
 
-    /**
+    
+
+/**
      * Returns the help context for this action. Currently, no help is provided.
      * @return <code>null</code> always.
      */
@@ -82,7 +85,9 @@ public class DocumentViewAction extends AbstractAction
         return null;
     }
 
-    /**
+    
+
+/**
      *  Returns the (display) name of this action.
      *
      * @return The <code>MessagesBundle.document</code> value for

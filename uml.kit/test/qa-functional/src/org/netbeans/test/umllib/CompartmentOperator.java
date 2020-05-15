@@ -64,6 +64,8 @@ import org.netbeans.test.umllib.actions.Actionable;
 import org.netbeans.test.umllib.exceptions.NotFoundException;
 import org.netbeans.test.umllib.util.JPopupByPointChooser;
 
+
+
 /**
  * This is operator for "compartment". Compartment in
  * ETI terms means subsection of some diagram element. For example:
@@ -73,7 +75,9 @@ import org.netbeans.test.umllib.util.JPopupByPointChooser;
  */
 public class CompartmentOperator implements Actionable {
     
-    /**
+    
+
+/**
      * Default delay for Compartment Waiter. Real value can be changed
      * as for the all other operators(For example via JemmyProperties)
      */
@@ -87,7 +91,9 @@ public class CompartmentOperator implements Actionable {
     protected Widget sourceCompartment = null;
     protected DrawingAreaOperator drawingArea = null;
     
-    /**
+    
+
+/**
      * 
      * @return 
      */
@@ -95,7 +101,9 @@ public class CompartmentOperator implements Actionable {
         return sourceCompartment;
     }
     
-    /**
+    
+
+/**
      * 
      * @return 
      */
@@ -104,7 +112,9 @@ public class CompartmentOperator implements Actionable {
         return sourceElement;
     }
     
-    /**
+    
+
+/**
      * Construct compartment by index
      * @param el Instance of DiagramElementOperator to look for compartment
      * @param index index
@@ -114,7 +124,9 @@ public class CompartmentOperator implements Actionable {
         this(el, waitForCompartment(el, new AnyCompartmentChooser(),index));
     }
     
-    /**
+    
+
+/**
      * Costruct compartment by type
      * @param el Instance of DiagramElementOperator to look for compartment
      * @param type Compartemnt type.
@@ -129,7 +141,9 @@ public class CompartmentOperator implements Actionable {
         
         this(el, waitForCompartment(el, new CompartmentByTypeChooser(type), 0, typeInfo));
     }
-    /**
+    
+
+/**
      * Construct compartment by compartment class
      * @param el Instance of DiagramElementOperator
      * @param co Instance of Widget
@@ -142,7 +156,9 @@ public class CompartmentOperator implements Actionable {
     
      
     
-    /**
+    
+
+/**
      * method return name of comparment from compartment source
      * @return compartmant name
      */
@@ -155,7 +171,9 @@ public class CompartmentOperator implements Actionable {
     public static Widget waitForCompartment(final DiagramElementOperator source, final CompartmentChooser chooser, final int index) throws NotFoundException {
          return waitForCompartment(source, chooser, index, "");
     }
-    /**
+    
+
+/**
      * Wait for suitable compartment
      * @param source DiagramElementOperator to look in
      * @param chooser Custom chooser
@@ -190,7 +208,9 @@ public class CompartmentOperator implements Actionable {
     }
     
     
-    /**
+    
+
+/**
      * Search for suitable compartment
      * @param source DiagramElementOperator to look in
      * @param chooser Custom chooser
@@ -226,7 +246,9 @@ public class CompartmentOperator implements Actionable {
          return null;
     }
     
-    /**
+    
+
+/**
      * Return list of all sub compartmens
      * @return list of sub compartmens
      */
@@ -236,7 +258,9 @@ public class CompartmentOperator implements Actionable {
     
     
      
-    /**
+    
+
+/**
      * Returns all sub compartments accepted by the specified chooser
      * @param chooser to be used for compartment selection
      * @return list of sub compartments
@@ -244,7 +268,9 @@ public class CompartmentOperator implements Actionable {
     public ArrayList<CompartmentOperator> getCompartments(CompartmentChooser chooser){
        return  getCompartments(chooser, "");
     }
-    /**
+    
+
+/**
      * Returns all sub compartments accepted by the specified chooser
      * @param chooser to be used for compartment selection
      * @return list of sub compartments
@@ -259,7 +285,9 @@ public class CompartmentOperator implements Actionable {
     }
     
     
-    /**
+    
+
+/**
      * Returns list of sub compartmens
      * @return list of sub compartmens
      * @param chooser Custom chooser
@@ -271,7 +299,9 @@ public class CompartmentOperator implements Actionable {
     
     
     
-    /**
+    
+
+/**
      * Returns list of sub compartmens
      * @return list of sub compartmens
      * @param chooser Custom chooser
@@ -299,7 +329,9 @@ public class CompartmentOperator implements Actionable {
         
     
     //Methods from Actionable interface
-    /**
+    
+
+/**
      * Invokes popup menu and returns JPopupMenuOperator
      * @return JPopupMenuOperator
      */
@@ -318,13 +350,17 @@ public class CompartmentOperator implements Actionable {
         return ret;
     }
     
-    /**
+    
+
+/**
      * Click on this compartment
      */
     public void select() {
     }
     
-    /**
+    
+
+/**
      * Add this compartment to selection by clicking on it with
      * CTRL pressed
      */
@@ -334,7 +370,9 @@ public class CompartmentOperator implements Actionable {
     
     
     
-    /**
+    
+
+/**
      * Returns center point of this compartment
      * @return center point of this compartment
      */
@@ -343,7 +381,9 @@ public class CompartmentOperator implements Actionable {
         return centerPoint;
     }
     
-    /**
+    
+
+/**
      * Returns left horizontal, center vertical point of this compartment
      * @param shift - shift from left border
      * @return left horizontal, center vertical point of this compartment
@@ -354,7 +394,9 @@ public class CompartmentOperator implements Actionable {
     }
     
     
-    /**
+    
+
+/**
      * Returns left horizontal, center vertical point of this compartment
      * with default shift from left border
      * @return left horizontal, center vertical point of this compartment
@@ -363,7 +405,9 @@ public class CompartmentOperator implements Actionable {
         return getLeftCenterPoint(10);
     }
     
-    /**
+    
+
+/**
      * 
      * @return bounding rectangle for compartment
      */
@@ -376,7 +420,9 @@ public class CompartmentOperator implements Actionable {
     
     
     
-    /**
+    
+
+/**
      * Click on this compartment
      * @param clickCount count
      * @param mouseButton mouse button. Use constants from InputEvent
@@ -387,7 +433,9 @@ public class CompartmentOperator implements Actionable {
     }
     
     
-    /**
+    
+
+/**
      * Click on this compartment
      * @param clickCount click count: 1,2 ..
      * @param mouseButton Mouse button to click. Use constants from InputEvent
@@ -396,20 +444,26 @@ public class CompartmentOperator implements Actionable {
         clickOnCenter(clickCount,mouseButton,0);
     }
     
-    /**
+    
+
+/**
      * Click on this compartmnet by left mouse button
      */
     public void clickOnCenter() {
         clickOnCenter(1,InputEvent.BUTTON1_MASK);
     }
     
-    /**
+    
+
+/**
      * Click on this compartment by right mouse button
      */
     public void clickForPopup() {
         clickOnCenter(1,InputEvent.BUTTON3_MASK);
     }
-    /**
+    
+
+/**
      * Click on this compartment
      * @param clickCount count
      * @param mouseButton mouse button. Use constants from InputEvent
@@ -419,7 +473,9 @@ public class CompartmentOperator implements Actionable {
         sourceElement.clickOn(getLeftCenterPoint(), clickCount, mouseButton, modifiers);
     }
     
-    /**
+    
+
+/**
      * Click on this compartment
      * @param clickCount click count: 1,2 ..
      * @param mouseButton Mouse button to click. Use constants from InputEvent
@@ -428,14 +484,18 @@ public class CompartmentOperator implements Actionable {
         clickOnLeftCenter(clickCount,mouseButton,0);
     }
     
-    /**
+    
+
+/**
      * Click on this compartmnet by left mouse button
      */
     public void clickOnLeftCenter() {
         clickOnLeftCenter(1,InputEvent.BUTTON1_MASK);
     }
     
-    /**
+    
+
+/**
      * Click on this compartment by right mouse button
      */
     public void clickleftForPopup() {
@@ -443,7 +503,9 @@ public class CompartmentOperator implements Actionable {
     }
     
     
-    /**
+    
+
+/**
      * Returns Font of text in this compartment
      * @return Font of text in this compartment
      */
@@ -455,7 +517,9 @@ public class CompartmentOperator implements Actionable {
     }
     
     
-    /**
+    
+
+/**
      * Returns Color of text in this compartment
      * @return Color of text in this compartment
      */
@@ -464,12 +528,14 @@ public class CompartmentOperator implements Actionable {
     }
     
     
-    /**
+    
+
+/**
      * 
      * @return 
      */
     public Color getBorderColor(){
-        //TODO: Wait for Trey's API
+        
 //6.0        try{
 //            INodeDrawEngine engine =  (INodeDrawEngine)sourceCompartment.getEngine();
 //            return engine.getBorderColor();
@@ -480,7 +546,9 @@ public class CompartmentOperator implements Actionable {
     }
     
 
-    /**
+    
+
+/**
      * Returns background color using standard method getFillColor provided by interface IDrawEngine
      * <br> Problem is that this method returns FillColor variable for all elements.
      * But 'backgroung color' changed by user is saved to different variables for different elements
@@ -489,7 +557,7 @@ public class CompartmentOperator implements Actionable {
      * @return Color background color
      */
     public Color getBackgroundColor(){
-        //TODO: Wait for Trey's API
+        
 //6.0        try{
 //            INodeDrawEngine engine =  (INodeDrawEngine)sourceCompartment.getEngine();
 //            return engine.getFillColor();
@@ -499,13 +567,15 @@ public class CompartmentOperator implements Actionable {
         return null;
     }
     
-    /**
+    
+
+/**
      * Returns Fill color using method getFillColor provided by ETNodeDrawEngine.
      *
      * @return Color background fill color
      */
     public Color getFillColor(){
-         //TODO: Wait for Trey's API
+         
 //        try{
 //            ETNodeDrawEngine engine =  (ETNodeDrawEngine)sourceCompartment.getEngine();
 //            return engine.getFillColor();
@@ -515,13 +585,15 @@ public class CompartmentOperator implements Actionable {
         return null;
     }
     
-    /**
+    
+
+/**
      * Returns Fill color using method getLightGradientFillColor provided by ETNodeDrawEngine
      *
      * @return Color light gradient background fill color
      */
     public Color getLightGradientFillColor(){
-        //TODO: Wait for Trey's API
+        
 //6.0        try{
 //            ETNodeDrawEngine engine =  (ETNodeDrawEngine)sourceCompartment.getEngine();
 //            return engine.getLightGradientFillColor();
@@ -533,7 +605,9 @@ public class CompartmentOperator implements Actionable {
     
     
     
-    /**
+    
+
+/**
      * Select compartmnet by type
      */
     public static class CompartmentByTypeChooser implements CompartmentChooser {
@@ -541,7 +615,9 @@ public class CompartmentOperator implements Actionable {
         private Class clazz = null;
          
         
-        /**
+        
+
+/**
          * Select compartment by type
          * @param compType compartment type
          */
@@ -560,7 +636,9 @@ public class CompartmentOperator implements Actionable {
         }
           
          
-        /**
+        
+
+/**
          * Check param by it's type
          * @param co Compartment to check
          * @return true if suitable and false otherwise
@@ -592,7 +670,9 @@ public class CompartmentOperator implements Actionable {
          }
         
         
-        /**
+        
+
+/**
          * Returns description of this chooser
          * @return description of this chooser
          */
@@ -604,14 +684,18 @@ public class CompartmentOperator implements Actionable {
     
     
     
-    /**
+    
+
+/**
      * Select compartmnet by name
      */
     public static class CompartmentByNameChooser implements CompartmentChooser {
         
         private String name = null;
         
-        /**
+        
+
+/**
          * Select compartment by name
          * @param compname 
          */
@@ -623,7 +707,9 @@ public class CompartmentOperator implements Actionable {
             return this.checkCompartment(co, "");
         }
         
-        /**
+        
+
+/**
          * Check param by it's name
          * @param co Compartment to check
          * @return true if suitable and false otherwise
@@ -636,7 +722,9 @@ public class CompartmentOperator implements Actionable {
                return true;
         }
         
-        /**
+        
+
+/**
          * Returns description of this chooser
          * @return description of this chooser
          */
@@ -648,12 +736,16 @@ public class CompartmentOperator implements Actionable {
     }
    
     
-    /**
+    
+
+/**
      * Any compartment chooser. Used for looking by index.
      */
     public static class AnyCompartmentChooser implements CompartmentChooser {
         
-        /**
+        
+
+/**
          * Any Compartment chooser. Selects any compartments
          */
         public AnyCompartmentChooser(){
@@ -662,7 +754,9 @@ public class CompartmentOperator implements Actionable {
         public boolean checkCompartment(Widget co) {
             return  checkCompartment(co, "");
         }
-        /**
+        
+
+/**
          * Check compartment
          * @param co Compartment to check
          * @return Always true
@@ -672,7 +766,9 @@ public class CompartmentOperator implements Actionable {
             return true;
         }
         
-        /**
+        
+
+/**
          * Returns short description
          * @return Description
          */

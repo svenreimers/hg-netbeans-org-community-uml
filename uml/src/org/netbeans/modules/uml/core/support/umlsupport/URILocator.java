@@ -58,6 +58,7 @@ import org.netbeans.modules.uml.common.generics.ETPairT;
 
 import java.util.List;
 
+
 /**
  * <p>Title: </p>
  * <p>Description: </p>
@@ -145,7 +146,9 @@ public class URILocator {
  {
     return m_NodeXPath;
   }
-  /**
+  
+
+/**
    *
    * Makes sure the the passed in URI is encode appropriately, so that it
    * can be put into an IDREFS attribute.
@@ -162,7 +165,9 @@ public class URILocator {
     return validated;
   }
   
-  /**
+  
+
+/**
    *
    * Decodes a URI that has previously been encoded.
    *
@@ -177,6 +182,8 @@ public class URILocator {
   	validated = StringUtilities.replaceAllSubstrings(uri, "\t", " ");
     return validated;
   }
+
+
 
 /**
  *
@@ -205,6 +212,8 @@ public static ETPairT<String,String> uriparts(String href)
 	ETPairT<String, String> retObj = new ETPairT<String, String>(docLoc, nodeLoc);
 	return retObj;
 }
+
+
 
 /**
  *
@@ -236,6 +245,8 @@ public static ETPairT<String,String> uriparts(String href)
 	return retNode;
   }
 
+
+
 /**
  * @return
  */
@@ -243,6 +254,8 @@ public static String docLocation()
 {
 	return m_DocLocation;
 }
+
+
 
 /**
  *

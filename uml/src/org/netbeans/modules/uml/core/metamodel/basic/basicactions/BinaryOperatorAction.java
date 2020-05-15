@@ -56,7 +56,9 @@ public class BinaryOperatorAction
     implements IBinaryOperatorAction
 {
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.basic.basicactions.IBinaryOperatorAction#getLeftOperand()
      */
     public IInputPin getLeftOperand()
@@ -65,7 +67,9 @@ public class BinaryOperatorAction
         return col.retrieveSingleElementWithAttrID(this, "left", IInputPin.class);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.basic.basicactions.IBinaryOperatorAction#getRightOperand()
      */
     public IInputPin getRightOperand()
@@ -74,7 +78,9 @@ public class BinaryOperatorAction
         return col.retrieveSingleElementWithAttrID(this, "right", IInputPin.class);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.basic.basicactions.IBinaryOperatorAction#setLeftOperand(org.netbeans.modules.uml.core.metamodel.basic.basicactions.IInputPin)
      */
     public void setLeftOperand(IInputPin newVal)
@@ -83,7 +89,9 @@ public class BinaryOperatorAction
 
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.basic.basicactions.IBinaryOperatorAction#setRightOperand(org.netbeans.modules.uml.core.metamodel.basic.basicactions.IInputPin)
      */
     public void setRightOperand(IInputPin newVal)

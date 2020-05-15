@@ -61,22 +61,30 @@ public interface IPreferenceManagerEventDispatcher extends IEventDispatcher
 	*/
 	public void revokePreferenceManagerSink( IPreferenceManagerEventsSink pHandler );
 
-	/**
+	
+
+/**
 	 * 
 	*/
 	public void firePreferenceChange( String Name, IPropertyElement pElement, IEventPayload payLoad );
 
-	/**
+	
+
+/**
 	 * 
 	*/
 	public void firePreferenceAdd( String Name, IPropertyElement pElement, IEventPayload payLoad );
 
-	/**
+	
+
+/**
 	 * 
 	*/
 	public void firePreferenceRemove( String Name, IPropertyElement pElement, IEventPayload payLoad );
 
-	/**
+	
+
+/**
 	 * Fired for a group of changed preferences
 	*/
 	public void firePreferencesChange( IPropertyElement[] pElements, IEventPayload payLoad );

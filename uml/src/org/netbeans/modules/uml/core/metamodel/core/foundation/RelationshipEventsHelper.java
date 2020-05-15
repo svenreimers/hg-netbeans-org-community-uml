@@ -62,7 +62,9 @@ public class RelationshipEventsHelper {
 	private boolean m_Proceed = true;
 	private boolean m_FireEvents = true;
 
-	/**
+	
+
+/**
 	 * 
 	 */
 	private RelationshipEventsHelper() {
@@ -82,7 +84,9 @@ public class RelationshipEventsHelper {
 		initialize(null);
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Establishes the RelationProxy
 	 *
@@ -104,7 +108,9 @@ public class RelationshipEventsHelper {
 		}
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Called when one of the ends of a relation is being added to the relation.
 	 *
@@ -126,7 +132,9 @@ public class RelationshipEventsHelper {
 		return m_Proceed;
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Called when one of the ends of a relation has been added to the relation.
 	 *
@@ -142,7 +150,9 @@ public class RelationshipEventsHelper {
 		}
 	}
 	
-	/**
+	
+
+/**
 	 *
 	 * Called when one of the ends of a relation is being modified. This is most
 	 * commonly called when a single end of a relationship such as Generalization is
@@ -174,7 +184,9 @@ public class RelationshipEventsHelper {
 		return m_Proceed;
 	}
 	
-	/**
+	
+
+/**
 	 *
 	 * Called when one of the ends of a relation is being modified. This is most
 	 * commonly called when a single end of a relationship such as Generalization is
@@ -192,7 +204,9 @@ public class RelationshipEventsHelper {
 		}
 	}
 	
-	/**
+	
+
+/**
 	 *
 	 * Called when one of the ends of a relation is being removed. 
 	 *
@@ -214,7 +228,9 @@ public class RelationshipEventsHelper {
 		return m_Proceed;
 	}
 	
-	/**
+	
+
+/**
 	 *
 	 * Called when one of the ends of a relation is being removed. 
 	 *
@@ -230,7 +246,9 @@ public class RelationshipEventsHelper {
 		}
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Creates the payload to be included in the dispatched event, as well as sets the to and from
 	 * elements of the RelationProxy
@@ -255,7 +273,9 @@ public class RelationshipEventsHelper {
 		return payload;
 	}
 	
-	/**
+	
+
+/**
 	 *
 	 * Determines whether or not a modify event should go out or not.
 	 * There are a couple of assumptions being made:
@@ -313,7 +333,9 @@ public class RelationshipEventsHelper {
 		return m_FireEvents;
 	}
 	
-	/**
+	
+
+/**
 	 *
 	 * Determines whether or not the attribute name on the passed
 	 * in node contains a value that matches the xmi.id of end.
@@ -369,7 +391,9 @@ public class RelationshipEventsHelper {
 		return proceed;
 	}
 	
-	/**
+	
+
+/**
 	 *
 	 * Retrieves the node of te Relationship. This is virtual, so sub-classes may override this 
 	 * behavior.
@@ -389,7 +413,9 @@ public class RelationshipEventsHelper {
 		return n;
 	}
 	
-	/**
+	
+
+/**
 	 *
 	 * Prepares the internal dispatcher for use.
 	 *

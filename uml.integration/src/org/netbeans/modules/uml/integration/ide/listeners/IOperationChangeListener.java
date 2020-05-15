@@ -42,14 +42,11 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File         : IOperationChangeListener.java
- * Version      : 1.0
- * Description  : Listener for operation changes in the Describe model.
- * Author       : Darshan
- */
+
+
 package org.netbeans.modules.uml.integration.ide.listeners;
 import org.netbeans.modules.uml.integration.ide.events.MethodInfo;
+
 
 /**
  *  Interface for classes that need to be notified of changes to operations

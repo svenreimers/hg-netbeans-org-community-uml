@@ -43,6 +43,7 @@
  */
 
 
+
 /*
  *
  * Created on Jun 12, 2003
@@ -87,6 +88,7 @@ import org.netbeans.modules.uml.ui.support.ProductHelper;
 import org.netbeans.modules.uml.ui.support.diagramsupport.IProxyDiagramManager;
 import org.netbeans.modules.uml.ui.support.diagramsupport.ProxyDiagramManager;
 
+
 /**
  * 
  */
@@ -111,7 +113,9 @@ public class ProjectTreeBuilderImpl implements IProjectTreeBuilder
    }
    
 
-   /**
+   
+
+/**
     * Based on Wolverine rules, we needed a way to get a list of elements that 
     * should be placed as child nodes in our tree structures.  We used to ask
     * for owned elements, but that does not map directly to the way that we 
@@ -165,7 +169,9 @@ public class ProjectTreeBuilderImpl implements IProjectTreeBuilder
       return retVal;
    }
 
-   /**
+   
+
+/**
     * Based on the passed-in IElement, return a list of child
     * elements that should appear as child nodes.
     * 
@@ -205,7 +211,9 @@ public class ProjectTreeBuilderImpl implements IProjectTreeBuilder
       return retVal;
    }   
 
-   /**
+   
+
+/**
     * Get any predefined child elements of the passed in folder.
     * 
     *
@@ -269,7 +277,9 @@ public class ProjectTreeBuilderImpl implements IProjectTreeBuilder
       return retVal;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.projecttreesupport.IProjectTreeBuilder#getItems(java.lang.Object)
     */
    public ITreeItem[] getItems(Object parent)
@@ -278,7 +288,9 @@ public class ProjectTreeBuilderImpl implements IProjectTreeBuilder
       return null;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.projecttreesupport.IProjectTreeBuilder#getFolders(java.lang.Object)
     */
    public String[] getFolders(Object parent)
@@ -287,7 +299,9 @@ public class ProjectTreeBuilderImpl implements IProjectTreeBuilder
       return null;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     */
    public ITreeItem[] retrieveChildItemsForWorkspace(IWorkspace pWork)
    {
@@ -312,7 +326,9 @@ public class ProjectTreeBuilderImpl implements IProjectTreeBuilder
       return retVal;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.projecttreesupport.IProjectTreeBuilder#createChild(org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeItem, java.lang.Object)
     */
    public ITreeItem createChild(ITreeItem pParent, Object pDisp)
@@ -342,7 +358,9 @@ public class ProjectTreeBuilderImpl implements IProjectTreeBuilder
       return retVal;
    }
    
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.projecttreesupport.IProjectTreeBuilder#sort(java.lang.Object, org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeItem[])
     */
    public ITreeItem[] sort(Object pParent, ITreeItem[] pIn)
@@ -365,7 +383,9 @@ public class ProjectTreeBuilderImpl implements IProjectTreeBuilder
       return retVal;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.projecttreesupport.IProjectTreeBuilder#retrieveChildItemsSorted(java.lang.Object)
     */
    public ITreeItem[] retrieveChildItemsSorted(Object pParent)
@@ -402,7 +422,9 @@ public class ProjectTreeBuilderImpl implements IProjectTreeBuilder
       return sort(pParent, items);
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.projecttreesupport.IProjectTreeBuilder#getSortPriority(java.lang.String)
     */
    public long getSortPriority(String sType)
@@ -417,7 +439,9 @@ public class ProjectTreeBuilderImpl implements IProjectTreeBuilder
       return retVal;
    }
 
-   /**
+   
+
+/**
     * Retrieves the model elements that are affected by the changed element.
     * 
     * @param element The element that changed.
@@ -442,7 +466,9 @@ public class ProjectTreeBuilderImpl implements IProjectTreeBuilder
       }
    }
    
-   /**
+   
+
+/**
     * Based on the xml definitions, get a list of paths where this element type
     * can reside in the tree.
     *
@@ -721,7 +747,9 @@ public class ProjectTreeBuilderImpl implements IProjectTreeBuilder
       m_SortMap.put("Relationships", new Integer(sortIndex++));
    }
    
-   /**
+   
+
+/**
     * Removes items from the passed-in list that have the same IElement
     * as any of its parents.
     *
@@ -771,7 +799,9 @@ public class ProjectTreeBuilderImpl implements IProjectTreeBuilder
       }
    }
 
-   /**
+   
+
+/**
     * Get any predefined child elements of the passed in element based on
     * the property definitions in a config xml file.
     *
@@ -792,7 +822,9 @@ public class ProjectTreeBuilderImpl implements IProjectTreeBuilder
       }
    }
 
-   /**
+   
+
+/**
     * Get any predefined child elements of the passed in element based on the 
     * property definitions in a config xml file.
     *
@@ -855,7 +887,9 @@ public class ProjectTreeBuilderImpl implements IProjectTreeBuilder
    }
 
 
-   /**
+   
+
+/**
     * The actual creation of an ITreeItem based on the passed-in information.
     *
     * @param pDisp The item in which to get its children (stored as a dispatch
@@ -922,7 +956,9 @@ public class ProjectTreeBuilderImpl implements IProjectTreeBuilder
    }
 
 
-   /**
+   
+
+/**
     * @param countMethod
     * @param pDisp
     * @param returnVal
@@ -997,7 +1033,9 @@ public class ProjectTreeBuilderImpl implements IProjectTreeBuilder
       }      
    }
 
-   /**
+   
+
+/**
     * @param objToActOn
     * @return
     */
@@ -1226,7 +1264,9 @@ public class ProjectTreeBuilderImpl implements IProjectTreeBuilder
    }
 
 
-   /**
+   
+
+/**
     * Sets the parent information on a tree item.
     *
     * @param pItem[in]	The tree item whose parent information needs to be set
@@ -1289,7 +1329,9 @@ public class ProjectTreeBuilderImpl implements IProjectTreeBuilder
    }
 
 
-	/**
+	
+
+/**
 	 * Keeps us in sync with the project tree engine so we don't load element types that have
 	 * been filtered.
 	 */
@@ -1345,7 +1387,9 @@ public class ProjectTreeBuilderImpl implements IProjectTreeBuilder
    }
 
 
-   /**
+   
+
+/**
     * Common method to create a ITreeElement.
     * 
     *
@@ -1359,7 +1403,9 @@ public class ProjectTreeBuilderImpl implements IProjectTreeBuilder
       return createChildTreeElement(pDisp, element, null);
    }
 
-   /**
+   
+
+/**
     * Common method to create a ITreeElement.
     * 
     *
@@ -1412,7 +1458,9 @@ public class ProjectTreeBuilderImpl implements IProjectTreeBuilder
    }
 
 
-   /**
+   
+
+/**
     * Common method to populate the tree element.
     * 
     *
@@ -1501,7 +1549,9 @@ public class ProjectTreeBuilderImpl implements IProjectTreeBuilder
        return retVal;
    }
    
-   /**
+   
+
+/**
     * Method that eliminates certain items from the list of owned elements of a project.
     * 
     * @param pElement The element in question
@@ -1533,7 +1583,9 @@ public class ProjectTreeBuilderImpl implements IProjectTreeBuilder
    }
 
 
-   /**
+   
+
+/**
     * Get any diagrams owned by the passed-in element.
     * 
     * @param parent  The item in which to get its children (stored as a 
@@ -1599,7 +1651,9 @@ public class ProjectTreeBuilderImpl implements IProjectTreeBuilder
    }
 
 
-   /**
+   
+
+/**
     * Retrieve the file that defines the property definitions for the 
     * project tree builder.
     *
@@ -1672,7 +1726,9 @@ public class ProjectTreeBuilderImpl implements IProjectTreeBuilder
       return retVal;
    }
    
-   /**
+   
+
+/**
     * @param pParent
     * @param project
     */
@@ -1704,7 +1760,9 @@ public class ProjectTreeBuilderImpl implements IProjectTreeBuilder
    }
 
 
-   /**
+   
+
+/**
     * @param pParent
     * @param workspace
     */
@@ -1738,7 +1796,9 @@ public class ProjectTreeBuilderImpl implements IProjectTreeBuilder
    }
 
 
-   /**
+   
+
+/**
     * @param pParent
     * @param diagram
     */
@@ -1750,7 +1810,9 @@ public class ProjectTreeBuilderImpl implements IProjectTreeBuilder
    
    }
    
-   /**
+   
+
+/**
     * Retrieves the node factory used to create project tree items.
     * 
     * @return The factory to use.
@@ -1760,7 +1822,9 @@ public class ProjectTreeBuilderImpl implements IProjectTreeBuilder
       return m_NodeFactory;
    }
 
-   /**
+   
+
+/**
     * Sets the node factory to use when creating project tree items
     * 
     * @param factory The new factory.
@@ -1770,7 +1834,9 @@ public class ProjectTreeBuilderImpl implements IProjectTreeBuilder
       m_NodeFactory = factory;
    }
 
-	/**
+	
+
+/**
 	 * Manages what elements are filtered so we don't do extra processing
 	 *
 	 * @param pFilter [out,retval] The filter provided to us
@@ -1780,7 +1846,9 @@ public class ProjectTreeBuilderImpl implements IProjectTreeBuilder
 		return m_TreeFilter;
 	}
 
-	/**
+	
+
+/**
 	 * Manages what elements are filtered so we don't do extra processing
 	 *
 	 * @param pFilter [in] The filter provided to us

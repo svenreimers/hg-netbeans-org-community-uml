@@ -42,23 +42,22 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : FoundationMessages.java
- * Created on : Oct 8, 2003
- * Author     : aztec
- */
+
+
 package org.netbeans.modules.uml.core.metamodel.core.foundation;
 
 import java.text.MessageFormat;
 import java.util.MissingResourceException;
 import java.util.ResourceBundle;
 
+
 /**
  * Resource bundle front-end for Foundation messages.
  */
 public class FoundationMessages
 {
-    /**
+    
+/**
      * Returns a resource string, given its key.
      *
      * @param resourceKey The key of the resource to retrieve.
@@ -77,17 +76,8 @@ public class FoundationMessages
         }
     }
     
-    /**
-     * Obtains a resource string, given its key, and applies a MessageFormat to
-     * it.
-     * 
-     * @param resourceKey The key of the resource to retrieve.
-     * @param parameters  The parameters to be inserted into the formatted 
-     *                    string. If <code>null</code>, the function behaves
-     *                    exactly as <code>getString(String)</code>.
-     * @return The formatted resource string, if found, or a modified key if the
-     *         resource is unavailable.
-     */
+    
+
     public static String getString(String resourceKey, Object[] parameters)
     {
         String s = getString(resourceKey);

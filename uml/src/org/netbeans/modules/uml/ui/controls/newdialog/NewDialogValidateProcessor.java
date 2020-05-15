@@ -63,7 +63,9 @@ public class NewDialogValidateProcessor implements INewDialogValidateProcessor
 		super();
 	}
 
-	/**
+	
+
+/**
 	 * Makes sure the tabs are valid for this diagram
 	 *
 	 * @param pParentDialog [in] The parent dialog for this validator

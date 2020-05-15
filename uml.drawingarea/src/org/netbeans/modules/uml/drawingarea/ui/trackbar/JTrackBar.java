@@ -88,6 +88,7 @@ import org.netbeans.modules.uml.ui.support.archivesupport.IProductArchiveDefinit
 import org.netbeans.modules.uml.ui.support.archivesupport.IProductArchiveElement;
 
 
+
 /**
  * 
  */
@@ -151,7 +152,9 @@ public class JTrackBar extends JPanel implements ITrackBar, FocusListener
    }
 
    
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.swing.trackbar.ITrackBar#setBackStyle(long)
     */
    public void setBackStyle(long style)
@@ -160,7 +163,9 @@ public class JTrackBar extends JPanel implements ITrackBar, FocusListener
 
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.swing.trackbar.ITrackBar#getBackStyle()
     */
    public long getBackStyle()
@@ -169,7 +174,9 @@ public class JTrackBar extends JPanel implements ITrackBar, FocusListener
       return 0;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.swing.trackbar.ITrackBar#setDrawMode(long)
     */
    public void setDrawMode(long mode)
@@ -178,7 +185,9 @@ public class JTrackBar extends JPanel implements ITrackBar, FocusListener
 
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.swing.trackbar.ITrackBar#getDrawMode()
     */
    public long getDrawMode()
@@ -187,7 +196,9 @@ public class JTrackBar extends JPanel implements ITrackBar, FocusListener
       return 0;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.swing.trackbar.ITrackBar#setDrawStyle(long)
     */
    public void setDrawStyle(long style)
@@ -196,7 +207,9 @@ public class JTrackBar extends JPanel implements ITrackBar, FocusListener
 
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.swing.trackbar.ITrackBar#getDrawStyle()
     */
    public long getDrawStyle()
@@ -205,7 +218,9 @@ public class JTrackBar extends JPanel implements ITrackBar, FocusListener
       return 0;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.swing.trackbar.ITrackBar#setDrawWidth(long)
     */
    public void setDrawWidth(long width)
@@ -214,7 +229,9 @@ public class JTrackBar extends JPanel implements ITrackBar, FocusListener
 
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.swing.trackbar.ITrackBar#getDrawWidth()
     */
    public long getDrawWidth()
@@ -223,7 +240,9 @@ public class JTrackBar extends JPanel implements ITrackBar, FocusListener
       return 0;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.swing.trackbar.ITrackBar#setFillStyle(long)
     */
    public void setFillStyle(long style)
@@ -232,7 +251,9 @@ public class JTrackBar extends JPanel implements ITrackBar, FocusListener
 
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.swing.trackbar.ITrackBar#getFillStyle()
     */
    public long getFillStyle()
@@ -259,7 +280,9 @@ public class JTrackBar extends JPanel implements ITrackBar, FocusListener
 //      return false;
 //   }
 
-      /* (non-Javadoc)
+      
+
+/* (non-Javadoc)
        * @see org.netbeans.modules.uml.ui.swing.trackbar.ITrackBar#setDiagram(org.netbeans.modules.uml.core.metamodel.diagrams.IDiagram)
        */
       public void setDiagram(IDiagram pDiagram)
@@ -268,7 +291,9 @@ public class JTrackBar extends JPanel implements ITrackBar, FocusListener
          
       }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.swing.trackbar.ITrackBar#getDiagram()
     */
    public IDiagram getDiagram()
@@ -282,7 +307,9 @@ public class JTrackBar extends JPanel implements ITrackBar, FocusListener
 
       return scene;
    }
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.swing.trackbar.ITrackBar#initialize()
     */
    public void initialize()
@@ -334,7 +361,9 @@ public class JTrackBar extends JPanel implements ITrackBar, FocusListener
       repaint();
    }
    
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.swing.trackbar.ITrackBar#invalidate(boolean)
     */
    public void invalidate(boolean bErase)
@@ -342,7 +371,9 @@ public class JTrackBar extends JPanel implements ITrackBar, FocusListener
       invalidate(bErase);
    }
 
-   /**
+   
+
+/**
     * Restores the track bar from the product archive (etlp) file.
     *
     * @param pProductArchive [in] The product archive being read in.
@@ -370,7 +401,9 @@ public class JTrackBar extends JPanel implements ITrackBar, FocusListener
       repaint();
    }
 
-   /**
+   
+
+/**
     * Saves the track bar to the product archive (etlp) file.
     *
     * @param pProductArchive [in] The product archive being created.
@@ -396,7 +429,9 @@ public class JTrackBar extends JPanel implements ITrackBar, FocusListener
       }
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.swing.trackbar.ITrackBar#addPresentationElement(org.netbeans.modules.uml.core.metamodel.core.foundation.IPresentationElement)
     */
    public void addPresentationElement(IPresentationElement pPresentationElement)
@@ -446,7 +481,9 @@ public class JTrackBar extends JPanel implements ITrackBar, FocusListener
       return retVal;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.swing.trackbar.ITrackBar#removePresentationElement(org.netbeans.modules.uml.core.metamodel.core.foundation.IPresentationElement)
     */
    public void removePresentationElement(IPresentationElement pPresentationElement)
@@ -478,7 +515,9 @@ public class JTrackBar extends JPanel implements ITrackBar, FocusListener
 //      return false;
 //   }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.swing.trackbar.ITrackBar#preResize(org.netbeans.modules.uml.core.metamodel.core.foundation.IPresentationElement)
     */
    public void preResize(IPresentationElement pPresentationElement)
@@ -487,7 +526,9 @@ public class JTrackBar extends JPanel implements ITrackBar, FocusListener
 
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.swing.trackbar.ITrackBar#resize(org.netbeans.modules.uml.core.metamodel.core.foundation.IPresentationElement)
     */
    public boolean resize(IPresentationElement pPresentationElement)
@@ -537,7 +578,9 @@ public class JTrackBar extends JPanel implements ITrackBar, FocusListener
       return retVal;
    }
 
-   /**
+   
+
+/**
     * Update the name of the car associated with the presentation element
     *
     * @param pPresentationElement The presentation element connected to the
@@ -554,7 +597,9 @@ public class JTrackBar extends JPanel implements ITrackBar, FocusListener
       }
    }
 
-   /**
+   
+
+/**
      * Update the name of the car by using the cars associated presentation 
      * element to retrieve the cars name.
      *
@@ -570,7 +615,9 @@ public class JTrackBar extends JPanel implements ITrackBar, FocusListener
       }
    }
    
-   /**
+   
+
+/**
     * Update all the names of all the track bar cars
     * 
     * @see org.netbeans.modules.uml.ui.swing.trackbar.ITrackBar#updateAllCarNames()
@@ -591,7 +638,9 @@ public class JTrackBar extends JPanel implements ITrackBar, FocusListener
       }
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.swing.trackbar.ITrackBar#expandAssociatedCoupling(org.netbeans.modules.uml.ui.support.applicationmanager.ILabelPresentation)
     */
 //   public void expandAssociatedCoupling(ILabelPresentation pLabelPresentation)
@@ -600,7 +649,9 @@ public class JTrackBar extends JPanel implements ITrackBar, FocusListener
 //
 //   }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.swing.trackbar.ITrackBar#expandCouplings()
     */
    public void expandCouplings()
@@ -609,7 +660,9 @@ public class JTrackBar extends JPanel implements ITrackBar, FocusListener
 
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.swing.trackbar.ITrackBar#onPostScrollZoom()
     */
    public boolean onPostScrollZoom()
@@ -627,7 +680,9 @@ public class JTrackBar extends JPanel implements ITrackBar, FocusListener
       return true;
    }
 
-   /**
+   
+
+/**
     * Layout all the cars by resizing the cars to the size of the 
     * presentation elements
     */
@@ -663,7 +718,9 @@ public class JTrackBar extends JPanel implements ITrackBar, FocusListener
       }
    }
    
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.swing.trackbar.ITrackBar#onKeyDown(short, short)
     */
    public boolean onKeyDown(KeyEvent e)
@@ -672,7 +729,9 @@ public class JTrackBar extends JPanel implements ITrackBar, FocusListener
       return false;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.swing.trackbar.ITrackBar#onKeyUp(short, short)
     */
    public boolean onKeyUp(KeyEvent e)
@@ -681,7 +740,9 @@ public class JTrackBar extends JPanel implements ITrackBar, FocusListener
       return false;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.swing.trackbar.ITrackBar#postLayoutSequenceDiagram()
     */
    public void postLayoutSequenceDiagram() 
@@ -706,7 +767,9 @@ public class JTrackBar extends JPanel implements ITrackBar, FocusListener
                
             if(sortedPresentationElements != null)
             {
-               /*for (Iterator iter = sortedPresentationElements.iterator(); iter.hasNext();)
+               
+
+/*for (Iterator iter = sortedPresentationElements.iterator(); iter.hasNext();)
                {
                   IPresentationElement pe = (IPresentationElement)iter.next();
                }*/
@@ -757,7 +820,9 @@ public class JTrackBar extends JPanel implements ITrackBar, FocusListener
       }
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     */
    public void removePresentationElements(List < IPresentationElement > pPresentationElements)
    {
@@ -896,7 +961,9 @@ public class JTrackBar extends JPanel implements ITrackBar, FocusListener
       return retVal;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see java.awt.Component#getPreferredSize()
     */
     @Override
@@ -943,7 +1010,9 @@ public class JTrackBar extends JPanel implements ITrackBar, FocusListener
       addCar(car, true);
    }
 
-   /**
+   
+
+/**
     * @param car
     */
    public void addCar(TrackCar car, boolean isNewCar)
@@ -973,7 +1042,9 @@ public class JTrackBar extends JPanel implements ITrackBar, FocusListener
       repaint();
    }
    
-   /**
+   
+
+/**
     * @param car
     * @param index
     */
@@ -1042,7 +1113,9 @@ public class JTrackBar extends JPanel implements ITrackBar, FocusListener
       repaint();
    }
 
-   /**
+   
+
+/**
     * @param car
     * @return
     */
@@ -1070,7 +1143,9 @@ public class JTrackBar extends JPanel implements ITrackBar, FocusListener
       return retVal;
    }
 
-   /**
+   
+
+/**
     * @return
     */
 //   public IDiagramEngine getDiagramEngine()
@@ -1078,7 +1153,9 @@ public class JTrackBar extends JPanel implements ITrackBar, FocusListener
 //      return m_DiagramEngine;
 //   }
 
-   /**
+   
+
+/**
     * @param engine
     */
 //   public void setDiagramEngine(IDiagramEngine engine)
@@ -1132,7 +1209,9 @@ public class JTrackBar extends JPanel implements ITrackBar, FocusListener
 
    public class TrackBarMouseListener extends MouseInputAdapter
    {
-      /* (non-Javadoc)
+      
+
+/* (non-Javadoc)
        * @see java.awt.event.MouseListener#mousePressed(java.awt.event.MouseEvent)
        */
         @Override
@@ -1144,7 +1223,9 @@ public class JTrackBar extends JPanel implements ITrackBar, FocusListener
          }
       }
 
-      /* (non-Javadoc)
+      
+
+/* (non-Javadoc)
       * @see java.awt.event.MouseListener#mouseReleased(java.awt.event.MouseEvent)
       */
         @Override

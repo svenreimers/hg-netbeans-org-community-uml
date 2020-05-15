@@ -42,6 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
+
+
 /*
  * ISCMFactory.java
  *
@@ -52,13 +54,15 @@ package org.netbeans.modules.uml.core.scm;
 
 import org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.IFacility;
 
+
 /**
  * The SCM facility that plugs into the facilitiy manager.
  *
  */
 public interface ISCMFactory extends IFacility
 {
-   /**
+   
+/**
     * Retrieves the ISCMTool by name. The name matches the value in the
     * FacilityConfig.etc file.
     *

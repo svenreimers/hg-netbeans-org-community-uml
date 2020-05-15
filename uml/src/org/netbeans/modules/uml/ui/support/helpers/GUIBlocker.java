@@ -77,7 +77,9 @@ public class GUIBlocker implements IGUIBlocker
       // TODO m_ProjectTreeRefreshBlocker = 0;
    }
    
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.helpers.IGUIBlocker#getKind()
     */
    public int getKind()
@@ -85,7 +87,9 @@ public class GUIBlocker implements IGUIBlocker
       return m_Kind;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.helpers.IGUIBlocker#setKind(long)
     */
    public void setKind(int newVal)
@@ -93,6 +97,8 @@ public class GUIBlocker implements IGUIBlocker
       m_Kind |= newVal;
 
       clearBlockers();
+
+
 /* TODO
       if ( (m_Kind & GBK.DIAGRAM_DELAYEDACTION) == GBK.DIAGRAM_DELAYEDACTION)
       {
@@ -139,6 +145,8 @@ public class GUIBlocker implements IGUIBlocker
       {
          m_userInputBlockers.add( new UserInputBlocker(GBK.DIAGRAM_INVALIDATE) );
       }
+
+
 /* TODO
       if ( (m_Kind & GBK.PROJECT_TREE_DRAWING) == GBK.PROJECT_TREE_DRAWING)
       {
@@ -169,7 +177,9 @@ public class GUIBlocker implements IGUIBlocker
 */
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.helpers.IGUIBlocker#setDiagramContext(org.netbeans.modules.uml.core.metamodel.diagrams.IDiagram)
     */
    public void setDiagramContext(IDiagram diagram)
@@ -178,13 +188,17 @@ public class GUIBlocker implements IGUIBlocker
    }
    
   
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.helpers.IGUIBlocker#getKindIsBlocked(long)
     */
    public boolean getKindIsBlocked(int kinds)
    {
       boolean bAnyBlocked = false;
       
+
+
 /* TODO
       if ( (kinds & GBK.DIAGRAM_DELAYEDACTION) == GBK.DIAGRAM_DELAYEDACTION)
       {
@@ -219,6 +233,8 @@ public class GUIBlocker implements IGUIBlocker
       {
          bAnyBlocked |= (UserInputBlocker.getIsDisabled(GBK.DIAGRAM_TRACK_CARS) != false);
       }
+
+
 /* TODO
       if ( (kinds & GBK.PROJECT_TREE_DRAWING) == GBK.PROJECT_TREE_DRAWING)
       {
@@ -236,11 +252,15 @@ public class GUIBlocker implements IGUIBlocker
    }
 
 
-   /**
+   
+
+/**
     * Deletes our blocker and initializes the memory to zero.
     */
    public void clearBlockers()
    {
+
+
 /* TODO
       delete m_DelayedActionBlocker;
       m_DelayedActionBlocker = 0;
@@ -261,6 +281,8 @@ public class GUIBlocker implements IGUIBlocker
           //TODO: meteora, do we need this?
 //         m_diagram.pumpMessages(false);
       }
+
+
 
 /* TODO
       m_DesignCenterTreeUpdateLocker = 0;

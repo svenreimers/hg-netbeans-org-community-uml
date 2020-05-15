@@ -154,7 +154,7 @@ public class DomainTemplatesRetriever
             if (stereotype != null && stereotype.length() > 0)
                 key += ":" + stereotype;
             
-            // all templates, no matter which family they are in 
+            
             // (Java, C++, etc.) will be added under this key
             if (key != null && templates != null & templates.size() > 0)
             {
@@ -182,7 +182,7 @@ public class DomainTemplatesRetriever
         ETList<String> stereotypes = element.getAppliedStereotypesAsString();
         
         // Interface elements are also marked with the stereotype <<interface>>
-        // but we don't need the extra demarcation so remove it from the list
+        
         // of stereotypes it may have.
         if (eleType.equals("Interface") && 
             stereotypes != null && stereotypes.size() > 0)

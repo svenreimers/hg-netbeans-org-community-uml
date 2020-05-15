@@ -43,6 +43,8 @@
  */
 
 
+
+
 /*
  * Created on May 22, 2003
  *
@@ -76,7 +78,9 @@ public class ProjectTreeModel implements TreeModel
 		initializeXPaths(doc);
 	}
 	
-   /**
+   
+
+/**
     * 
     */
    private void initializeXPaths(Document doc)
@@ -89,7 +93,9 @@ public class ProjectTreeModel implements TreeModel
 		m_NamespaceQuery = doc.createXPath(nQuery);
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see javax.swing.tree.TreeModel#getRoot()
     */
    public Object getRoot()
@@ -97,7 +103,9 @@ public class ProjectTreeModel implements TreeModel
       return m_Project;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see javax.swing.tree.TreeModel#getChild(java.lang.Object, int)
     */
    public Object getChild(Object parent, int index)
@@ -113,7 +121,9 @@ public class ProjectTreeModel implements TreeModel
       return retVal;
    }
    
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see javax.swing.tree.TreeModel#getChildCount(java.lang.Object)
     */
    public int getChildCount(Object parent)
@@ -129,7 +139,9 @@ public class ProjectTreeModel implements TreeModel
       return retVal;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see javax.swing.tree.TreeModel#isLeaf(java.lang.Object)
     */
    public boolean isLeaf(Object node)
@@ -145,7 +157,9 @@ public class ProjectTreeModel implements TreeModel
       return retVal;
    }
    
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see javax.swing.tree.TreeModel#getIndexOfChild(java.lang.Object, java.lang.Object)
 	 */
 	public int getIndexOfChild(Object parent, Object child)
@@ -153,7 +167,9 @@ public class ProjectTreeModel implements TreeModel
 		return 0;
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see javax.swing.tree.TreeModel#addTreeModelListener(javax.swing.event.TreeModelListener)
 	 */
 	public void addTreeModelListener(TreeModelListener l)
@@ -161,7 +177,9 @@ public class ProjectTreeModel implements TreeModel
 		
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see javax.swing.tree.TreeModel#removeTreeModelListener(javax.swing.event.TreeModelListener)
 	 */
 	public void removeTreeModelListener(TreeModelListener l)
@@ -173,7 +191,9 @@ public class ProjectTreeModel implements TreeModel
    // Data Getter and Setters
    //**************************************************************
    
-   /**
+   
+
+/**
     * @return
     */
    public Element getProject()
@@ -181,7 +201,9 @@ public class ProjectTreeModel implements TreeModel
       return m_Project;
    }
 
-   /**
+   
+
+/**
     * @param document
     */
    public void setProject(Document document)
@@ -190,7 +212,9 @@ public class ProjectTreeModel implements TreeModel
 		setProject((Element)document.selectSingleNode("//UML:Project"));
    }
    
-	/**
+	
+
+/**
 	 * @param document
 	 */
 	public void setProject(Element projectNode)
@@ -198,7 +222,9 @@ public class ProjectTreeModel implements TreeModel
 		m_Project = projectNode;
 	}
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see javax.swing.tree.TreeModel#valueForPathChanged(javax.swing.tree.TreePath, java.lang.Object)
     */
    public void valueForPathChanged(TreePath path, Object newValue)

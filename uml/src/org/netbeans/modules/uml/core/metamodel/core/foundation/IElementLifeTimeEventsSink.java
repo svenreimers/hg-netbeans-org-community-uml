@@ -47,32 +47,44 @@ package org.netbeans.modules.uml.core.metamodel.core.foundation;
 import org.netbeans.modules.uml.core.support.umlsupport.IResultCell;
 public interface IElementLifeTimeEventsSink
 {
-	/**
+	
+
+/**
 	 * Fired whenever an element is about to be created.
 	*/
 	public void onElementPreCreate( String ElementType, IResultCell cell );
 
-	/**
+	
+
+/**
 	 * Fired whenever after an element is created.
 	*/
 	public void onElementCreated( IVersionableElement element, IResultCell cell );
 
-	/**
+	
+
+/**
 	 * Fired whenever an element is about to be deleted.
 	*/
 	public void onElementPreDelete( IVersionableElement element, IResultCell cell );
 
-	/**
+	
+
+/**
 	 * Fired after an element has been deleted.
 	*/
 	public void onElementDeleted( IVersionableElement element, IResultCell cell );
 
-	/**
+	
+
+/**
 	 * Fired whenever an element is about to be duplicated.
 	*/
 	public void onElementPreDuplicated( IVersionableElement element, IResultCell cell );
 
-	/**
+	
+
+/**
 	 * Fired after an element has been duplicated.
 	*/
 	public void onElementDuplicated( IVersionableElement element, IResultCell cell );

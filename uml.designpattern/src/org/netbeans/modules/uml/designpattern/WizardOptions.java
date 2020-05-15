@@ -134,7 +134,9 @@ public class WizardOptions extends WizardInteriorPage {
 	}
 
 
-	/**
+	
+
+/**
 	 * Called when dialog is initialized
 	 *
 	 *
@@ -150,7 +152,9 @@ public class WizardOptions extends WizardInteriorPage {
 
 		return true; // return TRUE unless you set the focus to a control
 	}
-	/**
+	
+
+/**
 	 * Called when the user clicks back
 	 *
 	 *
@@ -165,7 +169,9 @@ public class WizardOptions extends WizardInteriorPage {
 		}
 		super.onWizardBack();
 	}
-	/**
+	
+
+/**
 	 * Called when the user clicks next
 	 *
 	 *
@@ -203,7 +209,9 @@ public class WizardOptions extends WizardInteriorPage {
 			DesignPatternUtilities.displayErrorMessage(m_Wizard, msg);
 		}
 	}
-	/**
+	
+
+/**
 	 * Performs page validations -
 	 *
 	 *
@@ -251,7 +259,9 @@ public class WizardOptions extends WizardInteriorPage {
 			m_DiagramName.setEnabled(false);
 		}
 	}
-	/**
+	
+
+/**
 	 * Populate the diagram name edit box
 	 *
 	 * @return HRESULT

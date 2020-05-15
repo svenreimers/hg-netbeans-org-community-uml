@@ -54,7 +54,9 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.OwnerRetriever;
 public class OutputPin extends Pin implements IOutputPin
 {
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.basic.basicactions.IOutputPin#getAction()
      */
     public IAction getAction()
@@ -62,7 +64,9 @@ public class OutputPin extends Pin implements IOutputPin
 		return OwnerRetriever.getOwnerByType(this, IAction.class);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.basic.basicactions.IOutputPin#setAction(org.netbeans.modules.uml.core.metamodel.basic.basicactions.IAction)
      */
     public void setAction(IAction value)

@@ -42,11 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : AddVariableValueAction.java
- * Created on : Sep 17, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.metamodel.common.commonactions;
 
 import org.dom4j.Document;
@@ -61,7 +58,8 @@ public class AddVariableValueAction
     implements IAddVariableValueAction
 {
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactions.IAddAttributeValueAction#getInsertAt()
      */
     public IInputPin getInsertAt()
@@ -71,7 +69,9 @@ public class AddVariableValueAction
 
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactions.IAddAttributeValueAction#getIsReplaceAll()
      */
     public boolean getIsReplaceAll()
@@ -79,7 +79,9 @@ public class AddVariableValueAction
         return getBooleanAttributeValue("isReplaceAll", true);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactions.IAddAttributeValueAction#setInsertAt(org.netbeans.modules.uml.core.metamodel.basic.basicactions.IInputPin)
      */
     public void setInsertAt(IInputPin inputPin)
@@ -87,7 +89,9 @@ public class AddVariableValueAction
         addInput(inputPin);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactions.IAddAttributeValueAction#setIsReplaceAll(boolean)
      */
     public void setIsReplaceAll(boolean isReplaceAll)

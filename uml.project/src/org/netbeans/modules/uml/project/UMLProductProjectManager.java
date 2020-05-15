@@ -42,6 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
+
+
 /*
  * UMLProductProjectManager.java
  *
@@ -137,7 +139,9 @@ public class UMLProductProjectManager implements IProductProjectManager {
         
     }
     
-    /**
+    
+
+/**
      * Inserts the argument project into the passed in IWorkspace
      */
     private boolean insertProjectIntoWorkspace(IWorkspace pWorkspace, IProject pProject) {
@@ -199,7 +203,9 @@ public class UMLProductProjectManager implements IProductProjectManager {
 		}
     }
     
-    /**
+    
+
+/**
      * Tells the IADApplication to create a new project.
      *
      * @param pFilename [in] The details about the new project
@@ -226,7 +232,9 @@ public class UMLProductProjectManager implements IProductProjectManager {
         return proj;
     }
     
-    /**
+    
+
+/**
      * After a project we need to question the user about creating a new diagram.  The
      * INewDialogProjectDetails can specify that whether or not to question the user.
      *
@@ -242,7 +250,7 @@ public class UMLProductProjectManager implements IProductProjectManager {
             
             if (promptUser) {
                 
-                    //Kris Richards - options no longer available. Default to yes.
+                    
                     //String prefVal = prefMan.getPreferenceValue("NewProject", "QueryForNewDiagram");                   
                         // Query the user for a new diagram
                         INamespace space = null;

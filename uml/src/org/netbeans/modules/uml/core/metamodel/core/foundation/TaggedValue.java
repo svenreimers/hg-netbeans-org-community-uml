@@ -52,6 +52,8 @@ import org.dom4j.Text;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 
+
+
 /**
 * TaggedValueImpl is the implementation of the UML
 * TaggedValue meta type.
@@ -70,14 +72,18 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 */ 
 public class TaggedValue extends NamedElement implements ITaggedValue{
 
-	/**
+	
+
+/**
 	 * 
 	 */
 	public TaggedValue() {
 		super();
 	}
 
-	/**
+	
+
+/**
 	 * Retrieves the collection of String objects that make up the datavalues
 	 * of this TaggedValue.
 	 *
@@ -126,7 +132,9 @@ public class TaggedValue extends NamedElement implements ITaggedValue{
 		return value;
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Sets the value of this tagged value.
 	 *
@@ -145,7 +153,9 @@ public class TaggedValue extends NamedElement implements ITaggedValue{
 		}
 	}
 
-	/**
+	
+
+/**
 	 * Retrieves the NamedElement that this TaggedValue is
 	 * association with.
 	 *
@@ -160,7 +170,9 @@ public class TaggedValue extends NamedElement implements ITaggedValue{
 		return retrieveSingleElementWithAttrID( "NamedElement", dummy, INamedElement.class );
 	}
 
-	/**
+	
+
+/**
 	 * Sets the model element that this TaggedValue is associated with.
 	 *
 	 * @param owner[in] The element this tag is associated with
@@ -175,7 +187,9 @@ public class TaggedValue extends NamedElement implements ITaggedValue{
 		
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Sets the owner of the tag based on the ID passed in.
 	 *
@@ -187,7 +201,9 @@ public class TaggedValue extends NamedElement implements ITaggedValue{
 		setAttributeValue( "NamedElement", ownerID );
 	}
 
-	/**
+	
+
+/**
 	 * Retrieves the collection of NamedElements that make up the datavalues
 	 * of this TaggedValue.
 	 *
@@ -209,7 +225,9 @@ public class TaggedValue extends NamedElement implements ITaggedValue{
       return retrieveElementCollection(dummy, "UML:TaggedValue.dataValue/*", INamedElement.class);
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Populates this TaggedValue with a simple name and one dataValue. The resultant
 	 * XMI fragment looks like this when done, assuming "hello" and "Here's the value."
@@ -245,7 +263,9 @@ public class TaggedValue extends NamedElement implements ITaggedValue{
 		}
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Determines whether or not the TaggedValue is displayed in the GUI.
 	 *
@@ -263,7 +283,9 @@ public class TaggedValue extends NamedElement implements ITaggedValue{
 		return getBooleanAttributeValue("hidden", false);
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Creates the actual TaggedValue node in the DOM tree.
 	 *
@@ -278,7 +300,9 @@ public class TaggedValue extends NamedElement implements ITaggedValue{
 	   buildNodePresence("UML:TaggedValue", doc, parent );
 	}
 
-	/**
+	
+
+/**
 	 * Validate the passed in values according to the Describe business rules.
 	 * See method for the rules.
 	 *

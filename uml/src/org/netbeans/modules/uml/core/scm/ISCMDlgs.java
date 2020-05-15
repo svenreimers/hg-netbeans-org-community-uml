@@ -42,6 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
+
+
 /*
  * ISCMDlgs.java
  *
@@ -118,20 +120,26 @@ public interface ISCMDlgs
    /** Sets the options object. */
    public void setOptions(ISCMOptions newVal);
 
-   /**
+   
+
+/**
     * Show the dialog.  The parent of the window will be determined by using
     * the IProxyUserInterface implementation.
     */
    public boolean showDlg();
 
-   /**
+   
+
+/**
     * Show the dialog.
     *
     * @param hWnd The parent of the SCM dialog.
     */
    public boolean showDlg(Frame hWnd);
 
-   /**
+   
+
+/**
     * Gets the dialog enumeration type.  The dialog type will be one of the
     * SCMFeatureKind values.
     *
@@ -139,7 +147,9 @@ public interface ISCMDlgs
     */
    public int getDlgType();
 
-   /**
+   
+
+/**
     * Sets the dialog enumeration type. The dialog type must be one of the
     * SCMFeatureKind values.
     */

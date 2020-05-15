@@ -106,7 +106,9 @@ public class XSLTHelper //implements IXSLTHelper
       return retVal;
    }
    
-   /**
+   
+
+/**
     * Retrieves the value found at the xpath in the passed in node/nodes.  If it is
     * a list, then the values are appended in a "|" delimited string.
     *
@@ -171,7 +173,9 @@ public class XSLTHelper //implements IXSLTHelper
       }
       return str;
    }
-   /**
+   
+
+/**
     * Retrieves the value found at the xpath in the passed in node/nodes.  If it is
     * a list, then the values are appended in a "|" delimited string.
     *
@@ -260,7 +264,9 @@ public class XSLTHelper //implements IXSLTHelper
       }
       return str;
    }
-   /**
+   
+
+/**
     * Executes the passed in expansion variable on the node/nodes and returns the result
     * of the expansion variable.
     *
@@ -310,7 +316,7 @@ public class XSLTHelper //implements IXSLTHelper
                else if(pDisp instanceof DTMNodeProxy)
                {
                   // This will cause a exception.  I want it to be thrown so we
-                  // can handle the formating via the next formatting attempt.
+                  
                   str  = pTemplateMgr.expandVariableWithNode(sVar, new Dom4JNodeProxy((DTMNodeProxy)pDisp));
                }
             }
@@ -324,7 +330,9 @@ public class XSLTHelper //implements IXSLTHelper
       return str;
    }
    
-   /**
+   
+
+/**
     * Retrieves the value for the passed in preference
     *
     * @param sPref[in]			The full path to the preference in the preference file
@@ -448,7 +456,7 @@ public class XSLTHelper //implements IXSLTHelper
    }
    public static String createWebReportHeading(Object pDisp, String sTitles, String sPaths)
    {
-      String message=org.openide.util.NbBundle.getMessage(XSLTHelper.class,"Details"); //Jyothi: Fix for Bug#6324300
+      String message=org.openide.util.NbBundle.getMessage(XSLTHelper.class,"Details"); 
       String str = "<a href=\"#Details\">" + message + "</a>";
 
       try
@@ -545,16 +553,8 @@ public class XSLTHelper //implements IXSLTHelper
                             }
                             pFormatter.addScript(key, xslFile);
                             str = pFormatter.formatNode(w3cNode, key);
-                         /* 6.2 release
-                         ILanguage pLang = pFormatter.getActiveLanguage(w3cNode);
-                         if (pLang != null)
-                         {
-                            String langName = pLang.getName();
-                            key += langName;
-                            pFormatter.addScript(key, xslFile);
-                            str = pFormatter.formatNodeW3C(w3cNode, key);
-                         }
-                          */
+                         
+
                          }
                       }
                       // going to break after the first one (should only be one)
@@ -579,20 +579,12 @@ public class XSLTHelper //implements IXSLTHelper
                          }
                          pFormatter.addScript(key, xslFile);
                          str = pFormatter.formatNode(node, key);
-                         /* 6.2 release
-                         ILanguage pLang = pFormatter.getActiveLanguage(w3cNode);
-                         if (pLang != null)
-                         {
-                            String langName = pLang.getName();
-                            key += langName;
-                            pFormatter.addScript(key, xslFile);
-                            str = pFormatter.formatNodeW3C(w3cNode, key);
-                         }
-                          */
+                         
+
                      }
                  }
                 // This will cause a exception.  I want it to be thrown so we
-                // can handle the formating via the next formatting attempt.
+                
     //            str  = pTemplateMgr.expandVariableWithNode(sVar, );
              }
           }
@@ -979,7 +971,9 @@ public class XSLTHelper //implements IXSLTHelper
       }
       return bFlag;
    }
-  /*
+  
+
+/*
    * Special processing to take information from the xsl scripts and return it in a string format so that
    * the xsl script can process it.  We were using convertIDListToNodeList in the scripts but refer to bug
    * 2211 or 2507 to see why we switched to using this.  It has to do with the xml parser that we are using
@@ -1058,19 +1052,8 @@ public class XSLTHelper //implements IXSLTHelper
       }
       return str;
    }
-  /*
-   * Special processing to take information from the xsl scripts and return it in a string format so that
-   * the xsl script can process it.  We were using convertIDListToNodeList in the scripts but refer to bug
-   * 2211 or 2507 to see why we switched to using this.  It has to do with the xml parser that we are using
-   * and whether or not the doctype dtd is commented out in our etd file.  If it is commented out, then
-   * the convertIDListToNodeList throws an exception and the script is not processed.  This routine is
-   * the workaround.
-   *
-   * pDisp  - the current xml node in the xsl processor
-   * idList - the list of xmi ids to convert to nodes and return their "names" and href links in string format
-   * bFlatDir - a flag set by the web report whether or not the user is generating the report by package structure or not
-   * attrName - the name of the attribute to use its value when doing the string formatting for the xsl
-   */
+  
+
    public static String convertIDListToStringListAttribute(Object pDisp, String idList, String bFlatDir, String attrName)
    {
       String str = null;

@@ -43,11 +43,8 @@
  */
 
 
-/*
- * File       : InterfaceStateHandler.java
- * Created on : Dec 11, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.statehandlers;
 
 import org.dom4j.Node;
@@ -72,7 +69,9 @@ public class InterfaceStateHandler extends ClassStateHandler
         this(language, packageName, false);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.statehandlers.StateHandler#initialize()
      */
     public void initialize()
@@ -112,7 +111,9 @@ public class InterfaceStateHandler extends ClassStateHandler
     
     
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.statehandlers.StateHandler#stateComplete(java.lang.String)
      */
     public void stateComplete(String stateName)
@@ -120,7 +121,9 @@ public class InterfaceStateHandler extends ClassStateHandler
         super.stateComplete(stateName);
     }
 
-    /**
+    
+
+/**
      * Create a new state handler to be added to the state mechanism.  If the
      * state is not a state that is being processed then a new state handler is 
      * not created.  The states of interest is <code>Expression List</code>
@@ -143,7 +146,7 @@ public class InterfaceStateHandler extends ClassStateHandler
 	    // an interface attribute is static final in Java even in the absense 
 	    // of explicit modifiers stating that, whereis static final 
 	    // characteristics of the attribute in the model is rather the 
-	    // characteristics of the attribute, not characterictics of 
+	    
 	    // the source code it was REd from
 	    if (language != null && language.equalsIgnoreCase("Java")) 
 	    {

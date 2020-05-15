@@ -43,6 +43,7 @@
  */
 
 
+
 /*
  *
  * Created on Jun 2, 2003
@@ -56,26 +57,30 @@ import org.netbeans.modules.uml.core.metamodel.structure.IProject;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 import org.netbeans.modules.uml.core.workspacemanagement.IWorkspace;
 
+
 /**
  * 
  */
 public interface IProjectTreeModel
 {
-   /**
+   
+/**
     * Adds a listener for the TreeModelEvent posted after the tree changes.
     * 
     * @param listener The lisener to add.
     */
    public void addProjectTreeModelListener(IProjectTreeModelListener listener);
    
-   /**
+   
+/**
     * Removes a listener previously added with <code>addProjectTreeModelListener</code>
     * 
     * @param listener The listener to remove.
     */
    public void removeProjectTreeModelListener(IProjectTreeModelListener listener);
    
-   /**
+   
+/**
     * Returns the child of parent at a given index in the parent's child  
     * array.  parent must be a node previously obtained from this data source.  
     * This  should not return null if index is a valid index for parent (that is 
@@ -87,7 +92,9 @@ public interface IProjectTreeModel
     */
 	public ITreeItem getChildItem(Object parent, int index);
 	
-	/**
+	
+
+/**
     * Returns the number of children of parent. Returns 0 if the node is a leaf 
     * or if it has no children. parent must be a ITreeItem previously obtained 
     * from this data source. 
@@ -97,7 +104,9 @@ public interface IProjectTreeModel
 	 */
 	public int getChildCount(Object parent);
 	
-	/**
+	
+
+/**
     * Returns <code>true</code> if node is a leaf. It is possible for this 
     * method to return <code>false</code> even if node has no children. A 
     * directory in a filesystem, for example, may contain no files; the node 
@@ -108,7 +117,9 @@ public interface IProjectTreeModel
 	 */
 	public boolean isLeaf(Object node);
 	
-	/**
+	
+
+/**
 	 * Retrieves the workspace that the project tree is associated
 	 * with.
 	 * 
@@ -116,21 +127,27 @@ public interface IProjectTreeModel
 	 */
 	public IWorkspace getWorkspace();
 
-   /**
+   
+
+/**
     * Retrieve the tree's root item.
     * 
     * @return The root item.
     */
    public ITreeItem getRootItem();
    
-   /**
+   
+
+/**
     * Returns an ITreeItem representing Diagrams root node in the given project  
     * tree if the node exists; otherwise, null is returned.
     * @return ITreeItem representing the Diagrams root node or null if not found
     */
    public ITreeItem getDiagramsRootNode (IProject project);
    
-   /**
+   
+
+/**
     * Determins if a given node is under the Model root node; if yes, the 
     * parent Mode root node of the given node is returned; else, null is returned.
     * @param node
@@ -155,7 +172,9 @@ public interface IProjectTreeModel
                                    Object    supportTreeItem,
                                    String    description);
    
-   /**
+   
+
+/**
     * Apends the node to the end of the parents child list.
     * 
     * @param parent The parent to recieve the new node.
@@ -163,7 +182,9 @@ public interface IProjectTreeModel
     */
    public void addItem(ITreeItem parent, ITreeItem node);
    
-   /**
+   
+
+/**
     * Inserts the new node into the parent child list at a specified location.
     * The notifyOfAddedChildren will be sent after the node is added.
     * 
@@ -176,14 +197,18 @@ public interface IProjectTreeModel
 //   public void insertItem(ITreeItem parent, ITreeItem node, int index);
    
    
-   /**
+   
+
+/**
     * Remove all instances of the model element from the tree.
     * 
     * @param element The element to remove.
     */
    public void removeAll(IElement element);
    
-   /** 
+   
+
+/** 
     * Remove the specified node from its parent node.  All model listeners will
     * be notified of the change.
     * 
@@ -191,7 +216,9 @@ public interface IProjectTreeModel
     */
    public void removeNodeFromParent(ITreeItem node);
       
-   /**
+   
+
+/**
     * The IProject will be associated to the node that represents the IWSProject
     * element.
     * 
@@ -200,12 +227,16 @@ public interface IProjectTreeModel
     */
    public ITreeItem projectOpened(IProject pProject);
    
-   /**
+   
+
+/**
     * Clears the content of the model.  This basically a refresh.
     */
    public void clear();
    
-   /**
+   
+
+/**
     * Retrieves the index of a child node.  
     * 
     * @param parent The parent of the child node.
@@ -216,7 +247,9 @@ public interface IProjectTreeModel
     */
    public int getIndexOfChild(ITreeItem parent, ITreeItem child);
    
-   /**
+   
+
+/**
     * Sorts the children of a node.  The children will be sorted occuring to
     * the default sort order.
     * 
@@ -224,7 +257,9 @@ public interface IProjectTreeModel
     */
    public void sortChildren(ITreeItem parent);
    
-   /**
+   
+
+/**
     * Sorts the children of a node.  The children will be sorted occuring to
     * the Comparable interface.
     * 
@@ -234,7 +269,9 @@ public interface IProjectTreeModel
     */
    public void sortChildren(ITreeItem parent, Comparator compare);
    
-   /**
+   
+
+/**
     * Locates the nodes that represents the model element.
     * 
     * @param element The model element to locate.
@@ -243,7 +280,9 @@ public interface IProjectTreeModel
     */
    public ETList < ITreeItem > findNodes(IElement element);
    
-   /**
+   
+
+/**
     * Locates the nodes that represents the diagram.
     * 
     * @param filename The name of the file that specifies the diagram.
@@ -252,7 +291,9 @@ public interface IProjectTreeModel
     */
    public ETList < ITreeItem > findDiagramNodes(String filename);
    
-   /**
+   
+
+/**
     * Locates the nodes that represents the model element.
     * 
     * @param element The model element to locate.
@@ -261,7 +302,9 @@ public interface IProjectTreeModel
     */
    public ETList < ITreeItem > findNodes(Comparator < ITreeItem > comparator );
    
-   /**
+   
+
+/**
     * Notifies all listeners that some of the nodes structure has changed.  
     * The mannor that the controls are notified is specific to the platform.
     * <br>
@@ -272,7 +315,9 @@ public interface IProjectTreeModel
     */
    public void notifyOfStructureChange(ETList < ITreeItem > items);
    
-   /**
+   
+
+/**
     * Notifies all listeners that a child was removed from its parent.  
     * The mannor that the controls are notified is specific to the platform.
     * <br>
@@ -287,7 +332,9 @@ public interface IProjectTreeModel
                                        int[]       childIndices, 
                                        ITreeItem[] children);
                                        
-   /**
+   
+
+/**
     * Notifies all listeners that a child was added to a parent.  
     * The mannor that the controls are notified is specific to the platform.
     * <br>
@@ -299,10 +346,14 @@ public interface IProjectTreeModel
     * @param children The children nodes that was added.
     */
    public void notifyOfAddedChildren(ITreeItem   parent, 
-                                     int[]       childIndices/*, 
+                                     int[]       childIndices
+
+/*, 
                                      ITreeItem[] children*/);
                                      
-   /**
+   
+
+/**
     * Notifies all listeners that the content of some nodes has changed.  
     * The mannor that the controls are notified is specific to the platform.
     * <br>
@@ -317,7 +368,9 @@ public interface IProjectTreeModel
                                     int[]       childIndices, 
                                     ITreeItem[] nodes);
    
-   /**
+   
+
+/**
     * Test if it is OK to delete a tree item.
     * 
     * @param item The item to test.
@@ -326,7 +379,9 @@ public interface IProjectTreeModel
     */
    public boolean canDelete(IProjectTreeItem item);
    
-   /**
+   
+
+/**
 	* Test if it is OK to edit a tree item.
 	* 
 	* @param item The item to test.
@@ -335,7 +390,9 @@ public interface IProjectTreeModel
 	*/
    public boolean canEdit(IProjectTreeItem item);
 
-   /**
+   
+
+/**
     * Retrieves the node factory to use when creating nodes for the model.
     * 
     * @return The factory to use.
@@ -343,12 +400,16 @@ public interface IProjectTreeModel
    public ProjectTreeNodeFactory getNodeFactory();
    
    
-   /**
+   
+
+/**
     * Retreives the name of the model.
     */
    public String getModelName();
    
-   /**
+   
+
+/**
     * Fires an event when a given tree node is expanded
     * 
     * @param item The item to be expanded.

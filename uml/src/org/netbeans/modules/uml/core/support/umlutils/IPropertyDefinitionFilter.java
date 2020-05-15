@@ -48,32 +48,44 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.IElement;
 
 public interface IPropertyDefinitionFilter
 {
-	/**
+	
+
+/**
 	 * Filter the element based on properties for the IElement underneath it, assumes the language on the model element
 	*/
 	public long filterPropertyElement( IPropertyElement pEle );
 
-	/**
+	
+
+/**
 	 * Filter the element based on properties for the IElement underneath it and the language passed in
 	*/
 	public long filterPropertyElementBasedOnLanguage( IPropertyElement pEle, String sLang );
 
-	/**
+	
+
+/**
 	 * Filter the element based on properties for the passed in model element
 	*/
 	public long filterPropertyElementBasedOnModelElement( IPropertyElement pEle, IElement pElement );
 
-	/**
+	
+
+/**
 	 * The xml file that contains the filter information
 	*/
 	public String getFilterFile();
 
-	/**
+	
+
+/**
 	 * The xml file that contains the filter information
 	*/
 	public void setFilterFile( String value );
 
-	/**
+	
+
+/**
 	 * Filter the element based on the filter with the passed in name
 	*/
 	public long filterPropertyElementBasedOnFilterName( IPropertyElement pEle, String sName );

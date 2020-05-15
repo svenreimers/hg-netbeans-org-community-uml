@@ -48,6 +48,8 @@ package org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructur
 import org.netbeans.modules.uml.core.AbstractUMLTestCase;
 import org.netbeans.modules.uml.core.metamodel.core.constructs.IClass;
 
+
+
 /**
  * Test cases for NavigableEnd.
  */
@@ -62,7 +64,9 @@ public class NavigableEndTestCase extends AbstractUMLTestCase
     private IClass first, second;
     private IAssociation assoc;
         
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see junit.framework.TestCase#setUp()
      */
     protected void setUp() throws Exception
@@ -77,7 +81,9 @@ public class NavigableEndTestCase extends AbstractUMLTestCase
         nav = assoc.getEnds().get(0).makeNavigable();
     }
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see junit.framework.TestCase#tearDown()
      */
     protected void tearDown() throws Exception

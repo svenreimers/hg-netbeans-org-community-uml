@@ -141,7 +141,9 @@ public abstract class TrackItem extends JComponent implements Accessible
       m_Bar = bar;
    }
 
-   /**
+   
+
+/**
     * Restores the state of this track item from the archive ( etlp file).  
     * Right now this routine does nothing.
     */
@@ -149,7 +151,9 @@ public abstract class TrackItem extends JComponent implements Accessible
    {
    }
    
-   /**
+   
+
+/**
     * Saves the state of this track item to the archive ( etlp file).  Right now
     * this routine does nothing.
     */
@@ -161,7 +165,9 @@ public abstract class TrackItem extends JComponent implements Accessible
    // Data Access Methods
    //**************************************************
 
-   /**
+   
+
+/**
     * @return
     */
    public TrackItem getNextItem()
@@ -169,7 +175,9 @@ public abstract class TrackItem extends JComponent implements Accessible
       return m_NextItem;
    }
 
-   /**
+   
+
+/**
     * @param item
     */
    public void setNextItem(TrackItem item)
@@ -177,7 +185,9 @@ public abstract class TrackItem extends JComponent implements Accessible
       m_NextItem = item;
    }
 
-   /**
+   
+
+/**
     * @return
     */
    public TrackItem getPreviousItem()
@@ -185,7 +195,9 @@ public abstract class TrackItem extends JComponent implements Accessible
       return m_PreviousItem;
    }
 
-   /**
+   
+
+/**
     * @param item
     */
    public void setPreviousItem(TrackItem item)
@@ -193,7 +205,9 @@ public abstract class TrackItem extends JComponent implements Accessible
       m_PreviousItem = item;
    }
 
-   /**
+   
+
+/**
     * @param xDelta
     */
    public void push(int xDelta)
@@ -205,7 +219,9 @@ public abstract class TrackItem extends JComponent implements Accessible
    	}
    }
 
-   /**
+   
+
+/**
     * @param xDelta
     */
    public void updateContraints(int xDelta)
@@ -216,7 +232,9 @@ public abstract class TrackItem extends JComponent implements Accessible
    // Helper Methods
    //**************************************************
 
-   /**
+   
+
+/**
     * Determine the size of this item.  The height and top of the item will be 
     * set after the limitBoundingRect is called.
     * 
@@ -272,7 +290,9 @@ public abstract class TrackItem extends JComponent implements Accessible
       return retVal;
    }
 
-   /**
+   
+
+/**
     * Checks if both sides of this track item has the same neighbors are the 
     * same neighbors as the item that is passed in.
     * 
@@ -294,7 +314,9 @@ public abstract class TrackItem extends JComponent implements Accessible
       return retVal;
    }
 
-   /**
+   
+
+/**
     * Copies the track item attributes.  This implementaion does not copy any
     * attributes since TrackItems do not have attributes. 
     * 
@@ -305,7 +327,9 @@ public abstract class TrackItem extends JComponent implements Accessible
 
    }
 
-   /**
+   
+
+/**
     * Displays the context menu to the user.  This must be overridden to 
     * actually display the context menu.
     * 
@@ -334,7 +358,9 @@ public abstract class TrackItem extends JComponent implements Accessible
 
    public class MenuManagerMouseListener extends MouseInputAdapter
    {
-      /* (non-Javadoc)
+      
+
+/* (non-Javadoc)
       * @see java.awt.event.MouseListener#mousePressed(java.awt.event.MouseEvent)
       */
       public void mousePressed(MouseEvent e)
@@ -346,7 +372,9 @@ public abstract class TrackItem extends JComponent implements Accessible
 //         requestFocus();
       }
 
-      /* (non-Javadoc)
+      
+
+/* (non-Javadoc)
       * @see java.awt.event.MouseListener#mouseReleased(java.awt.event.MouseEvent)
       */
       public void mouseReleased(MouseEvent e)

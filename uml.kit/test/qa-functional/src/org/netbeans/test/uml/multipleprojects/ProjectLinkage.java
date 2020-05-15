@@ -61,6 +61,7 @@ import org.netbeans.test.umllib.Utils;
 import org.netbeans.test.umllib.testcases.UMLTestCase;
 
 
+
 /**
  *
  * @spec uml/FindReplaceAssociate.xml

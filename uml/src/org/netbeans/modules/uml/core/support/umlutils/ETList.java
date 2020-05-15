@@ -52,7 +52,9 @@ public interface ETList<TypeName> extends List<TypeName>
 {
    public boolean find(TypeName obj);
 
-   /**
+   
+
+/**
     * Returns the size of this list. Intended for compatibility with existing
     * code (new code should use size()).
     *
@@ -60,7 +62,9 @@ public interface ETList<TypeName> extends List<TypeName>
     */
    public int getCount();
 
-   /**
+   
+
+/**
     * Returns the item at the given index. Intended for compatibility with
     * existing code (new code should use get(int)).
     *

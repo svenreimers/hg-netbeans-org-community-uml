@@ -53,7 +53,8 @@ import org.netbeans.modules.uml.core.support.umlutils.IPropertyDefinition;
 public interface IConfigStringTranslator
 {
 
-	/**
+	
+/**
 	 * @param object
 	 * @param sPSK
 	 * @return

@@ -57,122 +57,170 @@ import org.netbeans.modules.uml.core.support.umlutils.IPropertyElementManager;
 
 public interface IPropertyEditor
 {
-	/**
+	
+
+/**
 	 * Initialize the property editor
 	*/
 	public long initialize();
 
-	/**
+	
+
+/**
 	 * property PropertyDefinitions
 	*/
 	public Vector<IPropertyDefinition> getPropertyDefinitions();
 
-	/**
+	
+
+/**
 	 * property PropertyDefinitions
 	*/
 	public void setPropertyDefinitions( Vector<IPropertyDefinition> value );
 
-	/**
+	
+
+/**
 	 * property PropertyElements
 	*/
 	public Vector<IPropertyElement> getPropertyElements();
 
-	/**
+	
+
+/**
 	 * property PropertyElements
 	*/
 	public void setPropertyElements( Vector<IPropertyElement> value );
 
-	/**
+	
+
+/**
 	 * Clear the property editor
 	*/
 	public long clear();
 
-	/**
+	
+
+/**
 	 * property PropertyElements
 	*/
 	public IPropertyElementManager getPropertyElementManager();
 
-	/**
+	
+
+/**
 	 * Clear the property editor
 	*/
 	public long save();
 
-	/**
+	
+
+/**
 	 * property 
 	*/
 	public IPropertyDefinitionFactory getPropertyDefinitionFactory();
 
-	/**
+	
+
+/**
 	 * property Project
 	*/
 	public void setProject( IProject value );
 
-	/**
+	
+
+/**
 	 * Set focus in the property editor
 	*/
 	public long setFocus();
 
-	/**
+	
+
+/**
 	 * Populate the grid with the current elements
 	*/
 	public long populateGrid();
 
-	/**
+	
+
+/**
 	 * ReloadElement
 	*/
 	public long reloadElement( Object pDisp );
 
-	/**
+	
+
+/**
 	 * Registers or revokes event sinks
 	*/
 	public long connectSinks( boolean __MIDL_0014 );
 
-	/**
+	
+
+/**
 	 * Retrieves the actual grid control.
 	*/
 	public Object getGrid();
 
-	/**
+	
+
+/**
 	 * Put the passed in element into the property editor
 	*/
 	public long loadElement( IElement pElement );
 
-	/**
+	
+
+/**
 	 * Put the passed in elements into the property editor
 	*/
 	public long loadElements( IElement[] pElements );
 
-	/**
+	
+
+/**
 	 * Reset the property editor settings(color, font)
 	*/
 	public long resetGridSettings();
 
-	/**
+	
+
+/**
 	 * Reset the property editor filter
 	*/
 	public long resetGridFilter();
 
-	/**
+	
+
+/**
 	 * Returns the HWND to the property editor.
 	*/
 	public int getWindowHandle();
 
-	/**
+	
+
+/**
 	 * Ask the user what to do about a name collision
 	*/
 	public long questionUserAboutNameCollision( INamedElement pElement, String sProposedName, INamedElement pFirstCollidingElement, IResultCell pCell );
 
-	/**
+	
+
+/**
 	 * Begin edit context
 	*/
 	public long beginEditContext();
 
-	/**
+	
+
+/**
 	 * Whether or not the property editor should reload when receiving an OnElementModified event
 	*/
 	public boolean getRespondToReload();
 
-	/**
+	
+
+/**
 	 * Whether or not the property editor should reload when receiving an OnElementModified event
 	*/
 	public void setRespondToReload( boolean value );

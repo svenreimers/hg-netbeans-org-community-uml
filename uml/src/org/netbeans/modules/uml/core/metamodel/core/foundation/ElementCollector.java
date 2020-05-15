@@ -55,6 +55,8 @@ import org.netbeans.modules.uml.core.support.umlsupport.XMLManip;
 import org.netbeans.modules.uml.core.support.umlutils.ETArrayList;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
+
+
 /**
  * ElementCollector is a specialized class who focuses on the
  * collection of XML elements, the translation of those element
@@ -64,7 +66,9 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 public class ElementCollector < Type >
 {
-   /**
+   
+
+/**
     *
     * Retrieves the number of IDs in a particular
     * xml attribute value
@@ -97,7 +101,9 @@ public class ElementCollector < Type >
       return count;
    }
 
-   /**
+   
+
+/**
      *
      * Makes sure that any nodes returning from the query that reference
      * external nodes are resolved. This wraps the DOM selectNodes() call.
@@ -128,7 +134,9 @@ public class ElementCollector < Type >
       return list;
    }
 
-   /**
+   
+
+/**
      * 
      * Retrieves the element identified via xmi.id in the XML attribute
      * passed in.
@@ -156,7 +164,9 @@ public class ElementCollector < Type >
       return retEle;
    }
 
-   /**
+   
+
+/**
      * 
      * Retrieves the element identified via xmi.id in the XML attribute
      * passed in.
@@ -215,7 +225,9 @@ public class ElementCollector < Type >
       return retVal;
    }
    
-   /**
+   
+
+/**
     *
     * Retrieves a single child element of node.
     *
@@ -257,7 +269,9 @@ public class ElementCollector < Type >
       return retEle;
    }
 
-   /**
+   
+
+/**
     * @param constraint
     * @param string
     * @return
@@ -275,7 +289,9 @@ public class ElementCollector < Type >
       return elems != null? elems : new ETArrayList<Type>();
    }
 
-   /**
+   
+
+/**
     *
     * Retrieves a collection of elements based on the value of that passed in
     * attribute. It is assumed that the attribute is defined as containing an
@@ -333,7 +349,9 @@ public class ElementCollector < Type >
       return elems;
    }
 
-    /**
+    
+
+/**
      * Retrieves all the specified nodes / children of the passed in node
      * element. Given a Class, ensures all elements in the collection are
      * instances of that class.
@@ -356,7 +374,9 @@ public class ElementCollector < Type >
         return retVal;
    }
    
-   /**
+   
+
+/**
     *
     * Retrieves all the specified nodes / children of the passed in node
     * element.
@@ -390,7 +410,9 @@ public class ElementCollector < Type >
       return elems != null? elems : new ETArrayList<Type>();
    }
    
-   /**
+   
+
+/**
      *
      * Populates the passed in collection object with the COM wrappers
      * of the elements found in tagList.

@@ -50,7 +50,7 @@ package org.netbeans.modules.uml.propertysupport.customizers;
 public class PropertyDataFormatter
 {
     
-    /** Creates a new instance of PropertyDataFormatter */
+    
     public PropertyDataFormatter()
     {
     }

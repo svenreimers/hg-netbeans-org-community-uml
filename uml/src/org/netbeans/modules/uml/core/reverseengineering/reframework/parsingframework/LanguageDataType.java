@@ -59,7 +59,9 @@ public class LanguageDataType implements ILanguageDataType
 	private String m_UMLName = "";
 
 
-	/**
+	
+
+/**
 	 * Gets the name of the data type.
 	 *
 	 * @param pVal [out] The name of the data type.
@@ -69,7 +71,9 @@ public class LanguageDataType implements ILanguageDataType
 		return m_Name;
 	}
 
-	/** 
+	
+
+/** 
 	 * Sets the name of the data type.
 	 * 
 	 * @param newVal [in] The name of the data type.
@@ -79,7 +83,9 @@ public class LanguageDataType implements ILanguageDataType
 		m_Name = newVal;
 	}
 
-	/**
+	
+
+/**
 	 * Gets the data type's kind.  The data kinds will usally be 
 	 * <B>primitive</B> or <B>user-defined</B>.
 	 *
@@ -90,7 +96,9 @@ public class LanguageDataType implements ILanguageDataType
 		return m_Kind;
 	}
 
-	/**
+	
+
+/**
 	 * Sets the data type's kind.  The data kinds will usally be 
 	 * <B>primitive</B> or <B>user-defined</B>.
 	 *
@@ -101,7 +109,9 @@ public class LanguageDataType implements ILanguageDataType
 		m_Kind = newVal;
 	}
 
-	/**
+	
+
+/**
 	 * Gets the scope of the data type.  The value of scope will be <B>global</B> when
 	 * the data type applies to all Describe projects, or a list of projects that 
 	 * applies to the data type.  
@@ -113,7 +123,9 @@ public class LanguageDataType implements ILanguageDataType
 		return m_Scope;
 	}
 
-	/**
+	
+
+/**
 	 * Sets the scope of the data type.  The value of scope will be <B>global</B> when
 	 * the data type applies to all Describe projects, or a list of projects that 
 	 * applies to the data type.  
@@ -125,7 +137,9 @@ public class LanguageDataType implements ILanguageDataType
 		m_Scope = newVal;
 	}
 
-	/**
+	
+
+/**
 	 * Specifies whether or not the Data Type is the default value for attributes.
 	 *
 	 * @param pVal[out] true if the data type is the default type for attributes
@@ -135,7 +149,9 @@ public class LanguageDataType implements ILanguageDataType
 		return m_IsAttributeType;
 	}
 
-	/**
+	
+
+/**
 	 * Specifies whether or not the Data Type is the default value for attributes.
 	 *
 	 * @param newVal[in] true if the data type is the default type for attributes.
@@ -145,7 +161,9 @@ public class LanguageDataType implements ILanguageDataType
 		m_IsAttributeType = newVal;
 	}
 
-	/**
+	
+
+/**
 	 * Specifies whether or not the Data Type is the default value for operations.
 	 *
 	 * @param pVal[out] true if the data type is the default type for operations
@@ -155,7 +173,9 @@ public class LanguageDataType implements ILanguageDataType
 		return m_IsOperationType;
 	}
 
-	/**
+	
+
+/**
 	 * Specifies whether or not the Data Type is the default value for operations.
 	 *
 	 * @param newVal[in] true if the data type is the default type for operations
@@ -165,7 +185,9 @@ public class LanguageDataType implements ILanguageDataType
 		m_IsOperationType = newVal;
 	}
 
-	/** 
+	
+
+/** 
 	 * Gets the DefaultValue of the data type.
 	 * 
 	 * @param pVal [out] The DefaultValue of the data type
@@ -175,7 +197,9 @@ public class LanguageDataType implements ILanguageDataType
 		return m_DefaultValue;
 	}
 
-	/** 
+	
+
+/** 
 	 * Sets the DefaultValue of the data type.
 	 * 
 	 * @param newVal [in] The DefaultValue of the data type
@@ -185,7 +209,9 @@ public class LanguageDataType implements ILanguageDataType
 		m_DefaultValue = newVal;
 	}
 
-	/** 
+	
+
+/** 
 	 * Retrieves the language independent name of the data type.  Only primitives 
 	 * have a UML name.
 	 *
@@ -196,7 +222,9 @@ public class LanguageDataType implements ILanguageDataType
 		return m_UMLName;
 	}
 
-	/** 
+	
+
+/** 
 	 * Set the language independent name of the data type.  Only primitives 
 	 * have a UML name.
 	 *

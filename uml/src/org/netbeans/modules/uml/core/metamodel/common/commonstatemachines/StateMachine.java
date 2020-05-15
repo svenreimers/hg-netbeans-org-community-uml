@@ -42,6 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
+
+
 /*
  * Created on Sep 19, 2003
  *
@@ -69,7 +71,8 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 public class StateMachine extends Behavior implements IStateMachine
 {
 
-	/**
+	
+/**
 	 *  Constructor
 	 */
 	public StateMachine()
@@ -77,7 +80,9 @@ public class StateMachine extends Behavior implements IStateMachine
 		super();		
 	}
 	
-	/**
+	
+
+/**
 	 * method AddConformance
 	*/
 	public void addConformance( final IProtocolConformance conform )
@@ -96,7 +101,9 @@ public class StateMachine extends Behavior implements IStateMachine
                  );
 	}
 
-	/**
+	
+
+/**
 	 * method RemoveConformance
 	*/
 	public void removeConformance( final IProtocolConformance conform )
@@ -114,7 +121,9 @@ public class StateMachine extends Behavior implements IStateMachine
 			);
 	}
 
-	/**
+	
+
+/**
 	 * property Conformances
 	*/
 	public ETList<IProtocolConformance> getConformances()
@@ -150,7 +159,9 @@ public class StateMachine extends Behavior implements IStateMachine
 		addOwnedElement(pRegion);
 	}
 	
-	/**
+	
+
+/**
 	 * method AddConnectionPoint
 	*/
 	public void addConnectionPoint( IUMLConnectionPoint point )
@@ -159,7 +170,9 @@ public class StateMachine extends Behavior implements IStateMachine
 						point);
 	}
 
-	/**
+	
+
+/**
 	 * method RemoveConnectionPoint
 	*/
 	public void removeConnectionPoint( IUMLConnectionPoint point )
@@ -167,7 +180,9 @@ public class StateMachine extends Behavior implements IStateMachine
 		UMLXMLManip.removeChild(m_Node,point);
 	}
 
-	/**
+	
+
+/**
 	 * property ConnectionPoints
 	*/
 	public ETList<IUMLConnectionPoint> getConnectionPoints()
@@ -176,7 +191,9 @@ public class StateMachine extends Behavior implements IStateMachine
 						.retrieveElementCollection((IElement)this,"UML:StateMachine.connectionPoint/*", IUMLConnectionPoint.class);
 	}
 	
-	/**
+	
+
+/**
 	 * method AddSubmachineState
 	*/
 	public void addSubmachineState( final IState state )
@@ -194,7 +211,9 @@ public class StateMachine extends Behavior implements IStateMachine
               );											  
 	}
 
-	/**
+	
+
+/**
 	 * method RemoveSubmachineState
 	*/
 	public void removeSubmachineState( final IState state )
@@ -210,7 +229,9 @@ public class StateMachine extends Behavior implements IStateMachine
 											);
 	}
 
-	/**
+	
+
+/**
 	 * property SubmachinesStates
 	*/
 	public ETList<IState> getSubmachinesStates()
@@ -224,7 +245,9 @@ public class StateMachine extends Behavior implements IStateMachine
 		buildNodePresence("UML:StateMachine", doc, node);
 	}    
 	
-	/**
+	
+
+/**
 	 *
 	 * Makes sure the this StateMachine always has at least one region.
 	 *
@@ -240,7 +263,9 @@ public class StateMachine extends Behavior implements IStateMachine
 		}
 	}
 	
-	/**
+	
+
+/**
 	 *
 	 * Retrieves the elements that this StateMachine owns dependent on how many regions
 	 * the StateMachine contains. This allows the tree and property editor to display 
@@ -280,7 +305,9 @@ public class StateMachine extends Behavior implements IStateMachine
 		return elements;
 	}
 	
-	/**
+	
+
+/**
 	 *
 	 * Retrieves the contents of the passed in IRegion and places them in the 
 	 * passed in collection

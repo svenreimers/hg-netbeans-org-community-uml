@@ -54,6 +54,7 @@ import org.netbeans.modules.uml.diagrams.edges.sqd.MessageWidget;
 import org.netbeans.modules.uml.drawingarea.actions.ActionProvider;
 import org.netbeans.modules.uml.drawingarea.view.DesignerScene;
 
+
 /**
  * provider need to find out if message order was changed and update model
  * (consider: may also check owning by cf/operands instead of container inner logic)
@@ -84,7 +85,9 @@ public class UpdateMessagesInModel implements ActionProvider {
        }
     }
     
-    /**
+    
+
+/**
      * need to find messages and if order do not fit order in model exchange
      * currently do not work 20080605
      */

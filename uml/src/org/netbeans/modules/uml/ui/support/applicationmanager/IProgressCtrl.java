@@ -47,42 +47,58 @@ package org.netbeans.modules.uml.ui.support.applicationmanager;
 
 public interface IProgressCtrl
 {
-	/**
+	
+
+/**
 	 * Begins the progress control
 	*/
 	public long beginProgress( String message, int nLower, int nUpper, int nInitialPos );
 
-	/**
+	
+
+/**
 	 * Ends the progress control
 	*/
 	public long endProgress();
 
-	/**
+	
+
+/**
 	 * Returns the current range
 	*/
 	public long getRange( int pLower, int pUpper );
 
-	/**
+	
+
+/**
 	 * Returns the current position
 	*/
 	public long getPos( int pPos );
 
-	/**
+	
+
+/**
 	 * Sets the current position - leaves the text the same.
 	*/
 	public long setPos( int nPos );
 
-	/**
+	
+
+/**
 	 * Sets the current position and text
 	*/
 	public long setPos2( String message, int nPos );
 
-	/**
+	
+
+/**
 	 * Begins the busy state for the progress control. Use for busy state where you don't know how long the process will last.
 	*/
 	public long beginBusyState( String message );
 
-	/**
+	
+
+/**
 	 * Ends the busy state for the progress control. Use for busy state where you don't know how long the process will last.
 	*/
 	public long endBusyState();

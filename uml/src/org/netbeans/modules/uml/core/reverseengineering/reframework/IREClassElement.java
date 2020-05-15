@@ -46,22 +46,30 @@ package org.netbeans.modules.uml.core.reverseengineering.reframework;
 
 public interface IREClassElement extends IParserData
 {
-	/**
+	
+
+/**
 	 * Retrieves the name of the class element.
 	*/
 	public String getName();
 
-	/**
+	
+
+/**
 	 * Retrieves the visibility of the class element.  The visibility can be public, protected, private, or package.
 	*/
 	public int getVisibility();
 
-	/**
+	
+
+/**
 	 * Retrieves the source code comment for the class.
 	*/
 	public String getComment();
 
-	/**
+	
+
+/**
 	 * Retrieves the class that ownes the class element.
 	*/
 	public IREClass getOwner();

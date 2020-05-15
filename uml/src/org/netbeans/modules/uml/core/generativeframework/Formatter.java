@@ -42,11 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : Formatter.java
- * Created on : Oct 28, 2003
- * Author     : aztec
- */
+
+
 package org.netbeans.modules.uml.core.generativeframework;
 
 import java.util.Iterator;
@@ -58,27 +55,16 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
  */
 public class Formatter
 {
-    /**
+    
+/**
      * This is what a newline looks like. We're keeping this to the classic
      * "\n" - the native IO libraries will take care of converting that to the
      * native newline sequence when we write to a file.
      */
     public static final String NEWLINE = "\n";
     
-    /**
-	 * Makes sure that the formatting of the expanded text is put in the right
-	 * place in terms of where the expansion variable indicator was in the
-	 * stream. That is, if the expansion variable was 3 spaces in, the all text
-	 * in the expansion variable should be expanded 3 spaces in.
-	 * 
-	 * @param prevText
-	 *            The context of the expansion text. This is what determines
-	 *            how the expansion variable result text is formatted.
-	 * @param varRes
-	 *            The actual expansion variable result text.
-	 * 
-	 * @return The reformatted text.
-	 */
+    
+
     public static String convertNewLines(String prevText, String varRes)
     {
         StringBuffer converted = new StringBuffer(varRes);
@@ -145,7 +131,9 @@ public class Formatter
         return converted.toString();
     }
 
-    /**
+    
+
+/**
      * @param string
      * @return
      */

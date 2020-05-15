@@ -75,6 +75,7 @@ import org.netbeans.test.umllib.vrf.GenericVerifier;
 
 
 
+
 /**
  *
  * @spec UML/ComponentDiagram.xml

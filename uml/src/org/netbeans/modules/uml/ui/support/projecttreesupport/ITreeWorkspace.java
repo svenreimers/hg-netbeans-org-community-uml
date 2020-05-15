@@ -43,6 +43,7 @@
  */
 
 
+
 /*
  *
  * Created on Jun 12, 2003
@@ -57,7 +58,8 @@ import org.netbeans.modules.uml.core.workspacemanagement.IWorkspace;
 public interface ITreeWorkspace extends ITreeItem
 {
 
-   /**
+   
+/**
     * @return
     */
    public IWorkspace getWorkspace();

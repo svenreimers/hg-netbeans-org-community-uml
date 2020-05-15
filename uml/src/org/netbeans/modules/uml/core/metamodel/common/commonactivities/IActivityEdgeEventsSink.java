@@ -49,22 +49,30 @@ import org.netbeans.modules.uml.core.support.umlsupport.IResultCell;
 
 public interface IActivityEdgeEventsSink
 {
-	/**
+	
+
+/**
 	 * Fired whenever the passed in ActivityEdge's weight property is about to change.
 	*/
 	public void onPreWeightModified( IActivityEdge pEdge, String newValue, IResultCell cell );
 
-	/**
+	
+
+/**
 	 * Fired whenever the passed in ActivityEdge's weight has been changed.
 	*/
 	public void onWeightModified( IActivityEdge pEdge, IResultCell cell );
 
-	/**
+	
+
+/**
 	 * Fired whenever the passed in ActivityEdge's weight property is about to change.
 	*/
 	public void onPreGuardModified( IActivityEdge pEdge, String newValue, IResultCell cell );
 
-	/**
+	
+
+/**
 	 * Fired whenever the passed in ActivityEdge's weight has been changed.
 	*/
 	public void onGuardModified( IActivityEdge pEdge, IResultCell cell );

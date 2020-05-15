@@ -72,6 +72,7 @@ import org.netbeans.test.umllib.exceptions.UMLCommonException;
 import org.netbeans.test.umllib.testcases.UMLTestCase;
 
 
+
 /**
  *
  * @spec UML/ComponentDiagram.xml

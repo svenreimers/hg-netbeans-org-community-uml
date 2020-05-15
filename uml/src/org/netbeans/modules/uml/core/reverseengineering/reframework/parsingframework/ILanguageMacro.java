@@ -46,22 +46,30 @@ package org.netbeans.modules.uml.core.reverseengineering.reframework.parsingfram
 
 public interface ILanguageMacro
 {
-	/**
+	
+
+/**
 	 * property name
 	*/
 	public String getName();
 
-	/**
+	
+
+/**
 	 * property name
 	*/
 	public void setName( String name );
 
-	/**
+	
+
+/**
 	 * property Value
 	*/
 	public String getValue();
 
-	/**
+	
+
+/**
 	 * property Value
 	*/
 	public void setValue( String value );

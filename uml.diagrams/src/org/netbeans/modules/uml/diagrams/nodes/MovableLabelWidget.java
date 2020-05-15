@@ -107,7 +107,9 @@ public class MovableLabelWidget extends EditableCompartmentWidget implements Wid
         this(scene, nodeWidget, element, widgetID, displayName, null, null);
     }
 
-    /**
+    
+
+/**
      * 
      * @param scene
      * @param parent

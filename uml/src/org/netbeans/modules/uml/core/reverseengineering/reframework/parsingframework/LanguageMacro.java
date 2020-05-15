@@ -42,11 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : LanguageMacro.java
- * Created on : Oct 27, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework;
 
 /**
@@ -56,7 +53,8 @@ public class LanguageMacro implements ILanguageMacro
     String m_Name = null;
     String m_Value = null;
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ILanguageMacro#getName()
      */
     public String getName()
@@ -64,7 +62,9 @@ public class LanguageMacro implements ILanguageMacro
         return m_Name;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ILanguageMacro#getValue()
      */
     public String getValue()
@@ -72,7 +72,9 @@ public class LanguageMacro implements ILanguageMacro
         return m_Value;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ILanguageMacro#setName(java.lang.String)
      */
     public void setName(String name)
@@ -80,7 +82,9 @@ public class LanguageMacro implements ILanguageMacro
         m_Name = name;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ILanguageMacro#setValue(java.lang.String)
      */
     public void setValue(String value)

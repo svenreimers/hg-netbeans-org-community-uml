@@ -42,11 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : JoinNode.java
- * Created on : Sep 17, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.metamodel.common.commonactivities;
 
 import org.dom4j.Document;
@@ -59,7 +56,8 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.IValueSpecificati
 public class JoinNode extends ControlNode implements IJoinNode
 {
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactivities.IJoinNode#getJoinSpec()
      */
     public IValueSpecification getJoinSpec()
@@ -68,7 +66,9 @@ public class JoinNode extends ControlNode implements IJoinNode
             .retrieveSingleElementWithAttrID(this, "joinSpec", IValueSpecification.class);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactivities.IJoinNode#setJoinSpec(org.netbeans.modules.uml.core.metamodel.core.foundation.IValueSpecification)
      */
     public void setJoinSpec(IValueSpecification value)

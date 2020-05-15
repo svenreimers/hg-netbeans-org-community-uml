@@ -58,7 +58,9 @@ public interface IMenu
    public final static int POP_UP    = 0x4;
    public final static int CASCADE   = 0x8;
 
-   /**
+   
+
+/**
     * @param index
     */
    public void insertSeperatorAt(int index);
@@ -68,17 +70,23 @@ public interface IMenu
     */
    public void appendSeperator();
 
-   /**
+   
+
+/**
     * 
     */
    public IMenu getParentMenu();
 
-   /**
+   
+
+/**
     * @return
     */
    public int getStyle();
 
-   /**
+   
+
+/**
     * @param m_Action
     * @param index
     * @return
@@ -87,7 +95,9 @@ public interface IMenu
    
 //   public IMenuItem createMenuItem(String name, int index);
 
-   /**
+   
+
+/**
     * @param m_Action
     * @return
     */
@@ -95,33 +105,45 @@ public interface IMenu
    
 //   public IMenuItem createMenuItem(String name);
 
-   /**
+   
+
+/**
     * @return
     */
    public IMenu createSubMenu();
 
-   /**
+   
+
+/**
     * @return
     */
    public boolean isDisposed();
 
-   /**
+   
+
+/**
     * @return
     */
    public IMenuItem[] getItems();
 
-   /**
+   
+
+/**
     * @return
     */
    public int getItemCount();
 
-   /**
+   
+
+/**
     * @param i
     * @return
     */
    public IMenuItem getMenuItem(int i);
 
-   /**
+   
+
+/**
     * @param text
     */
    public void setText(String text);

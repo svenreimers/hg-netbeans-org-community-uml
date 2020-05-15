@@ -42,11 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * DiagramCreatorAction.java
- *
- * Created on January 7, 2005, 10:38 AM
- */
+
+
 
 package org.netbeans.modules.uml.drawingarea.ui.addins.reguiaddin;
 
@@ -67,7 +64,8 @@ import org.openide.util.actions.CookieAction;
 public class GenerateCodeAction extends CookieAction
 {
 	
-	/**
+	
+/**
 	 * Creates a new instance of GenerateCodeAction
 	 */
 	public GenerateCodeAction()

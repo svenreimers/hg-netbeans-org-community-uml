@@ -45,6 +45,7 @@
 
 package org.netbeans.modules.uml.core.support.umlsupport;
 
+
 /**
  * Used to avoid unwanted function recursion. General this object is
  * used by sending in the address of a member or static variable of the object
@@ -59,7 +60,9 @@ public class PreventReEntrance
 		
 	}
 
-   /**
+   
+
+/**
     * Ups the count on the passed in integer.
     *
     * @param flag[in] The integer that will be automatically managed

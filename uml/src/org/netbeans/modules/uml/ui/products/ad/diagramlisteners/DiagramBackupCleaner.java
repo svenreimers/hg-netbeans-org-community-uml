@@ -62,7 +62,8 @@ public class DiagramBackupCleaner implements IDiagramBackupCleaner,
 											 IWSProjectEventsSink
 {
 
-	/**
+	
+/**
 	 * 
 	 */
 	public DiagramBackupCleaner()
@@ -73,7 +74,9 @@ public class DiagramBackupCleaner implements IDiagramBackupCleaner,
 		helper.registerForWSProjectEvents(this);
 	}
 
-	/**
+	
+
+/**
 	 * Revokes the event sink from the drawing area dispatcher.
 	 */
 	public void revoke()
@@ -90,7 +93,9 @@ public class DiagramBackupCleaner implements IDiagramBackupCleaner,
 		}
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.workspacemanagement.IWSProjectEventsSink#onWSProjectPreCreate(org.netbeans.modules.uml.core.workspacemanagement.IWorkspace, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onWSProjectPreCreate(IWorkspace space, String projectName, IResultCell cell)
@@ -99,7 +104,9 @@ public class DiagramBackupCleaner implements IDiagramBackupCleaner,
 		
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.workspacemanagement.IWSProjectEventsSink#onWSProjectCreated(org.netbeans.modules.uml.core.workspacemanagement.IWSProject, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onWSProjectCreated(IWSProject project, IResultCell cell)
@@ -108,7 +115,9 @@ public class DiagramBackupCleaner implements IDiagramBackupCleaner,
 		
 	}
 
-	/**
+	
+
+/**
 	 * When a WS project is opened we remove the files in the diagram backup directory.
 	 *
 	 * @parm space [in] Not Used
@@ -124,7 +133,9 @@ public class DiagramBackupCleaner implements IDiagramBackupCleaner,
 		}
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.workspacemanagement.IWSProjectEventsSink#onWSProjectOpened(org.netbeans.modules.uml.core.workspacemanagement.IWSProject, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onWSProjectOpened(IWSProject project, IResultCell cell)
@@ -133,7 +144,9 @@ public class DiagramBackupCleaner implements IDiagramBackupCleaner,
 		
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.workspacemanagement.IWSProjectEventsSink#onWSProjectPreRemove(org.netbeans.modules.uml.core.workspacemanagement.IWSProject, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onWSProjectPreRemove(IWSProject project, IResultCell cell)
@@ -142,7 +155,9 @@ public class DiagramBackupCleaner implements IDiagramBackupCleaner,
 		
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.workspacemanagement.IWSProjectEventsSink#onWSProjectRemoved(org.netbeans.modules.uml.core.workspacemanagement.IWSProject, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onWSProjectRemoved(IWSProject project, IResultCell cell)
@@ -151,7 +166,9 @@ public class DiagramBackupCleaner implements IDiagramBackupCleaner,
 		
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.workspacemanagement.IWSProjectEventsSink#onWSProjectPreInsert(org.netbeans.modules.uml.core.workspacemanagement.IWorkspace, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onWSProjectPreInsert(IWorkspace space, String projectName, IResultCell cell)
@@ -160,7 +177,9 @@ public class DiagramBackupCleaner implements IDiagramBackupCleaner,
 		
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.workspacemanagement.IWSProjectEventsSink#onWSProjectInserted(org.netbeans.modules.uml.core.workspacemanagement.IWSProject, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onWSProjectInserted(IWSProject project, IResultCell cell)
@@ -169,7 +188,9 @@ public class DiagramBackupCleaner implements IDiagramBackupCleaner,
 		
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.workspacemanagement.IWSProjectEventsSink#onWSProjectPreRename(org.netbeans.modules.uml.core.workspacemanagement.IWSProject, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onWSProjectPreRename(IWSProject project, String newName, IResultCell cell)
@@ -178,7 +199,9 @@ public class DiagramBackupCleaner implements IDiagramBackupCleaner,
 		
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.workspacemanagement.IWSProjectEventsSink#onWSProjectRenamed(org.netbeans.modules.uml.core.workspacemanagement.IWSProject, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onWSProjectRenamed(IWSProject project, String oldName, IResultCell cell)
@@ -187,7 +210,9 @@ public class DiagramBackupCleaner implements IDiagramBackupCleaner,
 		
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.workspacemanagement.IWSProjectEventsSink#onWSProjectPreClose(org.netbeans.modules.uml.core.workspacemanagement.IWSProject, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onWSProjectPreClose(IWSProject project, IResultCell cell)
@@ -196,7 +221,9 @@ public class DiagramBackupCleaner implements IDiagramBackupCleaner,
 		
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.workspacemanagement.IWSProjectEventsSink#onWSProjectClosed(org.netbeans.modules.uml.core.workspacemanagement.IWSProject, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onWSProjectClosed(IWSProject project, IResultCell cell)
@@ -205,7 +232,9 @@ public class DiagramBackupCleaner implements IDiagramBackupCleaner,
 		
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.workspacemanagement.IWSProjectEventsSink#onWSProjectPreSave(org.netbeans.modules.uml.core.workspacemanagement.IWSProject, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onWSProjectPreSave(IWSProject project, IResultCell cell)
@@ -214,7 +243,9 @@ public class DiagramBackupCleaner implements IDiagramBackupCleaner,
 		
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.workspacemanagement.IWSProjectEventsSink#onWSProjectSaved(org.netbeans.modules.uml.core.workspacemanagement.IWSProject, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onWSProjectSaved(IWSProject project, IResultCell cell)

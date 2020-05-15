@@ -43,11 +43,8 @@
  */
 
 
-/*
- * LabelsAndTitles.java
- *
- * Created on March 29, 2005, 12:58 PM
- */
+
+
 
 package org.netbeans.test.umllib.util;
 

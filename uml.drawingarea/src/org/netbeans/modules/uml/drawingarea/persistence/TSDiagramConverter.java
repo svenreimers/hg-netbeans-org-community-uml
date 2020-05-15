@@ -723,7 +723,9 @@ public class TSDiagramConverter
     }
 
 
-    /**
+    
+
+/**
      * need to be called after general addEfge(where all source/target widgets are determined)
      * also all elements in collection should be messages
      * @return
@@ -957,7 +959,9 @@ public class TSDiagramConverter
         }
     }
    
-    /**
+    
+
+/**
      * make lowest x equal to zero(with some shift), revert y and make lowest y equal to zero(with some shift)
      */
     private void normilizeNodesForZero() {
@@ -1014,7 +1018,9 @@ public class TSDiagramConverter
         }
     }
     
-    /**
+    
+
+/**
      * this method handle positioning of all lifelines on the same level
      */
     private void normalizeSQDDiagram()
@@ -1341,7 +1347,9 @@ public class TSDiagramConverter
     }
 
     
-    /**
+    
+
+/**
      * should add all labels info to edges info
      * @param peidToLabelMap
      */

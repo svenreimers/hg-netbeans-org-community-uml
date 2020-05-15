@@ -60,7 +60,8 @@ import org.openide.util.actions.CookieAction;
 public class DependencyDiagramAction extends CookieAction
 {
 	
-	/**
+	
+/**
 	 * Creates a new instance of DependencyDiagramAction
 	 */
 	public DependencyDiagramAction()

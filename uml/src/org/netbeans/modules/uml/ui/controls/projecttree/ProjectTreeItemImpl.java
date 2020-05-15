@@ -43,6 +43,7 @@
  */
 
 
+
 /*
  *
  * Created on Jun 11, 2003
@@ -65,6 +66,7 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.IPackageImport;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.IProxyElement;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.ProxyElement;
 import org.netbeans.modules.uml.core.metamodel.structure.IProject;
+
 
 /**
  * 
@@ -104,7 +106,9 @@ public class ProjectTreeItemImpl implements IProjectTreeItem, FileExtensions
       setModelElement(element);
    }
    
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem#setPath(IProjectTreeItem[])
     */
    public void setPath(ITreeItem[] path)
@@ -112,7 +116,9 @@ public class ProjectTreeItemImpl implements IProjectTreeItem, FileExtensions
       m_Path = path;
    }
    
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem#getPath()
     */
    public ITreeItem[] getPath()
@@ -145,7 +151,9 @@ public class ProjectTreeItemImpl implements IProjectTreeItem, FileExtensions
       return retVal;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem#setModelElement()
     */
    public void setModelElement(IElement element)
@@ -171,7 +179,9 @@ public class ProjectTreeItemImpl implements IProjectTreeItem, FileExtensions
       }
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem#getModelElement()
     */
    public IElement getModelElement()
@@ -193,7 +203,9 @@ public class ProjectTreeItemImpl implements IProjectTreeItem, FileExtensions
 //		return cachedElement;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem#getModelElementXMIID()
     */
    public String getModelElementXMIID()
@@ -209,7 +221,9 @@ public class ProjectTreeItemImpl implements IProjectTreeItem, FileExtensions
       return retVal;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem#getTopLevelXMIID()
     */
    public String getTopLevelXMIID()
@@ -225,7 +239,9 @@ public class ProjectTreeItemImpl implements IProjectTreeItem, FileExtensions
       return retVal;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem#getIsModelElement()
     */
    public boolean isModelElement()
@@ -233,7 +249,9 @@ public class ProjectTreeItemImpl implements IProjectTreeItem, FileExtensions
       return (m_ModelElement != null);
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem#isSameModelElement(org.netbeans.modules.uml.core.metamodel.core.foundation.IElement)
     */
    public boolean isSameModelElement(IElement pQueryItem)
@@ -248,7 +266,9 @@ public class ProjectTreeItemImpl implements IProjectTreeItem, FileExtensions
       return retVal;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem#isImportedModelElement()
     */
    public boolean isImportedModelElement()
@@ -260,7 +280,9 @@ public class ProjectTreeItemImpl implements IProjectTreeItem, FileExtensions
       return retVal;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem#getImportedModelElement()
     */
    public IElementImport getImportedModelElement()
@@ -269,7 +291,9 @@ public class ProjectTreeItemImpl implements IProjectTreeItem, FileExtensions
       return null;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem#isImportedPackage()
     */
    public boolean isImportedPackage()
@@ -278,7 +302,9 @@ public class ProjectTreeItemImpl implements IProjectTreeItem, FileExtensions
       return false;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem#getImportedPackage()
     */
    public IPackageImport getImportedPackage()
@@ -287,7 +313,9 @@ public class ProjectTreeItemImpl implements IProjectTreeItem, FileExtensions
       return null;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem#getModelElementMetaType()
     */
    public String getModelElementMetaType()
@@ -299,7 +327,9 @@ public class ProjectTreeItemImpl implements IProjectTreeItem, FileExtensions
    {
       m_ElementMetaType = value;
    }
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem#SetData(java.lang.Object)
     */
    public void setData(Object data)
@@ -307,7 +337,9 @@ public class ProjectTreeItemImpl implements IProjectTreeItem, FileExtensions
       m_DataObject = data;
    }
    
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem#getElement()
     */
    public Object getData()
@@ -315,7 +347,9 @@ public class ProjectTreeItemImpl implements IProjectTreeItem, FileExtensions
       return m_DataObject;
    }
    
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem#getDescription()
     */
    public void setDescription(String value)
@@ -323,7 +357,9 @@ public class ProjectTreeItemImpl implements IProjectTreeItem, FileExtensions
       m_Description = value;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem#getDescription()
     */
    public String getDescription()
@@ -331,7 +367,9 @@ public class ProjectTreeItemImpl implements IProjectTreeItem, FileExtensions
       return m_Description;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem#getSecondaryDescription()
     */
    public void setSecondaryDescription(String value)
@@ -339,7 +377,9 @@ public class ProjectTreeItemImpl implements IProjectTreeItem, FileExtensions
       m_SecondaryDescription = value;
    }
    
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem#getSecondaryDescription()
     */
    public String getSecondaryDescription()
@@ -347,7 +387,9 @@ public class ProjectTreeItemImpl implements IProjectTreeItem, FileExtensions
       return m_SecondaryDescription;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem#isSame(org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem)
     */
    public boolean isSame(IProjectTreeItem pQueryItem)
@@ -372,7 +414,9 @@ public class ProjectTreeItemImpl implements IProjectTreeItem, FileExtensions
       return retVal;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem#getSortPriority()
     */
    public long getSortPriority()
@@ -380,7 +424,9 @@ public class ProjectTreeItemImpl implements IProjectTreeItem, FileExtensions
       return m_SortPriority;
    }
 
-   /**
+   
+
+/**
     * (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem#setSortPriority(int)
     */
@@ -389,7 +435,9 @@ public class ProjectTreeItemImpl implements IProjectTreeItem, FileExtensions
       m_SortPriority = value;
    }
    
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem#isDiagram()
     */
    public boolean isDiagram()
@@ -408,7 +456,9 @@ public class ProjectTreeItemImpl implements IProjectTreeItem, FileExtensions
       return retVal;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem#getDiagram()
     */
    public IProxyDiagram getDiagram()
@@ -424,7 +474,9 @@ public class ProjectTreeItemImpl implements IProjectTreeItem, FileExtensions
       return retVal;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem#isProject()
     */
    public boolean isProject()
@@ -440,7 +492,9 @@ public class ProjectTreeItemImpl implements IProjectTreeItem, FileExtensions
       return retVal;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem#getProject()
     */
    public IProject getProject()
@@ -473,7 +527,9 @@ public class ProjectTreeItemImpl implements IProjectTreeItem, FileExtensions
 //      return retVal;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem#isWorkspace()
     */
    public boolean isWorkspace()
@@ -486,7 +542,9 @@ public class ProjectTreeItemImpl implements IProjectTreeItem, FileExtensions
       return retVal;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem#getItemText()
     */
    public String getItemText()
@@ -494,7 +552,9 @@ public class ProjectTreeItemImpl implements IProjectTreeItem, FileExtensions
       return m_ItemText;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem#setItemText(java.lang.String)
     */
    public void setItemText(String value)
@@ -502,7 +562,9 @@ public class ProjectTreeItemImpl implements IProjectTreeItem, FileExtensions
       m_ItemText = value;
    }
    
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem#getProjectTreeSupportTreeItem()
     */
    public ITreeItem getProjectTreeSupportTreeItem()
@@ -510,7 +572,9 @@ public class ProjectTreeItemImpl implements IProjectTreeItem, FileExtensions
       return m_SupportItem;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem#setProjectTreeSupportTreeItem(java.lang.Object)
     */
    public void setProjectTreeSupportTreeItem(ITreeItem value)

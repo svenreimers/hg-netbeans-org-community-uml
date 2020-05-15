@@ -58,7 +58,9 @@ import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure
 
 public class TimeSignal extends Signal implements ITimeSignal
 {
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.ITimeSignal#getTimeExpression()
      */
     public IExpression getTimeExpression()
@@ -67,7 +69,9 @@ public class TimeSignal extends Signal implements ITimeSignal
             .retrieveSingleElement( m_Node, "UML:TimeSignal.timeExpression/*", IExpression.class );
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.ITimeSignal#setTimeExpression(org.netbeans.modules.uml.core.metamodel.core.foundation.IExpression)
      */
     public void setTimeExpression(IExpression exp)
@@ -76,7 +80,9 @@ public class TimeSignal extends Signal implements ITimeSignal
                   "UML:TimeSignal.timeExpression", exp );
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.Signal#establishNodePresence(org.dom4j.Document, org.dom4j.Node)
      */
     public void establishNodePresence(Document doc, Node parent)

@@ -86,6 +86,7 @@ import org.netbeans.modules.uml.core.support.UMLLogger;
 import org.openide.filesystems.FileObject;
 import org.openide.filesystems.FileUtil;
 
+
 /**
  * <p>Title: </p>
  * <p>Description: </p>
@@ -134,7 +135,9 @@ public class XMLManip
         }
    }
 
-   /**
+   
+
+/**
     * Searches under the given element for an element with the xmi.id supplied.
     * 
     * @param branch The element to search under (Document or Element).
@@ -288,7 +291,9 @@ public class XMLManip
       return value;
    }
 
-   /**
+   
+
+/**
     * Retreives a nodes attribute value as a string.  
     * 
     * @param n The node that is used to retrieve the attribute.
@@ -311,7 +316,9 @@ public class XMLManip
       return (value != null) ? value : "";
    }
 
-   /**
+   
+
+/**
     * Retreives a nodes attribute value as a boolean.  If the value of the 
     * attribute can not be converted to a boolean then <code>false</code> 
     * will be returned.
@@ -326,7 +333,9 @@ public class XMLManip
    }
 
 
-   /**
+   
+
+/**
     * Retreives a nodes attribute value as a boolean.  If the value of the 
     * attribute can not be converted to a boolean then <code>false</code> 
     * will be returned.
@@ -350,7 +359,9 @@ public class XMLManip
       return retVal;
    }
 
-   /**
+   
+
+/**
     * Retreives a nodes attribute value as an integer.  If the value of the 
     * attribute can not be converted to an integer then zero will be returned.
     * 
@@ -375,7 +386,9 @@ public class XMLManip
       return retVal;
    }
 
-   /**
+   
+
+/**
     * Retreives a nodes attribute value as an double.  If the value of the 
     * attribute can not be converted to an integer then zero will be returned.
     * 
@@ -400,7 +413,9 @@ public class XMLManip
       return retVal;
    }
 
-   /**
+   
+
+/**
     *
     * Sets the XML attribute that has the passed in name to the passed in value.
     *
@@ -441,7 +456,9 @@ public class XMLManip
          setAttributeValue(elem, name, value);
       }
    }
-   /**
+   
+
+/**
     *
     * Makes sure that there are no invalid characters in the value. If
     * there are, they are converted appropriately. 
@@ -482,7 +499,9 @@ public class XMLManip
       return newval;
    }
 
-   /**
+   
+
+/**
     *
     * Makes sure that there are no invalid characters in the value. If
     * there are, they are converted appropriately. 
@@ -518,7 +537,9 @@ public class XMLManip
       return newVal;
    }
 
-   /**
+   
+
+/**
     *
     * Generates and retrieves the string representation of the DCE UUID globally
     * unique identifier. See section 3.5.1 in the XMI spec.
@@ -535,7 +556,9 @@ public class XMLManip
       return retStr;
    }
 
-   /**
+   
+
+/**
 	* Inserts a given child node at the given position in the parent's existing
 	* child nodes. Note: to append the child node as the last child, it's easier
 	* to directly call parent.add(child) than this method.
@@ -589,7 +612,9 @@ public class XMLManip
       
    }
    
-   /**
+   
+
+/**
 	* Inserts a given child node before the reference node in the parent's 
 	* existing child nodes. Note: to append the child node as the last child, 
 	* it's easier to directly call parent.add(child) than this method.
@@ -619,7 +644,9 @@ public class XMLManip
 	   parent.add(child);
    }
 
-   /**
+   
+
+/**
     * @param node
     * @param string
     * @return
@@ -635,7 +662,9 @@ public class XMLManip
       return retNode;
    }
 
-   /**
+   
+
+/**
     * @param pNode
     * @param pattern
     * @return
@@ -728,7 +757,9 @@ public class XMLManip
    public static List selectNodeListNS(Node pNode, String pattern)
    {
       List list = null;
-      /*try {
+      
+
+/*try {
       	list = XPathAPI.selectNodeList(pNode, pattern);
       } catch (TransformerException e) {
       }*/
@@ -754,7 +785,9 @@ public class XMLManip
       return list;
    }
 
-   /**
+   
+
+/**
     * @param doc
     * @param header
     * @return
@@ -764,37 +797,22 @@ public class XMLManip
       return loadXML(text, false, new IDResolver("xmi.id"));
    }
    
-    /**
-     * Loads a DOM Document from the given XML text.
-     * 
-     * @param text     The XML text to parse and create a Document from.
-     * @param validate <code>true</code> to validate the XML against any DTDs.
-     * @return The <code>Document</code> created.
-     */
+    
+
     public static Document loadXML(String text, boolean validate)
     {
        return loadXML(text, validate, new IDResolver("xmi.id"));
     }
 
-   /**
-    * Loads a DOM Document from the given XML text.
-    *
-    * @param text     The XML text to parse and create a Document from.
-    * @param The ID resolver used to determine IDs.
-    * @return The <code>Document</code> created.
-    */
+   
+
    public static Document loadXML(String text, IDResolver resolver)
    {
       return loadXML(text, false, resolver);
    }
    
-   /**
-    * Loads a DOM Document from the given XML text.
-    * 
-    * @param text     The XML text to parse and create a Document from.
-    * @param validate <code>true</code> to validate the XML against any DTDs.
-    * @return The <code>Document</code> created.
-    */
+   
+
    public static Document loadXML(String text, boolean validate, IDResolver resolver)
    {
        try
@@ -810,7 +828,9 @@ public class XMLManip
        return null;
    }
    
-   /**
+   
+
+/**
     * Returns the locale specific value for the String message.
     * @param message
     */
@@ -827,7 +847,9 @@ public class XMLManip
       return null;
    }
 
-   /**
+   
+
+/**
     *  Returns the locale specific message for the given message key, applying
     * a MessageFormat to it with the supplied parameters, if any.
     *
@@ -841,7 +863,9 @@ public class XMLManip
       return (params != null) ? MessageFormat.format(text, params) : text;
    }
 
-   /**
+   
+
+/**
     * Retrieves the text of a given node.
     *
     * @param curNode[in] The node to query
@@ -988,7 +1012,9 @@ public class XMLManip
       return retName;
    }
 
-   /**
+   
+
+/**
     * Sets the text value of a node.
     *
     * @param curNode[in] The node to query with
@@ -1013,7 +1039,9 @@ public class XMLManip
    }
 
 
-    /**  
+    
+
+/**  
      *   removes illegal for XML 1.0 (Chapter 2.2) characters 
      *   in the 0x0-0x1F range (excluding 0x9, 0xA, 0xD)
      *
@@ -1093,7 +1121,9 @@ public class XMLManip
       return retNode;
    }
 
-    /**
+    
+
+/**
      *
      * Appends a newline to the passed in element
      *
@@ -1121,7 +1151,9 @@ public class XMLManip
         }
     }
 
-   /**
+   
+
+/**
     *
     * Creates a new DOM Element in a given XML namspace. This is a lower
     * level routine than the CreateElement that does not take a namespace
@@ -1174,7 +1206,9 @@ public class XMLManip
       return retVal;
    }
    
-   /**
+   
+
+/**
     *
     * Creates a new DOM Element in a given XML namspace. This is a lower
     * level routine than the CreateElement that does not take a namespace
@@ -1233,7 +1267,9 @@ public class XMLManip
       return retVal;
    }
    
-    /**
+    
+
+/**
      * Obtains a DOM4J QName given a namespace prefixed nodeName.
      * @param nodeName The name of the node, probably qualified by a namespace
      *                 prefix.
@@ -1255,7 +1291,9 @@ public class XMLManip
            : new QName(shortName, ns, nodeName);
     }
     
-    /**
+    
+
+/**
      * Obtains a DOM4J Namespace given a namespace prefix by querying the XMI
      * fragment.
      * @param namespacePrefix A namespace prefix.
@@ -1433,7 +1471,9 @@ public class XMLManip
        }
    }
 
-   /**
+   
+
+/**
     * @param document
     * @param fileName
     */
@@ -1502,7 +1542,9 @@ public class XMLManip
        return successful;
    }
    
-   /**
+   
+
+/**
     * @param element
     * @param b
     */
@@ -1515,7 +1557,9 @@ public class XMLManip
       
    }
 
-	/**
+	
+
+/**
 	 *
 	 * Removes all child nodes from parentNode.
 	 *
@@ -1541,7 +1585,9 @@ public class XMLManip
 		}
 	}
 
-    /**
+    
+
+/**
      * Returns the first child node of the given XML node.
      * @param node The node in question. Only DOM4J Element Nodes have child
      *             nodes, so passing in any other Node will return null.
@@ -1559,7 +1605,9 @@ public class XMLManip
     }
 
     
-    /**
+    
+
+/**
      *  A query of "ancestor::*[@attrName='attrValue']" type
      *  
      *  @param node

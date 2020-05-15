@@ -65,7 +65,9 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 public class StructuralFeature extends Feature implements IStructuralFeature, ITypedElement
 {
-    /**
+    
+
+/**
      * Aggregate that'll be the delegate for ITypedElement methods. We override
      * getNode() to return 
      */
@@ -76,7 +78,9 @@ public class StructuralFeature extends Feature implements IStructuralFeature, IT
 		m_TypedElementAggregate.setAggregator(this);
 	}
     
-    /**
+    
+
+/**
      * Sets the XML node which contains this element's data.
      */
     public void setNode(Node newNode)
@@ -93,7 +97,9 @@ public class StructuralFeature extends Feature implements IStructuralFeature, IT
 		return getChangeableKindValue( "clientChangeability" );	
 	}
 	
-	/**	 
+	
+
+/**	 
 	 * Sets the Changeability flag. Results in the firing of the 
 	 * PreChangeabilityModified and ChangeabilityModified events.
 	 *
@@ -211,7 +217,9 @@ public class StructuralFeature extends Feature implements IStructuralFeature, IT
 		m_TypedElementAggregate.setMultiplicity( newVal );
 	}
 	
-	/**
+	
+
+/**
          * Adds the type to this feature via a more convenient
          * string, which will resolve the string into the appropriate
          * Classifier.
@@ -253,7 +261,9 @@ public class StructuralFeature extends Feature implements IStructuralFeature, IT
             }
         }
 	
-	/**
+	
+
+/**
 	 *
 	 * Makes sure that new features are named according to the default
 	 *
@@ -266,7 +276,9 @@ public class StructuralFeature extends Feature implements IStructuralFeature, IT
 		establishDefaultName();	
 	}
 	
-	/**
+	
+
+/**
 	 * Retrieves the name of the typing Classifier.
 	 */
 	public String getTypeName()
@@ -282,7 +294,9 @@ public class StructuralFeature extends Feature implements IStructuralFeature, IT
 		return (retName != null) ? retName : "";
 	}
 	
-	/**
+	
+
+/**
 	 *
 	 * Passes through to put_Type2
 	 */
@@ -290,14 +304,18 @@ public class StructuralFeature extends Feature implements IStructuralFeature, IT
 	{
 		setType2(newVal);	
 	}
-	/**
+	
+
+/**
 	 * The volatility state of this feature.
 	 */
 	public boolean getIsVolatile()
 	{
 		return getBooleanAttributeValue("isVolatile",false);
 	}
-	/**
+	
+
+/**
 	 * The volatility state of this feature.
 	 */
 	public void setIsVolatile(boolean newVal)
@@ -337,7 +355,9 @@ public class StructuralFeature extends Feature implements IStructuralFeature, IT
 		return getBooleanAttributeValue("isTransient",false);
 	}
 	
-	/**
+	
+
+/**
 	 * Determines whether or not this feature persists or not.
 	 *
 	 * @param newVal[in]
@@ -403,7 +423,9 @@ public class StructuralFeature extends Feature implements IStructuralFeature, IT
             return ((TypedElement)m_TypedElementAggregate).processProposedType(newType);		
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityListener#onPreLowerModified(org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityRange, java.lang.String)
 	 */
 	public boolean onPreLowerModified(IMultiplicity mult, IMultiplicityRange range, String proposedValue) 
@@ -411,7 +433,9 @@ public class StructuralFeature extends Feature implements IStructuralFeature, IT
 		return m_TypedElementAggregate.onPreLowerModified(mult, range, proposedValue);
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityListener#onLowerModified(org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityRange)
 	 */
 	public void onLowerModified(IMultiplicity mult, IMultiplicityRange range) 
@@ -419,7 +443,9 @@ public class StructuralFeature extends Feature implements IStructuralFeature, IT
 		m_TypedElementAggregate.onLowerModified(mult, range);
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityListener#onPreUpperModified(org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityRange, java.lang.String)
 	 */
 	public boolean onPreUpperModified(IMultiplicity mult, IMultiplicityRange range, String proposedValue) 
@@ -427,7 +453,9 @@ public class StructuralFeature extends Feature implements IStructuralFeature, IT
 		return m_TypedElementAggregate.onPreUpperModified(mult, range, proposedValue);	
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityListener#onUpperModified(org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityRange)
 	 */
 	public void onUpperModified(IMultiplicity mult, IMultiplicityRange range) 
@@ -435,7 +463,9 @@ public class StructuralFeature extends Feature implements IStructuralFeature, IT
 		m_TypedElementAggregate.onUpperModified(mult, range);
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityListener#onPreRangeAdded(org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityRange)
 	 */
 	public boolean onPreRangeAdded(IMultiplicity mult, IMultiplicityRange range) 
@@ -443,7 +473,9 @@ public class StructuralFeature extends Feature implements IStructuralFeature, IT
 		return m_TypedElementAggregate.onPreRangeAdded(mult, range);
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityListener#onRangeAdded(org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityRange)
 	 */
 	public void onRangeAdded(IMultiplicity mult, IMultiplicityRange range) 
@@ -451,7 +483,9 @@ public class StructuralFeature extends Feature implements IStructuralFeature, IT
 		m_TypedElementAggregate.onRangeAdded(mult, range);
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityListener#onPreRangeRemoved(org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityRange)
 	 */
 	public boolean onPreRangeRemoved(IMultiplicity mult, IMultiplicityRange range) 
@@ -459,7 +493,9 @@ public class StructuralFeature extends Feature implements IStructuralFeature, IT
 		return m_TypedElementAggregate.onPreRangeRemoved(mult, range);
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityListener#onRangeRemoved(org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityRange)
 	 */
 	public void onRangeRemoved(IMultiplicity mult, IMultiplicityRange range) 
@@ -467,7 +503,9 @@ public class StructuralFeature extends Feature implements IStructuralFeature, IT
 		m_TypedElementAggregate.onRangeRemoved(mult, range);
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityListener#onPreOrderModified(org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity, boolean)
 	 */
 	public boolean onPreOrderModified(IMultiplicity mult, boolean proposedValue)
@@ -475,7 +513,9 @@ public class StructuralFeature extends Feature implements IStructuralFeature, IT
 		return m_TypedElementAggregate.onPreOrderModified(mult, proposedValue);
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityListener#onOrderModified(org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity)
 	 */
 	public void onOrderModified(IMultiplicity mult) 

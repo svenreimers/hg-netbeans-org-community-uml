@@ -102,12 +102,8 @@ public class NewDialogUtilities
       super();
    }
    
-   /**
-    * Loads the namespace combo box
-    *
-    * @param pWnd [in] The combo box that is to be populated with namespaces.
-    * @param pNamespace [in] The default namespace, can be NULL, specified by the caller.
-    */
+   
+
    public static void loadNamespace(JComboBox box, INamespace pNamespace)
    {
       resetElements();
@@ -231,7 +227,9 @@ public class NewDialogUtilities
    }
    
    
-   /**
+   
+
+/**
     * Returns the project from our new dialog context
     *
     * @param pProject [out,retval] The project
@@ -246,7 +244,9 @@ public class NewDialogUtilities
       return null;
    }
    
-   /**
+   
+
+/**
     * Returns the namespace from a combo box
     *
     * @param pWnd [in] The combo box where the namespace text resides
@@ -259,7 +259,9 @@ public class NewDialogUtilities
       return retObj;
    }
    
-   /**
+   
+
+/**
     * Gets an element from the list
     *
     * @param sNamespaceName [in] The name of the namespace we're looking for
@@ -289,7 +291,9 @@ public class NewDialogUtilities
       return retSpace;
    }
    
-   /**
+   
+
+/**
     * Returns the location of the current workspace
     *
     * @return The directory location of the workspace.
@@ -317,7 +321,9 @@ public class NewDialogUtilities
       return retLocation;
    }
    
-   /**
+   
+
+/**
     * Returns the workspace this result processor should use
     *
     * @param pWorkspace [out,retval] The workspace
@@ -330,7 +336,9 @@ public class NewDialogUtilities
       return retSpace;
    }
    
-   /**
+   
+
+/**
     * Returns the home location
     *
     * @return The location of our install location.
@@ -350,7 +358,9 @@ public class NewDialogUtilities
       return homeStr;
    }
    
-   /**
+   
+
+/**
     * Adds an element to our list of elements in the combo box
     *
     * @param pElement [in] The element to add to our list of known namespaces
@@ -395,7 +405,9 @@ public class NewDialogUtilities
       }
    }
    
-   /**
+   
+
+/**
     *
     * Calculates the default namespace to appear in the picklist control
     *
@@ -519,7 +531,9 @@ public class NewDialogUtilities
       return space;
    }
    
-   /**
+   
+
+/**
     *
     * Get the namespace of the project tree item.
     * If the item is a diagram, the namespace of the diaram is returned.
@@ -597,7 +611,9 @@ public class NewDialogUtilities
       return retSpace;
    }
    
-   /**
+   
+
+/**
     * Indicates the application product is "in round trip mode"
     */
    public static boolean isProductRoundTripOn()
@@ -623,7 +639,7 @@ public class NewDialogUtilities
    
    public static String getDefaultDiagramName()
    {
-      //kris richards - "DefaultDiagramName" pref expunged. Set to "New Diagram".
+      
       return NbBundle.getMessage (NewDialogUtilities.class, "NEW_DIAGRAM");
    }
 
@@ -745,7 +761,7 @@ public class NewDialogUtilities
    
    public static String getDefaultProjectName()
    {
-      //kris richards - "DefaultProjectName" pref expunged. Set to "New Project".
+      
       return NbBundle.getMessage(NewDialogUtilities.class, "NEW_PROJECT");
    }
    
@@ -783,7 +799,9 @@ public class NewDialogUtilities
 //		box.addItem("Use Case Diagram");
       box.addItem(RESOURCE_BUNDLE.getString("PSK_ACTIVITY_DIAGRAM"));
       box.addItem(RESOURCE_BUNDLE.getString("PSK_CLASS_DIAGRAM"));
-      /* temporarily take out those three diagrams for 6.5 M1
+      
+
+/* temporarily take out those three diagrams for 6.5 M1
       box.addItem(RESOURCE_BUNDLE.getString("PSK_COLLABORATION_DIAGRAM"));
       box.addItem(RESOURCE_BUNDLE.getString("PSK_COMPONENT_DIAGRAM"));
       box.addItem(RESOURCE_BUNDLE.getString("PSK_DEPLOYMENT_DIAGRAM"));
@@ -796,13 +814,13 @@ public class NewDialogUtilities
    public static void loadModes(JComboBox box)
    {
       String defaultMode = "Implementation";
-      //VERIFY(tempString.LoadString(IDS_ANALYSIS));
+      
       box.addItem("Analysis");
       
-      //VERIFY(tempString.LoadString(IDS_DESIGN));
+      
       box.addItem("Design");
       
-      //VERIFY(tempString.LoadString(IDS_IMPLEMENTATION));
+      
       box.addItem("Implementation");
       
       //now set the default
@@ -855,7 +873,9 @@ public class NewDialogUtilities
       return icon;
    }
    
-   /**
+   
+
+/**
     * If its a new project,we must clear this elements list
     */
    public static void resetElements()

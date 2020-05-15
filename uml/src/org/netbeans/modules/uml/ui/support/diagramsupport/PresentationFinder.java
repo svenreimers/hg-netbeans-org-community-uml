@@ -65,13 +65,15 @@ import org.netbeans.modules.uml.core.support.umlutils.ETArrayList;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 import org.netbeans.modules.uml.core.workspacemanagement.IWorkspace;
 
+
 /**
  * 
  */
 public class PresentationFinder implements IPresentationFinder
 {
 
-   /**
+   
+/**
     * Returns a detailed list of where the presentation elements reside that 
     * represent the argument model element.
     *
@@ -172,7 +174,9 @@ public class PresentationFinder implements IPresentationFinder
       return retVal;
    }
 
-   /**
+   
+
+/**
 	* Looks into the .etlp file for presentation elements that represent the queried model element.
 	*
 	* @param pModelElement [in] The model element to look for in the diagram files

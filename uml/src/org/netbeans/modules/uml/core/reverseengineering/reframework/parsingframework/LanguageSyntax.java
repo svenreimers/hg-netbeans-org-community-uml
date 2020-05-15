@@ -57,7 +57,8 @@ public class LanguageSyntax implements ILanguageSyntax
 {
 	ETList<ISyntaxToken> m_Tokens = new ETArrayList<ISyntaxToken>();
 
-	/**
+	
+/**
 	 * Retrieves the token information that defines a string literal.
 	 *
 	 * @param pVal [out] The token that delimites a string
@@ -84,7 +85,9 @@ public class LanguageSyntax implements ILanguageSyntax
 		return retToken;
 	}
 
-	/**
+	
+
+/**
 	 * Retrieve the token information that is used to define a character literal.
 	 * 
 	 * @param pVal [out] The token information
@@ -111,7 +114,9 @@ public class LanguageSyntax implements ILanguageSyntax
 		return retToken;
 	}
 
-	/**
+	
+
+/**
 	 * Gets the set of tokens that define the syntax of a language.
 	 * 
 	 * @param pVal [out] The set of tokens
@@ -121,7 +126,9 @@ public class LanguageSyntax implements ILanguageSyntax
 		return m_Tokens;
 	}
 
-	/**
+	
+
+/**
 	 * Sets the set of tokens that define the syntax of a language.
 	 * 
 	 * @param newVal [in] The set of tokens
@@ -131,7 +138,9 @@ public class LanguageSyntax implements ILanguageSyntax
 		m_Tokens = newVal;
 	}
 
-	/**
+	
+
+/**
 	 * Retrieves all the tokens that have the specified token type.
 	 * 
 	 * @param wantedKind [in] The token type to retrieve
@@ -158,7 +167,9 @@ public class LanguageSyntax implements ILanguageSyntax
 		return retVal;
 	}
 
-	/**
+	
+
+/**
 	 * Retrieves all the syntax tokens that have the specified token type and category.
 	 * 
 	 * @param wantedKind [in] The token type to retrieve

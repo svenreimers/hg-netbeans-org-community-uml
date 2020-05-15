@@ -78,6 +78,7 @@ import org.netbeans.modules.uml.core.support.umlsupport.StringUtilities;
 import org.netbeans.modules.uml.core.support.umlsupport.URIHelper;
 import org.netbeans.modules.uml.core.support.umlsupport.XMLManip;
 
+
 /**
  * <p>Title: </p>
  * <p>Description: </p>
@@ -138,7 +139,9 @@ public class DataFormatter implements IDataFormatter
    private IPropertyElementManager m_ElementManager = null;
    private String m_ConfigDirectory = "";
    
-   /**
+   
+
+/**
     *
     * Formats the passed-in element against an XSL script of the appropriate
     * type.
@@ -173,17 +176,8 @@ public class DataFormatter implements IDataFormatter
       	return format;
    }
 
-   /**
-    * Formats @a element using a script named @a scriptName.  The script must have
-    * been added to the data formatter prior to calling this function.
-    *
-    * @param element[in] The element to format
-    * @param scriptName[in] The XSLT script name (not the file name) to format
-    *                       @a element with
-    * @param format[out] The formatted XML
-    *
-    * @return HRESULT
-    */
+   
+
    public String formatElement(IElement elem, String scriptName)
    {
       String format = null;
@@ -195,17 +189,8 @@ public class DataFormatter implements IDataFormatter
       }
       return format;
    }
-   /**
-    * Formats the data elements data.  The property elements used to
-    * format the elements data and the formated string is returned.
-    *
-    * @param element [in] The element to be formatted.
-    * @param propElement [out] The property elements used to format
-    *                          the data.  If PropertyElements are
-    *                          not used to produce the formatted
-    *                          value NULL will be returned.
-    * @param format [out] The formatted value.
-    */
+   
+
    public String formatElement(IElement elem, IPropertyElement propElem)
    {
 		FormatterHelper helper = new FormatterHelper(elem);
@@ -221,28 +206,15 @@ public class DataFormatter implements IDataFormatter
 	  }
 	  return format;
    }
-   /**
+   
 
-   /**
-    *
-    * Retrieves the appropriate processor given the script name. The processor
-    * may be created upon execution of this method. If it has already been created,
-    * the cached version of the processor is returned.
-    *
-    * @param scriptName[in] The name of the script to retrieve
-    * @param proc[out] The processor associated with the element
-    *
-    * @return Will return DFR_S_NO_FORMATTER if no XSL script has been associated with
-    *         the particular element type, else HRESULT
-    *
-    */
    protected XslTransformer retrieveProcessor(String scriptName)
    {
       XslTransformer xsl = null;
       if (scriptName != null && scriptName.length() > 0)
       {
          // Retrieve the processor from our map. If one doesn't exist, attempt to create
-         // from our list of formatters. If that fails, we have no choice but to give up
+         
          xsl = m_Procs.get(scriptName);
          if (xsl == null)
          {
@@ -259,7 +231,7 @@ public class DataFormatter implements IDataFormatter
             }
             else
             {
-               //throw an error - DFR_S_NO_FORMATTER
+               
             }
          }
       }
@@ -283,7 +255,9 @@ public class DataFormatter implements IDataFormatter
 	  	return trans;
    }
 
-   /**
+   
+
+/**
     *
     * Creates a processor against a script that is referenced in fileName.
     *
@@ -380,7 +354,9 @@ public class DataFormatter implements IDataFormatter
     }
 
 
-   /**
+   
+
+/**
     *
     * Associates the specified XSL script with a particular element type.
     *
@@ -397,28 +373,16 @@ public class DataFormatter implements IDataFormatter
    }
 
 
-   /**
-    * Retrieve a particular value from the DataFormatter's map given the key.
-    *
-    * @param key[in]	Key to find
-    * @param scriptName[out] Value found in map
-    *
-    * @return HRESULT
-    *
-    */
+   
+
    public String getScriptFromMap(String key)
    {
       String scriptName = m_Formatters.get(key);
       return scriptName;
    }
 
-   /**
-    * Remove a particular value from the DataFormatter's map given the key.
-    *
-    * @param key[in] Key to find
-    *
-    * @return HRESULT
-    */
+   
+
    public void removeScriptFromMap(String key)
    {
       String obj = m_Formatters.get(key);
@@ -428,12 +392,8 @@ public class DataFormatter implements IDataFormatter
       }
    }
 
-   /**
-    * Remove all values from the DataFormatter's map.
-    *
-    *
-    * @return HRESULT
-    */
+   
+
    public void clearMap()
    {
       m_Formatters.clear();
@@ -449,7 +409,9 @@ public class DataFormatter implements IDataFormatter
       m_bIsAlias = alias;
    }
 
-   /**
+   
+
+/**
     *
     * Formats the passed-in xml node against an XSL script of the appropriate
     * type.
@@ -475,17 +437,8 @@ public class DataFormatter implements IDataFormatter
       return format;
    }
 
-   /**
-    * Formats @a element using a script named @a scriptName.  The script must have
-    * been added to the data formatter prior to calling this function.
-    *
-    * @param element[in] The element to format
-    * @param scriptName[in] The XSLT script name (not the file name) to format
-    *                       @a element with
-    * @param format[out] The formatted XML
-    *
-    * @return HRESULT
-    */
+   
+
    public String formatNode(Node node, String scriptName)
    {
 		String format = null;
@@ -509,21 +462,8 @@ public class DataFormatter implements IDataFormatter
 		return format;
    }
 
-   /**
-    *
-    * Adds the passed in Object to all Processors that this Formatter currently
-    * knows about. If no processors have been created, this method does nothing.
-    *
-    * @param namespaceURI[in] The uri to use when referring to methods in the
-    *                         passed in object from an xslt script. For example:
-    *
-    *                         "urn:uriHelper"
-    *
-    * @param pDisp[in]        The actual COM object to be placed on the Transformer
-    *
-    * @return HRESULT
-    *
-    */
+   
+
    public void addObject(String namespaceURI, Object obj)
    {
       Enumeration < XslTransformer > enumVal = m_Procs.elements();
@@ -539,7 +479,9 @@ public class DataFormatter implements IDataFormatter
       }
    }
 
-   /**
+   
+
+/**
     *
     * Adds the passed in Object to the Processor that is associated with the passed
     * in script location. If no processors have been created for that script,
@@ -590,7 +532,9 @@ public class DataFormatter implements IDataFormatter
       return pData;
    }
 
-   /**
+   
+
+/**
     * Retrieves the property elements that represent the elements data.
     * the property elements structure will be dictated by the specified
     * property elements.
@@ -610,7 +554,9 @@ public class DataFormatter implements IDataFormatter
    		return pEle;
    }
 
-   /**
+   
+
+/**
     * Retrieves the property elements that represent the elements data.
     * the property elements structure will be dictated by the specified
     * property elements.
@@ -662,21 +608,8 @@ public class DataFormatter implements IDataFormatter
    // Property Definitions Format Methods.
    // *********************************************************************
 
-   /**
-    * Formates the element data according to a property definition.  The
-    * pDefinitionsNode is transformed into a IPropertyDefinition.  The
-    * property defintion is then used to retrieve property elements.
-    * Finally, the property elements are used to format the elements value.
-    *
-    * If at any point a failure occurs then pElements and formattedValue
-    * will not be filled in.
-    *
-    * @param elementType [in] The element type to format.
-    * @param pDefinitions [in] The definitions to use.
-    * @param formatedValue [out] The value after it has been formated.
-    * @param pElement [out] The property element that represents the
-    *                       formated data.
-    */
+   
+
    protected String formatUsingDefinition(FormatterHelper helper)
    {
    	    String retStr = "";
@@ -692,7 +625,9 @@ public class DataFormatter implements IDataFormatter
    		return retStr;
    }
 
-   /**
+   
+
+/**
     * Uses an XSLT script to format the value of the model element.
     *
     * @param pElement [in] The element that is being processed.
@@ -712,7 +647,9 @@ public class DataFormatter implements IDataFormatter
       return retStr;
    }
 
-   /**
+   
+
+/**
     * Retrieves the property definitions used to format the elements data.
     * The definitions can be used to retrieve the property elements that
     * represents the elements data.
@@ -754,7 +691,9 @@ public class DataFormatter implements IDataFormatter
       return pDef;
    }
 
-   /**
+   
+
+/**
     * Returns a factory for the given language
     *
     * @param pLang [in] The language that should match the returned factory.
@@ -794,7 +733,9 @@ public class DataFormatter implements IDataFormatter
 		return fact;
    }
 
-   /**
+   
+
+/**
     * Retrieves the node that defines the property definiton for the
     * specified element.
     *
@@ -818,14 +759,8 @@ public class DataFormatter implements IDataFormatter
       return n;
    }
 
-   /**
-    * Formats the data.  The format of the data will be dictated by
-    * the property elements.
-    *
-    * @param pElement [in] The element that'll be used to figure out the language
-    * @param pData [in] The data that needs to be formatted.
-    * @param pVal [in] The formatted value.
-    */
+   
+
    private String formatData(FormatterHelper helper, IPropertyElement pEle)
    {
       String retData = null;

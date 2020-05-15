@@ -78,6 +78,7 @@ import org.netbeans.test.umllib.util.LibProperties;
 
 
 
+
 /**
  *
  * @spec uml/UML-EditControl.xml
@@ -149,7 +150,9 @@ public class TestComponentElement extends UMLTestCase {
     private static boolean eIO4=false;
    //--
     //SPECIAL CASE
-    /*private static String componentDiagramName5 = "cpD5";
+    
+
+/*private static String componentDiagramName5 = "cpD5";
     private static String workPkg5 = "pkg5";
     private static String element5="Assembly Connector";
     private static String treeNode5=element5;
@@ -230,7 +233,9 @@ public class TestComponentElement extends UMLTestCase {
     private static boolean eIO12=false;
    //--
     //SPECIAL CASE
-    /*private static String componentDiagramName13 = "cpD13";
+    
+
+/*private static String componentDiagramName13 = "cpD13";
     private static String workPkg13 = "pkg13";
     private static String element13="Association Class";
     private static String treeNode13=element13;
@@ -241,7 +246,9 @@ public class TestComponentElement extends UMLTestCase {
     private static boolean eIO13=false;*/
    //--
     //Special case
-   /* private static String componentDiagramName14 = "cpD14";
+   
+
+/* private static String componentDiagramName14 = "cpD14";
     private static String workPkg14 = "pkg14";
     private static String element14="Role Binding";
     private static String treeNode14=element14;
@@ -252,7 +259,9 @@ public class TestComponentElement extends UMLTestCase {
     private static boolean eIO14=false;*/
    //--
     //Special case
-    /*private static String componentDiagramName15 = "cpD15";
+    
+
+/*private static String componentDiagramName15 = "cpD15";
     private static String workPkg15 = "pkg15";
     private static String element15="Link Comment";
     private static String treeNode15=element15;

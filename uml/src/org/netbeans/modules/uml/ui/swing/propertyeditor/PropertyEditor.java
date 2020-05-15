@@ -219,7 +219,9 @@ public class PropertyEditor extends JPanel implements IPropertyEditor, ActionLis
 //		}
 //		return m_Instance;
 //	}
-	/**
+	
+
+/**
 	 * 
 	 */
 	public PropertyEditor()
@@ -319,7 +321,9 @@ public class PropertyEditor extends JPanel implements IPropertyEditor, ActionLis
 	}
 	
 
-	/**
+	
+
+/**
 	 * 
 	 */
 	private void initializeHelpBox()
@@ -328,7 +332,9 @@ public class PropertyEditor extends JPanel implements IPropertyEditor, ActionLis
 		
 	}
 
-	/**
+	
+
+/**
 	 * 
 	 */
 	private void initializeButtons()
@@ -337,7 +343,9 @@ public class PropertyEditor extends JPanel implements IPropertyEditor, ActionLis
 		
 	}
 
-	/**
+	
+
+/**
 	 * 
 	 */
 	private void initializeComboBox()
@@ -371,7 +379,9 @@ public class PropertyEditor extends JPanel implements IPropertyEditor, ActionLis
 		}
 	}
 	
-	/**
+	
+
+/**
 	 * Set up value in Filter combo box
 	 *
 	 * @return void
@@ -379,7 +389,7 @@ public class PropertyEditor extends JPanel implements IPropertyEditor, ActionLis
 	private void setFilterComboBoxValue() {
             if (m_FilterCombo != null) {
                 
-                //kris richards - "DefaultFilter" pref expunged. Set to "PSK_DATA"
+                
                 String filter = "PSK_DATA";
                 m_FilterCombo.setSelectedItem(filter);
                 
@@ -388,7 +398,9 @@ public class PropertyEditor extends JPanel implements IPropertyEditor, ActionLis
         }
 	
 
-	/**
+	
+
+/**
 	 * 
 	 */
 	private void initializeGrid()
@@ -397,7 +409,9 @@ public class PropertyEditor extends JPanel implements IPropertyEditor, ActionLis
 		
 	}
 
-	/**
+	
+
+/**
 	 * Initializes the property editor by creating an event sink and then listening to
 	 * drawing area select/deselect events
 	 *
@@ -423,7 +437,9 @@ public class PropertyEditor extends JPanel implements IPropertyEditor, ActionLis
 		return 0;
 	}
 
-	/**
+	
+
+/**
 	 * 
 	 */
 	private void registerAcceleratorsNoFocus()
@@ -432,7 +448,9 @@ public class PropertyEditor extends JPanel implements IPropertyEditor, ActionLis
 		
 	}
 
-	/**
+	
+
+/**
 	 * 
 	 */
 	private void registerAccelerators()
@@ -441,7 +459,9 @@ public class PropertyEditor extends JPanel implements IPropertyEditor, ActionLis
 		
 	}
 
-	/**
+	
+
+/**
 	 * Gets the property definitions for the editor
 	 */
 	public Vector<IPropertyDefinition> getPropertyDefinitions()
@@ -449,7 +469,9 @@ public class PropertyEditor extends JPanel implements IPropertyEditor, ActionLis
 		return m_Definitions;
 	}
 
-	/**
+	
+
+/**
 	 * Sets the property definitions for the editor
 	 */
 	public void setPropertyDefinitions(Vector<IPropertyDefinition> value)
@@ -457,7 +479,9 @@ public class PropertyEditor extends JPanel implements IPropertyEditor, ActionLis
 		m_Definitions = value;
 	}
 
-	/**
+	
+
+/**
 	 * Gets the property elements for the editor
 	 */
 	public Vector<IPropertyElement> getPropertyElements()
@@ -465,7 +489,9 @@ public class PropertyEditor extends JPanel implements IPropertyEditor, ActionLis
 		return m_Elements;
 	}
 
-	/**
+	
+
+/**
 	 * Sets the property elements for the editor
 	 */
 	public void setPropertyElements(Vector<IPropertyElement> value)
@@ -476,7 +502,9 @@ public class PropertyEditor extends JPanel implements IPropertyEditor, ActionLis
 		populateGrid();
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.swing.propertyeditor.IPropertyEditor#clear()
 	 */
 	public long clear()
@@ -516,7 +544,9 @@ public class PropertyEditor extends JPanel implements IPropertyEditor, ActionLis
 		return 0;
 	}
 
-	/**
+	
+
+/**
 	 * Gets the property element manager for the editor.  Creates one if necessary.
 	 */
 	public IPropertyElementManager getPropertyElementManager()
@@ -528,7 +558,9 @@ public class PropertyEditor extends JPanel implements IPropertyEditor, ActionLis
 		return m_PropEleMgr;
 	}
 
-	/**
+	
+
+/**
 	 * Begin the process of saving the information in the property editor
 	 *
 	 * @return HRESULT
@@ -591,7 +623,9 @@ public class PropertyEditor extends JPanel implements IPropertyEditor, ActionLis
 		return 0;
 	}
 
-	/**
+	
+
+/**
 	 * Returns the font property at this grid row
 	 *
 	 * @param[in] row          The row to retrieve the property element from
@@ -620,7 +654,9 @@ public class PropertyEditor extends JPanel implements IPropertyEditor, ActionLis
 		return retProp;
 	}
 
-	/**
+	
+
+/**
 	 * Returns the color property at this grid row
 	 *
 	 * @param[in] row          The row to retrieve the property element from
@@ -649,7 +685,9 @@ public class PropertyEditor extends JPanel implements IPropertyEditor, ActionLis
 		return retProp;
 	}
 
-	/**
+	
+
+/**
 	 * Begin to store the data in the property element
 	 *
 	 * @param[in] row    The row in the grid that we are currently setting the data on
@@ -771,7 +809,9 @@ public class PropertyEditor extends JPanel implements IPropertyEditor, ActionLis
 		endEditContext();
 	}
 
-	/**
+	
+
+/**
 	 * Method to navigate up the property element chain to retrieve the property element that represents
 	 * the one that should be inserted into (the one with an insert method)
 	 *
@@ -810,7 +850,9 @@ public class PropertyEditor extends JPanel implements IPropertyEditor, ActionLis
 		return retEle;
 	}
 
-	/**
+	
+
+/**
 	 * Method to navigate up the property element chain to retrieve the property element that represents
 	 * the one that should be deleted from (the one with a delete method)
 	 *
@@ -848,7 +890,9 @@ public class PropertyEditor extends JPanel implements IPropertyEditor, ActionLis
 		}
 		return retEle;
 	}
-	/**
+	
+
+/**
 	 * Method to navigate up the property element chain to retrieve the first model element in the chain
 	 *
 	 * @param[in] pEle       The property element in which to get the model element 
@@ -880,7 +924,9 @@ public class PropertyEditor extends JPanel implements IPropertyEditor, ActionLis
 		return retObj;
 	}
 
-	/**
+	
+
+/**
 	 * Gets the property definition factory for the editor.  Creates one if necessary.
 	 */
 	public IPropertyDefinitionFactory getPropertyDefinitionFactory()
@@ -903,7 +949,9 @@ public class PropertyEditor extends JPanel implements IPropertyEditor, ActionLis
 		return m_Factory;
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.swing.propertyeditor.IPropertyEditor#setProject(org.netbeans.modules.uml.core.metamodel.structure.IProject)
 	 */
 	public void setProject(IProject value)
@@ -911,7 +959,9 @@ public class PropertyEditor extends JPanel implements IPropertyEditor, ActionLis
 		m_Project = value;
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.swing.propertyeditor.IPropertyEditor#setFocus()
 	 */
 	public long setFocus()
@@ -920,7 +970,9 @@ public class PropertyEditor extends JPanel implements IPropertyEditor, ActionLis
 		return 0;
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.swing.propertyeditor.IPropertyEditor#populateGrid()
 	 */
 	public long populateGrid()
@@ -968,7 +1020,9 @@ public class PropertyEditor extends JPanel implements IPropertyEditor, ActionLis
 		return 0;
 	}
 
-	/**
+	
+
+/**
 	 * Add a top level property element to the grid
 	 *
 	 * @param[in] pElement   The property element to add
@@ -994,7 +1048,9 @@ public class PropertyEditor extends JPanel implements IPropertyEditor, ActionLis
 		return retNode;
 	}
 
-	/**
+	
+
+/**
 	 * Reload the particular property element that is associated with the passed in
 	 * model element
 	 *
@@ -1040,7 +1096,9 @@ public class PropertyEditor extends JPanel implements IPropertyEditor, ActionLis
 		return 0;
 	}
 
-	/**
+	
+
+/**
 	 * Reload the particular property element that is associated with the passed in IElement
 	 *
 	 * @param[in] pElement  The IElement that needs to be reloaded
@@ -1117,7 +1175,9 @@ public class PropertyEditor extends JPanel implements IPropertyEditor, ActionLis
 		}
 	}
 
-	/**
+	
+
+/**
 	 * Determines whether or not the property editor should reload its data
 	 * 
 	 *
@@ -1163,7 +1223,9 @@ public class PropertyEditor extends JPanel implements IPropertyEditor, ActionLis
 		return bReload;
 	}
 
-	/**
+	
+
+/**
 	 * Checks to see if the passed in parent element contains the passed in child element.  It does
 	 * not have to be an owned element, it checks by dom node containment (whether it is under the
 	 * structure or not)
@@ -1198,7 +1260,9 @@ public class PropertyEditor extends JPanel implements IPropertyEditor, ActionLis
 		return bIsChild;
 	}
 
-	/**
+	
+
+/**
 	 * Reload the particular property element that is associated with the passed in project
 	 *
 	 * @param[in] pProject  The IWSProject that needs to be reloaded
@@ -1271,7 +1335,9 @@ public class PropertyEditor extends JPanel implements IPropertyEditor, ActionLis
 		}
 	}
 
-	/**
+	
+
+/**
 	 * Reload the particular property element that is associated with the passed in diagram
 	 *
 	 * @param[in] pElement  The diagram that needs to be reloaded
@@ -1326,7 +1392,9 @@ public class PropertyEditor extends JPanel implements IPropertyEditor, ActionLis
 		}
 	}
 
-	/**
+	
+
+/**
 	 *	Registers or revokes event sinks.
 	 *
 	 * @param bConnect
@@ -1396,7 +1464,9 @@ public class PropertyEditor extends JPanel implements IPropertyEditor, ActionLis
 		return 0;
 	}
 
-	/** 
+	
+
+/** 
 	 * returns the TreeTable used in this property editor.
 	 */
 	public Object getGrid()
@@ -1404,7 +1474,9 @@ public class PropertyEditor extends JPanel implements IPropertyEditor, ActionLis
 		return m_Tree;
 	}
 
-	/**
+	
+
+/**
 	 * Load the passed in IElement into the property editor
 	 *
 	 * @param pElement[in]		The element to put into the editor
@@ -1447,7 +1519,9 @@ public class PropertyEditor extends JPanel implements IPropertyEditor, ActionLis
 		return 0;
 	}
 
-	/**
+	
+
+/**
 	 * Load the passed in IElements into the property editor
 	 *
 	 * @param pElements[in]		The elements to put into the editor
@@ -1498,7 +1572,9 @@ public class PropertyEditor extends JPanel implements IPropertyEditor, ActionLis
 		return 0;
 	}
 
-	/**
+	
+
+/**
 	 * Create the property element that represents whatever is selected from the drawing area or the project tree
 	 *
 	 * @param[in] kind            The element type       
@@ -1550,7 +1626,9 @@ public class PropertyEditor extends JPanel implements IPropertyEditor, ActionLis
 		return retEle;
 	}
 	
-	/**
+	
+
+/**
 	 * Filter the property element based on an xml file that has been predefined
 	 * by the user
 	 * 
@@ -1562,7 +1640,7 @@ public class PropertyEditor extends JPanel implements IPropertyEditor, ActionLis
 	 */
 	private void filterPropertyElement(IPropertyElement pEle) {
             // check the preference to see if we should filter or not
-            //kris richards - "LanguageFilter" pref expunged. Set to true. Condition removed.
+            
             
             // this guy does the filtering
             IPropertyDefinitionFilter pFilter = new PropertyDefinitionFilter();
@@ -1597,7 +1675,9 @@ public class PropertyEditor extends JPanel implements IPropertyEditor, ActionLis
             
         }
 
-	/**
+	
+
+/**
 	 * Retrieves a model elements associated language.  If the model element
 	 * is associated to more than one language then the first language is the 
 	 * active language.
@@ -1620,7 +1700,9 @@ public class PropertyEditor extends JPanel implements IPropertyEditor, ActionLis
 		return retLang;
 	}
 
-	/**
+	
+
+/**
 	 * Method to navigate up the property element chain to retrieve the top model element in the chain
 	 *
 	 * @param[in] pEle       The property element in which to get the model element 
@@ -1651,7 +1733,9 @@ public class PropertyEditor extends JPanel implements IPropertyEditor, ActionLis
 	}
 
 
-	/**
+	
+
+/**
 	 * Because we have changed the way that we do a save - save now on leaving a field
 	 * or if in a new property (attribute/operation), save when we leave that particular
 	 * property, we need to determine whether or not to save the last cell that we were on
@@ -1846,7 +1930,9 @@ public class PropertyEditor extends JPanel implements IPropertyEditor, ActionLis
 		}
 	}
 
-	/**
+	
+
+/**
 	 * Update the value on the property element
 	 *
 	 * @param[in] Row  The row that was just edited
@@ -1997,7 +2083,9 @@ public class PropertyEditor extends JPanel implements IPropertyEditor, ActionLis
 		pEle.setModified(true);
 	}
 
-	/**
+	
+
+/**
 	 * Retrieves the datatype preference from the preference manager
 	 * 
 	 *
@@ -2008,11 +2096,13 @@ public class PropertyEditor extends JPanel implements IPropertyEditor, ActionLis
 	 */
 	private boolean getDataTypePreference()
 	{
-		//kris richards - "DisplayTypeFSN" pref removed. Set to true
+		
             return true;
 	}
 
-	/**
+	
+
+/**
 	 * Special processing to reorder parameters
 	 * @return HRESULT
 	 *
@@ -2020,7 +2110,7 @@ public class PropertyEditor extends JPanel implements IPropertyEditor, ActionLis
 	private void reorderFeatures()
 	{
 		// only doing this for parameters at this time
-		// we are not set up to do it generically for "features"
+		
 		ETList<IParameter> pFeatures = new ETArrayList<IParameter>();
 
 		// get the grid node that is at the last row we just processed
@@ -2074,7 +2164,9 @@ public class PropertyEditor extends JPanel implements IPropertyEditor, ActionLis
 		}
 	}
 
-	/**
+	
+
+/**
 	 * Method to navigate up the grid node chain to retrieve the grid node that represents
 	 * the record that the passed in grid node is in.
 	 *
@@ -2107,7 +2199,9 @@ public class PropertyEditor extends JPanel implements IPropertyEditor, ActionLis
 		return retNode;
 	}
 
-	/**
+	
+
+/**
 	 * Calls the insert method of the property element
 	 * 
 	 *
@@ -2195,7 +2289,9 @@ public class PropertyEditor extends JPanel implements IPropertyEditor, ActionLis
 		}
 	}
 
-	/**
+	
+
+/**
 	 * Determines whether or not we need to call the insert function for a particular element
 	 * 
 	 *
@@ -2242,7 +2338,9 @@ public class PropertyEditor extends JPanel implements IPropertyEditor, ActionLis
 		return retVal;
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.swing.propertyeditor.IPropertyEditor#resetGridSettings()
 	 */
 	public long resetGridSettings()
@@ -2251,7 +2349,9 @@ public class PropertyEditor extends JPanel implements IPropertyEditor, ActionLis
 		return 0;
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.swing.propertyeditor.IPropertyEditor#resetGridFilter()
 	 */
 	public long resetGridFilter()
@@ -2260,7 +2360,9 @@ public class PropertyEditor extends JPanel implements IPropertyEditor, ActionLis
 		return 0;
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.swing.propertyeditor.IPropertyEditor#getWindowHandle()
 	 */
 	public int getWindowHandle()
@@ -2269,7 +2371,9 @@ public class PropertyEditor extends JPanel implements IPropertyEditor, ActionLis
 		return 0;
 	}
 
-	/**
+	
+
+/**
 	 * Ask the user what to do about a name collision
 	 *
 	 * @param pElement [in] The element being renamed
@@ -2302,7 +2406,9 @@ public class PropertyEditor extends JPanel implements IPropertyEditor, ActionLis
 		return 0;
 	}
 
-	/**
+	
+
+/**
 	 * Tells the listener we've got as a member that it was us that began editing
 	 */
 	public long beginEditContext()
@@ -2313,7 +2419,9 @@ public class PropertyEditor extends JPanel implements IPropertyEditor, ActionLis
 		}
 		return 0;
 	}
-	/**
+	
+
+/**
 	 * Tells the listener we've got as a member that we're done editing
 	 */
 	public void endEditContext()
@@ -2323,7 +2431,9 @@ public class PropertyEditor extends JPanel implements IPropertyEditor, ActionLis
 			m_NameCollisionListener.setEnabled(false);
 		}
 	}
-	/**
+	
+
+/**
 	 * Whether or not the property editor should respond to an event and reload its information.
 	 * We were running into performance issues from within some of the processes (ie. ERStudioIntegration
 	 * and DesignPattern Apply) where the property editor is receiving events, but we really don't want it
@@ -2343,7 +2453,9 @@ public class PropertyEditor extends JPanel implements IPropertyEditor, ActionLis
 		m_RespondToReload = value;
 	}
 
-	/**
+	
+
+/**
 	 * Figure out how we should present the property element to the user as far as whether the grid
 	 * node is read-only or not
 	 *
@@ -2386,7 +2498,9 @@ public class PropertyEditor extends JPanel implements IPropertyEditor, ActionLis
 		return isReadOnly;
 	}
 
-	/**
+	
+
+/**
 	 * Figure out how we should present the property element to the user as far as whether the grid
 	 * node is bold or not
 	 *
@@ -2420,7 +2534,9 @@ public class PropertyEditor extends JPanel implements IPropertyEditor, ActionLis
 		return bold;
 	}
 
-	/**
+	
+
+/**
 	 * Determines whether or not this property element should be editable.  There are some cases
 	 * that we know going in that it is not editable (ie. versioned file name).  There are other
 	 * cases that we want it to not be editable if it is a certain value.  In these cases, we
@@ -2503,7 +2619,9 @@ public class PropertyEditor extends JPanel implements IPropertyEditor, ActionLis
 		return bEdit;
 	}
 	
-	/**
+	
+
+/**
 	 * Display the proper menu in the grid based on where the user has clicked
 	 *
 	 * @param[in] pDef   The property definition used to help determine what menu to display
@@ -2532,7 +2650,7 @@ public class PropertyEditor extends JPanel implements IPropertyEditor, ActionLis
 				  pdName.equals("ReferencingElement")) //$NON-NLS-1$
 			{
 				// totally special processing for referred/referencing elements
-				// couldn't get it to work the generic way because we only wanted to show the opposite
+				
 				// element of the reference, and we wanted its value to be placed on the top level (read-only)
 				// and values string in propDef, but we wanted to only have a right-click delete, no create
 				if (parentDef != null)
@@ -2641,7 +2759,9 @@ public class PropertyEditor extends JPanel implements IPropertyEditor, ActionLis
 		return retMenuItems;
 	}
 	
-	/**
+	
+
+/**
 	 * Method to navigate up the property element chain to retrieve the element that represents
 	 * the collection that the passed in property element is in.
 	 *
@@ -2679,7 +2799,9 @@ public class PropertyEditor extends JPanel implements IPropertyEditor, ActionLis
 		return retEle;
 	}
 	
-	/**
+	
+
+/**
 	 * Determines whether or not the Fill menu should be displayed
 	 *
 	 */
@@ -2705,7 +2827,9 @@ public class PropertyEditor extends JPanel implements IPropertyEditor, ActionLis
 		
 	}
 
-	/**
+	
+
+/**
 	 * Called when the user changes the selection in the listbox
 	 *
 	 * @param[in] wNotifyCode
@@ -2866,7 +2990,9 @@ public class PropertyEditor extends JPanel implements IPropertyEditor, ActionLis
 		return retImages;
 	}
 
-	/**
+	
+
+/**
 	 * Set the icon of the grid cell
 	 * 
 	 *
@@ -2931,7 +3057,9 @@ public class PropertyEditor extends JPanel implements IPropertyEditor, ActionLis
 		return icon;
 	}
 
-	/**
+	
+
+/**
 	 * Determines the name to display in the property editor based on the IElement
 	 * type.  Couldn't just use the element type because some of the elements were
 	 * the same element type, but had qualities that were different, so we wanted a
@@ -3042,7 +3170,9 @@ public class PropertyEditor extends JPanel implements IPropertyEditor, ActionLis
 		return topName;
 	}
 
-	/**
+	
+
+/**
 	 * Called when a compartment on the drawing area is selected
 	 *
 	 * @param[in] selectedItems   The compartments that are selected in the drawing area
@@ -3104,7 +3234,9 @@ public class PropertyEditor extends JPanel implements IPropertyEditor, ActionLis
 //		}
 //	}
 
-	/**
+	
+
+/**
 	 * Called when something is selected on the drawing area
 	 *
 	 * @param[in] selectedItems   The items that are currently selected in the drawing area
@@ -3209,7 +3341,9 @@ public class PropertyEditor extends JPanel implements IPropertyEditor, ActionLis
 			}
 	}
 
-	/**
+	
+
+/**
 	 * Called when something is selected on the project tree
 	 *
 	 * @param[in] selectedItems   The items that are selected in the project tree
@@ -3296,7 +3430,9 @@ public class PropertyEditor extends JPanel implements IPropertyEditor, ActionLis
 		}
 	}
 
-	/**
+	
+
+/**
 	 * Called when something is selected on the project tree and we cannot get a model element for it
 	 * ie. a workspace, a unopened project, a diagram
 	 *
@@ -3321,7 +3457,9 @@ public class PropertyEditor extends JPanel implements IPropertyEditor, ActionLis
 		setPropertyElements(propEles);
 	}
 
-	/**
+	
+
+/**
 	 * Build the presentation section of the property element
 	 * 
 	 *
@@ -3406,7 +3544,9 @@ public class PropertyEditor extends JPanel implements IPropertyEditor, ActionLis
 //		}
 	}
 
-	/**
+	
+
+/**
 	 * Called when something is selected on the project tree and we cannot get a model element for it
 	 * ie. a workspace, a unopened project, a diagram
 	 *
@@ -3546,7 +3686,7 @@ public class PropertyEditor extends JPanel implements IPropertyEditor, ActionLis
 								if (trans != null)
 								{
 									String transValue = trans.translateIntoPSK(null, value);
-									String displayValue = subDef.getName();//subDef.getFromAttrMap("displayName");
+									String displayValue = subDef.getName();
 									if (displayValue != null && displayValue.equals(value))
 									{
 										mNode = addSubElementToTable(node, subDef, subEle, false);
@@ -3569,7 +3709,9 @@ public class PropertyEditor extends JPanel implements IPropertyEditor, ActionLis
 		return retObj;
 	}
 
-	/**
+	
+
+/**
 	 * Add the sub element of the passed in property element to the grid
 	 *
 	 * @param[in] pNode     The grid node to add element to
@@ -3746,7 +3888,9 @@ public class PropertyEditor extends JPanel implements IPropertyEditor, ActionLis
 		return retNode;
 	}
 	
-	/**
+	
+
+/**
 	 * Font property elements are displayed differently than other preference elements.  The font
 	 * definition looks like:
 	 * 
@@ -3776,7 +3920,9 @@ public class PropertyEditor extends JPanel implements IPropertyEditor, ActionLis
 		}
 	}
 	
-	/**
+	
+
+/**
 	 * Font property elements are displayed differently than other preference elements.  The font
 	 * definition looks like:
 	 * 
@@ -3831,7 +3977,9 @@ public class PropertyEditor extends JPanel implements IPropertyEditor, ActionLis
 		}
 	}
 
-	/**
+	
+
+/**
 	 * Font property elements are displayed differently than other preference elements.  The font
 	 * definition looks like:
 	 * 
@@ -3856,7 +4004,9 @@ public class PropertyEditor extends JPanel implements IPropertyEditor, ActionLis
 		
 	}
 
-	/**
+	
+
+/**
 	 * Color property elements are displayed differently than other preference elements.  The color
 	 * definition looks like:
 	 * 
@@ -3887,7 +4037,9 @@ public class PropertyEditor extends JPanel implements IPropertyEditor, ActionLis
 		}
 	}
 
-	/**
+	
+
+/**
 	 * Color property elements are displayed differently than other preference elements.  The color
 	 * definition looks like:
 	 * 
@@ -3934,7 +4086,9 @@ public class PropertyEditor extends JPanel implements IPropertyEditor, ActionLis
 			
 		// if there is no value for this, keep the color at white
 		// if there is a value, and it is black ("0"), need to set the grid color to one, per flex grid
-		/*
+		
+
+/*
 		Remarks    
 		Setting this property to zero (black) causes the control to paint the cell using the standard 
 		colors (set by the BackColor and BackColorAlternate properties). 
@@ -3964,7 +4118,9 @@ public class PropertyEditor extends JPanel implements IPropertyEditor, ActionLis
 		}
 	}
 
-	/**
+	
+
+/**
 	 * Child property elements are displayed differently than other preference elements.  
 	 *
 	 * @param row[in]				The current row
@@ -4002,7 +4158,9 @@ public class PropertyEditor extends JPanel implements IPropertyEditor, ActionLis
 		}
 	}
 
-	/**
+	
+
+/**
 	 * Retrieve the property definition from the definition factory
 	 * 
 	 *
@@ -4063,7 +4221,9 @@ public class PropertyEditor extends JPanel implements IPropertyEditor, ActionLis
 		return retDef;
 	}
 
-	/**
+	
+
+/**
 	 * Called when the create popup menu is clicked upon
 	 *
 	 * @param[in] wNotifyCode
@@ -4116,7 +4276,9 @@ public class PropertyEditor extends JPanel implements IPropertyEditor, ActionLis
       }
 	}
 	
-	/**
+	
+
+/**
 	 * Called when the user clicks on the delete popup menu 
 	 *
 	 * @param[in] wNotifyCode
@@ -4250,7 +4412,9 @@ public class PropertyEditor extends JPanel implements IPropertyEditor, ActionLis
 		}
 	}
 	
-	/**
+	
+
+/**
 	 * @param node
 	 * @param pEle
 	 */
@@ -4304,7 +4468,9 @@ public class PropertyEditor extends JPanel implements IPropertyEditor, ActionLis
 		}
 	}
 
-	/**
+	
+
+/**
 	 * Some of the updates that occur in the grid may also warrant a change to a node above it
 	 * 
 	 *
@@ -4351,7 +4517,9 @@ public class PropertyEditor extends JPanel implements IPropertyEditor, ActionLis
 		}
 	}
 
-	/**
+	
+
+/**
 	 * Special processing for associated diagrams on diagram and element
 	 * 
 	 *
@@ -4473,7 +4641,9 @@ public class PropertyEditor extends JPanel implements IPropertyEditor, ActionLis
 			}
 		}
 	}
-	/**
+	
+
+/**
 	 * Special processing for associated diagrams on diagram and element
 	 * 
 	 *
@@ -4515,7 +4685,9 @@ public class PropertyEditor extends JPanel implements IPropertyEditor, ActionLis
 		}
 	}
 
-	/**
+	
+
+/**
 	 * Refresh the grid node in the grid.  This is only used to add a node to a collection.  It adds
 	 * the proper property elements and then expands the proper node and places you in edit mode on the
 	 * added node
@@ -4610,7 +4782,9 @@ public class PropertyEditor extends JPanel implements IPropertyEditor, ActionLis
 		return retObj;
 	}
 	
-	/**
+	
+
+/**
 	 * Method to navigate up the grid node chain to retrieve the grid node that represents
 	 * the collection that the passed in grid node is in.
 	 *
@@ -4652,7 +4826,9 @@ public class PropertyEditor extends JPanel implements IPropertyEditor, ActionLis
 
 		return retCol;
 	}
-	/**
+	
+
+/**
 	 * @param parentNode
 	 * @return
 	 */
@@ -4661,7 +4837,9 @@ public class PropertyEditor extends JPanel implements IPropertyEditor, ActionLis
 		// TODO Auto-generated method stub
 		return 0;
 	}
-	/**
+	
+
+/**
 	 * Called when the user has clicked on a row and is expanding the grid node
 	 *
 	 * @param[in] row  The row that is being expanded
@@ -4897,7 +5075,9 @@ public class PropertyEditor extends JPanel implements IPropertyEditor, ActionLis
 		return newEle;
 	}
 
-	/**
+	
+
+/**
 	 * Shortcut method to retrieve the data from the grid cell which is in the form of a IPropertyElement
 	 *
 	 * @param[in] row     The row to retrieve the property element from
@@ -4962,7 +5142,9 @@ public class PropertyEditor extends JPanel implements IPropertyEditor, ActionLis
 		m_CurRow = row;
 	}
 	
-	/**
+	
+
+/**
 	 * Refresh the element in the grid.  This will remove any unwanted nodes and then add any others.
 	 *
 	 * @param[in] row        The row to refresh
@@ -5232,7 +5414,9 @@ public class PropertyEditor extends JPanel implements IPropertyEditor, ActionLis
 		}
 	}
 
-	/**
+	
+
+/**
 	 * 
 	 */
 	public void refresh()
@@ -5244,7 +5428,9 @@ public class PropertyEditor extends JPanel implements IPropertyEditor, ActionLis
 		}
 	}
 	
-	/**
+	
+
+/**
 	 * Called when dialog is initialized
 	 *
 	 * @param[in] uMsg
@@ -5307,7 +5493,9 @@ public class PropertyEditor extends JPanel implements IPropertyEditor, ActionLis
 		
 	}
 	
-	/**
+	
+
+/**
 	 * Called when the navigate popup menu is clicked upon
 	 *
 	 * @param[in] wNotifyCode
@@ -5368,7 +5556,9 @@ public class PropertyEditor extends JPanel implements IPropertyEditor, ActionLis
 		}
 	}
 	
-	/**
+	
+
+/**
 	 * Called when the fill down popup menu is clicked upon.  This takes the value in the first
 	 * selected row and changes the information of all of the other rows that are selected to
 	 * the value in the first row.
@@ -5455,7 +5645,9 @@ public class PropertyEditor extends JPanel implements IPropertyEditor, ActionLis
 		}
 	}
 	
-	/**
+	
+
+/**
 	 * Called before a grid cell is left - grid event
 	 *
 	 * @return VOID
@@ -5469,7 +5661,9 @@ public class PropertyEditor extends JPanel implements IPropertyEditor, ActionLis
 		}
 	}
 	
-	/**
+	
+
+/**
 	 * Called when the associate popup menu is clicked upon
 	 *
 	 * @param[in] wNotifyCode
@@ -5499,7 +5693,9 @@ public class PropertyEditor extends JPanel implements IPropertyEditor, ActionLis
 		}
 	}
 	
-	/**
+	
+
+/**
 	 * Some of the picklists used by the property editor are common and are built
 	 * from xpath queries.  This routine executes the xpath query and then gets the 
 	 * name from each element and stores it in a list buffer.
@@ -5624,7 +5820,9 @@ public class PropertyEditor extends JPanel implements IPropertyEditor, ActionLis
 		return m_ListBuffer;
 	}
 
-	/**
+	
+
+/**
 	 * Called when the insert popup menu is clicked upon
 	 *
 	 * @param[in] wNotifyCode
@@ -5736,7 +5934,9 @@ public class PropertyEditor extends JPanel implements IPropertyEditor, ActionLis
 		}
 	}
 
-	/**
+	
+
+/**
 	 * Used to hide/show the property editor element's subElements.
 	 */
 	public void sortPropertyEditorElements(int row)
@@ -5826,7 +6026,9 @@ public class PropertyEditor extends JPanel implements IPropertyEditor, ActionLis
 		return m_Mode == EDITOR_SEL ? true : false;
 	}
 
-	/**
+	
+
+/**
 	 * This method should save the value when it gets changed.
 	 * @param arg0
 	 */
@@ -6230,7 +6432,9 @@ public class PropertyEditor extends JPanel implements IPropertyEditor, ActionLis
 		}
 	}
 	
-	/*
+	
+
+/*
 	 * This method is called when a tree node in the property editor is 
 	 * double clicked. It will expand the node or collapse it.
 	 * If the node's property element is not built yet and the multiplicity
@@ -6270,7 +6474,9 @@ public class PropertyEditor extends JPanel implements IPropertyEditor, ActionLis
 		}
 	}
 	
-	/*
+	
+
+/*
 	 * Nodes with onDemand true or with multiplicity > 1 may not be built
 	 * at first load of an element. This method builds those.
 	 */
@@ -6434,7 +6640,9 @@ public class PropertyEditor extends JPanel implements IPropertyEditor, ActionLis
 		m_RightClickRow = newRow;
 	}
 
-	/** 
+	
+
+/** 
 	 * In order to protect this object from a reentrancy issue, we make
 	 * sure that m_SigChange is set to NULL before it is destroyed
 	 * 

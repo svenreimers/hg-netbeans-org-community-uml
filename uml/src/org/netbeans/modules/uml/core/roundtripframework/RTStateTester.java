@@ -42,11 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : RTStateTester.java
- * Created on : Nov 5, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.roundtripframework;
 
 import org.netbeans.modules.uml.core.coreapplication.ICoreProduct;
@@ -62,7 +59,8 @@ import org.netbeans.modules.uml.core.support.umlsupport.ProductRetriever;
 public class RTStateTester implements IRTStateTester
 {
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTStateTester#getProject(org.netbeans.modules.uml.core.metamodel.core.foundation.IElement)
      */
     public IProject getProject(IElement pElement)
@@ -99,7 +97,9 @@ public class RTStateTester implements IRTStateTester
         return null;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTStateTester#isAppInRoundTripState(org.netbeans.modules.uml.core.metamodel.core.foundation.IElement)
      */
     public boolean isAppInRoundTripState(IElement pElement)
@@ -119,7 +119,9 @@ public class RTStateTester implements IRTStateTester
 
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTStateTester#isElementRoundTripable(org.netbeans.modules.uml.core.metamodel.core.foundation.IElement)
      */
     public boolean isElementRoundTripable(IElement pElement)
@@ -131,7 +133,9 @@ public class RTStateTester implements IRTStateTester
         return false;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTStateTester#isElementRoundTripable(java.lang.String)
      */
     public boolean isElementRoundTripable(String elementType)
@@ -160,7 +164,9 @@ public class RTStateTester implements IRTStateTester
         return retval;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTStateTester#isProjectInRoundTripState(org.netbeans.modules.uml.core.metamodel.structure.IProject)
      */
     public boolean isProjectInRoundTripState(IProject pProject)
@@ -184,7 +190,9 @@ public class RTStateTester implements IRTStateTester
 
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTStateTester#isRelationInRoundTripState(org.netbeans.modules.uml.core.metamodel.core.foundation.IRelationProxy)
      */
     public boolean isRelationInRoundTripState(IRelationProxy pProxy)

@@ -43,6 +43,7 @@
  */
 
 
+
 /*
  *
  * Created on Jun 12, 2003
@@ -57,7 +58,8 @@ import org.netbeans.modules.uml.core.metamodel.structure.IProject;
 public interface ITreeWSProject
 {
 
-   /**
+   
+/**
     * @return
     */
    public IProject getRelatedProject();

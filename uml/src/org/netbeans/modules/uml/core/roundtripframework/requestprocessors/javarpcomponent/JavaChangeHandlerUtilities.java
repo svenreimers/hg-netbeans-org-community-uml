@@ -42,8 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-//	Author:  Aztec
-//	  Date:  Jan 19, 2004
+
+
 package org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpcomponent;
 
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IParameterableElement;
@@ -161,7 +161,9 @@ public class JavaChangeHandlerUtilities
         return fullList;
     }
 
-    /**
+    
+
+/**
      *
      * Given the derived class, find all applicable methods in the given base class 
      * and add them to the derived class. This goes "up the tree" from the base class,
@@ -209,7 +211,9 @@ public class JavaChangeHandlerUtilities
         }
     }
 
-    /**
+    
+
+/**
      *
      * Given the derived class, find all applicable methods in the given base class 
      * and add them to the derived class. This goes "up the tree" from the base class,
@@ -247,7 +251,7 @@ public class JavaChangeHandlerUtilities
                     baseClasses.add(checkIfDerivation(curClassifeir));
                 }
                 
-                //AZTEC: TODO: need to resolve the following
+                
                 //CBusyCtrlProxy busyState( _Module.GetResourceInstance(), IDS_JRT_DETERMINE_OPERATIONS );
 
                 // Get all abstract and virtual functions off of base class and
@@ -397,7 +401,9 @@ public class JavaChangeHandlerUtilities
         return retval;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpccomponent.IJavaChangeHandlerUtilities#attributePrefix(java.lang.String)
      */
     public String attributePrefix()
@@ -405,7 +411,9 @@ public class JavaChangeHandlerUtilities
         return getPreferenceValue("UML_ATTRIBUTE_PREFIX", "m");
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpccomponent.IJavaChangeHandlerUtilities#autoNameNavigableEndPreference()
      */
     public boolean autoNameNavigableEndPreference()
@@ -413,9 +421,8 @@ public class JavaChangeHandlerUtilities
         return getBooleanPreferenceValue("UML_SET_NAVIGABLE_END_ROLE_NAME", true);
     }
 
-    /* (non-Javadoc)
-     * @see org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpccomponent.IJavaChangeHandlerUtilities#breakReadAccessorFromAttribute(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation)
-     */
+    
+
     public void breakReadAccessorFromAttribute(IOperation pOp)
     {
         if (pOp != null)
@@ -466,7 +473,9 @@ public class JavaChangeHandlerUtilities
         }
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpccomponent.IJavaChangeHandlerUtilities#breakRedefinitions()
      */
     public void breakRedefinitions(
@@ -500,7 +509,9 @@ public class JavaChangeHandlerUtilities
         }
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpccomponent.IJavaChangeHandlerUtilities#breakRedefinitions(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier)
      */
     public void breakRedefinitions(
@@ -518,7 +529,9 @@ public class JavaChangeHandlerUtilities
         breakRedefinitions(baseOps, derivedOps);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpccomponent.IJavaChangeHandlerUtilities#breakRedefinitions(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation)
      */
     public void breakRedefinitions(IOperation pOperation)
@@ -556,7 +569,9 @@ public class JavaChangeHandlerUtilities
         }
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpccomponent.IJavaChangeHandlerUtilities#breakRedefinitionsPropagated(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier)
      */
     public void breakRedefinitionsPropagated(
@@ -634,9 +649,8 @@ public class JavaChangeHandlerUtilities
         }
     }
 
-    /* (non-Javadoc)
-     * @see org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpccomponent.IJavaChangeHandlerUtilities#breakWriteAccessorFromAttribute(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation)
-     */
+    
+
     public void breakWriteAccessorFromAttribute(IOperation pOp)
     {
         if (pOp != null)
@@ -648,7 +662,9 @@ public class JavaChangeHandlerUtilities
         }
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpccomponent.IJavaChangeHandlerUtilities#breakWriteAccessorsOfAttribute(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttribute)
      */
     public void breakWriteAccessorsOfAttribute(IAttribute pAttr)
@@ -703,7 +719,9 @@ public class JavaChangeHandlerUtilities
         pRedefiningOp.addRedefinedElement(pBaseOp);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpccomponent.IJavaChangeHandlerUtilities#collectAbstractOperations(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpccomponent.IOperationCollectionBehavior)
      */
     public ETList
@@ -758,7 +776,9 @@ public class JavaChangeHandlerUtilities
         return retList;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpccomponent.IJavaChangeHandlerUtilities#collectBaseClasses(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier)
      */
     public ETList < IClassifier > collectBaseClasses(IClassifier pClass)
@@ -883,7 +903,9 @@ public class JavaChangeHandlerUtilities
         return oppairs;
     }
 
-    /**
+    
+
+/**
      * Get all operations that are redefined by the given operation.
      * In other words, find the ops in the base classes that are redefined
      * by the method in the derived class. This  redefinition is setup in 
@@ -1026,7 +1048,9 @@ public class JavaChangeHandlerUtilities
             ETList < IOperation >> (topOps, bottomOps, middleOps);
     }
 
-    /**
+    
+
+/**
      *
      * Create an element list containing all of the elements from the first list
      * that are not contained in the second list.
@@ -1098,7 +1122,9 @@ public class JavaChangeHandlerUtilities
     	return outList;
 	}
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpccomponent.IJavaChangeHandlerUtilities#collectRedefiningOps(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation)
      */
     public ETList < IOperation > collectRedefiningOps(IOperation pOp)
@@ -1139,7 +1165,9 @@ public class JavaChangeHandlerUtilities
         return opList;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpccomponent.IJavaChangeHandlerUtilities#compareNames(org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElement, org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElement)
      */
     public boolean compareNames(INamedElement pItem1, INamedElement pItem2)
@@ -1230,7 +1258,9 @@ public class JavaChangeHandlerUtilities
         return isSameSignature;
     }
 
-    /**
+    
+
+/**
      *
      * copies the multiplicity OF the typed element
      *
@@ -1281,7 +1311,9 @@ public class JavaChangeHandlerUtilities
         }
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpccomponent.IJavaChangeHandlerUtilities#copyOperation(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier)
      */
     public IOperation copyOperation(IOperation pOrig, IClassifier pOwnerOfNew)
@@ -1563,7 +1595,9 @@ public class JavaChangeHandlerUtilities
         return pNew;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpccomponent.IJavaChangeHandlerUtilities#createChangeRequest(int, int, org.netbeans.modules.uml.core.metamodel.core.foundation.IElement, org.netbeans.modules.uml.core.metamodel.core.foundation.IElement, org.netbeans.modules.uml.core.metamodel.core.foundation.IElement)
      */
     public IChangeRequest createChangeRequest(
@@ -1637,7 +1671,9 @@ public class JavaChangeHandlerUtilities
         createDestructor(pClass, false);
     }
 
-    /**
+    
+
+/**
      * Create a destructor method on the class. In Java, this is the finalize 
      * method.
      */
@@ -2006,7 +2042,9 @@ public class JavaChangeHandlerUtilities
         return "void";
     }
 
-    /**
+    
+
+/**
      *
      * This is the function that looks for an operation with the same signature.
      * In other words, discovers the redefinition. Notice that this routine does 
@@ -2081,22 +2119,8 @@ public class JavaChangeHandlerUtilities
         return pIdenticalOperation;
     }
 
-    /**
-     *
-     * This routine is used when a generalization or implementation is created.
-     * It looks in the two classes for operations that match signature. Because 
-     * we want to keep the functions as generic as possible, we DON'T really
-     * want to build the redefinition here. But we cannot just return a single
-     * operation, since we want to keep the pairs together. So, I really need
-     * to create a typedef pair and a vector of those pair. Until then, I just
-     * return a list whose length should always be even, where the first operation
-     * is the base op, and the second is the redefining op.
-     *
-     * @param pBaseClass[in]
-     * @param pRedefiningClass[in]
-     * 
-     * @return oppairs[out]
-     */
+    
+
     public ETList
         < IOperation
         > discoverRedefinitions(
@@ -2436,7 +2460,7 @@ public class JavaChangeHandlerUtilities
         return getClass(pRequest, false);
     }
     
-//Jyothi: Modified this method, and overloaded it to seperate out extraction of IElement
+
     public IClassifier getClass(IChangeRequest pRequest, boolean fromBefore)
     {
         IClassifier retClass = null;
@@ -2578,7 +2602,9 @@ public class JavaChangeHandlerUtilities
         return independents;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpccomponent.IJavaChangeHandlerUtilities#getDependents(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier)
      */
     public ETList < IElement > getDependents(IClassifier pIndependentElement)
@@ -2669,7 +2695,9 @@ public class JavaChangeHandlerUtilities
         return baseClasses;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpccomponent.IJavaChangeHandlerUtilities#getImplementedInterfaces(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier)
      */
     public ETList < IClassifier > getImplementedInterfaces(IClassifier pClass)
@@ -2827,7 +2855,9 @@ public class JavaChangeHandlerUtilities
         return classList;
     }
 
-    /**
+    
+
+/**
      *
      * Get classifiers to which the specified class can navigate.
      *
@@ -2889,7 +2919,9 @@ public class JavaChangeHandlerUtilities
         return independentClasses;
     }
 
-    /**
+    
+
+/**
      *
      * Get classifiers which can navigate to the specified class.
      *
@@ -3009,7 +3041,9 @@ public class JavaChangeHandlerUtilities
         return retType;
     }
 
-    /**
+    
+
+/**
      *
      * Returns the package of the element. If the element is itself a package,
      * the returned package is the same element as the input element.
@@ -3048,7 +3082,9 @@ public class JavaChangeHandlerUtilities
         return pPackage;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpccomponent.IJavaChangeHandlerUtilities#getParticipatingEnds(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier)
      */
     public ETList < IAssociationEnd > getParticipatingEnds(IClassifier pClass)
@@ -3059,7 +3095,9 @@ public class JavaChangeHandlerUtilities
         return retEnds;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpccomponent.IJavaChangeHandlerUtilities#getParticipatingNavEnds(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier)
      */
     public ETList < INavigableEnd > getParticipatingNavEnds(IClassifier pClass)
@@ -3091,7 +3129,9 @@ public class JavaChangeHandlerUtilities
         return retEnds;
     }
 
-    /**
+    
+
+/**
      * A convenience function to get the parameter at the specified position in the operation's
      * list of parameters.
      * @param pParamsOp[in] The operation
@@ -3111,7 +3151,9 @@ public class JavaChangeHandlerUtilities
         return retParm;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpccomponent.IJavaChangeHandlerUtilities#getReadAccessorsOfAttribute(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttribute, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier)
      */
     public ETPairT < ETList < IOperation >,
@@ -3269,7 +3311,9 @@ public class JavaChangeHandlerUtilities
         return det;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpccomponent.IJavaChangeHandlerUtilities#getSpecializations(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier)
      */
     public ETList < IClassifier > getSpecializations(IClassifier pBaseClass)
@@ -3344,7 +3388,9 @@ public class JavaChangeHandlerUtilities
         return retClass;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpccomponent.IJavaChangeHandlerUtilities#getWriteAccessorsOfAttribute(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttribute, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier)
      */
     public ETPairT < ETList < IOperation >,
@@ -3487,7 +3533,9 @@ public class JavaChangeHandlerUtilities
         return isRedefined;
     }
 
-    /**
+    
+
+/**
      *
      * Checks to see if the candidate operation is already a redefinition of the other.
      * This means not only to check direct redefinitions, but goes all the way
@@ -3552,7 +3600,9 @@ public class JavaChangeHandlerUtilities
         return false;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpccomponent.IJavaChangeHandlerUtilities#isSame(org.netbeans.modules.uml.core.metamodel.core.foundation.IElement, org.netbeans.modules.uml.core.metamodel.core.foundation.IElement)
      */
     public boolean isSame(IElement pItem1, IElement pItem2)
@@ -3587,16 +3637,20 @@ public class JavaChangeHandlerUtilities
         }
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpccomponent.IJavaChangeHandlerUtilities#readAccessorPrefix()
      */
     public String readAccessorPrefix()
     {
-        //kris richards - change to NbPreferences
+        
         return NbPreferences.forModule(JavaChangeHandlerUtilities.class).get("UML_READ_ACCESSOR_PREFIX", "get");  // NOI18N
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpccomponent.IJavaChangeHandlerUtilities#removePrefixFromAccessor()
      */
     public boolean removePrefixFromAccessor()
@@ -3623,7 +3677,9 @@ public class JavaChangeHandlerUtilities
     }
     
     
-    /**
+    
+
+/**
      * A variable name can ne mMainStatus or mainStatus. We should treat 'm' as a prefix only in the former.
      * In former, we should check the next character. If uppercase, we should be treated as a real prefix, else not.
      */
@@ -3639,7 +3695,9 @@ public class JavaChangeHandlerUtilities
         return false;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpccomponent.IJavaChangeHandlerUtilities#setOperationReturnType(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation, java.lang.String)
      */
     public void setOperationReturnType(IOperation pOperation, String retType)
@@ -3652,12 +3710,14 @@ public class JavaChangeHandlerUtilities
         }
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpccomponent.IJavaChangeHandlerUtilities#writeAccessorPrefix()
      */
     public String writeAccessorPrefix()
     {
-        //kris richards - change to NbPreferences
+        
         return NbPreferences.forModule(JavaChangeHandlerUtilities.class).get("UML_WRITE_ACCESSOR_PREFIX", "set");  // NOI18N
     }
 
@@ -3743,7 +3803,9 @@ public class JavaChangeHandlerUtilities
         return retval;
     }
 
-    /**
+    
+
+/**
      *
      * Return all operations from the given class that are redefinable
      *
@@ -3813,7 +3875,9 @@ public class JavaChangeHandlerUtilities
 		return opList;
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Return all operations from the given class that are redefinable
 	 *
@@ -4156,7 +4220,9 @@ public class JavaChangeHandlerUtilities
         return derivedClasses;
     }
 
-    /**
+    
+
+/**
      *
      * Compare the types of 2 typed elements are return true if they are the same.
      * This compares the identity of the types, which are elements. It does NOT
@@ -4220,7 +4286,9 @@ public class JavaChangeHandlerUtilities
         return attrNameCap;
     }
 
-    /**
+    
+
+/**
      * A convenience function to get the parameter of the operation that corresponds
      * to the given parameter. The assumption here is that the operation of the 
      * given parameter is a redefinition of the given operation.
@@ -4257,7 +4325,9 @@ public class JavaChangeHandlerUtilities
         return retParm;
     }
 
-    /**
+    
+
+/**
      * A convenience function to get the parameter of the operation that corresponds
      * to the given parameter. The assumption here is that the operation of the 
      * given parameter is a redefinition of the given operation.  
@@ -4547,7 +4617,9 @@ public class JavaChangeHandlerUtilities
         return false;
     }
 
-    /**
+    
+
+/**
      * Methods that are empty and unused as of now.
      */
     public String getOldOperationSig(IChangeRequest pRequest)
@@ -4665,7 +4737,9 @@ public class JavaChangeHandlerUtilities
 					}
 				}
 			}
-			/*		   
+			
+
+/*		   
 				 #else
 					   impList = pClass.getImplementations();
 				 #endif
@@ -4872,7 +4946,7 @@ public class JavaChangeHandlerUtilities
 
     // This routine is used when a generalization or implementation is created.
     // It looks in the two classes for operations that match signature. Because 
-    // we want to keep the functions as generic as possible, we DON'T really
+    
     // want to build the redefinition here. But we cannot just return a single
     // operation, since we want to keep the pairs together. So, I really need
     // to create a typedef pair and a vector of those pair. Until then, I just
@@ -5052,7 +5126,7 @@ public class JavaChangeHandlerUtilities
         return null;
     }
     
-    //Jyothi: Fix for Bug#6327840
+    
     public boolean doesGetterExist(IAttribute pAttr, IClassifier pClass) {
         boolean exists = false;
         if (pAttr != null && pClass != null) {
@@ -5100,7 +5174,7 @@ public class JavaChangeHandlerUtilities
         return exists;
     }
     
-    //Jyothi: Fix for Bug#6327840
+    
     public boolean doesSetterExist(IAttribute pAttr, IClassifier pClass) {
         boolean exists = false;
         if (pAttr != null && pClass != null) {

@@ -71,7 +71,9 @@ public class EventDispatcher implements IEventDispatcher
     private EventFunctor m_PrePushFunc = null;
     private EventFunctor m_PostPushFunc = null;
 
-	/**
+	
+
+/**
 	 * Registers an event sink to handle frameework events.
 	 */
 	public void registerForEventFrameworkEvents( IEventFrameworkEventsSink handler )
@@ -86,7 +88,9 @@ public class EventDispatcher implements IEventDispatcher
 		}
 	}
 
-	/**
+	
+
+/**
 	 * Removes a sink listening for framework events.
 	*/
 	public void revokeEventFrameworkSink( IEventFrameworkEventsSink handler )
@@ -94,7 +98,9 @@ public class EventDispatcher implements IEventDispatcher
        m_manager.removeListener(handler);
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Fired right after a context has been pushed on this dispatcher.
 	 *
@@ -122,7 +128,9 @@ public class EventDispatcher implements IEventDispatcher
 			}
      }
 
-	/**
+	
+
+/**
 	 *
 	 * Fired before an EventContext is pushed onto this Dispatcher.
 	 *
@@ -159,7 +167,9 @@ public class EventDispatcher implements IEventDispatcher
      	return proceed;
    }
 
-	/**
+	
+
+/**
 	 *
 	 * Fired before an EventContext is popped from this Dispatcher.
 	 *
@@ -189,6 +199,8 @@ public class EventDispatcher implements IEventDispatcher
 			m_manager.notifyListenersWithQualifiedProceed(m_PrePopFunc);
 			proceed = cell.canContinue();
 			
+
+
 /*   TwoParmFunctor< IEventFrameworkEventsSink, IEventContext*, IResultCell* > func( 0, 
 										 &IEventFrameworkEventsSink::OnPreEventContextPopped, 
 										 pContext,
@@ -201,7 +213,9 @@ public class EventDispatcher implements IEventDispatcher
         return proceed;
      }
 
-	/**
+	
+
+/**
 	 *
 	 * Fired right after a context has been popped from this dispatcher.
 	 *
@@ -227,6 +241,8 @@ public class EventDispatcher implements IEventDispatcher
 			m_PostPopFunc.setParameters(parms);
 			m_manager.notifyListeners(m_PostPopFunc);
 
+
+
 /*		   TwoParmFunctor< IEventFrameworkEventsSink, 
 						   IEventContext*, 
 						   IResultCell* > func ( 0, 
@@ -238,7 +254,9 @@ public class EventDispatcher implements IEventDispatcher
      }
 
 
-	/**
+	
+
+/**
 	 *
 	 * Fired when a dispatch of a particular event is cancelled by a listener.
 	 *
@@ -278,7 +296,9 @@ public class EventDispatcher implements IEventDispatcher
 		}
    }
 
-	/**
+	
+
+/**
 	 *
 	 * Establishes a new EventContext of the given name on the internal
 	 * stack of EventContext objects.
@@ -298,7 +318,9 @@ public class EventDispatcher implements IEventDispatcher
 		}
      }
 
-	/**
+	
+
+/**
 	 *
 	 * Establishes a new EventContext of the given name on the internal
 	 * stack of EventContext objects.
@@ -318,7 +340,9 @@ public class EventDispatcher implements IEventDispatcher
         return con;
      }
 
-	/**
+	
+
+/**
 	 *
 	 * Establishes the passed in EventContext as the current context.
 	 *
@@ -340,7 +364,9 @@ public class EventDispatcher implements IEventDispatcher
      	}
      }
 
-	/**
+	
+
+/**
 	 *
 	 * Removes the top context on the stack.
 	 *
@@ -355,7 +381,9 @@ public class EventDispatcher implements IEventDispatcher
         }
      }
 
-	/**
+	
+
+/**
 	 *
 	 * Pops the current context off our internal stack, firing appropriate events.
 	 *
@@ -383,7 +411,9 @@ public class EventDispatcher implements IEventDispatcher
 		return retContext;
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Pops the current event context off the stack and returns it.
 	 *
@@ -402,7 +432,9 @@ public class EventDispatcher implements IEventDispatcher
         return context;
      }
 
-	/**
+	
+
+/**
 	 *
 	 * Retrieves the current context on this dispatcher.
 	 *
@@ -421,7 +453,9 @@ public class EventDispatcher implements IEventDispatcher
         return context;
      }
 
-	/**
+	
+
+/**
 	 *
 	 * Retrieves the name of the current context on this dispatcher.
 	 *
@@ -441,7 +475,9 @@ public class EventDispatcher implements IEventDispatcher
 		return name;
      }
 
-	/**
+	
+
+/**
 	 *
 	 * Removes an EventContext by name.
 	 *
@@ -468,7 +504,9 @@ public class EventDispatcher implements IEventDispatcher
      	}
      }
 
-	/**
+	
+
+/**
 	 *
 	 * Erases a context off our internal stack, firing appropriate events.
 	 *
@@ -492,7 +530,9 @@ public class EventDispatcher implements IEventDispatcher
 		}
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Removes the context that contains a filter with the passed in ID.
 	 *
@@ -523,7 +563,9 @@ public class EventDispatcher implements IEventDispatcher
 		}
      }
 
-	/**
+	
+
+/**
 	 *
 	 * Creates the appropriate payload as dictated by the mechanism file.
 	 *
@@ -597,7 +639,9 @@ public class EventDispatcher implements IEventDispatcher
             m_preventAllEvents = value;
         }
 
-	/**
+	
+
+/**
 	 *
 	 * Returns how many listeners are associated with this dispatcher
 	 *
@@ -638,7 +682,9 @@ public class EventDispatcher implements IEventDispatcher
 //	   return validated;
 //	}
 
-	/**
+	
+
+/**
 	 * Creates and prepares the IResultCell object that will be included with the event.
 	 *
 	 * @param payload[in] The payload to include with the event cell. Can be 0
@@ -658,7 +704,9 @@ public class EventDispatcher implements IEventDispatcher
 	    return cell;
 	}
 
-	/**
+	
+
+/**
 	 * Validates the trigger, preventing or allowing the resultant event
 	 * to occur or not.
 	 *
@@ -688,7 +736,9 @@ public class EventDispatcher implements IEventDispatcher
 	   return valid;
 	}
 
-	/**
+	
+
+/**
 	 * Retrieves the prog id for the default EventContext implementation.
 	 * It does this by retrieving the setting of the eventContextProgID 
 	 * xml attribute off the EventFramework element itself.
@@ -714,7 +764,9 @@ public class EventDispatcher implements IEventDispatcher
 	   return progID;
 	}
 
-	/**
+	
+
+/**
 	 * Creates the EventContext object that corresponds to the passed
 	 * in context state.
 	 *
@@ -751,7 +803,9 @@ public class EventDispatcher implements IEventDispatcher
 	   return context;
 	}
 
-	/**
+	
+
+/**
 	 * Retrieves the ProgID of the EventContext object.
 	 *
 	 * @return The progID
@@ -784,7 +838,9 @@ public class EventDispatcher implements IEventDispatcher
 		return progID;
 	}
 
-	/**
+	
+
+/**
 	 * Retrieves the document that represents the event
 	 * mechanism framework configuration file.
 	 *

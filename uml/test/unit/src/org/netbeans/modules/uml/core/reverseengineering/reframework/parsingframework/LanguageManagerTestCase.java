@@ -49,6 +49,8 @@ import org.netbeans.modules.uml.core.AbstractUMLTestCase;
 import org.netbeans.modules.uml.core.reverseengineering.parsers.javaparser.REJavaParser;
 import org.netbeans.modules.uml.core.support.umlsupport.IStrings;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
+
+
 /**
  * Test cases for LanguageManager.
  */

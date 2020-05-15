@@ -43,6 +43,7 @@
  */
 
 
+
 /*
  *
  * Created on Jul 2, 2003
@@ -70,7 +71,9 @@ public class UserResultListener implements ActionListener, MessageResultKindEnum
       setParentDialog(parent);
    }
    
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see java.awt.event.ActionListener#actionPerformed(java.awt.event.ActionEvent)
     */
    public void actionPerformed(ActionEvent e)
@@ -126,7 +129,9 @@ public class UserResultListener implements ActionListener, MessageResultKindEnum
       }
    }
 
-   /**
+   
+
+/**
     * @return
     */
    public QuestionResponse getUserResponse()
@@ -134,7 +139,9 @@ public class UserResultListener implements ActionListener, MessageResultKindEnum
       return m_UserResponse;
    }
 
-   /**
+   
+
+/**
     * @param response
     */
    public void setUserResponse(QuestionResponse response)
@@ -142,7 +149,9 @@ public class UserResultListener implements ActionListener, MessageResultKindEnum
       m_UserResponse = response;
    }
 
-   /**
+   
+
+/**
     * @return
     */
    public JDialog getParentDialog()
@@ -150,7 +159,9 @@ public class UserResultListener implements ActionListener, MessageResultKindEnum
       return m_ParentDialog;
    }
 
-   /**
+   
+
+/**
     * @param dialog
     */
    public void setParentDialog(JDialog dialog)

@@ -49,37 +49,51 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 public interface IDerivation extends IDependency
 {
-	/**
+	
+
+/**
 	 * property DerivedClassifier
 	*/
 	public IClassifier getDerivedClassifier();
 
-	/**
+	
+
+/**
 	 * property DerivedClassifier
 	*/
 	public void setDerivedClassifier( IClassifier value );
 
-	/**
+	
+
+/**
 	 * property Template
 	*/
 	public IClassifier getTemplate();
 
-	/**
+	
+
+/**
 	 * property Template
 	*/
 	public void setTemplate( IClassifier classifier );
 
-	/**
+	
+
+/**
 	 * method AddBinding
 	*/
 	public void addBinding( IUMLBinding pBind );
 
-	/**
+	
+
+/**
 	 * method RemoveBinding
 	*/
 	public void removeBinding( IUMLBinding pBind );
 
-	/**
+	
+
+/**
 	 * property Bindings
 	*/
 	public ETList<IUMLBinding> getBindings();

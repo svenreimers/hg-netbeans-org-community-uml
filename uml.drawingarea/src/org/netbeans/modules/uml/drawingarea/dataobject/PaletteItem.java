@@ -52,6 +52,7 @@ import org.netbeans.modules.uml.drawingarea.palette.NodeInitializer;
 import org.openide.nodes.Node;
 
 
+
 /**
  * PaletteItem holds important information about one component (item)
  * in the palette.

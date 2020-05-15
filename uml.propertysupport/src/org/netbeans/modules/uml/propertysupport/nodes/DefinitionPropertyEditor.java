@@ -65,7 +65,9 @@ public class DefinitionPropertyEditor extends PropertyEditorSupport // implement
    
 //   ConfigStringTranslator mTranslator = new ConfigStringTranslator();
 
-   /**
+   
+
+/**
     * 
     */
    public DefinitionPropertyEditor(IPropertyDefinition def, IPropertyElement element)
@@ -75,7 +77,9 @@ public class DefinitionPropertyEditor extends PropertyEditorSupport // implement
       setElement(element);
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see java.beans.PropertyEditor#setValue(java.lang.Object)
     */
    public void setValue(Object value)
@@ -87,7 +91,9 @@ public class DefinitionPropertyEditor extends PropertyEditorSupport // implement
 
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see java.beans.PropertyEditor#getValue()
     */
    public Object getValue()
@@ -95,7 +101,9 @@ public class DefinitionPropertyEditor extends PropertyEditorSupport // implement
       return getElement().getValue();
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see java.beans.PropertyEditor#getAsText()
     */
    public String getAsText()
@@ -133,7 +141,9 @@ public class DefinitionPropertyEditor extends PropertyEditorSupport // implement
       return translateFullyQualifiedName(retVal);
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see java.beans.PropertyEditor#setAsText(java.lang.String)
     */
    public void setAsText(String text) throws IllegalArgumentException
@@ -254,7 +264,9 @@ public class DefinitionPropertyEditor extends PropertyEditorSupport // implement
 //       return retVal;
 //   }
    
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see java.beans.PropertyEditor#getTags()
     */
    public String[] getTags()
@@ -283,7 +295,9 @@ public class DefinitionPropertyEditor extends PropertyEditorSupport // implement
    // Data Access Methods
    //**************************************************
 
-   /**
+   
+
+/**
     * @return
     */
    public IPropertyElement getElement()
@@ -291,7 +305,9 @@ public class DefinitionPropertyEditor extends PropertyEditorSupport // implement
       return mElement;
    }
 
-   /**
+   
+
+/**
     * @param element
     */
    public void setElement(IPropertyElement element)
@@ -299,7 +315,9 @@ public class DefinitionPropertyEditor extends PropertyEditorSupport // implement
       mElement = element;
    }
 
-   /**
+   
+
+/**
     * @return
     */
    public IPropertyDefinition getDefinition()
@@ -307,7 +325,9 @@ public class DefinitionPropertyEditor extends PropertyEditorSupport // implement
       return mDefinition;
    }
 
-   /**
+   
+
+/**
     * @param definition
     */
    public void setDefinition(IPropertyDefinition definition)

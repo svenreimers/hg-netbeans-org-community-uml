@@ -104,7 +104,9 @@ public class StateHandlerController
             m_Roots.add(data.handler);
     }
 
-    /**
+    
+
+/**
      * Removes a state handler from the list of state handlers.
      *
      * @param stateName [in] The name of the state.
@@ -121,7 +123,9 @@ public class StateHandlerController
         }
     }
 
-    /**
+    
+
+/**
      * Process the token that has been discovered by the parser.
      * 
      * pToken [in] The token to be processed.
@@ -136,7 +140,9 @@ public class StateHandlerController
         }
     }
 
-    /**
+    
+
+/**
      * Retrieves the current state handler.  The current state
      * handler is responsible for all states and tokens.
      *
@@ -150,7 +156,9 @@ public class StateHandlerController
                           : null;
     }
 
-    /**
+    
+
+/**
      * Get the status of the KeepRoots state.  When in the KeepRoots
      * state the root state handler will not be removed.
      *
@@ -161,7 +169,9 @@ public class StateHandlerController
         return m_KeepRoots;
     }
 
-    /**
+    
+
+/**
      * Retrieve all of the root state handlers.
      *
      * @return A list of root state handlers.
@@ -171,7 +181,9 @@ public class StateHandlerController
         return m_Roots;
     }
 
-    /**
+    
+
+/**
      * Retrieve the number of state handlers that are being controlled.
      *
      * @return The number of state handlers.

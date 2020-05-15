@@ -60,7 +60,9 @@ public class ProjectTreeUpdateLocker implements IProjectTreeUpdateLocker
 		super();
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeUpdateLocker#lockTree(org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl)
 	 */
 	public void lockTree(IProjectTreeControl pControl)

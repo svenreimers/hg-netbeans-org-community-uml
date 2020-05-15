@@ -72,7 +72,9 @@ public class AttributeWidget extends FeatureWidget implements PropertyChangeList
 
     ///////////////////////////////////////////////////////////////
     // PropertyChangeListener Implementation
-    /**
+    
+
+/**
      * The property change listener is used by the diagram to notify widgets of
      * model element property change events.
      */
@@ -83,7 +85,7 @@ public class AttributeWidget extends FeatureWidget implements PropertyChangeList
             if(getElement()!=null && getElement() instanceof IAttribute)
             {
                 IAttribute attr=(IAttribute) getElement();
-                if(attr.getIsPrimaryKey())//not sure how it was implemented in 6.1, but formattr do not return proper string
+                if(attr.getIsPrimaryKey())
                 {
                     formatedStr=attr.getName() + "{PK}";
                 }

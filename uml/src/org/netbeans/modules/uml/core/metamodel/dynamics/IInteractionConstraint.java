@@ -49,22 +49,30 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.IExpression;
 
 public interface IInteractionConstraint extends IConstraint
 {
-	/**
+	
+
+/**
 	 * Sets / Gets the minimum number of iterations of a loop.
 	*/
 	public IExpression getMinInt();
 
-	/**
+	
+
+/**
 	 * Sets / Gets the minimum number of iterations of a loop.
 	*/
 	public void setMinInt( IExpression value );
 
-	/**
+	
+
+/**
 	 * Sets / Gets the maximum number of iterations of a loop.
 	*/
 	public IExpression getMaxInt();
 
-	/**
+	
+
+/**
 	 * Sets / Gets the maximum number of iterations of a loop.
 	*/
 	public void setMaxInt( IExpression value );

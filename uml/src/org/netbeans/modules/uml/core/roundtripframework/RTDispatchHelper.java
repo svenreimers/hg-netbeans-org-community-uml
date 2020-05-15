@@ -42,14 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : RTDispatchHelper.java
- * Created on : Nov 10, 2003
- * Author     : Aztec
- * Description: No need to create other helpers like RTClassifierDispatchHelper
- *              etc. Only RTRelationDispatchHelper has an odd signature for
- *              establish(). So creating RTRelationDispatchHelper alone.
- */
+
+
 package org.netbeans.modules.uml.core.roundtripframework;
 
 import org.netbeans.modules.uml.core.eventframework.EventDispatchNameKeeper;
@@ -99,7 +93,9 @@ public class RTDispatchHelper
         }
     }
     
-    /**
+    
+
+/**
      *
      * The IResultCell comes in on the initial event. The Data property of that cell
      * may or may not have valid data on it. Regardless, a new IRoundTripEventPayload object
@@ -121,7 +117,9 @@ public class RTDispatchHelper
         m_CellOrigValue = cell.canContinue();
         m_Proceed = m_CellOrigValue;
     }
-    /**
+    
+
+/**
      *
      * The IResultCell comes in on the initial event. The Data property of that cell
      * may or may not have valid data on it. Regardless, a new IRoundTripEventPayload object
@@ -145,7 +143,9 @@ public class RTDispatchHelper
             project = pOwner.getProject();
         return createRTContextPayload(cell, project, pOwner);
     }
-    /**
+    
+
+/**
      *
      * The IResultCell comes in on the initial event. The Data property of that cell
      * may or may not have valid data on it. Regardless, a new IRoundTripEventPayload object

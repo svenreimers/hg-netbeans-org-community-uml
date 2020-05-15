@@ -119,7 +119,9 @@ public abstract class WizardPanelBase extends JPanel implements WizardDescriptor
 	}
 
 
-	/** 
+	
+
+/** 
 	 *
 	 *
 	 */
@@ -129,7 +131,9 @@ public abstract class WizardPanelBase extends JPanel implements WizardDescriptor
 	}
 
 
-	/** 
+	
+
+/** 
 	 *
 	 *
 	 */

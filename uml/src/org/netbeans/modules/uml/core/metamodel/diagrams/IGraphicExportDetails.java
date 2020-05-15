@@ -50,38 +50,52 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 public interface IGraphicExportDetails
 {
-	/**
+	
+
+/**
 	 * The bounding rectangle of the exported graphic
 	*/
 	public IETRect getGraphicBoundingRect();
 
-	/**
+	
+
+/**
 	 * The bounding rectangle of the exported graphic
 	*/
 	public void setGraphicBoundingRect( IETRect value );
 
 	
-	/**
+	
+
+/**
 	 * The bounding rectangle of the exported graphic
 	*/
 	public IETRect getFrameBoundingRect();
 
-	/**
+	
+
+/**
 	 * The bounding rectangle of the exported graphic
 	*/
 	public void setFrameBoundingRect( IETRect value );
 
-	/**
+	
+
+/**
 	 * A list of map locations
 	*/
 	public ETList<IGraphicMapLocation> getMapLocations();
 
-	/**
+	
+
+/**
 	 * A list of map locations
 	*/
 	public void setMapLocations( ETList<IGraphicMapLocation> value );
 
-	/**
+	
+
+/**
 	 * Clears out the map data
 	*/
 	public void clear();

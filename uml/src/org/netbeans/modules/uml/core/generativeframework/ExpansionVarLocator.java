@@ -60,7 +60,9 @@ public class ExpansionVarLocator {
     private static final int PS_ESCAPE     = 3;
     private static final int PS_VAR        = 4;
 
-	/**
+	
+
+/**
 	 * @param manager
 	 * @param templateFile
 	 * @param templateBuffer
@@ -82,7 +84,9 @@ public class ExpansionVarLocator {
         initialize();
 	}
     
-    /**
+    
+
+/**
      * @param manager
      * @param templateFile
      * @param templateBuffer
@@ -127,7 +131,9 @@ public class ExpansionVarLocator {
         return m_Manager != null? m_Manager.getFactory() : null;
     }
     
-	/**
+	
+
+/**
 	 * @return
 	 */
 	public String expandVars() {

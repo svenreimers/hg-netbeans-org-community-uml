@@ -49,52 +49,72 @@ import org.netbeans.modules.uml.core.support.umlsupport.IResultCell;
 
 public interface IEditControlEventSink
 {
-	/**
+	
+
+/**
 	 * Fired when data not consistent with the selected mask is passed
 	*/
 	public void onPreInvalidData( String ErrorData, IResultCell cell );
 
-	/**
+	
+
+/**
 	 * Fired when data not consistent with the selected mask is passed
 	*/
 	public void onInvalidData( String ErrorData, IResultCell cell );
 
-	/**
+	
+
+/**
 	 * Fired when user toggles Insert/Overstrike mode via the Insert key
 	*/
 	public void onPreOverstrike( boolean bOverstrike, IResultCell cell );
 
-	/**
+	
+
+/**
 	 * Fired when user toggles Insert/Overstrike mode via the Insert key
 	*/
 	public void onOverstrike( boolean bOverstrike, IResultCell cell );
 
-	/**
+	
+
+/**
 	 * The control is about to gain focus
 	*/
 	public void onPreActivate( IEditControl pControl, IResultCell cell );
 
-	/**
+	
+
+/**
 	 * The control has gained focus
 	*/
 	public void onActivate( IEditControl pControl, IResultCell cell );
 
-	/**
+	
+
+/**
 	 * The control has lost focus
 	*/
 	public void onDeactivate( IEditControl pControl, IResultCell cell );
 
-	/**
+	
+
+/**
 	 * Sets an AxEditEvents object as owner of this event sink. Events will be routed to the owner
 	*/
 	public void setEventOwner( /* long */ int pOwner );
 
-	/**
+	
+
+/**
 	 * Model element data is about to be saved.
 	*/
 	public void onPreCommit( IResultCell cell );
 
-	/**
+	
+
+/**
 	 * Model element data has been saved.
 	*/
 	public void onPostCommit( IResultCell cell );

@@ -42,6 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
+
+
 /*
  * Created on Sep 16, 2003
  *
@@ -59,7 +61,8 @@ import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure
  */
 public class CreateAction extends Action implements ICreateAction
 {
-	/**
+	
+/**
 	 * Sets / Gets classifier that specifies the instance which will be created when the create action is performed.
 	*/
 	public IClassifier getInstantiation()
@@ -68,7 +71,9 @@ public class CreateAction extends Action implements ICreateAction
 						retrieveSingleElementWithAttrID(this,"instantiation", IClassifier.class);
 	}
 
-	/**
+	
+
+/**
 	 * Sets / Gets classifier that specifies the instance which will be created when the create action is performed.
 	*/
 	public void setInstantiation( IClassifier classifier )
@@ -76,7 +81,9 @@ public class CreateAction extends Action implements ICreateAction
 		setElement( classifier, "instantiation" );
 	}
 	
-	/**
+	
+
+/**
 	 * Establishes the appropriate XML elements for this UML type.
 	 *
 	 * [in] The document where this element will reside

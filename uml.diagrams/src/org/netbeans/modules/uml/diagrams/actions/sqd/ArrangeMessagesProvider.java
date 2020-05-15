@@ -51,12 +51,14 @@ import org.netbeans.api.visual.widget.Widget;
 import org.netbeans.modules.uml.diagrams.nodes.sqd.ExecutionSpecificationThinWidget;
 import org.netbeans.modules.uml.drawingarea.actions.ActionProvider;
 
+
 /**
  * common for all shifts, etc
  */
 abstract public class ArrangeMessagesProvider implements ActionProvider {
     
-    /**
+    
+/**
      * sort execution specifications 
      * @param parentWidget in this widget all children execution specifications will be sorted and returned
      * @return sorted list of execution specifications (top to bottom order)
@@ -74,7 +76,9 @@ abstract public class ArrangeMessagesProvider implements ActionProvider {
         return coWidgets;
     }
     
-    /*
+    
+
+/*
      * 
      * Less if closer to header (i.e. less Y).
      */
@@ -86,7 +90,9 @@ abstract public class ArrangeMessagesProvider implements ActionProvider {
         {
             this(null);
         }
-        /*
+        
+
+/*
          * hook affect equal widgets
          */
         public ThinExecutionSpecificationByPositionComparator(ExecutionSpecificationThinWidget hook)

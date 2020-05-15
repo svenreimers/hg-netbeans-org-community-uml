@@ -46,12 +46,16 @@ package org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructur
 
 public interface INavigableEnd extends IAssociationEnd, IAttribute
 {
-	/**
+	
+
+/**
 	 * Turns this end into a normal associationend.
 	*/
 	public IAssociationEnd makeNonNavigable();
 
-	/**
+	
+
+/**
 	 * Designates the classifier that has this end as a referenced attribute.
 	*/
 	public IClassifier getReferencingClassifier();

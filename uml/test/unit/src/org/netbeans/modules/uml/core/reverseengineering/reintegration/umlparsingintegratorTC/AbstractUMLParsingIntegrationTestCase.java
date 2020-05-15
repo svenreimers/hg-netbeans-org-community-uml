@@ -85,7 +85,7 @@ public abstract class AbstractUMLParsingIntegrationTestCase extends
 
 		final IProject project = getProject();
 
-// conover - RE is a n NB task now, so can't call it directly anymore
+
 //		final UMLParsingIntegrator integrator = new UMLParsingIntegrator();
 //		integrator.reverseEngineer(project, false, false, true, true);
 
@@ -226,7 +226,9 @@ public abstract class AbstractUMLParsingIntegrationTestCase extends
 		return retVal;
 	}
 
-	/**
+	
+
+/**
 	 * Get the path of test Data Folder
 	 */
 	private String getDataDir() {
@@ -249,7 +251,9 @@ public abstract class AbstractUMLParsingIntegrationTestCase extends
 		return testDataPath;
 	}
 
-	/*
+	
+
+/*
 	 * (non-Javadoc)
 	 * 
 	 * @see junit.framework.TestCase#tearDown()

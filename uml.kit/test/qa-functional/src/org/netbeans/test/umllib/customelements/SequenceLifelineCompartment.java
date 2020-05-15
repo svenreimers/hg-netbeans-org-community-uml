@@ -56,7 +56,9 @@ import org.netbeans.test.umllib.exceptions.NotFoundException;
 public class SequenceLifelineCompartment extends CompartmentOperator{
     
     
-    /**
+    
+
+/**
      * Construct compartment 
      * @param el Instance of DiagramElementOperator to look for compartment     
      * @throws qa.uml.exceptions.NotFoundException when no suitable compartment found
@@ -66,7 +68,9 @@ public class SequenceLifelineCompartment extends CompartmentOperator{
     }
     
     
-    /**
+    
+
+/**
      * Construct compartment by index
      * @param el Instance of DiagramElementOperator to look for compartment
      * @param index index
@@ -76,7 +80,9 @@ public class SequenceLifelineCompartment extends CompartmentOperator{
         super(el, index);
     }
     
-    /**
+    
+
+/**
      * Costruct compartment by type
      * @param el Instance of DiagramElementOperator to look for compartment
      * @param type Compartemnt type.
@@ -86,7 +92,9 @@ public class SequenceLifelineCompartment extends CompartmentOperator{
     public SequenceLifelineCompartment(DiagramElementOperator el, CompartmentTypes type) throws NotFoundException{
         super(el, type);        
     }
-    /**
+    
+
+/**
      * Construct compartment by compartment class
      * @param el Instance of DiagramElementOperator
      * @param co Instance of ICompartment
@@ -96,7 +104,9 @@ public class SequenceLifelineCompartment extends CompartmentOperator{
     }
     
     
-    /**
+    
+
+/**
      *@return logical bounding rectangle
      *
      */
@@ -106,7 +116,9 @@ public class SequenceLifelineCompartment extends CompartmentOperator{
 
     }
 
-    /**
+    
+
+/**
      *
      * @return  bounding rectangle for compartment
      */

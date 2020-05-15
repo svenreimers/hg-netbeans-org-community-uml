@@ -51,37 +51,51 @@ import org.netbeans.modules.uml.core.metamodel.structure.ISourceFileArtifact;
 
 public interface IInsertionPointLocator
 {
-	/**
+	
+
+/**
 	 * Gets / Sets Language
 	*/
 	public String getLanguage();
 
-	/**
+	
+
+/**
 	 * Gets / Sets Language
 	*/
 	public void setLanguage( String value );
 
-	/**
+	
+
+/**
 	 * returns a file location where an class' attribute code should be inserted
 	*/
 	public int getAttributeInsertionPoint( IClassifier pClassifier, IAttribute pAttribute, ISourceFileArtifact pArtifact );
 
-	/**
+	
+
+/**
 	 * returns a file location where an class' operation code should be inserted
 	*/
 	public int getOperationInsertionPoint( IClassifier pClassifier, IOperation pOperation, ISourceFileArtifact pArtifact );
 
-	/**
+	
+
+/**
 	 * returns a file location where an class' nested classifier code should be inserted
 	*/
 	public int getNestedClassInsertionPoint( IClassifier pOuterClassifier, IClassifier pNestedClassifier, ISourceFileArtifact pArtifact );
 
-	/**
+	
+
+/**
 	 * returns a file location where a package statement should be inserted
 	*/
 	public int getPackageStatementInsertionPoint( IClassifier pClassifer, ISourceFileArtifact pArtifact );
 
-	/**
+	
+
+/**
 	 * returns a file location where a dependency statement should be inserted
 	*/
 	public int getDependencyStatementInsertionPoint( IClassifier pClassifer, ISourceFileArtifact pArtifact );

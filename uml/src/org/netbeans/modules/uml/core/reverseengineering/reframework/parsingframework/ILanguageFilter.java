@@ -46,22 +46,30 @@ package org.netbeans.modules.uml.core.reverseengineering.reframework.parsingfram
 
 public interface ILanguageFilter
 {
-	/**
+	
+
+/**
 	 * The name of the filter.
 	*/
 	public String getName();
 
-	/**
+	
+
+/**
 	 * The name of the filter.
 	*/
 	public void setName( String value );
 
-	/**
+	
+
+/**
 	 * A comma delimited list of file filters.
 	*/
 	public String getFilter();
 
-	/**
+	
+
+/**
 	 * A comma delimited list of file filters.
 	*/
 	public void setFilter( String value );

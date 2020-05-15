@@ -44,11 +44,8 @@
 
 
 
-/*
- * File       : TestUtils.java
- * Created on : Feb 3, 2004
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.reverseengineering;
 
 import java.io.DataOutputStream;
@@ -61,7 +58,8 @@ import java.io.IOException;
 public class TestUtils
 {
 
-    /**
+    
+/**
      * @param xml
      * @param outFile
      */

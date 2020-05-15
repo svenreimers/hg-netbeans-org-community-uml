@@ -42,6 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
+
+
 /*
  * Created on Jun 18, 2003
  *
@@ -115,7 +117,9 @@ public class JReplaceTable extends JTable
 	
 	private class ReplaceTableCellRenderer extends DefaultTableCellRenderer implements TableCellRenderer
 	{
-		/* (non-Javadoc)
+		
+
+/* (non-Javadoc)
 		 * @see javax.swing.table.TableCellRenderer#getTableCellRendererComponent(javax.swing.JTable, java.lang.Object, boolean, boolean, int, int)
 		 */
 		public Component getTableCellRendererComponent(JTable table, 
@@ -168,7 +172,9 @@ public class JReplaceTable extends JTable
 	}
 	public class ReplacePopupListener extends MouseAdapter
 	{
-		/**
+		
+
+/**
 		 * 
 		 */
 		public ReplacePopupListener()

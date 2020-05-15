@@ -42,6 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
+
+
 /*
  * UMLProject.java
  *
@@ -136,11 +138,15 @@ public class UMLProject implements Project, AntProjectListener
     
     public static final int PROJECT_LANG_JAVA = 0;
     public static final String PROJECT_LANG_JAVA_STR = "Java"; // NOI18N
-    /* NB60TBD
+    
+
+/* NB60TBD
     public static HashMap<String,MDRChangeListener> listenerMap =
             new HashMap<String,MDRChangeListener>();
     */
-    /**
+    
+
+/**
      * I am attempting to define an AntArtifact type so that we can
      *leverage all of the AntHelper and ReferenceHelper features when
      *tracking references across UMLProjects.
@@ -152,7 +158,9 @@ public class UMLProject implements Project, AntProjectListener
      */
     public static final String ARTIFACT_TYPE_UML_PROJ = "umlproj"; // NOI18N
     
-    /**
+    
+
+/**
      * This vector holds all Classes and Interfaces in the UML
      * Project(IProject)
      *
@@ -483,7 +491,9 @@ public class UMLProject implements Project, AntProjectListener
         }
     }
     
-    /**
+    
+
+/**
      * Sets the projects mode.  The mode is used to control the round trip
      * behavior.
      */
@@ -513,7 +523,9 @@ public class UMLProject implements Project, AntProjectListener
         {
         }
         
-        /**
+        
+
+/**
          * Retrieves the project from the project helepr.  If the project has retrieved it
          * is initialized.
          */
@@ -535,7 +547,9 @@ public class UMLProject implements Project, AntProjectListener
             return retVal;
         }
         
-        /**
+        
+
+/**
          * Retreives the project and verifies that the project is valid.
          * The project needs be verified because the product is initialized
          * in a different thread than the thread that opens projects.  Therefore,
@@ -708,7 +722,9 @@ public class UMLProject implements Project, AntProjectListener
             }
         }
         
-        /* listen to IProject change event, and modify project file data object
+        
+
+/* listen to IProject change event, and modify project file data object
          * to enable save all button
          */
         private class UMLProjectChangeListener implements PropertyChangeListener
@@ -818,7 +834,9 @@ public class UMLProject implements Project, AntProjectListener
         }
     }
     
-    /**
+    
+
+/**
      * Exports the main JAR as an official build product for use from other
      * scripts. The type of the artifact will be {@link AntArtifact#TYPE_JAR}.
      */

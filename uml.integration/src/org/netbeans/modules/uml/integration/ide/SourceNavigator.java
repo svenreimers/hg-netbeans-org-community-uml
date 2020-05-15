@@ -42,43 +42,36 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File         : SourceNavigator.java
- * Version      : 2.0
- * Description  : Interface for classes that will navigate to selected source
- *                code.
- * Author       : Trey Spiva
- */
+
+
 package org.netbeans.modules.uml.integration.ide;
 
 import org.netbeans.modules.uml.integration.ide.events.ClassInfo;
 import org.netbeans.modules.uml.integration.ide.events.MemberInfo;
 import org.netbeans.modules.uml.integration.ide.events.MethodInfo;
 
-/**
- *  The SourceNavigator interface will be implemented by IDE integrations to
- * navigate to the appropriate source code when the user selects a Describe
- * model element.
- *
- * Revision History
- * No.  Date        Who         What
- * ---  ----        ---         ----
- *   1  2002-05-22  Darshan     Adapted for Wolverine.
- */
+
+
 public interface SourceNavigator  {
-    /**
+    
+
+/**
      *  Navigates to the given class.
      * @param clazz
      */
     public void navigateTo(ClassInfo clazz);
 
-    /**
+    
+
+/**
      *  Navigates to the given operation
      * @param minf
      */
     public void navigateTo(MethodInfo minf);
 
-    /**
+    
+
+/**
      *  Navigates to the given attribute.
      * @param minf
      */

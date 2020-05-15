@@ -228,7 +228,9 @@ public final class GenCodeUtil
 	}              
 	return fullClassName;
 
-	/*
+	
+
+/*
         String name = JavaClassUtils.getFullyQualifiedName(clazz);        
         name = JavaClassUtils.getFullInnerClassName(name);
 	if (! fullyQualified) 

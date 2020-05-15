@@ -61,7 +61,9 @@ public class WorkspaceEventDispatchHelper extends EventDispatchHelper
 		super();
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.workspacemanagement.IWorkspaceEventDispatchHelper#dispatchWorkspacePreCreate(java.lang.String, java.lang.String)
 	 */
 	public boolean dispatchWorkspacePreCreate(String fileName, String name) 
@@ -87,7 +89,9 @@ public class WorkspaceEventDispatchHelper extends EventDispatchHelper
 		return retVal;
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.workspacemanagement.IWorkspaceEventDispatchHelper#dispatchWorkspaceCreated(org.netbeans.modules.uml.core.workspacemanagement.IWorkspace)
 	 */
 	public void dispatchWorkspaceCreated(IWorkspace space)
@@ -108,7 +112,9 @@ public class WorkspaceEventDispatchHelper extends EventDispatchHelper
       }
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.workspacemanagement.IWorkspaceEventDispatchHelper#dispatchWorkspacePreOpen(java.lang.String)
 	 */
 	public boolean dispatchWorkspacePreOpen(String fileName) 
@@ -133,7 +139,9 @@ public class WorkspaceEventDispatchHelper extends EventDispatchHelper
 		return retVal;
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.workspacemanagement.IWorkspaceEventDispatchHelper#dispatchWorkspaceOpened(org.netbeans.modules.uml.core.workspacemanagement.IWorkspace)
 	 */
 	public void dispatchWorkspaceOpened(IWorkspace space) 
@@ -154,7 +162,9 @@ public class WorkspaceEventDispatchHelper extends EventDispatchHelper
       }
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.workspacemanagement.IWorkspaceEventDispatchHelper#dispatchWorkspacePreClose(org.netbeans.modules.uml.core.workspacemanagement.IWorkspace)
 	 */
 	public boolean dispatchWorkspacePreClose(IWorkspace space) 
@@ -179,7 +189,9 @@ public class WorkspaceEventDispatchHelper extends EventDispatchHelper
 		return retVal;
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.workspacemanagement.IWorkspaceEventDispatchHelper#dispatchWorkspaceClosed(org.netbeans.modules.uml.core.workspacemanagement.IWorkspace)
 	 */
 	public void dispatchWorkspaceClosed(IWorkspace space) 

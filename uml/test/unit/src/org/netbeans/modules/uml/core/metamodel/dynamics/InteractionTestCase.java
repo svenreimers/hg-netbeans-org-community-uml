@@ -50,6 +50,8 @@ import org.netbeans.modules.uml.core.metamodel.infrastructure.IConnector;
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation;
 import org.netbeans.modules.uml.core.AbstractUMLTestCase;
 
+
+
 /**
  * Test cases for Interaction.
  */
@@ -64,7 +66,9 @@ public class InteractionTestCase extends AbstractUMLTestCase
     private IMessage m1, m2, m3;
     private ILifeline last;
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see junit.framework.TestCase#setUp()
      */
     protected void setUp() throws Exception

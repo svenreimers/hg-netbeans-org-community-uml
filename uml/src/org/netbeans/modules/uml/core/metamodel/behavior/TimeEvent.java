@@ -42,6 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
+
+
 /*
  * Created on Oct 17, 2003
  *
@@ -64,7 +66,8 @@ public class TimeEvent extends Event implements ITimeEvent
 	{
 	}
 	
-	/**
+	
+/**
 	 * Gets the corresponding time deadline.
 	 *
 	 * @return exp
@@ -75,7 +78,9 @@ public class TimeEvent extends Event implements ITimeEvent
 				.retrieveSingleElement(m_Node,"UML:TimeEvent.when/*", IExpression.class);
 	}
 	
-	/**
+	
+
+/**
 	 * Sets the corresponding time deadline.
 	 *
 	 * @param exp[in]
@@ -86,7 +91,9 @@ public class TimeEvent extends Event implements ITimeEvent
 				 "UML:TimeEvent.when",expression);
 	}
 	
-	/**
+	
+
+/**
 	 * Establishes the appropriate XML elements for this UML type.
 	 *
 	 * [in] The document where this element will reside

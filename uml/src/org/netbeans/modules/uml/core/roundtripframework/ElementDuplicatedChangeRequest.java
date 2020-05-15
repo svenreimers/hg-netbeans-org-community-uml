@@ -42,6 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
+
+
 /*
  * Created on Nov 5, 2003
  *
@@ -61,7 +63,9 @@ public class ElementDuplicatedChangeRequest extends ChangeRequest
 	IElement m_DuplicatedElement = null;
 	
 	
-	/**
+	
+
+/**
 	 * @return
 	 */
 	public IElement getDuplicatedElement()
@@ -69,7 +73,9 @@ public class ElementDuplicatedChangeRequest extends ChangeRequest
 		return m_DuplicatedElement;
 	}
 
-	/**
+	
+
+/**
 	 * @return
 	 */
 	public IElement getOriginalElement()
@@ -77,7 +83,9 @@ public class ElementDuplicatedChangeRequest extends ChangeRequest
 		return m_OriginalElement;
 	}
 
-	/**
+	
+
+/**
 	 * @param element
 	 */
 	public void setDuplicatedElement(IElement element)
@@ -85,7 +93,9 @@ public class ElementDuplicatedChangeRequest extends ChangeRequest
 		m_DuplicatedElement = element;
 	}
 
-	/**
+	
+
+/**
 	 * @param element
 	 */
 	public void setOriginalElement(IElement element)

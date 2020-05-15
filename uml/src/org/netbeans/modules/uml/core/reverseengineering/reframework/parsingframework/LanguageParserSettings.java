@@ -42,11 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : LanguageParserSettings.java
- * Created on : Oct 27, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework;
 
 import java.util.HashMap;
@@ -63,7 +60,8 @@ public class LanguageParserSettings implements ILanguageParserSettings
     HashMap<String, String> m_SettingMap = new HashMap<String, String>();
     HashMap<String, ETList<ILanguageMacro>> m_LanguageMacrosMap = new HashMap<String, ETList<ILanguageMacro>>();    
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ILanguageParserSettings#addMacro(java.lang.String, org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ILanguageMacro)
      */
     public void addMacro(String language, ILanguageMacro macro)
@@ -72,7 +70,9 @@ public class LanguageParserSettings implements ILanguageParserSettings
         spLanguageMacros.add(macro);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ILanguageParserSettings#addSetting(java.lang.String, java.lang.String, java.lang.String)
      */
     public void addSetting(String language, String name, String value)
@@ -80,7 +80,9 @@ public class LanguageParserSettings implements ILanguageParserSettings
         m_SettingMap.put(name, value) ;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ILanguageParserSettings#getAllMacros()
      */
     public ETList<ILanguageMacro> getAllMacros()
@@ -88,7 +90,9 @@ public class LanguageParserSettings implements ILanguageParserSettings
         return null;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ILanguageParserSettings#getMacro(java.lang.String, java.lang.String)
      */
     public ILanguageMacro getMacro(String language, String name)
@@ -110,7 +114,9 @@ public class LanguageParserSettings implements ILanguageParserSettings
         return null;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ILanguageParserSettings#getMacros(java.lang.String)
      */
     public ETList<ILanguageMacro> getMacros(String language)
@@ -118,7 +124,9 @@ public class LanguageParserSettings implements ILanguageParserSettings
         return ensureLanguageMacros(language);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ILanguageParserSettings#getSetting(java.lang.String, java.lang.String)
      */
     public String getSetting(String language, String name)

@@ -42,6 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
+
+
 /*
  * Created on Apr 15, 2004
  *
@@ -106,6 +108,7 @@ import org.netbeans.modules.uml.ui.support.helpers.IGUIBlocker;
 import org.netbeans.modules.uml.ui.swing.commondialogs.JCenterDialog;
 import org.netbeans.modules.uml.ui.swing.treetable.TreeTableModel;
 import org.netbeans.modules.uml.ui.support.helpers.IGUIBlocker.GBK;
+
 
 /**
  *
@@ -342,7 +345,9 @@ public abstract class BasicColorsAndFontsDialog extends JCenterDialog
 		init();
 	}
 
-	/**
+	
+
+/**
 	 * Initialize the dialogs
 	 */
 	public boolean onInitDialog()
@@ -420,7 +425,9 @@ public abstract class BasicColorsAndFontsDialog extends JCenterDialog
 		return true;  // return TRUE unless you set the focus to a control
 	}
 
-	/**
+	
+
+/**
 	 * Called when the object list changes
 	 */
 	public void onObjectListChange()
@@ -431,7 +438,9 @@ public abstract class BasicColorsAndFontsDialog extends JCenterDialog
 		onObjectListSelected(xsSelectedDE);
 	}
 	
-	/**
+	
+
+/**
 	 * Shows the property page for the argument draw engine
 	 */
 	public void showPropertyPage(String sDE)
@@ -575,7 +584,9 @@ public abstract class BasicColorsAndFontsDialog extends JCenterDialog
 //		}
 //	}
 
-	/**
+	
+
+/**
 	 * Translates the draw engine display name to the actual draw engine name
 	 */
 	public String getDENameFromDisplayName(String sDisplayName)
@@ -590,7 +601,9 @@ public abstract class BasicColorsAndFontsDialog extends JCenterDialog
 		return retVal;
 	}
 	
-	/**
+	
+
+/**
 	 * Translates the draw engine name to the actual draw engine display name
 	 */
 	public String getDisplayNameNameFromDE(String sDEName)
@@ -614,7 +627,9 @@ public abstract class BasicColorsAndFontsDialog extends JCenterDialog
 		return retVal;
 	}
 	
-	/**
+	
+
+/**
 	 * Returns the diagram filename for a diagram kind
 	 */
 	public String getDiagramFilename(int nDAKind)
@@ -1164,7 +1179,9 @@ public abstract class BasicColorsAndFontsDialog extends JCenterDialog
 //		return S_OK;
 //	}
 
-	/**
+	
+
+/**
 	 * Returns all the draw engines that make up the presentation elements
 	 */
 	public ETList<String> getPEDrawEngines(ETList<IPresentationElement> pPEs)
@@ -1209,7 +1226,9 @@ public abstract class BasicColorsAndFontsDialog extends JCenterDialog
 		return pDEStrings;
 	}
 	
-	/**
+	
+
+/**
 	 * Returns the presentation elements of this type
 	 */
 	public ETPairT<ETList<IPresentationElement>, ETList<IDrawingProperty> > getPEs(ETList<IPresentationElement> pSourcePEs,	String sDrawEngine)
@@ -1545,7 +1564,9 @@ public abstract class BasicColorsAndFontsDialog extends JCenterDialog
 //		}
 //	}
 
-	/**
+	
+
+/**
 	 * Populates our map of draw engine display names to draw engine ids
 	 */
 	public void populateDrawEngineNameMap()
@@ -1614,7 +1635,9 @@ public abstract class BasicColorsAndFontsDialog extends JCenterDialog
 //		return xsDE;
 //	}
 
-	/**
+	
+
+/**
 	 * Returns the selected draw engine (not the display name)
 	 */
 	public String getSelectedDE()
@@ -1631,7 +1654,9 @@ public abstract class BasicColorsAndFontsDialog extends JCenterDialog
 		return xsDE;
 	}
 
-	/**
+	
+
+/**
 	 * Resets the content on the object list
 	 */
 	public void resetObjectList()
@@ -1658,7 +1683,9 @@ public abstract class BasicColorsAndFontsDialog extends JCenterDialog
 //		return bHave;
 //	}
 
-	/**
+	
+
+/**
 	 * Adds a string to the object list
 	 */
 	public void addObjectListString(String xsString, String xsIconType)
@@ -1703,7 +1730,9 @@ public abstract class BasicColorsAndFontsDialog extends JCenterDialog
 		}
 	}
 	
-	/** 
+	
+
+/** 
 	 * Indicates that the filter has changed for the object list
 	 */
 	public void objectListFilterChanged(String sText)
@@ -1754,7 +1783,9 @@ public abstract class BasicColorsAndFontsDialog extends JCenterDialog
 		}
 	}
 
-	/**
+	
+
+/**
 	 * Selects the element in the list
 	 */
 	public void selectInList(int nIndex)
@@ -1782,7 +1813,7 @@ public abstract class BasicColorsAndFontsDialog extends JCenterDialog
 //		}
 //	}
 //	/**
-//	 * Given a dll and icon id, this routine loads the correct HICON.
+
 //	 *
 //	 * @param sIconLibrary [in] The dll loocation where the icon exists (in the resource file)
 //	 * @param nIconID [in] The icon that exists in the dll location
@@ -1828,7 +1859,9 @@ public abstract class BasicColorsAndFontsDialog extends JCenterDialog
 //
 //		return iconIndex;
 //	}
-	/**
+	
+
+/**
 	 * Adds a bunch of standard draw engines to m_StandardDrawEngines
 	 */
 	public void addStandardDrawEngines(int nKind, boolean bSelectFirstElement)
@@ -1874,7 +1907,9 @@ public abstract class BasicColorsAndFontsDialog extends JCenterDialog
 //		}
 	}
 	
-	/**
+	
+
+/**
 	 * Is this draw engine name filtered from our list by the diagrams combo box?
 	 */
 	public boolean isFilteredFromObjectList(String xsDisplayName)

@@ -72,7 +72,9 @@ public class ETPoint implements IETPoint
        }
    }
 
-	/**
+	
+
+/**
 	 * The X location of the point
 	*/
 	public int getX()
@@ -80,7 +82,9 @@ public class ETPoint implements IETPoint
           return m_X;
 	}
 
-	/**
+	
+
+/**
 	 * The X location of the point
 	*/
 	public void setX( int value )
@@ -88,7 +92,9 @@ public class ETPoint implements IETPoint
           m_X = value;
 	}
 
-	/**
+	
+
+/**
 	 * The Y location of the point
 	*/
 	public int getY()
@@ -96,7 +102,9 @@ public class ETPoint implements IETPoint
           return m_Y;
 	}
 
-	/**
+	
+
+/**
 	 * The Y location of the point
 	*/
 	public void setY( int value )
@@ -104,7 +112,9 @@ public class ETPoint implements IETPoint
           m_Y = value;
 	}
 
-	/**
+	
+
+/**
 	 * The points
 	*/
 	public long getPoints( int pX, int pY )
@@ -114,7 +124,9 @@ public class ETPoint implements IETPoint
           return 0;
 	}
 
-	/**
+	
+
+/**
 	 * The points
 	*/
 	public long setPoints( int nX, int nY )
@@ -124,7 +136,9 @@ public class ETPoint implements IETPoint
           return 0;
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.support.umlsupport.IETPoint#asPoint()
 	 */
 	public Point asPoint() {
@@ -132,7 +146,9 @@ public class ETPoint implements IETPoint
 		return new Point(getX(),getY());
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.support.umlsupport.IETPoint#offset(int, int)
 	 */
 	public IETPoint offset( int dx, int dy )

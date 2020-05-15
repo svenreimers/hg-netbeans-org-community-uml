@@ -59,7 +59,9 @@ public class OvalWidget extends CustomizableWidget
     int width = radius * 2;
     int height = width;
 
-    /**
+    
+
+/**
      *  Constructs a new OvalWidget to represent a circle whose radius is r
      * @param scene
      * @param r the radius of the circle to be drawn.
@@ -72,7 +74,9 @@ public class OvalWidget extends CustomizableWidget
         this.height = width;
     }
 
-    /**
+    
+
+/**
      * Constructs a new OvalWidget to represent an oval whose width is 'width' and height is 'height'
      * @param scene
      * @param width the width of the oval to be drawn.
@@ -141,7 +145,9 @@ public class OvalWidget extends CustomizableWidget
         graphics.setPaint(previousPaint); 
     }
 
-    /**
+    
+
+/**
      * Gets the radius of the object if it is a circle.
      * @return the radius of the object if it is circle; otherwise, 0 is returned.
      */
@@ -150,7 +156,9 @@ public class OvalWidget extends CustomizableWidget
         return radius; 
     }
      
-    /**
+    
+
+/**
      * Gets the width of the oval shape
      * @return the width of the oval shape
      */
@@ -159,7 +167,9 @@ public class OvalWidget extends CustomizableWidget
         return width;
     }
     
-    /**
+    
+
+/**
      * Gets the height of the oval shape
      * @return the height of the oval shape
      */

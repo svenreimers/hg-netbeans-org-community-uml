@@ -43,6 +43,8 @@
  */
 
 
+
+
 /*
  * Created on Jun 9, 2003
  *
@@ -65,12 +67,14 @@ import javax.swing.tree.TreeModel;
 /**
  *
  */
+
 /**
  * A TreeCellRenderer that displays a JTree.
  */
 public class TreeTableCellRenderer extends JTree implements TableCellRenderer{
 
-	/**
+	
+/**
 	 * 
 	 */
 	public TreeTableCellRenderer()
@@ -88,7 +92,9 @@ public class TreeTableCellRenderer extends JTree implements TableCellRenderer{
 		setShowsRootHandles(true);
 		
 	
-		/*this.addTreeSelectionListener( new TreeSelectionListener() {
+		
+
+/*this.addTreeSelectionListener( new TreeSelectionListener() {
 
 			public void valueChanged(TreeSelectionEvent e)
 			{
@@ -117,7 +123,9 @@ public class TreeTableCellRenderer extends JTree implements TableCellRenderer{
 //		);
 	}
 
-	/**
+	
+
+/**
 	 * updateUI is overridden to set the colors of the Tree's renderer
 	 * to match that of the table.
 	 */
@@ -139,7 +147,9 @@ public class TreeTableCellRenderer extends JTree implements TableCellRenderer{
 		}
 	}
 
-	/**
+	
+
+/**
 	 * Sets the row height of the tree, and forwards the row height to
 	 * the table.
 	 */
@@ -153,14 +163,18 @@ public class TreeTableCellRenderer extends JTree implements TableCellRenderer{
 		}
 	}
 
-	/**
+	
+
+/**
 	 * This is overridden to set the height to match that of the JTable.
 	 */
 	public void setBounds(int x, int y, int w, int h) {
 		super.setBounds(x, 0, w, this.getHeight());
 	}
 
-	/**
+	
+
+/**
 	 * Sublcassed to translate the graphics such that the last visible
 	 * row will be drawn at 0,0.
 	 */
@@ -170,7 +184,9 @@ public class TreeTableCellRenderer extends JTree implements TableCellRenderer{
 		super.paint(g);
 	}
 
-	/**
+	
+
+/**
 	 * TreeCellRenderer method. Overridden to update the visible row.
 	 */
 	public Component getTableCellRendererComponent(JTable table,

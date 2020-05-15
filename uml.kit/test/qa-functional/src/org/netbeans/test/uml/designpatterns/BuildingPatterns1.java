@@ -152,6 +152,7 @@ import org.netbeans.test.umllib.util.*;
 
 
 
+
 /**
 
  *
@@ -544,7 +545,9 @@ public class BuildingPatterns1 extends UMLTestCase {
 
     }
 
-    /**
+    
+
+/**
 
      * @caseblock Building Patterns
 
@@ -562,7 +565,9 @@ public class BuildingPatterns1 extends UMLTestCase {
 
     }
 
-    /**
+    
+
+/**
 
      * @caseblock Building Patterns
 
@@ -834,7 +839,9 @@ public class BuildingPatterns1 extends UMLTestCase {
 
     }
 
-    /**
+    
+
+/**
 
      * @caseblock Building Patterns
 
@@ -852,7 +859,9 @@ public class BuildingPatterns1 extends UMLTestCase {
 
     }
 
-    /**
+    
+
+/**
 
      * @caseblock Building Patterns
 
@@ -870,7 +879,9 @@ public class BuildingPatterns1 extends UMLTestCase {
 
     }
 
-    /**
+    
+
+/**
 
      * Create diagram in package and add pattern with two roles
 
@@ -1250,7 +1261,9 @@ public class BuildingPatterns1 extends UMLTestCase {
 
      }
 
-   /**
+   
+
+/**
 
      * @caseblock Building Patterns
 
@@ -1268,7 +1281,9 @@ public class BuildingPatterns1 extends UMLTestCase {
 
     }
 
-   /**
+   
+
+/**
 
      * @caseblock Building Patterns
 
@@ -1286,7 +1301,9 @@ public class BuildingPatterns1 extends UMLTestCase {
 
     }
 
-   /**
+   
+
+/**
 
      * @caseblock Building Patterns
 
@@ -1304,7 +1321,9 @@ public class BuildingPatterns1 extends UMLTestCase {
 
     }
 
-   /**
+   
+
+/**
 
      * @caseblock Building Patterns
 
@@ -1322,7 +1341,9 @@ public class BuildingPatterns1 extends UMLTestCase {
 
     }
 
-   /**
+   
+
+/**
 
      * @caseblock Building Patterns
 
@@ -1340,7 +1361,9 @@ public class BuildingPatterns1 extends UMLTestCase {
 
     }
 
-   /**
+   
+
+/**
 
      * @caseblock Building Patterns
 
@@ -1358,7 +1381,9 @@ public class BuildingPatterns1 extends UMLTestCase {
 
     }
 
-   /**
+   
+
+/**
 
      * @caseblock Building Patterns
 
@@ -1376,7 +1401,9 @@ public class BuildingPatterns1 extends UMLTestCase {
 
     }
 
-   /**
+   
+
+/**
 
      * @caseblock Building Patterns
 
@@ -1394,7 +1421,9 @@ public class BuildingPatterns1 extends UMLTestCase {
 
     }
 
-   /**
+   
+
+/**
 
      * @caseblock Building Patterns
 
@@ -1414,7 +1443,9 @@ public class BuildingPatterns1 extends UMLTestCase {
 
     }
 
-   /**
+   
+
+/**
 
     * 
 
@@ -1436,7 +1467,9 @@ public class BuildingPatterns1 extends UMLTestCase {
 
     }
 
-   /**
+   
+
+/**
 
      * @caseblock Building Patterns
 
@@ -1456,7 +1489,9 @@ public class BuildingPatterns1 extends UMLTestCase {
 
     }
 
-   /**
+   
+
+/**
 
      * @caseblock Building Patterns
 
@@ -1476,7 +1511,9 @@ public class BuildingPatterns1 extends UMLTestCase {
 
     }
 
-   /**
+   
+
+/**
 
      * @caseblock Building Patterns
 
@@ -1496,7 +1533,9 @@ public class BuildingPatterns1 extends UMLTestCase {
 
     }
 
-   /**
+   
+
+/**
 
      * @caseblock Building Patterns
 
@@ -1516,7 +1555,9 @@ public class BuildingPatterns1 extends UMLTestCase {
 
     }
 
-   /**
+   
+
+/**
 
      * @caseblock Building Patterns
 
@@ -1536,7 +1577,9 @@ public class BuildingPatterns1 extends UMLTestCase {
 
     }
 
-   /**
+   
+
+/**
 
      * @caseblock Building Patterns
 

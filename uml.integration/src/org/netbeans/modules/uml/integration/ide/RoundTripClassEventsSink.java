@@ -42,12 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File         : RoundTripClassEventsSink.java
- * Version      : 1.2
- * Description  : Listens for class change events in the Describe model
- * Author       : Ashish
- */
+
+
 package org.netbeans.modules.uml.integration.ide;
 
 import org.netbeans.modules.uml.core.metamodel.core.constructs.IActor;
@@ -85,35 +81,8 @@ import org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarp
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IParameterableElement;
 import org.netbeans.modules.uml.core.support.Debug;
 
-/**
- *  Listens for changes to classes in the Describe model.
- *
- * Revision History
- * No.  Date        Who         What
- * ---  ----        ---         ----
- *   1  2002-04-23  Darshan     Added file and class comments, tweaked to
- *                              allow redirecting events to a subsidiary
- *                              listener.
- *   2  2002-04-24  Darshan     Fixed bug using the wrong element for addClass.
- *   3  2002-04-24  Darshan     Added a hack to distinguish between create and
- *                              modify class events when on build 45.
- *   4  2002-04-26  Darshan     Removed diagnostic messages from second
- *                              (post-change) event functions.
- *   5  2002-05-06  Darshan     Removed hack (for build 45) to distinguish
- *                              create and modify classes. Added preliminary
- *                              code to handle relationship events.
- *   6  2002-05-13  Darshan     Updated to handle both class and interface
- *                              events by manipulating IClassifier references
- *                              instead of directly dealing with IClass and
- *                              IInterface references.
- *   7  2002-05-29  Darshan     No longer add implements clauses on realize
- *                              relationships - instead use implementation
- *                              relationship.
- *   8  2002-06-05  Darshan     Modified to allow the handling of
- *                              generalizations between interfaces.
- *
- * @version 1.0
- */
+
+
 public class RoundTripClassEventsSink extends RoundTripSource
                                       implements IRoundTripClassEventsSink, IRoundTripEnumEventsSink {
 
@@ -166,7 +135,7 @@ public class RoundTripClassEventsSink extends RoundTripSource
 
         // Get change type
         int changeType = newVal.getState();
-//Jyothi Part of the fix for Bug#6309925
+
 //        IClassifier before   = (IClassifier)  newVal.getBefore(),
 //                    after    = (IClassifier)  newVal.getAfter();
         

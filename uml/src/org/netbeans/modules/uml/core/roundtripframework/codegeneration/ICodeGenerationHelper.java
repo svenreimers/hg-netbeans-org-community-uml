@@ -52,59 +52,72 @@ import org.netbeans.modules.uml.core.support.umlutils.IDataFormatter;
 
 public interface ICodeGenerationHelper
 {
-	/**
+	
+
+/**
 	 * Parses all files associated with an element and returns parse information for those files.
 	*/
 	public IFileInformation getParseInformationForElement( IElement element );
 
-	/**
+	
+
+/**
 	 * Parses the source file artifact and returns parse information for the artifact.
 	*/
 	public IFileInformation getParseInformationForArtifact( ISourceFileArtifact artifact );
 
-	/**
+	
+
+/**
 	 * Generates source code for an IElement using the specified script.
 	*/
 	public String generateCodeForElement( IElement element, String scriptName );
 
-	/**
+	
+
+/**
 	 * Generates source code for an IElement using the specified script.
 	*/
 	public String generateCodeForElement2( IElement element, ICodeGenerationScript pScript );
 
-	/**
+	
+
+/**
 	 * Returns the Default Code Generator
 	*/
 	public ILanguageCodeGenerator getDefaultCodeGenerator();
 
-	/**
-	 * Gets / Sets DataFormatter
-	*/
+	
+
 	public IDataFormatter getDataFormatter();
 
-	/**
-	 * Gets / Sets DataFormatter
-	*/
+	
+
 	public void setDataFormatter( IDataFormatter value );
 
-	/**
+	
+
+/**
 	 * Gets Source Code from an ISourceFileArtifact object
 	*/
 	public String getSourceCode( ISourceFileArtifact pArtifact, int rangeStart, int rangeEnd );
 
-	/**
+	
+
+/**
 	 * Gets / Sets SourceCodeManipulationMap
 	*/
 	public ISourceCodeManipulationMap getSourceCodeManipulationMap();
 
-	/**
+	
+
+/**
 	 * Gets / Sets SourceCodeManipulationMap
 	*/
 	public void setSourceCodeManipulationMap( ISourceCodeManipulationMap value );
 
-	/**
-	 * Generates formatted source code for an element
-	*/
+	
+
 	public String generateCodeForElement3( IElement element, String language, String eventName, /* CodeGenerationStyle */ int style );
 
 }

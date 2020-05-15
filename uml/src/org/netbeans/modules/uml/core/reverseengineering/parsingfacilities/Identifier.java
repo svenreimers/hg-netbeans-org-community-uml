@@ -43,11 +43,8 @@
  */
 
 
-/*
- * File       : Identifier.java
- * Created on : Dec 8, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.reverseengineering.parsingfacilities;
 
 import java.util.Stack;
@@ -55,6 +52,8 @@ import java.util.Stack;
 import org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ITokenDescriptor;
 import org.netbeans.modules.uml.core.support.umlutils.ETArrayList;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
+
+
 
 /**
  * Represent a source code identifier.  A identifier is made up of two type of tokens.
@@ -65,7 +64,9 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
  */
 public class Identifier
 {
-    /**
+    
+
+/**
      * Adds a new token of the identifer.  The name tokens and the scope operator
      * tokens are used to build a identifier.
      * 
@@ -85,7 +86,9 @@ public class Identifier
         }
     }
 
-    /**
+    
+
+/**
      * Clears the contents of the indentifier.  The identifier will be an empty 
      * string.
      */
@@ -94,7 +97,9 @@ public class Identifier
         m_TokenList.clear();
     }
 
-    /**
+    
+
+/**
      * The position that contained the Identifier.
      * 
      * @param The position number.
@@ -113,7 +118,9 @@ public class Identifier
         return -1L;
     }
 
-    /**
+    
+
+/**
      * Retrieves the identifier as it appeared in the source code.  The name and
      * scope operator tokens are used to derive the value.
      *
@@ -124,7 +131,9 @@ public class Identifier
         return getAnnotatedIdentifier(null);
     }
 
-    /**
+    
+
+/**
      * Retrieves the identifier as it represented in UML.  In UML the scope operator
      * is always "::".
      *
@@ -140,7 +149,9 @@ public class Identifier
         return getAnnotatedIdentifier(DUMMY_FLAG);
     }
     
-    /**
+    
+
+/**
      * The length of the identifer.  The length of the identifer will reflect the
      * source code version of the identifier.
      */
@@ -149,7 +160,9 @@ public class Identifier
         return (int) (getEndPosition() - getStartPosition());
     }
 
-    /**
+    
+
+/**
      * The column that contained the Identifier.
      * 
      * @param The column number.
@@ -165,7 +178,9 @@ public class Identifier
         return -1;
     }
 
-    /**
+    
+
+/**
      * The line that contained the Identifier.
      * 
      * @param The line number.
@@ -183,7 +198,9 @@ public class Identifier
         return -1;
     }
 
-    /**
+    
+
+/**
      * The position that contained the Identifier.
      * 
      * @param The position number.
@@ -202,7 +219,9 @@ public class Identifier
         
     }
 
-    /**
+    
+
+/**
      * Retrieve the list of tokens that make up the identifer.
      *
      * @return 
@@ -212,7 +231,9 @@ public class Identifier
         return m_TokenList;
     }
     
-    /**
+    
+
+/**
      * Replaces the scope operator with a specified replacement.  This is
      * mostly useful when creating a UML version of the identifier.  If the
      * last token is a scope operator it will not be added to the returned
@@ -232,7 +253,7 @@ public class Identifier
    
         StringBuffer ret = new StringBuffer();
         
-        //kris richards - this is a terrible hack. The 
+        
         //MethodExceptionProcessingStateHandler.addParameterToSymbolTable()
         //method is using this incorrectly to name the expression. So, I have
         //make the naming work.

@@ -58,7 +58,9 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.NamedElement;
 
 public class Gate extends NamedElement implements IGate
 {
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IGate#getToConnector()
      */
     public IInterGateConnector getToConnector()
@@ -67,7 +69,9 @@ public class Gate extends NamedElement implements IGate
             .retrieveSingleElementWithAttrID( this, "toConnector", IInterGateConnector.class);
     }
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IGate#setToConnector(org.netbeans.modules.uml.core.metamodel.dynamics.IInterGateConnector)
      */
     public void setToConnector(final IInterGateConnector gateConnector)
@@ -84,7 +88,9 @@ public class Gate extends NamedElement implements IGate
                 } );
     }
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IGate#getFromConnector()
      */
     public IInterGateConnector getFromConnector()
@@ -93,7 +99,9 @@ public class Gate extends NamedElement implements IGate
             .retrieveSingleElementWithAttrID( this, "fromConnector", IInterGateConnector.class);
     }
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IGate#setFromConnector(org.netbeans.modules.uml.core.metamodel.dynamics.IInterGateConnector)
      */
     public void setFromConnector(final IInterGateConnector gateConnector)
@@ -110,7 +118,9 @@ public class Gate extends NamedElement implements IGate
                 } );
     }
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IGate#getInteraction()
      */
     public IInteraction getInteraction()
@@ -119,7 +129,9 @@ public class Gate extends NamedElement implements IGate
         return space instanceof IInteraction? (IInteraction) space : null;
     }
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IGate#setInteraction(org.netbeans.modules.uml.core.metamodel.dynamics.IInteraction)
      */
     public void setInteraction(IInteraction inter)
@@ -133,7 +145,9 @@ public class Gate extends NamedElement implements IGate
         buildNodePresence("UML:Gate", doc, parent);
     }
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.Element#performDependentElementCleanup(org.netbeans.modules.uml.core.metamodel.core.foundation.IVersionableElement)
      */
     protected void performDependentElementCleanup(IVersionableElement elem)

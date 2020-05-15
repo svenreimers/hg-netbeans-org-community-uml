@@ -56,7 +56,9 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.IBackPointer;
 
 public class InterGateConnector extends Element implements IInterGateConnector
 {
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IInterGateConnector#getMessage()
      */
     public IMessage getMessage()
@@ -65,7 +67,9 @@ public class InterGateConnector extends Element implements IInterGateConnector
             .retrieveSingleElementWithAttrID( this, "message", IMessage.class );
     }
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IInterGateConnector#setMessage(org.netbeans.modules.uml.core.metamodel.dynamics.IMessage)
      */
     public void setMessage(IMessage value)
@@ -73,7 +77,9 @@ public class InterGateConnector extends Element implements IInterGateConnector
         setElement(value, "message");
     }
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IInterGateConnector#getEventOccurrence()
      */
     public IEventOccurrence getEventOccurrence()
@@ -82,7 +88,9 @@ public class InterGateConnector extends Element implements IInterGateConnector
             .retrieveSingleElementWithAttrID( this, "event", IEventOccurrence.class );
     }
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IInterGateConnector#setEventOccurrence(org.netbeans.modules.uml.core.metamodel.dynamics.IEventOccurrence)
      */
     public void setEventOccurrence(final IEventOccurrence event)
@@ -100,7 +108,9 @@ public class InterGateConnector extends Element implements IInterGateConnector
                 } );
     }
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IInterGateConnector#getFragment()
      */
     public IInteractionFragment getFragment()
@@ -109,7 +119,9 @@ public class InterGateConnector extends Element implements IInterGateConnector
             .retrieveSingleElementWithAttrID( this, "fragment", IInteractionFragment.class );
     }
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IInterGateConnector#setFragment(org.netbeans.modules.uml.core.metamodel.dynamics.IInteractionFragment)
      */
     public void setFragment(IInteractionFragment frag)
@@ -133,7 +145,9 @@ public class InterGateConnector extends Element implements IInterGateConnector
                 } );
     }
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IInterGateConnector#getToGate()
      */
     public IGate getToGate()
@@ -142,7 +156,9 @@ public class InterGateConnector extends Element implements IInterGateConnector
             .retrieveSingleElementWithAttrID( this, "toGate", IGate.class );
     }
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IInterGateConnector#setToGate(org.netbeans.modules.uml.core.metamodel.dynamics.IGate)
      */
     public void setToGate(final IGate value)
@@ -160,7 +176,9 @@ public class InterGateConnector extends Element implements IInterGateConnector
                 } );
     }
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IInterGateConnector#getFromGate()
      */
     public IGate getFromGate()
@@ -169,7 +187,9 @@ public class InterGateConnector extends Element implements IInterGateConnector
             .retrieveSingleElementWithAttrID( this, "fromGate", IGate.class );
     }
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IInterGateConnector#setFromGate(org.netbeans.modules.uml.core.metamodel.dynamics.IGate)
      */
     public void setFromGate(final IGate value)
@@ -187,7 +207,9 @@ public class InterGateConnector extends Element implements IInterGateConnector
                 } );
     }
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.VersionableElement#establishNodePresence(org.dom4j.Document, org.dom4j.Node)
      */
     public void establishNodePresence(Document doc, Node node)

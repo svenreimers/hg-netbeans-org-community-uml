@@ -43,11 +43,8 @@
  */
 
 
-/*
- * File       : MethodCallExpression.java
- * Created on : Dec 10, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.expression;
 
 import java.util.ArrayList;
@@ -107,7 +104,9 @@ public class MethodCallExpression extends ExpressionStateHandler
    }
    
    
-        /* (non-Javadoc)
+        
+
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.expression.IMethodCallExpression#createSubStateHandler(java.lang.String, java.lang.String)
          */
    public StateHandler createSubStateHandler(String stateName, String language)
@@ -156,7 +155,9 @@ public class MethodCallExpression extends ExpressionStateHandler
       return retVal;
    }
    
-        /* (non-Javadoc)
+        
+
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.expression.IMethodCallExpression#getArgumentInstances(org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.InstanceInformation, org.netbeans.modules.uml.core.reverseengineering.reframework.IREClass, org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.SymbolTable, org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.IREClassLoader, org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.IUMLParserEventDispatcher, org.dom4j.Node)
          */
    public ETList<ETPairT<InstanceInformation,String>> getArgumentInstances(InstanceInformation pInfo,
@@ -199,7 +200,9 @@ public class MethodCallExpression extends ExpressionStateHandler
       return retVal;
    }
    
-        /* (non-Javadoc)
+        
+
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.expression.IMethodCallExpression#getEndPosition()
          */
    public long getEndPosition()
@@ -216,7 +219,9 @@ public class MethodCallExpression extends ExpressionStateHandler
       return retVal;
    }
    
-        /* (non-Javadoc)
+        
+
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.expression.IMethodCallExpression#getStartLine()
          */
    public long getStartLine()
@@ -229,7 +234,9 @@ public class MethodCallExpression extends ExpressionStateHandler
       return retVal;
    }
    
-        /* (non-Javadoc)
+        
+
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.expression.IMethodCallExpression#getStartPosition()
          */
    public long getStartPosition()
@@ -242,7 +249,9 @@ public class MethodCallExpression extends ExpressionStateHandler
       return retVal;
    }
    
-        /* (non-Javadoc)
+        
+
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.expression.IMethodCallExpression#sendOperationEvents(org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.InstanceInformation, org.netbeans.modules.uml.core.reverseengineering.reframework.IREClass, org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.SymbolTable, org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.IREClassLoader, org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.IUMLParserEventDispatcher, org.dom4j.Node)
          */
    public InstanceInformation sendOperationEvents(InstanceInformation pInfo,
@@ -361,7 +370,9 @@ public class MethodCallExpression extends ExpressionStateHandler
       return retVal;
       
    }
-        /* (non-Javadoc)
+        
+
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.expression.IMethodCallExpression#stateComplete(java.lang.String)
          */
 public void stateComplete(String stateName)
@@ -379,7 +390,9 @@ public void stateComplete(String stateName)
       super.stateComplete(stateName);
    }
    
-        /* (non-Javadoc)
+        
+
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.expression.IMethodCallExpression#writeAsXMI(org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.InstanceInformation, org.dom4j.Node, org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.SymbolTable, org.netbeans.modules.uml.core.reverseengineering.reframework.IREClass, null)
          */
    public ETPairT<InstanceInformation,Node> writeAsXMI(InstanceInformation pInfo,

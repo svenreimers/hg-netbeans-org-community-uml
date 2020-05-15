@@ -58,6 +58,8 @@ import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IInterface;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
+
+
 /**
  * Test cases for TemplateManager.
  * 
@@ -73,7 +75,9 @@ public class TemplateManagerTestCase extends AbstractUMLTestCase {
 
 	IPackage newPack;
 
-	/*
+	
+
+/*
 	 * (non-Javadoc)
 	 * 
 	 * @see junit.framework.TestCase#setUp()

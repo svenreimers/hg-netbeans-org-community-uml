@@ -50,7 +50,8 @@ package org.netbeans.test.umllib.exceptions;
  */
 public class NotFoundInPaletteException extends NotFoundException{
     
-    /**
+    
+/**
      * Creates a new instance of NotFoundInPaletteException
      * @param message 
      */

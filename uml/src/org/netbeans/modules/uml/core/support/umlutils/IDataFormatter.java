@@ -49,6 +49,7 @@ import org.dom4j.Node;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.IElement;
 import org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ILanguage;
 
+
 /**
  * <p>Title: </p>
  * <p>Description: </p>
@@ -67,7 +68,7 @@ public interface IDataFormatter {
 //HRESULT FormatElement2([in] IElement* element, [in] BSTR scriptName, [out, retval] BSTR* format );
   public String formatElement(IElement elem, String scriptName);
 
-//   Formats the data elements data.  The property elements used to format the elements data and the formatted string is returned.
+
 //HRESULT FormatElement3([in]IElement* element, [out]IPropertyElement** propElement, [out, retval] BSTR* format);
   public String formatElement(IElement elem, IPropertyElement propElem);
 

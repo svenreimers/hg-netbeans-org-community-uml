@@ -42,11 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : Activity.java
- * Created on : Sep 16, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.metamodel.common.commonactivities;
 
 import org.dom4j.Document;
@@ -64,7 +61,8 @@ import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure
 public class Activity extends Behavior implements IActivity
 {
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivity#addEdge(org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivityEdge)
      */
     public void addEdge(IActivityEdge pEdge)
@@ -72,7 +70,9 @@ public class Activity extends Behavior implements IActivity
         addOwnedElement(pEdge);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivity#addGroup(org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivityGroup)
      */
     public void addGroup(final IActivityGroup pGroup)
@@ -89,7 +89,9 @@ public class Activity extends Behavior implements IActivity
 
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivity#addNode(org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivityNode)
      */
     public void addNode(IActivityNode pNode)
@@ -97,7 +99,9 @@ public class Activity extends Behavior implements IActivity
         addOwnedElement(pNode);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivity#addPartition(org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivityPartition)
      */
     public void addPartition(IActivityPartition pPartition)
@@ -105,7 +109,9 @@ public class Activity extends Behavior implements IActivity
        addGroup(pPartition);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivity#getEdges()
      */
     public ETList<IActivityEdge> getEdges()
@@ -114,7 +120,9 @@ public class Activity extends Behavior implements IActivity
             retrieveElementCollection((IElement)this, "UML:Element.ownedElement/*", IActivityEdge.class);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivity#getGroups()
      */
     public ETList<IActivityGroup> getGroups()
@@ -123,7 +131,9 @@ public class Activity extends Behavior implements IActivity
             retrieveElementCollection((IElement)this, "UML:Element.ownedElement/*", IActivityGroup.class);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivity#getIsSingleCopy()
      */
     public boolean getIsSingleCopy()
@@ -131,7 +141,9 @@ public class Activity extends Behavior implements IActivity
         return getBooleanAttributeValue("isSingleCopy", false);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivity#getKind()
      */
     public int getKind()
@@ -139,7 +151,9 @@ public class Activity extends Behavior implements IActivity
         return getActivityKindValue("kind");
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivity#getNodes()
      */
     public ETList<IActivityNode> getNodes()
@@ -148,7 +162,9 @@ public class Activity extends Behavior implements IActivity
             retrieveElementCollection((IElement)this, "UML:Element.ownedElement/*", IActivityNode.class);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivity#getPartitions()
      */
     public ETList<IActivityPartition> getPartitions()
@@ -157,7 +173,9 @@ public class Activity extends Behavior implements IActivity
             retrieveElementCollection((IElement)this, "UML:Element.ownedElement/*", IActivityPartition.class);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivity#removeEdge(org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivityEdge)
      */
     public void removeEdge(IActivityEdge pEdge)
@@ -165,7 +183,9 @@ public class Activity extends Behavior implements IActivity
        removeElement(pEdge);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivity#removeGroup(org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivityGroup)
      */
     public void removeGroup(final IActivityGroup pGroup)
@@ -181,7 +201,9 @@ public class Activity extends Behavior implements IActivity
 
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivity#removeNode(org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivityNode)
      */
     public void removeNode(IActivityNode pNode)
@@ -189,7 +211,9 @@ public class Activity extends Behavior implements IActivity
         removeElement(pNode);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivity#removePartition(org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivityPartition)
      */
     public void removePartition(IActivityPartition pPartition)
@@ -197,7 +221,9 @@ public class Activity extends Behavior implements IActivity
         removeGroup(pPartition);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivity#setIsSingleCopy(boolean)
      */
     public void setIsSingleCopy(boolean value)
@@ -205,7 +231,9 @@ public class Activity extends Behavior implements IActivity
         setBooleanAttributeValue("isSingleCopy", value);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivity#setKind(int)
      */
     public void setKind(int value)

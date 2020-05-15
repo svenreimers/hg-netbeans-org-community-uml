@@ -44,11 +44,8 @@
 
 
 
-/*
- * File       : ClassifierUtilitiesTestCase.java
- * Created on : Oct 21, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.metamodel.modelanalysis;
 
 import org.netbeans.modules.uml.core.metamodel.core.constructs.IClass;
@@ -100,7 +97,9 @@ public class ClassifierUtilitiesTestCase extends AbstractUMLTestCase
         iface.addOperation(op6);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see junit.framework.TestCase#tearDown()
      */
     protected void tearDown() throws Exception

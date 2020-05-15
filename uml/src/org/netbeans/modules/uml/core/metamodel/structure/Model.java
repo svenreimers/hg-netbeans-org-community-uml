@@ -62,7 +62,9 @@ public class Model extends Package implements IModel
 		super();		
 	}
 	
-	/**
+	
+
+/**
 	 * Establishes the appropriate XML elements for this UML type.
 	 *
 	 * [in] The document where this element will reside

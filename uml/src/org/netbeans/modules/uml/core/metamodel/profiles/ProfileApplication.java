@@ -42,6 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
+
+
 /*
  * Created on Sep 16, 2003
  *
@@ -62,7 +64,8 @@ public class ProfileApplication
 	implements IProfileApplication
 {
 
-	/**
+	
+/**
 	 * Gets the Profile this application is importing.
 	 */
 	public IProfile getImportedProfile()
@@ -76,7 +79,9 @@ public class ProfileApplication
 		return retProfile;
 	}
 
-	/**
+	
+
+/**
 	 * Sets the Profile this application is importing.
 	 */
 	public void setImportedProfile(IProfile profile)
@@ -84,7 +89,9 @@ public class ProfileApplication
 		setImportedPackage(profile);
 	}
 	
-	/**
+	
+
+/**
 	 * Establishes the appropriate XML elements for this UML type.
 	 *
 	 * [in] The document where this element will reside

@@ -54,6 +54,7 @@ import org.netbeans.test.uml.diagramcontextmenu.utils.DCMUtils;
 import org.netbeans.test.umllib.testcases.UMLTestCase;
 import org.netbeans.test.umllib.util.PopupConstants;
 
+
 /**
  *
  * @spec UML/Diagram_ContextMenus.xml
@@ -81,6 +82,8 @@ public class DiagramContextMenus_COD extends UMLTestCase {
         return suite;
     }
     
+
+
 /**
  * @caseblock Collaboration Diagram
  * @usecase Check context menu of collaboration diagram
@@ -95,6 +98,8 @@ public class DiagramContextMenus_COD extends UMLTestCase {
             fail("Diagram popum menu item '" + itemName + "' is enabled but should not be");
         }
     }
+
+
 
 /**
  * @caseblock Collaboration Diagram
@@ -111,6 +116,8 @@ public class DiagramContextMenus_COD extends UMLTestCase {
         }
     }
 
+
+
 /**
  * @caseblock Collaboration Diagram
  * @usecase Check context menu of collaboration diagram
@@ -125,6 +132,8 @@ public class DiagramContextMenus_COD extends UMLTestCase {
             fail("Diagram popum menu item '" + itemName + "' is enabled but should not be");
         }
     }
+
+
 
 /**
  * @caseblock Collaboration Diagram
@@ -141,6 +150,8 @@ public class DiagramContextMenus_COD extends UMLTestCase {
         }
     }
     
+
+
 /**
  * @caseblock Collaboration Diagram
  * @usecase Check context menu of collaboration diagram
@@ -156,6 +167,8 @@ public class DiagramContextMenus_COD extends UMLTestCase {
         }
     }
     
+
+
 /**
  * @caseblock Collaboration Diagram
  * @usecase Check context menu of collaboration diagram
@@ -171,6 +184,8 @@ public class DiagramContextMenus_COD extends UMLTestCase {
         }
     }
     
+
+
 /**
  * @caseblock Collaboration Diagram
  * @usecase Check context menu of collaboration diagram
@@ -188,6 +203,8 @@ public class DiagramContextMenus_COD extends UMLTestCase {
     
     
     
+
+
 /**
  * @caseblock Collaboration Diagram
  * @usecase Check context menu of collaboration diagram
@@ -202,6 +219,8 @@ public class DiagramContextMenus_COD extends UMLTestCase {
             fail("Diagram popum menu item '" + itemName + "' is enabled but should not be");
         }
     }
+
+
 
 /**
  * @caseblock Collaboration Diagram
@@ -218,6 +237,8 @@ public class DiagramContextMenus_COD extends UMLTestCase {
         }
     }
 
+
+
 /**
  * @caseblock Collaboration Diagram
  * @usecase Check context menu of collaboration diagram
@@ -232,6 +253,8 @@ public class DiagramContextMenus_COD extends UMLTestCase {
             fail("Diagram popum menu item '" + itemName + "' is disabled but should not be");
         }
     }
+
+
 
 /**
  * @caseblock Collaboration Diagram
@@ -248,6 +271,8 @@ public class DiagramContextMenus_COD extends UMLTestCase {
         }
     }
 
+
+
 /**
  * @caseblock Collaboration Diagram
  * @usecase Check context menu of collaboration diagram
@@ -262,6 +287,8 @@ public class DiagramContextMenus_COD extends UMLTestCase {
             fail("Diagram popum menu item '" + itemName + "' is disabled but should not be");
         }
     }
+
+
 
 /**
  * @caseblock Collaboration Diagram
@@ -283,6 +310,8 @@ public class DiagramContextMenus_COD extends UMLTestCase {
         }
     }
     
+
+
 /**
  * @caseblock Collaboration Diagram
  * @usecase Check context menu of collaboration diagram
@@ -303,6 +332,8 @@ public class DiagramContextMenus_COD extends UMLTestCase {
         }
     }
     
+
+
 /**
  * @caseblock Collaboration Diagram
  * @usecase Check context menu of collaboration diagram
@@ -318,6 +349,8 @@ public class DiagramContextMenus_COD extends UMLTestCase {
         }
     }
     
+
+
 /**
  * @caseblock Collaboration Diagram
  * @usecase Check context menu of collaboration diagram
@@ -333,6 +366,8 @@ public class DiagramContextMenus_COD extends UMLTestCase {
         }
     }
     
+
+
 /**
  * @caseblock Collaboration Diagram
  * @usecase Check context menu of collaboration diagram
@@ -348,6 +383,8 @@ public class DiagramContextMenus_COD extends UMLTestCase {
         }
     }
     
+
+
 /**
  * @caseblock Collaboration Diagram
  * @usecase Check context menu of collaboration diagram
@@ -367,6 +404,8 @@ public class DiagramContextMenus_COD extends UMLTestCase {
             }
         }
     }
+
+
 
 /**
  * @caseblock Collaboration Diagram
@@ -388,6 +427,8 @@ public class DiagramContextMenus_COD extends UMLTestCase {
         }
     }
     
+
+
 /**
  * @caseblock Collaboration Diagram
  * @usecase Check context menu of collaboration diagram
@@ -408,6 +449,8 @@ public class DiagramContextMenus_COD extends UMLTestCase {
         }
     }
     
+
+
 /**
  * @caseblock Collaboration Diagram
  * @usecase Check context menu of collaboration diagram
@@ -423,6 +466,8 @@ public class DiagramContextMenus_COD extends UMLTestCase {
         }
     }
     
+
+
 /**
  * @caseblock Collaboration Diagram
  * @usecase Check context menu of collaboration diagram

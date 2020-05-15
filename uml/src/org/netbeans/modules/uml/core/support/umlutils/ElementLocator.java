@@ -62,6 +62,7 @@ import org.netbeans.modules.uml.core.metamodel.structure.IProject;
 import org.netbeans.modules.uml.core.support.umlsupport.ProductRetriever;
 import org.netbeans.modules.uml.core.support.umlsupport.StringUtilities;
 import org.netbeans.modules.uml.core.support.umlsupport.XMLManip;
+
 /**
  * <p>Title: </p>
  * <p>Description: </p>
@@ -73,7 +74,8 @@ import org.netbeans.modules.uml.core.support.umlsupport.XMLManip;
 public class ElementLocator implements IElementLocator
 {
    
-   /**
+   
+/**
     *
     * Finds the elements that match the passed-in name. The entire Project
     * is searched.
@@ -93,7 +95,9 @@ public class ElementLocator implements IElementLocator
       return elems;
    }
    
-   /**
+   
+
+/**
     *
     * Find the element in the Namespace passed. Only the immediate namespace is searched.
     * No imported package or parent Namespaces are searched.
@@ -109,7 +113,9 @@ public class ElementLocator implements IElementLocator
       return space.getOwnedElementsByName(name);
    }
    
-   /**
+   
+
+/**
     *
     * Searches the immediate namespace and any imported packages in order to find
     * the element that matches the passed-in name.
@@ -147,7 +153,9 @@ public class ElementLocator implements IElementLocator
       return elem;
    }
    
-   /**
+   
+
+/**
     *
     * Retrieves the single element that matches the passed-in query.
     *
@@ -175,7 +183,9 @@ public class ElementLocator implements IElementLocator
       return elem;
    }
    
-   /**
+   
+
+/**
     *
     * Retrieves the elements that match the passed-in query.
     *
@@ -196,7 +206,9 @@ public class ElementLocator implements IElementLocator
       return UMLXMLManip.retrieveElementCollection(node, dummy, query, IElement.class);
    }
    
-   /**
+   
+
+/**
     *
     * Retrieves the element that has the passed in id.
     *
@@ -245,15 +257,8 @@ public class ElementLocator implements IElementLocator
       return findByID(context, idToFind);
    }
    
-   /**
-    * Reloads an element given only the XMI id.  Given the fact that this
-    * routine has an xmiid context it must loop over all open projects and
-    * find the project with the given xmiid.
-    *
-    * @param sTopLevelXMIID [in] The project xmiid.
-    * @param sElementXMIID [in] The element xmiid.
-    * @param pElement [out,retval] The discovered element.
-    */
+   
+
    public IElement findElementByID(String sTopLevelXMIID, String sElementXMIID)
    {
       IElement retEle = null;
@@ -281,14 +286,8 @@ public class ElementLocator implements IElementLocator
       return retEle;
    }
    
-   /**
-    * Reloads an element given only the XMI id.  Given the fact that this
-    * routine has no context it must loop over all open projects and search
-    * each one.
-    *
-    * @param sElementXMIID [in] The element xmiid.
-    * @param pElement [out,retval] The discovered element.
-    */
+   
+
    public IElement findElementByID(String sElementXMIID)
    {
       IElement retEle = null;
@@ -320,7 +319,9 @@ public class ElementLocator implements IElementLocator
       return retEle;
    }
    
-   /**
+   
+
+/**
     *
     * Attempts to retrieve the ModelElement at the given scope.
     *
@@ -402,7 +403,9 @@ public class ElementLocator implements IElementLocator
       return query;
    }
    
-   /**
+   
+
+/**
     * Performs the passed-in query within the passed-in Namespace. If the query fails, (i.e.,
     * no elements are found), and the Namespace has imported elements (i.e., the Namespace is
     * QI'd to see if it supported the IPackage interface), the same query is run
@@ -513,7 +516,9 @@ public class ElementLocator implements IElementLocator
       return retEle;
    }
    
-   /**
+   
+
+/**
     *
     * Retrieves the Project interface this Element is a part of.
     *
@@ -537,7 +542,9 @@ public class ElementLocator implements IElementLocator
       return proj;
    }
    
-   /**
+   
+
+/**
     * Creates a new package element and adds it to a namespace.
     *
     * @param *nSpace [in] The element that will contains the new package.  The
@@ -564,7 +571,9 @@ public class ElementLocator implements IElementLocator
       return nEle;
    }
    
-   /**
+   
+
+/**
     * Creates an unknown data type element and adds it to a namespace.  The creation of
     * the unknown data types uses the user preferences to determine if an unknown data
     * type is to be created, and what type to create.
@@ -597,7 +606,9 @@ public class ElementLocator implements IElementLocator
       return nEle;
    }
    
-   /**
+   
+
+/**
     *
     * Retrieves the fully qualified name of the element specified by the passed in ID.
     *
@@ -612,7 +623,9 @@ public class ElementLocator implements IElementLocator
       return retrieveFullyQualifiedName(node, "::");
    }
    
-   /**
+   
+
+/**
     *
     * Retrieves the fully qualified name of the element specified by the passed in ID.
     *
@@ -639,7 +652,9 @@ public class ElementLocator implements IElementLocator
       return retStr;
    }
    
-   /**
+   
+
+/**
     *
     * Retrieves the passed in Element's fully qualified name, delimited by the passed in string.
     *
@@ -665,7 +680,9 @@ public class ElementLocator implements IElementLocator
       return retStr;
    }
    
-   /**
+   
+
+/**
     *
     * Given the XML node, creates the encapsulating ModelElement and passes it back.
     *

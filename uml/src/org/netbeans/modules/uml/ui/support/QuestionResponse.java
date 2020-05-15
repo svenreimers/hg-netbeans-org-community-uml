@@ -43,6 +43,7 @@
  */
 
 
+
 /*
  *
  * Created on Jul 1, 2003
@@ -50,6 +51,7 @@
 package org.netbeans.modules.uml.ui.support;
 
 import org.netbeans.modules.uml.ui.support.commondialogs.MessageResultKindEnum;
+
 
 /**
  * The users response from a question dialog.  The details specify which button
@@ -72,7 +74,9 @@ public class QuestionResponse implements MessageResultKindEnum
       setResult(response);
    }
    
-   /**
+   
+
+/**
     * Specifies if the check box was selected when the user responded to the
     * question.
     * 
@@ -84,7 +88,9 @@ public class QuestionResponse implements MessageResultKindEnum
       return m_IsChecked;
    }
 
-   /**
+   
+
+/**
     * Set whether or not the check box was selected when the user responded to 
     * the question.
     * 
@@ -96,7 +102,9 @@ public class QuestionResponse implements MessageResultKindEnum
       m_IsChecked = value;
    }
    
-   /**
+   
+
+/**
     * Specifies the answer to the question that was asked the user.  
     * 
     * @return One of the MessageResultKindEnum values.
@@ -109,7 +117,9 @@ public class QuestionResponse implements MessageResultKindEnum
 
    
 
-   /**
+   
+
+/**
     * Sets the answer to the question that was asked the user.  
     * 
     * @param value One of the MessageResultKindEnum values.

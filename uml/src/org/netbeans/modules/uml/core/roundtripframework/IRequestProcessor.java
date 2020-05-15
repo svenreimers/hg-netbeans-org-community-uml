@@ -47,27 +47,37 @@ import org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframe
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 public interface IRequestProcessor
 {
-	/**
+	
+
+/**
 	 * Initializes the processor.
 	*/
 	public void initialize(IRoundTripController controller);
 
-	/**
+	
+
+/**
 	 * DeInitializes the processor.
 	*/
 	public void deInitialize(IRoundTripController controller);
 
-	/**
+	
+
+/**
 	 * Have the processor process a top level change request.
 	*/
 	public ETList<IChangeRequest> processRequests( ETList<IChangeRequest> inputRequests);
 
-	/**
+	
+
+/**
 	 * Retrieves the name of the language this processor is designed to handle.
 	*/
 	public String getLanguage();
 
-	/**
+	
+
+/**
 	 * Retrieves the language this processor is designed to handle.
 	*/
 	public ILanguage getLanguage2();

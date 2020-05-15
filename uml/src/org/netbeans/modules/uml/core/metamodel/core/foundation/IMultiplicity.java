@@ -48,6 +48,7 @@ package org.netbeans.modules.uml.core.metamodel.core.foundation;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 
+
 /**
  * <p>Title: </p>
  * <p>Description: </p>

@@ -68,7 +68,8 @@ public class MessageService implements IMessageService
 	//	The facilities that have added messages or ones that we know about beforehand (hardcoded)
 	private Map<String,IMessageFacility> m_FacilityMap = new HashMap<String,IMessageFacility>(); 
 
-	/**
+	
+/**
 	 * Fires the message added connection point to let those listening know that a new
 	 * message should be responded to.
 	 *
@@ -97,7 +98,9 @@ public class MessageService implements IMessageService
 		}
 	}
 
-	/**
+	
+
+/**
 	 * Fires the message added connection point to let those listening know that a new
 	 * message should be responded to.  This routine constructs a message based on
 	 * the arguments and then fires AddMessage.
@@ -120,7 +123,9 @@ public class MessageService implements IMessageService
 		addMessage(pMessageData);
 	}
 
-	/**
+	
+
+/**
 	 * Fires the message added connection point to let those listening that a new
 	 * message should be responded to.  This routine constructs a message based on
 	 * the arguments and then fires AddMessage.
@@ -134,9 +139,9 @@ public class MessageService implements IMessageService
 	 */
 	public void addMessage(int nMessageType, int hInstance, int nFacilityStringID, String sMessageString) 
 	{
-		//AZTEC: need to be replaced
+		
 		// Get the facility string
-		//sFacilityString.LoadString((HINSTANCE)hInstance, (UINT)nFacilityStringID);
+		
 		String sFacilityString = "";
 		if (sFacilityString == null || sFacilityString.length() == 0)
 		{
@@ -145,7 +150,9 @@ public class MessageService implements IMessageService
 		addMessage(nMessageType, sFacilityString, sMessageString);
 	}
 
-	/**
+	
+
+/**
 	 * MessageService keeps a list of all facilities that it knows about.  This is helpful
 	 * for the filter object which can then create filters based on user preferences.  This
 	 * routine verifies that the facility that generated this message is known.  If not
@@ -162,7 +169,9 @@ public class MessageService implements IMessageService
 		}
 	}
 	
-	/**
+	
+
+/**
 	 * MessageService keeps a list of all facilities that it knows about.  This is helpful
 	 * for the filter object which can then create filters based on user preferences.  This
 	 * routine verifies that the facility that generated this message is known.  If not
@@ -182,7 +191,9 @@ public class MessageService implements IMessageService
 		}
 	}
 	
-	/**
+	
+
+/**
 	 * CMessenger keeps a list of all facilities that it knows about.  This is helpful
 	 * for the filter object which can then create filters based on user preferences.  This
 	 * routine returns a list of all known facilities.

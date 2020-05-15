@@ -48,52 +48,72 @@ import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure
 
 public interface IObjectFlow extends IActivityEdge
 {
-	/**
+	
+
+/**
 	 * property Effect
 	*/
 	public int getEffect();
 
-	/**
+	
+
+/**
 	 * property Effect
 	*/
 	public void setEffect( /* ObjectFlowEffectKind */ int value );
 
-	/**
+	
+
+/**
 	 * property IsMulticase
 	*/
 	public boolean getIsMulticast();
 
-	/**
+	
+
+/**
 	 * property IsMulticase
 	*/
 	public void setIsMulticast( boolean value );
 
-	/**
+	
+
+/**
 	 * property IsMultiReceive
 	*/
 	public boolean getIsMultiReceive();
 
-	/**
+	
+
+/**
 	 * property IsMultiReceive
 	*/
 	public void setIsMultiReceive( boolean value );
 
-	/**
+	
+
+/**
 	 * property Selection
 	*/
 	public IBehavior getSelection();
 
-	/**
+	
+
+/**
 	 * property Selection
 	*/
 	public void setSelection( IBehavior value );
 
-	/**
+	
+
+/**
 	 * property Transformation
 	*/
 	public IBehavior getTransformation();
 
-	/**
+	
+
+/**
 	 * property Transformation
 	*/
 	public void setTransformation( IBehavior value );

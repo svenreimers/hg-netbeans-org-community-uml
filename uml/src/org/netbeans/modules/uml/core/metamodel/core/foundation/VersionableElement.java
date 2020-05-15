@@ -74,7 +74,9 @@ import org.openide.filesystems.FileUtil;
 
 public class VersionableElement implements IVersionableElement
 {
-    /**
+    
+
+/**
      * The XML Node on which this element is based. All access to it should be
      * through its accessor and mutator, so that subclasses can point our 
      * methods at other Nodes.
@@ -95,7 +97,9 @@ public class VersionableElement implements IVersionableElement
        return (IVersionableElement)aggregator.get();
     }
     
-    /**
+    
+
+/**
      *  Retrieves the XML node associated with this element.
      * HRESULT Node([out, retval] IXMLDOMNode* *pVal);
      */
@@ -106,7 +110,9 @@ public class VersionableElement implements IVersionableElement
     public org.dom4j.Node getDOM4JNode() {
         return m_DOMNode;
     }
-      /**
+      
+
+/**
        *  Sets the XML node associated with this element.
        * HRESULT Node([in] IXMLDOMNode* newVal);
        */
@@ -114,7 +120,9 @@ public class VersionableElement implements IVersionableElement
           m_Node = n;
       }
       
-  /**
+  
+
+/**
    *  Initializes the internal XML node.
    * HRESULT PrepareNode( [ in, defaultvalue(0)] IXMLDOMNode* parentNode );
    */
@@ -128,20 +136,26 @@ public class VersionableElement implements IVersionableElement
   	}
   }
   
-  /**
+  
+
+/**
  * Need to be implemented in child classes.
  */
 	public void establishNodeAttributes(Element elem) {
 	}
 	
-	/**
+	
+
+/**
    * This is not implemented here. This is implemented in sub objects of this type.
    */
   public void establishNodePresence( Document doc , Node node )
   {
   }
   
-  /**
+  
+
+/**
    * Retrieves the VersionMe flag. This flag indicates whether or not this 
    * element is to be versioned when saved next. This is a temporary state
    * of this element, as the VersionMe flag can only exist on elements that
@@ -170,7 +184,9 @@ public class VersionableElement implements IVersionableElement
     return retVal;
   }
   
-  /**
+  
+
+/**
    * Sets the "versionMe" XML attribute on this element's DOM node. However, this
    * operation will only occur if this element has not previously been versioned.
    * If the element has been versioned, this is a noop. If the flag is set, it
@@ -209,7 +225,9 @@ public class VersionableElement implements IVersionableElement
 	}
   }
 
-  /**
+  
+
+/**
    * If this particular element is to be versioned or has been versioned, the
    * "isDirty" XML attribute is injected into the DOM node and set to the value
    * dictated by newVal. If this element has not been versioned, or is not marked
@@ -273,7 +291,9 @@ public class VersionableElement implements IVersionableElement
   	}
   }
   
-  /**
+  
+
+/**
    *
    * Determines whether or not this element is dirty. If this element is not
    * version controlled, it will always return false.
@@ -304,7 +324,9 @@ public class VersionableElement implements IVersionableElement
     return dirty;
   }
   
-  /**
+  
+
+/**
    *
    * Simply a pass through to the internal GetID() call.
    *
@@ -316,7 +338,9 @@ public class VersionableElement implements IVersionableElement
     return getId();
   }
   
-  /**
+  
+
+/**
    * Sets the XML id of this node.  Right now the only one using this is the gui
    * when a presentation object is created and needs to be set back to its original
    * id when the graphical node was first created.
@@ -346,7 +370,9 @@ public class VersionableElement implements IVersionableElement
 	}
   }
   
-  /**
+  
+
+/**
    *
    * Determines whether or not this element is the same as the passed in element.
    * The comparison is made between the XMI ids.
@@ -371,7 +397,9 @@ public class VersionableElement implements IVersionableElement
     return same;
   }
    
-  /**
+  
+
+/**
    *
    * Determines whether or not this element is the same as the passed in element.
    * The comparison is made between the XMI ids.
@@ -397,7 +425,9 @@ public class VersionableElement implements IVersionableElement
       return retVal;
    }
 
-  /**
+  
+
+/**
    *
    * Retrieves the value of the xmi.id XML attribute for this node.
    *
@@ -417,7 +447,9 @@ private String getId() {
 	return id;
 }
 
-	/**
+	
+
+/**
 	 *
 	 * Deletes this element from the existing document. All references to the element
 	 * are removed.
@@ -434,7 +466,9 @@ private String getId() {
 	 	fullDelete(ls);
 	 }
 	 
-	/**
+	
+
+/**
 	 *
 	 * Called to see if this element has already been deleted.
 	 *
@@ -453,7 +487,9 @@ private String getId() {
     return retVal;
   }
   
-  /**
+  
+
+/**
    *
    * Before performing the actual delete, this method makes sure that
    * no other object references this element. If there is a reference, the
@@ -495,7 +531,9 @@ private String getId() {
     return retVal;
   }
 
-  /**
+  
+
+/**
   * Retrieves the document that owns this node.
   *
   * @param doc[out] The retrieved document
@@ -523,7 +561,9 @@ private String getId() {
 	return doc;
   }
 
-  /**
+  
+
+/**
    * Retrieves the Document containing the given IElement. This method is
    * guaranteed to work even for ITransitionElement instances, and for IElements
    * that are children of ITransitionElements.
@@ -545,6 +585,8 @@ private String getId() {
       if (n == null) return null;
 	 return n.getDocument();
   }
+
+
 
 /**
    *
@@ -653,6 +695,8 @@ private void fullDelete(List list) {
 	}
   }
 
+
+
 /**
  *
  * Fires the low-level "ElementDeleted" event.
@@ -673,6 +717,8 @@ protected void fireDelete(IVersionableElement element) {
 	}
 	
 }
+
+
 /**
  *
  * Fires the low level "ElementPreDelete" event.
@@ -696,6 +742,8 @@ protected boolean firePreDelete(IVersionableElement element) {
 	return proceed;
 }
 
+
+
 /**
  *
  * Removes all references to the passed-in ID from any element referring to it.
@@ -714,22 +762,14 @@ private void cleanReferences(Document doc, String xmiid) {
        UMLXMLManip.cleanReferences(doc, xmiid);
     }
 }
-/**
-   *
-   * Retrieves all the XML attribute elements that refer in some way to the passed in XMI ID.
-   *
-   * @param doc[in] The document that contains the elements to retrieve
-   * @param xmiID[in] The id of the element to match against
-   * @param elements[out] All XML attribute elements that reference the passed in ID
-   *
-   * @return HRESULT
-   * @note The elements collection returned is filled with IXMLDOMAttribute objects
-   *
-   */
+
+
 protected List getAllAffectedElements(Document doc, String xmiid) {
 	List toRet = UMLXMLManip.getAllAffectedElements(doc, xmiid);
 	return toRet;
 }
+
+
 
 /**
  *
@@ -759,7 +799,9 @@ protected List getAllAffectedElements(Document doc, String xmiid) {
   	}
     return retVal;
   }
-  /**
+  
+
+/**
    *  The name of the file that this element is versioned in. If the element has not been versioned, this value is ignored.
    * HRESULT VersionedFileName([in] BSTR newVal);
    */
@@ -768,7 +810,9 @@ protected List getAllAffectedElements(Document doc, String xmiid) {
   	//c++ code not doing anything.
   }
   
-  /**
+  
+
+/**
    *
    * Determines whether or not this element has been previously versioned.
    *
@@ -787,7 +831,9 @@ protected List getAllAffectedElements(Document doc, String xmiid) {
     return versioned;
   }
 
-  /**
+  
+
+/**
    * Checks to see if this element has been previously versioned or not.
    *
    * @param element[in] The element to check. If 0, then the element of this
@@ -818,7 +864,9 @@ protected List getAllAffectedElements(Document doc, String xmiid) {
   	return versioned;
   }
 
-  /**
+  
+
+/**
    *
    * Saves the contents of this element out to the etx file if this element
    * is indeed versioned. If the element is not dirty, then the only thing that
@@ -850,7 +898,9 @@ protected List getAllAffectedElements(Document doc, String xmiid) {
     return saved;
   }
   
-  /**
+  
+
+/**
    *
    * Duplicates this element. The duplicate element is the same as the current element
    * except that it will be assigned a new XMI id and removed from the Namespace that the 
@@ -901,7 +951,9 @@ protected List getAllAffectedElements(Document doc, String xmiid) {
     return dup;
   }
   
-  /**
+  
+
+/**
    *
    * This routine returns the URI to this element, if the element has been extracted
    * ( most likely due to version control ) from the Project's DOM. This routine
@@ -928,7 +980,9 @@ protected List getAllAffectedElements(Document doc, String xmiid) {
     return uri;
   }
   
-  /**
+  
+
+/**
    *
    * Removes all version control information from this element. Once this is done,
    * the element will appear as if it had never been versioned.
@@ -1009,7 +1063,9 @@ protected List getAllAffectedElements(Document doc, String xmiid) {
   	}
   }
   
-  /**
+  
+
+/**
    *
    * Removes all references to the uri version of this element's xmi id with
    * the raw xmi id. The element will also not be a part of the type file
@@ -1032,7 +1088,9 @@ protected List getAllAffectedElements(Document doc, String xmiid) {
 			}
 		}
 	}
-  /**
+  
+
+/**
    * Retrieves a relative path from the Project that this element is in
    * and the path passed in.
    *
@@ -1046,7 +1104,9 @@ protected List getAllAffectedElements(Document doc, String xmiid) {
 	 return UMLXMLManip.retrieveRelativePath( getNode(), path );
   }
   
-  /**
+  
+
+/**
    * Verifies that this element is properly represented in memory. During version control
    * processing, it is possible for an element to be 'orphaned' in memory, as the parent
    * elements of this element could have been unloaded from memory, but due to a client
@@ -1091,7 +1151,9 @@ protected List getAllAffectedElements(Document doc, String xmiid) {
     return wasModified;
   }
 
-  /**
+  
+
+/**
    *  Retrieves the line number associated with this element.
    * HRESULT LineNumber([out, retval] long * lineNumber );
    */
@@ -1106,7 +1168,9 @@ protected List getAllAffectedElements(Document doc, String xmiid) {
     return lineNum;
   }
   
-  /**
+  
+
+/**
    *  Sets the line number associated with this element.
    * HRESULT LineNumber([in] long lineNumber );
    */
@@ -1116,7 +1180,9 @@ protected List getAllAffectedElements(Document doc, String xmiid) {
   	XMLManip.setAttributeValue(getNode(), "lineNumber", value);
   }
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IVersionableElement#getElementNode()
 	 */
 	public org.dom4j.Element getElementNode() {
@@ -1125,7 +1191,9 @@ protected List getAllAffectedElements(Document doc, String xmiid) {
 		return (org.dom4j.Element) getNode();
 	}
 	
-	/**
+	
+
+/**
 	 * Creates the actual XML node of the passed in type and establishes the created 
 	 * element as a child of the passed in parent node. All elements that wish to participate
 	 * in the persistence mechanism must call this method.
@@ -1165,7 +1233,9 @@ protected List getAllAffectedElements(Document doc, String xmiid) {
 		}
 	}
 	
-    /**
+    
+
+/**
 	 *
 	 * This method is designed to be overridden in subsequent sub-classes.
 	 *
@@ -1179,7 +1249,9 @@ protected List getAllAffectedElements(Document doc, String xmiid) {
 		
 	}
 	
-	/**
+	
+
+/**
 	 *
 	 * Performs the part of the duplication task specific to VersionableElement.
 	 *
@@ -1232,21 +1304,8 @@ protected List getAllAffectedElements(Document doc, String xmiid) {
 		return retEle;
 	}
 
-	/**
-	 *
-	 * Does an insert of the nodes coming in. This is a generic method that assumes that existingVer
-	 * is currently owned in some way by the current VersionableElement, and that newVer is being inserted
-	 * into the same collection that existingVer is a part of.
-	 *
-	 * @param owningElement[in]   The actual xml element that is the direct owner of the elements. If this
-	 *                            parameter is 0, the current element will be queried for the "UML:Element.ownedElement"
-	 *                            element, and that will be used as the owning element.
-	 * @param existingVer[in]     The existing element in the collection. Can be 0.
-	 * @param newVer[in]          The new element to insert before existingVer.
-	 *
-	 * @return HRESULT
-	 *
-	 */
+	
+
 //	public void insertNode(org.dom4j.Element owningElement, IVersionableElement existingVer,
 //							IVersionableElement newVer)
 //	{
@@ -1305,7 +1364,9 @@ protected List getAllAffectedElements(Document doc, String xmiid) {
             }
 		}
 	}
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IVersionableElement#setDom4JNode(org.dom4j.Node)
 	 */
 	public void setDom4JNode(org.dom4j.Node n)
@@ -1314,7 +1375,9 @@ protected List getAllAffectedElements(Document doc, String xmiid) {
         setNode(n);
 	}
 	
-	/**
+	
+
+/**
 	 *
 	 * Retrieves the IProject this element is in.
 	 *

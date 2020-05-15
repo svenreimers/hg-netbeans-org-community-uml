@@ -48,6 +48,8 @@ package org.netbeans.modules.uml.core.metamodel.core.foundation;
 import org.dom4j.Document;
 import org.dom4j.Node;
 
+
+
 /**
  * ReferenceImpl implementation the IReference meta type.
  *
@@ -63,7 +65,9 @@ public class Reference extends DirectedRelationship implements IReference{
 		super();
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Retrieves the element that is the source of this relationship.
 	 *
@@ -78,7 +82,9 @@ public class Reference extends DirectedRelationship implements IReference{
 		return col.retrieveSingleElementWithAttrID(this, "source", IElement.class);
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Sets the source element on this relationship.
 	 *
@@ -133,7 +139,9 @@ public class Reference extends DirectedRelationship implements IReference{
 		}
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Retrieves the element that is the target of this relationship.
 	 *
@@ -148,7 +156,9 @@ public class Reference extends DirectedRelationship implements IReference{
 		return col.retrieveSingleElementWithAttrID(this, "target", IElement.class);
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Sets the element that will be the target of this relationship.
 	 *
@@ -201,7 +211,9 @@ public class Reference extends DirectedRelationship implements IReference{
 		}
 	}
 
-	/**
+	
+
+/**
 	 * Establishes the appropriate XML elements for this UML type.
 	 *
 	 * [in] The document where this element will reside

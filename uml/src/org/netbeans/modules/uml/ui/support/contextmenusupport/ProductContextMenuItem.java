@@ -63,7 +63,9 @@ public class ProductContextMenuItem implements IProductContextMenuItem
 		super();
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.support.contextmenusupport.IProductContextMenuItem#getSensitive()
 	 */
 	public boolean getSensitive()
@@ -72,7 +74,9 @@ public class ProductContextMenuItem implements IProductContextMenuItem
 		return false;
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.support.contextmenusupport.IProductContextMenuItem#setSensitive(boolean)
 	 */
 	public void setSensitive(boolean value)
@@ -81,7 +85,9 @@ public class ProductContextMenuItem implements IProductContextMenuItem
 		
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.support.contextmenusupport.IProductContextMenuItem#getHandled()
 	 */
 	public boolean getHandled()
@@ -90,7 +96,9 @@ public class ProductContextMenuItem implements IProductContextMenuItem
 		return false;
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.support.contextmenusupport.IProductContextMenuItem#setHandled(boolean)
 	 */
 	public void setHandled(boolean value)
@@ -99,7 +107,9 @@ public class ProductContextMenuItem implements IProductContextMenuItem
 		
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.support.contextmenusupport.IProductContextMenuItem#getIsSeparator()
 	 */
 	public boolean getIsSeparator()
@@ -108,7 +118,9 @@ public class ProductContextMenuItem implements IProductContextMenuItem
 		return false;
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.support.contextmenusupport.IProductContextMenuItem#setIsSeparator(boolean)
 	 */
 	public void setIsSeparator(boolean value)
@@ -117,7 +129,9 @@ public class ProductContextMenuItem implements IProductContextMenuItem
 		
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.support.contextmenusupport.IProductContextMenuItem#getMenuString()
 	 */
 	public String getMenuString()
@@ -126,7 +140,9 @@ public class ProductContextMenuItem implements IProductContextMenuItem
 		return null;
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.support.contextmenusupport.IProductContextMenuItem#setMenuString(java.lang.String)
 	 */
 	public void setMenuString(String value)
@@ -135,7 +151,9 @@ public class ProductContextMenuItem implements IProductContextMenuItem
 		
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.support.contextmenusupport.IProductContextMenuItem#getDescription()
 	 */
 	public String getDescription()
@@ -144,7 +162,9 @@ public class ProductContextMenuItem implements IProductContextMenuItem
 		return null;
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.support.contextmenusupport.IProductContextMenuItem#setDescription(java.lang.String)
 	 */
 	public void setDescription(String value)
@@ -153,7 +173,9 @@ public class ProductContextMenuItem implements IProductContextMenuItem
 		
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.support.contextmenusupport.IProductContextMenuItem#getMenuID()
 	 */
 	public int getMenuID()
@@ -162,7 +184,9 @@ public class ProductContextMenuItem implements IProductContextMenuItem
 		return 0;
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.support.contextmenusupport.IProductContextMenuItem#setMenuID(int)
 	 */
 	public void setMenuID(int value)
@@ -171,7 +195,9 @@ public class ProductContextMenuItem implements IProductContextMenuItem
 		
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.support.contextmenusupport.IProductContextMenuItem#getSubMenus()
 	 */
 	public ETList<IProductContextMenuItem> getSubMenus()
@@ -180,7 +206,9 @@ public class ProductContextMenuItem implements IProductContextMenuItem
 		return null;
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.support.contextmenusupport.IProductContextMenuItem#setSubMenus(org.netbeans.modules.uml.ui.support.contextmenusupport.IProductContextMenuItem[])
 	 */
 	public void setSubMenus(IProductContextMenuItem[] value)
@@ -189,7 +217,9 @@ public class ProductContextMenuItem implements IProductContextMenuItem
 		
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.support.contextmenusupport.IProductContextMenuItem#getChecked()
 	 */
 	public boolean getChecked()
@@ -198,7 +228,9 @@ public class ProductContextMenuItem implements IProductContextMenuItem
 		return false;
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.support.contextmenusupport.IProductContextMenuItem#setChecked(boolean)
 	 */
 	public void setChecked(boolean value)
@@ -207,7 +239,9 @@ public class ProductContextMenuItem implements IProductContextMenuItem
 		
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.support.contextmenusupport.IProductContextMenuItem#getButtonSource()
 	 */
 	public String getButtonSource()
@@ -216,7 +250,9 @@ public class ProductContextMenuItem implements IProductContextMenuItem
 		return null;
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.support.contextmenusupport.IProductContextMenuItem#setButtonSource(java.lang.String)
 	 */
 	public void setButtonSource(String value)
@@ -225,7 +261,9 @@ public class ProductContextMenuItem implements IProductContextMenuItem
 		
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.support.contextmenusupport.IProductContextMenuItem#getSelectionHandler()
 	 */
 	public IProductContextMenuSelectionHandler getSelectionHandler()
@@ -234,7 +272,9 @@ public class ProductContextMenuItem implements IProductContextMenuItem
 		return null;
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.support.contextmenusupport.IProductContextMenuItem#setSelectionHandler(org.netbeans.modules.uml.ui.support.contextmenusupport.IProductContextMenuSelectionHandler)
 	 */
 	public void setSelectionHandler(IProductContextMenuSelectionHandler value)
@@ -243,7 +283,9 @@ public class ProductContextMenuItem implements IProductContextMenuItem
 		
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.support.contextmenusupport.IProductContextMenuItem#getEnsurePullright()
 	 */
 	public boolean getEnsurePullright()
@@ -252,7 +294,9 @@ public class ProductContextMenuItem implements IProductContextMenuItem
 		return false;
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.support.contextmenusupport.IProductContextMenuItem#setEnsurePullright(boolean)
 	 */
 	public void setEnsurePullright(boolean value)

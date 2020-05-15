@@ -47,22 +47,30 @@ package org.netbeans.modules.uml.core.metamodel.core.foundation;
 
 public interface IExpressionListener
 {
-	/**
+	
+
+/**
 	 * Called whenever the body property of the passed in expression is about to be modified.
 	*/
 	public boolean onPreBodyModified( IExpression exp, String proposedValue );
 
-	/**
+	
+
+/**
 	 * Called after the body property of the passed in expression has been modified.
 	*/
 	public void onBodyModified( IExpression exp );
 
-	/**
+	
+
+/**
 	 * Called whenever the language property of the passed in expression is about to be modified.
 	*/
 	public boolean onPreLanguageModified( IExpression exp, String proposedValue );
 
-	/**
+	
+
+/**
 	 * Called whenever the language property of the passed in expression has been modified.
 	*/
 	public void onLanguageModified( IExpression exp );

@@ -43,6 +43,8 @@
  */
 
 
+
+
 /*
  * Created on Jun 9, 2003
  *
@@ -78,7 +80,9 @@ public class ReplaceTableCellEditor extends AbstractCellEditor implements
 		m_UI = ui;
 	}
 
-	/**
+	
+
+/**
 	 * TreeTableCellEditor implementation. Component returned is the
 	 * JTree.
 	 */
@@ -89,7 +93,9 @@ public class ReplaceTableCellEditor extends AbstractCellEditor implements
 	{
 		return null;
 	}
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see javax.swing.CellEditor#getCellEditorValue()
 	 */
 	public Object getCellEditorValue()

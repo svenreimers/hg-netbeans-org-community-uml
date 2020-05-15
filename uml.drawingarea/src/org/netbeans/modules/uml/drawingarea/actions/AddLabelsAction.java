@@ -57,6 +57,7 @@ import org.openide.util.Lookup;
 import org.openide.util.NbBundle;
 import org.openide.util.actions.SystemAction;
 
+
 /**
  * The AddLabelsAction is used to control the labels on a Widget.  The widget
  * looks for a LabelManager on the selected nodes.  The AddLabelsAction 
@@ -74,7 +75,9 @@ public class AddLabelsAction extends SceneNodeAction
     private LabelManager.LabelType type = LabelManager.LabelType.EDGE;
     private LabelMenuModel model = new LabelMenuModel();
     
-    /**
+    
+
+/**
      * @param actionContext
      * @return
      */
@@ -112,7 +115,9 @@ public class AddLabelsAction extends SceneNodeAction
         }
     }
     
-    /**
+    
+
+/**
      * Test if there is only one active node, and that node has a label manager.
      * 
      * @param activatedNodes the active set of nodes
@@ -123,7 +128,9 @@ public class AddLabelsAction extends SceneNodeAction
         return lastManager != null;
     }
 
-    /**
+    
+
+/**
      * retreives the an of the action.
      * 
      * @return
@@ -164,7 +171,9 @@ public class AddLabelsAction extends SceneNodeAction
         return super.getMenuPresenter();
     }
     
-    /**
+    
+
+/**
      * LabelMenuModel is an instance of the Actions.SubMenuModel that is used
      * to manage a LabelManagers actions.
      */
@@ -281,7 +290,9 @@ public class AddLabelsAction extends SceneNodeAction
             return actions;
         }
         
-        /**
+        
+
+/**
          * Resets all of the data help by the model.  Since the action will
          * be help by the system, we have to be able to reset the data each
          * time a the context menu is about to open.

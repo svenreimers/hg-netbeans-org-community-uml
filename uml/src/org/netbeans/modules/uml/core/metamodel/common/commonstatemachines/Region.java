@@ -42,6 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
+
+
 /*
  * Created on Sep 19, 2003
  *
@@ -62,7 +64,8 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 public class Region extends Namespace implements IRegion
 {
 
-	/**
+	
+/**
 	 *  Constructor
 	 */
 	public Region()

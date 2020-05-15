@@ -57,7 +57,9 @@ public class GraphObjectValidation implements IGraphObjectValidation
         validationResults = new int[7];
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      */
     public void addValidationKind(int nKind)
     {
@@ -76,7 +78,9 @@ public class GraphObjectValidation implements IGraphObjectValidation
        }
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      */
     public boolean areAnyValidationResultsInvalid()
     {
@@ -107,7 +111,9 @@ public class GraphObjectValidation implements IGraphObjectValidation
       return false;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      */
     public boolean getValidationKind(int nKind)
     {
@@ -118,7 +124,9 @@ public class GraphObjectValidation implements IGraphObjectValidation
         return false;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      */
     public int getValidationResult(int nKind)
     {
@@ -129,7 +137,9 @@ public class GraphObjectValidation implements IGraphObjectValidation
         return -1;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      */
     public void setValidationResult(int nKind, int nResult)
     {
@@ -139,7 +149,9 @@ public class GraphObjectValidation implements IGraphObjectValidation
         }        
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      */
     public void removeValidationKind(int nKind)
     {

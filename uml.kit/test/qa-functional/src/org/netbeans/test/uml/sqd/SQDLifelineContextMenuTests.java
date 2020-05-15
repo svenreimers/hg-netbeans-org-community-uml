@@ -510,55 +510,8 @@ public class SQDLifelineContextMenuTests  extends UMLTestCase {
     }
    
    
-   /*
-   //EXCLUDED FROM RUN
-   public void testLifeline_BackgroundColor(){
-        lastTestCase=getCurrentTestMethodName();;
-        final String lineName = "testLBKC";
-        final String className = "LBKC";
-        final String popupPath = "Lifeline|Background Color";        
-        final int red = 0;
-        final int green = 250;
-        final int blue = 0;
-        boolean enabled = true;                
-            final DiagramElementOperator el = createWorkingElement(lineName, className);
-            eventTool.waitNoEvent(1500);
-            final SequenceDiagramOperator tmpDia = new SequenceDiagramOperator(DIAGRAM);
-            GenericContextMenuVerifier verifier = new GenericContextMenuVerifier(el, dia){
-                protected boolean checkActionResult(){
-                    try{
-                        //setting the font
-                        JDialogOperator colorDlg = new JDialogOperator();
-                        //setting font family
-                        util.setColor(colorDlg, red, green, blue);
-                        eventTool.waitNoEvent(5000);
+   
 
-                        //checking everything was changed correctly
-                        Color color = new CompartmentOperator(el, CompartmentTypes.SEQUENCE_LIFELINE_NAME_COMPARTMENT).getBackgroundColor();
-                        //Color color = el.getBorderColor();
-
-                        if (color == null){
-                            log("Color is null");
-                            return false;
-                        }
-                        
-                        if (!(color.getRed()==red) || !(color.getGreen()==green) || !(color.getBlue()==blue)){
-                            log("Background color failed: (" + color.getRed() + ", " + color.getGreen() + ", " + color.getBlue() + ")");
-                            return false;
-                        }
-                        return true;
-                    }catch(Exception e){
-                        e.printStackTrace(getLog());
-                        return false;
-                    }
-                }
-            };
-            boolean result = verifier.verifyElement(popupPath, enabled);
-            if (!result){
-                fail("testLifeline_BackgroundColor failed. Reason unknown");
-            }            
-    }
-   */
    
    
    public void testLifeline_BorderColor(){

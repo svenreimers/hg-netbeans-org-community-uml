@@ -61,7 +61,9 @@ public class NamedElementEventsSink implements INamedElementEventsSink{
 		super();
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElementEventsSink#onPreNameModified(org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElement, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onPreNameModified(INamedElement element, String proposedName, IResultCell cell) {
@@ -69,7 +71,9 @@ public class NamedElementEventsSink implements INamedElementEventsSink{
 		
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElementEventsSink#onNameModified(org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onNameModified(INamedElement element, IResultCell cell) {
@@ -77,7 +81,9 @@ public class NamedElementEventsSink implements INamedElementEventsSink{
 		
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElementEventsSink#onPreVisibilityModified(org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElement, int, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onPreVisibilityModified(INamedElement element, int proposedValue, IResultCell cell) {
@@ -85,7 +91,9 @@ public class NamedElementEventsSink implements INamedElementEventsSink{
 		
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElementEventsSink#onVisibilityModified(org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onVisibilityModified(INamedElement element, IResultCell cell) {
@@ -93,7 +101,9 @@ public class NamedElementEventsSink implements INamedElementEventsSink{
 		
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElementEventsSink#onPreAliasNameModified(org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElement, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onPreAliasNameModified(INamedElement element, String proposedName, IResultCell cell) {
@@ -101,7 +111,9 @@ public class NamedElementEventsSink implements INamedElementEventsSink{
 		
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElementEventsSink#onAliasNameModified(org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onAliasNameModified(INamedElement element, IResultCell cell) {
@@ -109,7 +121,9 @@ public class NamedElementEventsSink implements INamedElementEventsSink{
 		
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElementEventsSink#onPreNameCollision(org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElement, java.lang.String, org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElement[], org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onPreNameCollision(INamedElement element, String proposedName, ETList<INamedElement> collidingElements, IResultCell cell) {
@@ -117,7 +131,9 @@ public class NamedElementEventsSink implements INamedElementEventsSink{
 		
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElementEventsSink#onNameCollision(org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElement, org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElement[], org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 	 */
 	public void onNameCollision(INamedElement element, ETList<INamedElement> collidingElements, IResultCell cell) {

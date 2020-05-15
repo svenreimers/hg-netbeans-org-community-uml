@@ -42,6 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
+
+
 /*
  * Created on Mar 9, 2004
  *
@@ -62,7 +64,8 @@ public class AddInEventSink implements IProjectTreeContextMenuEventsSink, IProdu
 {
 	private AssociateDlgAddIn m_Parent = null;
 
-		/**
+		
+/**
 		 * 
 		 */
 		public AddInEventSink()
@@ -71,7 +74,9 @@ public class AddInEventSink implements IProjectTreeContextMenuEventsSink, IProdu
 			// TODO Auto-generated constructor stub
 		}
 
-		/* (non-Javadoc)
+		
+
+/* (non-Javadoc)
 		 * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeContextMenuEventsSink#onProjectTreeContextMenuPrepare(org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl, org.netbeans.modules.uml.ui.support.contextmenusupport.IProductContextMenu, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 		 */
 		public void onProjectTreeContextMenuPrepare(IProjectTreeControl pParentControl, IProductContextMenu contextMenu, IResultCell cell)
@@ -83,7 +88,9 @@ public class AddInEventSink implements IProjectTreeContextMenuEventsSink, IProdu
 		
 		}
 
-		/* (non-Javadoc)
+		
+
+/* (non-Javadoc)
 		 * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeContextMenuEventsSink#onProjectTreeContextMenuPrepared(org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl, org.netbeans.modules.uml.ui.support.contextmenusupport.IProductContextMenu, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 		 */
 		public void onProjectTreeContextMenuPrepared(IProjectTreeControl pParentControl, IProductContextMenu contextMenu, IResultCell cell)
@@ -91,7 +98,9 @@ public class AddInEventSink implements IProjectTreeContextMenuEventsSink, IProdu
 		
 		}
 
-		/* (non-Javadoc)
+		
+
+/* (non-Javadoc)
 		 * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeContextMenuEventsSink#onProjectTreeContextMenuHandleDisplay(org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl, org.netbeans.modules.uml.ui.support.contextmenusupport.IProductContextMenu, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 		 */
 		public void onProjectTreeContextMenuHandleDisplay(IProjectTreeControl pParentControl, IProductContextMenu contextMenu, IResultCell cell)
@@ -99,7 +108,9 @@ public class AddInEventSink implements IProjectTreeContextMenuEventsSink, IProdu
 		
 		}
 
-		/* (non-Javadoc)
+		
+
+/* (non-Javadoc)
 		 * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeContextMenuEventsSink#onProjectTreeContextMenuSelected(org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl, org.netbeans.modules.uml.ui.support.contextmenusupport.IProductContextMenu, org.netbeans.modules.uml.ui.support.contextmenusupport.IProductContextMenuItem, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
 		 */
 		public void onProjectTreeContextMenuSelected(IProjectTreeControl pParentControl, IProductContextMenu contextMenu, IProductContextMenuItem selectedItem, IResultCell cell)
@@ -107,7 +118,9 @@ public class AddInEventSink implements IProjectTreeContextMenuEventsSink, IProdu
 		
 		}
 
-		/**
+		
+
+/**
 		 * If an external interface handles the display of the popup menu then this is called to handle the selection event
 		 */
 		public void handleSelection(IProductContextMenu pContextMenu, IProductContextMenuItem pSelectedItem)

@@ -70,7 +70,9 @@ public class NewElementWizardOperator extends JDialogOperator{
         super(TITLE);
     }
     
-    /**
+    
+
+/**
      * 
      * @param elementName 
      */
@@ -96,7 +98,9 @@ public class NewElementWizardOperator extends JDialogOperator{
     }
     
     
-    /**
+    
+
+/**
      * 
      * @param elementType 
      * @return 
@@ -106,7 +110,9 @@ public class NewElementWizardOperator extends JDialogOperator{
     }
         
     
-    /**
+    
+
+/**
      * 
      * @param elementType 
      */
@@ -127,7 +133,9 @@ public class NewElementWizardOperator extends JDialogOperator{
         typeLst.waitItemSelection(index,true);
     }
         
-    /**
+    
+
+/**
      * 
      * @param path 
      */

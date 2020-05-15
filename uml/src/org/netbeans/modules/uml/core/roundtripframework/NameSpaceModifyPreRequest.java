@@ -42,11 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : NameSpaceModifyPreRequest.java
- * Created on : Nov 12, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.roundtripframework;
 
 import org.netbeans.modules.uml.core.eventframework.IEventPayload;
@@ -155,7 +152,9 @@ public class NameSpaceModifyPreRequest
         }                
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.INameSpaceModifyPreRequest#getNewModifiedNamespaceQualifiedName()
      */
     public String getNewModifiedNamespaceQualifiedName()
@@ -169,7 +168,9 @@ public class NameSpaceModifyPreRequest
         return m_NewModifiedNamespaceQualifiedName;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.INameSpaceModifyPreRequest#getNewNamespaceName()
      */
     public String getNewNamespaceName()
@@ -177,7 +178,9 @@ public class NameSpaceModifyPreRequest
         return m_NewNamespaceName;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.INameSpaceModifyPreRequest#getNewSourceDir()
      */
     public String getNewSourceDir()
@@ -185,7 +188,9 @@ public class NameSpaceModifyPreRequest
         return m_NewSourceDir;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.INameSpaceModifyPreRequest#getOldModifiedNamespaceQualifiedName()
      */
     public String getOldModifiedNamespaceQualifiedName()
@@ -193,7 +198,9 @@ public class NameSpaceModifyPreRequest
         return m_OldModifiedNamespaceQualifiedName;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.INameSpaceModifyPreRequest#getOldNamespaceName()
      */
     public String getOldNamespaceName()
@@ -201,7 +208,9 @@ public class NameSpaceModifyPreRequest
         return m_OldNamespaceName;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.INameSpaceModifyPreRequest#getOldSourceDir()
      */
     public String getOldSourceDir()
@@ -219,7 +228,9 @@ public class NameSpaceModifyPreRequest
         }
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.INameSpaceModifyPreRequest#setNewModifiedNamespaceQualifiedName(java.lang.String)
      */
     public void setNewModifiedNamespaceQualifiedName(String qualName)
@@ -227,7 +238,9 @@ public class NameSpaceModifyPreRequest
         m_NewModifiedNamespaceQualifiedName = qualName;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.INameSpaceModifyPreRequest#setNewNamespaceName(java.lang.String)
      */
     public void setNewNamespaceName(String nsName)
@@ -235,7 +248,9 @@ public class NameSpaceModifyPreRequest
         m_NewNamespaceName = nsName;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.INameSpaceModifyPreRequest#setNewSourceDir(java.lang.String)
      */
     public void setNewSourceDir(String srcDir)
@@ -243,7 +258,9 @@ public class NameSpaceModifyPreRequest
         m_NewSourceDir = srcDir;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.INameSpaceModifyPreRequest#setOldModifiedNamespaceQualifiedName(java.lang.String)
      */
     public void setOldModifiedNamespaceQualifiedName(String qualName)
@@ -251,7 +268,9 @@ public class NameSpaceModifyPreRequest
         m_OldModifiedNamespaceQualifiedName = qualName;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.INameSpaceModifyPreRequest#setOldNamespaceName(java.lang.String)
      */
     public void setOldNamespaceName(String nsName)
@@ -259,7 +278,9 @@ public class NameSpaceModifyPreRequest
         m_OldNamespaceName = nsName;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.INameSpaceModifyPreRequest#setOldSourceDir(java.lang.String)
      */
     public void setOldSourceDir(String srcDir)
@@ -267,7 +288,9 @@ public class NameSpaceModifyPreRequest
         m_OldSourceDir = srcDir;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IPreRequest#getModifiedNamespace()
      */
     public INamespace getModifiedNamespace()

@@ -77,6 +77,7 @@ import org.netbeans.test.umllib.testcases.UMLTestCase;
 import org.netbeans.test.umllib.util.JPopupByPointChooser;
 //6.0 import com.tomsawyer.drawing.geometry.TSConstPoint;
 
+
 /**
  *
  * @spec UML/ComponentDiagram.xml

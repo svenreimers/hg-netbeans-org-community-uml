@@ -54,6 +54,7 @@ import org.netbeans.test.umllib.NewDiagramWizardOperator;
 import org.netbeans.test.umllib.exceptions.UMLCommonException;
 import org.netbeans.test.umllib.tests.DiagramLayout;
 
+
 /**
  *
  * @spec UML/ActivityDiagram.xml

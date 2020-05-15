@@ -55,6 +55,7 @@ import org.netbeans.modules.uml.diagrams.edges.sqd.MessageWidget;
 import org.netbeans.modules.uml.drawingarea.LabelManager;
 import org.netbeans.modules.uml.drawingarea.actions.ToggleLabelAction;
 
+
 /**
  * action adds new operation and show label with operation
  */

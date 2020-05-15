@@ -52,7 +52,8 @@ package org.netbeans.modules.uml.ui.support.visitors;
  */
 public interface IETGraphObjectVisitor
 {
-   /*
+   
+/*
     * Return false to break the Traversal
     */
     // TODO: meteora

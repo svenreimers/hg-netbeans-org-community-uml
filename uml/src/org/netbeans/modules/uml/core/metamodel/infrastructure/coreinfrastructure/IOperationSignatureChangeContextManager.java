@@ -47,17 +47,23 @@ package org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructur
 
 public interface IOperationSignatureChangeContextManager
 {
-	/**
+	
+
+/**
 	 * The operation whose signature change is encapsulated by a context managed by this manager.
 	*/
 	public IOperation getOperation();
 
-	/**
+	
+
+/**
 	 * Constructs a signature change context, setting the operation of the context, and pushes that context onto the event dispatch controller. If this manager is already responsible for a context, the current one is popped and a new one is pushed. To change the sign
 	*/
 	public void startSignatureChange( IOperation newVal );
 
-	/**
+	
+
+/**
 	 * Pops the context from the event dispatch controller. This function can be called to force the context to be popped before the manager destructs.
 	*/
 	public void endSignatureChange();

@@ -47,22 +47,30 @@ package org.netbeans.modules.uml.core.generativeframework;
 
 public interface IExpansionResult
 {
-	/**
+	
+
+/**
 	 * The text discovered right before the ExpansionVariable was executed.
 	*/
 	public String getPreText();
 
-	/**
+	
+
+/**
 	 * The text discovered right before the ExpansionVariable was executed.
 	*/
 	public void setPreText( String value );
 
-	/**
+	
+
+/**
 	 * The ExpansionVariables used in the current expansion process.
 	*/
 	public IExpansionVariable getVariable();
 
-	/**
+	
+
+/**
 	 * The ExpansionVariables used in the current expansion process.
 	*/
 	public void setVariable( IExpansionVariable value );

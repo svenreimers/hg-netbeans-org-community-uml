@@ -61,6 +61,7 @@ import org.openide.util.HelpCtx;
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 
+
 /**
  * Panel just asking for basic info.
  */
@@ -164,7 +165,7 @@ public final class PanelConfigureProject
     
     public void propertyChange(PropertyChangeEvent evt)
     {
-// IZ 84855 - conover - this is no longer valid with live RT disabled
+
 //        if (PanelCodeGen.MODE_CHANGED_PROP.equals(evt.getPropertyName()))
 //        {
 //            if (UMLProject.PROJECT_MODE_IMPL_STR.equals(evt.getNewValue()))

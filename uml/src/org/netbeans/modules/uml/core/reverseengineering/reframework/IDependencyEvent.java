@@ -46,34 +46,46 @@ package org.netbeans.modules.uml.core.reverseengineering.reframework;
 
 public interface IDependencyEvent extends IParserData
 {
-	/**
+	
+
+/**
 	 * Retrieves the supplier of the dependency.  The supplier will be specified using the UML fully scoped name of the supplier model element.
 	*/
 	public String getSupplier();
 
-	/**
+	
+
+/**
 	 * Retrieves the client of the dependency.  The client will be specified using the UML fully scoped name of the supplier model element.
 	*/
 	public String getClient();
 
-	/**
+	
+
+/**
 	 * Determines if the dependency is a package dependency or a class dependency.
 	*/
 	public boolean getIsClassDependency();
         
         public boolean isStaticDependency();
 
-	/**
+	
+
+/**
 	 * Retrieves the package name that is the reciever of the dependency.  If the dependency is a class dependency then the package name is the package that contains the class.
 	*/
 	public String getSupplierPackage();
 
-	/**
+	
+
+/**
 	 * Retrieves the name of the class that is the reciever of the dependency.  The class name property is only valid when the dependeny is a class dependency.
 	*/
 	public String getSupplierClassName();
 
-	/**
+	
+
+/**
 	 * Test if the specified class name is the same as the supplier of the dependency.  This method is only valid if the dependency is a class dependency.
 	*/
 	public boolean isSameClass( String className );

@@ -68,6 +68,7 @@ import org.netbeans.test.umllib.testcases.UMLTestCase;
 import org.netbeans.test.umllib.vrf.DiagramElementVerifier;
 
 
+
 /**
  *
  * @spec UML/DeploymentDiagram.xml
@@ -94,6 +95,8 @@ public class DPD_Interface extends UMLTestCase {
         return suite;
     }
     
+
+
 /**
  * @caseblock Interface Symbol
  * @usecase Copy and Paste a Interface symbol on a diagram by popup menu
@@ -105,6 +108,8 @@ public class DPD_Interface extends UMLTestCase {
         }
     }
     
+
+
 /**
  * @caseblock Interface Symbol
  * @usecase Copy and Paste a Interface symbol on a diagram by shortcuts
@@ -116,6 +121,8 @@ public class DPD_Interface extends UMLTestCase {
         }
     }
     
+
+
 /**
  * @caseblock Interface Symbol
  * @usecase Cut and Paste a Interface symbol on a diagram by popup menu
@@ -127,6 +134,8 @@ public class DPD_Interface extends UMLTestCase {
         }
     }
     
+
+
 /**
  * @caseblock Interface Symbol
  * @usecase Cut and Paste a Interface symbol on a diagram by shortcuts
@@ -138,6 +147,8 @@ public class DPD_Interface extends UMLTestCase {
         }
     }
     
+
+
 /**
  * @caseblock Interface Symbol
  * @usecase Delete a Interface symbol from a diagram by popup menu
@@ -149,6 +160,8 @@ public class DPD_Interface extends UMLTestCase {
         }
     }
     
+
+
 /**
  * @caseblock Interface Symbol
  * @usecase Delete a Interface symbol from a diagram by shortcut
@@ -159,6 +172,8 @@ public class DPD_Interface extends UMLTestCase {
             fail("Test failed. Details in log file.");
         }
     }
+
+
 
 /**
  * @caseblock Interface Symbol
@@ -171,6 +186,8 @@ public class DPD_Interface extends UMLTestCase {
         }
     }
     
+
+
 /**
  * @caseblock Interface Symbol
  * @usecase Select all on a diagram by popup menu of a Interface
@@ -182,6 +199,8 @@ public class DPD_Interface extends UMLTestCase {
         }
     }
     
+
+
 /**
  * @caseblock Interface Symbol
  * @usecase Select all on a diagram by shortcut
@@ -193,6 +212,8 @@ public class DPD_Interface extends UMLTestCase {
         }
     }
     
+
+
 /**
  * @caseblock Interface Symbol
  * @usecase Select All Similar Elements of a Interface
@@ -204,6 +225,8 @@ public class DPD_Interface extends UMLTestCase {
         }
     }
     
+
+
 /**
  * @caseblock Interface Symbol
  * @usecase Invert selection of a Interface
@@ -215,6 +238,8 @@ public class DPD_Interface extends UMLTestCase {
         }
     }
     
+
+
 /**
  * @caseblock Interface Symbol
  * @usecase Hide Children one level of a Interface
@@ -226,6 +251,8 @@ public class DPD_Interface extends UMLTestCase {
         }
     }
     
+
+
 /**
  * @caseblock Interface Symbol
  * @usecase Hide Children All levels of a Interface
@@ -237,6 +264,8 @@ public class DPD_Interface extends UMLTestCase {
         }
     }
     
+
+
 /**
  * @caseblock Interface Symbol
  * @usecase Hide Parents one level of a Interface
@@ -248,6 +277,8 @@ public class DPD_Interface extends UMLTestCase {
         }
     }
     
+
+
 /**
  * @caseblock Interface Symbol
  * @usecase Hide Parents All levels of a Interface
@@ -259,6 +290,8 @@ public class DPD_Interface extends UMLTestCase {
         }
     }   
     
+
+
 /**
  * @caseblock Interface Symbol
  * @usecase Show Children one level of a Interface
@@ -270,6 +303,8 @@ public class DPD_Interface extends UMLTestCase {
         }
     }   
     
+
+
 /**
  * @caseblock Interface Symbol
  * @usecase Show Children All levels of a Interface
@@ -281,6 +316,8 @@ public class DPD_Interface extends UMLTestCase {
         }
     }   
     
+
+
 /**
  * @caseblock Interface Symbol
  * @usecase Show Parents one level of a Interface
@@ -292,6 +329,8 @@ public class DPD_Interface extends UMLTestCase {
         }
     }   
     
+
+
 /**
  * @caseblock Interface Symbol
  * @usecase Show Parents All levels of a Interface
@@ -303,6 +342,8 @@ public class DPD_Interface extends UMLTestCase {
         }
     }   
     
+
+
 /**
  * @caseblock Interface Symbol
  * @usecase Border color of a Interface
@@ -314,6 +355,8 @@ public class DPD_Interface extends UMLTestCase {
         }
     }   
     
+
+
 /**
  * @caseblock Interface Symbol
  * @usecase Background color of a Interface
@@ -325,6 +368,8 @@ public class DPD_Interface extends UMLTestCase {
         }
     }   
     
+
+
 /**
  * @caseblock Interface Symbol
  * @usecase Text font of a Interface
@@ -335,6 +380,8 @@ public class DPD_Interface extends UMLTestCase {
             fail("Test failed. Details in log file.");
         }
     }   
+
+
 
 /**
  * @caseblock Interface Symbol

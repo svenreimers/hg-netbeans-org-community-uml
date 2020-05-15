@@ -42,11 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : FacilityProperty.java
- * Created on : Oct 23, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework;
 
 /**
@@ -56,7 +53,8 @@ public class FacilityProperty implements IFacilityProperty
     private String m_Name;
     private String m_Value;
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.IFacilityProperty#getName()
      */
     public String getName()
@@ -64,7 +62,9 @@ public class FacilityProperty implements IFacilityProperty
         return m_Name;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.IFacilityProperty#getValue()
      */
     public String getValue()
@@ -72,7 +72,9 @@ public class FacilityProperty implements IFacilityProperty
         return m_Value;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.IFacilityProperty#setName(java.lang.String)
      */
     public void setName(String name)
@@ -80,7 +82,9 @@ public class FacilityProperty implements IFacilityProperty
         m_Name = name;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.IFacilityProperty#setValue(java.lang.String)
      */
     public void setValue(String value)

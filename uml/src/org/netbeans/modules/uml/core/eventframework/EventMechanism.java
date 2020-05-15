@@ -63,14 +63,16 @@ public class EventMechanism {
 	private static EventMechanism m_Instance = null;
 	private Document m_Mechanism = null;
 
-	/**
+	
+/**
 	 * 
 	 */
 	private EventMechanism() {
 		super();
 	}
 
-	/**
+	
+/**
 	 * Retrieves the single instance of the mechanism.
 	 *
 	 * @return The instance, else 0 if something is terribly
@@ -86,10 +88,8 @@ public class EventMechanism {
 		return m_Instance;
 	}
 	
-	/**
-	 * Loads the EventFramework.etc file into memory. The contents
-	 * of this file are used by every EventDispatcher.
-	 */
+	
+
 	private void initialize() {
 		String loc = retrieveEventFileLocation();
 		if( loc.length() > 0)
@@ -98,7 +98,9 @@ public class EventMechanism {
 		}
 	}
 
-	/**
+	
+
+/**
 	 * Retrieves the location of the EventFramework XML file
 	 * that describes how to build the appropriate EventContexts.
 	 *
@@ -123,7 +125,9 @@ public class EventMechanism {
 		return loc;
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Provides direct access to the actual dom document representing
 	 * the event framework etc file.
@@ -137,7 +141,9 @@ public class EventMechanism {
 		return m_Mechanism;
 	}
 
-	/**
+	
+
+/**
 	 * If the EventMechanism instance has been created, this will return that instance.
 	 * If it has not been created, null is returned.
 	 *

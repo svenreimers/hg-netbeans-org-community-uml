@@ -43,6 +43,8 @@
  */
 
 
+
+
 /*
  * Created on Jun 12, 2003
  *
@@ -112,7 +114,9 @@ public class JDescribeDotButton extends JPanel implements ActionListener
 		}
 		initialize();
 	}
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see java.awt.event.ActionListener#actionPerformed(java.awt.event.ActionEvent)
 	 */
 	public void actionPerformed(ActionEvent e)

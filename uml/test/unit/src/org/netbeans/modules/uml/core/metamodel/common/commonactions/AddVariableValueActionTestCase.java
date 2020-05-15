@@ -48,6 +48,8 @@ package org.netbeans.modules.uml.core.metamodel.common.commonactions;
 import org.netbeans.modules.uml.core.AbstractUMLTestCase;
 import org.netbeans.modules.uml.core.metamodel.basic.basicactions.IInputPin;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.FactoryRetriever;
+
+
 /**
  * Test cases for AddVariableValueAction.
  */
@@ -60,7 +62,9 @@ public class AddVariableValueActionTestCase extends AbstractUMLTestCase
 
     private IAddVariableValueAction act;
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see junit.framework.TestCase#setUp()
      */
     protected void setUp() throws Exception
@@ -71,7 +75,9 @@ public class AddVariableValueActionTestCase extends AbstractUMLTestCase
         project.addElement(act);
     }
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see junit.framework.TestCase#tearDown()
      */
     protected void tearDown() throws Exception

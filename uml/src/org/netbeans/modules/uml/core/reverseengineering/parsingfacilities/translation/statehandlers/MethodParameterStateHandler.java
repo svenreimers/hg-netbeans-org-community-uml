@@ -43,11 +43,8 @@
  */
 
 
-/*
- * File       : MethodParameterStateHandler.java
- * Created on : Dec 11, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.statehandlers;
 
 import org.dom4j.Node;
@@ -124,7 +121,9 @@ public class MethodParameterStateHandler extends MethodDetailStateHandler
         return retVal;
     }
     
-    /**
+    
+
+/**
      * Initialize the state handler.  This is a one time initialization.
      *
      */

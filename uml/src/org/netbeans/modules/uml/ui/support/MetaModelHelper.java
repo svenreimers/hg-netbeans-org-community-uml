@@ -469,7 +469,9 @@ public class MetaModelHelper {
    }
    
 
-   /** 
+   
+
+/** 
     * RelationEnds is used to specify the ends of a relationship.
     */
    public class RelationEnds
@@ -484,7 +486,9 @@ public class MetaModelHelper {
       public RelationEnds(IElement first, IElement second)
       {
       }
-      /**
+      
+
+/**
        * @return
        */
       public IElement getEndElement()
@@ -492,7 +496,9 @@ public class MetaModelHelper {
          return m_EndEnd;
       }
 
-      /**
+      
+
+/**
         * @param element
         */
        public void setEndElement(IElement element)
@@ -500,7 +506,9 @@ public class MetaModelHelper {
           m_EndEnd = element;
        }
        
-      /**
+      
+
+/**
        * @return
        */
       public IElement getStartElement()
@@ -508,7 +516,9 @@ public class MetaModelHelper {
          return m_StartEnd;
       }
 
-      /**
+      
+
+/**
        * @param element
        */
       public void setStartElement(IElement element)

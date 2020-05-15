@@ -87,7 +87,9 @@ public class JavaAttributeChangeHandlerTestCase extends AbstractUMLTestCase
     private boolean defaultBodyModified;
     private boolean visibilityChanged;
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see junit.framework.TestCase#setUp()
      */
     protected void setUp() throws Exception
@@ -123,7 +125,9 @@ public class JavaAttributeChangeHandlerTestCase extends AbstractUMLTestCase
         expectedAddedDependencyPackage = null;
     }
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.AbstractUMLTestCase#tearDown()
      */
     protected void tearDown() throws Exception
@@ -242,7 +246,7 @@ public class JavaAttributeChangeHandlerTestCase extends AbstractUMLTestCase
 
     public void testNameChange()
     {
-// TODO: conover - temporary until fixed            
+
 //        attr.setName("b");
 //        
 //        // Check whether new accessors are created.
@@ -326,7 +330,9 @@ public class JavaAttributeChangeHandlerTestCase extends AbstractUMLTestCase
     }
     
   
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRoundTripClassEventsSink#onPreClassChangeRequest(org.netbeans.modules.uml.core.roundtripframework.IChangeRequest, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onPreClassChangeRequest(IChangeRequest newVal, IResultCell cell)
@@ -334,7 +340,9 @@ public class JavaAttributeChangeHandlerTestCase extends AbstractUMLTestCase
         
     }
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRoundTripClassEventsSink#onClassChangeRequest(org.netbeans.modules.uml.core.roundtripframework.IChangeRequest, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onClassChangeRequest(IChangeRequest req, IResultCell cell)
@@ -360,28 +368,36 @@ public class JavaAttributeChangeHandlerTestCase extends AbstractUMLTestCase
         }
     }
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRequestProcessorInitEventsSink#onPreInitialized(java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onPreInitialized(String proc, IResultCell cell)
     {
     }
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRequestProcessorInitEventsSink#onInitialized(org.netbeans.modules.uml.core.roundtripframework.IRequestProcessor, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onInitialized(IRequestProcessor proc, IResultCell cell)
     {
     }
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRoundTripAttributeEventsSink#onPreAttributeChangeRequest(org.netbeans.modules.uml.core.roundtripframework.IChangeRequest, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onPreAttributeChangeRequest(IChangeRequest newVal, IResultCell cell)
     {
     }
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRoundTripAttributeEventsSink#onAttributeChangeRequest(org.netbeans.modules.uml.core.roundtripframework.IChangeRequest, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onAttributeChangeRequest(IChangeRequest req, IResultCell cell)

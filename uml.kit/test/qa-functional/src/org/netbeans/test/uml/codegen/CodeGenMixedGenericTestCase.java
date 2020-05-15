@@ -43,14 +43,8 @@
  */
 
 
-/*
- * CodeGenMixedGenericTestCase.java
- *
- * Created on April 25, 2007, 4:10 PM
- *
- * To change this template, choose Tools | Template Manager
- * and open the template in the editor.
- */
+
+
 
 package org.netbeans.test.uml.codegen;
 
@@ -80,7 +74,7 @@ public class CodeGenMixedGenericTestCase extends CodeGenerationTestCase{
     IPackageElem pack = new PackageElem("mgeneric", linkPackage);
     
     
-    /** Creates a new instance of CodeGenMixedGenericTestCase */
+    
     public CodeGenMixedGenericTestCase(String name) {
         super(name);
     }

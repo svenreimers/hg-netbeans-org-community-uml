@@ -43,6 +43,8 @@
  */
 
 
+
+
 /*
  * Created on May 22, 2003
  *
@@ -89,7 +91,9 @@ public class PreferenceDialogTreeModel implements ISwingPreferenceDialogModel
 		initialize();
 	}
 	
-   /**
+   
+
+/**
     * 
     */
    private void initializeXPaths(Document doc)
@@ -113,7 +117,9 @@ public class PreferenceDialogTreeModel implements ISwingPreferenceDialogModel
 		m_Children = m_PreferenceControl.loadTree();
 	}
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see javax.swing.tree.TreeModel#getRoot()
     */
    public Object getRoot()
@@ -131,7 +137,9 @@ public class PreferenceDialogTreeModel implements ISwingPreferenceDialogModel
       return retObj;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see javax.swing.tree.TreeModel#getChild(java.lang.Object, int)
     */
    public Object getChild(Object parent, int index)
@@ -147,7 +155,9 @@ public class PreferenceDialogTreeModel implements ISwingPreferenceDialogModel
       return retVal;
    }
    
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see javax.swing.tree.TreeModel#getChildCount(java.lang.Object)
     */
    public int getChildCount(Object parent)
@@ -163,7 +173,9 @@ public class PreferenceDialogTreeModel implements ISwingPreferenceDialogModel
       return retVal;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see javax.swing.tree.TreeModel#isLeaf(java.lang.Object)
     */
    public boolean isLeaf(Object node)
@@ -179,7 +191,9 @@ public class PreferenceDialogTreeModel implements ISwingPreferenceDialogModel
       return retVal;
    }
    
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see javax.swing.tree.TreeModel#getIndexOfChild(java.lang.Object, java.lang.Object)
 	 */
 	public int getIndexOfChild(Object parent, Object child)
@@ -187,7 +201,9 @@ public class PreferenceDialogTreeModel implements ISwingPreferenceDialogModel
 		return 0;
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see javax.swing.tree.TreeModel#addTreeModelListener(javax.swing.event.TreeModelListener)
 	 */
 	public void addTreeModelListener(TreeModelListener l)
@@ -195,7 +211,9 @@ public class PreferenceDialogTreeModel implements ISwingPreferenceDialogModel
 		
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see javax.swing.tree.TreeModel#removeTreeModelListener(javax.swing.event.TreeModelListener)
 	 */
 	public void removeTreeModelListener(TreeModelListener l)
@@ -207,7 +225,9 @@ public class PreferenceDialogTreeModel implements ISwingPreferenceDialogModel
    // Data Getter and Setters
    //**************************************************************
    
-   /**
+   
+
+/**
     * @return
     */
    public Element getProject()
@@ -215,7 +235,9 @@ public class PreferenceDialogTreeModel implements ISwingPreferenceDialogModel
       return m_Project;
    }
 
-   /**
+   
+
+/**
     * @param document
     */
    public void setProject(Document document)
@@ -224,7 +246,9 @@ public class PreferenceDialogTreeModel implements ISwingPreferenceDialogModel
 		setProject((Element)document.selectSingleNode("//UML:Project"));
    }
    
-	/**
+	
+
+/**
 	 * @param document
 	 */
 	public void setProject(Element projectNode)
@@ -232,7 +256,9 @@ public class PreferenceDialogTreeModel implements ISwingPreferenceDialogModel
 		m_Project = projectNode;
 	}
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see javax.swing.tree.TreeModel#valueForPathChanged(javax.swing.tree.TreePath, java.lang.Object)
     */
    public void valueForPathChanged(TreePath path, Object newValue)

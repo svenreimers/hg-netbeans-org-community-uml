@@ -152,7 +152,9 @@ public interface ITrackBar
 //    */
 //   public boolean onPreScrollZoom(double deltaX, double deltaY);
    
-   /** 
+   
+
+/** 
     * Post scroll/zoom event passed from the drawing area control
     * 
     * @return <code>true</code> if the event is handled, <code>false</code>
@@ -160,7 +162,9 @@ public interface ITrackBar
     */
    public boolean onPostScrollZoom();
 
-   /** 
+   
+
+/** 
     * Handle the OnKeyDown event from a TSGraphEditor
     * 
     * @return <code>true</code> if the event is handled, <code>false</code>

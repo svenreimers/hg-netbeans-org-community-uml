@@ -54,14 +54,16 @@ import org.netbeans.modules.uml.core.support.umlsupport.IResultCell;
 public class TestWSProjectListener implements IWSProjectEventsSink
 {
     
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     */
     public void onWSProjectPreCreate( IWorkspace space, String projectName, IResultCell cell )
     {
         ETSystem.out.println("onWSProjectPreCreate: " + space.getName() + " Project Name: " + projectName);
     }
     
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     */
     public void onWSProjectCreated( IWSProject project, IResultCell cell )
     {
@@ -69,7 +71,9 @@ public class TestWSProjectListener implements IWSProjectEventsSink
         
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     */
     public void onWSProjectPreOpen(IWorkspace space, String projName, IResultCell cell)
     {
@@ -77,7 +81,9 @@ public class TestWSProjectListener implements IWSProjectEventsSink
         
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     */
     public void onWSProjectOpened(IWSProject project, IResultCell cell)
     {
@@ -85,7 +91,9 @@ public class TestWSProjectListener implements IWSProjectEventsSink
         
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     */
     public void onWSProjectPreRemove(IWSProject project, IResultCell cell)
     {
@@ -93,7 +101,9 @@ public class TestWSProjectListener implements IWSProjectEventsSink
         
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     */
     public void onWSProjectRemoved(IWSProject project, IResultCell cell)
     {
@@ -101,7 +111,9 @@ public class TestWSProjectListener implements IWSProjectEventsSink
         
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     */
     public void onWSProjectPreInsert(IWorkspace space, String projectName, IResultCell cell)
     {
@@ -109,7 +121,9 @@ public class TestWSProjectListener implements IWSProjectEventsSink
         
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     */
     public void onWSProjectInserted(IWSProject project, IResultCell cell)
     {
@@ -117,7 +131,9 @@ public class TestWSProjectListener implements IWSProjectEventsSink
         
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     */
     public void onWSProjectPreRename(IWSProject project, String newName, IResultCell cell)
     {
@@ -125,7 +141,9 @@ public class TestWSProjectListener implements IWSProjectEventsSink
         
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     */
     public void onWSProjectRenamed( IWSProject project, String oldName, IResultCell cell )
     {
@@ -133,7 +151,9 @@ public class TestWSProjectListener implements IWSProjectEventsSink
         
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     */
     public void onWSProjectPreClose( IWSProject project, IResultCell cell )
     {
@@ -141,7 +161,9 @@ public class TestWSProjectListener implements IWSProjectEventsSink
         
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     */
     public void onWSProjectClosed( IWSProject project, IResultCell cell )
     {
@@ -149,7 +171,9 @@ public class TestWSProjectListener implements IWSProjectEventsSink
         
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     */
     public void onWSProjectPreSave(IWSProject project, IResultCell cell)
     {
@@ -157,7 +181,9 @@ public class TestWSProjectListener implements IWSProjectEventsSink
         
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     */
     public void onWSProjectSaved(IWSProject project, IResultCell cell)
     {

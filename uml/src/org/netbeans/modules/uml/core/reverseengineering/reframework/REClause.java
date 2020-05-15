@@ -51,7 +51,9 @@ import org.netbeans.modules.uml.core.support.umlsupport.XMLManip;
 public class REClause extends MethodDetailParserData implements IREClause
 {
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.IREClause#getIsDeterminate()
      */
     public boolean getIsDeterminate()

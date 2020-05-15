@@ -69,6 +69,7 @@ import org.netbeans.test.umllib.testcases.UMLTestCase;
 import org.netbeans.test.umllib.util.LabelsAndTitles;
 import org.netbeans.test.umllib.vrf.GenericVerifier;
 
+
 /**
  *
  * @spec uml/UMLRobustness.xml

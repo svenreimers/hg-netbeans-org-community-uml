@@ -75,7 +75,9 @@ public class JavaUMLParserProcessor
             ITokenProcessor,
             ITokenFilter
 {
-    /**
+    
+
+/**
      * ProcessState determines if a state is to be filtered or not.
      * 
      * @param stateName [in] The name of the state.
@@ -93,7 +95,9 @@ public class JavaUMLParserProcessor
         return ret;
     }
 
-    /**
+    
+
+/**
      * The OnBeginState event is fired when the state of the parser has changed.
      * A new state can begin while still in a state."
      * 
@@ -106,7 +110,9 @@ public class JavaUMLParserProcessor
         addStateHandler(stateName, language);
     }
 
-    /**
+    
+
+/**
      * The OnEndState event will be fired when exiting a state.
      * 
      * @param stateName [in] The name of the state.
@@ -120,7 +126,9 @@ public class JavaUMLParserProcessor
         m_InOperationBody = false;
     }
 
-    /**
+    
+
+/**
      * Process the token that has been discovered by the parser.
      * 
      * pToken [in] The token to be processed.
@@ -251,7 +259,9 @@ public class JavaUMLParserProcessor
             removeStateHandler(m_StateHandlers.peek().stateName);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ITokenFilter#isTokenValid(java.lang.String, java.lang.String, java.lang.String)
      */
     public boolean isTokenValid(String tokenType, String stateName,

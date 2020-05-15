@@ -42,11 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * DiagramCreatorAction.java
- *
- * Created on January 7, 2005, 10:38 AM
- */
+
+
 
 package org.netbeans.modules.uml.drawingarea.ui.addins.reguiaddin;
 
@@ -67,7 +64,8 @@ import org.openide.util.actions.CookieAction;
 public class REOperationAction extends CookieAction
 {
 	
-	/**
+	
+/**
 	 * Creates a new instance of GenerateCodeAction
 	 */
 	public REOperationAction()
@@ -122,8 +120,8 @@ public class REOperationAction extends CookieAction
                     elements.add(curElement);
             }
             
-            //kris - made changes to fix issue 95928 (get the progress bar to show up
-            // while RE OP loads the new larger library)
+            
+            
             REGUIAddin regui = new REGUIAddin();
             regui.prepareForRun(getName(), elements) ;
             

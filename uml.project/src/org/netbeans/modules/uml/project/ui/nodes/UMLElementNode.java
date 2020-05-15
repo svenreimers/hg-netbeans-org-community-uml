@@ -101,7 +101,9 @@ public class UMLElementNode extends AbstractModelElementNode
     private String mPathAsString = ""; // NOI18N
     private Node.Cookie mOpenCookie = null;
     private Node.Cookie mModelElementCookie = null;
-    /**
+    
+
+/**
      * Determines if the node has been initialized with children yet.
      */
     private boolean mIsInitialized = false;
@@ -109,7 +111,9 @@ public class UMLElementNode extends AbstractModelElementNode
     private Image icon = null;
 //	private Action[] actions=null;
 
-    /**
+    
+
+/**
      * Create a new UMLElementNode
      */
     public UMLElementNode() {
@@ -124,14 +128,18 @@ public class UMLElementNode extends AbstractModelElementNode
         this(lookup, new ProjectTreeItemImpl());
     }
 
-    /**
+    
+
+/**
      * Create a new UMLElementNode
      */
     public UMLElementNode(Children ch, Lookup lookup) {
         this(ch, lookup, new ProjectTreeItemImpl());
     }
 
-    /**
+    
+
+/**
      * Create a new UMLElementNode and initialize its data with the information
      * from an IProjectTreeItem.
      *
@@ -145,7 +153,9 @@ public class UMLElementNode extends AbstractModelElementNode
         addProjectTreeItemCookie(data);
     }
 
-    /**
+    
+
+/**
      * Create a new UMLElementNode and initialize its data with the information
      * from an ITreeItem.
      *
@@ -156,7 +166,9 @@ public class UMLElementNode extends AbstractModelElementNode
         this(item.getData());
     }
 
-    /**
+    
+
+/**
      * Create a new UMLElementNode and initialize its data with the information
      * from an IProjectTreeItem.
      */
@@ -179,7 +191,9 @@ public class UMLElementNode extends AbstractModelElementNode
         getCookieSet().add(projectTreeItem);
     }
 
-    /**
+    
+
+/**
      * Gathers the nodes children.
      */
     public void setUpChildren() {
@@ -193,7 +207,7 @@ public class UMLElementNode extends AbstractModelElementNode
         IElement element = getModelElement();
 
         if (element instanceof INamedElement) {
-            // return unformatted name for attributes and operations, so that
+            
             // rename action on those nodes will display the bare name without
             // visibility modifier and type information, since we only support 
             // rename the name part of these two types of elements from project
@@ -207,14 +221,18 @@ public class UMLElementNode extends AbstractModelElementNode
         return super.getName();
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeItem#setDisplayedName(java.lang.String)
      */
     public void setDisplayedName(String name) {
         setDisplayedName(name, true);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeItem#setDisplayedName(java.lang.String,V)
      */
     public void setDisplayedName(String name, boolean buildProperties) {
@@ -251,14 +269,18 @@ public class UMLElementNode extends AbstractModelElementNode
         return retVal;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeItem#getDisplayedName()
      */
     public String getDisplayedName() {
         return getDisplayName();
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeItem#getPath()
      */
     public Object[] getPath() {
@@ -273,7 +295,9 @@ public class UMLElementNode extends AbstractModelElementNode
         return retVal;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeItem#getPathAsString()
      */
     public String getPathAsString() {
@@ -298,21 +322,27 @@ public class UMLElementNode extends AbstractModelElementNode
         return mPathAsString;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeItem#setPathAsString(java.lang.String)
      */
     public void setPathAsString(String str) {
         mPathAsString = str;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeItem#isSame(org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeItem)
      */
     public boolean isSame(ITreeItem queryItem) {
         return equals(queryItem);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeItem#getParentItem()
      */
     public ITreeItem getParentItem() {
@@ -326,13 +356,17 @@ public class UMLElementNode extends AbstractModelElementNode
         return retVal;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeItem#setParentItem(org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeItem)
      */
     public void setParentItem(ITreeItem parent) {
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeItem#getTopParentItem()
      */
     public ITreeItem getTopParentItem() {
@@ -348,7 +382,9 @@ public class UMLElementNode extends AbstractModelElementNode
         return pTop;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeItem#getOwningTreeElement()
      */
     public ITreeElement getOwningTreeElement() {
@@ -379,19 +415,23 @@ public class UMLElementNode extends AbstractModelElementNode
         return pOutEle;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeItem#getType()
      */
     public String getType() {
         return null;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeItem#addChild(org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeItem)
      */
     public void addChild(ITreeItem item) {
         boolean canAdd = true;
-        // <Sheryl> Do we really need this condition check? In case like 'Relationships' 
+        
         // -> 'Specializations', these two folders both refer to the same 
         // model element, the sub-folder will not be added as a result, #6320478
         // to filter out the relationship end which refers to itself, it's temporary
@@ -416,7 +456,9 @@ public class UMLElementNode extends AbstractModelElementNode
         }
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeItem#insertAt(org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeItem, int)
      */
     public void insertAt(ITreeItem item, int index) {
@@ -425,7 +467,9 @@ public class UMLElementNode extends AbstractModelElementNode
         addChild(item);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeItem#removeChild(org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeItem)
      */
     public void removeChild(ITreeItem item) {
@@ -439,7 +483,9 @@ public class UMLElementNode extends AbstractModelElementNode
         }
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeItem#removeAllChildren()
      */
     public void removeAllChildren() {
@@ -450,7 +496,9 @@ public class UMLElementNode extends AbstractModelElementNode
         }
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeItem#getChild(int)
      */
     public ITreeItem getChild(int index) {
@@ -458,20 +506,26 @@ public class UMLElementNode extends AbstractModelElementNode
         return null;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeItem#sortChildren()
      */
     public void sortChildren() {
         ((UMLChildren) getChildren()).recalculateChildren();
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeItem#sortChildren(java.util.Comparator)
      */
     public void sortChildren(Comparator compare) {
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeItem#getData()
      */
     public IProjectTreeItem getData() {
@@ -486,7 +540,9 @@ public class UMLElementNode extends AbstractModelElementNode
         }
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeItem#getChildCount()
      */
     public int getChildCount() {
@@ -500,7 +556,9 @@ public class UMLElementNode extends AbstractModelElementNode
         return retVal;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeItem#isInitalized()
      */
     public boolean isInitalized() {
@@ -508,14 +566,18 @@ public class UMLElementNode extends AbstractModelElementNode
         return mIsInitialized;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeItem#setIsInitalized(boolean)
      */
     public void setIsInitalized(boolean value) {
         mIsInitialized = value;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeItem#getSortPriority()
      */
     public long getSortPriority() {
@@ -523,26 +585,34 @@ public class UMLElementNode extends AbstractModelElementNode
         return m_Data.getSortPriority();
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeItem#setSortPriority(long)
      */
     public void setSortPriority(long value) {
         m_Data.setSortPriority(value);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeItem#setExpanded(boolean)
      */
     public void setExpanded(boolean value) {
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeItem#setSelected(boolean)
      */
     public void setSelected(boolean value) {
     }
 
-    /**
+    
+
+/**
      * Retrieve a collection that contains all of the children contained by the
      * node.
      * <br>
@@ -561,7 +631,9 @@ public class UMLElementNode extends AbstractModelElementNode
     //**************************************************
     // AbstractModelElement Implementation
     //**************************************************
-    /**
+    
+
+/**
      * Retrieves the actions for the node. This method only returns the context
      * sensitive actions.
      *
@@ -676,7 +748,9 @@ public class UMLElementNode extends AbstractModelElementNode
         return getIcon(type);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.netbeans.umlproject.ui.AbstractModelElementNode#getModelElement()
      */
     public IElement getModelElement() {
@@ -720,7 +794,9 @@ public class UMLElementNode extends AbstractModelElementNode
         return retVal;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see java.lang.Object#equals(java.lang.Object)
      */
     public boolean equals(Object obj) {
@@ -758,7 +834,7 @@ public class UMLElementNode extends AbstractModelElementNode
                     retVal = testXMIID.equals(myXMIID);
                 }
             }
-        } else {  // Generic equals method.  This can be used to test
+        } else {  
             // to ITreeItem(s).
             retVal = super.equals(obj);
         }
@@ -766,7 +842,9 @@ public class UMLElementNode extends AbstractModelElementNode
         return retVal;
     }
 
-    /**
+    
+
+/**
      * Initializes the node with the default cookies. <b>Note:</b> Do not call
      * this method if a looup is added. When a lookup is added then the lookup
      * is used to find the cookies.
@@ -776,14 +854,18 @@ public class UMLElementNode extends AbstractModelElementNode
         getCookieSet().add(cookies, this);
     }
 
-    /**
+    
+
+/**
      * Creates the open cookie to use when opening the node.
      */
     protected Node.Cookie createOpenCookie() {
         return new ModelElementOpen();
     }
 
-    /**
+    
+
+/**
      * @param string
      * @return
      */
@@ -791,7 +873,9 @@ public class UMLElementNode extends AbstractModelElementNode
         return ImageUtilities.loadImage(iconLocation, true);
     }
 
-    /**
+    
+
+/**
      * Implementation of method from Comparable interface.
      *
      * @return
@@ -891,7 +975,9 @@ public class UMLElementNode extends AbstractModelElementNode
         return retVal;
     }
 
-    /**
+    
+
+/**
      * Factory by which children of Node will be initialized
      */
     class UMLChildFactory extends ChildFactory<ITreeItem> {
@@ -902,7 +988,9 @@ public class UMLElementNode extends AbstractModelElementNode
             this.item = item;
         }
 
-        /**
+        
+
+/**
          * Initializes children of node by firing item expanding event.
          *
          * @param children a list to add object to, (for now not used)
@@ -927,7 +1015,9 @@ public class UMLElementNode extends AbstractModelElementNode
             return false;
         }
 
-        /**
+        
+
+/**
          * Enforce no WaitNode is shown by returning null
          */
         @Override

@@ -52,7 +52,9 @@ public class MessageFacility implements IMessageFacility
 	private String m_Name = new String();
 	
 	
-	/**
+	
+
+/**
 	 * @return
 	 */
 	public String getName()
@@ -60,7 +62,9 @@ public class MessageFacility implements IMessageFacility
 		return m_Name;
 	}
 
-	/**
+	
+
+/**
 	 * @param string
 	 */
 	public void setName(String newVal)

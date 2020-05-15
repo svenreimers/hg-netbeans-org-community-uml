@@ -58,6 +58,7 @@ import org.netbeans.test.umllib.NewDiagramWizardOperator;
 import org.netbeans.test.umllib.testcases.UMLTestCase;
 
 
+
 /**
  *
  * @spec UML/Diagram_ToolbarButtons.xml
@@ -96,6 +97,8 @@ public class DiagramToolbarButtons_SQD extends UMLTestCase {
             
     }
     
+
+
 /**
  * @caseblock Sequense Diagram
  * @usecase Check toolbar buttons of sequense diagram
@@ -112,6 +115,8 @@ public class DiagramToolbarButtons_SQD extends UMLTestCase {
             }
     }
 
+
+
 /**
  * @caseblock Sequense Diagram
  * @usecase Check toolbar buttons of sequense diagram
@@ -123,6 +128,8 @@ public class DiagramToolbarButtons_SQD extends UMLTestCase {
                 fail("Diagram toolbar button '" + btnTooltipName + "' is disabled but should not be");
             }
     }
+
+
 
 /**
  * @caseblock Sequense Diagram
@@ -136,6 +143,8 @@ public class DiagramToolbarButtons_SQD extends UMLTestCase {
             }
     }
 
+
+
 /**
  * @caseblock Sequense Diagram
  * @usecase Check toolbar buttons of sequense diagram
@@ -147,6 +156,8 @@ public class DiagramToolbarButtons_SQD extends UMLTestCase {
                 fail("Diagram toolbar button '" + btnTooltipName + "' is disabled but should not be");
             }
     }
+
+
 
 /**
  * @caseblock Sequense Diagram
@@ -160,6 +171,8 @@ public class DiagramToolbarButtons_SQD extends UMLTestCase {
             }
     }
 
+
+
 /**
  * @caseblock Sequense Diagram
  * @usecase Check toolbar buttons of sequense diagram
@@ -171,6 +184,8 @@ public class DiagramToolbarButtons_SQD extends UMLTestCase {
                 fail("Diagram toolbar button '" + btnTooltipName + "' is disabled but should not be");
             }
     }
+
+
 
 /**
  * @caseblock Sequense Diagram
@@ -188,6 +203,8 @@ public class DiagramToolbarButtons_SQD extends UMLTestCase {
             }
     }
 
+
+
 /**
  * @caseblock Sequense Diagram
  * @usecase Check toolbar buttons of sequense diagram
@@ -200,6 +217,8 @@ public class DiagramToolbarButtons_SQD extends UMLTestCase {
             }
     }
 
+
+
 /*    
     public void testBtn_ShowFriendlyNames(){
         String btnTooltipName = DiagramToolbarOperator.SHOW_FRIENDLY_NAMES_TOOL;
@@ -209,6 +228,8 @@ public class DiagramToolbarButtons_SQD extends UMLTestCase {
             }
     }
 */ 
+
+
 
 /**
  * @caseblock Sequense Diagram
@@ -221,6 +242,8 @@ public class DiagramToolbarButtons_SQD extends UMLTestCase {
                 fail("Diagram toolbar button '" + btnTooltipName + "' is disabled but should not be");
             }
     }
+
+
 
 /**
  * @caseblock Sequense Diagram
@@ -253,6 +276,8 @@ public class DiagramToolbarButtons_SQD extends UMLTestCase {
         }
     }
     
+
+
 /**
  * @caseblock Sequense Diagram
  * @usecase Check toolbar buttons of sequense diagram
@@ -264,6 +289,8 @@ public class DiagramToolbarButtons_SQD extends UMLTestCase {
                 fail("Diagram toolbar button '" + btnTooltipName + "' is disabled but should not be");
             }
     }
+
+
 
 /**
  * @caseblock Sequense Diagram
@@ -277,6 +304,8 @@ public class DiagramToolbarButtons_SQD extends UMLTestCase {
             }
     }
 
+
+
 /**
  * @caseblock Sequense Diagram
  * @usecase Check toolbar buttons of sequense diagram
@@ -288,6 +317,8 @@ public class DiagramToolbarButtons_SQD extends UMLTestCase {
                 fail("Diagram toolbar button '" + btnTooltipName + "' is disabled but should not be");
             }
     }
+
+
 
 /**
  * @caseblock Sequense Diagram
@@ -301,6 +332,8 @@ public class DiagramToolbarButtons_SQD extends UMLTestCase {
             }
     }
 
+
+
 /**
  * @caseblock Sequense Diagram
  * @usecase Check toolbar buttons of sequense diagram
@@ -313,6 +346,8 @@ public class DiagramToolbarButtons_SQD extends UMLTestCase {
             }
     }
 
+
+
 /**
  * @caseblock Sequense Diagram
  * @usecase Check toolbar buttons of sequense diagram
@@ -324,6 +359,8 @@ public class DiagramToolbarButtons_SQD extends UMLTestCase {
                 fail("Diagram toolbar button '" + btnTooltipName + "' is disabled but should not be");
             }
     }
+
+
 
 /**
  * @caseblock Sequense Diagram
@@ -342,6 +379,8 @@ public class DiagramToolbarButtons_SQD extends UMLTestCase {
         }
     }
 
+
+
 /**
  * @caseblock Sequense Diagram
  * @usecase Check toolbar buttons of sequense diagram
@@ -358,6 +397,8 @@ public class DiagramToolbarButtons_SQD extends UMLTestCase {
             //good
         }
     }
+
+
 
 /**
  * @caseblock Sequense Diagram
@@ -376,6 +417,8 @@ public class DiagramToolbarButtons_SQD extends UMLTestCase {
         }
     }
 
+
+
 /**
  * @caseblock Sequense Diagram
  * @usecase Check toolbar buttons of sequense diagram
@@ -387,6 +430,8 @@ public class DiagramToolbarButtons_SQD extends UMLTestCase {
                 fail("Diagram toolbar button '" + btnTooltipName + "' is disabled but should not be");
             }
     }
+
+
 
 /**
  * @caseblock Sequense Diagram
@@ -405,6 +450,8 @@ public class DiagramToolbarButtons_SQD extends UMLTestCase {
         }
     }
 
+
+
 /**
  * @caseblock Sequense Diagram
  * @usecase Check toolbar buttons of sequense diagram
@@ -418,6 +465,8 @@ public class DiagramToolbarButtons_SQD extends UMLTestCase {
         }
     }
     
+
+
 /**
  * @caseblock Sequense Diagram
  * @usecase Check toolbar buttons of sequense diagram

@@ -43,6 +43,7 @@
  */
 
 
+
 /*
  *
  * Created on Jun 11, 2003
@@ -62,6 +63,7 @@ import org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeItem;
 import org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeRelElement;
 import org.netbeans.modules.uml.ui.support.projecttreesupport.ProjectTreeComparable;
 
+
 /**
  * 
  */
@@ -74,7 +76,9 @@ public class ProjectTreeNode extends DefaultMutableTreeNode implements ITreeItem
    protected ITreeItem			m_ParentTreeItem = null;
    
    
-   /**
+   
+
+/**
     * 
     */
    public ProjectTreeNode()
@@ -82,7 +86,9 @@ public class ProjectTreeNode extends DefaultMutableTreeNode implements ITreeItem
       this(new ProjectTreeItemImpl());      
    }
    
-   /**
+   
+
+/**
     * Initalizes the Project Tree Node.
     * 
     * @param item The project tree item data.
@@ -100,7 +106,9 @@ public class ProjectTreeNode extends DefaultMutableTreeNode implements ITreeItem
       setIsInitalized(false);
    }  
    
-   /**
+   
+
+/**
     * @return
     */
    public IProjectTreeItem getDataItem()
@@ -108,7 +116,9 @@ public class ProjectTreeNode extends DefaultMutableTreeNode implements ITreeItem
       return m_DataItem;
    }
 
-   /**
+   
+
+/**
     * @param item
     */
    public void setDataItem(IProjectTreeItem item)
@@ -117,7 +127,9 @@ public class ProjectTreeNode extends DefaultMutableTreeNode implements ITreeItem
       m_DataItem.setProjectTreeSupportTreeItem(this);
    } 
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeItem#setName(java.lang.String)
     */
    public void setName(String value)
@@ -125,7 +137,9 @@ public class ProjectTreeNode extends DefaultMutableTreeNode implements ITreeItem
       m_Name = value;   
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeItem#getName()
     */
    public String getName()
@@ -161,7 +175,9 @@ public class ProjectTreeNode extends DefaultMutableTreeNode implements ITreeItem
       setDisplayedName(value);
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeItem#isSame(org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeItem)
     */
    public boolean isSame(ITreeItem queryItem)
@@ -171,7 +187,9 @@ public class ProjectTreeNode extends DefaultMutableTreeNode implements ITreeItem
 
 
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeItem#getTopParent()
     */
    public ITreeItem getTopParentItem()
@@ -189,7 +207,9 @@ public class ProjectTreeNode extends DefaultMutableTreeNode implements ITreeItem
 
 
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeItem#getOwningTreeElement()
     */
    public ITreeElement getOwningTreeElement()
@@ -227,7 +247,9 @@ public class ProjectTreeNode extends DefaultMutableTreeNode implements ITreeItem
 
 
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeItem#getType()
     */
    public String getType()
@@ -236,12 +258,16 @@ public class ProjectTreeNode extends DefaultMutableTreeNode implements ITreeItem
       return null;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeItem#getParentItem()
     */
    public ITreeItem getParentItem()
    {
-   	/*
+   	
+
+/*
       ITreeItem retVal = null;
       
       if (getParent() instanceof ITreeItem)
@@ -253,7 +279,9 @@ public class ProjectTreeNode extends DefaultMutableTreeNode implements ITreeItem
       return m_ParentTreeItem;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeItem#setParentItem(org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeItem)
     */
    public void setParentItem(ITreeItem parent)
@@ -287,7 +315,9 @@ public class ProjectTreeNode extends DefaultMutableTreeNode implements ITreeItem
       }
    }
    
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeItem#addChild(org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeItem)
     */
    public void addChild(ITreeItem item)
@@ -295,7 +325,9 @@ public class ProjectTreeNode extends DefaultMutableTreeNode implements ITreeItem
       add((MutableTreeNode) item);
    }
 
-   /**
+   
+
+/**
     * Adds a new child to the node at the specified location in the child list.
     * If the specified index is greater than the number of children then it
     * is appened to the end of the child list.
@@ -308,7 +340,9 @@ public class ProjectTreeNode extends DefaultMutableTreeNode implements ITreeItem
       insert((MutableTreeNode)item, index);
    }
    
-   /**
+   
+
+/**
     * Retrieve a collection that contains all of the children contained by the
     * node.  
     * <br>
@@ -323,7 +357,9 @@ public class ProjectTreeNode extends DefaultMutableTreeNode implements ITreeItem
       return children();
    }
       
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeItem#removeChild(org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeItem)
     */
    public void removeChild(ITreeItem item)
@@ -338,7 +374,9 @@ public class ProjectTreeNode extends DefaultMutableTreeNode implements ITreeItem
       }      
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeItem#getChild(int)
     */
    public ITreeItem getChild(int index)
@@ -355,7 +393,9 @@ public class ProjectTreeNode extends DefaultMutableTreeNode implements ITreeItem
       return retVal;
    }
 
-   /**
+   
+
+/**
     * Sorts the children of the tree item.  The children will be sorted occuring
     * to the default sort order.
     */
@@ -364,7 +404,9 @@ public class ProjectTreeNode extends DefaultMutableTreeNode implements ITreeItem
       sortChildren(new ProjectTreeComparable());
    }
 
-   /**
+   
+
+/**
     * Sorts the children of the tree item.  The children will be sorted occuring
     * to the Comparable interface.
     * 
@@ -380,7 +422,9 @@ public class ProjectTreeNode extends DefaultMutableTreeNode implements ITreeItem
    	}
    }
    
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeItem#getData()
     */
    public IProjectTreeItem getData()
@@ -388,7 +432,9 @@ public class ProjectTreeNode extends DefaultMutableTreeNode implements ITreeItem
       return getDataItem();
    }
    
-   /**
+   
+
+/**
     * Specifies whether or not the node has ever been expanded.  If the
     * node has been expanded before then its children has already been
     * set.  Otherwise, the node has not been completely initialized yet.
@@ -402,7 +448,9 @@ public class ProjectTreeNode extends DefaultMutableTreeNode implements ITreeItem
       return m_IsInitalized;
    }
 
-   /**
+   
+
+/**
     * Specifies whether or not the node has ever been expanded.  If the
     * node has been expanded before then its children has already been
     * set.  Otherwise, the node has not been completely initialized yet.
@@ -416,7 +464,9 @@ public class ProjectTreeNode extends DefaultMutableTreeNode implements ITreeItem
       m_IsInitalized = value;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see java.lang.Object#equals(java.lang.Object)
     */
    public boolean equals(Object obj)
@@ -478,7 +528,7 @@ public class ProjectTreeNode extends DefaultMutableTreeNode implements ITreeItem
          }
       }      
       else
-      {  // Generic equals method.  This can be used to test
+      {  
          // to ITreeItem(s).
          retVal =  super.equals(obj);
       }

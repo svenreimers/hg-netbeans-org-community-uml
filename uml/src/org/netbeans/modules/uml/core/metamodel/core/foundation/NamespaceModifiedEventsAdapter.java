@@ -56,7 +56,8 @@ public class NamespaceModifiedEventsAdapter
    implements INamespaceModifiedEventsSink
 {
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     */
    public void onPreElementAddedToNamespace(
       INamespace space,
@@ -66,7 +67,9 @@ public class NamespaceModifiedEventsAdapter
       // TODO Auto-generated method stub
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     */
    public void onElementAddedToNamespace(
       INamespace space,

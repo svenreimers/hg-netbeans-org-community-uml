@@ -45,6 +45,8 @@
 
 package org.netbeans.modules.uml.core.metamodel.dynamics;
 import org.netbeans.modules.uml.core.AbstractUMLTestCase;
+
+
 /**
  * Test cases for InteractionFragment.
  */
@@ -58,7 +60,9 @@ public class InteractionFragmentTestCase extends AbstractUMLTestCase
     private IInteractionFragment frag;
     private IInteraction inter;
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see junit.framework.TestCase#setUp()
      */
     protected void setUp() throws Exception

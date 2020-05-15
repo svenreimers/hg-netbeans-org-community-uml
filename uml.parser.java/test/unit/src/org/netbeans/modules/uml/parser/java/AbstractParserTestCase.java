@@ -51,6 +51,8 @@ import junit.framework.TestCase;
 import java.io.File;
 import java.net.URL;
 import org.netbeans.modules.uml.core.reverseengineering.parsers.javaparser.REJavaParser;
+
+
 /**
  * 
  */
@@ -95,7 +97,9 @@ public abstract class AbstractParserTestCase extends TestCase {
         states.add(o);
     }
     
-    /**
+    
+
+/**
      * Compares expected States with Retrieved States
      */
     protected boolean compareStatesWith(String expectedStates[]) {
@@ -117,7 +121,9 @@ public abstract class AbstractParserTestCase extends TestCase {
         return true;
     }
     
-    /**
+    
+
+/**
      * Compares expected Tokens with Retrieved Tokens
      */
     protected boolean compareTokensWith(String expectedTokens[][]) {
@@ -145,7 +151,9 @@ public abstract class AbstractParserTestCase extends TestCase {
         
     }
     
-    /**
+    
+
+/**
      * Parse and test the tokens and states are coming properly.
      */
     protected void execute(String fileName, String expectedStates[],
@@ -166,7 +174,9 @@ public abstract class AbstractParserTestCase extends TestCase {
 //            fail("REJavaParser is  Not instanciated");
     }
     
-    /**
+    
+
+/**
      * Shows the states
      */
     private void showStates() {
@@ -178,7 +188,9 @@ public abstract class AbstractParserTestCase extends TestCase {
         System.out.println("");
    }
   
-    /**
+    
+
+/**
      * Shows the tokens
      */
      private void showTokens() {
@@ -194,7 +206,9 @@ public abstract class AbstractParserTestCase extends TestCase {
         
     }
      
-    /**
+    
+
+/**
      * Get the path of  test Data Folder
      */
     public String  getDataDir() {

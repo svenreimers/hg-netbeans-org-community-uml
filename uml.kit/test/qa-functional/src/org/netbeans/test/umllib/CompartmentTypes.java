@@ -47,6 +47,8 @@
 package org.netbeans.test.umllib;
 
 
+
+
 /**
  * Compartment classes and types are connected here
  */
@@ -73,7 +75,9 @@ public enum CompartmentTypes {
         this.val = val;
     }
     
-    /**
+    
+
+/**
      * 
      * @return 
      */

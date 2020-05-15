@@ -94,6 +94,7 @@ import javax.swing.tree.TreeModel;
 
 
 
+
 /**
  * The JFilterDialog allows users to specified the items should be filtered
  * and the items that should not be filtered.  The dialog will present the user
@@ -125,7 +126,9 @@ public class JFilterDialog extends JCenterDialog implements IFilterDialog {
     private IProjectTreeModel      m_ProjectTreeModel = null;
     private JLabel spacer = new JLabel();
     
-    /**
+    
+
+/**
      * Initialize the filter dialog.
      * @param model The project tree model that will be filtered.
      */
@@ -136,7 +139,9 @@ public class JFilterDialog extends JCenterDialog implements IFilterDialog {
         setProjectTreeModel(model);
     }
     
-    /**
+    
+
+/**
      * Initialize the filter dialog.
      * @param parent The owner of the dialog.
      * @param model The project tree model that will be filtered.
@@ -149,7 +154,9 @@ public class JFilterDialog extends JCenterDialog implements IFilterDialog {
         setProjectTreeModel(model);
     }
     
-    /**
+    
+
+/**
      * Initialize the filter dialog.
      * @param parent The owner of the dialog.
      * @param model The project tree model that will be filtered.
@@ -162,7 +169,9 @@ public class JFilterDialog extends JCenterDialog implements IFilterDialog {
         setProjectTreeModel(model);
     }
     
-    /**
+    
+
+/**
      * Initalizes the dialog.  The controls are created and the renders and
      * editor are setup.
      *
@@ -221,7 +230,9 @@ public class JFilterDialog extends JCenterDialog implements IFilterDialog {
 //      m_Model = new DefaultTreeModel(m_Root);
     }
     
-    /**
+    
+
+/**
      * Initilalize the control for the filter dialog.
      */
     protected void initializeControls() {
@@ -255,7 +266,9 @@ public class JFilterDialog extends JCenterDialog implements IFilterDialog {
         
     }
     
-    /**
+    
+
+/**
      * Creates a top level filter tree node that is not associated to a filtered
      * item.
      *
@@ -267,7 +280,9 @@ public class JFilterDialog extends JCenterDialog implements IFilterDialog {
         return createRootNode(item);
     }
     
-    /**
+    
+
+/**
      * Creates a top level filter tree node that represent the filtered item.
      *
      * @param item The filter item to add to the FilterNode.
@@ -287,7 +302,9 @@ public class JFilterDialog extends JCenterDialog implements IFilterDialog {
         return retVal;
     }
     
-    /**
+    
+
+/**
      * Adds a new filter item to the specified FilterNode.  The FilterNode that
      * is created to represent the IFilterItem is returned.
      *
@@ -306,7 +323,9 @@ public class JFilterDialog extends JCenterDialog implements IFilterDialog {
         return retVal;
     }
     
-    /**
+    
+
+/**
      * Shows the dialog to the user.  The OnProjectTreeFilterDialogInit is sent
      * to all registered IProjectTreeFilterDialogEventsSink objects.  The
      * IProjectTreeFilterDialogEventsSink objects are responsible for filling
@@ -345,7 +364,9 @@ public class JFilterDialog extends JCenterDialog implements IFilterDialog {
         super.show();
     }
     
-    /**
+    
+
+/**
      * Clears the filter dialog.
      */
     protected void clearModel() {
@@ -353,7 +374,9 @@ public class JFilterDialog extends JCenterDialog implements IFilterDialog {
         m_Model = null;
     }
     
-    /**
+    
+
+/**
      * Initalizes the model.  The onProjectTreeFilterDialogInit event is sent
      * to all registered IProjectTreeFilterDialogEventsSink.
      *
@@ -370,7 +393,9 @@ public class JFilterDialog extends JCenterDialog implements IFilterDialog {
         
     }
     
-    /**
+    
+
+/**
      * Retrieves the tree model that contains the filter item data.
      *
      * @return The tree model.
@@ -396,7 +421,9 @@ public class JFilterDialog extends JCenterDialog implements IFilterDialog {
         return (DefaultTreeModel)getModel();
     }
     
-    /**
+    
+
+/**
      * Retrieves the root nodes of the tree.
      *
      * @return The root nodes.
@@ -412,7 +439,9 @@ public class JFilterDialog extends JCenterDialog implements IFilterDialog {
         return retVal;
     }
     
-    /**
+    
+
+/**
      * Sets the items state.  All of the items children will be set to the
      * same state.
      *
@@ -457,7 +486,9 @@ public class JFilterDialog extends JCenterDialog implements IFilterDialog {
             return this;
         }
         
-        /**
+        
+
+/**
          * Initilazes the control with the FilterNode details.
          * @param value
          */
@@ -605,7 +636,8 @@ public class JFilterDialog extends JCenterDialog implements IFilterDialog {
     }
     
     
-    /**
+    
+/**
      * The FilterNode is used to wrap the IFilterItem.  The FilterNode is used
      * to isolate the users changes until they press the OK button.  Once the
      * OK button is pressed the IFilterItem will be updated with the users
@@ -619,7 +651,8 @@ public class JFilterDialog extends JCenterDialog implements IFilterDialog {
         private IFilterItem m_Item  = null;
         private Icon        m_Icon  = null;
         
-        /**
+        
+/**
          * Initializes the filter node.
          * @param item The filter item represented by the node.
          */
@@ -627,7 +660,9 @@ public class JFilterDialog extends JCenterDialog implements IFilterDialog {
             setItem(item);
         }
         
-        /**
+        
+
+/**
          * Initializes the filter node.
          * @param item The filter item represented by the node.
          * @param icon The Icon to display.
@@ -637,7 +672,9 @@ public class JFilterDialog extends JCenterDialog implements IFilterDialog {
             setItem(item);
         }
         
-        /**
+        
+
+/**
          * Specifies if the checkbox for the filter item is on or off.
          *
          * @return <b>true</b> if the item is checked, <b>false</b> if the item is
@@ -647,7 +684,9 @@ public class JFilterDialog extends JCenterDialog implements IFilterDialog {
             return m_State == IFilterItem.FILTER_STATE_ON;
         }
         
-        /**
+        
+
+/**
          * Sets the state of the filter item.
          *
          * @param value <b>true</b> if the item is checked, <b>false</b> if the
@@ -658,7 +697,9 @@ public class JFilterDialog extends JCenterDialog implements IFilterDialog {
             m_State = value;
         }
         
-        /**
+        
+
+/**
          * Retrieves the filter item associated with this node.
          *
          * @return The filter item.
@@ -667,7 +708,9 @@ public class JFilterDialog extends JCenterDialog implements IFilterDialog {
             return m_Item;
         }
         
-        /**
+        
+
+/**
          * Sets the filter item associated with this node.
          *
          * @param item The filter item.
@@ -677,7 +720,9 @@ public class JFilterDialog extends JCenterDialog implements IFilterDialog {
             setState(item.getState());
         }
         
-        /**
+        
+
+/**
          * Retrieves the name that is to be displayed to the user.
          *
          * @return The display name.
@@ -691,7 +736,9 @@ public class JFilterDialog extends JCenterDialog implements IFilterDialog {
             return retVal;
         }
         
-        /**
+        
+
+/**
          * Retrieves the icon that represent the filter item.
          *
          * @return The icon to display.
@@ -710,7 +757,9 @@ public class JFilterDialog extends JCenterDialog implements IFilterDialog {
             return retVal;
         }
         
-        /**
+        
+
+/**
          * Sets the icon that represent the filter item.
          *
          * @param value The icon to display.
@@ -719,7 +768,9 @@ public class JFilterDialog extends JCenterDialog implements IFilterDialog {
             m_Icon = value;
         }
         
-        /**
+        
+
+/**
          * Saves the nodes contents to the associated IFilterItem.  The children
          * of the node is also saved.
          */
@@ -742,7 +793,9 @@ public class JFilterDialog extends JCenterDialog implements IFilterDialog {
             }
         }
         
-      /* (non-Javadoc)
+      
+
+/* (non-Javadoc)
        * @see org.netbeans.modules.uml.ui.controls.filter.IFilterNode#add(org.netbeans.modules.uml.ui.controls.filter.IFilterNode)
        */
         public void add(IFilterNode newChild) throws IllegalArgumentException {
@@ -754,7 +807,9 @@ public class JFilterDialog extends JCenterDialog implements IFilterDialog {
         
     }
     
-    /**
+    
+
+/**
      * The action that performs the OK button action.  The users changes will
      * be saved.
      */
@@ -766,7 +821,9 @@ public class JFilterDialog extends JCenterDialog implements IFilterDialog {
             m_Dialog = dialog;
         }
         
-        /**
+        
+
+/**
          * Saves the users changes and closes the window.
          *
          * @param e The event data.
@@ -791,7 +848,9 @@ public class JFilterDialog extends JCenterDialog implements IFilterDialog {
         }
     }
     
-    /**
+    
+
+/**
      * The action that performs the cancel button action.  The users changes will
      * be discarded.
      */
@@ -800,7 +859,9 @@ public class JFilterDialog extends JCenterDialog implements IFilterDialog {
             super(ProjectTreeResources.getString("JFilterDialog.Cancel_Btn_Title")); //$NON-NLS-1$
         }
         
-        /**
+        
+
+/**
          * Saves the users changes and closes the window.
          *
          * @param e The event data.
@@ -811,7 +872,9 @@ public class JFilterDialog extends JCenterDialog implements IFilterDialog {
         }
     }
     
-    /**
+    
+
+/**
      * Retrieves the project tree model that will be filtered.
      * @return The model that will be affectd.
      */
@@ -819,7 +882,9 @@ public class JFilterDialog extends JCenterDialog implements IFilterDialog {
         return m_ProjectTreeModel;
     }
     
-    /**
+    
+
+/**
      * Sest the project tree model that will be filted.
      * @param model The model that will be affected.
      */

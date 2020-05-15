@@ -83,7 +83,9 @@ public class JavaMethodChangeHandlerTestCase extends AbstractUMLTestCase
     private String changedParamType;
     private String changedAbs;
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see junit.framework.TestCase#setUp()
      */
     protected void setUp() throws Exception
@@ -115,7 +117,9 @@ public class JavaMethodChangeHandlerTestCase extends AbstractUMLTestCase
         changedAbs    = null;
     }
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.AbstractUMLTestCase#tearDown()
      */
     protected void tearDown() throws Exception
@@ -129,7 +133,9 @@ public class JavaMethodChangeHandlerTestCase extends AbstractUMLTestCase
     }
   
 
- /**
+ 
+
+/**
  * OperationTypeChangedTestCase
  */
  
@@ -139,6 +145,8 @@ public class JavaMethodChangeHandlerTestCase extends AbstractUMLTestCase
         assertEquals("int->String", changedParamType);
     }
  
+
+
 /**
  * OperationCreateTestCase
  */
@@ -151,7 +159,9 @@ public class JavaMethodChangeHandlerTestCase extends AbstractUMLTestCase
         assertEquals("sss", createdMethod);
     }
     
- /**
+ 
+
+/**
  * OperationDeleteTestCase
  */
  
@@ -161,7 +171,9 @@ public class JavaMethodChangeHandlerTestCase extends AbstractUMLTestCase
         assertEquals("a", deletedMethod);
     }
     
- /**
+ 
+
+/**
  * OperationNameChangeTestCase
  */
  
@@ -171,7 +183,9 @@ public class JavaMethodChangeHandlerTestCase extends AbstractUMLTestCase
         assertEquals("a->b", changedMethod);
     }
     
- /**
+ 
+
+/**
  * OperationVisibilityChangeTestCase
  */
  
@@ -183,6 +197,8 @@ public class JavaMethodChangeHandlerTestCase extends AbstractUMLTestCase
     }
     
  
+
+
 /**
  * OperationModifiersChangeTestCase
  */
@@ -193,7 +209,9 @@ public class JavaMethodChangeHandlerTestCase extends AbstractUMLTestCase
         assertEquals("false->true", changedAbs);
     }
     
- /**
+ 
+
+/**
  * OperationMovedTestCase
  */
  
@@ -220,7 +238,9 @@ public class JavaMethodChangeHandlerTestCase extends AbstractUMLTestCase
         assertEquals("i", parm.getName().trim());
     }
     
- /**
+ 
+
+/**
  * OperationCopiedTestCase
  */
  
@@ -248,7 +268,9 @@ public class JavaMethodChangeHandlerTestCase extends AbstractUMLTestCase
         assertEquals("i", parm.getName().trim());
     }
     
- /**
+ 
+
+/**
  * OperationParameterAddedTestCase
  */
  
@@ -265,7 +287,9 @@ public class JavaMethodChangeHandlerTestCase extends AbstractUMLTestCase
         assertEquals("zigzag", createdParam);
     }
     
- /**
+ 
+
+/**
  * OperationParameterRemovedTestCase
  */
  
@@ -278,7 +302,9 @@ public class JavaMethodChangeHandlerTestCase extends AbstractUMLTestCase
         assertEquals("double zigzag", deletedParam);
     }
     
- /**
+ 
+
+/**
  * OperationParameterNameChangeTestCase
  */
  
@@ -291,7 +317,9 @@ public class JavaMethodChangeHandlerTestCase extends AbstractUMLTestCase
         assertEquals("zigzag->zagzig", changedParam);
     }
     
- /**
+ 
+
+/**
  * OperationParameterTypeChangeTestCase
  */
  
@@ -304,14 +332,18 @@ public class JavaMethodChangeHandlerTestCase extends AbstractUMLTestCase
         assertEquals("double->float", changedParamType);
     }
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRoundTripOperationEventsSink#onPreOperationChangeRequest(org.netbeans.modules.uml.core.roundtripframework.IChangeRequest, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onPreOperationChangeRequest(IChangeRequest newVal, IResultCell cell)
     {
     }
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRoundTripOperationEventsSink#onOperationChangeRequest(org.netbeans.modules.uml.core.roundtripframework.IChangeRequest, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onOperationChangeRequest(IChangeRequest req, IResultCell cell)

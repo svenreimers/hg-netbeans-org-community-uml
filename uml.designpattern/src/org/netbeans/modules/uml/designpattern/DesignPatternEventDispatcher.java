@@ -69,7 +69,9 @@ public class DesignPatternEventDispatcher extends EventDispatcher implements IDe
 		super();
 		m_DesignPatternEventManager = new EventManager< IDesignPatternEventsSink >();
 	}
-	/**
+	
+
+/**
 	 * Description
 	 *
 	 * @param pHandler[in]
@@ -80,7 +82,9 @@ public class DesignPatternEventDispatcher extends EventDispatcher implements IDe
 		m_DesignPatternEventManager.addListener(pHandler, null);
 	}
 
-	/**
+	
+
+/**
 	 * Description
 	 *
 	 * @param pHandler[in]
@@ -90,7 +94,9 @@ public class DesignPatternEventDispatcher extends EventDispatcher implements IDe
 	{
 		m_DesignPatternEventManager.removeListener(pHandler);
 	}
-	/**
+	
+
+/**
 	 * Fired before a pattern is applied
 	 *
 	 * @param pDetails[in]	The details that apply to the pattern being applied
@@ -118,7 +124,9 @@ public class DesignPatternEventDispatcher extends EventDispatcher implements IDe
 		   m_DesignPatternEventManager.notifyListenersWithQualifiedProceed(m_PreApplyFunc);
 		}
 	}
-	/**
+	
+
+/**
 	 * Fired after a pattern is applied
 	 *
 	 * @param pDetails[in]	The details that apply to the pattern was applied

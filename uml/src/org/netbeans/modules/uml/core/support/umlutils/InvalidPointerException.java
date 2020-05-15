@@ -51,7 +51,8 @@ package org.netbeans.modules.uml.core.support.umlutils;
   */
 public class InvalidPointerException extends RuntimeException {
 
-	/**
+	
+/**
 	 * @param exc
 	 */
 	public InvalidPointerException() {

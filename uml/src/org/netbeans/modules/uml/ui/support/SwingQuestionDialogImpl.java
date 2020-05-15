@@ -43,6 +43,7 @@
  */
 
 
+
 /*
  *
  * Created on Jul 1, 2003
@@ -81,6 +82,7 @@ import org.netbeans.modules.uml.ui.support.messaging.IMessenger;
 import org.netbeans.modules.uml.ui.swing.commondialogs.JCenterDialog;
 import org.netbeans.modules.uml.ui.swing.commondialogs.JFixedSizeTextArea;
 import org.netbeans.modules.uml.ui.swing.commondialogs.DefaultCommonDialogResource;
+
 
 /**
  * 
@@ -134,7 +136,9 @@ public class SwingQuestionDialogImpl implements IQuestionDialog
 	  }
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.IQuestionDialog#displaySimpleQuestionDialogWithCheckbox(int, int, java.lang.String, java.lang.String, int, boolean)
     */
    public QuestionResponse displaySimpleQuestionDialogWithCheckbox(int dialogType, int dialogIcon, String message, String checkboxMsg, int defaultResult, boolean defaultIsChecked)
@@ -142,7 +146,9 @@ public class SwingQuestionDialogImpl implements IQuestionDialog
       return displaySimpleQuestionDialogWithCheckbox(dialogType, dialogIcon, message, checkboxMsg, "", defaultResult, defaultIsChecked);
    }
 
-   /**
+   
+
+/**
     * @param message
     * @param string
     * @param icon
@@ -346,7 +352,9 @@ public class SwingQuestionDialogImpl implements IQuestionDialog
       return retVal;
    }
 
-   /**
+   
+
+/**
     * Displays a simple question dialog.  Note that since QuestionDialog implements
     * the ISilentDialog interface, it may be silent.  In that case, no dialog is shown 
     * and S_OK is returned.
@@ -413,7 +421,9 @@ public class SwingQuestionDialogImpl implements IQuestionDialog
       return m_RetVal;
    }
 
-   /**
+   
+
+/**
    * Returns the silent flag for this dialog.  If silent then any Display calls will
    * not display a dialog, but rather immediately return S_OK;
    *
@@ -424,7 +434,9 @@ public class SwingQuestionDialogImpl implements IQuestionDialog
       return m_RunSilent || ProductHelper.getMessenger().getDisableMessaging();
    }
 
-   /**
+   
+
+/**
    * Sets the silent flag for this dialog.  If silent then any Display calls will
    * not display a dialog, but rather immediately return S_OK;
    *
@@ -435,7 +447,9 @@ public class SwingQuestionDialogImpl implements IQuestionDialog
       m_RunSilent = value;
    }
 
-   /**
+   
+
+/**
    * The default button (ie IDOK).  See the return values for AfxMessageBox.
    */
    public void setDefaultButton(int nButton)
@@ -476,7 +490,9 @@ public class SwingQuestionDialogImpl implements IQuestionDialog
       return retVal;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.commondialogs.IQuestionDialog#displaySimpleQuestionDialog(int, int, java.lang.String, int, java.awt.Window, java.lang.String)
     */
    public QuestionResponse displaySimpleQuestionDialog(int dialogType, int errorDialogIcon, String messageString, int defaultResult, Window parent, String title)
@@ -565,7 +581,9 @@ public class SwingQuestionDialogImpl implements IQuestionDialog
 			}
 		}
 	}
-	/*
+	
+
+/*
 	 * We needed a way to set up the result that should get passed back to the user.  This was already
 	 * working if we were in silent mode, because we use what is passed into the dialog.  We were running
 	 * into problems where we were using what was passed in, but the user clicked "x" or escaped out of

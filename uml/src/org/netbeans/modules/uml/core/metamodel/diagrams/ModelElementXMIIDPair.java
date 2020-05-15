@@ -43,6 +43,7 @@
  */
 
 
+
 /*
  *
  * Created on Jun 19, 2003
@@ -62,7 +63,9 @@ public class ModelElementXMIIDPair
       setTopLevelID(topLevelID);
       setModelElementID(modelElementID);
    }
-   /**
+   
+
+/**
     * @return
     */
    public String getModelElementID()
@@ -70,7 +73,9 @@ public class ModelElementXMIIDPair
       return m_ModelElementID;
    }
 
-   /**
+   
+
+/**
     * @return
     */
    public String getTopLevelID()
@@ -78,7 +83,9 @@ public class ModelElementXMIIDPair
       return m_TopLevelID;
    }
 
-   /**
+   
+
+/**
     * @param string
     */
    public void setModelElementID(String string)
@@ -86,7 +93,9 @@ public class ModelElementXMIIDPair
       m_ModelElementID = string;
    }
 
-   /**
+   
+
+/**
     * @param string
     */
    public void setTopLevelID(String string)

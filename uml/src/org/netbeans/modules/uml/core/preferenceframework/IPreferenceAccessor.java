@@ -47,97 +47,135 @@ package org.netbeans.modules.uml.core.preferenceframework;
 
 public interface IPreferenceAccessor
 {
-	/**
+	
+
+/**
 	 * property DefaultProjectName
 	*/
 	public String getDefaultProjectName();
 
-	/**
+	
+
+/**
 	 * property IDType
 	*/
 	public int getIDType();
 
-	/**
+	
+
+/**
 	 * property DefaultElementName
 	*/
 	public String getDefaultElementName();
 
-	/**
+	
+
+/**
 	 * property UnknownClassifierCreate
 	*/
 	public boolean getUnknownClassifierCreate();
 
-	/**
+	
+
+/**
 	 * property UnknownClassifierType
 	*/
 	public String getUnknownClassifierType();
 
-	/**
+	
+
+/**
 	 * property DefaultMode
 	*/
 	public String getDefaultMode();
 
-	/**
+	
+
+/**
 	 * property DefaultLanguage
 	*/
 	public String getDefaultLanguage( String mode );
 
-	/**
+	
+
+/**
 	 * property DefaultRoundTripBehavior
 	*/
 	public String getDefaultRoundTripBehavior( String lang, String behavior );
 
-	/**
+	
+
+/**
 	 * property DefaultEditorCustomizationFile
 	*/
 	public String getDefaultEditorCustomizationFile();
 
-	/**
+	
+
+/**
 	 * property DefaultEditorFilter
 	*/
 	public String getDefaultEditorFilter();
 
-	/**
+	
+
+/**
 	 * property DefaultEditorSelect
 	*/
 	public int getDefaultEditorSelect();
 
-	/**
+	
+
+/**
 	 * property ExpansionVariable
 	*/
 	public String getExpansionVariable( String Name );
 
-	/**
+	
+
+/**
 	 * property FontName
 	*/
 	public String getFontName( String category );
 
-	/**
+	
+
+/**
 	 * property FontSize
 	*/
 	public String getFontSize( String category );
 
-	/**
+	
+
+/**
 	 * property FontBold
 	*/
 	public boolean getFontBold( String category );
 
-	/**
+	
+
+/**
 	 * property FontItalic
 	*/
 	public boolean getFontItalic( String category );
 
-	/**
+	
+
+/**
 	 * property FontStrikeout
 	*/
 	public boolean getFontStrikeout( String category );
 
-	/**
+	
+
+/**
 	 * property FontUnderline
 	*/
 	public boolean getFontUnderline( String category );
 
-	/**
+	
+
+/**
 	 * property FontColor
 	*/
 	public String getFontColor( String category );

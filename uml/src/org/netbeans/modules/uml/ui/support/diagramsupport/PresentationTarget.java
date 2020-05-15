@@ -69,7 +69,9 @@ public class PresentationTarget implements IPresentationTarget
 	/// The XML id of the model element (usually "", only used if a diagram has been upgraded and not yet opened)
 	private String m_TopLevelID = "";
 	
-	/**
+	
+
+/**
 	 * 
 	 */
 	public PresentationTarget()
@@ -77,7 +79,9 @@ public class PresentationTarget implements IPresentationTarget
 		super();
 	}
 
-	/**
+	
+
+/**
 	 * Gets the diagram filename that has a presentation element that represents the queried model element.
 	 *
 	 * @param pVal[out,retval] The full path filename of the diagram (etld or etlp)
@@ -87,7 +91,9 @@ public class PresentationTarget implements IPresentationTarget
 		return m_DiagramFilename;
 	}
 
-	/**
+	
+
+/**
 	 * Puts the diagram filename that has a presentation element that represents the queried model element.
 	 *
 	 * @param newVal[in] The full path filename of the diagram (etld or etlp)
@@ -97,7 +103,9 @@ public class PresentationTarget implements IPresentationTarget
 		m_DiagramFilename = value;
 	}
 
-	/**
+	
+
+/**
 	 * Gets the xml id of the presentation element that was found matching the model element queried.
 	 *
 	 * @param pVal[out,retval] The xmiid of the presentation element inside this diagram
@@ -107,7 +115,9 @@ public class PresentationTarget implements IPresentationTarget
 		return m_PresentationId;
 	}
 
-	/**
+	
+
+/**
 	 * Sets the xml id of the presentation element that was found matching the model element queried.
 	 *
 	 * @param pVal[in] The xmiid of the presentation element inside this diagram
@@ -117,7 +127,9 @@ public class PresentationTarget implements IPresentationTarget
 		m_PresentationId = value;
 	}
 
-	/**
+	
+
+/**
 	 * Gets the open diagram, if there is one, that the presentation element resides on.
 	 *
 	 * @param pVal[out,retval] If the diagram is open, this is the open diagram, otherwise NULL
@@ -127,7 +139,9 @@ public class PresentationTarget implements IPresentationTarget
 		return m_Diagram;
 	}
 
-	/**
+	
+
+/**
 	 * Sets the open diagram, if there is one, that the presentation element resides on.
 	 *
 	 * @param newVal[in] If the diagram is open, this is the open diagram
@@ -137,7 +151,9 @@ public class PresentationTarget implements IPresentationTarget
 		m_Diagram = value;
 	}
 
-	/**
+	
+
+/**
 	 * Returns the proxy diagram.
 	 *
 	 * @param pVal[out,retval] The proxy diagram.  This could be a closed or opened diagram.
@@ -153,7 +169,9 @@ public class PresentationTarget implements IPresentationTarget
 		return retDia;
 	}
 
-	/**
+	
+
+/**
 	 * The XML id of the model element (usually "", only used if a diagram has been upgraded and not yet opened)
 	 *
 	 * @param pVal[out,retval] The xmiid of the model element inside this diagram
@@ -163,7 +181,9 @@ public class PresentationTarget implements IPresentationTarget
 		return m_MEID;
 	}
 
-	/**
+	
+
+/**
 	 * The XML id of the model element (usually "", only used if a diagram has been upgraded and not yet opened)
 	 *
 	 * @param pVal[in] The xmiid of the model element inside this diagram
@@ -173,7 +193,9 @@ public class PresentationTarget implements IPresentationTarget
 		m_MEID = newVal;
 	}
 
-	/**
+	
+
+/**
 	 * The TopLevel XML id of the model element (usually "", only used if a diagram has been upgraded and not yet opened)
 	 *
 	 * @param pVal[in] The xmiid of the model element inside this diagram
@@ -183,7 +205,9 @@ public class PresentationTarget implements IPresentationTarget
 		m_TopLevelID = newVal;
 	}
 
-	/**
+	
+
+/**
 	 * The TopLevel XML id of the model element (usually "", only used if a diagram has been upgraded and not yet opened)
 	 *
 	 * @param pVal[out,retval] The xmiid of the model element inside this diagram

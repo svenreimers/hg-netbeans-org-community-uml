@@ -42,11 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * REParser.java
- *
- * Created on March 2, 2005, 7:38 AM
- */
+
+
 
 package org.netbeans.modules.uml.parser.java;
 
@@ -103,7 +100,9 @@ public class REJavaParser implements IREJavaParser
 
     private String                m_Filename;
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.parsers.javaparser.IREJavaParser#notifyPackageEvent(org.dom4j.Node)
      */
     public void notifyPackageEvent(Node eventData)
@@ -111,7 +110,9 @@ public class REJavaParser implements IREJavaParser
         // Missing in C++ code.
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.parsers.javaparser.IREJavaParser#notifyDependencyEvent(org.dom4j.Node)
      */
     public void notifyDependencyEvent(Node eventData)
@@ -119,7 +120,9 @@ public class REJavaParser implements IREJavaParser
         // Missing in C++ code.
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.parsers.javaparser.IREJavaParser#notifyClassEvent(org.dom4j.Node)
      */
     public void notifyClassEvent(Node eventData)
@@ -127,7 +130,9 @@ public class REJavaParser implements IREJavaParser
         // Missing in C++ code.
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.parsers.javaparser.IREJavaParser#notifyActionEvent(org.dom4j.Node)
      */
     public void notifyActionEvent(Node eventData)
@@ -135,7 +140,9 @@ public class REJavaParser implements IREJavaParser
         // Missing in C++ code.
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.parsers.javaparser.IREJavaParser#notifyError(antlr.RecognitionException)
      */
     public void notifyError(RecognitionException e)
@@ -143,7 +150,9 @@ public class REJavaParser implements IREJavaParser
         // Missing in C++ code.
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ILanguageParser#parseFile(java.lang.String, java.lang.String)
      */
     public void parseFile(String filename, String charset)
@@ -178,7 +187,9 @@ public class REJavaParser implements IREJavaParser
         }
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ILanguageParser#parseFile(java.lang.String)
      */
     public void parseFile(String filename)
@@ -186,7 +197,9 @@ public class REJavaParser implements IREJavaParser
 	parseFile(filename, null);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ILanguageParser#parseOperation(java.lang.String, java.lang.String, org.netbeans.modules.uml.core.reverseengineering.reframework.IREOperation)
      */
     public void parseOperation(String filename, String charset, IREOperation operation)
@@ -207,7 +220,9 @@ public class REJavaParser implements IREJavaParser
         }
     }
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ILanguageParser#parseOperation(java.lang.String, org.netbeans.modules.uml.core.reverseengineering.reframework.IREOperation)
      */
     public void parseOperation(String filename, IREOperation operation)
@@ -263,7 +278,9 @@ public class REJavaParser implements IREJavaParser
         return null;
     }
 
-    /**
+    
+
+/**
      * Gets the state listener for the parser.  The state listener will recieve 
      * state events as the parser changes state.  When the state filter filters
      * out a state a state events will not be sent to the state listener.
@@ -276,7 +293,9 @@ public class REJavaParser implements IREJavaParser
         return m_EventController.getStateListener();
     }
 
-    /**
+    
+
+/**
      * Sets the state listener for the parser.  The state listener will recieve 
      * state events as the parser changes state.  When the state filter filters
      * out a state a state events will not be sent to the state listener.
@@ -289,7 +308,9 @@ public class REJavaParser implements IREJavaParser
         m_EventController.setStateListener(stateListener);
     }
 
-    /**
+    
+
+/**
      * Gets the state filter for the parser.  The state filter determines 
      * if a state is to be filtered or not.  When a state is filtered all sub 
      * states are also filtered.  The token listener will not recieve any 
@@ -303,7 +324,9 @@ public class REJavaParser implements IREJavaParser
         return m_EventController.getStateFilter();
     }
 
-    /**
+    
+
+/**
      * Sets the state filter for the parser.  The state filter determines 
      * if a state is to be filtered or not.  When a state is filtered all sub 
      * states are also filtered.  The token listener will not recieve any 
@@ -317,7 +340,9 @@ public class REJavaParser implements IREJavaParser
         m_EventController.setStateFilter(filter);
     }
 
-    /**
+    
+
+/**
      * Get the the interface that will process tokens found while
      * parsing a file.  Tokens will not be sent while in a state
      * that has bee filtered out, 
@@ -329,7 +354,9 @@ public class REJavaParser implements IREJavaParser
         return m_EventController.getTokenProcessor();
     }
 
-    /**
+    
+
+/**
      * Set the the interface that will process tokens found while
      * parsing a file.  Tokens will not be sent while in a state
      * that has bee filtered out, 
@@ -341,7 +368,9 @@ public class REJavaParser implements IREJavaParser
         m_EventController.setTokenProcessor(tokenProcessor);
     }
 
-    /**
+    
+
+/**
      * Get the the interface that will be used to filter tokens
      * before they are sent to the token processor.  Tokens will 
      * not be sent if they have be filtered out.
@@ -353,7 +382,9 @@ public class REJavaParser implements IREJavaParser
         return m_EventController.getTokenFilter();
     }
 
-    /**
+    
+
+/**
      * Set the the interface that will be used to filter tokens
      * before they are sent to the token processor.  Tokens will 
      * not be sent if they have be filtered out.
@@ -365,7 +396,9 @@ public class REJavaParser implements IREJavaParser
         m_EventController.setTokenFilter(filter);
     }
 
-    /**
+    
+
+/**
      * Get the the interface that will recieve the error information 
      * will parsing the file.
      * 
@@ -376,7 +409,9 @@ public class REJavaParser implements IREJavaParser
         return m_EventController.getErrorListener();
     }
 
-    /**
+    
+
+/**
      * Set the the interface that will recieve the error information 
      * will parsing the file.
      * 
@@ -387,7 +422,9 @@ public class REJavaParser implements IREJavaParser
         m_EventController.setErrorListener(errorListener);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ILanguageParser#processStreamByType(java.lang.String, int)
      */
     public void processStreamByType(String stream, int type)
@@ -402,7 +439,7 @@ public class REJavaParser implements IREJavaParser
     
     private void processStreamAsFragment(CharBuffer buffer, String filename)
     {
-        // Create a scanner that reads from the input stream
+        
         JavaLexer lexer = new JavaLexer(buffer);
         if (filename != null)
             lexer.setFilename( filename );
@@ -418,7 +455,7 @@ public class REJavaParser implements IREJavaParser
         filter.hide(JavaLexer.SL_COMMENT);
         filter.hide(JavaLexer.ML_COMMENT);
 
-        // Create a parser that reads from the scanner
+        
         JavaRecognizer parser = new JavaRecognizer(filter);
         parser.setASTNodeClass(CommonASTWithLocationsAndHidden.class.getName());
 
@@ -452,7 +489,7 @@ public class REJavaParser implements IREJavaParser
             m_EventController.setFilename(filename);
         try
         {
-            // Create a scanner that reads from the input stream
+            
             JavaLexer lexer = new JavaLexer(buffer);
             //JavaLexer lexer(s);
             if (filename != null)
@@ -469,7 +506,7 @@ public class REJavaParser implements IREJavaParser
             filter.hide(JavaLexer.SL_COMMENT);
             filter.hide(JavaLexer.ML_COMMENT);
    
-            // Create a parser that reads from the scanner
+            
             //           JavaRecognizer parser(lexer);
             JavaRecognizer parser = new JavaRecognizer(filter);
             parser.setASTNodeClass(CommonASTWithLocationsAndHidden.class.getName());

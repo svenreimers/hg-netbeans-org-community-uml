@@ -52,6 +52,8 @@ import org.netbeans.test.umllib.DiagramOperator;
 import org.netbeans.test.umllib.ElementTypes;
 import org.netbeans.test.umllib.exceptions.NotFoundException;
 
+
+
 /**
  * represents Actor lifeline element on collab or sequence diagrams
  */

@@ -49,6 +49,7 @@ import org.netbeans.modules.uml.core.metamodel.profiles.IStereotype;
 
 //import org.netbeans.modules.uml.core.metamodel.core.foundation.IElement;
 //import org.netbeans.modules.uml.core.metamodel.profiles.IStereotype;
+
 /**
  * <p>Title: </p>
  * <p>Description: </p>
@@ -63,7 +64,9 @@ public class CustomNameResolver implements ICustomNameResolver{
 
   }
 
-  /**
+  
+
+/**
    * Validate the passed in values according to the Describe business rules.
    * See method for the rules.
    *

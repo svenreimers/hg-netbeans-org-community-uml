@@ -55,6 +55,7 @@ import org.netbeans.test.umllib.project.Project;
 import org.netbeans.test.umllib.testcases.UMLTestCase;
 
 
+
 /**
  *
  * @spec uml/FindReplaceAssociate.xml

@@ -74,7 +74,9 @@ public class AssociationEnd extends StructuralFeature implements IAssociationEnd
 {
         private IMultiplicity multiplicity;
         
-	/**
+	
+
+/**
 	 * getAssociation. Gets the association
 	 */
 	public IAssociation getAssociation()
@@ -229,7 +231,9 @@ public class AssociationEnd extends StructuralFeature implements IAssociationEnd
       return getParticipant();
    }
       
-	/**
+	
+
+/**
 	 * Designates the Classifier participating in the Association 
 	 * at the given end.
 	 * 
@@ -240,7 +244,9 @@ public class AssociationEnd extends StructuralFeature implements IAssociationEnd
 		return getType();		
 	}
 	
-	/**
+	
+
+/**
 	 * Designates the Classifier participating in the Association 
 	 * at the given end.
 	 * 
@@ -285,7 +291,9 @@ public class AssociationEnd extends StructuralFeature implements IAssociationEnd
         }
 	}
 	
-	/**	 
+	
+
+/**	 
 	 * Retrieves the other ends of the Association this end is a part of.
 	 */
 	public ETList<IAssociationEnd> getOtherEnd()
@@ -322,7 +330,9 @@ public class AssociationEnd extends StructuralFeature implements IAssociationEnd
 		return otherEnds;
 	}
 	
-	/**
+	
+
+/**
 	 *
 	 * Turns this end into a navigable end.
 	 *
@@ -379,7 +389,9 @@ public class AssociationEnd extends StructuralFeature implements IAssociationEnd
 		return isNavigable;
 	}
 
-	/**
+	
+
+/**
 	 * Establishes the appropriate XML elements for this UML type.
 	 *
 	 * [in] The document where this element will reside
@@ -395,7 +407,9 @@ public class AssociationEnd extends StructuralFeature implements IAssociationEnd
 		//For now, AssociationEnds won't be named by default. Need a preference here
 	}
 	
-	/**	 
+	
+
+/**	 
 	 * Retrieves the first end found in the OtherEnd collection. This is usually sufficient in 
 	 * every association other than a ternary.
 	 */
@@ -414,7 +428,9 @@ public class AssociationEnd extends StructuralFeature implements IAssociationEnd
 		return end;		
 	}
 	
-	/**
+	
+
+/**
 	 *
 	 * Determines whether or not the participant encapsulates the same data as the passed in element.
 	 *
@@ -431,7 +447,9 @@ public class AssociationEnd extends StructuralFeature implements IAssociationEnd
 		return isSame;
 	}
 	
-	/**
+	
+
+/**
 	* Creates a new attribute with the passed-in information. The new attribute
 	* is returned. NOTE: the attribute is NOT added to this Classifier.
 	*
@@ -474,7 +492,9 @@ public class AssociationEnd extends StructuralFeature implements IAssociationEnd
 		return retAttr;
 	}
 	
-	/**
+	
+
+/**
 	* Creates a new attribute with the passed-in information. The new attribute
 	* is returned. NOTE: the attribute is NOT added to this Classifier.
 	*
@@ -506,7 +526,9 @@ public class AssociationEnd extends StructuralFeature implements IAssociationEnd
 		return newAttr;
 	}
 	
-	/**
+	
+
+/**
 	 * Creates a new Qualifier, giving it a default type and name.
 	 */
 	public IAttribute createQualifier3()
@@ -514,7 +536,9 @@ public class AssociationEnd extends StructuralFeature implements IAssociationEnd
 		return createQualifier(null,null);
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Attempts to find a single classifier in this classifier's namespace or 
 	 * above namespaces. If more than one classifier is found with the same name, 
@@ -534,7 +558,9 @@ public class AssociationEnd extends StructuralFeature implements IAssociationEnd
 		return null;			
 	}
 	
-	/**
+	
+
+/**
 	 *
 	 * Creates a new EventContext that will be propogated to all 
 	 * EventDispatchers on the Product's EventDispatchController.

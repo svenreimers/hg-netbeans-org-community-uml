@@ -43,11 +43,8 @@
  */
 
 
-/*
- * AddJavaProjectDialogOperator.java
- *
- * Created on March 29, 2005, 7:16 PM
- */
+
+
 
 package org.netbeans.test.umllib;
 
@@ -69,7 +66,9 @@ public class AddJavaProjectDialogOperator extends NbDialogOperator {
         super(LabelsAndTitles.ADD_JAVA_PROJECT_DIALOG_TITLE);
     }
     
-    /** Tries to find null TreeView$ExplorerTree in this dialog.
+    
+
+/** Tries to find null TreeView$ExplorerTree in this dialog.
      * @return JTreeOperator
      */
     public JTreeOperator javaProjects() {
@@ -79,13 +78,17 @@ public class AddJavaProjectDialogOperator extends NbDialogOperator {
         return _javaProjects;
     }
     
-    /** returns selected path in java projects
+    
+
+/** returns selected path in java projects
      * @return TreePath
      */
     public TreePath getSelectedProject() {
         return javaProjects().getSelectionPath();
     }
-     /**
+     
+
+/**
      * Selects given project category
      * @param project 
      */

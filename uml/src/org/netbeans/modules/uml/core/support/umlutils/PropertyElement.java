@@ -51,6 +51,7 @@ import java.util.Vector;
 import org.netbeans.modules.uml.core.configstringframework.ConfigStringHelper;
 import org.netbeans.modules.uml.core.configstringframework.IConfigStringTranslator;
 import org.netbeans.modules.uml.core.metamodel.structure.IProject;
+
 /**
  * <p>Title: </p>
  * <p>Description: </p>
@@ -273,7 +274,9 @@ public class PropertyElement implements IPropertyElement{
     }
   }
 
-  /**
+  
+
+/**
    * Builds a "|" delimited string of representing the path to this element.  Gets each
    * of its parent element names and appends to the string
    *
@@ -304,7 +307,9 @@ public class PropertyElement implements IPropertyElement{
     {
     	transStr = translator.translate(m_definition, m_value);
     }
-    /*	CComPtr < IConfigStringTranslator > pTranslator;
+    
+
+/*	CComPtr < IConfigStringTranslator > pTranslator;
    _VH(CConfigStringHelper::Instance()->GetTranslator(&pTranslator));
         if (pTranslator)
         {

@@ -46,6 +46,8 @@
 package org.netbeans.modules.uml.core.metamodel.dynamics;
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavior;
 import org.netbeans.modules.uml.core.AbstractUMLTestCase;
+
+
 /**
  * Test cases for InteractionOccurrence.
  */
@@ -58,7 +60,9 @@ public class InteractionOccurrenceTestCase extends AbstractUMLTestCase
 
     private IInteractionOccurrence occ;
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see junit.framework.TestCase#setUp()
      */
     protected void setUp() throws Exception

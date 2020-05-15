@@ -48,6 +48,7 @@ package org.netbeans.modules.uml.ui.support.messaging;
 import org.netbeans.modules.uml.common.generics.ETPairT;
 import org.netbeans.modules.uml.core.support.Debug;
 
+
 /**
  *
  * The progress dialog is used to allow code to call the progress dialog
@@ -59,7 +60,8 @@ public class ProgressDialogNoUI implements IProgressDialog
    {
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.messaging.IProgressDialog#setLimits(int, int)
     */
    public void setLimits( ETPairT<Integer, Integer> limits )
@@ -69,7 +71,9 @@ public class ProgressDialogNoUI implements IProgressDialog
       Debug.assertTrue ( m_iLower <= m_iUpper );
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.messaging.IProgressDialog#getLimits(int, int)
     */
    public ETPairT<Integer, Integer> getLimits()
@@ -77,7 +81,9 @@ public class ProgressDialogNoUI implements IProgressDialog
       return new ETPairT<Integer, Integer>( new Integer( m_iLower ), new Integer( m_iUpper ));
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.messaging.IProgressDialog#increment(int)
     */
    public int increment(int iPrevPos)
@@ -86,7 +92,9 @@ public class ProgressDialogNoUI implements IProgressDialog
       return m_iPosition++;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.messaging.IProgressDialog#setPosition(int)
     */
    public void setPosition(int iPos)
@@ -94,7 +102,9 @@ public class ProgressDialogNoUI implements IProgressDialog
       m_iPosition = iPos;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.messaging.IProgressDialog#getPosition()
     */
    public int getPosition()
@@ -102,7 +112,9 @@ public class ProgressDialogNoUI implements IProgressDialog
       return m_iPosition;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.messaging.IProgressDialog#clearFields()
     */
    public long clearFields()
@@ -111,7 +123,9 @@ public class ProgressDialogNoUI implements IProgressDialog
       return 0;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.messaging.IProgressDialog#setFieldOne(java.lang.String)
     */
    public void setFieldOne(String strValue)
@@ -119,7 +133,9 @@ public class ProgressDialogNoUI implements IProgressDialog
       // do nothing
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.messaging.IProgressDialog#setFieldTwo(java.lang.String)
     */
    public void setFieldTwo(String strValue)
@@ -127,7 +143,9 @@ public class ProgressDialogNoUI implements IProgressDialog
       // do nothing
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.messaging.IProgressDialog#setFieldThree(java.lang.String)
     */
    public void setFieldThree(String strValue)
@@ -140,7 +158,9 @@ public class ProgressDialogNoUI implements IProgressDialog
    private int m_iPosition = 0;
    
    
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.messaging.IProgressDialog#getTitle()
     */
    public String getTitle()
@@ -149,7 +169,9 @@ public class ProgressDialogNoUI implements IProgressDialog
       return null;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.messaging.IProgressDialog#setTitle(java.lang.String)
     */
    public void setTitle(String value)
@@ -158,7 +180,9 @@ public class ProgressDialogNoUI implements IProgressDialog
       
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.messaging.IProgressDialog#setLimits()
     */
    public void setLimits()
@@ -167,7 +191,9 @@ public class ProgressDialogNoUI implements IProgressDialog
       
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.messaging.IProgressDialog#getIncrementAmount()
     */
    public int getIncrementAmount()
@@ -176,7 +202,9 @@ public class ProgressDialogNoUI implements IProgressDialog
       return 0;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.messaging.IProgressDialog#setIncrementAmount(int)
     */
    public void setIncrementAmount(int value)
@@ -185,7 +213,9 @@ public class ProgressDialogNoUI implements IProgressDialog
       
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.messaging.IProgressDialog#getGroupingTitle()
     */
    public String getGroupingTitle()
@@ -194,7 +224,9 @@ public class ProgressDialogNoUI implements IProgressDialog
       return null;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.messaging.IProgressDialog#setGroupingTitle(java.lang.String)
     */
    public void setGroupingTitle(String value)
@@ -203,7 +235,9 @@ public class ProgressDialogNoUI implements IProgressDialog
       
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.messaging.IProgressDialog#getFieldOne()
     */
    public String getFieldOne()
@@ -212,7 +246,9 @@ public class ProgressDialogNoUI implements IProgressDialog
       return null;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.messaging.IProgressDialog#getFieldTwo()
     */
    public String getFieldTwo()
@@ -221,7 +257,9 @@ public class ProgressDialogNoUI implements IProgressDialog
       return null;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.messaging.IProgressDialog#getFieldThree()
     */
    public String getFieldThree()
@@ -230,7 +268,9 @@ public class ProgressDialogNoUI implements IProgressDialog
       return null;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.messaging.IProgressDialog#increment()
     */
    public int increment()
@@ -239,7 +279,9 @@ public class ProgressDialogNoUI implements IProgressDialog
       return 0;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.messaging.IProgressDialog#display(int)
     */
    public boolean display(int mode)
@@ -248,7 +290,9 @@ public class ProgressDialogNoUI implements IProgressDialog
       return false;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.messaging.IProgressDialog#close()
     */
    public long close()
@@ -257,7 +301,9 @@ public class ProgressDialogNoUI implements IProgressDialog
       return 0;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.messaging.IProgressDialog#lockMessageCenterUpdate()
     */
    public void lockMessageCenterUpdate()
@@ -266,7 +312,9 @@ public class ProgressDialogNoUI implements IProgressDialog
       
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.messaging.IProgressDialog#unlockMessageCenterUpdate()
     */
    public void unlockMessageCenterUpdate()
@@ -275,7 +323,9 @@ public class ProgressDialogNoUI implements IProgressDialog
       
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.messaging.IProgressDialog#log(int, java.lang.String, java.lang.String, java.lang.String, java.lang.String)
     */
    public void log(int type, String group, String first, String second, String third)
@@ -284,7 +334,9 @@ public class ProgressDialogNoUI implements IProgressDialog
       
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.messaging.IProgressDialog#setGroupingTitle(java.lang.String, int)
     */
    public void setGroupingTitle(String newVal, int type)
@@ -293,7 +345,9 @@ public class ProgressDialogNoUI implements IProgressDialog
       
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.messaging.IProgressDialog#setFieldOne(java.lang.String, int)
     */
    public void setFieldOne(String newVal, int type)
@@ -302,7 +356,9 @@ public class ProgressDialogNoUI implements IProgressDialog
       
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.messaging.IProgressDialog#setFieldTwo(java.lang.String, int)
     */
    public void setFieldTwo(String newVal, int type)
@@ -311,7 +367,9 @@ public class ProgressDialogNoUI implements IProgressDialog
       
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.messaging.IProgressDialog#setFieldThree(java.lang.String, int)
     */
    public void setFieldThree(String newVal, int type)
@@ -320,7 +378,9 @@ public class ProgressDialogNoUI implements IProgressDialog
       
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.messaging.IProgressDialog#promptForClosure(java.lang.String, boolean)
     */
    public void promptForClosure(String buttonTitle, boolean beep)
@@ -329,7 +389,9 @@ public class ProgressDialogNoUI implements IProgressDialog
       
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.messaging.IProgressDialog#getLogFileName()
     */
    public String getLogFileName()
@@ -338,7 +400,9 @@ public class ProgressDialogNoUI implements IProgressDialog
       return null;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.messaging.IProgressDialog#setLogFileName(java.lang.String)
     */
    public void setLogFileName(String value)
@@ -347,7 +411,9 @@ public class ProgressDialogNoUI implements IProgressDialog
       
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.messaging.IProgressDialog#getDefaultExtension()
     */
    public String getDefaultExtension()
@@ -356,7 +422,9 @@ public class ProgressDialogNoUI implements IProgressDialog
       return null;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.messaging.IProgressDialog#setDefaultExtension(java.lang.String)
     */
    public void setDefaultExtension(String value)
@@ -365,7 +433,9 @@ public class ProgressDialogNoUI implements IProgressDialog
       
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.messaging.IProgressDialog#getCollapse()
     */
    public boolean getCollapse()
@@ -374,7 +444,9 @@ public class ProgressDialogNoUI implements IProgressDialog
       return false;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.messaging.IProgressDialog#setCollapse(boolean)
     */
    public void setCollapse(boolean value)
@@ -383,7 +455,9 @@ public class ProgressDialogNoUI implements IProgressDialog
       
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.messaging.IProgressDialog#getCloseWhenDone()
     */
    public boolean getCloseWhenDone()
@@ -392,7 +466,9 @@ public class ProgressDialogNoUI implements IProgressDialog
       return false;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.messaging.IProgressDialog#setCloseWhenDone(boolean)
     */
    public void setCloseWhenDone(boolean value)
@@ -401,7 +477,9 @@ public class ProgressDialogNoUI implements IProgressDialog
       
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.messaging.IProgressDialog#getProgressExecutor()
     */
    public IProgressExecutor getProgressExecutor()
@@ -410,7 +488,9 @@ public class ProgressDialogNoUI implements IProgressDialog
       return null;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.messaging.IProgressDialog#setProgressExecutor(org.netbeans.modules.uml.ui.support.messaging.IProgressExecutor)
     */
    public void setProgressExecutor(IProgressExecutor value)
@@ -419,7 +499,9 @@ public class ProgressDialogNoUI implements IProgressDialog
       
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.messaging.IProgressDialog#getIsCancelled()
     */
    public boolean getIsCancelled()
@@ -428,7 +510,9 @@ public class ProgressDialogNoUI implements IProgressDialog
       return false;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.messaging.IProgressDialog#setIndeterminate(boolean)
     */
    public void setIndeterminate(boolean newVal)
@@ -437,7 +521,9 @@ public class ProgressDialogNoUI implements IProgressDialog
       
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.messaging.IProgressDialog#setProgressController(org.netbeans.modules.uml.ui.support.messaging.IProgressController)
     */
    public void setProgressController(IProgressController value)
@@ -446,7 +532,9 @@ public class ProgressDialogNoUI implements IProgressDialog
       
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.messaging.IProgressDialog#getProgressController()
     */
    public IProgressController getProgressController()

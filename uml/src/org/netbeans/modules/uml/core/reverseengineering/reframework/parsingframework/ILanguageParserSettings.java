@@ -48,32 +48,44 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 public interface ILanguageParserSettings
 {
-	/**
+	
+
+/**
 	 * method AddSetting
 	*/
 	public void addSetting( String language, String name, String value );
 
-	/**
+	
+
+/**
 	 * method GetSetting
 	*/
 	public String getSetting( String language, String name );
 
-	/**
+	
+
+/**
 	 * method AddMacro
 	*/
 	public void addMacro( String language, ILanguageMacro macro );
 
-	/**
+	
+
+/**
 	 * method GetMacro
 	*/
 	public ILanguageMacro getMacro( String language, String name );
 
-	/**
+	
+
+/**
 	 * method GetMacros
 	*/
 	public ETList<ILanguageMacro> getMacros( String language );
 
-	/**
+	
+
+/**
 	 * method GetAllMacros
 	*/
 	public ETList<ILanguageMacro> getAllMacros();

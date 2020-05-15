@@ -48,42 +48,58 @@ import org.netbeans.modules.uml.core.metamodel.structure.ISourceFileArtifact;
 
 public interface ICodeGenerationChangeRequest
 {
-	/**
+	
+
+/**
 	 * Gets / Sets StartPosition
 	*/
 	public int getStartPosition();
 
-	/**
+	
+
+/**
 	 * Gets / Sets StartPosition
 	*/
 	public void setStartPosition( int value );
 
-	/**
+	
+
+/**
 	 * Gets / Sets EndPosition
 	*/
 	public int getEndPosition();
 
-	/**
+	
+
+/**
 	 * Gets / Sets EndPosition
 	*/
 	public void setEndPosition( int value );
 
-	/**
+	
+
+/**
 	 * Gets / Sets ChangeText
 	*/
 	public String getChangeText();
 
-	/**
+	
+
+/**
 	 * Gets / Sets ChangeText
 	*/
 	public void setChangeText( String value );
 
-	/**
+	
+
+/**
 	 * Gets / Sets SourceFileArtifact
 	*/
 	public ISourceFileArtifact getSourceFileArtifact();
 
-	/**
+	
+
+/**
 	 * Gets / Sets SourceFileArtifact
 	*/
 	public void setSourceFileArtifact( ISourceFileArtifact value );

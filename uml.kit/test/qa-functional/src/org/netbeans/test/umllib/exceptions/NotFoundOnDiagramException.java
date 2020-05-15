@@ -49,12 +49,14 @@ import org.netbeans.test.umllib.DiagramElementOperator;
 import org.netbeans.test.umllib.ElementTypes;
 import org.netbeans.test.umllib.ExpandedElementTypes;
 
+
 /**
  * Thrown when expected element can't be found on diagram
  */
 public class NotFoundOnDiagramException extends NotFoundException{
     
-    /**
+    
+/**
      * Creates a new instance of NotFoundOnDiagramException
      * @param elemenType 
      */
@@ -62,7 +64,9 @@ public class NotFoundOnDiagramException extends NotFoundException{
         super(elemenType.toString());     
         missedEl=elemenType;
     }
-    /**
+    
+
+/**
      * Creates a new instance of NotFoundOnDiagramException 
      *  and specify history of creation (action for element creation)
      * @param elemenType 
@@ -74,7 +78,9 @@ public class NotFoundOnDiagramException extends NotFoundException{
         missedEl=null;
         preAction=type;
      }
-    /**
+    
+
+/**
      * Creates a new instance of NotFoundOnDiagramException 
      *  and specify history of creation (action for element creation)
      * @param elemenType 
@@ -85,7 +91,9 @@ public class NotFoundOnDiagramException extends NotFoundException{
         missedEl=elemenType;
         preAction=type;
      }
-    /**
+    
+
+/**
      * Creates a new instance of NotFoundOnDiagramException 
      *  and specify history of creation (action for element creation)
      * @param elemenType 
@@ -100,7 +108,9 @@ public class NotFoundOnDiagramException extends NotFoundException{
         this.id=id;
     }
     
-    /**
+    
+
+/**
      * 
      * @return 
      */
@@ -113,7 +123,9 @@ public class NotFoundOnDiagramException extends NotFoundException{
     private ExpandedElementTypes missedElEx=ExpandedElementTypes.ANY; 
     private int id;
     
-    /**
+    
+
+/**
      * get type of action invoked for element creation
      * @return 
      */
@@ -122,7 +134,9 @@ public class NotFoundOnDiagramException extends NotFoundException{
         return preAction;
     }
     
-    /**
+    
+
+/**
      * 
      * @return 
      */
@@ -130,7 +144,9 @@ public class NotFoundOnDiagramException extends NotFoundException{
     {
         return id;
     }
-    /**
+    
+
+/**
      * 
      * @return 
      */
@@ -138,7 +154,9 @@ public class NotFoundOnDiagramException extends NotFoundException{
     {
         return missedEl;
     }
-    /**
+    
+
+/**
      * 
      * @return 
      */
@@ -146,7 +164,9 @@ public class NotFoundOnDiagramException extends NotFoundException{
     {
         return missedElEx;
     }
-    /**
+    
+
+/**
      * Actions specific for ellement creation on diagram
      */
     static public enum ActionTypes
@@ -162,7 +182,9 @@ public class NotFoundOnDiagramException extends NotFoundException{
                 
         private String description="";
         
-        /**
+        
+
+/**
          * 
          * @param desc 
          */

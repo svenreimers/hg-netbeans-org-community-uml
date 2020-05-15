@@ -42,12 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File         : RoundTripOperationEventsSink.java
- * Version      : 1.2
- * Description  : Listener for operation change events.
- * Author       : Ashish
- */
+
+
 package org.netbeans.modules.uml.integration.ide;
 
 import java.util.Vector;
@@ -69,28 +65,8 @@ import org.netbeans.modules.uml.core.support.umlsupport.IResultCell;
 import org.netbeans.modules.uml.core.support.umlsupport.Log;
 //import org.netbeans.modules.uml.integration.netbeans.NBEventProcessor;
 
-/**
- *  Listens for changes to operations in the Describe model.
- *
- * Revision History
- * No.  Date        Who         What
- * ---  ----        ---         ----
- *   1  2002-04-23  Darshan     Added file and class comments.
- *   2  2002-04-25  Darshan     Added support for IDE integrations to add
- *                              secondary listeners to this.
- *   3  2002-04-26  Darshan     Removed diagnostic messages from second
- *                              (post-change) event functions.
- *   4  2002-05-03  Darshan     Incorporated Sumitabh's changes to make the
- *                              operation model-source event handler correctly
- *                              handle return type and parameter changes.
- *   5  2002-06-14  Darshan     Reintroduced the ChangeUtils.say() call.
- *   6  2002-06-19  Darshan     Fixed operation change events not correctly
- *                              processed for interfaces (bug 154).
- *   7  2002-08-06  Mukta       Added code to handle the
- *                              IMultipleParameterTypeChangeRequest
- *
- * @version 1.0
- */
+
+
 public class RoundTripOperationEventsSink
                         extends RoundTripSource
                         implements IRoundTripOperationEventsSink {

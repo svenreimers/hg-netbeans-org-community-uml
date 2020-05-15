@@ -42,11 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : ElementContextPayload.java
- * Created on : Nov 10, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.roundtripframework;
 
 import org.netbeans.modules.uml.core.metamodel.core.foundation.IElement;
@@ -61,7 +58,9 @@ public class ElementContextPayload
     protected IProject m_Project = null;
     protected IElement m_Owner = null;
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IElementContextPayload#getOwner()
      */
     public IElement getOwner()
@@ -69,7 +68,9 @@ public class ElementContextPayload
         return m_Owner;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IElementContextPayload#getProject()
      */
     public IProject getProject()
@@ -77,7 +78,9 @@ public class ElementContextPayload
         return m_Project;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IElementContextPayload#setOwner(org.netbeans.modules.uml.core.metamodel.core.foundation.IElement)
      */
     public void setOwner(IElement pOwner)
@@ -85,7 +88,9 @@ public class ElementContextPayload
         m_Owner = pOwner;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IElementContextPayload#setProject(org.netbeans.modules.uml.core.metamodel.structure.IProject)
      */
     public void setProject(IProject pProject)

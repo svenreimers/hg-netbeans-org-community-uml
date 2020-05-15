@@ -72,6 +72,7 @@ import org.netbeans.test.umllib.testcases.UMLTestCase;
 
 
 
+
 /**
  *
  * @spec uml/UML-EditControl.xml
@@ -122,7 +123,9 @@ public class PlaceDeleteLinksByContext extends UMLTestCase {
     private static boolean eIO2=false;
    //--
     //SPECIAL CASE
-   /* private static String componentDiagramName3 = "cpD3";
+   
+
+/* private static String componentDiagramName3 = "cpD3";
     private static String workPkg3 = "pkg3";
     private static String element3="Nested Link";
     private static String treeNode3=element3;
@@ -143,7 +146,9 @@ public class PlaceDeleteLinksByContext extends UMLTestCase {
     private static boolean eIO4=false;
    //--
     //SPECIAL CASE
-    /*private static String componentDiagramName5 = "cpD5";
+    
+
+/*private static String componentDiagramName5 = "cpD5";
     private static String workPkg5 = "pkg5";
     private static String element5="Assembly Connector";
     private static String treeNode5=element5;
@@ -224,7 +229,9 @@ public class PlaceDeleteLinksByContext extends UMLTestCase {
     private static boolean eIO12=false;
    //--
     //SPECIAL CASE
-    /*private static String componentDiagramName13 = "cpD13";
+    
+
+/*private static String componentDiagramName13 = "cpD13";
     private static String workPkg13 = "pkg13";
     private static String element13="Association Class";
     private static String treeNode13=element13;
@@ -235,7 +242,9 @@ public class PlaceDeleteLinksByContext extends UMLTestCase {
     private static boolean eIO13=false;*/
    //--
     //Special case
-   /* private static String componentDiagramName14 = "cpD14";
+   
+
+/* private static String componentDiagramName14 = "cpD14";
     private static String workPkg14 = "pkg14";
     private static String element14="Role Binding";
     private static String treeNode14=element14;
@@ -246,7 +255,9 @@ public class PlaceDeleteLinksByContext extends UMLTestCase {
     private static boolean eIO14=false;*/
    //--
     //Special case
-    /*private static String componentDiagramName15 = "cpD15";
+    
+
+/*private static String componentDiagramName15 = "cpD15";
     private static String workPkg15 = "pkg15";
     private static String element15="Link Comment";
     private static String treeNode15=element15;
@@ -286,14 +297,18 @@ public class PlaceDeleteLinksByContext extends UMLTestCase {
         lastTestCase=getCurrentTestMethodName();
         testLinkPlaceDelete(workPkg2,componentDiagramName2, fromType2, toType2,element2,elementName2,elementType2,treeNode2,eIO2);
     }
- /* public void testDeleteLinkByContext3() {
+ 
+
+/* public void testDeleteLinkByContext3() {
         testLinkPlaceDelete(workPkg3,componentDiagramName3, fromType3, toType3,element3,elementName3,elementType3,treeNode3,eIO3);
     }*/
   public void testDeleteLinkByContext4() {
         lastTestCase=getCurrentTestMethodName();
         testLinkPlaceDelete(workPkg4,componentDiagramName4, fromType4, toType4,element4,elementName4,elementType4,treeNode4,eIO4);
     }
-  /*public void testDeleteLinkByContext5() {
+  
+
+/*public void testDeleteLinkByContext5() {
         testLinkPlaceDelete(workPkg5,componentDiagramName5, fromType5, toType5,element5,elementName5,elementType5,treeNode5,eIO5);
     }*/
   public void testDeleteLinkByContext6() {
@@ -324,13 +339,19 @@ public class PlaceDeleteLinksByContext extends UMLTestCase {
         lastTestCase=getCurrentTestMethodName();
         testLinkPlaceDelete(workPkg12,componentDiagramName12, fromType12, toType12,element12,elementName12,elementType12,treeNode12,eIO12);
     }
-  /*public void testDeleteLinkByContext13() {
+  
+
+/*public void testDeleteLinkByContext13() {
         testLinkPlaceDelete(workPkg13,componentDiagramName13, fromType13, toType13,element13,elementName13,elementType13,treeNode13,eIO13);
     }*/
-  /*public void testDeleteLinkByContext14() {
+  
+
+/*public void testDeleteLinkByContext14() {
         testLinkPlaceDelete(workPkg14,componentDiagramName14, fromType14, toType14,element14,elementName14,elementType14,treeNode14,eIO14);
     }*/
-  /*public void testDeleteLinkByContext15() {
+  
+
+/*public void testDeleteLinkByContext15() {
         testLinkPlaceDelete(workPkg15,componentDiagramName15, fromType15, toType15,element15,elementName15,elementType15,treeNode15,eIO15);
     }*/
 
@@ -417,7 +438,9 @@ public class PlaceDeleteLinksByContext extends UMLTestCase {
         LinkOperator testedlink=null;
         try
         {
-           /* In netbeans6.0 composition and navigable composition link are shown as aggregation in 
+           
+
+/* In netbeans6.0 composition and navigable composition link are shown as aggregation in 
             * project view as they are special form of aggregation. See Issue 116868
             * Similar to navigable aggregation and navigable association.The default name
             * aggrgation and association are used in project modle.

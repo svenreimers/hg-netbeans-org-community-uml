@@ -47,6 +47,7 @@
 package org.netbeans.modules.uml.ui.support.visitors;
 
 
+
 /**
  *
  * Visitor is used for seaching the graph for an object.

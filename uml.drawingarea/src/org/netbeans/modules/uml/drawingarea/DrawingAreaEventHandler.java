@@ -233,7 +233,9 @@ public class DrawingAreaEventHandler
         m_AffectedModelElements.clear();
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IElementLifeTimeEventsSink#onElementPreCreate(java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
     */
     public void onElementPreCreate(String ElementType, IResultCell cell)
@@ -241,7 +243,9 @@ public class DrawingAreaEventHandler
         //nothing to do
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IElementLifeTimeEventsSink#onElementCreated(org.netbeans.modules.uml.core.metamodel.core.foundation.IVersionableElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
     */
     public void onElementCreated(IVersionableElement element, IResultCell cell)
@@ -249,7 +253,9 @@ public class DrawingAreaEventHandler
         //nothing to do
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IElementLifeTimeEventsSink#onElementPreDelete(org.netbeans.modules.uml.core.metamodel.core.foundation.IVersionableElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
     */
     public void onElementPreDelete(IVersionableElement element, IResultCell cell)
@@ -303,7 +309,9 @@ public class DrawingAreaEventHandler
         }
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IElementLifeTimeEventsSink#onElementDeleted(org.netbeans.modules.uml.core.metamodel.core.foundation.IVersionableElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
     */
     public void onElementDeleted(IVersionableElement element, IResultCell cell)
@@ -342,7 +350,9 @@ public class DrawingAreaEventHandler
         }
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IElementLifeTimeEventsSink#onElementPreDuplicated(org.netbeans.modules.uml.core.metamodel.core.foundation.IVersionableElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
     */
     public void onElementPreDuplicated(IVersionableElement element, IResultCell cell)
@@ -350,7 +360,9 @@ public class DrawingAreaEventHandler
         //nothing to do
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IElementLifeTimeEventsSink#onElementDuplicated(org.netbeans.modules.uml.core.metamodel.core.foundation.IVersionableElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
     */
     public void onElementDuplicated(IVersionableElement element, IResultCell cell)
@@ -358,7 +370,9 @@ public class DrawingAreaEventHandler
         //nothing to do
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifierFeatureEventsSink#onFeaturePreAdded(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IFeature, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
     */
     public void onFeaturePreAdded(IClassifier classifier, IFeature feature, IResultCell cell)
@@ -366,7 +380,9 @@ public class DrawingAreaEventHandler
         //nothing to do
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifierFeatureEventsSink#onFeatureAdded(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IFeature, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
     */
     public void onFeatureAdded(IClassifier classifier, IFeature feature, IResultCell cell)
@@ -384,7 +400,9 @@ public class DrawingAreaEventHandler
         postElementModifiedEvent(classifier, enumLit, ModelElementChangedKind.FEATUREADDED);
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifierFeatureEventsSink#onFeaturePreRemoved(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IFeature, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
     */
     public void onFeaturePreRemoved(IClassifier classifier, IFeature feature, IResultCell cell)
@@ -392,7 +410,9 @@ public class DrawingAreaEventHandler
         //nothing to do
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifierFeatureEventsSink#onFeatureRemoved(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IFeature, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
     */
     public void onFeatureRemoved(IClassifier classifier, IFeature feature, IResultCell cell)
@@ -415,7 +435,9 @@ public class DrawingAreaEventHandler
         }
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifierFeatureEventsSink#onFeaturePreMoved(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IFeature, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
     */
     public void onFeaturePreMoved(IClassifier classifier, IFeature feature, IResultCell cell)
@@ -423,7 +445,9 @@ public class DrawingAreaEventHandler
 
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifierFeatureEventsSink#onFeatureMoved(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IFeature, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
     */
     public void onFeatureMoved(IClassifier classifier, IFeature feature, IResultCell cell)
@@ -447,7 +471,9 @@ public class DrawingAreaEventHandler
         }
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifierFeatureEventsSink#onFeaturePreDuplicatedToClassifier(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IFeature, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
     */
     public void onFeaturePreDuplicatedToClassifier(IClassifier classifier, IFeature feature, IResultCell cell)
@@ -455,7 +481,9 @@ public class DrawingAreaEventHandler
         //nothing to do
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifierFeatureEventsSink#onFeatureDuplicatedToClassifier(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IFeature, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IFeature, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
     */
     public void onFeatureDuplicatedToClassifier(IClassifier pOldClassifier, IFeature pOldFeature, IClassifier pNewClassifier, IFeature pNewFeature, IResultCell cell)
@@ -463,7 +491,9 @@ public class DrawingAreaEventHandler
         postElementModifiedEvent(pNewClassifier, pNewFeature, ModelElementChangedKind.FEATUREDUPLICATEDTOCLASSIFIER);
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifierFeatureEventsSink#onPreAbstractModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, boolean, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
     */
     public void onPreAbstractModified(IClassifier feature, boolean proposedValue, IResultCell cell)
@@ -471,7 +501,9 @@ public class DrawingAreaEventHandler
         //nothing to do
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifierFeatureEventsSink#onAbstractModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
     */
     public void onAbstractModified(IClassifier feature, IResultCell cell)
@@ -482,7 +514,9 @@ public class DrawingAreaEventHandler
         }
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifierFeatureEventsSink#onPreLeafModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, boolean, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
     */
     public void onPreLeafModified(IClassifier feature, boolean proposedValue, IResultCell cell)
@@ -490,7 +524,9 @@ public class DrawingAreaEventHandler
         //nothing to do
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifierFeatureEventsSink#onLeafModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
     */
     public void onLeafModified(IClassifier feature, IResultCell cell)
@@ -498,7 +534,9 @@ public class DrawingAreaEventHandler
         //nothing to do
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifierFeatureEventsSink#onPreTransientModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, boolean, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
     */
     public void onPreTransientModified(IClassifier feature, boolean proposedValue, IResultCell cell)
@@ -506,7 +544,9 @@ public class DrawingAreaEventHandler
         //nothing to do
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifierFeatureEventsSink#onTransientModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
     */
     public void onTransientModified(IClassifier feature, IResultCell cell)
@@ -514,7 +554,9 @@ public class DrawingAreaEventHandler
         //nothing to do
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifierFeatureEventsSink#onPreTemplateParameterAdded(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IParameterableElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
     */
     public void onPreTemplateParameterAdded(IClassifier pClassifier, IParameterableElement pParam, IResultCell cell)
@@ -522,7 +564,9 @@ public class DrawingAreaEventHandler
         //nothing to do
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifierFeatureEventsSink#onTemplateParameterAdded(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IParameterableElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
     */
     public void onTemplateParameterAdded(IClassifier pClassifier, IParameterableElement pParam, IResultCell cell)
@@ -532,7 +576,9 @@ public class DrawingAreaEventHandler
                               true);
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifierFeatureEventsSink#onPreTemplateParameterRemoved(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IParameterableElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
     */
     public void onPreTemplateParameterRemoved(IClassifier pClassifier, IParameterableElement pParam, IResultCell cell)
@@ -540,7 +586,9 @@ public class DrawingAreaEventHandler
         //nothing to do
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifierFeatureEventsSink#onTemplateParameterRemoved(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IParameterableElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
     */
     public void onTemplateParameterRemoved(IClassifier pClassifier, IParameterableElement pParam, IResultCell cell)
@@ -550,7 +598,9 @@ public class DrawingAreaEventHandler
                               true);
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifierTransformEventsSink#onPreTransform(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
     */
     public void onPreTransform(IClassifier classifier, String newForm, IResultCell cell)
@@ -558,7 +608,9 @@ public class DrawingAreaEventHandler
         //nothing to do
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifierTransformEventsSink#onTransformed(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
     */
     public void onTransformed(IClassifier classifier, IResultCell cell)
@@ -569,7 +621,9 @@ public class DrawingAreaEventHandler
         }
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IElementModifiedEventsSink#onElementPreModified(org.netbeans.modules.uml.core.metamodel.core.foundation.IVersionableElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
     */
     public void onElementPreModified(IVersionableElement element, IResultCell cell)
@@ -578,7 +632,9 @@ public class DrawingAreaEventHandler
         
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IElementModifiedEventsSink#onElementModified(org.netbeans.modules.uml.core.metamodel.core.foundation.IVersionableElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
     */
     public void onElementModified(IVersionableElement element, IResultCell cell)
@@ -597,7 +653,9 @@ public class DrawingAreaEventHandler
         }
     }
     
-    /**
+    
+
+/**
      * Post an element modified event
      *
      * @param pElement [in] The element that changed
@@ -643,7 +701,9 @@ public class DrawingAreaEventHandler
         m_AffectdXMIID.clear();
     }
     
-    /**
+    
+
+/**
      * Post an element deleted event
      */
     private void postElementDeletedEvent(IElement pElement, IElement pSecondaryElement)
@@ -661,7 +721,9 @@ public class DrawingAreaEventHandler
                               true);
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElementEventsSink#onPreMultiplicityModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElement, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
     */
     public void onPreMultiplicityModified(ITypedElement element, IMultiplicity proposedValue, IResultCell cell)
@@ -669,7 +731,9 @@ public class DrawingAreaEventHandler
         //nothing to do
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElementEventsSink#onMultiplicityModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
     */
     public void onMultiplicityModified(ITypedElement element, IResultCell cell)
@@ -680,7 +744,9 @@ public class DrawingAreaEventHandler
         }
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElementEventsSink#onPreTypeModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElement, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
     */
     public void onPreTypeModified(ITypedElement element, IClassifier proposedValue, IResultCell cell)
@@ -688,7 +754,9 @@ public class DrawingAreaEventHandler
         //nothing to do
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElementEventsSink#onTypeModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
     */
     public void onTypeModified(ITypedElement element, IResultCell cell)
@@ -699,7 +767,9 @@ public class DrawingAreaEventHandler
         }
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElementEventsSink#onPreLowerModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElement, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityRange, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
     */
     public void onPreLowerModified(ITypedElement element, IMultiplicity mult, IMultiplicityRange range, String proposedValue, IResultCell cell)
@@ -707,7 +777,9 @@ public class DrawingAreaEventHandler
         //nothing to do
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElementEventsSink#onLowerModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElement, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityRange, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
     */
     public void onLowerModified(ITypedElement element, IMultiplicity mult, IMultiplicityRange range, IResultCell cell)
@@ -726,7 +798,9 @@ public class DrawingAreaEventHandler
         }
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElementEventsSink#onPreUpperModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElement, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityRange, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
     */
     public void onPreUpperModified(ITypedElement element, IMultiplicity mult, IMultiplicityRange range, String proposedValue, IResultCell cell)
@@ -734,7 +808,9 @@ public class DrawingAreaEventHandler
         //nothing to do
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElementEventsSink#onUpperModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElement, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityRange, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
     */
     public void onUpperModified(ITypedElement element, IMultiplicity mult, IMultiplicityRange range, IResultCell cell)
@@ -752,7 +828,9 @@ public class DrawingAreaEventHandler
         }
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElementEventsSink#onPreRangeAdded(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElement, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityRange, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
     */
     public void onPreRangeAdded(ITypedElement element, IMultiplicity mult, IMultiplicityRange range, IResultCell cell)
@@ -760,7 +838,9 @@ public class DrawingAreaEventHandler
         //nothing to do
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElementEventsSink#onRangeAdded(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElement, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityRange, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
     */
     public void onRangeAdded(ITypedElement element, IMultiplicity mult, IMultiplicityRange range, IResultCell cell)
@@ -775,7 +855,9 @@ public class DrawingAreaEventHandler
         postElementModifiedEvent(primary, secondary, ModelElementChangedKind.MULTIPLICITYMODIFIED);
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElementEventsSink#onPreRangeRemoved(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElement, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityRange, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
     */
     public void onPreRangeRemoved(ITypedElement element, IMultiplicity mult, IMultiplicityRange range, IResultCell cell)
@@ -783,7 +865,9 @@ public class DrawingAreaEventHandler
         //nothing to do
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElementEventsSink#onRangeRemoved(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElement, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityRange, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
     */
     public void onRangeRemoved(ITypedElement element, IMultiplicity mult, IMultiplicityRange range, IResultCell cell)
@@ -798,7 +882,9 @@ public class DrawingAreaEventHandler
         postElementModifiedEvent(primary, secondary, ModelElementChangedKind.MULTIPLICITYMODIFIED);
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElementEventsSink#onPreOrderModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElement, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity, boolean, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
     */
     public void onPreOrderModified(ITypedElement element, IMultiplicity mult, boolean proposedValue, IResultCell cell)
@@ -806,7 +892,9 @@ public class DrawingAreaEventHandler
         //nothing to do
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElementEventsSink#onOrderModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElement, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
     */
     public void onOrderModified(ITypedElement element, IMultiplicity mult, IResultCell cell)
@@ -817,7 +905,9 @@ public class DrawingAreaEventHandler
         }
     }
     
-    /**
+    
+
+/**
      * Fired when the collection type property is changed on the passed in
      * range.
      * @param element The type that owned the multilicity element
@@ -830,7 +920,9 @@ public class DrawingAreaEventHandler
         // This information is not represented on the diagram.
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IRelationEventsSink#onPreRelationEndModified(org.netbeans.modules.uml.core.metamodel.core.foundation.IRelationProxy, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
     */
     public void onPreRelationEndModified(IRelationProxy proxy, IResultCell cell)
@@ -838,7 +930,9 @@ public class DrawingAreaEventHandler
         //nothing to do
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IRelationEventsSink#onRelationEndModified(org.netbeans.modules.uml.core.metamodel.core.foundation.IRelationProxy, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
     */
     public void onRelationEndModified(IRelationProxy proxy, IResultCell cell)
@@ -853,7 +947,9 @@ public class DrawingAreaEventHandler
         }
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IRelationEventsSink#onPreRelationEndAdded(org.netbeans.modules.uml.core.metamodel.core.foundation.IRelationProxy, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
     */
     public void onPreRelationEndAdded(IRelationProxy proxy, IResultCell cell)
@@ -861,7 +957,9 @@ public class DrawingAreaEventHandler
         //nothing to do
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IRelationEventsSink#onRelationEndAdded(org.netbeans.modules.uml.core.metamodel.core.foundation.IRelationProxy, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
     */
     public void onRelationEndAdded(IRelationProxy proxy, IResultCell cell)
@@ -876,7 +974,9 @@ public class DrawingAreaEventHandler
         }
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IRelationEventsSink#onPreRelationEndRemoved(org.netbeans.modules.uml.core.metamodel.core.foundation.IRelationProxy, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
     */
     public void onPreRelationEndRemoved(IRelationProxy proxy, IResultCell cell)
@@ -884,7 +984,9 @@ public class DrawingAreaEventHandler
         //nothing to do
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IRelationEventsSink#onRelationEndRemoved(org.netbeans.modules.uml.core.metamodel.core.foundation.IRelationProxy, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
     */
     public void onRelationEndRemoved(IRelationProxy proxy, IResultCell cell)
@@ -899,7 +1001,9 @@ public class DrawingAreaEventHandler
         }
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IRelationEventsSink#onPreRelationCreated(org.netbeans.modules.uml.core.metamodel.core.foundation.IRelationProxy, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
     */
     public void onPreRelationCreated(IRelationProxy proxy, IResultCell cell)
@@ -907,7 +1011,9 @@ public class DrawingAreaEventHandler
         //nothing to do
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IRelationEventsSink#onRelationCreated(org.netbeans.modules.uml.core.metamodel.core.foundation.IRelationProxy, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
     */
     public void onRelationCreated(IRelationProxy proxy, IResultCell cell)
@@ -922,7 +1028,9 @@ public class DrawingAreaEventHandler
         }
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IRelationEventsSink#onPreRelationDeleted(org.netbeans.modules.uml.core.metamodel.core.foundation.IRelationProxy, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
     */
     public void onPreRelationDeleted(IRelationProxy proxy, IResultCell cell)
@@ -930,7 +1038,9 @@ public class DrawingAreaEventHandler
         //nothing to do
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IRelationEventsSink#onRelationDeleted(org.netbeans.modules.uml.core.metamodel.core.foundation.IRelationProxy, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
     */
     public void onRelationDeleted(IRelationProxy proxy, IResultCell cell)
@@ -945,7 +1055,9 @@ public class DrawingAreaEventHandler
         }
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElementEventsSink#onPreNameModified(org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElement, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
     */
     public void onPreNameModified(INamedElement element, String proposedName, IResultCell cell)
@@ -953,7 +1065,9 @@ public class DrawingAreaEventHandler
         //nothing to do
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElementEventsSink#onNameModified(org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
     */
     public void onNameModified(INamedElement element, IResultCell cell)
@@ -1019,7 +1133,9 @@ public class DrawingAreaEventHandler
         }
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElementEventsSink#onPreVisibilityModified(org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElement, int, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
     */
     public void onPreVisibilityModified(INamedElement element, int proposedValue, IResultCell cell)
@@ -1027,7 +1143,9 @@ public class DrawingAreaEventHandler
         //nothing to do
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElementEventsSink#onVisibilityModified(org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
     */
     public void onVisibilityModified(INamedElement element, IResultCell cell)
@@ -1039,7 +1157,9 @@ public class DrawingAreaEventHandler
         }
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElementEventsSink#onPreAliasNameModified(org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElement, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
     */
     public void onPreAliasNameModified(INamedElement element, String proposedName, IResultCell cell)
@@ -1047,7 +1167,9 @@ public class DrawingAreaEventHandler
         //nothing to do
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElementEventsSink#onAliasNameModified(org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
     */
     public void onAliasNameModified(INamedElement element, IResultCell cell)
@@ -1063,7 +1185,9 @@ public class DrawingAreaEventHandler
         }
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElementEventsSink#onPreNameCollision(org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElement, java.lang.String)
     */
     public void onPreNameCollision(INamedElement element, String proposedName, ETList < INamedElement > collidingElements, IResultCell cell)
@@ -1071,7 +1195,9 @@ public class DrawingAreaEventHandler
         //nothing to do
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElementEventsSink#onNameCollision(org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElement)
     */
     public void onNameCollision(INamedElement element, ETList < INamedElement > collidingElements, IResultCell cell)
@@ -1079,7 +1205,9 @@ public class DrawingAreaEventHandler
         //nothing to do
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.workspacemanagement.IWSElementEventsSink#onWSElementPreCreate(org.netbeans.modules.uml.core.workspacemanagement.IWSProject, java.lang.String, java.lang.String, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
     */
     public void onWSElementPreCreate(IWSProject wsProject, String location, String Name, String data, IResultCell cell)
@@ -1087,7 +1215,9 @@ public class DrawingAreaEventHandler
         //nothing to do
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.workspacemanagement.IWSElementEventsSink#onWSElementCreated(org.netbeans.modules.uml.core.workspacemanagement.IWSElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
     */
     public void onWSElementCreated(IWSElement element, IResultCell cell)
@@ -1095,7 +1225,9 @@ public class DrawingAreaEventHandler
         //nothing to do
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.workspacemanagement.IWSElementEventsSink#onWSElementPreSave(org.netbeans.modules.uml.core.workspacemanagement.IWSElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
     */
     public void onWSElementPreSave(IWSElement element, IResultCell cell)
@@ -1103,7 +1235,9 @@ public class DrawingAreaEventHandler
         //nothing to do
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.workspacemanagement.IWSElementEventsSink#onWSElementSaved(org.netbeans.modules.uml.core.workspacemanagement.IWSElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
     */
     public void onWSElementSaved(IWSElement element, IResultCell cell)
@@ -1111,7 +1245,9 @@ public class DrawingAreaEventHandler
         //nothing to do
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.workspacemanagement.IWSElementEventsSink#onWSElementPreRemove(org.netbeans.modules.uml.core.workspacemanagement.IWSElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
     */
     public void onWSElementPreRemove(IWSElement element, IResultCell cell)
@@ -1119,14 +1255,18 @@ public class DrawingAreaEventHandler
         //nothing to do
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.workspacemanagement.IWSElementEventsSink#onWSElementRemoved(org.netbeans.modules.uml.core.workspacemanagement.IWSElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
     */
     public void onWSElementRemoved(IWSElement element, IResultCell cell)
     {
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.workspacemanagement.IWSElementEventsSink#onWSElementPreNameChanged(org.netbeans.modules.uml.core.workspacemanagement.IWSElement, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
     */
     public void onWSElementPreNameChanged(IWSElement element, String proposedValue, IResultCell cell)
@@ -1134,7 +1274,9 @@ public class DrawingAreaEventHandler
         //nothing to do
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.workspacemanagement.IWSElementEventsSink#onWSElementNameChanged(org.netbeans.modules.uml.core.workspacemanagement.IWSElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
     */
     public void onWSElementNameChanged(IWSElement element, IResultCell cell)
@@ -1142,7 +1284,9 @@ public class DrawingAreaEventHandler
         //nothing to do
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.workspacemanagement.IWSElementEventsSink#onWSElementPreOwnerChange(org.netbeans.modules.uml.core.workspacemanagement.IWSElement, org.netbeans.modules.uml.core.workspacemanagement.IWSProject, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
     */
     public void onWSElementPreOwnerChange(IWSElement element, IWSProject newOwner, IResultCell cell)
@@ -1150,7 +1294,9 @@ public class DrawingAreaEventHandler
         //nothing to do
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.workspacemanagement.IWSElementEventsSink#onWSElementOwnerChanged(org.netbeans.modules.uml.core.workspacemanagement.IWSElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
     */
     public void onWSElementOwnerChanged(IWSElement element, IResultCell cell)
@@ -1158,7 +1304,9 @@ public class DrawingAreaEventHandler
         //nothing to do
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.workspacemanagement.IWSElementEventsSink#onWSElementPreLocationChanged(org.netbeans.modules.uml.core.workspacemanagement.IWSElement, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
     */
     public void onWSElementPreLocationChanged(IWSElement element, String proposedLocation, IResultCell cell)
@@ -1166,7 +1314,9 @@ public class DrawingAreaEventHandler
         //nothing to do
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.workspacemanagement.IWSElementEventsSink#onWSElementLocationChanged(org.netbeans.modules.uml.core.workspacemanagement.IWSElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
     */
     public void onWSElementLocationChanged(IWSElement element, IResultCell cell)
@@ -1174,7 +1324,9 @@ public class DrawingAreaEventHandler
         //nothing to do
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.workspacemanagement.IWSElementEventsSink#onWSElementPreDataChanged(org.netbeans.modules.uml.core.workspacemanagement.IWSElement, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
     */
     public void onWSElementPreDataChanged(IWSElement element, String newData, IResultCell cell)
@@ -1182,7 +1334,9 @@ public class DrawingAreaEventHandler
         //nothing to do
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.workspacemanagement.IWSElementEventsSink#onWSElementDataChanged(org.netbeans.modules.uml.core.workspacemanagement.IWSElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
     */
     public void onWSElementDataChanged(IWSElement element, IResultCell cell)
@@ -1190,7 +1344,9 @@ public class DrawingAreaEventHandler
         //nothing to do
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.workspacemanagement.IWSElementEventsSink#onWSElementPreDocChanged(org.netbeans.modules.uml.core.workspacemanagement.IWSElement, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
     */
     public void onWSElementPreDocChanged(IWSElement element, String doc, IResultCell cell)
@@ -1198,7 +1354,9 @@ public class DrawingAreaEventHandler
         //nothing to do
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.workspacemanagement.IWSElementEventsSink#onWSElementDocChanged(org.netbeans.modules.uml.core.workspacemanagement.IWSElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
     */
     public void onWSElementDocChanged(IWSElement element, IResultCell cell)
@@ -1206,7 +1364,9 @@ public class DrawingAreaEventHandler
         //nothing to do
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.workspacemanagement.IWSElementEventsSink#onWSElementPreAliasChanged(org.netbeans.modules.uml.core.workspacemanagement.IWSElement, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
     */
     public void onWSElementPreAliasChanged(IWSElement element, String proposedValue, IResultCell cell)
@@ -1214,7 +1374,9 @@ public class DrawingAreaEventHandler
         //nothing to do
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.workspacemanagement.IWSElementEventsSink#onWSElementAliasChanged(org.netbeans.modules.uml.core.workspacemanagement.IWSElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
     */
     public void onWSElementAliasChanged(IWSElement element, IResultCell cell)
@@ -1222,7 +1384,9 @@ public class DrawingAreaEventHandler
         //nothing to do
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAffectedElementEventsSink#onPreImpacted(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier)
     */
     public void onPreImpacted(IClassifier classifier, ETList < IVersionableElement > impacted, IResultCell cell)
@@ -1230,7 +1394,9 @@ public class DrawingAreaEventHandler
         //nothing to do
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAffectedElementEventsSink#onImpacted(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier)
     */
     public void onImpacted(IClassifier classifier, ETList < IVersionableElement > impacted, IResultCell cell)
@@ -1568,7 +1734,9 @@ public class DrawingAreaEventHandler
         //nothing to do
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IRedefinableElementModifiedEventsSink#onPreFinalModified(org.netbeans.modules.uml.core.metamodel.core.foundation.IRedefinableElement, boolean, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
     */
     public void onPreFinalModified(IRedefinableElement element, boolean proposedValue, IResultCell cell)
@@ -1576,7 +1744,9 @@ public class DrawingAreaEventHandler
         // TODO Auto-generated method stub
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IRedefinableElementModifiedEventsSink#onFinalModified(org.netbeans.modules.uml.core.metamodel.core.foundation.IRedefinableElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
     */
     public void onFinalModified(IRedefinableElement element, IResultCell cell)

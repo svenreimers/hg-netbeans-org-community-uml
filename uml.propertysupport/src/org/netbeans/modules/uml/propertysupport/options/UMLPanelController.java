@@ -66,7 +66,9 @@ public class UMLPanelController extends OptionsPanelController {
     private OptionsSupport support = null ;
     private JTabbedPane pane = null ;    
     
-    /**
+    
+
+/**
      * Creates a new instance of UMLPanelController
      */
     public UMLPanelController() {

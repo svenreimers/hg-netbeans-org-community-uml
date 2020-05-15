@@ -48,12 +48,16 @@ import org.dom4j.Document;
 
 public interface IPropertyElementXML extends IPropertyElement
 {
-	/**
+	
+
+/**
 	 * Tells a property element to store itself
 	*/
 	public boolean save( Document pDoc );
 
-	/**
+	
+
+/**
 	 * Tells a property element to remove itself
 	*/
 	public void remove( Document pDoc );

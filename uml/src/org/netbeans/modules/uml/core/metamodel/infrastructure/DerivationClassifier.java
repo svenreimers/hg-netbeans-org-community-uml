@@ -42,11 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : DerivationClassifier.java
- * Created on : Dec 5, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.metamodel.infrastructure;
 
 import org.dom4j.Document;
@@ -68,7 +65,8 @@ public class DerivationClassifier
 {
     IDerivation m_derivation = getDerivation()==null? new Derivation() : getDerivation();
     
-    /**
+    
+/**
      * Establishes the appropriate XML elements for this UML type.
      *
      * [in] The document where this element will reside
@@ -79,7 +77,9 @@ public class DerivationClassifier
         buildNodePresence("UML:DerivationClassifier",doc,parent);
     }
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IVersionableElement#setNode(org.dom4j.Node)
      */
     public void setNode(Node n)
@@ -87,7 +87,9 @@ public class DerivationClassifier
         super.setNode(n);   
     }
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IDerivation#addBinding(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IUMLBinding)
      */
     public void addBinding(IUMLBinding pBind)
@@ -96,7 +98,9 @@ public class DerivationClassifier
 
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IDerivation#getBindings()
      */
     public ETList<IUMLBinding> getBindings()
@@ -104,7 +108,9 @@ public class DerivationClassifier
         return m_derivation.getBindings();
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IDerivation#getDerivedClassifier()
      */
     public IClassifier getDerivedClassifier()
@@ -112,7 +118,9 @@ public class DerivationClassifier
         return m_derivation.getDerivedClassifier();
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IParameterableElement#getTemplate()
      */
     public IClassifier getTemplate()
@@ -120,7 +128,9 @@ public class DerivationClassifier
         return m_derivation.getTemplate();
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IDerivation#removeBinding(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IUMLBinding)
      */
     public void removeBinding(IUMLBinding pBind)
@@ -128,7 +138,9 @@ public class DerivationClassifier
         m_derivation.removeBinding(pBind);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IDerivation#setDerivedClassifier(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier)
      */
     public void setDerivedClassifier(IClassifier value)
@@ -136,7 +148,9 @@ public class DerivationClassifier
         m_derivation.setDerivedClassifier(value);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IParameterableElement#setTemplate(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier)
      */
     public void setTemplate(IClassifier classifier)
@@ -144,7 +158,9 @@ public class DerivationClassifier
         m_derivation.setTemplate(classifier);
     }
 
-    /**
+    
+
+/**
      * @param elem
      */
     public void addSource(IElement elem)
@@ -152,7 +168,9 @@ public class DerivationClassifier
         m_derivation.addSource(elem);
     }
 
-    /**
+    
+
+/**
      * @param elem
      */
     public void addTarget(IElement elem)
@@ -160,7 +178,9 @@ public class DerivationClassifier
         m_derivation.addTarget(elem);
     }
 
-    /**
+    
+
+/**
      * @return
      */
     public INamedElement getClient()
@@ -168,7 +188,9 @@ public class DerivationClassifier
         return m_derivation.getClient();
     }
 
-    /**
+    
+
+/**
      * 
      */
     public ETList<IElement> getRelatedElements()
@@ -176,7 +198,9 @@ public class DerivationClassifier
         return m_derivation.getRelatedElements();
     }
 
-    /**
+    
+
+/**
      * @return
      */
     public long getSourceCount()
@@ -184,7 +208,9 @@ public class DerivationClassifier
         return m_derivation.getSourceCount();
     }
 
-    /**
+    
+
+/**
      * 
      */
     public ETList<IElement> getSources()
@@ -192,7 +218,9 @@ public class DerivationClassifier
         return m_derivation.getSources();
     }
 
-    /**
+    
+
+/**
      * @return
      */
     public INamedElement getSupplier()
@@ -200,7 +228,9 @@ public class DerivationClassifier
         return m_derivation.getSupplier();
     }
 
-    /**
+    
+
+/**
      * @return
      */
     public long getTargetCount()
@@ -208,7 +238,9 @@ public class DerivationClassifier
         return m_derivation.getTargetCount();
     }
 
-    /**
+    
+
+/**
      * 
      */
     public ETList<IElement> getTargets()
@@ -216,7 +248,9 @@ public class DerivationClassifier
         return m_derivation.getTargets();
     }
 
-    /**
+    
+
+/**
      * @param elem
      */
     public void removeSource(IElement elem)
@@ -224,7 +258,9 @@ public class DerivationClassifier
         m_derivation.removeSource(elem);
     }
 
-    /**
+    
+
+/**
      * @param elem
      */
     public void removeTarget(IElement elem)
@@ -232,7 +268,9 @@ public class DerivationClassifier
         m_derivation.removeTarget(elem);
     }
 
-    /**
+    
+
+/**
      * @param elem
      */
     public void setClient(INamedElement elem)
@@ -240,7 +278,9 @@ public class DerivationClassifier
         m_derivation.setClient(elem);
     }
 
-    /**
+    
+
+/**
      * @param elem
      */
     public void setSupplier(INamedElement elem)

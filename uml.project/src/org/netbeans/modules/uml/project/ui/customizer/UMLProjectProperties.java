@@ -163,7 +163,9 @@ public class UMLProjectProperties
         init(); // Load known properties
     }
     
-    /** Initializes the visual models
+    
+
+/** Initializes the visual models
      */
     public void init()
     {
@@ -296,7 +298,9 @@ public class UMLProjectProperties
             updateHelper.getAntProjectHelper(),referencedJavaProjectModel.getProject());
     }
 
-    /** Finds out what are new and removed project dependencies and
+    
+
+/** Finds out what are new and removed project dependencies and
      * applyes the info to the project
      */
     private void resolveProjectDependencies()

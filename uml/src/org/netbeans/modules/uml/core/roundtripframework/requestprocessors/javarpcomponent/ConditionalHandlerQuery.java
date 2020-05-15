@@ -42,6 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
+
+
 /*
  * Created on Oct 30, 2003
  *
@@ -68,7 +70,7 @@ public class ConditionalHandlerQuery extends HandlerQuery implements IConditiona
 	{
 		super(queryKey, textID, titleID, defaultAnswer, iconType, silent, persist);
 		
-		//Aztec: The string should be loaded from a resource bundle 
+		
 		//m_CheckText = checkTextID;
 	}
 	

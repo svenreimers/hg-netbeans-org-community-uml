@@ -49,62 +49,86 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 public interface IRedefinableElement extends INamedElement
 {
-  /**
+  
+
+/**
    * Sets / Gets the final flag on this element. If true, this redefinable element can not be further redefined. The default value is false.
   */
   public boolean getIsFinal();
 
-  /**
+  
+
+/**
    * Sets / Gets the final flag on this element. If true, this redefinable element can not be further redefined. The default value is false.
   */
   public void setIsFinal( boolean value );
 
-  /**
+  
+
+/**
    * Adds an element that will be redefined by this element.
   */
   public long addRedefinedElement( IRedefinableElement element );
 
-  /**
+  
+
+/**
    * Removes an element that is being redefined by this element.
   */
   public long removeRedefinedElement( IRedefinableElement element );
 
-  /**
+  
+
+/**
    * Retrieves the collection of elements that are currently being redefined by this element.
   */
   public ETList<IRedefinableElement> getRedefinedElements();
 
-  /**
+  
+
+/**
    * Adds an element that is redefining this element.
   */
   public long addRedefiningElement( IRedefinableElement element );
 
-  /**
+  
+
+/**
    * Removes an element that is redefining this element.
   */
   public long removeRedefiningElement( IRedefinableElement element );
 
-  /**
+  
+
+/**
    * Retrieves the collection of elements that are currently redefining this element.
   */
   public ETList<IRedefinableElement> getRedefiningElements();
 
-  /**
+  
+
+/**
    * .
   */
   public long getRedefinedElementCount();
 
-  /**
+  
+
+/**
    * .
   */
   public long getRedefiningElementCount();
 
-  /**
+  
+
+/**
    * Determines if this element is being redefined by some other element..
   */
   public boolean getIsRedefined();
 
-  /**
+  
+
+/**
    * Determines if this element is being redefined by some other element..
   */
   public boolean getIsRedefining();

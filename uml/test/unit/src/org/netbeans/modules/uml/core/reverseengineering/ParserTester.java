@@ -44,11 +44,8 @@
 
 
 
-/*
- * File       : ParserTester.java
- * Created on : Feb 3, 2004
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.reverseengineering;
 
 import org.netbeans.modules.uml.core.AbstractUMLTestCase;

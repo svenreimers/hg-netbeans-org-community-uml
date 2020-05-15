@@ -45,6 +45,7 @@
 package org.netbeans.modules.uml.core.metamodel.core.foundation;
 
 
+
 /**
  * <p>Title: </p>
  * <p>Description: </p>

@@ -47,12 +47,16 @@ package org.netbeans.modules.uml.ui.controls.newdialog;
 
 public interface ISilentDialog
 {
-	/**
+	
+
+/**
 	 * Should this dialog actually display?
 	*/
 	public boolean getRunSilent();
 
-	/**
+	
+
+/**
 	 * Should this dialog actually display?
 	*/
 	public void setRunSilent( boolean value );

@@ -170,7 +170,9 @@ public class ImportedElementNode extends FilterNode implements ImportedElementCo
         return (item != null) ? item.getModelElementXMIID() : "";
     }
 
-    /**
+    
+
+/**
      *  override FilterNode.Children to provide custom logic for sub nodes of
      *  imported element. Delete action is disabled on those sub nodes to prevent
      *  user from removing model elements inadvertently from imported projects

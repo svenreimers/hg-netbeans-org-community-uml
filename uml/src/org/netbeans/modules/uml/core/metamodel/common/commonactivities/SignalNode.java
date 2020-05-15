@@ -42,11 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : SignalNode.java
- * Created on : Sep 17, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.metamodel.common.commonactivities;
 
 import org.dom4j.Document;
@@ -63,7 +60,8 @@ public class SignalNode extends ObjectNode implements ISignalNode
     {
         buildNodePresence("UML:SignalNode", doc, node);
     }   
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactivities.ISignalNode#getSignal()
      */
     public ISignal getSignal()
@@ -72,7 +70,9 @@ public class SignalNode extends ObjectNode implements ISignalNode
         return cl instanceof ISignal? (ISignal) cl : null;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactivities.ISignalNode#setSignal(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ISignal)
      */
     public void setSignal(ISignal signal)

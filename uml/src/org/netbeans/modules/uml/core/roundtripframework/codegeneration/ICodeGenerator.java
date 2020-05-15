@@ -49,7 +49,9 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 public interface ICodeGenerator
 {
-	/**
+	
+
+/**
 	 * Generates code specific to the language passed in for the elements passed in.
 	*/
 	public void generateCode( String languageName, ETList<IElement> elements );

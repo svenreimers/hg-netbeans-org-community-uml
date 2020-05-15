@@ -70,7 +70,9 @@ public class SaveNotifierOkCancel
         return instance;
     }
     
-    /**
+    
+
+/**
      * Creates a new instance of SaveNotifier
      */
     private SaveNotifierOkCancel() 

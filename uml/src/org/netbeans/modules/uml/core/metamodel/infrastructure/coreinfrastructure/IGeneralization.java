@@ -49,32 +49,44 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElement;
 
 public interface IGeneralization extends IDirectedRelationship, INamedElement
 {
-	/**
+	
+
+/**
 	 * property Specific
 	*/
 	public IClassifier getSpecific();
 
-	/**
+	
+
+/**
 	 * property Specific
 	*/
 	public void setSpecific( IClassifier specific );
 
-	/**
+	
+
+/**
 	 * property General
 	*/
 	public IClassifier getGeneral();
 
-	/**
+	
+
+/**
 	 * property General
 	*/
 	public void setGeneral( IClassifier general );
 
-	/*
+	
+
+/*
 	 * Returns the xmiid of the specific model element
 	 */
 	public String getSpecificXMIID();
 
-	/*
+	
+
+/*
 	 * Returns the xmiid of the general model element
 	 */
 	public String getGeneralXMIID();

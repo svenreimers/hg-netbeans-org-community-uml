@@ -58,166 +58,230 @@ import org.netbeans.modules.uml.core.workspacemanagement.IWSProject;
 
 public interface IProject extends IModel, ITwoPhaseCommit
 {
-	/**
+	
+
+/**
 	 * Retrieves the document that holds the data of the project.
 	*/
 	public Document getDocument();
 
-	/**
+	
+
+/**
 	 * Retrieves the document that holds the data of the project.
 	*/
 	public void setDocument( Document value );
 
-	/**
+	
+
+/**
 	 * Saves this Project to the location specified.
 	*/
 	public void save( String fileName, boolean remember );
 
-	/**
+	
+
+/**
 	 * Sets / Gets the name of the file this project will be saved to.
 	*/
 	public String getFileName();
 
-	/**
+	
+
+/**
 	 * Sets / Gets the name of the file this project will be saved to.
 	*/
 	public void setFileName( String value );
 
-	/**
+	
+
+/**
 	 * Gets the directory where this project will be saved to.
 	*/
 	public String getBaseDirectory();
 
-	/**
+	
+
+/**
 	 * Pulls in the default package imports for this project. This is called by default by the Application.
 	*/
 	public boolean loadDefaultImports();
 
-	/**
+	
+
+/**
 	 * Sets / Gets the name of the mode this project is in.
 	*/
 	public String getMode();
 
-	/**
+	
+
+/**
 	 * Sets / Gets the name of the mode this project is in.
 	*/
 	public void setMode( String value );
 
-	/**
+	
+
+/**
 	 * Sets / Gets the name of the language to use for this project when in Implementation mode.
 	*/
 	public String getDefaultLanguage();
 
-	/**
+	
+
+/**
 	 * Sets / Gets the name of the language to use for this project when in Implementation mode.
 	*/
 	public void setDefaultLanguage( String value );
 
-	/**
+	
+
+/**
 	 * The object responsible for handling the maintenance and purging of deleted items.
 	*/
 	public IElementDisposal getElementDisposal();
 
-	/**
+	
+
+/**
 	 * The object responsible for handling the maintenance and purging of deleted items.
 	*/
 	public void setElementDisposal( IElementDisposal value );
 
-	/**
+	
+
+/**
 	 * The ID that identifies this Project in the SC tool.
 	*/
 	public String getSourceControlID();
 
-	/**
+	
+
+/**
 	 * The ID that identifies this Project in the SC tool.
 	*/
 	public void setSourceControlID( String value );
 
-	/**
+	
+
+/**
 	 * Extracts the passed in element from the Projects document, allowing for Version control.
 	*/
 	public void extractElement( IElement element );
 
-	/**
+	
+
+/**
 	 * The TypeManager associated with this Project.
 	*/
 	public ITypeManager getTypeManager();
 
-	/**
+	
+
+/**
 	 * Gets the language to use for this project when in Implementation mode.
 	*/
 	public ILanguage getDefaultLanguage2();
 
-	/**
+	
+
+/**
 	 * Retrieves the WSProject that corresponds with this IProject.
 	*/
 	public IWSProject getWSProject();
 
-	/**
+	
+
+/**
 	 * Returns the child item dirty flag.
 	*/
 	public boolean getChildrenDirty();
 
-	/**
+	
+
+/**
 	 * Returns the child item dirty flag.
 	*/
 	public void setChildrenDirty( boolean value );
 
         
         public boolean getDirty();
-	/**
+	
+
+/**
 	 * Closes this Project. The Project object should not be used after this method is called
 	*/
 	public void close();
 
-	/**
+	
+
+/**
 	 * Adds an absolute path to an external library to this Project
 	*/
 	public void addReferencedLibrary( String libLocation );
 
-	/**
+	
+
+/**
 	 * Removes the location of a referenced library from this Project's list of libraries.
 	*/
 	public void removeReferencedLibrary( String libLocation );
 
-	/**
+	
+
+/**
 	 * The collection of locations of libraries this Project references.
 	*/
 	public ETList<String> getReferencedLibraries();
 
-	/**
+	
+
+/**
 	 * Sets the Project into more of a reference mode, turning off roundtrip behaviors.
 	*/
 	public boolean getLibraryState();
 
-	/**
+	
+
+/**
 	 * Sets the Project into more of a reference mode, turning off roundtrip behaviors.
 	*/
 	public void setLibraryState( boolean value );
 
-	/**
+	
+
+/**
 	 * Retrieves the referenced library with the passed in location.
 	*/
 	public IProject getReferencedLibraryProjectByLocation( String refLibLoc );
 
-	/**
+	
+
+/**
 	 * Retrieves all the referenced libraries associated with this Project.
 	*/
 	public ETList<IProject> getReferencedLibraryProjects();
 
 	public void prepareNode();
     
-    /**
+    
+
+/**
      * Add an element that must be removed before project is saved.
      */
     public void addRemoveOnSave(IElement element);
 	
-    /**
+    
+
+/**
      * Sets the source roots that is associated with the project.
      */
     public void setAssociatedProjectSourceRoots(IAssociatedProjectSourceRoots sourceRoots);
     
-    /**
+    
+
+/**
      * Retrieve the source roots associated with the project.
      */
     public IAssociatedProjectSourceRoots getAssociatedProjectSourceRoots();

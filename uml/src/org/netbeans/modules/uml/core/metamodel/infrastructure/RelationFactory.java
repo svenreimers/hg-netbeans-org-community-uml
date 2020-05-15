@@ -102,12 +102,14 @@ import org.netbeans.modules.uml.core.support.umlutils.ETArrayList;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 import org.netbeans.modules.uml.core.typemanagement.ITypeManager;
 
+
 /*
  */
 public class RelationFactory extends Object implements IRelationFactory 
 {
 
-	/**
+	
+/**
 	 * Creates an implemenation relationship between the client and supplier.  
 	 * The supplier must be an IInterface instance.  If the supplier is not 
 	 * an IInterface it will translated into an IInterface.  If outSupplier 
@@ -181,7 +183,9 @@ public class RelationFactory extends Object implements IRelationFactory
         return new ETPairT<IInterface, IDependency>(outSupplier, dep);
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.IRelationFactory#CreatePresentationReference(IElement, org.netbeans.modules.uml.core.metamodel.core.foundation.IPresentationElement)
 	 */
 	public IPresentationReference createPresentationReference(
@@ -213,7 +217,9 @@ public class RelationFactory extends Object implements IRelationFactory
 		return ref;		
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 */
 	public IReference createReference(
 		IElement referencingElement,
@@ -244,7 +250,9 @@ public class RelationFactory extends Object implements IRelationFactory
 		return ref;		
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.IRelationFactory#createGeneralization(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier)
 	 */
 	public IGeneralization createGeneralization(
@@ -297,7 +305,9 @@ public class RelationFactory extends Object implements IRelationFactory
 		return gen;
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.IRelationFactory#createAssociation(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.metamodel.core.foundation.INamespace)
 	 */
 	public IAssociation createAssociation(
@@ -379,7 +389,9 @@ public class RelationFactory extends Object implements IRelationFactory
 			return assoc;		
 	}
 	
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.IRelationFactory#createAssociation2(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, int, boolean, boolean, org.netbeans.modules.uml.core.metamodel.core.foundation.INamespace)
 	 */
 	public IAssociation createAssociation2(
@@ -459,7 +471,9 @@ public class RelationFactory extends Object implements IRelationFactory
 		return assoc;
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Creates a new Dependency relationship
 	 *
@@ -477,7 +491,9 @@ public class RelationFactory extends Object implements IRelationFactory
 		return createDependency( client, supplier, space, "Dependency");		
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.IRelationFactory#createDependency2(org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElement, org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElement, java.lang.String, org.netbeans.modules.uml.core.metamodel.core.foundation.INamespace)
 	 */
 	public IDependency createDependency2(
@@ -489,7 +505,9 @@ public class RelationFactory extends Object implements IRelationFactory
 		return createDependency( client, supplier, space, depType);
 	}
 	
-	/**
+	
+
+/**
 	 *
 	 * Creates the appropriate Dependency relationship
 	 *
@@ -541,7 +559,9 @@ public class RelationFactory extends Object implements IRelationFactory
 	
 
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.IRelationFactory#determineCommonRelations(null)
 	 */
 	public ETList<IRelationProxy> determineCommonRelations(ETList<IElement> elements) 
@@ -549,7 +569,9 @@ public class RelationFactory extends Object implements IRelationFactory
 		return new RelationRetriever(elements).retrieveRelations();
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.IRelationFactory#determineCommonRelations2(java.lang.String, null)
 	 */
 	public ETList<IRelationProxy> determineCommonRelations2(
@@ -559,7 +581,9 @@ public class RelationFactory extends Object implements IRelationFactory
         return new RelationRetriever(pDiagramXMIID, elements).retrieveRelations();
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.IRelationFactory#determineCommonRelations3(null, null)
 	 */
 	public ETList<IRelationProxy> determineCommonRelations3(
@@ -569,7 +593,9 @@ public class RelationFactory extends Object implements IRelationFactory
 		return new RelationRetriever(elements, elementsOnDiagram).retrieveRelations();
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.IRelationFactory#createDerivation(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier)
 	 */
 	public IDerivation createDerivation(IClassifier instanciation,
@@ -603,7 +629,9 @@ public class RelationFactory extends Object implements IRelationFactory
         }
 
 
-	/**
+	
+
+/**
 	 *
 	 * Creates either a PackageImport or ElementImport in the Package namespace of the importingElement.
 	 * If elementToImport is a Package, then a PackageImport is created, else and ElementImport.
@@ -620,7 +648,9 @@ public class RelationFactory extends Object implements IRelationFactory
 		return relFact.createImport(importingElement, elementToImport);
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Translates the enum value into a string.
 	 *
@@ -651,7 +681,9 @@ public class RelationFactory extends Object implements IRelationFactory
 		return assocType;
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Handles the creation and setting of the appropriate ends
 	 * on the passed in Aggregation.
@@ -705,7 +737,9 @@ public class RelationFactory extends Object implements IRelationFactory
 		return hr;
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Creates either a navigable or normal association end.
 	 *
@@ -737,7 +771,9 @@ public class RelationFactory extends Object implements IRelationFactory
 		return end;
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Creates an AssociationEnd of the type specified.
 	 *
@@ -784,7 +820,9 @@ public class RelationFactory extends Object implements IRelationFactory
 	}
 
 
-	/**
+	
+
+/**
 	 *
 	 * Creates a NavigableEnd object, setting the participant on the end.
 	 *
@@ -814,7 +852,9 @@ public class RelationFactory extends Object implements IRelationFactory
 		return end;
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Adds a new AssociationEnd to the passed in Association.
 	 *
@@ -855,7 +895,9 @@ public class RelationFactory extends Object implements IRelationFactory
 		return hr;
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Creates then adds a navigable end to the passed in association.
 	 *
@@ -888,7 +930,9 @@ public class RelationFactory extends Object implements IRelationFactory
 
 		return hr;
 	}
-	/**
+	
+
+/**
 	 *
 	 * Creates the UMLBinding relationships for the formal parameters passed in. Default
 	 * types will be used for the bindings, unless a type constraint is dictated.
@@ -939,7 +983,9 @@ public class RelationFactory extends Object implements IRelationFactory
             }
         }
 	
-	/**
+	
+
+/**
 	 *
 	 * Retrieves a parameterable element that can be used for a default binding to a formal template
 	 * parameter
@@ -967,7 +1013,9 @@ public class RelationFactory extends Object implements IRelationFactory
 		return parm;
 	}
 	
-	/**
+	
+
+/**
 	 *
 	 * Finds the passed in type in the document that holds the passed in classifier
 	 *

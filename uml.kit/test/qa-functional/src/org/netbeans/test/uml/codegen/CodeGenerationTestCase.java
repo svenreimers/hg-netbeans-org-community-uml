@@ -43,6 +43,8 @@
  */
 
 
+
+
 /*
  * CodeGenerationTestCase.java
  *
@@ -197,7 +199,9 @@ public class CodeGenerationTestCase extends UMLTestCase{
         
         String path = "";
         
-        /*
+        
+
+/*
         StringTokenizer tokenizer = new StringTokenizer(javaElem.getFullName(),".");
          
         path += tokenizer.nextToken();

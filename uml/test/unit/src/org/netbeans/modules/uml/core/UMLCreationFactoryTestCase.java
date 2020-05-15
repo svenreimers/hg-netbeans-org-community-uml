@@ -48,6 +48,8 @@ package org.netbeans.modules.uml.core;
 import org.netbeans.modules.uml.core.AbstractUMLTestCase;
 
 
+
+
 /**
  * Test cases for UMLCreationFactory.
  */

@@ -46,6 +46,8 @@
 package org.netbeans.modules.uml.core.reverseengineering.reframework;
 
 
+
+
 /**
  * Test cases for REDestroyAction.
  */
@@ -58,7 +60,9 @@ public class REDestroyActionTestCase extends AbstractRETestCase
 
     private REDestroyAction reda;
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see junit.framework.TestCase#setUp()
      */
     protected void setUp() throws Exception

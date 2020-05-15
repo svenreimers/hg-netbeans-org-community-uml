@@ -59,7 +59,9 @@ public class ActionOccurrence extends ExecutionOccurrence
         buildNodePresence("UML:ActionOccurrence", doc, node);
     }
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IActionOccurrence#getAction()
      */
     public IAction getAction()
@@ -68,7 +70,9 @@ public class ActionOccurrence extends ExecutionOccurrence
             retrieveSingleElementWithAttrID(this, "action", IAction.class);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IActionOccurrence#setAction(org.netbeans.modules.uml.core.metamodel.basic.basicactions.IAction)
      */
     public void setAction(IAction value)
@@ -76,7 +80,9 @@ public class ActionOccurrence extends ExecutionOccurrence
         setElement(value, "action");
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IActionOccurrence#getContainingExecOccurrence()
      */
     public IExecutionOccurrence getContainingExecOccurrence()
@@ -85,7 +91,9 @@ public class ActionOccurrence extends ExecutionOccurrence
             retrieveSingleElementWithAttrID(this, "containing", IExecutionOccurrence.class);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IActionOccurrence#setContainingExecOccurrence(org.netbeans.modules.uml.core.metamodel.dynamics.IExecutionOccurrence)
      */
     public void setContainingExecOccurrence(IExecutionOccurrence value)

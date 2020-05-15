@@ -43,11 +43,8 @@
  */
 
 
-/*
- * File       : ArrayDeclartorExpression.java
- * Created on : Dec 8, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.expression;
 
 import org.dom4j.Node;
@@ -63,6 +60,7 @@ import org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.transl
 import org.netbeans.modules.uml.core.reverseengineering.reframework.IREClass;
 import org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ITokenDescriptor;
 
+
 /**
  *
  * Window - Preferences - Java - Code Generation - Code and Comments
@@ -76,7 +74,9 @@ public class ArrayDeclartorExpression extends ExpressionStateHandler {
         m_pPostIndexOperator = null;
     }
     
-    /**
+    
+
+/**
      * Create a new state handler to be added to the state mechanism.  If the
      * state is not a state that is being processed then a new state handler is
      * not created.
@@ -91,7 +91,9 @@ public class ArrayDeclartorExpression extends ExpressionStateHandler {
         
     }
     
-        /* (non-Javadoc)
+        
+
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.expression.IArrayDeclartorExpression#getEndPosition()
          */
     public long getEndPosition() {
@@ -103,7 +105,9 @@ public class ArrayDeclartorExpression extends ExpressionStateHandler {
         return retVal;
     }
     
-        /* (non-Javadoc)
+        
+
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.expression.IArrayDeclartorExpression#getStartLine()
          */
     public long getStartLine() {
@@ -114,7 +118,9 @@ public class ArrayDeclartorExpression extends ExpressionStateHandler {
         return retVal;
     }
     
-        /* (non-Javadoc)
+        
+
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.expression.IArrayDeclartorExpression#getStartPosition()
          */
     
@@ -126,14 +132,18 @@ public class ArrayDeclartorExpression extends ExpressionStateHandler {
         return retVal;
     }
     
-        /* (non-Javadoc)
+        
+
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.expression.IArrayDeclartorExpression#initialize()
          */
     public void initialize() {
         // Not implemented In C++ Code...
     }
     
-        /* (non-Javadoc)
+        
+
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.expression.IArrayDeclartorExpression#processToken(org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ITokenDescriptor, java.lang.String)
          */
     public void processToken(ITokenDescriptor pToken, String language) {
@@ -152,7 +162,9 @@ public class ArrayDeclartorExpression extends ExpressionStateHandler {
         }
     }
     
-        /* (non-Javadoc)
+        
+
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.expression.IArrayDeclartorExpression#writeAsXMI(org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.expression.InstanceRef, org.dom4j.Node, org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.expression.SymbolTable, org.netbeans.modules.uml.core.reverseengineering.reframework.IREClass, org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.IREClassLoader)
          */
     public ETPairT<InstanceInformation, Node> writeAsXMI(InstanceInformation pInfo,
@@ -222,7 +234,9 @@ public class ArrayDeclartorExpression extends ExpressionStateHandler {
         return retVal;
     }
     
-    /**
+    
+
+/**
      * Sends out the UMLParser operaiton details events that represent the
      * expression data.
      *

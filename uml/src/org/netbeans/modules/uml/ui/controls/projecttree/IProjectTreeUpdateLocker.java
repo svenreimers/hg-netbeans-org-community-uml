@@ -49,7 +49,9 @@ package org.netbeans.modules.uml.ui.controls.projecttree;
 
 public interface IProjectTreeUpdateLocker
 {
-	/**
+	
+
+/**
 	 * This method stops all drawing in the project tree until unlocked by destruction of this object.
 	*/
 	public void lockTree( IProjectTreeControl pControl );

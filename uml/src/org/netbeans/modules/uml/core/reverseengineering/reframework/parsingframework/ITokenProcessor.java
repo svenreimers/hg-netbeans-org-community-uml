@@ -46,7 +46,9 @@ package org.netbeans.modules.uml.core.reverseengineering.reframework.parsingfram
 
 public interface ITokenProcessor
 {
-	/**
+	
+
+/**
 	 * Process the token that has been discovered by the parser.
 	*/
 	public void processToken( ITokenDescriptor pToken, String language );

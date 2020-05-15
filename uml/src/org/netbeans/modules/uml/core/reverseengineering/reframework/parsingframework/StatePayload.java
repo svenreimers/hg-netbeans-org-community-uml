@@ -42,11 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : StatePayload.java
- * Created on : Oct 27, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework;
 
 /**
@@ -55,7 +52,8 @@ public class StatePayload implements IStatePayload
 {
     private Object m_Payload;
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.IStatePayload#getPayload()
      */
     public Object getPayload()
@@ -63,7 +61,9 @@ public class StatePayload implements IStatePayload
         return m_Payload;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.IStatePayload#setPayload(java.lang.Object)
      */
     public void setPayload(Object value)

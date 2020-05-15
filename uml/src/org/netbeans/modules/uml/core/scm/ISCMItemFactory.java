@@ -49,39 +49,46 @@ import org.netbeans.modules.uml.core.metamodel.diagrams.IProxyDiagram;
 import org.netbeans.modules.uml.core.workspacemanagement.IWorkspace;
 import org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem;
 
+
 /**
  * Provides creation facilities for the various ISCMItem types.
  *
  */
 public interface ISCMItemFactory
 {
-   /**
+   
+/**
     * Creates a basic item.
     */
     public ISCMItem createItem(String fileName);
 
-    /**
+    
+/**
      * Creates a workspace item.
      */
     public ISCMWorkspaceItem createWorkspaceItem(IWorkspace workspace);
 
-    /**
+    
+/**
      * Creates a diagram item.
      */
     public ISCMDiagramItem createDiagramItem(IProxyDiagram diagram);
 
-    /**
+    
+/**
      * Creates an element item.
      */
     public ISCMElementItem createElementItem(IElement element);
 
-    /**
+    
+/**
      * Creates the appropriate ISCMItem type based on the contents of the
      * IProjectTreeItem.
      */
     public ISCMItem createItemFromTreeItem(IProjectTreeItem item);
 
-    /**
+    
+/**
      * Creates the appropriate ISCMItem based on what is passed in
      */
     public ISCMItem createSCMItem(Object opaqueType);

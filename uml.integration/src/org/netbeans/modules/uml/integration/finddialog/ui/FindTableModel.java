@@ -101,7 +101,9 @@ public class FindTableModel extends AbstractTableModel implements ISwingPreferen
 		buildColumnMap();
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see javax.swing.table.TableModel#getRowCount()
 	 */
 	public int getRowCount()
@@ -114,7 +116,9 @@ public class FindTableModel extends AbstractTableModel implements ISwingPreferen
 		return retVal;
 	}
 	
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see javax.swing.table.TableModel#getColumnCount()
 	 */
 	public int getColumnCount()
@@ -128,7 +132,9 @@ public class FindTableModel extends AbstractTableModel implements ISwingPreferen
 		return count;
 	}
 	
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see javax.swing.table.TableModel#getColumnName(int)
 	 */
 	public String getColumnName(int arg0)
@@ -142,7 +148,9 @@ public class FindTableModel extends AbstractTableModel implements ISwingPreferen
         return dispColName;              
 	}
 	
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see javax.swing.table.TableModel#getColumnClass(int)
 	 */
 	public Class getColumnClass(int arg0)
@@ -153,7 +161,9 @@ public class FindTableModel extends AbstractTableModel implements ISwingPreferen
             return String.class;
 	}
 	
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see javax.swing.table.TableModel#isCellEditable(int, int)
 	 */
 	public boolean isCellEditable(int arg0, int arg1)
@@ -161,7 +171,9 @@ public class FindTableModel extends AbstractTableModel implements ISwingPreferen
 		return false;
 	}
 	
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see javax.swing.table.TableModel#getValueAt(int, int)
 	 */
 	public Object getValueAt(int row, int col)
@@ -268,21 +280,27 @@ public class FindTableModel extends AbstractTableModel implements ISwingPreferen
 		return retObj;                
 	}
 	
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see javax.swing.table.TableModel#setValueAt(java.lang.Object, int, int)
 	 */
 	public void setValueAt(Object arg0, int arg1, int arg2)
 	{
 	}
 	
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see javax.swing.table.TableModel#addTableModelListener(javax.swing.event.TableModelListener)
 	 */
 	public void addTableModelListener(TableModelListener arg0)
 	{
 	}
 	
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see javax.swing.table.TableModel#removeTableModelListener(javax.swing.event.TableModelListener)
 	 */
 	public void removeTableModelListener(TableModelListener arg0)

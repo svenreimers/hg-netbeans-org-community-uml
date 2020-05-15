@@ -71,6 +71,7 @@ import org.openide.ErrorManager;
 import org.openide.util.Exceptions;
 //import org.netbeans.modules.uml.core.metamodel.structure.IProject;
 //import org.netbeans.modules.uml.core.support.umlsupport.IStrings;
+
 /**
  * <p>Title: </p>
  * <p>Description: </p>
@@ -356,7 +357,9 @@ public class PropertyDefinition implements IPropertyDefinition{
 
   private String m_EnumValues = null;
   
-  /**
+  
+
+/**
    * Some list are actually enumeration list.  The enum values are used to
    * determine the correct value that should be set and retreived.
    */
@@ -365,7 +368,9 @@ public class PropertyDefinition implements IPropertyDefinition{
       m_EnumValues = values;
   }
   
-  /**
+  
+
+/**
    * Some list are actually enumeration list.  The enum values are used to
    * determine the correct value that should be set and retreived.
    *
@@ -377,7 +382,9 @@ public class PropertyDefinition implements IPropertyDefinition{
       return m_EnumValues;
   }
   
-  /**
+  
+
+/**
    * Some list are actually enumeration list.  The enum values are used to
    * determine the correct value that should be set and retreived.
    *
@@ -457,7 +464,9 @@ public class PropertyDefinition implements IPropertyDefinition{
   public void remove() {
   }
 
-  /**
+  
+
+/**
    * Builds a "|" delimited string of representing the path to this definition.  Gets each
    * of its parent definition names and appends to the string
    *
@@ -504,7 +513,9 @@ public long getAttrMapCount() {
     return m_map.size();
   }
 
-  /**
+  
+
+/**
    * Retrieves a particular xml attribute and value from the
    * already built map based on its position
    *
@@ -529,7 +540,9 @@ public void getFromAttrMap(long pos, String name, String value) {
     }
   }
 
-  /**
+  
+
+/**
    * Some of the picklists used by the property editor are common and are built
    * from xpath queries.  This routine executes the xpath query and then gets the
    * name from each element and stores it in a list buffer.
@@ -539,7 +552,9 @@ public void getFromAttrMap(long pos, String name, String value) {
    *
    * @return HRESULT
    */
-  /**
+  
+
+/**
    * Gets a string that represents the data to be inserted into the
    * control for this definition.
    *
@@ -697,7 +712,9 @@ public IStrings getValidValue(IPropertyElement elem){
     return retVal;
   }
 
-  /**
+  
+
+/**
     * Method to navigate up the property element chain to retrieve the first model element in the chain
     *
     * @param[in] pEle       The property element in which to get the model element
@@ -720,7 +737,9 @@ public IStrings getValidValue(IPropertyElement elem){
       return obj;
    }
 
-  /**
+  
+
+/**
    *
    * Determines whether or not pick lists should be shown using fully qualified names
    *
@@ -729,11 +748,13 @@ public IStrings getValidValue(IPropertyElement elem){
    */
 	private boolean isFullyQualified()
 	{
-		//kris richards - "DisplayTypeFSN" pref removed. Set to true
+		
 		return true;
 	}
 	
-	/**
+	
+
+/**
 	 * @return
 	 */
 	private String parseDataTypeList()

@@ -43,15 +43,8 @@
  */
 
 
-/*
- * UMLTestCase.java
- *
- * Created on March 16, 2006, 12:17 PM
- *
- * To change this template, choose Tools | Options and locate the template under
- * the Source Creation and Management node. Right-click the template and choose
- * Open. You can then make changes to the template in the Source Editor.
- */
+
+
 
 package org.netbeans.test.umllib.testcases;
 
@@ -83,7 +76,8 @@ import org.netbeans.junit.NbTestCase;
 public class UMLTestCase extends JellyTestCase {
  
     
-    /**
+    
+/**
      *   XTEST_WORK_DIR - xtest work dir
      */
     public static String XTEST_WORK_DIR = System.getProperty("nbjunit.workdir");
@@ -97,7 +91,9 @@ public class UMLTestCase extends JellyTestCase {
     private static int[] reportedIssues=new int[1024];
     
     /** Creates a new instance of UMLTestCase */
-    /**
+    
+
+/**
      * Need to be defined because of JUnit
      * @param name 
      */
@@ -107,7 +103,7 @@ public class UMLTestCase extends JellyTestCase {
         JFrame mw=(JFrame)(MainWindowOperator.getDefault().getSource());
         if(mw.getToolkit().isFrameStateSupported(JFrame.MAXIMIZED_BOTH))mw.setExtendedState(JFrame.MAXIMIZED_BOTH);
         else MainWindowOperator.getDefault().maximize();
-        //start dialog checkers/ avoid multiple threads creation
+        
         if(exit==null || !exit.isAlive())
         {
             exit=new Thread(new TerminationDialogHandler(TerminationDialogHandler.NON_TERMINATED_PROCESSES_DIALOG,TerminationDialogHandler.NON_TERMINATED_PROCESSES_BUTTON));
@@ -122,7 +118,9 @@ public class UMLTestCase extends JellyTestCase {
         if(nav!=null)new TopComponentOperator(nav).close();
     }
     
-    /**
+    
+
+/**
      * find name for current (executing now) test method
      * should be called directly from method body
      * @return returns current test method name using stacktrace
@@ -132,7 +130,9 @@ public class UMLTestCase extends JellyTestCase {
         return getCurrentTestMethodName(0);
     }
     
-    /**
+    
+
+/**
      * find name for current (executing now) test method
      * can be called directly from method body or from any method called from test method with appropriate stack shift parameter
      * @param addShift adds shift in stack to get correct method
@@ -144,7 +144,9 @@ public class UMLTestCase extends JellyTestCase {
         return Thread.currentThread().getStackTrace()[3+shift+addShift].getMethodName();
     }
     
-    /**
+    
+
+/**
      * find name for current (executing now) test method
      * can be called from any level of stack, methods will find first class folowing test class requirenments
      * test should starts with test, be public, has no argument, return void and should be in class hierarchy with org.netbeans.test.umllib.testcases.UMLTestCase
@@ -216,7 +218,9 @@ public class UMLTestCase extends JellyTestCase {
         ret[1]=methodName;
         return ret;
     }
-    /**
+    
+
+/**
      * find name for currently executing test class, can be called if test class in current stack
      * can be called from any level of stack, methods will find first class folowing test class requirenments
      * public, has no argument, return void and should be in class hierarchy with org.netbeans.test.umllib.testcases.UMLTestCase
@@ -286,7 +290,9 @@ public class UMLTestCase extends JellyTestCase {
         return className;
     }
     
-    /**
+    
+
+/**
      * class works until MainWindow is showing and wait for different times of dialogs
      * if it find dialog it waits some time and close if it's unhandled by tests after some timeout
      */
@@ -311,7 +317,9 @@ public class UMLTestCase extends JellyTestCase {
         final static public String SAVE_UNSAVED_DATA_DIALOG="Save";
         final static public String SAVE_UNSAVED_DATA_BUTTON="Save All";
         
-        /**
+        
+
+/**
          * 
          * @param dlg 
          * @param btn 
@@ -321,7 +329,9 @@ public class UMLTestCase extends JellyTestCase {
             String tmp[]={btn};
             init(dlg,tmp,DEFAULT_TIMEOUT);
         }
-        /**
+        
+
+/**
          * 
          * @param dlg 
          * @param btn 
@@ -332,10 +342,14 @@ public class UMLTestCase extends JellyTestCase {
             String tmp[]={btn};
             init(dlg,tmp,waitUntilSave);
         }
-        /*
+        
+
+/*
          * if press on i-throws button do not close the window, next time tries to press i+1-th button
          */
-        /**
+        
+
+/**
          * 
          * @param dlg 
          * @param btn 
@@ -344,7 +358,9 @@ public class UMLTestCase extends JellyTestCase {
         {
             init(dlg,btn,DEFAULT_TIMEOUT);
         }
-        /**
+        
+
+/**
          * 
          * @param dlg 
          * @param btn 
@@ -433,7 +449,9 @@ public class UMLTestCase extends JellyTestCase {
         }
      }
    
-    /**
+    
+
+/**
      * choose JDialog with appropriate exaqct title and appropriate exact button within
      */
     class ChooseDialogByTitleAndButton implements ComponentChooser
@@ -441,7 +459,9 @@ public class UMLTestCase extends JellyTestCase {
         private String title;
         private String btn[];
         
-        /**
+        
+
+/**
          * 
          * @param ttl 
          * @param bt 
@@ -452,7 +472,9 @@ public class UMLTestCase extends JellyTestCase {
             btn=bt;
         }
         
-        /**
+        
+
+/**
          * 
          * @return 
          */
@@ -461,7 +483,9 @@ public class UMLTestCase extends JellyTestCase {
             return "find dialog with "+title+" title and buttons "+btn;
         }
         
-        /**
+        
+
+/**
          * 
          * @param component 
          * @return 
@@ -484,31 +508,41 @@ public class UMLTestCase extends JellyTestCase {
         }
     }
     
-    /**
+    
+
+/**
      * Backward  compartibility section
      */
-    /**
+    
+
+/**
      * @deprecated use failByBug method directly
      */
     public void assertTrue(int bugId,String message,boolean condition)
     {
         if(!condition)failByBug(bugId,message);
     }
-    /**
+    
+
+/**
      * @deprecated use failByBug method directly
      */
     public void assertFalse(int bugId,String message,boolean condition)
     {
         if(condition)failByBug(bugId,message);
     }
-     /**
+     
+
+/**
      * @deprecated use failByBug method directly
      */
     public void fail(int bugId,String message)
     {
         failByBug(bugId,message);
     }
-     /**
+     
+
+/**
      * @deprecated use failByBug method directly
      */
     public void fail(int bugId)

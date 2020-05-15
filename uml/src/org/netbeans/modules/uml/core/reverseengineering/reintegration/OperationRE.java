@@ -42,11 +42,7 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : OperationRE.java
- * Created on : Dec 19, 2003
- * Author     : Aztec
- */
+
 package org.netbeans.modules.uml.core.reverseengineering.reintegration;
 
 import java.util.HashMap;
@@ -166,7 +162,8 @@ public class OperationRE implements IOperationRE
       return nParsingState;
    }
 
-   /**
+   
+/**
     * Use the ElementLocator to find the lifeline under the member interaction
     */
    public ILifeline findLifelineInInteraction(String bstrLifelineName)
@@ -349,7 +346,8 @@ public class OperationRE implements IOperationRE
          }
       }
 
-      /*IOperation cpOperation = null;
+      
+/*IOperation cpOperation = null;
       IClassifier cpClassifier = getClassifier(classifierName);
       if( cpClassifier != null)
       {
@@ -775,7 +773,7 @@ public class OperationRE implements IOperationRE
             if (retVal == null) {
                 IDataType cpDataType = (cpClassifier instanceof IDataType) ? (IDataType)cpClassifier : null;
                 
-                //kris richards - CreateOperation pref deleted. Set to true.
+                
                 // ... and the classifier is an IDataType or the preference is to create new operations,
                 // create a new method
                 
@@ -812,7 +810,8 @@ public class OperationRE implements IOperationRE
       return retVal;
    }
 
-   /**
+   
+/**
     * Retrieves the one & only super class from the lifeline's representing classifier
     */
    private IClassifier getSuperOfRepresentingClassifier(ILifeline pLifeline)
@@ -838,7 +837,8 @@ public class OperationRE implements IOperationRE
       return ppClassifier;
    }
 
-   /**
+   
+/**
     * Retreives the 1st operation in the input classifier's hierarchy that has the same name
     */
    protected IOperation findOperationOfSameName(IClassifier pClassifier, String methodName)
@@ -872,7 +872,8 @@ public class OperationRE implements IOperationRE
       return ppOperation;
    }
 
-   /**
+   
+/**
     * Transfer the parameters from the Parsed event's operation to the input operation
     */
    private void copyREOperationParameters(IREOperation pREOperation, IOperation pOperation)
@@ -938,7 +939,8 @@ public class OperationRE implements IOperationRE
        
    }
    
-   /**
+   
+/**
     * Transfer the arguments from the Parsed event to the input operation
     */
    private void copyREArgumentsAsParameters(IMethodEvent pEvent, IOperation pOperation)
@@ -971,7 +973,8 @@ public class OperationRE implements IOperationRE
       }
    }
 
-   /**************************************************************************
+   
+/**************************************************************************
     ************************** Implemented Methods **************************/
 
    /**
@@ -982,7 +985,8 @@ public class OperationRE implements IOperationRE
       return m_cpInteraction;
    }
 
-   /**
+   
+/**
     * The lifeline used to represent self (this)
     */
    public ILifeline getSelfLifeline()
@@ -990,7 +994,8 @@ public class OperationRE implements IOperationRE
       return getThisLifeline();
    }
 
-   /**
+   
+/**
     * The parent IUMLParsingIntegrator
     */
    public IUMLParsingIntegrator getUMLParsingIntegrator()
@@ -998,7 +1003,8 @@ public class OperationRE implements IOperationRE
       return m_cpIntegrator;
    }
 
-   /**
+   
+/**
     * The interaction used to add the parsed information
     */
    public void setInteraction(IInteraction pInteraction)
@@ -1013,7 +1019,8 @@ public class OperationRE implements IOperationRE
       pushInteractionFragment(m_cpInteraction);
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.reverseengineering.reintegration.IOperationRE#setSelfLifeline(org.netbeans.modules.uml.core.metamodel.dynamics.ILifeline)
     */
    public void setSelfLifeline(ILifeline pLifeline)
@@ -1021,7 +1028,8 @@ public class OperationRE implements IOperationRE
       m_cpThisLifeline = pLifeline;
    }
 
-   /**
+   
+/**
     * The parent IUMLParsingIntegrator
     */
    public void setUMLParsingIntegrator(IUMLParsingIntegrator pIntegrator)
@@ -1029,7 +1037,8 @@ public class OperationRE implements IOperationRE
       m_cpIntegrator = pIntegrator;
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.IUMLParserOperationEventSink#onBeginClause(org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
     */
    public void onBeginClause(IResultCell cell)
@@ -1042,7 +1051,8 @@ public class OperationRE implements IOperationRE
       createInteractionOperand();
    }
 
-   /**
+   
+/**
     * Notifies the listeners that the parser is about to start processing an 
     * initialization section of a combined fragment.
     *
@@ -1059,7 +1069,8 @@ public class OperationRE implements IOperationRE
       createCombinedFragment(BaseElement.IO_ALT);
    }
 
-   /**
+   
+/**
     * Notifies the listeners that the parser is about to start processing an 
     * initialization section of a critical section.
     *
@@ -1077,7 +1088,8 @@ public class OperationRE implements IOperationRE
       createInteractionOperand();
    }
 
-   /**
+   
+/**
     * Notifies the listeners that the parser is about to start processing an 
     * initialization section of a combined fragment.
     *
@@ -1099,7 +1111,8 @@ public class OperationRE implements IOperationRE
       createInteractionOperand();
    }
 
-   /**
+   
+/**
     * Notifies the listeners that the parser is about to start processing an 
     * initialization section of a combined fragment.
     *
@@ -1117,7 +1130,8 @@ public class OperationRE implements IOperationRE
       createInteractionOperand();
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.IUMLParserOperationEventSink#onBeginInitialize(org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
     */
    public void onBeginInitialize(IResultCell cell)
@@ -1130,7 +1144,8 @@ public class OperationRE implements IOperationRE
       m_parsingStates.push(new Integer(IParsingState.OPS_INITIALIZE));
    }
 
-   /**
+   
+/**
     * Notifies the listeners that the parser is about to start processing an 
     * initialization section of a combined fragment.
     *
@@ -1148,7 +1163,8 @@ public class OperationRE implements IOperationRE
       createInteractionOperand();
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.IUMLParserOperationEventSink#onBeginPostProcessing(org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
     */
    public void onBeginPostProcessing(IResultCell cell)
@@ -1161,7 +1177,8 @@ public class OperationRE implements IOperationRE
       m_parsingStates.push(new Integer(IParsingState.OPS_POST_PROCESSING));
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.IUMLParserOperationEventSink#onBeginRaisedException(org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
     */
    public void onBeginRaisedException(IResultCell cell)
@@ -1173,7 +1190,8 @@ public class OperationRE implements IOperationRE
          throw new NullPointerException();
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.IUMLParserOperationEventSink#onBeginTest(org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
     */
    public void onBeginTest(IResultCell cell)
@@ -1186,7 +1204,8 @@ public class OperationRE implements IOperationRE
       m_parsingStates.push(new Integer(IParsingState.OPS_TEST));
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.IUMLParserOperationEventSink#onBinaryOperator(org.netbeans.modules.uml.core.reverseengineering.reframework.IREBinaryOperator, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
     */
    public void onBinaryOperator(IREBinaryOperator event, IResultCell cell)
@@ -1197,7 +1216,8 @@ public class OperationRE implements IOperationRE
          throw new NullPointerException();
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.IUMLParserOperationEventSink#onConditional(org.netbeans.modules.uml.core.reverseengineering.reframework.IREConditional, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
     */
    public void onConditional(IREConditional event, IResultCell cell)
@@ -1208,7 +1228,8 @@ public class OperationRE implements IOperationRE
          throw new NullPointerException();
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.IUMLParserOperationEventSink#onCreateAction(org.netbeans.modules.uml.core.reverseengineering.reframework.ICreationEvent, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
     */
    public void onCreateAction(ICreationEvent event, IResultCell cell)
@@ -1282,14 +1303,16 @@ public class OperationRE implements IOperationRE
       }
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.IUMLParserOperationEventSink#onCriticalSection(org.netbeans.modules.uml.core.reverseengineering.reframework.IRECriticalSection, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
     */
    public void onCriticalSection(IRECriticalSection event, IResultCell cell)
    {
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.IUMLParserOperationEventSink#onDestroyAction(org.netbeans.modules.uml.core.reverseengineering.reframework.IDestroyEvent, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
     */
    public void onDestroyAction(IDestroyEvent event, IResultCell cell)
@@ -1316,7 +1339,8 @@ public class OperationRE implements IOperationRE
       }
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.IUMLParserOperationEventSink#onEndClause(org.netbeans.modules.uml.core.reverseengineering.reframework.IREClause, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
     */
    public void onEndClause(IREClause pEvent, IResultCell cell)
@@ -1343,7 +1367,8 @@ public class OperationRE implements IOperationRE
          m_stackInteractionFragments.pop();
    }
 
-   /**
+   
+/**
     * Notifies the listeners that the parser is about to start processing an 
     * initialization section of a combined fragment.
     *
@@ -1361,7 +1386,8 @@ public class OperationRE implements IOperationRE
          m_stackCombinedFragments.pop();
    }
 
-   /**
+   
+/**
     * Notifies the listeners that the parser is about to start processing an 
     * initialization section of a critical section.
     *
@@ -1384,7 +1410,8 @@ public class OperationRE implements IOperationRE
       }
    }
 
-   /**
+   
+/**
     * Notifies the listeners that the parser is about to start processing an 
     * initialization section of a combined fragment.
     *
@@ -1411,7 +1438,8 @@ public class OperationRE implements IOperationRE
       }
    }
 
-   /**
+   
+/**
     * Notifies the listeners that the parser is about to start processing an 
     * initialization section of a combined fragment.
     *
@@ -1434,7 +1462,8 @@ public class OperationRE implements IOperationRE
       }
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.IUMLParserOperationEventSink#onEndInitialize(org.netbeans.modules.uml.core.reverseengineering.reframework.IInitializeEvent, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
     */
    public void onEndInitialize(IInitializeEvent event, IResultCell cell)
@@ -1450,7 +1479,8 @@ public class OperationRE implements IOperationRE
          throw new IllegalStateException();
    }
 
-   /**
+   
+/**
     * Notifies the listeners that the parser is about to start processing an 
     * initialization section of a combined fragment.
     *
@@ -1473,7 +1503,8 @@ public class OperationRE implements IOperationRE
       }
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.IUMLParserOperationEventSink#onEndPostProcessing(org.netbeans.modules.uml.core.reverseengineering.reframework.IPostProcessingEvent, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
     */
    public void onEndPostProcessing(IPostProcessingEvent event, IResultCell cell)
@@ -1489,7 +1520,8 @@ public class OperationRE implements IOperationRE
          throw new IllegalStateException();
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.IUMLParserOperationEventSink#onEndRaisedException(org.netbeans.modules.uml.core.reverseengineering.reframework.IRaisedException, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
     */
    public void onEndRaisedException(IRaisedException event, IResultCell cell)
@@ -1501,7 +1533,8 @@ public class OperationRE implements IOperationRE
          throw new NullPointerException();
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.IUMLParserOperationEventSink#onEndTest(org.netbeans.modules.uml.core.reverseengineering.reframework.ITestEvent, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
     */
    public void onEndTest(ITestEvent event, IResultCell cell)
@@ -1521,7 +1554,8 @@ public class OperationRE implements IOperationRE
          throw new IllegalStateException();
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.IUMLParserOperationEventSink#onJumpEvent(org.netbeans.modules.uml.core.reverseengineering.reframework.IJumpEvent, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
     */
    public void onJumpEvent(IJumpEvent event, IResultCell cell)
@@ -1533,7 +1567,8 @@ public class OperationRE implements IOperationRE
          throw new NullPointerException();
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.IUMLParserOperationEventSink#onLoop(org.netbeans.modules.uml.core.reverseengineering.reframework.IRELoop, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
     */
    public void onLoop(IRELoop event, IResultCell cell)
@@ -1548,7 +1583,8 @@ public class OperationRE implements IOperationRE
       createInteractionOperandGuard(guard, lineNumber);
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.IUMLParserOperationEventSink#onMethodCall(org.netbeans.modules.uml.core.reverseengineering.reframework.IMethodEvent, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
     */
    public void onMethodCall(IMethodEvent e, IResultCell cell)
@@ -1641,7 +1677,8 @@ public class OperationRE implements IOperationRE
       }
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.IUMLParserOperationEventSink#onReferencedVariable(org.netbeans.modules.uml.core.reverseengineering.reframework.IReferenceEvent, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
     */
    public void onReferencedVariable(IReferenceEvent event, IResultCell cell)
@@ -1687,7 +1724,8 @@ public class OperationRE implements IOperationRE
       }
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.IUMLParserOperationEventSink#onReturnAction(org.netbeans.modules.uml.core.reverseengineering.reframework.IReturnEvent, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
     */
    public void onReturnAction(IReturnEvent event, IResultCell cell)
@@ -1698,7 +1736,8 @@ public class OperationRE implements IOperationRE
          throw new NullPointerException();
    }
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.IUMLParserOperationEventSink#onUnaryOperator(org.netbeans.modules.uml.core.reverseengineering.reframework.IREUnaryOperator, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
     */
    public void onUnaryOperator(IREUnaryOperator event, IResultCell cell)
@@ -1727,7 +1766,8 @@ public class OperationRE implements IOperationRE
       }
    }
 
-   /**
+   
+/**
     * Retrieves a lifeline from the proper stack
     */
    private ILifeline StackGetLifeline(String bstrLifelineName)

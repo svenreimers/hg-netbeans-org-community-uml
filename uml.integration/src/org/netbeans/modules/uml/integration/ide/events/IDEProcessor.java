@@ -73,27 +73,8 @@ import org.netbeans.modules.uml.core.support.umlutils.ETArrayList;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 import org.netbeans.modules.uml.ui.support.applicationmanager.IProductDiagramManager;
 
-/**
- * Processes the events recieved from the IDE.  The events are translated into
- * GDPro specific commands to accomplished the desired action.
- *
- * Revision History
- * No.  Date        Who         What
- * ---  ----        ---         ----
- *   1  2002-06-14  Darshan     Added check to screen out primitives from the
- *                              search for attribute types in the Describe
- *                              model.
- *   2  2002-06-19  Darshan     Removed unnecessary conversions from Java names
- *                              to UML names, fixed bugs in attribute updates.
- *   3  2002-06-20  Darshan     Changed behaviour of attribute type change to
- *                              delete the IAttribute if a navigable association
- *                              is created for it and to avoid modifying
- *                              existing associations (if an association already
- *                              exists, the IAttribute is not deleted).
- *   4  2002-06-21  Darshan     Reformatted, fixed attribute type handling.
- *   5  2002-07-24  Mukta       Change for displaying role name in the model on
- *                              creating a navigable association.
- */
+
+
 public class IDEProcessor implements EventProcessor {
 //    JavaClassUtils javaUtil = new JavaClassUtils();
 
@@ -101,7 +82,9 @@ public class IDEProcessor implements EventProcessor {
     public IDEProcessor() {
     }
 
-    /**
+    
+
+/**
      * Start a method transaction.  A method tranaction must be started before
      * any updates to the method can begin.  The method transaction that is
      * returned is to be used in all messages that is to update the method.
@@ -118,7 +101,9 @@ public class IDEProcessor implements EventProcessor {
         return new MethodTransaction(trans, info);
     }
 
-    /**
+    
+
+/**
      * Issue a command to Describe to delete a class symbol.
      * @param state The transaction to act upon.
      */
@@ -126,7 +111,9 @@ public class IDEProcessor implements EventProcessor {
         return;
     }
 
-    /**
+    
+
+/**
      * Issue a command to Describe to delete a method from a class symbol.
      * @param state The transaction to act upon.
      */
@@ -142,7 +129,9 @@ public class IDEProcessor implements EventProcessor {
         }
     }
 
-    /**
+    
+
+/**
      * Issue a command to Describe to delete a data member from a class symbol.
      * @param state The transaction to act upon.
      */
@@ -158,7 +147,9 @@ public class IDEProcessor implements EventProcessor {
         }
     }
 
-    /**
+    
+
+/**
      * Issue a command to Describe to update the documentation of a class
      * symbol.
      *
@@ -178,7 +169,9 @@ public class IDEProcessor implements EventProcessor {
         }
     }
 
-    /**
+    
+
+/**
      * Issue a command to Describe remove all imports from a class symbol.
      * @param state The transaction to act upon.
      */
@@ -195,7 +188,9 @@ public class IDEProcessor implements EventProcessor {
 //        }
     }
 
-    /**
+    
+
+/**
      * Issue a command to Describe remove all exceptions from a class symbol.
      * @param state The transaction to act upon.
      */
@@ -213,7 +208,9 @@ public class IDEProcessor implements EventProcessor {
         }
     }
 
-    /**
+    
+
+/**
      * Issue a command to Describe add an import to a class symbol.
      * @param state The transaction to act upon.
      * @parma value The import to add.
@@ -222,7 +219,9 @@ public class IDEProcessor implements EventProcessor {
         return;
     }
 
-    /**
+    
+
+/**
      * Issue a command to Describe add an interface implementation to a class
      * symbol.
      *
@@ -397,7 +396,9 @@ public class IDEProcessor implements EventProcessor {
         return false;
     }
 
-    /**
+    
+
+/**
      * Issue a command to Describe remvoe an interface implementation from a
      * class symbol.
      *
@@ -452,7 +453,9 @@ public class IDEProcessor implements EventProcessor {
 
     }
 
-    /**
+    
+
+/**
      * Issue a command to Describe add an exception to a class symbol.
      * @param state The transaction to act upon.
      * @param value The exception to add.
@@ -460,7 +463,9 @@ public class IDEProcessor implements EventProcessor {
     public void addException(MethodTransaction state, String value) {
     }
 
-    /**
+    
+
+/**
      * Issue a command to Describe add a collection of exceptions to a class
      * symbol.
      *
@@ -472,7 +477,9 @@ public class IDEProcessor implements EventProcessor {
         setAttribute(state, "ThrowType", value);
     }
 
-    /**
+    
+
+/**
      * Issue a command to Describe to updates a attibute on a class symbol.  The
      * attribute must be specified in a fully qualified manner.
      * <br>
@@ -486,7 +493,9 @@ public class IDEProcessor implements EventProcessor {
                              String value) {
     }
 
-    /**
+    
+
+/**
      * Issue a command to Describe to updates a attibute on a <b>Operations</b>
      * attribute.  The attribute must be specified in a fully qualified manner.
      * <br>
@@ -500,7 +509,9 @@ public class IDEProcessor implements EventProcessor {
                              String value) {
     }
 
-    /**
+    
+
+/**
      * Issue a command to Describe to updates a attibute on a <b>Attributes</b>
      * attribute.  The attribute must be specified in a fully qualified manner.
      * <br>
@@ -514,7 +525,9 @@ public class IDEProcessor implements EventProcessor {
                              String value) {
     }
 
-    /**
+    
+
+/**
      * Issue a command to Describe to remove a generalization associated with a
      * class symbol.
      * @param state The transaction to act upon.
@@ -528,7 +541,9 @@ public class IDEProcessor implements EventProcessor {
                               String packageName) {
     }
 
-    /**
+    
+
+/**
      * Issue a command to Describe to add a generalization associated with a
      * class symbol.
      * @param state The transaction to act upon.
@@ -538,7 +553,9 @@ public class IDEProcessor implements EventProcessor {
         setAttribute(state, "Parameters", params);
     }
 
-    /**
+    
+
+/**
      * Issue a command to Describe to updates a tagged value on a class symbol.
      *
      * @param state The transaction to act upon.
@@ -549,7 +566,9 @@ public class IDEProcessor implements EventProcessor {
                                String value) {
     }
 
-    /**
+    
+
+/**
      * Issue a command to Describe to updates a tagged value on a
      * <b>Operations</b> attribute.
      *
@@ -561,7 +580,9 @@ public class IDEProcessor implements EventProcessor {
                                String value) {
     }
 
-    /**
+    
+
+/**
      * Issue a command to Describe to updates a tagged value on a
      * <b>Attributes</b> attribute.
      *
@@ -573,7 +594,9 @@ public class IDEProcessor implements EventProcessor {
                                String value) {
     }
 
-    /**
+    
+
+/**
      * Updates a data members type.  If the data member is current a
      * implementation attribute then then the implementation attribute is
      * updated.  Otherwise, the attribute on the CLD_Class symbol is updated.
@@ -634,7 +657,9 @@ public class IDEProcessor implements EventProcessor {
         return nav;
     }
 
-    /**
+    
+
+/**
      * Creates a navigable association for the given MemberTransaction, with
      * the given IClassifier. This assumes that the MemberTransaction already
      * has an IAttribute associated with it. The IAttribute of the transaction
@@ -765,7 +790,9 @@ public class IDEProcessor implements EventProcessor {
         state.setAttribute(at);
     }
 
-    /**
+    
+
+/**
      * The work horse of updateMemberType that updates an implemenation
      * attribute.  If the type ot the data member is no longer in Describe then
      * the data member is moved to the containing classes symbol.  Otherwise, a
@@ -820,7 +847,9 @@ public class IDEProcessor implements EventProcessor {
                            + "' to " + newMul + " (was " + oldMul + ")");
         MemberInfo.setMultiplicity(attr, newMul, oldMul);
 
-        /*
+        
+
+/*
         // Add the association if doesn't exist already
         boolean isAttr = attr instanceof IAttribute;
 
@@ -838,7 +867,9 @@ public class IDEProcessor implements EventProcessor {
          */
     }
 
-    /**
+    
+
+/**
      * The work horse of updateMemberType that updates an attribute on a CLD_Class
      * symbol.   If the new type of the data member is known by Describe the
      * data member will be moved to a Class Association and made an implemenation
@@ -850,7 +881,9 @@ public class IDEProcessor implements EventProcessor {
      * @param soruceName How the data member is specified in code.
      */
     protected void handleUpdateSymbolAttr(MemberTransaction state, String fullName, String type) {
-        /*
+        
+
+/*
            IGDAttribute attr = state.getAttribute();
            try {
            IGDSymbol    ownerSym = attr.getSymbol();
@@ -913,14 +946,12 @@ public class IDEProcessor implements EventProcessor {
         */
     }
 
-    /**
-     * Generic method for setting the value of a Describe's attribute.
-     * @param sym The symbol to update.
-     * @param attr The name of the attribute to update.
-     * @param value The new value of the symbols attribute.
-     */
+    
+
     protected void setAttribute(IClass sym,String attr,String value) {
-        /*
+        
+
+/*
            try {
            if(sym != null) {
            IGDAttribute curAttr = sym.getSubAttribute(attr);
@@ -941,14 +972,18 @@ public class IDEProcessor implements EventProcessor {
            */
     }
 
-    /**
+    
+
+/**
      * Retievies an interface from Describe.  If the interface does not current exist
      * in Describe it will be created as a <b>Reference Class</b>
      * @param trans The symbols state data.
      * @param name The name of the Interface class.
      * @param packgeName The name of the package that the interface resides.
      */
-    /*
+    
+
+/*
        private IClassifier getInterfaceSymbol(SymbolTransaction trans, String name, String packageName) {
        IClassifier retVal = getClassSymbol(trans, name, packageName);
 
@@ -970,7 +1005,9 @@ public class IDEProcessor implements EventProcessor {
        }
        */
 
-    /**
+    
+
+/**
      * Retievies an class symbol from Describe.  If the class symbol does not current exist
      * in Describe it will be created as a <b>Reference Class</b>
      * @param trans The symbols state data.
@@ -1006,7 +1043,9 @@ public class IDEProcessor implements EventProcessor {
         return retVal;
     }
 
-    /**
+    
+
+/**
      * Test if a symbol is a Interface.  First the symbol is verified to be a
      * CLD_Class symbol.  The the class format is checked if it is a interface.
      *

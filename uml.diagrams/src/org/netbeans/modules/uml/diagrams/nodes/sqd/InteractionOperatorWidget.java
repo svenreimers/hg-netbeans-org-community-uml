@@ -60,6 +60,7 @@ import org.openide.util.NbBundle;
 import org.openide.util.lookup.AbstractLookup;
 import org.openide.util.lookup.InstanceContent;
 
+
 /**
  * It's not really pentagon because upper and left border isn't drawn
  */

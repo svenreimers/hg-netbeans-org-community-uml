@@ -284,7 +284,9 @@ public class AssociationLabelManager extends BasicUMLLabelManager
     //////////////////////////////////////////////////////////////////
     // Helper Methods
     
-    /**
+    
+
+/**
      * If the ends multiplicity property is set, the multiplicity label will be shown.
      * 
      * @param element the associated model element.
@@ -305,7 +307,9 @@ public class AssociationLabelManager extends BasicUMLLabelManager
         }
     }
     
-    /**
+    
+
+/**
      * If the ends name property is set, the ends name label will be shown.
      * 
      * @param element the associated model element.
@@ -319,7 +323,9 @@ public class AssociationLabelManager extends BasicUMLLabelManager
         }
     }
     
-    /**
+    
+
+/**
      * Determines if the end is on the target or source end of the connection
      * widget.
      * 
@@ -337,7 +343,9 @@ public class AssociationLabelManager extends BasicUMLLabelManager
         return type;
     }
 
-    /**
+    
+
+/**
      * Retrieves the source end of the connection widget.
      * @return the source association end.
      */
@@ -347,7 +355,9 @@ public class AssociationLabelManager extends BasicUMLLabelManager
         return findAssociatedEnd(w);
     }
 
-    /**
+    
+
+/**
      * Retrieves the target end of the connection widget.
      * @return the target association end.
      */
@@ -357,7 +367,9 @@ public class AssociationLabelManager extends BasicUMLLabelManager
         return findAssociatedEnd(w);
     }
     
-    /**
+    
+
+/**
      * Retrieves the association end that is connected to the specified
      * model element.
      * 
@@ -392,7 +404,9 @@ public class AssociationLabelManager extends BasicUMLLabelManager
         return retVal;
     }
     
-    /**
+    
+
+/**
      * Retrieves the model element for the model elements property.
      * 
      * @param data the association end
@@ -416,7 +430,9 @@ public class AssociationLabelManager extends BasicUMLLabelManager
         return retVal;
     }
     
-    /**
+    
+
+/**
      * Retrieves the label for the associated model element property.
      * 
      * @param property the property of the model eleent.  Either MULTIPLICITY 

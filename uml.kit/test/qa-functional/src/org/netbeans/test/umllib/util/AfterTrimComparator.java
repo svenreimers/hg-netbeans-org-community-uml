@@ -43,6 +43,8 @@
  */
 
 
+
+
 /*
  * AfterTrimComparator.java
  *
@@ -64,7 +66,8 @@ public class AfterTrimComparator implements Operator.StringComparator
 {
     boolean ce=false;
     boolean ccs=false;
-    /**
+    
+/**
      * 
      * @param cs 
      * @param cce 
@@ -74,7 +77,9 @@ public class AfterTrimComparator implements Operator.StringComparator
         this.ce=cs;
         this.ccs=ccs;
     }
-    /**
+    
+
+/**
      * 
      * @param caption 
      * @param match 

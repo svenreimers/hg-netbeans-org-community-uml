@@ -49,12 +49,16 @@ import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure
 
 public interface ICreateAction extends IAction
 {
-	/**
+	
+
+/**
 	 * Sets / Gets classifier that specifies the instance which will be created when the create action is performed.
 	*/
 	public IClassifier getInstantiation();
 
-	/**
+	
+
+/**
 	 * Sets / Gets classifier that specifies the instance which will be created when the create action is performed.
 	*/
 	public void setInstantiation( IClassifier value );

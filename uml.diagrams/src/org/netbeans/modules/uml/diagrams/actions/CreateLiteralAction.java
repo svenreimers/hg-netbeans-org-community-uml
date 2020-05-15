@@ -76,7 +76,9 @@ public final class CreateLiteralAction extends SceneCookieAction
         }
     }
     
-    /**
+    
+
+/**
      *
      * Retrieves the default name for use for model elements that are just
      * being created.

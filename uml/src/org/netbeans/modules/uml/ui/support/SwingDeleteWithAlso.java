@@ -43,6 +43,8 @@
  */
 
 
+
+
 /*
  * Created on Jun 3, 2004
  *
@@ -68,6 +70,7 @@ import org.netbeans.modules.uml.core.support.umlsupport.StringUtilities;
 import org.netbeans.modules.uml.ui.swing.commondialogs.DefaultCommonDialogResource;
 import org.netbeans.modules.uml.ui.swing.commondialogs.JCenterDialog;
 import org.openide.util.NbBundle;
+
 
 /**
  *

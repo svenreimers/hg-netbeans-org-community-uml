@@ -77,7 +77,9 @@ public class UMLImportsSupport {
     private String librarySuffix;
     private String umlImportPrefix;
         
-    /**
+    
+
+/**
      * Creates a new instance of UMLImportsSupport 
      */
     public  UMLImportsSupport( PropertyEvaluator evaluator, 
@@ -90,7 +92,9 @@ public class UMLImportsSupport {
         this.umlImportPrefix = umlImportPrefix;
     }
     
-    /** Creates list of <CODE>Items</CODE> from given property.
+    
+
+/** Creates list of <CODE>Items</CODE> from given property.
      */    
     public Iterator /*<Item>*/ itemsIterator( String propertyValue ) {
         // XXX More performance frendly impl. would retrun a lazzy iterator.
@@ -129,7 +133,9 @@ public class UMLImportsSupport {
         
     }
     
-    /** Converts list of classpath items into array of Strings.
+    
+
+/** Converts list of classpath items into array of Strings.
      * !! This method creates references in the project !!
      */
     public String[] encodeToStrings( Iterator /*<Item>*/ imports ) {
@@ -184,7 +190,9 @@ public class UMLImportsSupport {
         
     // Innerclasses ------------------------------------------------------------
     
-    /** Item of the uml project ref
+    
+
+/** Item of the uml project ref
      */    
     public static class Item {
         

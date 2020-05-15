@@ -44,11 +44,8 @@
 
 
 
-/*
- * File       : ParserTestListener.java
- * Created on : Feb 3, 2004
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.reverseengineering;
 
 import org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.IStateListener;
@@ -61,7 +58,8 @@ import org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframe
 public class ParserTestListener implements IStateListener, ITokenProcessor
 {
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.IStateListener#onBeginState(java.lang.String, java.lang.String, org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.IStatePayload)
      */
     public void onBeginState(
@@ -73,7 +71,9 @@ public class ParserTestListener implements IStateListener, ITokenProcessor
 
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.IStateListener#onEndState(java.lang.String)
      */
     public void onEndState(String stateName)
@@ -82,7 +82,9 @@ public class ParserTestListener implements IStateListener, ITokenProcessor
 
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ITokenProcessor#processToken(org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ITokenDescriptor, java.lang.String)
      */
     public void processToken(ITokenDescriptor pToken, String language)

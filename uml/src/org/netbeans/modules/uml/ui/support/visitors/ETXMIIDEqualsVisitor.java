@@ -48,6 +48,7 @@ package org.netbeans.modules.uml.ui.support.visitors;
 
 import org.netbeans.modules.uml.core.metamodel.core.foundation.IPresentationElement;
 
+
 /**
  *
  * Search the diagram for the matching XMIID.
@@ -60,7 +61,9 @@ public class ETXMIIDEqualsVisitor implements IETGraphObjectVisitor
 	// The XMI ID to compare with.
 	protected String xmiid;
 	
-	/*
+	
+
+/*
 	 * Search the graph for the matching XMIID.
 	 */
 	public ETXMIIDEqualsVisitor(final String eleXMIID)
@@ -68,7 +71,9 @@ public class ETXMIIDEqualsVisitor implements IETGraphObjectVisitor
 		xmiid = eleXMIID;
 	}
 	
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.visitors.IETGraphObjectVisitor#visit(org.netbeans.modules.uml.ui.support.viewfactorysupport.IETGraphObject)
     */
         // TODO: meteora

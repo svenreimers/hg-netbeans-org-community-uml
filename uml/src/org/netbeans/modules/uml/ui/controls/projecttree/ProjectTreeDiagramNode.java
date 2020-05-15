@@ -43,6 +43,7 @@
  */
 
 
+
 /*
  *
  * Created on Jun 18, 2003
@@ -55,6 +56,7 @@ import org.netbeans.modules.uml.core.metamodel.diagrams.IProxyDiagram;
 import org.netbeans.modules.uml.core.support.umlsupport.FileExtensions;
 import org.netbeans.modules.uml.core.support.umlsupport.StringUtilities;
 import org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeDiagram;
+
 
 /**
  * 
@@ -72,7 +74,9 @@ public class ProjectTreeDiagramNode extends ProjectTreeNode
       setDiagramType(diagram.getDiagramKindName());
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeDiagram#getDiagram()
     */
    public IProxyDiagram getDiagram()
@@ -81,7 +85,9 @@ public class ProjectTreeDiagramNode extends ProjectTreeNode
       return m_Diagram;
    }
    
-   /**
+   
+
+/**
     * Set the diagram that is wrapped by the node.
     * 
     * @param diagram The diagram.
@@ -106,7 +112,9 @@ public class ProjectTreeDiagramNode extends ProjectTreeNode
    // Helper Methods
    //**************************************************
    
-   /**
+   
+
+/**
     * @param string
     */
     protected void setFilename(String value)

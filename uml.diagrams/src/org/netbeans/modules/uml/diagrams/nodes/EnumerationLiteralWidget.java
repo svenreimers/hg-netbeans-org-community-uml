@@ -68,7 +68,9 @@ public class EnumerationLiteralWidget extends FeatureWidget implements PropertyC
 
     ///////////////////////////////////////////////////////////////
     // PropertyChangeListener Implementation
-    /**
+    
+
+/**
      * The property change listener is used by the diagram to notify widgets of
      * model element property change events.
      */

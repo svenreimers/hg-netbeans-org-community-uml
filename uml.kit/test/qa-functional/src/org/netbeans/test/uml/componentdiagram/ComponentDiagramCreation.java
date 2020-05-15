@@ -66,6 +66,7 @@ import org.netbeans.test.umllib.NewPackageWizardOperator;
 import org.netbeans.test.umllib.testcases.UMLTestCase;
 import org.netbeans.test.umllib.tests.DiagramCreation;
 
+
 /**
  *
  * @spec UML/ComponentDiagram.xml

@@ -58,7 +58,8 @@ import org.openide.filesystems.FileUtil;
 public class Validator {
         private static final Logger logger = Logger.getLogger("org.netbeans.modules.uml.core");
 
-        /**
+        
+/**
 	 * Makes sure that the passed in path contains a valid directory
 	 * spec
 	 *
@@ -112,7 +113,9 @@ public class Validator {
         }
 
 
-	/**
+	
+
+/**
 	 * @param config
 	 * @param string
 	 * @return
@@ -122,7 +125,9 @@ public class Validator {
 		return f.exists();
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Makes sure that the file passed is an XML file that contains an EMBT:Workspace
 	 * root element.

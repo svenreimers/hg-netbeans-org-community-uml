@@ -71,7 +71,9 @@ public class EnumStateHandler extends ClassStateHandler
         m_DiscoverType = false;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.statehandlers.StateHandler#initialize()
      */
     public void initialize()
@@ -105,7 +107,9 @@ public class EnumStateHandler extends ClassStateHandler
         }
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.statehandlers.StateHandler#createSubStateHandler(java.lang.String, java.lang.String)
      */
     public StateHandler createSubStateHandler(String stateName, String language)

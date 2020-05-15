@@ -43,14 +43,8 @@
  */
 
 
-/*
- * IPackageElem.java
- *
- * Created on January 23, 2007, 3:49 PM
- *
- * To change this template, choose Tools | Template Manager
- * and open the template in the editor.
- */
+
+
 
 package org.netbeans.test.umllib.project.elem;
 

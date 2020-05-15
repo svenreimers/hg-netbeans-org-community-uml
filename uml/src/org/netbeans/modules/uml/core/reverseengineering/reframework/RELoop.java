@@ -51,7 +51,9 @@ import org.netbeans.modules.uml.core.support.umlsupport.XMLManip;
 public class RELoop extends MethodDetailParserData implements IRELoop
 {
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.IRELoop#getStringRepresentation()
      */
     public String getStringRepresentation()

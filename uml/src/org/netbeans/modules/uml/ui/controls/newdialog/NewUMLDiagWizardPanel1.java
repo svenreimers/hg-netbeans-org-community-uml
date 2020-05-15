@@ -64,7 +64,9 @@ import org.openide.util.HelpCtx;
 public class NewUMLDiagWizardPanel1 
       implements WizardDescriptor.FinishablePanel, INewUMLFileTemplates {
     
-    /**
+    
+
+/**
      * The visual component that displays this panel. If you need to access the
      * component from this class, just use getComponent().
      */
@@ -242,7 +244,9 @@ public class NewUMLDiagWizardPanel1
                 new Boolean(bIsValidForNamespace), message);
     }
 
-    /**
+    
+
+/**
      * Since there should only be one seq diagram
      * (or one collaboration diagram)
      * in tree per Interaction, prevent user from

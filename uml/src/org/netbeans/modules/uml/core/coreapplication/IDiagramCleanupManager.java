@@ -47,17 +47,23 @@ package org.netbeans.modules.uml.core.coreapplication;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.IVersionableElement;
 public interface IDiagramCleanupManager
 {
-	/**
+	
+
+/**
 	 * Used to cleanup diagrams on this namespace.
 	*/
 	public void cleanupOwnedDiagrams( IVersionableElement pElementBeingDeleted );
 
-	/**
+	
+
+/**
 	 * Used to cleanup diagrams on this namespace, and diagrams found in child namespace.
 	*/
 	public void cleanupOwnedAndNestedDiagrams( IVersionableElement pElementBeingDeleted );
 
-	/**
+	
+
+/**
 	 * Used to move diagrams on this namespace when it gets moved from one project to another.
 	*/
 	public void moveOwnedAndNestedDiagrams( IVersionableElement pFromProject, IVersionableElement pToProject, IVersionableElement pElementBeingMoved );

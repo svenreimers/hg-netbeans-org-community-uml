@@ -53,6 +53,7 @@ import java.awt.*;
 import java.awt.event.MouseEvent;
 import org.netbeans.api.visual.action.ActionFactory;
 
+
 /**
  * Rezing a widget based on insets of the widget border.
  *

@@ -43,6 +43,8 @@
  */
 
 
+
+
 /*
  * Created on Jun 18, 2003
  *
@@ -83,7 +85,9 @@ public class JPropertyTreeTable extends JTreeTable implements ActionListener
 	private int m_CurRow = 0;
 	private IPropertyElement m_CurElement = null;
 
-	/**
+	
+
+/**
 	 * 
 	 */
 	public JPropertyTreeTable(TreeTableModel treeTableModel, PropertyEditor editor)
@@ -177,7 +181,9 @@ public class JPropertyTreeTable extends JTreeTable implements ActionListener
 		e.consume();
 	}
 	
-	/**
+	
+
+/**
 	 * 
 	 * Allows a user to start editing the specified row.
 	 */

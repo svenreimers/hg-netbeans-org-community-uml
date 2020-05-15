@@ -70,7 +70,9 @@ public class Multiplicity extends Element implements IMultiplicity, ITransitionE
         m_TransitionElement = new TransitionElement();
     }
     
-    /**
+    
+
+/**
      * Sets the lower bounds of this multiplicity, so it becomes [LowerBounds..*].  If ranges
      * currently exist they are deleted and a new one is created.
      *
@@ -106,7 +108,9 @@ public class Multiplicity extends Element implements IMultiplicity, ITransitionE
         }
     }
     
-    /**
+    
+
+/**
      * Sets the bounds of this multiplicity, so it becomes [LowerBounds..UpperBounds].
      * If ranges currently exist they are deleted and a new one is created.
      *
@@ -146,7 +150,9 @@ public class Multiplicity extends Element implements IMultiplicity, ITransitionE
         }
     }
     
-    /**
+    
+
+/**
      * Get the range(s) of this multiplicity accoring to a well formed string
      * [LowerBounds..Upperbounds, LowerBounds2..Upperbounds2,...].
      *
@@ -221,7 +227,9 @@ public class Multiplicity extends Element implements IMultiplicity, ITransitionE
         return (retStr != null) ? retStr : "";
     }
     
-    /**
+    
+
+/**
      * Adds a MultiplicityRange to this element.
      *
      * @param range[out]
@@ -261,7 +269,9 @@ public class Multiplicity extends Element implements IMultiplicity, ITransitionE
         return mList;
     }
     
-    /**
+    
+
+/**
      *
      * Inserts a new range object into this multiplicities collection of ranges.
      *
@@ -288,7 +298,9 @@ public class Multiplicity extends Element implements IMultiplicity, ITransitionE
         }
     }
     
-    /**
+    
+
+/**
      * Removes a range from this element.
      *
      * @param range[out]
@@ -317,7 +329,9 @@ public class Multiplicity extends Element implements IMultiplicity, ITransitionE
         }
     }
     
-    /**
+    
+
+/**
      * Removes all the ranges from the element.
      *
      * @result S_OK
@@ -336,7 +350,9 @@ public class Multiplicity extends Element implements IMultiplicity, ITransitionE
         }
     }
     
-    /**
+    
+
+/**
      * Retrieves the set of MultiplicityRanges for this element.
      *
      * @param ranges[out]
@@ -349,7 +365,9 @@ public class Multiplicity extends Element implements IMultiplicity, ITransitionE
         return retrieveElementCollection(dummy, "UML:Multiplicity.range/*", IMultiplicityRange.class);
     }
     
-    /**
+    
+
+/**
      * Gets the ordered flag.  For a multiplicity that permits multiple
      * values, this attribute specifies whether the values are sequentially
      * ordered.
@@ -363,7 +381,9 @@ public class Multiplicity extends Element implements IMultiplicity, ITransitionE
         return getBooleanAttributeValue( "isOrdered", true );
     }
     
-    /**
+    
+
+/**
      * Sets the ordered flag.  For a multiplicity that permits multiple
      * values, this attribute specifies whether the values are sequentially
      * ordered.
@@ -395,7 +415,9 @@ public class Multiplicity extends Element implements IMultiplicity, ITransitionE
         }
     }
     
-    /**
+    
+
+/**
      * Description.
      *
      * @param pVal[out]
@@ -407,7 +429,9 @@ public class Multiplicity extends Element implements IMultiplicity, ITransitionE
         return UMLXMLManip.queryCount(m_Node, "UML:Multiplicity.range/*", false);
     }
     
-    /**
+    
+
+/**
      *
      * Creates a new MultiplicityRange. The range is NOT automatically added to this
      * Multiplicity.
@@ -423,7 +447,9 @@ public class Multiplicity extends Element implements IMultiplicity, ITransitionE
         return ret.createType("MultiplicityRange");
     }
     
-    /**
+    
+
+/**
      * Sets the range(s) of this multiplicity accoring to a well formed string
      * [LowerBounds..Upperbounds, LowerBounds2..Upperbounds2,...].If ranges currently
      * exist they are deleted and a new ones are created.
@@ -472,7 +498,9 @@ public class Multiplicity extends Element implements IMultiplicity, ITransitionE
         }
     }
     
-    /**
+    
+
+/**
      * Used by the edit control to get the range(s) of this multiplicity according to a
      * well formed string [LowerBounds..Upperbounds, LowerBounds2..Upperbounds2,...].
      *
@@ -483,7 +511,9 @@ public class Multiplicity extends Element implements IMultiplicity, ITransitionE
         return getRangeAsString(false);
     }
     
-    /**
+    
+
+/**
      *
      * Retrieves the owning element of this Multiplicity
      *
@@ -516,7 +546,9 @@ public class Multiplicity extends Element implements IMultiplicity, ITransitionE
         return owner;
     }
     
-    /**
+    
+
+/**
      *
      * Establishes the appropriate XML elements for this UML type.
      *
@@ -531,7 +563,9 @@ public class Multiplicity extends Element implements IMultiplicity, ITransitionE
         buildNodePresence( "UML:Multiplicity", doc, parent );
     }
     
-    /**
+    
+
+/**
      * Given 1..2 we set the multiplicity range at index 'index' into the pMultiplicityRanges list.
      */
     protected void addMultiplicity(String multStr)
@@ -633,7 +667,9 @@ public class Multiplicity extends Element implements IMultiplicity, ITransitionE
         return dup;
     }
     
-    /**
+    
+
+/**
      * Override from TransitionElementImpl.  Eventually MultiplicityImpl should
      * not derive from TransitionElementImpl, rather we need to create an
      * IMultiplicityTransitionElement
@@ -650,7 +686,9 @@ public class Multiplicity extends Element implements IMultiplicity, ITransitionE
     }
     
     
-        /* (non-Javadoc)
+        
+
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.core.metamodel.core.foundation.ITransitionElement#setFutureOwner(org.netbeans.modules.uml.core.metamodel.core.foundation.IElement)
          */
     public void setFutureOwner(IElement value)

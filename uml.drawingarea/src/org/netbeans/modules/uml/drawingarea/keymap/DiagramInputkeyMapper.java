@@ -204,7 +204,9 @@ public class DiagramInputkeyMapper implements DiagramKeyMapConstants{
         return tooltip;
     }
    
-    /**
+    
+
+/**
      * Creates nice textual representation of KeyStroke.
      * Modifiers and an actual key label are concated by plus signs
      * @param the KeyStroke to get description of
@@ -241,7 +243,9 @@ public class DiagramInputkeyMapper implements DiagramKeyMapConstants{
         return retVal;
     }
     
-    /** @return slight modification of what KeyEvent.getKeyText() returns.
+    
+
+/** @return slight modification of what KeyEvent.getKeyText() returns.
      *  The numpad Left, Right, Down, Up get extra result.
      */
     private static String getKeyText(int keyCode)

@@ -42,6 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
+
+
 /*
  * Created on Oct 17, 2003
  *
@@ -64,7 +66,8 @@ public class SignalEvent extends Event implements ISignalEvent
 	{
 	}
 	
-	/**
+	
+/**
 	 * GGets the specific signal that is associated with this event
 	 *
 	 * @return ISignal
@@ -75,7 +78,9 @@ public class SignalEvent extends Event implements ISignalEvent
 						retrieveSingleElementWithAttrID(this,"signal", ISignal.class);
 	}
 
-	/**
+	
+
+/**
 	 * Sets the specific signal that is associated with this event
 	 *
 	 * @param signal
@@ -86,7 +91,9 @@ public class SignalEvent extends Event implements ISignalEvent
 	}
 	
 	
-	/**
+	
+
+/**
 	 * Establishes the appropriate XML elements for this UML type.
 	 *
 	 * [in] The document where this element will reside

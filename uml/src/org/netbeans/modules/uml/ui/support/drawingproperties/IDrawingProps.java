@@ -43,6 +43,8 @@
  */
 
 
+
+
 /*
  * Created on Apr 15, 2004
  *
@@ -50,6 +52,7 @@
  * Window&gt;Preferences&gt;Java&gt;Code Generation&gt;Code and Comments
  */
 package org.netbeans.modules.uml.ui.support.drawingproperties;
+
 
 /**
  *

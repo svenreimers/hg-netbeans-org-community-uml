@@ -42,6 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
+
+
 /*
  * PromotePatternAction.java
  *
@@ -108,7 +110,9 @@ public class PromotePatternAction extends CookieAction
        }
     }
     
-    /**
+    
+
+/**
 	 * Begin the process to promote the pattern to the design center
 	 *
 	 * @param pDispatch[in]			The pattern to apply

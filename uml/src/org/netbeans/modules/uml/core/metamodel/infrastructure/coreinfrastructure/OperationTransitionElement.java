@@ -60,7 +60,9 @@ public class OperationTransitionElement extends Operation implements
 		m_TransitionElement = new TransitionElement();
 	}
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.ITransitionElement#getFutureOwner()
      */
     public IElement getFutureOwner()
@@ -68,7 +70,9 @@ public class OperationTransitionElement extends Operation implements
         return m_TransitionElement.getFutureOwner();
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.ITransitionElement#setFutureOwner(org.netbeans.modules.uml.core.metamodel.core.foundation.IElement)
      */
     public void setFutureOwner(IElement value)

@@ -42,6 +42,7 @@
  * made subject to such option by the copyright holder.
  */
 
+
 /*
  *
  * Created on Jun 26, 2003
@@ -65,6 +66,7 @@ import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure
 import org.netbeans.modules.uml.core.support.umlsupport.XMLManip;
 import org.netbeans.modules.uml.core.support.umlutils.ETArrayList;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
+
 
 /**
  * The Transferable implmentation that specifies the transfer data for a 
@@ -92,7 +94,9 @@ public class ADTransferable implements Transferable
    public final static int COPY = 1;
    private int transferType = COPY;
    
-   /** 
+   
+
+/** 
     * Create a new transferable object.  The ADTransferable transerable know
     * how to handle drag and drop objects.
     * There are two data flavors supported by ADTransferable.  
@@ -107,7 +111,9 @@ public class ADTransferable implements Transferable
        setTransferOperation(operation);
    }
    
-   /**
+   
+
+/**
     * Add a Model element to this drag and drop operation.
     *
     * @param element The element to add.
@@ -174,7 +180,9 @@ public class ADTransferable implements Transferable
          }
       }
    }
-   /**
+   
+
+/**
     * Add a Presentation element to this drag and drop operation.
     *
     * @param element The element to add.
@@ -192,7 +200,9 @@ public class ADTransferable implements Transferable
       }
    }
       
-   /**
+   
+
+/**
     * Add a Presentation element to this drag and drop operation.
     *
     * @param location The fully qualified path to the diagram's .etld file
@@ -210,16 +220,18 @@ public class ADTransferable implements Transferable
       }
    }
     
-   /**
+   
+
+/**
     * Add a Presentation element to this drag and drop operation.
     *
     * @param location The fully qualified path to the diagram's .etld file
     */
    public void addGenericElement(String genericString)
    {
-//      if(m_GenericElements == null)
+
 //      {
-//         m_GenericElements = new ArrayList < String >();
+
 //      }
 
       if(m_GenericElements.contains(genericString) == false)
@@ -228,7 +240,9 @@ public class ADTransferable implements Transferable
       }
    }  
    
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see java.awt.datatransfer.Transferable#getTransferDataFlavors()
     */
    public DataFlavor[] getTransferDataFlavors()
@@ -236,7 +250,9 @@ public class ADTransferable implements Transferable
       return m_SupportedFlavors;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see java.awt.datatransfer.Transferable#isDataFlavorSupported(java.awt.datatransfer.DataFlavor)
     */
    public boolean isDataFlavorSupported(DataFlavor flavor)
@@ -253,7 +269,9 @@ public class ADTransferable implements Transferable
       return retVal;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see java.awt.datatransfer.Transferable#getTransferData(java.awt.datatransfer.DataFlavor)
     */
    public Object getTransferData(DataFlavor flavor)
@@ -277,7 +295,9 @@ public class ADTransferable implements Transferable
       return retVal;
    }
 
-   /**
+   
+
+/**
     * Rretrieves the transfer operation being processed.
     * @return The name of the operation.
     */
@@ -286,7 +306,9 @@ public class ADTransferable implements Transferable
       return m_TransferOperation;
    }
 
-   /**
+   
+
+/**
     * Sets the transfer operation that is being processed.
     * @param string The name of the operation.
     */
@@ -306,7 +328,9 @@ public class ADTransferable implements Transferable
    // Helper Methods
    //**************************************************
    
-   /**
+   
+
+/**
     * Generates the raw XML data structure that represents the supplied elements.
     * 
     * @return A String object that contains the data.
@@ -341,11 +365,8 @@ public class ADTransferable implements Transferable
       return retVal;
    }
 
-   /**
-    * Copies the generic elementst to the XML data stream.
-    * 
-    * @param owner The DOM element that own the information.
-    */
+   
+
    private boolean copyGenericElements(Element owner)
    {
       boolean retVal = false;
@@ -369,7 +390,9 @@ public class ADTransferable implements Transferable
       
    }
 
-   /**
+   
+
+/**
     * Copy the diagram locations to the DOM element.
     * 
     * @param owner The DOM element that own the information.
@@ -397,7 +420,9 @@ public class ADTransferable implements Transferable
       
    }
 
-   /**
+   
+
+/**
     * Copy the presentation elements to the DOM element.
     * 
     * @param owner The DOM element that own the information.
@@ -426,7 +451,9 @@ public class ADTransferable implements Transferable
       
    }
 
-   /**
+   
+
+/**
     * Copy the model elements to the DOM element.
     * 
     * @param owner The DOM element that own the information.
@@ -460,13 +487,15 @@ public class ADTransferable implements Transferable
        this.engine = engine;
    }
    
-   /**
+   
+/**
     * The data for the "ADTransfer Data" DataFlavor.
     * 
     */
    public class ADTransferData 
    {
-      /**
+      
+/**
        * Checks if all the data on the DataFlavor are model elements.
        * @return <code>true</code> if there are only model elements in the 
        *         DataFlavor.
@@ -494,7 +523,9 @@ public class ADTransferable implements Transferable
          return retVal;
       }
       
-      /**
+      
+
+/**
        * Retrieve the model elements that are being transfered.
        */
       public ArrayList < IElement > getModelElements()
@@ -502,7 +533,9 @@ public class ADTransferable implements Transferable
          return m_ModelElements;
       }
       
-      /**
+      
+
+/**
        * Retrieve the presentation elements that are being transfered.
        */
       public ArrayList < IPresentationElement > getPresentationElements()
@@ -510,7 +543,9 @@ public class ADTransferable implements Transferable
          return m_PresentationElements;
       }
       
-      /**
+      
+
+/**
        * Retrieve the location of the diagrams that are being transfered.
        */
       public ArrayList < String > getDiagramLocations()
@@ -518,9 +553,8 @@ public class ADTransferable implements Transferable
          return m_DiagramLocations;
       }
       
-      /**
-       * Retrieve the generic elements that are being transfered.
-       */
+      
+
       public ArrayList < String > getGenericElements()
       {
          return m_GenericElements;

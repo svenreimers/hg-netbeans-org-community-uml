@@ -92,7 +92,9 @@ public class UMLFolderNode extends UMLElementNode implements ITreeFolder
         this(ch, lookup, new ProjectTreeItemImpl());
     }
     
-    /**
+    
+
+/**
      * @param item
      */
     public UMLFolderNode(IProjectTreeItem item)
@@ -100,7 +102,9 @@ public class UMLFolderNode extends UMLElementNode implements ITreeFolder
         super(item);
     }
     
-    /**
+    
+
+/**
      * @param item
      */
     public UMLFolderNode(Lookup lookup, IProjectTreeItem item)
@@ -108,7 +112,9 @@ public class UMLFolderNode extends UMLElementNode implements ITreeFolder
         super(lookup, item);
     }
     
-    /**
+    
+
+/**
      * @param item
      */
     public UMLFolderNode(Children ch, Lookup lookup, IProjectTreeItem item)
@@ -116,7 +122,9 @@ public class UMLFolderNode extends UMLElementNode implements ITreeFolder
         super(ch, lookup, item);
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeItem#addChild(org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeItem)
     */
     public void addChild(ITreeItem item)
@@ -134,7 +142,9 @@ public class UMLFolderNode extends UMLElementNode implements ITreeFolder
         m_ID = id;
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeFolder#getID()
     */
     public String getID()
@@ -142,7 +152,9 @@ public class UMLFolderNode extends UMLElementNode implements ITreeFolder
         return m_ID;
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeFolder#setGetMethod(java.lang.String)
     */
     public void setGetMethod(String name)
@@ -150,7 +162,9 @@ public class UMLFolderNode extends UMLElementNode implements ITreeFolder
         m_GetMethodName = name;
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeFolder#getGetMethod()
     */
     public String getGetMethod()
@@ -158,7 +172,9 @@ public class UMLFolderNode extends UMLElementNode implements ITreeFolder
         return m_GetMethodName;
     }
     
-    /**
+    
+
+/**
      * Sets the element that this tree folder represents.
      *
      * @param newVal The element that this folder represents
@@ -173,7 +189,9 @@ public class UMLFolderNode extends UMLElementNode implements ITreeFolder
     }
     
     
-    /**
+    
+
+/**
      * Get the new types that can be created in this node. For example, a node
      * representing a class will permit attributes, operations, classes,
      * interfaces, and enumerations to be added.
@@ -251,7 +269,9 @@ public class UMLFolderNode extends UMLElementNode implements ITreeFolder
         return false;
     }
     
-    /**
+    
+
+/**
      * Returns the element that this tree folder represents.
      *
      * @return The element that this folder represents, or NULL
@@ -270,7 +290,9 @@ public class UMLFolderNode extends UMLElementNode implements ITreeFolder
         return retVal;
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeFolder#setPath(java.lang.String)
     */
     public void setPath(ITreeItem[] defPath)
@@ -282,7 +304,9 @@ public class UMLFolderNode extends UMLElementNode implements ITreeFolder
         }
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeFolder#setIsGetMethodAnImport(boolean)
     */
     public void setIsGetMethodAnImport(boolean value)
@@ -291,7 +315,9 @@ public class UMLFolderNode extends UMLElementNode implements ITreeFolder
         
     }
     
-    /**
+    
+
+/**
      * Is the get method the one used to get imported packages or elements?
      *
      * retVal <b>true</b> if the get method is one used to get package or element
@@ -310,7 +336,9 @@ public class UMLFolderNode extends UMLElementNode implements ITreeFolder
         return retVal;
     }
     
-    /**
+    
+
+/**
      * Is the get method the one used to get imported elements?
      *
      * @return <b>true</b> if the get method is an import, <b>false</b>
@@ -327,7 +355,9 @@ public class UMLFolderNode extends UMLElementNode implements ITreeFolder
         return retVal;
     }
     
-    /**
+    
+
+/**
      * Is the get method the one used to get imported packages?
      *
      * @return <b>true</b> if the get method is an import, <b>false</b>
@@ -348,7 +378,9 @@ public class UMLFolderNode extends UMLElementNode implements ITreeFolder
     {
         return getName();
     }
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see java.lang.Object#equals(java.lang.Object)
     */
     public boolean equals(Object obj)

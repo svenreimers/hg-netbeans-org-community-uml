@@ -50,12 +50,16 @@ import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure
 
 public interface ICallEvent extends IEvent
 {
-	/**
+	
+
+/**
 	 * Sets / Gets the operation whose invocation raised the call event.
 	*/
 	public IOperation getOperation();
 
-	/**
+	
+
+/**
 	 * Sets / Gets the operation whose invocation raised the call event.
 	*/
 	public void setOperation( IOperation value );

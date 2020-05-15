@@ -42,11 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : CreateObjectAction.java
- * Created on : Sep 18, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.metamodel.common.commonactions;
 
 import org.dom4j.Document;
@@ -64,7 +61,8 @@ public class CreateObjectAction
     implements ICreateObjectAction
 {
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactions.ICreateObjectAction#getClassifier()
      */
     public IClassifier getClassifier()
@@ -74,7 +72,9 @@ public class CreateObjectAction
 
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactions.ICreateObjectAction#getResult()
      */
     public IOutputPin getResult()
@@ -84,7 +84,9 @@ public class CreateObjectAction
 
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactions.ICreateObjectAction#setClassifier(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier)
      */
     public void setClassifier(IClassifier pClassifier)
@@ -92,7 +94,9 @@ public class CreateObjectAction
         addElementByID(pClassifier, "classifier");
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      */
     public void setResult(IOutputPin pPin)
     {

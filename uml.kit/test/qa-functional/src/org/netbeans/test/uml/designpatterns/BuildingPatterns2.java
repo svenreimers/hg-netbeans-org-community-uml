@@ -81,6 +81,7 @@ import org.netbeans.test.umllib.exceptions.NotFoundException;
 import org.netbeans.test.umllib.testcases.UMLTestCase;
 import org.netbeans.test.umllib.util.*;
 
+
 /**
  *
  * @spec uml/DesignPatterns
@@ -278,7 +279,9 @@ public class BuildingPatterns2 extends UMLTestCase {
         assertTrue("There should be "+allRoles.length+" names in parameters compartment, now:"+allRolesInDPStr.split(",").length, allRolesInDPStr.split(",").length==allRoles.length);
     }
 
-    /**
+    
+
+/**
      * Create diagram in package and add pattern with two roles
      * draw link between roles and check results
      * @param fromEl - type for role from wich link is drawn
@@ -469,7 +472,9 @@ public class BuildingPatterns2 extends UMLTestCase {
         }
      }
 
-    /**
+    
+
+/**
      * Create diagram in package and add pattern with two roles
      * draw link between roles and check results
      * @param fromEl - type for role from wich link is drawn
@@ -657,7 +662,9 @@ public class BuildingPatterns2 extends UMLTestCase {
             }
         }
      }
-   /**
+   
+
+/**
      * @caseblock Building Patterns
       */
     public void testDeleteGeneralizationClToClClD() {
@@ -665,7 +672,9 @@ public class BuildingPatterns2 extends UMLTestCase {
         commonDeleteLink(ExpandedElementTypes.CLASS_ROLE,ExpandedElementTypes.CLASS_ROLE,LinkTypes.GENERALIZATION,"Class Diagram");
         makeScreen=false;
     }
-   /**
+   
+
+/**
      * @caseblock Building Patterns
      */
     public void testDeleteGeneralizationInToInClD() {
@@ -673,7 +682,9 @@ public class BuildingPatterns2 extends UMLTestCase {
         commonDeleteLink(ExpandedElementTypes.INTERFACE_ROLE,ExpandedElementTypes.INTERFACE_ROLE,LinkTypes.GENERALIZATION,"Class Diagram");
         makeScreen=false;
     }
-   /**
+   
+
+/**
      * @caseblock Building Patterns
      */
     public void testDeleteImplementationClToInClD() {
@@ -681,7 +692,9 @@ public class BuildingPatterns2 extends UMLTestCase {
         commonDeleteLink(ExpandedElementTypes.CLASS_ROLE,ExpandedElementTypes.INTERFACE_ROLE,LinkTypes.IMPLEMENTATION,"Class Diagram");
         makeScreen=false;
     }
-   /**
+   
+
+/**
      * @caseblock Building Patterns
      */
     public void testDeleteNestedLinkClToClClD() {
@@ -689,7 +702,9 @@ public class BuildingPatterns2 extends UMLTestCase {
         commonDeleteLink(ExpandedElementTypes.CLASS_ROLE,ExpandedElementTypes.CLASS_ROLE,LinkTypes.NESTED_LINK,"Class Diagram");
         makeScreen=false;
     }
-   /**
+   
+
+/**
      * @caseblock Building Patterns
      */
     public void testDeleteDependancyClToRoClD() {
@@ -697,7 +712,9 @@ public class BuildingPatterns2 extends UMLTestCase {
         commonDeleteLink(ExpandedElementTypes.CLASS_ROLE,ExpandedElementTypes.ROLE,LinkTypes.DEPENDENCY,"Class Diagram");
          makeScreen=false;
    }
-   /**
+   
+
+/**
      * @caseblock Building Patterns
      */
     public void testDeleteRealizeAcToRoClD() {
@@ -705,7 +722,9 @@ public class BuildingPatterns2 extends UMLTestCase {
         commonDeleteLink(ExpandedElementTypes.ACTOR_ROLE,ExpandedElementTypes.ROLE,LinkTypes.DEPENDENCY,"Class Diagram");
         makeScreen=false;
     }
-   /**
+   
+
+/**
      * @caseblock Building Patterns
      */
     public void testDeletePermissionUsToClClD() {
@@ -713,7 +732,9 @@ public class BuildingPatterns2 extends UMLTestCase {
        commonDeleteLink(ExpandedElementTypes.USE_CASE_ROLE,ExpandedElementTypes.CLASS_ROLE,LinkTypes.PERMISSION,"Class Diagram");
         makeScreen=false;
     }
-   /**
+   
+
+/**
      * @caseblock Building Patterns
      */
     public void testDeleteNavigableAssocClToClClD() {
@@ -874,7 +895,9 @@ public class BuildingPatterns2 extends UMLTestCase {
             }
         }
     }
-    /**
+    
+
+/**
      * @caseblock Building Patterns
      * @usecase Add attribute trough model tree (Class Diagram)
      */
@@ -884,7 +907,9 @@ public class BuildingPatterns2 extends UMLTestCase {
         commonAddAttribute(true,"Class Diagram");
         makeScreen=false;
     }
-    /**
+    
+
+/**
      * @caseblock Building Patterns
      * @usecase Add attribute through model tree (Component Diagram)
      */
@@ -894,7 +919,9 @@ public class BuildingPatterns2 extends UMLTestCase {
         commonAddAttribute(true,"Component Diagram");
         makeScreen=false;
     }
-    /**
+    
+
+/**
      * @caseblock Building Patterns
      * @usecase Add attribute through diagram (Class Diagram)
      */
@@ -904,7 +931,9 @@ public class BuildingPatterns2 extends UMLTestCase {
         commonAddAttribute(false,"Class Diagram");
         makeScreen=false;
     }
-    /**
+    
+
+/**
      * @caseblock Building Patterns
      * @usecase Add attribute through diagram (Component Diagram)
      */
@@ -939,9 +968,9 @@ public class BuildingPatterns2 extends UMLTestCase {
                     new JButtonOperator(new JDialogOperator("Save"),"No").push();
                 }
             }.start();
-            try{Thread.sleep(100);}catch(Exception ex){}//short sleep to allow others threads to go
+            try{Thread.sleep(100);}catch(Exception ex){}
             d.closeAllDocuments();
-            try{Thread.sleep(100);}catch(Exception ex){}//short sleep to allow others threads to go
+            try{Thread.sleep(100);}catch(Exception ex){}
         }
         catch(Exception ex)
         {

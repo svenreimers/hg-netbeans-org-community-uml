@@ -43,11 +43,8 @@
  */
 
 
-/*
- * File       : VBOpReturnStateHandler.java
- * Created on : Dec 12, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.statehandlers;
 
 import org.dom4j.Node;
@@ -70,7 +67,9 @@ public class VBOpReturnStateHandler extends OpReturnStateHandler
         super(language, stateName);
     }
     
-    /**
+    
+
+/**
      * Updates the operations's return type.
      *
      */

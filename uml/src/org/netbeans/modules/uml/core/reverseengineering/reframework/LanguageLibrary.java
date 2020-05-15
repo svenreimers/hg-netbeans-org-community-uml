@@ -66,7 +66,9 @@ public class LanguageLibrary implements ILanguageLibrary
     private Document m_LookupDocument;
     private Map<String,String> m_Index = new HashMap<String,String>();
     
-    /**
+    
+
+/**
      * The LookupLanguageLibrary will use a configuration file to retrieve 
      * the XMI id of the class that is contained in a Describe project
      * 
@@ -127,7 +129,9 @@ public class LanguageLibrary implements ILanguageLibrary
         return cl;
     }
 
-    /**
+    
+
+/**
      * Retrieves the XML file that is used to lookup the class information.  
      * The XMI Ids must be the same used in the index file.
      * 
@@ -138,20 +142,24 @@ public class LanguageLibrary implements ILanguageLibrary
         return m_LookupFile;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.ILanguageLibrary#setLookupFile(java.lang.String)
      */
     public void setLookupFile(String newval)
     {
         if (newval == null) return ;
         
-        // AZTEC: C++ code did m_IndexName = newval, which is strange
+        
         m_LookupFile = newval;
         m_LookupDocument = XMLManip.getDOMDocumentUseWeakCache(newval);
     }
 
 
-    /**
+    
+
+/**
      * Retrieves the index file used to map the class names to a XMI ID.
      * 
      * @param pVal [out] Then name of the index file.
@@ -161,7 +169,9 @@ public class LanguageLibrary implements ILanguageLibrary
         return m_IndexName;
     }
 
-    /**
+    
+
+/**
      * Sets the index file used to map the class names to a XMI ID.
      * 
      * @param pVal [in] Then name of the index file.

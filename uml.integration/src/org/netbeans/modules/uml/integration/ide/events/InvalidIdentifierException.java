@@ -42,13 +42,10 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File         : InvalidIdentifierException.java
- * Version      : 1.0
- * Description  : Thrown when an invalid identifier is passed to an ElementInfo.
- * Author       : Darshan
- */
+
+
 package org.netbeans.modules.uml.integration.ide.events;
+
 
 /**
  *  Thrown when an invalid identifier is passed to an ElementInfo.

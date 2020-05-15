@@ -42,11 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * DefinitionCustomProperty.java
- *
- * Created on March 17, 2005, 7:51 PM
- */
+
+
 
 package org.netbeans.modules.uml.propertysupport.nodes;
 
@@ -64,7 +61,8 @@ public class DefinitionCustomProperty extends DefinitionPropertySupport
 
    private DefinitionPropertyEditor mEditor = null;
    
-   /**
+   
+/**
     * @param def
     * @param element
     * @param writable
@@ -75,7 +73,9 @@ public class DefinitionCustomProperty extends DefinitionPropertySupport
       this(def, element, true, true);      
    }
    
-   /**
+   
+
+/**
     * @param def
     * @param element
     * @param writable`

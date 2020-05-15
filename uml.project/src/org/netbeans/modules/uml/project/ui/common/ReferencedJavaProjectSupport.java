@@ -42,11 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * ReferencedJavaProjectSupport.java
- *
- * Created on March 14, 2005, 6:40 PM
- */
+
+
 
 package org.netbeans.modules.uml.project.ui.common;
 import org.netbeans.modules.uml.project.ui.common.JavaSourceRootsUI.JavaSourceRootsModel;

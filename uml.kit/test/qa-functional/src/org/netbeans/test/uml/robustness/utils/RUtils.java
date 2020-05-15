@@ -138,17 +138,4 @@ public class RUtils {
     
     public static boolean checkCycleOneElement(DiagramOperator diagram, ElementTypes elementType, LinkTypes linkType){
         boolean result = false;
-        String elementName = "RT_" + elementType.toString().substring(0, 3);
-        DiagramElementOperator elem = diagram.putElementOnDiagram(elementName, elementType);
-        diagram.createGenericRelationshipOnDiagram(linkType, elem, elem);
-        try {
-            LinkOperator link = new LinkOperator(elem, elem);
-            result = link != null;
-        }catch(TimeoutExpiredException e1){}
-        
-        return result;
-    }
-    
-}
-
-
+        String elementName = "RT_"

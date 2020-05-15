@@ -49,29 +49,39 @@ import org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeItem;
 
 public interface IProjectTreeExpandingContext
 {
-	/**
+	
+
+/**
 	 * The item being expanding.
 	*/
 	public IProjectTreeItem getProjectTreeItem();
 
-   /**
+   
+
+/**
     * Retrieve the item that is object of the event.
     *
     * @return The tree item.
     */
    public ITreeItem getTreeItem( );
 
-	/**
+	
+
+/**
 	 * The item being expanding.
 	*/
 	public void setTreeItem( ITreeItem value );
 
-	/**
+	
+
+/**
 	 * TRUE to cancel this expand.
 	*/
 	public boolean isCancel();
 
-	/**
+	
+
+/**
 	 * TRUE to cancel this expand.
 	*/
 	public void setCancel( boolean value );

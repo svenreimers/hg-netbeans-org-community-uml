@@ -43,6 +43,8 @@
  */
 
 
+
+
 /*
  * Created on Jul 15, 2003
  *
@@ -82,7 +84,9 @@ public class NewDialog implements INewDialog
 	/// The results of this dialog
 	INewDialogTabDetails  m_Results = null;
 
-	/**
+	
+
+/**
 	 * 
 	 */
 	public NewDialog()
@@ -106,7 +110,9 @@ public class NewDialog implements INewDialog
 //		}
 	}
 
-	/**
+	
+
+/**
 	 * Display the dialog.
 	 *
 	 * @param parent[in] The HWND parent for this dialog
@@ -118,7 +124,9 @@ public class NewDialog implements INewDialog
 		return display2(null, parent);
 	}
 
-	/**
+	
+
+/**
 	 * Display the dialog.
 	 *
 	 * @param pValidateProcessor [in] The validator object used to make sure the tabs are valid
@@ -204,7 +212,9 @@ public class NewDialog implements INewDialog
 		return retObj;
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.newdialog.INewDialog#putDefaultTab(int)
 	 */
 	public long putDefaultTab(int nDefaultTab)
@@ -213,7 +223,9 @@ public class NewDialog implements INewDialog
 		return 0;
 	}
 
-	/**
+	
+
+/**
 	 * Adds a tab to the dialog.  If the user doesn't specify then by default
 	 * all are on. Once the user adds a specific tab all others are turned off.
 	 *
@@ -280,7 +292,9 @@ public class NewDialog implements INewDialog
 		return 0;
 	}
 
-	/**
+	
+
+/**
 	 * Is this a tab that is gonna get displayed?
 	 *
 	 * @param nTabKind [in] The tab kind to see if it's gonna display.  Don't use
@@ -313,7 +327,9 @@ public class NewDialog implements INewDialog
 		return result;
 	}
 
-	/**
+	
+
+/**
 	 * Provides defaults to one of the tabs.
 	 *
 	 * @param pDetails[in]
@@ -366,7 +382,9 @@ public class NewDialog implements INewDialog
 		return 0;
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.newdialog.INewDialog#getResult()
 	 */
 	public INewDialogTabDetails getResult()
@@ -374,7 +392,9 @@ public class NewDialog implements INewDialog
 		return m_Results;
 	}
 
-	/**
+	
+
+/**
 	 * Returns the silent flag for this dialog.  If silent then any Display calls will
 	 * not display a dialog, but rather immediately return S_OK;
 	 *
@@ -387,7 +407,9 @@ public class NewDialog implements INewDialog
 		return m_bRunSilent;
 	}
 
-	/**
+	
+
+/**
 	 * Sets the silent flag for this dialog.  If silent then any Display calls will
 	 * not display a dialog, but rather immediately return S_OK;
 	 *

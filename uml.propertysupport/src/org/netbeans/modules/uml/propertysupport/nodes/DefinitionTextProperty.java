@@ -52,7 +52,8 @@ import org.netbeans.modules.uml.core.support.umlutils.IPropertyElement;
  */
 public class DefinitionTextProperty extends DefinitionPropertySupport
 {
-   /**
+   
+/**
     * @param def
     * @param element
     * @param writable
@@ -64,7 +65,9 @@ public class DefinitionTextProperty extends DefinitionPropertySupport
    }
    
 
-   /**
+   
+
+/**
     * @param def
     * @param element
     * @param writable

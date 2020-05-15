@@ -99,6 +99,7 @@ import org.netbeans.modules.uml.integration.ide.events.MethodInfo;
 import org.netbeans.modules.uml.integration.ide.events.MethodParameterInfo;
 
 
+
 /**
  *  Utility functions for general NetBeans housekeeping. Try not to put in
  * functions here that should go into NBFileUtils, and vice versa. As a rule,
@@ -109,7 +110,8 @@ import org.netbeans.modules.uml.integration.ide.events.MethodParameterInfo;
  */
 public final class NBUtils {
     //////////////////////////// Constants ////////////////////////////////
-    /**
+    
+/**
      *  The time that must elapse (in milliseconds) after an error message has
      * been displayed before an identical error message can be displayed to the
      * user.
@@ -132,7 +134,9 @@ public final class NBUtils {
     public static final String NETBEANS_PREFIX = "NB:";
 
     ////////////////////////// UI related functions ///////////////////////////
-    /**
+    
+
+/**
      *  Obtains the main Forte (NetBeans) window's Frame object.
      *
      * @return The <code>Frame</code> for the main window, or null if the main
@@ -155,7 +159,9 @@ public final class NBUtils {
         return retFrame;
     }
 
-    /**
+    
+
+/**
      * Determines whether the UI is busy. We consider the UI busy if any of
      * these conditions is true: <br/>
      * <ol>
@@ -187,7 +193,9 @@ public final class NBUtils {
         return false;
     }
 
-    /**
+    
+
+/**
      *  Locates the first TopComponent of the given class in the given mode.
      * Note that subclasses of the given class will not be considered to match,
      * since we use Class object comparison (yup, that's evil and how NetBeans
@@ -212,7 +220,9 @@ public final class NBUtils {
         return null;
     }
 
-    /**
+    
+
+/**
      * Locates the first TopComponent with the given class name in the given
      * mode.
      *
@@ -236,7 +246,9 @@ public final class NBUtils {
         return null;
     }
 
-    /**
+    
+
+/**
      *  Locates the first TopComponent of the given class open in any of the
      * open workspaces. Note that subclasses of the given class will not be
      * considered to match.
@@ -268,7 +280,9 @@ public final class NBUtils {
         return null;
     }
 
-    /**
+    
+
+/**
      *  Locates the first TopComponent of the given class open in any of the
      * open workspaces. Note that subclasses of the given class will not be
      * considered to match.
@@ -303,7 +317,9 @@ public final class NBUtils {
     }
 
 
-    /**
+    
+
+/**
      * Finds the mode with the given id in the current NetBeans workspace.
      * @param modeId The mode id <code>String</code>
      * @return The <code>Mode</code> found.
@@ -332,7 +348,9 @@ public final class NBUtils {
         }
     }
 
-    /**
+    
+
+/**
      *  Retrieves the first instance of the Describe system tree in the given
      * Mode.
      *
@@ -345,7 +363,9 @@ public final class NBUtils {
 //                                    GDSystemTreeComponent.class);
 //    }
 
-    /**
+    
+
+/**
      *  Installs the given actions into the supplied toolbar, instantiating
      * the actions if necessary, but reusing the actions found in the toolbar
      * if possible.
@@ -373,7 +393,9 @@ public final class NBUtils {
         }
     }
 
-    /**
+    
+
+/**
      * A method which creates action in specified folder without setting order.
      *
      * @param actionClass the class of the action to add to the menu
@@ -400,7 +422,9 @@ public final class NBUtils {
         return InstanceDataObject.create (folder, instanceName, actionName);
     }
 
-    /**
+    
+
+/**
      *  Displays an error message to the user, using the given error code to
      * obtain a localized message from the default resource bundle, using
      * MessageFormat on the resulting message if arguments are specified, and
@@ -418,7 +442,9 @@ public final class NBUtils {
 //        showErrCode(errCode, args, title, false);
 //    }
 
-    /**
+    
+
+/**
      *  Displays an error message to the user, using the given error code to
      * obtain a localized message from the default resource bundle, using
      * MessageFormat on the resulting message if arguments are specified, and
@@ -471,7 +497,9 @@ public final class NBUtils {
         );
     }
 
-    /**
+    
+
+/**
      *  Convenience function for showErrCode(String, Object[], String, boolean),
      * with dontSpam set to true.
      *
@@ -485,7 +513,9 @@ public final class NBUtils {
         showErrCode(errCode, args, title, true);
     }
 
-    /**
+    
+
+/**
      * Logs the fully-qualified class names of the given component, and
      * all child components (assuming the component is an AWT container),
      * traversing recursively down.
@@ -496,7 +526,9 @@ public final class NBUtils {
         dumpComponent(c, 0);
     }
 
-    /**
+    
+
+/**
      * Traverses the AWT component hierarchy for the given component, and
      * returns the first child component that is an instance of the given Class
      * object.
@@ -520,7 +552,9 @@ public final class NBUtils {
         return null;
     }
 
-    /**
+    
+
+/**
      * Strips the first ampersand character from the given string.
      * @param name A <code>String</code>, possibly containing '&amp;'
      *        characters.
@@ -539,7 +573,9 @@ public final class NBUtils {
         return name;
     }
 
-    /**
+    
+
+/**
      * Strips the extension from a filename.
      *
      * @param name A filename
@@ -574,14 +610,18 @@ public final class NBUtils {
     ////////////////////////// End UI functions ///////////////////////////////
 
     //////////////////// Source code utility functions ////////////////////////
-    /**
+    
+
+/**
      *  Returns the fully qualified decorated name of the given ClassElement.
      * @param clazz The ClassElement.
      * @return <code>null</code> if clazz is null, else the fully qualified
      *         decorated name. Decorated names use '.' to separate package
      *         names and '$' to separate (inner) class names.
      */
-    /* NB60TBD 
+    
+
+/* NB60TBD 
     public static String getDecoratedName(ClassElement clazz) {
         if (clazz == null) return null;
 
@@ -591,10 +631,14 @@ public final class NBUtils {
     }
     */
 
-    /* NB60TBD 
+    
+
+/* NB60TBD 
     public static String getDecoratedName(JavaClass clazz) {
         if (clazz == null) return null;
-       */  /*fully qualified decorated name minus the package prefix*/ /* NB60TBD 
+       */  /*fully qualified decorated name minus the package prefix*/ 
+
+/* NB60TBD 
         String typeQualifiedName = "";
         
         String fullName = clazz.getName();
@@ -606,14 +650,18 @@ public final class NBUtils {
 
     }
 */
-    /**
+    
+
+/**
      *  Returns the package name for the given ClassElement.
      * @param clazz The ClassElement.
      * @return <code>null</code> if clazz is null, else the package name ("" for
      *         ClassElements in the default package). The name will always be
      *         trimmed.
      */
-    /* NB60TBD 
+    
+
+/* NB60TBD 
     public static String getPackageName(ClassElement clazz) {
         if (clazz == null) return null;
 
@@ -622,7 +670,9 @@ public final class NBUtils {
         return (id != null ? id.getFullName().trim() : "");
     }
     */
-    /**
+    
+
+/**
      * Returns the name of the current project.
      * @return The <code>String</code> name of the current project.
      */
@@ -638,7 +688,9 @@ public final class NBUtils {
 //        return null;
 //    }
 
-    /**
+    
+
+/**
      *  Returns the fully qualified decorated name <em>minus</em> the package
      * prefix.
      *
@@ -648,7 +700,9 @@ public final class NBUtils {
      *         a package prefix. Note that inner class names will be separated
      *         by '$'.
      */
-    /* NB60TBD 
+    
+
+/* NB60TBD 
     public static String getTypeQualifiedName(ClassElement clazz) {
         if (clazz == null) return null;
 
@@ -658,7 +712,9 @@ public final class NBUtils {
         return getTypeQualifiedName(pack, name, null);
     }
     */
-    /**
+    
+
+/**
      *  Returns the fully qualified decorated name of a ClassElement (given its
      * name Identifier) <em>minus</em> the package prefix.
      *
@@ -679,7 +735,9 @@ public final class NBUtils {
      *         always a bad thing). Note that inner class names will be
      *         separated by '$' (all '.' are replaced by '$') in all cases.
      */
-    /* NB60TBD 
+    
+
+/* NB60TBD 
     public static String getTypeQualifiedName(String packageName,
                                               Identifier id,
                                               ClassElement clazz) {
@@ -702,7 +760,9 @@ public final class NBUtils {
         return fullName.replace('.', '$');
     }
     */
-    /**
+    
+
+/**
      *  Retrieves a ConstructorElement for the given MethodInfo. This works
      * for both constructors and normal methods.
      *
@@ -711,7 +771,9 @@ public final class NBUtils {
      * @return A <code>ConstructorElement</code> for the method, if found, or
      *         <code>null</code> otherwise.
      */
-    /*public static ConstructorElement getMethod(MethodInfo method) {
+    
+
+/*public static ConstructorElement getMethod(MethodInfo method) {
         // EARLY EXIT
         if (method == null || method.getContainingClass() == null) return null;
 
@@ -720,7 +782,9 @@ public final class NBUtils {
                 JavaClassUtils.getInnerClassName(clazz.getName())));
     }*/
 
-    /**
+    
+
+/**
      *  Retrieves a ConstructorElement for the given MethodInfo.
      *
      * @param method The MethodInfo for the method to be located. The
@@ -731,7 +795,9 @@ public final class NBUtils {
      * @return A <code>ConstructorElement</code> for the method, if found, or
      *         <code>null</code> otherwise.
      */
-    /*public static ConstructorElement getMethod(MethodInfo method,boolean isConstructor){
+    
+
+/*public static ConstructorElement getMethod(MethodInfo method,boolean isConstructor){
         ConstructorElement mElement = null;
         Log.out("Entering method NBEventProcessor :: methodExists");
         Log.out("Looking for method " + method.toString());
@@ -771,7 +837,9 @@ methodHunt:
     }*/
     
 
-    /**
+    
+
+/**
      *  Retrieves an ElementHandle for the given MethodInfo.
      *
      * @param method The MethodInfo for the method to be located. The
@@ -899,7 +967,9 @@ methodHunt:
         return retVal;
     }
     
-    /* NB60TBD 
+    
+
+/* NB60TBD 
     private static CallableFeature resolveMethod(MethodInfo method, 
                                                  JavaClass clazz,
                                                  boolean isConstructor)
@@ -1060,7 +1130,9 @@ methodHunt:
 //        return mElement;
 //    }
 
-    /**
+    
+
+/**
      *  Retrieves a FieldElement for the given MemberInfo.
      *
      * @param attr The <code>MemberInfo</code> for which the FieldElement must
@@ -1068,6 +1140,8 @@ methodHunt:
      * @return The <code>FieldElement</code> corresponding to the MemberInfo, or
      *         <code>null</code> if a FieldElement could not be found.
      */
+
+
 /* NB60TBD 
     public static FieldElement getFieldElement(MemberInfo attr) {
         if (attr == null) return null;
@@ -1125,11 +1199,15 @@ methodHunt:
 
 
 
-    /**
+    
+
+/**
      *  Updates a ClassInfo to the Describe model.
      * @param ci The <code>ClassInfo</code> containing information to be updated
      *           to the Describe model.
      */
+
+
 /* NB60TBD 
     synchronized public static void update(final ClassInfo ci) {
         // EARLY EXIT
@@ -1153,7 +1231,9 @@ methodHunt:
     ///////////////////////////////////////////////////////////////////////
     // No public methods or attributes beyond this point!
     ///////////////////////////////////////////////////////////////////////
-    /**
+    
+
+/**
      *  Not intended to be instantiated. Static class, and all that sort of
      * stuff.
      */
@@ -1178,7 +1258,9 @@ methodHunt:
         }
     }
     
-    /**
+    
+
+/**
      * Determeines whether Describe and Describe project is connected
      */
 //    private static boolean isLocalAndGlobalConnected() {
@@ -1194,18 +1276,24 @@ methodHunt:
 //        return true;
 //    }
 
-    /**
+    
+
+/**
      * The last error dialog message text shown to the user.
      */
     private static String  lastError     = null;
 
-    /**
+    
+
+/**
      * The time (as returned by System.currentTimeMillis()) when the last error
      * message was displayed.
      */
     private static long    lastErrorTime = 0;
 
-    /**
+    
+
+/**
      * Our instance of NBFileUtils, since we may need file services ourselves.
      */
     private static final NBFileUtils fileUtils = new NBFileUtils();

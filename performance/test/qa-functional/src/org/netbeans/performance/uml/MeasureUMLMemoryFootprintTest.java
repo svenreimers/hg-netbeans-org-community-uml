@@ -50,6 +50,7 @@ import org.netbeans.junit.NbTestSuite;
 import org.netbeans.modules.performance.utilities.PerformanceTestCase;
 import org.netbeans.performance.uml.footprint.UMLWorkflow;
 
+
 /**
  * Measure UI-RESPONSIVENES and WINDOW_OPENING.
  *

@@ -65,7 +65,9 @@ public class NewDialogProjectDetails implements INewDialogProjectDetails
 	private boolean  m_CreateDiagram;
    private IProject m_Project;
 
-	/**
+	
+
+/**
 	 * 
 	 */
 	public NewDialogProjectDetails()
@@ -78,7 +80,9 @@ public class NewDialogProjectDetails implements INewDialogProjectDetails
 		m_IsLanguageReadOnly = false;
 	}
 
-	/**
+	
+
+/**
 	 * Name of the project.
 	 *
 	 * @param pVal[out]
@@ -90,7 +94,9 @@ public class NewDialogProjectDetails implements INewDialogProjectDetails
 		return m_Name;
 	}
 
-	/**
+	
+
+/**
 	 * Name of the project.
 	 *
 	 * @param pVal[out]
@@ -102,7 +108,9 @@ public class NewDialogProjectDetails implements INewDialogProjectDetails
 		m_Name = value;
 	}
 
-	/**
+	
+
+/**
 	 * Location of the project.
 	 *
 	 * @param pVal[out]
@@ -114,7 +122,9 @@ public class NewDialogProjectDetails implements INewDialogProjectDetails
 		return m_Location;
 	}
 
-	/**
+	
+
+/**
 	 * Location of the project.
 	 *
 	 * @param pVal[out]
@@ -126,7 +136,9 @@ public class NewDialogProjectDetails implements INewDialogProjectDetails
 		m_Location = value;
 	}
 
-	/**
+	
+
+/**
 	 * Should this project be added to source control?
 	 *
 	 * @param pVal[out]
@@ -138,7 +150,9 @@ public class NewDialogProjectDetails implements INewDialogProjectDetails
 		return m_AddToSourceControl;
 	}
 
-	/**
+	
+
+/**
 	 * Should this project be added to source control?
 	 *
 	 * @param pVal[out]
@@ -150,7 +164,9 @@ public class NewDialogProjectDetails implements INewDialogProjectDetails
 		m_AddToSourceControl = value;
 	}
 
-	/**
+	
+
+/**
 	 * The kind of project to create.
 	 *
 	 * @param pVal[out]
@@ -162,7 +178,9 @@ public class NewDialogProjectDetails implements INewDialogProjectDetails
 		return m_ProjectKind;
 	}
 
-	/**
+	
+
+/**
 	 * The kind of project to create.
 	 *
 	 * @param pVal[out]
@@ -174,7 +192,9 @@ public class NewDialogProjectDetails implements INewDialogProjectDetails
 		m_ProjectKind = value;
 	}
 
-	/**
+	
+
+/**
 	 * The default mode of the project.
 	 *
 	 * @param pVal[out]
@@ -186,7 +206,9 @@ public class NewDialogProjectDetails implements INewDialogProjectDetails
 		return m_Mode;
 	}
 
-	/**
+	
+
+/**
 	 * The default mode of the project.
 	 *
 	 * @param pVal[out]
@@ -198,7 +220,9 @@ public class NewDialogProjectDetails implements INewDialogProjectDetails
 		m_Mode = value;
 	}
 
-	/**
+	
+
+/**
 	 * The default language of the project.
 	 *
 	 * @param pVal[out]
@@ -210,7 +234,9 @@ public class NewDialogProjectDetails implements INewDialogProjectDetails
 		return m_Language;
 	}
 
-	/**
+	
+
+/**
 	 * The default language of the project.
 	 *
 	 * @param pVal[in]
@@ -222,7 +248,9 @@ public class NewDialogProjectDetails implements INewDialogProjectDetails
 		m_Language = value;
 	}
 
-	/**
+	
+
+/**
 	 * Should the dialog show the From Reverse Engineering selection?
 	 *
 	 * @param pVal[out]
@@ -234,7 +262,9 @@ public class NewDialogProjectDetails implements INewDialogProjectDetails
 		return m_AllowFromRESelection;
 	}
 
-	/**
+	
+
+/**
 	 * Should the dialog show the From Reverse Engineering selection?
 	 *
 	 * @param pVal[out]
@@ -246,7 +276,9 @@ public class NewDialogProjectDetails implements INewDialogProjectDetails
 		m_AllowFromRESelection = value;
 	}
 
-	/**
+	
+
+/**
 	 * Specifies if the language control is to be read.
 	 *
 	 * @param *pVal [out] True if readonly, false otherwise.
@@ -256,7 +288,9 @@ public class NewDialogProjectDetails implements INewDialogProjectDetails
 		return m_IsLanguageReadOnly;
 	}
 
-	/**
+	
+
+/**
 	 * Specifies if the language control is to be read.
 	 *
 	 * @param *pVal [out] True if readonly, false otherwise.
@@ -266,7 +300,9 @@ public class NewDialogProjectDetails implements INewDialogProjectDetails
 		m_IsLanguageReadOnly = value;
 	}
 
-	/**
+	
+
+/**
 	 * Specifies whether or not to prompt the user to create a new diagram.
 	 *
 	 * @param *pVal [out] True if the user is to be prompted
@@ -276,7 +312,9 @@ public class NewDialogProjectDetails implements INewDialogProjectDetails
 		return m_CreateDiagram;
 	}
 
-	/**
+	
+
+/**
 	 * Specifies whether or not to prompt the user to create a new diagram.
 	 *
 	 * @param *pVal [out] True if the user is to be prompted
@@ -286,7 +324,9 @@ public class NewDialogProjectDetails implements INewDialogProjectDetails
 		m_CreateDiagram = value;
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.controls.newdialog.INewDialogProjectDetails#getCreatedProject()
 	 */
 	public IProject getCreatedProject()
@@ -294,7 +334,9 @@ public class NewDialogProjectDetails implements INewDialogProjectDetails
 		return m_Project;
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 */
 	public void setCreatedProject(IProject value)
 	{

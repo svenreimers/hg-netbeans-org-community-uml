@@ -43,12 +43,8 @@
  */
 
 
-/*
- * DiagramTypes.java
- *
- * Created on January 19, 2006, 4:57 PM
- *
- */
+
+
 
 package org.netbeans.test.umllib;
 
@@ -72,7 +68,9 @@ public enum DiagramTypes {
         this.type = val;
     }
     
-    /**
+    
+
+/**
      * 
      * @return 
      */

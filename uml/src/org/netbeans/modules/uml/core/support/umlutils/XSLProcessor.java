@@ -45,6 +45,7 @@
 package org.netbeans.modules.uml.core.support.umlutils;
 
 import javax.xml.transform.Transformer;
+
 /**
  * <p>Title: </p>
  * <p>Description: </p>

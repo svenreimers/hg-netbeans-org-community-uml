@@ -43,6 +43,8 @@
  */
 
 
+
+
 /*
  * Created on May 27, 2003
  *
@@ -364,7 +366,9 @@ public class ProductHelper
 		return null;
 	}
 
-	/**
+	
+
+/**
 	 * Returns the number of open projects
 	 *
 	 * @param bAllExtensions[in]		Whether or not to include all project types (etd, etpat) that are open
@@ -383,7 +387,9 @@ public class ProductHelper
 		return count;
 	}
 
-	/**
+	
+
+/**
 	 * Returns the open projects
 	 *
 	 * @param pProjects [out] The list of the open projects
@@ -430,7 +436,7 @@ public class ProductHelper
 	{
 	}
    
-	/// Gets the data formatter on the product
+	
 	public static IDataFormatter getDataFormatter()
 	{
 		IDataFormatter retVal = null;
@@ -481,12 +487,14 @@ public class ProductHelper
 		return null;
 	}
    
-	/**
+	
+
+/**
 	 * Helper for showing the qualified name
 	 */
 	public static boolean useProjectInQualifiedName()
    {
-            //kris richards - "ProjectNamespace" pref has been removed; set to false.
+            
             return false;
 		
    }
@@ -496,7 +504,7 @@ public class ProductHelper
 
 	/// Helpers for the aliased names
         public static boolean getShowAliasedNames() {
-            //kris richards - changing to NbPrefs
+            
             return NbPreferences.forModule(ProductHelper.class).getBoolean("UML_Show_Aliases", false) ;
         }
         
@@ -514,7 +522,9 @@ public class ProductHelper
 	//private static DWORD m_ThreadIDForCoreProduct;
 
 	/// The core product for the thread m_ThreadIDForCoreProduct
-	private static ICoreProduct m_CoreProductForThreadID = null;/**
+	private static ICoreProduct m_CoreProductForThreadID = null;
+
+/**
     * @param string
     * @param string2
     * @param b

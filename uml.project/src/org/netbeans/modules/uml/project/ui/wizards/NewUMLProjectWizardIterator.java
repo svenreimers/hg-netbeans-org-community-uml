@@ -70,6 +70,8 @@ import org.netbeans.modules.uml.project.ui.UMLProjectSettings;
 import org.netbeans.modules.uml.project.ui.common.JavaSourceRootsUI;
 
 
+
+
 /**
  * Wizard to create a new UML project.
  */

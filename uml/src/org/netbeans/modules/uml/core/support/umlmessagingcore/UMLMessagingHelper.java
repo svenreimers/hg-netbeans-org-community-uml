@@ -48,6 +48,8 @@ import org.netbeans.modules.uml.core.coreapplication.CoreProductManager;
 import org.netbeans.modules.uml.core.coreapplication.ICoreProduct;
 import org.netbeans.modules.uml.core.coreapplication.ICoreProductManager;
 
+
+
 /**
  * This is a messenger helper class.  It automatically gets the correct message service so
  * you don't have to remember how to do it.  Users just call SendMessage to send messages out
@@ -68,7 +70,9 @@ public class UMLMessagingHelper
 		m_Facility = facility;
 	}
 	
-	/**
+	
+
+/**
 	 * Sends a message.
 	 *
 	 * @param pMessageData The message to be sent.
@@ -82,7 +86,9 @@ public class UMLMessagingHelper
 		}
 	}
 	
-	/**
+	
+
+/**
 	 * Sends a message.
 	 *
 	 * @param MESSAGE_TYPE The type of the message
@@ -97,7 +103,9 @@ public class UMLMessagingHelper
 		}
 	}
 	
-	/**
+	
+
+/**
 	 * Returns an IMessageService.  If possible it returns a cached one, otherwise this routine goes to the
 	 * product manager and then to the product to get the message service.  Note that the message service is
 	 * not a smart pointer 'cause I don't want this little helper class to be holding onto the service.
@@ -116,7 +124,9 @@ public class UMLMessagingHelper
 		return m_pMessageService;
 	}
 
-    /**
+    
+
+/**
      * Sends a message that is marked as a critical error.
      *
      * @param message The message.
@@ -126,7 +136,9 @@ public class UMLMessagingHelper
 		sendMessage(MsgCoreConstants.MT_CRITICAL, message);
 	}
 	
-    /**
+    
+
+/**
      * Sends a message that is marked as an error.
      *
      * @param message The message.
@@ -141,7 +153,9 @@ public class UMLMessagingHelper
 		sendMessage(MsgCoreConstants.MT_WARNING, message);
 	}
 	
-    /**
+    
+
+/**
      * Sends a message that is marked as an informational message.
      *
      * @param message The message.
@@ -151,7 +165,9 @@ public class UMLMessagingHelper
 		sendMessage(MsgCoreConstants.MT_INFO, message);
 	}
 	
-    /**
+    
+
+/**
      * Sends a message that is marked as a debug message.
      *
      * @param message The message.
@@ -161,7 +177,9 @@ public class UMLMessagingHelper
 		sendMessage(MsgCoreConstants.MT_DEBUG, message);
 	}
     
-    /**
+    
+
+/**
      * Sends a message that is marked as an error message.  The error message
      * is retrieved from the throwable exception.
      *

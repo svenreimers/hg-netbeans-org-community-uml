@@ -50,29 +50,39 @@ import org.netbeans.modules.uml.core.support.umlsupport.IResultCell;
 
 public interface ITypedElementEventsSink
 {
-	/**
+	
+
+/**
 	 * Fired whenever the Multiplicity object on a particular element is about to be modified.
 	*/
 	public void onPreMultiplicityModified( ITypedElement element, IMultiplicity proposedValue, IResultCell cell );
 
-	/**
+	
+
+/**
 	 * Fired whenever the Multiplicity object on a particular element was just modified.
 	*/
 	public void onMultiplicityModified( ITypedElement element, IResultCell cell );
 
-	/**
+	
+
+/**
 	 * Fired whenever the type on a particular element is about to be modified.
 	*/
 	public void onPreTypeModified( ITypedElement element, IClassifier proposedValue, IResultCell cell );
 
-	/**
+	
+
+/**
 	 * Fired whenever the type flag on a particular element was just modified.
 	 * @param element The element that changed
          * @param cell The event result.
          */
 	public void onTypeModified( ITypedElement element, IResultCell cell );
 
-	/**
+	
+
+/**
 	 * Fired when the lower property on the passed in range is about to be modified.
          * 
 	 * @param element The type that owned the multilicity element
@@ -83,7 +93,9 @@ public interface ITypedElementEventsSink
 	*/
 	public void onPreLowerModified( ITypedElement element, IMultiplicity mult, IMultiplicityRange range, String proposedValue, IResultCell cell );
 
-	/**
+	
+
+/**
 	 * Fired when the lower property on the passed in range was modified.
          * 
 	 * @param element The type that owned the multilicity element
@@ -93,7 +105,9 @@ public interface ITypedElementEventsSink
 	*/
 	public void onLowerModified( ITypedElement element, IMultiplicity mult, IMultiplicityRange range, IResultCell cell );
 
-	/**
+	
+
+/**
 	 * Fired when the upper property on the passed in range is about to be modified.
          * 
 	 * @param element The type that owned the multilicity element
@@ -104,7 +118,9 @@ public interface ITypedElementEventsSink
 	*/
 	public void onPreUpperModified( ITypedElement element, IMultiplicity mult, IMultiplicityRange range, String proposedValue, IResultCell cell );
 
-	/**
+	
+
+/**
 	 * Fired when the upper property on the passed in range was modified.
          * 
 	 * @param element The type that owned the multilicity element
@@ -114,7 +130,9 @@ public interface ITypedElementEventsSink
 	*/
 	public void onUpperModified( ITypedElement element, IMultiplicity mult, IMultiplicityRange range, IResultCell cell );
 
-	/**
+	
+
+/**
 	 * Fired when a new range is about to be added to the passed in multiplicity.
          * 
 	 * @param element The type that owned the multilicity element
@@ -124,7 +142,9 @@ public interface ITypedElementEventsSink
 	*/
 	public void onPreRangeAdded( ITypedElement element, IMultiplicity mult, IMultiplicityRange range, IResultCell cell );
 
-	/**
+	
+
+/**
 	 * Fired when a new range is added to the passed in multiplicity.
          * 
 	 * @param element The type that owned the multilicity element
@@ -134,7 +154,9 @@ public interface ITypedElementEventsSink
 	*/
 	public void onRangeAdded( ITypedElement element, IMultiplicity mult, IMultiplicityRange range, IResultCell cell );
 
-	/**
+	
+
+/**
 	 * Fired when an existing range is about to be removed from the passed in multiplicity.
          * 
 	 * @param element The type that owned the multilicity element
@@ -144,7 +166,9 @@ public interface ITypedElementEventsSink
 	*/
 	public void onPreRangeRemoved( ITypedElement element, IMultiplicity mult, IMultiplicityRange range, IResultCell cell );
 
-	/**
+	
+
+/**
 	 * Fired when an existing range is removed from the passed in multiplicity.
          * 
 	 * @param element The type that owned the multilicity element
@@ -154,7 +178,9 @@ public interface ITypedElementEventsSink
 	*/
 	public void onRangeRemoved( ITypedElement element, IMultiplicity mult, IMultiplicityRange range, IResultCell cell );
 
-	/**
+	
+
+/**
 	 * Fired when the order property is about to be changed on the passed in mulitplicity.
          * 
 	 * @param element The type that owned the multilicity element
@@ -164,7 +190,9 @@ public interface ITypedElementEventsSink
 	*/
 	public void onPreOrderModified( ITypedElement element, IMultiplicity mult, boolean proposedValue, IResultCell cell );
 
-	/**
+	
+
+/**
 	 * Fired when the order property is changed on the passed in mulitplicity.
          * 
 	 * @param element The type that owned the multilicity element
@@ -173,7 +201,9 @@ public interface ITypedElementEventsSink
 	*/
 	public void onOrderModified( ITypedElement element, IMultiplicity mult, IResultCell cell );
         
-        /**
+        
+
+/**
 	 * Fired when the collection type property is changed on the passed in 
          * range.
 	 * @param element The type that owned the multilicity element

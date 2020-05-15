@@ -58,6 +58,7 @@ import org.netbeans.modules.project.ui.test.ProjectSupport;
 
 
 
+
 /**
  * Test Open UML Project
  *
@@ -67,7 +68,8 @@ public class OpenUMLProject extends PerformanceTestCase {
     private static String projectName = "jEdit-Model-open";
     private JButtonOperator openButton;
 
-    /**
+    
+/**
      * Creates a new instance of OpenUMLProject
      * @param testName the name of the test
      */
@@ -77,7 +79,9 @@ public class OpenUMLProject extends PerformanceTestCase {
         WAIT_AFTER_OPEN = 4000;
     }
 
-    /**
+    
+
+/**
      * Creates a new instance of OpenUMLProject
      * @param testName the name of the test
      * @param performanceDataName measured values will be saved under this name

@@ -42,14 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File         : ClassInfo.java
- * Version      : 1.5
- * Description  : A metaclass for Java classes, used for transferring
- *                information between IDE integrations and the Describe
- *                IDE integration package.
- * Author       : Trey Spiva
- */
+
+
 package org.netbeans.modules.uml.integration.ide.events;
 
 import java.io.File;
@@ -101,105 +95,42 @@ import org.openide.ErrorManager;
 import org.openide.filesystems.FileObject;
 import org.openide.filesystems.FileUtil;
 
-/**
- * A metaclass for Java classes, used for transferring information between IDE
- * integrations and the Describe IDE integration package.  This class is not
- * synchronized.  If you use a single ClassInfo instance in multiple threads,
- * the responsibility for synchronization is with the caller.
- *
- * Revision History
- * No.  Date        Who         What
- * ---  ----        ---         ----
- *   1  2002-04-23  Darshan     Added preliminary support for a ClassInfo to
- *                              be constructed from an IClass, to be used
- *                              in model-source operations.
- *   2  2002-04-24  Darshan     Added more model-source support attributes
- *                              and methods.
- *   3  2002-04-24  Darshan     Added more tweaks for model-source support -
- *                              ClassInfo now keeps track of the IClass off
- *                              which it was created and can update the IClass
- *                              directly with the file name of the local file
- *                              with which the IClass is associated.
- *   4  2002-04-25  Darshan     Updated to set the file path to the artifact
- *                              associated with the class and to correctly
- *                              initialize outerClass when creating a ClassInfo
- *                              from an IClass.
- *   5  2002-04-29  Darshan     Added null checks in updateFilename().
- *   6  2002-04-30  Darshan     Used JavaClassUtils to map Describe's modifiers
- *                              to Java modifiers.
- *   7  2002-04-30  Darshan     Reformatted to 4-space tabs, added accessor
- *                              to get the list of interfaces implemented and
- *                              made InterfaceChangeInfo public.
- *   8  2002-05-06  Darshan     Made removeInterface() check for the same
- *                              interface in the list of added interfaces and
- *                              remove it if already present.
- *                              Reformatted braces to Java style indenting.
- *   9  2002-05-13  Darshan     Updated to handle both class and interface
- *                              events by manipulating IClassifier references
- *                              instead of directly dealing with IClass and
- *                              IInterface references.
- *  10  2002-05-14  Darshan     Moved the project selector code from
- *                              update(SymbolTransaction) to update().
- *  11  2002-05-28  Darshan     Synchronized on EventHandler instance to allow
- *                              synch between source-model and model-source
- *                              threads during class update.
- *  12  2002-05-30  Darshan     Fixed bugs in addInterface() and
- *                              removeInterface() and added overloaded
- *                              convenience methods for these.
- *  13  2002-06-04  Darshan     Added code to store only relative paths in a
- *                              class element's artifact. The change is wholly
- *                              internal to ClassInfo, so no other code should
- *                              be affected.
- *  14  2002-06-05  Darshan     Fixed code to correctly pick up superinterfaces
- *                              of an interface.
- *  15  2002-06-10  Darshan     Fixed creating multiple generalization links.
- *  16  2002-06-14  Darshan     Added calls to prevent roundtrip events during
- *                              update.
- *  17  2002-06-19  Darshan     Flagged interfaces abstract by default.
- *  18  2002-06-19  Darshan     Added null pointer check before performing
- *                              sanity check :)
- *  19  2002-06-20  Darshan     Turned on two-way roundtrip for attribute
- *                              updates.
- *  20  2002-06-25  Darshan     Turned on two-way roundtrip for superclass/
- *                              interface updates (fix for 191 JBuilder- methods
- *                              not passed down to children).
- *  21  2002-06-28  Darshan     Added support for creating reference classes for
- *                              generalizations if necessary.
- *  22  2002-07-02  Mukta       Added a method to get the full class name,
- *                              including the package name
- *  23  2002-07-24  Darshan     Setting the relative path to the file as a
- *                              tagged value on the ISourceFileArtifact
- *                              (temporary workaround as project base dir is
- *                              not set correctly).
- * 24  2002-08-14   Mukta       Added code to set exisiting methods and
- *                              attributes to the classinfo.
- *
- * @see EventManager
- */
+
+
 public class ClassInfo extends ElementInfo
 {
     private static final Logger logger = Logger.getLogger(ClassInfo.class.getName());
-    /**
+    
+
+/**
      * Describe id for class elements.
      */
     public static final  String DS_CLASS        = "Class";
     
-    /**
+    
+
+/**
      * Describe id for interface elements.
      */
     public static final  String DS_INTERFACE    = "Interface";
     
-    /**
+    
+
+/**
      * Describe id for enumeration elements.
      */
     public static final  String DS_ENUMERATION    = "Enumeration";
     
-    /**
+    
+
+/**
      * Describe stereotype id for the interface stereotype.
      */
     public static final  String DS_STE_INTERFACE = "interface";
     
-    /**
+    
+
+/**
      * Describe stereotype id for the enumeration stereotype.
      */
     public static final  String DS_STE_ENUMERATION = "enumeration";
@@ -209,9 +140,11 @@ public class ClassInfo extends ElementInfo
     //private int    mChangesMade   = 0;
     
     private String      id                  = null;
-    // Darshan: So that SymbolTransaction can find the correct symbol.
     
-    /** The outer class for this class.  Only used when a class is an inner
+    
+    
+
+/** The outer class for this class.  Only used when a class is an inner
      * class. */
     private ClassInfo   outerClass          = null;
     
@@ -267,7 +200,9 @@ public class ClassInfo extends ElementInfo
     
     private EventFilter filter         = null;
     
-    /**
+    
+
+/**
      *  The base path of the project that owns this class. Typically used only
      * for model->source updates.
      */
@@ -286,13 +221,17 @@ public class ClassInfo extends ElementInfo
     private String exportSourceFolderName;
     
     
-    /**
+    
+
+/**
      *  The ClassElement which this ClassInfo wraps, usually null when updating
      * source to model, non-null otherwise.
      */
     private IClassifier classElement;
     
-    /**
+    
+
+/**
      * Contructs a new ClassInfo object.
      * @param type The type of the transaction.  Valid values are:
      *             ElementInfo.CREATE
@@ -306,7 +245,9 @@ public class ClassInfo extends ElementInfo
         setPackage("");
     }
     
-    /**
+    
+
+/**
      *  Creates a ClassInfo with data from the given IClassifier object.
      *
      * @param clazz
@@ -321,7 +262,9 @@ public class ClassInfo extends ElementInfo
         }
     }
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      */
     public IProject getOwningProject()
     {
@@ -332,7 +275,9 @@ public class ClassInfo extends ElementInfo
                 null;
     }
     
-    /**
+    
+
+/**
      * Returns the source directory in which Describe thinks this class should
      * live.  In general, this is just the value of the SourceDir property for
      * the package to which the IClassifier for this class belongs.  This method
@@ -414,7 +359,9 @@ public class ClassInfo extends ElementInfo
     }
     
     
-    /**
+    
+
+/**
      *
      * Ensures that an appropriate path is constructed given the source directory and the
      * name of this package
@@ -441,7 +388,9 @@ public class ClassInfo extends ElementInfo
     }
     
     
-    /**
+    
+
+/**
      * Retrieves the source directory root that Describe expects the package
      * containing this class to live in.  This is obtained by retrieving the
      * SourceDir property of the owning package/project, and stripping off the
@@ -512,7 +461,9 @@ public class ClassInfo extends ElementInfo
         {
             IClassifier cp = (IClassifier)  owner;
             outerClass = getRefClassInfo(cp, true);
-            /*outerClass = new ClassInfo(null);
+            
+
+/*outerClass = new ClassInfo(null);
             outerClass.setRefInfo(cp);
              */
         }
@@ -520,7 +471,9 @@ public class ClassInfo extends ElementInfo
         updateFilename(null);
     }
     
-    /**
+    
+
+/**
      *  Initializes this ClassInfo using the given Describe IClassifier. Note:
      * this is not recommended for use by IDEs.
      * 
@@ -851,7 +804,9 @@ public class ClassInfo extends ElementInfo
         return executingAddin;
     }
     
-    /**
+    
+
+/**
      * Creates a new ClassInfo object.
      * @param name The name of the class.
      * @param origPackage The package that contained the class before the
@@ -875,7 +830,9 @@ public class ClassInfo extends ElementInfo
         setPackage(JavaClassUtils.getPackageName(decoratedName));
     }
     
-    /**
+    
+
+/**
      * Updates the Describe symbol that represents the class.
      * @param system The describe system that is to be updated.
      */
@@ -950,7 +907,9 @@ public class ClassInfo extends ElementInfo
         return basePath;
     }
     
-    /**
+    
+
+/**
      * Set this class's outer class.
      * @param outC The outer class definition.
      */
@@ -959,7 +918,9 @@ public class ClassInfo extends ElementInfo
         outerClass = outC;
     }
     
-    /**
+    
+
+/**
      * Retrieves this class's outer class.
      * @return The class information for the outer class, or null if this class
      *         does not have a outer class.
@@ -995,7 +956,9 @@ public class ClassInfo extends ElementInfo
         }
     }
     
-    /**
+    
+
+/**
      * Update Describe using the specified Symbol transaction.
      * @see SymbolTransaction
      * @param trans The transaction that represent the Describe symbol to update.
@@ -1219,7 +1182,9 @@ public class ClassInfo extends ElementInfo
         }
     }
     
-    /**
+    
+
+/**
      * Issue a command to Describe to add a generalization associated with a
      * class symbol.
      * @param state The transaction to act upon.
@@ -1252,7 +1217,9 @@ public class ClassInfo extends ElementInfo
                     getExtendedClass()
                     )
                     );
-                /*
+                
+
+/*
                 superClazz = SymbolTransaction.createClass(getExtendedClass(),
                                                getExtendedPackage(),
                                                false, null,
@@ -1281,7 +1248,9 @@ public class ClassInfo extends ElementInfo
         }
     }
     
-    /**
+    
+
+/**
      * Issue a command to Describe to remove a generalization associated with a
      * class symbol.
      * @param state The transaction to act upon.
@@ -1313,7 +1282,9 @@ public class ClassInfo extends ElementInfo
         }
     }
     
-    /**
+    
+
+/**
      * Add an implemented interface to the class definition.
      * @param pName The package of the interface.
      * @param name The interface name.
@@ -1354,7 +1325,9 @@ public class ClassInfo extends ElementInfo
         return inf;
     }
     
-    /**
+    
+
+/**
      * Remove an implemented interface to the class definition.
      * @param pName The package of the interface.
      * @param name The interface name.
@@ -1383,7 +1356,9 @@ public class ClassInfo extends ElementInfo
             JavaClassUtils.getFullInnerClassName(fullname));
     }
     
-    /**
+    
+
+/**
      * Retrieves all the changes to the list of implemented interfaces.
      * @return A list of InterfaceChangeInfo.
      */
@@ -1392,7 +1367,9 @@ public class ClassInfo extends ElementInfo
         return mInterfaces;
     }
     
-    /**
+    
+
+/**
      * Set the class information that is the super class.
      * @param pName The package of the super class.
      * @param name The super class name.
@@ -1417,7 +1394,9 @@ public class ClassInfo extends ElementInfo
         }
     }
     
-    /**
+    
+
+/**
      * Retrieve the name of the super class's.
      * @return The name.
      * @see #getRemovedExtendedClass
@@ -1427,7 +1406,9 @@ public class ClassInfo extends ElementInfo
         return mNewExtendedClass;
     }
     
-    /**
+    
+
+/**
      * The package that contains the super class.
      * @return The package.
      * @see #getRemovedExtendedPackage
@@ -1449,7 +1430,9 @@ public class ClassInfo extends ElementInfo
             getExtendedClass());
     }
     
-    /**
+    
+
+/**
      * Set the class information that is no longer the super class.
      * @param pName The package of the super class.
      * @param name The super class name.
@@ -1461,7 +1444,9 @@ public class ClassInfo extends ElementInfo
         mRemoveExtendedPack  = pName;
     }
     
-    /**
+    
+
+/**
      * Retrieve the name of the super class's that is being removed.
      * @return The name.
      * @see #getExtendedPackage
@@ -1471,7 +1456,9 @@ public class ClassInfo extends ElementInfo
         return mRemoveExtendedPack;
     }
     
-    /**
+    
+
+/**
      * Retrieve the name of the super class's that is being removed.
      * @return The name.
      * @see #getExtendedClass
@@ -1481,7 +1468,9 @@ public class ClassInfo extends ElementInfo
         return mRemoveExtendedClass;
     }
     
-    /**
+    
+
+/**
      * Set the collection of imports that this class uses.
      * @param value A vector of strings.
      */
@@ -1490,7 +1479,9 @@ public class ClassInfo extends ElementInfo
         mImports = value;
     }
     
-    /**
+    
+
+/**
      * Get the collection of imports that this class uses.
      * @return A vector of strings.
      */
@@ -1499,7 +1490,9 @@ public class ClassInfo extends ElementInfo
         return mImports;
     }
     
-    /**
+    
+
+/**
      * Get the collection of imports that this class uses.
      * @return A vector of strings.
      */
@@ -1568,7 +1561,9 @@ public class ClassInfo extends ElementInfo
         return getOuterClassifierOwner((IClassifier)owner);
     }
     
-    /**
+    
+
+/**
      * Sets the class's members that need to be updated.  This may not include
      * all the class's members, only the ones that need to be updated.
      * @param value A list of MemberInfo objects.
@@ -1578,7 +1573,9 @@ public class ClassInfo extends ElementInfo
         mMembers = value;
     }
     
-    /**
+    
+
+/**
      * Adds a data member that needs to be updated.
      * @param info A list of MemberInfo objects.
      */
@@ -1587,7 +1584,9 @@ public class ClassInfo extends ElementInfo
         mMembers.add(info);
     }
     
-    /**
+    
+
+/**
      * Gets the class's members that need to be updated.  This may not include
      * all the class's members, only the ones that need to be updated.
      * @return A list of MemberInfo objects.
@@ -1597,7 +1596,9 @@ public class ClassInfo extends ElementInfo
         return mMembers;
     }
     
-    /**
+    
+
+/**
      * Sets the class's methods that need to be updated.  This may not include
      * all the class's method, only the ones that need to be updated.
      * @param value A list of MethodInfo objects.
@@ -1607,7 +1608,9 @@ public class ClassInfo extends ElementInfo
         mMethods = value;
     }
     
-    /**
+    
+
+/**
      * Adds a method that needs to be updated.
      * @param info A list of MethodInfo objects.
      */
@@ -1616,7 +1619,9 @@ public class ClassInfo extends ElementInfo
         mMethods.add(info);
     }
     
-    /**
+    
+
+/**
      * Gets the class's methods that need to be updated.  This may not include
      * all the class's methods, only the ones that need to be updated.
      * @return A list of ConstructorInfo objects.
@@ -1626,7 +1631,9 @@ public class ClassInfo extends ElementInfo
         return mMethods;
     }
     
-    /**
+    
+
+/**
      * Sets the class's constructors that need to be updated.  This may not include
      * all the class's constructors, only the ones that need to be updated.
      * @param value A list of ConstructorInfo objects.
@@ -1636,7 +1643,9 @@ public class ClassInfo extends ElementInfo
         mConstructors = value;
     }
     
-    /**
+    
+
+/**
      *  Adds a constructor to the list of constructors that need to be updated.
      *
      * @param value The <code>ConstructorInfo</code> to be updated. If this is
@@ -1653,7 +1662,9 @@ public class ClassInfo extends ElementInfo
             mConstructors.add(value);
     }
     
-    /**
+    
+
+/**
      * Gets the class's constructors that need to be updated.  This may not include
      * all the class's constructors, only the ones that need to be updated.
      * @return A list of MethodInfo objects.
@@ -1663,7 +1674,9 @@ public class ClassInfo extends ElementInfo
         return mConstructors;
     }
     
-    /**
+    
+
+/**
      * Add an inner class that needs to be updated.
      * @param info The inner class to add.
      */
@@ -1674,7 +1687,9 @@ public class ClassInfo extends ElementInfo
             mInnerClasses.add(info);
     }
     
-    /**
+    
+
+/**
      * Sets the class's inner classes that need to be updated.  This may not include
      * all the class's inner classes, only the ones that need to be updated.
      * @param value A list of ClassInfo objects.
@@ -1684,7 +1699,9 @@ public class ClassInfo extends ElementInfo
         mInnerClasses = value;
     }
     
-    /**
+    
+
+/**
      * Gets the class's inner classes that need to be updated.  This may not include
      * all the class's inner classes, only the ones that need to be updated.
      * @return A list of ClassInfo objects.
@@ -1694,7 +1711,9 @@ public class ClassInfo extends ElementInfo
         return mInnerClasses;
     }
     
-    /**
+    
+
+/**
      * Sets the enumeration's literals that need to be updated.  This may not include
      * all the enumeration's literals, only the ones that need to be updated.
      * @param value A list of LiteralInfo objects.
@@ -1704,7 +1723,9 @@ public class ClassInfo extends ElementInfo
         mLiterals = value;
     }
     
-    /**
+    
+
+/**
      * Adds a enum literal that needs to be updated.
      * @param info A list of LiteralInfo objects.
      */
@@ -1713,7 +1734,9 @@ public class ClassInfo extends ElementInfo
         mLiterals.add(info);
     }
     
-    /**
+    
+
+/**
      * Gets the enumeration's literals that need to be updated.  This may not include
      * all the enumeration's literals, only the ones that need to be updated.
      * @return A list of LiteralInfo objects.
@@ -1723,7 +1746,9 @@ public class ClassInfo extends ElementInfo
         return mLiterals;
     }
     
-    /**
+    
+
+/**
      * Sets the file that that contains the class.
      * @param value The name of the file.
      */
@@ -1732,7 +1757,9 @@ public class ClassInfo extends ElementInfo
         mFilename = value;
     }
     
-    /**
+    
+
+/**
      *  Updates the IClass associated with this ClassInfo with the
      * @param filename
      * @return
@@ -1758,7 +1785,9 @@ public class ClassInfo extends ElementInfo
         return getFilename();
     }
     
-    /**
+    
+
+/**
      *  Returns the first artifact associated with the given class, or the
      * class itself if no artifact is available.
      *
@@ -1775,7 +1804,9 @@ public class ClassInfo extends ElementInfo
         return (ISourceFileArtifact)  artifacts.item(0);
     }
     
-    /**
+    
+
+/**
      *  Sets the file with which the given class should be associated.
      * Not intended for direct use by IDE integrations.
      *
@@ -1804,7 +1835,9 @@ public class ClassInfo extends ElementInfo
         }
     }
     
-    /**
+    
+
+/**
      *  Gets the file which which the given class is associated. Not intended
      * for direct use by IDE integrations.
      * @param clazz
@@ -1830,7 +1863,9 @@ public class ClassInfo extends ElementInfo
         return null;
     }
     
-    /**
+    
+
+/**
      * Gets the file that that contains the class.
      * @return The name of the file.
      */
@@ -1839,7 +1874,9 @@ public class ClassInfo extends ElementInfo
         return mFilename;
     }
     
-    /**
+    
+
+/**
      * Specifies if the ClassInfo represents an inner class or a outer class.
      * @param value true if the class is an inner class, false otherwise.
      */
@@ -1848,7 +1885,9 @@ public class ClassInfo extends ElementInfo
         mIsInnerClass = value;
     }
     
-    /**
+    
+
+/**
      * Retrieves if the ClassInfo represents an inner class or a outer class.
      * @return true if the class is an inner class, false otherwise.
      */
@@ -1857,7 +1896,9 @@ public class ClassInfo extends ElementInfo
         return mIsInnerClass;
     }
     
-    /**
+    
+
+/**
      * Sets the package name that contains the class.  This is the original
      * package name.
      * @param value The fully qualified name of the pacakge.
@@ -1867,7 +1908,9 @@ public class ClassInfo extends ElementInfo
         mOrigPackage = value;
     }
     
-    /**
+    
+
+/**
      * Gets the package name that contains the class.  This is the original
      * package name.
      * @return The fully qualified name of the pacakge.
@@ -1877,7 +1920,9 @@ public class ClassInfo extends ElementInfo
         return mOrigPackage;
     }
     
-    /**
+    
+
+/**
      * Sets the package name that contains the class.  This is the new
      * package name.
      * @param value The fully qualified name of the pacakge.
@@ -1887,7 +1932,9 @@ public class ClassInfo extends ElementInfo
         mNewPackage = value;
     }
     
-    /**
+    
+
+/**
      * Gets the package name that contains the class.  This is the new
      * package name.
      * @return The fully qualified name of the pacakge.
@@ -1897,7 +1944,9 @@ public class ClassInfo extends ElementInfo
         return mNewPackage;
     }
     
-    /**
+    
+
+/**
      * Specifies if the ClassInfo represents an interface or a class.
      * @param value true if the class is an interface, false otherwise.
      */
@@ -1906,7 +1955,9 @@ public class ClassInfo extends ElementInfo
         mIsInterface = value;
     }
     
-    /**
+    
+
+/**
      * Retrieves if the ClassInfo represents an interface or a class.
      * @return true if the class is an interface, false otherwise.
      */
@@ -1915,7 +1966,9 @@ public class ClassInfo extends ElementInfo
         return mIsInterface;
     }
     
-    /**
+    
+
+/**
      * Specifies if the ClassInfo represents an enumeration or a class.
      * @param value true if the class is an enumeration, false otherwise.
      */
@@ -1924,7 +1977,9 @@ public class ClassInfo extends ElementInfo
         mIsEnumeration = value;
     }
     
-    /**
+    
+
+/**
      * Retrieves if the ClassInfo represents an enumeration or a regular class.
      * @return true if the class is an enumeration, false otherwise.
      */
@@ -1933,7 +1988,9 @@ public class ClassInfo extends ElementInfo
         return mIsEnumeration;
     }
     
-    /**
+    
+
+/**
      * Updates all the methods for this symbol.  The methods that will be
      * updated are the MethodInfo object that where added to the class info.
      * @param trans The transaction that represents the Describe symbol.
@@ -1961,7 +2018,9 @@ public class ClassInfo extends ElementInfo
         }
     }
     
-    /**
+    
+
+/**
      * Updates all the data members for this symbol.  The members that will be
      * updated are the MemberInfo object that where added to the class info.
      * @param trans The transaction that represents the Describe symbol.
@@ -1988,7 +2047,9 @@ public class ClassInfo extends ElementInfo
         }
     }
     
-    /**
+    
+
+/**
      * Updates all the data members for this symbol.  The members that will be
      * updated are the MemberInfo object that where added to the class info.
      * @param trans The transaction that represents the Describe symbol.
@@ -2014,7 +2075,9 @@ public class ClassInfo extends ElementInfo
         }
     }
     
-    /**
+    
+
+/**
      * Updates all the constructors for this symbol.  The constructors that will be
      * updated are the ConstructorInfo object that where added to the class info.
      * @param trans The transaction that represents the Describe symbol.
@@ -2038,7 +2101,9 @@ public class ClassInfo extends ElementInfo
         }
     }
     
-    /**
+    
+
+/**
      * Updates all the inner classes for this symbol.  The inner classes that will be
      * updated are the ClassInfo object that where added to the class info.
      * @param trans The transaction that represents the Describe symbol.
@@ -2062,7 +2127,9 @@ public class ClassInfo extends ElementInfo
         }
     }
     
-    /**
+    
+
+/**
      * Updates all the imports statements for this symbol.
      * @param manager The transaction manager.
      * @param trans The transaction that represents the Describe symbol.
@@ -2073,7 +2140,9 @@ public class ClassInfo extends ElementInfo
         // TO DO
     }
     
-    /**
+    
+
+/**
      * Updates the interfacres that this class implements.
      * @param manager The transaction manager.
      * @param trans The transaction that represents the Describe symbol.
@@ -2106,7 +2175,9 @@ public class ClassInfo extends ElementInfo
         return "C";
     }
     
-    /**
+    
+
+/**
      * InterfaceChangeInfo is a utility clas that defines interfaces that are 
      * being implemented are that are that are no longer being removed.
      */
@@ -2174,7 +2245,9 @@ public class ClassInfo extends ElementInfo
         return ci;
     }
     
-    /**
+    
+
+/**
      * forms a full class name including the package name.
      */
     public String getFullClassName()
@@ -2189,7 +2262,9 @@ public class ClassInfo extends ElementInfo
         return (pack == null || pack.equals(""))? rep : (pack + "." + rep);
     }
     
-    /**
+    
+
+/**
      *  Returns the IClassifier from which this ClassInfo was constructed, or
      * null if the ClassInfo was not constructed from an IClassifier. Note that
      * this is not recommended for use by IDE-specific code.
@@ -2202,7 +2277,9 @@ public class ClassInfo extends ElementInfo
         return classElement;
     }
     
-    /**
+    
+
+/**
      *  Looks for the IClassifier corresponding to this ClassInfo in the
      * Describe model. The IClassifier found will also be returned by
      * subsequent calls to getClassElement().
@@ -2270,7 +2347,9 @@ public class ClassInfo extends ElementInfo
         return Modifier.toString(mods.intValue());
     }
     
-    /**
+    
+
+/**
      *  Determines if the given ElementInfo matches this ClassInfo.
      * @see ElementInfo#matches(ElementInfo)
      * @param el <code>ElementInfo</code> The ElementInfo to match against.
@@ -2302,7 +2381,9 @@ public class ClassInfo extends ElementInfo
         return true;
     }
     
-    /**
+    
+
+/**
      *  Returns a reference ClassInfo, viz. a ClassInfo with the bare minimum
      * information needed to locate the source file.
      *
@@ -2349,7 +2430,9 @@ public class ClassInfo extends ElementInfo
     }
 
     
-    /**
+    
+
+/**
      *  Clears all cached <code>ClassInfo</code>s created by getRefClassInfo().
      */
     public static void eraseRefClasses()
@@ -2357,7 +2440,9 @@ public class ClassInfo extends ElementInfo
         refClassInfos.clear();
     }
     
-    /**
+    
+
+/**
      *  Removes any cached <code>ClassInfo</code> created from the given
      * <code>IClassifier</code>.
      * @param c The <code>IClassifier</code> which has (probably) been modified,
@@ -2675,7 +2760,9 @@ public class ClassInfo extends ElementInfo
 		return 3;
 	}
 
-	/**
+	
+
+/**
 	 *  additional checks, ie. for example to have 
 	 *  setters/getters together, getter first
 	 */

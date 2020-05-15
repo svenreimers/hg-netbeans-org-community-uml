@@ -46,22 +46,30 @@ package org.netbeans.modules.uml.core.reverseengineering.reframework.parsingfram
 import org.netbeans.modules.uml.core.support.umlsupport.IStrings;
 public interface IFacilityManager
 {
-	/**
+	
+
+/**
 	 * Retrieves the specified facility from the manager.
 	*/
 	public IFacility retrieveFacility( String name );
 
-	/**
+	
+
+/**
 	 * The configuration file that defines the facilities that are managed by the FacilityManager.
 	*/
 	public String getConfigurationFile();
 
-	/**
+	
+
+/**
 	 * The configuration file that defines the facilities that are managed by the FacilityManager.
 	*/
 	public void setConfigurationFile( String value );
 
-	/**
+	
+
+/**
 	 * Retrieves the facilities that are managed by the FacilityManager.
 	*/
 	public IStrings getFacilityNames();

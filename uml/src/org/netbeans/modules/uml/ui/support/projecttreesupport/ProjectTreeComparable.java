@@ -47,6 +47,7 @@ package org.netbeans.modules.uml.ui.support.projecttreesupport;
 
 import java.util.Comparator;
 
+
 /**
  * The comparable class used to sort the project tree contents.
  *
@@ -57,7 +58,8 @@ public class ProjectTreeComparable implements Comparator
    public final static int LESS_THAN     = -1;
    public final static int GREATER_THAN  = 1;
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see java.lang.Comparable#compareTo(java.lang.Object)
     */
    public int compare(Object o1, Object o2)

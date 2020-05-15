@@ -42,11 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
-  File       : IRTEventManager.java
-  Created on : Nov 5, 2003
-  Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.roundtripframework;
 
 import org.netbeans.modules.uml.core.eventframework.IEventContext;

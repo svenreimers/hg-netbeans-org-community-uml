@@ -63,7 +63,9 @@ public class CollaborationOccurrence extends TypedElement
 		super();
 	}
 
-	/**
+	
+
+/**
 	 * method AddRoleBinding
 	*/
 	public void addRoleBinding( IRoleBinding binding )
@@ -82,7 +84,9 @@ public class CollaborationOccurrence extends TypedElement
 							);		
 	}
 
-	/**
+	
+
+/**
 	 * method RemoveRoleBinding
 	*/
 	public void removeRoleBinding( IRoleBinding binding )
@@ -101,7 +105,9 @@ public class CollaborationOccurrence extends TypedElement
 										);
 	}
 
-	/**
+	
+
+/**
 	 * property RoleBindings
 	*/
 	public ETList<IRoleBinding> getRoleBindings()
@@ -110,7 +116,9 @@ public class CollaborationOccurrence extends TypedElement
 		return collector.retrieveElementCollection(m_Node, "UML:CollaborationOccurrence.roleBinding/*", IRoleBinding.class);				
 	}
 
-	/**
+	
+
+/**
 	 * Establishes the appropriate XML elements for this UML type.
 	 *
 	 * [in] The document where this element will reside

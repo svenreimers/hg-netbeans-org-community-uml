@@ -195,7 +195,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
       this(null);
    }
 
-   /**
+   
+
+/**
     * @param newModel
     */
    public JProjectTree(ISwingProjectTreeModel newModel)
@@ -354,7 +356,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
    // ApplicationView Methods
    //**************************************************
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.products.ad.application.ApplicationView#createViewControl(javax.swing.JPanel)
     */
    public void createViewControl(JPanel parent)
@@ -430,7 +434,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
        
    }
    
-   /**
+   
+
+/**
     * Do package icons exist in the tree
     *
     * @return true if packages are in the tree
@@ -460,7 +466,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
       return foundPackage;
    }
 
-   /**
+   
+
+/**
     * @param manager
     */
    private void createRemovePullRight(IMenuManager manager)
@@ -476,7 +484,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
       manager.add(removeMenu);
    }
 
-   /**
+   
+
+/**
     * @param manager
     */
    private void createInsertPullRight(IMenuManager manager)
@@ -491,7 +501,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
       manager.add(insertMenu);
    }
 
-   /**
+   
+
+/**
     * @param manager
     */
    private void createNewPullRight(IMenuManager manager)
@@ -515,7 +527,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
       manager.add(newMenu);
    }
 
-   /**
+   
+
+/**
     * @param manager
     */
    protected void createOpenPullRight(IMenuManager manager)
@@ -610,7 +624,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
       return retVal;
    }
 
-   /**
+   
+
+/**
     * @param selPath
     */
    public void fireDoubleClick(ITreeItem item,
@@ -635,7 +651,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
       }
    }
 
-   /**
+   
+
+/**
     * @param selPath
     */
    public void fireDoubleClick(TreePath path,
@@ -655,7 +673,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
       }
    }
 
-   /**
+   
+
+/**
     * Notifies listeners that project tree item is being draged.
     *
     * @param items The project tree items that are being draged.
@@ -682,7 +702,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
       return retVal;
    }
 
-   /**
+   
+
+/**
     * Notifies listeners that project tree item is being draged.
     *
     * @param paths The path to the tree items.
@@ -713,7 +735,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
       return retVal;
    }
 
-   /**
+   
+
+/**
     * Notifies listeners that the drag process has been completed.  This event
     * is only fired if project tree is the drop target.
     *
@@ -743,7 +767,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
       return retVal;
    }
 
-   /**
+   
+
+/**
     * Notifies listeners that the drag operation is moving.  This event will
     * only be sent if the drag operation is on top of the project tree.
     *
@@ -780,7 +806,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
    //**************************************************
 
 
-        /* (non-Javadoc)
+        
+
+/* (non-Javadoc)
          * @see javax.swing.JTree#fireTreeWillExpand(javax.swing.tree.TreePath)
          */
    //	public void fireTreeWillExpand(TreePath path)
@@ -808,7 +836,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
       }
    }
 
-        /* (non-Javadoc)
+        
+
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#getRootNodes()
          */
    public ETList<IProjectTreeItem> getRootNodes()
@@ -817,7 +847,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
       return null;
    }
 
-        /* (non-Javadoc)
+        
+
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#getStandardDescription(int)
          */
    public String getStandardDescription(int nKind)
@@ -826,7 +858,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
       return null;
    }
 
-        /* (non-Javadoc)
+        
+
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#getUserCalledShowWorkspaceNode()
          */
    public boolean getUserCalledShowWorkspaceNode()
@@ -835,7 +869,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
       return false;
    }
 
-        /* (non-Javadoc)
+        
+
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#getShowWorkspaceNode()
          */
    public boolean getShowWorkspaceNode()
@@ -844,7 +880,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
       return false;
    }
 
-        /* (non-Javadoc)
+        
+
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#setShowWorkspaceNode(boolean)
          */
    public void setShowWorkspaceNode(boolean value)
@@ -853,7 +891,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
 
    }
 
-        /* (non-Javadoc)
+        
+
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#addWorkspace()
          */
    public long addWorkspace()
@@ -862,7 +902,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
       return 0;
    }
 
-        /* (non-Javadoc)
+        
+
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#getUnfilteredProjects()
          */
    public IStrings getUnfilteredProjects()
@@ -871,7 +913,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
       return null;
    }
 
-        /* (non-Javadoc)
+        
+
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#setUnfilteredProjects(org.netbeans.modules.uml.core.support.umlsupport.IStrings)
          */
    public void setUnfilteredProjects(IStrings value)
@@ -880,7 +924,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
 
    }
 
-        /* (non-Javadoc)
+        
+
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#refresh(boolean)
          */
    public void refresh(boolean bPostEvent)
@@ -950,7 +996,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
       }
    }
 
-        /* (non-Javadoc)
+        
+
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#close()
          */
    public void close()
@@ -959,7 +1007,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
 
    }
 
-        /* (non-Javadoc)
+        
+
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#sortChildNodes(org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem)
          */
    public void sortChildNodes(IProjectTreeItem pParent)
@@ -987,7 +1037,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
 
    }
 
-        /* (non-Javadoc)
+        
+
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#sortThisNode(org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem)
          */
    public void sortThisNode(IProjectTreeItem pNode)
@@ -997,7 +1049,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
    }
 
 
-   /**
+   
+
+/**
     * Sets the name of the node that is associated with the project tree item.
     * The name of the node can be used to determine the icon that is displayed.
     *
@@ -1014,7 +1068,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
       }
    }
 
-  /* (non-Javadoc)
+  
+
+/* (non-Javadoc)
    * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#setDescription(org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem, java.lang.String)
    */
    public void setDescription(IProjectTreeItem pItem, String sDesc)
@@ -1025,7 +1081,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
       }
    }
 
-        /* (non-Javadoc)
+        
+
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#setSecondaryDescription(org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem, java.lang.String)
          */
    public void setSecondaryDescription(IProjectTreeItem pItem, String sDesc)
@@ -1036,7 +1094,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
       }
    }
 
-        /* (non-Javadoc)
+        
+
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#setDispatch(org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem, java.lang.Object)
          */
    public void setDispatch(IProjectTreeItem pItem, Object pDisp)
@@ -1047,7 +1107,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
       }
    }
 
-        /* (non-Javadoc)
+        
+
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#setModelElement(org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem, org.netbeans.modules.uml.core.metamodel.core.foundation.IElement)
          */
    public void setModelElement(IProjectTreeItem pItem, IElement pEle)
@@ -1056,7 +1118,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
 
    }
 
-        /* (non-Javadoc)
+        
+
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#addItem(org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem, java.lang.String, int, org.netbeans.modules.uml.core.metamodel.core.foundation.IElement, org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem)
          */
    public IProjectTreeItem addItem( IProjectTreeItem pParent,
@@ -1074,7 +1138,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
       return pCreatedItem;
    }
 
-        /* (non-Javadoc)
+        
+
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#addItem2(org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem, java.lang.String, int, org.netbeans.modules.uml.core.metamodel.core.foundation.IElement, java.lang.String, org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem)
          */
    public IProjectTreeItem addItem( IProjectTreeItem pParent,
@@ -1093,7 +1159,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
       return pCreatedItem;
    }
 
-        /* (non-Javadoc)
+        
+
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#addItem3(org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem, java.lang.String, int, org.netbeans.modules.uml.core.metamodel.core.foundation.IElement, java.lang.Object, java.lang.String, org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem)
          */
    public IProjectTreeItem addItem( IProjectTreeItem pParent,
@@ -1114,7 +1182,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
       return pCreatedItem;
    }
 
-        /* (non-Javadoc)
+        
+
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#beginEditFirstSelected()
          */
    public void beginEditFirstSelected()
@@ -1135,7 +1205,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
       }
    }
 
-   /**
+   
+
+/**
     * Tells the listener we've got as a member that it was us that began editing
     */
    public void beginEditContext()
@@ -1153,7 +1225,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
    }
 
 
-        /* (non-Javadoc)
+        
+
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#beginEditThisItem(org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem)
          */
    public void beginEditThisItem(final IProjectTreeItem pItem)
@@ -1185,7 +1259,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
       });
    }
 
-        /* (non-Javadoc)
+        
+
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#getSelected()
          */
    public IProjectTreeItem[] getSelected()
@@ -1207,7 +1283,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
       return retVal;
    }
 
-        /* (non-Javadoc)
+        
+
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#deselectAll()
          */
    public void deselectAll()
@@ -1216,7 +1294,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
 
    }
 
-        /* (non-Javadoc)
+        
+
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#endEditing(boolean)
          */
    public void endEditing(boolean bSaveChanges)
@@ -1225,7 +1305,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
 
    }
 
-   /**
+   
+
+/**
     * Deletes the selected tree items.  Right now it only knows how to delete model elements and
     * diagrams.
     */
@@ -1313,7 +1395,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
       }
    }
 
-        /* (non-Javadoc)
+        
+
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#setText(org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem, java.lang.String)
          */
    public void setText(IProjectTreeItem pItem, String sText)
@@ -1322,7 +1406,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
 
    }
 
-        /* (non-Javadoc)
+        
+
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#getParent(org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem)
          */
    public IProjectTreeItem getParent(IProjectTreeItem pItem)
@@ -1346,7 +1432,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
       return retVal;
    }
 
-        /* (non-Javadoc)
+        
+
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#retrieveProjectFromItem(org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem)
          */
    public IProject retrieveProjectFromItem(IProjectTreeItem pProjItem)
@@ -1371,7 +1459,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
       return retVal;
    }
 
-        /* (non-Javadoc)
+        
+
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#getProjects()
          */
    public ETList<IProjectTreeItem> getProjects()
@@ -1405,7 +1495,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
       return retVal;
    }
 
-        /* (non-Javadoc)
+        
+
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#getWorkspaceTreeItem()
          */
    public IProjectTreeItem getWorkspaceTreeItem()
@@ -1432,7 +1524,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
       return retVal;
    }
 
-        /* (non-Javadoc)
+        
+
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#getChildren(org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem)
          */
    public ETList<IProjectTreeItem> getChildren(IProjectTreeItem pItem)
@@ -1462,7 +1556,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
       return retObj;
    }
 
-        /* (non-Javadoc)
+        
+
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#getChildDiagrams(org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem)
          */
    public IProjectTreeItem[] getChildDiagrams(IProjectTreeItem pItem)
@@ -1471,7 +1567,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
       return null;
    }
 
-        /*
+        
+
+/*
          * finds the node with given topLevelId and xmiid in the tree
          */
    public ETList<IProjectTreeItem> findNode(ITreeItem parent, String sTopLevelXMIID, String itemXMIID)
@@ -1522,7 +1620,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
       return retObj;
    }
 
-   /**
+   
+
+/**
     * Finds a node given an element.
     *
     * @param pElement [in] The element to search for
@@ -1540,7 +1640,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
       return retObj;
    }
 
-   /**
+   
+
+/**
     * Returns the direct children of pParent that have the description.
     *
     * @param pParent [in] The parent where we'll begin our search
@@ -1591,7 +1693,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
       return retObj;
    }
 
-   /**
+   
+
+/**
     * Returns the direct children of pParent that have the metatype sMetaType.
     *
     * @param pParent [in] The parent where we'll begin our search
@@ -1629,7 +1733,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
       return retVal;
    }
 
-   /**
+   
+
+/**
     * Find a particular diagram node in the tree.  May exist in several places.
     *
     * @param sTOMFilename [in] The etl file that represents the diagram
@@ -1681,7 +1787,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
       return retObj;
    }
 
-        /* (non-Javadoc)
+        
+
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#removeDiagramNode(java.lang.String, boolean)
          */
    public void removeDiagramNode(String sTOMFilename, boolean bPostEvent)
@@ -1690,7 +1798,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
 
    }
 
-        /* (non-Javadoc)
+        
+
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#removeFromTree(org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem[])
          */
    public void removeFromTree(IProjectTreeItem[] pRemovedItems)
@@ -1712,7 +1822,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
 
    }
 
-        /* (non-Javadoc)
+        
+
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#removeFromTree2(org.netbeans.modules.uml.core.metamodel.core.foundation.IElement)
          */
    public void removeFromTree2(IElement pElementToRemove)
@@ -1734,7 +1846,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
 
    }
 
-        /* (non-Javadoc)
+        
+
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#selectProject(org.netbeans.modules.uml.core.metamodel.structure.IProject)
          */
    public void selectProject(IProject pProject)
@@ -1753,7 +1867,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
       }
    }
 
-        /* (non-Javadoc)
+        
+
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#lockWindowUpdate(boolean)
          */
    public void lockWindowUpdate(boolean bLock)
@@ -1762,7 +1878,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
 
    }
 
-        /* (non-Javadoc)
+        
+
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#getDropTargetItem()
          */
    public IProjectTreeItem getDropTargetItem()
@@ -1781,7 +1899,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
       return retVal;
    }
 
-   /**
+   
+
+/**
     * Fired when a project is closed.  This removes the project item from the tree control.
     *
     * @param sName [in] The name of the project to close.
@@ -1794,7 +1914,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
       }
    }
 
-        /* (non-Javadoc)
+        
+
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#openProject(org.netbeans.modules.uml.core.metamodel.structure.IProject)
          */
    public void openProject(IProject pProject)
@@ -1812,7 +1934,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
       }
    }
 
-   /* Returns true if only these kinds of tree items are selected.
+   
+
+/* Returns true if only these kinds of tree items are selected.
     * The input is a long made up of ProjectTreeItemKind's.
     *
     * @param items [in] OR'ed ProjectTreeItemKind indicating the kind if items you want to query
@@ -1870,7 +1994,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
       return retVal;
    }
 
-        /* (non-Javadoc)
+        
+
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#atLeastOneOfTheseSelected(int)
          */
    public boolean atLeastOneOfTheseSelected(int itemsTypes)
@@ -1918,7 +2044,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
       return retVal;
    }
 
-        /* (non-Javadoc)
+        
+
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#getFirstSelectedModelElement(org.netbeans.modules.uml.core.metamodel.core.foundation.IElement, boolean)
          */
    public IElement getFirstSelectedModelElement()
@@ -1934,7 +2062,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
       return retVal;
    }
 
-        /* (non-Javadoc)
+        
+
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#getFirstSelectedModelElement2(org.netbeans.modules.uml.core.metamodel.core.foundation.IElement, org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem, boolean)
          */
    public IProjectTreeItem getFirstSelectedModelElementItem()
@@ -1961,7 +2091,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
       return retVal;
    }
 
-        /* (non-Javadoc)
+        
+
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#getFirstSelectedDiagram(java.lang.StringBuffer, boolean)
          */
    public String getFirstSelectedDiagram()
@@ -1988,7 +2120,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
       return retVal;
    }
 
-        /* (non-Javadoc)
+        
+
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#getFirstSelectedOpenDiagram(java.lang.StringBuffer, boolean)
          */
    public String getFirstSelectedOpenDiagram()
@@ -2019,7 +2153,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
       return retVal;
    }
 
-        /* (non-Javadoc)
+        
+
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#getFirstSelectedClosedDiagram(java.lang.StringBuffer, boolean)
          */
    public String getFirstSelectedClosedDiagram()
@@ -2050,7 +2186,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
       return retVal;
    }
 
-        /* (non-Javadoc)
+        
+
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#getFirstSelectedOpenProject(java.lang.StringBuffer, boolean)
          */
    public String getFirstSelectedOpenProject()
@@ -2079,7 +2217,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
       return retVal;
    }
 
-        /* (non-Javadoc)
+        
+
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#getFirstSelectedClosedProject()
          */
    public String getFirstSelectedClosedProject()
@@ -2109,7 +2249,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
    }
 
 
-        /* (non-Javadoc)
+        
+
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#getWindowHandle()
          */
    public int getWindowHandle()
@@ -2118,7 +2260,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
       return 0;
    }
 
-   /**
+   
+
+/**
     * Searches for this element in the tree, selects it and makes it visible.
     *
     * @param pModelElement [in] The model element to find and select
@@ -2218,7 +2362,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
       m_Tree.addFocusListener(listener);
    }
    
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#getHasBeenExpanded(org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem)
      */
    public boolean getHasBeenExpanded(IProjectTreeItem pItem)
@@ -2227,7 +2373,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
       return false;
    }
 
-        /* (non-Javadoc)
+        
+
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#getIsExpanded(org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem)
          */
    public boolean getIsExpanded(IProjectTreeItem pItem)
@@ -2245,7 +2393,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
       return bExpand;
    }
 
-        /* (non-Javadoc)
+        
+
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#setIsExpanded(org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem, boolean)
          */
    public void setIsExpanded(IProjectTreeItem pItem, boolean value)
@@ -2270,7 +2420,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
       }
    }
 
-        /* (non-Javadoc)
+        
+
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#getIsSelected(org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem)
          */
    public boolean getIsSelected(IProjectTreeItem pItem)
@@ -2279,7 +2431,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
       return false;
    }
 
-        /* (non-Javadoc)
+        
+
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#setIsSelected(org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem, boolean)
          */
    public void setIsSelected(IProjectTreeItem pItem, boolean value)
@@ -2288,7 +2442,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
 
    }
 
-        /* (non-Javadoc)
+        
+
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#rememberTreeState()
          */
    public void rememberTreeState()
@@ -2297,7 +2453,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
 
    }
 
-        /* (non-Javadoc)
+        
+
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#restoreTreeState()
          */
    public void restoreTreeState()
@@ -2306,7 +2464,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
 
    }
 
-   /**
+   
+
+/**
     * Opens the selected diagrams.
     *
     * @param pDiagramsActedUpon [out,retval] The opened diagrams
@@ -2316,7 +2476,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
       return actOnSelectedDiagrams(SA_OPEN);
    }
 
-   /**
+   
+
+/**
     * Closes the selected diagrams.
     *
     * @param pDiagramsActedUpon [out,retval] The closed diagrams
@@ -2326,7 +2488,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
       return actOnSelectedDiagrams(SA_CLOSE);
    }
 
-   /**
+   
+
+/**
     * Saves the selected diagrams.
     *
     * @param pDiagramsActedUpon [out,retval] The saved diagrams
@@ -2336,7 +2500,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
       return actOnSelectedDiagrams(SA_SAVE);
    }
 
-   /**
+   
+
+/**
     * Performs a specific action on the selected diagrams based on the flag.
     *
     * @param nAction [in] The action to perform
@@ -2423,7 +2589,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
       return retObj;
    }
 
-   /**
+   
+
+/**
     * Closes the selected projects.
     */
    public void closeSelectedProjects(IWorkspace space)
@@ -2431,7 +2599,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
       actOnSelectedProjects(SA_CLOSE, space);
    }
 
-   /**
+   
+
+/**
     * Saves the selected projects.
     */
    public void saveSelectedProjects(IWorkspace space)
@@ -2439,7 +2609,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
       actOnSelectedProjects(SA_SAVE, space);
    }
 
-   /**
+   
+
+/**
     * Saves the selected projects in the workspace.
     */
    public void saveSelectedProjectsInWorkspace()
@@ -2484,7 +2656,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
       }
    }
 
-        /* (non-Javadoc)
+        
+
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#handleLostProject(org.netbeans.modules.uml.core.workspacemanagement.IWSProject)
          */
    public void handleLostProject(IWSProject wsProject)
@@ -2493,7 +2667,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
 
    }
 
-   /**
+   
+
+/**
     * Ask the user what to do about a name collision
     *
     * @param pElement [in] The element being renamed
@@ -2560,7 +2736,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
       }
    }
 
-   /**
+   
+
+/**
     * Returns the number of open projects
     */
    public int getNumOpenProjects()
@@ -2589,7 +2767,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
       return numOpen;
    }
 
-        /* (non-Javadoc)
+        
+
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#postDeleteModelElement(java.lang.String, java.lang.String)
          */
    public void postDeleteModelElement(String sTopLevelXMIID, String sXMIID)
@@ -2598,7 +2778,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
 
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl#isEditing()
     */
    public boolean isEditing()
@@ -2607,7 +2789,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
       return false;
    }
 
-   /**
+   
+
+/**
     * etrieves the first project selected in the tree. If more than one is selected,
     * the first is retrieved
     * @return If a project is found then the project is returned.  Otherwise,
@@ -2725,7 +2909,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
    public class ProjectTreeExpandHandler implements TreeWillExpandListener
    {
 
-      /* (non-Javadoc)
+      
+
+/* (non-Javadoc)
        * @see javax.swing.event.TreeWillExpandListener#treeWillExpand(javax.swing.event.TreeExpansionEvent)
        */
       public void treeWillExpand(TreeExpansionEvent e)
@@ -2737,7 +2923,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
          }
       }
 
-      /* (non-Javadoc)
+      
+
+/* (non-Javadoc)
        * @see javax.swing.event.TreeWillExpandListener#treeWillCollapse(javax.swing.event.TreeExpansionEvent)
        */
       public void treeWillCollapse(TreeExpansionEvent event)
@@ -2748,7 +2936,7 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
 
    protected class PreferenceManagerEventHandler extends PreferenceManagerEventsAdapter
    {
-       //kris richards - this will probably never get called since the pref no 
+       
        //ShowWorkspaceNode pref expunged. set to false.
       public void onPreferenceChange(String name, IPropertyElement pElement,
       IResultCell cell)
@@ -2757,7 +2945,7 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
       public void onPreferencesChange(IPropertyElement[] pElements,
       IResultCell cell)
       {
-          //kris richards - these prefs are no longer valid so this code should never execute.
+          
          for (int index = 0; index < pElements.length; index++)
          {
             String name = pElements[index].getName();
@@ -2799,7 +2987,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
          });
       }
 
-      /**
+      
+
+/**
        * Listens for new projects being inserted into the model.  When a project
        * is inserted into the model and it the project is open then the node
        * must also be expaneded.
@@ -2882,7 +3072,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
       {
       }
 
-      /**
+      
+
+/**
        * After the project has been closed the node must be collapsed in the
        * tree.  The model is not able to collapse the node because the model
        * does not know about the UI details.
@@ -2904,7 +3096,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
          }
       }
 
-      /**
+      
+
+/**
        * After the project has been opened it must be expanded.  The model is
        * not able to expand the node because the model does not know about
        * the UI details.
@@ -2958,7 +3152,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
          m_Tree = tree;
       }
 
-      /* (non-Javadoc)
+      
+
+/* (non-Javadoc)
        * @see org.netbeans.modules.uml.ui.products.ad.application.action.IViewActionDelegate#init(org.netbeans.modules.uml.ui.products.ad.application.ApplicationView)
        */
       public void init(ApplicationView view)
@@ -2979,7 +3175,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
          m_Tree = tree;
       }
 
-      /* (non-Javadoc)
+      
+
+/* (non-Javadoc)
        * @see org.netbeans.modules.uml.ui.products.ad.application.action.IPlugginAction#selectionChanged(org.netbeans.modules.uml.ui.products.ad.application.action.PluginAction, org.netbeans.modules.uml.ui.products.ad.application.selection.ISelection)
        */
 //      public void selectionChanged(PluginAction action, ISelection selection)
@@ -2997,7 +3195,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
          super(tree, ProjectTreeResources.getString("JProjectTree.Refresh_Action_Name"), ProjectTreeResources.getString("JProjectTree.Refresh_Icon_Path")); //$NON-NLS-1$ //$NON-NLS-2$
       }
 
-      /* (non-Javadoc)
+      
+
+/* (non-Javadoc)
        * @see org.netbeans.modules.uml.ui.products.ad.application.action.IPlugginAction#run()
        */
       public void actionPerformed(ActionEvent e)
@@ -3015,7 +3215,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
          super(tree, ProjectTreeResources.getString("JProjectTree.Filter_Action_Name"), ProjectTreeResources.getString("JProjectTree.Filter_Icon_Path")); //$NON-NLS-1$ //$NON-NLS-2$
       }
 
-      /* (non-Javadoc)
+      
+
+/* (non-Javadoc)
        * @see org.netbeans.modules.uml.ui.products.ad.application.action.IPlugginAction#run()
        */
       public void actionPerformed(ActionEvent e)
@@ -3069,7 +3271,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
          }
       }
 
-      /* (non-Javadoc)
+      
+
+/* (non-Javadoc)
        * @see org.netbeans.modules.uml.ui.products.ad.application.action.IPlugginAction#run()
        */
       public void actionPerformed(ActionEvent e)
@@ -3166,7 +3370,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
          super("MBK_RENAME", tree, ProjectTreeResources.getString("JProjectTree.Rename_Acion_Name")); //$NON-NLS-1$
       }
 
-      /* (non-Javadoc)
+      
+
+/* (non-Javadoc)
        * @see org.netbeans.modules.uml.ui.products.ad.application.action.IPlugginAction#run()
        */
       public void actionPerformed(ActionEvent e)
@@ -3223,7 +3429,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
          super("MBK_SAVE", tree, ProjectTreeResources.getString("JProjectTree.Save_Acion_Name")); //$NON-NLS-1$
       }
 
-          /* (non-Javadoc)
+          
+
+/* (non-Javadoc)
            * @see org.netbeans.modules.uml.ui.products.ad.application.action.IPlugginAction#run()
            */
       public void actionPerformed(ActionEvent e)
@@ -3301,7 +3509,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
          super("MBK_CLOSE", tree, ProjectTreeResources.getString("JProjectTree.Close_Acion_Name")); //$NON-NLS-1$
       }
 
-          /* (non-Javadoc)
+          
+
+/* (non-Javadoc)
            * @see org.netbeans.modules.uml.ui.products.ad.application.action.IPlugginAction#run()
            */
       public void actionPerformed(ActionEvent e)
@@ -3382,7 +3592,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
       m_ConfigMgrName = newVal;
    }
 
-   /**
+   
+
+/**
     * Gets the workspace from the product if we are in the project tree
     * or asks the user defined addin for its workspace if we are in the design center.
     *
@@ -3426,7 +3638,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
          return retVal;
       }
 
-        /* (non-Javadoc)
+        
+
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.ui.products.ad.application.action.IPlugginAction#run()
          */
       public void actionPerformed(ActionEvent e)
@@ -3435,7 +3649,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
       }
    }
 
-   /**
+   
+
+/**
     *
     * Manages the selected Project in the tree. This looks for all Packages in the
     * selected Project, extracts them into their own .etx files, and saves the Project
@@ -3461,7 +3677,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
       }
    }
 
-   /**
+   
+
+/**
     *
     * Retrieves the elements that will be extracted when the user is managing the project
     *
@@ -3482,7 +3700,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
       return retObj;
    }
 
-   /**
+   
+
+/**
     *
     * Extracts the elements passed in, asking the user if they want to continue and showing progress
     * if needed.
@@ -3623,7 +3843,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
       return DefaultEngineResource.getString(key);
    }
 
-   /**
+   
+
+/**
     *
     * Queries the user to make sure that they want to proceed with the Management of
     * the project
@@ -3651,7 +3873,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
       return proceed;
    }
 
-   /**
+   
+
+/**
     *
     * Dirties the Project in a save way, making sure element modifies are
     * going out
@@ -3712,7 +3936,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
          super("MBK_EXPAND_ITEM", tree, ProjectTreeResources.getString("JProjectTree.Expand_All_Packages_Acion_Name")); //$NON-NLS-1$
       }
 
-      /* (non-Javadoc)
+      
+
+/* (non-Javadoc)
        * @see org.netbeans.modules.uml.ui.products.ad.application.action.IPlugginAction#run()
        */
       public void actionPerformed(ActionEvent e)
@@ -3803,7 +4029,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
       }
    }
 
-   /**
+   
+
+/**
     * Adds child packages to the list that are not expanded.
     *
     * @param pProjectTree [in] The project tree which is a parent of this button handler
@@ -3860,7 +4088,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
          super("MBK_REMOVE_PROJECT", tree, ProjectTreeResources.getString("JProjectTree.Remove_Project_Acion_Name")); //$NON-NLS-1$
       }
 
-      /* (non-Javadoc)
+      
+
+/* (non-Javadoc)
        * @see org.netbeans.modules.uml.ui.products.ad.application.action.IPlugginAction#run()
        */
       public void actionPerformed(ActionEvent e)
@@ -3882,7 +4112,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
       }
    }
 
-   /**
+   
+
+/**
     * Removes the selected projects from the workspace.
     */
    private void removeSelectedProjectsFromWorkspace()
@@ -3933,7 +4165,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
          super("MBK_INSERT_PROJECT", tree, ProjectTreeResources.getString("JProjectTree.Insert_Project_Acion_Name")); //$NON-NLS-1$
       }
 
-      /* (non-Javadoc)
+      
+
+/* (non-Javadoc)
        * @see org.netbeans.modules.uml.ui.products.ad.application.action.IPlugginAction#run()
        */
       public void actionPerformed(ActionEvent e)
@@ -3959,7 +4193,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
 
    }
 
-   /**
+   
+
+/**
     * Returns true if a workspace is opened.
     *
     * @return true if a workspace is open.
@@ -3984,7 +4220,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
          super("MBK_OPEN_WORKSPACE", tree, ProjectTreeResources.getString("JProjectTree.OpenWorkspace_Acion_Name")); //$NON-NLS-1$
       }
 
-      /* (non-Javadoc)
+      
+
+/* (non-Javadoc)
        * @see org.netbeans.modules.uml.ui.products.ad.application.action.IPlugginAction#run()
        */
       public void actionPerformed(ActionEvent e)
@@ -4048,7 +4286,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
          return getIsClosedProjectSelected();
       }
 
-      /* (non-Javadoc)
+      
+
+/* (non-Javadoc)
        * @see org.netbeans.modules.uml.ui.products.ad.application.action.IPlugginAction#run()
        */
       public void actionPerformed(ActionEvent e)
@@ -4066,7 +4306,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
 
    }
 
-   /**
+   
+
+/**
     * Opens the selected projects.
     */
    public void openSelectedProjects(IWorkspace space)
@@ -4074,7 +4316,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
       actOnSelectedProjects(SA_OPEN, space);
    }
 
-   /**
+   
+
+/**
     * Opens or closes the selected projects based on the flag.
     *
     * @param nAction [in] The action to perform
@@ -4185,7 +4429,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
          return isEnabled;
       }
 
-      /* (non-Javadoc)
+      
+
+/* (non-Javadoc)
        * @see org.netbeans.modules.uml.ui.products.ad.application.action.IPlugginAction#run()
        */
       public void actionPerformed(ActionEvent e)
@@ -4205,7 +4451,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
          super("MBK_NEW_WORKSPACE", tree, ProjectTreeResources.getString("JProjectTree.NewWorkspace_Acion_Name")); //$NON-NLS-1$
       }
 
-      /* (non-Javadoc)
+      
+
+/* (non-Javadoc)
        * @see org.netbeans.modules.uml.ui.products.ad.application.action.IPlugginAction#run()
        */
       public void actionPerformed(ActionEvent e)
@@ -4266,7 +4514,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
          return bEnable;
       }
 
-      /* (non-Javadoc)
+      
+
+/* (non-Javadoc)
        * @see org.netbeans.modules.uml.ui.products.ad.application.action.IPlugginAction#run()
        */
       public void actionPerformed(ActionEvent e)
@@ -4320,7 +4570,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
          return retVal;
       }
 
-      /* (non-Javadoc)
+      
+
+/* (non-Javadoc)
        * @see org.netbeans.modules.uml.ui.products.ad.application.action.IPlugginAction#run()
        */
       public void actionPerformed(ActionEvent e)
@@ -4375,7 +4627,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
          return enableElementOrPackage();
       }
 
-      /* (non-Javadoc)
+      
+
+/* (non-Javadoc)
        * @see org.netbeans.modules.uml.ui.products.ad.application.action.IPlugginAction#run()
        */
       public void actionPerformed(ActionEvent e)
@@ -4396,7 +4650,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
          super("MBK_NEW_PACKAGE", tree, ProjectTreeResources.getString("JProjectTree.NewPackage_Acion_Name")); //$NON-NLS-1$
       }
 
-      /* (non-Javadoc)
+      
+
+/* (non-Javadoc)
        * @see org.netbeans.modules.uml.ui.products.ad.application.action.IPlugginAction#run()
        */
       public void actionPerformed(ActionEvent e)
@@ -4496,7 +4752,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
          super("MBK_NEW_ATTRIBUTE", tree, ProjectTreeResources.getString("JProjectTree.NewAttribute_Acion_Name")); //$NON-NLS-1$
       }
 
-      /* (non-Javadoc)
+      
+
+/* (non-Javadoc)
        * @see org.netbeans.modules.uml.ui.products.ad.application.action.IPlugginAction#run()
        */
       public void actionPerformed(ActionEvent e)
@@ -4553,7 +4811,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
          super("MBK_NEW_OPERATION", tree, ProjectTreeResources.getString("JProjectTree.NewOperation_Acion_Name")); //$NON-NLS-1$
       }
 
-      /* (non-Javadoc)
+      
+
+/* (non-Javadoc)
        * @see org.netbeans.modules.uml.ui.products.ad.application.action.IPlugginAction#run()
        */
       public void actionPerformed(ActionEvent e)
@@ -4641,7 +4901,9 @@ public class JProjectTree extends ApplicationView implements IProjectTreeControl
       return retVal;
    }
 
-   /**
+   
+
+/**
     * Resets the state of the drag operation.  (Package Projected).
     */
    void resetDragState()

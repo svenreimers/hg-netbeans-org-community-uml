@@ -87,6 +87,7 @@ import org.netbeans.modules.uml.ui.swing.projecttree.ISwingProjectTreeModel;
 import org.netbeans.modules.uml.ui.swing.projecttree.JProjectTree;
 import org.netbeans.modules.uml.ui.swing.testbed.addin.menu.Separator;
 
+
 /**
  * The DesignCenterComponent is a component that can be embedded into NetBeans
  * (FFJ) window system.  DesignCenterComponent will display a Describe system
@@ -105,14 +106,18 @@ public class DesignCenterComponent extends TopComponent {
     private ISwingProjectTreeModel m_Model = null;
     transient private boolean added = false;
 
-    /**
+    
+
+/**
      *  The Set of Forte workspaces in which a project tree has been opened.
      */
     private static HashSet workspaces = new HashSet();
 
     private static DesignCenterComponent lastComponent = null;
 
-    /**
+    
+
+/**
      * Creates  a DesignCenterComponent component.
      */
     public DesignCenterComponent() {
@@ -198,7 +203,9 @@ public class DesignCenterComponent extends TopComponent {
         return lastComponent;
     }
 
-    /**
+    
+
+/**
      *  Enables or disables this component, depending on the value of the
      * parameter b. An enabled component can respond to user input and generate
      * events.  Components are enabled initially by default.  The
@@ -210,7 +217,9 @@ public class DesignCenterComponent extends TopComponent {
             mDesignCenter.setEnabled(enabled);
     }
 
-    /**
+    
+
+/**
      * Determines whether this component is enabled. An enabled component can
      * respond to user input and generate events. The component is only enabled
      * if the system tree has been initialized.
@@ -225,7 +234,9 @@ public class DesignCenterComponent extends TopComponent {
         return retVal;
     }
 
-    /**
+    
+
+/**
      * Refreshes the system tree.  The system tree will read Describe and update
      * its contents.
      */
@@ -255,7 +266,9 @@ public class DesignCenterComponent extends TopComponent {
         return added;
     }
 
-    /**
+    
+
+/**
      * Makes this Component displayable by connecting it to a native screen
      * resource. This method is called internally by the toolkit and should not
      * be called directly by programs.
@@ -281,7 +294,9 @@ public class DesignCenterComponent extends TopComponent {
        }
     }
 
-    /**
+    
+
+/**
      * Makes this Component undisplayable by destroying it native screen
      * resource.  This method is called by the toolkit internally and should not
      * be called directly by programs.
@@ -487,7 +502,9 @@ public class DesignCenterComponent extends TopComponent {
       }
       
       
-      /**
+      
+
+/**
        * The registry information that is retrieved from layer files to build
        * the list of actions supported by this node.
        *

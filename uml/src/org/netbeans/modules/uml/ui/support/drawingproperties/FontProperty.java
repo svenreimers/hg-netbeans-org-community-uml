@@ -43,6 +43,8 @@
  */
 
 
+
+
 /*
  * Created on Feb 4, 2004
  *
@@ -70,7 +72,9 @@ public class FontProperty extends DrawingProperty implements IFontProperty
 		return "font";
 	}
 	
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.support.drawingproperties.IFontProperty#initialize(org.netbeans.modules.uml.ui.support.drawingproperties.IDrawingPropertyProvider, java.lang.String, java.lang.String, java.lang.String, short, short, boolean, boolean, boolean, int, int)
 	 */
 	public void initialize(IDrawingPropertyProvider pDrawingPropertyProvider, String sDrawEngineName, String sResourceName, String sFaceName, short nCharSet, short nSize, boolean bItalic, boolean bStrikeout, boolean bUnderline, int nWeight, int nColor)
@@ -95,7 +99,9 @@ public class FontProperty extends DrawingProperty implements IFontProperty
 		}
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.support.drawingproperties.IFontProperty#initialize(org.netbeans.modules.uml.ui.support.drawingproperties.IDrawingPropertyProvider, java.lang.String, java.lang.String, java.awt.Font, int)
 	 */
 	public void initialize2(IDrawingPropertyProvider pDrawingPropertyProvider, String sDrawEngineName, String sResourceName, Font font, int nColor)

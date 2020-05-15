@@ -61,7 +61,9 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 public class AssociationClass extends Class implements IAssociationClass
 {
 
-	/**
+	
+
+/**
 	 * 
 	 */
 	public AssociationClass() 
@@ -69,7 +71,9 @@ public class AssociationClass extends Class implements IAssociationClass
 		super();
 	}
 
-	/**
+	
+
+/**
 	 * Establishes the appropriate XML elements for this UML type.
 	 *
 	 * [in] The document where this element will reside
@@ -87,7 +91,9 @@ public class AssociationClass extends Class implements IAssociationClass
 
    /// IAssociation pass through methods
 
-   /**
+   
+
+/**
     * Adds this end to the association
    */
    public void addEnd( IAssociationEnd end )
@@ -95,7 +101,9 @@ public class AssociationClass extends Class implements IAssociationClass
       getAssociation().addEnd( end );
    }
 
-   /**
+   
+
+/**
     * Removes this end from the assocaition
    */
    public void removeEnd( IAssociationEnd end )
@@ -104,7 +112,9 @@ public class AssociationClass extends Class implements IAssociationClass
    }
 
 
-   /**
+   
+
+/**
     * Returns the assocaition ends as a list
    */
    public ETList<IAssociationEnd> getEnds()
@@ -113,7 +123,9 @@ public class AssociationClass extends Class implements IAssociationClass
    }
 
 
-   /**
+   
+
+/**
     * Returns the number of ends in this association.
    */
    public int getNumEnds()
@@ -121,7 +133,9 @@ public class AssociationClass extends Class implements IAssociationClass
       return getAssociation().getNumEnds();
    }
 
-   /**
+   
+
+/**
     * What is the index of this end in the ends list.  -1 if the end is not found
    */
    public int getEndIndex( IAssociationEnd end )
@@ -129,7 +143,9 @@ public class AssociationClass extends Class implements IAssociationClass
       return getAssociation().getEndIndex( end );
    }
 
-   /**
+   
+
+/**
     * property IsDerived
    */
    public boolean getIsDerived()
@@ -137,7 +153,9 @@ public class AssociationClass extends Class implements IAssociationClass
       return getAssociation().getIsDerived();
    }
 
-   /**
+   
+
+/**
     * property IsDerived
    */
    public void setIsDerived( boolean value )
@@ -145,7 +163,9 @@ public class AssociationClass extends Class implements IAssociationClass
       getAssociation().setIsDerived( value );
    }
 
-   /**
+   
+
+/**
     * Adds an Classifier to this Association. The result is that addition of a new AssociationEnd.
    */
    public IAssociationEnd addEnd2( IClassifier participant )
@@ -153,7 +173,9 @@ public class AssociationClass extends Class implements IAssociationClass
       return getAssociation().addEnd2( participant );
    }
 
-   /**
+   
+
+/**
     * Adds an Classifier to this Association. The result is that addition of a new AssociationEnd. The end is not returned.
    */
    public void addEnd3( IClassifier participant )
@@ -161,7 +183,9 @@ public class AssociationClass extends Class implements IAssociationClass
       getAssociation().addEnd3( participant );
    }
 
-   /**
+   
+
+/**
     * Adds an Classifier to this Association. The result is that addition of a new AssociationEnd. The end is not returned.
    */
    public IAggregation transformToAggregation( boolean IsComposite )
@@ -169,7 +193,9 @@ public class AssociationClass extends Class implements IAssociationClass
       return getAssociation().transformToAggregation( IsComposite );
    }
 
-   /**
+   
+
+/**
     * Is this association reflexive, i.e., do both ends of the association point at the same Classifier?
    */
    public boolean getIsReflexive()
@@ -177,7 +203,9 @@ public class AssociationClass extends Class implements IAssociationClass
       return getAssociation().getIsReflexive();
    }
 
-   /**
+   
+
+/**
     * Goes through all the ends and returns all participants
    */
    public ETList<IElement> getAllParticipants()
@@ -185,7 +213,9 @@ public class AssociationClass extends Class implements IAssociationClass
       return getAssociation().getAllParticipants();
    }
 
-   /**
+   
+
+/**
     * Returns the first end with this guy as a participant
     */
    public IAssociationEnd getFirstEndWithParticipant(IElement participant)
@@ -193,7 +223,9 @@ public class AssociationClass extends Class implements IAssociationClass
       return getAssociation().getFirstEndWithParticipant( participant );
    }
 
-   /**
+   
+
+/**
     * Returns the end at this index
     */
    public IAssociationEnd getEndAtIndex(int nIndex)

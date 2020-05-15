@@ -42,11 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * CustomePropertyEditor.java
- *
- * Created on March 17, 2005, 8:33 PM
- */
+
+
 
 package org.netbeans.modules.uml.propertysupport.nodes;
 

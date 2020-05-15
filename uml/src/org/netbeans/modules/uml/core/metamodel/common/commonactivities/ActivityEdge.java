@@ -42,11 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : ActivityEdge.java
- * Created on : Sep 16, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.metamodel.common.commonactivities;
 
 import org.netbeans.modules.uml.core.metamodel.core.foundation.ElementCollector;
@@ -66,7 +63,8 @@ import org.netbeans.modules.uml.ui.support.DispatchHelper;
 public class ActivityEdge extends RedefinableElement implements IActivityEdge, IExpressionListener
 {
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivityEdge#addGroup(org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivityGroup)
     */
    public void addGroup(IActivityGroup pGroup)
@@ -74,7 +72,9 @@ public class ActivityEdge extends RedefinableElement implements IActivityEdge, I
       addElement(pGroup);
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivityEdge#getActivity()
     */
    public IActivity getActivity()
@@ -82,7 +82,9 @@ public class ActivityEdge extends RedefinableElement implements IActivityEdge, I
       return OwnerRetriever.getOwnerByType(this, IActivity.class);
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivityEdge#getGroups()
     */
    public ETList < IActivityGroup > getGroups()
@@ -90,7 +92,9 @@ public class ActivityEdge extends RedefinableElement implements IActivityEdge, I
       return new ElementCollector < IActivityGroup > ().retrieveElementCollection((IElement)this, "UML:Element.ownedElement", IActivityGroup.class);
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivityEdge#getGuard()
     */
    public IValueSpecification getGuard()
@@ -98,7 +102,9 @@ public class ActivityEdge extends RedefinableElement implements IActivityEdge, I
       return new ElementCollector < IValueSpecification > ().retrieveSingleElement(this, "UML:ActivityEdge.guard/*", IValueSpecification.class);
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivityEdge#getSource()
     */
    public IActivityNode getSource()
@@ -116,7 +122,9 @@ public class ActivityEdge extends RedefinableElement implements IActivityEdge, I
       return activityNode;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivityEdge#getTarget()
     */
    public IActivityNode getTarget()
@@ -134,7 +142,9 @@ public class ActivityEdge extends RedefinableElement implements IActivityEdge, I
       return activityNode;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivityEdge#getWeight()
     */
    public IValueSpecification getWeight()
@@ -142,7 +152,9 @@ public class ActivityEdge extends RedefinableElement implements IActivityEdge, I
       return new ElementCollector < IValueSpecification > ().retrieveSingleElement(this, "UML:ActivityEdge.weight/*", IValueSpecification.class);
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivityEdge#removeGroup(org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivityGroup)
     */
    public void removeGroup(IActivityGroup pGroup)
@@ -151,7 +163,9 @@ public class ActivityEdge extends RedefinableElement implements IActivityEdge, I
          removeElement(pGroup);
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivityEdge#setActivity(org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivity)
     */
    public void setActivity(IActivity value)
@@ -159,7 +173,9 @@ public class ActivityEdge extends RedefinableElement implements IActivityEdge, I
       setNamespace(value);
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivityEdge#setGuard(org.netbeans.modules.uml.core.metamodel.core.foundation.IValueSpecification)
     */
    public void setGuard(IValueSpecification value)
@@ -167,7 +183,9 @@ public class ActivityEdge extends RedefinableElement implements IActivityEdge, I
       addChild("UML:ActivityEdge.guard", "UML:ActivityEdge.guard", value);
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivityEdge#setSource(org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivityNode)
     */
    public void setSource(IActivityNode value)
@@ -187,7 +205,9 @@ public class ActivityEdge extends RedefinableElement implements IActivityEdge, I
       });
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivityEdge#setTarget(org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivityNode)
     */
    public void setTarget(IActivityNode value)
@@ -207,7 +227,9 @@ public class ActivityEdge extends RedefinableElement implements IActivityEdge, I
       });
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivityEdge#setWeight(org.netbeans.modules.uml.core.metamodel.core.foundation.IValueSpecification)
     */
    public void setWeight(IValueSpecification value)
@@ -215,7 +237,9 @@ public class ActivityEdge extends RedefinableElement implements IActivityEdge, I
       addChild("UML:ActivityEdge.weight", "UML:ActivityEdge.weight", value);
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IExpressionListener#onPreBodyModified(org.netbeans.modules.uml.core.metamodel.core.foundation.IExpression, java.lang.String)
     */
    public boolean onPreBodyModified(IExpression exp, String proposedValue)
@@ -224,7 +248,9 @@ public class ActivityEdge extends RedefinableElement implements IActivityEdge, I
       return (disp != null)?disp.firePreGuardModified(this, proposedValue, disp.createPayload("PreGuardModified")):false;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IExpressionListener#onBodyModified(org.netbeans.modules.uml.core.metamodel.core.foundation.IExpression)
     */
    public void onBodyModified(IExpression exp)
@@ -235,7 +261,9 @@ public class ActivityEdge extends RedefinableElement implements IActivityEdge, I
       }
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IExpressionListener#onPreLanguageModified(org.netbeans.modules.uml.core.metamodel.core.foundation.IExpression, java.lang.String)
     */
    public boolean onPreLanguageModified(IExpression exp, String proposedValue)
@@ -243,7 +271,9 @@ public class ActivityEdge extends RedefinableElement implements IActivityEdge, I
       return false;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IExpressionListener#onLanguageModified(org.netbeans.modules.uml.core.metamodel.core.foundation.IExpression)
     */
    public void onLanguageModified(IExpression exp)

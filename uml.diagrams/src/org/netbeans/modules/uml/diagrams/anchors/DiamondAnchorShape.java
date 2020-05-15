@@ -60,7 +60,9 @@ public class DiamondAnchorShape implements AnchorShape
     private double cutDistance;
     private GeneralPath generalPath;
 
-    /**
+    
+
+/**
      * Creates a triangular anchor shape.
      * @param size the size of triangle
      * @param filled if true, then the triangle is filled

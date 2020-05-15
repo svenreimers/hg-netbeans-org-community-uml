@@ -68,7 +68,9 @@ public class UMLRelationshipNode extends UMLModelElementNode implements ITreeRel
    }
 
 
-   /**
+   
+
+/**
     * 
     */
    public UMLRelationshipNode(Lookup lookup)
@@ -76,7 +78,9 @@ public class UMLRelationshipNode extends UMLModelElementNode implements ITreeRel
       super(lookup);
    }
 
-   /**
+   
+
+/**
     * @param item
     * @throws NullPointerException
     */
@@ -85,7 +89,9 @@ public class UMLRelationshipNode extends UMLModelElementNode implements ITreeRel
       super(item);
    }
 
-   /**
+   
+
+/**
     * @param item
     * @throws NullPointerException
     */

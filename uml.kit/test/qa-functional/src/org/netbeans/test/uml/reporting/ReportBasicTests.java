@@ -137,7 +137,9 @@ public class ReportBasicTests extends UMLTestCase  {
     
     public void testCreateDefaultWebReport() {
         lastTestCase=getCurrentTestMethodName();
-        /*openDiagram(project, clsPath, clsName);        
+        
+
+/*openDiagram(project, clsPath, clsName);        
         openDiagram(project, cpdPath, cpdName);
         openDiagram(project, dpdPath, dpdName);
         openDiagram(project, actPath, actName);
@@ -235,7 +237,9 @@ public class ReportBasicTests extends UMLTestCase  {
     public void tearDown() {
         org.netbeans.test.umllib.util.Utils.makeScreenShot(lastTestCase,true);
         //start browser search
-       /* java.awt.Robot rbt=null;
+       
+
+/* java.awt.Robot rbt=null;
         try
         {
             rbt=new Robot();

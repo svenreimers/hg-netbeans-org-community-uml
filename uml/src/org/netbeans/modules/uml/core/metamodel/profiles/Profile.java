@@ -51,6 +51,8 @@ import org.dom4j.Node;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.Package;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
+
+
 /**
  * A profile defines limited extensions to a reference metamodel
  * with the purpose of adapting the metamodel to a specific
@@ -59,7 +61,9 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 public class Profile extends Package implements IProfile
 {
 
-	/**
+	
+
+/**
 	 * Removes a Stereotype from this Profile.
 	 *
 	 * @param stereoType
@@ -69,7 +73,9 @@ public class Profile extends Package implements IProfile
 		
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.profiles.IProfile#addStereotype(org.netbeans.modules.uml.core.metamodel.profiles.IStereotype)
 	 */
 	public void addStereotype(IStereotype sType) 
@@ -77,7 +83,9 @@ public class Profile extends Package implements IProfile
 		
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.profiles.IProfile#getStereotypes()
 	 */
 	public ETList<IStereotype> getStereotypes() 
@@ -85,7 +93,9 @@ public class Profile extends Package implements IProfile
 		return null;
 	}
 	
-	/**
+	
+
+/**
 	 * Establishes the appropriate XML elements for this UML type.
 	 *
 	 * [in] The document where this element will reside

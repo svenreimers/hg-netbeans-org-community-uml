@@ -50,6 +50,7 @@ import org.netbeans.api.visual.action.MoveProvider;
 import org.netbeans.api.visual.action.MoveStrategy;
 import org.netbeans.api.visual.widget.Widget;
 
+
 /**
  * is used for vertical movements within some border
  */

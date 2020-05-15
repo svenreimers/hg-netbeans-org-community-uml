@@ -42,11 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * NewDiagramType.java
- *
- * Created on March 4, 2005, 4:39 PM
- */
+
+
 
 package org.netbeans.modules.uml.project.ui.nodes.actions;
 
@@ -125,7 +122,9 @@ public class NewLiteralType extends NewType implements INewTypeExt
 		{
 		}
 	}
-	/**
+	
+
+/**
 	 *
 	 * Retrieves the default name for use for model elements that are just
 	 * being created.

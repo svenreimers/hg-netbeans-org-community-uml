@@ -42,15 +42,12 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File         : ImageFinder.java
- * Version      : 1.0
- * Description  : Utility class to locate images in a locale-independent manner.
- * Author       : Darshan
- */
+
+
 package org.netbeans.modules.uml.integration.ide.actions;
 
 import javax.swing.*;
+
 
 /**
  *  This class is responsible for locating images for the integration actions,
@@ -60,7 +57,8 @@ import javax.swing.*;
  * @version 1.0
  */
 public class ImageFinder {
-    /**
+    
+/**
      *  Given a base image name, returns the path to the locale-specific
      * image.
      *
@@ -72,7 +70,9 @@ public class ImageFinder {
         return "res/" + imageName + ".gif";
     }
 
-    /**
+    
+
+/**
      *  Returns an image suitable as a placeholder (a 'missing' image).
      * @return The path to the placeholder image.
      */

@@ -85,7 +85,9 @@ public class CreationFactory implements ICreationFactory {
 		m_CreationFactory = value;
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.ICreationFactory#cleanUp()
 	 */
 	public long cleanUp() {
@@ -101,7 +103,9 @@ public class CreationFactory implements ICreationFactory {
 		m_RevokeNumber = value;
 	}
 
-	/**
+	
+
+/**
 	 * Retrieves the IUnknown interface for the meta type specified in typeName..
 	 * 
 	 * @param typeName[in] The type to retrieve.  For example, "Class" will retrieve
@@ -142,7 +146,9 @@ public class CreationFactory implements ICreationFactory {
 		return retObj;
 	}
 
-	/**
+	
+
+/**
 	 * Once an element has been initially created, this method is called
 	 * in order to establish the appropriate XML datum behind the element.
 	 * This call will QuertyInterface for the IVersionableElement interface.
@@ -177,7 +183,9 @@ public class CreationFactory implements ICreationFactory {
 		return vEle;
 	}
 
-	/**
+	
+
+/**
 	 * Creates the COM wrapper to house the actual XML element.  The XML element
 	 * has no been initialized as a result of the cell.
 	 * 
@@ -193,7 +201,9 @@ public class CreationFactory implements ICreationFactory {
 		return retrieveEmptyMetaType( "Elements", typeName, outer);
 	}
 
-	/**
+	
+
+/**
 	 * Creates the COM wrapper to house the actual XML element.  The XML element
 	 * has not been initialized as a result of this call.
 	 * 
@@ -232,7 +242,9 @@ public class CreationFactory implements ICreationFactory {
 		return retObj;
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Makes sure this CreationFactory has a ConfigManager
 	 * properly installed on it.
@@ -264,7 +276,9 @@ public class CreationFactory implements ICreationFactory {
         private Class m_TransitionClass = null;
         private FileObject definingFileObject = null;
 
-        /**
+        
+
+/**
          * Creates the specified object given the CLSID.  Caches the class factory
          * for the object for later use.
          *
@@ -282,7 +296,7 @@ public class CreationFactory implements ICreationFactory {
             Class fact = retrieveFactory(createState);
             if (fact != null)
             {
-                //Sumitabh find a way to create an inner class using outer.
+                
                 try
                 {
                     retObj = fact.newInstance();
@@ -301,7 +315,9 @@ public class CreationFactory implements ICreationFactory {
             return retObj;
         }
 
-        /**
+        
+
+/**
          *
          * Establishes the appropriate factory on this object.
          *
@@ -319,7 +335,9 @@ public class CreationFactory implements ICreationFactory {
             }
         }
 
-        /**
+        
+
+/**
          *
          * Retrieves the correct ProgID for the element to create, based
          * on the creational status of this factory.
@@ -352,7 +370,7 @@ public class CreationFactory implements ICreationFactory {
 
                 if (m_Class == null)
                 {
-                    // Trey - If we are not able to find the type in the
+                    
                     //        EssentialConfig.etc file (old way), look
                     //        In the layer file system (new way).
 //                            try

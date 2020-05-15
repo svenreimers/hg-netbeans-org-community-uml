@@ -52,13 +52,17 @@ import org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframe
  */
 public interface IXMLTokenDescriptor extends ITokenDescriptor
 {
-    /**
+    
+
+/**
      * Get node that contains the "TDescriptor", "TGeneraralization", or "TRealization" node.
      * @param pVal The token descritpor data.
      */
     public Node getTokenDescriptorNode();
 
-    /**
+    
+
+/**
      * Set node that contains the "TDescriptor", "TGeneraralization", or "TRealization" node.
      * @param pVal The token descritpor data.
      */

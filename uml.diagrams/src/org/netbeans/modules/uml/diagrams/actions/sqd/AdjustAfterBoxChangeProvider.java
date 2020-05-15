@@ -57,7 +57,8 @@ public class AdjustAfterBoxChangeProvider implements ActionProvider {
     private LifelineWidget llW;
     private int oldLineY;
     
-    /**
+    
+/**
      * should be created before actual change, to store previous sizes to be able to find difference
      * (or at least before validation)
      * @param widget

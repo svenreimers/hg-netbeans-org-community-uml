@@ -61,7 +61,8 @@ public class ElementLifeTimeEventDispatcher extends EventDispatcher implements I
 	private EventManager< IElementDisposalEventsSink > m_DisposalSink = null;
 	private EventManager< IUnknownClassifierEventsSink > m_UnknownClassifierSink = null;
 
-	/**
+	
+/**
 	 * 
 	 */
 	public ElementLifeTimeEventDispatcher() 
@@ -74,7 +75,9 @@ public class ElementLifeTimeEventDispatcher extends EventDispatcher implements I
 		m_UnknownClassifierSink = new EventManager<IUnknownClassifierEventsSink>();
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Registers the passed-in event sink with this dispatcher.
 	 *
@@ -88,7 +91,9 @@ public class ElementLifeTimeEventDispatcher extends EventDispatcher implements I
 		m_Sink.addListener(handler, null);
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Removes a listener from the current list.
 	 *
@@ -103,7 +108,9 @@ public class ElementLifeTimeEventDispatcher extends EventDispatcher implements I
 		
 	}
 
-	/**
+	
+
+/**
 	 * Registers an event sink to handle element lifetime events.
 	 * 
 	 * @param handler[in] 
@@ -116,7 +123,9 @@ public class ElementLifeTimeEventDispatcher extends EventDispatcher implements I
 		m_DisposalSink.addListener(handler, null);
 	}
 
-	/**
+	
+
+/**
 	 * Revokes the sink handler.
 	 * 
 	 * @param long cookie[in] 
@@ -129,7 +138,9 @@ public class ElementLifeTimeEventDispatcher extends EventDispatcher implements I
 		
 	}
 
-	/**
+	
+
+/**
 	 * Registers an event sink to handle unknown classifier events.
 	 * 
 	 * @param handler[in] 
@@ -142,7 +153,9 @@ public class ElementLifeTimeEventDispatcher extends EventDispatcher implements I
 		m_UnknownClassifierSink.addListener(handler, null);
 	}
 
-	/**
+	
+
+/**
 	 * Revokes the sink handler.
 	 * 
 	 * @param long cookie[in] 
@@ -154,7 +167,9 @@ public class ElementLifeTimeEventDispatcher extends EventDispatcher implements I
 		
 	}
 
-	/**
+	
+
+/**
 	 * Fired whenever an element is about to be created.
 	 * 
 	 * @param elementType[in] 
@@ -184,7 +199,9 @@ public class ElementLifeTimeEventDispatcher extends EventDispatcher implements I
 		return proceed;
 	}
 
-	/**
+	
+
+/**
 	 * Fired whenever an element is created.
 	 * 
 	 * @param element[in] 
@@ -209,7 +226,9 @@ public class ElementLifeTimeEventDispatcher extends EventDispatcher implements I
 		
 	}
 
-	/**
+	
+
+/**
 	 * Fired whenever an element is about to be deleted.
 	 * 
 	 * @param ver[in] 
@@ -237,7 +256,9 @@ public class ElementLifeTimeEventDispatcher extends EventDispatcher implements I
 		return proceed;
 	}
 
-	/**
+	
+
+/**
 	 * Fired whenever an element is deleted.
 	 * 
 	 * @param element[in] 
@@ -261,7 +282,9 @@ public class ElementLifeTimeEventDispatcher extends EventDispatcher implements I
 		
 	}
 
-	/**
+	
+
+/**
 	 * Fired whenever an element is about to be disposed of.
 	 * 
 	 * @param pElement[in] 
@@ -288,7 +311,9 @@ public class ElementLifeTimeEventDispatcher extends EventDispatcher implements I
 		return proceed;
 	}
 
-	/**
+	
+
+/**
 	 * Fired whenever after an element is created.
 	 * 
 	 * @param pElements[in] 
@@ -313,7 +338,9 @@ public class ElementLifeTimeEventDispatcher extends EventDispatcher implements I
 		
 	}
 
-	/**
+	
+
+/**
 	 * Fired whenever an element is about to be duplicated.
 	 * 
 	 * @param element[in] 
@@ -341,7 +368,9 @@ public class ElementLifeTimeEventDispatcher extends EventDispatcher implements I
 		return proceed;
 	}
 
-	/**
+	
+
+/**
 	 * Fired whenever an element is duplicated.
 	 * 
 	 * @param element[in] 
@@ -366,7 +395,9 @@ public class ElementLifeTimeEventDispatcher extends EventDispatcher implements I
 		
 	}
 
-	/**
+	
+
+/**
 	 * Fired when a new classifier is about to be created as specified by the unknown classifier preference.
 	 * 
 	 * @param element[in] 
@@ -391,7 +422,9 @@ public class ElementLifeTimeEventDispatcher extends EventDispatcher implements I
 		return proceed;
 	}
 
-	/**
+	
+
+/**
 	 * Fired whenever an Unknown is created.
 	 * 
 	 * @param element[in] 
@@ -414,7 +447,9 @@ public class ElementLifeTimeEventDispatcher extends EventDispatcher implements I
 		
 	}
 
-	/**
+	
+
+/**
 	 * IEventDispatcher override.  Returns the number of registered sinks
 	 */
 	public int getNumRegisteredSinks()

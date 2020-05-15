@@ -43,11 +43,8 @@
  */
 
 
-/*
- * File       : Expression.java
- * Created on : Dec 8, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.expression;
 
 
@@ -76,7 +73,9 @@ public class Expression {
 	private StateHandlerController  mController = null;
 	private ExpressionStateHandler  m_RootExpression = null;
 	private ITokenDescriptor        m_RootToken = null;
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.expression.IExpression#addState(java.lang.String, java.lang.String)
 	 */
     public Expression() 
@@ -103,7 +102,9 @@ public class Expression {
 		}
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.expression.IExpression#addToken(org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ITokenDescriptor, java.lang.String)
 	 */
 	public void addToken(ITokenDescriptor pToken, String language)
@@ -120,7 +121,9 @@ public class Expression {
 		}
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.expression.IExpression#endState(java.lang.String)
 	 */
 	public void endState(String stateName)
@@ -128,7 +131,9 @@ public class Expression {
 		mController.removeStateHandler(stateName);	
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.expression.IExpression#getEndPosition()
 	 */
 	public long getEndPosition()
@@ -157,7 +162,9 @@ public class Expression {
 		return retVal;
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.expression.IExpression#getLine()
 	 */
 	public long getLine()
@@ -166,7 +173,9 @@ public class Expression {
 		return 0;
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.expression.IExpression#getStartLine()
 	 */
 	public long getStartLine()
@@ -190,7 +199,9 @@ public class Expression {
 		 return retVal;
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.expression.IExpression#getStartPosition()
 	 */
 	public long getStartPosition()
@@ -214,7 +225,9 @@ public class Expression {
 		return retVal;
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.expression.IExpression#sendOperationEvents(org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.InstanceInformation, org.netbeans.modules.uml.core.reverseengineering.reframework.IREClass, org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.expression.SymbolTable, org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.IREClassLoader, org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.IUMLParserEventDispatcher, org.dom4j.Node)
 	 */
 	public InstanceInformation sendOperationEvents(InstanceInformation pInfo,
@@ -257,7 +270,9 @@ public class Expression {
 		return retVal;
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.expression.IExpression#writeAsXMI(org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.InstanceInformation, org.dom4j.Node, org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.expression.SymbolTable, org.netbeans.modules.uml.core.reverseengineering.reframework.IREClass, org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.IREClassLoader)
 	 */
 	public ETPairT<InstanceInformation, Node> writeAsXMI(InstanceInformation pInfo,

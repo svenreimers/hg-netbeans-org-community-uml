@@ -85,7 +85,9 @@ public class RoundTripClassEventsTestCase extends AbstractUMLTestCase implements
 	private int count = 0;
 	
 	
-	 /**
+	 
+
+/**
      * Here the Roundtrip Controller, dispatcher created and all listeners are attached.
      */
 	public void setUp()
@@ -114,7 +116,9 @@ public class RoundTripClassEventsTestCase extends AbstractUMLTestCase implements
 	}
 	
 
-	 /**
+	 
+
+/**
      * ClassCreationTestCase
      */
 	public void testClassCreate()
@@ -135,7 +139,9 @@ public class RoundTripClassEventsTestCase extends AbstractUMLTestCase implements
 		resetVals();
 	}
 
-	 /**
+	 
+
+/**
      * ClassModificationTestCase
      */
 	public void testClassModify()
@@ -154,7 +160,9 @@ public class RoundTripClassEventsTestCase extends AbstractUMLTestCase implements
 		resetVals();
 	}
 	
-	 /**
+	 
+
+/**
      * ClassDeletionTestCase
      */
 	public void testClassDelete()
@@ -168,14 +176,18 @@ public class RoundTripClassEventsTestCase extends AbstractUMLTestCase implements
 	}
 	
 
-	/**
+	
+
+/**
      * Fired before a class has been created. We have nothing to check here.
      */
 	public void onPreClassChangeRequest(IChangeRequest newVal, IResultCell cell) {
 	}
 
 
-	/**
+	
+
+/**
      * Fired after a class has been created. 
      */
 	public void onClassChangeRequest(IChangeRequest chngReq, IResultCell cell) 
@@ -185,13 +197,17 @@ public class RoundTripClassEventsTestCase extends AbstractUMLTestCase implements
 		
 	}
 	
-	/**
+	
+
+/**
      * Fired before an operation ( a constructor here) has been created. We have nothing to check here.
      */
 	public void onPreOperationChangeRequest(IChangeRequest newVal, IResultCell cell) {
 	}
 
-	/**
+	
+
+/**
      * Fired after an operation ( a constructor here) has been created.
      */
 	public void onOperationChangeRequest(IChangeRequest chngReq, IResultCell cell) 
@@ -202,7 +218,9 @@ public class RoundTripClassEventsTestCase extends AbstractUMLTestCase implements
 		operKind = chngReq.getElementType(); 	
 	}
 	
-	/**
+	
+
+/**
      * Attribute preCreation event - Not needed to be implemented in this test case
      */
 	public void onPreAttributeChangeRequest(IChangeRequest newVal, IResultCell cell) {
@@ -212,7 +230,9 @@ public class RoundTripClassEventsTestCase extends AbstractUMLTestCase implements
 	}
 
 
-	/**
+	
+
+/**
      * Attribute creation event - Not needed to be implemented in this test case
      */
 	public void onAttributeChangeRequest(IChangeRequest newVal, IResultCell cell) {
@@ -221,7 +241,9 @@ public class RoundTripClassEventsTestCase extends AbstractUMLTestCase implements
 		
 	}
 	
-	/**
+	
+
+/**
      * Enum precreation event - Not needed to be implemented in this test case. 
      */
 	public void onPreEnumChangeRequest(IChangeRequest newVal, IResultCell cell) {
@@ -230,7 +252,9 @@ public class RoundTripClassEventsTestCase extends AbstractUMLTestCase implements
 		
 	}
 
-	/**
+	
+
+/**
      * Enum creation event - Not needed to be implemented in this test case. 
      */
 	 public void onEnumChangeRequest(IChangeRequest newVal, IResultCell cell) {
@@ -239,7 +263,9 @@ public class RoundTripClassEventsTestCase extends AbstractUMLTestCase implements
 		
 	}
 
-	/**
+	
+
+/**
      * Enum preLiteralCreation event - Not needed to be implemented in this test case. 
      */	
 	public void onPreEnumLiteralChangeRequest(IChangeRequest newVal, IResultCell cell) {
@@ -248,7 +274,9 @@ public class RoundTripClassEventsTestCase extends AbstractUMLTestCase implements
 		
 	}
 
-	/**
+	
+
+/**
      * Enum LiteralCreation event - Not needed to be implemented in this test case. 
      */
 	public void onEnumLiteralChangeRequest(IChangeRequest newVal, IResultCell cell) {
@@ -257,7 +285,9 @@ public class RoundTripClassEventsTestCase extends AbstractUMLTestCase implements
 		
 	}
 
-	 /**
+	 
+
+/**
      * Package preCreation event - Not needed to be implemented in this test case. 
      */
 	public void onPrePackageChangeRequest(IChangeRequest newVal, IResultCell cell) {
@@ -266,7 +296,9 @@ public class RoundTripClassEventsTestCase extends AbstractUMLTestCase implements
 		
 	}
 
-	/**
+	
+
+/**
      * Package Creation event - Not needed to be implemented in this test case. 
      */
 	public void onPackageChangeRequest(IChangeRequest newVal, IResultCell cell) {
@@ -275,7 +307,9 @@ public class RoundTripClassEventsTestCase extends AbstractUMLTestCase implements
 		
 	}
 	
-	/**
+	
+
+/**
      * Relation preCreation event - Not needed to be implemented in this test case. 
      */
 	public void onPreRelationChangeRequest(IChangeRequest newVal, IResultCell cell) {
@@ -284,7 +318,9 @@ public class RoundTripClassEventsTestCase extends AbstractUMLTestCase implements
 		
 	}
 
-	/**
+	
+
+/**
      * Relation Creation event - Not needed to be implemented in this test case. 
      */
 	public void onRelationChangeRequest(IChangeRequest newVal, IResultCell cell) {
@@ -293,7 +329,9 @@ public class RoundTripClassEventsTestCase extends AbstractUMLTestCase implements
 		
 	}
 	
-	 /**
+	 
+
+/**
      * Get the path of  test Data Folder
      */
 	private String getDataDir() {
@@ -316,7 +354,9 @@ public class RoundTripClassEventsTestCase extends AbstractUMLTestCase implements
 		return testDataPath;
 	}
 
-    /**
+    
+
+/**
 	 * @propFile - the input file
 	 * @findElemType - the element being acted upon like attribute, operation
 	 * @findChangeKind - the action on the element like create,delete etc
@@ -357,7 +397,9 @@ public class RoundTripClassEventsTestCase extends AbstractUMLTestCase implements
 	}
 
 	
-	/**
+	
+
+/**
      * Reset the values for certain variables
      */
 	

@@ -100,7 +100,9 @@ public abstract class AbstractUmlParserTestCase extends AbstractUMLTestCase {
         
     }
     
-    /**
+    
+
+/**
      * This method is the main entrance to all the UMLParser TestCases.
      *
      * @param String
@@ -174,7 +176,9 @@ public abstract class AbstractUmlParserTestCase extends AbstractUMLTestCase {
         
     }
     
-    /**
+    
+
+/**
      * Compare Expected and retrived XMIData
      */
     private void compareXMI(String className) {
@@ -221,7 +225,9 @@ public abstract class AbstractUmlParserTestCase extends AbstractUMLTestCase {
         return astNode;
     }
     
-    /**
+    
+
+/**
      * Get the path of test Data Folder
      */
     private String getDataDir() {
@@ -243,13 +249,8 @@ public abstract class AbstractUmlParserTestCase extends AbstractUMLTestCase {
         return testDataPath;
     }
     
-    /**
-     * Reads the File and forms as String Data.
-     *
-     * @param String
-     *            FileName to be read
-     * @return String
-     */
+    
+
     public static String readFile(String fileName) {
         String str = "";
         try {

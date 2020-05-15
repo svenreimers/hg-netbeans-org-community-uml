@@ -48,32 +48,44 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElement;
 
 public interface IGate extends INamedElement
 {
-	/**
+	
+
+/**
 	 * Sets / Gets the InterGateConnectors that binds from this Gate.
 	*/
 	public IInterGateConnector getFromConnector();
 
-	/**
+	
+
+/**
 	 * Sets / Gets the InterGateConnectors that binds from this Gate.
 	*/
 	public void setFromConnector( IInterGateConnector value );
 
-	/**
+	
+
+/**
 	 * Sets / Gets the InterGateConnector that binds to this Gate.
 	*/
 	public IInterGateConnector getToConnector();
 
-	/**
+	
+
+/**
 	 * Sets / Gets the InterGateConnector that binds to this Gate.
 	*/
 	public void setToConnector( IInterGateConnector value );
 
-	/**
+	
+
+/**
 	 * The Interaction that owns this Gate.
 	*/
 	public IInteraction getInteraction();
 
-	/**
+	
+
+/**
 	 * The Interaction that owns this Gate.
 	*/
 	public void setInteraction( IInteraction value );

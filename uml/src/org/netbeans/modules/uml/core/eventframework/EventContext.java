@@ -60,7 +60,9 @@ public class EventContext implements IEventContext
 	}
 
 
-	/**
+	
+
+/**
 	 * Sets / Gets the EventFilter for this Context.
 	*/
 	public IEventFilter getFilter()
@@ -72,7 +74,9 @@ public class EventContext implements IEventContext
           return m_eventFilter;
 	}
 
-	/**
+	
+
+/**
 	 * Sets / Gets the EventFilter for this Context.
 	*/
 	public void setFilter( IEventFilter value )
@@ -81,7 +85,9 @@ public class EventContext implements IEventContext
             m_eventFilter = value;
 	}
 
-	/**
+	
+
+/**
 	 * Sets / Gets the XML node this context represents.
 	*/
 	public Node getNode()
@@ -102,7 +108,9 @@ public class EventContext implements IEventContext
 		  return m_4Jnode;
 	}
 
-	/**
+	
+
+/**
 	 * Sets / Gets the XML node this context represents.
 	*/
 	public void setNode( Node value )
@@ -117,7 +125,9 @@ public class EventContext implements IEventContext
 			m_4Jnode = value;
 	}
 
-	/**
+	
+
+/**
 	 * Validates the trigger and payload about to be dispatched.
 	*/
 	public boolean validateEvent( String triggerName, Object payLoad )
@@ -129,7 +139,9 @@ public class EventContext implements IEventContext
           return false;
 	}
 
-	/**
+	
+
+/**
 	 * The name of this EventContext.
 	*/
 	public String getName()
@@ -141,7 +153,9 @@ public class EventContext implements IEventContext
           return m_name;
 	}
 
-	/**
+	
+
+/**
 	 * The name of this EventContext.
 	*/
 	public void setName( String value )
@@ -149,7 +163,9 @@ public class EventContext implements IEventContext
           m_name = value;
 	}
 
-	/**
+	
+
+/**
 	 * User-defined data associated with this Context.
 	*/
 	public Object getData()
@@ -161,7 +177,9 @@ public class EventContext implements IEventContext
           return m_data;
 	}
 
-	/**
+	
+
+/**
 	 * User-defined data associated with this Context.
 	*/
 	public void setData( Object value )

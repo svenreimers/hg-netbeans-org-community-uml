@@ -75,7 +75,8 @@ public class JCenterDialog extends JDialog
 
     private Component lastComponent;
 
-   /**
+   
+/**
     * @throws java.awt.HeadlessException
     */
    public JCenterDialog() throws HeadlessException
@@ -85,7 +86,9 @@ public class JCenterDialog extends JDialog
       registerListener();
    }
 
-   /**
+   
+
+/**
     * @param owner
     * @throws java.awt.HeadlessException
     */
@@ -96,7 +99,9 @@ public class JCenterDialog extends JDialog
       registerListener();
    }
 
-   /**
+   
+
+/**
     * @param owner
     * @param modal
     * @throws java.awt.HeadlessException
@@ -108,7 +113,9 @@ public class JCenterDialog extends JDialog
         registerListener();
    }
 
-   /**
+   
+
+/**
     * @param owner
     * @param title
     * @throws java.awt.HeadlessException
@@ -120,7 +127,9 @@ public class JCenterDialog extends JDialog
         registerListener();
    }
 
-   /**
+   
+
+/**
     * @param owner
     * @param title
     * @param modal
@@ -133,7 +142,9 @@ public class JCenterDialog extends JDialog
         registerListener();
    }
 
-   /**
+   
+
+/**
     * @param owner
     * @param title
     * @param modal
@@ -146,7 +157,9 @@ public class JCenterDialog extends JDialog
         registerListener();
    }
 
-   /**
+   
+
+/**
     * @param owner
     * @throws java.awt.HeadlessException
     */
@@ -157,7 +170,9 @@ public class JCenterDialog extends JDialog
         registerListener();
    }
 
-   /**
+   
+
+/**
     * @param owner
     * @param modal
     * @throws java.awt.HeadlessException
@@ -169,7 +184,9 @@ public class JCenterDialog extends JDialog
         registerListener();
    }
 
-   /**
+   
+
+/**
     * @param owner
     * @param title
     * @throws java.awt.HeadlessException
@@ -179,7 +196,9 @@ public class JCenterDialog extends JDialog
       this(owner, title,false);
    }
 
-   /**
+   
+
+/**
     * @param owner
     * @param title
     * @param modal
@@ -192,7 +211,9 @@ public class JCenterDialog extends JDialog
         registerListener();
    }
 
-   /**
+   
+
+/**
     * @param owner
     * @param title
     * @param modal

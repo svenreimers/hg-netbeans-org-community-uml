@@ -60,7 +60,9 @@ import org.netbeans.modules.uml.core.support.umlsupport.ProductRetriever;
  */
 public class LanguageFacilityFactory implements ILanguageFacilityFactory
 {
-    /**
+    
+
+/**
      * Retrieves the UMLParser faciltiy from the faciltity manager.
      *
      * @param pVal [in] The UMLParser.
@@ -71,7 +73,9 @@ public class LanguageFacilityFactory implements ILanguageFacilityFactory
         return fac instanceof IUMLParser? (IUMLParser) fac : null;
     }
 
-    /**
+    
+
+/**
      * Retrieves the AnalysisFacility faciltiy from the faciltity manager.
      *
      * @param pVal [in] The UMLParser.
@@ -82,7 +86,9 @@ public class LanguageFacilityFactory implements ILanguageFacilityFactory
         return null;
     }
 
-    /**
+    
+
+/**
      * Retrieves the ValidationFacility faciltiy from the faciltity manager.
      *
      * @param pVal [in] The UMLParser.
@@ -93,7 +99,9 @@ public class LanguageFacilityFactory implements ILanguageFacilityFactory
         return null;
     }
 
-    /**
+    
+
+/**
      * Retrieves the VisualizationFacility faciltiy from the faciltity manager.
      *
      * @param pVal [in] The UMLParser.
@@ -104,7 +112,9 @@ public class LanguageFacilityFactory implements ILanguageFacilityFactory
         return null;
     }
 
-    /**
+    
+
+/**
      * Retrieves the DiscoveryFacility faciltiy from the faciltity manager.
      *
      * @param pVal [in] The UMLParser.
@@ -115,7 +125,9 @@ public class LanguageFacilityFactory implements ILanguageFacilityFactory
         return null;
     }
 
-    /**
+    
+
+/**
      * Retrieves the FormatFacility faciltiy from the faciltity manager.
      *
      * @param pVal [in] The UMLParser.
@@ -126,7 +138,9 @@ public class LanguageFacilityFactory implements ILanguageFacilityFactory
         return null;
     }
 
-    /**
+    
+
+/**
      * Retrieves the ColorFacility faciltiy from the faciltity manager.
      *
      * @param pVal [in] The UMLParser.
@@ -137,7 +151,9 @@ public class LanguageFacilityFactory implements ILanguageFacilityFactory
         return null;
     }
 
-    /**
+    
+
+/**
      * Retrieves a faciltiy from the faciltity manager.
      *
      * @param **pVal [in] The UMLParser.

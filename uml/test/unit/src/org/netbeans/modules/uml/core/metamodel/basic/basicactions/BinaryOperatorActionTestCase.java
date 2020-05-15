@@ -44,6 +44,8 @@
 
 
 
+
+
 /*
  * Created on Sep 24, 2003
  *
@@ -59,7 +61,8 @@ public class BinaryOperatorActionTestCase extends AbstractUMLTestCase
 	private IBinaryOperatorAction binaryOpAction = null;
 	private IInputPin inputPin = null;
 	
-	/**
+	
+/**
 	 * 
 	 */
 	public BinaryOperatorActionTestCase()

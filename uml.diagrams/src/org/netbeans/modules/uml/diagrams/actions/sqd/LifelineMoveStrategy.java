@@ -48,6 +48,7 @@ import java.awt.Point;
 import org.netbeans.api.visual.action.MoveStrategy;
 import org.netbeans.api.visual.widget.Widget;
 
+
 /**
  * all lifelines can be moved only horizontally
  */

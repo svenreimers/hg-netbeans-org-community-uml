@@ -68,7 +68,8 @@ public class DiagramToolDetails
    private Node m_ToolBarDetails = null;
    private boolean m_IsOptional  = true;
 
-   /**
+   
+/**
     * @param toolBarNode
     */
    public DiagramToolDetails(Node toolBarNode, boolean optional)
@@ -77,7 +78,9 @@ public class DiagramToolDetails
       setOptional(optional);
    }
 
-   /**
+   
+
+/**
     * @return
     */
    public Node getToolBarDetails()
@@ -85,7 +88,9 @@ public class DiagramToolDetails
       return m_ToolBarDetails;
    }
 
-   /**
+   
+
+/**
     * @param node
     */
    public void setToolBarDetails(Node node)
@@ -129,7 +134,9 @@ public class DiagramToolDetails
       }
    }
    
-   /**
+   
+
+/**
     * @return
     */
    public boolean isRequired()
@@ -137,7 +144,9 @@ public class DiagramToolDetails
       return !isOptional();
    }
 
-   /**
+   
+
+/**
     * @return
     */
    public boolean isOptional()
@@ -145,7 +154,9 @@ public class DiagramToolDetails
       return m_IsOptional;
    }
 
-   /**
+   
+
+/**
     * @param b
     */
    public void setOptional(boolean b)

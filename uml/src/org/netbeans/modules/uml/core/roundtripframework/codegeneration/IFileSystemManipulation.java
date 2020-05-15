@@ -46,47 +46,65 @@ package org.netbeans.modules.uml.core.roundtripframework.codegeneration;
 
 public interface IFileSystemManipulation
 {
-	/**
+	
+
+/**
 	 * Creates a File
 	*/
 	public boolean createFile( String filePath );
 
-	/**
+	
+
+/**
 	 * Deletes a File
 	*/
 	public boolean deleteFile( String filePath );
 
-	/**
+	
+
+/**
 	 * Creates a Directory
 	*/
 	public boolean createDirectory( String directory );
 
-	/**
+	
+
+/**
 	 * Deletes a Directory
 	*/
 	public boolean deleteDirectory( String directory );
 
-	/**
+	
+
+/**
 	 * Returns SourceCodeManipulation object that allows a file to be modified
 	*/
 	public ISourceCodeManipulation modifyFile( String filePath );
 
-	/**
+	
+
+/**
 	 * Moves a file
 	*/
 	public boolean moveFile( String sourcePath, String destinationPath );
 
-	/**
+	
+
+/**
 	 * Moves a directory and all of its contents.  Destination path is created if it does not exist.
 	*/
 	public boolean moveDirectory( String sourcePath, String destinationPath, boolean overwrite );
 
-	/**
+	
+
+/**
 	 * Unregisters the SourceCodeManipulation object that was given this cookie
 	*/
 	public long unregister( int Cookie );
 
-	/**
+	
+
+/**
 	 * Returns the file that the cookie holder should save their file to
 	*/
 	public String getFileName( int Cookie );

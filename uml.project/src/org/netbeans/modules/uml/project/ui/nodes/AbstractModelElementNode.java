@@ -89,6 +89,7 @@ import org.openide.util.datatransfer.NewType;
 import org.openide.util.datatransfer.PasteType;
 
 
+
 /**
  * AbstractModelElementNode model element node is a base node for all nodes that
  * model represent model elements.  AbstractModelElementNode provides the basic
@@ -172,7 +173,9 @@ public abstract class AbstractModelElementNode extends AbstractNode
     //Cache to improve performance
     Action newAction=null;
     
-    /**
+    
+
+/**
      * Create a new abstract model element node.
      */
     public AbstractModelElementNode()
@@ -185,7 +188,9 @@ public abstract class AbstractModelElementNode extends AbstractNode
         this(ch, null);
     }
     
-    /**
+    
+
+/**
      * Create a new abstract model element node and associated lookup.
      *
      * @param lookup The lookup to provide content of Node.getLookup() and also
@@ -202,7 +207,9 @@ public abstract class AbstractModelElementNode extends AbstractNode
         super(ch, lookup);
     }
     
-    /**
+    
+
+/**
      * Retrieve the model element associated with the node.
      *
      * @return The associated model element.
@@ -210,7 +217,9 @@ public abstract class AbstractModelElementNode extends AbstractNode
      */
     public abstract IElement getModelElement();
     
-    /**
+    
+
+/**
      * Retrieve the meta-data name for the model element.
      *
      * @param The meta data name.
@@ -234,7 +243,7 @@ public abstract class AbstractModelElementNode extends AbstractNode
         setDisplayName(s, true);
     }
     
-    // conover
+    
     public void setDisplayName(String s, boolean notify)
     {
         super.setDisplayName(s);
@@ -248,7 +257,9 @@ public abstract class AbstractModelElementNode extends AbstractNode
     // Node Overrides
     //**************************************************
     
-    /**
+    
+
+/**
      * Get the new types that can be created in this node. For example, a node
      * representing a class will permit attributes, operations, classes,
      * interfaces, and enumerations to be added.
@@ -313,7 +324,9 @@ public abstract class AbstractModelElementNode extends AbstractNode
     }
     
     
-    /**
+    
+
+/**
      * Retrieves the actions for the node.  This method only returns
      * the context sensitive actions.
      *
@@ -329,7 +342,9 @@ public abstract class AbstractModelElementNode extends AbstractNode
         
         // cvc - CR 6287660 & 6276911
         //commented out - moved to getNewAction() to improve performance
-                /*if (!(getParentNode() instanceof UMLDiagramsRootNode) &&
+                
+
+/*if (!(getParentNode() instanceof UMLDiagramsRootNode) &&
                         !elemType.equals(ELEMENT_TYPE_ABSTRACTION) &&
                         !elemType.equals(ELEMENT_TYPE_AGGREGATION) &&
                         !elemType.equals(ELEMENT_TYPE_ASSOCIATION) &&
@@ -360,6 +375,8 @@ public abstract class AbstractModelElementNode extends AbstractNode
         
         // Source control Sub menu Actions are created based on the SCM status of the nodes so every time we need
         //to get the actions freshly so they can't be checked for null
+
+
 /*		if(scSubMenuAction==null)
                         scSubMenuAction=new SourceControlSubMenuAction();
                 actions.add(scSubMenuAction);
@@ -406,7 +423,9 @@ public abstract class AbstractModelElementNode extends AbstractNode
     }
     
     
-    /**
+    
+
+/**
      * Retrievse the for the model element using property elements and property
      * definitions.  The property elements allow us to use a configuration file
      * to specify the properties that should be displayed.
@@ -675,7 +694,9 @@ public abstract class AbstractModelElementNode extends AbstractNode
        }
     }
     
-    /**
+    
+
+/**
      * Retrieve the context actions added by other modules.
      *
      * @param actions The action collection to add the actions to.
@@ -696,7 +717,9 @@ public abstract class AbstractModelElementNode extends AbstractNode
     }
     
     
-    /**
+    
+
+/**
      * The registry information that is retrieved from layer files to build
      * the list of actions supported by this node.
      *
@@ -722,14 +745,16 @@ public abstract class AbstractModelElementNode extends AbstractNode
         return retVal;
     }
     
-    // Jyothi: Fix for Bug#6258627-Naming a component doesn't update the property sheet Name to the new value.
+    
     // This method is a hack.. and is NOT supposed to be used in any other scenario
     public void notifyPropertySetsChange()
     {
         firePropertySetsChange(null, retreiveProperties());
     }
     
-    /**
+    
+
+/**
      * Builds the proerty set structure for all model elements.
      */
     protected Node.PropertySet[] buildProperties()
@@ -773,7 +798,9 @@ public abstract class AbstractModelElementNode extends AbstractNode
             return null;
         }
         
-        /**
+        
+
+/**
          * Notifies listeners that the drag process has been completed.  This event
          * is only fired if project tree is the drop target.
          */

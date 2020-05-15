@@ -54,7 +54,8 @@ import java.util.List;
  */
 public class ETFilteredArrayList<TypeName, desiredType> extends ETArrayList<TypeName>{
 
-	/*
+	
+/*
 	 * You need to pass a single instance object of the desired type you want to contain
 	 */
 	public  ETFilteredArrayList(desiredType dummy)

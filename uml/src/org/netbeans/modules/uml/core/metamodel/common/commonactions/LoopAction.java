@@ -42,11 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : LoopAction.java
- * Created on : Sep 18, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.metamodel.common.commonactions;
 
 import org.dom4j.Document;
@@ -63,7 +60,8 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 public class LoopAction extends CompositeAction implements ILoopAction
 {
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactions.ILoopAction#addToBody(org.netbeans.modules.uml.core.metamodel.basic.basicactions.IAction)
      */
     public void addToBody(IAction pAction)
@@ -71,7 +69,9 @@ public class LoopAction extends CompositeAction implements ILoopAction
         addChild("UML:LoopAction.body", "UML:LoopAction.body", pAction);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactions.ILoopAction#addToTest(org.netbeans.modules.uml.core.metamodel.basic.basicactions.IAction)
      */
     public void addToTest(IAction pAction)
@@ -79,7 +79,9 @@ public class LoopAction extends CompositeAction implements ILoopAction
         addChild("UML:LoopAction.test", "UML:LoopAction.test", pAction); 
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactions.ILoopAction#getBody()
      */
     public ETList<IAction> getBody()
@@ -88,7 +90,9 @@ public class LoopAction extends CompositeAction implements ILoopAction
             .retrieveElementCollection((ILoopAction)this, "UML:LoopAction.body/*", IAction.class);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactions.ILoopAction#getIsTestedFirst()
      */
     public boolean getIsTestedFirst()
@@ -96,7 +100,9 @@ public class LoopAction extends CompositeAction implements ILoopAction
         return getBooleanAttributeValue("isTestedFirst", false);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactions.ILoopAction#getTest()
      */
     public ETList<IAction> getTest()
@@ -105,7 +111,9 @@ public class LoopAction extends CompositeAction implements ILoopAction
             .retrieveElementCollection((ILoopAction)this, "UML:LoopAction.test/*", IAction.class);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactions.ILoopAction#getTestOutput()
      */
     public IValueSpecification getTestOutput()
@@ -115,7 +123,9 @@ public class LoopAction extends CompositeAction implements ILoopAction
 
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactions.ILoopAction#removeFromBody(org.netbeans.modules.uml.core.metamodel.basic.basicactions.IAction)
      */
     public void removeFromBody(IAction pAction)
@@ -123,7 +133,9 @@ public class LoopAction extends CompositeAction implements ILoopAction
         UMLXMLManip.removeChild(m_Node, pAction);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactions.ILoopAction#removeFromTest(org.netbeans.modules.uml.core.metamodel.basic.basicactions.IAction)
      */
     public void removeFromTest(IAction pAction)
@@ -131,7 +143,9 @@ public class LoopAction extends CompositeAction implements ILoopAction
         UMLXMLManip.removeChild(m_Node, pAction);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactions.ILoopAction#setIsTestedFirst(boolean)
      */
     public void setIsTestedFirst(boolean isTestedFirst)
@@ -139,7 +153,9 @@ public class LoopAction extends CompositeAction implements ILoopAction
         setBooleanAttributeValue("isTestedFirst", isTestedFirst);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactions.ILoopAction#setTestOutput(org.netbeans.modules.uml.core.metamodel.core.foundation.IValueSpecification)
      */
     public void setTestOutput(IValueSpecification pTestOutput)

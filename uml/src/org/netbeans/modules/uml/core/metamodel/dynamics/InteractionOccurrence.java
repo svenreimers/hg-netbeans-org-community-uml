@@ -61,7 +61,9 @@ public class InteractionOccurrence extends Behavior
     private IInteractionFragment m_InteractionFragment = 
         new InteractionFragment();
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElement#getName()
      */
     public String getName()
@@ -70,7 +72,9 @@ public class InteractionOccurrence extends Behavior
         return b != null? b.getName() : null;
     }
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElement#setName(java.lang.String)
      */
     public void setName(String str)
@@ -80,7 +84,9 @@ public class InteractionOccurrence extends Behavior
             b.setName(str);
     }
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IInteractionOccurrence#getGates()
      */
     public ETList<IGate> getGates()
@@ -91,7 +97,9 @@ public class InteractionOccurrence extends Behavior
                 "UML:InteractionOccurrence.actualGate/*", IGate.class );
     }
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IInteractionOccurrence#addGate(org.netbeans.modules.uml.core.metamodel.dynamics.IGate)
      */
     public void addGate(IGate gate)
@@ -101,7 +109,9 @@ public class InteractionOccurrence extends Behavior
                  gate );
     }
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IInteractionOccurrence#removeGate(org.netbeans.modules.uml.core.metamodel.dynamics.IGate)
      */
     public void removeGate(IGate gate)
@@ -109,7 +119,9 @@ public class InteractionOccurrence extends Behavior
         UMLXMLManip.removeChild(m_Node, gate);
     }
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IInteractionOccurrence#getInteraction()
      */
     public IInteraction getInteraction()
@@ -118,7 +130,9 @@ public class InteractionOccurrence extends Behavior
         return b instanceof IInteraction? (IInteraction) b : null;
     }
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IInteractionOccurrence#setInteraction(org.netbeans.modules.uml.core.metamodel.dynamics.IInteraction)
      */
     public void setInteraction(IInteraction value)
@@ -127,7 +141,9 @@ public class InteractionOccurrence extends Behavior
             setBehavior((IBehavior) value);
     }
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IInteractionOccurrence#getBehavior()
      */
     public IBehavior getBehavior()
@@ -136,7 +152,9 @@ public class InteractionOccurrence extends Behavior
             .retrieveSingleElementWithAttrID( this, "refersTo", IBehavior.class );
     }
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IInteractionOccurrence#setBehavior(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavior)
      */
     public void setBehavior(IBehavior value)
@@ -144,7 +162,9 @@ public class InteractionOccurrence extends Behavior
         setElement( value, "refersTo" );
     }
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.VersionableElement#establishNodePresence(org.dom4j.Document, org.dom4j.Node)
      */
     public void establishNodePresence(Document doc, Node node)
@@ -152,7 +172,9 @@ public class InteractionOccurrence extends Behavior
         buildNodePresence("UML:InteractionOccurrence", doc, node);
     }
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IVersionableElement#setNode(org.dom4j.Node)
      */
     public void setNode(Node n)

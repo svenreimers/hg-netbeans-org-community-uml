@@ -43,14 +43,8 @@
  */
 
 
-/*
- * Trace.java
- *
- * Created on January 11, 2007, 2:02 PM
- *
- * To change this template, choose Tools | Template Manager
- * and open the template in the editor.
- */
+
+
 
 package org.netbeans.test.umllib.util;
 import java.awt.Component;

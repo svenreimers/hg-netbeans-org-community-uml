@@ -50,7 +50,9 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 public class RPMethodSelection implements IRPMethodSelection
 {
-	/**
+	
+
+/**
 	 * Allows the user to override a parents operations.  The operations
 	 * that are possible to override are gathered from the element.
 	 *
@@ -72,7 +74,9 @@ public class RPMethodSelection implements IRPMethodSelection
   	}
   }
 
-  /**
+  
+
+/**
    * Allows the user to override a parents operations.  The operations that are
    * possible to override are specified.
    *

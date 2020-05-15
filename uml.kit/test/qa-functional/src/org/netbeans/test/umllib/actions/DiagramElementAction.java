@@ -43,6 +43,8 @@
  */
 
 
+
+
 /*
  * DiagramElementAction.java
  *
@@ -70,6 +72,7 @@ import org.netbeans.jemmy.operators.Operator;
 import org.netbeans.jemmy.operators.Operator.DefaultStringComparator;
 import org.netbeans.jemmy.operators.Operator.StringComparator;
 import org.netbeans.test.umllib.actions.Actionable;
+
 
 /**
  * This is basic class for all diagram actions. Derived from 
@@ -111,14 +114,18 @@ public class DiagramElementAction {
     /** Comparator used for this action instance. */
     private StringComparator comparator;
     
-    /** creates new DiagramElementAction instance without API_MODE and SHORTCUT_MODE support
+    
+
+/** creates new DiagramElementAction instance without API_MODE and SHORTCUT_MODE support
      * @param menuPath action path in main menu (use null value if menu mode is not supported)
      * @param popupPath action path in popup menu (use null value if popup mode shell is not supported) */
     public DiagramElementAction(String menuPath, String popupPath) {
         this(menuPath, popupPath, null, (Shortcut[])null);
     }
     
-    /** creates new DiagramElementAction instance without SHORTCUT_MODE support
+    
+
+/** creates new DiagramElementAction instance without SHORTCUT_MODE support
      * @param menuPath action path in main menu (use null value if menu mode is not supported)
      * @param popupPath action path in popup menu (use null value if popup mode is not supported)
      * @param systemActionClass String class name of SystemDiagramElementAction (use null value if API mode is not supported) */
@@ -126,7 +133,9 @@ public class DiagramElementAction {
         this(menuPath, popupPath, systemActionClass, (Shortcut[])null);
     }
     
-    /** creates new DiagramElementAction instance without API_MODE support
+    
+
+/** creates new DiagramElementAction instance without API_MODE support
      * @param shortcuts array of Shortcut instances (use null value if shorcut mode is not supported)
      * @param menuPath action path in main menu (use null value if menu mode is not supported)
      * @param popupPath action path in popup menu (use null value if popup mode shell is not supported) */
@@ -134,7 +143,9 @@ public class DiagramElementAction {
         this(menuPath, popupPath, null, shortcuts);
     }
     
-    /** creates new DiagramElementAction instance without API_MODE support
+    
+
+/** creates new DiagramElementAction instance without API_MODE support
      * @param shortcut Shortcut (use null value if menu mode is not supported)
      * @param menuPath action path in main menu (use null value if menu mode is not supported)
      * @param popupPath action path in popup menu (use null value if popup mode shell is not supported) */
@@ -142,7 +153,9 @@ public class DiagramElementAction {
         this(menuPath, popupPath, null, new Shortcut[] {shortcut});
     }
     
-    /** creates new DiagramElementAction instance
+    
+
+/** creates new DiagramElementAction instance
      * @param shortcuts array of Shortcut instances (use null value if shortcut mode is not supported)
      * @param menuPath action path in main menu (use null value if menu mode is not supported)
      * @param popupPath action path in popup menu (use null value if popup mode is not supported)
@@ -160,7 +173,9 @@ public class DiagramElementAction {
         this.shortcuts = shortcuts;
     }
     
-    /** creates new DiagramElementAction instance
+    
+
+/** creates new DiagramElementAction instance
      * @param shortcut Shortcut String (use null value if menu mode is not supported)
      * @param menuPath action path in main menu (use null value if menu mode is not supported)
      * @param popupPath action path in popup menu (use null value if popup mode is not supported)
@@ -196,7 +211,9 @@ public class DiagramElementAction {
     public DiagramElementAction() {
     }
     
-    /** performs action through main menu
+    
+
+/** performs action through main menu
      * @throws UnsupportedOperationException when action does not support menu mode */
     public void performMenu() {
         if (menuPath==null) {
@@ -217,7 +234,9 @@ public class DiagramElementAction {
         performMenu(new Actionable[]{element});
     }
     
-    /** performs action through main menu
+    
+
+/** performs action through main menu
      * @param elements elements to be action performed on
      * @throws UnsupportedOperationException when action does not support shortcut mode */
     public void performMenu(Actionable[] elements) {
@@ -246,7 +265,9 @@ public class DiagramElementAction {
     
     
     
-    /** performs action through popup menu
+    
+
+/** performs action through popup menu
      * @param element node to be action performed on
      * @throws UnsupportedOperationException when action does not support popup mode */
     public void performPopup(Actionable element) {
@@ -256,7 +277,9 @@ public class DiagramElementAction {
     
     
     
-    /** performs action through popup menu
+    
+
+/** performs action through popup menu
      * @param elements elements to be action performed on
      * @throws UnsupportedOperationException when action does not support popup mode */
     public void performPopup(Actionable[] elements) {
@@ -287,7 +310,9 @@ public class DiagramElementAction {
         }
         
     }
-    /** performs action through popup menu
+    
+
+/** performs action through popup menu
      * @param element node to be action performed on
      * @throws UnsupportedOperationException when action does not support popup mode */
     public void performPopupNoBlock(Actionable element) {
@@ -297,7 +322,9 @@ public class DiagramElementAction {
     
     
     
-    /** performs action through popup menu
+    
+
+/** performs action through popup menu
      * @param elements elements to be action performed on
      * @throws UnsupportedOperationException when action does not support popup mode */
     public void performPopupNoBlock(Actionable[] elements) {
@@ -331,7 +358,9 @@ public class DiagramElementAction {
     
     
     
-    /** performs action through shortcut
+    
+
+/** performs action through shortcut
      * @throws UnsupportedOperationException if no shortcut is defined */
     public void performShortcut() {
         if (shortcuts == null) {
@@ -348,14 +377,18 @@ public class DiagramElementAction {
         }
     }
     
-    /** performs action through shortcut
+    
+
+/** performs action through shortcut
      * @param element node to be action performed on
      * @throws UnsupportedOperationException when action does not support shortcut mode */
     public void performShortcut(Actionable element) {
         performShortcut(new Actionable[]{element});
     }
     
-    /** performs action through shortcut
+    
+
+/** performs action through shortcut
      * @param elements elements to be action performed on
      * @throws UnsupportedOperationException when action does not support shortcut mode */
     public void performShortcut(Actionable[] elements) {
@@ -382,7 +415,9 @@ public class DiagramElementAction {
     
     
     
-    /** Sets comparator fot this action. Comparator is used for all actions
+    
+
+/** Sets comparator fot this action. Comparator is used for all actions
      * after this method is called.
      * @param comparator new comparator to be set (e.g.
      *                   new Operator.DefaultStringComparator(true, true);
@@ -392,7 +427,9 @@ public class DiagramElementAction {
         this.comparator = comparator;
     }
     
-    /** Gets comparator set for this action instance.
+    
+
+/** Gets comparator set for this action instance.
      * @return comparator set for this action instance.
      */
     public StringComparator getComparator() {

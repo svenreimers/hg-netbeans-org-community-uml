@@ -46,6 +46,7 @@ package org.netbeans.modules.uml.drawingarea.palette.context;
 import org.netbeans.api.visual.widget.Widget;
 import java.util.ArrayList;
 
+
 /**
  * The ContextPaletteModel interface specifies the methods that the Context 
  * Palette uses to interrogate the palette data.
@@ -57,25 +58,29 @@ import java.util.ArrayList;
  */
 public interface ContextPaletteModel
 {
-    /**
+    
+/**
      * The FOLLOWMODE enumeration is used to specify the location type of the 
      * palette.
      */
     enum FOLLOWMODE
     {
-        /**
+        
+/**
          * The palette should have a static location on the side of the 
          * associated model element.
          */
         NONE, 
         
-        /**
+        
+/**
          * The palette should follow the mouse cursor as the user move the
          * cursor vertically.
          */
         VERTICAL_ONLY, 
         
-        /**
+        
+/**
          * The palette should follow the mouse cursor as the user moves the 
          * cursor vertically and horizontally. Typically the palette will be 
          * displayed on the left or right side of the associated model element,
@@ -86,7 +91,9 @@ public interface ContextPaletteModel
     
     };
     
-    /**
+    
+
+/**
      * Retreive the context palette button models that should be used to 
      * populate the palettes contents.
      * 
@@ -94,7 +101,9 @@ public interface ContextPaletteModel
      */
     public ArrayList < ContextPaletteButtonModel > getChildren();
             
-    /**
+    
+
+/**
      * The Widget that is associated with the context palette.
      * 
      * @return the associated widget.
@@ -103,7 +112,9 @@ public interface ContextPaletteModel
     
 //    public boolean isList(int index);
     
-    /**
+    
+
+/**
      * Retrieves how the palette should behave as the mouse is moved.
      * 
      * @return the mouse behavior.

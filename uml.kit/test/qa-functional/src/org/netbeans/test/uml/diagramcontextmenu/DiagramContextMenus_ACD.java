@@ -54,6 +54,7 @@ import org.netbeans.test.uml.diagramcontextmenu.utils.DCMUtils;
 import org.netbeans.test.umllib.testcases.UMLTestCase;
 import org.netbeans.test.umllib.util.PopupConstants;
 
+
 /**
  *
  * @spec UML/Diagram_ContextMenus.xml
@@ -81,6 +82,8 @@ public class DiagramContextMenus_ACD extends UMLTestCase {
         return suite;
     }
     
+
+
 /**
  * @caseblock Activity Diagram
  * @usecase Check context menu of activity diagram
@@ -95,6 +98,8 @@ public class DiagramContextMenus_ACD extends UMLTestCase {
             fail("Diagram popum menu item '" + itemName + "' is enabled but should not be");
         }
     }
+
+
 
 /**
  * @caseblock Activity Diagram
@@ -111,6 +116,8 @@ public class DiagramContextMenus_ACD extends UMLTestCase {
         }
     }
 
+
+
 /**
  * @caseblock Activity Diagram
  * @usecase Check context menu of activity diagram
@@ -125,6 +132,8 @@ public class DiagramContextMenus_ACD extends UMLTestCase {
             fail("Diagram popum menu item '" + itemName + "' is enabled but should not be");
         }
     }
+
+
 
 /**
  * @caseblock Activity Diagram
@@ -141,6 +150,8 @@ public class DiagramContextMenus_ACD extends UMLTestCase {
         }
     }
     
+
+
 /**
  * @caseblock Activity Diagram
  * @usecase Check context menu of activity diagram
@@ -156,6 +167,8 @@ public class DiagramContextMenus_ACD extends UMLTestCase {
         }
     }
     
+
+
 /**
  * @caseblock Activity Diagram
  * @usecase Check context menu of activity diagram
@@ -171,6 +184,8 @@ public class DiagramContextMenus_ACD extends UMLTestCase {
         }
     }
     
+
+
 /**
  * @caseblock Activity Diagram
  * @usecase Check context menu of activity diagram
@@ -186,7 +201,9 @@ public class DiagramContextMenus_ACD extends UMLTestCase {
         }
     }
     
-    /**
+    
+
+/**
      * @caseblock Activity Diagram
      * @usecase Check context menu of activity diagram
      */
@@ -200,6 +217,8 @@ public class DiagramContextMenus_ACD extends UMLTestCase {
             fail("Diagram popum menu item '" + itemName + "' is enabled but should not be");
         }
     }
+
+
 
 /**
  * @caseblock Activity Diagram
@@ -216,6 +235,8 @@ public class DiagramContextMenus_ACD extends UMLTestCase {
         }
     }
 
+
+
 /**
  * @caseblock Activity Diagram
  * @usecase Check context menu of activity diagram
@@ -230,6 +251,8 @@ public class DiagramContextMenus_ACD extends UMLTestCase {
             fail("Diagram popum menu item '" + itemName + "' is disabled but should not be");
         }
     }
+
+
 
 /**
  * @caseblock Activity Diagram
@@ -246,6 +269,8 @@ public class DiagramContextMenus_ACD extends UMLTestCase {
         }
     }
 
+
+
 /**
  * @caseblock Activity Diagram
  * @usecase Check context menu of activity diagram
@@ -260,6 +285,8 @@ public class DiagramContextMenus_ACD extends UMLTestCase {
             fail("Diagram popum menu item '" + itemName + "' is disabled but should not be");
         }
     }
+
+
 
 /**
  * @caseblock Activity Diagram
@@ -281,6 +308,8 @@ public class DiagramContextMenus_ACD extends UMLTestCase {
         }
     }
     
+
+
 /**
  * @caseblock Activity Diagram
  * @usecase Check context menu of activity diagram
@@ -301,6 +330,8 @@ public class DiagramContextMenus_ACD extends UMLTestCase {
         }
     }
     
+
+
 /**
  * @caseblock Activity Diagram
  * @usecase Check context menu of activity diagram
@@ -316,6 +347,8 @@ public class DiagramContextMenus_ACD extends UMLTestCase {
         }
     }
     
+
+
 /**
  * @caseblock Activity Diagram
  * @usecase Check context menu of activity diagram
@@ -331,6 +364,8 @@ public class DiagramContextMenus_ACD extends UMLTestCase {
         }
     }
     
+
+
 /**
  * @caseblock Activity Diagram
  * @usecase Check context menu of activity diagram
@@ -345,6 +380,8 @@ public class DiagramContextMenus_ACD extends UMLTestCase {
             fail("Diagram popum menu item '" + itemName + "' is disabled but should not be");
         }
     }
+
+
 
 /**
  * @caseblock Activity Diagram
@@ -366,6 +403,8 @@ public class DiagramContextMenus_ACD extends UMLTestCase {
         }
     }
     
+
+
 /**
  * @caseblock Activity Diagram
  * @usecase Check context menu of activity diagram
@@ -386,6 +425,8 @@ public class DiagramContextMenus_ACD extends UMLTestCase {
         }
     }
     
+
+
 /**
  * @caseblock Activity Diagram
  * @usecase Check context menu of activity diagram
@@ -405,6 +446,8 @@ public class DiagramContextMenus_ACD extends UMLTestCase {
             }
         }
     }
+
+
 
 /**
  * @caseblock Activity Diagram

@@ -44,6 +44,7 @@ package org.netbeans.modules.uml.drawingarea;
 import org.netbeans.api.visual.widget.ConnectionWidget;
 import org.netbeans.api.visual.widget.Scene;
 
+
 /**
  * The connection widget factory is used to create a connection widget that is 
  * need to be added to a scene.  

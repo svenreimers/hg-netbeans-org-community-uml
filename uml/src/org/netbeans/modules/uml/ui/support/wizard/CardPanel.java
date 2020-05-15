@@ -54,6 +54,8 @@ import java.awt.Rectangle;
 
 import javax.swing.JPanel;
 
+
+
 /**
  * A simpler alternative to a JPanel with a CardLayout.  The AWT CardLayout
  * layout manager can be inconvenient to use because the special "stack of
@@ -92,7 +94,9 @@ public class CardPanel extends JPanel {
 	private IWizardSheet m_ParentSheet = null;
 
 	private static class Layout implements LayoutManager {
-		/** 
+		
+
+/** 
 		 * Set the childs name (if non-null) and and make it visible 
 		 * iff it's the only CardPanel child.
 		 * @see java.awt.Component#setName
@@ -104,7 +108,9 @@ public class CardPanel extends JPanel {
 			child.setVisible(child.getParent().getComponentCount() == 1);
 		}
 
-		/** 
+		
+
+/** 
 		 * If this child was visible, then make the first remaining
 		 * child visible.
 		 */
@@ -117,7 +123,9 @@ public class CardPanel extends JPanel {
 			}
 		}
 
-		/**
+		
+
+/**
 		 * @return the maximum preferred width/height + the parents insets
 		 */
 		public Dimension preferredLayoutSize(Container parent) {
@@ -138,7 +146,9 @@ public class CardPanel extends JPanel {
 			return new Dimension(width, height);
 		}
 
-		/**
+		
+
+/**
 		 * @return the maximum minimum width/height + the parents insets
 		 */
 		public Dimension minimumLayoutSize(Container parent) {
@@ -176,7 +186,9 @@ public class CardPanel extends JPanel {
 	}
 
 
-	/**
+	
+
+/**
 	 * Creates a CardPanel.  Children, called "cards" in this API, should be added 
 	 * with add().  The first child we be made visible, subsequent children will 
 	 * be hidden.  To show a card, use one of the show*Card methods.
@@ -190,7 +202,9 @@ public class CardPanel extends JPanel {
 		this.m_ParentSheet = pParentSheet;
 	}
 
-	/** 
+	
+
+/** 
 	 * Return the index of the first (and one would hope - only)
 	 * visible child.  If a visible child can't be found, 
 	 * perhaps the caller has inexlicably hidden all of the 
@@ -246,7 +260,9 @@ public class CardPanel extends JPanel {
 		return getComponentCount();
 	}
 
-	/** 
+	
+
+/** 
 	 * Hide the currently visible child  "card" and show the
 	 * specified card.  If the specified card isn't a child
 	 * of the CardPanel then we add it here.
@@ -272,7 +288,9 @@ public class CardPanel extends JPanel {
 		}
 	}
 
-	/**
+	
+
+/**
 	 * Show the card with the specified name.
 	 * @see java.awt.Component#getName
 	 */
@@ -293,7 +311,9 @@ public class CardPanel extends JPanel {
 		}
 	}
 
-	/**
+	
+
+/**
 	 * Show the card that was added to this CardPanel after the currently
 	 * visible card.  If the currently visible card was added last, then
 	 * show the first card.
@@ -312,7 +332,9 @@ public class CardPanel extends JPanel {
 		}
 	}
 
-	/**
+	
+
+/**
 	 * Show the card that was added to this CardPanel before the currently
 	 * visible card.  If the currently visible card was added first, then
 	 * show the last card.
@@ -331,7 +353,9 @@ public class CardPanel extends JPanel {
 		}
 	}
 
-	/**
+	
+
+/**
 	 * Show the first card that was added to this CardPanel.
 	 */
 	public void showFirstCard() {
@@ -341,7 +365,9 @@ public class CardPanel extends JPanel {
 		showCard(getComponent(0));
 	}
 
-	/**
+	
+
+/**
 	 * Show the last card that was added to this CardPanel.
 	 */
 	public void showLastCard() {

@@ -56,7 +56,8 @@ import org.netbeans.modules.uml.core.support.umlutils.IPropertyElement;
 public class DefinitionBooleanProperty extends DefinitionPropertySupport
 {
 
-      /**
+      
+/**
     * @param def
     * @param element
     * @param writable
@@ -68,7 +69,9 @@ public class DefinitionBooleanProperty extends DefinitionPropertySupport
    }
    
 
-   /**
+   
+
+/**
     * @param def
     * @param element
     * @param writable
@@ -105,7 +108,9 @@ public class DefinitionBooleanProperty extends DefinitionPropertySupport
    // Helper Methods
    //**************************************************
    
-   /**
+   
+
+/**
     * Translates the value displayed to the user back into the value that
     * needs to be stored to the database.
     * 

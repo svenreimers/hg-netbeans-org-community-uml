@@ -48,6 +48,7 @@ package org.netbeans.modules.uml.core.metamodel.core.foundation;
 import org.netbeans.modules.uml.common.generics.ETPairT;
 
 
+
 /**
  * <p>Title: </p>
  * <p>Description: </p>
@@ -59,24 +60,28 @@ import org.netbeans.modules.uml.common.generics.ETPairT;
 public interface IMultiplicityRange extends IElement
 {
 
-    /**
+    
+/**
      * prop value when collection type is set to "As Array"
      */
     public static  final String AS_ARRAY = "[]";
 
-    /**
+    
+/**
      * Gets the lower bound for this range.
      * @return The lower range
      */
     public String getLower();
     
-    /**
+    
+/**
      * Sets the lower bound for this range.
      * @param val The lower range
      */
     public void setLower(String val);
     
-    /**
+    
+/**
      * Gets the upper bound for this range. If upper is not specified
      * ( i.e., -1 ), then the range includes the lower bound and all integers 
      * greater than the lower bound.
@@ -84,7 +89,9 @@ public interface IMultiplicityRange extends IElement
      */
     public String getUpper();
     
-    /**
+    
+
+/**
      * Sets the upper bound for this range. If upper is not specified
      * ( i.e., -1 ), then the range includes the lower bound and all integers 
      * greater than the lower bound.
@@ -92,26 +99,34 @@ public interface IMultiplicityRange extends IElement
      */
     public void setUpper(String val);
     
-    /**
+    
+
+/**
      * A convenience function used to get the upper and lower bounds in one call.
      * @return The lower and the upper range values.
      */
     public ETPairT<String, String> getRange();
     
-    /**
+    
+
+/**
      * A convenience function used to set the upper and lower bounds in one call.
      * @param lower the lower range
      * @param upper the upper range
      */
     public void setRange(String lower, String upper);
     
-    /**
+    
+
+/**
      * Returns the parent IMultiplicity object
      * @return the multiplicity object.
      */
     public IMultiplicity getParentMultiplicity();
     
-    /**
+    
+
+/**
      * Returns the string represenation of a multiplicity range. The 
      * representation will be formated like 
      * 
@@ -125,7 +140,9 @@ public interface IMultiplicityRange extends IElement
      */
     public String getRangeAsString();
     
-    /**
+    
+
+/**
      * Sometimes a user will want the code to be generated as collection not
      * an array.  The collectionType property allows a collection type to be
      * specified.
@@ -135,7 +152,9 @@ public interface IMultiplicityRange extends IElement
      */
     public String getCollectionType();
     
-    /**
+    
+
+/**
      * Sometimes a user will want the code to be generated as collection not
      * an array.  The collectionType property allows a collection type to be
      * specified.
@@ -148,7 +167,9 @@ public interface IMultiplicityRange extends IElement
      */
     public String getCollectionType(boolean useDefault);
     
-    /**
+    
+
+/**
      * Sometimes a user will want the code to be generated as collection not
      * an array.  The collectionType property allows a collection type to be
      * specified.
@@ -160,7 +181,9 @@ public interface IMultiplicityRange extends IElement
      */
     public String getCollectionTypeValue(boolean useDefault);
     
-    /**
+    
+
+/**
      * Sets the collection type to use when generating code.  An empty string 
      * means that an array should be used.
      * 

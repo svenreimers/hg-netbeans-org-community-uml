@@ -45,6 +45,7 @@
 
 package org.netbeans.modules.uml.core.metamodel.core.foundation;
 
+
 /**
  * A proxy used in the place of a model element.  The proxy element allow us
  * to interact with a model element without pinging the model element in memory.
@@ -52,47 +53,56 @@ package org.netbeans.modules.uml.core.metamodel.core.foundation;
  */
 public interface IProxyElement
 {
-   /**
+   
+/**
     * Sets the element this instance is assigned to.
     */
    public void setElement(String sTopLevelXMIID,
                           String sElementXMIID);
 
-   /**
+   
+/**
     * Sets the element this instance is assigned to
     */
    public void setElement(IElement pElement);
 
-   /**
+   
+/**
     * Returns the top level id for the element this instance is assigned to.
     */
    public String getElementTopLevelID();
 
-   /**
+   
+/**
     * Returns the top level id for the element this instance is assigned to.
     */
    public String getElementID();
-   /**
+   
+/**
     * Returns the element this instance is assigned to
     */ 
    public IElement getElement();
 
-   /**
+   
+/**
     * Determines whether or not this element encapsulates the same data as the passed in element.
     */ 
    public boolean isSame( IProxyElement pElement );
 
-   /**
+   
+/**
     * Determines whether or not this element encapsulates the same data as the passed in element.
     */ 
    public boolean isSame( IElement pElement);
 
-   /**
+   
+/**
     * Determines whether or not this element encapsulates the same data as the passed in element.
     */
    public boolean isSame(String sElementXMIID );
 
-   /**
+   
+/**
     * Retrieves the name of the actual element, such as 'Class'.
     */
    public String getElementType( );

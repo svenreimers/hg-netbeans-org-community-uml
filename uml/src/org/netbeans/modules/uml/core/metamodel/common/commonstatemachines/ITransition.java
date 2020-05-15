@@ -54,117 +54,163 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 public interface ITransition extends INamedElement
 {
-	/**
+	
+
+/**
 	 * property IsInternal
 	*/
 	public boolean getIsInternal();
 
-	/**
+	
+
+/**
 	 * property IsInternal
 	*/
 	public void setIsInternal( boolean value );
 
-	/**
+	
+
+/**
 	 * property Source
 	*/
 	public IStateVertex getSource();
 
-	/**
+	
+
+/**
 	 * property Source
 	*/
 	public void setSource( IStateVertex value );
 
-	/**
+	
+
+/**
 	 * property Target
 	*/
 	public IStateVertex getTarget();
 
-	/**
+	
+
+/**
 	 * property Target
 	*/
 	public void setTarget( IStateVertex value );
 
-	/**
+	
+
+/**
 	 * property Guard
 	*/
 	public IConstraint getGuard();
 
-	/**
+	
+
+/**
 	 * property Guard
 	*/
 	public void setGuard( IConstraint value );
 
-	/**
+	
+
+/**
 	 * property Effect
 	*/
 	public IProcedure getEffect();
 
-	/**
+	
+
+/**
 	 * property Effect
 	*/
 	public void setEffect( IProcedure value );
 
-	/**
+	
+
+/**
 	 * property Trigger
 	*/
 	public IEvent getTrigger();
 
-	/**
+	
+
+/**
 	 * property Trigger
 	*/
 	public void setTrigger( IEvent value );
 
-	/**
+	
+
+/**
 	 * property PreCondition
 	*/
 	public IConstraint getPreCondition();
 
-	/**
+	
+
+/**
 	 * property PreCondition
 	*/
 	public void setPreCondition( IConstraint value );
 
-	/**
+	
+
+/**
 	 * property PostCondition
 	*/
 	public IConstraint getPostCondition();
 
-	/**
+	
+
+/**
 	 * property PostCondition
 	*/
 	public void setPostCondition( IConstraint value );
 
-	/**
+	
+
+/**
 	 * method AddReferredOperation
 	*/
 	public void addReferredOperation( IOperation pOper );
 
-	/**
+	
+
+/**
 	 * method RemoveReferredOperation
 	*/
 	public void removeReferredOperation( IOperation pOper );
 
-	/**
+	
+
+/**
 	 * property ReferredOperations
 	*/
 	public ETList<IOperation> getReferredOperations();
 
-	/**
+	
+
+/**
 	 * property Container
 	*/
 	public IRegion getContainer();
 
-	/**
+	
+
+/**
 	 * property Container
 	*/
 	public void setContainer( IRegion value );
 
-	/**
+	
+
+/**
 	 * method CreatePreCondition
 	*/
 	public IConstraint createPreCondition( String condition );
 
-	/**
+	
+
+/**
 	 * method CreatePostCondition
 	*/
 	public IConstraint createPostCondition( String condition );

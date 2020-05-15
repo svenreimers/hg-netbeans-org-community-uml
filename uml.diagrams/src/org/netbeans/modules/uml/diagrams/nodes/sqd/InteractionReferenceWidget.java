@@ -72,7 +72,9 @@ public class InteractionReferenceWidget extends CombinedFragmentWidget {
         paletteModel.initialize("UML/context-palette/Interaction");
         return paletteModel;
     }
-    /**
+    
+
+/**
      * additioon of operand to the widget
      * 
      * 

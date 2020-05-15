@@ -130,7 +130,9 @@ public class Classifier extends Namespace implements IClassifier,
 		m_AutonomousAggregate.setNode(n);
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Gets the abstract flag on this classifier.
 	 *
@@ -142,7 +144,9 @@ public class Classifier extends Namespace implements IClassifier,
 		return getBooleanAttributeValue( "isAbstract", false );
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Sets the abstract flag on this classifier.
 	 *
@@ -182,7 +186,9 @@ public class Classifier extends Namespace implements IClassifier,
 		}
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Gets the leaf property on this Classifier
 	 *
@@ -196,7 +202,9 @@ public class Classifier extends Namespace implements IClassifier,
 		return getBooleanAttributeValue("isLeaf", false);
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Sets the leaf property on this Classifier
 	 *
@@ -230,7 +238,9 @@ public class Classifier extends Namespace implements IClassifier,
 		}
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Adds a generalization relationship to this classifier where this
 	 * classifier plays the specific/sub class role.
@@ -256,7 +266,9 @@ public class Classifier extends Namespace implements IClassifier,
 							);
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Removes a generalization from this classifier where this classifier plays 
 	 * the specific/sub class role.
@@ -281,7 +293,9 @@ public class Classifier extends Namespace implements IClassifier,
 										);
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Retrieves the collection of generalization relationships this Classifier
 	 * plays the specific /sub class role.
@@ -298,7 +312,9 @@ public class Classifier extends Namespace implements IClassifier,
 		return collector.retrieveElementCollection(m_Node, "UML:Classifier.generalization/*", IGeneralization.class);
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Adds a generalization relationship to this classifier where this classifier
 	 * plays the general / super class role.
@@ -323,7 +339,9 @@ public class Classifier extends Namespace implements IClassifier,
 							  );		 
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Removes a generalization from this classifier where this classifier plays
 	 * the general / super class role.
@@ -347,7 +365,9 @@ public class Classifier extends Namespace implements IClassifier,
 										); 
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Retrieves the collection of generalization relationships this Classifier
 	 * plays the general / super class role.
@@ -363,7 +383,9 @@ public class Classifier extends Namespace implements IClassifier,
 		return collector.retrieveElementCollectionWithAttrIDs(this, "specialization", IGeneralization.class);
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Description
 	 *
@@ -377,7 +399,9 @@ public class Classifier extends Namespace implements IClassifier,
 		addClientDependency(imp);
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Description
 	 *
@@ -391,7 +415,9 @@ public class Classifier extends Namespace implements IClassifier,
 		removeClientDependency(imp);
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Retrieves the Implementations that this Classifier is playing the client role
 	 * in.
@@ -410,7 +436,9 @@ public class Classifier extends Namespace implements IClassifier,
 		return trans.copyCollection(depsList);
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Adds collaboration for the classifier. 
 	 *
@@ -424,7 +452,9 @@ public class Classifier extends Namespace implements IClassifier,
 		addChild("UML:Classifier.collaboration", "UML:Classifier.collaboration", col );
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Removes the collaboration for the classifier. 
 	 *
@@ -438,7 +468,9 @@ public class Classifier extends Namespace implements IClassifier,
 		UMLXMLManip.removeChild(getNode(), col);
 	}
 
-	/* 
+	
+
+/* 
 	 * Gets the list of collaborations for the classifier.
 	 */
 	public ETList<ICollaborationOccurrence> getCollaborations() 
@@ -448,7 +480,9 @@ public class Classifier extends Namespace implements IClassifier,
 		return collector.retrieveElementCollection(m_Node, "UML:Classifier.collaboration/*", ICollaborationOccurrence.class);
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Gets the representation object for this classifier	 
 	 *
@@ -462,7 +496,9 @@ public class Classifier extends Namespace implements IClassifier,
  		return collector.retrieveSingleElement(m_Node, "UML:Classifier.representation/*", ICollaborationOccurrence.class);
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Sets the representation node for this classifier.
 	 *
@@ -476,7 +512,9 @@ public class Classifier extends Namespace implements IClassifier,
 		addChild("UML:Classifier.representation", "UML:Classifier.representation", value );
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Adds a behaviour to this classifier.
 	 *
@@ -501,7 +539,9 @@ public class Classifier extends Namespace implements IClassifier,
 							);
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * removes a behavior from the classifier
 	 *
@@ -524,20 +564,17 @@ public class Classifier extends Namespace implements IClassifier,
 										);		 
 	}
 
-	/**
-	 *
-	 * Gets all the behaviors for this classifier	 
-	 *
-	 * @return ETList<IBehavior> - the generic ETList of IBehaviors.
-	 *
-	 */
+	
+
 	public ETList<IBehavior> getBehaviors() 
 	{
 		ElementCollector<IBehavior> collector =	new ElementCollector<IBehavior>();		
 		return collector.retrieveElementCollection(m_Node, "UML:Classifier.ownedBehavior/*", IBehavior.class);
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Gets the classifierBehavior for this classifier.
 	 *
@@ -552,7 +589,9 @@ public class Classifier extends Namespace implements IClassifier,
 		return collector.retrieveSingleElement(m_Node, "UML:Classifier.classifierBehavior/*", IBehavior.class);
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Sets the classifier behavior
 	 *
@@ -566,7 +605,9 @@ public class Classifier extends Namespace implements IClassifier,
 		addChild("UML:Classifier.classifierBehavior", "UML:Classifier.classifierBehavior", value);
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * adds the increment object for this classifier.
 	 *
@@ -591,7 +632,9 @@ public class Classifier extends Namespace implements IClassifier,
 							);		 
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * removes the specified increment from this classifier.
 	 *
@@ -614,29 +657,16 @@ public class Classifier extends Namespace implements IClassifier,
 										);
 	}
 
-	/**
-	 *
-	 * gets all the increment objects associated with this Classifier
-	 *
-	 * @param incs [in] 
-	 *
-	 * @return the generic ETList of IIncrement.
-	 *
-	 */
+	
+
 	public ETList<IIncrement> getIncrements() 
 	{
 		ElementCollector<IIncrement> collector = new ElementCollector<IIncrement>();
 		return collector.retrieveElementCollection(m_Node, "UML:Classifier.increment/*", IIncrement.class);
 	}
 
-	/**
-	 *
-	 * Retrieve all the Features of this Classifier. This includes Attributes,
-	 * Operations, Methods, etc.	  
-	 *
-	 * @return ETList<IFeature> the generic ETList of features.
-	 *
-	 */
+	
+
 	public ETList<IFeature> getFeatures() 
 	{
 		Node node = getNode();
@@ -656,7 +686,9 @@ public class Classifier extends Namespace implements IClassifier,
 		return features.size() > 0? features : null;
 	}
 
-	/*
+	
+
+/*
 	 * Does not do anything right now
 	 */
 	public void setFeatures(ETList<IFeature> value)
@@ -664,7 +696,9 @@ public class Classifier extends Namespace implements IClassifier,
 		// TODO: Implement
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Adds the feature to this Classifier.
 	 *
@@ -715,7 +749,9 @@ public class Classifier extends Namespace implements IClassifier,
             }
         }
 
-	/**
+	
+
+/**
 	 *
 	 * Inserts a new feature into this classifier's list of features immediately before the 
 	 * existing feature passed in. If existingFeature is null, then the new feature is appended 
@@ -733,7 +769,9 @@ public class Classifier extends Namespace implements IClassifier,
 		 
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Removes the feature from this Classifier.
 	 *
@@ -778,7 +816,9 @@ public class Classifier extends Namespace implements IClassifier,
 		 
 	}
 
-	/**
+	
+
+/**
 	 * Retrieves the collection Attribute elements that this Classifier owns.
 	 *
 	 * @param pVal[out] The collection of Attributes
@@ -792,7 +832,9 @@ public class Classifier extends Namespace implements IClassifier,
 												   "./UML:Element.ownedElement/UML:Attribute", IAttribute.class);
 	}
 
-	/**
+	
+
+/**
 	 * Retrieves the collection of Operation elements that this Classifier owns.
 	 *
 	 * @param pVal[out] The operation collection
@@ -806,7 +848,9 @@ public class Classifier extends Namespace implements IClassifier,
 													"./UML:Element.ownedElement/UML:Operation", IOperation.class);
 	}
 
-	/**
+	
+
+/**
 	 * Adds a new Attribute to this Classifier.
 	 *
 	 * @param newVal[in] The new Attribute
@@ -818,7 +862,9 @@ public class Classifier extends Namespace implements IClassifier,
 		addFeature(newVal);
 	}
 
-	/**
+	
+
+/**
 	 * Adds a new Operation to this Classifier.
 	 *
 	 * @param newVal[in] The new operation
@@ -830,7 +876,9 @@ public class Classifier extends Namespace implements IClassifier,
 		addFeature(newVal);
 	}
 
-	/**
+	
+
+/**
 	* Creates a new attribute with the passed-in information. The new attribute
 	* is returned. NOTE: the attribute is NOT added to this Classifier.
 	*
@@ -901,7 +949,9 @@ public class Classifier extends Namespace implements IClassifier,
             return retAttr;
         }
 
-	/**
+	
+
+/**
 	 *
 	 * Creates a new operation with the passed-in information.
 	 *
@@ -985,7 +1035,9 @@ public class Classifier extends Namespace implements IClassifier,
             return retOper;
         }
 
-	/**
+	
+
+/**
 	 *
 	 * Attempts to find a single classifier in this classifier's namespace or 
 	 * above namespaces. If more than one classifier is found with the same name, 
@@ -1006,7 +1058,9 @@ public class Classifier extends Namespace implements IClassifier,
 		return retClass;
 	}
 
-	/**
+	
+
+/**
 	* Creates a new attribute with the passed-in information. The new attribute
 	* is returned. NOTE: the attribute is NOT added to this Classifier.
 	*
@@ -1037,7 +1091,9 @@ public class Classifier extends Namespace implements IClassifier,
 		return retAttr;
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Creates a new Operation with the passed-in information.
 	 *
@@ -1065,7 +1121,9 @@ public class Classifier extends Namespace implements IClassifier,
 		return retOper;
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Creates a new Attribute, giving it a default type and name.	  
 	 *
@@ -1077,7 +1135,9 @@ public class Classifier extends Namespace implements IClassifier,
 		return createAttribute(null, null);
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Creates a new operation, giving it a default return type and name.
 	 *
@@ -1091,7 +1151,9 @@ public class Classifier extends Namespace implements IClassifier,
 		return createOperation(null, null);
 	}
 
-	/**
+	
+
+/**
 	 *
 
 	 * Adds the association end to this classifier's list of ends.
@@ -1117,7 +1179,9 @@ public class Classifier extends Namespace implements IClassifier,
 							);
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Removes the passed-in end from this classifier's list.
 	 *
@@ -1141,7 +1205,9 @@ public class Classifier extends Namespace implements IClassifier,
 						   );		 
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Retrieves the collection of IAssociationEnd objects this Classifier
 	 * is a participant on.
@@ -1157,7 +1223,9 @@ public class Classifier extends Namespace implements IClassifier,
 		return collector.retrieveElementCollectionWithAttrIDs(this,"associationEnd", IAssociationEnd.class);
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Transforms this classifier into another.
 	 *
@@ -1216,7 +1284,9 @@ public class Classifier extends Namespace implements IClassifier,
 
 
 	
-	/**
+	
+
+/**
 	 *
 	 * Determines whether or not the name coming in is the name of a Classifier
 	 * derived type.
@@ -1252,7 +1322,9 @@ public class Classifier extends Namespace implements IClassifier,
 		return known;
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Performs the actual transformation of the node.
 	 *
@@ -1282,7 +1354,9 @@ public class Classifier extends Namespace implements IClassifier,
 		return retClass;
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * This routine is overloaded here so that certain stereotypes
 	 * are removed before a transform is done.
@@ -1320,7 +1394,9 @@ public class Classifier extends Namespace implements IClassifier,
             }
         }
 
-	/**
+	
+
+/**
 	 *
 	 * Retrieves all the collection of associations this Classifier participates in.
 	 *
@@ -1348,7 +1424,9 @@ public class Classifier extends Namespace implements IClassifier,
 		return assocs;
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Creates a new operation that has the same name as this Classifier and whose
 	 * Constructor property is set to True.
@@ -1364,7 +1442,9 @@ public class Classifier extends Namespace implements IClassifier,
 	}
 
     
-    /**
+    
+
+/**
      *
      * Creates an Operation with the same name as this Classifier, whose
      * Destructor property is true..
@@ -1379,7 +1459,9 @@ public class Classifier extends Namespace implements IClassifier,
        return createLifeTimeOperation(false);   
     }
 
-	/**
+	
+
+/**
 	 *
 	 * Retrieves all the Navigable ends on the other side of the association that this
 	 * Classifier is referencing. These ends are significant in that they result in the
@@ -1426,7 +1508,9 @@ public class Classifier extends Namespace implements IClassifier,
 		return navigableEnds;
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Determines whether or not this Classifier is persisted or not.
 	 *
@@ -1440,7 +1524,9 @@ public class Classifier extends Namespace implements IClassifier,
 		return getBooleanAttributeValue("isTransient", true);
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Determines whether or not this Classifier is persisted or not.
 	 *
@@ -1477,7 +1563,9 @@ public class Classifier extends Namespace implements IClassifier,
 			}
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Retrieves all the features that are redefining other features. 
 	 *
@@ -1515,7 +1603,9 @@ public class Classifier extends Namespace implements IClassifier,
 		return null;
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Retrieves all the IAttribute elements this Classifier owns that are redefining other
 	 * IAttributes in super classes or implemented interfaces.
@@ -1533,7 +1623,9 @@ public class Classifier extends Namespace implements IClassifier,
 		return filter.filter();
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Retrieves all the IOperation elements this Classifier owns that are redefining other
 	 * IOperations in super classes or implemented interfaces.
@@ -1551,7 +1643,9 @@ public class Classifier extends Namespace implements IClassifier,
 		return filter.filter();
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Retrieves all the features on this Classifier that DO NOT override / redefine other
 	 * features.
@@ -1578,7 +1672,9 @@ public class Classifier extends Namespace implements IClassifier,
 		return features;
 	}
 	
-	/**
+	
+
+/**
 	 *
 	 * Retrieves all the attributes on this classifier that are not redefining other attributes,
 	 *
@@ -1594,7 +1690,9 @@ public class Classifier extends Namespace implements IClassifier,
 		return collector.retrieveElementCollection(m_Node, query, IAttribute.class);
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Retrieves all the operations on this classifier that are not redefining other operations.
 	 *
@@ -1610,7 +1708,9 @@ public class Classifier extends Namespace implements IClassifier,
 		return collector.retrieveElementCollection(m_Node, query, IOperation.class);
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * @see NamespaceImpl::EstablishNodeAttributes()
 	 *
@@ -1620,7 +1720,9 @@ public class Classifier extends Namespace implements IClassifier,
 	   super.establishNodeAttributes( node );
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Adds a template parameter to this Classifier, thus making this classifier
 	 * a templated classifier
@@ -1668,7 +1770,9 @@ public class Classifier extends Namespace implements IClassifier,
 		 
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Removes a template parameter from this Classifier 
 	 *
@@ -1707,7 +1811,9 @@ public class Classifier extends Namespace implements IClassifier,
 		 
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Is the argument a template parameter of this classifier?
 	 *
@@ -1738,7 +1844,9 @@ public class Classifier extends Namespace implements IClassifier,
 		return isTemp;
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Retrieves the formal template parameters owned by this Classifier 
 	 *
@@ -1774,7 +1882,9 @@ public class Classifier extends Namespace implements IClassifier,
         return paramsBuff.substring(0, paramsBuff.length()-2);
     }
 
-	/**
+	
+
+/**
 	 *
 	 * Retrieves the Derivation relationship this Classifier is participating in. The existence of
 	 * this relationship means that this Classifier is a template instance of an existing templated
@@ -1791,7 +1901,9 @@ public class Classifier extends Namespace implements IClassifier,
 		return collector.retrieveSingleElement(m_Node, "UML:Element.ownedElement/UML:Derivation", IDerivation.class);
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Sets this Classifier into a Derivation relationship
 	 *
@@ -1807,7 +1919,9 @@ public class Classifier extends Namespace implements IClassifier,
 		value.setClient(this);
 	}
 
-	/** 
+	
+
+/** 
 	 * Returns a list of all NavigableEnds that aim away from this Classifier.
 	 * 
 	 * @param pNavigableEnds[out] the list of NavigableEnds.
@@ -1817,7 +1931,9 @@ public class Classifier extends Namespace implements IClassifier,
 		return getNavigableEndsByDirection(NED_OUTBOUND);
 	}
 
-	/** 
+	
+
+/** 
 	 * Returns a list of all NavigableEnds that aim towards this Classifier.
 	 * 
 	 * @param pNavigableEnds[out] the list of NavigableEnds.
@@ -1827,7 +1943,9 @@ public class Classifier extends Namespace implements IClassifier,
 		return getNavigableEndsByDirection(NED_INBOUND);
 	}
 
-	/** 
+	
+
+/** 
 	 * Returns a list of NavigableEnds that are connected to this IClassifer and that are
 	 * pointing in the direction specified by @a direction
 	 * 
@@ -1865,7 +1983,9 @@ public class Classifier extends Namespace implements IClassifier,
 		return navigableEnds;
 	}
 
-	/** 
+	
+
+/** 
 	 * Given an IAssociationEnd that is connected to this IClassifier, this 
      * operation determines what direction the associated INavigableEnd is 
      * pointing and returns that INavigableEnd.
@@ -1919,7 +2039,9 @@ public class Classifier extends Namespace implements IClassifier,
 		return new ETPairT<INavigableEnd, Integer>(retEnd, new Integer(dir));
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Retrieves the redefined attributes that this Classifier owns
 	 *
@@ -1950,7 +2072,9 @@ public class Classifier extends Namespace implements IClassifier,
 		return retAttrs;
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Retrieves the redefined operations that this Classifier owns
 	 *
@@ -1982,7 +2106,9 @@ public class Classifier extends Namespace implements IClassifier,
 		return retOpers;
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Retrieves the default value that can be used to initialize this type.
 	 *
@@ -2033,7 +2159,9 @@ public class Classifier extends Namespace implements IClassifier,
 		return defaultValue;
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Retrieves the first attribute found that matches the passed in name
 	 *
@@ -2055,7 +2183,9 @@ public class Classifier extends Namespace implements IClassifier,
 		return retAttr;
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Retrieves all the Attributes by the passed in name
 	 *
@@ -2079,7 +2209,9 @@ public class Classifier extends Namespace implements IClassifier,
 		return attributes;
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Retrieves all Attributes and out bound NavigableEnds by matching their names against the passed in name
 	 *
@@ -2118,7 +2250,9 @@ public class Classifier extends Namespace implements IClassifier,
 		return retAttrsList;
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Retrieves all the operations by the passed in name
 	 *
@@ -2144,7 +2278,9 @@ public class Classifier extends Namespace implements IClassifier,
 	    return operations;       
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Creates a new EventContext that will be propogated to all 
 	 * EventDispatchers on the Product's EventDispatchController.
@@ -2163,7 +2299,9 @@ public class Classifier extends Namespace implements IClassifier,
 		man.establishVersionableElementContext(this, feature, null);
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Pops any event context that has a filter on it with an
 	 * ID that matches the XMI ID of the element passed into this
@@ -2180,7 +2318,9 @@ public class Classifier extends Namespace implements IClassifier,
 		man.revokeEventContext(feature, null);
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Retrieves the controller on the current product.
 	 *
@@ -2200,7 +2340,9 @@ public class Classifier extends Namespace implements IClassifier,
 		return cont;
 	}
 	
-	/**
+	
+
+/**
 	 *
 	 * Handles the creation of either a constructor operation or destructor operation,
 	 * dependent on isConstructor.
@@ -2230,7 +2372,9 @@ public class Classifier extends Namespace implements IClassifier,
 		return oper;
 	}
 	
-	/**
+	
+
+/**
 	 *
 	 * Removes all elements that should also be deleted or at least modified
 	 * when this element is deleted.
@@ -2281,7 +2425,9 @@ public class Classifier extends Namespace implements IClassifier,
 	  establishDuplicatedGeneralizations( false, gens, dup );
 	}
 	
-	/**
+	
+
+/**
 	 *
 	 * Duplicates every Generalization passed in via the gens collection. This method
 	 * then makes sure that each end of the newly Duplicated Generalization knows of
@@ -2359,7 +2505,9 @@ public class Classifier extends Namespace implements IClassifier,
 		}
     }
 
-	/**
+	
+
+/**
 	 *
 	 * Duplicates all the CollaborationOccurrences belonging to dup.
 	 *
@@ -2389,7 +2537,9 @@ public class Classifier extends Namespace implements IClassifier,
 		}
 	}
 	
-	/**
+	
+
+/**
 	 *
 	 * Duplicates all the Behaviors belonging to dupClassifier.
 	 *
@@ -2442,7 +2592,9 @@ public class Classifier extends Namespace implements IClassifier,
 		 }
 	  }		
 	}
-	/**
+	
+
+/**
 	 *
 	 * Performs the actions specific to Classifier during a Duplate procedure.
 	 *
@@ -2458,7 +2610,9 @@ public class Classifier extends Namespace implements IClassifier,
 		replaceIds( dup, dup );
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Gathers all the redefined elements in the passed-in collection, grouping them
 	 * by the name of the Classifier in which they belong.
@@ -2497,7 +2651,9 @@ public class Classifier extends Namespace implements IClassifier,
 		}
 	}
 	
-	/**
+	
+
+/**
 	 *
 	 * Adds the passed-in redefining feature to a NamedCollection that matches the passed in
 	 * classifier name. That NamedCollection is added to or modified on the collections map.
@@ -2534,7 +2690,9 @@ public class Classifier extends Namespace implements IClassifier,
 		}
 	}
 	
-	/**
+	
+
+/**
 	 *
 	 * Overrides the NamedElement method of the same signature in order to handle 
 	 * the impact that changing the name of a Classifier can entail. Since a Classifier
@@ -2615,7 +2773,9 @@ public class Classifier extends Namespace implements IClassifier,
 		}
 	}
 	
-	/**
+	
+
+/**
 	 *
 	 * Determines whether or not an impact analysis
 	 * query should be performed.
@@ -2683,7 +2843,9 @@ public class Classifier extends Namespace implements IClassifier,
 		return perform;
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Retrieves all elements that are referencing this element in a typed
 	 * element fashion. 
@@ -2725,7 +2887,9 @@ public class Classifier extends Namespace implements IClassifier,
 		return impacted;
 	}
 	
-	/**
+	
+
+/**
 	 *
 	 * Given a collection of files, this method determines whether or not any of 
 	 * those files contains the XMI id of this classifier.
@@ -2762,7 +2926,9 @@ public class Classifier extends Namespace implements IClassifier,
 		return impacted;
 	}
 	
-	/**
+	
+
+/**
 	 *
 	 * Determines whether or not the file pointed to contains the passed-in
 	 * XMI ID anywhere in the file.
@@ -2778,16 +2944,8 @@ public class Classifier extends Namespace implements IClassifier,
 	   return FileManip.isInFile( xmiID, fileName);
 	}
 	
-	/**
-	 *
-	 * Loads the external files found in the passed in collection.
-	 *
-	 * @param impactedFiles[in]   The collection of absolute file names that point at
-	 *                            external files from the project that needs to be loaded
-	 * @param manager[in]         The TypeManager associated with the Project this Classifier
-	 *                            is in
-	 *
-	 */
+	
+
 	private void loadImpactedFiles(Vector col, ITypeManager man)
 	{
 		if (man != null)
@@ -2799,7 +2957,9 @@ public class Classifier extends Namespace implements IClassifier,
 		}
 	}
 	
-	/**
+	
+
+/**
 	 *
 	 * Performs the impact query on the passed-in IProject, based on the xmiID coming in. All elements found
 	 * will be returned.
@@ -2856,7 +3016,9 @@ public class Classifier extends Namespace implements IClassifier,
 		return retElems;
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Ensures that the interface has a required stereotype.
 	 *
@@ -2878,7 +3040,9 @@ public class Classifier extends Namespace implements IClassifier,
 		}
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Finds a stereotype by name on this element
 	 *
@@ -3014,7 +3178,9 @@ public class Classifier extends Namespace implements IClassifier,
         super.delete();
      }
 	
-	/**
+	
+
+/**
 	 *
 	 * Finds and removes the specified stereotype from this element.
 	 *
@@ -3034,7 +3200,9 @@ public class Classifier extends Namespace implements IClassifier,
 		}
 	}
 	
-	/**
+	
+
+/**
 	 *
 	 * Translate a PSK string to its value.
 	 *
@@ -3060,7 +3228,9 @@ public class Classifier extends Namespace implements IClassifier,
 		return sValue;
 	}
 	
-	/**
+	
+
+/**
 	 * Retrieves the operation with a matching signature
 	 */
 	public IOperation findMatchingOperation( IOperation pOper, boolean bMustBeAbstract)
@@ -3102,7 +3272,9 @@ public class Classifier extends Namespace implements IClassifier,
 	   fireNameCollisionIfNeeded( helper, curElement );
 	}
 
-	/**
+	
+
+/**
 	 * Retrieves the operation with a matching signature
 	 */
 	public IOperation findMatchingParentOperation(IOperation pOper, boolean bMustBeAbstract)
@@ -3127,7 +3299,9 @@ public class Classifier extends Namespace implements IClassifier,
 		return retOper;
 	}
 	
-	/**
+	
+
+/**
 	 * Retrieves the operation with a matching signature
 	 */
 	public IOperation findMatchingOperation(IOperation pOper)
@@ -3158,7 +3332,9 @@ public class Classifier extends Namespace implements IClassifier,
             m_FeatureType = type;
 		}
 		
-		/**
+		
+
+/**
 		 *
 		 * Retrieves a NamedCollections object filled with Collection types
 		 * matching FeatureCollection, filled with the appropriately typed
@@ -3202,8 +3378,8 @@ public class Classifier extends Namespace implements IClassifier,
                 	INamedCollection newc = new NamedCollection();
                     newc.setName(coll.getName());
                     
-                    // Java's generics aren't clever enough to handle this, so
-                    // we use a generic container.
+                    
+                    
                     ETList<IElement> els = new ETArrayList<IElement>();
                     newc.setData(els);
                     
@@ -3226,7 +3402,9 @@ public class Classifier extends Namespace implements IClassifier,
 		}       
 	}
 
-   /**
+   
+
+/**
     * @param element
     * @return
     */
@@ -3239,7 +3417,9 @@ public class Classifier extends Namespace implements IClassifier,
         return m_RedefineAggregate.addRedefinedElement(element);
    }
 
-   /**
+   
+
+/**
     * @param element
     * @return
     */
@@ -3252,7 +3432,9 @@ public class Classifier extends Namespace implements IClassifier,
         return m_RedefineAggregate.addRedefiningElement(element); 
    }
 
-   /**
+   
+
+/**
     * @return
     */
    public boolean getIsFinal()
@@ -3264,7 +3446,9 @@ public class Classifier extends Namespace implements IClassifier,
       return m_RedefineAggregate.getIsFinal();
    }
 
-   /**
+   
+
+/**
     * @return
     */
    public boolean getIsRedefined()
@@ -3276,7 +3460,9 @@ public class Classifier extends Namespace implements IClassifier,
       return m_RedefineAggregate.getIsRedefined();
    }
 
-   /**
+   
+
+/**
     * @return
     */
    public boolean getIsRedefining()
@@ -3288,7 +3474,9 @@ public class Classifier extends Namespace implements IClassifier,
       return m_RedefineAggregate.getIsRedefining();
    }
 
-   /**
+   
+
+/**
     * @return
     */
    public long getRedefinedElementCount()
@@ -3296,7 +3484,9 @@ public class Classifier extends Namespace implements IClassifier,
       return m_RedefineAggregate.getRedefinedElementCount();
    }
 
-   /**
+   
+
+/**
     * @return
     */
    public ETList<IRedefinableElement> getRedefinedElements()
@@ -3308,7 +3498,9 @@ public class Classifier extends Namespace implements IClassifier,
         return m_RedefineAggregate.getRedefinedElements();
    }
 
-   /**
+   
+
+/**
     * @return
     */
    public long getRedefiningElementCount()
@@ -3320,7 +3512,9 @@ public class Classifier extends Namespace implements IClassifier,
         return m_RedefineAggregate.getRedefiningElementCount();
    }
 
-   /**
+   
+
+/**
     * @return
     */
   
@@ -3335,7 +3529,9 @@ public class Classifier extends Namespace implements IClassifier,
 
    
 
-   /**
+   
+
+/**
     * @param element
     * @return
     */
@@ -3348,7 +3544,9 @@ public class Classifier extends Namespace implements IClassifier,
         return m_RedefineAggregate.removeRedefinedElement(element);
    }
 
-   /**
+   
+
+/**
     * @param element
     * @return
     */
@@ -3361,7 +3559,9 @@ public class Classifier extends Namespace implements IClassifier,
       	return m_RedefineAggregate.removeRedefiningElement(element);
    }
 
-   /**
+   
+
+/**
     * @param value
     */
    public void setIsFinal(boolean value)
@@ -3373,7 +3573,9 @@ public class Classifier extends Namespace implements IClassifier,
         m_RedefineAggregate.setIsFinal(value);
    }
 
-   /**
+   
+
+/**
 	*
 	* Duplicates the template parameters on the Classifier
 	*

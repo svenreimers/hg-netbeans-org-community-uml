@@ -48,6 +48,8 @@ package org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructur
 import org.netbeans.modules.uml.core.AbstractUMLTestCase;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.IConstraint;
 
+
+
 /**
  * Test cases for Operation.
  */
@@ -61,7 +63,9 @@ public class OperationTestCase extends AbstractUMLTestCase
     private IOperation  op;
     private IClassifier cl;
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see junit.framework.TestCase#setUp()
      */
     protected void setUp() throws Exception
@@ -73,7 +77,9 @@ public class OperationTestCase extends AbstractUMLTestCase
         cl.addOperation(op);
     }
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see junit.framework.TestCase#tearDown()
      */
     protected void tearDown() throws Exception

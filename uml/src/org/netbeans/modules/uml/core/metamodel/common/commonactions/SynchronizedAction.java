@@ -42,11 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : SynchronizedAction.java
- * Created on : Sep 18, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.metamodel.common.commonactions;
 
 import org.dom4j.Document;
@@ -64,7 +61,8 @@ public class SynchronizedAction
     implements ISynchronizedAction
 {
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactions.ISynchronizedAction#addSubAction(org.netbeans.modules.uml.core.metamodel.basic.basicactions.IAction)
      */
     public void addSubAction(IAction pAction)
@@ -74,7 +72,9 @@ public class SynchronizedAction
                     ,pAction);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactions.ISynchronizedAction#getSubActions()
      */
     public ETList<IAction> getSubActions()
@@ -83,7 +83,9 @@ public class SynchronizedAction
             .retrieveElementCollection((ISynchronizedAction)this, "UML:SynchronizedAction.subAction/*", IAction.class);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactions.ISynchronizedAction#removeSubAction(org.netbeans.modules.uml.core.metamodel.basic.basicactions.IAction)
      */
     public void removeSubAction(IAction pAction)

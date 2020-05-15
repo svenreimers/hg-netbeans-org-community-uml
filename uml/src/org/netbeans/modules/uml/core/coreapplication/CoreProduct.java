@@ -138,7 +138,7 @@ public class CoreProduct implements ICoreProduct
 	/// The TemplateManager is the entry point into the Generative Framework
 	private ITemplateManager m_TemplateManager = null;
 
-	/// The data formatter keeps his language factories cached up, so this guy manages that cache
+	
 	private IDataFormatter m_DataFormatter = null;
 
 	 // the one and only design center manager
@@ -148,7 +148,9 @@ public class CoreProduct implements ICoreProduct
 	private ICoreProduct m_COMInterface = null;
 
 	private static int entered = 0;
-	/**
+	
+
+/**
 	 * 
 	 */
 	public CoreProduct() 
@@ -159,7 +161,9 @@ public class CoreProduct implements ICoreProduct
 		m_Factory = new UMLCreationFactory();
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.coreapplication.ICoreProduct#getCoreMessenger()
 	 */
 	public ICoreMessenger getCoreMessenger() 
@@ -167,7 +171,9 @@ public class CoreProduct implements ICoreProduct
 		return null;
 	}
 
-	/**
+	
+
+/**
 	 * CoreProductImpl Get rid of resources.
 	 */
 	public void preDestroy() 
@@ -175,7 +181,9 @@ public class CoreProduct implements ICoreProduct
 		quit();
 	}
 
-	/**
+	
+
+/**
 	 * Returns the IApplication that this product wraps.
 	 *
 	 * @param pVal The returned IApplication.
@@ -185,7 +193,9 @@ public class CoreProduct implements ICoreProduct
 		return m_Application;
 	}
 
-	/**
+	
+
+/**
 	 * Sets the IApplication that this product wraps.
 	 *
 	 * @param newVal The new IADApplication to wrap.
@@ -195,7 +205,9 @@ public class CoreProduct implements ICoreProduct
 		m_Application = value;
 	}
 
-	/**
+	
+
+/**
 	 * Returns a shared IMessageService object for the product.  Using a shared messenger allows
 	 * connection points to notify those that are interested in knowing that new messages have been added.
 	 *
@@ -210,7 +222,9 @@ public class CoreProduct implements ICoreProduct
 		return m_MessageService;
 	}
 
-	/**
+	
+
+/**
 	 * Gets the current workspace.  There's only one workspace open.
 	 *
 	 * @param pVal The current workspace.
@@ -220,7 +234,9 @@ public class CoreProduct implements ICoreProduct
 		return m_CurrentWorkspace;
 	}
 
-	/**
+	
+
+/**
 	 * Sets the current workspace.  There's only one workspace open.  
 	 * 
 	 * @param newVal The workspace set.
@@ -230,7 +246,9 @@ public class CoreProduct implements ICoreProduct
 		m_CurrentWorkspace = value;
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Opens a workspace file, returning the Workspace object that represents
 	 * the data in that file. The Workspace returned becomes the currently active
@@ -257,7 +275,9 @@ public class CoreProduct implements ICoreProduct
 		return space;
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Closes the passed-in Workspace. All open WorkspaceProjects will also be closed.
 	 *
@@ -277,7 +297,9 @@ public class CoreProduct implements ICoreProduct
 		m_WSManager.closeWorkspace(space, fileName, save);		
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Retrieves the WorkspaceManager on this product.
 	 *
@@ -291,7 +313,9 @@ public class CoreProduct implements ICoreProduct
 		return m_WSManager;
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Sets the WorkspaceManager on this product.
 	 *
@@ -305,7 +329,9 @@ public class CoreProduct implements ICoreProduct
 		m_WSManager = value;
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Creates a new Workspace file at the location specified.
 	 *
@@ -331,7 +357,9 @@ public class CoreProduct implements ICoreProduct
 		return space;
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Creates the Application specific to this Product.
 	 *
@@ -375,7 +403,9 @@ public class CoreProduct implements ICoreProduct
 		return app;
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Fires the initialized event for the core product.
 	 *
@@ -394,7 +424,9 @@ public class CoreProduct implements ICoreProduct
 		}
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Create the RoundTripController and places it on the Product.
 	 *
@@ -407,13 +439,15 @@ public class CoreProduct implements ICoreProduct
 		{
 			m_RTController = new RoundTripController();
                         
-                        // conover - disable Round Trip by default
+                        
 			// m_RTController.initialize(this, RTMode.RTM_LIVE);
 			m_RTController.initialize(this, RTMode.RTM_OFF);
 		}
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Creates the application specific to the domain. This is generally
 	 * overridden.
@@ -429,7 +463,9 @@ public class CoreProduct implements ICoreProduct
 		return coreApp;
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Establishes the one and only TemplateManager on the product
 	 *
@@ -444,7 +480,9 @@ public class CoreProduct implements ICoreProduct
 		}
 	}
 
-	/** 
+	
+
+/** 
 	 * Creates the default NavigatorFactory and sets the CoreProduct's NavigatorFactory property
 	 * to the newly created NavigatorFactory.
 	 *
@@ -455,7 +493,9 @@ public class CoreProduct implements ICoreProduct
 		m_pNavigatorFactory = new NavigatorFactory();
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Builds all the EventDispatcher objects specialized for this Product.
 	 *
@@ -501,7 +541,9 @@ public class CoreProduct implements ICoreProduct
 		
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Creates the Preference manager and places it on the Product.
 	 *
@@ -522,7 +564,9 @@ public class CoreProduct implements ICoreProduct
 		}
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Creates the Language manager and places it on the Product.
 	 *
@@ -537,7 +581,9 @@ public class CoreProduct implements ICoreProduct
 		}
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Creates the Facilitiy Manager and places it on the Product.
 	 *
@@ -556,7 +602,9 @@ public class CoreProduct implements ICoreProduct
 		}
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Called to alert listeners that this product is about to be initialized.
 	 *
@@ -581,7 +629,9 @@ public class CoreProduct implements ICoreProduct
 		return proceed;
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Establishes all the dispatchers resident in Core, as well as the
 	 * roundtrip controller.
@@ -597,7 +647,9 @@ public class CoreProduct implements ICoreProduct
 		return m_Factory;
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Retrieves the EventDispatchController off this Product.
 	 *
@@ -610,7 +662,9 @@ public class CoreProduct implements ICoreProduct
 		return m_DispatchController;
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Sets the EventDispatchController on this product.
 	 *
@@ -623,7 +677,9 @@ public class CoreProduct implements ICoreProduct
 		m_DispatchController = value;
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Retrieves the EventDispatcher off the internal controller by matching the ID
 	 * passed in.
@@ -643,7 +699,9 @@ public class CoreProduct implements ICoreProduct
 		return disp;
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Sets the RoundTripController on this product.
 	 *
@@ -662,7 +720,9 @@ public class CoreProduct implements ICoreProduct
 		return m_RTController;
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Sets the Facility Manager for this entire Product.
 	 *
@@ -676,7 +736,9 @@ public class CoreProduct implements ICoreProduct
 		m_FacilityManager = value;
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Gets the Facility Manager for this entire Product.
 	 *
@@ -690,7 +752,9 @@ public class CoreProduct implements ICoreProduct
 		return m_FacilityManager;
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Sets the Language Manager for this entire Product.
 	 *
@@ -704,7 +768,9 @@ public class CoreProduct implements ICoreProduct
 		m_LanguageManager = value;
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Gets the Language Manager for this entire Product.
 	 *
@@ -718,7 +784,9 @@ public class CoreProduct implements ICoreProduct
 		return m_LanguageManager;
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Sets the Preference Manager for this entire Product.
 	 *
@@ -732,7 +800,9 @@ public class CoreProduct implements ICoreProduct
 		m_PreferenceManager = value;
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Gets the Preference Manager for this entire Product.
 	 *
@@ -746,7 +816,9 @@ public class CoreProduct implements ICoreProduct
 		return m_PreferenceManager;
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Retrieves the ConfigManager for this product.
 	 *
@@ -764,7 +836,9 @@ public class CoreProduct implements ICoreProduct
 	    return m_ConfigManager;
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Sets the config manager for this product.
 	 *
@@ -778,7 +852,9 @@ public class CoreProduct implements ICoreProduct
 		m_ConfigManager = value;
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Releases all resources allocated by the CoreProduct.
 	 *
@@ -850,7 +926,9 @@ public class CoreProduct implements ICoreProduct
 		}
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Detaches the current Preference Manager from this product.
 	 *
@@ -865,7 +943,9 @@ public class CoreProduct implements ICoreProduct
 		}
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Detaches the current Facility Manager from this product.
 	 *
@@ -880,7 +960,9 @@ public class CoreProduct implements ICoreProduct
 		}
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Detaches the current Facility Manager from this product.
 	 *
@@ -895,7 +977,9 @@ public class CoreProduct implements ICoreProduct
 		}
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Revokes all the EventDispatchers installed by this product.
 	 *
@@ -917,7 +1001,9 @@ public class CoreProduct implements ICoreProduct
 		m_DispatchController.removeDispatcher(EventDispatchNameKeeper.activities());
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Detaches the current RoundTripController from this product.
 	 *
@@ -950,7 +1036,9 @@ public class CoreProduct implements ICoreProduct
 		}
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Determines whether or not this product contains GUI components.
 	 * The CoreProduct by itself will always return false. Sub class
@@ -969,7 +1057,9 @@ public class CoreProduct implements ICoreProduct
 		return false;
 	}
 
-	/** 
+	
+
+/** 
 	 * Gets the CoreProduct's navigator factory.
 	 * 
 	 * @param pVal[out] the CoreProduct's navigator factory.
@@ -981,7 +1071,9 @@ public class CoreProduct implements ICoreProduct
 		return m_pNavigatorFactory;
 	}
 
-	/** 
+	
+
+/** 
 	 * Sets the CoreProduct's navigator factory.
 	 * 
 	 * @param newVal[in] the CoreProduct's new navigator factory.
@@ -993,7 +1085,9 @@ public class CoreProduct implements ICoreProduct
 		m_pNavigatorFactory = value;
 	}
 
-	/** 
+	
+
+/** 
 	 * Gets the CoreProduct's DiagramCleanupManager.
 	 * 
 	 * @param pVal[out] the CoreProduct's DiagramCleanupManager.
@@ -1006,7 +1100,9 @@ public class CoreProduct implements ICoreProduct
 		return null;
 	}
 
-	/**
+	
+
+/**
 	 * The TemplateManager, used for Generative Templates
 	 */
 	public ITemplateManager getTemplateManager() 
@@ -1019,9 +1115,8 @@ public class CoreProduct implements ICoreProduct
 		m_TemplateManager = value;
 	}
 
-	/**
-	 * Get/Set the data formatter
-	 */
+	
+
 	public IDataFormatter getDataFormatter() 
 	{
 		if (m_DataFormatter == null)
@@ -1036,7 +1131,9 @@ public class CoreProduct implements ICoreProduct
 		m_DataFormatter = value;
 	}
 
-	/**
+	
+
+/**
 	 * Get/Set the DesignCenterManager
 	 */
 	public IDesignCenterManager getDesignCenterManager() 
@@ -1044,15 +1141,16 @@ public class CoreProduct implements ICoreProduct
 		return m_DesignCenterManager;
 	}
 
-	/**
-	 * Get/Set the data formatter
-	 */
+	
+
 	public void setDesignCenterManager(IDesignCenterManager value) 
 	{
 		m_DesignCenterManager = value;
 	}
 	
-	/**
+	
+
+/**
 	 * Saves all modified data associated with this product.
 	 *
 	 * @throws WorkspaceManagementException Thrown when an error occurs

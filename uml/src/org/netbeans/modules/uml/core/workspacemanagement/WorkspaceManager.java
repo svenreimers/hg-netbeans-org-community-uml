@@ -66,7 +66,9 @@ public class WorkspaceManager implements IWorkspaceManager
       super();
    }
 
-   /**
+   
+
+/**
     *
     * Creates a new Workspace object.
     *
@@ -113,7 +115,9 @@ public class WorkspaceManager implements IWorkspaceManager
       return space;
    }   
 
-   /**
+   
+
+/**
     *
     * Attempts to open and retrieve a Workspace located at the passed in location.
     *
@@ -144,7 +148,9 @@ public class WorkspaceManager implements IWorkspaceManager
       return space;
    }
 
-   /**
+   
+
+/**
     *
     * Collapses the passed in Workspace, readying the workspace for transport
     * via email, etc.
@@ -161,7 +167,9 @@ public class WorkspaceManager implements IWorkspaceManager
    	// this method.
    }
 
-   /**
+   
+
+/**
     *
     * Expands a Workspace that was previously collapsed.
     *
@@ -180,7 +188,9 @@ public class WorkspaceManager implements IWorkspaceManager
       return null;
    }
 
-   /**
+   
+
+/**
     *
     * Retrieves the EventDispatcher associated with this Mangager.
     *
@@ -194,7 +204,9 @@ public class WorkspaceManager implements IWorkspaceManager
       return m_Dispatcher;
    }
 
-   /**
+   
+
+/**
     *
     * Sets the EventDispatcher on this manager.
     *
@@ -208,7 +220,9 @@ public class WorkspaceManager implements IWorkspaceManager
       m_Dispatcher = value;
    }
 
-   /**
+   
+
+/**
     *
     * Closes the passed-in Workspace. All open WSProjects will also be closed.
     *
@@ -243,7 +257,9 @@ public class WorkspaceManager implements IWorkspaceManager
       }
    }
 
-   /**
+   
+
+/**
     * Creates the actual Workspace object and sets all pertinent data.
     *
     * @param doc[in] The XML document to associate with the Workspace.
@@ -291,7 +307,9 @@ public class WorkspaceManager implements IWorkspaceManager
       return space;
    }
 
-   /**
+   
+
+/**
     *
     * Makes sure that the file passed ins is an XML file that contains an EMBT:Workspace
     * root element.
@@ -307,7 +325,9 @@ public class WorkspaceManager implements IWorkspaceManager
       return Validator.verifyXMLFileFormat(fileName, "EMBT:Workspace");
    }
 
-	/**
+	
+
+/**
 	 * Makes sure that the passed-in path contains a valid directory
 	 * spec.
 	 *
@@ -323,7 +343,9 @@ public class WorkspaceManager implements IWorkspaceManager
 		}
 	}
 	
-	/**
+	
+
+/**
 	 * @param name
 	 */
 	protected static void validateName(String name)

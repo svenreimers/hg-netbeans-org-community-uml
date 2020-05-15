@@ -58,6 +58,7 @@ import org.netbeans.modules.uml.drawingarea.view.DesignerScene;
 import org.openide.windows.TopComponent;
 
 
+
 /**
  * used for all message calls: from synch message, asynch, and create
  */

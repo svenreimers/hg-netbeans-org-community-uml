@@ -49,6 +49,7 @@ import java.beans.PropertyChangeSupport;
 import org.netbeans.spi.project.ui.support.ProjectCustomizer;
 
 
+
 /** Maintains current category in the customizer.
  *
  */

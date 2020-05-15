@@ -59,7 +59,8 @@ public class Dependency extends DirectedRelationship
 
 	private IPackageableElement m_Pack = new PackageableElement();
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IVersionableElement#setNode(org.dom4j.Node)
      */
     public void setNode(Node n)
@@ -68,7 +69,9 @@ public class Dependency extends DirectedRelationship
         m_Pack.setNode(n);
     }
 
-	/**
+	
+
+/**
 	 * The supplier of the Dependency.
 	 * 
 	 * @param newVal[in] 
@@ -113,7 +116,9 @@ public class Dependency extends DirectedRelationship
         }
     }
 
-  /**
+  
+
+/**
    * The supplier of the Dependency.
    * 
    * @param pval[out] 
@@ -126,7 +131,9 @@ public class Dependency extends DirectedRelationship
 	  return retrieveSingleElementWithAttrID( "supplier", dummy, INamedElement.class );
   }
 
-    /**
+    
+
+/**
      * Sets the client of this Dependency.
      * 
      * @param elem The client INamedElement of this Dependency.
@@ -168,7 +175,9 @@ public class Dependency extends DirectedRelationship
         }
     }
 
-  /**
+  
+
+/**
    * The client of the Dependency.
    * 
    * @param pval[out] 
@@ -181,7 +190,9 @@ public class Dependency extends DirectedRelationship
 	  return retrieveSingleElementWithAttrID( "client", dummy, INamedElement.class );
   }
 
-  /**
+  
+
+/**
    * Establishes the appropriate XML elements for this UML type.
    *
    * [in] The document where this element will reside
@@ -195,7 +206,9 @@ public class Dependency extends DirectedRelationship
 	 buildNodePresence( "UML:Dependency", doc, parent );
   }
 
-  /**
+  
+
+/**
    *
    * Called when this Dependency has been deleted. Simply makes sure that both ends of this dependency
    * are marked as dirty if those elements have been versioned.
@@ -220,7 +233,9 @@ public class Dependency extends DirectedRelationship
 		super.fireDelete(elem);
 	}
 
-	/**
+	
+
+/**
 	 * @param dep
 	 */
 	public void addClientDependency(IDependency dep)
@@ -232,7 +247,9 @@ public class Dependency extends DirectedRelationship
 		m_Pack.addClientDependency(dep);
 	}
 
-	/**
+	
+
+/**
 	 * @param dep
 	 */
 	public void addSupplierDependency(IDependency dep)
@@ -244,7 +261,9 @@ public class Dependency extends DirectedRelationship
 		m_Pack.addSupplierDependency(dep);
 	}
 
-	/**
+	
+
+/**
 	 * @return
 	 */
 	public String getAlias()
@@ -256,7 +275,9 @@ public class Dependency extends DirectedRelationship
 		return m_Pack.getAlias();
 	}
 
-	/**
+	
+
+/**
 	 * @return
 	 */
 	public ETList<IDependency> getClientDependencies()
@@ -268,7 +289,9 @@ public class Dependency extends DirectedRelationship
 		return m_Pack.getClientDependencies();
 	}
 
-	/**
+	
+
+/**
 	 * @param type
 	 * @return
 	 */
@@ -281,7 +304,9 @@ public class Dependency extends DirectedRelationship
 		return m_Pack.getClientDependenciesByType(type);
 	}
 
-	/**
+	
+
+/**
 	 * @return
 	 */
 	public long getClientDependencyCount()
@@ -293,7 +318,9 @@ public class Dependency extends DirectedRelationship
 		return m_Pack.getClientDependencyCount();
 	}
 
-	/**
+	
+
+/**
 	 * @param useProjName
 	 * @return
 	 */
@@ -306,7 +333,9 @@ public class Dependency extends DirectedRelationship
 		return m_Pack.getFullyQualifiedName(useProjName);
 	}
 
-	/**
+	
+
+/**
 	 * @return
 	 */
 	public String getName()
@@ -318,7 +347,9 @@ public class Dependency extends DirectedRelationship
 		return m_Pack.getName();
 	}
 
-	/**
+	
+
+/**
 	 * @return
 	 */
 	public INamespace getNamespace()
@@ -330,7 +361,9 @@ public class Dependency extends DirectedRelationship
 		return m_Pack.getNamespace();
 	}
 
-	/**
+	
+
+/**
 	 * @return
 	 */
 	public String getQualifiedName()
@@ -342,7 +375,9 @@ public class Dependency extends DirectedRelationship
 		return m_Pack.getQualifiedName();
 	}
 
-	/**
+	
+
+/**
 	 * @return
 	 */
 	public String getQualifiedName2()
@@ -354,7 +389,9 @@ public class Dependency extends DirectedRelationship
 		return m_Pack.getQualifiedName2();
 	}
 
-	/**
+	
+
+/**
 	 * @return
 	 */
 	public ETList<IDependency> getSupplierDependencies()
@@ -366,7 +403,9 @@ public class Dependency extends DirectedRelationship
 		return m_Pack.getSupplierDependencies();
 	}
 
-	/**
+	
+
+/**
 	 * @param type
 	 * @return
 	 */
@@ -379,7 +418,9 @@ public class Dependency extends DirectedRelationship
 		return m_Pack.getSupplierDependenciesByType(type);
 	}
 
-	/**
+	
+
+/**
 	 * @return
 	 */
 	public long getSupplierDependencyCount()
@@ -391,7 +432,9 @@ public class Dependency extends DirectedRelationship
 		return m_Pack.getSupplierDependencyCount();
 	}
 
-	/**
+	
+
+/**
 	 * @return
 	 */
 	public int getVisibility()
@@ -403,7 +446,9 @@ public class Dependency extends DirectedRelationship
 		return m_Pack.getVisibility();
 	}
 
-	/**
+	
+
+/**
 	 * @return
 	 */
 	public boolean isAliased()
@@ -415,7 +460,9 @@ public class Dependency extends DirectedRelationship
 		return m_Pack.isAliased();
 	}
 
-	/**
+	
+
+/**
 	 * @param dep
 	 */
 	public void removeClientDependency(IDependency dep)
@@ -427,7 +474,9 @@ public class Dependency extends DirectedRelationship
 		m_Pack.removeClientDependency(dep);
 	}
 
-	/**
+	
+
+/**
 	 * @param dep
 	 */
 	public void removeSupplierDependency(IDependency dep)
@@ -439,7 +488,9 @@ public class Dependency extends DirectedRelationship
 		m_Pack.removeSupplierDependency(dep);
 	}
 
-	/**
+	
+
+/**
 	 * @param str
 	 */
 	public void setAlias(String str)
@@ -451,7 +502,9 @@ public class Dependency extends DirectedRelationship
 		m_Pack.setAlias(str);
 	}
 
-	/**
+	
+
+/**
 	 * @param str
 	 */
 	public void setName(String str)
@@ -463,7 +516,9 @@ public class Dependency extends DirectedRelationship
 		m_Pack.setName(str);
 	}
 
-	/**
+	
+
+/**
 	 * @param space
 	 */
 	public void setNamespace(INamespace space)
@@ -475,7 +530,9 @@ public class Dependency extends DirectedRelationship
 		m_Pack.setNamespace(space);
 	}
 
-	/**
+	
+
+/**
 	 * @param vis
 	 */
 	public void setVisibility(int vis)
@@ -500,7 +557,9 @@ public class Dependency extends DirectedRelationship
 		m_Pack.setNameWithAlias(newVal);
 	}
 
-    /**
+    
+
+/**
      * The default behavior to this method is to return true if the names of the
      * two elements being compared are same. Subclasses should override to 
      * implement class specific <em>isSimilar</em> behavior.

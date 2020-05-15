@@ -47,6 +47,8 @@ package org.netbeans.modules.uml.core.metamodel.dynamics;
 import org.netbeans.modules.uml.core.AbstractUMLTestCase;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.IExpression;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.TypedFactoryRetriever;
+
+
 /**
  * Test cases for ChangeSignal.
  */
@@ -59,7 +61,9 @@ public class ChangeSignalTestCase extends AbstractUMLTestCase
 
     private IChangeSignal changeSignal;
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see junit.framework.TestCase#setUp()
      */
     protected void setUp() throws Exception
@@ -70,7 +74,9 @@ public class ChangeSignalTestCase extends AbstractUMLTestCase
         project.addElement(changeSignal);
     }
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see junit.framework.TestCase#tearDown()
      */
     protected void tearDown() throws Exception

@@ -50,42 +50,58 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 public interface INamedElementEventsSink
 {
-	/**
+	
+
+/**
 	 * Fired whenever the name of the passed in element is about to change.
 	*/
 	public void onPreNameModified( INamedElement element, String proposedName, IResultCell cell );
 
-	/**
+	
+
+/**
 	 * Fired whenever the element's name has changed.
 	*/
 	public void onNameModified( INamedElement element, IResultCell cell );
 
-	/**
+	
+
+/**
 	 * Fired whenever the visibility value of the passed in element is about to change.
 	*/
 	public void onPreVisibilityModified( INamedElement element, /* VisibilityKind */ int proposedValue, IResultCell cell );
 
-	/**
+	
+
+/**
 	 * Fired whenever the visibility value of the passed in element has changed.
 	*/
 	public void onVisibilityModified( INamedElement element, IResultCell cell );
 
-	/**
+	
+
+/**
 	 * Fired whenever the alias name of the passed in element is about to change.
 	*/
 	public void onPreAliasNameModified( INamedElement element, String proposedName, IResultCell cell );
 
-	/**
+	
+
+/**
 	 * Fired whenever the element's alias name has changed.
 	*/
 	public void onAliasNameModified( INamedElement element, IResultCell cell );
 
-	/**
+	
+
+/**
 	 * Fired whenever the name of element is about to change to the name of an existing element.
 	*/
 	public void onPreNameCollision( INamedElement element, String proposedName, ETList<INamedElement> collidingElements, IResultCell cell );
 
-	/**
+	
+
+/**
 	 * Fired whenever the name of element has changed to the name of an existing element.
 	*/
 	public void onNameCollision( INamedElement element, ETList<INamedElement> collidingElements, IResultCell cell );

@@ -65,14 +65,18 @@ public class SubMenuManager extends TestBedMenuManager implements IMenuManager
     private Object m_ObjectClickedOn = null;
     private Hashtable<String, IMenuManager> m_SubMenus = new Hashtable<String, IMenuManager>();
     
-    /**
+    
+
+/**
      * Maps each submenu in the manager to a wrapper.  The wrapper is used to
      * monitor additions and removals.  If the visibility of the manager is modified
      * the visibility of the submenus is also modified.
      */
     private Map mapMenuToWrapper;
     
-    /**
+    
+
+/**
      * Constructs a new manager.
      *
      * @param mgr the parent manager.  All contributions made to the
@@ -94,7 +98,9 @@ public class SubMenuManager extends TestBedMenuManager implements IMenuManager
     {
         m_Label = label;
     }
-    /**
+    
+
+/**
      * The default implementation of this <code>IContributionItem</code>
      * method does nothing. Subclasses may override.
      */
@@ -102,7 +108,9 @@ public class SubMenuManager extends TestBedMenuManager implements IMenuManager
     {
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * Method declared on IMenuManager.
     */
     public void fill(JMenu parent, int index)
@@ -113,7 +121,9 @@ public class SubMenuManager extends TestBedMenuManager implements IMenuManager
         }
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * Method declared on IMenuManager.
     */
     public void fill(JMenuBar parent, int index)
@@ -124,7 +134,9 @@ public class SubMenuManager extends TestBedMenuManager implements IMenuManager
         }
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * Method declared on IMenuManager.
     */
     public void fill(JToolBar parent, int index)
@@ -135,7 +147,9 @@ public class SubMenuManager extends TestBedMenuManager implements IMenuManager
         }
     }
     
-    /**
+    
+
+/**
      * <p>
      * The menu returned is wrapped within a <code>SubMenuManager</code> to
      * monitor additions and removals.  If the visibility of this menu is modified
@@ -152,7 +166,9 @@ public class SubMenuManager extends TestBedMenuManager implements IMenuManager
         return null;
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * Method declared on IMenuManager.
     *
     * Returns the item passed to us, not the wrapper.
@@ -179,7 +195,9 @@ public class SubMenuManager extends TestBedMenuManager implements IMenuManager
         return item;
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * Method declared on IContributionManager.
     *
     * Returns the item passed to us, not the wrapper.
@@ -191,7 +209,9 @@ public class SubMenuManager extends TestBedMenuManager implements IMenuManager
         return super.find(id);
     }
     
-    /**
+    
+
+/**
      * Returns the parent menu manager that this sub-manager contributes to.
      */
     protected final IMenuManager getParentMenuManager()
@@ -201,7 +221,9 @@ public class SubMenuManager extends TestBedMenuManager implements IMenuManager
         return (IMenuManager)getParent();
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * Method declared on IMenuManager.
     */
     public String getId()
@@ -215,7 +237,9 @@ public class SubMenuManager extends TestBedMenuManager implements IMenuManager
         return id;
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * Method declared on IMenuManager.
     */
     public boolean getRemoveAllWhenShown()
@@ -223,7 +247,9 @@ public class SubMenuManager extends TestBedMenuManager implements IMenuManager
         return false;
     }
     
-    /**
+    
+
+/**
      * Returns the menu wrapper for a menu manager.
      * <p>
      * The sub menus within this menu are wrapped within a <code>SubMenuManager</code> to
@@ -248,7 +274,9 @@ public class SubMenuManager extends TestBedMenuManager implements IMenuManager
         return wrapper;
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * Method declared on IMenuManager.
     */
 //   public boolean isDynamic()
@@ -256,7 +284,9 @@ public class SubMenuManager extends TestBedMenuManager implements IMenuManager
 //      return getParentMenuManager().isDynamic();
 //   }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * Method declared on IMenuManager.
     */
     public boolean isEnabled()
@@ -264,7 +294,9 @@ public class SubMenuManager extends TestBedMenuManager implements IMenuManager
         return isVisible() && (getParentMenuManager() != null) && getParentMenuManager().isEnabled();
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * Method declared on IMenuManager.
     */
 //   public boolean isGroupMarker()
@@ -272,7 +304,9 @@ public class SubMenuManager extends TestBedMenuManager implements IMenuManager
 //      return getParentMenuManager().isGroupMarker();
 //   }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * Method declared on IMenuManager.
     */
     public boolean isSeparator()
@@ -284,7 +318,9 @@ public class SubMenuManager extends TestBedMenuManager implements IMenuManager
         else return false;
     }
     
-    /**
+    
+
+/**
      * Remove all contribution items.
      */
     public void removeAll()
@@ -303,7 +339,9 @@ public class SubMenuManager extends TestBedMenuManager implements IMenuManager
         }
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * Method declared on IContributionItem.
     */
     public void setParent(IMenuManager parent)
@@ -312,7 +350,9 @@ public class SubMenuManager extends TestBedMenuManager implements IMenuManager
         // is set when it is added to a manager
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * Method declared on IMenuManager.
     */
     public void setRemoveAllWhenShown(boolean removeAll)
@@ -320,7 +360,9 @@ public class SubMenuManager extends TestBedMenuManager implements IMenuManager
         //      Assert.isTrue(false, "Should not be called on submenu manager"); //$NON-NLS-1$
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * Method declared on SubContributionManager.
     */
     public void setVisible(boolean visible)
@@ -337,7 +379,9 @@ public class SubMenuManager extends TestBedMenuManager implements IMenuManager
         }
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * Method declared on IMenuManager.
     */
     public void update()
@@ -348,7 +392,9 @@ public class SubMenuManager extends TestBedMenuManager implements IMenuManager
 //      getParentMenuManager().update();
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * Method declared on IMenuManager.
     */
     public void update(boolean force)
@@ -362,7 +408,9 @@ public class SubMenuManager extends TestBedMenuManager implements IMenuManager
         }
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * Method declared on IMenuManager.
     */
     public void updateAll(boolean force)
@@ -376,14 +424,18 @@ public class SubMenuManager extends TestBedMenuManager implements IMenuManager
         }
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * Method declared on IContributionItem.
     */
     public void update(String id)
     {
     }
     
-    /**
+    
+
+/**
      * Wraps a menu manager in a sub menu manager, and returns the new wrapper.
      */
     protected SubMenuManager wrapMenu(IMenuManager menu)
@@ -402,7 +454,9 @@ public class SubMenuManager extends TestBedMenuManager implements IMenuManager
         return retVal;
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.addinframework.ui.application.IMenuManager#createSubMenu(java.lang.String, java.lang.String)
     */
     public IMenuManager createSubMenu(String label, String id)

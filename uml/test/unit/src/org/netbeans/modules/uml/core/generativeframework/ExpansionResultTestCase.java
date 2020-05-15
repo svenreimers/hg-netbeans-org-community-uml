@@ -46,6 +46,8 @@
 package org.netbeans.modules.uml.core.generativeframework;
 
 import org.netbeans.modules.uml.core.AbstractUMLTestCase;
+
+
 /**
  * Test cases for ExpansionResult.
  */
@@ -58,7 +60,9 @@ public class ExpansionResultTestCase extends AbstractUMLTestCase
 
     private IExpansionResult res;
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see junit.framework.TestCase#setUp()
      */
     protected void setUp() throws Exception

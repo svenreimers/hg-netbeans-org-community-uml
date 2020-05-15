@@ -172,7 +172,7 @@ public class EventExecutor
 					Node pCloneNode = (Node)pNode.clone();
 					if(pCloneNode != null)
 					{
-						//TODO: Aztec:
+						
 						pCloneNode.setParent((Element)pParentNode);
 					}
 				}
@@ -184,7 +184,9 @@ public class EventExecutor
 		}   
    	}
 
-	/**
+	
+
+/**
 	 * Retrieves the dispatcher to use when sending events.
 	 *
 	 * @param pVal [out] The result.

@@ -31,7 +31,9 @@ import org.netbeans.modules.uml.ui.support.applicationmanager.IProduct;
 
 public class CreationFactoryHelper
 { //TODO
-   /**
+   
+
+/**
     * @return
     */ //TODO
 //   public static IPresentationTypesMgr getPresentationTypesMgr()
@@ -52,7 +54,9 @@ public class CreationFactoryHelper
 //       return null;
 //   }
    
-   /**
+   
+
+/**
     * Creates the appropriate NodeVerification
     *
     * @return The returned, created edge verification created through the 
@@ -76,7 +80,9 @@ public class CreationFactoryHelper
 //      return null;
 //   }
    
-   /**
+   
+
+/**
      * Creates the appropriate NodeVerification
      *
      * @return The returned, created edge verification created through the 
@@ -100,7 +106,9 @@ public class CreationFactoryHelper
 //       return null;
 //    }
     
-   /**
+   
+
+/**
     * Retrieve the type specified by the type name, e.g. Class. The type has been 
     * fully prepared and initialize
     * 
@@ -119,7 +127,9 @@ public class CreationFactoryHelper
       return null;
    }
    
-   /**
+   
+
+/**
     * Retrieve the type specified by the type name in the hive specified by 
     * hiveName
     * 
@@ -139,7 +149,9 @@ public class CreationFactoryHelper
       return null;
    }
 
-   /**
+   
+
+/**
     * @param sCompartmentID
     * @return
     */ //TODO

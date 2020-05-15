@@ -43,11 +43,13 @@
  */
 
 
+
 /*
  *
  * Created on Jul 1, 2003
  */
 package org.netbeans.modules.uml.ui.support;
+
 
 /**
  * NewDialogTabKind specifies a tab that is contains on the NewDialog.

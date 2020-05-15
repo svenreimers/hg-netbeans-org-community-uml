@@ -89,7 +89,9 @@ public class UMLUserInterface
 		super();
 	}
 	
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
 	* @see org.netbeans.modules.uml.ui.support.applicationmanager.IProxyUserInterface#getWindowHandle()
 	*/
 	public Frame getWindowHandle()
@@ -154,7 +156,9 @@ public class UMLUserInterface
 	}
 	
 	
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
 	* @see org.netbeans.modules.uml.ui.support.applicationmanager.IProxyUserInterface#dirtyStateChanged(org.netbeans.modules.uml.core.metamodel.diagrams.IDiagram, boolean)
 	*/
 	public long dirtyStateChanged(IDiagram pDiagram, boolean bNewDirtyState)
@@ -163,7 +167,9 @@ public class UMLUserInterface
 		return 0;
 	}
 	
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
 	* @see org.netbeans.modules.uml.ui.support.applicationmanager.IProxyUserInterface#quit()
 	*/
 	public void quit()
@@ -172,7 +178,9 @@ public class UMLUserInterface
 		
 	}
 	
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
 	* @see org.netbeans.modules.uml.ui.support.applicationmanager.IProxyUserInterface#setVisible(boolean)
 	*/
 	public void setVisible(boolean value)
@@ -180,7 +188,9 @@ public class UMLUserInterface
 		
 	}
 	
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
 	* @see org.netbeans.modules.uml.ui.support.applicationmanager.IProxyUserInterface#getVisible()
 	*/
 	public boolean getVisible()
@@ -188,7 +198,9 @@ public class UMLUserInterface
 		return true;
 	}
 	
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
 	* @see org.netbeans.modules.uml.ui.support.applicationmanager.IProxyUserInterface#setPropertyEditorVisible(boolean)
 	*/
 	public void setPropertyEditorVisible(boolean value)
@@ -197,7 +209,9 @@ public class UMLUserInterface
 		
 	}
 	
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
 	* @see org.netbeans.modules.uml.ui.support.applicationmanager.IProxyUserInterface#getPropertyEditorVisible()
 	*/
 	public boolean getPropertyEditorVisible()
@@ -206,7 +220,9 @@ public class UMLUserInterface
 		return false;
 	}
 	
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
 	* @see org.netbeans.modules.uml.ui.support.applicationmanager.IProxyUserInterface#openWorkspaceDialog()
 	*/
 	public void openWorkspaceDialog()
@@ -215,7 +231,9 @@ public class UMLUserInterface
 		
 	}
 	
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
 	* @see org.netbeans.modules.uml.ui.support.applicationmanager.IProxyUserInterface#newWorkspaceDialog()
 	*/
 	public void newWorkspaceDialog()
@@ -224,7 +242,9 @@ public class UMLUserInterface
 		
 	}
 	
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
 	* @see org.netbeans.modules.uml.ui.support.applicationmanager.IProxyUserInterface#newPackageDialog(org.netbeans.modules.uml.core.metamodel.core.foundation.INamespace)
 	*/
 	public IElement newPackageDialog(INamespace pDefaultNamespace)
@@ -240,7 +260,7 @@ public class UMLUserInterface
 //		diag.specifyDefaults( details );
 		
 //		diag.display( null );
-                //Jyothi:
+                
                 WizardDescriptor.Iterator iterator = new AddPackageWizardIterator();
                 WizardDescriptor wizardDescriptor = new WizardDescriptor(iterator);
                 // {0} will be replaced by WizardDescriptor.Panel.getComponent().getName()
@@ -268,7 +288,9 @@ public class UMLUserInterface
                 return null;
 	}
 	
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
 	* @see org.netbeans.modules.uml.ui.support.applicationmanager.IProxyUserInterface#newElementDialog(org.netbeans.modules.uml.core.metamodel.core.foundation.INamespace)
 	*/
 	public IElement newElementDialog(INamespace pDefaultNamespace)
@@ -281,7 +303,7 @@ public class UMLUserInterface
 		
 //		diag.specifyDefaults(details); 
                 
-                //jyothi:                
+                
                 WizardDescriptor.Iterator iterator = new AddElementWizardIterator();
                 WizardDescriptor wizardDescriptor = new WizardDescriptor(iterator);
                 // {0} will be replaced by WizardDescriptor.Panel.getComponent().getName()
@@ -309,7 +331,9 @@ public class UMLUserInterface
                 return null;                
         }
 	
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
 	* @see org.netbeans.modules.uml.ui.support.applicationmanager.IProxyUserInterface#closeWorkspace()
 	*/
 	public void closeWorkspace()
@@ -318,7 +342,9 @@ public class UMLUserInterface
 		
 	}
 	
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
 	* @see org.netbeans.modules.uml.ui.support.applicationmanager.IProxyUserInterface#closeProject(org.netbeans.modules.uml.core.metamodel.structure.IProject)
 	*/
 	public void closeProject(IProject pProject)
@@ -327,7 +353,9 @@ public class UMLUserInterface
 		
 	}
 	
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
 	* @see org.netbeans.modules.uml.ui.support.applicationmanager.IProxyUserInterface#setDisableContextMenu(boolean)
 	*/
 	public void setDisableContextMenu(boolean value)
@@ -336,7 +364,9 @@ public class UMLUserInterface
 		
 	}
 	
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
 	* @see org.netbeans.modules.uml.ui.support.applicationmanager.IProxyUserInterface#getDisableContextMenu()
 	*/
 	public boolean getDisableContextMenu()
@@ -345,7 +375,9 @@ public class UMLUserInterface
 		return false;
 	}
 	
-	/**
+	
+
+/**
 	 * Uses NetBeans to display the URL.
 	 */
 	public void displayInBrowser(URL url)

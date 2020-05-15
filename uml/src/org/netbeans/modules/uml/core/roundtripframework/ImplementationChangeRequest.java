@@ -42,11 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : ImplementationChangeRequest.java
- * Created on : Oct 28, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.roundtripframework;
 
 import org.netbeans.modules.uml.core.metamodel.core.foundation.IElement;
@@ -62,7 +59,9 @@ public class ImplementationChangeRequest
     private boolean m_ImplementEffected = false;
     private boolean m_ArtifactIsFrom = false;
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IImplementationChangeRequest#getAfterConnection()
      */
     public IElement getAfterConnection()
@@ -70,7 +69,9 @@ public class ImplementationChangeRequest
         return getAfter();
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IImplementationChangeRequest#getAfterImplementing()
      */
     public IClassifier getAfterImplementing()
@@ -81,7 +82,9 @@ public class ImplementationChangeRequest
         return null;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IImplementationChangeRequest#getAfterInterface()
      */
     public IClassifier getAfterInterface()
@@ -92,7 +95,9 @@ public class ImplementationChangeRequest
         return null;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IImplementationChangeRequest#getArtifactIsFrom()
      */
     public boolean getArtifactIsFrom()
@@ -100,7 +105,9 @@ public class ImplementationChangeRequest
         return m_ArtifactIsFrom;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IImplementationChangeRequest#getBeforeConnection()
      */
     public IElement getBeforeConnection()
@@ -108,7 +115,9 @@ public class ImplementationChangeRequest
         return getBefore();
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IImplementationChangeRequest#getBeforeImplementing()
      */
     public IClassifier getBeforeImplementing()
@@ -141,7 +150,9 @@ public class ImplementationChangeRequest
         return null;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IImplementationChangeRequest#getBeforeInterface()
      */
     public IClassifier getBeforeInterface()
@@ -174,7 +185,9 @@ public class ImplementationChangeRequest
         return null;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IImplementationChangeRequest#getImplementationEffected()
      */
     public boolean getImplementationEffected()
@@ -182,7 +195,9 @@ public class ImplementationChangeRequest
         return m_ImplementEffected;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IImplementationChangeRequest#setArtifactIsFrom(boolean)
      */
     public void setArtifactIsFrom(boolean artIsFrom)
@@ -190,7 +205,9 @@ public class ImplementationChangeRequest
         m_ArtifactIsFrom = artIsFrom;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IImplementationChangeRequest#setImplementationEffected(boolean)
      */
     public void setImplementationEffected(boolean implEffected)

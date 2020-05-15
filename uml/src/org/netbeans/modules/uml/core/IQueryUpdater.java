@@ -46,17 +46,23 @@ package org.netbeans.modules.uml.core;
 import org.dom4j.Document;
 public interface IQueryUpdater
 {
-	/**
+	
+
+/**
 	 * Initializes this Updater upon query load. The context is an IProject interface.
 	*/
 	public void initialize( Object context, Document queryCache );
 
-	/**
+	
+
+/**
 	 * Called before the cache is closed.
 	*/
 	public void updateCache( Document queryCache );
 
-	/**
+	
+
+/**
 	 * de-Initializes this Updater.
 	*/
 	public void deinitialize();

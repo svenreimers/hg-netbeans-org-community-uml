@@ -44,11 +44,8 @@
 
 
 
-/*
- * File       : AllModelAnalysisTests.java
- * Created on : Oct 21, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.metamodel.modelanalysis;
 
 import junit.framework.Test;

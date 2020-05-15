@@ -115,7 +115,9 @@ public class RoleTreeTableModel implements TreeTableModel
 	{
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see TreeTableModel#getColumnCount()
 	 */
 	public int getColumnCount()
@@ -123,7 +125,9 @@ public class RoleTreeTableModel implements TreeTableModel
 		return cNames.length;
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see TreeTableModel#getColumnName(int)
 	 */
 	public String getColumnName(int column)
@@ -131,7 +135,9 @@ public class RoleTreeTableModel implements TreeTableModel
 		return cNames[column];
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see TreeTableModel#getColumnClass(int)
 	 */
 	public Class getColumnClass(int column)
@@ -145,7 +151,9 @@ public class RoleTreeTableModel implements TreeTableModel
 		return null;
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see TreeTableModel#getValueAt(java.lang.Object, int)
 	 */
 	public Object getValueAt(Object node, int column)
@@ -176,7 +184,9 @@ public class RoleTreeTableModel implements TreeTableModel
 	}
 
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see TreeTableModel#isCellEditable(java.lang.Object, int)
 	 */
 	public boolean isCellEditable(Object node, int column)
@@ -184,7 +194,9 @@ public class RoleTreeTableModel implements TreeTableModel
 		return true;
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see TreeTableModel#setValueAt(java.lang.Object, java.lang.Object, int)
 	 */
 	public void setValueAt(Object aValue, Object node, int column)
@@ -197,7 +209,9 @@ public class RoleTreeTableModel implements TreeTableModel
 		}
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see javax.swing.tree.TreeModel#getChild(java.lang.Object, int)
 	 */
 	public Object getChild(Object parent, int index)
@@ -242,7 +256,9 @@ public class RoleTreeTableModel implements TreeTableModel
 		m_Children = newChildren;
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see javax.swing.tree.TreeModel#getChildCount(java.lang.Object)
 	 */
 	public int getChildCount(Object parent)
@@ -268,7 +284,9 @@ public class RoleTreeTableModel implements TreeTableModel
 		return retCount;
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see javax.swing.tree.TreeModel#isLeaf(java.lang.Object)
 	 */
 	public boolean isLeaf(Object node)
@@ -289,14 +307,18 @@ public class RoleTreeTableModel implements TreeTableModel
 		return false;
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see javax.swing.tree.TreeModel#valueForPathChanged(javax.swing.tree.TreePath, java.lang.Object)
 	 */
 	public void valueForPathChanged(TreePath path, Object newValue)
 	{
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see javax.swing.tree.TreeModel#getIndexOfChild(java.lang.Object, java.lang.Object)
 	 */
 	public int getIndexOfChild(Object parent, Object child)
@@ -309,14 +331,18 @@ public class RoleTreeTableModel implements TreeTableModel
 		return -1;
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see javax.swing.tree.TreeModel#addTreeModelListener(javax.swing.event.TreeModelListener)
 	 */
 	public void addTreeModelListener(TreeModelListener l)
 	{
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see javax.swing.tree.TreeModel#removeTreeModelListener(javax.swing.event.TreeModelListener)
 	 */
 	public void removeTreeModelListener(TreeModelListener l)
@@ -324,7 +350,9 @@ public class RoleTreeTableModel implements TreeTableModel
 
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see javax.swing.tree.TreeModel#getRoot()
 	 */
 	public Object getRoot()

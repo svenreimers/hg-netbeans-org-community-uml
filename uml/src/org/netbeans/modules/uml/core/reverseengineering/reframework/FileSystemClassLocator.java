@@ -59,7 +59,9 @@ public class FileSystemClassLocator implements IFileSystemClassLocator
 {
     private List<String> m_BaseDirectories = new ArrayList<String>();
 
-    /**
+    
+
+/**
      * The File System Locator will search a file system for a file that 
      * contains the file.
      *
@@ -72,7 +74,9 @@ public class FileSystemClassLocator implements IFileSystemClassLocator
             m_BaseDirectories.add(dir);
     }
 
-    /**
+    
+
+/**
      * The File System Locator will search a file system for a file that 
      * contains the class.
      *
@@ -114,7 +118,9 @@ public class FileSystemClassLocator implements IFileSystemClassLocator
         return new ETPairT<String,String>(fullName, path);
     }
 
-    /**
+    
+
+/**
      * Retrieve the full path to the specified file name.
      * 
      * @param filename [in] The short form of the file name.
@@ -127,7 +133,9 @@ public class FileSystemClassLocator implements IFileSystemClassLocator
         return searchForFile(filename);
     }
     
-    /**
+    
+
+/**
      * Searches for the class in the file system.  The specified name
      * needs to be the fully scoped name of the class.
      * 
@@ -147,7 +155,9 @@ public class FileSystemClassLocator implements IFileSystemClassLocator
         return ret;
     }
     
-    /**
+    
+
+/**
      * Search the base directories to see if a file with the same name can be 
      * located.
      *
@@ -178,7 +188,9 @@ public class FileSystemClassLocator implements IFileSystemClassLocator
         return null;
     }
     
-    /**
+    
+
+/**
      * Searches for the class with in the specified package.
      * 
      * @param package [in] The name of the package.

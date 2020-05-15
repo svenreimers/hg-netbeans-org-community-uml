@@ -43,6 +43,7 @@
  */
 
 
+
 /*
  *
  * Created on Jun 10, 2003
@@ -72,6 +73,7 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 import org.netbeans.modules.uml.core.support.umlutils.IDataFormatter;
 import org.netbeans.modules.uml.core.workspacemanagement.IWSProject;
 import org.netbeans.modules.uml.core.workspacemanagement.IWorkspace;
+
 
 /**
  * The Swing implementation of the project tree model.  The 
@@ -103,7 +105,9 @@ public class ProjectTreeSwingModel extends ProductProjectTreeModel
 	{
 	}
    
-	/**
+	
+
+/**
 	 * Retrieves the collection of TreeModelListeners that are reqistered 
 	 * with the model.
 	 * 
@@ -119,7 +123,9 @@ public class ProjectTreeSwingModel extends ProductProjectTreeModel
 	// ISwingProjectTreeModel Implmentation
 	//**************************************************
    
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.swing.projecttree.ISwingProjectTreeModel#getTreeItem(javax.swing.tree.TreePath)
 	 */
 	public ITreeItem getTreeItem(TreePath path)
@@ -137,7 +143,9 @@ public class ProjectTreeSwingModel extends ProductProjectTreeModel
 		return retVal;
 	}
    
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeModel#clear()
     */
    public void clear()
@@ -154,7 +162,9 @@ public class ProjectTreeSwingModel extends ProductProjectTreeModel
    // The TreeModel methods.
    //**************************************************
    
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see javax.swing.tree.TreeModel#getRoot()
     */
    public Object getRoot()
@@ -162,7 +172,9 @@ public class ProjectTreeSwingModel extends ProductProjectTreeModel
       return super.getRootItem();
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see javax.swing.tree.TreeModel#getChild(java.lang.Object, int)
     */
    public Object getChild(Object parent, int index)
@@ -170,7 +182,9 @@ public class ProjectTreeSwingModel extends ProductProjectTreeModel
       return super.getChildItem(parent, index);
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see javax.swing.tree.TreeModel#getChildCount(java.lang.Object)
     */
    public int getChildCount(Object parent)
@@ -178,7 +192,9 @@ public class ProjectTreeSwingModel extends ProductProjectTreeModel
 		return super.getChildCount(parent);
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see javax.swing.tree.TreeModel#isLeaf(java.lang.Object)
     */
    public boolean isLeaf(Object node)
@@ -186,7 +202,9 @@ public class ProjectTreeSwingModel extends ProductProjectTreeModel
 		return super.isLeaf(node);
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see javax.swing.tree.TreeModel#valueForPathChanged(javax.swing.tree.TreePath, java.lang.Object)
     */
    public void valueForPathChanged(TreePath path, Object newValue)
@@ -195,7 +213,9 @@ public class ProjectTreeSwingModel extends ProductProjectTreeModel
 
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see javax.swing.tree.TreeModel#getIndexOfChild(java.lang.Object, java.lang.Object)
     */
    public int getIndexOfChild(Object parent, Object child)
@@ -212,7 +232,9 @@ public class ProjectTreeSwingModel extends ProductProjectTreeModel
       return retVal;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see javax.swing.tree.TreeModel#addTreeModelListener(javax.swing.event.TreeModelListener)
     */
    public void addTreeModelListener(TreeModelListener l)
@@ -221,7 +243,9 @@ public class ProjectTreeSwingModel extends ProductProjectTreeModel
       
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see javax.swing.tree.TreeModel#removeTreeModelListener(javax.swing.event.TreeModelListener)
     */
    public void removeTreeModelListener(TreeModelListener l)
@@ -229,7 +253,9 @@ public class ProjectTreeSwingModel extends ProductProjectTreeModel
 		m_ModelListeners.remove(l);    
    }
    
-   /**
+   
+
+/**
     * Sends the treeStructureChanged event to all registered TreeModelListeners.
     * 
     * @parms items The tree items that has been changed. 
@@ -250,7 +276,9 @@ public class ProjectTreeSwingModel extends ProductProjectTreeModel
       }
    }
    
-   /**
+   
+
+/**
     * Notifies all listeners that a child was removed from its parent.  
     * The mannor that the controls are notified is specific to the platform.
     * <br>
@@ -274,7 +302,9 @@ public class ProjectTreeSwingModel extends ProductProjectTreeModel
       }
    }
    
-   /**
+   
+
+/**
     * Notifies all listeners that a child was added to a parent by sending
     * the TreeModelListener event treeNodesInserted.
     * 
@@ -283,7 +313,9 @@ public class ProjectTreeSwingModel extends ProductProjectTreeModel
     * @param children The children nodes that was added.
     */
    public void notifyOfAddedChildren(ITreeItem   parent, 
-                                     int[]       childIndices/*, 
+                                     int[]       childIndices
+
+/*, 
                                      ITreeItem[] children*/)
    {
       if(/*(children != null) && (*/(childIndices != null)) 
@@ -300,7 +332,9 @@ public class ProjectTreeSwingModel extends ProductProjectTreeModel
       }
    }
    
-   /**
+   
+
+/**
     * Notifies all listeners that the content of some nodes has changed by 
     * sending the TreeModelListener event treeNodesChanged.
     * 
@@ -441,7 +475,9 @@ public class ProjectTreeSwingModel extends ProductProjectTreeModel
       
       return retVal;
    }
-   /**
+   
+
+/**
     * Builds the parents of node up to and including the root node,
     * where the original node is the last element in the returned array.
     * The length of the returned array gives the node's depth in the
@@ -454,7 +490,9 @@ public class ProjectTreeSwingModel extends ProductProjectTreeModel
       return getPathToRoot(node, 0);   
    }
    
-   /**
+   
+
+/**
     * Builds the parents of node up to and including the root node,
     * where the original node is the last element in the returned array.
     * The length of the returned array gives the node's depth in the
@@ -505,7 +543,9 @@ public class ProjectTreeSwingModel extends ProductProjectTreeModel
    // Event Helper Methods
    //**************************************************
 
-	/**
+	
+
+/**
 	 * Notifies all listeners that have registered interest for
 	 * notification on this event type.  The event instance 
 	 * is lazily created using the parameters passed into 
@@ -555,7 +595,9 @@ public class ProjectTreeSwingModel extends ProductProjectTreeModel
       });
 	}
 	
-	/**
+	
+
+/**
 	 * Notifies all listeners that have registered interest for
 	 * notification on this event type.  The event instance 
 	 * is lazily created using the parameters passed into 
@@ -599,7 +641,9 @@ public class ProjectTreeSwingModel extends ProductProjectTreeModel
 		}
 	}
 	
-	/**
+	
+
+/**
 	 * Notifies all listeners that have registered interest for
 	 * notification on this event type.  The event instance 
 	 * is lazily created using the parameters passed into 
@@ -639,7 +683,9 @@ public class ProjectTreeSwingModel extends ProductProjectTreeModel
 		}	
 	}
     
-	/**
+	
+
+/**
 	 * Notifies all listeners that have registered interest for
 	 * notification on this event type.  The event instance 
 	 * is lazily created using the parameters passed into 
@@ -681,7 +727,9 @@ public class ProjectTreeSwingModel extends ProductProjectTreeModel
 		}	
 	}
 	
-	/**
+	
+
+/**
 	 * Notifies all listeners that have registered interest for
 	 * notification on this event type.  The event instance 
 	 * is lazily created using the parameters passed into 
@@ -724,7 +772,7 @@ public class ProjectTreeSwingModel extends ProductProjectTreeModel
 
 	public void setProjectTree(JTree tree) {
             // Initialize based on perferences.
-            //kris richards - ShowWorkspaceNode pref expunged. set to false.
+            
             tree.setRootVisible(false ); //$NON-NLS-1$
             tree.setShowsRootHandles(true); //$NON-NLS-1$
         }
@@ -906,7 +954,9 @@ public class ProjectTreeSwingModel extends ProductProjectTreeModel
 
    public class TempTreePath extends TreePath
    {
-      /**
+      
+
+/**
        * Tests two TreePaths for equality by checking each element of the
        * paths for equality. Two paths are considered equal if they are of
        * the same length, and contain
@@ -940,7 +990,9 @@ public class ProjectTreeSwingModel extends ProductProjectTreeModel
          return false;
       }
 
-      /**
+      
+
+/**
        * @param path
        */
       public TempTreePath(Object[] path)

@@ -19,7 +19,8 @@ public class NoAvailableFundsException extends java.lang.Exception {
     public NoAvailableFundsException() {
     }
 
-     /**
+     
+/**
      * Constructs an instance of <code>NoAvailableFundsException</code> with the specified detail message.
      * @param msg the detail message.
      */

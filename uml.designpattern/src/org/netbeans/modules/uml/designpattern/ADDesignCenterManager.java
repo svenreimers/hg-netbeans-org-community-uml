@@ -42,6 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
+
+
 /*
  * Created on Mar 3, 2004
  *
@@ -60,7 +62,8 @@ import org.netbeans.modules.uml.core.coreapplication.IDesignCenterSupport;
 public class ADDesignCenterManager extends DesignCenterManager implements IADDesignCenterManager
 {
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.products.ad.designcenterdefaultengine.IADDesignCenterManager#getRequirementsManager()
 	 */
 	public Object getRequirementsManager() {
@@ -68,7 +71,9 @@ public class ADDesignCenterManager extends DesignCenterManager implements IADDes
 		return null;
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.products.ad.designcenterdefaultengine.IADDesignCenterManager#getDesignPatternCatalog()
 	 */
 	public IDesignPatternCatalog getDesignPatternCatalog()
@@ -82,7 +87,9 @@ public class ADDesignCenterManager extends DesignCenterManager implements IADDes
 		return pCatalog;
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.products.ad.designcenterdefaultengine.IADDesignCenterManager#getMacroCatalog()
 	 */
 	public Object getMacroCatalog()

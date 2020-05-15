@@ -42,6 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
+
+
 /*
  * Created on Sep 19, 2003
  *
@@ -72,7 +74,9 @@ public class ProtocolConformance extends DirectedRelationship
 		setElement(machine,"generalMachine");
 	}
 	
-	/**
+	
+
+/**
 	 * property SpecificMachine
 	*/
 	public IStateMachine getSpecificMachine()
@@ -80,7 +84,9 @@ public class ProtocolConformance extends DirectedRelationship
 		return OwnerRetriever.getOwnerByType(this, IStateMachine.class);
 	}
 
-	/**
+	
+
+/**
 	 * property SpecificMachine
 	*/
 	public void setSpecificMachine( IStateMachine machine )

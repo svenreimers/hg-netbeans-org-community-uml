@@ -68,7 +68,9 @@ public class ElementListWidget extends ListWidget implements DiagramNodeWriter, 
         setForeground((Color)null);
     }
     
-    /**
+    
+
+/**
      * Removes the widgets that represent the specified model element.
      * 
      * @param element the model element to remove.
@@ -96,7 +98,9 @@ public class ElementListWidget extends ListWidget implements DiagramNodeWriter, 
         }
     }
     
-    /**
+    
+
+/**
      * Retreives the number of element widgets that are contained by the list 
      * widget.
      * 

@@ -57,7 +57,8 @@ public class CircleWidget extends CustomizableWidget
 {
     private int radius;
 
-    /**
+    
+/**
      *  Constructs a new OvalWidget to represent a circle whose radius is r
      * @param scene
      * @param r the radius of the circle to be drawn.

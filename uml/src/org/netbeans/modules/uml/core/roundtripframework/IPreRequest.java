@@ -42,11 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : IPreRequest.java
- * Created on : Nov 6, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.roundtripframework;
 
 import org.netbeans.modules.uml.core.eventframework.IEventPayload;
@@ -66,7 +63,9 @@ public interface IPreRequest
     
     public void populateChangeRequest(IChangeRequest req);
     
-    /**
+    
+
+/**
      *
      * Called right after a ChangeRequest has been
      * fully intialized, but before it has been processed.

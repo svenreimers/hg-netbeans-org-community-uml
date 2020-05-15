@@ -53,7 +53,9 @@ public class SendObjectAction
     implements ISendObjectAction
 {
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.basic.basicactions.ISendObjectAction#getRequest()
      */
     public IValueSpecification getRequest()
@@ -62,7 +64,9 @@ public class SendObjectAction
         return null;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.basic.basicactions.ISendObjectAction#setRequest(org.netbeans.modules.uml.core.metamodel.core.foundation.IValueSpecification)
      */
     public void setRequest(IValueSpecification pValSpec)

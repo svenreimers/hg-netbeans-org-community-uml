@@ -56,7 +56,9 @@ import org.dom4j.Node;
 public class BroadCastSignalAction extends PrimitiveAction implements IBroadCastSignalAction
 {
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.basic.basicactions.IBroadCastSignalAction#getSignal()
      */
     public ISignal getSignal()
@@ -65,7 +67,9 @@ public class BroadCastSignalAction extends PrimitiveAction implements IBroadCast
         return col.retrieveSingleElementWithAttrID(this, "signal", ISignal.class);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.basic.basicactions.IBroadCastSignalAction#setSignal(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ISignal)
      */
     public void setSignal(ISignal signal)

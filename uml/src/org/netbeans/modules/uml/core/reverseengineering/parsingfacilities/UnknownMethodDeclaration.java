@@ -70,7 +70,9 @@ public class UnknownMethodDeclaration extends MethodDeclaration
     }
     
     
-    /**
+    
+
+/**
      * Generates the XMI fragment that represent the method call.
      *
      * @param pParentNode [in] The parent node of the result.
@@ -102,7 +104,9 @@ public class UnknownMethodDeclaration extends MethodDeclaration
         return callNode;
     }
 
-    /**
+    
+
+/**
      * Adds the XML to represent the calls argumnts.
      *
      * @param pParentNode [in] The parent node.

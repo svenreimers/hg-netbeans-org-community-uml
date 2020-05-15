@@ -49,6 +49,8 @@ import org.netbeans.modules.uml.core.AbstractUMLTestCase;
 import org.netbeans.modules.uml.core.metamodel.common.commonstatemachines.IProtocolStateMachine;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.FactoryRetriever;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
+
+
 /**
  * Test cases for Interface.
  */
@@ -61,7 +63,9 @@ public class InterfaceTestCase extends AbstractUMLTestCase
 
     private IInterface intf;
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see junit.framework.TestCase#setUp()
      */
     protected void setUp() throws Exception
@@ -73,7 +77,9 @@ public class InterfaceTestCase extends AbstractUMLTestCase
         project.addOwnedElement(intf);
     }
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see junit.framework.TestCase#tearDown()
      */
     protected void tearDown() throws Exception

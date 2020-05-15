@@ -59,7 +59,9 @@ public interface IEditControlEventDispatcher extends IEventDispatcher
 	*/
 	public void revokeEditCtrlSink( IEditControlEventSink handler );
 
-	/**
+	
+
+/**
 	 * Creates a new event payload for edit control events
 	*/
 	public IEditEventPayload createEventPayload();
@@ -69,42 +71,58 @@ public interface IEditControlEventDispatcher extends IEventDispatcher
 	*/
 	public boolean firePreInvalidData( String ErrorData, IEditEventPayload payload );
 
-	/**
+	
+
+/**
 	 * 
 	*/
 	public void fireInvalidData( String ErrorData, IEditEventPayload payload );
 
-	/**
+	
+
+/**
 	 * 
 	*/
 	public boolean firePreOverstrike( boolean bOverstrike, IEditEventPayload payload );
 
-	/**
+	
+
+/**
 	 * 
 	*/
 	public void fireOverstrike( boolean bOverstrike, IEditEventPayload payload );
 
-	/**
+	
+
+/**
 	 * 
 	*/
 	public boolean firePreActivate( IEditControl pControl, IEditEventPayload payload );
 
-	/**
+	
+
+/**
 	 * 
 	*/
 	public void fireActivate( IEditControl pControl, IEditEventPayload payload );
 
-	/**
+	
+
+/**
 	 * 
 	*/
 	public void fireDeactivate( IEditControl pControl, IEditEventPayload payload );
 
-	/**
+	
+
+/**
 	 * 
 	*/
 	public boolean firePreCommit( IEditEventPayload payload );
 
-	/**
+	
+
+/**
 	 * 
 	*/
 	public void firePostCommit( IEditEventPayload payload );

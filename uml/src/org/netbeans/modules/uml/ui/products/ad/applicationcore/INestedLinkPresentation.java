@@ -30,7 +30,8 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.IElement;
 public interface INestedLinkPresentation //TODO extends IEdgePresentation 
 {
 
-	/*
+	
+/*
 	 * Determines if this end is the owning namespace in this link (the side with the +)
 	 */
   public boolean isParentNamespace(final IElement pEndElement);

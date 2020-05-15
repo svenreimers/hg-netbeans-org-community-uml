@@ -43,11 +43,8 @@
  */
 
 
-/*
- * File       : TypeCastExpression.java
- * Created on : Dec 11, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.expression;
 
 import org.dom4j.Node;
@@ -229,7 +226,9 @@ public class TypeCastExpression extends ExpressionStateHandler
       return retVal;
    }
    
-   /**
+   
+
+/**
     * Retrieve the start position of the expression.  The start position
     * is the file position before the first character of the expression.
     *
@@ -249,7 +248,9 @@ public class TypeCastExpression extends ExpressionStateHandler
       return retVal;
    }
    
-   /**
+   
+
+/**
     * Retrieve the end position of the expression.  The end position
     * is the file position after the last character of the expression.
     *
@@ -270,7 +271,9 @@ public class TypeCastExpression extends ExpressionStateHandler
       return retVal;
    }
    
-   /**
+   
+
+/**
     * Retrieve the start position of the expression.  The start position
     * is the file position before the first character of the expression.
     *
@@ -290,7 +293,9 @@ public class TypeCastExpression extends ExpressionStateHandler
       return retVal;
    }
    
-   /**
+   
+
+/**
     * Clears up the state handlers data.
     */
    public void clear()

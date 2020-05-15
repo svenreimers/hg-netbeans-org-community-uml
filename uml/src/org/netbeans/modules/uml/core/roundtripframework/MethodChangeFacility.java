@@ -42,11 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : MethodChangeFacility.java
- * Created on : Nov 20, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.roundtripframework;
 
 import org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity;
@@ -62,7 +59,8 @@ public class MethodChangeFacility
     implements IMethodChangeFacility
 {
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IMethodChangeFacility#added(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation)
      */
     public void added(IOperation pOp)
@@ -71,7 +69,9 @@ public class MethodChangeFacility
 
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IMethodChangeFacility#addOperation(java.lang.String, java.lang.String)
      */
     public IOperation addOperation(String sName, 
@@ -98,7 +98,9 @@ public class MethodChangeFacility
         return op;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IMethodChangeFacility#addOperationToClassifier(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier)
      */
     public void addOperationToClassifier(
@@ -114,7 +116,9 @@ public class MethodChangeFacility
 
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IMethodChangeFacility#changeName(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation, java.lang.String)
      */
     public void changeName(IOperation pOp, 
@@ -138,7 +142,9 @@ public class MethodChangeFacility
         restorer.restoreOriginalMode();
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IMethodChangeFacility#changeParameterMultiplicity(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IParameter, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity, boolean, boolean)
      */
     public void changeParameterMultiplicity(
@@ -159,7 +165,9 @@ public class MethodChangeFacility
 
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IMethodChangeFacility#changeReturnTypeMultiplicity(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity, boolean, boolean)
      */
     public void changeReturnTypeMultiplicity(
@@ -178,7 +186,9 @@ public class MethodChangeFacility
         restorer.restoreOriginalMode();
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IMethodChangeFacility#changeType(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation, java.lang.String)
      */
     public void changeType(IOperation pOp, 
@@ -197,7 +207,9 @@ public class MethodChangeFacility
         restorer.restoreOriginalMode();
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IMethodChangeFacility#delete(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation)
      */
     public void delete(IOperation pOp)
@@ -216,7 +228,9 @@ public class MethodChangeFacility
         restorer.restoreOriginalMode();
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IMethodChangeFacility#deleted(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier)
      */
     public void deleted(IOperation pOp, IClassifier pClassifier)
@@ -224,7 +238,9 @@ public class MethodChangeFacility
         // Stubbed in C++ code.
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IMethodChangeFacility#nameChanged(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation)
      */
     public void nameChanged(IOperation pOp)
@@ -232,7 +248,9 @@ public class MethodChangeFacility
         // Stubbed in C++ code.
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IMethodChangeFacility#typeChanged(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation)
      */
     public void typeChanged(IOperation pOp)

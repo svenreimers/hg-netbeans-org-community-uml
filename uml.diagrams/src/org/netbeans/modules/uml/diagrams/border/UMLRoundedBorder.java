@@ -68,7 +68,9 @@ public class UMLRoundedBorder implements Border {
     private Paint drawColor;
     private Stroke stroke;
 
-    /**
+    
+
+/**
      * Creates a rounded rectangle border with specified arc width and height using the specified color
      * @param arcWidth the width of the arc of this rounded rectangle border.
      * @param arcHeight the height of the arc of this rounded rectangle border.
@@ -78,7 +80,9 @@ public class UMLRoundedBorder implements Border {
         this(arcWidth, arcHeight, 0, 0, null, drawColor, null);
     }
     
-    /**
+    
+
+/**
      * Creates a rounded rectangle border with specified arc width and height using the specified color and stroke
      * @param arcWidth the width of the arc of this rounded rectangle border.
      * @param arcHeight the height of the arc of this rounded rectangle border.
@@ -89,7 +93,9 @@ public class UMLRoundedBorder implements Border {
         this(arcWidth, arcHeight, 0, 0, null, drawColor, stroke);
     }
     
-    /**
+    
+
+/**
      *  Creates a rounded rectangle border with specified arc width and height using the specified fill color, draw color and stroke
      * @param arcWidth the width of the arc of this rounded rectangle border.
      * @param arcHeight the height of the arc of this rounded rectangle border.
@@ -101,7 +107,9 @@ public class UMLRoundedBorder implements Border {
         this(arcWidth, arcHeight, 0, 0, fillColor, drawColor, stroke);
     }
     
-    /**
+    
+
+/**
      * Creates a rounded rectangle border with specified attributes and the current stroke
      * @param arcWidth the width of the arc of this rounded rectangle border.
      * @param arcHeight the height of the arc of this rounded rectangle border.
@@ -114,7 +122,9 @@ public class UMLRoundedBorder implements Border {
         this(arcWidth, arcHeight, insetWidth, insetHeight, fillColor, drawColor, null);
     }
     
-    /**
+    
+
+/**
      * Creates a rounded rectangle border with specified attributes
      * @param arcWidth the width of the arc of this rounded rectangle border.
      * @param arcHeight the height of the arc of this rounded rectangle border.

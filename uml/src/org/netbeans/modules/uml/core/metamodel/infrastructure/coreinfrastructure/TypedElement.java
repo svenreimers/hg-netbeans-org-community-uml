@@ -364,7 +364,9 @@ public class TypedElement extends Element implements ITypedElement
 					   mult);
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityListener#onPreLowerModified(org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityRange, java.lang.String)
 	 */
 	public boolean onPreLowerModified(IMultiplicity mult, IMultiplicityRange range, String proposedValue) 
@@ -389,7 +391,9 @@ public class TypedElement extends Element implements ITypedElement
 		return proceed;
 	}
         
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityListener#onLowerModified(org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityRange)
 	 */
 	public void onLowerModified(IMultiplicity mult, IMultiplicityRange range) 
@@ -411,7 +415,9 @@ public class TypedElement extends Element implements ITypedElement
 	}
         
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityListener#onPreUpperModified(org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityRange, java.lang.String)
 	 */
 	public boolean onPreUpperModified(IMultiplicity mult, IMultiplicityRange range, String proposedValue) 
@@ -434,7 +440,9 @@ public class TypedElement extends Element implements ITypedElement
 		return proceed;
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityListener#onUpperModified(org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityRange)
 	 */
 	public void onUpperModified(IMultiplicity mult, IMultiplicityRange range) 
@@ -456,7 +464,9 @@ public class TypedElement extends Element implements ITypedElement
 		}
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityListener#onPreRangeAdded(org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityRange)
 	 */
 	public boolean onPreRangeAdded(IMultiplicity mult, IMultiplicityRange range) 
@@ -480,7 +490,9 @@ public class TypedElement extends Element implements ITypedElement
 		return proceed;
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityListener#onRangeAdded(org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityRange)
 	 */
 	public void onRangeAdded(IMultiplicity mult, IMultiplicityRange range)
@@ -502,7 +514,9 @@ public class TypedElement extends Element implements ITypedElement
 		}
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityListener#onPreRangeRemoved(org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityRange)
 	 */
 	public boolean onPreRangeRemoved(IMultiplicity mult, IMultiplicityRange range) 
@@ -526,7 +540,9 @@ public class TypedElement extends Element implements ITypedElement
 		return proceed;
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityListener#onRangeRemoved(org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityRange)
 	 */
 	public void onRangeRemoved(IMultiplicity mult, IMultiplicityRange range) 
@@ -548,7 +564,9 @@ public class TypedElement extends Element implements ITypedElement
 		}
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityListener#onPreOrderModified(org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity, boolean)
 	 */
 	public boolean onPreOrderModified(IMultiplicity mult, boolean proposedValue) 
@@ -571,7 +589,9 @@ public class TypedElement extends Element implements ITypedElement
 		}	
 		return proceed;
 	}	
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityListener#onOrderModified(org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity)
 	 */
 	public void onOrderModified(IMultiplicity mult)

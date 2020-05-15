@@ -50,6 +50,7 @@ import org.netbeans.jellytools.JellyTestCase;
 import org.netbeans.modules.performance.utilities.CommonUtilities;
 import org.netbeans.modules.project.ui.test.ProjectSupport;
 
+
 /**
  * Test suite that actually does not perform any test but sets up user directory
  * for UI responsiveness tests

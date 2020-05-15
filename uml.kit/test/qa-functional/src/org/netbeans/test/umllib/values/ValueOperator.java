@@ -43,6 +43,8 @@
  */
 
 
+
+
 /*
  * ValueOperator.java
  *
@@ -113,6 +115,8 @@ public abstract class ValueOperator {
     }
     
     
+
+
 /*
     protected void changeText(String newString, String oldString, JTextFieldOperator textFieldOperator){
         

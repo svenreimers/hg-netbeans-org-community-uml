@@ -62,7 +62,9 @@ public class LiteralInteger extends LiteralSpecification implements ILiteralInte
 		super();
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.ILiteralInteger#setValue(int)
 	 */
 	public void setValue(int value)
@@ -70,7 +72,9 @@ public class LiteralInteger extends LiteralSpecification implements ILiteralInte
 		setAttributeValue("value", Integer.toString(value));
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.ILiteralInteger#getValue()
 	 */
 	public int getValue()
@@ -78,7 +82,9 @@ public class LiteralInteger extends LiteralSpecification implements ILiteralInte
 		return Integer.valueOf(getAttributeValue("value")).intValue();
 	}
 
-	/**
+	
+
+/**
 	 * Establishes the appropriate XML elements for this UML type.
 	 *
 	 * [in] The document where this element will reside

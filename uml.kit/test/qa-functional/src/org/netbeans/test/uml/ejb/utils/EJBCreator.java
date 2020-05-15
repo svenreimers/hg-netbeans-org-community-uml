@@ -242,7 +242,9 @@ public class EJBCreator {
     //***************************************************************
     //WORKAROUND FOR 85870
     //***************************************************************
-    /**
+    
+
+/**
      * class works until MainWindow is showing and wait for different times of dialogs
      */
     static private class TerminationDialogHandler implements Runnable
@@ -301,7 +303,9 @@ public class EJBCreator {
         }
      }
    
-    /**
+    
+
+/**
      * choose JDialog with appropriate exaqct title and appropriate exact button within
      */
     static private class ChooseDialogByTitleAndButtonAndText implements ComponentChooser

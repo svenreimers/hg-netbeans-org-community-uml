@@ -55,6 +55,8 @@ import org.netbeans.modules.uml.core.support.umlsupport.StringUtilities;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 
+
+
 /**
  * Stereotype is the implementation of the UML Stereotype meta type.
  * A stereotype defines how an existing metaclass (or stereotype) may be
@@ -65,7 +67,9 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 public class Stereotype extends Class implements IStereotype
 {
 
-	/**
+	
+
+/**
 	 *
 	 * Retrieves the names of the Meta types that this Stereotype can be applied to.
 	 */
@@ -80,7 +84,9 @@ public class Stereotype extends Class implements IStereotype
 		return strs;				
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Adds a meta type that this Stereotype will now be able to be applied to.
 	 *
@@ -102,7 +108,9 @@ public class Stereotype extends Class implements IStereotype
 		UMLXMLManip.setAttributeValue(this,"appliesTo",curValue);
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Removes the passed-in meta type from this Stereotype's list of applicable
 	 * types. Essentially, this now prevents this Stereotype from being applied 
@@ -123,7 +131,9 @@ public class Stereotype extends Class implements IStereotype
 		}			
 	}
 	
-	/**
+	
+
+/**
 	 * Establishes the appropriate XML elements for this UML type.
 	 *
 	 * [in] The document where this element will reside

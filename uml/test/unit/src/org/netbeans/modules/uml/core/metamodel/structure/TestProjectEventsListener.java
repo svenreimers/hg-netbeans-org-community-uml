@@ -56,7 +56,9 @@ public class TestProjectEventsListener extends ProjectEventsAdapter
         super();
     }
     
-    /**
+    
+
+/**
      * Fired whenever the passed in Project's Mode has been changed.
      */
     public void onModeModified( IProject pProject, IResultCell cell )
@@ -64,7 +66,9 @@ public class TestProjectEventsListener extends ProjectEventsAdapter
         ProjectTestCase.callingModeModified = true;
     }
     
-    /**
+    
+
+/**
      * Fired whenever the passed in Project's Mode property is about to change.
      */
     public void onPreModeModified( IProject pProject, String newValue, IResultCell cell )

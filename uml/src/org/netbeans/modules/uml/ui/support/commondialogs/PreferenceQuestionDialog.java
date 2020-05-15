@@ -53,7 +53,9 @@ import java.awt.Frame;
 public class PreferenceQuestionDialog implements IPreferenceQuestionDialog
 {
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.ui.support.commondialogs.IPreferenceQuestionDialog#getRunSilent()
      */
     public boolean getRunSilent()
@@ -62,7 +64,9 @@ public class PreferenceQuestionDialog implements IPreferenceQuestionDialog
         return false;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.ui.support.commondialogs.IPreferenceQuestionDialog#setRunSilent(boolean)
      */
     public void setRunSilent(boolean value)
@@ -71,7 +75,9 @@ public class PreferenceQuestionDialog implements IPreferenceQuestionDialog
 
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.ui.support.commondialogs.IPreferenceQuestionDialog#displayFromResource(int, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int, int, int, int, int, int, int)
      */
     public int displayFromResource(String sPreferenceKey,
@@ -91,7 +97,9 @@ public class PreferenceQuestionDialog implements IPreferenceQuestionDialog
         return 0;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.ui.support.commondialogs.IPreferenceQuestionDialog#displayFromStrings(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int, int, java.lang.String, int, int, int)
      */
     public int displayFromStrings(String sPreferenceKey, 
@@ -111,7 +119,9 @@ public class PreferenceQuestionDialog implements IPreferenceQuestionDialog
         return 0;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.ui.support.commondialogs.IPreferenceQuestionDialog#setDefaultButton(int)
      */
     public void setDefaultButton(int value)
@@ -120,7 +130,9 @@ public class PreferenceQuestionDialog implements IPreferenceQuestionDialog
 
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.ui.support.commondialogs.IPreferenceQuestionDialog#displayDeleteWithAlso(java.lang.String, java.lang.String, java.lang.String, boolean, java.lang.String, int, boolean, boolean)
      */
     public ETTripleT<Integer, Boolean, Boolean> displayDeleteWithAlso(String sKey, String sPath, String sName, boolean bDefaultAffectDataModel, String sAlsoQuestion)
@@ -129,7 +141,9 @@ public class PreferenceQuestionDialog implements IPreferenceQuestionDialog
         return null;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.ui.support.commondialogs.IPreferenceControlledDialog#setAutoUpdatePreference(boolean)
      */
     public void setAutoUpdatePreference(boolean value)
@@ -138,7 +152,9 @@ public class PreferenceQuestionDialog implements IPreferenceQuestionDialog
 
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.ui.support.commondialogs.IPreferenceControlledDialog#getAutoUpdatePreference()
      */
     public boolean getAutoUpdatePreference()
@@ -147,7 +163,9 @@ public class PreferenceQuestionDialog implements IPreferenceQuestionDialog
         return false;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.ui.support.commondialogs.IPreferenceControlledDialog#setPrefKey(java.lang.String)
      */
     public void setPrefKey(String value)
@@ -156,7 +174,9 @@ public class PreferenceQuestionDialog implements IPreferenceQuestionDialog
 
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.ui.support.commondialogs.IPreferenceControlledDialog#getPrefKey()
      */
     public String getPrefKey()
@@ -165,7 +185,9 @@ public class PreferenceQuestionDialog implements IPreferenceQuestionDialog
         return null;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.ui.support.commondialogs.IPreferenceControlledDialog#setPrefPath(java.lang.String)
      */
     public void setPrefPath(String value)
@@ -174,7 +196,9 @@ public class PreferenceQuestionDialog implements IPreferenceQuestionDialog
 
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.ui.support.commondialogs.IPreferenceControlledDialog#getPrefPath()
      */
     public String getPrefPath()
@@ -183,7 +207,9 @@ public class PreferenceQuestionDialog implements IPreferenceQuestionDialog
         return null;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.ui.support.commondialogs.IPreferenceControlledDialog#setPrefName(java.lang.String)
      */
     public void setPrefName(String value)
@@ -192,7 +218,9 @@ public class PreferenceQuestionDialog implements IPreferenceQuestionDialog
 
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.ui.support.commondialogs.IPreferenceControlledDialog#getPrefName()
      */
     public String getPrefName()
@@ -201,7 +229,9 @@ public class PreferenceQuestionDialog implements IPreferenceQuestionDialog
         return null;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.ui.support.commondialogs.IPreferenceControlledDialog#setPreferenceValue(java.lang.String)
      */
     public void setPreferenceValue(String value)
@@ -210,7 +240,9 @@ public class PreferenceQuestionDialog implements IPreferenceQuestionDialog
 
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.ui.support.commondialogs.IPreferenceControlledDialog#getPreferenceValue()
      */
     public String getPreferenceValue()
@@ -219,7 +251,9 @@ public class PreferenceQuestionDialog implements IPreferenceQuestionDialog
         return null;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.ui.support.commondialogs.IPreferenceControlledDialog#preferenceInformation(java.lang.String, java.lang.String, java.lang.String, boolean)
      */
     public long preferenceInformation(String sPreferenceKey,
@@ -230,7 +264,9 @@ public class PreferenceQuestionDialog implements IPreferenceQuestionDialog
         return 0;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.ui.support.commondialogs.ISilentDialog#isRunSilent()
      */
     public boolean isRunSilent()
@@ -239,7 +275,9 @@ public class PreferenceQuestionDialog implements IPreferenceQuestionDialog
         return false;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.ui.support.commondialogs.ISilentDialog#setIsRunSilent(boolean)
      */
     public void setIsRunSilent(boolean value)

@@ -43,11 +43,8 @@
  */
 
 
-/*
- * File       : AssignmentExpression.java
- * Created on : Dec 8, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.expression;
 
 import org.dom4j.Node;

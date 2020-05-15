@@ -43,6 +43,8 @@
  */
 
 
+
+
 /*
  * Created on Jun 6, 2003
  *
@@ -72,7 +74,8 @@ public class PropertyEditorCollisionHandler extends NameCollisionHandler impleme
 	private IPropertyEditor m_rawPropertyEditorControl = null;
 	private boolean handled = false;
 	private IPropertyElement pPropertyElement;
-	/**
+	
+/**
 	 * 
 	 */
 	public PropertyEditorCollisionHandler()
@@ -81,7 +84,9 @@ public class PropertyEditorCollisionHandler extends NameCollisionHandler impleme
 	}
 	
 	
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.swing.propertyeditor.IPropertyEditorCollisionHandler#getPropertyEditor()
 	 */
 	public IPropertyEditor getPropertyEditor()
@@ -89,7 +94,9 @@ public class PropertyEditorCollisionHandler extends NameCollisionHandler impleme
 		return m_rawPropertyEditorControl;
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.swing.propertyeditor.IPropertyEditorCollisionHandler#setPropertyEditor(org.netbeans.modules.uml.ui.swing.propertyeditor.IPropertyEditor)
 	 */
 	public void setPropertyEditor(IPropertyEditor value)
@@ -108,7 +115,9 @@ public class PropertyEditorCollisionHandler extends NameCollisionHandler impleme
 	}
 	
 	
-	/**
+	
+
+/**
 	 * Notification that a name collision event is about to happen
 	 */
 	public long onPreNameCollision(INamedElement pElement, String sProposedName, ETList<INamedElement> pCollidingElements, IResultCell pCell)
@@ -136,7 +145,9 @@ public class PropertyEditorCollisionHandler extends NameCollisionHandler impleme
 		return 0;
 	}
 	
-	/**
+	
+
+/**
 	 * Notification that a name collision event occurred
 	 */
 	public long onNameCollision(INamedElement pElement, ETList<INamedElement> pCollidingElements, IResultCell pCell)
@@ -164,7 +175,9 @@ public class PropertyEditorCollisionHandler extends NameCollisionHandler impleme
 		
 		return 0;
 	}
-	/**
+	
+
+/**
 	 * Notification that the parent listener was disabled
 	 */	
 	public long listenerDisabled()
@@ -172,7 +185,9 @@ public class PropertyEditorCollisionHandler extends NameCollisionHandler impleme
 		return 0;
 	}
 
-	/**
+	
+
+/**
 	 * Reattaches the presentation element to a new model element
 	 */
 	protected void reattachPresentationElement(INamedElement pElement, INamedElement pFirstCollidingElement)
@@ -205,7 +220,9 @@ public class PropertyEditorCollisionHandler extends NameCollisionHandler impleme
 
 	public long onPreAliasNameModified(INamedElement element, String proposedName, IResultCell cell)
 	{
-		/*
+		
+
+/*
 		CComPtr< INamedElement > cpNamedElement( element );
 		const UserAliasChoice choice = HandlePreAliasNameModified( &(cpNamedElement.p), proposedName );
 
@@ -268,7 +285,9 @@ public class PropertyEditorCollisionHandler extends NameCollisionHandler impleme
 		return 0;
 	}
 
-	/**
+	
+
+/**
 	 * Ask the user what to do about a name collision
 	 *
 	 * @param pElement [in] The element being renamed
@@ -338,7 +357,9 @@ public class PropertyEditorCollisionHandler extends NameCollisionHandler impleme
 	}
 
 	
-	/**
+	
+
+/**
 	 * Load the passed in IElement into the property editor
 	 *
 	 * @param pElement[in]		The element to put into the editor

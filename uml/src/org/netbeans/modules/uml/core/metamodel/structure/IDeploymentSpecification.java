@@ -49,82 +49,114 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 public interface IDeploymentSpecification extends INamedElement
 {
-	/**
+	
+
+/**
 	 * method AddDeploymentDescriptor
 	*/
 	public void addDeploymentDescriptor( IArtifact art );
 
-	/**
+	
+
+/**
 	 * method RemoveDeploymentDescriptor
 	*/
 	public void removeDeploymentDescriptor( IArtifact art );
 
-	/**
+	
+
+/**
 	 * property DeploymentDescriptors
 	*/
 	public ETList<IArtifact> getDeploymentDescriptors();
 
-	/**
+	
+
+/**
 	 * property Container
 	*/
 	public INode getContainer();
 
-	/**
+	
+
+/**
 	 * property Container
 	*/
 	public void setContainer( INode value );
 
-	/**
+	
+
+/**
 	 * property DeploymentLocation
 	*/
 	public String getDeploymentLocation();
 
-	/**
+	
+
+/**
 	 * property DeploymentLocation
 	*/
 	public void setDeploymentLocation( String value );
 
-	/**
+	
+
+/**
 	 * property ExecutionLocation
 	*/
 	public String getExecutionLocation();
 
-	/**
+	
+
+/**
 	 * property ExecutionLocation
 	*/
 	public void setExecutionLocation( String value );
 
-	/**
+	
+
+/**
 	 * method AddDeployment
 	*/
 	public void addDeployment( IDeployment dep );
 
-	/**
+	
+
+/**
 	 * method RemoveDeployment
 	*/
 	public void removeDeployment( IDeployment dep );
 
-	/**
+	
+
+/**
 	 * property Deployments
 	*/
 	public ETList<IDeployment> getDeployments();
 
-	/**
+	
+
+/**
 	 * property ConfiguredComponents
 	*/
 	public IComponent getConfiguredComponent();
 
-	/**
+	
+
+/**
 	 * property ConfiguredComponents
 	*/
 	public void setConfiguredComponent( IComponent value );
 
-	/**
+	
+
+/**
 	 * property ConfiguredAssembly
 	*/
 	public IComponentAssembly getConfiguredAssembly();
 
-	/**
+	
+
+/**
 	 * property ConfiguredAssembly
 	*/
 	public void setConfiguredAssembly( IComponentAssembly value );

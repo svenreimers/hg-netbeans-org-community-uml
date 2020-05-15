@@ -62,7 +62,8 @@ public class TemplateManager implements ITemplateManager{
 	private IVariableFactory m_Factory = null;
 	private String m_WorkingDirectory = null;
 
-	/**
+	
+/**
 	 *
 	 * Retrieves the CoreProduct, attempting to set the default Config
 	 * location for the Expansion variable .etc file
@@ -82,7 +83,9 @@ public class TemplateManager implements ITemplateManager{
 		}
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Expands the template located in the passed in file, using contextElement as
 	 * the element from which to expand variables from.
@@ -105,7 +108,9 @@ public class TemplateManager implements ITemplateManager{
 		return result;
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Retrieves the buffer that contains the entire contents of the template file
 	 *
@@ -139,7 +144,9 @@ public class TemplateManager implements ITemplateManager{
 		return null;
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Makes sure that the template file name specified is made absolute.
 	 *
@@ -175,7 +182,9 @@ public class TemplateManager implements ITemplateManager{
 		return fileName;
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Expands a template located at templateFile, using contextNode as the node
 	 * for initial query context.
@@ -203,7 +212,9 @@ public class TemplateManager implements ITemplateManager{
         return m_Factory != null? m_Factory.getExecutionContext() : null;
     }
 
-	/**
+	
+
+/**
 	 *
 	 * Retrieves the location of the configuration file that houses the 
 	 * expansion variable definitions
@@ -221,7 +232,9 @@ public class TemplateManager implements ITemplateManager{
 		return null;
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Sets the location of the configration file used for 
 	 * expansion variable definitions
@@ -255,7 +268,9 @@ public class TemplateManager implements ITemplateManager{
 		return m_WorkingDirectory;
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Sets the working directory that will be used to resolve relative
 	 * template file names.
@@ -272,7 +287,9 @@ public class TemplateManager implements ITemplateManager{
 		//make sure that this is a direcotry
 		m_WorkingDirectory = value;
 	}
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.generativeframework.ITemplateManager#createExecutionContext()
      */
     public IVariableExpander createExecutionContext()
@@ -285,7 +302,9 @@ public class TemplateManager implements ITemplateManager{
         return newContext;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.generativeframework.ITemplateManager#expandVariable(java.lang.String, org.netbeans.modules.uml.core.metamodel.core.foundation.IElement)
      */
     public String expandVariable(String varName, IElement contextElement)
@@ -294,7 +313,9 @@ public class TemplateManager implements ITemplateManager{
         return expandVariableWithNode(varName, contextElement.getNode());
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.generativeframework.ITemplateManager#expandVariableWithNode(java.lang.String, org.dom4j.Node)
      */
     public String expandVariableWithNode(String varName, Node contextNode)

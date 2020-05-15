@@ -47,57 +47,79 @@ package org.netbeans.modules.uml.core.metamodel.core.foundation;
 
 public interface IMultiplicityListener
 {
-	/**
+	
+
+/**
 	 * Fired when the lower property on the passed in range is about to be modified.
 	*/
 	public boolean onPreLowerModified( IMultiplicity mult, IMultiplicityRange range, String proposedValue );
 
-	/**
+	
+
+/**
 	 * Fired when the lower property on the passed in range was modified.
 	*/
 	public void onLowerModified( IMultiplicity mult, IMultiplicityRange range );
 
-	/**
+	
+
+/**
 	 * Fired when the upper property on the passed in range is about to be modified.
 	*/
 	public boolean onPreUpperModified( IMultiplicity mult, IMultiplicityRange range, String proposedValue );
 
-	/**
+	
+
+/**
 	 * Fired when the upper property on the passed in range was modified.
 	*/
 	public void onUpperModified( IMultiplicity mult, IMultiplicityRange range );
 
-	/**
+	
+
+/**
 	 * Fired when a new range is about to be added to the passed in multiplicity.
 	*/
 	public boolean onPreRangeAdded( IMultiplicity mult, IMultiplicityRange range );
 
-	/**
+	
+
+/**
 	 * Fired when a new range is added to the passed in multiplicity.
 	*/
 	public void onRangeAdded( IMultiplicity mult, IMultiplicityRange range );
 
-	/**
+	
+
+/**
 	 * Fired when an existing range is about to be removed from the passed in multiplicity.
 	*/
 	public boolean onPreRangeRemoved( IMultiplicity mult, IMultiplicityRange range );
 
-	/**
+	
+
+/**
 	 * Fired when an existing range is removed from the passed in multiplicity.
 	*/
 	public void onRangeRemoved( IMultiplicity mult, IMultiplicityRange range );
 
-	/**
+	
+
+/**
 	 * Fired when the order property is about to be changed on the passed in mulitplicity.
 	*/
 	public boolean onPreOrderModified( IMultiplicity mult, boolean proposedValue );
 
-	/**
+	
+
+/**
 	 * Fired when the order property is changed on the passed in mulitplicity.
 	*/
 	public void onOrderModified( IMultiplicity mult );
         
-        /**
+        
+
+/**
          * Fired when the collection type property is changed on the passed in 
          * range.
          */

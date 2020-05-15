@@ -44,6 +44,7 @@ package org.netbeans.modules.uml.drawingarea.widgets;
 
 import org.netbeans.modules.uml.drawingarea.view.UMLEdgeWidget;
 
+
 /**
  * interface for main functionality of MessagePinWidget used in messages on sqd,
  * allow to get main information about messages in drawing area module

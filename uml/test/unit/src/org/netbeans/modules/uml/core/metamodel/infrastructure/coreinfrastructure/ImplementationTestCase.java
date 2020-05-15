@@ -48,6 +48,8 @@ package org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructur
 import org.netbeans.modules.uml.core.AbstractUMLTestCase;
 import org.netbeans.modules.uml.core.metamodel.core.constructs.IClass;
 
+
+
 /**
  * Test cases for Implementation.
  */
@@ -62,7 +64,9 @@ public class ImplementationTestCase extends AbstractUMLTestCase
     private IClass     c;
     private IInterface i;
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see junit.framework.TestCase#setUp()
      */
     protected void setUp() throws Exception
@@ -78,7 +82,9 @@ public class ImplementationTestCase extends AbstractUMLTestCase
         project.addOwnedElement(i);
     }
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see junit.framework.TestCase#tearDown()
      */
     protected void tearDown() throws Exception

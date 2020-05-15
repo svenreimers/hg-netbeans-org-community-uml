@@ -62,7 +62,9 @@ public class PositionMapper
    {
    }
    
-   /**
+   
+
+/**
     * Add to the map the start position where the change occurs and the number of bytes being 
     * changed
     * @param position start position in byte where the change occurs.

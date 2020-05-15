@@ -43,6 +43,8 @@
  */
 
 
+
+
 /*
  * ReflectionElementVerifier.java
  *
@@ -164,7 +166,7 @@ public class ReflectionElementVerifier extends AElementVerifier{
                 appendMessage("Visibility: " + attributeElem.getVisibility());
             }
             
-            //System.out.println("type = \"" + field.getGenericType() + "\"");
+            
             
             String type1 = attributeElem.getType().getFullName();
             String type2 = field.getType().getName();

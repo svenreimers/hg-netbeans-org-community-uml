@@ -63,6 +63,8 @@ public class JavaRequestProcessorTestCase extends AbstractUMLTestCase
 {
 
 
+
+
 /**
  * EnsureUniqueAttributeTestCase
  */
@@ -86,6 +88,8 @@ public class JavaRequestProcessorTestCase extends AbstractUMLTestCase
 	  uniqAttr = javaReqProc.ensureUniqueAttribute(cls,"TstAttr2");
 	  assertFalse(uniqAttr);
   }
+
+
 
 /**
  * PreValidationCheckTestCase
@@ -123,6 +127,8 @@ public class JavaRequestProcessorTestCase extends AbstractUMLTestCase
 	  assertTrue(validateChk);
   }
   
+
+
 /**
  * GetClassOfRequestTestCase
  * This method tests whether the request object is a data type or not. 
@@ -158,6 +164,8 @@ public class JavaRequestProcessorTestCase extends AbstractUMLTestCase
 	  reqCls = javaReqProc.getClassOfRequest(requestVal.getRequest(),false);
 	  assertTrue(reqCls instanceof IClass);
   }
+
+
 
 /**
  * CheckForInvalidNameTestCase
@@ -211,6 +219,8 @@ public class JavaRequestProcessorTestCase extends AbstractUMLTestCase
 	  assertTrue(javaReqProc.checkForInvalidName(tstParam,"void"));
 
   }
+
+
 /**
  * PostValidationCheckTestCase
  * This tests that no roundtrip processing should happen for unnamed Objects.

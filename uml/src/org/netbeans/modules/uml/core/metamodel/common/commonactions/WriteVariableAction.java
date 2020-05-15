@@ -42,11 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : WriteVariableAction.java
- * Created on : Sep 17, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.metamodel.common.commonactions;
 
 import org.netbeans.modules.uml.core.metamodel.basic.basicactions.IInputPin;
@@ -58,7 +55,8 @@ public class WriteVariableAction
     extends VariableAction
     implements IWriteVariableAction
 {
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactions.IWriteAttributeAction#getValue()
      */
     public IInputPin getValue()
@@ -67,7 +65,9 @@ public class WriteVariableAction
             .retrieveSingleElement( this, "UML:Element.ownedElement/UML:InputPin", IInputPin.class);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactions.IWriteAttributeAction#setValue(org.netbeans.modules.uml.core.metamodel.basic.basicactions.IInputPin)
      */
     public void setValue(IInputPin inputPin)

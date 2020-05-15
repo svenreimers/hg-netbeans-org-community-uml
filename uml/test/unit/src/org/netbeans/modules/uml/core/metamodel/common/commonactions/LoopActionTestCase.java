@@ -50,6 +50,8 @@ import org.netbeans.modules.uml.core.metamodel.basic.basicactions.IAction;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.FactoryRetriever;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.IExpression;
 
+
+
 /**
  * Test cases for LoopAction.
  */
@@ -62,7 +64,9 @@ public class LoopActionTestCase extends AbstractUMLTestCase
 
     private ILoopAction action;
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see junit.framework.TestCase#setUp()
      */
     protected void setUp() throws Exception
@@ -73,7 +77,9 @@ public class LoopActionTestCase extends AbstractUMLTestCase
         project.addElement(action);
     }
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see junit.framework.TestCase#tearDown()
      */
     protected void tearDown() throws Exception

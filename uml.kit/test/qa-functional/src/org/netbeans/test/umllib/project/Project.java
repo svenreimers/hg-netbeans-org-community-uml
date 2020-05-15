@@ -43,12 +43,8 @@
  */
 
 
-/*
- * Project.java
- *
- * Created on January 25, 2006, 1:37 PM
- *
- */
+
+
 
 package org.netbeans.test.umllib.project;
 
@@ -70,7 +66,8 @@ public abstract class Project {
     String location;
     ProjectType type;
     
-    /**
+    
+/**
      * Creates a new instance of Project
      * @param name 
      * @param type 
@@ -79,7 +76,9 @@ public abstract class Project {
         this(name, type, null);
     }
 
-    /**
+    
+
+/**
      * 
      * @param name 
      * @param type 
@@ -93,7 +92,9 @@ public abstract class Project {
     }
     
     
-    /**
+    
+
+/**
      * 
      * @return 
      */
@@ -101,7 +102,9 @@ public abstract class Project {
         return name;
     }
     
-    /**
+    
+
+/**
      * 
      * @return 
      */
@@ -109,7 +112,9 @@ public abstract class Project {
         return type;
     }
     
-    /**
+    
+
+/**
      * 
      * @return 
      */

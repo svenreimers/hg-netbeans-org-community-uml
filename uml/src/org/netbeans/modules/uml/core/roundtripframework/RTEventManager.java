@@ -42,11 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/**
- * File       : RTEventManager.java
- * Created on : Nov 5, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.roundtripframework;
 
 import java.util.Iterator;
@@ -166,7 +163,9 @@ public class RTEventManager implements IRTEventManager
             m_DispController = controller.getEventDispatchController();
     }
     
-    /**
+    
+
+/**
      * For testcases.
      */
     public ETList<IPreRequest> getPreElements()
@@ -174,7 +173,9 @@ public class RTEventManager implements IRTEventManager
         return m_PreElements;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTPreRedefinedElementAdded(org.netbeans.modules.uml.core.metamodel.core.foundation.IRedefinableElement, org.netbeans.modules.uml.core.metamodel.core.foundation.IRedefinableElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTPreRedefinedElementAdded(
@@ -185,7 +186,9 @@ public class RTEventManager implements IRTEventManager
         // C++ code empty
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTPreRedefinedElementRemoved(org.netbeans.modules.uml.core.metamodel.core.foundation.IRedefinableElement, org.netbeans.modules.uml.core.metamodel.core.foundation.IRedefinableElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTPreRedefinedElementRemoved(
@@ -196,7 +199,9 @@ public class RTEventManager implements IRTEventManager
         // C++ code empty
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTPreRedefiningElementAdded(org.netbeans.modules.uml.core.metamodel.core.foundation.IRedefinableElement, org.netbeans.modules.uml.core.metamodel.core.foundation.IRedefinableElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTPreRedefiningElementAdded(
@@ -207,7 +212,9 @@ public class RTEventManager implements IRTEventManager
         // C++ code empty
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTPreRedefiningElementRemoved(org.netbeans.modules.uml.core.metamodel.core.foundation.IRedefinableElement, org.netbeans.modules.uml.core.metamodel.core.foundation.IRedefinableElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTPreRedefiningElementRemoved(
@@ -218,7 +225,9 @@ public class RTEventManager implements IRTEventManager
         // C++ code empty
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTPreSourceDirModified(org.netbeans.modules.uml.core.metamodel.core.foundation.IPackage, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTPreSourceDirModified(
@@ -268,7 +277,9 @@ public class RTEventManager implements IRTEventManager
         }
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTRedefinedElementAdded(org.netbeans.modules.uml.core.metamodel.core.foundation.IRedefinableElement, org.netbeans.modules.uml.core.metamodel.core.foundation.IRedefinableElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTRedefinedElementAdded(
@@ -279,7 +290,9 @@ public class RTEventManager implements IRTEventManager
         // C++ code empty
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTRedefinedElementRemoved(org.netbeans.modules.uml.core.metamodel.core.foundation.IRedefinableElement, org.netbeans.modules.uml.core.metamodel.core.foundation.IRedefinableElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTRedefinedElementRemoved(
@@ -290,7 +303,9 @@ public class RTEventManager implements IRTEventManager
         // C++ code empty
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTRedefiningElementAdded(org.netbeans.modules.uml.core.metamodel.core.foundation.IRedefinableElement, org.netbeans.modules.uml.core.metamodel.core.foundation.IRedefinableElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTRedefiningElementAdded(
@@ -301,7 +316,9 @@ public class RTEventManager implements IRTEventManager
         // C++ code empty
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTRedefiningElementRemoved(org.netbeans.modules.uml.core.metamodel.core.foundation.IRedefinableElement, org.netbeans.modules.uml.core.metamodel.core.foundation.IRedefinableElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTRedefiningElementRemoved(
@@ -312,7 +329,9 @@ public class RTEventManager implements IRTEventManager
         // C++ code empty
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTAbstractModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavioralFeature, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTAbstractModified(
@@ -322,7 +341,9 @@ public class RTEventManager implements IRTEventManager
         processRequests(feat, ChangeKind.CT_MODIFY, null);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTAbstractModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTAbstractModified(
@@ -332,7 +353,9 @@ public class RTEventManager implements IRTEventManager
         processRequests(classifier, ChangeKind.CT_MODIFY, null);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTChangeabilityModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IStructuralFeature, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTChangeabilityModified(
@@ -342,7 +365,9 @@ public class RTEventManager implements IRTEventManager
         processRequests(feat, ChangeKind.CT_MODIFY, null);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTConcurrencyModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavioralFeature, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTConcurrencyModified(
@@ -352,7 +377,9 @@ public class RTEventManager implements IRTEventManager
         processRequests(feat, ChangeKind.CT_MODIFY, null);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTConcurrencyPreModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavioralFeature, int, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTConcurrencyPreModified(
@@ -394,7 +421,9 @@ public class RTEventManager implements IRTEventManager
         }
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTConditionAdded(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation, org.netbeans.modules.uml.core.metamodel.core.foundation.IConstraint, boolean, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTConditionAdded(
@@ -406,7 +435,9 @@ public class RTEventManager implements IRTEventManager
         processRequests(cons, ChangeKind.CT_MODIFY, null);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTConditionRTPreAdded(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation, org.netbeans.modules.uml.core.metamodel.core.foundation.IConstraint, boolean, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTConditionPreAdded(
@@ -452,7 +483,9 @@ public class RTEventManager implements IRTEventManager
         }
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTConditionPreRemoved(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation, org.netbeans.modules.uml.core.metamodel.core.foundation.IConstraint, boolean, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTConditionPreRemoved(
@@ -495,7 +528,9 @@ public class RTEventManager implements IRTEventManager
         }
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTConditionRemoved(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation, org.netbeans.modules.uml.core.metamodel.core.foundation.IConstraint, boolean, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTConditionRemoved(
@@ -507,7 +542,9 @@ public class RTEventManager implements IRTEventManager
         processRequests(cons, ChangeKind.CT_MODIFY, null);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTDefaultBodyModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttribute, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTDefaultBodyModified(IAttribute attr, IResultCell cell)
@@ -515,7 +552,9 @@ public class RTEventManager implements IRTEventManager
         processRequests(attr, ChangeKind.CT_MODIFY, null);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTDefaultExpBodyModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IParameter, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTDefaultExpBodyModified(IParameter parm, IResultCell cell)
@@ -523,7 +562,9 @@ public class RTEventManager implements IRTEventManager
         processRequests(parm, ChangeKind.CT_MODIFY, null);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTDefaultExpLanguageModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IParameter, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTDefaultExpLanguageModified(
@@ -533,7 +574,9 @@ public class RTEventManager implements IRTEventManager
         processRequests(parm, ChangeKind.CT_MODIFY, null);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTDefaultExpModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IParameter, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTDefaultExpModified(IParameter parm, IResultCell cell)
@@ -541,7 +584,9 @@ public class RTEventManager implements IRTEventManager
         processRequests(parm, ChangeKind.CT_MODIFY, null);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTDefaultLanguageModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttribute, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTDefaultLanguageModified(IAttribute attr, IResultCell cell)
@@ -549,7 +594,9 @@ public class RTEventManager implements IRTEventManager
         processRequests(attr, ChangeKind.CT_MODIFY, null);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTDefaultModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttribute, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTDefaultModified(IAttribute attr, IResultCell cell)
@@ -557,7 +604,9 @@ public class RTEventManager implements IRTEventManager
         processRequests(attr, ChangeKind.CT_MODIFY, null);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTDefaultPreModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttribute, org.netbeans.modules.uml.core.metamodel.core.foundation.IExpression, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTDefaultPreModified(
@@ -598,7 +647,9 @@ public class RTEventManager implements IRTEventManager
         }
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTDirectionModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IParameter, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTDirectionModified(IParameter parm, IResultCell cell)
@@ -606,7 +657,9 @@ public class RTEventManager implements IRTEventManager
         processRequests(parm, ChangeKind.CT_MODIFY, null);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTDocumentationModified(org.netbeans.modules.uml.core.metamodel.core.foundation.IElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTDocumentationModified(IElement element, IResultCell cell)
@@ -614,7 +667,9 @@ public class RTEventManager implements IRTEventManager
         processRequests(element, ChangeKind.CT_MODIFY, null);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTDocumentationPreModified(org.netbeans.modules.uml.core.metamodel.core.foundation.IElement, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTDocumentationPreModified(
@@ -651,7 +706,9 @@ public class RTEventManager implements IRTEventManager
         }
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTElementAddedToNamespace(org.netbeans.modules.uml.core.metamodel.core.foundation.INamespace, org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTElementAddedToNamespace(
@@ -697,7 +754,9 @@ public class RTEventManager implements IRTEventManager
 
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTElementDelete(org.netbeans.modules.uml.core.metamodel.core.foundation.IVersionableElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTElementDelete(
@@ -720,7 +779,9 @@ public class RTEventManager implements IRTEventManager
         }
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTElementPreDelete(org.netbeans.modules.uml.core.metamodel.core.foundation.IVersionableElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTElementPreDelete(
@@ -768,7 +829,9 @@ public class RTEventManager implements IRTEventManager
 
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTEventContextPopped(org.netbeans.modules.uml.core.eventframework.IEventContext, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTEventContextPopped(
@@ -895,7 +958,9 @@ public class RTEventManager implements IRTEventManager
         }
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTEventContextPushed(org.netbeans.modules.uml.core.eventframework.IEventContext, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTEventContextPushed(
@@ -963,7 +1028,9 @@ public class RTEventManager implements IRTEventManager
         }
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTEventDispatchCancelled()
      */
     public void onRTEventDispatchCancelled ( ETList<Object> pListeners, 
@@ -973,7 +1040,9 @@ public class RTEventManager implements IRTEventManager
         // C++ code does nothing
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTFeatureAdded(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IFeature, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTFeatureAdded(
@@ -984,7 +1053,9 @@ public class RTEventManager implements IRTEventManager
         processRequests( feat, ChangeKind.CT_CREATE, null );
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTFeatureDuplicatedToClassifier(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IFeature, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IFeature, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTFeatureDuplicatedToClassifier(
@@ -999,7 +1070,9 @@ public class RTEventManager implements IRTEventManager
         processDuplicateRequests( pNewClassifier, pOldFeature, pNewFeature, ChangeKind.CT_MODIFY);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTFeatureMoved(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IFeature, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTFeatureMoved(
@@ -1011,7 +1084,9 @@ public class RTEventManager implements IRTEventManager
         processRequests(feature, ChangeKind.CT_MODIFY, null);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTFeaturePreAdded(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IFeature, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTFeaturePreAdded(
@@ -1048,7 +1123,9 @@ public class RTEventManager implements IRTEventManager
         }
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTFeaturePreDuplicatedToClassifier(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IFeature, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTFeaturePreDuplicatedToClassifier(
@@ -1089,7 +1166,9 @@ public class RTEventManager implements IRTEventManager
         }
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTFeaturePreMoved(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IFeature, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTFeaturePreMoved(
@@ -1130,7 +1209,9 @@ public class RTEventManager implements IRTEventManager
         }
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTFinalModified(org.netbeans.modules.uml.core.metamodel.core.foundation.IRedefinableElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTFinalModified(
@@ -1141,7 +1222,9 @@ public class RTEventManager implements IRTEventManager
         processRequests(element, ChangeKind.CT_MODIFY, null);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTHandledSignalAdded(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavioralFeature, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTHandledSignalAdded(
@@ -1151,7 +1234,9 @@ public class RTEventManager implements IRTEventManager
         processRequests(feat, ChangeKind.CT_MODIFY, null);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTHandledSignalRemoved(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavioralFeature, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTHandledSignalRemoved(
@@ -1161,7 +1246,9 @@ public class RTEventManager implements IRTEventManager
         processRequests(feat, ChangeKind.CT_MODIFY, null);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTImpacted(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier)
      */
     public void onRTImpacted(IClassifier classifier, ETList<IVersionableElement> impacted, IResultCell cell)
@@ -1218,7 +1305,9 @@ public class RTEventManager implements IRTEventManager
         }
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTLeafModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTLeafModified(IClassifier classifier, IResultCell cell)
@@ -1226,7 +1315,9 @@ public class RTEventManager implements IRTEventManager
         processRequests(classifier, ChangeKind.CT_MODIFY, null);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTLowerModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElement, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityRange, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTLowerModified(
@@ -1238,7 +1329,9 @@ public class RTEventManager implements IRTEventManager
         processRequests(element, ChangeKind.CT_MODIFY, null);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTMultiplicityModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTMultiplicityModified(
@@ -1248,7 +1341,9 @@ public class RTEventManager implements IRTEventManager
         processRequests(element, ChangeKind.CT_MODIFY, null);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTNameModified(org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTNameModified(INamedElement element, IResultCell cell)
@@ -1270,7 +1365,9 @@ public class RTEventManager implements IRTEventManager
             propagateNamespaceChange(element, RequestDetailKind.RDT_NAME_MODIFIED, false, cell, pNamespace);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTNativeModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IFeature, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTNativeModified(IFeature feat, IResultCell cell)
@@ -1278,7 +1375,9 @@ public class RTEventManager implements IRTEventManager
         processRequests(feat, ChangeKind.CT_MODIFY, null);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTOperationPropertyModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation, int, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTOperationPropertyModified(
@@ -1289,7 +1388,9 @@ public class RTEventManager implements IRTEventManager
         processRequests(oper, ChangeKind.CT_MODIFY, null);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTOrderModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElement, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTOrderModified(
@@ -1336,7 +1437,9 @@ public class RTEventManager implements IRTEventManager
         processRequests(element, ChangeKind.CT_MODIFY, null);
     }
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTParameterAdded(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavioralFeature, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IParameter, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTParameterAdded(
@@ -1347,7 +1450,9 @@ public class RTEventManager implements IRTEventManager
         processRequests(parm, ChangeKind.CT_MODIFY, null);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTParameterRemoved(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavioralFeature, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IParameter, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTParameterRemoved(
@@ -1358,7 +1463,9 @@ public class RTEventManager implements IRTEventManager
         processRequests(parm, ChangeKind.CT_MODIFY, feat);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTPreAbstractModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavioralFeature, boolean, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTPreAbstractModified(
@@ -1400,7 +1507,9 @@ public class RTEventManager implements IRTEventManager
  
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTPreAbstractModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, boolean, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTPreAbstractModified(
@@ -1444,7 +1553,9 @@ public class RTEventManager implements IRTEventManager
 
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTPreChangeabilityModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IStructuralFeature, int, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTPreChangeabilityModified(
@@ -1487,7 +1598,9 @@ public class RTEventManager implements IRTEventManager
 
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTPreDefaultBodyModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttribute, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTPreDefaultBodyModified(
@@ -1529,7 +1642,9 @@ public class RTEventManager implements IRTEventManager
 
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTPreDefaultExpBodyModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IParameter, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTPreDefaultExpBodyModified(
@@ -1571,7 +1686,9 @@ public class RTEventManager implements IRTEventManager
 
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTPreDefaultExpLanguageModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IParameter, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTPreDefaultExpLanguageModified(
@@ -1613,7 +1730,9 @@ public class RTEventManager implements IRTEventManager
 
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTPreDefaultExpModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IParameter, org.netbeans.modules.uml.core.metamodel.core.foundation.IExpression, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTPreDefaultExpModified(
@@ -1655,7 +1774,9 @@ public class RTEventManager implements IRTEventManager
 
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTPreDefaultLanguageModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttribute, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTPreDefaultLanguageModified(
@@ -1698,7 +1819,9 @@ public class RTEventManager implements IRTEventManager
 
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTPreDirectionModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IParameter, int, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTPreDirectionModified(
@@ -1731,7 +1854,9 @@ public class RTEventManager implements IRTEventManager
 
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTPreElementAddedToNamespace(org.netbeans.modules.uml.core.metamodel.core.foundation.INamespace, org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTPreElementAddedToNamespace(
@@ -1812,7 +1937,9 @@ public class RTEventManager implements IRTEventManager
         }
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTPreEventContextPopped(org.netbeans.modules.uml.core.eventframework.IEventContext, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTPreEventContextPopped(
@@ -1822,7 +1949,9 @@ public class RTEventManager implements IRTEventManager
         // No valid implementation in the C++ code base.
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTPreEventContextPushed(org.netbeans.modules.uml.core.eventframework.IEventContext, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTPreEventContextPushed(
@@ -1832,7 +1961,9 @@ public class RTEventManager implements IRTEventManager
         // No valid implementation in the C++ code base.
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTPreFinalModified(org.netbeans.modules.uml.core.metamodel.core.foundation.IRedefinableElement, boolean, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTPreFinalModified(
@@ -1870,7 +2001,9 @@ public class RTEventManager implements IRTEventManager
         }
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTPreHandledSignalAdded(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavioralFeature, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ISignal, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTPreHandledSignalAdded(
@@ -1906,7 +2039,9 @@ public class RTEventManager implements IRTEventManager
         }
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTPreHandledSignalRemoved(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavioralFeature, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ISignal, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTPreHandledSignalRemoved(
@@ -1939,7 +2074,9 @@ public class RTEventManager implements IRTEventManager
 
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTPreImpacted(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier)
      */
     public void onRTPreImpacted(IClassifier classifier, ETList<IVersionableElement> impacted, IResultCell cell )
@@ -2032,7 +2169,9 @@ public class RTEventManager implements IRTEventManager
         } 
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTPreLeafModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, boolean, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTPreLeafModified(
@@ -2065,7 +2204,9 @@ public class RTEventManager implements IRTEventManager
 
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTPreLowerModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElement, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityRange, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTPreLowerModified(
@@ -2107,7 +2248,9 @@ public class RTEventManager implements IRTEventManager
 
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTPreMultiplicityModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElement, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTPreMultiplicityModified(
@@ -2140,7 +2283,9 @@ public class RTEventManager implements IRTEventManager
 
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTPreNameModified(org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElement, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTPreNameModified(
@@ -2196,7 +2341,9 @@ public class RTEventManager implements IRTEventManager
 
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTPreNativeModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IFeature, boolean, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTPreNativeModified(
@@ -2229,7 +2376,9 @@ public class RTEventManager implements IRTEventManager
 
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTPreOperationPropertyModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation, int, boolean, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTPreOperationPropertyModified(
@@ -2287,7 +2436,9 @@ public class RTEventManager implements IRTEventManager
         }
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTPreOrderModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElement, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity, boolean, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTPreOrderModified(
@@ -2330,7 +2481,9 @@ public class RTEventManager implements IRTEventManager
 
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTPreParameterAdded(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavioralFeature, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IParameter, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTPreParameterAdded(
@@ -2385,7 +2538,9 @@ public class RTEventManager implements IRTEventManager
                 EventDispatchNameKeeper.classifier());
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTPreParameterRemoved(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavioralFeature, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IParameter, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTPreParameterRemoved(
@@ -2418,7 +2573,9 @@ public class RTEventManager implements IRTEventManager
 
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTPreQueryModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation, boolean, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTPreQueryModified(
@@ -2451,7 +2608,9 @@ public class RTEventManager implements IRTEventManager
 
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTPreRangeAdded(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElement, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityRange, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTPreRangeAdded(
@@ -2495,7 +2654,9 @@ public class RTEventManager implements IRTEventManager
 
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTPreRangeRemoved(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElement, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityRange, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTPreRangeRemoved(
@@ -2539,7 +2700,9 @@ public class RTEventManager implements IRTEventManager
 
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTPreRelationCreated(org.netbeans.modules.uml.core.metamodel.core.foundation.IRelationProxy, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTPreRelationCreated(IRelationProxy proxy, IResultCell cell)
@@ -2577,7 +2740,9 @@ public class RTEventManager implements IRTEventManager
 
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTPreRelationDeleted(org.netbeans.modules.uml.core.metamodel.core.foundation.IRelationProxy, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTPreRelationDeleted(IRelationProxy proxy, IResultCell cell)
@@ -2614,7 +2779,9 @@ public class RTEventManager implements IRTEventManager
 
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTPreRelationEndAdded(org.netbeans.modules.uml.core.metamodel.core.foundation.IRelationProxy, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTPreRelationEndAdded(IRelationProxy proxy, IResultCell cell)
@@ -2652,7 +2819,9 @@ public class RTEventManager implements IRTEventManager
 
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTPreRelationEndModified(org.netbeans.modules.uml.core.metamodel.core.foundation.IRelationProxy, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTPreRelationEndModified(
@@ -2691,7 +2860,9 @@ public class RTEventManager implements IRTEventManager
 
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTPreRelationEndRemoved(org.netbeans.modules.uml.core.metamodel.core.foundation.IRelationProxy, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTPreRelationEndRemoved(
@@ -2730,7 +2901,9 @@ public class RTEventManager implements IRTEventManager
 
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTPreRelationValidate(org.netbeans.modules.uml.core.metamodel.core.foundation.IRelationProxy, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTPreRelationValidate(IRelationProxy proxy, IResultCell cell)
@@ -2762,7 +2935,9 @@ public class RTEventManager implements IRTEventManager
 
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTPreStaticModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IFeature, boolean, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTPreStaticModified(
@@ -2795,7 +2970,9 @@ public class RTEventManager implements IRTEventManager
 
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTPreStrictFPModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavioralFeature, boolean, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTPreStrictFPModified(
@@ -2838,7 +3015,9 @@ public class RTEventManager implements IRTEventManager
 
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTPreTransform(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAssociationEnd, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTPreTransform(
@@ -2881,7 +3060,9 @@ public class RTEventManager implements IRTEventManager
 
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTPreTransform(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTPreTransform(
@@ -2900,11 +3081,11 @@ public class RTEventManager implements IRTEventManager
             if (isAppInDispatchState(classifier))
             {    
                 // warn the user and give him a chance to deny
-                // AZTEC: TODO: Implement this dialog?
+                
                 IPreferenceQuestionDialog diag = null; //new PreferenceQuestionDialog();
                 if (diag != null)
                 {
-                    // AZTEC: TODO: Dialog maneuvers here.
+                    
                 }
             }
         }
@@ -2939,7 +3120,9 @@ public class RTEventManager implements IRTEventManager
         }
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTPreTransientModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, boolean, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTPreTransientModified(
@@ -2972,7 +3155,9 @@ public class RTEventManager implements IRTEventManager
 
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTPreTransientModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IStructuralFeature, boolean, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTPreTransientModified(
@@ -3005,7 +3190,9 @@ public class RTEventManager implements IRTEventManager
 
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTPreTypeModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElement, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTPreTypeModified(
@@ -3038,7 +3225,9 @@ public class RTEventManager implements IRTEventManager
         }
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTPreUpperModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElement, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityRange, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTPreUpperModified(
@@ -3073,7 +3262,9 @@ public class RTEventManager implements IRTEventManager
         }
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTPreVisibilityModified(org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElement, int, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTPreVisibilityModified(
@@ -3107,7 +3298,9 @@ public class RTEventManager implements IRTEventManager
 
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTPreVolatileModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IStructuralFeature, boolean, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTPreVolatileModified(
@@ -3140,7 +3333,9 @@ public class RTEventManager implements IRTEventManager
 
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTQueryModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTQueryModified(IOperation oper, IResultCell cell)
@@ -3148,7 +3343,9 @@ public class RTEventManager implements IRTEventManager
         processRequests(oper, ChangeKind.CT_MODIFY, null);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTRaisedExceptionAdded(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTRaisedExceptionAdded(
@@ -3159,7 +3356,9 @@ public class RTEventManager implements IRTEventManager
         processRequests(oper, ChangeKind.CT_MODIFY, null);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTRaisedExceptionPreAdded(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTRaisedExceptionPreAdded(
@@ -3196,7 +3395,9 @@ public class RTEventManager implements IRTEventManager
         }
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTRaisedExceptionPreRemoved(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTRaisedExceptionPreRemoved(
@@ -3234,7 +3435,9 @@ public class RTEventManager implements IRTEventManager
         }
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTRaisedExceptionRemoved(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTRaisedExceptionRemoved(
@@ -3245,7 +3448,9 @@ public class RTEventManager implements IRTEventManager
         processRequests(oper, ChangeKind.CT_MODIFY, null);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTRangeAdded(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElement, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityRange, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTRangeAdded(
@@ -3257,7 +3462,9 @@ public class RTEventManager implements IRTEventManager
         processRequests(element, ChangeKind.CT_MODIFY);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTRangeRemoved(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElement, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityRange, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTRangeRemoved(
@@ -3269,7 +3476,9 @@ public class RTEventManager implements IRTEventManager
         processRequests(element, ChangeKind.CT_MODIFY);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTRelationCreated(org.netbeans.modules.uml.core.metamodel.core.foundation.IRelationProxy, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTRelationCreated(IRelationProxy proxy, IResultCell cell)
@@ -3277,7 +3486,9 @@ public class RTEventManager implements IRTEventManager
         processRelModRequests(proxy, ChangeKind.CT_CREATE);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTRelationDeleted(org.netbeans.modules.uml.core.metamodel.core.foundation.IRelationProxy, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTRelationDeleted(IRelationProxy proxy, IResultCell cell)
@@ -3285,7 +3496,9 @@ public class RTEventManager implements IRTEventManager
         processRelModRequests(proxy, ChangeKind.CT_DELETE);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTRelationEndAdded(org.netbeans.modules.uml.core.metamodel.core.foundation.IRelationProxy, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTRelationEndAdded(IRelationProxy proxy, IResultCell cell)
@@ -3293,7 +3506,9 @@ public class RTEventManager implements IRTEventManager
         processRelModRequests(proxy, ChangeKind.CT_MODIFY);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTRelationEndModified(org.netbeans.modules.uml.core.metamodel.core.foundation.IRelationProxy, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTRelationEndModified(IRelationProxy proxy, IResultCell cell)
@@ -3301,7 +3516,9 @@ public class RTEventManager implements IRTEventManager
         processRelModRequests(proxy, ChangeKind.CT_MODIFY);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTRelationEndRemoved(org.netbeans.modules.uml.core.metamodel.core.foundation.IRelationProxy, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTRelationEndRemoved(IRelationProxy proxy, IResultCell cell)
@@ -3309,7 +3526,9 @@ public class RTEventManager implements IRTEventManager
         processRelModRequests(proxy, ChangeKind.CT_MODIFY);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTRelationValidate(org.netbeans.modules.uml.core.metamodel.core.foundation.IRelationProxy, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTRelationValidate(IRelationProxy proxy, IResultCell cell)
@@ -3317,7 +3536,9 @@ public class RTEventManager implements IRTEventManager
         // No valid implementation in the C++ code base.
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTStaticModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IFeature, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTStaticModified(IFeature feat, IResultCell cell)
@@ -3325,7 +3546,9 @@ public class RTEventManager implements IRTEventManager
         processRequests(feat, ChangeKind.CT_MODIFY, null);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTStrictFPModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavioralFeature, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTStrictFPModified(IBehavioralFeature feat, IResultCell cell)
@@ -3333,7 +3556,9 @@ public class RTEventManager implements IRTEventManager
         processRequests(feat, ChangeKind.CT_MODIFY, null);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTTransformed(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAssociationEnd, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTTransformed(IAssociationEnd pEnd, IResultCell cell)
@@ -3341,7 +3566,9 @@ public class RTEventManager implements IRTEventManager
         processRequests(pEnd, ChangeKind.CT_MODIFY, null);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTTransformed(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTTransformed(IClassifier classifier, IResultCell cell)
@@ -3349,7 +3576,9 @@ public class RTEventManager implements IRTEventManager
         processRequests(classifier, ChangeKind.CT_MODIFY, null);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTTransientModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTTransientModified(IClassifier classifier, IResultCell cell)
@@ -3357,7 +3586,9 @@ public class RTEventManager implements IRTEventManager
         processRequests(classifier, ChangeKind.CT_MODIFY, null);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTTransientModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IStructuralFeature, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTTransientModified(
@@ -3367,7 +3598,9 @@ public class RTEventManager implements IRTEventManager
         processRequests(feat, ChangeKind.CT_MODIFY, null);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTTypeModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTTypeModified(ITypedElement element, IResultCell cell)
@@ -3375,7 +3608,9 @@ public class RTEventManager implements IRTEventManager
         processRequests(element, ChangeKind.CT_MODIFY);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTUpperModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElement, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityRange, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTUpperModified(
@@ -3387,7 +3622,9 @@ public class RTEventManager implements IRTEventManager
         processRequests(element, ChangeKind.CT_MODIFY);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTVisibilityModified(org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTVisibilityModified(INamedElement element, IResultCell cell)
@@ -3395,7 +3632,9 @@ public class RTEventManager implements IRTEventManager
         processRequests(element, ChangeKind.CT_MODIFY, null);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTVolatileModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IStructuralFeature, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTVolatileModified(IStructuralFeature feat, IResultCell cell)
@@ -3403,7 +3642,9 @@ public class RTEventManager implements IRTEventManager
         processRequests(feat, ChangeKind.CT_MODIFY, null);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onSourceDirModified(org.netbeans.modules.uml.core.metamodel.core.foundation.IPackage, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTSourceDirModified(IPackage element, IResultCell cell)
@@ -3414,14 +3655,18 @@ public class RTEventManager implements IRTEventManager
                 element instanceof INamespace? (INamespace) element : null);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTWSProjectClosed(org.netbeans.modules.uml.core.workspacemanagement.IWSProject, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTWSProjectClosed(IWSProject project, IResultCell cell)
     {
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTWSProjectCreated(org.netbeans.modules.uml.core.workspacemanagement.IWSProject, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTWSProjectCreated(IWSProject project, IResultCell cell)
@@ -3432,14 +3677,18 @@ public class RTEventManager implements IRTEventManager
         }
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTWSProjectInserted(org.netbeans.modules.uml.core.workspacemanagement.IWSProject, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTWSProjectInserted(IWSProject project, IResultCell cell)
     {
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTWSProjectOpened(org.netbeans.modules.uml.core.workspacemanagement.IWSProject, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTWSProjectOpened(IWSProject project, IResultCell cell)
@@ -3450,14 +3699,18 @@ public class RTEventManager implements IRTEventManager
         }
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTWSProjectPreClose(org.netbeans.modules.uml.core.workspacemanagement.IWSProject, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTWSProjectPreClose(IWSProject project, IResultCell cell)
     {
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTWSProjectPreCreate(org.netbeans.modules.uml.core.workspacemanagement.IWorkspace, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTWSProjectPreCreate(
@@ -3467,7 +3720,9 @@ public class RTEventManager implements IRTEventManager
     {
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTWSProjectPreInsert(org.netbeans.modules.uml.core.workspacemanagement.IWorkspace, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTWSProjectPreInsert(
@@ -3477,7 +3732,9 @@ public class RTEventManager implements IRTEventManager
     {
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTWSProjectPreOpen(org.netbeans.modules.uml.core.workspacemanagement.IWorkspace, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTWSProjectPreOpen(
@@ -3487,14 +3744,18 @@ public class RTEventManager implements IRTEventManager
     {
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTWSProjectPreRemove(org.netbeans.modules.uml.core.workspacemanagement.IWSProject, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTWSProjectPreRemove(IWSProject project, IResultCell cell)
     {
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTWSProjectPreRename(org.netbeans.modules.uml.core.workspacemanagement.IWSProject, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTWSProjectPreRename(
@@ -3504,21 +3765,27 @@ public class RTEventManager implements IRTEventManager
     {
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTWSProjectPreSave(org.netbeans.modules.uml.core.workspacemanagement.IWSProject, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTWSProjectPreSave(IWSProject project, IResultCell cell)
     {
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTWSProjectRemoved(org.netbeans.modules.uml.core.workspacemanagement.IWSProject, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTWSProjectRemoved(IWSProject project, IResultCell cell)
     {
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTWSProjectRenamed(org.netbeans.modules.uml.core.workspacemanagement.IWSProject, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTWSProjectRenamed(
@@ -3528,14 +3795,18 @@ public class RTEventManager implements IRTEventManager
     {
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#onRTWSProjectSaved(org.netbeans.modules.uml.core.workspacemanagement.IWSProject, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRTWSProjectSaved(IWSProject project, IResultCell cell)
     {
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#processDuplicateRequests(org.netbeans.modules.uml.core.metamodel.core.foundation.IElement, org.netbeans.modules.uml.core.metamodel.core.foundation.IElement, org.netbeans.modules.uml.core.metamodel.core.foundation.IElement, int)
      */
     public void processDuplicateRequests(
@@ -3551,7 +3822,9 @@ public class RTEventManager implements IRTEventManager
         processRequests();
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#processImpactedRequests(org.netbeans.modules.uml.core.metamodel.core.foundation.IElement, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, int)
      */
     public void processImpactedRequests(
@@ -3563,7 +3836,9 @@ public class RTEventManager implements IRTEventManager
         processRequests(element, type, null);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#processRelModRequests(org.netbeans.modules.uml.core.metamodel.core.foundation.IRelationProxy, int)
      */
     public void processRelModRequests(IRelationProxy proxy, int type)
@@ -3572,7 +3847,9 @@ public class RTEventManager implements IRTEventManager
         processRequests();
     }
     
-    /**
+    
+
+/**
      * @param proxy[in]
      * @param type[in]
      *
@@ -3658,7 +3935,9 @@ public class RTEventManager implements IRTEventManager
         }
     }
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#processRequests(org.netbeans.modules.uml.core.metamodel.core.foundation.IElement, int, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavioralFeature)
      */
     public void processRequests(
@@ -3686,7 +3965,9 @@ public class RTEventManager implements IRTEventManager
         processRequests(element, type, null);
     }
     
-    /**
+    
+
+/**
      *
      * Gathers all requests associated with the passed in element.
      *
@@ -3786,7 +4067,9 @@ public class RTEventManager implements IRTEventManager
         }
     }
     
-    /**
+    
+
+/**
      * Creates the actual request object
      *
      * @param element[in] The post-element
@@ -3841,7 +4124,9 @@ public class RTEventManager implements IRTEventManager
         return changeReqs;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRTEventManager#processRequests(org.netbeans.modules.uml.core.metamodel.core.foundation.IRelationProxy, int)
      */
     public void processRequests(IRelationProxy proxy, int type)
@@ -3852,7 +4137,9 @@ public class RTEventManager implements IRTEventManager
     
     // ***** Protected Methods *****
     
-    /**
+    
+
+/**
      *
      * Determines whether or not the passed in relation is associated
      * with artifacts that correspond to well-known RequestProcessors.
@@ -3928,7 +4215,9 @@ public class RTEventManager implements IRTEventManager
     }    
 
 
-    /**
+    
+
+/**
     * Determines whether or not the passed in element is associated
     * with artifacts that correspond to well-known RequestProcessors.
     * If it does, an entry is put into our internal map of pre-elements,
@@ -3953,7 +4242,9 @@ public class RTEventManager implements IRTEventManager
     }
 
  
-   /**
+   
+
+/**
     *
     * Determines whether or not the passed in element is associated
     * with artifacts that correspond to well-known RequestProcessors.
@@ -4033,7 +4324,9 @@ public class RTEventManager implements IRTEventManager
 //
 ////    ----------------------------------------------------------------------------
 ////    ----------------------------------------------------------------------------
-   /**
+   
+
+/**
     *
     * Checks to see if the passed in artifact is associated with a RequestProcessor
     * the round trip framework knows about. If so, an entry is made to the internal
@@ -4119,7 +4412,9 @@ public class RTEventManager implements IRTEventManager
       }
    }
    
-   /**
+   
+
+/**
     *
     * Clones the passed in element.
     *
@@ -4154,7 +4449,9 @@ public class RTEventManager implements IRTEventManager
 //
 ////    ----------------------------------------------------------------------------
 ////    ----------------------------------------------------------------------------
-   /**
+   
+
+/**
     *
     * 
     *
@@ -4207,7 +4504,9 @@ public class RTEventManager implements IRTEventManager
         }
     }
 
-    /**
+    
+
+/**
      *
      * 
      *
@@ -4236,7 +4535,9 @@ public class RTEventManager implements IRTEventManager
     }
 
 
-    /**
+    
+
+/**
      *
      * 
      *
@@ -4271,7 +4572,9 @@ public class RTEventManager implements IRTEventManager
 
 
 
-    /**
+    
+
+/**
      *
      * 
      *
@@ -4299,7 +4602,9 @@ public class RTEventManager implements IRTEventManager
         return m_BatchCount;
     }
 
-    /**
+    
+
+/**
      *
      * 
      *
@@ -4318,7 +4623,9 @@ public class RTEventManager implements IRTEventManager
         }
     }
 
-    /**
+    
+
+/**
      *
      * 
      *
@@ -4357,7 +4664,9 @@ public class RTEventManager implements IRTEventManager
        return retval;
     }
 
-    /**
+    
+
+/**
      *
      * 
      *
@@ -4386,7 +4695,9 @@ public class RTEventManager implements IRTEventManager
         }
     }
 
-    /**
+    
+
+/**
      *
      * 
      *
@@ -4487,7 +4798,9 @@ public class RTEventManager implements IRTEventManager
         return retval;   
     }
 
-    /**
+    
+
+/**
      *
      * Dispatches the requests that have been validated / generated
      * by the various RequestProcessors.
@@ -4513,7 +4826,9 @@ public class RTEventManager implements IRTEventManager
         }
     }
 
-    /**
+    
+
+/**
      *
      * Performs the actual dispatching to the listeners of the RoundTrip sinks.
      *
@@ -4550,7 +4865,9 @@ public class RTEventManager implements IRTEventManager
         return true;
     }
 
-    /**
+    
+
+/**
      *
      * Determines the appropriate RoundTrip event sink to send
      * the passed in ChangeRequest to. Once done, dispatches it.
@@ -4746,7 +5063,9 @@ public class RTEventManager implements IRTEventManager
         return true;
     }
 
-    /**
+    
+
+/**
      *
      * 
      *
@@ -4782,7 +5101,9 @@ public class RTEventManager implements IRTEventManager
         return pElement != null? new RTStateTester().getProject(pElement) : null;
     }
     
-    /**
+    
+
+/**
      *
      * Adds the change requests and processor to the PostElements queue that will be processed once a
      * post event on the given element occurs.
@@ -4802,7 +5123,9 @@ public class RTEventManager implements IRTEventManager
                         proc, reqs ));
     }
 
-    /**
+    
+
+/**
      *
      * 
      *
@@ -4828,7 +5151,9 @@ public class RTEventManager implements IRTEventManager
         return retval;
     }
 
-    /**
+    
+
+/**
      *
      * 
      *
@@ -4856,7 +5181,9 @@ public class RTEventManager implements IRTEventManager
     
 //  ----------------------------------------------------------------------------
 //  ----------------------------------------------------------------------------
-     /**
+     
+
+/**
       *
       * 
       *
@@ -5106,7 +5433,9 @@ public class RTEventManager implements IRTEventManager
         return el.getLanguages();
     }
     
-    /**
+    
+
+/**
      * This is a convenience function to take some of the drudgery away from the
      * OnRT code above
      *
@@ -5125,7 +5454,9 @@ public class RTEventManager implements IRTEventManager
         }
     }
 
-    /**
+    
+
+/**
      *
      * Determines whether or not there are any change requests on the passed in payload. If
      * there are, they are added to our internal list of requests that need to be processed.
@@ -5151,7 +5482,9 @@ public class RTEventManager implements IRTEventManager
 
 //     ----------------------------------------------------------------------------
 //     ----------------------------------------------------------------------------
-    /**
+    
+
+/**
      *
      * Determines whether or not there are any change requests on the passed in payload. If
      * there are, they are added to our internal list of requests that need to be processed.
@@ -5181,7 +5514,9 @@ public class RTEventManager implements IRTEventManager
 
 //     ----------------------------------------------------------------------------
 //     ----------------------------------------------------------------------------
-    /**
+    
+
+/**
      *
      * 
      *
@@ -5205,7 +5540,9 @@ public class RTEventManager implements IRTEventManager
         establishPreRequest( proxy, evtName, payload, pModifiedNamespace);
     }
     
-    /**
+    
+
+/**
      *
      * This routine looks to see if the relation proxy is specifically for 
      * an association and modifies the detail accordingly.
@@ -5324,7 +5661,9 @@ public class RTEventManager implements IRTEventManager
         }
     }
 
-    /**
+    
+
+/**
      *
      * This is a pseudo-event, used to propagate namespaces changes.
      *
@@ -5370,7 +5709,9 @@ public class RTEventManager implements IRTEventManager
 
 //     ----------------------------------------------------------------------------
 //     ----------------------------------------------------------------------------
-    /**
+    
+
+/**
      *
      * 
      *
@@ -5397,7 +5738,9 @@ public class RTEventManager implements IRTEventManager
 
     }
     
-    /**
+    
+
+/**
      *
      * The difference between a RelationMod prerequest and a normal prerequest is
      * what is cloned.
@@ -5536,7 +5879,9 @@ public class RTEventManager implements IRTEventManager
         establishRelModPreRequest( proxy, morphRequest(proxy, eventName), payload);
     }
 
-    /**
+    
+
+/**
      *
      * The IResultCell comes in on the initial event. The Data property of that cell
      * may or may not have valid data on it. Regardless, a new IRoundTripEventPayload object
@@ -5570,7 +5915,9 @@ public class RTEventManager implements IRTEventManager
 
 //     ----------------------------------------------------------------------------
 //     ----------------------------------------------------------------------------
-    /**
+    
+
+/**
      *
      * The IResultCell comes in on the initial event. The Data property of that cell
      * may or may not have valid data on it. Regardless, a new IRoundTripEventPayload object
@@ -5600,7 +5947,9 @@ public class RTEventManager implements IRTEventManager
 
     }
     
-    /**
+    
+
+/**
      *
      * The IResultCell comes in on the initial event. The Data property of that cell
      * may or may not have valid data on it. Regardless, a new IRoundTripEventPayload object
@@ -5663,7 +6012,9 @@ public class RTEventManager implements IRTEventManager
         } 
     }
     
-    /**
+    
+
+/**
      *
      * Retrieves the ElementChangeDispatcher of the internal dispatch controller
      *
@@ -5678,7 +6029,9 @@ public class RTEventManager implements IRTEventManager
         return new EventDispatchRetriever(m_DispController).getDispatcher(EventDispatchNameKeeper.modifiedName());
     }
     
-    /**
+    
+
+/**
      * This is a convenience function to take some of the drudgery away from the
      * OnRT code above. NOTE THAT THIS FUNCTION IS CALLED IN THE PREFIRE MACRO!!!
      * 

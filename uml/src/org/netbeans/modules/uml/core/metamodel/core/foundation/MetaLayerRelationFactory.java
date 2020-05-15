@@ -68,7 +68,9 @@ public class MetaLayerRelationFactory {
 		return m_Instance;
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Creates either a PackageImport or ElementImport in the Package namespace of the importingElement.
 	 * If elementToImport is a Package, then a PackageImport is created, else and ElementImport.
@@ -104,7 +106,9 @@ public class MetaLayerRelationFactory {
 		return pImport;
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Creates either a PackageImport or ElementImport in the Package namespace of the importingElement.
 	 * If elementToImport is a Package, then a PackageImport is created, else and ElementImport.
@@ -139,7 +143,9 @@ public class MetaLayerRelationFactory {
 		return pImport;
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Determines whether or not an import is needed. A true result will be returned if the elements 
 	 * passed in belong to different Projects
@@ -167,7 +173,9 @@ public class MetaLayerRelationFactory {
 		return isNeeded;
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Creates the appropriate import relationship between the passed in elements, if needed.
 	 *

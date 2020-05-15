@@ -43,6 +43,8 @@
  */
 
 
+
+
 /*
  * Created on Apr 16, 2004
  *
@@ -61,6 +63,7 @@ import org.netbeans.modules.uml.core.reverseengineering.reframework.IREClass;
 import org.netbeans.modules.uml.core.support.umlsupport.Log;
 
 import org.dom4j.Node;
+
 /**
  *
  * To change the template for this generated type comment go to
@@ -74,7 +77,9 @@ public class ArrayIndexExpression extends ArrayDeclartorExpression
     }
 
    
-    /**
+    
+
+/**
      * Sends out the UMLParser operaiton details events that represent the 
      * expression data.  
      *

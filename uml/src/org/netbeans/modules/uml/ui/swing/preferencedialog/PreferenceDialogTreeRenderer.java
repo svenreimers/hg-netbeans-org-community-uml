@@ -43,6 +43,8 @@
  */
 
 
+
+
 /*
  * Created on May 22, 2003
  *
@@ -80,7 +82,9 @@ public class PreferenceDialogTreeRenderer extends DefaultTreeCellRenderer implem
 	{	
 	}
 	
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see javax.swing.tree.TreeCellRenderer#getTreeCellRendererComponent(javax.swing.JTree, java.lang.Object, boolean, boolean, boolean, int, boolean)
     */
    public Component getTreeCellRendererComponent(JTree  tree,
@@ -160,7 +164,9 @@ public class PreferenceDialogTreeRenderer extends DefaultTreeCellRenderer implem
 //   {
 //   }
 
-   /**
+   
+
+/**
     * @param m_ProjectIcon
     * @param string
     * @return
@@ -174,7 +180,9 @@ public class PreferenceDialogTreeRenderer extends DefaultTreeCellRenderer implem
       return image;
    }
 	
-	/**
+	
+
+/**
 	 * @param value
 	 */
 	private void formatElementForObject(DefaultMutableTreeNode value)

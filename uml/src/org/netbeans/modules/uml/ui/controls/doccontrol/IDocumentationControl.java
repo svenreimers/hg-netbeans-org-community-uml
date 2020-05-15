@@ -26,52 +26,62 @@ package org.netbeans.modules.uml.ui.controls.doccontrol;
  */
 public interface IDocumentationControl
 {
-	/**
+	
+/**
 	 * Initialize the Doc Control
 	*/
 	public void initialize();
 
-	/**
+	
+/**
 	 * Enable the Doc Control
 	*/
 	public void enableDocCtrl();
 
-	/**
+	
+/**
 	 * Disable the Doc Control
 	*/
 	public void disableDocCtrl();
 
-	/**
+	
+/**
 	 * Get DHTML Editor's IUnknown
 	*/
 	public void getEditorCtrl( Object obj );
 
-	/**
+	
+/**
 	 * property Enabled
 	*/
 	public int getEnabled();
 
-	/**
+	
+/**
 	 * property Enabled
 	*/
 	public void setEnabled( int value );
 
-	/**
+	
+/**
 	 * Saves the currently selected element description
 	*/
 	public void setCurElementDescription();
 
-	/**
+	
+/**
 	 * Registers or revokes event sinks
 	*/
 	public void connectSinks( boolean connect );
 
-	/**
+	
+/**
 	 * Shows current Diagram or ProjectTree selection.
 	*/
 	public void showLastSelectedElement();
 
-	/**
+	
+/**
 	 * Sets Focus to the control window
 	*/
 	public void setFocus();

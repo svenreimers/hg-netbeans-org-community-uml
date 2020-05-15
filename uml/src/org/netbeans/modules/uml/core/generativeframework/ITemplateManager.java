@@ -51,48 +51,66 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.IElement;
 
 public interface ITemplateManager
 {
-	/**
+	
+
+/**
 	 * Expands the passed in template file, using contextElement as the initial element to query against.
 	*/
 	public String expandTemplate( String templateFile, IElement contextElement );
 
-	/**
+	
+
+/**
 	 * Expands the passed in template file, using contextNode as the initial element to query against.
 	*/
 	public String expandTemplateWithNode( String templateFile, Node contextNode );
 
-    /**
+    
+
+/**
      * Gets the IVariableExpander this factory is
      * @return
      */
     public IVariableExpander getVariableExpander();
 
-	/**
+	
+
+/**
 	 * The location of a configuration file that contains Expansion variable definitions.
 	*/
 	public String getConfigLocation();
 
-	/**
+	
+
+/**
 	 * The location of a configuration file that contains Expansion variable definitions.
 	*/
 	public void setConfigLocation( String value );
 
-	/**
+	
+
+/**
 	 * The VariableFactory this TemplateManager will use.
 	*/
 	public IVariableFactory getFactory();
 
-	/**
+	
+
+/**
 	 * The VariableFactory this TemplateManager will use.
 	*/
 	public void setFactory( IVariableFactory value );
 
-	/**
+	
+
+/**
 	 * The absolute path to the directory where expansions are taking place.
 	*/
 	public String getWorkingDirectory();
 
-	/**
+	
+
+/**
 	 * The absolute path to the directory where expansions are taking place.
 	*/
 	public void setWorkingDirectory( String value );

@@ -53,6 +53,7 @@ import java.awt.event.MouseEvent;
 import org.netbeans.api.visual.widget.Scene;
 import org.netbeans.modules.uml.drawingarea.view.DesignerScene;
 
+
 /**
  * modified action to handle case when ends points should be handled by this acxtion
  * default action from visual library cause issues like issue http://www.netbeans.org/issues/show_bug.cgi?id=138008

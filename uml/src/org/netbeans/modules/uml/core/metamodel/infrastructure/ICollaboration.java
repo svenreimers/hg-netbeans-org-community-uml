@@ -50,32 +50,44 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 public interface ICollaboration extends IStructuredClassifier
 {
-	/**
+	
+
+/**
 	 * method AddNestedClassifier
 	*/
 	public void addNestedClassifier( IClassifier classifier );
 
-	/**
+	
+
+/**
 	 * method RemoveNestedClassifier
 	*/
 	public void removeNestedClassifier( IClassifier classifier );
 
-	/**
+	
+
+/**
 	 * property NestedClassifiers
 	*/
 	public ETList<IClassifier> getNestedClassifiers();
 
-	/**
+	
+
+/**
 	 * method AddConstrainingElement
 	*/
 	public void addConstrainingElement( INamedElement element );
 
-	/**
+	
+
+/**
 	 * method RemoveConstrainingElement
 	*/
 	public void removeConstrainingElement( INamedElement element );
 
-	/**
+	
+
+/**
 	 * property ConstrainingElements
 	*/
 	public ETList<INamedElement> getConstrainingElements();

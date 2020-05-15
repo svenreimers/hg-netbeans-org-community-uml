@@ -43,6 +43,7 @@
  */
 
 
+
 /*
  *
  * Created on Jun 11, 2003
@@ -59,41 +60,47 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.IElement;
 public interface ITreeElement extends ITreeItem
 {
 
-   /**
+   
+/**
     * Get the element this item represents.
     *
     * @return The element.
     */
    public IElement getElement();
 
-   /**
+   
+/**
     * Set the element this item represents.
     *
     * @return The element.
     */
    public void setElement(IElement value);
    
-   /** 
+   
+/** 
     * Get the XMIID of the element this node represents.
     * 
     * @return the XMI ID
     */
    public String getXMIID();
    
-   /**
+   
+/**
     * Get the element type for this node.
     * @return the type name.
     */
    public String getElementType();
    
-   /**
+   
+/**
     * Get the expanded element type for this node (used for icons).
     * 
     * @return The expanded type name.
     */
    public String getExpandedElementType();
    
-   /**
+   
+/**
 	* The type of the tree element.
 	* 
 	* @return The type.

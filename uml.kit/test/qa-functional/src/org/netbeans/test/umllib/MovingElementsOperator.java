@@ -72,7 +72,9 @@ public class MovingElementsOperator extends JDialogOperator{
         new JButtonOperator(this, BTN_CANCEL_CAPTION).clickMouse(1);
     }
 
-    /**
+    
+
+/**
      * 
      * @param selected 
      */

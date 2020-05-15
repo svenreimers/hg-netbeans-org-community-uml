@@ -49,32 +49,44 @@ import org.netbeans.modules.uml.core.support.umlsupport.IResultCell;
 
 public interface IArtifactEventsSink
 {
-	/**
+	
+
+/**
 	 * Fired whenever the passed in Artifact's file name is about to change.
 	*/
 	public void onPreFileNameModified( IArtifact pArtifact, String newFileName, IResultCell cell );
 
-	/**
+	
+
+/**
 	 * Fired whenever the passed in Artifact's file name has been changed.
 	*/
 	public void onFileNameModified( IArtifact pArtifact, String oldFileName, IResultCell cell );
 
-	/**
+	
+
+/**
 	 * Fired whenever the passed in Artifact's contents are about to become dirty.
 	*/
 	public void onPreDirty( IArtifact pArtifact, IResultCell cell );
 
-	/**
+	
+
+/**
 	 * Fired whenever the passed in Artifact's contents are dirty.
 	*/
 	public void onDirty( IArtifact pArtifact, IResultCell cell );
 
-	/**
+	
+
+/**
 	 * Fired whenever the passed in Artifact is about to be saved.
 	*/
 	public void onPreSave( IArtifact pArtifact, String fileName, IResultCell cell );
 
-	/**
+	
+
+/**
 	 * Fired whenever the passed in Artifact has been saved.
 	*/
 	public void onSave( IArtifact pArtifact, String fileName, IResultCell cell );

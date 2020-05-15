@@ -43,6 +43,8 @@
  */
 
 
+
+
 /*
  * ClassDiagramVerifier.java
  *
@@ -56,12 +58,14 @@ import java.io.PrintStream;
 import org.netbeans.test.umllib.DiagramElementOperator;
 import org.netbeans.test.umllib.ElementTypes;
 
+
 /**
  * This verifier must be rewritten
  */
 public class CollaborationDiagramVerifier extends AbstractDiagramVerifier{
     //String[] elements =
-    /**
+    
+/**
      * Creates a new instance of CollaborationDiagramVerifier
      * @param diagramName Name of opened diagram for verification
      */
@@ -70,7 +74,9 @@ public class CollaborationDiagramVerifier extends AbstractDiagramVerifier{
     }
     
     
-    /**
+    
+
+/**
      * 
      * @param diagramName 
      * @param log 
@@ -79,7 +85,9 @@ public class CollaborationDiagramVerifier extends AbstractDiagramVerifier{
         super(diagramName, log);
     }
     
-    /**
+    
+
+/**
      * 
      * @param diagramName 
      * @param log 
@@ -89,7 +97,9 @@ public class CollaborationDiagramVerifier extends AbstractDiagramVerifier{
         super(diagramName, log, prefix);
     }
     
-    /**
+    
+
+/**
      * 
      * @param element 
      * @return 
@@ -99,7 +109,9 @@ public class CollaborationDiagramVerifier extends AbstractDiagramVerifier{
         
         return true;
     }
-    /**
+    
+
+/**
      * 
      * @return 
      */

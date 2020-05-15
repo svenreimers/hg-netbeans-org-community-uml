@@ -43,6 +43,7 @@
  */
 
 
+
 /*
  *
  * Created on Jun 11, 2003
@@ -60,7 +61,8 @@ import org.openide.nodes.Node;
  */
 public interface ITreeItem extends Node.Cookie
 {
-   /**
+   
+/**
     * Sets the name of the tree item. The name is not the displayed name.
     * The name is a program name that will not be translated into
     * localized values, and will not have a aliased value.
@@ -69,7 +71,9 @@ public interface ITreeItem extends Node.Cookie
     */
    public void setName(String name);
    
-   /**
+   
+
+/**
     * Gets the name of the tree item. The name is not the displayed name.  
     * The name is a program name that will not be translated into 
     * localized values, and will not have a aliased value.
@@ -78,7 +82,9 @@ public interface ITreeItem extends Node.Cookie
     */
    public String getName();
    
-   /**
+   
+
+/**
     * Sets the displayed name or the alias of the tree item depending on
     * the preferences.
     * 
@@ -86,7 +92,9 @@ public interface ITreeItem extends Node.Cookie
     */
    public void setDisplayedName(String name);
 
-   /**
+   
+
+/**
     * Sets display Name of the property definition.
     * 
     * @param value the display name.
@@ -94,7 +102,9 @@ public interface ITreeItem extends Node.Cookie
     */
    public void setDisplayedName(String value, boolean buildProperties);
    
-   /**
+   
+
+/**
     * Gets the displayed name or the alias of the tree item depending on
     * the preferences.
     * 
@@ -102,7 +112,9 @@ public interface ITreeItem extends Node.Cookie
     */
    public String getDisplayedName();
       
-   /**
+   
+
+/**
     * The path that was used when this item was created.  The items in the
     * path are ITreeItem elements.
     * 
@@ -114,7 +126,9 @@ public interface ITreeItem extends Node.Cookie
    public void setPathAsString(String str);
 
    
-   /**
+   
+
+/**
     * Is this item the same as the passed in one.
     * 
     * @param queryItem The item to test against.
@@ -123,21 +137,27 @@ public interface ITreeItem extends Node.Cookie
     */
    public boolean isSame(ITreeItem queryItem);
    
-   /**
+   
+
+/**
     * Retrieves the parent of this tree item,
     * 
     * @return The parent tree item.
     */
    public ITreeItem getParentItem();
    
-   /**
+   
+
+/**
     * Sets the parent of this tree item,
     * 
     * @return The parent tree item.
     */
    public void setParentItem(ITreeItem parent);
    
-   /** 
+   
+
+/** 
     * Retrieves the top most parent (not including the project).
     * 
     * @return The parent tree item.
@@ -145,28 +165,36 @@ public interface ITreeItem extends Node.Cookie
    public ITreeItem getTopParentItem();
    
    
-   /**
+   
+
+/**
     * Retrieves the top tree element.
     * 
     * @return The Tree Element.
     */
    public ITreeElement getOwningTreeElement();
    
-   /**
+   
+
+/**
     * The type of the tree element.
     * 
     * @return The type.
     */
    public String getType();
    
-   /**
+   
+
+/**
     * Adds a new child to the node.
     * 
     * @param item The child to add.
     */
    public void addChild(ITreeItem item);
    
-   /**
+   
+
+/**
     * Inserts a child into the parent child list.  The new child will be 
     * inserted into the specified location.  If the specified index is 
     * greater than the number of children in the child list the child 
@@ -177,19 +205,25 @@ public interface ITreeItem extends Node.Cookie
     */
    public void insertAt(ITreeItem item, int index);
    
-   /**
+   
+
+/**
     * Remove a child from the node.
     * 
     * @param item The node to remove.
     */
    public void removeChild(ITreeItem item);
    
-   /**
+   
+
+/**
     * Removes all children from the node.
     */
    public void removeAllChildren();
    
-   /**
+   
+
+/**
     * Retrieve a child from the node.  The node to retrieve is specified by its
     * index.
     * 
@@ -198,13 +232,17 @@ public interface ITreeItem extends Node.Cookie
     */
    public ITreeItem getChild(int index);
    
-   /**
+   
+
+/**
     * Sorts the children of the tree item.  The children will be sorted occuring
     * to the default sort order.
     */
    public void sortChildren();
    
-   /**
+   
+
+/**
     * Sorts the children of the tree item.  The children will be sorted occuring
     * to the Comparable interface.
     * 
@@ -214,7 +252,9 @@ public interface ITreeItem extends Node.Cookie
     */
    public void sortChildren(Comparator compare);
    
-   /**
+   
+
+/**
     * Retrieve a collection that contains all of the children contained by the
     * node.  
     * <br>
@@ -226,13 +266,17 @@ public interface ITreeItem extends Node.Cookie
     */
    public Enumeration < ITreeItem > getNodeChildren();
    
-   /**
+   
+
+/**
     * The nodes data.
     * @return The data.
     */
    public IProjectTreeItem getData();
 
-   /**
+   
+
+/**
     * Retrieve the number of children that the node contains.
     * 
     * @return The number of children.
@@ -241,7 +285,9 @@ public interface ITreeItem extends Node.Cookie
    
    //public Node getXMLNode();
    
-   /**
+   
+
+/**
     * Specifies whether or not the node has ever been expanded.  If the
     * node has been expanded before then its children has already been
     * set.  Otherwise, the node has not been completely initialized yet.
@@ -252,7 +298,9 @@ public interface ITreeItem extends Node.Cookie
     */
    public boolean isInitalized();
    
-   /**
+   
+
+/**
     * Specifies whether or not the node has ever been expanded.  If the
     * node has been expanded before then its children has already been
     * set.  Otherwise, the node has not been completely initialized yet.

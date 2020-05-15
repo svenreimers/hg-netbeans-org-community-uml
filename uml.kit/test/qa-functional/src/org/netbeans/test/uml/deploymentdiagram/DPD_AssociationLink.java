@@ -67,6 +67,7 @@ import org.netbeans.test.umllib.exceptions.NotFoundException;
 import org.netbeans.test.umllib.testcases.UMLTestCase;
 import org.netbeans.test.umllib.vrf.LinkVerifier;
 
+
 /**
  *
  * @spec UML/DeploymentDiagram.xml
@@ -95,6 +96,8 @@ public class DPD_AssociationLink extends UMLTestCase {
 
 //------------------------------------------------------------------------------    
     
+
+
 /**
  * @caseblock Association link
  * @usecase Delete a Association link from a diagram by popup menu
@@ -106,6 +109,8 @@ public class DPD_AssociationLink extends UMLTestCase {
         }
     }
     
+
+
 /**
  * @caseblock Association link
  * @usecase Delete a Association link from a diagram by shortcut
@@ -116,6 +121,8 @@ public class DPD_AssociationLink extends UMLTestCase {
             fail("Test failed. Details in log file.");
         }
     }
+
+
 
 /**
  * @caseblock Association link
@@ -128,6 +135,8 @@ public class DPD_AssociationLink extends UMLTestCase {
         }
     }
 
+
+
 /**
  * @caseblock Association link
  * @usecase Invert selection of a Association link
@@ -138,6 +147,8 @@ public class DPD_AssociationLink extends UMLTestCase {
             fail("Test failed. Details in log file.");
         }
     }
+
+
 
 /**
  * @caseblock Association link
@@ -150,6 +161,8 @@ public class DPD_AssociationLink extends UMLTestCase {
         }
     }
 
+
+
 /**
  * @caseblock Association link
  * @usecase Find target element of a Association link
@@ -161,6 +174,8 @@ public class DPD_AssociationLink extends UMLTestCase {
         }
     }
     
+
+
 /**
  * @caseblock Association link
  * @usecase Redirect source element of a Association link
@@ -171,6 +186,8 @@ public class DPD_AssociationLink extends UMLTestCase {
             fail("Test failed. Details in log file.");
         }
     }
+
+
 
 /**
  * @caseblock Association link
@@ -183,6 +200,8 @@ public class DPD_AssociationLink extends UMLTestCase {
         }
     }
 
+
+
 /**
  * @caseblock Association link
  * @usecase Redirect source element of a Association link
@@ -193,6 +212,8 @@ public class DPD_AssociationLink extends UMLTestCase {
             fail("Test failed. Details in log file.");
         }
     }
+
+
 
 /**
  * @caseblock Association link
@@ -205,6 +226,8 @@ public class DPD_AssociationLink extends UMLTestCase {
         }
     }
     
+
+
 /**
  * @caseblock Association link
  * @usecase Redirect target element of a Association link
@@ -215,6 +238,8 @@ public class DPD_AssociationLink extends UMLTestCase {
             fail("Test failed. Details in log file.");
         }
     }
+
+
 
 /**
  * @caseblock Association link
@@ -227,6 +252,8 @@ public class DPD_AssociationLink extends UMLTestCase {
         }
     }
 
+
+
 /**
  * @caseblock Association link
  * @usecase Redirect target element of a Association link
@@ -237,6 +264,8 @@ public class DPD_AssociationLink extends UMLTestCase {
             fail("Test failed. Details in log file.");
         }
     }
+
+
 
 /**
  * @caseblock Association link

@@ -42,6 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
+
+
 /*
  * Created on Apr 22, 2003
  *
@@ -94,14 +96,18 @@ public class LanguageManager implements ILanguageManager
 	//<LangName, Vector<ILangaugeFilter>>
 	private Hashtable<String, ETList<ILanguageFilter>> m_FilterMap = new Hashtable();
 
-	/**
+	
+
+/**
 	 * 
 	 */
 	public LanguageManager() {
 		initializeManager();
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Retrieves the RequestProcessor progid associated with the given file.
 	 *
@@ -128,7 +134,9 @@ public class LanguageManager implements ILanguageManager
 		return retContext;
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Retrieves the current, absolute path to the Languages.etc
 	 * configuration file.
@@ -156,7 +164,9 @@ public class LanguageManager implements ILanguageManager
 		return retLoc;
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Sets the location of the configuration file to use. This
 	 * must be an absolute path.
@@ -176,7 +186,9 @@ public class LanguageManager implements ILanguageManager
 		initializeManager();
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Retrieves the instantiation directive for the RequestProcessor 
 	 * associated with the passed-in language name.
@@ -204,7 +216,9 @@ public class LanguageManager implements ILanguageManager
 		return retContext;
 	}
 
-	/** 
+	
+
+/** 
 	 * Retrieves the language defintion from the language manager.
 	 * 
 	 * @param langName [in] The name of the language
@@ -249,7 +263,9 @@ public class LanguageManager implements ILanguageManager
 		return retLang;
 	}
 
-	/**
+	
+
+/**
 	 * Retrieves a language parser for the specified language.  A language can support
 	 * more than one way to parse a stream.  Examples of different parses
 	 * are a complete parser, a parser that retrieves classes only, and a parser that
@@ -270,7 +286,9 @@ public class LanguageManager implements ILanguageManager
 		return retParser;
 	}
 
-	/**
+	
+
+/**
 	 * Retrieves a langauge parser that will parse the specified file.  The parser will be 
 	 * selected based on the file extension.  A language can support more than one way
 	 * to parse a stream.  Examples of different parses are a complete parser,
@@ -292,7 +310,9 @@ public class LanguageManager implements ILanguageManager
 		return retParser;
 	}
 
-	/**
+	
+
+/**
 	 * Retrieves the name of the languages that are supported by the Language Manager.
 	 * 
 	 * @param pVal [out] The list of language names
@@ -302,7 +322,9 @@ public class LanguageManager implements ILanguageManager
 		return m_LanguageNames;
 	}
 
-	/**
+	
+
+/**
 	 * Retrieves the language definition from the language manager.  The file name is 
 	 * used to determine the language defintion to retrieve.
 	 * 
@@ -324,7 +346,9 @@ public class LanguageManager implements ILanguageManager
 		return retLang;
 	}
 
-	/**
+	
+
+/**
 	 * Retrieves the languages that are supported by the Language Manager.
 	 * 
 	 * @param pVal [out] The collection of Language objects
@@ -350,7 +374,9 @@ public class LanguageManager implements ILanguageManager
 		return retVal;
 	}
 
-	/**
+	
+
+/**
 	 * Retrieves the default data type for a new attribute.  If a data type
 	 * is not defined as the default type then the default type will be 
 	 * retrieved from the UML language.
@@ -402,7 +428,9 @@ public class LanguageManager implements ILanguageManager
 		return retType;
 	}
 
-	/**
+	
+
+/**
 	 * Retrieves an attributes default data type for a specified language.
 	 *
 	 * @param pLanguage [in] The language that specifies the default data type
@@ -414,7 +442,9 @@ public class LanguageManager implements ILanguageManager
 		return pDataType;
 	}
 
-	/**
+	
+
+/**
 	 * Retrieves the default data type for a new operation.  If a data type is 
 	 * not defined as the default type then the default type will be retrieved
 	 * from the UML language.
@@ -466,7 +496,9 @@ public class LanguageManager implements ILanguageManager
 		return retType;
 	}
 
-	/**
+	
+
+/**
 	 * Retrieves an operation default data type for a specified language.
 	 *
 	 * @param pLanguage [in] The language that specifies the default data type
@@ -478,7 +510,9 @@ public class LanguageManager implements ILanguageManager
 		return pDataType;
 	}
 
-	/**
+	
+
+/**
 	 * Retrieves the default langauge information for a specified element.
 	 * The name of the default language will be retrieved from the project that 
 	 * contains a specified element.
@@ -502,7 +536,9 @@ public class LanguageManager implements ILanguageManager
 		return retLang;
 	}
 
-	/** 
+	
+
+/** 
 	 * Returns a list of file extensions for the specified language
 	 * 
 	 * @param language[in] the language you want file extensions for
@@ -532,7 +568,9 @@ public class LanguageManager implements ILanguageManager
 		return retVal;
 	}
 
-	/** 
+	
+
+/** 
 	 * Returns a list of file extensions for the specified language
 	 * 
 	 * @param language[in] the language you want file extensions for
@@ -551,7 +589,9 @@ public class LanguageManager implements ILanguageManager
 		return retVal;
 	}
 
-	/**
+	
+
+/**
 	 * Retrieves the list of supported language.  The output will 
 	 * be a delemeted string.  The deleminter is '|'.
 	 *
@@ -581,7 +621,9 @@ public class LanguageManager implements ILanguageManager
 		return retLang;
 	}
 
-	/** 
+	
+
+/** 
 	 * returns a "default" setting for the language
 	 * 
 	 * @param language[in] the name of the language to get the default for
@@ -599,7 +641,9 @@ public class LanguageManager implements ILanguageManager
 		return retVal;
 	}
 
-	/** 
+	
+
+/** 
 	 * Returns the default extension for a source file for a particular language
 	 * 
 	 * @param language[in] the language
@@ -616,7 +660,9 @@ public class LanguageManager implements ILanguageManager
 		return retVal;
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Retrieves all the languages that contain ICodeGenerationScripts
 	 *
@@ -653,7 +699,9 @@ public class LanguageManager implements ILanguageManager
 		return retLangs;
 	}
 
-	/**
+	
+
+/**
 	 * Retrieves a collection of file filters for a specified language.
 	 *
 	 * @param langaugeName [in] The name of the language.
@@ -684,7 +732,9 @@ public class LanguageManager implements ILanguageManager
 		return retVal;
 	}
 
-	/**
+	
+
+/**
 	 * Retrieves a collection of file filters for a specified language.
 	 *
 	 */
@@ -699,7 +749,9 @@ public class LanguageManager implements ILanguageManager
 		return retVal;
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Populates this manager with the contents of the given
 	 * configuration file.
@@ -730,7 +782,9 @@ public class LanguageManager implements ILanguageManager
 		}
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Determines the default location for the Languages.etc
 	 * file.
@@ -751,7 +805,9 @@ public class LanguageManager implements ILanguageManager
 		return retLoc;
 	}
 
-	/**
+	
+
+/**
 	 * Retrieves the language details from the configuration file.  The configuration 
 	 * file location will be retrieved from the applications perferences.  After the
 	 * language is retrieved it will be added to the language lookup table.
@@ -858,7 +914,9 @@ public class LanguageManager implements ILanguageManager
 		return retDoc;
 	}
 
-	/**
+	
+
+/**
 	 * Retrieves the XML Document that is the Language configuration.
 	 * 
 	 * @param pVal [out] The configuraton document
@@ -874,7 +932,9 @@ public class LanguageManager implements ILanguageManager
 		return retDoc;
 	}
 
-	/**
+	
+
+/**
 	 * Retrieves the details about a specific language.  
 	 *
 	 * @param pLanguageNode [in] The XML node that represents the language
@@ -900,7 +960,9 @@ public class LanguageManager implements ILanguageManager
 		return retLang;
 	}
 
-	/**
+	
+
+/**
 	 * Retrieves the syntax of a language from a XML file and 
 	 * initializes the ILanguage object
 	 *
@@ -933,7 +995,9 @@ public class LanguageManager implements ILanguageManager
 		pLang.setSyntax(pSyntax);
 	}
 
-	/**
+	
+
+/**
 	 * Retrieves the information about a syntax token from a XML file 
 	 * and initializes the ILanguagae object
 	 *
@@ -969,7 +1033,9 @@ public class LanguageManager implements ILanguageManager
 		return retToken;
 	}
 
-	/**
+	
+
+/**
 	 * Retrieves the code generation scrips for a language from 
 	 * a XML file and initializes the ILanguage object
 	 *
@@ -1009,7 +1075,9 @@ public class LanguageManager implements ILanguageManager
 		pLang.setCodeGenerationScripts(pScripts);
 	}
 
-	/**
+	
+
+/**
 	 * Retrieves a code generation script information from a XML file 
 	 * and initializes the ILanguagae object
 	 *
@@ -1031,7 +1099,9 @@ public class LanguageManager implements ILanguageManager
 		return retScript;
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Gathers any nodes that override the Default ExpansionVariables and place those on the Language passed in.
 	 *
@@ -1083,7 +1153,9 @@ public class LanguageManager implements ILanguageManager
 		}
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Retrieves the default configuration location. On a debug box,
 	 * this is typically c:\\development\\uml\\config
@@ -1106,7 +1178,9 @@ public class LanguageManager implements ILanguageManager
 		return homeLoc;
 	}
 
-	/**
+	
+
+/**
 	 * Retrieves the parsers for a language from a XML file and 
 	 * initializes the ILanguage object
 	 *
@@ -1130,7 +1204,9 @@ public class LanguageManager implements ILanguageManager
 		}
 	}
 
-	/**
+	
+
+/**
 	 * Retrieves the context for a language from a XML file and 
 	 * initializes the ILanguage object
 	 *
@@ -1154,7 +1230,9 @@ public class LanguageManager implements ILanguageManager
 		}
 	}
 
-	/**
+	
+
+/**
 	 * Retrieves the libraries for a language from a XML file and 
 	 * initializes the ILanguage object
 	 *
@@ -1198,7 +1276,9 @@ public class LanguageManager implements ILanguageManager
             }
         }
         
-	/**
+	
+
+/**
 	 * Retrieve the DOM node that specifies how to format a
 	 * model elments data.  
 	 *
@@ -1215,7 +1295,9 @@ public class LanguageManager implements ILanguageManager
 		}
 	}
 
-	/**
+	
+
+/**
 	 * Install of the langauge that are supported by language manager.
 	 * A XML configuration file is used to define the languages supported
 	 * by the language manager.
@@ -1252,7 +1334,9 @@ public class LanguageManager implements ILanguageManager
 		}
 	}
 
-	/**
+	
+
+/**
 	 * Retrieves all of the extensions to use when retrieving a language
 	 * for a specific file.  Each extension must map to one and only one
 	 * language.
@@ -1309,7 +1393,9 @@ public class LanguageManager implements ILanguageManager
 		}
 	}
 
-	/**
+	
+
+/**
 	 * Retrieve the language definition 
 	 *
 	 * @param filename [in] The file name.
@@ -1324,13 +1410,8 @@ public class LanguageManager implements ILanguageManager
 		return retVal;
 	}
 
-	/** 
-	 * Loads "default" settings for a particular language
-	 * 
-	 * @param manip[in] the XML manipulation object
-	 * @param pLanguageNode[in] the XML DOM Node to load the data from
-	 * @param pLang[in] the ILanguage object to load defaults for.
-	 */
+	
+
 	private void getDefaults(Node pLanguageNode, ILanguage pLang)
 	{
 		List pNodeList = pLanguageNode.selectNodes("Defaults/Default");
@@ -1368,7 +1449,9 @@ public class LanguageManager implements ILanguageManager
 		}
 	}
 
-	/**
+	
+
+/**
 	 * Retrieves the name of the language and initializes the ILanguage
 	 * object
 	 *
@@ -1408,7 +1491,9 @@ public class LanguageManager implements ILanguageManager
             pLang.setCollectionTypes(types); 
         }
             
-        /**
+        
+
+/**
 	 * Retrieves a collection type information from a XML file and initializes 
 	 * the ILanguage object
 	 *
@@ -1435,7 +1520,9 @@ public class LanguageManager implements ILanguageManager
 		return retVal;
 	}
         
-	/**
+	
+
+/**
 	 * Retrieves the data types from a XML file and initializes the ILanguage
 	 * object
 	 *
@@ -1479,7 +1566,9 @@ public class LanguageManager implements ILanguageManager
 		pLang.setDataTypes(pDataTypes); 
 	}
 
-	/**
+	
+
+/**
 	 * Retrieves a data type information from a XML file and initializes 
 	 * the ILanguage object
 	 *

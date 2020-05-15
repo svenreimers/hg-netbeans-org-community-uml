@@ -63,7 +63,8 @@ public class ADApplication implements IADApplication //, IProjectUpgradeEventsSi
 {
 	private IApplication m_Application = null;
 
-	/**
+	
+/**
 	 * 
 	 */
 	public ADApplication()
@@ -72,7 +73,9 @@ public class ADApplication implements IADApplication //, IProjectUpgradeEventsSi
 		createApplication();
 	}
 
-	/**
+	
+
+/**
 	 * CoCreates and application and stores it as a member variable.  Where necessary CADApplication
 	 * routines will simply dispatch to the wrapped IApplication.
 	 */
@@ -95,7 +98,9 @@ public class ADApplication implements IADApplication //, IProjectUpgradeEventsSi
 		}
 	}
 
-	/**
+	
+
+/**
 	 * Returns the IApplication that this CADApplication wraps.  You'll need this function
 	 * when you desire to retrieve events from the IApplication interface.  You need to advise
 	 * to what is returned.
@@ -107,7 +112,9 @@ public class ADApplication implements IADApplication //, IProjectUpgradeEventsSi
 		return m_Application;
 	}
 
-	/**
+	
+
+/**
 	 * Replaces the currently wrapped IApplication with the argument one.
 	 *
 	 * @param newVal The IApplication should now be wrapped
@@ -117,7 +124,9 @@ public class ADApplication implements IADApplication //, IProjectUpgradeEventsSi
 		m_Application = value;
 	}
 
-	/**
+	
+
+/**
 	 * This is a passthrough to the IApplication that is kept as a member variable.
 	 *
 	 * @param newProject[out]
@@ -170,7 +179,9 @@ public class ADApplication implements IADApplication //, IProjectUpgradeEventsSi
 		return retProj;
 	}
 	
-	/**
+	
+
+/**
 	 * This is a passthrough to the IApplication that is kept as a member variable.
 	 *
 	 * @param fileName[in]
@@ -206,7 +217,9 @@ public class ADApplication implements IADApplication //, IProjectUpgradeEventsSi
 		return retProj;
 	}
 	
-	/**
+	
+
+/**
 	 * This is a passthrough to the IApplication that is kept as a member variable.
 	 *
 	 * @param project[in]
@@ -220,7 +233,9 @@ public class ADApplication implements IADApplication //, IProjectUpgradeEventsSi
 		}
 	}
 
-	/**
+	
+
+/**
 	 * This is a passthrough to the IApplication that is kept as a member variable.
 	 *
 	 * save[in]
@@ -233,7 +248,9 @@ public class ADApplication implements IADApplication //, IProjectUpgradeEventsSi
 		}
 	}
 	
-	/**
+	
+
+/**
 	 * This is a passthrough to the IApplication that is kept as a member variable.
 	 *
 	 * @param pVal[out]
@@ -258,7 +275,9 @@ public class ADApplication implements IADApplication //, IProjectUpgradeEventsSi
 		return retVal;
 	}
 	
-	/**
+	
+
+/**
 	 * This is a passthrough to the IApplication that is kept as a member variable.
 	 *
 	 * @param pWorkspace [in] The workspace the project should be in
@@ -334,7 +353,9 @@ public class ADApplication implements IADApplication //, IProjectUpgradeEventsSi
 		}
 	}
 	
-	/**
+	
+
+/**
 	 * 
 	 */
 	private void revokeDispatchers()
@@ -347,7 +368,9 @@ public class ADApplication implements IADApplication //, IProjectUpgradeEventsSi
 		}
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Returns the number of closed projects.
 	 *
@@ -366,7 +389,9 @@ public class ADApplication implements IADApplication //, IProjectUpgradeEventsSi
 		return num;
 	}
 	
-	/**
+	
+
+/**
 	 *
 	 * Are all the WSProjects owned by this element opened.
 	 *
@@ -414,7 +439,9 @@ public class ADApplication implements IADApplication //, IProjectUpgradeEventsSi
 	}
         
         
-         /**
+         
+
+/**
 	 * This is a passthrough to the IApplication.save 
 	 *
 	 * @param project[in]

@@ -46,6 +46,8 @@
 package org.netbeans.modules.uml.core.reverseengineering.reframework;
 import org.netbeans.modules.uml.core.AbstractUMLTestCase;
 
+
+
 /**
  * Test cases for InitializeEvent.
  */
@@ -58,7 +60,9 @@ public class InitializeEventTestCase extends AbstractUMLTestCase
 
     private IInitializeEvent ie;
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see junit.framework.TestCase#setUp()
      */
     protected void setUp() throws Exception

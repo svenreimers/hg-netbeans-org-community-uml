@@ -49,17 +49,23 @@ import org.netbeans.modules.uml.core.eventframework.IEventPayload;
 
 public interface IUMLMessagingEventDispatcher extends IEventDispatcher
 {
-	/**
+	
+
+/**
 	 * Registers a sink that will received all notifications concerning Messaging.
 	*/
 	public void registerMessengerEvents( IMessengerEventsSink handler );
 
-	/**
+	
+
+/**
 	 * Removes a sink listening for messaging events.
 	*/
 	public void revokeMessengerSink( IMessengerEventsSink handler );
 
-	/**
+	
+
+/**
 	 * Calling this method will result in the firing of any listeners interested in this event.
 	*/
 	public void fireMessageAdded( IMessageData pMessage, IEventPayload payload );

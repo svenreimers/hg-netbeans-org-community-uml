@@ -49,7 +49,9 @@ import java.util.Iterator;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.FactoryRetriever;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.IElement;
 import org.netbeans.modules.uml.core.AbstractUMLTestCase;
-import org.netbeans.modules.uml.core.support.umlutils.ETList;/**
+import org.netbeans.modules.uml.core.support.umlutils.ETList;
+
+/**
  * Test cases for ActivityPartition.
  */
 public class ActivityPartitionTestCase extends AbstractUMLTestCase
@@ -61,7 +63,9 @@ public class ActivityPartitionTestCase extends AbstractUMLTestCase
 
     private IActivityPartition activityPartition;
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see junit.framework.TestCase#setUp()
      */
     protected void setUp() throws Exception
@@ -73,7 +77,9 @@ public class ActivityPartitionTestCase extends AbstractUMLTestCase
 		project.addElement(activityPartition);
     }
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see junit.framework.TestCase#tearDown()
      */
     protected void tearDown() throws Exception

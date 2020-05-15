@@ -80,7 +80,9 @@ public class PreferenceDialogTableCellEditor extends AbstractCellEditor
 	private int m_CurRow = 0;
 	private JTable m_Table = null;
 	private Component m_EditingComponent = null;
-	/**
+	
+
+/**
 	 * 
 	 */
 	public PreferenceDialogTableCellEditor(PreferenceDialogUI ui)
@@ -89,7 +91,9 @@ public class PreferenceDialogTableCellEditor extends AbstractCellEditor
 		m_UI = ui;
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see javax.swing.table.TableCellEditor#getTableCellEditorComponent(javax.swing.JTable, java.lang.Object, boolean, int, int)
 	 */
 	public Component getTableCellEditorComponent(JTable table, 
@@ -222,7 +226,9 @@ public class PreferenceDialogTableCellEditor extends AbstractCellEditor
 		return retObj;
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see javax.swing.CellEditor#getCellEditorValue()
 	 */
 	public Object getCellEditorValue()

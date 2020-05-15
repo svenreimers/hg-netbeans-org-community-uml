@@ -72,7 +72,9 @@ public class ElementData {
     private DefinitionPropertyBuilder builder = DefinitionPropertyBuilder.instance();
     private Vector multiRanges;
     
-    /**
+    
+
+/**
      * Creates a new instance of ElementData
      */
     public ElementData(IPropertyElement element) {

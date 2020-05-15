@@ -42,11 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : ActivityNode.java
- * Created on : Sep 16, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.metamodel.common.commonactivities;
 
 import org.netbeans.modules.uml.core.metamodel.core.foundation.ElementCollector;
@@ -61,7 +58,8 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 public class ActivityNode extends RedefinableElement implements IActivityNode
 {
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivityNode#addGroup(org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivityGroup)
      */
     public void addGroup(final IActivityGroup pGroup)
@@ -79,7 +77,9 @@ public class ActivityNode extends RedefinableElement implements IActivityNode
 
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivityNode#addIncomingEdge(org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivityEdge)
      */
     public void addIncomingEdge(final IActivityEdge pEdge)
@@ -96,7 +96,9 @@ public class ActivityNode extends RedefinableElement implements IActivityNode
 
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivityNode#addOutgoingEdge(org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivityEdge)
      */
     public void addOutgoingEdge(final IActivityEdge pEdge)
@@ -113,7 +115,9 @@ public class ActivityNode extends RedefinableElement implements IActivityNode
 
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivityNode#getActivity()
      */
     public IActivity getActivity()
@@ -121,7 +125,9 @@ public class ActivityNode extends RedefinableElement implements IActivityNode
 		return OwnerRetriever.getOwnerByType(this, IActivity.class);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivityNode#getGroups()
      */
     public ETList<IActivityGroup> getGroups()
@@ -130,7 +136,9 @@ public class ActivityNode extends RedefinableElement implements IActivityNode
             retrieveElementCollectionWithAttrIDs(this, "group", IActivityGroup.class);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivityNode#getIncomingEdges()
      */
     public ETList<IActivityEdge> getIncomingEdges()
@@ -139,7 +147,9 @@ public class ActivityNode extends RedefinableElement implements IActivityNode
             retrieveElementCollectionWithAttrIDs(this, "incoming", IActivityEdge.class);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivityNode#getOutgoingEdges()
      */
     public ETList<IActivityEdge> getOutgoingEdges()
@@ -148,7 +158,9 @@ public class ActivityNode extends RedefinableElement implements IActivityNode
             retrieveElementCollectionWithAttrIDs(this, "outgoing", IActivityEdge.class);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivityNode#removeGroup(org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivityGroup)
      */
     public void removeGroup(final IActivityGroup pGroup)
@@ -166,7 +178,9 @@ public class ActivityNode extends RedefinableElement implements IActivityNode
 
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivityNode#removeIncomingEdge(org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivityEdge)
      */
     public void removeIncomingEdge(final IActivityEdge pEdge)
@@ -183,7 +197,9 @@ public class ActivityNode extends RedefinableElement implements IActivityNode
         );
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivityNode#removeOutgoingEdge(org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivityEdge)
      */
     public void removeOutgoingEdge(final IActivityEdge pEdge)
@@ -200,7 +216,9 @@ public class ActivityNode extends RedefinableElement implements IActivityNode
         );
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivityNode#setActivity(org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivity)
      */
     public void setActivity(IActivity value)

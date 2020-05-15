@@ -49,6 +49,7 @@ import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 
+
 /**
  * <p>Title: </p>
  * <p>Description: </p>
@@ -153,7 +154,9 @@ public interface INamedElement extends IElement
  public String getNameWithAlias();
  public void setNameWithAlias(String newVal);
  
- /**
+ 
+
+/**
  * The default behavior to this method is to return true if the names of the
  * two elements being compared are same. Subclasses should override to 
  * implement class specific <em>isSimilar</em> behavior.

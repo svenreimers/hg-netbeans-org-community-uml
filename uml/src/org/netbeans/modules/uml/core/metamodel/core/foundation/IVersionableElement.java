@@ -45,6 +45,7 @@
 
 package org.netbeans.modules.uml.core.metamodel.core.foundation;
 
+
 /**
  * <p>Title: </p>
  * <p>Description: </p>
@@ -58,7 +59,8 @@ import org.dom4j.Node;
 
 
 public interface IVersionableElement {
-    /**
+    
+/**
      * Sets the versionable element (aggregator) which delegates to this.
      * This is important because, when events are fired by this versionable
      * element, the element being modified must be correctly represented as the

@@ -141,7 +141,7 @@ public class Merger implements IUMLParserEventsSink {
 	// JavaSource-> [ UML XML model->UML core model ] -> JavaSource
 	// whereis codegen adds Java specific model in between
 	// UML core model -> Java[Info* classes] -> JavaSource
-	// The above reverse engineering for merging in generic case 
+	
 	// should be done into and logical merging analysis should be performed at 
 	// the level of platform specific (in this case would be Java) model  
 
@@ -231,7 +231,9 @@ public class Merger implements IUMLParserEventsSink {
    }
 
 
-    /**
+    
+
+/**
      *  merge all new imports into old ones if 
      *  not present already
      */
@@ -287,7 +289,9 @@ public class Merger implements IUMLParserEventsSink {
     }
 
 
-    /**
+    
+
+/**
      *  ID Marker based match takes precedence
      *  TBD with an element moved from one owner to another
      *  
@@ -312,7 +316,9 @@ public class Merger implements IUMLParserEventsSink {
 	
     }
 
-    /**
+    
+
+/**
      *  ID Marker based match takes precedence
      *  TBD with an element moved from one owner to another
      *  
@@ -444,7 +450,9 @@ public class Merger implements IUMLParserEventsSink {
     }
 
 
-    /**
+    
+
+/**
      *  
      *  
      */

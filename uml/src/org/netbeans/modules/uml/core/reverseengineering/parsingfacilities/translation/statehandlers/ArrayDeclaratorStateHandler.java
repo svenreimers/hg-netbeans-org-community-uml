@@ -43,11 +43,8 @@
  */
 
 
-/*
- * File       : ArrayDeclartorStateHandler.java
- * Created on : Dec 9, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.statehandlers;
 
 import org.dom4j.Node;
@@ -71,7 +68,9 @@ public class ArrayDeclaratorStateHandler extends StateHandler
         m_DimensionSpecifies = false;
     }
 
-    /**
+    
+
+/**
      * Creates a new state handler.  The returned state handler may be a
      * pointer to <I>this</I> if the state handler also handles the new
      * state.  If the new state is not handle at all NULL is returned.
@@ -115,7 +114,9 @@ public class ArrayDeclaratorStateHandler extends StateHandler
         return retVal;
     }
 
-    /**
+    
+
+/**
      * The expression handler will process the token.
      *
      * @param pToken [in] The token to be processed.
@@ -137,7 +138,9 @@ public class ArrayDeclaratorStateHandler extends StateHandler
         }
     }
 
-    /**
+    
+
+/**
      * Notifies the state handler that a state has completed.
      *
      * @param xstring& [in] The name of the completed state.
@@ -170,7 +173,9 @@ public class ArrayDeclaratorStateHandler extends StateHandler
     }
 
 
-    /**
+    
+
+/**
      * Checks if the association that represent the attribute should be
      * an aggregation.
      *
@@ -181,7 +186,9 @@ public class ArrayDeclaratorStateHandler extends StateHandler
         return m_IsAggregation;
     }
 
-    /**
+    
+
+/**
      * Checks if the association that represent the attribute should be
      * an composition.
      *
@@ -192,7 +199,9 @@ public class ArrayDeclaratorStateHandler extends StateHandler
         return false;
     }
 
-    /**
+    
+
+/**
      * Sets the type of association should be created.  If the node is an
      * attribute and the type is not a primitve there should be a
      * asociation created.  SetAssociationType will call IsAggregation

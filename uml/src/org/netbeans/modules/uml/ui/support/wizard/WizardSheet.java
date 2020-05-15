@@ -142,10 +142,8 @@ public abstract class WizardSheet extends JCenterDialog implements IWizardSheet
         return true;
     }
     
-    /**
-     * Enables us to adjust the panel size to handle larger fonts
-     * CBeckham
-     */
+    
+
     private Dimension setPanelSize()
     {
         
@@ -276,7 +274,9 @@ public abstract class WizardSheet extends JCenterDialog implements IWizardSheet
             0, // ipadx
             0));
         
-                /*pnlButtonBar.add(spacer2, new GridBagConstraints(
+                
+
+/*pnlButtonBar.add(spacer2, new GridBagConstraints(
                 5, 0, // gridx, gridy
                 1, 1, // gridwidth, gridheight
                 0.0, 0.0, // weightx, weighty
@@ -310,7 +310,9 @@ public abstract class WizardSheet extends JCenterDialog implements IWizardSheet
         this.addActionListeners();
     }
     
-    /**
+    
+
+/**
      * @return
      */
     protected String getCancelButtonCaption()
@@ -318,7 +320,9 @@ public abstract class WizardSheet extends JCenterDialog implements IWizardSheet
         return WizardResouces.getString("WizardSheet.CANCEL_BTN"); //$NON-NLS-1$
     }
     
-    /**
+    
+
+/**
      * @return
      */
     protected String getCommitButtonCaption()
@@ -326,7 +330,9 @@ public abstract class WizardSheet extends JCenterDialog implements IWizardSheet
         return WizardResouces.getString("WizardSheet.COMMIT_BTN"); //$NON-NLS-1$
     }
     
-    /**
+    
+
+/**
      * @return
      */
     protected String getNextButtonCaption()
@@ -334,7 +340,9 @@ public abstract class WizardSheet extends JCenterDialog implements IWizardSheet
         return WizardResouces.getString("WizardSheet.NEXT_BTN"); //$NON-NLS-1$
     }
     
-    /**
+    
+
+/**
      * @return
      */
     protected String getBackButtonCaption()
@@ -342,7 +350,9 @@ public abstract class WizardSheet extends JCenterDialog implements IWizardSheet
         return WizardResouces.getString("WizardSheet.BACK_BTN"); //$NON-NLS-1$
     }
     
-    /**
+    
+
+/**
      * @return
      */
     protected boolean canAddNavigationButtons()

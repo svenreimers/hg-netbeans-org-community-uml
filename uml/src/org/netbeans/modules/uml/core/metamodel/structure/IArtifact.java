@@ -50,52 +50,72 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 public interface IArtifact extends IClassifier
 {
-	/**
+	
+
+/**
 	 * method AddImplementedElement
 	*/
 	public void addImplementedElement( INamedElement comp );
 
-	/**
+	
+
+/**
 	 * method RemoveImplementedElement
 	*/
 	public void removeImplementedElement( INamedElement comp );
 
-	/**
+	
+
+/**
 	 * property ImplementedElements
 	*/
 	public ETList<INamedElement> getImplementedElements();
 
-	/**
+	
+
+/**
 	 * method AddDeployment
 	*/
 	public void addDeployment( IDeployment dep );
 
-	/**
+	
+
+/**
 	 * method RemoveDeployment
 	*/
 	public void removeDeployment( IDeployment dep );
 
-	/**
+	
+
+/**
 	 * property Deployments
 	*/
 	public ETList<IDeployment> getDeployments();
 
-	/**
+	
+
+/**
 	 * property Content
 	*/
 	public IDeploymentSpecification getContent();
 
-	/**
+	
+
+/**
 	 * property Content
 	*/
 	public void setContent( IDeploymentSpecification value );
 
-	/**
+	
+
+/**
 	 * The absolute path to the source file.
 	*/
 	public String getFileName();
 
-	/**
+	
+
+/**
 	 * The absolute path to the source file.
 	*/
 	public void setFileName( String value );

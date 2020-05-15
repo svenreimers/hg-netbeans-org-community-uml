@@ -50,63 +50,85 @@ import org.netbeans.modules.uml.core.metamodel.diagrams.IProxyDiagram;
 
 public interface IPresentationTarget
 {
-	/**
+	
+
+/**
 	 * The path to the diagram filename.
 	*/
 	public String getDiagramFilename();
 
-	/**
+	
+
+/**
 	 * The path to the diagram filename.
 	*/
 	public void setDiagramFilename( String value );
 
-	/**
+	
+
+/**
 	 * The XMIID of the presentation element.
 	*/
 	public String getPresentationID();
 
-	/**
+	
+
+/**
 	 * The XMIID of the presentation element.
 	*/
 	public void setPresentationID( String value );
 
-	/**
+	
+
+/**
 	 * If the diagram is open, here's the open diagram.
 	*/
 	public IDiagram getOpenDiagram();
 
-	/**
+	
+
+/**
 	 * If the diagram is open, here's the open diagram.
 	*/
 	public void setOpenDiagram( IDiagram value );
 
-	/**
+	
+
+/**
 	 * Returns the proxy diagram.
 	*/
 	public IProxyDiagram getProxyDiagram();
 
-	/**
+	
+
+/**
 	 * gets The XMIID of the model element to find on the diagram and navigate to.  
 	 * This is not as exact as the pe xmiid because there could be multiple PEs on a 
 	 * diagram for a given ME.
 	*/
 	public String getModelElementID();
 	
-	/**
+	
+
+/**
 	 * sets The XMIID of the model element to find on the diagram and navigate to.  
 	 * This is not as exact as the pe xmiid because there could be multiple PEs on a 
 	 * diagram for a given ME.
 	*/
   	public void setModelElementID(String newVal);
 
-	/**
+	
+
+/**
 	 * sets The TopLevelXMIID of the model element to find on the diagram and navigate 
 	 * to.  This is not as exact as the pe xmiid because there could be multiple PEs on 
 	 * a diagram for a given ME.  
 	*/
   	public void setTopLevelID(String newVal);
 
-	/**
+	
+
+/**
 	 * gets The TopLevelXMIID of the model element to find on the diagram and navigate 
 	 * to.  This is not as exact as the pe xmiid because there could be multiple PEs on 
 	 * a diagram for a given ME.  

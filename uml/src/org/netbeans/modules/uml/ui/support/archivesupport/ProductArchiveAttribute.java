@@ -64,7 +64,9 @@ public class ProductArchiveAttribute implements IProductArchiveAttribute
 		super();
 	}
 
-	/**
+	
+
+/**
 	 * Gets the name of this attribute
 	 */
 	public String getName()
@@ -72,7 +74,9 @@ public class ProductArchiveAttribute implements IProductArchiveAttribute
 		return m_Node != null ? m_Node.getName() : null;
 	}
 
-	/**
+	
+
+/**
 	 * Gets the value of this attribute.
 	 *
 	 * @param pVal
@@ -82,7 +86,9 @@ public class ProductArchiveAttribute implements IProductArchiveAttribute
 		return m_Node != null ? m_Node.getStringValue() : null;
 	}
 
-	/**
+	
+
+/**
 	 * Sets the value of this attribute.
 	 *
 	 * @param newVal
@@ -112,7 +118,9 @@ public class ProductArchiveAttribute implements IProductArchiveAttribute
 		m_Node = value;
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.support.archivesupport.IProductArchiveAttribute#getLongValue()
 	 */
 	public long getLongValue()
@@ -136,7 +144,9 @@ public class ProductArchiveAttribute implements IProductArchiveAttribute
 		return 0L;
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.support.archivesupport.IProductArchiveAttribute#getStringValue()
 	 */
 	public String getStringValue()
@@ -154,7 +164,9 @@ public class ProductArchiveAttribute implements IProductArchiveAttribute
       return "";
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.support.archivesupport.IProductArchiveAttribute#getBoolValue()
 	 */
 	public boolean getBoolValue()
@@ -172,7 +184,9 @@ public class ProductArchiveAttribute implements IProductArchiveAttribute
       return false;
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.support.archivesupport.IProductArchiveAttribute#getDoubleValue()
 	 */
 	public double getDoubleValue()

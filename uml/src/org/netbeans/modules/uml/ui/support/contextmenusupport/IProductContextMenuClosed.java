@@ -47,7 +47,9 @@ package org.netbeans.modules.uml.ui.support.contextmenusupport;
 
 public interface IProductContextMenuClosed
 {
-	/**
+	
+
+/**
 	 * Called when the menu gets closed
 	*/
 	public long menuClosed();

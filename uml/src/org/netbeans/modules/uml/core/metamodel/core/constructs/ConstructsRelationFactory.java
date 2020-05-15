@@ -52,7 +52,9 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.TypedFactoryRetri
 public class ConstructsRelationFactory implements IConstructsRelationFactory
 {
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.constructs.IConstructsRelationFactory#createExtend(org.netbeans.modules.uml.core.metamodel.core.constructs.IUseCase, org.netbeans.modules.uml.core.metamodel.core.constructs.IUseCase)
      */
     public IInclude createInclude(IUseCase from, IUseCase to)
@@ -83,7 +85,9 @@ public class ConstructsRelationFactory implements IConstructsRelationFactory
         return null;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.constructs.IConstructsRelationFactory#createInclude(org.netbeans.modules.uml.core.metamodel.core.constructs.IUseCase, org.netbeans.modules.uml.core.metamodel.core.constructs.IUseCase)
      */
     public IExtend createExtend(IUseCase from, IUseCase to)

@@ -55,7 +55,9 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.NamedElement;
 
 public class GeneralOrdering extends NamedElement implements IGeneralOrdering
 {
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IGeneralOrdering#getAfter()
      */
     public IEventOccurrence getAfter()
@@ -64,7 +66,9 @@ public class GeneralOrdering extends NamedElement implements IGeneralOrdering
             .retrieveSingleElementWithAttrID( this, "after", IEventOccurrence.class);
     }
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IGeneralOrdering#setAfter(org.netbeans.modules.uml.core.metamodel.dynamics.IEventOccurrence)
      */
     public void setAfter(IEventOccurrence occ)
@@ -87,7 +91,9 @@ public class GeneralOrdering extends NamedElement implements IGeneralOrdering
                 } );
     }
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IGeneralOrdering#getBefore()
      */
     public IEventOccurrence getBefore()
@@ -96,7 +102,9 @@ public class GeneralOrdering extends NamedElement implements IGeneralOrdering
             .retrieveSingleElementWithAttrID( this, "before", IEventOccurrence.class);
     }
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IGeneralOrdering#setBefore(org.netbeans.modules.uml.core.metamodel.dynamics.IEventOccurrence)
      */
     public void setBefore(IEventOccurrence occ)
@@ -119,7 +127,9 @@ public class GeneralOrdering extends NamedElement implements IGeneralOrdering
                 } );
     }
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.VersionableElement#establishNodePresence(org.dom4j.Document, org.dom4j.Node)
      */
     public void establishNodePresence(Document doc, Node node)

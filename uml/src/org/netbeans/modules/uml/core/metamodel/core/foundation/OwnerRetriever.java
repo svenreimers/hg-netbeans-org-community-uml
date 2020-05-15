@@ -62,7 +62,9 @@ public class OwnerRetriever <Type> {
         m_cpElement = curElem;
 	}
 
-	/**
+	
+
+/**
 	 * @param element
 	 * @return
 	 */
@@ -74,11 +76,11 @@ public class OwnerRetriever <Type> {
             IElement currOwner = currElem.getOwner();
             while (currOwner != null)
             {
-                // AZTEC: Note that we can't check type with an instanceof (that 
+                
                 // won't even compile), and we can't cast to (Type) and catch a 
                 // ClassCastException, because the ClassCastException will be
                 // thrown *in the caller*, not in this function (the JSR 
-                // compiler supports a very hobbled form of generics). We also
+                
                 // can't obtain the 'Class' object used here by doing Type.class
                 // - that again, is not supported by the JSR compiler. A full
                 // house. :-/
@@ -91,7 +93,9 @@ public class OwnerRetriever <Type> {
         return null;
 	}
     
-    /**
+    
+
+/**
      * @param element
      * @deprecated This function is almost guaranteed not to work properly,
      *             thanks to eccentricities in the JSR 14 compiler. Use 
@@ -131,11 +135,11 @@ public class OwnerRetriever <Type> {
           IElement currOwner = currElem.getOwner();
           while (currOwner != null)
           {
-             // AZTEC: Note that we can't check type with an instanceof (that
+             
              // won't even compile), and we can't cast to (Type) and catch a
              // ClassCastException, because the ClassCastException will be
              // thrown *in the caller*, not in this function (the JSR
-             // compiler supports a very hobbled form of generics). We also
+             
              // can't obtain the 'Class' object used here by doing Type.class
              // - that again, is not supported by the JSR compiler. A full
              // house. :-/
@@ -148,7 +152,9 @@ public class OwnerRetriever <Type> {
        return null;
     }
     
-	/**
+	
+
+/**
 	 * @return
 	 */
 	public Type getOwner()

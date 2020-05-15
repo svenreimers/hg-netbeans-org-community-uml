@@ -69,7 +69,9 @@ public class PackageImport extends DirectedRelationship implements IPackageImpor
         super();
     }
     
-    /**
+    
+
+/**
      *
      * Description.
      *
@@ -83,7 +85,9 @@ public class PackageImport extends DirectedRelationship implements IPackageImpor
         return getSpecificElement("importingPackage", dummy, IPackage.class);
     }
     
-    /**
+    
+
+/**
      *
      * Description.
      *
@@ -133,7 +137,9 @@ public class PackageImport extends DirectedRelationship implements IPackageImpor
         }
     }
     
-    /**
+    
+
+/**
      * Gets the Package that is imported by an importing Package.
      *
      * @param package[in] The Package to import
@@ -155,7 +161,9 @@ public class PackageImport extends DirectedRelationship implements IPackageImpor
         return col.retrieveSingleElement(m_Node, "UML:PackageImport.importedPackage/*", IPackage.class);
     }
     
-    /**
+    
+
+/**
      *
      * Sets package as the Package that is being imported.
      *
@@ -218,7 +226,9 @@ public class PackageImport extends DirectedRelationship implements IPackageImpor
         }
     }
     
-    /**
+    
+
+/**
      *
      * Attempts to retrieve the elements in the imported elements that
      * have a name that matches the passed in string.
@@ -249,7 +259,9 @@ public class PackageImport extends DirectedRelationship implements IPackageImpor
         return foundEles;
     }
     
-    /**
+    
+
+/**
      *
      * Attempts to find a type by the passed in name in the passed
      * in namespace object.
@@ -269,7 +281,9 @@ public class PackageImport extends DirectedRelationship implements IPackageImpor
         return space.getOwnedElementsByName(name);
     }
     
-    /**
+    
+
+/**
      * Establishes the appropriate XML elements for this UML type.
      *
      * [in] The document where this element will reside

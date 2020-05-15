@@ -42,11 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : TestIdentityAction.java
- * Created on : Sep 18, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.metamodel.common.commonactions;
 
 import org.dom4j.Document;
@@ -64,7 +61,8 @@ public class TestIdentityAction
     implements ITestIdentityAction
 {
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactions.ITestIdentityAction#getFirst()
      */
     public IInputPin getFirst()
@@ -73,7 +71,9 @@ public class TestIdentityAction
             .retrieveSingleElement(this, "UML:TestIdentityAction.first/*", IInputPin.class);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactions.ITestIdentityAction#getResult()
      */
     public IOutputPin getResult()
@@ -82,7 +82,9 @@ public class TestIdentityAction
             .retrieveSingleElement(this, "UML:Element.ownedElement/UML:OutputPin", IOutputPin.class);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactions.ITestIdentityAction#getSecond()
      */
     public IInputPin getSecond()
@@ -91,7 +93,9 @@ public class TestIdentityAction
             .retrieveSingleElement(this, "UML:TestIdentityAction.second/*", IInputPin.class);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactions.ITestIdentityAction#setFirst(org.netbeans.modules.uml.core.metamodel.basic.basicactions.IInputPin)
      */
     public void setFirst(IInputPin pPin)
@@ -101,7 +105,9 @@ public class TestIdentityAction
                     , pPin);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactions.ITestIdentityAction#setResult(org.netbeans.modules.uml.core.metamodel.basic.basicactions.IOutputPin)
      */
     public void setResult(IOutputPin pPin)
@@ -109,7 +115,9 @@ public class TestIdentityAction
         addOutput(pPin);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactions.ITestIdentityAction#setSecond(org.netbeans.modules.uml.core.metamodel.basic.basicactions.IInputPin)
      */
     public void setSecond(IInputPin pPin)

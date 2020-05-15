@@ -49,7 +49,9 @@ package org.netbeans.modules.uml.ui.support.messaging;
 
 public interface IProgressExecutor
 {
-	/**
+	
+
+/**
 	 * Starts the process that will be showing progress.
 	*/
 	public long execute( IProgressDialog progDiag );

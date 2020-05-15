@@ -47,6 +47,7 @@ package org.netbeans.modules.uml.core.support.umlsupport;
 import org.netbeans.modules.uml.core.coreapplication.CoreProductManager;
 import org.netbeans.modules.uml.core.coreapplication.ICoreProduct;
 import org.netbeans.modules.uml.core.coreapplication.ICoreProductManager;
+
 /**
  * <p>Title: </p>
  * <p>Description: </p>
@@ -60,7 +61,8 @@ public class ProductRetriever {
 
   }
 
-  /**
+  
+/**
    *
    * Retrieves the CoreProduct off the ROT
    *

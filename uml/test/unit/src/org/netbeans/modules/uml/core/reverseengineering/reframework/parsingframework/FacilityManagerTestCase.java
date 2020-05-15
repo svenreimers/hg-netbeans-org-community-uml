@@ -47,6 +47,8 @@ package org.netbeans.modules.uml.core.reverseengineering.reframework.parsingfram
 import org.netbeans.modules.uml.core.AbstractUMLTestCase;
 import org.netbeans.modules.uml.core.support.umlsupport.IStrings;
 
+
+
 /**
  * Test cases for FacilityManager.
  */

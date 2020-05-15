@@ -46,7 +46,9 @@ package org.netbeans.modules.uml.core.reverseengineering.reframework;
 
 public interface IPackageEvent extends IParserData
 {
-	/**
+	
+
+/**
 	 * Retrieves the name of the package.
 	*/
 	public String getPackageName();

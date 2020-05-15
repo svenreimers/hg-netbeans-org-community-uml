@@ -43,11 +43,8 @@
  */
 
 
-/*
- * File       : ArrayDimensionStateHandler.java
- * Created on : Dec 9, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.statehandlers;
 
 import org.dom4j.Node;
@@ -202,7 +199,9 @@ public class ArrayDimensionStateHandler extends StateHandler
         }
      }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.statehandlers.StateHandler#stateComplete(java.lang.String)
      */
     public void stateComplete(String val)

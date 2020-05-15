@@ -85,6 +85,7 @@ import org.netbeans.test.umllib.util.*;
 
 
 
+
 /**
  *
  * @spec uml/DesignPatterns
@@ -283,7 +284,9 @@ public class PromoteDesignPattern extends UMLTestCase {
         }
         assertTrue("There should be "+(allRoles.length-2)+" names in parameters compartment, now:"+allRolesInDPStr.split(",").length, allRolesInDPStr.split(",").length==(allRoles.length-2));
     }
-    /**
+    
+
+/**
      * @caseblock Promote design pattern to Design Center
      * @usecase Promote a pattern, leaving in local project
      */

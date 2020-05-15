@@ -61,7 +61,9 @@ public class PrimitiveInstanceInformation extends InstanceInformation
         super(name, type);
     }
 
-    /**
+    
+
+/**
      * Checks if the instance has been initialized.  If the instance
      * information has not been initailized then the information is
      * not valid.
@@ -79,7 +81,9 @@ public class PrimitiveInstanceInformation extends InstanceInformation
                 type.length() > 0;
     }
 
-    /**
+    
+
+/**
      * Retrieves the name of the type that was used to instantiate 
      * instance.
      *
@@ -91,7 +95,9 @@ public class PrimitiveInstanceInformation extends InstanceInformation
         return m_TypeName;
     }
 
-    /**
+    
+
+/**
      * Sets the type name used to instantiate the instance.;
      *
      * @param typeName [in] The type name.
@@ -104,7 +110,9 @@ public class PrimitiveInstanceInformation extends InstanceInformation
             m_TypeName = typeName;
     }
 
-    /**
+    
+
+/**
      * Check if a instance is derived from a specified class.  The class hiearchy of the 
      * instance will be traced until the desiredType is located.
      *
@@ -164,7 +172,9 @@ public class PrimitiveInstanceInformation extends InstanceInformation
         return true;
     }
 
-    /**
+    
+
+/**
      * Initializes the creation event data.
      *
      * @param pEvent [in] The event to initialize.
@@ -181,7 +191,9 @@ public class PrimitiveInstanceInformation extends InstanceInformation
             createDescriptor(descs, "IsPrimitive", "true");
     }
     
-    /**
+    
+
+/**
      * Initializes the IDestroyEvent before it is sent to the operation 
      * detail listeners.  InitializeDestroyEvent is virtual so decendents
      * can perform additional intialization.  This version will initialize
@@ -201,7 +213,9 @@ public class PrimitiveInstanceInformation extends InstanceInformation
             createDescriptor(descs, "IsPrimitive", "true");
     }
 
-    /**
+    
+
+/**
      * Sets the primitive type.
      *
      * @param type [in] The name of the primitive.
@@ -211,7 +225,9 @@ public class PrimitiveInstanceInformation extends InstanceInformation
         setInstanceTypeName(type);
     }
 
-    /**
+    
+
+/**
      * Retrieves the primitive type.
      *
      * @return The type name.

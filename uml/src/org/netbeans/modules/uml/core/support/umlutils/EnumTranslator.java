@@ -46,6 +46,7 @@ package org.netbeans.modules.uml.core.support.umlutils;
 
 import java.util.StringTokenizer;
 
+
 /**
  * <p>Title: </p>
  * <p>Description: </p>
@@ -58,19 +59,8 @@ public class EnumTranslator implements IEnumTranslator{
   public EnumTranslator() {
   }
 
-  /**
-   * Interpret the enumeration value
-   *
-   *
-   * @param enumNum[in]					The value to look up in the enumeration
-   * @param enumStrs[in]					A "|" delimited string of enumeration values
-   * @param value[out]						The enumeration value that matches the enumNum
-   * @param enumValues[in, optional]	A "|" delimited string representing the numeric values of the items
-   *												in the enumeration, if not provided, assume it starts with 0, and is
-   *												sequential.
-   *
-   * @return HRESULT
-   */
+  
+
   public String translateFromEnum( int enumNum, String enumStrs, String enumValues )
   {
     //
@@ -160,19 +150,8 @@ public class EnumTranslator implements IEnumTranslator{
     return retVal;
   }
 
-  /**
-   * Determine the enumeration value
-   *
-   *
-   * @param value[in]						The string to find in the enumeration
-   * @param enumStrs[in]					A "|" delimited string of enumeration values
-   * @param enumNum[out]					The value in the enumeration
-   * @param enumValues[in, optional]	A "|" delimited string representing the numeric values of the items
-   *												in the enumeration, if not provided, assume it starts with 0, and is
-   *												sequential.
-   *
-   * @return HRESULT
-   */
+  
+
   public int translateToEnum( String value, String enumStrs, String enumValues )
   {
     int retEnum = 0;

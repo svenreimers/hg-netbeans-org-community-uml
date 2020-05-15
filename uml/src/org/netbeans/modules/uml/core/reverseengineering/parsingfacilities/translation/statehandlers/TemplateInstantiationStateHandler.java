@@ -43,11 +43,8 @@
  */
 
 
-/*
- * File       : TemplateInstantiationStateHandler.java
- * Created on : Dec 9, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.statehandlers;
 
 import java.util.ArrayList;
@@ -94,34 +91,29 @@ public class TemplateInstantiationStateHandler extends StateHandler
         mPersistDataToXML = writeToXML;
     }
 
-    /**
-     * Retrieve the identifier that contains the name of the generic type.
-     */
+    
+
     public Identifier getTypeIdentifier()
     {
        return m_NameIdentifier;
     }
     
-    /**
-     * Retrieve the identifier that contains the name of the generic type.
-     */
+    
+
     public String getTypeNameAsUML()
     {
        return m_NameIdentifier.getIdentifierAsUML();
     }
     
-    /**
-     * Retrieve the number of generic arguments.
-     */
+    
+
     public int getNumberOfArguments()
     {
        return m_TypeIdentifiers.size();
     }
     
-    /**
-     * Retrieve one of the arguemnts that was passed into the generic
-     * instanitation.
-     */
+    
+
     public TemplateIdentifier getArgument(int index)
     {
        TemplateIdentifier retVal = null;
@@ -185,7 +177,9 @@ public class TemplateInstantiationStateHandler extends StateHandler
        
     }
 
-    /**
+    
+
+/**
      * Creates and returns a new state handler for a sub-state.  If the sub-state
      * is not handled then NULL is returned.  The attribute state of interest is
      * <code>Initializer</code>
@@ -238,7 +232,9 @@ public class TemplateInstantiationStateHandler extends StateHandler
         return retVal;
     }
 
-    /**
+    
+
+/**
      * Initialize the state handler.  This is a one time initialization.
      */
     public void initialize()
@@ -262,7 +258,9 @@ public class TemplateInstantiationStateHandler extends StateHandler
        }
     }
 
-    /**
+    
+
+/**
      * The state handler is able to process the token.  Attribute tokens of
      * interest are <code>Statement Terminator</code> and
      * <code>Primitive Type</code>
@@ -336,7 +334,9 @@ public class TemplateInstantiationStateHandler extends StateHandler
         }
     }
 
-    /**
+    
+
+/**
      * Notification that the a state has completed.  All state clean up is
      * done this the StateComplete state.  The Attribute states of interest
      * is <code>Initializer</code> and <code>Type</code>.

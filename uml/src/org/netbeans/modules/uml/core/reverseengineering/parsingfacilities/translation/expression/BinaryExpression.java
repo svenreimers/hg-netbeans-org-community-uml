@@ -43,11 +43,8 @@
  */
 
 
-/*
- * File       : BinaryExpression.java
- * Created on : Dec 8, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.expression;
 
 import org.dom4j.Node;
@@ -81,7 +78,9 @@ public class BinaryExpression  extends ExpressionStateHandler
         m_pOperator = null;
     }
     
-        /* (non-Javadoc)
+        
+
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.expression.IBinaryExpression#createSubStateHandler(java.lang.String, java.lang.String)
          */
     public StateHandler createSubStateHandler(String stateName,String language) {
@@ -98,7 +97,9 @@ public class BinaryExpression  extends ExpressionStateHandler
         return retVal;
     }
     
-        /* (non-Javadoc)
+        
+
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.expression.IBinaryExpression#getLeftHandSideString()
          */
     public String getLeftHandSideString()
@@ -112,7 +113,9 @@ public class BinaryExpression  extends ExpressionStateHandler
         return retVal;
     }
     
-        /* (non-Javadoc)
+        
+
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.expression.IBinaryExpression#getOperatorAsString()
          */
     public String getOperatorAsString()
@@ -126,7 +129,9 @@ public class BinaryExpression  extends ExpressionStateHandler
         return retVal;
     }
     
-        /* (non-Javadoc)
+        
+
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.expression.IBinaryExpression#getRightHandSideString()
          */
     public String getRightHandSideString()
@@ -173,7 +178,9 @@ public class BinaryExpression  extends ExpressionStateHandler
     }    
     
     
-        /* (non-Javadoc)
+        
+
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.expression.IBinaryExpression#processToken(org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ITokenDescriptor, java.lang.String)
          */
     public void processToken(ITokenDescriptor pToken, String language)
@@ -244,7 +251,9 @@ public class BinaryExpression  extends ExpressionStateHandler
         }
     }
     
-        /* (non-Javadoc)
+        
+
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.expression.IBinaryExpression#sendOperationEvents(org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.expression.InstanceRef, org.netbeans.modules.uml.core.reverseengineering.reframework.IREClass, org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.expression.SymbolTable, org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.IREClassLoader, org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.IUMLParserEventDispatcher, org.dom4j.Node)
          */
     public InstanceInformation sendOperationEvents(InstanceInformation pInfo, IREClass pThisPtr, SymbolTable symbolTable, IREClassLoader pClassLoader, IUMLParserEventDispatcher pDispatcher,Node pParentNode)
@@ -288,7 +297,9 @@ public class BinaryExpression  extends ExpressionStateHandler
         return retVal;
     }
     
-        /* (non-Javadoc)
+        
+
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.expression.IBinaryExpression#WriteAsXMI(org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.expression.InstanceRef, org.dom4j.Node, org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.expression.SymbolTable, org.netbeans.modules.uml.core.reverseengineering.reframework.IREClass, org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.IREClassLoader)
          */
     public ETPairT<InstanceInformation, Node> writeAsXMI(InstanceInformation pInfo, Node pParentNode, SymbolTable symbolTable, IREClass pThisPtr, IREClassLoader pClassLoader)

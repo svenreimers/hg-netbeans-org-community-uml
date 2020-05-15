@@ -43,11 +43,8 @@
  */
 
 
-/*
- * File       : TokenExpressionProxy.java
- * Created on : Dec 10, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.expression;
 
 import org.dom4j.Node;
@@ -72,7 +69,9 @@ public class TokenExpressionProxy implements IExpressionProxy
         mToken = pToken;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.expression.IExpressionProxy#clear()
      */
     public void clear()
@@ -83,7 +82,9 @@ public class TokenExpressionProxy implements IExpressionProxy
    		}
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.expression.IExpressionProxy#getEndPosition()
      */
     public long getEndPosition()
@@ -108,7 +109,9 @@ public class TokenExpressionProxy implements IExpressionProxy
    		return (int)retVal;
     }
    
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.expression.IExpressionProxy#getStartLine()
      */
     public long getStartLine()
@@ -128,7 +131,9 @@ public class TokenExpressionProxy implements IExpressionProxy
         return (int)retVal;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.expression.IExpressionProxy#getStartPosition()
      */
     public long getStartPosition()
@@ -148,7 +153,9 @@ public class TokenExpressionProxy implements IExpressionProxy
    		return retVal;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.expression.IExpressionProxy#sendOperationEvents(org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.InstanceInformation, org.netbeans.modules.uml.core.reverseengineering.reframework.IREClass, org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.SymbolTable, org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.IREClassLoader, org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.IUMLParserEventDispatcher, org.dom4j.Node)
      */
     public InstanceInformation sendOperationEvents(InstanceInformation pInstance,
@@ -239,7 +246,9 @@ public class TokenExpressionProxy implements IExpressionProxy
    		return retVal;
 	}
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.expression.IExpressionProxy#writeAsXMI(org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.InstanceInformation, org.dom4j.Node, org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.SymbolTable, org.netbeans.modules.uml.core.reverseengineering.reframework.IREClass, org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.IREClassLoader)
      */
     public ETPairT<InstanceInformation, Node> writeAsXMI(InstanceInformation pInfo,

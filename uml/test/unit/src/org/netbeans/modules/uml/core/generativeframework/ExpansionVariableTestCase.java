@@ -52,6 +52,8 @@ import org.dom4j.Node;
 import org.netbeans.modules.uml.core.AbstractUMLTestCase;
 import org.netbeans.modules.uml.core.metamodel.core.constructs.IClass;
 
+
+
 /**
  * Test cases for ExpansionVariable.
  * 
@@ -63,7 +65,9 @@ public class ExpansionVariableTestCase extends AbstractUMLTestCase {
 
 	private ExpansionVariable var;
 
-	/*
+	
+
+/*
 	 * (non-Javadoc)
 	 * 
 	 * @see junit.framework.TestCase#setUp()

@@ -42,11 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : LinkEndCreationData.java
- * Created on : Sep 18, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.metamodel.common.commonactions;
 
 import org.dom4j.Document;
@@ -62,7 +59,8 @@ public class LinkEndCreationData
     implements ILinkEndCreationData
 {
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactions.ILinkEndCreationData#getInsertAt()
      */
     public IInputPin getInsertAt()
@@ -71,7 +69,9 @@ public class LinkEndCreationData
             .retrieveSingleElementWithAttrID(this, "insertAt", IInputPin.class);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactions.ILinkEndCreationData#getIsReplaceAll()
      */
     public boolean getIsReplaceAll()
@@ -79,14 +79,18 @@ public class LinkEndCreationData
         return getBooleanAttributeValue( "isReplaceAll", true);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      */
     public void setInsertAt(IInputPin pPin)
     {
         addElementByID(pPin, "insertAt");
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactions.ILinkEndCreationData#setIsReplaceAll(boolean)
      */
     public void setIsReplaceAll(boolean isReplaceAll)

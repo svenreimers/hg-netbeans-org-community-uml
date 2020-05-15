@@ -42,6 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
+
+
 /*
  * DoorsReqProvider.java
  *
@@ -127,7 +129,9 @@ public class DoorsReqProvider implements IDoorsReqProvider, IRequirementsProvide
                "IDS_DOORS_Requirement_Provider_Desc");
    }
    
-   /**
+   
+
+/**
     * Called when the addin is initialized.
     */
    public long initialize(  Object  context )
@@ -136,7 +140,9 @@ public class DoorsReqProvider implements IDoorsReqProvider, IRequirementsProvide
    }
   
    
-   /**
+   
+
+/**
     * Called when the addin is deinitialized.
     */
    public long deInitialize(  Object  context )
@@ -144,7 +150,9 @@ public class DoorsReqProvider implements IDoorsReqProvider, IRequirementsProvide
       return 0;
    }
    
-   /**
+   
+
+/**
     *
     * Called when the addin is unloaded.
     *
@@ -158,7 +166,9 @@ public class DoorsReqProvider implements IDoorsReqProvider, IRequirementsProvide
       return 0;
    }
    
-   /**
+   
+
+/**
     * Get the version of the addin.
     */
    public String getVersion()
@@ -167,7 +177,9 @@ public class DoorsReqProvider implements IDoorsReqProvider, IRequirementsProvide
    }
    
    
-   /**
+   
+
+/**
     * Build and return an IRequirementSource.
     *
     * @param pAddInDescriptor Descriptor, from Registry, contains ProgID and Friendly
@@ -310,7 +322,9 @@ public class DoorsReqProvider implements IDoorsReqProvider, IRequirementsProvide
 //       }
 //       return dir;
 //   }
-   /**
+   
+
+/**
     * Given a RequirementSource, populate an IRequirements collection.
     *
     * @param IRequirementSource A RequirementSource that each derived provider should know
@@ -407,7 +421,9 @@ public class DoorsReqProvider implements IDoorsReqProvider, IRequirementsProvide
       return retVal;
    }
    
-   /**
+   
+
+/**
     *
     * Given a RequirementID, find the Requirement
     *

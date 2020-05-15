@@ -42,11 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : IfVariable.java
- * Created on : Oct 30, 2003
- * Author     : aztec
- */
+
+
 package org.netbeans.modules.uml.core.generativeframework;
 
 import org.dom4j.Node;
@@ -62,7 +59,8 @@ public class IfVariable extends CompoundVariable implements IIfVariable
     private ETList<IIfTest> m_Tests = new ETArrayList<IIfTest>();
     private int             m_Kind;
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.generativeframework.IIfVariable#addTest(org.netbeans.modules.uml.core.generativeframework.IIfTest)
      */
     public void addTest(IIfTest pTest)
@@ -71,7 +69,9 @@ public class IfVariable extends CompoundVariable implements IIfVariable
             m_Tests.add(pTest);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.generativeframework.IIfVariable#removeTest(org.netbeans.modules.uml.core.generativeframework.IIfTest)
      */
     public void removeTest(IIfTest pTest)
@@ -79,7 +79,9 @@ public class IfVariable extends CompoundVariable implements IIfVariable
         m_Tests.remove(pTest);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.generativeframework.IIfVariable#getTests()
      */
     public ETList<IIfTest> getTests()

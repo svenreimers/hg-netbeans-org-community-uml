@@ -78,7 +78,9 @@ public class ObjectInstanceInformation extends InstanceInformation
         return false;
     }
 
-    /**
+    
+
+/**
      * Retrieves the name of the instance type.  The type name 
      * will be the fully scoped name of the type.
      *
@@ -112,7 +114,9 @@ public class ObjectInstanceInformation extends InstanceInformation
         return typeName;
     }
 
-    /**
+    
+
+/**
      * Sets the type name used to instantiate the instance.;
      *
      * @param typeName [in] The type name.
@@ -147,7 +151,9 @@ public class ObjectInstanceInformation extends InstanceInformation
         return fullname.length() > 0? fullname.toString() : null;
     }
     
-    /**
+    
+
+/**
      * Retrieves the name of the type that was used to instantiate 
      * instance.
      *
@@ -177,7 +183,9 @@ public class ObjectInstanceInformation extends InstanceInformation
         return typeName;
     }
 
-    /**
+    
+
+/**
      * Searches the instance owner for a method that matches the specified 
      * signature.  If the instance owner does not have a matching method
      * the super classes of the owner will be searched.
@@ -198,7 +206,7 @@ public class ObjectInstanceInformation extends InstanceInformation
         if(instanceType == null)
             instanceType = getInstantiatedType();
         
-        //kris added
+        
         if (instanceType == null) {
             instanceType = classLoader.loadClass(m_InstantiatedTypeName);
         }
@@ -232,7 +240,9 @@ public class ObjectInstanceInformation extends InstanceInformation
         return decl;
     }
 
-    /**
+    
+
+/**
      * Check if a instance is derived from a specified class.  The class hiearchy of the 
      * instance will be traced until the desiredType is located.
      *
@@ -257,7 +267,9 @@ public class ObjectInstanceInformation extends InstanceInformation
         return false;
     }
     
-    /**
+    
+
+/**
      * Searches for an attribute declaration.  The attributes owner and its super 
      * classes will be search until the attribute decaration is found.
      *
@@ -280,7 +292,9 @@ public class ObjectInstanceInformation extends InstanceInformation
         return null;
     }
 
-    /**
+    
+
+/**
      * Initializes the creation event data.
      *
      * @param pEvent [in] The event to initialize.
@@ -314,7 +328,9 @@ public class ObjectInstanceInformation extends InstanceInformation
         }
     }
 
-    /**
+    
+
+/**
      * Initializes the IDestroyEvent before it is sent to the operation 
      * detail listeners.  InitializeDestroyEvent is virtual so decendents
      * can perform additional intialization.  This version will initialize
@@ -341,7 +357,9 @@ public class ObjectInstanceInformation extends InstanceInformation
         return ref;
     }
     
-    /**
+    
+
+/**
      * Uses the class loader to find a class.  The "this" pointer is the 
      * class that is the owner of the operation that is being parsed.
      *
@@ -354,7 +372,9 @@ public class ObjectInstanceInformation extends InstanceInformation
         return findClass(classLoader, getInstanceOwner(), typeName);
     }
     
-    /**
+    
+
+/**
      * Uses the class loader to find a class.  The context class is used
      * to located the class.  The context is used to determine what 
      * dependencies to search.
@@ -373,7 +393,9 @@ public class ObjectInstanceInformation extends InstanceInformation
                                   : null;
     }
 
-    /**
+    
+
+/**
      * Sets the type of the instance.  The instance type is will be 
      * the reciever of all messages (method calls) made by the instance.
      *
@@ -384,7 +406,9 @@ public class ObjectInstanceInformation extends InstanceInformation
         m_InstanceType = val;
     }
 
-    /**
+    
+
+/**
      * Retrieves the type of the instance.  The instance type is will be 
      * the reciever of all messages (method calls) made by the instance.
      *
@@ -396,7 +420,9 @@ public class ObjectInstanceInformation extends InstanceInformation
         return m_InstanceType;
     }
 
-    /**
+    
+
+/**
      * Retrieves the type of the class that instantiated the instance.
      *
      * @param pVal [out] The instantiated type, if the type is set 
@@ -407,7 +433,9 @@ public class ObjectInstanceInformation extends InstanceInformation
         return m_InstantiatedType;
     }
 
-    /**
+    
+
+/**
      * Checks if the instance has been initialized.  If the instance 
      * information has not been initailized then the information is
      * not valid.

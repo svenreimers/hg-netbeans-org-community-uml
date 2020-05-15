@@ -406,7 +406,9 @@ public class UMLImportsUiSupport
         }
     }
     
-    /**
+    
+
+/**
      * Check if the project that will be referenced already has a dependency on 
      * the project that will be referencing the referenced project.
      */

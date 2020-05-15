@@ -42,6 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
+
+
 /*
  * Created on Mar 3, 2004
  *
@@ -91,7 +93,9 @@ public class ADDesignCenterEngine extends ADProjectTreeEngine implements IADDesi
 		}
 		return 0;
 	}
-	/**
+	
+
+/**
 	 * Sets the parent tree control for this engine.  This is the backpointer to the tree control
 	 * which this engine is controlling.
 	 *
@@ -108,7 +112,9 @@ public class ADDesignCenterEngine extends ADProjectTreeEngine implements IADDesi
                 initializeSinks();
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.products.ad.projecttreedefaultengine.IADProjectTreeEngine#showElementType(java.lang.String, boolean)
 	 */
 	public long showElementType(String sElementTypeName, boolean bShow) {
@@ -147,7 +153,9 @@ public class ADDesignCenterEngine extends ADProjectTreeEngine implements IADDesi
 		 }
 	}
 
-	/**
+	
+
+/**
 	 * This will look for any loaded addins that have been registered with the Design Center
 	 * (ie. an entry under the design center registry) and add them to the project tree.
 	 *
@@ -253,7 +261,9 @@ public class ADDesignCenterEngine extends ADProjectTreeEngine implements IADDesi
             }
         }
 
-	/**
+	
+
+/**
 	 *	Have each of the addins take care of populating the passed in tree item based on what
 	 * the node is
 	 *
@@ -300,7 +310,9 @@ public class ADDesignCenterEngine extends ADProjectTreeEngine implements IADDesi
 		return pAdded;
 	}
 
-	/**
+	
+
+/**
 	 * Given a particular tree item, go up its tree structure until the node is found that represents
 	 * the addin.
 	 *
@@ -331,7 +343,9 @@ public class ADDesignCenterEngine extends ADProjectTreeEngine implements IADDesi
 		return pAddInNode;
 	}
 
-	/**
+	
+
+/**
 	 * Gets the workspace from the product if we are in the project tree
 	 * or asks the user defined addin for its workspace if we are in the design center.
 	 *
@@ -429,7 +443,9 @@ public class ADDesignCenterEngine extends ADProjectTreeEngine implements IADDesi
 //		}
 //	}
 
-	/**
+	
+
+/**
 	 * Handles the after edit event.
 	   *
 	   * @param pParentControl [in] The tree that caused the event

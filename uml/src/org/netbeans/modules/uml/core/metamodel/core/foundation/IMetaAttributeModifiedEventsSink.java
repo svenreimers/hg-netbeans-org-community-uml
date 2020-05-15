@@ -48,12 +48,16 @@ import org.netbeans.modules.uml.core.support.umlsupport.IResultCell;
 
 public interface IMetaAttributeModifiedEventsSink
 {
-	/**
+	
+
+/**
 	 * Fired whenever the XMI attribute value of an element is about to be modified.
 	*/
 	public void onMetaAttributePreModified( IMetaAttributeModifiedEventPayload Payload, IResultCell cell );
 
-	/**
+	
+
+/**
 	 * Fired whenever the XMI attribute value of an element has been modified.
 	*/
 	public void onMetaAttributeModified( IMetaAttributeModifiedEventPayload Payload, IResultCell cell );

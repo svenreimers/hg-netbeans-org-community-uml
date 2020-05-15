@@ -46,22 +46,30 @@ package org.netbeans.modules.uml.core.metamodel.diagrams;
 
 public interface IDiagramValidationResult
 {
-	/**
+	
+
+/**
 	 * Reset all the numbers.
 	*/
 	public void reset();
 
-	/**
+	
+
+/**
 	 * Increment the number of these found.
 	*/
 	public void incrementNumInvalidItems( /* DiagramValidateKind */ int nKind );
 
-	/**
+	
+
+/**
 	 * Put/Set the number of these found.
 	*/
 	public void setNumInvalidItems( /* DiagramValidateKind */ int nKind, int nCount );
 
-	/**
+	
+
+/**
 	 * Put/Set the number of these found.
 	*/
 	public long getNumInvalidItems( /* DiagramValidateKind */ int nKind );

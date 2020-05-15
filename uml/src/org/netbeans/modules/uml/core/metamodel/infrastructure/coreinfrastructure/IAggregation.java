@@ -46,67 +46,93 @@ package org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructur
 
 public interface IAggregation extends IAssociation
 {
-	/**
+	
+
+/**
 	 * The association end connected to the classifier specifying the aggregate.
 	*/
 	public IAssociationEnd getAggregateEnd();
 
-	/**
+	
+
+/**
 	 * The association end connected to the classifier specifying the aggregate.
 	*/
 	public void setAggregateEnd( IAssociationEnd value );
 
-	/**
+	
+
+/**
 	 * Sets the classifier that will be set as a participant on a new AssociationEnd that will be created and returned.
 	*/
 	public IAssociationEnd setAggregateEnd( IClassifier newVal );
 
-	/**
+	
+
+/**
 	 * Sets the classifier that will be set as a participant on a new AssociationEnd that will be created but not returned.
 	*/
 	public void setAggregateEnd2( IClassifier newVal );
 
-	/**
+	
+
+/**
 	 * Indicates the association end connected to the classifier specifying the part.
 	*/
 	public IAssociationEnd getPartEnd();
 
-	/**
+	
+
+/**
 	 * Indicates the association end connected to the classifier specifying the part.
 	*/
 	public void setPartEnd( IAssociationEnd end );
 
-	/**
+	
+
+/**
 	 * Sets the classifier that will be placed as the participant on a new AssociationEnd that will be created and returned on the PartEnd of this Aggregation.
 	*/
 	public IAssociationEnd setPartEnd( IClassifier newVal );
 
-	/**
+	
+
+/**
 	 * Sets the classifier that will be placed as the participant on a new AssociationEnd that will be created ( but not returned ) on the PartEnd of this Aggregation.
 	*/
 	public void setPartEnd2( IClassifier newVal );
 
-	/**
+	
+
+/**
 	 * Indicates the nature of the aggregation. If false, the classifier at the aggregate end represents a shared aggregate, and the instance specified by the classifier at the part end may be contained in other aggregates. If true, the classifier at the aggregate
 	*/
 	public boolean getIsComposite();
 
-	/**
+	
+
+/**
 	 * Indicates the nature of the aggregation. If false, the classifier at the aggregate end represents a shared aggregate, and the instance specified by the classifier at the part end may be contained in other aggregates. If true, the classifier at the aggregate
 	*/
 	public void setIsComposite( boolean value );
 
-	/**
+	
+
+/**
 	 * Makes the AggregateEnd the PartEnd and the PartEnd the AggregateEnd.
 	*/
 	public void reverseEnds();
 
-	/**
+	
+
+/**
 	 * Demotes this Aggregation to an association.
 	*/
 	public IAssociation transformToAssociation();
 
-	/**
+	
+
+/**
 	 * Is this end the aggregate end?
 	*/
 	public boolean isAggregateEnd( IAssociationEnd pQueryEnd );

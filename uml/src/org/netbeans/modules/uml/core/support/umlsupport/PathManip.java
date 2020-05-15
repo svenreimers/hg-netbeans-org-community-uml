@@ -55,7 +55,8 @@ import java.net.URI;
  */
 public class PathManip
 {
-   /**
+   
+/**
     *
     * Checks to see if path is relative to rootPath. If it is, an absolute path
     * is built.
@@ -156,7 +157,9 @@ public class PathManip
       
       return retVal;
    }
-   /**
+   
+
+/**
     *
     * Retrieves the relative path between newFile and curFile
     *

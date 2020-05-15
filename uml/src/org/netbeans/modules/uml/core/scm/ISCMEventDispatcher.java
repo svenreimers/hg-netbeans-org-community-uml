@@ -42,6 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
+
+
 /*
  * ISCMEventDispatcher.java
  *
@@ -58,17 +60,20 @@ import org.netbeans.modules.uml.core.eventframework.IEventPayload;
  */
 public interface ISCMEventDispatcher extends IEventDispatcher
 {
-   /**
+   
+/**
     * Registers an event sink to handle SCM events.
     */
    public void registerForSCMEvents( ISCMEventsSink handler );
 
-   /**
+   
+/**
     * Removes a sink listening for SCM events.
     */
    public void revokeSCMSink(ISCMEventsSink handler);
 
-   /**
+   
+/**
     * Calling this method will result in the firing of any listeners who
     * register for SCM events.
     *
@@ -84,7 +89,9 @@ public interface ISCMEventDispatcher extends IEventDispatcher
                                           ISCMOptions options,
                                           IEventPayload payload);
 
-   /**
+   
+
+/**
     * Calling this method will result in the firing of any listeners who
     * register for SCM events.
     *

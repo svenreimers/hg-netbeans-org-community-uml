@@ -192,7 +192,9 @@ public abstract class FeatureWidget extends CustomizableWidget
         }
     }
     
-    /**
+    
+
+/**
      * 
      * @param attr
      */
@@ -440,7 +442,9 @@ public abstract class FeatureWidget extends CustomizableWidget
         if(label!=null)label.switchToEditMode();
     }
     
-    /**
+    
+
+/**
      * select feature widget for edition, usually after addiion of new feature widget
      * works for active editor only
      */

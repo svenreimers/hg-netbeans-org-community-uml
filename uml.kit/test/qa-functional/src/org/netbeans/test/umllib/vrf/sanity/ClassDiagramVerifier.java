@@ -43,6 +43,8 @@
  */
 
 
+
+
 /*
  * ClassDiagramVerifier.java
  *
@@ -71,7 +73,9 @@ public class ClassDiagramVerifier extends AbstractDiagramVerifier{
         super(diagramName, log);
     }
     
-    /**
+    
+
+/**
      *
      * @param diagramName
      * @param log

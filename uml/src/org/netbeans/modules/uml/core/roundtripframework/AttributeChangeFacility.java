@@ -42,11 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : AttributeChangeFacility.java
- * Created on : Nov 21, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.roundtripframework;
 
 import org.netbeans.modules.uml.core.coreapplication.CoreProductManager;
@@ -76,7 +73,8 @@ public class AttributeChangeFacility extends RequestFacility
                                         implements IAttributeChangeFacility
 {
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IAttributeChangeFacility#addAttribute(java.lang.String, java.lang.String, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, boolean, boolean)
      */
     public void addAttribute(
@@ -89,7 +87,9 @@ public class AttributeChangeFacility extends RequestFacility
         addAttribute2(sName, sType, pClassifier, rtOffCreate, rtOffPostProcessing);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IAttributeChangeFacility#addAttribute2(java.lang.String, java.lang.String, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, boolean, boolean)
      */
     public IAttribute addAttribute2(
@@ -209,7 +209,9 @@ public class AttributeChangeFacility extends RequestFacility
     }
 
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IAttributeChangeFacility#added(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttribute)
      */
     public void added(IAttribute pAttr)
@@ -218,7 +220,9 @@ public class AttributeChangeFacility extends RequestFacility
 
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IAttributeChangeFacility#changeAttributeType(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttribute, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, java.lang.String, java.lang.String)
      */
     public IAttribute changeAttributeType(
@@ -264,7 +268,9 @@ public class AttributeChangeFacility extends RequestFacility
         return null;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IAttributeChangeFacility#changeFinal(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttribute, boolean, boolean)
      */
     public void changeFinal(
@@ -282,7 +288,9 @@ public class AttributeChangeFacility extends RequestFacility
         restorer.restoreOriginalMode();
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IAttributeChangeFacility#changeInitializer(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttribute, java.lang.String, boolean)
      */
     public void changeInitializer(
@@ -300,7 +308,9 @@ public class AttributeChangeFacility extends RequestFacility
         restorer.restoreOriginalMode();
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IAttributeChangeFacility#changeMultiplicity(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttribute, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity, boolean, boolean)
      */
     public void changeMultiplicity(
@@ -319,7 +329,9 @@ public class AttributeChangeFacility extends RequestFacility
         restorer.restoreOriginalMode();
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IAttributeChangeFacility#changeName(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttribute, java.lang.String, boolean, boolean)
      */
     public void changeName(
@@ -344,7 +356,9 @@ public class AttributeChangeFacility extends RequestFacility
         restorer.restoreOriginalMode();
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IAttributeChangeFacility#changeStatic(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttribute, boolean, boolean)
      */
     public void changeStatic(
@@ -363,7 +377,9 @@ public class AttributeChangeFacility extends RequestFacility
         
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IAttributeChangeFacility#changeType(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttribute, java.lang.String, boolean, boolean)
      */
     public void changeType(
@@ -388,7 +404,9 @@ public class AttributeChangeFacility extends RequestFacility
         restorer.restoreOriginalMode();
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IAttributeChangeFacility#changeVisibility(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttribute, int, boolean, boolean)
      */
     public void changeVisibility(
@@ -409,7 +427,9 @@ public class AttributeChangeFacility extends RequestFacility
 
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IAttributeChangeFacility#createAttribute(java.lang.String, java.lang.String, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier)
      */
     public IAttribute createAttribute(
@@ -467,7 +487,9 @@ public class AttributeChangeFacility extends RequestFacility
         return null;        
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IAttributeChangeFacility#delete(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttribute, boolean, boolean)
      */
     public void delete(
@@ -515,7 +537,9 @@ public class AttributeChangeFacility extends RequestFacility
         }
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IAttributeChangeFacility#deleted(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttribute, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier)
      */
     public void deleted(IAttribute pAttr, IClassifier pClassifier)
@@ -523,7 +547,9 @@ public class AttributeChangeFacility extends RequestFacility
         // No valid implementation in the C++ code base.
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IAttributeChangeFacility#findAndChangeName(java.lang.String, java.lang.String, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier)
      */
     public void findAndChangeName(
@@ -534,7 +560,9 @@ public class AttributeChangeFacility extends RequestFacility
         // No valid implementation in the C++ code base.
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IAttributeChangeFacility#findAndChangeType(java.lang.String, java.lang.String, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier)
      */
     public IAttribute findAndChangeType(
@@ -546,7 +574,9 @@ public class AttributeChangeFacility extends RequestFacility
         return null;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IAttributeChangeFacility#findAndDelete(java.lang.String, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier)
      */
     public void findAndDelete(String sName, IClassifier pClassifier)
@@ -555,7 +585,9 @@ public class AttributeChangeFacility extends RequestFacility
 
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IAttributeChangeFacility#getLanguage(org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ILanguage)
      */
     public ILanguage getLanguage()
@@ -564,7 +596,9 @@ public class AttributeChangeFacility extends RequestFacility
         return null;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IAttributeChangeFacility#nameChanged(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttribute)
      */
     public void nameChanged(IAttribute pAttr)
@@ -572,7 +606,9 @@ public class AttributeChangeFacility extends RequestFacility
         // No valid implementation in the C++ code base.
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IAttributeChangeFacility#typeChanged(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttribute)
      */
     public void typeChanged(IAttribute pAttr)
@@ -756,7 +792,7 @@ public class AttributeChangeFacility extends RequestFacility
         ETList<IElement> pElements = 
             pLocator.findScopedElements(pClassifier, sNewType);
         
-        // IZ 80035: conover
+        
         // added size check so it won't throw an ArrayIndexOOBEx
         if (pElements != null && pElements.size() > 0)
         {

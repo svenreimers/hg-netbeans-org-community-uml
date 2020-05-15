@@ -48,6 +48,7 @@ import java.util.prefs.Preferences;
 import org.netbeans.modules.uml.ui.controls.newdialog.NewDialogUtilities;
 import org.openide.util.NbPreferences;
 
+
 /**
  * Storage for some important incrementers and default values
  */

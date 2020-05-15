@@ -49,12 +49,16 @@ import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure
 
 public interface IChangeSignal extends ISignal
 {
-	/**
+	
+
+/**
 	 * Sets / Gets an expression that specifies the conditions of objects under which the signal is sent.
 	*/
 	public IExpression getChangeExpression();
 
-	/**
+	
+
+/**
 	 * Sets / Gets an expression that specifies the conditions of objects under which the signal is sent.
 	*/
 	public void setChangeExpression( IExpression value );

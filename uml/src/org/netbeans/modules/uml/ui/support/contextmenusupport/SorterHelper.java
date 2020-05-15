@@ -58,7 +58,9 @@ public class SorterHelper
     protected ETList< ETPairT<String, Integer> > m_TopSortItems = new ETArrayList< ETPairT<String, Integer> >();
     protected ETList< ETPairT<String, Integer> > m_BottomSortItems = new ETArrayList< ETPairT<String, Integer> >();
     
-    /**
+    
+
+/**
      * Sorts the context menu
      *
      * @param pMenuItems [in] The unsorted list of menu items
@@ -116,7 +118,9 @@ public class SorterHelper
         return pSortedMenuItems;
     }
     
-    /**
+    
+
+/**
      * This routine sorts the project tree context menu
      */
     public void sortMenu(IMenuManager pContextMenu)
@@ -139,7 +143,9 @@ public class SorterHelper
         }
     }
     
-    /**
+    
+
+/**
      * Sorts the buttons with in the pullright
      *
      * @param pContextMenu [in] The list of buttons where the cascade lives with a source of sPullrightButtonSource
@@ -200,7 +206,9 @@ public class SorterHelper
         }
     }
     
-    /**
+    
+
+/**
      * Sorts these buttons
      *
      * @param pMenuItems [in] The unsorted menu items
@@ -279,7 +287,9 @@ public class SorterHelper
         return pSortedMenuItems;
     }
     
-    /**
+    
+
+/**
      * Extracts the button matching sButtonSource from IProductContextMenuItems.  The extracted
      * button is removed from pContextMenu and returned in pExtractedButton.
      *
@@ -298,7 +308,9 @@ public class SorterHelper
         return pExtractedButton;
     }
     
-    /**
+    
+
+/**
      * Extracts the popup(cascade) button that has sChildButtonSource as a child and returns that button in pExtractedButton.
      *
      * @param pMenuItems [in] The menu items to look through
@@ -337,7 +349,9 @@ public class SorterHelper
         return pExtractedButton;
     }
     
-    /**
+    
+
+/**
      * Takes a cascade button ou of the list if the button source for the cascade button matches sButtonSource
      *
      * @param pMenuItems [in] The menu items to look through

@@ -94,7 +94,9 @@ public class ColorAndFontAction extends SceneNodeAction
         return getPopupPresenter();
     }
 
-    /**
+    
+
+/**
      * Returns a JMenuItem that presents this action in a Popup Menu.
      * @return the JMenuItem representation for the action
      */

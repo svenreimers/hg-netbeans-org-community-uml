@@ -48,37 +48,51 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.IElement;
 
 public interface ICodeGenerationScript
 {
-	/**
+	
+
+/**
 	 * The name of the script.  The name of the script can be thought of as the script type.
 	*/
 	public String getName();
 
-	/**
+	
+
+/**
 	 * The name of the script.  The name of the script can be thought of as the script type.
 	*/
 	public void setName( String name );
 
-	/**
+	
+
+/**
 	 * The name of the script file that is to used by the script to determine the code to generate.
 	*/
 	public String getFile();
 
-	/**
+	
+
+/**
 	 * The name of the script file that is to used by the script to determine the code to generate.
 	*/
 	public void setFile( String fileName );
 
-	/**
+	
+
+/**
 	 * Executes the script and returns the code that represents the specified data.
 	*/
 	public String execute( IElement pElement );
 
-	/**
+	
+
+/**
 	 * The Language object this script is owned by.
 	*/
 	public ILanguage getLanguage();
 
-	/**
+	
+
+/**
 	 * The Language object this script is owned by.
 	*/
 	public void setLanguage( ILanguage language );

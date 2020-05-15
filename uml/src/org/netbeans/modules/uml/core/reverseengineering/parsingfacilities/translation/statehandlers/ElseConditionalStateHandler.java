@@ -43,11 +43,8 @@
  */
 
 
-/*
- * File       : ElseConditionalStateHandler.java
- * Created on : Dec 11, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.statehandlers;
 
 import org.dom4j.Node;
@@ -59,7 +56,8 @@ import org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.IUMLPa
 public class ElseConditionalStateHandler extends MethodConditionalStateHandler
 {
 
-    /**
+    
+/**
      * @param language
      * @param forceClause
      */
@@ -68,7 +66,9 @@ public class ElseConditionalStateHandler extends MethodConditionalStateHandler
         super(language, true);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.statehandlers.StateHandler#initialize()
      */
     public void initialize()

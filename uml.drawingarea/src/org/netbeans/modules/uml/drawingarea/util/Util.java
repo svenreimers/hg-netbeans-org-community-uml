@@ -143,7 +143,9 @@ public class Util
         return retVal;
     }
     
-    /**
+    
+
+/**
      * Creates a new presentation and associates the presentation element to the 
      * the model element.
      * 
@@ -167,7 +169,9 @@ public class Util
         return retVal;
     }
     
-    /** 
+    
+
+/** 
      * Retreives the node that owns the widget. 
      * 
      * @param child The reference widget
@@ -196,7 +200,9 @@ public class Util
         return retVal;
     }
     
-    /**
+    
+
+/**
      * First checks if the widget is in the viewable area.  If the widget is
      * not in the viewable area, then center the widget.
      * 
@@ -215,7 +221,9 @@ public class Util
         }
     }
     
-    /**
+    
+
+/**
      * Tries to move the scene viewable area so that the the widget is in the 
      * center of the view.  
      * 
@@ -246,7 +254,9 @@ public class Util
         }
     }
     
-    /**
+    
+
+/**
      * Resets the size of the node to display the contents of the node.
      *  
      * @param scene The scene that contains the node.

@@ -75,7 +75,9 @@ public class ThermProgress
       this( ProductHelper.getWindowHandle() );
    }
    
-   /**
+   
+
+/**
     * 
     */
    public ThermProgress( Component parent )

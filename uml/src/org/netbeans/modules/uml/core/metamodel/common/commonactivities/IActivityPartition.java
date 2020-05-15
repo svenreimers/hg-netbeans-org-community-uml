@@ -53,47 +53,65 @@ public interface IActivityPartition extends IActivityGroup, INamedElement
     public IActivity getActivity();
 
     public void setActivity(IActivity pActivity);
-	/**
+	
+
+/**
 	 * property IsDimension
 	*/
 	public boolean getIsDimension();
 
-	/**
+	
+
+/**
 	 * property IsDimension
 	*/
 	public void setIsDimension( boolean value );
 
-	/**
+	
+
+/**
 	 * property IsExternal
 	*/
 	public boolean getIsExternal();
 
-	/**
+	
+
+/**
 	 * property IsExternal
 	*/
 	public void setIsExternal( boolean value );
 
-	/**
+	
+
+/**
 	 * method AddSubPartition
 	*/
 	public void addSubPartition( IActivityPartition pPartition );
 
-	/**
+	
+
+/**
 	 * method RemoveSubPartition
 	*/
 	public void removeSubPartition( IActivityPartition pPartition );
 
-	/**
+	
+
+/**
 	 * property SubPartitions
 	*/
 	public ETList<IActivityPartition> getSubPartitions();
 
-	/**
+	
+
+/**
 	 * property Represents
 	*/
 	public IElement getRepresents();
 
-	/**
+	
+
+/**
 	 * property Represents
 	*/
 	public void setRepresents( IElement value );

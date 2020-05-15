@@ -51,17 +51,23 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 public interface IActionSequence extends IBehavior
 {
-	/**
+	
+
+/**
 	 * Adds an action to this sequence.
 	*/
 	public void addAction( IAction action );
 
-	/**
+	
+
+/**
 	 * Removes an action from this sequence.
 	*/
 	public void removeAction( IAction action );
 
-	/**
+	
+
+/**
 	 * Retrieves the collection of actions that make up this sequence.
 	*/
 	public ETList<IAction> getActions();

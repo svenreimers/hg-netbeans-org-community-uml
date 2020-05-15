@@ -26,7 +26,9 @@ public class ConnectionAnchor extends Anchor
         locationRatio = location;
     }
 
-    /**
+    
+
+/**
      * Returns a scene location of a related widget.
      * @return the scene location; null if no related widget is assigned
      */

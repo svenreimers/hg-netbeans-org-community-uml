@@ -62,7 +62,9 @@ public class Graphic extends NamedElement implements IGraphic
 		super();
 	}
 
-	/**
+	
+
+/**
 	 * Establishes the appropriate XML elements for this UML type.
 	 *
 	 * [in] The document where this element will reside

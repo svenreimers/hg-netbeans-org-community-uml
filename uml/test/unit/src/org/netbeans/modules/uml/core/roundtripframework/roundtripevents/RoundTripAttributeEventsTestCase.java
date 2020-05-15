@@ -95,7 +95,9 @@ public class RoundTripAttributeEventsTestCase extends AbstractUMLTestCase implem
 // This variable is to check if any events other than expected are thrown. If so , its value becomes greater than 0
 	private int count = 0;
 	
-	 /**
+	 
+
+/**
      * Here the Roundtrip Controller, dispatcher created and all listeners are attached.
      */
 	public void setUp()
@@ -126,12 +128,14 @@ public class RoundTripAttributeEventsTestCase extends AbstractUMLTestCase implem
 		
 	}
 	
-   /**
+   
+
+/**
     * AttributeCreationTestCase
     */
 	public void testAttributeCreate()
 	{
-// TODO: conover - temporary until fixed            
+
 //		tstAttrib = tstClass.createAttribute("int","TestAttr1");
 //		tstClass.addAttribute(tstAttrib);
 //		readFromFile(propFile,"Attribute","create");
@@ -152,7 +156,9 @@ public class RoundTripAttributeEventsTestCase extends AbstractUMLTestCase implem
 //		resetVals();
 	}
 
-	/**
+	
+
+/**
      * AttributeModificationTestCase
      */
 	
@@ -169,7 +175,7 @@ public class RoundTripAttributeEventsTestCase extends AbstractUMLTestCase implem
 		
 		readFromFile(propFile,"Operation","modify");
 		
-// TODO: conover - temporary until fixed            
+
 //		assertEquals(operKind[0].intValue(),elemKindFromInputFile);
 //		assertEquals(operEventState[0].intValue(),eventStateFromInputFile);
 //		assertEquals(operKind[1].intValue(),elemKindFromInputFile);
@@ -180,7 +186,9 @@ public class RoundTripAttributeEventsTestCase extends AbstractUMLTestCase implem
 	}
 	
 
-    /**
+    
+
+/**
      * AttributeDeletionTestCase
      */
 
@@ -237,13 +245,17 @@ public void testAttributeMultiplicity()
 		assertEquals(operEventState[1].intValue(),eventStateFromInputFile);
 	}
 	
-	/**
+	
+
+/**
      * Fired before an attribute has been created. We have nothing to check here.
      */
 	public void onPreAttributeChangeRequest(IChangeRequest newVal, IResultCell cell) {
 	}
 	
-	/**
+	
+
+/**
      * Fired after an attribute has been created. 
      */
 	public void onAttributeChangeRequest(IChangeRequest chngReq, IResultCell cell) 
@@ -253,14 +265,18 @@ public void testAttributeMultiplicity()
 		
 	}
 
-	/**
+	
+
+/**
      * Fired before an operation (setter/getter here) has been created. We have nothing to check here.
      */
 	public void onPreOperationChangeRequest(IChangeRequest newVal, IResultCell cell) {
 				
 	}
 
- 	/**
+ 	
+
+/**
      * Fired after an operation (setter/getter methods)  has been created. 
      */
 	public void onOperationChangeRequest(IChangeRequest chngReq, IResultCell cell)
@@ -286,7 +302,9 @@ public void testAttributeMultiplicity()
 	}
 	}
 	
-	/**
+	
+
+/**
      * Class precreation event - Not needed to be implemented in this test case
      */
 	public void onPreClassChangeRequest(IChangeRequest newVal, IResultCell cell) {
@@ -296,7 +314,9 @@ public void testAttributeMultiplicity()
 		// count++
 	}
 
-	/**
+	
+
+/**
      * Class creation event - Not needed to be implemented in this test case
      */
 	public void onClassChangeRequest(IChangeRequest newVal, IResultCell cell) {
@@ -308,7 +328,9 @@ public void testAttributeMultiplicity()
 		
 	}
 	
-	/**
+	
+
+/**
      * Enum precreation event - Not needed to be implemented in this test case. 
      */
 	 public void onPreEnumChangeRequest(IChangeRequest newVal, IResultCell cell) {
@@ -316,7 +338,9 @@ public void testAttributeMultiplicity()
 		count++;
 		
 	}
-	/**
+	
+
+/**
      * Enum creation event - Not needed to be implemented in this test case. 
      */
 	public void onEnumChangeRequest(IChangeRequest newVal, IResultCell cell) {
@@ -325,7 +349,9 @@ public void testAttributeMultiplicity()
 		
 	}
 	
-	 /**
+	 
+
+/**
      * Enum preLiteralCreation event - Not needed to be implemented in this test case. 
      */
 	public void onPreEnumLiteralChangeRequest(IChangeRequest newVal, IResultCell cell) {
@@ -334,7 +360,9 @@ public void testAttributeMultiplicity()
 		
 	}
 
-     /**
+     
+
+/**
      * Enum LiteralCreation event - Not needed to be implemented in this test case. 
      */
 	public void onEnumLiteralChangeRequest(IChangeRequest newVal, IResultCell cell) {
@@ -343,7 +371,9 @@ public void testAttributeMultiplicity()
 		
 	}
 
-    /**
+    
+
+/**
      * Package preCreation event - Not needed to be implemented in this test case. 
      */
 	public void onPrePackageChangeRequest(IChangeRequest newVal, IResultCell cell) {
@@ -352,7 +382,9 @@ public void testAttributeMultiplicity()
 		
 	}
 
-	/**
+	
+
+/**
      * Package Creation event - Not needed to be implemented in this test case. 
      */
 	public void onPackageChangeRequest(IChangeRequest newVal, IResultCell cell) {
@@ -361,7 +393,9 @@ public void testAttributeMultiplicity()
 		
 	}
 
-	/**
+	
+
+/**
      * Relation preCreation event - Not needed to be implemented in this test case. 
      */
 	public void onPreRelationChangeRequest(IChangeRequest newVal, IResultCell cell) {
@@ -370,7 +404,9 @@ public void testAttributeMultiplicity()
 		
 	}
 
-	/**
+	
+
+/**
      * Relation Creation event - Not needed to be implemented in this test case. 
      */
 	public void onRelationChangeRequest(IChangeRequest newVal, IResultCell cell) {
@@ -380,7 +416,9 @@ public void testAttributeMultiplicity()
 	}
 	
 
-    /**
+    
+
+/**
      * Get the path of  test Data Folder
      */
 	private String getDataDir() {
@@ -403,7 +441,9 @@ public void testAttributeMultiplicity()
 		return testDataPath;
 	}
 
-    /**
+    
+
+/**
 	 * @propFile - the input file
 	 * @findElemType - the element being acted upon like attribute, operation
 	 * @findChangeKind - the action on the element like create,delete etc
@@ -443,7 +483,9 @@ public void testAttributeMultiplicity()
 		}  
 	}
 	
-	/**
+	
+
+/**
      * Reset the values for certain variables
      */
 	private void resetVals()

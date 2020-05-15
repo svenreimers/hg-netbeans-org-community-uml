@@ -52,7 +52,9 @@ import org.netbeans.modules.uml.core.support.umlsupport.XMLManip;
  */
 public class JumpEvent extends MethodDetailParserData implements IJumpEvent
 {
-    /**
+    
+
+/**
      * The destination of the jump.  The destination
      * is an option property.  If destination is an
      * empty string then the execution continues after
@@ -66,7 +68,9 @@ public class JumpEvent extends MethodDetailParserData implements IJumpEvent
         return ipn != null? XMLManip.getAttributeValue(ipn, "value") : null;
     }
 
-    /**
+    
+
+/**
      * Specifies the type of jump that occured.  The Jump can be
      * a goto, break, or continue.
      *

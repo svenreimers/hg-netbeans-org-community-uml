@@ -43,6 +43,7 @@
  */
 
 
+
 /*
  *
  * Created on Jun 10, 2003
@@ -61,7 +62,8 @@ import org.netbeans.modules.uml.core.support.umlsupport.IResultCell;
 public class ProjectTreeEventsAdapter implements IProjectTreeEventsSink
 {
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     */
    public void onBeforeEdit(IProjectTreeControl pParentControl,
                             IProjectTreeItem pItem,
@@ -70,7 +72,9 @@ public class ProjectTreeEventsAdapter implements IProjectTreeEventsSink
    {
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     */
    public void onAfterEdit(IProjectTreeControl pParentControl,
                            IProjectTreeItem pItem,
@@ -79,7 +83,9 @@ public class ProjectTreeEventsAdapter implements IProjectTreeEventsSink
    {
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     */
    public void onDoubleClick(IProjectTreeControl pParentControl,
                              IProjectTreeItem    pItem, 
@@ -91,7 +97,9 @@ public class ProjectTreeEventsAdapter implements IProjectTreeEventsSink
    {
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     */
    public void onSelChanged(IProjectTreeControl pParentControl,
 	                         IProjectTreeItem[] pItem,
@@ -99,7 +107,9 @@ public class ProjectTreeEventsAdapter implements IProjectTreeEventsSink
    {
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     */
    public void onRightButtonDown(IProjectTreeControl pParentControl,
                                  IProjectTreeItem pItem,
@@ -110,7 +120,9 @@ public class ProjectTreeEventsAdapter implements IProjectTreeEventsSink
    {
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     */
    public void onBeginDrag(IProjectTreeControl pParentControl,
 	                        IProjectTreeItem[] pItem,
@@ -119,7 +131,9 @@ public class ProjectTreeEventsAdapter implements IProjectTreeEventsSink
    {
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     */
    public void onMoveDrag(IProjectTreeControl    pParentControl,
                           Transferable           pItem,
@@ -128,7 +142,9 @@ public class ProjectTreeEventsAdapter implements IProjectTreeEventsSink
    {
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     */
    public void onEndDrag(IProjectTreeControl    pParentControl,
                          Transferable           pItem,
@@ -138,7 +154,9 @@ public class ProjectTreeEventsAdapter implements IProjectTreeEventsSink
    {
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeEventsSink#onItemExpanding(org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl, org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeExpandingContext, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
     */
    public void onItemExpanding(IProjectTreeControl pParentControl, 

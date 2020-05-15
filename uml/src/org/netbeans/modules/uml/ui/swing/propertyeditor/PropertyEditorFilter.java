@@ -43,6 +43,8 @@
  */
 
 
+
+
 /*
  * Created on Jun 4, 2003
  *
@@ -80,7 +82,9 @@ public class PropertyEditorFilter
 	private TreeMap<String, String> m_OtherMap = new TreeMap<String, String>();
 	private String m_CurrentSel = "";
 
-	/**
+	
+
+/**
 	 * 
 	 */
 	public PropertyEditorFilter()
@@ -88,7 +92,9 @@ public class PropertyEditorFilter
 		super();
 	}
 
-	/**
+	
+
+/**
 	 * 
 	 */
 	public void build()

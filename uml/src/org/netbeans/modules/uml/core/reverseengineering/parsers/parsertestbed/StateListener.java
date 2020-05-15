@@ -65,7 +65,9 @@ public class StateListener implements IStateListener, ITokenProcessor
         this.ui = ui;
     }
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.IStateListener#onBeginState(java.lang.String, java.lang.String, org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.IStatePayload)
      */
     public void onBeginState(String stateName, String language, IStatePayload payload)
@@ -76,7 +78,9 @@ public class StateListener implements IStateListener, ITokenProcessor
         stateCount++;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.IStateListener#onEndState(java.lang.String)
      */
     public void onEndState(String stateName)
@@ -86,7 +90,9 @@ public class StateListener implements IStateListener, ITokenProcessor
             ui.setLastNode(n.getParent());
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ITokenProcessor#processToken(org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ITokenDescriptor, java.lang.String)
      */
     public void processToken(ITokenDescriptor pToken, String language)

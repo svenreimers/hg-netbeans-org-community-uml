@@ -71,6 +71,7 @@ import org.netbeans.modules.performance.utilities.MeasureStartupTimeTestCase;
 import org.netbeans.modules.project.ui.test.ProjectSupport;
 
 
+
 /**
  * Prepare user directory for complex measurements (startup time and memory consumption) of IDE with opened project and 10 files.
  * Open 10 java files and shut down ide.
@@ -88,14 +89,18 @@ public class PrepareIDEForUMLComplexMeasurementsTest extends JellyTestCase {
     /** If true - at least one test failed */
     protected static boolean test_failed = false;
     
-    /** Define testcase
+    
+
+/** Define testcase
      * @param testName name of the testcase
      */
     public PrepareIDEForUMLComplexMeasurementsTest(String testName) {
         super(testName);
     }
     
-    /** Testsuite
+    
+
+/** Testsuite
      * @return testuite
      */
     public static Test suite() {
@@ -121,7 +126,9 @@ public class PrepareIDEForUMLComplexMeasurementsTest extends JellyTestCase {
         log = getRef();
     }
     
-    /**
+    
+
+/**
      * Close All Documents.
      */
     public void closeAllDocuments(){
@@ -136,14 +143,18 @@ public class PrepareIDEForUMLComplexMeasurementsTest extends JellyTestCase {
 
     }
     
-    /**
+    
+
+/**
      * Close Memory Toolbar.
      */
     public static void closeMemoryToolbar(){
         CommonUtilities.closeMemoryToolbar();
     }
 
-    /**
+    
+
+/**
      * Open Travel Reservation projects
      */
     public void openProjects() {
@@ -157,7 +168,9 @@ public class PrepareIDEForUMLComplexMeasurementsTest extends JellyTestCase {
         }
     }
     
-    /**
+    
+
+/**
      * Open 10 selected files from Travel Reservation projects
      */
     public void openFiles(){
@@ -221,7 +234,9 @@ public class PrepareIDEForUMLComplexMeasurementsTest extends JellyTestCase {
         }
     }
     
-    /**
+    
+
+/**
      * Save status, if one of the above defined test failed, this method creates
      * file in predefined path and it means the complex tests will not run.
      */

@@ -81,7 +81,9 @@ public class OperationHandler
         setOperations(ops);
     }
     
-    /**
+    
+
+/**
      * Set the operation to process, also "clears" the state information
      */
     public void setOperations(ETList<IElement> operations)
@@ -98,7 +100,9 @@ public class OperationHandler
         return false;
     }
 
-    /**
+    
+
+/**
      * Process all the operations
      */
     public boolean processOperations(IUMLParsingIntegrator integrator)
@@ -182,7 +186,9 @@ public class OperationHandler
         return opProcessed;
     }
     
-    /**
+    
+
+/**
      * Add the messages at the begining and end that represent the operation
      */
     protected void addInteractionMessages(IOperation op, IOperationRE opre) 
@@ -211,7 +217,9 @@ public class OperationHandler
         }
     }
     
-    /**
+    
+
+/**
      * Convert the operation to its meta data
      *
      * @param pElement[in] An ISourceFileArtifact associated with the pOperation
@@ -239,7 +247,9 @@ public class OperationHandler
         return opParsed;
     }
     
-    /**
+    
+
+/**
      * Retrieve the name of the input operation's classifier
      */
     protected String getClassifierQualifiedName(IOperation op)
@@ -248,7 +258,9 @@ public class OperationHandler
         return cl != null? cl.getFullyQualifiedName(false) : null;
     }
     
-    /**
+    
+
+/**
      * Retrieve the file name from the source file artifact represented by the input IElement
      */
     protected String getFileName(IElement element)
@@ -258,7 +270,9 @@ public class OperationHandler
         return null;
     }
     
-    /**
+    
+
+/**
      * Retrieve's the operation's interaction
      */
     protected IInteraction getOperationsInteraction(IOperation op)

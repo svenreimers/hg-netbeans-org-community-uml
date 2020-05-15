@@ -37,7 +37,9 @@ public class DocUtils
 		super();
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * ConvertToTags converts '\n' in string to <BR> and "\n\n" to temporary <P>,
 	 *	and strips carriage returns.

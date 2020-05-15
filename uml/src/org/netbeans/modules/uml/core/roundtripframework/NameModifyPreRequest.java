@@ -42,11 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : NameModifyPreRequest.java
- * Created on : Nov 6, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.roundtripframework;
 
 import org.netbeans.modules.uml.core.eventframework.IEventPayload;
@@ -80,7 +77,9 @@ public class NameModifyPreRequest
                 clonedOwner);
     }
     
-    /**
+    
+
+/**
      *
      * Checks to see if the pre-element is named to the default name
      * ( e.g., "< un-named >" ) and then checks the name of the post element.
@@ -98,7 +97,9 @@ public class NameModifyPreRequest
 //       super.preProcessRequest(req);
 //    }
 
-    /**
+    
+
+/**
      *
      * Determines whether or not a name change of an INamedElement will put us
      * into a create element state as far as RoundTrip is concerned.

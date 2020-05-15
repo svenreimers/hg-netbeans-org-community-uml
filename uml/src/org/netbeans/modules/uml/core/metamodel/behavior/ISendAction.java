@@ -50,12 +50,16 @@ import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure
 
 public interface ISendAction extends IAction
 {
-	/**
+	
+
+/**
 	 * property Reception
 	*/
 	public IReception getReception();
 
-	/**
+	
+
+/**
 	 * property Reception
 	*/
 	public void setReception( IReception value );

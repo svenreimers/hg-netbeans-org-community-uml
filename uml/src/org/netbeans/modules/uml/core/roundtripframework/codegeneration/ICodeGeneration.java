@@ -49,37 +49,45 @@ import org.netbeans.modules.uml.core.support.umlutils.IDataFormatter;
 
 public interface ICodeGeneration
 {
-	/**
+	
+
+/**
 	 * Get/Set the RoundTripController that this CodeGeneration object listens to
 	*/
 	public IRoundTripController getRoundTripController();
 
-	/**
+	
+
+/**
 	 * Get/Set the RoundTripController that this CodeGeneration object listens to
 	*/
 	public void setRoundTripController( IRoundTripController value );
 
-	/**
-	 * Gets / Sets DataFormatter
-	*/
+	
+
 	public IDataFormatter getDataFormatter();
 
-	/**
-	 * Gets / Sets DataFormatter
-	*/
+	
+
 	public void setDataFormatter( IDataFormatter value );
 
-	/**
+	
+
+/**
 	 * Adds a ChangeNotificationFilter
 	*/
 	public int addChangeNotificationFilter( ICodeGenerationChangeNotificationFilter pFilter );
 
-	/**
+	
+
+/**
 	 * Removes a CodeGenerationChangeRequest filter
 	*/
 	public long removeChangeNotificationFilter( int Cookie );
 
-	/**
+	
+
+/**
 	 * Determines if an ICGChangeNotification should be filtered
 	*/
 	public boolean shouldFilterNotification( ICGChangeNotification pCGChangeNotification );

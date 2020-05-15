@@ -72,6 +72,7 @@ import java.awt.event.MouseListener;
 import java.util.EventObject;
 
 
+
 /**
  * This example shows how to create a simple JTreeTable component, 
  * by using a JTree as a renderer (and editor) for the cells in a 
@@ -150,7 +151,9 @@ public class JTreeTable extends JTable implements ActionListener{
 		}
 	}
 
-	/**
+	
+
+/**
 	 * Overridden to invoke repaint for the particular location if
 	 * the column contains the tree. This is done as the tree editor does
 	 * not fill the bounds of the cell, we need the renderer to paint
@@ -168,7 +171,9 @@ public class JTreeTable extends JTable implements ActionListener{
 	return retValue;
 	}
 
-    /**
+    
+
+/**
      * Overridden to message super and forward the method to the tree.
      * Since the tree is not actually in the component hieachy it will
      * never receive this unless we forward it in this manner.
@@ -186,7 +191,9 @@ public class JTreeTable extends JTable implements ActionListener{
 	                                         "Tree.foreground", "Tree.font");
     }
 
-    /* Workaround for BasicTableUI anomaly. Make sure the UI never tries to 
+    
+
+/* Workaround for BasicTableUI anomaly. Make sure the UI never tries to 
      * paint the editor. The UI currently uses different techniques to 
      * paint the renderers and editors and overriding setBounds() below 
      * is not the right thing to do for an editor. Returning -1 for the 
@@ -197,7 +204,9 @@ public class JTreeTable extends JTable implements ActionListener{
 	        editingRow;  
     }
 
-	/**
+	
+
+/**
 	 * Returns the actual row that is editing as <code>getEditingRow</code>
 	 * will always return -1.
 	 */
@@ -205,7 +214,9 @@ public class JTreeTable extends JTable implements ActionListener{
 	return editingRow;
 	}
 
-	/**
+	
+
+/**
 	 * This is overridden to invoke super's implementation, and then,
 	 * if the receiver is editing a Tree column, the editor's bounds is
 	 * reset. The reason we have to do this is because JTable doesn't
@@ -225,7 +236,9 @@ public class JTreeTable extends JTable implements ActionListener{
 		}
 	}
 
-    /**
+    
+
+/**
      * Overridden to pass the new rowHeight to the tree.
      */
     public void setRowHeight(int rowHeight) { 
@@ -235,7 +248,9 @@ public class JTreeTable extends JTable implements ActionListener{
 	}
     }
 
-    /**
+    
+
+/**
      * Returns the tree that is being shared between the model.
      */
     public TreeTableCellRenderer getTree() {
@@ -664,7 +679,9 @@ public class JTreeTable extends JTable implements ActionListener{
 
 	public class TreeTableCellRenderer extends JTree implements TableCellRenderer {
 
-		/**
+		
+
+/**
 		 * 
 		 */
 		public TreeTableCellRenderer()
@@ -675,7 +692,9 @@ public class JTreeTable extends JTable implements ActionListener{
 		/** Last table/tree row asked to renderer. */
 		protected int visibleRow;
 
-		/** Border to draw around the tree, if this is non-null, it will
+		
+
+/** Border to draw around the tree, if this is non-null, it will
 		 * be painted. */
 		protected Border highlightBorder;
 
@@ -694,7 +713,9 @@ public class JTreeTable extends JTable implements ActionListener{
 			super.addMouseListener(l);
 		}
 
-		/**
+		
+
+/**
 		 * updateUI is overridden to set the colors of the Tree's renderer
 		 * to match that of the table.
 		 */
@@ -716,7 +737,9 @@ public class JTreeTable extends JTable implements ActionListener{
 			}
 		}
 
-		/**
+		
+
+/**
 		 * Sets the row height of the tree, and forwards the row height to
 		 * the table.
 		 */
@@ -730,14 +753,18 @@ public class JTreeTable extends JTable implements ActionListener{
 			}
 		}
 
-		/**
+		
+
+/**
 		 * This is overridden to set the height to match that of the JTable.
 		 */
 		public void setBounds(int x, int y, int w, int h) {
 			super.setBounds(x, 0, w, JTreeTable.this.getHeight());
 		}
 
-		/**
+		
+
+/**
 		 * Sublcassed to translate the graphics such that the last visible
 		 * row will be drawn at 0,0.
 		 */
@@ -753,7 +780,9 @@ public class JTreeTable extends JTable implements ActionListener{
 			}
 		}
 
-		/**
+		
+
+/**
 		 * TreeCellRenderer method. Overridden to update the visible row.
 		 */
 		public Component getTableCellRendererComponent(JTable table,
@@ -883,7 +912,9 @@ public class JTreeTable extends JTable implements ActionListener{
 			super(new TreeTableTextField());
 		}
 	
-	/**
+	
+
+/**
 	 * Overridden to determine an offset that tree would place the
 	 * editor at. The offset is determined from the
 	 * <code>getRowBounds</code> JTree method, and additionally
@@ -922,7 +953,9 @@ public class JTreeTable extends JTable implements ActionListener{
 		return component;
 	}
 	
-	/**
+	
+
+/**
 	 * This is overridden to forward the event to the tree. This will
 	 * return true if the click count >= 3, or the event is null.
 	 */
@@ -966,7 +999,9 @@ public class JTreeTable extends JTable implements ActionListener{
 		}
 	}
 
-	/**
+	
+
+/**
 	 * ListToTreeSelectionModelWrapper extends DefaultTreeSelectionModel
 	 * to listen for changes in the ListSelectionModel it maintains. Once
 	 * a change in the ListSelectionModel happens, the paths are updated
@@ -981,7 +1016,9 @@ public class JTreeTable extends JTable implements ActionListener{
 			getListSelectionModel().addListSelectionListener(createListSelectionListener());
 		}
 		
-		/**
+		
+
+/**
 		 * Returns the list selection model. ListToTreeSelectionModelWrapper
 		 * listens for changes to this model and updates the selected paths
 		 * accordingly.
@@ -990,7 +1027,9 @@ public class JTreeTable extends JTable implements ActionListener{
 			return listSelectionModel; 
 		}
 		
-		/**
+		
+
+/**
 		 * This is overridden to set <code>updatingListSelectionModel</code>
 		 * and message super. This is the only place DefaultTreeSelectionModel
 		 * alters the ListSelectionModel.
@@ -1012,14 +1051,18 @@ public class JTreeTable extends JTable implements ActionListener{
 			// paths are the only thing that needs to be updated.
 		}
 		
-		/**
+		
+
+/**
 		 * Creates and returns an instance of ListSelectionHandler.
 		 */
 		protected ListSelectionListener createListSelectionListener() {
 			return new ListSelectionHandler();
 		}
 	
-		/**
+		
+
+/**
 		 * If <code>updatingListSelectionModel</code> is false, this will
 		 * reset the selected paths from the selected rows in the list
 		 * selection model.
@@ -1058,7 +1101,9 @@ public class JTreeTable extends JTable implements ActionListener{
 			}
 		}
 	
-		/**
+		
+
+/**
 		 * Class responsible for calling updateSelectedPathsFromSelectedRows
 		 * when the selection of the list changse.
 		 */

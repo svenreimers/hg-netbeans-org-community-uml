@@ -63,7 +63,9 @@ public class Constraint extends AutonomousElement implements IConstraint, IExpre
 		super();
 	}
 
-	/**
+	
+
+/**
 	 * Gets the condition that must be true when evaluated in order for an
 	 * instance in a system to be well-formed.
 	 *
@@ -77,7 +79,9 @@ public class Constraint extends AutonomousElement implements IConstraint, IExpre
 		return col.retrieveSingleElement(m_Node, "UML:Constraint.specification/*", IValueSpecification.class);
 	}
 
-	/**
+	
+
+/**
 	 * Sets the condition that must be true when evaluated in order for an
 	 * instance in a system to be well-formed.
 	 *
@@ -89,7 +93,9 @@ public class Constraint extends AutonomousElement implements IConstraint, IExpre
 		addChild("UML:Constraint.specification", "UML:Constraint.specification", spec);
 	}
 
-	/**
+	
+
+/**
 	 * Adds an element to this Constraint's list of constrained elements.
 	 *
 	 * @Param element [in] 
@@ -100,7 +106,9 @@ public class Constraint extends AutonomousElement implements IConstraint, IExpre
 		addElementByID(elem, "constrainedElement");
 	}
 
-	/**
+	
+
+/**
 	 * Removes an element from this constraint.
 	 *
 	 * @Param element [in] 
@@ -111,7 +119,9 @@ public class Constraint extends AutonomousElement implements IConstraint, IExpre
 		removeElementByID(elem, "constrainedElement");
 	}
 
-	/**
+	
+
+/**
 	 * Retrieves the collection of elements this constraint is applied to.
 	 *
 	 * @Param elements [out] 
@@ -124,7 +134,9 @@ public class Constraint extends AutonomousElement implements IConstraint, IExpre
 	  return col.retrieveElementCollectionWithAttrIDs(this, "constrainedElement", IElement.class);      
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Determines whether or not the passed in NamedElement is already being
 	 * constrained by this Constraint
@@ -139,7 +151,9 @@ public class Constraint extends AutonomousElement implements IConstraint, IExpre
 		return isElementPresent(elem, "constrainedElement", true);
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Retrieves the string representation of the constraint
 	 *
@@ -158,7 +172,9 @@ public class Constraint extends AutonomousElement implements IConstraint, IExpre
 		return val;
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Sets the expression of this Constraint with the passed-in string
 	 *
@@ -190,7 +206,9 @@ public class Constraint extends AutonomousElement implements IConstraint, IExpre
 		}
 	}
 
-	/**
+	
+
+/**
 	 * Establishes the appropriate XML elements for this UML type.
 	 *
 	 * [in] The document where this element will reside
@@ -204,7 +222,9 @@ public class Constraint extends AutonomousElement implements IConstraint, IExpre
 	   buildNodePresence( "UML:Constraint", doc, parent );
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * @see AutonomousElementImpl::PerformDuplication()
 	 *
@@ -224,7 +244,9 @@ public class Constraint extends AutonomousElement implements IConstraint, IExpre
 		return dup;
 	}
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IExpressionListener#onBodyModified(org.netbeans.modules.uml.core.metamodel.core.foundation.IExpression)
     */
    public void onBodyModified(IExpression exp)
@@ -236,7 +258,9 @@ public class Constraint extends AutonomousElement implements IConstraint, IExpre
 
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IExpressionListener#onLanguageModified(org.netbeans.modules.uml.core.metamodel.core.foundation.IExpression)
     */
    public void onLanguageModified(IExpression exp)
@@ -244,7 +268,9 @@ public class Constraint extends AutonomousElement implements IConstraint, IExpre
  
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IExpressionListener#onPreBodyModified(org.netbeans.modules.uml.core.metamodel.core.foundation.IExpression, java.lang.String)
     */
    public boolean onPreBodyModified(IExpression exp, String proposedValue)
@@ -252,7 +278,9 @@ public class Constraint extends AutonomousElement implements IConstraint, IExpre
 		return true;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IExpressionListener#onPreLanguageModified(org.netbeans.modules.uml.core.metamodel.core.foundation.IExpression, java.lang.String)
     */
    public boolean onPreLanguageModified(IExpression exp, String proposedValue)

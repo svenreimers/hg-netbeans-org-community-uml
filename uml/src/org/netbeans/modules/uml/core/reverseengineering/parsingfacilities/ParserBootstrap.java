@@ -65,7 +65,9 @@ import org.netbeans.modules.uml.core.support.umlsupport.ProductRetriever;
 public class ParserBootstrap implements IParserBootstrap
 {
 
-    /**
+    
+
+/**
      * Creates and initializes a parser that will be used to parse an operation.
      *
      * @param languageName [in] The language that is to be parsed.
@@ -89,7 +91,9 @@ public class ParserBootstrap implements IParserBootstrap
         return null;
     }
 
-    /**
+    
+
+/**
      * Creates and initializes a parser.
      *
      * @param languageName [in] The language that is to be parsed.
@@ -115,7 +119,9 @@ public class ParserBootstrap implements IParserBootstrap
         return null;
     }
 
-    /**
+    
+
+/**
      * Retrieve the LanguageManager from the CoreProduct.
      */
     protected ILanguageManager getLanguageManager()
@@ -124,7 +130,9 @@ public class ParserBootstrap implements IParserBootstrap
         return prod != null? prod.getLanguageManager() : null;
     }
 
-    /**
+    
+
+/**
      * Creates and initializes a parser that will be used to parse an operation.  The parser
      * that is created is base on the filename.
      *
@@ -151,7 +159,9 @@ public class ParserBootstrap implements IParserBootstrap
         return null;
     }
 
-    /**
+    
+
+/**
      * Creates and initializes a parser.  The parser that is created is base 
      * on the filename.
      *
@@ -182,7 +192,9 @@ public class ParserBootstrap implements IParserBootstrap
         return null;
     }
     
-    /**
+    
+
+/**
      * Retrieves the parser from the language definition and initializes the
      * parsers ports.
      *
@@ -222,7 +234,9 @@ public class ParserBootstrap implements IParserBootstrap
         return parser;
     }
     
-    /**
+    
+
+/**
      * Initializes the parser with the state listener.  The listener to use is
      * retrieved from the facilities property.  The property name is 
      * <Langauge>.StateListener.
@@ -243,7 +257,9 @@ public class ParserBootstrap implements IParserBootstrap
                                             keyPrefix + ".StateListener"));
     }
     
-    /**
+    
+
+/**
      * Initializes the parser with the token processor.  The token processor to use is
      * retrieved from the facilities property.  The property name is 
      * <Langauge>.TokenProcessor.
@@ -263,7 +279,9 @@ public class ParserBootstrap implements IParserBootstrap
                 keyPrefix + ".TokenProcessor"));
     }
     
-    /**
+    
+
+/**
      * Initializes the parser with the error listner.  The listener to use is
      * retrieved from the facilities property.  The property name is 
      * <Langauge>.ErrorListener.
@@ -283,7 +301,9 @@ public class ParserBootstrap implements IParserBootstrap
                 keyPrefix + ".ErrorListener"));
     }
     
-    /**
+    
+
+/**
      * Initializes the parser with the state filter.  The filter to use is
      * retrieved from the facilities property.  The property name is 
      * <Langauge>.StateFilter.
@@ -303,7 +323,9 @@ public class ParserBootstrap implements IParserBootstrap
                 keyPrefix + ".StateFilter"));
     }
     
-    /**
+    
+
+/**
      * Initializes the parser with the token filter.  The filter to use is
      * retrieved from the facilities property.  The property name is 
      * <Langauge>.TokenFilter.
@@ -323,7 +345,9 @@ public class ParserBootstrap implements IParserBootstrap
                 keyPrefix + ".TokenFilter"));
     }
     
-    /**
+    
+
+/**
      * Initializes the parser with the token filter.  The filter to use is
      * retrieved from the facilities property.  The property name is 
      * <Langauge>.TokenFilter.

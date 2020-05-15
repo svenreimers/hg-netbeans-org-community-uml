@@ -60,7 +60,8 @@ public class PreferenceManagerEventDispatcher extends EventDispatcher implements
 	/** Handles the actual deployment of events to Preference listeners. */
 	private EventManager< IPreferenceManagerEventsSink > m_PreferenceEventManager = null;
 
-	/**
+	
+/**
 	 * 
 	 */
 	public PreferenceManagerEventDispatcher() 
@@ -70,7 +71,9 @@ public class PreferenceManagerEventDispatcher extends EventDispatcher implements
       m_PreferenceEventManager = new EventManager< IPreferenceManagerEventsSink >();
 	}
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.preferenceframework.IPreferenceManagerEventDispatcher#registerPreferenceManagerEvents(org.netbeans.modules.uml.core.preferenceframework.IPreferenceManagerEventsSink)
     */
    public void registerPreferenceManagerEvents(IPreferenceManagerEventsSink pHandler)
@@ -78,7 +81,9 @@ public class PreferenceManagerEventDispatcher extends EventDispatcher implements
       m_PreferenceEventManager.addListener(pHandler, null);
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.preferenceframework.IPreferenceManagerEventDispatcher#revokePreferenceManagerSink(org.netbeans.modules.uml.core.preferenceframework.IPreferenceManagerEventsSink)
     */
    public void revokePreferenceManagerSink(IPreferenceManagerEventsSink pHandler)
@@ -86,7 +91,9 @@ public class PreferenceManagerEventDispatcher extends EventDispatcher implements
 	m_PreferenceEventManager.removeListener(pHandler);
    }
 
-   /**
+   
+
+/**
 	* Fired when a preference value changes.
 	*
 	* @param name[in]		The name of the preference
@@ -118,7 +125,9 @@ public class PreferenceManagerEventDispatcher extends EventDispatcher implements
 	}      
    }
 
-   /**
+   
+
+/**
 	* Fired when a preference is added.
 	*
 	* @param name[in]		The name of the preference
@@ -152,7 +161,9 @@ public class PreferenceManagerEventDispatcher extends EventDispatcher implements
 	}      
    }
 
-   /**
+   
+
+/**
 	* Fired when a preference is deleted.
 	*
 	* @param name[in]		The name of the preference
@@ -186,7 +197,9 @@ public class PreferenceManagerEventDispatcher extends EventDispatcher implements
 	}      
    }
 
-   /**
+   
+
+/**
 	* Fired when any preference value changes.  This method groups all of the changes together in a "batch"
 	* event.  The changes to the individual preferences also fired.
 	*

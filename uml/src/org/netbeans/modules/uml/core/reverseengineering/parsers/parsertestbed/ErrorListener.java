@@ -59,7 +59,9 @@ public class ErrorListener implements IErrorListener
         this.ui = ui;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.IErrorListener#onError(org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.IErrorEvent)
      */
     public void onError(IErrorEvent error)

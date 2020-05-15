@@ -42,11 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : AssociationEndTransformChangeRequest.java
- * Created on : Nov 12, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.roundtripframework;
 
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier;
@@ -59,7 +56,8 @@ public class AssociationEndTransformChangeRequest
 {
     protected IClassifier m_Classifier;
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IAssociationEndTransformChangeRequest#getOldReferencingClassifier()
      */
     public IClassifier getOldReferencingClassifier()
@@ -67,7 +65,9 @@ public class AssociationEndTransformChangeRequest
         return m_Classifier;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IAssociationEndTransformChangeRequest#setOldReferencingClassifier(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier)
      */
     public void setOldReferencingClassifier(IClassifier pClassifier)

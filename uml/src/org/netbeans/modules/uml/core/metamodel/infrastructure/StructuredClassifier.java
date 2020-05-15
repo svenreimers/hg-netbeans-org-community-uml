@@ -57,7 +57,9 @@ public class StructuredClassifier extends Classifier
 								  implements IStructuredClassifier
 {
 
-	/**
+	
+
+/**
 	 * 
 	 */
 	public StructuredClassifier() 
@@ -65,7 +67,9 @@ public class StructuredClassifier extends Classifier
 		super();		
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.IStructuredClassifier#addRole(org.netbeans.modules.uml.core.metamodel.infrastructure.IConnectableElement)
 	 */
 	public void addRole(IConnectableElement element) 
@@ -84,7 +88,9 @@ public class StructuredClassifier extends Classifier
 											);	
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.IStructuredClassifier#removeRole(org.netbeans.modules.uml.core.metamodel.infrastructure.IConnectableElement)
 	 */
 	public void removeRole(IConnectableElement element)
@@ -103,7 +109,9 @@ public class StructuredClassifier extends Classifier
 							    );
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.IStructuredClassifier#getRoles()
 	 */
 	public ETList<IConnectableElement> getRoles() 
@@ -112,7 +120,9 @@ public class StructuredClassifier extends Classifier
 		return collector.retrieveElementCollectionWithAttrIDs(this,"role", IConnectableElement.class);	
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.IStructuredClassifier#addPart(org.netbeans.modules.uml.core.metamodel.infrastructure.IPart)
 	 */
 	public void addPart(IPart part) 
@@ -120,7 +130,9 @@ public class StructuredClassifier extends Classifier
 		super.addOwnedElement(part);
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.IStructuredClassifier#removePart(org.netbeans.modules.uml.core.metamodel.infrastructure.IPart)
 	 */
 	public void removePart(IPart part) 
@@ -128,7 +140,9 @@ public class StructuredClassifier extends Classifier
 		super.removeElement(part);
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.IStructuredClassifier#getParts()
 	 */
 	public ETList<IPart> getParts() 
@@ -141,7 +155,9 @@ public class StructuredClassifier extends Classifier
                 IPart.class);
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.IStructuredClassifier#addConnector(org.netbeans.modules.uml.core.metamodel.infrastructure.IConnector)
 	 */
 	public void addConnector(IConnector connector) 
@@ -149,7 +165,9 @@ public class StructuredClassifier extends Classifier
 		super.addElement(connector);
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.IStructuredClassifier#removeConnector(org.netbeans.modules.uml.core.metamodel.infrastructure.IConnector)
 	 */
 	public void removeConnector(IConnector connector) 
@@ -157,7 +175,9 @@ public class StructuredClassifier extends Classifier
 		super.removeElement(connector);
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.IStructuredClassifier#getConnectors()
 	 */
 	public ETList<IConnector> getConnectors() 

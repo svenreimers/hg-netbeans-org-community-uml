@@ -50,12 +50,16 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.IExpression;
 
 public interface IAssignmentAction extends IAction
 {
-	/**
+	
+
+/**
 	 * Resolves to the instance to be assigned when evaluated.
 	*/
 	public IExpression getValue();
 
-	/**
+	
+
+/**
 	 * Resolves to the instance to be assigned when evaluated.
 	*/
 	public void setValue( IExpression value );

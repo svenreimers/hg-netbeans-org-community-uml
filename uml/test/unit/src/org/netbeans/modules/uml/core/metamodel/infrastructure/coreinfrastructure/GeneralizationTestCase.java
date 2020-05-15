@@ -48,6 +48,8 @@ package org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructur
 import org.netbeans.modules.uml.core.AbstractUMLTestCase;
 import org.netbeans.modules.uml.core.metamodel.core.constructs.IClass;
 
+
+
 /**
  * Test cases for Generalization.
  */
@@ -61,7 +63,9 @@ public class GeneralizationTestCase extends AbstractUMLTestCase
     private IGeneralization gen;
     private IClass general, specific;
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see junit.framework.TestCase#setUp()
      */
     protected void setUp() throws Exception
@@ -74,7 +78,9 @@ public class GeneralizationTestCase extends AbstractUMLTestCase
         gen = relFactory.createGeneralization(general, specific);
     }
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see junit.framework.TestCase#tearDown()
      */
     protected void tearDown() throws Exception

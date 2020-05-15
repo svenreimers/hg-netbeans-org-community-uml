@@ -42,11 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * CloseDiagramAction.java
- *
- * Created on January 25, 2005, 2:30 PM
- */
+
+
 
 package org.netbeans.modules.uml.project.ui.nodes.actions;
 
@@ -63,7 +60,8 @@ import org.openide.util.actions.CookieAction;
 public class CloseDiagramAction extends CookieAction
 {
 	
-	/**
+	
+/**
 	 * Creates a new instance of CloseDiagramAction
 	 */
 	public CloseDiagramAction()

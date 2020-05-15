@@ -62,14 +62,16 @@ public class ElementDisposal implements IElementDisposal{
 	private ETList< IVersionableElement > m_Elements = 
 									new ETArrayList< IVersionableElement >();
 
-	/**
+	
+/**
 	 * 
 	 */
 	public ElementDisposal() {
 		super();
 	}
 
-	/**
+	
+/**
 	 *
 	 * Puts the passed-in element on our internal collection of elements
 	 * that need to be disposed of.
@@ -85,7 +87,9 @@ public class ElementDisposal implements IElementDisposal{
 		return 0;
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Disposes all elements in the disposal queue. 
 	 *
@@ -118,7 +122,9 @@ public class ElementDisposal implements IElementDisposal{
 		return 0;
 	}
 
-	/**
+	
+
+/**
 	 * @return
 	 */
 	private ETList<IVersionableElement> getElements() 
@@ -126,7 +132,9 @@ public class ElementDisposal implements IElementDisposal{
 		return m_Elements;
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Retrieves the collection of elements that still need to be disposed of
 	 *

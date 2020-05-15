@@ -54,6 +54,8 @@ import org.netbeans.modules.uml.core.metamodel.core.constructs.IClass;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.BaseElement;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.IExpression;
 
+
+
 /**
  * Test cases for Lifeline.
  */
@@ -67,7 +69,9 @@ public class LifelineTestCase extends AbstractUMLTestCase
     private ILifeline life;
     private IInteraction lifeInter;
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see junit.framework.TestCase#setUp()
      */
     protected void setUp() throws Exception

@@ -48,22 +48,30 @@ import org.netbeans.modules.uml.core.eventframework.IEventPayload;
 
 public interface IWorkspacePreCreateEventPayload extends IEventPayload
 {
-	/**
+	
+
+/**
 	 * Sets / Gets the file location where the the new workspace will be created.
 	*/
 	public String getFileName();
 
-	/**
+	
+
+/**
 	 * Sets / Gets the file location where the the new workspace will be created.
 	*/
 	public void setFileName( String value );
 
-	/**
+	
+
+/**
 	 * Sets / Gets the name that will be used for the new Workspace.
 	*/
 	public String getName();
 
-	/**
+	
+
+/**
 	 * Sets / Gets the name that will be used for the new Workspace.
 	*/
 	public void setName( String value );

@@ -43,6 +43,8 @@
  */
 
 
+
+
 /*
  * Actionable.java
  *
@@ -52,6 +54,7 @@
 package org.netbeans.test.umllib.actions;
 
 import org.netbeans.jemmy.operators.JPopupMenuOperator;
+
 
 /**
  * This is common interface for visisble 

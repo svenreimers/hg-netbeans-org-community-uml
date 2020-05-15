@@ -58,6 +58,7 @@ import org.netbeans.modules.performance.utilities.PerformanceTestCase;
 import org.netbeans.modules.project.ui.test.ProjectSupport;
 import org.netbeans.performance.uml.UMLUtilities;
 
+
 /**
  * Measure UI-RESPONSIVENES and WINDOW_OPENING.
  *

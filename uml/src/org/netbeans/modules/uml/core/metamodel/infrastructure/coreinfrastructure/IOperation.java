@@ -49,101 +49,141 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 public interface IOperation extends IBehavioralFeature,
 									IParameterableElement
 {
-	/**
+	
+
+/**
 	 * property IsQuery
 	*/
 	public boolean getIsQuery();
 
-	/**
+	
+
+/**
 	 * property IsQuery
 	*/
 	public void setIsQuery( boolean value );
 
-	/**
+	
+
+/**
 	 * method AddPostCondition
 	*/
 	public void addPostCondition( IConstraint cond );
 
-	/**
+	
+
+/**
 	 * method RemovePostCondition
 	*/
 	public void removePostCondition( IConstraint cond );
 
-	/**
+	
+
+/**
 	 * property PostConditions
 	*/
 	public ETList<IConstraint> getPostConditions();
 
-	/**
+	
+
+/**
 	 * method AddPreCondition
 	*/
 	public void addPreCondition( IConstraint cond );
 
-	/**
+	
+
+/**
 	 * method RemovePreCondition
 	*/
 	public void removePreCondition( IConstraint cond );
 
-	/**
+	
+
+/**
 	 * property PreConditions
 	*/
 	public ETList<IConstraint> getPreConditions();
 
-	/**
+	
+
+/**
 	 * Indicates that this Operation can potentially raise the passed in Classifier in an Exception.
 	*/
 	public void addRaisedException( IClassifier exc );
 
-	/**
+	
+
+/**
 	 * Removes the passed in Classifier from the list of Classifiers that can be raised as an exception.
 	*/
 	public void removeRaisedException( IClassifier exc );
 
-	/**
+	
+
+/**
 	 * Retrieves the collection of Classifiers that can be raised in Exceptions from this Operation.
 	*/
 	public ETList<IClassifier> getRaisedExceptions();
 
-	/**
+	
+
+/**
 	 * Adds an exception by name.
 	*/
 	public void addRaisedException2( String classifierName );
 
-	/**
+	
+
+/**
 	 * Determines whether or not this Operation is a constructor.
 	*/
 	public boolean getIsConstructor();
 
-	/**
+	
+
+/**
 	 * Determines whether or not this Operation is a constructor.
 	*/
 	public void setIsConstructor( boolean value );
 
-    /**
+    
+
+/**
      * Determines whether or not this Operation is a destructor.
     */
     public boolean getIsDestructor();
 	
-	/**
+	
+
+/**
      * Determines whether or not this Operation is a destructor.
     */
     public void setIsDestructor(boolean value);
-	/**
+	
+
+/**
 	 * Determines whether or not this Operation represents a property.
 	*/
 	public boolean getIsProperty();
 
-	/**
+	
+
+/**
 	 * Determines whether or not this Operation represents a property.
 	*/
 	public void setIsProperty( boolean value );
 
-	/**
+	
+
+/**
 	 * Determines whether or not this Operation represents a friend operation to the enclosing Classifier.
 	*/
 	public boolean getIsFriend();
 
-	/**
+	
+
+/**
 	 * Determines whether or not this Operation represents a friend operation to the enclosing Classifier.
 	*/
 	public void setIsFriend( boolean value );

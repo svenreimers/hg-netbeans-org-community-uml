@@ -43,6 +43,8 @@
  */
 
 
+
+
 /*
  * Created on Jun 10, 2003
  *
@@ -76,7 +78,8 @@ import org.netbeans.modules.uml.core.support.umlutils.IPropertyElement;
 public class PropertyValueCellRenderer extends DefaultTableCellRenderer
 {
 
-	/**
+	
+/**
 	 * 
 	 */
 	public PropertyValueCellRenderer()

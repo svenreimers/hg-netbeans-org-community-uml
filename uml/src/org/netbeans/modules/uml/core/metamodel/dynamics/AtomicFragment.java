@@ -53,7 +53,9 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.ElementCollector;
 public class AtomicFragment extends InteractionFragment
     implements IAtomicFragment
 {
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IAtomicFragment#getImplicitGate()
      */
     public IGate getImplicitGate()
@@ -62,7 +64,9 @@ public class AtomicFragment extends InteractionFragment
                 getNode(), "UML:AtomicFragment.implicitGate/*", IGate.class);
     }
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IAtomicFragment#setImplicitGate(org.netbeans.modules.uml.core.metamodel.dynamics.IGate)
      */
     public void setImplicitGate(IGate value)
@@ -71,7 +75,9 @@ public class AtomicFragment extends InteractionFragment
                  "UML:AtomicFragment.implicitGate", value);
     }
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IAtomicFragment#getEventOccurrence()
      */
     public IEventOccurrence getEvent()
@@ -80,7 +86,9 @@ public class AtomicFragment extends InteractionFragment
                 getNode(), "UML:Element.ownedElement/UML:EventOccurrence", IEventOccurrence.class);
     }
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IAtomicFragment#setEventOccurrence(org.netbeans.modules.uml.core.metamodel.dynamics.IEventOccurrence)
      */
     public void setEvent(IEventOccurrence value)

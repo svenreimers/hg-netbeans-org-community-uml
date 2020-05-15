@@ -49,7 +49,8 @@ package org.netbeans.modules.uml.diagrams.nodes;
 public interface LabeledWidget {
     public enum TYPE{NAME,OPERATION,STEREOTYPE,BODY};
     
-    /**
+    
+/**
      * @return all label types possible for current connection
      */
     TYPE[] getAllTypes();

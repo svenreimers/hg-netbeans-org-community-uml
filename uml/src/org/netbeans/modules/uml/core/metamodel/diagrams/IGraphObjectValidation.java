@@ -47,32 +47,44 @@ package org.netbeans.modules.uml.core.metamodel.diagrams;
 
 public interface IGraphObjectValidation
 {
-	/**
+	
+
+/**
 	 * Add something that needs validation
 	*/
 	public void addValidationKind( /* DiagramValidateKind */ int nKind );
 
-	/**
+	
+
+/**
 	 * Remove an item from validation
 	*/
 	public void removeValidationKind( /* DiagramValidateKind */ int nKind );
 
-	/**
+	
+
+/**
 	 * Should we validate this item?
 	*/
 	public boolean getValidationKind( /* DiagramValidateKind */ int nKind );
 
-	/**
+	
+
+/**
 	 * Set a validation results.
 	*/
 	public void setValidationResult( /* DiagramValidateKind */ int nKind, /* DiagramValidateResult */ int nResult );
 
-	/**
+	
+
+/**
 	 * What were the validation results?
 	*/
 	public int getValidationResult( /* DiagramValidateKind */ int nKind );
 
-	/**
+	
+
+/**
 	 * Are any of the results invalid?
 	*/
 	public boolean areAnyValidationResultsInvalid();

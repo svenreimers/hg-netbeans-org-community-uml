@@ -47,6 +47,8 @@ package org.netbeans.modules.uml.core.metamodel.dynamics;
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier;
 import org.netbeans.modules.uml.core.AbstractUMLTestCase;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
+
+
 /**
  * Test cases for MessageConnector.
  */
@@ -59,7 +61,9 @@ public class MessageConnectorTestCase extends AbstractUMLTestCase
 
     private IMessageConnector mc;
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see junit.framework.TestCase#setUp()
      */
     protected void setUp() throws Exception

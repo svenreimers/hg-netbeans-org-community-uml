@@ -49,32 +49,44 @@ import org.netbeans.modules.uml.core.eventframework.IEventPayload;
 
 public interface IEditEventPayload extends IEventPayload
 {
-	/**
+	
+
+/**
 	 * The last keycode prior to this event
 	*/
 	public int getKey();
 
-	/**
+	
+
+/**
 	 * The last keycode prior to this event
 	*/
 	public void setKey( int value );
 
-	/**
+	
+
+/**
 	 * TRUE if the edit control has modified data
 	*/
 	public boolean getModified();
 
-	/**
+	
+
+/**
 	 * TRUE if the edit control has modified data
 	*/
 	public void setModified( boolean value );
 
-	/**
+	
+
+/**
 	 * The edit control window text
 	*/
 	public String getText();
 
-	/**
+	
+
+/**
 	 * The edit control window text
 	*/
 	public void setText( String value );

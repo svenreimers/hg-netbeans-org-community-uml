@@ -111,7 +111,9 @@ public class PropertyVerifier {
         return true;
     }
     
-    /*
+    
+
+/*
      * TBD
      */
     protected boolean checkElement(){
@@ -150,7 +152,9 @@ public class PropertyVerifier {
             return true;
     }
     
-    /**
+    
+
+/**
      * Checks property name,value,editable
      */
     protected boolean checkProperty(String propertyName, String value, String renderer, boolean editable){        
@@ -204,7 +208,9 @@ public class PropertyVerifier {
         if (prop.getRendererName().equals(Property.COMBOBOX_RENDERER)){
             JComboBoxOperator cb = new JComboBoxOperator((JComboBox)comp);                
             String txt = cb.getItemAt(cb.getSelectedIndex()).toString();            
-            /*
+            
+
+/*
             if (!txt.equals(value)){
                 throw new RuntimeException("df"+value+"|"+txt);
             }

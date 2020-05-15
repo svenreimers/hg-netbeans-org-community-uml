@@ -43,6 +43,8 @@
  */
 
 
+
+
 /*
  * RequirementsManager.java
  *
@@ -98,7 +100,9 @@ public class RequirementsManager /*extends AddInManagerImpl*/ implements IRequir
       initialize();
    }
    
-   /**
+   
+
+/**
 	 *
 	 * Initialize the requirements manager.  The layer file repository will 
     * be searched for all registered requiremennts addins.
@@ -118,7 +122,9 @@ public class RequirementsManager /*extends AddInManagerImpl*/ implements IRequir
       
 	}
    
-   /**
+   
+
+/**
     * Retrieves all of the reqistered requirements IAddIn instances
     */
    public IRequirementsProvider[] getAddIns()
@@ -139,7 +145,9 @@ public class RequirementsManager /*extends AddInManagerImpl*/ implements IRequir
       return retVal;
    }
    
-   /**
+   
+
+/**
 	 * The requirements manager knows about the requirements addins.
 	 * This routine retrieves a particular addin based on the prog id passed in.
 	 * 
@@ -156,7 +164,9 @@ public class RequirementsManager /*extends AddInManagerImpl*/ implements IRequir
 		return pIn;
 	}
    
-   /**
+   
+
+/**
     *
     * Callback from ReqProxyManager, when the "Display Sources" button is pressed
     * on the Requirements Provider Dialog. The ReqProviderDialogImpl is in
@@ -213,7 +223,9 @@ public class RequirementsManager /*extends AddInManagerImpl*/ implements IRequir
       }
    }
 
-   /**
+   
+
+/**
     *
     * Given a RequirementSourceID, read the etd file and return the 
     * RequirementSource.
@@ -262,7 +274,9 @@ public class RequirementsManager /*extends AddInManagerImpl*/ implements IRequir
       return requirementSource;
    }
 
-   /**
+   
+
+/**
     *
     * Callback from ReqProxyManager when a Requirement(s) has been dropped on a 
     * presentation element.  Creates <code><RequirementProxy><Requirement>
@@ -377,7 +391,9 @@ public class RequirementsManager /*extends AddInManagerImpl*/ implements IRequir
       }
    }
 
-   /**
+   
+
+/**
     *
     * Callback from ReqProxyManager when a Requirement(s) has been dropped on a presentation
     * element.  Creates <RequirementProxy><Requirement><Satisfiers><Satisfier> nodes as
@@ -456,7 +472,9 @@ public class RequirementsManager /*extends AddInManagerImpl*/ implements IRequir
 
    ////////////////////////////////////////////////////////////////////////////////////////////////////   
 
-   /**
+   
+
+/**
     *
     * Creates an XML element for the passed in IAddInDescriptor and writes it to
     * the RequirementSources.etd file.
@@ -489,7 +507,9 @@ public class RequirementsManager /*extends AddInManagerImpl*/ implements IRequir
       return bFileLoaded;
    }
 
-   /**
+   
+
+/**
     *
     * Gets or creates the .RequirementSources.etrp proxy file
     *
@@ -542,7 +562,9 @@ public class RequirementsManager /*extends AddInManagerImpl*/ implements IRequir
       return bFileLoaded;
    }
 
-   /**
+   
+
+/**
     * Updates the location of the proxy file in the RequirementSources.etd document
     *
     * @param *bFileLoaded[out] Returns true if the RequirementSources.etrp file is loaded.
@@ -578,7 +600,9 @@ public class RequirementsManager /*extends AddInManagerImpl*/ implements IRequir
       }
    }
 
-   /**
+   
+
+/**
     *
     * Creates the initial elements for a RequirementSources.etd document.
     *
@@ -607,7 +631,9 @@ public class RequirementsManager /*extends AddInManagerImpl*/ implements IRequir
 //         document.getRootElement().add(reqSourcesElem);
 //      }
    }
-   /**
+   
+
+/**
     *
     * Returns the path and file name for the RequirementSources.etd file,
     * which contains data for the available requirement provider addins.
@@ -656,7 +682,9 @@ public class RequirementsManager /*extends AddInManagerImpl*/ implements IRequir
       return strDir;
    }
 
-   /**
+   
+
+/**
     *
     * Create a <RequirementSource> element for the RequirementSources.etd file, from an
     * IRequriementsSource class.
@@ -723,7 +751,9 @@ public class RequirementsManager /*extends AddInManagerImpl*/ implements IRequir
       return sourceElem;
    }
 
-   /**
+   
+
+/**
     *
     * Insert the passed in <RequirementSource> element to the RequirementsSources.etd file.
     *
@@ -754,7 +784,9 @@ public class RequirementsManager /*extends AddInManagerImpl*/ implements IRequir
       }
    }
 
-   /**
+   
+
+/**
     *
     * Looks for a child node on the parent. Returns found node or newly created node.
     *
@@ -808,7 +840,9 @@ public class RequirementsManager /*extends AddInManagerImpl*/ implements IRequir
       return childElement;
    }
 
-   /**
+   
+
+/**
     *
     * Saves the RequirementSources.etd document to disk.
     *
@@ -827,7 +861,9 @@ public class RequirementsManager /*extends AddInManagerImpl*/ implements IRequir
       }
    }
 
-   /**
+   
+
+/**
     *
     * Load the passed in IRequriementsSource class from the passed in <RequirementSource>
     * element (element type that goes in the RequirementSources.etd file) .
@@ -892,7 +928,9 @@ public class RequirementsManager /*extends AddInManagerImpl*/ implements IRequir
       }
    }
    
-   /**
+   
+
+/**
 	 * The registry information that is retrieved from layer files to build
 	 * the list of design center addins supported by this node.
 	 *

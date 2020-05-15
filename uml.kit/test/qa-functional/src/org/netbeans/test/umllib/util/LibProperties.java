@@ -43,6 +43,8 @@
  */
 
 
+
+
 /*
  * LibProperties.java
  *
@@ -91,7 +93,9 @@ public class LibProperties {
         initDefaultNames();
     }
     
-    /**
+    
+
+/**
      * 
      * @return 
      */
@@ -102,7 +106,9 @@ public class LibProperties {
         return properties;
     }
     
-    /**
+    
+
+/**
      * 
      * @param element 
      * @return 
@@ -111,7 +117,9 @@ public class LibProperties {
         return getProperties().getToolName(element);
     }
     
-    /**
+    
+
+/**
      * 
      * @param element 
      * @return 
@@ -120,7 +128,9 @@ public class LibProperties {
         return getProperties().getNamer(element);
     }
     
-    /**
+    
+
+/**
      * 
      * @param element 
      * @return 
@@ -311,7 +321,9 @@ public class LibProperties {
     }
     
     
-    /**
+    
+
+/**
      * 
      * @param element 
      * @param toolTip 
@@ -321,7 +333,9 @@ public class LibProperties {
         return (String)tools.put(element, toolTip);
     }
     
-    /**
+    
+
+/**
      * 
      * @param element 
      * @return 
@@ -330,7 +344,9 @@ public class LibProperties {
         return (String)tools.get(element);
     }
     
-    /**
+    
+
+/**
      * 
      * @param element 
      * @return 
@@ -346,7 +362,9 @@ public class LibProperties {
         return namer;
     }
     
-    /**
+    
+
+/**
      * 
      * @param element 
      * @param obj 
@@ -361,7 +379,9 @@ public class LibProperties {
         defNames.put(element, defName);
     }
     
-    /**
+    
+
+/**
      *  get Default or initial name with standart uml options
      * @param element 
      * @return 

@@ -42,6 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
+
+
 /*
  * Created on Oct 17, 2003
  *
@@ -61,7 +63,8 @@ public class UninterpretedAction extends Action implements IUninterpretedAction
 	public UninterpretedAction()
 	{
 	}
-	/**
+	
+/**
 	 * Establishes the appropriate XML elements for this UML type.
 	 *
 	 * [in] The document where this element will reside

@@ -70,7 +70,9 @@ public class NavigableEnd extends AssociationEnd implements INavigableEnd
 		super();
 	}
 
-	/**
+	
+
+/**
 	 * Establishes the appropriate XML elements for this UML type.
 	 *
 	 * [in] The document where this element will reside
@@ -81,7 +83,9 @@ public class NavigableEnd extends AssociationEnd implements INavigableEnd
 		super.buildNodePresence("UML:NavigableEnd",doc,parent);
 	}
 	
-	/**
+	
+
+/**
 	 *
 	 * Turns this end into a normal AssociationEnd.
 	 */
@@ -113,7 +117,9 @@ public class NavigableEnd extends AssociationEnd implements INavigableEnd
 		return assoEnd;
 	}
 	
-	/**
+	
+
+/**
 	 *
 	 * Retrieves the Classifier that has this end installed as a referenced attribute.
 	 */
@@ -128,7 +134,9 @@ public class NavigableEnd extends AssociationEnd implements INavigableEnd
 		return classifier;		
 	}
 	
-	/**
+	
+
+/**
 	 *
 	 * Queries this element for IArtifacts that represent source files. For
 	 * each one found, retrieves the Language object associated with that
@@ -149,7 +157,9 @@ public class NavigableEnd extends AssociationEnd implements INavigableEnd
 		return languages;
 	}
 	
-	/** 
+	
+
+/** 
 	 * Returns the source file artifacts for the navigable end's referencing class.
 	 */
 	public ETList<IElement> getSourceFiles()
@@ -164,7 +174,9 @@ public class NavigableEnd extends AssociationEnd implements INavigableEnd
 	}
 	
 	//Attribute class methods.
-	/**
+	
+
+/**
 	 * Specifies whether the Attribute is derived, i.e. its value or values can be computed from other information. The default value is false.
 	*/
 	public boolean getIsDerived()
@@ -173,7 +185,9 @@ public class NavigableEnd extends AssociationEnd implements INavigableEnd
 		return m_AttributeAggregate.getIsDerived();
 	}
 
-	/**
+	
+
+/**
 	 * Specifies whether the Attribute is derived, i.e. its value or values can be computed from other information. The default value is false.
 	*/
 	public void setIsDerived( boolean value )
@@ -182,7 +196,9 @@ public class NavigableEnd extends AssociationEnd implements INavigableEnd
 		m_AttributeAggregate.setIsDerived(value);
 	}
 
-	/**
+	
+
+/**
 	 * References an optional expression specifying how to set the attribute when creating an instance in the absence of a specific setting for the attribute.
 	*/
 	public IExpression getDefault()
@@ -190,7 +206,9 @@ public class NavigableEnd extends AssociationEnd implements INavigableEnd
 		ensureAttributeAggregate();
 		return m_AttributeAggregate.getDefault();
 	}
-	/**
+	
+
+/**
 	 * References an optional expression specifying how to set the attribute when creating an instance in the absence of a specific setting for the attribute.
 	*/
 	public void setDefault( IExpression value )
@@ -199,7 +217,9 @@ public class NavigableEnd extends AssociationEnd implements INavigableEnd
 		m_AttributeAggregate.setDefault(value);
 	}
 
-	/**
+	
+
+/**
 	 * property DerivationRule
 	*/
 	public IExpression getDerivationRule()
@@ -208,7 +228,9 @@ public class NavigableEnd extends AssociationEnd implements INavigableEnd
 		return m_AttributeAggregate.getDerivationRule();
 	}
 
-	/**
+	
+
+/**
 	 * property DerivationRule
 	*/
 	public void setDerivationRule( IExpression value )
@@ -217,7 +239,9 @@ public class NavigableEnd extends AssociationEnd implements INavigableEnd
 		m_AttributeAggregate.setDerivationRule(value);
 	}
 
-	/**
+	
+
+/**
 	 * property AssociationEnd
 	*/
 	public IAssociationEnd getAssociationEnd()
@@ -226,7 +250,9 @@ public class NavigableEnd extends AssociationEnd implements INavigableEnd
 		return m_AttributeAggregate.getAssociationEnd();
 	}
 
-	/**
+	
+
+/**
 	 * property AssociationEnd
 	*/
 	public void setAssociationEnd( IAssociationEnd value )
@@ -235,7 +261,9 @@ public class NavigableEnd extends AssociationEnd implements INavigableEnd
 		m_AttributeAggregate.setAssociationEnd(value);
 	}
 
-	/**
+	
+
+/**
 	 * The default attribute initializer. Easy access to the body property of the Expression.
 	*/
 	public String getDefault2()
@@ -244,7 +272,9 @@ public class NavigableEnd extends AssociationEnd implements INavigableEnd
 		return m_AttributeAggregate.getDefault2();
 	}
 
-	/**
+	
+
+/**
 	 * The default attribute initializer. Easy access to the body property of the Expression.
 	*/
 	public void setDefault2( String value )
@@ -253,7 +283,9 @@ public class NavigableEnd extends AssociationEnd implements INavigableEnd
 		m_AttributeAggregate.setDefault2(value);
 	}
 
-	/**
+	
+
+/**
 	 * The default attribute initializer. Easy access to the body property of the Expression.
 	*/
 	public ETPairT<String,String> getDefault3()
@@ -262,7 +294,9 @@ public class NavigableEnd extends AssociationEnd implements INavigableEnd
 		return m_AttributeAggregate.getDefault3();
 	}
 
-	/**
+	
+
+/**
 	 * The default attribute initializer. Easy access to the body property of the Expression.
 	*/
 	public void setDefault3( String lang, String body )
@@ -271,7 +305,9 @@ public class NavigableEnd extends AssociationEnd implements INavigableEnd
 		m_AttributeAggregate.setDefault3(lang,body);
 	}
 
-	/**
+	
+
+/**
 	 * Determines whether or not this attribute has the WithEvents modifier associated with it. This is specific to the VB programming language.
 	*/
 	public boolean getIsWithEvents()
@@ -280,7 +316,9 @@ public class NavigableEnd extends AssociationEnd implements INavigableEnd
 		return m_AttributeAggregate.getIsWithEvents();
 	}
 
-	/**
+	
+
+/**
 	 * Determines whether or not this attribute has the WithEvents modifier associated with it. This is specific to the VB programming language.
 	*/
 	public void setIsWithEvents( boolean value )
@@ -289,7 +327,9 @@ public class NavigableEnd extends AssociationEnd implements INavigableEnd
 		m_AttributeAggregate.setIsWithEvents(value);
 	}
 
-	/**
+	
+
+/**
 	 * Indicates whether or not the attribute instance is created on the heap or not upon the instanciation of the featuring classifier.
 	*/
 	public boolean getHeapBased()
@@ -298,7 +338,9 @@ public class NavigableEnd extends AssociationEnd implements INavigableEnd
 		return m_AttributeAggregate.getHeapBased();
 	}
 
-	/**
+	
+
+/**
 	 * Indicates whether or not the attribute instance is created on the heap or not upon the instanciation of the featuring classifier.
 	*/
 	public void setHeapBased( boolean value )
@@ -307,7 +349,9 @@ public class NavigableEnd extends AssociationEnd implements INavigableEnd
 		m_AttributeAggregate.setHeapBased(value);
 	}
 
-	/**
+	
+
+/**
 	 * Indicates whether or not this attribute maps to a primary key column in a database.
 	*/
 	public boolean getIsPrimaryKey()
@@ -316,7 +360,9 @@ public class NavigableEnd extends AssociationEnd implements INavigableEnd
 		return m_AttributeAggregate.getIsPrimaryKey();
 	}
 
-	/**
+	
+
+/**
 	 * Indicates whether or not this attribute maps to a primary key column in a database.
 	*/
 	public void setIsPrimaryKey( boolean value )
@@ -389,7 +435,9 @@ public class NavigableEnd extends AssociationEnd implements INavigableEnd
 			m_ParameterableAggregate.setNode(getNode());
 		}
 	}
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IVersionableElement#setNode()
 	 */
 	public void setNode(Node n)

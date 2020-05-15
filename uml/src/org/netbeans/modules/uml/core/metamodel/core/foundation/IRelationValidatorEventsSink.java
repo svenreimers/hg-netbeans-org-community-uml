@@ -48,12 +48,16 @@ import org.netbeans.modules.uml.core.support.umlsupport.IResultCell;
 
 public interface IRelationValidatorEventsSink
 {
-	/**
+	
+
+/**
 	 * Fired before the meta layer performs its validation logic on the proxy.
 	*/
 	public void onPreRelationValidate( IRelationProxy proxy, IResultCell cell );
 
-	/**
+	
+
+/**
 	 * Fired if the relation has validated the meta layer validation logic.
 	*/
 	public void onRelationValidated( IRelationProxy payload, IResultCell cell );

@@ -47,12 +47,16 @@ package org.netbeans.modules.uml.core.metamodel.core.foundation;
 
 public interface ITransitionElement
 {
-	/**
+	
+
+/**
 	 * The element that may own the element once the creation process is complete.
 	*/
 	public IElement getFutureOwner();
 
-	/**
+	
+
+/**
 	 * The element that may own the element once the creation process is complete.
 	*/
 	public void setFutureOwner( IElement value );

@@ -42,6 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
+
+
 /*
  * Created on Nov 10, 2003
  *
@@ -59,7 +61,8 @@ public class TypeChangeRequest extends ChangeRequest implements ITypeChangeReque
 	IClassifier m_Classifier;
 	String m_OldTypeName;
 	String m_NewTypeName;
-	/**
+	
+/**
 	 * @return
 	 */
 	public IClassifier getModifiedClassifier()
@@ -67,7 +70,9 @@ public class TypeChangeRequest extends ChangeRequest implements ITypeChangeReque
 		return m_Classifier;
 	}
 
-	/**
+	
+
+/**
 	 * @return
 	 */
 	public String getNewTypeName()
@@ -75,7 +80,9 @@ public class TypeChangeRequest extends ChangeRequest implements ITypeChangeReque
 		return m_NewTypeName;
 	}
 
-	/**
+	
+
+/**
 	 * @return
 	 */
 	public String getOldTypeName()
@@ -83,7 +90,9 @@ public class TypeChangeRequest extends ChangeRequest implements ITypeChangeReque
 		return m_OldTypeName;
 	}
 
-	/**
+	
+
+/**
 	 * @param classifier
 	 */
 	public void setModifiedClassifier(IClassifier classifier)
@@ -91,7 +100,9 @@ public class TypeChangeRequest extends ChangeRequest implements ITypeChangeReque
 		m_Classifier = classifier;
 	}
 
-	/**
+	
+
+/**
 	 * @param string
 	 */
 	public void setNewTypeName(String name)
@@ -99,7 +110,9 @@ public class TypeChangeRequest extends ChangeRequest implements ITypeChangeReque
 		m_NewTypeName = name;
 	}
 
-	/**
+	
+
+/**
 	 * @param string
 	 */
 	public void setOldTypeName(String name)

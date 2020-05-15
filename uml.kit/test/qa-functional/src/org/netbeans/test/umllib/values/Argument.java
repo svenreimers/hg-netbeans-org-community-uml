@@ -43,14 +43,8 @@
  */
 
 
-/*
- * Argument.java
- *
- * Created on January 31, 2006, 12:18 PM
- *
- * To change this template, choose Tools | Template Manager
- * and open the template in the editor.
- */
+
+
 
 package org.netbeans.test.umllib.values;
 

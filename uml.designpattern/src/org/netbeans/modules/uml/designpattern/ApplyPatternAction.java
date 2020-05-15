@@ -42,6 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
+
+
 /*
  * ApplyPatternAction.java
  *
@@ -116,7 +118,9 @@ public class ApplyPatternAction extends CookieAction
        }
     }
     
-    /**
+    
+
+/**
      * Begin the process to apply ("instantiate") the pattern
      *
      * @param pDispatch[in]			The pattern to apply

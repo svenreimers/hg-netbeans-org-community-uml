@@ -58,6 +58,7 @@ import java.util.Set;
 import org.netbeans.modules.uml.drawingarea.view.WidgetShape;
 import org.openide.util.Lookup;
 
+
 /**
  * The RectangularUniqueAnchor is similiar to the RectangularAnchor.  The
  * problem with the RectanglurAnchor is that all connection widgets go
@@ -81,7 +82,9 @@ public final class ShapeUniqueAnchor extends Anchor
         this.includeBorders = includeBorders;
     }
 
-    /**
+    
+
+/**
      * Notifies when an entry is registered
      * @param entry the registered entry
      */
@@ -90,7 +93,9 @@ public final class ShapeUniqueAnchor extends Anchor
         requiresRecalculation = true;
     }
 
-    /**
+    
+
+/**
      * Notifies when an entry is unregistered
      * @param entry the unregistered entry
      */
@@ -100,7 +105,9 @@ public final class ShapeUniqueAnchor extends Anchor
         requiresRecalculation = true;
     }
 
-    /**
+    
+
+/**
      * Notifies when the anchor is going to be revalidated.
      * @since 2.8
      */
@@ -109,7 +116,9 @@ public final class ShapeUniqueAnchor extends Anchor
         requiresRecalculation = true;
     }
 
-    /**
+    
+
+/**
      * Computes a result (position and direction) for a specific entry.
      * @param entry the entry
      * @return the calculated result

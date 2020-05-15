@@ -47,32 +47,44 @@ package org.netbeans.modules.uml.ui.controls.projecttree;
 
 public interface IProjectTreeEditVerify
 {
-	/**
+	
+
+/**
 	 * Get/Set the cancel flag for this event
 	*/
 	public boolean isCancel();
 
-	/**
+	
+
+/**
 	 * Get/Set the cancel flag for this event
 	*/
 	public void setCancel( boolean value );
 
-	/**
+	
+
+/**
 	 * Get/Set the node text
 	*/
 	public String getNodeText();
 
-	/**
+	
+
+/**
 	 * Get/Set the node text
 	*/
 	public void setNodeText( String value );
 
-	/**
+	
+
+/**
 	 * Get/Set whether something has handled this event
 	*/
 	public boolean getHandled();
 
-	/**
+	
+
+/**
 	 * Get/Set whether something has handled this event
 	*/
 	public void setHandled( boolean value );

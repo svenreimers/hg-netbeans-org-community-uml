@@ -50,6 +50,8 @@ import org.openide.util.NbBundle;
 import org.openide.util.Utilities;
 import org.openide.windows.TopComponent;
 
+
+
 /**
  * Action which shows UMLDiagram component.
  */

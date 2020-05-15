@@ -113,7 +113,9 @@ public class ProxyDiagramImpl implements IProxyDiagram,
         return diagramDetails;
     }
 
-    /**
+    
+
+/**
      * Returns the name of the diagram
      *
      * @return tThen name of the diagram.
@@ -138,7 +140,9 @@ public class ProxyDiagramImpl implements IProxyDiagram,
         return retVal;
     }
 
-    /**
+    
+
+/**
      * Sets the name of the diagram
      *
      * @param value The new name
@@ -155,7 +159,9 @@ public class ProxyDiagramImpl implements IProxyDiagram,
     }
 
     // TODO: meteora
-    /**
+    
+
+/**
      * Returns the alias of the diagram
      *
      * @see org.netbeans.modules.uml.core.metamodel.diagrams.IProxyDiagram#getAlias()
@@ -182,7 +188,9 @@ public class ProxyDiagramImpl implements IProxyDiagram,
         return retVal;
     }
 
-    /**
+    
+
+/**
      * Sets the alias of the diagram
      *
      * @param sAlias [in] The new alias
@@ -200,7 +208,9 @@ public class ProxyDiagramImpl implements IProxyDiagram,
         }
     }
 
-    /**
+    
+
+/**
      * Gets the name or alias of this element.
      *
      * @see org.netbeans.modules.uml.core.metamodel.diagrams.IProxyDiagram#getNameWithAlias()
@@ -225,7 +235,9 @@ public class ProxyDiagramImpl implements IProxyDiagram,
         return retVal;
     }
 
-    /**
+    
+
+/**
      * Sets the name or alias of this element.
      */
     public void setNameWithAlias(String value)
@@ -240,7 +252,9 @@ public class ProxyDiagramImpl implements IProxyDiagram,
         }
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.diagrams.IProxyDiagram#getQualifiedName()
      */
     public String getQualifiedName()
@@ -291,7 +305,9 @@ public class ProxyDiagramImpl implements IProxyDiagram,
         return retVal;
     }
 
-    /**
+    
+
+/**
      * Retrieve the documentation.
      *
      * @see org.netbeans.modules.uml.core.metamodel.diagrams.IProxyDiagram#getDocumentation()
@@ -321,7 +337,9 @@ public class ProxyDiagramImpl implements IProxyDiagram,
         return retVal;
     }
 
-    /**
+    
+
+/**
      * Put/Get the documentation
      */
     public void setDocumentation(String value)
@@ -365,7 +383,9 @@ public class ProxyDiagramImpl implements IProxyDiagram,
         }
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.diagrams.IProxyDiagram#getNamespace()
      */
     public INamespace getNamespace()
@@ -386,7 +406,9 @@ public class ProxyDiagramImpl implements IProxyDiagram,
         return retVal;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.diagrams.IProxyDiagram#setNamespace(org.netbeans.modules.uml.core.metamodel.core.foundation.INamespace)
      */
     public void setNamespace(INamespace namespace)
@@ -429,7 +451,9 @@ public class ProxyDiagramImpl implements IProxyDiagram,
         }
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.diagrams.IProxyDiagram#getNamespaceXMIID()
      */
     public String getNamespaceXMIID()
@@ -443,7 +467,9 @@ public class ProxyDiagramImpl implements IProxyDiagram,
         return retVal;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.diagrams.IProxyDiagram#getXMIID()
      */
     public String getXMIID()
@@ -457,7 +483,9 @@ public class ProxyDiagramImpl implements IProxyDiagram,
         return retVal;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.diagrams.IProxyDiagram#getFilename()
      */
     public String getFilename()
@@ -465,7 +493,9 @@ public class ProxyDiagramImpl implements IProxyDiagram,
         return m_Filename;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.diagrams.IProxyDiagram#setFilename(java.lang.String)
      */
     public void setFilename(String value)
@@ -473,7 +503,9 @@ public class ProxyDiagramImpl implements IProxyDiagram,
         m_Filename = value;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.diagrams.IProxyDiagram#getDiagramKind()
      */
     public int getDiagramKind()
@@ -494,7 +526,9 @@ public class ProxyDiagramImpl implements IProxyDiagram,
         return retVal;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.diagrams.IProxyDiagram#getDiagramKindName()
      */
     public String getDiagramKindName()
@@ -517,7 +551,9 @@ public class ProxyDiagramImpl implements IProxyDiagram,
         return retVal;
     }
 
-    /**
+    
+
+/**
      * Returns the project this diagram is a part of.  Only returns a project
      * if the project is open.
      *
@@ -548,7 +584,9 @@ public class ProxyDiagramImpl implements IProxyDiagram,
         return retVal;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.diagrams.IProxyDiagram#getDiagram()
      */
     public IDiagram getDiagram()
@@ -564,7 +602,9 @@ public class ProxyDiagramImpl implements IProxyDiagram,
         return retVal;
     }
 
-    /**
+    
+
+/**
      * Returns true if the diagram is open.
      *
      * @return true if this proxy diagram is open.
@@ -582,7 +622,9 @@ public class ProxyDiagramImpl implements IProxyDiagram,
         return retVal;
     }
 
-    /**
+    
+
+/**
      * Returns true if bDiagramFilename represents a valid filename.
      * It looks for both .etlp and .etld files.
      *
@@ -608,7 +650,9 @@ public class ProxyDiagramImpl implements IProxyDiagram,
         return retVal;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.diagrams.IProxyDiagram#isSame(org.netbeans.modules.uml.core.metamodel.diagrams.IProxyDiagram)
      */
     public boolean isSame(IProxyDiagram pProxy)
@@ -625,7 +669,9 @@ public class ProxyDiagramImpl implements IProxyDiagram,
         return retVal;
     }
 
-    /**
+    
+
+/**
      * Is the diagram readonly
      *
      * @return true if the diagram is readonly
@@ -653,7 +699,9 @@ public class ProxyDiagramImpl implements IProxyDiagram,
         return retVal;
     }
 
-    /**
+    
+
+/**
      * Adds an associated diagram to our list
      *
      * @param sDiagramXMIID The xmiid of the diagram to associate to.
@@ -680,7 +728,9 @@ public class ProxyDiagramImpl implements IProxyDiagram,
         }
     }
 
-    /**
+    
+
+/**
      * Adds an associated diagram to our list
      *
      * @param pDiagram [in] The diagram we should associate to
@@ -694,7 +744,9 @@ public class ProxyDiagramImpl implements IProxyDiagram,
         }
     }
 
-    /**
+    
+
+/**
      * Adds an association between diagram 1 and 2 and 2 and 1
      *
      * @param pDiagram1 [in] The first diagram that's part of the association.
@@ -710,7 +762,9 @@ public class ProxyDiagramImpl implements IProxyDiagram,
         }
     }
 
-    /**
+    
+
+/**
      * Removes an associated diagram from our list
      *
      * @param sDiagramXMIID The xmiid of the diagram to remove.
@@ -737,7 +791,9 @@ public class ProxyDiagramImpl implements IProxyDiagram,
         }
     }
 
-    /**
+    
+
+/**
      * Removes an associated diagram from our list
      *
      * @param pDiagram The diagram to remove.
@@ -751,7 +807,9 @@ public class ProxyDiagramImpl implements IProxyDiagram,
         }
     }
 
-    /**
+    
+
+/**
      * Removes an association between diagram 1 and 2 and 2 and 1
      * @see org.netbeans.modules.uml.core.metamodel.diagrams.IProxyDiagram#removeDualAssociatedDiagrams(org.netbeans.modules.uml.core.metamodel.diagrams.IProxyDiagram, org.netbeans.modules.uml.core.metamodel.diagrams.IProxyDiagram)
      */
@@ -764,7 +822,9 @@ public class ProxyDiagramImpl implements IProxyDiagram,
         }
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.diagrams.IProxyDiagram#getAssociatedDiagrams()
      */
     public ETList<IProxyDiagram> getAssociatedDiagrams()
@@ -773,7 +833,9 @@ public class ProxyDiagramImpl implements IProxyDiagram,
         return retVal;
     }
 
-    /**
+    
+
+/**
      * Is this an associated diagram?
      *
      * @param sDiagramXMIID The diagram xmiid
@@ -786,7 +848,9 @@ public class ProxyDiagramImpl implements IProxyDiagram,
         return retVal;
     }
 
-    /**
+    
+
+/**
      * Is this an associated diagram?
      *
      * @param pDiagram The diagram
@@ -799,7 +863,9 @@ public class ProxyDiagramImpl implements IProxyDiagram,
         return retVal;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.diagrams.IProxyDiagram#addAssociatedElement(java.lang.String, java.lang.String)
      */
     public void addAssociatedElement(String sTopLevelElementXMIID, String sModelElementXMIID)
@@ -829,7 +895,9 @@ public class ProxyDiagramImpl implements IProxyDiagram,
         }
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.diagrams.IProxyDiagram#addAssociatedElement(org.netbeans.modules.uml.core.metamodel.core.foundation.IElement)
      */
     public void addAssociatedElement(IElement pElement)
@@ -845,7 +913,9 @@ public class ProxyDiagramImpl implements IProxyDiagram,
         }
     }
 
-    /**
+    
+
+/**
      * Removes an associated element from our list
      *
      * @param sTopLevelElementXMIID [in] The elements toplevel id
@@ -870,7 +940,9 @@ public class ProxyDiagramImpl implements IProxyDiagram,
         }
     }
 
-    /**
+    
+
+/**
      * Removes an associated element from our list
      *
      * @param pElement [in] The element we should remove
@@ -899,7 +971,9 @@ public class ProxyDiagramImpl implements IProxyDiagram,
         }
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.diagrams.IProxyDiagram#getAssociatedElements()
      */
     public ETList<IElement> getAssociatedElements()
@@ -908,7 +982,9 @@ public class ProxyDiagramImpl implements IProxyDiagram,
         return elements;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.diagrams.IProxyDiagram#isAssociatedElement(java.lang.String)
      */
     public boolean isAssociatedElement(String sModelElementXMIID)
@@ -917,7 +993,9 @@ public class ProxyDiagramImpl implements IProxyDiagram,
         return retVal;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.diagrams.IProxyDiagram#isAssociatedElement2(org.netbeans.modules.uml.core.metamodel.core.foundation.IElement)
      */
     public boolean isAssociatedElement(IElement pElement)
@@ -929,7 +1007,9 @@ public class ProxyDiagramImpl implements IProxyDiagram,
     //**************************************************
     // Helper Methods
     //**************************************************
-    /**
+    
+
+/**
      * @param productArchive
      */
     protected void saveArchive(IProductArchive productArchive)
@@ -937,7 +1017,9 @@ public class ProxyDiagramImpl implements IProxyDiagram,
         productArchive.save(null);
     }
 
-    /**
+    
+
+/**
      * @return
      */
     protected IProductArchive getArchive()

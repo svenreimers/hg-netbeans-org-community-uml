@@ -42,11 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * UMLJavaAssociationUtil.java
- *
- * Created on March 25, 2005, 11:16 AM
- */
+
+
 
 package org.netbeans.modules.uml.project.ui.java;
 
@@ -92,7 +89,9 @@ public class UMLJavaAssociationUtil {
 	// java project might be intentionally or unintentionally associated with
 	// > 1 uml project? Perhaps we should detect that and throw an invalid state
 	// exception?
-    /* NB60TBD
+    
+
+/* NB60TBD
 	public static Project getAssociatedUMLProject(JavaClass c) {
 //		DataObject sourceDO = JavaMetamodel.getManager().getDataObject(c.getResource());
             DataObject sourceDO = null;
@@ -106,7 +105,9 @@ public class UMLJavaAssociationUtil {
 	}
     */
 
-   /**
+   
+
+/**
     * Retrieve a UML project that is associatied with the given data object.
     */
    public static Project getAssociatedUMLProject(DataObject dObj)
@@ -116,7 +117,9 @@ public class UMLJavaAssociationUtil {
       return getAssociatedUMLProject(currentJavaProj);   
    }
 	
-   /**
+   
+
+/**
     * Retrieve a UML project that is associated with a specified 
     * project.
     */
@@ -162,7 +165,9 @@ public class UMLJavaAssociationUtil {
    }
 	
 
-   /**
+   
+
+/**
     * Retrieve all UML projects that are associated with a specified 
     * project.
     */
@@ -241,7 +246,9 @@ public static INamedElement findElement(Project umlProject,
        return null;
    }
 
-    /**
+    
+
+/**
      * Converts a fully qualified Java classname to Describe's internal
      * naming format. Note that inner class names should be delimited by '$'
      * instead of '.' for this to work correctly.
@@ -264,7 +271,9 @@ public static INamedElement findElement(Project umlProject,
         return retVal;
     }
 
-    /**
+    
+
+/**
      * Builds a UML notated name from a Java package and class name. Note that
      * inner class names should be delimited by '$' instead of '.' for this
      * to work correctly.
@@ -277,7 +286,9 @@ public static INamedElement findElement(Project umlProject,
         return convertJavaToUML(fullScopeName);
     }
 
-    /**
+    
+
+/**
      * Converts a UML fully qualified name into a Java fully qualified name.
      * @param umlNam A UML formated string.
      */
@@ -295,7 +306,9 @@ public static INamedElement findElement(Project umlProject,
         return retVal;
     }
 
-   /**
+   
+
+/**
      *  Returns the fully-qualified name for the given named element.
      * @param element The element for which the qualified name needs to be
      *                determined.

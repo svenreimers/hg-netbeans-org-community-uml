@@ -43,6 +43,7 @@
  */
 
 
+
 /*
  *
  * Created on Jun 10, 2003
@@ -59,13 +60,15 @@ import org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem;
 import org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeModel;
 import org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeItem;
 
+
 /**
  * 
  */
 public interface ISwingProjectTreeModel extends TreeModel, IProjectTreeModel
 {
 
-   /**
+   
+/**
     * Retrieves the project item based on a TreePath.
     * 
     * @param path The path to the item.
@@ -73,12 +76,16 @@ public interface ISwingProjectTreeModel extends TreeModel, IProjectTreeModel
     */
    public ITreeItem getTreeItem(TreePath path);
 
-   /**
+   
+
+/**
     * Clears the content of the model.  This basically a refresh.
     */
    public void clear();
    
-   /**
+   
+
+/**
     * Returns the name of the project tree type - could be designcenter or projecttree.
     */
    public String getProjectTreeName();

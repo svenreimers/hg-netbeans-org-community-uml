@@ -42,11 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : InvocationNode.java
- * Created on : Sep 17, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.metamodel.common.commonactivities;
 
 import java.lang.StringBuilder;
@@ -65,7 +62,8 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 public class InvocationNode extends ActivityNode implements IInvocationNode
 {
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactivities.IInvocationNode#addLocalPostCondition(org.netbeans.modules.uml.core.metamodel.core.foundation.IConstraint)
      */
     public void addLocalPostCondition(IConstraint pConstraint)
@@ -73,7 +71,9 @@ public class InvocationNode extends ActivityNode implements IInvocationNode
         addChild("UML:InvocationNode.localPostCondition", "UML:InvocationNode.localPostCondition", pConstraint);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactivities.IInvocationNode#addLocalPrecondition(org.netbeans.modules.uml.core.metamodel.core.foundation.IConstraint)
      */
     public void addLocalPrecondition(IConstraint pConstraint)
@@ -81,7 +81,9 @@ public class InvocationNode extends ActivityNode implements IInvocationNode
         addChild("UML:InvocationNode.localPreCondition", "UML:InvocationNode.localPreCondition", pConstraint);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactivities.IInvocationNode#createCondition(java.lang.String)
      */
     public IConstraint createCondition(String condition)
@@ -94,7 +96,9 @@ public class InvocationNode extends ActivityNode implements IInvocationNode
         return constraint;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactivities.IInvocationNode#getIsMultipleInvocation()
      */
     public boolean getIsMultipleInvocation()
@@ -102,7 +106,9 @@ public class InvocationNode extends ActivityNode implements IInvocationNode
         return getBooleanAttributeValue("isMultipleInvocation",false);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactivities.IInvocationNode#getIsSynchronous()
      */
     public boolean getIsSynchronous()
@@ -110,7 +116,9 @@ public class InvocationNode extends ActivityNode implements IInvocationNode
         return getBooleanAttributeValue("isSynchronous", true);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactivities.IInvocationNode#getLocalPostConditions()
      */
     public ETList<IConstraint> getLocalPostConditions()
@@ -120,7 +128,9 @@ public class InvocationNode extends ActivityNode implements IInvocationNode
 
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactivities.IInvocationNode#getLocalPreconditions()
      */
     public ETList<IConstraint> getLocalPreconditions()
@@ -130,7 +140,9 @@ public class InvocationNode extends ActivityNode implements IInvocationNode
 
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactivities.IInvocationNode#getMultiplicity()
      */
     public IMultiplicity getMultiplicity()
@@ -140,7 +152,9 @@ public class InvocationNode extends ActivityNode implements IInvocationNode
 
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactivities.IInvocationNode#removeLocalPostcondition(org.netbeans.modules.uml.core.metamodel.core.foundation.IConstraint)
      */
     public void removeLocalPostcondition(IConstraint pConstraint)
@@ -148,7 +162,9 @@ public class InvocationNode extends ActivityNode implements IInvocationNode
         UMLXMLManip.removeChild(m_Node, pConstraint);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactivities.IInvocationNode#removeLocalPrecondition(org.netbeans.modules.uml.core.metamodel.core.foundation.IConstraint)
      */
     public void removeLocalPrecondition(IConstraint pConstraint)
@@ -156,7 +172,9 @@ public class InvocationNode extends ActivityNode implements IInvocationNode
         UMLXMLManip.removeChild(m_Node, pConstraint);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactivities.IInvocationNode#setIsMultipleInvocation(boolean)
      */
     public void setIsMultipleInvocation(boolean isMulInvoc)
@@ -164,7 +182,9 @@ public class InvocationNode extends ActivityNode implements IInvocationNode
         setBooleanAttributeValue("isMultipleInvocation", isMulInvoc);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactivities.IInvocationNode#setIsSynchronous(boolean)
      */
     public void setIsSynchronous(boolean sync)
@@ -172,7 +192,9 @@ public class InvocationNode extends ActivityNode implements IInvocationNode
         setBooleanAttributeValue("isSynchronous", sync);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactivities.IInvocationNode#setMultiplicity(org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity)
      */
     public void setMultiplicity(IMultiplicity mul)

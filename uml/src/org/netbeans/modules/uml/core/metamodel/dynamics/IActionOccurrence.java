@@ -49,22 +49,30 @@ import org.netbeans.modules.uml.core.metamodel.basic.basicactions.IAction;
 
 public interface IActionOccurrence extends IExecutionOccurrence
 {
-	/**
+	
+
+/**
 	 * References the Action that defines the ActionOccurrence.
 	*/
 	public IAction getAction();
 
-	/**
+	
+
+/**
 	 * References the Action that defines the ActionOccurrence.
 	*/
 	public void setAction( IAction value );
 
-	/**
+	
+
+/**
 	 * References the ExecutionOccurrence that invokes this ActionOccurrence.
 	*/
 	public IExecutionOccurrence getContainingExecOccurrence();
 
-	/**
+	
+
+/**
 	 * References the ExecutionOccurrence that invokes this ActionOccurrence.
 	*/
 	public void setContainingExecOccurrence( IExecutionOccurrence value );

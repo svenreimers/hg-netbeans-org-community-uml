@@ -63,6 +63,7 @@ import org.netbeans.modules.uml.ui.support.diagramsupport.ProxyDiagramManager;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 import org.netbeans.modules.uml.core.support.umlutils.ETArrayList;
 
+
 /**
  * Theres lots of common code among the various dialogs.  This class helps the 
  * dialogs build and maintain their various lists.  It also can perform some 
@@ -71,7 +72,8 @@ import org.netbeans.modules.uml.core.support.umlutils.ETArrayList;
  */
 public class DiagramBuilder
 {
-   /**
+   
+/**
     * Retrieve the presentation targets for the element.
     * 
     * @param element The element to display.
@@ -92,7 +94,9 @@ public class DiagramBuilder
       return retVal;
    }
 
-   /**
+   
+
+/**
     * Navigates to the presentation element.
     * 
     * @param thisTarget The presentation element to navigate to.
@@ -125,7 +129,9 @@ public class DiagramBuilder
       }
    }
 
-   /**
+   
+
+/**
    * Get the scoped diagrams for this element
    */
    public ETList < IProxyDiagram > getScopedDiagrams(IElement element)
@@ -154,7 +160,9 @@ public class DiagramBuilder
       return diagrams;
    }
 
-   /**
+   
+
+/**
    * Navigate to the first PE
    */
    public void navigateToFirstTarget(ETList < IPresentationTarget > targets)
@@ -166,7 +174,9 @@ public class DiagramBuilder
       }
    }
 
-   /**
+   
+
+/**
    * Navigate to the first diagram
    */
    public void navigateToFirstDiagram(ETList < IProxyDiagram > diagrams)
@@ -186,7 +196,9 @@ public class DiagramBuilder
       }
    }
 
-   /**
+   
+
+/**
    * Navigates to the diagram.
    *
    * If a presentation element xmiid is provided then that pe will be selected in the diagram
@@ -217,7 +229,9 @@ public class DiagramBuilder
       }
    }
 
-   /**
+   
+
+/**
     * Navigate to the element in the project tree
     */
    public void navigateToElementInTree(IElement pElement)
@@ -233,7 +247,9 @@ public class DiagramBuilder
       }
    }
 
-   /**
+   
+
+/**
     * Get the associated elements for this element
     */
    public ETList < IElement > getAssociatedElements(IElement pElement)
@@ -261,7 +277,9 @@ public class DiagramBuilder
       return null;
    }
 
-   /**
+   
+
+/**
     * Get the associated diagrams for this element
     */
    public ETList < IProxyDiagram > getAssociatedDiagrams(IElement pElement)

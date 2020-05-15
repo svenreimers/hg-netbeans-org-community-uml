@@ -42,12 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File         : RoundTripRelationEventsSink.java
- * Version      : 1.2
- * Description  : Listener for Describe relationship change events
- * Authors      : Ashish
- */
+
+
 package org.netbeans.modules.uml.integration.ide;
 
 import org.netbeans.modules.uml.integration.ide.events.ClassInfo;
@@ -65,25 +61,8 @@ import org.netbeans.modules.uml.core.support.umlsupport.IResultCell;
 import org.netbeans.modules.uml.core.support.umlsupport.Log;
 
 
-/**
- *  Listens for relationship change events on the Describe model. It extends
- * from the class events sink because it fires class change events.
- *
- * Revision History
- * No.  Date        Who         What
- * ---  ----        ---         ----
- *   1  2002-04-23  Darshan     Added file and class comments.
- *   2  2002-05-30  Darshan     Added support for generalization and
- *                              implementation change events.
- *   3  2002-06-05  Darshan     Modified to allow handling of generalizations
- *                              between two interfaces.
- *   4  2002-06-18  Sumitabh    Modified to handle relationship create events.
- *   5  2002-06-19  Darshan     Included support for relationship delete events.
- *   6  2002-06-26  Darshan     Incorporated Sumitabh'schanges to handle
- *                              association moves.
- *
- * @version 1.2
- */
+
+
 public class RoundTripRelationEventsSink extends RoundTripClassEventsSink
                 implements IRoundTripRelationEventsSink {
 

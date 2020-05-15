@@ -42,6 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
+
+
 /*
  * Created on Oct 17, 2003
  *
@@ -63,7 +65,8 @@ public class CallEvent extends Event implements ICallEvent
 	public CallEvent()
 	{
 	}
-	/**
+	
+/**
 	 * Gets the operation whose invocation raised the call event.
 	 *
 	 * @return IOperation
@@ -74,7 +77,9 @@ public class CallEvent extends Event implements ICallEvent
 						retrieveSingleElementWithAttrID(this,"operation", IOperation.class);
 	}
 
-	/**
+	
+
+/**
 	 * Sets the operation whose invocation raised the call event
 	 *
 	 * @param oper[in]
@@ -85,7 +90,9 @@ public class CallEvent extends Event implements ICallEvent
 	}
 	
 	
-	/**
+	
+
+/**
 	 * Establishes the appropriate XML elements for this UML type.
 	 *
 	 * [in] The document where this element will reside

@@ -113,6 +113,7 @@ import org.netbeans.modules.uml.ui.support.applicationmanager.IProduct;
 import org.netbeans.modules.uml.ui.support.drawingproperties.DrawingPropertyResource;
 import org.netbeans.modules.uml.ui.swing.projecttree.ProjectTreeCellEditor;
 
+
 /**
  * TODO: meteora
  */
@@ -170,7 +171,9 @@ public class EditControlImpl extends JPanel implements IEditControl, InputMethod
    private boolean ime_Cached = false; 
    private StringBuffer ime_CachedChars = null;
    
-   /**
+   
+
+/**
     * 
     */
    public EditControlImpl(Object parent)
@@ -222,13 +225,15 @@ public class EditControlImpl extends JPanel implements IEditControl, InputMethod
    
    private void establishPreferences()
    {
-      //kris richards - "ShowEditToolTip" pref expunged. Set to "PSK_YES".
+      
        //this method no longer does anything.
    }
 
    private class CutAction extends AbstractAction
    {
-      /* (non-Javadoc)
+      
+
+/* (non-Javadoc)
        * @see java.awt.event.ActionListener#actionPerformed(java.awt.event.ActionEvent)
        */
       public void actionPerformed(ActionEvent e)
@@ -241,7 +246,9 @@ public class EditControlImpl extends JPanel implements IEditControl, InputMethod
 
    private class PasteAction extends AbstractAction
    {
-      /* (non-Javadoc)
+      
+
+/* (non-Javadoc)
        * @see java.awt.event.ActionListener#actionPerformed(java.awt.event.ActionEvent)
        */
       public void actionPerformed(ActionEvent e)
@@ -1167,7 +1174,9 @@ public class EditControlImpl extends JPanel implements IEditControl, InputMethod
       m_Field.setCaretPosition(pos);
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.editcontrol.IEditControl#setAutoSize(boolean)
     */
    public void setAutoSize(boolean value)
@@ -1176,7 +1185,9 @@ public class EditControlImpl extends JPanel implements IEditControl, InputMethod
 
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.editcontrol.IEditControl#getAutoSize()
     */
    public boolean getAutoSize()
@@ -1185,7 +1196,9 @@ public class EditControlImpl extends JPanel implements IEditControl, InputMethod
       return false;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.editcontrol.IEditControl#setrefFont(java.awt.Font)
     */
    public void setrefFont(Font value)
@@ -1194,7 +1207,9 @@ public class EditControlImpl extends JPanel implements IEditControl, InputMethod
 
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.editcontrol.IEditControl#setHFont(int)
     */
    public void setHFont(int value)
@@ -1203,7 +1218,9 @@ public class EditControlImpl extends JPanel implements IEditControl, InputMethod
 
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.editcontrol.IEditControl#getBackColor()
     */
    public void getBackColor()
@@ -1212,7 +1229,9 @@ public class EditControlImpl extends JPanel implements IEditControl, InputMethod
 
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.editcontrol.IEditControl#setrefBackColor(long)
     */
    public void setrefBackColor(long value)
@@ -1221,7 +1240,9 @@ public class EditControlImpl extends JPanel implements IEditControl, InputMethod
 
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.editcontrol.IEditControl#setBackColor(long)
     */
    public void setBackColor(long value)
@@ -1230,7 +1251,9 @@ public class EditControlImpl extends JPanel implements IEditControl, InputMethod
 
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.editcontrol.IEditControl#getForeColor()
     */
    public Color getForeColor()
@@ -1245,7 +1268,9 @@ public class EditControlImpl extends JPanel implements IEditControl, InputMethod
       return retVal;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.editcontrol.IEditControl#setForeColor(long)
     */
    public void setForeColor(Color value)
@@ -1256,7 +1281,9 @@ public class EditControlImpl extends JPanel implements IEditControl, InputMethod
       }
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.editcontrol.IEditControl#setrefForeColor(long)
     */
    public void setrefForeColor(long value)
@@ -1265,7 +1292,9 @@ public class EditControlImpl extends JPanel implements IEditControl, InputMethod
 
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.editcontrol.IEditControl#activate(int, int)
     */
    public void activate(int KeyCode, int nPos)
@@ -1274,7 +1303,9 @@ public class EditControlImpl extends JPanel implements IEditControl, InputMethod
 
    }
 
-   /**
+   
+
+/**
     * Deactivate the edit control
     */
    public void deactivate()
@@ -1309,7 +1340,9 @@ public class EditControlImpl extends JPanel implements IEditControl, InputMethod
       }
    }
 
-   /**
+   
+
+/**
     * Returns the translator attached to this control.
     *
     * @param pTranslator
@@ -1319,7 +1352,9 @@ public class EditControlImpl extends JPanel implements IEditControl, InputMethod
       return m_Translator;
    }
 
-   /**
+   
+
+/**
     * Attaches a translator to this control.
     *
     * @param pTranslator
@@ -1335,7 +1370,9 @@ public class EditControlImpl extends JPanel implements IEditControl, InputMethod
       m_Modified = false;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.editcontrol.IEditControl#getMultiline()
     */
    public boolean isMultiline()
@@ -1373,7 +1410,9 @@ public class EditControlImpl extends JPanel implements IEditControl, InputMethod
       }
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.editcontrol.IEditControl#getSel(int, int)
     */
    public long getSel(int nStartChar, int nEndChar)
@@ -1382,7 +1421,9 @@ public class EditControlImpl extends JPanel implements IEditControl, InputMethod
       return 0;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.editcontrol.IEditControl#setSel(int, int)
     */
    public long setSel(int startPos, int endPos)
@@ -1397,7 +1438,9 @@ public class EditControlImpl extends JPanel implements IEditControl, InputMethod
       return 0;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.editcontrol.IEditControl#replaceSel(java.lang.String)
     */
    public void replaceSel(String sText)
@@ -1406,7 +1449,9 @@ public class EditControlImpl extends JPanel implements IEditControl, InputMethod
 
    }
 
-   /**
+   
+
+/**
     * Establishes the control's event dispatcher (used internally only).
     *
     * @param pDispatcher
@@ -1420,7 +1465,9 @@ public class EditControlImpl extends JPanel implements IEditControl, InputMethod
       }
    }
 
-   /**
+   
+
+/**
     * Gets the control's event dispatcher (used internally only).
     *
     * @param pDispatcher
@@ -1430,7 +1477,9 @@ public class EditControlImpl extends JPanel implements IEditControl, InputMethod
       return m_EventDispatcher;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.editcontrol.IEditControl#getModified()
     */
    public boolean getModified()
@@ -1438,7 +1487,9 @@ public class EditControlImpl extends JPanel implements IEditControl, InputMethod
       return m_Modified;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.editcontrol.IEditControl#setModified(boolean)
     */
    public void setModified(boolean value)
@@ -1446,7 +1497,9 @@ public class EditControlImpl extends JPanel implements IEditControl, InputMethod
       m_Modified = value;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.editcontrol.IEditControl#lineLength(int)
     */
    public int lineLength(int nLine)
@@ -1455,7 +1508,9 @@ public class EditControlImpl extends JPanel implements IEditControl, InputMethod
       return 0;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.editcontrol.IEditControl#lineIndex(int)
     */
    public int lineIndex(int nLine)
@@ -1464,7 +1519,9 @@ public class EditControlImpl extends JPanel implements IEditControl, InputMethod
       return 0;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.editcontrol.IEditControl#getStyle()
     */
    public int getStyle()
@@ -1473,7 +1530,9 @@ public class EditControlImpl extends JPanel implements IEditControl, InputMethod
       return 0;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.editcontrol.IEditControl#setStyle(int)
     */
    public void setStyle(long value)
@@ -1495,7 +1554,9 @@ public class EditControlImpl extends JPanel implements IEditControl, InputMethod
       }
    }
 
-   /**
+   
+
+/**
     * Updates the control's window with the current contents of the translator.
     *
     * @return HRESULT
@@ -1510,7 +1571,9 @@ public class EditControlImpl extends JPanel implements IEditControl, InputMethod
       }
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.editcontrol.IEditControl#getOverstrike()
     */
    public boolean getOverstrike()
@@ -1519,7 +1582,9 @@ public class EditControlImpl extends JPanel implements IEditControl, InputMethod
       return false;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.editcontrol.IEditControl#setOverstrike(boolean)
     */
    public void setOverstrike(boolean value)
@@ -1528,7 +1593,9 @@ public class EditControlImpl extends JPanel implements IEditControl, InputMethod
 
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.editcontrol.IEditControl#getTooltipText(java.lang.StringBuffer, java.lang.StringBuffer, java.lang.StringBuffer)
     */
    public long getTooltipText(StringBuffer sLeft, StringBuffer sSubject, StringBuffer sRight)
@@ -1537,7 +1604,9 @@ public class EditControlImpl extends JPanel implements IEditControl, InputMethod
       return 0;
    }
 
-   /**
+   
+
+/**
     *
     * Update the tooltip's text.  If all 3 text parts are empty the tooltip window is dismissed.
     *
@@ -1612,7 +1681,9 @@ public class EditControlImpl extends JPanel implements IEditControl, InputMethod
       //}
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.editcontrol.IEditControl#setEnableTooltip(boolean)
     */
    public void setEnableTooltip(boolean value)
@@ -1621,7 +1692,9 @@ public class EditControlImpl extends JPanel implements IEditControl, InputMethod
       m_TooltipMenu.setVisible(value);
    }
 
-   /**
+   
+
+/**
     * Force the tooltip to be re-loaded and re-displayed.
     *
     * @return HRESULT
@@ -1637,7 +1710,9 @@ public class EditControlImpl extends JPanel implements IEditControl, InputMethod
       }
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.editcontrol.IEditControl#setCurrentPosition(int)
     */
    public void setCurrentPosition(int value)
@@ -1649,7 +1724,9 @@ public class EditControlImpl extends JPanel implements IEditControl, InputMethod
       }
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.editcontrol.IEditControl#getCurrentPosition()
     */
    public int getCurrentPosition()
@@ -1657,7 +1734,9 @@ public class EditControlImpl extends JPanel implements IEditControl, InputMethod
       return m_Field.getCaretPosition();
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.editcontrol.IEditControl#getAutoExpand()
     */
    public boolean getAutoExpand()
@@ -1666,7 +1745,9 @@ public class EditControlImpl extends JPanel implements IEditControl, InputMethod
       return false;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.editcontrol.IEditControl#setAutoExpand(boolean)
     */
    public void setAutoExpand(boolean value)
@@ -1675,7 +1756,9 @@ public class EditControlImpl extends JPanel implements IEditControl, InputMethod
 
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.editcontrol.IEditControl#showHintBar(int)
     */
    public void showHintBar(int nPos)
@@ -1703,7 +1786,9 @@ public class EditControlImpl extends JPanel implements IEditControl, InputMethod
       m_Panel.repaint();
    }
 
-   /*
+   
+
+/*
     * hides the hint bar
     */
    public void hideHintBar()
@@ -1723,7 +1808,9 @@ public class EditControlImpl extends JPanel implements IEditControl, InputMethod
       //m_Panel.add(m_Button);
    }
 
-   /**
+   
+
+/**
     * Deactivate the edit control and save any information
     * edited by user.
     */
@@ -1771,7 +1858,9 @@ public class EditControlImpl extends JPanel implements IEditControl, InputMethod
       m_TooltipMenu.setVisible(false);
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.editcontrol.IEditControl#handleHint()
     */
    public void handleHint()
@@ -1782,7 +1871,9 @@ public class EditControlImpl extends JPanel implements IEditControl, InputMethod
       }
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     */
    public void displayList(boolean bList, IStrings pList, int nStart, String sInitialText)
    {
@@ -1895,7 +1986,9 @@ public class EditControlImpl extends JPanel implements IEditControl, InputMethod
       }
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.editcontrol.IEditControl#getCurrentField()
     */
    public IEditControlField getCurrentField()
@@ -1908,7 +2001,9 @@ public class EditControlImpl extends JPanel implements IEditControl, InputMethod
       return retField;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.editcontrol.IEditControl#registerAccelerator(int, long)
     */
    public void registerAccelerator(int nChar, long nModifier)
@@ -1917,7 +2012,9 @@ public class EditControlImpl extends JPanel implements IEditControl, InputMethod
 
    }
 
-   /**
+   
+
+/**
     * Sets the element this edit control will edit.
     *
     * @param pElement [in] The edit control
@@ -1976,7 +2073,9 @@ public class EditControlImpl extends JPanel implements IEditControl, InputMethod
       }
    }
 
-   /**
+   
+
+/**
     * A list of separator characters used by the fields
     * @param sList
     *
@@ -1987,7 +2086,9 @@ public class EditControlImpl extends JPanel implements IEditControl, InputMethod
       return m_SeparatorList;
    }
 
-   /**
+   
+
+/**
     * A list of separator characters used by the fields
     * @param sList
     *
@@ -1998,7 +2099,9 @@ public class EditControlImpl extends JPanel implements IEditControl, InputMethod
       m_SeparatorList = sList;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.editcontrol.IEditControl#calcNewPos(int)
     */
    public int calcNewPos(int changeLineBy)
@@ -2007,7 +2110,9 @@ public class EditControlImpl extends JPanel implements IEditControl, InputMethod
       return 0;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.editcontrol.IEditControl#getText()
     */
    public String getText()
@@ -2016,7 +2121,9 @@ public class EditControlImpl extends JPanel implements IEditControl, InputMethod
       return m_Field.getText();
    }
 
-   /*
+   
+
+/*
     * sets the text that is displayed on the edit control.
     * While setting the text, change events are fired,
     * I need to prevent them so am setting ignoreTextUpdate.
@@ -2326,7 +2433,9 @@ public class EditControlImpl extends JPanel implements IEditControl, InputMethod
       m_BackgroundColor = c;
    }
 
-   /**
+   
+
+/**
     * 
    */
    @Override
@@ -2338,7 +2447,9 @@ public class EditControlImpl extends JPanel implements IEditControl, InputMethod
       }
    }
 
-   /**
+   
+
+/**
     * 
    */
    @Override
@@ -2353,7 +2464,9 @@ public class EditControlImpl extends JPanel implements IEditControl, InputMethod
       return retVal;
    }
 
-   /*
+   
+
+/*
     *  (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.editcontrol.IEditControl#getAssociatedParent()
     */
@@ -2370,7 +2483,9 @@ public class EditControlImpl extends JPanel implements IEditControl, InputMethod
        }
    }
    
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see java.awt.event.InputMethodListener#caretPositionChanged(java.awt.event.InputMethodEvent)
     */
    public void caretPositionChanged(InputMethodEvent event)
@@ -2379,7 +2494,9 @@ public class EditControlImpl extends JPanel implements IEditControl, InputMethod
 
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see java.awt.event.InputMethodListener# (java.awt.event.InputMethodEvent)
     */
    public void inputMethodTextChanged(InputMethodEvent event)

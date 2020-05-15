@@ -49,7 +49,8 @@ package org.netbeans.modules.uml.project.ui.nodes.actions;
  */
 public interface INewTypeExt
 {
-   /**
+   
+/**
     * Returns the resource path of an icon
     * @return resource path of an icon. The path should not have the initial slash
     */

@@ -59,7 +59,9 @@ public interface IFilterItem
    /** The item will be filtered out. */
    public static final int FILTER_STATE_OFF = 2;
 
-   /**
+   
+
+/**
     * The name of the filter item.  The name of the filter item will be
     * the name displayed in the filter dialog.
     *
@@ -67,7 +69,9 @@ public interface IFilterItem
     */
    public String getName();
 
-   /**
+   
+
+/**
     * The state of the filter item.  The state will be either 
     * <code>FILTER_STATE_ON</code> or <code>FILTER_STATE_OFF</code>.
     * 
@@ -75,7 +79,9 @@ public interface IFilterItem
     */
    public int getState();
    
-   /**
+   
+
+/**
     * Sets the filter state of the item.  
     * 
     * @param value Either<code>FILTER_STATE_ON</code> or 
@@ -83,7 +89,9 @@ public interface IFilterItem
     */
    public void setState(int value);  
    
-   /**
+   
+
+/**
     * Sets the filter state of the item.  If the user modified the filter item
     * via the filter dialog the dialog parameter will give access to the tree 
     * settings.
@@ -96,7 +104,9 @@ public interface IFilterItem
     */
    public void setState(int value, IFilterDialog dialog);   
    
-   /**
+   
+
+/**
     * Retrieve the icon associated with the item.  There no icon has been 
     * associated the icon the name of the item and CommonResources is used to 
     * try to retrieve the icon for the item.   

@@ -68,7 +68,9 @@ public class ResizeBorder implements Border {
     private ArrayList<ResizeProvider.ControlPoint> points;
 
     
-    /*
+    
+
+/*
      * @param thickness the thickness of the border
      * @param color the border color
      * @param points points which will be filled
@@ -81,7 +83,9 @@ public class ResizeBorder implements Border {
         this.points=new ArrayList<ResizeProvider.ControlPoint>();
         if(points!=null)for(int i=0;i<points.length;i++)this.points.add(points[i]);
     }
-    /*
+    
+
+/*
      * @param thickness the thickness of the border
      * @param color the border color
      * @param points points which will be filled
@@ -89,14 +93,18 @@ public class ResizeBorder implements Border {
     public ResizeBorder (int thickness, Color color,ResizeProvider.ControlPoint[] points) {
         this(thickness,color,points,false);
     }
-    /*
+    
+
+/*
      * @param thickness the thickness of the border
      * @param color the border color
      */
     public ResizeBorder (int thickness, Color color) {
         this(thickness,color,new ResizeProvider.ControlPoint[]{ResizeProvider.ControlPoint.TOP_LEFT,ResizeProvider.ControlPoint.TOP_CENTER,ResizeProvider.ControlPoint.TOP_RIGHT,ResizeProvider.ControlPoint.CENTER_LEFT,ResizeProvider.ControlPoint.BOTTOM_LEFT,ResizeProvider.ControlPoint.BOTTOM_CENTER,ResizeProvider.ControlPoint.BOTTOM_RIGHT,ResizeProvider.ControlPoint.CENTER_RIGHT});
     }
-    /*
+    
+
+/*
      * @param thickness the thickness of the border
      */
     public ResizeBorder (int thickness) {

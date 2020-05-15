@@ -75,7 +75,9 @@ public class BehavioralFeature extends Feature
 	private int PDK_RESULT = 3;
 	private static int entry = 0;
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IVersionableElement#setNode(org.dom4j.Node)
      */
     public void setNode(Node n)
@@ -85,7 +87,9 @@ public class BehavioralFeature extends Feature
 		m_NamespaceAggregate.setAggregator(this);
     }
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavioralFeature#addParameter(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IParameter)
 	 */
 	public void addParameter(IParameter parm)
@@ -122,7 +126,9 @@ public class BehavioralFeature extends Feature
 		}				
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Removes the passed-in Parameter from this feature. Results in the
 	 * firing of the PreParameterRemoved and ParameterRemoved events.
@@ -161,7 +167,9 @@ public class BehavioralFeature extends Feature
 		}		
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Inserts newParm before existingParm in this feature's list of parameters. If existingParm is 0,
 	 * then newParm is appeneded to the end of the Parameters list.
@@ -201,7 +209,9 @@ public class BehavioralFeature extends Feature
 		}	
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Adds the collection of parameters to this feature.  It will first remove
 	 * all existing parameters.
@@ -214,7 +224,9 @@ public class BehavioralFeature extends Feature
 		return col.retrieveElementCollection(getNode(), "UML:Element.ownedElement/UML:Parameter", IParameter.class);
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Adds the collection of parameters to this feature. It will first remove all 
 	 * existing parameters.
@@ -346,7 +358,9 @@ public class BehavioralFeature extends Feature
             return false;
         }
 
-	/**
+	
+
+/**
 	 *
 	 * Removes all the parameters this feature currently owns.
 	 */
@@ -367,7 +381,9 @@ public class BehavioralFeature extends Feature
 		}
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavioralFeature#addRaisedSignal(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ISignal)
 	 */
 	public void addRaisedSignal(ISignal sig)
@@ -386,7 +402,9 @@ public class BehavioralFeature extends Feature
             );
         }
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavioralFeature#removeRaisedSignal(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ISignal)
 	 */
 	public void removeRaisedSignal(ISignal sig)
@@ -405,7 +423,9 @@ public class BehavioralFeature extends Feature
             );
         }
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavioralFeature#getRaisedSignals()
 	 */
 	public ETList<ISignal> getRaisedSignals()
@@ -415,7 +435,9 @@ public class BehavioralFeature extends Feature
                   this,"raisedSignal", ISignal.class);
         }
 
-	/**
+	
+
+/**
 	 *
 	 * Adds the ISignal to the list of handled signals. Results in the firing
 	 * of the PreHandledSignalAdded and HandledSignalAdded events.
@@ -482,7 +504,9 @@ public class BehavioralFeature extends Feature
         }
 
 
-	/**
+	
+
+/**
 	 *
 	 * Removes the passed-in signal from the list of handled signals. Results
 	 * in the firing of the PreHandledSignalRemoved and HandledSignalRemoved
@@ -543,7 +567,9 @@ public class BehavioralFeature extends Feature
         }	
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavioralFeature#getHandledSignals()
 	 */
 	public ETList<ISignal> getHandledSignals()
@@ -553,7 +579,9 @@ public class BehavioralFeature extends Feature
                   this,"handledSignal", ISignal.class);
         }
 
-	/**
+	
+
+/**
 	 *
 	 * Gets the concurrency flag.  Results in the firing of the ConcurrencyPreModified
 	 * and ConcurrencyModified events.
@@ -563,7 +591,9 @@ public class BehavioralFeature extends Feature
 		return super.getCallConcurrencyKindValue( "concurrency" );
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Sets the concurrenty flag. Results in the firing of the ConcurrencyPreModified
 	 * and ConcurrencyModifed events.
@@ -604,7 +634,9 @@ public class BehavioralFeature extends Feature
 		}
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Gets the feature to abstract.
 	 *
@@ -617,7 +649,9 @@ public class BehavioralFeature extends Feature
 		return super.getBooleanAttributeValue("isAbstract",false);
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Sets this feature to abstract.
 	 *
@@ -687,7 +721,9 @@ public class BehavioralFeature extends Feature
 		}
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Creates a new parameter with the passed-in information.
 	 *
@@ -719,7 +755,9 @@ public class BehavioralFeature extends Feature
 		return param;
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Creates a new parameter with the passed-in information.
 	 *
@@ -783,7 +821,9 @@ public class BehavioralFeature extends Feature
             return newParam;
         }
         
-	/**
+	
+
+/**
 	 *
 	 * Retrieves the Parameter that is this feature's return type.
 	 */
@@ -811,7 +851,9 @@ public class BehavioralFeature extends Feature
 		return retType;
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Adds the parameter to this behaviors collection of parameters,
 	 * making sure the kind of that parameter is set to PDK_RETURN.
@@ -836,7 +878,9 @@ public class BehavioralFeature extends Feature
 		}
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Adds a new parameter to this feature whose type is specified
 	 * by newTypeName and whose kind is PDK_RETURN.
@@ -881,7 +925,9 @@ public class BehavioralFeature extends Feature
 		}
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavioralFeature#addMethod(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavior)
 	 */
 	public void addMethod(IBehavior behavior)
@@ -899,7 +945,9 @@ public class BehavioralFeature extends Feature
             );
         }
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavioralFeature#removeMethod(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavior)
 	 */
 	public void removeMethod(IBehavior behavior)
@@ -918,7 +966,9 @@ public class BehavioralFeature extends Feature
 								);
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavioralFeature#getMethods()
 	 */
 	public ETList<IBehavior> getMethods()
@@ -928,7 +978,9 @@ public class BehavioralFeature extends Feature
                   this,"method", IBehavior.class);
         }
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavioralFeature#getRepresentation()
 	 */
 	public IBehavior getRepresentation()
@@ -938,7 +990,9 @@ public class BehavioralFeature extends Feature
             return collector.retrieveSingleElementWithAttrID(this,"representation", IBehavior.class);
         }
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavioralFeature#setRepresentation(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavior)
 	 */
 	public void setRepresentation(IBehavior behavior)
@@ -957,7 +1011,9 @@ public class BehavioralFeature extends Feature
             );
         }
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavioralFeature#getFormalParameters()
 	 */
 	public ETList<IParameter> getFormalParameters()
@@ -983,7 +1039,9 @@ public class BehavioralFeature extends Feature
 		return resultParams;
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Retrieves the name of the return type.
 	 */
@@ -1002,7 +1060,9 @@ public class BehavioralFeature extends Feature
 		return retTypeName;
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Determines whether or not the parameters (including return type) 
 	 * and name of the feature all match, in name and order.
@@ -1014,7 +1074,9 @@ public class BehavioralFeature extends Feature
 		return compareSignatures(feature,false);
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Compares the signatures of this feature and the passed in feature.
 	 *
@@ -1083,7 +1145,9 @@ public class BehavioralFeature extends Feature
 		return isSame;
 	}
 	
-	/**
+	
+
+/**
 	 *
 	 * Checks the types of all the parameters except for return types to see if they have the same types.
 	 *
@@ -1094,7 +1158,9 @@ public class BehavioralFeature extends Feature
 		return compareSignatures(feature,true);
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Compare the types of 2 typed elements are return true if they are the same.
 	 * This compares the identity of the types, which are elements. It does NOT
@@ -1133,7 +1199,9 @@ public class BehavioralFeature extends Feature
 		return same;
 	}
 	
-	/**
+	
+
+/**
 	 *
 	 * Creates a Parameter with a default type and name.
 	 */
@@ -1142,7 +1210,9 @@ public class BehavioralFeature extends Feature
 		return createParameter(null,null);
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Sets all the parameters who do not have a direction value of PDK_RESULT.
 	 *
@@ -1339,7 +1409,9 @@ public class BehavioralFeature extends Feature
 	}
         
 
-	/**
+	
+
+/**
 	 *
 	 * Retrieves the current value of the Native setting of this feature.
 	 * This is specific to the Java language.
@@ -1349,7 +1421,9 @@ public class BehavioralFeature extends Feature
 		return super.getBooleanAttributeValue("isNative", false);
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Sets the value of the Native keyword. Specific to Java.
 	 *
@@ -1389,7 +1463,9 @@ public class BehavioralFeature extends Feature
 		}
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Retrieves whether of not this feature has the strictfp modifier associated with it.
 	 */
@@ -1398,7 +1474,9 @@ public class BehavioralFeature extends Feature
 		return super.getBooleanAttributeValue("isStrictFP",false);
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Sets the value of the strictfp modifier on this feature
 	 *
@@ -1433,7 +1511,9 @@ public class BehavioralFeature extends Feature
 		}		
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Creates a Parameter that is the return type
 	 */

@@ -51,6 +51,7 @@ import org.netbeans.performance.uml.setup.UMLSetup;
 
 import org.netbeans.junit.NbTestSuite;
 
+
 /**
  * Test suite that actually does not perform any test but sets up user directory
  * for UI responsiveness tests

@@ -49,6 +49,7 @@ package org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.trans
 import org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.statehandlers.ExpressionStateHandler;
 import org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ITokenDescriptor;
 
+
 /**
  * The PreUnaryExpression is used to represent a unary expression in where the
  * operator is before the expression.
@@ -61,7 +62,8 @@ public class PreUnaryExpression extends PostUnaryExpression
     private ITokenDescriptor  m_pPrecedenceStart     = null;
     private ITokenDescriptor  m_pPrecedenceEnd 	     = null;
     
-   /**
+   
+/**
     * Creates a PreUnaryExpression object.
     */
    public PreUnaryExpression()
@@ -77,7 +79,9 @@ public class PreUnaryExpression extends PostUnaryExpression
        m_pPrecedenceEnd       = null;
    }
 
-   /* 
+   
+
+/* 
     */
    public long getEndPosition()
    {
@@ -120,7 +124,9 @@ public class PreUnaryExpression extends PostUnaryExpression
        return retVal;
    }
    
-        /* (non-Javadoc)
+        
+
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.expression.IConditionalExpression#getStartPosition()
          */
    public long getStartPosition()
@@ -151,7 +157,7 @@ public class PreUnaryExpression extends PostUnaryExpression
                m_pPrecedenceEnd = pToken;
            }     
            
-           //kris richards - removed the 'else' in order for the 'precedence' token 
+           
            // to be processed upstream. This is because they are never really used since
            // the 'toString()' method here is not called. So this forces the 'precedence'
            // tokens to be processed in the BinaryExpression super class.
@@ -162,7 +168,9 @@ public class PreUnaryExpression extends PostUnaryExpression
        }
    }
 
-   /**
+   
+
+/**
     * Converts the expression data into a string representation.  The operator 
     * will be placed before the expression.
     */

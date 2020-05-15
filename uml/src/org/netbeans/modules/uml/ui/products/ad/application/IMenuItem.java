@@ -54,52 +54,62 @@ package org.netbeans.modules.uml.ui.products.ad.application;
 public interface IMenuItem
 {
 
-   /**
+   
+/**
     * @return
     */
    public IMenu getParentMenu();
 
-   /**
+   
+/**
     * @param text
     */
    public void setText(String text);
 
-   /**
+   
+/**
     * @param i
     */
    public void setAccelerator(int i);
 
-   /**
+   
+/**
     * @return
     */
    public boolean getEnabled();
 
-   /**
+   
+/**
     * @param shouldBeEnabled
     */
    public void setEnabled(boolean shouldBeEnabled);
 
-   /**
+   
+/**
     * @return
     */
    public boolean getSelection();
 
-   /**
+   
+/**
     * @param bv
     */
    public void setSelection(boolean bv);
 
-   /**
+   
+/**
     * @return
     */
    public Object getData();
 
-   /**
+   
+/**
     * @param src
     */
 //   public void setData(IContributionItem src);
    
-   /**
+   
+/**
     * 
     */
    public void dispose();

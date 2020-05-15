@@ -42,6 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
+
+
 /*
  * Created on Jul 13, 2004
  */
@@ -56,6 +58,7 @@ import org.netbeans.modules.uml.core.roundtripframework.IChangeRequest;
 import org.netbeans.modules.uml.core.roundtripframework.RTElementKind;
 import org.netbeans.modules.uml.core.roundtripframework.RequestDetailKind;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
+
 
 /**
  *

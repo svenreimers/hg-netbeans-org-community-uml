@@ -43,11 +43,8 @@
  */
 
 
-/*
- * AddJavaProjectDialogOperator.java
- *
- * Created on March 29, 2005, 7:16 PM
- */
+
+
 
 package org.netbeans.test.umllib;
 
@@ -73,7 +70,9 @@ public class ReverseEngProgressDialogOperator extends NbDialogOperator {
         super(LabelsAndTitles.RE_PROGRESS_DIALOG_TITLE);
     }
     
-    /** Tries to find null TreeView$ExplorerTree in this dialog.
+    
+
+/** Tries to find null TreeView$ExplorerTree in this dialog.
      * @return JTreeOperator
      */
     public JTreeOperator javaProjects() {
@@ -83,13 +82,17 @@ public class ReverseEngProgressDialogOperator extends NbDialogOperator {
         return _javaProjects;
     }
     
-    /** returns selected path in java projects
+    
+
+/** returns selected path in java projects
      * @return TreePath
      */
     public TreePath getSelectedProject() {
         return javaProjects().getSelectionPath();
     }
-    /**
+    
+
+/**
      * Selects given project category
      * @param project 
      */
@@ -98,7 +101,9 @@ public class ReverseEngProgressDialogOperator extends NbDialogOperator {
     }
     
     
-    /** Returns operator of "Done" button.
+    
+
+/** Returns operator of "Done" button.
      * @return  JButtonOperator instance of "Done" button
      */
     public JButtonOperator btDone() {
@@ -118,7 +123,9 @@ public class ReverseEngProgressDialogOperator extends NbDialogOperator {
     }
     
     
-    /** Returns operator of "SaveMessage..." button.
+    
+
+/** Returns operator of "SaveMessage..." button.
      * @return  JButtonOperator instance of "Done" button
      */
     public JButtonOperator btSaveMessage() {
@@ -128,7 +135,9 @@ public class ReverseEngProgressDialogOperator extends NbDialogOperator {
         return _btSaveMessage;
     }
     
-    /**
+    
+
+/**
      * Pushes "SaveMessage..." button.
      * @param resultsFileName 
      */

@@ -153,7 +153,7 @@ public class UMLProjectDataObject extends MultiDataObject
         
         if (helper != null)
             return helper.getDisplayName();
-// conover - removing the word "Model" in the Save dialog
+
 //            return helper.getDisplayName() + " " + NbBundle.getMessage(
 //                UMLModelRootNode.class, "CTL_UMLModelRootNode"); // NOI18N
         
@@ -190,7 +190,9 @@ public class UMLProjectDataObject extends MultiDataObject
         return false;
     }
     
-    /* Getter for rename action.
+    
+
+/* Getter for rename action.
      * @return true if the object can be renamed
      */
     @Override
@@ -225,7 +227,9 @@ public class UMLProjectDataObject extends MultiDataObject
                 return getDataObject().getPrimaryFile();
             }
             
-            /* make uml project data file read only in editor to prevent users
+            
+
+/* make uml project data file read only in editor to prevent users
              * from tampering it accidentally
              */
             @Override
@@ -278,7 +282,9 @@ public class UMLProjectDataObject extends MultiDataObject
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~ private Loader ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     
     
-    /** The DataLoader for UMLProjectDataObjects.
+    
+
+/** The DataLoader for UMLProjectDataObjects.
      */
     static final class Loader extends MultiFileLoader
     {
@@ -295,7 +301,9 @@ public class UMLProjectDataObject extends MultiDataObject
             return "Loaders/text/xml/Actions"; // NOI18N
         }
         
-        /** Get the default display name of this loader.
+        
+
+/** Get the default display name of this loader.
          * @return default display name
          */
         @Override
@@ -304,7 +312,9 @@ public class UMLProjectDataObject extends MultiDataObject
             return NbBundle.getMessage(UMLProjectDataObject.class, "PROP_UMLProjectDataLoader_Name");
         }
         
-        /** For a given file finds a primary file.
+        
+
+/** For a given file finds a primary file.
          * @param fo the file to find primary file for
          *
          * @return the primary file for the file or null if the file is not
@@ -322,7 +332,9 @@ public class UMLProjectDataObject extends MultiDataObject
             return null;
         }
         
-        /** Creates the right data object for given primary file.
+        
+
+/** Creates the right data object for given primary file.
          * It is guaranteed that the provided file is realy primary file
          * returned from the method findPrimaryFile.
          *
@@ -337,7 +349,9 @@ public class UMLProjectDataObject extends MultiDataObject
             return new UMLProjectDataObject(primaryFile, this);
         }
         
-        /** Creates the right primary entry for given primary file.
+        
+
+/** Creates the right primary entry for given primary file.
          *
          * @param primaryFile primary file recognized by this loader
          * @return primary entry for that file
@@ -348,7 +362,9 @@ public class UMLProjectDataObject extends MultiDataObject
             return new FileEntry(obj, primaryFile);
         }
         
-        /** Creates right secondary entry for given file. The file is said to
+        
+
+/** Creates right secondary entry for given file. The file is said to
          * belong to an object created by this loader.
          *
          * @param secondaryFile secondary file for which we want to create entry

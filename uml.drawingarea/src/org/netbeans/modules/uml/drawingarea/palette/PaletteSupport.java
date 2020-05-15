@@ -61,7 +61,8 @@ public class PaletteSupport
 {
     private PaletteController pController = null;
 
-    /**
+    
+/**
      * Creates a new instance of PaletteSupport
      */
     public PaletteSupport()

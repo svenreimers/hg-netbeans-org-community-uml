@@ -278,7 +278,9 @@ public class SQDLifelinePropertiesTests extends UMLTestCase {
             PropertyVerifier custom = new PropertyVerifier(PROPS_NAME){                
                 protected boolean checkElement(){
                     return true;
-                    /*
+                    
+
+/*
                     boolean switched = false;
                     try{
                         dia.toolbar().selectTool(dia.toolbar().SHOW_FRIENDLY_NAMES_TOOL);

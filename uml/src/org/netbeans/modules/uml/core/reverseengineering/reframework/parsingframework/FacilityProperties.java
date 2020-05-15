@@ -53,7 +53,8 @@ import java.util.Set;
 public class FacilityProperties extends HashMap<String, IFacilityProperty>
     implements IFacilityProperties
 {
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.IFacilityProperties#add(org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.IFacilityProperty)
      */
     public void add(IFacilityProperty prop)

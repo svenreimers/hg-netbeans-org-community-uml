@@ -47,6 +47,8 @@ package org.netbeans.modules.uml.integration.ide.actions;
 import org.openide.util.HelpCtx;
 import org.openide.util.actions.CallableSystemAction;
 
+
+
 /**
  * Base class for UML toolbar action that has toolbar presenter and listens to
  * project open/close events for enablement.
@@ -54,11 +56,13 @@ import org.openide.util.actions.CallableSystemAction;
  * getName and iconResource
  */
 public abstract class AbstractUMLToolbarAction extends CallableSystemAction 
-    // IZ# 78917 - conover: UML toolbar removed 
+    
     // implements PropertyChangeListener
 {
 	
-	/**
+	
+
+/**
      * name of a shared variable - is this the first call of method
      * <code>isEnabled()</code>?
      * Value of this variable is non-<code>null</code> only until method
@@ -66,12 +70,16 @@ public abstract class AbstractUMLToolbarAction extends CallableSystemAction
      */
     private static final String VAR_FIRST_ISENABLED
                                 = "first call of isEnabled()";          //NOI18N
-    /**
+    
+
+/**
      * name of a shared variable - reference to the toolbar presenter
      */
     private static final String VAR_TOOLBAR_COMP_REF
                                 = "toolbar presenter ref";              //NOI18N
-    /**
+    
+
+/**
      * name of a shared variable - are we listening on the set of open projects?
      * It contains <code>Boolean.TRUE</code> if we are listening,
      * and <code>null</code> if we are not listening.
@@ -88,7 +96,7 @@ public abstract class AbstractUMLToolbarAction extends CallableSystemAction
 
     /**
      */
-// IZ# 78917 - conover: UML toolbar removed
+
 //    public Component getToolbarPresenter() {
 //        synchronized (getLock()) {
 //            Component presenter = getStoredToolbarPresenter();
@@ -101,7 +109,9 @@ public abstract class AbstractUMLToolbarAction extends CallableSystemAction
 //        }
 //    }
 
-    /**
+    
+
+/**
      * Returns a toolbar presenter.
      * If the toolbar presenter already exists, returns the existing instance.
      * If it does not exist, creates a new toolbar presenter, stores
@@ -110,7 +120,7 @@ public abstract class AbstractUMLToolbarAction extends CallableSystemAction
      *
      * @return  existing presenter; or a new presenter if it did not exist
      */
-// IZ# 78917 - conover: UML toolbar removed
+
 //    private Component getStoredToolbarPresenter() {
 //        Object refObj = getProperty(VAR_TOOLBAR_COMP_REF);
 //        if (refObj != null) {
@@ -126,7 +136,9 @@ public abstract class AbstractUMLToolbarAction extends CallableSystemAction
 //        return presenter;
 //    }
     
-    /**
+    
+
+/**
      * Checks whether the stored toolbar presenter exists but does not create
      * one if it does not exist.
      *
@@ -135,7 +147,7 @@ public abstract class AbstractUMLToolbarAction extends CallableSystemAction
      *          <code>false</code> otherwise
      * @see  #getStoredToolbarPresenter
      */
-// IZ# 78917 - conover: UML toolbar removed
+
 //    private boolean checkToolbarPresenterExists() {
 //        Object refObj = getProperty(VAR_TOOLBAR_COMP_REF);
 //        if (refObj == null) {
@@ -144,11 +156,13 @@ public abstract class AbstractUMLToolbarAction extends CallableSystemAction
 //        return ((Reference) refObj).get() != null;
 //    }
     
-    /**
+    
+
+/**
      * This method is called if we are listening for changes on the set
      * of open projecst and some project(s) is opened/closed.
      */
-// IZ# 78917 - conover: UML toolbar removed
+
 //    public void propertyChange(PropertyChangeEvent e) {
 //        synchronized (getLock()) {
 //            
@@ -193,7 +207,7 @@ public abstract class AbstractUMLToolbarAction extends CallableSystemAction
     
     /**
      */
-// IZ# 78917 - conover: UML toolbar removed
+
 //    private synchronized void updateState() {
 //        
 //        /*

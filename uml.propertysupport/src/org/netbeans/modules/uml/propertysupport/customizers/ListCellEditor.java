@@ -42,6 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
+
+
 /*
  * ListCellEditor.java
  *
@@ -58,6 +60,7 @@ import java.util.EventObject;
 import javax.swing.DefaultCellEditor;
 import javax.swing.JComboBox;
 import java.util.Vector;
+
 
 /**
  * This class provides a little more stability when ueing a JComboBox in a 

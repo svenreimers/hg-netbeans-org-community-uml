@@ -42,11 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : GeneralizationChangeRequest.java
- * Created on : Oct 28, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.roundtripframework;
 
 import org.netbeans.modules.uml.core.metamodel.core.foundation.IElement;
@@ -61,7 +58,8 @@ public class GeneralizationChangeRequest
 {
     private boolean m_SpecializeEffected = false;
     private boolean m_ArtifactIsFrom = false;
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IGeneralizationChangeRequest#getAfterConnection()
      */
     public IElement getAfterConnection()
@@ -69,7 +67,9 @@ public class GeneralizationChangeRequest
         return getAfter();
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IGeneralizationChangeRequest#getAfterGeneralizing()
      */
     public IClassifier getAfterGeneralizing()
@@ -80,7 +80,9 @@ public class GeneralizationChangeRequest
         return null;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IGeneralizationChangeRequest#getAfterSpecializing()
      */
     public IClassifier getAfterSpecializing()
@@ -91,7 +93,9 @@ public class GeneralizationChangeRequest
         return null;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IGeneralizationChangeRequest#getArtifactIsFrom()
      */
     public boolean getArtifactIsFrom()
@@ -99,7 +103,9 @@ public class GeneralizationChangeRequest
         return m_ArtifactIsFrom;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IGeneralizationChangeRequest#getBeforeConnection()
      */
     public IElement getBeforeConnection()
@@ -107,7 +113,9 @@ public class GeneralizationChangeRequest
         return getBefore();
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IGeneralizationChangeRequest#getBeforeGeneralizing()
      */
     public IClassifier getBeforeGeneralizing()
@@ -140,7 +148,9 @@ public class GeneralizationChangeRequest
         return null;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IGeneralizationChangeRequest#getBeforeSpecializing()
      */
     public IClassifier getBeforeSpecializing()
@@ -173,7 +183,9 @@ public class GeneralizationChangeRequest
         return null;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IGeneralizationChangeRequest#getSpecializationEffected()
      */
     public boolean getSpecializationEffected()
@@ -181,7 +193,9 @@ public class GeneralizationChangeRequest
         return m_SpecializeEffected;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IGeneralizationChangeRequest#setArtifactIsFrom(boolean)
      */
     public void setArtifactIsFrom(boolean artIsFrom)
@@ -189,7 +203,9 @@ public class GeneralizationChangeRequest
         m_ArtifactIsFrom = artIsFrom;        
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IGeneralizationChangeRequest#setSpecializationEffected(boolean)
      */
     public void setSpecializationEffected(boolean splEffected)

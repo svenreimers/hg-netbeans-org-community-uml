@@ -50,6 +50,8 @@ import java.io.IOException;
 import org.netbeans.modules.uml.core.AbstractUMLTestCase;
 
 
+
+
 /**
  * Test cases for LanguageLibrary.
  */
@@ -64,7 +66,7 @@ public class LanguageLibraryTestCase extends AbstractUMLTestCase
     
     private void init()
     {
-        // IZ=119824 - conover
+        
         // major modifications to find the language library files 
         // in the new location
         try

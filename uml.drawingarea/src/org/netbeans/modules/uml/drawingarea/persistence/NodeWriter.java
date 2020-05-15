@@ -300,14 +300,18 @@ public class NodeWriter extends Writer {
         return connectorAttrs;
     }
 
-    /**
+    
+
+/**
      * @return the documentation
      */
     public String getDocumentation() {
         return documentation;
     }
 
-    /**
+    
+
+/**
      * @param documentation the documentation to set
      */
     public void setDocumentation(String documentation) {

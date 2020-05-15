@@ -49,13 +49,17 @@ package org.netbeans.test.umllib;
  import org.netbeans.api.visual.widget.Widget;
 
 
+
+
 /**
  * This is the common interface for the all compartment choosers.
  * All work is done in checkCompartment method
  */
 public interface CompartmentChooser {
     
-    /**
+    
+
+/**
      * Comparision is performed here
      * @param compartment Compartment for check
      * @return true id parameteter is suitable and false otherwise
@@ -65,7 +69,9 @@ public interface CompartmentChooser {
      public boolean checkCompartment(Widget compartment, String info);
      
     
-    /**
+    
+
+/**
      * Return description for this Chooser.
      * For example "Compartment by instance chooser"
      * @return description for this Chooser.

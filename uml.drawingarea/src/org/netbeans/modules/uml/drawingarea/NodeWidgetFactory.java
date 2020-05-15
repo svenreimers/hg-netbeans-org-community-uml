@@ -44,6 +44,7 @@ package org.netbeans.modules.uml.drawingarea;
 import org.netbeans.api.visual.widget.Scene;
 import org.netbeans.api.visual.widget.Widget;
 
+
 /**
  * The node widget factory is used to create a node widget that is 
  * need to be added to a scene.  

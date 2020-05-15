@@ -46,17 +46,23 @@ package org.netbeans.modules.uml.core.scm;
 
 import org.netbeans.modules.uml.core.workspacemanagement.IWorkspace;
 
+
+
 /**
  * Provides versioning information for an IWorkspace.
  */
 public interface ISCMWorkspaceItem extends ISCMItem
 {
-	/**
+	
+
+/**
 	 * The workspace.
 	*/
 	public IWorkspace getWorkspace();
 
-	/**
+	
+
+/**
 	 * The workspace.
 	*/
 	public void setWorkspace( IWorkspace value );

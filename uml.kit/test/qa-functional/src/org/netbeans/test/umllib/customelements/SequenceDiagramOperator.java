@@ -90,7 +90,9 @@ public class SequenceDiagramOperator extends DiagramOperator {
         logicalTop = (int) scene.convertSceneToView(new Point(10, 50)).getY();
     }
     
-    /**
+    
+
+/**
      * Returns free point for a new lifeline to be created at. The nearest element would be not closer than 
      * <CODE>span</CODE> points in horizontal direction.
      * You may use such point to place an element or invoke popup menu
@@ -145,7 +147,9 @@ public class SequenceDiagramOperator extends DiagramOperator {
     
     
     
-    /**
+    
+
+/**
      * Put element on diagram by pressing toolbar butoon and clicking on 
      * the diagram
      * @param name Name for new element
@@ -164,7 +168,9 @@ public class SequenceDiagramOperator extends DiagramOperator {
     }
     
     
-    /**
+    
+
+/**
      * create an element on diagram by pressing toolbar butoon and clicking on 
      * the diagram
      * @param name Name for new element
@@ -182,7 +188,9 @@ public class SequenceDiagramOperator extends DiagramOperator {
     
     
     
-    /**
+    
+
+/**
      * Put element on diagram by pressing toolbar butoon and clicking on 
      * the diagram
      * @param name Name for new element
@@ -220,7 +228,9 @@ public class SequenceDiagramOperator extends DiagramOperator {
  
     
     
-    /**
+    
+
+/**
      * Draw link on diagram
      * @param linkElementType Link type
      * @param fromElement Source element
@@ -237,13 +247,8 @@ public class SequenceDiagramOperator extends DiagramOperator {
     }
     
     
-    /**
-     * Create generic relationship on diagram
-     * @param linkElementType Link type
-     * @param fromElement Source element
-     * @param toElement target element
-     * @throws qa.uml.exceptions.NotFoundException when source or target is not found
-     */
+    
+
     public void createGenericRelationshipOnDiagram(LinkTypes linkElementType, DiagramElementOperator fromElement, DiagramElementOperator toElement) throws NotFoundException{
         org.netbeans.test.umllib.Utils.log("SequenceDiagramOperator:createDeneraticRelationShipOnDiagram(): fromElmentType=" + fromElement.getElementType());  
         if (!fromElement.getElementType().equals(ElementTypes.LIFELINE.toString())){

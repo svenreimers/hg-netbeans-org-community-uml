@@ -51,87 +51,121 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.IVersionableEleme
 
 public interface IParameter extends INamedElement, ITypedElement
 {
-	/**
+	
+
+/**
 	 * Sets / Gets the direction flag on the parameter, indicating the semantics of how that data the parameter represents is entering the behavior.
 	*/
 	public int getDirection();
 
-	/**
+	
+
+/**
 	 * Sets / Gets the direction flag on the parameter, indicating the semantics of how that data the parameter represents is entering the behavior.
 	*/
 	public void setDirection( /* ParameterDirectionKind */ int value );
 
-	/**
+	
+
+/**
 	 * Sets / Gets the expression that holds the default initialization for the parameter.
 	*/
 	public IExpression getDefault();
 
-	/**
+	
+
+/**
 	 * Sets / Gets the expression that holds the default initialization for the parameter.
 	*/
 	public void setDefault( IExpression exp );
 
-	/**
+	
+
+/**
 	 * Sets / Gets the name of the Parameter.
 	*/
 	public String getName();
 
-	/**
+	
+
+/**
 	 * Sets / Gets the name of the Parameter.
 	*/
 	public void setName( String value );
 
-	/**
+	
+
+/**
 	 * Set the type via a name that will be resolved into a Classifier.
 	*/
 	public void setType2( String value );
 
-	/**
+	
+
+/**
 	 * Retrieves the BehavioralFeature this parameter is a part of.
 	*/
 	public IBehavioralFeature getBehavioralFeature();
 
-	/**
+	
+
+/**
 	 * Retrieves the Behavior this parameter is a part of.
 	*/
 	public IBehavior getBehavior();
 
-	/**
+	
+
+/**
 	 * The name of the Classifier who specifies this Parameter's type.
 	*/
 	public String getTypeName();
 
-	/**
+	
+
+/**
 	 * The name of the Classifier who specifies this Parameter's type.
 	*/
 	public void setTypeName( String value );
 
-	/**
+	
+
+/**
 	 * The default parameter initializer. Easy access to the body property of the Expression.
 	*/
 	public String getDefault2();
 
-	/**
+	
+
+/**
 	 * The default parameter initializer. Easy access to the body property of the Expression.
 	*/
 	public void setDefault2( String value );
 
-	/**
+	
+
+/**
 	 * The default parameter initializer. Easy access to the body property of the Expression.
 	*/
 	public String getDefault3();
 
-	/**
+	
+
+/**
 	 * The default parameter initializer. Easy access to the body property of the Expression.
 	*/
 	public void setDefault3( String lang, String body );
 
-	/**
+	
+
+/**
 	 * Specifies extra semantics associated with the Parameter.
 	*/
 	public int getParameterKind();
 
-	/**
+	
+
+/**
 	 * Specifies extra semantics associated with the Parameter.
 	*/
 	public void setParameterKind( /* ParameterSemanticsKind */ int value );

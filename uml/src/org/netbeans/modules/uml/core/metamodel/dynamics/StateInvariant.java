@@ -56,7 +56,9 @@ public class StateInvariant extends InteractionFragment
     implements IStateInvariant
 {
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IStateInvariant#getInvariant()
      */
     public IConstraint getInvariant()
@@ -66,7 +68,9 @@ public class StateInvariant extends InteractionFragment
                     this, "UML:StateInvariant.invariant/*", IConstraint.class );
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IStateInvariant#setInvariant(org.netbeans.modules.uml.core.metamodel.core.foundation.IConstraint)
      */
     public void setInvariant(IConstraint cons)
@@ -76,7 +80,9 @@ public class StateInvariant extends InteractionFragment
                     cons   );
     }
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.VersionableElement#establishNodePresence(org.dom4j.Document, org.dom4j.Node)
      */
     public void establishNodePresence(Document doc, Node node)

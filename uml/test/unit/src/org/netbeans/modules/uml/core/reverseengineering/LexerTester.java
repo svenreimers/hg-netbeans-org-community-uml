@@ -44,11 +44,8 @@
 
 
 
-/*
- * File       : LexerTester.java
- * Created on : Feb 3, 2004
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.reverseengineering;
 
 import java.io.BufferedReader;
@@ -121,7 +118,9 @@ public class LexerTester<Lexer extends TokenStream>
         }
     }
 
-    /**
+    
+
+/**
      * 
      */
     private void initializeMap(String tokenFile)

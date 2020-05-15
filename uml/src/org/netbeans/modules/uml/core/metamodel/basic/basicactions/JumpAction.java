@@ -54,7 +54,9 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.ElementCollector;
 public class JumpAction extends PrimitiveAction implements IJumpAction
 {
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.basic.basicactions.IJumpAction#getJumpValue()
      */
     public IInputPin getJumpValue()
@@ -63,7 +65,9 @@ public class JumpAction extends PrimitiveAction implements IJumpAction
         return collector.retrieveSingleElement(this, "UML:Element.ownedElement/UML:InputPin", IInputPin.class);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.basic.basicactions.IJumpAction#setJumpValue(org.netbeans.modules.uml.core.metamodel.basic.basicactions.IInputPin)
      */
     public void setJumpValue(IInputPin pPin)

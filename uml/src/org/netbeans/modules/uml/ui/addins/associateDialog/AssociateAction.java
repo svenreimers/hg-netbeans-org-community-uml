@@ -42,11 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * DiagramCreatorAction.java
- *
- * Created on January 7, 2005, 10:38 AM
- */
+
+
 
 package org.netbeans.modules.uml.ui.addins.associateDialog;
 
@@ -69,7 +66,8 @@ import org.openide.util.actions.CookieAction;
 public class AssociateAction extends CookieAction
 {
     
-    /**
+    
+/**
      * Creates a new instance of AssociateAction
      */
     public AssociateAction()

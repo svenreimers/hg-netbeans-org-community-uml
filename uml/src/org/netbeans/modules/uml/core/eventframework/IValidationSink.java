@@ -45,6 +45,7 @@
 
 package org.netbeans.modules.uml.core.eventframework;
 
+
 /**
  * <p>Title: </p>
  * <p>Description: </p>

@@ -49,37 +49,51 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElement;
 
 public interface IParameterableElement extends INamedElement
 {
-	/**
+	
+
+/**
 	 * property Default
 	*/
 	public IParameterableElement getDefaultElement();
 
-	/**
+	
+
+/**
 	 * property Default
 	*/
 	public void setDefaultElement( IParameterableElement element );
 
-	/**
+	
+
+/**
 	 * property Default
 	*/
 	public void setDefaultElement2( String newVal );
 
-	/**
+	
+
+/**
 	 * property Template
 	*/
 	public IClassifier getTemplate();
 
-	/**
+	
+
+/**
 	 * property Template
 	*/
 	public void setTemplate( IClassifier value );
 
-	/**
+	
+
+/**
 	 * Name of the meta type that must be used when instantiating the template.
 	*/
 	public String getTypeConstraint();
 
-	/**
+	
+
+/**
 	 * Name of the meta type that must be used when instantiating the template.
 	*/
 	public void setTypeConstraint( String value );

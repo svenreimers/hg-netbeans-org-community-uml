@@ -43,11 +43,13 @@
  */
 
 
+
 /*
  *
  * Created on Jul 1, 2003
  */
 package org.netbeans.modules.uml.ui.support.commondialogs;
+
 
 /**
  * Specifies the valid message dialog types.  These can be used when creating

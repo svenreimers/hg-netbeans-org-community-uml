@@ -42,11 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : RoundTripEventPayload.java
- * Created on : Nov 10, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.roundtripframework;
 
 import org.netbeans.modules.uml.core.eventframework.EventPayload;
@@ -61,7 +58,9 @@ public class RoundTripEventPayload
     protected Object m_Data = null;
     protected ETList<IChangeRequest> m_Reqs = null;
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRoundTripEventPayload#getChangeRequests()
      */
     public ETList<IChangeRequest> getChangeRequests()
@@ -69,7 +68,9 @@ public class RoundTripEventPayload
         return m_Reqs;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRoundTripEventPayload#getData()
      */
     public Object getData()
@@ -77,7 +78,9 @@ public class RoundTripEventPayload
         return m_Data;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRoundTripEventPayload#setChangeRequests(org.netbeans.modules.uml.core.roundtripframework.IChangeRequest[])
      */
     public void setChangeRequests(ETList<IChangeRequest> requests)
@@ -85,7 +88,9 @@ public class RoundTripEventPayload
         m_Reqs = requests;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IRoundTripEventPayload#setData(java.lang.Object)
      */
     public void setData(Object value)

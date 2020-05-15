@@ -42,11 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : Clause.java
- * Created on : Sep 18, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.metamodel.common.commonactions;
 
 import org.dom4j.Document;
@@ -67,7 +64,8 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 public class Clause extends Element implements IClause
 {
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactions.IClause#addPredecessor(org.netbeans.modules.uml.core.metamodel.common.commonactions.IClause)
      */
     public void addPredecessor(final IClause pClause)
@@ -83,7 +81,9 @@ public class Clause extends Element implements IClause
         );        
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactions.IClause#addSuccessor(org.netbeans.modules.uml.core.metamodel.common.commonactions.IClause)
      */
     public void addSuccessor(final IClause pClause)
@@ -99,7 +99,9 @@ public class Clause extends Element implements IClause
         );
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactions.IClause#addToBody(org.netbeans.modules.uml.core.metamodel.basic.basicactions.IAction)
      */
     public void addToBody(IAction pAction)
@@ -107,7 +109,9 @@ public class Clause extends Element implements IClause
         addChild("UML:Clause.body","UML:Clause.body", pAction);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactions.IClause#addToTest(org.netbeans.modules.uml.core.metamodel.basic.basicactions.IAction)
      */
     public void addToTest(IAction pAction)
@@ -115,7 +119,9 @@ public class Clause extends Element implements IClause
         addChild("UML:Clause.test","UML:Clause.test", pAction);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactions.IClause#getBody()
      */
     public ETList<IAction> getBody()
@@ -125,7 +131,9 @@ public class Clause extends Element implements IClause
 
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactions.IClause#getPredecessors()
      */
     public ETList<IClause> getPredecessors()
@@ -134,7 +142,9 @@ public class Clause extends Element implements IClause
             .retrieveElementCollectionWithAttrIDs(this, "predecessorClause", IClause.class);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactions.IClause#getSuccessors()
      */
     public ETList<IClause> getSuccessors()
@@ -143,7 +153,9 @@ public class Clause extends Element implements IClause
             .retrieveElementCollectionWithAttrIDs(this, "successorClause", IClause.class);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactions.IClause#getTest()
      */
     public ETList<IAction> getTest()
@@ -152,7 +164,9 @@ public class Clause extends Element implements IClause
             .retrieveElementCollection((IClause)this, "UML:Clause.test/*", IAction.class);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactions.IClause#getTestOutput()
      */
     public IValueSpecification getTestOutput()
@@ -162,7 +176,9 @@ public class Clause extends Element implements IClause
 
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactions.IClause#removeFromBody(org.netbeans.modules.uml.core.metamodel.basic.basicactions.IAction)
      */
     public void removeFromBody(IAction pAction)
@@ -170,7 +186,9 @@ public class Clause extends Element implements IClause
         UMLXMLManip.removeChild(m_Node, pAction );
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactions.IClause#removeFromTest(org.netbeans.modules.uml.core.metamodel.basic.basicactions.IAction)
      */
     public void removeFromTest(IAction pAction)
@@ -178,7 +196,9 @@ public class Clause extends Element implements IClause
         UMLXMLManip.removeChild(m_Node, pAction );
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactions.IClause#removePredecessor(org.netbeans.modules.uml.core.metamodel.common.commonactions.IClause)
      */
     public void removePredecessor(final IClause pClause)
@@ -193,7 +213,9 @@ public class Clause extends Element implements IClause
         );
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactions.IClause#removeSuccessor(org.netbeans.modules.uml.core.metamodel.common.commonactions.IClause)
      */
     public void removeSuccessor(final IClause pClause)
@@ -208,7 +230,9 @@ public class Clause extends Element implements IClause
         );
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactions.IClause#setTestOutput(org.netbeans.modules.uml.core.metamodel.core.foundation.IValueSpecification)
      */
     public void setTestOutput(IValueSpecification pValSpec)

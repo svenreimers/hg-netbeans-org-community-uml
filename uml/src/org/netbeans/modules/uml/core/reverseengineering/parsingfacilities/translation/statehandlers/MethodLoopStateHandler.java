@@ -43,11 +43,8 @@
  */
 
 
-/*
- * File       : MethodLoopStateHandler.java
- * Created on : Dec 11, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.statehandlers;
 
 import org.dom4j.Node;
@@ -146,7 +143,7 @@ public class MethodLoopStateHandler extends MethodCompositeStateHandler
         }
         else if(m_IsInInitialize)
         {
-            //Kris - issue 78409 - the pOptions was a dead call. The addInitializerState
+            
             //seemed to correctly add the new StateHandler to the stack, but then
             //this (MehodLoopStateHandler) was returned. So added the call to
             //retrieveStatementHandler to retrieve the handler created to handle the 

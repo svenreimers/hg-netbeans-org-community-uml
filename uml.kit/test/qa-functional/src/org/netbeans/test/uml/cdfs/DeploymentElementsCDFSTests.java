@@ -103,7 +103,9 @@ public class DeploymentElementsCDFSTests extends UMLTestCase {
         }
         
         //checking diagram node was created
-            /*
+            
+
+/*
             if (!util.nodeExists(DIA_PATH)){
                eventTool.waitNoEvent(5000);
                 fail("testCDFSArtifact verification failed");
@@ -133,7 +135,9 @@ public class DeploymentElementsCDFSTests extends UMLTestCase {
         }
         
         //checking diagram node was created
-            /*
+            
+
+/*
             if (!util.nodeExists(DIA_PATH)){
                eventTool.waitNoEvent(5000);
                 fail("testCDFSComponent verification failed");
@@ -164,7 +168,9 @@ public class DeploymentElementsCDFSTests extends UMLTestCase {
         }
         
         //checking diagram node was created
-            /*
+            
+
+/*
             if (!util.nodeExists(DIA_PATH)){
                eventTool.waitNoEvent(5000);
                 fail("testCDFSStateAborted verification failed");
@@ -194,7 +200,9 @@ public class DeploymentElementsCDFSTests extends UMLTestCase {
         }
         
         //checking diagram node was created
-            /*
+            
+
+/*
             if (!util.nodeExists(DIA_PATH)){
                eventTool.waitNoEvent(5000);
                 fail("testCDFSNode verification failed");

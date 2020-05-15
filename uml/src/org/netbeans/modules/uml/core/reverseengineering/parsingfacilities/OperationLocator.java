@@ -67,7 +67,9 @@ public class OperationLocator extends LocatorEvaluator<MethodDeclaration>
         m_DesiredParameters = arguments;
     }
     
-    /**
+    
+
+/**
      * Searches a specific class for a method declaration.
      *
      * @param pClass [in] The class to search.
@@ -110,7 +112,9 @@ public class OperationLocator extends LocatorEvaluator<MethodDeclaration>
         return false;
     }
 
-    /**
+    
+
+/**
      * Checks if the paramters of an operation are the same as the operation
      * that we are trying to locate.
      *
@@ -166,7 +170,9 @@ public class OperationLocator extends LocatorEvaluator<MethodDeclaration>
         return false;
     }
 
-    /**
+    
+
+/**
      * Checks if two paramters are the same data type.  The generatlization
      * tree of the actual paramter will be check it both paramters are from 
      * the same generalization tree.
@@ -213,7 +219,9 @@ public class OperationLocator extends LocatorEvaluator<MethodDeclaration>
 
     }
 
-    /**
+    
+
+/**
      * Checks if the specified class is the java class "java.lang.Object".
      * The check is used when determining if two class are the same.  Since
      * all java classes decend from java.lang.Object then all class are 
@@ -229,7 +237,9 @@ public class OperationLocator extends LocatorEvaluator<MethodDeclaration>
             || "java::lang::Object".equals(testClass);
     }
 
-    /**
+    
+
+/**
      * Retrieves the short class name of the specified type.  For example:
      * java::lang::Object -> Object.
      * 
@@ -285,7 +295,9 @@ public class OperationLocator extends LocatorEvaluator<MethodDeclaration>
         return null;
     }
 
-    /**
+    
+
+/**
      * Retrieves the short class name of the specified type.  For example:
      * java::lang::Object -> Object.
      * 

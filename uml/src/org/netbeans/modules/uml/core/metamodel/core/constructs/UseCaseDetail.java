@@ -63,7 +63,8 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 public class UseCaseDetail extends NamedElement implements IUseCaseDetail
 {
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.constructs.IUseCaseDetail#addSubDetail(org.netbeans.modules.uml.core.metamodel.core.constructs.IUseCaseDetail)
      */
     public void addSubDetail(final IUseCaseDetail subDetail)
@@ -83,7 +84,9 @@ public class UseCaseDetail extends NamedElement implements IUseCaseDetail
 
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.constructs.IUseCaseDetail#createSubDetail()
      */
     public IUseCaseDetail createSubDetail()
@@ -93,7 +96,9 @@ public class UseCaseDetail extends NamedElement implements IUseCaseDetail
         return retriever.createType("UseCaseDetail");
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.constructs.IUseCaseDetail#getBody()
      */
     public String getBody()
@@ -101,7 +106,9 @@ public class UseCaseDetail extends NamedElement implements IUseCaseDetail
         return XMLManip.retrieveNodeTextValue(m_Node,"UML:UseCaseDetail.body");
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.constructs.IUseCaseDetail#getParentDetail()
      */
     public IUseCaseDetail getParentDetail()
@@ -110,7 +117,9 @@ public class UseCaseDetail extends NamedElement implements IUseCaseDetail
         return col.retrieveSingleElementWithAttrID(this, "parent", IUseCaseDetail.class);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.constructs.IUseCaseDetail#getSubDetails()
      */
     public ETList <IUseCaseDetail> getSubDetails()
@@ -123,7 +132,9 @@ public class UseCaseDetail extends NamedElement implements IUseCaseDetail
 
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.constructs.IUseCaseDetail#removeSubDetail(org.netbeans.modules.uml.core.metamodel.core.constructs.IUseCaseDetail)
      */
     public void removeSubDetail(final IUseCaseDetail subDetail)
@@ -141,7 +152,9 @@ public class UseCaseDetail extends NamedElement implements IUseCaseDetail
 
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.constructs.IUseCaseDetail#setBody(java.lang.String)
      */
     public void setBody(String body)
@@ -152,7 +165,9 @@ public class UseCaseDetail extends NamedElement implements IUseCaseDetail
 
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.constructs.IUseCaseDetail#setParentDetail(org.netbeans.modules.uml.core.metamodel.core.constructs.IUseCaseDetail)
      */
     public void setParentDetail(final IUseCaseDetail parentDetail)

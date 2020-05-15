@@ -74,14 +74,18 @@ public class IDEIntegrationModule  extends ModuleInstall
      */
     private static final long serialVersionUID = 1L;
     public static final int CLOSE_UNINSTALL  = 0;
-    /**
+    
+
+/**
      *  The id of NetBeans' Save All action, which we need to override to
      *  save the workspace as well.
      */
     
     private static final String SAVE_ALL_ID =
         "org-openide-actions-SaveAllAction";
-    /* NB60TBD
+    
+
+/* NB60TBD
     private static NBEventProcessor eventProcessor =
         new NBEventProcessor();
     */
@@ -170,7 +174,9 @@ public class IDEIntegrationModule  extends ModuleInstall
         init();
     }
     
-    /**
+    
+
+/**
      * Installs the menu items used by Describe integration.  If the menu items
      * already exist in NetBeans then the menu items are not installed again.
      */
@@ -257,7 +263,9 @@ public class IDEIntegrationModule  extends ModuleInstall
 //		        return rep;
 //	}
     
-    /**
+    
+
+/**
      * Update the file menu. Here we overwrite the Save and SaveAll action of the editor
      */
 //    private void updateFileMenu(DataFolder fileMenu) throws IOException {
@@ -346,7 +354,9 @@ public class IDEIntegrationModule  extends ModuleInstall
 //        super.validate();
 //    }
 
-    /* NB60TBD
+    
+
+/* NB60TBD
     public static NBEventProcessor getEventProcessor()
     {
         return eventProcessor;

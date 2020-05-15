@@ -46,7 +46,9 @@ package org.netbeans.modules.uml.core.reverseengineering.reframework.parsingfram
 
 public interface ITokenFilter
 {
-	/**
+	
+
+/**
 	 * Determines if the token should be sent to the token processor.
 	*/
 	public boolean isTokenValid( String tokenType, String stateName, String language );

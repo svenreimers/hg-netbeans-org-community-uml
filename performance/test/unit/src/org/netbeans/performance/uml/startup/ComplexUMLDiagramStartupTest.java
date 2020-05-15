@@ -48,6 +48,7 @@ package org.netbeans.performance.uml.startup;
 import java.io.IOException;
 import org.netbeans.modules.performance.utilities.MeasureStartupTimeTestCase;
 
+
 /**
  * Measure startup time by org.netbeans.core.perftool.StartLog.
  * Number of starts with new userdir is defined by property
@@ -61,14 +62,16 @@ import org.netbeans.modules.performance.utilities.MeasureStartupTimeTestCase;
  */
 public class ComplexUMLDiagramStartupTest extends MeasureStartupTimeTestCase {
     
-    /** Define testcase
+    
+/** Define testcase
      * @param testName name of the testcase
      */
     public ComplexUMLDiagramStartupTest(String testName) {
         super(testName);
     }
     
-    /** Testing start of IDE with measurement of the startup time.
+    
+/** Testing start of IDE with measurement of the startup time.
      * @throws IOException
      */
     public void testStartIDE() throws java.io.IOException {

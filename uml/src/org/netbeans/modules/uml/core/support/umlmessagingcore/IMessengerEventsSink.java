@@ -48,7 +48,9 @@ import org.netbeans.modules.uml.core.support.umlsupport.IResultCell;
 
 public interface IMessengerEventsSink
 {
-	/**
+	
+
+/**
 	 * Notifies the listener that a message was added.
 	*/
 	public void onMessageAdded( IMessageData pMessage, IResultCell cell );

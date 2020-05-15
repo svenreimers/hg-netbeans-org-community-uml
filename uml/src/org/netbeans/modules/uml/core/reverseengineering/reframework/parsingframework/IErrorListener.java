@@ -46,7 +46,9 @@ package org.netbeans.modules.uml.core.reverseengineering.reframework.parsingfram
 
 public interface IErrorListener
 {
-	/**
+	
+
+/**
 	 * The OnError event is fired when the parser encounters an parse error in the source file.
 	*/
 	public void onError( IErrorEvent error );

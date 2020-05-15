@@ -55,22 +55,26 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.IPresentationElem
 public interface IPresentationElementToDeleteAction extends IDelayedAction//, IExecutableAction 
 {
 
-	/*
+	
+/*
 	 * Returns the element to delete.
 	 */
 	IPresentationElement getPresentationElement();
 
-	/*
+	
+/*
 	 * Sets the element to delete.
 	 */
 	public void setPresentationElement(IPresentationElement pPE);
 
-	/*
+	
+/*
 	 * Returns the element to delete.
 	 */
 //	public TSGraphObject getGraphObject();
 
-	/*
+	
+/*
 	 * sets the element to delete.
 	 */
 //	public void setGraphObject(TSGraphObject graphObject);

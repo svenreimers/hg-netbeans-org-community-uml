@@ -141,7 +141,9 @@ public class BasicPullDownButtonBorder extends AbstractBorder
       return newInsets;
    }
 
-   /**
+   
+
+/**
     * This draws a variant "Flush 3D Border"
     * It is used for things like pressed buttons.
     */
@@ -169,7 +171,9 @@ public class BasicPullDownButtonBorder extends AbstractBorder
       }
    }
 
-   /**
+   
+
+/**
          * This draws the "Flush 3D Border" which is used throughout the Metal L&F
          */
    static void drawFlush3DBorder(Graphics g, int x, int y, int w, int h)

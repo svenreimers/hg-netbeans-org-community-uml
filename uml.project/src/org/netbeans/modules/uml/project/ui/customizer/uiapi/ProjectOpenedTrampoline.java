@@ -46,6 +46,7 @@ package org.netbeans.modules.uml.project.ui.customizer.uiapi;
 
 import org.netbeans.spi.project.ui.ProjectOpenedHook;
 
+
 /**
  * Permits {@link ProjectOpenedHook} methods to be called from a different package.
  */

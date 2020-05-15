@@ -77,6 +77,7 @@ import org.netbeans.test.umllib.util.LibProperties;
 
 
 
+
 /**
  * 
  * @spec UML/ComponentDiagram.xml

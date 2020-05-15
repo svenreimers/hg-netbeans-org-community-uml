@@ -97,7 +97,9 @@ public class UsecaseOperator extends DiagramElementOperator{
         CompartmentOperator mainComp = new CompartmentOperator(this, CompartmentTypes.EXTENSION_POINTS_LIST_COMPARTMENT);
         ArrayList<CompartmentOperator> extPoints = mainComp.getCompartments();
          return null;
-            /*if (extPoints!=null && extPoints.size()>index){
+            
+
+/*if (extPoints!=null && extPoints.size()>index){
                 return extPoints.get(index);
             }else{
                 throw new NotFoundException("Compartment with index "+index+" not found.");

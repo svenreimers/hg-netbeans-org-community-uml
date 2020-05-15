@@ -51,7 +51,8 @@ import java.util.logging.Logger;
 public class UMLLogger {
     public static final Logger umlLogger = Logger.getLogger("org.netbeans.modules.uml"); 
     
-    /**
+    
+/**
      * Log a given exception using the default logger named org.netbeans.modules.uml
      * @param ex An exception to be logged.   
      * @param messgLevel One of the message level identifiers (e.g Level.WARNING)
@@ -62,7 +63,9 @@ public class UMLLogger {
         umlLogger.log(messgLevel, mesg != null ? mesg : "", ex);
     }
     
-    /**
+    
+
+/**
      * Log a given exception using a logger with a given name.
      * @param loggerName  A name for the logger. This should be a dot-separated 
      * name and should represent the package name or class name.  (e.g. org.netbeans.module.uml.ui.drawingarea)
@@ -75,7 +78,9 @@ public class UMLLogger {
         Logger.getLogger(loggerName).log(messgLevel, mesg != null ? mesg : "", ex);
     }
     
-    /**
+    
+
+/**
      * Log a given exception using a given logger
      * @param logger  A predefined logger
      * @param ex An exception to be logged.   
@@ -88,7 +93,9 @@ public class UMLLogger {
     }
     
     
-   /**
+   
+
+/**
      * Log a given message using the default logger named org.netbeans.modules.uml
      * @param message A message to be logged.   
      * @param messgLevel One of the message level identifiers (e.g Level.WARNING)
@@ -98,7 +105,9 @@ public class UMLLogger {
         umlLogger.log(messgLevel, message != null ? message : "");
     }
     
-    /**
+    
+
+/**
      * Log a given message using a logger with a given name.
      * @param loggerName  A name for the logger. This should be a dot-separated 
      * name and should represent the package name or class name.  (e.g. org.netbeans.module.uml.ui.drawingarea)
@@ -110,7 +119,9 @@ public class UMLLogger {
         Logger.getLogger(loggerName).log(messgLevel, message != null ? message : "");
     }
     
-    /**
+    
+
+/**
      * Log a given message using a given logger
      * @param logger  A predefined logger
      * @param message A message to be logged.   

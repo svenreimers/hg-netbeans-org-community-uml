@@ -56,7 +56,9 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.UMLXMLManip;
 
 public class UMLBinding extends DirectedRelationship implements IUMLBinding
 {
-	/**
+	
+
+/**
 	 * property Formal
 	*/
 	public IParameterableElement getFormal()
@@ -65,14 +67,18 @@ public class UMLBinding extends DirectedRelationship implements IUMLBinding
 		return collector.retrieveSingleElementWithAttrID(this,"formal", IParameterableElement.class);		
 	}
 
-	/**
+	
+
+/**
 	 * property Formal
 	*/
 	public void setFormal( IParameterableElement formal )
 	{
 		setElement(formal,"formal");
 	}
-	/**
+	
+
+/**
 	 * Sets the formal parameter via name.
 	 * 
 	 * @param newVal[in]    The name of the parameter
@@ -92,7 +98,9 @@ public class UMLBinding extends DirectedRelationship implements IUMLBinding
 			}
 	}
 
-	/**
+	
+
+/**
 	 * property Actual
 	*/
 	public IParameterableElement getActual()
@@ -101,14 +109,18 @@ public class UMLBinding extends DirectedRelationship implements IUMLBinding
 		return collector.retrieveSingleElementWithAttrID(this,"actual", IParameterableElement.class);			
 	}
 
-	/**
+	
+
+/**
 	 * property Actual
 	*/
 	public void setActual( IParameterableElement actual )
 	{
 		setElement(actual,"actual");
 	}
-	/**
+	
+
+/**
 	 * Sets the actual parameter via a name
 	 * 
 	 * @param newVal[in] The name
@@ -128,7 +140,9 @@ public class UMLBinding extends DirectedRelationship implements IUMLBinding
 			}
 	}
 	
-	/**
+	
+
+/**
 	 * Establishes the appropriate XML elements for this UML type.
 	 *
 	 * [in] The document where this element will reside

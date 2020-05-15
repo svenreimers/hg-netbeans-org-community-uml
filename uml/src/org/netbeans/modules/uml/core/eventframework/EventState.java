@@ -59,7 +59,9 @@ public class EventState {
 		super();
 	}
 
-	/**
+	
+
+/**
 	 * The constructor for EventState. Handles the call to the dispatcher's
 	 * PushEventContext() function.
 	 */
@@ -72,7 +74,9 @@ public class EventState {
 	   }
 	}
 
-	/**
+	
+
+/**
 	 * Pushes the passed-in context onto the passed-in dispatcher.
 	 *
 	 * @param dispatcher[in]   The dispatcher to push the context onto

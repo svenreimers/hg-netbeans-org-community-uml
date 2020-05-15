@@ -50,32 +50,44 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 public interface IConnectableElement extends INamedElement
 {
-	/**
+	
+
+/**
 	 * method AddEnd
 	*/
 	public void addEnd( IConnectorEnd pConnector );
 
-	/**
+	
+
+/**
 	 * method RemoveEnd
 	*/
 	public void removeEnd( IConnectorEnd pConnector );
 
-	/**
+	
+
+/**
 	 * property Ends
 	*/
 	public ETList<IConnectorEnd> getEnds();
 
-	/**
+	
+
+/**
 	 * method AddRoleContext
 	*/
 	public void addRoleContext( IStructuredClassifier pClassifier );
 
-	/**
+	
+
+/**
 	 * method RemoveRoleContext
 	*/
 	public void removeRoleContext( IStructuredClassifier pClassifier );
 
-	/**
+	
+
+/**
 	 * property RoleContexts
 	*/
 	public ETList<IStructuredClassifier> getRoleContexts();

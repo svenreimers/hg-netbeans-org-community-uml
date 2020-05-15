@@ -85,7 +85,9 @@ public class Language implements ILanguage
     private List < CollectionType > collectionTypes = null;
     
     
-    /**
+    
+
+/**
      * Gets the name of the language that is represented by the ILanguage interface.
      *
      * @param pVal [out] The name of the language
@@ -95,7 +97,9 @@ public class Language implements ILanguage
         return m_Name;
     }
     
-    /**
+    
+
+/**
      * Sets the name of the language that is represented by the ILanguage interface.
      *
      * @param newVal [int] The name of the language
@@ -105,7 +109,9 @@ public class Language implements ILanguage
         m_Name = newVal;
     }
     
-    /**
+    
+
+/**
      * Retrieves the data types that are supported by the language.
      *
      * @param pVal [out] The datatypes
@@ -115,7 +121,9 @@ public class Language implements ILanguage
         return m_DataTypes;
     }
     
-    /**
+    
+
+/**
      * Sets the data types that are supported by the language.
      *
      * @param newVal [int] The datatypes
@@ -125,7 +133,9 @@ public class Language implements ILanguage
         m_DataTypes = newVal;
     }
     
-    /**
+    
+
+/**
      * Gets the syntax that defines the language.  A syntax is made up of a
      * collection of tokens that together define the syntax.
      *
@@ -136,7 +146,9 @@ public class Language implements ILanguage
         return m_Syntax;
     }
     
-    /**
+    
+
+/**
      * Sets the syntax that defines the language.  A syntax is made up of a
      * collection of tokens that together define the syntax.
      *
@@ -147,7 +159,9 @@ public class Language implements ILanguage
         m_Syntax = newVal;
     }
     
-    /**
+    
+
+/**
      * Gets the code generation scripts that will generate source code for the langauge.
      *
      * @param pVal [out] The scripts
@@ -157,7 +171,9 @@ public class Language implements ILanguage
         return m_Scripts;
     }
     
-    /**
+    
+
+/**
      * Sets the code generation scripts that will generate source code for the langauge.
      *
      * @param newVal [in] The scripts
@@ -167,7 +183,9 @@ public class Language implements ILanguage
         m_Scripts = newVal;
     }
     
-    /**
+    
+
+/**
      * Retrieve the ILanguageParser for the specified parser type.
      *
      * @param type [in] The parser type
@@ -196,7 +214,9 @@ public class Language implements ILanguage
         return retVal;
     }
     
-    /**
+    
+
+/**
      * The registry information that is retrieved from layer files to build
      * the list of actions supported by this node.
      *
@@ -262,7 +282,9 @@ public class Language implements ILanguage
         return retVal;
     }
     
-    /**
+    
+
+/**
      * Add a CLSID that implements the ILangaugeParser interface.  The parser
      * will be used to parse files written in the defined langauge.
      *
@@ -275,7 +297,9 @@ public class Language implements ILanguage
         m_ParserMap.put(type, clsid);
     }
     
-    /**
+    
+
+/**
      * Retrieves the CLSID of the parser for the specified parser type.
      *
      * @param type [in] The parser type
@@ -291,7 +315,9 @@ public class Language implements ILanguage
         return retVal;
     }
     
-    /**
+    
+
+/**
      * Adds a new context to the the language.  Contexts are used by other
      * components to perform langauge specific operations.  The interface
      * for each context is defined by the component.
@@ -306,7 +332,9 @@ public class Language implements ILanguage
         m_ContextMap.put(name, clsid);
     }
     
-    /**
+    
+
+/**
      * Retrieves the CLSID for a context. Contexts are used by other components
      * to perform langauge specific operations.  The interface for each context is
      * defined by the component.
@@ -328,7 +356,9 @@ public class Language implements ILanguage
         return retVal;
     }
     
-    /**
+    
+
+/**
      * Retrieves the type used when creating a new attribute.
      *
      * @param pVal [out] The default data type for new attributes
@@ -338,7 +368,9 @@ public class Language implements ILanguage
         return m_AttributeDefaultType;
     }
     
-    /**
+    
+
+/**
      * Sets the type used when creating a new attribute.
      *
      * @param newVal [in] The default data type for new attributes
@@ -348,7 +380,9 @@ public class Language implements ILanguage
         m_AttributeDefaultType = newVal;
     }
     
-    /**
+    
+
+/**
      * Retrieves the type used when creating a new operation.
      * @param pVal [out] The default data type for new operations
      */
@@ -357,7 +391,9 @@ public class Language implements ILanguage
         return m_OperationDefaultType;
     }
     
-    /**
+    
+
+/**
      * Sets the type used when creating a new operation.
      * @param newVal [in] The default data type for new operations
      */
@@ -366,7 +402,9 @@ public class Language implements ILanguage
         m_OperationDefaultType = newVal;
     }
     
-    /**
+    
+
+/**
      * Is the given string the name of a predefined date type?
      * These data types are defined in the Languages.etc file.
      *
@@ -386,7 +424,9 @@ public class Language implements ILanguage
         return retVal;
     }
     
-    /**
+    
+
+/**
      * Is the given string the name of a primitve date type?
      * These data types are defined in the Languages.etc file.
      *
@@ -410,7 +450,9 @@ public class Language implements ILanguage
         return retVal;
     }
     
-    /**
+    
+
+/**
      * Is the given string a reserved word in this language?
      * These reserved tokens are defined in the Languages.etc file.
      *
@@ -434,7 +476,9 @@ public class Language implements ILanguage
         return retVal;
     }
     
-    /**
+    
+
+/**
      * Get the data type by its name.
      *
      * @param sName[in] The datatype name to look for
@@ -460,7 +504,9 @@ public class Language implements ILanguage
         return retVal;
     }
     
-    /**
+    
+
+/**
      * Get the token by its name.
      *
      * @param sName[in] The token name to look for
@@ -492,7 +538,9 @@ public class Language implements ILanguage
         return retVal;
     }
     
-    /**
+    
+
+/**
      * Adds a new library to the language definition.
      *
      * @param name [in] The name of the library
@@ -504,7 +552,9 @@ public class Language implements ILanguage
         m_LibraryMap.put(name, definitionFile);
     }
     
-    /**
+    
+
+/**
      * Retrieve a library definition from the language definition.  If
      * the language definition is not registered with the language
      * definition then an empty string is returned.
@@ -526,7 +576,9 @@ public class Language implements ILanguage
         return retVal;
     }
     
-    /**
+    
+
+/**
      * Retrieve all of the libraries that are registered with the
      * langauge definition.
      *
@@ -550,7 +602,9 @@ public class Language implements ILanguage
         return retVal;
     }
     
-    /**
+    
+
+/**
      * Sets the DOM node that specifies how to format a
      * model elments data.  The content of the DOM node allow
      * Describe to display Model Element in a language specific
@@ -563,7 +617,9 @@ public class Language implements ILanguage
         m_FormatDefinition = newVal;
     }
     
-    /**
+    
+
+/**
      * Retrieve the DOM node that specifies how to format a
      * model elements data.  The content of the DOM node allow
      * Describe to display Model Element in a language specific
@@ -586,7 +642,9 @@ public class Language implements ILanguage
         return retVal;
     }
     
-    /**
+    
+
+/**
      *
      * Retrieves the collection of ExpansionVariables that are used to override
      * the default variables for this Language
@@ -601,7 +659,9 @@ public class Language implements ILanguage
         return m_OverrideVariables;
     }
     
-    /**
+    
+
+/**
      * @see get_ExpansionVariables()
      */
     public void setExpansionVariables(ETList<IExpansionVariable> newVal)
@@ -609,7 +669,9 @@ public class Language implements ILanguage
         m_OverrideVariables = newVal;
     }
     
-    /**
+    
+
+/**
      * Returns a default setting
      *
      * @param name[in] name of the default setting
@@ -625,7 +687,9 @@ public class Language implements ILanguage
         return retVal;
     }
     
-    /**
+    
+
+/**
      * Creates/Sets a default setting named @name and with a value of @value
      *
      * @param name[in] the name of the default setting
@@ -641,7 +705,9 @@ public class Language implements ILanguage
         }
     }
     
-    /**
+    
+
+/**
      * Returns the default source file extension for a language.
      *
      * @param extension[out] the default extension
@@ -708,7 +774,9 @@ public class Language implements ILanguage
     {
     }
     
-    /**
+    
+
+/**
      * Sets the languages collection types.
      *
      * @param types the list of collection types.
@@ -731,7 +799,9 @@ public class Language implements ILanguage
         }
     }
     
-    /**
+    
+
+/**
      * Gets the languages collection types.
      *
      * @return types the list of collection types.
@@ -741,7 +811,9 @@ public class Language implements ILanguage
         return collectionTypes;
     }
     
-    /**
+    
+
+/**
      * Checks if a type is a collection type.
      *
      * @param typeName the type to check.

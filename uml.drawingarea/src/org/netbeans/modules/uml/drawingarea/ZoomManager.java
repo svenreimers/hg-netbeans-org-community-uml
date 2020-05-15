@@ -75,6 +75,7 @@ import org.netbeans.modules.uml.drawingarea.view.DesignerScene;
 import org.netbeans.modules.uml.drawingarea.view.DesignerTools;
 import org.openide.util.Utilities;
 
+
 /**
  * Manages the zoom level for a particular Scene instance.
  *
@@ -87,7 +88,9 @@ public class ZoomManager implements Scene.SceneListener {
     public static final int MIN_ZOOM_PERCENT = 1;
     /** The maximum zoom percent value. */
     public static final int MAX_ZOOM_PERCENT = 1600;
-    /** Point at which the zoom increments/decrements more or less
+    
+
+/** Point at which the zoom increments/decrements more or less
      * (less below the threshold, more above the threshold). */
     private static final int ZOOM_STEP_THRESHOLD = DEFAULT_ZOOM_PERCENT;
     /** Small zoom increment, when below the threshold. */
@@ -104,7 +107,9 @@ public class ZoomManager implements Scene.SceneListener {
     private Cursor zoomCursor;
     private Cursor zoomStopCursor;
 
-    /**
+    
+
+/**
      * Creates a new instance of ZoomManager.
      *
      * @param  scene  the scene to be managed.
@@ -115,7 +120,9 @@ public class ZoomManager implements Scene.SceneListener {
         listeners = new EventListenerList();
     }
 
-    /**
+    
+
+/**
      * Adds the given listener to this manager instance. It will be notified
      * when the zoom value is changed.
      *
@@ -125,7 +132,9 @@ public class ZoomManager implements Scene.SceneListener {
         listeners.add(ZoomListener.class, listener);
     }
 
-    /**
+    
+
+/**
      * Adds zoom actions to the given toolbar (no separators are added).
      *
      * @param  toolbar  to which the actions are added.
@@ -143,7 +152,9 @@ public class ZoomManager implements Scene.SceneListener {
         toolbar.add(outAction);
     }
 
-    /**
+    
+
+/**
      * Determine the zoom percentage if the user is zooming in
      * (e.g. from 75 to 80, 100 to 125, etc.).
      *
@@ -160,7 +171,9 @@ public class ZoomManager implements Scene.SceneListener {
         return newZoomValue;
     }
 
-    /**
+    
+
+/**
      * Determine the zoom percentage if the user is zooming out
      * (e.g. from 75 to 70, 150 to 125, etc.).
      *
@@ -177,7 +190,9 @@ public class ZoomManager implements Scene.SceneListener {
         return newZoomValue;
     }
 
-    /**
+    
+
+/**
      * Fires zoom events to the registered listeners, if any.
      *
      * @param  percent  the new percent value.
@@ -200,7 +215,9 @@ public class ZoomManager implements Scene.SceneListener {
         }
     }
 
-    /**
+    
+
+/**
      * Return the Scene for which this manager is controlling the zoom.
      *
      * @return  Scene managed by this manager.
@@ -209,7 +226,9 @@ public class ZoomManager implements Scene.SceneListener {
         return scene;
     }
 
-    /**
+    
+
+/**
      * Return the zoom factor for the Scene mananged by this ZoomManager
      * instance. The value represents a percentage (e.g. 100%) and
      * is always a positive number.
@@ -220,7 +239,9 @@ public class ZoomManager implements Scene.SceneListener {
         return zoomPercentage;
     }
 
-    /**
+    
+
+/**
      * Removes the given listener from this manager instance, such that it
      * will no longer receive zoom events.
      *
@@ -230,7 +251,9 @@ public class ZoomManager implements Scene.SceneListener {
         listeners.remove(ZoomListener.class, listener);
     }
 
-    /**
+    
+
+/**
      * Set the zoom factor for the Scene mananged by this ZoomManager
      * instance. The value represents a percentage (e.g. 100%) and
      * must be a positive number. Any value outside of the defined
@@ -253,7 +276,9 @@ public class ZoomManager implements Scene.SceneListener {
         setZoom(percent, center);
     }
 
-    /**
+    
+
+/**
      * Set the zoom factor for the Scene mananged by this ZoomManager
      * instance. The value represents a percentage (e.g. 100%) and
      * must be a positive number. Any value outside of the defined
@@ -387,7 +412,9 @@ public class ZoomManager implements Scene.SceneListener {
         return clientArea;
     }
 
-    /**
+    
+
+/**
      * Manages the combobox for setting the zoom level.
      */
     private static class ZoomComboBox extends JComboBox {
@@ -395,7 +422,9 @@ public class ZoomManager implements Scene.SceneListener {
         /** The associated zoom manager. */
         private ZoomManager manager;
 
-        /**
+        
+
+/**
          * Creates a new instance of ZoomComboBox.
          *
          * @param  manager  the zoom manager.
@@ -416,12 +445,16 @@ public class ZoomManager implements Scene.SceneListener {
             manager.addZoomListener(l);
         }
 
-        /**
+        
+
+/**
          * Combobox model, provides default zoom values.
          */
         private static class Model extends DefaultComboBoxModel {
 
-            /**
+            
+
+/**
              * Creates a new instance of Model.
              */
             public Model() {
@@ -439,7 +472,9 @@ public class ZoomManager implements Scene.SceneListener {
             }
         }
 
-        /**
+        
+
+/**
          * Class Value represents a combobox element.
          */
         private static class Value {
@@ -449,7 +484,9 @@ public class ZoomManager implements Scene.SceneListener {
             /** The String to represent this value. */
             private String str;
 
-            /**
+            
+
+/**
              * Creates a new instance of Value.
              *
              * @param  value  the zoom value (e.g. 75, 100, 150).
@@ -472,7 +509,9 @@ public class ZoomManager implements Scene.SceneListener {
                 return value;
             }
 
-            /**
+            
+
+/**
              * Returns the integer value of this instance.
              *
              * @return  integer value.
@@ -487,7 +526,9 @@ public class ZoomManager implements Scene.SceneListener {
             }
         }
 
-        /**
+        
+
+/**
          * Listener to the combobox and zoom manager.
          */
         private class Listener implements ActionListener, ZoomListener {
@@ -495,7 +536,9 @@ public class ZoomManager implements Scene.SceneListener {
             /** The associated zoom manager. */
             private ZoomManager manager;
 
-            /**
+            
+
+/**
              * Creates a new instance of Listener.
              *
              * @param  manager  the zoom manager.
@@ -544,7 +587,9 @@ public class ZoomManager implements Scene.SceneListener {
         }
     }
 
-    /**
+    
+
+/**
      * Event object representing a change in the zoom level of a ZoomManager.
      */
     public static class ZoomEvent extends EventObject {
@@ -552,7 +597,9 @@ public class ZoomManager implements Scene.SceneListener {
         /** Percent value of the zoom manager at the time of the event. */
         private int percent;
 
-        /**
+        
+
+/**
          * Creates a new instance of ZoomEvent.
          *
          * @param  src      the source of the event.
@@ -563,7 +610,9 @@ public class ZoomManager implements Scene.SceneListener {
             this.percent = percent;
         }
 
-        /**
+        
+
+/**
          * Returns the percent value of the zoom manager at the time of
          * the event.
          *
@@ -574,12 +623,16 @@ public class ZoomManager implements Scene.SceneListener {
         }
     }
 
-    /**
+    
+
+/**
      * The listener interface for receiving zoom events.
      */
     public static interface ZoomListener extends EventListener {
 
-        /**
+        
+
+/**
          * The zoom level of the ZoomManager has changed.
          *
          * @param  event  the zoom event.
@@ -587,7 +640,9 @@ public class ZoomManager implements Scene.SceneListener {
         void zoomChanged(ZoomEvent event);
     }
 
-    /**
+    
+
+/**
      * Implements the fit-diagram feature, such that it sets the zoom to
      * show the Scene contents at the largest percentage while still
      * fitting within the available scroll area.
@@ -597,7 +652,9 @@ public class ZoomManager implements Scene.SceneListener {
         /** The associated ZoomManager. */
         private ZoomManager manager;
 
-        /**
+        
+
+/**
          * Creates a new instance of FitDiagramAction.
          *
          * @param  manager  the zoom manager.
@@ -622,7 +679,9 @@ public class ZoomManager implements Scene.SceneListener {
         }
     }
 
-    /**
+    
+
+/**
      * Implements the fit-width feature, such that it sets the zoom to
      * show the Scene contents at the largest percentage while still
      * fitting within the width of the available scroll area.
@@ -632,7 +691,9 @@ public class ZoomManager implements Scene.SceneListener {
         /** The associated ZoomManager. */
         private ZoomManager manager;
 
-        /**
+        
+
+/**
          * Creates a new instance of FitWidthAction.
          *
          * @param  manager  the zoom manager.
@@ -683,7 +744,9 @@ public class ZoomManager implements Scene.SceneListener {
         }
     }
 
-    /**
+    
+
+/**
      * Implements the 100% zoom feature, such that it sets the zoom percent
      * to the fixed value of 100 (the default zoom level).
      */
@@ -692,7 +755,9 @@ public class ZoomManager implements Scene.SceneListener {
         /** The associated ZoomManager. */
         private ZoomManager manager;
 
-        /**
+        
+
+/**
          * Creates a new instance of ZoomDefaultAction.
          *
          * @param  manager  the zoom manager.
@@ -715,7 +780,9 @@ public class ZoomManager implements Scene.SceneListener {
         }
     }
 
-    /**
+    
+
+/**
      * Implements the zoom-in feature, such that it sets the zoom percent
      * to a decreased amount for the scene.
      */
@@ -724,7 +791,9 @@ public class ZoomManager implements Scene.SceneListener {
         /** The associated ZoomManager. */
         private ZoomManager manager;
 
-        /**
+        
+
+/**
          * Creates a new instance of ZoomInAction.
          *
          * @param  manager  the zoom manager.
@@ -775,7 +844,9 @@ public class ZoomManager implements Scene.SceneListener {
         }
     }
 
-    /**
+    
+
+/**
      * Implements the zoom-out feature, such that it sets the zoom percent
      * to an increased amount for the scene.
      */
@@ -784,7 +855,9 @@ public class ZoomManager implements Scene.SceneListener {
         /** The associated ZoomManager. */
         private ZoomManager manager;
 
-        /**
+        
+
+/**
          * Creates a new instance of ZoomOutAction.
          *
          * @param  manager  the zoom manager.

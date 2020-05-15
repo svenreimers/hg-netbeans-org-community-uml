@@ -55,6 +55,7 @@ import java.util.StringTokenizer;
 
 
 
+
 /**
  * A complement to <code>java.util.StringTokenizer</code> that provides
  * tokenizing by substrings instead of single characters as well as static
@@ -71,7 +72,8 @@ import java.util.StringTokenizer;
 public class StringTokenizer2 extends Object 
 	implements Enumeration, Iterator
 {
-	/**
+	
+/**
 	 * Create tokenizer with property <code>returnTokens</code> set to 
 	 * <code>false</code> and property <code>ignoreCase</code> set to 
 	 * <code>false</code>. Blank delimiter results in the entire text 
@@ -87,7 +89,9 @@ public class StringTokenizer2 extends Object
 	}
 
 
-	/**
+	
+
+/**
 	 * Create tokenizer with option for property <code>returnTokens</code> 
 	 * and property <code>ignoreCase</code> set to <code>false</code>. Blank 
 	 * delimiter results in the entire text as a single token.
@@ -102,7 +106,9 @@ public class StringTokenizer2 extends Object
 	}
 
 
-	/**
+	
+
+/**
 	 * Create tokenizer with options for properties 
 	 * <code>returnTokens</code> and <code>ignoreCase</code>. Blank delimiter 
 	 * results in the entire text as a single token.
@@ -158,7 +164,9 @@ public class StringTokenizer2 extends Object
 	}
 
 
-	/**
+	
+
+/**
 	 *
 	 * @see "java.util.StringTokenizer.hasNext()"
 	 */
@@ -168,7 +176,9 @@ public class StringTokenizer2 extends Object
 	}
 
 
-	/**
+	
+
+/**
 	 *
 	 * @see "java.util.StringTokenizer.next()"
 	 */
@@ -178,7 +188,9 @@ public class StringTokenizer2 extends Object
 	}
 
 
-	/**
+	
+
+/**
 	 * Feature not supported
 	 *
 	 */
@@ -188,7 +200,9 @@ public class StringTokenizer2 extends Object
 	}
 
 
-	/**
+	
+
+/**
 	 * 
 	 * @see "java.util.StringTokenizer.hasMoreTokens()"
 	 */
@@ -199,7 +213,9 @@ public class StringTokenizer2 extends Object
 
 
 
-	/**
+	
+
+/**
 	 *
 	 * @see "java.util.StringTokenizer.hasMoreElements()"
 	 */
@@ -209,7 +225,9 @@ public class StringTokenizer2 extends Object
 	}
 
 
-	/**
+	
+
+/**
 	 *
 	 * @see "java.util.StringTokenizer.countTokens()"
 	 */
@@ -219,7 +237,9 @@ public class StringTokenizer2 extends Object
 	}
 
 
-	/**
+	
+
+/**
 	 *
 	 * @see "java.util.StringTokenizer.nextToken()"
 	 */
@@ -229,7 +249,9 @@ public class StringTokenizer2 extends Object
 	}
 
 
-	/**
+	
+
+/**
 	 *
 	 * @see "java.util.StringTokenizer.nextElement()"
 	 */
@@ -245,7 +267,9 @@ public class StringTokenizer2 extends Object
 	// Static utility methods
 	////////////////////////////////////////////////////////////////////////////////
 
-	/**
+	
+
+/**
 	 * Performs a classic string find and replace of FIRST occurrence only
 	 *
 	 * @param str original string to be modified
@@ -266,7 +290,9 @@ public class StringTokenizer2 extends Object
 		return result;
 	}	
 
-	/**
+	
+
+/**
 	 * Performs a classic string find and replace
 	 *
 	 * @param str original string to be modified
@@ -287,7 +313,9 @@ public class StringTokenizer2 extends Object
 	}
 
 
-	/**
+	
+
+/**
 	 * Performs a classic string find & replace, optionally ignoring the case
 	 * of the string
 	 *
@@ -311,7 +339,9 @@ public class StringTokenizer2 extends Object
 	}
 
 
-	/**
+	
+
+/**
 	 * Shortcut to {@link #tokenize(String,String,boolean,boolean) generalized 
 	 * search method} with property <code>trim</code> set to <code>false
 	 * </code> and property <code>ignoreCase</code> set to <code>false
@@ -323,7 +353,9 @@ public class StringTokenizer2 extends Object
 	}
 
 
-	/**
+	
+
+/**
 	 * Shortcut to {@link #tokenize(String,String,boolean,boolean) generalized 
 	 * search method} with property <code>ignoreCase</code> set to <code>false
 	 * </code>
@@ -335,7 +367,9 @@ public class StringTokenizer2 extends Object
 	}
 
 
-	/**
+	
+
+/**
 	 * Utility method to create array of string tokens with optional support for 
 	 * trimming results and ignoring case when searching.
 	 * 
@@ -364,7 +398,9 @@ public class StringTokenizer2 extends Object
 	}
 
 
-	/**
+	
+
+/**
 	 * Utility method to breakup larger string into array of strings, 
 	 * one string per line.
 	 * 
@@ -403,7 +439,9 @@ public class StringTokenizer2 extends Object
 	}
 
 
-	/**
+	
+
+/**
 	 * Converts an array of Objects into a delimited string of values
 	 *
 	 */
@@ -439,7 +477,9 @@ public class StringTokenizer2 extends Object
 	}
 
 
-	/**
+	
+
+/**
 	 * Makes a String array from a delimited String of values
 	 *
 	 */
@@ -470,7 +510,9 @@ public class StringTokenizer2 extends Object
 	// Name utility methods
 	////////////////////////////////////////////////////////////////////////////	
 	
-	/**
+	
+
+/**
 	 *
 	 * @deprected	Use NameUtil instead
 	 */
@@ -480,7 +522,9 @@ public class StringTokenizer2 extends Object
 	}
 
 
-	/**
+	
+
+/**
 	 *
 	 * @deprected	Use NameUtil instead
 	 */
@@ -490,7 +534,9 @@ public class StringTokenizer2 extends Object
 	}
 
 
-	/**
+	
+
+/**
 	 *
 	 * @deprected	Use NameUtil instead
 	 */
@@ -500,7 +546,9 @@ public class StringTokenizer2 extends Object
 	}
 
 
-	/**
+	
+
+/**
 	 *
 	 * @deprected	Use NameUtil instead
 	 */

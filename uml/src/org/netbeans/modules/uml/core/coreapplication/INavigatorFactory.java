@@ -47,7 +47,9 @@ package org.netbeans.modules.uml.core.coreapplication;
 
 public interface INavigatorFactory
 {
-	/**
+	
+
+/**
 	 * Creates an INavigator object based on the navigatorType parameter
 	*/
 	public INavigator createNavigator( String navigatorType );

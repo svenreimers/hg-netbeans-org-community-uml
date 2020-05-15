@@ -103,7 +103,9 @@ public class ComponentElementsCDFSTests extends UMLTestCase {
         }
         
         //checking diagram node was created
-            /*
+            
+
+/*
             if (!util.nodeExists(DIA_PATH)){
                eventTool.waitNoEvent(5000);
                 fail("testCDFSArtifact verification failed");
@@ -134,7 +136,9 @@ public class ComponentElementsCDFSTests extends UMLTestCase {
         }
         
         //checking diagram node was created
-            /*
+            
+
+/*
             if (!util.nodeExists(DIA_PATH)){
                eventTool.waitNoEvent(5000);
                 fail("testCDFSComponent verification failed");

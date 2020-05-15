@@ -43,11 +43,8 @@
  */
 
 
-/*
- * File       : StateHandler.java
- * Created on : Dec 5, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.statehandlers;
 
 import org.dom4j.Document;
@@ -88,7 +85,9 @@ public class StateHandler
     }
 
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.StateHandler#createSubStateHandler(java.lang.String, java.lang.String)
      */
     public StateHandler createSubStateHandler(String stateName, String language)
@@ -97,7 +96,9 @@ public class StateHandler
         return null;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.StateHandler#getDOMNode()
      */
     public Node getDOMNode()
@@ -105,7 +106,9 @@ public class StateHandler
         return m_pNode;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.StateHandler#getEventDispatcher()
      */
     public IUMLParserEventDispatcher getEventDispatcher()
@@ -137,7 +140,9 @@ public class StateHandler
         return pVal;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.StateHandler#initialize()
      */
     public void initialize()
@@ -145,7 +150,9 @@ public class StateHandler
         // No valid implementation in the C++ code base.
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.StateHandler#processToken(org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ITokenDescriptor, org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ILanguage)
      */
     public void processToken(ITokenDescriptor desc, String lang)
@@ -153,7 +160,9 @@ public class StateHandler
         // No valid implementation in the C++ code base.
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.StateHandler#setDOMNode(org.dom4j.Node)
      */
     public void setDOMNode(Node pNewVal)
@@ -161,7 +170,9 @@ public class StateHandler
         m_pNode = pNewVal;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.StateHandler#stateComplete()
      */
     public void stateComplete(String val)
@@ -170,7 +181,9 @@ public class StateHandler
     }
 
 
-    /**
+    
+
+/**
      * Creates a new Token Descriptor tag for the specified XML DOM node.  The
      * assumption is that the specified not is the node that must contain the
      * TokenDescriptor node.  If the TokenDescriptor must reside under the
@@ -194,7 +207,9 @@ public class StateHandler
        createDescriptor(m_pNode, type, line, col, pos, value, length);
     }
 
-    /**
+    
+
+/**
      * Creates a new Token Descriptor tag for the specified XML DOM node.  The
      * assumption is that the specified not is the node that must contain the
      * TokenDescriptor node.  If the TokenDescriptor must reside under the
@@ -232,7 +247,9 @@ public class StateHandler
         }
     }
 
-    /**
+    
+
+/**
      * Create a new XML node and added to the document.  The node is created in the
      * namespace of the document.  CreateElement will throw
      * _com_error exceptions will an invalid HRESULT is received.
@@ -251,7 +268,9 @@ public class StateHandler
         return XMLManip.createElement((Element) pOwnerNode, nodeName);
     }
 
-    /**
+    
+
+/**
      * Create a new XML node and added to the document.  The node is created in the
      * namespace of the document.  CreateNamespaceElement will throw
      * _com_error exceptions will an invalid HRESULT is received.
@@ -264,7 +283,9 @@ public class StateHandler
         return createNamespaceElement(m_pNode, nodeName);
     }
 
-    /**
+    
+
+/**
      * Creates a node add adds it to the current node. The new node is will <B>NOT</B>
      * become the current node.
      *
@@ -277,7 +298,9 @@ public class StateHandler
     }
 
 
-    /**
+    
+
+/**
      * Create a new XML node and added to the document.  CreateElement will throw
      * _com_error exceptions will an invalid HRESULT is received.
      * @param pDoc [in] The document that will recieve the XML node.
@@ -298,7 +321,9 @@ public class StateHandler
 //  ** Helper Methods
 //  ********************************************************************
 
-   /**
+   
+
+/**
     * Creates a new Token Descriptor tag for the current XML DOM node.
     *
     * @param type [in] The name of the token descriptor.
@@ -309,7 +334,9 @@ public class StateHandler
         createTokenDescriptor(m_pNode, type, pToken);
     }
 
-   /**
+   
+
+/**
     * Creates a new Token Descriptor tag for the specified XML DOM node.
     *
     * @param pNode [in] The node to recieve the token descriptor.
@@ -330,7 +357,9 @@ public class StateHandler
         createTokenDescriptor(pNode, type, line, column, position, value, length);
   }
 
-    /**
+    
+
+/**
     * Creates a new Token Descriptor tag for the current XML DOM node.  If the TokenDescritors
     * tag does not exist it will be created.
     *
@@ -352,7 +381,9 @@ public class StateHandler
     }
 
 
-    /**
+    
+
+/**
     * Creates a new Token Descriptor tag for the specified XML DOM node.  If the TokenDescritors
     * tag does not exist it will be created.
     *
@@ -385,7 +416,9 @@ public class StateHandler
         }
     }
 
-    /**
+    
+
+/**
      * Makes sure that the node with the passed in name is present
      * under curNode. If it isn't, one is created.  XMLManip has a
      * method that does the exact same thing.  The only problem is that
@@ -401,7 +434,9 @@ public class StateHandler
        return ensureElementExists(m_pNode, name, query);
     }
 
-    /**
+    
+
+/**
      * Makes sure that the node with the passed in name is present
      * under curNode. If it isn't, one is created.  XMLManip has a
      * method that does the exact same thing.  The only problem is that
@@ -436,7 +471,9 @@ public class StateHandler
         return node;
     }
 
-    /** 
+    
+
+/** 
      *  pre-compiled XPath instead of String query version
      */ 
     protected Node ensureElementExists(Node curNode,String name,
@@ -483,7 +520,9 @@ public class StateHandler
         return pVal;
     }
 
-    /**
+    
+
+/**
      * Adds the <code>StartPosition</code> token descriptor.
      *
      * @param pToken [in] The token information.
@@ -493,7 +532,9 @@ public class StateHandler
         createTokenDescriptor("Body Start", pToken);
     }
 
-    /**
+    
+
+/**
      * Adds the tokens coment information to the current XML DOM Node.
      *
      * @param pToken [in] The token information.
@@ -503,7 +544,9 @@ public class StateHandler
         handleComment(m_pNode, pToken);
     }
 
-    /**
+    
+
+/**
      * Adds the tokens coment information to the current XML DOM Node.
      *
      * @param pNode [in] The node to update.
@@ -613,7 +656,9 @@ public class StateHandler
 	}
     }
 
-    /**
+    
+
+/**
      * Adds the <code>EndPosition</code> token descriptor.
      *
      * @param pToken [in] The token information.
@@ -623,7 +668,9 @@ public class StateHandler
         handleEndPostion(m_pNode, pToken);
     }
 
-    /**
+    
+
+/**
      * Adds the <code>EndPosition</code> token descriptor.
      *
      * @param pToken [in] The token information.
@@ -642,7 +689,9 @@ public class StateHandler
         }
     }
 
-    /**
+    
+
+/**
      * Adds the <code>Filename</code> token descriptor.
      *
      * @param pToken [in] The token information.
@@ -666,7 +715,9 @@ public class StateHandler
         }
     }
 
-    /**
+    
+
+/**
      * Adds the <code>Keyword</code> token descriptor.
      *
      * @param pToken [in] The token information.
@@ -679,7 +730,9 @@ public class StateHandler
         }
     }
 
-    /**
+    
+
+/**
      * Generate the XMI data for a modifier.
      *
      * @param pToken [in] The modifier token.
@@ -756,7 +809,9 @@ public class StateHandler
         }
     }
 
-    /**
+    
+
+/**
      * Adds the <code>EndPosition</code> token descriptor.
      *
      * @param pToken [in] The token information.
@@ -766,7 +821,9 @@ public class StateHandler
         handleStartPosition(m_pNode, pToken);
     }
 
-    /**
+    
+
+/**
      * Adds the <code>EndPosition</code> token descriptor.
      *
      * @param pToken [in] The token information.
@@ -783,7 +840,9 @@ public class StateHandler
         }
     }
 
-    /**
+    
+
+/**
      * Adds the <code>StatementTerminator</code> token descriptor.
      *
      * @param pToken [in] The token information.
@@ -796,7 +855,9 @@ public class StateHandler
         }
     }
 
-    /**
+    
+
+/**
      * Deterimies if the modifier is a abstract modifier.
      *
      * @param value [out] The modifier name.
@@ -809,7 +870,9 @@ public class StateHandler
        return isModifierSame("Abstract", language, value);
     }
 
-    /**
+    
+
+/**
      * Deterimies if the modifier is a Leaf modifier.
      *
      * @param value [out] The modifier name.
@@ -822,7 +885,9 @@ public class StateHandler
        return isModifierSame("Leaf", languageName, value);
     }
 
-    /**
+    
+
+/**
      * Deterimies if the modifier is a Owner Scope modifier.
      *
      * @param value [out] The modifier name.
@@ -835,7 +900,9 @@ public class StateHandler
         return isModifierSame("OwnerScope", languageName, value);
     }
 
-    /**
+    
+
+/**
      * Deterimies if the modifier is a Transient modifier.
      *
      * @param value [out] The modifier name.
@@ -848,7 +915,9 @@ public class StateHandler
         return isModifierSame("Transient", languageName, value);
     }
 
-    /**
+    
+
+/**
      * Deterimies if the modifier is a Native modifier.
      *
      * @param value [out] The modifier name.
@@ -861,7 +930,9 @@ public class StateHandler
         return isModifierSame("Native", languageName, value);
     }
 
-    /**
+    
+
+/**
      * Deterimies if the modifier is a Synchronized modifier.
      *
      * @param value [out] The modifier name.
@@ -874,7 +945,9 @@ public class StateHandler
         return isModifierSame("Guarded", languageName, value);
     }
 
-    /**
+    
+
+/**
      * Deterimies if the modifier is a Volatile modifier.
      *
      * @param value [out] The modifier name.
@@ -887,7 +960,9 @@ public class StateHandler
         return isModifierSame("Volatile", languageName, value);
     }
 
-    /**
+    
+
+/**
      * Deterimies if the modifier is a Strictfp modifier.
      *
      * @param value [out] The modifier name.
@@ -900,7 +975,9 @@ public class StateHandler
         return isModifierSame("StrictFP", languageName, value);
     }
 
-    /**
+    
+
+/**
      * Deterimies if the modifier is a Visibiltiy modifier.
      *
      * @param value [out] The modifier name.
@@ -938,7 +1015,9 @@ public class StateHandler
     }
 
 
-    /**
+    
+
+/**
      * Sets the node attribute value.
      *
      * @param attrName [in] The name of the attribute.
@@ -949,7 +1028,9 @@ public class StateHandler
         setNodeAttribute(m_pNode, attrName, value);
     }
 
-    /**
+    
+
+/**
      * Sets the node attribute value.
      *
      * @param attrName [in] The name of the attribute.
@@ -961,7 +1042,9 @@ public class StateHandler
         setNodeAttribute(m_pNode, attrName, value);
     }
 
-    /**
+    
+
+/**
      * Sets the node attribute value.
      *
      * @param pNode [in] The node that ownes the attribute.
@@ -976,7 +1059,9 @@ public class StateHandler
 
 
 
-    /**
+    
+
+/**
      * Sets the node attribute value.
      *
      * @param pNode [in] The node that ownes the attribute.
@@ -997,7 +1082,9 @@ public class StateHandler
         }
     }
 
-    /**
+    
+
+/**
      * Test if the specified token is the first token of the source element.
      * if it is then the location of the token will be record.  When done the
      * token information can be written to the XML stream by calling WriteStartToken.
@@ -1023,7 +1110,9 @@ public class StateHandler
         }
     }
 
-    /**
+    
+
+/**
      * If a token descriptor of type @a type exists under @a pNode, its
      * line, column, position, value, and length attributes are set to the
      * values specified in this operation's parameters.
@@ -1078,7 +1167,9 @@ public class StateHandler
         }
     }
 
-    /**
+    
+
+/**
      * Write the start token to the XML stream.  The start token must be initialized
      * by calling the RecordStartToken method.
      *
@@ -1127,7 +1218,9 @@ public class StateHandler
     }
 
 
-    /**
+    
+
+/**
      * Determines if the a token file position is befoer the a speified token.
      *
      * @param pNode [in] The token to check.

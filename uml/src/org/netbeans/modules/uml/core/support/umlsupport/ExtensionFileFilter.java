@@ -60,7 +60,9 @@ public class ExtensionFileFilter implements FilenameFilter, FileFilter
       setExtension(extension);
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see java.io.FilenameFilter#accept(java.io.File, java.lang.String)
     */
    public boolean accept(File dir, String name)
@@ -68,7 +70,9 @@ public class ExtensionFileFilter implements FilenameFilter, FileFilter
       return StringUtilities.hasExtension(name, m_Extension);
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see java.io.FileFilter#accept(java.io.File)
     */
    public boolean accept(File pathname)
@@ -77,7 +81,9 @@ public class ExtensionFileFilter implements FilenameFilter, FileFilter
                                           m_Extension);
    }
 
-   /**
+   
+
+/**
     * @return
     */
    public String getExtension()
@@ -85,7 +91,9 @@ public class ExtensionFileFilter implements FilenameFilter, FileFilter
       return m_Extension;
    }
 
-   /**
+   
+
+/**
     * @param string
     */
    public void setExtension(String string)

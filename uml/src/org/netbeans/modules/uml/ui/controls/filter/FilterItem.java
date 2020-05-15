@@ -52,6 +52,7 @@ import javax.swing.Icon;
 
 import org.netbeans.modules.uml.ui.support.commonresources.CommonResourceManager;
 
+
 /**
  * A FilterItem contians the data that represents an item that can be filtered.
  *
@@ -63,7 +64,9 @@ public class FilterItem implements IFilterItem
    private ArrayList   m_Children = new ArrayList();
    private Icon        m_Icon     = null;
 
-   /**
+   
+
+/**
     * Initalizes the FilterItem obeject.  The state of the item will be 
     * <code>FILTER_STATE_ON</code>.
     * 
@@ -74,7 +77,9 @@ public class FilterItem implements IFilterItem
       this(text, FILTER_STATE_ON);
    }
    
-   /**
+   
+
+/**
     * Initalizes the FilterItem obeject.  
     * 
     * @param text The name of the filter item.
@@ -86,7 +91,9 @@ public class FilterItem implements IFilterItem
       setState(kind);
    }
    
-   /**
+   
+
+/**
     * Sets the filter state of the item.
     * 
     * @param value Either<code>FILTER_STATE_ON</code> or 
@@ -97,7 +104,9 @@ public class FilterItem implements IFilterItem
       setState(value, null);
    }
    
-   /**
+   
+
+/**
     * Sets the filter state of the item. 
     * 
     * @param value Either<code>FILTER_STATE_ON</code> or 
@@ -111,7 +120,9 @@ public class FilterItem implements IFilterItem
       m_ItemKind = value;
    }
    
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
    * @see org.netbeans.modules.uml.ui.controls.projecttree.IFilterItem#getState()
    */
   public int getState()
@@ -120,7 +131,9 @@ public class FilterItem implements IFilterItem
      return m_ItemKind;
   }
 
-   /**
+   
+
+/**
     * Sets the name of the item.
     * @param value The name.
     */
@@ -129,7 +142,9 @@ public class FilterItem implements IFilterItem
       m_ItemName = value;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.projecttree.IFilterItem#getName()
     */
    public String getName()
@@ -137,7 +152,9 @@ public class FilterItem implements IFilterItem
       return m_ItemName;
    }
    
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see java.lang.Object#equals(java.lang.Object)
     */
    public boolean equals(Object obj)
@@ -156,7 +173,9 @@ public class FilterItem implements IFilterItem
       return retVal;
    }
       
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.projecttree.IFilterItem#getIcon()
     */
    public Icon getIcon()
@@ -169,7 +188,9 @@ public class FilterItem implements IFilterItem
       return m_Icon;
    }
    
-   /**
+   
+
+/**
     * The icon to use if it can not be retrieved from the CommonResourceManager.
     * 
     * @param icon The icon to use.

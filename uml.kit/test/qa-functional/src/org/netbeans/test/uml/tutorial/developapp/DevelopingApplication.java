@@ -43,11 +43,8 @@
  */
 
 
-/*
- * DevelopingApplications.java
- *
- * Created on January 27, 2006, 12:20 PM
- */
+
+
 
 package org.netbeans.test.uml.tutorial.developapp;
 

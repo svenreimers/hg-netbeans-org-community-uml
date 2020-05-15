@@ -50,7 +50,9 @@ import org.dom4j.Node;
 
 public class AssemblyConnector extends Connector implements IAssemblyConnector
 {
-	/**
+	
+
+/**
 	 * Establishes the appropriate XML elements for this UML type.
 	 *
 	 * [in] The document where this element will reside

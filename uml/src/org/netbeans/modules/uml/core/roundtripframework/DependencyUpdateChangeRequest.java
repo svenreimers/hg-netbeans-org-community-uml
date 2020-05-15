@@ -42,11 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : DependencyUpdateChangeRequest.java
- * Created on : Nov 20, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.roundtripframework;
 
 /**
@@ -57,7 +54,8 @@ public class DependencyUpdateChangeRequest
 {
     private String m_OldIndependentElementName;
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IDependencyUpdateChangeRequest#getOldIndependentElementName()
      */
     public String getOldIndependentElementName()
@@ -65,7 +63,9 @@ public class DependencyUpdateChangeRequest
         return m_OldIndependentElementName;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IDependencyUpdateChangeRequest#setOldIndependentElementName(java.lang.String)
      */
     public void setOldIndependentElementName(String newVal)

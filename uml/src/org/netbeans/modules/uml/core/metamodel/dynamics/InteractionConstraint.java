@@ -60,7 +60,9 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.IExpressionListen
 public class InteractionConstraint extends Constraint
         implements IInteractionConstraint, IExpressionListener
 {
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IInteractionConstraint#getMaxInt()
      */
     public IExpression getMaxInt()
@@ -70,7 +72,9 @@ public class InteractionConstraint extends Constraint
                 m_Node, "UML:InteractionConstraint.maxint/*", IExpression.class );
     }
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IInteractionConstraint#setMaxInt(org.netbeans.modules.uml.core.metamodel.core.foundation.IExpression)
      */
     public void setMaxInt(IExpression exp)
@@ -80,7 +84,9 @@ public class InteractionConstraint extends Constraint
                   exp );
     }
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IInteractionConstraint#getMinInt()
      */
     public IExpression getMinInt()
@@ -90,7 +96,9 @@ public class InteractionConstraint extends Constraint
                 m_Node, "UML:InteractionConstraint.minint/*", IExpression.class );
     }
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IInteractionConstraint#setMinInt(org.netbeans.modules.uml.core.metamodel.core.foundation.IExpression)
      */
     public void setMinInt(IExpression exp)
@@ -139,7 +147,9 @@ public class InteractionConstraint extends Constraint
       // Do nothing
    }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.Constraint#establishNodePresence(org.dom4j.Document, org.dom4j.Node)
      */
     public void establishNodePresence(Document doc, Node parent)

@@ -47,77 +47,107 @@ package org.netbeans.modules.uml.core.metamodel.core.foundation;
 
 public interface IRelationProxy
 {
-	/**
+	
+
+/**
 	 * Sets / Gets the from element in this proxy.
 	*/
 	public IElement getFrom();
 
-	/**
+	
+
+/**
 	 * Sets / Gets the from element in this proxy.
 	*/
 	public void setFrom( IElement value );
 
-	/**
+	
+
+/**
 	 * Sets / Gets the to element in this proxy.
 	*/
 	public IElement getTo();
 
-	/**
+	
+
+/**
 	 * Sets / Gets the to element in this proxy.
 	*/
 	public void setTo( IElement value );
 
-	/**
+	
+
+/**
 	 * Sets gets the element that performs the connection between the two elements.
 	*/
 	public IElement getConnection();
 
-	/**
+	
+
+/**
 	 * If the connection is 0 then this is the type of connection that should be verified.
 	*/
 	public String getConnectionElementType();
 
-	/**
+	
+
+/**
 	 * If the connection is 0 then this is the type of connection that should be verified.
 	*/
 	public void setConnectionElementType( String value );
 
-	/**
+	
+
+/**
 	 * If used for validation this returns true if the relation has been validated.
 	*/
 	public boolean getRelationValidated();
 
-	/**
+	
+
+/**
 	 * If used for validation this returns true if the relation has been validated.
 	*/
 	public void setRelationValidated( boolean value );
 
-	/**
+	
+
+/**
 	 * Sets gets the element that performs the connection between the two elements.
 	*/
 	public void setConnection( IElement value );
 
-	/**
+	
+
+/**
 	 * Determines whether or not this proxy contains the elements passed in.
 	*/
 	public boolean matches( IElement From, IElement To, IElement Connection );
 
-	/**
+	
+
+/**
 	 * Retrieves the from element dictated by the Connection type. If Connection returns 0, so will this method.
 	*/
 	public IElement getRelationFrom();
 
-	/**
+	
+
+/**
 	 * Retrieves the from element dictated by the Connection type. If Connection returns 0, so will this method.
 	*/
 	public IElement getRelationTo();
 
-	/**
+	
+
+/**
 	 * Retrieves the element that physically owns the Connection type. If Connection returns 0, so will this method.
 	*/
 	public IElement getRelationOwner();
         
-        /**
+        
+
+/**
          * This flag indicates whether this relationship is a reconnected one. 
          * This flag is useful when used with validation. It relaxes the validation process 
          * if  it's a reconnected relationship.
@@ -125,7 +155,9 @@ public interface IRelationProxy
          */
         public void setReconnectionFlag (boolean val);
         
-        /**
+        
+
+/**
          * Checks if this relationship is a connected one.
          * @return true if this relationship is a reconnected one; false otherwise.
          */

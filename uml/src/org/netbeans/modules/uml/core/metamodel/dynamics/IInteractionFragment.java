@@ -50,37 +50,51 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 public interface IInteractionFragment extends INamedElement
 {
-	/**
+	
+
+/**
 	 * Adds the connector to the internal collection.
 	*/
 	public void addGateConnector( IInterGateConnector connector );
 
-	/**
+	
+
+/**
 	 * Removes the specified connector from this fragment.
 	*/
 	public void removeGateConnector( IInterGateConnector connector );
 
-	/**
+	
+
+/**
 	 * Retrieves all the connectors this fragment owns.
 	*/
 	public ETList<IInterGateConnector> getGateConnectors();
 
-	/**
+	
+
+/**
 	 * Adds a lifeline to the collection of lines this fragment covers.
 	*/
 	public void addCoveredLifeline( ILifeline line );
 
-	/**
+	
+
+/**
 	 * Removes the specified lifeline from the collection of lines this fragment covers.
 	*/
 	public void removeCoveredLifeline( ILifeline line );
 
-	/**
+	
+
+/**
 	 * Retrieves the collection of life lines this fragment covers.
 	*/
 	public ETList<ILifeline> getCoveredLifelines();
 
-	/**
+	
+
+/**
 	 * The enclosing Operand, immediately encapsulating this fragment.
 	*/
 	public IInteractionOperand getEnclosingOperand();

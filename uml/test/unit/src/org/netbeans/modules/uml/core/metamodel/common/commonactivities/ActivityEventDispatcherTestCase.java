@@ -46,6 +46,8 @@
 package org.netbeans.modules.uml.core.metamodel.common.commonactivities;
 import org.netbeans.modules.uml.core.AbstractUMLTestCase;
 import org.netbeans.modules.uml.core.support.umlsupport.IResultCell;
+
+
 /**
  * Test cases for ActivityEventDispatcher.
  */
@@ -59,7 +61,9 @@ public class ActivityEventDispatcherTestCase extends AbstractUMLTestCase
 
     private IActivityEventDispatcher dispatcher;
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see junit.framework.TestCase#setUp()
      */
     protected void setUp() throws Exception
@@ -110,7 +114,9 @@ public class ActivityEventDispatcherTestCase extends AbstractUMLTestCase
         assertTrue(onWeightModified);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivityEdgeEventsSink#onPreWeightModified(org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivityEdge, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onPreWeightModified(IActivityEdge pEdge, String newValue, IResultCell cell)
@@ -121,7 +127,9 @@ public class ActivityEventDispatcherTestCase extends AbstractUMLTestCase
         assertNotNull(cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivityEdgeEventsSink#onWeightModified(org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivityEdge, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onWeightModified(IActivityEdge pEdge, IResultCell cell)
@@ -131,7 +139,9 @@ public class ActivityEventDispatcherTestCase extends AbstractUMLTestCase
         assertNotNull(cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivityEdgeEventsSink#onPreGuardModified(org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivityEdge, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onPreGuardModified(IActivityEdge pEdge, String newValue, IResultCell cell)
@@ -142,7 +152,9 @@ public class ActivityEventDispatcherTestCase extends AbstractUMLTestCase
         assertNotNull(cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivityEdgeEventsSink#onGuardModified(org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivityEdge, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onGuardModified(IActivityEdge pEdge, IResultCell cell)

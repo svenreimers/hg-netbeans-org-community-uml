@@ -46,6 +46,7 @@ package org.netbeans.modules.uml.project.ui.customizer.uiapi;
 
 import org.openide.util.Lookup;
 
+
 /**
  * Way of getting implementations of UI components defined in projects/projectui.
  */
@@ -53,7 +54,8 @@ public class Utilities {
 
     private Utilities() {}
 
-    /** Gets action factory from the global Lookup.
+    
+/** Gets action factory from the global Lookup.
      */
     public static ActionsFactory getActionsFactory() {
         ActionsFactory instance = (ActionsFactory) Lookup.getDefault().lookup(ActionsFactory.class);
@@ -61,7 +63,9 @@ public class Utilities {
         return instance;
     }
     
-    /** Gets the projectChooser fatory from the global Lookup
+    
+
+/** Gets the projectChooser fatory from the global Lookup
      */
     public static ProjectChooserFactory getProjectChooserFactory() {
         ProjectChooserFactory instance = (ProjectChooserFactory) Lookup.getDefault().lookup(ProjectChooserFactory.class);
@@ -69,7 +73,9 @@ public class Utilities {
         return instance;
     }
     
-    /** Gets an object the OpenProjects can delegate to
+    
+
+/** Gets an object the OpenProjects can delegate to
      */
     public static OpenProjectsTrampoline getOpenProjectsTrampoline() {
         OpenProjectsTrampoline instance = (OpenProjectsTrampoline) Lookup.getDefault().lookup(OpenProjectsTrampoline.class);

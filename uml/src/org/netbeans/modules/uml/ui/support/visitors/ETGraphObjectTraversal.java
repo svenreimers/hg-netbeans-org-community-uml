@@ -31,6 +31,7 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 import java.util.Iterator;
 import java.util.List;
 
+
 /**
  * Traverses the graphs nodes, edges, nodeLabels and edgeLabels.
  * Please note you should only use this in non destructive operations. 
@@ -40,7 +41,8 @@ public class ETGraphObjectTraversal
 //	protected ETGraph m_graph;
 	ETList<IETGraphObjectVisitor> listeners = new ETArrayList<IETGraphObjectVisitor>();
 	
-   /**
+   
+/**
     * 
     */ //TODO
 //   public ETGraphObjectTraversal(ETGraph graph)
@@ -49,7 +51,9 @@ public class ETGraphObjectTraversal
 //		m_graph = graph;
 //   }
 
-	/*
+	
+
+/*
 	 * Returns true if all graph objects have been visited.
 	 */ //TODO
 	public boolean traverse()
@@ -59,7 +63,9 @@ public class ETGraphObjectTraversal
 	return false;
         }
 	
-	/*
+	
+
+/*
 	 * Adds a visiter to the listener list.
 	 */
 	public void addVisitor(IETGraphObjectVisitor visiter)
@@ -67,7 +73,9 @@ public class ETGraphObjectTraversal
 		listeners.add(visiter);
 	}
 	
-	/*
+	
+
+/*
 	 * Removes a visiter from the visiter list.
 	 */
 	public void removeVisitor(IETGraphObjectVisitor visiter)
@@ -75,7 +83,9 @@ public class ETGraphObjectTraversal
 		listeners.remove(visiter);
 	}
 	
-	/*
+	
+
+/*
 	 * Returns true if we should continue with the traversal.
 	 */ //TODO
 //	protected boolean visit(IETGraphObject object)
@@ -91,7 +101,9 @@ public class ETGraphObjectTraversal
 //		return true;
 //	}
 	
-	/*
+	
+
+/*
 	 * Returns true if we should continue with the traversal.
 	 */ //TODO
 //	protected boolean visitThese(List objectList)

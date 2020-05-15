@@ -48,17 +48,23 @@ package org.netbeans.modules.uml.core.metamodel.diagrams;
 
 public interface ReconnectEdgeCreateConnectorKind
 {
-	/*
+	
+
+/*
 	 *"Don't create a connector.  Edge will point to center of node.
 	 */
 	static final int RECCK_DONT_CREATE = 0;
 	
-	/*
+	
+
+/*
 	 * Create a connector on the node boundary
 	 */
 	static final int RECCK_CREATE_ON_NODE_BOUNDARY = 1;
 	
-	/*
+	
+
+/*
 	 * Create the connector at the drop location
 	 */
 	static final int RECCK_CREATE= 2;

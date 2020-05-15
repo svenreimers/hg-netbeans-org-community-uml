@@ -77,11 +77,13 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 import org.netbeans.modules.uml.core.support.umlutils.ElementLocator;
 import org.netbeans.modules.uml.core.support.umlutils.IElementLocator;
 
+
 /**
  *
  * To change the template for this generated type comment go to
  * Window>Preferences>Java>Code Generation>Code and Comments
  */
+
 /**
  *
  * To change the template for this generated type comment go to
@@ -107,7 +109,9 @@ public class Message extends NamedElement implements IMessage
     // This message is in the same combined fragment as the previous message
     private static final int CFT_SAME    =  2;
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IVersionableElement#delete()
      */
     public void delete()
@@ -118,7 +122,9 @@ public class Message extends NamedElement implements IMessage
         super.delete();
     }
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IMessage#getInteraction()
      */
     public IInteraction getInteraction()
@@ -127,7 +133,9 @@ public class Message extends NamedElement implements IMessage
             .retrieveSingleElementWithAttrID( this, "interaction", IInteraction.class );
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IMessage#setInteraction(org.netbeans.modules.uml.core.metamodel.dynamics.IInteraction)
      */
     public void setInteraction(IInteraction interaction)
@@ -151,7 +159,9 @@ public class Message extends NamedElement implements IMessage
                 } );
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IMessage#getConnector()
      */
     public IConnector getConnector()
@@ -160,7 +170,9 @@ public class Message extends NamedElement implements IMessage
             .retrieveSingleElementWithAttrID( this, "connector", IConnector.class );
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IMessage#setConnector(org.netbeans.modules.uml.core.metamodel.infrastructure.IConnector)
      */
     public void setConnector(IConnector connector)
@@ -168,7 +180,9 @@ public class Message extends NamedElement implements IMessage
         setElement( connector, "connector" );
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IMessage#getSendEvent()
      */
     public IEventOccurrence getSendEvent()
@@ -177,7 +191,9 @@ public class Message extends NamedElement implements IMessage
             .retrieveSingleElementWithAttrID( this, "sendEvent", IEventOccurrence.class );
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IMessage#setSendEvent(org.netbeans.modules.uml.core.metamodel.dynamics.IEventOccurrence)
      */
     public void setSendEvent(final IEventOccurrence event)
@@ -195,7 +211,9 @@ public class Message extends NamedElement implements IMessage
                 } );
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IMessage#getReceiveEvent()
      */
     public IEventOccurrence getReceiveEvent()
@@ -204,7 +222,9 @@ public class Message extends NamedElement implements IMessage
             .retrieveSingleElementWithAttrID( this, "receiveEvent", IEventOccurrence.class );
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IMessage#setReceiveEvent(org.netbeans.modules.uml.core.metamodel.dynamics.IEventOccurrence)
      */
     public void setReceiveEvent(final IEventOccurrence event)
@@ -222,7 +242,9 @@ public class Message extends NamedElement implements IMessage
                 } );
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IMessage#getInitiatingAction()
      */
     public IExecutionOccurrence getInitiatingAction()
@@ -231,7 +253,9 @@ public class Message extends NamedElement implements IMessage
             .retrieveSingleElementWithAttrID( this, "initiatingAction", IExecutionOccurrence.class );
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IMessage#setInitiatingAction(org.netbeans.modules.uml.core.metamodel.dynamics.IExecutionOccurrence)
      */
     public void setInitiatingAction(IExecutionOccurrence action)
@@ -239,7 +263,9 @@ public class Message extends NamedElement implements IMessage
         setElement( action, "initiatingAction" );
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IMessage#getKind()
      */
     public int getKind()
@@ -247,7 +273,9 @@ public class Message extends NamedElement implements IMessage
         return getMessageKind("kind");
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IMessage#setKind(int)
      */
     public void setKind(int newKind)
@@ -255,7 +283,9 @@ public class Message extends NamedElement implements IMessage
         setMessageKind("kind", newKind);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IMessage#getOperationInvoked()
      */
     public IOperation getOperationInvoked()
@@ -271,7 +301,9 @@ public class Message extends NamedElement implements IMessage
         return op;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IMessage#setOperationInvoked(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation)
      */
     public void setOperationInvoked(IOperation newVal)
@@ -362,7 +394,9 @@ public class Message extends NamedElement implements IMessage
         }
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IMessage#getReceivingLifeline()
      */
     public ILifeline getReceivingLifeline()
@@ -371,7 +405,9 @@ public class Message extends NamedElement implements IMessage
         return event != null? event.getLifeline() : null;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IMessage#getSendingLifeline()
      */
     public ILifeline getSendingLifeline()
@@ -380,7 +416,9 @@ public class Message extends NamedElement implements IMessage
         return event != null? event.getLifeline() : null;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IMessage#getReceivingClassifier()
      */
     public IClassifier getReceivingClassifier()
@@ -389,7 +427,9 @@ public class Message extends NamedElement implements IMessage
         return line != null? retrieveClassifier(line) : null;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IMessage#getSendingClassifier()
      */
     public IClassifier getSendingClassifier()
@@ -398,7 +438,9 @@ public class Message extends NamedElement implements IMessage
         return line != null? retrieveClassifier(line) : null;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IMessage#getReceivingOperations()
      */
     public ETList<IOperation> getReceivingOperations()
@@ -407,7 +449,9 @@ public class Message extends NamedElement implements IMessage
         return cl != null? cl.getOperations() : null;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IMessage#getSendingMessage()
      */
     public IMessage getSendingMessage()
@@ -416,7 +460,9 @@ public class Message extends NamedElement implements IMessage
                 .retrieveSingleElementWithAttrID( this, "sendingMessage", IMessage.class );
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IMessage#setSendingMessage(org.netbeans.modules.uml.core.metamodel.dynamics.IMessage)
      */
     public void setSendingMessage(IMessage value)
@@ -424,7 +470,9 @@ public class Message extends NamedElement implements IMessage
         setElement( value, "sendingMessage" );
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IMessage#recurrence(int, java.lang.StringBuffer)
      */
     public ETPairT<Integer, String> getRecurrence()
@@ -433,7 +481,9 @@ public class Message extends NamedElement implements IMessage
                 new Integer(m_Operator), m_Recurrence );
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IMessage#getAutoNumber()
      */
     public String getAutoNumber()
@@ -485,7 +535,9 @@ public class Message extends NamedElement implements IMessage
         return m_AutoNumber;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IMessage#resetAutoNumber()
      */
     public void resetAutoNumber()
@@ -512,7 +564,9 @@ public class Message extends NamedElement implements IMessage
         }
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IMessage#getInteractionOperand()
      */
     public IInteractionOperand getInteractionOperand()
@@ -531,7 +585,9 @@ public class Message extends NamedElement implements IMessage
         return null;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IMessage#setInteractionOperand(org.netbeans.modules.uml.core.metamodel.dynamics.IInteractionOperand)
      */
     public void setInteractionOperand(IInteractionOperand value)
@@ -540,7 +596,9 @@ public class Message extends NamedElement implements IMessage
         factory.moveMessageToInteractionOperands(this, value, value);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.VersionableElement#establishNodePresence(org.dom4j.Document, org.dom4j.Node)
      */
     public void establishNodePresence(Document doc, Node node)
@@ -548,7 +606,9 @@ public class Message extends NamedElement implements IMessage
         buildNodePresence("UML:Message", doc, node);
     }
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.Element#performDependentElementCleanup(org.netbeans.modules.uml.core.metamodel.core.foundation.IVersionableElement)
      */
     protected void performDependentElementCleanup(IVersionableElement elem)
@@ -559,7 +619,9 @@ public class Message extends NamedElement implements IMessage
         super.performDependentElementCleanup(elem);
     }
     
-    /**
+    
+
+/**
      * @param line
      * @return
      */
@@ -673,7 +735,9 @@ public class Message extends NamedElement implements IMessage
 						(ICombinedFragment) element : null;
     }
     
-    /**
+    
+
+/**
      * Finds the last number of an auto-number and increments by 1
      */
     private String incrementAutoNumberLastInteger(String autoNumber)
@@ -700,7 +764,9 @@ public class Message extends NamedElement implements IMessage
        return strNewNumber;
     }
 
-    /**
+    
+
+/**
      * Makes sure you only get the leading digits from a string, prepares
      * for Integer.parseInt()
      * @param a string with leading integers
@@ -745,7 +811,9 @@ public class Message extends NamedElement implements IMessage
         return newNumber + StringUtilities.incrementString(oldName);
     }
     
-    /**
+    
+
+/**
      * Determines the next value for the input string, which may be a number 
      * or letter.
      */
@@ -762,7 +830,9 @@ public class Message extends NamedElement implements IMessage
         }
     }
     
-    /**
+    
+
+/**
      * Updates the recurrence value with the current interaction operand's 
      * expression.
      */
@@ -781,7 +851,9 @@ public class Message extends NamedElement implements IMessage
         }
     }
     
-    /**
+    
+
+/**
      * Deletes the EventOccurrence that is associated with this Message.
      *
      * @param event The occurrence to delete
@@ -812,7 +884,9 @@ public class Message extends NamedElement implements IMessage
         }
     }
     
-    /**
+    
+
+/**
      * Change to lifeline on the sending end of this message.
      */
     public void changeSendingLifeline(ILifeline fromLifeline,
@@ -828,7 +902,9 @@ public class Message extends NamedElement implements IMessage
         }
     }
     
-    /**
+    
+
+/**
      * Change to lifeline on the receiving end of this message.
      */
     public void changeReceivingLifeline(ILifeline fromLifeline,

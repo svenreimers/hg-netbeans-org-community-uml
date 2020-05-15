@@ -44,6 +44,8 @@
 
 package org.netbeans.modules.uml.common;
 
+
+
 /**
  * Handles locale dependant error messages.
  */
@@ -52,7 +54,9 @@ public interface ETStrings
 
 	StringResolver rb = new StringResolver("org.netbeans.modules.uml.common.nls.Bundle");
 
-	/**
+	
+
+/**
 	 * General
 	 */
 	
@@ -85,7 +89,9 @@ public interface ETStrings
 	// Class Not Found Exception
 	MsgID E_CMN_CLASS_NOT_FOUND = new MsgID("E_CMN_CLASS_NOT_FOUND", rb);
 
-	/**
+	
+
+/**
 	 * XML 
 	 */
 	// XML Directory was not set
@@ -97,13 +103,17 @@ public interface ETStrings
 	// Error occurred parsing XML
 	MsgID E_CMN_XML_PARSE = new MsgID("E_CMN_XML_PARSE", rb);
 
-	/**
+	
+
+/**
 	 * Draw Engine 
 	 */
 
 	MsgID E_ENG_INIT_FAILED = new MsgID("E_ENG_INIT_FAILED", rb);
 	
-	/**
+	
+
+/**
 	 * Compartments 
 	 */
 

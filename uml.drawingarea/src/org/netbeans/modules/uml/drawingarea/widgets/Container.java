@@ -42,6 +42,7 @@
 
 package org.netbeans.modules.uml.drawingarea.widgets;
 
+
 /**
  * marker interface
  */

@@ -48,22 +48,30 @@ import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure
 
 public interface ICGOperationChangeNotification extends ICGSingleClassChangeNotification
 {
-	/**
+	
+
+/**
 	 * Gets / Sets Old Operation
 	*/
 	public IOperation getOldOperation();
 
-	/**
+	
+
+/**
 	 * Gets / Sets Old Operation
 	*/
 	public void setOldOperation( IOperation value );
 
-	/**
+	
+
+/**
 	 * Gets / Sets New Operation
 	*/
 	public IOperation getNewOperation();
 
-	/**
+	
+
+/**
 	 * Gets / Sets New Operation
 	*/
 	public void setNewOperation( IOperation value );

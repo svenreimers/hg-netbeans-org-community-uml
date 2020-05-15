@@ -65,6 +65,7 @@ import org.netbeans.modules.uml.core.support.umlsupport.IStrings;
 import org.netbeans.modules.uml.core.support.umlsupport.Log;
 import org.netbeans.modules.uml.core.support.umlsupport.Strings;
 
+
 /**
  * NetBeans (FFJ) will allow two or more file system that will overlap each other.
  * When this occurs a user can update one file and FFJ will not send events
@@ -77,7 +78,8 @@ public class FileSystemListener extends RepositoryAdapter
   private static boolean mounting = false;
   private Repository repository = null;
 
-  /**
+  
+/**
    *  The default FileSystemListener instance returned to callers of
    * getInstance(). Note: This does not imply that this class is a singleton!
    */
@@ -110,7 +112,9 @@ public class FileSystemListener extends RepositoryAdapter
       }
   }
 
-  /**
+  
+
+/**
    * Called when new file system is added to the pool.  When a new file system
    * is added check if it is overlapping any of the previous file systems.  If
    * the file system does overlap an existing file system notify the user.
@@ -126,7 +130,9 @@ public class FileSystemListener extends RepositoryAdapter
               && fs.isValid())
           Log.out("FSL: +++++++++ " + fs.getDisplayName());
 
-      /*
+      
+
+/*
       Frame      mainWnd = WindowManager.getDefault().getMainWindow();
 
       if(mainWnd.isDisplayable() == true)
@@ -211,7 +217,9 @@ public class FileSystemListener extends RepositoryAdapter
 //      return getJavaFiles(fs, null);
 //  }
 
-  /**
+  
+
+/**
    *  Given a file system, populates a collection of file names (absolute paths)
    * of all the Java source files in the file system.
    *
@@ -253,7 +261,9 @@ public class FileSystemListener extends RepositoryAdapter
 //      return hasJava;
 //  }
 
-  /**
+  
+
+/**
    * Check for an OVERLAPPING filesystem condition.  A file system is overlapping
    * if two file system in the repository cover the same folders in the Physical
    * file system.
@@ -292,7 +302,9 @@ public class FileSystemListener extends RepositoryAdapter
 //    return retVal;
 //  }
 
-  /**
+  
+
+/**
    * Checks if any of the existing FileSystems are overlapping the new filesystem.
    * @param newPath The filesystem path to compare to.
    * @return true if an existing file system overlaps, false otherwise.
@@ -320,7 +332,9 @@ public class FileSystemListener extends RepositoryAdapter
 //    return retVal;
 //  }
 
-  /**
+  
+
+/**
    * Checks if the new FileSystems is overlapping any of the old filesystems.
    * @param newPath The filesystem path to compare to.
    * @return true if the new file system overlaps, false otherwise.

@@ -189,7 +189,9 @@ public class ADProduct extends CoreProduct implements IADProduct
         super();
     }
     
-    /**
+    
+
+/**
      * Returns the ParseInfoCache used for storing/caching Parsed Source Code information
      *
      * @param pVal[out] the currently used IParseInformationCache object
@@ -201,7 +203,9 @@ public class ADProduct extends CoreProduct implements IADProduct
         return m_ParseInfoCache;
     }
     
-    /**
+    
+
+/**
      * Sets the ParseInfoCache used for storing/caching Parsed Source Code information
      *
      * @param newVal[in] the new IParseInformationCache object
@@ -213,7 +217,9 @@ public class ADProduct extends CoreProduct implements IADProduct
         m_ParseInfoCache = value;
     }
     
-    /**
+    
+
+/**
      * gets the ADProduct's code generation object
      */
     public ICodeGeneration getCodeGeneration()
@@ -221,7 +227,9 @@ public class ADProduct extends CoreProduct implements IADProduct
         return m_CodeGeneration;
     }
     
-    /**
+    
+
+/**
      * Sets the code generation object for the ADProduct
      */
     public void setCodeGeneration(ICodeGeneration value)
@@ -229,7 +237,9 @@ public class ADProduct extends CoreProduct implements IADProduct
         m_CodeGeneration = value;
     }
     
-    /**
+    
+
+/**
      * Creates a new Application and initializes the addins if asked.
      * If bInitializeAddins is false then call IProduct::InitializeAddIns.
      *
@@ -254,7 +264,9 @@ public class ADProduct extends CoreProduct implements IADProduct
         return m_Application;
     }
     
-    /**
+    
+
+/**
      * Creates an IADApplication which represents the UML Metamodel for this application.
      */
     private void createApplication()
@@ -270,7 +282,9 @@ public class ADProduct extends CoreProduct implements IADProduct
         return initialize2(true);
     }
     
-    /**
+    
+
+/**
      *
      * Creates the IADProduct, specific to the UML design domain.
      *
@@ -285,7 +299,9 @@ public class ADProduct extends CoreProduct implements IADProduct
         return m_Application;
     }
     
-    /**
+    
+
+/**
      * Returns the project tree that's in effect for the Describe product.
      *
      * @param pVal[out]
@@ -295,7 +311,9 @@ public class ADProduct extends CoreProduct implements IADProduct
         return m_ProjectTree;
     }
     
-    /**
+    
+
+/**
      * Sets the project tree that's in effect for the Describe product.
      *
      * @param newVal[in]
@@ -309,7 +327,9 @@ public class ADProduct extends CoreProduct implements IADProduct
         m_ProjectTree = newVal;
     }
     
-     /**
+     
+
+/**
      * Returns the project tree model 
      *
      * @param pVal[out]
@@ -319,7 +339,9 @@ public class ADProduct extends CoreProduct implements IADProduct
         return mProjectTreeModel;
     }
     
-    /**
+    
+
+/**
      * Sets the project tree model
      *
      * @param newVal[in]
@@ -329,7 +351,9 @@ public class ADProduct extends CoreProduct implements IADProduct
         mProjectTreeModel = newTreeModel;
     }
     
-    /**
+    
+
+/**
      * Returns the design center tree that's in effect for the Describe product.
      *
      * @param pVal[out]
@@ -339,7 +363,9 @@ public class ADProduct extends CoreProduct implements IADProduct
         return m_DesignCenterTree;
     }
     
-    /**
+    
+
+/**
      * Sets the design center tree that's in effect for the Describe product.
      *
      * @param newVal[in]
@@ -353,7 +379,9 @@ public class ADProduct extends CoreProduct implements IADProduct
         m_DesignCenterTree = newVal;
     }
     
-    /**
+    
+
+/**
      * Returns the property editor that's in effect for the Describe product.  This is the one in the
      * MFC GUI.
      *
@@ -364,7 +392,9 @@ public class ADProduct extends CoreProduct implements IADProduct
         return m_PropertyEditor;
     }
     
-    /**
+    
+
+/**
      * Sets the property editor that's in effect for the Describe product.  This is the one in the
      * MFC GUI.
      *
@@ -375,7 +405,9 @@ public class ADProduct extends CoreProduct implements IADProduct
         m_PropertyEditor = newVal;
     }
     
-    /**
+    
+
+/**
      * Returns the Diagram Manager which opens/closes and creates new diagrams in a gui.
      *
      * @param pVal[out]
@@ -385,7 +417,9 @@ public class ADProduct extends CoreProduct implements IADProduct
         return m_DiagramManager;
     }
     
-    /**
+    
+
+/**
      * Allows users to get/set the current project.
      *
      * @param newVal[in]
@@ -395,7 +429,9 @@ public class ADProduct extends CoreProduct implements IADProduct
         m_DiagramManager = newVal;
     }
     
-    /**
+    
+
+/**
      * Allows users to get/set the current project.
      *
      * @param pVal[out]
@@ -405,7 +441,9 @@ public class ADProduct extends CoreProduct implements IADProduct
         return m_ProjectManager;
     }
     
-    /**
+    
+
+/**
      * Sets the Diagram Manager which opens/closes and creates new diagrams in a gui.
      *
      * @param newVal[in]
@@ -415,7 +453,9 @@ public class ADProduct extends CoreProduct implements IADProduct
         m_ProjectManager = newVal;
     }
     
-    /**
+    
+
+/**
      * Allows user to perform various funtions on the gui.
      *
      * @param pVal[out]
@@ -425,7 +465,9 @@ public class ADProduct extends CoreProduct implements IADProduct
         return m_ProxyUserInterface;
     }
     
-    /**
+    
+
+/**
      * Allows user to perform various funtions on the gui.
      *
      * @param newVal[in]
@@ -435,7 +477,9 @@ public class ADProduct extends CoreProduct implements IADProduct
         m_ProxyUserInterface = newVal;
     }
     
-    /**
+    
+
+/**
      * Allows user to perform various funtions on the gui.
      *
      * @param pVal[out]
@@ -453,7 +497,9 @@ public class ADProduct extends CoreProduct implements IADProduct
     //		return m_AddInManager;
     //	}
     
-    /**
+    
+
+/**
      * Allows user to perform various funtions on the gui.
      *
      * @param newVal[in]
@@ -463,7 +509,9 @@ public class ADProduct extends CoreProduct implements IADProduct
     //		m_AddInManager = newVal;
     //	}
     
-    /**
+    
+
+/**
      * Adds a drawing area to our list of open drawings.
      */
     public void addDiagram(IDiagram pDiagram)
@@ -502,7 +550,9 @@ public class ADProduct extends CoreProduct implements IADProduct
     }
     
     
-    /**
+    
+
+/**
      * Removes a drawing area to our list of open drawings.
      */
     public void removeDiagram(IDiagram pDiagram)
@@ -522,7 +572,9 @@ public class ADProduct extends CoreProduct implements IADProduct
         }
     }
     
-    /**
+    
+
+/**
      * Returns an open drawing area based on the filename.
      *
      * @param pDiagram[out]
@@ -541,7 +593,9 @@ public class ADProduct extends CoreProduct implements IADProduct
         return retDia;
     }
     
-    /**
+    
+
+/**
      * Returns all open drawing ares in a safe array.
      *
      * @param pDiagrams[out]
@@ -565,7 +619,9 @@ public class ADProduct extends CoreProduct implements IADProduct
         return retObj;
     }
     
-        /* (non-Javadoc)
+        
+
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.ui.support.applicationmanager.IProduct#displayAddInDialog(int)
          */
     public void displayAddInDialog(int parentHwnd)
@@ -573,7 +629,9 @@ public class ADProduct extends CoreProduct implements IADProduct
         // TODO Auto-generated method stub
     }
     
-    /**
+    
+
+/**
      * Gets an addin based on the clsid.
      *
      * @param pAddIN[out]
@@ -589,7 +647,9 @@ public class ADProduct extends CoreProduct implements IADProduct
     //		return retObj;
     //	}
     
-    /**
+    
+
+/**
      * Establish additional EventDispatchers by adding them to the internal
      * EventDispatchController.
      */
@@ -633,7 +693,9 @@ public class ADProduct extends CoreProduct implements IADProduct
         }
     }
     
-    /**
+    
+
+/**
      * Creates the listeners for the diagrams.
      */
     private void establishDiagramListeners()
@@ -642,7 +704,9 @@ public class ADProduct extends CoreProduct implements IADProduct
         m_DiagramBackupCleaner = new DiagramBackupCleaner();
     }
     
-    /**
+    
+
+/**
      *
      * Revokes all the EventDispatchers installed by this product.
      *
@@ -664,7 +728,9 @@ public class ADProduct extends CoreProduct implements IADProduct
         }
     }
     
-    /**
+    
+
+/**
      * Creates the listeners for the diagrams.
      */
     private void revokeDiagramListeners()
@@ -679,7 +745,9 @@ public class ADProduct extends CoreProduct implements IADProduct
         }
     }
     
-    /**
+    
+
+/**
      *
      * Deinitalizes all loaded addins.
      *
@@ -691,7 +759,9 @@ public class ADProduct extends CoreProduct implements IADProduct
     //		m_AddInController.unloadAddIns();
     //	}
     
-    /**
+    
+
+/**
      * Returns the IApplication that this product wraps.
      *
      * @param pVal[out] The returned IApplication
@@ -710,7 +780,9 @@ public class ADProduct extends CoreProduct implements IADProduct
         return retVal;
     }
     
-    /**
+    
+
+/**
      * Sets the IApplication that this product wraps.
      *
      * @param newVal[in] The new IApplication to wrap
@@ -726,7 +798,9 @@ public class ADProduct extends CoreProduct implements IADProduct
         }
     }
     
-    /**
+    
+
+/**
      * Returns a shared IMessenger object for the product.  Using a shared messenger allows
      * the application to be silenced during long operations.
      *
@@ -742,7 +816,9 @@ public class ADProduct extends CoreProduct implements IADProduct
     }
     
     
-    /**
+    
+
+/**
      * Returns a shared IMessenger object for the product.  Using a shared messenger allows
      * the application to be silenced during long operations.
      *
@@ -757,7 +833,9 @@ public class ADProduct extends CoreProduct implements IADProduct
         return m_Messenger;
     }
     
-    /**
+    
+
+/**
      *
      * Initializes all addins found in the registry.
      *
@@ -774,11 +852,13 @@ public class ADProduct extends CoreProduct implements IADProduct
         //        if(m_AddInController != null)
         //        {
         //        	//m_AddInController.loadAddins();
-        //		    m_AddInController.loadStartUps(this);
+        
         //        }
     }
     
-    /**
+    
+
+/**
      * The current SCC interface.
      *
      * @param pVal[out]
@@ -792,7 +872,9 @@ public class ADProduct extends CoreProduct implements IADProduct
         return m_SCMIntegrator;
     }
     
-    /**
+    
+
+/**
      * Returns the Progress Controller
      *
      * @param pVal[out]
@@ -802,7 +884,9 @@ public class ADProduct extends CoreProduct implements IADProduct
         return m_ProgressCtrl;
     }
     
-    /**
+    
+
+/**
      * Returns the Progress Dialog
      *
      * @param pVal[out]
@@ -833,7 +917,9 @@ public class ADProduct extends CoreProduct implements IADProduct
         return m_ProgressDialog;
     }
     
-    /**
+    
+
+/**
      * Sets the Progress controller.
      *
      * @param newVal[in]
@@ -843,7 +929,9 @@ public class ADProduct extends CoreProduct implements IADProduct
         m_ProgressCtrl = newVal;
     }
     
-    /**
+    
+
+/**
      * Returns the Accelerator Manager so a window can register itself.
      *
      * @param pManager[out]
@@ -853,7 +941,9 @@ public class ADProduct extends CoreProduct implements IADProduct
         return m_AcceleratorMgr;
     }
     
-    /**
+    
+
+/**
      * Sets the Accelerator Manager for the application.
      *
      * @param pManager[in]
@@ -863,7 +953,9 @@ public class ADProduct extends CoreProduct implements IADProduct
         m_AcceleratorMgr = newVal;
     }
     
-    /**
+    
+
+/**
      * Returns the Accelerator Manager so a window can register itself.
      *
      * @param pDiagram[out]
@@ -873,7 +965,9 @@ public class ADProduct extends CoreProduct implements IADProduct
         return m_Diagram;
     }
     
-    /**
+    
+
+/**
      * Sets the Accelerator Manager for the application.
      *
      * @param pDiagram[in]
@@ -883,7 +977,9 @@ public class ADProduct extends CoreProduct implements IADProduct
         m_Diagram = newVal;
     }
     
-    /**
+    
+
+/**
      *	AddControl(UINT ID, IDispatch* pUnk)
      *
      *	Adds key=ID and value=IDispatch* to map for future retrieval.
@@ -904,7 +1000,9 @@ public class ADProduct extends CoreProduct implements IADProduct
         }
     }
     
-        /*
+        
+
+/*
          *	GetControl(UINT ID, IDispatch ** ppUnk).
          *
          *	Queries for the IDispatch pointer to a control given an Id.
@@ -918,7 +1016,9 @@ public class ADProduct extends CoreProduct implements IADProduct
         return retObj;
     }
     
-    /**
+    
+
+/**
      *	RemoveControl(UINT ID)
      *
      *	Removes a key=ID and value=IDispatch* from the a map.
@@ -934,7 +1034,9 @@ public class ADProduct extends CoreProduct implements IADProduct
         }
     }
     
-    /**
+    
+
+/**
      * Until TS gets copy/paste between diagrams working, this is the text string that tells what the
      * user last copied.  It's produced by CDragAndDropSupport in MFCSupport.dll.
      *
@@ -945,7 +1047,9 @@ public class ADProduct extends CoreProduct implements IADProduct
         return m_CrossDiagramClipboardString;
     }
     
-    /**
+    
+
+/**
      * Until TS gets copy/paste between diagrams working, this is the text string that tells what the
      * user last copied.  It's produced by CDragAndDropSupport in MFCSupport.dll.
      *
@@ -956,7 +1060,9 @@ public class ADProduct extends CoreProduct implements IADProduct
         m_CrossDiagramClipboardString = value;
     }
     
-    /**
+    
+
+/**
      * Returns the design center tree that's in effect for the Describe product.
      *
      * @param pVal[out] The VBA integrator
@@ -966,7 +1072,9 @@ public class ADProduct extends CoreProduct implements IADProduct
         return m_VBAIntegrator;
     }
     
-    /**
+    
+
+/**
      * Sets the design center tree that's in effect for the Describe product.
      *
      * @param newVal[in] The VBA integrator
@@ -980,7 +1088,9 @@ public class ADProduct extends CoreProduct implements IADProduct
         m_VBAIntegrator = value;
     }
     
-    /**
+    
+
+/**
      * Register to all our various dispatchers.
      */
     private void registerToDispatchers()
@@ -997,7 +1107,9 @@ public class ADProduct extends CoreProduct implements IADProduct
         }
     }
     
-    /**
+    
+
+/**
      * Revokes from the various dispatchers.
      */
     private void revokeFromDispatchers()
@@ -1019,7 +1131,9 @@ public class ADProduct extends CoreProduct implements IADProduct
         }
     }
     
-    /**
+    
+
+/**
      * Deletes these elements from closed diagrams.
      *
      * @param pElements[in]
@@ -1042,7 +1156,9 @@ public class ADProduct extends CoreProduct implements IADProduct
         return null;
     }
     
-    /**
+    
+
+/**
      * Handler for IPreferenceManagerEventsSink event informing us that a preference has changed.
      *
      * @param pVal[out] the currently used IParseInformationCache object
@@ -1075,8 +1191,8 @@ public class ADProduct extends CoreProduct implements IADProduct
             if (colorCount > 0 || fontCount > 0)
             {
                 // Ask the user if changing colors is ok
-                String message = "";//loadString(IDS_CHANGEOPENDIAGRAMS);
-                String title = "";//loadString(IDS_CHANGEOPENDIAGRAMSTITLE);
+                String message = "";
+                String title = "";
                 IQuestionDialog pDialog = new SwingQuestionDialogImpl();
                 QuestionResponse result = pDialog.displaySimpleQuestionDialogWithCheckbox(MessageDialogKindEnum.SQDK_YESNO,
                         MessageIconKindEnum.EDIK_ICONWARNING,
@@ -1128,7 +1244,9 @@ public class ADProduct extends CoreProduct implements IADProduct
         }
     }
     
-    /**
+    
+
+/**
      * Returns the number of diagrams that aren't readonly
      */
     private int getNumNonReadonlyDiagrams()
@@ -1150,7 +1268,9 @@ public class ADProduct extends CoreProduct implements IADProduct
         return numNonReadonly;
     }
     
-    /**
+    
+
+/**
      *
      * This method will always return true in the out parameter, indicating
      * that this product is part of a larger GUI shell.
@@ -1165,7 +1285,9 @@ public class ADProduct extends CoreProduct implements IADProduct
         return true;
     }
     
-    /**
+    
+
+/**
      * Gets the Products DiagramCleanupManager.
      *
      * @param pVal[out] The DiagramCleanupManager

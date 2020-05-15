@@ -43,11 +43,8 @@
  */
 
 
-/*
- * File       : GeneralizationStateHandler.java
- * Created on : Dec 11, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.statehandlers;
 
 import org.dom4j.Element;

@@ -57,7 +57,8 @@ import org.netbeans.modules.uml.core.metamodel.infrastructure.RelationFactory;
  */
 public class ActivityRelationFactory extends RelationFactory implements IActivityRelationFactory {
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivityRelationFactory#createEdge(org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivityNode, org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivityNode, org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivity)
 	 */
 	public IMultiFlow createEdge(IActivityNode from, IActivityNode to, IActivity activity) {

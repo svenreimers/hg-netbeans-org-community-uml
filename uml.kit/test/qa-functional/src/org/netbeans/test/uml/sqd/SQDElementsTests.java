@@ -189,7 +189,7 @@ public class SQDElementsTests extends UMLTestCase {
             //creating element
             //Point p = dia.getPointForLifeline(100);
             dia.putElementOnDiagram(LINE_NAME+":"+LINE_NAME, ElementTypes.ACTOR_LIFELINE);
-            //dia.createGenericElementOnDiagram(LINE_NAME+":"+LINE_NAME, ElementTypes.ACTOR_LIFELINE, p.x, p.y, LibProperties.getCurrentNamer(ElementTypes.LIFELINE));
+            
                         
             eventTool.waitNoEvent(1000);
             dia = new SequenceDiagramOperator(DIAGRAM_NAME);
@@ -432,7 +432,7 @@ public class SQDElementsTests extends UMLTestCase {
             
             //creating element
             //Point p = dia.getPointForLifeline(100);
-            //dia.createGenericElementOnDiagram(LINE_NAME+":"+LINE_NAME, ElementTypes.ACTOR_LIFELINE, p.x, p.y, LibProperties.getCurrentNamer(ElementTypes.LIFELINE));                        
+            
             dia.putElementOnDiagram(LINE_NAME+":"+LINE_NAME, ElementTypes.ACTOR_LIFELINE);
 
             eventTool.waitNoEvent(1000);
@@ -474,7 +474,7 @@ public class SQDElementsTests extends UMLTestCase {
             
             //creating element
             //Point p = dia.getPointForLifeline(100);
-            //dia.createGenericElementOnDiagram(LINE_NAME+":"+LINE_NAME, ElementTypes.ACTOR_LIFELINE, p.x, p.y, LibProperties.getCurrentNamer(ElementTypes.LIFELINE));                        
+            
             dia.putElementOnDiagram(LINE_NAME+":"+LINE_NAME, ElementTypes.ACTOR_LIFELINE);
 
             eventTool.waitNoEvent(1000);

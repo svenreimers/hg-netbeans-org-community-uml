@@ -42,6 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
+
+
 /*
  * Created on Nov 5, 2003
  *
@@ -318,7 +320,9 @@ public class JavaClassChangeHandler extends JavaChangeHandler
 		}
 	}
 	
-	/**
+	
+
+/**
 	 * Renames the name of the contructor when the name of the class changes.
 	 *
 	 * @param pClass[in] The class that contains the constructor.

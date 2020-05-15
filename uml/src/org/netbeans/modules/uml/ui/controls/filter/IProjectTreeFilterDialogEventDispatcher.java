@@ -49,6 +49,7 @@ package org.netbeans.modules.uml.ui.controls.filter;
 import org.netbeans.modules.uml.core.eventframework.IEventDispatcher;
 import org.netbeans.modules.uml.core.eventframework.IEventPayload;
 
+
 /**
  * The dispatcher used to fire project tree filter events.
  *
@@ -56,14 +57,16 @@ import org.netbeans.modules.uml.core.eventframework.IEventPayload;
 public interface IProjectTreeFilterDialogEventDispatcher
    extends IEventDispatcher
 {
-   /**
+   
+/**
     * Register for the IProjectTreeFilterDialogEventsSink events.
     *
     * @param sink The listener to be notified of events.
     */
    public void registerProjectTreeFilterDialogEvents(IProjectTreeFilterDialogEventsSink sink);
    
-   /**
+   
+/**
     * Revoke a IProjectTreeFilterDialogEventsSink from the event dispatcher.
     * The specified sink will no longer receive IProjectTreeFilterDialogEventsSink
     * events.
@@ -72,7 +75,9 @@ public interface IProjectTreeFilterDialogEventDispatcher
     */
    public void revokeProjectTreeFilterDialogEvents(IProjectTreeFilterDialogEventsSink sink);
    
-   /**
+   
+
+/**
     * Fires the onProjectTreeFilterDialogInit to all registered 
     * IProjectTreeFilterDialogEventsSink sinkes.
     * 
@@ -81,7 +86,9 @@ public interface IProjectTreeFilterDialogEventDispatcher
     */
    public void fireProjectTreeFilterDialogInit(IFilterDialog dialog, IEventPayload payload);
    
-   /**
+   
+
+/**
     * Fires the onProjectTreeFilterDialogOKActivated to all registered 
     * IProjectTreeFilterDialogEventsSink sinkes.
     * 

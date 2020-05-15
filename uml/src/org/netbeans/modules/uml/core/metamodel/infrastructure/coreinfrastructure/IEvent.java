@@ -49,17 +49,23 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.IValueSpecificati
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 public interface IEvent extends IElement
 {
-	/**
+	
+
+/**
 	 * method RemoveArgument
 	*/
 	public void removeArgument( IValueSpecification arg );
 
-	/**
+	
+
+/**
 	 * method AddArgument
 	*/
 	public void addArgument( IValueSpecification arg );
 
-	/**
+	
+
+/**
 	 * property Arguments
 	*/
 	public ETList<IValueSpecification> getArguments();

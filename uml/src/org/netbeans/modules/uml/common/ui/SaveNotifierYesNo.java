@@ -72,7 +72,9 @@ public class SaveNotifierYesNo
         return instance;
     }
     
-    /**
+    
+
+/**
      * Creates a new instance of SaveNotifierYesNo
      */
     private SaveNotifierYesNo() 

@@ -42,11 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : ComplexActivityGroup.java
- * Created on : Sep 17, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.metamodel.common.commonactivities;
 
 import org.dom4j.Document;
@@ -77,7 +74,9 @@ public class ComplexActivityGroup extends IterationActivityGroup implements ICom
     {
         buildNodePresence("UML:ComplexActivityGroup", doc, node);
     }       
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactivities.IInterruptibleActivityRegion#addInterruptingEdge(org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivityEdge)
      */
     public void addInterruptingEdge(IActivityEdge pEdge)
@@ -85,7 +84,9 @@ public class ComplexActivityGroup extends IterationActivityGroup implements ICom
         interActRegion.addInterruptingEdge(pEdge);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactivities.IInterruptibleActivityRegion#getInterruptingEdges()
      */
     public ETList<IActivityEdge> getInterruptingEdges()
@@ -93,7 +94,9 @@ public class ComplexActivityGroup extends IterationActivityGroup implements ICom
         return interActRegion.getInterruptingEdges();
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactivities.IInterruptibleActivityRegion#removeInterruptingEdge(org.netbeans.modules.uml.core.metamodel.common.commonactivities.IActivityEdge)
      */
     public void removeInterruptingEdge(IActivityEdge pEdge)

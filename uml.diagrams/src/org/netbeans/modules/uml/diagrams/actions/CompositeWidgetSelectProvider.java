@@ -47,6 +47,8 @@ import org.netbeans.modules.uml.diagrams.nodes.CompartmentWidget;
 import org.netbeans.modules.uml.diagrams.nodes.CompositeNodeWidget;
 import org.netbeans.modules.uml.drawingarea.engines.DiagramEngine;
 
+
+
 /**
  *
  * This select provider is used to set a flag on inner widget that 

@@ -53,6 +53,7 @@ import org.dom4j.Element;
 import org.dom4j.Node;
 import java.util.List;
 
+
 /**
  *
  * This class hides the complexity of looking up valid ElementType Diagram Drop Targets.
@@ -77,7 +78,9 @@ public class ValidDropTargets
         return m_Instance;
     }
 
-    /*
+    
+
+/*
      * Returns true if the input element type is allowed on the diagram.
      */
     public boolean isValidDropTarget(String ElementType,

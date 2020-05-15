@@ -42,6 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
+
+
 /*
  * Created on Mar 5, 2004
  *
@@ -86,7 +88,9 @@ public class AssociateDlgAddIn implements IETContextMenuHandler
     protected IProjectTreeControl m_ProjectTree = null;
     protected Object m_AssociateContext = null;
     
-    /**
+    
+
+/**
      * Message from the project tree that a context menu is about to be displayed
      */
     public void onProjectTreeContextMenuPrepare(IProjectTreeControl pControl, IMenuManager pContextMenu)
@@ -100,7 +104,9 @@ public class AssociateDlgAddIn implements IETContextMenuHandler
         addAssociateMenuItem(pContextMenu);
     }
     
-    /**
+    
+
+/**
      * Message from the drawing area that a context menu is about to be displayed.
      *
      * @param pParentDiagram [in] The diagram where the context menu is about to appear.
@@ -122,7 +128,9 @@ public class AssociateDlgAddIn implements IETContextMenuHandler
         }
     }
     
-    /**
+    
+
+/**
      * Add the associate menu to the project tree menu
      *
      * @param[in]	pContextMenu	The current context menu
@@ -135,7 +143,7 @@ public class AssociateDlgAddIn implements IETContextMenuHandler
         //		Object cpItemClickedOn = pContextMenu.getContextObject();
 //		if( !(cpItemClickedOn instanceof TSLabel))
 //		{
-//			pContextMenu.add(createMenuAction(LabelManager.loadString("IDS_POPUP_ASSOCIATE"), "MBK_ASSOCIATEDLG_ASSOCIATEWITH"));
+
 //		}
                 pContextMenu.add(createMenuAction(NbBundle.getMessage(
                                 AssociateDlg.class, "IDS_POPUP_ASSOCIATE"),
@@ -353,7 +361,9 @@ public class AssociateDlgAddIn implements IETContextMenuHandler
         handle(pResults);
     }
     
-    /**
+    
+
+/**
      * Builds a list of selected elements either from the project tree or the diagram
      *
      *
@@ -523,7 +533,9 @@ public class AssociateDlgAddIn implements IETContextMenuHandler
         return pResults;
     }
     
-    /**
+    
+
+/**
      * Get the project of what is selected in the tree.  If multiple projects
      * are selected, we are just getting the first one
      *
@@ -600,7 +612,9 @@ public class AssociateDlgAddIn implements IETContextMenuHandler
         return pProject;
     }
     
-    /**
+    
+
+/**
      * Determines whether or not a project tree item is selected in the tree
      *
      * @param pControl[in]			The tree control
@@ -636,7 +650,9 @@ public class AssociateDlgAddIn implements IETContextMenuHandler
         return bSel;
     }
     
-    /**
+    
+
+/**
      * Determines whether the passed in element is a member of an etpat project file
      *
      *
@@ -676,7 +692,9 @@ public class AssociateDlgAddIn implements IETContextMenuHandler
         return bMember;
     }
     
-    /**
+    
+
+/**
      * Determines whether or not the workspace is selected in the tree
      *
      * @param pControl[in]			The tree control
@@ -711,7 +729,9 @@ public class AssociateDlgAddIn implements IETContextMenuHandler
         return bSel;
     }
     
-    /**
+    
+
+/**
      * Determines whether or not a folder node is selected in the tree
      *
      * @param pControl[in]			The tree control

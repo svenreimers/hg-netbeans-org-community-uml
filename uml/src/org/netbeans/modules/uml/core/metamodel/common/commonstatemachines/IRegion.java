@@ -50,32 +50,44 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 public interface IRegion extends INamespace
 {
-	/**
+	
+
+/**
 	 * method AddSubVertex
 	*/
 	public void addSubVertex( IStateVertex pVert );
 
-	/**
+	
+
+/**
 	 * method RemoveSubVertex
 	*/
 	public void removeSubVertex( IStateVertex pVert );
 
-	/**
+	
+
+/**
 	 * property SubVertexes
 	*/
 	public ETList<IStateVertex> getSubVertexes();
 
-	/**
+	
+
+/**
 	 * method AddTransition
 	*/
 	public void addTransition( ITransition pTrans );
 
-	/**
+	
+
+/**
 	 * method RemoveTransition
 	*/
 	public void removeTransition( ITransition pTrans );
 
-	/**
+	
+
+/**
 	 * property Transitions
 	*/
 	public ETList<ITransition> getTransitions();

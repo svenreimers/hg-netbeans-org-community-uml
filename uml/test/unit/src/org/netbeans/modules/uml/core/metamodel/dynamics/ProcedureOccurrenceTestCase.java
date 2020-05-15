@@ -46,6 +46,8 @@
 package org.netbeans.modules.uml.core.metamodel.dynamics;
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation;
 import org.netbeans.modules.uml.core.AbstractUMLTestCase;
+
+
 /**
  * Test cases for ProcedureOccurrence.
  */
@@ -58,7 +60,9 @@ public class ProcedureOccurrenceTestCase extends AbstractUMLTestCase
 
     private IProcedureOccurrence po;
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see junit.framework.TestCase#setUp()
      */
     protected void setUp() throws Exception

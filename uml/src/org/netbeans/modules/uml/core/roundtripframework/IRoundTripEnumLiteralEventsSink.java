@@ -42,6 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
+
+
 /*
  * IRoundTripEnumLiteralEventsSink.java
  *
@@ -56,6 +58,7 @@ package org.netbeans.modules.uml.core.roundtripframework;
 
 import org.netbeans.modules.uml.core.support.umlsupport.IResultCell;
 
+
 /**
  * IRoundTripEnumLiteralEventsSink provides the event listener interface that is used
  * to listen to round trip enumeration literals events.
@@ -63,12 +66,14 @@ import org.netbeans.modules.uml.core.support.umlsupport.IResultCell;
  */
 public interface IRoundTripEnumLiteralEventsSink
 {
-    /**
+    
+/**
      * Fired after the RequestProcessor has filtered its changes, but before actual processing of the requests has been done.
      */
     public void onPreEnumLiteralChangeRequest( IChangeRequest newVal, IResultCell cell );
     
-    /**
+    
+/**
      * Fired after the RequestProcessor has filtered its changes, allowing all listeners to process the requests.
      */
     public void onEnumLiteralChangeRequest( IChangeRequest newVal, IResultCell cell );

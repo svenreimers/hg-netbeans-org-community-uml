@@ -42,15 +42,12 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File         : IClassChangeListener.java
- * Version      : 1.1
- * Description  : Listens to class changes from the Describe model.
- * Author       : Darshan
- */
+
+
 package org.netbeans.modules.uml.integration.ide.listeners;
 import java.util.*;
 import org.netbeans.modules.uml.integration.ide.events.ClassInfo;
+
 
 /**
  * An interface for classes that wish to be notified of class change

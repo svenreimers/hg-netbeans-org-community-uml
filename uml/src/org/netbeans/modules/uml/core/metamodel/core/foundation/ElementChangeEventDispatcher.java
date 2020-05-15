@@ -71,7 +71,9 @@ public class ElementChangeEventDispatcher extends EventDispatcher implements IEl
 	private EventManager< IRedefinableElementModifiedEventsSink > m_RedefSink = null;
 	private EventManager< IPackageEventsSink > m_PackSink = null;
 	
-	/**
+	
+
+/**
 	 * 
 	 */
 	public ElementChangeEventDispatcher() {
@@ -91,7 +93,9 @@ public class ElementChangeEventDispatcher extends EventDispatcher implements IEl
 		m_PackSink = new EventManager<IPackageEventsSink>();
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Registers the passed-in event sink with this dispatcher.
 	 *
@@ -106,7 +110,9 @@ public class ElementChangeEventDispatcher extends EventDispatcher implements IEl
 		m_ElementSink.addListener(handler, null);
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Removes a listener from the current list.
 	 *
@@ -120,7 +126,9 @@ public class ElementChangeEventDispatcher extends EventDispatcher implements IEl
 		m_ElementSink.removeListener(handler);
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Registers the passed-in handler on the dispatch list that will be notified of any element modified event,
 	 * regardless of whether or not the events are plugged.
@@ -136,7 +144,9 @@ public class ElementChangeEventDispatcher extends EventDispatcher implements IEl
 		m_GuarenteedElementSink.addListener( handler, null );
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Removes a listener from the current guarenteed list.
 	 *
@@ -150,7 +160,9 @@ public class ElementChangeEventDispatcher extends EventDispatcher implements IEl
 		m_GuarenteedElementSink.removeListener( handler );
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Registers the passed-in event sink with this dispatcher.
 	 *
@@ -165,7 +177,9 @@ public class ElementChangeEventDispatcher extends EventDispatcher implements IEl
 		m_MetaAttrSink.addListener( handler, null );
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Removes a listener from the current list.
 	 *
@@ -179,7 +193,9 @@ public class ElementChangeEventDispatcher extends EventDispatcher implements IEl
 		m_MetaAttrSink.removeListener( handler );
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Registers the passed-in event sink with this dispatcher.
 	 *
@@ -194,7 +210,9 @@ public class ElementChangeEventDispatcher extends EventDispatcher implements IEl
 		m_DocSink.addListener( handler, null );
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Removes a listener from the current list.
 	 *
@@ -208,7 +226,9 @@ public class ElementChangeEventDispatcher extends EventDispatcher implements IEl
 		m_DocSink.removeListener( handler );
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Registers the passed-in event sink with this dispatcher.
 	 *
@@ -223,7 +243,9 @@ public class ElementChangeEventDispatcher extends EventDispatcher implements IEl
 		m_NamespaceSink.addListener( handler, null );
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Removes a listener from the current list.
 	 *
@@ -237,7 +259,9 @@ public class ElementChangeEventDispatcher extends EventDispatcher implements IEl
 		m_NamespaceSink.removeListener( handler );
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Registers the passed-in event sink with this dispatcher.
 	 *
@@ -252,7 +276,9 @@ public class ElementChangeEventDispatcher extends EventDispatcher implements IEl
 		m_NamedElementSink.addListener( handler, null );
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Removes a listener from the current list.
 	 *
@@ -266,7 +292,9 @@ public class ElementChangeEventDispatcher extends EventDispatcher implements IEl
 		m_NamedElementSink.removeListener( handler );
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Registers the passed-in event sink with this dispatcher.
 	 *
@@ -281,7 +309,9 @@ public class ElementChangeEventDispatcher extends EventDispatcher implements IEl
 		m_ImportSink.addListener( handler, null );
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Removes a listener from the current list.
 	 *
@@ -336,7 +366,9 @@ public class ElementChangeEventDispatcher extends EventDispatcher implements IEl
 		m_PackSink.removeListener( handler );
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Dispatches the OnElementPreModified event.
 	 *
@@ -393,7 +425,9 @@ public class ElementChangeEventDispatcher extends EventDispatcher implements IEl
 		return proceed;
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Dispatches the OnElementModified event.
 	 *
@@ -440,7 +474,9 @@ public class ElementChangeEventDispatcher extends EventDispatcher implements IEl
 		}
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Dispatches the OnMetaAttributePreModified event.
 	 *
@@ -471,7 +507,9 @@ public class ElementChangeEventDispatcher extends EventDispatcher implements IEl
 		return proceed;
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Dispatches the OnMetaAttributeModified event.
 	 *
@@ -497,7 +535,9 @@ public class ElementChangeEventDispatcher extends EventDispatcher implements IEl
 		
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Fired whenever the documentation field of an element is about to be modified.
 	 *
@@ -539,7 +579,9 @@ public class ElementChangeEventDispatcher extends EventDispatcher implements IEl
 		return proceed;
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Fired whenever an element's documentation field has been modified.
 	 *
@@ -566,7 +608,9 @@ public class ElementChangeEventDispatcher extends EventDispatcher implements IEl
 		
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Fired whenever the documentation field of an element is about to
 	 * be modified.
@@ -609,7 +653,9 @@ public class ElementChangeEventDispatcher extends EventDispatcher implements IEl
 		return proceed;
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Fired whenever an element's documentation field has been modified.
 	 *
@@ -644,7 +690,9 @@ public class ElementChangeEventDispatcher extends EventDispatcher implements IEl
 		
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Fired whenever the name of the passed-in element is about to change.
 	 *
@@ -687,7 +735,9 @@ public class ElementChangeEventDispatcher extends EventDispatcher implements IEl
 		return proceed;
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Fired whenever the element's name has changed.
 	 *
@@ -713,7 +763,9 @@ public class ElementChangeEventDispatcher extends EventDispatcher implements IEl
 		
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Fired whenever the visibility value of the passed-in element
 	 * is about to change.
@@ -756,7 +808,9 @@ public class ElementChangeEventDispatcher extends EventDispatcher implements IEl
 		return proceed;
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Fired whenever the visibility value of the passed-in element 
 	 * has changed.
@@ -782,7 +836,9 @@ public class ElementChangeEventDispatcher extends EventDispatcher implements IEl
 		
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Fired whenever the name of the passed-in element is about to change.
 	 *
@@ -825,7 +881,9 @@ public class ElementChangeEventDispatcher extends EventDispatcher implements IEl
 		return proceed;
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Fired whenever the element's name has changed.
 	 *
@@ -852,7 +910,9 @@ public class ElementChangeEventDispatcher extends EventDispatcher implements IEl
 		
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Fired whenever the visibility value of the passed-in element is
 	 * about to change..
@@ -896,7 +956,9 @@ public class ElementChangeEventDispatcher extends EventDispatcher implements IEl
 		return proceed;
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Fired whenever the visibility value of the passed-in element
 	 * has changed.
@@ -1558,7 +1620,9 @@ public class ElementChangeEventDispatcher extends EventDispatcher implements IEl
 		
 	}
 
-	/**
+	
+
+/**
 	 * IEventDispatcher override.  Returns the number of registered sinks
 	 */
 	public int getNumRegisteredSinks()

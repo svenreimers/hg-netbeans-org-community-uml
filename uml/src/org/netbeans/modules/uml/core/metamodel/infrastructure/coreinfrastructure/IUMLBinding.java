@@ -49,40 +49,52 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.IDirectedRelation
 
 public interface IUMLBinding extends IDirectedRelationship
 {
-	/**
+	
+
+/**
 	 * Retrieves the formal template parameter that is associated with 
          * this substitution.
 	 */
 	public IParameterableElement getFormal();
 
-	/**
+	
+
+/**
 	 * Sets the formal template parameter that is associated with 
          * this substitution.  This method takes the formal template parameter
          * model element.
          */
 	public void setFormal( IParameterableElement value );
         
-        /**
+        
+
+/**
 	 * Sets the formal template parameter that is associated with 
          * this substitution.  This method takes the name of the formal 
          * template parameter model element.
          */        
 	public void setFormal2( String value );
 
-	/**
+	
+
+/**
 	 * Retrieves the elements that are the actual parameter for this 
          * substitution.
          */
 	public IParameterableElement getActual();
 
-	/**
+	
+
+/**
 	 * Sets the elements that are the actual parameter for this 
          * substitution.  This method takes the actual template parameter
          * model element.
          */
 	public void setActual( IParameterableElement value );
         
-        /**
+        
+
+/**
 	 * Sets the elements that are the actual parameter for this 
          * substitution.  This method takes the name of the actual template 
          * parameter model element.

@@ -43,6 +43,8 @@
  */
 
 
+
+
 /*
  * Created on Jun 18, 2003
  *
@@ -142,7 +144,9 @@ public class JFindTable extends JTable
 	
 	private class FindTableCellRenderer extends DefaultTableCellRenderer implements TableCellRenderer
 	{
-		/* (non-Javadoc)
+		
+
+/* (non-Javadoc)
 		 * @see javax.swing.table.TableCellRenderer#getTableCellRendererComponent(javax.swing.JTable, java.lang.Object, boolean, boolean, int, int)
 		 */
 		public Component getTableCellRendererComponent(JTable table, 
@@ -194,7 +198,9 @@ public class JFindTable extends JTable
 	}
 	public class FindPopupListener extends MouseAdapter
 	{
-		/**
+		
+
+/**
 		 * 
 		 */
 		public FindPopupListener()

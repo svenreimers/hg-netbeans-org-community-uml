@@ -47,6 +47,8 @@ package org.netbeans.modules.uml.core.reverseengineering.reframework;
 
 import org.netbeans.modules.uml.core.AbstractUMLTestCase;
 
+
+
 /**
  * Test cases for RECreateAction.
  */
@@ -59,7 +61,9 @@ public class RECreateActionTestCase extends AbstractRETestCase
 
     private RECreateAction reca;
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see junit.framework.TestCase#setUp()
      */
     protected void setUp() throws Exception

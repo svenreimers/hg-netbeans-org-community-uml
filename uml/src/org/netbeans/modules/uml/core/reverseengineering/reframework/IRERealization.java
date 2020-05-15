@@ -46,22 +46,30 @@ package org.netbeans.modules.uml.core.reverseengineering.reframework;
 import org.dom4j.Node;
 public interface IRERealization
 {
-	/**
+	
+
+/**
 	 * Get / Set the XML DOM node that contains the realization information.
 	*/
 	public Node getDOMNode();
 
-	/**
+	
+
+/**
 	 * Get / Set the XML DOM node that contains the realization information.
 	*/
 	public void setDOMNode( Node value );
 
-	/**
+	
+
+/**
 	 * Retrieves the number of implemented interfaces.
 	*/
 	public int getCount();
 
-	/**
+	
+
+/**
 	 * Retrieves an implemented interface from the collection.
 	*/
 	public IREInterface item( int index );

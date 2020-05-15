@@ -75,7 +75,9 @@ final class PreferenceHelper {
         return sheet;
     }
 
-    /**
+    
+
+/**
      * analyzes subelements of the root element and puts them into children or properties lists 
      * @param root element to analyze 
      * @param children list of subelements that should be presented as node children
@@ -136,7 +138,9 @@ final class PreferenceHelper {
         return false;
     }
 
-    /**
+    
+
+/**
      * Does the passed-in property element have at least two levels of children.
      *
      * @param pEle	The property element in question
@@ -169,7 +173,9 @@ final class PreferenceHelper {
         return isGrandParent;
     }
 
-    /**
+    
+
+/**
      * Does the passed-in property element have at least one level of children.
      *
      * @param pEle The property element in question

@@ -46,47 +46,65 @@ package org.netbeans.modules.uml.core.support.umlmessagingcore;
 
 public interface ICoreBusyCtrl
 {
-	/**
+	
+
+/**
 	 * Begins the busy state.
 	*/
 	public long begin();
 
-	/**
+	
+
+/**
 	 * Begins the busy state with a message.
 	*/
 	public long begin( String sMsg );
 
-	/**
+	
+
+/**
 	 * Begins the busy state with a message.
 	*/
 	public long begin( int hInstance, int nID );
 
-	/**
+	
+
+/**
 	 * Ends the busy state.
 	*/
 	public long end();
 
-	/**
+	
+
+/**
 	 * If we are in a busy state then this routine changes the text.
 	*/
 	public long updateIfActive( int hInstance, int nID );
 
-	/**
+	
+
+/**
 	 * Begins the progress control (thermometer)
 	*/
 	public long beginProgress( String message, int nUpper, int nInitialPos );
 
-	/**
+	
+
+/**
 	 * Ends the progress control (thermometer)
 	*/
 	public long endProgress();
 
-	/**
+	
+
+/**
 	 * Sets the current position - leaves the text the same.
 	*/
 	public long setPos( int nPos );
 
-	/**
+	
+
+/**
 	 * Sets the current position and text if it's a thermometer
 	*/
 	public long setPos( String message, int nPos );

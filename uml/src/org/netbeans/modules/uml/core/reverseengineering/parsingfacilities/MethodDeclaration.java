@@ -67,7 +67,9 @@ public class MethodDeclaration
     private IREClass     m_Owner;
     private String       m_InstanceName;
     
-    /**
+    
+
+/**
      * Sends a method call event to all listeners.
      *
      * @param pDispatcher [in] The dispatcher used to send the event
@@ -88,7 +90,9 @@ public class MethodDeclaration
         }
     }
 
-    /**
+    
+
+/**
      * Generates the XMI fragment that represent the method call.
      *
      * @param pParentNode [in] The parent node of the result.
@@ -163,7 +167,9 @@ public class MethodDeclaration
                         "DeclaringType", -1, -1, -1, -1);
     }
     
-    /**
+    
+
+/**
      * Adds the XML to represent the calls argumnts.
      *
      * @param pParentNode [in] The parent node.
@@ -194,7 +200,7 @@ public class MethodDeclaration
                         if (kind != IREParameter.PDK_RESULT && arg == argc)
                         {    
                             // I do not wish to report the error.
-                            // AZTEC TODO
+                            
                             // SendErrorMessage(IDS_MISMATCH_ARGUMENTS, RE_E_MISMATCH_ARGUMENTS);
                         }
                         
@@ -230,7 +236,7 @@ public class MethodDeclaration
         }
     }
 
-    // AZTEC: TODO: Translate this.
+    
 //    HRESULT CMethodDeclaration::SendErrorMessage(int msgID, int hrID)
 //    {
 //        HRESULT hr = S_OK;
@@ -260,7 +266,9 @@ public class MethodDeclaration
 //        
 //    }
     
-    /**
+    
+
+/**
      * Creates an input pin that represents the parameter information.
      *
      * @param pParent [in] The owner of the input pin data.
@@ -297,7 +305,9 @@ public class MethodDeclaration
         }
     }
     
-    /**
+    
+
+/**
      * Creates an output pin that represents the parameter information.
      *
      * @param pParent [in] The owner of the input pin data.
@@ -344,7 +354,9 @@ public class MethodDeclaration
         }
     }
     
-    /**
+    
+
+/**
      * Creates an result output pin that represents the parameter information.
      *
      * @param pParent [in] The owner of the input pin data.
@@ -360,7 +372,9 @@ public class MethodDeclaration
             createOutputPin(node, par, null,null);
     }
     
-    /**
+    
+
+/**
      * Creates a CPrimitiveInstanceInformation and adds it to the symbol table.
      * If the name or type name is not valid then a CPrimitiveInstanceInformation
      * will not be created.
@@ -386,7 +400,9 @@ public class MethodDeclaration
         return null;
     }
     
-    /**
+    
+
+/**
      * Creates a CObjectInstanceInformation and adds it to the symbol table.
      * If the name or type name is not valid then an instance information 
      * object will not be created.
@@ -416,7 +432,9 @@ public class MethodDeclaration
         return null;
     }
     
-    /**
+    
+
+/**
      * Create a new XML node and added to the document.  CreateElement will throw
      * _com_error exceptions will an invalid HRESULT is received.
      * @param pOwner [in] The node that will own the new node.
@@ -428,7 +446,9 @@ public class MethodDeclaration
         return XMLManip.createElement((Element) owner, name);
     }
 
-    /**
+    
+
+/**
      * Sets the operation that is being called by the method call.
      *
      * @param pOperation [in] The operation.
@@ -438,7 +458,9 @@ public class MethodDeclaration
         m_Operation = operation;
     }
 
-    /**
+    
+
+/**
      * Retrieves the operation that is being called by the method call.
      *
      * @param pVal [out] The operation.
@@ -448,7 +470,9 @@ public class MethodDeclaration
         return m_Operation;
     }
 
-    /**
+    
+
+/**
      * Sets the operations owner.
      *
      * @param pOwner [int] The operation's owner.
@@ -458,7 +482,9 @@ public class MethodDeclaration
         m_Owner = owner;
     }
 
-    /**
+    
+
+/**
      * Retrieves the operations owner.
      *
      * @param pVal [out] The operation's owner.
@@ -478,7 +504,9 @@ public class MethodDeclaration
         return m_InstanceName;
     }
 
-    /**
+    
+
+/**
      * Retrieves the instance information that represents the operations return type.
      *
      * @param pClassLoader [in] The classloader used to find the definition 

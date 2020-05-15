@@ -42,6 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
+
+
 /*
  * Created on Mar 4, 2004
  *
@@ -72,7 +74,9 @@ public class DesignCenterManager /*extends AddInManagerImpl*/ implements IDesign
 		initialize();
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Initialize the design center manager.  This will set up where its registry information
 	 * is to be found as well as load any of its registered addins.
@@ -110,7 +114,9 @@ public class DesignCenterManager /*extends AddInManagerImpl*/ implements IDesign
       return retVal;
    }
    
-	/**
+	
+
+/**
 	 * The design center manager knows about the addins in the design center (requirements, patterns, macros).
 	 * This routine retrieves a particular addin based on the prog id passed in.
 	 * 
@@ -135,7 +141,9 @@ public class DesignCenterManager /*extends AddInManagerImpl*/ implements IDesign
    ////////////////////////////////////////////////////////////////////
    // Protected methods
    
-   /**
+   
+
+/**
 	 * Retrieve the design center addins added by other modules.
 	 *
 	 * @param actions The action collection to add the actions to.
@@ -146,7 +154,9 @@ public class DesignCenterManager /*extends AddInManagerImpl*/ implements IDesign
 
 	}
    
-   /**
+   
+
+/**
 	 * The registry information that is retrieved from layer files to build
 	 * the list of design center addins supported by this node.
 	 *

@@ -207,7 +207,9 @@ public class UMLParsingIntegrator
         redef = new HashSet();
     }
     
-    /**
+    
+
+/**
      * Add a new package to the collection of packages that has been discovered.
      * @param pack The descovered package.
      * @param fullName The fully qualified name of the package.
@@ -224,7 +226,9 @@ public class UMLParsingIntegrator
         }
     }
     
-    /**
+    
+
+/**
      * Determines whether or not typeName is a fully qualified type
      *
      * @param typeName[in]  The string to resolve
@@ -248,7 +252,9 @@ public class UMLParsingIntegrator
         return retVal;
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.reverseengineering.reintegration.IUMLParsingIntegrator#getFiles()
     */
     public IStrings getFiles()
@@ -268,7 +274,9 @@ public class UMLParsingIntegrator
         return pVal;
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.reverseengineering.reintegration.IUMLParsingIntegrator#setFiles(org.netbeans.modules.uml.core.support.umlsupport.IStrings)
     */
     public void setFiles(IStrings value)
@@ -278,7 +286,9 @@ public class UMLParsingIntegrator
     
     
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.reverseengineering.reintegration.IUMLParsingIntegrator#reverseEngineer(org.netbeans.modules.uml.core.metamodel.core.foundation.INamespace, boolean, boolean, boolean, boolean)
     */
     public boolean reverseEngineer(
@@ -532,7 +542,9 @@ public class UMLParsingIntegrator
     }
 
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.reverseengineering.reintegration.IUMLParsingIntegrator#canOperationBeREed(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation)
     */
     public boolean canOperationBeREed(IOperation pOperation)
@@ -576,7 +588,9 @@ public class UMLParsingIntegrator
         return bCanBeREed;
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.reverseengineering.reintegration.IUMLParsingIntegrator#reverseEngineerOperations(org.netbeans.modules.uml.core.metamodel.core.foundation.INamespace)
     */
     public void reverseEngineerOperations(
@@ -599,7 +613,9 @@ public class UMLParsingIntegrator
         }
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.reverseengineering.reintegration.IUMLParsingIntegrator#reverseEngineerOperation(org.netbeans.modules.uml.core.metamodel.core.foundation.INamespace, org.netbeans.modules.uml.core.metamodel.core.foundation.IElement)
     */
     public void reverseEngineerOperation(INamespace pSpace, IElement pElement)
@@ -616,7 +632,9 @@ public class UMLParsingIntegrator
         }
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.reverseengineering.reintegration.IUMLParsingIntegrator#addClassToProject(org.netbeans.modules.uml.core.reverseengineering.reframework.IREClass)
     */
     public void addClassToProject(IREClass pClass)
@@ -694,7 +712,9 @@ public class UMLParsingIntegrator
     
     int numOfClasses = 0;
     
-    /**
+    
+
+/**
      * The event method used by the UMLParser to notify listeners that a class
      * was found while parsing a file.
      *
@@ -1296,7 +1316,7 @@ public class UMLParsingIntegrator
                 
                 if (isDirty != null)
                 {
-                    // Element will now be dirty now matter what.
+                    
                     XMLManip.setAttributeValue(elementBeingInjected, "isDirty", "true"); // NOI18N
                 }
                 
@@ -1316,7 +1336,9 @@ public class UMLParsingIntegrator
     }
     
     
-    /**
+    
+
+/**
      * implements simplistic "merging" for nested classes and interfaces.
      * "The sameness" is decided upon whether the full-qualified name the same or not.
      * It is a merge only in the sense that PEs from diagrams would still continue
@@ -1381,7 +1403,9 @@ public class UMLParsingIntegrator
     }
     
 
-    /**
+    
+
+/**
      * implements simplistic "merging" for attributes and operations.
      */
     public void handleFeatures(Node childInDestinationNamespace, Node elementBeingInjected)
@@ -2256,7 +2280,9 @@ public class UMLParsingIntegrator
         return ok;
     }
     
-    /**
+    
+
+/**
      *
      * Builds a map of all child elements under parent that contain the @name xml attribute
      *
@@ -2480,7 +2506,7 @@ public class UMLParsingIntegrator
     {
         try
         {
-            // AZTEC TODO: Uncomment this lot once IREDialog and REDialog are
+            
             // in place.
             
             //      		IREDialog  reDiag = new REDialog();
@@ -2928,7 +2954,9 @@ public class UMLParsingIntegrator
         return findQualifiedType(classSpace, typeName, clazzNode, true);
     }
     
-    /**
+    
+
+/**
      * Finds a type that is partially or fully qualified. Attempts to resolve the difference between a scoping package
      * vs. a scoping class or interface
      *
@@ -3040,7 +3068,9 @@ public class UMLParsingIntegrator
         return newType;
     }
     
-    /**
+    
+
+/**
      * Attempts to find a type at a given nesting level. The id of the potential
      * enclosing namespace is passed in in an
      * effort to differentiate like named symbols with different owners.
@@ -3257,7 +3287,9 @@ public class UMLParsingIntegrator
         }
     }
 
-    /**
+    
+
+/**
      * We are assume java code follow Java Programming Style Guide
      * we are not compiling, we only parse sources and have to do some assumtion in this place
      * if user will not follow java guide it may cause incorrect model creation
@@ -3559,7 +3591,9 @@ public class UMLParsingIntegrator
     
     public void analyzeForDependencies(Node clazz, IClassifier clazzObj, INamespace classSpace)
     {
-      /*
+      
+
+/*
       try
       {
          // Get all of this Classes attributes and resolve their types...
@@ -3890,7 +3924,9 @@ public class UMLParsingIntegrator
         }
     }
     
-    /**
+    
+
+/**
      * Adds a source file artifact node that can be added to a class.
      *
      * @param fileName The name of the source file that contains a class.
@@ -4096,7 +4132,9 @@ public class UMLParsingIntegrator
         return isPackage;
     }
     
-    /**
+    
+
+/**
      *
      * Pulls all the dependency fragments from the current context,
      * and places them on the current list of classes. They will be properly
@@ -4494,7 +4532,9 @@ public class UMLParsingIntegrator
         }
     }
     
-    /**
+    
+
+/**
      * Finds the XMI ID of the type that matches the passed in name ( fully qualified or not ), in the namespace indicated
      *
      * @param typeName[in]        The name of the element to find
@@ -4855,15 +4895,8 @@ public class UMLParsingIntegrator
         return isAllowed;
     }
     
-    /**
-     * Checks if any attributes are generic collection types.  If they are
-     * generic collection types, the collection is removed and the type
-     * of the attribute will be changed to the collections parameter.  The
-     * attribute will have a multiplicity of [0..*]
-     *
-     * @param param The XML data for the class.
-     * @param clazzObj The UML metamodel object.
-     */
+    
+
     protected void analyzeParameterForCollections(Node param,
             IClassifier clazzObj)
     {
@@ -4891,15 +4924,8 @@ public class UMLParsingIntegrator
         }
     }
     
-    /**
-     * Checks if any attributes are generic collection types.  If they are
-     * generic collection types, the collection is removed and the type
-     * of the attribute will be changed to the collections parameter.  The
-     * attribute will have a multiplicity of [0..*]
-     *
-     * @param clazz The XML data for the class.
-     * @param clazzObj The UML metamodel object.
-     */
+    
+
     protected void analyzeAttributesForCollections(Node clazz,
             IClassifier clazzObj)
     {
@@ -4944,7 +4970,9 @@ public class UMLParsingIntegrator
         }
     }
     
-    /**
+    
+
+/**
      * Converts an attribute of a collection type, to have a type that is
      * contained by the collection.  There are two type the simple type
      * where the contained type simply a type.  The muli-diminsional type, where
@@ -5270,7 +5298,9 @@ public class UMLParsingIntegrator
         }
     }
     
-    /**
+    
+
+/**
      *
      * Runs through all the class symbols on our symbol table and
      * the attribute type names and tries to resolve the types there
@@ -5724,7 +5754,7 @@ public class UMLParsingIntegrator
     protected void clearSymbolTable()
     {
         // This is ugly but I can not do anything about it until Java adds a
-        // aliasing mechanism for Generics.
+        
         Collection < ArrayList < ETPairT < Node, String > > > values = m_SymbolTable.values();
         for (Iterator < ArrayList < ETPairT < Node, String > > > iter = values.iterator(); iter.hasNext();)
         {
@@ -5735,7 +5765,9 @@ public class UMLParsingIntegrator
         m_SymbolTable.clear();
     }
     
-    /**
+    
+
+/**
      * Removed all references of a specific node from the symbol table.
      *
      * @param node The node to be removed.
@@ -5845,7 +5877,9 @@ public class UMLParsingIntegrator
         }
     }
     
-    /**
+    
+
+/**
      *
      * Adds the child node to the parent node, setting up the appropriate
      * xml elements per the UML dtd
@@ -5860,7 +5894,9 @@ public class UMLParsingIntegrator
         establishOwnership(parent, child, isTemp, "UML:Element.ownedElement");
     }
     
-    /**
+    
+
+/**
      *
      * Adds the child node to the parent node, setting up the appropriate
      * xml elements per the UML dtd
@@ -6148,7 +6184,9 @@ public class UMLParsingIntegrator
         return retVal;
     }
 
-    /**
+    
+
+/**
      * just get all before namespace separator '::'
      * @param fullName
      * @return
@@ -6164,7 +6202,9 @@ public class UMLParsingIntegrator
         return retVal;
     }
 
-    /**
+    
+
+/**
      * get all before '::' if start with lowercase (i.e. package in java convension)
      * @param fullName
      * @return
@@ -7507,8 +7547,8 @@ public class UMLParsingIntegrator
                 //            {
                 //
                 //               // Process enumaration attribute
-                //               long numAttributes = spAttributes.size();
-                //               for (int y = 0; y < numAttributes; y++)
+                
+                
                 //               {
                 //                  // Get literal name
                 //                  Node spAttribute;
@@ -7559,7 +7599,9 @@ public class UMLParsingIntegrator
         
     }
     
-    /**
+    
+
+/**
      * Retrieves the UML documentation for the passed in node
      *
      * @param node[in]   The node to retrieve docs from
@@ -7590,7 +7632,9 @@ public class UMLParsingIntegrator
         return docs;
     }
     
-    /**
+    
+
+/**
      * Sets the documentation of the node. This method is smart about needing to create the
      * documentation tagged value or not.
      *
@@ -7669,7 +7713,9 @@ public class UMLParsingIntegrator
         mUnknownType = pPref.getUnknownClassifierType();
     }
     
-    /**
+    
+
+/**
      * Creates an unknown type at the location indicated by the fully qualified name in typeName.
      * If typeName is not fully qualified, the type will be created at the root of the Project.
      *
@@ -7679,7 +7725,9 @@ public class UMLParsingIntegrator
      * @return HRESULT
      */
     
-    /**
+    
+
+/**
      * Creates an unknown type at the location indicated by the fully qualified name in typeName.
      * If typeName is not fully qualified, the type will be created at the root of the Project.
      *
@@ -7859,7 +7907,9 @@ public class UMLParsingIntegrator
         return namedElement;
     }
     
-    /**
+    
+
+/**
      * Finds a type in our symbol table based on its fully qualified name
      *
      * @param typeName[in]  The fully qualified type name of the symbol to locate
@@ -7955,7 +8005,9 @@ public class UMLParsingIntegrator
         return newType;
     }
     
-    /**
+    
+
+/**
      * Note that the class has to be added to the project before this will work.
      */
     public void resolveTypes(IClassifier pClassifier, String xsQuery)
@@ -8079,7 +8131,9 @@ public class UMLParsingIntegrator
         
     }
     
-    /**
+    
+
+/**
      * Creates the top level node.  The document will be created first then
      * the top level node will created.
      *
@@ -8116,7 +8170,9 @@ public class UMLParsingIntegrator
         return pNewNode;
     }
     
-    /**
+    
+
+/**
      * Create a new XML node and added to the document.  CreateElement will throw
      * _com_error exceptions will an invalid HRESULT is received.
      * @param pDoc [in] The document that will recieve the XML node.
@@ -8158,7 +8214,9 @@ public class UMLParsingIntegrator
         return pNewNode;
     }
     
-    /**
+    
+
+/**
      *
      * Determines whether or not the passed in type name is decorated or not.
      *
@@ -8204,7 +8262,9 @@ public class UMLParsingIntegrator
         return result;
     }
     
-    /**
+    
+
+/**
      * Makes sure that, when given a fully qualified string, that the proper Package structure exists in the parent
      * namespace
      *
@@ -8353,7 +8413,9 @@ public class UMLParsingIntegrator
             return mNumberOfTypes;
         }
         
-        /**
+        
+
+/**
          * @return
          */
         public boolean isDataType()
@@ -8361,7 +8423,9 @@ public class UMLParsingIntegrator
             return mIsDataType;
         }
         
-        /**
+        
+
+/**
          * @return
          */
         public long getNumberOfTypes()
@@ -8369,7 +8433,9 @@ public class UMLParsingIntegrator
             return mNumberOfTypes;
         }
         
-        /**
+        
+
+/**
          * @return
          */
         public String getXMIID()
@@ -8377,7 +8443,9 @@ public class UMLParsingIntegrator
             return mXMIID;
         }
         
-        /**
+        
+
+/**
          * @param b
          */
         public void setDataType(boolean b)
@@ -8385,7 +8453,9 @@ public class UMLParsingIntegrator
             mIsDataType = b;
         }
         
-        /**
+        
+
+/**
          * @param l
          */
         public void setNumberOfTypes(long l)
@@ -8393,7 +8463,9 @@ public class UMLParsingIntegrator
             mNumberOfTypes = l;
         }
         
-        /**
+        
+
+/**
          * @param string
          */
         public void setXMIID(String id)
@@ -8432,7 +8504,9 @@ public class UMLParsingIntegrator
         
     }
     
-    /**
+    
+
+/**
      * Sends a message to the message service.  The exception is used to provide
      * the message.
      *
@@ -8460,7 +8534,9 @@ public class UMLParsingIntegrator
     }
 
     
-    /**
+    
+
+/**
      * When we create a template is not know to the system, we create a datatype.
      * The problem is that we do not create the parameters.  However, when we
      * add the derivation between the derivation classifer and the template, it

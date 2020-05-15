@@ -90,7 +90,9 @@ public class ModelElementBridge
         this.projectID = element.getTopLevelId();
     }
     
-    /**
+    
+
+/**
     * Retrieves the project assoicated with the proxy.  The project associated
     * with the proxy is specified by the Top Level id.
     *

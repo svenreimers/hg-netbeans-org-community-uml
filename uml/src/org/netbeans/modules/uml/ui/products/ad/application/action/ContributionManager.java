@@ -54,29 +54,39 @@ import java.util.List;
 
 public abstract class ContributionManager implements IContributionManager
 {
-   /**
+   
+
+/**
     * The list of contribution items.
     */
    private List m_Contributions = new ArrayList();
 
-   /**
+   
+
+/**
     * Indicates whether the widgets are in sync with the contributions.
     */
    private boolean isDirty = true;
 
-   /**
+   
+
+/**
     * Number of dynamic contribution items.
     */
    private int dynamicItems = 0;
 
-   /**
+   
+
+/**
     * Creates a new contribution manager.
     */
    protected ContributionManager()
    {
    }
 
-   /**
+   
+
+/**
     * Returns whether this contribution manager contains dynamic items. 
     * A dynamic contribution item contributes items conditionally, 
     * dependent on some internal state.
@@ -89,7 +99,9 @@ public abstract class ContributionManager implements IContributionManager
       return (dynamicItems > 0);
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * Method declared on IContributionManager.
     */
    public boolean isEmpty()
@@ -97,7 +109,9 @@ public abstract class ContributionManager implements IContributionManager
       return m_Contributions.isEmpty();
    }
 
-   /**
+   
+
+/**
     * Sets whether this manager is dirty. When dirty, the list of contributions 
     * is not accurately reflected in the corresponding widgets.
     *

@@ -58,7 +58,8 @@ public class WorkspaceDispatcherTestCase extends TestCase
     private WorkspaceEventDispatcher m_Dispatcher        = new WorkspaceEventDispatcher();
     private TestWorkspaceListener    m_WorkspaceListener = new TestWorkspaceListener();
     
-    /**
+    
+/**
      * Constructor for WorkspaceDispatcherTestCase.
      * @param arg0
      */
@@ -106,7 +107,9 @@ public class WorkspaceDispatcherTestCase extends TestCase
         }
     }
     
-    /**
+    
+
+/**
      * @param string
      * @param string2
      * @param b
@@ -145,7 +148,9 @@ public class WorkspaceDispatcherTestCase extends TestCase
         
     }
     
-    /**
+    
+
+/**
      * @param dir
      */
     protected void deleteFolder(File dir)
@@ -171,7 +176,9 @@ public class WorkspaceDispatcherTestCase extends TestCase
         }
     }
     
-   /*
+   
+
+/*
     * @see TestCase#setUp()
     */
     protected void setUp() throws Exception
@@ -181,7 +188,9 @@ public class WorkspaceDispatcherTestCase extends TestCase
         m_Dispatcher.registerForWorkspaceEvents(m_WorkspaceListener);
     }
     
-   /*
+   
+
+/*
     * @see TestCase#tearDown()
     */
     protected void tearDown() throws Exception

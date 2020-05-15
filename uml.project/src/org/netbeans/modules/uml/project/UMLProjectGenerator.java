@@ -81,6 +81,7 @@ import org.openide.NotifyDescriptor;
 import org.openide.util.NbBundle;
 
 
+
 /**
  * Create a fresh J2SEProject from scratch.
  * Currently does not permit much to be specified - feel free to 
@@ -99,7 +100,9 @@ public class UMLProjectGenerator
 	private UMLProjectGenerator()
 	{}
 	
-	/**
+	
+
+/**
 	 * Create a new UML project then performs reverse engineering to populatet
 	 * the model.
 	 */
@@ -167,7 +170,9 @@ public class UMLProjectGenerator
                 return helper;
 	}
 	
-    /**
+    
+
+/**
      * Create a new UML project then performs reverse engineering to populate
      * the model
      */
@@ -278,7 +283,9 @@ public class UMLProjectGenerator
         return false;
     }
 	
-    /**
+    
+
+/**
      * Create a new empty UML project.
      * @param dir the top-level directory (need not yet exist but if it does it must be empty)
      * @param codename the code name for the project
@@ -335,7 +342,7 @@ public class UMLProjectGenerator
             if (umlProjectType==NewUMLProjectWizardIterator.TYPE_UML ||
                     umlProjectType==NewUMLProjectWizardIterator.TYPE_UML_JAVA)
             {
-                //Kris Richards - options no longer available. Default to yes, so removed
+                
                 // condition also.
 //                IPreferenceManager2 prefMgr = ProductHelper.getPreferenceManager();
 //                String pref = prefMgr.getPreferenceValue(
@@ -559,7 +566,9 @@ public class UMLProjectGenerator
 		return (String[]) refStrs.toArray(new String[refStrs.size()]);
 	}
 	
-	/**
+	
+
+/**
 	 * Project reference ID cannot contain dot character.
 	 * File reference can.
 	 */
@@ -568,7 +577,9 @@ public class UMLProjectGenerator
 		return PropertyUtils.getUsablePropertyName(ID).replace('.', '_');
 	}
 	
-	/**
+	
+
+/**
 	 * Find reference ID (e.g. something you can then pass to RawReference
 	 * as foreignProjectName) for the given property base name, prefix and path.
 	 * @param property project name or jar filename
@@ -602,7 +613,9 @@ public class UMLProjectGenerator
 	}
 	
 	
-	/**
+	
+
+/**
 	 * Generate unique reference ID for the given property base name, prefix
 	 * and path. See also {@link #findReferenceID(String, String, String)}.
 	 * @param property project name or jar filename
@@ -667,7 +680,9 @@ public class UMLProjectGenerator
 	}
 	
 	
-	/* added to fix free-form project reference #6317890
+	
+
+/* added to fix free-form project reference #6317890
 	 * for j2se project, the reference is automatically resolved, the source
 	 * project directory path is saved uml project private properties
 	 */

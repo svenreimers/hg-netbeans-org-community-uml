@@ -65,7 +65,9 @@ public interface IPreferenceManagerEventsSink
 	*/
 	public void onPreferenceRemove( String Name, IPropertyElement pElement, IResultCell cell );
 
-	/**
+	
+
+/**
 	 * Fired for a group of changed preferences
 	*/
 	public void onPreferencesChange( IPropertyElement[] pElements, IResultCell cell );

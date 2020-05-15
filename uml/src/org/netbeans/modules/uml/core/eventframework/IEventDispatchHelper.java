@@ -47,12 +47,16 @@ package org.netbeans.modules.uml.core.eventframework;
 
 public interface IEventDispatchHelper
 {
-	/**
+	
+
+/**
 	 * Sets / Gets the actual EventDispatcher object.
 	*/
 	public IEventDispatcher getEventDispatcher();
 
-	/**
+	
+
+/**
 	 * Sets / Gets the actual EventDispatcher object.
 	*/
 	public void setEventDispatcher( IEventDispatcher value );

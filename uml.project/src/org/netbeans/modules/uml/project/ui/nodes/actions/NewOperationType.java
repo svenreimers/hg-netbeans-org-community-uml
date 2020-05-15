@@ -42,11 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * NewDiagramType.java
- *
- * Created on March 4, 2005, 4:39 PM
- */
+
+
 
 package org.netbeans.modules.uml.project.ui.nodes.actions;
 

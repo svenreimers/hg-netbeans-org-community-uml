@@ -43,6 +43,7 @@
  */
 
 
+
 /*
  *
  * Created on Jun 12, 2003
@@ -65,7 +66,9 @@ public class ProjectTreeExpandingContextImpl
       setTreeItem(item);
 	}
 	
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeExpandingContext#getProjectTreeItem()
     */
    public IProjectTreeItem getProjectTreeItem()
@@ -79,7 +82,9 @@ public class ProjectTreeExpandingContextImpl
       return retVal;
    }
    
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeExpandingContext#setProjectTreeItem(org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeItem)
     */
    public ITreeItem getTreeItem( )
@@ -87,7 +92,9 @@ public class ProjectTreeExpandingContextImpl
       return m_Item;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeExpandingContext#setProjectTreeItem(org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeItem)
     */
    public void setTreeItem(ITreeItem value)
@@ -95,7 +102,9 @@ public class ProjectTreeExpandingContextImpl
 		m_Item = value;
 	}
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeExpandingContext#getCancel()
     */
    public boolean isCancel()
@@ -103,7 +112,9 @@ public class ProjectTreeExpandingContextImpl
       return m_IsCanceled;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeExpandingContext#setCancel(boolean)
     */
    public void setCancel(boolean value)

@@ -115,7 +115,9 @@ public class UMLModelElementNode extends UMLElementNode
     }
     
     
-    /**
+    
+
+/**
      * @param item
      * @throws NullPointerException
      */
@@ -125,7 +127,9 @@ public class UMLModelElementNode extends UMLElementNode
         initialize();
     }
     
-    /**
+    
+
+/**
      * @param item
      * @throws NullPointerException
      */
@@ -143,7 +147,9 @@ public class UMLModelElementNode extends UMLElementNode
         helper.registerForLifeTimeEvents(this);
     }
     
-    /**
+    
+
+/**
      * Initializes the node with the default cookies.  <b>Note:</b>  Do not
      * call this method if a looup is added.  When a lookup is added then the
      * lookup is used to find the cookies.
@@ -172,7 +178,9 @@ public class UMLModelElementNode extends UMLElementNode
     }
     
     
-    /**
+    
+
+/**
      * Get the new types that can be created in this node. For example, a node
      * representing a class will permit attributes, operations, classes,
      * interfaces, and enumerations to be added.
@@ -384,7 +392,9 @@ public class UMLModelElementNode extends UMLElementNode
     
     
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeElement#getElement()
     */
     public IElement getElement()
@@ -401,7 +411,9 @@ public class UMLModelElementNode extends UMLElementNode
         return retVal;
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeElement#getXMIID()
     */
     public String getXMIID()
@@ -415,7 +427,9 @@ public class UMLModelElementNode extends UMLElementNode
         return retVal;
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeElement#getElementType()
     */
     public String getElementType()
@@ -429,7 +443,9 @@ public class UMLModelElementNode extends UMLElementNode
         return retVal;
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeElement#getExpandedElementType()
     */
     public String getExpandedElementType()
@@ -437,7 +453,9 @@ public class UMLModelElementNode extends UMLElementNode
         return m_ExpandedElementType;
     }
     
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see java.lang.Object#equals(java.lang.Object)
     */
     public boolean equals(Object obj)
@@ -481,14 +499,16 @@ public class UMLModelElementNode extends UMLElementNode
         
         else
         { 
-            // Generic equals method. This can be used to test to ITreeItem(s).
+            
             retVal = super.equals(obj);
         }
         
         return retVal;
     }
     
-    /**
+    
+
+/**
      * Retrieves the meta-data type name.
      *
      * @return The type name.
@@ -504,7 +524,9 @@ public class UMLModelElementNode extends UMLElementNode
         return retVal;
     }
     
-    /**
+    
+
+/**
      * Retrieves the XML nodes associated to the UML model element.
      *
      * @return The XML node.
@@ -520,7 +542,9 @@ public class UMLModelElementNode extends UMLElementNode
         return pVal;
     }
     
-    /**
+    
+
+/**
      * Determines if the ConfigStringTranslator should be used to translate the
      * name of the node.  The ConfigStringTranslator is used to translate
      * strings that start with PSK_* to a readable string.
@@ -532,7 +556,9 @@ public class UMLModelElementNode extends UMLElementNode
         return m_bTranslateName;
     }
     
-    /**
+    
+
+/**
      * Determines if the ConfigStringTranslator should be used to translate the
      * name of the node.  The ConfigStringTranslator is used to translate
      * strings that start with PSK_* to a readable string.
@@ -544,7 +570,9 @@ public class UMLModelElementNode extends UMLElementNode
         m_bTranslateName = val;
     }
     
-    /**
+    
+
+/**
      * Retrieves the user friendly name for the model element.
      *
      * @return The display namne.
@@ -554,7 +582,9 @@ public class UMLModelElementNode extends UMLElementNode
         return getDisplayName();
     }
     
-    /**
+    
+
+/**
      * Retrieves the user friendly name for the model element.  The name is
      * translated if required.
      *
@@ -641,7 +671,9 @@ public class UMLModelElementNode extends UMLElementNode
     
     public class ElementDocumentationCookie implements DocumentationCookie
     {
-        /**
+        
+
+/**
          * Retreive the documentation from the node.
          */
         public String getDocumentation()
@@ -656,7 +688,9 @@ public class UMLModelElementNode extends UMLElementNode
             return retVal;
         }
         
-        /**
+        
+
+/**
          * Sets the documentation for the node.
          */
         public void setDocumentation(String retVal)

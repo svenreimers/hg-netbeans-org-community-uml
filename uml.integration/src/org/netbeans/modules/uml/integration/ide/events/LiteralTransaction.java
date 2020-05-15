@@ -72,7 +72,9 @@ public class LiteralTransaction {
     setProject(proj);
   }
 
-  /**
+  
+
+/**
    * Create a new MemberTransaction and specify the symbol to search and
    * data member to find.  If the member will be created if one is needed.
    * @param trans The symbol transaction used when searching for the memeber.

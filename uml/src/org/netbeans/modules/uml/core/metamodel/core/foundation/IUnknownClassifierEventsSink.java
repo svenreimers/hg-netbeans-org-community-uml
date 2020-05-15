@@ -48,12 +48,16 @@ import org.netbeans.modules.uml.core.support.umlsupport.IResultCell;
 
 public interface IUnknownClassifierEventsSink
 {
-	/**
+	
+
+/**
 	 * Fired when a new classifier is about to be created as specified by the unknown classifier preference.
 	*/
 	public long onPreUnknownCreate( String typeToCreate, IResultCell cell );
 
-	/**
+	
+
+/**
 	 * Fired when a new classifier has been created as specified by the unknown classifier preference..
 	*/
 	public long onUnknownCreated( INamedElement newType, IResultCell cell );

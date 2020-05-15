@@ -66,37 +66,51 @@ public interface IDiagCreatorAddIn
       public final static int GET_STATE_CHILDREN = 2;
    }
    
-	/**
+	
+
+/**
 	 * Creates a diagram from the selected elements in the project tree.
 	*/
 	public long guiCreateDiagramFromProjectTreeElements( IProjectTreeControl pProjectTree );
 
-	/**
+	
+
+/**
 	 * Creates a diagram from the input elements
 	*/
 	public long guiCreateDiagramFromElements( ETList<IElement> pElements, IElement pParentElement, IProjectTreeControl pProjectTree );
 
-        /**
+        
+
+/**
 	 * Creates a diagram from the input elements
 	*/
 	public long guiCreateDiagramFromElements( ETList<IElement> pElements, IElement pParentElement, IProjectTreeModel pProjectTreeModel );
 
-	/**
+	
+
+/**
 	 * Creates the specified diagram, and adds the input elements to the diagram.
 	*/
 	public IDiagram createDiagramForElements( /* DiagramKind */ int diagramKind, INamespace pNamespace, String sDiagramName, ETList<IElement> pElements, IDiagram pCreatedDiagram );
 
-	/**
+	
+
+/**
 	 * Creates the specified diagram, and adds the input elements to the diagram when the diagram is next opened.
 	*/
 	public IProxyDiagram createStubDiagramForElements( /* DiagramKind */ int diagramKind, INamespace pNamespace, String sDiagramName, ETList<IElement> pElements );
 
-	/**
+	
+
+/**
 	 * Creates the specified diagram, and adds the input XMIIDs as elements to the diagram when the diagram is next opened.
 	*/
 	public IProxyDiagram createStubDiagramForXMIIDs( String sDiagramKind, INamespace pNamespace, String sDiagramName, String sProjectXMIID, IStrings pXMIIDsToCDFS, IStrings pXMIIDsForNavigationOnly );
 
-	/**
+	
+
+/**
 	 * Adds the input elements to the input diagram.
 	*/
 	public long addElementsToDiagram( IDiagram pDiagram, ETList<IElement> pElements, IElement pParentElement, /* ChildRetrievalBehavior */ int nChildRetrievalBehavior );

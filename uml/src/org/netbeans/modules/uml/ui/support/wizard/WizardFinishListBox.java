@@ -61,21 +61,27 @@ public class WizardFinishListBox extends JList {
 		super();
 	}
 
-	/**
+	
+
+/**
 	 * @param listData
 	 */
 	public WizardFinishListBox(Object[] listData) {
 		super(listData);
 	}
 
-	/**
+	
+
+/**
 	 * @param listData
 	 */
 	public WizardFinishListBox(Vector listData) {
 		super(listData);
 	}
 
-	/**
+	
+
+/**
 	 * @param dataModel
 	 */
 	public WizardFinishListBox(ListModel dataModel) {

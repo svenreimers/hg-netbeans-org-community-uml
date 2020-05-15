@@ -47,17 +47,23 @@ package org.netbeans.modules.uml.core.coreapplication;
 
 public interface ICoreMessenger
 {
-	/**
+	
+
+/**
 	 * Disables all messaging
 	*/
 	public boolean getDisableMessaging();
 
-	/**
+	
+
+/**
 	 * Disables all messaging
 	*/
 	public void setDisableMessaging( boolean value );
 
-	/**
+	
+
+/**
 	 * Get the topmost window handle.
 	*/
 	public int getParentWindow();

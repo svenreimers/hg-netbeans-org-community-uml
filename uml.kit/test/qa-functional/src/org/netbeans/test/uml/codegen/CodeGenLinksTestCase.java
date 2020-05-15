@@ -43,6 +43,8 @@
  */
 
 
+
+
 /*
  * CodeGenLinksTestCase.java
  *
@@ -323,7 +325,7 @@ public class CodeGenLinksTestCase extends CodeGenerationTestCase {
      
 
     // =================================================================== //
-    // ======================    Generic Link       ====================== //
+    
     // =================================================================== //
     
     public void testGenericLinkGeneration(){

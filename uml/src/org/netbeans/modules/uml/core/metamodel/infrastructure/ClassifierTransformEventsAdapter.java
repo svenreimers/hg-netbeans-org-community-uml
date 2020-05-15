@@ -57,7 +57,8 @@ public class ClassifierTransformEventsAdapter
    implements IClassifierTransformEventsSink
 {
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     */
    public void onPreTransform(
       IClassifier classifier,
@@ -67,7 +68,9 @@ public class ClassifierTransformEventsAdapter
       // TODO Auto-generated method stub
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     */
    public void onTransformed(IClassifier classifier, IResultCell cell)
    {

@@ -50,27 +50,37 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 public interface IPrimitiveAction extends IAction
 {
-	/**
+	
+
+/**
 	 * method AddArgument
 	*/
 	public void addArgument( IValueSpecification pArg );
 
-	/**
+	
+
+/**
 	 * method RemoveArgument
 	*/
 	public void removeArgument( IValueSpecification pArg );
 
-	/**
+	
+
+/**
 	 * property Arguments
 	*/
 	public ETList <IValueSpecification> getArguments();
 
-	/**
+	
+
+/**
 	 * property Target
 	*/
 	public IValueSpecification getTarget();
 
-	/**
+	
+
+/**
 	 * property Target
 	*/
 	public void setTarget( IValueSpecification value );

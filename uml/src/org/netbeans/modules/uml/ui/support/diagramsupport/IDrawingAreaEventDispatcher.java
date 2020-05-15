@@ -42,6 +42,7 @@
  * made subject to such option by the copyright holder.
  */
 
+
 /*
  *
  * Created on Jun 19, 2003
@@ -52,6 +53,7 @@ import org.netbeans.modules.uml.core.eventframework.IEventDispatcher;
 import org.netbeans.modules.uml.core.eventframework.IEventPayload;
 import org.netbeans.modules.uml.core.metamodel.diagrams.IProxyDiagram;
 import org.openide.loaders.DataObject;
+
 
 /**
  * 
@@ -170,29 +172,39 @@ public interface IDrawingAreaEventDispatcher extends IEventDispatcher
 //                                                   IProductContextMenuItem selectedItem, 
 //                                                   IEventPayload payload );
 
-   /**
+   
+
+/**
     * Registers a sink with the drawing area event dispatcher
    */
    public int registerDrawingAreaEvents( IDrawingAreaEventsSink handler );
 
-   /**
+   
+
+/**
     * Revokes a drawing area sink
    */
    public void revokeDrawingAreaSink( IDrawingAreaEventsSink handler );
 
-   /**
+   
+
+/**
 //    * Fired when a drawing area is created.
 //   */
 //   public boolean fireDrawingAreaPreCreated( IDrawingAreaControl pDiagramControl, 
 //                                             IEventPayload payload );
 
-   /**
+   
+
+/**
     * Fired when a drawing area is created.
     */
    public void fireDrawingAreaPostCreated( DataObject dataobject, 
                                            IEventPayload payload );
 
-   /**
+   
+
+/**
 //    * Fires an event out the interface saying that the drawing area has been opened.
 //   */
 //   public void fireDrawingAreaOpened( IDiagram pParentDiagram, 
@@ -227,14 +239,18 @@ public interface IDrawingAreaEventDispatcher extends IEventDispatcher
 //                                        boolean bAltIsDown, 
 //                                        IEventPayload payload );
 //
-   /**
+   
+
+/**
 //    * Fired when a drawing area property has changed.
    */
    public boolean fireDrawingAreaPrePropertyChange( IProxyDiagram pProxyDiagram, 
                                                      int nPropertyKindChanged, /* DrawingAreaPropertyKind */  
                                                      IEventPayload payload );
 
-   /**
+   
+
+/**
     * Fired when a drawing area property has changed.
    */
    public void fireDrawingAreaPostPropertyChange( IProxyDiagram pProxyDiagram, 
@@ -274,7 +290,9 @@ public interface IDrawingAreaEventDispatcher extends IEventDispatcher
 //   public boolean fireDrawingAreaPreFileRemoved( String sFilename, 
 //                                                 IEventPayload payload );
 //
-   /**
+   
+
+/**
     * Fired after a diagram file is removed from disk.
    */
    public void fireDrawingAreaFileRemoved( String sFilename, 

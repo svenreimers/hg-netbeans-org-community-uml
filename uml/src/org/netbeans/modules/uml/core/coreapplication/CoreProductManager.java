@@ -89,7 +89,9 @@ public class CoreProductManager implements ICoreProductManager
 		registerWithROT();
 	}
 
-	/**
+	
+
+/**
 	 * Registers the product manager on the ROT.  If there is already a product
 	 * manager on the ROT then this instance becomes a proxy.
 	 *
@@ -103,7 +105,9 @@ public class CoreProductManager implements ICoreProductManager
 		}
 	}
 
-	/**
+	
+
+/**
 	 * Gets the product that is in-process for the object that made this call.
 	 * This routine will get the current pid and then call get_CoreProduct2 (a 
 	 * hidden interface).  If this product manager is not the one on the ROT 
@@ -120,7 +124,9 @@ public class CoreProductManager implements ICoreProductManager
 		return m_ROTManager != null ? m_ROTManager.getCoreProduct(getPID()) : getCoreProduct(getPID());
 	}
 
-	/**
+	
+
+/**
 	 * Returns the pid of this process, or the alias
 	 */
 	private int getPID() 
@@ -128,7 +134,9 @@ public class CoreProductManager implements ICoreProductManager
 		return s_nProductAliasPID != 0 ? s_nProductAliasPID : 0;
 	}
 
-	/**
+	
+
+/**
 	 * Puts the product that is in-process for the object that made this call.
 	 * This routine will get the current pid and then call put_CoreProduct2 (a 
 	 * hidden interface).  If this product manager is not the one on the ROT 
@@ -153,7 +161,9 @@ public class CoreProductManager implements ICoreProductManager
 		}
 	}
 
-	/**
+	
+
+/**
 	 * Gets the product that is associated with this process id.  This is a hidden
 	 * interface.  Most objects will use get_CoreProduct.
 	 *
@@ -185,7 +195,9 @@ public class CoreProductManager implements ICoreProductManager
 		return retVal;
 	}
 
-	/**
+	
+
+/**
 	 * Sets the product that is associated with this process id.  This is a hidden
 	 * interface.  Most objects will use put_CoreProduct.
 	 *
@@ -217,7 +229,9 @@ public class CoreProductManager implements ICoreProductManager
 		}
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Retrieves the descriptors of the products this manager manages.
 	 *
@@ -254,7 +268,9 @@ public class CoreProductManager implements ICoreProductManager
 		return descList;
 	}
 
-	/**
+	
+
+/**
 	 * Returns the product manager that is on the ROT.
 	 *
 	 * @param pVal [out] The product manager present on the ROT
@@ -267,7 +283,9 @@ public class CoreProductManager implements ICoreProductManager
 		return m_ROTManager != null ? m_ROTManager : this;
 	}
 
-	/**
+	
+
+/**
 	 * Removes the product manager from the ROT
 	 *
 	 * @return HRESULT
@@ -289,7 +307,9 @@ public class CoreProductManager implements ICoreProductManager
 		}		
 	}
 
-	/**
+	
+
+/**
 	 * Sets the product for which you want to attach (ie Describe).
 	 *
 	 * @param sAlias [in] The external process to retrieve the product from
@@ -314,7 +334,9 @@ public class CoreProductManager implements ICoreProductManager
 		//findAliasPID();
 	}
 
-	/**
+	
+
+/**
 	 * Returns the product for which you want to attach (ie Describe).
 	 *
 	 * @param sAlias [in] The external process to retrieve the product from

@@ -402,7 +402,9 @@ public final class ReverseEngineerAction extends AbstractAction
         return name; 
     }
         
-    /* NB60TBD
+    
+
+/* NB60TBD
     protected Class[] cookieClasses()
     {
         return new Class[]
@@ -415,8 +417,10 @@ public final class ReverseEngineerAction extends AbstractAction
      */
     
     
-    // TODO: conover - fix this enable method
-    /**
+    
+    
+
+/**
      * This operation is used to enable or disable the action in the menu.
      * It should be enabled for the Java projects nodes, and package or class
      * nodes in Java projects.
@@ -565,7 +569,7 @@ public final class ReverseEngineerAction extends AbstractAction
         
         catch (IOException ex)
         {
-            // TODO: conover - provide proper handling
+            
             ex.printStackTrace();
         }
         
@@ -877,7 +881,9 @@ public final class ReverseEngineerAction extends AbstractAction
                 file.isData() && file.getExt().equals("java"); // NOI18N
     }
     
-    /** This method checks if all the active nodes are from the same project.
+    
+
+/** This method checks if all the active nodes are from the same project.
      * returns the project object if all the nodes have the same project;
      * otherwise, return null.
      */

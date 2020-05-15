@@ -57,14 +57,18 @@ public class GraphicExportDetails implements IGraphicExportDetails {
 		m_Map = null;
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.diagrams.IGraphicExportDetails#getGraphicBoundingRect()
 	 */
 	public IETRect getGraphicBoundingRect() {
 		return m_BoundingRect;
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.diagrams.IGraphicExportDetails#setGraphicBoundingRect(org.netbeans.modules.uml.core.support.umlsupport.IETRect)
 	 */
 	public void setGraphicBoundingRect(IETRect value) {
@@ -75,13 +79,17 @@ public class GraphicExportDetails implements IGraphicExportDetails {
 		return m_FrameBoundingRect;
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.diagrams.IGraphicExportDetails#setGraphicBoundingRect(org.netbeans.modules.uml.core.support.umlsupport.IETRect)
 	 */
 	public void setFrameBoundingRect(IETRect value) {
 		m_FrameBoundingRect = value;
 	}
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.diagrams.IGraphicExportDetails#getMapLocations()
 	 */
 	public ETList < IGraphicMapLocation > getMapLocations() {
@@ -91,14 +99,18 @@ public class GraphicExportDetails implements IGraphicExportDetails {
 		return m_Map;
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.diagrams.IGraphicExportDetails#setMapLocations()
 	 */
 	public void setMapLocations(ETList < IGraphicMapLocation > locations) {
 		m_Map = locations;
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.diagrams.IGraphicExportDetails#clear()
 	 */
 	public void clear() {

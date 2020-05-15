@@ -47,12 +47,16 @@ import org.netbeans.modules.uml.core.support.umlsupport.IResultCell;
 
 public interface IRequestProcessorInitEventsSink
 {
-	/**
+	
+
+/**
 	 * Fired at the beginning of initializion.
 	*/
 	public void onPreInitialized( String proc, IResultCell cell );
 
-	/**
+	
+
+/**
 	 * Fired when the RequestProcessor is completely initialized.
 	*/
 	public void onInitialized( IRequestProcessor proc, IResultCell cell );

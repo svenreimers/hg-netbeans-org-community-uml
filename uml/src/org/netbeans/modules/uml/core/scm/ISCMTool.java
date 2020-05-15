@@ -44,38 +44,52 @@
 
 package org.netbeans.modules.uml.core.scm;
 
+
+
 /**
  * Interface that SCM tools must support.
  */
 public interface ISCMTool extends ISCMFeatureAvailability
 {
-	/**
+	
+
+/**
 	 * Initializes the SCM tool with information about the client calling into its services.
 	*/
 	public void initialize( Object data, String callerName );
 
-   /**
+   
+
+/**
 	 * Sets the absolute path to the directory the SCM tool will work from.
     * The project name is not specifed.
 	*/
 	public void setWorkingDirectory( String data);
 
-	/**
+	
+
+/**
 	 * Sets the absolute path to the directory the SCM tool will work from.
 	*/
 	public void setWorkingDirectory( String data, String projectName );
 
-	/**
+	
+
+/**
 	 * Retrieves the SCM ID. Initialize and SetWorkingDirectory must first be called.
 	*/
 	public String getSCMID();
 
-	/**
+	
+
+/**
 	 * Retrieves the SCM ID. Initialize and SetWorkingDirectory must first be called.
 	*/
 	public void setSCMID( String value );
 
-	/**
+	
+
+/**
 	 * Is this tool available for feature requests?.
 	*/
 	public boolean getIsAvailable();

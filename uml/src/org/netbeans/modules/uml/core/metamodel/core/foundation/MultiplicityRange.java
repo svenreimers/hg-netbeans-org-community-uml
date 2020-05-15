@@ -67,7 +67,9 @@ public class MultiplicityRange extends Element implements IMultiplicityRange
         super();
     }
     
-    /**
+    
+
+/**
      * Gets the lower bound for this range.
      *
      * @result HRESULT
@@ -77,7 +79,9 @@ public class MultiplicityRange extends Element implements IMultiplicityRange
         return getAttributeValue("lower");
     }
     
-    /**
+    
+
+/**
      * Sets the lower bound for this range.
      *
      * @param val[ini]
@@ -110,7 +114,9 @@ public class MultiplicityRange extends Element implements IMultiplicityRange
         }
     }
     
-    /**
+    
+
+/**
      *
      * Checks to see if the cardinality being set is valid, vs. the other cardinality
      *
@@ -154,7 +160,9 @@ public class MultiplicityRange extends Element implements IMultiplicityRange
         return isValid;
     }
     
-    /**
+    
+
+/**
      *
      * Retrieves the necessary interface in order to fire the few methods on the
      * IMultiplicityListener interface
@@ -210,7 +218,9 @@ public class MultiplicityRange extends Element implements IMultiplicityRange
         return listener;
     }
     
-    /**
+    
+
+/**
      * Gets the upper bound for this range.  If upper is not specified (i.e.,
      * -1), then the range includes the lower bound and all integers greater
      * than the lower bound.
@@ -222,7 +232,9 @@ public class MultiplicityRange extends Element implements IMultiplicityRange
         return getAttributeValue("upper");
     }
     
-    /**
+    
+
+/**
      * Sets the upper bound for this range.  If upper is not specified (i.e.,
      * -1), then the range includes the lower bound and all integers greater
      * than the lower bound.
@@ -257,7 +269,9 @@ public class MultiplicityRange extends Element implements IMultiplicityRange
         }
     }
     
-    /**
+    
+
+/**
      * A convenience function used to get the upper and lower
      * bounds in one call.
      *
@@ -272,7 +286,9 @@ public class MultiplicityRange extends Element implements IMultiplicityRange
         return new ETPairT < String, String > (getLower(), getUpper());
     }
     
-    /**
+    
+
+/**
      * A convenience function used to set the upper and lower bounds in one call.
      *
      * @param lower the lower value
@@ -286,7 +302,9 @@ public class MultiplicityRange extends Element implements IMultiplicityRange
         setUpper(upper);
     }
     
-    /**
+    
+
+/**
      * Returns the parent IMultiplicity object
      *
      * @result The multiplicity that owns this range.
@@ -319,7 +337,9 @@ public class MultiplicityRange extends Element implements IMultiplicityRange
         return pMult;
     }
     
-    /**
+    
+
+/**
      *
      * Establishes the appropriate XML elements for this UML type.
      *
@@ -334,7 +354,9 @@ public class MultiplicityRange extends Element implements IMultiplicityRange
         buildNodePresence("UML:MultiplicityRange", doc, parent);
     }
     
-    /**
+    
+
+/**
      *
      * Determines whether or not the passed in string represents a number or not.
      *
@@ -401,7 +423,9 @@ public class MultiplicityRange extends Element implements IMultiplicityRange
         return (retStr != null) ? retStr : ""; // NOI18N
     }
     
-    /**
+    
+
+/**
      * Sometimes a user will want the code to be generated as collection not
      * an array.  The collectionType property allows a collection type to be
      * specified.
@@ -413,7 +437,9 @@ public class MultiplicityRange extends Element implements IMultiplicityRange
         return getCollectionType(false);
     }
     
-    /**
+    
+
+/**
      * Sometimes a user will want the code to be generated as collection not
      * an array.  The collectionType property allows a collection type to be
      * specified.
@@ -457,7 +483,9 @@ public class MultiplicityRange extends Element implements IMultiplicityRange
        return retVal;
     }
     
-    /**
+    
+
+/**
      * Sets the collection type to use when generating code.  An empty string 
      * means that an array should be used.
      * 

@@ -43,6 +43,8 @@
  */
 
 
+
+
 /*
  * Created on Jun 10, 2003
  *
@@ -198,7 +200,9 @@ public class PropertyEditorFilterDialog extends JCenterDialog
 
 			//get
 
-			/*panel.setBorder(new EmptyBorder(10, 10, 5, 10));
+			
+
+/*panel.setBorder(new EmptyBorder(10, 10, 5, 10));
 			panel.setLayout(new BorderLayout());
 
 			panel.add(m_List);
@@ -231,7 +235,9 @@ public class PropertyEditorFilterDialog extends JCenterDialog
 		return ret;
 
 	}
-	/**
+	
+
+/**
 	 * The action that performs the OK button action.  The users changes will
 	 * be saved.
 	 */
@@ -245,7 +251,9 @@ public class PropertyEditorFilterDialog extends JCenterDialog
 			m_Dialog = dialog;
 		}
 
-		/**
+		
+
+/**
 		 * Saves the users changes and closes the window.
 		 *
 		 * @param e The event data.
@@ -262,7 +270,9 @@ public class PropertyEditorFilterDialog extends JCenterDialog
 		}
 	}
 
-	/**
+	
+
+/**
 	 * The action that performs the cancel button action.  The users changes will
 	 * be discarded.
 	 */
@@ -273,7 +283,9 @@ public class PropertyEditorFilterDialog extends JCenterDialog
 			super(PropertyEditorResources.getString("IDS_CANCEL"));
 		}
 
-		/**
+		
+
+/**
 		 * Saves the users changes and closes the window.
 		 *
 		 * @param e The event data.

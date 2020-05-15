@@ -89,7 +89,9 @@ public class TargetMessageAnchor extends Anchor{
         return new org.netbeans.api.visual.anchor.Anchor.Result(pnt,DIRECTION_ANY);
     }
     
-    /**
+    
+
+/**
      * 
      * @param toLeft true if stick to left side, false if stick to right
      */

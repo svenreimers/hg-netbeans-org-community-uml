@@ -98,7 +98,9 @@ public class GenerateCodeAction extends CookieAction
 
     private IProject parentProject = null;
     
-    /**
+    
+
+/**
      * Creates a new instance of GenerateCodeAction
      */
     public GenerateCodeAction()
@@ -665,7 +667,7 @@ public class GenerateCodeAction extends CookieAction
     
     private String getUnnamedElementPreference()
     {
-        //Kris Richards - returning the default value.
+        
         return "Unnamed" ; // NOI18N    
     }
 

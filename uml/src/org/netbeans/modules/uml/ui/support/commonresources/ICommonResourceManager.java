@@ -43,11 +43,15 @@
  */
 
 
+
+
 /*
  * Created on Jun 6, 2003
  *
  *
  */
+
+
 /**
  * This class is a common resource for icons.  If you call GetIconFor... then you need to manage
  * the destruction of the HICON.  If you only want icons loaded once per type of object you need
@@ -60,6 +64,7 @@
 package org.netbeans.modules.uml.ui.support.commonresources;
 
 import javax.swing.Icon;
+
 
 /**
  *

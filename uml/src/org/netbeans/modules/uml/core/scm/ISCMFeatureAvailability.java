@@ -46,12 +46,16 @@ package org.netbeans.modules.uml.core.scm;
 
 public interface ISCMFeatureAvailability
 {
-	/**
+	
+
+/**
 	 * Determines whether or not the passed in feature is available given the element.
 	*/
 	public boolean isFeatureAvailable( /* SCMFeatureKind */ int kind, String fileName );
 
-   /**
+   
+
+/**
 	 * Executes the feature on the passed in files.  The SCM UI will be displayed.
     *
     * @param kind The type of feature to execute.  The value of kind must be one
@@ -60,7 +64,9 @@ public interface ISCMFeatureAvailability
 	 */
 	public void executeFeature( /* SCMFeatureKind */ int kind, ISCMItemGroup Group );
 
-   /**
+   
+
+/**
 	 * Executes the feature on the passed in files.
     *
     * @param kind The type of feature to execute.  The value of kind must be one
@@ -70,7 +76,9 @@ public interface ISCMFeatureAvailability
 	 */
 	public void executeFeature( /* SCMFeatureKind */ int kind, ISCMItemGroup Group, boolean showGUI );
 
-   /**
+   
+
+/**
 	 * Executes the feature on the passed in files.  The SCM UI will be displayed.
     *
     * @param kind The type of feature to execute.  The value of kind must be one
@@ -80,7 +88,9 @@ public interface ISCMFeatureAvailability
 	 */
 	public void executeFeature( /* SCMFeatureKind */ int kind, ISCMItemGroup Group, ISCMOptions pOptions );
 
-	/**
+	
+
+/**
 	 * Executes the feature on the passed in files.
     *
     * @param kind The type of feature to execute.  The value of kind must be one
@@ -91,7 +101,9 @@ public interface ISCMFeatureAvailability
 	 */
 	public void executeFeature( /* SCMFeatureKind */ int kind, ISCMItemGroup Group, ISCMOptions pOptions, boolean showGUI );
 
-	/**
+	
+
+/**
 	 * Retrieves an explanation on why the last call to IsFeatureAvailable returned a false result. If status has no length, no error status is available.
 	*/
 	public String getLastFeatureStatus();

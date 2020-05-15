@@ -61,7 +61,9 @@ public class AssociateDialogOperator extends FindDialogOperator{
         super(LabelsAndTitles.ASSOCIATE_DIALOG_TITLE, null);
     }
 
-    /**
+    
+
+/**
      * 
      * @param log 
      */
@@ -69,7 +71,9 @@ public class AssociateDialogOperator extends FindDialogOperator{
         super(LabelsAndTitles.ASSOCIATE_DIALOG_TITLE, log);
     }
     
-    /**
+    
+
+/**
      * 
      * @param node 
      * @return 
@@ -79,7 +83,9 @@ public class AssociateDialogOperator extends FindDialogOperator{
         return new AssociateDialogOperator();
     }
 
-    /**
+    
+
+/**
      * 
      * @param node 
      * @param log 
@@ -90,7 +96,9 @@ public class AssociateDialogOperator extends FindDialogOperator{
         return new AssociateDialogOperator(log);
     }
     
-    /**
+    
+
+/**
      * 
      * @param elem 
      * @return 
@@ -100,7 +108,9 @@ public class AssociateDialogOperator extends FindDialogOperator{
         return new AssociateDialogOperator();
     }
 
-    /**
+    
+
+/**
      * 
      * @param elem 
      * @param log 
@@ -111,7 +121,9 @@ public class AssociateDialogOperator extends FindDialogOperator{
         return new AssociateDialogOperator(log);
     }
     
-    /**
+    
+
+/**
      * 
      * @param projectName 
      */

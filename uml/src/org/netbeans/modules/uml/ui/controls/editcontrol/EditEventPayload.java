@@ -65,7 +65,9 @@ public class EditEventPayload extends EventPayload implements IEditEventPayload
 		super();
 	}
 
-	/**
+	
+
+/**
 	 * Description
 	 *
 	 * @param keycode[out]
@@ -76,7 +78,9 @@ public class EditEventPayload extends EventPayload implements IEditEventPayload
 		return m_KeyCode;
 	}
 
-	/**
+	
+
+/**
 	 * Description
 	 *
 	 * @param keycode[in]
@@ -87,7 +91,9 @@ public class EditEventPayload extends EventPayload implements IEditEventPayload
 		m_KeyCode = keycode;
 	}
 
-	/**
+	
+
+/**
 	 * Description
 	 *
 	 * @param bModified[out]
@@ -98,7 +104,9 @@ public class EditEventPayload extends EventPayload implements IEditEventPayload
 		return m_Modified;
 	}
 
-	/**
+	
+
+/**
 	 * Description
 	 *
 	 * @param bModified[in]
@@ -109,7 +117,9 @@ public class EditEventPayload extends EventPayload implements IEditEventPayload
 		m_Modified = bModified;
 	}
 
-	/**
+	
+
+/**
 	 * Description
 	 *
 	 * @param sText[out]
@@ -120,7 +130,9 @@ public class EditEventPayload extends EventPayload implements IEditEventPayload
 		return m_Text;
 	}
 
-	/**
+	
+
+/**
 	 * Description
 	 *
 	 * @param sText[in]

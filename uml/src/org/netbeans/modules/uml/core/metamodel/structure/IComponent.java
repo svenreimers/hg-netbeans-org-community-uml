@@ -55,147 +55,205 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 public interface IComponent extends IClass
 {
-	/**
+	
+
+/**
 	 * property Instantiation
 	*/
 	public int getInstantiation();
 
-	/**
+	
+
+/**
 	 * property Instantiation
 	*/
 	public void setInstantiation( /* InstantiationKind */ int value );
 
-	/**
+	
+
+/**
 	 * method AddExternalInterface
 	*/
 	public void addExternalInterface( IPort ext );
 
-	/**
+	
+
+/**
 	 * method RemoveExternalInterface
 	*/
 	public void removeExternalInterface( IPort ext );
 
-	/**
+	
+
+/**
 	 * property ExternalInterfaces
 	*/
 	public ETList<IPort> getExternalInterfaces();
 
-	/**
+	
+
+/**
 	 * property SpecifyingStateMachine
 	*/
 	public IStateMachine getSpecifyingStateMachine();
 
-	/**
+	
+
+/**
 	 * property SpecifyingStateMachine
 	*/
 	public void setSpecifyingStateMachine( IStateMachine value );
 
-	/**
+	
+
+/**
 	 * method AddElementImport
 	*/
 	public void addElementImport( IElementImport element );
 
-	/**
+	
+
+/**
 	 * method RemoveElementImport
 	*/
 	public void removeElementImport( IElementImport element );
 
-	/**
+	
+
+/**
 	 * property ElementImports
 	*/
 	public ETList<IElementImport> getElementImports();
 
-	/**
+	
+
+/**
 	 * method AddInternalConnector
 	*/
 	public void addInternalConnector( IConnector connect );
 
-	/**
+	
+
+/**
 	 * method RemoveInternalConnector
 	*/
 	public void removeInternalConnector( IConnector connect );
 
-	/**
+	
+
+/**
 	 * property InternalConnectors
 	*/
 	public ETList<IConnector> getInternalConnectors();
 
-	/**
+	
+
+/**
 	 * method AddInternalClassifier
 	*/
 	public void addInternalClassifier( IPart internal );
 
-	/**
+	
+
+/**
 	 * method RemoveInternalClassifier
 	*/
 	public void removeInternalClassifier( IPart internal );
 
-	/**
+	
+
+/**
 	 * property InternalClassifiers
 	*/
 	public ETList<IPart> getInternalClassifiers();
 
-	/**
+	
+
+/**
 	 * method AddNode
 	*/
 	public void addNode( INode node );
 
-	/**
+	
+
+/**
 	 * method RemoveNode
 	*/
 	public void removeNode( INode node );
 
-	/**
+	
+
+/**
 	 * property Nodes
 	*/
 	public ETList<INode> getNodes();
 
-	/**
+	
+
+/**
 	 * method AddArtifact
 	*/
 	public void addArtifact( IArtifact art );
 
-	/**
+	
+
+/**
 	 * method RemoveArtifact
 	*/
 	public void removeArtifact( IArtifact art );
 
-	/**
+	
+
+/**
 	 * property Artifacts
 	*/
 	public ETList<IArtifact> getArtifacts();
 
-	/**
+	
+
+/**
 	 * method AddDeploymentSpecification
 	*/
 	public void addDeploymentSpecification( IDeploymentSpecification pSpec );
 
-	/**
+	
+
+/**
 	 * method RemoveDeploymentSpecification
 	*/
 	public void removeDeploymentSpecification( IDeploymentSpecification pSpec );
 
-	/**
+	
+
+/**
 	 * property DeploymentSpecifications
 	*/
 	public ETList<IDeploymentSpecification> getDeploymentSpecifications();
 
-	/**
+	
+
+/**
 	 * method AddAssembly
 	*/
 	public void addAssembly( IComponentAssembly pAssembly );
 
-	/**
+	
+
+/**
 	 * method RemoveAssembly
 	*/
 	public void removeAssembly( IComponentAssembly pAssembly );
 
-	/**
+	
+
+/**
 	 * property Assemblies
 	*/
 	public ETList<IComponentAssembly> getAssemblies();
    
-   /**
+   
+
+/**
     * Determines whether or not the passed in Classifier is internal to the Component.
     * 
     * @param classifier[in]  The classifier to check

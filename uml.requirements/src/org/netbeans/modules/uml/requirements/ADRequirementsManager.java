@@ -42,6 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
+
+
 /*
  * ADRequirementsManager.java
  *
@@ -240,7 +242,9 @@ implements IDesignCenterSupport, IDesignCenterSupportGUI, IActionProvider
    ////////////////////////////////////////////////////////////////////////////
    // IDesignCenterSupportGUI Methods
 
-   /**
+   
+
+/**
     * Get the top level of the project tree for this addin.
     *
     * @retun The project tree
@@ -260,7 +264,9 @@ implements IDesignCenterSupport, IDesignCenterSupportGUI, IActionProvider
       return retVal;
    }
 
-   /**
+   
+
+/**
     * Set the top level of the project tree into this addin.
     *
     * @param newVal The new project tree
@@ -278,7 +284,9 @@ implements IDesignCenterSupport, IDesignCenterSupportGUI, IActionProvider
       }
    }
 
-   /**
+   
+
+/**
     * Called upon a request to expand this addin's items in the tree.
     *
     * @param pParent The currently selected tree Item.
@@ -304,7 +312,9 @@ implements IDesignCenterSupport, IDesignCenterSupportGUI, IActionProvider
          }
          //If the Requirements node has no children, the Requirements Provider dialog will no longer
          //be displayed.
-         /*
+         
+
+/*
          else
          {
             IReqProviderDialog dlg = new ReqProviderDialog();
@@ -333,9 +343,8 @@ implements IDesignCenterSupport, IDesignCenterSupportGUI, IActionProvider
    ////////////////////////////////////////////////////////////////////////////
    // Protected methods
 
-   /**
-    * Loads the Requirements Provider addins from the registry key.
-    */
+   
+
    protected void loadAddIns()
    {
       // If the addins collection is NULL then I know that we have not previously
@@ -368,7 +377,9 @@ implements IDesignCenterSupport, IDesignCenterSupportGUI, IActionProvider
       }
    }
 
-   /**
+   
+
+/**
     * Creates the event sinks for the Requirements Manager. For example it sets
     * up the IDrawingAreaEventsSink to facilitate drag/drop of requirements onto
     * the drawing area.
@@ -386,7 +397,9 @@ implements IDesignCenterSupport, IDesignCenterSupportGUI, IActionProvider
       }
    }
 
-   /**
+   
+
+/**
     * Open the Requirement Sources file and load the Requirement Provider addins
     * that it specifies.
     *
@@ -430,18 +443,8 @@ implements IDesignCenterSupport, IDesignCenterSupportGUI, IActionProvider
       }
    }
 
-   /**
-    * Loads the Requirements Provider AddIn Source instance defined in the XML
-    * <RequirementSource> element. The element is obtained from the
-    * RequirementSources.etd file. Then, add the top-level contents of the
-    * Requirements Source to the tree. Note: if content loading fails, the catch
-    * logic will remove the Source's Tree Item from the tree.
-    *
-    * @param treeItem The currently selected tree Item, parent of new
-    *                 requirement provider.
-    * @param requirementSource The requirement source that represents a
-    *                          requirements provider addin
-    */
+   
+
    protected void loadReqProviderAddin(IProjectTreeItem treeItem,
                                        IRequirementSource requirementSource)
    {
@@ -505,7 +508,9 @@ implements IDesignCenterSupport, IDesignCenterSupportGUI, IActionProvider
    }
 
 
-   /**
+   
+
+/**
     *
     * Creates a sub-tree item for the passed in requirements source.
     *
@@ -558,7 +563,9 @@ implements IDesignCenterSupport, IDesignCenterSupportGUI, IActionProvider
       return retVal;
    }
 
-   /**
+   
+
+/**
     * Implements the IActionProvider interface.
     */
    public Action[] getActions()
@@ -567,7 +574,9 @@ implements IDesignCenterSupport, IDesignCenterSupportGUI, IActionProvider
        return actions;
    }
    
-   /**
+   
+
+/**
     *
     * Determines if the RequirementsSouces.etd file exists,
     *
@@ -586,7 +595,9 @@ implements IDesignCenterSupport, IDesignCenterSupportGUI, IActionProvider
       return bRtn;
    }
 
-   /**
+   
+
+/**
     *
     * Callback from IReqProviderDialog, when the "Display Souces" button is pressed
     * on the Requirements Provider Dialog. The ReqProviderDialogImpl is in
@@ -606,7 +617,9 @@ implements IDesignCenterSupport, IDesignCenterSupportGUI, IActionProvider
    }
     */
 
-   /**
+   
+
+/**
     *
     * Adds the Source Provider entry to the etd and to the tree.
     * requirements provider addin that manages it.
@@ -651,7 +664,9 @@ implements IDesignCenterSupport, IDesignCenterSupportGUI, IActionProvider
       }
    }
 
-   /**
+   
+
+/**
     * Message from the sink that something has been selected
     */
    public void handleSelection( IProductContextMenu pContextMenu,
@@ -760,7 +775,9 @@ implements IDesignCenterSupport, IDesignCenterSupportGUI, IActionProvider
       }
    }
 
-   /**
+   
+
+/**
     * Removes the Satisfer element from the Requirements Provider and also from
     * the Proxy file.
     *
@@ -888,7 +905,9 @@ implements IDesignCenterSupport, IDesignCenterSupportGUI, IActionProvider
    /////////////////////////////////////////////////////////////////////////////////////
    // IProjectTreeEventsSink
 
-   /**
+   
+
+/**
     * Forwarded msg from EventSink when user clicks on a TreeItem with an embedded
     * Requirement.
     */
@@ -942,7 +961,9 @@ implements IDesignCenterSupport, IDesignCenterSupportGUI, IActionProvider
       }
    }
 
-   /**
+   
+
+/**
     *
     * Add the passed in Requirements Source to the map of RequirementSources managed
     * by the Provider..
@@ -1001,7 +1022,9 @@ implements IDesignCenterSupport, IDesignCenterSupportGUI, IActionProvider
       }
    }
 
-   /**
+   
+
+/**
     * Recursively Load Requirements and their Requirements collections.
     *
     * @param pTreeItem[in] Starting TreeItem, item that received 'AddNode' event.
@@ -1058,7 +1081,9 @@ implements IDesignCenterSupport, IDesignCenterSupportGUI, IActionProvider
       }
    }
 
-   /**
+   
+
+/**
     *
     *	Revokes event sinks that were registered for the ADRequirements addin.
     *
@@ -1067,6 +1092,8 @@ implements IDesignCenterSupport, IDesignCenterSupportGUI, IActionProvider
     */
    public void disconnectEventSinks()
    {
+
+
 /*
    try
    {
@@ -1081,7 +1108,9 @@ implements IDesignCenterSupport, IDesignCenterSupportGUI, IActionProvider
  */
    }
 
-   /**
+   
+
+/**
     *
     * Handles the IDrawingAreaEventsSink OnDrawingAreaPreDrop event
     * for the ADRequirements Addin. This event is Fired right before
@@ -1102,7 +1131,9 @@ implements IDesignCenterSupport, IDesignCenterSupportGUI, IActionProvider
 //   {
 //   }
 
-   /**
+   
+
+/**
     *
     * Handles the IDrawingAreaEventsSink OnDrawingAreaPostDrop event
     * for the ADRequirements Addin. This event is Fired after items
@@ -1153,7 +1184,9 @@ implements IDesignCenterSupport, IDesignCenterSupportGUI, IActionProvider
 //
 //   }
 
-   /**
+   
+
+/**
     *  Associates the satisfiers with the requirements
     *
     */
@@ -1305,7 +1338,9 @@ implements IDesignCenterSupport, IDesignCenterSupportGUI, IActionProvider
 
    }
 
-   /**
+   
+
+/**
     *
     * Handles the OnDrawingAreaPostDrop event
     * for the ADRequirementsManager Addin. This event is fired on when
@@ -1405,7 +1440,9 @@ implements IDesignCenterSupport, IDesignCenterSupportGUI, IActionProvider
    {
    }
 
-   /**
+   
+
+/**
     * Extracts the Description attribute from the passed in XML string. The XML
     * String is returned from the clipboard after a drag/drop is performed.
     *
@@ -1434,7 +1471,9 @@ implements IDesignCenterSupport, IDesignCenterSupportGUI, IActionProvider
       return retVal;
    }
 
-   /**
+   
+
+/**
     *
     * Add a sub-tree item to the passed in IProjectTreeItem.
     *
@@ -1533,7 +1572,9 @@ implements IDesignCenterSupport, IDesignCenterSupportGUI, IActionProvider
       return retVal;
    }
 
-   /**
+   
+
+/**
     *
     * Add a sub-tree item to the passed in IProjectTreeItem.
     *
@@ -1587,7 +1628,9 @@ implements IDesignCenterSupport, IDesignCenterSupportGUI, IActionProvider
       return retVal;
    }
 
-   /**
+   
+
+/**
     *
     * Add a sub-tree item to the passed in IProjectTreeItem.
     *
@@ -1672,7 +1715,9 @@ implements IDesignCenterSupport, IDesignCenterSupportGUI, IActionProvider
 
       return retVal;
    }
-   /**
+   
+
+/**
     * Given a key String this looks the String up in the resource manager and returns
     * the icon that should be used for that type.
     *

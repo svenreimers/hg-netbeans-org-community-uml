@@ -49,12 +49,16 @@ import org.netbeans.modules.uml.core.support.umlsupport.IETRect;
 
 public interface ILabelMapLocation extends IGraphicMapLocation
 {
-    /**
+    
+
+/**
      * The location of this label within the graphic.
     */
     public IETRect getLocation();
 
-    /**
+    
+
+/**
      * The location of this label within the graphic.
     */
     public void setLocation( IETRect value );

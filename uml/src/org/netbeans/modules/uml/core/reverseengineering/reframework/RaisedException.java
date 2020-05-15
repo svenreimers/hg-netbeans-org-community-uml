@@ -51,7 +51,9 @@ public class RaisedException extends MethodDetailParserData
 {
     private String m_ExceptionName;
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.IRaisedException#getStringRepresentation()
      */
     public String getStringRepresentation()
@@ -59,7 +61,9 @@ public class RaisedException extends MethodDetailParserData
         return m_ExceptionName;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.IRaisedException#setStringRepresentation(java.lang.String)
      */
     public void setStringRepresentation(String newVal)

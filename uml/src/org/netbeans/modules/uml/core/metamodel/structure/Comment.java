@@ -57,7 +57,9 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 public class Comment extends NamedElement implements IComment 
 {
 
-	/**
+	
+
+/**
 	 * 
 	 */
 	public Comment() 
@@ -65,7 +67,9 @@ public class Comment extends NamedElement implements IComment
 		super();	
 	}
 	
-	/**
+	
+
+/**
 	 * Is this element in the AnnotatedElements list?
 	 *
 	 * @param element[in] The element to check
@@ -104,7 +108,9 @@ public class Comment extends NamedElement implements IComment
 		addElementByID(element,"annotatedElement");
 	}
 	
-	/**
+	
+
+/**
 	 *
 	 * The body of the comment.
 	 */
@@ -118,7 +124,9 @@ public class Comment extends NamedElement implements IComment
 		return XMLManip.retrieveNodeTextValue(m_Node,"UML:Comment.body");
 	}
 	
-	/**
+	
+
+/**
 	 * Establishes the appropriate XML elements for this UML type.
 	 *
 	 * [in] The document where this element will reside

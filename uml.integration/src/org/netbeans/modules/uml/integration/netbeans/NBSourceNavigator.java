@@ -82,6 +82,7 @@ import org.netbeans.modules.uml.integration.ide.events.MethodInfo;
 //import org.netbeans.modules.uml.integration.netbeans.actions.NBSourcePaneAction;
 
 
+
 /**
  * The class NBSourceNavigator implements the interface
  * SourceNavigator to
@@ -103,7 +104,9 @@ public class NBSourceNavigator implements SourceNavigator
     }
 
     
-    /**
+    
+
+/**
      *  Implementation for navigating to the forte source file
      *  @param cli ClassInfo object
      */
@@ -120,7 +123,9 @@ public class NBSourceNavigator implements SourceNavigator
     }
     
 
-    /**
+    
+
+/**
      *  Implementation for navigating to the method/operation in the forte source file
      *  @param methodInfo MethodInfo object
      */
@@ -155,7 +160,9 @@ public class NBSourceNavigator implements SourceNavigator
     }    
     
 
-    /**
+    
+
+/**
      *  Implementation for navigating to the member/field in the forte source file
      *  @param memberInfo MemberInfo object
      */
@@ -178,12 +185,16 @@ public class NBSourceNavigator implements SourceNavigator
     
     //////////////////////////  Helper methods ///////////////////////////////////
     
-    /**
+    
+
+/**
      * Opens up the source editor and navigates to the source element.
      * @param element The element to navigate to.
      * @deprecated .
      */
-    /*protected void showSourceFile(final MemberElement element) {
+    
+
+/*protected void showSourceFile(final MemberElement element) {
         Log.entry("Entering function NBSourceNavigator::showSourceFile");
 //        if(isMaximized())
 //            return;
@@ -262,7 +273,9 @@ public class NBSourceNavigator implements SourceNavigator
 //        return true;
 //    }
     
-    /*protected JavaDoc getJavaDoc(MemberElement el) {
+    
+
+/*protected JavaDoc getJavaDoc(MemberElement el) {
         if (el instanceof ClassElement)
             return ((ClassElement) el).getJavaDoc();
         else if (el instanceof ConstructorElement)
@@ -272,7 +285,9 @@ public class NBSourceNavigator implements SourceNavigator
         return null;
     }*/
 
-    /* NB60TBD
+    
+
+/* NB60TBD
     protected org.netbeans.jmi.javamodel.JavaDoc getJavaDoc(ClassMember el)
     {
         if (el instanceof JavaClass)
@@ -285,7 +300,9 @@ public class NBSourceNavigator implements SourceNavigator
     }
     */    
 
-    /* NB60TBD
+    
+
+/* NB60TBD
     protected void annotate(ClassMember element, Line.Set lineset)
     {
         try
@@ -307,13 +324,17 @@ public class NBSourceNavigator implements SourceNavigator
     }
     */    
 
-    /**
+    
+
+/**
      * Finds the ClassElement that represents the class symbol.  The method
      * will only operate on CLD_Class symbols.
      * @param sym The symbol used to find a ClassElement.
      * @deprecated Use getJavaClass(ClassInfo clazz) instead.
      */
-    /* NB60TBD
+    
+
+/* NB60TBD
     protected ClassElement getClassElement(ClassInfo clazz)
     {
         Log.entry("Entering function NBSourceNavigator::getClassElement");

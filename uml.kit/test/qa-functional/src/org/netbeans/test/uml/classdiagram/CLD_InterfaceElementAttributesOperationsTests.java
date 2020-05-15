@@ -43,6 +43,8 @@
  */
 
 
+
+
 /*
  * CLD_InterfaceTests.java
  *
@@ -107,7 +109,9 @@ public class CLD_InterfaceElementAttributesOperationsTests extends ClassDiagramT
         return suite;
     }
 
-    /**
+    
+
+/**
      * @Testcase_ID: Plan_CLD_InterfaceSymbol:Diagram:34 
      * @Testcase_ID: Plan_CLD_InterfaceSymbol:Diagram:35 
      * @Testcase_ID: Plan_CLD_InterfaceSymbol:Diagram:36 
@@ -161,7 +165,9 @@ public class CLD_InterfaceElementAttributesOperationsTests extends ClassDiagramT
     }
 
 
-    /**
+    
+
+/**
      * @Testcase_ID: Plan_CLD_InterfaceSymbol:Diagram:37 
      * @Testcase_ID: Plan_CLD_InterfaceSymbol:Diagram:38 
      */
@@ -206,7 +212,9 @@ public class CLD_InterfaceElementAttributesOperationsTests extends ClassDiagramT
 
 
 
-    /**
+    
+
+/**
      * @Testcase_ID: Plan_CLD_InterfaceSymbol:Diagram:42
      * @Testcase_ID: Plan_CLD_InterfaceSymbol:Diagram:43 
      * @Testcase_ID: Plan_CLD_InterfaceSymbol:Diagram:44 
@@ -260,7 +268,9 @@ public class CLD_InterfaceElementAttributesOperationsTests extends ClassDiagramT
 
 
 
-    /**
+    
+
+/**
      * @Testcase_ID: Plan_CLD_InterfaceSymbol:Diagram:45
      * @Testcase_ID: Plan_CLD_InterfaceSymbol:Diagram:46 
      */
@@ -424,7 +434,9 @@ public class CLD_InterfaceElementAttributesOperationsTests extends ClassDiagramT
     }
 
 
-    /* 
+    
+
+/* 
      * A bunch of methods will be here	
      *
      * For now Java notation only, standard UML to be done later
@@ -482,7 +494,9 @@ public class CLD_InterfaceElementAttributesOperationsTests extends ClassDiagramT
     }
 
 
-    /*
+    
+
+/*
      * Default implementation picks up child popup if already opened
      * (and it does open automatically just because the mouse was there)
      */

@@ -42,11 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : PlugManager.java
- * Created on : Oct 29, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpcomponent;
 
 /**
@@ -65,7 +62,9 @@ public class PlugManager implements IPlugManager
         copy(rhs);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpccomponent.IPlugManager#copy(org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpccomponent.IPlugManager)
      */
     public void copy(IPlugManager rhs)
@@ -81,7 +80,9 @@ public class PlugManager implements IPlugManager
         return m_PlugCount;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpccomponent.IPlugManager#isPluged()
      */
     public boolean isPluged()
@@ -89,7 +90,9 @@ public class PlugManager implements IPlugManager
         return m_PlugCount > 0;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpccomponent.IPlugManager#plug()
      */
     public void plug()
@@ -97,7 +100,9 @@ public class PlugManager implements IPlugManager
         m_PlugCount++;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpccomponent.IPlugManager#unPlug()
      */
     public void unPlug()

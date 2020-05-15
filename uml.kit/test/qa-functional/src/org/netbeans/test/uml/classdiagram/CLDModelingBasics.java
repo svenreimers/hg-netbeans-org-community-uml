@@ -43,6 +43,8 @@
  */
 
 
+
+
 /*
  * CLD_Modeling_Basics.java
  *
@@ -169,7 +171,9 @@ public class CLDModelingBasics extends ClassDiagramTestCase {
 //            }
 //        }
 // meteroa
-        /*
+        
+
+/*
         Enum[] paletteElementTypes = CLDUtils.getExpectedCLDPaletteElements();
         for(Enum et : paletteElementTypes ){
             try {
@@ -180,7 +184,9 @@ public class CLDModelingBasics extends ClassDiagramTestCase {
             }
         }
          */
-        /* String[] groupNames = {CLD_PALETTE_GROUP_BASIC, CLD_PALETTE_GROUP_ROBUSTNESS, CLD_PALETTE_GROUP_DEPENDENCIES, CLD_PALETTE_GROUP_TEMPLATES, CLD_PALETTE_GROUP_ASSOCIATION, CLD_PALETTE_GROUP_DESIGNPATTERN, CLD_PALETTE_GROUP_COMMENTS};
+        
+
+/* String[] groupNames = {CLD_PALETTE_GROUP_BASIC, CLD_PALETTE_GROUP_ROBUSTNESS, CLD_PALETTE_GROUP_DEPENDENCIES, CLD_PALETTE_GROUP_TEMPLATES, CLD_PALETTE_GROUP_ASSOCIATION, CLD_PALETTE_GROUP_DESIGNPATTERN, CLD_PALETTE_GROUP_COMMENTS};
                 for(String groupName : groupNames ){
                     try {
                         new UMLPaletteOperator().expandGroup(groupName);
@@ -308,89 +314,4 @@ public class CLDModelingBasics extends ClassDiagramTestCase {
     
     
     //TBD
-    /*
-    public void testCopyClassesBetweenDiagrams(){
-        String[] waysToDelete = {"pop-up"} ;
-        String classDiagramName1 = "CLD1";
-        String classDiagramName2 = "CLD2";
-     
-        for(int i=0; i<waysToDelete.length; i++) {
-            Node root = CLDUtils.openDiagram(classDiagramName, PROJECT_NAME, waysToDelete[i]);
-            new Timeout("", 5000).sleep();
-            DiagramOperator dop = new DiagramOperator(classDiagramName);
-            assertTrue(dop!=null);
-            UMLPaletteOperator tco = new UMLPaletteOperator();
-            assertTrue(tco!=null);
-     
-            CLDUtils.deleteNode(root, waysToDelete[i]);
-            assertTrue(!root.isPresent());
-            dop = new DiagramOperator(classDiagramName);
-            assertTrue(dop==null);
-     
-        }
-    }
-     **/
     
-    public void verifyClassDiagramNodeContextualMenuPresence(){
-        // String classDiagramName = "ClassDiagramToTestConetxtualmenu";
-        String classDiagramName = "Class Diagram";
-        Node root = CLDUtils.openDiagram(classDiagramName, PROJECT_NAME, "pop-up");
-        Action[] actions = {new OpenAction(), new AddPackageAction(), new AddElementAction(), new SaveAction(), new CloseDiagramAction(), new DeleteAction(), new RenameAction(), new NavigateToSourceAction(), new SourceControlRefreshStatusAction(), new PropertiesAction()};
-        try {
-            root.verifyPopup(actions);
-        }catch(Exception e){
-            e.printStackTrace();
-            fail("Unexpected Exception !!!");
-        }
-    }
-    
-    public void testInsertAttribute(){
-        //String PROJECT_NAME = "UMLProject-2" ;
-        String classDiagramName = "CLDEmptyClassDiagram";
-        Node root = CLDUtils.openDiagram(classDiagramName, PROJECT_NAME, "pop-up");
-        new Timeout("", 5000).sleep();
-        DiagramOperator dop = new DiagramOperator(classDiagramName);
-        
-        try {
-            ClassOperator co = new ClassOperator(dop, "myClass");
-            co.insertAttribute("private", "Vector", "myVector", null, true);
-        } catch(Exception e){
-            e.printStackTrace();
-            fail("Unexpected Exception !!!");
-        }
-    }
-    
-    
-    public void setUp() {
-        System.out.println("########  "+getName()+"  #######");
-        
-        if (isNotInitialized){
-            Project.openProject(CLDUtils.CDFS_XTEST_PROJECT_DIR+"/"+PROJECT_NAME);
-            isNotInitialized=false;
-        }
-
-        JemmyProperties.setCurrentTimeout("DialogWaiter.WaitDialogTimeout", 5000);
-        JemmyProperties.setCurrentTimeout("Waiter.WaitingTime", 5000);
-        JemmyProperties.setCurrentTimeout("DiagramElementOperator.WaitDiagramElementTime", 5000);
-    }
-    
-    
-    public void tearDown() {
-        long timeoutValDlg = JemmyProperties.getCurrentTimeout("DialogWaiter.WaitDialogTimeout");
-        try{
-            JemmyProperties.setCurrentTimeout("DialogWaiter.WaitDialogTimeout", 1000);
-            new JDialogOperator(EXCEPTION_DLG).close();
-            if (!failedByBug){
-                fail("Unexpected Exception dialog was found");
-            }
-        }catch(Exception excp){
-        }finally{
-            if (failedByBug){
-                failedByBug = false;
-            }
-            JemmyProperties.setCurrentTimeout("DialogWaiter.WaitDialogTimeout", timeoutValDlg);
-        }
-        org.netbeans.test.umllib.util.Utils.tearDown();
-    }
-    
-}

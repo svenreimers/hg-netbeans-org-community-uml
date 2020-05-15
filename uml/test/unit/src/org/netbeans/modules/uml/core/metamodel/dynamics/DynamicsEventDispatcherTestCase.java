@@ -49,6 +49,8 @@ import org.netbeans.modules.uml.core.eventframework.IEventPayload;
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElement;
 import org.netbeans.modules.uml.core.AbstractUMLTestCase;
 import org.netbeans.modules.uml.core.support.umlsupport.IResultCell;
+
+
 /**
  * Test cases for DynamicsEventDispatcher.
  */
@@ -66,7 +68,9 @@ public class DynamicsEventDispatcherTestCase extends AbstractUMLTestCase
     private boolean onPreChangeRepresentingClassifier,
                     onChangeRepresentingClassifier;
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see junit.framework.TestCase#setUp()
      */
     protected void setUp() throws Exception
@@ -81,7 +85,9 @@ public class DynamicsEventDispatcherTestCase extends AbstractUMLTestCase
         life = new Lifeline();
     }
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see junit.framework.TestCase#tearDown()
      */
     protected void tearDown() throws Exception
@@ -123,7 +129,9 @@ public class DynamicsEventDispatcherTestCase extends AbstractUMLTestCase
         assertTrue(onPreChangeRepresentingClassifier);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.ILifelineModifiedEventsSink#onPreChangeRepresentingClassifier(org.netbeans.modules.uml.core.metamodel.dynamics.ILifeline, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onPreChangeRepresentingClassifier(ILifeline pLifeline, ITypedElement pRepresents, IResultCell cell)
@@ -131,7 +139,9 @@ public class DynamicsEventDispatcherTestCase extends AbstractUMLTestCase
         onPreChangeRepresentingClassifier = true;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.ILifelineModifiedEventsSink#onChangeRepresentingClassifier(org.netbeans.modules.uml.core.metamodel.dynamics.ILifeline, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onChangeRepresentingClassifier(ILifeline pLifeline, ITypedElement pRepresents, IResultCell cell)

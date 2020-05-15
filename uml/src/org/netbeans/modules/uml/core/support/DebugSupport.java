@@ -98,7 +98,7 @@ import javax.xml.transform.stream.StreamResult;
         // We found code changes in NetBeans 3.5 OutputTabTerm caused severe
         // latencies of 500-2000 milleseconds between writes to 'out'
         // Temporary workaround is to use OS console with command line argument
-        // TAF: Changed Matt's workaround to populate the Debug.out member 
+        
 		// properly
 		if (errorManager!=null)
 			return;
@@ -223,7 +223,9 @@ import javax.xml.transform.stream.StreamResult;
 	}
 
 
-	/**
+	
+
+/**
 	 *
 	 * @return flag indicating that discriminator is not enabled for logging
 	 */
@@ -255,7 +257,9 @@ import javax.xml.transform.stream.StreamResult;
 	}
 
 
-	/**
+	
+
+/**
 	 *
 	 * 
 	 */
@@ -265,7 +269,9 @@ import javax.xml.transform.stream.StreamResult;
 	}
 
 
-	/**
+	
+
+/**
 	 *
 	 * 
 	 */
@@ -455,7 +461,9 @@ import javax.xml.transform.stream.StreamResult;
 	}
 
 
-	/**
+	
+
+/**
 	 * Converts an array of Objects into a delimited string of values
 	 *
 	 */
@@ -488,7 +496,9 @@ import javax.xml.transform.stream.StreamResult;
 	}
 
 
-	/**
+	
+
+/**
 	 *
 	 *
 	 * @param xmlSource The Source
@@ -499,7 +509,9 @@ import javax.xml.transform.stream.StreamResult;
 	}
 
 
-	/**
+	
+
+/**
 	 *
 	 * @param discriminator optional filter where String.toString() or name of
 	 *        Object.getClass().{ShortName}
@@ -535,7 +547,9 @@ import javax.xml.transform.stream.StreamResult;
 	}
 	
 	
-	/**
+	
+
+/**
 	 *
 	 *
 	 * @param fo The FileObject
@@ -546,7 +560,9 @@ import javax.xml.transform.stream.StreamResult;
 	}
 
 
-	/**
+	
+
+/**
 	 *
 	 * @param discriminator optional filter where String.toString() or name of
 	 *        Object.getClass().{ShortName}
@@ -569,7 +585,9 @@ import javax.xml.transform.stream.StreamResult;
 	}
 
 
-	/**
+	
+
+/**
 	 *
 	 *
 	 * @param note A note describing situation where exception occurred
@@ -590,7 +608,9 @@ import javax.xml.transform.stream.StreamResult;
 	}
 
 
-	/**
+	
+
+/**
 	 * 
 	 *
 	 */

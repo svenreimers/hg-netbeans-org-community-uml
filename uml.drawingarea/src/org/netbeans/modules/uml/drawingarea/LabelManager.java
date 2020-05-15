@@ -49,35 +49,41 @@ import java.util.HashMap;
 import javax.swing.Action;
 import org.netbeans.api.visual.widget.Widget;
 
+
 /**
  * The LabelManager is used to manage a set of labels that can be displayed.
  * 
  */
 public interface LabelManager extends PropertyChangeListener
 {
-    /**
+    
+/**
      * LabelType is an enumeration of the types of labels. 
      */
     public enum LabelType
     {
-        /**
+        
+/**
          * The edge label.  The edge label will usally be displayed on the 
          * center of the connection.
          */
         EDGE, 
         
-        /**
+        
+/**
          * Labels that will be placed on the source end of the connection.
          */
         SOURCE, 
         
-        /**
+        
+/**
          * Labels that will be placed on the target end of teh connection.
          */
         TARGET; 
     }
     
-    /**
+    
+/**
      * Shows the label with the specified name.  The label will have the 
      * type of LabelType.EDGE.
      * 
@@ -85,7 +91,9 @@ public interface LabelManager extends PropertyChangeListener
      */
     public void showLabel(String name);
     
-    /**
+    
+
+/**
      * Shows the label with the specified name and the specified type.
      * 
      * @param name the name of the label.
@@ -93,7 +101,9 @@ public interface LabelManager extends PropertyChangeListener
      */
     public void showLabel(String name, LabelType type);
     
-    /**
+    
+
+/**
      * Shows the label with the specified name and type at the location specified.
      * @param name
      * @param type
@@ -101,31 +111,41 @@ public interface LabelManager extends PropertyChangeListener
      */
     public void showLabel(String name, LabelType type, Point location);
 
-   /**
+   
+
+/**
      * select and focus on labvel if it's shown
      * @param name
      */
     public void selectLabel(final String name);
-   /**
+   
+
+/**
      * select and focus on labvel if it's shown
      * @param name
      * @param type
      */
     public void selectLabel(final String name, final LabelType type);
     
-    /**
+    
+
+/**
      * Returns true if the label is currently selected
      */
     public boolean isLabelSelected(final String name, final LabelType type);
     
-    /**
+    
+
+/**
      * Hides the label with the specified name.  The label will have the 
      * type of LabelType.EDGE
      * @param name the name of the label.
      */
     public void hideLabel(String name);
     
-    /**
+    
+
+/**
      * Hides the label with the specified name and the specified type.
      * 
      * @param name the name of the label.
@@ -133,7 +153,9 @@ public interface LabelManager extends PropertyChangeListener
      */
     public void hideLabel(String name, LabelType type);
             
-    /**
+    
+
+/**
      * Checks if an edge label is visible.
      * 
      * @param name the name of the label.
@@ -141,7 +163,9 @@ public interface LabelManager extends PropertyChangeListener
      */
     public boolean isVisible(String name);
     
-    /**
+    
+
+/**
      * Checks if an edge label is visible.
      * 
      * @param name the name of the label.
@@ -150,13 +174,17 @@ public interface LabelManager extends PropertyChangeListener
      */
     public boolean isVisible(String name, LabelType type);
     
-    /**
+    
+
+/**
      * The label manager is given the chance to create the labels that should
      * be displayed when an edge is first created.
      */
     public void createInitialLabels();
     
-    /**
+    
+
+/**
      * Retrieves the set of actions that should be available on a context menu.
      * The set of actions are used to give the user the ability to control 
      * the label manager.  For example: The actions should give the user the
@@ -167,7 +195,9 @@ public interface LabelManager extends PropertyChangeListener
      */ 
     public Action[] getContextActions(LabelType type);
     
-    /**
+    
+
+/**
      * A map that specifies the labels that are currently displayed.
      * @return the map.
      */

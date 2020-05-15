@@ -48,42 +48,58 @@ import org.netbeans.modules.uml.core.support.umlsupport.IResultCell;
 
 public interface IWorkspaceEventsSink
 {
-	/**
+	
+
+/**
 	 * Fired right before a workspace is created.
 	*/
 	public void onWorkspacePreCreate( IWorkspacePreCreateEventPayload pEvent, IResultCell cell );
 
-	/**
+	
+
+/**
 	 * Fired after a workspace is created.
 	*/
 	public void onWorkspaceCreated( IWorkspace space, IResultCell cell );
 
-	/**
+	
+
+/**
 	 * Fired right before a workspace is opened.
 	*/
 	public void onWorkspacePreOpen( String fileName, IResultCell cell );
 
-	/**
+	
+
+/**
 	 * Fired after a workspace is opened.
 	*/
 	public void onWorkspaceOpened( IWorkspace space, IResultCell cell );
 
-	/**
+	
+
+/**
 	 * Fired right before a workspace is saved.
 	*/
 	public void onWorkspacePreSave( String fileName, IResultCell cell );
 
-	/**
+	
+
+/**
 	 * Fired after a workspace is saved.
 	*/
 	public void onWorkspaceSaved( IWorkspace space, IResultCell cell );
 
-	/**
+	
+
+/**
 	 * Fired right before a workspace is closed.
 	*/
 	public void onWorkspacePreClose( IWorkspace space, IResultCell cell );
 
-	/**
+	
+
+/**
 	 * Fired right after a workspace is closed.
 	*/
 	public void onWorkspaceClosed( IWorkspace space, IResultCell cell );

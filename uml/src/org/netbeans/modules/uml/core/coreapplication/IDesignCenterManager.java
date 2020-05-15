@@ -48,12 +48,16 @@ package org.netbeans.modules.uml.core.coreapplication;
 //import org.netbeans.modules.uml.core.addinframework.IAddInManager;
 public interface IDesignCenterManager //extends IAddInManager
 {
-   /**
+   
+
+/**
     * Gets the design center addins.
     */
 //   public IAddIn[] getAddIns();
    public IDesignCenterSupport[] getAddIns();
-	/**
+	
+
+/**
 	 * Gets the design center addin matching the progID
 	*/
 //	public IAddIn getDesignCenterAddIn( String sProgID );

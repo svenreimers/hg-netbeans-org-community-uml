@@ -42,6 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
+
+
 /*
  * Created on Oct 17, 2003
  *
@@ -64,7 +66,8 @@ public class CallAction extends Action implements ICallAction
 	{
 	}
 	
-	/**
+	
+/**
 	 * Gets the operation which will be invoked when the action is performed.
 	 *
 	 * @return IOperation
@@ -75,7 +78,9 @@ public class CallAction extends Action implements ICallAction
 						retrieveSingleElementWithAttrID(this,"operation", IOperation.class);
 	}
 
-	/**
+	
+
+/**
 	 * Sets the operation which will be invoked when the action is performed.
 	 *
 	 * @param oper[in]
@@ -86,7 +91,9 @@ public class CallAction extends Action implements ICallAction
 	}
 	
 	
-	/**
+	
+
+/**
 	 * Establishes the appropriate XML elements for this UML type.
 	 *
 	 * [in] The document where this element will reside

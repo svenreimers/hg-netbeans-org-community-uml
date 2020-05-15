@@ -61,13 +61,15 @@ import org.netbeans.spi.project.ui.support.ProjectCustomizer.CategoryComponentPr
 
 
 
+
 /** Implementation of standard customizer dialog.
  *
  * copied because we need access to the OK button
  */
 public class UMLCustomizerDialog {
     
-    /** Factory class only 
+    
+/** Factory class only 
      */
     private UMLCustomizerDialog() {}
     
@@ -198,7 +200,9 @@ public class UMLCustomizerDialog {
        }
     }
           
-     /** Creates standard which can be used for implementation
+     
+
+/** Creates standard which can be used for implementation
      * of {@link org.netbeans.spi.project.ui.CustomizerProvider}. You don't need
      * to call <code>pack()</code> method on the dialog. The resulting dialog will 
      * be non-modal. <br> 
@@ -231,7 +235,9 @@ public class UMLCustomizerDialog {
         return dialog;
     }
         
-    /** Creates standard innerPane for customizer dialog.
+    
+
+/** Creates standard innerPane for customizer dialog.
      */
     private static JPanel createCustomizerPane( Category[] categories,
                                                 CategoryComponentProvider componentProvider,

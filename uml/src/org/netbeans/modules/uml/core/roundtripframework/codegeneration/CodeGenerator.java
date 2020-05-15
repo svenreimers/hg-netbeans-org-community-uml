@@ -84,7 +84,9 @@ public class CodeGenerator implements ICodeGenerator, IProgressController
 	private boolean	m_Cancelled = false;
 	private boolean	m_Done = false;
 
-	/**
+	
+
+/**
 	 *
 	 * Generates code for the given language for all the elements passed in.
 	 *
@@ -115,17 +117,8 @@ public class CodeGenerator implements ICodeGenerator, IProgressController
 	                  if( languageName != null && languageName.length() > 0)
 	                  {
 	                  	//UMLMessagingHelper help = new UMLMessagingHelper();
-	                  	/*
-	                     UMLMessagingHelper __help( AfxGetResourceHandle(), IDS_MESSAGINGFACILITY );
-	                     CComBSTR message;
-	                     if( message.LoadString( AfxGetResourceHandle(),  IDS_LANGUAGE_NOT_FOUND ))
-	                     { 
-	                        USES_CONVERSION; 
-	                        xstring mess( W2T( message ));
-	
-	                        _VH( __help.SendInfoMessage( mess.replace( mess.find( _T( "%1" )), 2, W2T( languageName ))));
-	                     }
-	                     */
+	                  	
+
 	                  }
 	               }
 	            }
@@ -133,7 +126,9 @@ public class CodeGenerator implements ICodeGenerator, IProgressController
 	      }
 	   }
 	
-	/**
+	
+
+/**
 	 *
 	 * Loops through all the passed in elements, generating code for any
 	 * element that does not have an artifact that is already associated with
@@ -241,7 +236,9 @@ public class CodeGenerator implements ICodeGenerator, IProgressController
 				}
 			}
 		}
-		/**
+		
+
+/**
 		 *
 		 * We need to capture the state of the Project before we begin code gen, so that
 		 * we can set it back after.
@@ -283,7 +280,9 @@ public class CodeGenerator implements ICodeGenerator, IProgressController
 		}
 		
 	}
-	/**
+	
+
+/**
 	 *
 	 * This is a bit goofy. The way we're doing codegen right now is to make sure the
 	 * Project that the element is in is in a code genable state, meaning that RoundTrip
@@ -330,7 +329,9 @@ public class CodeGenerator implements ICodeGenerator, IProgressController
 	   }
 	}
 	
-	/**
+	
+
+/**
 	 *
 	 * Get the unnamed value for new elements
 	 *
@@ -388,7 +389,9 @@ public class CodeGenerator implements ICodeGenerator, IProgressController
 			  m_OrigMode = m_Project.getMode();
 		   }
 		}
-		/*
+		
+
+/*
 		CCodeGenerator::ProjectState::ProjectState( const ProjectState& copy )
 		{
 		   Copy( copy );
@@ -414,7 +417,9 @@ public class CodeGenerator implements ICodeGenerator, IProgressController
 		      m_Project.setMode( m_OrigMode );
 		   }
 		}
-		/*	
+		
+
+/*	
 		void CCodeGenerator::ProjectState::Copy( const ProjectState& copy )
 		{
 		   m_Project   = copy.m_Project;
@@ -422,7 +427,9 @@ public class CodeGenerator implements ICodeGenerator, IProgressController
 		   m_OrigLang  = copy.m_OrigLang;
 		}
 		*/
-		/*
+		
+
+/*
 		CCodeGenerator::ProjectState& CCodeGenerator::ProjectState::operator=( const ProjectState& rh )
 		{
 		   if( this != &rh )
@@ -435,7 +442,9 @@ public class CodeGenerator implements ICodeGenerator, IProgressController
 		*/
 	}
 	
-	/**
+	
+
+/**
 	 *
 	 * Determines whether or not the passed in element has any SourceFileArtifacts
 	 * that are associated with the language whose name is passed in.
@@ -469,7 +478,9 @@ public class CodeGenerator implements ICodeGenerator, IProgressController
 	   return ok;
 	}
 	
-	/**
+	
+
+/**
 	 *
 	 * Called if the user hits the Cancel button on the ProgressDialog
 	 *
@@ -482,7 +493,9 @@ public class CodeGenerator implements ICodeGenerator, IProgressController
 		m_ProgressDialog = null;
 	}
 	
-	/**
+	
+
+/**
 	 *
 	 * Prepares the Progress Dialog
 	 *
@@ -507,7 +520,9 @@ public class CodeGenerator implements ICodeGenerator, IProgressController
 		}
 	}
 		
-	/**
+	
+
+/**
 	 * Prepare the progress dialog for closure
 	 *
 	 * @param err[in]
@@ -542,7 +557,9 @@ public class CodeGenerator implements ICodeGenerator, IProgressController
 	   this.onCancelled();
 	}
 	
-	/**
+	
+
+/**
 	 *
 	 * ArtifactState removes any existing SourceFileArtifact elements from the passed in
 	 * element temporarily ( it puts them back in the destructor ). This is done to prevent 
@@ -587,7 +604,9 @@ public class CodeGenerator implements ICodeGenerator, IProgressController
 		      }
 		   }
 		}
-		/**
+		
+
+/**
 		 * See the constructor comment for details
 		 */
 		public void dispose()
@@ -615,7 +634,9 @@ public class CodeGenerator implements ICodeGenerator, IProgressController
 		}
 	}
 	
-	/**
+	
+
+/**
 	 *
 	 * Makes sure that all navigable ends are properly named
 	 *
@@ -658,7 +679,9 @@ public class CodeGenerator implements ICodeGenerator, IProgressController
 	   	}
 	}
 	
-	/**
+	
+
+/**
 	 *
 	 * Retrieves the name to use for a attribute or navigable end that includes
 	 * the prefix set in the preferences and the name of the participant on the end.
@@ -687,7 +710,9 @@ public class CodeGenerator implements ICodeGenerator, IProgressController
 	   return prefix;
 	}
 	
-	/**
+	
+
+/**
 	 *
 	 * Retrieves the language specific prefix to be used for attribute names
 	 *

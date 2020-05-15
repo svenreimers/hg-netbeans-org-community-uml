@@ -43,6 +43,8 @@
  */
 
 
+
+
 /*
  * Created on Feb 4, 2004
  *
@@ -91,7 +93,9 @@ public class DrawingProperty implements IDrawingProperty, Comparable
 		m_ResourceName = newVal;
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.support.drawingproperties.IDrawingProperty#getResourceType()
 	 */
 	public String getResourceType()

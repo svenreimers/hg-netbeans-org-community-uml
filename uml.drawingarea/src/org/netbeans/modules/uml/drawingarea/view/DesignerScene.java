@@ -141,7 +141,9 @@ public class DesignerScene extends GraphScene<IPresentationElement, IPresentatio
     private ArrayList < IPresentationElement > lockedSelected = 
             new ArrayList < IPresentationElement >();
     
-    /**
+    
+
+/**
      * The visual library uses a HashSet to manage the selected objects.  The 
      * problem is that the HashSet uses the hash code to determine the order of 
      * the elements in the list.  Therefore, the getSelectedObject does not 
@@ -587,7 +589,9 @@ public class DesignerScene extends GraphScene<IPresentationElement, IPresentatio
     ////////////////////////////////////////////////////////////////////////////
     // Helper Methods
     
-    /**
+    
+
+/**
      * Retrieves all of the edges that are in a specified area.  The area is 
      * specified in screen coordinates.
      * 
@@ -611,7 +615,9 @@ public class DesignerScene extends GraphScene<IPresentationElement, IPresentatio
         return retVal;
     }
     
-    /**
+    
+
+/**
      * Retrieves all of the Nodes that are in a specified area.  The area is 
      * specified in screen coordinates.
      * 
@@ -633,7 +639,9 @@ public class DesignerScene extends GraphScene<IPresentationElement, IPresentatio
         return retVal;
     }
     
-    /**
+    
+
+/**
      * Retrieves all of the nodes and edges that are in a specified area.  The area is 
      * specified in screen coordinates.
      * 

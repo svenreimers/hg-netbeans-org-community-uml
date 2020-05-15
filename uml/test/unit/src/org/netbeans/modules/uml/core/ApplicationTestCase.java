@@ -44,6 +44,8 @@
 
 
 
+
+
 /*
  * Created on Sep 22, 2003
  *
@@ -61,7 +63,8 @@ public class ApplicationTestCase extends AbstractUMLTestCase
 {
     IApplication app = null;
     IWorkspace ws = null;
-    /**
+    
+/**
      *  Constructor
      */
     public ApplicationTestCase()
@@ -130,6 +133,8 @@ public class ApplicationTestCase extends AbstractUMLTestCase
     
     public void testSample()
     {
+
+
 /*		Application application = (Application)app;
                 IWorkspace ws = application.createWorkspace("d:\\temp\\test\\SampleWS","MyWS");
  

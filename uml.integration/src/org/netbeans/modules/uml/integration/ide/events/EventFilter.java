@@ -42,13 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File         : EventFilter.java
- * Version      : 1.0
- * Description  : Filters model-source roundtrip events to eliminate events
- *                caused by the source-model roundtrip.
- * Author       : Darshan
- */
+
+
 package org.netbeans.modules.uml.integration.ide.events;
 
 import java.util.HashSet;
@@ -61,16 +56,8 @@ import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation;
 import org.netbeans.modules.uml.core.support.umlsupport.Log;
 
-/**
- *  Filters model-source roundtrip events to eliminate events caused by the
- * source-model roundtrip.
- *
- * Revision History
- * No.  Date        Who         What
- * ---  ----        ---         ----
- *  1   2002-07-15  Darshan     Fixed filter ids using $ as a name separator
- *                              while the check uses . as the separator.
- */
+
+
 public class EventFilter {
     private Hashtable blockedEvents = new Hashtable();
     private HashSet   blockedEventTypes = new HashSet();

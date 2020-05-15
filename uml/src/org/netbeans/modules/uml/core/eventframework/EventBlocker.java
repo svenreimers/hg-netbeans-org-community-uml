@@ -64,7 +64,9 @@ public class EventBlocker {
 		super();
 	}
 
-	/**
+	
+
+/**
 	 * EventBlocker constructor. Calls the put_PreventAllEvents( true )
 	 * on the passed in IEventDispatcher.
 	 */ 
@@ -84,7 +86,9 @@ public class EventBlocker {
 	   return retVal;
 	}
 
-	/**
+	
+
+/**
 	 * Prevents all event from going out on any and every dispatcher that the
 	 * passed in controller manages. If the passed in controller is 0, then
 	 * the CoreProduct is retrieved, and the EventDispatchController on that

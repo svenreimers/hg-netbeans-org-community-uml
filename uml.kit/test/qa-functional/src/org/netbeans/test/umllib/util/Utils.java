@@ -43,6 +43,8 @@
  */
 
 
+
+
 /*
  * Utils.java
  *
@@ -83,7 +85,9 @@ public class Utils {
     
     private static String DEFAULT_SCREENSHOT_PREFIX="beforeTearDown";
     
-    /**
+    
+
+/**
      * screenshot is created in directory accessible from xtest result
      * call the method from your test  methods or teardown/setup (i.e/ from your test class)
      * method do nothing if there is problems with java.awt.Robot initialization or with file writing
@@ -95,7 +99,9 @@ public class Utils {
         makeScreenShotCustom(testClassName,lastTestCase,DEFAULT_SCREENSHOT_PREFIX);
     }
     
-    /**
+    
+
+/**
      * screenshot is created in directory accessible from xtest result
      * call the method from your test  methods or teardown/setup (i.e/ from your test class)
      * method do nothing if there is problems with java.awt.Robot initialization or with file writing
@@ -108,7 +114,9 @@ public class Utils {
     public static void makeScreenShotCustom(String testClassName, String lastTestCase,String customPrefix){
         makeScreenShotCustom(testClassName,lastTestCase,customPrefix,false);
     }
-     /**
+     
+
+/**
      * screenshot is created in directory accessible from xtest result
      * call the method from your test  methods or teardown/setup (i.e/ from your test class)
      * method do nothing if there is problems with java.awt.Robot initialization or with file writing
@@ -182,7 +190,9 @@ public class Utils {
         
     }
     
-    /**
+    
+
+/**
      * make scrrenshot and stores according to last test case name
      * should be called from test class
      * method with default prefix for screenshot file
@@ -192,7 +202,9 @@ public class Utils {
     {
         makeScreenShot(lastTestCase,false);
     }
-    /**
+    
+
+/**
      * make scrrenshot and stores according to last test case name
      * should be called from test class
      * method with default prefix for screenshot file
@@ -203,7 +215,9 @@ public class Utils {
         makeScreenShotCustom(lastTestCase,DEFAULT_SCREENSHOT_PREFIX,fullscreen);
     }
     
-    /**
+    
+
+/**
      * make scrrenshot and stores according to last test case name
      * should be called from test class
      * @param lastTestCase 
@@ -212,7 +226,9 @@ public class Utils {
     public static void makeScreenShotCustom(String lastTestCase,String customPrefix){
         makeScreenShotCustom(lastTestCase,customPrefix,false);
     }
-    /**
+    
+
+/**
      * make scrrenshot and stores according to last test case name
      * should be called from test class
      * @param lastTestCase 
@@ -223,7 +239,9 @@ public class Utils {
         if(clName!=null)makeScreenShotCustom(clName, lastTestCase,customPrefix);
     }
     
-    /**
+    
+
+/**
      * screenshot is created in directory accessible from xtest result
      * call the method from any method but test method should be in stack
      * screenshot is paced in report directory fro last executed test* method
@@ -235,7 +253,9 @@ public class Utils {
         makeScreenShot(false);
         makeScreenShotCustom(DEFAULT_SCREENSHOT_PREFIX);
     }
-    /**
+    
+
+/**
      * screenshot is created in directory accessible from xtest result
      * call the method from any method but test method should be in stack
      * screenshot is paced in report directory fro last executed test* method
@@ -247,7 +267,9 @@ public class Utils {
         makeScreenShotCustom(DEFAULT_SCREENSHOT_PREFIX,fullscreen);
     }
     
-    /**
+    
+
+/**
      * screenshot is created in directory accessible from xtest result
      * call the method from any method but test method should be in stack
      * screenshot is paced in report directory fro last executed test* method
@@ -257,7 +279,9 @@ public class Utils {
     public static void makeScreenShotCustom(String customPrefix){
         makeScreenShotCustom(customPrefix,false);
     }
-    /**
+    
+
+/**
      * screenshot is created in directory accessible from xtest result
      * call the method from any method but test method should be in stack
      * screenshot is paced in report directory fro last executed test* method
@@ -312,7 +336,9 @@ public class Utils {
         }
     }
     
-    /**
+    
+
+/**
      * 
      * @param dialogName 
      * @param dialogButton 
@@ -338,7 +364,9 @@ public class Utils {
         }).start();
     }
     
-    /**
+    
+
+/**
      * 
      * @param dialogName 
      * @param dialogButton 
@@ -401,7 +429,9 @@ public class Utils {
     }
     
     
-    /**
+    
+
+/**
      * 
      * @param comp 
      */
@@ -409,7 +439,9 @@ public class Utils {
         showComponents("", comp);
     }
 
-    /**
+    
+
+/**
      * 
      * @param blank 
      * @param comp 
@@ -430,7 +462,9 @@ public class Utils {
     }
 
     
-    /**
+    
+
+/**
      * 
      * @param obj 
      */
@@ -438,7 +472,9 @@ public class Utils {
         showClassHierarchy("", obj);
     }
 
-    /**
+    
+
+/**
      * 
      * @param blank 
      * @param obj 
@@ -449,7 +485,9 @@ public class Utils {
     }
     
     
-    /**
+    
+
+/**
      * 
      * @param cls 
      */
@@ -457,7 +495,9 @@ public class Utils {
         showClassHierarchy("", cls);
     }
     
-    /**
+    
+
+/**
      * 
      * @param blank 
      * @param cls 

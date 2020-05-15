@@ -64,7 +64,9 @@ public class UMLCompositePanelProvider  implements ProjectCustomizer.CompositeCa
     private String name;
     
     
-    /** Creates a new instance of UMLCompositePanelProvider 
+    
+
+/** Creates a new instance of UMLCompositePanelProvider 
      * @param name 
      */
     public UMLCompositePanelProvider(String name) {

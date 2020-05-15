@@ -51,12 +51,16 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 public interface IComponentDiagramCreator
 {
-	/**
+	
+
+/**
 	 * Generate the component diagram.
 	*/
 	public boolean generate( ETList<IElement> pSelectedElements, IDiagram pExistingDiagram );
 
-	/**
+	
+
+/**
 	 * Takes the items on the diagram and processes them to find graphical containments.
 	*/
 	public long performLayout( IDiagram pDiagram );

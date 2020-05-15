@@ -47,6 +47,7 @@ package org.netbeans.modules.uml.core.requirementsframework;
 //import org.netbeans.modules.uml.core.addinframework.IAddInDialog;
 import java.awt.Frame;
 
+
 /*
  * IReqProviderDialog.java
  *

@@ -88,7 +88,9 @@ public class WSProjectImpl extends WSElementImpl implements IWSProject
       super();
    }
    
-   /**
+   
+
+/**
     * Retrieves the set of elements in this WSProject.
     *
     * @return The WSElements collection.
@@ -101,7 +103,9 @@ public class WSProjectImpl extends WSElementImpl implements IWSProject
       return getElements(false);
    }
    
-   /**
+   
+
+/**
     * Retrieves the set of elements in this WSProject.  If the force flag
     * is set to true then the WSProjects elements will always be returned.
     *
@@ -163,7 +167,9 @@ public class WSProjectImpl extends WSElementImpl implements IWSProject
       return retVal;
    }
    
-   /**
+   
+
+/**
     * Creates a new WorkspaceProjectElement in this WorkspaceProject
     * from data in an external file.
     *
@@ -207,7 +213,9 @@ public class WSProjectImpl extends WSElementImpl implements IWSProject
       return retVal;
    }
    
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.workspacemanagement.IWSProject#addElementFromDoc(org.dom4j.Document, java.lang.String)
     */
    public IWSElement addElementFromDoc(Document doc, String name)
@@ -223,7 +231,9 @@ public class WSProjectImpl extends WSElementImpl implements IWSProject
       return retVal;
    }
    
-   /**
+   
+
+/**
     *
     * Retrieves a WorkspaceProjectElement by name.
     *
@@ -255,7 +265,9 @@ public class WSProjectImpl extends WSElementImpl implements IWSProject
       return retEle;
    }
    
-   /**
+   
+
+/**
     *
     * Retrieves a WorkspaceProjectElement from the passed-in collection based on its name.
     *
@@ -288,7 +300,9 @@ public class WSProjectImpl extends WSElementImpl implements IWSProject
       return retEle;
    }
    
-   /**
+   
+
+/**
     * Retrieves a WorkspaceProjectElement by its file location setting.
     *
     * @param location The file location to match against.
@@ -335,7 +349,9 @@ public class WSProjectImpl extends WSElementImpl implements IWSProject
       return retVal;
    }
    
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.workspacemanagement.IWSProject#open()
     */
    public void open()
@@ -378,7 +394,9 @@ public class WSProjectImpl extends WSElementImpl implements IWSProject
       }
    }
    
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.workspacemanagement.IWSProject#close(boolean)
     */
    public void close(boolean saveFirst)
@@ -444,7 +462,9 @@ public class WSProjectImpl extends WSElementImpl implements IWSProject
       }
    }
    
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.workspacemanagement.IWSProject#isOpen()
     */
    public boolean isOpen()
@@ -452,7 +472,9 @@ public class WSProjectImpl extends WSElementImpl implements IWSProject
       return m_IsOpen;
    }
    
-   /**
+   
+
+/**
     *
     * Determines whether or not this WorkspaceProject needs to be saved or not.
     *
@@ -492,7 +514,9 @@ public class WSProjectImpl extends WSElementImpl implements IWSProject
       return dirty;
    }
    
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.workspacemanagement.IWSProject#setOpen(boolean)
     */
    public void setOpen(boolean value)
@@ -500,7 +524,9 @@ public class WSProjectImpl extends WSElementImpl implements IWSProject
       m_IsOpen = value;
    }
    
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.workspacemanagement.IWSProject#getBaseDirectory()
     */
    public String getBaseDirectory()
@@ -517,7 +543,9 @@ public class WSProjectImpl extends WSElementImpl implements IWSProject
       return retVal;
    }
    
-   /**
+   
+
+/**
     * Sets the base directory on the WorkspaceProject.
     *
     * @param newVal The absolute path.
@@ -541,7 +569,9 @@ public class WSProjectImpl extends WSElementImpl implements IWSProject
       m_IsDirty = true;
    }
    
-   /**
+   
+
+/**
     *
     * Sets the name of this WorkspaceProject.
     *
@@ -591,7 +621,9 @@ public class WSProjectImpl extends WSElementImpl implements IWSProject
       }
    }
    
-   /**
+   
+
+/**
     * Makes sure that the location that is being used to add a new
     * WorkspaceProjectElement is unique within this WorkspaceProject.
     *
@@ -652,7 +684,9 @@ public class WSProjectImpl extends WSElementImpl implements IWSProject
       return retVal;
    }
    
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.workspacemanagement.IWSProject#removeElement(org.netbeans.modules.uml.core.workspacemanagement.IWSElement)
     */
    public void removeElement(IWSElement wsElement)
@@ -698,7 +732,9 @@ public class WSProjectImpl extends WSElementImpl implements IWSProject
       }
    }
    
-   /**
+   
+
+/**
     * Removes a WorkspaceProjectElement by matching the location property
     * with the one passed in.
     *
@@ -737,7 +773,9 @@ public class WSProjectImpl extends WSElementImpl implements IWSProject
       return retVal;
    }
    
-   /**
+   
+
+/**
     * Retrieves the event dispatcher assocatiated with this project's Workspace.
     *
     * @return The dispatcher.
@@ -766,7 +804,9 @@ public class WSProjectImpl extends WSElementImpl implements IWSProject
       return retVal;
    }
    
-   /**
+   
+
+/**
     * Sets the EventDispatcher on this Workspace.
     *
     * @param The new dispatcher
@@ -777,7 +817,9 @@ public class WSProjectImpl extends WSElementImpl implements IWSProject
       m_Dispatcher = value;
    }
    
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.workspacemanagement.IWSProject#getElementsByDataValue(java.lang.String)
     */
    public ETList < IWSElement > getElementsByDataValue(String dataToMatch)
@@ -823,7 +865,9 @@ public class WSProjectImpl extends WSElementImpl implements IWSProject
       return matchedElements;
    }
    
-   /**
+   
+
+/**
     *
     * Retrieves a string used to identify this WSProject in the users Source
     * Control Management tool.
@@ -840,7 +884,9 @@ public class WSProjectImpl extends WSElementImpl implements IWSProject
       return retStr;
    }
    
-   /**
+   
+
+/**
     *
     * Sets the id that identifies this WSProject in the user's SCM tool.
     *
@@ -859,7 +905,9 @@ public class WSProjectImpl extends WSElementImpl implements IWSProject
    // WSElement Override Methods
    //**************************************************
    
-   /**
+   
+
+/**
     * Saves this project and all its members.
     *
     * @param location Where this project should be saved to.
@@ -914,7 +962,8 @@ public class WSProjectImpl extends WSElementImpl implements IWSProject
       }
    }
    
-   /**
+   
+/**
     * This method should only be called during the Save operation of this
     * WSProjectImpl. It makes sure that if someone is programmatically calling
     * a Save() on this WSProject, that the dirty flag of the Workspace is also
@@ -943,7 +992,9 @@ public class WSProjectImpl extends WSElementImpl implements IWSProject
       }
    }
    
-   /**
+   
+
+/**
     *
     * Creates a new WorkspaceProjectElement.  The location of the
     * new WSElement will be an empty string.
@@ -960,7 +1011,9 @@ public class WSProjectImpl extends WSElementImpl implements IWSProject
       return createElement(curElement, "");
    }
    
-   /**
+   
+
+/**
     *
     * Creates a new WorkspaceProjectElement.
     *
@@ -1015,7 +1068,9 @@ public class WSProjectImpl extends WSElementImpl implements IWSProject
       return retVal;
    }
    
-   /**
+   
+
+/**
     * Creates a new WorkspaceProjectElement.
     *
     * @param elementPath The path to the element.
@@ -1086,7 +1141,9 @@ public class WSProjectImpl extends WSElementImpl implements IWSProject
       return retVal;
    }
    
-   /**
+   
+
+/**
     * @param element
     */
    private void dispatchWSProjectElementCreated(IWSElement element)
@@ -1107,7 +1164,9 @@ public class WSProjectImpl extends WSElementImpl implements IWSProject
       }
    }
    
-   /**
+   
+
+/**
     * @param fileName
     * @param name
     * @param data
@@ -1128,7 +1187,9 @@ public class WSProjectImpl extends WSElementImpl implements IWSProject
       return retVal;
    }
    
-   /**
+   
+
+/**
     *
     * Performs a full commit on all WSElements contained in elements.
     *
@@ -1160,7 +1221,9 @@ public class WSProjectImpl extends WSElementImpl implements IWSProject
       }
    }
    
-   /**
+   
+
+/**
     *
     * Makes sure that all dirty project elements that were previously
     * PreCommitted did not cause another dependent project element to become
@@ -1201,7 +1264,9 @@ public class WSProjectImpl extends WSElementImpl implements IWSProject
       
    }
    
-   /**
+   
+
+/**
     * @param elements
     */
    private ETList < IWSElement > preCommitElements(ETList < IWSElement > elements)
@@ -1249,7 +1314,9 @@ public class WSProjectImpl extends WSElementImpl implements IWSProject
       return elements;
    }
    
-   /**
+   
+
+/**
     * @param element
     * @param elements
     */
@@ -1294,7 +1361,9 @@ public class WSProjectImpl extends WSElementImpl implements IWSProject
       return elements;
    }
    
-   /**
+   
+
+/**
     * @param curFileName
     * @param projLoc
     * @return
@@ -1322,7 +1391,9 @@ public class WSProjectImpl extends WSElementImpl implements IWSProject
       return path;
    }
    
-   /**
+   
+
+/**
     * @return
     */
    private String getWorkspaceFileName()
@@ -1343,7 +1414,9 @@ public class WSProjectImpl extends WSElementImpl implements IWSProject
       return retVal;
    }
    
-   /**
+   
+
+/**
     * @return
     */
    private IWorkspace getWorkspace()
@@ -1382,7 +1455,9 @@ public class WSProjectImpl extends WSElementImpl implements IWSProject
       return retVal;
    }
    
-   /**
+   
+
+/**
     * @param m_Elements
     * @param location
     * @return
@@ -1422,7 +1497,9 @@ public class WSProjectImpl extends WSElementImpl implements IWSProject
       return retVal;
    }
    
-   /**
+   
+
+/**
     * @param fileName
     */
    protected String retrievePathRelativeToWorkspace(String fileName)
@@ -1437,7 +1514,9 @@ public class WSProjectImpl extends WSElementImpl implements IWSProject
       
    }
    
-   /**
+   
+
+/**
     * Retrieves the relative path between newFile and curFile.
     *
     * @param newFile The new file we are trying to get a relative path to.
@@ -1450,7 +1529,9 @@ public class WSProjectImpl extends WSElementImpl implements IWSProject
       return PathManip.retrieveRelativePath(file, parent);
    }
    
-   /**
+   
+
+/**
     * @return
     */
    private String getWorkspaceDir()
@@ -1466,7 +1547,9 @@ public class WSProjectImpl extends WSElementImpl implements IWSProject
       return retVal;
    }
    
-   /**
+   
+
+/**
     * Determines whether or not the passed-in string contains a valid directory.
     *
     * @param dir The path to check. If dir contains an absolute path to
@@ -1494,7 +1577,9 @@ public class WSProjectImpl extends WSElementImpl implements IWSProject
       return retVal;
    }
    
-   /**
+   
+
+/**
     * Makes sure that this WorkspaceProject is properly owned
     * by an encapsulating Workspace.
     *
@@ -1521,7 +1606,9 @@ public class WSProjectImpl extends WSElementImpl implements IWSProject
       return retVal;
    }
    
-   /**
+   
+
+/**
     *
     * Adds a new element to the internal collection.
     *
@@ -1556,7 +1643,9 @@ public class WSProjectImpl extends WSElementImpl implements IWSProject
       }
    }
    
-   /**
+   
+
+/**
     * Retrieves a WorkspaceProjectElement by a query matching against a specific attribute
     * and that attribute's value. The attribute is an XML attribute.
     *
@@ -1587,7 +1676,9 @@ public class WSProjectImpl extends WSElementImpl implements IWSProject
       return retVal;
    }
    
-   /**
+   
+
+/**
     * Retrieves an element out of the passed-in collection by the location property.
     *
     * @param elements[in] The collection to scan.
@@ -1601,7 +1692,9 @@ public class WSProjectImpl extends WSElementImpl implements IWSProject
    //		return findElementByLocation(elements, location, false);
    //	}
    
-   /**
+   
+
+/**
     * Retrieves an element out of the passed-in collection by the location property.
     * If the force flag is set to true then the WSProjects elements will always
     * be returned.
@@ -1646,7 +1739,9 @@ public class WSProjectImpl extends WSElementImpl implements IWSProject
       return retVal;
    }
    
-   /**
+   
+
+/**
     *  Makes sure that the WorkspaceProjectElement that has the same location
     * property as the wsElement is no longer present on the internal collection of
     * WSElements.
@@ -1666,7 +1761,9 @@ public class WSProjectImpl extends WSElementImpl implements IWSProject
       }
    }
    
-   /**
+   
+
+/**
     *
     * Retrieves the location of the external file that this element represents.
     *

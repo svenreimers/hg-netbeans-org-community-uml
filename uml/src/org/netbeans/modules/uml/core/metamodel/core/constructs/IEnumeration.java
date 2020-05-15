@@ -48,22 +48,30 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 public interface IEnumeration extends IDataType
 {
-   /**
+   
+
+/**
     * Creates the literal and adds the literal to the enumeration.
     */
    public IEnumerationLiteral createLiteral(String name);
 
-	/**
+	
+
+/**
 	 * method AddLiteral
 	*/
 	public void addLiteral( IEnumerationLiteral literal );
 
-	/**
+	
+
+/**
 	 * method RemoveLiteral
 	*/
 	public void removeLiteral( IEnumerationLiteral literal );
 
-	/**
+	
+
+/**
 	 * property Literals
 	*/
 	public ETList <IEnumerationLiteral> getLiterals();

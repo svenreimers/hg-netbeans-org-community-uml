@@ -42,6 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
+
+
 /*
  * DocumentationCookie.java
  *
@@ -52,6 +54,7 @@ package org.netbeans.modules.uml.project.ui.cookies;
 
 import org.openide.nodes.Node;
 
+
 /**
  * The documentation cookie is used to access the documentation for a node.
  * The documentation can be a JavaDoc comment, or a model element description.
@@ -59,12 +62,14 @@ import org.openide.nodes.Node;
  */
 public interface DocumentationCookie extends Node.Cookie
 {
-   /**
+   
+/**
     * Retreive the documentation from the node.
     */
    public String getDocumentation();
 
-   /**
+   
+/**
     * Sets the documentation for the node.
     */
    public void setDocumentation(String retVal);

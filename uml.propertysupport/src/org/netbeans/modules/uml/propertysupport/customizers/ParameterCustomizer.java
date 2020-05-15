@@ -223,7 +223,9 @@ public class ParameterCustomizer extends JPanel
 ////////////////////////////////////////////////////////////////////////////
 // EnhancedCustomPropertyEditor Implementation
     
-    /**
+    
+
+/**
      * Get the customized property value.  This implementation will
      * return an array of property elements.  Basically when this method
      * gets called the user has pressed the OK button.

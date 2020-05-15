@@ -42,6 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
+
+
 /*
  * ISatisfier.java
  *
@@ -49,6 +51,7 @@
  */
 
 package org.netbeans.modules.uml.core.requirementsframework;
+
 
 /**
  * The ISatisfier associates a model wielment with a requirements.
@@ -62,12 +65,16 @@ public interface ISatisfier
    public String getType();
    public void setType(String newVal);
 
-   /**
+   
+
+/**
     * Retrieves the XMI id for the associatecd model element.
     */
    public String getXMIID();
 
-   /**
+   
+
+/**
     * Sets the XMI id for the associatecd model element.
     */
    public void setXMIID(String newVal);

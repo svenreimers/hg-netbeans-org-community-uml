@@ -44,6 +44,8 @@
 
 
 
+
+
 /*
  * Created on Sep 17, 2003
  *
@@ -60,7 +62,8 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 public class StereotypeTestCase extends AbstractUMLTestCase
 {
 
-	/**
+	
+/**
 	 * Constructor 
 	 */
 	public StereotypeTestCase()
@@ -68,7 +71,9 @@ public class StereotypeTestCase extends AbstractUMLTestCase
 		super();
 	}
 
-	/**
+	
+
+/**
 	 * All the three methods are tested using this single method.
 	 * since they are dependent on one another
 	 */

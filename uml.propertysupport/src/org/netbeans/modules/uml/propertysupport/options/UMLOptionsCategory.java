@@ -42,6 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
+
+
 /*
  * MyOptionsPanel.java
  *
@@ -63,7 +65,8 @@ import org.openide.util.NbBundle;
  */
 public class UMLOptionsCategory extends OptionsCategory {
 
-    /**
+    
+/**
      * Creates a new instance of UMLOptionsPanel
      */
     public UMLOptionsCategory() {

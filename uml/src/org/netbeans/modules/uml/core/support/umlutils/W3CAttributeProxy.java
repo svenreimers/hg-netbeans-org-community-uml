@@ -42,6 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
+
+
 /*
  * W3cAttributeProxy.java
  *
@@ -76,7 +78,9 @@ public class W3CAttributeProxy extends W3CNodeProxy  implements Attr, Attribute
 
     ///////////////////////////////////////////////////////////////////////////
     // W3C Attribute Implementation.
-    /** Returns the code according to the type of node.
+    
+
+/** Returns the code according to the type of node.
      * This makes processing nodes polymorphically much easier as the
      * switch statement can be used instead of multiple if (instanceof)
      * statements.
@@ -122,7 +126,9 @@ public class W3CAttributeProxy extends W3CNodeProxy  implements Attr, Attribute
     ///////////////////////////////////////////////////////////////////////////
     // DOM4J Attribute Implemenation 
     
-    /** <p>Sets the <code>Namespace</code> of this element or if this element
+    
+
+/** <p>Sets the <code>Namespace</code> of this element or if this element
       * is read only then an <code>UnsupportedOperationException</code> 
       * is thrown.</p>
       *
@@ -134,7 +140,9 @@ public class W3CAttributeProxy extends W3CNodeProxy  implements Attr, Attribute
         throw new DTMDOMException(DOMException.NO_MODIFICATION_ALLOWED_ERR);
     }
     
-    /** Accesses the data of this attribute which may implement data typing 
+    
+
+/** Accesses the data of this attribute which may implement data typing 
       * bindings such as XML Schema or 
       * Java Bean bindings or will return the same value as {@link #getText}
       */
@@ -143,7 +151,9 @@ public class W3CAttributeProxy extends W3CNodeProxy  implements Attr, Attribute
         return getValue();
     }
     
-    /** Sets the data value of this attribute if this element supports data 
+    
+
+/** Sets the data value of this attribute if this element supports data 
       * binding or calls {@link #setText} if it doesn't
       */
     public void setData(Object data)

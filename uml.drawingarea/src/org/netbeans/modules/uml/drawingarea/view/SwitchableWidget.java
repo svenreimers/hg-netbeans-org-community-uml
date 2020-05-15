@@ -200,7 +200,9 @@ public abstract class SwitchableWidget extends UMLNodeWidget
 
     }
     
-    /**
+    
+
+/**
      * Retreives the metatype of the model element.
      * 
      * @return The model elements name.

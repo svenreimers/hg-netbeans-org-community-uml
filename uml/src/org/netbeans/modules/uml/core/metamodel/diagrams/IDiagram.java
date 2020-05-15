@@ -70,7 +70,9 @@ public interface IDiagram extends IPresentationElement
    public static final int DK_USECASE_DIAGRAM       = 256;
    public static final int DK_ALL                   = 0xffff;
 
-        /**
+        
+
+/**
          * Notifies the diagram to refresh the node graphical object that 
          * is associated with the presentation element.
          * 
@@ -79,7 +81,9 @@ public interface IDiagram extends IPresentationElement
          */
         public boolean refresh(IPresentationElement presentation,boolean resizetocontent);
       
-	/**
+	
+
+/**
 	 * Saves the diagram.
 	*/
 	public void save() throws IOException;
@@ -90,17 +94,23 @@ public interface IDiagram extends IPresentationElement
 //        */
 //       public void preClose();
    
-	/**
+	
+
+/**
 	 * Is this diagram readonly?
 	*/
 	public boolean getReadOnly();
 
-	/**
+	
+
+/**
 	 * Is this diagram readonly?
 	*/
 	public FileLock setReadOnly( boolean value );
 
-	/**
+	
+
+/**
 	 * Saves the diagram as a BMP, EMF or JPG file.
 	*/
 	public void saveAsGraphic( String sFilename, /* SaveAsGraphicKind */ int nKind );
@@ -112,27 +122,37 @@ public interface IDiagram extends IPresentationElement
 	
 	public IGraphicExportDetails saveAsGraphic( String sFilename, /* SaveAsGraphicKind */ int nKind, double scale);
 
-	/**
+	
+
+/**
 	 * Get/Set the name of this drawing.
 	*/
 	public String getName();
 
-	/**
+	
+
+/**
 	 * Get/Set the name of this drawing.
 	*/
 	public void setName( String value );
 
-	/**
+	
+
+/**
 	 * Get/Set the alias of this drawing.
 	*/
 	public String getAlias();
 
-	/**
+	
+
+/**
 	 * Get/Set the alias of this drawing.
 	*/
 	public void setAlias( String value );
 
-	/**
+	
+
+/**
 	 * Sets / Gets the name or alias of this element.
 	*/
 	public String getNameWithAlias();
@@ -142,12 +162,16 @@ public interface IDiagram extends IPresentationElement
 //	*/
 //	public void setNameWithAlias( String value );
 //
-	/**
+	
+
+/**
 	 * Retrieves the fully qualified name of the element. This will be in the form 'A::B::C'.
 	*/
 	public String getQualifiedName();
 
-	/**
+	
+
+/**
 	 * Get the filename that this view is saved to
 	*/
 	public String getFilename();
@@ -237,17 +261,23 @@ public interface IDiagram extends IPresentationElement
 //	*/
 //	public void onCustomZoom();
 
-	/**
+	
+
+/**
 	 * Gets the drawing area namespace
 	*/
 	public INamespace getNamespace();
 
-	/**
+	
+
+/**
 	 * Gets the drawing area namespace
 	*/
 	public void setNamespace( INamespace value );
 
-	/**
+	
+
+/**
 	 * Returns the the namespace to use when elements are created on the diagram.  Usually this is the same as the namespace of the diagram
 	*/
 	public INamespace getNamespaceForCreatedElements();
@@ -302,7 +332,9 @@ public interface IDiagram extends IPresentationElement
 //	*/
 //	public void itemsOnClipboard( boolean bItemsOnClipboard );
 
-	/**
+	
+
+/**
 	 * Select all presentation elements
 	*/
 	public void selectAll( boolean bSelect );
@@ -337,24 +369,32 @@ public interface IDiagram extends IPresentationElement
 //   */
 //   public IETPoint deviceToLogicalPoint( int x, int y );
 
-	/**
+	
+
+/**
 	 * Centers the drawing area on the presentation element.
 	*/
 	public void centerPresentationElement( IPresentationElement pPresentationElement, boolean bSelectIt, boolean bDeselectAllOthers );
 
-	/**
+	
+
+/**
 	 * Centers the drawing area on the presentation element.
 	*/
 	public void centerPresentationElement( String sXMIID, boolean bSelectIt, boolean bDeselectAllOthers );
         
-        /**
+        
+
+/**
          * Centers the diagram on a specified point.
          * 
          * @param scenePoint The point in scene coordinates.
          */
         public void centerPoint(Point scenePoint);
         
-        /**
+        
+
+/**
          * Centers the diagram on a specified rectangle
          * 
          * @param sceneRect The rectangle in scene coordinates.
@@ -371,12 +411,16 @@ public interface IDiagram extends IPresentationElement
 //	*/
 //	public void executeStackingCommand( /* StackingOrderKind */ int nStackingCommand );
 
-	/**
+	
+
+/**
 	 * Does this graph have edges, labels or nodes?
 	*/
 	public void hasGraphObjects( boolean bHasObjects );
 
-	/**
+	
+
+/**
 	 * Get/Set the type of this drawing.
 	*/
 	public int getDiagramKind();
@@ -386,7 +430,9 @@ public interface IDiagram extends IPresentationElement
 //	*/
 //	public void setDiagramKind( /* DiagramKind */ int value );
 
-	/**
+	
+
+/**
 	 * Get/Set the type of this drawing.
 	*/
 	public String getDiagramKindAsString();
@@ -406,7 +452,9 @@ public interface IDiagram extends IPresentationElement
 //	*/
 //	public void invertSelection();
 //
-	/**
+	
+
+/**
 	 * Returns a list of the selected items.
 	*/
 	public ETList<IPresentationElement> getSelected();
@@ -421,22 +469,30 @@ public interface IDiagram extends IPresentationElement
 //	*/
 //	public Frame getWindowHandle();
 //
-	/**
+	
+
+/**
 	 * Returns a list of all the items.
 	*/
 	public ETList<IPresentationElement> getAllItems();
 
-	/**
+	
+
+/**
 	 * Returns a list of all the items that represent the IElement.
 	*/
 	public ETList<IPresentationElement> getAllItems( IElement pModelElement );
 
-	/**
+	
+
+/**
 	 * Returns a list of all the model elements on the diagram.
 	*/
 	public ETList<IElement> getModelElements();
 
-	/**
+	
+
+/**
 	 * Select all the objects on the diagram that are of the indicated type
          * 
          * @param type The type of the model element.
@@ -590,12 +646,16 @@ public interface IDiagram extends IPresentationElement
 //	*/
 //	public void postDelayedAction( IDelayedAction pAction );
 
-	/**
+	
+
+/**
 	 * Receives notification of a broadcast.  Used by the IProxyDiagramManager to broadcast functions to all open views.
 	*/
 	public void receiveBroadcast( IBroadcastAction pAction );
 
-	/**
+	
+
+/**
 	 * IsDirty is true when there is data that needs to be saved
 	*/
 	public boolean isDirty();
@@ -605,17 +665,23 @@ public interface IDiagram extends IPresentationElement
 //	*/
 //	public void setIsDirty( boolean value );
 
-	/**
+	
+
+/**
 	 * Is this diagram the same diagram as the one passed in?
 	*/
 	public boolean isSame( IDiagram pDiagram );
 
-	/**
+	
+
+/**
 	 * Returns the presentation element on the diagram with the specified xml id
 	*/
 	public IPresentationElement findPresentationElement( String sXMLID );
 
-	/**
+	
+
+/**
 	 * Returns the relationship discovery object
 	*/
 	public ICoreRelationshipDiscovery getRelationshipDiscovery();
@@ -625,72 +691,100 @@ public interface IDiagram extends IPresentationElement
 //	*/
 //	public void pumpMessages( boolean bJustDrawingMessages );
 
-	/**
+	
+
+/**
 	 * Adds an associated diagram
 	*/
 	public void addAssociatedDiagram( String sDiagramXMIID );
 
-	/**
+	
+
+/**
 	 * Adds an associated diagram
 	*/
 	public void addAssociatedDiagram2( IProxyDiagram pDiagram );
 
-	/**
+	
+
+/**
 	 * Removes an associated diagram
 	*/
 	public void removeAssociatedDiagram( String sDiagramXMIID );
 
-	/**
+	
+
+/**
 	 * Removes an associated diagram
 	*/
 	public void removeAssociatedDiagram2( IProxyDiagram pDiagram );
 
-	/**
+	
+
+/**
 	 * Returns the associated diagrams
 	*/
 	public ETList<IProxyDiagram> getAssociatedDiagrams();
 
-	/**
+	
+
+/**
 	 * Is this an associated diagram?
 	*/
 	public boolean isAssociatedDiagram( String sDiagramXMIID );
 
-	/**
+	
+
+/**
 	 * Is this an associated diagram?
 	*/
 	public boolean isAssociatedDiagram2( IProxyDiagram pDiagram );
 
-	/**
+	
+
+/**
 	 * Adds an associated model element
 	*/
 	public void addAssociatedElement( String sTopLevelElementXMIID, String sModelElementXMIID );
 
-	/**
+	
+
+/**
 	 * Adds an associated model element
 	*/
 	public void addAssociatedElement2( IElement pElement );
 
-	/**
+	
+
+/**
 	 * Removes an associated model element
 	*/
 	public void removeAssociatedElement( String sTopLevelElementXMIID, String sModelElementXMIID );
 
-	/**
+	
+
+/**
 	 * Removes an associated model element
 	*/
 	public void removeAssociatedElement2( IElement pElement );
 
-	/**
+	
+
+/**
 	 * Returns the associated model elements
 	*/
 	public ETList<IElement> getAssociatedElements();
 
-	/**
+	
+
+/**
 	 * Is this an associated element?
 	*/
 	public boolean isAssociatedElement( String sModelElementXMIID );
 
-	/**
+	
+
+/**
 	 * Is this an associated element?
 	*/
 	public boolean isAssociatedElement2( IElement pElement );

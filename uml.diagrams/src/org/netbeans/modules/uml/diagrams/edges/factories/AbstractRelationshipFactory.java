@@ -67,7 +67,9 @@ public abstract class AbstractRelationshipFactory implements RelationshipFactory
         element.delete();
     }
     
-    /**
+    
+
+/**
      * Reconnects a new source to the relationship.  Since some relationships 
      * are not true relationships, but instead represent properties on one of 
      * the nodes, the old source and the target are also passed into the method.
@@ -90,7 +92,9 @@ public abstract class AbstractRelationshipFactory implements RelationshipFactory
         reconnectSource(relationship, source);
     }
     
-    /**
+    
+
+/**
      * Reconnects a new target to the relationship.  Since some relationships 
      * are not true relationships, but instead represent properties on one of 
      * the nodes, the old target and the source are also passed into the method.
@@ -113,7 +117,9 @@ public abstract class AbstractRelationshipFactory implements RelationshipFactory
         reconnectTarget(relationship, target);
     }
     
-    /**
+    
+
+/**
      * Since most relationship factories are true relationships, this method is 
      * provided to make it easier to reconnect the source of standard relationships.  
      * 
@@ -122,7 +128,9 @@ public abstract class AbstractRelationshipFactory implements RelationshipFactory
      */
     protected abstract void reconnectSource(IElement relationship, IElement source);
     
-    /**
+    
+
+/**
      * Since most relationship factories are true relationships, this method is 
      * provided to make it easier to reconnect the target of standard relationships.  
      * 

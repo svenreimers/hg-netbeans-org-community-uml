@@ -58,7 +58,9 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 public class EventOccurrence extends NamedElement implements IEventOccurrence
 {
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IEventOccurrence#getConnection()
      */
     public IInterGateConnector getConnection()
@@ -67,7 +69,9 @@ public class EventOccurrence extends NamedElement implements IEventOccurrence
             .retrieveSingleElementWithAttrID( this, "connection", IInterGateConnector.class);
     }
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IEventOccurrence#setConnection(org.netbeans.modules.uml.core.metamodel.dynamics.IInterGateConnector)
      */
     public void setConnection(IInterGateConnector value)
@@ -75,7 +79,9 @@ public class EventOccurrence extends NamedElement implements IEventOccurrence
         setElement(value, "connection");
     }
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IEventOccurrence#getLifeline()
      */
     public ILifeline getLifeline()
@@ -84,7 +90,9 @@ public class EventOccurrence extends NamedElement implements IEventOccurrence
             .retrieveSingleElementWithAttrID( this, "lifeline", ILifeline.class);
     }
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IEventOccurrence#setLifeline(org.netbeans.modules.uml.core.metamodel.dynamics.ILifeline)
      */
     public void setLifeline(ILifeline value)
@@ -115,7 +123,9 @@ public class EventOccurrence extends NamedElement implements IEventOccurrence
             .retrieveSingleElementWithAttrID( this, "eventType", IEvent.class);
     }
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IEventOccurrence#setEventType(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IEvent)
      */
     public void setEventType(IEvent value)
@@ -123,7 +133,9 @@ public class EventOccurrence extends NamedElement implements IEventOccurrence
         setElement(value, "eventType");
     }
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IEventOccurrence#getInteraction()
      */
     public IInteraction getInteraction()
@@ -132,7 +144,9 @@ public class EventOccurrence extends NamedElement implements IEventOccurrence
         return space instanceof IInteraction? (IInteraction) space : null;
     }
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IEventOccurrence#getReceiveMessage()
      */
     public IMessage getReceiveMessage()
@@ -141,7 +155,9 @@ public class EventOccurrence extends NamedElement implements IEventOccurrence
             .retrieveSingleElementWithAttrID( this, "receiveMessage", IMessage.class);
     }
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IEventOccurrence#setReceiveMessage(org.netbeans.modules.uml.core.metamodel.dynamics.IMessage)
      */
     public void setReceiveMessage(final IMessage message)
@@ -221,7 +237,9 @@ public class EventOccurrence extends NamedElement implements IEventOccurrence
                 this, "toBefore", IGeneralOrdering.class);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IEventOccurrence#addBeforeOrdering(org.netbeans.modules.uml.core.metamodel.dynamics.IGeneralOrdering)
      */
     public void addBeforeOrdering(final IGeneralOrdering order)
@@ -238,7 +256,9 @@ public class EventOccurrence extends NamedElement implements IEventOccurrence
                 } );
     }
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IEventOccurrence#removeBeforeOrdering(org.netbeans.modules.uml.core.metamodel.dynamics.IGeneralOrdering)
      */
     public void removeBeforeOrdering(final IGeneralOrdering order)
@@ -261,7 +281,9 @@ public class EventOccurrence extends NamedElement implements IEventOccurrence
                 this, "toAfter", IGeneralOrdering.class);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IEventOccurrence#removeAfterOrdering(org.netbeans.modules.uml.core.metamodel.dynamics.IGeneralOrdering)
      */
     public void removeAfterOrdering(final IGeneralOrdering order)
@@ -278,7 +300,9 @@ public class EventOccurrence extends NamedElement implements IEventOccurrence
         
     }
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IEventOccurrence#addAfterOrdering(org.netbeans.modules.uml.core.metamodel.dynamics.IGeneralOrdering)
      */
     public void addAfterOrdering(final IGeneralOrdering order)

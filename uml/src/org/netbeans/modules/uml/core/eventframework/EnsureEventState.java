@@ -42,6 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
+
+
 /*
  * EnsureEventState.java
  *
@@ -53,6 +55,7 @@ package org.netbeans.modules.uml.core.eventframework;
 import org.netbeans.modules.uml.core.coreapplication.ICoreProduct;
 import org.netbeans.modules.uml.core.support.Debug;
 import org.netbeans.modules.uml.core.support.umlsupport.ProductRetriever;
+
 
 /**
  * EnsureEventState's whole purpose in life is to ensure that events
@@ -69,7 +72,9 @@ public class EnsureEventState
    boolean                  m_OrigFlag = false;
    boolean                  m_PlugEvents = false;
    
-   /**
+   
+
+/**
     *EnsureEventState constructor. Calls the setPreventAllEvents( true )
     * on the passed in IEventDispatcher.
     */
@@ -88,7 +93,9 @@ public class EnsureEventState
       }
    }
    
-   /**
+   
+
+/**
     *
     * Prevents all event from going out on any and every dispatcher that the
     * passed in controller manages, IF plugEvents is set to true. Otherwise,
@@ -103,7 +110,9 @@ public class EnsureEventState
       initializeWithController(plugEvents, null);
    }
    
-   /**
+   
+
+/**
     *
     * Prevents all event from going out on any and every dispatcher that the
     * passed in controller manages, IF plugEvents is set to true. Otherwise,
@@ -122,7 +131,9 @@ public class EnsureEventState
       initializeWithController(plugEvents, controller);       
    }
    
-   /**
+   
+
+/**
     * Initializes the Event state when a controler is involved.
     */
    protected void initializeWithController(boolean plugEvents, 
@@ -156,7 +167,9 @@ public class EnsureEventState
       }
    }
    
-   /**
+   
+
+/**
     * EnsureEventState desctructor. Calls the put_PreventAllEvents( false)
     * on the encapuslated IEventDispatcher.
     */

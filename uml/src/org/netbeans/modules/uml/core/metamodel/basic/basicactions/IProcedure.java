@@ -50,17 +50,23 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 public interface IProcedure extends IBehavior
 {
-	/**
+	
+
+/**
 	 * method AddAction
 	*/
 	public void addAction( IAction pAction );
 
-	/**
+	
+
+/**
 	 * method RemoveAction
 	*/
 	public void removeAction( IAction pAction );
 
-	/**
+	
+
+/**
 	 * property Actions
 	*/
 	public ETList <IAction> getActions();

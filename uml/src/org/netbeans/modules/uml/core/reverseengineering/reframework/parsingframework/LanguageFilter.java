@@ -55,7 +55,9 @@ public class LanguageFilter implements ILanguageFilter
 
 
 
-	/**
+	
+
+/**
 	 * Retrives the name of the filter.
 	 *
 	 * @param *pVal [in] The name of the filter.
@@ -65,7 +67,9 @@ public class LanguageFilter implements ILanguageFilter
 		return m_FilterName;
 	}
 
-	/**
+	
+
+/**
 	 * Sets the name of the filter.
 	 *
 	 * @param newValue [o] The name of the filter.
@@ -75,7 +79,9 @@ public class LanguageFilter implements ILanguageFilter
 		m_FilterName = newVal;
 	}
 
-	/**
+	
+
+/**
 	 * Gets a comma delimited list of file filters.
 	 *
 	 * @param *pVal [in] A list of file filters.
@@ -85,7 +91,9 @@ public class LanguageFilter implements ILanguageFilter
 		return m_Filter;
 	}
 
-	/**
+	
+
+/**
 	 * Sets a comma delimited list of file filters.
 	 *
 	 * @param *pVal [in] A list of file filters.

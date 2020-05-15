@@ -47,7 +47,9 @@
 package org.netbeans.test.umllib;
 
 public enum ElementTypes {
-    /*
+    
+
+/*
           string passed to constructor is {elementGraphObject}.getPresentationElement().getFirstSubject().getElementType() string
      */
     COMPONENT("Component"),
@@ -126,7 +128,9 @@ public enum ElementTypes {
         this.val = val;
     }
     
-    /**
+    
+
+/**
      * 
      * @return 
      */

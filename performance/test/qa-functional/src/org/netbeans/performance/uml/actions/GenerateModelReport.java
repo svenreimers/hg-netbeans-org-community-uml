@@ -56,6 +56,7 @@ import org.netbeans.modules.performance.utilities.PerformanceTestCase;
 import org.netbeans.modules.project.ui.test.ProjectSupport;
 
 
+
 /**
  * Measure UI-RESPONSIVENES and WINDOW_OPENING.
  *

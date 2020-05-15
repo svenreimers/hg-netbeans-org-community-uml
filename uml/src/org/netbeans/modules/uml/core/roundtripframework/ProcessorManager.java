@@ -42,11 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : ProcessorManager.java
- * Created on : Nov 6, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.roundtripframework;
 
 import java.util.HashMap;
@@ -74,7 +71,9 @@ public class ProcessorManager implements IProcessorManager
 
        IRoundTripController m_Controller = null; // This is raw to prevent circular refs
        ILanguageManager m_LanguageManager = null;
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IProcessorManager#createProcessor(java.lang.String)
      */
     
@@ -128,7 +127,9 @@ public class ProcessorManager implements IProcessorManager
         return req;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IProcessorManager#establishCreateProcessors(org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElement, boolean)
      */
     public boolean establishCreateProcessors(
@@ -178,7 +179,9 @@ public class ProcessorManager implements IProcessorManager
     }
 
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IProcessorManager#establishProcessor(org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ILanguage)
      */
     public IRequestProcessor establishProcessor(ILanguage pLang)
@@ -192,7 +195,9 @@ public class ProcessorManager implements IProcessorManager
         return pProc;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IProcessorManager#establishProcessor(java.lang.String)
      */
     public IRequestProcessor establishProcessor(String procID)
@@ -208,7 +213,9 @@ public class ProcessorManager implements IProcessorManager
         return proc;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IProcessorManager#establishProcessors()
      */
     public boolean establishProcessors(ETList<ILanguage> langs)
@@ -226,7 +233,9 @@ public class ProcessorManager implements IProcessorManager
         return established;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IProcessorManager#establishProcessors(boolean, boolean, org.netbeans.modules.uml.core.metamodel.core.foundation.IElement)
      */
     public boolean establishProcessors(
@@ -261,7 +270,9 @@ public class ProcessorManager implements IProcessorManager
         return established;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IProcessorManager#establishProcessors(org.netbeans.modules.uml.core.metamodel.core.foundation.IElement, boolean)
      */
     public boolean establishProcessors(IElement element, boolean overrideCheck)
@@ -287,7 +298,9 @@ public class ProcessorManager implements IProcessorManager
         return established;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IProcessorManager#establishProcessorsForProject(org.netbeans.modules.uml.core.metamodel.structure.IProject, boolean, java.lang.String)
      */
     public ETPairT<String,Boolean> establishProcessorsForProject(
@@ -313,7 +326,9 @@ public class ProcessorManager implements IProcessorManager
     }
   
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IProcessorManager#establishProcessorsForProject(org.netbeans.modules.uml.core.workspacemanagement.IWSProject)
      */
     public void establishProcessorsForProject(IWSProject project)
@@ -336,7 +351,9 @@ public class ProcessorManager implements IProcessorManager
         }
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IProcessorManager#establishProcessorWithID(java.lang.String)
      */
     public IRequestProcessor establishProcessorWithID(String procID)
@@ -344,7 +361,9 @@ public class ProcessorManager implements IProcessorManager
         return establishProcessor(procID);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IProcessorManager#getLanguageManager()
      */
     public ILanguageManager getLanguageManager()
@@ -360,7 +379,9 @@ public class ProcessorManager implements IProcessorManager
         return m_LanguageManager;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IProcessorManager#retrieveProcessorIDByLang(java.lang.String)
      */
     public String retrieveProcessorIDByLang(String lang)

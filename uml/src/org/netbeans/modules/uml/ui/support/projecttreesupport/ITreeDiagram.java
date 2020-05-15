@@ -43,6 +43,7 @@
  */
 
 
+
 /*
  *
  * Created on Jun 13, 2003
@@ -62,7 +63,9 @@ public interface ITreeDiagram extends ITreeItem
 
    public String getDiagramType();
 
-   /**
+   
+
+/**
 	* The type of the tree element.
 	*
 	* @return The type.

@@ -42,12 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File         : DiagramKind.java
- * Version      : 1.0
- * Description  : Enumerates the valid DiagramKind constants.
- * Author       : Darshan
- */
+
+
 package org.netbeans.modules.uml.integration.ide;
 
 import javax.swing.ImageIcon;
@@ -55,16 +51,8 @@ import javax.swing.ImageIcon;
 import org.netbeans.modules.uml.integration.ide.actions.ImageFinder;
 import org.netbeans.modules.uml.core.metamodel.diagrams.IDiagram;
 
-/**
- *  Enumerates the valid DiagramKind constants and maps between DiagramKind
- * and NewWorkspaceItemKind.
- *
- * Revision History
- * No.  Date        Who         What
- * ---  ----        ---         ----
- *   1  2002-05-22  Darshan     Created.
- *
- */
+
+
 public class DiagramKind {
     public static final int DK_UNKNOWN                  = 0x0000;
     public static final int DK_DIAGRAM                  = 0x0001;

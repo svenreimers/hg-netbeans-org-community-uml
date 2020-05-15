@@ -317,7 +317,9 @@ public class AlignWithMoveStrategyProvider extends AlignWithSupport implements M
         return retVal;
     }
 
-    /**
+    
+
+/**
      * Adjust the control points of all selected connection widgets attached
      * to a node.
      *

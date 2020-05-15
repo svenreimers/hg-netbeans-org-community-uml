@@ -48,32 +48,44 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.IDependency;
 
 public interface IRoleBinding extends IDependency
 {
-	/**
+	
+
+/**
 	 * property Collaboration
 	*/
 	public ICollaborationOccurrence getCollaboration();
 
-	/**
+	
+
+/**
 	 * property Collaboration
 	*/
 	public void setCollaboration( ICollaborationOccurrence collaboration );
 
-	/**
+	
+
+/**
 	 * property Feature
 	*/
 	public IStructuralFeature getFeature();
 
-	/**
+	
+
+/**
 	 * property Feature
 	*/
 	public void setFeature( IStructuralFeature feature );
 
-	/**
+	
+
+/**
 	 * property Role
 	*/
 	public IStructuralFeature getRole();
 
-	/**
+	
+
+/**
 	 * property Role
 	*/
 	public void setRole( IStructuralFeature feature );

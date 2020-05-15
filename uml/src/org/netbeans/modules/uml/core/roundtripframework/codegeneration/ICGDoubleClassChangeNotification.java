@@ -48,22 +48,30 @@ import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure
 
 public interface ICGDoubleClassChangeNotification extends ICGChangeNotification
 {
-	/**
+	
+
+/**
 	 * Gets / Sets SourceClassifier
 	*/
 	public IClassifier getSourceClassifier();
 
-	/**
+	
+
+/**
 	 * Gets / Sets SourceClassifier
 	*/
 	public void setSourceClassifier( IClassifier value );
 
-	/**
+	
+
+/**
 	 * Gets / Sets DestinationClassifier
 	*/
 	public IClassifier getDestinationClassifier();
 
-	/**
+	
+
+/**
 	 * Gets / Sets DestinationClassifier
 	*/
 	public void setDestinationClassifier( IClassifier value );

@@ -63,6 +63,7 @@ import java.util.TreeSet;
 import java.util.List;
 import org.netbeans.modules.uml.core.metamodel.dynamics.IMessage;
 
+
 /**
  * just a root for all messages
  */

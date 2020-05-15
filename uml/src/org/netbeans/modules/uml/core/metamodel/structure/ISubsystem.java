@@ -50,32 +50,44 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 public interface ISubsystem extends IComponent
 {
-	/**
+	
+
+/**
 	 * method AddSpecificationElement
 	*/
 	public void addSpecificationElement( IPackageableElement element );
 
-	/**
+	
+
+/**
 	 * method RemoveSpecificationElement
 	*/
 	public void removeSpecificationElement( IPackageableElement element );
 
-	/**
+	
+
+/**
 	 * property SpecificationElements
 	*/
 	public ETList<IPackageableElement> getSpecificationElements();
 
-	/**
+	
+
+/**
 	 * method AddRealizationElement
 	*/
 	public void addRealizationElement( IPackageableElement element );
 
-	/**
+	
+
+/**
 	 * method RemoveRealizationElement
 	*/
 	public void removeRealizationElement( IPackageableElement element );
 
-	/**
+	
+
+/**
 	 * property RealizationElements
 	*/
 	public ETList<IPackageableElement> getRealizationElements();

@@ -49,57 +49,79 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 public interface IActivityGroup extends INamespace, IActivityNode
 {
-	/**
+	
+
+/**
 	 * property Activity
 	*/
 	public IActivity getActivity();
 
-	/**
+	
+
+/**
 	 * property Activity
 	*/
 	public void setActivity( IActivity value );
 
-	/**
+	
+
+/**
 	 * method AddSubGroup
 	*/
 	public void addSubGroup( IActivityGroup pGroup );
 
-	/**
+	
+
+/**
 	 * method RemoveSubGroup
 	*/
 	public void removeSubGroup( IActivityGroup pGroup );
 
-	/**
+	
+
+/**
 	 * property SubGroups
 	*/
 	public ETList<IActivityGroup> getSubGroups();
 
-	/**
+	
+
+/**
 	 * method AddEdgeContent
 	*/
 	public void addEdgeContent( IActivityEdge pEdge );
 
-	/**
+	
+
+/**
 	 * method RemoveEdgeContent
 	*/
 	public void removeEdgeContent( IActivityEdge pEdge );
 
-	/**
+	
+
+/**
 	 * property EdgeContents
 	*/
 	public ETList<IActivityEdge> getEdgeContents();
 
-	/**
+	
+
+/**
 	 * method AddNodeContent
 	*/
 	public void addNodeContent( IActivityNode pNode );
 
-	/**
+	
+
+/**
 	 * method RemoveNodeContent
 	*/
 	public void removeNodeContent( IActivityNode pNode );
 
-	/**
+	
+
+/**
 	 * property NodeContents
 	*/
 	public ETList<IActivityNode> getNodeContents();

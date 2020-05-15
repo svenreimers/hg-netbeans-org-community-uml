@@ -43,6 +43,8 @@
  */
 
 
+
+
 /*
  * UMLValidation.java
  * Created on Jul 31, 2007, 9:49:19 PM
@@ -120,7 +122,9 @@ public class UMLValidationTests extends UMLTestCase {
     }
 
 
-    /* 
+    
+
+/* 
      * Verify UML related main menus
      */
     public void testUMLMainMenu() {
@@ -149,7 +153,9 @@ public class UMLValidationTests extends UMLTestCase {
         }
     }
  
-    /* 
+    
+
+/* 
      * Create   Java-Platform Model Project
      */
     public void testCreateJavaPlatformProject() {
@@ -166,7 +172,9 @@ public class UMLValidationTests extends UMLTestCase {
         new TopComponentOperator(DIAGRAM_CLASS_NAME1);
     }
 
-    /* 
+    
+
+/* 
      * Create Platform Independent Model Project
      */
     public void testCreatePlatformIndependentProject() {
@@ -183,7 +191,9 @@ public class UMLValidationTests extends UMLTestCase {
         new TopComponentOperator(DIAGRAM_CLASS_NAME2);
     }
 
-    /*
+    
+
+/*
      * Create Reversed Engineering project
      */
     public void testCreateREJavaPlatformProject() {

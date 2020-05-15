@@ -55,7 +55,9 @@ public class ProcedureOccurrence extends ExecutionOccurrence
         implements IProcedureOccurrence
 {
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IProcedureOccurrence#getOperation()
      */
     public IOperation getOperation()
@@ -64,7 +66,9 @@ public class ProcedureOccurrence extends ExecutionOccurrence
                 .retrieveSingleElementWithAttrID( this, "procedure", IOperation.class );
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.IProcedureOccurrence#setOperation(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation)
      */
     public void setOperation(IOperation op)
@@ -72,7 +76,9 @@ public class ProcedureOccurrence extends ExecutionOccurrence
         setElement( op, "procedure" );
     }
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.VersionableElement#establishNodePresence(org.dom4j.Document, org.dom4j.Node)
      */
     public void establishNodePresence(Document doc, Node node)

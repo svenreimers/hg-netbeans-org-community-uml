@@ -66,7 +66,9 @@ public class EventFunctor
 	private String m_MethodName = null;
 	private Method m_Method = null;
 	private Object[] m_Parameters = null;
-	/**
+	
+
+/**
 	 * 
 	 */
 	private EventFunctor() {

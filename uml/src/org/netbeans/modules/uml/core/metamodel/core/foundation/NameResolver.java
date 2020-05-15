@@ -64,7 +64,8 @@ public class NameResolver
 
 	private static boolean m_ExternalResolution = false;
 
-	/**
+	
+/**
 	 * 
 	 */
 	public NameResolver()
@@ -77,7 +78,9 @@ public class NameResolver
 		return m_ExternalResolution;
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Determines whether or not the passed in name is fully qualified
 	 * in UML syntax ( "A::B::C" ). If it is, the type will be located.
@@ -105,7 +108,9 @@ public class NameResolver
 		return null;
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Determines whether or not the passed in name is fully qualified
 	 * in UML syntax ( "A::B::C" ). If it is, any type at that location
@@ -123,7 +128,9 @@ public class NameResolver
 	{
 		return resolveFullyQualifiedNames(false, element, name, "");
 	}
-	/**
+	
+
+/**
 	 * Internal method used by all the public methods. Finds and resolves types
 	 * by name. If the fully qualified type does not exist, it is created ( 
 	 * depending on the Unknown classifier preference )
@@ -192,6 +199,8 @@ public class NameResolver
                                 
                                 IStrings strs = pMan.getIDsByName(lookupName);
                                 //need to find a way to do this.
+
+
 /*							if( hr == PL_S_TYPES_FROM_EXTERNAL_PROJECT )
                                                         {
                                                            // Types were retrieved from an external
@@ -253,7 +262,9 @@ public class NameResolver
             return elems;
         }
 
-	/**
+	
+
+/**
 	 * Makes sure that when name comes in fully qualified, that the package structure is created and the unknown
 	 * classifier preference is checked to create the new type
 	 * 
@@ -290,7 +301,7 @@ public class NameResolver
                         IPackage outerPack = project.createPackageStructure(packageStructure);
                         if (outerPack != null) {
 //                            if (filterType != null && filterType.length() > 0) {
-                                //kris richards - removed access to expunged prefs.
+                                
                                 retEle = UMLXMLManip.createAndAddUnknownType(outerPack, typeName);
                                 
                                 // THis is a hack.  Since createAndAddUnknowType will always add
@@ -307,7 +318,9 @@ public class NameResolver
             return retEle;
         }
 
-	/**
+	
+
+/**
 	 *
 	 * Retrieves the simple name of a fully qualified name. So if 
 	 * you pass in "A::B::C", "C" is returned. If you pass in just
@@ -352,7 +365,9 @@ public class NameResolver
 	{
 		return resolveFullyQualifiedNames(false, element, name, typeName);
 	}
-	/**
+	
+
+/**
 	 * Adds the passed in element to the collection. If the elements collection has not
 	 * been established, it will be created and returned.
 	 * 

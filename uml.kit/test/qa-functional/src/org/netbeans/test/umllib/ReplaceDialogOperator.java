@@ -74,7 +74,9 @@ public class ReplaceDialogOperator extends FindDialogOperator{
         super(LabelsAndTitles.REPLACE_IN_MODEL_DIALOG_TITLE, null);
     }
     
-    /**
+    
+
+/**
      *
      * @param log
      */
@@ -82,7 +84,9 @@ public class ReplaceDialogOperator extends FindDialogOperator{
         super(LabelsAndTitles.REPLACE_IN_MODEL_DIALOG_TITLE, log);
     }
     
-    /**
+    
+
+/**
      *
      * @return
      */
@@ -91,7 +95,9 @@ public class ReplaceDialogOperator extends FindDialogOperator{
         return new ReplaceDialogOperator();
     }
     
-    /**
+    
+
+/**
      *
      * @param log
      * @return
@@ -101,7 +107,9 @@ public class ReplaceDialogOperator extends FindDialogOperator{
         return new ReplaceDialogOperator(log);
     }
     
-    /**
+    
+
+/**
      *
      * @param replaceString
      */
@@ -122,7 +130,9 @@ public class ReplaceDialogOperator extends FindDialogOperator{
         
     }
     
-    /**
+    
+
+/**
      *
      * @param flag
      */
@@ -187,7 +197,9 @@ public class ReplaceDialogOperator extends FindDialogOperator{
         }
     }
     
-    /**
+    
+
+/**
      *
      * @param targetCriteria
      * @param itemsForSearch
@@ -209,7 +221,9 @@ public class ReplaceDialogOperator extends FindDialogOperator{
         return res;
     }
     
-    /**
+    
+
+/**
      *
      * @param targetCriteria
      * @param itemsForSearch
@@ -230,7 +244,9 @@ public class ReplaceDialogOperator extends FindDialogOperator{
         return res;
     }
     
-    /**
+    
+
+/**
      *
      * @param targetCriteria
      * @param itemsForSearch

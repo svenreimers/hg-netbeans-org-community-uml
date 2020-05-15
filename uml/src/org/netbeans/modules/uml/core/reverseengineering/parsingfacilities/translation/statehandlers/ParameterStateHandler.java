@@ -43,11 +43,8 @@
  */
 
 
-/*
- * File       : ParameterStateHandler.java
- * Created on : Dec 11, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.statehandlers;
 
 import org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ITokenDescriptor;
@@ -109,7 +106,9 @@ public class ParameterStateHandler extends TypeElementStateHandler
         super.processToken(pToken, language);
     }
     
-    /**
+    
+
+/**
      * Retrieves the name of the feature that is being added.  This method 
      * is used by TypeElementStateHandler during processing.
      *

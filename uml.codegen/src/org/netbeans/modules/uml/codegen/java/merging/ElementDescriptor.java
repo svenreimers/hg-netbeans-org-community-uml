@@ -57,6 +57,8 @@ import org.netbeans.modules.uml.core.support.umlutils.ETArrayList;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 
+
+
 /**
  *  the utility class serving to hide some details to make
  *  API less dependent on details of DOM Node (or whatever it will, if any,
@@ -80,7 +82,9 @@ public class ElementDescriptor
       return node;
    }
    
-   /**
+   
+
+/**
     * Retrieves the model type of this element
     * @return the type of this element
     */
@@ -94,7 +98,9 @@ public class ElementDescriptor
       return elemType;
    }
    
-   /**
+   
+
+/**
     * Retrieves the model name of this element
     * @return the name of this element
     */
@@ -103,7 +109,9 @@ public class ElementDescriptor
       return getModelElemAttribute("name");
    }
    
-   /**
+   
+
+/**
     * Retrieves the value of a specified attribute of this element
     * @return the value of a specified attribute
     */
@@ -117,7 +125,9 @@ public class ElementDescriptor
       return (attrVal != null ? attrVal : "");
    }
    
-   /**
+   
+
+/**
     * Retrives the start position
     * @return the start position
     */
@@ -126,7 +136,9 @@ public class ElementDescriptor
       return getPosition("StartPosition");
    }
    
-   /**
+   
+
+/**
     * Retrieves the end position of this element
     * @return the end position
     */
@@ -173,7 +185,9 @@ public class ElementDescriptor
        return pos;
    }
    
-   /**
+   
+
+/**
     * Retrieves the position of a token descriptor of a specified type.
     * @param type The type of the descriptor.
     * @return The position of the descriptor if found, else <code>-1</code>.
@@ -184,7 +198,9 @@ public class ElementDescriptor
       return (desc != null ? desc.getPosition() : -1);
    }
    
-   /**
+   
+
+/**
     * Retrieves the value of a token descriptor of a specified type.
     * @param type The type of the descriptor.
     * @return The value of the descriptor if found, else <code>null</code>.
@@ -195,7 +211,9 @@ public class ElementDescriptor
       return (desc != null ? desc.getValue() : "");
    }
    
-   /**
+   
+
+/**
     * Retrieves the line number of a token descriptor of a specified type.
     * @param type The type of the descriptor.
     * @return The line number of the descriptor if found, else <code>-1</code>.
@@ -206,7 +224,9 @@ public class ElementDescriptor
       return (desc != null ? desc.getLine() : -1);
    }
    
-   /**
+   
+
+/**
     * Retrieves the column number of a token descriptor of a specified type.
     * @param type The type of the descriptor.
     * @return The column number of the descriptor if found, else <code>-1</code>.
@@ -217,7 +237,9 @@ public class ElementDescriptor
       return (desc != null ? desc.getColumn() : -1);
    }
    
-   /**
+   
+
+/**
     * Retrieves the length of a token descriptor of a specified type.
     * @param type The type of the descriptor.
     * @return The length of the descriptor if found, else <code>-1</code>.
@@ -228,7 +250,9 @@ public class ElementDescriptor
       return (desc != null ? desc.getLength() : 0);
    }
    
-   /**
+   
+
+/**
     * Retrieves a token descriptor of a specified type.
     * @param type The type of the descriptor.
     * @return The descriptor or NULL if a token descriptor or the specified

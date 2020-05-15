@@ -62,7 +62,9 @@ public class Delegate extends Dependency implements IDelegate
 		super();
 	}
 	
-	/**
+	
+
+/**
 	 * Establishes the appropriate XML elements for this UML type.
 	 *
 	 * [in] The document where this element will reside

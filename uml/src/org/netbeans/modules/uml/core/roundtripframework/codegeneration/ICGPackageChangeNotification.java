@@ -48,62 +48,86 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.IPackage;
 
 public interface ICGPackageChangeNotification extends ICGSingleClassChangeNotification
 {
-	/**
+	
+
+/**
 	 * Gets / Sets Old Package Name
 	*/
 	public String getOldPackageName();
 
-	/**
+	
+
+/**
 	 * Gets / Sets Old Package Name
 	*/
 	public void setOldPackageName( String value );
 
-	/**
+	
+
+/**
 	 * Gets / Sets New Package Name
 	*/
 	public String getNewPackageName();
 
-	/**
+	
+
+/**
 	 * Gets / Sets New Package Name
 	*/
 	public void setNewPackageName( String value );
 
-	/**
+	
+
+/**
 	 * Gets / Sets Modified Package
 	*/
 	public String getModifiedPackage();
 
-	/**
+	
+
+/**
 	 * Gets / Sets Modified Package
 	*/
 	public void setModifiedPackage( String value );
 
-	/**
+	
+
+/**
 	 * Gets / Sets the Old Package
 	*/
 	public void setOldPackage( IPackage value );
 
-	/**
+	
+
+/**
 	 * Gets / Sets the Old Package
 	*/
 	public IPackage getOldPackage();
 
-	/**
+	
+
+/**
 	 * Gets / Sets the New Package
 	*/
 	public void setNewPackage( IPackage value );
 
-	/**
+	
+
+/**
 	 * Gets / Sets the New Package
 	*/
 	public IPackage getNewPackage();
 
-	/**
+	
+
+/**
 	 * Gets / Sets Old SourceDir property
 	*/
 	public String getOldSourceDir();
 
-	/**
+	
+
+/**
 	 * Gets / Sets Old SourceDir property
 	*/
 	public void setOldSourceDir( String value );

@@ -46,6 +46,8 @@
 package org.netbeans.modules.uml.core.metamodel.dynamics;
 import org.netbeans.modules.uml.core.AbstractUMLTestCase;
 
+
+
 /**
  * Test cases for InterGateConnector.
  */
@@ -58,7 +60,9 @@ public class InterGateConnectorTestCase extends AbstractUMLTestCase
 
     private IInterGateConnector igc;
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see junit.framework.TestCase#setUp()
      */
     protected void setUp() throws Exception

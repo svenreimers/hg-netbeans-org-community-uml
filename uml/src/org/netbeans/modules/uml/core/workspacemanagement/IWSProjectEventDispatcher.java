@@ -53,73 +53,87 @@ import org.netbeans.modules.uml.core.support.umlutils.InvalidArguments;
  */
 public interface IWSProjectEventDispatcher extends IEventDispatchHelper
 {
-	/**
+	
+/**
 	 * method DispatchWSProjectPreCreate
 	 */
 	public IResultCell dispatchWSProjectPreCreate( IWorkspace space, String projName )
 	throws InvalidArguments;
 
-	/**
+	
+/**
 	 * method DispatchWSProjectCreated
 	 */
 	public void dispatchWSProjectCreated( IWSProject wsProject ) throws InvalidArguments;
 
-	/**
+	
+/**
 	 * method DispatchWSProjectPreOpen
 	 */
 	public boolean dispatchWSProjectPreOpen( IWorkspace space, String projectName ) throws InvalidArguments;
 
-	/**
+	
+/**
 	 * method DispatchWSProjectOpened
 	 */
 	public void dispatchWSProjectOpened( IWSProject wsProject ) throws InvalidArguments;
 
-	/**
+	
+/**
 	 * method DispatchWSProjectPreRemove
 	 */
 	public boolean dispatchWSProjectPreRemove( IWSProject project ) throws InvalidArguments;
 
-	/**
+	
+/**
 	 * method DispatchWSProjectRemoved
 	 */
 	public void dispatchWSProjectRemoved( IWSProject project ) throws InvalidArguments;
 
-	/**
+	
+/**
 	 * method DispatchWSProjectPreInsert
 	 */
 	public boolean dispatchWSProjectPreInsert( IWorkspace space, String projectName ) throws InvalidArguments;
 
-	/**
+	
+/**
 	 * method DispatchWSProjectInserted
 	 */
 	public void dispatchWSProjectInserted( IWSProject project ) throws InvalidArguments;
 
-	/**
+	
+/**
 	 * method DispatchWSProjectPreRename
 	 */
 	public boolean dispatchWSProjectPreRename( IWSProject project, String newName ) throws InvalidArguments;
 
-	/**
+	
+/**
 	 * method DispatchWSProjectRenamed
 	 */
 	public void dispatchWSProjectRenamed( IWSProject project, String oldName ) throws InvalidArguments;
 
-	/**
+	
+/**
 	 * method DispatchWSProjectPreClose
 	 */
 	public boolean dispatchWSProjectPreClose( IWSProject project ) throws InvalidArguments;
 
-	/**
+	
+/**
 	 * method DispatchWSProjectClosed
 	 */
 	public void dispatchWSProjectClosed( IWSProject project ) throws InvalidArguments;
 
-	/**
+	
+/**
 	 * method DispatchWSProjectPreSave
 	 */
 	public boolean dispatchWSProjectPreSave( IWSProject project ) throws InvalidArguments;
 
-	/**
+	
+/**
 	 * method DispatchWSProjectSaved
 	 */
 	public void dispatchWSProjectSaved( IWSProject project ) throws InvalidArguments;

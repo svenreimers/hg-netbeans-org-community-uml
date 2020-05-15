@@ -70,12 +70,16 @@ import org.netbeans.test.umllib.actions.Actionable;
 import org.netbeans.test.umllib.exceptions.NotFoundException;
 import org.netbeans.test.umllib.util.JPopupByPointChooser;
 
+
+
 /**
  * This is operator for labels.
  */
 public class DiagramLabelOperator implements Actionable {
     
-    /**
+    
+
+/**
      * Default delay for Compartment Waiter. Real value can be changed
      * as for the all other operators(For example via JemmyProperties)
      */
@@ -89,7 +93,9 @@ public class DiagramLabelOperator implements Actionable {
     protected Widget sourceLabel = null;
     private DiagramOperator diagramOperator = null;
     
-    /**
+    
+
+/**
      * 
      * @return 
      */
@@ -97,7 +103,9 @@ public class DiagramLabelOperator implements Actionable {
         return sourceLabel;
     }
     
-    /**
+    
+
+/**
      * Constructs label by text
      * @param dia Instance of DiagramOperator
      * @param text text
@@ -107,7 +115,9 @@ public class DiagramLabelOperator implements Actionable {
         this(dia, waitForLabel(dia, new LabelByTextChooser(text), 0));
     }
     
-    /**
+    
+
+/**
      * Costruct label by text and index
      * @param dia - current diagram operator
      * @param text - label's text
@@ -118,7 +128,9 @@ public class DiagramLabelOperator implements Actionable {
         this(dia, waitForLabel(dia, new LabelByTextChooser(text), index));
     }
     
-    /**
+    
+
+/**
      * Costruct label by chooser and index
      * @param dia - current diagram operator
      * @param chooser - label's chooser
@@ -129,7 +141,9 @@ public class DiagramLabelOperator implements Actionable {
         this(dia, waitForLabel(dia, chooser, index));
     }
     
-    /**
+    
+
+/**
      * Construct label by label class
      * @param dia 
      * @param label 
@@ -140,7 +154,9 @@ public class DiagramLabelOperator implements Actionable {
     }
     
     
-    /**
+    
+
+/**
      *method return name of comparment from compartment source
      *@return compartmant name
      */
@@ -149,7 +165,9 @@ public class DiagramLabelOperator implements Actionable {
     }
     
     
-    /**
+    
+
+/**
      * Search for suitable graph object
      * @param diagramOperator Diagram to look for label
      * @param labelChooser custom chooser
@@ -188,7 +206,9 @@ public class DiagramLabelOperator implements Actionable {
     
     
     public static class LabelComparator<C extends Widget> implements Comparator<C>{
-        /**
+        
+
+/**
          *
          * @param o1
          * @param o2
@@ -212,7 +232,9 @@ public class DiagramLabelOperator implements Actionable {
         }
     }   
     
-    /**
+    
+
+/**
      * Wait for suitable graph object
      * @return Element's GraphObject if found
      * @param chooser 
@@ -247,7 +269,9 @@ public class DiagramLabelOperator implements Actionable {
         
     
     //Methods from Actionable interface
-    /**
+    
+
+/**
      * 
      * @return 
      */
@@ -264,7 +288,9 @@ public class DiagramLabelOperator implements Actionable {
     }
     
     
-    /**
+    
+
+/**
      * Select label by click on center
      */
     public void select() {
@@ -278,7 +304,9 @@ public class DiagramLabelOperator implements Actionable {
         new Timeout("",50).sleep();
     }
     
-    /**
+    
+
+/**
      *
      * @param clickCount
      * @param mouseButton
@@ -289,7 +317,9 @@ public class DiagramLabelOperator implements Actionable {
     }
     
     
-    /**
+    
+
+/**
      *
      * @param clickCount
      * @param mouseButton
@@ -302,7 +332,9 @@ public class DiagramLabelOperator implements Actionable {
     }
     
     
-    /**
+    
+
+/**
      *
      * @param p
      * @param clickCount
@@ -328,18 +360,22 @@ public class DiagramLabelOperator implements Actionable {
     }
     
     
-    /**
+    
+
+/**
      *
      * @param selectIt
      * @param deselectOthers
      */
     public void center(boolean selectIt, boolean deselectOthers) {
-        //wait for Trey's center apis
+        
 //6.0        ADGraphWindow area = diagramOperator.getDrawingArea().getArea();
 //        area.getDrawingArea().centerPresentationElement(sourceLabel.getPresentationElement(), selectIt, deselectOthers);
     }
     
-    /**
+    
+
+/**
      * @return bounding rect for label
      */
     public Rectangle getBoundingRect()
@@ -348,7 +384,9 @@ public class DiagramLabelOperator implements Actionable {
          
     }
     
-    /**
+    
+
+/**
      * Returns center point of this compartment
      * @return center point of this compartment
      */
@@ -356,7 +394,9 @@ public class DiagramLabelOperator implements Actionable {
          return (new UMLWidgetOperator(sourceLabel)).getCenterPoint();
     }
     
-   /**
+   
+
+/**
      * 
      * @return true if it's name label
      */
@@ -368,7 +408,9 @@ public class DiagramLabelOperator implements Actionable {
 //        boolean isName=kind==TSLabelKind.TSLK_ACTIVITYEDGE_NAME;
 //        isName=isName || kind==TSLabelKind.TSLK_ASSOCIATION_NAME;
 // 6.0       isName=isName || kind==TSLabelKind.TSLK_NAME;
-        /*isName=isName || kind==TSLabelKind.;
+        
+
+/*isName=isName || kind==TSLabelKind.;
         isName=isName || kind==TSLabelKind.;
         isName=isName || kind==TSLabelKind.;
         isName=isName || kind==TSLabelKind.;
@@ -382,14 +424,16 @@ public class DiagramLabelOperator implements Actionable {
         return false;
     }
     
-    /**
+    
+
+/**
      * gets point inside a component and, if component is not visible centers window in this component.
      * The updated device point is returned
      * @param point 
      * @return 
      */
     public Point makeVisible(Point point){
-        //TODO: Wait for Trey's api
+        
 //6.0        ADGraphWindow area = diagramOperator.getDrawingArea().getArea();
 //        IDrawingAreaControl daControl = area.getDrawingArea();
 //        
@@ -407,7 +451,9 @@ public class DiagramLabelOperator implements Actionable {
    return point;
     }
         
-    /**
+    
+
+/**
      * Change element position with usage of mouse robot driver
      * @param x 
      * @param y 
@@ -425,7 +471,9 @@ public class DiagramLabelOperator implements Actionable {
         driver.releaseMouse(drA, x, y, InputEvent.BUTTON1_MASK, 0);
         new Timeout("",500).sleep();
     }
-    /**
+    
+
+/**
      * 
      * @param x 
      * @param y 
@@ -435,7 +483,9 @@ public class DiagramLabelOperator implements Actionable {
         moveTo((int)x,(int)y);
     }
     
-    /**
+    
+
+/**
      * Change element position with usage of mouse robot driver
      * @param dx 
      * @param dy 
@@ -453,7 +503,9 @@ public class DiagramLabelOperator implements Actionable {
         driver.releaseMouse(drA, parB.x+dx, parB.y+dy, InputEvent.BUTTON1_MASK, 0);
         new Timeout("",500).sleep();
     }
-    /**
+    
+
+/**
      * 
      * @param dx 
      * @param dy 
@@ -464,14 +516,18 @@ public class DiagramLabelOperator implements Actionable {
     }
     
     
-    /**
+    
+
+/**
      * Select compartmnet by name
      */
     public static class LabelByTextChooser implements LabelChooser {
         
         private String text = null;
         
-        /**
+        
+
+/**
          * Select compartment by type
          * @param text 
          */
@@ -479,7 +535,9 @@ public class DiagramLabelOperator implements Actionable {
             this.text = text;
         }
         
-        /**
+        
+
+/**
          * Check param by it's type
          * @return true if suitable and false otherwise
          * @param label 
@@ -489,7 +547,9 @@ public class DiagramLabelOperator implements Actionable {
            
         }
         
-        /**
+        
+
+/**
          * Returns description of this chooser
          * @return description of this chooser
          */
@@ -499,18 +559,24 @@ public class DiagramLabelOperator implements Actionable {
     }
     
     
-    /**
+    
+
+/**
      * Any compartment chooser. Used for looking by index.
      */
     public static class AnyLabelChooser implements LabelChooser {
         
-        /**
+        
+
+/**
          * Any Compartment chooser. Selects any compartments
          */
         public AnyLabelChooser(){
         }
         
-        /**
+        
+
+/**
          * Check label
          * @param lab label to check
          * @return Always true
@@ -519,7 +585,9 @@ public class DiagramLabelOperator implements Actionable {
             return true;
         }
         
-        /**
+        
+
+/**
          * Returns short description
          * @return Description
          */

@@ -47,6 +47,8 @@ package org.netbeans.modules.uml.core.metamodel.core.constructs;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.FactoryRetriever;
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier;
 import org.netbeans.modules.uml.core.AbstractUMLTestCase;
+
+
 /**
  * Test cases for PartFacade.
  */
@@ -59,7 +61,9 @@ public class PartFacadeTestCase extends AbstractUMLTestCase
 
     private IPartFacade partFacade;
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see junit.framework.TestCase#setUp()
      */
     protected void setUp() throws Exception
@@ -71,7 +75,9 @@ public class PartFacadeTestCase extends AbstractUMLTestCase
         project.addElement(partFacade);
     }
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see junit.framework.TestCase#tearDown()
      */
     protected void tearDown() throws Exception

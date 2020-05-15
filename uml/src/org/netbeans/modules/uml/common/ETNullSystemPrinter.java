@@ -45,6 +45,7 @@
 
 package org.netbeans.modules.uml.common;
 
+
 /**
  *
  * Null System printer.
@@ -52,7 +53,8 @@ package org.netbeans.modules.uml.common;
 public class ETNullSystemPrinter implements IETSystemPrinter
 {
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.common.IETSystemPrinter#flush()
     */
    public void flush()
@@ -61,7 +63,9 @@ public class ETNullSystemPrinter implements IETSystemPrinter
 
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.common.IETSystemPrinter#close()
     */
    public void close()
@@ -70,7 +74,9 @@ public class ETNullSystemPrinter implements IETSystemPrinter
 
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.common.IETSystemPrinter#checkError()
     */
    public boolean checkError()
@@ -79,7 +85,9 @@ public class ETNullSystemPrinter implements IETSystemPrinter
       return false;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.common.IETSystemPrinter#write(int)
     */
    public void write(int b)
@@ -88,7 +96,9 @@ public class ETNullSystemPrinter implements IETSystemPrinter
 
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.common.IETSystemPrinter#write(byte[], int, int)
     */
    public void write(byte[] buf, int off, int len)
@@ -97,7 +107,9 @@ public class ETNullSystemPrinter implements IETSystemPrinter
 
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.common.IETSystemPrinter#print(boolean)
     */
    public void print(boolean b)
@@ -106,7 +118,9 @@ public class ETNullSystemPrinter implements IETSystemPrinter
 
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.common.IETSystemPrinter#print(char)
     */
    public void print(char c)
@@ -115,7 +129,9 @@ public class ETNullSystemPrinter implements IETSystemPrinter
 
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.common.IETSystemPrinter#print(int)
     */
    public void print(int i)
@@ -124,7 +140,9 @@ public class ETNullSystemPrinter implements IETSystemPrinter
 
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.common.IETSystemPrinter#print(long)
     */
    public void print(long l)
@@ -133,7 +151,9 @@ public class ETNullSystemPrinter implements IETSystemPrinter
 
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.common.IETSystemPrinter#print(float)
     */
    public void print(float f)
@@ -142,7 +162,9 @@ public class ETNullSystemPrinter implements IETSystemPrinter
 
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.common.IETSystemPrinter#print(double)
     */
    public void print(double d)
@@ -151,7 +173,9 @@ public class ETNullSystemPrinter implements IETSystemPrinter
 
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.common.IETSystemPrinter#print(char[])
     */
    public void print(char[] s)
@@ -160,7 +184,9 @@ public class ETNullSystemPrinter implements IETSystemPrinter
 
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.common.IETSystemPrinter#print(java.lang.String)
     */
    public void print(String s)
@@ -169,7 +195,9 @@ public class ETNullSystemPrinter implements IETSystemPrinter
 
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.common.IETSystemPrinter#print(java.lang.Object)
     */
    public void print(Object obj)
@@ -178,7 +206,9 @@ public class ETNullSystemPrinter implements IETSystemPrinter
 
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.common.IETSystemPrinter#println()
     */
    public void println()
@@ -187,7 +217,9 @@ public class ETNullSystemPrinter implements IETSystemPrinter
 
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.common.IETSystemPrinter#println(boolean)
     */
    public void println(boolean x)
@@ -196,7 +228,9 @@ public class ETNullSystemPrinter implements IETSystemPrinter
 
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.common.IETSystemPrinter#println(char)
     */
    public void println(char x)
@@ -205,7 +239,9 @@ public class ETNullSystemPrinter implements IETSystemPrinter
 
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.common.IETSystemPrinter#println(int)
     */
    public void println(int x)
@@ -214,7 +250,9 @@ public class ETNullSystemPrinter implements IETSystemPrinter
 
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.common.IETSystemPrinter#println(long)
     */
    public void println(long x)
@@ -223,7 +261,9 @@ public class ETNullSystemPrinter implements IETSystemPrinter
 
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.common.IETSystemPrinter#println(float)
     */
    public void println(float x)
@@ -232,7 +272,9 @@ public class ETNullSystemPrinter implements IETSystemPrinter
 
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.common.IETSystemPrinter#println(double)
     */
    public void println(double x)
@@ -241,7 +283,9 @@ public class ETNullSystemPrinter implements IETSystemPrinter
 
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.common.IETSystemPrinter#println(char[])
     */
    public void println(char[] x)
@@ -250,7 +294,9 @@ public class ETNullSystemPrinter implements IETSystemPrinter
 
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.common.IETSystemPrinter#println(java.lang.String)
     */
    public void println(String x)
@@ -259,7 +305,9 @@ public class ETNullSystemPrinter implements IETSystemPrinter
 
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.common.IETSystemPrinter#println(java.lang.Object)
     */
    public void println(Object x)

@@ -49,7 +49,9 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.IElement;
 
 public interface INewDialogResultProcessor
 {
-	/**
+	
+
+/**
 	 * Acts on the user's requests coming from the INewDialog
 	*/
 	public IElement handleResult( INewDialogTabDetails pResult );

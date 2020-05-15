@@ -43,11 +43,8 @@
  */
 
 
-/*
- * File       : TemplateClassStateHandler.java
- * Created on : Dec 12, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.statehandlers;
 
 import org.dom4j.Node;
@@ -103,7 +100,9 @@ public class TemplateClassStateHandler extends ClassStateHandler
     
     
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.statehandlers.StateHandler#stateComplete(java.lang.String)
      */
     public void stateComplete(String stateName)

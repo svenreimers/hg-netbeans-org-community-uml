@@ -42,13 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File         : DefaultSinkManager.java
- * Version      : 1.0
- * Description  : Manages the sinks (listeners) attached to the running
- *                Describe instance.
- * Author       : Trey Spiva
- */
+
+
 package org.netbeans.modules.uml.integration.ide;
 
 import org.netbeans.modules.uml.core.eventframework.IEventDispatchController;
@@ -71,16 +66,8 @@ import org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeEventDispatc
 import org.netbeans.modules.uml.ui.support.DispatchHelper;
 import org.netbeans.modules.uml.ui.support.diagramsupport.IDrawingAreaEventDispatcher;
 
-/**
- *  Manages the sinks (listeners) attached to the running Describe instance.
- *
- * Revision History
- * No.  Date        Who         What
- * ---  ----        ---         ----
- *   1  2002-05-22  Darshan     Added support for source navigation.
- *
- * @version 1.0
- */
+
+
 public class DefaultSinkManager extends SourceNavigable {
     public static final String RT_LANGUAGE = "Java";
     ElementLifeTimeEventDispatcher d;
@@ -128,7 +115,9 @@ public class DefaultSinkManager extends SourceNavigable {
 //                new DefaultPreferenceManagerEventSink());
 //    }
 
-    /**
+    
+
+/**
      * Connects a sink to the Workspace dispatcher.
 //     */
 //    public void registerForWorkspaceEvents() {
@@ -151,7 +140,9 @@ public class DefaultSinkManager extends SourceNavigable {
 //        }
 //    }
 
-    /**
+    
+
+/**
      * Connects a sink to the Workspace Dispatcher
      */
 //    public void registerForWSProjectEvents() {
@@ -168,7 +159,9 @@ public class DefaultSinkManager extends SourceNavigable {
 //        }
 //    }
 
-    /**
+    
+
+/**
      * Connects sinks to all the ProjectTree event sinks
      */
 //    public void registerForAllTreeEvents() {
@@ -176,7 +169,9 @@ public class DefaultSinkManager extends SourceNavigable {
 //        registerForProjectTreeEvents();
 //    }
 
-    /**
+    
+
+/**
      * Connects a sink to the context menu events coming off the Project tree
      */
 //    public void registerForTreeMenuEvents() {
@@ -193,7 +188,9 @@ public class DefaultSinkManager extends SourceNavigable {
 //        }
 //    }
 
-    /**
+    
+
+/**
      * Connects a sink to the tree events, such as selection and double clicks
      */
 //    public void registerForProjectTreeEvents() {
@@ -295,7 +292,9 @@ public class DefaultSinkManager extends SourceNavigable {
         Log.out("registered for round trip events ..");
     }
 
-    /**
+    
+
+/**
      * Pulls the WorkspaceEventDispatcher off the internal EventDispatchController
      */
 //    protected void establishWorkspaceDispatcher() {
@@ -307,7 +306,9 @@ public class DefaultSinkManager extends SourceNavigable {
 //        }
 //    }
 
-    /**
+    
+
+/**
      * Pulls the ProjectTreeEventDispatcher off the internal EventDispatchController
      */
 //    protected void establishTreeDispatcher() {
@@ -318,7 +319,9 @@ public class DefaultSinkManager extends SourceNavigable {
 //        }
 //    }
 
-    /**
+    
+
+/**
      * Connects a sink to the Drawing Area
      */
 //    public void registerForDrawingAreaEvents() {
@@ -354,7 +357,9 @@ public class DefaultSinkManager extends SourceNavigable {
 //            Log.out("mController is null!");
 //    }
 
-    /**
+    
+
+/**
      * Connects a sink to the Describe messages
      */
 //    public void registerForMessagesEvents() {
@@ -409,7 +414,9 @@ public class DefaultSinkManager extends SourceNavigable {
 //            Log.out("mController is null!");
 //    }
 
-    /**
+    
+
+/**
      * Connects a sink to the SCM events
      */
 //    public void registerForSCMEvents() {
@@ -427,7 +434,9 @@ public class DefaultSinkManager extends SourceNavigable {
 //    }
 
 
-    /**
+    
+
+/**
      * Pulls the ElementLifeTimeEventsDispatcher off the internal EventDispatchController
      */
 //    protected void establishElementLifeTimeEventsDispatcher() {
@@ -454,7 +463,9 @@ public class DefaultSinkManager extends SourceNavigable {
 //    }
 
 
-    /**
+    
+
+/**
      * Pulls the DrawingAreaEventDispatcher off the internal
      * EventDispatchController
      */

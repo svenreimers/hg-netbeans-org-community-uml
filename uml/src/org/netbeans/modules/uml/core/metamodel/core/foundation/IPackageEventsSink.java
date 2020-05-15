@@ -49,12 +49,16 @@ import org.netbeans.modules.uml.core.support.umlsupport.IResultCell;
 
 public interface IPackageEventsSink
 {
-	/**
+	
+
+/**
 	 * Fired before the source dir property on the IPackage is changed.
 	*/
 	public void onPreSourceDirModified( IPackage element, String proposedSourceDir, IResultCell cell );
 
-	/**
+	
+
+/**
 	 * Fired right after the source dir property on the IPackage is changed.
 	*/
 	public void onSourceDirModified( IPackage element, IResultCell cell );

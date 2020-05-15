@@ -99,6 +99,8 @@ public class CollectionTranslator
 			source.clear();
 		}		
 	}
+
+
 /*	
 	public DestinationType[] copyArray(SourceType[] arr) 
 	{

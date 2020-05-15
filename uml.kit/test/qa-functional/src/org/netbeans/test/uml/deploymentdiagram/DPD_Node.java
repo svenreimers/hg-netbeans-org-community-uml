@@ -67,6 +67,7 @@ import org.netbeans.test.umllib.exceptions.NotFoundException;
 import org.netbeans.test.umllib.testcases.UMLTestCase;
 import org.netbeans.test.umllib.vrf.DiagramElementVerifier;
 
+
 /**
  *
  * @spec UML/DeploymentDiagram.xml
@@ -93,6 +94,8 @@ public class DPD_Node extends UMLTestCase {
         return suite;
     }
 
+
+
 /**
  * @caseblock Node Symbol
  * @usecase Copy and Paste a Node symbol on a diagram by popup menu
@@ -104,6 +107,8 @@ public class DPD_Node extends UMLTestCase {
         }
     }
     
+
+
 /**
  * @caseblock Node Symbol
  * @usecase Copy and Paste a Node symbol on a diagram by shortcuts
@@ -115,6 +120,8 @@ public class DPD_Node extends UMLTestCase {
         }
     }
     
+
+
 /**
  * @caseblock Node Symbol
  * @usecase Cut and Paste a Node symbol on a diagram by popup menu
@@ -126,6 +133,8 @@ public class DPD_Node extends UMLTestCase {
         }
     }
     
+
+
 /**
  * @caseblock Node Symbol
  * @usecase Cut and Paste a Node symbol on a diagram by shortcuts
@@ -137,6 +146,8 @@ public class DPD_Node extends UMLTestCase {
         }
     }
     
+
+
 /**
  * @caseblock Node Symbol
  * @usecase Delete a UML Node symbol from a diagram by popup menu
@@ -148,6 +159,8 @@ public class DPD_Node extends UMLTestCase {
         }
     }
     
+
+
 /**
  * @caseblock Node Symbol
  * @usecase Delete a UML Node symbol from a diagram by shortcut
@@ -158,6 +171,8 @@ public class DPD_Node extends UMLTestCase {
             fail("Test failed. Details in log file.");
         }
     }
+
+
 
 /**
  * @caseblock Node Symbol
@@ -170,6 +185,8 @@ public class DPD_Node extends UMLTestCase {
         }
     }
     
+
+
 /**
  * @caseblock Node Symbol
  * @usecase Select all on a diagram by popup menu of a Node
@@ -181,6 +198,8 @@ public class DPD_Node extends UMLTestCase {
         }
     }
     
+
+
 /**
  * @caseblock Node Symbol
  * @usecase Select all on a diagram by shortcut
@@ -192,6 +211,8 @@ public class DPD_Node extends UMLTestCase {
         }
     }
     
+
+
 /**
  * @caseblock Node Symbol
  * @usecase Select All Similar Elements of a Node
@@ -203,6 +224,8 @@ public class DPD_Node extends UMLTestCase {
         }
     }
     
+
+
 /**
  * @caseblock Node Symbol
  * @usecase Invert selection of a Node
@@ -214,6 +237,8 @@ public class DPD_Node extends UMLTestCase {
         }
     }
     
+
+
 /**
  * @caseblock Node Symbol
  * @usecase Hide Children one level of a Node
@@ -225,6 +250,8 @@ public class DPD_Node extends UMLTestCase {
         }
     }
     
+
+
 /**
  * @caseblock Node Symbol
  * @usecase Hide Children All levels of a Node
@@ -236,6 +263,8 @@ public class DPD_Node extends UMLTestCase {
         }
     }
     
+
+
 /**
  * @caseblock Node Symbol
  * @usecase Hide Parents one level of a Node
@@ -247,6 +276,8 @@ public class DPD_Node extends UMLTestCase {
         }
     }
     
+
+
 /**
  * @caseblock Node Symbol
  * @usecase Hide Parents All levels of a Node
@@ -258,6 +289,8 @@ public class DPD_Node extends UMLTestCase {
         }
     }   
     
+
+
 /**
  * @caseblock Node Symbol
  * @usecase Show Children one level of a Node
@@ -269,6 +302,8 @@ public class DPD_Node extends UMLTestCase {
         }
     }   
     
+
+
 /**
  * @caseblock Node Symbol
  * @usecase Show Children All levels of a Node
@@ -280,6 +315,8 @@ public class DPD_Node extends UMLTestCase {
         }
     }   
     
+
+
 /**
  * @caseblock Node Symbol
  * @usecase Show Parents one level of a Node
@@ -291,6 +328,8 @@ public class DPD_Node extends UMLTestCase {
         }
     }   
     
+
+
 /**
  * @caseblock Node Symbol
  * @usecase Show Parents All levels of a Node
@@ -302,6 +341,8 @@ public class DPD_Node extends UMLTestCase {
         }
     }   
     
+
+
 /**
  * @caseblock Node Symbol
  * @usecase Border color of a Node
@@ -313,6 +354,8 @@ public class DPD_Node extends UMLTestCase {
         }
     }   
     
+
+
 /**
  * @caseblock Node Symbol
  * @usecase Background color of a Node
@@ -324,6 +367,8 @@ public class DPD_Node extends UMLTestCase {
         }
     }   
     
+
+
 /**
  * @caseblock Node Symbol
  * @usecase Text font of a Node
@@ -334,6 +379,8 @@ public class DPD_Node extends UMLTestCase {
             fail("Test failed. Details in log file.");
         }
     }   
+
+
 
 /**
  * @caseblock Node Symbol

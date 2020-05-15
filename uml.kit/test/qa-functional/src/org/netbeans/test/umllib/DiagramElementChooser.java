@@ -50,19 +50,25 @@ package org.netbeans.test.umllib;
 import org.netbeans.api.visual.widget.Widget;
 
 
+
+
 /**
  * Common interface for the digram elemnt choosers
  */
 public interface DiagramElementChooser {
     
-    /**
+    
+
+/**
      * Check graph object and return true if this object is suitable
      * @param obj object to check
      * @return true if this object is suitable and false otherwise
      */
      public boolean checkElement( Widget widget);
     
-    /**
+    
+
+/**
      * Returns description for this chooser
      * @return description
      */

@@ -79,7 +79,9 @@ public class UMLPaletteOperator extends TopComponentOperator {
     }
     
     
-    /**
+    
+
+/**
      * 
      * @param toolName 
      * @throws qa.uml.exceptions.NotFoundException 
@@ -134,7 +136,9 @@ public class UMLPaletteOperator extends TopComponentOperator {
     }
     
     
-    /**
+    
+
+/**
      * 
      * @param type 
      * @throws qa.uml.exceptions.NotFoundException 
@@ -143,7 +147,9 @@ public class UMLPaletteOperator extends TopComponentOperator {
         selectTool(getToolNameByElementType(type));
     }
    
-    /**
+    
+
+/**
      * @return 
      */
     public String getSelectedItemname()
@@ -156,7 +162,9 @@ public class UMLPaletteOperator extends TopComponentOperator {
         return (sel!=null)?(sel.toString()):("null");
     }
     
-    /**
+    
+
+/**
      * 
      * @param elementType 
      * @return 
@@ -166,7 +174,9 @@ public class UMLPaletteOperator extends TopComponentOperator {
     }
     
     
-    /**
+    
+
+/**
      * 
      * @param groupName 
      */
@@ -180,7 +190,9 @@ public class UMLPaletteOperator extends TopComponentOperator {
     }
     
     
-    /**
+    
+
+/**
      * 
      * @param groupName 
      */
@@ -222,7 +234,9 @@ public class UMLPaletteOperator extends TopComponentOperator {
         String itemName = null;
         
         
-        /**
+        
+
+/**
          * 
          * @param itemName 
          */
@@ -232,12 +246,16 @@ public class UMLPaletteOperator extends TopComponentOperator {
         }
         
         
-        /*
+        
+
+/*
          * (non-Javadoc)
          *
          * @see org.netbeans.jemmy.ComponentChooser#checkComponent(java.awt.Component)
          */
-        /**
+        
+
+/**
          * 
          * @param comp 
          * @return 
@@ -254,7 +272,9 @@ public class UMLPaletteOperator extends TopComponentOperator {
                         if(itemName.equals(obj.toString())){
                             return true;
                         }
-                        /*
+                        
+
+/*
                         if (obj instanceof FilterNode){
                             FilterNode node = (FilterNode)obj;
                             //getOutput().printError("display:|"+node.getDisplayName()+ "|  "+obj+" index"+i+"search:"+itemName);                            
@@ -268,7 +288,9 @@ public class UMLPaletteOperator extends TopComponentOperator {
                 return false;
             }
     
-        /**
+        
+
+/**
          * 
          * @return 
          */
@@ -283,12 +305,16 @@ public class UMLPaletteOperator extends TopComponentOperator {
          }
         
         
-        /*
+        
+
+/*
          * (non-Javadoc)
          *
          * @see org.netbeans.jemmy.ComponentChooser#checkComponent(java.awt.Component)
          */
-        /**
+        
+
+/**
          * 
          * @param comp 
          * @return 
@@ -303,7 +329,9 @@ public class UMLPaletteOperator extends TopComponentOperator {
                 return false;
             }
     
-        /**
+        
+
+/**
          * 
          * @return 
          */
@@ -312,7 +340,9 @@ public class UMLPaletteOperator extends TopComponentOperator {
             }       
     }
     
-    /**
+    
+
+/**
      * wait tool to be selected/deselected
      * do not open/close, scroll lists or make palette visible
      * @param toolName 
@@ -333,7 +363,9 @@ public class UMLPaletteOperator extends TopComponentOperator {
         listOperator.waitItemSelection(itemIndex, selected);
     }
     
-    /**
+    
+
+/**
      * 
      * @param type 
      * @param selected 

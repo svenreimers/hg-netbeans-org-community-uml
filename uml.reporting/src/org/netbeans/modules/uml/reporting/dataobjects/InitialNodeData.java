@@ -55,7 +55,8 @@ public class InitialNodeData extends ActivityNodeData
 {
     
     
-    /**
+    
+/**
      * Creates a new instance of InitialNodeData
      */
     public InitialNodeData()

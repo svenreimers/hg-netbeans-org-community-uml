@@ -53,21 +53,24 @@ import javax.swing.JComponent;
  */
 public interface IPulldownButtonInvoker
 {
-   /**
+   
+/**
     * Makes the pull down visible to the user.
     *
     * @param owner The component that is associated with the pulldown.
     */
    public void showPulldown(JComponent owner);
 
-   /**
+   
+/**
     * Hides the pull down from the user.
     *
     * @param owner The component that is associated with the pulldown.
     */
    public void hidePulldown(JComponent owner);
 
-   /**
+   
+/**
     * Determines if the component is visibible to the user.
     * 
     * @return <b>true</b> if the pulldown component is visibile.

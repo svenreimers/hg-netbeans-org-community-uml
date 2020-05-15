@@ -48,6 +48,7 @@ package org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.trans
 
 import org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ITokenDescriptor;
 
+
 /**
  * The LogicalUnaryNotExpression is used to represent a logical expression.
  *
@@ -64,7 +65,9 @@ public class LogicalUnaryNotExpression extends PreUnaryExpression
       super();
    }
 
-   /**
+   
+
+/**
     * Converts the expression data into a string representation.  The operator 
     * will be placed before the expression.
     */

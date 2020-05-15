@@ -49,27 +49,37 @@ import org.netbeans.modules.uml.core.support.umlsupport.IResultCell;
 
 public interface ICoreProductInitEventsSink
 {
-	/**
+	
+
+/**
 	 * Fired before initialization of the product commences.
 	*/
 	public void onCoreProductPreInit( ICoreProduct pVal, IResultCell cell );
 
-	/**
+	
+
+/**
 	 * Fired after the CoreProduct has been fully initialized.
 	*/
 	public void onCoreProductInitialized( ICoreProduct newVal, IResultCell cell );
 
-	/**
+	
+
+/**
 	 * Fired before the product quits.
 	*/
 	public void onCoreProductPreQuit( ICoreProduct pVal, IResultCell cell );
 
-	/**
+	
+
+/**
 	 * Fired before the product saves all modified data.
 	*/
 	public void onCoreProductPreSaved( ICoreProduct pVal, IResultCell cell );
 
-	/**
+	
+
+/**
 	 * Fired after the CoreProduct has successfully saved all modified data.
 	*/
 	public void onCoreProductSaved( ICoreProduct newVal, IResultCell cell );

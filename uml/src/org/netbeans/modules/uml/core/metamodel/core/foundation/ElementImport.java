@@ -65,7 +65,9 @@ public class ElementImport extends DirectedRelationship implements IElementImpor
         super();
     }
 
-    /**
+    
+
+/**
      * Gets the Package that relies on a PackageableElement from
      * another Package
      *
@@ -79,7 +81,9 @@ public class ElementImport extends DirectedRelationship implements IElementImpor
         return getSpecificElement("importingPackage", dummy, IPackage.class);
     }
     
-    /**
+    
+
+/**
      * Sets the Package that relies on a PackageableElement from
      * another Package
      *
@@ -126,7 +130,9 @@ public class ElementImport extends DirectedRelationship implements IElementImpor
         }
     }
     
-    /**
+    
+
+/**
      * Gets the PackageableElement that an importingPackage imports
      *
      * @param element[out]
@@ -139,7 +145,9 @@ public class ElementImport extends DirectedRelationship implements IElementImpor
         return col.retrieveSingleElement(m_Node, "UML:ElementImport.importedElement/*", IAutonomousElement.class);
     }
     
-    /**
+    
+
+/**
      * Sets the PackageableElement that an importingPackage imports. This ElementImport
      * must already belong to a namespace!
      *
@@ -182,7 +190,9 @@ public class ElementImport extends DirectedRelationship implements IElementImpor
         }
     }
     
-    /**
+    
+
+/**
      * Gets the visibility of the imported PackageableElement within the
      * importing Package.
      *
@@ -195,7 +205,9 @@ public class ElementImport extends DirectedRelationship implements IElementImpor
         return getVisibilityKindValue("visibility");
     }
     
-    /**
+    
+
+/**
      * Sets the visibility of the imported PackageableElement within the
      * importing Package.
      *
@@ -208,7 +220,9 @@ public class ElementImport extends DirectedRelationship implements IElementImpor
         setVisibilityKindValue("visibility", val);
     }
     
-    /**
+    
+
+/**
      * Gets the name of an imported PackageableElement that is to
      * be used instead of its name within the importing Package.  By
      * default, no alias is used.
@@ -222,7 +236,9 @@ public class ElementImport extends DirectedRelationship implements IElementImpor
         return getAttributeValue("alias");
     }
     
-    /**
+    
+
+/**
      * Sets the name of an imported PackageableElement that is to
      * be used instead of its name within the importing Package.  By
      * default, no alias is used.
@@ -236,7 +252,9 @@ public class ElementImport extends DirectedRelationship implements IElementImpor
         setAttributeValue("alias", val);
     }
     
-    /**
+    
+
+/**
      * Establishes the appropriate XML elements for this UML type.
      *
      * [in] The document where this element will reside

@@ -68,11 +68,8 @@ import org.w3c.dom.TypeInfo;
 import org.w3c.dom.UserDataHandler;
 import org.dom4j.DocumentFactory;
 
-/** <p><code>DOMAttribute</code> implements an XML element which
- * supports the W3C DOM API.</p>
- *
- * @version $Revision: 1.2.6.1 $
- */
+
+
 public class W3CNodeProxy extends Dom4JNodeProxy implements org.w3c.dom.Element
 {
 
@@ -88,7 +85,9 @@ public class W3CNodeProxy extends Dom4JNodeProxy implements org.w3c.dom.Element
     // org.w3c.dom.Node interface
     //-------------------------------------------------------------------------
     
-    /** Returns the code according to the type of node.
+    
+
+/** Returns the code according to the type of node.
      * This makes processing nodes polymorphically much easier as the
      * switch statement can be used instead of multiple if (instanceof)
      * statements.

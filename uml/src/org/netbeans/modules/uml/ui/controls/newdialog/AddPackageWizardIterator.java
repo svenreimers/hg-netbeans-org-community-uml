@@ -55,7 +55,9 @@ public final class AddPackageWizardIterator implements WizardDescriptor.Iterator
     
     // To invoke this wizard, copy-paste and run the following code, e.g. from
     // SomeAction.performAction():
-    /*
+    
+
+/*
     WizardDescriptor.Iterator iterator = new AddPackageWizardIterator();
     WizardDescriptor wizardDescriptor = new WizardDescriptor(iterator);
     // {0} will be replaced by WizardDescriptor.Panel.getComponent().getName()
@@ -75,7 +77,9 @@ public final class AddPackageWizardIterator implements WizardDescriptor.Iterator
     
     private WizardDescriptor.Panel[] panels;
     
-    /**
+    
+
+/**
      * Initialize panels representing individual wizard's steps and sets
      * various properties for them influencing wizard appearance.
      */

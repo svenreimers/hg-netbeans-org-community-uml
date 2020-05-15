@@ -47,22 +47,30 @@ package org.netbeans.modules.uml.core.eventframework;
 
 public interface IOriginalAndNewEventPayload extends IEventPayload
 {
-	/**
+	
+
+/**
 	 * property OriginalValue
 	*/
 	public String getOriginalValue();
 
-	/**
+	
+
+/**
 	 * property OriginalValue
 	*/
 	public void setOriginalValue( String value );
 
-	/**
+	
+
+/**
 	 * property NewValue
 	*/
 	public String getNewValue();
 
-	/**
+	
+
+/**
 	 * property NewValue
 	*/
 	public void setNewValue( String value );

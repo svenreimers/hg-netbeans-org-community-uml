@@ -55,7 +55,9 @@ public class DiagramValidationResult implements IDiagramValidationResult
         numValidateKind = new long[7];
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.diagrams.IDiagramValidationResult#getNumInvalidItems(int)
      */
     public long getNumInvalidItems(int nKind)
@@ -67,7 +69,9 @@ public class DiagramValidationResult implements IDiagramValidationResult
         return -1;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.diagrams.IDiagramValidationResult#incrementNumInvalidItems(int)
      */
     public void incrementNumInvalidItems(int nKind)
@@ -78,7 +82,9 @@ public class DiagramValidationResult implements IDiagramValidationResult
         }
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.diagrams.IDiagramValidationResult#reset()
      */
     public void reset()
@@ -86,7 +92,9 @@ public class DiagramValidationResult implements IDiagramValidationResult
         numValidateKind = new long[7];
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.diagrams.IDiagramValidationResult#setNumInvalidItems(int, int)
      */
     public void setNumInvalidItems(int nKind, int nCount)

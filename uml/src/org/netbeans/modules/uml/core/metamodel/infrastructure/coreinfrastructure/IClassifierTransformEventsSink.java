@@ -46,12 +46,16 @@ package org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructur
 import org.netbeans.modules.uml.core.support.umlsupport.IResultCell;
 public interface IClassifierTransformEventsSink
 {
-	/**
+	
+
+/**
 	 * Fired whenever a classifier is about to be transformed.
 	*/
 	public void onPreTransform( IClassifier classifier, String newForm, IResultCell cell );
 
-	/**
+	
+
+/**
 	 * Fired right after a classifier is transformed into a new one.
 	*/
 	public void onTransformed( IClassifier classifier, IResultCell cell );

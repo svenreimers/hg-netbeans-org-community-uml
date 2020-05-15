@@ -43,6 +43,8 @@
  */
 
 
+
+
 /*
  * JPopupChooser.java
  *
@@ -61,6 +63,7 @@ import org.netbeans.jemmy.ComponentChooser;
 import org.netbeans.jemmy.util.Dumper;
 import org.netbeans.test.umllib.exceptions.UMLCommonException;
 
+
 /**
  * 
  */
@@ -70,7 +73,8 @@ public class JPopupByPointChooser implements ComponentChooser{
     private int index=0,counter=0;
     private Component component;
     String res="";
-    /**
+    
+/**
      * 
      * Creates a new instance of JPopupChooser
      * @param x - point to be within Popup area - in scrreen axes
@@ -80,7 +84,9 @@ public class JPopupByPointChooser implements ComponentChooser{
         this(x,y,0);
     }
 
-    /**
+    
+
+/**
      * 
      * Creates a new instance of JPopupChooser
      * @param p - point to be within Popup area - in scrreen axes
@@ -88,7 +94,9 @@ public class JPopupByPointChooser implements ComponentChooser{
     public JPopupByPointChooser(java.awt.Point p) {
         this(p,0);
     }
-    /**
+    
+
+/**
      * 
      * Creates a new instance of JPopupChooser
      * @param index 
@@ -99,7 +107,9 @@ public class JPopupByPointChooser implements ComponentChooser{
         this(x,y,null,index);
     }
 
-    /**
+    
+
+/**
      * 
      * Creates a new instance of JPopupChooser
      * @param index 
@@ -122,7 +132,9 @@ public class JPopupByPointChooser implements ComponentChooser{
     }
     
     
-    /**
+    
+
+/**
      * 
      * Creates a new instance of JPopupChooser
      * @param index 
@@ -132,7 +144,9 @@ public class JPopupByPointChooser implements ComponentChooser{
         this(p.x,p.y,index);
     }
     
-    /**
+    
+
+/**
      * 
      * Creates a new instance of JPopupChooser
      * @param cmp 
@@ -143,7 +157,9 @@ public class JPopupByPointChooser implements ComponentChooser{
         this(p.x,p.y,cmp,index);
     }
 
-    /**
+    
+
+/**
      * 
      * @param component 
      * @return 
@@ -165,7 +181,9 @@ public class JPopupByPointChooser implements ComponentChooser{
         return false;
     }
 
-    /**
+    
+
+/**
      * 
      * @return 
      */

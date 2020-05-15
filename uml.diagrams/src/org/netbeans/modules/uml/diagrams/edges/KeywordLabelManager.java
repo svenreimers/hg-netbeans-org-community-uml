@@ -59,7 +59,9 @@ public class KeywordLabelManager extends BasicUMLLabelManager
     //////////////////////////////////////////////////////////////////
     // LableManager Overrides
     
-    /**
+    
+
+/**
      * keywords are shown by default, so overriing this method
      */
     @Override

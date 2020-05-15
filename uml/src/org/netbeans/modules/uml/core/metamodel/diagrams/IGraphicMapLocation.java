@@ -48,19 +48,25 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.IElement;
 
 public interface IGraphicMapLocation
 {
-	/**
+	
+
+/**
 	 * The XMIID of the IElement at this location.
 	*/
 	public String getElementXMIID();
 
 
-	/**
+	
+
+/**
 	 * The name of this item.
 	*/
 	public String getName();
 
 
-	/**
+	
+
+/**
 	 * The element type of this item.
 	*/
 	public String getElementType();

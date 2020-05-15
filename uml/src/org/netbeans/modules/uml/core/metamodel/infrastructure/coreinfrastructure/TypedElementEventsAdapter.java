@@ -55,7 +55,8 @@ import org.netbeans.modules.uml.core.support.umlsupport.IResultCell;
 public class TypedElementEventsAdapter implements ITypedElementEventsSink
 {
 
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     */
    public void onPreMultiplicityModified(
       ITypedElement element,
@@ -65,14 +66,18 @@ public class TypedElementEventsAdapter implements ITypedElementEventsSink
       // TODO Auto-generated method stub
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     */
    public void onMultiplicityModified(ITypedElement element, IResultCell cell)
    {
       // TODO Auto-generated method stub
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     */
    public void onPreTypeModified(
       ITypedElement element,
@@ -82,14 +87,18 @@ public class TypedElementEventsAdapter implements ITypedElementEventsSink
       // TODO Auto-generated method stub
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     */
    public void onTypeModified(ITypedElement element, IResultCell cell)
    {
       // TODO Auto-generated method stub
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     */
    public void onPreLowerModified(
       ITypedElement element,
@@ -101,7 +110,9 @@ public class TypedElementEventsAdapter implements ITypedElementEventsSink
       // TODO Auto-generated method stub
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     */
    public void onLowerModified(
       ITypedElement element,
@@ -112,7 +123,9 @@ public class TypedElementEventsAdapter implements ITypedElementEventsSink
       // TODO Auto-generated method stub
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     */
    public void onPreUpperModified(
       ITypedElement element,
@@ -124,7 +137,9 @@ public class TypedElementEventsAdapter implements ITypedElementEventsSink
       // TODO Auto-generated method stub
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     */
    public void onUpperModified(
       ITypedElement element,
@@ -135,7 +150,9 @@ public class TypedElementEventsAdapter implements ITypedElementEventsSink
       // TODO Auto-generated method stub
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     */
    public void onPreRangeAdded(
       ITypedElement element,
@@ -146,7 +163,9 @@ public class TypedElementEventsAdapter implements ITypedElementEventsSink
       // TODO Auto-generated method stub
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     */
    public void onRangeAdded(
       ITypedElement element,
@@ -157,7 +176,9 @@ public class TypedElementEventsAdapter implements ITypedElementEventsSink
       // TODO Auto-generated method stub
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     */
    public void onPreRangeRemoved(
       ITypedElement element,
@@ -168,7 +189,9 @@ public class TypedElementEventsAdapter implements ITypedElementEventsSink
       // TODO Auto-generated method stub
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     */
    public void onRangeRemoved(
       ITypedElement element,
@@ -179,7 +202,9 @@ public class TypedElementEventsAdapter implements ITypedElementEventsSink
       // TODO Auto-generated method stub
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     */
    public void onPreOrderModified(
       ITypedElement element,
@@ -190,7 +215,9 @@ public class TypedElementEventsAdapter implements ITypedElementEventsSink
       // TODO Auto-generated method stub
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     */
    public void onOrderModified(
       ITypedElement element,
@@ -200,7 +227,9 @@ public class TypedElementEventsAdapter implements ITypedElementEventsSink
       // TODO Auto-generated method stub
    }
    
-   /**
+   
+
+/**
     * Fired when the collection type property is changed on the passed in
     * range.
     * @param element The type that owned the multilicity element

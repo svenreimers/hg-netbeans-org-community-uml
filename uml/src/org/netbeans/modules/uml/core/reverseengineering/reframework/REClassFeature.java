@@ -51,7 +51,9 @@ import org.netbeans.modules.uml.core.support.umlsupport.XMLManip;
 public class REClassFeature extends REClass implements IREClassFeature
 {
 
-    /**
+    
+
+/**
      * Retrieves the scope of the class element.  The scope of a feature
      * can be an instance or a classifier.
      * @return The scope.
@@ -63,7 +65,9 @@ public class REClassFeature extends REClass implements IREClassFeature
                   : ScopeKind.SK_INSTANCE;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.IREClassFeature#getType()
      */
     public String getType()
@@ -72,7 +76,9 @@ public class REClassFeature extends REClass implements IREClassFeature
         return null;
     }
 
-    /**
+    
+
+/**
      * Retrieves whether the class feature is a constant.
      * @return true if the feature is constant, false otherwise.
      */

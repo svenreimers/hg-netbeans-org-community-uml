@@ -46,22 +46,30 @@ package org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructur
 
 public interface IImplementation extends IRealization
 {
-	/**
+	
+
+/**
 	 * property ImplementingClassifier
 	*/
 	public IClassifier getImplementingClassifier();
 
-	/**
+	
+
+/**
 	 * property ImplementingClassifier
 	*/
 	public void setImplementingClassifier( IClassifier classifier );
 
-	/**
+	
+
+/**
 	 * property Contract
 	*/
 	public IClassifier getContract();
 
-	/**
+	
+
+/**
 	 * property Contract
 	*/
 	public void setContract( IClassifier value );

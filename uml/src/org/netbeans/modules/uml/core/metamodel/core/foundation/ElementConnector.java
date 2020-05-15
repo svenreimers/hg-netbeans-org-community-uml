@@ -51,6 +51,7 @@ import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure
 /**
  *
  */
+
 /**
  * ElementConnector is a specialized class who focuses on the
  * connection between XML elements, both the making of that
@@ -67,7 +68,9 @@ public class ElementConnector <Type extends IVersionableElement>
 		super();
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Adds newElement to this element, establishing the back pointer
 	 * connection between the two types.
@@ -104,7 +107,9 @@ public class ElementConnector <Type extends IVersionableElement>
             ContactManager.addMemberAndConnect(byID, newType, base, query,featureName, backPointer);
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Call this method when you need to remove an element
 	 * in base by id, but then need to detach this 
@@ -138,7 +143,9 @@ public class ElementConnector <Type extends IVersionableElement>
             contact.removeElementByID(xmiid, element, presenceQuery, backPointer);
         }
 
-	/**
+	
+
+/**
 	 * @param element
 	 * @param elem
 	 * @param query
@@ -154,7 +161,9 @@ public class ElementConnector <Type extends IVersionableElement>
             contact.removeElement(false,elemToEl, base, query, backPointer);
         }
 
-	/**
+	
+
+/**
 	 * @param element
 	 * @param newEle
 	 * @param attrName
@@ -175,7 +184,9 @@ public class ElementConnector <Type extends IVersionableElement>
                                             removeBackPointer);
 	}
 
-	/**
+	
+
+/**
 	 * 
 	 * This method should be called when the element to remove is
 	 * referenced by ID by the current element's XML node.

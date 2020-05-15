@@ -42,11 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : ObjectFlow.java
- * Created on : Sep 17, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.metamodel.common.commonactivities;
 
 import org.dom4j.Document;
@@ -60,7 +57,8 @@ import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure
 public class ObjectFlow extends ActivityEdge implements IObjectFlow
 {
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactivities.IObjectFlow#getEffect()
      */
     public int getEffect()
@@ -68,7 +66,9 @@ public class ObjectFlow extends ActivityEdge implements IObjectFlow
         return getObjectFlowEffectKind("effect");
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactivities.IObjectFlow#getIsMulticast()
      */
     public boolean getIsMulticast()
@@ -76,7 +76,9 @@ public class ObjectFlow extends ActivityEdge implements IObjectFlow
         return getBooleanAttributeValue("isMultiCast", false);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactivities.IObjectFlow#getIsMultiReceive()
      */
     public boolean getIsMultiReceive()
@@ -84,7 +86,9 @@ public class ObjectFlow extends ActivityEdge implements IObjectFlow
         return getBooleanAttributeValue("isMultiReceive", false);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactivities.IObjectFlow#getSelection()
      */
     public IBehavior getSelection()
@@ -93,7 +97,9 @@ public class ObjectFlow extends ActivityEdge implements IObjectFlow
             .retrieveSingleElementWithAttrID(this, "selection", IBehavior.class);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactivities.IObjectFlow#getTransformation()
      */
     public IBehavior getTransformation()
@@ -102,7 +108,9 @@ public class ObjectFlow extends ActivityEdge implements IObjectFlow
             .retrieveSingleElementWithAttrID(this, "transformation", IBehavior.class);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactivities.IObjectFlow#setEffect(int)
      */
     public void setEffect(int nKind)
@@ -110,7 +118,9 @@ public class ObjectFlow extends ActivityEdge implements IObjectFlow
         setObjectFlowEffectKind("effect", nKind);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactivities.IObjectFlow#setIsMulticast(boolean)
      */
     public void setIsMulticast(boolean value)
@@ -118,7 +128,9 @@ public class ObjectFlow extends ActivityEdge implements IObjectFlow
         setBooleanAttributeValue("isMultiCast", value);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactivities.IObjectFlow#setIsMultiReceive(boolean)
      */
     public void setIsMultiReceive(boolean value)
@@ -126,7 +138,9 @@ public class ObjectFlow extends ActivityEdge implements IObjectFlow
         setBooleanAttributeValue("isMultiReceive", value);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactivities.IObjectFlow#setSelection(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavior)
      */
     public void setSelection(IBehavior value)
@@ -134,7 +148,9 @@ public class ObjectFlow extends ActivityEdge implements IObjectFlow
         setElement(value, "selection");
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactivities.IObjectFlow#setTransformation(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavior)
      */
     public void setTransformation(IBehavior value)

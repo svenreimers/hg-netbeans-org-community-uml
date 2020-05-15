@@ -43,6 +43,8 @@
  */
 
 
+
+
 /*
  * Created on Jun 18, 2003
  *
@@ -126,7 +128,9 @@ public class JAssociateTable extends JTable
 	
 	private class AssocTableCellRenderer extends DefaultTableCellRenderer implements TableCellRenderer
 	{
-		/* (non-Javadoc)
+		
+
+/* (non-Javadoc)
 		 * @see javax.swing.table.TableCellRenderer#getTableCellRendererComponent(javax.swing.JTable, java.lang.Object, boolean, boolean, int, int)
 		 */
 		public Component getTableCellRendererComponent(JTable table, 
@@ -178,7 +182,9 @@ public class JAssociateTable extends JTable
 	}
 	public class AssocPopupListener extends MouseAdapter
 	{
-		/**
+		
+
+/**
 		 * 
 		 */
 		public AssocPopupListener()
@@ -202,7 +208,9 @@ public class JAssociateTable extends JTable
 		boolean focusChange = false;
 		AssociateDialogUI m_UI = null;
 
-		/**
+		
+
+/**
 		 * 
 		 */
 		public AssocTableCellEditor()
@@ -215,7 +223,9 @@ public class JAssociateTable extends JTable
 			m_UI = ui;
 		}
 
-		/**
+		
+
+/**
 		 * TreeTableCellEditor implementation. Component returned is the
 		 * JTree.
 		 */
@@ -227,7 +237,9 @@ public class JAssociateTable extends JTable
 			Component retObj = null;
 			return retObj;
 		}
-		/* (non-Javadoc)
+		
+
+/* (non-Javadoc)
 		 * @see javax.swing.CellEditor#getCellEditorValue()
 		 */
 		public Object getCellEditorValue()

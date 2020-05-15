@@ -42,27 +42,22 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File         : IProgressIndicator.java
- * Version      : 1.0
- * Description  : Interface for a progress indicator.
- * Author       : Darshan
- */
+
+
 package org.netbeans.modules.uml.integration.ide.dialogs;
 
-/**
- *  Interface for a progress indicator (from Trey Spiva's ProgressIndicator
- * code).
- *
- */
+
+
 public interface IProgressIndicator {
-    /**
+    
+/**
      *  Shows the progress indicator. This method should exit silently if the
      * progress indicator is already displayed.
      */
     public void show();
 
-    /**
+    
+/**
      * Sets the maximum range of the progress bar.  The maximum value is used to
      * detimine the position of the progress bar. Increasing this range when
      * visible typically can cause the progress indicator to move backwards
@@ -72,33 +67,43 @@ public interface IProgressIndicator {
      */
     public void setMaxRange(int value);
 
-    /**
+    
+
+/**
      * Returns the maximum range of the progress bar.
      * @return The maximum value.
      */
     public int getMaxRange();
 
-    /**
+    
+
+/**
      * Sets the minimum range of the progress bar.  The minimum value is used to
      * detimine the position of the progress. 
      * @param value The minimum value.
      */
     public void setMinRange(int value);
 
-    /**
+    
+
+/**
      * Sets the current progress information.
      * @param msg A message to be displayed to the user.
      * @param rangeCompleted The value to indicate the progress.
      */
     public void setProgress(String msg, int rangeCompleted);
 
-    /**
+    
+
+/**
      *  Increments the progress.
      * @param msg A message to be displayed to the user.
      */
     public void incrementProgress(String msg);
 
-    /**
+    
+
+/**
      *  Closes the progress indicator. This should fail silently if the progress
      * indicator has not been displayed yet, or has already been closed.
      */

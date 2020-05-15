@@ -43,11 +43,8 @@
  */
 
 
-/*
- * File       : OpReturnStateHandler.java
- * Created on : Dec 11, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.statehandlers;
 
 import org.dom4j.Node;
@@ -60,7 +57,8 @@ public class OpReturnStateHandler extends ParameterStateHandler
 {
     private Node m_OwnerNode = null;
 
-    /**
+    
+/**
      * @param language
      */
     public OpReturnStateHandler(String language)
@@ -69,7 +67,9 @@ public class OpReturnStateHandler extends ParameterStateHandler
         setTypeState(true);
     }
 
-    /**
+    
+
+/**
      * @param language
      * @param direction
      */

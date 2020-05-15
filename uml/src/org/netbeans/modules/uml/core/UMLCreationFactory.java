@@ -166,7 +166,9 @@ public class UMLCreationFactory extends CreationFactory implements IUMLCreationF
       return (T) create(typeName, outer);
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.IUMLCreationFactory#createClass(java.lang.Object)
     */
    public IClass createClass(Object outer)
@@ -175,7 +177,9 @@ public class UMLCreationFactory extends CreationFactory implements IUMLCreationF
       return obj instanceof IClass ? (IClass) obj : null;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.IUMLCreationFactory#createGeneralization(java.lang.Object)
     */
    public IGeneralization createGeneralization(Object outer)
@@ -184,7 +188,9 @@ public class UMLCreationFactory extends CreationFactory implements IUMLCreationF
       return obj instanceof IGeneralization ? (IGeneralization) obj : null;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.IUMLCreationFactory#createMultiplicity(java.lang.Object)
     */
    public IMultiplicity createMultiplicity(Object outer)
@@ -193,7 +199,9 @@ public class UMLCreationFactory extends CreationFactory implements IUMLCreationF
       return obj instanceof IMultiplicity ? (IMultiplicity) obj : null;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.IUMLCreationFactory#createMultiplicityRange(java.lang.Object)
     */
    public IMultiplicityRange createMultiplicityRange(Object outer)
@@ -202,7 +210,9 @@ public class UMLCreationFactory extends CreationFactory implements IUMLCreationF
       return obj instanceof IMultiplicityRange ? (IMultiplicityRange) obj : null;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.IUMLCreationFactory#createPackage(java.lang.Object)
     */
    public IPackage createPackage(Object outer)
@@ -211,7 +221,9 @@ public class UMLCreationFactory extends CreationFactory implements IUMLCreationF
       return obj instanceof IPackage ? (IPackage) obj : null;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.IUMLCreationFactory#createElementImport(java.lang.Object)
     */
    public IElementImport createElementImport(Object outer)
@@ -220,7 +232,9 @@ public class UMLCreationFactory extends CreationFactory implements IUMLCreationF
       return obj instanceof IElementImport ? (IElementImport) obj : null;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.IUMLCreationFactory#createPackageImport(java.lang.Object)
     */
    public IPackageImport createPackageImport(Object outer)
@@ -229,7 +243,9 @@ public class UMLCreationFactory extends CreationFactory implements IUMLCreationF
       return obj instanceof IPackageImport ? (IPackageImport) obj : null;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.IUMLCreationFactory#createExpression(java.lang.Object)
     */
    public IExpression createExpression(Object outer)
@@ -238,7 +254,9 @@ public class UMLCreationFactory extends CreationFactory implements IUMLCreationF
       return obj instanceof IExpression ? (IExpression) obj : null;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.IUMLCreationFactory#createConstraint(java.lang.Object)
     */
    public IConstraint createConstraint(Object outer)
@@ -247,7 +265,9 @@ public class UMLCreationFactory extends CreationFactory implements IUMLCreationF
       return obj instanceof IConstraint ? (IConstraint) obj : null;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.IUMLCreationFactory#createParameter(java.lang.Object)
     */
    public IParameter createParameter(Object outer)
@@ -256,7 +276,9 @@ public class UMLCreationFactory extends CreationFactory implements IUMLCreationF
       return obj instanceof IParameter ? (IParameter) obj : null;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.IUMLCreationFactory#createOperation(java.lang.Object)
     */
    public IOperation createOperation(Object outer)
@@ -265,7 +287,9 @@ public class UMLCreationFactory extends CreationFactory implements IUMLCreationF
       return obj instanceof IOperation ? (IOperation) obj : null;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.IUMLCreationFactory#createAttribute(java.lang.Object)
     */
    public IAttribute createAttribute(Object outer)
@@ -274,7 +298,9 @@ public class UMLCreationFactory extends CreationFactory implements IUMLCreationF
       return obj instanceof IAttribute ? (IAttribute) obj : null;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.IUMLCreationFactory#createDataType(java.lang.Object)
     */
    public IDataType createDataType(Object outer)
@@ -283,7 +309,9 @@ public class UMLCreationFactory extends CreationFactory implements IUMLCreationF
       return obj instanceof IDataType ? (IDataType) obj : null;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.IUMLCreationFactory#createPrimitiveType(java.lang.Object)
     */
    public IPrimitiveType createPrimitiveType(Object outer)
@@ -292,7 +320,9 @@ public class UMLCreationFactory extends CreationFactory implements IUMLCreationF
       return obj instanceof IPrimitiveType ? (IPrimitiveType) obj : null;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.IUMLCreationFactory#createEnumeration(java.lang.Object)
     */
    public IEnumeration createEnumeration(Object outer)
@@ -301,7 +331,9 @@ public class UMLCreationFactory extends CreationFactory implements IUMLCreationF
       return obj instanceof IEnumeration ? (IEnumeration) obj : null;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.IUMLCreationFactory#createEnumerationLiteral(java.lang.Object)
     */
    public IEnumerationLiteral createEnumerationLiteral(Object outer)
@@ -310,7 +342,9 @@ public class UMLCreationFactory extends CreationFactory implements IUMLCreationF
       return obj instanceof IEnumerationLiteral ? (IEnumerationLiteral) obj : null;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.IUMLCreationFactory#createAssociationEnd(java.lang.Object)
     */
    public IAssociationEnd createAssociationEnd(Object outer)
@@ -319,7 +353,9 @@ public class UMLCreationFactory extends CreationFactory implements IUMLCreationF
       return obj instanceof IAssociationEnd ? (IAssociationEnd) obj : null;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.IUMLCreationFactory#createAssociation(java.lang.Object)
     */
    public IAssociation createAssociation(Object outer)
@@ -328,7 +364,9 @@ public class UMLCreationFactory extends CreationFactory implements IUMLCreationF
       return obj instanceof IAssociation ? (IAssociation) obj : null;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.IUMLCreationFactory#createNavigableEnd(java.lang.Object)
     */
    public INavigableEnd createNavigableEnd(Object outer)
@@ -337,7 +375,9 @@ public class UMLCreationFactory extends CreationFactory implements IUMLCreationF
       return obj instanceof INavigableEnd ? (INavigableEnd) obj : null;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.IUMLCreationFactory#createDependency(java.lang.Object)
     */
    public IDependency createDependency(Object outer)
@@ -346,7 +386,9 @@ public class UMLCreationFactory extends CreationFactory implements IUMLCreationF
       return obj instanceof IDependency ? (IDependency) obj : null;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.IUMLCreationFactory#createAbstraction(java.lang.Object)
     */
    public IAbstraction createAbstraction(Object outer)
@@ -355,7 +397,9 @@ public class UMLCreationFactory extends CreationFactory implements IUMLCreationF
       return obj instanceof IAbstraction ? (IAbstraction) obj : null;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.IUMLCreationFactory#createUsage(java.lang.Object)
     */
    public IUsage createUsage(Object outer)
@@ -364,7 +408,9 @@ public class UMLCreationFactory extends CreationFactory implements IUMLCreationF
       return obj instanceof IUsage ? (IUsage) obj : null;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.IUMLCreationFactory#createPermission(java.lang.Object)
     */
    public IPermission createPermission(Object outer)
@@ -373,7 +419,9 @@ public class UMLCreationFactory extends CreationFactory implements IUMLCreationF
       return obj instanceof IPermission ? (IPermission) obj : null;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.IUMLCreationFactory#createRealization(java.lang.Object)
     */
    public IRealization createRealization(Object outer)
@@ -382,7 +430,9 @@ public class UMLCreationFactory extends CreationFactory implements IUMLCreationF
       return obj instanceof IRealization ? (IRealization) obj : null;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.IUMLCreationFactory#createCollaboration(java.lang.Object)
     */
    public ICollaboration createCollaboration(Object outer)
@@ -391,7 +441,9 @@ public class UMLCreationFactory extends CreationFactory implements IUMLCreationF
       return obj instanceof ICollaboration ? (ICollaboration) obj : null;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.IUMLCreationFactory#createPart(java.lang.Object)
     */
    public IPart createPart(Object outer)
@@ -400,7 +452,9 @@ public class UMLCreationFactory extends CreationFactory implements IUMLCreationF
       return obj instanceof IPart ? (IPart) obj : null;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.IUMLCreationFactory#createConnectorEnd(java.lang.Object)
     */
    public IConnectorEnd createConnectorEnd(Object outer)
@@ -409,7 +463,9 @@ public class UMLCreationFactory extends CreationFactory implements IUMLCreationF
       return obj instanceof IConnectorEnd ? (IConnectorEnd) obj : null;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.IUMLCreationFactory#createConnector(java.lang.Object)
     */
    public IConnector createConnector(Object outer)
@@ -418,7 +474,9 @@ public class UMLCreationFactory extends CreationFactory implements IUMLCreationF
       return obj instanceof IConnector ? (IConnector) obj : null;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.IUMLCreationFactory#createRoleBinding(java.lang.Object)
     */
    public IRoleBinding createRoleBinding(Object outer)
@@ -427,7 +485,9 @@ public class UMLCreationFactory extends CreationFactory implements IUMLCreationF
       return obj instanceof IRoleBinding ? (IRoleBinding) obj : null;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.IUMLCreationFactory#createCollaborationOccurrence(java.lang.Object)
     */
    public ICollaborationOccurrence createCollaborationOccurrence(Object outer)
@@ -436,7 +496,9 @@ public class UMLCreationFactory extends CreationFactory implements IUMLCreationF
       return obj instanceof ICollaborationOccurrence ? (ICollaborationOccurrence) obj : null;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.IUMLCreationFactory#createImplementation(java.lang.Object)
     */
    public IImplementation createImplementation(Object outer)
@@ -445,7 +507,9 @@ public class UMLCreationFactory extends CreationFactory implements IUMLCreationF
       return obj instanceof IImplementation ? (IImplementation) obj : null;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.IUMLCreationFactory#createInterface(java.lang.Object)
     */
    public IInterface createInterface(Object outer)
@@ -454,7 +518,9 @@ public class UMLCreationFactory extends CreationFactory implements IUMLCreationF
       return obj instanceof IInterface ? (IInterface) obj : null;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.IUMLCreationFactory#createPort(java.lang.Object)
     */
    public IPort createPort(Object outer)
@@ -463,7 +529,9 @@ public class UMLCreationFactory extends CreationFactory implements IUMLCreationF
       return obj instanceof IPort ? (IPort) obj : null;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.IUMLCreationFactory#createComponent(java.lang.Object)
     */
    public IComponent createComponent(Object outer)
@@ -472,7 +540,9 @@ public class UMLCreationFactory extends CreationFactory implements IUMLCreationF
       return obj instanceof IComponent ? (IComponent) obj : null;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.IUMLCreationFactory#createStateMachine(java.lang.Object)
     */
    public IStateMachine createStateMachine(Object outer)
@@ -481,7 +551,9 @@ public class UMLCreationFactory extends CreationFactory implements IUMLCreationF
       return obj instanceof IStateMachine ? (IStateMachine) obj : null;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.IUMLCreationFactory#createModel(java.lang.Object)
     */
    public IModel createModel(Object outer)
@@ -490,7 +562,9 @@ public class UMLCreationFactory extends CreationFactory implements IUMLCreationF
       return obj instanceof IModel ? (IModel) obj : null;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.IUMLCreationFactory#createProject(java.lang.Object)
     */
    public IProject createProject(Object outer)
@@ -499,7 +573,9 @@ public class UMLCreationFactory extends CreationFactory implements IUMLCreationF
       return obj instanceof IProject ? (IProject) obj : null;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.IUMLCreationFactory#createFlow(java.lang.Object)
     */
    public IFlow createFlow(Object outer)
@@ -508,7 +584,9 @@ public class UMLCreationFactory extends CreationFactory implements IUMLCreationF
       return obj instanceof IFlow ? (IFlow) obj : null;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.IUMLCreationFactory#createAssociationClass(java.lang.Object)
     */
    public IAssociationClass createAssociationClass(Object outer)
@@ -517,7 +595,9 @@ public class UMLCreationFactory extends CreationFactory implements IUMLCreationF
       return obj instanceof IAssociationClass ? (IAssociationClass) obj : null;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.IUMLCreationFactory#createComment(java.lang.Object)
     */
    public IComment createComment(Object outer)
@@ -526,7 +606,9 @@ public class UMLCreationFactory extends CreationFactory implements IUMLCreationF
       return obj instanceof IComment ? (IComment) obj : null;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.IUMLCreationFactory#createSignal(java.lang.Object)
     */
    public ISignal createSignal(Object outer)
@@ -535,7 +617,9 @@ public class UMLCreationFactory extends CreationFactory implements IUMLCreationF
       return obj instanceof ISignal ? (ISignal) obj : null;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.IUMLCreationFactory#createException(java.lang.Object)
     */
    public IUMLException createException(Object outer)
@@ -544,7 +628,9 @@ public class UMLCreationFactory extends CreationFactory implements IUMLCreationF
       return obj instanceof IUMLException ? (IUMLException) obj : null;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.IUMLCreationFactory#createReception(java.lang.Object)
     */
    public IReception createReception(Object outer)
@@ -553,7 +639,9 @@ public class UMLCreationFactory extends CreationFactory implements IUMLCreationF
       return obj instanceof IReception ? (IReception) obj : null;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.IUMLCreationFactory#createArgument(java.lang.Object)
     */
    public IArgument createArgument(Object outer)
@@ -562,7 +650,9 @@ public class UMLCreationFactory extends CreationFactory implements IUMLCreationF
       return obj instanceof IArgument ? (IArgument) obj : null;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.IUMLCreationFactory#createSignalEvent(java.lang.Object)
     */
    public ISignalEvent createSignalEvent(Object outer)
@@ -571,7 +661,9 @@ public class UMLCreationFactory extends CreationFactory implements IUMLCreationF
       return obj instanceof ISignalEvent ? (ISignalEvent) obj : null;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.IUMLCreationFactory#createCallEvent(java.lang.Object)
     */
    public ICallEvent createCallEvent(Object outer)
@@ -580,7 +672,9 @@ public class UMLCreationFactory extends CreationFactory implements IUMLCreationF
       return obj instanceof ICallEvent ? (ICallEvent) obj : null;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.IUMLCreationFactory#createTimeEvent(java.lang.Object)
     */
    public ITimeEvent createTimeEvent(Object outer)
@@ -589,7 +683,9 @@ public class UMLCreationFactory extends CreationFactory implements IUMLCreationF
       return obj instanceof ITimeEvent ? (ITimeEvent) obj : null;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.IUMLCreationFactory#createChangeEvent(java.lang.Object)
     */
    public IChangeEvent createChangeEvent(Object outer)
@@ -598,7 +694,9 @@ public class UMLCreationFactory extends CreationFactory implements IUMLCreationF
       return obj instanceof IChangeEvent ? (IChangeEvent) obj : null;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.IUMLCreationFactory#createActionSequence(java.lang.Object)
     */
    public IActionSequence createActionSequence(Object outer)
@@ -607,7 +705,9 @@ public class UMLCreationFactory extends CreationFactory implements IUMLCreationF
       return obj instanceof IActionSequence ? (IActionSequence) obj : null;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.IUMLCreationFactory#createUninterpretedAction(java.lang.Object)
     */
    public IUninterpretedAction createUninterpretedAction(Object outer)
@@ -616,7 +716,9 @@ public class UMLCreationFactory extends CreationFactory implements IUMLCreationF
       return obj instanceof IUninterpretedAction ? (IUninterpretedAction) obj : null;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.IUMLCreationFactory#createTerminateAction(java.lang.Object)
     */
    public ITerminateAction createTerminateAction(Object outer)
@@ -625,7 +727,9 @@ public class UMLCreationFactory extends CreationFactory implements IUMLCreationF
       return obj instanceof ITerminateAction ? (ITerminateAction) obj : null;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.IUMLCreationFactory#createCreateAction(java.lang.Object)
     */
    public ICreateAction createCreateAction(Object outer)
@@ -634,7 +738,9 @@ public class UMLCreationFactory extends CreationFactory implements IUMLCreationF
       return obj instanceof ICreateAction ? (ICreateAction) obj : null;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.IUMLCreationFactory#createReturnAction(java.lang.Object)
     */
    public IReturnAction createReturnAction(Object outer)
@@ -643,7 +749,9 @@ public class UMLCreationFactory extends CreationFactory implements IUMLCreationF
       return obj instanceof IReturnAction ? (IReturnAction) obj : null;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.IUMLCreationFactory#createCallAction(java.lang.Object)
     */
    public ICallAction createCallAction(Object outer)
@@ -652,7 +760,9 @@ public class UMLCreationFactory extends CreationFactory implements IUMLCreationF
       return obj instanceof ICallAction ? (ICallAction) obj : null;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.IUMLCreationFactory#createDestroyAction(java.lang.Object)
     */
    public IDestroyAction createDestroyAction(Object outer)
@@ -661,7 +771,9 @@ public class UMLCreationFactory extends CreationFactory implements IUMLCreationF
       return obj instanceof IDestroyAction ? (IDestroyAction) obj : null;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.IUMLCreationFactory#createSendAction(java.lang.Object)
     */
    public ISendAction createSendAction(Object outer)
@@ -670,7 +782,9 @@ public class UMLCreationFactory extends CreationFactory implements IUMLCreationF
       return obj instanceof ISendAction ? (ISendAction) obj : null;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.IUMLCreationFactory#createAssignmentAction(java.lang.Object)
     */
    public IAssignmentAction createAssignmentAction(Object outer)
@@ -679,7 +793,9 @@ public class UMLCreationFactory extends CreationFactory implements IUMLCreationF
       return obj instanceof IAssignmentAction ? (IAssignmentAction) obj : null;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.IUMLCreationFactory#createActivity(java.lang.Object)
     */
    public IActivity createActivity(Object outer)
@@ -688,7 +804,9 @@ public class UMLCreationFactory extends CreationFactory implements IUMLCreationF
       return obj instanceof IActivity ? (IActivity) obj : null;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.IUMLCreationFactory#createObjectNode(java.lang.Object)
     */
    public IObjectNode createObjectNode(Object outer)
@@ -697,7 +815,9 @@ public class UMLCreationFactory extends CreationFactory implements IUMLCreationF
       return obj instanceof IObjectNode ? (IObjectNode) obj : null;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.IUMLCreationFactory#createControlFlow(java.lang.Object)
     */
    public IControlFlow createControlFlow(Object outer)
@@ -706,7 +826,9 @@ public class UMLCreationFactory extends CreationFactory implements IUMLCreationF
       return obj instanceof IControlFlow ? (IControlFlow) obj : null;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.IUMLCreationFactory#createObjectFlow(java.lang.Object)
     */
    public IObjectFlow createObjectFlow(Object outer)
@@ -715,7 +837,9 @@ public class UMLCreationFactory extends CreationFactory implements IUMLCreationF
       return obj instanceof IObjectFlow ? (IObjectFlow) obj : null;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.IUMLCreationFactory#createInitialNode(java.lang.Object)
     */
    public IInitialNode createInitialNode(Object outer)
@@ -724,7 +848,9 @@ public class UMLCreationFactory extends CreationFactory implements IUMLCreationF
       return obj instanceof IInitialNode ? (IInitialNode) obj : null;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.IUMLCreationFactory#createForkNode(java.lang.Object)
     */
    public IForkNode createForkNode(Object outer)
@@ -733,7 +859,9 @@ public class UMLCreationFactory extends CreationFactory implements IUMLCreationF
       return obj instanceof IForkNode ? (IForkNode) obj : null;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.IUMLCreationFactory#createDecisionNode(java.lang.Object)
     */
    public IDecisionNode createDecisionNode(Object outer)
@@ -742,7 +870,9 @@ public class UMLCreationFactory extends CreationFactory implements IUMLCreationF
       return obj instanceof IDecisionNode ? (IDecisionNode) obj : null;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.IUMLCreationFactory#createActivityFinalNode(java.lang.Object)
     */
    public IActivityFinalNode createActivityFinalNode(Object outer)
@@ -751,7 +881,9 @@ public class UMLCreationFactory extends CreationFactory implements IUMLCreationF
       return obj instanceof IActivityFinalNode ? (IActivityFinalNode) obj : null;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.IUMLCreationFactory#createFlowFinalNode(java.lang.Object)
     */
    public IFlowFinalNode createFlowFinalNode(Object outer)
@@ -760,7 +892,9 @@ public class UMLCreationFactory extends CreationFactory implements IUMLCreationF
       return obj instanceof IFlowFinalNode ? (IFlowFinalNode) obj : null;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.IUMLCreationFactory#createJoinNode(java.lang.Object)
     */
    public IJoinNode createJoinNode(Object outer)
@@ -769,7 +903,9 @@ public class UMLCreationFactory extends CreationFactory implements IUMLCreationF
       return obj instanceof IJoinNode ? (IJoinNode) obj : null;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.IUMLCreationFactory#createMergeNode(java.lang.Object)
     */
    public IMergeNode createMergeNode(Object outer)
@@ -778,7 +914,9 @@ public class UMLCreationFactory extends CreationFactory implements IUMLCreationF
       return obj instanceof IMergeNode ? (IMergeNode) obj : null;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.IUMLCreationFactory#createActivityPartition(java.lang.Object)
     */
    public IActivityPartition createActivityPartition(Object outer)
@@ -787,7 +925,9 @@ public class UMLCreationFactory extends CreationFactory implements IUMLCreationF
       return obj instanceof IActivityPartition ? (IActivityPartition) obj : null;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.IUMLCreationFactory#createInterruptibleActivityRegion(java.lang.Object)
     */
    public IInterruptibleActivityRegion createInterruptibleActivityRegion(Object outer)
@@ -796,7 +936,9 @@ public class UMLCreationFactory extends CreationFactory implements IUMLCreationF
       return obj instanceof IInterruptibleActivityRegion ? (IInterruptibleActivityRegion) obj : null;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.IUMLCreationFactory#createState(java.lang.Object)
     */
    public IState createState(Object outer)
@@ -805,7 +947,9 @@ public class UMLCreationFactory extends CreationFactory implements IUMLCreationF
       return obj instanceof IState ? (IState) obj : null;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.IUMLCreationFactory#createTimeSignal(java.lang.Object)
     */
    public ITimeSignal createTimeSignal(Object outer)
@@ -814,7 +958,9 @@ public class UMLCreationFactory extends CreationFactory implements IUMLCreationF
       return obj instanceof ITimeSignal ? (ITimeSignal) obj : null;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.IUMLCreationFactory#createChangeSignal(java.lang.Object)
     */
    public IChangeSignal createChangeSignal(Object outer)
@@ -823,7 +969,9 @@ public class UMLCreationFactory extends CreationFactory implements IUMLCreationF
       return obj instanceof IChangeSignal ? (IChangeSignal) obj : null;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.IUMLCreationFactory#createInteractionOperand(java.lang.Object)
     */
    public IInteractionOperand createInteractionOperand(Object outer)
@@ -832,7 +980,9 @@ public class UMLCreationFactory extends CreationFactory implements IUMLCreationF
       return obj instanceof IInteractionOperand ? (IInteractionOperand) obj : null;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.IUMLCreationFactory#createCombinedFragment(java.lang.Object)
     */
    public ICombinedFragment createCombinedFragment(Object outer)
@@ -841,7 +991,9 @@ public class UMLCreationFactory extends CreationFactory implements IUMLCreationF
       return obj instanceof ICombinedFragment ? (ICombinedFragment) obj : null;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.IUMLCreationFactory#createInteractionOccurrence(java.lang.Object)
     */
    public IInteractionOccurrence createInteractionOccurrence(Object outer)
@@ -850,7 +1002,9 @@ public class UMLCreationFactory extends CreationFactory implements IUMLCreationF
       return obj instanceof IInteractionOccurrence ? (IInteractionOccurrence) obj : null;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.IUMLCreationFactory#createAtomicFragment(java.lang.Object)
     */
    public IAtomicFragment createAtomicFragment(Object outer)
@@ -859,7 +1013,9 @@ public class UMLCreationFactory extends CreationFactory implements IUMLCreationF
       return obj instanceof IAtomicFragment ? (IAtomicFragment) obj : null;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.IUMLCreationFactory#createInteractionConstraint(java.lang.Object)
     */
    public IInteractionConstraint createInteractionConstraint(Object outer)
@@ -868,7 +1024,9 @@ public class UMLCreationFactory extends CreationFactory implements IUMLCreationF
       return obj instanceof IInteractionConstraint ? (IInteractionConstraint) obj : null;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.IUMLCreationFactory#createInteraction(java.lang.Object)
     */
    public IInteraction createInteraction(Object outer)
@@ -877,7 +1035,9 @@ public class UMLCreationFactory extends CreationFactory implements IUMLCreationF
       return obj instanceof IInteraction ? (IInteraction) obj : null;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.IUMLCreationFactory#createMessage(java.lang.Object)
     */
    public IMessage createMessage(Object outer)
@@ -886,7 +1046,9 @@ public class UMLCreationFactory extends CreationFactory implements IUMLCreationF
       return obj instanceof IMessage ? (IMessage) obj : null;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.IUMLCreationFactory#createPartDecomposition(java.lang.Object)
     */
    public IPartDecomposition createPartDecomposition(Object outer)
@@ -895,7 +1057,9 @@ public class UMLCreationFactory extends CreationFactory implements IUMLCreationF
       return obj instanceof IPartDecomposition ? (IPartDecomposition) obj : null;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.IUMLCreationFactory#createLifeline(java.lang.Object)
     */
    public ILifeline createLifeline(Object outer)
@@ -904,7 +1068,9 @@ public class UMLCreationFactory extends CreationFactory implements IUMLCreationF
       return obj instanceof ILifeline ? (ILifeline) obj : null;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.IUMLCreationFactory#createGate(java.lang.Object)
     */
    public IGate createGate(Object outer)
@@ -913,7 +1079,9 @@ public class UMLCreationFactory extends CreationFactory implements IUMLCreationF
       return obj instanceof IGate ? (IGate) obj : null;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.IUMLCreationFactory#createInterGateConnector(java.lang.Object)
     */
    public IInterGateConnector createInterGateConnector(Object outer)
@@ -922,7 +1090,9 @@ public class UMLCreationFactory extends CreationFactory implements IUMLCreationF
       return obj instanceof IInterGateConnector ? (IInterGateConnector) obj : null;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.IUMLCreationFactory#createTransition(java.lang.Object)
     */
    public ITransition createTransition(Object outer)
@@ -931,7 +1101,9 @@ public class UMLCreationFactory extends CreationFactory implements IUMLCreationF
       return obj instanceof ITransition ? (ITransition) obj : null;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.IUMLCreationFactory#createConnectionPoint(java.lang.Object)
     */
    public IUMLConnectionPoint createConnectionPoint(Object outer)
@@ -940,7 +1112,9 @@ public class UMLCreationFactory extends CreationFactory implements IUMLCreationF
       return obj instanceof IUMLConnectionPoint ? (IUMLConnectionPoint) obj : null;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.IUMLCreationFactory#createPseudoState(java.lang.Object)
     */
    public IPseudoState createPseudoState(Object outer)
@@ -949,7 +1123,9 @@ public class UMLCreationFactory extends CreationFactory implements IUMLCreationF
       return obj instanceof IPseudoState ? (IPseudoState) obj : null;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.IUMLCreationFactory#createFinalState(java.lang.Object)
     */
    public IFinalState createFinalState(Object outer)
@@ -958,7 +1134,9 @@ public class UMLCreationFactory extends CreationFactory implements IUMLCreationF
       return obj instanceof IFinalState ? (IFinalState) obj : null;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.IUMLCreationFactory#createProtocolConformance(java.lang.Object)
     */
    public IProtocolConformance createProtocolConformance(Object outer)
@@ -967,7 +1145,9 @@ public class UMLCreationFactory extends CreationFactory implements IUMLCreationF
       return obj instanceof IProtocolConformance ? (IProtocolConformance) obj : null;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.IUMLCreationFactory#createAggregation(java.lang.Object)
     */
    public IAggregation createAggregation(Object outer)
@@ -976,7 +1156,9 @@ public class UMLCreationFactory extends CreationFactory implements IUMLCreationF
       return obj instanceof IAggregation ? (IAggregation) obj : null;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.IUMLCreationFactory#createIncrement(java.lang.Object)
     */
    public IIncrement createIncrement(Object outer)
@@ -985,7 +1167,9 @@ public class UMLCreationFactory extends CreationFactory implements IUMLCreationF
       return obj instanceof IIncrement ? (IIncrement) obj : null;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.IUMLCreationFactory#createDelegationConnector(java.lang.Object)
     */
    public IDelegationConnector createDelegationConnector(Object outer)
@@ -994,7 +1178,9 @@ public class UMLCreationFactory extends CreationFactory implements IUMLCreationF
       return obj instanceof IDelegationConnector ? (IDelegationConnector) obj : null;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.IUMLCreationFactory#createAssemblyConnector(java.lang.Object)
     */
    public IAssemblyConnector createAssemblyConnector(Object outer)
@@ -1003,7 +1189,9 @@ public class UMLCreationFactory extends CreationFactory implements IUMLCreationF
       return obj instanceof IAssemblyConnector ? (IAssemblyConnector) obj : null;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.IUMLCreationFactory#createNode(java.lang.Object)
     */
    public INode createNode(Object outer)
@@ -1012,7 +1200,9 @@ public class UMLCreationFactory extends CreationFactory implements IUMLCreationF
       return obj instanceof INode ? (INode) obj : null;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.IUMLCreationFactory#createArtifact(java.lang.Object)
     */
    public IArtifact createArtifact(Object outer)
@@ -1021,7 +1211,9 @@ public class UMLCreationFactory extends CreationFactory implements IUMLCreationF
       return obj instanceof IArtifact ? (IArtifact) obj : null;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.IUMLCreationFactory#createDeployment(java.lang.Object)
     */
    public IDeployment createDeployment(Object outer)
@@ -1030,7 +1222,9 @@ public class UMLCreationFactory extends CreationFactory implements IUMLCreationF
       return obj instanceof IDeployment ? (IDeployment) obj : null;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.IUMLCreationFactory#createDeploymentSpecification(java.lang.Object)
     */
    public IDeploymentSpecification createDeploymentSpecification(Object outer)
@@ -1039,7 +1233,9 @@ public class UMLCreationFactory extends CreationFactory implements IUMLCreationF
       return obj instanceof IDeploymentSpecification ? (IDeploymentSpecification) obj : null;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.IUMLCreationFactory#createSubsystem(java.lang.Object)
     */
    public ISubsystem createSubsystem(Object outer)
@@ -1048,7 +1244,9 @@ public class UMLCreationFactory extends CreationFactory implements IUMLCreationF
       return obj instanceof ISubsystem ? (ISubsystem) obj : null;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.IUMLCreationFactory#createTaggedValue(java.lang.Object)
     */
    public ITaggedValue createTaggedValue(Object outer)
@@ -1057,7 +1255,9 @@ public class UMLCreationFactory extends CreationFactory implements IUMLCreationF
       return obj instanceof ITaggedValue ? (ITaggedValue) obj : null;
    }
 
-   /**
+   
+
+/**
     *
     * Retrieves an IUMLCreationFactory interface off the current product
     *
@@ -1072,7 +1272,9 @@ public class UMLCreationFactory extends CreationFactory implements IUMLCreationF
       return prod != null ? prod.getCreationFactory() : null;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.IUMLCreationFactory#createActor(java.lang.Object)
     */
    public IActor createActor(Object outer)
@@ -1080,7 +1282,9 @@ public class UMLCreationFactory extends CreationFactory implements IUMLCreationF
       return createType("Actor", outer);
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.IUMLCreationFactory#createProtocolStateMachine(java.lang.Object)
     */
    public IProtocolStateMachine createProtocolStateMachine(Object outer)

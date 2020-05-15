@@ -71,6 +71,7 @@ import org.netbeans.modules.uml.ui.swing.treetable.JTreeTable;
 import org.netbeans.modules.uml.ui.swing.treetable.PropertyValueCellRenderer;
 import org.netbeans.modules.uml.ui.swing.treetable.TreeTableModel;
 
+
 /**
  *
  * 
@@ -81,7 +82,8 @@ public class JNavigationTreeTable extends JTreeTable
 	private CommonResourceManager m_Manager = CommonResourceManager.instance();
 	private SwingNavigationDialog m_Parent = null;
 	
-	/**
+	
+/**
 	 * 
 	 */
 	public JNavigationTreeTable(TreeTableModel model)

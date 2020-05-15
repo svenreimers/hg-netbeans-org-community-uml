@@ -42,12 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File         : ProductProjectManager.java
- * Version      : 1.2
- * Description  : Tracks and manages open Describe projects
- * Author       : Ashish
- */
+
+
 package org.netbeans.modules.uml.integration.ide;
 
 import java.io.File;
@@ -80,17 +76,8 @@ import org.netbeans.modules.uml.ui.swing.projecttree.DesignCenterSwingModel;
 import org.netbeans.modules.uml.ui.swing.projecttree.ISwingProjectTreeModel;
 import org.netbeans.modules.uml.ui.swing.projecttree.JProjectTree;
 
-/**
- *  Tracks and manages open Describe projects.
- *
- * Revision History
- * No.  Date        Who         What
- * ---  ----        ---         ----
- *   1  2002-05-03  Sumitabh    Added new methods displayInsertProjectDialog()
- *                              and displayNewProjectDialog() introduced in
- *                              Wolverine build 64.
- * @version 1.0
- */
+
+
 public class ProductProjectManager implements IProductProjectManager {
     public void setCurrentProject( IProject proj ) {
         mCurrentProject = proj;
@@ -100,7 +87,9 @@ public class ProductProjectManager implements IProductProjectManager {
         return mCurrentProject;
     }
 
-    /**
+    
+
+/**
      * This method asks the user for new project details and create a new project.
      */
     public void displayNewProjectDialog() 
@@ -148,7 +137,9 @@ public class ProductProjectManager implements IProductProjectManager {
        }
     }
 
-   /**
+   
+
+/**
     * Inserts the argument project into the passed in IWorkspace
     */
    private boolean insertProjectIntoWorkspace(IWorkspace pWorkspace, IProject pProject)
@@ -188,7 +179,9 @@ public class ProductProjectManager implements IProductProjectManager {
 
     private IProject mCurrentProject;
 
-   /**
+   
+
+/**
     * Brings up the new project dialog
     */
     public void displayNewProjectDialog(INewDialogProjectDetails pDetails) 
@@ -228,7 +221,9 @@ public class ProductProjectManager implements IProductProjectManager {
         }
     }
     
-   /**
+   
+
+/**
     * Tells the IADApplication to create a new project.
     *
     * @param pFilename [in] The details about the new project
@@ -258,7 +253,9 @@ public class ProductProjectManager implements IProductProjectManager {
       return proj;
    }
 
-   /**
+   
+
+/**
     * After a project we need to question the user about creating a new diagram.  The 
     * INewDialogProjectDetails can specify that whether or not to question the user.
     *

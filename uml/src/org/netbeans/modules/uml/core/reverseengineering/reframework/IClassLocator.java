@@ -51,7 +51,9 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
  */
 public interface IClassLocator
 {
-    /**
+    
+
+/**
      * @return ETPairT of the full scoped name and the full path.
      */
     public ETPairT<String,String> locateFileForClass(

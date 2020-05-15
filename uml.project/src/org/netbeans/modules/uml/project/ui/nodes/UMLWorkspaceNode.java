@@ -66,7 +66,9 @@ public class UMLWorkspaceNode extends UMLElementNode implements ITreeWorkspace
       super();
    }
 
-   /**
+   
+
+/**
     * 
     */
    public UMLWorkspaceNode(Lookup l)
@@ -74,7 +76,9 @@ public class UMLWorkspaceNode extends UMLElementNode implements ITreeWorkspace
       super(l);
    }
 
-   /**
+   
+
+/**
     * @param item
     * @throws NullPointerException
     */
@@ -83,7 +87,9 @@ public class UMLWorkspaceNode extends UMLElementNode implements ITreeWorkspace
       super(item);
    }
 
-   /**
+   
+
+/**
     * @param item
     * @throws NullPointerException
     */

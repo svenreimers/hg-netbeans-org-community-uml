@@ -53,7 +53,8 @@ package org.netbeans.modules.uml.ui.products.ad.application;
 public interface IToolBar
 {
 
-   /**
+   
+/**
     * @param index
     */
    void insertSeperatorAt(int index);
@@ -63,13 +64,17 @@ public interface IToolBar
     */
    void appendSeperator();
 
-   /**
+   
+
+/**
     * @param m_Action
     * @param index
     */
 //   IToolItem addToolBarItem(PluginAction m_Action, int index);
 
-   /**
+   
+
+/**
     * @param m_Action
     */
 //   IToolItem addToolBarItem(PluginAction m_Action);

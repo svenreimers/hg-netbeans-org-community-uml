@@ -43,6 +43,8 @@
  */
 
 
+
+
 /*
  * CodeGenNestedTestCase.java
  * 
@@ -73,7 +75,9 @@ public class CodeGenNestedTestCase extends CodeGenerationTestCase {
     IPackageElem pack = new PackageElem("nested",parentPackage);
 
     
-    /** Creates a new instance of GenCodeLinksTestCase 
+    
+
+/** Creates a new instance of GenCodeLinksTestCase 
      * @param name 
      */
     public CodeGenNestedTestCase(String name) {

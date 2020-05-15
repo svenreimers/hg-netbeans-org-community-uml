@@ -48,17 +48,23 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 public interface ICollaborationOccurrence extends ITypedElement
 {
-	/**
+	
+
+/**
 	 * method AddRoleBinding
 	*/
 	public void addRoleBinding( IRoleBinding binding );
 
-	/**
+	
+
+/**
 	 * method RemoveRoleBinding
 	*/
 	public void removeRoleBinding( IRoleBinding binding );
 
-	/**
+	
+
+/**
 	 * property RoleBindings
 	*/
 	public ETList<IRoleBinding> getRoleBindings();

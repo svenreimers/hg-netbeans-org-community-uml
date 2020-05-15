@@ -46,7 +46,8 @@ package org.netbeans.modules.uml.drawingarea.widgets;
  *
  */
 public interface ContainerWithCompartments extends Container {
-    /**
+    
+/**
      * need to export api to be used in import
      */
     public void addChildrenInBounds();

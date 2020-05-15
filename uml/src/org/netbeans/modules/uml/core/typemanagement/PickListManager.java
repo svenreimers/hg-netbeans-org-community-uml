@@ -137,7 +137,9 @@ public class PickListManager implements IPickListManager, IQueryUpdater,
         super();
     }
     
-        /* (non-Javadoc)
+        
+
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.core.typemanagement.IPickListManager#getTypesWithFilter(org.netbeans.modules.uml.core.support.umlsupport.IStrings)
          */
     public IElement getTypesWithFilter(IStrings typeFilter)
@@ -146,7 +148,9 @@ public class PickListManager implements IPickListManager, IQueryUpdater,
         return null;
     }
     
-        /* (non-Javadoc)
+        
+
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.core.typemanagement.IPickListManager#getTypesOfType(java.lang.String)
          */
     public ETList<IElement> getTypesOfType(String type)
@@ -155,7 +159,9 @@ public class PickListManager implements IPickListManager, IQueryUpdater,
         return null;
     }
     
-        /* (non-Javadoc)
+        
+
+/* (non-Javadoc)
          * @see org.netbeans.modules.uml.core.typemanagement.IPickListManager#getTypesWithStringFilter(java.lang.String)
          */
     public ETList<IElement> getTypesWithStringFilter(String filter)
@@ -164,7 +170,9 @@ public class PickListManager implements IPickListManager, IQueryUpdater,
         return null;
     }
     
-    /**
+    
+
+/**
      *
      * Retrieves all the elements in the type cache that match the types found in
      * the typeFilter collection
@@ -180,7 +188,9 @@ public class PickListManager implements IPickListManager, IQueryUpdater,
         return getTypeNamesWithFilter(typeFilter, false);
     }
     
-    /**
+    
+
+/**
      *
      * Retrieves the names of a given type of element
      *
@@ -196,7 +206,9 @@ public class PickListManager implements IPickListManager, IQueryUpdater,
         return getTypeNamesOfType(type, false, null);
     }
     
-    /**
+    
+
+/**
      *
      * Retrieves the types that match the type names passed in via the filter parameter.
      *
@@ -226,7 +238,9 @@ public class PickListManager implements IPickListManager, IQueryUpdater,
         return getTypeNamesWithStringFilter(filter, true);
     }
     
-    /**
+    
+
+/**
      *
      * Builds up the internal maps of types
      *
@@ -294,7 +308,9 @@ public class PickListManager implements IPickListManager, IQueryUpdater,
         }
     }
     
-    /**
+    
+
+/**
      *
      * This is called by the QueryManager whenever the .QueryCache is about to be
      * closed. This is our chance to update the cache. This should only be called once
@@ -333,7 +349,9 @@ public class PickListManager implements IPickListManager, IQueryUpdater,
         m_NameTypeCache.clear();
     }
     
-    /**
+    
+
+/**
      *
      * Cleans up the cached type information
      *
@@ -346,7 +364,9 @@ public class PickListManager implements IPickListManager, IQueryUpdater,
         m_rawTypeManager = null;
     }
     
-    /**
+    
+
+/**
      *
      * Retrieves the TypeManager associated with this manager
      *
@@ -360,7 +380,9 @@ public class PickListManager implements IPickListManager, IQueryUpdater,
         return m_rawTypeManager;
     }
     
-    /**
+    
+
+/**
      *
      * Associates the passed in TypeManager with this manager
      *
@@ -391,7 +413,9 @@ public class PickListManager implements IPickListManager, IQueryUpdater,
         }
     }
     
-    /**
+    
+
+/**
      *
      * Retrieves the id of the first element found with elementName as its name.
      *
@@ -419,7 +443,9 @@ public class PickListManager implements IPickListManager, IQueryUpdater,
         return retStr;
     }
     
-    /**
+    
+
+/**
      *
      * Retrieves the ids of the elements found with elementName as its name. If the type
      * is not found in the immediate cache, reference libraries will be checked.
@@ -436,7 +462,9 @@ public class PickListManager implements IPickListManager, IQueryUpdater,
         return getIDsByName(elementName, true);
     }
     
-    /**
+    
+
+/**
      *
      * Retrieves the ids of the elements found with elementName as its name. The query
      * will be local to the Project this manager is associated with. No searches
@@ -453,7 +481,9 @@ public class PickListManager implements IPickListManager, IQueryUpdater,
         return getIDsByName( elementName, false );
     }
     
-    /**
+    
+
+/**
      *
      * Adds the passed in type to this PickListManager's cache of known types
      *
@@ -505,7 +535,9 @@ public class PickListManager implements IPickListManager, IQueryUpdater,
         }
     }
     
-    /**
+    
+
+/**
      *
      * Removes the type from the cache that has the passed in name and the ID of the passed
      * in element
@@ -547,7 +579,9 @@ public class PickListManager implements IPickListManager, IQueryUpdater,
         }
     }
     
-    /**
+    
+
+/**
      *
      * Retrieves the first type that matches the passed in name and type specified in the space delimited name of meta types.
      *
@@ -574,7 +608,9 @@ public class PickListManager implements IPickListManager, IQueryUpdater,
         return retEle;
     }
     
-    /**
+    
+
+/**
      *
      * Retrieves the collection of types that match the passed in name of space delimited name of meta types.
      *
@@ -608,7 +644,9 @@ public class PickListManager implements IPickListManager, IQueryUpdater,
         return retObj;
     }
     
-    /**
+    
+
+/**
      *
      * Retrieves a single type based on its name and its type
      *
@@ -668,7 +706,9 @@ public class PickListManager implements IPickListManager, IQueryUpdater,
         
     }
     
-    /**
+    
+
+/**
      *
      * Handles the name change of elements in the cache
      *
@@ -707,7 +747,9 @@ public class PickListManager implements IPickListManager, IQueryUpdater,
         //nothing to do
     }
     
-    /**
+    
+
+/**
      *
      * Handles the alias name change of elements in the cache
      *
@@ -740,7 +782,9 @@ public class PickListManager implements IPickListManager, IQueryUpdater,
         //nothing to do
     }
     
-    /**
+    
+
+/**
      *
      * Handles element creates
      *
@@ -768,7 +812,9 @@ public class PickListManager implements IPickListManager, IQueryUpdater,
         //nothing to do
     }
     
-    /**
+    
+
+/**
      *
      * Handles the delete of elements from the cache
      *
@@ -861,7 +907,9 @@ public class PickListManager implements IPickListManager, IQueryUpdater,
         }
     }
     
-    /**
+    
+
+/**
      *
      * Handles the transform of one type to another
      *
@@ -955,7 +1003,9 @@ public class PickListManager implements IPickListManager, IQueryUpdater,
     
     
     
-    /**
+    
+
+/**
      *
      * Revokes from the connected listeners
      *
@@ -1004,7 +1054,9 @@ public class PickListManager implements IPickListManager, IQueryUpdater,
         }
     }
     
-    /**
+    
+
+/**
      *
      * Registers as a listener to a number of event dispatchers
      *
@@ -1053,7 +1105,9 @@ public class PickListManager implements IPickListManager, IQueryUpdater,
         }
     }
     
-    /**
+    
+
+/**
      *
      * Sets the PickListManager on the TypeManager of the Project
      *
@@ -1071,7 +1125,9 @@ public class PickListManager implements IPickListManager, IQueryUpdater,
         }
     }
     
-    /**
+    
+
+/**
      *
      * Creates a new element that is inserted into the cache document
      *
@@ -1128,7 +1184,9 @@ public class PickListManager implements IPickListManager, IQueryUpdater,
         }
     }
     
-    /**
+    
+
+/**
      *
      * Updates a node in the cache with new information
      *
@@ -1163,7 +1221,9 @@ public class PickListManager implements IPickListManager, IQueryUpdater,
         }
     }
     
-    /**
+    
+
+/**
      *
      * Deletes a node from the cache
      *
@@ -1186,7 +1246,9 @@ public class PickListManager implements IPickListManager, IQueryUpdater,
         }
     }
     
-    /**
+    
+
+/**
      *
      * Retrieves a Name element from the Cache file by the id passed in
      *
@@ -1206,7 +1268,9 @@ public class PickListManager implements IPickListManager, IQueryUpdater,
         return node;
     }
     
-    /**
+    
+
+/**
      *
      * Determines whether or not the type of the element passed in is a type
      * that is currently being cached
@@ -1229,7 +1293,9 @@ public class PickListManager implements IPickListManager, IQueryUpdater,
         return isCached;
     }
     
-    /**
+    
+
+/**
      *
      * Makes sure that the types that we certainly want to upkeep are added to our list
      * of cacheable types.
@@ -1255,7 +1321,9 @@ public class PickListManager implements IPickListManager, IQueryUpdater,
         addTypeIndex( "Stereotype" );
     }
     
-    /**
+    
+
+/**
      *
      * Appends the types from any reference projects to the current list of types in the
      * Project this PickListManager manages
@@ -1299,7 +1367,9 @@ public class PickListManager implements IPickListManager, IQueryUpdater,
         return curCollection;
     }
     
-    /**
+    
+
+/**
      *
      * Determines whether or not processing should occur on the passed in element
      *
@@ -1346,7 +1416,9 @@ public class PickListManager implements IPickListManager, IQueryUpdater,
         return proceed;
     }
     
-    /**
+    
+
+/**
      *
      * Adds the new type to this cache
      *
@@ -1396,7 +1468,9 @@ public class PickListManager implements IPickListManager, IQueryUpdater,
         }
     }
     
-    /**
+    
+
+/**
      *
      * Retrieves the relative path from the Project that this PickListManager
      * is managing and the file passed in.
@@ -1417,7 +1491,9 @@ public class PickListManager implements IPickListManager, IQueryUpdater,
         return retStr;
     }
     
-    /**
+    
+
+/**
      *
      * Retrieves the types that match the type names passed in via the filter parameter.
      *
@@ -1433,7 +1509,9 @@ public class PickListManager implements IPickListManager, IQueryUpdater,
         return getTypeNamesWithStringFilterNamespaceVisible(filter, fullNames, null);
     }
 
-    /**
+    
+
+/**
      *  Version with additional namespace parameter - would return only types  
      *  that are visible from inside the namespace.
      */
@@ -1453,7 +1531,9 @@ public class PickListManager implements IPickListManager, IQueryUpdater,
         return foundNames;
     }
     
-    /**
+    
+
+/**
      *
      * Retrieves the names of a given type of element
      *
@@ -1471,7 +1551,9 @@ public class PickListManager implements IPickListManager, IQueryUpdater,
         return getTypeNamesOfType(type, fullNames, typeNames, null);
     }
 
-    /**
+    
+
+/**
      *  Version with additional namespace parameter - would return only types  
      *  that are visible from inside the namespace.
      */
@@ -1555,7 +1637,9 @@ public class PickListManager implements IPickListManager, IQueryUpdater,
         return typeNames;
     }
     
-    /**
+    
+
+/**
      *
      * Retrieves all the elements in the type cache that match the types found in
      * the typeFilter collection
@@ -1582,7 +1666,9 @@ public class PickListManager implements IPickListManager, IQueryUpdater,
         return foundNames;
     }
     
-    /**
+    
+
+/**
      *
      * Determines whether or not pick lists should be shown using fully qualified names
      *
@@ -1591,11 +1677,13 @@ public class PickListManager implements IPickListManager, IQueryUpdater,
      */
     private boolean isFullyQualified()
     {
-        //kris richards - "DisplayTypeFSN" pref removed. Set to true
+        
         return true;
     }
     
-    /**
+    
+
+/**
      *
      * Searches reference libraries for the passed in name
      *
@@ -1644,7 +1732,9 @@ public class PickListManager implements IPickListManager, IQueryUpdater,
         return retObj;
     }
     
-    /**
+    
+
+/**
      *
      * Adds a new entry to our index of known types
      *
@@ -1727,7 +1817,9 @@ public class PickListManager implements IPickListManager, IQueryUpdater,
         return retTypes;
     }
     
-    /**
+    
+
+/**
      *
      * Searches the immediate cache for elements with the passed in name.
      *
@@ -1784,7 +1876,9 @@ public class PickListManager implements IPickListManager, IQueryUpdater,
         return retObj;
     }
     
-    /**
+    
+
+/**
      * NamedType is a small utility object that encapsulates the type
      * information that is used for pick lists
      */
@@ -1884,7 +1978,9 @@ public class PickListManager implements IPickListManager, IQueryUpdater,
         }
     }
     
-    /**
+    
+
+/**
      * TypedNamedType is used when handling type transforms
      */
     private class TypedNamedType extends NamedType
@@ -1905,7 +2001,9 @@ public class PickListManager implements IPickListManager, IQueryUpdater,
         }
     }
     
-    /**
+    
+
+/**
      * NewNamedType is used when a new element has been created.
      */
     private class NewNamedType extends TypedNamedType

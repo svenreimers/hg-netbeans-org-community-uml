@@ -194,7 +194,9 @@ public class Connector extends StructuralFeature
 		return m_DirectedRealationAggregate.getRelatedElements();
 	}
 	
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IVersionableElement#setNode(org.dom4j.Node)
 	 */
 	public void setNode(Node n)
@@ -203,7 +205,9 @@ public class Connector extends StructuralFeature
 		m_DirectedRealationAggregate.setNode(n);
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.core.foundation.VersionableElement#establishNodePresence(org.dom4j.Document, org.dom4j.Node)
 	 */
 	public void establishNodePresence(Document doc, Node node)

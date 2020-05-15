@@ -51,22 +51,30 @@ import org.netbeans.modules.uml.ui.controls.editcontrol.IEditControl;
 
 public interface ICoreNameCollisionListener
 {
-	/**
+	
+
+/**
 	 * true to enable the dispatching of name collision events to the name collision handler.
 	*/
 	public boolean getEnabled();
 
-	/**
+	
+
+/**
 	 * true to enable the dispatching of name collision events to the name collision handler.
 	*/
 	public void setEnabled( boolean value );
 
-	/**
+	
+
+/**
 	 * The actual handler of the name collision event
 	*/
 	public INameCollisionHandler getHandler();
 
-	/**
+	
+
+/**
 	 * The actual handler of the name collision event
 	*/
 	public void setHandler( INameCollisionHandler value );

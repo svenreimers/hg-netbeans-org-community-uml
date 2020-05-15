@@ -52,7 +52,9 @@ public class ReturnEvent extends MethodDetailParserData
     implements IReturnEvent
 {
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.IReturnEvent#getStringRepresentation()
      */
     public String getStringRepresentation()

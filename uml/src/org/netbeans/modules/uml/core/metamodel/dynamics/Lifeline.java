@@ -76,7 +76,9 @@ public class Lifeline extends NamedElement implements ILifeline
     // define default type for creating lifeline representing classifier
     private static final String unknownClassifierType = "Class";
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.ILifeline#getEvents()
      */
     public ETList<IEventOccurrence> getEvents()
@@ -86,7 +88,9 @@ public class Lifeline extends NamedElement implements ILifeline
                 this, "events", IEventOccurrence.class );
     }
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.ILifeline#removeEvent(org.netbeans.modules.uml.core.metamodel.dynamics.IEventOccurrence)
      */
     public void removeEvent(IEventOccurrence event)
@@ -94,7 +98,9 @@ public class Lifeline extends NamedElement implements ILifeline
         removeElementByID( event, "events" );
     }
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.ILifeline#addEvent(org.netbeans.modules.uml.core.metamodel.dynamics.IEventOccurrence)
      */
     public void addEvent(IEventOccurrence event)
@@ -102,7 +108,9 @@ public class Lifeline extends NamedElement implements ILifeline
         addElementByID( event, "events" );
     }
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.ILifeline#getDiscriminator()
      */
     public IExpression getDiscriminator()
@@ -112,7 +120,9 @@ public class Lifeline extends NamedElement implements ILifeline
                 m_Node, "UML:Lifeline.discriminator/*", IExpression.class );
     }
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.ILifeline#setDiscriminator(org.netbeans.modules.uml.core.metamodel.core.foundation.IExpression)
      */
     public void setDiscriminator(IExpression exp)
@@ -123,7 +133,9 @@ public class Lifeline extends NamedElement implements ILifeline
                 exp );
     }
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.ILifeline#getRepresents()
      */
     public ITypedElement getRepresents()
@@ -132,7 +144,9 @@ public class Lifeline extends NamedElement implements ILifeline
             .retrieveSingleElementWithAttrID( this, "represents", ITypedElement.class );
     }
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.ILifeline#setRepresents(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElement)
      */
     public void setRepresents(ITypedElement element)
@@ -148,7 +162,9 @@ public class Lifeline extends NamedElement implements ILifeline
         }
     }
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.ILifeline#getPartDecompositions()
      */
     public ETList<IPartDecomposition> getPartDecompositions()
@@ -157,7 +173,9 @@ public class Lifeline extends NamedElement implements ILifeline
             .retrieveElementCollectionWithAttrIDs( this, "decomposedAs", IPartDecomposition.class );
     }
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.ILifeline#removePartDecomposition(org.netbeans.modules.uml.core.metamodel.dynamics.IPartDecomposition)
      */
     public void removePartDecomposition(IPartDecomposition decomp)
@@ -165,7 +183,9 @@ public class Lifeline extends NamedElement implements ILifeline
         removeElementByID( decomp, "decomposedAs" );
     }
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.ILifeline#addPartDecomposition(org.netbeans.modules.uml.core.metamodel.dynamics.IPartDecomposition)
      */
     public void addPartDecomposition(IPartDecomposition decomp)
@@ -173,7 +193,9 @@ public class Lifeline extends NamedElement implements ILifeline
         addElementByID( decomp, "decomposedAs" );
     }
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.ILifeline#getInteraction()
      */
     public IInteraction getInteraction()
@@ -182,7 +204,9 @@ public class Lifeline extends NamedElement implements ILifeline
         return owner instanceof IInteraction? (IInteraction) owner : null;
     }
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.ILifeline#setInteraction(org.netbeans.modules.uml.core.metamodel.dynamics.IInteraction)
      */
     public void setInteraction(IInteraction value)
@@ -190,7 +214,9 @@ public class Lifeline extends NamedElement implements ILifeline
         setOwner(value);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.ILifeline#addCoveringFragment(org.netbeans.modules.uml.core.metamodel.dynamics.IInteractionFragment)
      */
     public void addCoveringFragment(final IInteractionFragment frag)
@@ -207,7 +233,9 @@ public class Lifeline extends NamedElement implements ILifeline
                 } );
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.ILifeline#removeCoveringFragment(org.netbeans.modules.uml.core.metamodel.dynamics.IInteractionFragment)
      */
     public void removeCoveringFragment(final IInteractionFragment frag)
@@ -224,7 +252,9 @@ public class Lifeline extends NamedElement implements ILifeline
                 } );
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.ILifeline#getCoveringFragments()
      */
     public ETList<IInteractionFragment> getCoveringFragments()
@@ -233,7 +263,9 @@ public class Lifeline extends NamedElement implements ILifeline
             .retrieveElementCollectionWithAttrIDs( this, "coveredBy", IInteractionFragment.class );
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.ILifeline#createMessage(org.netbeans.modules.uml.core.metamodel.dynamics.IInteractionFragment, org.netbeans.modules.uml.core.metamodel.core.foundation.IElement, org.netbeans.modules.uml.core.metamodel.dynamics.IInteractionFragment, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation, int)
      */
     public IMessage createMessage(IInteractionFragment fromOwner, IElement toElement, IInteractionFragment toOwner, IOperation oper, int kind)
@@ -244,7 +276,9 @@ public class Lifeline extends NamedElement implements ILifeline
         return message;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.ILifeline#insertMessage(org.netbeans.modules.uml.core.metamodel.dynamics.IMessage, org.netbeans.modules.uml.core.metamodel.dynamics.IInteractionFragment, org.netbeans.modules.uml.core.metamodel.core.foundation.IElement, org.netbeans.modules.uml.core.metamodel.dynamics.IInteractionFragment, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation, int)
      */
     public IMessage insertMessage(IMessage fromBeforeMessage, IInteractionFragment fromOwner, IElement toElement, IInteractionFragment toOwner, IOperation oper, int kind)
@@ -267,7 +301,9 @@ public class Lifeline extends NamedElement implements ILifeline
         return message;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.ILifeline#deleteMessage(org.netbeans.modules.uml.core.metamodel.dynamics.IMessage)
      */
     public void deleteMessage(IMessage pMessage)
@@ -275,7 +311,9 @@ public class Lifeline extends NamedElement implements ILifeline
         // C++ code does nothing
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.ILifeline#createCreationalMessage(org.netbeans.modules.uml.core.metamodel.dynamics.ILifeline)
      */
     public IMessage createCreationalMessage(ILifeline toLine)
@@ -284,7 +322,9 @@ public class Lifeline extends NamedElement implements ILifeline
         return null;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.ILifeline#createDestructor()
      */
     public IActionOccurrence createDestructor()
@@ -293,7 +333,9 @@ public class Lifeline extends NamedElement implements ILifeline
             .createActionOccurrence(null, this, "DestroyAction");
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.ILifeline#initializeWith(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier)
      */
     public void initializeWith(IClassifier classifier)
@@ -301,7 +343,9 @@ public class Lifeline extends NamedElement implements ILifeline
         initializeWithType(classifier);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.ILifeline#initializeWithClass(org.netbeans.modules.uml.core.metamodel.core.constructs.IClass)
      */
     public void initializeWithClass(IClass clazz)
@@ -309,7 +353,9 @@ public class Lifeline extends NamedElement implements ILifeline
         initializeWithType(clazz);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.ILifeline#initializeWithActor(org.netbeans.modules.uml.core.metamodel.core.constructs.IActor)
      */
     public void initializeWithActor(IActor pActor)
@@ -317,7 +363,9 @@ public class Lifeline extends NamedElement implements ILifeline
         setRepresents(pActor);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.ILifeline#initializeWithComponent(org.netbeans.modules.uml.core.metamodel.structure.IComponent)
      */
     public void initializeWithComponent(IComponent pComponent)
@@ -343,7 +391,9 @@ public class Lifeline extends NamedElement implements ILifeline
         }
     }
    
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.metamodel.dynamics.ILifeline#getRepresentingClassifier()
     */
    public IClassifier getRepresentingClassifier()
@@ -367,7 +417,9 @@ public class Lifeline extends NamedElement implements ILifeline
       return classifier;
    }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.ILifeline#setRepresentingClassifier(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier)
      */
     public void setRepresentingClassifier(IClassifier classifier)
@@ -404,7 +456,9 @@ public class Lifeline extends NamedElement implements ILifeline
         }
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.ILifeline#setRepresentingClassifier2(java.lang.String)
      */
     public void setRepresentingClassifier2(String classifierName)
@@ -439,7 +493,9 @@ public class Lifeline extends NamedElement implements ILifeline
         }
     }
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.ILifeline#setRepresentingClassifierWithAlias(java.lang.String)
      */
     public void setRepresentingClassifierWithAlias(String alias)
@@ -459,7 +515,9 @@ public class Lifeline extends NamedElement implements ILifeline
         }
     }
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.ILifeline#setIsActorLifeline(boolean val)
      */
     public void setIsActorLifeline(boolean val)
@@ -468,7 +526,9 @@ public class Lifeline extends NamedElement implements ILifeline
        UMLXMLManip.setAttributeValue(this, "actorLifeline", boolStr);
     }
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.dynamics.ILifeline#getIsActorLifeline(boolean val)
      */
     public boolean getIsActorLifeline()
@@ -477,7 +537,9 @@ public class Lifeline extends NamedElement implements ILifeline
        return (booleanStr != null ? Boolean.parseBoolean(booleanStr) : false);
     }
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.VersionableElement#establishNodePresence(org.dom4j.Document, org.dom4j.Node)
      */
     public void establishNodePresence(Document doc, Node node)

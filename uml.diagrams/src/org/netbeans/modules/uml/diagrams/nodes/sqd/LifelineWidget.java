@@ -242,7 +242,9 @@ public class LifelineWidget extends UMLNodeWidget implements PropertyChangeListe
     }
     
     
-    /**
+    
+
+/**
      * Called to whether a particular location in local coordination system is controlled (otionally also painted) by the widget.
      * @param localLocation the local location
      * @return true, if the location belong to the widget
@@ -374,7 +376,9 @@ public class LifelineWidget extends UMLNodeWidget implements PropertyChangeListe
     {
         return boxWidget;
     }
-    /**
+    
+
+/**
      *  
      *
      * @return return true if lifeline is target of create message

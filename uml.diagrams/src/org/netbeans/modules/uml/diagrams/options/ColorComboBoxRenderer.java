@@ -57,6 +57,7 @@ import javax.swing.JList;
 import javax.swing.ListCellRenderer;
 
 
+
 /**
  * Renderer and editor for color JComboBox.
  *

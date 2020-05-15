@@ -58,7 +58,9 @@ public class REActionSequence extends REAction implements IREActionSequence
 {
     private List<IREAction> m_ActionList = new ArrayList<IREAction>();
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.IREActionSequence#getIsBreakCalled()
      */
     public boolean getIsBreakCalled()
@@ -68,7 +70,9 @@ public class REActionSequence extends REAction implements IREActionSequence
             .booleanValue();
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.IREActionSequence#item(int)
      */
     public IREAction item(int index)
@@ -76,7 +80,9 @@ public class REActionSequence extends REAction implements IREActionSequence
         return m_ActionList.get(index);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.IREActionSequence#getCount()
      */
     public int getCount()
@@ -84,7 +90,9 @@ public class REActionSequence extends REAction implements IREActionSequence
         return m_ActionList.size();
     }
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.IParserData#setEventData(org.dom4j.Node)
      */
     public void setEventData(Node node)

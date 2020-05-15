@@ -64,6 +64,8 @@ import org.netbeans.api.visual.widget.ConnectionWidget;
 import org.netbeans.api.visual.widget.Widget;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.IPresentationElement;
 
+
+
 /**
  * Provide basic layout functionality on specific to uml modele nodes.
  */
@@ -314,7 +316,9 @@ public class HierarchicalLayout extends GraphLayout<IPresentationElement, IPrese
             }
         }
 
-        /**
+        
+
+/**
          * process node and find if there any back edges
          * first edge duirection is considered as primary, all other are reverted in layout to be in the sme direction
          * @param startNode
@@ -353,7 +357,9 @@ public class HierarchicalLayout extends GraphLayout<IPresentationElement, IPrese
             }
         }
 
-        /**
+        
+
+/**
          * 
          * @param e
          */
@@ -378,7 +384,9 @@ public class HierarchicalLayout extends GraphLayout<IPresentationElement, IPrese
         }
     }
 
-    /**
+    
+
+/**
      * Y order of nodes
      */
     private class AssignLayers extends AlgorithmPart {
@@ -438,7 +446,9 @@ public class HierarchicalLayout extends GraphLayout<IPresentationElement, IPrese
         }
     }
 
-    /**
+    
+
+/**
      * used to add dummy nodes for edges manipuations
      */
     private class CreateDummyNodes extends AlgorithmPart {
@@ -922,7 +932,7 @@ public class HierarchicalLayout extends GraphLayout<IPresentationElement, IPrese
                     }
                 }
 
-                //Kris - this is a hack to reverse the order of the control points
+                
                 // that were created by the algorithm. This is used when the graph
                 // is inverted.
                 if (invert && points.size() > 3) {

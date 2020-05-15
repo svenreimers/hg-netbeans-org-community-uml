@@ -61,7 +61,9 @@ public class Signal extends Classifier implements ISignal
 	{
 		super();
 	}
-	/**
+	
+
+/**
 	 * method AddContext
 	*/
 	public void addContext( IBehavioralFeature feature )
@@ -80,7 +82,9 @@ public class Signal extends Classifier implements ISignal
 							);		
 	}
 
-	/**
+	
+
+/**
 	 * method RemoveContext
 	*/
 	public void removeContext( IBehavioralFeature feature )
@@ -99,7 +103,9 @@ public class Signal extends Classifier implements ISignal
 								);		
 	}
 
-	/**
+	
+
+/**
 	 * property Contexts
 	*/
 	public ETList<IBehavioralFeature> getContexts()
@@ -108,7 +114,9 @@ public class Signal extends Classifier implements ISignal
 		return collector.retrieveElementCollectionWithAttrIDs(this,"context", IBehavioralFeature.class);
 	}
 
-	/**
+	
+
+/**
 	 * method AddHandler
 	*/
 	public void addHandler( IBehavioralFeature feature )
@@ -127,7 +135,9 @@ public class Signal extends Classifier implements ISignal
 							);
 	}
 
-	/**
+	
+
+/**
 	 * method RemoveHandler
 	*/
 	public void removeHandler( IBehavioralFeature feature )
@@ -146,7 +156,9 @@ public class Signal extends Classifier implements ISignal
 								);
 	}
 
-	/**
+	
+
+/**
 	 * property Handlers
 	*/
 	public ETList<IBehavioralFeature> getHandlers()
@@ -155,7 +167,9 @@ public class Signal extends Classifier implements ISignal
 		return collector.retrieveElementCollectionWithAttrIDs(this,"handler", IBehavioralFeature.class);
 	}
 	
-	/**
+	
+
+/**
 	 * Establishes the appropriate XML elements for this UML type.
 	 *
 	 * [in] The document where this element will reside

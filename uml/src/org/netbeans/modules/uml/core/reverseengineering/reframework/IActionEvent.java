@@ -42,11 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : IActionEvent.java
- * Created on : Nov 6, 2003
- * Author     : aztec
- */
+
+
 package org.netbeans.modules.uml.core.reverseengineering.reframework;
 
 /**

@@ -49,12 +49,16 @@ import org.netbeans.modules.uml.core.eventframework.IEventFilter;
 
 public interface IVersionableElementEventFilter extends IEventFilter
 {
-	/**
+	
+
+/**
 	 * property VersionableElement
 	*/
 	public IVersionableElement getVersionableElement();
 
-	/**
+	
+
+/**
 	 * property VersionableElement
 	*/
 	public void setVersionableElement( IVersionableElement value );

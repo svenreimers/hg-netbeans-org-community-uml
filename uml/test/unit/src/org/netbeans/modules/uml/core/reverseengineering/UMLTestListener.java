@@ -44,11 +44,8 @@
 
 
 
-/*
- * File       : UMLTestListener.java
- * Created on : Feb 3, 2004
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.reverseengineering;
 
 import org.dom4j.Node;
@@ -173,14 +170,18 @@ public class UMLTestListener
 
 
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.IUMLParserEventsSink#onBeginParseFile(java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onBeginParseFile(String fileName, IResultCell cell)
     {
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.IUMLParserEventsSink#onClassFound(org.netbeans.modules.uml.core.reverseengineering.reframework.IClassEvent, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onClassFound(IClassEvent event, IResultCell cell)
@@ -189,7 +190,9 @@ public class UMLTestListener
         getHoldMethod(event);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.IUMLParserEventsSink#onDependencyFound(org.netbeans.modules.uml.core.reverseengineering.reframework.IDependencyEvent, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onDependencyFound(IDependencyEvent event, IResultCell cell)
@@ -197,14 +200,18 @@ public class UMLTestListener
         logData(event);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.IUMLParserEventsSink#onEndParseFile(java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onEndParseFile(String fileName, IResultCell cell)
     {
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.IUMLParserEventsSink#onError(org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.IErrorEvent, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onError(IErrorEvent event, IResultCell cell)
@@ -212,7 +219,9 @@ public class UMLTestListener
         m_haveError = true;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.IUMLParserEventsSink#onPackageFound(org.netbeans.modules.uml.core.reverseengineering.reframework.IPackageEvent, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onPackageFound(IPackageEvent event, IResultCell cell)
@@ -220,7 +229,9 @@ public class UMLTestListener
         logData(event);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.IUMLParserOperationEventSink#onBeginClause(org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onBeginClause(IResultCell cell)
@@ -228,7 +239,9 @@ public class UMLTestListener
         logOnBegin();
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.IUMLParserOperationEventSink#onBeginConditional(org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onBeginConditional(IResultCell cell)
@@ -236,7 +249,9 @@ public class UMLTestListener
         logOnBegin();
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.IUMLParserOperationEventSink#onBeginCriticalSection(org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onBeginCriticalSection(IResultCell cell)
@@ -244,7 +259,9 @@ public class UMLTestListener
         logOnBegin();
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.IUMLParserOperationEventSink#onBeginExceptionJumpHandler(org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onBeginExceptionJumpHandler(IResultCell cell)
@@ -252,7 +269,9 @@ public class UMLTestListener
         logOnBegin();
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.IUMLParserOperationEventSink#onBeginExceptionProcessing(org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onBeginExceptionProcessing(IResultCell cell)
@@ -260,7 +279,9 @@ public class UMLTestListener
         logOnBegin();
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.IUMLParserOperationEventSink#onBeginInitialize(org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onBeginInitialize(IResultCell cell)
@@ -268,7 +289,9 @@ public class UMLTestListener
         logOnBegin();
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.IUMLParserOperationEventSink#onBeginLoop(org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onBeginLoop(IResultCell cell)
@@ -276,7 +299,9 @@ public class UMLTestListener
         logOnBegin();
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.IUMLParserOperationEventSink#onBeginPostProcessing(org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onBeginPostProcessing(IResultCell cell)
@@ -284,7 +309,9 @@ public class UMLTestListener
         logOnBegin();
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.IUMLParserOperationEventSink#onBeginRaisedException(org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onBeginRaisedException(IResultCell cell)
@@ -292,21 +319,27 @@ public class UMLTestListener
         logOnBegin();
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.IUMLParserOperationEventSink#onBeginTest(org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onBeginTest(IResultCell cell)
     {
         logOnBegin();
     }
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.IUMLParserOperationEventSink#onBinaryOperator(org.netbeans.modules.uml.core.reverseengineering.reframework.IREBinaryOperator, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onBinaryOperator(IREBinaryOperator event, IResultCell cell)
     {
         logOnEvent(event);
     }
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.IUMLParserOperationEventSink#onConditional(org.netbeans.modules.uml.core.reverseengineering.reframework.IREConditional, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onConditional(IREConditional event, IResultCell cell)
@@ -314,7 +347,9 @@ public class UMLTestListener
         logOnEvent(event);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.IUMLParserOperationEventSink#onCreateAction(org.netbeans.modules.uml.core.reverseengineering.reframework.ICreationEvent, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onCreateAction(ICreationEvent event, IResultCell cell)
@@ -322,7 +357,9 @@ public class UMLTestListener
         logOnEvent(event);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.IUMLParserOperationEventSink#onCriticalSection(org.netbeans.modules.uml.core.reverseengineering.reframework.IRECriticalSection, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onCriticalSection(IRECriticalSection event, IResultCell cell)
@@ -330,7 +367,9 @@ public class UMLTestListener
         logOnEvent(event);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.IUMLParserOperationEventSink#onDestroyAction(org.netbeans.modules.uml.core.reverseengineering.reframework.IDestroyEvent, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onDestroyAction(IDestroyEvent event, IResultCell cell)
@@ -338,7 +377,9 @@ public class UMLTestListener
         logOnEvent(event);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.IUMLParserOperationEventSink#onEndClause(org.netbeans.modules.uml.core.reverseengineering.reframework.IREClause, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onEndClause(IREClause event, IResultCell cell)
@@ -346,7 +387,9 @@ public class UMLTestListener
         logOnEnd(event);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.IUMLParserOperationEventSink#onEndConditional(org.netbeans.modules.uml.core.reverseengineering.reframework.IREConditional, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onEndConditional(IREConditional event, IResultCell cell)
@@ -354,7 +397,9 @@ public class UMLTestListener
         logOnEnd(event);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.IUMLParserOperationEventSink#onEndCriticalSection(org.netbeans.modules.uml.core.reverseengineering.reframework.IRECriticalSection, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onEndCriticalSection(
@@ -364,7 +409,9 @@ public class UMLTestListener
         logOnEnd(event);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.IUMLParserOperationEventSink#onEndExceptionJumpHandler(org.netbeans.modules.uml.core.reverseengineering.reframework.IREExceptionJumpHandlerEvent, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onEndExceptionJumpHandler(
@@ -374,7 +421,9 @@ public class UMLTestListener
         logOnEnd(event);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.IUMLParserOperationEventSink#onEndExceptionProcessing(org.netbeans.modules.uml.core.reverseengineering.reframework.IREExceptionProcessingEvent, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onEndExceptionProcessing(
@@ -384,13 +433,17 @@ public class UMLTestListener
         logOnEnd(event);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.IUMLParserOperationEventSink#onEndInitialize(org.netbeans.modules.uml.core.reverseengineering.reframework.IInitializeEvent, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onEndInitialize(IInitializeEvent event, IResultCell cell)
     {
     }
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.IUMLParserOperationEventSink#onEndLoop(org.netbeans.modules.uml.core.reverseengineering.reframework.IRELoop, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onEndLoop(IRELoop event, IResultCell cell)
@@ -398,7 +451,9 @@ public class UMLTestListener
         logOnEnd(event);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.IUMLParserOperationEventSink#onEndPostProcessing(org.netbeans.modules.uml.core.reverseengineering.reframework.IPostProcessingEvent, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onEndPostProcessing(
@@ -407,7 +462,9 @@ public class UMLTestListener
     {
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.IUMLParserOperationEventSink#onEndRaisedException(org.netbeans.modules.uml.core.reverseengineering.reframework.IRaisedException, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onEndRaisedException(IRaisedException event, IResultCell cell)
@@ -415,7 +472,9 @@ public class UMLTestListener
         logOnEnd(event);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.IUMLParserOperationEventSink#onEndTest(org.netbeans.modules.uml.core.reverseengineering.reframework.ITestEvent, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onEndTest(ITestEvent event, IResultCell cell)
@@ -423,7 +482,9 @@ public class UMLTestListener
         logOnEnd(event);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.IUMLParserOperationEventSink#onJumpEvent(org.netbeans.modules.uml.core.reverseengineering.reframework.IJumpEvent, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onJumpEvent(IJumpEvent event, IResultCell cell)
@@ -431,7 +492,9 @@ public class UMLTestListener
         logOnEvent(event);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.IUMLParserOperationEventSink#onLoop(org.netbeans.modules.uml.core.reverseengineering.reframework.IRELoop, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onLoop(IRELoop event, IResultCell cell)
@@ -439,7 +502,9 @@ public class UMLTestListener
         logOnEvent(event);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.IUMLParserOperationEventSink#onMethodCall(org.netbeans.modules.uml.core.reverseengineering.reframework.IMethodEvent, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onMethodCall(IMethodEvent event, IResultCell cell)
@@ -447,7 +512,9 @@ public class UMLTestListener
         logOnEvent(event);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.IUMLParserOperationEventSink#onReferencedVariable(org.netbeans.modules.uml.core.reverseengineering.reframework.IReferenceEvent, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onReferencedVariable(IReferenceEvent event, IResultCell cell)
@@ -455,7 +522,9 @@ public class UMLTestListener
         logOnEvent(event);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.IUMLParserOperationEventSink#onReturnAction(org.netbeans.modules.uml.core.reverseengineering.reframework.IReturnEvent, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onReturnAction(IReturnEvent event, IResultCell cell)
@@ -463,7 +532,9 @@ public class UMLTestListener
         logOnEvent(event);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.IUMLParserOperationEventSink#onUnaryOperator(org.netbeans.modules.uml.core.reverseengineering.reframework.IREUnaryOperator, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onUnaryOperator(IREUnaryOperator event, IResultCell cell)

@@ -58,6 +58,8 @@ import org.netbeans.modules.uml.integration.ide.JavaClassUtils;
 import org.netbeans.modules.uml.util.DummyCorePreference;
 import org.openide.util.NbPreferences;
 
+
+
 /**
  * The MethodParameterInfo is used to store the parameter information used
  * to define the parameters for constructors and methods.
@@ -73,14 +75,18 @@ public class MethodParameterInfo implements Cloneable
     private IParameter parameterElement = null;
     private MethodInfo parentMethodInfo = null;
     
-    /** 
+    
+
+/** 
      * The number of multiplicty ranges that are associated with the parameter. 
      * In Java parameters can not define a range.  So, all we need to know is
      * how many ranges there are.
      */
     private int numberOfDimensions = 0;
     
-    /**
+    
+
+/**
      * Constructs a MethodParameterInfo.
      */
     public MethodParameterInfo() 
@@ -88,7 +94,9 @@ public class MethodParameterInfo implements Cloneable
         this(null, null);
     }
 
-    /**
+    
+
+/**
      * Constructs a MethodParameterInfo and sets the type of the parameter.
      */
     public MethodParameterInfo(String type) 
@@ -96,7 +104,9 @@ public class MethodParameterInfo implements Cloneable
         this(type, null);
     }
 
-    /**
+    
+
+/**
          * Constructs a MethodParameterInfo and sets the type and name of the parameter.
      */
     public MethodParameterInfo(String type, String name) 
@@ -119,7 +129,7 @@ public class MethodParameterInfo implements Cloneable
         if (type == null || type.trim().length() == 0)
             setType("int");
         
-        // conover
+        
         // have to check for null parameter type because there is a bug
         // in the rev eng code that doesn't parse some types properly
         // leaving them null in the model. Just need to guard agains this
@@ -140,42 +150,54 @@ public class MethodParameterInfo implements Cloneable
         }
     }
 
-    /**
+    
+
+/**
      * Sets the original type of the parameter.
      */
     public void setType(String type) {
         mOrigType = type;
     }
 
-    /**
+    
+
+/**
      * Retrieves the original type of the parameter.
      */
     public String getType() {
         return mOrigType;
     }
 
-    /**
+    
+
+/**
      * Sets the new type of the parameter.
      */
     public void setNewType(String type) {
         mNewType = type;
     }
 
-    /**
+    
+
+/**
      * Retrieves the new type of the parameter.
      */
     public String getNewType() {
         return mNewType;
     }
 
-    /**
+    
+
+/**
      * Sets the name of the parameter.
      */
     public void setName(String name) {
         mName = name;
     }
 
-    /**
+    
+
+/**
      * Gets the name of the parameter.
      */
     public String getName() {
@@ -326,36 +348,14 @@ public class MethodParameterInfo implements Cloneable
         return numberOfDimensions;
     }
     
-    /*
-    public String getCollectionOverrideDataType() 
-    {
-        // TODO: when Collection Override Data Type property is added at the 
-        // Parameter element level, this will no longer use the global default
-        
-        return UMLSupport.getUMLSupport().getCollectionOverride();
-    }
     
 
-    public boolean isCollectionType() 
-    {
-        return Util.isValidCollectionDataType(getFullyQualifiedType());
-    }
-    
-    
-    public boolean isUseCollectionOverride()
-    {
-        // TODO: conover - change this to use attribute level property
-        // rather than the global preference
-        return getParameterElement().getMultiplicity().getRangeCount() > 0 &&
-            Util.isValidCollectionDataType(getCollectionOverrideDataType());
-    }
-    */
 
     public boolean isUseGenerics()
     {
-        // TODO: conover - eventually, use the atribute level property
+        
         // instead of this global preference
-        //kris richards - made change to nbpreferences
+        
         return NbPreferences.forModule(DummyCorePreference.class).getBoolean("UML_USE_GENERICS_DEFAULT", true); // NOI18N
     }
     

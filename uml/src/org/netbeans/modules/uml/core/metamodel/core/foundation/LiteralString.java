@@ -61,7 +61,9 @@ public class LiteralString extends LiteralSpecification implements ILiteralStrin
 		super();
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Sets the value on this literal
 	 *
@@ -75,7 +77,9 @@ public class LiteralString extends LiteralSpecification implements ILiteralStrin
 		setAttributeValue("value", value);
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Retrieves the current value on this literal
 	 *
@@ -89,7 +93,9 @@ public class LiteralString extends LiteralSpecification implements ILiteralStrin
 		return getAttributeValue("value");
 	}
 
-	/**
+	
+
+/**
 	 * Establishes the appropriate XML elements for this UML type.
 	 *
 	 * [in] The document where this element will reside

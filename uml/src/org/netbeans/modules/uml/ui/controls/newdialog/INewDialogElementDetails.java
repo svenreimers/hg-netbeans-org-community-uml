@@ -49,37 +49,51 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.INamespace;
 
 public interface INewDialogElementDetails extends INewDialogTabDetails
 {
-	/**
+	
+
+/**
 	 * Name of the diagram
 	*/
 	public String getName();
 
-	/**
+	
+
+/**
 	 * Name of the diagram
 	*/
 	public void setName( String value );
 
-	/**
+	
+
+/**
 	 * property Namespace
 	*/
 	public INamespace getNamespace();
 
-	/**
+	
+
+/**
 	 * property Namespace
 	*/
 	public void setNamespace( INamespace value );
 
-	/**
+	
+
+/**
 	 * Add an additional namespace to our list of possible namespaces.
 	*/
 	public long addNamespace( INamespace pNamespace );
 
-	/**
+	
+
+/**
 	 * The kind of element to create
 	*/
 	public int getElementKind();
 
-	/**
+	
+
+/**
 	 * The kind of element to create
 	*/
 	public void setElementKind( /* NewElementKind */ int value );

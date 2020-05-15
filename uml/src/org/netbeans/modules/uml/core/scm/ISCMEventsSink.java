@@ -48,12 +48,16 @@ import org.netbeans.modules.uml.core.support.umlsupport.IResultCell;
 
 public interface ISCMEventsSink
 {
-	/**
+	
+
+/**
 	 * Fired whenever the indicated SCM feature is about to be executed.
 	*/
 	public void onPreFeatureExecuted( /* SCMFeatureKind */ int kind, ISCMItemGroup Group, ISCMOptions pOptions, IResultCell cell );
 
-	/**
+	
+
+/**
 	 * Fired whenever indicated SCM feature was executed.
 	*/
 	public void onFeatureExecuted( /* SCMFeatureKind */ int kind, ISCMItemGroup Group, ISCMOptions pOptions, IResultCell cell );

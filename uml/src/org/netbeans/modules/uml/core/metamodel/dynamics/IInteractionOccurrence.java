@@ -48,37 +48,51 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 public interface IInteractionOccurrence extends IInteractionFragment, IBehavior
 {
-	/**
+	
+
+/**
 	 * Sets / Gets the Interaction this occurrence refers to.
 	*/
 	public IInteraction getInteraction();
 
-	/**
+	
+
+/**
 	 * Sets / Gets the Interaction this occurrence refers to.
 	*/
 	public void setInteraction( IInteraction value );
 
-	/**
+	
+
+/**
 	 * Adds an actual gate to this occurrence.
 	*/
 	public void addGate( IGate gate );
 
-	/**
+	
+
+/**
 	 * Removes the specified gate from this occurrence.
 	*/
 	public void removeGate( IGate gate );
 
-	/**
+	
+
+/**
 	 * Retrieves the collection of actual gates owned by this occurrence.
 	*/
 	public ETList<IGate> getGates();
 
-	/**
+	
+
+/**
 	 * Sets / Gets the Behavior this occurrence refers to.
 	*/
 	public IBehavior getBehavior();
 
-	/**
+	
+
+/**
 	 * Sets / Gets the Behavior this occurrence refers to.
 	*/
 	public void setBehavior( IBehavior value );

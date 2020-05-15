@@ -63,6 +63,7 @@ import org.netbeans.modules.uml.core.support.umlsupport.Log;
 import org.netbeans.modules.uml.integration.ide.events.LiteralInfo;
 import org.netbeans.modules.uml.integration.ide.listeners.IEnumLiteralChangeListener;
 
+
 /**
  * @version 1.0
  */

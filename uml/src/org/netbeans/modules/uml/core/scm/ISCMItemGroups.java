@@ -42,6 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
+
+
 /*
  * ISCMItemGroups.java
  *
@@ -60,7 +62,8 @@ public interface ISCMItemGroups extends ETList < ISCMItemGroup >
    /** Adds the Item to a group that matches the passed in Project. */
    public void addItem(ISCMItem pItem );
 
-   /**
+   
+/**
     * Retrieves the total count of all the ISCMItem objects encapsulated by
     * all the groups this collection holds.
     */

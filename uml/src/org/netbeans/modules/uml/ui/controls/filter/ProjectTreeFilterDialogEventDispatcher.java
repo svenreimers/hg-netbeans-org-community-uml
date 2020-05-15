@@ -53,6 +53,7 @@ import org.netbeans.modules.uml.core.eventframework.IEventPayload;
 import org.netbeans.modules.uml.core.support.umlsupport.IResultCell;
 import org.netbeans.modules.uml.core.support.umlsupport.ResultCell;
 
+
 /**
  * The implementation of the IProjectTreeFilterDialogEventDispatcher interface.
  *
@@ -69,7 +70,9 @@ public class ProjectTreeFilterDialogEventDispatcher extends EventDispatcher
       m_PTFDispatcher = new EventManager < IProjectTreeFilterDialogEventsSink >();
    }
    
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.filter.IProjectTreeFilterDialogEventDispatcher#registerProjectTreeFilterDialogEvents(org.netbeans.modules.uml.ui.controls.filter.IProjectTreeFilterDialogEventsSink)
     */
    public void registerProjectTreeFilterDialogEvents(IProjectTreeFilterDialogEventsSink sink)
@@ -77,7 +80,9 @@ public class ProjectTreeFilterDialogEventDispatcher extends EventDispatcher
       m_PTFDispatcher.addListener(sink, null);
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.filter.IProjectTreeFilterDialogEventDispatcher#revokeProjectTreeFilterDialogEvents(org.netbeans.modules.uml.ui.controls.filter.IProjectTreeFilterDialogEventsSink)
     */
    public void revokeProjectTreeFilterDialogEvents(IProjectTreeFilterDialogEventsSink sink)
@@ -86,7 +91,9 @@ public class ProjectTreeFilterDialogEventDispatcher extends EventDispatcher
       
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.filter.IProjectTreeFilterDialogEventDispatcher#fireProjectTreeFilterDialogInit(org.netbeans.modules.uml.ui.controls.filter.IFilterDialog, org.netbeans.modules.uml.core.eventframework.IEventPayload)
     */
    public void fireProjectTreeFilterDialogInit(IFilterDialog dialog, IEventPayload payload)
@@ -106,7 +113,9 @@ public class ProjectTreeFilterDialogEventDispatcher extends EventDispatcher
       
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.filter.IProjectTreeFilterDialogEventDispatcher#fireProjectTreeFilterDialogOKActivated(org.netbeans.modules.uml.ui.controls.filter.IFilterDialog, org.netbeans.modules.uml.core.eventframework.IEventPayload)
     */
    public void fireProjectTreeFilterDialogOKActivated(IFilterDialog dialog, IEventPayload payload)
@@ -125,7 +134,9 @@ public class ProjectTreeFilterDialogEventDispatcher extends EventDispatcher
       }
    
    }
-   /**
+   
+
+/**
     * Creates and prepares the IResultCell object that will be included with the event.
     *
     * @param payload[in] The payload to include with the event cell. Can be 0

@@ -70,7 +70,9 @@ public class SaveNotifier
         return instance;
     }
     
-    /**
+    
+
+/**
      * Creates a new instance of SaveNotifier
      */
     private SaveNotifier() 

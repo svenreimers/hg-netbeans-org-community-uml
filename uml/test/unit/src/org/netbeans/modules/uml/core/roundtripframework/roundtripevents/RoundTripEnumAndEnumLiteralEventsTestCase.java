@@ -81,7 +81,9 @@ public class RoundTripEnumAndEnumLiteralEventsTestCase extends AbstractUMLTestCa
 	// This variable is to check if any events other than expected are thrown. If so , its value becomes greater than 0
 	private int count = 0;
 	
-	/**
+	
+
+/**
      * Here the Roundtrip Controller, dispatcher created and all listeners are attached.
      */
 	public void setUp()
@@ -112,7 +114,9 @@ public class RoundTripEnumAndEnumLiteralEventsTestCase extends AbstractUMLTestCa
         
 	}
 
-	/**
+	
+
+/**
      * EnumCreationTestCase
      */
 	public void testEnumCreate()
@@ -126,7 +130,9 @@ public class RoundTripEnumAndEnumLiteralEventsTestCase extends AbstractUMLTestCa
 		assertEquals(0, count);
 	}
 
-	/**
+	
+
+/**
      * EnumModificationTestCase
      */
 	public void testEnumModify()
@@ -141,7 +147,9 @@ public class RoundTripEnumAndEnumLiteralEventsTestCase extends AbstractUMLTestCa
 		assertEquals(0, count);
 	}
 	
-	/**
+	
+
+/**
      * EnumDeletionTestCase
      */
 	public void testEnumDelete()
@@ -156,7 +164,9 @@ public class RoundTripEnumAndEnumLiteralEventsTestCase extends AbstractUMLTestCa
 		assertEquals(0, count);
 	}
 	
-	/**
+	
+
+/**
      * EnumLiteralCreationTestCase
      */
 	public void testEnumLiteralCreate()
@@ -171,7 +181,9 @@ public class RoundTripEnumAndEnumLiteralEventsTestCase extends AbstractUMLTestCa
 		assertEquals(0, count);
 	}
 
-	/**
+	
+
+/**
      * EnumLiteralModificationTestCase
      */
 	public void testEnumLiteralModify()
@@ -187,7 +199,9 @@ public class RoundTripEnumAndEnumLiteralEventsTestCase extends AbstractUMLTestCa
 		assertEquals(0, count);
 	}
 
-	/**
+	
+
+/**
      * EnumLiteralDeletionTestCase
      */
 	public void testEnumLiteralDelete()
@@ -203,14 +217,18 @@ public class RoundTripEnumAndEnumLiteralEventsTestCase extends AbstractUMLTestCa
 		assertEquals(0, count);
 	}
 	
-	/**
+	
+
+/**
      * Fired before an enum has been created. We have nothing to check here.
      */
 	public void onPreEnumChangeRequest(IChangeRequest newVal, IResultCell cell) {
 		
 	}
 	
-	/**
+	
+
+/**
      * Fired after an enum has been created. 
      */
 	public void onEnumChangeRequest(IChangeRequest chngReq, IResultCell cell) {
@@ -219,14 +237,18 @@ public class RoundTripEnumAndEnumLiteralEventsTestCase extends AbstractUMLTestCa
 		
 	}
 	
-	/**
+	
+
+/**
      * Fired before an enum literal has been created. We have nothing to check here.
      */
 	public void onPreEnumLiteralChangeRequest(IChangeRequest newVal, IResultCell cell) {
 		
 	}
 
-	/**
+	
+
+/**
      * Fired after an enum literal has been created. 
      */
 	public void onEnumLiteralChangeRequest(IChangeRequest chngReq, IResultCell cell) 
@@ -237,7 +259,9 @@ public class RoundTripEnumAndEnumLiteralEventsTestCase extends AbstractUMLTestCa
 	}
 
 
-	/**
+	
+
+/**
      * Attribute preCreation event - Not needed to be implemented in this test case
      */
 	public void onPreAttributeChangeRequest(IChangeRequest newVal, IResultCell cell) {
@@ -246,7 +270,9 @@ public class RoundTripEnumAndEnumLiteralEventsTestCase extends AbstractUMLTestCa
 		
 	}
 
-	/**
+	
+
+/**
      * Attribute Creation event - Not needed to be implemented in this test case
      */
 	public void onAttributeChangeRequest(IChangeRequest newVal, IResultCell cell) {
@@ -255,7 +281,9 @@ public class RoundTripEnumAndEnumLiteralEventsTestCase extends AbstractUMLTestCa
 		
 	}
 
-	/**
+	
+
+/**
      * Class preCreation event - Not needed to be implemented in this test case
      */
 	public void onPreClassChangeRequest(IChangeRequest newVal, IResultCell cell) {
@@ -264,7 +292,9 @@ public class RoundTripEnumAndEnumLiteralEventsTestCase extends AbstractUMLTestCa
 		
 	}
 	
-	/**
+	
+
+/**
      * Class Creation event - Not needed to be implemented in this test case
      */
 	public void onClassChangeRequest(IChangeRequest newVal, IResultCell cell) {
@@ -273,7 +303,9 @@ public class RoundTripEnumAndEnumLiteralEventsTestCase extends AbstractUMLTestCa
 		
 	}
 	
-	/**
+	
+
+/**
      * Operation preCreation event - Not needed to be implemented in this test case. 
      */
 	public void onPreOperationChangeRequest(IChangeRequest newVal, IResultCell cell) {
@@ -282,7 +314,9 @@ public class RoundTripEnumAndEnumLiteralEventsTestCase extends AbstractUMLTestCa
 		
 	}
 
-	/**
+	
+
+/**
      * Operation Creation event - Not needed to be implemented in this test case. 
      */
 	public void onOperationChangeRequest(IChangeRequest newVal, IResultCell cell) {
@@ -291,7 +325,9 @@ public class RoundTripEnumAndEnumLiteralEventsTestCase extends AbstractUMLTestCa
 		
 	}
 
-	/**
+	
+
+/**
      * Package preCreation event - Not needed to be implemented in this test case. 
      */
 	public void onPrePackageChangeRequest(IChangeRequest newVal, IResultCell cell) {
@@ -300,7 +336,9 @@ public class RoundTripEnumAndEnumLiteralEventsTestCase extends AbstractUMLTestCa
 		
 	}
 
-	/**
+	
+
+/**
      * Package Creation event - Not needed to be implemented in this test case. 
      */
 	public void onPackageChangeRequest(IChangeRequest newVal, IResultCell cell) {
@@ -309,7 +347,9 @@ public class RoundTripEnumAndEnumLiteralEventsTestCase extends AbstractUMLTestCa
 		
 	}
 
-	/**
+	
+
+/**
      * Relation preCreation event - Not needed to be implemented in this test case. 
      */
 	public void onPreRelationChangeRequest(IChangeRequest newVal, IResultCell cell) {
@@ -318,7 +358,9 @@ public class RoundTripEnumAndEnumLiteralEventsTestCase extends AbstractUMLTestCa
 		
 	}
 
-	/**
+	
+
+/**
      * Relation Creation event - Not needed to be implemented in this test case. 
      */
 	public void onRelationChangeRequest(IChangeRequest newVal, IResultCell cell) {
@@ -328,7 +370,9 @@ public class RoundTripEnumAndEnumLiteralEventsTestCase extends AbstractUMLTestCa
 	}
 
 	
-	/**
+	
+
+/**
      * Get the path of  test Data Folder
      */
 	
@@ -353,7 +397,9 @@ public class RoundTripEnumAndEnumLiteralEventsTestCase extends AbstractUMLTestCa
 	}
 	
 
-	 /**
+	 
+
+/**
 	 * @propFile - the input file
 	 * @findElemType - the element being acted upon like attribute, operation
 	 * @findChangeKind - the action on the element like create,delete etc
@@ -393,7 +439,9 @@ public class RoundTripEnumAndEnumLiteralEventsTestCase extends AbstractUMLTestCa
 	}
 	
 
-		/**
+		
+
+/**
      * Reset the values for certain variables
      */
 	private void resetVals()

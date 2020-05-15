@@ -56,7 +56,9 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
  */
 public class REClass extends REClassElement implements IREClass
 {
-    /**
+    
+
+/**
      * Retrieves the name of the package that contains the class.  If the
      * class does not belong to a package the name will be an empty string.
      * @param pVal [out] The package that owns the class.
@@ -96,7 +98,9 @@ public class REClass extends REClassElement implements IREClass
         return pack;
     }
 
-    /**
+    
+
+/**
      * Retrieves the name of a class' package by traversing the parent nodes.
      * If the parent node has a <em>name</em> attribute, the name will be 
      * appended to the package name.
@@ -122,7 +126,9 @@ public class REClass extends REClassElement implements IREClass
         return name;
     }
 
-    /**
+    
+
+/**
      * @param parent
      * @return
      */
@@ -139,7 +145,9 @@ public class REClass extends REClassElement implements IREClass
         return false;
     }
 
-    /**
+    
+
+/**
      * Specifies whether the element may not have a direct instance. True 
      * indicates that an instance of the element must be an instance of a 
      * child of the element. False indicates that there may an instance of 
@@ -151,7 +159,9 @@ public class REClass extends REClassElement implements IREClass
         return XMLManip.getAttributeBooleanValue(getEventData(), "isAbstract");
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.IREClass#getIsLeaf()
      */
     public boolean getIsLeaf()
@@ -159,7 +169,9 @@ public class REClass extends REClassElement implements IREClass
         return XMLManip.getAttributeBooleanValue(getEventData(), "isLeaf");
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.IREClass#getOperations()
      */
     public ETList<IREOperation> getOperations()
@@ -179,7 +191,9 @@ public class REClass extends REClassElement implements IREClass
         return coll;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.IREClass#getAttributes()
      */
     public ETList<IREAttribute> getAttributes()
@@ -199,7 +213,9 @@ public class REClass extends REClassElement implements IREClass
         return coll;
     }
 
-    /**
+    
+
+/**
      * Retrieves the collection of super classes for the class..
      * @param pVal [out] The class's super classes.
      */
@@ -210,7 +226,9 @@ public class REClass extends REClassElement implements IREClass
         return gen;
     }
     
-    /**
+    
+
+/**
      * Retrieves the token descriptors for the parser event.  The token descriptors will 
      * be contained by the specified node.
      * @param node The DOM node to search.
@@ -229,7 +247,9 @@ public class REClass extends REClassElement implements IREClass
         return s;
     }
     
-    /**
+    
+
+/**
      * Retrieves the token descriptors for the parser event.  The token descriptors will 
      * be contained by the specified node.
      * @param node The DOM node to search.
@@ -248,7 +268,9 @@ public class REClass extends REClassElement implements IREClass
         return s;
     }
 
-    /**
+    
+
+/**
      * Retrieves the collection of implemented interfaces.
      * @param pVal [out] The interfaces that are implemented by he class.
      */
@@ -259,7 +281,9 @@ public class REClass extends REClassElement implements IREClass
         return real;
     }
 
-    /**
+    
+
+/**
      * Retrieves all inner classes and interfaces.
      * @param pVal [out] A collection of inner classes.
      */
@@ -277,7 +301,9 @@ public class REClass extends REClassElement implements IREClass
         return c;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.IREClass#getIsInterface()
      */
     public boolean getIsInterface()

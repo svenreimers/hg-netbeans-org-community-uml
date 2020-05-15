@@ -55,7 +55,9 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 public class Procedure extends Behavior implements IProcedure
 {
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.basic.basicactions.IProcedure#addAction(org.netbeans.modules.uml.core.metamodel.basic.basicactions.IAction)
      */
     public void addAction(IAction pAction)
@@ -63,7 +65,9 @@ public class Procedure extends Behavior implements IProcedure
         // C++ code does nothing
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.basic.basicactions.IProcedure#getActions()
      */
     public ETList <IAction> getActions()
@@ -72,7 +76,9 @@ public class Procedure extends Behavior implements IProcedure
         return null;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.basic.basicactions.IProcedure#removeAction(org.netbeans.modules.uml.core.metamodel.basic.basicactions.IAction)
      */
     public void removeAction(IAction pAction)

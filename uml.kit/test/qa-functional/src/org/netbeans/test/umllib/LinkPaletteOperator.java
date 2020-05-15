@@ -43,7 +43,9 @@
  */
 
 
- /*
+ 
+
+/*
  * LinkPaletteOperator.java
  *
  * Created on February 15, 2005, 6:42 PM
@@ -74,6 +76,7 @@ import org.netbeans.jemmy.operators.ContainerOperator;
 
 import org.netbeans.test.umllib.exceptions.NotFoundException;
 import org.netbeans.test.umllib.util.LibProperties;
+
 
 
 /**
@@ -210,7 +213,7 @@ public class LinkPaletteOperator extends ContainerOperator {
         map.put(LinkTypes.DESTROY_LIFELINE, new Integer(3));
     }
     
-    // Workaround before Trey set name for each link button 
+    
     public JComponentOperator getLinkButtonByIndex(Enum linkType) throws NotFoundException {
         String linkName =  LibProperties.getCurrentToolName(linkType);
         if (linkType.equals(LinkTypes.IMPLEMENTATION) ||
@@ -284,7 +287,7 @@ public class LinkPaletteOperator extends ContainerOperator {
         public PaletteButtonByNameChooser(String name) {
             this.name=name;
         }
-//        This won't work until Trey provide PaletteButton.getModel() and PaletteButton.setName()
+
 //        public boolean checkComponent(Component comp) {
 //            if (comp instanceof PaletteButton ) {
 //                ArrayList<ContextPaletteButtonModel> popupContents = comp.getModel.getChildren();

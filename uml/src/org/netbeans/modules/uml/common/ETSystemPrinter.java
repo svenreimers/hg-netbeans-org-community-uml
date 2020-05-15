@@ -47,6 +47,7 @@ package org.netbeans.modules.uml.common;
 
 import org.netbeans.modules.uml.core.support.Debug;
 
+
 /**
  *
  * To change the template for this generated type comment go to
@@ -54,7 +55,8 @@ import org.netbeans.modules.uml.core.support.Debug;
  */
 public class ETSystemPrinter implements IETSystemPrinter
 {
-   /* (non-Javadoc)
+   
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.common.IETSystemPrinter#flush()
     */
    public void flush()
@@ -62,7 +64,9 @@ public class ETSystemPrinter implements IETSystemPrinter
       Debug.out.flush();
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.common.IETSystemPrinter#close()
     */
    public void close()
@@ -71,7 +75,9 @@ public class ETSystemPrinter implements IETSystemPrinter
 		//Debug.out.close();
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.common.IETSystemPrinter#checkError()
     */
    public boolean checkError()
@@ -79,7 +85,9 @@ public class ETSystemPrinter implements IETSystemPrinter
        return Debug.out.checkError();
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.common.IETSystemPrinter#write(int)
     */
    public void write(int b)
@@ -87,7 +95,9 @@ public class ETSystemPrinter implements IETSystemPrinter
 		Debug.out.write(b);
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.common.IETSystemPrinter#write(byte[], int, int)
     */
    public void write(byte[] buf, int off, int len)
@@ -96,7 +106,9 @@ public class ETSystemPrinter implements IETSystemPrinter
 
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.common.IETSystemPrinter#print(boolean)
     */
    public void print(boolean b)
@@ -104,7 +116,9 @@ public class ETSystemPrinter implements IETSystemPrinter
 		Debug.out.print(b);
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.common.IETSystemPrinter#print(char)
     */
    public void print(char c)
@@ -112,7 +126,9 @@ public class ETSystemPrinter implements IETSystemPrinter
  		Debug.out.print(c);
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.common.IETSystemPrinter#print(int)
     */
    public void print(int i)
@@ -121,7 +137,9 @@ public class ETSystemPrinter implements IETSystemPrinter
 
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.common.IETSystemPrinter#print(long)
     */
    public void print(long l)
@@ -130,7 +148,9 @@ public class ETSystemPrinter implements IETSystemPrinter
 
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.common.IETSystemPrinter#print(float)
     */
    public void print(float f)
@@ -139,7 +159,9 @@ public class ETSystemPrinter implements IETSystemPrinter
 
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.common.IETSystemPrinter#print(double)
     */
    public void print(double d)
@@ -148,7 +170,9 @@ public class ETSystemPrinter implements IETSystemPrinter
 
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.common.IETSystemPrinter#print(char[])
     */
    public void print(char[] s)
@@ -157,7 +181,9 @@ public class ETSystemPrinter implements IETSystemPrinter
 
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.common.IETSystemPrinter#print(java.lang.String)
     */
    public void print(String s)
@@ -165,7 +191,9 @@ public class ETSystemPrinter implements IETSystemPrinter
 		Debug.out.print(s);
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.common.IETSystemPrinter#print(java.lang.Object)
     */
    public void print(Object obj)
@@ -173,7 +201,9 @@ public class ETSystemPrinter implements IETSystemPrinter
 		Debug.out.print(obj);
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.common.IETSystemPrinter#println()
     */
    public void println()
@@ -181,7 +211,9 @@ public class ETSystemPrinter implements IETSystemPrinter
 		Debug.out.println();
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.common.IETSystemPrinter#println(boolean)
     */
    public void println(boolean x)
@@ -189,7 +221,9 @@ public class ETSystemPrinter implements IETSystemPrinter
 		Debug.out.println(x);
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.common.IETSystemPrinter#println(char)
     */
    public void println(char x)
@@ -197,7 +231,9 @@ public class ETSystemPrinter implements IETSystemPrinter
 		Debug.out.println(x);
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.common.IETSystemPrinter#println(int)
     */
    public void println(int x)
@@ -205,7 +241,9 @@ public class ETSystemPrinter implements IETSystemPrinter
 		Debug.out.println(x);
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.common.IETSystemPrinter#println(long)
     */
    public void println(long x)
@@ -213,7 +251,9 @@ public class ETSystemPrinter implements IETSystemPrinter
 		Debug.out.println(x);
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.common.IETSystemPrinter#println(float)
     */
    public void println(float x)
@@ -221,7 +261,9 @@ public class ETSystemPrinter implements IETSystemPrinter
 		Debug.out.println(x);
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.common.IETSystemPrinter#println(double)
     */
    public void println(double x)
@@ -229,7 +271,9 @@ public class ETSystemPrinter implements IETSystemPrinter
 		Debug.out.println(x);
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.common.IETSystemPrinter#println(char[])
     */
    public void println(char[] x)
@@ -237,7 +281,9 @@ public class ETSystemPrinter implements IETSystemPrinter
 		Debug.out.println(x);
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.common.IETSystemPrinter#println(java.lang.String)
     */
    public void println(String x)
@@ -245,7 +291,9 @@ public class ETSystemPrinter implements IETSystemPrinter
 		Debug.out.println(x);
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.common.IETSystemPrinter#println(java.lang.Object)
     */
    public void println(Object x)

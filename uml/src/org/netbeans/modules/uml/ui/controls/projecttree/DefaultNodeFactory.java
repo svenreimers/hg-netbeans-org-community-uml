@@ -54,13 +54,15 @@ import org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeItem;
 import org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeRelElement;
 import org.netbeans.modules.uml.ui.support.projecttreesupport.ITreeWorkspace;
 
+
 /**
  * 
  */
 public class DefaultNodeFactory implements ProjectTreeNodeFactory
 {
 
-   /**
+   
+/**
     * 
     */
    public DefaultNodeFactory()
@@ -68,7 +70,9 @@ public class DefaultNodeFactory implements ProjectTreeNodeFactory
       super();
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.projecttree.ProjectTreeNodeFactory#createDiagramNode(org.netbeans.modules.uml.core.metamodel.diagrams.IProxyDiagram)
     */
    public ITreeDiagram createDiagramNode(IProxyDiagram proxy)
@@ -76,7 +80,9 @@ public class DefaultNodeFactory implements ProjectTreeNodeFactory
       return new ProjectTreeDiagramNode(proxy);
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.projecttree.ProjectTreeNodeFactory#createFolderNode()
     */
    public ITreeFolder createFolderNode()
@@ -84,7 +90,9 @@ public class DefaultNodeFactory implements ProjectTreeNodeFactory
       return new ProjectTreeFolderNode();
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.projecttree.ProjectTreeNodeFactory#createProjectNode()
     */
    public ITreeItem createProjectNode()
@@ -92,7 +100,9 @@ public class DefaultNodeFactory implements ProjectTreeNodeFactory
       return new ProjectTreeNode();
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.projecttree.ProjectTreeNodeFactory#createElementNode()
     */
    public ITreeElement createElementNode()
@@ -100,7 +110,9 @@ public class DefaultNodeFactory implements ProjectTreeNodeFactory
       return new TreeElementNode();
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.projecttree.ProjectTreeNodeFactory#createRelationshipNode()
     */
    public ITreeRelElement createRelationshipNode()
@@ -108,7 +120,9 @@ public class DefaultNodeFactory implements ProjectTreeNodeFactory
       return new TreeRelationshipNode();
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.controls.projecttree.ProjectTreeNodeFactory#createWorkspaceNode()
     */
    public ITreeWorkspace createWorkspaceNode()

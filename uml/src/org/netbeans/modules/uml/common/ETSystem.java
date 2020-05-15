@@ -45,6 +45,7 @@
 
 package org.netbeans.modules.uml.common;
 
+
 /**
  *
  * Allows us to override the Default System.out, so we can turn it on and off debug statements from a single location.

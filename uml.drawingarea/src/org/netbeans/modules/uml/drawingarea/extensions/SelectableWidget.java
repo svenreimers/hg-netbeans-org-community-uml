@@ -44,6 +44,7 @@
 
 package org.netbeans.modules.uml.drawingarea.extensions;
 
+
 /**
  * I found no one usage now, may be removed
  * @deprecated it is supported to use ObjectScene functionality now

@@ -49,57 +49,73 @@ import org.netbeans.modules.uml.core.support.umlutils.IDataFormatter;
 
 public interface ICGChangeNotification
 {
-	/**
+	
+
+/**
 	 * Initializes a Change Notification from an IChangeRequest object
 	*/
 	public void _Initialize( IChangeRequest pVal );
 
-	/**
+	
+
+/**
 	 * Gets / Sets CodeGenerationHelper
 	*/
 	public ICodeGenerationHelper getCodeGenerationHelper();
 
-	/**
+	
+
+/**
 	 * Gets / Sets Language
 	*/
 	public String getLanguage();
 
-	/**
+	
+
+/**
 	 * Gets / Sets Language
 	*/
 	public void setLanguage( String value );
 
-	/**
-	 * Gets / Sets DataFormatter
-	*/
+	
+
 	public IDataFormatter getDataFormatter();
 
-	/**
-	 * Gets / Sets DataFormatter
-	*/
+	
+
 	public void setDataFormatter( IDataFormatter value );
 
-	/**
+	
+
+/**
 	 * Gets / Sets FileSystemManipulation
 	*/
 	public IFileSystemManipulation getFileSystemManipulation();
 
-	/**
+	
+
+/**
 	 * Gets / Sets FileSystemManipulation
 	*/
 	public void setFileSystemManipulation( IFileSystemManipulation value );
 
-	/**
+	
+
+/**
 	 * Gets / Sets SourceCodeManipulationMap
 	*/
 	public ISourceCodeManipulationMap getSourceCodeManipulationMap();
 
-	/**
+	
+
+/**
 	 * Gets / Sets SourceCodeManipulationMap
 	*/
 	public void setSourceCodeManipulationMap( ISourceCodeManipulationMap value );
 
-	/**
+	
+
+/**
 	 * Returns the IChangeRequest object that this ICGChangeNotification wraps
 	*/
 	public IChangeRequest getRoundTripChangeRequest();

@@ -49,7 +49,9 @@ package org.netbeans.modules.uml.core.metamodel.basic.basicactions;
 public class OperatorAction extends PrimitiveAction implements IOperatorAction
 {
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.basic.basicactions.IOperatorAction#getOperatorType()
      */
     public String getOperatorType()
@@ -57,7 +59,9 @@ public class OperatorAction extends PrimitiveAction implements IOperatorAction
         return getAttributeValue("operatorType");
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.basic.basicactions.IOperatorAction#setOperatorType(java.lang.String)
      */
     public void setOperatorType(String operatorType)

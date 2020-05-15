@@ -54,6 +54,7 @@ import org.netbeans.modules.uml.ui.support.applicationmanager.IProxyUserInterfac
 import java.awt.Cursor;
 import java.awt.Frame;
 
+
 /**
  *
  * Displays the hourglass curor on the main window until stop is called.
@@ -85,7 +86,9 @@ public class ETSmartWaitCursor
         restore();
     }
     
-    /**
+    
+
+/**
      * To restore the wait cursor, call this function after performing an operation,
      * such as displaying a message box or dialog box, which might change the wait cursor to another cursor.
      *
@@ -123,7 +126,9 @@ public class ETSmartWaitCursor
             frame.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
     }
     
-        /*
+        
+
+/*
          * Make sure they don't leave it in wait mode if an exception happens while the cursor is displaying.
          */
     public void finalize()

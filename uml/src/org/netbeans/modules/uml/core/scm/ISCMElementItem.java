@@ -46,42 +46,58 @@ package org.netbeans.modules.uml.core.scm;
 
 import org.netbeans.modules.uml.core.metamodel.core.foundation.IElement;
 
+
+
 /**
  * Provides versioning information for an IElement.
  */
 public interface ISCMElementItem extends ISCMItem
 {
-	/**
+	
+
+/**
 	 * Retrieves the IElement assocated with the SCM item.
 	*/
 	public IElement getElement();
 
-	/**
+	
+
+/**
 	 * Sets the IElement assocated with the SCM item.
 	*/
 	public void setElement( IElement value );
 
-	/**
+	
+
+/**
 	 * Determines whether or not the IElement this item represents is actually an IProject.
 	*/
 	public boolean getIsProject();
 
-	/**
+	
+
+/**
 	 * Determines whether or not to gather any associated Artifacts along with this element.
 	*/
 	public void setGatherArtifacts( boolean value );
 
-	/**
+	
+
+/**
 	 * Determines whether or not to gather any associated Artifacts along with this element.
 	*/
 	public boolean getGatherArtifacts();
 
-	/**
+	
+
+/**
 	 * Determines whether or not to gather any associated SourceFileArtifacts along with this element.
 	*/
 	public void setGatherSourceFileArtifacts( boolean value );
 
-	/**
+	
+
+/**
 	 * Determines whether or not to gather any associated SourceFileArtifacts along with this element.
 	*/
 	public boolean getGatherSourceFileArtifacts();

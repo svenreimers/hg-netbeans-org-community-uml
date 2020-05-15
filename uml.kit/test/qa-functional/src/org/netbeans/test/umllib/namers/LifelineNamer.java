@@ -74,7 +74,9 @@ public class LifelineNamer  implements SetName {
         setName(dia, name, "");
     } 
     
-    /**
+    
+
+/**
      * Set Lifeline name
      * if there is no ':' in name name consider as lifeline name
      * @param dia 
@@ -136,7 +138,9 @@ public class LifelineNamer  implements SetName {
 
     }
 
-    /**
+    
+
+/**
      * names lifeline
      * if there is no ':' in name name consider as lifeline name
      */
@@ -165,7 +169,9 @@ public class LifelineNamer  implements SetName {
         new EventTool().waitNoEvent(1000);
 
         EditControlOperator ec = null;
-        /*try
+        
+
+/*try
         {
         ec=new EditControlOperator();
         }
@@ -202,7 +208,9 @@ public class LifelineNamer  implements SetName {
         new Timeout("", 500).sleep();
     }
 
-    /**
+    
+
+/**
      * for debug only
      * @param dia
      */

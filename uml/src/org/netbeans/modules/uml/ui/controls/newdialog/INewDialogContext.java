@@ -51,47 +51,65 @@ import org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeControl;
 
 public interface INewDialogContext
 {
-	/**
+	
+
+/**
 	 * Sets / Gets the workspace that should be used for this instance of the new dialog.
 	*/
 	public IWorkspace getWorkspace();
 
-	/**
+	
+
+/**
 	 * Sets / Gets the workspace that should be used for this instance of the new dialog.
 	*/
 	public void setWorkspace( IWorkspace value );
 
-	/**
+	
+
+/**
 	 * Sets / Gets the project that should be used for this instance of the new dialog.
 	*/
 	public IProject getProject();
 
-	/**
+	
+
+/**
 	 * Sets / Gets the project that should be used for this instance of the new dialog.
 	*/
 	public void setProject( IProject value );
 
-	/**
+	
+
+/**
 	 * TRUE to use all extensions when getting the number of open projects.
 	*/
 	public boolean getUseAllProjectExtensions();
 
-	/**
+	
+
+/**
 	 * TRUE to use all extensions when getting the number of open projects.
 	*/
 	public void setUseAllProjectExtensions( boolean value );
 
-	/**
+	
+
+/**
 	 * Returns the number of open projects.
 	*/
 	public int getNumOpenProjects();
 
-	/**
+	
+
+/**
 	 * Sets / Gets the project tree that should be used for this instance of the new dialog.
 	*/
 	public IProjectTreeControl getProjectTree();
 
-	/**
+	
+
+/**
 	 * Sets / Gets the project tree that should be used for this instance of the new dialog.
 	*/
 	public void setProjectTree( IProjectTreeControl value );

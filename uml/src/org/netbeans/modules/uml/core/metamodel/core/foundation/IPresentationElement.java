@@ -49,64 +49,88 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 public interface IPresentationElement extends IElement {
 
-        /**
+        
+
+/**
          * Retrieves the metatype of the the firstSubject. 
          * 
          * @return The model elements metatype
          */
         public String getFirstSubjectsType();
     
-	/*
+	
+
+/*
 	 * Retrieves the collection of Elements this element is associated with.
 	 */
 	public ETList < IElement > getSubjects();
 
-	/*
+	
+
+/*
 	 * Returns the first element on the subjects collection.
 	 */
 	public IElement getFirstSubject();
 
-	/*
+	
+
+/*
 	 * Associates the passed in Element with this PresentationElement.
 	 */	
 	public IElement addSubject(IElement elem);
 
-	/*
+	
+
+/*
 	 * Removes the Element with the matching ID.
 	 */	
 	public void removeSubject(IElement elem);
 
-	/*
+	
+
+/*
 	 * Determines whether or not the passed in element is a subject of this PresentationElement.
 	 */	
 	public boolean isSubject(IElement elem);
 
-	/*
+	
+
+/*
 	 * Determines whether or not the passed in element is the first subject of this PresentationElement.
 	 */ 	
 	public boolean isFirstSubject2(String elementXMIID);
 	
-	/*
+	
+
+/*
 	 * Determines whether or not the passed in element is the first subject of this PresentationElement.
 	 */ 		
 	public boolean isFirstSubject(IElement pElement);
 
-	/*
+	
+
+/*
 	 * Gets the ID of the physical display element associated with this PresentationElement.
 	 */	
 	public String getDisplayElementID();
 
-	/*
+	
+
+/*
 	 * Sets the ID of the physical display element associated with this PresentationElement.
 	 */
 	public void setDisplayElementID(String id);
 
-	/*
+	
+
+/*
 	 * Transforms this presentation element into another, such as an AssocationEdge into an AggregationEdge.
 	 */
 	public IPresentationElement transform(String elemName);
 
-	/*
+	
+
+/*
 	 * Returns the number of subjects.
 	 */
 	public long getSubjectCount();

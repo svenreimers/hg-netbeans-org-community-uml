@@ -217,7 +217,7 @@ public abstract class ProgressDialogImp extends JCenterDialog implements IProgre
        createUI();
        pack();
        this.setSize(COLLAPSED_SIZE);
-       //CBeckham - added this code to allow dialog to dynamiclaly resize for larger fonts
+       
        setCollapsedPanelSize();
        setExpandedPanelSize();
        // end of add
@@ -437,7 +437,9 @@ public abstract class ProgressDialogImp extends JCenterDialog implements IProgre
     this.m_CloseWhenDone = this.cbCloseWhenDone.isSelected();
  }
 
- /**
+ 
+
+/**
   * Sets the owner of this dialog.  This method explicitily does not up the refcount on comDiag. Object ownership
   * lies in comDiag, i.e., comDiag owns this object, so to up the refcount on comDiag would put us into
   * a circular dependency.
@@ -454,7 +456,9 @@ public abstract class ProgressDialogImp extends JCenterDialog implements IProgre
     m_RevokeNum = cookie;
  }
 
- /**
+ 
+
+/**
   * Tells our owner that a cancel has occurred
   */
  public void broadCastCancel()
@@ -473,7 +477,9 @@ public abstract class ProgressDialogImp extends JCenterDialog implements IProgre
     }
  }
 
- /**
+ 
+
+/**
   * Flushes the event queue
   */
  private void flushEventQueue()
@@ -493,7 +499,7 @@ public abstract class ProgressDialogImp extends JCenterDialog implements IProgre
     }
  }
 
- //CBeckham - added this code to allow dialog to dynamiclaly resize for larger fonts
+ 
  private void setCollapsedPanelSize() {
       int fontsize = getFont().getSize();
       int width  = 600;
@@ -507,7 +513,7 @@ public abstract class ProgressDialogImp extends JCenterDialog implements IProgre
 
   }
 
- //CBeckham - added this code to allow dialog to dynamiclaly resize for larger fonts
+ 
  private void setExpandedPanelSize() {
 
       int fontsize = getFont().getSize();
@@ -574,7 +580,9 @@ public abstract class ProgressDialogImp extends JCenterDialog implements IProgre
      m_ProgressIndicator.setValue(m_Upper);
  }
  
- /**
+ 
+
+/**
   * Gets an image for use when this message gets inserted into the tree
   */
  private int retrieveImage(int type, boolean smallIcon)
@@ -607,7 +615,9 @@ public abstract class ProgressDialogImp extends JCenterDialog implements IProgre
     return image;
  }
 
- /**
+ 
+
+/**
   * Inserts a node into the tree if the current group has been set
   */
  private DefaultMutableTreeNode establishFirstNode(int type, String first)
@@ -622,7 +632,9 @@ public abstract class ProgressDialogImp extends JCenterDialog implements IProgre
     return node;
  }
 
- /**
+ 
+
+/**
   * Inserts a node into the tree if the current group has been set
   */
  private DefaultMutableTreeNode establishSecondNode(int type, String second)
@@ -637,7 +649,9 @@ public abstract class ProgressDialogImp extends JCenterDialog implements IProgre
     return node;
  }
 
- /**
+ 
+
+/**
   * Inserts a group node into the tree.
   */
  private DefaultMutableTreeNode establishGroupNode(int type, String group)
@@ -669,7 +683,9 @@ public abstract class ProgressDialogImp extends JCenterDialog implements IProgre
      return retVal;
  }
 
- /**
+ 
+
+/**
   * Inserts the node into the tree.
   */
  private DefaultMutableTreeNode establishNode(int type, String name, int image, DefaultMutableTreeNode persistNode, DefaultMutableTreeNode parent)
@@ -717,7 +733,9 @@ public abstract class ProgressDialogImp extends JCenterDialog implements IProgre
     return node;
  }
 
- /**
+ 
+
+/**
   * Closes the dialog
   */
  public void onCancel()
@@ -769,7 +787,9 @@ public abstract class ProgressDialogImp extends JCenterDialog implements IProgre
     this.dispose();
  }
 
- /**
+ 
+
+/**
   * Handles de-initializing this class
   */
  private void cleanUp()
@@ -796,7 +816,9 @@ public abstract class ProgressDialogImp extends JCenterDialog implements IProgre
     m_cpDiagramBlocker = null;
  }
 
- /**
+ 
+
+/**
   * Expand the tree to the specified level
   */
  private void expandTree(DefaultMutableTreeNode hti, int nLevel)
@@ -1062,7 +1084,9 @@ public abstract class ProgressDialogImp extends JCenterDialog implements IProgre
     }
  }
 
- /**
+ 
+
+/**
   * Ensures that the last tree item is shown in the tree control's window
   */
  private void showLastTreeItem()
@@ -1111,7 +1135,9 @@ public abstract class ProgressDialogImp extends JCenterDialog implements IProgre
     this.m_DefExt = newVal;
  }
 
- /**
+ 
+
+/**
   * Sets the first text field contained by the group box at the top of the dialog
   *
   * @param inc The text.
@@ -1163,7 +1189,9 @@ public abstract class ProgressDialogImp extends JCenterDialog implements IProgre
     this.setGroupingTitle(newVal, ProgressDialogMessageKind.PDMK_NONE);
  }
 
- /**
+ 
+
+/**
   * Sets the grouping title  That is the title of the group box grouping the first, second
   * and third fields.
   *
@@ -1228,7 +1256,9 @@ public abstract class ProgressDialogImp extends JCenterDialog implements IProgre
 
  protected void unlockMessageCenterUpdate()
  {
-    /*
+    
+
+/*
     AFX_MANAGE_STATE(AfxGetStaticModuleState())
 
      if( ::IsWindow( m_hWnd ) )

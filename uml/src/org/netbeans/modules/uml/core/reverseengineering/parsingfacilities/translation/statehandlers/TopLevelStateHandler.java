@@ -43,11 +43,8 @@
  */
 
 
-/*
- * File       : TopLevelStateHandler.java
- * Created on : Dec 8, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.statehandlers;
 
 import java.io.BufferedWriter;
@@ -76,7 +73,9 @@ public class TopLevelStateHandler extends StateHandler
         m_Language = language;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.statehandlers.ITopLevelStateHandler#createTopLevelNode(java.lang.String)
      */
     public void createTopLevelNode(String nodeName)
@@ -106,7 +105,9 @@ public class TopLevelStateHandler extends StateHandler
 
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.statehandlers.ITopLevelStateHandler#writeDocument(java.lang.String)
      */
     public void writeDocument(String filename)
@@ -143,7 +144,9 @@ public class TopLevelStateHandler extends StateHandler
         }
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.statehandlers.ITopLevelStateHandler#getLanguage()
      */
     public String getLanguage()

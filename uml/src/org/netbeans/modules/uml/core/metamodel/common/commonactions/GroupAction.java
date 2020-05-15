@@ -42,11 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : GroupAction.java
- * Created on : Sep 17, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.metamodel.common.commonactions;
 
 import org.dom4j.Document;
@@ -68,7 +65,8 @@ public class GroupAction extends CompositeAction implements IGroupAction
 {
     INamespace namespace = new Namespace();
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IVersionableElement#setNode(org.dom4j.Node)
      */
     public void setNode(Node n)
@@ -77,7 +75,9 @@ public class GroupAction extends CompositeAction implements IGroupAction
         namespace.setNode(n);
     }
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactions.IGroupAction#addSubAction(org.netbeans.modules.uml.core.metamodel.basic.basicactions.IAction)
      */
     public void addSubAction(IAction pAction)
@@ -85,7 +85,9 @@ public class GroupAction extends CompositeAction implements IGroupAction
         addElement(pAction);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactions.IGroupAction#addVariable(org.netbeans.modules.uml.core.metamodel.common.commonactions.IVariable)
      */
     public void addVariable(IVariable pVar)
@@ -93,7 +95,9 @@ public class GroupAction extends CompositeAction implements IGroupAction
         addElement(pVar);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactions.IGroupAction#getSubActions()
      */
     public ETList<IAction> getSubActions()
@@ -103,7 +107,9 @@ public class GroupAction extends CompositeAction implements IGroupAction
 
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactions.IGroupAction#getVariables()
      */
     public ETList<IVariable> getVariables()
@@ -113,7 +119,9 @@ public class GroupAction extends CompositeAction implements IGroupAction
 
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactions.IGroupAction#removeSubAction(org.netbeans.modules.uml.core.metamodel.basic.basicactions.IAction)
      */
     public void removeSubAction(IAction pAction)
@@ -121,7 +129,9 @@ public class GroupAction extends CompositeAction implements IGroupAction
         removeElement(pAction);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactions.IGroupAction#removeVariable(org.netbeans.modules.uml.core.metamodel.common.commonactions.IVariable)
      */
     public void removeVariable(IVariable pVar)
@@ -295,7 +305,9 @@ public class GroupAction extends CompositeAction implements IGroupAction
         namespace.setVisibility(par1);
     }
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElement#setNameWithAlias(java.lang.String)
      */
     public void setNameWithAlias(String newVal)
@@ -303,7 +315,9 @@ public class GroupAction extends CompositeAction implements IGroupAction
         namespace.setNameWithAlias(newVal);
     }
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElement#getNameWithAlias()
      */
     public String getNameWithAlias()
@@ -316,7 +330,9 @@ public class GroupAction extends CompositeAction implements IGroupAction
 		return namespace.createPackageStructure(packageStructure);
 	}
 
-    /**
+    
+
+/**
      * The default behavior to this method is to return true if the names of the
      * two elements being compared are same. Subclasses should override to 
      * implement class specific <em>isSimilar</em> behavior.

@@ -42,6 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
+
+
 /**
  *	This generated bean class DomainObject matches the schema element 'domainObject'.
  *  The root bean class is TemplateFamilies
@@ -217,7 +219,9 @@ public class DomainObject extends org.netbeans.modules.schema2beans.BaseBean
         return this.removeValue(TEMPLATE, value);
     }
     
-    /**
+    
+
+/**
      * Create a new bean using it's default constructor.
      * This does not add it to any bean graph.
      */
@@ -377,6 +381,8 @@ public class DomainObject extends org.netbeans.modules.schema2beans.BaseBean
 }
 
 // END_NOI18N
+
+
 
 
 /*

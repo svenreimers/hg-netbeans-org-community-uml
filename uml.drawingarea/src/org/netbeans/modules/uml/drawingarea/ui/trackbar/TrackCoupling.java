@@ -63,6 +63,7 @@ import javax.swing.JPopupMenu;
 import org.netbeans.modules.uml.ui.controls.trackbar.TrackBarResource;
 
 
+
 /**
  * 
  */
@@ -91,7 +92,9 @@ public class TrackCoupling extends TrackItem implements ActionListener
    private int m_CouplingType = NO_CONSTRAINT;
    private boolean m_ShowCouplingType = true; 
    
-   /**
+   
+
+/**
     * @param bar
     */
    public TrackCoupling(JTrackBar bar, TrackItem prevItem, TrackItem nextItem)
@@ -164,12 +167,16 @@ public class TrackCoupling extends TrackItem implements ActionListener
       return retVal;
    }
    
-   /**
+   
+
+/**
     * Restores the track coupling from the product archive (etlp) file.
     *
     * @param aElement [in] The product archive element being read in.
     */
-   /*public void load(IProductArchiveElement aElement)
+   
+
+/*public void load(IProductArchiveElement aElement)
    {
       if(aElement != null)
       {
@@ -215,12 +222,16 @@ public class TrackCoupling extends TrackItem implements ActionListener
       }
    }*/
    
-   /**
+   
+
+/**
     * Saves the track coupling from the product archive (etlp) file.
     *
     * @param aElement [in] The product archive element being read in.
     */
-   /*public void save(IProductArchiveElement aElement)
+   
+
+/*public void save(IProductArchiveElement aElement)
    {
       if(aElement != null)
       {
@@ -245,7 +256,9 @@ public class TrackCoupling extends TrackItem implements ActionListener
       }
    }*/
    
-   /**
+   
+
+/**
     * Checks if both sides of this track item has the same neighbors are the 
     * same neighbors as the item that is passed in.
     * 
@@ -311,7 +324,9 @@ public class TrackCoupling extends TrackItem implements ActionListener
       return retVal;
    }
    
-   /**
+   
+
+/**
     * Copies the track item attributes.  
     * 
     * @param item The track item to copy the attributes from.
@@ -327,7 +342,9 @@ public class TrackCoupling extends TrackItem implements ActionListener
       
    }
    
-   /**
+   
+
+/**
     * @param g
     */
    protected void paintNoConstraint(Graphics g)
@@ -336,7 +353,9 @@ public class TrackCoupling extends TrackItem implements ActionListener
       
    }
 
-   /**
+   
+
+/**
     * @param g
     */
    protected void paintMessageSizeConstraint(Graphics g)
@@ -359,7 +378,9 @@ public class TrackCoupling extends TrackItem implements ActionListener
       g.drawLine(INSET_H + halfArcWidth, middleY, right + halfArcWidth, middleY);
    }
 
-   /**
+   
+
+/**
     * @param g
     */
    protected void paintMinSizeConstraint(Graphics g)
@@ -375,7 +396,9 @@ public class TrackCoupling extends TrackItem implements ActionListener
       
    }
 
-   /**
+   
+
+/**
     * @param xDelta
     */
    public void push(int xDelta)
@@ -398,7 +421,9 @@ public class TrackCoupling extends TrackItem implements ActionListener
    }
 
 
-   /**
+   
+
+/**
     * @param xDelta
     */
    protected void pushNoConstraint(int xDelta)
@@ -414,7 +439,9 @@ public class TrackCoupling extends TrackItem implements ActionListener
       
    }
 
-   /**
+   
+
+/**
     * @param xDelta
     */
    protected void pushMessageSizeConstraint(int xDelta)
@@ -422,7 +449,9 @@ public class TrackCoupling extends TrackItem implements ActionListener
       
    }
 
-   /**
+   
+
+/**
     * @param xDelta
     */
    protected void pushMinSizeConstraint(int xDelta)
@@ -431,7 +460,9 @@ public class TrackCoupling extends TrackItem implements ActionListener
       notifyNeighborsOfMove(xDelta);
    }
 
-   /**
+   
+
+/**
     * @param xDelta
     */
    public void updateContraints(int xDelta)
@@ -487,7 +518,9 @@ public class TrackCoupling extends TrackItem implements ActionListener
    // Helper Methods
    //**************************************************
    
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.swing.trackbar.TrackItem#limitBoundingRect(java.awt.Rectangle)
     */
    protected void limitBoundingRect(Rectangle rect)
@@ -502,7 +535,9 @@ public class TrackCoupling extends TrackItem implements ActionListener
       }
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see java.awt.Component#getBounds()
     */
    public Rectangle getBounds()
@@ -510,7 +545,9 @@ public class TrackCoupling extends TrackItem implements ActionListener
       return determineBoundingRect();
    }
 
-   /**
+   
+
+/**
     * Retrieves the coupling sizing constraint. 
     * 
     * @return The constraint type.  Can be <code>NO_CONSTRAINT</code>, 
@@ -521,7 +558,9 @@ public class TrackCoupling extends TrackItem implements ActionListener
       return m_CouplingType;
    }
 
-   /**
+   
+
+/**
     * Sets the coupling sizing constraint.
     *  
     * @param value The constraint type.  Can be <code>NO_CONSTRAINT</code>, 
@@ -537,7 +576,9 @@ public class TrackCoupling extends TrackItem implements ActionListener
        m_CouplingType = value;
    }
 
-   /**
+   
+
+/**
     * Determines if the user wants to show the coupling type.
     * 
     * @return <code>true</code> if the coupling type is to be drawn.
@@ -547,7 +588,9 @@ public class TrackCoupling extends TrackItem implements ActionListener
       return m_ShowCouplingType;
    }
 
-   /**
+   
+
+/**
     * Sets if the user wants to show the coupling type. 
     * 
     * @param b <code>true</code> if the coupling type is to be drawn.
@@ -557,7 +600,9 @@ public class TrackCoupling extends TrackItem implements ActionListener
       m_ShowCouplingType = b;
    }
 
-   /**
+   
+
+/**
     * Retrieves the context menu.  The method showContextMenu uses 
     * buildContextMenu to determine the menu to be displayed.  If null is returned
     * the a menu will not be displayed.
@@ -621,7 +666,9 @@ public class TrackCoupling extends TrackItem implements ActionListener
       return retVal;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see java.awt.event.ActionListener#actionPerformed(java.awt.event.ActionEvent)
     */
    public void actionPerformed(ActionEvent e)

@@ -46,12 +46,16 @@ package org.netbeans.modules.uml.core.metamodel.structure;
 
 public interface ISourceCodeHolder
 {
-	/**
+	
+
+/**
 	 * Gets the SourceCode
 	*/
 	public String getSourceCode();
 
-	/**
+	
+
+/**
 	 * Called to give the ISourceCodeHolder implementer a hint that the source code should be committed to disk
 	*/
 	public long onCommit();

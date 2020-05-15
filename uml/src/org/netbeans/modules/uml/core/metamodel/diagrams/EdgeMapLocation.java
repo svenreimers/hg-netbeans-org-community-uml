@@ -48,6 +48,7 @@ import java.util.List;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.IElement;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElement;
 
+
 /**
  * Details about a location on the graph map of an edge.
  */

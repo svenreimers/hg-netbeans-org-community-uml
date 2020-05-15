@@ -49,6 +49,8 @@ import org.netbeans.modules.uml.core.metamodel.basic.basicactions.IInputPin;
 import org.netbeans.modules.uml.core.metamodel.basic.basicactions.IPrimitiveAction;
 import org.netbeans.modules.uml.core.AbstractUMLTestCase;
 
+
+
 /**
  * Test cases for REAction.
  */
@@ -61,7 +63,9 @@ public class REActionTestCase extends AbstractUMLTestCase
 
     private REAction rea;
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see junit.framework.TestCase#setUp()
      */
     protected void setUp() throws Exception

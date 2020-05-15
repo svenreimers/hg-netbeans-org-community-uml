@@ -49,6 +49,7 @@ import java.util.HashMap;
 import java.util.Map;
 import org.openide.util.NbBundle;
 
+
 /**
  * Represents one color with some text description.
  *

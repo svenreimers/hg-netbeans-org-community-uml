@@ -96,7 +96,9 @@ public class DependencyDiagramVerifier extends GenericVerifier{
     }
 
     
-    /**
+    
+
+/**
      * testcase: Generated dependency diagram of class A w/ two operations: public X op1() and public void op2(Y y)
      * <br/>
      * RESULT: Classes A, X, and Y created 
@@ -133,7 +135,9 @@ public class DependencyDiagramVerifier extends GenericVerifier{
     }
 
     
-    /**
+    
+
+/**
      * Drop and name a new class on the dependency diagram. Add attribute and operation to it.
      * <br/>
      * RESULT: Class should be created in correct namespace
@@ -180,7 +184,9 @@ public class DependencyDiagramVerifier extends GenericVerifier{
         checkDiagramHasExactElements(new DiagramElementOperator[]{depElementSrc, depElementDep}, depDiagram);
     }
 
-    /**
+    
+
+/**
      * Make changes to diagram by dropping new elements onto diagram, then save
      * <br/>
      * All changes to diagram should be saved
@@ -404,7 +410,9 @@ public class DependencyDiagramVerifier extends GenericVerifier{
         checkIfDependencyGenerationAbsent(elementSrc);
     }
 
-    /**
+    
+
+/**
      * checks if link shouldn't be generated on dependency diagram
      * 
      * @param linkType link that should be checked

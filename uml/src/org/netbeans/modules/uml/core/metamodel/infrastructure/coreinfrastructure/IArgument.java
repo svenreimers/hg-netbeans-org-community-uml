@@ -50,12 +50,16 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.IExpression;
 
 public interface IArgument extends IElement
 {
-	/**
+	
+
+/**
 	 * Sets / Gets an expression determining the actual instance when evaluated.
 	*/
 	public IExpression getValue();
 
-	/**
+	
+
+/**
 	 * Sets / Gets an expression determining the actual instance when evaluated.
 	*/
 	public void setValue( IExpression value );

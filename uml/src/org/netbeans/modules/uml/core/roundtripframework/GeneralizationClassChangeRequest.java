@@ -42,11 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : GeneralizationClassChangeRequest.java
- * Created on : Oct 28, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.roundtripframework;
 
 import org.netbeans.modules.uml.core.metamodel.core.foundation.IElement;
@@ -65,7 +62,9 @@ public class GeneralizationClassChangeRequest
     IElement    m_BeforeConnection = null;
     IElement    m_AfterConnection = null;
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IGeneralizationClassChangeRequest#setAfterConnection(org.netbeans.modules.uml.core.metamodel.core.foundation.IElement)
      */
     public void setAfterConnection(IElement pElement)
@@ -73,7 +72,9 @@ public class GeneralizationClassChangeRequest
         m_AfterConnection = pElement;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IGeneralizationClassChangeRequest#setAfterGeneralizing(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier)
      */
     public void setAfterGeneralizing(IClassifier pClassifier)
@@ -81,7 +82,9 @@ public class GeneralizationClassChangeRequest
         m_AfterGeneralizing = pClassifier;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IGeneralizationClassChangeRequest#setAfterSpecializing(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier)
      */
     public void setAfterSpecializing(IClassifier pClassifier)
@@ -89,7 +92,9 @@ public class GeneralizationClassChangeRequest
         m_AfterSpecializing = pClassifier;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IGeneralizationClassChangeRequest#setBeforeConnection(org.netbeans.modules.uml.core.metamodel.core.foundation.IElement)
      */
     public void setBeforeConnection(IElement pElement)
@@ -97,7 +102,9 @@ public class GeneralizationClassChangeRequest
         m_BeforeConnection = pElement;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IGeneralizationClassChangeRequest#setBeforeGeneralizing(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier)
      */
     public void setBeforeGeneralizing(IClassifier pClassifier)
@@ -105,7 +112,9 @@ public class GeneralizationClassChangeRequest
         m_BeforeGeneralizing = pClassifier;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IGeneralizationClassChangeRequest#setBeforeSpecializing(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier)
      */
     public void setBeforeSpecializing(IClassifier pClassifier)
@@ -113,7 +122,9 @@ public class GeneralizationClassChangeRequest
         m_BeforeSpecializing = pClassifier;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IGeneralizationChangeRequest#getAfterConnection()
      */
     public IElement getAfterConnection()
@@ -121,7 +132,9 @@ public class GeneralizationClassChangeRequest
         return m_AfterConnection;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IGeneralizationChangeRequest#getAfterGeneralizing()
      */
     public IClassifier getAfterGeneralizing()
@@ -129,7 +142,9 @@ public class GeneralizationClassChangeRequest
         return m_AfterGeneralizing;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IGeneralizationChangeRequest#getAfterSpecializing()
      */
     public IClassifier getAfterSpecializing()
@@ -137,7 +152,9 @@ public class GeneralizationClassChangeRequest
         return m_AfterSpecializing;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IGeneralizationChangeRequest#getBeforeConnection()
      */
     public IElement getBeforeConnection()
@@ -145,7 +162,9 @@ public class GeneralizationClassChangeRequest
         return m_BeforeConnection;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IGeneralizationChangeRequest#getBeforeGeneralizing()
      */
     public IClassifier getBeforeGeneralizing()
@@ -153,7 +172,9 @@ public class GeneralizationClassChangeRequest
         return m_BeforeGeneralizing;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.IGeneralizationChangeRequest#getBeforeSpecializing()
      */
     public IClassifier getBeforeSpecializing()

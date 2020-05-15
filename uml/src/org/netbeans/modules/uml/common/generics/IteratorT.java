@@ -49,12 +49,14 @@ import java.util.Iterator;
 
 
 
+
 /*
  *
  */
 public class IteratorT < T > extends java.lang.Object implements Iterator {
 	
-	/*
+	
+/*
 	 *
 	 *
 	 * Inner class is used for performance when someone passes a null list or existing iter.

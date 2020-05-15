@@ -47,87 +47,121 @@ package org.netbeans.modules.uml.core.scm;
 import org.netbeans.modules.uml.core.metamodel.structure.IProject;
 import org.netbeans.modules.uml.core.support.umlsupport.IStrings;
 
+
+
 /**
  * A collection of ISCMItem types.
  */
 public interface ISCMItemGroup
 {
-	/**
+	
+
+/**
 	 * property Count
 	*/
 	public int getCount();
 
-	/**
+	
+
+/**
 	 * method Add
 	*/
 	public void add( ISCMItem attr );
 
-	/**
+	
+
+/**
 	 * method Item
 	*/
 	public ISCMItem item( int index );
 
-	/**
+	
+
+/**
 	 * method Remove
 	*/
 	public void remove( int index );
 
-	/**
+	
+
+/**
 	 * The IProject associated with this group.
 	*/
 	public IProject getProject();
 
-	/**
+	
+
+/**
 	 * The IProject associated with this group.
 	*/
 	public void setProject( IProject value );
 
-	/**
+	
+
+/**
 	 * The ISCMTool associated with this group.
 	*/
 	public ISCMTool getTool();
 
-	/**
+	
+
+/**
 	 * The ISCMTool associated with this group.
 	*/
 	public void setTool( ISCMTool value );
 
-	/**
+	
+
+/**
 	 * Calls Prepare() on all internal ISCMItems.
 	*/
 	public boolean prepare( ISCMIntegrator integrator );
 
-	/**
+	
+
+/**
 	 * Retrieves the file locations from all the internal ISCMItems.
 	*/
 	public IStrings getFiles();
 
-	/**
+	
+
+/**
 	 * Calls ClearStatus() on all internal ISCMItems
 	*/
 	public void clearStatus( ISCMIntegrator integrator );
 
-	/**
+	
+
+/**
 	 * Calls RemoveVersionInformation() on all internal ISCMItems
 	*/
 	public void removeVersionInformation( ISCMOptions pOptions );
 
-	/**
+	
+
+/**
 	 * Retrieves the ISCMElementItem that represents the IProject. If there is none, 0 is returned.
 	*/
 	public ISCMElementItem getProjectItem();
 
-	/**
+	
+
+/**
 	 * Retrieves the ISCMWorkspaceItem that represents the IWorkspace. If there is none, 0 is returned.
 	*/
 	public ISCMWorkspaceItem getWorkspaceItem();
 
-	/**
+	
+
+/**
 	 * Retrieves a sub group that only contains ISCMDiagramItems.
 	*/
 	public ISCMItemGroup getDiagrams();
 
-	/**
+	
+
+/**
 	 * Calls Validate() on all internal ISCMItems
 	*/
 	public void validate();

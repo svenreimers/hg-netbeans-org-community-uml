@@ -50,12 +50,16 @@ import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure
 
 public interface IChangeEvent extends IEvent
 {
-	/**
+	
+
+/**
 	 * Sets / Gets the boolean-valued expression that results in the occurrence of the change event when its value becomes true.
 	*/
 	public IExpression getChangeExpression();
 
-	/**
+	
+
+/**
 	 * Sets / Gets the boolean-valued expression that results in the occurrence of the change event when its value becomes true.
 	*/
 	public void setChangeExpression( IExpression value );

@@ -65,7 +65,9 @@ public final class ReplaceInModelAction extends CallableSystemAction
 		OpenProjects.getDefault().addPropertyChangeListener(this);
     }
 
-	/**
+	
+
+/**
      * This method is called if we are listening for changes on the set
      * of open projecst and some project(s) is opened/closed.
      */

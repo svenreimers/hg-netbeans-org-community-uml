@@ -50,6 +50,8 @@ import org.netbeans.modules.uml.core.metamodel.infrastructure.IConnector;
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier;
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation;
 import org.netbeans.modules.uml.core.AbstractUMLTestCase;
+
+
 /**
  * Test cases for Message.
  */
@@ -62,7 +64,9 @@ public class MessageTestCase extends AbstractUMLTestCase
 
     private IMessage m;
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see junit.framework.TestCase#setUp()
      */
     protected void setUp() throws Exception
@@ -225,7 +229,7 @@ public class MessageTestCase extends AbstractUMLTestCase
 
     public void testGetRecurrence()
     {
-        // AZTEC: TODO: How to test?
+        
     }
 
     public void testSetSendEvent()

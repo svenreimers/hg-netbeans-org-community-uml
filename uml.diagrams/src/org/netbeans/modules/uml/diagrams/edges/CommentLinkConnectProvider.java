@@ -55,6 +55,7 @@ import org.netbeans.modules.uml.drawingarea.LabelManager;
 import org.netbeans.modules.uml.drawingarea.actions.SceneConnectProvider;
 import org.openide.util.Lookup;
 
+
 /**
  * A comment link does not have an actual relationship model element that 
  * represents the relationship.  Instead the element that is associated with 

@@ -52,27 +52,32 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
  */
 public interface INameCollisionHandler
 {
-	/**
+	
+/**
 	 * Fired whenever the name of element is about to change to the name of an existing element.
 	*/
 	public long onPreNameCollision( INamedElement pElement, String sProposedName, ETList<INamedElement> pCollidingElements, IResultCell pCell );
 
-	/**
+	
+/**
 	 * Fired whenever the name of element has changed to the name of an existing element.
 	*/
 	public long onNameCollision( INamedElement pElement, ETList<INamedElement> pCollidingElements, IResultCell pCell );
 
-	/**
+	
+/**
 	 * Notification that the parent listener was disabled.
 	*/
 	public long listenerDisabled();
 
-	/**
+	
+/**
 	 * Fired whenever the alias name of the passed in element is about to change.
 	*/
 	public long onPreAliasNameModified( INamedElement element, String proposedName, IResultCell cell );
 
-	/**
+	
+/**
 	 * Fired whenever the element's alias name has changed.
 	*/
 	public long onAliasNameModified( INamedElement element, IResultCell cell );

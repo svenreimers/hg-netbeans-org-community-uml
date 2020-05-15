@@ -105,7 +105,9 @@ public class StateElementsCDFSTests extends UMLTestCase {
         }
         
         //checking diagram node was created
-            /*
+            
+
+/*
             if (!util.nodeExists(DIA_PATH)){
                eventTool.waitNoEvent(5000);
                 fail("testCDFSStateAborted verification failed");
@@ -137,7 +139,9 @@ public class StateElementsCDFSTests extends UMLTestCase {
         }
         
         //checking diagram node was created
-            /*
+            
+
+/*
             if (!util.nodeExists(DIA_PATH)){
                eventTool.waitNoEvent(5000);
                 fail("testCDFSStateAborted verification failed");
@@ -169,7 +173,9 @@ public class StateElementsCDFSTests extends UMLTestCase {
         }
         
         //checking diagram node was created
-            /*
+            
+
+/*
             if (!util.nodeExists(DIA_PATH)){
                eventTool.waitNoEvent(5000);
                 fail("testCDFSChoice verification failed");
@@ -200,7 +206,9 @@ public class StateElementsCDFSTests extends UMLTestCase {
         }
         
         //checking diagram node was created
-            /*
+            
+
+/*
             if (!util.nodeExists(DIA_PATH)){
                eventTool.waitNoEvent(5000);
                 fail("testCDFSFork verification failed");
@@ -232,7 +240,9 @@ public class StateElementsCDFSTests extends UMLTestCase {
         }
         
         //checking diagram node was created
-            /*
+            
+
+/*
             if (!util.nodeExists(DIA_PATH)){
                eventTool.waitNoEvent(5000);
                 fail("testCDFSHistoryState verification failed");
@@ -264,7 +274,9 @@ public class StateElementsCDFSTests extends UMLTestCase {
         }
         
         //checking diagram node was created
-            /*
+            
+
+/*
             if (!util.nodeExists(DIA_PATH)){
                eventTool.waitNoEvent(5000);
                 fail("testCDFSStateAborted verification failed");
@@ -295,7 +307,9 @@ public class StateElementsCDFSTests extends UMLTestCase {
         }
         
         //checking diagram node was created
-            /*
+            
+
+/*
             if (!util.nodeExists(DIA_PATH)){
                eventTool.waitNoEvent(5000);
                 fail("testCDFSCompositeState verification failed");
@@ -327,7 +341,9 @@ public class StateElementsCDFSTests extends UMLTestCase {
         }
         
         //checking diagram node was created
-            /*
+            
+
+/*
             if (!util.nodeExists(DIA_PATH)){
                eventTool.waitNoEvent(5000);
                 fail("testCDFSSimpleState verification failed");
@@ -358,7 +374,9 @@ public class StateElementsCDFSTests extends UMLTestCase {
         }
         
         //checking diagram node was created
-            /*
+            
+
+/*
             if (!util.nodeExists(DIA_PATH)){
                eventTool.waitNoEvent(5000);
                 fail("testCDFSSubmachineState verification failed");

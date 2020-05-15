@@ -43,11 +43,8 @@
  */
 
 
-/*
- * File       : MethodDetroyStateHandler.java
- * Created on : Dec 10, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.statehandlers;
 
 import org.dom4j.Node;
@@ -73,7 +70,9 @@ public class MethodDetroyStateHandler extends MethodDetailStateHandler
         m_IdentifierCount = 0;
     }
 
-    /**
+    
+
+/**
      * Create a new state handler to be added to the state mechanism.  If the
      * state is not a state that is being processed then a new state handler is
      * not created.  The states of interest is <code>Expression List</code>
@@ -98,7 +97,9 @@ public class MethodDetroyStateHandler extends MethodDetailStateHandler
         return retVal;
     }
 
-    /**
+    
+
+/**
      * Initialize the state handler.  This is a one time initialization.
      */
     public void initialize()
@@ -106,7 +107,9 @@ public class MethodDetroyStateHandler extends MethodDetailStateHandler
        // No valid implementation in the C++ code base.
     }
 
-    /**
+    
+
+/**
      * Process a new token.  The tokens that are processed are in the
      * context of an object creation.  The tokens of interest are
      * <code>Argument Start</code>, and <code>Argument End</code>
@@ -131,7 +134,9 @@ public class MethodDetroyStateHandler extends MethodDetailStateHandler
         }
     }
 
-    /**
+    
+
+/**
      * Notification that the a state has completed.
      *
      * @param stateName [in] The name of the state.
@@ -166,7 +171,9 @@ public class MethodDetroyStateHandler extends MethodDetailStateHandler
         }
     }
 
-    /**
+    
+
+/**
      * Retrieves the instance that is going to be the destroyed.
      *
      * @param identifier [in] The instance.
@@ -180,7 +187,9 @@ public class MethodDetroyStateHandler extends MethodDetailStateHandler
         return table.findInstance(name);
     }
 
-    /**
+    
+
+/**
      * Sends a destroy event to all listeners.
      *
      * @param ref [in] The instance that is being destroyed.
@@ -197,7 +206,9 @@ public class MethodDetroyStateHandler extends MethodDetailStateHandler
         }
     }
 
-    /**
+    
+
+/**
      * writes a destroy event data to the parent node.
      *
      * @param ref [in] The instance that is being destroyed.

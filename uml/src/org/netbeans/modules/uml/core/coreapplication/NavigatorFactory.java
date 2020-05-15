@@ -61,7 +61,9 @@ public class NavigatorFactory implements INavigatorFactory
 		super();
 	}
 
-	/**
+	
+
+/**
 	 * Creates a Navigator object based on the requested type of navigator as specified by @a navigatorType.
 	 *
 	 * @param navigatorType the type of Navigator object to create

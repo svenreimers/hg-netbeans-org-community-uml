@@ -56,6 +56,7 @@ import org.netbeans.test.umllib.NewDiagramWizardOperator;
 import org.netbeans.test.umllib.testcases.UMLTestCase;
 import org.netbeans.test.umllib.vrf.GenericVerifier;
 
+
 /**
  *
  * @spec uml/UMLRobustness.xml

@@ -57,7 +57,9 @@ import org.netbeans.modules.uml.core.reverseengineering.reframework.IRESuperClas
  */
 public class SourceElementLocator<T>
 {
-    /**
+    
+
+/**
      * Searches the class hierarchy for the desired element.  The Locator
      * evaluator is used to determine if a element is the desired element.
      * The element that is to be found must implement the == operator.
@@ -79,7 +81,7 @@ public class SourceElementLocator<T>
             T                       val) {
         if (leafContext == null || classLoader == null)
             return null;
-        //Kris - why is "traversImplementations" false??
+        
         
         // First search the leaf.  If we find it then there is no
         // need to search the rest of the tree structure.
@@ -121,7 +123,9 @@ public class SourceElementLocator<T>
         return val;
     }
     
-    /**
+    
+
+/**
      * Searches the generalizations to deterimine if any of the super
      * classes define the element.
      *
@@ -145,7 +149,7 @@ public class SourceElementLocator<T>
             T val) {
         if (gens == null || classLoader == null) return null;
         
-        // TODO: Need to figure out a way to be more generic when the super
+        
         //       class is not specified
         int count = gens.getCount();
         if(count > 0) {
@@ -174,7 +178,9 @@ public class SourceElementLocator<T>
         return val;
     }
     
-    /**
+    
+
+/**
      * Searches the realizations to deterimine if any of the interfaces
      * define the element.
      *
@@ -216,7 +222,9 @@ public class SourceElementLocator<T>
     }
     
     
-    /**
+    
+
+/**
      * Searches all of the generalizations to deterimine if any of the super
      * classes define the element.  TraverseSuperClasses calls Locate on
      * all super classes found in the IREGeneralization collection.
@@ -255,7 +263,9 @@ public class SourceElementLocator<T>
         return val;
     }
     
-    /**
+    
+
+/**
      * Searches all of the interfaces to deterimine if any of the super
      * classes define the element.  TraverseInterfaces calls Locate on
      * all interfaces found in the IRERealization collection.

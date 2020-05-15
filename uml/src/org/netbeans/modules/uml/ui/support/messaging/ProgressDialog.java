@@ -54,6 +54,8 @@ import org.netbeans.modules.uml.common.generics.ETPairT;
 import org.netbeans.modules.uml.ui.support.ProductHelper;
 import org.netbeans.modules.uml.ui.support.applicationmanager.IProxyUserInterface;
 
+
+
 /**
  * Implements a progress dialog showing messages in a tree format and a progress indicator.  It
  * wraps an dialog called ProgressDialogImp.
@@ -80,7 +82,9 @@ public class ProgressDialog extends ProgressDialogImp implements IProgressDialog
       super();
    }
 
-   /**
+   
+
+/**
     * Tells any connection points that the dialog has been canceled.
     */
    public void onCancel()
@@ -104,7 +108,9 @@ public class ProgressDialog extends ProgressDialogImp implements IProgressDialog
       }
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.messaging.ProgressDialogImp#clearFields()
     */
    public long clearFields()
@@ -112,7 +118,9 @@ public class ProgressDialog extends ProgressDialogImp implements IProgressDialog
       return super.clearFields();
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.messaging.ProgressDialogImp#close()
     */
    public long close()
@@ -120,7 +128,9 @@ public class ProgressDialog extends ProgressDialogImp implements IProgressDialog
       return super.close();
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.messaging.ProgressDialogImp#display(int)
     */
    public boolean display(int mode)
@@ -128,7 +138,9 @@ public class ProgressDialog extends ProgressDialogImp implements IProgressDialog
       return super.display(mode);
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.messaging.ProgressDialogImp#getCloseWhenDone()
     */
    public boolean getCloseWhenDone()
@@ -136,7 +148,9 @@ public class ProgressDialog extends ProgressDialogImp implements IProgressDialog
       return super.getCloseWhenDone();
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.messaging.ProgressDialogImp#getCollapse()
     */
    public boolean getCollapse()
@@ -144,7 +158,9 @@ public class ProgressDialog extends ProgressDialogImp implements IProgressDialog
       return super.getCollapse();
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.messaging.ProgressDialogImp#getDefaultExtension()
     */
    public String getDefaultExtension()
@@ -152,7 +168,9 @@ public class ProgressDialog extends ProgressDialogImp implements IProgressDialog
       return super.getDefaultExtension();
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.messaging.ProgressDialogImp#getFieldOne()
     */
    public String getFieldOne()
@@ -160,7 +178,9 @@ public class ProgressDialog extends ProgressDialogImp implements IProgressDialog
       return super.getFieldOne();
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.messaging.ProgressDialogImp#getFieldThree()
     */
    public String getFieldThree()
@@ -168,7 +188,9 @@ public class ProgressDialog extends ProgressDialogImp implements IProgressDialog
       return super.getFieldThree();
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.messaging.ProgressDialogImp#getFieldTwo()
     */
    public String getFieldTwo()
@@ -176,7 +198,9 @@ public class ProgressDialog extends ProgressDialogImp implements IProgressDialog
       return super.getFieldTwo();
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.messaging.ProgressDialogImp#getGroupingTitle()
     */
    public String getGroupingTitle()
@@ -184,7 +208,9 @@ public class ProgressDialog extends ProgressDialogImp implements IProgressDialog
       return super.getGroupingTitle();
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.messaging.ProgressDialogImp#getIncrementAmount()
     */
    public int getIncrementAmount()
@@ -192,7 +218,9 @@ public class ProgressDialog extends ProgressDialogImp implements IProgressDialog
       return super.getIncrementAmount();
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.messaging.ProgressDialogImp#getIsCancelled()
     */
    public boolean getIsCancelled()
@@ -200,7 +228,9 @@ public class ProgressDialog extends ProgressDialogImp implements IProgressDialog
       return super.getIsCancelled();
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.messaging.ProgressDialogImp#getLimits(int, int)
     */
    public ETPairT < Integer, Integer > getLimits()
@@ -208,7 +238,9 @@ public class ProgressDialog extends ProgressDialogImp implements IProgressDialog
       return super.getLimits();
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.messaging.ProgressDialogImp#getLogFileName()
     */
    public String getLogFileName()
@@ -216,7 +248,9 @@ public class ProgressDialog extends ProgressDialogImp implements IProgressDialog
       return super.getLogFileName();
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.messaging.ProgressDialogImp#getPosition()
     */
    public int getPosition()
@@ -224,7 +258,9 @@ public class ProgressDialog extends ProgressDialogImp implements IProgressDialog
       return super.getPosition();
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.messaging.ProgressDialogImp#getProgressExecutor()
     */
    public IProgressExecutor getProgressExecutor()
@@ -232,7 +268,9 @@ public class ProgressDialog extends ProgressDialogImp implements IProgressDialog
       return super.getProgressExecutor();
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.messaging.ProgressDialogImp#increment()
     */
    public int increment(int value)
@@ -245,7 +283,9 @@ public class ProgressDialog extends ProgressDialogImp implements IProgressDialog
       return super.increment();
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.messaging.ProgressDialogImp#lockMessageCenterUpdate()
     */
    public void lockMessageCenterUpdate()
@@ -253,7 +293,9 @@ public class ProgressDialog extends ProgressDialogImp implements IProgressDialog
       super.lockMessageCenterUpdate();
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.messaging.ProgressDialogImp#log(int, java.lang.String, java.lang.String, java.lang.String, java.lang.String)
     */
    public void log(int type, String group, String first, String second, String third)
@@ -261,7 +303,9 @@ public class ProgressDialog extends ProgressDialogImp implements IProgressDialog
       super.log(type, group, first, second, third);
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.messaging.ProgressDialogImp#promptForClosure(java.lang.String, boolean)
     */
    public void promptForClosure(String buttonTitle, boolean beep)
@@ -269,7 +313,9 @@ public class ProgressDialog extends ProgressDialogImp implements IProgressDialog
       super.promptForClosure(buttonTitle, beep);
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.messaging.ProgressDialogImp#setCloseWhenDone(boolean)
     */
    public void setCloseWhenDone(boolean value)
@@ -277,7 +323,9 @@ public class ProgressDialog extends ProgressDialogImp implements IProgressDialog
       super.setCloseWhenDone(value);
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.messaging.ProgressDialogImp#setCollapse(boolean)
     */
    public void setCollapse(boolean value)
@@ -285,7 +333,9 @@ public class ProgressDialog extends ProgressDialogImp implements IProgressDialog
       super.setCollapse(value);
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.messaging.ProgressDialogImp#setDefaultExtension(java.lang.String)
     */
    public void setDefaultExtension(String value)
@@ -293,7 +343,9 @@ public class ProgressDialog extends ProgressDialogImp implements IProgressDialog
       super.setDefaultExtension(value);
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.messaging.ProgressDialogImp#setFieldOne(java.lang.String, int)
     */
    public void setFieldOne(String newVal, int type)
@@ -301,7 +353,9 @@ public class ProgressDialog extends ProgressDialogImp implements IProgressDialog
       super.setFieldOne(newVal, type);
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.messaging.ProgressDialogImp#setFieldOne(java.lang.String)
     */
    public void setFieldOne(String value)
@@ -309,7 +363,9 @@ public class ProgressDialog extends ProgressDialogImp implements IProgressDialog
       super.setFieldOne(value);
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.messaging.ProgressDialogImp#setFieldThree(java.lang.String, int)
     */
    public void setFieldThree(String newVal, int type)
@@ -317,7 +373,9 @@ public class ProgressDialog extends ProgressDialogImp implements IProgressDialog
       super.setFieldThree(newVal, type);
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.messaging.ProgressDialogImp#setFieldThree(java.lang.String)
     */
    public void setFieldThree(String value)
@@ -325,7 +383,9 @@ public class ProgressDialog extends ProgressDialogImp implements IProgressDialog
       super.setFieldThree(value);
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.messaging.ProgressDialogImp#setFieldTwo(java.lang.String, int)
     */
    public void setFieldTwo(String newVal, int type)
@@ -333,7 +393,9 @@ public class ProgressDialog extends ProgressDialogImp implements IProgressDialog
       super.setFieldTwo(newVal, type);
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.messaging.ProgressDialogImp#setFieldTwo(java.lang.String)
     */
    public void setFieldTwo(String value)
@@ -341,7 +403,9 @@ public class ProgressDialog extends ProgressDialogImp implements IProgressDialog
       super.setFieldTwo(value);
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.messaging.ProgressDialogImp#setGroupingTitle(java.lang.String, int)
     */
    public void setGroupingTitle(String newVal, int type)
@@ -349,7 +413,9 @@ public class ProgressDialog extends ProgressDialogImp implements IProgressDialog
       super.setGroupingTitle(newVal, type);
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.messaging.ProgressDialogImp#setGroupingTitle(java.lang.String)
     */
    public void setGroupingTitle(String value)
@@ -357,7 +423,9 @@ public class ProgressDialog extends ProgressDialogImp implements IProgressDialog
       super.setGroupingTitle(value);
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.messaging.ProgressDialogImp#setIncrementAmount(int)
     */
    public void setIncrementAmount(int value)
@@ -365,7 +433,9 @@ public class ProgressDialog extends ProgressDialogImp implements IProgressDialog
       super.setIncrementAmount(value);
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.messaging.ProgressDialogImp#setLimits(int, int)
     */
    public void setLimits(ETPairT < Integer, Integer > pLimits)
@@ -373,7 +443,9 @@ public class ProgressDialog extends ProgressDialogImp implements IProgressDialog
       super.setLimits(pLimits);
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.messaging.ProgressDialogImp#setLogFileName(java.lang.String)
     */
    public void setLogFileName(String value)
@@ -381,7 +453,9 @@ public class ProgressDialog extends ProgressDialogImp implements IProgressDialog
       super.setLogFileName(value);
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.messaging.ProgressDialogImp#setPosition(int)
     */
    public void setPosition(int value)
@@ -389,7 +463,9 @@ public class ProgressDialog extends ProgressDialogImp implements IProgressDialog
       super.setPosition(value);
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.messaging.ProgressDialogImp#setProgressExecutor(org.netbeans.modules.uml.ui.support.messaging.IProgressExecutor)
     */
    public void setProgressExecutor(IProgressExecutor value)
@@ -397,7 +473,9 @@ public class ProgressDialog extends ProgressDialogImp implements IProgressDialog
       super.setProgressExecutor(value);
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.messaging.ProgressDialogImp#unlockMessageCenterUpdate()
     */
    public void unlockMessageCenterUpdate()

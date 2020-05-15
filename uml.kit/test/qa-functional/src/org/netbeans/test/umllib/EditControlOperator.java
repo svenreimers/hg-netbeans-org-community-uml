@@ -43,6 +43,8 @@
  */
 
 
+
+
 /*
  * EditControlOperator.java
  *
@@ -62,6 +64,7 @@ import org.netbeans.jemmy.operators.JTextAreaOperator;
 import org.netbeans.jemmy.operators.JTextFieldOperator;
 import org.netbeans.modules.uml.ui.controls.editcontrol.EditControlImpl;
 
+
 /**
  * class handles current EditControl
  */
@@ -73,7 +76,9 @@ public class EditControlOperator extends JComponentOperator {
     
    
     
-    /** 
+    
+
+/** 
      * Creates a new instance of first visible EditControlOperator 
      */
     public EditControlOperator() {
@@ -83,7 +88,9 @@ public class EditControlOperator extends JComponentOperator {
     public EditControlOperator(ContainerOperator cont) {
         super(cont, new EditControlChooser());
     }
-        /**
+        
+
+/**
      * Creates a new instance of EditControlOperator
      * use case insensitive an
      * @param text in panel
@@ -92,7 +99,9 @@ public class EditControlOperator extends JComponentOperator {
        super(MainWindowOperator.getDefault(), new EditControlChooserByText(text));
         
     }
-    /**
+    
+
+/**
      * Creates a new instance of EditControlOperator 
      * @param text in panel
      * @param ce -compare exactly
@@ -101,7 +110,9 @@ public class EditControlOperator extends JComponentOperator {
      public EditControlOperator(String text, boolean ce, boolean cs) {
        super(MainWindowOperator.getDefault(), new EditControlChooserByText(text,ce,cs));  
     }
-   /**
+   
+
+/**
      * Find textfield in edit control panel
      * we assume only one textfield in panel for now
      * @return JTextFieldOperator for first textfield in edit control panel
@@ -109,7 +120,9 @@ public class EditControlOperator extends JComponentOperator {
     public JTextFieldOperator getTextFieldOperator() {
         return new JTextFieldOperator(this);
     }
-   /**
+   
+
+/**
      * Find textfield in edit control panel
      * we assume only one textfield in panel for now
      * @return JTextFieldOperator for first textfield in edit control panel
@@ -118,7 +131,9 @@ public class EditControlOperator extends JComponentOperator {
         return new JTextAreaOperator(this);
     }
     
-    /**
+    
+
+/**
      * TBD - check if there is TextAre instead of textfield
      * @param text 
      */
@@ -130,18 +145,24 @@ public class EditControlOperator extends JComponentOperator {
 };
 
 
+
+
 /**
  * Findder for Edit Control panel (based on current realization)
  */
 class EditControlChooser implements ComponentChooser
 {
     private String frameTitle=MainWindowOperator.getDefault().getTitle();
-     /**
+     
+
+/**
       * chooser with all default values
       */
      EditControlChooser(){}
      //
-    /**
+    
+
+/**
      * 
      * @param comp 
      * @return 
@@ -152,7 +173,9 @@ class EditControlChooser implements ComponentChooser
          JComponent ec=JComponentOperator.findJComponent(cmp,new checkETEditControlObject());
         return ec!=null && cmp.isShowing() && ((Frame)(comp.getParent())).getTitle().equals(frameTitle);
      }
-    /**
+    
+
+/**
      * 
      * @return 
      */
@@ -168,7 +191,9 @@ class EditControlChooserByText implements ComponentChooser
     private boolean ce=false;
     private String frameTitle=MainWindowOperator.getDefault().getTitle();
    
-    /**
+    
+
+/**
      * find specific panel with param name
      * @param txt 
      */
@@ -176,7 +201,9 @@ class EditControlChooserByText implements ComponentChooser
      {
         text=txt;
      }
-    /**
+    
+
+/**
      * 
      * @param txt 
      * @param e 
@@ -189,7 +216,9 @@ class EditControlChooserByText implements ComponentChooser
         text=txt;
      }
      //
-    /**
+    
+
+/**
      * 
      * @param comp 
      * @return 
@@ -200,7 +229,9 @@ class EditControlChooserByText implements ComponentChooser
         JComponent ec=JComponentOperator.findJComponent(cmp,new checkETEditControlObject());
          return ec!=null  && ((Frame)(comp.getParent())).getTitle().equals(frameTitle) && JTextFieldOperator.findJTextField(cmp,text,ce,cs)!=null;
      }
-    /**
+    
+
+/**
      * 
      * @return 
      */
@@ -213,7 +244,9 @@ class EditControlChooserByText implements ComponentChooser
 //-------------------
 class checkETEditControlObject implements ComponentChooser
 {
-    /**
+    
+
+/**
      * 
      * @param comp 
      * @return 
@@ -222,7 +255,9 @@ class checkETEditControlObject implements ComponentChooser
     {
         return comp.isShowing() && (comp instanceof EditControlImpl);
     }
-    /**
+    
+
+/**
      * 
      * @return 
      */

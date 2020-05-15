@@ -42,12 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File         : MemberInfo.java
- * Version      : 1.4
- * Description  : Information about the changes to an attribute.
- * Author       : Trey Spiva
- */
+
+
 package org.netbeans.modules.uml.integration.ide.events;
 
 import java.lang.reflect.Modifier;
@@ -75,42 +71,8 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 import org.netbeans.modules.uml.util.DummyCorePreference;
 import org.openide.util.NbPreferences;
 
-/**
- * The MemberInfo communicates with the EventManager to update Describe.
- * MemberInfo is still a high level class.  It knows how to communicate with
- * the EventMangaer to update Describe, but it does not know any of the details
- * of how to update Describe.
- * <br>
- * Because MemberInfo contains both before and after data, MemberInfo is able
- * to search for the data member and update it to how the source file current
- * represents the member.
- *
- * Revision History
- * No.  Date        Who         What
- * ---  ----        ---         ----
- *   1  2002-04-25  Darshan     Added (currently empty) constructors to
- *                              create a MemberInfo given an IAttribute.
- *   2  2002-04-26  Darshan     Added constructor to create a MemberInfo off
- *                              an IAttribute and reformatted the file to
- *                              4-space tabs.
- *   3  2002-04-30  Darshan     Used JavaClassUtils to map Describe's modifiers
- *                              to Java modifiers.
- *   4  2002-05-06  Darshan     Changed MemberInfo(ClassInfo, IAttribute) to
- *                              call the ElementInfo(INamedElement) constructor.
- *   5  2002-05-29  Darshan     Added check for navigable ends.
- *   6  2002-06-05  Darshan     Allow creation of MemberInfo from an
- *                              IStructuralFeature instead of an IAttribute,
- *                              since this allows us to construct MemberInfos
- *                              from INavigableEnds (so that we can navigate
- *                              to the attribute for a navigable end).
- *   7  2002-06-21  Darshan     Expanded check for the parent class for an
- *                              INavigableEnd, fixed attribute delete and
- *                              initializer bugs.
- *   8  2002-06-22  Darshan     Included code suggested by Sumitabh to find the
- *                              referencing classifier of an INavigableEnd.
- *
- * @see EventManager
- */
+
+
 public class MemberInfo extends ElementInfo
 {
     /** The containing class information. */
@@ -122,16 +84,17 @@ public class MemberInfo extends ElementInfo
     /** The fully qualified name of the original type of the data member. */
     private String mOrigQualType  = null;
 
-    /**
+    
+
+/**
      * The data type of this data member as should be created in the source,
      * assuming that the source does not already contain a member of type
      * mOrigType or mOrigQualType. If null, this can be ignored.
      */
     private String collectionType = null;
 
-    /** A global option that specifies whether or not to use generics when
-     *  Collection data types are generated in code
-     */
+    
+
     private boolean useGenerics = false;
 
     /** The new data type of the data member. */
@@ -145,7 +108,9 @@ public class MemberInfo extends ElementInfo
 
     private int modifierMask;
 
-    /**
+    
+
+/**
      *  The IAttribute from which this MemberInfo was constructed. If the
      * MemberInfo was constructed by an IDE integration, this should be null.
      */
@@ -154,7 +119,9 @@ public class MemberInfo extends ElementInfo
     public IAttribute getAttribute() {
     	return (IAttribute)attribute;   
     }
-    /**
+    
+
+/**
      *  Intiailizes a new MemberInfo.
      *  @param container The class that contains the data member.
      *  @param type The transaction type.
@@ -176,7 +143,9 @@ public class MemberInfo extends ElementInfo
         setFromAttribute(attribute);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      */
     public IProject getOwningProject() {
         return attribute != null?
@@ -208,7 +177,9 @@ public class MemberInfo extends ElementInfo
                            : null;
     }
 
-    /**
+    
+
+/**
      * Set all properties for this MemberInfo using info from the given
      * IStructuralFeature.
      * @param attr An <code>IStructuralFeature</code> for the attribute (or
@@ -351,7 +322,9 @@ public class MemberInfo extends ElementInfo
     }
 
 
-    /**
+    
+
+/**
      * Retrieves the containing clas of the data member.
      * @return The containing class.
      */
@@ -360,7 +333,9 @@ public class MemberInfo extends ElementInfo
         return mContainer;
     }
 
-    /**
+    
+
+/**
      * Sets the containing clas of the data member.
      * @param container The containing class.
      */
@@ -369,7 +344,9 @@ public class MemberInfo extends ElementInfo
         mContainer = container;
     }
 
-    /**
+    
+
+/**
      * Sets the original type of the data member.
      * @param fullName The fully qualified type data member
      * @param value The data types simple name.
@@ -380,7 +357,9 @@ public class MemberInfo extends ElementInfo
         mOrigQualType = fullName;
     }
 
-    /**
+    
+
+/**
      * Retrieves the simple name for the data member's original type.
      * @return The data types simple name.
      */
@@ -389,7 +368,9 @@ public class MemberInfo extends ElementInfo
         return mOrigType;
     }
 
-    /**
+    
+
+/**
      * Retrieves the full name for the data member's original type.
      * @return The fully qualified type data member.
      */
@@ -400,9 +381,9 @@ public class MemberInfo extends ElementInfo
 
     public String getCollectionOverrideDataType() 
     {
-        // TODO: conover - change this to use attribute level property
+        
         // rather than the global preference
-        //kris richards - made change to nbpreferences
+        
         return NbPreferences.forModule(DummyCorePreference.class).get("UML_COLLECTION_OVERRIDE_DEFAULT", "java.util.ArrayList"); // NOI18N
     }
 
@@ -414,7 +395,7 @@ public class MemberInfo extends ElementInfo
 
     public boolean isUseCollectionOverride()
     {
-        // TODO: conover - change this to use attribute level property
+        
         // rather than the global preference
         return getAttribute().getMultiplicity().getRangeCount() > 0 &&
             Util.isValidCollectionDataType(getCollectionOverrideDataType());
@@ -422,14 +403,16 @@ public class MemberInfo extends ElementInfo
 
     public boolean isUseGenerics()
     {
-        // TODO: conover - eventually, use the atribute level property
+        
         // instead of this global preference
-        //kris richards - made change to nbpreferences
+        
         return NbPreferences.forModule(DummyCorePreference.class).getBoolean("UML_USE_GENERICS_DEFAULT", true); // NOI18N
         
     }
 
-    /**
+    
+
+/**
      * Sets the new type of the data member.
      * @param fullName The fully qualified type data member
      * @param value The data types simple name.
@@ -440,7 +423,9 @@ public class MemberInfo extends ElementInfo
         mNewQualType = fullName;
     }
 
-    /**
+    
+
+/**
      * Retrieves the simple name for the data member's new type.
      * @return The data types simple name.
      */
@@ -449,7 +434,9 @@ public class MemberInfo extends ElementInfo
         return mNewType;
     }
 
-    /**
+    
+
+/**
      * Retrieves the full name for the data member's new type.
      * @return The fully qualified type data member.
      */
@@ -458,7 +445,9 @@ public class MemberInfo extends ElementInfo
         return mNewQualType;
     }
 
-    /**
+    
+
+/**
      * Checks if the data type of the attribute is primitive
      * @return true if data type is non primitive or not a String
      */
@@ -468,7 +457,9 @@ public class MemberInfo extends ElementInfo
            !JavaClassUtils.isPrimitive(mOrigQualType);
     }
 
-    /**
+    
+
+/**
      * Retrieves the initailizer for the data member.
      * @return The data members initailizer.
      */
@@ -477,7 +468,9 @@ public class MemberInfo extends ElementInfo
         return mInitializer;
     }
 
-    /**
+    
+
+/**
      * Sets the initailizer for the data member.
      * @return The data members initailizer.
      */
@@ -486,7 +479,9 @@ public class MemberInfo extends ElementInfo
         mInitializer = value;
     }
 
-    /**
+    
+
+/**
      * Updates the data member.  A Class Transaction is began and {@link #update(GDSymbolTransaction trans) update}
      * is called.
      */
@@ -548,7 +543,9 @@ public class MemberInfo extends ElementInfo
     private String codeGenTypeFullyQualified = null;
     private String codeGenTypeShort = null;
     
-    /**
+    
+
+/**
      * Updates the data member using the specified Symbol transaction.
      * @param trans The transaction that is to be used to update the correct symbol.
      * @return The member transaction that was created to update the data member.
@@ -652,7 +649,7 @@ public class MemberInfo extends ElementInfo
                             
                             restorer.setMode(RTMode.RTM_LIVE);
                             facility.typeChanged((IAttribute)attribute);
-                            // IZ 80035: conover
+                            
                             // if there was a type change, there might
                             // have been a multiplicity change
                             facility.multiplicityChanged((IAttribute)attribute);
@@ -740,7 +737,9 @@ public class MemberInfo extends ElementInfo
         return str.toString();
     }
 
-    /**
+    
+
+/**
      *  Strips out array specifiers from a given type name.
      * @param  name  The type name (possibly including array specifiers)
      * @return For "int[][]" returns "int"
@@ -753,7 +752,9 @@ public class MemberInfo extends ElementInfo
         return (arrPos == -1)? name : name.substring(0, arrPos).trim();
     }
 
-    /**
+    
+
+/**
      *  Returns the number of array specifiers that qualify the type name given.
      * @param name  The type name (including array specifiers)
      * @return The number of array specifiers. Ex: For "int[][]", returns 2.

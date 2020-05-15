@@ -71,7 +71,9 @@ public class Namespace extends NamedElement implements INamespace{
 	/// is being deleted
 	private static Vector < String > s_MetaTypes = new Vector < String >();
 
-	/**
+	
+
+/**
 	 *
 	 * Adds an element to this Namespace.
 	 *
@@ -162,7 +164,9 @@ public class Namespace extends NamedElement implements INamespace{
       return retVal;
 	}
 
-	/**
+	
+
+/**
 	 * The element being moved could contain diagrams.  So we need to 
 	 * make sure to move the diagrams if the toplevel project for the element
 	 * differs from this namespace
@@ -191,7 +195,9 @@ public class Namespace extends NamedElement implements INamespace{
 		return moved;
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * This deletes the diagrams from this namespace, if there are any.
 	 *
@@ -218,7 +224,9 @@ public class Namespace extends NamedElement implements INamespace{
 		{}
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Looks for any owner of presentation element. We know we have a presentation
 	 * element as the removeOnSave xml attribute will be present
@@ -235,7 +243,9 @@ public class Namespace extends NamedElement implements INamespace{
 		}
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Calls delete on any owned elements of a particular type. The types notifiable during a delete
 	 * of this Namespace is preference driven.
@@ -245,7 +255,7 @@ public class Namespace extends NamedElement implements INamespace{
 	 */
 	private void deleteNotifiableElements() {
 
-            //kris richards - removed call to deleted method buildNotifyList. (pref issue; see UMLOptionsDialog wiki)
+            
 		String query = "UML:Element.ownedElement/";
 		if (s_MetaTypes.size() > 0)
 		{
@@ -258,7 +268,9 @@ public class Namespace extends NamedElement implements INamespace{
 		
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Queries the current namespace for a particular element type. If that
 	 * type is found, Delete() is called on it
@@ -289,7 +301,9 @@ public class Namespace extends NamedElement implements INamespace{
 		}
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Makes sure that the internal static list of notifiable elements is established
 	 *
@@ -297,7 +311,9 @@ public class Namespace extends NamedElement implements INamespace{
 	 *
 	 */
 
-	/**
+	
+
+/**
 	 *
 	 * Removes the passed-in element from this Namespace.
 	 *
@@ -310,7 +326,9 @@ public class Namespace extends NamedElement implements INamespace{
 		removeElement(elem);
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Retrieves all the elements this Namespace directly owns.
 	 *
@@ -336,7 +354,9 @@ public class Namespace extends NamedElement implements INamespace{
 		return retElems;
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Adds a member that is visible within this Namespace. This 
 	 * element can either be owned or imported into this Namespace.
@@ -350,7 +370,9 @@ public class Namespace extends NamedElement implements INamespace{
 		addElementByID(elem, "member");
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Removes the passed-in element from the member list of this Namespace.
 	 *
@@ -363,7 +385,9 @@ public class Namespace extends NamedElement implements INamespace{
 		removeElementByID(elem, "member");
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Retrieves all the elements of the member list of this Namespace.
 	 *
@@ -378,7 +402,9 @@ public class Namespace extends NamedElement implements INamespace{
 		return retrieveElementCollection(dummy, "member", INamedElement.class);	
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Retrieves all the elements contained by this Namespace by name. The name should NOT be
 	 * fully qualified.
@@ -396,7 +422,9 @@ public class Namespace extends NamedElement implements INamespace{
 		return super.getOwnedElementsByName(name);
 	}
 
-	/**
+	
+
+/**
 	 * Description
 	 *
 	 * @param pVal[out]
@@ -411,7 +439,9 @@ public class Namespace extends NamedElement implements INamespace{
 		return UMLXMLManip.queryCount(m_Node, "member", true);
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Makes sure that any Namespace created has the name set to the default.
 	 *
@@ -425,7 +455,9 @@ public class Namespace extends NamedElement implements INamespace{
 		establishDefaultName();
 	}
 
-	/** 
+	
+
+/** 
 	 * Creates a package structure within this namespace
 	 * 
 	 * @param packageStructure[in] a "::" delimited package path
@@ -436,7 +468,9 @@ public class Namespace extends NamedElement implements INamespace{
 		return createPackageStructureInNamespace(packageStructure, this);
 	}
 	
-	/** 
+	
+
+/** 
 	 * Creates a package structure within a namespace
 	 * 
 	 * @param packageStructure[in] the "::" delimited package path to be created
@@ -476,7 +510,9 @@ public class Namespace extends NamedElement implements INamespace{
 		return retPack;
 	}
 	
-	/** 
+	
+
+/** 
 	 * If the package named @a name already exists, it is returned.
 	 * Otherwise, it is created.
 	 * 

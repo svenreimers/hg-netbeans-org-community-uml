@@ -69,7 +69,9 @@ public class UMLParserTestListener
             // the state has ended.
             if (oldData.handler != null) {
                 oldData.handler.stateComplete(stateName);
-            /*
+            
+
+/*
              * JavaUMLParserProcessor.removeStateHandler method is copied
              * and placed here. Only the Following line is added
              * additionally. If any modification made in
@@ -86,7 +88,9 @@ public class UMLParserTestListener
         }
     }
     
-    /**
+    
+
+/**
      *Add Valid XMI Data to the List.
      * This will be joined together to form the retrieved result
      */

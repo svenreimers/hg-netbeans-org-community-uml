@@ -48,6 +48,8 @@ package org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructur
 import org.netbeans.modules.uml.core.AbstractUMLTestCase;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.FactoryRetriever;
 
+
+
 /**
  * Test cases for UMLBinding.
  */
@@ -60,7 +62,9 @@ public class UMLBindingTestCase extends AbstractUMLTestCase
 
     private IUMLBinding bind;
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see junit.framework.TestCase#setUp()
      */
     protected void setUp() throws Exception
@@ -72,7 +76,9 @@ public class UMLBindingTestCase extends AbstractUMLTestCase
         project.addElement(bind);
     }
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see junit.framework.TestCase#tearDown()
      */
     protected void tearDown() throws Exception

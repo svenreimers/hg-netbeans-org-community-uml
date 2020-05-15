@@ -171,7 +171,9 @@ public final class NewUMLDiagWizardIterator
       wizard = null;
    }
    
-   /**
+   
+
+/**
     * Initialize panels representing individual wizard's steps and sets
     * various properties for them influencing wizard appearance.
     */

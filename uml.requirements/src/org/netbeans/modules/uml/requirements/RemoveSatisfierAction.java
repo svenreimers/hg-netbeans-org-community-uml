@@ -42,6 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
+
+
 /*
  * RemoveSatisfier.java
  *
@@ -171,7 +173,9 @@ public class RemoveSatisfierAction extends AbstractAction
          }
     }
 
-    /**
+    
+
+/**
     * Removes the Satisfer element from the Requirements Provider and also from
     * the Proxy file.
     *

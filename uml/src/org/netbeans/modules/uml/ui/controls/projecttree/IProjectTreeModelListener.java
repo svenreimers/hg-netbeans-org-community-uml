@@ -47,6 +47,7 @@
 package org.netbeans.modules.uml.ui.controls.projecttree;
 
 
+
 /**
  * Defines the interfaces for an object that listens to changed in a Project
  * Tree Model.
@@ -54,14 +55,16 @@ package org.netbeans.modules.uml.ui.controls.projecttree;
  */
 public interface IProjectTreeModelListener
 {
-   /**
+   
+/**
     * Invoked after a project has been closed.  When a project has been closed
     * the project model element has been removed from the project tree node, and
     * all of its children has been removed.
     */
    public void projectClosed(ProjectTreeModelEvent e);
 
-   /**
+   
+/**
     * Invoked after a project has been opened.
     */
    public void projectOpened(ProjectTreeModelEvent e);

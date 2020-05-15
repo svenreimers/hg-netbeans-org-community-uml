@@ -48,6 +48,8 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.FactoryRetriever;
 import org.netbeans.modules.uml.core.AbstractUMLTestCase;
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavior;
 
+
+
 /**
  * Test cases for Connector.
  */
@@ -60,7 +62,9 @@ public class ConnectorTestCase extends AbstractUMLTestCase
 
     private IConnector con;
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see junit.framework.TestCase#setUp()
      */
     protected void setUp() throws Exception
@@ -71,7 +75,9 @@ public class ConnectorTestCase extends AbstractUMLTestCase
         project.addElement(con);
     }
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see junit.framework.TestCase#tearDown()
      */
     protected void tearDown() throws Exception

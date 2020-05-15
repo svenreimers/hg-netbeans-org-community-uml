@@ -66,7 +66,9 @@ public class CommonDialogResources
 
       // TODO Auto-generated constructor stub
    }
-   /**
+   
+
+/**
     * @param key
     * @return
     */

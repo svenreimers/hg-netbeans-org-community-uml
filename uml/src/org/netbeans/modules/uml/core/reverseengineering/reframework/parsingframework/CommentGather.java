@@ -42,11 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : CommentGather.java
- * Created on : Oct 23, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework;
 
 import java.util.ArrayList;
@@ -75,7 +72,9 @@ public class CommentGather implements ICommentGather
         m_MLCOMMENT = mlComment;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ICommentGather#gather(antlr.collections.AST, org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ITokenDescriptor)
      */
     public ITokenDescriptor gather(AST pAST, ITokenDescriptor pDesc)
@@ -245,7 +244,9 @@ public class CommentGather implements ICommentGather
         return pDesc;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ICommentGather#getMultiLineType()
      */
     public int getMultiLineType()
@@ -254,7 +255,9 @@ public class CommentGather implements ICommentGather
         return m_MLCOMMENT;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ICommentGather#getSingleLineType()
      */
     public int getSingleLineType()
@@ -280,7 +283,9 @@ public class CommentGather implements ICommentGather
 
     }
 
-    /**
+    
+
+/**
      *  parses (in a very ad-hoc style) the line of the following format
      *  #[regen=yes,id=C2FEEEAC-CFCD-11D1-8B05-00600806D9B6]
      */
@@ -345,7 +350,9 @@ public class CommentGather implements ICommentGather
     }
 
 
-    /**
+    
+
+/**
      *  parses (in a very ad-hoc style - don't want to call full-fledge 
      *  XML parsing, thus user isn't supposed to alterate these lines too much) 
      *  the <editor-fold> start and end line

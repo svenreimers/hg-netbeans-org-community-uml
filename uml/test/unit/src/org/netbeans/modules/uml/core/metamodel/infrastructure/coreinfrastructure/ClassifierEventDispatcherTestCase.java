@@ -56,6 +56,8 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.IVersionableEleme
 import org.netbeans.modules.uml.core.support.umlsupport.IResultCell;
 import org.netbeans.modules.uml.core.support.umlutils.ETArrayList;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
+
+
 /**
  * Test cases for ClassifierEventDispatcher.
  */
@@ -76,7 +78,9 @@ public class ClassifierEventDispatcherTestCase extends AbstractUMLTestCase
     private ClassifierEventDispatcher disp;
     private IClass clazz;
         
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see junit.framework.TestCase#setUp()
      */
     protected void setUp() throws Exception
@@ -102,7 +106,9 @@ public class ClassifierEventDispatcherTestCase extends AbstractUMLTestCase
         clearFireStatuses();
     }
     
-    /**
+    
+
+/**
      * 
      */
     private void clearFireStatuses()
@@ -199,7 +205,9 @@ public class ClassifierEventDispatcherTestCase extends AbstractUMLTestCase
         onOperationPropertyModified = false;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see junit.framework.TestCase#tearDown()
      */
     protected void tearDown() throws Exception
@@ -965,7 +973,9 @@ public class ClassifierEventDispatcherTestCase extends AbstractUMLTestCase
         assertTrue(onVolatileModified);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavioralFeatureEventsSink#onConcurrencyPreModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavioralFeature, int, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onConcurrencyPreModified(IBehavioralFeature feature, int proposedValue, IResultCell cell)
@@ -975,7 +985,9 @@ public class ClassifierEventDispatcherTestCase extends AbstractUMLTestCase
         assertNotNull(cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavioralFeatureEventsSink#onConcurrencyModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavioralFeature, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onConcurrencyModified(IBehavioralFeature feature, IResultCell cell)
@@ -985,7 +997,9 @@ public class ClassifierEventDispatcherTestCase extends AbstractUMLTestCase
         assertNotNull(cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavioralFeatureEventsSink#onPreHandledSignalAdded(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavioralFeature, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ISignal, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onPreHandledSignalAdded(IBehavioralFeature feature, ISignal proposedValue, IResultCell cell)
@@ -996,7 +1010,9 @@ public class ClassifierEventDispatcherTestCase extends AbstractUMLTestCase
         assertNotNull(cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavioralFeatureEventsSink#onHandledSignalAdded(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavioralFeature, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onHandledSignalAdded(IBehavioralFeature feature, IResultCell cell)
@@ -1006,7 +1022,9 @@ public class ClassifierEventDispatcherTestCase extends AbstractUMLTestCase
         assertNotNull(cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavioralFeatureEventsSink#onPreHandledSignalRemoved(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavioralFeature, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ISignal, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onPreHandledSignalRemoved(IBehavioralFeature feature, ISignal proposedValue, IResultCell cell)
@@ -1017,7 +1035,9 @@ public class ClassifierEventDispatcherTestCase extends AbstractUMLTestCase
         assertNotNull(cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavioralFeatureEventsSink#onHandledSignalRemoved(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavioralFeature, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onHandledSignalRemoved(IBehavioralFeature feature, IResultCell cell)
@@ -1027,7 +1047,9 @@ public class ClassifierEventDispatcherTestCase extends AbstractUMLTestCase
         assertNotNull(cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavioralFeatureEventsSink#onPreParameterAdded(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavioralFeature, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IParameter, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onPreParameterAdded(IBehavioralFeature feature, IParameter parm, IResultCell cell)
@@ -1038,7 +1060,9 @@ public class ClassifierEventDispatcherTestCase extends AbstractUMLTestCase
         assertNotNull(cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavioralFeatureEventsSink#onParameterAdded(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavioralFeature, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IParameter, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onParameterAdded(IBehavioralFeature feature, IParameter parm, IResultCell cell)
@@ -1049,7 +1073,9 @@ public class ClassifierEventDispatcherTestCase extends AbstractUMLTestCase
         assertNotNull(cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavioralFeatureEventsSink#onPreParameterRemoved(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavioralFeature, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IParameter, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onPreParameterRemoved(IBehavioralFeature feature, IParameter parm, IResultCell cell)
@@ -1060,7 +1086,9 @@ public class ClassifierEventDispatcherTestCase extends AbstractUMLTestCase
         assertNotNull(cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavioralFeatureEventsSink#onParameterRemoved(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavioralFeature, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IParameter, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onParameterRemoved(IBehavioralFeature feature, IParameter parm, IResultCell cell)
@@ -1071,7 +1099,9 @@ public class ClassifierEventDispatcherTestCase extends AbstractUMLTestCase
         assertNotNull(cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavioralFeatureEventsSink#onPreAbstractModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavioralFeature, boolean, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onPreAbstractModified(IBehavioralFeature feature, boolean proposedValue, IResultCell cell)
@@ -1081,7 +1111,9 @@ public class ClassifierEventDispatcherTestCase extends AbstractUMLTestCase
         assertNotNull(cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavioralFeatureEventsSink#onAbstractModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavioralFeature, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onAbstractModified(IBehavioralFeature feature, IResultCell cell)
@@ -1091,7 +1123,9 @@ public class ClassifierEventDispatcherTestCase extends AbstractUMLTestCase
         assertNotNull(cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavioralFeatureEventsSink#onPreStrictFPModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavioralFeature, boolean, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onPreStrictFPModified(IBehavioralFeature feature, boolean proposedValue, IResultCell cell)
@@ -1101,7 +1135,9 @@ public class ClassifierEventDispatcherTestCase extends AbstractUMLTestCase
         assertNotNull(cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavioralFeatureEventsSink#onStrictFPModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavioralFeature, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onStrictFPModified(IBehavioralFeature feature, IResultCell cell)
@@ -1111,7 +1147,9 @@ public class ClassifierEventDispatcherTestCase extends AbstractUMLTestCase
         assertNotNull(cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifierFeatureEventsSink#onFeaturePreAdded(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IFeature, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onFeaturePreAdded(IClassifier classifier, IFeature feature, IResultCell cell)
@@ -1122,7 +1160,9 @@ public class ClassifierEventDispatcherTestCase extends AbstractUMLTestCase
         assertNotNull(cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifierFeatureEventsSink#onFeatureAdded(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IFeature, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onFeatureAdded(IClassifier classifier, IFeature feature, IResultCell cell)
@@ -1133,7 +1173,9 @@ public class ClassifierEventDispatcherTestCase extends AbstractUMLTestCase
         assertNotNull(cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifierFeatureEventsSink#onFeatureAdded(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IFeature, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onEnumerationLiteralPreAdded(IClassifier classifier, IEnumerationLiteral enumLit, IResultCell cell)
@@ -1144,7 +1186,9 @@ public class ClassifierEventDispatcherTestCase extends AbstractUMLTestCase
         assertNotNull(cell);
     }
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifierFeatureEventsSink#onFeatureAdded(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IFeature, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onEnumerationLiteralAdded(IClassifier classifier, IEnumerationLiteral enumLit, IResultCell cell)
@@ -1155,7 +1199,9 @@ public class ClassifierEventDispatcherTestCase extends AbstractUMLTestCase
         assertNotNull(cell);
     }
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifierFeatureEventsSink#onFeaturePreRemoved(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IFeature, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onFeaturePreRemoved(IClassifier classifier, IFeature feature, IResultCell cell)
@@ -1166,7 +1212,9 @@ public class ClassifierEventDispatcherTestCase extends AbstractUMLTestCase
         assertNotNull(cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifierFeatureEventsSink#onFeatureRemoved(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IFeature, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onFeatureRemoved(IClassifier classifier, IFeature feature, IResultCell cell)
@@ -1177,7 +1225,9 @@ public class ClassifierEventDispatcherTestCase extends AbstractUMLTestCase
         assertNotNull(cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifierFeatureEventsSink#onFeaturePreMoved(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IFeature, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onFeaturePreMoved(IClassifier classifier, IFeature feature, IResultCell cell)
@@ -1188,7 +1238,9 @@ public class ClassifierEventDispatcherTestCase extends AbstractUMLTestCase
         assertNotNull(cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifierFeatureEventsSink#onFeatureMoved(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IFeature, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onFeatureMoved(IClassifier classifier, IFeature feature, IResultCell cell)
@@ -1199,7 +1251,9 @@ public class ClassifierEventDispatcherTestCase extends AbstractUMLTestCase
         assertNotNull(cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifierFeatureEventsSink#onFeaturePreDuplicatedToClassifier(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IFeature, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onFeaturePreDuplicatedToClassifier(IClassifier classifier, IFeature feature, IResultCell cell)
@@ -1210,7 +1264,9 @@ public class ClassifierEventDispatcherTestCase extends AbstractUMLTestCase
         assertNotNull(cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifierFeatureEventsSink#onFeatureDuplicatedToClassifier(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IFeature, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IFeature, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onFeatureDuplicatedToClassifier(IClassifier pOldClassifier, IFeature pOldFeature, IClassifier pNewClassifier, IFeature pNewFeature, IResultCell cell)
@@ -1223,7 +1279,9 @@ public class ClassifierEventDispatcherTestCase extends AbstractUMLTestCase
         assertNotNull(cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifierFeatureEventsSink#onPreAbstractModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, boolean, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onPreAbstractModified(IClassifier feature, boolean proposedValue, IResultCell cell)
@@ -1233,7 +1291,9 @@ public class ClassifierEventDispatcherTestCase extends AbstractUMLTestCase
         assertNotNull(cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifierFeatureEventsSink#onAbstractModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onAbstractModified(IClassifier feature, IResultCell cell)
@@ -1243,7 +1303,9 @@ public class ClassifierEventDispatcherTestCase extends AbstractUMLTestCase
         assertNotNull(cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifierFeatureEventsSink#onPreLeafModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, boolean, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onPreLeafModified(IClassifier feature, boolean proposedValue, IResultCell cell)
@@ -1253,7 +1315,9 @@ public class ClassifierEventDispatcherTestCase extends AbstractUMLTestCase
         assertNotNull(cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifierFeatureEventsSink#onLeafModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onLeafModified(IClassifier feature, IResultCell cell)
@@ -1263,7 +1327,9 @@ public class ClassifierEventDispatcherTestCase extends AbstractUMLTestCase
         assertNotNull(cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifierFeatureEventsSink#onPreTransientModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, boolean, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onPreTransientModified(IClassifier feature, boolean proposedValue, IResultCell cell)
@@ -1273,7 +1339,9 @@ public class ClassifierEventDispatcherTestCase extends AbstractUMLTestCase
         assertNotNull(cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifierFeatureEventsSink#onTransientModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onTransientModified(IClassifier feature, IResultCell cell)
@@ -1283,7 +1351,9 @@ public class ClassifierEventDispatcherTestCase extends AbstractUMLTestCase
         assertNotNull(cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifierFeatureEventsSink#onPreTemplateParameterAdded(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IParameterableElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onPreTemplateParameterAdded(IClassifier pClassifier, IParameterableElement pParam, IResultCell cell)
@@ -1294,7 +1364,9 @@ public class ClassifierEventDispatcherTestCase extends AbstractUMLTestCase
         assertNotNull(cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifierFeatureEventsSink#onTemplateParameterAdded(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IParameterableElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onTemplateParameterAdded(IClassifier pClassifier, IParameterableElement pParam, IResultCell cell)
@@ -1305,7 +1377,9 @@ public class ClassifierEventDispatcherTestCase extends AbstractUMLTestCase
         assertNotNull(cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifierFeatureEventsSink#onPreTemplateParameterRemoved(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IParameterableElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onPreTemplateParameterRemoved(IClassifier pClassifier, IParameterableElement pParam, IResultCell cell)
@@ -1316,7 +1390,9 @@ public class ClassifierEventDispatcherTestCase extends AbstractUMLTestCase
         assertNotNull(cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifierFeatureEventsSink#onTemplateParameterRemoved(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IParameterableElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onTemplateParameterRemoved(IClassifier pClassifier, IParameterableElement pParam, IResultCell cell)
@@ -1327,7 +1403,9 @@ public class ClassifierEventDispatcherTestCase extends AbstractUMLTestCase
         assertNotNull(cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IFeatureEventsSink#onPreStaticModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IFeature, boolean, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onPreStaticModified(IFeature feature, boolean proposedValue, IResultCell cell)
@@ -1337,7 +1415,9 @@ public class ClassifierEventDispatcherTestCase extends AbstractUMLTestCase
         assertNotNull(cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IFeatureEventsSink#onStaticModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IFeature, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onStaticModified(IFeature feature, IResultCell cell)
@@ -1347,7 +1427,9 @@ public class ClassifierEventDispatcherTestCase extends AbstractUMLTestCase
         assertNotNull(cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IFeatureEventsSink#onPreNativeModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IFeature, boolean, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onPreNativeModified(IFeature feature, boolean proposedValue, IResultCell cell)
@@ -1357,7 +1439,9 @@ public class ClassifierEventDispatcherTestCase extends AbstractUMLTestCase
         assertNotNull(cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IFeatureEventsSink#onNativeModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IFeature, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onNativeModified(IFeature feature, IResultCell cell)
@@ -1367,7 +1451,9 @@ public class ClassifierEventDispatcherTestCase extends AbstractUMLTestCase
         assertNotNull(cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IStructuralFeatureEventsSink#onPreChangeabilityModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IStructuralFeature, int, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onPreChangeabilityModified(IStructuralFeature feature, int proposedValue, IResultCell cell)
@@ -1377,7 +1463,9 @@ public class ClassifierEventDispatcherTestCase extends AbstractUMLTestCase
         assertNotNull(cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IStructuralFeatureEventsSink#onChangeabilityModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IStructuralFeature, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onChangeabilityModified(IStructuralFeature feature, IResultCell cell)
@@ -1387,7 +1475,9 @@ public class ClassifierEventDispatcherTestCase extends AbstractUMLTestCase
         assertNotNull(cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IStructuralFeatureEventsSink#onPreVolatileModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IStructuralFeature, boolean, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onPreVolatileModified(IStructuralFeature feature, boolean proposedValue, IResultCell cell)
@@ -1397,7 +1487,9 @@ public class ClassifierEventDispatcherTestCase extends AbstractUMLTestCase
         assertNotNull(cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IStructuralFeatureEventsSink#onVolatileModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IStructuralFeature, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onVolatileModified(IStructuralFeature feature, IResultCell cell)
@@ -1407,7 +1499,9 @@ public class ClassifierEventDispatcherTestCase extends AbstractUMLTestCase
         assertNotNull(cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IStructuralFeatureEventsSink#onPreTransientModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IStructuralFeature, boolean, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onPreTransientModified(IStructuralFeature feature, boolean proposedValue, IResultCell cell)
@@ -1417,7 +1511,9 @@ public class ClassifierEventDispatcherTestCase extends AbstractUMLTestCase
         assertNotNull(cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IStructuralFeatureEventsSink#onTransientModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IStructuralFeature, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onTransientModified(IStructuralFeature feature, IResultCell cell)
@@ -1427,7 +1523,9 @@ public class ClassifierEventDispatcherTestCase extends AbstractUMLTestCase
         assertNotNull(cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IParameterEventsSink#onPreDefaultExpModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IParameter, org.netbeans.modules.uml.core.metamodel.core.foundation.IExpression, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onPreDefaultExpModified(IParameter feature, IExpression proposedValue, IResultCell cell)
@@ -1438,7 +1536,9 @@ public class ClassifierEventDispatcherTestCase extends AbstractUMLTestCase
         assertNotNull(cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IParameterEventsSink#onDefaultExpModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IParameter, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onDefaultExpModified(IParameter feature, IResultCell cell)
@@ -1448,7 +1548,9 @@ public class ClassifierEventDispatcherTestCase extends AbstractUMLTestCase
         assertNotNull(cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IParameterEventsSink#onPreDefaultExpBodyModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IParameter, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onPreDefaultExpBodyModified(IParameter feature, String bodyValue, IResultCell cell)
@@ -1459,7 +1561,9 @@ public class ClassifierEventDispatcherTestCase extends AbstractUMLTestCase
         assertNotNull(cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IParameterEventsSink#onDefaultExpBodyModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IParameter, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onDefaultExpBodyModified(IParameter feature, IResultCell cell)
@@ -1469,7 +1573,9 @@ public class ClassifierEventDispatcherTestCase extends AbstractUMLTestCase
         assertNotNull(cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IParameterEventsSink#onPreDefaultExpLanguageModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IParameter, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onPreDefaultExpLanguageModified(IParameter feature, String language, IResultCell cell)
@@ -1480,7 +1586,9 @@ public class ClassifierEventDispatcherTestCase extends AbstractUMLTestCase
         assertNotNull(cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IParameterEventsSink#onDefaultExpLanguageModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IParameter, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onDefaultExpLanguageModified(IParameter feature, IResultCell cell)
@@ -1490,7 +1598,9 @@ public class ClassifierEventDispatcherTestCase extends AbstractUMLTestCase
         assertNotNull(cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IParameterEventsSink#onPreDirectionModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IParameter, int, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onPreDirectionModified(IParameter feature, int proposedValue, IResultCell cell)
@@ -1500,7 +1610,9 @@ public class ClassifierEventDispatcherTestCase extends AbstractUMLTestCase
         assertNotNull(cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IParameterEventsSink#onDirectionModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IParameter, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onDirectionModified(IParameter feature, IResultCell cell)
@@ -1510,7 +1622,9 @@ public class ClassifierEventDispatcherTestCase extends AbstractUMLTestCase
         assertNotNull(cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElementEventsSink#onPreMultiplicityModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElement, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onPreMultiplicityModified(ITypedElement element, IMultiplicity proposedValue, IResultCell cell)
@@ -1521,7 +1635,9 @@ public class ClassifierEventDispatcherTestCase extends AbstractUMLTestCase
         assertNotNull(cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElementEventsSink#onMultiplicityModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onMultiplicityModified(ITypedElement element, IResultCell cell)
@@ -1531,7 +1647,9 @@ public class ClassifierEventDispatcherTestCase extends AbstractUMLTestCase
         assertNotNull(cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElementEventsSink#onPreTypeModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElement, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onPreTypeModified(ITypedElement element, IClassifier proposedValue, IResultCell cell)
@@ -1542,7 +1660,9 @@ public class ClassifierEventDispatcherTestCase extends AbstractUMLTestCase
         assertNotNull(cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElementEventsSink#onTypeModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onTypeModified(ITypedElement element, IResultCell cell)
@@ -1552,7 +1672,9 @@ public class ClassifierEventDispatcherTestCase extends AbstractUMLTestCase
         assertNotNull(cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElementEventsSink#onPreLowerModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElement, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityRange, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onPreLowerModified(ITypedElement element, IMultiplicity mult, IMultiplicityRange range, String proposedValue, IResultCell cell)
@@ -1565,7 +1687,9 @@ public class ClassifierEventDispatcherTestCase extends AbstractUMLTestCase
         assertNotNull(cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElementEventsSink#onLowerModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElement, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityRange, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onLowerModified(ITypedElement element, IMultiplicity mult, IMultiplicityRange range, IResultCell cell)
@@ -1577,7 +1701,9 @@ public class ClassifierEventDispatcherTestCase extends AbstractUMLTestCase
         assertNotNull(cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElementEventsSink#onPreUpperModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElement, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityRange, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onPreUpperModified(ITypedElement element, IMultiplicity mult, IMultiplicityRange range, String proposedValue, IResultCell cell)
@@ -1590,7 +1716,9 @@ public class ClassifierEventDispatcherTestCase extends AbstractUMLTestCase
         assertNotNull(cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElementEventsSink#onUpperModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElement, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityRange, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onUpperModified(ITypedElement element, IMultiplicity mult, IMultiplicityRange range, IResultCell cell)
@@ -1602,7 +1730,9 @@ public class ClassifierEventDispatcherTestCase extends AbstractUMLTestCase
         assertNotNull(cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElementEventsSink#onPreRangeAdded(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElement, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityRange, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onPreRangeAdded(ITypedElement element, IMultiplicity mult, IMultiplicityRange range, IResultCell cell)
@@ -1614,7 +1744,9 @@ public class ClassifierEventDispatcherTestCase extends AbstractUMLTestCase
         assertNotNull(cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElementEventsSink#onRangeAdded(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElement, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityRange, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRangeAdded(ITypedElement element, IMultiplicity mult, IMultiplicityRange range, IResultCell cell)
@@ -1626,7 +1758,9 @@ public class ClassifierEventDispatcherTestCase extends AbstractUMLTestCase
         assertNotNull(cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElementEventsSink#onPreRangeRemoved(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElement, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityRange, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onPreRangeRemoved(ITypedElement element, IMultiplicity mult, IMultiplicityRange range, IResultCell cell)
@@ -1638,7 +1772,9 @@ public class ClassifierEventDispatcherTestCase extends AbstractUMLTestCase
         assertNotNull(cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElementEventsSink#onRangeRemoved(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElement, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityRange, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRangeRemoved(ITypedElement element, IMultiplicity mult, IMultiplicityRange range, IResultCell cell)
@@ -1650,7 +1786,9 @@ public class ClassifierEventDispatcherTestCase extends AbstractUMLTestCase
         assertNotNull(cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElementEventsSink#onPreOrderModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElement, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity, boolean, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onPreOrderModified(ITypedElement element, IMultiplicity mult, boolean proposedValue, IResultCell cell)
@@ -1661,7 +1799,9 @@ public class ClassifierEventDispatcherTestCase extends AbstractUMLTestCase
         assertNotNull(cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElementEventsSink#onOrderModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElement, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onOrderModified(ITypedElement element, IMultiplicity mult, IResultCell cell)
@@ -1672,7 +1812,9 @@ public class ClassifierEventDispatcherTestCase extends AbstractUMLTestCase
         assertNotNull(cell);
     }
 
-    /**
+    
+
+/**
      * Fired when the collection type property is changed on the passed in
      * range.
      * @param element The type that owned the multilicity element
@@ -1685,7 +1827,9 @@ public class ClassifierEventDispatcherTestCase extends AbstractUMLTestCase
         
     }
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttributeEventsSink#onDefaultPreModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttribute, org.netbeans.modules.uml.core.metamodel.core.foundation.IExpression, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onDefaultPreModified(IAttribute attr, IExpression proposedValue, IResultCell cell)
@@ -1696,7 +1840,9 @@ public class ClassifierEventDispatcherTestCase extends AbstractUMLTestCase
         assertNotNull(cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttributeEventsSink#onDefaultModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttribute, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onDefaultModified(IAttribute attr, IResultCell cell)
@@ -1706,7 +1852,9 @@ public class ClassifierEventDispatcherTestCase extends AbstractUMLTestCase
         assertNotNull(cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttributeEventsSink#onPreDefaultBodyModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttribute, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onPreDefaultBodyModified(IAttribute feature, String bodyValue, IResultCell cell)
@@ -1717,7 +1865,9 @@ public class ClassifierEventDispatcherTestCase extends AbstractUMLTestCase
         assertNotNull(cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttributeEventsSink#onDefaultBodyModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttribute, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onDefaultBodyModified(IAttribute feature, IResultCell cell)
@@ -1727,7 +1877,9 @@ public class ClassifierEventDispatcherTestCase extends AbstractUMLTestCase
         assertNotNull(cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttributeEventsSink#onPreDefaultLanguageModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttribute, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onPreDefaultLanguageModified(IAttribute feature, String language, IResultCell cell)
@@ -1738,7 +1890,9 @@ public class ClassifierEventDispatcherTestCase extends AbstractUMLTestCase
         assertNotNull(cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttributeEventsSink#onDefaultLanguageModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttribute, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onDefaultLanguageModified(IAttribute feature, IResultCell cell)
@@ -1748,7 +1902,9 @@ public class ClassifierEventDispatcherTestCase extends AbstractUMLTestCase
         assertNotNull(cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttributeEventsSink#onPreDerivedModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttribute, boolean, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onPreDerivedModified(IAttribute feature, boolean proposedValue, IResultCell cell)
@@ -1758,7 +1914,9 @@ public class ClassifierEventDispatcherTestCase extends AbstractUMLTestCase
         assertNotNull(cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttributeEventsSink#onDerivedModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttribute, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onDerivedModified(IAttribute feature, IResultCell cell)
@@ -1768,7 +1926,9 @@ public class ClassifierEventDispatcherTestCase extends AbstractUMLTestCase
         assertNotNull(cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttributeEventsSink#onPrePrimaryKeyModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttribute, boolean, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onPrePrimaryKeyModified(IAttribute feature, boolean proposedValue, IResultCell cell)
@@ -1778,7 +1938,9 @@ public class ClassifierEventDispatcherTestCase extends AbstractUMLTestCase
         assertNotNull(cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttributeEventsSink#onPrimaryKeyModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttribute, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onPrimaryKeyModified(IAttribute feature, IResultCell cell)
@@ -1788,7 +1950,9 @@ public class ClassifierEventDispatcherTestCase extends AbstractUMLTestCase
         assertNotNull(cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperationEventsSink#onConditionPreAdded(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation, org.netbeans.modules.uml.core.metamodel.core.foundation.IConstraint, boolean, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onConditionPreAdded(IOperation oper, IConstraint condition, boolean isPreCondition, IResultCell cell)
@@ -1799,7 +1963,9 @@ public class ClassifierEventDispatcherTestCase extends AbstractUMLTestCase
         assertNotNull(cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperationEventsSink#onConditionAdded(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation, org.netbeans.modules.uml.core.metamodel.core.foundation.IConstraint, boolean, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onConditionAdded(IOperation oper, IConstraint condition, boolean isPreCondition, IResultCell cell)
@@ -1810,7 +1976,9 @@ public class ClassifierEventDispatcherTestCase extends AbstractUMLTestCase
         assertNotNull(cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperationEventsSink#onConditionPreRemoved(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation, org.netbeans.modules.uml.core.metamodel.core.foundation.IConstraint, boolean, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onConditionPreRemoved(IOperation oper, IConstraint condition, boolean isPreCondition, IResultCell cell)
@@ -1821,7 +1989,9 @@ public class ClassifierEventDispatcherTestCase extends AbstractUMLTestCase
         assertNotNull(cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperationEventsSink#onConditionRemoved(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation, org.netbeans.modules.uml.core.metamodel.core.foundation.IConstraint, boolean, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onConditionRemoved(IOperation oper, IConstraint condition, boolean isPreCondition, IResultCell cell)
@@ -1832,7 +2002,9 @@ public class ClassifierEventDispatcherTestCase extends AbstractUMLTestCase
         assertNotNull(cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperationEventsSink#onPreQueryModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation, boolean, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onPreQueryModified(IOperation oper, boolean proposedValue, IResultCell cell)
@@ -1842,7 +2014,9 @@ public class ClassifierEventDispatcherTestCase extends AbstractUMLTestCase
         assertNotNull(cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperationEventsSink#onQueryModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onQueryModified(IOperation oper, IResultCell cell)
@@ -1852,7 +2026,9 @@ public class ClassifierEventDispatcherTestCase extends AbstractUMLTestCase
         assertNotNull(cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperationEventsSink#onRaisedExceptionPreAdded(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRaisedExceptionPreAdded(IOperation oper, IClassifier pException, IResultCell cell)
@@ -1863,7 +2039,9 @@ public class ClassifierEventDispatcherTestCase extends AbstractUMLTestCase
         assertNotNull(cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperationEventsSink#onRaisedExceptionAdded(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRaisedExceptionAdded(IOperation oper, IClassifier pException, IResultCell cell)
@@ -1874,7 +2052,9 @@ public class ClassifierEventDispatcherTestCase extends AbstractUMLTestCase
         assertNotNull(cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperationEventsSink#onRaisedExceptionPreRemoved(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRaisedExceptionPreRemoved(IOperation oper, IClassifier pException, IResultCell cell)
@@ -1885,7 +2065,9 @@ public class ClassifierEventDispatcherTestCase extends AbstractUMLTestCase
         assertNotNull(cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperationEventsSink#onRaisedExceptionRemoved(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRaisedExceptionRemoved(IOperation oper, IClassifier pException, IResultCell cell)
@@ -1896,7 +2078,9 @@ public class ClassifierEventDispatcherTestCase extends AbstractUMLTestCase
         assertNotNull(cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifierTransformEventsSink#onPreTransform(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onPreTransform(IClassifier classifier, String newForm, IResultCell cell)
@@ -1907,7 +2091,9 @@ public class ClassifierEventDispatcherTestCase extends AbstractUMLTestCase
         assertNotNull(cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifierTransformEventsSink#onTransformed(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onTransformed(IClassifier classifier, IResultCell cell)
@@ -1917,7 +2103,9 @@ public class ClassifierEventDispatcherTestCase extends AbstractUMLTestCase
         assertNotNull(cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAssociationEndTransformEventsSink#onPreTransform(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAssociationEnd, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onPreTransform(IAssociationEnd pEnd, String newForm, IResultCell cell)
@@ -1928,7 +2116,9 @@ public class ClassifierEventDispatcherTestCase extends AbstractUMLTestCase
         assertNotNull(cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAssociationEndTransformEventsSink#onTransformed(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAssociationEnd, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onTransformed(IAssociationEnd pEnd, IResultCell cell)
@@ -1938,7 +2128,9 @@ public class ClassifierEventDispatcherTestCase extends AbstractUMLTestCase
         assertNotNull(cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAssociationEndEventsSink#onPreQualifierAttributeAdded(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAssociationEnd, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttribute, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onPreQualifierAttributeAdded(IAssociationEnd pEnd, IAttribute pAttr, IResultCell cell)
@@ -1949,7 +2141,9 @@ public class ClassifierEventDispatcherTestCase extends AbstractUMLTestCase
         assertNotNull(cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAssociationEndEventsSink#onQualifierAttributeAdded(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAssociationEnd, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttribute, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onQualifierAttributeAdded(IAssociationEnd pEnd, IAttribute pAttr, IResultCell cell)
@@ -1960,7 +2154,9 @@ public class ClassifierEventDispatcherTestCase extends AbstractUMLTestCase
         assertNotNull(cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAssociationEndEventsSink#onPreQualifierAttributeRemoved(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAssociationEnd, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttribute, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onPreQualifierAttributeRemoved(IAssociationEnd pEnd, IAttribute pAttr, IResultCell cell)
@@ -1971,7 +2167,9 @@ public class ClassifierEventDispatcherTestCase extends AbstractUMLTestCase
         assertNotNull(cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAssociationEndEventsSink#onQualifierAttributeRemoved(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAssociationEnd, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttribute, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onQualifierAttributeRemoved(IAssociationEnd pEnd, IAttribute pAttr, IResultCell cell)
@@ -1982,7 +2180,9 @@ public class ClassifierEventDispatcherTestCase extends AbstractUMLTestCase
         assertNotNull(cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAffectedElementEventsSink#onPreImpacted(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.metamodel.core.foundation.IVersionableElement[], org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onPreImpacted(IClassifier classifier, ETList<IVersionableElement> impacted, IResultCell cell)
@@ -1993,7 +2193,9 @@ public class ClassifierEventDispatcherTestCase extends AbstractUMLTestCase
         assertNotNull(cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAffectedElementEventsSink#onImpacted(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.metamodel.core.foundation.IVersionableElement[], org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onImpacted(IClassifier classifier, ETList<IVersionableElement> impacted, IResultCell cell)
@@ -2010,7 +2212,9 @@ public class ClassifierEventDispatcherTestCase extends AbstractUMLTestCase
         onPreOperationPropertyModified = true;
     }
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperationEventsSink#onOperationPropertyModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation, int, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onOperationPropertyModified(IOperation oper, int nKind, IResultCell cell)

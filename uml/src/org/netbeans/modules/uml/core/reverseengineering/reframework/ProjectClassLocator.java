@@ -60,7 +60,9 @@ public class ProjectClassLocator implements IProjectClassLocator
    private IElementLocator m_Locator = null;
    private Vector<IProject> m_Projects = null;
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.reverseengineering.reframework.IProjectClassLocator#addProject(org.netbeans.modules.uml.core.metamodel.structure.IProject)
     */
    public void addProject(IProject proj) 
@@ -72,7 +74,9 @@ public class ProjectClassLocator implements IProjectClassLocator
       m_Projects.add(proj);
    }
 
-   /**
+   
+
+/**
     * Retreive the loacation the class that contains the speicfied class.  The 
     * Describe projects are searched to locate a class with the specified package
     * can class name.
@@ -127,7 +131,9 @@ public class ProjectClassLocator implements IProjectClassLocator
       return retVal;
    }
 
-   /**
+   
+
+/**
     * Checks if an INamedElement is the model elemetn that we are looking for,
     * 
     * Search Algorithm:
@@ -189,7 +195,9 @@ public class ProjectClassLocator implements IProjectClassLocator
       return retVal;
    }
    
-   /**
+   
+
+/**
     * Searchs the dependencies to determine if the specified qualified name is
     * the is the desiried class.
     *
@@ -291,7 +299,9 @@ public class ProjectClassLocator implements IProjectClassLocator
       return retVal;
    }
 
-   /**
+   
+
+/**
     * Retrieve the full path to the specified class name.
     * 
     * @param filename [in] The short form of the file name.
@@ -305,7 +315,9 @@ public class ProjectClassLocator implements IProjectClassLocator
       return null;
    }
 
-   /**
+   
+
+/**
     * Only valid way to access m_cpElementLocator.
     * Ensures m_cpElementLocator is valid and returns it as a reference
     */

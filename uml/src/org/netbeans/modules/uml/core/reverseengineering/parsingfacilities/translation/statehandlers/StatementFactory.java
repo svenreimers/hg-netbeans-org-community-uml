@@ -43,11 +43,8 @@
  */
 
 
-/*
- * File       : StatementFactory.java
- * Created on : Dec 10, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.statehandlers;
 
 import org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.IOpParserOptions;

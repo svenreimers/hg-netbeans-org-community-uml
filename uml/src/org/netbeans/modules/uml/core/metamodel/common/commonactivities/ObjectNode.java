@@ -42,11 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : ObjectNode.java
- * Created on : Sep 16, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.metamodel.common.commonactivities;
 
 import org.dom4j.Node;
@@ -74,7 +71,9 @@ public class ObjectNode extends ActivityNode implements IObjectNode
 		m_TypedElementAggregate.setNode(node);
 	}
 	
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactivities.IObjectNode#addInState(org.netbeans.modules.uml.core.metamodel.common.commonstatemachines.IState)
      */
     public void addInState(IState pState)
@@ -82,7 +81,9 @@ public class ObjectNode extends ActivityNode implements IObjectNode
         addElementByID(pState, "inState");
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactivities.IObjectNode#getInStates()
      */
     public ETList<IState> getInStates()
@@ -96,7 +97,9 @@ public class ObjectNode extends ActivityNode implements IObjectNode
         return getObjectNodeOrderingKind("ordering");
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactivities.IObjectNode#getSelection()
      */
     public IBehavior getSelection()
@@ -106,7 +109,9 @@ public class ObjectNode extends ActivityNode implements IObjectNode
 
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactivities.IObjectNode#getUpperBound()
      */
     public IValueSpecification getUpperBound()
@@ -116,7 +121,9 @@ public class ObjectNode extends ActivityNode implements IObjectNode
 
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactivities.IObjectNode#removeInState(org.netbeans.modules.uml.core.metamodel.common.commonstatemachines.IState)
      */
     public void removeInState(IState pState)
@@ -129,7 +136,9 @@ public class ObjectNode extends ActivityNode implements IObjectNode
         setObjectNodeOrderingKind("ordering",nKind);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactivities.IObjectNode#setSelection(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavior)
      */
     public void setSelection(IBehavior value)
@@ -137,7 +146,9 @@ public class ObjectNode extends ActivityNode implements IObjectNode
         setElement(value, "selection");
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactivities.IObjectNode#setUpperBound(org.netbeans.modules.uml.core.metamodel.core.foundation.IValueSpecification)
      */
     public void setUpperBound(IValueSpecification value)
@@ -187,7 +198,9 @@ public class ObjectNode extends ActivityNode implements IObjectNode
             return m_TypedElementAggregate.getTypeID();
     }			
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityListener#onPreLowerModified(org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityRange, java.lang.String)
      */
     public boolean onPreLowerModified(IMultiplicity mult, IMultiplicityRange range, String proposedValue) 
@@ -195,7 +208,9 @@ public class ObjectNode extends ActivityNode implements IObjectNode
             return m_TypedElementAggregate.onPreLowerModified(mult, range, proposedValue);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityListener#onLowerModified(org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityRange)
      */
     public void onLowerModified(IMultiplicity mult, IMultiplicityRange range) 
@@ -203,7 +218,9 @@ public class ObjectNode extends ActivityNode implements IObjectNode
             m_TypedElementAggregate.onLowerModified(mult, range);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityListener#onPreUpperModified(org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityRange, java.lang.String)
      */
     public boolean onPreUpperModified(IMultiplicity mult, IMultiplicityRange range, String proposedValue) 
@@ -211,7 +228,9 @@ public class ObjectNode extends ActivityNode implements IObjectNode
             return m_TypedElementAggregate.onPreUpperModified(mult, range, proposedValue);	
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityListener#onUpperModified(org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityRange)
      */
     public void onUpperModified(IMultiplicity mult, IMultiplicityRange range) 
@@ -219,7 +238,9 @@ public class ObjectNode extends ActivityNode implements IObjectNode
             m_TypedElementAggregate.onUpperModified(mult, range);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityListener#onPreRangeAdded(org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityRange)
      */
     public boolean onPreRangeAdded(IMultiplicity mult, IMultiplicityRange range) 
@@ -227,7 +248,9 @@ public class ObjectNode extends ActivityNode implements IObjectNode
             return m_TypedElementAggregate.onPreRangeAdded(mult, range);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityListener#onRangeAdded(org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityRange)
      */
     public void onRangeAdded(IMultiplicity mult, IMultiplicityRange range) 
@@ -235,7 +258,9 @@ public class ObjectNode extends ActivityNode implements IObjectNode
             m_TypedElementAggregate.onRangeAdded(mult, range);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityListener#onPreRangeRemoved(org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityRange)
      */
     public boolean onPreRangeRemoved(IMultiplicity mult, IMultiplicityRange range) 
@@ -243,7 +268,9 @@ public class ObjectNode extends ActivityNode implements IObjectNode
             return m_TypedElementAggregate.onPreRangeRemoved(mult, range);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityListener#onRangeRemoved(org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityRange)
      */
     public void onRangeRemoved(IMultiplicity mult, IMultiplicityRange range) 
@@ -251,7 +278,9 @@ public class ObjectNode extends ActivityNode implements IObjectNode
             m_TypedElementAggregate.onRangeRemoved(mult, range);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityListener#onPreOrderModified(org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity, boolean)
      */
     public boolean onPreOrderModified(IMultiplicity mult, boolean proposedValue)
@@ -259,7 +288,9 @@ public class ObjectNode extends ActivityNode implements IObjectNode
             return m_TypedElementAggregate.onPreOrderModified(mult, proposedValue);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityListener#onOrderModified(org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity)
      */
     public void onOrderModified(IMultiplicity mult) 

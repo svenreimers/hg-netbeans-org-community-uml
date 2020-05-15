@@ -53,7 +53,9 @@ import org.netbeans.modules.uml.core.support.umlsupport.XMLManip;
 
 abstract public class ActivityDiagram extends Diagram implements IActivityDiagram
 {
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.VersionableElement#buildNodePresence(java.lang.String, org.dom4j.Document, org.dom4j.Node)
      */
     public void establishNodePresence(Document doc, Node node)
@@ -61,7 +63,9 @@ abstract public class ActivityDiagram extends Diagram implements IActivityDiagra
          buildNodePresence("UML:ActivityDiagram", doc, node);
     }
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.PresentationElement#establishNodeAttributes(org.dom4j.Element)
      */
     public void establishNodeAttributes(Element ele)

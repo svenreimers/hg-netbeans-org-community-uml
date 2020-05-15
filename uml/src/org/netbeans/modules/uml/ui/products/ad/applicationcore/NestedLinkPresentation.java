@@ -42,14 +42,16 @@ public class NestedLinkPresentation
 //        extends EdgePresentation //TODO
         implements INestedLinkPresentation {
 
-	/**
+	
+/**
 	 * 
 	 */
 	public NestedLinkPresentation() {
 		super();
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.products.ad.applicationcore.INestedLinkPresentation#isParentNamespace(org.netbeans.modules.uml.core.metamodel.core.foundation.IElement)
 	 */
 	public boolean isParentNamespace(IElement pEndElement) {
@@ -247,7 +249,9 @@ public class NestedLinkPresentation
 //		return true;
 //	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.support.applicationmanager.IEdgePresentation#validateLinkEnds()
 	 */
 	public boolean validateLinkEnds() {
@@ -284,7 +288,9 @@ public class NestedLinkPresentation
 		return bIsValid;
 	}
 
-	/*
+	
+
+/*
 	 * Verify this guy is a named element
 	 */
 	protected boolean isNamedElement() {
@@ -292,14 +298,18 @@ public class NestedLinkPresentation
             return false; //TODO
 	}
 
-	/*
+	
+
+/*
 	 * Simple casting function.
 	 */
 	protected INamedElement getNamedElement(IElement pElement) {
 		return pElement instanceof INamedElement ? (INamedElement) pElement : null;
 	}
 
-	/*
+	
+
+/*
 	 * Given two model elements return the parent and the child, or null if one isn't in the namespace of another
 	 */
 	protected ETPairT < IElement, IElement > verifyNamespaceConnection(IElement pSourceElement, IElement pTargetElement) {

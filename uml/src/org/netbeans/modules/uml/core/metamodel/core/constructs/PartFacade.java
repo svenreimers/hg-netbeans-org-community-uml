@@ -75,7 +75,9 @@ public class PartFacade
     private IActor      m_Act     = new Actor();
     private IUseCase    m_UseCase = new UseCase();
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IVersionableElement#setNode(org.dom4j.Node)
      */
     public void setNode(Node n)
@@ -392,7 +394,9 @@ public class PartFacade
         m_UseCase.removeUseCaseDetail(detail);
     }
 
-    /**
+    
+
+/**
      * Does this element have an expanded element type or is the expanded element type always the element type?
      */
     public boolean getHasExpandedElementType()
@@ -400,7 +404,9 @@ public class PartFacade
             return true;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityListener#onPreLowerModified(org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityRange, java.lang.String)
      */
     public boolean onPreLowerModified(IMultiplicity mult, IMultiplicityRange range, String proposedValue) 
@@ -408,7 +414,9 @@ public class PartFacade
             return m_Part.onPreLowerModified(mult, range, proposedValue);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityListener#onLowerModified(org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityRange)
      */
     public void onLowerModified(IMultiplicity mult, IMultiplicityRange range) 
@@ -416,7 +424,9 @@ public class PartFacade
             m_Part.onLowerModified(mult, range);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityListener#onPreUpperModified(org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityRange, java.lang.String)
      */
     public boolean onPreUpperModified(IMultiplicity mult, IMultiplicityRange range, String proposedValue) 
@@ -424,7 +434,9 @@ public class PartFacade
             return m_Part.onPreUpperModified(mult, range, proposedValue);	
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityListener#onUpperModified(org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityRange)
      */
     public void onUpperModified(IMultiplicity mult, IMultiplicityRange range) 
@@ -432,7 +444,9 @@ public class PartFacade
             m_Part.onUpperModified(mult, range);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityListener#onPreRangeAdded(org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityRange)
      */
     public boolean onPreRangeAdded(IMultiplicity mult, IMultiplicityRange range) 
@@ -440,7 +454,9 @@ public class PartFacade
             return m_Part.onPreRangeAdded(mult, range);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityListener#onRangeAdded(org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityRange)
      */
     public void onRangeAdded(IMultiplicity mult, IMultiplicityRange range) 
@@ -448,7 +464,9 @@ public class PartFacade
             m_Part.onRangeAdded(mult, range);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityListener#onPreRangeRemoved(org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityRange)
      */
     public boolean onPreRangeRemoved(IMultiplicity mult, IMultiplicityRange range) 
@@ -456,7 +474,9 @@ public class PartFacade
             return m_Part.onPreRangeRemoved(mult, range);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityListener#onRangeRemoved(org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityRange)
      */
     public void onRangeRemoved(IMultiplicity mult, IMultiplicityRange range) 
@@ -464,7 +484,9 @@ public class PartFacade
             m_Part.onRangeRemoved(mult, range);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityListener#onPreOrderModified(org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity, boolean)
      */
     public boolean onPreOrderModified(IMultiplicity mult, boolean proposedValue)
@@ -472,7 +494,9 @@ public class PartFacade
             return m_Part.onPreOrderModified(mult, proposedValue);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityListener#onOrderModified(org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity)
      */
     public void onOrderModified(IMultiplicity mult) 

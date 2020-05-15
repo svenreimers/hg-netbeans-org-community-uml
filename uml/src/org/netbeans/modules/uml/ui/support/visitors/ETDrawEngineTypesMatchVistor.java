@@ -49,6 +49,7 @@ package org.netbeans.modules.uml.ui.support.visitors;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.IPresentationElement;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
+
 /**
  * Used to build lists of drawEngines that match the type drawEngineType.
  */
@@ -63,7 +64,9 @@ public class ETDrawEngineTypesMatchVistor implements IETGraphObjectVisitor
 		presentationElements = pPES;
 	}
 	
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.visitors.IETGraphObjectVisitor#visit(org.netbeans.modules.uml.ui.support.viewfactorysupport.IETGraphObject)
     */
         // TODO: meteora

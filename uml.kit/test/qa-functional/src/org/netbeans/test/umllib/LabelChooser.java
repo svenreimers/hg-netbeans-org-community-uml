@@ -43,6 +43,8 @@
  */
 
 
+
+
 /*
  * LabelChooser.java
  *
@@ -57,14 +59,18 @@ import org.netbeans.api.visual.widget.Widget;
 
 public interface LabelChooser{
     
-    /**
+    
+
+/**
      * 
      * @param label 
      * @return 
      */
     public boolean checkLabel(Widget label);
     
-    /**
+    
+
+/**
      * 
      * @return 
      */

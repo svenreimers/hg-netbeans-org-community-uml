@@ -62,7 +62,9 @@ public class AttributeLocator extends LocatorEvaluator<InstanceInformation>
         m_AttrName = attrName;
     }
     
-    /**
+    
+
+/**
      * Creates a CPrimitiveInstanceInformation and adds it to the symbol table.
      * If the name or type name is not valid then a CPrimitiveInstanceInformation
      * will not be created.
@@ -89,7 +91,9 @@ public class AttributeLocator extends LocatorEvaluator<InstanceInformation>
         return null;
     }
 
-    /**
+    
+
+/**
      * Creates a CObjectInstanceInformation and adds it to the symbol table.
      * If the name or type name is not valid then a CPrimitiveInstanceInformation
      * will not be created.
@@ -115,7 +119,9 @@ public class AttributeLocator extends LocatorEvaluator<InstanceInformation>
         return null;
     }
 
-    /**
+    
+
+/**
      * Creates a CObjectInstanceInformation and adds it to the symbol table.
      * If the name or type name is not valid then a CPrimitiveInstanceInformation
      * will not be created.
@@ -141,7 +147,9 @@ public class AttributeLocator extends LocatorEvaluator<InstanceInformation>
         return null;
     }
     
-    /**
+    
+
+/**
      * Searches a specific class for an attribute declaration.
      *
      * @param pClass [in] The class to search.

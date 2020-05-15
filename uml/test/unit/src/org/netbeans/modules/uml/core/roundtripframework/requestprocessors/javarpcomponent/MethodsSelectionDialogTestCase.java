@@ -44,6 +44,8 @@
 
 
 
+
+
 /*
  * Created on Nov 24, 2003
  *
@@ -54,6 +56,7 @@ package org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javar
 import org.netbeans.modules.uml.core.metamodel.core.constructs.IClass;
 import org.netbeans.modules.uml.core.AbstractUMLTestCase;
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IGeneralization;
+
 
 /**
  *

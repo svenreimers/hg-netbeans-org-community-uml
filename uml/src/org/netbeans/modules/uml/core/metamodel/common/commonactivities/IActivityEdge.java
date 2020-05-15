@@ -52,67 +52,93 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 public interface IActivityEdge extends IRedefinableElement, IRelationship
 {
-	/**
+	
+
+/**
 	 * property Activity
 	*/
 	public IActivity getActivity();
 
-	/**
+	
+
+/**
 	 * property Activity
 	*/
 	public void setActivity( IActivity value );
 
-	/**
+	
+
+/**
 	 * property Source
 	*/
 	public IActivityNode getSource();
 
-	/**
+	
+
+/**
 	 * property Source
 	*/
 	public void setSource( IActivityNode value );
 
-	/**
+	
+
+/**
 	 * property Target
 	*/
 	public IActivityNode getTarget();
 
-	/**
+	
+
+/**
 	 * property Target
 	*/
 	public void setTarget( IActivityNode value );
 
-	/**
+	
+
+/**
 	 * property Guard
 	*/
 	public IValueSpecification getGuard();
 
-	/**
+	
+
+/**
 	 * property Guard
 	*/
 	public void setGuard( IValueSpecification value );
 
-	/**
+	
+
+/**
 	 * method AddGroup
 	*/
 	public void addGroup( IActivityGroup pGroup );
 
-	/**
+	
+
+/**
 	 * method RemoveGroup
 	*/
 	public void removeGroup( IActivityGroup pGroup );
 
-	/**
+	
+
+/**
 	 * property Groups
 	*/
 	public ETList<IActivityGroup> getGroups();
 
-	/**
+	
+
+/**
 	 * property Weight
 	*/
 	public IValueSpecification getWeight();
 
-	/**
+	
+
+/**
 	 * property Weight
 	*/
 	public void setWeight( IValueSpecification value );

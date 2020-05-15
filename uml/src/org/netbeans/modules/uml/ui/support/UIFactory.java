@@ -43,6 +43,7 @@
  */
 
 
+
 /*
  *
  * Created on Jun 30, 2003
@@ -65,6 +66,7 @@ import org.netbeans.modules.uml.ui.swing.commondialogs.SwingQuestionDialogImpl;
 import org.netbeans.modules.uml.ui.swing.projecttree.JFilterDialog;
 
 
+
 /**
  * The UIFactory is used to retrieve the implemenation of common dialogs.  Since
  * we must support both SWT and Swing the UIFactory is used to retrieve the
@@ -74,7 +76,8 @@ import org.netbeans.modules.uml.ui.swing.projecttree.JFilterDialog;
 public class UIFactory
 {
 
-   /**
+   
+/**
     * Retrieves the question dialog implementation.
     * 
     * @return The platforms implementation of the IQuestionDialog interface. 
@@ -84,7 +87,9 @@ public class UIFactory
       return new SwingQuestionDialogImpl();
    }
 
-   /**
+   
+
+/**
     * Retrieves the navigation dialog.
     * 
     * @return The platforms implementation of the INavigationDialog interface.
@@ -94,7 +99,9 @@ public class UIFactory
       return new SwingNavigationDialog();
    }   
    
-   /**
+   
+
+/**
     * Retrieves the question dialog implementation.
     * 
     * @return The platforms implementation of the IQuestionDialog interface. 
@@ -105,7 +112,9 @@ public class UIFactory
       return  new SwingPreferenceQuestionDialog();
    }
    
-   /**
+   
+
+/**
     * Retrieves the question dialog implementation.
     * 
     * @return The platforms implementation of the IQuestionDialog interface. 
@@ -116,7 +125,9 @@ public class UIFactory
       return  new SwingErrorDialog();
    }
    
-   /**
+   
+
+/**
     * Creates a new ProjectTreeFilterDialog.
     *   
     * @param parent The owner window.

@@ -157,7 +157,9 @@ public class InteractionOperandWidget extends Widget implements DiagramNodeWrite
     }
 
     
-    /**
+    
+
+/**
      * Paints the line widget.
      */
     @Override

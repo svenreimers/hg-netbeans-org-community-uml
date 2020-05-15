@@ -42,11 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : FinalState.java
- * Created on : Sep 19, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.metamodel.common.commonstatemachines;
 
 import org.dom4j.Document;
@@ -73,7 +70,9 @@ public class FinalState extends State implements IFinalState
         buildNodePresence("UML:FinalState", doc, node);
     }     
 
-	/**
+	
+
+/**
 	 * Does this element have an expanded element type or is the expanded element type always the element type?
 	 */
 	public boolean getHasExpandedElementType()

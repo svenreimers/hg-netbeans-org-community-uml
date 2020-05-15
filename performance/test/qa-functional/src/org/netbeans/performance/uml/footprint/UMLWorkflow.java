@@ -58,6 +58,7 @@ import org.netbeans.jemmy.operators.JListOperator;
 import org.netbeans.jemmy.operators.JTextFieldOperator;
 import org.netbeans.modules.performance.utilities.MemoryFootprintTestCase;
 
+
 /**
  * Measure UML Project Workflow Memory footprint
  *
@@ -66,7 +67,8 @@ public class UMLWorkflow extends MemoryFootprintTestCase {
     
     private ProjectRootNode j2seproject, j2seprojectmodel;
     
-    /**
+    
+/**
      * Creates a new instance of J2EEProjectWorkflow
      *
      * @param testName the name of the test
@@ -76,7 +78,9 @@ public class UMLWorkflow extends MemoryFootprintTestCase {
         prefix = "UML Project Workflow |";
     }
     
-    /**
+    
+
+/**
      * Creates a new instance of J2EEProjectWorkflow
      *
      * @param testName the name of the test

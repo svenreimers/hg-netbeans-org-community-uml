@@ -43,6 +43,8 @@
  */
 
 
+
+
 /*
  * Created on Jun 11, 2003
  *
@@ -90,7 +92,9 @@ public class DiagramTypesManager {
         return m_Instance;
     }
 
-    /**
+    
+
+/**
      * The display name for this diagram type (ie Class Diagram)
      *
      * @param sDiagramTypeName [in] The diagram type name ie "Class Diagram"
@@ -111,7 +115,9 @@ public class DiagramTypesManager {
         return diaKind;
     }
 
-    /**
+    
+
+/**
      * Gets an attribute based on a query
      *
      * @param query [in] The query to perform
@@ -146,14 +152,16 @@ public class DiagramTypesManager {
         return retVal;
     }
 
-    /**
+    
+
+/**
      * Opens and validates that the xml file is ok
      *
      * @return true if the file exists and we successfully loaded.
      */
     private boolean verifyFile() {
         boolean valid = false;
-//        if (m_Doc == null) { //Jyothi: TODO: commented this out to avoid exceptions
+
             String location = retrieveDefaultLocation();
             if (location.length() > 0) {
                 try {
@@ -172,7 +180,9 @@ public class DiagramTypesManager {
         return valid;
     }
 
-    /**
+    
+
+/**
      * Returns the location of the DiagramTypesManager file
      *
      * @return The absolute location of the DiagramTypesManager.etc file.
@@ -188,7 +198,9 @@ public class DiagramTypesManager {
         return location;
     }
 
-    /**
+    
+
+/**
      * Returns the diagram kind (ie Class Diagram) for the argument diagram
      *
      * @param pDiagram [in] The diagram for which to get the type
@@ -202,7 +214,9 @@ public class DiagramTypesManager {
         return retVal;
     }
 
-    /**
+    
+
+/**
      * Returns the diagram kind (ie Class Diagram) for the argument enumeration
      *
      * @param pDiagram [in] The diagram enumeration which we need to convert to a string (ie
@@ -222,7 +236,9 @@ public class DiagramTypesManager {
         return retVal;
     }
 
-    /**
+    
+
+/**
      * Gets an attribute based on a query
      *
      * @param query [in] The query to perform
@@ -263,7 +279,9 @@ public class DiagramTypesManager {
         
     }
 
-    /**
+    
+
+/**
      * Returns the diagram kind without spaces (ie ClassDiagram) for the argument diagram
      *
      * @param pDiagram [in] The diagram for which to get the type sans spaces
@@ -278,7 +296,9 @@ public class DiagramTypesManager {
         return diaTypeName;
     }
 
-    /**
+    
+
+/**
      * Returns the diagram kind without spaces (ie ClassDiagram) for the argument diagram kind (ie Class Diagram)
      *
      * @param sDiagramTypeName [in] The diagram type name, with spaces (ie Class Diagram)
@@ -298,7 +318,9 @@ public class DiagramTypesManager {
         return retVal;
     }
 
-    /**
+    
+
+/**
      * Returns the diagram kind without spaces (ie Class Diagram) for the argument enumeration
      *
      * @param pDiagram [in] The diagram enumeration which we need to convert to a type string without spaces (ie
@@ -319,7 +341,9 @@ public class DiagramTypesManager {
         return retVal;
     }
 
-    /**
+    
+
+/**
      * Returns short diagram type for this long diagram type (ie Class Diagram to CLD)
      *
      * @param sDiagramTypeName [in] The diagram type name, with spaces (ie Class Diagram)
@@ -339,7 +363,9 @@ public class DiagramTypesManager {
         return retVal;
     }
 
-    /**
+    
+
+/**
      * The UML Type for this diagram (ie StructuralDiagram)
      *
      * @param pDiagram [in] The diagram for which to get the type sans spaces
@@ -351,7 +377,9 @@ public class DiagramTypesManager {
         return umlVal;
     }
 
-    /**
+    
+
+/**
      * The UML Type for this diagram (ie StructuralDiagram)
      *
      * @param sDiagramTypeName [in] The diagram type name, with spaces (ie Class Diagram)
@@ -371,7 +399,9 @@ public class DiagramTypesManager {
         return retVal;
     }
 
-    /**
+    
+
+/**
      * The UML Type for this diagram (ie StructuralDiagram)
      *
      * @param pDiagram [in] The diagram enumeration which we need to convert to a short type string (ie
@@ -384,7 +414,9 @@ public class DiagramTypesManager {
         return umlType;
     }
 
-    /**
+    
+
+/**
      * The diagram engine controlling this behavior (ClassDiagram)
      *
      * @param pDiagram [in] The diagram for which to get the type sans spaces
@@ -396,7 +428,9 @@ public class DiagramTypesManager {
         return engine;
     }
 
-    /**
+    
+
+/**
      * The diagram engine controlling this behavior (ClassDiagram)
      *
      * @param sDiagramTypeName [in] The diagram type name, with spaces (ie Class Diagram)
@@ -416,7 +450,9 @@ public class DiagramTypesManager {
         return retVal;
     }
 
-    /**
+    
+
+/**
      * The diagram engine controlling this behavior (ClassDiagram)
      *
      * @param nDiagramKind [in] The diagram enumeration which we need to convert to diagram engine type
@@ -428,7 +464,9 @@ public class DiagramTypesManager {
         return engine;
     }
 
-    /**
+    
+
+/**
      * The open diagram icon
      *
      * @param pDiagram [in] The diagram for which to get the icon name in CommonResources
@@ -440,7 +478,9 @@ public class DiagramTypesManager {
         return icon;
     }
 
-    /**
+    
+
+/**
      * The open diagram icon
      *
      * @param sDiagramTypeName [in] The diagram type name, with spaces (ie Class Diagram)
@@ -460,7 +500,9 @@ public class DiagramTypesManager {
         return retVal;
     }
 
-    /**
+    
+
+/**
      * The open diagram icon
      *
      * @param nDiagramKind [in] The diagram enumeration which we need to convert to diagram engine type
@@ -472,7 +514,9 @@ public class DiagramTypesManager {
         return icon;
     }
 
-    /**
+    
+
+/**
      * The closed diagram icon
      *
      * @param pDiagram [in] The diagram for which to get the icon name in CommonResources
@@ -484,7 +528,9 @@ public class DiagramTypesManager {
         return icon;
     }
 
-    /**
+    
+
+/**
      * The closed diagram icon
      *
      * @param sDiagramTypeName [in] The diagram type name, with spaces (ie Class Diagram)
@@ -504,7 +550,9 @@ public class DiagramTypesManager {
         return retVal;
     }
 
-    /**
+    
+
+/**
      * The closed diagram icon
      *
      * @param nDiagramKind [in] The diagram enumeration which we need to convert to diagram engine type
@@ -516,7 +564,9 @@ public class DiagramTypesManager {
         return icon;
     }
 
-    /**
+    
+
+/**
      * The broken diagram icon
      *
      * @param pDiagram [in] The diagram for which to get the icon name in CommonResources
@@ -528,7 +578,9 @@ public class DiagramTypesManager {
         return icon;
     }
 
-    /**
+    
+
+/**
      * The broken diagram icon
      *
      * @param sDiagramTypeName [in] The diagram type name, with spaces (ie Class Diagram)
@@ -548,7 +600,9 @@ public class DiagramTypesManager {
         return retVal;
     }
 
-    /**
+    
+
+/**
      * The broken diagram icon
      *
      * @param nDiagramKind [in] The diagram enumeration which we need to convert to diagram engine type

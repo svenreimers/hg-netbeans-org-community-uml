@@ -52,27 +52,37 @@ import java.util.ArrayList;
 
 public interface IProductProjectManager
 {
-	/**
+	
+
+/**
 	 * Returns the currently active project.
 	*/
 	public IProject getCurrentProject();
 
-        /**
+        
+
+/**
          * Returns all of the open projects.
          */
         public ArrayList < IProject > getOpenProjects();
 
-	/**
+	
+
+/**
 	 * Brings up the insert project dialog.
 	*/
 	public void displayInsertProjectDialog( IWorkspace pWorkspace );
 
-	/**
+	
+
+/**
 	 * Brings up the new project dialog.
 	*/
 	public void displayNewProjectDialog();
 
-	/**
+	
+
+/**
 	 * Brings up the new project dialog.
 	*/
 	public void displayNewProjectDialog( INewDialogProjectDetails pDetails );

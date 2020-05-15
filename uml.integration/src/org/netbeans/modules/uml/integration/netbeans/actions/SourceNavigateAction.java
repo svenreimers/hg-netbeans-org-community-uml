@@ -44,6 +44,7 @@
 
 package org.netbeans.modules.uml.integration.netbeans.actions;
 
+
 /**
  * Company:
  * @version 1.00
@@ -64,7 +65,9 @@ import org.openide.util.actions.CookieAction;
 
 public class SourceNavigateAction extends CookieAction
 {
-    /**
+    
+
+/**
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;

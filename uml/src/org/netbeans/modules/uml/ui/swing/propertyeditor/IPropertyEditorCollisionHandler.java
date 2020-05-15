@@ -52,12 +52,16 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 public interface IPropertyEditorCollisionHandler extends INameCollisionHandler
 {
-	/**
+	
+
+/**
 	 * The parent property editor.
 	*/
 	public IPropertyEditor getPropertyEditor();
 
-	/**
+	
+
+/**
 	 * The parent property editor.
 	*/
 	public void setPropertyEditor( IPropertyEditor value );
@@ -70,12 +74,16 @@ public interface IPropertyEditorCollisionHandler extends INameCollisionHandler
 
 	public long listenerDisabled();
 
-	/**
+	
+
+/**
 	 * Fired whenever the alias name of the passed in element is about to change.
 	*/
 	public long onPreAliasNameModified( INamedElement element, String proposedName, IResultCell cell );
 
-	/**
+	
+
+/**
 	 * Fired whenever the element's alias name has changed.
 	*/
 	public long onAliasNameModified( INamedElement element, IResultCell cell );

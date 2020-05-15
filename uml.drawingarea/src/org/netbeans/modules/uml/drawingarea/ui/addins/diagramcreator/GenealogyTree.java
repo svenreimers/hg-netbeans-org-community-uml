@@ -91,7 +91,9 @@ public class GenealogyTree //TODO implements IGenealogyTree
    private ComponentParentFinder.ParentChildCollection m_ParentChildPairs;
 
 
-	/**
+	
+
+/**
 	 * 
 	 */
 	public GenealogyTree()
@@ -99,7 +101,9 @@ public class GenealogyTree //TODO implements IGenealogyTree
 		super();
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.addins.diagramcreator.IGenealogyTree#addUndeterminedNode(org.netbeans.modules.uml.ui.support.applicationmanager.INodePresentation)
 	 */ //TODO
 //	public void addUndeterminedNode(INodePresentation nodeToAdd)
@@ -118,7 +122,9 @@ public class GenealogyTree //TODO implements IGenealogyTree
 //      }
 //	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.addins.diagramcreator.IGenealogyTree#buildGenealogy(org.netbeans.modules.uml.ui.swing.drawingarea.IDrawingAreaControl)
 	 */
 //	public void buildGenealogy(IDrawingAreaControl diagram)
@@ -177,7 +183,9 @@ public class GenealogyTree //TODO implements IGenealogyTree
 //      }
 //	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.addins.diagramcreator.IGenealogyTree#determineParentChildRelationships()
 	 */
 	public void determineParentChildRelationships()
@@ -214,7 +222,9 @@ public class GenealogyTree //TODO implements IGenealogyTree
       m_ParentChildPairs = ComponentParentFinder.resolveParents( components, classifiers );
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.addins.diagramcreator.IGenealogyTree#calculateRectangles()
 	 */
 	public void calculateRectangles( IETRect rootGraphRect )
@@ -242,7 +252,9 @@ public class GenealogyTree //TODO implements IGenealogyTree
       }
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.addins.diagramcreator.IGenealogyTree#placeNodes()
 	 */
 	public void placeNodes()
@@ -259,7 +271,9 @@ public class GenealogyTree //TODO implements IGenealogyTree
 //      }
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.addins.diagramcreator.IGenealogyTree#onGraphEvent(int, long)
 	 */
 	public void onGraphEvent(int nKind, String message)
@@ -269,7 +283,7 @@ public class GenealogyTree //TODO implements IGenealogyTree
       // TODO CThermCtrlProxy thermState( message, count);
 
       // Autorouting takes forever and that's what the component draw engine does
-      // in the generic pre/post resize/layout.  So if it's a component draw engine 
+      
       // then handle differently
       for (int i = 0 ; i < count ; i++)
       {
@@ -302,7 +316,9 @@ public class GenealogyTree //TODO implements IGenealogyTree
       }
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.addins.diagramcreator.IGenealogyTree#setStackingOrder()
 	 */
 	public void setStackingOrder()
@@ -318,7 +334,9 @@ public class GenealogyTree //TODO implements IGenealogyTree
 //      }
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.addins.diagramcreator.IGenealogyTree#printTree()
 	 */
 	public void printTree()
@@ -334,21 +352,20 @@ public class GenealogyTree //TODO implements IGenealogyTree
 //      }
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.ui.addins.diagramcreator.IGenealogyTree#distributeAllComponentPorts()
 	 */
 	public void distributeAllComponentPorts()
 	{
       int count = (m_AllNodes != null) ? m_AllNodes.getCount() : 0;
       
-/* TODO
-      String sMessage;
-      vERIFY(sMessage.loadString(IDS_LAYING_OUT_PORTS));
-      CThermCtrlProxy thermState( sMessage, count);
-*/      
+
+      
 
       // Autorouting takes forever and that's what the component draw engine does
-      // in the generic pre/post resize/layout.  So if it's a component draw engine 
+      
       // then handle differently
       for ( int i = 0 ; i < count ; i++ )
       {
@@ -421,7 +438,9 @@ public class GenealogyTree //TODO implements IGenealogyTree
       {
       }
 
-      /**
+      
+
+/**
        * Finds the parent in our list and adds it
        *
        * @param item [in] The presentation element to add to the tree
@@ -463,7 +482,9 @@ public class GenealogyTree //TODO implements IGenealogyTree
          return bDidAdd;
       }
 
-      /**
+      
+
+/**
        * Computes the sizes of all the rectangles
        */
       void computeRectangleSizes()
@@ -522,7 +543,9 @@ public class GenealogyTree //TODO implements IGenealogyTree
          }
       }
 
-      /**
+      
+
+/**
        * Sets the rectangle of this object to contain all of the children
        *
        * @param upperLeft [in] The upper left point for the beginning of the childrens list
@@ -561,7 +584,9 @@ public class GenealogyTree //TODO implements IGenealogyTree
          }
       }
 
-      /**
+      
+
+/**
        * Places the node in the diagram
        */
 //      void placeNode( IDrawingAreaControl diagram )
@@ -585,7 +610,9 @@ public class GenealogyTree //TODO implements IGenealogyTree
 //         }
 //      }
       
-      /**
+      
+
+/**
        * Prints the tree.  Used in debug
        *
        * @param increment [in] The child level.  Used to offset the print.
@@ -616,7 +643,9 @@ public class GenealogyTree //TODO implements IGenealogyTree
          }
       }
 
-      /**
+      
+
+/**
        * Sets the desired rect and moves all the children
        */
       void setDesiredRectAndMoveChildren( IETRect newRect )
@@ -638,7 +667,9 @@ public class GenealogyTree //TODO implements IGenealogyTree
          }
       }
 
-      /**
+      
+
+/**
        * Sets the stacking order
        */
 //      void setStackingOrder( IDrawingAreaControl diagram )
@@ -656,7 +687,9 @@ public class GenealogyTree //TODO implements IGenealogyTree
 //         }
 //      }
 
-      /**
+      
+
+/**
        * Sets the desired rect
        */
       void setDesiredRect( IETRect rect )
@@ -664,7 +697,9 @@ public class GenealogyTree //TODO implements IGenealogyTree
          m_DesiredRect = rect;
       }
       
-      /**
+      
+
+/**
        * Gets the desired rect
        */
       IETRect getDesiredRect()
@@ -672,7 +707,9 @@ public class GenealogyTree //TODO implements IGenealogyTree
          return m_DesiredRect;
       }
 
-      /**
+      
+
+/**
        * Returns the size of this node + any dependant children.  For instance, the
        * component has lollypops and assembly connectors that make the size of any
        arent bigger.
@@ -702,7 +739,9 @@ public class GenealogyTree //TODO implements IGenealogyTree
       }
    };
    
-   /**
+   
+
+/**
     * Returns the parent for this presentation element
     *
     * @param childPE [in] The child whose parent is to be determined within our list of nodes
@@ -741,7 +780,9 @@ public class GenealogyTree //TODO implements IGenealogyTree
       return parentElement;
    }
 
-   /**
+   
+
+/**
     * Is the childElement a child of component parent
     */
    protected boolean getIsInternalClassifier( IComponent component, IElement childElement )
@@ -759,7 +800,9 @@ public class GenealogyTree //TODO implements IGenealogyTree
       return bIsInternalClassifier;
    }
    
-   /**
+   
+
+/**
     * Populates our root elements with roots found in the list of undetermined nodes
     */
    protected void populateRootElementsFromUndeterminedNodes()
@@ -810,7 +853,9 @@ public class GenealogyTree //TODO implements IGenealogyTree
 //      }
    }
 
-   /**
+   
+
+/**
     * Finds the parent of this item in the tree and add it
     */
    protected boolean addToParent( IPresentationElement item )

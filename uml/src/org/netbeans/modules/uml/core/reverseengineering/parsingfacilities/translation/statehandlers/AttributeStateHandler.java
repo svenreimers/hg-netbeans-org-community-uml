@@ -43,11 +43,8 @@
  */
 
 
-/*
- * File       : AttributeStateHandler.java
- * Created on : Dec 10, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.statehandlers;
 
 import org.dom4j.Node;
@@ -82,7 +79,9 @@ public class AttributeStateHandler extends TypeElementStateHandler
         m_PrimitiveType = true;
     }
     
-    /**
+    
+
+/**
      * Creates and returns a new state handler for a sub-state.  If the sub-state
      * is not handled then null is returned.  The attribute state of interest is
      * <code>Initializer</code>
@@ -114,7 +113,9 @@ public class AttributeStateHandler extends TypeElementStateHandler
         return retVal;
     }
 
-    /**
+    
+
+/**
      * Used by TypeElementStateHandler to determine the type
      * of XMI fragment to create.  GetFeatureName returns the
      * XMI node name.
@@ -127,7 +128,9 @@ public class AttributeStateHandler extends TypeElementStateHandler
         return "UML:Attribute";
     }
 
-    /**
+    
+
+/**
      * Initialize the state handler.  This is a one time initialization.
      */
     public void initialize()
@@ -147,7 +150,9 @@ public class AttributeStateHandler extends TypeElementStateHandler
 	}
     }
 
-    /**
+    
+
+/**
      * The state handler is able to process the token.  Attribute tokens of
      * interest are <code>Statement Terminator</code> and
      * <code>Primitive Type</code>
@@ -187,7 +192,9 @@ public class AttributeStateHandler extends TypeElementStateHandler
         }
     }
 
-    /**
+    
+
+/**
      * Notification that the a state has completed.  All state clean up is
      * done this the StateComplete state.  The Attribute states of interest
      * is <code>Initializer</code> and <code>Type</code>.
@@ -231,7 +238,9 @@ public class AttributeStateHandler extends TypeElementStateHandler
 
 
 
-    /**
+    
+
+/**
      * Processes the attributes initializer and adds the XMI
      * that represent the attributes initializer.
      */
@@ -263,7 +272,9 @@ public class AttributeStateHandler extends TypeElementStateHandler
                                    length);
     }
 
-    /**
+    
+
+/**
      * Specifies if the attribute is an aggregation association.  In java
      * all attributes that are of primitive data types are aggregation
      * relationships.
@@ -275,7 +286,9 @@ public class AttributeStateHandler extends TypeElementStateHandler
         return !m_PrimitiveType;
     }
 
-    /**
+    
+
+/**
      * Specifies if the attribute is an composition association.  In java
      * there are no composition associations.
      *
@@ -286,7 +299,9 @@ public class AttributeStateHandler extends TypeElementStateHandler
         return false;
     }
 
-    /**
+    
+
+/**
      * Notifies listeners (who are listening for UML atomic events) that
      * an Attribute has been found.
      */

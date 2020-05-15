@@ -80,6 +80,7 @@ import org.netbeans.modules.uml.drawingarea.view.DesignerScene;
 import org.netbeans.modules.uml.drawingarea.view.DesignerTools;
 import org.netbeans.modules.uml.drawingarea.view.UMLWidget;
 
+
 /**
  * The AbstractLabelManger provides a basic implementation of the label manager.
  * This implementation will control how to display the labels on a connection.
@@ -95,12 +96,16 @@ public abstract class AbstractLabelManager implements LabelManager
     private ConnectionWidget connector = null;
     private HashMap < String, Widget > labelMap = new HashMap < String, Widget >();
 
-    /**
+    
+
+/**
      * The name of stereotype labels.
      */
     public static final String STEREOTYPE = "Stereotype"; //NOI18N
 
-    /**
+    
+
+/**
      * The name of Name labels.
      */
     public static final String NAME = "Name"; //NOI18N
@@ -117,7 +122,9 @@ public abstract class AbstractLabelManager implements LabelManager
 
     public static final String PRECONDITION = "precondition";
     public static final String POSTCONDITION = "postcondition";
-    /**
+    
+
+/**
      * Creates an AbstractLabelManager and associates it to a connection
      * widget.
      * @param widget
@@ -240,7 +247,9 @@ public abstract class AbstractLabelManager implements LabelManager
     {
         selectLabel(name, LabelType.EDGE);
     }
-    /**
+    
+
+/**
      * select and focus on labvel if it's shown
      * @param name
      * @param type
@@ -342,7 +351,9 @@ public abstract class AbstractLabelManager implements LabelManager
     //////////////////////////////////////////////////////////////////
     // Helper Methods
 
-    /**
+    
+
+/**
      * Creates and initialize a new label.  Subclasses will usally create a
      * LabelWidget and sets the widgets text.  However that is not required,
      * any widget can be returned.
@@ -353,7 +364,9 @@ public abstract class AbstractLabelManager implements LabelManager
      */
     protected abstract Widget createLabel(String name, LabelType type);
 
-    /**
+    
+
+/**
      * Allows an implementation to create a data element that is to be
      * assoicated with the label widget.  If a data element is associated with
      * the widget it will be selectable, and the label will be highlighted when
@@ -371,7 +384,9 @@ public abstract class AbstractLabelManager implements LabelManager
      */
     protected abstract Object createAttachedData(String name, LabelType type);
 
-    /**
+    
+
+/**
      * Specifies the alignment along the edge.
      *
      * @param name the name of the label.
@@ -381,7 +396,9 @@ public abstract class AbstractLabelManager implements LabelManager
     protected abstract LayoutFactory.ConnectionWidgetLayoutAlignment getDefaultAlignment(String name,
                                                                                          LabelType type);
 
-    /**
+    
+
+/**
      * Retreives the model element associated with the connector.
      * @return
      */
@@ -405,7 +422,9 @@ public abstract class AbstractLabelManager implements LabelManager
         return retVal;
     }
 
-    /**
+    
+
+/**
      * Retrieves a label that is of type EDGE.
      *
      * @param name the name of the label.
@@ -416,7 +435,9 @@ public abstract class AbstractLabelManager implements LabelManager
         return getLabel(name, LabelType.EDGE);
     }
 
-    /**
+    
+
+/**
      * Retrieves a label.
      *
      * @param name the name of the label.
@@ -435,7 +456,9 @@ public abstract class AbstractLabelManager implements LabelManager
         return label.getChildren().get(0);
     }
 
-    /**
+    
+
+/**
      * Specifies where to place the label on the connection.
      *
      * @param type the type of label.
@@ -457,7 +480,9 @@ public abstract class AbstractLabelManager implements LabelManager
         return retVal;
     }
 
-    /**
+    
+
+/**
      * Specifies where to place the label on the connection.
      *
      * @param type the type of label.
@@ -479,7 +504,9 @@ public abstract class AbstractLabelManager implements LabelManager
         return retVal;
     }
 
-    /**
+    
+
+/**
      * Retreives the associated connection.
      * @return the connection
      */
@@ -488,7 +515,9 @@ public abstract class AbstractLabelManager implements LabelManager
         return connector;
     }
 
-    /**
+    
+
+/**
      * Retreives the associated scene.
      * @return the scene.
      */
@@ -497,7 +526,9 @@ public abstract class AbstractLabelManager implements LabelManager
         return connector.getScene();
     }
 
-    /**
+    
+
+/**
      * Returns the default name from the preference manager
      */
     public String retrieveDefaultName()
@@ -518,7 +549,9 @@ public abstract class AbstractLabelManager implements LabelManager
         return labelMap;
     }
 
-    /**
+    
+
+/**
      * The createLineWidget method is used to create a line widget that can 
      * be used to connect a label to the associated connnection widget.
      * 
@@ -533,7 +566,9 @@ public abstract class AbstractLabelManager implements LabelManager
         return widget;
     }
 
-    /**
+    
+
+/**
      * The ConnectionLabelWidget provides some basic features for all label
      * widgets.  For example the connection widget will has the ability to
      * highlight when selected.

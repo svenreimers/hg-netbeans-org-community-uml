@@ -50,22 +50,30 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 public interface IRoundTripEventPayload extends IEventPayload
 {
 
-	/**
+	
+
+/**
 	 * property Data
 	*/
 	public Object getData();
 
-	/**
+	
+
+/**
 	 * property Data
 	*/
 	public void setData( Object value );
 
-	/**
+	
+
+/**
 	 * property ChangeRequests
 	*/
 	public ETList<IChangeRequest> getChangeRequests();
 
-	/**
+	
+
+/**
 	 * property ChangeRequests
 	*/
 	public void setChangeRequests(ETList<IChangeRequest> requests);

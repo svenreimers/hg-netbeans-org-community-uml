@@ -63,7 +63,9 @@ public class DesignCenterUtilities
       super();
    }
 
-   /**
+   
+
+/**
     * Create a menu item on the context menu passed in
     *
     * @param pContextMenu[in]	The context menu to add the one we are about to create to
@@ -101,7 +103,9 @@ public class DesignCenterUtilities
       }
       return pContextMenuItemOut;
    }
-   /**
+   
+
+/**
     * Create a menu item on the context menu item passed in
     *
     * @param pContextMenuItem[in]	The context menu item to add the one we are about to create to
@@ -130,7 +134,9 @@ public class DesignCenterUtilities
       }
       return pContextMenuItemOut;
    }
-   /**
+   
+
+/**
     * Create a menu item and add it to the items passed in
     *
     * @param pContextMenuItems[in]	The items to add the one we are about to create to
@@ -163,7 +169,9 @@ public class DesignCenterUtilities
 		}
 	   	return pContextMenuItemOut;
 	}
-   /**
+   
+
+/**
     * Given a particular tree item, go up its tree structure until the node is found that represents
     * the addin.
     *

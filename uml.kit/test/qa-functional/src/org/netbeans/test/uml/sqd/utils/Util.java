@@ -169,7 +169,9 @@ public class Util {
     }
     
     
-    /**
+    
+
+/**
      * @return previous value of color
      */
     public Color setColor(JDialogOperator dlg, int red, int green, int blue){

@@ -43,6 +43,8 @@
  */
 
 
+
+
 /*
  * Created on Dec 8, 2003
  *
@@ -60,13 +62,15 @@ import org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.Symbol
 import org.netbeans.modules.uml.core.reverseengineering.reframework.IREClass;
 import org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ITokenDescriptor;
 
+
 /**
  *
  * Window - Preferences - Java - Code Generation - Code and Comments
  */
 public class ExpressionProxy implements IExpressionProxy{
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.expression.IExpressionProxy#clear()
 	 */
 	public void clear() {
@@ -74,7 +78,9 @@ public class ExpressionProxy implements IExpressionProxy{
 
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.expression.IExpressionProxy#getEndPosition()
 	 */
 	public long getEndPosition() {
@@ -82,7 +88,9 @@ public class ExpressionProxy implements IExpressionProxy{
 		return 0;
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.expression.IExpressionProxy#getStartLine()
 	 */
 	public long getStartLine() {
@@ -90,7 +98,9 @@ public class ExpressionProxy implements IExpressionProxy{
 		return 0;
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.expression.IExpressionProxy#getStartPosition()
 	 */
 	public long getStartPosition()
@@ -99,7 +109,9 @@ public class ExpressionProxy implements IExpressionProxy{
 		return 0;
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.expression.IExpressionProxy#sendOperationEvents(org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.expression.InstanceRef, org.netbeans.modules.uml.core.reverseengineering.reframework.IREClass, org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.expression.SymbolTable, org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.IREClassLoader, org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.IUMLParserEventDispatcher, org.dom4j.Node)
 	 */
 	public InstanceInformation sendOperationEvents(InstanceInformation pInstance, IREClass pThisPtr, SymbolTable symbolTable, IREClassLoader pClassLoader,IUMLParserEventDispatcher pDispatcher,Node pParentNode)
@@ -108,7 +120,9 @@ public class ExpressionProxy implements IExpressionProxy{
 		return null;
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.expression.IExpressionProxy#writeAsXMI(org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.expression.InstanceRef, org.dom4j.Node, org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.expression.SymbolTable, org.netbeans.modules.uml.core.reverseengineering.reframework.IREClass, org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.IREClassLoader)
 	 */
 	public ETPairT<InstanceInformation, Node> writeAsXMI(InstanceInformation pInfo, Node pParentNode,	SymbolTable symbolTable, IREClass pThisPtr,	IREClassLoader pClassLoader)
@@ -117,7 +131,9 @@ public class ExpressionProxy implements IExpressionProxy{
 		return null;
 	}
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.core.reverseengineering.parsingfacilities.translation.expression.IExpressionProxy#processToken(org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.ITokenDescriptor, java.lang.String)
     */
    public void processToken(ITokenDescriptor pToken, String language)

@@ -41,6 +41,8 @@
  * Version 2 license, then the option applies only if the new code is
  * made subject to such option by the copyright holder.
  */
+
+
 /*
  * CLD_InterfaceTests.java
  *
@@ -103,7 +105,9 @@ public class CLD_InterfaceElementTests extends ClassDiagramTestCase {
         suite.addTest(new CLD_InterfaceElementTests("testSelectAllSimilar"));
         suite.addTest(new CLD_InterfaceElementTests("testInvertSelection"));
         // 6.5 Hide/Show not yet implemented
-        /**
+        
+
+/**
         suite.addTest(new CLD_InterfaceElementTests("testHideChildrenOneLevel"));
         suite.addTest(new CLD_InterfaceElementTests("testHideChildrenAllLevels"));
         suite.addTest(new CLD_InterfaceElementTests("testHideParentsOneLevel"));

@@ -54,6 +54,7 @@ import org.netbeans.test.uml.diagramcontextmenu.utils.DCMUtils;
 import org.netbeans.test.umllib.testcases.UMLTestCase;
 import org.netbeans.test.umllib.util.PopupConstants;
 
+
 /**
  *
  * @spec UML/Diagram_ContextMenus.xml
@@ -81,6 +82,8 @@ public class DiagramContextMenus_DPD extends UMLTestCase {
         return suite;
     }
     
+
+
 /**
  * @caseblock Deployment Diagram
  * @usecase Check context menu of deployment diagram
@@ -95,6 +98,8 @@ public class DiagramContextMenus_DPD extends UMLTestCase {
             fail("Diagram popum menu item '" + itemName + "' is enabled but should not be");
         }
     }
+
+
 
 /**
  * @caseblock Deployment Diagram
@@ -111,6 +116,8 @@ public class DiagramContextMenus_DPD extends UMLTestCase {
         }
     }
 
+
+
 /**
  * @caseblock Deployment Diagram
  * @usecase Check context menu of deployment diagram
@@ -125,6 +132,8 @@ public class DiagramContextMenus_DPD extends UMLTestCase {
             fail("Diagram popum menu item '" + itemName + "' is enabled but should not be");
         }
     }
+
+
 
 /**
  * @caseblock Deployment Diagram
@@ -141,6 +150,8 @@ public class DiagramContextMenus_DPD extends UMLTestCase {
         }
     }
     
+
+
 /**
  * @caseblock Deployment Diagram
  * @usecase Check context menu of deployment diagram
@@ -156,6 +167,8 @@ public class DiagramContextMenus_DPD extends UMLTestCase {
         }
     }
     
+
+
 /**
  * @caseblock Deployment Diagram
  * @usecase Check context menu of deployment diagram
@@ -171,6 +184,8 @@ public class DiagramContextMenus_DPD extends UMLTestCase {
         }
     }
     
+
+
 /**
  * @caseblock Deployment Diagram
  * @usecase Check context menu of deployment diagram
@@ -185,6 +200,8 @@ public class DiagramContextMenus_DPD extends UMLTestCase {
             fail("Diagram popum menu item '" + itemName + "' is disabled but should not be");
         }
     }
+
+
 /**
  * @caseblock Deployment Diagram
  * @usecase Check context menu of deployment diagram
@@ -199,6 +216,8 @@ public class DiagramContextMenus_DPD extends UMLTestCase {
             fail("Diagram popum menu item '" + itemName + "' is enabled but should not be");
         }
     }
+
+
 
 /**
  * @caseblock Deployment Diagram
@@ -215,6 +234,8 @@ public class DiagramContextMenus_DPD extends UMLTestCase {
         }
     }
 
+
+
 /**
  * @caseblock Deployment Diagram
  * @usecase Check context menu of deployment diagram
@@ -229,6 +250,8 @@ public class DiagramContextMenus_DPD extends UMLTestCase {
             fail("Diagram popum menu item '" + itemName + "' is disabled but should not be");
         }
     }
+
+
 
 /**
  * @caseblock Deployment Diagram
@@ -245,6 +268,8 @@ public class DiagramContextMenus_DPD extends UMLTestCase {
         }
     }
 
+
+
 /**
  * @caseblock Deployment Diagram
  * @usecase Check context menu of deployment diagram
@@ -259,6 +284,8 @@ public class DiagramContextMenus_DPD extends UMLTestCase {
             fail("Diagram popum menu item '" + itemName + "' is disabled but should not be");
         }
     }
+
+
 
 /**
  * @caseblock Deployment Diagram
@@ -280,6 +307,8 @@ public class DiagramContextMenus_DPD extends UMLTestCase {
         }
     }
     
+
+
 /**
  * @caseblock Deployment Diagram
  * @usecase Check context menu of deployment diagram
@@ -300,6 +329,8 @@ public class DiagramContextMenus_DPD extends UMLTestCase {
         }
     }
     
+
+
 /**
  * @caseblock Deployment Diagram
  * @usecase Check context menu of deployment diagram
@@ -315,6 +346,8 @@ public class DiagramContextMenus_DPD extends UMLTestCase {
         }
     }
     
+
+
 /**
  * @caseblock Deployment Diagram
  * @usecase Check context menu of deployment diagram
@@ -330,6 +363,8 @@ public class DiagramContextMenus_DPD extends UMLTestCase {
         }
     }
     
+
+
 /**
  * @caseblock Deployment Diagram
  * @usecase Check context menu of deployment diagram
@@ -344,6 +379,8 @@ public class DiagramContextMenus_DPD extends UMLTestCase {
             fail("Diagram popum menu item '" + itemName + "' is disabled but should not be");
         }
     }
+
+
 
 /**
  * @caseblock Deployment Diagram
@@ -365,6 +402,8 @@ public class DiagramContextMenus_DPD extends UMLTestCase {
         }
     }
     
+
+
 /**
  * @caseblock Deployment Diagram
  * @usecase Check context menu of deployment diagram
@@ -385,6 +424,8 @@ public class DiagramContextMenus_DPD extends UMLTestCase {
         }
     }
     
+
+
 /**
  * @caseblock Deployment Diagram
  * @usecase Check context menu of deployment diagram
@@ -404,6 +445,8 @@ public class DiagramContextMenus_DPD extends UMLTestCase {
             }
         }
     }
+
+
 
 /**
  * @caseblock Deployment Diagram

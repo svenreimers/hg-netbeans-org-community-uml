@@ -42,6 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
+
+
 /*
  * Created on Oct 8, 2003
  *
@@ -80,7 +82,9 @@ public class MessageDataFilter implements IMessageDataFilter
 		m_Filters = new ETArrayList<IMessageFacilityFilter>();
 	}
 	
-	/**
+	
+
+/**
 	 * Initializes the class by providing the xml file to store preferences in and
 	 * the messenger which this filter applies to.  Eventually we need to combine the
 	 * facilities found in the messenger with those in the xml file - because the messenger
@@ -132,7 +136,9 @@ public class MessageDataFilter implements IMessageDataFilter
 		}
 	}
 	
-	/**
+	
+
+/**
 	 * Returns a list of facility filters.  Each item in the list corresponds to a
 	 * particular facility and indicates what message types should be displayed.
 	 *
@@ -143,7 +149,9 @@ public class MessageDataFilter implements IMessageDataFilter
 		return m_Filters;
 	}
 	
-	/**
+	
+
+/**
 	 * Given a particular message this routine returns a true or false
 	 * indicating if the filter settings would display this message.
 	 *
@@ -170,7 +178,9 @@ public class MessageDataFilter implements IMessageDataFilter
 		return retVal;
 	}
 	
-	/**
+	
+
+/**
 	 * Given a particular message this routine sets the facility and message type to
 	 * be displayed according to the parameter newVal.
 	 *
@@ -195,7 +205,9 @@ public class MessageDataFilter implements IMessageDataFilter
 		}
 	}
 	
-	/**
+	
+
+/**
 	 * Given a particular message type and facility, this routine returns a true or false
 	 * indicating if the filter settings would display this message.
 	 *
@@ -222,7 +234,9 @@ public class MessageDataFilter implements IMessageDataFilter
 		return retVal;
 	}
 	
-	/**
+	
+
+/**
 	 * Gets the filter corresponding to the argument facility name.
 	 *
 	 * @param sFacility The facility we want to search for
@@ -254,7 +268,9 @@ public class MessageDataFilter implements IMessageDataFilter
 		return retFilter;
 	}
 	
-	/**
+	
+
+/**
 	 * Given a particular message type and facilty, this routine sets the facility and message type to
 	 * be displayed according to the parameter newVal.
 	 *
@@ -278,7 +294,9 @@ public class MessageDataFilter implements IMessageDataFilter
 		}
 	}
 
-	/**
+	
+
+/**
 	 * Saves the file.
 	 *
 	 * @see CMessageDataFilter::Initialize
@@ -315,11 +333,8 @@ public class MessageDataFilter implements IMessageDataFilter
 		
 	}
 	
-	/**
-	 * Rereads the file from disk.
-	 *
-	 * @see CMessageDataFilter::Initialize
-	 */
+	
+
 	public void reRead()
 	{
 		Document pDoc = XMLManip.getDOMDocument(m_FileLocation);

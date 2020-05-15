@@ -42,12 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File         : EventFrameworkSink.java
- * Version      : 1.2
- * Description  : Listener for special context events - like batch context etc.
- * Authors      : Sumitabh
- */
+
+
 package org.netbeans.modules.uml.integration.ide;
 
 import org.netbeans.modules.uml.integration.ide.events.ClassInfo;
@@ -59,16 +55,8 @@ import org.netbeans.modules.uml.core.support.umlsupport.Log;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 
-/**
- *  Listener for special context events - like batch context etc.
- *
- * Revision History
- * No.  Date        Who         What
- * ---  ----        ---         ----
- *   1  2002-09-16  Sumitabh    Created.
- *
- * @version 1.2
- */
+
+
 public class EventFrameworkSink extends SourceNavigable
                                 implements IEventFrameworkEventsSink {
 

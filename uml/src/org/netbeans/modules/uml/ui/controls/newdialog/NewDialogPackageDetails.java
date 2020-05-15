@@ -67,7 +67,9 @@ public class NewDialogPackageDetails implements INewDialogPackageDetails
 	private boolean m_AllowFromRESelection;
 	private int /*DiagramKind*/ m_DiagramKind;
 
-	/**
+	
+
+/**
 	 * 
 	 */
 	public NewDialogPackageDetails()
@@ -79,7 +81,9 @@ public class NewDialogPackageDetails implements INewDialogPackageDetails
 		m_DiagramKind = IDiagramKind.DK_CLASS_DIAGRAM;
 	}
 
-	/**
+	
+
+/**
 	 * Name of the package.
 	 *
 	 * @param pVal[out]
@@ -91,7 +95,9 @@ public class NewDialogPackageDetails implements INewDialogPackageDetails
 		return m_Name;
 	}
 
-	/**
+	
+
+/**
 	 * Name of the package.
 	 *
 	 * @param pVal[out]
@@ -103,7 +109,9 @@ public class NewDialogPackageDetails implements INewDialogPackageDetails
 		m_Name = value;
 	}
 
-	/**
+	
+
+/**
 	 * The namespace this package will occupy.
 	 *
 	 * @param pVal[out]
@@ -115,7 +123,9 @@ public class NewDialogPackageDetails implements INewDialogPackageDetails
 		return m_Namespace;
 	}
 
-	/**
+	
+
+/**
 	 * The namespace this package will occupy.
 	 *
 	 * @param pVal[out]
@@ -127,7 +137,9 @@ public class NewDialogPackageDetails implements INewDialogPackageDetails
 		m_Namespace = value;
 	}
 
-	/**
+	
+
+/**
 	 * Add an additional namespace to our list of possible namespaces.
 	 *
 	 * @param pNamespace[in]
@@ -151,7 +163,9 @@ public class NewDialogPackageDetails implements INewDialogPackageDetails
 		return 0;
 	}
 
-	/**
+	
+
+/**
 	 * Should we create a scoped diagram?
 	 *
 	 * @param pVal[out]
@@ -163,7 +177,9 @@ public class NewDialogPackageDetails implements INewDialogPackageDetails
 		return m_CreateScopedDiagram;
 	}
 
-	/**
+	
+
+/**
 	 * Should we create a scoped diagram?
 	 *
 	 * @param pVal[out]
@@ -175,7 +191,9 @@ public class NewDialogPackageDetails implements INewDialogPackageDetails
 		m_CreateScopedDiagram = value;
 	}
 
-	/**
+	
+
+/**
 	 * The name of the scoped diagram.
 	 *
 	 * @param pVal[out]
@@ -187,7 +205,9 @@ public class NewDialogPackageDetails implements INewDialogPackageDetails
 		return m_ScopedDiagramName;
 	}
 
-	/**
+	
+
+/**
 	 * The name of the scoped diagram.
 	 *
 	 * @param pVal[out]
@@ -199,7 +219,9 @@ public class NewDialogPackageDetails implements INewDialogPackageDetails
 		m_ScopedDiagramName = value;
 	}
 
-	/**
+	
+
+/**
 	 * The kind of scoped diagram.
 	 *
 	 * @param pKind[out]
@@ -211,7 +233,9 @@ public class NewDialogPackageDetails implements INewDialogPackageDetails
 		return m_DiagramKind;
 	}
 
-	/**
+	
+
+/**
 	 * The kind of scoped diagram.
 	 *
 	 * @param pKind[out]
@@ -223,7 +247,9 @@ public class NewDialogPackageDetails implements INewDialogPackageDetails
 		m_DiagramKind = value;
 	}
 
-	/**
+	
+
+/**
 	 * The kind of package to create.
 	 *
 	 * @param pVal[out]
@@ -235,7 +261,9 @@ public class NewDialogPackageDetails implements INewDialogPackageDetails
 		return m_PackageKind;
 	}
 
-	/**
+	
+
+/**
 	 * The kind of package to create.
 	 *
 	 * @param pVal[out]
@@ -247,7 +275,9 @@ public class NewDialogPackageDetails implements INewDialogPackageDetails
 		m_PackageKind = value;
 	}
 
-	/**
+	
+
+/**
 	 * Should the dialog show the From Reverse Engineering selection?
 	 *
 	 * @param pVal[out]
@@ -259,7 +289,9 @@ public class NewDialogPackageDetails implements INewDialogPackageDetails
 		return m_AllowFromRESelection;
 	}
 
-	/**
+	
+
+/**
 	 * Should the dialog show the From Reverse Engineering selection?
 	 *
 	 * @param pVal[out]

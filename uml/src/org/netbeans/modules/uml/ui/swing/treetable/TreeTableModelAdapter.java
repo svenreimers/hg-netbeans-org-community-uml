@@ -53,6 +53,7 @@ import javax.swing.event.TreeExpansionListener;
 import javax.swing.event.TreeModelEvent;
 import javax.swing.event.TreeModelListener;
 
+
 /**
  * This is a wrapper class takes a TreeTableModel and implements
  * the table model interface. The implementation is trivial, with
@@ -140,7 +141,9 @@ public class TreeTableModelAdapter extends AbstractTableModel
 	treeTableModel.setValueAt(value, nodeForRow(row), column);
     }
 
-    /**
+    
+
+/**
      * Invokes fireTableDataChanged after all the pending events have been
      * processed. SwingUtilities.invokeLater is used to handle this.
      */

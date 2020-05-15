@@ -50,6 +50,8 @@ import java.awt.Graphics;
 import javax.swing.Icon;
 import javax.swing.JLabel;
 
+
+
 /**
  * We want a label that can be selected.  The key is that when the label
  * is selected, that we only want the text to be selected, not the

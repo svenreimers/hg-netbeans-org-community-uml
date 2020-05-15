@@ -72,7 +72,9 @@ public class DiagramDetails implements IDiagramKind
     private Date mDateModified = null;
 
 
-    /**
+    
+
+/**
      * Gets the name of the diagram.
      *
      * @return The name of the diagrm
@@ -83,7 +85,9 @@ public class DiagramDetails implements IDiagramKind
     }
 
     
-    /**
+    
+
+/**
      * Sets the name of the diagram.
      *
      * @parm value The name of the diagrm
@@ -93,7 +97,9 @@ public class DiagramDetails implements IDiagramKind
         mDiagramName = diagramName;
     }
 
-    /**
+    
+
+/**
      * Returns the type of the daigram.  The valid values for
      * the daigram type is specified in the interface IDiagramKind.
      *
@@ -105,7 +111,9 @@ public class DiagramDetails implements IDiagramKind
         return mDiagramType;
     }
 
-    /**
+    
+
+/**
      * Sets the type of the daigram.  The valid values for
      * the daigram type is specified in the interface IDiagramKind.
      *
@@ -118,7 +126,9 @@ public class DiagramDetails implements IDiagramKind
     }
 
 
-    /**
+    
+
+/**
      * Retrieves the XMI ID for of the namespace that contains the diagram.
      *
      * @return The id.
@@ -135,7 +145,9 @@ public class DiagramDetails implements IDiagramKind
         return retVal;
     }
 
-    /**
+    
+
+/**
      * Sets the XMI ID for of the namespace that contains the diagram.
      *
      * @param value
@@ -145,7 +157,9 @@ public class DiagramDetails implements IDiagramKind
         mNamespaceXMIID = value;
     }
 
-    /**
+    
+
+/**
      * Retrieves the diagrams XMI ID.
      *
      * @return the id.
@@ -155,7 +169,9 @@ public class DiagramDetails implements IDiagramKind
         return mDiagramXMIID;
     }
 
-    /**
+    
+
+/**
      * Sets the diagrams XMIID.
      *
      * @param value the id.
@@ -165,7 +181,9 @@ public class DiagramDetails implements IDiagramKind
         mDiagramXMIID = value;
     }
 
-    /**
+    
+
+/**
      * Retrieves the XMI ID of the project that contains the diagram.
      *
      * @return the ID.
@@ -175,7 +193,9 @@ public class DiagramDetails implements IDiagramKind
         return mProjectXMIID;
     }
 
-    /**
+    
+
+/**
      * Set the XMI ID of the project that contains the diagram.
      * 
      * @param valuethe ID.
@@ -185,7 +205,9 @@ public class DiagramDetails implements IDiagramKind
         mProjectXMIID = value;
     }
     
-    /**
+    
+
+/**
      * Retrieves the XMI ID of the top level component.
      *
      * @return the ID.
@@ -195,7 +217,9 @@ public class DiagramDetails implements IDiagramKind
         return mToplevelXMIID;
     }
 
-    /**
+    
+
+/**
      * Sets the XMI ID of the top level component
      * @param valuethe ID.
      */
@@ -204,7 +228,9 @@ public class DiagramDetails implements IDiagramKind
         mToplevelXMIID = value;
     }
 
-    /**
+    
+
+/**
      * Retrieves the type name of the diagram.
      *
      * @return The diagram type.
@@ -214,7 +240,9 @@ public class DiagramDetails implements IDiagramKind
         return mDiagramTypeName;
     }
 
-    /**
+    
+
+/**
      * Sets the type name of the diagram.
      *
      * @param value The diagram type.
@@ -227,7 +255,9 @@ public class DiagramDetails implements IDiagramKind
         setDiagramType(manager.getDiagramKind(value));
     }
 
-    /**
+    
+
+/**
      * @param space
      */
     public void setNamespace(INamespace space)
@@ -235,7 +265,9 @@ public class DiagramDetails implements IDiagramKind
         mNamespace = space;
     }
 
-    /**
+    
+
+/**
      * @param space
      */
     public INamespace getNamespace()
@@ -243,7 +275,9 @@ public class DiagramDetails implements IDiagramKind
         return mNamespace;
     }
 
-    /**
+    
+
+/**
      * @param object
      */
     public void setAssociatedElements(ArrayList<ModelElementXMIIDPair> elements)
@@ -251,7 +285,9 @@ public class DiagramDetails implements IDiagramKind
         mAssociatedElements = elements;
     }
 
-    /**
+    
+
+/**
      * @param object
      */
     public ArrayList<ModelElementXMIIDPair> getAssociatedElements()
@@ -259,7 +295,9 @@ public class DiagramDetails implements IDiagramKind
         return mAssociatedElements;
     }
 
-    /**
+    
+
+/**
      * Retrieves the diagram zoom level
      *
      * @return The last date modified.
@@ -268,7 +306,9 @@ public class DiagramDetails implements IDiagramKind
         return mZoom;
     }
 
-    /**
+    
+
+/**
      * Sets the diagram zoom level
      *
      * @param value The file date.
@@ -277,7 +317,9 @@ public class DiagramDetails implements IDiagramKind
         mZoom = zoom;
     }
     
-    /**
+    
+
+/**
      * Retrieves the diagram file name that was used to retrieve the diagram details.
      *
      * @return The last date modified.
@@ -286,7 +328,9 @@ public class DiagramDetails implements IDiagramKind
         return mFileName;
     }
 
-    /**
+    
+
+/**
      * Sets the file name that was used to retrieve the diagram details.
      *
      * @param value The file date.
@@ -295,7 +339,9 @@ public class DiagramDetails implements IDiagramKind
         mFileName = fileName;
     }
     
-    /**
+    
+
+/**
      * Retrieves the file date that was used to retrieve the diagram details.
      *
      * @return The last date modified.
@@ -305,7 +351,9 @@ public class DiagramDetails implements IDiagramKind
         return mDateModified;
     }
 
-    /**
+    
+
+/**
      * Sets the file date that was used to retrieve the diagram details.
      *
      * @param value The file date.
@@ -315,7 +363,9 @@ public class DiagramDetails implements IDiagramKind
         mDateModified = value;
     }
     
-    /**
+    
+
+/**
      * @param object
      */
     public void setAssociatedDiagrams(ArrayList<String> diagrams)
@@ -323,7 +373,9 @@ public class DiagramDetails implements IDiagramKind
         mAssociatedDiagrams = diagrams;
     }
 
-    /**
+    
+
+/**
      * @param object
      */
     public ArrayList<String> getAssociatedDiagrams()
@@ -331,14 +383,18 @@ public class DiagramDetails implements IDiagramKind
         return mAssociatedDiagrams;
     }
 
-    /**
+    
+
+/**
      * @return the documentation
      */
     public String getDocumentation() {
         return documentation;
     }
 
-    /**
+    
+
+/**
      * @param documentation the documentation to set
      */
     public void setDocumentation(String documentation) {

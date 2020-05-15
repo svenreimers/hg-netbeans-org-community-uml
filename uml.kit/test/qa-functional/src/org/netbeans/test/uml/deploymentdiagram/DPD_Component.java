@@ -68,6 +68,7 @@ import org.netbeans.test.umllib.testcases.UMLTestCase;
 import org.netbeans.test.umllib.vrf.DiagramElementVerifier;
 
 
+
 /**
  *
  * @spec UML/DeploymentDiagram.xml
@@ -94,6 +95,8 @@ public class DPD_Component extends UMLTestCase {
         return suite;
     }
     
+
+
 /**
  * @caseblock Component Symbol
  * @usecase Copy and Paste a Component symbol on a diagram by popup menu
@@ -105,6 +108,8 @@ public class DPD_Component extends UMLTestCase {
         }
     }
     
+
+
 /**
  * @caseblock Component Symbol
  * @usecase Copy and Paste a Component symbol on a diagram by shortcuts
@@ -116,6 +121,8 @@ public class DPD_Component extends UMLTestCase {
         }
     }
     
+
+
 /**
  * @caseblock Component Symbol
  * @usecase Cut and Paste a Component symbol on a diagram by shortcuts
@@ -127,6 +134,8 @@ public class DPD_Component extends UMLTestCase {
         }
     }
     
+
+
 /**
  * @caseblock Component Symbol
  * @usecase Cut and Paste a Component symbol on a diagram by shortcuts
@@ -138,6 +147,8 @@ public class DPD_Component extends UMLTestCase {
         }
     }
     
+
+
 /**
  * @caseblock Component Symbol
  * @usecase Delete a Component symbol from a diagram by context menu
@@ -149,6 +160,8 @@ public class DPD_Component extends UMLTestCase {
         }
     }
     
+
+
 /**
  * @caseblock Component Symbol
  * @usecase Delete a Component symbol from a diagram by pressing the delete key
@@ -159,6 +172,8 @@ public class DPD_Component extends UMLTestCase {
             fail("Test failed. Details in log file.");
         }
     }
+
+
 
 /**
  * @caseblock Component Symbol
@@ -171,6 +186,8 @@ public class DPD_Component extends UMLTestCase {
         }
     }
     
+
+
 /**
  * @caseblock Component Symbol
  * @usecase Select all on a diagram by popup menu of a Component
@@ -182,6 +199,8 @@ public class DPD_Component extends UMLTestCase {
         }
     }
     
+
+
 /**
  * @caseblock Component Symbol
  * @usecase Select all on a diagram by shortcut
@@ -193,6 +212,8 @@ public class DPD_Component extends UMLTestCase {
         }
     }
     
+
+
 /**
  * @caseblock Component Symbol
  * @usecase Select All Similar Elements of a Component
@@ -204,6 +225,8 @@ public class DPD_Component extends UMLTestCase {
         }
     }
     
+
+
 /**
  * @caseblock Component Symbol
  * @usecase Invert selection of a Component
@@ -215,6 +238,8 @@ public class DPD_Component extends UMLTestCase {
         }
     }
     
+
+
 /**
  * @caseblock Component Symbol
  * @usecase Hide Children one level of a Component
@@ -226,6 +251,8 @@ public class DPD_Component extends UMLTestCase {
         }
     }
     
+
+
 /**
  * @caseblock Component Symbol
  * @usecase Hide Children All levels of a Component
@@ -237,6 +264,8 @@ public class DPD_Component extends UMLTestCase {
         }
     }
     
+
+
 /**
  * @caseblock Component Symbol
  * @usecase Hide Parents one level of a Component
@@ -248,6 +277,8 @@ public class DPD_Component extends UMLTestCase {
         }
     }
     
+
+
 /**
  * @caseblock Component Symbol
  * @usecase Hide Parents All levels of a Component
@@ -259,6 +290,8 @@ public class DPD_Component extends UMLTestCase {
         }
     }   
     
+
+
 /**
  * @caseblock Component Symbol
  * @usecase Show Children one level of a Component
@@ -270,6 +303,8 @@ public class DPD_Component extends UMLTestCase {
         }
     }   
     
+
+
 /**
  * @caseblock Component Symbol
  * @usecase Show Children All levels of a Component
@@ -281,6 +316,8 @@ public class DPD_Component extends UMLTestCase {
         }
     }   
     
+
+
 /**
  * @caseblock Component Symbol
  * @usecase Show Parents one level of a Component
@@ -292,6 +329,8 @@ public class DPD_Component extends UMLTestCase {
         }
     }   
     
+
+
 /**
  * @caseblock Component Symbol
  * @usecase Show Parents All levels of a Component
@@ -303,6 +342,8 @@ public class DPD_Component extends UMLTestCase {
         }
     }   
     
+
+
 /**
  * @caseblock Component Symbol
  * @usecase 
@@ -313,6 +354,8 @@ public class DPD_Component extends UMLTestCase {
             fail("Test failed. Details in log file.");
         }
     }   
+
+
 
 /**
  * @caseblock Component Symbol
@@ -325,6 +368,8 @@ public class DPD_Component extends UMLTestCase {
         }
     }   
     
+
+
 /**
  * @caseblock Component Symbol
  * @usecase Text font of a Component
@@ -335,6 +380,8 @@ public class DPD_Component extends UMLTestCase {
             fail("Test failed. Details in log file.");
         }
     }   
+
+
 
 /**
  * @caseblock Component Symbol

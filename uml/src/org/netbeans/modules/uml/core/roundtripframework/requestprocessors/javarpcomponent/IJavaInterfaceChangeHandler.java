@@ -42,12 +42,15 @@
  * made subject to such option by the copyright holder.
  */
 
+
+
 /*
  * Created on Jul 13, 2004
  */
 package org.netbeans.modules.uml.core.roundtripframework.requestprocessors.javarpcomponent;
 
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier;
+
 
 /**
  *

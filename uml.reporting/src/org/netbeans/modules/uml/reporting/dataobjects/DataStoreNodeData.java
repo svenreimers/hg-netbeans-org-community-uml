@@ -54,7 +54,8 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.IElement;
 public class DataStoreNodeData extends ObjectNodeData
 {
     
-    /**
+    
+/**
      * Creates a new instance of DataStoreNodeData
      */
     public DataStoreNodeData()

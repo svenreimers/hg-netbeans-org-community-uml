@@ -42,6 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
+
+
 /*
  * UMLProjectHelper.java
  *
@@ -310,7 +312,9 @@ public class UMLProjectHelper
         return retVal;
     }
     
-    /**
+    
+
+/**
      * @param b
      */
     public void closeProject(boolean save)

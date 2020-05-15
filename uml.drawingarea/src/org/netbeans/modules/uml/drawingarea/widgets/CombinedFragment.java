@@ -46,45 +46,53 @@ import org.netbeans.api.visual.widget.Widget;
 import org.netbeans.modules.uml.core.metamodel.dynamics.ICombinedFragment;
 import org.netbeans.modules.uml.core.metamodel.dynamics.IMessage;
 
+
 /**
  * provide functionality of combned fragment necessary for cdfs/re operation/?loading?
  */
 public interface CombinedFragment {
-    /**
+    
+/**
      * combined fragment need to cover child lifelines, messages, properly adjust operands after cdfs
      */
     public void resizeToModelContent();
     
-    /**
+    
+/**
      * set message right before this combined fragment
      * @param msg
      * @param msgW
      */
     public void setMessageBefore(IMessage msg,Widget msgW);
-    /**
+    
+/**
      * set message right after this combined fragment
      * @param msg
      * @param msgW
      */
     public void setMessageAfter(IMessage msg,Widget msgW);
     
-    /**
+    
+/**
      * 
      * @param cf
      */
     public void setCombinedFragmentBefore(ICombinedFragment cf,Widget cfW);
-    /**
+    
+/**
      * 
      * @param cf
      */
     public void setCombinedFragmentAfter(ICombinedFragment cf,Widget cfW);
     
     //public void setOwnedCombinedFragments();
-    /**
+    
+/**
      * after cdfs for example by default all expression labels should be visible
      */
     public void showLabels();
-    /**
+    
+/**
      * need ability to say combined fragment to calculate children after creation
      * @return
      */

@@ -105,7 +105,9 @@ public class RoundTripController implements IRoundTripController
     private IRoundTripEventDispatcher           m_RTDispatcher;
     private IElementLifeTimeEventDispatcher     m_LifeDispatch;
     private String                              RT_DISPATCH = "RoundTripDispatcher";
-	/**
+	
+
+/**
 	 * 
 	 */
 	public RoundTripController() 
@@ -115,7 +117,9 @@ public class RoundTripController implements IRoundTripController
         
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.roundtripframework.IRoundTripController#getMode()
 	 */
 	public int getMode() 
@@ -123,14 +127,16 @@ public class RoundTripController implements IRoundTripController
 		return m_Mode;
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.roundtripframework.IRoundTripController#setMode(int)
 	 */
 	public void setMode(int value) 
 	{
         int origMode = m_Mode;
         
-// IZ 84855 conover - RT is always off and shouldn't be 
+
 // turned on for any reason
 //        if (value != RTMode.RTM_LIVE)
             m_Mode = value;
@@ -156,7 +162,7 @@ public class RoundTripController implements IRoundTripController
             }
             break;
 
-// IZ 84855 conover - RT is always off and shouldn't be 
+
 // turned on for any reason
             case RTMode.RTM_LIVE:
             {
@@ -180,7 +186,9 @@ public class RoundTripController implements IRoundTripController
         }
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.roundtripframework.IRoundTripController#getEventDispatchController()
 	 */
 	public IEventDispatchController getEventDispatchController() {
@@ -190,14 +198,18 @@ public class RoundTripController implements IRoundTripController
         return m_DispController;
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.roundtripframework.IRoundTripController#setEventDispatchController(org.netbeans.modules.uml.core.eventframework.IEventDispatchController)
 	 */
 	public void setEventDispatchController(IEventDispatchController value) {
 		m_DispController = value;		
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.roundtripframework.IRoundTripController#initialize(java.lang.Object, int)
 	 */
 	public void initialize(ICoreProduct prod, int mode) 
@@ -224,35 +236,45 @@ public class RoundTripController implements IRoundTripController
         }
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.roundtripframework.IRoundTripController#getRoundTripDispatcher()
 	 */
 	public IRoundTripEventDispatcher getRoundTripDispatcher() {
 		return (IRoundTripEventDispatcher)getADispatcher(RT_DISPATCH);
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.roundtripframework.IRoundTripController#getClassifierDispatcher()
 	 */
 	public IClassifierEventDispatcher getClassifierDispatcher() {
         return (IClassifierEventDispatcher)getADispatcher(EventDispatchNameKeeper.classifier());
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.roundtripframework.IRoundTripController#getElementLifeTimeDispatcher()
 	 */
 	public IElementLifeTimeEventDispatcher getElementLifeTimeDispatcher() {
         return (IElementLifeTimeEventDispatcher)getADispatcher(EventDispatchNameKeeper.lifeTime());
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.roundtripframework.IRoundTripController#getElementChangeDispatcher()
 	 */
 	public IElementChangeEventDispatcher getElementChangeDispatcher() {
         return (IElementChangeEventDispatcher)getADispatcher(EventDispatchNameKeeper.modifiedName());
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.roundtripframework.IRoundTripController#getRelationValidatorDispatcher()
 	 */
 	public IRelationValidatorEventDispatcher getRelationValidatorDispatcher() 
@@ -260,7 +282,9 @@ public class RoundTripController implements IRoundTripController
         return (IRelationValidatorEventDispatcher)getADispatcher(EventDispatchNameKeeper.relation());
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.roundtripframework.IRoundTripController#deInitialize()
 	 */
 	public void deInitialize() 
@@ -275,16 +299,8 @@ public class RoundTripController implements IRoundTripController
         m_Manager = null;
 	}
 
-    /**
-     *
-     * Creates the dispatchers that will be installed on this 
-     * RoundTripController's own EventDispatchController. This
-     * allows RequestProcessors to connect to register to these
-     * dispatchers, receiving RoundTrip specific payloads.
-     *
-     * @return HRESULT
-     *
-     */
+    
+
 
     public void createDispatchers()
     {
@@ -305,7 +321,9 @@ public class RoundTripController implements IRoundTripController
         }
     }
 
-    /**
+    
+
+/**
      *
      * Connects the sinks the RoundTripController implements with the various
      * dispatchers on the core product. This is where the connection between
@@ -403,7 +421,9 @@ public class RoundTripController implements IRoundTripController
         }
     }
     
-    /**
+    
+
+/**
     * Creates the round trip dispatcher and creates the dispatch
     * controller that this controller will use to dispatch
     * change requests to the various listeners.
@@ -426,7 +446,9 @@ public class RoundTripController implements IRoundTripController
         createDispatchers();
     }
     
-    /**
+    
+
+/**
      *
      * Retrieves the current product, registering with all the 
      * appropriate dispatchers necessary for roundtrip
@@ -441,7 +463,9 @@ public class RoundTripController implements IRoundTripController
         registerWithProduct(ProductRetriever.retrieveProduct());
     }
     
-    /**
+    
+
+/**
      *
      * Revokes the various sinks from the various dispatchers on the passed in
      * product
@@ -508,7 +532,9 @@ public class RoundTripController implements IRoundTripController
         }
     }
     
-    /**
+    
+
+/**
      *
      * Gets the specifier dispatcher type from the controller
      *
@@ -533,7 +559,9 @@ public class RoundTripController implements IRoundTripController
     // IDocumentationModifiedEventsSink
     // -------------------------------------------------------------------------
  
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IDocumentationModifiedEventsSink#onDocumentationModified(org.netbeans.modules.uml.core.metamodel.core.foundation.IElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onDocumentationModified(IElement element, IResultCell cell)
@@ -541,7 +569,9 @@ public class RoundTripController implements IRoundTripController
         m_Manager.onRTDocumentationModified(element, cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IDocumentationModifiedEventsSink#onDocumentationPreModified(org.netbeans.modules.uml.core.metamodel.core.foundation.IElement, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onDocumentationPreModified(
@@ -557,7 +587,9 @@ public class RoundTripController implements IRoundTripController
     // IElementLifeTimeEventsSink
     // -------------------------------------------------------------------------
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IElementLifeTimeEventsSink#onElementCreated(org.netbeans.modules.uml.core.metamodel.core.foundation.IVersionableElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onElementCreated(IVersionableElement element, IResultCell cell)
@@ -565,7 +597,9 @@ public class RoundTripController implements IRoundTripController
         // RoundTrip doesn't handle the element create method
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IElementLifeTimeEventsSink#onElementDeleted(org.netbeans.modules.uml.core.metamodel.core.foundation.IVersionableElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onElementDeleted(IVersionableElement element, IResultCell cell)
@@ -574,7 +608,9 @@ public class RoundTripController implements IRoundTripController
 
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IElementLifeTimeEventsSink#onElementDuplicated(org.netbeans.modules.uml.core.metamodel.core.foundation.IVersionableElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onElementDuplicated(
@@ -585,7 +621,9 @@ public class RoundTripController implements IRoundTripController
 
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IElementLifeTimeEventsSink#onElementPreCreate(java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onElementPreCreate(String ElementType, IResultCell cell)
@@ -593,7 +631,9 @@ public class RoundTripController implements IRoundTripController
         // RoundTrip doesn't handle the element create method
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IElementLifeTimeEventsSink#onElementPreDelete(org.netbeans.modules.uml.core.metamodel.core.foundation.IVersionableElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onElementPreDelete(
@@ -603,7 +643,9 @@ public class RoundTripController implements IRoundTripController
         m_Manager.onRTElementPreDelete(element, cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IElementLifeTimeEventsSink#onElementPreDuplicated(org.netbeans.modules.uml.core.metamodel.core.foundation.IVersionableElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onElementPreDuplicated(
@@ -617,7 +659,9 @@ public class RoundTripController implements IRoundTripController
     // INamedElementEventsSink
     // -------------------------------------------------------------------------
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElementEventsSink#onAliasNameModified(org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onAliasNameModified(INamedElement element, IResultCell cell)
@@ -625,7 +669,9 @@ public class RoundTripController implements IRoundTripController
         // C++ code does nothing
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElementEventsSink#onNameCollision(org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElement)
      */
     public void onNameCollision(INamedElement element, ETList<INamedElement> collidingElements, IResultCell cell)
@@ -633,7 +679,9 @@ public class RoundTripController implements IRoundTripController
         // C++ code does nothing
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElementEventsSink#onNameModified(org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onNameModified(INamedElement element, IResultCell cell)
@@ -649,7 +697,9 @@ public class RoundTripController implements IRoundTripController
         }
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElementEventsSink#onPreAliasNameModified(org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElement, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onPreAliasNameModified(
@@ -660,7 +710,9 @@ public class RoundTripController implements IRoundTripController
         // C++ code does nothing
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElementEventsSink#onPreNameCollision(org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElement, java.lang.String)
      */
     public void onPreNameCollision(INamedElement element, String proposedName, ETList<INamedElement> collidingElements, IResultCell cell)
@@ -668,7 +720,9 @@ public class RoundTripController implements IRoundTripController
         // C++ code does nothing
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElementEventsSink#onPreNameModified(org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElement, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onPreNameModified(
@@ -679,7 +733,9 @@ public class RoundTripController implements IRoundTripController
         m_Manager.onRTPreNameModified(element, proposedName, cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElementEventsSink#onPreVisibilityModified(org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElement, int, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onPreVisibilityModified(
@@ -690,7 +746,9 @@ public class RoundTripController implements IRoundTripController
         m_Manager.onRTPreVisibilityModified(element, proposedValue, cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElementEventsSink#onVisibilityModified(org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onVisibilityModified(INamedElement element, IResultCell cell)
@@ -702,7 +760,9 @@ public class RoundTripController implements IRoundTripController
     // INamespaceModifiedEventsSink
     // -------------------------------------------------------------------------
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.INamespaceModifiedEventsSink#onElementAddedToNamespace(org.netbeans.modules.uml.core.metamodel.core.foundation.INamespace, org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onElementAddedToNamespace(
@@ -713,7 +773,9 @@ public class RoundTripController implements IRoundTripController
         m_Manager.onRTElementAddedToNamespace(space, elementAdded, cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.INamespaceModifiedEventsSink#onPreElementAddedToNamespace(org.netbeans.modules.uml.core.metamodel.core.foundation.INamespace, org.netbeans.modules.uml.core.metamodel.core.foundation.INamedElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onPreElementAddedToNamespace(
@@ -728,7 +790,9 @@ public class RoundTripController implements IRoundTripController
     // IRelationValidatorEventsSink
     // -------------------------------------------------------------------------
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IRelationValidatorEventsSink#onPreRelationValidate(org.netbeans.modules.uml.core.metamodel.core.foundation.IRelationProxy, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onPreRelationValidate(IRelationProxy proxy, IResultCell cell)
@@ -737,7 +801,9 @@ public class RoundTripController implements IRoundTripController
 
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IRelationValidatorEventsSink#onRelationValidated(org.netbeans.modules.uml.core.metamodel.core.foundation.IRelationProxy, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRelationValidated(IRelationProxy payload, IResultCell cell)
@@ -749,7 +815,9 @@ public class RoundTripController implements IRoundTripController
     // RelationEventsSink
     // -------------------------------------------------------------------------
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IRelationEventsSink#onPreRelationCreated(org.netbeans.modules.uml.core.metamodel.core.foundation.IRelationProxy, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onPreRelationCreated(IRelationProxy proxy, IResultCell cell)
@@ -758,7 +826,9 @@ public class RoundTripController implements IRoundTripController
 
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IRelationEventsSink#onPreRelationDeleted(org.netbeans.modules.uml.core.metamodel.core.foundation.IRelationProxy, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onPreRelationDeleted(IRelationProxy proxy, IResultCell cell)
@@ -766,7 +836,9 @@ public class RoundTripController implements IRoundTripController
         m_Manager.onRTPreRelationDeleted(proxy, cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IRelationEventsSink#onPreRelationEndAdded(org.netbeans.modules.uml.core.metamodel.core.foundation.IRelationProxy, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onPreRelationEndAdded(IRelationProxy proxy, IResultCell cell)
@@ -774,7 +846,9 @@ public class RoundTripController implements IRoundTripController
         m_Manager.onRTPreRelationEndAdded(proxy, cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IRelationEventsSink#onPreRelationEndModified(org.netbeans.modules.uml.core.metamodel.core.foundation.IRelationProxy, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onPreRelationEndModified(
@@ -784,7 +858,9 @@ public class RoundTripController implements IRoundTripController
         m_Manager.onRTPreRelationEndModified(proxy, cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IRelationEventsSink#onPreRelationEndRemoved(org.netbeans.modules.uml.core.metamodel.core.foundation.IRelationProxy, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onPreRelationEndRemoved(IRelationProxy proxy, IResultCell cell)
@@ -792,7 +868,9 @@ public class RoundTripController implements IRoundTripController
         m_Manager.onRTPreRelationEndRemoved(proxy, cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IRelationEventsSink#onRelationCreated(org.netbeans.modules.uml.core.metamodel.core.foundation.IRelationProxy, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRelationCreated(IRelationProxy proxy, IResultCell cell)
@@ -800,7 +878,9 @@ public class RoundTripController implements IRoundTripController
         m_Manager.onRTRelationCreated(proxy, cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IRelationEventsSink#onRelationDeleted(org.netbeans.modules.uml.core.metamodel.core.foundation.IRelationProxy, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRelationDeleted(IRelationProxy proxy, IResultCell cell)
@@ -808,7 +888,9 @@ public class RoundTripController implements IRoundTripController
         m_Manager.onRTRelationDeleted(proxy, cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IRelationEventsSink#onRelationEndAdded(org.netbeans.modules.uml.core.metamodel.core.foundation.IRelationProxy, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRelationEndAdded(IRelationProxy proxy, IResultCell cell)
@@ -816,7 +898,9 @@ public class RoundTripController implements IRoundTripController
         m_Manager.onRTRelationEndAdded(proxy, cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IRelationEventsSink#onRelationEndModified(org.netbeans.modules.uml.core.metamodel.core.foundation.IRelationProxy, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRelationEndModified(IRelationProxy payload, IResultCell cell)
@@ -824,7 +908,9 @@ public class RoundTripController implements IRoundTripController
         m_Manager.onRTRelationEndModified(payload, cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IRelationEventsSink#onRelationEndRemoved(org.netbeans.modules.uml.core.metamodel.core.foundation.IRelationProxy, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRelationEndRemoved(IRelationProxy proxy, IResultCell cell)
@@ -836,7 +922,9 @@ public class RoundTripController implements IRoundTripController
     // IAttributeEventsSink
     // -------------------------------------------------------------------------
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttributeEventsSink#onDefaultBodyModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttribute, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onDefaultBodyModified(IAttribute feature, IResultCell cell)
@@ -844,7 +932,9 @@ public class RoundTripController implements IRoundTripController
         m_Manager.onRTDefaultBodyModified(feature, cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttributeEventsSink#onDefaultLanguageModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttribute, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onDefaultLanguageModified(IAttribute feature, IResultCell cell)
@@ -852,7 +942,9 @@ public class RoundTripController implements IRoundTripController
         m_Manager.onRTDefaultLanguageModified(feature, cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttributeEventsSink#onDefaultModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttribute, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onDefaultModified(IAttribute attr, IResultCell cell)
@@ -860,7 +952,9 @@ public class RoundTripController implements IRoundTripController
         m_Manager.onRTDefaultModified(attr, cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttributeEventsSink#onDefaultPreModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttribute, org.netbeans.modules.uml.core.metamodel.core.foundation.IExpression, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onDefaultPreModified(
@@ -872,7 +966,9 @@ public class RoundTripController implements IRoundTripController
 
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttributeEventsSink#onDerivedModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttribute, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onDerivedModified(IAttribute feature, IResultCell cell)
@@ -880,7 +976,9 @@ public class RoundTripController implements IRoundTripController
         // C++ code does nothing
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttributeEventsSink#onPreDefaultBodyModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttribute, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onPreDefaultBodyModified(
@@ -891,7 +989,9 @@ public class RoundTripController implements IRoundTripController
         m_Manager.onRTPreDefaultBodyModified(feature, bodyValue, cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttributeEventsSink#onPreDefaultLanguageModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttribute, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onPreDefaultLanguageModified(
@@ -902,7 +1002,9 @@ public class RoundTripController implements IRoundTripController
         m_Manager.onRTPreDefaultLanguageModified(feature, language, cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttributeEventsSink#onPreDerivedModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttribute, boolean, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onPreDerivedModified(
@@ -913,7 +1015,9 @@ public class RoundTripController implements IRoundTripController
         // C++ code does nothing
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttributeEventsSink#onPrePrimaryKeyModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttribute, boolean, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onPrePrimaryKeyModified(
@@ -924,7 +1028,9 @@ public class RoundTripController implements IRoundTripController
         // C++ code does nothing
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttributeEventsSink#onPrimaryKeyModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAttribute, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onPrimaryKeyModified(IAttribute feature, IResultCell cell)
@@ -937,7 +1043,9 @@ public class RoundTripController implements IRoundTripController
     // -------------------------------------------------------------------------
     
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavioralFeatureEventsSink#onAbstractModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavioralFeature, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onAbstractModified(
@@ -947,7 +1055,9 @@ public class RoundTripController implements IRoundTripController
         m_Manager.onRTAbstractModified(feature, cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavioralFeatureEventsSink#onConcurrencyModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavioralFeature, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onConcurrencyModified(
@@ -957,7 +1067,9 @@ public class RoundTripController implements IRoundTripController
         m_Manager.onRTConcurrencyModified(feature, cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavioralFeatureEventsSink#onConcurrencyPreModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavioralFeature, int, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onConcurrencyPreModified(
@@ -968,7 +1080,9 @@ public class RoundTripController implements IRoundTripController
         m_Manager.onRTConcurrencyPreModified(feature, proposedValue, cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavioralFeatureEventsSink#onHandledSignalAdded(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavioralFeature, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onHandledSignalAdded(
@@ -979,7 +1093,9 @@ public class RoundTripController implements IRoundTripController
 
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavioralFeatureEventsSink#onHandledSignalRemoved(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavioralFeature, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onHandledSignalRemoved(
@@ -989,7 +1105,9 @@ public class RoundTripController implements IRoundTripController
         m_Manager.onRTHandledSignalRemoved(feature, cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavioralFeatureEventsSink#onParameterAdded(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavioralFeature, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IParameter, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onParameterAdded(
@@ -1000,7 +1118,9 @@ public class RoundTripController implements IRoundTripController
         m_Manager.onRTParameterAdded(feature, parm, cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavioralFeatureEventsSink#onParameterRemoved(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavioralFeature, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IParameter, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onParameterRemoved(
@@ -1011,7 +1131,9 @@ public class RoundTripController implements IRoundTripController
         m_Manager.onRTParameterRemoved(feature, parm, cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavioralFeatureEventsSink#onPreAbstractModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavioralFeature, boolean, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onPreAbstractModified(
@@ -1022,7 +1144,9 @@ public class RoundTripController implements IRoundTripController
         m_Manager.onRTPreAbstractModified(feature, proposedValue, cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavioralFeatureEventsSink#onPreHandledSignalAdded(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavioralFeature, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ISignal, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onPreHandledSignalAdded(
@@ -1033,7 +1157,9 @@ public class RoundTripController implements IRoundTripController
         m_Manager.onRTPreHandledSignalAdded(feature, proposedValue, cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavioralFeatureEventsSink#onPreHandledSignalRemoved(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavioralFeature, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ISignal, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onPreHandledSignalRemoved(
@@ -1045,7 +1171,9 @@ public class RoundTripController implements IRoundTripController
 
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavioralFeatureEventsSink#onPreParameterAdded(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavioralFeature, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IParameter, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onPreParameterAdded(
@@ -1056,7 +1184,9 @@ public class RoundTripController implements IRoundTripController
         m_Manager.onRTPreParameterAdded(feature, parm, cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavioralFeatureEventsSink#onPreParameterRemoved(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavioralFeature, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IParameter, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onPreParameterRemoved(
@@ -1067,7 +1197,9 @@ public class RoundTripController implements IRoundTripController
         m_Manager.onRTPreParameterRemoved(feature, parm, cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavioralFeatureEventsSink#onPreStrictFPModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavioralFeature, boolean, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onPreStrictFPModified(
@@ -1078,7 +1210,9 @@ public class RoundTripController implements IRoundTripController
         m_Manager.onRTPreStrictFPModified(feature, proposedValue, cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavioralFeatureEventsSink#onStrictFPModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IBehavioralFeature, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onStrictFPModified(
@@ -1094,7 +1228,9 @@ public class RoundTripController implements IRoundTripController
     
     
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see com.em_Manager.onRTe.metamodel.infrastructure.coreinfrastructure.IClassifierFeatureEventsSink#onAbstractModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onAbstractModified(IClassifier feature, IResultCell cell)
@@ -1102,7 +1238,9 @@ public class RoundTripController implements IRoundTripController
         m_Manager.onRTAbstractModified(feature, cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifierFeatureEventsSink#onFeatureAdded(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IFeature, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onFeatureAdded(
@@ -1113,7 +1251,9 @@ public class RoundTripController implements IRoundTripController
         m_Manager.onRTFeatureAdded(classifier, feature, cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifierFeatureEventsSink#onFeatureDuplicatedToClassifier(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IFeature, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IFeature, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onFeatureDuplicatedToClassifier(
@@ -1126,7 +1266,9 @@ public class RoundTripController implements IRoundTripController
         m_Manager.onRTFeatureDuplicatedToClassifier(pOldClassifier, pOldFeature,pNewClassifier,pNewFeature, cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifierFeatureEventsSink#onFeatureMoved(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IFeature, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onFeatureMoved(
@@ -1137,7 +1279,9 @@ public class RoundTripController implements IRoundTripController
         m_Manager.onRTFeatureMoved(classifier, feature, cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifierFeatureEventsSink#onFeaturePreAdded(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IFeature, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onFeaturePreAdded(
@@ -1148,7 +1292,9 @@ public class RoundTripController implements IRoundTripController
         m_Manager.onRTFeaturePreAdded(classifier, feature, cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifierFeatureEventsSink#onFeaturePreDuplicatedToClassifier(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IFeature, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onFeaturePreDuplicatedToClassifier(
@@ -1159,7 +1305,9 @@ public class RoundTripController implements IRoundTripController
         m_Manager.onRTFeaturePreDuplicatedToClassifier(classifier, feature, cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifierFeatureEventsSink#onFeaturePreMoved(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IFeature, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onFeaturePreMoved(
@@ -1170,7 +1318,9 @@ public class RoundTripController implements IRoundTripController
         m_Manager.onRTFeaturePreMoved(classifier, feature, cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifierFeatureEventsSink#onFeaturePreRemoved(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IFeature, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onFeaturePreRemoved(
@@ -1181,7 +1331,9 @@ public class RoundTripController implements IRoundTripController
         // C++ code does nothing
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifierFeatureEventsSink#onFeatureRemoved(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IFeature, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onFeatureRemoved(
@@ -1192,7 +1344,9 @@ public class RoundTripController implements IRoundTripController
         // C++ code does nothing
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifierFeatureEventsSink#onLeafModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onLeafModified(IClassifier feature, IResultCell cell)
@@ -1200,7 +1354,9 @@ public class RoundTripController implements IRoundTripController
         m_Manager.onRTLeafModified(feature, cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifierFeatureEventsSink#onPreAbstractModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, boolean, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onPreAbstractModified(
@@ -1211,7 +1367,9 @@ public class RoundTripController implements IRoundTripController
         m_Manager.onRTPreAbstractModified(feature, proposedValue, cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifierFeatureEventsSink#onPreLeafModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, boolean, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onPreLeafModified(
@@ -1222,7 +1380,9 @@ public class RoundTripController implements IRoundTripController
         m_Manager.onRTPreLeafModified(feature, proposedValue, cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifierFeatureEventsSink#onPreTemplateParameterAdded(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IParameterableElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onPreTemplateParameterAdded(
@@ -1233,7 +1393,9 @@ public class RoundTripController implements IRoundTripController
         // C++ code does nothing
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifierFeatureEventsSink#onPreTemplateParameterRemoved(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IParameterableElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onPreTemplateParameterRemoved(
@@ -1244,7 +1406,9 @@ public class RoundTripController implements IRoundTripController
         // C++ code does nothing
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifierFeatureEventsSink#onPreTransientModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, boolean, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onPreTransientModified(
@@ -1255,7 +1419,9 @@ public class RoundTripController implements IRoundTripController
         m_Manager.onRTPreTransientModified(feature, proposedValue, cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifierFeatureEventsSink#onTemplateParameterAdded(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IParameterableElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onTemplateParameterAdded(
@@ -1266,7 +1432,9 @@ public class RoundTripController implements IRoundTripController
         // C++ code does nothing
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifierFeatureEventsSink#onTemplateParameterRemoved(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IParameterableElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onTemplateParameterRemoved(
@@ -1277,7 +1445,9 @@ public class RoundTripController implements IRoundTripController
         // C++ code does nothing
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifierFeatureEventsSink#onTransientModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onTransientModified(IClassifier feature, IResultCell cell)
@@ -1291,7 +1461,9 @@ public class RoundTripController implements IRoundTripController
     
     
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IFeatureEventsSink#onNativeModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IFeature, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onNativeModified(IFeature feature, IResultCell cell)
@@ -1300,7 +1472,9 @@ public class RoundTripController implements IRoundTripController
 
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IFeatureEventsSink#onPreNativeModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IFeature, boolean, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onPreNativeModified(
@@ -1311,7 +1485,9 @@ public class RoundTripController implements IRoundTripController
         m_Manager.onRTPreNativeModified(feature, proposedValue, cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IFeatureEventsSink#onPreStaticModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IFeature, boolean, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onPreStaticModified(
@@ -1322,7 +1498,9 @@ public class RoundTripController implements IRoundTripController
         m_Manager.onRTPreStaticModified(feature, proposedValue, cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IFeatureEventsSink#onStaticModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IFeature, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onStaticModified(IFeature feature, IResultCell cell)
@@ -1335,7 +1513,9 @@ public class RoundTripController implements IRoundTripController
     // -------------------------------------------------------------------------
         
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperationEventsSink#onConditionAdded(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation, org.netbeans.modules.uml.core.metamodel.core.foundation.IConstraint, boolean, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onConditionAdded(
@@ -1348,7 +1528,9 @@ public class RoundTripController implements IRoundTripController
 
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperationEventsSink#onConditionPreAdded(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation, org.netbeans.modules.uml.core.metamodel.core.foundation.IConstraint, boolean, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onConditionPreAdded(
@@ -1360,7 +1542,9 @@ public class RoundTripController implements IRoundTripController
         m_Manager.onRTConditionPreAdded(oper, condition, isPreCondition, cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperationEventsSink#onConditionPreRemoved(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation, org.netbeans.modules.uml.core.metamodel.core.foundation.IConstraint, boolean, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onConditionPreRemoved(
@@ -1372,7 +1556,9 @@ public class RoundTripController implements IRoundTripController
         m_Manager.onRTConditionPreRemoved(oper, condition, isPreCondition, cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperationEventsSink#onConditionRemoved(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation, org.netbeans.modules.uml.core.metamodel.core.foundation.IConstraint, boolean, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onConditionRemoved(
@@ -1384,7 +1570,9 @@ public class RoundTripController implements IRoundTripController
         m_Manager.onRTConditionRemoved(oper, condition, isPreCondition, cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperationEventsSink#onOperationPropertyModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation, int, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onOperationPropertyModified(
@@ -1396,7 +1584,9 @@ public class RoundTripController implements IRoundTripController
 
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperationEventsSink#onPreOperationPropertyModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation, int, boolean, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onPreOperationPropertyModified(
@@ -1408,7 +1598,9 @@ public class RoundTripController implements IRoundTripController
         m_Manager.onRTPreOperationPropertyModified(oper, nKind, proposedValue, cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperationEventsSink#onPreQueryModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation, boolean, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onPreQueryModified(
@@ -1419,7 +1611,9 @@ public class RoundTripController implements IRoundTripController
         m_Manager.onRTPreQueryModified(oper, proposedValue, cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperationEventsSink#onQueryModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onQueryModified(IOperation oper, IResultCell cell)
@@ -1427,7 +1621,9 @@ public class RoundTripController implements IRoundTripController
         m_Manager.onRTQueryModified(oper, cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperationEventsSink#onRaisedExceptionAdded(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRaisedExceptionAdded(
@@ -1438,7 +1634,9 @@ public class RoundTripController implements IRoundTripController
         m_Manager.onRTRaisedExceptionAdded(oper, pException, cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperationEventsSink#onRaisedExceptionPreAdded(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRaisedExceptionPreAdded(
@@ -1449,7 +1647,9 @@ public class RoundTripController implements IRoundTripController
         m_Manager.onRTRaisedExceptionPreAdded(oper, pException, cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperationEventsSink#onRaisedExceptionPreRemoved(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRaisedExceptionPreRemoved(
@@ -1460,7 +1660,9 @@ public class RoundTripController implements IRoundTripController
         m_Manager.onRTRaisedExceptionPreRemoved(oper, pException, cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperationEventsSink#onRaisedExceptionRemoved(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IOperation, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRaisedExceptionRemoved(
@@ -1477,7 +1679,9 @@ public class RoundTripController implements IRoundTripController
     
         
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IParameterEventsSink#onDefaultExpBodyModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IParameter, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onDefaultExpBodyModified(IParameter feature, IResultCell cell)
@@ -1485,7 +1689,9 @@ public class RoundTripController implements IRoundTripController
         m_Manager.onRTDefaultExpBodyModified(feature, cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IParameterEventsSink#onDefaultExpLanguageModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IParameter, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onDefaultExpLanguageModified(
@@ -1495,7 +1701,9 @@ public class RoundTripController implements IRoundTripController
         m_Manager.onRTDefaultExpLanguageModified(feature, cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IParameterEventsSink#onDefaultExpModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IParameter, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onDefaultExpModified(IParameter feature, IResultCell cell)
@@ -1503,7 +1711,9 @@ public class RoundTripController implements IRoundTripController
         m_Manager.onRTDefaultExpModified(feature, cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IParameterEventsSink#onDirectionModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IParameter, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onDirectionModified(IParameter feature, IResultCell cell)
@@ -1511,7 +1721,9 @@ public class RoundTripController implements IRoundTripController
         m_Manager.onRTDirectionModified(feature, cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IParameterEventsSink#onPreDefaultExpBodyModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IParameter, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onPreDefaultExpBodyModified(
@@ -1522,7 +1734,9 @@ public class RoundTripController implements IRoundTripController
         m_Manager.onRTPreDefaultExpBodyModified(feature, bodyValue, cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IParameterEventsSink#onPreDefaultExpLanguageModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IParameter, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onPreDefaultExpLanguageModified(
@@ -1533,7 +1747,9 @@ public class RoundTripController implements IRoundTripController
         m_Manager.onRTPreDefaultExpLanguageModified(feature, language, cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IParameterEventsSink#onPreDefaultExpModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IParameter, org.netbeans.modules.uml.core.metamodel.core.foundation.IExpression, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onPreDefaultExpModified(
@@ -1544,7 +1760,9 @@ public class RoundTripController implements IRoundTripController
         m_Manager.onRTPreDefaultExpModified(feature, proposedValue, cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IParameterEventsSink#onPreDirectionModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IParameter, int, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onPreDirectionModified(
@@ -1561,7 +1779,9 @@ public class RoundTripController implements IRoundTripController
     
     
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IStructuralFeatureEventsSink#onChangeabilityModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IStructuralFeature, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onChangeabilityModified(
@@ -1571,7 +1791,9 @@ public class RoundTripController implements IRoundTripController
         m_Manager.onRTChangeabilityModified(feature, cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IStructuralFeatureEventsSink#onPreChangeabilityModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IStructuralFeature, int, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onPreChangeabilityModified(
@@ -1582,7 +1804,9 @@ public class RoundTripController implements IRoundTripController
         m_Manager.onRTPreChangeabilityModified(feature, proposedValue, cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IStructuralFeatureEventsSink#onPreTransientModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IStructuralFeature, boolean, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onPreTransientModified(
@@ -1593,7 +1817,9 @@ public class RoundTripController implements IRoundTripController
         m_Manager.onRTPreTransientModified(feature, proposedValue, cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IStructuralFeatureEventsSink#onPreVolatileModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IStructuralFeature, boolean, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onPreVolatileModified(
@@ -1604,7 +1830,9 @@ public class RoundTripController implements IRoundTripController
         m_Manager.onRTPreVolatileModified(feature, proposedValue, cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IStructuralFeatureEventsSink#onTransientModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IStructuralFeature, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onTransientModified(
@@ -1614,7 +1842,9 @@ public class RoundTripController implements IRoundTripController
         m_Manager.onRTTransientModified(feature, cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IStructuralFeatureEventsSink#onVolatileModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IStructuralFeature, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onVolatileModified(
@@ -1630,7 +1860,9 @@ public class RoundTripController implements IRoundTripController
 
       
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElementEventsSink#onLowerModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElement, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityRange, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onLowerModified(
@@ -1642,7 +1874,9 @@ public class RoundTripController implements IRoundTripController
         m_Manager.onRTLowerModified(element, mult, range, cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElementEventsSink#onMultiplicityModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onMultiplicityModified(ITypedElement element, IResultCell cell)
@@ -1650,7 +1884,9 @@ public class RoundTripController implements IRoundTripController
         m_Manager.onRTMultiplicityModified(element, cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElementEventsSink#onOrderModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElement, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onOrderModified(
@@ -1661,7 +1897,9 @@ public class RoundTripController implements IRoundTripController
         m_Manager.onRTOrderModified(element, mult, cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElementEventsSink#onPreLowerModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElement, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityRange, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onPreLowerModified(
@@ -1674,7 +1912,9 @@ public class RoundTripController implements IRoundTripController
         m_Manager.onRTPreLowerModified(element, mult, range, proposedValue, cell);
     }
 
-    /**
+    
+
+/**
      * Fired when the collection type property is changed on the passed in
      * range.
      * @param element The type that owned the multilicity element
@@ -1687,7 +1927,9 @@ public class RoundTripController implements IRoundTripController
         m_Manager.onRTCollectionTypeModified(element, mult, range, cell);
     }
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElementEventsSink#onPreMultiplicityModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElement, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onPreMultiplicityModified(
@@ -1698,7 +1940,9 @@ public class RoundTripController implements IRoundTripController
         m_Manager.onRTPreMultiplicityModified(element, proposedValue, cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElementEventsSink#onPreOrderModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElement, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity, boolean, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onPreOrderModified(
@@ -1710,7 +1954,9 @@ public class RoundTripController implements IRoundTripController
         m_Manager.onRTPreOrderModified(element, mult, proposedValue, cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElementEventsSink#onPreRangeAdded(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElement, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityRange, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onPreRangeAdded(
@@ -1722,7 +1968,9 @@ public class RoundTripController implements IRoundTripController
         m_Manager.onRTPreRangeAdded(element, mult, range, cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElementEventsSink#onPreRangeRemoved(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElement, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityRange, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onPreRangeRemoved(
@@ -1734,7 +1982,9 @@ public class RoundTripController implements IRoundTripController
         m_Manager.onRTPreRangeRemoved(element, mult, range, cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElementEventsSink#onPreTypeModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElement, org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onPreTypeModified(
@@ -1746,7 +1996,9 @@ public class RoundTripController implements IRoundTripController
 
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElementEventsSink#onPreUpperModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElement, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityRange, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onPreUpperModified(
@@ -1759,7 +2011,9 @@ public class RoundTripController implements IRoundTripController
         m_Manager.onRTPreUpperModified(element, mult, range, proposedValue, cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElementEventsSink#onRangeAdded(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElement, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityRange, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRangeAdded(
@@ -1771,7 +2025,9 @@ public class RoundTripController implements IRoundTripController
         m_Manager.onRTRangeAdded(element, mult, range, cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElementEventsSink#onRangeRemoved(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElement, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicity, org.netbeans.modules.uml.core.metamodel.core.foundation.IMultiplicityRange, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRangeRemoved(
@@ -1783,7 +2039,9 @@ public class RoundTripController implements IRoundTripController
         m_Manager.onRTRangeRemoved(element, mult, range, cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElementEventsSink#onTypeModified(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.ITypedElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onTypeModified(ITypedElement element, IResultCell cell)
@@ -1802,7 +2060,9 @@ public class RoundTripController implements IRoundTripController
     
     
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifierTransformEventsSink#onPreTransform(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onPreTransform(
@@ -1813,7 +2073,9 @@ public class RoundTripController implements IRoundTripController
         m_Manager.onRTPreTransform(classifier, newForm, cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifierTransformEventsSink#onTransformed(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onTransformed(IClassifier classifier, IResultCell cell)
@@ -1827,7 +2089,9 @@ public class RoundTripController implements IRoundTripController
     
     
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAssociationEndTransformEventsSink#onPreTransform(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAssociationEnd, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onPreTransform(
@@ -1838,7 +2102,9 @@ public class RoundTripController implements IRoundTripController
         m_Manager.onRTPreTransform(pEnd, newForm, cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAssociationEndTransformEventsSink#onTransformed(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAssociationEnd, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onTransformed(IAssociationEnd pEnd, IResultCell cell)
@@ -1851,7 +2117,9 @@ public class RoundTripController implements IRoundTripController
     // -------------------------------------------------------------------------
 
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IRedefinableElementModifiedEventsSink#onFinalModified(org.netbeans.modules.uml.core.metamodel.core.foundation.IRedefinableElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onFinalModified(IRedefinableElement element, IResultCell cell)
@@ -1859,7 +2127,9 @@ public class RoundTripController implements IRoundTripController
         m_Manager.onRTFinalModified(element, cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IRedefinableElementModifiedEventsSink#onPreFinalModified(org.netbeans.modules.uml.core.metamodel.core.foundation.IRedefinableElement, boolean, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onPreFinalModified(
@@ -1870,7 +2140,9 @@ public class RoundTripController implements IRoundTripController
         m_Manager.onRTPreFinalModified(element, proposedValue, cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IRedefinableElementModifiedEventsSink#onPreRedefinedElementAdded(org.netbeans.modules.uml.core.metamodel.core.foundation.IRedefinableElement, org.netbeans.modules.uml.core.metamodel.core.foundation.IRedefinableElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onPreRedefinedElementAdded(
@@ -1882,7 +2154,9 @@ public class RoundTripController implements IRoundTripController
 
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IRedefinableElementModifiedEventsSink#onPreRedefinedElementRemoved(org.netbeans.modules.uml.core.metamodel.core.foundation.IRedefinableElement, org.netbeans.modules.uml.core.metamodel.core.foundation.IRedefinableElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onPreRedefinedElementRemoved(
@@ -1893,7 +2167,9 @@ public class RoundTripController implements IRoundTripController
         m_Manager.onRTPreRedefinedElementRemoved(redefiningElement, redefinedElement, cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IRedefinableElementModifiedEventsSink#onPreRedefiningElementAdded(org.netbeans.modules.uml.core.metamodel.core.foundation.IRedefinableElement, org.netbeans.modules.uml.core.metamodel.core.foundation.IRedefinableElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onPreRedefiningElementAdded(
@@ -1904,7 +2180,9 @@ public class RoundTripController implements IRoundTripController
         m_Manager.onRTPreRedefiningElementAdded(redefiningElement, redefinedElement, cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IRedefinableElementModifiedEventsSink#onPreRedefiningElementRemoved(org.netbeans.modules.uml.core.metamodel.core.foundation.IRedefinableElement, org.netbeans.modules.uml.core.metamodel.core.foundation.IRedefinableElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onPreRedefiningElementRemoved(
@@ -1915,7 +2193,9 @@ public class RoundTripController implements IRoundTripController
         m_Manager.onRTPreRedefiningElementRemoved(redefiningElement, redefinedElement, cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IRedefinableElementModifiedEventsSink#onRedefinedElementAdded(org.netbeans.modules.uml.core.metamodel.core.foundation.IRedefinableElement, org.netbeans.modules.uml.core.metamodel.core.foundation.IRedefinableElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRedefinedElementAdded(
@@ -1926,7 +2206,9 @@ public class RoundTripController implements IRoundTripController
         m_Manager.onRTRedefinedElementAdded(redefiningElement, redefinedElement, cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IRedefinableElementModifiedEventsSink#onRedefinedElementRemoved(org.netbeans.modules.uml.core.metamodel.core.foundation.IRedefinableElement, org.netbeans.modules.uml.core.metamodel.core.foundation.IRedefinableElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRedefinedElementRemoved(
@@ -1937,7 +2219,9 @@ public class RoundTripController implements IRoundTripController
         m_Manager.onRTRedefinedElementRemoved(redefiningElement, redefinedElement, cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IRedefinableElementModifiedEventsSink#onRedefiningElementAdded(org.netbeans.modules.uml.core.metamodel.core.foundation.IRedefinableElement, org.netbeans.modules.uml.core.metamodel.core.foundation.IRedefinableElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRedefiningElementAdded(
@@ -1948,7 +2232,9 @@ public class RoundTripController implements IRoundTripController
         m_Manager.onRTRedefiningElementAdded(redefiningElement, redefinedElement, cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IRedefinableElementModifiedEventsSink#onRedefiningElementRemoved(org.netbeans.modules.uml.core.metamodel.core.foundation.IRedefinableElement, org.netbeans.modules.uml.core.metamodel.core.foundation.IRedefinableElement, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onRedefiningElementRemoved(
@@ -1964,7 +2250,9 @@ public class RoundTripController implements IRoundTripController
     // -------------------------------------------------------------------------
         
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAffectedElementEventsSink#onImpacted(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier)
      */
     public void onImpacted(IClassifier classifier, ETList<IVersionableElement> impacted, IResultCell cell)
@@ -1972,7 +2260,9 @@ public class RoundTripController implements IRoundTripController
         m_Manager.onRTImpacted(classifier, impacted, cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IAffectedElementEventsSink#onPreImpacted(org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IClassifier)
      */
     public void onPreImpacted(IClassifier classifier, ETList<IVersionableElement> impacted, IResultCell cell)
@@ -1986,7 +2276,9 @@ public class RoundTripController implements IRoundTripController
     
     
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.eventframework.IEventFrameworkEventsSink#onEventContextPopped(org.netbeans.modules.uml.core.eventframework.IEventContext, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onEventContextPopped(IEventContext pContext, IResultCell pCell)
@@ -1994,7 +2286,9 @@ public class RoundTripController implements IRoundTripController
         m_Manager.onRTEventContextPopped(pContext, pCell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.eventframework.IEventFrameworkEventsSink#onEventContextPushed(org.netbeans.modules.uml.core.eventframework.IEventContext, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onEventContextPushed(IEventContext pContext, IResultCell pCell)
@@ -2002,7 +2296,9 @@ public class RoundTripController implements IRoundTripController
         m_Manager.onRTEventContextPushed(pContext, pCell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.eventframework.IEventFrameworkEventsSink#onEventDispatchCancelled()
      */
     public void onEventDispatchCancelled(ETList<Object> pListeners, Object listenerWhoCancelled, IResultCell pCell)
@@ -2010,7 +2306,9 @@ public class RoundTripController implements IRoundTripController
         m_Manager.onRTEventDispatchCancelled(pListeners, listenerWhoCancelled, pCell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.eventframework.IEventFrameworkEventsSink#onPreEventContextPopped(org.netbeans.modules.uml.core.eventframework.IEventContext, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onPreEventContextPopped(
@@ -2020,7 +2318,9 @@ public class RoundTripController implements IRoundTripController
         m_Manager.onRTPreEventContextPopped(pContext, pCell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.eventframework.IEventFrameworkEventsSink#onPreEventContextPushed(org.netbeans.modules.uml.core.eventframework.IEventContext, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onPreEventContextPushed(
@@ -2036,7 +2336,9 @@ public class RoundTripController implements IRoundTripController
     
     
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.workspacemanagement.IWSProjectEventsSink#onWSProjectClosed(org.netbeans.modules.uml.core.workspacemanagement.IWSProject, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onWSProjectClosed(IWSProject project, IResultCell cell)
@@ -2044,7 +2346,9 @@ public class RoundTripController implements IRoundTripController
         m_Manager.onRTWSProjectClosed(project, cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.workspacemanagement.IWSProjectEventsSink#onWSProjectCreated(org.netbeans.modules.uml.core.workspacemanagement.IWSProject, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onWSProjectCreated(IWSProject project, IResultCell cell)
@@ -2052,7 +2356,9 @@ public class RoundTripController implements IRoundTripController
         m_Manager.onRTWSProjectCreated(project, cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.workspacemanagement.IWSProjectEventsSink#onWSProjectInserted(org.netbeans.modules.uml.core.workspacemanagement.IWSProject, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onWSProjectInserted(IWSProject project, IResultCell cell)
@@ -2060,7 +2366,9 @@ public class RoundTripController implements IRoundTripController
         m_Manager.onRTWSProjectInserted(project, cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.workspacemanagement.IWSProjectEventsSink#onWSProjectOpened(org.netbeans.modules.uml.core.workspacemanagement.IWSProject, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onWSProjectOpened(IWSProject project, IResultCell cell)
@@ -2068,7 +2376,9 @@ public class RoundTripController implements IRoundTripController
         m_Manager.onRTWSProjectOpened(project, cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.workspacemanagement.IWSProjectEventsSink#onWSProjectPreClose(org.netbeans.modules.uml.core.workspacemanagement.IWSProject, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onWSProjectPreClose(IWSProject project, IResultCell cell)
@@ -2076,7 +2386,9 @@ public class RoundTripController implements IRoundTripController
         m_Manager.onRTWSProjectPreClose(project, cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.workspacemanagement.IWSProjectEventsSink#onWSProjectPreCreate(org.netbeans.modules.uml.core.workspacemanagement.IWorkspace, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onWSProjectPreCreate(
@@ -2087,7 +2399,9 @@ public class RoundTripController implements IRoundTripController
         m_Manager.onRTWSProjectPreCreate(space, projectName, cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.workspacemanagement.IWSProjectEventsSink#onWSProjectPreInsert(org.netbeans.modules.uml.core.workspacemanagement.IWorkspace, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onWSProjectPreInsert(
@@ -2098,7 +2412,9 @@ public class RoundTripController implements IRoundTripController
         m_Manager.onRTWSProjectPreInsert(space, projectName, cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.workspacemanagement.IWSProjectEventsSink#onWSProjectPreOpen(org.netbeans.modules.uml.core.workspacemanagement.IWorkspace, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onWSProjectPreOpen(
@@ -2109,7 +2425,9 @@ public class RoundTripController implements IRoundTripController
         m_Manager.onRTWSProjectPreOpen(space, projectName, cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.workspacemanagement.IWSProjectEventsSink#onWSProjectPreRemove(org.netbeans.modules.uml.core.workspacemanagement.IWSProject, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onWSProjectPreRemove(IWSProject project, IResultCell cell)
@@ -2117,7 +2435,9 @@ public class RoundTripController implements IRoundTripController
         m_Manager.onRTWSProjectPreRemove(project, cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.workspacemanagement.IWSProjectEventsSink#onWSProjectPreRename(org.netbeans.modules.uml.core.workspacemanagement.IWSProject, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onWSProjectPreRename(
@@ -2128,7 +2448,9 @@ public class RoundTripController implements IRoundTripController
         m_Manager.onRTWSProjectPreRename(project, newName, cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.workspacemanagement.IWSProjectEventsSink#onWSProjectPreSave(org.netbeans.modules.uml.core.workspacemanagement.IWSProject, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onWSProjectPreSave(IWSProject project, IResultCell cell)
@@ -2136,7 +2458,9 @@ public class RoundTripController implements IRoundTripController
         m_Manager.onRTWSProjectPreSave(project, cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.workspacemanagement.IWSProjectEventsSink#onWSProjectRemoved(org.netbeans.modules.uml.core.workspacemanagement.IWSProject, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onWSProjectRemoved(IWSProject project, IResultCell cell)
@@ -2144,7 +2468,9 @@ public class RoundTripController implements IRoundTripController
         m_Manager.onRTWSProjectRemoved(project, cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.workspacemanagement.IWSProjectEventsSink#onWSProjectRenamed(org.netbeans.modules.uml.core.workspacemanagement.IWSProject, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onWSProjectRenamed(
@@ -2155,7 +2481,9 @@ public class RoundTripController implements IRoundTripController
         m_Manager.onRTWSProjectRenamed(project, oldName, cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.workspacemanagement.IWSProjectEventsSink#onWSProjectSaved(org.netbeans.modules.uml.core.workspacemanagement.IWSProject, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onWSProjectSaved(IWSProject project, IResultCell cell)
@@ -2169,7 +2497,9 @@ public class RoundTripController implements IRoundTripController
     
     
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IPackageEventsSink#onPreSourceDirModified(org.netbeans.modules.uml.core.metamodel.core.foundation.IPackage, java.lang.String, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onPreSourceDirModified(
@@ -2180,7 +2510,9 @@ public class RoundTripController implements IRoundTripController
         m_Manager.onRTPreSourceDirModified(element, proposedSourceDir, cell);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IPackageEventsSink#onSourceDirModified(org.netbeans.modules.uml.core.metamodel.core.foundation.IPackage, org.netbeans.modules.uml.core.support.umlsupport.IResultCell)
      */
     public void onSourceDirModified(IPackage element, IResultCell cell)

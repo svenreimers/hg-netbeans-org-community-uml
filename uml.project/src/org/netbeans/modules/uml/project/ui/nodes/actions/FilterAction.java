@@ -179,7 +179,7 @@ public class FilterAction extends CookieAction
         String path = ""; // NOI18N
         String name = "UML_ShowMe_Dont_Show_Filter_Warning_Dialog"; // NOI18N
         
-        //Kris Richards - This is a "show me dialog" preference. Need to get the 
+        
         // preference value for the propertysupport module.
         String showMe = NbPreferences.forModule(DummyCorePreference.class).get(name, "PSK_ASK");
         

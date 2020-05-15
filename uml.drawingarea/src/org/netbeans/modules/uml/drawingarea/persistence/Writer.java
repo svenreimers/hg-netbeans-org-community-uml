@@ -73,12 +73,16 @@ public class Writer {
     protected Color foreground;
     protected Color background;
     protected boolean visible;
-    /* Presentation:
+    
+
+/* Presentation:
      * Actor - Stickman, Rectangle, UserDefined
      * Interface - Rectangle, Circle, Lillipop, UserDefined
      */
     String presentation = "";
-    /* TypeInfo:
+    
+
+/* TypeInfo:
      * Compartment - AttributeCompartment; Operation Compartment; etc..
      * For Diagrams - ClassDiagram, SequenceDiagram, StateDiagram etc..
      * For Attributes - Name, Visibility, TypeSeparator, InitialValue, Multiplicity, Ordering, InterfaceCircle, InterfaceLine

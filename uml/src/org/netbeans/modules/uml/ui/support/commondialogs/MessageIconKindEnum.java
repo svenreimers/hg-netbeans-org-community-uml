@@ -43,11 +43,13 @@
  */
 
 
+
 /*
  *
  * Created on Jul 1, 2003
  */
 package org.netbeans.modules.uml.ui.support.commondialogs;
+
 
 /**
  * The MessageIconKindEnum is used to specify the icon to use when displaying

@@ -46,17 +46,23 @@ package org.netbeans.modules.uml.core.workspacemanagement;
 
 public interface ITwoPhaseCommit
 {
-	/**
+	
+
+/**
 	 * Perform the first phase of the save process.
 	*/
 	public void preCommit();
 
-	/**
+	
+
+/**
 	 * Commits all changes.
 	*/
 	public void commit();
 
-	/**
+	
+
+/**
 	 * Retrieves the dirty flag.
 	*/
 	public boolean isDirty();

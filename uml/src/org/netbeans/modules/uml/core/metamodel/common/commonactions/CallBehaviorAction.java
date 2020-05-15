@@ -42,11 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : CallBehaviorAction.java
- * Created on : Sep 17, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.metamodel.common.commonactions;
 
 import org.dom4j.Document;
@@ -72,7 +69,9 @@ public class CallBehaviorAction
         behaviorInvoc = new BehaviorInvocation();
     }
     
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.foundation.IVersionableElement#setNode(org.dom4j.Node)
      */
     public void setNode(Node n)
@@ -81,7 +80,9 @@ public class CallBehaviorAction
         behaviorInvoc.setNode(n);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactions.ICallBehaviorAction#getIsSynchronous()
      */
     public boolean getIsSynchronous()
@@ -89,7 +90,9 @@ public class CallBehaviorAction
         return getBooleanAttributeValue("isSynchronous", true);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactions.ICallBehaviorAction#setIsSynchronous(boolean)
      */
     public void setIsSynchronous(boolean isSynchronous)

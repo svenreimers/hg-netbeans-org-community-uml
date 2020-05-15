@@ -43,6 +43,8 @@
  */
 
 
+
+
 /*
  * Created on Jun 9, 2004
  *
@@ -58,6 +60,7 @@ import org.netbeans.modules.uml.core.support.umlsupport.IStrings;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 import org.netbeans.modules.uml.ui.support.SimpleQuestionDialogKind;
 import org.netbeans.modules.uml.ui.support.SimpleQuestionDialogResultKind;
+
 
 /**
  *

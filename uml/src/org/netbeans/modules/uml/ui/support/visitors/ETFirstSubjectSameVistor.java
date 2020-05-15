@@ -50,6 +50,7 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.IElement;
 import org.netbeans.modules.uml.core.metamodel.core.foundation.IPresentationElement;
 import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
+
 /**
  *
  *	If any graphObject firstSubject model element is the same as the input model element,
@@ -67,7 +68,9 @@ public class ETFirstSubjectSameVistor implements IETGraphObjectVisitor
       presentationElements = pPES;
    }
 
-   /* (non-Javadoc)
+   
+
+/* (non-Javadoc)
     * @see org.netbeans.modules.uml.ui.support.visitors.IETGraphObjectVisitor#visit(org.netbeans.modules.uml.ui.support.viewfactorysupport.IETGraphObject)
     */
    // TODO: meteora

@@ -64,6 +64,7 @@ import org.netbeans.test.umllib.NewDiagramWizardOperator;
 import org.netbeans.test.umllib.testcases.UMLTestCase;
 
 
+
 /**
  *
  * @spec UML/ComponentDiagram.xml
@@ -198,7 +199,9 @@ public class PlaceMultipleElements extends UMLTestCase {
     private static String elementName17="";
     private static ElementTypes elementType17=ElementTypes.LINK_COMMENT;
     //--
-   /* private static String diagramName15 = "cpD15";
+   
+
+/* private static String diagramName15 = "cpD15";
     private static String workPkg15 = "pkg15";
     private static String element15="Activity Edge";
     private static String treeNode15=element15;

@@ -42,11 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : VariableAction.java
- * Created on : Sep 17, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.metamodel.common.commonactions;
 
 import org.netbeans.modules.uml.core.metamodel.basic.basicactions.PrimitiveAction;
@@ -58,7 +55,8 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.ElementCollector;
 public class VariableAction extends PrimitiveAction implements IVariableAction
 {
 
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactions.IVariableAction#getVariable()
      */
     public IVariable getVariable()
@@ -68,7 +66,9 @@ public class VariableAction extends PrimitiveAction implements IVariableAction
 
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.common.commonactions.IVariableAction#setVariable()
      */
     public void setVariable(IVariable pVar)

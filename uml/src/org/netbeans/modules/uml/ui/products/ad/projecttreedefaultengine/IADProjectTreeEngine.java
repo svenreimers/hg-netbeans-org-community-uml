@@ -49,7 +49,9 @@ import org.netbeans.modules.uml.ui.controls.projecttree.IProjectTreeEngine;
 
 public interface IADProjectTreeEngine extends IProjectTreeEngine
 {
-	/**
+	
+
+/**
 	 * Turn on and off the display of this element type
 	*/
 	public long showElementType( String sElementTypeName, boolean bShow );

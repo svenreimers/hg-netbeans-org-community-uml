@@ -697,7 +697,9 @@ public class DiagramElementVerifier extends GenericVerifier {
         }
     }
 
-    /*
+    
+
+/*
     public boolean checkResetEdges() throws ElementVerificationException{
     final String EL_NAME = prefix+"ResetEdges";//+elementType;
     
@@ -726,7 +728,9 @@ public class DiagramElementVerifier extends GenericVerifier {
     }
     }
      */
-    /*
+    
+
+/*
     public boolean checkResizeElementToContents(){
     final String EL_NAME = prefix+"ResToCont";//+elementType.toString().substring(0, 2);
     

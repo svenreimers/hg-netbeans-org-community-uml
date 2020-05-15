@@ -50,7 +50,9 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 public interface IPresentationFinder
 {
-	/**
+	
+
+/**
 	 * Searches through open and closed diagrams for presentation elements
 	*/
 	public ETList<IPresentationTarget> getPresentationTargets( IElement pModelElement );

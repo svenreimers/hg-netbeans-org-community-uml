@@ -71,7 +71,9 @@ public class FacilityManager implements IFacilityManager
     HashMap<String, IFacility> m_FacilityMap = new HashMap<String, IFacility>();
     HashMap<String, IFacilityManager> m_ManagerMap = new HashMap<String, IFacilityManager>();
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.IFacilityManager#retrieveFacility(java.lang.String)
 	 */
 	public IFacility retrieveFacility(String name) 
@@ -95,14 +97,18 @@ public class FacilityManager implements IFacilityManager
         }
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.IFacilityManager#getConfigurationFile()
 	 */
 	public String getConfigurationFile() {
 		return m_ConfigurationFile;
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.IFacilityManager#setConfigurationFile(java.lang.String)
 	 */
 	public void setConfigurationFile(String value) {
@@ -112,7 +118,9 @@ public class FacilityManager implements IFacilityManager
         initializeManager(m_ConfigurationFile);
 	}
 
-	/* (non-Javadoc)
+	
+
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework.IFacilityManager#getFacilityNames()
 	 */
 	public IStrings getFacilityNames() {
@@ -122,7 +130,9 @@ public class FacilityManager implements IFacilityManager
         return getSubFacilityNames(pFacilityNames);
 	}
     
-    /**
+    
+
+/**
      * Retrieve the names of all the facilities in a configuration file.
      * 
      * @param pFacilityNames [in] The collection to be filled
@@ -162,7 +172,9 @@ public class FacilityManager implements IFacilityManager
         return pFacilityNames;
     }
         
-    /**
+    
+
+/**
      *
      * Determines the location of the configuration file.  If the specified
      * filename is an absolute path to the configuration file then the 
@@ -198,7 +210,9 @@ public class FacilityManager implements IFacilityManager
         }
         return null;
     }
-    /**
+    
+
+/**
      * Retrieves an instance of the facility.  The CLSID that is to be created
      * is specified in the XML config file.  The <I>progid</I> attribute specifies
      * CoClass to create.
@@ -225,7 +239,9 @@ public class FacilityManager implements IFacilityManager
         return null;
     }
 
-    /**
+    
+
+/**
      * Retrieves the XML Document that is the Facility configuration.
      * 
      * @param pVal [out] The configuraton document
@@ -235,7 +251,9 @@ public class FacilityManager implements IFacilityManager
         return XMLManip.getDOMDocument(getConfigurationFile());
     }
 
-    /**
+    
+
+/**
      * Initializes a facility with it's description.  The description
      * is retrieved from an XML configuration file.
      * 
@@ -254,7 +272,9 @@ public class FacilityManager implements IFacilityManager
         return pFacility;
     }
     
-    /**
+    
+
+/**
      * Initializes a facility with it's properties.  The properties information
      * is retrieved from a XML configuration file.
      * 
@@ -288,7 +308,9 @@ public class FacilityManager implements IFacilityManager
         }
     }
     
-    /**
+    
+
+/**
      * Creates and initializes an instance of a facility.  The facility details are 
      * retrieved from a XML file.
      * 
@@ -307,12 +329,8 @@ public class FacilityManager implements IFacilityManager
     }
     
      
-    /**
-     * Loads all of the sub facilities manager that are defined in a
-     * facility configuration file.
-     *
-     * @param pConfigFile [in] The facility manager config XML document
-     */
+    
+
 
     private void loadSubFacilityManagers(Document pConfigFile)
     {
@@ -340,7 +358,9 @@ public class FacilityManager implements IFacilityManager
         }
     }
     
-    /**
+    
+
+/**
      * Retrieves the specified facility from a sub facility manager.  When the name contains
      * a <i>'.'</i> character then the facility is retrieve from a child manager.
      * 
@@ -362,7 +382,9 @@ public class FacilityManager implements IFacilityManager
         else return null;
     }  
     
-    /**
+    
+
+/**
      * Checks if the facility is specified as a singleton.
      *
      * @param pFacilityNode [in] The XML node that contains the facility information
@@ -377,7 +399,9 @@ public class FacilityManager implements IFacilityManager
                       .booleanValue();
     }
     
-    /**
+    
+
+/**
      * Checks in the map of facilities that have already been loaded.  
      * 
      * @param name [in] The name of the facility
@@ -390,7 +414,9 @@ public class FacilityManager implements IFacilityManager
         return m_FacilityMap.get(name);
     }
     
-    /**
+    
+
+/**
      * Retrieves the specified facility from the manager.  If the facility has already
      * be initialized then retrieve it.  If the faciltiy has not already been initialized,
      * create an instance of the facility and initialize the properties.
@@ -428,7 +454,9 @@ public class FacilityManager implements IFacilityManager
         return pFacility;
     }
     
-    /**
+    
+
+/**
      *
      * Populates this manager with the contents of the given
      * configuration file
@@ -449,7 +477,9 @@ public class FacilityManager implements IFacilityManager
         }
     }
     
-    /**
+    
+
+/**
      * Retrieves the names of the subfacilities defined in a configuration 
      * file.
      *

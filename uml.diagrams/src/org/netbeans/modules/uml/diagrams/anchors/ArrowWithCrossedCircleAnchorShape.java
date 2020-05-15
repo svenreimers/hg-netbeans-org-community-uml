@@ -61,7 +61,9 @@ public class ArrowWithCrossedCircleAnchorShape implements AnchorShape
     private double cutDistance;
     private GeneralPath generalPath;
 
-    /**
+    
+
+/**
      * Creates a triangular anchor shape.
      * @param arrowSize the size of triangle
      * @param circleSize diameter of circle

@@ -96,7 +96,9 @@ public class PreventReEntranceByValue extends PreventReEntrance
 		}
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Checks to see if the current value is in a blocking state
 	 *
@@ -123,7 +125,9 @@ public class PreventReEntranceByValue extends PreventReEntrance
 		return isBlocked;
 	}
 	
-	/**
+	
+
+/**
 	 *
 	 * Removes the value off the reentrance map if the stack
 	 * has completely unwound.

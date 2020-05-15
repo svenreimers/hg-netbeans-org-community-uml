@@ -234,7 +234,9 @@ public class SequenceDiagramEngine extends DiagramEngine implements SQDDiagramEn
     
     
 
-    /**
+    
+
+/**
      * used to attach actions to scene
      * currenly is used for events handler too(may need to be separated?)
      * @param scene
@@ -564,7 +566,9 @@ public class SequenceDiagramEngine extends DiagramEngine implements SQDDiagramEn
         readOnly.addAction(new EdgeLabelIteratorAction());
     }
     
-    /**
+    
+
+/**
      * Retrieves the edge router to use when creating new edges.
      * 
      * @param layers The layers that can contain connection widgets.
@@ -713,7 +717,9 @@ public class SequenceDiagramEngine extends DiagramEngine implements SQDDiagramEn
             return retVal;
         }
 
-        /**
+        
+
+/**
          * Called to check for possible replacement of a connection source/target.
          * Called only when the hasCustomReplacementWidgetResolver method return false.
          * @param connectionWidget the connection widget
@@ -1024,7 +1030,9 @@ public class SequenceDiagramEngine extends DiagramEngine implements SQDDiagramEn
         }
     }
 
-    /**
+    
+
+/**
      * create new message between elements before specified message, expected to be used by a11y on selected elements
      * if no message is specified new message is added to the bottom
      * method is expected to be called in validated scene state, so all sized are defined and valid
@@ -1646,7 +1654,9 @@ public class SequenceDiagramEngine extends DiagramEngine implements SQDDiagramEn
         }
     }
    
-    /**
+    
+
+/**
      * make all lifeline the same length, check min lenth fist also
      * lifeline need to be validated to have proper sizes
      * lifelines with destroy event will be increased to minimum only but based on 2nd parameter also
@@ -1723,7 +1733,9 @@ public class SequenceDiagramEngine extends DiagramEngine implements SQDDiagramEn
             if(destroyedFitToo || !llW.isDestroyed())llW.setMinimumSize(minSize);
         }
     }
-    /**
+    
+
+/**
      * 
      * @param lflns lflns list of lifelines to use in caclulations if null, all lifelines will be found and adjusted
      * @return

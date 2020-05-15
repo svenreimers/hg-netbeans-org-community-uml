@@ -47,42 +47,58 @@ package org.netbeans.modules.uml.ui.controls.projecttree;
 
 public interface IProjectTreeDragVerify
 {
-	/**
+	
+
+/**
 	 * The target node for the drop operation
 	*/
 	public IProjectTreeItem getTargetNode();
 
-	/**
+	
+
+/**
 	 * The target node for the drop operation
 	*/
 	public void setTargetNode( IProjectTreeItem value );
 
-	/**
+	
+
+/**
 	 * Get/Set the cancel flag for this event
 	*/
 	public boolean isCancel();
 
-	/**
+	
+
+/**
 	 * Get/Set the cancel flag for this event
 	*/
 	public void setCancel( boolean value );
 
-	/**
+	
+
+/**
 	 * Get/Set whether something has handled this event
 	*/
 	public boolean getHandled();
 
-	/**
+	
+
+/**
 	 * Get/Set whether something has handled this event
 	*/
 	public void setHandled( boolean value );
 
-	/**
+	
+
+/**
 	 * Get the drop effect that should be displayed
 	*/
 	public long getDropEffect();
 
-	/**
+	
+
+/**
 	 * Get the drop effect that should be displayed.  The value of the drop
     * effect is one of the DnDConstants attributes.
     * 

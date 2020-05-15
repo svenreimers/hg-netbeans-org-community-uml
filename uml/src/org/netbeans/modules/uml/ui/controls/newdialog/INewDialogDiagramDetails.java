@@ -49,47 +49,65 @@ import org.netbeans.modules.uml.core.metamodel.core.foundation.INamespace;
 
 public interface INewDialogDiagramDetails extends INewDialogTabDetails
 {
-	/**
+	
+
+/**
 	 * Name of the diagram
 	*/
 	public String getName();
 
-	/**
+	
+
+/**
 	 * Name of the diagram
 	*/
 	public void setName( String value );
 
-	/**
+	
+
+/**
 	 * The selected namespace
 	*/
 	public INamespace getNamespace();
 
-	/**
+	
+
+/**
 	 * The selected namespace
 	*/
 	public void setNamespace( INamespace value );
 
-	/**
+	
+
+/**
 	 * Add an additional namespace to our list of possible namespaces.
 	*/
 	public long addNamespace( INamespace pNamespace );
 
-	/**
+	
+
+/**
 	 * The selected diagram kind
 	*/
 	public int getDiagramKind();
 
-	/**
+	
+
+/**
 	 * The selected diagram kind
 	*/
 	public void setDiagramKind( /* DiagramKind */ int value );
 
-	/**
+	
+
+/**
 	 * The diagram kinds that are available for selection in the dialog
 	*/
 	public int getAvailableDiagramKinds();
 
-	/**
+	
+
+/**
 	 * The diagram kinds that are available for selection in the dialog
 	*/
 	public void setAvailableDiagramKinds( int value );

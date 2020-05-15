@@ -51,6 +51,7 @@ import org.netbeans.api.visual.model.ObjectScene;
 import org.netbeans.api.visual.widget.Scene;
 import org.netbeans.api.visual.widget.Widget;
 
+
 /**
  * Implements the selection logic
  */

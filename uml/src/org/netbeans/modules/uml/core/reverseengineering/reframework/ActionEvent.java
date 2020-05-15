@@ -50,7 +50,9 @@ import org.dom4j.Node;
  */
 public class ActionEvent extends ParserData implements IActionEvent
 {
-    /**
+    
+
+/**
      * Retrieves the action that is executed by the action.
      * @param pVal The action data.
      */
@@ -62,7 +64,9 @@ public class ActionEvent extends ParserData implements IActionEvent
         return actionNode != null? createAction(actionNode) : null;
     }
     
-    /**
+    
+
+/**
      * Create a new action and adds it to the collection of actions.  The 
      * IREAction implementation created depends on the action type.
      */

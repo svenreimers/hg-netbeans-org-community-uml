@@ -46,6 +46,8 @@
 package org.netbeans.modules.uml.core.reverseengineering.reframework.parsingframework;
 import org.netbeans.modules.uml.core.AbstractUMLTestCase;
 
+
+
 /**
  * Test cases for ErrorEvent.
  */
@@ -58,7 +60,9 @@ public class ErrorEventTestCase extends AbstractUMLTestCase
 
     private IErrorEvent ee;
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see junit.framework.TestCase#setUp()
      */
     protected void setUp() throws Exception

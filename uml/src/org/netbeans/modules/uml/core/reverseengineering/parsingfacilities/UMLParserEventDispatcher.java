@@ -61,7 +61,9 @@ import org.netbeans.modules.uml.core.support.umlsupport.IResultCell;
 public class UMLParserEventDispatcher extends EventDispatcher
     implements IUMLParserEventDispatcher
 {
-    /**
+    
+
+/**
      * IEventDispatcher override.  Returns the number of registered sinks
      */
     public int getNumRegisteredSinks()
@@ -79,7 +81,9 @@ public class UMLParserEventDispatcher extends EventDispatcher
         m_ParserSink.addListener(handler, null);
     }
 
-    /**
+    
+
+/**
      * Used to fire the OnPackageFound event to all registered listeners
      *
      * @param filename [in] The file that is parsed.
@@ -94,7 +98,9 @@ public class UMLParserEventDispatcher extends EventDispatcher
                 null, data, payload) );
     }
 
-    /**
+    
+
+/**
      * Used to fire the OnDependencyFound event to all registered listeners.
      *
      * @param filename [in] The file that is parsed.
@@ -109,7 +115,9 @@ public class UMLParserEventDispatcher extends EventDispatcher
                                 null, data, payload) );
     }
 
-    /**
+    
+
+/**
      * Used to fire the OnClassFound event to all registered listeners.
      *
      * @param filename [in] The file that is parsed.
@@ -123,7 +131,9 @@ public class UMLParserEventDispatcher extends EventDispatcher
                                 null, data, payload) );
     }
 
-    /**
+    
+
+/**
      * Used to fire the OnBeginParseFile event to all registered listeners.
      *
      * @param filename [in] The file that is parsed.
@@ -136,7 +146,9 @@ public class UMLParserEventDispatcher extends EventDispatcher
                 "onBeginParseFile", filename, payload) );
     }
 
-    /**
+    
+
+/**
      * Used to fire the OnEndParseFile event to all registered listeners.
      *
      * @param filename [in] The file that is parsed.
@@ -149,7 +161,9 @@ public class UMLParserEventDispatcher extends EventDispatcher
                 "onEndParseFile", filename, payload) );
     }
 
-    /**
+    
+
+/**
      * Used to fire the OnError event to all registered listeners.
      *
      * @param filename [in] The file that is parsed.
@@ -163,7 +177,9 @@ public class UMLParserEventDispatcher extends EventDispatcher
                                 "onError", data, payload) );
     }
 
-    /**
+    
+
+/**
      * Removes a operation detail event sink from the dispatcher.
      *
      * @param cookie [in] The sink to remove.
@@ -173,7 +189,9 @@ public class UMLParserEventDispatcher extends EventDispatcher
         m_OpParserSink.removeListener(sink);
     }
 
-    /**
+    
+
+/**
      * Registers the operation detail event sink.
      *
      * @param handler [in] The sink to register.
@@ -185,7 +203,9 @@ public class UMLParserEventDispatcher extends EventDispatcher
             m_OpParserSink.addListener(handler, null);
     }
 
-    /**
+    
+
+/**
      * Used to fire the OnCreateAction event to all operation detail listeners.
      *
      * @param event [in] The event to send to the listeners.
@@ -199,7 +219,9 @@ public class UMLParserEventDispatcher extends EventDispatcher
                     null, event, payload) );
     }
 
-    /**
+    
+
+/**
      * Used to fire the OnReferencedVariable event to all operation detail listeners.
      *
      * @param event [in] The event to send to the listeners.
@@ -213,7 +235,9 @@ public class UMLParserEventDispatcher extends EventDispatcher
                 null, event, payload) );
     }
 
-    /**
+    
+
+/**
      * Used to fire the OnMethodCall event to all operation detail listeners.
      *
      * @param event [in] The event to send to the listeners.
@@ -227,7 +251,9 @@ public class UMLParserEventDispatcher extends EventDispatcher
                     null, e, payload) );
     }
 
-    /**
+    
+
+/**
      * Used to fire the OnEndReturnAction event to all operation detail listeners.
      *
      * @param event [in] The event to send to the listeners.
@@ -241,7 +267,9 @@ public class UMLParserEventDispatcher extends EventDispatcher
                 null, event, payload) );
     }
 
-    /**
+    
+
+/**
      * Used to fire the OnDestroyAction event to all operation detail listeners.
      *
      * @param event [in] The event to send to the listeners.
@@ -255,7 +283,9 @@ public class UMLParserEventDispatcher extends EventDispatcher
                 null, event, payload) );
     }
 
-    /**
+    
+
+/**
      * Notifies the listeners that the parser is about to start the processing of a loop.
      *
      * @param payload [in] The events payload.
@@ -268,7 +298,9 @@ public class UMLParserEventDispatcher extends EventDispatcher
                 null, payload) );
     }
 
-    /**
+    
+
+/**
      * Notifies the listeners that the parser is about to start the processing of a Loop.
      *
      * @param payload [in] The events payload.
@@ -281,7 +313,9 @@ public class UMLParserEventDispatcher extends EventDispatcher
                 null, event, payload) );
     }
 
-    /**
+    
+
+/**
      * Notifies the listeners that the parser is about to stop the processing of a Conditional.
      *
      * @param payload [in] The events payload.
@@ -294,7 +328,9 @@ public class UMLParserEventDispatcher extends EventDispatcher
                 null, payload) );
     }
 
-    /**
+    
+
+/**
      * Notifies the listeners that the parser is about to start the processing of a Conditional.
      *
      * @param payload [in] The events payload.
@@ -307,7 +343,9 @@ public class UMLParserEventDispatcher extends EventDispatcher
                 null, event, payload) );
     }
 
-    /**
+    
+
+/**
      * Notifies the listeners that the parser is about to stop the processing of a Conditional.
      *
      * @param payload [in] The events payload.
@@ -320,7 +358,9 @@ public class UMLParserEventDispatcher extends EventDispatcher
                 null, payload) );
     }
 
-    /**
+    
+
+/**
      * Notifies the listeners that the parser is about to start the processing of a Conditional.
      *
      * @param payload [in] The events payload.
@@ -333,7 +373,9 @@ public class UMLParserEventDispatcher extends EventDispatcher
                 null, event, payload) );
     }
 
-    /**
+    
+
+/**
      * Notifies the listeners that the parser is about to stop the processing of a Clause.
      *
      * @param payload [in] The events payload.
@@ -346,7 +388,9 @@ public class UMLParserEventDispatcher extends EventDispatcher
                 null, payload) );
     }
 
-    /**
+    
+
+/**
      * Notifies the listeners that the parser is about to start the processing of a Clause.
      *
      * @param payload [in] The events payload.
@@ -359,7 +403,9 @@ public class UMLParserEventDispatcher extends EventDispatcher
                 null, event, payload) );
     }
 
-    /**
+    
+
+/**
      * Used to fire the OnBeginInitialize event to all operation detail listeners.
      *
      * @param payload [in] The events payload.
@@ -372,7 +418,9 @@ public class UMLParserEventDispatcher extends EventDispatcher
                 null, payload) );
     }
 
-    /**
+    
+
+/**
      * Used to fire the OnEndInitialize  event to all operation detail listeners.
      *
      * @param event [in] The event to send to the listeners.
@@ -386,7 +434,9 @@ public class UMLParserEventDispatcher extends EventDispatcher
                 null, event, payload) );
     }
 
-    /**
+    
+
+/**
      * Used to fire the OnBeginTest event to all operation detail listeners.
      *
      * @param payload [in] The events payload.
@@ -399,7 +449,9 @@ public class UMLParserEventDispatcher extends EventDispatcher
                 null, payload) );
     }
 
-    /**
+    
+
+/**
      * Used to fire the OnEndTest  event to all operation detail listeners.
      *
      * @param event [in] The event to send to the listeners.
@@ -413,7 +465,9 @@ public class UMLParserEventDispatcher extends EventDispatcher
                 null, event, payload) );
     }
 
-    /**
+    
+
+/**
      * Used to fire the OnBeginTest event to all operation detail listeners.
      *
      * @param payload [in] The events payload.
@@ -426,7 +480,9 @@ public class UMLParserEventDispatcher extends EventDispatcher
                 null, payload) );
     }
 
-    /**
+    
+
+/**
      * Used to fire the OnEndTest  event to all operation detail listeners.
      *
      * @param event [in] The event to send to the listeners.
@@ -440,7 +496,9 @@ public class UMLParserEventDispatcher extends EventDispatcher
                 null, event, payload) );
     }
 
-    /**
+    
+
+/**
      * Used to fire the OnJumpEvent event to all operation detail listeners.
      *
      * @param event [in] The event to send to the listeners.
@@ -454,7 +512,9 @@ public class UMLParserEventDispatcher extends EventDispatcher
                 null, event, payload) );
     }
     
-    /**
+    
+
+/**
      * Used to fire the OnJumpEvent event to all operation detail listeners.
      *
      * @param event [in] The event to send to the listeners.
@@ -468,7 +528,9 @@ public class UMLParserEventDispatcher extends EventDispatcher
                 "onLoop", event, payload) );
     }
     
-    /**
+    
+
+/**
      * Notifies the listeners that loop statement was found in the source code.
      *
      * @param event [in] The event to send to the listeners.
@@ -482,7 +544,9 @@ public class UMLParserEventDispatcher extends EventDispatcher
                 "onConditional", event, payload) );
     }
 
-    /**
+    
+
+/**
      * Notifies the listeners that a critical section was found in the source code.
      *
      * @param event [in] The event to send to the listeners.
@@ -496,7 +560,9 @@ public class UMLParserEventDispatcher extends EventDispatcher
                 "onCriticalSection", event, payload) );
     }
 
-    /**
+    
+
+/**
      * Notifies the listeners that a binary operator statement was found in the source code.
      *
      * @param event [in] The event to send to the listeners.
@@ -510,7 +576,9 @@ public class UMLParserEventDispatcher extends EventDispatcher
                 "onBinaryOperator", event, payload) );
     }
 
-    /**
+    
+
+/**
      * Notifies the listeners that a unary operator statement was found in the source code.
      *
      * @param event [in] The event to send to the listeners.
@@ -524,7 +592,9 @@ public class UMLParserEventDispatcher extends EventDispatcher
                 "onUnaryOperator", event, payload) );
     }
 
-    /**
+    
+
+/**
      * Used to fire the FireBeginRaisedException event to all operation detail listeners.
      *
      * @param event [in] The event to send to the listeners.
@@ -538,7 +608,9 @@ public class UMLParserEventDispatcher extends EventDispatcher
                 null, payload) );
     }
 
-    /**
+    
+
+/**
      * Used to fire the OnRaisedException event to all operation detail listeners.
      *
      * @param event [in] The event to send to the listeners.
@@ -552,7 +624,9 @@ public class UMLParserEventDispatcher extends EventDispatcher
                 null, event, payload) );
     }
 
-    /**
+    
+
+/**
      * Used to fire the OnBeginExceptionProcessing event to all operation detail listeners.
      *
      * @param event [in] The event to send to the listeners.
@@ -566,7 +640,9 @@ public class UMLParserEventDispatcher extends EventDispatcher
                 null, payload) );
     }
 
-    /**
+    
+
+/**
      * Used to fire the OnEndExceptionProcessing event to all operation detail listeners.
      *
      * @param event [in] The event to send to the listeners.
@@ -581,7 +657,9 @@ public class UMLParserEventDispatcher extends EventDispatcher
                 null, event, payload) );
     }
 
-    /**
+    
+
+/**
      * Used to fire the OnBeginExceptionJumpHandler event to all operation detail listeners.
      *
      * @param event [in] The event to send to the listeners.
@@ -595,7 +673,9 @@ public class UMLParserEventDispatcher extends EventDispatcher
                 null, payload) );
     }
 
-    /**
+    
+
+/**
      * Used to fire the OnEndExceptionJumpHandler event to all operation detail listeners.
      *
      * @param event [in] The event to send to the listeners.
@@ -609,7 +689,9 @@ public class UMLParserEventDispatcher extends EventDispatcher
                 null, event, payload) );
     }
 
-    /**
+    
+
+/**
      * Registers the atomic events event sink.
      *
      * @param handler [in] The sink to register.
@@ -621,7 +703,9 @@ public class UMLParserEventDispatcher extends EventDispatcher
             m_AtomicParserSink.addListener( handler, null );
     }
 
-    /**
+    
+
+/**
      * Removes a atomic events event sink from the dispatcher.
      *
      * @param cookie [in] The sink to remove.
@@ -631,7 +715,9 @@ public class UMLParserEventDispatcher extends EventDispatcher
         m_AtomicParserSink.removeListener( sink );
     }
 
-    /**
+    
+
+/**
      * Used to fire the OnOperationFound event to all operation detail listeners.
      *
      * @param event [in] The event to send to the listeners.
@@ -645,7 +731,9 @@ public class UMLParserEventDispatcher extends EventDispatcher
                 null, event, payload) );
     }
 
-    /**
+    
+
+/**
      * Used to fire the OnAttributeFound event to all operation detail listeners.
      *
      * @param event [in] The event to send to the listeners.
@@ -659,7 +747,9 @@ public class UMLParserEventDispatcher extends EventDispatcher
                 null, event, payload) );
     }
 
-    /**
+    
+
+/**
      * Used to fire the OnGeneralizationFound event to all operation detail listeners.
      *
      * @param event [in] The event to send to the listeners.
@@ -673,7 +763,9 @@ public class UMLParserEventDispatcher extends EventDispatcher
                 null, event, payload) );
     }
 
-    /**
+    
+
+/**
      * Used to fire the OnImplementationFound event to all operation detail listeners.
      *
      * @param event [in] The event to send to the listeners.

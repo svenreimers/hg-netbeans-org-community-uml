@@ -61,7 +61,9 @@ public class NewDialogResources extends CommonResources
 
    private static final ResourceBundle RESOURCE_BUNDLE = ResourceBundle.getBundle(BUNDLE_NAME);
 
-   /**
+   
+
+/**
     * 
     */
    private NewDialogResources()
@@ -69,7 +71,9 @@ public class NewDialogResources extends CommonResources
 
       // TODO Auto-generated constructor stub
    }
-   /**
+   
+
+/**
     * @param key
     * @return
     */

@@ -58,14 +58,18 @@ public interface ITaskSupervisor
     public boolean start(int itemTotal);
     public boolean start(int contributor, int itemTotal);
     
-    /**
+    
+
+/**
      * Increment the item counter by one.
      *
      * @return the current count after incrementing by one
      */
     public int increment();
 
-    /**
+    
+
+/**
      * Increment the item counter by the amount of the step parameter.
      *
      * @param step the amount to increment the counter.
@@ -75,7 +79,9 @@ public interface ITaskSupervisor
      */
     public int increment(int step);
     
-    /**
+    
+
+/**
      *  Called by task subclass to check confirm that the task hasn't been
      *  cancelled or failed. If there is a cancellation or failure, finish()
      *  is called.
@@ -84,7 +90,9 @@ public interface ITaskSupervisor
      */
     public boolean proceed();
     
-    /**
+    
+
+/**
      *  Called by task subclass to check confirm that the task hasn't been
      *  cancelled or failed. If there is a cancellation or failure, finish()
      *  is called.
@@ -95,13 +103,17 @@ public interface ITaskSupervisor
      */
     public boolean proceed(int step);
     
-    /**
+    
+
+/**
      * Outputs a blank line
      */
     public void log();
     public void log(int level);
 
-    /**
+    
+
+/**
      * Outputs a message with and appends newline by default
      * 
      * @param msg the message to be output
@@ -109,7 +121,9 @@ public interface ITaskSupervisor
     public void log(String msg);
     public void log(int level, String msg);
 
-    /**
+    
+
+/**
      * Outputs a message
      * 
      * @param msg the message to be output
@@ -119,14 +133,18 @@ public interface ITaskSupervisor
     public void log(int level, String msg, boolean newline);
     
     
-    /**
+    
+
+/**
      *  Call this method when a the task is instructed to be canceled and it
      *  will set the cancelled flag to false. The next time proceed() is 
      *  called, it will invoke finish() return false.
      */
     public boolean cancel();
     
-    /**
+    
+
+/**
      *  Call this method when a failure in your task is detected and it will
      *  set the success flag to false. The next time proceed() is called,
      *  it will invoke finish() return false.

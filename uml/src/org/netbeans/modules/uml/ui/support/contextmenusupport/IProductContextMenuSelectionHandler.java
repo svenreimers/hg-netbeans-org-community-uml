@@ -47,7 +47,9 @@ package org.netbeans.modules.uml.ui.support.contextmenusupport;
 
 public interface IProductContextMenuSelectionHandler
 {
-	/**
+	
+
+/**
 	 * If an external interface handles the display of the popup menu then this is called to handle the selection event
 	*/
 	public void handleSelection( IProductContextMenu pContextMenu, IProductContextMenuItem pSelectedItem );

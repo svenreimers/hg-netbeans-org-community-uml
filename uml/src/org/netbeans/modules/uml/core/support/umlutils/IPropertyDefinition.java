@@ -48,6 +48,7 @@ import java.util.Vector;
 import java.util.HashMap;
 
 import org.netbeans.modules.uml.core.support.umlsupport.IStrings;
+
 /**
  * <p>Title: </p>
  * <p>Description: </p>
@@ -75,14 +76,18 @@ public interface IPropertyDefinition
 	// HRESULT Required([in] VARIANT_BOOL newVal);
 	public void setRequired(boolean val);
     
-    /**
+    
+
+/**
      * Sets the force refresh property.  The force refersh property is used to 
      * determine if the properties need to be refreshed when ever the value
      * changes. 
      */
     public void setForceRefersh(boolean val);
   
-    /**
+    
+
+/**
      * Determines if the properties need to be refreshed whenever the property
      * is modified.
      */
@@ -200,13 +205,17 @@ public interface IPropertyDefinition
 	public String getValidValues2();
 	public void setValidValues2(String val);
 
-        /**
+        
+
+/**
          * Some list are actually enumeration list.  The enum values are used to
          * determine the correct value that should be set and retreived.
          */
         public void setEnumValues(String values);
         
-        /**
+        
+
+/**
          * Some list are actually enumeration list.  The enum values are used to
          * determine the correct value that should be set and retreived.
          *
@@ -215,7 +224,9 @@ public interface IPropertyDefinition
          */
         public String getEnumValues();
         
-        /**
+        
+
+/**
          * Some list are actually enumeration list.  The enum values are used to
          * determine the correct value that should be set and retreived.
          *
@@ -228,7 +239,7 @@ public interface IPropertyDefinition
 	public void addToAttrMap(String name, String value);
 
 	// Retrieves a particular xml attribute and value from the already built map
-	// HRESULT GetFromAttrMap(BSTR name, BSTR* value);
+	
 	public String getFromAttrMap(String name);
 
 	// Gets whether or not this definition needs to be built immediately
@@ -263,7 +274,9 @@ public interface IPropertyDefinition
 	// HRESULT Save();
 	public void save();
 
-	/* Determines whether or not this element has been modified
+	
+
+/* Determines whether or not this element has been modified
 	 HRESULT Modified([out, retval] VARIANT_BOOL *pVal);
 	 Determines whether or not this element has been modified
 	 HRESULT Modified([in] VARIANT_BOOL newVal);*/
@@ -278,21 +291,27 @@ public interface IPropertyDefinition
 	// HRESULT GetPath(BSTR* path);
 	public String getPath();
 
-	/* Gets the default value of this definition
+	
+
+/* Gets the default value of this definition
 	 HRESULT DefaultValue([out, retval] BSTR *pVal);
 	 Sets the default value of this definition
 	 HRESULT DefaultValue([in] BSTR newVal); */
 	public String getDefaultValue();
 	public void setDefaultValue(String val);
 
-	/* Does this definition have a default value
+	
+
+/* Does this definition have a default value
 	 HRESULT DefaultExist([out, retval] VARIANT_BOOL *pVal);
 	 Does this definition have a default value
 	 HRESULT DefaultExist([in] VARIANT_BOOL newVal); */
 	public boolean isDefaultExisting();
 	public void setDefaultExists(boolean val);
 
-	/* Gets the method that will be invoked to determine if the value for this definition is valid
+	
+
+/* Gets the method that will be invoked to determine if the value for this definition is valid
 	 HRESULT ValidateMethod([out, retval] BSTR *pVal);
 	 Sets the method that will be invoked to determine if the value for this definition is valid
 	 HRESULT ValidateMethod([in] BSTR newVal); */
@@ -304,7 +323,7 @@ public interface IPropertyDefinition
 	public long getAttrMapCount();
 
 	// Retrieves a particular xml attribute and value from the already built map based on position
-	// HRESULT GetFromAttrMap2(long pos, BSTR* name, BSTR* value);
+	
 	public void getFromAttrMap(long pos, String name, String value);
 
 	// Returns a string collection that represents the data to be inserted into the control for this definition

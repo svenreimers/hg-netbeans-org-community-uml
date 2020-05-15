@@ -65,7 +65,8 @@ public class ProjectTemplatesCustomizer
     private static final String TEMPLATES = "Templates"; // NOI18N
     private String name;
     
-    /** Creates a new instance of TemplatesManagerCustomizer
+    
+/** Creates a new instance of TemplatesManagerCustomizer
      * @param name
      */
     public ProjectTemplatesCustomizer(String name)
@@ -120,7 +121,9 @@ public class ProjectTemplatesCustomizer
         return new JPanel();
     }
     
-    /**
+    
+
+/**
      *
      * @return
      */

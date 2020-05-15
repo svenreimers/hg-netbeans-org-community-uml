@@ -56,7 +56,9 @@ import org.netbeans.modules.uml.core.eventframework.EventBlocker;
 
 public class Feature extends RedefinableElement implements IFeature 
 {
-	/**
+	
+
+/**
 	 * Specifies if the Feature is defined for the Classifier (true) or for the Instances of the Classifier (false). The default value is false.
 	*/
 	public boolean getIsStatic()
@@ -64,7 +66,9 @@ public class Feature extends RedefinableElement implements IFeature
 		return getBooleanAttributeValue("isStatic",false);
 	}
 
-	/**
+	
+
+/**
 	 * Specifies if the Feature is defined for the Classifier (true) or for the Instances of the Classifier (false). The default value is false.
 	*/
 	public void setIsStatic( boolean newVal )
@@ -101,7 +105,9 @@ public class Feature extends RedefinableElement implements IFeature
 		
 	}
 
-	/**
+	
+
+/**
  	 *
      * Retrieves the Classifier that owns this feature.
      * 
@@ -116,7 +122,9 @@ public class Feature extends RedefinableElement implements IFeature
 		return null;
 	}
 
-	/**
+	
+
+/**
  	 *
  	 * Sets the Classifier that owns this feature.
  	 *
@@ -146,7 +154,9 @@ public class Feature extends RedefinableElement implements IFeature
 						);				
 	}
 
-	/**
+	
+
+/**
 	 * Moves this Feature from the Featuring Classifier it currently is in
  	 * to the Classifier passed in.
  	 * 
@@ -207,7 +217,9 @@ public class Feature extends RedefinableElement implements IFeature
 	}
 
     
-    /**
+    
+
+/**
      * Duplicates this Feature, then adds it to the passed in Classifier. 
      * The duplicated feature is passed back.
      * 

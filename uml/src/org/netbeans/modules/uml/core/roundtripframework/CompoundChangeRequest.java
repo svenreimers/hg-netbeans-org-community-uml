@@ -42,11 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
-/*
- * File       : CompoundChangeRequest.java
- * Created on : Nov 6, 2003
- * Author     : Aztec
- */
+
+
 package org.netbeans.modules.uml.core.roundtripframework;
 
 import org.netbeans.modules.uml.core.support.umlutils.ETArrayList;
@@ -59,7 +56,8 @@ public class CompoundChangeRequest
     implements ICompoundChangeRequest
 {
     protected ETList<IChangeRequest> m_Requests = new ETArrayList<IChangeRequest>();
-    /* (non-Javadoc)
+    
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.ICompoundChangeRequest#add(org.netbeans.modules.uml.core.roundtripframework.IChangeRequest)
      */
     public void add(IChangeRequest pVal)
@@ -68,7 +66,9 @@ public class CompoundChangeRequest
             m_Requests.add(pVal);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.ICompoundChangeRequest#getCount()
      */
     public int getCount()
@@ -76,7 +76,9 @@ public class CompoundChangeRequest
         return m_Requests.size();
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.ICompoundChangeRequest#getRequests()
      */
     public ETList<IChangeRequest> getRequests()
@@ -84,7 +86,9 @@ public class CompoundChangeRequest
         return m_Requests;
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.roundtripframework.ICompoundChangeRequest#item(int)
      */
     public IChangeRequest item(int index)

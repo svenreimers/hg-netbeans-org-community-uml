@@ -48,52 +48,72 @@ import org.netbeans.modules.uml.core.support.umlsupport.IResultCell;
 
 public interface IRelationEventsSink
 {
-	/**
+	
+
+/**
 	 * Fired before a relation meta type is modified. This includes Dependency, Generalization, and Associations.
 	*/
 	public void onPreRelationEndModified( IRelationProxy proxy, IResultCell cell );
 
-	/**
+	
+
+/**
 	 * Fired after a relation meta type has been modified. This includes Dependency, Generalization, and Associations.
 	*/
 	public void onRelationEndModified( IRelationProxy Payload, IResultCell cell );
 
-	/**
+	
+
+/**
 	 * Fired before a relation meta type is added to. This includes Dependency, Generalization, and Associations.
 	*/
 	public void onPreRelationEndAdded( IRelationProxy proxy, IResultCell cell );
 
-	/**
+	
+
+/**
 	 * Fired after a relation meta type has been added to. This includes Dependency, Generalization, and Associations.
 	*/
 	public void onRelationEndAdded( IRelationProxy proxy, IResultCell cell );
 
-	/**
+	
+
+/**
 	 * Fired before a relation meta type is removed from. This includes Dependency, Generalization, and Associations.
 	*/
 	public void onPreRelationEndRemoved( IRelationProxy proxy, IResultCell cell );
 
-	/**
+	
+
+/**
 	 * Fired after a relation meta type has been removed from. This includes Dependency, Generalization, and Associations.
 	*/
 	public void onRelationEndRemoved( IRelationProxy proxy, IResultCell cell );
 
-	/**
+	
+
+/**
 	 * Fired before a relation meta type is created.
 	*/
 	public void onPreRelationCreated( IRelationProxy proxy, IResultCell cell );
 
-	/**
+	
+
+/**
 	 * Fired after a relation meta type has been created.
 	*/
 	public void onRelationCreated( IRelationProxy proxy, IResultCell cell );
 
-	/**
+	
+
+/**
 	 * Fired before a relation meta type is deleted.
 	*/
 	public void onPreRelationDeleted( IRelationProxy proxy, IResultCell cell );
 
-	/**
+	
+
+/**
 	 * Fired after a relation meta type has been deleted.
 	*/
 	public void onRelationDeleted( IRelationProxy proxy, IResultCell cell );

@@ -53,7 +53,9 @@ import org.netbeans.modules.uml.core.support.umlsupport.XMLManip;
  */
 public class RECallAction extends REAction implements IRECallAction
 {
-    /**
+    
+
+/**
      * Retrieves the package that contains the return types class.
      *
      * @param pVal [out] The package name.
@@ -64,7 +66,9 @@ public class RECallAction extends REAction implements IRECallAction
         return desc != null? desc.getValue() : null;
     }
 
-    /**
+    
+
+/**
      * Retrieves the returns type class name.  The class name will be the short
      * version of the name.  The class name will not contain the package that 
      * contains the class.
@@ -77,7 +81,9 @@ public class RECallAction extends REAction implements IRECallAction
         return desc != null? desc.getValue() : null;
     }
 
-    /**
+    
+
+/**
      * Retrieves if the the operation that is being called is a static method.
      *
      * @param pVal [out] True if the operation is static, false otherwise.
@@ -94,7 +100,9 @@ public class RECallAction extends REAction implements IRECallAction
         return false;
     }
 
-    /**
+    
+
+/**
      * Retrieves if the receiving instance is a static instance.
      *
      * @param pVal [out] True if the instance is static, false otherwise.
@@ -111,7 +119,9 @@ public class RECallAction extends REAction implements IRECallAction
         return false;
     }
 
-    /**
+    
+
+/**
      * The called opertions return type.  The fully scoped name of the return type
      * is given when the the file that contains the return type is found.
      * 
@@ -123,7 +133,9 @@ public class RECallAction extends REAction implements IRECallAction
         return desc != null? desc.getValue() : null;
     }
 
-    /**
+    
+
+/**
      * The fully scoped name of the class that implements the operation.
      * When the operation is implemented by the super class the class that 
      * implements the class may be different than the recieving class.
@@ -136,7 +148,9 @@ public class RECallAction extends REAction implements IRECallAction
         return desc != null? desc.getValue() : null;
     }
 
-    /**
+    
+
+/**
      * Retrieves the name of the class that contains the instance of the object 
      * that is being called.
      * 
@@ -148,7 +162,9 @@ public class RECallAction extends REAction implements IRECallAction
         return desc != null? desc.getValue() : null;
     }
 
-    /**
+    
+
+/**
      * Retrieves the name of the object that will recieve the method call.
      * @param pVal [out] The instance name.
      */
@@ -158,7 +174,9 @@ public class RECallAction extends REAction implements IRECallAction
         return desc != null? desc.getValue() : null;
     }
 
-    /**
+    
+
+/**
      * Retrieves the name of the operation that will be called.  Use 
      * the Arguments property to retrieve the calls parameters.
      * @param pVal [out] The operations name.

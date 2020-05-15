@@ -42,6 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
+
+
 /*
  * Dom4JNodeProxy.java
  *
@@ -95,7 +97,9 @@ public class Dom4JNodeProxy implements org.dom4j.Element
    ////////////////////////////////////////////////////////////////////////////
    // DOM4J Element Implementation
    
-   /** <p>Returns the <code>QName</code> of this element which represents
+   
+
+/** <p>Returns the <code>QName</code> of this element which represents
     * the local name, the qualified name and the <code>Namespace</code>.</p>
     *
     * @return the <code>QName</code> associated with this element
@@ -107,7 +111,9 @@ public class Dom4JNodeProxy implements org.dom4j.Element
       return QName.get(local, uri);
    }
    
-   /** <p>Sets the <code>QName</code> of this element which represents
+   
+
+/** <p>Sets the <code>QName</code> of this element which represents
     * the local name, the qualified name and the <code>Namespace</code>.</p>
     *
     * @param qname is the <code>QName</code> to be associated with this element
@@ -117,7 +123,9 @@ public class Dom4JNodeProxy implements org.dom4j.Element
       
    }
    
-   /** <p>Returns the <code>Namespace</code> of this element if one exists
+   
+
+/** <p>Returns the <code>Namespace</code> of this element if one exists
     * otherwise <code>Namespace.NO_NAMESPACE</code> is returned.</p>
     *
     * @return the <code>Namespace</code> associated with this element
@@ -131,7 +139,9 @@ public class Dom4JNodeProxy implements org.dom4j.Element
    
    
    
-   /** <p>Returns the <code>QName</code> for the given qualified name, using
+   
+
+/** <p>Returns the <code>QName</code> for the given qualified name, using
     * the namespace URI in scope for the given prefix of the qualified name
     * or the default namespace if the qualified name has no prefix.</p>
     *
@@ -161,7 +171,9 @@ public class Dom4JNodeProxy implements org.dom4j.Element
    }
    
    
-   /** <p>Returns the <code>Namespace</code> which is mapped to the given
+   
+
+/** <p>Returns the <code>Namespace</code> which is mapped to the given
     * prefix or null if it could not be found.</p>
     *
     * @return the <code>Namespace</code> associated with the given prefix
@@ -217,7 +229,9 @@ public class Dom4JNodeProxy implements org.dom4j.Element
       }
    }
    
-   /** <p>Returns the <code>Namespace</code> which is mapped to the given
+   
+
+/** <p>Returns the <code>Namespace</code> which is mapped to the given
     * URI or null if it could not be found.</p>
     *
     * @return the <code>Namespace</code> associated with the given URI
@@ -227,7 +241,9 @@ public class Dom4JNodeProxy implements org.dom4j.Element
       return null;
    }
    
-   /** <p>Returns the namespace prefix of this element if one exists
+   
+
+/** <p>Returns the namespace prefix of this element if one exists
     * otherwise an empty <code>String</code> is returned.</p>
     *
     * @return the prefix of the <code>Namespace</code> of this element
@@ -238,7 +254,9 @@ public class Dom4JNodeProxy implements org.dom4j.Element
       return getProxyNode().getPrefix();
    }
    
-   /** <p>Returns the URI mapped to the namespace of this element
+   
+
+/** <p>Returns the URI mapped to the namespace of this element
     * if one exists otherwise an empty <code>String</code> is returned.</p>
     *
     * @return the URI for the <code>Namespace</code> of this element
@@ -249,7 +267,9 @@ public class Dom4JNodeProxy implements org.dom4j.Element
       return getProxyNode().getNamespaceURI();
    }
    
-   /** <p>Returns the fully qualified name of this element.
+   
+
+/** <p>Returns the fully qualified name of this element.
     * This will be the same as the value returned from {@link #getName}
     * if this element has no namespace attached to this element or an
     * expression of the form
@@ -266,7 +286,9 @@ public class Dom4JNodeProxy implements org.dom4j.Element
    }
    
    
-   /** <p>Returns any additional namespaces declarations for this element
+   
+
+/** <p>Returns any additional namespaces declarations for this element
     * other than namespace returned via the {@link #getNamespace()} method.
     * If no additional namespace declarations are present for this
     * element then an empty list will be returned.
@@ -281,7 +303,9 @@ public class Dom4JNodeProxy implements org.dom4j.Element
       return new ArrayList();
    }
    
-   /** <p>Returns all the namespaces declared by this element.
+   
+
+/** <p>Returns all the namespaces declared by this element.
     * If no namespaces are declared for this element then
     * an empty list will be returned.
     *
@@ -300,7 +324,9 @@ public class Dom4JNodeProxy implements org.dom4j.Element
    // Builder methods
    //-------------------------------------------------------------------------
    
-   /** <p>Adds the attribute value of the given local name.
+   
+
+/** <p>Adds the attribute value of the given local name.
     * If an attribute already exists for the given name it will be replaced.
     * Attributes with null values are silently ignored.
     * If the value of the attribute is null then this method call will
@@ -316,7 +342,9 @@ public class Dom4JNodeProxy implements org.dom4j.Element
       throw new DTMDOMException(DOMException.NO_MODIFICATION_ALLOWED_ERR);
    }
    
-   /** <p>Adds the attribute value of the given fully qualified name.
+   
+
+/** <p>Adds the attribute value of the given fully qualified name.
     * If an attribute already exists for the given name it will be replaced.
     * Attributes with null values are silently ignored.
     * If the value of the attribute is null then this method call will
@@ -332,7 +360,9 @@ public class Dom4JNodeProxy implements org.dom4j.Element
       throw new DTMDOMException(DOMException.NO_MODIFICATION_ALLOWED_ERR);
    }
    
-   /** Adds a new <code>Comment</code> node with the given text to this element.
+   
+
+/** Adds a new <code>Comment</code> node with the given text to this element.
     *
     * @param comment is the text for the <code>Comment</code> node.
     * @return this <code>Element</code> instance.
@@ -343,7 +373,9 @@ public class Dom4JNodeProxy implements org.dom4j.Element
    }
    
    
-   /** Adds a new <code>CDATA</code> node with the given text to this element.
+   
+
+/** Adds a new <code>CDATA</code> node with the given text to this element.
     *
     * @param cdata is the text for the <code>CDATA</code> node.
     * @return this <code>Element</code> instance.
@@ -353,7 +385,9 @@ public class Dom4JNodeProxy implements org.dom4j.Element
       throw new DTMDOMException(DOMException.NO_MODIFICATION_ALLOWED_ERR);
    }
    
-   /** Adds a new <code>Entity</code> node with the given name and text
+   
+
+/** Adds a new <code>Entity</code> node with the given name and text
     * to this element and returns a reference to the new node.
     *
     * @param name is the name for the <code>Entity</code> node.
@@ -366,7 +400,9 @@ public class Dom4JNodeProxy implements org.dom4j.Element
    }
    
    
-   /** Adds a namespace to this element for use by its child content
+   
+
+/** Adds a namespace to this element for use by its child content
     *
     * @param prefix is the prefix to use, which should not be null or blank
     * @param uri is the namespace URI
@@ -377,7 +413,9 @@ public class Dom4JNodeProxy implements org.dom4j.Element
       throw new DTMDOMException(DOMException.NO_MODIFICATION_ALLOWED_ERR);
    }
    
-   /** Adds a processing instruction for the given target
+   
+
+/** Adds a processing instruction for the given target
     *
     * @param target is the target of the processing instruction
     * @param text is the textual data (key/value pairs) of the processing instruction
@@ -388,7 +426,9 @@ public class Dom4JNodeProxy implements org.dom4j.Element
       throw new DTMDOMException(DOMException.NO_MODIFICATION_ALLOWED_ERR);
    }
    
-   /** Adds a processing instruction for the given target
+   
+
+/** Adds a processing instruction for the given target
     *
     * @param target is the target of the processing instruction
     * @param data is a Map of the key / value pairs of the processing instruction
@@ -399,7 +439,9 @@ public class Dom4JNodeProxy implements org.dom4j.Element
       throw new DTMDOMException(DOMException.NO_MODIFICATION_ALLOWED_ERR);
    }
    
-   /** Adds a new <code>Text</code> node with the given text to this element.
+   
+
+/** Adds a new <code>Text</code> node with the given text to this element.
     *
     * @param text is the text for the <code>Text</code> node.
     * @return this <code>Element</code> instance.
@@ -414,7 +456,9 @@ public class Dom4JNodeProxy implements org.dom4j.Element
    //-------------------------------------------------------------------------
    
    
-   /** Adds the given <code>Attribute</code> to this element.
+   
+
+/** Adds the given <code>Attribute</code> to this element.
     * If the given node already has a parent defined then an
     * <code>InvalidAddNodeException</code> will be thrown.
     * Attributes with null values are silently ignored.
@@ -429,7 +473,9 @@ public class Dom4JNodeProxy implements org.dom4j.Element
    }
    
    
-   /** Adds the given <code>CDATA</code> to this element.
+   
+
+/** Adds the given <code>CDATA</code> to this element.
     * If the given node already has a parent defined then an
     * <code>InvalidAddNodeException</code> will be thrown.
     *
@@ -440,7 +486,9 @@ public class Dom4JNodeProxy implements org.dom4j.Element
       throw new DTMDOMException(DOMException.NO_MODIFICATION_ALLOWED_ERR);
    }
    
-   /** Adds the given <code>Entity</code> to this element.
+   
+
+/** Adds the given <code>Entity</code> to this element.
     * If the given node already has a parent defined then an
     * <code>InvalidAddNodeException</code> will be thrown.
     *
@@ -451,7 +499,9 @@ public class Dom4JNodeProxy implements org.dom4j.Element
       throw new DTMDOMException(DOMException.NO_MODIFICATION_ALLOWED_ERR);
    }
    
-   /** Adds the given <code>Text</code> to this element.
+   
+
+/** Adds the given <code>Text</code> to this element.
     * If the given node already has a parent defined then an
     * <code>InvalidAddNodeException</code> will be thrown.
     *
@@ -462,7 +512,9 @@ public class Dom4JNodeProxy implements org.dom4j.Element
       throw new DTMDOMException(DOMException.NO_MODIFICATION_ALLOWED_ERR);
    }
    
-   /** Adds the given <code>Namespace</code> to this element.
+   
+
+/** Adds the given <code>Namespace</code> to this element.
     * If the given node already has a parent defined then an
     * <code>InvalidAddNodeException</code> will be thrown.
     *
@@ -473,7 +525,9 @@ public class Dom4JNodeProxy implements org.dom4j.Element
       throw new DTMDOMException(DOMException.NO_MODIFICATION_ALLOWED_ERR);
    }
    
-   /** Removes the given <code>Attribute</code> from this element.
+   
+
+/** Removes the given <code>Attribute</code> from this element.
     *
     * @param attribute is the attribute to be removed
     * @return true if the attribute was removed
@@ -483,7 +537,9 @@ public class Dom4JNodeProxy implements org.dom4j.Element
       throw new DTMDOMException(DOMException.NO_MODIFICATION_ALLOWED_ERR);
    }
    
-   /** Removes the given <code>CDATA</code> if the node is
+   
+
+/** Removes the given <code>CDATA</code> if the node is
     * an immediate child of this element.
     *
     * If the given node is not an immediate child of this element
@@ -497,7 +553,9 @@ public class Dom4JNodeProxy implements org.dom4j.Element
       throw new DTMDOMException(DOMException.NO_MODIFICATION_ALLOWED_ERR);
    }
    
-   /** Removes the given <code>Entity</code> if the node is
+   
+
+/** Removes the given <code>Entity</code> if the node is
     * an immediate child of this element.
     *
     * If the given node is not an immediate child of this element
@@ -511,7 +569,9 @@ public class Dom4JNodeProxy implements org.dom4j.Element
       throw new DTMDOMException(DOMException.NO_MODIFICATION_ALLOWED_ERR);
    }
    
-   /** Removes the given <code>Namespace</code> if the node is
+   
+
+/** Removes the given <code>Namespace</code> if the node is
     * an immediate child of this element.
     *
     * If the given node is not an immediate child of this element
@@ -525,7 +585,9 @@ public class Dom4JNodeProxy implements org.dom4j.Element
       throw new DTMDOMException(DOMException.NO_MODIFICATION_ALLOWED_ERR);
    }
    
-   /** Removes the given <code>Text</code> if the node is
+   
+
+/** Removes the given <code>Text</code> if the node is
     * an immediate child of this element.
     *
     * If the given node is not an immediate child of this element
@@ -543,7 +605,9 @@ public class Dom4JNodeProxy implements org.dom4j.Element
    // Text methods
    //-------------------------------------------------------------------------
    
-   /** Returns the text value of this element without recursing through
+   
+
+/** Returns the text value of this element without recursing through
     * child elements.
     * This method iterates through all {@link Text}, {@link CDATA} and
     * {@link Entity} nodes that this element contains
@@ -556,7 +620,9 @@ public class Dom4JNodeProxy implements org.dom4j.Element
       return getProxyNode().getTextContent();
    }
    
-   /** @return the trimmed text value where whitespace is trimmed and
+   
+
+/** @return the trimmed text value where whitespace is trimmed and
     * normalised into single spaces
     */
    public String getTextTrim()
@@ -565,7 +631,9 @@ public class Dom4JNodeProxy implements org.dom4j.Element
    }
    
    
-   /** Returns the XPath string-value of this node.
+   
+
+/** Returns the XPath string-value of this node.
     * The behaviour of this method is defined in the
     * <a href="http://www.w3.org/TR/xpath">XPath specification</a>.
     *
@@ -582,7 +650,9 @@ public class Dom4JNodeProxy implements org.dom4j.Element
    }
    
    
-   /** Accesses the data of this element which may implement data typing
+   
+
+/** Accesses the data of this element which may implement data typing
     * bindings such as XML Schema or
     * Java Bean bindings or will return the same value as {@link #getText}
     */
@@ -591,7 +661,9 @@ public class Dom4JNodeProxy implements org.dom4j.Element
       return getText();
    }
    
-   /** Sets the data value of this element if this element supports data
+   
+
+/** Sets the data value of this element if this element supports data
     * binding or calls {@link #setText} if it doesn't
     */
    public void setData(Object data)
@@ -608,7 +680,9 @@ public class Dom4JNodeProxy implements org.dom4j.Element
    //-------------------------------------------------------------------------
    
    
-   /** <p>Returns the {@link Attribute} instances this element contains as
+   
+
+/** <p>Returns the {@link Attribute} instances this element contains as
     * a backed {@link List} so that the attributes may be modified directly
     * using the {@link List} interface.
     * The <code>List</code> is backed by the <code>Element</code> so that
@@ -629,14 +703,18 @@ public class Dom4JNodeProxy implements org.dom4j.Element
       return retVal;
    }
    
-   /** Sets the attributes that this element contains
+   
+
+/** Sets the attributes that this element contains
     */
    public void setAttributes(List attributes)
    {
       throw new DTMDOMException(DOMException.NO_MODIFICATION_ALLOWED_ERR);
    }
    
-   /** @return the number of attributes this element contains
+   
+
+/** @return the number of attributes this element contains
     */
    public int attributeCount()
    {
@@ -644,14 +722,18 @@ public class Dom4JNodeProxy implements org.dom4j.Element
       return map.getLength();
    }
    
-   /** @returns an iterator over the attributes of this element
+   
+
+/** @returns an iterator over the attributes of this element
     */
    public Iterator attributeIterator()
    {
       return attributes().iterator();
    }
    
-   /** Returns the attribute at the specified indexGets the
+   
+
+/** Returns the attribute at the specified indexGets the
     *
     * @return the attribute at the specified index where
     * index >= 0 and index < number of attributes or throws
@@ -679,7 +761,9 @@ public class Dom4JNodeProxy implements org.dom4j.Element
       return retVal;
    }
    
-   /** Returns the attribute with the given name
+   
+
+/** Returns the attribute with the given name
     *
     * @return the attribute for the given local name in any namespace.
     * If there are more than one attributes with the given local name
@@ -696,7 +780,9 @@ public class Dom4JNodeProxy implements org.dom4j.Element
       return attr;
    }
    
-   /** @param qName is the fully qualified name
+   
+
+/** @param qName is the fully qualified name
     * @return the attribute for the given fully qualified name or null if
     * it could not be found.
     */
@@ -711,7 +797,9 @@ public class Dom4JNodeProxy implements org.dom4j.Element
       return attr;
    }
    
-   /** <p>This returns the attribute value for the attribute with the
+   
+
+/** <p>This returns the attribute value for the attribute with the
     * given name and any namespace or null if there is no such
     * attribute or the empty string if the attribute value is empty.</p>
     *
@@ -724,7 +812,9 @@ public class Dom4JNodeProxy implements org.dom4j.Element
       return getProxyNode().getAttribute(name);
    }
    
-   /** <p>This returns the attribute value for the attribute with the
+   
+
+/** <p>This returns the attribute value for the attribute with the
     * given name and any namespace or the default value if there is
     * no such attribute value.</p>
     *
@@ -745,7 +835,9 @@ public class Dom4JNodeProxy implements org.dom4j.Element
       return retVal;
    }
    
-   /** <p>This returns the attribute value for the attribute with the
+   
+
+/** <p>This returns the attribute value for the attribute with the
     * given fully qualified name or null if there is no such
     * attribute or the empty string if the attribute value is empty.</p>
     *
@@ -759,7 +851,9 @@ public class Dom4JNodeProxy implements org.dom4j.Element
                                            qName.getName());
    }
    
-   /** <p>This returns the attribute value for the attribute with the
+   
+
+/** <p>This returns the attribute value for the attribute with the
     * given fully qualified name or the default value if
     * there is no such attribute value.</p>
     *
@@ -781,7 +875,9 @@ public class Dom4JNodeProxy implements org.dom4j.Element
    }
    
    
-   /** <p>Sets the attribute value of the given local name.</p>
+   
+
+/** <p>Sets the attribute value of the given local name.</p>
     *
     * @param name is the name of the attribute whose value is to be added
     * or updated
@@ -795,7 +891,9 @@ public class Dom4JNodeProxy implements org.dom4j.Element
       throw new DTMDOMException(DOMException.NO_MODIFICATION_ALLOWED_ERR);
    }
    
-   /** <p>Sets the attribute value of the given fully qualified name.</p>
+   
+
+/** <p>Sets the attribute value of the given fully qualified name.</p>
     *
     * @param qName is the fully qualified name of the attribute
     * whose value is to be added or updated
@@ -814,7 +912,9 @@ public class Dom4JNodeProxy implements org.dom4j.Element
    //-------------------------------------------------------------------------
    
    
-   /** Returns the first element for the given local name and any namespace.
+   
+
+/** Returns the first element for the given local name and any namespace.
     *
     * @return the first element with the given local name
     */
@@ -830,7 +930,9 @@ public class Dom4JNodeProxy implements org.dom4j.Element
       return retVal;
    }
    
-   /** Returns the first element for the given fully qualified name.
+   
+
+/** Returns the first element for the given fully qualified name.
     *
     * @param qName is the fully qualified name to search for
     * @return the first element with the given fully qualified name
@@ -848,7 +950,9 @@ public class Dom4JNodeProxy implements org.dom4j.Element
       return retVal;
    }
    
-   /** <p>Returns the elements contained in this element.
+   
+
+/** <p>Returns the elements contained in this element.
     * If this element does not contain any elements then this method returns
     * an empty list.
     *
@@ -874,7 +978,9 @@ public class Dom4JNodeProxy implements org.dom4j.Element
       return retVal;
    }
    
-   /** <p>Returns the elements contained in this element with the given
+   
+
+/** <p>Returns the elements contained in this element with the given
     * local name and any namespace.
     * If no elements are found then this method returns an empty list.
     *
@@ -901,7 +1007,9 @@ public class Dom4JNodeProxy implements org.dom4j.Element
       return retVal;
    }
    
-   /** <p>Returns the elements contained in this element with the given
+   
+
+/** <p>Returns the elements contained in this element with the given
     * fully qualified name.
     * If no elements are found then this method returns an empty list.
     *
@@ -930,7 +1038,9 @@ public class Dom4JNodeProxy implements org.dom4j.Element
       return retVal;
    }
    
-   /** Returns an iterator over all this elements child elements.
+   
+
+/** Returns an iterator over all this elements child elements.
     *
     * @return an iterator over the contained elements
     */
@@ -940,7 +1050,9 @@ public class Dom4JNodeProxy implements org.dom4j.Element
       return children.iterator();
    }
    
-   /** Returns an iterator over the elements contained in this element
+   
+
+/** Returns an iterator over the elements contained in this element
     * which match the given local name and any namespace.
     *
     * @return an iterator over the contained elements matching the given
@@ -952,7 +1064,9 @@ public class Dom4JNodeProxy implements org.dom4j.Element
       return children.iterator();
    }
    
-   /** Returns an iterator over the elements contained in this element
+   
+
+/** Returns an iterator over the elements contained in this element
     * which match the given fully qualified name.
     *
     * @param qName is the fully qualified name to search for
@@ -970,7 +1084,9 @@ public class Dom4JNodeProxy implements org.dom4j.Element
    // Helper methods
    //-------------------------------------------------------------------------
    
-   /** @return true if this element is the root element of a document
+   
+
+/** @return true if this element is the root element of a document
     * and this element supports the parent relationship else false.
     */
    public boolean isRootElement()
@@ -978,7 +1094,9 @@ public class Dom4JNodeProxy implements org.dom4j.Element
       return false;
    }
    
-   /** <p>Returns true if this <code>Element</code> has mixed content.
+   
+
+/** <p>Returns true if this <code>Element</code> has mixed content.
     * Mixed content means that an element contains both textual data and
     * child elements.
     *
@@ -989,7 +1107,9 @@ public class Dom4JNodeProxy implements org.dom4j.Element
       return true;
    }
    
-   /** <p>Returns true if this <code>Element</code> has text only content.
+   
+
+/** <p>Returns true if this <code>Element</code> has text only content.
     *
     * @return true if this element is empty or only contains text content.
     */
@@ -999,7 +1119,9 @@ public class Dom4JNodeProxy implements org.dom4j.Element
    }
    
    
-   /** Appends the attributes of the given element to me.
+   
+
+/** Appends the attributes of the given element to me.
     * This method behaves like the {@link Collection#addAll(java.util.Collection)}
     * method.
     *
@@ -1010,7 +1132,9 @@ public class Dom4JNodeProxy implements org.dom4j.Element
       throw new DTMDOMException(DOMException.NO_MODIFICATION_ALLOWED_ERR);
    }
    
-   /** <p>Creates a deep copy of this element
+   
+
+/** <p>Creates a deep copy of this element
     * The new element is detached from its parent, and getParent() on the
     * clone will return null.</p>
     *
@@ -1021,7 +1145,9 @@ public class Dom4JNodeProxy implements org.dom4j.Element
       throw new DTMDOMException(DOMException.NO_MODIFICATION_ALLOWED_ERR);
    }
    
-   /** <p>Creates a deep copy of this element with the given local name
+   
+
+/** <p>Creates a deep copy of this element with the given local name
     * The new element is detached from its parent, and getParent() on the
     * clone will return null.</p>
     *
@@ -1032,7 +1158,9 @@ public class Dom4JNodeProxy implements org.dom4j.Element
       throw new DTMDOMException(DOMException.NO_MODIFICATION_ALLOWED_ERR);
    }
    
-   /** <p>Creates a deep copy of this element with the given fully qualified name.
+   
+
+/** <p>Creates a deep copy of this element with the given fully qualified name.
     * The new element is detached from its parent, and getParent() on the
     * clone will return null.</p>
     *
@@ -1060,7 +1188,9 @@ public class Dom4JNodeProxy implements org.dom4j.Element
       throw new DTMDOMException(DOMException.NOT_SUPPORTED_ERR);
    }
    
-   /** Returns a node at the given index suitable for an XPath result set.
+   
+
+/** Returns a node at the given index suitable for an XPath result set.
     * This means the resulting Node will either be null or it will support
     * the parent relationship.
     *
@@ -1075,7 +1205,9 @@ public class Dom4JNodeProxy implements org.dom4j.Element
    ////////////////////////////////////////////////////////////////////////////
    // Branch Implementation
    
-   /** Returns the <code>Node</code> at the specified index position.
+   
+
+/** Returns the <code>Node</code> at the specified index position.
     *
     * @param index the index of the node to return.
     * @return the <code>Node</code> at the specified position.
@@ -1097,7 +1229,9 @@ public class Dom4JNodeProxy implements org.dom4j.Element
        return retVal;
    }
    
-   /** Returns the index of the given node if it is a child node of this
+   
+
+/** Returns the index of the given node if it is a child node of this
     * branch or -1 if the given node is not a child node.
     *
     * @param node the content child node to find.
@@ -1129,7 +1263,9 @@ public class Dom4JNodeProxy implements org.dom4j.Element
       return retVal;
    }
    
-   /** Returns the number of <code>Node</code> instances that this branch
+   
+
+/** Returns the number of <code>Node</code> instances that this branch
     * contains.
     *
     * @return the number of nodes this branch contains
@@ -1139,7 +1275,9 @@ public class Dom4JNodeProxy implements org.dom4j.Element
       return getProxyNode().getChildNodes().getLength();
    }
    
-   /** Returns the element of the given ID attribute value. If this tree
+   
+
+/** Returns the element of the given ID attribute value. If this tree
     * is capable of understanding which attribute value should be used for
     * the ID then it should be used, otherwise this method should return null.
     */
@@ -1149,7 +1287,9 @@ public class Dom4JNodeProxy implements org.dom4j.Element
    }
    
    
-   /** <p>Returns the content nodes of this branch as a backed {@link List}
+   
+
+/** <p>Returns the content nodes of this branch as a backed {@link List}
     * so that the content of this branch may be modified directly using
     * the {@link List} interface.
     * The <code>List</code> is backed by the <code>Branch</code> so that
@@ -1162,7 +1302,9 @@ public class Dom4JNodeProxy implements org.dom4j.Element
       throw new DTMDOMException(DOMException.NOT_SUPPORTED_ERR);
    }
    
-   /** Returns an iterator through the content nodes of this branch
+   
+
+/** Returns an iterator through the content nodes of this branch
     *
     * @return an iterator through the content nodes of this branch
     */
@@ -1171,7 +1313,9 @@ public class Dom4JNodeProxy implements org.dom4j.Element
       throw new DTMDOMException(DOMException.NOT_SUPPORTED_ERR);
    }
    
-   /** Sets the contents of this branch as a <code>List</code> of
+   
+
+/** Sets the contents of this branch as a <code>List</code> of
     * <code>Node</code> instances.
     *
     * @param content is the list of nodes to use as the content for this
@@ -1182,7 +1326,9 @@ public class Dom4JNodeProxy implements org.dom4j.Element
       throw new DTMDOMException(DOMException.INVALID_MODIFICATION_ERR);
    }
    
-   /** Appends the content of the given branch to this branch instance.
+   
+
+/** Appends the content of the given branch to this branch instance.
     * This method behaves like the {@link Collection#addAll(java.util.Collection)}
     * method.
     *
@@ -1193,7 +1339,9 @@ public class Dom4JNodeProxy implements org.dom4j.Element
       throw new DTMDOMException(DOMException.INVALID_MODIFICATION_ERR);
    }
    
-   /** Clears the content for this branch, removing any <code>Node</code>
+   
+
+/** Clears the content for this branch, removing any <code>Node</code>
     * instances this branch may contain.
     */
    public void clearContent()
@@ -1201,7 +1349,9 @@ public class Dom4JNodeProxy implements org.dom4j.Element
       throw new DTMDOMException(DOMException.INVALID_MODIFICATION_ERR);
    }
    
-   /** <p>Returns a list of all the processing instructions in this branch.
+   
+
+/** <p>Returns a list of all the processing instructions in this branch.
     * The list is backed by this branch so that changes to the list will
     * be reflected in the branch but the reverse is not the case.</p>
     *
@@ -1212,7 +1362,9 @@ public class Dom4JNodeProxy implements org.dom4j.Element
       throw new DTMDOMException(DOMException.NOT_SUPPORTED_ERR);
    }
    
-   /** <p>Returns a list of the processing instructions for the given target.
+   
+
+/** <p>Returns a list of the processing instructions for the given target.
     * The list is backed by this branch so that changes to the list will
     * be reflected in the branch but the reverse is not the case.</p>
     *
@@ -1224,14 +1376,18 @@ public class Dom4JNodeProxy implements org.dom4j.Element
    }
    
    
-   /** @return the processing instruction for the given target
+   
+
+/** @return the processing instruction for the given target
     */
    public ProcessingInstruction processingInstruction(String target)
    {
       throw new DTMDOMException(DOMException.NOT_SUPPORTED_ERR);
    }
    
-   /** Sets all the processing instructions for this branch
+   
+
+/** Sets all the processing instructions for this branch
     */
    public void setProcessingInstructions(List listOfPIs)
    {
@@ -1239,7 +1395,9 @@ public class Dom4JNodeProxy implements org.dom4j.Element
    }
    
    
-   /** Adds a new <code>Element</code> node with the given name to this branch
+   
+
+/** Adds a new <code>Element</code> node with the given name to this branch
     * and returns a reference to the new node.
     *
     * @param name is the name for the <code>Element</code> node.
@@ -1250,7 +1408,9 @@ public class Dom4JNodeProxy implements org.dom4j.Element
       throw new DTMDOMException(DOMException.INVALID_MODIFICATION_ERR);
    }
    
-   /** Adds a new <code>Element</code> node with the given {@link QName}
+   
+
+/** Adds a new <code>Element</code> node with the given {@link QName}
     * to this branch and returns a reference to the new node.
     *
     * @param qname is the qualified name for the <code>Element</code> node.
@@ -1261,7 +1421,9 @@ public class Dom4JNodeProxy implements org.dom4j.Element
       throw new DTMDOMException(DOMException.INVALID_MODIFICATION_ERR);
    }
    
-   /** Adds a new <code>Element</code> node with the given qualified name
+   
+
+/** Adds a new <code>Element</code> node with the given qualified name
     * and namespace URI to this branch and returns a reference to the new node.
     *
     * @param qualifiedName is the fully qualified name of the Element
@@ -1273,7 +1435,9 @@ public class Dom4JNodeProxy implements org.dom4j.Element
       throw new DTMDOMException(DOMException.INVALID_MODIFICATION_ERR);
    }
    
-   /** Removes the processing instruction for the given target if it exists
+   
+
+/** Removes the processing instruction for the given target if it exists
     *
     * @return true if a processing instruction was removed else false
     */
@@ -1282,7 +1446,9 @@ public class Dom4JNodeProxy implements org.dom4j.Element
       throw new DTMDOMException(DOMException.INVALID_MODIFICATION_ERR);
    }
    
-   /** Adds the given <code>Node</code> or throws {@link IllegalAddException}
+   
+
+/** Adds the given <code>Node</code> or throws {@link IllegalAddException}
     * if the given node is not of a valid type. This is a polymorphic method
     * which will call the typesafe method for the node type such as
     * add(Element) or add(Comment).
@@ -1294,7 +1460,9 @@ public class Dom4JNodeProxy implements org.dom4j.Element
       throw new DTMDOMException(DOMException.INVALID_MODIFICATION_ERR);
    }
    
-   /** Adds the given <code>Comment</code> to this branch.
+   
+
+/** Adds the given <code>Comment</code> to this branch.
     * If the given node already has a parent defined then an
     * <code>InvalidAddNodeException</code> will be thrown.
     *
@@ -1305,7 +1473,9 @@ public class Dom4JNodeProxy implements org.dom4j.Element
       throw new DTMDOMException(DOMException.INVALID_MODIFICATION_ERR);
    }
    
-   /** Adds the given <code>Element</code> to this branch.
+   
+
+/** Adds the given <code>Element</code> to this branch.
     * If the given node already has a parent defined then an
     * <code>InvalidAddNodeException</code> will be thrown.
     *
@@ -1316,7 +1486,9 @@ public class Dom4JNodeProxy implements org.dom4j.Element
       throw new DTMDOMException(DOMException.INVALID_MODIFICATION_ERR);
    }
    
-   /** Adds the given <code>ProcessingInstruction</code> to this branch.
+   
+
+/** Adds the given <code>ProcessingInstruction</code> to this branch.
     * If the given node already has a parent defined then an
     * <code>InvalidAddNodeException</code> will be thrown.
     *
@@ -1327,7 +1499,9 @@ public class Dom4JNodeProxy implements org.dom4j.Element
       throw new DTMDOMException(DOMException.INVALID_MODIFICATION_ERR);
    }
    
-   /** Removes the given <code>Node</code> if the node is
+   
+
+/** Removes the given <code>Node</code> if the node is
     * an immediate child of this branch.
     *
     * If the given node is not an immediate child of this branch
@@ -1344,7 +1518,9 @@ public class Dom4JNodeProxy implements org.dom4j.Element
       throw new DTMDOMException(DOMException.INVALID_MODIFICATION_ERR);
    }
    
-   /** Removes the given <code>Comment</code> if the node is
+   
+
+/** Removes the given <code>Comment</code> if the node is
     * an immediate child of this branch.
     *
     * If the given node is not an immediate child of this branch
@@ -1358,7 +1534,9 @@ public class Dom4JNodeProxy implements org.dom4j.Element
       throw new DTMDOMException(DOMException.INVALID_MODIFICATION_ERR);
    }
    
-   /** Removes the given <code>Element</code> if the node is
+   
+
+/** Removes the given <code>Element</code> if the node is
     * an immediate child of this branch.
     *
     * If the given node is not an immediate child of this branch
@@ -1372,7 +1550,9 @@ public class Dom4JNodeProxy implements org.dom4j.Element
       throw new DTMDOMException(DOMException.INVALID_MODIFICATION_ERR);
    }
    
-   /** Removes the given <code>ProcessingInstruction</code> if the node is
+   
+
+/** Removes the given <code>ProcessingInstruction</code> if the node is
     * an immediate child of this branch.
     *
     * If the given node is not an immediate child of this branch
@@ -1386,7 +1566,9 @@ public class Dom4JNodeProxy implements org.dom4j.Element
       throw new DTMDOMException(DOMException.INVALID_MODIFICATION_ERR);
    }  
    
-   /**
+   
+
+/**
     * Puts all <code>Text</code> nodes in the full depth of the sub-tree
     * underneath this <code>Node</code>, including attribute nodes, into a
     * "normal" form where only structure (e.g., elements, comments,
@@ -1410,7 +1592,9 @@ public class Dom4JNodeProxy implements org.dom4j.Element
    ////////////////////////////////////////////////////////////////////////////
    // Node Implementation
    
-   /** <p><code>supportsParent</code> returns true if this node supports the
+   
+
+/** <p><code>supportsParent</code> returns true if this node supports the
     * parent relationship.</p>
     *
     * <p>Some XML tree implementations are singly linked and only support
@@ -1428,7 +1612,9 @@ public class Dom4JNodeProxy implements org.dom4j.Element
       return true;
    }
    
-   /** <p><code>getParent</code> returns the parent <code>Element</code>
+   
+
+/** <p><code>getParent</code> returns the parent <code>Element</code>
     * if this node supports the parent relationship or null if it is
     * the root element or does not support the parent relationship.</p>
     *
@@ -1457,7 +1643,9 @@ public class Dom4JNodeProxy implements org.dom4j.Element
        return retVal;
    }
    
-   /** <p><code>setParent</code> sets the parent relationship of
+   
+
+/** <p><code>setParent</code> sets the parent relationship of
     * this node if the parent relationship is supported or does nothing
     * if the parent relationship is not supported.</p>
     *
@@ -1473,7 +1661,9 @@ public class Dom4JNodeProxy implements org.dom4j.Element
    }
    
    
-   /** <p><code>getDocument</code> returns the <code>Document</code>
+   
+
+/** <p><code>getDocument</code> returns the <code>Document</code>
     * that this <code>Node</code> is part of if this node supports
     * the parent relationship.</p>
     *
@@ -1488,7 +1678,9 @@ public class Dom4JNodeProxy implements org.dom4j.Element
       return (Document)XSLTHelper.getDocument();
    }
    
-   /** <p><code>setDocument</code> sets the document of this node if the
+   
+
+/** <p><code>setDocument</code> sets the document of this node if the
     * parent relationship is supported or does nothing if the parent
     * relationship is not supported.</p>
     *
@@ -1504,7 +1696,9 @@ public class Dom4JNodeProxy implements org.dom4j.Element
    }
    
    
-   /** <p><code>isReadOnly</code> returns true if this node is read only
+   
+
+/** <p><code>isReadOnly</code> returns true if this node is read only
     * and cannot be modified.
     * Any attempt to modify a read-only <code>Node</code> will result in
     * an <code>UnsupportedOperationException</code> being thrown.</p>
@@ -1517,7 +1711,9 @@ public class Dom4JNodeProxy implements org.dom4j.Element
       return true;
    }
    
-   /** <p><code>hasContent</code> returns true if this node is a Branch
+   
+
+/** <p><code>hasContent</code> returns true if this node is a Branch
     * (either an Element or a Document) and it contains at least one
     * content node such as a child Element or Text node.</p>
     *
@@ -1531,7 +1727,9 @@ public class Dom4JNodeProxy implements org.dom4j.Element
    
    
    
-   /** <p><code>getName</code> returns the name of this node.
+   
+
+/** <p><code>getName</code> returns the name of this node.
     * This is the XML local name of the element, attribute, entity or
     * processing instruction.
     * For CDATA and Text nodes this method will return null.</p>
@@ -1544,7 +1742,9 @@ public class Dom4JNodeProxy implements org.dom4j.Element
    }
    
    
-   /** <p>Sets the text data of this node or this method will
+   
+
+/** <p>Sets the text data of this node or this method will
     * throw an <code>UnsupportedOperationException</code> if it is
     * read-only.</p>
     *
@@ -1555,7 +1755,9 @@ public class Dom4JNodeProxy implements org.dom4j.Element
       throw new DTMDOMException(DOMException.INVALID_MODIFICATION_ERR);
    }
    
-   /** <p>Returns the XPath expression which will return a node set
+   
+
+/** <p>Returns the XPath expression which will return a node set
     * containing the given node such as /a/b/@c. No indexing will
     * be used to restrict the path if multiple elements with the
     * same name occur on the path.</p>
@@ -1568,7 +1770,9 @@ public class Dom4JNodeProxy implements org.dom4j.Element
       throw new DTMDOMException(DOMException.NOT_SUPPORTED_ERR);
    }
    
-   /** <p>Returns the relative XPath expression which will return a node set
+   
+
+/** <p>Returns the relative XPath expression which will return a node set
     * containing the given node such as a/b/@c. No indexing will
     * be used to restrict the path if multiple elements with the
     * same name occur on the path.
@@ -1586,7 +1790,9 @@ public class Dom4JNodeProxy implements org.dom4j.Element
        throw new DTMDOMException(DOMException.NOT_SUPPORTED_ERR);
    }
    
-   /** <p>Returns the XPath expression which will return a nodeset
+   
+
+/** <p>Returns the XPath expression which will return a nodeset
     * of one node which is the current node. This method will use
     * the XPath index operator to restrict the path if
     * multiple elements with the same name occur on the path.</p>
@@ -1599,7 +1805,9 @@ public class Dom4JNodeProxy implements org.dom4j.Element
       throw new DTMDOMException(DOMException.NOT_SUPPORTED_ERR);
    }
    
-   /** <p>Returns the relative unique XPath expression from the given context
+   
+
+/** <p>Returns the relative unique XPath expression from the given context
     * which will return a nodeset
     * of one node which is the current node.
     * This method will use the XPath index operator to restrict the
@@ -1620,7 +1828,9 @@ public class Dom4JNodeProxy implements org.dom4j.Element
    }
    
    
-   /** <p><code>asXML</code> returns the textual XML representation of this
+   
+
+/** <p><code>asXML</code> returns the textual XML representation of this
     * node.</p>
     *
     * @return the XML representation of this node
@@ -1630,7 +1840,9 @@ public class Dom4JNodeProxy implements org.dom4j.Element
       throw new DTMDOMException(DOMException.NOT_SUPPORTED_ERR);
    }
    
-   /** <p><code>write</code> writes this node as the default XML
+   
+
+/** <p><code>write</code> writes this node as the default XML
     * notation for this node. If you wish to control the XML output
     * (such as for pretty printing, changing the indentation policy etc.)
     * then please use {@link org.dom4j.io.XMLWriter} or its derivations.
@@ -1643,7 +1855,9 @@ public class Dom4JNodeProxy implements org.dom4j.Element
    }
    
    
-   /** Returns the code according to the type of node.
+   
+
+/** Returns the code according to the type of node.
     * This makes processing nodes polymorphically much easier as the
     * switch statement can be used instead of multiple if (instanceof)
     * statements.
@@ -1656,7 +1870,9 @@ public class Dom4JNodeProxy implements org.dom4j.Element
       return Node.ELEMENT_NODE;
    }
    
-   /** @return the name of the type of node such as "Document", "Element", "Attribute" or "Text"
+   
+
+/** @return the name of the type of node such as "Document", "Element", "Attribute" or "Text"
     */
    public String getNodeTypeName()
    {
@@ -1664,7 +1880,9 @@ public class Dom4JNodeProxy implements org.dom4j.Element
    }
    
    
-   /** <p>Removes this node from its parent if there is one.
+   
+
+/** <p>Removes this node from its parent if there is one.
     * If this node is the root element of a document then it is removed
     * from the document as well.</p>
     *
@@ -1688,7 +1906,9 @@ public class Dom4JNodeProxy implements org.dom4j.Element
    
    
    
-   /** <p><code>selectNodes</code> evaluates an XPath expression and returns
+   
+
+/** <p><code>selectNodes</code> evaluates an XPath expression and returns
     * the result as a <code>List</code> of <code>Node</code> instances or
     * <code>String</code> instances depending on the XPath expression.</p>
     *
@@ -1701,7 +1921,9 @@ public class Dom4JNodeProxy implements org.dom4j.Element
       throw new DTMDOMException(DOMException.NOT_SUPPORTED_ERR);
    }
    
-   /** <p><code>selectObject</code> evaluates an XPath expression and returns
+   
+
+/** <p><code>selectObject</code> evaluates an XPath expression and returns
     * the result as an {@link Object}. The object returned can
     * either be a {@link List} of one or more {@link Node} instances
     * or a scalar object like a {@link String} or a {@link Number}
@@ -1717,7 +1939,9 @@ public class Dom4JNodeProxy implements org.dom4j.Element
       throw new DTMDOMException(DOMException.NOT_SUPPORTED_ERR);
    }
    
-   /** <p><code>selectNodes</code> evaluates an XPath expression then
+   
+
+/** <p><code>selectNodes</code> evaluates an XPath expression then
     * sorts the results using a secondary XPath expression
     * Returns a sorted <code>List</code> of <code>Node</code> instances.</p>
     *
@@ -1735,7 +1959,9 @@ public class Dom4JNodeProxy implements org.dom4j.Element
       throw new DTMDOMException(DOMException.NOT_SUPPORTED_ERR);
    }
    
-   /** <p><code>selectNodes</code> evaluates an XPath expression then
+   
+
+/** <p><code>selectNodes</code> evaluates an XPath expression then
     * sorts the results using a secondary XPath expression
     * Returns a sorted <code>List</code> of <code>Node</code> instances.</p>
     *
@@ -1757,7 +1983,9 @@ public class Dom4JNodeProxy implements org.dom4j.Element
       throw new DTMDOMException(DOMException.NOT_SUPPORTED_ERR);
    }
    
-   /** <p><code>selectSingleNode</code> evaluates an XPath expression
+   
+
+/** <p><code>selectSingleNode</code> evaluates an XPath expression
     * and returns the result as a single <code>Node</code> instance.</p>
     *
     * @param xpathExpression is the XPath expression to be evaluated
@@ -1768,7 +1996,9 @@ public class Dom4JNodeProxy implements org.dom4j.Element
       throw new DTMDOMException(DOMException.NOT_SUPPORTED_ERR);
    }
    
-   /** <p><code>valueOf</code> evaluates an XPath expression
+   
+
+/** <p><code>valueOf</code> evaluates an XPath expression
     * and returns the textual representation of the results the XPath
     * string-value of this node.
     * The string-value for a given node type is defined in the
@@ -1783,21 +2013,17 @@ public class Dom4JNodeProxy implements org.dom4j.Element
       throw new DTMDOMException(DOMException.NOT_SUPPORTED_ERR);
    }
    
-   /** <p><code>numberValueOf</code> evaluates an XPath expression
-    * and returns the numeric value of the XPath expression if the XPath
-    * expression results in a number, or null if the result is not a number.
-    *
-    * @param xpathExpression is the XPath expression to be evaluated
-    * @return the numeric result of the XPath expression or null
-    * if the result is not a number.
-    */
+   
+
    public Number numberValueOf(String xpathExpression)
    {
       throw new DTMDOMException(DOMException.NOT_SUPPORTED_ERR);
    }
    
    
-   /** <p><code>matches</code> returns true if evaluating the given
+   
+
+/** <p><code>matches</code> returns true if evaluating the given
     * XPath expression on this node returns a non-empty node set containing this node.</p>
     *
     * <p>This method does not behave like the &lt;xsl:if&gt; element - if you want
@@ -1814,7 +2040,9 @@ public class Dom4JNodeProxy implements org.dom4j.Element
       throw new DTMDOMException(DOMException.NOT_SUPPORTED_ERR);
    }
    
-   /** <p><code>createXPath</code> creates an XPath object for
+   
+
+/** <p><code>createXPath</code> creates an XPath object for
     * the given xpathExpression.
     * The XPath object allows the variable context to be specified.</p>
     *
@@ -1827,7 +2055,9 @@ public class Dom4JNodeProxy implements org.dom4j.Element
       throw new DTMDOMException(DOMException.NOT_SUPPORTED_ERR);
    }
    
-   /** <p><code>asXPathResult</code> returns a version of this node which is
+   
+
+/** <p><code>asXPathResult</code> returns a version of this node which is
     * capable of being an XPath result.
     * The result of an XPath expression should always support the parent
     * relationship, whether the original XML tree was singly or doubly linked.
@@ -1842,7 +2072,9 @@ public class Dom4JNodeProxy implements org.dom4j.Element
    }
    
    
-   /** <p><code>accept</code> is the method used in the Visitor Pattern.</p>
+   
+
+/** <p><code>accept</code> is the method used in the Visitor Pattern.</p>
     *
     * @param visitor is the visitor in the Visitor Pattern
     */
@@ -1853,7 +2085,9 @@ public class Dom4JNodeProxy implements org.dom4j.Element
    
    
    
-   /** <p><code>clone</code> will return a deep clone or if this node is
+   
+
+/** <p><code>clone</code> will return a deep clone or if this node is
     * read-only then clone will return the same instance.
     *
     * @@return a deep clone of myself or myself if I am read only.

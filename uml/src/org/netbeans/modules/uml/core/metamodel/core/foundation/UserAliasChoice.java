@@ -42,6 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
+
+
 /*
  * Created on Jun 9, 2004
  *
@@ -49,6 +51,7 @@
  * Window&gt;Preferences&gt;Java&gt;Code Generation&gt;Code and Comments
  */
 package org.netbeans.modules.uml.core.metamodel.core.foundation;
+
 
 /**
  *

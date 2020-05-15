@@ -78,7 +78,9 @@ public class ClassDiagramAdditionalTests extends UMLTestCase {
     }
     
     
-    /**
+    
+
+/**
      * Generated dependency diagram of class A w/ two operations: public X op1() and public void op2(Y y)
      * <br/>
      * RESULT: Classes A, X, and Y created 
@@ -87,7 +89,9 @@ public class ClassDiagramAdditionalTests extends UMLTestCase {
         verifier.testAssociatedDatatypes();
     }
     
-    /**
+    
+
+/**
      * Drop and name a new class on the dependency diagram. Add attribute and operation to it.
      * <br/>
      * RESULT: Class should be created in correct namespace
@@ -97,7 +101,9 @@ public class ClassDiagramAdditionalTests extends UMLTestCase {
     }
     
     
-    /**
+    
+
+/**
      * Make changes to diagram by dropping new elements onto diagram, then save
      * <br/>
      * All changes to diagram should be saved

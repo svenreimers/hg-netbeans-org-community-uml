@@ -56,88 +56,122 @@ import java.net.URL;
 
 public interface IProxyUserInterface
 {
-	/**
+	
+
+/**
 	 * Returns the HWND for the main interface.
 	*/
 	public Frame getWindowHandle();
 
-	/**
+	
+
+/**
 	 * Tells the gui that the dirty state has changed for the input diagram
 	*/
 	public long dirtyStateChanged( IDiagram pDiagram, boolean bNewDirtyState );
 
-	/**
+	
+
+/**
 	 * Quits Describe.
 	*/
 	public void quit();
 
-	/**
+	
+
+/**
 	 * Put/Get the visible state of the application.
 	*/
 	public void setVisible( boolean value );
 
-	/**
+	
+
+/**
 	 * Put/Get the visible state of the application.
 	*/
 	public boolean getVisible();
 
-	/**
+	
+
+/**
 	 * Put/Get the visible state of the property editor.
 	*/
 	public void setPropertyEditorVisible( boolean value );
 
-	/**
+	
+
+/**
 	 * Put/Get the visible state of the property editor.
 	*/
 	public boolean getPropertyEditorVisible();
 
-	/**
+	
+
+/**
 	 * Tell the gui to open the open workspace dialog
 	*/
 	public void openWorkspaceDialog();
 
-	/**
+	
+
+/**
 	 * Tell the gui to open the new workspace dialog
 	*/
 	public void newWorkspaceDialog();
 
-	/**
+	
+
+/**
 	 * Tell the gui to open the new package dialog. pDefaultNamespace can be null or the default namespace for the package
 	*/
 	public IElement newPackageDialog( INamespace pDefaultNamespace );
 
-	/**
+	
+
+/**
 	 * Tell the gui to open the new element dialog. pDefaultNamespace can be null or the default namespace for the package
 	*/
 	public IElement newElementDialog( INamespace pDefaultNamespace );
 
-	/**
+	
+
+/**
 	 * Closes the current IWorkspace and asks the user to save if the workspace is dirty.
 	*/
 	public void closeWorkspace();
 
-	/**
+	
+
+/**
 	 * Closes the indicated project and asks the user to save if the project is dirty.
 	*/
 	public void closeProject( IProject pProject );
 
-	/**
+	
+
+/**
 	 * Disables or enables the context menu on the application.
 	*/
 	public void setDisableContextMenu( boolean value );
 
-	/**
+	
+
+/**
 	 * Disables or enables the context menu on the application.
 	*/
 	public boolean getDisableContextMenu();
 
-    /**
+    
+
+/**
      * Displays a URL to the user.  The URL will be displayed by the platform
      * that is hosting the UML application.
      */
     public void displayInBrowser(URL url);
     
-    /**
+    
+
+/**
      * Retreives the Image resource that is used by other parts of the framework.
      */
     public Image getResource(String iconLocation);

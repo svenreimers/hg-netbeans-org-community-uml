@@ -55,7 +55,8 @@ import org.openide.util.NbBundle;
  */
 public class UMLOptions extends OptionsCategory {
 
-    /**
+    
+/**
      * Creates a new instance of UMLOptionsPanel
      */
     public UMLOptions() {

@@ -43,6 +43,8 @@
  */
 
 
+
+
 /*
  * Created on Jul 15, 2003
  *
@@ -65,7 +67,9 @@ public class NewDialogElementDetails implements INewDialogElementDetails
 	private Vector<IElement> m_AdditionalNamespaces;
 	private int /*NewElementKind*/ m_Kind;
 
-	/**
+	
+
+/**
 	 * 
 	 */
 	public NewDialogElementDetails()
@@ -74,7 +78,9 @@ public class NewDialogElementDetails implements INewDialogElementDetails
 		m_Kind = NewElementKind.NEK_NONE;
 	}
 
-	/**
+	
+
+/**
 	 * Name of the element.
 	 *
 	 * @param pVal[out]
@@ -86,7 +92,9 @@ public class NewDialogElementDetails implements INewDialogElementDetails
 		return m_Name;
 	}
 
-	/**
+	
+
+/**
 	 * Name of the element.
 	 *
 	 * @param pVal[in]
@@ -98,7 +106,9 @@ public class NewDialogElementDetails implements INewDialogElementDetails
 		m_Name = value;
 	}
 
-	/**
+	
+
+/**
 	 * The selected namespace.
 	 *
 	 * @param pVal[out]
@@ -110,7 +120,9 @@ public class NewDialogElementDetails implements INewDialogElementDetails
 		return m_Namespace;
 	}
 
-	/**
+	
+
+/**
 	 * The selected namespace.
 	 *
 	 * @param pVal[in]
@@ -122,7 +134,9 @@ public class NewDialogElementDetails implements INewDialogElementDetails
 		m_Namespace = value;
 	}
 
-	/**
+	
+
+/**
 	 * Add an additional namespace to our list of possible namespaces.
 	 *
 	 * @param pNamespace[in]
@@ -146,7 +160,9 @@ public class NewDialogElementDetails implements INewDialogElementDetails
 		return 0;
 	}
 
-	/**
+	
+
+/**
 	 * The kind of element to create.
 	 *
 	 * @param pVal[out]
@@ -158,7 +174,9 @@ public class NewDialogElementDetails implements INewDialogElementDetails
 		return m_Kind;
 	}
 
-	/**
+	
+
+/**
 	 * The kind of element to create.
 	 *
 	 * @param pVal[in]

@@ -52,19 +52,22 @@ import junit.framework.Test;
 import org.netbeans.junit.NbTestSuite;
 import junit.framework.TestResult;
 
+
 /**
  * ported from qa.jse.MuliTestSuit
  */
 public abstract class UMLMultiTestSuite extends NbTestSuite{
     
-    /**
+    
+/**
      * Creates a new instance of UMLMultiTestSuite 
      */
     public UMLMultiTestSuite() {
         setName(UMLMultiTestCase.shortName(this.getClass().getName()));
     }
 
-    /**
+    
+/**
      * 
      * @param name 
      */
@@ -72,13 +75,17 @@ public abstract class UMLMultiTestSuite extends NbTestSuite{
         super(name);
     }
     
-    /**
+    
+
+/**
      * 
      * @return 
      */
     protected abstract UMLMultiTestCase[] cases();
     
-    /**
+    
+
+/**
      * Runs the tests and collects their result in a TestResult.
      * @param result 
      */

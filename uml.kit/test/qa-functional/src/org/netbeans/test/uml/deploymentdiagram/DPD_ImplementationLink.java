@@ -67,6 +67,7 @@ import org.netbeans.test.umllib.exceptions.NotFoundException;
 import org.netbeans.test.umllib.testcases.UMLTestCase;
 import org.netbeans.test.umllib.vrf.LinkVerifier;
 
+
 /**
  *
  * @spec UML/DeploymentDiagram.xml
@@ -95,6 +96,8 @@ public class DPD_ImplementationLink extends UMLTestCase {
 
 //------------------------------------------------------------------------------    
     
+
+
 /**
  * @caseblock Implementation link
  * @usecase Delete a Implementation link from a diagram by popup menu
@@ -106,6 +109,8 @@ public class DPD_ImplementationLink extends UMLTestCase {
         }
     }
     
+
+
 /**
  * @caseblock Implementation link
  * @usecase Delete a Implementation link from a diagram by shortcut
@@ -117,6 +122,8 @@ public class DPD_ImplementationLink extends UMLTestCase {
         }
     }
     
+
+
 /**
  * @caseblock Implementation link
  * @usecase Select all on a diagram by popup menu of a Implementation link
@@ -127,6 +134,8 @@ public class DPD_ImplementationLink extends UMLTestCase {
             fail("Test failed. Details in log file.");
         }
     }
+
+
 
 /**
  * @caseblock Implementation link
@@ -139,6 +148,8 @@ public class DPD_ImplementationLink extends UMLTestCase {
         }
     }
 
+
+
 /**
  * @caseblock Implementation link
  * @usecase Find source element of a Implementation link
@@ -149,6 +160,8 @@ public class DPD_ImplementationLink extends UMLTestCase {
             fail("Test failed. Details in log file.");
         }
     }
+
+
 
 /**
  * @caseblock Implementation link
@@ -161,6 +174,8 @@ public class DPD_ImplementationLink extends UMLTestCase {
         }
     }
     
+
+
 /**
  * @caseblock Implementation link
  * @usecase Redirect source element of a Implementation link
@@ -172,6 +187,8 @@ public class DPD_ImplementationLink extends UMLTestCase {
         }
     }
     
+
+
 /**
  * @caseblock Implementation link
  * @usecase Redirect target element of a Implementation link

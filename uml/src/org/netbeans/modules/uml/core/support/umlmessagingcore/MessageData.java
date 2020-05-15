@@ -60,7 +60,9 @@ public class MessageData implements IMessageData, Cloneable
 	private String m_Facility = null;
 	private ETList<IMessageData> m_SubMessages = new ETArrayList<IMessageData>();
 	private long m_osBinaryTime = new Date().getTime();
-	/**
+	
+
+/**
 	 * Adds this message to the list of sub messages
 	 *
 	 * @param nMessageType[in]
@@ -79,7 +81,9 @@ public class MessageData implements IMessageData, Cloneable
 		return addSubMessage(nMessageType, sFacilityString, sMessageString);
 	}
 	
-	/**
+	
+
+/**
 	 * Adds this message to the list of sub messages
 	 *
 	 * @param nMessageType[in]
@@ -98,7 +102,9 @@ public class MessageData implements IMessageData, Cloneable
 		return subMsg;
 	}
 	
-	/**
+	
+
+/**
 	 * Adds this message to the list of sub messages
 	 *
 	 * @param pSubMessage [in] The child message to this one.
@@ -113,7 +119,9 @@ public class MessageData implements IMessageData, Cloneable
 		this.m_SubMessages = msgDatas;
 	}
 	
-	/**
+	
+
+/**
 	 * Sets various details of the message
 	 */
 	public void setDetails( /* MESSAGE_TYPE */ int nMessageType, String sFacility, String value )
@@ -123,7 +131,9 @@ public class MessageData implements IMessageData, Cloneable
 		setMessageString(value);
 	}
 	
-	/**
+	
+
+/**
 	 * Returns the message string for this particular message.
 	 *
 	 * @param pVal The message string
@@ -133,7 +143,9 @@ public class MessageData implements IMessageData, Cloneable
 		return this.m_MessageString;		
 	}
 	
-	/**
+	
+
+/**
 	 * Sets the message string for this particular message.
 	 *
 	 * @param newVal The message string
@@ -144,7 +156,9 @@ public class MessageData implements IMessageData, Cloneable
 	}
 	
 	
-	/**
+	
+
+/**
 	 * @return
 	 */
 	public int getMessageType() 
@@ -152,7 +166,9 @@ public class MessageData implements IMessageData, Cloneable
 		return this.m_MessageType;
 	}
 
-	/**
+	
+
+/**
 	 * @param i
 	 */
 	public void setMessageType(int i) 
@@ -174,7 +190,9 @@ public class MessageData implements IMessageData, Cloneable
 	
 	
 
-	/**
+	
+
+/**
 	 * @return
 	 */
 	public String getFacility() 
@@ -182,7 +200,9 @@ public class MessageData implements IMessageData, Cloneable
 		return this.m_Facility;
 	}
 
-	/**
+	
+
+/**
 	 * @param string
 	 */
 	public void setFacility(String string) 
@@ -190,13 +210,8 @@ public class MessageData implements IMessageData, Cloneable
 		this.m_Facility = string;
 	}
 
-	/**
-	 * Gets the string formatted such that the time stamp, facility, message type, and
-	 * message string are returned in one BSTR.
-	 *
-	 * @param bAddTimestamp Should the time.stamp be added to the message
-	 * @param pFormattedString The returned formatted message string.
-	 */
+	
+
 	public String getFormattedMessageString( boolean bAddTimestamp )
 	{
 		String messageType = getMessageTypeString();
@@ -261,7 +276,9 @@ public class MessageData implements IMessageData, Cloneable
 		return buf.toString();
 	}
 	
-	/**
+	
+
+/**
 	 * Returns the message type for this message as a string.
 	 *
 	 * @param pVal The message type
@@ -297,7 +314,9 @@ public class MessageData implements IMessageData, Cloneable
 	}
 	
 
-	/**
+	
+
+/**
 	 * Returns a list of all the submessages for this message.
 	 *
 	 * @param pVal The sub messages

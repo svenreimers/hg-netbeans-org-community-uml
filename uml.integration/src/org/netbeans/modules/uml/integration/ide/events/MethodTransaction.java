@@ -51,6 +51,8 @@ import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure
 import org.netbeans.modules.uml.core.metamodel.infrastructure.coreinfrastructure.IParameter;
 import org.netbeans.modules.uml.core.support.umlsupport.Log;
 
+
+
 /**
  * The MethodTransaction is use to maintain a context when updating methods.
  * The MethodTransaction will locate the method in Describes database.
@@ -68,7 +70,9 @@ public class MethodTransaction extends Object
     setOperation(null);
   }
 
-  /**
+  
+
+/**
    * Create a new MemberTransaction and specify the symbol to search and
    * method to find.  If the method will be created if one is needed.
    * @param trans The symbol transaction used when searching for the memeber.
@@ -81,7 +85,9 @@ public class MethodTransaction extends Object
       setAttribute(trans, method);
     }
   }
-  /**
+  
+
+/**
    * Retrieve the Describe representation of the method.
    * <i>In the future this may be abstracted. </i>
    */
@@ -90,7 +96,9 @@ public class MethodTransaction extends Object
     return mOpe;
   }
 
-  /**
+  
+
+/**
    * Set the Describe representation of the method
    * <i>In the future this may be abstracted. </i>
    */
@@ -134,7 +142,9 @@ public class MethodTransaction extends Object
         Log.out("setAttribute(): Classifier is null for - " + method);
   }
 
-  /**
+  
+
+/**
    * Sets the Describe attribute that defines method.  A Describe symbol
    * is search for a method that matches the requested data member name and
    * parameters.  If a Describe attribute is not found then one is created for

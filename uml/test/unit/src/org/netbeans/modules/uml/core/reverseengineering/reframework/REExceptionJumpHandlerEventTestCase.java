@@ -47,6 +47,8 @@ package org.netbeans.modules.uml.core.reverseengineering.reframework;
 
 import org.dom4j.Element;
 import org.netbeans.modules.uml.core.support.umlsupport.XMLManip;
+
+
 /**
  * Test cases for REExceptionJumpHandlerEvent.
  */
@@ -59,7 +61,9 @@ public class REExceptionJumpHandlerEventTestCase extends AbstractRETestCase
 
     private REExceptionJumpHandlerEvent rej;
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see junit.framework.TestCase#setUp()
      */
     protected void setUp() throws Exception

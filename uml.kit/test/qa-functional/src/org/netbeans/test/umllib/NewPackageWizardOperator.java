@@ -81,7 +81,9 @@ public class NewPackageWizardOperator extends JDialogOperator{
         super(TITLE);
     }
     
-    /**
+    
+
+/**
      * 
      * @param packageName 
      */
@@ -94,7 +96,9 @@ public class NewPackageWizardOperator extends JDialogOperator{
     }
     
     
-    /**
+    
+
+/**
      * 
      * @param diagramName 
      */
@@ -106,7 +110,9 @@ public class NewPackageWizardOperator extends JDialogOperator{
         txtName.waitText(diagramName);
     }
     
-    /**
+    
+
+/**
      * 
      * @return 
      */
@@ -117,7 +123,9 @@ public class NewPackageWizardOperator extends JDialogOperator{
             return dnmT.isEnabled();
     }
     
-    /**
+    
+
+/**
      * 
      * @param create 
      */
@@ -149,7 +157,9 @@ public class NewPackageWizardOperator extends JDialogOperator{
     }
     
     
-    /**
+    
+
+/**
      * 
      * @param diagramType 
      * @return 
@@ -159,7 +169,9 @@ public class NewPackageWizardOperator extends JDialogOperator{
     }
         
     
-    /**
+    
+
+/**
      * 
      * @param diagramType 
      */
@@ -170,7 +182,9 @@ public class NewPackageWizardOperator extends JDialogOperator{
         typeCmb.waitItemSelected(diagramType);
     }
         
-    /**
+    
+
+/**
      * 
      * @param path 
      */
@@ -182,7 +196,9 @@ public class NewPackageWizardOperator extends JDialogOperator{
         namespaceCmb.waitItemSelected(path);
     }
     
-    /**
+    
+
+/**
      * 
      * @param packageName 
      * @param diagramName 

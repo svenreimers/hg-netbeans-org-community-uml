@@ -68,6 +68,7 @@ import org.netbeans.test.umllib.testcases.UMLTestCase;
 import org.netbeans.test.umllib.vrf.LinkVerifier;
 
 
+
 /**
  *
  * @spec UML/DeploymentDiagram.xml
@@ -96,6 +97,8 @@ public class DPD_AbstractionLink extends UMLTestCase {
 
 //------------------------------------------------------------------------------    
     
+
+
 /**
  * @caseblock Abstraction link
  * @usecase Delete a Abstraction link from a diagram by popup menu
@@ -107,6 +110,8 @@ public class DPD_AbstractionLink extends UMLTestCase {
         }
     }
     
+
+
 /**
  * @caseblock Abstraction link
  * @usecase Delete a Abstraction link from a diagram by shortcut
@@ -118,6 +123,8 @@ public class DPD_AbstractionLink extends UMLTestCase {
         }
     }
     
+
+
 /**
  * @caseblock Abstraction link
  * @usecase Select all on a diagram by popup menu of a Abstraction link
@@ -128,6 +135,8 @@ public class DPD_AbstractionLink extends UMLTestCase {
             fail("Test failed. Details in log file.");
         }
     }
+
+
 
 /**
  * @caseblock Abstraction link
@@ -140,6 +149,8 @@ public class DPD_AbstractionLink extends UMLTestCase {
         }
     }
 
+
+
 /**
  * @caseblock Abstraction link
  * @usecase Find source element of a Abstraction link
@@ -150,6 +161,8 @@ public class DPD_AbstractionLink extends UMLTestCase {
             fail("Test failed. Details in log file.");
         }
     }
+
+
 
 /**
  * @caseblock Abstraction link
@@ -162,6 +175,8 @@ public class DPD_AbstractionLink extends UMLTestCase {
         }
     }
     
+
+
 /**
  * @caseblock Abstraction link
  * @usecase Redirect source element of a Abstraction link
@@ -172,6 +187,8 @@ public class DPD_AbstractionLink extends UMLTestCase {
             fail("Test failed. Details in log file.");
         }
     }
+
+
 
 /**
  * @caseblock Abstraction link
@@ -184,6 +201,8 @@ public class DPD_AbstractionLink extends UMLTestCase {
         }
     }
 
+
+
 /**
  * @caseblock Abstraction link
  * @usecase Redirect source element of a Abstraction link
@@ -194,6 +213,8 @@ public class DPD_AbstractionLink extends UMLTestCase {
             fail("Test failed. Details in log file.");
         }
     }
+
+
 
 /**
  * @caseblock Abstraction link
@@ -206,6 +227,8 @@ public class DPD_AbstractionLink extends UMLTestCase {
         }
     }
 
+
+
 /**
  * @caseblock Abstraction link
  * @usecase Redirect source element of a Abstraction link
@@ -216,6 +239,8 @@ public class DPD_AbstractionLink extends UMLTestCase {
             fail("Test failed. Details in log file.");
         }
     }
+
+
 
 /**
  * @caseblock Abstraction link
@@ -228,6 +253,8 @@ public class DPD_AbstractionLink extends UMLTestCase {
         }
     }
 
+
+
 /**
  * @caseblock Abstraction link
  * @usecase Redirect source element of a Abstraction link
@@ -238,6 +265,8 @@ public class DPD_AbstractionLink extends UMLTestCase {
             fail("Test failed. Details in log file.");
         }
     }
+
+
 
 /**
  * @caseblock Abstraction link
@@ -250,6 +279,8 @@ public class DPD_AbstractionLink extends UMLTestCase {
         }
     }
 
+
+
 /**
  * @caseblock Abstraction link
  * @usecase Redirect source element of a Abstraction link
@@ -261,6 +292,8 @@ public class DPD_AbstractionLink extends UMLTestCase {
         }
     }
     
+
+
 /**
  * @caseblock Abstraction link
  * @usecase Redirect target element of a Abstraction link
@@ -271,6 +304,8 @@ public class DPD_AbstractionLink extends UMLTestCase {
             fail("Test failed. Details in log file.");
         }
     }
+
+
 
 /**
  * @caseblock Abstraction link
@@ -283,6 +318,8 @@ public class DPD_AbstractionLink extends UMLTestCase {
         }
     }
 
+
+
 /**
  * @caseblock Abstraction link
  * @usecase Redirect target element of a Abstraction link
@@ -293,6 +330,8 @@ public class DPD_AbstractionLink extends UMLTestCase {
             fail("Test failed. Details in log file.");
         }
     }
+
+
 
 /**
  * @caseblock Abstraction link
@@ -305,6 +344,8 @@ public class DPD_AbstractionLink extends UMLTestCase {
         }
     }
     
+
+
 /**
  * @caseblock Abstraction link
  * @usecase Redirect target element of a Abstraction link
@@ -315,6 +356,8 @@ public class DPD_AbstractionLink extends UMLTestCase {
             fail("Test failed. Details in log file.");
         }
     }
+
+
 
 /**
  * @caseblock Abstraction link
@@ -327,6 +370,8 @@ public class DPD_AbstractionLink extends UMLTestCase {
         }
     }
 
+
+
 /**
  * @caseblock Abstraction link
  * @usecase Redirect target element of a Abstraction link
@@ -338,6 +383,8 @@ public class DPD_AbstractionLink extends UMLTestCase {
         }
     }
 
+
+
 /**
  * @caseblock Abstraction link
  * @usecase Redirect target element of a Abstraction link
@@ -348,6 +395,8 @@ public class DPD_AbstractionLink extends UMLTestCase {
             fail("Test failed. Details in log file.");
         }
     }
+
+
 
 /**
  * @caseblock Abstraction link

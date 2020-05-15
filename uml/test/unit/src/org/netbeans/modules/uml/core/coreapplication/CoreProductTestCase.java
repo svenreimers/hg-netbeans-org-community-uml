@@ -125,7 +125,7 @@ public class CoreProductTestCase extends TestCase
         assertNotNull(prod.getConfigManager());
         assertNotNull(prod.getRoundTripController());
         
-        // conover - default is OFF now that RT is being disabled
+        
         assertEquals(prod.getRoundTripController().getMode(),RTMode.RTM_OFF);
         
         assertTrue(CoreProductTestCase.callingInit);

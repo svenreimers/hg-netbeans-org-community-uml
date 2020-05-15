@@ -42,6 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
+
+
 /*
  * RelationshipCookie.java
  *
@@ -52,6 +54,8 @@
 package org.netbeans.modules.uml.common;
 
 import org.openide.nodes.Node;
+
+
 
 /* this class was added to distinguish relationship node from regular model node,
  * ideally, it should be placed in UMLProject module, however, UMLProject module

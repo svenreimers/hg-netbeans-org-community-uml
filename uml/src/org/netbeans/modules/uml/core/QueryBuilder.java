@@ -72,7 +72,9 @@ public class QueryBuilder implements IQueryBuilder
 	private String m_DefaultUpdaterProgId = "";
 	private String m_ResultLocation = "";
 
-	/**
+	
+
+/**
 	 *
 	 * Sets the location of the QuerySchemas.etc file. The schema file
 	 * does not have to be the QuerySchemas.etc file, but is must have
@@ -89,7 +91,9 @@ public class QueryBuilder implements IQueryBuilder
 		m_SchemaLocation = pVal;
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Retrieves the location of the QuerySchemas.etc file
 	 * that was previously set.
@@ -104,7 +108,9 @@ public class QueryBuilder implements IQueryBuilder
 		return m_SchemaLocation;
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Generates out new results given the set schema file and the passed
 	 * in data node. This routine will create new data. No checking of existing
@@ -172,7 +178,9 @@ public class QueryBuilder implements IQueryBuilder
 		return retDoc;
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Executes a query defined in the schemaNode passed in against the dataSourceNode also
 	 * passed in.
@@ -213,7 +221,9 @@ public class QueryBuilder implements IQueryBuilder
 		}
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Gather the details of a particular query defined in the QuerySchema file.
 	 *
@@ -268,17 +278,8 @@ public class QueryBuilder implements IQueryBuilder
 		return schemaNode;
 	}
 
-	/**
-	 *
-	 * Loads the schema file that defines the queries to 
-	 * execute
-	 *
-	 * @param doc[out] The document that contains the specified queries
-	 *                 to execute
-	 *
-	 * @return HRESULT
-	 *
-	 */
+	
+
 	private Document loadSchema()
 	{
 		Document retDoc = null;
@@ -293,7 +294,9 @@ public class QueryBuilder implements IQueryBuilder
 		return retDoc;
 	}
 
-	/**
+	
+
+/**
 	 *
 	 * Checks to see if the schema and result location properties are validly
 	 * set.
@@ -386,7 +389,9 @@ public class QueryBuilder implements IQueryBuilder
 		private Vector/*<ResultAttr>*/ m_ResultAttrs = new Vector();
 		private IProject m_Project = null;
 		
-		/**
+		
+
+/**
 		 *
 		 * Makes sure that the QuerySchema object is in a valid state
 		 *
@@ -409,7 +414,9 @@ public class QueryBuilder implements IQueryBuilder
 			return isValid;
 		}
 		
-		/**
+		
+
+/**
 		 *
 		 * Creates the Xml element that is the result container for the individual result
 		 * elements to be created
@@ -432,7 +439,9 @@ public class QueryBuilder implements IQueryBuilder
 			return retNode;
 		}
 		
-		/**
+		
+
+/**
 		 *
 		 * Creates a new node that is placed as a child on container, and fills in the appropriate xml attributes
 		 * based on the data found in dataNode

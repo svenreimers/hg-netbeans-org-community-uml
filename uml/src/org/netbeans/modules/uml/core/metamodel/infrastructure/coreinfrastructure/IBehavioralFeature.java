@@ -49,168 +49,234 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 public interface IBehavioralFeature extends IFeature, INamespace
 {
-	/**
+	
+
+/**
 	 * property AddOwnedElement
 	*/
 	public void addParameter( IParameter parm );
 
-	/**
+	
+
+/**
 	 * property RemoveParameter
 	*/
 	public void removeParameter( IParameter parm );
 
-	/**
+	
+
+/**
 	 * Inserts a new parameter into this feature's collection of parameters before the existingParm.
 	*/
 	public void insertParameter( IParameter existingParm, IParameter newParm );
 
-	/**
+	
+
+/**
 	 * The collection of Parameters that makes up this features parameter list.
 	*/
 	public ETList<IParameter> getParameters();
 
-	/**
+	
+
+/**
 	 * The collection of Parameters that makes up this features parameter list.
 	*/
 	public void setParameters( ETList<IParameter> value );
 
-	/**
+	
+
+/**
 	 * Removes all the parameters from this feature.
 	*/
 	public void removeAllParameters();
 
-	/**
+	
+
+/**
 	 * property AddRaisedSignal
 	*/
 	public void addRaisedSignal( ISignal sig );
 
-	/**
+	
+
+/**
 	 * property RemoveRaisedSignal
 	*/
 	public void removeRaisedSignal( ISignal sig );
 
-	/**
+	
+
+/**
 	 * property RaisedSignals
 	*/
 	public ETList<ISignal> getRaisedSignals();
 
-	/**
+	
+
+/**
 	 * property AddHandledSignal
 	*/
 	public void addHandledSignal( ISignal sig );
 
-	/**
+	
+
+/**
 	 * property RemoveHandledSignal
 	*/
 	public void removeHandledSignal( ISignal sig );
 
-	/**
+	
+
+/**
 	 * property HandledSignals
 	*/
 	public ETList<ISignal> getHandledSignals();
 
-	/**
+	
+
+/**
 	 * property Concurrency
 	*/
 	public int getConcurrency();
 
-	/**
+	
+
+/**
 	 * property Concurrency
 	*/
 	public void setConcurrency( /* CallConcurrencyKind */ int value );
 
-	/**
+	
+
+/**
 	 * property IsAbstract
 	*/
 	public boolean getIsAbstract();
 
-	/**
+	
+
+/**
 	 * property IsAbstract
 	*/
 	public void setIsAbstract( boolean value );
 
-	/**
+	
+
+/**
 	 * Creates a parameter given the type and name. Does not add the parameter to this feature.
 	*/
 	public IParameter createParameter( String Type, String Name );
 
-	/**
+	
+
+/**
 	 * Creates a parameter given the type and name. Does not add the parameter to this feature.
 	*/
 	public IParameter createParameter2( IClassifier Type, String Name );
 
-	/**
+	
+
+/**
 	 * Sets / Gets the return type of this feature.
 	*/
 	public IParameter getReturnType();
 
-	/**
+	
+
+/**
 	 * Sets / Gets the return type of this feature.
 	*/
 	public void setReturnType( IParameter value );
 
-	/**
+	
+
+/**
 	 * Sets / Gets the return type of this feature.
 	*/
 	public void setReturnType2( String value );
 
-	/**
+	
+
+/**
 	 * property AddMethod
 	*/
 	public void addMethod( IBehavior Behavior );
 
-	/**
+	
+
+/**
 	 * property RemoveMethod
 	*/
 	public void removeMethod( IBehavior Behavior );
 
-	/**
+	
+
+/**
 	 * property Methods
 	*/
 	public ETList<IBehavior> getMethods();
 
-	/**
+	
+
+/**
 	 * property Representation
 	*/
 	public IBehavior getRepresentation();
 
-	/**
+	
+
+/**
 	 * property Representation
 	*/
 	public void setRepresentation( IBehavior value );
 
-	/**
+	
+
+/**
 	 * All parameters other than those with a direction kind of PDK_RESULT.
 	*/
 	public ETList<IParameter> getFormalParameters();
 
-	/**
+	
+
+/**
 	 * Sets / Gets the return type of this feature.
 	*/
 	public String getReturnType2();
 
-	/**
+	
+
+/**
 	 * Determines whether or not the signature of the passed in feature is the same as this one.
 	*/
 	public boolean isSignatureSame( IBehavioralFeature pFeature );
 
-	/**
+	
+
+/**
 	 * Determines whether or not the signature of the passed in feature is the same as this one. This does not include the result parameters, i.e., return types.
 	*/
 	public boolean isFormalSignatureSame( IBehavioralFeature pFeature );
 
-	/**
+	
+
+/**
 	 * Creates a parameter with default name and type.
 	*/
 	public IParameter createParameter3();
 
-	/**
+	
+
+/**
 	 * All parameters other than those with a direction kind of PDK_RESULT.
 	*/
 	public void setFormalParameters( ETList<IParameter> value );
         
         
-        /**
+        
+
+/**
          * Simply removes all the existing parameters and sets new parameters
          * from a given parameter list.
          * 
@@ -218,27 +284,37 @@ public interface IBehavioralFeature extends IFeature, INamespace
          */
         public void setFormalParameters2( ETList<IParameter> parameterList );
 
-	/**
+	
+
+/**
 	 * Specific to the Java language.
 	*/
 	public boolean getIsNative();
 
-	/**
+	
+
+/**
 	 * Specific to the Java language.
 	*/
 	public void setIsNative( boolean value );
 
-	/**
+	
+
+/**
 	 * Specific to the Java language.
 	*/
 	public boolean getIsStrictFP();
 
-	/**
+	
+
+/**
 	 * Specific to the Java language.
 	*/
 	public void setIsStrictFP( boolean value );
 
-	/**
+	
+
+/**
 	 * Creates a return type parameter
 	*/
 	public IParameter createReturnType();

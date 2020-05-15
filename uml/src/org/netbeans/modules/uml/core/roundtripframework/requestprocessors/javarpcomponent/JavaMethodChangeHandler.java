@@ -365,7 +365,9 @@ public class JavaMethodChangeHandler extends JavaChangeHandler implements IJavaM
         
     }
     
-    /**
+    
+
+/**
      * Discovers the operations on pClass that are the same as pOperation. If not
      * found on pClass, all generalizations and implementations are followed. Because
      * multiple interfaces my be implemented that have the same operation, the result
@@ -444,7 +446,9 @@ public class JavaMethodChangeHandler extends JavaChangeHandler implements IJavaM
         return pIdenticalOperations;
     }
     
-    /**
+    
+
+/**
      *
      * Discovers the operations on pClass that are the same as pOperation. If not
      * found on pClass, all generalizations and implementations are followed. Because
@@ -574,7 +578,7 @@ public class JavaMethodChangeHandler extends JavaChangeHandler implements IJavaM
         // We want all the implementing classes that are NOT on the redefining
         // classes list.
         
-        //AZTEC: do it now.
+        
         ETList<IElement> implementingElem =
                 m_Utilities.classesToElements(implementingClasses);
         ETList<IElement> redefiningElem =
@@ -614,7 +618,9 @@ public class JavaMethodChangeHandler extends JavaChangeHandler implements IJavaM
         return doQuery("REDEFINE",format);
     }
     
-    /**
+    
+
+/**
      *
      * Ensures that the operation is unique in the class.
      */
@@ -742,7 +748,9 @@ public class JavaMethodChangeHandler extends JavaChangeHandler implements IJavaM
         }
     }
     
-    /**
+    
+
+/**
      *
      * If the operations class is an interface, make it conform
      *
@@ -812,7 +820,7 @@ public class JavaMethodChangeHandler extends JavaChangeHandler implements IJavaM
                     if ( pParm != null )
                     {
                         // Do what ever needs to be done.
-                        //AZTEC: comment. this method call does not do anything.
+                        
                         // so commenting out.
                         //ParameterTypeChange ( requestValidator, pParm )
                         IBehavioralFeature pFeat = pParm.getBehavioralFeature();
@@ -930,7 +938,7 @@ public class JavaMethodChangeHandler extends JavaChangeHandler implements IJavaM
                         // This will mean going back DOWN the hierachy for each
                         // change.
                         boolean retypeUp = false;
-                        //AZTEC: TODO: need to uncomment the following line once the  IDS_JRT_METHOD_CHANGE_VERIFICATION_TEXT
+                        
                         //is available in the properties file.
                         retypeUp = queryBeforeRenameUp(pOperation, newType,
                                 RPMessages.getString("IDS_JRT_METHOD_CHANGE_VERIFICATION_TEXT"));
@@ -1067,7 +1075,9 @@ public class JavaMethodChangeHandler extends JavaChangeHandler implements IJavaM
         }
     }
     
-    /**
+    
+
+/**
      *
      * This operation renames all the parameters of a given position in all the
      * redefined operations the passed in parameter is involved with.
@@ -1187,7 +1197,7 @@ public class JavaMethodChangeHandler extends JavaChangeHandler implements IJavaM
                     
                     boolean addUp = false;
                     String newName = "";
-                    //AZTEC: TODO: need to uncomment this one, once the IDS_JRT_METHOD_CHANGE_VERIFICATION_TEXT
+                    
                     //is available in the properties file.
                     addUp = queryBeforeRenameUp( pOperation, newName,
                             RPMessages.getString("IDS_JRT_METHOD_CHANGE_VERIFICATION_TEXT"));
@@ -1345,7 +1355,7 @@ public class JavaMethodChangeHandler extends JavaChangeHandler implements IJavaM
     
     public void parameterDeleted(IOperation pOperation, IParameter pParameter)
     {
-        // In other words, the position of the parameter is all that matters,
+        
         // because there is nothing else to go on. How do we do this, since
         // the operation is already modified?
         // The only thing we can do is to get a redefining or redefined operation
@@ -1381,7 +1391,7 @@ public class JavaMethodChangeHandler extends JavaChangeHandler implements IJavaM
             
             boolean addUp = false;
             String newType = "";
-            //AZTEC: TODO: need to uncomment once IDS_JRT_METHOD_CHANGE_VERIFICATION_TEXT is availbale
+            
             //from the properties file
             addUp = queryBeforeRenameUp( pOperation, newType,
                     RPMessages.getString("IDS_JRT_METHOD_CHANGE_VERIFICATION_TEXT") );
@@ -1392,7 +1402,9 @@ public class JavaMethodChangeHandler extends JavaChangeHandler implements IJavaM
         }
     }
     
-    /**
+    
+
+/**
      *
      * Determine the index of the parameter that was removed from the operation.
      * Passes back the index of the deleted parameter and the number of parameters
@@ -1646,7 +1658,7 @@ public class JavaMethodChangeHandler extends JavaChangeHandler implements IJavaM
         // change.
         
         boolean retypeUp = false;
-        //AZTEC: TODO: uncomment the following once IDS_JRT_METHOD_CHANGE_VERIFICATION_TEXT
+        
         //is available in the properties file.
         retypeUp  = queryBeforeRenameUp( pOperation, newType,
                 RPMessages.getString("IDS_JRT_METHOD_CHANGE_VERIFICATION_TEXT"));
@@ -1937,7 +1949,7 @@ public class JavaMethodChangeHandler extends JavaChangeHandler implements IJavaM
                         int count = derivedClasses.size();
                         int idx = 0;
                         boolean addOp = false;
-                        //AZTEC: TODO: need to uncomment the following line once the properties
+                        
                         //file is available.
                         //addOp = displayYesNoMessage(IDS_JRT_CREATE_OPERATION_FOR_ABSTRACT,
                         //	 						  IDS_JRT_CREATE_OPERATION_FOR_ABSTRACT_TITLE,
@@ -2102,7 +2114,7 @@ public class JavaMethodChangeHandler extends JavaChangeHandler implements IJavaM
         // This will mean going back DOWN the hierachy for each
         // change.
         boolean renameUp = false;
-        // AZTEC: TODO: need to uncomment the following line once the IDS_JRT_METHOD_CHANGE_VERIFICATION_TEXT
+        
         // is available in the properties file.
         renameUp = queryBeforeRenameUp( pOperation, newName,
                 RPMessages.getString("IDS_JRT_METHOD_CHANGE_VERIFICATION_TEXT"));
@@ -2368,7 +2380,7 @@ public class JavaMethodChangeHandler extends JavaChangeHandler implements IJavaM
                                 
                                 boolean renameUp = false;
                                 String dummyName = "";
-                                //AZTEC: TODO: Need to uncomment the following once IDS_JRT_METHOD_CHANGE_VERIFICATION_TEXT
+                                
                                 //is available from the properties file.
                                 renameUp = queryBeforeRenameUp( pRequestOp, dummyName,
                                         RPMessages.getString("IDS_JRT_METHOD_CHANGE_VERIFICATION_TEXT"));

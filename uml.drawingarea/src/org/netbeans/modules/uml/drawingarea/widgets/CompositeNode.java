@@ -41,6 +41,7 @@
  */
 package org.netbeans.modules.uml.drawingarea.widgets;
 
+
 /**
  * this one is for #156104 workaound only
  * and need to be reviewed if more time/resources will be available.

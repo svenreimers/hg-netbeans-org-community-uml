@@ -48,43 +48,57 @@ import org.netbeans.modules.uml.core.support.umlutils.InvalidArguments;
 
 public interface IWorkspaceManager
 {
-	/**
+	
+
+/**
 	 * Creates a new workspace at the location specified in fileName.
 	*/
 	public IWorkspace createWorkspace( String fileName, String Name )
 		throws InvalidArguments, WorkspaceManagementException;
 
-	/**
+	
+
+/**
 	 * Opens the Workspace at the passed in location.
 	*/
 	public IWorkspace openWorkspace( String fileName )
 		throws InvalidArguments, WorkspaceManagementException;
 
-	/**
+	
+
+/**
 	 * Gathers all the files that make up the workspace and condense them into one file.
 	*/
 	public void collapseWorkspace( IWorkspace space )
 		throws InvalidArguments;
 
-	/**
+	
+
+/**
 	 * Expands a workspace that was previously collapsed, creating all the files within.
 	*/
 	public IWorkspace expandWorkspace( String fileName )
 		throws InvalidArguments;
 
-	/**
+	
+
+/**
 	 * Sets / Gets the EventDispatcher that this manager will notify when events on this manager occur.
 	*/
 	public IWorkspaceEventDispatcher getEventDispatcher()
 		throws InvalidArguments;
 
-	/**
+	
+
+/**
 	 * Sets / Gets the EventDispatcher that this manager will notify when events on this manager occur.
 	*/
 	public void setEventDispatcher( IWorkspaceEventDispatcher value )
 		throws InvalidArguments;
 
-	/**
+	
+
+/**
 	 * Closes the passed in Workspace.
 	*/
 	public void closeWorkspace( IWorkspace space, String fileName, boolean save )

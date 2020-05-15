@@ -48,57 +48,79 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 
 public interface IBehavior extends IClassifier
 {
-	/**
+	
+
+/**
 	 * property Context
 	*/
 	public IClassifier getContext();
 
-	/**
+	
+
+/**
 	 * property Context
 	*/
 	public void setContext( IClassifier value );
 
-	/**
+	
+
+/**
 	 * property Specification
 	*/
 	public IBehavioralFeature getSpecification();
 
-	/**
+	
+
+/**
 	 * property Specification
 	*/
 	public void setSpecification( IBehavioralFeature value );
 
-	/**
+	
+
+/**
 	 * property RepresentedFeature
 	*/
 	public IBehavioralFeature getRepresentedFeature();
 
-	/**
+	
+
+/**
 	 * property RepresentedFeature
 	*/
 	public void setRepresentedFeature( IBehavioralFeature value );
 
-	/**
+	
+
+/**
 	 * method AddParameter
 	*/
 	public void addParameter( IParameter parm );
 
-	/**
+	
+
+/**
 	 * method RemoveParameter
 	*/
 	public void removeParameter( IParameter parm );
 
-	/**
+	
+
+/**
 	 * property Parameters
 	*/
 	public ETList<IParameter> getParameters();
 
-	/**
+	
+
+/**
 	 * Tells whether whether the behavior can be invoked while its still executing from a previous invocation.
 	*/
 	public boolean getIsReentrant();
 
-	/**
+	
+
+/**
 	 * Tells whether whether the behavior can be invoked while its still executing from a previous invocation.
 	*/
 	public void setIsReentrant( boolean value );

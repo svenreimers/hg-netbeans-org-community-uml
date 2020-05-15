@@ -42,6 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
+
+
 /*
  * ImportedProjectChildren.java
  *
@@ -242,7 +244,9 @@ public class ImportedProjectChildren extends Children.Keys implements NodeListen
         }
     }
 
-    /* retreives the imported projects from the project
+    
+
+/* retreives the imported projects from the project
      * @see org.openide.nodes.Children#addNotify()
      */
     protected void addNotify()

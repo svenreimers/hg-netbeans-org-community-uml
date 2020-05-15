@@ -54,7 +54,9 @@ public class REInterface implements IREInterface
 {
     private Node m_Data;
 
-    /**
+    
+
+/**
      * Get the XML DOM node that contains the interface information.
      * @param pVal [out] The XML DOM node that contains the data.
      */
@@ -63,7 +65,9 @@ public class REInterface implements IREInterface
         return m_Data;
     }
 
-    /**
+    
+
+/**
      * Set the XML DOM node that contains the interface information.
      * @param pVal [out] The XML DOM node that contains the data.
      */
@@ -72,7 +76,9 @@ public class REInterface implements IREInterface
         m_Data = value;
     }
 
-    /**
+    
+
+/**
      * Retrieve the name of the implemented interface.
      * @param pVal [out] The name of the interface.
      */
@@ -81,7 +87,9 @@ public class REInterface implements IREInterface
         return XMLManip.getAttributeValue(m_Data, "value");
     }
 
-    /** 
+    
+
+/** 
      * Retrieve the line number that contains the declaration.
      * @param pVal [out] The line number.
      */
@@ -90,7 +98,9 @@ public class REInterface implements IREInterface
         return XMLManip.getAttributeIntValue(m_Data, "line");
     }
 
-    /**
+    
+
+/**
      * Retrieve the column that that contains the declaration.
      * @param pVal [out] The column.
      */
@@ -99,7 +109,9 @@ public class REInterface implements IREInterface
         return XMLManip.getAttributeIntValue(m_Data, "column");
     }
 
-    /**
+    
+
+/**
      * Retrieve the stream position that contains the declaration.
      * @param pVal [out] The stream position.
      */

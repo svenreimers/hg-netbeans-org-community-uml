@@ -85,7 +85,9 @@ public class UMLNewAction extends NodeAction
       return false;
    }
    
-   /** Performs action on index and nodes.
+   
+
+/** Performs action on index and nodes.
     */
    private static void performAction(Node[] activatedNodes, int indx)
    {
@@ -111,7 +113,9 @@ public class UMLNewAction extends NodeAction
       return getNewTypes(WindowManager.getDefault().getRegistry().getCurrentNodes());
    }
    
-   /** Getter for array of activated new types.
+   
+
+/** Getter for array of activated new types.
     */
    private static NewType[] getNewTypes(Node[] activatedNodes)
    {
@@ -175,7 +179,9 @@ public class UMLNewAction extends NodeAction
       
       final ChangeSupport cs = new ChangeSupport(this);
       
-      /** lookup to read the new types from or null if they whould be taken
+      
+
+/** lookup to read the new types from or null if they whould be taken
        * directly from top component's selected nodes
        */
       private Lookup lookup;
@@ -286,14 +292,18 @@ public class UMLNewAction extends NodeAction
          performAction(nodeArr, index);
       }
       
-      /** Adds change listener for changes of the model.
+      
+
+/** Adds change listener for changes of the model.
        */
       public void addChangeListener(ChangeListener l)
       {
          cs.addChangeListener(l);
       }
       
-      /** Removes change listener for changes of the model.
+      
+
+/** Removes change listener for changes of the model.
        */
       public void removeChangeListener(ChangeListener l)
       {
@@ -302,7 +312,9 @@ public class UMLNewAction extends NodeAction
    }
    // end of ActSubMenuModel
    
-   /** A delegate action that is usually associated with a specific lookup and
+   
+
+/** A delegate action that is usually associated with a specific lookup and
     * extract the nodes it operates on from it. Otherwise it delegates to the
     * regular NodeAction.
     */
@@ -328,7 +340,9 @@ public class UMLNewAction extends NodeAction
          return super.toString() + "[delegate=" + delegate + "]"; // NOI18N
       }
       
-      /** Invoked when an action occurs.
+      
+
+/** Invoked when an action occurs.
        */
       public void actionPerformed(java.awt.event.ActionEvent e)
       {

@@ -58,7 +58,9 @@ public class EnumerationLiteral
     implements IEnumerationLiteral
 {
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.constructs.IEnumerationLiteral#getEnumeration()
      */
     public IEnumeration getEnumeration()
@@ -67,7 +69,9 @@ public class EnumerationLiteral
         return col.retrieveSingleElementWithAttrID( this, "enumeration", IEnumeration.class);
     }
 
-    /* (non-Javadoc)
+    
+
+/* (non-Javadoc)
      * @see org.netbeans.modules.uml.core.metamodel.core.constructs.IEnumerationLiteral#setEnumeration(org.netbeans.modules.uml.core.metamodel.core.constructs.IEnumeration)
      */
     public void setEnumeration(final IEnumeration value)

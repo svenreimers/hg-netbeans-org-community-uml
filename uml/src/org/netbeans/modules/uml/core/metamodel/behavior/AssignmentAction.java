@@ -42,6 +42,8 @@
  * made subject to such option by the copyright holder.
  */
 
+
+
 /*
  * Created on Oct 17, 2003
  *
@@ -65,7 +67,9 @@ public class AssignmentAction extends Action implements IAssignmentAction
 	{
 	}
 	
-	/**
+	
+
+/**
 	 * Resolves to the instance to be assigned when evaluated.
 	 *
 	 * @return exp
@@ -76,7 +80,9 @@ public class AssignmentAction extends Action implements IAssignmentAction
 				.retrieveSingleElement(m_Node,"UML:AssignmentAction.value/*", IExpression.class);
 	}
 	
-	/**
+	
+
+/**
 	 * Resolves to the instance to be assigned when evaluated.
 	 *
 	 * @param exp[in]
@@ -86,7 +92,9 @@ public class AssignmentAction extends Action implements IAssignmentAction
 		addChild("UML:AssignmentAction.value","UML:AssignmentAction.value",value);
 	}
 	
-	/**
+	
+
+/**
 	 * Establishes the appropriate XML elements for this UML type.
 	 *
 	 * [in] The document where this element will reside

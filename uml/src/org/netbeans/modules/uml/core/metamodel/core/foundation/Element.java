@@ -82,7 +82,9 @@ import org.openide.util.NbBundle;
 public class Element extends BaseElement implements IElement
 {
 
-   /**
+   
+
+/**
    * Retrieves the type of this element. For example, 'Class'.
    *
    * @param pVal The type of this element in string form
@@ -94,7 +96,9 @@ public class Element extends BaseElement implements IElement
       return retrieveSimpleName(getNode());
    }
 
-   /**
+   
+
+/**
     * Retrieves the name of the element typically used for creating icons.
     * It is composed of the element type and any other information needed to
     * make this type unique, such as 'Class' or 'PseudoState_Interface'
@@ -110,7 +114,9 @@ public class Element extends BaseElement implements IElement
       return getElementType();
    }
    
-   /**
+   
+
+/**
     * Retrieves a element type name that can be displayed to the user.  The 
     * default implementation will try to turn the expanded element type into
     * a name that can be displayed.
@@ -137,7 +143,9 @@ public class Element extends BaseElement implements IElement
        return retVal;
    }
 
-   /**
+   
+
+/**
     *
     * Adds the passed-in element to this namespace.
     *
@@ -177,7 +185,9 @@ public class Element extends BaseElement implements IElement
       return elem;
    }
 
-   /**
+   
+
+/**
     *
     * Makes sure that the element that is about to be added to this Element
     * is not an owner of this element, i.e., we will not allow the parent
@@ -201,7 +211,9 @@ public class Element extends BaseElement implements IElement
       return (!isSame(elem) && !isOwnedElement( elem ) && !isParent(elem));
    }
 
-   /**
+   
+
+/**
     *
     * Checks to see if the passed in element is a parent
     *
@@ -236,7 +248,9 @@ public class Element extends BaseElement implements IElement
       return isParent;
    }
 
-   /**
+   
+
+/**
      *
      * Retrieves the element(s) that has the name that matches elementName.
      *
@@ -256,7 +270,9 @@ public class Element extends BaseElement implements IElement
       return retrieveElementCollection(dummy, query, INamedElement.class);
    }
 
-   /**
+   
+
+/**
     *
     * Removes the passed-in Element from this Element.
     *
@@ -271,7 +287,9 @@ public class Element extends BaseElement implements IElement
       return removeElement(elem, query);
    }
 
-   /**
+   
+
+/**
     *
     * Retrieves the elements owned by this Element.
     *
@@ -287,7 +305,9 @@ public class Element extends BaseElement implements IElement
       return retrieveElementCollection(null, query, IElement.class);
    }
 
-   /**
+   
+
+/**
     *
     * Retrieves the Element that owns this element. This method
     * is smart in that it will determine the owner of an element that doesn't
@@ -337,7 +357,9 @@ public class Element extends BaseElement implements IElement
       return owner;
    }
 
-   /**
+   
+
+/**
     * Traverses up the DOM tree, looking for the element that owns
     * element.
     *
@@ -385,7 +407,9 @@ public class Element extends BaseElement implements IElement
       return owner;
    }
 
-   /**
+   
+
+/**
       *
       * Retrieves the owner of this element that is also a Package element.
       * Retrieves the first element going up the owning hierarchy. For example,
@@ -421,7 +445,9 @@ public class Element extends BaseElement implements IElement
       return retEle;
    }
 
-   /**
+   
+
+/**
     * Creates an Element object that encapsulates the node passed in.
     *
     * @param node[in] the DOM node to wrap in a Element object.
@@ -436,7 +462,9 @@ public class Element extends BaseElement implements IElement
       return obj instanceof IElement ? (IElement) obj : null;
    }
 
-   /**
+   
+
+/**
       *
       * Sets the owner of this Element. Will remove this element from
       * its current owner if connected.
@@ -463,7 +491,9 @@ public class Element extends BaseElement implements IElement
       });
    }
 
-   /**
+   
+
+/**
     *
     * Retrieves the owner of this element that is also a Package element.
     * Retrieves the first element going up the owning hierarchy. For example,
@@ -482,7 +512,9 @@ public class Element extends BaseElement implements IElement
       return OwnerRetriever.getOwnerByType(this, IPackage.class);
    }
 
-   /**
+   
+
+/**
     *
     * Determines whether or not an element with the passed-in ID is owned
     * by this Element.
@@ -509,7 +541,9 @@ public class Element extends BaseElement implements IElement
       return sameDocument(elem) && isOwnedElement(elem.getXMIID());
    }
 
-   /**
+   
+
+/**
     *
     * Checks to see if the passed in element is connected to the
     * same XML document that this Element is.
@@ -538,7 +572,9 @@ public class Element extends BaseElement implements IElement
       return false;
    }
 
-   /**
+   
+
+/**
     *
     * Adds a source Flow to this Element.
     *
@@ -559,7 +595,9 @@ public class Element extends BaseElement implements IElement
       });
    }
 
-   /**
+   
+
+/**
     *
     * Removes the passed-in Flow from this Element.
     *
@@ -572,7 +610,9 @@ public class Element extends BaseElement implements IElement
    {
       removeElementByID(flow, "sourceFlow");
    }
-   /**
+   
+
+/**
     *  Retrieves the collection of source Flow relationships.
     *      HRESULT SourceFlows([out, retval] IFlows* *pVal);
     */
@@ -582,7 +622,9 @@ public class Element extends BaseElement implements IElement
       return retrieveElementCollectionWithAttrIDs(dummy, "sourceFlow", IFlow.class);
    }
 
-   /**
+   
+
+/**
     *
     * Adds a target Flow to this Element.
     *
@@ -603,7 +645,9 @@ public class Element extends BaseElement implements IElement
       });
    }
 
-   /**
+   
+
+/**
     *
     * Removes the passed-in Flow from this Element.
     *
@@ -617,7 +661,9 @@ public class Element extends BaseElement implements IElement
       removeElementByID(flow, "targetFlow");
    }
 
-   /**
+   
+
+/**
     *
     * Retrieves the collection of target Flows this element is associated with.
     *
@@ -632,7 +678,9 @@ public class Element extends BaseElement implements IElement
       return retrieveElementCollectionWithAttrIDs(dummy, "targetFlow", IFlow.class);
    }
 
-   /**
+   
+
+/**
     *  The set of TaggedValues that are associated with this Element. Standard tags are not included ( e.g., documentation )
     *      HRESULT TaggedValues([out, retval] ITaggedValues** pVal);
     */
@@ -677,7 +725,9 @@ public class Element extends BaseElement implements IElement
        return retList;
    }
    
-   /**
+   
+
+/**
     *
     * Adds a new TaggedValue to this element based on the name of the tag
     * and the value passed in.
@@ -707,7 +757,9 @@ public class Element extends BaseElement implements IElement
       return retVal;
    }
 
-   /**
+   
+
+/**
     *
     * Removes the passed-in tag from this Element.
     *
@@ -721,7 +773,9 @@ public class Element extends BaseElement implements IElement
       removeElement(tag);
    }
 
-   /**
+   
+
+/**
     *
     * Retrieves the TaggedValue associated with this Element that matches the passed
     * in name.
@@ -742,7 +796,9 @@ public class Element extends BaseElement implements IElement
       return vals != null && vals.size() > 0 ? vals.get(0) : null;
    }
 
-   /**
+   
+
+/**
     *
     * Retrieves all the tagged values of the passed in name.
     *
@@ -776,7 +832,9 @@ public class Element extends BaseElement implements IElement
       return vals;
    }
 
-   /**
+   
+
+/**
     *
     * Retrieves the documentation property of this Element. The Documentation
     * property is really just a TaggedValue with the name of "documentation".
@@ -798,7 +856,9 @@ public class Element extends BaseElement implements IElement
       return (docs != null) ? docs : "";
    }
 
-   /**
+   
+
+/**
     *
     * Sets the documentation property of this Element.
     *
@@ -887,7 +947,9 @@ public class Element extends BaseElement implements IElement
 
    }
 
-   /**
+   
+
+/**
     * Adds a PresentationElement to this element's list of presentation
     * elements.
     *
@@ -946,7 +1008,9 @@ public class Element extends BaseElement implements IElement
       return elem;
    }
 
-   /**
+   
+
+/**
     * Removes the passed-in PresentationElement from this model element.
     *
     * @param pVal[in] The PresentationElement to remove from this element
@@ -977,7 +1041,9 @@ public class Element extends BaseElement implements IElement
 
    }
 
-   /**
+   
+
+/**
     *  Retrieves all the PresentationElements representing this element.
     *      HRESULT PresentationElements([out, retval] IPresentationElements** pVal );
     */
@@ -987,7 +1053,9 @@ public class Element extends BaseElement implements IElement
       return retrieveElementCollection(dummy, "./UML:Element.presentation/*", IPresentationElement.class);
    }
 
-   /**
+   
+
+/**
     * Determines whether or not the passed-in PresentationElement is
     * already associated with the NamedElement.
     *
@@ -1009,7 +1077,9 @@ public class Element extends BaseElement implements IElement
       return retVal;
    }
 
-   /**
+   
+
+/**
     * Removes any references to any PresentationElements this element may be
     * pointing to.
     *
@@ -1024,7 +1094,9 @@ public class Element extends BaseElement implements IElement
    {
    }
 
-   /**
+   
+
+/**
     * Retrieves a PresentationElement from our internal collection by matching the passed-
     * in XMI id.
     *
@@ -1051,7 +1123,9 @@ public class Element extends BaseElement implements IElement
       return null;
    }
 
-   /**
+   
+
+/**
     *
     * Retrieves the ID of the top most Namespace object that this
     * element is a member of.
@@ -1084,7 +1158,9 @@ public class Element extends BaseElement implements IElement
       return getTopLevelId();
    }
 
-   /**
+   
+
+/**
     *
     * Retrieves a collection of IArtifacts that this element owns.
     *
@@ -1110,7 +1186,9 @@ public class Element extends BaseElement implements IElement
       return trans.copyCollection(vals);
    }
 
-   /**
+   
+
+/**
     *
     * Retrieves the Project interface this Element is a part of.
     *
@@ -1130,7 +1208,9 @@ public class Element extends BaseElement implements IElement
       return null;
    }
 
-   /**
+   
+
+/**
     *
     * Sets this element on the Referencing side of the passed-in Reference. The Reference
     * then becomes part of this element Elements collection (i.e., this element owns
@@ -1157,7 +1237,9 @@ public class Element extends BaseElement implements IElement
       return reference;
    }
 
-   /**
+   
+
+/**
     *
     * Removes this element from the Referencing side of the passed-in Reference,
     * and then removes the Reference from this Element's collection of owned elements.
@@ -1195,7 +1277,9 @@ public class Element extends BaseElement implements IElement
       removeElement(ref);
    }
 
-   /**
+   
+
+/**
     *  Retrieves the collection of referencing Reference relationships.
     *      HRESULT ReferencingReferences([out, retval] IReferences* *pVal);
     */
@@ -1205,7 +1289,9 @@ public class Element extends BaseElement implements IElement
       return collector.retrieveElementCollectionWithAttrIDs(this, "referencingReference", IReference.class);
    }
 
-   /**
+   
+
+/**
     * Adds this element to the ReferredElement role of the passed-in Reference.
     *
     * @param pRef[in] The reference
@@ -1226,7 +1312,9 @@ public class Element extends BaseElement implements IElement
       return ref;
    }
 
-   /**
+   
+
+/**
     *
     * Removes this element from the ReferredElement role of the passed-in reference.
     *
@@ -1261,7 +1349,9 @@ public class Element extends BaseElement implements IElement
       });
    }
 
-   /**
+   
+
+/**
     *
     * Retrieves the collection of References that this element is playing the ReferredElement role.
     *
@@ -1276,7 +1366,9 @@ public class Element extends BaseElement implements IElement
       return collector.retrieveElementCollectionWithAttrIDs(this, "referredReference", IReference.class);
    }
 
-   /**
+   
+
+/**
     *
     * Description.
     *
@@ -1289,7 +1381,9 @@ public class Element extends BaseElement implements IElement
       return UMLXMLManip.queryCount(m_Node, "UML:Element.ownedElement/*", false);
    }
 
-   /**
+   
+
+/**
     *
     * Description
     *
@@ -1332,7 +1426,9 @@ public class Element extends BaseElement implements IElement
       return UMLXMLManip.queryCount(m_Node, "referredReference", true);
    }
 
-   /**
+   
+
+/**
     *  Retrieves all tagged values, including standard tags..
     *      HRESULT AllTaggedValues([out, retval] ITaggedValues** pVal);
     */
@@ -1342,7 +1438,9 @@ public class Element extends BaseElement implements IElement
       return retrieveElementCollection(dummy, "UML:Element.ownedElement/UML:TaggedValue", ITaggedValue.class);
    }
 
-   /**
+   
+
+/**
     *
     * Retrieves the language specification that this element, or one of it's direct
     * parents, is associated with.
@@ -1407,7 +1505,9 @@ public class Element extends BaseElement implements IElement
       return langs != null ? langs : new ETArrayList < ILanguage >();
    }
 
-   /**
+   
+
+/**
     *
     * Queries this element for IArtifacts that represent source files. For
     * each one found, retrieves the Language object associated with that
@@ -1474,7 +1574,9 @@ public class Element extends BaseElement implements IElement
       return langs;
    }
 
-   /**
+   
+
+/**
     *
     * Retrieves the language by retrieving a file name from the passed in Element.
     *
@@ -1510,7 +1612,9 @@ public class Element extends BaseElement implements IElement
       return retLang;
    }
 
-   /**
+   
+
+/**
       *
       * Queries this project for the default language.  The default language
       * details will be returned.
@@ -1548,7 +1652,9 @@ public class Element extends BaseElement implements IElement
       return langs;
    }
 
-   /**
+   
+
+/**
     * Retrieves the specified language from the language manager.
     *
     * @param langName [in] The name of the language.
@@ -1569,7 +1675,9 @@ public class Element extends BaseElement implements IElement
       return retLang;
    }
 
-   /**
+   
+
+/**
       *  Retrieves a collection of SourceFileArtifacts that contain absolute paths to source files associated with this element.  The collection returned will contain IArtifact interfaces.
       *      HRESULT SourceFiles([out, retval] IElements* *pVal );
       */
@@ -1619,7 +1727,9 @@ public class Element extends BaseElement implements IElement
       return retVal;
    }
 
-   /**
+   
+
+/**
     * Associates a source file with the model element.
     *
     * @param filename [in] The file name to add.
@@ -1645,7 +1755,9 @@ public class Element extends BaseElement implements IElement
         }
    }
    
-   /**
+   
+
+/**
     * Removes a source file from the model element.  The model
     * element will no longer be associatied with the model element.
     *
@@ -1681,7 +1793,9 @@ public class Element extends BaseElement implements IElement
       }
    }
 
-   /**
+   
+
+/**
     *  Retrieves a collection of SourceFileArtifacts that contain absolute paths to source files associated with this element.  The collection returned will contain IArtifact interfaces.
     *      HRESULT SourceFiles2( [in]BSTR lang, [out, retval] IElements* *pVal );
     */
@@ -1722,7 +1836,9 @@ public class Element extends BaseElement implements IElement
        return lang != null ? getSourceFiles2(lang.getName()) : null;
    }
 
-   /**
+   
+
+/**
     *  Retrieves the SourceFileArtifact that contains the passed-in filename.
     */
     public IElement getSourceFile(String filename)
@@ -1754,7 +1870,9 @@ public class Element extends BaseElement implements IElement
        return getSourceFile(fileName) == null ? false : true;
    }
    
-   /**
+   
+
+/**
     *
     * Retrieves the collection of IStereotypes currently applied to this element
     *
@@ -1769,7 +1887,9 @@ public class Element extends BaseElement implements IElement
       return collector.retrieveElementCollectionWithAttrIDs(this, "appliedStereotype", Object.class);
    }
 
-   /**
+   
+
+/**
     *
     * Retrieves the number of IStereotypes currently applied to this element
     *
@@ -1784,7 +1904,9 @@ public class Element extends BaseElement implements IElement
       return objs != null ? objs.size() : 0;
    }
 
-   /**
+   
+
+/**
     *
     * Retrieves a collection of stereotypes in string form << xxx, yyy >>.
     * NULL string is returned if no stereotypes exist.
@@ -1811,7 +1933,9 @@ public class Element extends BaseElement implements IElement
       return retVal;
    }
 
-   /**
+   
+
+/**
     *
     * Retrieves a collection of stereotypes in string form << xxx, yyy >>.
     * NULL string is returned if no stereotypes exist.
@@ -1833,7 +1957,9 @@ public class Element extends BaseElement implements IElement
        
        return retVal.toString();
        
-       /*
+       
+
+/*
       String retStr = "";
       ETList < Object > objs = getAppliedStereotypes();
       if (objs != null)
@@ -1924,7 +2050,9 @@ public class Element extends BaseElement implements IElement
       return retStr;
    }
    
-   /**
+   
+
+/**
     *
     * Applies the passed in IStereotype to this element.
     *
@@ -1969,7 +2097,9 @@ public class Element extends BaseElement implements IElement
       }
    }
 
-   /**
+   
+
+/**
     * Adds the passed in named element to this elmenent's PickListManager
     *
     * @param namedElement[in] The element to add
@@ -1997,7 +2127,9 @@ public class Element extends BaseElement implements IElement
       }
    }
 
-   /**
+   
+
+/**
     *
     * Removes the passed in IStereotype from this element
     *
@@ -2033,7 +2165,9 @@ public class Element extends BaseElement implements IElement
       }
    }
 
-   /**
+   
+
+/**
     *
     * Removes all the IStereotypes from this element.
     *
@@ -2054,7 +2188,9 @@ public class Element extends BaseElement implements IElement
       }
    }
 
-   /**
+   
+
+/**
     *
     * Applies a Stereotype that matches the passed in name. A profile containing
     * a stereotype of this name must have first been applied to an outer package
@@ -2074,7 +2210,7 @@ public class Element extends BaseElement implements IElement
           IStereotype stereo = retrieveStereotype(name);
           if (stereo == null) {
               
-              //kris richards - UnknownStereotypeCreate pref deleted. Set to PSK_IN_PROJECT_PROFILE
+              
               
               // Establish a new Stereotype
               ProfileManager profMan = new ProfileManager();
@@ -2094,7 +2230,9 @@ public class Element extends BaseElement implements IElement
       return retObj;
    }
 
-   /**
+   
+
+/**
     *
     * Removes a Stereotype that matches the passed in name. A profile containing
     * a stereotype of this name must have first been applied to an outer package
@@ -2114,7 +2252,9 @@ public class Element extends BaseElement implements IElement
       }
    }
 
-   /**
+   
+
+/**
     *
     * Retrieves the stereotype that matches the name passed in. This method
     * searches through all the PackageImports that reference Profiles, looking
@@ -2148,7 +2288,9 @@ public class Element extends BaseElement implements IElement
       return stereo;
    }
 
-   /**
+   
+
+/**
     *
     * Retrieves a stereotype by name
     *
@@ -2190,7 +2332,9 @@ public class Element extends BaseElement implements IElement
       return stereo;
    }
 
-   /**
+   
+
+/**
       * Takes the cononical form of stereotypes <<xx,yy>> and sets this elements stereotypes to match the input string.
       */
    public void applyNewStereotypes(String name)
@@ -2241,7 +2385,9 @@ public class Element extends BaseElement implements IElement
       }
    }
 
-   /**
+   
+
+/**
     * Retrieves the applied stereotype that matches the name passed in.
     */
    public Object retrieveAppliedStereotype(String name)
@@ -2269,7 +2415,9 @@ public class Element extends BaseElement implements IElement
       return retObj;
    }
 
-   /**
+   
+
+/**
     *
     * Adds a constraint that will be applied to this Element. This element will also
     * physically own the constraint.
@@ -2288,7 +2436,9 @@ public class Element extends BaseElement implements IElement
       }
    }
 
-   /**
+   
+
+/**
     *
     * Removes the constraint from this Element.
     *
@@ -2306,7 +2456,9 @@ public class Element extends BaseElement implements IElement
       }
    }
 
-   /**
+   
+
+/**
     *  Retrieves all the Constraints owned by this Element.
     *      HRESULT OwnedConstraints([out, retval] IConstraints** pVal );
     */
@@ -2316,7 +2468,9 @@ public class Element extends BaseElement implements IElement
       return collector.retrieveElementCollection(m_Node, "UML:Element.ownedElement/UML:Constraint", IConstraint.class);
    }
 
-   /**
+   
+
+/**
     *  Retrieves all the Constraints owned by this Element and returns 
     *  them as a string for appropriate display.
     *      HRESULT OwnedConstraints([out, retval] IConstraints** pVal );
@@ -2375,7 +2529,9 @@ public class Element extends BaseElement implements IElement
     }
 
    
-   /**
+   
+
+/**
     *
     * Creates a new Constraint. The Constraint is not added to this element.
     *
@@ -2405,7 +2561,9 @@ public class Element extends BaseElement implements IElement
       return cons;
    }
 
-   /**
+   
+
+/**
     *
     * Determines whether or not the current element and pElement both reside in the same Project.
     *
@@ -2427,7 +2585,9 @@ public class Element extends BaseElement implements IElement
       return proj != null && eProj != null ? proj.isSame(eProj) : true;
    }
 
-   /**
+   
+
+/**
     *
     * Removes all element that should also be deleted or at least modified
     * when this element is deleted.
@@ -2450,7 +2610,9 @@ public class Element extends BaseElement implements IElement
       }
    }
 
-   /**
+   
+
+/**
     *
     * Deletes all Reference relations this element is in.
     *
@@ -2484,7 +2646,9 @@ public class Element extends BaseElement implements IElement
       }
    }
 
-   /**
+   
+
+/**
     *
     * Duplicates this element. If this element owns other elements,
     * those elements are also duplicated.
@@ -2505,7 +2669,9 @@ public class Element extends BaseElement implements IElement
       return elem;
    }
 
-   /**
+   
+
+/**
     *
     * Makes sure that the IReference relationships know that they are apart
     * of the newly cloned element. If the duplicate element ( clone )
@@ -2527,7 +2693,9 @@ public class Element extends BaseElement implements IElement
       establishReferenceRelations(false, refs, dup);
    }
 
-   /**
+   
+
+/**
     *
     * For every IReference in the passed in Reference collection, the clone
     * element is connected to it.
@@ -2572,7 +2740,9 @@ public class Element extends BaseElement implements IElement
       }
    }
 
-   /**
+   
+
+/**
     *
     * Makes sure that the IFlow relationships know that they are apart
     * of the newly cloned element. If the duplicate element ( clone )
@@ -2591,7 +2761,9 @@ public class Element extends BaseElement implements IElement
       establishFlowRelations(false, getTargetFlows(), clone);
    }
 
-   /**
+   
+
+/**
     *
     * For every Flow in the passed in Flow collection, the clone
     * element is connected to it.
@@ -2624,7 +2796,9 @@ public class Element extends BaseElement implements IElement
       }
    }
 
-   /**
+   
+
+/**
     *
     * Dups the presentation elements on element and reconnects
     *
@@ -2653,7 +2827,9 @@ public class Element extends BaseElement implements IElement
       }
    }
 
-   /**
+   
+
+/**
     *
     * Duplicates all the owned elements that clone possesses
     *
@@ -2719,7 +2895,9 @@ public class Element extends BaseElement implements IElement
       }
    }
 
-   /**
+   
+
+/**
     *
     * Deletes all Flow relationships this element is in. This should only
     * be called when this element is to be deleted.
@@ -2752,7 +2930,9 @@ public class Element extends BaseElement implements IElement
       }
    }
 
-   /**
+   
+
+/**
     *
     * Replaces the current elements ( the this pointer ) xmi.id
     * with the xmi.id of dup, anywhere contained in scopingElement
@@ -2781,7 +2961,9 @@ public class Element extends BaseElement implements IElement
       replaceIds(getXMIID(), dup.getXMIID(), scopingElement.getNode(), additionalQuery);
    }
 
-   /**
+   
+
+/**
     *
     * For every xml attribute that contains replaceID, that id will be replaced by withID.
     * The query is focused just on the passed in element.
@@ -2836,18 +3018,8 @@ public class Element extends BaseElement implements IElement
       }
    }
 
-   /**
-    *
-    * Replaces substrings of value of the xml attribute passed in with values
-    * found in the other parameters
-    *
-    * @param node[in]            The node, which should QI to an IXMLDOMAttribute
-    * @param replaceStr[in]      The string to replace in the attribute value
-    * @param replaceWithStr[in]  The string to replace replaceStr with
-    *
-    * @return HRESULT
-    *
-    */
+   
+
    private void replaceXMLAttributeValue(Node n, String replaceId, String withId)
    {
       if (n instanceof Attribute)
@@ -2861,7 +3033,9 @@ public class Element extends BaseElement implements IElement
       }
    }
 
-   /**
+   
+
+/**
     * Does this element have an expanded element type or is the expanded element type always the element type?
     */
    public boolean getHasExpandedElementType()

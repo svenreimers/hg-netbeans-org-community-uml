@@ -102,6 +102,7 @@ import org.netbeans.test.umllib.util.PopupConstants;
 
 
 
+
 /**
  *
  * @spec uml/UML-EditControl.xml
@@ -374,7 +375,9 @@ private static String operationName28  = "operation28";
     }    
     
     
-    /**
+    
+
+/**
      * @caseblock Class
      * @usecase Name after drop
      */
@@ -421,7 +424,9 @@ private static String operationName28  = "operation28";
         //
         assertTrue("Class name \""+nmMod+"\" in model isn't correct,should be \""+className1+"\"",className1.equals(nmMod));
     }
-    /**
+    
+
+/**
      * @caseblock Class
      * @usecase Name attribute after insert
      */
@@ -453,7 +458,9 @@ private static String operationName28  = "operation28";
         //
         assertTrue("Attribute \""+modAt+"\" in model isn't correctly propagated,should be \""+atStr2+"\"",atStr2.equals(modAt));
     }
-    /**
+    
+
+/**
      * @caseblock Class
      * @usecase Name operation after insert
      */
@@ -486,7 +493,9 @@ private static String operationName28  = "operation28";
         String operInModel=org.netbeans.test.uml.editcontrol.utils.Utils.getNotConstructorFinalizerOperationStr(opComp,className3);
         assertTrue("Operation \""+operInModel+"\" in model isn't correctly propagated,should be \""+opStr3+"\"",opStr3.equals(operInModel));
     }
-    /**
+    
+
+/**
      * @caseblock Class
      * @usecase ReName class with double click
      */
@@ -525,7 +534,9 @@ private static String operationName28  = "operation28";
         //
         assertTrue("Class name \""+nmMod+"\" in model isn't correct,should be \""+className4_2+"\"",className4_2.equals(nmMod));
     }
-    /**
+    
+
+/**
      * @caseblock Class
      * @usecase Name class with double click
      */
@@ -571,7 +582,9 @@ private static String operationName28  = "operation28";
         //
         assertTrue("Class name \""+nmMod+"\" in model isn't correct,should be \""+className5+"\"",className5.equals(nmMod));
     }
-    /**
+    
+
+/**
      * @caseblock Class
      * @usecase ReName attribute with double click
      */
@@ -633,7 +646,9 @@ private static String operationName28  = "operation28";
         assertTrue("Attribute \""+modAt+"\" in model isn't correctly propagated,should be \""+atStr6_2+"\"",atStr6_2.equals(modAt));
         
     }
-    /**
+    
+
+/**
      * @caseblock Class
      * @usecase Name attribute with double click
      */
@@ -729,7 +744,9 @@ private static String operationName28  = "operation28";
         assertTrue("Attribute \""+modAt+"\" in model isn't correctly propagated,should be \""+atStr7+"\"",atStr7.equals(modAt));
         
     }
-    /**
+    
+
+/**
      * @caseblock Class
      * @usecase ReName operation with double click
      */
@@ -789,7 +806,9 @@ private static String operationName28  = "operation28";
         assertTrue("Operation \""+operInModel+"\" in model isn't correctly propagated,should be \""+opStr8_2+"\"",opStr8_2.equals(operInModel));
         
     }
-    /**
+    
+
+/**
      * @caseblock Class
      * @usecase Name operation with double click
      */
@@ -842,7 +861,9 @@ private static String operationName28  = "operation28";
         assertTrue("Operation \""+operInModel+"\" in model isn't correctly propagated,should be \""+opStr9+"\"",opStr9.equals(operInModel));
         
     }
-    /**
+    
+
+/**
      * @caseblock Class
      * @usecase Delete class name from named class after double click
      */
@@ -881,7 +902,9 @@ private static String operationName28  = "operation28";
         //
         assertTrue("Class name \""+nmMod+"\" in model isn't correct,should be restored to \""+className10+"\"",className10.equals(nmMod));
     }
-    /**
+    
+
+/**
      * @caseblock Class
      * @usecase Delete class name from unnamed class after double click
      */
@@ -926,7 +949,9 @@ private static String operationName28  = "operation28";
         //
         assertTrue("Class name \""+nmMod+"\" in model isn't correct,should be \""+defaultNewElementName+"\"",defaultNewElementName.equals(nmMod));
     }
-    /**
+    
+
+/**
      * @caseblock Class
      * @usecase Delete name of named attribute after double click
      */
@@ -1020,7 +1045,9 @@ private static String operationName28  = "operation28";
         assertTrue("Attribute \""+modAt+"\" in model isn't correctly restored,should be \""+atStr12+"\"",atStr12.equals(modAt));
         
     }
-    /**
+    
+
+/**
      * @caseblock Class
      * @usecase Delete name of unnamed attribute after double click
      */
@@ -1068,7 +1095,9 @@ private static String operationName28  = "operation28";
         assertTrue("Attribute \""+modAt+"\" in model isn't correctly restored,should be \""+atStr13+"\"",atStr13.equals(modAt));
         
     }
-    /**
+    
+
+/**
      * @caseblock Class
      * @usecase Delete name of named operation after double click
      */
@@ -1117,7 +1146,9 @@ private static String operationName28  = "operation28";
         assertTrue("Operation \""+operInModel+"\" in model isn't correctly restored,should be \""+opStr14+"\"",opStr14.equals(operInModel));
         
     }
-    /**
+    
+
+/**
      * @caseblock Class
      * @usecase Delete name of unnamed operation after double click
      */
@@ -1165,7 +1196,9 @@ private static String operationName28  = "operation28";
         assertTrue("Operation \""+operInModel+"\" in model isn't correctly restored,should be \""+opStr15+"\"",opStr15.equals(operInModel));
         
     }
-    /**
+    
+
+/**
      * @caseblock Class
      * @usecase Add and name association link
      */
@@ -1185,7 +1218,9 @@ private static String operationName28  = "operation28";
         LinkOperator assLnk=null;
             assLnk=d.createLinkOnDiagram(LinkTypes.ASSOCIATION, clE1, clE2);
         //
-        /*drAr.clickForPopup(assLnk.getNearCenterPoint().x,assLnk.getNearCenterPoint().y,InputEvent.BUTTON3_MASK);
+        
+
+/*drAr.clickForPopup(assLnk.getNearCenterPoint().x,assLnk.getNearCenterPoint().y,InputEvent.BUTTON3_MASK);
         //assLnk.getPopup().pushMenu("Labels|Link Name");
         //workaround for inner popup
         new JPopupMenuOperator().pushKey(KeyEvent.VK_LEFT);
@@ -1213,7 +1248,9 @@ private static String operationName28  = "operation28";
         String lncTxt=assLnk.getLabelsTexts()[0];
         assertTrue("There is wrong \""+lncTxt+"\" label name in model, should be \""+linkName16+"\"",linkName16.equals(lncTxt));
     }
-    /**
+    
+
+/**
      * @caseblock Class
      * @usecase Change a label name on a link
      */
@@ -1235,7 +1272,9 @@ private static String operationName28  = "operation28";
         LinkOperator assLnk=null;
             assLnk=d.createLinkOnDiagram(LinkTypes.ASSOCIATION, clE1, clE2);
         //
-        /*drAr.clickForPopup(assLnk.getNearCenterPoint().x,assLnk.getNearCenterPoint().y,InputEvent.BUTTON3_MASK);
+        
+
+/*drAr.clickForPopup(assLnk.getNearCenterPoint().x,assLnk.getNearCenterPoint().y,InputEvent.BUTTON3_MASK);
         //assLnk.getPopup().pushMenu("Labels|Link Name");
         //workaround for inner popup
         new JPopupMenuOperator().pushKey(KeyEvent.VK_LEFT);
@@ -1287,7 +1326,9 @@ private static String operationName28  = "operation28";
         assertTrue("There is wrong \""+lncTxt+"\" label name in model, should be \""+linkName17_2+"\"",linkName17_2.equals(lncTxt));
     }
     
-    /**
+    
+
+/**
      * @caseblock Class
      * @usecase Delete a label name on a link
      */
@@ -1308,7 +1349,9 @@ private static String operationName28  = "operation28";
         LinkOperator assLnk=null;
             assLnk=d.createLinkOnDiagram(LinkTypes.ASSOCIATION, clE1, clE2);
         //
-        /*drAr.clickForPopup(assLnk.getNearCenterPoint().x,assLnk.getNearCenterPoint().y,InputEvent.BUTTON3_MASK);
+        
+
+/*drAr.clickForPopup(assLnk.getNearCenterPoint().x,assLnk.getNearCenterPoint().y,InputEvent.BUTTON3_MASK);
         //assLnk.getPopup().pushMenu("Labels|Link Name");
         //workaround for inner popup
         new JPopupMenuOperator().pushKey(KeyEvent.VK_LEFT);
@@ -1357,7 +1400,9 @@ private static String operationName28  = "operation28";
         lncTxt=assLnk.getLabelsTexts()[0];
         assertTrue("There is wrong \""+lncTxt+"\" label name in model, should be \""+linkName18+"\"",linkName18.equals(lncTxt));
     }
-    /**
+    
+
+/**
      * @caseblock Class
      * @usecase Add multiple attributes to a class symbol using Insert
      */
@@ -1401,7 +1446,9 @@ private static String operationName28  = "operation28";
         
         assertTrue("There shoul be 5 attributes, but exists only "+good_count,good_count==5);
     }
-    /**
+    
+
+/**
      * @caseblock Class
      * @usecase Add multiple operations to a class symbol using Insert
      */
@@ -1453,7 +1500,9 @@ private static String operationName28  = "operation28";
         
         assertTrue("There shoul be 5 operations, but exists only "+good_count,good_count==5);
     }
-    /**
+    
+
+/**
      * @caseblock Class
      * @usecase Delete multiple attributes in a class symbol using Delete
      */
@@ -1544,7 +1593,9 @@ private static String operationName28  = "operation28";
         if(atComp.getCompartments().get(1).getName().equals(atStr21[4]))good_count++;
         assertTrue((2-good_count)+" of remained attributes are broken.",good_count==2);
     }
-    /**
+    
+
+/**
      * @caseblock Class
      * @usecase Delete multiple operations in a class symbol using Delete
      */
@@ -1625,7 +1676,9 @@ private static String operationName28  = "operation28";
         }
         assertTrue((2-good_count)+" of remained operaions are broken:"+f,good_count==2);
     }
-    /**
+    
+
+/**
      * @caseblock Class
      * @usecase Change attribute visibility from private to public
      */
@@ -1683,7 +1736,9 @@ private static String operationName28  = "operation28";
         modAt=attrCmp.getName();
         assertTrue("Attribute \""+modAt+"\" in model isn't correctly propagated,should be \""+atStr23_2+"\"",atStr23_2.equals(modAt));
      }
-    /**
+    
+
+/**
      * @caseblock Class
      * @usecase Change attribute type
      */
@@ -1745,7 +1800,9 @@ private static String operationName28  = "operation28";
         modAt=attrCmp.getName();
         assertTrue("Attribute \""+modAt+"\" in model isn't correctly propagated,should be \""+atStr24_2+"\"",atStr24_2.equals(modAt));
     }
-    /**
+    
+
+/**
      * @caseblock Class
      * @usecase Change attribute initial value
      */
@@ -1807,7 +1864,9 @@ private static String operationName28  = "operation28";
         modAt=attrCmp.getName();
         assertTrue("Attribute \""+modAt+"\" in model isn't correctly propagated,should be \""+atStr25_2+"\"",atStr25_2.equals(modAt));
     }
-    /**
+    
+
+/**
      * @caseblock Class
      * @usecase Change operation visibility from public to private
      */
@@ -1862,7 +1921,9 @@ private static String operationName28  = "operation28";
         operInModel=org.netbeans.test.uml.editcontrol.utils.Utils.getNotConstructorFinalizerOperationStr(opComp,className26);
         assertTrue("Operation \""+operInModel+"\" in model isn't correctly propagated,should be \""+opStr26_2+"\"",opStr26_2.equals(operInModel));
     }
-    /**
+    
+
+/**
      * @caseblock Class
      * @usecase Change operation parameters
      */
@@ -1921,7 +1982,9 @@ private static String operationName28  = "operation28";
         operInModel=org.netbeans.test.uml.editcontrol.utils.Utils.getNotConstructorFinalizerOperationStr(opComp,className27);
         assertTrue("Operation \""+operInModel+"\" in model isn't correctly propagated,should be \""+opStr27_2+"\"",opStr27_2.equals(operInModel));
     }
-    /**
+    
+
+/**
      * @caseblock Class
      * @usecase Change operation return type
      */

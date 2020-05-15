@@ -53,21 +53,24 @@ import org.netbeans.modules.uml.core.support.umlutils.ETList;
 public class EncapsulatedClassifier extends StructuredClassifier
 									implements IEncapsulatedClassifier
 {
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.IEncapsulatedClassifier#addPort(org.netbeans.modules.uml.core.metamodel.infrastructure.IPort)
 	 */
 	public void addPort(IPort pPort)
 	{
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.IEncapsulatedClassifier#removePort(org.netbeans.modules.uml.core.metamodel.infrastructure.IPort)
 	 */
 	public void removePort(IPort pPort) 
 	{
 	}
 
-	/* (non-Javadoc)
+	
+/* (non-Javadoc)
 	 * @see org.netbeans.modules.uml.core.metamodel.infrastructure.IEncapsulatedClassifier#getPorts()
 	 */
 	public ETList<IPort> getPorts() 

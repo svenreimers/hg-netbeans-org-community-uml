@@ -46,12 +46,16 @@ package org.netbeans.modules.uml.core.metamodel.common.commonstatemachines;
 
 public interface IPseudoState extends IStateVertex
 {
-	/**
+	
+
+/**
 	 * property Kind
 	*/
 	public int getKind();
 
-	/**
+	
+
+/**
 	 * property Kind
 	*/
 	public void setKind( /* PseudostateKind */ int value );
