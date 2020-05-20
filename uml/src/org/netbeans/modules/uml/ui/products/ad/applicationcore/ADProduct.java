@@ -903,7 +903,7 @@ public class ADProduct extends CoreProduct implements IADProduct
                     Frame parent = proxyUI.getWindowHandle();
                     if ( parent != null )
                     {
-                        // In Java we never display a modal progress dlg.  (Kevin).
+                       
                         m_ProgressDialog = (parent != null) ? new ProgressDialog(parent,"Progress", false): new ProgressDialog();
                     }
                 }

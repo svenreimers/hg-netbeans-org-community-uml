@@ -133,11 +133,7 @@ public class NewDiagramUI extends WizardInteriorPage implements
 	
 	 
 
-/* The only reason to set the size is because the list will not be
-	  * wide enough on larger fontsizes The
-	  * algorithm is rather arbitrary but works well in this instance.
-	  * Charles Beckham
-	  */
+
 	private java.awt.Dimension getListDimensions()
 	{
 		int fontsize = getFontSize();

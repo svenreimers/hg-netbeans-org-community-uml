@@ -88,11 +88,6 @@ public class AddJavaProjectAction extends CookieAction
     // this class is currently not being used at all. 
     // It can be removed and nothing will break.
 
-    // I leave it in merely as an example of code that could be used if we
-    // wanted to have an ACTION as well as the customizer.
-    // This was modeled on similar Add action in the J2EE project. Ask
-    // Chris Webster if you have questions. He is the one that pointed it out
-    // to me.
 
     private static final Class[] COOKIE_ARRAY =
         new Class[] {UMLProjectProperties.class};

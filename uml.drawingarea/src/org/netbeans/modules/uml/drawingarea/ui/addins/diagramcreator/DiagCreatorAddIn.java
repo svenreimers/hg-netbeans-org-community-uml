@@ -1133,8 +1133,7 @@ catch (IOException ex) {
 		IPresentationElement lastPresEle = newPES != null && newPES.size() > 0 ? newPES.get(newPES.size() -1) : null;
 		if (lastPresEle != null)
 		{
-			// We are calling fitInWindow so this makes very little sence? (Kevin)
-			// bug where presentation elements not centered
+
 			pDiagram.centerPresentationElement(lastPresEle, false, true);	
 		}
 	}
